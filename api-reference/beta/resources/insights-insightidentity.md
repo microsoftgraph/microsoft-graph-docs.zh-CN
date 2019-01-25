@@ -4,21 +4,21 @@ description: 包含共享项目的属性的复杂类型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: a263caa68280128a67a027b75682407fd4932605
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938935"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523055"
 ---
-# <a name="insightidentity"></a><span data-ttu-id="aeb17-103">insightIdentity</span><span class="sxs-lookup"><span data-stu-id="aeb17-103">insightIdentity</span></span>
+# <a name="insightidentity"></a><span data-ttu-id="7d126-103">insightIdentity</span><span class="sxs-lookup"><span data-stu-id="7d126-103">insightIdentity</span></span>
 
-> <span data-ttu-id="aeb17-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="aeb17-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="aeb17-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="aeb17-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="aeb17-106">包含[共享](insights-shared.md)项目的属性的复杂类型。</span><span class="sxs-lookup"><span data-stu-id="aeb17-106">Complex type containing properties of [Shared](insights-shared.md) items.</span></span> 
+<span data-ttu-id="7d126-104">包含[共享](insights-shared.md)项目的属性的复杂类型。</span><span class="sxs-lookup"><span data-stu-id="7d126-104">Complex type containing properties of [Shared](insights-shared.md) items.</span></span> 
 
-## <a name="json-representation"></a><span data-ttu-id="aeb17-107">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="aeb17-107">JSON representation</span></span>
-<span data-ttu-id="aeb17-108">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="aeb17-108">Here is a JSON representation of the resource</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7d126-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7d126-105">JSON representation</span></span>
+<span data-ttu-id="7d126-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7d126-106">Here is a JSON representation of the resource</span></span>
 
 ```json
 {
@@ -28,10 +28,18 @@ ms.locfileid: "27938935"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="aeb17-109">属性</span><span class="sxs-lookup"><span data-stu-id="aeb17-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7d126-107">属性</span><span class="sxs-lookup"><span data-stu-id="7d126-107">Properties</span></span>
 
-| <span data-ttu-id="aeb17-110">属性</span><span class="sxs-lookup"><span data-stu-id="aeb17-110">Property</span></span>              | <span data-ttu-id="aeb17-111">类型</span><span class="sxs-lookup"><span data-stu-id="aeb17-111">Type</span></span>          | <span data-ttu-id="aeb17-112">说明</span><span class="sxs-lookup"><span data-stu-id="aeb17-112">Description</span></span>  |
+| <span data-ttu-id="7d126-108">属性</span><span class="sxs-lookup"><span data-stu-id="7d126-108">Property</span></span>              | <span data-ttu-id="7d126-109">类型</span><span class="sxs-lookup"><span data-stu-id="7d126-109">Type</span></span>          | <span data-ttu-id="7d126-110">说明</span><span class="sxs-lookup"><span data-stu-id="7d126-110">Description</span></span>  |
 | -------------         |-----------    | -------------|
-| <span data-ttu-id="aeb17-113">displayName</span><span class="sxs-lookup"><span data-stu-id="aeb17-113">displayName</span></span>       | <span data-ttu-id="aeb17-114">字符串</span><span class="sxs-lookup"><span data-stu-id="aeb17-114">String</span></span>          | <span data-ttu-id="aeb17-115">共享项目的用户的显示名称。</span><span class="sxs-lookup"><span data-stu-id="aeb17-115">The display name of the user who shared the item.</span></span> |
-| <span data-ttu-id="aeb17-116">id</span><span class="sxs-lookup"><span data-stu-id="aeb17-116">id</span></span>              | <span data-ttu-id="aeb17-117">字符串</span><span class="sxs-lookup"><span data-stu-id="aeb17-117">String</span></span>        | <span data-ttu-id="aeb17-118">共享项目的用户的 id。</span><span class="sxs-lookup"><span data-stu-id="aeb17-118">The id of the user who shared the item.</span></span>     |
-| <span data-ttu-id="aeb17-119">address</span><span class="sxs-lookup"><span data-stu-id="aeb17-119">address</span></span>             | <span data-ttu-id="aeb17-120">String</span><span class="sxs-lookup"><span data-stu-id="aeb17-120">String</span></span>      | <span data-ttu-id="aeb17-121">共享项目的用户的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="aeb17-121">The email address of the user who shared the item.</span></span>  |
+| <span data-ttu-id="7d126-111">displayName</span><span class="sxs-lookup"><span data-stu-id="7d126-111">displayName</span></span>       | <span data-ttu-id="7d126-112">String</span><span class="sxs-lookup"><span data-stu-id="7d126-112">String</span></span>          | <span data-ttu-id="7d126-113">共享项目的用户的显示名称。</span><span class="sxs-lookup"><span data-stu-id="7d126-113">The display name of the user who shared the item.</span></span> |
+| <span data-ttu-id="7d126-114">id</span><span class="sxs-lookup"><span data-stu-id="7d126-114">id</span></span>              | <span data-ttu-id="7d126-115">字符串</span><span class="sxs-lookup"><span data-stu-id="7d126-115">String</span></span>        | <span data-ttu-id="7d126-116">共享项目的用户的 id。</span><span class="sxs-lookup"><span data-stu-id="7d126-116">The id of the user who shared the item.</span></span>     |
+| <span data-ttu-id="7d126-117">address</span><span class="sxs-lookup"><span data-stu-id="7d126-117">address</span></span>             | <span data-ttu-id="7d126-118">String</span><span class="sxs-lookup"><span data-stu-id="7d126-118">String</span></span>      | <span data-ttu-id="7d126-119">共享项目的用户的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="7d126-119">The email address of the user who shared the item.</span></span>  |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-insightidentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

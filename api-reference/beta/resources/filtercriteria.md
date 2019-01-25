@@ -2,22 +2,22 @@
 title: FilterCriteria 资源类型
 description: 表示应用于列的筛选条件。
 localization_priority: Normal
-ms.openlocfilehash: 56663e802aacc2dab3f08462724d0994b5bada85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 784615f6fce3dea5041772a15e3573c22dabdfd0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821677"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522446"
 ---
-# <a name="filtercriteria-resource-type"></a><span data-ttu-id="af9fa-103">FilterCriteria 资源类型</span><span class="sxs-lookup"><span data-stu-id="af9fa-103">FilterCriteria resource type</span></span>
+# <a name="filtercriteria-resource-type"></a><span data-ttu-id="9395c-103">FilterCriteria 资源类型</span><span class="sxs-lookup"><span data-stu-id="9395c-103">FilterCriteria resource type</span></span>
 
-> <span data-ttu-id="af9fa-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="af9fa-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="af9fa-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="af9fa-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="af9fa-106">表示应用于列的筛选条件。</span><span class="sxs-lookup"><span data-stu-id="af9fa-106">Represents the filtering criteria applied to a column.</span></span>
+<span data-ttu-id="9395c-104">表示应用于列的筛选条件。</span><span class="sxs-lookup"><span data-stu-id="9395c-104">Represents the filtering criteria applied to a column.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="af9fa-107">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="af9fa-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9395c-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9395c-105">JSON representation</span></span>
 
-<span data-ttu-id="af9fa-108">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="af9fa-108">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9395c-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9395c-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,3 +38,11 @@ ms.locfileid: "27821677"
 }
 
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/filtercriteria.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

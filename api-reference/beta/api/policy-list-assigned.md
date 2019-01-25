@@ -2,60 +2,60 @@
 title: 分配给应用程序或服务主体的列表策略
 description: 检索分配给应用程序或服务主体的策略对象。
 localization_priority: Normal
-ms.openlocfilehash: 3c66eece645313f7039f12aec708cba4581fb4bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1ed39f376b7d090b784f867a59fcb93558bd5f1a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875353"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518581"
 ---
-# <a name="list-policies-assigned-to-application-or-service-principal"></a><span data-ttu-id="94bc6-103">分配给应用程序或服务主体的列表策略</span><span class="sxs-lookup"><span data-stu-id="94bc6-103">List Policies assigned to Application or Service Principal</span></span>
+# <a name="list-policies-assigned-to-application-or-service-principal"></a><span data-ttu-id="83bb8-103">分配给应用程序或服务主体的列表策略</span><span class="sxs-lookup"><span data-stu-id="83bb8-103">List Policies assigned to Application or Service Principal</span></span>
 
-> <span data-ttu-id="94bc6-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="94bc6-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="94bc6-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="94bc6-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="94bc6-106">检索分配给应用程序或服务主体的[策略](../resources/policy.md)对象。</span><span class="sxs-lookup"><span data-stu-id="94bc6-106">Retrieve the [policy](../resources/policy.md) objects assigned to an application or service principal.</span></span>
+<span data-ttu-id="83bb8-104">检索分配给应用程序或服务主体的[策略](../resources/policy.md)对象。</span><span class="sxs-lookup"><span data-stu-id="83bb8-104">Retrieve the [policy](../resources/policy.md) objects assigned to an application or service principal.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="94bc6-107">权限</span><span class="sxs-lookup"><span data-stu-id="94bc6-107">Permissions</span></span>
-<span data-ttu-id="94bc6-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="94bc6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="83bb8-105">权限</span><span class="sxs-lookup"><span data-stu-id="83bb8-105">Permissions</span></span>
+<span data-ttu-id="83bb8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="83bb8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="94bc6-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="94bc6-110">Permission type</span></span>      | <span data-ttu-id="94bc6-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="94bc6-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="83bb8-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="83bb8-108">Permission type</span></span>      | <span data-ttu-id="83bb8-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="83bb8-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="94bc6-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="94bc6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="94bc6-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="94bc6-113">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="94bc6-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="94bc6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="94bc6-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="94bc6-115">Not supported.</span></span>    |
-|<span data-ttu-id="94bc6-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="94bc6-116">Application</span></span> | <span data-ttu-id="94bc6-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="94bc6-117">Not supported.</span></span> |
+|<span data-ttu-id="83bb8-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="83bb8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="83bb8-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="83bb8-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="83bb8-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="83bb8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="83bb8-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="83bb8-113">Not supported.</span></span>    |
+|<span data-ttu-id="83bb8-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="83bb8-114">Application</span></span> | <span data-ttu-id="83bb8-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="83bb8-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="94bc6-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="94bc6-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="83bb8-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="83bb8-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}/policies
 ```
 
-> <span data-ttu-id="94bc6-119">注意： 请求中的"id"为应用程序或服务主体，不是"appid"属性"id"属性。</span><span class="sxs-lookup"><span data-stu-id="94bc6-119">Note: The "id" in the request is the "id" property of the application or service principal, not the "appid" property.</span></span>
+> <span data-ttu-id="83bb8-117">注意： 请求中的"id"为应用程序或服务主体，不是"appid"属性"id"属性。</span><span class="sxs-lookup"><span data-stu-id="83bb8-117">Note: The "id" in the request is the "id" property of the application or service principal, not the "appid" property.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="94bc6-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="94bc6-120">Request headers</span></span>
-| <span data-ttu-id="94bc6-121">名称</span><span class="sxs-lookup"><span data-stu-id="94bc6-121">Name</span></span>       | <span data-ttu-id="94bc6-122">类型</span><span class="sxs-lookup"><span data-stu-id="94bc6-122">Type</span></span> | <span data-ttu-id="94bc6-123">说明</span><span class="sxs-lookup"><span data-stu-id="94bc6-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="83bb8-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="83bb8-118">Request headers</span></span>
+| <span data-ttu-id="83bb8-119">名称</span><span class="sxs-lookup"><span data-stu-id="83bb8-119">Name</span></span>       | <span data-ttu-id="83bb8-120">类型</span><span class="sxs-lookup"><span data-stu-id="83bb8-120">Type</span></span> | <span data-ttu-id="83bb8-121">说明</span><span class="sxs-lookup"><span data-stu-id="83bb8-121">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="94bc6-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="94bc6-124">Authorization</span></span>  | <span data-ttu-id="94bc6-125">string</span><span class="sxs-lookup"><span data-stu-id="94bc6-125">string</span></span>  | <span data-ttu-id="94bc6-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="94bc6-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="83bb8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="83bb8-122">Authorization</span></span>  | <span data-ttu-id="83bb8-123">string</span><span class="sxs-lookup"><span data-stu-id="83bb8-123">string</span></span>  | <span data-ttu-id="83bb8-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="83bb8-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="94bc6-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="94bc6-128">Request body</span></span>
-<span data-ttu-id="94bc6-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="94bc6-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="83bb8-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="83bb8-126">Request body</span></span>
+<span data-ttu-id="83bb8-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="83bb8-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="94bc6-130">响应</span><span class="sxs-lookup"><span data-stu-id="94bc6-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="83bb8-128">响应</span><span class="sxs-lookup"><span data-stu-id="83bb8-128">Response</span></span>
 
-<span data-ttu-id="94bc6-131">如果成功，此方法返回`200 OK`响应正文中的响应代码和[策略](../resources/policy.md)对象。</span><span class="sxs-lookup"><span data-stu-id="94bc6-131">If successful, this method returns `200 OK` response code and [policy](../resources/policy.md) objects in the response body.</span></span> <span data-ttu-id="94bc6-132">如果不成功，`4xx`与特定的详细信息，则返回错误。</span><span class="sxs-lookup"><span data-stu-id="94bc6-132">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
+<span data-ttu-id="83bb8-129">如果成功，此方法返回`200 OK`响应正文中的响应代码和[策略](../resources/policy.md)对象。</span><span class="sxs-lookup"><span data-stu-id="83bb8-129">If successful, this method returns `200 OK` response code and [policy](../resources/policy.md) objects in the response body.</span></span> <span data-ttu-id="83bb8-130">如果不成功，`4xx`与特定的详细信息，则返回错误。</span><span class="sxs-lookup"><span data-stu-id="83bb8-130">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
 
-## <a name="example"></a><span data-ttu-id="94bc6-133">示例</span><span class="sxs-lookup"><span data-stu-id="94bc6-133">Example</span></span>
-<span data-ttu-id="94bc6-134">以下示例检索分配给应用程序的策略。</span><span class="sxs-lookup"><span data-stu-id="94bc6-134">The following example retrieves the policies assigned to an application.</span></span>
+## <a name="example"></a><span data-ttu-id="83bb8-131">示例</span><span class="sxs-lookup"><span data-stu-id="83bb8-131">Example</span></span>
+<span data-ttu-id="83bb8-132">以下示例检索分配给应用程序的策略。</span><span class="sxs-lookup"><span data-stu-id="83bb8-132">The following example retrieves the policies assigned to an application.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="94bc6-135">请求</span><span class="sxs-lookup"><span data-stu-id="94bc6-135">Request</span></span>
-<span data-ttu-id="94bc6-136">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="94bc6-136">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="83bb8-133">请求</span><span class="sxs-lookup"><span data-stu-id="83bb8-133">Request</span></span>
+<span data-ttu-id="83bb8-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="83bb8-134">Here is an example of the request.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/applications/{id}/policies
 ```
 
-##### <a name="response"></a><span data-ttu-id="94bc6-137">响应</span><span class="sxs-lookup"><span data-stu-id="94bc6-137">Response</span></span>
-<span data-ttu-id="94bc6-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="94bc6-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="83bb8-135">响应</span><span class="sxs-lookup"><span data-stu-id="83bb8-135">Response</span></span>
+<span data-ttu-id="83bb8-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="83bb8-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -77,3 +77,11 @@ Content-Type: application/json
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-list-assigned.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

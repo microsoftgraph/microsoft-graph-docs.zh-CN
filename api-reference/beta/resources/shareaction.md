@@ -4,22 +4,22 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ShareAction
 localization_priority: Normal
-ms.openlocfilehash: 16bc590fcfe14f9ce7f6f1bbe38492225cce099c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 785a0a9ac9a2a1ecbd40c0d8ccae16dca9594fdf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828656"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520534"
 ---
-# <a name="shareaction-resource-type"></a><span data-ttu-id="a6774-102">ShareAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="a6774-102">ShareAction resource type</span></span>
+# <a name="shareaction-resource-type"></a><span data-ttu-id="92c04-102">ShareAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="92c04-102">ShareAction resource type</span></span>
 
-> <span data-ttu-id="a6774-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="a6774-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a6774-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="a6774-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a6774-105">**ShareAction** 资源提供了有关共享项的[活动][activity]的信息。</span><span class="sxs-lookup"><span data-stu-id="a6774-105">The **ShareAction** resource provides information about an [activity][activity] that shared an item.</span></span>
+<span data-ttu-id="92c04-103">**ShareAction** 资源提供了有关共享项的[活动][activity]的信息。</span><span class="sxs-lookup"><span data-stu-id="92c04-103">The **ShareAction** resource provides information about an [activity][activity] that shared an item.</span></span>
 
 [activity]: itemactivity.md
 
-## <a name="json-representation"></a><span data-ttu-id="a6774-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a6774-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="92c04-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="92c04-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,22 +33,27 @@ ms.locfileid: "27828656"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="a6774-107">属性</span><span class="sxs-lookup"><span data-stu-id="a6774-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="92c04-105">属性</span><span class="sxs-lookup"><span data-stu-id="92c04-105">Properties</span></span>
 
-| <span data-ttu-id="a6774-108">属性名称</span><span class="sxs-lookup"><span data-stu-id="a6774-108">Property name</span></span> | <span data-ttu-id="a6774-109">类型</span><span class="sxs-lookup"><span data-stu-id="a6774-109">Type</span></span>                       | <span data-ttu-id="a6774-110">说明</span><span class="sxs-lookup"><span data-stu-id="a6774-110">Description</span></span>
+| <span data-ttu-id="92c04-106">属性名称</span><span class="sxs-lookup"><span data-stu-id="92c04-106">Property name</span></span> | <span data-ttu-id="92c04-107">类型</span><span class="sxs-lookup"><span data-stu-id="92c04-107">Type</span></span>                       | <span data-ttu-id="92c04-108">说明</span><span class="sxs-lookup"><span data-stu-id="92c04-108">Description</span></span>
 |:--------------|:---------------------------|:-----------------------------
-| <span data-ttu-id="a6774-111">recipients</span><span class="sxs-lookup"><span data-stu-id="a6774-111">recipients</span></span>    | <span data-ttu-id="a6774-112">[identitySet][] 集合</span><span class="sxs-lookup"><span data-stu-id="a6774-112">[identitySet][] collection</span></span> | <span data-ttu-id="a6774-113">项在此操作中共享的标识。</span><span class="sxs-lookup"><span data-stu-id="a6774-113">The identities the item was shared with in this action.</span></span>
+| <span data-ttu-id="92c04-109">recipients</span><span class="sxs-lookup"><span data-stu-id="92c04-109">recipients</span></span>    | <span data-ttu-id="92c04-110">[identitySet][] 集合</span><span class="sxs-lookup"><span data-stu-id="92c04-110">[identitySet][] collection</span></span> | <span data-ttu-id="92c04-111">项在此操作中共享的标识。</span><span class="sxs-lookup"><span data-stu-id="92c04-111">The identities the item was shared with in this action.</span></span>
 
 [identitySet]: identityset.md
 
-## <a name="remarks"></a><span data-ttu-id="a6774-115">注解</span><span class="sxs-lookup"><span data-stu-id="a6774-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="92c04-113">注解</span><span class="sxs-lookup"><span data-stu-id="92c04-113">Remarks</span></span>
 
-<span data-ttu-id="a6774-116">项活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。</span><span class="sxs-lookup"><span data-stu-id="a6774-116">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="92c04-114">项活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。</span><span class="sxs-lookup"><span data-stu-id="92c04-114">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ShareAction object provides information about who an item was shared to in a share action.",
   "keywords": "activities,activity,action,mention",
   "section": "documentation",
-  "tocPath": "Resources/ShareAction"
-} -->
+  "tocPath": "Resources/ShareAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/shareaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

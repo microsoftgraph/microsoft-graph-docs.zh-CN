@@ -4,28 +4,28 @@ description: 'EducationResource 一个子类。 这表示在 OneNote 页面的�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b10bef551cdc2dd29a8a20c69d2c4657ee66af4e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 60b0e4647f1a601d3cbe206e264f7d288ee2110c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927917"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521416"
 ---
-# <a name="educationonenoteresource-resource-type"></a><span data-ttu-id="93d31-104">educationOneNoteResource 资源类型</span><span class="sxs-lookup"><span data-stu-id="93d31-104">educationOneNoteResource resource type</span></span>
+# <a name="educationonenoteresource-resource-type"></a><span data-ttu-id="a47fb-104">educationOneNoteResource 资源类型</span><span class="sxs-lookup"><span data-stu-id="a47fb-104">educationOneNoteResource resource type</span></span>
 
-> <span data-ttu-id="93d31-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="93d31-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="93d31-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="93d31-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="93d31-107">[EducationResource](educationresource.md)一个子类。</span><span class="sxs-lookup"><span data-stu-id="93d31-107">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="93d31-108">这表示在 OneNote 页面的位置。</span><span class="sxs-lookup"><span data-stu-id="93d31-108">This represents the location of the OneNote page.</span></span>  
+<span data-ttu-id="a47fb-105">[EducationResource](educationresource.md)一个子类。</span><span class="sxs-lookup"><span data-stu-id="a47fb-105">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="a47fb-106">这表示在 OneNote 页面的位置。</span><span class="sxs-lookup"><span data-stu-id="a47fb-106">This represents the location of the OneNote page.</span></span>  
 
-## <a name="properties"></a><span data-ttu-id="93d31-109">属性</span><span class="sxs-lookup"><span data-stu-id="93d31-109">Properties</span></span>
-| <span data-ttu-id="93d31-110">属性</span><span class="sxs-lookup"><span data-stu-id="93d31-110">Property</span></span>     | <span data-ttu-id="93d31-111">类型</span><span class="sxs-lookup"><span data-stu-id="93d31-111">Type</span></span>   |<span data-ttu-id="93d31-112">Description</span><span class="sxs-lookup"><span data-stu-id="93d31-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a47fb-107">属性</span><span class="sxs-lookup"><span data-stu-id="a47fb-107">Properties</span></span>
+| <span data-ttu-id="a47fb-108">属性</span><span class="sxs-lookup"><span data-stu-id="a47fb-108">Property</span></span>     | <span data-ttu-id="a47fb-109">类型</span><span class="sxs-lookup"><span data-stu-id="a47fb-109">Type</span></span>   |<span data-ttu-id="a47fb-110">说明</span><span class="sxs-lookup"><span data-stu-id="a47fb-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="93d31-113">pageUrl</span><span class="sxs-lookup"><span data-stu-id="93d31-113">pageUrl</span></span>|<span data-ttu-id="93d31-114">字符串</span><span class="sxs-lookup"><span data-stu-id="93d31-114">String</span></span>|<span data-ttu-id="93d31-115">在 OneNote 中页的 Microsoft Graph URL。</span><span class="sxs-lookup"><span data-stu-id="93d31-115">The Microsoft Graph URL to the page in OneNote.</span></span>|
-|<span data-ttu-id="93d31-116">sectionName</span><span class="sxs-lookup"><span data-stu-id="93d31-116">sectionName</span></span>|<span data-ttu-id="93d31-117">字符串</span><span class="sxs-lookup"><span data-stu-id="93d31-117">String</span></span>|<span data-ttu-id="93d31-118">分配应复制到或已复制到的部分名称。</span><span class="sxs-lookup"><span data-stu-id="93d31-118">Section name that distributions should be copied into or were copied into.</span></span>|
+|<span data-ttu-id="a47fb-111">pageUrl</span><span class="sxs-lookup"><span data-stu-id="a47fb-111">pageUrl</span></span>|<span data-ttu-id="a47fb-112">String</span><span class="sxs-lookup"><span data-stu-id="a47fb-112">String</span></span>|<span data-ttu-id="a47fb-113">在 OneNote 中页的 Microsoft Graph URL。</span><span class="sxs-lookup"><span data-stu-id="a47fb-113">The Microsoft Graph URL to the page in OneNote.</span></span>|
+|<span data-ttu-id="a47fb-114">sectionName</span><span class="sxs-lookup"><span data-stu-id="a47fb-114">sectionName</span></span>|<span data-ttu-id="a47fb-115">String</span><span class="sxs-lookup"><span data-stu-id="a47fb-115">String</span></span>|<span data-ttu-id="a47fb-116">分配应复制到或已复制到的部分名称。</span><span class="sxs-lookup"><span data-stu-id="a47fb-116">Section name that distributions should be copied into or were copied into.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="93d31-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="93d31-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a47fb-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a47fb-117">JSON representation</span></span>
 
-<span data-ttu-id="93d31-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="93d31-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a47fb-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a47fb-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,10 +45,15 @@ ms.locfileid: "27927917"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationOneNoteResource resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationonenoteresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

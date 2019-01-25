@@ -2,22 +2,22 @@
 title: timeConstraint 资源类型
 description: 根据活动的特定性质和开放时间段，将会议时间建议限制为某周的几个小时或几天。
 localization_priority: Normal
-ms.openlocfilehash: 6e3cc56f1495eae60bb84c458caa25c79557e033
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 88035d0617523c51bb01ee0a467e8c84785ad6aa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832905"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519673"
 ---
-# <a name="timeconstraint-resource-type"></a><span data-ttu-id="ffa23-103">timeConstraint 资源类型</span><span class="sxs-lookup"><span data-stu-id="ffa23-103">timeConstraint resource type</span></span>
+# <a name="timeconstraint-resource-type"></a><span data-ttu-id="6162c-103">timeConstraint 资源类型</span><span class="sxs-lookup"><span data-stu-id="6162c-103">timeConstraint resource type</span></span>
 
-> <span data-ttu-id="ffa23-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ffa23-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ffa23-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ffa23-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ffa23-106">根据活动的特定性质和开放时间段，将会议时间建议限制为某周的几个小时或几天。</span><span class="sxs-lookup"><span data-stu-id="ffa23-106">Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots.</span></span>
+<span data-ttu-id="6162c-104">根据活动的特定性质和开放时间段，将会议时间建议限制为某周的几个小时或几天。</span><span class="sxs-lookup"><span data-stu-id="6162c-104">Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ffa23-107">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ffa23-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6162c-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6162c-105">JSON representation</span></span>
 
-<span data-ttu-id="ffa23-108">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ffa23-108">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="6162c-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6162c-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,18 +34,23 @@ ms.locfileid: "27832905"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="ffa23-109">属性</span><span class="sxs-lookup"><span data-stu-id="ffa23-109">Properties</span></span>
-| <span data-ttu-id="ffa23-110">属性</span><span class="sxs-lookup"><span data-stu-id="ffa23-110">Property</span></span>     | <span data-ttu-id="ffa23-111">类型</span><span class="sxs-lookup"><span data-stu-id="ffa23-111">Type</span></span>   |<span data-ttu-id="ffa23-112">说明</span><span class="sxs-lookup"><span data-stu-id="ffa23-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6162c-107">属性</span><span class="sxs-lookup"><span data-stu-id="6162c-107">Properties</span></span>
+| <span data-ttu-id="6162c-108">属性</span><span class="sxs-lookup"><span data-stu-id="6162c-108">Property</span></span>     | <span data-ttu-id="6162c-109">类型</span><span class="sxs-lookup"><span data-stu-id="6162c-109">Type</span></span>   |<span data-ttu-id="6162c-110">说明</span><span class="sxs-lookup"><span data-stu-id="6162c-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ffa23-113">activityDomain</span><span class="sxs-lookup"><span data-stu-id="ffa23-113">activityDomain</span></span>|<span data-ttu-id="ffa23-114">字符串</span><span class="sxs-lookup"><span data-stu-id="ffa23-114">String</span></span>|<span data-ttu-id="ffa23-p102">（可选）活动性质。可取值为：`work`、`personal`、`unrestricted` 或 `unknown`。</span><span class="sxs-lookup"><span data-stu-id="ffa23-p102">The nature of the activity, optional. Possible values are: `work`, `personal`, `unrestricted`, or `unknown`.</span></span>|
-|<span data-ttu-id="ffa23-117">timeslots</span><span class="sxs-lookup"><span data-stu-id="ffa23-117">timeslots</span></span>|<span data-ttu-id="ffa23-118">[timeSlot](timeslot.md) 集合</span><span class="sxs-lookup"><span data-stu-id="ffa23-118">[timeSlot](timeslot.md) collection</span></span>|<span data-ttu-id="ffa23-119">一组时间段。</span><span class="sxs-lookup"><span data-stu-id="ffa23-119">An array of time periods.</span></span>|
+|<span data-ttu-id="6162c-111">activityDomain</span><span class="sxs-lookup"><span data-stu-id="6162c-111">activityDomain</span></span>|<span data-ttu-id="6162c-112">String</span><span class="sxs-lookup"><span data-stu-id="6162c-112">String</span></span>|<span data-ttu-id="6162c-p101">（可选）活动性质。可取值为：`work`、`personal`、`unrestricted` 或 `unknown`。</span><span class="sxs-lookup"><span data-stu-id="6162c-p101">The nature of the activity, optional. Possible values are: `work`, `personal`, `unrestricted`, or `unknown`.</span></span>|
+|<span data-ttu-id="6162c-115">timeslots</span><span class="sxs-lookup"><span data-stu-id="6162c-115">timeslots</span></span>|<span data-ttu-id="6162c-116">[timeSlot](timeslot.md) 集合</span><span class="sxs-lookup"><span data-stu-id="6162c-116">[timeSlot](timeslot.md) collection</span></span>|<span data-ttu-id="6162c-117">一组时间段。</span><span class="sxs-lookup"><span data-stu-id="6162c-117">An array of time periods.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "timeConstraint resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/timeconstraint.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

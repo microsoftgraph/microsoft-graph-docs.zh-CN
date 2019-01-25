@@ -1,32 +1,32 @@
 ---
 title: 获取最新的用户活动
-description: " API。 该服务将最近 historyItems，查询，然后提取这些相关的活动。 活动将根据最近**lastModified** **historyItem**上进行排序。 这意味着不**historyItems**活动将不包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限也将应用到响应，额外筛选，以便返回仅由您的应用程序创建的活动。 如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。 要获取应用程序的活动，请使用**nextLink**属性进行分页。"
+description: " API 该服务将最近 historyItems，查询，然后提取这些相关的活动。 活动将根据最近**lastModified** **historyItem**上进行排序。 这意味着不**historyItems**活动将不包含在响应中。 UserActivity.ReadWrite.CreatedByApp 权限也将应用到响应，额外筛选，以便返回仅由您的应用程序创建的活动。 如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。 要获取应用程序的活动，请使用**nextLink**属性进行分页。"
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 0cb0a4ba5a46489990b172a3acb5a542ef697740
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5ac5522472404e70f07b5b658e404cd4e77bbf88
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973550"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528961"
 ---
-# <a name="get-recent-user-activities"></a><span data-ttu-id="49039-109">获取最新的用户活动</span><span class="sxs-lookup"><span data-stu-id="49039-109">Get recent user activities</span></span>
+# <a name="get-recent-user-activities"></a><span data-ttu-id="47bfb-109">获取最新的用户活动</span><span class="sxs-lookup"><span data-stu-id="47bfb-109">Get recent user activities</span></span>
 
-> <span data-ttu-id="49039-110">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="49039-110">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="49039-111">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="49039-111">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="49039-112">获得给定用户的近期活动。</span><span class="sxs-lookup"><span data-stu-id="49039-112">Get recent activities for a given user.</span></span> <span data-ttu-id="49039-113">此 OData 函数具有一些包含以使其类似"最近使用"的 API 操作的默认行为。</span><span class="sxs-lookup"><span data-stu-id="49039-113">This OData function has some default behaviors included to make it operate like a "most recently used" API.</span></span> <span data-ttu-id="49039-114">该服务将最近[historyItems](../resources/projectrome-historyitem.md)，查询，然后提取这些相关的活动。</span><span class="sxs-lookup"><span data-stu-id="49039-114">The service will query for the most recent [historyItems](../resources/projectrome-historyitem.md), and then pull those related activities.</span></span> <span data-ttu-id="49039-115">活动将根据最近**lastModified** **historyItem**上进行排序。</span><span class="sxs-lookup"><span data-stu-id="49039-115">Activities will be sorted according to the most recent **lastModified** on the **historyItem**.</span></span> <span data-ttu-id="49039-116">这意味着不**historyItems**活动将不包含在响应中。</span><span class="sxs-lookup"><span data-stu-id="49039-116">This means that activities without **historyItems** will not be included in the response.</span></span> <span data-ttu-id="49039-117">UserActivity.ReadWrite.CreatedByApp 权限也将应用到响应，额外筛选，以便返回仅由您的应用程序创建的活动。</span><span class="sxs-lookup"><span data-stu-id="49039-117">The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="49039-118">如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。</span><span class="sxs-lookup"><span data-stu-id="49039-118">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="49039-119">要获取应用程序的活动，请使用**nextLink**属性进行分页。</span><span class="sxs-lookup"><span data-stu-id="49039-119">To get your application's activities, use the **nextLink** property to paginate.</span></span>
+<span data-ttu-id="47bfb-110">获得给定用户的近期活动。</span><span class="sxs-lookup"><span data-stu-id="47bfb-110">Get recent activities for a given user.</span></span> <span data-ttu-id="47bfb-111">此 OData 函数具有一些包含以使其类似"最近使用"的 API 操作的默认行为。</span><span class="sxs-lookup"><span data-stu-id="47bfb-111">This OData function has some default behaviors included to make it operate like a "most recently used" API.</span></span> <span data-ttu-id="47bfb-112">该服务将最近[historyItems](../resources/projectrome-historyitem.md)，查询，然后提取这些相关的活动。</span><span class="sxs-lookup"><span data-stu-id="47bfb-112">The service will query for the most recent [historyItems](../resources/projectrome-historyitem.md), and then pull those related activities.</span></span> <span data-ttu-id="47bfb-113">活动将根据最近**lastModified** **historyItem**上进行排序。</span><span class="sxs-lookup"><span data-stu-id="47bfb-113">Activities will be sorted according to the most recent **lastModified** on the **historyItem**.</span></span> <span data-ttu-id="47bfb-114">这意味着不**historyItems**活动将不包含在响应中。</span><span class="sxs-lookup"><span data-stu-id="47bfb-114">This means that activities without **historyItems** will not be included in the response.</span></span> <span data-ttu-id="47bfb-115">UserActivity.ReadWrite.CreatedByApp 权限也将应用到响应，额外筛选，以便返回仅由您的应用程序创建的活动。</span><span class="sxs-lookup"><span data-stu-id="47bfb-115">The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.</span></span> <span data-ttu-id="47bfb-116">如果用户是特别活动和其他应用程序已创建较新的活动，则将此服务器端筛选可能会导致空白页。</span><span class="sxs-lookup"><span data-stu-id="47bfb-116">This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities.</span></span> <span data-ttu-id="47bfb-117">要获取应用程序的活动，请使用**nextLink**属性进行分页。</span><span class="sxs-lookup"><span data-stu-id="47bfb-117">To get your application's activities, use the **nextLink** property to paginate.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="49039-120">权限</span><span class="sxs-lookup"><span data-stu-id="49039-120">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="47bfb-118">权限</span><span class="sxs-lookup"><span data-stu-id="47bfb-118">Permissions</span></span>
 
-<span data-ttu-id="49039-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="49039-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="47bfb-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="47bfb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="49039-123">权限类型</span><span class="sxs-lookup"><span data-stu-id="49039-123">Permission type</span></span>      | <span data-ttu-id="49039-124">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="49039-124">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="47bfb-121">权限类型</span><span class="sxs-lookup"><span data-stu-id="47bfb-121">Permission type</span></span>      | <span data-ttu-id="47bfb-122">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="47bfb-122">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="49039-125">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="49039-125">Delegated (work or school account)</span></span> | <span data-ttu-id="49039-126">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="49039-126">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="49039-127">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="49039-127">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49039-128">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="49039-128">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="49039-129">应用程序</span><span class="sxs-lookup"><span data-stu-id="49039-129">Application</span></span> | <span data-ttu-id="49039-130">不支持。</span><span class="sxs-lookup"><span data-stu-id="49039-130">Not supported.</span></span> |
+|<span data-ttu-id="47bfb-123">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="47bfb-123">Delegated (work or school account)</span></span> | <span data-ttu-id="47bfb-124">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="47bfb-124">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="47bfb-125">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="47bfb-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="47bfb-126">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="47bfb-126">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="47bfb-127">应用程序</span><span class="sxs-lookup"><span data-stu-id="47bfb-127">Application</span></span> | <span data-ttu-id="47bfb-128">不支持。</span><span class="sxs-lookup"><span data-stu-id="47bfb-128">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="49039-131">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="49039-131">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="47bfb-129">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="47bfb-129">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,15 +34,15 @@ ms.locfileid: "27973550"
 GET /me/activities/recent
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="49039-132">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="49039-132">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="47bfb-130">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="47bfb-130">Optional query parameters</span></span>
 
-<span data-ttu-id="49039-133">此方法支持某些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，以帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="49039-133">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="49039-134">支持以下查询参数：</span><span class="sxs-lookup"><span data-stu-id="49039-134">The following query parameters are supported:</span></span>
+<span data-ttu-id="47bfb-131">此方法支持某些[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，以帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="47bfb-131">This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span> <span data-ttu-id="47bfb-132">支持以下查询参数：</span><span class="sxs-lookup"><span data-stu-id="47bfb-132">The following query parameters are supported:</span></span>
 
-- <span data-ttu-id="49039-135">$ expand **historyItems**导航属性。</span><span class="sxs-lookup"><span data-stu-id="49039-135">$expand for the **historyItems** navigation property.</span></span>
-- <span data-ttu-id="49039-136">$top 跨页限制的最大项目数。</span><span class="sxs-lookup"><span data-stu-id="49039-136">$top to limit the maximum number of items across pages.</span></span>
-- <span data-ttu-id="49039-137">在**活动**或**historyItems**，如果展开的**lastModifiedDateTime**属性 $filter。</span><span class="sxs-lookup"><span data-stu-id="49039-137">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
+- <span data-ttu-id="47bfb-133">$ expand **historyItems**导航属性。</span><span class="sxs-lookup"><span data-stu-id="47bfb-133">$expand for the **historyItems** navigation property.</span></span>
+- <span data-ttu-id="47bfb-134">$top 跨页限制的最大项目数。</span><span class="sxs-lookup"><span data-stu-id="47bfb-134">$top to limit the maximum number of items across pages.</span></span>
+- <span data-ttu-id="47bfb-135">在**活动**或**historyItems**，如果展开的**lastModifiedDateTime**属性 $filter。</span><span class="sxs-lookup"><span data-stu-id="47bfb-135">$filter on the **lastModifiedDateTime** property for either **activities** or **historyItems**, if expanded.</span></span>
 
-<span data-ttu-id="49039-138">以下是支持 URL 编码的查询的一些示例。</span><span class="sxs-lookup"><span data-stu-id="49039-138">The following are some examples of supported queries with URL encoding.</span></span>
+<span data-ttu-id="47bfb-136">以下是支持 URL 编码的查询的一些示例。</span><span class="sxs-lookup"><span data-stu-id="47bfb-136">The following are some examples of supported queries with URL encoding.</span></span>
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -52,25 +52,25 @@ GET /me/activities/recent
 /me/activities/recent?$top=5
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="49039-139">请求标头</span><span class="sxs-lookup"><span data-stu-id="49039-139">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="47bfb-137">请求标头</span><span class="sxs-lookup"><span data-stu-id="47bfb-137">Request headers</span></span>
 
-|<span data-ttu-id="49039-140">名称</span><span class="sxs-lookup"><span data-stu-id="49039-140">Name</span></span> | <span data-ttu-id="49039-141">类型</span><span class="sxs-lookup"><span data-stu-id="49039-141">Type</span></span> | <span data-ttu-id="49039-142">说明</span><span class="sxs-lookup"><span data-stu-id="49039-142">Description</span></span>|
+|<span data-ttu-id="47bfb-138">名称</span><span class="sxs-lookup"><span data-stu-id="47bfb-138">Name</span></span> | <span data-ttu-id="47bfb-139">类型</span><span class="sxs-lookup"><span data-stu-id="47bfb-139">Type</span></span> | <span data-ttu-id="47bfb-140">说明</span><span class="sxs-lookup"><span data-stu-id="47bfb-140">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="49039-143">Authorization</span><span class="sxs-lookup"><span data-stu-id="49039-143">Authorization</span></span> | <span data-ttu-id="49039-144">string</span><span class="sxs-lookup"><span data-stu-id="49039-144">string</span></span> | <span data-ttu-id="49039-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="49039-p106">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="47bfb-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="47bfb-141">Authorization</span></span> | <span data-ttu-id="47bfb-142">string</span><span class="sxs-lookup"><span data-stu-id="47bfb-142">string</span></span> | <span data-ttu-id="47bfb-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="47bfb-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="49039-147">请求正文</span><span class="sxs-lookup"><span data-stu-id="49039-147">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="47bfb-145">请求正文</span><span class="sxs-lookup"><span data-stu-id="47bfb-145">Request body</span></span>
 
-<span data-ttu-id="49039-148">不指定请求正文。</span><span class="sxs-lookup"><span data-stu-id="49039-148">Do not specify a request body.</span></span>
+<span data-ttu-id="47bfb-146">不指定请求正文。</span><span class="sxs-lookup"><span data-stu-id="47bfb-146">Do not specify a request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="49039-149">响应</span><span class="sxs-lookup"><span data-stu-id="49039-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="47bfb-147">响应</span><span class="sxs-lookup"><span data-stu-id="47bfb-147">Response</span></span>
 
-<span data-ttu-id="49039-150">如果成功，此方法返回`200 OK`与您的应用程序的用户的近期活动的响应代码。</span><span class="sxs-lookup"><span data-stu-id="49039-150">If successful, this method returns the `200 OK` response code with the user's recent activities for your application.</span></span>
+<span data-ttu-id="47bfb-148">如果成功，此方法返回`200 OK`与您的应用程序的用户的近期活动的响应代码。</span><span class="sxs-lookup"><span data-stu-id="47bfb-148">If successful, this method returns the `200 OK` response code with the user's recent activities for your application.</span></span>
 
-## <a name="example"></a><span data-ttu-id="49039-151">示例</span><span class="sxs-lookup"><span data-stu-id="49039-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="47bfb-149">示例</span><span class="sxs-lookup"><span data-stu-id="47bfb-149">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="49039-152">请求</span><span class="sxs-lookup"><span data-stu-id="49039-152">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="47bfb-150">请求</span><span class="sxs-lookup"><span data-stu-id="47bfb-150">Request</span></span>
 
-<span data-ttu-id="49039-153">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="49039-153">The following is an example of the request.</span></span>
+<span data-ttu-id="47bfb-151">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="47bfb-151">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -81,9 +81,9 @@ GET /me/activities/recent
 GET https://graph.microsoft.com/beta/me/activities/recent
 ```
 
-##### <a name="response"></a><span data-ttu-id="49039-154">响应</span><span class="sxs-lookup"><span data-stu-id="49039-154">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="47bfb-152">响应</span><span class="sxs-lookup"><span data-stu-id="47bfb-152">Response</span></span>
 
-<span data-ttu-id="49039-155">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="49039-155">The following is an example of the response.</span></span>
+<span data-ttu-id="47bfb-153">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="47bfb-153">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -143,10 +143,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get recent activities",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/projectrome-get-recent-activities.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

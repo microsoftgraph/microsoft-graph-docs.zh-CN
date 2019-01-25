@@ -4,49 +4,49 @@ description: 获取用户的直接下属。返回指定此用户作为经理的�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: da881d46b69153a85de225b895f6b1c2d622ff09
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d56b8dc4579f40156e30a46b00af0f5bfcd82b97
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984435"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520345"
 ---
-# <a name="list-directreports"></a><span data-ttu-id="ce9fb-104">列出 directReports</span><span class="sxs-lookup"><span data-stu-id="ce9fb-104">List directReports</span></span>
+# <a name="list-directreports"></a><span data-ttu-id="7dbf9-104">列出 directReports</span><span class="sxs-lookup"><span data-stu-id="7dbf9-104">List directReports</span></span>
 
-> <span data-ttu-id="ce9fb-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ce9fb-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ce9fb-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ce9fb-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ce9fb-p103">获取用户的直接下属。返回指定此用户作为经理的用户和联系人。</span><span class="sxs-lookup"><span data-stu-id="ce9fb-p103">Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ce9fb-109">权限</span><span class="sxs-lookup"><span data-stu-id="ce9fb-109">Permissions</span></span>
-<span data-ttu-id="ce9fb-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ce9fb-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7dbf9-p102">获取用户的直接下属。返回指定此用户作为经理的用户和联系人。</span><span class="sxs-lookup"><span data-stu-id="7dbf9-p102">Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7dbf9-107">权限</span><span class="sxs-lookup"><span data-stu-id="7dbf9-107">Permissions</span></span>
+<span data-ttu-id="7dbf9-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7dbf9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ce9fb-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="ce9fb-112">Permission type</span></span>      | <span data-ttu-id="ce9fb-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ce9fb-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7dbf9-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="7dbf9-110">Permission type</span></span>      | <span data-ttu-id="7dbf9-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7dbf9-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ce9fb-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ce9fb-114">Delegated (work or school account)</span></span> | <span data-ttu-id="ce9fb-115">User.Read、User.ReadWrite、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ce9fb-115">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="ce9fb-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ce9fb-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce9fb-117">User.Read、User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ce9fb-117">User.Read, User.ReadWrite</span></span>    |
-|<span data-ttu-id="ce9fb-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="ce9fb-118">Application</span></span> | <span data-ttu-id="ce9fb-119">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce9fb-119">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="7dbf9-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7dbf9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7dbf9-113">User.Read、User.ReadWrite、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7dbf9-113">User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="7dbf9-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7dbf9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7dbf9-115">User.Read、User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7dbf9-115">User.Read, User.ReadWrite</span></span>    |
+|<span data-ttu-id="7dbf9-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="7dbf9-116">Application</span></span> | <span data-ttu-id="7dbf9-117">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7dbf9-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ce9fb-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ce9fb-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7dbf9-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7dbf9-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/directReports
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="ce9fb-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="ce9fb-121">Optional query parameters</span></span>
-<span data-ttu-id="ce9fb-122">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ce9fb-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="ce9fb-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="ce9fb-123">Request headers</span></span>
-| <span data-ttu-id="ce9fb-124">标头</span><span class="sxs-lookup"><span data-stu-id="ce9fb-124">Header</span></span>       | <span data-ttu-id="ce9fb-125">值</span><span class="sxs-lookup"><span data-stu-id="ce9fb-125">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="7dbf9-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="7dbf9-119">Optional query parameters</span></span>
+<span data-ttu-id="7dbf9-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="7dbf9-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7dbf9-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="7dbf9-121">Request headers</span></span>
+| <span data-ttu-id="7dbf9-122">标头</span><span class="sxs-lookup"><span data-stu-id="7dbf9-122">Header</span></span>       | <span data-ttu-id="7dbf9-123">值</span><span class="sxs-lookup"><span data-stu-id="7dbf9-123">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="ce9fb-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce9fb-126">Authorization</span></span>  | <span data-ttu-id="ce9fb-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ce9fb-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="ce9fb-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ce9fb-129">Content-Type</span></span>   | <span data-ttu-id="ce9fb-130">application/json</span><span class="sxs-lookup"><span data-stu-id="ce9fb-130">application/json</span></span>  |
+| <span data-ttu-id="7dbf9-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="7dbf9-124">Authorization</span></span>  | <span data-ttu-id="7dbf9-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="7dbf9-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7dbf9-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7dbf9-127">Content-Type</span></span>   | <span data-ttu-id="7dbf9-128">application/json</span><span class="sxs-lookup"><span data-stu-id="7dbf9-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="ce9fb-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="ce9fb-131">Request body</span></span>
-<span data-ttu-id="ce9fb-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ce9fb-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7dbf9-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="7dbf9-129">Request body</span></span>
+<span data-ttu-id="7dbf9-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7dbf9-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ce9fb-133">响应</span><span class="sxs-lookup"><span data-stu-id="ce9fb-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7dbf9-131">响应</span><span class="sxs-lookup"><span data-stu-id="7dbf9-131">Response</span></span>
 
-<span data-ttu-id="ce9fb-134">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="ce9fb-134">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ce9fb-135">示例</span><span class="sxs-lookup"><span data-stu-id="ce9fb-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ce9fb-136">请求</span><span class="sxs-lookup"><span data-stu-id="ce9fb-136">Request</span></span>
-<span data-ttu-id="ce9fb-137">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ce9fb-137">Here is an example of the request.</span></span>
+<span data-ttu-id="7dbf9-132">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryObject](../resources/directoryobject.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="7dbf9-132">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7dbf9-133">示例</span><span class="sxs-lookup"><span data-stu-id="7dbf9-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7dbf9-134">请求</span><span class="sxs-lookup"><span data-stu-id="7dbf9-134">Request</span></span>
+<span data-ttu-id="7dbf9-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7dbf9-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_directreports"
@@ -54,8 +54,8 @@ GET /users/{id | userPrincipalName}/directReports
 ```http
 GET https://graph.microsoft.com/beta/me/directReports
 ```
-##### <a name="response"></a><span data-ttu-id="ce9fb-138">响应</span><span class="sxs-lookup"><span data-stu-id="ce9fb-138">Response</span></span>
-<span data-ttu-id="ce9fb-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ce9fb-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="7dbf9-136">响应</span><span class="sxs-lookup"><span data-stu-id="7dbf9-136">Response</span></span>
+<span data-ttu-id="7dbf9-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7dbf9-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,10 +78,15 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-directreports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

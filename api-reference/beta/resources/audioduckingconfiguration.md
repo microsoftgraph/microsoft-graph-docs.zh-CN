@@ -4,33 +4,33 @@ description: 参数放掉的其他源 （逐步注销其他源。）
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b4132946573342976bb1f20c593454a8e18030d2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d61e4150250df25e020f45a65676d1c55c0e4c9d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916871"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522460"
 ---
-# <a name="audioduckingconfiguration-resource-type"></a><span data-ttu-id="5fa02-103">audioDuckingConfiguration 资源类型</span><span class="sxs-lookup"><span data-stu-id="5fa02-103">audioDuckingConfiguration resource type</span></span>
+# <a name="audioduckingconfiguration-resource-type"></a><span data-ttu-id="422a6-103">audioDuckingConfiguration 资源类型</span><span class="sxs-lookup"><span data-stu-id="422a6-103">audioDuckingConfiguration resource type</span></span>
 
-> <span data-ttu-id="5fa02-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="5fa02-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5fa02-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="5fa02-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5fa02-106">参数放掉的其他源 （逐步注销其他源。）</span><span class="sxs-lookup"><span data-stu-id="5fa02-106">Parameters for ducking of other sources (phasing in and out of other sources.)</span></span>
+<span data-ttu-id="422a6-104">参数放掉的其他源 （逐步注销其他源。）</span><span class="sxs-lookup"><span data-stu-id="422a6-104">Parameters for ducking of other sources (phasing in and out of other sources.)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5fa02-107">属性</span><span class="sxs-lookup"><span data-stu-id="5fa02-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="422a6-105">属性</span><span class="sxs-lookup"><span data-stu-id="422a6-105">Properties</span></span>
 
-| <span data-ttu-id="5fa02-108">属性</span><span class="sxs-lookup"><span data-stu-id="5fa02-108">Property</span></span>      | <span data-ttu-id="5fa02-109">类型</span><span class="sxs-lookup"><span data-stu-id="5fa02-109">Type</span></span>     | <span data-ttu-id="5fa02-110">Description</span><span class="sxs-lookup"><span data-stu-id="5fa02-110">Description</span></span>                                                                     |
+| <span data-ttu-id="422a6-106">属性</span><span class="sxs-lookup"><span data-stu-id="422a6-106">Property</span></span>      | <span data-ttu-id="422a6-107">类型</span><span class="sxs-lookup"><span data-stu-id="422a6-107">Type</span></span>     | <span data-ttu-id="422a6-108">说明</span><span class="sxs-lookup"><span data-stu-id="422a6-108">Description</span></span>                                                                     |
 | :------------ | :------- | :-------------------------------------------------------------------------------|
-| <span data-ttu-id="5fa02-111">lowerLevel</span><span class="sxs-lookup"><span data-stu-id="5fa02-111">lowerLevel</span></span>    | <span data-ttu-id="5fa02-112">Int64</span><span class="sxs-lookup"><span data-stu-id="5fa02-112">Int64</span></span>    | <span data-ttu-id="5fa02-113">源中时源正在 ducked %的卷。</span><span class="sxs-lookup"><span data-stu-id="5fa02-113">The volume of sources in percent when the sources are being ducked.</span></span>             |
-| <span data-ttu-id="5fa02-114">rampActive</span><span class="sxs-lookup"><span data-stu-id="5fa02-114">rampActive</span></span>    | <span data-ttu-id="5fa02-115">Int64</span><span class="sxs-lookup"><span data-stu-id="5fa02-115">Int64</span></span>    | <span data-ttu-id="5fa02-116">时间 （以毫秒计） 计的 ducked 源以"淡出"。</span><span class="sxs-lookup"><span data-stu-id="5fa02-116">The amount of time (in milliseconds) it takes for ducked sources to "fade out".</span></span> |
-| <span data-ttu-id="5fa02-117">rampInactive</span><span class="sxs-lookup"><span data-stu-id="5fa02-117">rampInactive</span></span>  | <span data-ttu-id="5fa02-118">Int64</span><span class="sxs-lookup"><span data-stu-id="5fa02-118">Int64</span></span>    | <span data-ttu-id="5fa02-119">时间 （以毫秒计） 计的 ducked 源"淡出"。</span><span class="sxs-lookup"><span data-stu-id="5fa02-119">The amount of time (in milliseconds) it takes for ducked sources to "fade in".</span></span>  |
-| <span data-ttu-id="5fa02-120">upperLevel</span><span class="sxs-lookup"><span data-stu-id="5fa02-120">upperLevel</span></span>    | <span data-ttu-id="5fa02-121">Int64</span><span class="sxs-lookup"><span data-stu-id="5fa02-121">Int64</span></span>    | <span data-ttu-id="5fa02-122">源中时源不正在 ducked %的卷。</span><span class="sxs-lookup"><span data-stu-id="5fa02-122">The volume of sources in percent when the sources are not being ducked.</span></span>         |
+| <span data-ttu-id="422a6-109">lowerLevel</span><span class="sxs-lookup"><span data-stu-id="422a6-109">lowerLevel</span></span>    | <span data-ttu-id="422a6-110">Int64</span><span class="sxs-lookup"><span data-stu-id="422a6-110">Int64</span></span>    | <span data-ttu-id="422a6-111">源中时源正在 ducked %的卷。</span><span class="sxs-lookup"><span data-stu-id="422a6-111">The volume of sources in percent when the sources are being ducked.</span></span>             |
+| <span data-ttu-id="422a6-112">rampActive</span><span class="sxs-lookup"><span data-stu-id="422a6-112">rampActive</span></span>    | <span data-ttu-id="422a6-113">Int64</span><span class="sxs-lookup"><span data-stu-id="422a6-113">Int64</span></span>    | <span data-ttu-id="422a6-114">时间 （以毫秒计） 计的 ducked 源以"淡出"。</span><span class="sxs-lookup"><span data-stu-id="422a6-114">The amount of time (in milliseconds) it takes for ducked sources to "fade out".</span></span> |
+| <span data-ttu-id="422a6-115">rampInactive</span><span class="sxs-lookup"><span data-stu-id="422a6-115">rampInactive</span></span>  | <span data-ttu-id="422a6-116">Int64</span><span class="sxs-lookup"><span data-stu-id="422a6-116">Int64</span></span>    | <span data-ttu-id="422a6-117">时间 （以毫秒计） 计的 ducked 源"淡出"。</span><span class="sxs-lookup"><span data-stu-id="422a6-117">The amount of time (in milliseconds) it takes for ducked sources to "fade in".</span></span>  |
+| <span data-ttu-id="422a6-118">upperLevel</span><span class="sxs-lookup"><span data-stu-id="422a6-118">upperLevel</span></span>    | <span data-ttu-id="422a6-119">Int64</span><span class="sxs-lookup"><span data-stu-id="422a6-119">Int64</span></span>    | <span data-ttu-id="422a6-120">源中时源不正在 ducked %的卷。</span><span class="sxs-lookup"><span data-stu-id="422a6-120">The volume of sources in percent when the sources are not being ducked.</span></span>         |
 
-> <span data-ttu-id="5fa02-123">**注意：** 提升持续时间不能超过 5000 毫秒。</span><span class="sxs-lookup"><span data-stu-id="5fa02-123">**Note:** Ramp duration cannot be more than 5,000 milliseconds.</span></span>
+> <span data-ttu-id="422a6-121">**注意：** 提升持续时间不能超过 5000 毫秒。</span><span class="sxs-lookup"><span data-stu-id="422a6-121">**Note:** Ramp duration cannot be more than 5,000 milliseconds.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="5fa02-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5fa02-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="422a6-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="422a6-122">JSON representation</span></span>
 
-<span data-ttu-id="5fa02-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5fa02-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="422a6-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="422a6-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,10 +49,15 @@ ms.locfileid: "27916871"
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "audioDuckingConfiguration resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/audioduckingconfiguration.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

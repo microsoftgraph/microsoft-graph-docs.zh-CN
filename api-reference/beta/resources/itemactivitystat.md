@@ -4,20 +4,20 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
 localization_priority: Normal
-ms.openlocfilehash: d0917d0100d33abee1095e2a7d06a4732d382937
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1362116c0dbe997eda941cb790e00e9ddb078ae4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854248"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517629"
 ---
-# <a name="itemactivitystat-resource-type"></a><span data-ttu-id="bdc08-102">itemActivityStat 资源类型</span><span class="sxs-lookup"><span data-stu-id="bdc08-102">itemActivityStat resource type</span></span>
+# <a name="itemactivitystat-resource-type"></a><span data-ttu-id="aa63b-102">itemActivityStat 资源类型</span><span class="sxs-lookup"><span data-stu-id="aa63b-102">itemActivityStat resource type</span></span>
 
-> <span data-ttu-id="bdc08-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="bdc08-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bdc08-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="bdc08-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bdc08-105">**ItemActivityStat**资源提供有关发生的时间间隔内的活动信息。</span><span class="sxs-lookup"><span data-stu-id="bdc08-105">The **itemActivityStat** resource provides information about activities that took place within an interval of time.</span></span>
+<span data-ttu-id="aa63b-103">**ItemActivityStat**资源提供有关发生的时间间隔内的活动信息。</span><span class="sxs-lookup"><span data-stu-id="aa63b-103">The **itemActivityStat** resource provides information about activities that took place within an interval of time.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="bdc08-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="bdc08-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="aa63b-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="aa63b-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -41,37 +41,42 @@ ms.locfileid: "27854248"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="bdc08-107">属性</span><span class="sxs-lookup"><span data-stu-id="bdc08-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="aa63b-105">属性</span><span class="sxs-lookup"><span data-stu-id="aa63b-105">Properties</span></span>
 
-| <span data-ttu-id="bdc08-108">属性</span><span class="sxs-lookup"><span data-stu-id="bdc08-108">Property</span></span>         | <span data-ttu-id="bdc08-109">类型</span><span class="sxs-lookup"><span data-stu-id="bdc08-109">Type</span></span>                    | <span data-ttu-id="bdc08-110">Description</span><span class="sxs-lookup"><span data-stu-id="bdc08-110">Description</span></span>
+| <span data-ttu-id="aa63b-106">属性</span><span class="sxs-lookup"><span data-stu-id="aa63b-106">Property</span></span>         | <span data-ttu-id="aa63b-107">类型</span><span class="sxs-lookup"><span data-stu-id="aa63b-107">Type</span></span>                    | <span data-ttu-id="aa63b-108">说明</span><span class="sxs-lookup"><span data-stu-id="aa63b-108">Description</span></span>
 |:-----------------|:------------------------|:----------------------------------------
-| <span data-ttu-id="bdc08-111">incompleteData</span><span class="sxs-lookup"><span data-stu-id="bdc08-111">incompleteData</span></span>   | <span data-ttu-id="bdc08-112">[incompleteData][]</span><span class="sxs-lookup"><span data-stu-id="bdc08-112">[incompleteData][]</span></span>      | <span data-ttu-id="bdc08-113">指示此间隔中的统计信息基于不完整的数据。</span><span class="sxs-lookup"><span data-stu-id="bdc08-113">Indicates that the statistics in this interval are based on incomplete data.</span></span> <span data-ttu-id="bdc08-114">此为只读属性。</span><span class="sxs-lookup"><span data-stu-id="bdc08-114">Read-only.</span></span>
-| <span data-ttu-id="bdc08-115">isTrending</span><span class="sxs-lookup"><span data-stu-id="bdc08-115">isTrending</span></span>       | <span data-ttu-id="bdc08-116">布尔</span><span class="sxs-lookup"><span data-stu-id="bdc08-116">Boolean</span></span>                 | <span data-ttu-id="bdc08-117">指示是否项目"趋势。"</span><span class="sxs-lookup"><span data-stu-id="bdc08-117">Indicates whether the item is "trending."</span></span> <span data-ttu-id="bdc08-118">此为只读属性。</span><span class="sxs-lookup"><span data-stu-id="bdc08-118">Read-only.</span></span>
-| <span data-ttu-id="bdc08-119">startDateTime</span><span class="sxs-lookup"><span data-stu-id="bdc08-119">startDateTime</span></span>    | <span data-ttu-id="bdc08-120">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bdc08-120">DateTimeOffset</span></span>          | <span data-ttu-id="bdc08-121">当开始间隔。</span><span class="sxs-lookup"><span data-stu-id="bdc08-121">When the interval starts.</span></span> <span data-ttu-id="bdc08-122">此为只读属性。</span><span class="sxs-lookup"><span data-stu-id="bdc08-122">Read-only.</span></span>
-| <span data-ttu-id="bdc08-123">endDateTime</span><span class="sxs-lookup"><span data-stu-id="bdc08-123">endDateTime</span></span>      | <span data-ttu-id="bdc08-124">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bdc08-124">DateTimeOffset</span></span>          | <span data-ttu-id="bdc08-125">当结束间隔。</span><span class="sxs-lookup"><span data-stu-id="bdc08-125">When the interval ends.</span></span> <span data-ttu-id="bdc08-126">此为只读属性。</span><span class="sxs-lookup"><span data-stu-id="bdc08-126">Read-only.</span></span>
-| <span data-ttu-id="bdc08-127">create</span><span class="sxs-lookup"><span data-stu-id="bdc08-127">create</span></span>           | <span data-ttu-id="bdc08-128">[itemActionStat][]</span><span class="sxs-lookup"><span data-stu-id="bdc08-128">[itemActionStat][]</span></span>      | <span data-ttu-id="bdc08-129">有关此间隔中的**创建**操作的统计信息。</span><span class="sxs-lookup"><span data-stu-id="bdc08-129">Statistics about the **create** actions in this interval.</span></span> <span data-ttu-id="bdc08-130">此为只读属性。</span><span class="sxs-lookup"><span data-stu-id="bdc08-130">Read-only.</span></span>
-| <span data-ttu-id="bdc08-131">edit</span><span class="sxs-lookup"><span data-stu-id="bdc08-131">edit</span></span>             | <span data-ttu-id="bdc08-132">[itemActionStat][]</span><span class="sxs-lookup"><span data-stu-id="bdc08-132">[itemActionStat][]</span></span>      | <span data-ttu-id="bdc08-133">有关此间隔中的**编辑**操作的统计信息。</span><span class="sxs-lookup"><span data-stu-id="bdc08-133">Statistics about the **edit** actions in this interval.</span></span> <span data-ttu-id="bdc08-134">此为只读属性。</span><span class="sxs-lookup"><span data-stu-id="bdc08-134">Read-only.</span></span>
-| <span data-ttu-id="bdc08-135">delete</span><span class="sxs-lookup"><span data-stu-id="bdc08-135">delete</span></span>           | <span data-ttu-id="bdc08-136">[itemActionStat][]</span><span class="sxs-lookup"><span data-stu-id="bdc08-136">[itemActionStat][]</span></span>      | <span data-ttu-id="bdc08-137">有关此间隔中的**删除**操作的统计信息。</span><span class="sxs-lookup"><span data-stu-id="bdc08-137">Statistics about the **delete** actions in this interval.</span></span> <span data-ttu-id="bdc08-138">此为只读属性。</span><span class="sxs-lookup"><span data-stu-id="bdc08-138">Read-only.</span></span>
-| <span data-ttu-id="bdc08-139">move</span><span class="sxs-lookup"><span data-stu-id="bdc08-139">move</span></span>             | <span data-ttu-id="bdc08-140">[itemActionStat][]</span><span class="sxs-lookup"><span data-stu-id="bdc08-140">[itemActionStat][]</span></span>      | <span data-ttu-id="bdc08-141">有关此间隔中的**移动**操作的统计信息。</span><span class="sxs-lookup"><span data-stu-id="bdc08-141">Statistics about the **move** actions in this interval.</span></span> <span data-ttu-id="bdc08-142">此为只读属性。</span><span class="sxs-lookup"><span data-stu-id="bdc08-142">Read-only.</span></span>
-| <span data-ttu-id="bdc08-143">访问</span><span class="sxs-lookup"><span data-stu-id="bdc08-143">access</span></span>           | <span data-ttu-id="bdc08-144">[itemActionStat][]</span><span class="sxs-lookup"><span data-stu-id="bdc08-144">[itemActionStat][]</span></span>      | <span data-ttu-id="bdc08-145">有关此间隔中的**访问**操作的统计信息。</span><span class="sxs-lookup"><span data-stu-id="bdc08-145">Statistics about the **access** actions in this interval.</span></span> <span data-ttu-id="bdc08-146">此为只读属性。</span><span class="sxs-lookup"><span data-stu-id="bdc08-146">Read-only.</span></span>
+| <span data-ttu-id="aa63b-109">incompleteData</span><span class="sxs-lookup"><span data-stu-id="aa63b-109">incompleteData</span></span>   | <span data-ttu-id="aa63b-110">[incompleteData][]</span><span class="sxs-lookup"><span data-stu-id="aa63b-110">[incompleteData][]</span></span>      | <span data-ttu-id="aa63b-111">指示此间隔中的统计信息基于不完整的数据。</span><span class="sxs-lookup"><span data-stu-id="aa63b-111">Indicates that the statistics in this interval are based on incomplete data.</span></span> <span data-ttu-id="aa63b-112">只读。</span><span class="sxs-lookup"><span data-stu-id="aa63b-112">Read-only.</span></span>
+| <span data-ttu-id="aa63b-113">isTrending</span><span class="sxs-lookup"><span data-stu-id="aa63b-113">isTrending</span></span>       | <span data-ttu-id="aa63b-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="aa63b-114">Boolean</span></span>                 | <span data-ttu-id="aa63b-115">指示是否项目"趋势。"</span><span class="sxs-lookup"><span data-stu-id="aa63b-115">Indicates whether the item is "trending."</span></span> <span data-ttu-id="aa63b-116">只读。</span><span class="sxs-lookup"><span data-stu-id="aa63b-116">Read-only.</span></span>
+| <span data-ttu-id="aa63b-117">startDateTime</span><span class="sxs-lookup"><span data-stu-id="aa63b-117">startDateTime</span></span>    | <span data-ttu-id="aa63b-118">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="aa63b-118">DateTimeOffset</span></span>          | <span data-ttu-id="aa63b-119">当开始间隔。</span><span class="sxs-lookup"><span data-stu-id="aa63b-119">When the interval starts.</span></span> <span data-ttu-id="aa63b-120">只读。</span><span class="sxs-lookup"><span data-stu-id="aa63b-120">Read-only.</span></span>
+| <span data-ttu-id="aa63b-121">endDateTime</span><span class="sxs-lookup"><span data-stu-id="aa63b-121">endDateTime</span></span>      | <span data-ttu-id="aa63b-122">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="aa63b-122">DateTimeOffset</span></span>          | <span data-ttu-id="aa63b-123">当结束间隔。</span><span class="sxs-lookup"><span data-stu-id="aa63b-123">When the interval ends.</span></span> <span data-ttu-id="aa63b-124">只读。</span><span class="sxs-lookup"><span data-stu-id="aa63b-124">Read-only.</span></span>
+| <span data-ttu-id="aa63b-125">create</span><span class="sxs-lookup"><span data-stu-id="aa63b-125">create</span></span>           | <span data-ttu-id="aa63b-126">[itemActionStat][]</span><span class="sxs-lookup"><span data-stu-id="aa63b-126">[itemActionStat][]</span></span>      | <span data-ttu-id="aa63b-127">有关此间隔中的**创建**操作的统计信息。</span><span class="sxs-lookup"><span data-stu-id="aa63b-127">Statistics about the **create** actions in this interval.</span></span> <span data-ttu-id="aa63b-128">只读。</span><span class="sxs-lookup"><span data-stu-id="aa63b-128">Read-only.</span></span>
+| <span data-ttu-id="aa63b-129">edit</span><span class="sxs-lookup"><span data-stu-id="aa63b-129">edit</span></span>             | <span data-ttu-id="aa63b-130">[itemActionStat][]</span><span class="sxs-lookup"><span data-stu-id="aa63b-130">[itemActionStat][]</span></span>      | <span data-ttu-id="aa63b-131">有关此间隔中的**编辑**操作的统计信息。</span><span class="sxs-lookup"><span data-stu-id="aa63b-131">Statistics about the **edit** actions in this interval.</span></span> <span data-ttu-id="aa63b-132">只读。</span><span class="sxs-lookup"><span data-stu-id="aa63b-132">Read-only.</span></span>
+| <span data-ttu-id="aa63b-133">delete</span><span class="sxs-lookup"><span data-stu-id="aa63b-133">delete</span></span>           | <span data-ttu-id="aa63b-134">[itemActionStat][]</span><span class="sxs-lookup"><span data-stu-id="aa63b-134">[itemActionStat][]</span></span>      | <span data-ttu-id="aa63b-135">有关此间隔中的**删除**操作的统计信息。</span><span class="sxs-lookup"><span data-stu-id="aa63b-135">Statistics about the **delete** actions in this interval.</span></span> <span data-ttu-id="aa63b-136">只读。</span><span class="sxs-lookup"><span data-stu-id="aa63b-136">Read-only.</span></span>
+| <span data-ttu-id="aa63b-137">move</span><span class="sxs-lookup"><span data-stu-id="aa63b-137">move</span></span>             | <span data-ttu-id="aa63b-138">[itemActionStat][]</span><span class="sxs-lookup"><span data-stu-id="aa63b-138">[itemActionStat][]</span></span>      | <span data-ttu-id="aa63b-139">有关此间隔中的**移动**操作的统计信息。</span><span class="sxs-lookup"><span data-stu-id="aa63b-139">Statistics about the **move** actions in this interval.</span></span> <span data-ttu-id="aa63b-140">只读。</span><span class="sxs-lookup"><span data-stu-id="aa63b-140">Read-only.</span></span>
+| <span data-ttu-id="aa63b-141">Access</span><span class="sxs-lookup"><span data-stu-id="aa63b-141">access</span></span>           | <span data-ttu-id="aa63b-142">[itemActionStat][]</span><span class="sxs-lookup"><span data-stu-id="aa63b-142">[itemActionStat][]</span></span>      | <span data-ttu-id="aa63b-143">有关此间隔中的**访问**操作的统计信息。</span><span class="sxs-lookup"><span data-stu-id="aa63b-143">Statistics about the **access** actions in this interval.</span></span> <span data-ttu-id="aa63b-144">只读。</span><span class="sxs-lookup"><span data-stu-id="aa63b-144">Read-only.</span></span>
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md
 
-## <a name="relationships"></a><span data-ttu-id="bdc08-149">关系</span><span class="sxs-lookup"><span data-stu-id="bdc08-149">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="aa63b-147">关系</span><span class="sxs-lookup"><span data-stu-id="aa63b-147">Relationships</span></span>
 
-| <span data-ttu-id="bdc08-150">关系名称</span><span class="sxs-lookup"><span data-stu-id="bdc08-150">Relationship name</span></span> | <span data-ttu-id="bdc08-151">类型</span><span class="sxs-lookup"><span data-stu-id="bdc08-151">Type</span></span>                        | <span data-ttu-id="bdc08-152">说明</span><span class="sxs-lookup"><span data-stu-id="bdc08-152">Description</span></span>
+| <span data-ttu-id="aa63b-148">关系名称</span><span class="sxs-lookup"><span data-stu-id="aa63b-148">Relationship name</span></span> | <span data-ttu-id="aa63b-149">类型</span><span class="sxs-lookup"><span data-stu-id="aa63b-149">Type</span></span>                        | <span data-ttu-id="aa63b-150">说明</span><span class="sxs-lookup"><span data-stu-id="aa63b-150">Description</span></span>
 |:------------------|:----------------------------|:---------------------------
-| <span data-ttu-id="bdc08-153">activities</span><span class="sxs-lookup"><span data-stu-id="bdc08-153">activities</span></span>        | <span data-ttu-id="bdc08-154">[itemActivity][] 集合</span><span class="sxs-lookup"><span data-stu-id="bdc08-154">[itemActivity][] collection</span></span> | <span data-ttu-id="bdc08-155">公开**itemActivities**此**itemActivityStat**资源中表示。</span><span class="sxs-lookup"><span data-stu-id="bdc08-155">Exposes the **itemActivities** represented in this **itemActivityStat** resource.</span></span>
+| <span data-ttu-id="aa63b-151">activities</span><span class="sxs-lookup"><span data-stu-id="aa63b-151">activities</span></span>        | <span data-ttu-id="aa63b-152">[itemActivity][] 集合</span><span class="sxs-lookup"><span data-stu-id="aa63b-152">[itemActivity][] collection</span></span> | <span data-ttu-id="aa63b-153">公开**itemActivities**此**itemActivityStat**资源中表示。</span><span class="sxs-lookup"><span data-stu-id="aa63b-153">Exposes the **itemActivities** represented in this **itemActivityStat** resource.</span></span>
 
 [itemActivity]: itemactivity.md
 
-## <a name="remarks"></a><span data-ttu-id="bdc08-157">注解</span><span class="sxs-lookup"><span data-stu-id="bdc08-157">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="aa63b-155">注解</span><span class="sxs-lookup"><span data-stu-id="aa63b-155">Remarks</span></span>
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActivityStat object provides information about activities that took place on an item.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemActivityStat"
-} -->
+  "tocPath": "Resources/ItemActivityStat",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactivitystat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

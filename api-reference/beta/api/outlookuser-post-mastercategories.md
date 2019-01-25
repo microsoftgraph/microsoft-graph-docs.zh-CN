@@ -4,50 +4,50 @@ description: 在用户主类别列表中创建 outlookCategory 对象。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e76f6ddc0f733bd2e50b3aac62707acbed370ee3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b9cf9ed2ca82e2f676ae1241f64ce361e0004437
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984701"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519939"
 ---
-# <a name="create-outlook-category"></a><span data-ttu-id="377de-103">创建 Outlook 类别</span><span class="sxs-lookup"><span data-stu-id="377de-103">Create Outlook category</span></span>
+# <a name="create-outlook-category"></a><span data-ttu-id="8540f-103">创建 Outlook 类别</span><span class="sxs-lookup"><span data-stu-id="8540f-103">Create Outlook category</span></span>
 
-> <span data-ttu-id="377de-104">**重要说明**： 在 Microsoft Graph 中的 /beta 版本下的 Api 在预览，并会受到更改。</span><span class="sxs-lookup"><span data-stu-id="377de-104">**Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="377de-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="377de-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="377de-106">在用户主类别列表中创建 [outlookCategory](../resources/outlookcategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="377de-106">Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.</span></span>
+<span data-ttu-id="8540f-104">在用户主类别列表中创建 [outlookCategory](../resources/outlookcategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8540f-104">Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="377de-107">权限</span><span class="sxs-lookup"><span data-stu-id="377de-107">Permissions</span></span>
-<span data-ttu-id="377de-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="377de-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8540f-105">权限</span><span class="sxs-lookup"><span data-stu-id="8540f-105">Permissions</span></span>
+<span data-ttu-id="8540f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8540f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="377de-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="377de-110">Permission type</span></span>      | <span data-ttu-id="377de-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="377de-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8540f-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="8540f-108">Permission type</span></span>      | <span data-ttu-id="8540f-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8540f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="377de-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="377de-112">Delegated (work or school account)</span></span> | <span data-ttu-id="377de-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="377de-113">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="377de-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="377de-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="377de-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="377de-115">MailboxSettings.ReadWrite</span></span>   |
-|<span data-ttu-id="377de-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="377de-116">Application</span></span> | <span data-ttu-id="377de-117">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="377de-117">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="8540f-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8540f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8540f-111">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8540f-111">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="8540f-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8540f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8540f-113">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8540f-113">MailboxSettings.ReadWrite</span></span>   |
+|<span data-ttu-id="8540f-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="8540f-114">Application</span></span> | <span data-ttu-id="8540f-115">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8540f-115">MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="377de-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="377de-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8540f-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8540f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/outlook/masterCategories
 POST /users/{id|userPrincipalName}/outlook/masterCategories
 ```
-## <a name="request-headers"></a><span data-ttu-id="377de-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="377de-119">Request headers</span></span>
-| <span data-ttu-id="377de-120">名称</span><span class="sxs-lookup"><span data-stu-id="377de-120">Name</span></span>       | <span data-ttu-id="377de-121">说明</span><span class="sxs-lookup"><span data-stu-id="377de-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8540f-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="8540f-117">Request headers</span></span>
+| <span data-ttu-id="8540f-118">名称</span><span class="sxs-lookup"><span data-stu-id="8540f-118">Name</span></span>       | <span data-ttu-id="8540f-119">说明</span><span class="sxs-lookup"><span data-stu-id="8540f-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="377de-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="377de-122">Authorization</span></span>  | <span data-ttu-id="377de-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="377de-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8540f-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8540f-120">Authorization</span></span>  | <span data-ttu-id="8540f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8540f-p102">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="377de-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="377de-125">Request body</span></span>
-<span data-ttu-id="377de-126">在请求正文中，提供 [outlookCategory](../resources/outlookcategory.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="377de-126">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8540f-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="8540f-123">Request body</span></span>
+<span data-ttu-id="8540f-124">在请求正文中，提供 [outlookCategory](../resources/outlookcategory.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8540f-124">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="377de-127">响应</span><span class="sxs-lookup"><span data-stu-id="377de-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8540f-125">响应</span><span class="sxs-lookup"><span data-stu-id="8540f-125">Response</span></span>
 
-<span data-ttu-id="377de-128">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [outlookCategory](../resources/outlookcategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="377de-128">If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
+<span data-ttu-id="8540f-126">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [outlookCategory](../resources/outlookcategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8540f-126">If successful, this method returns `201 Created` response code and [outlookCategory](../resources/outlookcategory.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="377de-129">示例</span><span class="sxs-lookup"><span data-stu-id="377de-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="377de-130">请求</span><span class="sxs-lookup"><span data-stu-id="377de-130">Request</span></span>
-<span data-ttu-id="377de-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="377de-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8540f-127">示例</span><span class="sxs-lookup"><span data-stu-id="8540f-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8540f-128">请求</span><span class="sxs-lookup"><span data-stu-id="8540f-128">Request</span></span>
+<span data-ttu-id="8540f-129">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8540f-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_outlookcategory_from_outlookuser"
@@ -62,9 +62,9 @@ Content-Length: 70
       "color":"preset9"
 }
 ```
-<span data-ttu-id="377de-132">在请求正文中，提供 [outlookCategory](../resources/outlookcategory.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="377de-132">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="377de-133">响应</span><span class="sxs-lookup"><span data-stu-id="377de-133">Response</span></span>
-<span data-ttu-id="377de-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="377de-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="8540f-130">在请求正文中，提供 [outlookCategory](../resources/outlookcategory.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8540f-130">In the request body, supply a JSON representation of [outlookCategory](../resources/outlookcategory.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="8540f-131">响应</span><span class="sxs-lookup"><span data-stu-id="8540f-131">Response</span></span>
+<span data-ttu-id="8540f-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8540f-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,5 +90,7 @@ Content-length: 250
   "description": "Create outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "".
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlookuser-post-mastercategories.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
 }-->

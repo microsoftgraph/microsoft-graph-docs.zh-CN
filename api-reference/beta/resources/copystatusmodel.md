@@ -2,20 +2,20 @@
 title: copyStatusModel 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: 95c9dd9808f711ef15c21c2ef81ddb81a3d8dcf1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: bf1a88b74f38f21f89b089b31ea5b6e7b6af9f0b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864762"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521122"
 ---
-# <a name="copystatusmodel-resource-type"></a><span data-ttu-id="469dc-103">copyStatusModel 资源类型</span><span class="sxs-lookup"><span data-stu-id="469dc-103">copyStatusModel resource type</span></span>
+# <a name="copystatusmodel-resource-type"></a><span data-ttu-id="77aba-103">copyStatusModel 资源类型</span><span class="sxs-lookup"><span data-stu-id="77aba-103">copyStatusModel resource type</span></span>
 
-> <span data-ttu-id="469dc-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="469dc-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="469dc-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="469dc-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a><span data-ttu-id="469dc-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="469dc-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="77aba-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="77aba-104">JSON representation</span></span>
 
-<span data-ttu-id="469dc-107">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="469dc-107">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="77aba-105">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="77aba-105">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,19 +33,24 @@ ms.locfileid: "27864762"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="469dc-108">属性</span><span class="sxs-lookup"><span data-stu-id="469dc-108">Properties</span></span>
-| <span data-ttu-id="469dc-109">属性</span><span class="sxs-lookup"><span data-stu-id="469dc-109">Property</span></span>     | <span data-ttu-id="469dc-110">类型</span><span class="sxs-lookup"><span data-stu-id="469dc-110">Type</span></span>   |<span data-ttu-id="469dc-111">说明</span><span class="sxs-lookup"><span data-stu-id="469dc-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="77aba-106">属性</span><span class="sxs-lookup"><span data-stu-id="77aba-106">Properties</span></span>
+| <span data-ttu-id="77aba-107">属性</span><span class="sxs-lookup"><span data-stu-id="77aba-107">Property</span></span>     | <span data-ttu-id="77aba-108">类型</span><span class="sxs-lookup"><span data-stu-id="77aba-108">Type</span></span>   |<span data-ttu-id="77aba-109">说明</span><span class="sxs-lookup"><span data-stu-id="77aba-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="469dc-112">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="469dc-112">createdDateTime</span></span>| <span data-ttu-id="469dc-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="469dc-113">DateTimeOffset</span></span> ||
-|<span data-ttu-id="469dc-114">id</span><span class="sxs-lookup"><span data-stu-id="469dc-114">id</span></span>|<span data-ttu-id="469dc-115">string</span><span class="sxs-lookup"><span data-stu-id="469dc-115">string</span></span>||
-|<span data-ttu-id="469dc-116">status</span><span class="sxs-lookup"><span data-stu-id="469dc-116">status</span></span>|<span data-ttu-id="469dc-117">string</span><span class="sxs-lookup"><span data-stu-id="469dc-117">string</span></span>||
+|<span data-ttu-id="77aba-110">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="77aba-110">createdDateTime</span></span>| <span data-ttu-id="77aba-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="77aba-111">DateTimeOffset</span></span> ||
+|<span data-ttu-id="77aba-112">id</span><span class="sxs-lookup"><span data-stu-id="77aba-112">id</span></span>|<span data-ttu-id="77aba-113">string</span><span class="sxs-lookup"><span data-stu-id="77aba-113">string</span></span>||
+|<span data-ttu-id="77aba-114">status</span><span class="sxs-lookup"><span data-stu-id="77aba-114">status</span></span>|<span data-ttu-id="77aba-115">string</span><span class="sxs-lookup"><span data-stu-id="77aba-115">string</span></span>||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "copyStatusModel resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/copystatusmodel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
