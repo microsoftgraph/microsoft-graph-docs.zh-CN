@@ -4,16 +4,16 @@ description: 系统中的用户。 这是特定于教育的用户变体，具有
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e6fe0c40a9930b8ba1c7f200a44ab1d3ce444579
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e8b1f9a98800330b2f46b9de1582c97e475cd162
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420855"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521150"
 ---
 # <a name="educationuser-resource-type"></a>educationUser 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 系统中的用户。 这是特定于教育的用户变体，具有 Microsoft Graph 将从非特定于教育的 `/users` 终结点返回的相同 `id`。
 此对象提供来自核心 [user](user.md) 对象的目标属性子集，并添加一组特定于教育的属性，如 `primaryRole`、学生和教师数据。
@@ -36,21 +36,21 @@ ms.locfileid: "29420855"
 |accountEnabled|Boolean| 如果帐户已启用，则为 **true**；否则，为 **false**。 创建用户时此属性是必需的。 支持 $filter。    |
 |assignedLicenses|[assignedLicense](assignedlicense.md) 集合|分配给该用户的许可证。不可为 null。            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|分配给该用户的计划。只读。不可为 null。 |
-|businessPhones|String collection|用户的电话号码。 **注意：** 虽然这是字符串集合，但是只能为该属性设置一个号码。|
+|businessPhones|String collection|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
 |createdBy|[identitySet](identityset.md)| 创建了用户的实体。 |
 |department|String|用户工作部门的名称。支持 $filter。|
-|displayName|String|用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 支持 $filter 和 $orderby。|
+|displayName|String|用户通讯簿中显示的名称。这通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |externalSource|`educationExternalSource`| 创建此用户的位置。 可取值为：`sis`、`manual`、`unkownFutureValue`。|
 |givenName|String|用户的名字。支持 $filter。|
-|id|String|用户的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
-|mail|String|用户的 SMTP 地址；例如，“jeff@contoso.onmicrosoft.com”。 只读。 支持 $filter。|
+|id|字串符号|用户的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
+|mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。只读。支持 $filter。|
 |mailingAddress|[physicalAddress](physicaladdress.md)| 用户的邮件地址。|
 |mailNickname|String|用户的邮件别名。创建用户时必须指定此属性。支持 $filter。|
 |middleName| String | 用户的中间名。|
 |mobilePhone|String|用户的主要移动电话号码。|
 |passwordPolicies|String|指定用户的密码策略。 此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。 另外，还可以指定“DisablePasswordExpiration”。 可以同时指定两个值；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
 |passwordProfile|[passwordProfile](passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
-|preferredLanguage|String|用户的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。|
+|preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。|
 |primaryRole|string| 用户的默认角色。 用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`enum_sentinel`。 支持 $filter。|
 |provisionedPlans|[provisionedPlan](provisionedplan.md)集合|为用户预配的计划。只读。不可为 null。 |
 |residenceAddress|[physicalAddress](physicaladdress.md)| 用户所在的地址。|
@@ -59,13 +59,13 @@ ms.locfileid: "29420855"
 |teacher|[educationTeacher](educationteacher.md)| 如果主要角色为教师，此部分将包含特定于教师的数据。|
 |usageLocation|String|两个字母组成的国家/地区代码（ISO 标准 3166）。 鉴于检查服务在国家/地区的可用性的法律要求，这对将分配许可证的用户而言是必需的。 示例包括：“US”、“JP”和“GB”。 不可为 null。 支持 $filter。|
 |userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。
-|userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。支持 $filter。          |
+|userType|字符串|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。支持 $filter。          |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|classes|[educationClass](educationclass.md) 集合| 用户所属的课程。 可为 NULL。|
-|schools|[educationSchool](educationschool.md) 集合| 用户所属的学校。 可为 NULL。|
+|classes|[educationClass](educationclass.md) 集合| 用户所属的课程。 可为空。|
+|schools|[educationSchool](educationschool.md) 集合| 用户所属的学校。 可为空。|
 |assignments| [educationAssignment](educationassignment.md)| 用户的分配列表。 可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -102,10 +102,15 @@ ms.locfileid: "29420855"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationUser resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionSet
 localization_priority: Normal
-ms.openlocfilehash: 194530da1df449d5ba523e084b2e72cd91bbe13d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3fab75c6a63630f57dae8d0578691ba10622231d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873092"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518798"
 ---
 # <a name="itemactionset-resource-type"></a>ItemActionSet 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ItemActionSet** 资源提供有关构成项目上某个[活动][itemActivity]的操作信息。
 
@@ -78,10 +78,15 @@ ms.locfileid: "27873092"
 
 项活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActionSet object provides information about the actions that took place as part of an activity on an item.",
   "keywords": "activities,activity,action",
   "section": "documentation",
-  "tocPath": "Resources/ItemActionSet"
-} -->
+  "tocPath": "Resources/ItemActionSet",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactionset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

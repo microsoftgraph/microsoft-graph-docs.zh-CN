@@ -4,16 +4,16 @@ description: '当前用户设置。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7beddf0c0ac1d6279d5e6e53b8a87844f19efba6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 208d232af609f92d5924267ae26831b9929e357a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967971"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521094"
 ---
 # <a name="settings-resource-type"></a>设置资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 当前用户设置。 若要了解如何获取或更新用户设置，请参阅[获取设置](../api/user-get-settings.md)并[更新设置](../api/user-update-settings.md)。
 
@@ -25,8 +25,8 @@ ms.locfileid: "27967971"
 ## <a name="methods"></a>方法
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取用户设置](../api/user-get-settings.md) |[设置](../resources/user-settings.md)| 获取用户和组织设置。 |
-|[更新用户设置](../api/user-update-settings.md) |[设置](../resources/user-settings.md)| 更新用户的当前设置。 |
+|获取用户设置 |[Settings](../resources/user-settings.md)| 获取用户和组织设置。 |
+|[更新用户设置](../api/user-update-settings.md) |[Settings](../resources/user-settings.md)| 更新用户的当前设置。 |
 
 ## <a name="properties"></a>属性
 
@@ -46,3 +46,11 @@ ms.locfileid: "27967971"
 }
 
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/user-settings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

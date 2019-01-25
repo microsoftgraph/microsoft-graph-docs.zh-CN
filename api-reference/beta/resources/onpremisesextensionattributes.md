@@ -1,39 +1,39 @@
 ---
 title: onPremisesExtensionAttributes 资源类型
-description: 用户实体的**onPremisesExtensionAttributes**属性包含 15 个自定义扩展特性的属性。 此组属性是**onPremisesSyncEnabled**用户掌握了内部部署 Active Directory 中和同步到 Azure AD 和是只读的。 仅限云用户 （其中**onPremisesSyncEnabled**为 false），这些属性的创建过程中可以设置或更新。
+description: 用户实体的**onPremisesExtensionAttributes**属性包含 15 个自定义扩展特性的属性。 对于 onPremisesSyncEnabled 用户，此组属性在本地 Active Directory 中进行管理，并同步到 Azure AD，且为只读。 对于只使用云的用户（其中 onPremisesSyncEnabled 为 false），可以在创建或更新期间设置这些属性。
 localization_priority: Normal
-ms.openlocfilehash: 44589338e25e01cb483df6bfa3c1e078e352f5ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f44f71fdcd86d2165289282568a2d7153ccc99b1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868157"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518238"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>onPremisesExtensionAttributes 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[用户](user.md)实体的**onPremisesExtensionAttributes**属性包含 15 个自定义扩展特性的属性。 此组属性是**onPremisesSyncEnabled**用户掌握了内部部署 Active Directory 中和同步到 Azure AD 和是只读的。 仅限云用户 （其中**onPremisesSyncEnabled**为 false），这些属性的创建过程中可以设置或更新。
+[用户](user.md)实体的**onPremisesExtensionAttributes**属性包含 15 个自定义扩展特性的属性。 对于 onPremisesSyncEnabled 用户，此组属性在本地 Active Directory 中进行管理，并同步到 Azure AD，且为只读。 对于只使用云的用户（其中 onPremisesSyncEnabled 为 false），可以在创建或更新期间设置这些属性。
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|extensionAttribute1|字符串| 第一个可自定义扩展属性。 |
-|extensionAttribute2|字符串| 第二个可自定义扩展属性。 |
-|extensionAttribute3|字符串| 第三个可自定义扩展属性。 |
-|extensionAttribute4|字符串| 第四个可自定义扩展属性。 |
-|extensionAttribute5|字符串| 第五个可自定义扩展属性。 |
-|extensionAttribute6|字符串| 第六个可自定义扩展属性。 |
-|extensionAttribute7|字符串| 第七个可自定义扩展属性。 |
-|extensionAttribute8|字符串| 第八个可自定义扩展属性。 |
-|extensionAttribute9|字符串| 第九个可自定义扩展属性。 |
-|extensionAttribute10|字符串| 第十个可自定义扩展属性。 |
-|extensionAttribute11|字符串| 第十一个可自定义扩展属性。 |
-|extensionAttribute12|字符串| 第十二个可自定义扩展属性。 |
-|extensionAttribute13|字符串| 第十三个可自定义扩展属性。 |
-|extensionAttribute14|字符串| 第十四个可自定义扩展属性。 |
-|extensionAttribute15|字符串| 第十五个可自定义扩展属性。 |
+|extensionAttribute1|String| 第一个可自定义扩展属性。 |
+|extensionAttribute2|String| 第二个可自定义扩展属性。 |
+|extensionAttribute3|String| 第三个可自定义扩展属性。 |
+|extensionAttribute4|String| 第四个可自定义扩展属性。 |
+|extensionAttribute5|String| 第五个可自定义扩展属性。 |
+|extensionAttribute6|String| 第六个可自定义扩展属性。 |
+|extensionAttribute7|String| 第七个可自定义扩展属性。 |
+|extensionAttribute8|String| 第八个可自定义扩展属性。 |
+|extensionAttribute9|String| 第九个可自定义扩展属性。 |
+|extensionAttribute10|String| 第十个可自定义扩展属性。 |
+|extensionAttribute11|String| 第十一个可自定义扩展属性。 |
+|extensionAttribute12|String| 第十二个可自定义扩展属性。 |
+|extensionAttribute13|String| 第十三个可自定义扩展属性。 |
+|extensionAttribute14|String| 第十四个可自定义扩展属性。 |
+|extensionAttribute15|String| 第十五个可自定义扩展属性。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -70,10 +70,15 @@ ms.locfileid: "27868157"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "onPremisesExtensionAttributes resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onpremisesextensionattributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

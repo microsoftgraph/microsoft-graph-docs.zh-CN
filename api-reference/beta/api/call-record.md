@@ -4,16 +4,16 @@ description: 记录呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9afd607ca15c2bac16d2aba4d0ab2c5b52f71864
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936366"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518280"
 ---
 # <a name="call-record"></a>呼叫： 记录
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 记录呼叫。
 
@@ -44,14 +44,14 @@ POST /applications/{id}/calls/{id}/record
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |提示|[mediaprompt](../resources/mediaprompt.md)集合 | 启动提示之前录制播放 （如果有） 的集合。 客户可以选择单独指定"playPrompt"操作，或者指定的"记录"的一部分主要的所有记录都都使用提示 |
-|bargeInAllowed|布尔| 允许用户提示完成之前输入的选择。                                                                 |
+|bargeInAllowed|Boolean| 允许用户提示完成之前输入的选择。                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| 从我们开始之前我们记录操作超时和失败操作的时间允许的最大初始静音。 如果我们播放提示时，提示完成后从开始此计时器。 |
 |maxSilenceTimeoutInSeconds|Int32| 最大无声超时秒数。|
 |maxRecordDurationInSeconds|Int32| 最大记录持续时间，以秒为单位。|
-|playBeep|布尔| 播放提示音后播放提示。|
-|streamWhileRecording|布尔|如果设置为 true，资源位置将提供一旦开始录制。 |
+|playBeep|Boolean| 播放提示音后播放提示。|
+|streamWhileRecording|Boolean|如果设置为 true，资源位置将提供一旦开始录制。 |
 |stopTones|String 集合|停止指定结束录制音。|
-|clientContext|字符串|客户端上下文。|
+|ClientContext|String|客户端上下文。|
 
 ## <a name="response"></a>响应
 返回`202 Accepted`响应代码和具有[commsOperation](../resources/commsoperation.md)创建的此请求 uri 中的位置标头。
@@ -143,10 +143,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: record",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-record.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: governanceRoleDefinition 资源类型
 description: 表示角色定义。 有关 Azure 资源，它可以表示 Azure RBAC 角色，如所有者、 读者、 参与者、 等。
 localization_priority: Normal
-ms.openlocfilehash: 3f94dd1a741545760951875fbc064307823a65dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 867864892bac9107c44ba9125336429248b6697e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842447"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528639"
 ---
 # <a name="governanceroledefinition-resource-type"></a>governanceRoleDefinition 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
 表示角色定义。 有关 Azure 资源，它可以表示 Azure RBAC 角色，如所有者、 读者、 参与者、 等。
@@ -30,16 +30,16 @@ ms.locfileid: "27842447"
 |id         |字符串     |角色定义的 id。 |
 |resourceId |String     |必需。 与角色定义关联的资源的 id。 |
 |externalId   |String     |外部角色定义的 id。|
-|displayName|字符串     |角色定义的显示名称。|
+|displayName|String     |角色定义的显示名称。|
 |subjectCount|Int32     |可选。 分配给角色的主题数。 它表示对资源的请求者的访问状态。 若要获取的属性，请是明确使用`$select=subjectCount`查询中。|
 |eligibleAssignmentCount|Int32|可选。 合格的角色分配相关联的角色定义数。 若要获取的属性，请是明确使用`$select=eligibleAssignmentCount`查询中。|
 |activeAssignmentCount|Int32    |可选。 活动的角色分配相关联的角色定义数。  若要获取的属性，请是明确使用`$select=activeAssignmentCount`查询中。|
 
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|资源|[governanceResource](../resources/governanceresource.md)|此为只读属性。 相关联的角色定义的资源。|
+|资源|[governanceResource](../resources/governanceresource.md)|只读。 相关联的角色定义的资源。|
 |roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|角色定义关联的角色设置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -66,10 +66,15 @@ ms.locfileid: "27842447"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleDefinition",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceroledefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,24 +1,24 @@
 ---
 title: 更新 bookingservice
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: 更新中指定 bookingbusiness bookingService 对象的属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 6830ebc8fc101c4c9ce60f6157ed6bfdab82748c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6049fe68eaa45597246bef1c1b11952e3c4a5d42
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937038"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519715"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
- > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
- 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 更新中指定[bookingbusiness](../resources/bookingbusiness.md) [bookingService](../resources/bookingservice.md)对象的属性。
 
 以下是您可以将自定义服务的一些示例：
-- Price
+- 价格
 - 约会的典型长度
 - Reminders
 - 任何时候，只要缓冲区之前设置或完成维修之后
@@ -48,19 +48,19 @@ PATCH /bookingBusinesses/{id}/services/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|defaultDuration|Duration|默认服务中的天、 小时、 分钟和秒数字表示的长度。 例如，P11D23H59M59.999999999999S。 |
+|defaultDuration|持续时间|默认服务中的天、 小时、 分钟和秒数字表示的长度。 例如，P11D23H59M59.999999999999S。 |
 |defaultLocation|[location](../resources/location.md)|服务的默认物理位置。|
-|defaultPrice|Double|该服务默认货币价格。|
+|defaultPrice|双精度|该服务默认货币价格。|
 |defaultPriceType|string|负责服务的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
 |defaultReminders|[bookingReminder](../resources/bookingreminder.md)集合|默认设置的该服务的约会的提醒。 此属性的值时，可仅读取此**bookingService**由其 id。|
 |说明|字符串|服务的文本说明。|
-|displayName|字符串|服务名称。|
+|displayName|String|服务名称。|
 |emailAddress|String|电子邮件地址|
 |id|String| 只读。|
 |isHiddenFromCustomers|Boolean|True 表示该服务不是预定的客户。|
 |notes|String|有关此服务的其他信息。|
-|后|Duration|此服务的时间为缓冲区之后为约会结束，且在下一步之前客户约会可以为预约。|
-|缓冲区|Duration|缓冲区之前可以启动此服务的约会的时间。|
+|后|持续时间|此服务的时间为缓冲区之后为约会结束，且在下一步之前客户约会可以为预约。|
+|缓冲区|持续时间|缓冲区之前可以启动此服务的约会的时间。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|确定如何创建和管理服务此类型的约会的策略集。|
 |staffMemberIds|String 集合|表示这些[员工](../resources/bookingstaffmember.md)提供此服务。 |
 
@@ -83,7 +83,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -94,10 +94,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update bookingservice",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

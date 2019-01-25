@@ -4,16 +4,16 @@ description: 创建的工作组的副本。 此操作还将创建相应的组的
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4fb3769db0df6d2fc30d995098daee19b49e83b7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5ef317d004e3355f9b40fc44232b7c594a3e45a7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958339"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526163"
 ---
 # <a name="clone-a-team"></a>克隆团队
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建[团队](../resources/team.md)的副本。 此操作还将创建相应的[组](../resources/group.md)的副本。
 您可以指定团队要克隆哪些的部分：
@@ -53,12 +53,12 @@ POST /teams/{id}/clone
 
 ## <a name="request-body"></a>请求正文
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|Classification|字符串 （可选）|介绍组 （如低、 中等或高的业务影响） 的分类。 此属性的有效值由创建 ClassificationList[设置](../resources/directorysetting.md)值，基于[模板定义](../resources/directorysettingtemplate.md)的定义。 如果未指定分类，将从原始团队组复制的分类。|
+|classification|字符串 （可选）|介绍组 （如低、 中等或高的业务影响） 的分类。 此属性的有效值由创建 ClassificationList[设置](../resources/directorysetting.md)值，基于[模板定义](../resources/directorysettingtemplate.md)的定义。 如果未指定分类，将从原始团队组复制的分类。|
 |说明|字符串 （可选）|可选的组说明。 如果未指定此属性，它将为空。|
-|displayName|字符串|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
-|mailNickname|字符串|邮件的组中，组织中唯一的别名。 创建组后，必须指定此属性。 支持 $filter。 如果未指定此属性，将从 displayName 计算。 已知问题： 当前忽略此属性。|
+|displayName|字符串|组的显示名称。创建组时必须指定此属性，且不能在更新过程中清除此属性。支持 $filter 和 $orderby。|
+|mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 支持 $filter。 如果未指定此属性，将从 displayName 计算。 已知问题： 当前忽略此属性。|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |要克隆的部分以逗号分隔列表。 法律部件是"应用程序、 选项卡、 设置、 通道、 成员"。|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md)（可选）| 指定组的可见性。 可能的值为：**专用**的**公共**。 如果未指定可见性，则将从原始团队组复制可见性。 如果正在克隆团队**educationClass**团队、 可见性参数将被忽略，并将被新组的可见性设置为 HiddenMembership。|
 
@@ -88,7 +88,7 @@ Content-Type: application/json
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -103,10 +103,15 @@ Content-Length: 0
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-clone.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

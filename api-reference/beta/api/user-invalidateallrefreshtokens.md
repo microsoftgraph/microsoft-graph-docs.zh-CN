@@ -4,16 +4,16 @@ description: 使所有用户的刷新令牌颁发给应用程序 （以及用户
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 740829e4ebd3b64308e514ab1c7633db7f35e7d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c006787c0d68ae0c6ecbb331a9ff410f957a6f93
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950177"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524525"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>用户： invalidateAllRefreshTokens
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使所有用户的刷新令牌颁发给应用程序 （以及用户的浏览器中的会话 cookie） 到当前日期时间重置**refreshTokensValidFromDateTime**用户属性失效。 通常情况下，执行此操作 （按用户或管理员） 如果用户具有丢失或被盗的设备。  此操作将阻止对任何用户首先需要再次登录的情况下访问通过设备上的应用程序的组织的数据访问。 实际上，此操作会强制用户再次登录的所有应用程序的这些以前同意，独立于设备。
 
@@ -67,10 +67,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: invalidateAllRefreshTokens",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-invalidateallrefreshtokens.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

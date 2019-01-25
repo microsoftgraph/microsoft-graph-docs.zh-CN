@@ -4,16 +4,16 @@ description: 表示用于管理工作簿的 Excel 应用程序。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 250141ff6c6da3a81a1b3492908bc2e04b5a0605
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 48ee13a67d97f9c5c1a96a6ef6e104c5629f4108
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921974"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517615"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示用于管理工作簿的 Excel 应用程序。
 
@@ -22,7 +22,7 @@ ms.locfileid: "27921974"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取应用程序](../api/excelapplication-get.md) | [Application](application.md) |读取属性和 application 对象的关系。|
+|获取应用程序 | [Application](application.md) |读取属性和 application 对象的关系。|
 |[Calculate](../api/excelapplication-calculate.md)|无|重新计算 Excel 中当前打开的所有工作簿。|
 
 ## <a name="properties"></a>属性
@@ -30,7 +30,7 @@ ms.locfileid: "27921974"
 |:---------------|:--------|:----------|
 |calculationMode|string|返回工作簿中使用的计算模式。 可取值为：`Automatic`、`AutomaticExceptTables`、`Manual`。 只读。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 
@@ -55,10 +55,15 @@ ms.locfileid: "27921974"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Application resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/excelapplication.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

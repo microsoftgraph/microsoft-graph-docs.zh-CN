@@ -4,16 +4,16 @@ description: 代表到个人基于此人的电子邮件地址的通知。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: b24ce5488e93160c3424fb41f83b91c1b8ccea95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f8e04722edf878b4f3851de837908dc5c0a02de7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955434"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523195"
 ---
 # <a name="mention-resource-type"></a>有提及资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表到个人基于此人的电子邮件地址的通知。 此类通知也称为是 @ 提及。
 
@@ -55,17 +55,17 @@ ms.locfileid: "27955434"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|application | 字符串 | 在其中创建提及的应用程序的名称。 可选。 不使用和默认设置为 null 的**消息**。 |
-|clientReference | 字符串 | 表示父资源实例的唯一标识符。 可选。 不使用和默认设置为 null 的**消息**。 |
+|application | String | 在其中创建提及的应用程序的名称。 可选。 不使用和默认设置为 null 的**消息**。 |
+|clientReference | String | 表示父资源实例的唯一标识符。 可选。 不使用和默认设置为 null 的**消息**。 |
 |createdBy  | [emailAddress](../resources/emailaddress.md) | 进行提及的用户的电子邮件信息。 |
 |createdDateTime  |DateTimeOffset |日期和时间在客户端上创建提及的。 |
-|deepLink | 字符串 | 深入 web 链接到的资源实例中提及的上下文。 可选。 不使用和默认设置为 null 的**消息**。 |
-|id | 字符串| 资源实例中提及的唯一标识符。|
-|提到 | [emailAddress](../resources/emailaddress.md) | 被提及人员的电子邮件的信息。 必填。 |
-|mentionText | 字符串 | 可选。 不使用和默认设置为 null 的**消息**。 获取提及中一条消息，请参阅改为邮件的**bodyPreview**属性。 |
+|deepLink | String | 深入 web 链接到的资源实例中提及的上下文。 可选。 不使用和默认设置为 null 的**消息**。 |
+|id | String| 资源实例中提及的唯一标识符。|
+|提到 | [emailAddress](../resources/emailaddress.md) | 被提及人员的电子邮件的信息。 必需。 |
+|mentionText | String | 可选。 不使用和默认设置为 null 的**消息**。 获取提及中一条消息，请参阅改为邮件的**bodyPreview**属性。 |
 |serverCreatedDateTime | DateTimeOffset | 日期和时间是在服务器上创建提及的。 可选。 不使用和默认设置为 null 的**消息**。 |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 
@@ -75,16 +75,21 @@ ms.locfileid: "27955434"
 |:---------------|:--------|:----------|
 |[Post](../api/user-sendmail.md#request-2)和发送 | 无 | 创建和发送提及作为新邮件的一部分。|
 |以新草稿的[文章](../api/user-post-messages.md#request-2) | 包含一个或多个**提及**对象的[消息](../resources/message.md)。 | 创建一个新的邮件草稿并包括一个或多个**提及**的对象。|
-|[获取](../api/user-list-messages.md#request-2)邮件提及我 | [邮件](../resources/message.md)集合 | 获取包含**提及**的此用户的登录用户邮箱中的所有邮件。|
-|一条消息的[获取](../api/message-get.md#request-2)和其提及 | [邮件](../resources/message.md)集合 | 收到一条消息，并展开的每个**提及**消息中的详细信息。|
+|[获取](../api/user-list-messages.md#request-2)邮件提及我 | [message](../resources/message.md) 集合 | 获取包含**提及**的此用户的登录用户邮箱中的所有邮件。|
+|一条消息的[获取](../api/message-get.md#request-2)和其提及 | [message](../resources/message.md) 集合 | 收到一条消息，并展开的每个**提及**消息中的详细信息。|
 |[删除](../api/message-delete.md#request-2)某个提及 | 无 |删除中指定的消息已登录的用户邮箱中提及的指定。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mention resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mention.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

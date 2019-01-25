@@ -2,19 +2,19 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
-title: SitePage
+title: sitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a756929212dbca04f16e9e4701e34bbd8d4de28f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939236"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522299"
 ---
 # <a name="sitepage-resource"></a>sitePage 资源
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此资源代表 SitePages[列表][]中的页面。
 它包含标题、 布局和[web 部件][]s 的集合。
@@ -22,21 +22,21 @@ ms.locfileid: "27939236"
 ## <a name="tasks-on-a-page"></a>页面上的任务
 
 为**sitePage**资源提供了下列任务。
-下面的所有示例都是相对于[网站][]，如： `https://graph.microsoft.com/{api-version}/sites/{site-id}`。
+下面的所有示例都与网站相关，例如：[][]。
 
 | 常见任务                     | HTTP 方法
 |:--------------------------------|:------------------------------
-| [List pages][]                  | 获取 /pages
+| [列出页面][]                  | GET 页面
 | [Get page][]                    | 获取 /pages/ {页-id}
-| [创建][]                      | POST /pages
+| [Create][]                      | POST 页面
 | [删除][]                      | 删除 /pages/ {页-id}
-| [发布][]                     | 发布 /pages/ {页-id} / 发布
+| [Publish][]                     | 发布 /pages/ {页-id} / 发布
 
-[List pages]: ../api/sitepage-list.md
+[列出页面]: ../api/sitepage-list.md
 [Get page]: ../api/sitepage-get.md
-[创建]: ../api/sitepage-create.md
+[Create]: ../api/sitepage-create.md
 [删除]: ../api/sitepage-delete.md
-[发布]: ../api/sitepage-publish.md
+[Publish]: ../api/sitepage-publish.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -89,7 +89,7 @@ ms.locfileid: "27939236"
 |:-------------------|:---------------------------|:---------------------------
 | title              | 字符串                     | 页面的标题。
 | pageLayout         | string                     | 页的页面布局的名称。
-| web 部件           | [web 部件][]                | Web 部件页上。
+| web 部件           | WebPart                | Web 部件页上。
 
 ## <a name="authoring-metadata"></a>创作元数据
 
@@ -103,10 +103,10 @@ ms.locfileid: "27939236"
 
 | 属性名称        | 类型              | 说明
 |:---------------------|:------------------|:----------------------------------
-| ID                   | string            | 项的唯一标识符。只读。
+| id                   | string            | 项的唯一标识符。只读。
 | name                 | string            | 项目名称/标题。
 | createdBy            | [identitySet][]   | 此项的创建者的标识。 只读。
-| eTag                 | string            | 该项目的 ETag。只读。
+| eTag                 | 字符串            | 该项目的 ETag。只读。
 | lastModifiedBy       | [identitySet][]   | 此项的最后一个修饰符的标识。 只读。
 | lastModifiedDateTime | DateTimeOffset    | 上次修改项目的日期和时间。只读。
 | parentReference      | [itemReference][] | 上次修改项目的日期和时间。只读。
@@ -121,14 +121,15 @@ ms.locfileid: "27939236"
 [columnDefinition]: columndefinition.md
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[列表]: list.md
+[list]: list.md
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
 [site]: site.md
-[web 部件]: webpart.md
+WebPart
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -136,8 +137,12 @@ ms.locfileid: "27939236"
   "tocPath": "Resources/Page",
   "tocBookmarks": {
     "Page": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sitepage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 <!--
 TODO:

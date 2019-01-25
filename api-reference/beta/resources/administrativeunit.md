@@ -4,16 +4,16 @@ description: 一个管理单元的用户和组目录对象提供的概念的容�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a4fb81c9a9d605dd155facefb263ff4a310442c3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f99fb1cd54e28aaa9526f25a0f8e09d6470df2ff
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955315"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519743"
 ---
 # <a name="administrativeunit-resource-type"></a>administrativeUnit 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 一个管理单元的用户和组目录对象提供的概念的容器。 公司管理员使用管理单元，现在可以委托管理责任管理用户和组中包含或范围为一个区域或部门管理员对一个管理单元。
 
@@ -34,11 +34,11 @@ ms.locfileid: "27955315"
 |[更新 adminstrativeUnit](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)  |更新 administrativeUnit 对象。 |
 |[删除 adminstrativeUnit](../api/administrativeunit-delete.md) | 无 |删除 administrativeUnit 对象。 |
 |[添加成员](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| 添加成员 （用户或组）。|
-|[列出成员](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取 （用户和组） 的成员的列表。|
+|[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) 集合| 获取 （用户和组） 的成员的列表。|
 |[获取成员](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| 获取特定成员。|
-|[删除成员](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| 删除成员。|
+|[删除成员](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| 删除成员|
 |[添加范围角色成员](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 添加的作用域角色成员。|
-|[列表范围内的角色成员](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 获取作用域角色管理员的列表。|
+|[列表范围内的角色成员](../api/administrativeunit-list-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md) 集合| 获取作用域角色管理员的列表。|
 |[要获取的作用域角色成员](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 获取特定范围内的角色成员。|
 |[删除的作用域角色成员](../api/administrativeunit-delete-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| 删除范围角色成员身份。|
 |**开放扩展**| | |
@@ -50,17 +50,17 @@ ms.locfileid: "27955315"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|string|管理单元的可选说明。|
+|description|string|管理单元的可选说明。|
 |displayName|string|管理单元的显示名称。|
-|id|string|管理单元的唯一标识符。 此为只读属性。|
+|id|字符串|管理单元的唯一标识符。 只读。|
 |visibility|string|控制是否隐藏管理单元和及其成员或公共。 可以设置为 HiddenMembership 或公共。 如果不设置，默认行为是公共。 如果设置为 HiddenMembership，只有管理单元的成员可以列出管理单元中的其他成员。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|打开扩展名为此管理单元定义的集合。 可为 Null。|
 |members|[directoryObject](directoryobject.md) 集合|用户和组成员的此 Adminsitrative 单位。 HTTP 方法： 获取 （列表成员），POST （添加成员），删除 （删除成员）。|
-|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md)| 此管理单元的作用域角色成员。  HTTP 方法： 获取 (列表 scopedRoleMemberships)，POST （添加 scopedRoleMembership），请删除 (删除 scopedRoleMembership)。 |
+|scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) 集合| 此管理单元的作用域角色成员。  HTTP 方法： 获取 (列表 scopedRoleMemberships)，POST （添加 scopedRoleMembership），请删除 (删除 scopedRoleMembership)。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -94,10 +94,15 @@ ms.locfileid: "27955315"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "administrativeUnit resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/administrativeunit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

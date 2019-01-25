@@ -2,16 +2,16 @@
 title: 获取 synchronizationTemplate
 description: 通过其标识符来检索同步模板。
 localization_priority: Normal
-ms.openlocfilehash: 9754b1fbc8c86f05d22f0ada57b8b97e0b1efbed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 4fc13ee5d83d6501f75bb45ce69f189b8809270c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863810"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524371"
 ---
 # <a name="get-synchronizationtemplate"></a>获取 synchronizationTemplate
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过其标识符来检索同步模板。
 
@@ -69,3 +69,11 @@ HTTP/1.1 200 OK
         }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationtemplate-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

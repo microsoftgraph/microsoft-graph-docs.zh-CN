@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: 新建文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0bdd5f76303d5097af3edd1fd9e2a8469d4a47a2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ac78cc2e223f532c8c97fd413b799bd5cfd594cc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984617"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522985"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>在驱动器中新建文件夹
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用指定的父项或路径在[驱动器](../resources/drive.md)中新建文件夹或 [DriveItem](../resources/driveitem.md)。
 
@@ -113,10 +113,15 @@ Content-Type: application/json
 请参阅[错误响应][error-response]主题，详细了解错误返回方式。
 [错误响应]: / 图/错误 [项目资源]:./resources/driveitem.md [文件夹方面]:./resources/folder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a folder item in a drive.",
   "keywords": "create,folder,new item",
   "section": "documentation",
-  "tocPath": "Items/Create folder"
-} -->
+  "tocPath": "Items/Create folder",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-post-children.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,19 +1,19 @@
 ---
 title: 列出警报
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: 检索警报对象的列表。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 507ad72b8d50e2343bfd99446e178e09ea65ac8f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d50c3244ae2c0e9f158dc38923136ef3e8656f0d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927840"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524378"
 ---
 # <a name="list-alerts"></a>列出警报
 
- > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[通知](../resources/alert.md)对象的列表。
 
@@ -41,14 +41,14 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持以下[OData 查询参数](/graph/query-parameters)以帮助自定义响应：
+此方法支持以下 [OData 查询参数](/graph/query-parameters)，有助于自定义响应。
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top`将返回从每个安全 API 提供程序的聚合的顶级结果。  
+- `$top`将返回从每个安全 API 提供程序的聚合的顶级结果。
 
 若要返回替代属性集，请使用 OData`$select`查询参数指定的所需的**通知**属性集。  例如，若要返回**assignedTo**、**类别**和**严重性**属性，请添加以下到您的查询： `$select=assignedTo,category,severity`。
 
@@ -114,10 +114,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List alerts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

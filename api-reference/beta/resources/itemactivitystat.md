@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
 localization_priority: Normal
-ms.openlocfilehash: d0917d0100d33abee1095e2a7d06a4732d382937
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1362116c0dbe997eda941cb790e00e9ddb078ae4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854248"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517629"
 ---
 # <a name="itemactivitystat-resource-type"></a>itemActivityStat 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ItemActivityStat**资源提供有关发生的时间间隔内的活动信息。
 
@@ -43,17 +43,17 @@ ms.locfileid: "27854248"
 
 ## <a name="properties"></a>属性
 
-| 属性         | 类型                    | Description
+| 属性         | 类型                    | 说明
 |:-----------------|:------------------------|:----------------------------------------
-| incompleteData   | [incompleteData][]      | 指示此间隔中的统计信息基于不完整的数据。 此为只读属性。
-| isTrending       | 布尔                 | 指示是否项目"趋势。" 此为只读属性。
-| startDateTime    | DateTimeOffset          | 当开始间隔。 此为只读属性。
-| endDateTime      | DateTimeOffset          | 当结束间隔。 此为只读属性。
-| create           | [itemActionStat][]      | 有关此间隔中的**创建**操作的统计信息。 此为只读属性。
-| edit             | [itemActionStat][]      | 有关此间隔中的**编辑**操作的统计信息。 此为只读属性。
-| delete           | [itemActionStat][]      | 有关此间隔中的**删除**操作的统计信息。 此为只读属性。
-| move             | [itemActionStat][]      | 有关此间隔中的**移动**操作的统计信息。 此为只读属性。
-| 访问           | [itemActionStat][]      | 有关此间隔中的**访问**操作的统计信息。 此为只读属性。
+| incompleteData   | [incompleteData][]      | 指示此间隔中的统计信息基于不完整的数据。 只读。
+| isTrending       | Boolean                 | 指示是否项目"趋势。" 只读。
+| startDateTime    | DateTimeOffset          | 当开始间隔。 只读。
+| endDateTime      | DateTimeOffset          | 当结束间隔。 只读。
+| create           | [itemActionStat][]      | 有关此间隔中的**创建**操作的统计信息。 只读。
+| edit             | [itemActionStat][]      | 有关此间隔中的**编辑**操作的统计信息。 只读。
+| delete           | [itemActionStat][]      | 有关此间隔中的**删除**操作的统计信息。 只读。
+| move             | [itemActionStat][]      | 有关此间隔中的**移动**操作的统计信息。 只读。
+| Access           | [itemActionStat][]      | 有关此间隔中的**访问**操作的统计信息。 只读。
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md
@@ -68,10 +68,15 @@ ms.locfileid: "27854248"
 
 ## <a name="remarks"></a>注解
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActivityStat object provides information about activities that took place on an item.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemActivityStat"
-} -->
+  "tocPath": "Resources/ItemActivityStat",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactivitystat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

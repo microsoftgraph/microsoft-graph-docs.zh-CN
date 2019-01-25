@@ -4,16 +4,16 @@ description: 获取指定的 outlookCategory 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c296aea62fec7090cb76607911f6be178f1ebdbb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7529568b26c56258e63a8c1080c019aaf0f57e59
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949715"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520037"
 ---
 # <a name="get-outlook-category"></a>获取 Outlook category
 
-> **重要说明**： 在 Microsoft Graph 中的 /beta 版本下的 Api 在预览，并会受到更改。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取指定的 [outlookCategory](../resources/outlookcategory.md) 对象的属性和关系。
 
@@ -84,5 +84,7 @@ Content-length: 249
   "description": "Get outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlookcategory-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
 }-->

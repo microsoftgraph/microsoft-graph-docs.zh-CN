@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: 可恢复的文件上传
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bfab657f2127b730fd361a17b8fd60e9325984ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b121fb2f1cbeda13cd67f3f37ba06c67304e6ee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936828"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525337"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过创建上传会话，使应用可以上传最大大小的文件。上传会话使应用可以在连续的 API 请求中上传多个范围的文件，这样一来，如果在上传过程中连接断开，应用也可以继续传输文件。
 
@@ -86,17 +86,17 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ## <a name="parameters"></a>参数
 
-| 参数            | 类型                          | 说明
+| 参数            | 类型                          | 描述
 |:---------------------|:------------------------------|:---------------------------------
 | 项                 | driveItemUploadableProperties | 有关所上载文件的数据
-| deferCommit          | 布尔                       | 如果设置为 true，最后一个创建的目标文件需要显式请求。 仅在 OneDrive for Business。
+| deferCommit          | Boolean                       | 如果设置为 true，最后一个创建的目标文件需要显式请求。 仅在 OneDrive for Business。
 
 ## <a name="item-properties"></a>项目属性
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| 说明          | 字符串             | 提供用户可见项目的说明。 读写。 仅在 OneDrive 个人。
-| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
+| 说明          | String             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
+| name                 | String             | 项目名称（文件名和扩展名）。读写。
 
 ### <a name="request"></a>请求
 
@@ -204,7 +204,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>注解
 
 * `nextExpectedRanges` 属性不会总是列出所有缺少的范围。
 * 成功写入片段时，它将返回下一个开始范围（例如，"523-"）。
@@ -406,9 +406,14 @@ Content-Type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
-  "section": "documentation"
-} -->
+  "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-createuploadsession.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

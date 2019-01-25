@@ -2,16 +2,16 @@
 title: 操作资源类型
 description: 长时间运行操作的状态。
 localization_priority: Normal
-ms.openlocfilehash: 760aeedb67b987fc22a5eef969e2214f6dfd05b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3ad9848387dab2de928f7ace2fa4b905720be615
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830343"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520184"
 ---
 # <a name="operation-resource-type"></a>操作资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 长时间运行操作的状态。
 
@@ -24,11 +24,11 @@ ms.locfileid: "27830343"
 | 属性           | 类型            | 说明                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | 操作的开始时间。                                                |
-| id                 | 字符串          | 操作 ID。只读。 生成的服务器。                                  |
+| id                 | 字串符号          | 操作 ID。只读。 生成的服务器。                                  |
 | lastActionDateTime | DateTimeOffset  | 操作的上次活动时间。                                   |
 | status             | String          | 可取值为 `notStarted`、`running`、`completed`、`failed`。 只读。 |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 无
 
@@ -68,10 +68,15 @@ ms.locfileid: "27830343"
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "operation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/operation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

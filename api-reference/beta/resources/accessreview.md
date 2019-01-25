@@ -4,16 +4,16 @@ description: '在 Azure AD 中访问审阅功能，`accessReview`代表访问审
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e9099b1ec55a8ed017f77757d527abbd7e45bdf6
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.openlocfilehash: 2cb5d32a8dcc6b12330aca6e831a8ab2083759df
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016735"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523517"
 ---
 # <a name="accessreview-resource-type"></a>accessReview 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 Azure AD[访问审阅](accessreviews-root.md)功能中，`accessReview`代表访问审阅。  
 
@@ -62,7 +62,7 @@ ms.locfileid: "28016735"
 
 
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 
 
@@ -152,10 +152,15 @@ ms.locfileid: "28016735"
 
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "accessReview resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/accessreview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

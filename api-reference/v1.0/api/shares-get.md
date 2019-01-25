@@ -4,12 +4,12 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 访问共享项目
 localization_priority: Normal
-ms.openlocfilehash: fbde377c05b4b1f86bff32afcbaf0023c9be487a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 62a2b15fbd0715c719e0fefc6a0b02162bc4fdec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831526"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522565"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 
@@ -37,9 +37,9 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 ### <a name="path-parameters"></a>路径参数
 
-| 参数名称        | 值    | 说明                                                                         |
-|:----------------------|:---------|:------------------------------------------------------------------------------------|
-| **sharingTokenOrUrl** | `string` | 必需。 API 返回的共享令牌或正确编码的共享 URL。 |
+| 参数名称                 | 值    | 说明                                                                         |
+|:-------------------------------|:---------|:------------------------------------------------------------------------------------|
+| **shareIdOrEncodedSharingUrl** | `string` | 必需。 API 返回的共享令牌或正确编码的共享 URL。 |
 
 ### <a name="encoding-sharing-urls"></a>编码共享 URL
 
@@ -56,6 +56,21 @@ string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&auth
 string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(sharingUrl));
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
+
+## <a name="optional-request-headers"></a>可选的请求标头
+
+| 名称       | 类型   | 说明                                                    |
+|:-----------|:-------|:---------------------------------------------------------------|
+| **Prefer** | string | 可选。 将设置为一个`prefer`下记录的值。  |
+
+### <a name="prefer-header-values"></a>希望使用标头的值
+
+| 姓名                          | 说明                                                                                             |
+|:------------------------------|:--------------------------------------------------------------------------------------------------------|
+| redeemSharingLink             | 如果**shareIdOrEncodedSharingUrl**是共享链接，授予对呼叫者持久访问该项    |
+| redeemSharingLinkIfNecessary  | 与值相同 redeemSharingLink，但 access 只能保证被授予此请求的持续时间内 |
+
+redeemSharingLink 应被视为等效于呼叫者导航到共享链接 （接受共享笔势） 浏览器中，而 redeemSharingLinkIfNecessary 适用于情况，其中的目的是只是为了扫视的链接元数据。
 
 ## <a name="response"></a>响应
 

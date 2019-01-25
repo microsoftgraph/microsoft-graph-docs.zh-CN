@@ -4,16 +4,16 @@ description: 对话是 线程 集合，而线程包含相应线程拥有的帖�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 5cacad2b9539c398251ffd07899df7beb3c2f378
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7d489a75f72a705a77231af940094b7aa2d18fe1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991438"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528646"
 ---
 # <a name="conversation-resource-type"></a>对话资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 对话是 [线程](conversationthread.md) 集合，而线程包含相应线程拥有的帖子。对话中的所有线程和帖子共享相同的主题。
 
@@ -24,7 +24,7 @@ ms.locfileid: "27991438"
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[列出对话](../api/group-list-conversations.md) | [对话](conversation.md) 集合 |获取此组中的对话列表。|
-|[创建](../api/group-post-conversations.md) |[对话](conversation.md)| 通过包括线程和帖子创建新对话。|
+|[创建](../api/group-post-conversations.md) |[conversation](conversation.md)| 通过包括线程和帖子创建新对话。|
 |[获取对话](../api/conversation-get.md) | [对话](conversation.md) |读取 conversation 对象的属性和关系。|
 |[删除](../api/conversation-delete.md) | 无 |删除 conversation 对象 |
 |[列出对话线程](../api/conversation-list-threads.md) |[conversationThread](conversationthread.md) 集合| 获取组对话中的所有线程。|
@@ -40,7 +40,7 @@ ms.locfileid: "27991438"
 |topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。|
 |uniqueSenders|String collection|发送消息到此对话的所有用户。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |线程|[conversationThread](conversationthread.md) 集合|对话中所有对话线程的集合。一种导航属性。只读。可为 Null。|
@@ -73,10 +73,15 @@ ms.locfileid: "27991438"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "conversation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/conversation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

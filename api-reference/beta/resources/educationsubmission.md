@@ -4,16 +4,16 @@ description: 提交归工作分配。 提交表示的资源的个人 （或组�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 9cbfaa46d979e3796ae9128e212bfaa1f6bf8453
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: aeeb1355da2ffcb0ebf561af2ecd15ac93221e26
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920875"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521423"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 提交归工作分配。 提交表示的资源的个人 （或组） 打开中的工作分配和返回薪等级/反馈。
 发布工作分配时，会自动创建提交。 提交拥有资源的两个的列表。 资源表示工作区域时的提交的资源表示主动已打开学生的资源的用户/组。  
@@ -38,22 +38,22 @@ ms.locfileid: "27920875"
 |反馈|[educationFeedback](educationfeedback.md)|保留反馈属性存储回学生教师的注释。|
 |grade|[educationAssignmentGrade](educationassignmentgrade.md)|包含教师将分配给此提交的薪等级信息。|
 |id|String| 只读。|
-|收件人|[educationSubmissionRecipient](educationsubmissionrecipient.md)|此提交被分配到。|
+|recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|此提交被分配到。|
 |releasedBy|[identitySet](identityset.md)|移动此提交释放的状态的用户。|
 |releasedDateTime|DateTimeOffset|发布提交时时刻。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |returnedBy|[identitySet](identityset.md)|移动此提交返回的状态的用户。|
 |returnedDateTime|DateTimeOffset|返回提交了时刻。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|resourcesFolderUrl|字符串|此提交的所有文件资源都需要存储的文件夹。|
+|resourcesFolderUrl|String|此提交的所有文件资源都需要存储的文件夹。|
 |status|string| 只读。 可取值为：`working`、`submitted`、`released`、`returned`。|
 |submittedBy|[identitySet](identityset.md)|移至提交状态的资源的用户。|
 |submittedDateTime|DateTimeOffset|当提交已移至提交状态时刻。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |unsubmittedBy|[identitySet](identityset.md)|移动资源的用户从提交到运行状态。|
 |unsubmittedDateTime|DateTimeOffset|当提交已移动从提交到工作状态时刻。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|resources|[educationSubmissionResource](educationsubmissionresource.md)集合| 可为 Null。|
+|resources|[educationSubmissionResource](educationsubmissionresource.md)集合| 可为空。|
 |submittedResources|[educationSubmissionResource](educationsubmissionresource.md)集合| 只读。可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -87,10 +87,15 @@ ms.locfileid: "27920875"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSubmission resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsubmission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

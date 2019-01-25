@@ -4,16 +4,16 @@ description: 获取新创建、 更新或删除组，而无需执行整个组集
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 032dc8906c14ad0ea89ca8eda55d4dc53637efe6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c894df643289d3f92ce20ebd36a53456999ab587
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936324"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524357"
 ---
 # <a name="group-delta"></a>group: delta
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取新创建、 更新或删除组，而无需执行整个组集合的完全读取包括组成员身份更改。 有关详细信息，请参阅[使用增量查询](/graph/delta-query-overview)。
 
@@ -65,7 +65,7 @@ GET /groups/delta
 |:---------------|:----------|
 | Authorization  | 持有者&lt;令牌&gt;|
 | Content-Type  | application/json |
-| Prefer | 返回 = 最少 <br><br>指定与请求使用此标头`deltaLink`会返回自上次循环后已更改的对象属性。 可选。 |
+| Prefer | return=minimal。 <br><br>指定与请求使用此标头`deltaLink`会返回自上次循环后已更改的对象属性。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -107,7 +107,7 @@ GET /groups/delta
 
 #### <a name="request-1"></a>请求 1
 
-下面展示了示例请求。 没有任何`$select`参数，以便跟踪和返回一组默认属性。
+下面是一个请求示例。 没有任何`$select`参数，以便跟踪和返回一组默认属性。
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -121,7 +121,7 @@ GET https://graph.microsoft.com/beta/groups/delta
 
 以下是时使用的响应示例`deltaLink`获取从查询初始化。
 
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都是从实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
 >
 > 请注意*members@delta*属性的组中包括的 member 对象的 id 的状态。
 
@@ -245,15 +245,20 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-- [使用增量查询来跟踪 Microsoft Graph 数据中的更改](/graph/delta-query-overview)。
-- [获取组的增量更改](/graph/delta-query-groups)。
+- [使用增量查询跟踪 Microsoft Graph 数据更改](/graph/delta-query-overview)
+- 获取组的增量更改。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

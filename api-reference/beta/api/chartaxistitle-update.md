@@ -4,16 +4,16 @@ description: 更新 chartaxistitle 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fd6b38b2ff7b0c65ed58b97326c9bb1e63d34079
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6f8e1ba265246678bb930c1135fbf465147c1c7b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966368"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522614"
 ---
 # <a name="update-chartaxistitle"></a>更新 chartaxistitle
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 chartaxistitle 对象的属性。
 ## <a name="permissions"></a>权限
@@ -44,7 +44,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |text|string|表示坐标轴标题。|
-|visible|boolean|指定坐标轴标题可见性的布尔值。|
+|visible|布尔|指定坐标轴标题可见性的布尔值。|
 
 ## <a name="response"></a>响应
 
@@ -86,10 +86,15 @@ Content-length: 45
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update chartaxistitle",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartaxistitle-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

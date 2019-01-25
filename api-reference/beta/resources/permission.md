@@ -4,21 +4,21 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Permission
 localization_priority: Normal
-ms.openlocfilehash: 34798437f1bf27c68c390b0f04618985de5cecf3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6a5a0af9c95900232ff87aa7aedb731a83a91cc5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843314"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518847"
 ---
-# <a name="permission-resource-type"></a>权限资源类型
+# <a name="permission-resource-type"></a>Permission 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**权限**资源提供有关[driveItem](driveitem.md)资源授予共享权限的信息。
+**** Permission 资源提供为 [DriveItem](driveitem.md) 资源授予的共享权限的相关信息。
 
 共享权限具有许多不同的形式。
-**权限**资源表示这些不同的窗体，通过对资源的方面。
+**** Permission 资源通过资源上的 facet 表示这些不同的形式。
 
 >**注意：** OneDrive for Business 和 SharePoint 文档库不返回**inheritedFrom**属性。
 
@@ -62,16 +62,16 @@ ms.locfileid: "27843314"
 
 | 属性            | 类型                        | 说明
 |:--------------------|:----------------------------|:-------------------------
-| id                  | 字符串                      | 在项目的所有权限中，某个权限的唯一标识符。只读。
+| id                  | String                      | 在项目的所有权限中，某个权限的唯一标识符。只读。
 | grantedTo           | [IdentitySet][]             | 对于用户类型权限，此权限的用户和应用程序的详细信息。只读。
-| grantedToIdentities | 集合 ([IdentitySet][]) | 有关链接类型的权限，向其授予权限的用户的详细信息。 此为只读属性。
+| grantedToIdentities | 集合 ([IdentitySet][]) | 有关链接类型的权限，向其授予权限的用户的详细信息。 只读。
 | 邀请          | [SharingInvitation][]       | 此权限的全部关联共享邀请的详细信息。只读。
 | inheritedFrom       | [ItemReference][]           | 如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。
 | link                | [SharingLink][]             | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。
 | roles               | 集合（字符串）          | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。
-| shareId             | 字符串                      | 一个可用于访问此**[共享 API][]** 通过共享项目的唯一标记。 此为只读属性。
+| shareId             | String                      | 可通过 **[shares][] API** 访问此共享项目的唯一令牌。只读。
 | expirationDateTime  | DateTimeOffset              | 一种格式的 yyyy-MM-ddTHH:mm:ssZ 方法的指示权限的到期时间。 DateTime.MinValue 表示那里无过期期限设置此权限。 可选。
-| hasPassword         | 布尔                     | 这指示是否将密码设置此权限，仅显示响应。 可选只读和仅 OneDrive 个人。
+| HasPassword         | Boolean                     | 这指示是否将密码设置此权限，仅显示响应。 可选只读和仅 OneDrive 个人。
 
 ### <a name="roles-enumeration-values"></a>角色枚举值
 
@@ -240,10 +240,15 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The permission object provides information about permissions and roles and sharing information.",
   "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
-  "tocPath": "Resources/Permission"
-} -->
+  "tocPath": "Resources/Permission",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/permission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

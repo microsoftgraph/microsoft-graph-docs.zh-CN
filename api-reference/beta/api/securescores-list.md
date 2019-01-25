@@ -1,17 +1,17 @@
 ---
 title: 列出 secureScores
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: 检索的属性和 secureScores 对象的关系。
 localization_priority: Normal
-ms.openlocfilehash: 6bf0a1e1964c93043bad4a81ab812786627ea737
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e574c3e52eb60f29dac89e2795b04666c7a1f02b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831813"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521479"
 ---
 # <a name="list-securescores"></a>列出 secureScores
 
- > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索的属性和[secureScores](../resources/securescores.md)对象的关系。
 
@@ -124,16 +124,21 @@ Content-type: application/json
                 }
             ]
         }
-    ]            
+    ]
 }
 
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List secureScores",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescores-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 代表图表上的系列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5a299c7140c2032a57cd47fb0880ae34620a920b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e5606516092633ff14d23947f73626adc6d83c2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915814"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519659"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表图表上的系列。
 
@@ -22,11 +22,11 @@ ms.locfileid: "27915814"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 ChartSeries](../api/chartseries-get.md) | [ChartSeries](chartseries.md) |读取 chartSeries 对象的属性和关系。|
-|[创建 ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| 通过发布到点集合创建新的 ChartPoints。|
-|[列出 points](../api/chartseries-list-points.md) |[ChartPoints](chartpoint.md) 集合| 获取 ChartPoints 对象集合。|
-|[更新](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |更新 ChartSeries 对象。 |
-|[List](../api/chartseries-list.md) | [ChartSeries](chartseries.md) 集合 |获取 chartSeries 对象集合。 |
+|获取 ChartSeries | [ChartSeries](chartseries.md) |读取 chartSeries 对象的属性和关系。|
+|创建 ChartPoints |ChartPoints| 通过发布到点集合创建新的 ChartPoints。|
+|列出 points |ChartPoints 集合| 获取 ChartPoints 对象集合。|
+|[Update](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |更新 ChartSeries 对象。 |
+|[List](../api/chartseries-list.md) | ChartSeries 集合 |获取 chartSeries 对象集合。 |
 |[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|根据其在集合中的位置检索系列|
 
 ## <a name="properties"></a>属性
@@ -34,7 +34,7 @@ ms.locfileid: "27915814"
 |:---------------|:--------|:----------|
 |name|string|表示图表中某个系列的名称。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |format|[ChartSeriesFormat](chartseriesformat.md)|表示图表系列的格式，包括填充和线条格式。只读。|
@@ -61,10 +61,15 @@ ms.locfileid: "27915814"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ChartSeries resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chartseries.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

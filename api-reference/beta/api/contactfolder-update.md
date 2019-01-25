@@ -4,16 +4,16 @@ description: 更新 contactfolder 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 9b2244f17bf877c1f52ae5de812f65ba1eae3b98
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1d644e3f9f74a2ff34ad557f8dac97bc131f7f03
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956148"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520499"
 ---
 # <a name="update-contactfolder"></a>更新 contactfolder
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 contactfolder 对象的属性。
 ## <a name="permissions"></a>权限
@@ -42,7 +42,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|String|文件夹的显示名称。|
+|displayName|字符串|文件夹的显示名称。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
 |wellKnownName|string|如果文件夹为识别的文件夹的文件夹的名称。 当前`contacts`是仅识别联系人文件夹。|
 
@@ -88,10 +88,15 @@ Content-length: 104
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update contactfolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/contactfolder-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

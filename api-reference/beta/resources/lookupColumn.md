@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
-ms.openlocfilehash: 1c7ab364777e1e3f82bb78d8e0940cf4f85576a0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 2efb199fafbf7c60af0e13720ea1b9efd93dc05c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885706"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517517"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [columnDefinition](columndefinition.md) 资源上的 **lookupColumn** 指示从网站中的另一个源查找列的值。
 
@@ -42,10 +42,15 @@ ms.locfileid: "27885706"
 | **listId**                | string  | 查找源列表的唯一标识符。
 | **primaryLookupColumnId** | string  | 如果已指定，则此列为*辅助查找*，同时从*主查找*查找的列表项中拉取一个附加字段。 使用*主查找*查找的列表项作为此处列出的列的源。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/LookupColumn"
-} -->
+  "tocPath": "Resources/LookupColumn",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/lookupColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 在 Microsoft Graph 中的调用 Api 支持互动语音响应 (IVR)
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a3657d60344941de931e4f77bddde922d7d01f21
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: aed30bc5ad109dc3f21d381f4d6b04e087a779a3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936359"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519379"
 ---
 # <a name="ivr-scenarios-in-calls"></a>呼叫中的 IVR 方案
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 Microsoft Graph 中的调用 Api 支持互动语音响应 (IVR) 方案如下：
 
@@ -21,3 +21,11 @@ ms.locfileid: "27936359"
 - 记录-例如，通常后它们听到选项提示记录呼叫者的音频。
 - 订阅音-例如，当您想知道哪些 DTMF 铃声选择，通常后听到音频提示呼叫者。
 - 例如，取消媒体处理-，您想要取消任何 PlayPrompt 或记录操作过程中可能存在时。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/calls-api-ivr-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

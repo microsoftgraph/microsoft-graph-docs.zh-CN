@@ -3,22 +3,22 @@ title: 获取 websocket 终结点
 description: 不支持在生产应用程序中使用这些 API。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a608dc938fd0a57108ffd8361aed5de575ec92c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 736684812d2cbc10affed82a3f946d75731f6768
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915821"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519792"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 不支持在生产应用程序中使用这些 API。
 
 允许您接收使用[socket.io][]的[驱动器][]的近乎实时的更改通知。
 Socket.io 是 JavaScript 利用 Websocket 的常用通知库。 若要了解详细信息，请参阅[socket.io](https://socket.io)。
 
-[驱动器]: ../resources/drive.md
+[drive]: ../resources/drive.md
 [socket.io]: https://socket.io/
 
 ## <a name="permissions"></a>权限
@@ -92,6 +92,11 @@ socket.on("connect", ()=>console.log("Connected!"));
 socket.on("notification", (data)=>console.log("Notification!", data));
 ```
 
-<!-- {
-  "type": "#page.annotation"
-}-->
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

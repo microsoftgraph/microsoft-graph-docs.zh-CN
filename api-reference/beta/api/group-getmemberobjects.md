@@ -1,21 +1,21 @@
 ---
 title: 'group: getMemberObjects'
-description: 返回的所有组和管理单元的组的成员。 检查是传递的。 注意： 以便将不返回任何目录角色，组不能为目录角色的成员。
+description: 返回组所属的所有组和管理单元。 检查是可传递的。 注意： 以便将不返回任何目录角色，组不能为目录角色的成员。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a83987a15f384cf17e268a8bdbd6791164484f7e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b71a683d3c311acc36ca0ab669c5d6d44180f31
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935925"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518714"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回的所有组和管理单元的组的成员。 检查是传递的。 注意： 以便将不返回任何目录角色，组不能为目录角色的成员。
+返回组所属的所有组和管理单元。 检查是可传递的。 注意： 以便将不返回任何目录角色，组不能为目录角色的成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -87,10 +87,15 @@ Content-length: 39
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: getMemberObjects",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-getmemberobjects.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

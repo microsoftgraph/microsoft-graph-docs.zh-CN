@@ -4,16 +4,16 @@ description: 更新 **plannertask** 对象的属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 1592657fd8ae71cff17fe79631a38eb2ce6e6197
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d33df32ace59884298ca6f8773cbbe2100f32f85
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931578"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523811"
 ---
 # <a name="update-plannertask"></a>更新 plannerTask
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 **plannertask** 对象的属性。
 ## <a name="permissions"></a>权限
@@ -42,10 +42,10 @@ PATCH /planner/tasks/<id>
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|此任务已应用的类别。有关可能的值，请参阅[已应用的类别](../resources/plannerappliedcategories.md)。|
-|assigneePriority|String|提示用于为列表视图中的此类项目排序。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
+|assigneePriority|String|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|分配到任务的用户集合。|
-|bucketId|字符串|任务所属的地址散列表元 id。 地址散列表元需要在计划中的任务。 它是 28 字符长度和区分大小写。 服务上执行[格式验证](../resources/tasks-identifiers-disclaimer.md)。 |
-|conversationThreadId|String|任务对话的线程 id。这是在组中创建的对话线程对象的 id。|
+|bucketId|String|任务所属的地址散列表元 id。 地址散列表元需要在计划中的任务。 它是 28 字符长度和区分大小写。 服务上执行[格式验证](../resources/tasks-identifiers-disclaimer.md)。 |
+|conversationThreadId|字符串|任务对话的线程 id。这是在组中创建的对话线程对象的 id。|
 |dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |orderHint|String|提示用于为列表视图中的此类项目排序。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
@@ -152,10 +152,15 @@ Content-length: 1423
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update plannertask",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/plannertask-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

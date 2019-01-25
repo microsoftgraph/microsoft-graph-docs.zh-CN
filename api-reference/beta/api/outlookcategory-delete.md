@@ -4,16 +4,16 @@ description: 删除指定的 outlookCategory 对象。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 482db944d3adbeb7b7d283a87dcf98973c4bc03d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 87bfea6c1580d5d74813199d5d7c20e9123182a1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949554"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524238"
 ---
 # <a name="delete-outlook-category"></a>删除 Outlook 类别
 
-> **重要说明**： 在 Microsoft Graph 中的 /beta 版本下的 Api 在预览，并会受到更改。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除指定的 [outlookCategory](../resources/outlookcategory.md) 对象。
 
@@ -73,5 +73,8 @@ HTTP/1.1 204 No Content
   "description": "Delete outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlookcategory-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }-->

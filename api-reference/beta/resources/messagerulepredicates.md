@@ -4,16 +4,16 @@ description: 表示适用于某个规则的一组条件和例外情况。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: ccaf95dcc893e985f4421fa31bed99a770d546ee
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: fda6a160d30dc0d822f2e0aeb5642250d6b69658
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944395"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519435"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示适用于某个规则的一组条件和例外情况。
 
@@ -24,7 +24,7 @@ ms.locfileid: "27944395"
 | bodyOrSubjectContains | Collection (String) | 表示应该出现在传入邮件正文或主题中的字符串，以便条件或例外情况适用。 |
 | categories | Collection (String) | 表示传入邮件应标记的类别，以便条件或例外情况适用。 |
 | fromAddresses | Collection ([recipient](recipient.md)) | 表示传入邮件的特定发件人电子邮件地址，以便条件或例外情况适用。 |
-| hasAttachments | Boolean | 指示传入的邮件是否必须包含附件，以便条件或例外情况适用。 |
+| hasAttachments | 布尔 | 指示传入的邮件是否必须包含附件，以便条件或例外情况适用。 |
 | headerContains | Collection (String) | 表示出现在传入邮件头中的字符串，以便条件或例外情况适用。 |
 | importance | String | 传入邮件上标记的重要性，以便条件或例外情况适用：`low`、`normal`、`high`。 |
 | isApprovalRequest | Boolean | 指示传入的邮件是否必须为审批请求，以便条件或例外情况适用。 |
@@ -101,10 +101,15 @@ ms.locfileid: "27944395"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "messageRulePredicates resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/messagerulepredicates.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 表示与租户相关联的域。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5d8dabf29285aea0b24613e584184dc13e02e499
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8d19909679447e050ea639ee0fcb4cd31288efc0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942393"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518637"
 ---
 # <a name="domain-resource-type"></a>域资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示与租户相关联的域。
 
@@ -35,12 +35,12 @@ ms.locfileid: "27942393"
 
 | 方法   | 返回类型 |说明|
 |:---------------|:--------|:----------|
-|[获取域](../api/domain-get.md) | [域](domain.md) | 读取 domain 对象的属性和关系。|
-|[创建域](../api/domain-post-domains.md) | [域](domain.md) | 向租户添加域。 |
+|[获取域](../api/domain-get.md) | [domain](domain.md) | 读取 domain 对象的属性和关系。|
+|[创建域](../api/domain-post-domains.md) | [domain](domain.md) | 向租户添加域。 |
 |[列出 domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) 集合| 通过对域的引用检索 directory 对象列表。|
 |[列出 serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) 集合|  检索域配置的域 DNS 记录列表。|
 |[列出 verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) 集合|  检索用于域验证的域 DNS 记录列表。|
-|[更新域](../api/domain-update.md) | [域](domain.md) |更新域。|
+|[更新域](../api/domain-update.md) | [domain](domain.md) |更新域。|
 |[删除域](../api/domain-delete.md) | 无 |删除域。|
 |[ForceDelete 域](../api/domain-forcedelete.md)|无|删除使用异步操作的域。|
 |[验证域](../api/domain-verify.md)|[域](domain.md)|验证域的所有权。|
@@ -52,11 +52,11 @@ ms.locfileid: "27942393"
 |authenticationType|String| 表示为域配置的身份验证类型。此为*托管*或*联盟*值。<br> *托管*表示 Azure AD 执行用户身份验证的云托管域。<br>*联盟*表示身份验证与标识提供程序（如通过 Active Directory 联合身份验证服务的租户的本地 Active Directory）联合。不可为 Null |
 |availabilityStatus|String| 使用[验证](../api/domain-verify.md)操作时，此属性始终为 Null。使用[验证](../api/domain-verify.md)操作时，响应中返回**域**实体。响应中的**域**实体的 **availabilityStatus** 属性为 *AvailableImmediately* 或 *EmailVerifiedDomainTakeoverScheduled*。|
 |id|字符串| 域的完全限定的名称。密钥、不可变、不可为 Null、唯一 |
-|isAdminManaged|布尔| 如果域的 DNS 记录管理已委派为 Office 365，则属性值为 false。否则，此值为 true。不可为 Null |
-|isDefault|布尔| 如果这是用于创建用户的默认域，则为 true。每个公司仅有一个默认域。不可为 Null |
-|isInitial|布尔| 如果这是由 Microsoft Online Services (companyname.onmicrosoft.com) 创建的初始域，则为 true。每个公司仅有一个初始域。不可为 Null |
-|isRoot|布尔| 如果此域是一个已验证的根域，则为 true。否则，如果此域为子域或未经验证，则为 false。不可为 Null |
-|isVerified|布尔| 如果域已完成域所有权验证，则为 true。不可为 Null |
+|isAdminManaged|Boolean| 如果域的 DNS 记录管理已委派为 Office 365，则属性值为 false。否则，此值为 true。不可为 Null |
+|isDefault|Boolean| 如果这是用于创建用户的默认域，则为 true。每个公司仅有一个默认域。不可为 Null |
+|isInitial|Boolean| 如果这是由 Microsoft Online Services (companyname.onmicrosoft.com) 创建的初始域，则为 true。每个公司仅有一个初始域。不可为 Null |
+|isRoot|Boolean| 如果此域是一个已验证的根域，则为 true。否则，如果此域为子域或未经验证，则为 false。不可为 Null |
+|isVerified|Boolean| 如果域已完成域所有权验证，则为 true。不可为 Null |
 |supportedServices|字符串集合| 分配给域的功能。<br><br>可以包含下列值中的 0 个、1 个或更多个：*电子邮件*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*<br><br> 可以使用 Graph API 添加/删除的值包括：*电子邮件*、*OfficeCommunicationsOnline*、*Yammer*<br>不可为 Null|
 |状态|[domainState](domainstate.md)| 为域计划的异步操作的状态。 |
 
@@ -99,10 +99,15 @@ ms.locfileid: "27942393"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domain resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/domain.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

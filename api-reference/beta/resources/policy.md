@@ -2,16 +2,16 @@
 title: 策略资源类型
 description: 表示 Azure AD 策略。 策略是可以在应用程序、 服务主体、 组或分配给他们的整个组织强制实施的自定义规则。 当前只有一种类型的策略有：
 localization_priority: Normal
-ms.openlocfilehash: cc82dc32056b9da5c2ca1144e58b5b9e1fe326f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830924"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518784"
 ---
 # <a name="policy-resource-type"></a>策略资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示 Azure AD 策略。 策略是可以在应用程序、 服务主体、 组或分配给他们的整个组织强制实施的自定义规则。 当前只有一种类型的策略有：
 
@@ -31,12 +31,12 @@ ms.locfileid: "27830924"
 |[列表分配策略](../api/policy-list-assigned.md)|策略集合|获取所有策略对象分配给应用程序或服务主体。|
 
 ### <a name="common-properties"></a>通用属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|definition|字符串|字符串版本的特定的策略。 请参阅下文。 必需。|
-|displayName|字符串|自定义策略名称。 必填。|
-|IsOrganizationDefault|布尔|如果设置为 true 时，激活此策略。 可以有多个策略相同的策略类型，但只有一个可激活为默认组织。 可选，默认值为 false。|
-|type|字符串|指定策略的类型。 必须当前"TokenLifetimePolicy"。 必填。|
+|definition|String|字符串版本的特定的策略。 请参阅下文。 必需。|
+|displayName|String|自定义策略名称。 必需。|
+|IsOrganizationDefault|Boolean|如果设置为 true 时，激活此策略。 可以有多个策略相同的策略类型，但只有一个可激活为默认组织。 可选，默认值为 false。|
+|type|String|指定策略的类型。 必须当前"TokenLifetimePolicy"。 必需。|
 
 #### <a name="common-relationships"></a>常见的关系
 |关系|类型|说明|
@@ -58,15 +58,15 @@ ms.locfileid: "27830924"
 
 >注意： 在"工作日"表示的属性的最大值是 1 秒缺少表示天数。 例如，1 天的最大值指定为"23: 59:59"。
 
-| 属性     | 类型   |Description| 最小值 | 最大值 | 默认值|
+| 属性     | 类型   |说明| 最小值 | 最大值 | 默认值|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|字符串|控制长**访问和 ID 令牌**视为有效。|10 分钟|1 天|1 小时|
-|MaxInactiveTime|字符串|控制如何旧刷新令牌可之前客户端不能再使用它以检索新的访问/刷新令牌对以访问资源。|10 分钟|90 天|14 天|
-|MaxAgeSingleFactor|字符串|控件长用户可以继续使用刷新令牌获取新的 access 刷新令牌对上次他们过身份验证之后成功单个因子。 由于单因素被看作安全性低于多因素身份验证，建议您使用此策略设置为比 MultiFactorRefreshTokenMaxAge 相同或更低值。|10 分钟|直到吊销|365 天或直到吊销|
-|MaxAgeMultiFactor|字符串|控件长用户可以继续使用刷新令牌获取新的 access 刷新令牌对上次他们过身份验证之后成功与多因素。|10 分钟|直到吊销|365 天或直到吊销|
-|MaxAgeSessionSingleFactor|字符串|控件长用户可以继续使用会话令牌获取新 ID/会话令牌之后上次他们过身份验证成功单个因子。 由于一元被视为安全性低于多因素身份验证，因此建议此策略设置为比 MultiFactorSessionTokenMaxAge 相同或更低值|10 分钟|直到吊销|365 或直到吊销|
-|MaxAgeSessionMultiFactor|字符串|控件长用户可以继续使用会话令牌获取的上次成功与多因素验证之后的新 ID/会话令牌。|10 分钟|直到吊销|365 或直到吊销|
-|版本|整数|设置值为 1。 必填。|无|无|无|
+|AccessTokenLifetime|String|控制长**访问和 ID 令牌**视为有效。|10 分钟|1 天|1 小时|
+|MaxInactiveTime|String|控制如何旧刷新令牌可之前客户端不能再使用它以检索新的访问/刷新令牌对以访问资源。|10 分钟|90 天|14 天|
+|MaxAgeSingleFactor|String|控件长用户可以继续使用刷新令牌获取新的 access 刷新令牌对上次他们过身份验证之后成功单个因子。 由于单因素被看作安全性低于多因素身份验证，建议您使用此策略设置为比 MultiFactorRefreshTokenMaxAge 相同或更低值。|10 分钟|直到吊销|365 天或直到吊销|
+|MaxAgeMultiFactor|String|控件长用户可以继续使用刷新令牌获取新的 access 刷新令牌对上次他们过身份验证之后成功与多因素。|10 分钟|直到吊销|365 天或直到吊销|
+|MaxAgeSessionSingleFactor|String|控件长用户可以继续使用会话令牌获取新 ID/会话令牌之后上次他们过身份验证成功单个因子。 由于一元被视为安全性低于多因素身份验证，因此建议此策略设置为比 MultiFactorSessionTokenMaxAge 相同或更低值|10 分钟|直到吊销|365 或直到吊销|
+|MaxAgeSessionMultiFactor|String|控件长用户可以继续使用会话令牌获取的上次成功与多因素验证之后的新 ID/会话令牌。|10 分钟|直到吊销|365 或直到吊销|
+|版本|整数|设置值为 1。 必需。|无|无|无|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -79,3 +79,11 @@ ms.locfileid: "27830924"
   "type":"TokenLifetimePolicy",
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/policy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

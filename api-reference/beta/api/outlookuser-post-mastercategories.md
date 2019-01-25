@@ -4,16 +4,16 @@ description: 在用户主类别列表中创建 outlookCategory 对象。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e76f6ddc0f733bd2e50b3aac62707acbed370ee3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b9cf9ed2ca82e2f676ae1241f64ce361e0004437
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984701"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519939"
 ---
 # <a name="create-outlook-category"></a>创建 Outlook 类别
 
-> **重要说明**： 在 Microsoft Graph 中的 /beta 版本下的 Api 在预览，并会受到更改。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在用户主类别列表中创建 [outlookCategory](../resources/outlookcategory.md) 对象。
 
@@ -90,5 +90,7 @@ Content-length: 250
   "description": "Create outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "".
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlookuser-post-mastercategories.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
 }-->

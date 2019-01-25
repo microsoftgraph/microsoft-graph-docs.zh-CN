@@ -4,16 +4,16 @@ description: 包含联系人的文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 450c683d91eeb789c8c54b2bbfd38db695fbbba2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 599f1765b6305d2dc4d482ec035ee4b24eb5183a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967544"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523797"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含联系人的文件夹。
 
@@ -27,10 +27,10 @@ ms.locfileid: "27967544"
 |[获取 contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |通过使用联系人文件夹 ID 获取联系人文件夹。|
 |[更新](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |更新 contactFolder 对象。 |
 |[删除](../api/contactfolder-delete.md) | 无 |删除 contactFolder 对象。 |
-|[列出 childFolder](../api/contactfolder-list-childfolders.md) |[contactFolder](contactfolder.md)集合| 获取指定联系人文件夹下的子文件夹的集合。|
+|[列出 childFolder](../api/contactfolder-list-childfolders.md) |[ContactFolder](contactfolder.md) 集合| 获取指定联系人文件夹下的子文件夹的集合。|
 |[创建子 ContactFolder](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| 创建新的 contactFolder 作为指定文件夹的子文件夹。|
 |[delta](../api/contact-delta.md)|[联系人](contact.md)集合| 获取用户邮箱中已添加、删除或移除的联系人文件夹集。|
-|[列出文件夹中的联系人](../api/contactfolder-list-contacts.md) |[联系人](contact.md)集合| 从已登录用户的默认联系人文件夹 (`.../me/contacts`) 或指定的联系人文件夹中获取联系人集合。|
+|[列出文件夹中的联系人](../api/contactfolder-list-contacts.md) |[contact](contact.md) 集合| 从已登录用户的默认联系人文件夹 (`.../me/contacts`) 或指定的联系人文件夹中获取联系人集合。|
 |[在文件夹中创建联系人](../api/contactfolder-post-contacts.md) |[联系人](contact.md)| 将联系人添加到联系人根文件夹或其他联系人文件夹的 `contacts` 终结点中。|
 |**扩展属性**| | |
 |[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md)  |在新建或现有的 contactFolder 中创建一个或多个单值扩展属性。   |
@@ -46,7 +46,7 @@ ms.locfileid: "27967544"
 |parentFolderId|String|文件夹的父文件夹 ID。|
 |wellKnownName|string|如果文件夹为识别的文件夹的文件夹的名称。 当前`contacts`是仅识别联系人文件夹。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |childFolders|[ContactFolder](contactfolder.md) 集合|文件夹中的子文件夹集合。导航属性。只读。可为 Null。|
@@ -88,10 +88,15 @@ ms.locfileid: "27967544"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "contactFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/contactfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

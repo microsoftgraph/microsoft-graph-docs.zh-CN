@@ -2,16 +2,16 @@
 title: servicePrincipal： 增量
 description: 获取新创建、 更新或删除的服务主体，而无需执行的整个资源集的完全读取。 有关详细信息，请参阅使用增量查询。
 localization_priority: Normal
-ms.openlocfilehash: f1801f98950f132e8fdc94770d616fc2e523a2de
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ed0cf279d1d076e324d24e1774734e9aa14a6b34
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868290"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520072"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal： 增量
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取新创建、 更新或删除的服务主体，而无需执行的整个资源集的完全读取。 有关详细信息，请参阅[使用增量查询](/graph/delta-query-overview)。
 
@@ -126,10 +126,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "servicePrincipal: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
