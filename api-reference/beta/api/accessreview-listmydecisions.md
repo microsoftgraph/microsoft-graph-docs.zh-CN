@@ -4,45 +4,45 @@ description: 在 Azure AD 访问评论功能中，为审阅者检索呼叫用户
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 037b916bca45c74d1918b45e4e9e21b685bd8ae0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e19e3b0581c995f1b0ef52369d3a3e7545696d1c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941497"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525323"
 ---
-# <a name="list-my-accessreview-decisions"></a><span data-ttu-id="ee389-103">列出我 accessReview 决策</span><span class="sxs-lookup"><span data-stu-id="ee389-103">List my accessReview decisions</span></span>
+# <a name="list-my-accessreview-decisions"></a><span data-ttu-id="fe9c8-103">列出我 accessReview 决策</span><span class="sxs-lookup"><span data-stu-id="fe9c8-103">List my accessReview decisions</span></span>
 
-> <span data-ttu-id="ee389-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ee389-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ee389-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ee389-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ee389-106">在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中，为审阅者检索呼叫用户的[accessReview](../resources/accessreview.md)对象的决策。</span><span class="sxs-lookup"><span data-stu-id="ee389-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object for the calling user as reviewer.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ee389-107">权限</span><span class="sxs-lookup"><span data-stu-id="ee389-107">Permissions</span></span>
-<span data-ttu-id="ee389-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ee389-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fe9c8-104">在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中，为审阅者检索呼叫用户的[accessReview](../resources/accessreview.md)对象的决策。</span><span class="sxs-lookup"><span data-stu-id="fe9c8-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object for the calling user as reviewer.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fe9c8-105">权限</span><span class="sxs-lookup"><span data-stu-id="fe9c8-105">Permissions</span></span>
+<span data-ttu-id="fe9c8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fe9c8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ee389-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ee389-110">Permission type</span></span>                        | <span data-ttu-id="ee389-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ee389-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fe9c8-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="fe9c8-108">Permission type</span></span>                        | <span data-ttu-id="fe9c8-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fe9c8-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ee389-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ee389-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="ee389-113">`AccessReview.Read.All`, `AccessReview.ReadWrite.All`.</span><span class="sxs-lookup"><span data-stu-id="ee389-113"></span></span>  <span data-ttu-id="ee389-114">此外必须允许登录的用户读取此特定访问审查。</span><span class="sxs-lookup"><span data-stu-id="ee389-114">The signed in user must also be permitted to read this particular access review.</span></span> |
-|<span data-ttu-id="ee389-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ee389-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ee389-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="ee389-116">Not supported.</span></span> |
-|<span data-ttu-id="ee389-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="ee389-117">Application</span></span>                            | <span data-ttu-id="ee389-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="ee389-118">Not supported.</span></span> |
+|<span data-ttu-id="fe9c8-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fe9c8-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="fe9c8-111">`AccessReview.Read.All`, `AccessReview.ReadWrite.All`.</span><span class="sxs-lookup"><span data-stu-id="fe9c8-111"></span></span>  <span data-ttu-id="fe9c8-112">此外必须允许登录的用户读取此特定访问审查。</span><span class="sxs-lookup"><span data-stu-id="fe9c8-112">The signed in user must also be permitted to read this particular access review.</span></span> |
+|<span data-ttu-id="fe9c8-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fe9c8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fe9c8-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="fe9c8-114">Not supported.</span></span> |
+|<span data-ttu-id="fe9c8-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="fe9c8-115">Application</span></span>                            | <span data-ttu-id="fe9c8-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="fe9c8-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ee389-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ee389-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fe9c8-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fe9c8-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /accessReviews('{reviewId}')/myDecisions
 ```
-## <a name="request-headers"></a><span data-ttu-id="ee389-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="ee389-120">Request headers</span></span>
-| <span data-ttu-id="ee389-121">名称</span><span class="sxs-lookup"><span data-stu-id="ee389-121">Name</span></span>         | <span data-ttu-id="ee389-122">类型</span><span class="sxs-lookup"><span data-stu-id="ee389-122">Type</span></span>        | <span data-ttu-id="ee389-123">说明</span><span class="sxs-lookup"><span data-stu-id="ee389-123">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="fe9c8-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="fe9c8-118">Request headers</span></span>
+| <span data-ttu-id="fe9c8-119">名称</span><span class="sxs-lookup"><span data-stu-id="fe9c8-119">Name</span></span>         | <span data-ttu-id="fe9c8-120">类型</span><span class="sxs-lookup"><span data-stu-id="fe9c8-120">Type</span></span>        | <span data-ttu-id="fe9c8-121">说明</span><span class="sxs-lookup"><span data-stu-id="fe9c8-121">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="ee389-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="ee389-124">Authorization</span></span> | <span data-ttu-id="ee389-125">string</span><span class="sxs-lookup"><span data-stu-id="ee389-125">string</span></span> | <span data-ttu-id="ee389-126">持有者\{标记\}。</span><span class="sxs-lookup"><span data-stu-id="ee389-126">Bearer \{token\}.</span></span> <span data-ttu-id="ee389-127">必需。</span><span class="sxs-lookup"><span data-stu-id="ee389-127">Required.</span></span> |
+| <span data-ttu-id="fe9c8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="fe9c8-122">Authorization</span></span> | <span data-ttu-id="fe9c8-123">string</span><span class="sxs-lookup"><span data-stu-id="fe9c8-123">string</span></span> | <span data-ttu-id="fe9c8-124">持有者令牌</span><span class="sxs-lookup"><span data-stu-id="fe9c8-124">Bearer \{token\}.</span></span> <span data-ttu-id="fe9c8-125">必需。</span><span class="sxs-lookup"><span data-stu-id="fe9c8-125">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ee389-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="ee389-128">Request body</span></span>
-<span data-ttu-id="ee389-129">应提供没有请求正文。</span><span class="sxs-lookup"><span data-stu-id="ee389-129">No request body should be supplied.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fe9c8-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="fe9c8-126">Request body</span></span>
+<span data-ttu-id="fe9c8-127">应提供没有请求正文。</span><span class="sxs-lookup"><span data-stu-id="fe9c8-127">No request body should be supplied.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ee389-130">响应</span><span class="sxs-lookup"><span data-stu-id="ee389-130">Response</span></span>
-<span data-ttu-id="ee389-131">如果成功，此方法返回`200, OK`响应代码和在响应正文中，为其呼叫用户是分配给审阅者[accessReviewDecision](../resources/accessreviewdecision.md)对象的数组。</span><span class="sxs-lookup"><span data-stu-id="ee389-131">If successful, this method returns a `200, OK` response code and an array of [accessReviewDecision](../resources/accessreviewdecision.md) objects in the response body, for which the calling user is an assigned reviewer.</span></span>
+## <a name="response"></a><span data-ttu-id="fe9c8-128">响应</span><span class="sxs-lookup"><span data-stu-id="fe9c8-128">Response</span></span>
+<span data-ttu-id="fe9c8-129">如果成功，此方法返回`200, OK`响应代码和在响应正文中，为其呼叫用户是分配给审阅者[accessReviewDecision](../resources/accessreviewdecision.md)对象的数组。</span><span class="sxs-lookup"><span data-stu-id="fe9c8-129">If successful, this method returns a `200, OK` response code and an array of [accessReviewDecision](../resources/accessreviewdecision.md) objects in the response body, for which the calling user is an assigned reviewer.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ee389-132">示例</span><span class="sxs-lookup"><span data-stu-id="ee389-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ee389-133">请求</span><span class="sxs-lookup"><span data-stu-id="ee389-133">Request</span></span>
+## <a name="example"></a><span data-ttu-id="fe9c8-130">示例</span><span class="sxs-lookup"><span data-stu-id="fe9c8-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fe9c8-131">请求</span><span class="sxs-lookup"><span data-stu-id="fe9c8-131">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -52,8 +52,8 @@ GET /accessReviews('{reviewId}')/myDecisions
 GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fec466a82d')/myDecisions
 ```
 
-##### <a name="response"></a><span data-ttu-id="ee389-134">响应</span><span class="sxs-lookup"><span data-stu-id="ee389-134">Response</span></span>
-><span data-ttu-id="ee389-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ee389-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fe9c8-132">响应</span><span class="sxs-lookup"><span data-stu-id="fe9c8-132">Response</span></span>
+><span data-ttu-id="fe9c8-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="fe9c8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -77,18 +77,23 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="ee389-137">另请参阅</span><span class="sxs-lookup"><span data-stu-id="ee389-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fe9c8-135">另请参阅</span><span class="sxs-lookup"><span data-stu-id="fe9c8-135">See also</span></span>
 
-| <span data-ttu-id="ee389-138">方法</span><span class="sxs-lookup"><span data-stu-id="ee389-138">Method</span></span>           | <span data-ttu-id="ee389-139">返回类型</span><span class="sxs-lookup"><span data-stu-id="ee389-139">Return Type</span></span>    |<span data-ttu-id="ee389-140">说明</span><span class="sxs-lookup"><span data-stu-id="ee389-140">Description</span></span>|
+| <span data-ttu-id="fe9c8-136">方法</span><span class="sxs-lookup"><span data-stu-id="fe9c8-136">Method</span></span>           | <span data-ttu-id="fe9c8-137">返回类型</span><span class="sxs-lookup"><span data-stu-id="fe9c8-137">Return Type</span></span>    |<span data-ttu-id="fe9c8-138">说明</span><span class="sxs-lookup"><span data-stu-id="fe9c8-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="ee389-141">获取 accessReview</span><span class="sxs-lookup"><span data-stu-id="ee389-141">Get accessReview</span></span>](accessreview-get.md) |  [<span data-ttu-id="ee389-142">accessReview</span><span class="sxs-lookup"><span data-stu-id="ee389-142">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="ee389-143">检索访问审阅。</span><span class="sxs-lookup"><span data-stu-id="ee389-143">Retrieve an access review.</span></span> |
-|[<span data-ttu-id="ee389-144">列表 accessReview 决策</span><span class="sxs-lookup"><span data-stu-id="ee389-144">List accessReview decisions</span></span>](accessreview-listdecisions.md) |     <span data-ttu-id="ee389-145">[accessReviewDecision](../resources/accessreviewdecision.md)集合</span><span class="sxs-lookup"><span data-stu-id="ee389-145">[accessReviewDecision](../resources/accessreviewdecision.md) collection</span></span>|    <span data-ttu-id="ee389-146">检索所有 accessReview 的决策。</span><span class="sxs-lookup"><span data-stu-id="ee389-146">Retrieve all the decisions of an accessReview.</span></span>|
+|[<span data-ttu-id="fe9c8-139">获取 accessReview</span><span class="sxs-lookup"><span data-stu-id="fe9c8-139">Get accessReview</span></span>](accessreview-get.md) |  [<span data-ttu-id="fe9c8-140">accessReview</span><span class="sxs-lookup"><span data-stu-id="fe9c8-140">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="fe9c8-141">检索访问审阅。</span><span class="sxs-lookup"><span data-stu-id="fe9c8-141">Retrieve an access review.</span></span> |
+|[<span data-ttu-id="fe9c8-142">列表 accessReview 决策</span><span class="sxs-lookup"><span data-stu-id="fe9c8-142">List accessReview decisions</span></span>](accessreview-listdecisions.md) |     <span data-ttu-id="fe9c8-143">[accessReviewDecision](../resources/accessreviewdecision.md)集合</span><span class="sxs-lookup"><span data-stu-id="fe9c8-143">[accessReviewDecision](../resources/accessreviewdecision.md) collection</span></span>|    <span data-ttu-id="fe9c8-144">检索所有 accessReview 的决策。</span><span class="sxs-lookup"><span data-stu-id="fe9c8-144">Retrieve all the decisions of an accessReview.</span></span>|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get accessReview decisions",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listmydecisions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
