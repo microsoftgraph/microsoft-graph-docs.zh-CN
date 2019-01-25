@@ -1,19 +1,19 @@
 ---
 title: 表资源类型
-description: 表示一个 Excel 表。
+description: 表示 Excel 表格。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7d1f6debdbdab3047d55bebe6fc5ec848adcb832
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2e3e9c93f7459d666fbe7f28a67241c2831b7079
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956988"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510664"
 ---
 # <a name="table-resource-type"></a>表资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示一个 Excel 表。
 
@@ -21,27 +21,27 @@ ms.locfileid: "27956988"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取表](../api/table-get.md) | [表](table.md) |读取 table 对象的属性和关系。|
-|[创建 TableColumn](../api/table-post-columns.md) |[TableColumn](tablecolumn.md)| 通过发布到列集合创建新的 TableColumn。|
-|[列出列](../api/table-list-columns.md) |[TableColumn](tablecolumn.md) 集合| 获取 TableColumn 对象的集合。|
-|[创建 TableRow](../api/table-post-rows.md) |[TableRow](tablerow.md)| 通过发布到行集合创建新的 TableRow。|
-|[创建行](../api/table-list-rows.md) |[TableRow](tablerow.md) 集合| 获取 TableRow 对象的集合。|
-|[更新](../api/table-update.md) | [表](table.md)   |更新 Table 对象。 |
+|[Get Table](../api/table-get.md) | [Table](table.md) |读取 table 对象的属性和关系。|
+|[Create TableColumn](../api/table-post-columns.md) |[TableColumn](tablecolumn.md)| 通过发布到列集合创建新的 TableColumn。|
+|[List columns](../api/table-list-columns.md) |[TableColumn](tablecolumn.md) 集合| 获取 TableColumn 对象的集合。|
+|[Create TableRow](../api/table-post-rows.md) |[TableRow](tablerow.md)| 通过发布到行集合创建新的 TableRow。|
+|[List rows](../api/table-list-rows.md) |[TableRow](tablerow.md) 集合| 获取 TableRow 对象的集合。|
+|[Update](../api/table-update.md) | [Table](table.md)   |更新 Table 对象。 |
 |[Databodyrange](../api/table-databodyrange.md)|[区域](range.md)|获取与表的数据体相关的 range 对象。|
 |[Headerrowrange](../api/table-headerrowrange.md)|[区域](range.md)|获取与表的标头行相关的 range 对象。|
-|[区域](../api/table-range.md)|[Range](range.md)|获取与整个表相关的 range 对象。|
+|[区域](../api/table-range.md)|[区域](range.md)|获取与整个表相关的 range 对象。|
 |[Totalrowrange](../api/table-totalrowrange.md)|[区域](range.md)|获取与表的总计行相关的 range 对象。|
 |[Clearfilters](../api/table-clearfilters.md)|无|清除当前表上应用的所有筛选器。|
 |[Converttorange](../api/table-converttorange.md)|[区域](range.md)|将表转换为普通单元格区域。保留所有数据。|
 |[删除](../api/table-delete.md)|无|删除表。|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|无|重新应用当前表上的所有筛选器。|
-|[列出](../api/table-list.md) | [表](table.md) 集合 |获取 table 对象集合。 |
-|[添加](../api/tablecollection-add.md)|[表](table.md)|创建一个新表。区域源地址确定将在其下添加表的工作表。如果无法添加表（例如，由于地址无效，或者表与另一个表重叠），将抛出错误。|
+|[List](../api/table-list.md) | [表](table.md) 集合 |获取 table 对象的集合。 |
+|[Add](../api/tablecollection-add.md)|[表](table.md)|创建一个新表。区域源地址确定将在其下添加表的工作表。如果无法添加表（例如，由于地址无效，或者表与另一个表重叠），将抛出错误。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|ID|string|返回用于唯一标识指定工作簿中表的值。 即使表被重命名，标识符的值仍保持不变。 应将此属性解析为不透明的字符串值，不得将它解析为其他任何类型。 只读。|
+|id|string|返回用于唯一标识指定工作簿中表的值。 即使表被重命名，标识符的值仍保持不变。 应将此属性解析为不透明的字符串值，不得将它解析为其他任何类型。 只读。|
 |name|string|表的名称。|
 |showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
 |showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
@@ -53,7 +53,7 @@ ms.locfileid: "27956988"
 |showFilterButton|Boolean|指明是否在每个列标题的顶部显示筛选器按钮。仅当 table 中包含标题行时，才允许设定此设置。   |
 |legacyId|String|旧版 Excel 客户端中使用的旧 ID。 即使表格已重命名，标识符值也仍保持不变。 应将此属性解析为不透明的字符串值，不得将它解析为其他任何类型。 只读。   |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |columns|[TableColumn](tablecolumn.md) 集合|表示表中所有列的集合。只读。|
@@ -92,10 +92,15 @@ ms.locfileid: "27956988"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Table resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/table.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

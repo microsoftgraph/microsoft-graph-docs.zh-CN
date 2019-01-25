@@ -4,16 +4,16 @@ description: '**plannerTask** 资源表示 Office 365 中的规划器任务。�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 217e26036123ddef780acb3679ddcf42be502234
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2313b31e0a962f27fa728af8c8953b646210397a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972906"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511210"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **plannerTask** 资源表示 Office 365 中的规划器任务。规划器任务包含在[计划](plannerplan.md)内，可以分配给计划中的[存储桶](plannerbucket.md)。每个任务对象具有可以包含此任务的更多信息的 [details](plannertaskdetails.md) 对象。请参阅[概述](planner-overview.md)了解有关组、计划和任务之间的关系的详细信息。
 
@@ -31,9 +31,9 @@ ms.locfileid: "27972906"
 |:---------------|:--------|:----------|
 |activeChecklistItemCount|Int32|核对清单项的数量，其值设置为“false”，表示项目不全。|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|此任务已应用的类别。有关可能的值，请参阅[已应用的类别](plannerappliedcategories.md)。|
-|assigneePriority|String|提示用于为列表视图中的此类项目排序。[此处](planner-order-hint-format.md)概述了此格式。|
+|assigneePriority|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |assignments|[plannerAssignments](plannerassignments.md)|被分配任务的接受者集合。|
-|bucketId|字符串|任务所属的地址散列表元 ID。 地址散列表元需要在计划中的任务。 它是 28 字符长度和区分大小写。 服务上执行[格式验证](tasks-identifiers-disclaimer.md)。 |
+|bucketId|String|任务所属的地址散列表元 ID。 地址散列表元需要在计划中的任务。 它是 28 字符长度和区分大小写。 服务上执行[格式验证](tasks-identifiers-disclaimer.md)。 |
 |checklistItemCount|Int32|任务上存在的核对清单项的数目。|
 |completedBy|[identitySet](identityset.md)|完成任务的用户的身份。|
 |completedDateTime|DateTimeOffset|只读。任务的 `'percentComplete'` 被设置为 `'100'` 的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
@@ -99,10 +99,15 @@ ms.locfileid: "27972906"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerTask resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannertask.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

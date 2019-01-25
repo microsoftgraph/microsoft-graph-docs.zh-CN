@@ -4,16 +4,16 @@ description: 重定向传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 20470a57358caea08116bbacf6348d659d0d3636
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a6a926aa082cc35896d11ec4124091b0d2c838c0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921722"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511987"
 ---
 # <a name="call-redirect"></a>呼叫： 重定向
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 重定向传入呼叫。
 
@@ -43,14 +43,14 @@ POST /applications/{id}/calls/{id}/redirect
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|目标|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。|
-|targetDisposition|字符串|可能的值是：`default`|
+|Targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。|
+|targetDisposition|String|可能的值是：`default`|
 |timeout|Int32|超时的重定向操作的秒数。|
-|maskCallee|布尔|指示是否屏蔽被叫方。|
-|maskCaller|布尔|指示是否屏蔽呼叫者。|
+|maskCallee|Boolean|指示是否屏蔽被叫方。|
+|maskCaller|Boolean|指示是否屏蔽呼叫者。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码
+返回响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -260,10 +260,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: redirect",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-redirect.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

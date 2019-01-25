@@ -2,16 +2,16 @@
 title: extensionSchemaProperty 资源类型
 description: 使用 **extensionSchemaProperty** 资源将属性的名称及其类型定义为 schemaExtension 定义的一部分。
 localization_priority: Normal
-ms.openlocfilehash: 44769bab4a4f4b40a80d896bed2311554ea5e8ad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: bb044aa2f85ea5accdba4ed43a1a5b1c856a209d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889857"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511504"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用 **extensionSchemaProperty** 资源将属性的名称及其类型定义为 [schemaExtension](schemaextension.md) 定义的一部分。
 
@@ -19,7 +19,7 @@ ms.locfileid: "27889857"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|name|字符串| 架构扩展的一部分定义的强类型属性的名称。|
+|name|String| 架构扩展的一部分定义的强类型属性的名称。|
 |type|String| 被定义为架构扩展组成部分的属性的类型。允许的值为 *Binary、Boolean、DateTime、Integer* 或 *String*。请参阅下表获取更多详细信息。|
 
 #### <a name="supported-property-data-types"></a>受支持的属性数据类型 
@@ -54,10 +54,15 @@ ms.locfileid: "27889857"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "extensionSchemaProperty resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/extensionschemaproperty.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

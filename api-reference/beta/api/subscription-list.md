@@ -3,27 +3,27 @@ title: 列表订阅
 description: " 请参阅下面的方案的详细信息。"
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: e7b6c618c35aa9952673b79f238777a71bc41f6a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 20aad712bc49f91bec58a67c0c66ef76bf4653e2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928778"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510979"
 ---
 # <a name="list-subscriptions"></a>列表订阅
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 webhook 订阅的列表。 将响应的内容取决于的上下文中调用应用程序;请参阅下面的方案的详细信息。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 此 API 支持以下权限范围;若要了解详细信息，包括如何选择权限，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型  | 权限（从最低特权到最高特权）  |
 |:---------------- |:-------------------------------------------- |
-| [委派](/graph/auth-v2-user)（工作或学校帐户） | [创建订阅](subscription-post-subscriptions.md)或 Subscription.Read.All （见下文） 所需的权限。 |
-| [委派](/graph/auth-v2-user)（个人 Microsoft 帐户） | [创建订阅](subscription-post-subscriptions.md)或 Subscription.Read.All （见下文） 所需的权限。 |
+| 委派（工作或学校帐户） | [创建订阅](subscription-post-subscriptions.md)或 Subscription.Read.All （见下文） 所需的权限。 |
+| 委派（个人 Microsoft 帐户） | [创建订阅](subscription-post-subscriptions.md)或 Subscription.Read.All （见下文） 所需的权限。 |
 | [Application](/graph/auth-v2-service) | [创建订阅](subscription-post-subscriptions.md)所需的权限。 |
 
 响应结果基于调用应用程序的上下文。 以下是常见方案的摘要：
@@ -34,8 +34,8 @@ ms.locfileid: "27928778"
 
 | 调用应用程序的上下文 | 响应中包含 |
 |:-----|:---------------- |
-| 应用程序代表登录用户 （委派权限） 调用。 <br/>-和-<br/>应用程序具有到[创建订阅，](subscription-post-subscriptions.md)所需的原始权限。<br/><br/>注意： 这适用于个人 Microsoft 帐户和工作/学校帐户。 | 创建的**此应用程序**的已登录的用户的订阅。 |
-| 应用程序调用代表本身 （应用程序的权限）。<br/>-和-<br/>应用程序具有到[创建订阅，](subscription-post-subscriptions.md)所需的原始权限。<br/><br/>注意： 这适用于工作/学校仅帐户。| 创建**此**应用程序本身或目录中的任何用户的订阅。|
+| 应用程序代表登录用户 （委派权限） 调用。 <br/>And<br/>应用程序具有到[创建订阅，](subscription-post-subscriptions.md)所需的原始权限。<br/><br/>注意： 这适用于个人 Microsoft 帐户和工作/学校帐户。 | 创建的**此应用程序**的已登录的用户的订阅。 |
+| 应用程序调用代表本身 （应用程序的权限）。<br/>And<br/>应用程序具有到[创建订阅，](subscription-post-subscriptions.md)所需的原始权限。<br/><br/>注意： 这适用于工作/学校仅帐户。| 创建**此**应用程序本身或目录中的任何用户的订阅。|
 
 ### <a name="advanced-scenarios"></a>高级的方案
 
@@ -44,8 +44,8 @@ ms.locfileid: "27928778"
 
 | 调用应用程序的上下文 | 响应中包含 |
 |:-----|:---------------- |
-| 应用程序代表登录用户 （委派权限） 调用。 *用户在处于非管理员*。 <br/>-和-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意： 这适用于个人 Microsoft 帐户和工作/学校帐户。 | 创建的**任何应用程序**的已登录的用户的订阅。 |
-| 应用程序代表登录用户 （委派权限） 调用。 *用户是管理员*。<br/>-和-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意： 这适用于工作/学校仅帐户。 | 创建的**任何应用程序**目录中的**任何用户**的订阅。|
+| 应用程序代表登录用户 （委派权限） 调用。 *用户在处于非管理员*。 <br/>And<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意： 这适用于个人 Microsoft 帐户和工作/学校帐户。 | 创建的**任何应用程序**的已登录的用户的订阅。 |
+| 应用程序代表登录用户 （委派权限） 调用。 *用户是管理员*。<br/>And<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意： 这适用于工作/学校仅帐户。 | 创建的**任何应用程序**目录中的**任何用户**的订阅。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -121,12 +121,17 @@ Content-length: 586
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List subscriptions",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 请求返回的数据的多个页面，响应中包括`@odata.nextLink`属性可帮助您管理结果。  若要了解详细信息，请参阅[分页 Microsoft Graph 应用程序中的数据](/graph/paging)。

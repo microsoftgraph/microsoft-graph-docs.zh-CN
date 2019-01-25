@@ -1,17 +1,17 @@
 ---
 title: 更新 secureScoreControlProfiles
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: 更新中更改各种属性，如 assignedTo 或 tenantNote 任何集成的解决方案的可编辑 secureScoreControlProfiles 属性。
 localization_priority: Normal
-ms.openlocfilehash: b89a5e147d4882dbe25456cd2acc42b56924d12b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817652"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510951"
 ---
 # <a name="update-securescorecontrolprofiles"></a>更新 secureScoreControlProfiles
 
- > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新中更改各种属性，如**assignedTo**或**tenantNote**任何集成的解决方案的可编辑**secureScoreControlProfiles**属性。
 
@@ -21,9 +21,9 @@ ms.locfileid: "27817652"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |   SecurityEvents.ReadWrite.All。  |
+|委派（工作或学校帐户） |   SecurityEvents.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | SecurityEvents.ReadWrite.All。 |
+|应用程序 | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -44,11 +44,11 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 下表列出了可以为 secureScoreControlProfile 更新字段。 不包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性   | 类型 |Description|
+| 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|assignedTo|字符串|分析师控件的名称分配给进行会审、 实施或修复。|
-|tenantNote|字符串|分析师评论 （用于客户控件管理） 的控件。|
-|controlStateUpdates| 字符串|分析师驱动控件上的设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
+|AssignedTo|String|分析师控件的名称分配给进行会审、 实施或修复。|
+|tenantNote|String|分析师评论 （用于客户控件管理） 的控件。|
+|controlStateUpdates| String|分析师驱动控件上的设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
 
 
 ## <a name="response"></a>响应
@@ -80,7 +80,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-以下是响应的成功的示例。
+下面是成功响应的示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,10 +94,15 @@ HTTP/1.1 204 No Content
 
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

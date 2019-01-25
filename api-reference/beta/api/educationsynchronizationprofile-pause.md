@@ -4,16 +4,16 @@ description: 暂停租户中的特定学校数据同步配置文件的同步。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 4979ed19c9a01d6a7ff2d43f7f3755d03b4b070c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5c9ba7d2ab3f67880105d45d9d98506b8e8caaac
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950681"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510930"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>在 educationSynchronizationProfile 暂停同步
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 暂停的租户特定的学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)同步。
 
@@ -23,7 +23,7 @@ ms.locfileid: "27950681"
 | 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派 （个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -64,3 +64,11 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/pau
 ```
 HTTP/1.1 200 OK
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-pause.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

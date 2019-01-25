@@ -2,16 +2,16 @@
 title: identityProvider 资源类型
 description: 代表 Azure Active Directory (Azure AD) 标识提供程序。 Microsoft、 Google、 Facebook、 Amazon 或 LinkedIn，可以是标识提供程序。
 localization_priority: Normal
-ms.openlocfilehash: 0a465b1c7b4ad7f74e6357e77da3692d64294e7e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: afd21635d932582f2a9ee6c2cde1cf45a9d4260f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858539"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511616"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表 Azure Active Directory (Azure AD) 标识提供程序。 Microsoft、 Google、 Facebook、 Amazon 或 LinkedIn，可以是标识提供程序。
 
@@ -34,13 +34,13 @@ Azure AD 租户中配置的身份提供程序使未来 B2B 来宾方案。 例�
 
 ## <a name="properties"></a>属性
 
-|属性|类型|是否必需|可为 Null|说明|
+|属性|类型|必需|可为 Null|说明|
 |:---------------|:--------|:--------|:--------|:----------|
 |clientId|字符串|是|否|应用程序的客户端 ID。 这是注册的标识提供程序的应用程序时所获得的客户端 ID。|
-|clientSecret|字符串|是|否|应用程序客户端机密。 这是注册的标识提供程序的应用程序时所获得的客户端机密。 这是只写。 读取的操作将返回"\*\*\*\*"。|
+|client_secret|字符串|是|否|应用程序客户端机密。 这是注册的标识提供程序的应用程序时所获得的客户端机密。 这是只写。 读取的操作将返回"\*\*\*\*"。|
 |id|字符串|否|否|标识提供程序的 ID。|
-|name|字符串|否|否|标识提供程序的显示名称。|
-|type|字符串|是|否|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|name|String|否|否|标识提供程序的显示名称。|
+|type|String|是|否|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>了解客户端 ID 和机密
 
@@ -64,3 +64,11 @@ Azure AD 租户中配置的身份提供程序使未来 B2B 来宾方案。 例�
     "clientSecret": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/identityprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

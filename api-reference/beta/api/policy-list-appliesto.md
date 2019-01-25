@@ -2,16 +2,16 @@
 title: 列表应用程序和服务与特定的策略分配的安全主体
 description: 检索与指定的策略分配的应用程序和服务主体对象。
 localization_priority: Normal
-ms.openlocfilehash: 21a5a9ba4260e306553f53866657a482d814b5f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d7449428216a2e68d9ab8bb8399ca0e8dc4b72fd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875605"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510475"
 ---
 # <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>列表应用程序和服务与特定的策略分配的安全主体
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索与指定的策略分配的[应用程序](../resources/application.md)和[服务主体](../resources/serviceprincipal.md)对象。
 
@@ -75,3 +75,11 @@ Content-Type: application/json
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-list-appliesto.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

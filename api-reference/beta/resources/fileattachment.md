@@ -2,16 +2,16 @@
 title: fileAttachment 资源类型
 description: 附加到事件，文件 （如文本文件或 Word 文档中）
 localization_priority: Normal
-ms.openlocfilehash: 7f7270bd5392e2d880daeb45491f4c65e9fca198
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7032bcd234d07f0f3fdce0787968d72530a0a442
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869277"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510762"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 附加到[事件](../resources/event.md)、[消息](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[发布](../resources/post.md)（如文本文件或 Word 文档） 的文件。 **ContentBytes**属性将包含 base64 编码的文件的内容。  
 
@@ -36,13 +36,13 @@ ms.locfileid: "27869277"
 |contentId|String|获取 Exchange 存储中的附件 ID。|
 |contentLocation|String|对应于附件内容所在位置的统一资源标识符 (URI)。|
 |contentType|String|附件的内容类型。|
-|id|String|附件 ID。|
-|isInline|布尔|如果是内嵌附件则设置为 true。|
+|id|字串符号|附件 ID。|
+|isInline|Boolean|如果是内嵌附件则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的日期和时间。|
 |name|String|表示显示在表示嵌入的附件的图标下方的文本的名称。该名称不必是实际的文件名。|
 |size|Int32|附件大小，以字节为单位。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 
@@ -75,10 +75,15 @@ ms.locfileid: "27869277"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "fileAttachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/fileattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

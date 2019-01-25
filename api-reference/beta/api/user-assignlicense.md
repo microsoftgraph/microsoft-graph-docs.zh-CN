@@ -4,16 +4,16 @@ description: 添加或删除的用户启用或禁用 Microsoft 云服务及其�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 82347f46855baa91b5a42452cdbacc914bc89cdd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d15202d24148b2f75bd857500117a4f97b61fe51
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933790"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510496"
 ---
 # <a name="assignlicense"></a>assignLicense
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 添加或删除的用户启用或禁用 Microsoft 云服务及其使用的许可证。 例如，组织可以有 100 许可证，与 Office 365 企业版 E3 订阅，此请求将一个这些许可证分配给特定用户。 您还可以启用和禁用与订阅关联的特定计划。 若要了解有关订阅和许可证的详细信息，请参阅以下[Technet 文章](https://technet.microsoft.com/en-us/library/mt765146.aspx)。
 
@@ -44,7 +44,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|指定要添加的许可证的[assignedLicense](../resources/assignedlicense.md)对象的集合。 您可以禁用 servicePlans 通过[assignedLicense](../resources/assignedlicense.md)对象上设置**disabledPlans**属性与许可相关联。|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) 集合|指定要添加的许可证的[assignedLicense](../resources/assignedlicense.md)对象的集合。 您可以禁用 servicePlans 通过[assignedLicense](../resources/assignedlicense.md)对象上设置**disabledPlans**属性与许可相关联。|
 |removeLicenses|Guid|标识要删除的许可证的 skuIds 的集合。|
 
 ## <a name="response"></a>响应
@@ -131,10 +131,15 @@ Content-length: 491
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: assignLicense",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-assignlicense.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

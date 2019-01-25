@@ -2,16 +2,16 @@
 title: 'privilegedRoleAssignment: makePermanent'
 description: 请为永久的角色分配。
 localization_priority: Normal
-ms.openlocfilehash: c2c834454f7c6c7bd931b6985f5b35b92e48096d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 9c6334662cf8496262b49b14ceb3f51f7a4f8dbc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849691"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511392"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 请为永久的角色分配。
 
@@ -41,7 +41,7 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |原因|string|可选。 若要使此呼叫原因。|
 |ticketNumber|string|可选。 与此操作关联的票证数。|
@@ -95,10 +95,15 @@ Content-length: 184
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleAssignment: makePermanent",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignment-makepermanent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/12/2018
 title: AccessAction
 localization_priority: Normal
-ms.openlocfilehash: 39a9c9d568d781c44cf7f8a06b2927a034684cf4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: bef6444fd42080c6f5b7cdabb69dbe9a50bab8d6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805080"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511518"
 ---
 # <a name="accessaction-resource-type"></a>accessAction 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 上[**itemActivity**] **accessAction**资源的状态[activity]指示活动的正访问项。
 
@@ -39,12 +39,15 @@ ms.locfileid: "27805080"
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The AccessAction object provides information about accesses of an item.",
   "keywords": "activities,activity,action,access",
   "section": "documentation",
+  "tocPath": "Resources/AccessAction",
   "suppressions": [
-  ],
-  "tocPath": "Resources/AccessAction"
-} -->
+    "Error: /api-reference/beta/resources/accessaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

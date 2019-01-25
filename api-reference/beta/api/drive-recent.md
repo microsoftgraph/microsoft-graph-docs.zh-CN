@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: 列出最近使用的文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d99caa91bc0b5d7140d3628db42955e558de3598
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 600db7e3f654ebaf0f8168c9fe74b82c58abf087
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915399"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510937"
 ---
 # <a name="list-recent-files"></a>列出最近使用的文件
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出已登录用户最近使用的一组项目。此集合包含用户驱动器中的项目，以及他们有从其他驱动器进行访问的权限的项目。
 
@@ -87,7 +87,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>注解
 
 从**最近**操作返回的部分 driveItem 将包括 **remoteItem** 方面，这表明它们是其他驱动器中的项目。若要访问原始的 driveItem 对象，你将需要使用 **remoteItem** 中提供的信息发出请求，信息格式如下：
 
@@ -97,10 +97,15 @@ Content-Type: application/json
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Retrieve a list of recently used files for the owner of the drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "Drives/Recent files"
-} -->
+  "tocPath": "Drives/Recent files",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-recent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

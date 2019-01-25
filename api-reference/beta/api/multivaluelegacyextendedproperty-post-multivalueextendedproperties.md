@@ -2,16 +2,16 @@
 title: 创建多值扩展属性
 description: '在新建或现有的资源实例中创建一个或多个多值扩展属性。 '
 localization_priority: Normal
-ms.openlocfilehash: 54be6f428ac5d7b604093fdad3a03b48b89243a0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ba54bc3de2eb80fd7283f1a313448b77a04bbe4d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863047"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510867"
 ---
 # <a name="create-multi-value-extended-property"></a>创建多值扩展属性
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在新建或现有的资源实例中创建一个或多个多值扩展属性。 
 
@@ -20,7 +20,7 @@ ms.locfileid: "27863047"
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [事件](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [Outlook 任务](../resources/outlooktask.md)
@@ -270,13 +270,18 @@ Content-Type: application/json
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a single-value extended property",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 
 

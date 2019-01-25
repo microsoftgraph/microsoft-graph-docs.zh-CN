@@ -2,16 +2,16 @@
 title: 创建 programControl
 description: Azure AD 中访问审阅功能，创建一个新的 programControl 对象。  这会链接到程序访问审阅。
 localization_priority: Normal
-ms.openlocfilehash: 4dfbb76244a41867b8a57faa42f63dc728f59136
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 89e31994ea91dba68e2f4563c64eeab53dd4db93
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851532"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511112"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中创建新的[programControl](../resources/programcontrol.md)对象。  这会链接到程序访问审阅。
 
@@ -39,14 +39,14 @@ POST /programControls
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必填。 |
+| Authorization | string | 持有者令牌 必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
 
 下表显示时创建一个程序控件所需的属性。
 
-| 属性     | 类型        | Description |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | `programId`              |`String`                | 程序 programId 此控件将变得的一部分。                             |
 | `controlId`              |`String`                | 控件的 controlId，尤其要指出的访问的标识符查看。                                                |
@@ -104,10 +104,15 @@ Content-type: application/json
 |[列表 programControlTypes](../api/programcontroltype-list.md) | [programControlType](../resources/programcontroltype.md)集合| 列出程序控件类型。 |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create programControl",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

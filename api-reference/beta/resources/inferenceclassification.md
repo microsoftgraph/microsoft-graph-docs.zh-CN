@@ -2,16 +2,16 @@
 title: inferenceClassification 资源类型
 description: '用户邮件分类，确保仅关注对用户更相关或更重要的邮件。 '
 localization_priority: Normal
-ms.openlocfilehash: 82d16e24e21231b8ec168eda793257ef780c2219
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f06177db9907deb3be38c2cdab82669764503cd6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877789"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510412"
 ---
 # <a name="inferenceclassification-resource-type"></a>inferenceClassification 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 用户邮件分类，确保仅关注对用户更相关或更重要的邮件。 
 
@@ -22,18 +22,18 @@ ms.locfileid: "27877789"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[创建 inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md)| 创建由 SMTP 地址识别的发件人的替代。将以后来自该 SMTP 地址的邮件一致归为替代中指定的类别。|
-|[列出替代](../api/inferenceclassification-list-overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md) 集合| 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的替代。|
+|创建 inferenceClassificationOverride |[inferenceClassificationOverride](inferenceclassificationoverride.md)| 创建由 SMTP 地址识别的发件人的替代。将以后来自该 SMTP 地址的邮件一致归为替代中指定的类别。|
+|列出替代 |inferenceClassificationOverride 集合| 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的替代。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|ID|string| 只读。|
+|id|string| 只读。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|替代|[inferenceClassificationOverride](inferenceclassificationoverride.md) 集合| 用户始终按某种方式（`focused` 或 `other`）对来自特定发件人的邮件分类的一组替代。只读。可为 null。|
+|替代|inferenceClassificationOverride 集合| 用户始终按某种方式（`focused` 或 `other`）对来自特定发件人的邮件分类的一组替代。只读。可为 null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,10 +56,15 @@ ms.locfileid: "27877789"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "inferenceClassification resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/inferenceclassification.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

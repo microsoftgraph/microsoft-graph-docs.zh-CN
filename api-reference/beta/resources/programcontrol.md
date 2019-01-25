@@ -2,16 +2,16 @@
 title: programControl 资源类型
 description: 在 Azure AD 中访问审阅功能，程序 control 对象代表链接到程序访问审阅的一个控件。
 localization_priority: Normal
-ms.openlocfilehash: ddf6e978277ca1801f9126597ac4b3561fe5bfb7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817820"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511413"
 ---
 # <a name="programcontrol-resource-type"></a>programControl 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 Azure AD[访问审阅](accessreviews-root.md)功能中，程序控件对象表示的控件，将访问审阅链接到一个程序。
 
@@ -24,7 +24,7 @@ ms.locfileid: "27817820"
 |[删除 programControl](../api/programcontrol-delete.md) |     无。   |   从某个程序中删除 programControl。|
 |[列表 programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md)集合| 在租户中的所有程序列表控件中。|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -33,7 +33,7 @@ ms.locfileid: "27817820"
 |应用程序                            | 不支持。 |
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | 功能指派的标识符的程序和控件之间的链接                                      |
 | `programId`              |`String`                | 程序 programId 此控件是组成部分。 所需在创建。                            |
@@ -45,8 +45,8 @@ ms.locfileid: "27817820"
 | `owner`                  |[userIdentity](useridentity.md)   | 创建程序控制的用户。                                               |
 | `resource`               |`programResource`       | 资源、 组或应用程序，此程序控制访问审阅的目标。                   |
 
-## <a name="relationships"></a>Relationships
-| 关系 | 类型   |Description|
+## <a name="relationships"></a>关系
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 | `program`                |[程序](program.md)               | 此控件属于该程序。                                                |
 
@@ -90,15 +90,20 @@ ms.locfileid: "27817820"
 
 此类型继承自`microsoft.graph.identity`，并且具有一个附加属性：
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | `type`               |`String`  | 资源，指明它一组或应用程序的类型。 |     
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "programControl resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/programcontrol.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

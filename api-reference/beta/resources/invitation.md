@@ -4,16 +4,16 @@ description: '使用邀请管理器来创建一个邀请，以将外部用户添
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 72ff2ca13a0de314697961504da9a4203afdb2b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6f303e55735c24edc46cb7107d9541c4b20c479a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981047"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511511"
 ---
 # <a name="invitation-manager"></a>邀请管理器
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用邀请管理器来创建一个邀请，以将外部用户添加到组织。 
 
@@ -36,13 +36,13 @@ ms.locfileid: "27981047"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|被邀请的用户的显示名称。|
-|invitedUserEmailAddress|字符串|被邀请的用户的电子邮件地址。必填。|
+|invitedUserEmailAddress|String|被邀请的用户的电子邮件地址。必填。|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
 |sendInvitationMessage|Boolean|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
 |inviteRedirectUrl|String|兑现邀请后，用户应被重定向至的 URL。必填。|
 |inviteRedeemUrl|String|用户可用于兑现邀请的 URL。只读|
-|invitedUserType|字符串|被邀请的用户的 userType。默认情况下，此值为“来宾”。如果你是公司管理员，则可以以“成员”身份进行邀请。 |
-|status|字符串|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
+|invitedUserType|String|被邀请的用户的 userType。默认情况下，此值为“来宾”。如果你是公司管理员，则可以以“成员”身份进行邀请。 |
+|status|String|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -70,10 +70,15 @@ ms.locfileid: "27981047"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2016-22-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "invitation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/invitation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

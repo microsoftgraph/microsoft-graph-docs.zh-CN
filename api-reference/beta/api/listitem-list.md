@@ -5,20 +5,20 @@ ms.date: 09/11/2017
 title: 检索 SharePoint 列表中的项
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5da54754567fdaf3517b551aa41e25e8273d596f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c96577782218a96952855147702fc6ecddab6652
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958248"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510398"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取[列表][]中[项][item]的集合。
 
-[列表]: ../resources/list.md
+[list]: ../resources/list.md
 [item]: ../resources/listitem.md
 
 ## <a name="permissions"></a>权限
@@ -87,10 +87,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Enumerate"
-} -->
+  "tocPath": "ListItem/Enumerate",
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitem-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

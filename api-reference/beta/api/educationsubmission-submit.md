@@ -4,16 +4,16 @@ description: 指示学生完成的工作，并且已准备好分配中分发操�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d1fd41c66e3f54898f6086a9bf14a0b53763df88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3f67e5b07ed1093ee63e9b6fdf7647fa6891dacc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915807"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510769"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission： 提交
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指示学生完成的工作，并且已准备好分配中分发操作。 仅可由学生执行此操作。 这将更改从"工作"到"提交"提交的状态。 在提交过程中，所有资源将都复制到 submittedResources 地址散列表元中。 教师将看评分的提交的资源列表。
 
@@ -69,10 +69,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSubmission: submit",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-submit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

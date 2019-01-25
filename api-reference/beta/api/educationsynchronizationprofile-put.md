@@ -4,16 +4,16 @@ description: 更新为租户中为现有学校数据同步配置文件属性。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 0c99984b4ca0d8d72fdc02d28a8de80761fdbd60
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 668aad65abe2c9b3d4609400118f9341748210f1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398735"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510573"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>更新 educationSynchronizationProfile
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新租户中的现有学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)属性。
 
@@ -23,7 +23,7 @@ ms.locfileid: "29398735"
 | 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派 （个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -32,7 +32,7 @@ ms.locfileid: "29398735"
 PUT /synchronizationProfiles
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
@@ -187,3 +187,11 @@ Content-type: application/json
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
