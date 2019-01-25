@@ -4,38 +4,43 @@ description: 封装图表系列的格式属性
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 96d3bc20ee227793ce43d089ae16411c602f5568
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 739da09fccc1d2c40b103397b8a10e91eab39fdf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959375"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527220"
 ---
-# <a name="chartseriesformat-resource-type"></a><span data-ttu-id="b3378-103">ChartSeriesFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="b3378-103">ChartSeriesFormat resource type</span></span>
+# <a name="chartseriesformat-resource-type"></a><span data-ttu-id="59f91-103">ChartSeriesFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="59f91-103">ChartSeriesFormat resource type</span></span>
 
-> <span data-ttu-id="b3378-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="b3378-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b3378-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="b3378-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b3378-106">封装图表系列的格式属性</span><span class="sxs-lookup"><span data-stu-id="b3378-106">encapsulates the format properties for the chart series</span></span>
+<span data-ttu-id="59f91-104">封装图表系列的格式属性</span><span class="sxs-lookup"><span data-stu-id="59f91-104">encapsulates the format properties for the chart series</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="b3378-107">方法</span><span class="sxs-lookup"><span data-stu-id="b3378-107">Methods</span></span>
-<span data-ttu-id="b3378-108">无</span><span class="sxs-lookup"><span data-stu-id="b3378-108">None</span></span>
+## <a name="methods"></a><span data-ttu-id="59f91-105">方法</span><span class="sxs-lookup"><span data-stu-id="59f91-105">Methods</span></span>
+<span data-ttu-id="59f91-106">无</span><span class="sxs-lookup"><span data-stu-id="59f91-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b3378-109">属性</span><span class="sxs-lookup"><span data-stu-id="b3378-109">Properties</span></span>
-<span data-ttu-id="b3378-110">无</span><span class="sxs-lookup"><span data-stu-id="b3378-110">None</span></span>
+## <a name="properties"></a><span data-ttu-id="59f91-107">属性</span><span class="sxs-lookup"><span data-stu-id="59f91-107">Properties</span></span>
+<span data-ttu-id="59f91-108">无</span><span class="sxs-lookup"><span data-stu-id="59f91-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="b3378-111">Relationships</span><span class="sxs-lookup"><span data-stu-id="b3378-111">Relationships</span></span>
-| <span data-ttu-id="b3378-112">关系</span><span class="sxs-lookup"><span data-stu-id="b3378-112">Relationship</span></span> | <span data-ttu-id="b3378-113">类型</span><span class="sxs-lookup"><span data-stu-id="b3378-113">Type</span></span>   |<span data-ttu-id="b3378-114">说明</span><span class="sxs-lookup"><span data-stu-id="b3378-114">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="59f91-109">关系</span><span class="sxs-lookup"><span data-stu-id="59f91-109">Relationships</span></span>
+| <span data-ttu-id="59f91-110">关系</span><span class="sxs-lookup"><span data-stu-id="59f91-110">Relationship</span></span> | <span data-ttu-id="59f91-111">类型</span><span class="sxs-lookup"><span data-stu-id="59f91-111">Type</span></span>   |<span data-ttu-id="59f91-112">说明</span><span class="sxs-lookup"><span data-stu-id="59f91-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b3378-115">fill</span><span class="sxs-lookup"><span data-stu-id="b3378-115">fill</span></span>|[<span data-ttu-id="b3378-116">ChartFill</span><span class="sxs-lookup"><span data-stu-id="b3378-116">ChartFill</span></span>](chartfill.md)|<span data-ttu-id="b3378-p102">表示图表系列的填充格式，包括背景格式信息。只读。</span><span class="sxs-lookup"><span data-stu-id="b3378-p102">Represents the fill format of a chart series, which includes background formating information. Read-only.</span></span>|
-|<span data-ttu-id="b3378-119">line</span><span class="sxs-lookup"><span data-stu-id="b3378-119">line</span></span>|[<span data-ttu-id="b3378-120">ChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="b3378-120">ChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="b3378-p103">表示线条格式。只读。</span><span class="sxs-lookup"><span data-stu-id="b3378-p103">Represents line formatting. Read-only.</span></span>|
+|<span data-ttu-id="59f91-113">fill</span><span class="sxs-lookup"><span data-stu-id="59f91-113">fill</span></span>|[<span data-ttu-id="59f91-114">ChartFill</span><span class="sxs-lookup"><span data-stu-id="59f91-114">ChartFill</span></span>](chartfill.md)|<span data-ttu-id="59f91-p101">表示图表系列的填充格式，包括背景格式信息。只读。</span><span class="sxs-lookup"><span data-stu-id="59f91-p101">Represents the fill format of a chart series, which includes background formating information. Read-only.</span></span>|
+|<span data-ttu-id="59f91-117">line</span><span class="sxs-lookup"><span data-stu-id="59f91-117">line</span></span>|[<span data-ttu-id="59f91-118">ChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="59f91-118">ChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="59f91-p102">表示线条格式。只读。</span><span class="sxs-lookup"><span data-stu-id="59f91-p102">Represents line formatting. Read-only.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ChartSeriesFormat resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chartseriesformat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

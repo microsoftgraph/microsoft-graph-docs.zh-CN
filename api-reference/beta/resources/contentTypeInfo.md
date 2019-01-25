@@ -4,22 +4,22 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentTypeInfo
 localization_priority: Normal
-ms.openlocfilehash: e394d52a5f7ed5e8dce1c61d31d787d62bd36e56
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 196a71be06b4e3c02330aba21559341650caa550
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892335"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530060"
 ---
-# <a name="contenttypeinfo-resource-type"></a><span data-ttu-id="61c5c-102">ContentTypeInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="61c5c-102">ContentTypeInfo resource type</span></span>
+# <a name="contenttypeinfo-resource-type"></a><span data-ttu-id="d9612-102">ContentTypeInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="d9612-102">ContentTypeInfo resource type</span></span>
 
-> <span data-ttu-id="61c5c-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="61c5c-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="61c5c-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="61c5c-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="61c5c-105">**contentTypeInfo** 资源指示项的 SharePoint 内容类型。</span><span class="sxs-lookup"><span data-stu-id="61c5c-105">The **contentTypeInfo** resource indicates the SharePoint content type of an item.</span></span>
+<span data-ttu-id="d9612-103">**contentTypeInfo** 资源指示项的 SharePoint 内容类型。</span><span class="sxs-lookup"><span data-stu-id="d9612-103">The **contentTypeInfo** resource indicates the SharePoint content type of an item.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="61c5c-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="61c5c-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d9612-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d9612-104">JSON representation</span></span>
 
-<span data-ttu-id="61c5c-107">下面是 **contentTypeInfo** 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="61c5c-107">Here is a JSON representation of a **contentTypeInfo** resource.</span></span>
+<span data-ttu-id="d9612-105">下面是 **contentTypeInfo** 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d9612-105">Here is a JSON representation of a **contentTypeInfo** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentTypeInfo", "@type.aka": "oneDrive.contentTypeFacet" } -->
 
 ```json
@@ -29,17 +29,22 @@ ms.locfileid: "27892335"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="61c5c-108">属性</span><span class="sxs-lookup"><span data-stu-id="61c5c-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d9612-106">属性</span><span class="sxs-lookup"><span data-stu-id="d9612-106">Properties</span></span>
 
-| <span data-ttu-id="61c5c-109">属性名称</span><span class="sxs-lookup"><span data-stu-id="61c5c-109">Property name</span></span>  | <span data-ttu-id="61c5c-110">类型</span><span class="sxs-lookup"><span data-stu-id="61c5c-110">Type</span></span>    | <span data-ttu-id="61c5c-111">说明</span><span class="sxs-lookup"><span data-stu-id="61c5c-111">Description</span></span>
+| <span data-ttu-id="d9612-107">属性名称</span><span class="sxs-lookup"><span data-stu-id="d9612-107">Property name</span></span>  | <span data-ttu-id="d9612-108">类型</span><span class="sxs-lookup"><span data-stu-id="d9612-108">Type</span></span>    | <span data-ttu-id="d9612-109">说明</span><span class="sxs-lookup"><span data-stu-id="d9612-109">Description</span></span>
 |:---------------|:--------|:--------------------------------------------------
-| <span data-ttu-id="61c5c-112">**id**</span><span class="sxs-lookup"><span data-stu-id="61c5c-112">**id**</span></span>         | <span data-ttu-id="61c5c-113">string</span><span class="sxs-lookup"><span data-stu-id="61c5c-113">string</span></span>  | <span data-ttu-id="61c5c-114">内容类型的 ID。</span><span class="sxs-lookup"><span data-stu-id="61c5c-114">The id of the content type.</span></span>
-| <span data-ttu-id="61c5c-115">**name**</span><span class="sxs-lookup"><span data-stu-id="61c5c-115">**name**</span></span>       | <span data-ttu-id="61c5c-116">string</span><span class="sxs-lookup"><span data-stu-id="61c5c-116">string</span></span>  | <span data-ttu-id="61c5c-117">内容类型的名称。</span><span class="sxs-lookup"><span data-stu-id="61c5c-117">The name of the content type.</span></span>
+| <span data-ttu-id="d9612-110">**id**</span><span class="sxs-lookup"><span data-stu-id="d9612-110">**id**</span></span>         | <span data-ttu-id="d9612-111">string</span><span class="sxs-lookup"><span data-stu-id="d9612-111">string</span></span>  | <span data-ttu-id="d9612-112">内容类型的 ID。</span><span class="sxs-lookup"><span data-stu-id="d9612-112">The id of the content type.</span></span>
+| <span data-ttu-id="d9612-113">**name**</span><span class="sxs-lookup"><span data-stu-id="d9612-113">**name**</span></span>       | <span data-ttu-id="d9612-114">string</span><span class="sxs-lookup"><span data-stu-id="d9612-114">string</span></span>  | <span data-ttu-id="d9612-115">内容类型的名称。</span><span class="sxs-lookup"><span data-stu-id="d9612-115">The name of the content type.</span></span>
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentTypeInfo"
-} -->
+  "tocPath": "Resources/ContentTypeInfo",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/contenttypeinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

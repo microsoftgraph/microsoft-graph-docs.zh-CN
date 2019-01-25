@@ -4,58 +4,58 @@ description: 检索邮件文件夹对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 2b96994ee9c8827f55083376c0eec3689de46b8d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eee7adf677696fbf2dc969262604b817c7cddabe
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939803"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529906"
 ---
-# <a name="get-mailfolder"></a><span data-ttu-id="f22db-103">获取 mailFolder</span><span class="sxs-lookup"><span data-stu-id="f22db-103">Get mailFolder</span></span>
+# <a name="get-mailfolder"></a><span data-ttu-id="1ba5f-103">获取 mailFolder</span><span class="sxs-lookup"><span data-stu-id="1ba5f-103">Get mailFolder</span></span>
 
-> <span data-ttu-id="f22db-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="f22db-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f22db-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="f22db-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f22db-106">检索邮件文件夹对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f22db-106">Retrieve the properties and relationships of a message folder object.</span></span>
+<span data-ttu-id="1ba5f-104">检索邮件文件夹对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-104">Retrieve the properties and relationships of a message folder object.</span></span>
 
-<span data-ttu-id="f22db-107">有两种方案相关应用程序可以在哪里找到另一个用户的邮件文件夹：</span><span class="sxs-lookup"><span data-stu-id="f22db-107">There are two scenarios where an app can get another user's mail folder:</span></span>
+<span data-ttu-id="1ba5f-105">有两种方案相关应用程序可以在哪里找到另一个用户的邮件文件夹：</span><span class="sxs-lookup"><span data-stu-id="1ba5f-105">There are two scenarios where an app can get another user's mail folder:</span></span>
 
-* <span data-ttu-id="f22db-108">如果应用程序具有应用程序权限，或，</span><span class="sxs-lookup"><span data-stu-id="f22db-108">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="f22db-109">如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享邮件文件夹，或具有委派的访问赋予该用户。</span><span class="sxs-lookup"><span data-stu-id="f22db-109">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="f22db-110">请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。</span><span class="sxs-lookup"><span data-stu-id="f22db-110">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
+* <span data-ttu-id="1ba5f-106">如果应用程序具有应用程序权限，或，</span><span class="sxs-lookup"><span data-stu-id="1ba5f-106">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="1ba5f-107">如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享邮件文件夹，或具有委派的访问赋予该用户。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-107">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="1ba5f-108">请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-108">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="f22db-111">权限</span><span class="sxs-lookup"><span data-stu-id="f22db-111">Permissions</span></span>
-<span data-ttu-id="f22db-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f22db-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1ba5f-109">权限</span><span class="sxs-lookup"><span data-stu-id="1ba5f-109">Permissions</span></span>
+<span data-ttu-id="1ba5f-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f22db-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="f22db-114">Permission type</span></span>      | <span data-ttu-id="f22db-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f22db-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1ba5f-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="1ba5f-112">Permission type</span></span>      | <span data-ttu-id="1ba5f-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1ba5f-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f22db-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f22db-116">Delegated (work or school account)</span></span> | <span data-ttu-id="f22db-117">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f22db-117">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="f22db-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f22db-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f22db-119">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f22db-119">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="f22db-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="f22db-120">Application</span></span> | <span data-ttu-id="f22db-121">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f22db-121">Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="1ba5f-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1ba5f-114">Delegated (work or school account)</span></span> | <span data-ttu-id="1ba5f-115">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1ba5f-115">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="1ba5f-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1ba5f-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1ba5f-117">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1ba5f-117">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="1ba5f-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="1ba5f-118">Application</span></span> | <span data-ttu-id="1ba5f-119">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1ba5f-119">Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f22db-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f22db-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1ba5f-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1ba5f-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f22db-123">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f22db-123">Optional query parameters</span></span>
-<span data-ttu-id="f22db-124">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f22db-124">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1ba5f-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="1ba5f-121">Optional query parameters</span></span>
+<span data-ttu-id="1ba5f-122">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f22db-125">请求标头</span><span class="sxs-lookup"><span data-stu-id="f22db-125">Request headers</span></span>
-| <span data-ttu-id="f22db-126">名称</span><span class="sxs-lookup"><span data-stu-id="f22db-126">Name</span></span>       | <span data-ttu-id="f22db-127">类型</span><span class="sxs-lookup"><span data-stu-id="f22db-127">Type</span></span> | <span data-ttu-id="f22db-128">说明</span><span class="sxs-lookup"><span data-stu-id="f22db-128">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1ba5f-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="1ba5f-123">Request headers</span></span>
+| <span data-ttu-id="1ba5f-124">名称</span><span class="sxs-lookup"><span data-stu-id="1ba5f-124">Name</span></span>       | <span data-ttu-id="1ba5f-125">类型</span><span class="sxs-lookup"><span data-stu-id="1ba5f-125">Type</span></span> | <span data-ttu-id="1ba5f-126">说明</span><span class="sxs-lookup"><span data-stu-id="1ba5f-126">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="f22db-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="f22db-129">Authorization</span></span>  | <span data-ttu-id="f22db-130">string</span><span class="sxs-lookup"><span data-stu-id="f22db-130">string</span></span>  | <span data-ttu-id="f22db-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f22db-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1ba5f-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="1ba5f-127">Authorization</span></span>  | <span data-ttu-id="1ba5f-128">string</span><span class="sxs-lookup"><span data-stu-id="1ba5f-128">string</span></span>  | <span data-ttu-id="1ba5f-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f22db-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="f22db-133">Request body</span></span>
-<span data-ttu-id="f22db-134">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f22db-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1ba5f-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="1ba5f-131">Request body</span></span>
+<span data-ttu-id="1ba5f-132">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f22db-135">响应</span><span class="sxs-lookup"><span data-stu-id="f22db-135">Response</span></span>
-<span data-ttu-id="f22db-136">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [MailFolder](../resources/mailfolder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f22db-136">If successful, this method returns a `200 OK` response code and [mailFolder](../resources/mailfolder.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1ba5f-133">响应</span><span class="sxs-lookup"><span data-stu-id="1ba5f-133">Response</span></span>
+<span data-ttu-id="1ba5f-134">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [MailFolder](../resources/mailfolder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-134">If successful, this method returns a `200 OK` response code and [mailFolder](../resources/mailfolder.md) object in the response body.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="f22db-137">示例 1</span><span class="sxs-lookup"><span data-stu-id="f22db-137">Example 1</span></span>
-#### <a name="request-1"></a><span data-ttu-id="f22db-138">请求 1</span><span class="sxs-lookup"><span data-stu-id="f22db-138">Request 1</span></span>
-<span data-ttu-id="f22db-139">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="f22db-139">The following is an example of the request.</span></span>
+## <a name="example-1"></a><span data-ttu-id="1ba5f-135">示例 1</span><span class="sxs-lookup"><span data-stu-id="1ba5f-135">Example 1</span></span>
+#### <a name="request-1"></a><span data-ttu-id="1ba5f-136">请求 1</span><span class="sxs-lookup"><span data-stu-id="1ba5f-136">Request 1</span></span>
+<span data-ttu-id="1ba5f-137">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-137">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_mailfolder"
@@ -64,9 +64,9 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ```
 
-#### <a name="response-1"></a><span data-ttu-id="f22db-140">响应 1</span><span class="sxs-lookup"><span data-stu-id="f22db-140">Response 1</span></span>
-<span data-ttu-id="f22db-141">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f22db-141">The following is an example of the response.</span></span>
- ><span data-ttu-id="f22db-142">**注意：** 可能为便于阅读缩短如下所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="f22db-142">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f22db-143">所有属性都是从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f22db-143">All the properties will be returned from an actual call.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="1ba5f-138">响应 1</span><span class="sxs-lookup"><span data-stu-id="1ba5f-138">Response 1</span></span>
+<span data-ttu-id="1ba5f-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-139">The following is an example of the response.</span></span>
+ ><span data-ttu-id="1ba5f-140">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-140">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="1ba5f-141">所有属性都是从实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-141">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,9 +88,9 @@ Content-length: 179
 }
 ```
 
-## <a name="example-2"></a><span data-ttu-id="f22db-144">示例 2</span><span class="sxs-lookup"><span data-stu-id="f22db-144">Example 2</span></span>
-#### <a name="request-2"></a><span data-ttu-id="f22db-145">请求 2</span><span class="sxs-lookup"><span data-stu-id="f22db-145">Request 2</span></span>
-<span data-ttu-id="f22db-146">下面是一个搜索文件夹的示例，该请求。</span><span class="sxs-lookup"><span data-stu-id="f22db-146">The following is a search folder example of the request.</span></span>
+## <a name="example-2"></a><span data-ttu-id="1ba5f-142">示例 2</span><span class="sxs-lookup"><span data-stu-id="1ba5f-142">Example 2</span></span>
+#### <a name="request-2"></a><span data-ttu-id="1ba5f-143">请求 2</span><span class="sxs-lookup"><span data-stu-id="1ba5f-143">Request 2</span></span>
+<span data-ttu-id="1ba5f-144">下面是一个搜索文件夹的示例，该请求。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-144">The following is a search folder example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_mailSearchfolder"
@@ -99,9 +99,9 @@ Content-length: 179
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ```
 
-#### <a name="response-2"></a><span data-ttu-id="f22db-147">响应 2</span><span class="sxs-lookup"><span data-stu-id="f22db-147">Response 2</span></span>
-<span data-ttu-id="f22db-148">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="f22db-148">The following is an example of the response.</span></span>
- ><span data-ttu-id="f22db-149">**注意：** 可能为便于阅读缩短如下所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="f22db-149">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f22db-150">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f22db-150">All the properties will be returned from an actual call.</span></span>
+#### <a name="response-2"></a><span data-ttu-id="1ba5f-145">响应 2</span><span class="sxs-lookup"><span data-stu-id="1ba5f-145">Response 2</span></span>
+<span data-ttu-id="1ba5f-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-146">The following is an example of the response.</span></span>
+ ><span data-ttu-id="1ba5f-147">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-147">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="1ba5f-148">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1ba5f-148">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -125,10 +125,15 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get mailFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/mailfolder-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
