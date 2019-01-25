@@ -3,16 +3,16 @@ title: 'reportRoot: getEmailAppUsageUserCounts'
 description: 获取使用任意电子邮件应用连接到 Exchange Online 的唯一用户数。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: d7812f0209b07af877cf44c2bff10d9ddfc48ef6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 371c35dccf05039ce17269662e34ee581cc6c86c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956128"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515305"
 ---
 # <a name="reportroot-getemailappusageusercounts"></a>reportRoot: getEmailAppUsageUserCounts
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取使用任意电子邮件应用连接到 Exchange Online 的唯一用户数。
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/reports/getEmailAppUsageUserCounts(period='
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -179,3 +179,11 @@ Content-Length: 355
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getemailappusageusercounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

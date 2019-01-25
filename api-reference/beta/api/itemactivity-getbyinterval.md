@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 10/06/2017
 title: 按间隔中获取项活动状态
 localization_priority: Normal
-ms.openlocfilehash: 7ca0e4e4767073d37ebeabbab10e1f50ce323599
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f9601538d825efe346ab57fdbecd6c74dc9978d7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826864"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516453"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>按间隔中获取项活动状态
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [ItemActivityStats][]获得的指定的时间间隔内发生下此资源的活动。
 
@@ -99,10 +99,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "BaseItem/Get activities by interval"
-} -->
+  "tocPath": "BaseItem/Get activities by interval",
+  "suppressions": [
+    "Error: /api-reference/beta/api/itemactivity-getbyinterval.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

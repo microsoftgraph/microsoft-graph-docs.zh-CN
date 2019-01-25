@@ -2,16 +2,16 @@
 title: privilegedRoleSummary 资源类型
 description: 为特定的角色摘要统计信息。
 localization_priority: Normal
-ms.openlocfilehash: b74b562a992f7795f3ae8e317608f1e370bc2a4e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 2ed34f556f52c41729bfa108fbb6eb0c608f6b67
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858616"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513737"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>privilegedRoleSummary 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 为特定的角色摘要统计信息。
 
@@ -23,16 +23,16 @@ ms.locfileid: "27858616"
 |[获取 privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |读取属性和 privilegedRoleSummary 对象的关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |elevatedCount|int32|激活已分配的角色和角色的用户数。|
-|id|string| 角色的唯一标识符。 此为只读属性。|
+|id|string| 角色的唯一标识符。 只读。|
 |managedCount|int32|停用已分配的角色的用户，但该角色的数量。|
-|mfaEnabled|boolean|如果为**true**的角色激活需要 MFA。 **false**如果角色激活不需要 MFA。|
+|mfaEnabled|布尔|如果为**true**的角色激活需要 MFA。 **false**如果角色激活不需要 MFA。|
 |status|string| 可取值为：`ok`、`bad`。 值取决于的比率 (managedCount / usersCount)。 如果此比率小于预定义的阈值，`ok`返回。 否则为`bad`返回。|
 |usersCount|int32|与角色分配的用户数。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 
@@ -62,10 +62,15 @@ ms.locfileid: "27858616"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleSummary resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privilegedrolesummary.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

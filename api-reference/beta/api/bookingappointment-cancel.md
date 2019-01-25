@@ -1,20 +1,20 @@
 ---
 title: bookingAppointment： 取消
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: 取消指定的 bookingAppointment 中指定的 bookingbusiness，并向所涉及的客户和人员成员发送消息。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 2ea1baae613188037ab806a81a6341daecaddc65
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c202ea309641bdcda3e1124792fdc04ad97e02ec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917249"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514682"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment： 取消
 
- > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
- 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 取消指定的[bookingAppointment](../resources/bookingappointment.md)中指定[bookingbusiness](../resources/bookingbusiness.md)，并向所涉及的客户和员工发送消息。
 
 ## <a name="permissions"></a>权限
@@ -24,7 +24,7 @@ ms.locfileid: "27917249"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All，Bookings.ReadWrite.All，Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  | 
+|应用程序 | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|cancellationMessage|字符串|要与客户约会已被取消的确认消息。|
+|cancellationMessage|String|要与客户约会已被取消的确认消息。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
@@ -67,7 +67,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,10 +79,15 @@ HTTP/1.1 204 No content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingAppointment: cancel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-cancel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 验证文件上载到租户中的特定学校数据同步配置文�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: efdc0863a1de58f7ebf46492b662e632972275c0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1447178e80d30058b415345aea83dce4390e6bcf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915247"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512351"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上载到 educationSynchronizationProfile 后启动同步
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 验证文件上载到租户中特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。 如果验证操作成功，将配置文件上启动同步。 否则，响应将包含错误和警告。 如果响应中包含错误，将不会启动同步。 如果则响应中包含仅警告，将启动同步。
 
@@ -22,10 +22,10 @@ ms.locfileid: "27915247"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型 | Permissions |
+| 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派 （个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -127,3 +127,11 @@ Content-length: 2105
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-start.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

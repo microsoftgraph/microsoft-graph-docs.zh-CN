@@ -3,16 +3,16 @@ title: historyItem 资源类型
 description: 表示为活动应用程序中的历史记录项。 用户活动表示单个目标应用程序-例如，TV 显示、 文档或视频游戏中当前市场活动中。 当用户启动与该活动时，以指示该活动的开始和结束时间的历史记录项捕获项目。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 168587aa54446aeee78107deaa9087c6bffb8586
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976952"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514696"
 ---
 # <a name="historyitem-resource-type"></a>historyItem 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示为[活动](projectrome-activity.md)应用程序中的历史记录项。 用户活动表示单个目标应用程序-例如，TV 显示、 文档或视频游戏中当前市场活动中。 当用户启动与该活动时，以指示该活动的开始和结束时间的历史记录项捕获项目。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
 
@@ -33,13 +33,13 @@ ms.locfileid: "27976952"
 |userTimezone | 字符串 | 可选。 在其中用户的设备用来生成活动位于在活动创建时间的时区。 为了支持跨平台表示形式作为 Olson Id 提供的值。|
 |createdDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上创建对象时的日期和时间。|
 |lastModifiedDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上修改对象时的日期和时间。|
-|id | 字符串 | 必需。 **HistoryItem**对象的客户端集 GUID。|
+|id | String | 必需。 **HistoryItem**对象的客户端集 GUID。|
 |startedDateTime | DateTimeOffset | 必需。 启动**historyItem** （活动会话） 时，日期 UTC 时间。 所需的时间线历史记录。|
 |lastActiveDateTime | DateTimeOffset | 可选。 UTC DateTime **historyItem** （活动会话） 的最后一个了解作为活动或完成-如果为空， **historyItem**状态时应日常。|
 |expirationDateTime | DateTimeOffset | 可选。 **HistoryItem**会经过硬删除时，日期 UTC 时间。 可以由客户端设置。|
 |activeDurationSeconds | int | 可选。 活动用户工作效率的持续时间。 如果未提供，则从**startedDateTime**和**lastActiveDateTime**计算此。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 |关系 | 类型 | 说明|
 |:------------|:-----|:-----------|
@@ -75,10 +75,15 @@ ms.locfileid: "27976952"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "historyitem resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/projectrome-historyitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

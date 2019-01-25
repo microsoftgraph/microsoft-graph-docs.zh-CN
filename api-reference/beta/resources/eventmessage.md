@@ -4,16 +4,16 @@ description: '表示会议请求、取消或响应（可以是下列任一行为
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 3f7a2f539d7a21e47b3e35857c6475ae44f32cad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 926a9adc1a66ca912aff9a5ccea8db189eb4dae1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939999"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514017"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示会议请求、取消或响应（可以是下列任一行为：接受、暂定接受或拒绝）的邮件。 
 
@@ -21,7 +21,7 @@ ms.locfileid: "27939999"
 
 如果组织者或应用发送会议请求，会议请求以 **eventMessage** 实例（其中包含 **meetingRequest** 的 **meetingMessageType**）的形式，发送到与会者收件箱中。 此外，Outlook 会自动在与会者日历中创建 **event** 实例，其中 **showAs** 属性设置为 **tentative**。 
 
-若要获取与会者邮箱中关联事件的属性，应用可以使用 **eventMessage** 的 **event** 导航属性，如[获取事件邮件示例](../api/eventmessage-get.md#request-2)中所示。 应用程序还可以响应事件代表与会者以编程方式，通过[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)该事件。
+若要获取与会者邮箱中关联事件的属性，应用可以使用 **eventMessage** 的 **event** 导航属性，如[获取事件邮件示例](../api/eventmessage-get.md#request-2)中所示。 此外，应用还可以[接受](../api/event-accept.md)、[暂定接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)事件，以编程方式代表与会者响应事件。
 
 除了会议请求中，在与会者的会议，用来取消事件管理器的结果的收件箱文件夹或由于与会者响应会议请求的组织者的收件箱中可以找到**eventMessage**实例。 应用可以对事件邮件执行操作，就像对邮件执行操作一样，但略有不同。
 
@@ -98,23 +98,23 @@ ms.locfileid: "27939999"
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|String|邮件的版本。|
 |conversationId|String|电子邮件所属对话的 ID。|
-|conversationIndex|Binary|电子邮件所属对话的索引。|
+|ConversationIndex|Binary|电子邮件所属对话的索引。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求会议结束时间。|
-|标记|[followUpFlag](followupflag.md)|指示状态、开始日期、截止日期或邮件的完成日期的标记值。|
+|flag|[followUpFlag](followupflag.md)|指示状态、开始日期、截止日期或邮件的完成日期的标记值。|
 |发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
-|hasAttachments|布尔|指示邮件是否包含附件。|
-|id|String||
+|hasAttachments|Boolean|指示邮件是否包含附件。|
+|id|字串符号||
 |importance|String| 邮件的重要性：`low`、`normal`、`high`。|
 |inferenceClassification|String| 可取值为：`focused`、`other`。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |所指定的[RFC5322](https://www.ietf.org/rfc/rfc5322.txt)格式中邮件 ID。 |
-|isAllDay |布尔|指示是否事件持续的整个天。 调整此属性需要调整事件以及的**开始日期时间**和**endDateTime**属性。|
-|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
-|isDraft|布尔|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isOutOfDate|布尔|指示是否此会议请求已过期较新的请求。|
-|isRead|布尔|指示是否已阅读该邮件。|
-|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isAllDay |Boolean|指示是否事件持续的整个天。 调整此属性需要调整事件以及的**开始日期时间**和**endDateTime**属性。|
+|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
+|IsOutOfDate|Boolean|指示是否此会议请求已过期较新的请求。|
+|isRead|Boolean|指示是否已阅读该邮件。|
+|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
 |location|[位置](location.md)|请求会议的位置。|
 |meetingMessageType|String| 事件消息的类型：`none`、`meetingRequest`、`meetingCancelled`、`meetingAccepted`、`meetingTenativelyAccepted`、`meetingDeclined`。|
@@ -125,9 +125,9 @@ ms.locfileid: "27939999"
 |sender|[recipient](recipient.md)|实际用于生成邮件的帐户。|
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求的会议的开始时间。|
-|subject|String|邮件的主题。|
+|subject|字符串|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
-|type|字符串|请求会议类型： `singleInstance`， `occurence`， `exception`， `seriesMaster`。|
+|type|String|请求会议类型： `singleInstance`， `occurence`， `exception`， `seriesMaster`。|
 |uniqueBody|[itemBody](itembody.md)|当前邮件专用的邮件正文部分。|
 |UnsubscribeData|String|从 List-Unsubscribe 标头中解析的有效条目。若 UnsubscribeEnabled 属性为 true，则这是 List-Unsubscribe 标头中的邮件命令的数据。|
 |UnsubscribeEnabled|布尔|指示邮件是否已启用取消订阅。若 list-Unsubscribe 标头符合 rfc-2369，则其值为 True。|
@@ -136,7 +136,7 @@ ms.locfileid: "27939999"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合|[FileAttachment](fileattachment.md)和[itemAttachment](itemattachment.md)， [referenceAttachment](referenceattachment.md)附件的邮件的集合。 只读。 可为 Null。|
+|attachments|[附件](attachment.md)集合|[FileAttachment](fileattachment.md)和[itemAttachment](itemattachment.md)， [referenceAttachment](referenceattachment.md)附件的邮件的集合。 只读。 可为 NULL。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[extension](extension.md) 集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 eventMessage 定义的多值扩展属性的集合。只读。可为 Null。|
@@ -148,7 +148,7 @@ ms.locfileid: "27939999"
 |:---------------|:--------|:----------|
 |[获取 eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |读取 eventmessage 对象的属性和关系。|
 |[更新](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |更新 eventMessage 对象。|
-|[删除](../api/eventmessage-delete.md) | 无 |更新 eventMessage 对象。|
+|[删除](../api/eventmessage-delete.md) | None |更新 eventMessage 对象。|
 |[copy](../api/message-copy.md)|[message](message.md)|将邮件复制到文件夹。|
 |[createForward](../api/message-createforward.md)|[message](message.md)|创建转发邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
 |[createReply](../api/message-createreply.md)|[message](message.md)|创建回复邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
@@ -173,10 +173,15 @@ ms.locfileid: "27939999"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "eventMessage resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/eventmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: synchronizationSchema 资源类型
 description: 定义对象将同步和同步方式。 同步架构包含特定同步作业的设置信息的大部分。 通常情况下，您将自定义某些属性的映射，或添加范围筛选器同步只有满足特定条件的对象。
 localization_priority: Normal
-ms.openlocfilehash: 696bdbbc6fa2d96965d11a12fb09fdfc0ce16106
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e7bb91ef473a04552c4c5f33ffc9d54eb86a9b7a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847318"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515928"
 ---
 # <a name="synchronizationschema-resource-type"></a>synchronizationSchema 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 定义对象将同步和同步方式。 同步架构包含特定同步作业的设置信息的大部分。 通常情况下，您将自定义某些[属性映射](synchronization-attributemapping.md)，或添加[范围筛选器](synchronization-filter.md)以同步只有满足特定条件的对象。
 
@@ -43,7 +43,7 @@ ms.locfileid: "27847318"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | Description    |
+| 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
 |directories            |[directoryDefinition](synchronization-directorydefinition.md)集合   |描述目录和[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)的一部分的对象。 |
 |synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md)集合   |同步规则[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)，配置的集合 |
@@ -73,10 +73,15 @@ ms.locfileid: "27847318"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationSchema resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationschema.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: 更新策略
 description: 更新以前存在策略中的属性。
 localization_priority: Normal
-ms.openlocfilehash: 2992f2f76c0e8b213ad8aabca1bfd0fe59883989
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d99aa42c4a67f6b874cbc1e266da76287388c05e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857153"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515410"
 ---
 # <a name="update-policy"></a>更新策略
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新以前存在[策略](../resources/policy.md)中的属性。
 
@@ -38,12 +38,12 @@ PATCH /policies/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，将一个 JSON 对象，提供需要更新的参数。 下表显示可能的参数。
 
-| 参数    | 类型   |Description|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|definition|字符串|Stringified 的[策略](../resources/policy.md)对象的版本。|
-|displayName|字符串|自定义策略名称。|
-|isOrganizationDefault|布尔|指定默认情况下是否应用此策略。|
-|type|字符串|指定策略的类型。 当前值必须为"TokenLifetimePolicy"|
+|definition|String|Stringified 的[策略](../resources/policy.md)对象的版本。|
+|displayName|String|自定义策略名称。|
+|isOrganizationDefault|Boolean|指定默认情况下是否应用此策略。|
+|type|String|指定策略的类型。 当前值必须为"TokenLifetimePolicy"|
 
 ## <a name="response"></a>响应
 
@@ -70,3 +70,11 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

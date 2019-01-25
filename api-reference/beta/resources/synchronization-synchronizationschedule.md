@@ -2,24 +2,24 @@
 title: synchronizationSchedule 资源类型
 description: 定义用于运行 synchronizationJob 的计划。
 localization_priority: Normal
-ms.openlocfilehash: b59c36a36d837c21c147033dff8de66b85c863a1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0e9714e4833c5586e54c8d812a0d72e41a513e5b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877866"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515585"
 ---
 # <a name="synchronizationschedule-resource-type"></a>synchronizationSchedule 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 定义用于运行[synchronizationJob](synchronization-synchronizationjob.md)的计划。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|过期|DateTimeOffset|日期和时间时，此作业将过期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|interval|Duration|同步迭代之间的间隔。|
+|到期|DateTimeOffset|日期和时间时，此作业将过期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|interval|持续时间|同步迭代之间的间隔。|
 |state|String| 可取值为：`Active`、`Disabled`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -45,10 +45,15 @@ ms.locfileid: "27877866"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationSchedule resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationschedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

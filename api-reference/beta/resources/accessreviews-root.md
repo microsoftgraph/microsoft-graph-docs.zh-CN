@@ -4,16 +4,16 @@ description: 您可以使用 Azure AD 访问 reviews （英文） 配置的用�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 24571e8d83d6d321ba2bf20d9beae9ba6487e286
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 212af4ad8519f7ec54fb56ceffee0a0d4de16027
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975349"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516411"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审阅
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 您可以使用[Azure AD access 会检查](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)配置一次性或定期访问审阅的审计的用户的访问权限。
 
@@ -67,10 +67,15 @@ ms.locfileid: "27975349"
 - [如何，管理员可以管理程序和控件的 Azure AD 访问 reviews （英文）](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Service root",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/accessreviews-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

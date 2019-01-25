@@ -4,16 +4,16 @@ description: 用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: eaccaf02a3d81d184b3c0bf9eae737790c2709d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923255"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513086"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 邮箱文件夹可以包含邮件、其他 Outlook 项和子邮件文件夹。
 
@@ -30,19 +30,19 @@ GET /me/mailFolders/drafts
 
 已知名称工作无论用户的邮箱的区域设置上述查询将始终返回命名方式无论用户的草稿文件夹。
 
-| 已知文件夹名称 | Description |
+| 已知文件夹名称 | 说明 |
 |:-----------------------|:------------|
-| 存档 | 存档文件夹邮件发送到在支持的 Outlook 客户端使用 One_Click 存档功能时。 **注意：** 这是不相同的存档邮箱功能的 Exchange online。 |
+| Archive | 存档文件夹邮件发送到在支持的 Outlook 客户端使用 One_Click 存档功能时。 **注意：** 这是不相同的存档邮箱功能的 Exchange online。 |
 | 混乱 | 混乱文件夹低优先级邮件移动到时使用的混乱功能。 |
-| 冲突 | 包含邮箱中的冲突项目的文件夹。 |
+| Conflicts | 包含邮箱中的冲突项目的文件夹。 |
 | conversationhistory | 其中 Skype 保存 IM 对话 （如果 Skype 配置这样） 中的文件夹。 |
 | DeletedItems | 文件夹项目移到时被删除。 |
 | 草稿 | 包含未发送的邮件的文件夹。 |
-| 收件箱 | 收件箱文件夹中。 |
-| junkemail | 垃圾邮件文件夹中。 |
+| 收件箱 | "收件箱"文件夹。 |
+| junkemail | "垃圾电子邮件"文件夹。 |
 | localfailures | 包含本地客户端上存在，但无法上载到服务器的项目的文件夹。 |
 | msgfolderroot | "顶部的信息存储"文件夹中。 此文件夹的父文件夹的普通邮件客户端，如收件箱中显示的文件夹。 |
-| 发件箱 | 发件箱文件夹中。 |
+| 发件箱 | "发件箱"文件夹。 |
 | recoverableitemsdeletions | 包含软删除项目的文件夹： 删除从已删除邮件文件夹中，或通过按 shift + delete 在 Outlook 中。 此文件夹不可见在任何 Outlook 电子邮件客户端，但是与其进行交互的最终用户可以通过中 Outlook 或 Outlook web 上的**从服务器恢复已删除邮件**功能。 |
 | 已计划 | 包含计划重新显示在适用于 iOS 的 Outlook 中使用的日程安排功能收件箱中的邮件文件夹。 |
 | searchfolders | 在用户的邮箱中定义的所有搜索文件夹的父文件夹。 |
@@ -76,11 +76,11 @@ GET /me/mailFolders/drafts
 |:---------|:-----|:------------|
 |childFolderCount|Int32|当前 mailFolder 中的直接子 mailFolder 数量。|
 |displayName|String|mailFolder 的显示名称。|
-|id|字符串|MailFolder 的唯一标识符。|
+|id|String|MailFolder 的唯一标识符。|
 |parentFolderId|String|MailFolder 的父 mailFolder 的唯一标识符。|
 |totalItemCount|Int32|邮箱中项的数量|
 |unreadItemCount|Int32|mailFolder 中标记为未读的项的数量。|
-|wellKnownName|字符串|文件夹的已知文件夹名称。 上面列出了可能的值。 此属性仅对于创建的 Outlook 默认文件夹设置。 有关其他文件夹，此属性为**null**。|
+|wellKnownName|String|文件夹的已知文件夹名称。 上面列出了可能的值。 此属性仅对于创建的 Outlook 默认文件夹设置。 有关其他文件夹，此属性为**null**。|
 
 **有效的访问项计数**
 
@@ -93,7 +93,7 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 在 Outlook 中的邮件文件夹可以包含多个类型的项目，例如，可以包含收件箱会议请求项目的不同邮件项目。 `TotalItemCount`和`UnreadItemCount`包括而不考虑其项目类型的邮件文件夹中的项目。
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 关系 | 类型 | 说明 |
 |:-------------|:-----|:------------|
@@ -144,10 +144,15 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mailfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

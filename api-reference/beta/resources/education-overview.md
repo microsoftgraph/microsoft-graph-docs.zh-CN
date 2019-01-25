@@ -4,16 +4,16 @@ description: 教育在 Microsoft Graph 中的 Api 增强 Office 365 资源和数
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: f5803a5a74933bfe4f09661e68288bc11954a65b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9e106da7eb717a091941e16f4a70af8a012802f3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958087"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516929"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 教育在 Microsoft Graph 中的 Api 增强 Office 365 资源和数据的教育方案，其中包括学校、 学生、 教师、 类、 注册，和工作分配的相关信息。 这使你能够轻松地构建与教育资源集成的解决方案。
 
@@ -98,7 +98,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 以下是一些常见的使用案例工作分配相关教育版 Api。
 
-|用例|Description|另请参阅|
+|用例|说明|另请参阅|
 |:-------|:----------|:-------|
 |创建工作分配|外部系统可以创建类的工作分配，并附加到工作分配的资源。|[创建工作分配](../api/educationassignment-post-resources.md)|
 |读取工作分配信息|分析应用程序可以获取有关分配和学生提交，包括多个日期和薪等级的信息。|[获取工作分配](../api/educationassignment-get.md)|
@@ -129,3 +129,11 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 - 探索对你的方案最有帮助的资源和方法。
 - 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用 API。
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/education-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

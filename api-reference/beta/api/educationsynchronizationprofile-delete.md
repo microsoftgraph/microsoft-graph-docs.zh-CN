@@ -4,16 +4,16 @@ description: 删除学校数据同步配置文件中租户基于的标识符。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d3c55cd90734fa78654baf10c940cd0debc57c50
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2aaa0d47bcc98c814ad525deb781ac7a7df28d87
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976154"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512470"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>删除 educationSynchronizationProfile
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除基于标识符为租户中学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。
 
@@ -34,7 +34,7 @@ DELETE /synchronizationProfiles/{id}
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
-|委派 （个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
 ## <a name="request-body"></a>请求正文
@@ -62,3 +62,11 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```http
 HTTP/1.1 202 Accepted
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

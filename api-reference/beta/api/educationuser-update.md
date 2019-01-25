@@ -4,16 +4,16 @@ description: 更新 **educationuser** 对象的属性。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 52b9e3f3784bae75ed9a2d4aa91fc52dd8917de6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ae49192b349f39b091ecaa1706099e5f10782432
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976182"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517097"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 **educationuser** 对象的属性。
 ## <a name="permissions"></a>权限
@@ -45,7 +45,7 @@ PATCH /education/users/{id}
 |displayName| String| 显示用户名称|
 |givenName| String | 名字 |
 |middleName| String | 用户的中间名|
-|surname| String | 用户的姓|
+|surname| 字符串 | 用户的姓|
 |mail| String| 电子邮件地址|
 |mobilePhone| String | 用户的移动电话号码 |
 |externalSource|string| 可取值为：`sis`、`manual`、`enum_sentinel`。|
@@ -130,10 +130,15 @@ Content-length: 508
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationuser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationuser-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

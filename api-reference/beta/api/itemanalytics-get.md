@@ -2,18 +2,18 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: 获取分析
+title: 获取分析结果
 localization_priority: Normal
-ms.openlocfilehash: 3d85ad32e4a7ce369ba3970e2d540aeeadf8424c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d1f6b255747cffe7fdccb5d098e73a56151b6245
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872637"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516257"
 ---
-# <a name="get-analytics"></a>获取分析
+# <a name="get-analytics"></a>获取分析结果
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取[itemAnalytics][]有关发生下此资源的视图。
 **ItemAnalytics**资源，可方便要获取的活动 stats`allTime`和`lastSevenDays`。
@@ -78,10 +78,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "BaseItem/Get analytics"
-} -->
+  "tocPath": "BaseItem/Get analytics",
+  "suppressions": [
+    "Error: /api-reference/beta/api/itemanalytics-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

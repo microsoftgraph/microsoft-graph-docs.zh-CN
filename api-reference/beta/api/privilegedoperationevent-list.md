@@ -2,16 +2,16 @@
 title: 列表 privilegedOperationEvents
 description: 筛选器表达式。
 localization_priority: Normal
-ms.openlocfilehash: 316240359b178dde2d307c4c0d8228dfb22c9ee5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 4ea6f778098a8b56c8819f55fb33ffb5420cce6b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821806"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512631"
 ---
 # <a name="list-privilegedoperationevents"></a>列表 privilegedOperationEvents
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[privilegedOperationEvent](../resources/privilegedoperationevent.md)对象，表示由特权身份管理角色操作生成的审核事件的列表。 有关审核事件的详细信息，请参阅[privilegedOperationEvent](../resources/privilegedoperationevent.md)。 若要筛选查询结果，请使用标准 OData``$filter``表达式。
 
@@ -280,10 +280,15 @@ Content-length: 547
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List privilegedOperationEvents",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedoperationevent-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 表示对象的边框。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8404a45ea7c56bbbb318994daa55229706d700a2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5b3b814da53013d1daca686d549596a7ab656027
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960236"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515382"
 ---
 # <a name="rangeborder-resource-type"></a>RangeBorder 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示对象的边框。
 
@@ -22,9 +22,9 @@ ms.locfileid: "27960236"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 RangeBorder](../api/rangeborder-get.md) | [RangeBorder](rangeborder.md) |读取 rangeborder 对象的属性和关系。|
-|[更新](../api/rangeborder-update.md) | [RangeBorder](rangeborder.md) |更新 RangeBorder 对象。 |
-|[列出](../api/rangeborder-list.md) | [RangeBorder](rangeborder.md) 集合 |获取 rangeBorder 对象集合。 |
+|获取 RangeBorder | [RangeBorder](rangeborder.md) |读取 rangeborder 对象的属性和关系。|
+|[Update](../api/rangeborder-update.md) | [RangeBorder](rangeborder.md) |更新 RangeBorder 对象。 |
+|[List](../api/rangeborder-list.md) | RangeBorder 集合 |获取 rangeBorder 对象集合。 |
 |[Itemat](../api/rangebordercollection-itemat.md)|[RangeBorder](rangeborder.md)|使用其索引获取 border 对象|
 
 ## <a name="properties"></a>属性
@@ -36,7 +36,7 @@ ms.locfileid: "27960236"
 |style|string|线条样式的常量之一，指定边框的线条样式。可能的值是：`None`、`Continuous`、`Dash`、`DashDot`、`DashDotDot`、`Dot`、`Double`、`SlantDashDot`。|
 |weight|string|指定区域周围边框的权重。可能的值是：`Hairline`、`Thin`、`Medium`、`Thick`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 
@@ -65,10 +65,15 @@ ms.locfileid: "27960236"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "RangeBorder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/rangeborder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

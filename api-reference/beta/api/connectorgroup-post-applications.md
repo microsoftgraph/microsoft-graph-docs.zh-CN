@@ -2,16 +2,16 @@
 title: 创建应用程序
 description: 使用此 API 创建新的应用程序。
 localization_priority: Normal
-ms.openlocfilehash: e9d1c76f153c27ab3df24a93b44a570c2c1d836a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 350e5f0fcb45f7404a670c1a0af4e4ddd02a97c9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824666"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514241"
 ---
 # <a name="create-application"></a>创建应用程序
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新的应用程序。
 ## <a name="permissions"></a>权限
@@ -32,7 +32,7 @@ POST /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者。 是否必需|
+| Authorization  | Bearer  必需|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[应用程序](../resources/application.md)对象的 JSON 表示形式。
@@ -85,10 +85,15 @@ Content-length: 355
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create application",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/connectorgroup-post-applications.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: DeleteAction
 localization_priority: Normal
-ms.openlocfilehash: a845a6609991041f12266cd97e95460f96bf742f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5e3b7cbf752d3ddb2c4b7bde3981d2a443028b92
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876760"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512617"
 ---
 # <a name="deleteaction-resource-type"></a>DeleteAction 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [**itemActivity**][activity] 上存在 **DeleteAction** 资源指示活动删除了一个项。
 
@@ -45,10 +45,15 @@ ms.locfileid: "27876760"
 
 项活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The DeleteAction object provides information about the deletion of an item.",
   "keywords": "activities,activity,action,delete,deletion",
   "section": "documentation",
-  "tocPath": "Resources/DeleteAction"
-} -->
+  "tocPath": "Resources/DeleteAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/deleteaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

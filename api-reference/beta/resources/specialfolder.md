@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
-ms.openlocfilehash: 2e57956f30e35e9c9276e0fd55d718f22a2c58d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5b187b1b4ff7183739ed734256a2d4c9e9fa9af6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828670"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512183"
 ---
 # <a name="specialfolder-resource-type"></a>SpecialFolder 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **SpecialFolder** 资源将与特殊文件夹相关的数据项分组到一个单一结构。
 
@@ -54,7 +54,7 @@ ms.locfileid: "27828670"
 | 名称        | 文件夹 ID    | 说明                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
 | 应用根目录    | `approot`    | 应用程序的个人文件夹。通常位于 `/Apps/{Application Name}` 中 |
-| Camera Roll | `cameraroll` | 本机照片备份文件夹。不适用于 OneDrive for Business。   |
+| 本机照片 | `cameraroll` | 本机照片备份文件夹。不适用于 OneDrive for Business。   |
 | 文档   | `documents`  | 文档文件夹。                                                    |
 | 音乐       | `music`      | 音乐文件夹。不适用于 OneDrive for Business。                |
 | 照片      | `photos`     | 照片文件夹。                                                       |
@@ -66,10 +66,15 @@ ms.locfileid: "27828670"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The SpecialFolder facet provides information about folders accessible as special folders.",
   "keywords": "special folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/specialfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

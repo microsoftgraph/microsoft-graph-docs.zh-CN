@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
-ms.openlocfilehash: a0f5d13381c82a42159d0802d850d9996aaf8b54
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: cf1f6c6cafd23a5503d645d13e597a8941019fee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855179"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512876"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [columnDefinition](columndefinition.md) 资源上的 **numberColumn** 指示该列的值为数字。
 
@@ -55,10 +55,15 @@ ms.locfileid: "27855179"
 注意：**decimalPlaces** 和 **displayAs** 应用于数字的呈现方式，而不是存储方式。
 这些属性可能会更新。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/NumberColumn"
-} -->
+  "tocPath": "Resources/NumberColumn",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/numberColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

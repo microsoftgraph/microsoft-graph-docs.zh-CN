@@ -3,16 +3,16 @@ title: visualInfo 资源类型
 description: 代表活动对象中的**visualElements**属性的复杂类型。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 3bc26d7eb63d07d857783e5392337b88124ec685
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 56d3822c89de074847aeab6c8a0a742ecd7f006f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963729"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514920"
 ---
 # <a name="visualinfo-resource-type"></a>visualInfo 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表[活动](../resources/projectrome-activity.md)对象中的**visualElements**属性的复杂类型。
 
@@ -26,9 +26,9 @@ ms.locfileid: "27963729"
 
 |名称 | 类型 | 说明|
 |:----|:------|:-----------|
-|显示文本 | 字符串 | 必需。 短用户的唯一活动 （例如，在其中活动是指创建文档的情况下的文档名称） 的文本的说明|
+|显示文本 | String | 必需。 短用户的唯一活动 （例如，在其中活动是指创建文档的情况下的文档名称） 的文本的说明|
 |说明 | 字符串 | 可选。 更长时间的用户的唯一的活动的文本说明 (示例： 文档名称、 第一句和/或元数据)|
-|backgroundColor | 字符串 | 可选。 用于呈现 UI 的品牌颜色活动的应用程序源中的活动的背景色。 必须是有效的十六进制颜色|
+|BackgroundColor | 字符串 | 可选。 用于呈现 UI 的品牌颜色活动的应用程序源中的活动的背景色。 必须是有效的十六进制颜色|
 |content | 类型化的 JSON 对象 | 可选。 自定义的数据的 JSON 对象，用于提供自定义呈现 Windows 命令行管理程序用户界面中的活动内容|
 |属性 | [imageInfo](../resources/projectrome-imageinfo.md) | 可选。 JSON 对象，用于表示一个表示用于生成活动的应用程序图标|
 
@@ -67,10 +67,15 @@ ms.locfileid: "27963729"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "visualinfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/projectrome-visualinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

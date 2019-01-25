@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 哈希
 localization_priority: Normal
-ms.openlocfilehash: ff147b45bcdc200e3da5d4a8761d8248fa887271
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 551b09cee9fa662d357ee763b67ce78bea03425f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853408"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514843"
 ---
 # <a name="hashes-resource-type"></a>Hashes 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **哈希**资源将可用哈希分组到项的单个结构中。
 
@@ -58,10 +58,15 @@ ms.locfileid: "27853408"
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The hashes facet provides hash identifiers for a file in OneDrive",
   "keywords": "hash,sha1,crc32,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/Hashes"
-} -->
+  "tocPath": "Facets/Hashes",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/hashes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,24 +4,24 @@ description: 联系人是 Outlook 中的一个项目，你可以在这里组织�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 34c2b1f16155597cf8e0b261fe32614969ecba7a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d2bdc1be9e504bc72ce12ffe924b6da0812b99ce
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991319"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513576"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 联系人是 Outlook 中的一个项目，你可以在这里组织和保存有关你通信的人员和组织的信息。联系人包含在联系人文件夹中。
 
 该资源支持：
 
-- 将您自己的数据添加到自定义属性，作为[扩展](/graph/extensibility-overview)。
+- 将你自己的数据作为[扩展](/graph/extensibility-overview)添加到自定义属性。
 - 订阅[更改通知](/graph/webhooks)。
-- 通过提供 [delta](../api/contact-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
+- 通过提供 [delta](../api/contact-delta.md) 函数，使用 [delta 查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -85,20 +85,20 @@ ms.locfileid: "27991319"
 |:---------------|:--------|:----------|
 |assistantName|String|联系人助理的姓名。|
 |birthday|DateTimeOffset|联系人的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|categories|String collection|与联系人关联的类别。 每个类别对应于[outlookCategory](outlookcategory.md)为用户定义的**displayName**属性。|
+|categories|字符串集合|与联系人关联的类别。 每个类别对应于[outlookCategory](outlookcategory.md)为用户定义的**displayName**属性。|
 |changeKey|String|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
-|children|String collection|联系人子女的姓名。|
+|children|String 集合|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
 |createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |部门|String|联系人所在的部门。|
 |displayName|String|联系人的显示名称。 您可以[创建](../api/user-post-contacts.md)或[更新](../api/contact-update.md)操作中指定的显示名称。 请注意，以后对其他属性更新可能会导致自动生成的值覆盖已指定的显示名称值。 若要保留现有的值，请始终作为[更新](../api/contact-update.md)操作中的 displayName 包括它。|
 |emailAddresses|[typedEmailAddress](typedemailaddress.md)集合|联系人的电子邮件地址。|
 |fileAs|String|联系人备案的姓名。|
-|标记|[followupFlag](followupflag.md)|标志值，该值指示状态、 开始日期、 截止日期或为该联系人的完成日期。 |
-|gender |字符串 |联系人的性别。 |
+|flag|[followupFlag](followupflag.md)|标志值，该值指示状态、 开始日期、 截止日期或为该联系人的完成日期。 |
+|gender |String |联系人的性别。 |
 |generation|String|联系人所属的代。|
 |givenName|String|联系人的名。|
-|id|String|联系人的唯一标识符。只读。|
+|id|字串符号|联系人的唯一标识符。只读。|
 |imAddresses|String collection|联系人的即时消息 (IM) 地址。|
 |initials|String|联系人的姓名缩写。|
 |jobTitle|String|联系人的职务。|
@@ -114,14 +114,14 @@ ms.locfileid: "27991319"
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
-|title|String|联系人的职位。|
+|title|字符串|联系人的职位。|
 |websites |[website](website.md) collection|与联系人关联的网站。 |
-|weddingAnniversary |日期 |联系人的婚礼周年日。 |
+|WeddingAnniversary |日期 |联系人的婚礼周年日。 |
 |yomiCompanyName|String|联系人的注音日文公司名称。|
 |yomiGivenName|String|联系人的注音日文名字。|
 |yomiSurname|String|联系人的注音日文姓氏。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|打开扩展名为该联系人定义的集合。 可为 Null。|
@@ -159,10 +159,15 @@ ms.locfileid: "27991319"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "contact resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/contact.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

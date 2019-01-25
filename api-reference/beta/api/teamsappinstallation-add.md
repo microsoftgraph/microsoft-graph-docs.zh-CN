@@ -1,19 +1,19 @@
 ---
-title: 将应用程序添加到团队
+title: 将应用添加到团队
 description: 将应用程序安装到指定的团队。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3f52d54850d1046d837821de1501968965678e8b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 353298dc43479057e689f43e3a7274523468caee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990269"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516824"
 ---
-# <a name="add-app-to-team"></a>将应用程序添加到团队
+# <a name="add-app-to-team"></a>将应用添加到团队
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将[应用程序](../resources/teamsapp.md)安装到指定的[团队](../resources/team.md)。
 
@@ -41,7 +41,7 @@ POST /teams/{id}/installedApps
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|teamsApp|字符串|添加应用程序的 id。|
+|teamsApp|String|添加应用程序的 id。|
 
 
 ## <a name="response"></a>响应
@@ -61,7 +61,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/installedApps
 }
 ```
 #### <a name="response"></a>响应
-下面展示了示例响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -78,13 +78,18 @@ Content-length: 401
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsappinstallation-add.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 ## <a name="see-also"></a>另请参阅
 

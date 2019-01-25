@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 98930017f9ca3f70501cd10e4a3029f7a240ce41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977772"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516740"
 ---
 # <a name="driveitem-resource-type"></a>driveItem 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **driveItem** 资源代表文件、文件夹或存储在驱动器中的 其他项。OneDrive 和 SharePoint 中的所有文件系统对象将作为 **driveItem** 资源返回。
 
@@ -100,34 +100,34 @@ ms.locfileid: "27977772"
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [音频][]          | 音频元数据（如果此项是一个音频文件）。只读。
+| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。只读。
 | createdBy            | [identitySet][]    | 识别创建项目的用户、设备和应用程序。只读。
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
 | cTag                 | String             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。
 | deleted              | [deleted][]        | 有关项目删除状态的信息。只读。
-| 说明          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
+| description          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
 | eTag                 | String             | 整个项目（元数据和内容）的 eTag。只读。
 | file                 | [file][]           | 文件元数据（如果此项是一个文件）。只读。
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
 | folder               | [folder][]         | 文件夹元数据（如果此项是一个文件夹）。只读。
-| id                   | 字符串             | 项在驱动器中的唯一标识符。只读。
+| id                   | String             | 项在驱动器中的唯一标识符。只读。
 | image                | [image][]          | 图像元数据（如果此项是一个图像）。只读。
 | lastModifiedBy       | [identitySet][]    | 上次修改项目的用户、设备和应用程序的标识。只读。
 | lastModifiedDateTime | DateTimeOffset     | 上次修改项目的日期和时间。只读。
 | location             | [geoCoordinates][] | 位置元数据（如果此项包含位置数据）。只读。
-| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
-| 包              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
+| name                 | String             | 项目名称（文件名和扩展名）。读写。
+| package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
-| photo                | [照片][]          | 照片元数据（如果此项包含照片）。只读。
+| photo                | [photo][]          | 照片元数据（如果此项包含照片）。只读。
 | publication          | [publicationFacet][] | 在支持此类操作的位置提供有关某个项目的已发布或签出状态信息。 默认情况下，不会返回此属性。 只读。 |
 | remoteItem           | [remoteItem][]     | 远程项目数据（如果此项是从驱动器共享的项目，而不是被访问的项目）。只读。
-| root                 | [根][]           | 如果此属性为非 NULL，则表明 driveItem 是驱动器中最上面的 driveItem。
+| root                 | [root][]           | 如果此属性为非 NULL，则表明 driveItem 是驱动器中最上面的 driveItem。
 | searchResult         | [searchResult][]   | 搜索元数据（如果此项目来自搜索结果）。只读。
-| shared               | [共享][]         | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。
+| shared               | [shared][]         | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。
 | sharepointIds        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 | size                 | Int64              | 项目大小，以字节为单位。只读。
 | specialFolder        | [specialFolder][]  | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。
-| video                | [视频][]          | 视频元数据（如果此项是一个视频）。只读。
+| video                | [video][]          | 视频元数据（如果此项是一个视频）。只读。
 | WebDavUrl            | String             | 项的可兼容 WebDAV 的 URL。
 | WebUrl               | String             | 在浏览器中显示此资源的 URL。只读。
 
@@ -138,13 +138,13 @@ ms.locfileid: "27977772"
 | 关系       | 类型                            | 说明
 |:-------------------|:--------------------------------|:--------------------------
 | activities         | [itemActivity][] 集合     | 最近发生在此项上的活动的列表。
-| 分析          | [itemAnalytics][]资源      | 有关此项发生查看活动的分析。
+| analytics          | [itemAnalytics][] 资源      | 有关此项发生查看活动的分析。
 | content            | 流                          | 内容流（如果此项表示一个文件）。
 | children           | driveItem 集合            | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
-| listItem           | [listItem][]                    | 在 SharePoint 中，关联的文档库列表项的驱动器。 只读。 可为 Null。
+| listItem           | [listItem][]                    | 在 SharePoint 中，关联的文档库列表项的驱动器。 只读。 可为 NULL。
 | permissions        | [permission][] 集合       | 项目的权限集。只读。可为 Null。
 | 缩略图         | [thumbnailSet][] 集合     | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
-| 版本           | [driveItemVersion][]集合 | 早期版本的项目列表。 有关详细信息，请参阅[获取早期版本][]。 只读。 可为 Null。
+| 版本           | [driveItemVersion][]集合 | 早期版本的项目列表。 有关详细信息，请参阅[获取早期版本][]。 只读。 可为 NULL。
 
 ## <a name="instance-attributes"></a>实例属性
 
@@ -165,7 +165,7 @@ URL 期间较短的时间 （1 小时） 之前失效将只能可用。 删除�
 |:---------------------------------------------------------|:------------------
 | [获取项目](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
 | [列出活动](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
-| [获取分析][]                                        | `GET /drive/items/{item-id}/analytics`
+| [获取分析结果][]                                        | `GET /drive/items/{item-id}/analytics`
 | [按间隔获取活动][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
 | [列出子项](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
 | [列出版本](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
@@ -188,7 +188,7 @@ URL 期间较短的时间 （1 小时） 之前失效将只能可用。 删除�
 | [预览项][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
-[获取分析]: ../api/itemanalytics-get.md
+[获取分析结果]: ../api/itemanalytics-get.md
 [按间隔获取活动]: ../api/itemactivity-getbyinterval.md
 
 ## <a name="remarks"></a>注解
@@ -218,7 +218,7 @@ URL 期间较短的时间 （1 小时） 之前失效将只能可用。 删除�
 [permission]: permission.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
-[Root]: root.md
+[root]: root.md
 [searchResult]: searchresult.md
 [Shared]: shared.md
 [sharepointIds]: sharepointids.md
@@ -230,11 +230,18 @@ URL 期间较短的时间 （1 小时） 之前失效将只能可用。 删除�
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Item is the main data model in the OneDrive API. Everything is an item.",
   "keywords": "item,facet,resource",
   "section": "documentation",
   "tocPath": "Items",
-  "tocBookmarks": { "Resources/Item": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Item": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/driveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

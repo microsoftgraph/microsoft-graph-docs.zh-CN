@@ -2,15 +2,15 @@
 title: governanceRoleAssignment 资源类型
 description: 代表向角色分配的用户或组。
 localization_priority: Normal
-ms.openlocfilehash: d873b122f319ca82882727f065818b33f7f9d44d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 77a5238aa337dd8d273d3156d285e081c4bc8875
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882689"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512680"
 ---
 # <a name="governanceroleassignment-resource-type"></a>governanceRoleAssignment 资源类型
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表向角色分配的用户或组。
 
@@ -34,23 +34,23 @@ ms.locfileid: "27882689"
 |:----------|:----------|:----------|
 |id         |字符串     |角色分配的 ID。 处于 GUID 格式。|
 |resourceId |String     |必需。 资源的角色分配相关联的 ID。 |
-|roleDefinitionId|字符串|必需。 角色分配相关联的角色定义的 ID。 |
-|subjectId|字符串       |必需。 该角色分配相关联的主题的 ID。 |
-|linkedEligibleRoleAssignmentId|字符串|如果这是`active assignment`上创建由于激活和`eligible assignment`，它代表该 ID `eligible assignment`;否则，值为`null`。 |
+|roleDefinitionId|String|必需。 角色分配相关联的角色定义的 ID。 |
+|subjectId|String       |必需。 该角色分配相关联的主题的 ID。 |
+|linkedEligibleRoleAssignmentId|String|如果这是`active assignment`上创建由于激活和`eligible assignment`，它代表该 ID `eligible assignment`;否则，值为`null`。 |
 |externalId   |String     |外部 ID 用于标识提供程序中的角色分配的资源。|
 |startDateTime|DateTimeOffset|角色分配的开始时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|对于非永久角色分配，这是时将过期的角色分配的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|assignmentState|字符串  |工作分配状态。 值可以是 <ul><li> `Eligible`合格的分配</li><li> `Active`-如果直接分配`Active`的管理员，或激活合格工作分配的用户。</li></ul>|
-|memberType|字符串      |成员的类型。 值可以是： <ul><li>`Inherited`-角色分配继承自父资源范围</li><li>`Group`-角色分配不继承的但来自的组分配成员身份</li><li>`User`-既不继承的角色分配和从组工作分配。</li></ul>|
+|assignmentState|String  |工作分配状态。 值可以是 <ul><li> `Eligible`合格的分配</li><li> `Active`-如果直接分配`Active`的管理员，或激活合格工作分配的用户。</li></ul>|
+|MemberType|String      |成员的类型。 值可以是： <ul><li>`Inherited`-角色分配继承自父资源范围</li><li>`Group`-角色分配不继承的但来自的组分配成员身份</li><li>`User`-既不继承的角色分配和从组工作分配。</li></ul>|
 
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|资源|[governanceResource](../resources/governanceresource.md)|此为只读属性。 与角色分配关联的资源。 |
-|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|此为只读属性。 与角色分配相关联的角色定义。 |
-|subject|[governanceSubject](../resources/governancesubject.md)|此为只读属性。 主题的角色分配相关联。 |
-|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|此为只读属性。 如果这是`active assignment`上创建由于激活和`eligible assignment`，它代表的`eligible assignment`;否则，值为`null`。 |
+|资源|[governanceResource](../resources/governanceresource.md)|只读。 与角色分配关联的资源。 |
+|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|只读。 与角色分配相关联的角色定义。 |
+|subject|[governanceSubject](../resources/governancesubject.md)|只读。 主题的角色分配相关联。 |
+|linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|只读。 如果这是`active assignment`上创建由于激活和`eligible assignment`，它代表的`eligible assignment`;否则，值为`null`。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -83,10 +83,15 @@ ms.locfileid: "27882689"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleAssignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceroleassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

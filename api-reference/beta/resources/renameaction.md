@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: RenameAction
 localization_priority: Normal
-ms.openlocfilehash: 88fa2738c014f028ebd2cc6e37f83151c7fc984a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: bc731a94167e16518c8dd9eaea7deabd5f519f7b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835705"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515466"
 ---
 # <a name="renameaction-resource-type"></a>RenameAction 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [**itemActivity**][activity] 上存在 **RenameAction** 资源指示活动重命名了一个项。
 
@@ -39,16 +39,21 @@ ms.locfileid: "27835705"
 | 属性名称 | 类型   | 说明
 |:--------------|:-------|:----------------------------------------------------
 | oldName       | string | 项的原名称。
-| newName       | string | 新项目的名称。
+| newname       | string | 新项目的名称。
 
 ## <a name="remarks"></a>注解
 
 项活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The RenameAction object provides information about an activity that renamed an item.",
   "keywords": "activities,activity,action,rename,renamed",
   "section": "documentation",
-  "tocPath": "Resources/RenameAction"
-} -->
+  "tocPath": "Resources/RenameAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/renameaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

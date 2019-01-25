@@ -4,16 +4,16 @@ description: '提供用于自定义资源实体学校数据配置文件同步设
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 51563255c11406c26cfa3b02b7b7bb868ed935c8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8af6c5e2173a8b04e730529123b4608fd236f959
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415654"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513604"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>educationSynchronizationCustomization 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 提供用于自定义资源实体学校数据配置文件同步设置。 自定义项可以应用于正在同步的所有实体。 
 
@@ -23,7 +23,7 @@ ms.locfileid: "29415654"
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **optionalPropertiesToSync** | 字符串集合 |  要同步的属性名称的集合。如果设置为 null，所有属性将都为同步。       |
+| **optionalPropertiesToSync** | Collection of String |  要同步的属性名称的集合。如果设置为 null，所有属性将都为同步。       |
 | **synchronizationStartDate** | 日期/时间 |  同步的开始日期。 此值应设置为未来日期。 如果配置文件安装完成后，将会同步设置为 null，资源。 **注意：** 这仅适用于**StudentEnrollment**属性。      |
 |**isSyncDeferred** |Boolean | 指示是否对父实体的同步推迟到以后。 |
 | **allowDisplayNameUpdate** | Boolean |  指示是否可以通过同步来覆盖资源的显示名称。         |
@@ -46,3 +46,11 @@ ms.locfileid: "29415654"
     "allowDisplayNameUpdate": "Boolean"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationcustomization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

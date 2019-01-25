@@ -2,25 +2,25 @@
 title: convertIdResult 资源类型
 description: 执行由 translateExchangeIds 函数 ID 格式转换的结果。
 localization_priority: Normal
-ms.openlocfilehash: 7e1878de3d3b7ddee36d799c928d6a130b578200
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: db28172d009ee8a8a39b7e02733d893dc20a81e5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821453"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516523"
 ---
 # <a name="convertidresult-resource-type"></a>convertIdResult 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 执行由[translateExchangeIds](../api/user-translateexchangeids.md)函数 ID 格式转换的结果。
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | Description |
+| 属性 | 类型 | 说明 |
 |:---------|:-----|:------------|
-| sourceId | 字符串 | 已转换的标识符。 此值是原始、 未转换标识符。 |
-| targetId | 字符串 | 转换后的标识符。 此值不存在，如果转换失败。 |
+| SourceId | String | 已转换的标识符。 此值是原始、 未转换标识符。 |
+| targetId | String | 转换后的标识符。 此值不存在，如果转换失败。 |
 | errorDetails | [genericError](genericerror.md) | Error 对象指示转换失败的原因。 此值不存在，如果转换成功。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -45,3 +45,11 @@ ms.locfileid: "27821453"
   }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/convertidresult.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

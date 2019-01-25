@@ -1,17 +1,17 @@
 ---
 title: servicePlanInfo 资源类型
-description: 包含与订阅的 SKU 相关的服务计划有关的信息。subscribedSku 实体的 **servicePlans** 属性是一个 **servicePlanInfo** 集合。
+description: 包含与订阅的 SKU 相关的服务计划有关的信息。**subscribedSku** 实体的 **servicePlans** 属性是一个 servicePlanInfo 集合。
 localization_priority: Normal
-ms.openlocfilehash: f0cb96a11b280fcda4e97a6dad30a9e5200c2e88
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e759082984cc66f7d3efec3cbb7cbee11561f253
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842677"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512603"
 ---
 # <a name="serviceplaninfo-resource-type"></a>servicePlanInfo 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含与订阅的 SKU 相关的服务计划有关的信息。[subscribedSku](subscribedsku.md) 实体的 **servicePlans** 属性是一个 **servicePlanInfo** 集合。
 
@@ -22,7 +22,7 @@ ms.locfileid: "27842677"
 |servicePlanId|Guid|服务计划的唯一标识符。|
 |servicePlanName|String|服务计划的名称。|
 |provisioningStatus|字符串|服务计划的预配状态。可能的值：<br/>“Success” - 服务已完全预配。<br/>“Disabled” - 服务已禁用。<br/>“PendingInput” - 服务尚未预配；等待服务确认。<br/>"PendingActivation"-服务设置，但需要由管理员 （例如，Intune_O365 服务计划） 的显式激活。<br/>“PendingProvisioning” - Microsoft 已将新服务添加到产品 SKU，但它尚未在租户中激活。|
-|appliesTo|字符串|可以向其分配服务计划的对象。可能的值：<br/>“User” - 服务计划可分配给各个用户。<br/>“Company” - 服务计划可分配给整个租户。|
+|appliesTo|String|可以向其分配服务计划的对象。可能的值：<br/>“User” - 服务计划可分配给各个用户。<br/>“Company” - 服务计划可分配给整个租户。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -48,10 +48,15 @@ ms.locfileid: "27842677"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "servicePlanInfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/serviceplaninfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

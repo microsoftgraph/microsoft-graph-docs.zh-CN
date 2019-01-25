@@ -4,16 +4,16 @@ ms.author: chackman
 title: 取消追随驱动器项目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a42f740b3ea6f706529a5353e9cbb846bb7a4e6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 064ab2d5ad86df5341a0f2f5a46fe7c227ff35fb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945949"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513107"
 ---
 # <a name="unfollow-drive-item"></a>取消追随驱动器项目
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 取消追随[driveItem](../resources/driveitem.md)。
 
@@ -63,10 +63,15 @@ DELETE /me/drive/following/{item-id}
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Unfollow an item that the user is following.",
   "keywords": "unfollow item",
   "section": "documentation",
-  "tocPath": "Items/Unfollow"
-} -->
+  "tocPath": "Items/Unfollow",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-unfollow.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,21 +1,21 @@
 ---
 title: 组：subscribeByMail
-description: 调用此方法将使当前用户可以接收电子邮件通知，对此组，有关新帖子、 事件和文件组中。 Office 365 组仅支持。
+description: 调用此方法将允许当前用户接收有关该组中新帖子、活动和文件的电子邮件通知。仅支持 Office 365 组。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: da277a586a793c07067f793088b15d4570efbf1c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0a334daa005947099da324aab31ccc2a1da6b6e0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984673"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516418"
 ---
 # <a name="group-subscribebymail"></a>组：subscribeByMail
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-调用此方法将使当前用户可以接收电子邮件通知，对此组，有关新帖子、 事件和文件组中。 Office 365 组仅支持。
+调用此方法将使当前用户可以接收电子邮件通知，对此组，有关新帖子、 事件和文件组中。 仅支持 Office 365 组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -65,10 +65,15 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: subscribeByMail",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-subscribebymail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

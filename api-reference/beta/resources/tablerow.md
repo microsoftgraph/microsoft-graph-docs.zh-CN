@@ -4,16 +4,16 @@ description: 表示表中的行。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2d96ef5c23361cd8b15b47af54a0584e21c48b95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e1c9dc0f9aad61d815098b76da8620d808c2538a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971660"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513996"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示表中的行。
 
@@ -22,11 +22,11 @@ ms.locfileid: "27971660"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 TableRow](../api/tablerow-get.md) | [TableRow](tablerow.md) |读取 tableRow 对象的属性和关系。|
-|[更新](../api/tablerow-update.md) | [TableRow](tablerow.md)  |更新 TableRow 对象。 |
+|获取 TableRow | [TableRow](tablerow.md) |读取 tableRow 对象的属性和关系。|
+|[Update](../api/tablerow-update.md) | [TableRow](tablerow.md)  |更新 TableRow 对象。 |
 |[区域](../api/tablerow-range.md)|[Range](range.md)|返回与整个行相关联的范围对象。|
 |[删除](../api/tablerow-delete.md)|无|从表中删除行。|
-|[列出](../api/tablerow-list.md) | [TableRow](tablerow.md) 集合 |获取 tableRow 对象的集合。 |
+|[List](../api/tablerow-list.md) | [TableRow](tablerow.md) 集合 |获取 tableRow 对象的集合。 |
 |[Itemat](../api/tablerowcollection-itemat.md)|[TableRow](tablerow.md)|按行在集合中的位置获取此对象。|
 |[Add](../api/tablerowcollection-add.md)|[TableRow](tablerow.md)|向表中添加新行。|
 
@@ -36,7 +36,7 @@ ms.locfileid: "27971660"
 |index|int|返回表的行集合内行的索引编号。从零开始编制索引。只读。|
 |values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 
@@ -62,10 +62,15 @@ ms.locfileid: "27971660"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "TableRow resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/tablerow.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

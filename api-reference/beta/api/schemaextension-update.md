@@ -3,16 +3,16 @@ title: 更新 schemaExtension
 description: 更新指定 schemaExtension 的定义中的属性。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: cdd0ac41e65e72ba16f5111c8b67869321f934dc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f457609af15716ef2ada3945132afd285fd2394c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938494"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515536"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新指定 [schemaExtension](../resources/schemaextension.md) 的定义中的属性。
 
@@ -51,7 +51,7 @@ PATCH /schemaExtensions/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|说明|String|架构扩展的说明。|
+|说明|字符串|架构扩展的说明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。仅允许增量更改。 |
 |status|String|架构扩展的生命周期状态。 在创建时的初始状态是**InDevelopment**。 可能的状态切换为**InDevelopment**到**有空**和到**已否决**的**有空**。|
 |targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。仅允许增量更改。|
@@ -106,10 +106,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update schemaextension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/schemaextension-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

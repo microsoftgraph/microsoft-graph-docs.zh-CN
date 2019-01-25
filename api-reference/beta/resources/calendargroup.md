@@ -4,16 +4,16 @@ description: 一组的用户日历。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 10a840fd9ae9835eb5ca6a96b88719605f89245b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: cea68da3a91396972c4e237d1fdaf0e16d65e3a3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985289"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515648"
 ---
 # <a name="calendargroup-resource-type"></a>calendarGroup 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 一组的用户日历。
 
@@ -21,12 +21,12 @@ ms.locfileid: "27985289"
 
 | 方法                                                      | 返回类型                        | 说明                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
-| [列出日历组](../api/user-list-calendargroups.md)  | [日历](calendar.md) 集合 | 获取用户的日历组。                               |
-| [创建日历组](../api/user-post-calendargroups.md) | [日历](calendar.md)            | 创建新的日历组。                                  |
+| [列出日历组](../api/user-list-calendargroups.md)  | [Calendar](calendar.md) collection | 获取用户的日历组。                               |
+| [创建日历组](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | 创建新的日历组。                                  |
 | [创建日历组](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | 读取 calendar 对象的属性和关系。 |
 | [更新](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | 更新 calendarGroup 对象。                                  |
 | [删除](../api/calendargroup-delete.md)                    | 无                               | 删除 calendarGroup 对象。                                  |
-| [列出日历](../api/calendargroup-list-calendars.md)    | [日历](calendar.md) 集合 | 列出日历组中的日历。                           |
+| [列出日历](../api/calendargroup-list-calendars.md)    | [Calendar](calendar.md) collection | 列出日历组中的日历。                           |
 | [创建日历](../api/calendargroup-post-calendars.md)   | [日历](calendar.md)            | 在日历组中创建新日历。                    |
 
 ## <a name="properties"></a>属性
@@ -36,9 +36,9 @@ ms.locfileid: "27985289"
 | name      | String | 组名称。                                                                                                                                                                                           |
 | changeKey | String | 标识日历组的版本。每次日历组更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。只读。 |
 | classId   | Guid   | 类标识符。只读。                                                                                                                                                                          |
-| id        | String | 组的唯一标识符。只读。                                                                                                                                                                 |
+| id        | 字串符号 | 组的唯一标识符。只读。                                                                                                                                                                 |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 关系 | 类型                               | 说明                                                                    |
 | :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |
@@ -69,10 +69,15 @@ ms.locfileid: "27985289"
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "calendarGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/calendargroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

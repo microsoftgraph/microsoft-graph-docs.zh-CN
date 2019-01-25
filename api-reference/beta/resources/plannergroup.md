@@ -1,19 +1,19 @@
 ---
 title: plannerGroup 资源类型
-description: '**PlannerGroup**资源为组提供计划工具资源的访问权限。 它不包含任何可用的属性。'
+description: '**plannerGroup** 资源提供组的 Planner 资源的访问权限。它不包含任何可用属性。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 54b6b1d61a98aae3918fd3fcb888f470179ece15
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 84bb20d0b13f9a99db2f8c59b20e0c9c7c87f93f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961706"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513779"
 ---
 # <a name="plannergroup-resource-type"></a>plannerGroup 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **plannerGroup** 资源提供[组](group.md)的 Planner 资源的访问权限。它不包含任何可用属性。
 
@@ -21,7 +21,7 @@ ms.locfileid: "27961706"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[List plans](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) collection| 获取 **plannerPlan** 对象集合。|
+|[List plans](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) 集合| 获取 **plannerPlan** 对象集合。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -53,10 +53,15 @@ ms.locfileid: "27961706"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannergroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

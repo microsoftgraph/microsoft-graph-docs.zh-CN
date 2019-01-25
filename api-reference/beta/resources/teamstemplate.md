@@ -4,16 +4,16 @@ description: 介绍 teamsTemplate 实体。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9bd5047950ed1ed3c57950d2c4b708a78b570649
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e75b3d8df318b116d5d908a40d4f756d9ee70864
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940083"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513044"
 ---
 # <a name="teamstemplate-resource-type"></a>teamsTemplate 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 工作组模板是在 Microsoft 团队中创建[团队](../resources/team.md)蓝图。 模板指定在使用模板创建新团队结构、 设置和偶数应设置的内容。 Microsoft 提供了一套基本模板，客户可以节省自己的自定义模板。
 
@@ -21,7 +21,7 @@ ms.locfileid: "27940083"
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | 字符串   | 模板的唯一标识符。 不能为 null。 |
+| id                  | String   | 模板的唯一标识符。 不能为 null。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -39,5 +39,13 @@ ms.locfileid: "27940083"
 
 # <a name="see-also"></a>另请参阅
 
-- [团队](team.md)
+- [team](team.md)
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamstemplate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

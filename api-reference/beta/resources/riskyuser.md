@@ -4,16 +4,16 @@ description: 代表 Azure AD 用户面临危险。 Azure AD 不断计算用户�
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 2e4cf47ea78583958c79750e0b2ad4fa12230d22
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950730"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515711"
 ---
 # <a name="riskyusers-resource-type"></a>riskyUsers 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表 Azure AD 用户面临危险。 Azure AD 不断计算用户根据各种信号和机器学习的风险。 此 API 在 Azure AD 中所有存在风险的用户提供编程访问。
 
@@ -37,16 +37,16 @@ ms.locfileid: "27950730"
 |`isGuest`|`bool`|指示用户是否来宾用户。 可取值为：`true`、`false`。 如果用户的标识位于中考虑租户之外，则为 true。 此用户可以在 Azure AD，MSA 中是 B2B 或 B2C 用户标识或第三方标识提供程序。 如果用户的标识位于内部中考虑租户则为 false|
 |`riskDetail`|`riskDetail`|提供原因后面的 risky 用户、 登录或风险事件特定状态。 可能的值为： `none`， `adminGeneratedTemporaryPassword`， `userPerformedSecuredPasswordChange`， `userPerformedSecuredPasswordReset`， `adminConfirmedSigninSafe`， `aiConfirmedSigninSafe`， `userPassedMFADrivenByRiskBasedPolicy`， `adminDismissedAllRiskForUser`， `adminConfirmedSigninCompromised`， `unknownFutureValue`。 值`none`是指的任何操作已执行上的用户或登录到目前为止。|
 |`riskLevel`|`riskLevel`|提供 risky 用户、 登录或风险事件的总体风险级别。 可能的值为： `none`， `low`， `medium`， `high`， `hidden`，和`unknownFutureValue`。 值`hidden`是指为 Azure AD 身份保护未启用的用户或登录。|
-|`riskState`|`riskState`|提供 risky 用户、 登录或风险事件的风险状态。 可能的值为： `none`， `confirmedSafe`， `remediated`， `dismissed`， `atRisk`， `confirmedCompromised`， `unknownFutureValue`。|
+|`riskState`|`riskState`|提供 risky 用户、 登录或风险事件的风险状态。 可取值包括：`none`、`confirmedSafe`、`remediated`、`dismissed`、`atRisk`、`confirmedCompromised`、`unknownFutureValue`。|
 |`riskLastUpdatedDateTime`|`datetime`|日期和 risky 用户上次更新时间|
 |`userDisplayName`|`string`|Risky 的用户显示名称|
 |`userPrincipalName`|`string`|Risky 的用户主体名称|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|ID|UserObjectId| 与给定的风险事件相关联的用户的唯一标识符。|
+|id|UserObjectId| 与给定的风险事件相关联的用户的唯一标识符。|
 |isGuest|isGuest| Risky 用户可以是家庭用户 (B2E) 或来宾用户 （B2B、 B2C）。|
 |被|被| 用户可能也不能删除。 |
 |riskState|riskState| Risky 用户可能存在多个状态之一。 |
@@ -82,10 +82,15 @@ ms.locfileid: "27950730"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "riskyusers resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/riskyuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

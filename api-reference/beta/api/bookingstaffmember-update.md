@@ -1,20 +1,20 @@
 ---
 title: 更新 bookingstaffmember
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: 更新在指定 bookingbusiness bookingStaffMember 的属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 597647d86df8f34c7fb9a7eba93a5eccc1129f6c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 608580a16d796a4ee1b296c0a19caea110326cff
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952221"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514556"
 ---
 # <a name="update-bookingstaffmember"></a>更新 bookingstaffmember
 
- > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
- 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 更新在指定[bookingbusiness](../resources/bookingbusiness.md) [bookingStaffMember](../resources/bookingstaffmember.md)的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -23,7 +23,7 @@ ms.locfileid: "27952221"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Bookings.ReadWrite.All Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  | 
+|应用程序 | 不支持。  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,12 +40,12 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|布尔|True 表示，如果该人员成员是 Office 365 用户，预订 API 使用 Office 365，以及**workingHours**属性的员工成员的个人日历来确定可用性。 |
-|colorIndex|Int32|标识要表示员工成员的颜色。 颜色对应于预订应用程序中的**人员详细信息**页面中的调色板。|
+|availabilityIsAffectedByPersonalCalendar|Boolean|True 表示，如果该人员成员是 Office 365 用户，预订 API 使用 Office 365，以及**workingHours**属性的员工成员的个人日历来确定可用性。 |
+|ColorIndex|Int32|标识要表示员工成员的颜色。 颜色对应于预订应用程序中的**人员详细信息**页面中的调色板。|
 |displayName|字符串|员工成员，显示给客户的名称。|
 |emailAddress|String|员工成员的电子邮件地址。 这可以随着业务，相同的 Office 365 租户中或不同的电子邮件域中。 如果**sendConfirmationsToOwner**属性设置为使用此电子邮件地址的企业计划策略中，则返回 true。|
 |role|string| 企业中的人员成员角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。|
-|useBusinessHours|布尔|True 表示由业务的**工作时间**属性来确定员工成员的可用性。 False，则意味着可用性由员工成员的**workingHouse**属性设置。|
+|useBusinessHours|Boolean|True 表示由业务的**工作时间**属性来确定员工成员的可用性。 False，则意味着可用性由员工成员的**workingHouse**属性设置。|
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md)集合|员工成员了可供预定的一周中每一天时间范围。|
 
 ## <a name="response"></a>响应
@@ -69,7 +69,7 @@ Content-type: application/json
             "day":"monday",
             "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
             "timeSlots":[
-   
+
             ]
         },
         {
@@ -128,7 +128,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -139,10 +139,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update bookingstaffmember",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: 创建协议
 description: 创建新的协议对象。
 localization_priority: Normal
-ms.openlocfilehash: 4768912a7c5be722878d6b910d6d68ded460c702
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5040651e032a4f5d0ef2340646f11eb51bfff5eb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870635"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514423"
 ---
 # <a name="create-agreement"></a>创建协议
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新的[协议](../resources/agreement.md)对象。
 ## <a name="permissions"></a>权限
@@ -31,7 +31,7 @@ POST /agreements
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必填。 |
+| Authorization | 字符串 | 持有者令牌 必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[协议](../resources/agreement.md)对象的 JSON 表示形式。
@@ -40,11 +40,11 @@ POST /agreements
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|协议中的显示名称。|
-|isViewingBeforeAcceptanceRequired|布尔|指示用户是否能够展开和查看接受之前协议。|
-|文件/文件名|字符串|协议文件 (例如，TOU.pdf) 的名称。|
-|文件/isDefault|布尔|指示是否这是默认协议文件，是否无区域性匹配的客户端首选项。 如果没有文件被标记为默认，第一个将被视为默认。|
-|文件/语言|字符串|区域性格式 languagecode2-国家/地区/regioncode2 中的协议文件。 languagecode2 是小写字母双字母代码派生自 ISO 639-1。 国家/地区/regioncode2 派生自 ISO 3166，它通常包括两个大写字母或 BCP 47 语言标记 (例如，EN-US)。|
+|displayName|String|协议中的显示名称。|
+|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否能够展开和查看接受之前协议。|
+|文件/文件名|String|协议文件 (例如，TOU.pdf) 的名称。|
+|文件/isDefault|Boolean|指示是否这是默认协议文件，是否无区域性匹配的客户端首选项。 如果没有文件被标记为默认，第一个将被视为默认。|
+|文件/语言|String|区域性格式 languagecode2-国家/地区/regioncode2 中的协议文件。 languagecode2 是小写字母双字母代码派生自 ISO 639-1。 国家/地区/regioncode2 派生自 ISO 3166，它通常包括两个大写字母或 BCP 47 语言标记 (例如，EN-US)。|
 |文件/fileData/数据|Binary|代表使用条款 PDF 文档的数据。|
 
 ## <a name="response"></a>响应
@@ -98,10 +98,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create agreement",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

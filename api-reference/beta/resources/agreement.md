@@ -2,16 +2,16 @@
 title: 协议资源类型
 description: 表示一个租户的可自定义的创建和管理与 Azure Active Directory (Azure AD) 使用协议条款。 可以使用以下方法来创建和管理 Azure Active Directory 使用条款的功能，根据您的方案。
 localization_priority: Normal
-ms.openlocfilehash: 8c082ed6229b44cc3a3d4cba6dd8645feee5d07c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b253877f1bf82e4fbc61cebaef3c1bce208d9cca
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845344"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513849"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示一个租户的可自定义的创建和管理与 Azure Active Directory (Azure AD) 使用协议条款。 可以使用以下方法来创建和管理[Azure Active Directory 使用条款的功能](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou)，根据您的方案。
 
@@ -32,14 +32,14 @@ ms.locfileid: "27845344"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|字符串|协议中的显示名称。|
+|displayName|String|协议中的显示名称。|
 |id|String| 只读。|
-|isViewingBeforeAcceptanceRequired|布尔|指示用户是否能够展开和查看接受之前协议。|
+|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否能够展开和查看接受之前协议。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|files|[agreementFile](agreementfile.md)集合|此为只读属性。 Pdf 链接到此协议。|
+|files|[agreementFile](agreementfile.md)集合|只读。 Pdf 链接到此协议。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -64,10 +64,15 @@ ms.locfileid: "27845344"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "agreement resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/agreement.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

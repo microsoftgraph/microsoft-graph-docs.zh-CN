@@ -4,16 +4,16 @@ description: 有关跨邮件、 联系人和社交网络从个人信息的聚合
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 7f0f3c71769d2ad8927f634b065253cf118316b4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 32a2c9905ab52e9b229bb8673fb4a84d90a706ac
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929380"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512400"
 ---
 # <a name="person-resource-type"></a>person 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 有关跨邮件、 联系人和社交网络从个人信息的聚合。 人员可以是本地联系人、 社交网络的联系人，贵组织的目录和 （如电子邮件和 Skype） 最近通信的人员。
 
@@ -34,8 +34,8 @@ ms.locfileid: "27929380"
 |emailAddresses|[rankedEmailAddress](rankedemailaddress.md)集合|人员的电子邮件地址。|
 |givenName|string|人员的名字。|
 |id|string|人员的唯一标识符。只读。|
-|isFavorite|boolean|如果用户已将此人员标记为常用联系人，则为 `true`。|
-|mailboxType|string|由此人的电子邮件地址的邮箱的类型。|
+|isFavorite|布尔|如果用户已将此人员标记为常用联系人，则为 `true`。|
+|MailboxType|string|由此人的电子邮件地址的邮箱的类型。|
 |officeLocation|string|人员的办公室位置。|
 |personNotes|string|用户对此人员所做的自由格式备注。|
 |personType|string|人员，例如通讯组列表的类型。|
@@ -94,10 +94,15 @@ ms.locfileid: "27929380"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "person resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/person.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

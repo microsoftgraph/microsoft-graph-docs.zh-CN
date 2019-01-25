@@ -2,16 +2,16 @@
 title: 创建 identityProvider
 description: 通过指定显示名称、 identityProvider 类型、 客户端 ID 和客户端机密创建新 identityProvider。
 localization_priority: Normal
-ms.openlocfilehash: 50ead5acbbda7725e44de55865d6fe2184c89647
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c0b005d729510fa68d9edd8bfea7b85687543cf2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866232"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514647"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过指定显示名称、 identityProvider 类型、 客户端 ID 和客户端机密创建新[identityProvider](../resources/identityprovider.md) 。
 
@@ -45,12 +45,12 @@ POST /identityProviders
 
 在请求正文中，提供[identityProvider](../resources/identityprovider.md)对象的 JSON 表示形式。 下表中列出的所有属性都是必需的。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|字符串|应用程序的客户端 ID。 这是注册的标识提供程序的应用程序时所获得的客户端 ID。|
-|clientSecret|字符串|应用程序客户端机密。 这是注册的标识提供程序的应用程序时所获得的客户端机密。|
-|name|字符串|标识提供程序的显示名称。|
-|type|字符串|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|clientId|String|应用程序的客户端 ID。 这是注册的标识提供程序的应用程序时所获得的客户端 ID。|
+|client_secret|String|应用程序客户端机密。 这是注册的标识提供程序的应用程序时所获得的客户端机密。|
+|name|String|标识提供程序的显示名称。|
+|type|String|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ## <a name="response"></a>响应
 
@@ -99,10 +99,15 @@ Content-type: application/json
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create identityProvider",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/identityprovider-post-identityproviders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
