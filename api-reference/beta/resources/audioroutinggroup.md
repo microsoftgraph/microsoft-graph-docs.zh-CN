@@ -4,16 +4,16 @@ description: 音频路由组存储在进行多方对话中的参与者之间的�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0e18a9beb660b9bae0c1bbe1034ec64790d369fa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980186"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509621"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 音频路由组存储在进行多方对话中的参与者之间的专用音频路由。 源是参与者本身而接收器是进行多方对话中的其他参与者的子集。
 
@@ -33,7 +33,7 @@ ms.locfileid: "27980186"
 | :----------   | :---------------- | :--------------------------------------------------------------------|
 | id            | String            | 只读。 生成的服务器。                                         |
 | 接收器     | 字符串集合 | 接收参与者 id 的列表。                                   |
-| routingMode   | 字符串            | 路由组模式。  可取值为：`oneToOne`、`multicast`。   |
+| routingMode   | String            | 路由组模式。  可取值为：`oneToOne`、`multicast`。   |
 | sources       | 字符串集合 | 源参与者 id 的列表。                                      |
 
 > **注意：** 路由模式确定源和接收器的限制。 支持以下路由组。
@@ -42,7 +42,7 @@ ms.locfileid: "27980186"
 
 > **注意：** 如果创建许多音频路由组 （例如每个参与者自动程序），则将被转接仅顶部 4 基准扬声器的音频。 它与自定义音频路由组，即使意味着，如果扬声器不调节主混音器中，即使仅为此扬声器和自动程序的专用音频组他/她不能通过 bot 听到。
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -66,10 +66,15 @@ ms.locfileid: "27980186"
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "audioRoutingGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/audioroutinggroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

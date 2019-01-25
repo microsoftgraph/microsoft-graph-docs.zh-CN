@@ -2,16 +2,16 @@
 title: 配置与自定义目标属性同步
 description: 您可以自定义您的同步架构，以包括目标目录中定义的自定义属性。 本文介绍如何通过添加名的新字段的自定义的销售队伍订阅`officeCode`。 您设置同步从 Azure Active Directory (Azure AD) 到销售队伍，并为每个用户，您将填充`officeCode`字段中销售队伍的值与`extensionAttribute10`字段中 Azure AD。
 localization_priority: Normal
-ms.openlocfilehash: 3a7612682794109a5f94318304c8a8898764ccb8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1b0a19bab796f7bd8261ebf898450c07bf1415e0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806753"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508879"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>配置与自定义目标属性同步
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 您可以自定义您的同步架构，以包括目标目录中定义的自定义属性。 本文介绍如何通过添加名的新字段的自定义的销售队伍订阅`officeCode`。 您设置同步从 Azure Active Directory (Azure AD) 到销售队伍，并为每个用户，您将填充`officeCode`字段中销售队伍的值与`extensionAttribute10`字段中 Azure AD。
 
@@ -262,3 +262,11 @@ HTTP/1.1 201 No Content
 ```
 
 如果架构已成功保存下, 一步迭代的同步作业，则它将启动重新处理您 Azure AD 中的所有帐户和新的映射将应用于所有已设置的帐户。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

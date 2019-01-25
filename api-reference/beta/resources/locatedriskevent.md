@@ -2,16 +2,16 @@
 title: locatedRiskEvent 资源类型
 description: 检测到的 Azure Active Directory 标识保护基于位置数据的风险事件。 位于的风险事件类型包括：
 localization_priority: Normal
-ms.openlocfilehash: 256c7a980fb9540e7e80337a5b8aad29fe73f26a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 20fe76099c511483144b42e33fc260910debb5ed
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867555"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510258"
 ---
 # <a name="locatedriskevent-resource-type"></a>locatedRiskEvent 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检测到的[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)基于位置数据的风险事件。 位于的风险事件类型包括：
 * [从匿名登录 IP 地址](anonymousipriskevent.md)
@@ -28,13 +28,13 @@ ms.locfileid: "27867555"
 |[获取 locatedRiskEvent](../api/locatedriskevent-get.md) | [locatedRiskEvent](locatedriskevent.md) |读取属性和 locatedRiskEvent 对象的关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 日期和时间的风险事件已关闭|
 |createdDateTime|dateTimeOffset| 日期和时间的风险事件的创建。 始终是大于或等于风险事件本身的 datetime。 这是正确的属性，以用作筛选器时查询风险事件。|
 |id|string| 只读|
 |ipAddress|string| 登录 IP 地址|
-|location|string| 挂接到登录的 IP 地址的位置|
+|location|字符串| 挂接到登录的 IP 地址的位置|
 |riskEventDateTime|dateTimeOffset| 日期和风险事件发生的时间|
 |riskEventStatus|string| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
 |riskLevel|string| 可取值为：`low`、`medium`、`high`。|
@@ -43,10 +43,10 @@ ms.locfileid: "27867555"
 |userId|string| 风险的用户 id|
 |userPrincipalName|string| 风险的用户的用户主体名称|
 
-## <a name="relationships"></a>Relationships
-| 关系 | 类型   |Description|
+## <a name="relationships"></a>关系
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[用户](user.md)| 只读。可为 NULL。|
+|impactedUser|[user](user.md)| 只读。可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -80,10 +80,15 @@ ms.locfileid: "27867555"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "locatedRiskEvent resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/locatedriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

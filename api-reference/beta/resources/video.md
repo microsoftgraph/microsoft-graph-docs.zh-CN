@@ -4,20 +4,20 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Video
 localization_priority: Normal
-ms.openlocfilehash: 3883dd494304409b76d10781039424267ada85f0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: db560abc31daecc6064820ef6ef958808ddbc297
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866631"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508543"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **视频**资源将与视频相关的数据项分组到一个单一结构。
 
-如果 [**DriveItem**](driveitem.md) 具有一个非 null **视频**方面，则该项表示一个视频文件。通过从文件中提取元数据对**视频**资源的属性进行填充。
+如果 DriveItem 具有一个非 null 视频方面，则该项表示一个视频文件。通过从文件中提取元数据对视频资源的属性进行填充。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -71,10 +71,15 @@ ms.locfileid: "27866631"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The video facet provides information about the properties of a video file.",
   "keywords": "bitrate,duration,size,video",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/video.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

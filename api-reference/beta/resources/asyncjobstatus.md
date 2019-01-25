@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: AsyncJobStatus
 localization_priority: Normal
-ms.openlocfilehash: 8c442ad8ff3b23d20e8377a224a3f67b00163f5f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ee7cc92bff47edc3a1a15b5f27cb2f5afe061d4e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820963"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510209"
 ---
 # <a name="asyncjobstatus-resource"></a>AsyncJobStatus 资源
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此资源提供异步作业进度状态的相关信息。
 
@@ -39,9 +39,14 @@ ms.locfileid: "27820963"
 | **percentageComplete** | Double | 指明完成百分比的值，介于 0 到 100 之间。                          |
 | **status**             | String | 映射到作业状态可能值枚举的字符串值。 |
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "AsyncJobResource provides details about how to poll for an async completion.",
   "keywords": "async,job status,async status,copy,upload from url",
-  "section": "documentation"
-} -->
+  "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/asyncjobstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

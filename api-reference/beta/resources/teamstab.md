@@ -4,16 +4,16 @@ description: 'TeamsTab 是一个选项卡的具有固定 （附加） 到团队�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3c5cf5ef33f53cfaca7189df24e5dfd880a77241
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2db59065f139e2e704c3394f7afb82cba91c33fe
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947146"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509285"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 TeamsTab 是[选项卡上](../resources/teamstab.md)的具有固定 （附加） 到[团队](team.md)内的[通道](channel.md)。 
 
@@ -32,7 +32,7 @@ TeamsTab 是[选项卡上](../resources/teamstab.md)的具有固定 （附加）
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|  ID              |   string                  |  唯一标识通道选项读取仅的特定实例的标识符。     |
+|  id              |   string                  |  唯一标识通道选项读取仅的特定实例的标识符。     |
 |  displayName            |   string                  |  Tab 的名称。     |
 |  name            |   string                  |  （已过时）Tab 的名称。     |
 |  teamsAppId           |   string             |  应用程序定义的选项卡的标识符。选项卡创建后，无法更改此值。     |
@@ -40,7 +40,7 @@ TeamsTab 是[选项卡上](../resources/teamstab.md)的具有固定 （附加）
 |  webUrl          |   string                  |  深度链接的选项卡实例的 url。 只读。     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。配置仅后设置此属性时，才视为选项卡。     |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 关系 | 类型   | 说明 |
 |:---------------|:--------|:----------|
@@ -71,13 +71,18 @@ TeamsTab 是[选项卡上](../resources/teamstab.md)的具有固定 （附加）
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsTab resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamstab.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 ## <a name="see-also"></a>另请参阅
 

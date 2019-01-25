@@ -2,16 +2,16 @@
 title: 对程序的列表 programControls
 description: 在 Azure AD 中访问审阅功能，列出所有 programControl 对象，链接到特定程序。
 localization_priority: Normal
-ms.openlocfilehash: 8895634b098474cdbeab695cbe730a1e2fd02e2c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 9134e9aa322446553da2e0c644a6fc8b43b0b54d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809331"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508263"
 ---
 # <a name="list-programcontrols-of-a-program"></a>对程序的列表 programControls
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中，列出所有[programControl](../resources/programcontrol.md)对象，链接到特定程序。
 ## <a name="permissions"></a>权限
@@ -31,7 +31,7 @@ GET /programs('{programId}')/controls
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者\{标记\}。 必填。 |
+| Authorization | string | 持有者令牌 必需。 |
 
 ## <a name="request-body"></a>请求正文
 应提供没有请求正文。
@@ -80,10 +80,15 @@ Content-type: application/json
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List programControls of a program",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-listcontrols.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

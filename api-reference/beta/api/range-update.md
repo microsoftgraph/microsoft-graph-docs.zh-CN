@@ -4,16 +4,16 @@ description: 更新 range 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ca9744fa00fec2928b019dd45c7d503f7f35ee77
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eda7a9122884776131a65722c493031ba0bb1098
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975986"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507703"
 ---
 # <a name="update-range"></a>更新区域
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 range 对象的属性。
 ## <a name="permissions"></a>权限
@@ -43,12 +43,12 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|columnHidden|boolean|表示当前区域中的所有列是否隐藏。|
+|columnHidden|布尔|表示当前区域中的所有列是否隐藏。|
 |formulas|json|表示采用 A1 样式表示法的公式。|
 |formulasLocal|json|表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。|
 |formulasR1C1|json|表示采用 R1C1 样式表示法的公式。|
 |numberFormat|json|表示 Excel 中指定单元格的数字格式代码。|
-|rowHidden|boolean|表示当前区域中的所有行是否隐藏。|
+|rowHidden|布尔|表示当前区域中的所有行是否隐藏。|
 |values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="response"></a>响应
@@ -97,10 +97,15 @@ Content-length: 169
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update range",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/range-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

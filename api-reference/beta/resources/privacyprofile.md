@@ -2,16 +2,16 @@
 title: privacyProfile 资源类型
 description: 表示公司的隐私配置文件，其中包括隐私声明 URL 和与隐私声明有关的联系人。
 localization_priority: Normal
-ms.openlocfilehash: adbd2e04e4d3898de559682b0b87158f938e7252
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 9c110cbdb8a456b43936d3b56db5d4563686ed6e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833045"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510118"
 ---
 # <a name="privacyprofile-resource-type"></a>privacyProfile 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示公司的隐私配置文件，其中包括隐私声明 URL 和与隐私声明有关的联系人。
 
@@ -39,3 +39,11 @@ ms.locfileid: "27833045"
   "statementUrl": "string"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privacyprofile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

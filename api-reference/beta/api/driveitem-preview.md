@@ -3,16 +3,16 @@ title: driveItem： 预览
 description: 此操作，可以获取项目的短期嵌入 Url 以便呈现临时预览。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: be96a0cd451bb3f1c75c32f235d7669ce0bd7509
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5a49a05e1e01616bc9bbbb713fd05805d9af3070
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980872"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508536"
 ---
 # <a name="driveitem-preview"></a>driveItem： 预览
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此操作，可以获取项目的短期嵌入 Url 以便呈现临时预览。
 
@@ -53,8 +53,8 @@ POST /shares/{shareId}/driveItem/preview
 |   名称      |  类型         | 说明
 |:------------|:--------------|:-----------------------------------------------
 | 查看器      | string        | 可选。 预览应用程序使用。 `onedrive` 或 `office`）。 如果为空，将自动选择合适的查看器。
-| 边框  | boolean       | 可选。 如果`true`（默认），嵌入视图将不包括任何控件。
-| allowEdit   | boolean       | 可选。 如果`true`，该文件可以从嵌入 UI 进行编辑。
+| 边框  | 布尔       | 可选。 如果`true`（默认），嵌入视图将不包括任何控件。
+| AllowEdit   | 布尔       | 可选。 如果`true`，该文件可以从嵌入 UI 进行编辑。
 | page        | 字符串/编号 | 可选。 要启动，如果适用文档的页码。 指定为字符串的文件类型，如 ZIP 周围的将来使用情况。
 | zoom        | 数字        | 可选。 如果适用，则缩放级别，从开始。
 
@@ -92,7 +92,8 @@ param1=value&param2=another%20value
 
 | 类型值 | 说明
 |:-----------|:----------------------------------------------------------------
-| (null)     | 选择相应的应用程序用于呈现该文件。 这将在大多数情况下使用`onedrive`预览器，但可能因文件类型。
+| Null
+     | 选择相应的应用程序用于呈现该文件。 这将在大多数情况下使用`onedrive`预览器，但可能因文件类型。
 | `onedrive` | 使用 OneDrive previewer app 呈现该文件。
 | `office`   | WAC (Office online) 用于呈现该文件。 唯一有效的 Office 文档。
 
@@ -109,3 +110,11 @@ param1=value&param2=another%20value
 ### <a name="pagezoom"></a>页/缩放
 
 `page`和`zoom`选项可能不是可用于所有预览应用程序，但如果预览应用程序支持将应用。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-preview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

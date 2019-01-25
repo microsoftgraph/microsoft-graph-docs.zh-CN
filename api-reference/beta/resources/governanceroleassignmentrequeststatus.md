@@ -2,16 +2,16 @@
 title: governanceRoleAssignmentRequestStatus 资源类型
 description: 代表 governanceRoleAssignmentRequest 的状态。
 localization_priority: Normal
-ms.openlocfilehash: c5daac53661cc607d51e5bfd1ec9031cfa599fca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f4f0b23cf13de5beedb1964484ec4fbbb6e98720
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808069"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510174"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>governanceRoleAssignmentRequestStatus 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的状态。
 
@@ -19,8 +19,8 @@ ms.locfileid: "27808069"
 ## <a name="properties"></a>属性
 属性       | 类型 |说明|
 |:----|:-------------|:-----|
-|状态 |字符串| 角色分配请求的状态。 值可以是`InProgress`或`Closed`。|
-|子状态 |字符串| Sub 角色分配请求的状态。 值可以是`Accepted`， `PendingEvaluation`， `Granted`， `Denied`， `PendingProvisioning`， `Provisioned`， `PendingRevocation`， `Revoked`， `Canceled`， `Failed`， `PendingApprovalProvisioning`， `PendingApproval`， `FailedAsResourceIsLocked`， `PendingAdminDecision`， `AdminApproved`， `AdminDenied`， `TimedOut`，和`ProvisioningStarted`。|
+|状态 |String| 角色分配请求的状态。 值可以是`InProgress`或`Closed`。|
+|子状态 |String| Sub 角色分配请求的状态。 值可以是`Accepted`， `PendingEvaluation`， `Granted`， `Denied`， `PendingProvisioning`， `Provisioned`， `PendingRevocation`， `Revoked`， `Canceled`， `Failed`， `PendingApprovalProvisioning`， `PendingApproval`， `FailedAsResourceIsLocked`， `PendingAdminDecision`， `AdminApproved`， `AdminDenied`， `TimedOut`，和`ProvisioningStarted`。|
 |statusDetails       |[keyValue](../resources/keyvalue.md)集合| 角色分配请求的状态的详细信息。 它所表示不同规则评估的结果。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -44,10 +44,15 @@ ms.locfileid: "27808069"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleAssignmentRequestStatus",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceroleassignmentrequeststatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

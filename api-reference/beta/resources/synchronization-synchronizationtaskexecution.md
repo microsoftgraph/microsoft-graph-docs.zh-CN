@@ -2,23 +2,23 @@
 title: synchronizationTaskExecution 资源类型
 description: 总结了运行同步作业的结果。
 localization_priority: Normal
-ms.openlocfilehash: 99b6c66b15577ee4c6cbbf5ffe44e17cf0672696
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 37a0fd57269cef6d3cb03c5cc5c38d3024fe198d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851504"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510552"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>synchronizationTaskExecution 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 总结了运行同步作业的结果。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|activityIdentifier           |字符串 |运行作业的标识符。|
+|activityIdentifier           |String |运行作业的标识符。|
 |countEntitled                |Int64  |处理已分配为此应用程序的条目数。|
 |countEntitledForProvisioning |Int64  |处理已分配的资源调配的条目数。|
 |countEscrowed                |Int64  |保管 （错误） 的条目数。|
@@ -29,7 +29,7 @@ ms.locfileid: "27851504"
 |countImportedDeltas          |Int64  |导入的增量更改的计数。|
 |countImportedReferenceDeltas |Int64  |导入增量-更改与引用更改的计数。|
 |error                        |[synchronizationError](synchronization-synchronizationerror.md)|如果遇到错误，将包含一个**synchronizationError**详细信息。|
-|state                        |字符串 |汇总结果的此次运行的代码。 可取值为：`Succeeded`、`Failed`、`EntryLevelErrors`。|
+|state                        |String |汇总结果的此次运行的代码。 可取值为：`Succeeded`、`Failed`、`EntryLevelErrors`。|
 |timeBegan                    |DateTimeOffset|开始此作业的运行时的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |timeEnded                    |DateTimeOffset|结束此作业的运行时的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 
@@ -67,10 +67,15 @@ ms.locfileid: "27851504"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationTaskExecution resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationtaskexecution.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

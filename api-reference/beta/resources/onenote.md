@@ -4,16 +4,16 @@ description: 适用于 Onenote 资源的入口点。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 2b6818ac5f9bd9bdc60d1c0d1e0cc8f80afc1f65
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5ed063fb485acdbd029a977ffb6cd721bf7085c8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970666"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508725"
 ---
 # <a name="onenote-resource-type"></a>Onenote 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 适用于 Onenote 资源的入口点。
 
@@ -53,10 +53,10 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 |:---------------|:--------|:----------|
 |笔记本|[笔记本](notebook.md)集合|用户或组所有的 OneNote 笔记本集合。只读。可为 NULL。|
 |操作|[操作](onenoteoperation.md)集合 |OneNote 操作状态。不支持获取操作集合，但如果响应中返回 `Operation-Location` 标头，可以获取长时间运行的操作的状态。只读。可为 NULL。|
-|页面|[页面](page.md)集合|用户或组所有的全部 OneNote 笔记本中的页面。只读。可为 NULL。|
+|页面|[Page](page.md) collection|用户或组所有的全部 OneNote 笔记本中的页面。只读。可为 NULL。|
 |资源|[资源](resource.md)集合 |OneNote 页面中的图像和其他文件资源。不支持获取资源集合，但可以[获取特定资源的二进制内容](resource.md)。只读。可为 NULL。|
-|sectionGroups|[SectionGroup](sectiongroup.md) 集合|用户或组所有的全部 OneNote 笔记本中的分区组。只读。可为 NULL。|
-|节|[节](section.md)集合|用户或组所有的全部 OneNote 笔记本中的节。只读。可为 Null。|
+|sectionGroups|[SectionGroup](sectiongroup.md) collection|用户或组所有的全部 OneNote 笔记本中的分区组。只读。可为 NULL。|
+|节|[Section](section.md) collection|用户或组所有的全部 OneNote 笔记本中的节。只读。可为 Null。|
 
 ## <a name="methods"></a>方法
 
@@ -71,10 +71,15 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "onenote resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onenote.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

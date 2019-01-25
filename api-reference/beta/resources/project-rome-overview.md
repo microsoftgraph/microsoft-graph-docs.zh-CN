@@ -2,16 +2,16 @@
 title: '使用 Microsoft Graph API 来处理项目 Rome '
 description: '项目 Rome 是 Microsoft 旨在构建一个平台，使应用程序开发人员可以构建出色的跨设备体验。 项目 Rome 启用连接不同的服务和客户端终结点，当用户迹象使用同一 Microsoft 帐户或工作或学校帐户时的不同功能。 这样，您可以实现跨设备和跨平台围绕用户任务，而不是设备的体验。 '
 localization_priority: Normal
-ms.openlocfilehash: 9f3b923bff5bad93036a1784090c8ce00763650f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 57c5189f3caf64ec048d000d5e9108811bd88145
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830000"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509691"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>使用 Microsoft Graph API 来处理项目 Rome 
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [项目 Rome](https://developer.microsoft.com/en-us/windows/project-rome)是 Microsoft 旨在构建一个平台，使应用程序开发人员可以构建出色的跨设备体验。 项目 Rome 启用连接不同的服务和客户端终结点，当用户迹象使用同一 Microsoft 帐户或工作或学校帐户时的不同功能。 这样，您可以实现跨设备和跨平台围绕用户任务，而不是设备的体验。 
 
@@ -62,3 +62,11 @@ ms.locfileid: "27830000"
 
 有关详细信息，请参阅[创建和发送通知](../api/projectrome-notification-post.md)。
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/project-rome-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

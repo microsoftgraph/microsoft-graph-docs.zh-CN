@@ -4,16 +4,16 @@ description: '**EducationAssignment**资源表示任务或工作分配给类中�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: e96b2a27d24f0dc38595e5aea931045199eb6d10
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 68bb881800e1c63acb588e39bb64e1d02e005cc3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982258"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508956"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **EducationAssignment**资源表示任务或工作分配给类中的学生或团队成员属于其研究单位。 只有教师或团队所有者可以创建工作分配。 分配包含讲义和教师希望学生处理的任务。 每个学生工作分配的包含其教师要求打开任何工作关联的[提交](educationsubmissionresource.md)。 教师可以向打开由学生提交添加分数和反馈。
 
@@ -38,15 +38,15 @@ ms.locfileid: "27982258"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。|
-|allowLateSubmissions|布尔| 标识是否学生可以提交后到期日期。 如果在创建期间未指定此属性，则默认为 true。 |
-|allowStudentsToAddResourcesToSubmission|布尔| 标识学生是否可以将自己的资源添加到提交或如果他们只能修改添加教师资源。 |
-|assignDateTime|DateTimeOffset|当工作分配应处于活动状态日期。  如果将来，工作分配时不显示到学生此日期之前。  **时间戳**类型表示使用 ISO 8601 格式的日期和时间信息且始终在 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|allowLateSubmissions|Boolean| 标识是否学生可以提交后到期日期。 如果在创建期间未指定此属性，则默认为 true。 |
+|allowStudentsToAddResourcesToSubmission|Boolean| 标识学生是否可以将自己的资源添加到提交或如果他们只能修改添加教师资源。 |
+|assignDateTime|DateTimeOffset|当工作分配应处于活动状态日期。  如果将来，工作分配时不显示到学生此日期之前。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| 哪些用户或整个类应收到提交对象后发布工作分配。 |
 |assignedDateTime|DateTimeOffset|工作分配发布到学生和工作分配的时刻显示学生日程表上。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|classId|字符串| 此工作分配所属的类。 |
+|classId|String| 此工作分配所属的类。 |
 |createdBy|[identitySet](identityset.md)| 工作分配的创建者。 |
 |createdDateTime|DateTimeOffset|矩何时创建工作分配。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|displayName|字符串|工作分配的名称。|
+|displayName|String|工作分配的名称。|
 |dueDateTime|DateTimeOffset|学生工作分配的到期日期。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |分级|[educationAssignmentGradeType](educationassignmentgradetype.md)|如何将评分工作分配。 |
 |说明|[itemBody](itembody.md)| 工作分配的说明。  这的显示名称以及要执行的操作告知学生。 |
@@ -57,8 +57,8 @@ ms.locfileid: "27982258"
 ## <a name="relationships"></a>Relationships
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|resources|[educationAssignmentResource](educationassignmentresource.md)集合| 学习与此工作分配关联的对象。  仅教师可以修改此列表。 可为 Null。|
-|提交|[educationSubmission](educationsubmission.md)集合| 发布后，没有表示其工作和薪等级每个学生的提交对象。  只读。 可为 Null。|
+|resources|[educationAssignmentResource](educationassignmentresource.md)集合| 学习与此工作分配关联的对象。  仅教师可以修改此列表。 可为空。|
+|提交|[educationSubmission](educationsubmission.md)集合| 发布后，没有表示其工作和薪等级每个学生的提交对象。  只读。 可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -95,10 +95,15 @@ ms.locfileid: "27982258"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationAssignment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

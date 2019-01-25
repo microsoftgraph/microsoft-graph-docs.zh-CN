@@ -4,16 +4,16 @@ description: 用于 PowerSchool 用作输入源时设置学校数据同步配置
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 4028170c2780cee426ec961a44b51e0362b0187f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2469a99b8acbfa1bd4e5167cf67caa102fa9422e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406918"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510461"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider 资源
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 用于[PowerSchool](https://www.powerschool.com/solutions/student-information-system-sis/)用作输入源时设置学校数据同步配置文件。
 
@@ -25,7 +25,7 @@ ms.locfileid: "29406918"
 |:-|:-|:-|
 | **connectionUrl** | String | 连接到 PowerSchool 实例 URL。 |
 | **clientId** | String |  用于连接到 PowerSchool 客户端 ID。 |
-| **clientSecret** | String |  客户端机密进行身份验证与 PowerSchool 实例的连接。 |
+| client_secret | String |  客户端机密进行身份验证与 PowerSchool 实例的连接。 |
 | **schoolsIds** | String 集合 |  学校同步的列表。 |
 | **schoolYear** | String |  要同步的学校年份。 |
 | **allowTeachersInMultipleSchools** | Boolean |  指示源是否有多个标识符是单个学生或教师。 |
@@ -52,3 +52,11 @@ ms.locfileid: "29406918"
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationpowerschooldataprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

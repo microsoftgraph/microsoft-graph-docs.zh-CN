@@ -4,16 +4,16 @@ ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo-OneDrive API
 localization_priority: Normal
-ms.openlocfilehash: 0f2a161b9b43a8d372b90530b1b9d9244f77d8e9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 469679e9baa016560f5a02425bc41d628a24dc2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857342"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509761"
 ---
 # <a name="itempreviewinfo-resource-type"></a>ItemPreviewInfo 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ItemPreviewInfo**资源包含有关如何将嵌入的[DriveItem](driveitem.md)预览信息。
 
@@ -29,7 +29,7 @@ ms.locfileid: "27857342"
 
 ## <a name="properties"></a>属性
 
-| 名称           | 类型   | Description
+| 名称           | 类型   | 说明
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | 适用于嵌入使用 HTTP GET （iframe 等） 的 URL
 | postUrl        | string | 适用于嵌入使用 HTTP POST URL （窗体发布，JS 等。）
@@ -46,3 +46,11 @@ param1=value&param2=another%20value
 ```
 
 不透明应考虑的 Url 和参数的格式。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itempreviewinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

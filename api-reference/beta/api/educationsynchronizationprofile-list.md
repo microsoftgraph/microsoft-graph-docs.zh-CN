@@ -4,16 +4,16 @@ description: 检索为租户中的学校数据同步配置文件的集合。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ed001a7c265f16057ea216d21f7a05f672df7065
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1907b0ef08473a79d66e79fcb4751b281e9a18ad
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425069"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509551"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>列表 educationSynchronizationProfiles
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索为租户中的学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)的集合。
 
@@ -23,7 +23,7 @@ ms.locfileid: "29425069"
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.Read EduAdministration.ReadWrite |
-|委派 （个人 Microsoft 帐户|不支持。|
+|委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -35,7 +35,7 @@ GET /synchronizationProfiles
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持以下[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)以帮助自定义响应： $filter、 $orderby、 $top、 $skip 和 $count。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
@@ -165,3 +165,11 @@ Content-length: 3296
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

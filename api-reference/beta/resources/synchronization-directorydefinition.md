@@ -2,16 +2,16 @@
 title: directoryDefinition 资源类型
 description: 提供有关目录和其对象的同步引擎信息。 此资源告知同步引擎，例如目录有对象名为**用户**和**组**，这些对象，并为这些属性的类型支持哪些属性。 为了参与同步规则和对象映射的对象和属性，必须作为目录定义的一部分定义它们。
 localization_priority: Normal
-ms.openlocfilehash: e6b2b55fb9e9e7963b01403c6aed2f0997e2318b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 22ba4a7f3b5b5d3154ec6b3f5d42bd6f1b8f09d7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874520"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508123"
 ---
 # <a name="directorydefinition-resource-type"></a>directoryDefinition 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 提供有关目录和其对象的同步引擎信息。 此资源告知同步引擎，例如目录有对象名为**用户**和**组**，这些对象，并为这些属性的类型支持哪些属性。 为了参与[同步规则](synchronization-synchronizationrule.md)和[对象映射](synchronization-objectmapping.md)的对象和属性，必须作为目录定义的一部分定义它们。
 
@@ -23,10 +23,10 @@ ms.locfileid: "27874520"
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|id           |字符串     |目录标识符。 不可为 null。|
+|id           |String     |目录标识符。 不可为 null。|
 |元数据       |metadataEntry 集合    |其他扩展属性。 除非明确提到，不应更改元数据值。|
-|name           |字符串     |目录的名称。 必须是唯一[同步架构](synchronization-synchronizationschema.md)中。 不可为 null。|
-|对象        |[objectDefinition](synchronization-objectdefinition.md)集合    |目录支持的对象的集合。|
+|name           |String     |目录的名称。 必须是唯一[同步架构](synchronization-synchronizationschema.md)中。 不可为 null。|
+|Objects        |[objectDefinition](synchronization-objectdefinition.md)集合    |目录支持的对象的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -260,10 +260,15 @@ ms.locfileid: "27874520"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directoryDefinition resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-directorydefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

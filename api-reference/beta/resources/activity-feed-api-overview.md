@@ -3,16 +3,16 @@ title: 使用活动源 REST API
 description: '您可以使用的活动源 API 在 Microsoft Graph 中恢复用户的活动设备和平台。 代表用户通过委派的权限和用户活动权限，可用于个人或工作和学校帐户执行活动订阅源的 API 请求。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 7b921114dd5ff8d7bffba77fa2191fde5fa33bdb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a522d4caa29aa5227f5030ed2663972e8b8d1660
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943394"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509964"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>使用活动源 REST API
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
 您可以使用的活动源 API 在 Microsoft Graph 中恢复用户的活动设备和平台。 代表用户通过[委派权限](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions)和[用户活动权限](/graph/permissions-reference)，可用于与个人或工作和学校帐户执行活动订阅源的 API 请求。 
@@ -72,3 +72,11 @@ Each activity represents a unique...
 
 - 请参阅[Microsoft 的体验如何使用活动](https://channel9.msdn.com/events/Build/2017/B8108)。
 - 了解[活动源 API 和拿起回忆其中](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011)。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/activity-feed-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

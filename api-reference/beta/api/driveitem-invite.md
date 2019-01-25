@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: 发送访问项的邀请
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f428fe7b8a61fc158d4175f50fb287760e25d524
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d5afd0a7a23465ffc6e69e1ac7873769c6622b2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945976"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510041"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 发送 **DriveItem** 的共享邀请。共享邀请为收件人提供权限，也可以选择向收件人发送电子邮件以通知他们项目已共享。
 
@@ -62,9 +62,9 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | 参数        | 类型                                            | 说明                                                                                                |
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | 将获得访问权限和共享邀请的收件人的集合。                                            |
-| message          | 字符串                                          | 共享邀请中包含的纯文本格式的邮件。最大长度为 2000 个字符。 |
-| requireSignIn    | 布尔                                         | 指定邀请的收件人要查看共享项目的登录位置。            |
-| sendInvitation   | 布尔                                         | 指定是否生成电子邮件或帖子 (false)，或是否仅创建权限 (true)。            |
+| message          | String                                          | 共享邀请中包含的纯文本格式的邮件。最大长度为 2000 个字符。 |
+| requireSignIn    | Boolean                                         | 指定邀请的收件人要查看共享项目的登录位置。            |
+| sendInvitation   | Boolean                                         | 指定是否生成电子邮件或帖子 (false)，或是否仅创建权限 (true)。            |
 | roles            | 集合（字符串）                              | 指定授予共享邀请收件人的角色。                         |
 
 ## <a name="example"></a>示例
@@ -125,7 +125,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>注解
 
 * 具有 `personal` **driveType**（OneDrive 个人版）的[驱动器](../resources/drive.md)无法创建或修改根 DriveItem 上的权限。
 * 如需可用角色的列表，请参阅[角色枚举](../resources/permission.md#roles-enumeration-values)。
@@ -137,10 +137,15 @@ Content-type: application/json
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Add permissions to an item and optionally send a sharing notification.",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Sharing/Add permissions"
-} -->
+  "tocPath": "Sharing/Add permissions",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
