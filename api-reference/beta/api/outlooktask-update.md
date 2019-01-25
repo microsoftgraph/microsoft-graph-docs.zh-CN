@@ -4,16 +4,16 @@ description: 更改 Outlook 任务的可写属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c0d2ff13f3e7971e686389709fbdde027458ef67
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1908d9b918b13f87b1d5ab61dab912577f06da64
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964933"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526884"
 ---
 # <a name="update-outlooktask"></a>更新 outlooktask
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更改 Outlook 任务的可写属性。
 
@@ -53,25 +53,25 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|assignedTo|字符串|已分配任务的人员的名称。|
+|AssignedTo|String|已分配任务的人员的名称。|
 |body|[itemBody](../resources/itembody.md)|任务正文通常包含有关任务的信息。 请注意，仅 HTML 支持类型。|
 |categories|String collection|类别与任务关联。|
-|changeKey|字符串|任务的版本。|
+|changeKey|String|任务的版本。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|中指定的时区任务已完成的日期。|
 |createdDateTime|DateTimeOffset|日期和时间创建任务时。 默认情况下，它是采用 UTC。 您可以提供请求标头中自定义时区。 该属性值使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区的任务完成日期。|
 |hasAttachments|布尔|设置为 true 如果任务的附件。|
 |importance|string|事件的重要性。 可取值为：`low`、`normal`、`high`。|
-|isReminderOn|布尔|如果，设置为 true 设置通知提醒的用户的任务。|
+|isReminderOn|Boolean|如果，设置为 true 设置通知提醒的用户的任务。|
 |lastModifiedDateTime|DateTimeOffset|日期和上次修改任务的时间。 默认情况下，它是采用 UTC。 您可以提供请求标头中自定义时区。 该属性值使用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|owner|字符串|创建任务的人员的名称。|
+|owner|String|创建任务的人员的名称。|
 |parentFolderId|String|任务的父文件夹的唯一标识符。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|定期模式的任务。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|发生的日期和时间的任务的提醒通知。|
 |sensitivity|string|指示任务的隐私级别。 可取值为：`normal`、`personal`、`private`、`confidential`。|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区时的任务是开始日期。|
 |status|string|指示的状态或任务进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
-|subject|字符串|简要说明或任务的标题。|
+|subject|String|简要说明或任务的标题。|
 
 ## <a name="response"></a>响应
 
@@ -153,10 +153,15 @@ Content-length: 376
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update outlooktask",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlooktask-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

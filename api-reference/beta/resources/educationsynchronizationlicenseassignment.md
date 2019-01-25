@@ -4,16 +4,16 @@ description: 代表分配给用户帐户的许可信息。 该资源将用于创
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5c60b868ab8d973f6249d7e9ea2b30415d4b8a1b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ce1ae196ba4f014a039e81713119b01fa69e6170
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409676"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525820"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>educationSynchronizationLicenseAssignment 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表分配给用户帐户的许可信息。 该资源将用于创建新的用户帐户时设置许可证分配。
 
@@ -21,7 +21,7 @@ ms.locfileid: "29409676"
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **appliesTo** | string | 要分配许可证的用户角色类型。 可取值为：`student`、`teacher`。         |
+| appliesTo | string | 要分配许可证的用户角色类型。 可取值为：`student`、`teacher`。         |
 | **skuIds** | 字符串集合 |  表示分配的许可证的 SKU 标识符。        |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -39,3 +39,11 @@ ms.locfileid: "29409676"
     "skuIds": ["String"]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationlicenseassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

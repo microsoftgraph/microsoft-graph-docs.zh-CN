@@ -4,16 +4,16 @@ description: '表示学校的课程。 **educationClass** 资源对应于 Office
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 4ccec95dbe04c5482328223214f446fbb580279c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5a4bbc0560f2a40b5a438ec8276bbcf984a22721
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393219"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526730"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示学校的课程。 **educationClass** 资源对应于 Office 365 组并共享同一个 ID。 学生是课程的正式成员，教师为所有者，且具有相应权限。 若要使 Office 体验正常进行，教师必须同时为教师和成员集合的成员。  
 
@@ -39,8 +39,8 @@ ms.locfileid: "29393219"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id| String| 课程的唯一标识符。|
-|description|String| 课程说明。|
+|id| 字串符号| 课程的唯一标识符。|
+|description|字符串| 课程说明。|
 |displayName|String| 课程名称。|
 |mailNickname|String| 向所有成员发送电子邮件的邮件名称（如果已启用）。 |
 |createdBy|[identitySet](identityset.md)| 创建了课程的实体 |
@@ -54,8 +54,8 @@ ms.locfileid: "29393219"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|members|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为 NULL。|
-|schools|[educationSchool](../resources/educationschool.md) 集合| 与此课程相关的所有学校。 可为 NULL。|
+|members|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为空。|
+|schools|[educationSchool](../resources/educationschool.md) 集合| 与此课程相关的所有学校。 可为空。|
 |teachers|[educationUser](../resources/educationuser.md) 集合|  课程中的所有教师。 可为 NULL。|
 |assignments|[educationAssignment](../resources/educationassignment.md)集合| 与此类关联的所有工作分配。 可为 NULL。|
 
@@ -89,10 +89,15 @@ ms.locfileid: "29393219"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationClass resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationclass.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

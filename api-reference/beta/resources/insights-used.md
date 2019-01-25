@@ -4,16 +4,16 @@ description: 表示特定用户所使用的文档洞察。 见解返回最相关
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 2f8479896f8c06fdc6193cfa8c18a0c3d8293bc7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 35698741cd457f4e8d202b13dd9099bb2669b6e1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976056"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525855"
 ---
 # <a name="used-resource-type"></a>使用资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示特定用户所使用的文档洞察。 见解返回最相关的文档的用户查看或访问。 这包括文档中的文档：
 
@@ -30,12 +30,12 @@ ms.locfileid: "27976056"
 
 | 属性              | 类型                      | 说明  |
 | -------------         |---------------            | -------------|
-| id                    | 字符串                    | 关系的唯一标识符。 只读。        |
+| id                    | String                    | 关系的唯一标识符。 只读。        |
 | lastUsed              | [usageDetails](insights-usagedetails.md)              | 有关项目时上次查看和修改的用户的信息。 只读。     |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | 您可以使用可视化中您的体验的文档的属性。 只读      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | 使用文档，如 url 和的文档类型的引用属性。 只读     |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
@@ -54,3 +54,11 @@ ms.locfileid: "27976056"
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-used.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

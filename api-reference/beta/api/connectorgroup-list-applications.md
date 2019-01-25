@@ -2,16 +2,16 @@
 title: 应用程序列表
 description: 检索与 connectorGroup 关联的应用程序对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: f23bd18d646233fd932c10e5f2fe4d8bda1732d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 47be81d4f154d87865113fa02b04a58151545507
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833377"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519358"
 ---
 # <a name="list-applications"></a>应用程序列表
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索与 connectorGroup 关联的应用程序对象的列表。
 ## <a name="permissions"></a>权限
@@ -34,7 +34,7 @@ GET /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者。 是否必需|
+| Authorization  | Bearer  必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -84,10 +84,15 @@ Content-length: 420
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List applications",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/connectorgroup-list-applications.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

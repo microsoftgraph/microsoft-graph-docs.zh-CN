@@ -2,16 +2,16 @@
 title: 发送设备命令
 description: '此 API 支持 Project Rome 功能命令与 Microsoft 帐户关联的设备。 在执行 GET 呼叫后`me/devices`，向您的设备发出命令的设备 ID 中传递。 支持两种类型的命令： LaunchURI 和 AppServices。 如果您正在使用 LaunchURI，指定*类型*和*负载*参数。 对于 AppService 呼叫，指定 '
 localization_priority: Normal
-ms.openlocfilehash: 54349e2f43a776523614b0cd2abbc209e89305fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d0c25200933a4a87a66349e457c500c496272b08
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891985"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526240"
 ---
 # <a name="send-device-command"></a>发送设备命令
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此 API 支持 Project Rome 功能命令与 Microsoft 帐户关联的设备。 在执行 GET 呼叫后`me/devices`，向您的设备发出命令的设备 ID 中传递。 支持两种类型的命令： LaunchURI 和 AppServices。 如果您正在使用 LaunchURI，指定*类型*和*负载*参数。 AppService 呼叫的指定*类型*、*负载*、 *packageFamilyName*和*appServiceName*参数。
 
@@ -76,19 +76,19 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
-## <a name="command-properties"></a>Command 属性 
+## <a name="command-properties"></a>Command Properties 
 
 |**Name**|**类型**|**说明**|
 |:----|:------|:------|
 |payload | microsoft.graph.json| 负载以将发送到应用程序服务或启动在设备上的 URI。 |
 |responsePayload | microsoft.graph.json| 返回从目标设备的负载。 |
-|postBackURI | 字符串 | 回发 URI 发送更新的随后进行通知。 |
-|packageFamilyName | 字符串 | Windows 应用程序包系列名称。 |
-|appServiceName | 字符串 | 由目标应用程序定义的应用程序服务的名称。 所需如果启动应用程序服务。 |
-|type| 字符串 | LaunchURI 或 AppService。 |
-|id| 字符串 | 已向设备发送命令的 ID。 |
-|actionStatus | 字符串 | 命令的[状态](get-device-command-status.md)。 |
-|error| 字符串| 目标应用程序的请求相关联的任何错误。 |
+|postBackURI | String | 回发 URI 发送更新的随后进行通知。 |
+|packageFamilyName | String | Windows 应用程序包系列名称。 |
+|appServiceName | String | 由目标应用程序定义的应用程序服务的名称。 所需如果启动应用程序服务。 |
+|type| String | LaunchURI 或 AppService。 |
+|id| 字串符号 | 已向设备发送命令的 ID。 |
+|actionStatus | String | 命令的[状态](get-device-command-status.md)。 |
+|error| String| 目标应用程序的请求相关联的任何错误。 |
 
 ## <a name="launch-uri-example"></a>启动 URI 示例
 
@@ -115,7 +115,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>响应 
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "ignored",
@@ -202,3 +202,11 @@ HTTP/1.1 201 OK
   }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/send-device-command.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

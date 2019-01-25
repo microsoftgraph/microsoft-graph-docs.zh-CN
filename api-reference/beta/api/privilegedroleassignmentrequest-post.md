@@ -2,16 +2,16 @@
 title: 创建 privilegedRoleAssignmentRequest
 description: 创建一个 privilegedroleassignmentrequest 对象。
 localization_priority: Normal
-ms.openlocfilehash: 3f1b88415e5671e38ad557cc28200569a42a9630
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e3158e918d061f09dec9e74c9e3bfd66d95fa48d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847766"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521066"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建一个[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)对象。
 
@@ -38,13 +38,13 @@ POST /privilegedRoleAssignmentRequests
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)对象的 JSON 表示形式。 
 
-| 属性     | 类型    |  Description|
+| 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
-|roleId|字符串|角色的 ID。 此为必需属性。|
-|type|字符串|表示的角色分配操作的类型。 值可以是`AdminAdd`： 管理员将用户添加到角色;`UserAdd`： 用户将添加角色分配。 必填。|
-|assignmentState|字符串|工作分配状态。 值可以是`Eligible`合格分配`Active`-如果直接分配`Active`由管理员、 或激活合格工作分配的用户。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必填。|
-|原因|字符串|原因需要提供角色分配请求的审核和查看用途。|
-|计划|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的时间表。|
+|roleId|String|角色的 ID。 此为必需属性。|
+|type|String|表示的角色分配操作的类型。 值可以是`AdminAdd`： 管理员将用户添加到角色;`UserAdd`： 用户将添加角色分配。 必需。|
+|assignmentState|String|工作分配状态。 值可以是`Eligible`合格分配`Active`-如果直接分配`Active`由管理员、 或激活合格工作分配的用户。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
+|Reason|String|原因需要提供角色分配请求的审核和查看用途。|
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的时间表。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回`201 Created`响应代码和响应正文中的[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)对象。
@@ -96,7 +96,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -133,10 +133,15 @@ Content-length: 304
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Post privilegedRoleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

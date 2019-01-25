@@ -4,16 +4,16 @@ description: 更新 **plannerAssignedToTaskBoardTaskFormat** 对象的属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: b388d3d19287c4a5c039763ce812c22b87515622
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: dac616314626f3acd5a88e6bc88755a3051f43fe
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915702"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524847"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>更新 plannerAssignedToTaskBoardTaskFormat
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 **plannerAssignedToTaskBoardTaskFormat** 对象的属性。
 ## <a name="permissions"></a>权限
@@ -42,7 +42,7 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|使用任务板的 AssignedTo 视图上的顺序任务提示的字典。 每个条目的键是一个任务分配给用户，值为 order 提示。 中定义的每个值的格式 [计划程序中使用订单提示 (.../ resources/planner_order_hint_format.md)。|
-|unassignedOrderHint|字符串|提示值已使用任务的任务板 AssignedTo 视图时任务未分配给任何人，或 orderHintsByAssignee 词典不提供 order 提示用户任务分配给。 [使用规划器中的顺序提示](../resources/planner-order-hint-format.md)中定义格式。|
+|unassignedOrderHint|String|提示值已使用任务的任务板 AssignedTo 视图时任务未分配给任何人，或 orderHintsByAssignee 词典不提供 order 提示用户任务分配给。 [使用规划器中的顺序提示](../resources/planner-order-hint-format.md)中定义格式。|
 
 ## <a name="response"></a>响应
 
@@ -93,10 +93,15 @@ Content-length: 225
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update plannerassignedtotaskboardtaskformat",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/plannerassignedtotaskboardtaskformat-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

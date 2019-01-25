@@ -4,16 +4,16 @@ description: 更新的 assignment 对象。 仅教师类中的可以执行此操
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: f8d79e11628e3a02a20c9ecdcd46bcd1bff05e7f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eb5762f86e1572f9a9d5876199c945154a25293b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960348"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524959"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新的 assignment 对象。 仅教师类中的可以执行此操作。 请注意，您无法使用 PATCH 请求更改的工作分配状态。 使用[发布](../api/educationassignment-publish.md)操作更改的工作分配状态。
 
@@ -42,11 +42,11 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|布尔| 是否可以在截止日期之后提交提交。|
-|allowStudentsToAddResourcesToSubmission|布尔| 是否学生可以将资源添加到提交。 指示在提交的那些项目是否来自工作分配资源列表。 |
+|allowLateSubmissions|Boolean| 是否可以在截止日期之后提交提交。|
+|allowStudentsToAddResourcesToSubmission|Boolean| 是否学生可以将资源添加到提交。 指示在提交的那些项目是否来自工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 应将工作分配发布到学生的日期。 |
 |assignTo|educationAssignmentRecipient| 获取工作分配的学生。|
-|displayName|字符串| 工作分配的名称。 |
+|displayName|String| 工作分配的名称。 |
 |dueDateTime|DateTimeOffset| 截止日期工作分配。 |
 |分级|educationAssignmentGradeType| 如何将评分工作分配。|
 |说明|itemBody| 要赋予以及工作分配学生的说明。 |
@@ -104,10 +104,15 @@ Content-length: 279
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationassignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

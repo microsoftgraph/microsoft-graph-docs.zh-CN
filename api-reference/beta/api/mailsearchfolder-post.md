@@ -4,16 +4,16 @@ description: 此 API 用于指定的用户的邮箱中创建新 mailSearchFolder
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 626bf3a2e8bc77ba929895eed74ac0bb803aa5d4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7ef9992e1b0eaee83c39831424215cb9756f895d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912874"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517727"
 ---
 # <a name="create-mailsearchfolder"></a>创建 mailSearchFolder
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此 API 用于指定的用户的邮箱中创建新[mailSearchFolder](../resources/mailsearchfolder.md) 。
 
@@ -42,8 +42,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | 标头 | 值 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必填。 |
-| Content-Type | `application/json`. 必填。 |
+| Authorization | `Bearer {token}`. 必需。 |
+| Content-Type | `application/json`. 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -51,11 +51,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| @odata.type | 字符串 | 要创建的文件夹的类型。 设置为"microsoft.graph.mailSearchFolder"。 |
+| @odata.type | String | 要创建的文件夹的类型。 设置为"microsoft.graph.mailSearchFolder"。 |
 | displayName | String | 新文件夹的显示名称。|
-| includeNestedFolders | 布尔 | 如何应遍历的邮箱文件夹层次结构。 `true`意味着应为深入搜索完成时`false`意味着浅表搜索应改为完成。 |
+| includeNestedFolders | Boolean | 如何应遍历的邮箱文件夹层次结构。 `true`意味着应为深入搜索完成时`false`意味着浅表搜索应改为完成。 |
 | sourceFolderIDs | String 集合 | 应 mined 邮箱文件夹。 |
-| filterQuery | 字符串 | 要筛选的邮件的 OData 查询。 |
+| filterQuery | String | 要筛选的邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
 
@@ -87,9 +87,9 @@ Content-length: 159
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,10 +121,15 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create mailSearchFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

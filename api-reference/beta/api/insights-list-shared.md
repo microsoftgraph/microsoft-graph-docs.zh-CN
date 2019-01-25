@@ -4,16 +4,16 @@ description: 返回与用户共享的文件列表中的计算的洞察。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: c40f6ba80a39fb7db3b959bc78f317d86f3de8e2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2eef2a9b306984a8ad05bcf8fefca2458d609ab1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921778"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517349"
 ---
 # <a name="list-shared"></a>共享列表
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 返回与用户共享的文件列表中的计算的洞察。
 
@@ -116,3 +116,11 @@ GET https://graph.microsoft.com/beta/me/insights/shared
 ```http
 GET https://graph.microsoft.com/beta/me/insights/shared/{id}/resource
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/insights-list-shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

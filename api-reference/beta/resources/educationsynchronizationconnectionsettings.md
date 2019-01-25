@@ -4,16 +4,16 @@ description: '代表提供商连接设置。 这样，系统知道如何连接�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f9bb19ec9c09b06dd007eb2031f3dbb176eb12d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f6af6851e1e9d327b05c9ca1c7ed5929335a6e17
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978226"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526863"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>educationSynchronizationConnectionSettings 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表提供商连接设置。 这样，系统知道如何连接到提供程序的 Api。 
 
@@ -29,5 +29,13 @@ ms.locfileid: "27978226"
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **clientId** | 字符串 |  用于连接到提供程序的客户端 ID。 |
-| **clientSecret** | 字符串 |  验证连接到提供程序的客户端机密。 |
+| **clientId** | String |  用于连接到提供程序的客户端 ID。 |
+| client_secret | String |  验证连接到提供程序的客户端机密。 |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationconnectionsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

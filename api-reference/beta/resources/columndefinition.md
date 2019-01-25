@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: 5db835b9720f9fa711d683dd505e8325b27d79d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f4e0c3002068ec7dc8ee280b8e8143af621f178c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844490"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528933"
 ---
 # <a name="columndefinition-resource-type"></a>columnDefinition 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -64,10 +64,10 @@ ms.locfileid: "27844490"
 | **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
 | **说明**         | string  | 面向用户的列描述。
 | **displayName**         | string  | 面向用户的列名称。
-| **enforceUniqueValues** | boolean | 如果为 true，则此列不能有两个列表项具有相同的值。
-| **hidden**              | boolean | 指定列是否显示在用户界面中。
+| **enforceUniqueValues** | 布尔 | 如果为 true，则此列不能有两个列表项具有相同的值。
+| **hidden**              | 布尔 | 指定列是否显示在用户界面中。
 | **id**                  | string  | 列的唯一标识符。
-| **indexed**             | boolean | 指定列值是否可用于排序和搜索。
+| **indexed**             | 布尔 | 指定列值是否可用于排序和搜索。
 | **name**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
 | **readOnly**            | bool    | 指定是否可以修改列值。
 | **required**            | boolean | 指定列值是否不可选。
@@ -77,13 +77,13 @@ ms.locfileid: "27844490"
 | **currency**      | [currencyColumn][]      | 此列存储货币值。
 | **dateTime**      | [dateTimeColumn][]      | 此列存储日期时间值。
 | **defaultValue**  | [defaultColumnValue][]  | 此列的默认值。
-| **地理位置**   | [geolocationColumn][]   | 此列存储地理位置。
+| 地理位置   | [geolocationColumn][]   | 此列存储地理位置。
 | **lookup**        | [lookupColumn][]        | 从网站中的另一个源查找此列的数据。
 | **number**        | [numberColumn][]        | 此列存储数值。
 | **personOrGroup** | [personOrGroupColumn][] | 此列存储个人或组值。
 | **text**          | [textColumn][]          | 此列存储文本值。
 
->**注意：** 这些属性对应于 SharePoint 的[SPFieldType][]枚举。
+>注意：这些属性对应于 SharePoint 的 **SPFieldType** 枚举。
 时的最常见的字段类型表示上表中，此 beta API 仍然缺少一些。
 在这些情况下，不会填充列类型 facet，列将仅具有其基本属性。
 
@@ -111,10 +111,15 @@ ms.locfileid: "27844490"
 
   [SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ColumnDefinition"
-} -->
+  "tocPath": "Resources/ColumnDefinition",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/columndefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

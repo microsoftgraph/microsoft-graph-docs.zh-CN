@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: ac119ab0b63aecba384d34014f3d0d18111b05ac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5bc3aab8460c1d0c6774d2f8afda13c4fc89f69d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866246"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521584"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **baseItem** 资源是抽象资源，其中包含一组在若干其他资源类型中共享的常见类型。从 **baseItem** 派生的资源包括：
 
@@ -52,10 +52,10 @@ ms.locfileid: "27866246"
 
 | 属性             | 类型              | 说明                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| ID                   | string            | 驱动器唯一标识符。只读。                                         |
+| id                   | string            | 驱动器唯一标识符。只读。                                         |
 | createdBy            | [identitySet][]   | 识别创建项目的用户、设备或应用程序。只读。        |
 | createdDateTime      | dateTimeOffset    | 创建项的日期和时间。只读。                                             |
-| eTag                 | string            | 该项目的 ETag。只读。                                                          |
+| eTag                 | 字符串            | 该项目的 ETag。只读。                                                          |
 | lastModifiedBy       | [identitySet][]   | 上次修改项目的用户、设备和应用程序的标识。只读。 |
 | lastModifiedDateTime | dateTimeOffset    | 上次修改项目的日期和时间。只读。                                   |
 | name                 | string            | 项目名称。读写。                                                      |
@@ -71,10 +71,15 @@ ms.locfileid: "27866246"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/BaseItem"
-} -->
+  "tocPath": "Resources/BaseItem",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/baseitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
-ms.openlocfilehash: 75c6bd39c62b55fee45f82240c37aee61b080c99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c90dd8889d07f903a7d3c79d9e4e5db3b9f2a30b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856795"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522971"
 ---
 # <a name="contenttype-resource-type"></a>ContentType 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ContentType** 资源代表 SharePoint 中的_内容类型_。
 内容类型使你可以定义一组列，这些列必须存在于 [**list**][list] 中的每个 [**listItem**][listItem] 上。
@@ -47,7 +47,7 @@ ms.locfileid: "27856795"
 
 | 属性名称     | 类型                 | 说明
 |:------------------|:---------------------|:----------------------------------
-| **说明**   | string               | 项目的描述性文本。
+| **description**   | string               | 项目的描述性文本。
 | **group**         | string               | 此内容类型所属的组的名称。 可以帮助组织相关的内容类型。
 | **hidden**        | boolean              | 指示内容类型是否隐藏于此列表的“新建”菜单中。
 | **id**            | string               | 内容类型的唯一标识符。
@@ -71,10 +71,15 @@ ms.locfileid: "27856795"
 [itemReference]: itemreference.md
 [contentTypeOrder]: contenttypeorder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentType"
-} -->
+  "tocPath": "Resources/ContentType",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/contentType.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

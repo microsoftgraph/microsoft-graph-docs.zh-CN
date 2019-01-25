@@ -4,16 +4,16 @@ description: 检索按其与用户，这由用户的通信和协作模式和业�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 4233c0bc4015525bb474499366c084483ceaefe7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: deb9fd929a2b0b8ce4da9392cb465497c2236b0c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925040"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517811"
 ---
 # <a name="list-people"></a>列出人员
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索按给[用户](../resources/user.md)，它由用户的通信和协作模式和业务关系其相关性排序的[person](../resources/person.md)对象的列表。
 
@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/people
 |$search|string|按姓名或别名搜索人员。 支持模糊匹配。 参数仅适用于不搜索已登录的用户相关人员搜索相关的其他用户的人员。 此外支持`topic`要查找人员关键字基于提取与此人的电子邮件对话的主题。 请参阅*Perform 模糊搜索*节[获取有关人员的相关信息](/graph/people-example#perform-a-fuzzy-search)的信息和示例。|
 |$select|string|要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。|
 |$skip|整数|跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。|
-|$top|整数|要返回的结果数。|
+|$top|int|要返回的结果数。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -70,7 +70,7 @@ GET /users/{id | userPrincipalName}/people
 
 本节中的请求获得人员已登录的用户与最相关 (`/me`)、 基于通信、 协作和业务关系。
 
-默认情况下，每个响应都会返回10条记录，但您可以 改变这点 使用 *$顶部* 参数。 这些请求需要 People.Read 的权限。
+默认情况下，每个响应都会返回10条记录，但您可以 *改变这点* 使用 $顶部 参数。 这些请求需要 People.Read 的权限。
 
 #### <a name="request"></a>请求
 
@@ -177,7 +177,7 @@ Content-length: 1326
 }
 ```
 
-#### <a name="requesting-a-subsequent-page-of-people"></a>请求人员的后续页面。
+#### <a name="requesting-a-subsequent-page-of-people"></a> 请求人员的后续页面。
 
 如果第一个响应未包含相关人员的完整列表，可以使用 *$top* 和 *$skip* 发出第二个请求，以请求其他信息页面。如果上一个请求包含其他信息，则下一个请求从服务器获取下一个人员页面。
 
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/beta/me/people/?$top=10&$skip=10
 GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 ```
 
-#### <a name="changing-the-number-of-people-returned-and-the-fields-returned"></a>更改返回的人数和返回的字段
+#### <a name="changing-the-number-of-people-returned-and-the-fields-returned"></a> 更改返回的人数和返回的字段
 
 可以通过设置 *$top* 参数更改响应中返回的人员数。
 
@@ -203,7 +203,7 @@ GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
 ```
 
-#### <a name="selecting-the-fields-to-return"></a>选择要返回的字段
+#### <a name="selecting-the-fields-to-return"></a> 选择要返回的字段
 
 您可以限制从服务器返回通过使用 *$select*参数选择一个或多个字段的数据量。 该 *@ odata.id* 字段总会返回。
 
@@ -213,7 +213,7 @@ GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
 GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses
 ```
 
-#### <a name="using-a-filter-to-limit-the-response"></a>使用过滤来限制响应
+#### <a name="using-a-filter-to-limit-the-response"></a> 使用过滤来限制响应
 
 可以使用 *$filter* 参数将响应限制为记录中包含指定条件的那些人员。
 
@@ -247,7 +247,7 @@ GET https://graph.microsoft.com/beta/me/people/?$filter=Sources/Any (source: sou
 GET https://graph.microsoft.com/beta/me/people/?$search=j
 ```
 
-#### <a name="using-search-to-specify-a-relevant-topic"></a>使用搜索来指定相关主题
+#### <a name="using-search-to-specify-a-relevant-topic"></a> 使用搜索来指定相关主题
 
 以下请求返回与相关人员`/me`名称中包含"ma"和谁具有关联"规划的功能。"
 
@@ -255,7 +255,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search=j
 GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature planning"
 ```
 
-#### <a name="performing-a-fuzzy-search"></a>执行模糊搜索
+#### <a name="performing-a-fuzzy-search"></a>  执行模糊搜索
 
 以下请求执行名为"Hermaini 大厅。"的人员搜索 因为没有名为"Herminia 轮廓"与已登录的用户相关的人员，则返回"Herminia 轮廓"的信息。
 
@@ -273,10 +273,15 @@ GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List people",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-people.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

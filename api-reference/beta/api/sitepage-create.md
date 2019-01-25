@@ -5,16 +5,16 @@ ms.date: 05/07/2018
 title: SharePoint 网站中创建新的页面
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 112c9f564c549bbae06430d4c2353c26abbac908
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0e66c38fc05402c8838d4ec081f492a394ea8ff2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921736"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523419"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>在网站页面列表的网站中创建页面
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在网站页面[列表][][的网站][]中创建新[sitePage][] 。
 
@@ -189,10 +189,15 @@ Content-type: application/json
 [site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a sitePage in the SitePages list in a site.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Pages/Create"
-} -->
+  "tocPath": "Pages/Create",
+  "suppressions": [
+    "Error: /api-reference/beta/api/sitepage-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

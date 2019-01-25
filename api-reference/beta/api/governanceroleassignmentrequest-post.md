@@ -2,20 +2,20 @@
 title: 创建 governanceRoleAssignmentRequest
 description: 创建角色分配请求以表示该操作所需角色分配。 下表列出的操作。
 localization_priority: Normal
-ms.openlocfilehash: 09adb824147dba745649efc7589ca763f815278d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c936a6cd0ba061fc1dd3758533781d7270673939
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823770"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523237"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>创建 governanceRoleAssignmentRequest
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建角色分配请求以表示该操作所需角色分配。 下表列出的操作。
 
-| 操作       | 类型 | 
+| Operation       | 类型 | 
 |:---------------|:----------|
 | 分配角色分配| AdminAdd |
 | 激活合格的角色分配| UserAdd | 
@@ -31,7 +31,7 @@ ms.locfileid: "27823770"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | Permissions              |
+|权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
@@ -52,15 +52,15 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象的 JSON 表示形式。 
 
-| 属性     | 类型    |是否必需|  Description|
+| 属性     | 类型    |必需|  说明|
 |:---------------|:--------|:----------|:----------|
-|resourceId|字符串|是|资源的 ID。|
+|resourceId|String|是|资源的 ID。|
 |roleDefinitionId|字符串|是|角色定义的 ID。|
 |subjectId|字符串|是|主题的 ID。|
 |assignmentState|字符串|是|工作分配状态。 值可以是``Eligible``和``Active``。|
-|type|字符串|是|请求类型。 值可以是`AdminAdd`， `UserAdd`， `AdminUpdate`， `AdminRemove`， `UserRemove`， `UserExtend`， `UserRenew`，`AdminRenew`和`AdminExtend`。|
-|原因|字符串| |原因需要提供角色分配请求的审核和查看用途。|
-|计划|[governanceSchedule](../resources/governanceschedule.md)| | 角色分配请求的时间表。 请求类型的`UserAdd`， `AdminAdd`， `AdminUpdate`，和`AdminExtend`，需要。|
+|type|String|是|请求类型。 值可以是`AdminAdd`， `UserAdd`， `AdminUpdate`， `AdminRemove`， `UserRemove`， `UserExtend`， `UserRenew`，`AdminRenew`和`AdminExtend`。|
+|Reason|String| |原因需要提供角色分配请求的审核和查看用途。|
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)| | 角色分配请求的时间表。 请求类型的`UserAdd`， `AdminAdd`， `AdminUpdate`，和`AdminExtend`，需要。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回`201 Created`响应代码和响应正文中的[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象。
@@ -88,13 +88,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | 属性     | 类型    |是否必需|  值 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|字符串|是|\<resourceId\>|
+|resourceId|String|是|\<|
 |roleDefinitionId|字符串|是|\<roleDefinitionId\>|
 |subjectId|字符串|是|\<subjectId\>|
 |assignmentState|字符串|是| 合格 / 活动|
-|type|字符串|是| AdminAdd|
-|原因|字符串| 取决于角色设置||
-|计划|[governanceSchedule](../resources/governanceschedule.md)|是|        |
+|type|String|是| AdminAdd|
+|Reason|String| 取决于角色设置||
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|是|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
@@ -171,13 +171,13 @@ Content-length: 226
 
 | 属性     | 类型    |是否必需|  值 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|字符串|是|\<resourceId\>|
+|resourceId|String|是|\<|
 |roleDefinitionId|字符串|是|\<roleDefinitionId\>|
 |subjectId|字符串|是|\<subjectId\>|
 |assignmentState|字符串|是| 活动|
-|type|字符串|是| UserAdd|
-|原因|字符串| 取决于角色设置||
-|计划|[governanceSchedule](../resources/governanceschedule.md)|是|        |
+|type|String|是| UserAdd|
+|Reason|String| 取决于角色设置||
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|是|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
@@ -266,13 +266,13 @@ Content-type: application/json
 
 | 属性     | 类型    |是否必需|  值 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|字符串|是|\<resourceId\>|
+|resourceId|String|是|\<|
 |roleDefinitionId|字符串|是|\<roleDefinitionId\>|
 |subjectId|字符串|是|\<subjectId\>|
 |assignmentState|字符串|是| 活动|
-|type|字符串|是| UserRemove|
-|原因|字符串| 否||
-|计划|[governanceSchedule](../resources/governanceschedule.md)|否|        |
+|type|String|是| UserRemove|
+|Reason|字符串| 否||
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|否|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
@@ -329,13 +329,13 @@ Content-length: 226
  
 | 属性     | 类型    |是否必需|  值 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|字符串|是|\<resourceId\>|
+|resourceId|String|是|\<|
 |roleDefinitionId|字符串|是|\<roleDefinitionId\>|
 |subjectId|字符串|是|\<subjectId\>|
 |assignmentState|字符串|是| 合格 / 活动|
-|type|字符串|是| AdminRemove|
-|原因|字符串| 否||
-|计划|[governanceSchedule](../resources/governanceschedule.md)|否|        |
+|type|String|是| AdminRemove|
+|Reason|字符串| 否||
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|否|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
@@ -391,13 +391,13 @@ Content-length: 226
 
 | 属性     | 类型    |是否必需|  值 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|字符串|是|\<resourceId\>|
+|resourceId|String|是|\<|
 |roleDefinitionId|字符串|是|\<roleDefinitionId\>|
 |subjectId|字符串|是|\<subjectId\>|
 |assignmentState|字符串|是| 合格 / 活动|
-|type|字符串|是| AdminUpdate|
-|原因|字符串| 取决于 roleSettings||
-|计划|[governanceSchedule](../resources/governanceschedule.md)|是|        |
+|type|String|是| AdminUpdate|
+|Reason|String| 取决于 roleSettings||
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|是|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
@@ -471,13 +471,13 @@ Content-length: 226
  
 | 属性     | 类型    |是否必需|  值 |
 |:---------------|:--------|:----------|:----------|
-|resourceId|字符串|是|\<resourceId\>|
+|resourceId|String|是|\<|
 |roleDefinitionId|字符串|是|\<roleDefinitionId\>|
 |subjectId|字符串|是|\<subjectId\>|
 |assignmentState|字符串|是| 合格 / 活动 |
-|type|字符串|是| AdminExtend|
-|原因|字符串| 取决于 roleSettings||
-|计划|[governanceSchedule](../resources/governanceschedule.md)|是|        |
+|type|String|是| AdminExtend|
+|Reason|String| 取决于 roleSettings||
+|Schedule|[governanceSchedule](../resources/governanceschedule.md)|是|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
@@ -547,10 +547,15 @@ Content-length: 226
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Post roleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

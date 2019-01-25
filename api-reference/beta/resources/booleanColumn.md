@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: BooleanColumn
 localization_priority: Normal
-ms.openlocfilehash: c7061226da98f0b64d3efe425db0c5dc59a9f474
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6c2429aad49064f1532a7bc298a3aeeba1b3d51b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888912"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525645"
 ---
 # <a name="booleancolumn-resource-type"></a>BooleanColumn 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [columnDefinition](columndefinition.md) 资源上的 **booleanColumn** 指示该列包含一个布尔值。
 
@@ -31,10 +31,15 @@ ms.locfileid: "27888912"
 
 **booleanColumn** 资源不包含任何属性。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/BooleanColumn"
-} -->
+  "tocPath": "Resources/BooleanColumn",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/booleanColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

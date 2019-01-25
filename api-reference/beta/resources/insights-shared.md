@@ -1,19 +1,19 @@
 ---
-title: 共享的资源类型
+title: 共享资源类型
 description: 表示文件共享或特定用户洞察。 支持以下共享的文件：
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 2c3d91023e2d68704b54308dff9566673f71dfb0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973704"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524686"
 ---
-# <a name="shared-resource-type"></a>共享的资源类型
+# <a name="shared-resource-type"></a>Shared 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示文件共享或特定用户洞察。 支持以下共享的文件：
 
@@ -32,12 +32,12 @@ ms.locfileid: "27973704"
 
 | 属性              | 类型                      | 说明  |
 | -------------         |---------------            | -------------|
-| id                    | 字符串                    | 关系的唯一标识符。 只读。        |
+| id                    | String                    | 关系的唯一标识符。 只读。        |
 | lastShared            | [sharingDetail](insights-sharingdetail.md)                | 有关共享项目的详细信息。 只读。        |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | 您可以使用可视化中您的体验的文档的属性。 只读      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | 引用的共享文档，如 url 和类型的文档属性。 只读       |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
@@ -56,3 +56,11 @@ ms.locfileid: "27973704"
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: 包含属性的见解复杂类型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: f8426d13968e5bea929c8e26f71346fa554a5242
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990654"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526758"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 包含属性的[见解](insights.md)复杂类型。
 
@@ -38,29 +38,29 @@ ms.locfileid: "27990654"
 
 | 属性              | 类型          | 说明  |
 | -------------         |---------------| -------------|
-| title                 | 字符串        | 项目的标题文本。               |
-| type              | 字符串        | 项目的媒体类型。 可用于根据特定类型的特定文件筛选。 请参阅以下支持的类型。 |
-| 媒体类型             | 字符串        | 项目的媒体类型。 可用于筛选文件根据支持 IANA 媒体 Mime 类型为特定类型。 请注意，不是所有媒体 Mime 类型都受都支持。 |
-| previewImageUrl       | 字符串        | 导致项目的预览图像 URL。 |
-| previewText           | 字符串        | 预览文本项。 |
-| containerWebUrl       | 字符串        | 前导到在其中存储项目的文件夹路径。 |
-| containerDisplayName  | 字符串        | 描述项目的存储位置的字符串。 例如，SharePoint 网站或标识的 OneDrive 存储项目所有者的用户名称的名称。  |
-| containerType         | 字符串 | 可用于筛选按在其中存储文件的容器的类型。 如 Site 或 OneDriveBusiness。       |
+| title                 | String        | 项目的标题文本。               |
+| type              | String        | 项目的媒体类型。 可用于根据特定类型的特定文件筛选。 请参阅以下支持的类型。 |
+| MediaType             | String        | 项目的媒体类型。 可用于筛选文件根据支持 IANA 媒体 Mime 类型为特定类型。 请注意，不是所有媒体 Mime 类型都受都支持。 |
+| PreviewImageUrl       | String        | 导致项目的预览图像 URL。 |
+| previewText           | String        | 预览文本项。 |
+| containerWebUrl       | String        | 前导到在其中存储项目的文件夹路径。 |
+| containerDisplayName  | String        | 描述项目的存储位置的字符串。 例如，SharePoint 网站或标识的 OneDrive 存储项目所有者的用户名称的名称。  |
+| ContainerType         | String | 可用于筛选按在其中存储文件的容器的类型。 如 Site 或 OneDriveBusiness。       |
 
 ## <a name="type-property-values"></a>类型属性值
 -   PowerPoint
 -   Word
 -   Excel
--   Pdf
+-   PDF
 -   OneNote
 -   OneNotePage
 -   InfoPath
 -   Visio
 -   Publisher
--   Project
+-   项目
 -   Access
 -   邮件
--   Csv
+-   *.csv
 -   存档
 -   Xps
 -   音频
@@ -72,7 +72,7 @@ ms.locfileid: "27990654"
 -   文章
 -   ExternalContent
 -   Folder
--   其他
+-   Other
 
 示例查询：`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -87,3 +87,11 @@ ms.locfileid: "27990654"
 -   GDrive
 
 示例查询：`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-resourcevisualization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

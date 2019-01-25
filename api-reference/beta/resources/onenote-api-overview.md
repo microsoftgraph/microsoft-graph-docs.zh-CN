@@ -4,16 +4,16 @@ description: 'Microsoft Graph 允许您获取授权的访问用户的 OneNote �
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ff17f7fbe5f15752bc272b79f3f741180f8d6417
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7db3024224dde7ee4c95d2e3840187709471cecd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952998"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525624"
 ---
 # <a name="use-the-onenote-rest-api"></a>使用 OneNote REST API
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph 允许您获取授权的访问用户的 OneNote 笔记本、 节和页面中的个人或组织帐户的应用程序。 使用[适当的委派或应用程序权限](/graph/permissions-reference#notes-permissions)，您的应用程序可以访问已登录的用户或租户中的任何用户的 OneNote 数据。 
 
@@ -28,7 +28,7 @@ https://graph.microsoft.com/{version}/{location}/onenote/
 - `v1.0` 用于稳定的生产代码。
 - `beta` 用于试用正在开发的功能。 功能和 beta 终结点中的功能可能会更改;我们建议不要在生产代码中使用它。
 
-位置可以是在 Office 365 或使用者 OneDrive 用户笔记本、 组笔记本或在 Office 365 上的 SharePoint 网站承载团队笔记本。 
+位置可以是 Office 365 或消费者版 OneDrive 上的用户笔记本，还可以是 Office 365 上的组笔记本或 SharePoint 站点托管的团队笔记本。 
 
 ![OneNote API 开发堆栈](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
 
@@ -43,7 +43,7 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 
 - `me` 用于为当前用户可以访问的 OneNote 内容（拥有和共享）。
 - `users/{id}` 用于指定用户已与当前用户共享的 OneNote 内容（此 URL 中）。 使用[用户](users.md)API。
-> **注意：** 您可以通过 GET 请求上获取用户 Id `https://graph.microsoft.com/v1.0/users`。
+> **注意：** 可以通过在 `https://graph.microsoft.com/v1.0/users` 上发出 GET 请求来获取用户 ID。
 
 ### <a name="group-notebooks"></a>组笔记本
 
@@ -58,3 +58,11 @@ https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections 
 ```
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onenote-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
