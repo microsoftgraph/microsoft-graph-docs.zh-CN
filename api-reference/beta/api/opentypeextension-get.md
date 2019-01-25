@@ -3,16 +3,16 @@ title: 获取开放扩展
 description: 获取用名称或完全限定的名称标识的开放扩展（openTypeExtension 对象）。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 33c26980382e29a3b640a53ac3397b4ee959fd92
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 367e3613e309e02a8ca5ec82c5216e4aeae20d25
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935519"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524301"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用名称或完全限定的名称标识的开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象）。
 
@@ -32,13 +32,13 @@ ms.locfileid: "27935519"
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.Read.All | 不支持 | Device.ReadWrite.All |
 | [事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
+| [group](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [组事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [组织](../resources/organization.md) | User.Read | 不支持 | 不支持 |
 | [个人联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [用户](../resources/user.md) | User.Read | User.Read | User.Read.All |
+| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -113,7 +113,7 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 请确保对 `$filter` 字符串中的空格字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)。
 
-|**名称**|**值**|**说明**|
+|**名称**|**值**|**Description**|
 |:---------------|:--------|:-------|
 |$filter|string|返回其 **id** 与 `extensionId` 参数值匹配的扩展。|
 |具有 **any** 运算符的 $filter|string|返回特定资源集合的实例，其中包含其 **id** 与 `extensionId` 参数值匹配的扩展。|
@@ -464,10 +464,15 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get openTypeExtension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/opentypeextension-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

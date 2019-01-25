@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: d20656351725f23d4fd4c00b65fdc88fe2f449b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 22e449d725b94b7be458261e82cfde0b5d6fdf9c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853065"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524119"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用 [Shares](../api/shares-get.md) API 访问共享的 [driveItem](driveitem.md) 时，返回 **sharedDriveItem** 资源。
 
@@ -51,7 +51,7 @@ ms.locfileid: "27853065"
 | 属性 | 类型                          | 说明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
 | id       | String                        | 要访问的内容的唯一标识符。              |
-| name     | String                        | 共享项的显示名称。                             |
+| 名称     | String                        | 共享项的显示名称。                             |
 | 所有者    | [IdentitySet](identityset.md) | 正在引用的共享项的所有者信息。 |
 
 ## <a name="relationships"></a>关系
@@ -61,14 +61,14 @@ ms.locfileid: "27853065"
 | **driveItem**     | [**driveItem**][driveItem] | 用于访问基础 **driveItem**
 | **list**          | [**list**][list]           | 用于访问基础 **list**
 | **listItem**      | [**listItem**][listItem]   | 用于访问基础 **listItem**
-| **permission**    | [**权限**][permission] | 用于访问**权限**，表示基础共享链接
+| **permission**    | **Permission** | 用于访问**权限**，表示基础共享链接
 | **site**          | [**site**][site]           | 用于访问基础 **site**
 
 另外，对于从个人 OneDrive 帐户共享的 **driveItems**，也可使用以下关系。
 
 | 关系名称 | 类型                         | 说明
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | [**driveItem**][driveItem] 集合 | 共享根中包含的所有 driveItem。 不能枚举该集合。
+| **项目**         | [**driveItem**][driveItem] 集合 | 共享根中包含的所有 driveItem。 不能枚举该集合。
 | **driveItem**     | [**driveItem**][driveItem]            | 用于访问基础 **driveItem**
 
 [driveItem]: driveitem.md
@@ -87,10 +87,15 @@ ms.locfileid: "27853065"
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Share resource returns information about a shared item or collection of items.",
   "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": "Resources/Share"
-} -->
+  "tocPath": "Resources/Share",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/shareddriveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

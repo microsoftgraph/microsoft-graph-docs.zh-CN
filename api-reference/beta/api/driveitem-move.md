@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: 移动文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fe852af054d192c75c3b22aed5516e376361ad11
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b88e170a9211da3df200955a98f078624eacbe34
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966340"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526044"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到新文件夹
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 **parentReference**。
 
@@ -107,10 +107,15 @@ Content-type: application/json
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Move an item to another location or rename the item.",
   "keywords": "move,rename,mv,change location",
   "section": "documentation",
-  "tocPath": "Items/Move"
-} -->
+  "tocPath": "Items/Move",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-move.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

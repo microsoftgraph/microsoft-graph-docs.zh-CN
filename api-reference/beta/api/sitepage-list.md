@@ -5,16 +5,16 @@ ms.date: 03/15/2018
 title: 列出网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3049ca860d889e069e941f5437f4f560fef9ef44
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942624"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525064"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>列表中的网站网站页面列表的页面
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从网站页面[列表][]的网站[的网站][]中获取 [sitePages] [] 的集合。 （具有分页） 返回网站中的所有页面。
 
@@ -217,10 +217,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Enumerate the list of pages in a site",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Pages/Enumerate"
-} -->
+  "tocPath": "Pages/Enumerate",
+  "suppressions": [
+    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

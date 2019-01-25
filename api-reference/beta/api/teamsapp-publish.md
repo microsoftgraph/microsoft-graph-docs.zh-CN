@@ -1,19 +1,19 @@
 ---
-title: Permissions
+title: 权限
 description: '将应用程序发布到 Microsoft 团队的应用程序目录。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 656b4a148f1d53cb44e303265af5624ccd1e423b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7acd916aa04200c626d8045e7da5a6d00be8a951
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932922"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524049"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>将应用程序发布到组织的应用程序目录
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将[应用程序](../resources/teamsapp.md)发布到 Microsoft 团队的应用程序目录。 具体而言，此 API 将应用程序发布到组织的目录 （租户应用程序目录）;创建的资源将具有`distributionMethod`  =  `organization`。
 
@@ -78,3 +78,11 @@ Content-Type: application/json
   "distributionMethod": "organization"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsapp-publish.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

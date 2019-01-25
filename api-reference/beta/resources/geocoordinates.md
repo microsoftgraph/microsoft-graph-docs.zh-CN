@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
-ms.openlocfilehash: d49142ed414ad82ec149792e11e5a8c42d9837dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 45df506820ee242b53630c9d44ed390216bae141
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852638"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525071"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **GeoCoordinates** 资源基于文件中包含的元数据提供位置的地理坐标和海拔。如果 [**DriveItem**](driveitem.md) 具有一个非 null **位置**方面，则该项表示一个已知位置和与其相关的文件。
 
@@ -41,18 +41,23 @@ ms.locfileid: "27852638"
 
 | 属性  | 类型   | 说明
 |:----------|:-------|:--------------------------------------------------------
-| 海拔  | Double | 可选。此项高于海平面的高度（以英尺为单位）。只读。
-| 纬度  | Double | 可选。此项的纬度（以十进制表示）。只读。
-| 经度 | Double | 可选。此项的经度（以十进制表示）。只读。
+| 海拔  | 双精度数 | 可选。此项高于海平面的高度（以英尺为单位）。只读。
+| 纬度  | 双精度数 | 可选。此项的纬度（以十进制表示）。只读。
+| 经度 | 双精度数 | 可选。此项的经度（以十进制表示）。只读。
 
 ## <a name="remarks"></a>注解
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The location facet provides geographic location related properties for an item",
   "keywords": "location,geographic,item,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Location"
-} -->
+  "tocPath": "Facets/Location",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/geocoordinates.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

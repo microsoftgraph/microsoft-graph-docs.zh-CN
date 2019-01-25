@@ -2,16 +2,16 @@
 title: privilegedRoleSettings 资源类型
 description: 代表特权角色的设置。
 localization_priority: Normal
-ms.openlocfilehash: 971c48ce3ecdd2a219a111f3a11884377e20430c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842740"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525694"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 代表特权角色的设置。
 
@@ -23,21 +23,21 @@ ms.locfileid: "27842740"
 |[获取 privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |读取属性和 privilegedRoleSettings 对象的关系。|
 |[更新 privilegedRoleSettings](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |更新 privilegedRoleSettings 对象。|
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|当激活角色持续时间。|
-|id|string| 角色设置唯一标识符。 此为只读属性。|
-|isMfaOnElevationConfigurable|boolean|**true**如果 mfaOnElevation 可配置。 **false**如果 mfaOnElevation 不可配置。|
-|lastGlobalAdmin|boolean|仅供内部。|
+|ElevationDuration|duration|当激活角色持续时间。|
+|id|string| 角色设置唯一标识符。 只读。|
+|isMfaOnElevationConfigurable|布尔|**true**如果 mfaOnElevation 可配置。 **false**如果 mfaOnElevation 不可配置。|
+|lastGlobalAdmin|布尔|仅供内部。|
 |maxElavationDuration|duration|激活角色的最大持续时间。|
-|mfaOnElevation|boolean|如果为**true** MFA 需要激活角色。 **false**如果 MFA 不需要激活角色。|
+|mfaOnElevation|布尔|如果为**true** MFA 需要激活角色。 **false**如果 MFA 不需要激活角色。|
 |minElevationDuration|duration|最少持续时间激活角色。|
-|notificationToUserOnElevation|boolean|**true**如果角色激活时向最终用户发送通知。 **false**如果角色被激活时不发送通知。|
-|ticketingInfoOnElevation|boolean|如果为**true**时，票证信息是必需激活角色。 **false**如果票证信息不需要激活角色。|
-|approvalOnElevation|boolean|**true**如果情况下审批，需要激活角色。 **false**如果审批不需要激活角色。|
+|notificationToUserOnElevation|布尔|**true**如果角色激活时向最终用户发送通知。 **false**如果角色被激活时不发送通知。|
+|ticketingInfoOnElevation|布尔|如果为**true**时，票证信息是必需激活角色。 **false**如果票证信息不需要激活角色。|
+|approvalOnElevation|布尔|**true**如果情况下审批，需要激活角色。 **false**如果审批不需要激活角色。|
 |approverIds|array|审批 id，如果需要激活审核的列表。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 
@@ -72,10 +72,15 @@ ms.locfileid: "27842740"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleSettings resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privilegedrolesettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

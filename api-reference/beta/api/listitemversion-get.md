@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: 获取列表项的以前版本 - SharePoint API
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4068ebd1e8a245f2418954ce04bad1f78530acd0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a23a8218b2be3ff36d719ee25e6fb0c960c5750f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983875"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526254"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>获取 ListItemVersion 资源（预览）
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 [ListItem](../resources/listitem.md) 的某个特定版本的元数据。
 
@@ -79,10 +79,15 @@ Content-Type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
-} -->
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitemversion-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

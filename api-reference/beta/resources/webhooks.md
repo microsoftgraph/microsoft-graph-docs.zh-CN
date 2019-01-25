@@ -3,16 +3,16 @@ title: 使用 Microsoft Graph API 获取更改通知
 description: Microsoft Graph REST API 使用 webhook 机制来将通知传递到客户端。 客户端是配置其自己的 URL，以接收通知的 web 服务。 客户端应用程序使用通知更新时更改其状态。 有关详细信息，包括如何订阅和处理传入通知，请参阅 Set up 中用户数据的更改的通知。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: fe571fe0a9a7c982ee7ce93b08457586134d7d91
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 02ab18d3fa8980211a4937433ad1616b0629bf8c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986132"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526212"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph REST API 使用 webhook 机制来将通知传递到客户端。 客户端是配置其自己的 URL，以接收通知的 web 服务。 客户端应用程序使用通知更新时更改其状态。 有关详细信息，包括如何订阅和处理传入通知，请参阅[设置通知用户数据中的更改](/graph/webhooks)。
 
@@ -24,11 +24,11 @@ Microsoft Graph REST API 使用 webhook 机制来将通知传递到客户端。 
 - 用户
 - 组
 - 组对话
-- 在 OneDrive，包括与 SharePoint 网站关联的驱动器上共享的内容
+- OneDrive 上共享的内容，包括与 SharePoint 网站关联的驱动器。
 - 用户的个人 OneDrive 文件夹
 - 安全警报
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 通常订阅操作需要拥有对资源的读取权限。例如，若要获取邮件通知，应用需要 `Mail.Read` 权限。[创建订阅](../api/subscription-post-subscriptions.md)一文列出了各个资源类型所需的权限。下表列出了将 webhook 用于特定资源类型时应用可以请求的权限类型。
 
@@ -53,5 +53,13 @@ Microsoft Graph REST API 使用 webhook 机制来将通知传递到客户端。 
 [事件]: ./event.md
 [组]: ./group.md
 [邮件]: ./message.md
-[用户]: ./user.md
-[通知]: ./alert.md
+[user]: ./user.md
+[Alert]: ./alert.md
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/webhooks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

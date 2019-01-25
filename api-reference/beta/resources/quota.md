@@ -4,18 +4,18 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: 配额
 localization_priority: Normal
-ms.openlocfilehash: a63b41253569dbb3d666a76b0a7495839ef61b12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ce07852592317568254217c7e869f1da7f296a2e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882409"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525484"
 ---
 # <a name="quota-resource-type"></a>配额资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**配额**资源提供有关空间的详细信息约束[驱动器](drive.md)资源。
+**配额**资源提供有关 [驱动器](drive.md) 资源上的空间限制的详细信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -60,10 +60,15 @@ ms.locfileid: "27882409"
 | `critical` | 剩余配额少于总配额空间的 1%。                                                                                                                       |
 | `exceeded` | 使用的配额已超出总配额。在驱动器低于总配额量或购买更多存储空间之前，无法向该驱动器添加新的文件或文件夹。 |
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The quota facet provides information about how much space the OneDrive has available.",
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": "Facets/Quota"
-} -->
+  "tocPath": "Facets/Quota",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/quota.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

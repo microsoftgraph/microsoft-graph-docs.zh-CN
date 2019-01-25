@@ -4,16 +4,16 @@ description: 列出与此提交关联的资源。 **SubmissionResource**对象�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: bff80bd7975171f277cb8e6e6ee08cfd250a67ff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b9069cb6ec20f65b82cacca8f862a05ff0af7b5d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975360"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526184"
 ---
 # <a name="list-resources"></a>列表资源
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出与此提交关联的资源。 **SubmissionResource**对象是正在从事实际资源对象学生的包装。 如果这复制从分配过程的工作分配，包装还包括指向上工作分配的资源的指针。 这些资源是工作分配的工作副本。 **SubmittedResources**是正式已提交以进行评分的资源。
 
@@ -104,10 +104,15 @@ Content-length: 1045
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List resources",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-list-resources.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

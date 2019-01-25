@@ -2,16 +2,16 @@
 title: 更新 privilegedRoleSettings
 description: 更新给定的角色设置的角色设置。 将返回一个 privilegedRoleSettings 对象。
 localization_priority: Normal
-ms.openlocfilehash: 7c117abfe774eae60e42dcbc5f748c10cacf5cd6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 09464c878c76ed557f30d0eac21e0572fae05062
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819312"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527652"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新给定的角色设置的角色设置。 将返回一个[privilegedRoleSettings](../resources/privilegedrolesettings.md)对象。
 ## <a name="permissions"></a>权限
@@ -42,18 +42,18 @@ PUT /privilegedRoles/{id}/settings
 
 下表列出更新角色设置时可以提供的属性。
 
-|属性|类型|Description|
+|属性|类型|说明|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|当激活角色持续时间。 必填。|
-|id|string|角色设置唯一标识符。 此为只读属性。 必填。|
-|isMfaOnElevationConfigurable|boolean|**true**如果 mfaOnElevation 可配置。 **false**如果 mfaOnElevation 不可配置。 必填。|
-|lastGlobalAdmin|布尔|仅供内部使用。|
-|maxElavationDuration|duration|激活角色的最长持续时间。 必填。|
-|mfaOnElevation|布尔|如果为**true** MFA 需要激活角色。 **false**如果 MFA 不需要激活角色。 必填。|
-|minElevationDuration|duration|激活角色的最低持续时间。 必填。|
-|notificationToUserOnElevation|布尔|**true**如果角色激活时向最终用户发送通知。 **false**如果角色被激活时不发送通知。 必填。|
-|ticketingInfoOnElevation|布尔|如果为**true**时，票证信息是必需激活角色。 **false**如果票证信息不需要激活角色。 必填。|
-|approvalOnElevation|布尔|**true**如果情况下审批，需要激活角色。 **false**如果审批不需要激活角色。 必填。|
+|ElevationDuration|duration|当激活角色持续时间。 必需。|
+|id|string|角色设置唯一标识符。 只读。 必需。|
+|isMfaOnElevationConfigurable|布尔|**true**如果 mfaOnElevation 可配置。 **false**如果 mfaOnElevation 不可配置。 必需。|
+|lastGlobalAdmin|Boolean|仅供内部使用。|
+|maxElavationDuration|duration|激活角色的最长持续时间。 必需。|
+|mfaOnElevation|Boolean|如果为**true** MFA 需要激活角色。 **false**如果 MFA 不需要激活角色。 必需。|
+|minElevationDuration|duration|激活角色的最低持续时间。 必需。|
+|notificationToUserOnElevation|Boolean|**true**如果角色激活时向最终用户发送通知。 **false**如果角色被激活时不发送通知。 必需。|
+|ticketingInfoOnElevation|Boolean|如果为**true**时，票证信息是必需激活角色。 **false**如果票证信息不需要激活角色。 必需。|
+|approvalOnElevation|Boolean|**true**如果情况下审批，需要激活角色。 **false**如果审批不需要激活角色。 必需。|
 |approverIds|array|审批 Id，如果需要激活审核的列表。|
 
 ## <a name="response"></a>响应
@@ -95,10 +95,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update privilegedRoleSettings",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

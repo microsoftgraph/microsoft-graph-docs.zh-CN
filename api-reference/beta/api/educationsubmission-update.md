@@ -4,16 +4,16 @@ description: 将薪等级和反馈添加到提交。 仅教师可以执行此操
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7ebe8445a6537333ed17f3626a58258a952ee844
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5c420d2c6e512d8fed0d713340fea482b0888ca1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975335"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526114"
 ---
 # <a name="update-educationsubmission"></a>更新 educationsubmission
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将薪等级和反馈添加到提交。 仅教师可以执行此操作。 请注意，基本权限不具有访问薪等级属性，因此无法写入薪等级或反馈。 此操作不会释放分数，以及向学生发送反馈。 教师必须采取的薪等级数据返回到学生显式释放操作。
 
@@ -156,10 +156,15 @@ Content-length: 1217
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationsubmission",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,16 +3,16 @@ title: 活动资源类型
 description: 表示应用程序-例如，TV 显示、 文档或视频游戏中的当前市场活动中的单个活动。 当用户启动与该活动时，以指示该活动的开始和结束时间的历史记录项捕获项目。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 7a9000de339bc5d44fcbf2d282237caef85e076f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5deaab5d7ea071bfda686380d49fb41214a7b29e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939292"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525890"
 ---
 # <a name="activity-resource-type"></a>活动资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示应用程序-例如，TV 显示、 文档或视频游戏中的当前市场活动中的单个活动。 当用户启动与该活动时，此服务捕获作为[历史记录项](projectrome-historyitem.md)，指示该活动的开始和结束时间。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
 
@@ -33,26 +33,26 @@ ms.locfileid: "27939292"
 
 ## <a name="properties"></a>属性
 
-|名称 | 类型 | Description|
+|名称 | 类型 | 说明|
 |:----|:-----|:-----------|
 |userTimezone | 字符串 | 可选。 在其中用于生成活动的用户的设备已位于在活动创建时; timezone为了支持跨平台表示形式作为 Olson Id 提供的值。|
 |createdDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上创建对象时的日期和时间。 |
 |lastModifiedDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上修改对象时的日期和时间。 |
-|id | 字符串 | 使用的 URL 地址的服务器生成的 ID。|
-|appActivityId | 字符串 | 必需。 应用程序-此后提供呼叫者和不可变的上下文中唯一的活动 ID。|
-|activitySourceHost | 字符串 | 必需。 表示应用程序的跨平台标识映射的域的 URL。 映射是存储也为 JSON 文件域上托管或通过 Windows 开发人员中心可配置。 JSON 文件命名为跨平台应用程序标识符和承载在您的 HTTPS 域，在顶级域根目录或包括 sub 域。 例如：https://contoso.com 或 https://myapp.contoso.com，但不是 https://myapp.contoso.com/somepath。 您必须具有唯一文件和域 （或 sub 域），每个跨平台应用程序标识。 例如，Word 与 PowerPoint 的需要单独的文件和域。|
-|appDisplayName | 字符串 | 可选。 用于生成使用活动情况下，用户的本地设备上未安装应用程序时应用程序的简短的文本说明。|
-|activationUrl | 字符串 | 必需。 用于启动最佳本机体验由 appId 中的活动 URL。 如果没有的本机应用程序存在，则可能会启动一个基于 web 的应用程序。|
+|id | String | 使用的 URL 地址的服务器生成的 ID。|
+|appActivityId | String | 必需。 应用程序-此后提供呼叫者和不可变的上下文中唯一的活动 ID。|
+|activitySourceHost | String | 必需。 表示应用程序的跨平台标识映射的域的 URL。 映射是存储也为 JSON 文件域上托管或通过 Windows 开发人员中心可配置。 JSON 文件命名为跨平台应用程序标识符和承载在您的 HTTPS 域，在顶级域根目录或包括 sub 域。 例如：https://contoso.com 或 https://myapp.contoso.com，但不是 https://myapp.contoso.com/somepath。 您必须具有唯一文件和域 （或 sub 域），每个跨平台应用程序标识。 例如，Word 与 PowerPoint 的需要单独的文件和域。|
+|AppDisplayName | 字符串 | 可选。 用于生成使用活动情况下，用户的本地设备上未安装应用程序时应用程序的简短的文本说明。|
+|activationUrl | String | 必需。 用于启动最佳本机体验由 appId 中的活动 URL。 如果没有的本机应用程序存在，则可能会启动一个基于 web 的应用程序。|
 |fallbackUrl | 字符串 | 可选。 用于启动基于 web 的应用程序中的活动如果可用的 URL。|
 |contentUrl | 字符串 | 可选。 使用在事件的内容可以呈现之外的本机或基于 web 的应用程序体验 （例如，RSS 源中的项目的指针）。|
-|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必填。 包含信息呈现体验中的活动的对象|
+|visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必需。 包含信息呈现体验中的活动的对象|
 |contentInfo | 类型化的 JSON 对象 | 可选。 一个自定义的数据的 JSON LD 根据[schema.org](https://schema.org)语法的内容的可扩展说明。|
 |expirationDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 对象过期的服务器上时的日期和时间。|
 |status | EnumType | 由服务器设置。 一个用于标识有效对象的状态代码。 值： 活动更新、 删除、 忽略。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
-|关系 | 类型 | Description|
+|关系 | 类型 | 说明|
 |:------------|:-----|:-----------|
 |historyItems| [historyItem](../resources/projectrome-historyitem.md)集合 | 可选。 NavigationProperty/包容;导航到活动的 historyItems 属性。|
 
@@ -96,10 +96,15 @@ ms.locfileid: "27939292"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "activity resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/projectrome-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
