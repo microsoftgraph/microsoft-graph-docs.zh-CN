@@ -4,51 +4,51 @@ description: 使用此 API 成员 （用户或组） 添加到一个管理单元
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f64ca4c00265903fa1b4ebc467f2d70274628078
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c1cc9ce7e091ac96ca2484c74404c3a4b04b19ec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946824"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509481"
 ---
-# <a name="add-a-member"></a><span data-ttu-id="22b7e-103">添加成员</span><span class="sxs-lookup"><span data-stu-id="22b7e-103">Add a member</span></span>
+# <a name="add-a-member"></a><span data-ttu-id="ebb09-103">添加成员</span><span class="sxs-lookup"><span data-stu-id="ebb09-103">Add a member</span></span>
 
-> <span data-ttu-id="22b7e-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="22b7e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="22b7e-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="22b7e-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="22b7e-106">使用此 API 成员 （用户或组） 添加到一个管理单元。</span><span class="sxs-lookup"><span data-stu-id="22b7e-106">Use this API to add a member (user or group) to an administrative unit.</span></span>
+<span data-ttu-id="ebb09-104">使用此 API 成员 （用户或组） 添加到一个管理单元。</span><span class="sxs-lookup"><span data-stu-id="ebb09-104">Use this API to add a member (user or group) to an administrative unit.</span></span>
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
-## <a name="permissions"></a><span data-ttu-id="22b7e-107">权限</span><span class="sxs-lookup"><span data-stu-id="22b7e-107">Permissions</span></span>
-<span data-ttu-id="22b7e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="22b7e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ebb09-105">权限</span><span class="sxs-lookup"><span data-stu-id="ebb09-105">Permissions</span></span>
+<span data-ttu-id="ebb09-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ebb09-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="22b7e-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="22b7e-110">Permission type</span></span>      | <span data-ttu-id="22b7e-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="22b7e-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ebb09-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ebb09-108">Permission type</span></span>      | <span data-ttu-id="ebb09-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ebb09-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="22b7e-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="22b7e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="22b7e-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="22b7e-113">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="22b7e-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="22b7e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="22b7e-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="22b7e-115">Not supported.</span></span>    |
-|<span data-ttu-id="22b7e-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="22b7e-116">Application</span></span> | <span data-ttu-id="22b7e-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="22b7e-117">Not supported.</span></span> |
+|<span data-ttu-id="ebb09-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ebb09-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ebb09-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ebb09-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="ebb09-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ebb09-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ebb09-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="ebb09-113">Not supported.</span></span>    |
+|<span data-ttu-id="ebb09-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ebb09-114">Application</span></span> | <span data-ttu-id="ebb09-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ebb09-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="22b7e-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="22b7e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ebb09-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ebb09-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits/{id}/members/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="22b7e-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="22b7e-119">Request headers</span></span>
-| <span data-ttu-id="22b7e-120">名称</span><span class="sxs-lookup"><span data-stu-id="22b7e-120">Name</span></span>      |<span data-ttu-id="22b7e-121">说明</span><span class="sxs-lookup"><span data-stu-id="22b7e-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ebb09-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="ebb09-117">Request headers</span></span>
+| <span data-ttu-id="ebb09-118">名称</span><span class="sxs-lookup"><span data-stu-id="ebb09-118">Name</span></span>      |<span data-ttu-id="ebb09-119">说明</span><span class="sxs-lookup"><span data-stu-id="ebb09-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="22b7e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="22b7e-122">Authorization</span></span>  | <span data-ttu-id="22b7e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="22b7e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ebb09-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ebb09-120">Authorization</span></span>  | <span data-ttu-id="ebb09-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ebb09-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="22b7e-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="22b7e-125">Request body</span></span>
-<span data-ttu-id="22b7e-126">在请求正文中，提供[用户](../resources/user.md)、[组](../resources/group.md)或[directoryObject](../resources/directoryobject.md)要添加的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="22b7e-126">In the request body, supply a JSON representation of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ebb09-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="ebb09-123">Request body</span></span>
+<span data-ttu-id="ebb09-124">在请求正文中，提供[用户](../resources/user.md)、[组](../resources/group.md)或[directoryObject](../resources/directoryobject.md)要添加的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ebb09-124">In the request body, supply a JSON representation of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="22b7e-127">响应</span><span class="sxs-lookup"><span data-stu-id="22b7e-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ebb09-125">响应</span><span class="sxs-lookup"><span data-stu-id="ebb09-125">Response</span></span>
 
-<span data-ttu-id="22b7e-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="22b7e-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="ebb09-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="ebb09-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="22b7e-130">示例</span><span class="sxs-lookup"><span data-stu-id="22b7e-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="22b7e-131">请求</span><span class="sxs-lookup"><span data-stu-id="22b7e-131">Request</span></span>
-<span data-ttu-id="22b7e-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="22b7e-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ebb09-128">示例</span><span class="sxs-lookup"><span data-stu-id="ebb09-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ebb09-129">请求</span><span class="sxs-lookup"><span data-stu-id="ebb09-129">Request</span></span>
+<span data-ttu-id="ebb09-130">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ebb09-130">Here is an example of the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
@@ -60,11 +60,19 @@ Content-length: 109
 }
 
 ```
-<span data-ttu-id="22b7e-133">在请求正文中，提供的 JSON 表示形式`id`您想要添加的[用户](../resources/user.md)或[组](../resources/group.md)对象。</span><span class="sxs-lookup"><span data-stu-id="22b7e-133">In the request body, supply a JSON representation of the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.</span></span>
+<span data-ttu-id="ebb09-131">在请求正文中，提供的 JSON 表示形式`id`您想要添加的[用户](../resources/user.md)或[组](../resources/group.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ebb09-131">In the request body, supply a JSON representation of the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="22b7e-134">响应</span><span class="sxs-lookup"><span data-stu-id="22b7e-134">Response</span></span>
-<span data-ttu-id="22b7e-135">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="22b7e-135">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="ebb09-132">响应</span><span class="sxs-lookup"><span data-stu-id="ebb09-132">Response</span></span>
+<span data-ttu-id="ebb09-133">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ebb09-133">Here is an example of the response.</span></span>
  
 ```http
 HTTP/1.1 204 No Content
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/administrativeunit-post-members.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

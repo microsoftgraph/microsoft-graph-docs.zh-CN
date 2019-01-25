@@ -3,32 +3,32 @@ title: 'reportRoot: getSkypeForBusinessActivityUserDetail'
 description: 获取用户执行的 Skype for Business 活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 45fd9007690efad03a86f4e72d78d9b493e6635d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 50f364bf13d8d7f11bfa5ea7c676ef96596bfb53
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931151"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508795"
 ---
-# <a name="reportroot-getskypeforbusinessactivityuserdetail"></a><span data-ttu-id="70756-103">reportRoot: getSkypeForBusinessActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="70756-103">reportRoot: getSkypeForBusinessActivityUserDetail</span></span>
+# <a name="reportroot-getskypeforbusinessactivityuserdetail"></a><span data-ttu-id="ce006-103">reportRoot: getSkypeForBusinessActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="ce006-103">reportRoot: getSkypeForBusinessActivityUserDetail</span></span>
 
-> <span data-ttu-id="70756-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="70756-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="70756-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="70756-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="70756-106">获取用户执行的 Skype for Business 活动的详细信息。</span><span class="sxs-lookup"><span data-stu-id="70756-106">Get details about Skype for Business activity by user.</span></span>
+<span data-ttu-id="ce006-104">获取用户执行的 Skype for Business 活动的详细信息。</span><span class="sxs-lookup"><span data-stu-id="ce006-104">Get details about Skype for Business activity by user.</span></span>
 
-> <span data-ttu-id="70756-107">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Skype for Business 活动](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)。</span><span class="sxs-lookup"><span data-stu-id="70756-107">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business activity](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424).</span></span>
+> <span data-ttu-id="ce006-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Skype for Business 活动](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)。</span><span class="sxs-lookup"><span data-stu-id="ce006-105">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business activity](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="70756-108">权限</span><span class="sxs-lookup"><span data-stu-id="70756-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ce006-106">权限</span><span class="sxs-lookup"><span data-stu-id="ce006-106">Permissions</span></span>
 
-<span data-ttu-id="70756-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="70756-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ce006-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ce006-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="70756-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="70756-111">Permission type</span></span>                        | <span data-ttu-id="70756-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="70756-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ce006-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="ce006-109">Permission type</span></span>                        | <span data-ttu-id="ce006-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ce006-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="70756-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="70756-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="70756-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="70756-114">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="70756-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="70756-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70756-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="70756-116">Not supported.</span></span>                           |
-| <span data-ttu-id="70756-117">应用</span><span class="sxs-lookup"><span data-stu-id="70756-117">Application</span></span>                            | <span data-ttu-id="70756-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="70756-118">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="ce006-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ce006-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ce006-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="ce006-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="ce006-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ce006-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce006-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="ce006-114">Not supported.</span></span>                           |
+| <span data-ttu-id="ce006-115">应用</span><span class="sxs-lookup"><span data-stu-id="ce006-115">Application</span></span>                            | <span data-ttu-id="ce006-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="ce006-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="70756-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="70756-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ce006-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ce006-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -37,86 +37,86 @@ GET /reports/getSkypeForBusinessActivityUserDetail(period='{period_value}')
 GET /reports/getSkypeForBusinessActivityUserDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="70756-120">函数参数</span><span class="sxs-lookup"><span data-stu-id="70756-120">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="ce006-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="ce006-118">Function parameters</span></span>
 
-<span data-ttu-id="70756-121">在请求 URL 中，提供以下参数之一的有效值。</span><span class="sxs-lookup"><span data-stu-id="70756-121">In the request URL, provide one of the following parameters with a valid value.</span></span>
+<span data-ttu-id="ce006-119">在请求 URL 中，提供以下参数之一的有效值。</span><span class="sxs-lookup"><span data-stu-id="ce006-119">In the request URL, provide one of the following parameters with a valid value.</span></span>
 
-| <span data-ttu-id="70756-122">参数</span><span class="sxs-lookup"><span data-stu-id="70756-122">Parameter</span></span> | <span data-ttu-id="70756-123">类型</span><span class="sxs-lookup"><span data-stu-id="70756-123">Type</span></span>   | <span data-ttu-id="70756-124">说明</span><span class="sxs-lookup"><span data-stu-id="70756-124">Description</span></span>                              |
+| <span data-ttu-id="ce006-120">参数</span><span class="sxs-lookup"><span data-stu-id="ce006-120">Parameter</span></span> | <span data-ttu-id="ce006-121">类型</span><span class="sxs-lookup"><span data-stu-id="ce006-121">Type</span></span>   | <span data-ttu-id="ce006-122">说明</span><span class="sxs-lookup"><span data-stu-id="ce006-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="70756-125">period</span><span class="sxs-lookup"><span data-stu-id="70756-125">period</span></span>    | <span data-ttu-id="70756-126">string</span><span class="sxs-lookup"><span data-stu-id="70756-126">string</span></span> | <span data-ttu-id="70756-127">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="70756-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="70756-128">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="70756-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="70756-129">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="70756-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
-| <span data-ttu-id="70756-130">date</span><span class="sxs-lookup"><span data-stu-id="70756-130">date</span></span>      | <span data-ttu-id="70756-131">Date</span><span class="sxs-lookup"><span data-stu-id="70756-131">Date</span></span>   | <span data-ttu-id="70756-132">指定要查看用户在哪个日期执行的任何活动。</span><span class="sxs-lookup"><span data-stu-id="70756-132">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="70756-133">{date_value} 必须采用格式 YYYY-MM-DD。</span><span class="sxs-lookup"><span data-stu-id="70756-133">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="70756-134">因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。</span><span class="sxs-lookup"><span data-stu-id="70756-134">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
+| <span data-ttu-id="ce006-123">period</span><span class="sxs-lookup"><span data-stu-id="ce006-123">period</span></span>    | <span data-ttu-id="ce006-124">string</span><span class="sxs-lookup"><span data-stu-id="ce006-124">string</span></span> | <span data-ttu-id="ce006-125">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="ce006-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="ce006-126">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="ce006-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="ce006-127">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="ce006-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
+| <span data-ttu-id="ce006-128">date</span><span class="sxs-lookup"><span data-stu-id="ce006-128">date</span></span>      | <span data-ttu-id="ce006-129">Date</span><span class="sxs-lookup"><span data-stu-id="ce006-129">Date</span></span>   | <span data-ttu-id="ce006-130">指定要查看用户在哪个日期执行的任何活动。</span><span class="sxs-lookup"><span data-stu-id="ce006-130">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="ce006-131">{date_value} 必须采用格式 YYYY-MM-DD。</span><span class="sxs-lookup"><span data-stu-id="ce006-131">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="ce006-132">因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。</span><span class="sxs-lookup"><span data-stu-id="ce006-132">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
 
-> <span data-ttu-id="70756-135">**注意：** 需要在 URL 中设置 period 或 date。</span><span class="sxs-lookup"><span data-stu-id="70756-135">**Note:** You need to set either period or date in the URL.</span></span>
+> <span data-ttu-id="ce006-133">**注意：** 需要在 URL 中设置 period 或 date。</span><span class="sxs-lookup"><span data-stu-id="ce006-133">**Note:** You need to set either period or date in the URL.</span></span>
 
-<span data-ttu-id="70756-136">此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="70756-136">This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="70756-137">默认输出类型是文本/csv。</span><span class="sxs-lookup"><span data-stu-id="70756-137">The default output type is text/csv.</span></span> <span data-ttu-id="70756-138">但是，如果您想要指定输出类型，您可以使用 OData $format 查询参数设置为 text/csv 或应用程序/json。</span><span class="sxs-lookup"><span data-stu-id="70756-138">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="ce006-134">此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。</span><span class="sxs-lookup"><span data-stu-id="ce006-134">This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="ce006-135">默认输出类型是文本/csv。</span><span class="sxs-lookup"><span data-stu-id="ce006-135">The default output type is text/csv.</span></span> <span data-ttu-id="ce006-136">但是，如果您想要指定输出类型，您可以使用 OData $format 查询参数设置为 text/csv 或应用程序/json。</span><span class="sxs-lookup"><span data-stu-id="ce006-136">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="70756-139">请求标头</span><span class="sxs-lookup"><span data-stu-id="70756-139">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ce006-137">请求标头</span><span class="sxs-lookup"><span data-stu-id="ce006-137">Request headers</span></span>
 
-| <span data-ttu-id="70756-140">名称</span><span class="sxs-lookup"><span data-stu-id="70756-140">Name</span></span>          | <span data-ttu-id="70756-141">说明</span><span class="sxs-lookup"><span data-stu-id="70756-141">Description</span></span>               |
+| <span data-ttu-id="ce006-138">名称</span><span class="sxs-lookup"><span data-stu-id="ce006-138">Name</span></span>          | <span data-ttu-id="ce006-139">说明</span><span class="sxs-lookup"><span data-stu-id="ce006-139">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="70756-142">Authorization</span><span class="sxs-lookup"><span data-stu-id="70756-142">Authorization</span></span> | <span data-ttu-id="70756-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="70756-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ce006-140">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce006-140">Authorization</span></span> | <span data-ttu-id="ce006-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ce006-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="70756-145">响应</span><span class="sxs-lookup"><span data-stu-id="70756-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ce006-143">响应</span><span class="sxs-lookup"><span data-stu-id="ce006-143">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="70756-146">CSV</span><span class="sxs-lookup"><span data-stu-id="70756-146">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="ce006-144">CSV</span><span class="sxs-lookup"><span data-stu-id="ce006-144">CSV</span></span>
 
-<span data-ttu-id="70756-147">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="70756-147">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="70756-148">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="70756-148">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="ce006-145">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="ce006-145">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="ce006-146">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="ce006-146">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="70756-149">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="70756-149">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="ce006-147">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="ce006-147">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="70756-150">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="70756-150">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="ce006-148">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="ce006-148">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="70756-151">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="70756-151">Report Refresh Date</span></span>
-- <span data-ttu-id="70756-152">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="70756-152">User Principal Name</span></span>
-- <span data-ttu-id="70756-153">已删除</span><span class="sxs-lookup"><span data-stu-id="70756-153">Is Deleted</span></span>
-- <span data-ttu-id="70756-154">删除日期</span><span class="sxs-lookup"><span data-stu-id="70756-154">Deleted Date</span></span>
-- <span data-ttu-id="70756-155">上次活动日期</span><span class="sxs-lookup"><span data-stu-id="70756-155">Last Activity Date</span></span>
-- <span data-ttu-id="70756-156">对等会话总数</span><span class="sxs-lookup"><span data-stu-id="70756-156">Total Peer-to-peer Session Count</span></span>
-- <span data-ttu-id="70756-157">组织会议总数</span><span class="sxs-lookup"><span data-stu-id="70756-157">Total Organized Conference Count</span></span>
-- <span data-ttu-id="70756-158">参与会议总数</span><span class="sxs-lookup"><span data-stu-id="70756-158">Total Participated Conference Count</span></span>
-- <span data-ttu-id="70756-159">对等会话的上次活动日期</span><span class="sxs-lookup"><span data-stu-id="70756-159">Peer-to-peer Last Activity Date</span></span>
-- <span data-ttu-id="70756-160">组织会议的上次活动日期</span><span class="sxs-lookup"><span data-stu-id="70756-160">Organized Conference Last Activity Date</span></span>
-- <span data-ttu-id="70756-161">参与会议的上次活动日期</span><span class="sxs-lookup"><span data-stu-id="70756-161">Participated Conference Last Activity Date</span></span>
-- <span data-ttu-id="70756-162">对等 IM 次数</span><span class="sxs-lookup"><span data-stu-id="70756-162">Peer-to-peer IM Count</span></span>
-- <span data-ttu-id="70756-163">对等音频次数</span><span class="sxs-lookup"><span data-stu-id="70756-163">Peer-to-peer Audio Count</span></span>
-- <span data-ttu-id="70756-164">对等音频分钟数</span><span class="sxs-lookup"><span data-stu-id="70756-164">Peer-to-peer Audio Minutes</span></span>
-- <span data-ttu-id="70756-165">对等视频次数</span><span class="sxs-lookup"><span data-stu-id="70756-165">Peer-to-peer Video Count</span></span>
-- <span data-ttu-id="70756-166">对等视频分钟数</span><span class="sxs-lookup"><span data-stu-id="70756-166">Peer-to-peer Video Minutes</span></span>
-- <span data-ttu-id="70756-167">对等应用共享次数</span><span class="sxs-lookup"><span data-stu-id="70756-167">Peer-to-peer App Sharing Count</span></span>
-- <span data-ttu-id="70756-168">对等文件传输次数</span><span class="sxs-lookup"><span data-stu-id="70756-168">Peer-to-peer File Transfer Count</span></span>
-- <span data-ttu-id="70756-169">组织会议 - IM 次数</span><span class="sxs-lookup"><span data-stu-id="70756-169">Organized Conference IM Count</span></span>
-- <span data-ttu-id="70756-170">组织会议 - 音频/视频次数</span><span class="sxs-lookup"><span data-stu-id="70756-170">Organized Conference Audio/Video Count</span></span>
-- <span data-ttu-id="70756-171">组织会议 - 音频/视频分钟数</span><span class="sxs-lookup"><span data-stu-id="70756-171">Organized Conference Audio/Video Minutes</span></span>
-- <span data-ttu-id="70756-172">组织会议 - 应用共享次数</span><span class="sxs-lookup"><span data-stu-id="70756-172">Organized Conference App Sharing Count</span></span>
-- <span data-ttu-id="70756-173">组织会议 - Web 次数</span><span class="sxs-lookup"><span data-stu-id="70756-173">Organized Conference Web Count</span></span>
-- <span data-ttu-id="70756-174">组织会议 - 第三方拨入/拨出次数</span><span class="sxs-lookup"><span data-stu-id="70756-174">Organized Conference Dial-in/out 3rd Party Count</span></span>
-- <span data-ttu-id="70756-175">组织会议 - Microsoft 拨入/拨出次数</span><span class="sxs-lookup"><span data-stu-id="70756-175">Organized Conference Dial-in/out Microsoft Count</span></span>
-- <span data-ttu-id="70756-176">组织会议 - Microsoft 拨入分钟数</span><span class="sxs-lookup"><span data-stu-id="70756-176">Organized Conference Dial-in Microsoft Minutes</span></span>
-- <span data-ttu-id="70756-177">组织会议 - Microsoft 拨出分钟数</span><span class="sxs-lookup"><span data-stu-id="70756-177">Organized Conference Dial-out Microsoft Minutes</span></span>
-- <span data-ttu-id="70756-178">参加会议 IM 计数</span><span class="sxs-lookup"><span data-stu-id="70756-178">Participated Conference IM Count</span></span>
-- <span data-ttu-id="70756-179">参与会议 - 音频/视频次数</span><span class="sxs-lookup"><span data-stu-id="70756-179">Participated Conference Audio/Video Count</span></span>
-- <span data-ttu-id="70756-180">参与会议 - 音频/视频分钟数</span><span class="sxs-lookup"><span data-stu-id="70756-180">Participated Conference Audio/Video Minutes</span></span>
-- <span data-ttu-id="70756-181">参与会议 - 应用共享次数</span><span class="sxs-lookup"><span data-stu-id="70756-181">Participated Conference App Sharing Count</span></span>
-- <span data-ttu-id="70756-182">参与会议 - Web 次数</span><span class="sxs-lookup"><span data-stu-id="70756-182">Participated Conference Web Count</span></span>
-- <span data-ttu-id="70756-183">参与会议 - 第三方拨入/拨出次数</span><span class="sxs-lookup"><span data-stu-id="70756-183">Participated Conference Dial-in/out 3rd Party Count</span></span>
-- <span data-ttu-id="70756-184">分配的产品</span><span class="sxs-lookup"><span data-stu-id="70756-184">Assigned Products</span></span>
-- <span data-ttu-id="70756-185">报表周期</span><span class="sxs-lookup"><span data-stu-id="70756-185">Report Period</span></span>
+- <span data-ttu-id="ce006-149">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="ce006-149">Report Refresh Date</span></span>
+- <span data-ttu-id="ce006-150">用户主体名称</span><span class="sxs-lookup"><span data-stu-id="ce006-150">User Principal Name</span></span>
+- <span data-ttu-id="ce006-151">已删除</span><span class="sxs-lookup"><span data-stu-id="ce006-151">Is Deleted</span></span>
+- <span data-ttu-id="ce006-152">删除日期</span><span class="sxs-lookup"><span data-stu-id="ce006-152">Deleted Date</span></span>
+- <span data-ttu-id="ce006-153">上次活动日期</span><span class="sxs-lookup"><span data-stu-id="ce006-153">Last Activity Date</span></span>
+- <span data-ttu-id="ce006-154">对等会话总数</span><span class="sxs-lookup"><span data-stu-id="ce006-154">Total Peer-to-peer Session Count</span></span>
+- <span data-ttu-id="ce006-155">组织会议总数</span><span class="sxs-lookup"><span data-stu-id="ce006-155">Total Organized Conference Count</span></span>
+- <span data-ttu-id="ce006-156">参与会议总数</span><span class="sxs-lookup"><span data-stu-id="ce006-156">Total Participated Conference Count</span></span>
+- <span data-ttu-id="ce006-157">对等会话的上次活动日期</span><span class="sxs-lookup"><span data-stu-id="ce006-157">Peer-to-peer Last Activity Date</span></span>
+- <span data-ttu-id="ce006-158">组织会议的上次活动日期</span><span class="sxs-lookup"><span data-stu-id="ce006-158">Organized Conference Last Activity Date</span></span>
+- <span data-ttu-id="ce006-159">参与会议的上次活动日期</span><span class="sxs-lookup"><span data-stu-id="ce006-159">Participated Conference Last Activity Date</span></span>
+- <span data-ttu-id="ce006-160">对等 IM 次数</span><span class="sxs-lookup"><span data-stu-id="ce006-160">Peer-to-peer IM Count</span></span>
+- <span data-ttu-id="ce006-161">对等音频次数</span><span class="sxs-lookup"><span data-stu-id="ce006-161">Peer-to-peer Audio Count</span></span>
+- <span data-ttu-id="ce006-162">对等音频分钟数</span><span class="sxs-lookup"><span data-stu-id="ce006-162">Peer-to-peer Audio Minutes</span></span>
+- <span data-ttu-id="ce006-163">对等视频次数</span><span class="sxs-lookup"><span data-stu-id="ce006-163">Peer-to-peer Video Count</span></span>
+- <span data-ttu-id="ce006-164">对等视频分钟数</span><span class="sxs-lookup"><span data-stu-id="ce006-164">Peer-to-peer Video Minutes</span></span>
+- <span data-ttu-id="ce006-165">对等应用共享次数</span><span class="sxs-lookup"><span data-stu-id="ce006-165">Peer-to-peer App Sharing Count</span></span>
+- <span data-ttu-id="ce006-166">对等文件传输次数</span><span class="sxs-lookup"><span data-stu-id="ce006-166">Peer-to-peer File Transfer Count</span></span>
+- <span data-ttu-id="ce006-167">组织会议 - IM 次数</span><span class="sxs-lookup"><span data-stu-id="ce006-167">Organized Conference IM Count</span></span>
+- <span data-ttu-id="ce006-168">组织会议 - 音频/视频次数</span><span class="sxs-lookup"><span data-stu-id="ce006-168">Organized Conference Audio/Video Count</span></span>
+- <span data-ttu-id="ce006-169">组织会议 - 音频/视频分钟数</span><span class="sxs-lookup"><span data-stu-id="ce006-169">Organized Conference Audio/Video Minutes</span></span>
+- <span data-ttu-id="ce006-170">组织会议 - 应用共享次数</span><span class="sxs-lookup"><span data-stu-id="ce006-170">Organized Conference App Sharing Count</span></span>
+- <span data-ttu-id="ce006-171">组织会议 - Web 次数</span><span class="sxs-lookup"><span data-stu-id="ce006-171">Organized Conference Web Count</span></span>
+- <span data-ttu-id="ce006-172">组织会议 - 第三方拨入/拨出次数</span><span class="sxs-lookup"><span data-stu-id="ce006-172">Organized Conference Dial-in/out 3rd Party Count</span></span>
+- <span data-ttu-id="ce006-173">组织会议 - Microsoft 拨入/拨出次数</span><span class="sxs-lookup"><span data-stu-id="ce006-173">Organized Conference Dial-in/out Microsoft Count</span></span>
+- <span data-ttu-id="ce006-174">组织会议 - Microsoft 拨入分钟数</span><span class="sxs-lookup"><span data-stu-id="ce006-174">Organized Conference Dial-in Microsoft Minutes</span></span>
+- <span data-ttu-id="ce006-175">组织会议 - Microsoft 拨出分钟数</span><span class="sxs-lookup"><span data-stu-id="ce006-175">Organized Conference Dial-out Microsoft Minutes</span></span>
+- <span data-ttu-id="ce006-176">参加会议 IM 计数</span><span class="sxs-lookup"><span data-stu-id="ce006-176">Participated Conference IM Count</span></span>
+- <span data-ttu-id="ce006-177">参与会议 - 音频/视频次数</span><span class="sxs-lookup"><span data-stu-id="ce006-177">Participated Conference Audio/Video Count</span></span>
+- <span data-ttu-id="ce006-178">参与会议 - 音频/视频分钟数</span><span class="sxs-lookup"><span data-stu-id="ce006-178">Participated Conference Audio/Video Minutes</span></span>
+- <span data-ttu-id="ce006-179">参与会议 - 应用共享次数</span><span class="sxs-lookup"><span data-stu-id="ce006-179">Participated Conference App Sharing Count</span></span>
+- <span data-ttu-id="ce006-180">参与会议 - Web 次数</span><span class="sxs-lookup"><span data-stu-id="ce006-180">Participated Conference Web Count</span></span>
+- <span data-ttu-id="ce006-181">参与会议 - 第三方拨入/拨出次数</span><span class="sxs-lookup"><span data-stu-id="ce006-181">Participated Conference Dial-in/out 3rd Party Count</span></span>
+- <span data-ttu-id="ce006-182">分配的产品</span><span class="sxs-lookup"><span data-stu-id="ce006-182">Assigned Products</span></span>
+- <span data-ttu-id="ce006-183">报表周期</span><span class="sxs-lookup"><span data-stu-id="ce006-183">Report Period</span></span>
 
-### <a name="json"></a><span data-ttu-id="70756-186">JSON</span><span class="sxs-lookup"><span data-stu-id="70756-186">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="ce006-184">JSON</span><span class="sxs-lookup"><span data-stu-id="ce006-184">JSON</span></span>
 
-<span data-ttu-id="70756-187">如果成功，此方法返回`200 OK`响应代码和响应正文中的**[skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md)** 对象。</span><span class="sxs-lookup"><span data-stu-id="70756-187">If successful, this method returns a `200 OK` response code and a **[skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md)** object in the response body.</span></span>
+<span data-ttu-id="ce006-185">如果成功，此方法返回`200 OK`响应代码和响应正文中的**[skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md)** 对象。</span><span class="sxs-lookup"><span data-stu-id="ce006-185">If successful, this method returns a `200 OK` response code and a **[skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md)** object in the response body.</span></span>
 
-<span data-ttu-id="70756-188">为此请求的默认页面大小是 200 个项目。</span><span class="sxs-lookup"><span data-stu-id="70756-188">The default page size for this request is 200 items.</span></span>
+<span data-ttu-id="ce006-186">为此请求的默认页面大小是 200 个项目。</span><span class="sxs-lookup"><span data-stu-id="ce006-186">The default page size for this request is 200 items.</span></span>
 
-## <a name="example"></a><span data-ttu-id="70756-189">示例</span><span class="sxs-lookup"><span data-stu-id="70756-189">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ce006-187">示例</span><span class="sxs-lookup"><span data-stu-id="ce006-187">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="70756-190">CSV</span><span class="sxs-lookup"><span data-stu-id="70756-190">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="ce006-188">CSV</span><span class="sxs-lookup"><span data-stu-id="ce006-188">CSV</span></span>
 
-<span data-ttu-id="70756-191">下面是输出 CSV 示例。</span><span class="sxs-lookup"><span data-stu-id="70756-191">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="ce006-189">下面是输出 CSV 示例。</span><span class="sxs-lookup"><span data-stu-id="ce006-189">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="70756-192">请求</span><span class="sxs-lookup"><span data-stu-id="70756-192">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ce006-190">请求</span><span class="sxs-lookup"><span data-stu-id="ce006-190">Request</span></span>
 
-<span data-ttu-id="70756-193">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="70756-193">The following is an example of the request.</span></span>
+<span data-ttu-id="ce006-191">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ce006-191">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -127,9 +127,9 @@ GET /reports/getSkypeForBusinessActivityUserDetail(date={date_value})
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessActivityUserDetail(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a><span data-ttu-id="70756-194">响应</span><span class="sxs-lookup"><span data-stu-id="70756-194">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ce006-192">响应</span><span class="sxs-lookup"><span data-stu-id="ce006-192">Response</span></span>
 
-<span data-ttu-id="70756-195">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="70756-195">The following is an example of the response.</span></span>
+<span data-ttu-id="ce006-193">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ce006-193">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -139,7 +139,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="70756-196">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="70756-196">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="ce006-194">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="ce006-194">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -154,13 +154,13 @@ Content-Type: application/octet-stream
 Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Date,Total Peer-to-peer Session Count,Total Organized Conference Count,Total Participated Conference Count,Peer-to-peer Last Activity Date,Organized Conference Last Activity Date,Participated Conference Last Activity Date,Peer-to-peer IM Count,Peer-to-peer Audio Count,Peer-to-peer Audio Minutes,Peer-to-peer Video Count,Peer-to-peer Video Minutes,Peer-to-peer App Sharing Count,Peer-to-peer File Transfer Count,Organized Conference IM Count,Organized Conference Audio/Video Count,Organized Conference Audio/Video Minutes,Organized Conference App Sharing Count,Organized Conference Web Count,Organized Conference Dial-in/out 3rd Party Count,Organized Conference Dial-in/out Microsoft Count,Organized Conference Dial-in Microsoft Minutes,Organized Conference Dial-out Microsoft Minutes,Participated Conference IM Count,Participated Conference Audio/Video Count,Participated Conference Audio/Video Minutes,Participated Conference App Sharing Count,Participated Conference Web Count,Participated Conference Dial-in/out 3rd Party Count,Assigned Products,Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="70756-197">JSON</span><span class="sxs-lookup"><span data-stu-id="70756-197">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="ce006-195">JSON</span><span class="sxs-lookup"><span data-stu-id="ce006-195">JSON</span></span>
 
-<span data-ttu-id="70756-198">下面是返回 JSON 的示例。</span><span class="sxs-lookup"><span data-stu-id="70756-198">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="ce006-196">下面是返回 JSON 的示例。</span><span class="sxs-lookup"><span data-stu-id="ce006-196">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="70756-199">请求</span><span class="sxs-lookup"><span data-stu-id="70756-199">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ce006-197">请求</span><span class="sxs-lookup"><span data-stu-id="ce006-197">Request</span></span>
 
-<span data-ttu-id="70756-200">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="70756-200">The following is an example of the request.</span></span>
+<span data-ttu-id="ce006-198">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ce006-198">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -171,11 +171,11 @@ Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Da
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessActivityUserDetail(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a><span data-ttu-id="70756-201">响应</span><span class="sxs-lookup"><span data-stu-id="70756-201">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ce006-199">响应</span><span class="sxs-lookup"><span data-stu-id="ce006-199">Response</span></span>
 
-<span data-ttu-id="70756-202">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="70756-202">The following is an example of the response.</span></span>
+<span data-ttu-id="ce006-200">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="ce006-200">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="70756-p108">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="70756-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ce006-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ce006-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -233,3 +233,11 @@ Content-Length: 1419
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getskypeforbusinessactivityuserdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

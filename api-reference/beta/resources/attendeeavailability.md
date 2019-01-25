@@ -2,22 +2,22 @@
 title: attendeeAvailability 资源类型
 description: 与会者的类型和忙/闲状态。
 localization_priority: Normal
-ms.openlocfilehash: a00fe38e678c6a51cd252b823a7d2651e531d20a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f831a88a14fc6ec970332208389e15a5adc49377
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820466"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508935"
 ---
-# <a name="attendeeavailability-resource-type"></a><span data-ttu-id="ea6ed-103">attendeeAvailability 资源类型</span><span class="sxs-lookup"><span data-stu-id="ea6ed-103">attendeeAvailability resource type</span></span>
+# <a name="attendeeavailability-resource-type"></a><span data-ttu-id="afa96-103">attendeeAvailability 资源类型</span><span class="sxs-lookup"><span data-stu-id="afa96-103">attendeeAvailability resource type</span></span>
 
-> <span data-ttu-id="ea6ed-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ea6ed-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ea6ed-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ea6ed-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ea6ed-106">与会者的类型和忙/闲状态。</span><span class="sxs-lookup"><span data-stu-id="ea6ed-106">The type and availability of an attendee.</span></span>
+<span data-ttu-id="afa96-104">与会者的类型和忙/闲状态。</span><span class="sxs-lookup"><span data-stu-id="afa96-104">The type and availability of an attendee.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ea6ed-107">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ea6ed-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="afa96-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="afa96-105">JSON representation</span></span>
 
-<span data-ttu-id="ea6ed-108">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ea6ed-108">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="afa96-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="afa96-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,18 +34,23 @@ ms.locfileid: "27820466"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="ea6ed-109">属性</span><span class="sxs-lookup"><span data-stu-id="ea6ed-109">Properties</span></span>
-| <span data-ttu-id="ea6ed-110">属性</span><span class="sxs-lookup"><span data-stu-id="ea6ed-110">Property</span></span>     | <span data-ttu-id="ea6ed-111">类型</span><span class="sxs-lookup"><span data-stu-id="ea6ed-111">Type</span></span>   |<span data-ttu-id="ea6ed-112">说明</span><span class="sxs-lookup"><span data-stu-id="ea6ed-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="afa96-107">属性</span><span class="sxs-lookup"><span data-stu-id="afa96-107">Properties</span></span>
+| <span data-ttu-id="afa96-108">属性</span><span class="sxs-lookup"><span data-stu-id="afa96-108">Property</span></span>     | <span data-ttu-id="afa96-109">类型</span><span class="sxs-lookup"><span data-stu-id="afa96-109">Type</span></span>   |<span data-ttu-id="afa96-110">说明</span><span class="sxs-lookup"><span data-stu-id="afa96-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ea6ed-113">attendee</span><span class="sxs-lookup"><span data-stu-id="ea6ed-113">attendee</span></span>|[<span data-ttu-id="ea6ed-114">AttendeeBase</span><span class="sxs-lookup"><span data-stu-id="ea6ed-114">AttendeeBase</span></span>](attendeebase.md)|<span data-ttu-id="ea6ed-115">与会者类型，即是人员还是资源；如果是人员，是必需还是可选。</span><span class="sxs-lookup"><span data-stu-id="ea6ed-115">The type of attendee - whether it's a person or a resource, and whether required or optional if it's a person.</span></span>|
-|<span data-ttu-id="ea6ed-116">availability</span><span class="sxs-lookup"><span data-stu-id="ea6ed-116">availability</span></span>|<span data-ttu-id="ea6ed-117">字符串</span><span class="sxs-lookup"><span data-stu-id="ea6ed-117">String</span></span>| <span data-ttu-id="ea6ed-p102">与会者的忙/闲状态。可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。</span><span class="sxs-lookup"><span data-stu-id="ea6ed-p102">The availability status of the attendee. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span></span>|
+|<span data-ttu-id="afa96-111">attendee</span><span class="sxs-lookup"><span data-stu-id="afa96-111">attendee</span></span>|[<span data-ttu-id="afa96-112">AttendeeBase</span><span class="sxs-lookup"><span data-stu-id="afa96-112">AttendeeBase</span></span>](attendeebase.md)|<span data-ttu-id="afa96-113">与会者类型，即是人员还是资源；如果是人员，是必需还是可选。</span><span class="sxs-lookup"><span data-stu-id="afa96-113">The type of attendee - whether it's a person or a resource, and whether required or optional if it's a person.</span></span>|
+|<span data-ttu-id="afa96-114">availability</span><span class="sxs-lookup"><span data-stu-id="afa96-114">availability</span></span>|<span data-ttu-id="afa96-115">String</span><span class="sxs-lookup"><span data-stu-id="afa96-115">String</span></span>| <span data-ttu-id="afa96-p101">与会者的忙/闲状态。可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。</span><span class="sxs-lookup"><span data-stu-id="afa96-p101">The availability status of the attendee. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "attendeeAvailability resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/attendeeavailability.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
