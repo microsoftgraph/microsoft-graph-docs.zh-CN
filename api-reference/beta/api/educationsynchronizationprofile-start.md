@@ -4,49 +4,49 @@ description: 验证文件上载到租户中的特定学校数据同步配置文�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: efdc0863a1de58f7ebf46492b662e632972275c0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1447178e80d30058b415345aea83dce4390e6bcf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915247"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512351"
 ---
-# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a><span data-ttu-id="3193d-107">将文件上载到 educationSynchronizationProfile 后启动同步</span><span class="sxs-lookup"><span data-stu-id="3193d-107">Start sync after uploading files to an educationSynchronizationProfile</span></span>
+# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a><span data-ttu-id="f6a1a-107">将文件上载到 educationSynchronizationProfile 后启动同步</span><span class="sxs-lookup"><span data-stu-id="f6a1a-107">Start sync after uploading files to an educationSynchronizationProfile</span></span>
 
-> <span data-ttu-id="3193d-108">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="3193d-108">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3193d-109">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="3193d-109">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3193d-110">验证文件上载到租户中特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。</span><span class="sxs-lookup"><span data-stu-id="3193d-110">Verify the files uploaded to a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span> <span data-ttu-id="3193d-111">如果验证操作成功，将配置文件上启动同步。</span><span class="sxs-lookup"><span data-stu-id="3193d-111">If the verification is successful, synchronization will start on the profile.</span></span> <span data-ttu-id="3193d-112">否则，响应将包含错误和警告。</span><span class="sxs-lookup"><span data-stu-id="3193d-112">Otherwise, the response will contain errors and warnings.</span></span> <span data-ttu-id="3193d-113">如果响应中包含错误，将不会启动同步。</span><span class="sxs-lookup"><span data-stu-id="3193d-113">If the response contains errors, the synchronization will not start.</span></span> <span data-ttu-id="3193d-114">如果则响应中包含仅警告，将启动同步。</span><span class="sxs-lookup"><span data-stu-id="3193d-114">If the response contains only warnings, synchronization will start.</span></span>
+<span data-ttu-id="f6a1a-108">验证文件上载到租户中特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-108">Verify the files uploaded to a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span> <span data-ttu-id="f6a1a-109">如果验证操作成功，将配置文件上启动同步。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-109">If the verification is successful, synchronization will start on the profile.</span></span> <span data-ttu-id="f6a1a-110">否则，响应将包含错误和警告。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-110">Otherwise, the response will contain errors and warnings.</span></span> <span data-ttu-id="f6a1a-111">如果响应中包含错误，将不会启动同步。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-111">If the response contains errors, the synchronization will not start.</span></span> <span data-ttu-id="f6a1a-112">如果则响应中包含仅警告，将启动同步。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-112">If the response contains only warnings, synchronization will start.</span></span>
 
-> <span data-ttu-id="3193d-115">**注意：** 仅当数据提供程序的类型[educationcsvdataprovider](../resources/educationcsvdataprovider.md)时，请使用此方法。</span><span class="sxs-lookup"><span data-stu-id="3193d-115">**Note:** Use this method only when the data provider is of type [educationcsvdataprovider](../resources/educationcsvdataprovider.md).</span></span> <span data-ttu-id="3193d-116">此外，需要设置之前可以启动配置文件的状态属性。</span><span class="sxs-lookup"><span data-stu-id="3193d-116">Also, the profile's state property needs to be provisioned before it can be started.</span></span> <span data-ttu-id="3193d-117">轮询要检查其状态属性的配置文件对象。</span><span class="sxs-lookup"><span data-stu-id="3193d-117">Poll the profile object to check its state property.</span></span>
+> <span data-ttu-id="f6a1a-113">**注意：** 仅当数据提供程序的类型[educationcsvdataprovider](../resources/educationcsvdataprovider.md)时，请使用此方法。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-113">**Note:** Use this method only when the data provider is of type [educationcsvdataprovider](../resources/educationcsvdataprovider.md).</span></span> <span data-ttu-id="f6a1a-114">此外，需要设置之前可以启动配置文件的状态属性。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-114">Also, the profile's state property needs to be provisioned before it can be started.</span></span> <span data-ttu-id="f6a1a-115">轮询要检查其状态属性的配置文件对象。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-115">Poll the profile object to check its state property.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3193d-118">权限</span><span class="sxs-lookup"><span data-stu-id="3193d-118">Permissions</span></span>
-<span data-ttu-id="3193d-p105">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3193d-p105">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f6a1a-116">权限</span><span class="sxs-lookup"><span data-stu-id="f6a1a-116">Permissions</span></span>
+<span data-ttu-id="f6a1a-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="3193d-121">权限类型</span><span class="sxs-lookup"><span data-stu-id="3193d-121">Permission type</span></span> | <span data-ttu-id="3193d-122">Permissions</span><span class="sxs-lookup"><span data-stu-id="3193d-122">Permissions</span></span> |
+| <span data-ttu-id="f6a1a-119">权限类型</span><span class="sxs-lookup"><span data-stu-id="f6a1a-119">Permission type</span></span> | <span data-ttu-id="f6a1a-120">权限</span><span class="sxs-lookup"><span data-stu-id="f6a1a-120">Permissions</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="3193d-123">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3193d-123">Delegated (work or school account)</span></span> | <span data-ttu-id="3193d-124">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3193d-124">EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="3193d-125">委派 （个人 Microsoft 帐户</span><span class="sxs-lookup"><span data-stu-id="3193d-125">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="3193d-126">不支持。</span><span class="sxs-lookup"><span data-stu-id="3193d-126">Not supported.</span></span>|
-|<span data-ttu-id="3193d-127">应用程序</span><span class="sxs-lookup"><span data-stu-id="3193d-127">Application</span></span>|<span data-ttu-id="3193d-128">不支持。</span><span class="sxs-lookup"><span data-stu-id="3193d-128">Not supported.</span></span>|
+| <span data-ttu-id="f6a1a-121">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f6a1a-121">Delegated (work or school account)</span></span> | <span data-ttu-id="f6a1a-122">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f6a1a-122">EduAdministration.ReadWrite</span></span> |
+|<span data-ttu-id="f6a1a-123">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f6a1a-123">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="f6a1a-124">不支持。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-124">Not supported.</span></span>|
+|<span data-ttu-id="f6a1a-125">应用程序</span><span class="sxs-lookup"><span data-stu-id="f6a1a-125">Application</span></span>|<span data-ttu-id="f6a1a-126">不支持。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-126">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3193d-129">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3193d-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f6a1a-127">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f6a1a-127">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /synchronizationProfiles/{id}/start
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3193d-130">请求标头</span><span class="sxs-lookup"><span data-stu-id="3193d-130">Request headers</span></span>
-| <span data-ttu-id="3193d-131">名称</span><span class="sxs-lookup"><span data-stu-id="3193d-131">Name</span></span>       | <span data-ttu-id="3193d-132">类型</span><span class="sxs-lookup"><span data-stu-id="3193d-132">Type</span></span> | <span data-ttu-id="3193d-133">说明</span><span class="sxs-lookup"><span data-stu-id="3193d-133">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f6a1a-128">请求标头</span><span class="sxs-lookup"><span data-stu-id="f6a1a-128">Request headers</span></span>
+| <span data-ttu-id="f6a1a-129">名称</span><span class="sxs-lookup"><span data-stu-id="f6a1a-129">Name</span></span>       | <span data-ttu-id="f6a1a-130">类型</span><span class="sxs-lookup"><span data-stu-id="f6a1a-130">Type</span></span> | <span data-ttu-id="f6a1a-131">说明</span><span class="sxs-lookup"><span data-stu-id="f6a1a-131">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="3193d-134">Authorization</span><span class="sxs-lookup"><span data-stu-id="3193d-134">Authorization</span></span>  | <span data-ttu-id="3193d-135">string</span><span class="sxs-lookup"><span data-stu-id="3193d-135">string</span></span>  | <span data-ttu-id="3193d-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3193d-p106">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f6a1a-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="f6a1a-132">Authorization</span></span>  | <span data-ttu-id="f6a1a-133">string</span><span class="sxs-lookup"><span data-stu-id="f6a1a-133">string</span></span>  | <span data-ttu-id="f6a1a-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="3193d-138">请求正文</span><span class="sxs-lookup"><span data-stu-id="3193d-138">Request body</span></span>
-<span data-ttu-id="3193d-139">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3193d-139">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="3193d-140">响应</span><span class="sxs-lookup"><span data-stu-id="3193d-140">Response</span></span>
-<span data-ttu-id="3193d-141">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="3193d-141">If successful, this method returns a `200 OK` response code.</span></span> <span data-ttu-id="3193d-142">如果不成功，则返回`400 Bad Request`。</span><span class="sxs-lookup"><span data-stu-id="3193d-142">If unsuccessful, it returns a `400 Bad Request`.</span></span> <span data-ttu-id="3193d-143">如果找到任何错误或警告则响应中包含的响应正文一部分[educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="3193d-143">The response contains a collection of [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) objects as part of the response body if any errors or warnings were found.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f6a1a-136">请求正文</span><span class="sxs-lookup"><span data-stu-id="f6a1a-136">Request body</span></span>
+<span data-ttu-id="f6a1a-137">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-137">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="f6a1a-138">响应</span><span class="sxs-lookup"><span data-stu-id="f6a1a-138">Response</span></span>
+<span data-ttu-id="f6a1a-139">如果成功，此方法返回 `200 OK` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-139">If successful, this method returns a `200 OK` response code.</span></span> <span data-ttu-id="f6a1a-140">如果不成功，则返回`400 Bad Request`。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-140">If unsuccessful, it returns a `400 Bad Request`.</span></span> <span data-ttu-id="f6a1a-141">如果找到任何错误或警告则响应中包含的响应正文一部分[educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-141">The response contains a collection of [educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md) objects as part of the response body if any errors or warnings were found.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3193d-144">示例</span><span class="sxs-lookup"><span data-stu-id="3193d-144">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3193d-145">请求</span><span class="sxs-lookup"><span data-stu-id="3193d-145">Request</span></span>
-<span data-ttu-id="3193d-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3193d-146">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f6a1a-142">示例</span><span class="sxs-lookup"><span data-stu-id="f6a1a-142">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f6a1a-143">请求</span><span class="sxs-lookup"><span data-stu-id="f6a1a-143">Request</span></span>
+<span data-ttu-id="f6a1a-144">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-144">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "post_educationSynchronizationProfile_start"
@@ -55,10 +55,10 @@ POST /synchronizationProfiles/{id}/start
 POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/start
 ```
 
-##### <a name="response"></a><span data-ttu-id="3193d-147">响应</span><span class="sxs-lookup"><span data-stu-id="3193d-147">Response</span></span>
-<span data-ttu-id="3193d-148">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="3193d-148">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="f6a1a-145">响应</span><span class="sxs-lookup"><span data-stu-id="f6a1a-145">Response</span></span>
+<span data-ttu-id="f6a1a-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-146">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="3193d-p108">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="3193d-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="f6a1a-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="f6a1a-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -127,3 +127,11 @@ Content-length: 2105
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-start.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

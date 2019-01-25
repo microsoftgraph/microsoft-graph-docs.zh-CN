@@ -4,59 +4,59 @@ description: 将活动呼叫转接。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 34ddf14ae7a49aa8a0aeae1c1bc98b8a79c16384
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b1c503be31b17fb608abbec340aa9390ce315435
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921610"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516250"
 ---
-# <a name="call-transfer"></a><span data-ttu-id="4ef67-103">呼叫： 传输</span><span class="sxs-lookup"><span data-stu-id="4ef67-103">call: transfer</span></span>
+# <a name="call-transfer"></a><span data-ttu-id="d1b16-103">呼叫： 传输</span><span class="sxs-lookup"><span data-stu-id="d1b16-103">call: transfer</span></span>
 
-> <span data-ttu-id="4ef67-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="4ef67-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4ef67-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="4ef67-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4ef67-106">将活动呼叫转接。</span><span class="sxs-lookup"><span data-stu-id="4ef67-106">Transfer an active call.</span></span>
+<span data-ttu-id="d1b16-104">将活动呼叫转接。</span><span class="sxs-lookup"><span data-stu-id="d1b16-104">Transfer an active call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4ef67-107">权限</span><span class="sxs-lookup"><span data-stu-id="4ef67-107">Permissions</span></span>
-<span data-ttu-id="4ef67-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4ef67-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d1b16-105">权限</span><span class="sxs-lookup"><span data-stu-id="d1b16-105">Permissions</span></span>
+<span data-ttu-id="d1b16-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d1b16-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4ef67-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4ef67-110">Permission type</span></span> | <span data-ttu-id="4ef67-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4ef67-111">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="d1b16-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d1b16-108">Permission type</span></span> | <span data-ttu-id="d1b16-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d1b16-109">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="4ef67-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4ef67-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="4ef67-113">不支持</span><span class="sxs-lookup"><span data-stu-id="4ef67-113">Not Supported</span></span>                |
-| <span data-ttu-id="4ef67-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4ef67-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4ef67-115">不支持</span><span class="sxs-lookup"><span data-stu-id="4ef67-115">Not Supported</span></span>                |
-| <span data-ttu-id="4ef67-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="4ef67-116">Application</span></span>     | <span data-ttu-id="4ef67-117">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="4ef67-117">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="d1b16-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d1b16-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="d1b16-111">不支持</span><span class="sxs-lookup"><span data-stu-id="d1b16-111">Not Supported</span></span>                |
+| <span data-ttu-id="d1b16-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d1b16-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d1b16-113">不支持</span><span class="sxs-lookup"><span data-stu-id="d1b16-113">Not Supported</span></span>                |
+| <span data-ttu-id="d1b16-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d1b16-114">Application</span></span>     | <span data-ttu-id="d1b16-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="d1b16-115">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="4ef67-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4ef67-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d1b16-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d1b16-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/transfer
 POST /applications/{id}/calls/{id}/transfer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4ef67-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4ef67-119">Request headers</span></span>
-| <span data-ttu-id="4ef67-120">名称</span><span class="sxs-lookup"><span data-stu-id="4ef67-120">Name</span></span>          | <span data-ttu-id="4ef67-121">说明</span><span class="sxs-lookup"><span data-stu-id="4ef67-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="d1b16-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="d1b16-117">Request headers</span></span>
+| <span data-ttu-id="d1b16-118">名称</span><span class="sxs-lookup"><span data-stu-id="d1b16-118">Name</span></span>          | <span data-ttu-id="d1b16-119">说明</span><span class="sxs-lookup"><span data-stu-id="d1b16-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="4ef67-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4ef67-122">Authorization</span></span> | <span data-ttu-id="4ef67-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4ef67-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d1b16-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d1b16-120">Authorization</span></span> | <span data-ttu-id="d1b16-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d1b16-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4ef67-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="4ef67-125">Request body</span></span>
-<span data-ttu-id="4ef67-126">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="4ef67-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d1b16-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="d1b16-123">Request body</span></span>
+<span data-ttu-id="d1b16-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="d1b16-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="4ef67-127">参数</span><span class="sxs-lookup"><span data-stu-id="4ef67-127">Parameter</span></span>      | <span data-ttu-id="4ef67-128">类型</span><span class="sxs-lookup"><span data-stu-id="4ef67-128">Type</span></span>    |<span data-ttu-id="4ef67-129">说明</span><span class="sxs-lookup"><span data-stu-id="4ef67-129">Description</span></span>|
+| <span data-ttu-id="d1b16-125">参数</span><span class="sxs-lookup"><span data-stu-id="d1b16-125">Parameter</span></span>      | <span data-ttu-id="d1b16-126">类型</span><span class="sxs-lookup"><span data-stu-id="d1b16-126">Type</span></span>    |<span data-ttu-id="d1b16-127">说明</span><span class="sxs-lookup"><span data-stu-id="d1b16-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4ef67-130">transferTarget</span><span class="sxs-lookup"><span data-stu-id="4ef67-130">transferTarget</span></span>|[<span data-ttu-id="4ef67-131">invitationParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="4ef67-131">invitationParticipantInfo</span></span>](../resources/invitationparticipantinfo.md)|<span data-ttu-id="4ef67-132">这是目标转接的参与者。</span><span class="sxs-lookup"><span data-stu-id="4ef67-132">The participant which is the target of the transfer.</span></span>|
-|<span data-ttu-id="4ef67-133">clientContext</span><span class="sxs-lookup"><span data-stu-id="4ef67-133">clientContext</span></span>|<span data-ttu-id="4ef67-134">字符串</span><span class="sxs-lookup"><span data-stu-id="4ef67-134">String</span></span>|<span data-ttu-id="4ef67-135">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="4ef67-135">The client context.</span></span>|
+|<span data-ttu-id="d1b16-128">transferTarget</span><span class="sxs-lookup"><span data-stu-id="d1b16-128">transferTarget</span></span>|[<span data-ttu-id="d1b16-129">invitationParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="d1b16-129">invitationParticipantInfo</span></span>](../resources/invitationparticipantinfo.md)|<span data-ttu-id="d1b16-130">这是目标转接的参与者。</span><span class="sxs-lookup"><span data-stu-id="d1b16-130">The participant which is the target of the transfer.</span></span>|
+|<span data-ttu-id="d1b16-131">ClientContext</span><span class="sxs-lookup"><span data-stu-id="d1b16-131">clientContext</span></span>|<span data-ttu-id="d1b16-132">String</span><span class="sxs-lookup"><span data-stu-id="d1b16-132">String</span></span>|<span data-ttu-id="d1b16-133">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="d1b16-133">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4ef67-136">响应</span><span class="sxs-lookup"><span data-stu-id="4ef67-136">Response</span></span>
-<span data-ttu-id="4ef67-137">返回`202 Accepted`响应代码。</span><span class="sxs-lookup"><span data-stu-id="4ef67-137">Returns `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="d1b16-134">响应</span><span class="sxs-lookup"><span data-stu-id="d1b16-134">Response</span></span>
+<span data-ttu-id="d1b16-135">返回响应代码。</span><span class="sxs-lookup"><span data-stu-id="d1b16-135">Returns `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4ef67-138">示例</span><span class="sxs-lookup"><span data-stu-id="4ef67-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d1b16-136">示例</span><span class="sxs-lookup"><span data-stu-id="d1b16-136">Examples</span></span>
 
-### <a name="transfer-call-directly-with-no-user-involvement"></a><span data-ttu-id="4ef67-139">与没有用户参与直接转接呼叫</span><span class="sxs-lookup"><span data-stu-id="4ef67-139">Transfer call directly, with no user involvement</span></span>
+### <a name="transfer-call-directly-with-no-user-involvement"></a><span data-ttu-id="d1b16-137">与没有用户参与直接转接呼叫</span><span class="sxs-lookup"><span data-stu-id="d1b16-137">Transfer call directly, with no user involvement</span></span>
 
-<span data-ttu-id="4ef67-140">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="4ef67-140">The following example shows how to call this API.</span></span>
+<span data-ttu-id="d1b16-138">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="d1b16-138">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4ef67-141">请求</span><span class="sxs-lookup"><span data-stu-id="4ef67-141">Request</span></span>
-<span data-ttu-id="4ef67-142">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="4ef67-142">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="d1b16-139">请求</span><span class="sxs-lookup"><span data-stu-id="d1b16-139">Request</span></span>
+<span data-ttu-id="d1b16-140">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="d1b16-140">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -85,9 +85,9 @@ Content-Length: 430
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="4ef67-143">响应</span><span class="sxs-lookup"><span data-stu-id="4ef67-143">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="d1b16-141">响应</span><span class="sxs-lookup"><span data-stu-id="d1b16-141">Response</span></span>
 
-> <span data-ttu-id="4ef67-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4ef67-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d1b16-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d1b16-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -98,7 +98,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a><span data-ttu-id="4ef67-146">通知-传输</span><span class="sxs-lookup"><span data-stu-id="4ef67-146">Notification - transferring</span></span>
+##### <a name="notification---transferring"></a><span data-ttu-id="d1b16-144">通知-传输</span><span class="sxs-lookup"><span data-stu-id="d1b16-144">Notification - transferring</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a><span data-ttu-id="4ef67-147">通知-接受转接</span><span class="sxs-lookup"><span data-stu-id="4ef67-147">Notification - transfer accepted</span></span>
+##### <a name="notification---transfer-accepted"></a><span data-ttu-id="d1b16-145">通知-接受转接</span><span class="sxs-lookup"><span data-stu-id="d1b16-145">Notification - transfer accepted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -166,7 +166,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="4ef67-148">通知-终止</span><span class="sxs-lookup"><span data-stu-id="4ef67-148">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="d1b16-146">通知-终止</span><span class="sxs-lookup"><span data-stu-id="d1b16-146">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -196,9 +196,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="consultative-transfer"></a><span data-ttu-id="4ef67-149">咨询转接</span><span class="sxs-lookup"><span data-stu-id="4ef67-149">Consultative transfer</span></span>
+### <a name="consultative-transfer"></a><span data-ttu-id="d1b16-147">咨询转接</span><span class="sxs-lookup"><span data-stu-id="d1b16-147">Consultative transfer</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4ef67-150">请求</span><span class="sxs-lookup"><span data-stu-id="4ef67-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="d1b16-148">请求</span><span class="sxs-lookup"><span data-stu-id="d1b16-148">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/transfer
@@ -228,15 +228,15 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="4ef67-151">响应</span><span class="sxs-lookup"><span data-stu-id="4ef67-151">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="d1b16-149">响应</span><span class="sxs-lookup"><span data-stu-id="d1b16-149">Response</span></span>
 
-> <span data-ttu-id="4ef67-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4ef67-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d1b16-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d1b16-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a><span data-ttu-id="4ef67-154">通知-传输</span><span class="sxs-lookup"><span data-stu-id="4ef67-154">Notification - transferring</span></span>
+##### <a name="notification---transferring"></a><span data-ttu-id="d1b16-152">通知-传输</span><span class="sxs-lookup"><span data-stu-id="d1b16-152">Notification - transferring</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -270,7 +270,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a><span data-ttu-id="4ef67-155">通知-接受转接</span><span class="sxs-lookup"><span data-stu-id="4ef67-155">Notification - transfer accepted</span></span>
+##### <a name="notification---transfer-accepted"></a><span data-ttu-id="d1b16-153">通知-接受转接</span><span class="sxs-lookup"><span data-stu-id="d1b16-153">Notification - transfer accepted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -304,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="4ef67-156">通知-终止</span><span class="sxs-lookup"><span data-stu-id="4ef67-156">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="d1b16-154">通知-终止</span><span class="sxs-lookup"><span data-stu-id="d1b16-154">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -336,10 +336,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: transfer",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-transfer.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

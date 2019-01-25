@@ -5,41 +5,41 @@ ms.date: 09/11/2017
 title: 列出网站中的 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fa13fc93dcfcfc807671082be43a7c4b4eafd63d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f7adfeba7f46eb7ed8541405221a1257637c2157
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957870"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512442"
 ---
-# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="1d138-102">枚举网站中的列表</span><span class="sxs-lookup"><span data-stu-id="1d138-102">Enumerate lists in a site</span></span>
+# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="44d48-102">枚举网站中的列表</span><span class="sxs-lookup"><span data-stu-id="44d48-102">Enumerate lists in a site</span></span>
 
-> <span data-ttu-id="1d138-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="1d138-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1d138-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="1d138-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1d138-105">获取 [site][] 的 [lists][] 的集合。</span><span class="sxs-lookup"><span data-stu-id="1d138-105">Get the collection of [lists][] for a [site][].</span></span>
+<span data-ttu-id="44d48-103">获取 [site][] 的 [lists][] 的集合。</span><span class="sxs-lookup"><span data-stu-id="44d48-103">Get the collection of [lists][] for a [site][].</span></span>
 
 [lists]: ../resources/list.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="1d138-108">权限</span><span class="sxs-lookup"><span data-stu-id="1d138-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="44d48-106">权限</span><span class="sxs-lookup"><span data-stu-id="44d48-106">Permissions</span></span>
 
-<span data-ttu-id="1d138-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1d138-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="44d48-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="44d48-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1d138-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="1d138-111">Permission type</span></span>      | <span data-ttu-id="1d138-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1d138-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="44d48-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="44d48-109">Permission type</span></span>      | <span data-ttu-id="44d48-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="44d48-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1d138-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1d138-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1d138-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1d138-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1d138-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1d138-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1d138-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1d138-116">Not supported.</span></span>    |
-|<span data-ttu-id="1d138-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="1d138-117">Application</span></span> | <span data-ttu-id="1d138-118">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1d138-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="44d48-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="44d48-111">Delegated (work or school account)</span></span> | <span data-ttu-id="44d48-112">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44d48-112">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="44d48-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="44d48-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="44d48-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="44d48-114">Not supported.</span></span>    |
+|<span data-ttu-id="44d48-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="44d48-115">Application</span></span> | <span data-ttu-id="44d48-116">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44d48-116">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1d138-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1d138-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="44d48-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="44d48-117">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-## <a name="example"></a><span data-ttu-id="1d138-120">示例</span><span class="sxs-lookup"><span data-stu-id="1d138-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="44d48-118">示例</span><span class="sxs-lookup"><span data-stu-id="44d48-118">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1d138-121">请求</span><span class="sxs-lookup"><span data-stu-id="1d138-121">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="44d48-119">请求</span><span class="sxs-lookup"><span data-stu-id="44d48-119">Request</span></span>
 
 <!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -47,7 +47,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-##### <a name="response"></a><span data-ttu-id="1d138-122">响应</span><span class="sxs-lookup"><span data-stu-id="1d138-122">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="44d48-120">响应</span><span class="sxs-lookup"><span data-stu-id="44d48-120">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -81,17 +81,22 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="1d138-123">注解</span><span class="sxs-lookup"><span data-stu-id="1d138-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="44d48-121">注解</span><span class="sxs-lookup"><span data-stu-id="44d48-121">Remarks</span></span>
 
-<span data-ttu-id="1d138-124">默认情况下，将隐藏包含 [system][] Facet 的列表。</span><span class="sxs-lookup"><span data-stu-id="1d138-124">Lists with the [system][] facet are hidden by default.</span></span>
-<span data-ttu-id="1d138-125">若要列出它们，请在 `$select` 语句中添加 `system`。</span><span class="sxs-lookup"><span data-stu-id="1d138-125">To list them, include `system` in your `$select` statement.</span></span>
+<span data-ttu-id="44d48-122">默认情况下，将隐藏包含 [system][] Facet 的列表。</span><span class="sxs-lookup"><span data-stu-id="44d48-122">Lists with the [system][] facet are hidden by default.</span></span>
+<span data-ttu-id="44d48-123">若要列出它们，请在 `$select` 语句中添加 `system`。</span><span class="sxs-lookup"><span data-stu-id="44d48-123">To list them, include `system` in your `$select` statement.</span></span>
 
 [system]: ../resources/systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Enumerate"
-} -->
+  "tocPath": "Lists/Enumerate",
+  "suppressions": [
+    "Error: /api-reference/beta/api/list-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

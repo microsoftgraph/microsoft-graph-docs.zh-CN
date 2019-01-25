@@ -4,37 +4,37 @@ description: 代表工作表保护中的选项。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e28169e4eeedd5e967e31e0b92b5ab35515337c8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e32e41eb46cc5af98f6d9aeffcf470e22fbad349
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957485"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514787"
 ---
-# <a name="worksheetprotectionoptions-resource-type"></a><span data-ttu-id="a5fc7-103">WorksheetProtectionOptions 资源类型</span><span class="sxs-lookup"><span data-stu-id="a5fc7-103">WorksheetProtectionOptions resource type</span></span>
+# <a name="worksheetprotectionoptions-resource-type"></a><span data-ttu-id="3b335-103">WorksheetProtectionOptions 资源类型</span><span class="sxs-lookup"><span data-stu-id="3b335-103">WorksheetProtectionOptions resource type</span></span>
 
-> <span data-ttu-id="a5fc7-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a5fc7-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a5fc7-106">表示工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-106">Represents the options in sheet protection.</span></span>
+<span data-ttu-id="3b335-104">代表工作表保护中的选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-104">Represents the options in sheet protection.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a5fc7-107">属性</span><span class="sxs-lookup"><span data-stu-id="a5fc7-107">Properties</span></span>
-| <span data-ttu-id="a5fc7-108">属性</span><span class="sxs-lookup"><span data-stu-id="a5fc7-108">Property</span></span>     | <span data-ttu-id="a5fc7-109">类型</span><span class="sxs-lookup"><span data-stu-id="a5fc7-109">Type</span></span>   |<span data-ttu-id="a5fc7-110">说明</span><span class="sxs-lookup"><span data-stu-id="a5fc7-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3b335-105">属性</span><span class="sxs-lookup"><span data-stu-id="3b335-105">Properties</span></span>
+| <span data-ttu-id="3b335-106">属性</span><span class="sxs-lookup"><span data-stu-id="3b335-106">Property</span></span>     | <span data-ttu-id="3b335-107">类型</span><span class="sxs-lookup"><span data-stu-id="3b335-107">Type</span></span>   |<span data-ttu-id="3b335-108">说明</span><span class="sxs-lookup"><span data-stu-id="3b335-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a5fc7-111">allowAutoFilter</span><span class="sxs-lookup"><span data-stu-id="a5fc7-111">allowAutoFilter</span></span>|<span data-ttu-id="a5fc7-112">boolean</span><span class="sxs-lookup"><span data-stu-id="a5fc7-112">boolean</span></span>|<span data-ttu-id="a5fc7-113">表示允许使用自动筛选功能的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-113">Represents the worksheet protection option of allowing using auto filter feature.</span></span>|
-|<span data-ttu-id="a5fc7-114">allowDeleteColumns</span><span class="sxs-lookup"><span data-stu-id="a5fc7-114">allowDeleteColumns</span></span>|<span data-ttu-id="a5fc7-115">boolean</span><span class="sxs-lookup"><span data-stu-id="a5fc7-115">boolean</span></span>|<span data-ttu-id="a5fc7-116">表示允许删除列的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-116">Represents the worksheet protection option of allowing deleting columns.</span></span>|
-|<span data-ttu-id="a5fc7-117">allowDeleteRows</span><span class="sxs-lookup"><span data-stu-id="a5fc7-117">allowDeleteRows</span></span>|<span data-ttu-id="a5fc7-118">boolean</span><span class="sxs-lookup"><span data-stu-id="a5fc7-118">boolean</span></span>|<span data-ttu-id="a5fc7-119">表示允许删除行的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-119">Represents the worksheet protection option of allowing deleting rows.</span></span>|
-|<span data-ttu-id="a5fc7-120">allowFormatCells</span><span class="sxs-lookup"><span data-stu-id="a5fc7-120">allowFormatCells</span></span>|<span data-ttu-id="a5fc7-121">boolean</span><span class="sxs-lookup"><span data-stu-id="a5fc7-121">boolean</span></span>|<span data-ttu-id="a5fc7-122">表示允许格式化单元格的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-122">Represents the worksheet protection option of allowing formatting cells.</span></span>|
-|<span data-ttu-id="a5fc7-123">allowFormatColumns</span><span class="sxs-lookup"><span data-stu-id="a5fc7-123">allowFormatColumns</span></span>|<span data-ttu-id="a5fc7-124">boolean</span><span class="sxs-lookup"><span data-stu-id="a5fc7-124">boolean</span></span>|<span data-ttu-id="a5fc7-125">表示允许格式化列的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-125">Represents the worksheet protection option of allowing formatting columns.</span></span>|
-|<span data-ttu-id="a5fc7-126">allowFormatRows</span><span class="sxs-lookup"><span data-stu-id="a5fc7-126">allowFormatRows</span></span>|<span data-ttu-id="a5fc7-127">boolean</span><span class="sxs-lookup"><span data-stu-id="a5fc7-127">boolean</span></span>|<span data-ttu-id="a5fc7-128">表示允许格式化行的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-128">Represents the worksheet protection option of allowing formatting rows.</span></span>|
-|<span data-ttu-id="a5fc7-129">allowInsertColumns</span><span class="sxs-lookup"><span data-stu-id="a5fc7-129">allowInsertColumns</span></span>|<span data-ttu-id="a5fc7-130">boolean</span><span class="sxs-lookup"><span data-stu-id="a5fc7-130">boolean</span></span>|<span data-ttu-id="a5fc7-131">表示允许插入列的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-131">Represents the worksheet protection option of allowing inserting columns.</span></span>|
-|<span data-ttu-id="a5fc7-132">allowInsertHyperlinks</span><span class="sxs-lookup"><span data-stu-id="a5fc7-132">allowInsertHyperlinks</span></span>|<span data-ttu-id="a5fc7-133">boolean</span><span class="sxs-lookup"><span data-stu-id="a5fc7-133">boolean</span></span>|<span data-ttu-id="a5fc7-134">表示允许插入超链接的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-134">Represents the worksheet protection option of allowing inserting hyperlinks.</span></span>|
-|<span data-ttu-id="a5fc7-135">allowInsertRows</span><span class="sxs-lookup"><span data-stu-id="a5fc7-135">allowInsertRows</span></span>|<span data-ttu-id="a5fc7-136">boolean</span><span class="sxs-lookup"><span data-stu-id="a5fc7-136">boolean</span></span>|<span data-ttu-id="a5fc7-137">表示允许插入行的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-137">Represents the worksheet protection option of allowing inserting rows.</span></span>|
-|<span data-ttu-id="a5fc7-138">allowPivotTables</span><span class="sxs-lookup"><span data-stu-id="a5fc7-138">allowPivotTables</span></span>|<span data-ttu-id="a5fc7-139">boolean</span><span class="sxs-lookup"><span data-stu-id="a5fc7-139">boolean</span></span>|<span data-ttu-id="a5fc7-140">表示允许使用数据透视表功能的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-140">Represents the worksheet protection option of allowing using pivot table feature.</span></span>|
-|<span data-ttu-id="a5fc7-141">allowSort</span><span class="sxs-lookup"><span data-stu-id="a5fc7-141">allowSort</span></span>|<span data-ttu-id="a5fc7-142">boolean</span><span class="sxs-lookup"><span data-stu-id="a5fc7-142">boolean</span></span>|<span data-ttu-id="a5fc7-143">表示允许使用排序功能的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-143">Represents the worksheet protection option of allowing using sort feature.</span></span>|
+|<span data-ttu-id="3b335-109">allowAutoFilter</span><span class="sxs-lookup"><span data-stu-id="3b335-109">allowAutoFilter</span></span>|<span data-ttu-id="3b335-110">布尔</span><span class="sxs-lookup"><span data-stu-id="3b335-110">boolean</span></span>|<span data-ttu-id="3b335-111">表示允许使用自动筛选功能的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-111">Represents the worksheet protection option of allowing using auto filter feature.</span></span>|
+|<span data-ttu-id="3b335-112">allowDeleteColumns</span><span class="sxs-lookup"><span data-stu-id="3b335-112">allowDeleteColumns</span></span>|<span data-ttu-id="3b335-113">布尔</span><span class="sxs-lookup"><span data-stu-id="3b335-113">boolean</span></span>|<span data-ttu-id="3b335-114">表示允许删除列的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-114">Represents the worksheet protection option of allowing deleting columns.</span></span>|
+|<span data-ttu-id="3b335-115">allowDeleteRows</span><span class="sxs-lookup"><span data-stu-id="3b335-115">allowDeleteRows</span></span>|<span data-ttu-id="3b335-116">布尔</span><span class="sxs-lookup"><span data-stu-id="3b335-116">boolean</span></span>|<span data-ttu-id="3b335-117">表示允许删除行的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-117">Represents the worksheet protection option of allowing deleting rows.</span></span>|
+|<span data-ttu-id="3b335-118">allowFormatCells</span><span class="sxs-lookup"><span data-stu-id="3b335-118">allowFormatCells</span></span>|<span data-ttu-id="3b335-119">布尔</span><span class="sxs-lookup"><span data-stu-id="3b335-119">boolean</span></span>|<span data-ttu-id="3b335-120">表示允许格式化单元格的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-120">Represents the worksheet protection option of allowing formatting cells.</span></span>|
+|<span data-ttu-id="3b335-121">allowFormatColumns</span><span class="sxs-lookup"><span data-stu-id="3b335-121">allowFormatColumns</span></span>|<span data-ttu-id="3b335-122">布尔</span><span class="sxs-lookup"><span data-stu-id="3b335-122">boolean</span></span>|<span data-ttu-id="3b335-123">表示允许格式化列的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-123">Represents the worksheet protection option of allowing formatting columns.</span></span>|
+|<span data-ttu-id="3b335-124">allowFormatRows</span><span class="sxs-lookup"><span data-stu-id="3b335-124">allowFormatRows</span></span>|<span data-ttu-id="3b335-125">布尔</span><span class="sxs-lookup"><span data-stu-id="3b335-125">boolean</span></span>|<span data-ttu-id="3b335-126">表示允许格式化行的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-126">Represents the worksheet protection option of allowing formatting rows.</span></span>|
+|<span data-ttu-id="3b335-127">allowInsertColumns</span><span class="sxs-lookup"><span data-stu-id="3b335-127">allowInsertColumns</span></span>|<span data-ttu-id="3b335-128">布尔</span><span class="sxs-lookup"><span data-stu-id="3b335-128">boolean</span></span>|<span data-ttu-id="3b335-129">表示允许插入列的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-129">Represents the worksheet protection option of allowing inserting columns.</span></span>|
+|<span data-ttu-id="3b335-130">allowInsertHyperlinks</span><span class="sxs-lookup"><span data-stu-id="3b335-130">allowInsertHyperlinks</span></span>|<span data-ttu-id="3b335-131">布尔</span><span class="sxs-lookup"><span data-stu-id="3b335-131">boolean</span></span>|<span data-ttu-id="3b335-132">表示允许插入超链接的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-132">Represents the worksheet protection option of allowing inserting hyperlinks.</span></span>|
+|<span data-ttu-id="3b335-133">allowInsertRows</span><span class="sxs-lookup"><span data-stu-id="3b335-133">allowInsertRows</span></span>|<span data-ttu-id="3b335-134">布尔</span><span class="sxs-lookup"><span data-stu-id="3b335-134">boolean</span></span>|<span data-ttu-id="3b335-135">表示允许插入行的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-135">Represents the worksheet protection option of allowing inserting rows.</span></span>|
+|<span data-ttu-id="3b335-136">allowPivotTables</span><span class="sxs-lookup"><span data-stu-id="3b335-136">allowPivotTables</span></span>|<span data-ttu-id="3b335-137">布尔</span><span class="sxs-lookup"><span data-stu-id="3b335-137">boolean</span></span>|<span data-ttu-id="3b335-138">表示允许使用数据透视表功能的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-138">Represents the worksheet protection option of allowing using pivot table feature.</span></span>|
+|<span data-ttu-id="3b335-139">allowSort</span><span class="sxs-lookup"><span data-stu-id="3b335-139">allowSort</span></span>|<span data-ttu-id="3b335-140">布尔</span><span class="sxs-lookup"><span data-stu-id="3b335-140">boolean</span></span>|<span data-ttu-id="3b335-141">表示允许使用排序功能的工作表保护选项。</span><span class="sxs-lookup"><span data-stu-id="3b335-141">Represents the worksheet protection option of allowing using sort feature.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a5fc7-144">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a5fc7-144">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3b335-142">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3b335-142">JSON representation</span></span>
 
-<span data-ttu-id="a5fc7-145">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a5fc7-145">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3b335-143">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3b335-143">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -63,10 +63,15 @@ ms.locfileid: "27957485"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "WorksheetProtectionOptions resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/worksheetprotectionoptions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

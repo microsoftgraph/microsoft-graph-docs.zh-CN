@@ -4,42 +4,42 @@ description: 表示图表的 chart title 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: db0b95e0e01fcbf1c962689a1615066692700992
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a71aed2da93c2121492f1eb29826470b797768ed
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977561"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514710"
 ---
-# <a name="charttitle-resource-type"></a><span data-ttu-id="ac9cc-103">ChartTitle 资源类型</span><span class="sxs-lookup"><span data-stu-id="ac9cc-103">ChartTitle resource type</span></span>
+# <a name="charttitle-resource-type"></a><span data-ttu-id="aa315-103">ChartTitle 资源类型</span><span class="sxs-lookup"><span data-stu-id="aa315-103">ChartTitle resource type</span></span>
 
-> <span data-ttu-id="ac9cc-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ac9cc-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ac9cc-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ac9cc-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ac9cc-106">表示图表的 chart title 对象。</span><span class="sxs-lookup"><span data-stu-id="ac9cc-106">Represents a chart title object of a chart.</span></span>
+<span data-ttu-id="aa315-104">表示图表的 chart title 对象。</span><span class="sxs-lookup"><span data-stu-id="aa315-104">Represents a chart title object of a chart.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="ac9cc-107">方法</span><span class="sxs-lookup"><span data-stu-id="ac9cc-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="aa315-105">方法</span><span class="sxs-lookup"><span data-stu-id="aa315-105">Methods</span></span>
 
-| <span data-ttu-id="ac9cc-108">方法</span><span class="sxs-lookup"><span data-stu-id="ac9cc-108">Method</span></span>           | <span data-ttu-id="ac9cc-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="ac9cc-109">Return Type</span></span>    |<span data-ttu-id="ac9cc-110">说明</span><span class="sxs-lookup"><span data-stu-id="ac9cc-110">Description</span></span>|
+| <span data-ttu-id="aa315-106">方法</span><span class="sxs-lookup"><span data-stu-id="aa315-106">Method</span></span>           | <span data-ttu-id="aa315-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="aa315-107">Return Type</span></span>    |<span data-ttu-id="aa315-108">说明</span><span class="sxs-lookup"><span data-stu-id="aa315-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="ac9cc-111">获取 ChartTitle</span><span class="sxs-lookup"><span data-stu-id="ac9cc-111">Get ChartTitle</span></span>](../api/charttitle-get.md) | [<span data-ttu-id="ac9cc-112">ChartTitle</span><span class="sxs-lookup"><span data-stu-id="ac9cc-112">ChartTitle</span></span>](charttitle.md) |<span data-ttu-id="ac9cc-113">读取 chartTitle 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="ac9cc-113">Read properties and relationships of chartTitle object.</span></span>|
-|[<span data-ttu-id="ac9cc-114">Update</span><span class="sxs-lookup"><span data-stu-id="ac9cc-114">Update</span></span>](../api/charttitle-update.md) | [<span data-ttu-id="ac9cc-115">ChartTitle</span><span class="sxs-lookup"><span data-stu-id="ac9cc-115">ChartTitle</span></span>](charttitle.md)    |<span data-ttu-id="ac9cc-116">更新 ChartTitle 对象。</span><span class="sxs-lookup"><span data-stu-id="ac9cc-116">Update ChartTitle object.</span></span> |
+|<span data-ttu-id="aa315-109">获取 ChartTitle</span><span class="sxs-lookup"><span data-stu-id="aa315-109">[Get ChartTitle](../api/charttitle-get.md)</span></span> | [<span data-ttu-id="aa315-110">ChartTitle</span><span class="sxs-lookup"><span data-stu-id="aa315-110">ChartTitle</span></span>](charttitle.md) |<span data-ttu-id="aa315-111">读取 chartTitle 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="aa315-111">Read properties and relationships of chartTitle object.</span></span>|
+|[<span data-ttu-id="aa315-112">Update</span><span class="sxs-lookup"><span data-stu-id="aa315-112">Update</span></span>](../api/charttitle-update.md) | [<span data-ttu-id="aa315-113">ChartTitle</span><span class="sxs-lookup"><span data-stu-id="aa315-113">ChartTitle</span></span>](charttitle.md)    |<span data-ttu-id="aa315-114">更新 ChartTitle 对象。</span><span class="sxs-lookup"><span data-stu-id="aa315-114">Update ChartTitle object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="ac9cc-117">属性</span><span class="sxs-lookup"><span data-stu-id="ac9cc-117">Properties</span></span>
-| <span data-ttu-id="ac9cc-118">属性</span><span class="sxs-lookup"><span data-stu-id="ac9cc-118">Property</span></span>     | <span data-ttu-id="ac9cc-119">类型</span><span class="sxs-lookup"><span data-stu-id="ac9cc-119">Type</span></span>   |<span data-ttu-id="ac9cc-120">说明</span><span class="sxs-lookup"><span data-stu-id="ac9cc-120">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="aa315-115">属性</span><span class="sxs-lookup"><span data-stu-id="aa315-115">Properties</span></span>
+| <span data-ttu-id="aa315-116">属性</span><span class="sxs-lookup"><span data-stu-id="aa315-116">Property</span></span>     | <span data-ttu-id="aa315-117">类型</span><span class="sxs-lookup"><span data-stu-id="aa315-117">Type</span></span>   |<span data-ttu-id="aa315-118">说明</span><span class="sxs-lookup"><span data-stu-id="aa315-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ac9cc-121">overlay</span><span class="sxs-lookup"><span data-stu-id="ac9cc-121">overlay</span></span>|<span data-ttu-id="ac9cc-122">boolean</span><span class="sxs-lookup"><span data-stu-id="ac9cc-122">boolean</span></span>|<span data-ttu-id="ac9cc-123">表示图表标题是否将叠加在图表上的布尔值。</span><span class="sxs-lookup"><span data-stu-id="ac9cc-123">Boolean value representing if the chart title will overlay the chart or not.</span></span>|
-|<span data-ttu-id="ac9cc-124">text</span><span class="sxs-lookup"><span data-stu-id="ac9cc-124">text</span></span>|<span data-ttu-id="ac9cc-125">string</span><span class="sxs-lookup"><span data-stu-id="ac9cc-125">string</span></span>|<span data-ttu-id="ac9cc-126">表示图表的标题文本。</span><span class="sxs-lookup"><span data-stu-id="ac9cc-126">Represents the title text of a chart.</span></span>|
-|<span data-ttu-id="ac9cc-127">visible</span><span class="sxs-lookup"><span data-stu-id="ac9cc-127">visible</span></span>|<span data-ttu-id="ac9cc-128">boolean</span><span class="sxs-lookup"><span data-stu-id="ac9cc-128">boolean</span></span>|<span data-ttu-id="ac9cc-129">表示 chart title 对象的可见性的布尔值。</span><span class="sxs-lookup"><span data-stu-id="ac9cc-129">A boolean value the represents the visibility of a chart title object.</span></span>|
+|<span data-ttu-id="aa315-119">overlay</span><span class="sxs-lookup"><span data-stu-id="aa315-119">overlay</span></span>|<span data-ttu-id="aa315-120">布尔</span><span class="sxs-lookup"><span data-stu-id="aa315-120">boolean</span></span>|<span data-ttu-id="aa315-121">表示图表标题是否将叠加在图表上的布尔值。</span><span class="sxs-lookup"><span data-stu-id="aa315-121">Boolean value representing if the chart title will overlay the chart or not.</span></span>|
+|<span data-ttu-id="aa315-122">text</span><span class="sxs-lookup"><span data-stu-id="aa315-122">text</span></span>|<span data-ttu-id="aa315-123">string</span><span class="sxs-lookup"><span data-stu-id="aa315-123">string</span></span>|<span data-ttu-id="aa315-124">表示图表的标题文本。</span><span class="sxs-lookup"><span data-stu-id="aa315-124">Represents the title text of a chart.</span></span>|
+|<span data-ttu-id="aa315-125">visible</span><span class="sxs-lookup"><span data-stu-id="aa315-125">visible</span></span>|<span data-ttu-id="aa315-126">布尔</span><span class="sxs-lookup"><span data-stu-id="aa315-126">boolean</span></span>|<span data-ttu-id="aa315-127">表示 chart title 对象的可见性的布尔值。</span><span class="sxs-lookup"><span data-stu-id="aa315-127">A boolean value the represents the visibility of a chart title object.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ac9cc-130">Relationships</span><span class="sxs-lookup"><span data-stu-id="ac9cc-130">Relationships</span></span>
-| <span data-ttu-id="ac9cc-131">关系</span><span class="sxs-lookup"><span data-stu-id="ac9cc-131">Relationship</span></span> | <span data-ttu-id="ac9cc-132">类型</span><span class="sxs-lookup"><span data-stu-id="ac9cc-132">Type</span></span>   |<span data-ttu-id="ac9cc-133">说明</span><span class="sxs-lookup"><span data-stu-id="ac9cc-133">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="aa315-128">关系</span><span class="sxs-lookup"><span data-stu-id="aa315-128">Relationships</span></span>
+| <span data-ttu-id="aa315-129">关系</span><span class="sxs-lookup"><span data-stu-id="aa315-129">Relationship</span></span> | <span data-ttu-id="aa315-130">类型</span><span class="sxs-lookup"><span data-stu-id="aa315-130">Type</span></span>   |<span data-ttu-id="aa315-131">说明</span><span class="sxs-lookup"><span data-stu-id="aa315-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ac9cc-134">format</span><span class="sxs-lookup"><span data-stu-id="ac9cc-134">format</span></span>|[<span data-ttu-id="ac9cc-135">ChartTitleFormat</span><span class="sxs-lookup"><span data-stu-id="ac9cc-135">ChartTitleFormat</span></span>](charttitleformat.md)|<span data-ttu-id="ac9cc-p102">表示图表标题的格式，包括填充和字体格式。只读。</span><span class="sxs-lookup"><span data-stu-id="ac9cc-p102">Represents the formatting of a chart title, which includes fill and font formatting. Read-only.</span></span>|
+|<span data-ttu-id="aa315-132">format</span><span class="sxs-lookup"><span data-stu-id="aa315-132">format</span></span>|[<span data-ttu-id="aa315-133">ChartTitleFormat</span><span class="sxs-lookup"><span data-stu-id="aa315-133">ChartTitleFormat</span></span>](charttitleformat.md)|<span data-ttu-id="aa315-p101">表示图表标题的格式，包括填充和字体格式。只读。</span><span class="sxs-lookup"><span data-stu-id="aa315-p101">Represents the formatting of a chart title, which includes fill and font formatting. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ac9cc-138">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ac9cc-138">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="aa315-136">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="aa315-136">JSON representation</span></span>
 
-<span data-ttu-id="ac9cc-139">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ac9cc-139">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="aa315-137">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="aa315-137">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -60,10 +60,15 @@ ms.locfileid: "27977561"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ChartTitle resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/charttitle.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,54 +2,54 @@
 title: 列表 privilegedRoleAssignments
 description: 检索 privilegedRoleAssignment 对象，对应于组织的所有角色分配列表。
 localization_priority: Normal
-ms.openlocfilehash: ee6fac823e4d05eb13ada0a3ad1082ba1a78a7e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c576e0d9c0a278e02159e02cea94ddd927561e08
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838659"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516586"
 ---
-# <a name="list-privilegedroleassignments"></a><span data-ttu-id="16b9d-103">列表 privilegedRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="16b9d-103">List privilegedRoleAssignments</span></span>
+# <a name="list-privilegedroleassignments"></a><span data-ttu-id="fa213-103">列表 privilegedRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="fa213-103">List privilegedRoleAssignments</span></span>
 
-> <span data-ttu-id="16b9d-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="16b9d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="16b9d-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="16b9d-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="16b9d-106">检索[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象，对应于组织的所有角色分配列表。</span><span class="sxs-lookup"><span data-stu-id="16b9d-106">Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects, which correspond to all role assignments for the organization.</span></span>
-## <a name="permissions"></a><span data-ttu-id="16b9d-107">权限</span><span class="sxs-lookup"><span data-stu-id="16b9d-107">Permissions</span></span>
-<span data-ttu-id="16b9d-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="16b9d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fa213-104">检索[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象，对应于组织的所有角色分配列表。</span><span class="sxs-lookup"><span data-stu-id="fa213-104">Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects, which correspond to all role assignments for the organization.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fa213-105">权限</span><span class="sxs-lookup"><span data-stu-id="fa213-105">Permissions</span></span>
+<span data-ttu-id="fa213-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fa213-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="16b9d-110">请求者需要拥有以下角色之一：_具有权限的角色管理员_、_全局管理员_、_安全管理员_或_安全读取器_。</span><span class="sxs-lookup"><span data-stu-id="16b9d-110">The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.</span></span> 
+<span data-ttu-id="fa213-108">请求者需要拥有以下角色之一：_具有权限的角色管理员_、_全局管理员_、_安全管理员_或_安全读取器_。</span><span class="sxs-lookup"><span data-stu-id="fa213-108">The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.</span></span> 
 
-|<span data-ttu-id="16b9d-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="16b9d-111">Permission type</span></span>      | <span data-ttu-id="16b9d-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="16b9d-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fa213-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="fa213-109">Permission type</span></span>      | <span data-ttu-id="fa213-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fa213-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="16b9d-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="16b9d-113">Delegated (work or school account)</span></span> | <span data-ttu-id="16b9d-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="16b9d-114">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="16b9d-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="16b9d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="16b9d-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="16b9d-116">Not supported.</span></span>    |
-|<span data-ttu-id="16b9d-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="16b9d-117">Application</span></span> | <span data-ttu-id="16b9d-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="16b9d-118">Not supported.</span></span> |
+|<span data-ttu-id="fa213-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fa213-111">Delegated (work or school account)</span></span> | <span data-ttu-id="fa213-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="fa213-112">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="fa213-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fa213-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fa213-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="fa213-114">Not supported.</span></span>    |
+|<span data-ttu-id="fa213-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="fa213-115">Application</span></span> | <span data-ttu-id="fa213-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="fa213-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="16b9d-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="16b9d-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fa213-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fa213-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedRoleAssignments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="16b9d-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="16b9d-120">Optional query parameters</span></span>
-<span data-ttu-id="16b9d-121">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="16b9d-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fa213-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="fa213-118">Optional query parameters</span></span>
+<span data-ttu-id="fa213-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="fa213-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="16b9d-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="16b9d-122">Request headers</span></span>
-| <span data-ttu-id="16b9d-123">名称</span><span class="sxs-lookup"><span data-stu-id="16b9d-123">Name</span></span>      |<span data-ttu-id="16b9d-124">说明</span><span class="sxs-lookup"><span data-stu-id="16b9d-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fa213-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="fa213-120">Request headers</span></span>
+| <span data-ttu-id="fa213-121">名称</span><span class="sxs-lookup"><span data-stu-id="fa213-121">Name</span></span>      |<span data-ttu-id="fa213-122">说明</span><span class="sxs-lookup"><span data-stu-id="fa213-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="16b9d-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="16b9d-125">Authorization</span></span>  | <span data-ttu-id="16b9d-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="16b9d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fa213-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="fa213-123">Authorization</span></span>  | <span data-ttu-id="fa213-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="fa213-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="16b9d-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="16b9d-128">Request body</span></span>
-<span data-ttu-id="16b9d-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="16b9d-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fa213-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="fa213-126">Request body</span></span>
+<span data-ttu-id="fa213-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="fa213-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="16b9d-130">响应</span><span class="sxs-lookup"><span data-stu-id="16b9d-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fa213-128">响应</span><span class="sxs-lookup"><span data-stu-id="fa213-128">Response</span></span>
 
-<span data-ttu-id="16b9d-131">如果成功，此方法返回`200 OK`响应代码和响应正文中的[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="16b9d-131">If successful, this method returns a `200 OK` response code and collection of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects in the response body.</span></span>
+<span data-ttu-id="fa213-129">如果成功，此方法返回`200 OK`响应代码和响应正文中的[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="fa213-129">If successful, this method returns a `200 OK` response code and collection of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects in the response body.</span></span>
 
-<span data-ttu-id="16b9d-132">请注意，需要将其注册到 PIM 租户。</span><span class="sxs-lookup"><span data-stu-id="16b9d-132">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="16b9d-133">否则，将返回的 HTTP 403 禁止访问状态代码。</span><span class="sxs-lookup"><span data-stu-id="16b9d-133">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
-## <a name="examples"></a><span data-ttu-id="16b9d-134">示例</span><span class="sxs-lookup"><span data-stu-id="16b9d-134">Examples</span></span>
-### <a name="get-all-role-assignments"></a><span data-ttu-id="16b9d-135">获取所有角色分配</span><span class="sxs-lookup"><span data-stu-id="16b9d-135">Get all role assignments</span></span>
-##### <a name="request"></a><span data-ttu-id="16b9d-136">请求</span><span class="sxs-lookup"><span data-stu-id="16b9d-136">Request</span></span>
-<span data-ttu-id="16b9d-137">下面的示例演示请求以获取所有角色分配：</span><span class="sxs-lookup"><span data-stu-id="16b9d-137">The following example shows a request to get all role assignments:</span></span>
+<span data-ttu-id="fa213-130">请注意，需要将其注册到 PIM 租户。</span><span class="sxs-lookup"><span data-stu-id="fa213-130">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="fa213-131">否则，将返回的 HTTP 403 禁止访问状态代码。</span><span class="sxs-lookup"><span data-stu-id="fa213-131">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+## <a name="examples"></a><span data-ttu-id="fa213-132">示例</span><span class="sxs-lookup"><span data-stu-id="fa213-132">Examples</span></span>
+### <a name="get-all-role-assignments"></a><span data-ttu-id="fa213-133">获取所有角色分配</span><span class="sxs-lookup"><span data-stu-id="fa213-133">Get all role assignments</span></span>
+##### <a name="request"></a><span data-ttu-id="fa213-134">请求</span><span class="sxs-lookup"><span data-stu-id="fa213-134">Request</span></span>
+<span data-ttu-id="fa213-135">下面的示例演示请求以获取所有角色分配：</span><span class="sxs-lookup"><span data-stu-id="fa213-135">The following example shows a request to get all role assignments:</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -57,8 +57,8 @@ GET /privilegedRoleAssignments
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ```
-##### <a name="response"></a><span data-ttu-id="16b9d-138">响应</span><span class="sxs-lookup"><span data-stu-id="16b9d-138">Response</span></span>
-<span data-ttu-id="16b9d-139">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="16b9d-139">The following example shows the response.</span></span> <span data-ttu-id="16b9d-140">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="16b9d-140">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="16b9d-141">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="16b9d-141">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fa213-136">响应</span><span class="sxs-lookup"><span data-stu-id="fa213-136">Response</span></span>
+<span data-ttu-id="fa213-137">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="fa213-137">The following example shows the response.</span></span> <span data-ttu-id="fa213-138">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="fa213-138">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="fa213-139">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="fa213-139">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,9 +83,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-active-role-assignments"></a><span data-ttu-id="16b9d-142">获取活动角色分配</span><span class="sxs-lookup"><span data-stu-id="16b9d-142">Get active role assignments</span></span>
-##### <a name="request"></a><span data-ttu-id="16b9d-143">请求</span><span class="sxs-lookup"><span data-stu-id="16b9d-143">Request</span></span> 
-<span data-ttu-id="16b9d-144">下面的示例演示对查询的主动角色分配的请求：</span><span class="sxs-lookup"><span data-stu-id="16b9d-144">The following example shows a request to query active role assignments:</span></span>
+### <a name="get-active-role-assignments"></a><span data-ttu-id="fa213-140">获取活动角色分配</span><span class="sxs-lookup"><span data-stu-id="fa213-140">Get active role assignments</span></span>
+##### <a name="request"></a><span data-ttu-id="fa213-141">请求</span><span class="sxs-lookup"><span data-stu-id="fa213-141">Request</span></span> 
+<span data-ttu-id="fa213-142">下面的示例演示对查询的主动角色分配的请求：</span><span class="sxs-lookup"><span data-stu-id="fa213-142">The following example shows a request to query active role assignments:</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -93,8 +93,8 @@ Content-length: 237
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true
 ```
-##### <a name="response"></a><span data-ttu-id="16b9d-145">响应</span><span class="sxs-lookup"><span data-stu-id="16b9d-145">Response</span></span>
-<span data-ttu-id="16b9d-146">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="16b9d-146">The following example shows the response.</span></span> <span data-ttu-id="16b9d-147">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="16b9d-147">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="16b9d-148">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="16b9d-148">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fa213-143">响应</span><span class="sxs-lookup"><span data-stu-id="fa213-143">Response</span></span>
+<span data-ttu-id="fa213-144">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="fa213-144">The following example shows the response.</span></span> <span data-ttu-id="fa213-145">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="fa213-145">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="fa213-146">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="fa213-146">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,9 +127,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-permanent-role-assignments"></a><span data-ttu-id="16b9d-149">获取永久角色分配</span><span class="sxs-lookup"><span data-stu-id="16b9d-149">Get permanent role assignments</span></span>
-##### <a name="request"></a><span data-ttu-id="16b9d-150">请求</span><span class="sxs-lookup"><span data-stu-id="16b9d-150">Request</span></span> 
-<span data-ttu-id="16b9d-151">下面的示例演示请求查询永久角色分配，其中``expirationDateTime``值是``null``:</span><span class="sxs-lookup"><span data-stu-id="16b9d-151">The following example shows a request to query permanent role assignments, where ``expirationDateTime`` value is ``null``:</span></span>
+### <a name="get-permanent-role-assignments"></a><span data-ttu-id="fa213-147">获取永久角色分配</span><span class="sxs-lookup"><span data-stu-id="fa213-147">Get permanent role assignments</span></span>
+##### <a name="request"></a><span data-ttu-id="fa213-148">请求</span><span class="sxs-lookup"><span data-stu-id="fa213-148">Request</span></span> 
+<span data-ttu-id="fa213-149">下面的示例演示请求查询永久角色分配，其中``expirationDateTime``值是``null``:</span><span class="sxs-lookup"><span data-stu-id="fa213-149">The following example shows a request to query permanent role assignments, where ``expirationDateTime`` value is ``null``:</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -137,8 +137,8 @@ Content-length: 237
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20eq%20null
 ```
-##### <a name="response"></a><span data-ttu-id="16b9d-152">响应</span><span class="sxs-lookup"><span data-stu-id="16b9d-152">Response</span></span>
-<span data-ttu-id="16b9d-153">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="16b9d-153">The following example shows the response.</span></span> <span data-ttu-id="16b9d-154">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="16b9d-154">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="16b9d-155">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="16b9d-155">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fa213-150">响应</span><span class="sxs-lookup"><span data-stu-id="fa213-150">Response</span></span>
+<span data-ttu-id="fa213-151">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="fa213-151">The following example shows the response.</span></span> <span data-ttu-id="fa213-152">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="fa213-152">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="fa213-153">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="fa213-153">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -171,9 +171,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-eligible-role-assignments"></a><span data-ttu-id="16b9d-156">获取合格的角色分配</span><span class="sxs-lookup"><span data-stu-id="16b9d-156">Get eligible role assignments</span></span>
-##### <a name="request"></a><span data-ttu-id="16b9d-157">请求</span><span class="sxs-lookup"><span data-stu-id="16b9d-157">Request</span></span> 
-<span data-ttu-id="16b9d-158">下面的示例演示向查询合格的角色分配，包括活动和非活动的请求：</span><span class="sxs-lookup"><span data-stu-id="16b9d-158">The following example shows a request to query eligible role assignments, including the active and non-active ones:</span></span>
+### <a name="get-eligible-role-assignments"></a><span data-ttu-id="fa213-154">获取合格的角色分配</span><span class="sxs-lookup"><span data-stu-id="fa213-154">Get eligible role assignments</span></span>
+##### <a name="request"></a><span data-ttu-id="fa213-155">请求</span><span class="sxs-lookup"><span data-stu-id="fa213-155">Request</span></span> 
+<span data-ttu-id="fa213-156">下面的示例演示向查询合格的角色分配，包括活动和非活动的请求：</span><span class="sxs-lookup"><span data-stu-id="fa213-156">The following example shows a request to query eligible role assignments, including the active and non-active ones:</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -181,8 +181,8 @@ Content-length: 237
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20ne%20null%20or%20isElevated%20eq%20false
 ```
-##### <a name="response"></a><span data-ttu-id="16b9d-159">响应</span><span class="sxs-lookup"><span data-stu-id="16b9d-159">Response</span></span> 
-<span data-ttu-id="16b9d-160">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="16b9d-160">The following example shows the response.</span></span> <span data-ttu-id="16b9d-161">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="16b9d-161">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="16b9d-162">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="16b9d-162">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fa213-157">响应</span><span class="sxs-lookup"><span data-stu-id="fa213-157">Response</span></span> 
+<span data-ttu-id="fa213-158">以下示例显示了相应的响应。</span><span class="sxs-lookup"><span data-stu-id="fa213-158">The following example shows the response.</span></span> <span data-ttu-id="fa213-159">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="fa213-159">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="fa213-160">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="fa213-160">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -233,10 +233,15 @@ Content-length: 237
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List privilegedRoleAssignments",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignment-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

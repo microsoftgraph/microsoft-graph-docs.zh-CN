@@ -5,30 +5,30 @@ ms.date: 09/11/2017
 title: 更新 SharePoint 列表中的记录
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 393d8031f5dafd61e6b41d584aad988fa610b7b4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e85cf419640ae6055f225b51c08ccaa68a008df7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966634"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512519"
 ---
-# <a name="update-an-item-in-a-list"></a><span data-ttu-id="280a7-102">更新列表中的项</span><span class="sxs-lookup"><span data-stu-id="280a7-102">Update an item in a list</span></span>
+# <a name="update-an-item-in-a-list"></a><span data-ttu-id="93a6b-102">更新列表中的项</span><span class="sxs-lookup"><span data-stu-id="93a6b-102">Update an item in a list</span></span>
 
-> <span data-ttu-id="280a7-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="280a7-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="280a7-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="280a7-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="280a7-105">更新 **[listItem][]** 上的属性。</span><span class="sxs-lookup"><span data-stu-id="280a7-105">Update the properties on a **[listItem][]**.</span></span>
+<span data-ttu-id="93a6b-103">更新 **[listItem][]** 上的属性。</span><span class="sxs-lookup"><span data-stu-id="93a6b-103">Update the properties on a **[listItem][]**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="280a7-106">权限</span><span class="sxs-lookup"><span data-stu-id="280a7-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="93a6b-104">权限</span><span class="sxs-lookup"><span data-stu-id="93a6b-104">Permissions</span></span>
 
-<span data-ttu-id="280a7-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="280a7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="93a6b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="93a6b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="280a7-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="280a7-109">Permission type</span></span>      | <span data-ttu-id="280a7-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="280a7-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="93a6b-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="93a6b-107">Permission type</span></span>      | <span data-ttu-id="93a6b-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="93a6b-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="280a7-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="280a7-111">Delegated (work or school account)</span></span> | <span data-ttu-id="280a7-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="280a7-112">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="280a7-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="280a7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="280a7-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="280a7-114">Not supported.</span></span>    |
-|<span data-ttu-id="280a7-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="280a7-115">Application</span></span> | <span data-ttu-id="280a7-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="280a7-116">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="93a6b-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="93a6b-109">Delegated (work or school account)</span></span> | <span data-ttu-id="93a6b-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="93a6b-110">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="93a6b-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="93a6b-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="93a6b-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="93a6b-112">Not supported.</span></span>    |
+|<span data-ttu-id="93a6b-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="93a6b-113">Application</span></span> | <span data-ttu-id="93a6b-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="93a6b-114">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="280a7-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="280a7-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="93a6b-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="93a6b-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,21 +36,21 @@ ms.locfileid: "27966634"
 PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="280a7-118">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="280a7-118">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="93a6b-116">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="93a6b-116">Optional request headers</span></span>
 
-| <span data-ttu-id="280a7-119">名称</span><span class="sxs-lookup"><span data-stu-id="280a7-119">Name</span></span>       | <span data-ttu-id="280a7-120">值</span><span class="sxs-lookup"><span data-stu-id="280a7-120">Value</span></span> | <span data-ttu-id="280a7-121">说明</span><span class="sxs-lookup"><span data-stu-id="280a7-121">Description</span></span>
+| <span data-ttu-id="93a6b-117">名称</span><span class="sxs-lookup"><span data-stu-id="93a6b-117">Name</span></span>       | <span data-ttu-id="93a6b-118">值</span><span class="sxs-lookup"><span data-stu-id="93a6b-118">Value</span></span> | <span data-ttu-id="93a6b-119">说明</span><span class="sxs-lookup"><span data-stu-id="93a6b-119">Description</span></span>
 |:-----------|:------|:--------------------------------------------------------
-| <span data-ttu-id="280a7-122">_if-match_</span><span class="sxs-lookup"><span data-stu-id="280a7-122">_if-match_</span></span> | <span data-ttu-id="280a7-123">etag</span><span class="sxs-lookup"><span data-stu-id="280a7-123">etag</span></span>  | <span data-ttu-id="280a7-124">如果包含此请求标头，且提供的 eTag 与项中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应，并且不会更新该项。</span><span class="sxs-lookup"><span data-stu-id="280a7-124">If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.</span></span>
+| <span data-ttu-id="93a6b-120">_if-match_</span><span class="sxs-lookup"><span data-stu-id="93a6b-120">_if-match_</span></span> | <span data-ttu-id="93a6b-121">etag</span><span class="sxs-lookup"><span data-stu-id="93a6b-121">etag</span></span>  | <span data-ttu-id="93a6b-122">如果包含此请求标头，且提供的 eTag 与项中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应，并且不会更新该项。</span><span class="sxs-lookup"><span data-stu-id="93a6b-122">If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="280a7-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="280a7-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="93a6b-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="93a6b-123">Request body</span></span>
 
-<span data-ttu-id="280a7-126">在请求正文中，提供指定要更新的字段的 [fieldValueSet][] 的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="280a7-126">In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.</span></span>
+<span data-ttu-id="93a6b-124">在请求正文中，提供指定要更新的字段的 [fieldValueSet][] 的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="93a6b-124">In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.</span></span>
 
-## <a name="example"></a><span data-ttu-id="280a7-127">示例</span><span class="sxs-lookup"><span data-stu-id="280a7-127">Example</span></span>
+## <a name="example"></a><span data-ttu-id="93a6b-125">示例</span><span class="sxs-lookup"><span data-stu-id="93a6b-125">Example</span></span>
 
-<span data-ttu-id="280a7-128">下面是一个示例，使用新值更新列表项的“颜色”和“数量”字段。</span><span class="sxs-lookup"><span data-stu-id="280a7-128">Here is an example that updates the Color and Quantity fields of the list item with new values.</span></span>
-<span data-ttu-id="280a7-129">listItem 上的所有其他值都保持独立。</span><span class="sxs-lookup"><span data-stu-id="280a7-129">All other values on the listItem are left alone.</span></span> 
+<span data-ttu-id="93a6b-126">下面是一个示例，使用新值更新列表项的“颜色”和“数量”字段。</span><span class="sxs-lookup"><span data-stu-id="93a6b-126">Here is an example that updates the Color and Quantity fields of the list item with new values.</span></span>
+<span data-ttu-id="93a6b-127">listItem 上的所有其他值都保持独立。</span><span class="sxs-lookup"><span data-stu-id="93a6b-127">All other values on the listItem are left alone.</span></span> 
 
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
@@ -64,9 +64,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="280a7-130">响应</span><span class="sxs-lookup"><span data-stu-id="280a7-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="93a6b-128">响应</span><span class="sxs-lookup"><span data-stu-id="93a6b-128">Response</span></span>
 
-<span data-ttu-id="280a7-131">如果成功，此方法在已更新列表项的响应正文中返回 [fieldValueSet][]。</span><span class="sxs-lookup"><span data-stu-id="280a7-131">If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.</span></span>
+<span data-ttu-id="93a6b-129">如果成功，此方法在已更新列表项的响应正文中返回 [fieldValueSet][]。</span><span class="sxs-lookup"><span data-stu-id="93a6b-129">If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
@@ -84,10 +84,15 @@ Content-type: application/json
 [fieldValueSet]: ../resources/fieldvalueset.md
 [listItem]: ../resources/listitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Update"
-} -->
+  "tocPath": "ListItem/Update",
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitem-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

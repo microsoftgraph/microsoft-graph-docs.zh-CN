@@ -4,22 +4,22 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: DeleteAction
 localization_priority: Normal
-ms.openlocfilehash: a845a6609991041f12266cd97e95460f96bf742f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5e3b7cbf752d3ddb2c4b7bde3981d2a443028b92
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876760"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512617"
 ---
-# <a name="deleteaction-resource-type"></a><span data-ttu-id="d9d9c-102">DeleteAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="d9d9c-102">DeleteAction resource type</span></span>
+# <a name="deleteaction-resource-type"></a><span data-ttu-id="a811e-102">DeleteAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="a811e-102">DeleteAction resource type</span></span>
 
-> <span data-ttu-id="d9d9c-103">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="d9d9c-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d9d9c-104">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="d9d9c-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d9d9c-105">[**itemActivity**][activity] 上存在 **DeleteAction** 资源指示活动删除了一个项。</span><span class="sxs-lookup"><span data-stu-id="d9d9c-105">The presence of the **DeleteAction** resource on an [**itemActivity**][activity] indicates that the activity deleted an item.</span></span>
+<span data-ttu-id="a811e-103">[**itemActivity**][activity] 上存在 **DeleteAction** 资源指示活动删除了一个项。</span><span class="sxs-lookup"><span data-stu-id="a811e-103">The presence of the **DeleteAction** resource on an [**itemActivity**][activity] indicates that the activity deleted an item.</span></span>
 
 [activity]: itemactivity.md
 
-## <a name="json-representation"></a><span data-ttu-id="d9d9c-106">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d9d9c-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a811e-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a811e-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,21 +34,26 @@ ms.locfileid: "27876760"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="d9d9c-107">属性</span><span class="sxs-lookup"><span data-stu-id="d9d9c-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a811e-105">属性</span><span class="sxs-lookup"><span data-stu-id="a811e-105">Properties</span></span>
 
-| <span data-ttu-id="d9d9c-108">属性名称</span><span class="sxs-lookup"><span data-stu-id="d9d9c-108">Property name</span></span> | <span data-ttu-id="d9d9c-109">类型</span><span class="sxs-lookup"><span data-stu-id="d9d9c-109">Type</span></span>   | <span data-ttu-id="d9d9c-110">说明</span><span class="sxs-lookup"><span data-stu-id="d9d9c-110">Description</span></span>
+| <span data-ttu-id="a811e-106">属性名称</span><span class="sxs-lookup"><span data-stu-id="a811e-106">Property name</span></span> | <span data-ttu-id="a811e-107">类型</span><span class="sxs-lookup"><span data-stu-id="a811e-107">Type</span></span>   | <span data-ttu-id="a811e-108">说明</span><span class="sxs-lookup"><span data-stu-id="a811e-108">Description</span></span>
 |:--------------|:-------|:----------------------------------------------------
-| <span data-ttu-id="d9d9c-111">name</span><span class="sxs-lookup"><span data-stu-id="d9d9c-111">name</span></span>          | <span data-ttu-id="d9d9c-112">string</span><span class="sxs-lookup"><span data-stu-id="d9d9c-112">string</span></span> | <span data-ttu-id="d9d9c-113">已删除的项的名称。</span><span class="sxs-lookup"><span data-stu-id="d9d9c-113">The name of the item that was deleted.</span></span>
-| <span data-ttu-id="d9d9c-114">objectType</span><span class="sxs-lookup"><span data-stu-id="d9d9c-114">objectType</span></span>    | <span data-ttu-id="d9d9c-115">string</span><span class="sxs-lookup"><span data-stu-id="d9d9c-115">string</span></span> | <span data-ttu-id="d9d9c-116">`File`或`Folder`，具体取决于已删除的项目的类型。</span><span class="sxs-lookup"><span data-stu-id="d9d9c-116">`File` or `Folder`, depending on the type of the deleted item.</span></span>
+| <span data-ttu-id="a811e-109">name</span><span class="sxs-lookup"><span data-stu-id="a811e-109">name</span></span>          | <span data-ttu-id="a811e-110">string</span><span class="sxs-lookup"><span data-stu-id="a811e-110">string</span></span> | <span data-ttu-id="a811e-111">已删除的项的名称。</span><span class="sxs-lookup"><span data-stu-id="a811e-111">The name of the item that was deleted.</span></span>
+| <span data-ttu-id="a811e-112">objectType</span><span class="sxs-lookup"><span data-stu-id="a811e-112">objectType</span></span>    | <span data-ttu-id="a811e-113">string</span><span class="sxs-lookup"><span data-stu-id="a811e-113">string</span></span> | <span data-ttu-id="a811e-114">`File`或`Folder`，具体取决于已删除的项目的类型。</span><span class="sxs-lookup"><span data-stu-id="a811e-114">`File` or `Folder`, depending on the type of the deleted item.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="d9d9c-117">注解</span><span class="sxs-lookup"><span data-stu-id="d9d9c-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a811e-115">注解</span><span class="sxs-lookup"><span data-stu-id="a811e-115">Remarks</span></span>
 
-<span data-ttu-id="d9d9c-118">项活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。</span><span class="sxs-lookup"><span data-stu-id="d9d9c-118">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="a811e-116">项活动记录当前仅在 SharePoint 和 OneDrive for Business 上可用。</span><span class="sxs-lookup"><span data-stu-id="a811e-116">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The DeleteAction object provides information about the deletion of an item.",
   "keywords": "activities,activity,action,delete,deletion",
   "section": "documentation",
-  "tocPath": "Resources/DeleteAction"
-} -->
+  "tocPath": "Resources/DeleteAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/deleteaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
