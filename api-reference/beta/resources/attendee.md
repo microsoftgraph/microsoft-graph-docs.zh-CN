@@ -2,34 +2,35 @@
 title: 与会者资源类型
 description: 会议与会者。 这可以是人或在 Exchange 服务器上为租户设置的资源（例如会议室或设备）。
 localization_priority: Normal
-ms.openlocfilehash: d50b6756c7d0077ec95f10988d06fa2ff81631fc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a59868477629c36995a38f736c7087a16791cac3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529311"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576512"
 ---
-# <a name="attendee-resource-type"></a><span data-ttu-id="7961d-104">与会者资源类型</span><span class="sxs-lookup"><span data-stu-id="7961d-104">attendee resource type</span></span>
+# <a name="attendee-resource-type"></a><span data-ttu-id="5c78c-104">与会者资源类型</span><span class="sxs-lookup"><span data-stu-id="5c78c-104">attendee resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7961d-105">会议与会者。</span><span class="sxs-lookup"><span data-stu-id="7961d-105">An event attendee.</span></span> <span data-ttu-id="7961d-106">这可以是人或在 Exchange 服务器上为租户设置的资源（例如会议室或设备）。</span><span class="sxs-lookup"><span data-stu-id="7961d-106">This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.</span></span>
+<span data-ttu-id="5c78c-105">会议与会者。</span><span class="sxs-lookup"><span data-stu-id="5c78c-105">An event attendee.</span></span> <span data-ttu-id="5c78c-106">这可以是人或在 Exchange 服务器上为租户设置的资源（例如会议室或设备）。</span><span class="sxs-lookup"><span data-stu-id="5c78c-106">This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.</span></span>
 
-<span data-ttu-id="7961d-107">由 [attendeeBase](attendeebase.md) 派生。</span><span class="sxs-lookup"><span data-stu-id="7961d-107">Derived from [attendeeBase](attendeebase.md).</span></span>
+<span data-ttu-id="5c78c-107">由 [attendeeBase](attendeebase.md) 派生。</span><span class="sxs-lookup"><span data-stu-id="5c78c-107">Derived from [attendeeBase](attendeebase.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7961d-108">属性</span><span class="sxs-lookup"><span data-stu-id="7961d-108">Properties</span></span>
-| <span data-ttu-id="7961d-109">属性</span><span class="sxs-lookup"><span data-stu-id="7961d-109">Property</span></span>     | <span data-ttu-id="7961d-110">类型</span><span class="sxs-lookup"><span data-stu-id="7961d-110">Type</span></span>   |<span data-ttu-id="7961d-111">说明</span><span class="sxs-lookup"><span data-stu-id="7961d-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5c78c-108">属性</span><span class="sxs-lookup"><span data-stu-id="5c78c-108">Properties</span></span>
+| <span data-ttu-id="5c78c-109">属性</span><span class="sxs-lookup"><span data-stu-id="5c78c-109">Property</span></span>     | <span data-ttu-id="5c78c-110">类型</span><span class="sxs-lookup"><span data-stu-id="5c78c-110">Type</span></span>   |<span data-ttu-id="5c78c-111">说明</span><span class="sxs-lookup"><span data-stu-id="5c78c-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7961d-112">状态</span><span class="sxs-lookup"><span data-stu-id="7961d-112">status</span></span>|[<span data-ttu-id="7961d-113">ResponseStatus</span><span class="sxs-lookup"><span data-stu-id="7961d-113">ResponseStatus</span></span>](responsestatus.md)|<span data-ttu-id="7961d-114">事件与会者的响应（无、接受、拒绝等）和发送响应的日期时间。</span><span class="sxs-lookup"><span data-stu-id="7961d-114">The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.</span></span>|
-|<span data-ttu-id="7961d-115">类型</span><span class="sxs-lookup"><span data-stu-id="7961d-115">type</span></span>|<span data-ttu-id="7961d-116">String</span><span class="sxs-lookup"><span data-stu-id="7961d-116">String</span></span>|<span data-ttu-id="7961d-117">与会者类型：`required`、`optional`、`resource`。</span><span class="sxs-lookup"><span data-stu-id="7961d-117">The attendee type: `required`, `optional`, `resource`.</span></span>|
-|<span data-ttu-id="7961d-118">emailAddress</span><span class="sxs-lookup"><span data-stu-id="7961d-118">emailAddress</span></span>|[<span data-ttu-id="7961d-119">emailAddress</span><span class="sxs-lookup"><span data-stu-id="7961d-119">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="7961d-120">添加与会者姓名和 SMTP 地址。</span><span class="sxs-lookup"><span data-stu-id="7961d-120">Includes the name and SMTP address of the attendee.</span></span>|
+|<span data-ttu-id="5c78c-112">状态</span><span class="sxs-lookup"><span data-stu-id="5c78c-112">status</span></span>|[<span data-ttu-id="5c78c-113">ResponseStatus</span><span class="sxs-lookup"><span data-stu-id="5c78c-113">ResponseStatus</span></span>](responsestatus.md)|<span data-ttu-id="5c78c-114">事件与会者的响应（无、接受、拒绝等）和发送响应的日期时间。</span><span class="sxs-lookup"><span data-stu-id="5c78c-114">The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.</span></span>|
+|<span data-ttu-id="5c78c-115">类型</span><span class="sxs-lookup"><span data-stu-id="5c78c-115">type</span></span>|<span data-ttu-id="5c78c-116">String</span><span class="sxs-lookup"><span data-stu-id="5c78c-116">String</span></span>|<span data-ttu-id="5c78c-117">与会者类型：`required`、`optional`、`resource`。</span><span class="sxs-lookup"><span data-stu-id="5c78c-117">The attendee type: `required`, `optional`, `resource`.</span></span>|
+|<span data-ttu-id="5c78c-118">emailAddress</span><span class="sxs-lookup"><span data-stu-id="5c78c-118">emailAddress</span></span>|[<span data-ttu-id="5c78c-119">emailAddress</span><span class="sxs-lookup"><span data-stu-id="5c78c-119">emailAddress</span></span>](emailaddress.md)|<span data-ttu-id="5c78c-120">添加与会者姓名和 SMTP 地址。</span><span class="sxs-lookup"><span data-stu-id="5c78c-120">Includes the name and SMTP address of the attendee.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="7961d-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7961d-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5c78c-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5c78c-121">JSON representation</span></span>
 
-<span data-ttu-id="7961d-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7961d-122">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="5c78c-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5c78c-122">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],
