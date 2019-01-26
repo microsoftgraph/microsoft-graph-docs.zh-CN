@@ -4,12 +4,12 @@ description: 'TeamsTab 是一个选项卡的具有固定 （附加） 到团队�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2db59065f139e2e704c3394f7afb82cba91c33fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 207b9d1d4d27199f07ae22bd47587411f917afae
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509285"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574948"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab 资源类型
 
@@ -36,7 +36,7 @@ TeamsTab 是[选项卡上](../resources/teamstab.md)的具有固定 （附加）
 |  displayName            |   string                  |  Tab 的名称。     |
 |  name            |   string                  |  （已过时）Tab 的名称。     |
 |  teamsAppId           |   string             |  应用程序定义的选项卡的标识符。选项卡创建后，无法更改此值。     |
-|  sortOrderIndex  |   int                     |  用于排序选项卡的顺序的索引。     |
+|  sortOrderIndex  |   string                  |  用于排序选项卡的顺序的索引。     |
 |  webUrl          |   string                  |  深度链接的选项卡实例的 url。 只读。     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  应用于选项卡的自定义设置的容器。配置仅后设置此属性时，才视为选项卡。     |
 

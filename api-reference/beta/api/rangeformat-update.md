@@ -4,12 +4,12 @@ description: 更新 rangeformat 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2bd576fcb30facd220e9abf7a8a1fee8d22f80a7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b1b3f768af0efe94c5b14177c5e70bbe9a642174
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524490"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574423"
 ---
 # <a name="update-rangeformat"></a>更新 RangeFormat
 
@@ -326,7 +326,7 @@ PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/S
 Content-type: application/json
 
 {
-  "underline": "Single",
+  "underline": "None",
   "color": "#FFFFFF",
   "size": 26
 }
@@ -348,7 +348,7 @@ Content-type: application/json
     "italic": false,
     "name": "Calibri",
     "size": 26,
-    "underline": "Single"
+    "underline": "None"
 }
 ```
 
@@ -368,7 +368,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为简洁起见，可能会截断此处展示的响应对象。实际调用会返回所有属性。
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,

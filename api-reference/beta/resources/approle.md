@@ -2,12 +2,12 @@
 title: appRole 资源类型
 description: 表示应用程序角色调用另一个应用程序的客户端应用程序可能请求的或可能用于分配给用户或组指定的应用程序角色中的应用程序。 **AppRoles**属性和应用程序实体的 servicePrincipal 实体是**appRole**的集合。
 localization_priority: Normal
-ms.openlocfilehash: 8a367406c64cf9d0d3da49716aeaf6ca3c1fa687
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6f587c15073cf2ad5f6b9973de8f7ef66c294294
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525792"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571252"
 ---
 # <a name="approle-resource-type"></a>appRole 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "29525792"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.approle"
+  "@odata.type": "microsoft.graph.appRole"
 }-->
 
 ```json
@@ -45,7 +45,7 @@ ms.locfileid: "29525792"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |allowedMemberTypes|String 集合|指定此应用程序角色定义可以设置为"User"，或其他应用程序 （即正在访问此端口监控程序服务方案中的应用程序） 分配给用户和组设置到"应用程序"，或两者。|
-|说明|字符串|权限帮助管理应用程序分配中显示的文本和同意体验。|
+|说明|String|权限帮助管理应用程序分配中显示的文本和同意体验。|
 |displayName|String|权限管理的同意和应用程序分配体验中显示的的显示名称。|
 |id|Guid|**AppRoles**集合内的独有角色标识符。|
 |isEnabled|Boolean|当创建或更新一个角色定义，这必须设置为**true** （这是默认值）。 若要删除一个角色，这必须先设置为**false**。  此时，在后续呼叫，可以删除此角色。|

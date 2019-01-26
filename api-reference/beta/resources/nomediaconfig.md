@@ -4,12 +4,12 @@ description: 指示没有媒体的媒体配置。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d564493889cc367ecdb697ce4031c40a4cbbbef
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06ca7f2c49c23575487d95bdb555d03d86860849
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526870"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573569"
 ---
 # <a name="nomediaconfig-resource-type"></a>noMediaConfig 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "29526870"
 
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |  |
+| removeFromDefaultAudioGroup | 布尔值 |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -32,6 +32,7 @@ ms.locfileid: "29526870"
   "optionalProperties": [
 
   ],
+   "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.noMediaConfig"
 }-->
 ```json

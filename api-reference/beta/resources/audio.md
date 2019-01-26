@@ -4,12 +4,12 @@ ms.date: 09/10/2017
 title: Audio
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cd1f1af0e1ddcd1d56853c708da7ba03be740812
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527031"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573632"
 ---
 # <a name="audio-facet"></a>Audio Facet
 
@@ -17,7 +17,7 @@ ms.locfileid: "29527031"
 
 **Audio** 资源将与音频相关的属性分组到一个单一结构。
 
-如果 DriveItem 具有一个非 null 音频 facet，则该项表示一个音频文件。通过从文件中提取元数据来填充音频资源的属性。 
+如果 [**DriveItem**](driveitem.md) 具有一个非 null **音频** facet，则该项表示一个音频文件。通过从文件中提取元数据来填充**音频**资源的属性。 
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -50,11 +50,11 @@ ms.locfileid: "29527031"
 | **album**             | string  | 此音频文件的专辑标题。                          |
 | **albumArtist**       | string  | 此音频文件的专辑上的艺术家。                    |
 | **artist**            | string  | 此音频文件的表演艺术家。                            |
-| **bitrate**           | Int32   | 比特率（以 kbps 为单位）。                                           |
+| **bitrate**           | Int64   | 比特率（以 kbps 为单位）。                                           |
 | **composers**         | string  | 此音频文件的作曲者姓名。                          |
 | **copyright**         | string  | 此音频文件的版权信息。                            |
-| **disc**              | Int32   | 此音频文件源自的光盘编号。                    |
-| **discCount**         | Int32   | 此专辑中的光盘总数。                             |
+| **disc**              | Int16   | 此音频文件源自的光盘编号。                    |
+| **discCount**         | Int16   | 此专辑中的光盘总数。                             |
 | **duration**          | Int64   | 此音频文件的持续时间（以毫秒为单位）                |
 | **genre**             | string  | 此音频文件的流派。                                        |
 | **hasDrm**            | boolean | 指明此文件是否受数字版权管理的保护。   |

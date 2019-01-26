@@ -3,12 +3,13 @@ title: yammerActivitySummary 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 974e234db31a7942b2b1dcbfff469288c32b6749
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: c220ce211c9c6b61d41aa5773e3bcc01697f4e31
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974719"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574164"
 ---
 # <a name="yammeractivitysummary-resource-type"></a>yammerActivitySummary 资源类型
 
@@ -16,11 +17,11 @@ ms.locfileid: "27974719"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | 日期   |
+| reportRefreshDate | Date   |
 | 满意             | Int64  |
 | 发布            | Int64  |
 | 读取              | Int64  |
-| reportDate        | 日期   |
+| reportDate        | Date   |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -4,12 +4,12 @@ description: 对与 Outlook 相关的资源的标识符进行格式转换。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3b09ae9bf6a1cbf1967a900770b07d8c9750ba21
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528226"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571287"
 ---
 # <a name="user-translateexchangeids"></a>用户： translateExchangeIds
 
@@ -25,7 +25,7 @@ ms.locfileid: "29528226"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | User.ReadBasic、 User.Read、 User.ReadWrite、 User.ReadBasic.All、 User.Read.All、 User.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | User.ReadBasic，User.Read，User.ReadWrite |
-| 应用程序 | User.Read.All、User.ReadWrite.All |
+| Application | User.Read.All、User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +54,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 值 | 说明 |
 |:-------|:------------|
-| EntryID | MAPI 客户端使用二进制条目 ID 格式。 |
+| entryId | MAPI 客户端使用二进制条目 ID 格式。 |
 | ewsId | 使用 Exchange Web 服务客户端 ID 格式。 |
 | immutableEntryId | 二进制 MAPI 兼容变 ID 的格式。 |
 | restId | 由 Microsoft Graph 中使用的默认 ID 格式。 |
@@ -62,8 +62,8 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 二进制格式 (`entryId`和`immutableEntryId`) 的 URL 安全 base64 编码。 URL safeness 实现通过修改 base64 编码的二进制数据采用以下方式：
 
-- `+`
-- `/`
+- 替换`+`与`-`
+- 替换`/`与`_`
 - 删除任何尾随空白字符 (`=`)
 - 指示在原始了多少填充字符的字符串的末尾添加一个整数 (`0`， `1`，或`2`)
 
@@ -114,11 +114,11 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1},
+      "sourceId": "{rest-formatted-id-1}",
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2},
+      "sourceId": "{rest-formatted-id-2}",
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]

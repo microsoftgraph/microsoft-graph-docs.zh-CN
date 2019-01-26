@@ -2,14 +2,14 @@
 title: 电子邮件应用使用情况报表
 description: 您可以看到多少电子邮件应用程序用于连接到 Exchange Online。 此外，还可以了解使用的 Outlook 应用版本，这有助于跟进应升级到受支持 Outlook 版本的用户。
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: 92390033e544bc0163923e2bdad6e99212b66f92
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7f332359af9a6147894bb69e6d12532a83394bb5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527778"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573744"
 ---
 # <a name="email-app-usage-reports"></a>电子邮件应用使用情况报表
 

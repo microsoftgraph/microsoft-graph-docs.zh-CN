@@ -3,12 +3,13 @@ title: Skype for Business 设备使用情况报表
 description: Skype for Business 设备使用情况报表可用于获取整个组织中使用的客户端和设备类型的详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 7551edd6b967e1f6fcfcabd2c0c59dd315bf8bc8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 8eb1f5896a261610eb5400611a78f5ac75952256
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981069"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574472"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Skype for Business 设备使用情况报表
 

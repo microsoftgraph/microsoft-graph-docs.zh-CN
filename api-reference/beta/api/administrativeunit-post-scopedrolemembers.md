@@ -4,12 +4,12 @@ description: 添加新 scopedRoleMembership。 注意： 只有*用户帐户管�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2f94c66bd804d2771987ee58539abdbe073abc03
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e93dc3bc245b323e3c40fdd5678f4bfba495eafd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514101"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571826"
 ---
 # <a name="add-a-scopedrolemember"></a>添加 scopedRoleMember
 
@@ -69,7 +69,7 @@ Content-length: 272
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedrolemembership"
+  "@odata.type": "microsoft.graph.scopedRoleMembership"
 } -->
 ```http
 HTTP/1.1 201 Created

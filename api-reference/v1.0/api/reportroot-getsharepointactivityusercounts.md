@@ -3,12 +3,13 @@ title: 'reportRoot: getSharePointActivityUserCounts'
 description: 获取活跃用户数趋势。 如果用户执行了文件活动（保存、同步、修改或共享）或在指定时间内访问了页面，则视为活跃用户。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 94ab980789d6a8466ef83269249e49f2388e124a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 09b0b823858d34212aa0580c3c85f645734bf901
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970792"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574367"
 ---
 # <a name="reportroot-getsharepointactivityusercounts"></a>reportRoot: getSharePointActivityUserCounts
 

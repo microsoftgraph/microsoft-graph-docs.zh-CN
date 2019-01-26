@@ -2,12 +2,12 @@
 title: synchronizationProgress 资源类型
 description: 代表完成 synchronizationJob 的进度。
 localization_priority: Normal
-ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 39351f07720d44679675396f9e995f5e78e25fcc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510972"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572743"
 ---
 # <a name="synchronizationprogress-resource-type"></a>synchronizationProgress 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "29510972"
 |completedUnits|Int32|进度比例; 分子已处理的更改的单位数。|
 |progressObservationDateTime|DateTimeOffset|进度观察值作为偏移量，以分钟为单位从 UTC 时间。|
 |totalUnits|Int32|进度比例; 分母处理以完成同步更改的单位数。|
-|Units|String|单位的可选说明。|
+|单位|String|单位的可选说明。|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "29510972"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.synchronizationStatus"
+  "@odata.type": "microsoft.graph.synchronizationProgress"
 }-->
 
 ```json

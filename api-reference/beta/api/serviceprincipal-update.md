@@ -2,12 +2,12 @@
 title: 更新 serviceprincipal
 description: 更新 serviceprincipal 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: a562bca03881923cfc21d32eadee2a7f7053fa9b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 946db869863d74a94e2e9adc04a66c8d9a50e4f5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511658"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573856"
 ---
 # <a name="update-serviceprincipal"></a>更新 serviceprincipal
 
@@ -38,18 +38,18 @@ PATCH /servicePrincipals/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean|                **true**如果已启用的服务主体帐户;否则为**false**。            |
-|AppDisplayName|String|通过关联的应用程序公开的显示名称。|
+|accountEnabled|布尔|                **true**如果已启用的服务主体帐户;否则为**false**。            |
+|appDisplayName|String|通过关联的应用程序公开的显示名称。|
 |appId|String|关联的应用程序 （其**appId**属性） 的唯一标识符。|
-|appRoleAssignmentRequired|Boolean|指定 Azure AD 将问题的用户或访问令牌对应用程序之前是否需要向用户或组**appRoleAssignment** 。                            **说明**： 需要 1.5 版或更高版本，不可为空。            |
-|appRoles|appRole|由关联的应用程序公开应用程序角色。 有关详细信息看到**appRoles**属性定义应用程序实体**注释**： 需要 1.5 版或更高版本，不可为空。            |
-|displayName|字符串|服务主体的显示名。|
+|appRoleAssignmentRequired|布尔值|指定 Azure AD 将问题的用户或访问令牌对应用程序之前是否需要向用户或组**appRoleAssignment** 。                            **说明**： 需要 1.5 版或更高版本，不可为空。            |
+|appRoles| [microsoft.graph.appRole](../resources/approle.md)集合|由关联的应用程序公开应用程序角色。 有关详细信息看到**appRoles**属性定义应用程序实体**注释**： 需要 1.5 版或更高版本，不可为空。            |
+|displayName|String|服务主体的显示名。|
 |errorUrl|String|            |
-|HomePage|String|关联的应用程序的主页的 URL。|
-|keyCredentials|keyCredential|关键凭据与主体服务相关联的集合。                            **注意：** 不可为 null。            |
+|主页|String|关联的应用程序的主页的 URL。|
+|keyCredentials|microsoft.graph.keyCredential|关键凭据与主体服务相关联的集合。                            **注意：** 不可为 null。            |
 |logoutUrl|String| 指定将由 Microsoft 的授权服务的用户使用[前信道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[后通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议的注销 URL。 |
-|oauth2Permissions|oAuth2Permission|由关联的应用程序公开 OAuth 2.0 权限。 有关详细信息请参阅应用程序在实体上的**oauth2Permissions**属性定义。                            **说明**： 需要 1.5 版或更高版本，不可为空。            |
-|passwordCredentials|passwordCredential|密码凭据的服务主体相关联的集合。                            **注意：** 不可为 null。            |
+|oauth2Permissions|microsoft.graph.oAuth2Permission|由关联的应用程序公开 OAuth 2.0 权限。 有关详细信息请参阅应用程序在实体上的**oauth2Permissions**属性定义。                            **说明**： 需要 1.5 版或更高版本，不可为空。            |
+|passwordCredentials|microsoft.graph.passwordCredential|密码凭据的服务主体相关联的集合。                            **注意：** 不可为 null。            |
 |preferredTokenSigningKeyThumbprint|String|保留以仅供内部使用。 不要编写或否则依赖于此属性。 可能会在将来版本中删除。                            **说明**： 要求 1.5 或更高版本。            |
 |publisherName|String|在其中指定关联的应用程序租户的显示名称。|
 |replyUrls|String|用户令牌发送到的登录关联的应用程序或重定向 Uri 的 OAuth 2.0 授权代码和访问令牌发送到关联的应用程序的 Url。                            **注意：** 不可为 null。            |
@@ -97,7 +97,7 @@ Content-length: 391
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.serviceprincipal"
+  "@odata.type": "microsoft.graph.servicePrincipal"
 } -->
 ```http
 HTTP/1.1 200 OK

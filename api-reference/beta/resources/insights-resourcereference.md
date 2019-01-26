@@ -4,12 +4,12 @@ description: 包含属性的见解复杂类型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 4fa4563904472fad9fc28fa4acb10b77887b5872
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8cc7e686aebd531a25b6c1637fcf99338df09396
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520002"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572295"
 ---
 # <a name="resourcereference-resource-type"></a>resourceReference 资源类型
 
@@ -20,7 +20,15 @@ ms.locfileid: "29520002"
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
-
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "attachments",
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty"
+  ],
+  "@odata.type": "microsoft.graph.resourceReference"
+}-->
 ```json
 {
   "webUrl": "string",
@@ -34,8 +42,8 @@ ms.locfileid: "29520002"
 | 属性      | 类型      | 说明  |
 | ------------- |-----------| -------------|
 | WebUrl        | String    | 通向引用的项的 URL。 |
-| id            | 字串符号    | 项目的唯一标识符。           |
-| type          | 字符串    | 一个 string 值，可以用于分类项目，如"microsoft.graph.driveItem" |
+| id            | String    | 项目的唯一标识符。           |
+| type          | String    | 一个 string 值，可以用于分类项目，如"microsoft.graph.driveItem" |
 <!--
 {
   "type": "#page.annotation",

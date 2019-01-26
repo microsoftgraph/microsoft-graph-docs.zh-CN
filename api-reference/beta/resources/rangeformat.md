@@ -1,15 +1,15 @@
 ---
-title: RangeFormat 资源类型
-description: 一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。
+title: rangeFormat 资源类型
+description: 格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 58ed56b11b571237211307c8fb0dd1abaf27761f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1394153a09a30c273280dab5469a40e2e0c2c4ad
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511357"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572421"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat 资源类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "29511357"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|获取 RangeFormat | [RangeFormat](rangeformat.md) |读取 rangeFormat 对象的属性和关系。|
-|创建 RangeBorder |[RangeBorder](rangeborder.md)| 通过发布到边框集合创建新的 RangeBorder。|
-|列出边框 |RangeBorder 集合| 获取 RangeBorder 对象集合。|
-|[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |更新 RangeFormat 对象。 |
+|[获取 RangeFormat](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |读取 rangeFormat 对象的属性和关系。|
+|[创建 RangeBorder](../api/rangeformat-post-borders.md) |[rangeBorder](rangeborder.md)| 通过发布到边框集合创建新的 RangeBorder。|
+|[列出边框](../api/rangeformat-list-borders.md) |[rangeBorder](rangeborder.md)集合| 获取 RangeBorder 对象集合。|
+|[Update](../api/rangeformat-update.md) | [rangeFormat](rangeformat.md) |更新 RangeFormat 对象。 |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|无|根据列中的当前数据更改当前区域的列宽，以达到最佳宽度。|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|无|根据列中的当前数据更改当前区域的行高，以达到最佳高度。|
 
@@ -41,10 +41,10 @@ ms.locfileid: "29511357"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|边框|[RangeBorder](rangeborder.md) 集合|应用于所选的整个区域的 border 对象的集合。只读。|
-|fill|[RangeFill](rangefill.md)|返回在整个区域内定义的 fill 对象。只读。|
-|font|[RangeFont](rangefont.md)|返回在所选的整个区域内定义的 font 对象。只读。|
-|protection|[FormatProtection](formatprotection.md)|返回某一区域的格式 protection 对象。只读。|
+|边框|[rangeBorder](rangeborder.md)集合|应用于所选的整个区域的 border 对象的集合。只读。|
+|fill|[rangeFill](rangefill.md)|返回在整个区域内定义的 fill 对象。只读。|
+|font|[rangeFont](rangefont.md)|返回在所选的整个区域内定义的 font 对象。只读。|
+|protection|[formatProtection](formatprotection.md)|返回某一区域的格式保护对象。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

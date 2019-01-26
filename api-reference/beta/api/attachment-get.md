@@ -2,12 +2,12 @@
 title: Get attachment
 description: 读取的属性和附件，附加到事件、 邮件、 Outlook 任务或公告的关系。
 localization_priority: Normal
-ms.openlocfilehash: b346461dad8b0a15d12d0882e0fe8aa4cc2d4774
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 650892a13fd4977697fa17788c509542b4f1b415
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509495"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574347"
 ---
 # <a name="get-attachment"></a>Get attachment
 
@@ -25,10 +25,10 @@ ms.locfileid: "29509495"
 
 ## <a name="permissions"></a>权限
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-* 如果访问邮件中的附件：Mail.Read。
-* 如果访问事件中的附件：Calendars.Read。
+* 如果访问邮件中的附件： Mail.Read
+* 如果访问事件中的附件： Calendars.Read
 * 如果访问 Outlook 任务中的附件： Tasks.Read
 * 如果访问组文章中的附件： Group.Read.All
 
@@ -67,7 +67,8 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。
+[邮件](../resources/message.md)的用户的邮箱中[mailFolder](../resources/mailfolder.md)子文件夹中包含的附件。  下面的示例演示一个级别的嵌套，但一条消息可以位于子级的子级，依此类推。
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
@@ -137,7 +138,7 @@ Content-type: application/json
 Content-length: 199
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
+  "@odata.type": "microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value",

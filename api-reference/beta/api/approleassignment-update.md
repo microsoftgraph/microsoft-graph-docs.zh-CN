@@ -2,12 +2,12 @@
 title: 更新 approleassignment
 description: 更新 approleassignment 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 54c256e3b94a5bb2d62c2ffe31ecf777d472b93c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 89147651b1a3ea182247cf3620efba9464c4b055
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527918"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572911"
 ---
 # <a name="update-approleassignment"></a>更新 approleassignment
 
@@ -76,7 +76,7 @@ Content-length: 233
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.approleassignment"
+  "@odata.type": "microsoft.graph.appRoleAssignment"
 } -->
 ```http
 HTTP/1.1 200 OK

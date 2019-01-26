@@ -4,12 +4,12 @@ description: 检索 chart 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9f3b293f0f52086e7d34bd9dff3c909fe4c5b85b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3485d1e1c3e31a83489b64c6a94f0a35479611dd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513478"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571154"
 ---
 # <a name="list-charts"></a>列出图表
 
@@ -44,7 +44,7 @@ GET /workbook/worksheets/{id|name}/charts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Chart](../resources/chart.md) 对象集合。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的[workbookChart](../resources/chart.md)对象的集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart",
+  "@odata.type": "microsoft.graph.workbookChart",
   "isCollection": true
 } -->
 ```http

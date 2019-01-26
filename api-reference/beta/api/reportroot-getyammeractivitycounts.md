@@ -3,12 +3,13 @@ title: 'reportRoot: getYammerActivityCounts'
 description: 获取组织中的 Yammer 活动数趋势，具体是以已发布、已阅读和已赞的消息数为依据。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 0204c0ea634f8793d2f0ab58fdffc8c389443eed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 92dea308af9cd2ac00abbff0bf86073b0a0fac3b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514717"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573611"
 ---
 # <a name="reportroot-getyammeractivitycounts"></a>reportRoot: getYammerActivityCounts
 
@@ -94,7 +95,7 @@ GET https://graph.microsoft.com/beta/reports/getYammerActivityCounts(period='D7'
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

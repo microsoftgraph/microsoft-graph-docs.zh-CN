@@ -4,12 +4,12 @@ description: 表示 Excel 表格。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2e3e9c93f7459d666fbe7f28a67241c2831b7079
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a136d7bac22a127ada69c27c656cbded7f5302b5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510664"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572680"
 ---
 # <a name="table-resource-type"></a>表资源类型
 
@@ -21,12 +21,12 @@ ms.locfileid: "29510664"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Get Table](../api/table-get.md) | [Table](table.md) |读取 table 对象的属性和关系。|
+|[Get Table](../api/table-get.md) | [表](table.md) |读取 table 对象的属性和关系。|
 |[Create TableColumn](../api/table-post-columns.md) |[TableColumn](tablecolumn.md)| 通过发布到列集合创建新的 TableColumn。|
 |[List columns](../api/table-list-columns.md) |[TableColumn](tablecolumn.md) 集合| 获取 TableColumn 对象的集合。|
 |[Create TableRow](../api/table-post-rows.md) |[TableRow](tablerow.md)| 通过发布到行集合创建新的 TableRow。|
 |[List rows](../api/table-list-rows.md) |[TableRow](tablerow.md) 集合| 获取 TableRow 对象的集合。|
-|[Update](../api/table-update.md) | [Table](table.md)   |更新 Table 对象。 |
+|[Update](../api/table-update.md) | [表](table.md)   |更新 Table 对象。 |
 |[Databodyrange](../api/table-databodyrange.md)|[区域](range.md)|获取与表的数据体相关的 range 对象。|
 |[Headerrowrange](../api/table-headerrowrange.md)|[区域](range.md)|获取与表的标头行相关的 range 对象。|
 |[区域](../api/table-range.md)|[区域](range.md)|获取与整个表相关的 range 对象。|
@@ -56,10 +56,10 @@ ms.locfileid: "29510664"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|columns|[TableColumn](tablecolumn.md) 集合|表示表中所有列的集合。只读。|
-|rows|[TableRow](tablerow.md) 集合|表示表中所有行的集合。只读。|
-|sort|[TableSort](tablesort.md)|表示表的排序。只读。|
-|worksheet|[Worksheet](worksheet.md)|包含当前表的工作表。只读。|
+|columns|[tableColumn](tablecolumn.md)集合|表示表中所有列的集合。只读。|
+|rows|[tableRow](tablerow.md)集合|表示表中所有行的集合。只读。|
+|sort|[tableSort](tablesort.md)|表示表的排序。只读。|
+|worksheet|[workbookWorksheet](worksheet.md)|包含当前表的工作表。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -70,7 +70,7 @@ ms.locfileid: "29510664"
   "optionalProperties": [
      "legacyId"
   ],
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 }-->
 
 ```json

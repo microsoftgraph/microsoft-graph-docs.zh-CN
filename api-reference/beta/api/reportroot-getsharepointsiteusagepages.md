@@ -3,12 +3,13 @@ title: 'reportRoot: getSharePointSiteUsagePages'
 description: 获取跨所有网站浏览的页面数。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: ca7e036826a02323d2a7aa4cc9e58471c16ce6f0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 35ba5aae7ed1e8d800146817c026dc7e797e39fa
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522558"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570965"
 ---
 # <a name="reportroot-getsharepointsiteusagepages"></a>reportRoot: getSharePointSiteUsagePages
 
@@ -93,7 +94,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsagePages(period=
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

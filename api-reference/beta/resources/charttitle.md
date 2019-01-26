@@ -4,12 +4,12 @@ description: 表示图表的 chart title 对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a71aed2da93c2121492f1eb29826470b797768ed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f0b669593bd9ca0768ad977ace8d54f5531301a4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514710"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573093"
 ---
 # <a name="charttitle-resource-type"></a>ChartTitle 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "29514710"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|获取 ChartTitle | [ChartTitle](charttitle.md) |读取 chartTitle 对象的属性和关系。|
-|[Update](../api/charttitle-update.md) | [ChartTitle](charttitle.md)    |更新 ChartTitle 对象。 |
+|[获取 ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |读取 chartTitle 对象的属性和关系。|
+|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)    |更新 ChartTitle 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -35,7 +35,7 @@ ms.locfileid: "29514710"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[ChartTitleFormat](charttitleformat.md)|表示图表标题的格式，包括填充和字体格式。只读。|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|表示图表标题的格式，包括填充和字体格式。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,10 +43,11 @@ ms.locfileid: "29514710"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

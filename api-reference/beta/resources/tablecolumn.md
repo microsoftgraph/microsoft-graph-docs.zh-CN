@@ -4,12 +4,12 @@ description: 代表表中的一列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 9f70b5363ccc7552975db8f2396af705d8bf1557
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 10c5dbffcb5460ea029368a4c9b6dcfb6c21f256
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514381"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574661"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn 资源类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "29514381"
 |:---------------|:--------|:----------|
 |[获取 TableColumn](../api/tablecolumn-get.md) | [TableColumn](tablecolumn.md) |读取 tablecolumn 对象的属性和关系。|
 |[更新](../api/tablecolumn-update.md) | [TableColumn](tablecolumn.md) |更新 TableColumn 对象 |
-|[Databodyrange](../api/tablecolumn-databodyrange.md)|[Range](range.md)|获取与列的数据体相关的 range 对象。|
+|[Databodyrange](../api/tablecolumn-databodyrange.md)|[区域](range.md)|获取与列的数据体相关的 range 对象。|
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[区域](range.md)|获取与列的标头行相关的 range 对象。|
-|[Range](../api/tablecolumn-range.md)|[Range](range.md)|获取与整个列相关的 range 对象。|
+|[区域](../api/tablecolumn-range.md)|[Range](range.md)|获取与整个列相关的 range 对象。|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[区域](range.md)|获取与列的总计行相关的 range 对象。|
 |[删除](../api/tablecolumn-delete.md)|无|从表中删除列。|
 |[列出](../api/tablecolumn-list.md) | [TableColumn](tablecolumn.md) 集合 |获取 tableColumn 对象的集合。 |
@@ -39,7 +39,7 @@ ms.locfileid: "29514381"
 |ID|int|返回标识表内的列的唯一键。只读。|
 |Index|int|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
 |name|string|返回表格列的名称。只读。|
-|values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
+|values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

@@ -3,12 +3,13 @@ title: OneDrive 使用情况报表
 description: OneDrive 使用情况报表可用于大致了解 OneDrive 带来的价值，具体是以跨组织中所有 OneDrive 帐户的文件总数和存储为依据。 然后，可以向下钻取活跃 OneDrive 帐户的趋势、用户已交互的文件数以及使用的存储空间。 这些报表还提供每个 OneDrive 帐户的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: fdcf1eb277733da2ea46a30fb9985ea889ae87ab
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: fb27d69b3d63fb3f02b4d21e091d44340ec85541
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962665"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572400"
 ---
 # <a name="onedrive-usage-reports"></a>OneDrive 使用情况报表
 

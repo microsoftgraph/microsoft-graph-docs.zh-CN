@@ -3,12 +3,13 @@ title: Office 365 组活动报表
 description: 组活动报表可用于深入了解组织中的 Office 365 组活动，并了解正在创建和使用多少个 Office 365 组。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: a84584363e8cc3f3123225881179d400e50140b8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 5d8c414034a110db64b770a72fe2e3540806acdd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982281"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573464"
 ---
 # <a name="office-365-groups-activity-reports"></a>Office 365 组活动报表
 

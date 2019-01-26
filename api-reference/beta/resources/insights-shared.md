@@ -1,17 +1,17 @@
 ---
-title: 共享资源类型
+title: 共享的资源类型
 description: 表示文件共享或特定用户洞察。 支持以下共享的文件：
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 49e18318c1e93d2393b957b404ff4617b334f237
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524686"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573177"
 ---
-# <a name="shared-resource-type"></a>Shared 资源类型
+# <a name="shared-resource-type"></a>共享的资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,11 +41,17 @@ ms.locfileid: "29524686"
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 资源      | Entity        | 用于导航到共享的项目。 文件附件的类型为*fileAttachment*。 对于链接附件，类型为*driveItem*。 |
+| 资源      | 实体集合 | 用于导航到共享的项目。 文件附件的类型为*fileAttachment*。 对于链接附件，类型为*driveItem*。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.shared"
+}-->
 ```json
 {
   "id": "string",

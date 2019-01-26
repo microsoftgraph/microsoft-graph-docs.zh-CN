@@ -2,14 +2,14 @@
 title: 电子邮件活动报表
 description: 您可以从报告页的贵组织中获取电子邮件通信的高级视图。 您还可以钻取活动电子邮件小部件，以了解趋势和每个用户的组织中的电子邮件活动的详细信息。
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: e11de43f197e520d653961af9b9090d06b085369
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 748199a2e846cc71a3f04c3ea1bda97dcf2c7301
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528303"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573898"
 ---
 # <a name="email-activity-reports"></a>电子邮件活动报表
 

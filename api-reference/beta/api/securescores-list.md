@@ -2,12 +2,12 @@
 title: 列出 secureScores
 description: 检索的属性和 secureScores 对象的关系。
 localization_priority: Normal
-ms.openlocfilehash: e574c3e52eb60f29dac89e2795b04666c7a1f02b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 034a333dec6b96919ffd01a49ed05cb16ca19a48
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521479"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573401"
 ---
 # <a name="list-securescores"></a>列出 secureScores
 
@@ -66,55 +66,46 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 下面展示了示例响应。
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.secureScores"
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.secureScore"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
-
 {
     "value": [
         {
-            "activeUserCount": "activeUserCount.value",
-            "createdDateTime": "createdDateTime.value",
-            "currentScore": "currentScore.value",
-            "enabledServices": "enabledServices.value",
-            "licensedUserCount": "licensedUserCount.value",
-            "maxScore": "maxScore.value",
-            "id": "id.value",
+            "activeUserCount": 12,
+            "createdDate": "createdDateTime.value",
+            "currentScore": 12.4566633444,
+            "enabledServices": ["Skype"],
+            "licensedUserCount": 12,
+            "maxScore": 45.2324443,
+            "id": "id.value",            
             "azureTenantId": "azureTenantId.value",
             "averageComparativeScores": [
                 {
-                    "basis": "AllTenants",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value"
+                    "@odata.type":"microsoft.graph.averageComparativeScores",
+                    "basis": "basis.value",
+                    "averageScore": 34.2324443
                 },
                 {
-                    "basis": "TotalSeats",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value",
-                    "seatSizeRangeUpperValue": "seatSizeRangeUpperValue.value",
-                    "categoryValue": "categoryValue.value",
-                    "seatSizeRangeLowerValue": "seatSizeRangeLowerValue.value"
+                    "@odata.type":"microsoft.graph.averageComparativeScores",
+                    "basis": "basis.value",
+                    "averageScore": 34.2324443
                 },
                 {
-                    "basis": "IndustryTypes",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value",
-                    "categoryValue": "categoryValue.value"
+                    "@odata.type":"microsoft.graph.averageComparativeScores",
+                    "basis": "basis.value",
+                    "averageScore": 34.2324443
                 }
             ],
             "controlScores": [
                 {
+                    "@odata.type":"microsoft.graph.controlScores",
                     "controlCategory": "controlCategory.value",
                     "controlName": "controlName.value",
                     "description": "description.value",

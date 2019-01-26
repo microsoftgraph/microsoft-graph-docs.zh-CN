@@ -2,12 +2,12 @@
 title: 创建 privilegedRoleAssignmentRequest
 description: 创建一个 privilegedroleassignmentrequest 对象。
 localization_priority: Normal
-ms.openlocfilehash: e3158e918d061f09dec9e74c9e3bfd66d95fa48d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 69e095e13d89ed780feeb7ea32b7aa9ac10de055
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521066"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575291"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
@@ -43,8 +43,8 @@ POST /privilegedRoleAssignmentRequests
 |roleId|String|角色的 ID。 此为必需属性。|
 |type|String|表示的角色分配操作的类型。 值可以是`AdminAdd`： 管理员将用户添加到角色;`UserAdd`： 用户将添加角色分配。 必需。|
 |assignmentState|String|工作分配状态。 值可以是`Eligible`合格分配`Active`-如果直接分配`Active`由管理员、 或激活合格工作分配的用户。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
-|Reason|String|原因需要提供角色分配请求的审核和查看用途。|
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的时间表。|
+|原因|String|原因需要提供角色分配请求的审核和查看用途。|
+|计划|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|角色分配请求的时间表。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回`201 Created`响应代码和响应正文中的[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)对象。
@@ -107,7 +107,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 304
 
-
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests/$entity",
     "schedule": {
@@ -126,7 +125,7 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self"，
+    "userId": "Self",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```

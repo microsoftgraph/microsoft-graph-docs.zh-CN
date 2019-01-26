@@ -4,12 +4,12 @@ description: '**InvitationParticipant**用于表示一组标识相关联的对�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 666de597d40570a567ea88a375ab15d1e5f09038
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520674"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573597"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 
@@ -21,10 +21,10 @@ ms.locfileid: "29520674"
 
 | 属性                           | 类型                          | 说明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | String                        | 可取值为：`default`、`voicemail`。 |
+| endpointType                       | operationStatus               | 可取值为：`default`、`voicemail`。 |
 | identity                           | [identitySet](identityset.md) | 与此邀请关联[identitySet](identityset.md) 。                   |
 | languageId                         | String                        | 语言区域性字符串。                                                                                     |
-| 地区                             | String                        | 参与者的区域。                                                           |
+| 区域                             | String                        | 参与者的区域。                                                           |
 | replacesCallId                     | String                        | 可选。 呼叫的目标 idenity 目前的一部分。 一旦添加参与者，此呼叫将被丢弃。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -40,7 +40,7 @@ ms.locfileid: "29520674"
 }-->
 ```json
 {
-  "endpointType": "default | voicemail",
+  "endpointType": "operationStatus",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
   "languageId": "String",
   "region": "String",

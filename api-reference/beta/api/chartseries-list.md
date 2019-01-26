@@ -4,12 +4,12 @@ description: 检索 chartseries 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 158446a1164dfbde5ae249fdd8e506f8aa99cf51
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2c3d8cfbe604145965ad31ea951d7bb399468210
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525470"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571000"
 ---
 # <a name="list-chartseriescollection"></a>列出 ChartSeriesCollection
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries",
+  "@odata.type": "microsoft.graph.workbookChartSeries",
   "isCollection": true
 } -->
 ```http

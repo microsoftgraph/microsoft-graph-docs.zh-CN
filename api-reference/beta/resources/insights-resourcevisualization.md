@@ -4,33 +4,31 @@ description: 包含属性的见解复杂类型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9dc2d50a5bc694204317f8c3332263ce5259e2fc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526758"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575102"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含属性的[见解](insights.md)复杂类型。
+包含属性的[officeGraphInsights](insights.md)复杂类型。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],  
+  "@odata.type": "microsoft.graph.resourceVisualization"
+}-->
 ```json
 {
-  "title": "string",
-  "type"  : "string",
-  "mediaType": "string",
-  "previewImageUrl": "string",
-  "previewText": "string",
-  "containerWebUrl": "string",
-  "containerDisplayName": "string",
-  "containerType": "string"
 }
 ```
 
@@ -40,18 +38,18 @@ ms.locfileid: "29526758"
 | -------------         |---------------| -------------|
 | title                 | String        | 项目的标题文本。               |
 | type              | String        | 项目的媒体类型。 可用于根据特定类型的特定文件筛选。 请参阅以下支持的类型。 |
-| MediaType             | String        | 项目的媒体类型。 可用于筛选文件根据支持 IANA 媒体 Mime 类型为特定类型。 请注意，不是所有媒体 Mime 类型都受都支持。 |
-| PreviewImageUrl       | String        | 导致项目的预览图像 URL。 |
+| 媒体类型             | String        | 项目的媒体类型。 可用于筛选文件根据支持 IANA 媒体 Mime 类型为特定类型。 请注意，不是所有媒体 Mime 类型都受都支持。 |
+| previewImageUrl       | String        | 导致项目的预览图像 URL。 |
 | previewText           | String        | 预览文本项。 |
 | containerWebUrl       | String        | 前导到在其中存储项目的文件夹路径。 |
 | containerDisplayName  | String        | 描述项目的存储位置的字符串。 例如，SharePoint 网站或标识的 OneDrive 存储项目所有者的用户名称的名称。  |
-| ContainerType         | String | 可用于筛选按在其中存储文件的容器的类型。 如 Site 或 OneDriveBusiness。       |
+| containerType         | String | 可用于筛选按在其中存储文件的容器的类型。 如 Site 或 OneDriveBusiness。       |
 
 ## <a name="type-property-values"></a>类型属性值
 -   PowerPoint
 -   Word
 -   Excel
--   PDF
+-   Pdf
 -   OneNote
 -   OneNotePage
 -   InfoPath
@@ -60,7 +58,7 @@ ms.locfileid: "29526758"
 -   项目
 -   Access
 -   邮件
--   *.csv
+-   Csv
 -   存档
 -   Xps
 -   音频

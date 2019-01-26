@@ -3,12 +3,13 @@ title: 'reportRoot: getOneDriveActivityFileCounts'
 description: 获取对任意 OneDrive 帐户执行文件交互的唯一许可用户数。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: e3a5d9cd840d47fd950330758e64b33625052904
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: fd595786e98b6b70380af668902c9013bf58eb76
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518350"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572316"
 ---
 # <a name="reportroot-getonedriveactivityfilecounts"></a>reportRoot: getOneDriveActivityFileCounts
 
@@ -95,7 +96,7 @@ GET https://graph.microsoft.com/beta/reports/getOneDriveActivityFileCounts(perio
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

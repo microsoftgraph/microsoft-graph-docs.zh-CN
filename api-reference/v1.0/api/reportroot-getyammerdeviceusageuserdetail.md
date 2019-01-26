@@ -3,12 +3,13 @@ title: 'reportRoot: getYammerDeviceUsageUserDetail function'
 description: 获取用户的 Yammer 设备使用情况的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 6a5fe63ed48914e51961259d05aea5eda7b21bd5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: d273c2102226f75ff0638402b534511003b0102f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975874"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572834"
 ---
 # <a name="reportroot-getyammerdeviceusageuserdetail-function"></a>reportRoot: getYammerDeviceUsageUserDetail function
 
@@ -93,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerDeviceUsageUserDetail(peri
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 

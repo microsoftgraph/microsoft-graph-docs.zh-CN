@@ -5,12 +5,12 @@ ms.date: 09/01/2018
 title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c019da7cb10a8c26faa8d338c54436043f83db8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e7bbd0f6aa8d4ea04304d6aecae97b98ab0a46b7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510237"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574276"
 ---
 # <a name="webpart-resource"></a>web 部件资源
 
@@ -22,13 +22,14 @@ ms.locfileid: "29510237"
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [  
+    ],
   "@odata.type": "microsoft.graph.webPart"
 }-->
 
 ```json
 {
-  "type": "string (guid)",
+  "type": "String (identifier)",
   "data": {
     "instanceId": "string (guid) (optional)"
   }
@@ -39,8 +40,8 @@ ms.locfileid: "29510237"
 
 | 属性                | 类型             | 说明
 |:------------------------|:-----------------|:----------------------------------
-| **类型**                | String           | 指定 web 部件类型的唯一标识符。 只读。
-| **data**                | [sitePageData][] | 所需的 web 部件 （随 web 部件） 属性
+| **类型**                | 字符串 （标识符）         | 指定 web 部件类型的唯一标识符。 只读。
+| **data**                | [sitePageData](sitepagedata.md) | 所需的 web 部件 （随 web 部件） 属性
 
 [sitePageData]: sitepagedata.md
 

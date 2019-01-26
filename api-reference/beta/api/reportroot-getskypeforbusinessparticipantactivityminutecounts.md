@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts'
 description: 获取使用情况趋势，即组织中用户参与的会议会话的时长（以分钟为单位）和类型。 会议会话类型包括音频/视频。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 70a61da1f0402ee8c97337ac42f7f006db5e21aa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 6677ac111a1cad24e44e4c0e77892d55069ee825
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525932"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574353"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivityminutecounts"></a>reportRoot: getSkypeForBusinessParticipantActivityMinuteCounts
 
@@ -92,7 +93,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessParticipantActiv
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

@@ -3,12 +3,13 @@ title: 'reportRoot: getYammerGroupsActivityGroupCounts'
 description: 获取存在的总组数，以及有多少组包含组对话活动。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: d0daae8bab7ddce1fa6412d064429b40b290a044
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: cd6ed81258eb0729e8d003a00d9b33bf43bbc572
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954265"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574451"
 ---
 # <a name="reportroot-getyammergroupsactivitygroupcounts"></a>reportRoot: getYammerGroupsActivityGroupCounts
 

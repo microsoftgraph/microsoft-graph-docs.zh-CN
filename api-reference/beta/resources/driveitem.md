@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b2b09ddfd99da7094ae25addf95985fdf8c6cf99
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516740"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572065"
 ---
 # <a name="driveitem-resource-type"></a>driveItem 资源类型
 
@@ -38,16 +38,22 @@ ms.locfileid: "29516740"
 
 **driveItem** 资源由 [**baseItem**][baseItem] 派生并继承该资源的属性。
 
-<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+<!-- { 
+       "blockType": "resource", 
+       "@odata.type": "microsoft.graph.driveItem", 
+       "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "keyProperty": "id", "openType": true } -->
+       "keyProperty": "id", "openType": true 
+    } 
+-->
 
 ```json
 {
+  "@odata.type": "microsoft.graph.driveItem", 
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -100,7 +106,7 @@ ms.locfileid: "29516740"
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。只读。
+| audio                | [audio](audio.md)  | 音频元数据（如果此项是一个音频文件）。只读。
 | createdBy            | [identitySet][]    | 识别创建项目的用户、设备和应用程序。只读。
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
 | cTag                 | String             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。

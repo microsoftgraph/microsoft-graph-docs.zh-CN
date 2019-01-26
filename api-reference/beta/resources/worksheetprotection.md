@@ -4,12 +4,12 @@ description: 表示对 sheet 对象的保护。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7e87edcebae95f32ce0bccaf849a7d21140f4878
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6f32ad7b1cc25d9a937f2de68f1bd930d92ec8f9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512036"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572932"
 ---
 # <a name="worksheetprotection-resource-type"></a>WorksheetProtection 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "29512036"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|获取 WorksheetProtection | WorksheetProtection |读取 worksheetProtection 对象的属性和关系。|
+|[获取 WorksheetProtection](../api/worksheetprotection-get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |读取 worksheetProtection 对象的属性和关系。|
 |[Protect](../api/worksheetprotection-protect.md)|无|保护工作表。如果工作表处于受保护状态，则会引发它。|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|无|解除工作表保护|
 
@@ -34,7 +34,7 @@ ms.locfileid: "29512036"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|选项|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|工作表保护选项。只读。|
+|options|[workbookWorksheetProtection](worksheetprotectionoptions.md)|工作表保护选项。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,14 +43,16 @@ ms.locfileid: "29512036"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+  "options"
   ],
-  "@odata.type": "microsoft.graph.worksheetProtection"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 }-->
 
 ```json
 {
-  "protected": true
+  "protected": true,
+  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" }
 }
 
 ```

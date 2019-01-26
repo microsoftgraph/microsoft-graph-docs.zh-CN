@@ -4,12 +4,12 @@ description: 创建新图表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cdb3ff01b0741f0f1a4a0bff22e3a8e3dc32335c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f552e4d8f0c8dc9f1257baf02ebe7a449c98a348
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516334"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572113"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -42,13 +42,13 @@ POST /workbook/worksheets/{id|name}/charts/add
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|type|string|表示图表的类型。可能的值是：`ColumnClustered`、`ColumnStacked`、`ColumnStacked100`、`BarClustered`、`BarStacked`、`BarStacked100`、`LineStacked`、`LineStacked100`、`LineMarkers`、`LineMarkersStacked`、`LineMarkersStacked100`、`PieOfPie`、`etc.`。|
-|sourceData|string|对应于源数据的 Range 对象。|
-|seriesBy|string|可选。指定列或行在图表上用作数据系列的方式。可能的值是：`Auto`、`Columns`、`Rows`。|
+|type|string|代表图表的类型。  可能的值为： `ColumnClustered`， `ColumnStacked`， `ColumnStacked100`， `BarClustered`， `BarStacked`， `BarStacked100`， `LineStacked`， `LineStacked100`， `LineMarkers`， `LineMarkersStacked`， `LineMarkersStacked100`， `PieOfPie`， `etc.`。|
+|sourceData|Json|对应于源数据的 Range 对象。|
+|seriesBy|string|可选。 指定的方式列或行用作图表上的数据系列。  可能的值为： `Auto`， `Columns`， `Rows`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Chart](../resources/chart.md) 对象。
+如果成功，此方法返回`200 OK`响应代码和[WorkbookChart](../resources/chart.md)响应正文中的对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -75,7 +75,7 @@ Content-length: 94
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

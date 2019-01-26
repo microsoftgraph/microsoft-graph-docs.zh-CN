@@ -4,12 +4,12 @@ description: 创建一个新表。区域源地址确定将在其下添加表的�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a4d96ba219ffe10d0bb0a4e5d414fd474490e84a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d8b317bc3e7d91a17039b76199e0db830491e5ad
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522901"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571770"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 
@@ -53,7 +53,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Table](../resources/table.md) 对象。
+如果成功，此方法返回`200 OK`响应正文中的响应代码和[workbookTable](../resources/table.md)对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -79,7 +79,7 @@ Content-length: 54
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 200 OK

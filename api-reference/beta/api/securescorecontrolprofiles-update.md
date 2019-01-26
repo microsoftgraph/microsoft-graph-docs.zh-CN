@@ -2,12 +2,12 @@
 title: 更新 secureScoreControlProfiles
 description: 更新中更改各种属性，如 assignedTo 或 tenantNote 任何集成的解决方案的可编辑 secureScoreControlProfiles 属性。
 localization_priority: Normal
-ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2be11c6b369d9dc411afa5af2219c3bfa8605c8a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510951"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573359"
 ---
 # <a name="update-securescorecontrolprofiles"></a>更新 secureScoreControlProfiles
 
@@ -21,9 +21,9 @@ ms.locfileid: "29510951"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |   SecurityEvents.ReadWrite.All  |
+|委派（工作或学校帐户） |   SecurityEvents.ReadWrite.All。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | SecurityEvents.ReadWrite.All |
+|应用程序 | SecurityEvents.ReadWrite.All。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -46,7 +46,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|AssignedTo|String|分析师控件的名称分配给进行会审、 实施或修复。|
+|assignedTo|String|分析师控件的名称分配给进行会审、 实施或修复。|
 |tenantNote|String|分析师评论 （用于客户控件管理） 的控件。|
 |controlStateUpdates| String|分析师驱动控件上的设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
 
@@ -84,20 +84,16 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-
-
-
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "Update secureScoreControlProfiles",
+  "description": "Update secureScoreControlProfile",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

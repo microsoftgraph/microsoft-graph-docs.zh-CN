@@ -4,12 +4,12 @@ description: 代表工作表保护中的选项。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e32e41eb46cc5af98f6d9aeffcf470e22fbad349
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 786bcf4b26e2e7bedf3fe8fd0429ddc9f1f22b39
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514787"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574143"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>WorksheetProtectionOptions 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "29514787"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
 }-->
 
 ```json

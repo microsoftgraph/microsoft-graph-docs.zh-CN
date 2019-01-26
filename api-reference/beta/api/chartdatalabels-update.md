@@ -4,12 +4,12 @@ description: 更新 chartdatalabels 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b7eb067bed747ae2532939e61a9e0dec58ff4655
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 194d48075f143670488c6ae1ab0ff7a92934e4c4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518294"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573240"
 ---
 # <a name="update-chartdatalabels"></a>更新 chartdatalabels
 
@@ -41,7 +41,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|position|string|表示数据标签位置的 DataLabelPosition 值。可能的值是：`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout`。|
+|position|string|DataLabelPosition 值，它代表数据标签的位置。 可能的值为： `None`， `Center`， `InsideEnd`， `InsideBase`， `OutsideEnd`， `Left`， `Right`， `Top`， `Bottom`， `BestFit`， `Callout`。|
 |separator|string|表示用于图表中数据标签的分隔符的字符串。|
 |showBubbleSize|布尔|表示数据标签气泡大小是否可见的布尔值。|
 |showCategoryName|布尔|表示数据标签类别名称是否可见的布尔值。|
@@ -52,7 +52,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartDataLabels](../resources/chartdatalabels.md) 对象。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChartDataLabels](../resources/chartdatalabels.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -78,7 +78,7 @@ Content-length: 134
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartDataLabels"
+  "@odata.type": "microsoft.graph.workbookChartDataLabels"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -4,18 +4,18 @@ description: 从指定分区中检索 page 对象列表。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: a87126876917b9fcdd4ed818a3e8efcef8a9635f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a68fef97f48c48f789317915dd2da0dacdd2f06f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525428"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571210"
 ---
 # <a name="list-pages"></a>列出页面
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从指定分区中检索 [page](../resources/page.md) 对象列表。
+从指定的节检索[onenotePage](../resources/onenotepage.md)对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,7 +51,7 @@ GET /sites/{id}/onenote/sections/{id}/pages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [page](../resources/page.md) 对象集合。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的[onenotePage](../resources/onenotepage.md)对象的集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

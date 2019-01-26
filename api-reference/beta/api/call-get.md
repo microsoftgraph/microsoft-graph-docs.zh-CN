@@ -1,17 +1,17 @@
 ---
-title: 获取呼叫
+title: Get call
 description: 检索的属性和呼叫对象的关系。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f5f530fac12ae61c47a5a5e3e0f900720aac4c4e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 549c53c5e7dedc4d52cce9bbe5e592dc8622c4c7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530067"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575424"
 ---
-# <a name="get-call"></a>获取呼叫
+# <a name="get-call"></a>Get call
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -115,7 +115,7 @@ Content-Length: 2821
   "direction": "incoming",
   "id": "id-value",
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "@odata.type": "microsoft.graph.appHostedMediaConfig",
     "blob": "<media config blob>"
   },
   "meetingCapability": {
@@ -124,7 +124,7 @@ Content-Length: 2821
     "autoAdmittedUsers": "everyoneInCompany"
   },
   "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "@odata.type": "microsoft.graph.organizerMeetingInfo",
     "organizer": {
       "user": {
         "id": "550fae72-d251-43ec-868c-373732c2704f",

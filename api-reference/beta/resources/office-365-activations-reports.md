@@ -3,12 +3,13 @@ title: Office 365 激活报表
 description: Office 365 激活报告提供的用户已激活其至少一个设备上的 Office 365 订阅的视图。 它提供了 Office 365 ProPlus、 Project 和 Visio Pro for Office 365 订阅激活的细分以及激活的细分结构跨桌面和设备。 此报告可帮助您识别可能需要其他支持激活其 Office 订阅的用户。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 3f0abf320fed495040513df662be6d5c93658656
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 345ab500ef5986471bb801a88ee5886473a3dd60
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522320"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573675"
 ---
 # <a name="office-365-activations-reports"></a>Office 365 激活报表
 

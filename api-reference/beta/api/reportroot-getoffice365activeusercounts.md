@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365ActiveUserCounts'
 description: 按产品获取报表周期内的每日活跃用户数。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 409c489ca985c7a357be13ae0ee0a487b54f1eac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 9b24008a3ea13308f0d83a2ac6a6ef31ece32469
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528170"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575312"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
@@ -84,7 +85,7 @@ CSV 文件包含下面的列标题：
 
 在 Microsoft Graph 中国由 21Vianet 不支持**[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象中的以下属性：
 
-- Yammer
+- yammer
 - 团队
 
 ## <a name="example"></a>示例
@@ -108,7 +109,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

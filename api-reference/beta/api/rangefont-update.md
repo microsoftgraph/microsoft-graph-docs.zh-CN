@@ -4,12 +4,12 @@ description: 更新 rangefont 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5857941f8c08c9090ba05098ae1d69a34dead791
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06ca64783c516e681c871acda76c8e26f1137b63
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529696"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572008"
 ---
 # <a name="update-rangefont"></a>更新 rangefont
 
@@ -33,7 +33,7 @@ PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -46,9 +46,9 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 |bold|布尔|表示字体的加粗状态。|
 |color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
 |italic|布尔|表示字体的斜体状态。|
-|name|字符串|字体名称（例如"Calibri"）|
+|name|string|字体名称（例如"Calibri"）|
 |大小|double|字号|
-|underline|string|应用于字体的下划线类型。可能的值是：`None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。|
+|underline| 枚举字符串 |应用于字体的下划线类型。可能的值是：`None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。|
 
 ## <a name="response"></a>响应
 
@@ -71,7 +71,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "underline-value"
+  "underline": "None"
 }
 ```
 ##### <a name="response"></a>响应
@@ -92,7 +92,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "underline-value"
+  "underline": "None"
 }
 ```
 

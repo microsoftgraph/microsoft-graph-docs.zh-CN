@@ -5,12 +5,12 @@ ms.date: 05/07/2018
 title: SharePoint 网站中创建新的页面
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0e66c38fc05402c8838d4ec081f492a394ea8ff2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: be3f24f3d4795c473562ddc01d75d54117dcedd3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523419"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572785"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>在网站页面列表的网站中创建页面
 
@@ -110,7 +110,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": 2,
+    "id": "2",
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",

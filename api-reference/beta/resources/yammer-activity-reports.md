@@ -3,12 +3,13 @@ title: Yammer 活动报表
 description: 您可以通过多少活动生成跨组织和发布、 like，和阅读 Yammer 上的消息的唯一用户数了解 Yammer 与贵组织的工作效率的级别。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 252748b639f256467b2a01336488e1df086c69cd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: d5953d8bd53158b2ec0532deb47c48028ba1b8c9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509936"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571798"
 ---
 # <a name="yammer-activity-reports"></a>Yammer 活动报表
 

@@ -4,12 +4,12 @@ description: OneNote 笔记本。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: df7793208aa3ba752f1da0bc84903733b79871c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 715ed59e6a6d109c31f788e92cca751232327136
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518623"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573338"
 ---
 # <a name="notebook-resource-type"></a>notebook 资源类型
 
@@ -51,10 +51,10 @@ OneNote 笔记本。
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|createdBy|[identitySet](identityset.md)|创建项的用户、设备和应用程序标识。只读。|
+|createdBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |createdDateTime|DateTimeOffset|笔记本的创建日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
-|id|字串符号|笔记本的唯一标识符。只读。|
-|isDefault|布尔|指示其是否是用户的默认笔记本。只读。|
+|id|String|笔记本的唯一标识符。只读。|
+|isDefault|Boolean|指示其是否是用户的默认笔记本。只读。|
 |isShared|Boolean|指示是否共享笔记本。如果为 true，则笔记本的内容可供除所有者之外的人员查看。只读。|
 |lastModifiedBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改笔记本的日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
@@ -68,8 +68,8 @@ OneNote 笔记本。
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|sectionGroups|[SectionGroup](sectiongroup.md) collection|笔记本中的分区组。只读。可为 NULL。|
-|节|[Section](section.md) collection|笔记本中的分区。只读。可为 Null。|
+|sectionGroups|[sectionGroup](sectiongroup.md)集合|笔记本中的分区组。只读。可为 NULL。|
+|sections|[onenoteSection](section.md)集合|笔记本中的分区。只读。可为 Null。|
 
 ## <a name="methods"></a>方法
 

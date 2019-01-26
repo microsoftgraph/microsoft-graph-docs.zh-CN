@@ -4,12 +4,12 @@ description: ServiceHostedMediaConfig 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2ab19f992dd7fac48844cd46a0600a0242517709
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 127450b569a37f00a76696a749c269f55c15b7aa
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520863"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572449"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>serviceHostedMediaConfig 资源类型
 
@@ -22,7 +22,7 @@ ServiceHostedMediaConfig 类型。
 | 属性                    | 类型                                                        | 说明                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | [mediaInfo](mediainfo.md)集合                        | 媒体预取列表。                   |
-| removeFromDefaultAudioGroup | Boolean                                                     | 从默认音频组中删除自我参与者。 |
+| removeFromDefaultAudioGroup | 布尔值                                                     | 从默认音频组中删除自我参与者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -33,11 +33,12 @@ ServiceHostedMediaConfig 类型。
   "optionalProperties": [
     "preFetchMedia"
   ],
+   "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
 }-->
 ```json
 {
-  "preFetchMedia": [ { "@odata.type": "#microsoft.graph.mediaInfo" } ],
+  "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
 }
 ```

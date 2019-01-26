@@ -3,12 +3,13 @@ title: 'reportRoot: getOneDriveUsageFileCounts'
 description: 获取跨所有网站的文件总数和活跃文件数。 如果文件在指定时间段内被保存、同步、修改或共享，则视为活跃文件。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 76a9b0bf7fccde5ac93f45c0f47248fd99faabd6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: ddc7bb25a746630320a93ecf546a7299900f09c6
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921022"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571266"
 ---
 # <a name="reportroot-getonedriveusagefilecounts"></a>reportRoot: getOneDriveUsageFileCounts
 

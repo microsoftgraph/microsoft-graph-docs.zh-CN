@@ -4,12 +4,12 @@ description: 更新 worksheet 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bf726ce3ad9bff427b3ec78d572017f6aea162e4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 85f027020f11b43ffd22aeaddd89cd5852d6eaff
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519582"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571714"
 ---
 # <a name="update-worksheet"></a>更新工作表
 
@@ -31,7 +31,7 @@ ms.locfileid: "29519582"
 PATCH /workbook/worksheets/{id|name}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -71,7 +71,7 @@ Content-length: 100
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet"
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

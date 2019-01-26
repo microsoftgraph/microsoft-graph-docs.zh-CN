@@ -3,12 +3,13 @@ title: 'reportRoot: getTeamsUserActivityUserCounts'
 description: 按活动类型获取 Microsoft Teams 用户的数量。 活动类型是许多团队聊天消息、专用聊天消息、呼叫或会议。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 6de36ee81e6ef58b84548d01f0eb9b2099212751
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: ae1dc1cd7272d1dc162f34560ab966bab2734e77
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916087"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571434"
 ---
 # <a name="reportroot-getteamsuseractivityusercounts"></a>reportRoot: getTeamsUserActivityUserCounts
 

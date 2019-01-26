@@ -3,12 +3,13 @@ title: 'reportRoot: getEmailActivityUserDetail'
 description: 获取用户执行的电子邮件活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: cfd4990c9e4f220f37146fc21747087b8d06f4e1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 2b9f9b9661236e20964245f8e89d17c013f40800
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521241"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571224"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 
@@ -105,7 +106,7 @@ GET https://graph.microsoft.com/beta/reports/getEmailActivityUserDetail(period='
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

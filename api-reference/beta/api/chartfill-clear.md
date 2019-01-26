@@ -4,12 +4,12 @@ description: 清除图表元素的填充颜色。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e8edef56f24d09877265b510ae067b59f1eae923
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a053814b1be4fdee947d4d28911263b7e53d55d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530053"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573037"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
@@ -40,6 +40,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
+请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
@@ -61,8 +62,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{i
 下面是一个响应示例。 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

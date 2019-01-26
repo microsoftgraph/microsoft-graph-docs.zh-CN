@@ -2,12 +2,12 @@
 title: itemAttachment 资源类型
 description: 联系人、 事件或附加到另一个事件的消息
 localization_priority: Normal
-ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b0e3b62e5f6100884e6fbea40d16221bf8503897
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520107"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571406"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
 
@@ -21,15 +21,15 @@ ms.locfileid: "29520107"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | itemAttachment |读取 itemAttachment 对象的属性和关系。|
-|[删除](../api/attachment-delete.md) | 无 |删除 itemAttachment 对象。 |
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |读取 itemAttachment 对象的属性和关系。|
+|[Delete](../api/attachment-delete.md) | 无 |删除 itemAttachment 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentType|String|附件的内容类型。|
-|id|字串符号| 附件 ID。|
-|isInline|Boolean|如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。|
+|id|String| 附件 ID。|
+|isInline|布尔|如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的时间和日期。|
 |name|String|附件的显示名称。|
 |大小|Int32|附件大小，以字节为单位。|
@@ -37,7 +37,7 @@ ms.locfileid: "29520107"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|项|OutlookItem|附加的联系人、 消息或事件中。 导航属性。|
+|项|[outlookItem](outlookitem.md)|附加的联系人、 消息或事件中。 导航属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

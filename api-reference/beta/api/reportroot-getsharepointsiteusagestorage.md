@@ -3,12 +3,13 @@ title: 'reportRoot: getSharePointSiteUsageStorage'
 description: 获取报表周期内分配和使用的存储趋势。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 0d19b34b76af391b1dd3c216dcbe3b742a753dee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: e288f61f47e1f4497ca0bef7281074eb2b430fa4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516614"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571784"
 ---
 # <a name="reportroot-getsharepointsiteusagestorage"></a>reportRoot: getSharePointSiteUsageStorage
 
@@ -93,7 +94,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageStorage(perio
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

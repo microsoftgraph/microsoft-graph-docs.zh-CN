@@ -2,12 +2,12 @@
 title: 外接程序资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: d2a63d4428cbb3bcc7cc169711eb6cc6b9e00a6f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4e930ef3073cd3ea242522b537170aece8d49e0d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522327"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570615"
 ---
 # <a name="addin-resource-type"></a>外接程序资源类型
 
@@ -36,8 +36,8 @@ ms.locfileid: "29522327"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|Guid||
-|properties|[keyValue](keyvalue.md)集合||
+|id|guid||
+|properties|[keyvalue](keyvalue.md)集合||
 |type|字符串||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

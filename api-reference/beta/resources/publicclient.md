@@ -2,12 +2,12 @@
 title: publicClient 资源类型
 description: 指定非 Web 应用程序或 Web Api 设置。 （例如移动或其他公共的客户端，例如桌面设备上运行安装的应用程序）
 localization_priority: Normal
-ms.openlocfilehash: ff1d77709293a7167868451671e1660196c9a4db
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 866e27b4ea3e1386b7cc69f967635d38641f121c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525960"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571840"
 ---
 # <a name="publicclient-resource-type"></a>publicClient 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "29525960"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.installedClient"
+  "@odata.type": "microsoft.graph.publicClientApplication"
 }-->
 
 ```json

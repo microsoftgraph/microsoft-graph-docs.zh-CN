@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365ActivationsUserDetail'
 description: 获取已激活 Office 365 的用户的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 02e06e36a2329a3a302c042d71ff259b3e6c57b4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 3e5e6841e0c8f37cf9a054bcd5d7276e3b1fd04b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978058"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571392"
 ---
 # <a name="reportroot-getoffice365activationsuserdetail"></a>reportRoot: getOffice365ActivationsUserDetail
 

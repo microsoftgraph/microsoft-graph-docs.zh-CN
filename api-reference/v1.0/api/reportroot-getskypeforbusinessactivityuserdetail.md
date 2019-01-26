@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessActivityUserDetail'
 description: 获取用户执行的 Skype for Business 活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: c7439cf6eaff88e61379fbbb10cee2b4fb9b3efd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 34f80d21620eaa65a44e7c5a0ae8303ec43dfbb7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954167"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572897"
 ---
 # <a name="reportroot-getskypeforbusinessactivityuserdetail"></a>reportRoot: getSkypeForBusinessActivityUserDetail
 

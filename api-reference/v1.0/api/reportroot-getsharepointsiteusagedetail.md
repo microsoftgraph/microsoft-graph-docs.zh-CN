@@ -3,12 +3,13 @@ title: 'reportRoot: getSharePointSiteUsageDetail'
 description: 获取 SharePoint 网站使用情况的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 38a12b4a69756b52d5bce7806eb0fe1b83509990
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 6825bfd3ec7c512559e2ebab0f04b0cd6fb38a58
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991284"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571273"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 

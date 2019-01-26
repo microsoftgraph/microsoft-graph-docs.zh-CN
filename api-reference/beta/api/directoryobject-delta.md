@@ -4,12 +4,12 @@ description: 获取新创建、 更新或删除以下类型的目录对象： �
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 56ee662050858ff3d46b12b6885ba9e418d0e59d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4b00f86dcb3789a2117a23ffa20e6392e557910d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511840"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573254"
 ---
 # <a name="directoryobject-delta"></a>directoryObject： 增量
 
@@ -63,7 +63,7 @@ GET /directoryObjects/delta
 |:---------------|:----------|
 | Authorization  | 持有者&lt;令牌&gt;|
 | Content-Type  | application/json |
-| Prefer | return=minimal。 <br><br>指定与请求使用此标头`deltaLink`会返回自上次循环后已更改的对象属性。 可选。 |
+| Prefer | 返回 = 最少 <br><br>指定与请求使用此标头`deltaLink`会返回自上次循环后已更改的对象属性。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -108,7 +108,8 @@ GET /directoryObjects/delta
 下面是一个请求示例。 没有任何`$select`参数，以便跟踪和返回一组默认属性。
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta",
+  "truncated": true
 }-->
 
 ```http
@@ -150,8 +151,7 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null,
-      <...response trimmed for brevity...>
+      "jobTitle": null
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -160,8 +160,7 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp",
-      <...response trimmed for brevity...>
+      "displayName": "testgp"
     },
     {
       "@odata.type": "#microsoft.graph.orgContact",
@@ -173,11 +172,8 @@ Content-type: application/json
       "department": "string",
       "displayName": "string",
       "givenName": "string",
-      "id": "string (identifier)",
-      "jobTitle": "string",
-      <...response trimmed for brevity...>
-    },
-    <...response trimmed for brevity...>
+      "jobTitle": "string"
+    }    
   ]
 }
 ```
@@ -187,7 +183,8 @@ Content-type: application/json
 下一个示例演示如何使用备用内容最少响应行为：
 <!-- {
   "blockType": "request",
-  "name": "directoryObject_delta"
+  "name": "directoryObject_delta",
+  "truncated": true
 }-->
 
 ```http
@@ -229,8 +226,7 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.orgContact",
       "id": "8f301319-4b4e-493f-8067-bce1dec76e7a",
       "businessPhones": "12345"
-    },
-    <...response trimmed for brevity...>
+    }    
   ]
 }
 ```
@@ -240,7 +236,8 @@ Content-type: application/json
 下面的示例演示初始请求使用`isOf`运算符筛选出只有用户和组的实体：
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_delta"
+  "name": "directoryobject_delta",
+  "truncated": true
 }-->
 
 ```http
@@ -280,8 +277,7 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null,
-      <...response trimmed for brevity...>
+      "jobTitle": null
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -290,16 +286,14 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp",
-      <...response trimmed for brevity...>
-    },
-    <...response trimmed for brevity...>
+      "displayName": "testgp"      
+    }    
   ]
 }
 ```
 
-- [使用增量查询跟踪 Microsoft Graph 数据更改](/graph/delta-query-overview)
-- 获取用户的增量更改。
+- [使用增量查询来跟踪 Microsoft Graph 数据中的更改](/graph/delta-query-overview)。
+- [获取用户的增量更改](/graph/delta-query-users)。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

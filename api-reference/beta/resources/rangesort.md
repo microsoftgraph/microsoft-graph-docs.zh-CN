@@ -1,15 +1,15 @@
 ---
-title: RangeSort 资源类型
+title: rangeSort 资源类型
 description: 管理对 Range 对象的排序操作。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cd43905c6f838d841cc2adb0b5737ccb173c087f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7286ac9b3bd17b5751852dd4480cdd896c4193b9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518210"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572043"
 ---
 # <a name="rangesort-resource-type"></a>RangeSort 资源类型
 
@@ -30,6 +30,19 @@ ms.locfileid: "29518210"
 ## <a name="relationships"></a>关系
 无
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeSort"
+}-->
+
+```json
+{
+}
+
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

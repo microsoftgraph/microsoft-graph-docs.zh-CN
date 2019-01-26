@@ -4,12 +4,12 @@ description: 检索 worksheet 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 585faae105955f24b80a64b834dba207f740d67a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d1d3b2872b87b587adec3958c2447d3cc04ef27c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530130"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574325"
 ---
 # <a name="list-worksheetcollection"></a>列出 WorksheetCollection
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet",
+  "@odata.type": "microsoft.graph.workbookWorksheet",
   "isCollection": true
 } -->
 ```http

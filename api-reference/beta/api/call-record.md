@@ -1,21 +1,21 @@
 ---
 title: 呼叫： 记录
-description: 记录呼叫。
+description: 录制呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1f119cfece969c01e68773e5985eab4010dc9874
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518280"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574857"
 ---
 # <a name="call-record"></a>呼叫： 记录
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-记录呼叫。
+录制呼叫。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "29518280"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | Calls.AccessMedia.All                       |
+| Application     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,15 +43,15 @@ POST /applications/{id}/calls/{id}/record
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[mediaprompt](../resources/mediaprompt.md)集合 | 启动提示之前录制播放 （如果有） 的集合。 客户可以选择单独指定"playPrompt"操作，或者指定的"记录"的一部分主要的所有记录都都使用提示 |
-|bargeInAllowed|Boolean| 允许用户提示完成之前输入的选择。                                                                 |
+|提示|[mediaPrompt](../resources/mediaprompt.md)集合 | 启动提示之前录制播放 （如果有） 的集合。 客户可以选择单独指定"playPrompt"操作，或者指定的"记录"的一部分主要的所有记录都都使用提示 |
+|bargeInAllowed|布尔值| 允许用户提示完成之前输入的选择。                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| 从我们开始之前我们记录操作超时和失败操作的时间允许的最大初始静音。 如果我们播放提示时，提示完成后从开始此计时器。 |
 |maxSilenceTimeoutInSeconds|Int32| 最大无声超时秒数。|
 |maxRecordDurationInSeconds|Int32| 最大记录持续时间，以秒为单位。|
-|playBeep|Boolean| 播放提示音后播放提示。|
-|streamWhileRecording|Boolean|如果设置为 true，资源位置将提供一旦开始录制。 |
+|playBeep|布尔值| 播放提示音后播放提示。|
+|streamWhileRecording|布尔值|如果设置为 true，资源位置将提供一旦开始录制。 |
 |stopTones|String 集合|停止指定结束录制音。|
-|ClientContext|String|客户端上下文。|
+|clientContext|String|客户端上下文。|
 
 ## <a name="response"></a>响应
 返回`202 Accepted`响应代码和具有[commsOperation](../resources/commsoperation.md)创建的此请求 uri 中的位置标头。

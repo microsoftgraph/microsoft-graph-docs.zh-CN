@@ -4,12 +4,12 @@ description: TokenMeetingInfo 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 717bfbd14c92ea44987cbdadc25eef06ed31a0cc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513366"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571070"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tokenMeetingInfo 资源类型
 
@@ -21,7 +21,7 @@ TokenMeetingInfo 类型。
 
 | 属性                     | 类型    | 说明                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Boolean | 指示是否一旦离开对话的主机，也可以继续对话。 |
+| allowConversationWithoutHost | 布尔值 | 指示是否一旦离开对话的主机，也可以继续对话。 |
 | token                        | String  | 要加入/激活会议的标记。                                        |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -33,6 +33,7 @@ TokenMeetingInfo 类型。
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json

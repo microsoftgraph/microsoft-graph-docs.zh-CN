@@ -3,12 +3,12 @@ title: openTypeExtension 资源类型（开放扩展）
 description: 打开扩展 （之前被称为 Office 365 数据扩展） 提供轻松直接将非类型化的属性添加到 Microsoft Graph 中的资源。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: ba5dbcd6c5ae1705ffe7e89ca6f529280d98adf5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a0be3c794fcfc880a99c5fd81e498b8121de68a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508830"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574906"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>openTypeExtension 资源类型（开放扩展）
 
@@ -43,7 +43,7 @@ ms.locfileid: "29508830"
 - 创建所需的扩展的最小数目。 大多数应用程序应该要求不多个扩展名。 扩展具有未定义的设置的属性或结构，因此您可以将多个值存储在一个扩展。
 - 避免 （例如，基于用户输入等。） 来扩展命名变量的方式。 打开扩展名创建新的名称之前, 的用户的邮箱中未用过的每次创建新的 MAPI 命名属性。 删除扩展不会删除的命名的属性。
 
-### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>使用开放扩展（针对 Outlook 资源）还是使用扩展属性？
+### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>使用打开扩展名 （对于 Outlook 资源） 或扩展的属性
 
 打开扩展是适用于大多数的方案涉及存储和访问自定义数据的建议的解决方案。 但是，您需要通过[Microsoft Graph API 元数据](https://developer.microsoft.com/graph/docs/overview/call_api)访问自定义 Outlook MAPI 属性未已公开的数据，您可以使用[扩展的属性和其 REST API](extended-properties-overview.md)。 您可以验证元数据在公开哪些属性[https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata)。
 
@@ -54,9 +54,11 @@ ms.locfileid: "29508830"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+       "companyName",
+        "dealValue",
+        "expirationDate"
   ],
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 }-->
 
 ```json

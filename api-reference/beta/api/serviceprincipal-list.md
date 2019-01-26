@@ -2,12 +2,12 @@
 title: 列表 servicePrincipals
 description: 检索 servicePrincipal 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: cd61b69e330ac376d15bfaf99c1147b8f9402d7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e8698e9715b4443d49224afcac8a5b363132db93
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526086"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574255"
 ---
 # <a name="list-serviceprincipals"></a>列表 servicePrincipals
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.serviceprincipal",
+  "@odata.type": "microsoft.graph.servicePrincipal",
   "isCollection": true
 } -->
 ```http

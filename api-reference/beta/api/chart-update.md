@@ -4,12 +4,12 @@ description: 更新 chart 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2d1377a0a8c19538ea1c0c19483512736e129559
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e668b8d9d6184398729ed5079be27f75ae5d3e03
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516383"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572883"
 ---
 # <a name="update-chart"></a>更新图表
 
@@ -31,7 +31,7 @@ ms.locfileid: "29516383"
 PATCH /workbook/worksheets/{id|name}/charts(<name>)
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -49,7 +49,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [Chart](../resources/chart.md) 对象。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChart](../resources/chart.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -72,7 +72,7 @@ Content-length: 52
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

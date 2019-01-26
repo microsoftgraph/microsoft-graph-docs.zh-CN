@@ -4,12 +4,12 @@ description: 下面是资源的 JSON 表示形式。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8a44f9a2e568991c6803ebf72baf5f712f39ba64
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: fe582c4568995710d882ab22ebb7f4683469fc0f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528289"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574745"
 ---
 # <a name="outlookitem-resource-type"></a>outlookItem 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "29528289"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.outlookitem"
+  "@odata.type": "microsoft.graph.outlookItem"
 }-->
 
 ```json

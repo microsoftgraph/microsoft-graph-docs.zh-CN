@@ -2,12 +2,12 @@
 title: 创建 appRoleAssignment
 description: 使用此 API 创建新 appRoleAssignment。
 localization_priority: Normal
-ms.openlocfilehash: 70993bf1e5402c3fab7229269fbc007602813c40
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 33bf7a577b01b2f23132a2b761bd80f24e8268c7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528765"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574338"
 ---
 # <a name="create-approleassignment"></a>创建 appRoleAssignment
 
@@ -68,7 +68,7 @@ Content-length: 233
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.approleassignment"
+  "@odata.type": "microsoft.graph.appRoleAssignment"
 } -->
 ```http
 HTTP/1.1 200 OK

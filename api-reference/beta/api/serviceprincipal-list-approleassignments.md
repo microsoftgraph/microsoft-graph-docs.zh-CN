@@ -2,12 +2,12 @@
 title: servicePrincipal： 列表 appRoleAssignments
 description: 检索 approleassignment 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: af98d4b92e936a961d0edefe6a4f00c71a5a75ed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d9134985359a76b3d26b93aa675cdd82284a17b4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508592"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574654"
 ---
 # <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal： 列表 appRoleAssignments
 
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.approleassignment",
+  "@odata.type": "microsoft.graph.appRoleAssignment",
   "isCollection": true
 } -->
 ```http

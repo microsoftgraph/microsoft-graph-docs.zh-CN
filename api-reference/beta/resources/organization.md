@@ -4,12 +4,12 @@ description: '代表 Azure Active Directory 租户。 '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b0e1e0563b0e29d49fbf5dece0f62f70e7a71c52
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529423"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574990"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "29529423"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取组织](../api/organization-get.md) | [organization](organization.md) |读取 organization 对象的属性和关系。|
+|[获取组织](../api/organization-get.md) | [组织](organization.md) |读取 organization 对象的属性和关系。|
 |[更新](../api/organization-update.md) | [组织](organization.md)  |更新 organization 对象。 可更新的限定属性：**marketingNotificationMails**、**technicalNotificationMails**、**securityComplianceNotificationMails**、**securityComplianceNotificationPhones** 和 **privacyProfile**。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
@@ -35,29 +35,29 @@ ms.locfileid: "29529423"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |assignedPlans|[assignedPlan](assignedplan.md) 集合|与租户相关的服务计划的集合。不可为 null。            |
-| businessPhones                      | String 集合                                         | 组织的电话号码 **注意：** 虽然这是字符串集合，但是只能为该属性设置一个号码。                                                                                            |
+| businessPhones                      | String collection                                         | 组织的电话号码。 **注意：** 虽然这是字符串集合，但是只能为该属性设置一个号码。                                                                                            |
 |city|String| 组织地址所在的城市名称。 |
 |companyLastDirSyncTime|DateTimeOffset|租户最后一次与本地目录同步的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|country|String| 组织地址所在的国家/地区名称。 |
+|country|字符串| 组织地址所在的国家/地区名称。 |
 |countryLetterCode|字符串| 组织所在的国家/地区缩写 |
 |createdDateTime|DateTimeOffset| 创建组织时的时间戳。 值不能修改和创建组织时将自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 | deletedDateTime                    | DateTimeOffset                                                    | 表示日期和时间的 Azure AD 租户已删除使用 ISO 8601 格式时，始终在 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。                                                                                     |
 |dirSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。|
 |displayName|String|租户的显示名称。|
 |id|String|租户 ID，代表组织 （或租户） 的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
-|isMultipleDataLocationsForServicesEnabled|Boolean|**true**如果组织已启用，则多地理位置**false**如果组织不是多地理位置启用则**null**（默认值）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
-|marketingNotificationEmails|String 集合| 不可为 NULL。            |
+|isMultipleDataLocationsForServicesEnabled|布尔值|**true**如果组织已启用，则多地理位置**false**如果组织不是多地理位置启用则**null**（默认值）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
+|marketingNotificationEmails|String collection| 不可为 null。            |
 |objectType|String|一个标识对象类型的字符串。对于租户，该值始终为“Company”。 |
 |postalCode|String| 组织地址的邮政编码。 |
 |preferredLanguage|String| 组织的首选语言。 应遵循 ISO 639-1 代码；例如“en”。 |
 |privacyProfile|[privacyProfile](privacyprofile.md)| 组织的隐私配置文件。            |
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) 集合| 不可为 null。            |
-|provisioningErrors|ProvisioningError 集合| 不可为 null。            |
-|securityComplianceNotificationMails|String 集合||
+|provisionedPlans|[provisionedPlan](provisionedplan.md)集合| 不可为 null。            |
+|provisioningErrors|onPremisesProvisioningError 集合| 不可为 null。            |
+|securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
 |state|String| 组织地址所在的省/自治区/直辖市名称。 |
 |street|String| 组织地址所在的街道名称。 |
-|technicalNotificationMails|String 集合| 不可为 NULL。 |
+|technicalNotificationMails|String collection| 不可为 null。 |
 |verifiedDomains|[VerifiedDomain](verifieddomain.md) 集合|与该租户相关联的域集合。不可为 null。            |
 
 ## <a name="relationships"></a>关系

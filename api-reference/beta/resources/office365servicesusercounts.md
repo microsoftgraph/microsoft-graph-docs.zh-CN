@@ -3,20 +3,21 @@ title: office365ServicesUserCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 54ae2020a5c02bba1469e3c6c0728024c72046bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 36fd043be3cef36951f7651d625f4a93d3b5f8cc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957303"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573891"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>office365ServicesUserCounts 资源类型
 
 ## <a name="properties"></a>属性
 
-| 属性                 | 类型   | Description                              |
+| 属性                 | 类型   | 说明                              |
 | :----------------------- | :----- | ---------------------------------------- |
-| reportRefreshDate        | 日期   | 内容最晚日期。          |
+| reportRefreshDate        | Date   | 内容最晚日期。          |
 | exchangeActive           | Int64  | 在 Exchange 上的活动用户数。 任何用户都可以读取和发送电子邮件被视为活动用户。 |
 | exchangeInactive         | Int64  | 在 Exchange 上的非活动用户数。 |
 | oneDriveActive           | Int64  | 在 OneDrive 上的活动用户数。 查看或编辑文件、 内部或外部，共享文件或同步文件的任何用户被视为活动用户。 |
@@ -27,9 +28,11 @@ ms.locfileid: "27957303"
 | skypeForBusinessInactive | Int64  | Skype 的业务的非活动用户数。 |
 | yammerActive             | Int64  | Yammer 上的活动用户数。 任何用户都可以发布、 读取或类似于邮件被视为活动用户。 |
 | yammerInactive           | Int64  | 在 Yammer 上的非活动用户数。  |
-| teamsActive              | Int64  | 团队上的活动用户数。 在工作组通道中发布消息、 私人聊天会话中发送的邮件或参加会议或进行呼叫的任何用户被视为活动用户。 |
-| teamsInactive            | Int64  | 团队上的活动用户数。     |
-| reportPeriod             | 字符串 | 报告涵盖天数。    |
+| teamsActive              | Int64  | 在 Microsoft 团队的活动用户数。 在工作组通道中发布消息、 私人聊天会话中发送的邮件或参加会议或进行呼叫的任何用户被视为活动用户。 |
+| teamsInactive            | Int64  | 在 Microsoft 团队的非活动用户数。     |
+| office365Active          | Int64  | Office 365 上的活动用户数。   |
+| office365Inactive        | Int64  | Office 365 上的非活动用户数。     |
+| reportPeriod             | String | 报告涵盖天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -55,6 +58,8 @@ ms.locfileid: "27957303"
   "yammerInactive": 1024, 
   "teamsActive": 1024, 
   "teamsInactive": 1024, 
+  "office365Active": 1024,
+  "office365Inactive": 1024,
   "reportPeriod": "String"
 }
 ```

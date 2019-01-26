@@ -3,12 +3,13 @@ title: Office 365 活跃用户报表
 description: Office 365 活跃用户报表可用于确定组织中个人使用的产品许可证数，并向下钻取哪些用户使用什么产品的相关信息。 此类报表有助于管理员发现未充分利用的产品或可能需要获取额外培训或信息的用户。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 0ac5c3080469b8d918ee631edaf1473141a60dca
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: cb0b760bf58d9127d7cec97ac700fe04f6f7f481
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917998"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571966"
 ---
 # <a name="office-365-active-users-reports"></a>Office 365 活跃用户报表
 

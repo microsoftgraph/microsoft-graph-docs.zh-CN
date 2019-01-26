@@ -2,12 +2,12 @@
 title: 列出 NamedItemCollection
 description: 检索 nameditem 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 45286b37a69749e7d4ebb543466f69f7df8b4ac3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bcc9e52b6005c834aecd4ddca933f0503892b2ee
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512666"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572701"
 ---
 # <a name="list-nameditemcollection"></a>列出 NamedItemCollection
 
@@ -42,7 +42,7 @@ GET /workbook/names
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [NamedItem](../resources/nameditem.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [NamedItem](../resources/workbooknameditem.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem",
+  "@odata.type": "microsoft.graph.workbookNamedItem",
   "isCollection": true
 } -->
 ```http

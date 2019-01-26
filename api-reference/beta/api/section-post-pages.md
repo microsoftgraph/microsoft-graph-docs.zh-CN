@@ -4,18 +4,18 @@ description: 在指定分区中新建页面。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 2aa153234f6fab60d020c115bc6e972168a4fa37
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f397b10e914a779a153e78e1e10e906925aec9a1
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510874"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570916"
 ---
 # <a name="create-page"></a>创建页面
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定分区中新建[页面](../resources/page.md)。
+在指定分区中新建[页面](../resources/onenotepage.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,7 +46,7 @@ POST /sites/{id}/onenote/sections/{id}/pages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [page](../resources/page.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [page](../resources/onenotepage.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

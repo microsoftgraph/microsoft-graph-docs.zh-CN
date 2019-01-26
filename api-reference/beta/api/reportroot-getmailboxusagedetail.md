@@ -3,12 +3,13 @@ title: 'reportRoot: getMailboxUsageDetail'
 description: 获取邮箱使用情况的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: d7844978d0a7f0fb2617def7a55782dbf6cb61c3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 64b0c6dfec05f21c492c5e7898ee23792f1136fc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511259"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573436"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 
@@ -103,7 +104,7 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

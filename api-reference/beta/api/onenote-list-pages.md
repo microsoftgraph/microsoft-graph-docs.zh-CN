@@ -4,18 +4,18 @@ description: 检索 page 对象列表。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 4717428dc7b45d893993dd366eb33137000d3bb3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1048988d5fc0e942fe3433f6ef29b1376d4d6591
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511294"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571140"
 ---
 # <a name="list-pages"></a>列出页面
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [page](../resources/page.md) 对象列表。
+检索 [page](../resources/onenotepage.md) 对象列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -51,7 +51,7 @@ GET /sites/{id}/onenote/pages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [page](../resources/page.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [page](../resources/onenotepage.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

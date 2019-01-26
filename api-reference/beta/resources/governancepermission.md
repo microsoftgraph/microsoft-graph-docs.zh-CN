@@ -2,12 +2,12 @@
 title: governancePermission 资源类型
 description: '表示对特定 governanceResource governanceSubject 具有访问权限。  '
 localization_priority: Normal
-ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9b6e920d92d7010fb325be05cf0b645f9b8d81cd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529836"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570720"
 ---
 # <a name="governancepermission-resource-type"></a>governancePermission 资源类型
 
@@ -19,14 +19,21 @@ ms.locfileid: "29529836"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|AccessLevel|String|访问级别。 有效值： ``None``， ``UserRead``， ``AdminRead``，和``AdminReadWrite``。|
-|isActive|Boolean|指示如果请求者有任何主动角色分配访问级别。|
-|isEligible|Boolean|指示请求者是否具有任何访问级别的合格的角色分配。|
+|accessLevel|String|访问级别。 有效值： ``None``， ``UserRead``， ``AdminRead``，和``AdminReadWrite``。|
+|isActive|布尔值|指示如果请求者有任何主动角色分配访问级别。|
+|isEligible|布尔值|指示请求者是否具有任何访问级别的合格的角色分配。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.governancePermission"
+}-->
 ```json
 {
   "accessLevel": "String",

@@ -2,12 +2,12 @@
 title: attachment 资源类型
 description: 您可以将相关的内容添加到事件，
 localization_priority: Normal
-ms.openlocfilehash: 59e1074cea9508af45cef0b6e61ea223a3ca851e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8f7a6f9392d376995a53d9a4c06083780b0437b9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526940"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573422"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
@@ -28,12 +28,12 @@ ms.locfileid: "29526940"
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[获取附件](../api/attachment-get.md) | [attachment](attachment.md) |读取的属性和附件，附加到事件、 邮件、 Outlook 任务或公告的关系。|
-|[Add attachment to an event](../api/event-post-attachments.md) | [attachment](attachment.md) |将文件、项目或链接附件添加到事件中。|
-|[将附件添加到邮件中](../api/message-post-attachments.md) | [attachment](attachment.md) |将文件、项目或将附件链接添加到邮件中。|
+|[Add attachment to an event](../api/event-post-attachments.md) | [附件](attachment.md) |将文件、项目或链接附件添加到事件中。|
+|[将附件添加到邮件中](../api/message-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到邮件中。|
 |[将附件添加到 Outlook 任务](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |添加文件、 项或 Outlook 任务链接附件。|
 |[将附件添加到帖子中](../api/post-post-attachments.md) | [附件](attachment.md) |将文件、项目或将附件链接添加到帖子中。|
-|[列出事件的附件](../api/event-list-attachments.md) | [附件](attachment.md)集合 | 获取事件的附件列表。 |
-|[列出邮件的附件](../api/message-list-attachments.md) | [附件](attachment.md)集合 | 获取邮件的附件列表。 |
+|[列出事件的附件](../api/event-list-attachments.md) | [附件](attachment.md) 集合 | 获取事件的附件列表。 |
+|[列出邮件的附件](../api/message-list-attachments.md) | [附件](attachment.md) 集合 | 获取邮件的附件列表。 |
 |[Outlook 任务的列出附件](../api/outlooktask-list-attachments.md) | [附件](attachment.md)集合 | 获取附件 Outlook 任务的列表。 |
 |[列出帖子的附件](../api/post-list-attachments.md) | [附件](attachment.md) 集合 | 获取帖子的附件列表。 |
 |[删除](../api/attachment-delete.md) | 无 |删除事件、 邮件、 Outlook 任务或公告上的附件。 |
@@ -60,6 +60,8 @@ ms.locfileid: "29526940"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

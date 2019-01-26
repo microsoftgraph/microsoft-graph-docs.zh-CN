@@ -4,12 +4,12 @@ description: 从 rejectedSenders 列表中删除用户或组。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: e8b5a0a6a0c6a4f72805845f7c7c579043c05c0e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 841b7fc1a58b0ec77b240bfdbfe9c286ac38b310
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523132"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570644"
 ---
 # <a name="remove-rejectedsender"></a>删除 rejectedSender
 
@@ -54,7 +54,6 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
 
-DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
 ```
 
 #### <a name="response"></a>响应

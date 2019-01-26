@@ -4,12 +4,12 @@ description: 音频路由组存储在进行多方对话中的参与者之间的�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: fb1303e2a6f9e269faf5767093d418cdd0980463
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509621"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573016"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup 资源类型
 
@@ -25,16 +25,16 @@ ms.locfileid: "29509621"
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [获取 audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | 读取属性和 audioRoutingGroup 对象的关系。|
 | [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 更新接收器列表。                       |
-| [删除](../api/audioroutinggroup-delete.md)            | 无                                      | 音频路由组中删除。              |
+| [Delete](../api/audioroutinggroup-delete.md)            | 无                                      | 音频路由组中删除。              |
 
 ## <a name="properties"></a>属性
 
 | 属性      | 类型              | 说明                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | 只读。 生成的服务器。                                         |
-| 接收器     | 字符串集合 | 接收参与者 id 的列表。                                   |
+| id            | String            | 只读。 由服务器生成。                                         |
+| 接收器     | String 集合 | 接收参与者 id 的列表。                                   |
 | routingMode   | String            | 路由组模式。  可取值为：`oneToOne`、`multicast`。   |
-| sources       | 字符串集合 | 源参与者 id 的列表。                                      |
+| sources       | String 集合 | 源参与者 id 的列表。                                      |
 
 > **注意：** 路由模式确定源和接收器的限制。 支持以下路由组。
 > - `oneToOne`-源和接收器具有只有一个参与者。
@@ -59,9 +59,9 @@ ms.locfileid: "29509621"
 ```json
 {
   "id": "String (identifier)",
-  "receivers": [ "String" ],
+  "receivers": [ "Guid" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "String" ]
+  "sources": [ "Guid" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

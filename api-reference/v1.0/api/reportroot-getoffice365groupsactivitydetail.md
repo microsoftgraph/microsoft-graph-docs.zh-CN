@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365GroupsActivityDetail'
 description: 获取组执行的 Office 365 组活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 2fd95e927134aba6b5e0d420c40be9060f8d3ff8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 5f4eb0428039a9e114d34313e5b7efb32d8e40a5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985275"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575263"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 

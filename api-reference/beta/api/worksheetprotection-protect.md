@@ -4,12 +4,12 @@ description: 保护工作表。如果工作表处于受保护状态，则会引�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 52c7b9a6d3437417e6b8d527d4625e64a9d91cc8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4bb02bfd77cd1e86f6acf9b4f2f393474f484b11
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520128"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572953"
 ---
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
 
@@ -42,7 +42,7 @@ POST /workbook/worksheets/{id|name}/protection/protect
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|options|WorksheetProtectionOptions|可选。工作表保护选项。|
+|options|workbookWorksheetProtectionOptions|可选。工作表保护选项。|
 
 ## <a name="response"></a>响应
 

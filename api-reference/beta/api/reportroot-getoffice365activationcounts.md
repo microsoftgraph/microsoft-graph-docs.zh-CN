@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365ActivationCounts'
 description: 获取桌面和设备上激活的 Office 365 订阅数。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 88ee061ba61f9a0be4c8faa35f966749bf65ae76
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 635b3bf4ff66aee2ea792fa9bfaedd936447ea16
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509411"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571413"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 

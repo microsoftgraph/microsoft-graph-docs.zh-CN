@@ -2,12 +2,12 @@
 title: networkConnection 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: ce7de8d5a0f63c4d924e8092e4e9e05f984ec335
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6d28149854ed3157473b678db442ee3474e456c6
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515354"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571917"
 ---
 # <a name="networkconnection-resource-type"></a>networkConnection 资源类型
 
@@ -24,14 +24,14 @@ ms.locfileid: "29515354"
 |destinationDomain|String|目标 URL 的目标域部分。 (例如 www.contoso.com)。|
 |destinationPort|String|目标端口 （的网络连接）。|
 |destinationUrl|String|网络连接 URL/URI 字符串-排除参数。 (例如 www.contoso.com/products/default.html)|
-|Direction|connectionDirection|网络连接方向。 可取值为：`unknown`、`inbound`、`outbound`。|
+|direction|connectionDirection|网络连接方向。 可取值为：`unknown`、`inbound`、`outbound`。|
 |domainRegisteredDateTime|DateTimeOffset|目标域注册时的日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |localDnsName|String|在本地 DNS 名称解析 （例如，在情况下的主机文件已被篡改） 出现在主机的本地 DNS 缓存中。|
 |natDestinationAddress|String|网络地址转换目标 IP 地址。|
 |natDestinationPort|String|网络地址转换目标端口。|
 |natSourceAddress|String|网络地址转换源 IP 地址。|
 |natSourcePort|String|网络地址转换源端口。|
-|protocol|[securityNetworkProtocol](securitynetworkprotocolenumtype.md)|网络协议。 可能的值为： `unknown`， `ip`， `icmp`， `igmp`， `ggp`， `ipv4`， `tcp`， `pup`， `udp`， `idp`， `ipv6`， `ipv6RoutingHeader`， `ipv6FragmentHeader`， `ipSecEncapsulatingSecurityPayload`， `ipSecAuthenticationHeader`， `icmpV6`， `ipv6NoNextHeader`， `ipv6DestinationOptions`， `nd`, `raw`, `ipx`, `spx`, `spxII`.|
+|protocol| securityNetworkProtocol |网络协议。 可能的值为： `unknown`， `ip`， `icmp`， `igmp`， `ggp`， `ipv4`， `tcp`， `pup`， `udp`， `idp`， `ipv6`， `ipv6RoutingHeader`， `ipv6FragmentHeader`， `ipSecEncapsulatingSecurityPayload`， `ipSecAuthenticationHeader`， `icmpV6`， `ipv6NoNextHeader`， `ipv6DestinationOptions`， `nd`, `raw`, `ipx`, `spx`, `spxII`.|
 |riskScore|String|提供程序生成/计算风险的网络连接的分数。 建议值的范围为 0-1，这相当于百分比。|
 |sourceAddress|String|源 （即原点） IP 地址 （的网络连接）。|
 |sourcePort|String|源 （即原点） IP （网络连接端口）。|

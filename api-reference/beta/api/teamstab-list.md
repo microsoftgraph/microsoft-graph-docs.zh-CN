@@ -4,12 +4,12 @@ description: '检索团队中指定的通道中的选项卡的列表。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b2af784eaaf22217e9e96769c106dfc49de74a2a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1399de692aae23ee0e2c6805f64d094b1c06038f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519512"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575340"
 ---
 # <a name="list-tabs-in-channel"></a>在通道列表选项卡
 
@@ -75,7 +75,7 @@ Content-type: application/json
         "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
         "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
       },
-      "sortOrderIndex": 20,
+      "sortOrderIndex": "20",
       "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"
     },
     {
@@ -83,7 +83,7 @@ Content-type: application/json
       "name": "My Trello Tab",
       "teamsAppId": "23134c6b-5e4b-439c-8f70-3ded1df20805",
       "configuration": null,
-      "sortOrderIndex": 21,
+      "sortOrderIndex": "21",
       "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3a3709b35c-a0ba-467c-8001-0f66895fb9d3?label=My%20Trello%Tab"
     }
   ]

@@ -3,12 +3,13 @@ title: office365GroupsActivityDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 2968a3a5459f286e4aac69e2fd606adc1b38e39b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 1b467f73ed2a4a5e48cb1243c5b1326591bcd707
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951822"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575116"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>office365GroupsActivityDetail 资源类型
 
@@ -16,12 +17,12 @@ ms.locfileid: "27951822"
 
 | 属性                          | 类型    | 说明                              |
 | :-------------------------------- | :------ | ---------------------------------------- |
-| reportRefreshDate                 | 日期    | 内容最晚日期。          |
-| groupDisplayName                  | 字符串  | 组的显示名称。           |
-| 被                         | 布尔 | 此用户是否已被删除或软删除。 |
-| ownerPrincipalName                | 字符串  | 组的所有者主体名称。          |
-| lastActivityDate                  | 日期    | 以下方案的最后一个活动日期： 组邮箱收到电子邮件;用户可以查看、 编辑、 共享，或同步中 SharePoint 文档库; 文件用户查看 SharePoint 页面; 例如：用户发布、 读取或喜欢 Yammer 组中的邮件。 |
-| groupType                         | 字符串  | 组类型。 可能的值为：**公共**或**专用**。 |
+| reportRefreshDate                 | Date    | 内容最晚日期。          |
+| groupDisplayName                  | String  | 组的显示名称。           |
+| 被                         | 布尔值 | 此用户是否已被删除或软删除。 |
+| ownerPrincipalName                | String  | 组的所有者主体名称。          |
+| lastActivityDate                  | Date    | 以下方案的最后一个活动日期： 组邮箱收到电子邮件;用户可以查看、 编辑、 共享，或同步中 SharePoint 文档库; 文件用户查看 SharePoint 页面; 例如：用户发布、 读取或喜欢 Yammer 组中的邮件。 |
+| groupType                         | String  | 组类型。 可能的值为：**公共**或**专用**。 |
 | memberCount                       | Int64   | 组成员计数。                  |
 | externalMemberCount               | Int64   | 组外部成员计数。         |
 | exchangeReceivedEmailCount        | Int64   | 组邮箱收到的电子邮件数。 |
@@ -33,7 +34,7 @@ ms.locfileid: "27951822"
 | exchangeMailboxStorageUsedInBytes | Int64   | 使用的组邮箱的存储。   |
 | sharePointTotalFileCount          | Int64   | SharePoint 组网站中的文件总数。 |
 | sharePointSiteStorageUsedInBytes  | Int64   | 使用 SharePoint 组网站的存储。 |
-| reportPeriod                      | 字符串  | 报告涵盖天数。    |
+| reportPeriod                      | String  | 报告涵盖天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -4,12 +4,12 @@ description: 代表 Azure AD 用户面临危险。 Azure AD 不断计算用户�
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 875df6db36e4075d0d02a682ede5c177d49cfe7d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515711"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572183"
 ---
 # <a name="riskyusers-resource-type"></a>riskyUsers 资源类型
 
@@ -46,9 +46,9 @@ ms.locfileid: "29515711"
 
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|id|UserObjectId| 与给定的风险事件相关联的用户的唯一标识符。|
-|isGuest|isGuest| Risky 用户可以是家庭用户 (B2E) 或来宾用户 （B2B、 B2C）。|
-|被|被| 用户可能也不能删除。 |
+|id|string| 与给定的风险事件相关联的用户的唯一标识符。|
+|isGuest|布尔| Risky 用户可以是家庭用户 (B2E) 或来宾用户 （B2B、 B2C）。|
+|被|布尔| 用户可能也不能删除。 |
 |riskState|riskState| Risky 用户可能存在多个状态之一。 |
 |riskDetail|riskDetail| 特定状态中，risky 用户可能会因多个原因。 |
 |riskLevel|riskLevel| Risky 用户可以被视为多个风险级别之一。 |
@@ -60,9 +60,8 @@ ms.locfileid: "29515711"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json
