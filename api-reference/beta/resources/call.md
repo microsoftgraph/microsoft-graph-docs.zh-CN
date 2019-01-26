@@ -1,91 +1,91 @@
 ---
-title: 呼叫资源类型
-description: 没有传入呼叫的应用程序或应用程序创建新的传出呼叫通过时创建的**呼叫**资源`POST`上`app/calls`。
+title: call 资源类型
+description: 当应用程序有传入呼叫或应用程序通过 `app/calls` 上的 `POST` 创建新的传出呼叫时，将创建 **call** 资源。
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6c303ebe01e6051a29a932d9547f20293cb07a53
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: c66ab2f29ee44d76ed0ee300743f50cb0debdd16
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958556"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510713"
 ---
-# <a name="call-resource-type"></a>呼叫资源类型
+# <a name="call-resource-type"></a>call 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-没有传入呼叫的应用程序或应用程序创建新的传出呼叫通过时创建的**呼叫**资源`POST`上`app/calls`。
+当应用程序有传入呼叫或应用程序通过 `app/calls` 上的 `POST` 创建新的传出呼叫时，将创建 **call** 资源。
 
-作为对等或多方呼叫，可以设置呼叫。 创建或加入多方呼叫，提供`chatInfo`和`meetingInfo`。 如果这些未提供，将自动创建新的临时会议。 用于传入呼叫，高度可用的存储中, 记录这些值，以便您的应用程序事件您的应用程序崩溃中重新加入呼叫。
+呼叫可以设置为对等呼叫或多方呼叫。 若要创建或加入多方呼叫，需要提供 `chatInfo` 和 `meetingInfo`。 如果未提供，则会自动创建新的临时会议。 对于传入呼叫，将这些值记录在高可用性存储中，以便在应用程序崩溃时它可以重新加入呼叫。
 
-虽然不能多次邀请相同的标识，很可能要加入同一会议多次应用程序。 每次应用程序联接，不同呼叫`id`提供加入会议的呼叫。 我们建议使用单独的标识顺序为客户端显示它们为不同的参与者加入会议。
+尽管不能多次邀请相同的身份，但应用程序可以多次加入同一会议。 每次应用程序加入时，都会为该会议呼叫提供一个不同的呼叫 `id`。 我们建议你使用单独的身份加入会议，以便客户端将其显示为不同的参与者。
 
 ## <a name="methods"></a>方法
 
 | 方法                                                            | 返回类型                                       | 说明                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
-| [获取呼叫](../api/call-get.md)                                    | [呼叫](call.md)                                   | 阅读**呼叫**对象的属性。      |
-| [删除](../api/call-delete.md)                                   |                                                   | 删除或活动**呼叫**的挂机。        |
-| **呼叫处理**                                                 |                                                   |                                              |
-| [答案](../api/call-answer.md)                                   |                                                   | 应答传入呼叫。                     |
-| [Reject](../api/call-reject.md)                                   |                                                   | 拒绝传入的呼叫。                     |
-| [重定向](../api/call-redirect.md)                               |                                                   | 重定向传入呼叫。                   |
-| [Transfer](../api/call-transfer.md)                               |                                                   | 将呼叫转接                              |
-| **多方**                                                   |                                                   |                                              |
-| [参与者列表](../api/call-list-participants.md)             | [参与者](participant.md)集合          | 获取参与者对象集合。         |
-| [邀请参与者](../api/participant-invite.md)               | [commsOperation](commsoperation.md)               | 邀请参与者加入活动呼叫。      |
-| [将所有参与者设为都静音](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | 将呼叫中的所有参与者设为都静音。           |
-| [配置音频混音器](../api/participant-configuremixer.md)     | [commsOperation](commsoperation.md)               | 配置进行多方对话中的音频。  |
-| [创建 audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | 通过发布到 audioRoutingGroups 集合中创建新 audioRoutingGroup。 |
-| [列表 audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)集合|获取 audioRoutingGroup 对象集合。  |
-| **互动语音响应**                                    |                                                   |                                              |
-| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | 播放提示呼叫中。                     |
-| [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | 记录呼叫。                             |
-| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | 取消处理媒体。                     |
-| [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | 订阅 DTMF 声音信号。                     |
-| **自我参与者操作**                                   |                                                   |                                              |
-| [设置为静音](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | 在呼叫中的静音自我。                       |
-| [取消静音](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | 在呼叫中的取消静音自我。                     |
-| [UpdateMetadata](../api/call-updatemetadata.md)                   | [commsOperation](commsoperation.md)               | 在名单中的自助更新元数据。          |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | 启动和停止共享的调用中的屏幕                                             |
+| [Get call](../api/call-get.md)                                    | [call](call.md)                                   | 读取 **call** 对象的属性。      |
+| [Delete](../api/call-delete.md)                                   |                                                   | 删除或挂断活动**呼叫**。        |
+| **Call Handling**                                                 |                                                   |                                              |
+| [Answer](../api/call-answer.md)                                   |                                                   | 应答传入呼叫。                     |
+| [Reject](../api/call-reject.md)                                   |                                                   | 拒绝传入呼叫。                     |
+| [Redirect](../api/call-redirect.md)                               |                                                   | 重定向传入呼叫。                   |
+| [Transfer](../api/call-transfer.md)                               |                                                   | 转接呼叫                              |
+| **Multi-party**                                                   |                                                   |                                              |
+| [List participants](../api/call-list-participants.md)             | [participant](participant.md) 集合          | 获取参与者对象集合。         |
+| [Invite Participants](../api/participant-invite.md)               | [commsOperation](commsoperation.md)               | 邀请参与者加入活动呼叫。      |
+| [Mute All Participants](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | 将呼叫中的所有参与者设为静音。           |
+| [Configure Audio Mixer](../api/participant-configuremixer.md)     | [commsOperation](commsoperation.md)               | 在多方对话中配置音频。  |
+| [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | 通过发布到 audioRoutingGroups 集合创建一个新的 audioRoutingGroup。 |
+| [List audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) 集合|获取 audioRoutingGroup 对象集合。  |
+| **Interactive-Voice-Response**                                    |                                                   |                                              |
+| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | 在呼叫中播放提示。                     |
+| [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | 录制呼叫。                             |
+| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | 取消媒体处理。                     |
+| [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | 订阅 DTMF 音。                     |
+| **Self Participant Operations**                                   |                                                   |                                              |
+| [Mute](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | 在呼叫中将自己设为静音。                       |
+| [Unmute](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | 在呼叫中将自己取消静音。                     |
+| [UpdateMetadata](../api/call-updatemetadata.md)                   | [commsOperation](commsoperation.md)               | 在名单中更新自己的元数据。          |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | 在呼叫中开始和停止共享屏幕                                             |
 
 ## <a name="properties"></a>属性
 
-| 属性            | 类型                                                                                                   | Description                                                                                                                                                                                         |
+| 属性            | 类型                                                                                                   | 说明                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| activeModalities    | 字符串集合                                                                                      | 活动的形式的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。 此为只读属性。 生成的服务器。                                                    |
-| answeredBy          | [participantInfo](participantinfo.md)                                                                  | 应答呼叫参与者。 此为只读属性。 生成的服务器。                                                                                                                                |
-| callRoutes          | [callRoute](callroute.md)集合                                                                   | 呼叫已重定目标路由信息。 此为只读属性。 生成的服务器。                                                                                                                |
-| callbackUri         | 字符串                                                                                                 | 将在其传递回调回调或订阅 ID。                                                                                                                               |
-| chatInfo            | [chatInfo](chatinfo.md)                                                                                | 聊天的信息。                                                                                                                                                                               |
-| 方向           | 字符串                                                                                                 | 呼叫的方向。 可能的值是`incoming`或`outgoing`。 此为只读属性。 生成的服务器。                                                                                            |
-| id                  | String                                                                                                 | 只读。 生成的服务器。                                                                                                                                                                        |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md)或[serviceHostedMediaConfig](servicehostedmediaconfig.md) | 媒体配置。                                                                                                                                                                        |
-| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | 包含会议的功能。                                                                                                                                                             |
-| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md)或[tokenMeetingInfo](tokenmeetinginfo.md)             | 会议信息。                                                                                                                                                                            |
-| myParticipantId     | String                                                                                                 | 只读。 生成的服务器。                                                                                                                                                                        |
-| requestedModalities | String 集合                                                                                      | 请求的形式的列表。 | 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
-| resultInfo          | [resultInfo](resultinfo.md)                                                                            | 结果的信息。 例如可以保留终止原因。 此为只读属性。 生成的服务器。                                                                                                       |
-| ringingTimeoutInSeconds | Int32                                                                                              | 传出的对等呼叫的的响铃超时                                                                                                                                                     |
+| activeModalities    | String 集合                                                                                      | 活动模态的列表。 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。 只读。 由服务器生成。                                                    |
+| answeredBy          | [participantInfo](participantinfo.md)                                                                  | 已应答呼叫的参与者。 只读。 由服务器生成。                                                                                                                                |
+| callRoutes          | [callRoute](callroute.md) 集合                                                                   | 有关如何重定向呼叫的路由信息。 只读。 由服务器生成。                                                                                                                |
+| callbackUri         | String                                                                                                 | 用于传递回拨的回拨或订阅 ID。                                                                                                                               |
+| chatInfo            | [chatInfo](chatinfo.md)                                                                                | 聊天信息。                                                                                                                                                                               |
+| direction           | String                                                                                                 | 呼叫的方向。 可取值为 `incoming` 或 `outgoing`。 只读。 由服务器生成。                                                                                            |
+| id                  | String                                                                                                 | 只读。 由服务器生成。                                                                                                                                                                        |
+| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) 或 [serviceHostedMediaConfig](servicehostedmediaconfig.md) | 媒体配置。                                                                                                                                                                        |
+| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | 包含会议功能。                                                                                                                                                             |
+| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) 或 [tokenMeetingInfo](tokenmeetinginfo.md)             | 会议信息。                                                                                                                                                                            |
+| myParticipantId     | String                                                                                                 | 只读。 由服务器生成。                                                                                                                                                                        |
+| requestedModalities | String 集合                                                                                      | 请求模态的列表。 | 可取值为：`unknown`、`audio`、`video`、`videoBasedScreenSharing`、`data`。                                                                            |
+| resultInfo          | [resultInfo](resultinfo.md)                                                                            | 结果信息。 例如，可以保留终止原因。 只读。 由服务器生成。                                                                                                       |
+| ringingTimeoutInSeconds | Int32                                                                                              | 传出对等呼叫的响铃超时                                                                                                                                                     |
 | routingPolicies     | String 集合                                                                                      | 可取值为：`none`、`noMissedCall`、`disableForwardingExceptPhone`、`disableForwarding`。                                                                                                   |
-| 源              | [participantInfo](participantinfo.md)                                                                  | 呼叫发起方。                                                                                                                                                                         |
-| state               | 字符串                                                                                                 | 呼叫状态。 可取值为：`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated`。 此为只读属性。 生成的服务器。                         |
-| subject             | 字符串                                                                                                 | 对话的主题。                                                                                                                                                                    |
-| 目标             | [participantInfo](participantinfo.md)集合                                                       | 呼叫的目标。                                                                                                                                                                            |
-| tenantId            | 字符串                                                                                                 | Azure Active Directory 中的 tenantId。                                                                                                                                                                 |
-| terminationReason   | String                                                                                                 | 只读。 生成的服务器。                                                                                                                                                                        |
-| toneInfo            | [toneInfo](toneinfo.md)                                                                                | 此为只读属性。 生成的服务器。                                                                                                                                                                        |
+| source              | [participantInfo](participantinfo.md)                                                                  | 呼叫的发起方。                                                                                                                                                                         |
+| state               | String                                                                                                 | 呼叫状态。 可取值为：`incoming`、`establishing`、`ringing`、`established`、`hold`、`transferring`、`transferAccepted`、`redirecting`、`terminating`、`terminated`。 只读。 由服务器生成。                         |
+| subject             | String                                                                                                 | 对话的主题。                                                                                                                                                                    |
+| targets             | [participantInfo](participantinfo.md) 集合                                                       | 呼叫的目标。                                                                                                                                                                            |
+| tenantId            | String                                                                                                 | Azure Active Directory 中的 tenantId。                                                                                                                                                                 |
+| terminationReason   | String                                                                                                 | 只读。 由服务器生成。                                                                                                                                                                        |
+| toneInfo            | [toneInfo](toneinfo.md)                                                                                | 只读。 由服务器生成。                                                                                                                                                                        |
 
-> 注意： 属性标记为`Server generated`处理时，将忽略`POST`上`app/calls`。
+> 注意：在 `app/calls` 上处理 `POST` 时，标记为 `Server generated` 的属性将被忽略。
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
-| 关系        | 类型                                                 | Description                                                         |
+| 关系        | 类型                                                 | 说明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md)集合 | 只读。可为 NULL。                                                |
-| operations          | [commsOperation](commsoperation.md)集合       | 只读。可为 NULL。                                                |
-| participants        | [参与者](participant.md)集合             | 只读。可为 NULL。                                                |
+| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) 集合 | 只读。可为空。                                                |
+| operations          | [commsOperation](commsoperation.md) 集合       | 只读。可为空。                                                |
+| participants        | [participant](participant.md) 集合             | 只读。可为空。                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -141,7 +141,7 @@ ms.locfileid: "27958556"
 }
 ```
 
-> **注意：** 您将了解从与 Microsoft 团队安排了会议加入 URL。 下面介绍了如何从 URL 和填充提取数据`chatInfo`和`meetingInfo`。
+> **注意：** 你将在使用 Microsoft Teams 安排的会议中找到加入 URL。 下面介绍了如何从 URL 中提取数据并填充 `chatInfo` 和 `meetingInfo`。
 
 ```http
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%224b444206-207c-42f8-92a6-e332b41c88a2%22%7d
@@ -175,10 +175,15 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/call.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,21 +1,21 @@
 ---
 title: 获取照片
-description: 获取指定的 profilePhoto 或其元数据 （**profilePhoto**属性）。
+description: 获取指定的 profilePhoto 或其元数据（**profilePhoto** 属性）。
 localization_priority: Priority
-ms.openlocfilehash: be20e243a89d258c8db2105efe0c53cbea0abebf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 759c0ff3ac2585f43ea38963e10b001250702c56
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851735"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509628"
 ---
 # <a name="get-photo"></a>获取照片
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取指定的[profilePhoto](../resources/profilephoto.md)或其元数据 （**profilePhoto**属性）。
+获取指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（**profilePhoto** 属性）。
 
-GET 照片操作第一次尝试从 Office 365 中检索指定的照片。 如果照片不是 Office 365 中可用，API 尝试从 Azure Active Directory 中检索照片。
+获取照片操作首先会尝试从 Office 365 检索指定的照片。 如果 Office 365 中没有此照片，则 API 会尝试从 Azure Active Directory 检索该照片。
 
 Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
 
@@ -25,15 +25,15 @@ Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、24
 如果在用户邮箱或 Azure Active Directory 中找不到指定尺寸，返回的是尺寸“1x1”和剩余元数据。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
-> **注意：** GET 照片操作 beta 中的支持用户的工作、 学习或个人帐户。 获取照片元数据操作，但是，仅支持用户工作或学校帐户和不适用于个人帐户。
+> **注意：** 测试版中的获取照片操作支持用户的工作、学校或个人帐户。 但是获取照片元数据操作仅支持用户的工作或学校帐户，不支持个人帐户。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 对于 **user** 资源：<br/>User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
-|委派（个人 Microsoft 帐户）  <br /> **注意**： 元数据操作不受支持。 | 对于 **user** 资源：<br/>User.Read、User.ReadWrite<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
-|应用程序                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
+|委派（个人 Microsoft 帐户）  <br /> **注意**：不支持元数据操作。 | 对于 **user** 资源：<br/>User.Read、User.ReadWrite<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
+|Application                        | 对于 **user** 资源：<br/>User.Read.All、User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.Read.All、Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.Read、Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求 
 
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-### <a name="get-the-metadata-of-the-photo"></a>获取元数据的照片
+### <a name="get-the-metadata-of-the-photo"></a>获取照片的元数据
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -60,7 +60,7 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-### <a name="get-the-metadata-for-a-specific-photo-size"></a>获取特定照片大小的元数据
+### <a name="get-the-metadata-for-a-specific-photo-size"></a>获取指定照片尺寸的元数据
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photos/{size}
@@ -194,10 +194,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get photo",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/profilephoto-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

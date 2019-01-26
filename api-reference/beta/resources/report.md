@@ -3,16 +3,16 @@ title: 在 Microsoft Graph 中使用 Office 365 使用情况报表
 description: 通过 Microsoft Graph，可以访问 Office 365 使用情况报表资源，了解企业用户的 Office 365 服务使用情况。 例如，可以发现大量使用服务且要达到配额的用户，也可以发现可能完全不需要 Office 365 许可证的用户。
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: ff0ac12d2a216face3381574effb080624af97e6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3f389aa241d463bc906408e965a01482824a7084
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978023"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509152"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Office 365 使用情况报表
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过 Microsoft Graph，可以访问 Office 365 使用情况报表资源，了解企业用户的 Office 365 服务使用情况。 例如，可以发现大量使用服务且要达到配额的用户，也可以发现可能完全不需要 Office 365 许可证的用户。
 
@@ -20,11 +20,11 @@ ms.locfileid: "27978023"
 
 Microsoft Graph 通过权限控制对资源的访问。 必须指定访问报表资源所需的权限。 通常是在 Azure Active Directory (Azure AD) 门户中指定权限。 有关详细信息，请参阅 [Microsoft Graph 权限参考](/graph/permissions-reference)和[报表权限](/graph/permissions-reference#reports-permissions)。
 
-## <a name="changes-to-the-reports-apis"></a>对报告 Api 的更改
+## <a name="changes-to-the-reports-apis"></a>对报告 API 所做的更改
 
-原始的报告 Api 进行了更新，以便您可以调用 API 的而不是传递 view 参数所需的特定视图。 我们建议您启动尽快在您的应用程序中使用新的 Api。 下表列出已删除的 Api 和替换它们的新 Api。
+已更新原始报告 API，因此你可以为所需的特定视图调用 API，而不是传递视图参数。 我们建议你尽快开始在应用程序中使用新 API。 下表列出了已删除的 API 以及替换它们的新 API。
 
-| 原始 API            | 新的 API                                  |
+| 原始 API            | 新 API                                  |
 | :---------------------- | :--------------------------------------- |
 | EmailActivity           | <ul><li>[getEmailActivityUserDetail](../api/reportroot-getemailactivityuserdetail.md)</li><li>[getEmailActivityCounts](../api/reportroot-getemailactivitycounts.md)</li><li>[getEmailActivityUserCounts](../api/reportroot-getemailactivityusercounts.md)</li></ul> |
 | EmailAppUsage           | <ul><li>[getEmailAppUsageUserDetail](../api/reportroot-getemailappusageuserdetail.md)</li><li>[getEmailAppUsageAppsUserCounts](../api/reportroot-getemailappusageappsusercounts.md)</li><li>[getEmailAppUsageUserCounts](../api/reportroot-getemailappusageusercounts.md)</li><li>[getEmailAppUsageVersionsUserCounts](../api/reportroot-getemailappusageversionsusercounts.md)</li></ul> |
@@ -50,6 +50,14 @@ Microsoft Graph 通过权限控制对资源的访问。 必须指定访问报表
 借助报表资源和 API，可以通过新方式使用 Microsoft Graph 与用户进行交互，并管理他们的用户体验。 若要了解详细信息：
 
 - 深入了解对方案最有帮助的资源的方法和属性。
-- 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
+- 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
 
 需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/report.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
