@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityCounts'
 description: 获取使用情况趋势，即组织中召开的会话的次数和类型。 会话类型包括 IM、音频、视频、应用共享和文件传输。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: d98db7ce86d8491ef50d761088da8ad6eec774b1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 4b080c7ed60f07c78dcf11574277b08086613d5a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515151"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576939"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivitycounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityCounts
 
@@ -96,7 +97,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessPeerToPeerActivi
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

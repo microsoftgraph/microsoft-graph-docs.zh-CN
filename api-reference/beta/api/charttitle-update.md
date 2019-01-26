@@ -4,12 +4,12 @@ description: 更新 charttitle 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e67790672f2e31baaacd0eba500684f7b2275e97
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 109c7565cc409064ee25f6a1ee285e6f73be1edf
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509642"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577317"
 ---
 # <a name="update-charttitle"></a>更新 charttitle
 
@@ -47,7 +47,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartTitle](../resources/charttitle.md) 对象。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[workbookChartTitle](../resources/charttitle.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -71,7 +71,7 @@ Content-length: 64
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

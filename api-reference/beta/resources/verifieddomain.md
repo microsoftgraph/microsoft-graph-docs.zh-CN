@@ -1,13 +1,13 @@
 ---
 title: verifiedDomain 资源类型
-description: 指定租户的域。**组织** 实体的 **verifiedDomains** 属性是一个 VerifiedDomain 集合。
+description: 指定租户的域。组织 实体的 **verifiedDomains** 属性是一个 **VerifiedDomain** 集合。
 localization_priority: Normal
-ms.openlocfilehash: c13c3b3da39b762c26d637deaddafbee5da40160
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 01e2d174f47d08bea4de9d582ffd6126002e8f1f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513394"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576869"
 ---
 # <a name="verifieddomain-resource-type"></a>verifiedDomain 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "29513394"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.verifieddomain"
+  "@odata.type": "microsoft.graph.verifiedDomain"
 }-->
 
 ```json

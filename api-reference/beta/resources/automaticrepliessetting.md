@@ -2,12 +2,12 @@
 title: automaticRepliesSetting 资源类型
 description: '配置设置以自动通知中的邮件传入电子邮件的发件人 '
 localization_priority: Normal
-ms.openlocfilehash: 5ff16aa93042e0d66063cb62de7a8dcdf870c892
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6755fda99f7a6186316b6198bfa975d73e14b09b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529850"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576771"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>automaticRepliesSetting 资源类型
 
@@ -19,12 +19,12 @@ ms.locfileid: "29529850"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|externalAudience|String| 如果 **Status** 是 `AlwaysEnabled` 或 `Scheduled`，则表示将接收 **ExternalReplyMessage** 的已登录用户组织外部的受众组。可能的值是：`none`、`contactsOnly`、`all`。|
+|externalAudience|externalAudienceScope| 一组的访问群体已登录的用户组织的外部用户将收到**ExternalReplyMessage**，如果**状态**为`AlwaysEnabled`或`Scheduled`。 可能的值为： `none`， `contactsOnly`， `all`。|
 |externalReplyMessage|string|如果 **Status** 是 `AlwaysEnabled` 或 `Scheduled`，则表示发送给指定外部受众的自动答复。|
 |internalReplyMessage|string|如果 **Status** 为 `AlwaysEnabled` 或 `Scheduled`，则表示发送给已登录用户组织内部受众的自动答复。 |
-|scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|如果 Status 设置为 ，则自动答复的日期和时间设置为结束。 |
-|scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|如果 Status 设置为 ，则自动答复的日期和时间设置为开始。|
-|status|String|自动答复的配置状态。可能的值是：`disabled`、`alwaysEnabled`、`scheduled`。|
+|scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|如果 **Status** 设置为 `Scheduled`，则自动答复的日期和时间设置为结束。 |
+|scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|如果 **Status** 设置为 `Scheduled`，则自动答复的日期和时间设置为开始。|
+|status|automaticRepliesStatus|配置自动答复状态。 可能的值为： `disabled`， `alwaysEnabled`， `scheduled`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -3,12 +3,13 @@ title: 'reportRoot: getSharePointActivityPages'
 description: 获取用户访问的唯一页面数。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 9ac10f5896ea9b913e8816514a64993716c2fae9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 223e7718e86102c7cddd0a5211ac176434cd540c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526800"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576848"
 ---
 # <a name="reportroot-getsharepointactivitypages"></a>reportRoot: getSharePointActivityPages
 
@@ -92,7 +93,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointActivityPages(period='
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

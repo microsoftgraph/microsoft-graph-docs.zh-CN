@@ -3,12 +3,13 @@ title: 'reportRoot: getTeamsUserActivityUserDetail'
 description: 按用户获取有关 Microsoft Teams 用户活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: eb884bce47943da0f3f0a3047a65295353fa3252
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 7ca084fbae4ca7714a207364bdf0e9f525a39ff4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521535"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576414"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -104,7 +105,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserDetail(peri
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

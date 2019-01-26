@@ -3,12 +3,12 @@ title: historyItem 资源类型
 description: 表示为活动应用程序中的历史记录项。 用户活动表示单个目标应用程序-例如，TV 显示、 文档或视频游戏中当前市场活动中。 当用户启动与该活动时，以指示该活动的开始和结束时间的历史记录项捕获项目。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 582cfe71ab85602efc087d5e39005d5a9763394d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514696"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576302"
 ---
 # <a name="historyitem-resource-type"></a>historyItem 资源类型
 
@@ -29,8 +29,8 @@ ms.locfileid: "29514696"
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|状态 | EnumType | 由服务器设置。 一个用于标识有效对象的状态代码。 值： 活动更新、 删除、 忽略。|
-|userTimezone | 字符串 | 可选。 在其中用户的设备用来生成活动位于在活动创建时间的时区。 为了支持跨平台表示形式作为 Olson Id 提供的值。|
+|状态 | 枚举字符串 | 由服务器设置。 一个用于标识有效对象的状态代码。 值： 活动更新、 删除、 忽略。|
+|userTimezone | String | 可选。 在其中用户的设备用来生成活动位于在活动创建时间的时区。 为了支持跨平台表示形式作为 Olson Id 提供的值。|
 |createdDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上创建对象时的日期和时间。|
 |lastModifiedDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 的服务器上修改对象时的日期和时间。|
 |id | String | 必需。 **HistoryItem**对象的客户端集 GUID。|
@@ -61,7 +61,7 @@ ms.locfileid: "29514696"
 
 ```json
 {
-    "status": "String (EnumType)",
+    "status": "enum-string",
     "createdDateTime": "DateTimeOffset",
     "lastModifiedDateTime": "DateTimeOffset",
     "id": "String",

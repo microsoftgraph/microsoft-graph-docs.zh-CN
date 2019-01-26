@@ -2,12 +2,12 @@
 title: Get endpoint
 description: 检索的属性和特定的终结点对象的关系。
 localization_priority: Normal
-ms.openlocfilehash: 7c5b7bd28b06e20dbc92b09ff961214828749999
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7b7f7bee3d6aa935ca4a0a15721363aa159a7b94
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511056"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576561"
 ---
 # <a name="get-endpoint"></a>Get endpoint
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Endpoint"
+  "@odata.type": "microsoft.graph.endpoint"
 } -->
 ```http
 HTTP/1.1 200 OK

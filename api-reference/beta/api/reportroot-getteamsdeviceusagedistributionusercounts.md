@@ -3,12 +3,13 @@ title: 'reportRoot: getTeamsDeviceUsageDistributionUserCounts'
 description: 在选定的时间段内按设备类型获取 Microsoft Teams 唯一用户数。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: c1098bdda5d832aa98934b91c501f4e91a3512dc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: d0e83451b0be65e689549d415ef66fe5c9534687
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522544"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575875"
 ---
 # <a name="reportroot-getteamsdeviceusagedistributionusercounts"></a>reportRoot: getTeamsDeviceUsageDistributionUserCounts
 
@@ -94,7 +95,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageDistributionUser
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

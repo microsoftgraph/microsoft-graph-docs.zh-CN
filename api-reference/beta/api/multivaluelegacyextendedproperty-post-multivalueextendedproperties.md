@@ -2,12 +2,12 @@
 title: 创建多值扩展属性
 description: '在新建或现有的资源实例中创建一个或多个多值扩展属性。 '
 localization_priority: Normal
-ms.openlocfilehash: ba54bc3de2eb80fd7283f1a313448b77a04bbe4d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4ed9af6fda2117fee7ef1ac50c69c4f006abd45d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510867"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576260"
 ---
 # <a name="create-multi-value-extended-property"></a>创建多值扩展属性
 
@@ -37,7 +37,7 @@ ms.locfileid: "29510867"
 ## <a name="permissions"></a>权限
 正在根据资源创建中的扩展的属性和权限键入 （委派或应用程序） 您请求，至少要调用此 API 是下表中所指定的权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | Application |
 |:-----|:-----|:-----|:-----|
 | [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
@@ -150,15 +150,15 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>请求正文
 
-提供每个 [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) 对象在资源实例的 **multiValueExtendedProperties** 集合属性中的 JSON 正文。
+提供资源实例的**multiValueLegacyExtendedProperty**集合属性中的每个[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)对象的 JSON 正文。
 
 |**属性**|**类型**|**说明**|
 |:-----|:-----|:-----|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| 一个或多个多值扩展属性的数组。 |
-|id|String|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
-|值|string|对于 **multiValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) collection| 一个或多个多值扩展属性的数组。 |
+|id|String|对于**multiValueLegacyExtendedProperty**集合中每个属性，指定此选项可标识该属性。 它必须遵循的受支持的格式之一。 有关详细信息，请参阅[Outlook 扩展属性概述](../resources/extended-properties-overview.md)。 必需。|
+|值|string|对于**multiValueLegacyExtendedProperty**集合中每个属性，指定该属性值。 必需。|
 
-在_新建_资源实例中创建扩展属性时，除了新的 **multiValueExtendedProperties** 集合，请提供资源实例的 JSON 表示形式（即 [邮件](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md) 等）。
+在_新_的资源实例中，除了新**multiValueLegacyExtendedProperty**集合中，创建的扩展的属性时提供的资源实例 （即，[邮件](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)的 JSON 表示形式[事件](../resources/event.md)等。)
 
 ## <a name="response"></a>响应
 
@@ -178,7 +178,7 @@ PATCH /groups/{id}/events/{id}
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
 
-第一个示例在同一个 POST 操作的全新事件中创建一个多值扩展属性。除了通常要包括的新事件的属性，请求正文还包括 **multiValueExtendedProperties** 集合（包含一个扩展属性）。请求正文包括该多值扩展属性的如下参数：
+此示例创建一个多值扩展属性中所有中相同的 POST 操作的新事件。 除了您通常要包括的新事件的属性，在请求正文包括**multiValueLegacyExtendedProperty**集合，其中包含一个扩展的属性。 在请求正文的多值扩展属性包括：
 
 - **id**，将此属性指定为包含指定 GUID 和 `Recreation` 名称的字符串数组。 
 - **value**，将 `Recreation` 指定为包含 3 个字符串值（`["Food", "Hiking", "Swimming"]`）的数组。
@@ -219,7 +219,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "multiValueExtendedProperties": [
+  "multiValueLegacyExtendedProperty": [
      {
            "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
            "value": ["Food", "Hiking", "Swimming"]
@@ -239,7 +239,7 @@ Content-Type: application/json
 
 ##### <a name="request-2"></a>请求 2
 
-第二个示例为指定的邮件创建一个多值扩展属性。扩展属性是 **multiValueExtendedProperties** 集合中的唯一元素。请求正文包括扩展属性的如下参数：
+第二个示例创建一个多值扩展属性指定的消息。 **MultiValueLegacyExtendedProperty**集合中的唯一元素的扩展属性。 在请求正文的扩展属性包括：
 
 - **id**，将此属性指定为包含指定 GUID 和名称 `Palette` 的字符串数组。
 - **value**，将 `Palette` 指定为包含 3 个字符串值（`["Green", "Aqua", "Blue"]`）的数组。
@@ -251,7 +251,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_as77AACHsLrBBBA='
 Content-Type: application/json
 
 {
-  "multiValueExtendedProperties": [
+  "multiValueLegacyExtendedProperty": [
       {
          "id":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
          "value":["Green", "Aqua", "Blue"]

@@ -2,12 +2,12 @@
 title: 获取 oAuth2Permissiongrant
 description: 检索的属性和 oAuth2Permissiongrant 对象的关系。
 localization_priority: Normal
-ms.openlocfilehash: 2b389e7f811444b9dc9fb1d9c2f619006611e11e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 17719e175e29bbc7167fd295fb982a37f22ada52
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518042"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576694"
 ---
 # <a name="get-oauth2permissiongrant"></a>获取 oAuth2Permissiongrant
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
 } -->
 ```http
 HTTP/1.1 200 OK

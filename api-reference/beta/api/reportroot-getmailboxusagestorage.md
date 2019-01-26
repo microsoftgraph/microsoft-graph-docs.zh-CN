@@ -3,12 +3,13 @@ title: 'reportRoot: getMailboxUsageStorage'
 description: 获取组织使用的存储空间。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 23a5de57ba9a57b7e35e7cc1760c0cb284c98000
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: cda3efc8993b0d4098aaedcc05dab8e73c4af9b7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521696"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577163"
 ---
 # <a name="reportroot-getmailboxusagestorage"></a>reportRoot: getMailboxUsageStorage
 
@@ -92,7 +93,7 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageStorage(period='D7')
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

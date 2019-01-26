@@ -2,12 +2,12 @@
 title: oAuth2PermissionGrant 资源类型
 description: 代表已被授予对 （由服务主体） 应用程序的 OAuth 2.0 范围 （委派权限） 为用户或管理员同意过程的一部分。
 localization_priority: Normal
-ms.openlocfilehash: ea6486aedca4c3fcf73e59a5652ccf517fb01ddc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5d3d900395843f39645f61d1b984e3ed4f79d476
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516922"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576967"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>oAuth2PermissionGrant 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "29516922"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
 }-->
 
 ```json
@@ -44,12 +44,12 @@ ms.locfileid: "29516922"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |clientId|String| 服务主体的 id 授予同意以访问 （由 resourceId 属性） 的资源时模拟用户。 |
-|consentType|String| 指示由 （代表组织） 管理员或个人是否提供同意。 可取值为“AllPrincipals”或“Principal”。 |
-|ExpiryTime|DateTimeOffset| 目前，到期时间值将被忽略。 |
-|id|String| 唯一标识符 只读。|
+|consentType|String| 指示由 （代表组织） 管理员或个人是否提供同意。 可能的值为*AllPrincipals*或*主体*。 |
+|expiryTime|DateTimeOffset| 目前，到期时间值将被忽略。 |
+|id|String| 唯一标识符。 只读。|
 |principalId|String| 如果 consentType *AllPrincipals*此值为 null，并同意应用于组织中的所有用户。 如果*主体*consentType，此属性将指定的用户的授予许可，并且仅适用于该用户的 id。 |
 |resourceId|String| 指定已向其授予访问的资源服务主体的 id。 |
-|scope|字符串| OAuth 2.0 访问令牌中指定资源应用程序应产生预期[范围](/graph/permissions-reference)声明的值。 例如， *User.Read* |
+|scope|String| OAuth 2.0 访问令牌中指定资源应用程序应产生预期[范围](/graph/permissions-reference)声明的值。 例如， *User.Read* |
 |startTime|DateTimeOffset| 目前，开始时间值将被忽略。 |
 
 ## <a name="relationships"></a>关系

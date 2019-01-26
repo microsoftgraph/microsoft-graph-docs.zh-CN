@@ -4,12 +4,12 @@ description: OneNote 笔记本中的分区组。分区组可以包含分区和�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 65e420d014add658a538deb42c01518cd94d611c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0b7368f18058c0c8b00c5b34e5a804521dc64682
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523706"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575518"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup 资源类型
 
@@ -29,7 +29,7 @@ OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -49,23 +49,23 @@ OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|createdBy|[identitySet](identityset.md)|创建项的用户、设备和应用程序标识。只读。|
+|createdBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |createdDateTime|DateTimeOffset|分区组的创建日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
-|id|字串符号|分区组的唯一标识符。只读。|
+|id|String|分区组的唯一标识符。只读。|
 |lastModifiedBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改分区组的日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
 |displayName|String|分区组的名称。|
 |sectionGroupsUrl|String|`sectionGroups` 导航属性的 URL，其将返回分区组中的所有分区组。只读。|
 |sectionsUrl|String|`sections` 导航属性的 URL，其将返回分区组中的所有分区。只读。|
-|self|字符串|可以在其中获取关于分区阻的详细信息的终结点。只读。|
+|self|String|可以在其中获取关于分区阻的详细信息的终结点。只读。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|包含分区组的笔记本。只读。|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|包含分区组的分区组。只读。|
-|sectionGroups|[SectionGroup](sectiongroup.md) collection|分区中的分区组。只读。可为 NULL。|
-|节|[Section](section.md) collection|分区组中的分区。只读。可为 Null。|
+|parentNotebook|[笔记本](notebook.md)|包含分区组的笔记本。只读。|
+|parentSectionGroup|[sectionGroup](sectiongroup.md)|包含分区组的分区组。只读。|
+|sectionGroups|[sectionGroup](sectiongroup.md)集合|分区中的分区组。只读。可为 NULL。|
+|sections|[onenoteSection](section.md)集合|分区组中的分区。只读。可为 Null。|
 
 ## <a name="methods"></a>方法
 

@@ -4,12 +4,12 @@ description: 检索 chartseries 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 03087ae52746af9e5f069ae2d7e4f229c3ee7302
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b080393246163ff70484460cdcac984eb92c7eba
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526296"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577121"
 ---
 # <a name="get-chartseries"></a>获取 ChartSeries
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -4,12 +4,12 @@ description: 检索 scopedRoleMembership 资源的列表。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4254723a4902772cf45b1af024058a32192bc8fb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06ed1a4f06b3d348e81039b5701f5adff9e3b85b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521038"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576134"
 ---
 # <a name="list-scopedrolemembers"></a>列表 scopedRoleMembers
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedrolemembership",
+  "@odata.type": "microsoft.graph.scopedRoleMembership",
   "isCollection": true
 } -->
 ```http

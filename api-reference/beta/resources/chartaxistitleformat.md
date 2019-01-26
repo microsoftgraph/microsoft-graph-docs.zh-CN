@@ -4,12 +4,12 @@ description: 表示图表坐标轴标题格式。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 188561f3e34063b6006cebd84283b8455686ed84
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: aeb39c46b349bda9f71385d13ef8e9ab17320823
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528625"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575917"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>ChartAxisTitleFormat 资源类型
 
@@ -27,7 +27,24 @@ ms.locfileid: "29528625"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|font|[ChartFont](chartfont.md)|表示图表坐标轴标题对象的字体属性，例如字体名称、字体大小、颜色等。只读。|
+|font|[WorkbookChartFont](chartfont.md)|表示图表坐标轴标题对象的字体属性，例如字体名称、字体大小、颜色等。只读。|
+
+## <a name="json-representation"></a>JSON 表示形式
+
+下面是资源的 JSON 表示形式。
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartAxisTitleFormat"
+}-->
+
+```json
+{
+  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

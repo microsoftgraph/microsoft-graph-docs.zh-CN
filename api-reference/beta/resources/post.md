@@ -4,12 +4,12 @@ description: 代表 converstaionThread 实体内的单个公告项目。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 554892bdfed45d0fba9b90a084db67c0bb329486
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 007eb540ef4a4f99742a745dcf257f2cd39d5ef9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519953"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576911"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
 
@@ -36,8 +36,8 @@ ms.locfileid: "29519953"
     "attachments",
     "extensions",
     "inReplyTo",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.post"
 }-->
@@ -71,7 +71,7 @@ ms.locfileid: "29519953"
 |conversationThreadId|String|对话线程的唯一 ID。只读。|
 |createdDateTime|DateTimeOffset|创建帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |from|[收件人](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
-|hasAttachments|Boolean|指示帖子是否具有至少一个附件。这是默认属性。|
+|hasAttachments|布尔|指示帖子是否具有至少一个附件。这是默认属性。|
 |id|String| 只读。|
 |importance | String | 组文章的重要性： `low`， `normal`， `high`。 |
 |lastModifiedDateTime|DateTimeOffset|帖子上次修改时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
@@ -85,8 +85,8 @@ ms.locfileid: "29519953"
 |attachments|[附件](attachment.md) 集合|为公告[fileAttachment](fileattachment.md)和[itemAttachment](itemattachment.md)， [referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 NULL。|
 |extensions|[扩展](extension.md)集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
 |inReplyTo|[Post](post.md)|此文章答复中[conversationThread](conversationthread.md)早期文章。 只读。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为帖子定义的单值扩展属性的集合。只读。可为 Null。|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 Null。|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为帖子定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="methods"></a>方法
 

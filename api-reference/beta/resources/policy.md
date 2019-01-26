@@ -2,12 +2,12 @@
 title: 策略资源类型
 description: 表示 Azure AD 策略。 策略是可以在应用程序、 服务主体、 组或分配给他们的整个组织强制实施的自定义规则。 当前只有一种类型的策略有：
 localization_priority: Normal
-ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bd946da13fc36925e284ad2af29585b37d0a9a3a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518784"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576197"
 ---
 # <a name="policy-resource-type"></a>策略资源类型
 
@@ -33,9 +33,9 @@ ms.locfileid: "29518784"
 ### <a name="common-properties"></a>通用属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|definition|String|字符串版本的特定的策略。 请参阅下文。 必需。|
+|definition|String 集合|字符串版本的特定的策略。 请参阅下文。 必需。|
 |displayName|String|自定义策略名称。 必需。|
-|IsOrganizationDefault|Boolean|如果设置为 true 时，激活此策略。 可以有多个策略相同的策略类型，但只有一个可激活为默认组织。 可选，默认值为 false。|
+|IsOrganizationDefault|布尔值|如果设置为 true 时，激活此策略。 可以有多个策略相同的策略类型，但只有一个可激活为默认组织。 可选，默认值为 false。|
 |type|String|指定策略的类型。 必须当前"TokenLifetimePolicy"。 必需。|
 
 #### <a name="common-relationships"></a>常见的关系
@@ -70,6 +70,13 @@ ms.locfileid: "29518784"
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.policy"
+}-->
 
 ```json
 {

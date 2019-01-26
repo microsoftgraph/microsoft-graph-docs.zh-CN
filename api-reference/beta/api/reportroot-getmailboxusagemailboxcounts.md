@@ -3,12 +3,13 @@ title: 'reportRoot: getMailboxUsageMailboxCounts'
 description: 获取组织中的用户邮箱总数和报表周期内的每日活跃邮箱数。 如果用户发送或阅读任何电子邮件，则将邮箱视为活跃邮箱。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 8d9e99de7a69d62dd7ab24e6cefee9a7c35044f7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 851eb456d9a8b099251f3937f9993b2150ffb594
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528982"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575966"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 
@@ -93,7 +94,7 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageMailboxCounts(period
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

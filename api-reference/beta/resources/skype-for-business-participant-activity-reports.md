@@ -3,12 +3,13 @@ title: Skype for Business 参与者活动报表
 description: 您可以在整个组织会议活动获取详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 61c47820febba8f49b98ca19c82d12770da95ce2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 31810a7ca5df52724089783efe208e5a28bf0cfb
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516838"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576743"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Skype for Business 参与者活动报表
 

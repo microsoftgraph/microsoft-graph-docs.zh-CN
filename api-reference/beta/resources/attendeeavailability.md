@@ -2,12 +2,12 @@
 title: attendeeAvailability 资源类型
 description: 与会者的类型和忙/闲状态。
 localization_priority: Normal
-ms.openlocfilehash: f831a88a14fc6ec970332208389e15a5adc49377
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 37b344f110557d6e04129a2b93592009635bddcf
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508935"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576281"
 ---
 # <a name="attendeeavailability-resource-type"></a>attendeeAvailability 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "29508935"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |attendee|[AttendeeBase](attendeebase.md)|与会者类型，即是人员还是资源；如果是人员，是必需还是可选。|
-|availability|String| 与会者的忙/闲状态。可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
+|availability|freeBusyStatus| 可用性的与会者的状态。 可能的值为： `free`， `tentative`， `busy`， `oof`， `workingElsewhere`， `unknown`。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

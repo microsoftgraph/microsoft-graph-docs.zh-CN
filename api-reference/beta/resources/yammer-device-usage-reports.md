@@ -3,12 +3,13 @@ title: Yammer 设备使用情况报表
 description: Yammer 设备使用情况报表可用于了解用户使用什么设备在 Yammer 上进行交互。 可以按设备类型查看在一段选定时间内的用户数，并按用户查看详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: f5b24d6d235a8719f5f4b7df0389b5e5971dd8cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 57dcba3a91b15b4980d9e76b7aad6251008f5966
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521864"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577429"
 ---
 # <a name="yammer-device-usage-reports"></a>Yammer 设备使用情况报表
 

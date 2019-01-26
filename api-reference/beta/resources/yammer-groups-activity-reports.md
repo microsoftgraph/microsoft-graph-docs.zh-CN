@@ -3,12 +3,13 @@ title: Yammer 组活动报表
 description: 可以在组织中获得的 Yammer 组活动见解并查看多少个 Yammer 组被创建和使用。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 05e5826a85e7d2e37af82cdf6277857746b1b922
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 07ec3db93088dd00af1b8595e5d059fc2cede774
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514157"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576022"
 ---
 # <a name="yammer-groups-activity-reports"></a>Yammer 组活动报表
 

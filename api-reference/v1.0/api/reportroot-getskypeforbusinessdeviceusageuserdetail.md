@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessDeviceUsageUserDetail'
 description: 获取用户的 Skype for Business 设备使用情况的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 78ee4819bbddcf0619a9f378ff12507bc69534f6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: bf4fb6da750b54d220ca6d7319132ff62b3661f5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919412"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577296"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusageuserdetail"></a>reportRoot: getSkypeForBusinessDeviceUsageUserDetail
 

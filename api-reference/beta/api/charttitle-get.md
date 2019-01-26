@@ -4,12 +4,12 @@ description: 检索 charttitle 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 10af5ceb844c165e453422f22e0f7f52a4b66112
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d62f81270c6da12e728b040019c7bca20159ddf0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511497"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576575"
 ---
 # <a name="get-charttitle"></a>获取 ChartTitle
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

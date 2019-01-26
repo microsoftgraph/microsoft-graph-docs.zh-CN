@@ -4,12 +4,12 @@ description: 使用此 API 创建新 ChartSeries。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 89022d8468f842753a4b74ace2f802f4ee23ad09
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 901a6ff0d8305f0ef8b7eb92aab0d0eea6c40e6e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516082"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576701"
 ---
 # <a name="create-chartseries"></a>创建 ChartSeries
 
@@ -60,13 +60,13 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-在请求正文中，提供 [ChartSeries](../resources/chartseries.md) 对象的 JSON 表示形式。
+在请求正文中，提供[chartSeries](../resources/chartseries.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 } -->
 ```http
 HTTP/1.1 201 Created

@@ -2,12 +2,12 @@
 title: 取消 privilegedRoleAssignmentRequest
 description: 取消 privilegedRoleAssignmentRequest。
 localization_priority: Normal
-ms.openlocfilehash: 0cca3f33e6e027c18e24862dc4736006058f8e41
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2d717f0ca6fccc274b4ee80cda6b65f02f01abec
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528471"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577506"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>取消 privilegedRoleAssignmentRequest
 
@@ -40,7 +40,7 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 Ok` 响应代码。 返回 [privilegedRoleAssignmentRequest] (.../ resources/privilegedRoleAssignmentRequest.md) 响应正文中。
+如果成功，此方法返回 `200 Ok` 响应代码。 它返回[privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md)响应正文中。
 
 ### <a name="error-codes"></a>错误代码
 此 API 返回的标准 HTTP 错误代码。 此外，将返回下表中列出的自定义的错误代码。
@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests('7c53453e
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequests"
+  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -92,7 +92,7 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self"，
+    "userId": "Self",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```

@@ -3,12 +3,13 @@ title: office365ActivationCounts 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 4787672df6462e8d1f343e4dace43ede7c79ff37
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 7bc21be693a5c68ecd5c6a1e4e44d53c9261acdb
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991179"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575525"
 ---
 # <a name="office365activationcounts-resource-type"></a>office365ActivationCounts 资源类型
 
@@ -16,8 +17,8 @@ ms.locfileid: "27991179"
 
 | 属性          | 类型   | 说明                              |
 | :---------------- | :----- | ---------------------------------------- |
-| reportRefreshDate | 日期   | 内容最晚日期。          |
-| productType       | 字符串 | 产品类型，如"Office 365 ProPlus"、"Project 客户端"或"Visio Pro for Office 365"。 |
+| reportRefreshDate | Date   | 内容最晚日期。          |
+| productType       | String | 产品类型，如"Office 365 ProPlus"、"Project 客户端"或"Visio Pro for Office 365"。 |
 | windows           | Int64  | Windows 上激活计数。 此数值包括 Windows 中的任何计算机上的每个激活。 |
 | mac               | Int64  | Mac OS 上激活计数。          |
 | android           | Int64  | 在 Android 设备上激活计数。  |

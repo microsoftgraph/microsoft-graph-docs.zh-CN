@@ -4,12 +4,12 @@ description: 使用此 API 创建新的表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 67f34a0310fcfd0ba6641eeecbbb8c3e6fc2a05f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f88a7e931aa1d3b0991c4e749268ca70ea32082e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528590"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577009"
 ---
 # <a name="create-table"></a>创建表
 
@@ -47,7 +47,7 @@ POST /workbook/tables/$/add
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Table](../resources/table.md) 对象。
+如果成功，此方法返回`201 Created`响应正文中的响应代码和[workbookTable](../resources/table.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -71,7 +71,7 @@ Content-length: 109
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 201 Created

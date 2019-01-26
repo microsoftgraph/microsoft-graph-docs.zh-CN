@@ -3,12 +3,13 @@ title: 'reportRoot: getYammerActivityUserDetail'
 description: 获取用户执行的 Yammer 活动的详细信息。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: a08447c8926c4448052285b22b36d5bd1bd0c2e4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: e0a35141615bbe99a5c022f47ff2c111a93a3dec
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523496"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575637"
 ---
 # <a name="reportroot-getyammeractivityuserdetail"></a>reportRoot: getYammerActivityUserDetail
 
@@ -105,7 +106,7 @@ GET https://graph.microsoft.com/beta/reports/getYammerActivityUserDetail(period=
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

@@ -2,12 +2,12 @@
 title: secureScores 资源类型
 description: '顶部 = n，其中 n = 要检索的数据的天数。 '
 localization_priority: Normal
-ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: fef5c43130aecf1604677d07f785a0cee0539568
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528660"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576078"
 ---
 # <a name="securescores-resource-type"></a>secureScores 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "29528660"
 |   enabledServices |   String 集合   |   租户 （例如，Exchange online、 Skype、 Sharepoint） 的 Microsoft 提供服务。   |
 |   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)集合    |按不同的作用域 （例如，按行业，平均由安装的平均） 和控制类别 （Identity、 数据、 设备、 应用程序、 基础结构） 范围内的平均得分。 |
 |   controlScores | [controlScore](controlscore.md)集合  |   包含租户分数的一组控件。   |
-
+|   vendorInformation | [securityVendorInformation](securityvendorinformation.md) | 包含有关安全产品/服务供应商、 提供商和 subprovider 详细信息 (例如，供应商 = Microsoft; 提供程序 = Windows Defender ATP; subProvider = AppLocker)。|
 
 ## <a name="relationships"></a>关系
 
@@ -53,24 +53,23 @@ ms.locfileid: "29528660"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScore"
 }-->
 
 ```json
 {
-"id": "String",
-"azureTenantId": "Guid",
-"createdDate": "DateTimeOffset",
-"licensedUserCount": "Int32",
-"activeUserCount": "Int32",
-"currentScore": "Int32",
-"maxScore": "Int32",
-"averageScore": "Double",
-"enabledServices": "Collection(string)",
-"averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
-"controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
+    "id": "String",
+    "azureTenantId": "String (identifier)",
+    "createdDateTime": "DateTimeOffset",
+    "licensedUserCount": "Int32",
+    "activeUserCount": "Int32",
+    "currentScore": "Double",
+    "maxScore": "Double",    
+    "enabledServices": ["String"],
+    "averageComparativeScores": [{ "@odata.type":"microsoft.graph.averageComparativeScores"}],
+    "controlScores": [{"@odata.type":"microsoft.graph.controlScores"}],
+    "vendorInformation" : "microsoft.graph.securityVendorInformation"
 }
-
 ```
 
 

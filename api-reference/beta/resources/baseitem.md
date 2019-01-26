@@ -4,12 +4,12 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: 5bc3aab8460c1d0c6774d2f8afda13c4fc89f69d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bf1b0c71491f502f6a047f7c174516d2dcbf0f6e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521584"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577415"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem 资源类型
 
@@ -30,6 +30,8 @@ ms.locfileid: "29521584"
   "blockType": "resource",
   "optionalProperties": [ "createdBy", "lastModifiedBy", "description", "parentReference", "webUrl" ],
   "keyProperty": "id",
+  "abstract": true,
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.baseItem"
 }-->
 
@@ -55,15 +57,24 @@ ms.locfileid: "29521584"
 | id                   | string            | 驱动器唯一标识符。只读。                                         |
 | createdBy            | [identitySet][]   | 识别创建项目的用户、设备或应用程序。只读。        |
 | createdDateTime      | dateTimeOffset    | 创建项的日期和时间。只读。                                             |
-| eTag                 | 字符串            | 该项目的 ETag。只读。                                                          |
+| 说明          | String            | 提供用户可见项目的说明。 可选。                             |
+| eTag                 | string            | 该项目的 ETag。只读。                                                          |
 | lastModifiedBy       | [identitySet][]   | 上次修改项目的用户、设备和应用程序的标识。只读。 |
 | lastModifiedDateTime | dateTimeOffset    | 上次修改项目的日期和时间。只读。                                   |
 | name                 | string            | 项目名称。读写。                                                      |
 | parentReference      | [itemReference][] | 父信息（如果此项具有父级）。读写。                              |
 | WebUrl               | string (url)      | 在浏览器中显示此资源的 URL。只读。                              |
 
+## <a name="relationships"></a>关系
+
+| 关系       | 类型     | 说明
+|:-------------------|:---------|:---------------------------------------------
+| createdByUser      | [user][] | 创建了项的用户的身份。 只读。
+| lastModifiedByUser | [user][] | 上次修改项的用户的身份。 只读。
+
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
+[user]: user.md
 
 ## <a name="remarks"></a>注解
 

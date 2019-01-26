@@ -2,12 +2,12 @@
 title: 更新 governanceRoleAssignmentRequests
 description: 使管理员能够更新其决策 (`AdminApproved`或`AdminDenied`) 中的状态的 governanceRoleAssignmentRequests 上`PendingAdminDecision`。
 localization_priority: Normal
-ms.openlocfilehash: 870cd685aade9bb722660b550ae210c6e10d1fe8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 01178492517ae0ce1e2ed011e749e54af8e5d805
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514612"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576526"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>更新 governanceRoleAssignmentRequests
 
@@ -16,7 +16,7 @@ ms.locfileid: "29514612"
 使管理员能够更新其决策 (`AdminApproved`或`AdminDenied`) 上[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)中的状态的`PendingAdminDecision`。
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 >**注意：** 此 API 还需要请求者必须至少一个`Active`管理员角色分配 (`owner`或`user access administrator`) 对[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)所属的资源。 
 
@@ -44,7 +44,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 |:-------------|:----------------------|:--------|:----------|
 |原因        |String                 |✓        |提供由管理员为其决策的原因。|
 |决策        |String                 |✓        |角色分配请求的管理员决策。 值应更新为`AdminApproved`或`AdminDenied`。|
-|Schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | 角色分配请求的时间表。 状态的`AdminApproved`，需要。|
+|计划      |[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|        | 角色分配请求的时间表。 状态的`AdminApproved`，需要。|
 |assignmentState      |String|         | 状态的工作分配，以及的值可以是`Eligible`或`Active`。 为决策的`AdminApproved`，需要。 |
 ### <a name="response"></a>响应
 此方法可以仅适用于请求的状态中的`PendingAdminDecision`。

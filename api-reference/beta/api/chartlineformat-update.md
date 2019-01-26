@@ -4,12 +4,12 @@ description: 更新 chartlineformat 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a75e93fd43d476f983da6aed8102675e0e8f5350
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 654dc4be9f0e2463100a6b61ac7bfe646a4ceb11
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529619"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576225"
 ---
 # <a name="update-chartlineformat"></a>更新 chartlineformat
 
@@ -47,7 +47,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlin
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartLineFormat](../resources/chartlineformat.md) 对象。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[workbookChartLineFormat](../resources/chartlineformat.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -69,7 +69,7 @@ Content-length: 28
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 } -->
 ```http
 HTTP/1.1 200 OK

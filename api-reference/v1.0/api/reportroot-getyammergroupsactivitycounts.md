@@ -3,12 +3,13 @@ title: 'reportRoot: getYammerGroupsActivityCounts'
 description: 获取组中已发布、已阅读和已赞的 Yammer 消息数。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 7fc2ebf916a1a3e99c6ef34d1c0048a621e62707
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: d1509747798507d10588f05ebeb4d9b5efec2b97
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975951"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577275"
 ---
 # <a name="reportroot-getyammergroupsactivitycounts"></a>reportRoot: getYammerGroupsActivityCounts
 

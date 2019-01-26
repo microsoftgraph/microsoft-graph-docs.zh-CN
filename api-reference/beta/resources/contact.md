@@ -4,12 +4,12 @@ description: 联系人是 Outlook 中的一个项目，你可以在这里组织�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d2bdc1be9e504bc72ce12ffe924b6da0812b99ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 41eed344abda9e06040a7c20027e219526c83e8f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513576"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576855"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 
@@ -31,9 +31,9 @@ ms.locfileid: "29513576"
   "blockType": "resource",
   "optionalProperties": [
     "extensions",
-    "multiValueExtendedProperties",
+    "multiValueLegacyExtendedProperty",
     "photo",
-    "singleValueExtendedProperties"
+    "singleValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.contact"
 }-->
@@ -85,9 +85,9 @@ ms.locfileid: "29513576"
 |:---------------|:--------|:----------|
 |assistantName|String|联系人助理的姓名。|
 |birthday|DateTimeOffset|联系人的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|categories|字符串集合|与联系人关联的类别。 每个类别对应于[outlookCategory](outlookcategory.md)为用户定义的**displayName**属性。|
+|categories|String collection|与联系人关联的类别。 每个类别对应于[outlookCategory](outlookcategory.md)为用户定义的**displayName**属性。|
 |changeKey|String|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
-|children|String 集合|联系人子女的姓名。|
+|children|String collection|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
 |createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |部门|String|联系人所在的部门。|
@@ -98,7 +98,7 @@ ms.locfileid: "29513576"
 |gender |String |联系人的性别。 |
 |generation|String|联系人所属的代。|
 |givenName|String|联系人的名。|
-|id|字串符号|联系人的唯一标识符。只读。|
+|id|String|联系人的唯一标识符。只读。|
 |imAddresses|String collection|联系人的即时消息 (IM) 地址。|
 |initials|String|联系人的姓名缩写。|
 |jobTitle|String|联系人的职务。|
@@ -114,9 +114,9 @@ ms.locfileid: "29513576"
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
-|title|字符串|联系人的职位。|
+|title|String|联系人的职位。|
 |websites |[website](website.md) collection|与联系人关联的网站。 |
-|WeddingAnniversary |日期 |联系人的婚礼周年日。 |
+|weddingAnniversary |Date |联系人的婚礼周年日。 |
 |yomiCompanyName|String|联系人的注音日文公司名称。|
 |yomiGivenName|String|联系人的注音日文名字。|
 |yomiSurname|String|联系人的注音日文姓氏。|
@@ -124,10 +124,10 @@ ms.locfileid: "29513576"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|extensions|[扩展](extension.md)集合|打开扩展名为该联系人定义的集合。 可为 Null。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为联系人定义的多值扩展属性的集合。只读。可为 Null。|
+|extensions|[扩展](extension.md)集合|打开扩展名为该联系人定义的集合。 可为 NULL。|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为联系人定义的多值扩展属性的集合。只读。可为 Null。|
 |photo|[照片](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="methods"></a>方法
 | 方法           | 返回类型    |说明|

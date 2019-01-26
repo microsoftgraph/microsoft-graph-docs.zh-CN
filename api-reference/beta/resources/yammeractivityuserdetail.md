@@ -3,12 +3,13 @@ title: yammerActivityUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: d24e21c9525d49b7af5f8c4efaddd606c20c162b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: eea520e6024bb050001461fb5ada5c90ea2b2125
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923031"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575826"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>yammerActivityUserDetail 资源类型
 
@@ -16,12 +17,12 @@ ms.locfileid: "27923031"
 
 | 属性          | 类型              |
 | :---------------- | :---------------- |
-| reportRefreshDate | 日期              |
-| userPrincipalName | 字符串            |
-| displayName       | 字符串            |
-| userState         | 字符串            |
-| stateChangeDate   | 日期              |
-| lastActivityDate  | 日期              |
+| reportRefreshDate | Date              |
+| userPrincipalName | String            |
+| displayName       | String            |
+| userState         | String            |
+| stateChangeDate   | Date              |
+| lastActivityDate  | Date              |
 | postedCount       | Int64             |
 | readCount         | Int64             |
 | likedCount        | Int64             |

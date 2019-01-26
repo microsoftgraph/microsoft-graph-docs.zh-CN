@@ -4,12 +4,12 @@ description: 包含使用项目的属性的复杂类型。 上次访问该资源
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 4df15bf635785aba054d52beb89b5ac04d48d3d3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 04e064d5ebf8599466218722d89f46ececc5e58c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526828"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577485"
 ---
 # <a name="usagedetails-resource-type"></a>usageDetails 资源类型
 
@@ -20,7 +20,13 @@ ms.locfileid: "29526828"
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.usageDetails"
+}-->
 ```json
 {
   "lastAccessedDateTime": "DateTimeOffset",

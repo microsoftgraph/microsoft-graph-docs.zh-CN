@@ -2,12 +2,12 @@
 title: programControl 资源类型
 description: 在 Azure AD 中访问审阅功能，程序 control 对象代表链接到程序访问审阅的一个控件。
 localization_priority: Normal
-ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 82d9263a909fb11e688ffa6b27f0cf92601ae9e9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511413"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576554"
 ---
 # <a name="programcontrol-resource-type"></a>programControl 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "29511413"
 | `status`                 |`String`                | 控件的生命周期状态。                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | 创建日期和时间的程序控制。                                        |
 | `owner`                  |[userIdentity](useridentity.md)   | 创建程序控制的用户。                                               |
-| `resource`               |`programResource`       | 资源、 组或应用程序，此程序控制访问审阅的目标。                   |
+| `resource`               | [programResource](programresource.md)       | 资源、 组或应用程序，此程序控制访问审阅的目标。                   |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

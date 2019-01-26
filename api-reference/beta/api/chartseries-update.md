@@ -4,12 +4,12 @@ description: 更新 chartseries 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 312c2a0a219cd1f88ede106f253c0c9019109253
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d00a3c56e70ebce30d5763e7db7e94669cf7bb7e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514577"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577240"
 ---
 # <a name="update-chartseries"></a>更新 chartseries
 
@@ -31,7 +31,7 @@ ms.locfileid: "29514577"
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
@@ -45,7 +45,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartSeries](../resources/chartseries.md) 对象。
+如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[workbookChartSeries](../resources/chartseries.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -67,7 +67,7 @@ Content-length: 26
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 } -->
 ```http
 HTTP/1.1 200 OK

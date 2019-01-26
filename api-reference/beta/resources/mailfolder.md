@@ -4,12 +4,12 @@ description: 用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 25a491a23840de009386d7fbb2e9ee8d0fef7b4e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513086"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576729"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
@@ -32,17 +32,17 @@ GET /me/mailFolders/drafts
 
 | 已知文件夹名称 | 说明 |
 |:-----------------------|:------------|
-| Archive | 存档文件夹邮件发送到在支持的 Outlook 客户端使用 One_Click 存档功能时。 **注意：** 这是不相同的存档邮箱功能的 Exchange online。 |
+| 存档 | 存档文件夹邮件发送到在支持的 Outlook 客户端使用 One_Click 存档功能时。 **注意：** 这是不相同的存档邮箱功能的 Exchange online。 |
 | 混乱 | 混乱文件夹低优先级邮件移动到时使用的混乱功能。 |
-| Conflicts | 包含邮箱中的冲突项目的文件夹。 |
+| 冲突 | 包含邮箱中的冲突项目的文件夹。 |
 | conversationhistory | 其中 Skype 保存 IM 对话 （如果 Skype 配置这样） 中的文件夹。 |
 | DeletedItems | 文件夹项目移到时被删除。 |
 | 草稿 | 包含未发送的邮件的文件夹。 |
-| 收件箱 | "收件箱"文件夹。 |
-| junkemail | "垃圾电子邮件"文件夹。 |
+| 收件箱 | 收件箱文件夹中。 |
+| junkemail | 垃圾邮件文件夹中。 |
 | localfailures | 包含本地客户端上存在，但无法上载到服务器的项目的文件夹。 |
 | msgfolderroot | "顶部的信息存储"文件夹中。 此文件夹的父文件夹的普通邮件客户端，如收件箱中显示的文件夹。 |
-| 发件箱 | "发件箱"文件夹。 |
+| 发件箱 | 发件箱文件夹中。 |
 | recoverableitemsdeletions | 包含软删除项目的文件夹： 删除从已删除邮件文件夹中，或通过按 shift + delete 在 Outlook 中。 此文件夹不可见在任何 Outlook 电子邮件客户端，但是与其进行交互的最终用户可以通过中 Outlook 或 Outlook web 上的**从服务器恢复已删除邮件**功能。 |
 | 已计划 | 包含计划重新显示在适用于 iOS 的 Outlook 中使用的日程安排功能收件箱中的邮件文件夹。 |
 | searchfolders | 在用户的邮箱中定义的所有搜索文件夹的父文件夹。 |
@@ -100,8 +100,8 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 |childFolders|[MailFolder](mailfolder.md) 集合|mailFolder 中的子文件夹集合。|
 |messageRules | [messageRule](messagerule.md) 集合 | 适用于用户“收件箱”文件夹的规则集合。 |
 |messages|[邮件](message.md) 集合|mailFolder 中的邮件集合。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的多值扩展属性的集合。只读。可为 NULL。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 mailFolder 定义的单值扩展属性的集合。只读。可为 NULL。|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的多值扩展属性的集合。只读。可为 NULL。|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 mailFolder 定义的单值扩展属性的集合。只读。可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -113,8 +113,8 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
     "childFolders",
     "messageRules",
     "messages",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mailFolder"
@@ -132,8 +132,8 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 ```
 

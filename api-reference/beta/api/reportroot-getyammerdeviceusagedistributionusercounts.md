@@ -3,12 +3,13 @@ title: 'reportRoot: getYammerDeviceUsageDistributionUserCounts'
 description: 按设备类型获取用户数。
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 5d8f74926d6cbfee6a22f9a6789fb232f1166b55
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 407960889f20178b03ad3865959d99cb8a1a417b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511371"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577310"
 ---
 # <a name="reportroot-getyammerdeviceusagedistributionusercounts"></a>reportRoot: getYammerDeviceUsageDistributionUserCounts
 
@@ -96,7 +97,7 @@ GET https://graph.microsoft.com/beta/reports/getYammerDeviceUsageDistributionUse
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- { "blockType": "ignored" } --> 
 

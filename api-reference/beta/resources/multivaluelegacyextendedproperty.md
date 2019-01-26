@@ -2,12 +2,12 @@
 title: multiValueLegacyExtendedProperty 资源类型
 description: 包含值集合的扩展属性。
 localization_priority: Normal
-ms.openlocfilehash: 86ba1969e06dc549d1fca00148cbea96f94cf4b6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: de77f94076fe6bb2f0aa3ded3b1839b8d25ce752
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512946"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575889"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>multiValueLegacyExtendedProperty 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "29512946"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | 支持的资源实例：[消息](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md)、[日历](../resources/calendar.md)、[联系人](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md)、 [Outlook 任务](../resources/outlooktask.md)或[Outlook 任务文件夹](../resources/outlooktaskfolder.md)。 请注意，不支持[发布](../resources/post.md)的组。 | 在新建或现有的支持资源实例中创建 multiValueLegacyExtendedProperty。 |
+|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | 支持的资源实例：[消息](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md)、[日历](../resources/calendar.md)、[联系人](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md)、 [Outlook 任务](../resources/outlooktask.md)或[Outlook 任务文件夹](../resources/outlooktaskfolder.md)。 请注意，不支持[发布](../resources/post.md)的组。 | 在新建或现有的支持资源实例中创建 **multiValueLegacyExtendedProperty**。 |
 |[Get](../api/multivaluelegacyextendedproperty-get.md) |展开[为支持的资源实例 （[消息](../resources/message.md)、 [mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md)、[日历](../resources/calendar.md)、[联系人](../resources/contact.md)、 [contactFolder](../resources/contactfolder.md)、 [Outlook 任务](../resources/outlooktask.md)、 [Outlook 任务文件夹](../resources/outlooktaskfolder.md)或组[发布](../resources/post.md)）multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)对象。 |使用 `$expand` 获取具有扩展属性的资源实例。|
 
 ## <a name="properties"></a>属性
@@ -43,7 +43,7 @@ ms.locfileid: "29512946"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.multivaluelegacyextendedproperty"
+  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
 }-->
 
 ```json

@@ -4,12 +4,12 @@ description: 获取组的直接成员的列表。 一组可将用户、 联系�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f1643aa759926cd466d121d1c20ec1ae40bbc7cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 07004a315bc2b35777c080f7bbdbab8f433f0942
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509243"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577450"
 ---
 # <a name="list-group-members"></a>列表组成员
 
@@ -75,8 +75,9 @@ Content-type: application/json
 
 {
   "value": [
-    "@odata.type": "#microsoft.graph.user",
     {
+    "@odata.type": "#microsoft.graph.user",
+    
       "businessPhones": [
         "businessPhones-value"
       ],
