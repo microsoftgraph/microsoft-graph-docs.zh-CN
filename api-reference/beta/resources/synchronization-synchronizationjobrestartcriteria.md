@@ -2,27 +2,27 @@
 title: synchronizationJobRestartCriteria 资源类型
 description: 定义的范围的[synchronizationJob： 重新启动](../api/synchronization_synchronizationjob_restart.md)操作。
 localization_priority: Normal
-ms.openlocfilehash: 1e6ac952808f80d191fc93e9a804411ec4459d4c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 960bfa56d0bb6921ca971722d894d1b837bfab49
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512638"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572302"
 ---
-# <a name="synchronizationjobrestartcriteria-resource-type"></a><span data-ttu-id="76ebb-103">synchronizationJobRestartCriteria 资源类型</span><span class="sxs-lookup"><span data-stu-id="76ebb-103">synchronizationJobRestartCriteria resource type</span></span>
+# <a name="synchronizationjobrestartcriteria-resource-type"></a><span data-ttu-id="16562-103">synchronizationJobRestartCriteria 资源类型</span><span class="sxs-lookup"><span data-stu-id="16562-103">synchronizationJobRestartCriteria resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="76ebb-104">定义的范围的[synchronizationJob： 重新启动](../api/synchronization_synchronizationjob_restart.md)操作。</span><span class="sxs-lookup"><span data-stu-id="76ebb-104">Defines the scope of the [synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md) action.</span></span>
+<span data-ttu-id="16562-104">定义的范围的[synchronizationJob： 重新启动](../api/synchronization-synchronizationjob-restart.md)操作。</span><span class="sxs-lookup"><span data-stu-id="16562-104">Defines the scope of the [synchronizationJob: restart](../api/synchronization-synchronizationjob-restart.md) action.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="76ebb-105">属性</span><span class="sxs-lookup"><span data-stu-id="76ebb-105">Properties</span></span>
-| <span data-ttu-id="76ebb-106">属性</span><span class="sxs-lookup"><span data-stu-id="76ebb-106">Property</span></span>     | <span data-ttu-id="76ebb-107">类型</span><span class="sxs-lookup"><span data-stu-id="76ebb-107">Type</span></span>   |<span data-ttu-id="76ebb-108">说明</span><span class="sxs-lookup"><span data-stu-id="76ebb-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="16562-105">属性</span><span class="sxs-lookup"><span data-stu-id="16562-105">Properties</span></span>
+| <span data-ttu-id="16562-106">属性</span><span class="sxs-lookup"><span data-stu-id="16562-106">Property</span></span>     | <span data-ttu-id="16562-107">类型</span><span class="sxs-lookup"><span data-stu-id="16562-107">Type</span></span>   |<span data-ttu-id="16562-108">说明</span><span class="sxs-lookup"><span data-stu-id="16562-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="76ebb-109">resetScope</span><span class="sxs-lookup"><span data-stu-id="76ebb-109">resetScope</span></span>|<span data-ttu-id="76ebb-110">String</span><span class="sxs-lookup"><span data-stu-id="76ebb-110">String</span></span>| <span data-ttu-id="76ebb-111">以逗号分隔的下列值的组合： `Full`， `QuarantineState`， `Watermark`， `Escrows`， `ConnectorDataStore`。</span><span class="sxs-lookup"><span data-stu-id="76ebb-111">Comma-separated combination of the following values: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`.</span></span> <span data-ttu-id="76ebb-112">使用`Full`如果希望所有选项。</span><span class="sxs-lookup"><span data-stu-id="76ebb-112">Use `Full` if you want all of the options.</span></span>|
+|<span data-ttu-id="16562-109">resetScope</span><span class="sxs-lookup"><span data-stu-id="16562-109">resetScope</span></span>|<span data-ttu-id="16562-110">String</span><span class="sxs-lookup"><span data-stu-id="16562-110">String</span></span>| <span data-ttu-id="16562-111">以逗号分隔的下列值的组合： `Full`， `QuarantineState`， `Watermark`， `Escrows`， `ConnectorDataStore`。</span><span class="sxs-lookup"><span data-stu-id="16562-111">Comma-separated combination of the following values: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`.</span></span> <span data-ttu-id="16562-112">使用`Full`如果希望所有选项。</span><span class="sxs-lookup"><span data-stu-id="16562-112">Use `Full` if you want all of the options.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="76ebb-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="76ebb-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="16562-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="16562-113">JSON representation</span></span>
 
-<span data-ttu-id="76ebb-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="76ebb-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="16562-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="16562-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

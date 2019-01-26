@@ -4,28 +4,28 @@ description: 将图表元素的填充格式设置为统一颜色。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e841ee13719b7d19f1ca306ad3a555b447cb9cb6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6c9e7a897d0dfb7a2577f69dff4fb9ac8f841cce
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518490"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573079"
 ---
-# <a name="chartfill-setsolidcolor"></a><span data-ttu-id="65af5-103">ChartFill: setSolidColor</span><span class="sxs-lookup"><span data-stu-id="65af5-103">ChartFill: setSolidColor</span></span>
+# <a name="chartfill-setsolidcolor"></a><span data-ttu-id="8251f-103">ChartFill: setSolidColor</span><span class="sxs-lookup"><span data-stu-id="8251f-103">ChartFill: setSolidColor</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="65af5-104">将图表元素的填充格式设置为统一颜色。</span><span class="sxs-lookup"><span data-stu-id="65af5-104">Sets the fill formatting of a chart element to a uniform color.</span></span>
-## <a name="permissions"></a><span data-ttu-id="65af5-105">权限</span><span class="sxs-lookup"><span data-stu-id="65af5-105">Permissions</span></span>
-<span data-ttu-id="65af5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="65af5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8251f-104">将图表元素的填充格式设置为统一颜色。</span><span class="sxs-lookup"><span data-stu-id="8251f-104">Sets the fill formatting of a chart element to a uniform color.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8251f-105">权限</span><span class="sxs-lookup"><span data-stu-id="8251f-105">Permissions</span></span>
+<span data-ttu-id="8251f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8251f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="65af5-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="65af5-108">Permission type</span></span>      | <span data-ttu-id="65af5-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="65af5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8251f-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="8251f-108">Permission type</span></span>      | <span data-ttu-id="8251f-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8251f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="65af5-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="65af5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="65af5-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="65af5-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="65af5-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="65af5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="65af5-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="65af5-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="65af5-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="65af5-114">Application</span></span> | <span data-ttu-id="65af5-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="65af5-115">Not supported.</span></span> |
+|<span data-ttu-id="8251f-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8251f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8251f-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8251f-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="8251f-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8251f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8251f-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8251f-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="8251f-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="8251f-114">Application</span></span> | <span data-ttu-id="8251f-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8251f-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="65af5-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="65af5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8251f-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8251f-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
@@ -33,27 +33,27 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/setSolidCol
 POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidColor
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="65af5-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="65af5-117">Request headers</span></span>
-| <span data-ttu-id="65af5-118">名称</span><span class="sxs-lookup"><span data-stu-id="65af5-118">Name</span></span>       | <span data-ttu-id="65af5-119">说明</span><span class="sxs-lookup"><span data-stu-id="65af5-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8251f-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="8251f-117">Request headers</span></span>
+| <span data-ttu-id="8251f-118">名称</span><span class="sxs-lookup"><span data-stu-id="8251f-118">Name</span></span>       | <span data-ttu-id="8251f-119">说明</span><span class="sxs-lookup"><span data-stu-id="8251f-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="65af5-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="65af5-120">Authorization</span></span>  | <span data-ttu-id="65af5-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="65af5-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="65af5-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="65af5-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="65af5-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="65af5-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="8251f-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8251f-120">Authorization</span></span>  | <span data-ttu-id="8251f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8251f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8251f-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="8251f-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="8251f-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="8251f-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="65af5-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="65af5-126">Request body</span></span>
-<span data-ttu-id="65af5-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="65af5-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8251f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8251f-126">Request body</span></span>
+<span data-ttu-id="8251f-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="8251f-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="65af5-128">参数</span><span class="sxs-lookup"><span data-stu-id="65af5-128">Parameter</span></span>    | <span data-ttu-id="65af5-129">类型</span><span class="sxs-lookup"><span data-stu-id="65af5-129">Type</span></span>   |<span data-ttu-id="65af5-130">说明</span><span class="sxs-lookup"><span data-stu-id="65af5-130">Description</span></span>|
+| <span data-ttu-id="8251f-128">参数</span><span class="sxs-lookup"><span data-stu-id="8251f-128">Parameter</span></span>    | <span data-ttu-id="8251f-129">类型</span><span class="sxs-lookup"><span data-stu-id="8251f-129">Type</span></span>   |<span data-ttu-id="8251f-130">说明</span><span class="sxs-lookup"><span data-stu-id="8251f-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="65af5-131">color</span><span class="sxs-lookup"><span data-stu-id="65af5-131">color</span></span>|<span data-ttu-id="65af5-132">string</span><span class="sxs-lookup"><span data-stu-id="65af5-132">string</span></span>|<span data-ttu-id="65af5-133">表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。</span><span class="sxs-lookup"><span data-stu-id="65af5-133">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").</span></span>|
+|<span data-ttu-id="8251f-131">color</span><span class="sxs-lookup"><span data-stu-id="8251f-131">color</span></span>|<span data-ttu-id="8251f-132">string</span><span class="sxs-lookup"><span data-stu-id="8251f-132">string</span></span>|<span data-ttu-id="8251f-133">表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。</span><span class="sxs-lookup"><span data-stu-id="8251f-133">HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").</span></span>|
 
-## <a name="response"></a><span data-ttu-id="65af5-134">响应</span><span class="sxs-lookup"><span data-stu-id="65af5-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8251f-134">响应</span><span class="sxs-lookup"><span data-stu-id="8251f-134">Response</span></span>
 
-<span data-ttu-id="65af5-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="65af5-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="8251f-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="8251f-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="65af5-137">示例</span><span class="sxs-lookup"><span data-stu-id="65af5-137">Example</span></span>
-<span data-ttu-id="65af5-138">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="65af5-138">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="65af5-139">请求</span><span class="sxs-lookup"><span data-stu-id="65af5-139">Request</span></span>
-<span data-ttu-id="65af5-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="65af5-140">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8251f-137">示例</span><span class="sxs-lookup"><span data-stu-id="8251f-137">Example</span></span>
+<span data-ttu-id="8251f-138">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="8251f-138">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="8251f-139">请求</span><span class="sxs-lookup"><span data-stu-id="8251f-139">Request</span></span>
+<span data-ttu-id="8251f-140">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8251f-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chartfill_setsolidcolor"
@@ -68,12 +68,11 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="65af5-141">响应</span><span class="sxs-lookup"><span data-stu-id="65af5-141">Response</span></span>
-<span data-ttu-id="65af5-142">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="65af5-142">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="8251f-141">响应</span><span class="sxs-lookup"><span data-stu-id="8251f-141">Response</span></span>
+<span data-ttu-id="8251f-142">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="8251f-142">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

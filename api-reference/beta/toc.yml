@@ -653,7 +653,7 @@ items:
       items:
       - name: Create
         href: api/application-post-calls.md
-      - name: 获取呼叫
+      - name: Get call
         href: api/call-get.md
       - name: 删除/挂断
         href: api/call-delete.md
@@ -661,7 +661,7 @@ items:
         href: api/call-answer.md
       - name: Reject
         href: api/call-reject.md
-      - name: 重定向
+      - name: Redirect
         href: api/call-redirect.md
       - name: Transfer
         href: api/call-transfer.md
@@ -687,7 +687,7 @@ items:
           href: api/participant-mute.md
         - name: 将所有参与者设为都静音
           href: api/participant-muteall.md
-        - name: 参与者列表
+        - name: List participants
           href: api/call-list-participants.md
         - name: 邀请参与者
           href: api/participant-invite.md
@@ -6703,7 +6703,7 @@ items:
         href: api/approleassignment-update.md
       - name: 删除 appRoleAssignment
         href: api/approleassignment-delete.md
-    - name: 应用程序
+    - name: Application
       href: resources/application.md
       items:
       - name: 应用程序列表
@@ -6762,7 +6762,7 @@ items:
         href: api/directory-deleteditems-restore.md
       - name: 由用户拥有的删除列表项
         href: api/directory-deleteditems-user-owned.md
-    - name: Device
+    - name: 设备
       href: resources/device.md
       items:
       - name: 列出设备
@@ -7406,8 +7406,8 @@ items:
         href: api/sectiongroup-list-sections.md
       - name: 创建分区
         href: api/sectiongroup-post-sections.md
-    - name: 页面
-      href: resources/page.md
+    - name: Onenote 页面
+      href: resources/onenotepage.md
       items:
       - name: 列出页面
         href: api/onenote-list-pages.md
@@ -8270,8 +8270,8 @@ items:
         href: api/chart-setdata.md
       - name: 设置位置数据
         href: api/chart-setposition.md
-    - name: 已命名的项目
-      href: resources/nameditem.md
+    - name: 工作簿的已命名项目
+      href: resources/workbooknameditem.md
       items:
       - name: 已命名项的列表
         href: api/nameditem-get.md
@@ -8325,9 +8325,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 443efbc89a19ae068b60bc47eb9b967f5b893aaa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fe9913f85fd7b81857a4137a9896c5ecab7f45ea
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421268"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573443"

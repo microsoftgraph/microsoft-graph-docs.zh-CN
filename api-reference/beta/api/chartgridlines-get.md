@@ -4,52 +4,52 @@ description: 检索 chartgridlines 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 98cd42bc38f58a87a9c7abb28184958ae193b324
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7ee70c5afde0a5c6d66b8ce97f9feae861351375
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521773"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574500"
 ---
-# <a name="get-chartgridlines"></a><span data-ttu-id="4fafd-103">获取 ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="4fafd-103">Get ChartGridlines</span></span>
+# <a name="get-chartgridlines"></a><span data-ttu-id="c0593-103">获取 ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="c0593-103">Get ChartGridlines</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4fafd-104">检索 chartgridlines 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="4fafd-104">Retrieve the properties and relationships of chartgridlines object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4fafd-105">权限</span><span class="sxs-lookup"><span data-stu-id="4fafd-105">Permissions</span></span>
-<span data-ttu-id="4fafd-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4fafd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c0593-104">检索 chartgridlines 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="c0593-104">Retrieve the properties and relationships of chartgridlines object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c0593-105">权限</span><span class="sxs-lookup"><span data-stu-id="c0593-105">Permissions</span></span>
+<span data-ttu-id="c0593-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c0593-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4fafd-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="4fafd-108">Permission type</span></span>      | <span data-ttu-id="4fafd-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4fafd-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c0593-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="c0593-108">Permission type</span></span>      | <span data-ttu-id="c0593-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c0593-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4fafd-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4fafd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4fafd-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4fafd-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="4fafd-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4fafd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4fafd-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4fafd-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="4fafd-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="4fafd-114">Application</span></span> | <span data-ttu-id="4fafd-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4fafd-115">Not supported.</span></span> |
+|<span data-ttu-id="c0593-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c0593-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c0593-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c0593-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c0593-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c0593-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c0593-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c0593-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c0593-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="c0593-114">Application</span></span> | <span data-ttu-id="c0593-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c0593-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4fafd-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4fafd-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c0593-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c0593-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4fafd-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4fafd-117">Optional query parameters</span></span>
-<span data-ttu-id="4fafd-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="4fafd-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c0593-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c0593-117">Optional query parameters</span></span>
+<span data-ttu-id="c0593-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="c0593-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4fafd-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4fafd-119">Request headers</span></span>
-| <span data-ttu-id="4fafd-120">名称</span><span class="sxs-lookup"><span data-stu-id="4fafd-120">Name</span></span>      |<span data-ttu-id="4fafd-121">说明</span><span class="sxs-lookup"><span data-stu-id="4fafd-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c0593-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="c0593-119">Request headers</span></span>
+| <span data-ttu-id="c0593-120">名称</span><span class="sxs-lookup"><span data-stu-id="c0593-120">Name</span></span>      |<span data-ttu-id="c0593-121">说明</span><span class="sxs-lookup"><span data-stu-id="c0593-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="4fafd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4fafd-122">Authorization</span></span>  | <span data-ttu-id="4fafd-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4fafd-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4fafd-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="4fafd-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="4fafd-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="4fafd-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="c0593-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c0593-122">Authorization</span></span>  | <span data-ttu-id="c0593-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c0593-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c0593-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c0593-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="c0593-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="c0593-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4fafd-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="4fafd-128">Request body</span></span>
-<span data-ttu-id="4fafd-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4fafd-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c0593-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="c0593-128">Request body</span></span>
+<span data-ttu-id="c0593-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c0593-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4fafd-130">响应</span><span class="sxs-lookup"><span data-stu-id="4fafd-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c0593-130">响应</span><span class="sxs-lookup"><span data-stu-id="c0593-130">Response</span></span>
 
-<span data-ttu-id="4fafd-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [ChartGridlines](../resources/chartgridlines.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4fafd-131">If successful, this method returns a `200 OK` response code and [ChartGridlines](../resources/chartgridlines.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4fafd-132">示例</span><span class="sxs-lookup"><span data-stu-id="4fafd-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4fafd-133">请求</span><span class="sxs-lookup"><span data-stu-id="4fafd-133">Request</span></span>
-<span data-ttu-id="4fafd-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4fafd-134">Here is an example of the request.</span></span>
+<span data-ttu-id="c0593-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [ChartGridlines](../resources/chartgridlines.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="c0593-131">If successful, this method returns a `200 OK` response code and [ChartGridlines](../resources/chartgridlines.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c0593-132">示例</span><span class="sxs-lookup"><span data-stu-id="c0593-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c0593-133">请求</span><span class="sxs-lookup"><span data-stu-id="c0593-133">Request</span></span>
+<span data-ttu-id="c0593-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c0593-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_chartgridlines"
@@ -57,12 +57,12 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
 ```
-##### <a name="response"></a><span data-ttu-id="4fafd-135">响应</span><span class="sxs-lookup"><span data-stu-id="4fafd-135">Response</span></span>
-<span data-ttu-id="4fafd-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4fafd-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c0593-135">响应</span><span class="sxs-lookup"><span data-stu-id="c0593-135">Response</span></span>
+<span data-ttu-id="c0593-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c0593-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 } -->
 ```http
 HTTP/1.1 200 OK
