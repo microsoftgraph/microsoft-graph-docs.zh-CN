@@ -1,67 +1,75 @@
 ---
 title: Azure AD 审核日志 API 概述
-description: Azure Active Directory (Azure AD) 跟踪用户活动和登录指标，并创建审核日志报告可帮助您了解您的用户如何访问和利用 Azure AD 服务。 若要分析的数据，这些报告和创建组织的特定需要的自定义解决方案，请使用 Azure AD Microsoft Graph API。
+description: Azure Active Directory (Azure AD) 可跟踪用户活动和登录指标，并创建审核日志报告，帮助你了解用户如何访问和利用 Azure AD 服务。 使用 Microsoft Graph API for Azure AD 分析这些报告的基础数据，并根据组织的特定需求创建自定义解决方案。
 localization_priority: Priority
-ms.openlocfilehash: 07d285ce4e7fbf736900c1d6d4acdf159b451424
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 89be0007ae6c13fb48ba165ca991f5dfa9d9b9cf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826220"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509600"
 ---
-# <a name="azure-ad-audit-log-api-overview"></a><span data-ttu-id="fd7e1-104">Azure AD 审核日志 API 概述</span><span class="sxs-lookup"><span data-stu-id="fd7e1-104">Azure AD audit log API overview</span></span>
+# <a name="azure-ad-audit-log-api-overview"></a><span data-ttu-id="8bb66-104">Azure AD 审核日志 API 概述</span><span class="sxs-lookup"><span data-stu-id="8bb66-104">Azure AD audit log API overview</span></span>
 
-> <span data-ttu-id="fd7e1-105">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fd7e1-106">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fd7e1-107">Azure Active Directory (Azure AD) 跟踪用户活动和登录指标，并创建审核日志报告可帮助您了解您的用户如何访问和利用 Azure AD 服务。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-107">Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and leverage Azure AD services.</span></span> <span data-ttu-id="fd7e1-108">若要分析的数据，这些报告和创建组织的特定需要的自定义解决方案，请使用 Azure AD Microsoft Graph API。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-108">Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs.</span></span>
+<span data-ttu-id="8bb66-105">Azure Active Directory (Azure AD) 可跟踪用户活动和登录指标，并创建审核日志报告，帮助你了解用户如何访问和利用 Azure AD 服务。</span><span class="sxs-lookup"><span data-stu-id="8bb66-105">Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and leverage Azure AD services.</span></span> <span data-ttu-id="8bb66-106">使用 Microsoft Graph API for Azure AD 分析这些报告的基础数据，并根据组织的特定需求创建自定义解决方案。</span><span class="sxs-lookup"><span data-stu-id="8bb66-106">Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs.</span></span>
 
-## <a name="what-are-azure-ad-activity-logs"></a><span data-ttu-id="fd7e1-109">什么是 Azure AD 活动日志？</span><span class="sxs-lookup"><span data-stu-id="fd7e1-109">What are Azure AD activity logs?</span></span>
+## <a name="what-are-azure-ad-activity-logs"></a><span data-ttu-id="8bb66-107">什么是 Azure AD 活动日志？</span><span class="sxs-lookup"><span data-stu-id="8bb66-107">What are Azure AD activity logs?</span></span>
 
-<span data-ttu-id="fd7e1-110">Azure AD 提供了两种类型的活动日志：</span><span class="sxs-lookup"><span data-stu-id="fd7e1-110">Azure AD provides two types of activity logs:</span></span>
+<span data-ttu-id="8bb66-108">Azure AD 提供了两种类型的活动日志：</span><span class="sxs-lookup"><span data-stu-id="8bb66-108">Azure AD provides two types of activity logs:</span></span>
 
-- <span data-ttu-id="fd7e1-111">审核日志</span><span class="sxs-lookup"><span data-stu-id="fd7e1-111">audit logs</span></span> 
-- <span data-ttu-id="fd7e1-112">登录日志</span><span class="sxs-lookup"><span data-stu-id="fd7e1-112">sign-in logs</span></span>
+- <span data-ttu-id="8bb66-109">审核日志</span><span class="sxs-lookup"><span data-stu-id="8bb66-109">audit logs</span></span> 
+- <span data-ttu-id="8bb66-110">登录日志</span><span class="sxs-lookup"><span data-stu-id="8bb66-110">sign-in logs</span></span>
 
-### <a name="audit-logs"></a><span data-ttu-id="fd7e1-113">审核日志</span><span class="sxs-lookup"><span data-stu-id="fd7e1-113">Audit logs</span></span>
+### <a name="audit-logs"></a><span data-ttu-id="8bb66-111">审核日志</span><span class="sxs-lookup"><span data-stu-id="8bb66-111">Audit logs</span></span>
 
-<span data-ttu-id="fd7e1-114">审核日志活动报告提供有权访问您的租户中执行每个任务的历史记录。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-114">The audit logs activity report provides you with access to the history of every task performed in your tenant.</span></span> <span data-ttu-id="fd7e1-115">审核日志报告为您提供的合规性系统活动记录。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-115">The audit logs report provides you with records of system activities for compliance.</span></span> <span data-ttu-id="fd7e1-116">在其他中提供的数据使您能够解决常见方案，如：</span><span class="sxs-lookup"><span data-stu-id="fd7e1-116">Amongst others, the provided data enables you to address common scenarios such as:</span></span>
+<span data-ttu-id="8bb66-112">通过审核日志活动报告，你可以访问在租户中执行的每项任务的历史记录。</span><span class="sxs-lookup"><span data-stu-id="8bb66-112">The audit logs activity report provides you with access to the history of every task performed in your tenant.</span></span> <span data-ttu-id="8bb66-113">审核日志报告为你提供了系统合规活动的记录。</span><span class="sxs-lookup"><span data-stu-id="8bb66-113">The audit logs report provides you with records of system activities for compliance.</span></span> <span data-ttu-id="8bb66-114">除此之外，提供的数据还可让你了解常见情景，例如：</span><span class="sxs-lookup"><span data-stu-id="8bb66-114">Amongst others, the provided data enables you to address common scenarios such as:</span></span>
 
-- <span data-ttu-id="fd7e1-117">谁将管理组的访问权限授予目录用户？</span><span class="sxs-lookup"><span data-stu-id="fd7e1-117">Who granted admin group access to a directory user?</span></span>
+- <span data-ttu-id="8bb66-115">谁向管理员组授予了访问目录用户的权限？</span><span class="sxs-lookup"><span data-stu-id="8bb66-115">Who granted admin group access to a directory user?</span></span>
 
-- <span data-ttu-id="fd7e1-118">哪些用户登录到的最近收购的应用程序？</span><span class="sxs-lookup"><span data-stu-id="fd7e1-118">Which users are signing in to a recently acquired app?</span></span>
+- <span data-ttu-id="8bb66-116">哪些用户正在登录最近购买的应用程序？</span><span class="sxs-lookup"><span data-stu-id="8bb66-116">Which users are signing in to a recently acquired app?</span></span>
 
-- <span data-ttu-id="fd7e1-119">在目录内进行多少密码重置？</span><span class="sxs-lookup"><span data-stu-id="fd7e1-119">How many passwords resets were made within the directory?</span></span>
+- <span data-ttu-id="8bb66-117">在目录中进行了多少次密码重置？</span><span class="sxs-lookup"><span data-stu-id="8bb66-117">How many passwords resets were made within the directory?</span></span>
 
-### <a name="sign-in-logs"></a><span data-ttu-id="fd7e1-120">登录日志</span><span class="sxs-lookup"><span data-stu-id="fd7e1-120">Sign in logs</span></span>
+### <a name="sign-in-logs"></a><span data-ttu-id="8bb66-118">登录日志</span><span class="sxs-lookup"><span data-stu-id="8bb66-118">Sign in logs</span></span>
 
-<span data-ttu-id="fd7e1-121">登录活动报告可帮助您确定用户执行的任务报告的审核日志报告。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-121">The sign-ins activity report helps you determine who performed the tasks reported by audit log reports.</span></span> <span data-ttu-id="fd7e1-122">登录活动报告可帮助您回答以下问题：</span><span class="sxs-lookup"><span data-stu-id="fd7e1-122">The sign-ins activity report helps you answer questions like:</span></span>
+<span data-ttu-id="8bb66-119">登录活动报告可帮助你确定负责执行审核日志报告所报告的任务的人员。</span><span class="sxs-lookup"><span data-stu-id="8bb66-119">The sign-ins activity report helps you determine who performed the tasks reported by audit log reports.</span></span> <span data-ttu-id="8bb66-120">登录活动报告可帮助你回答如下问题：</span><span class="sxs-lookup"><span data-stu-id="8bb66-120">The sign-ins activity report helps you answer questions like:</span></span>
 
-- <span data-ttu-id="fd7e1-123">什么是用户的模式登录？</span><span class="sxs-lookup"><span data-stu-id="fd7e1-123">What is the sign in pattern of a user?</span></span>
-- <span data-ttu-id="fd7e1-124">多少用户登录过程的最后一个星期中？</span><span class="sxs-lookup"><span data-stu-id="fd7e1-124">How many users have signed in during the last week?</span></span>
-- <span data-ttu-id="fd7e1-125">这些登录的状态是什么？</span><span class="sxs-lookup"><span data-stu-id="fd7e1-125">What's the status of these sign-ins?</span></span>
+- <span data-ttu-id="8bb66-121">用户的登录模式是什么？</span><span class="sxs-lookup"><span data-stu-id="8bb66-121">What is the sign in pattern of a user?</span></span>
+- <span data-ttu-id="8bb66-122">上周有多少用户进行了登录？</span><span class="sxs-lookup"><span data-stu-id="8bb66-122">How many users have signed in during the last week?</span></span>
+- <span data-ttu-id="8bb66-123">这些登录的状态如何？</span><span class="sxs-lookup"><span data-stu-id="8bb66-123">What's the status of these sign-ins?</span></span>
 
-## <a name="what-can-i-do-with-audit-log-apis-in-microsoft-graph"></a><span data-ttu-id="fd7e1-126">使用审核日志在 Microsoft Graph 中的 Api 可以做什么？</span><span class="sxs-lookup"><span data-stu-id="fd7e1-126">What can I do with audit log APIs in Microsoft Graph?</span></span>
+## <a name="what-can-i-do-with-audit-log-apis-in-microsoft-graph"></a><span data-ttu-id="8bb66-124">可以使用 Microsoft Graph 中的审核日志 API 做什么？</span><span class="sxs-lookup"><span data-stu-id="8bb66-124">What can I do with audit log APIs in Microsoft Graph?</span></span>
 
-<span data-ttu-id="fd7e1-127">下面是使用审核日志数据的常用请求：</span><span class="sxs-lookup"><span data-stu-id="fd7e1-127">Here are popular requests for working with audit log data:</span></span>
+<span data-ttu-id="8bb66-125">以下是处理审核日志数据的常见请求：</span><span class="sxs-lookup"><span data-stu-id="8bb66-125">Here are popular requests for working with audit log data:</span></span>
 
-<span data-ttu-id="fd7e1-128">操作</span><span class="sxs-lookup"><span data-stu-id="fd7e1-128">Operation</span></span> | <span data-ttu-id="fd7e1-129">URL</span><span class="sxs-lookup"><span data-stu-id="fd7e1-129">URL</span></span>
+<span data-ttu-id="8bb66-126">操作</span><span class="sxs-lookup"><span data-stu-id="8bb66-126">Operation</span></span> | <span data-ttu-id="8bb66-127">URL</span><span class="sxs-lookup"><span data-stu-id="8bb66-127">URL</span></span>
 :----------|:----
-<span data-ttu-id="fd7e1-130">获取用户活动的租户</span><span class="sxs-lookup"><span data-stu-id="fd7e1-130">GET tenant user activities</span></span> | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
-<span data-ttu-id="fd7e1-131">获取用户登录的租户</span><span class="sxs-lookup"><span data-stu-id="fd7e1-131">GET tenant user sign-ins</span></span> | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
+<span data-ttu-id="8bb66-128">获取租户用户活动</span><span class="sxs-lookup"><span data-stu-id="8bb66-128">GET tenant user activities</span></span> | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
+<span data-ttu-id="8bb66-129">获取租户用户登录信息</span><span class="sxs-lookup"><span data-stu-id="8bb66-129">GET tenant user sign-ins</span></span> | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
 
-## <a name="what-licenses-do-i-need"></a><span data-ttu-id="fd7e1-132">是否需要哪些许可证？</span><span class="sxs-lookup"><span data-stu-id="fd7e1-132">What licenses do I need?</span></span>
+## <a name="what-licenses-do-i-need"></a><span data-ttu-id="8bb66-130">需要哪些许可证？</span><span class="sxs-lookup"><span data-stu-id="8bb66-130">What licenses do I need?</span></span>
 
-<span data-ttu-id="fd7e1-133">审核日志报告是可用于已许可的功能。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-133">Audit log reports are available for features that you've licensed.</span></span>  <span data-ttu-id="fd7e1-134">如果您有特定功能的许可证，还可以访问其审核日志。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-134">If you have a license for a specific feature, you also have access to its audit logs.</span></span>
+<span data-ttu-id="8bb66-131">审核日志报告适用于已获得许可的功能。</span><span class="sxs-lookup"><span data-stu-id="8bb66-131">Audit log reports are available for features that you've licensed.</span></span>  <span data-ttu-id="8bb66-132">如果你拥有特定功能的许可证，则还可以访问其审核日志。</span><span class="sxs-lookup"><span data-stu-id="8bb66-132">If you have a license for a specific feature, you also have access to its audit logs.</span></span>
 
-<span data-ttu-id="fd7e1-135">例如，您需要访问自助服务密码审核报告的 Azure AD Premium P1 许可证。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-135">For example, you need an Azure AD Premium P1 license to access self-service password audit reports.</span></span>  <span data-ttu-id="fd7e1-136">若要了解详细信息，请参阅[Azure AD 许可](https://azure.microsoft.com/pricing/details/active-directory/)。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-136">To learn more, see [Azure AD licensing](https://azure.microsoft.com/pricing/details/active-directory/).</span></span>
+<span data-ttu-id="8bb66-133">例如，你需要 Azure AD Premium P1 许可证才能访问自助密码审核报告。</span><span class="sxs-lookup"><span data-stu-id="8bb66-133">For example, you need an Azure AD Premium P1 license to access self-service password audit reports.</span></span>  <span data-ttu-id="8bb66-134">若要了解详细信息，请参阅 [Azure AD 许可](https://azure.microsoft.com/pricing/details/active-directory/)。</span><span class="sxs-lookup"><span data-stu-id="8bb66-134">To learn more, see [Azure AD licensing](https://azure.microsoft.com/pricing/details/active-directory/).</span></span>
 
-<span data-ttu-id="fd7e1-137">登录报告需要的 Azure AD Premium 许可证。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-137">Sign-in reports require an Azure AD Premium license.</span></span>
+<span data-ttu-id="8bb66-135">登录报告需要 Azure AD Premium 许可证。</span><span class="sxs-lookup"><span data-stu-id="8bb66-135">Sign-in reports require an Azure AD Premium license.</span></span>
 
-<span data-ttu-id="fd7e1-138">若要了解详细信息，请参阅[Azure AD 定价](https://azure.microsoft.com/pricing/details/active-directory/)。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-138">To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/).</span></span>
+<span data-ttu-id="8bb66-136">若要了解详细信息，请参阅 [Azure AD 定价](https://azure.microsoft.com/pricing/details/active-directory/)。</span><span class="sxs-lookup"><span data-stu-id="8bb66-136">To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/).</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="fd7e1-139">后续步骤</span><span class="sxs-lookup"><span data-stu-id="fd7e1-139">Next Steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="8bb66-137">后续步骤</span><span class="sxs-lookup"><span data-stu-id="8bb66-137">Next Steps</span></span>
 
-- <span data-ttu-id="fd7e1-140">[注册应用程序](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)，以满足审核日志必备组件。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-140">[Register your app](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy audit log prerequisites.</span></span> 
-- <span data-ttu-id="fd7e1-141">了解从[审核日志](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples)和[登录项示例](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples)。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-141">Learn from [audit log](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).</span></span>  
-- <span data-ttu-id="fd7e1-142">查看[directoryAudit](directoryaudit.md)资源和操作。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-142">Review [directoryAudit](directoryaudit.md) resource and actions.</span></span>
-- <span data-ttu-id="fd7e1-143">查看[次数](signin.md)资源和操作。</span><span class="sxs-lookup"><span data-stu-id="fd7e1-143">Review [signIn](signin.md) resource and actions.</span></span> 
+- <span data-ttu-id="8bb66-138">[注册你的应用程序](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)以满足审核日志先决条件。</span><span class="sxs-lookup"><span data-stu-id="8bb66-138">[Register your app](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy audit log prerequisites.</span></span> 
+- <span data-ttu-id="8bb66-139">了解[审核日志](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples)和[登录示例](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples)。</span><span class="sxs-lookup"><span data-stu-id="8bb66-139">Learn from [audit log](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).</span></span>  
+- <span data-ttu-id="8bb66-140">审查 [directoryAudit](directoryaudit.md) 资源和操作。</span><span class="sxs-lookup"><span data-stu-id="8bb66-140">Review [directoryAudit](directoryaudit.md) resource and actions.</span></span>
+- <span data-ttu-id="8bb66-141">审查 [signIn](signin.md) 资源和操作。</span><span class="sxs-lookup"><span data-stu-id="8bb66-141">Review [signIn](signin.md) resource and actions.</span></span> 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/azure-ad-auditlog-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
