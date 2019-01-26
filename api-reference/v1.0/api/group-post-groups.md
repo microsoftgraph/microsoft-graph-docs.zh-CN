@@ -4,12 +4,12 @@ description: 使用此 API 可以创建请求正文中指定的新组。可以�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: bc83ccc3c32dbde12b93c1d22eb7640e4e72fcb8
-ms.sourcegitcommit: 71368f59d267c8188567529e74486e54cc122804
+ms.openlocfilehash: 8bf432d30ba000641654d8c5d457096f5bfcb70e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29442316"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574864"
 ---
 # <a name="create-group"></a>创建组
 使用此 API 可以创建请求正文中指定的新组。可以创建下列 3 种类型之一的组：
@@ -43,6 +43,7 @@ POST /groups
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
 下表显示了创建组时要指定的[组](../resources/group.md)资源的属性。 

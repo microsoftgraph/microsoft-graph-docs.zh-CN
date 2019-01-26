@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 65a38e8852c878811d609b56b0f7f0ad1d4e73ff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 351b02e3d423458fba8dbaec2050530ccaba4df0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820221"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576785"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -370,6 +370,3 @@ JSON 批处理请求目前限定为 20 个单独请求。
 
 某些功能尚未在 Microsoft Graph 中提供。如果找不到所需的功能，请使用特定于终结点的 [Office 365 REST API](https://msdn.microsoft.com/office/office365/api/api-catalog)。有关 Azure Active Directory，请参考 [Microsoft Graph 或 Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) 博客文章，获取只能通过 Azure AD Graph API 提供的功能。
 
-## <a name="feedback"></a>反馈
-
-> 我们非常重视你的反馈意见。请在 [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph) 上与我们联系。
