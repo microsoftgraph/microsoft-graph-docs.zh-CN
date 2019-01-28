@@ -1,60 +1,60 @@
 ---
-title: 登录资源类型
-description: '此资源详细介绍用户或应用程序登录活动目录中。 '
+title: signIn 资源类型
+description: '此资源详细说明目录中的用户或应用程序登录活动。 '
 localization_priority: Priority
-ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 3d9b9ffab6b588cbe0a465a637b12649110415d2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889066"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571847"
 ---
-# <a name="signin-resource-type"></a>登录资源类型
-此资源详细介绍用户或应用程序登录活动目录中。 
+# <a name="signin-resource-type"></a>signIn 资源类型
+此资源详细说明目录中的用户或应用程序登录活动。 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列表登录](../api/signin-list.md) | [登录](signin.md) |读取属性和登录对象之间的关系。|
-|[获取登录](../api/signin-get.md) | [登录](signin.md) |读取属性和登录对象的关系。|
+|[列出 signIn](../api/signin-list.md) | [signIn](signin.md) |读取 signIn 对象的属性和关系。|
+|[获取 signIn](../api/signin-get.md) | [signIn](signin.md) |读取 signIn 对象的属性和关系。|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|appDisplayName|字符串|指 Azure 门户中显示的应用程序名称。|
-|appId|String|引用代表 Azure Active Directory 中的应用程序 Id 的唯一 guid。|
-|clientAppUsed|字符串|提供用于登录 activty.E.g 旧客户端。 包括浏览器、 Exchange Active Sync、 IMAP、 MAPI、 SMTP、 POP 现代客户端。|
-|appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md)集合|提供由相应的登录活动触发的条件的访问策略的列表。|
-|conditionalAccessStatus|string| 提供的触发条件访问策略的状态。 可取值为：`success`、`failure`、`notApplied`、`unknownFutureValue`。|
-|originalRequestId|字符串|身份验证序列中的第一个请求的请求 id。|
-|isInteractive|布尔|指示是否是交互式登录。|
-|tokenIssuerName|字符串|标识提供程序 (例如 sts.microsoft.com) 的名称|
-|tokenIssuerType|字符串|提供了 identityProvider 的类型。 可能的值为`AzureAD`， `ADFederationServices`， `UnknownFutureValue`。|
-|correlationId|String|指启动登录时，从客户端发送的 ID。 这用于解决对应的登录活动，调用支持人员或支持时。|
-|createdDateTime|DateTimeOffset|提供的日期和时间启动登录。 时间戳类型始终为 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|deviceDetail|[deviceDetail](devicedetail.md)|提供从登录出现的设备信息。 它 inclules 像 deviceId，操作系统、 浏览器的信息。 |
-|id|字符串|指示表示登录活动的唯一 ID。|
-|ipAddress|String|提供客户端登录出现的 IP 地址。|
-|location|[signInLocation](signinlocation.md)|提供市/县、 状态和 2 个字母国家/地区代码从登录出现的位置。|
-|processingTimeInMilliseconds|Int|提供处理时间 （毫秒） AD STS 中请求|
-|riskDetail|`riskDetail`|提供原因后面的 risky 用户、 登录或风险事件特定状态。 可能的值为： `none`， `adminGeneratedTemporaryPassword`， `userPerformedSecuredPasswordChange`， `userPerformedSecuredPasswordReset`， `adminConfirmedSigninSafe`， `aiConfirmedSigninSafe`， `userPassedMFADrivenByRiskBasedPolicy`， `adminDismissedAllRiskForUser`， `adminConfirmedSigninCompromised`， `unknownFutureValue`。 值`none`是指的任何操作已执行上的用户或登录到目前为止。 **注意：** 仅为 Azure AD Premium P2 客户提供了此属性的详细信息。 将返回所有其他客户`hidden`。|
-|riskLevelAggregated|`riskLevel`|提供聚合的风险级别。 可能的值为： `none`， `low`， `medium`， `high`， `hidden`，和`unknownFutureValue`。 值`hidden`是指为 Azure AD 身份保护未启用的用户或登录。 **注意：** 仅为 Azure AD Premium P2 客户提供了此属性的详细信息。 将返回所有其他客户`hidden`。|
-|riskLevelDuringSignIn|`riskLevel`|登录过程中提供的风险级别。 可能的值为： `none`， `low`， `medium`， `high`， `hidden`，和`unknownFutureValue`。 值`hidden`是指为 Azure AD 身份保护未启用的用户或登录。 **注意：** 仅为 Azure AD Premium P2 客户提供了此属性的详细信息。 将返回所有其他客户`hidden`。|
-|riskEventTypes|`riskEventTypes`|提供与登录相关联的风险事件类型的列表。 可能的值为： `unlikelyTravel`， `anonymizedIPAddress`， `maliciousIPAddress`， `unfamiliarFeatures`， `malwareInfectedIPAddress`， `suspiciousIPAddress`， `leakedCredentials`， `investigationsThreatIntelligence`， `generic`，和`unknownFutureValue`。|
-|riskState|`riskState`|提供 risky 用户、 登录或风险事件的风险状态。 可能的值为： `none`， `confirmedSafe`， `remediated`， `dismissed`， `atRisk`， `confirmedCompromised`， `unknownFutureValue`。|
-|mfaDetail|[mfaDetail](mfadetail.md)|提供相关 MFA 像 MFA 需要，MFA 相应登录状态的信息。|
-|networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|提供有关的网络位置的详细信息。|
-|riskLevel|string| 提供与登录相关联的风险级别。可能的值为： `low`， `medium`， `high`。|
-|status|[signInStatus](signinstatus.md)|提供的登录状态。 可能值包括`Success`和`Failure`。|
-|userDisplayName|String|指示显示用户的名称。|
-|userId|String|指示用户的用户 Id。|
-|userPrincipalName|字符串|指示用户的 UPN。|
-|resourceDisplayName|字符串|指示用户登录到的资源的名称|
-|resourceId|String|指示用户登录到的资源的 Id。|
-|authenticationMethodsUsed|字符串|指示使用的身份验证方法的列表|
+|appDisplayName|String|表示 Azure 门户中显示的应用程序名称。|
+|appId|String|表示唯一 GUID（表示 Azure Active Directory 中的应用程序 ID）。|
+|clientAppUsed|String|提供用于登录活动的旧版客户端。例如， 包括浏览器、Exchange Active Sync、新式客户端、IMAP、MAPI SMTP、POP。|
+|appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md) 集合|提供由相应登录活动触发的条件访问策略列表。|
+|conditionalAccessStatus|string| 提供触发的条件访问策略的状态。 可取值为：`success`、`failure`、`notApplied`、`unknownFutureValue`。|
+|originalRequestId|String|身份验证序列中第一个请求的请求 ID。|
+|isInteractive|Boolean|指示登录是否为交互式。|
+|tokenIssuerName|String|标识提供者（例如 sts.microsoft.com）的名称|
+|tokenIssuerType|String|提供标识提供者的类型。 可取值为 `AzureAD`、`ADFederationServices`、`UnknownFutureValue`。|
+|correlationId|String|表示登录启动时从客户端发送的 ID。 此属性用于在调用帮助台或支持时对相应的登录活动进行故障诊断。|
+|createdDateTime|DateTimeOffset|提供登录启动的日期和时间。 时间戳类型始终为 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|deviceDetail|[deviceDetail](devicedetail.md)|提供发生登录的设备的信息。 包括设备 ID、操作系统、浏览器等信息。 |
+|id|String|表示登录活动的唯一 ID。|
+|ipAddress|String|提供发生登录的客户端的 IP 地址。|
+|location|[signInLocation](signinlocation.md)|提供发生登录的城市、省/市/自治区和 2 个字母的国家/地区代码。|
+|processingTimeInMilliseconds|Int|提供 AD STS 中的请求处理时间（以毫秒为单位）|
+|riskDetail| enum-string |提供风险用户、登录或风险事件的特定状态背后的“原因”。 可取值包括：`none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`unknownFutureValue`。 值 `none` 表示到目前为止尚未对用户或登录执行任何操作。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
+|riskLevelAggregated| enum-string |提供聚合的风险级别。 可取值为：`none`、`low`、`medium`、`high`、`hidden` 和 `unknownFutureValue`。 值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
+|riskLevelDuringSignIn| enum-string |提供登录期间的风险级别。 可取值为：`none`、`low`、`medium`、`high`、`hidden` 和 `unknownFutureValue`。 值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
+|riskEventTypes| enum-string |提供与登录关联的风险事件类型列表。 可取值为：`unlikelyTravel`、`anonymizedIPAddress`、`maliciousIPAddress`、`unfamiliarFeatures`、`malwareInfectedIPAddress`、`suspiciousIPAddress`、`leakedCredentials`、`investigationsThreatIntelligence`、`generic` 和 `unknownFutureValue`。|
+|riskState|`riskState`|提供风险用户、登录或风险事件的“风险状态”。 可取值包括：`none`、`confirmedSafe`、`remediated`、`dismissed`、`atRisk`、`confirmedCompromised`、`unknownFutureValue`。|
+|mfaDetail|[mfaDetail](mfadetail.md)|提供相应登录的 MFA 相关信息，例如“需要 MFA”、“MFA 状态”。|
+|networkLocationDetail| [deviceDetail](networklocationdetail.md) |提供有关网络位置的详细信息。|
+|riskLevel|string| 提供与登录相关的风险级别。可取值为：`low`、`medium`、`high`。|
+|status|[signInStatus](signinstatus.md)|提供登录状态。 可取值包括 `Success` 和 `Failure`。|
+|userDisplayName|String|指示用户的显示名称。|
+|userId|String|指示用户的用户 ID。|
+|userPrincipalName|String|指示用户的 UPN。|
+|resourceDisplayName|String|指示用户登录的资源的名称|
+|resourceId|String|指示用户登录的资源的 ID。|
+|authenticationMethodsUsed|String|指示使用的身份验证方法列表|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 
@@ -91,11 +91,11 @@ ms.locfileid: "27889066"
   "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "riskDetail": "string",
-  "riskLevelAggregated": "string",
-  "riskLevelDuringSignIn": "string",
-  "riskState": "string",
-  "riskEventTypes": "string",
+  "riskDetail": "none | adminGeneratedTemporaryPassword | userPerformedSecuredPasswordChange | userPerformedSecuredPasswordReset | adminConfirmedSigninSafe | aiConfirmedSigninSafe | userPassedMFADrivenByRiskBasedPolicy | adminDismissedAllRiskForUser | adminConfirmedSigninCompromised | unknownFutureValue",
+  "riskLevelAggregated": "enum-string",
+  "riskLevelDuringSignIn": "enum-string",
+  "riskState": "riskState",
+  "riskEventTypes": "enum-string",
   "resourceDisplayName": "string",
   "resourceId": "string",
   "authenticationMethodsUsed": "string",

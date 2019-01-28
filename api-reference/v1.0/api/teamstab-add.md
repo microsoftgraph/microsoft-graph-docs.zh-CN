@@ -1,21 +1,21 @@
 ---
-title: 选项卡添加到频道
-description: '将 (pin) 添加到指定的通道团队中的一个选项卡。 '
+title: 将选项卡添加到频道
+description: '将选项卡添加（固定）到团队中的指定频道。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8c2aee1f67eebd2fda7515ede27158f3154dd2d1
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
-ms.translationtype: MT
+ms.openlocfilehash: 38609a373ccac9a66b643f600a39de7aeb57cfbb
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016714"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572505"
 ---
-# <a name="add-tab-to-channel"></a>选项卡添加到频道
+# <a name="add-tab-to-channel"></a>将选项卡添加到频道
 
 
 
-将 (pin) 添加到[团队](../resources/team.md)中指定的[频道](../resources/channel.md)一个[选项卡](../resources/teamstab.md)。 相应的应用程序已必须[安装在工作组中](../api/teamsappinstallation-add.md)。
+将[选项卡](../resources/teamstab.md)添加（固定）到[团队](../resources/team.md)中的指定[频道](../resources/channel.md)。 相应的应用必须事先[安装在团队中](../api/teamsappinstallation-add.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "28016714"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 | 应用程序                            | Group.ReadWrite.All                         |
 
-> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 ## <a name="request-body"></a>请求正文
 
-[TeamsTab](../resources/teamstab.md)。
+一个 [teamsTab](../resources/teamstab.md)。
 
 ## <a name="response"></a>响应
 
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -92,14 +92,13 @@ Content-type: application/json
     "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
     "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
   },
-  "sortOrderIndex": 20,
   "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"
 }
 ```
 
 ## <a name="see-also"></a>另请参阅
 
-[配置到内置选项卡的类型](/graph/teams-configuring-builtin-tabs)
+[配置内置选项卡类型](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
