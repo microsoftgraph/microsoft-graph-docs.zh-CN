@@ -1,21 +1,21 @@
 ---
-title: 创建工作组
-description: 创建新的团队。
+title: 创建团队
+description: 新建团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 018d6085cec94a7aa2697e027f69b4b6f70cfaad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3e901225f5a8f94abb61a6b4052b0db2d47865c3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962735"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519610"
 ---
-# <a name="create-team"></a>创建工作组
+# <a name="create-team"></a>创建团队
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的[团队](../resources/team.md)。
+新建[团队](../resources/team.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -44,17 +44,17 @@ POST /teams
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供一个[团队](../resources/team.md)对象的 JSON 表示形式。
+在请求正文中，提供 [team](../resources/team.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此 API 返回`202 Accepted`响应，其中包含指向[teamsAsyncOperation](../resources/teamsasyncoperation.md)的链接。
+如果成功，则此 API 将返回包含 [teamsAsyncOperation](../resources/teamsasyncoperation.md) 链接的 `202 Accepted` 响应。
 
 ## <a name="examples"></a>示例
 
-### <a name="example---delegated-permissions"></a>示例-委派权限
+### <a name="example---delegated-permissions"></a>示例 - 委派权限
 
-下面是请求的一个内容最少示例。 通过省略其他属性，客户端隐式正在由预定义模板中的默认值`template`。
+以下是最小请求的示例。 通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。
 
 #### <a name="request"></a>请求
 
@@ -79,9 +79,9 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>示例-使用安装应用程序创建团队，与使用固定选项卡的多个通道委派权限
+### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>示例 - 通过使用委派权限安装的应用以及带固定选项卡的多个渠道创建团队。
 
-下面是与完全负载的请求。 客户端可以重写基本模板中的值并将添加到允许的有效性规则的范围内的数组值项`specialization`。
+以下是具有完整有效负载的请求。 客户端可以覆盖基础模板中的值，并将数组值项添加到 `specialization` 的验证规则允许的区间。
 
 #### <a name="request"></a>请求
 
@@ -177,9 +177,9 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---application-permissions"></a>示例-应用程序权限
+### <a name="example---application-permissions"></a>示例 - 应用程序权限
 
-下面是使用应用程序权限的最小请求示例。 通过省略其他属性，客户端隐式正在由预定义模板中的默认值`template`。 当[用户](../resources/user.md)使用应用程序权限发出请求必须指定以`owners`集合。
+以下是使用应用程序权限的最小请求示例。 通过省略其他属性，客户端可以隐式采用 `template` 表示的预定义模板的默认值。 通过应用程序权限发出请求时，必须在 `owners` 集合中指定[用户](../resources/user.md)。
 
 #### <a name="request"></a>请求
 
@@ -209,4 +209,12 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>另请参阅
 
-- [与团队创建组](/graph/teams-create-group-and-team)
+- [创建包含团队的组](/graph/teams-create-group-and-team)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,14 +3,15 @@ title: 'reportRoot: getEmailActivityUserDetail'
 description: 获取用户执行的电子邮件活动的详细信息。
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 558366fec2a870d47bdc88a315fa68dd9b36bdd9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: pranoychaudhuri
+ms.openlocfilehash: c2c0626fe53795dc2496a45d706bd934603cf18d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981761"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575081"
 ---
-# <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
+# <a name="reportroot-getemailactivityuserdetail"></a>reportRoot：getEmailActivityUserDetail
 
 获取用户执行的电子邮件活动的详细信息。
 
@@ -37,7 +38,7 @@ GET /reports/getEmailActivityUserDetail(date={date_value})
 
 ## <a name="function-parameters"></a>函数参数
 
-在请求 URL 中，提供以下参数之一的有效值。
+在请求 URL 中，提供以下任一参数的有效值。
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |

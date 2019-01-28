@@ -4,25 +4,25 @@ description: 可以使用 Microsoft Graph 构建基于用户、用户与其他�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a5e1ed5a2403def740d92b9f77d57a58f6d1a3e6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 5f1a08e008f1de343ca6cf4986006c43c7e115af
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912013"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518427"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 可以使用 Microsoft Graph 构建基于用户、用户与其他用户和组的关系、用户邮件、日历和文件且有说服力的应用体验。
 
-通过 Microsoft Graph，你能以两种方式访问 用户
+通过 Microsoft Graph，你能以两种方式访问用户：
 
 - 通过用户 ID，`/users/{id}` 
 - 通过使用已登录的用户的 `/me` 别名，这与 `/users/{signed-in user's id}` 相同
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>授权
 需要以下 [权限](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) 之一才能访问用户操作。用户可将前三个权限授予应用程序。其余权限只能由管理员授予应用。
 
 - User.ReadBasic.All
@@ -39,10 +39,10 @@ ms.locfileid: "27912013"
 | 属性 | 说明 |
 |----------|-------------|
 | displayName | 用户通讯簿中显示的名称。|
-|givenName| 用户的名 |
+|givenName| 用户的名。 |
 |surname| 用户的姓。 |
 |mail| 用户的电子邮件地址。 |
-|photo| 用户配置文件照片。 |
+|photo| 用户的个人资料照片。 |
 
 有关详细信息及所有属性的列表，请参阅 [user](user.md) 对象。
 
@@ -59,4 +59,12 @@ ms.locfileid: "27912013"
 |[`/users/{id}/events`](../api/user-list-events.md) | 列出用户日历中即将发生的事件。 |
 |[`/users/{id}/drive`](../api/drive-get.md)| 获取用户 OneDrive 文件存储。 |
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| 列出用户是其成员的所有组。 |
-|[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| 列出了 Microsoft 小组成员的用户。 |
+|[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| 列出用户所属的 Microsoft Teams。 |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/users.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

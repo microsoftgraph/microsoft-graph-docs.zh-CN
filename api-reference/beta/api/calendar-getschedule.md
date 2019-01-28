@@ -1,30 +1,30 @@
 ---
-title: 日历： getSchedule
-description: 获取闲/忙时间集的用户、 通讯组列表或资源的信息指定的时间段。
+title: 日历：getSchedule
+description: 获取用户、通讯组列表或资源在指定时间段内的忙/闲状态信息。
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9089489d2b26b3dd4cd56b950538a72ab533c933
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 0c2f6a54664242831d7fd3f2ddfc6a44984674e0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956953"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530025"
 ---
-# <a name="calendar-getschedule"></a>日历： getSchedule
+# <a name="calendar-getschedule"></a>日历：getSchedule
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取闲/忙时间集的用户、 通讯组列表或资源的信息指定的时间段。
+获取用户、通讯组列表或资源在指定时间段内的忙/闲状态信息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Calendar.Read Calendar.ReadWrite    |
+|委派（工作或学校帐户） | Calendar.Read、Calendar.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | Calendar.Read Calendar.ReadWrite |
+|应用程序 | Calendar.Read、Calendar.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string | 实体，即 application/json 的正文中的数据的性质。 必需。  |
+| Content-Type  | string | 实体正文中的数据性质（为 application/json）。 必需。  |
 | Prefer: outlook.timezone | string | 此选项可用于指定响应中开始时间和结束时间的时区。 如果未指定，返回的这些时间值采用 UTC 时区。 可选。 |
 
 ## <a name="request-body"></a>请求正文
@@ -45,17 +45,17 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|字符串|表示在响应中**availabilityView**中的时间段的持续时间。 默认值为 30 分钟，最小值为 6，最大值是 1440年。 可选。|
-|endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|日期、 时间和时区期的结束。|
-|计划|String 集合|若要获取的可用性信息的用户、 通讯组列表或资源的 SMTP 地址的集合。|
-|startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|日期、 时间和时区期的开始。|
+|availabilityViewInterval|String|表示响应中 **availabilityView** 中的时间段的持续时间。 默认值为 30 分钟，最小值为 6，最大值为 1440。 可选。|
+|endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|时间段结束的日期、时间和时区。|
+|schedules|String 集合|要获取忙/闲状态信息的用户、通讯组列表或资源的 SMTP 地址集合。|
+|startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|时间段开始的日期、时间和时区。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和[scheduleInformation](../resources/scheduleinformation.md)对象中每个对象的集合`schedules`参数。
+如果成功，此方法为 `schedules` 参数中的每个对象返回 `200 OK` 响应代码和 [scheduleInformation](../resources/scheduleinformation.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例获取指定的日期、 时间和时区的两个用户的可用性信息。
+以下示例将获取指定日期、时间和时区的两名用户的忙/闲状态信息。
 
 <!-- {
   "blockType": "ignored",
@@ -232,10 +232,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "calendar: getSchedule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/calendar-getschedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

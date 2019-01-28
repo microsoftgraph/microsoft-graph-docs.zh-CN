@@ -1,16 +1,16 @@
 ---
-title: 获取登录
-description: 检索 Azure AD 用户登录您的租户。 在登录日志中当前包括交互中 （其中用户名/密码作为授权令牌的一部分传递） 的性质和成功联合的登录的登录。
+title: 获取 signIn
+description: 检索租户的 Azure AD 用户登录名。 登录日志中目前包含交互式性质的登录名（其中用户名/密码作为授权令牌的一部分传递）和已成功联合的登录名。
 localization_priority: Priority
-ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 79bebfda40b15a5524aecfc99e5b6d83a168b28e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894493"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576610"
 ---
-# <a name="get-signin"></a>获取登录
-检索 Azure AD 用户登录您的租户。 在登录日志中当前包括交互中 （其中用户名/密码作为授权令牌的一部分传递） 的性质和成功联合的登录的登录。
+# <a name="get-signin"></a>获取 signIn
+检索租户的 Azure AD 用户登录名。 登录日志中目前包含交互式性质的登录名（其中用户名/密码作为授权令牌的一部分传递）和已成功联合的登录名。
 
 
 ## <a name="permissions"></a>权限
@@ -20,19 +20,19 @@ ms.locfileid: "27894493"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用程序 | AuditLog.Read.All | 
+|应用 | AuditLog.Read.All | 
 
-此外，应用程序必须采用到 Azure AD 中[正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
+此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持以下 OData 查询参数，有助于自定义响应。 查看有关如何使用这些参数的[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+## <a name="optional-query-parameters"></a>可选查询参数
+此方法支持以下 OData 查询参数，它们有助于自定义响应。 请参看 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，了解如何使用这些参数。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -40,13 +40,12 @@ GET /auditLogs/signIns/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[登录](../resources/signin.md)对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {
-  "blockType": "reque|location/city| eq, startswith|
-st",
+  "blockType": "request",
   "name": "get_signin"
 }-->
 ```http

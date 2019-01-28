@@ -3,14 +3,15 @@ title: 'reportRoot: getOffice365ActiveUserDetail'
 description: 获取 Office 365 活跃用户的详细信息。
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 876cf79d8a784460e8e1ba7977b0d89fc3565672
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: pranoychaudhuri
+ms.openlocfilehash: c008595f0de265ff7d670a78cacb1d621008e416
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919317"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577177"
 ---
-# <a name="reportroot-getoffice365activeuserdetail"></a>reportRoot: getOffice365ActiveUserDetail
+# <a name="reportroot-getoffice365activeuserdetail"></a>reportRoot：getOffice365ActiveUserDetail
 
 获取 Office 365 活跃用户的详细信息。
 
@@ -37,7 +38,7 @@ GET /reports/getOffice365ActiveUserDetail(date={date_value})
 
 ## <a name="function-parameters"></a>函数参数
 
-在请求 URL 中，提供以下参数之一的有效值。
+在请求 URL 中，提供以下任一参数的有效值。
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |

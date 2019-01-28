@@ -1,19 +1,19 @@
 ---
 title: 获取 servicePrincipal
-description: 检索的属性和 serviceprincipal 对象的关系。
+description: 检索 serviceprincipal 对象的属性和关系。
 localization_priority: Priority
-ms.openlocfilehash: 97b1f05fe672d935a88648cb010d1e7cb9dfeaa7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 2fca7895b03a52e5fda06df940782b716e8ca1c4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878888"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575151"
 ---
 # <a name="get-serviceprincipal"></a>获取 servicePrincipal
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和 serviceprincipal 对象的关系。
+检索 serviceprincipal 对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -22,7 +22,7 @@ ms.locfileid: "27878888"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.ReadWrite.OwnedBy，Application.ReadWrite.All，Directory.Read.All |
+|应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[servicePrincipal](../resources/serviceprincipal.md)对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [servicePrincipal](../resources/serviceprincipal.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.serviceprincipal"
+  "@odata.type": "microsoft.graph.servicePrincipal"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -88,10 +88,15 @@ Content-length: 391
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get servicePrincipal",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

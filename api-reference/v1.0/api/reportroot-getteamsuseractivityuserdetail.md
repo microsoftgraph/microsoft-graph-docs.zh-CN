@@ -3,14 +3,15 @@ title: 'reportRoot: getTeamsUserActivityUserDetail'
 description: 按用户获取有关 Microsoft Teams 用户活动的详细信息。
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: b968a5cb17ad588ffea678b05a5752e226b5eb5d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: pranoychaudhuri
+ms.openlocfilehash: fdc9976847085eeea99ff504862a97450aea9a1b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960705"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577345"
 ---
-# <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
+# <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot：getTeamsUserActivityUserDetail
 
 按用户获取有关 Microsoft Teams 用户活动的详细信息。
 
@@ -35,7 +36,7 @@ GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 
 ## <a name="function-parameters"></a>函数参数
 
-在请求 URL 中，提供以下参数之一的有效值。
+在请求 URL 中，提供以下任一参数的有效值。
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
@@ -54,7 +55,7 @@ GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 
 如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
-预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。
+预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
 
 CSV 文件包含下面的列标题：
 

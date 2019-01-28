@@ -1,19 +1,19 @@
 ---
-title: 列表 directoryAudits
-description: 提供了生成的 Azure Active Directory 的审核日志的列表。 包括用户、 应用程序、 设备和组管理、 特权标识管理、 访问评论、 使用条款、 标识保护、 密码管理 （SSPR 和管理密码重置的 Azure Active Directory 中的各种服务所生成的审核日志)，自助服务组管理等...
+title: 列出 directoryAudits
+description: 列出 Azure Active Directory 生成的审核日志。 包括 Azure Active Directory 中各种服务生成的审核日志，这些服务包括用户、应用、设备和组管理、Privileged Identity Management、访问评审、使用条款、Identity Protection、密码管理（SSPR 和管理员密码重置）、自助服务组管理等。
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: df6a737696c855cd60e396c6571169f8c46b3952
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 2f9330cd8ca1bd2b17755ffd1e09fee7743355b2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921260"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576680"
 ---
-# <a name="list-directoryaudits"></a>列表 directoryAudits
+# <a name="list-directoryaudits"></a>列出 directoryAudits
 
-提供了生成的 Azure Active Directory 的审核日志的列表。 包括用户、 应用程序、 设备和组管理、 特权标识管理、 访问评论、 使用条款、 标识保护、 密码管理 （SSPR 和管理密码重置的 Azure Active Directory 中的各种服务所生成的审核日志)，自助服务组管理等...
+列出 Azure Active Directory 生成的审核日志。 包括 Azure Active Directory 中各种服务生成的审核日志，这些服务包括用户、应用、设备和组管理、Privileged Identity Management、访问评审、使用条款、Identity Protection、密码管理（SSPR 和管理员密码重置）、自助服务组管理等。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -22,38 +22,38 @@ ms.locfileid: "27921260"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用程序 | AuditLog.Read.All | 
+|应用 | AuditLog.Read.All | 
 
-此外，应用程序必须采用到 Azure AD 中[正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
+此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/directoryAudits
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持以下 OData 查询参数，有助于自定义响应。 查看有关如何使用这些参数的[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+## <a name="optional-query-parameters"></a>可选查询参数
+此方法支持以下 OData 查询参数，它们有助于自定义响应。 请参看 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，了解如何使用这些参数。
 
 |名称     |说明                            |示例|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|筛选结果（行）。 |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
 |[$top](/graph/query-parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/directoryAudits?$top=1`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|检索下一步页的结果的结果集跨越多个页面。|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="list-of-attributes-supported-by-filter-parameter"></a>支持的 $filter 参数属性的列表
-|属性名称 |支持的运算符|
+### <a name="list-of-attributes-supported-by-filter-parameter"></a>$filter 参数支持的属性列表
+|属性名 |支持的运算符|
 |:----------------|:------|
-|activityDisplayName| eq startswith|
-|activityDateTime| eq，ge，le|
+|activityDisplayName| eq、startswith|
+|activityDateTime| eq、ge、le|
 |loggedByService|eq|
-|initiatedBy/用户/id|eq|
-|initiatedBy/用户/displayName| eq|
-|userprincipalname 属性 initiatedBy/用户| eq startswith|
-|应用程序 initiatedBy/应用程序标识| eq|
-|initiatedBy/应用程序/appDisplayName| eq|
+|initiatedBy/user/id|eq|
+|initiatedBy/user/displayName| eq|
+|initiatedBy/user/userPrincipalName| eq、startswith|
+|initiatedBy/app/appId| eq|
+|initiatedBy/app/appDisplayName| eq|
 |targetResources/any(t: t/id)| eq|
-|targetResources/any(t:t/displayName)| eq startswith|
-## <a name="request-headers"></a>请求标头
+|targetResources/any(t:t/displayName)| eq、startswith|
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -61,7 +61,7 @@ GET /auditLogs/directoryAudits
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[directoryAudit](../resources/directoryaudit.md)对象的集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [directoryAudit](../resources/directoryaudit.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -107,7 +107,7 @@ Content-length: 271
             "app": null
         },
         "targetResources": [{
-            "@odata.type": "#microsoft.graph.TargetResourceGroup",
+            "@odata.type": "microsoft.graph.TargetResourceGroup",
             "id": "ef7x527d-6x92-42x4-8x6d-cfxfdfx57f95",
             "displayName": "Lynda.com",
             "modifiedProperties": [{
@@ -117,7 +117,7 @@ Content-length: 271
             }],
             "groupType": "unifiedGroups"
         }, {
-            "@odata.type": "#microsoft.graph.targetResourceUser",
+            "@odata.type": "microsoft.graph.targetResourceUser",
             "id": "1f0ex8f5-3x61-4x6b-9x50-d4xx572f2bb7",
             "displayName": null,
             "modifiedProperties": [],

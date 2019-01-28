@@ -1,19 +1,19 @@
 ---
 title: 使用 Outlook 邮件 REST API
-description: Microsoft Graph 允许您获取授权的访问用户的 Outlook 邮件数据中的个人或组织帐户的应用程序。
+description: Microsoft Graph 可让应用程序获得对个人或组织帐户中用户的 Outlook 邮件数据的授权访问权限。
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 96d2924846adebaae0ed435aed7dcf65934db81a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 6f5d084aa64424500a311577631fa232e8ddf523
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933013"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519680"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>使用 Outlook 邮件 REST API
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph 可让你的应用获得授权，访问个人或组织帐户中的用户的 Outlook 邮件数据。使用[适当的委派或应用程序权限](/graph/permissions-reference)，你的应用程序可以访问已登录用户或租户中任何用户的邮件数据。邮件数据可以位于 Exchange Online 上的云中，作为 Office 365 的一部分，或位于[混合部署](/graph/hybrid-rest-support)中的 Exchange 内部部署上。
 
@@ -27,9 +27,9 @@ Microsoft Graph 可让你的应用获得授权，访问个人或组织帐户中�
 
 邮件正文可以是 HTML 格式或文本格式。
 
-您可以使用已知文件夹名称，如`Inbox`， `Drafts`， `SentItems`，或`DeletedItems`标识的所有用户的默认情况下存在特定邮件文件夹。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
+你可以使用已知的文件夹名称，如 `Inbox`、`Drafts`、`SentItems` 或 `DeletedItems`，来识别某些对所有用户默认存在的邮件文件夹。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
 
-例如，可以不第一个获取文件夹 ID 登录用户的 Outlook**发送项目**文件夹中收到消息：
+例如，你可以从已登录用户的 Outlook“**已发送邮件**”文件夹收取邮件，无需事先获取文件夹 ID：
 
 ```http
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
@@ -45,24 +45,24 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 |:----------|:---------------|:---------|
 | **以用户为中心的操作** | | |
 | 起草、阅读、答复、转发、发送、更新或删除邮件 | [邮件](../resources/message.md) | [邮件的方法](../resources/message.md#methods) |
-| 代表邮箱所有者委托其他用户发送邮件 | [邮件](../resources/message.md) | 在[消息](../resources/message.md)中设置**从**和**发件人**属性 |
+| 代表邮箱所有者委托其他用户发送邮件 | [message](../resources/message.md) | 设置[邮件](../resources/message.md)的 **from** 和 **sender** 属性 |
 | 让用户先查看更重要的邮件 | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [重点收件箱](../resources/manage-focused-inbox.md) |
-| 添加、获取或删除邮件的附件 | [附件](../resources/attachment.md)、 <br> [fileAttachment](../resources/fileattachment.md)、 <br> [itemAttachment](../resources/itemattachment.md)、 <br> [referenceAttachment](../resources/referenceattachment.md)、 <br> [邮件](../resources/message.md) | [附件的方法](../resources/attachment.md#methods) |
-| 获取用户语言和时区选项 | [localeInfo](localeinfo.md)、 <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md)， <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
+| 添加、获取或删除邮件的附件 | [附件](../resources/attachment.md)、 <br> [fileAttachment](../resources/fileattachment.md)、 <br> [itemAttachment](../resources/itemattachment.md)、 <br> [referenceAttachment](../resources/referenceattachment.md)、 <br> [邮件](../resources/message.md) | [attachment 的方法](../resources/attachment.md#methods) |
+| 获取用户的语言和时区选择 | [localeInfo](localeinfo.md)、 <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md)、 <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | 获取或更新用户的自动答复、区域设置、时区或工作时间 | [mailboxSettings](../resources/mailboxsettings.md)、 <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md)、 <br> [localeInfo](../resources/localeinfo.md)、 <br> [workingHours](../resources/workinghours.md) | [获取用户的邮箱设置](../api/user-get-mailboxsettings.md)、 <br> [更新用户的邮箱设置](../api/user-update-mailboxsettings.md) |
-| 要获取其他收件人的特殊状态，如外出邮件的提示 | [用户](../resources/user.md) <br> [邮件提示](../resources/mailtips.md) | [获取邮件提示](../api/user-getmailtips.md) |
-| 如果在其他消息 (preview) 中提到的通知用户 | [提及 （预览）](../resources/mention.md) | [获取一条消息中的 @ 提及的详细信息](../api/message-get.md#request-2) |
-| 取消订阅电子邮件通讯组列表 (preview) 中的用户 | [消息 （预览）](../resources/message.md) | [Unsubscribe](../api/message-unsubscribe.md) |
+| 获取其他收件人的特殊状态（例如外出）的邮件提醒 | [user](../resources/user.md)、 <br> [mailTips](../resources/mailtips.md) | [获取邮件提醒](../api/user-getmailtips.md) |
+| 如果在其他邮件中提及，则提醒用户（预览） | [mention（预览）](../resources/mention.md) | [获取邮件中的 @-mentions 的详细信息](../api/message-get.md#request-2) |
+| 从电子邮件通讯组列表中取消用户的订阅（预览） | [message（预览）](../resources/message.md) | [取消订阅](../api/message-unsubscribe.md) |
 | **邮件和文件夹管理** | | |
-| 组织邮件文件夹层次结构中的邮件 | [mailFolder](../resources/mailfolder.md)  | [MailFolder 的方法](../resources/mailfolder.md#methods) |
-| 邮件分类 | [outlookCategory （预览）](../resources/outlookcategory.md) | [OutlookCategory 方法](../resources/outlookcategory.md#methods) |
-| 收件箱规则用于自动执行操作，例如将特定的传入邮件转发 | [messageRule （预览）](../resources/messagerule.md) | [MessageRule 方法](../resources/messagerule.md#methods) |
-| 获取消息的 Internet 邮件头 | [消息 （预览）](../resources/message.md) | [获取一条消息的**internetMessageHeaders**属性](../api/message-get.md#request-4)。 |
+| 组织邮件文件夹层次结构中的邮件 | [mailFolder](../resources/mailfolder.md)  | [mailFolder 的方法](../resources/mailfolder.md#methods) |
+| 对邮件分类 | [outlookCategory（预览）](../resources/outlookcategory.md) | [outlookCategory 的方法](../resources/outlookcategory.md#methods) |
+| 使用收件箱规则自动执行转发特定传入邮件等操作 | [messageRule（预览）](../resources/messagerule.md) | [messageRule 的方法](../resources/messagerule.md#methods) |
+| 获取邮件的 Internet 邮件头 | [message（预览）](../resources/message.md) | [获取邮件的 **internetMessageHeaders** 属性](../api/message-get.md#request-4)。 |
 | 搜索和筛选邮件 | [邮件](../resources/message.md) | [查询参数](/graph/query-parameters)  |
 | 获取对文件夹中的邮件更改的通知 | [订阅](../resources/subscription.md) | [在 Microsoft Graph 中使用 Webhooks](../resources/webhooks.md) |
 | 同步邮件或邮件文件夹层次结构 | [邮件](../resources/message.md) | [获取文件夹中邮件的增量更改](/graph/delta-query-messages) |
 | **应用开发** | | |
-| 将作为 Internet 邮件头的消息中添加自定义应用程序数据 | [message](../resources/message.md) | 将自定义数据添加到邮件**internetMessageHeaders**集合。 |
+| 添加自定义应用数据作为邮件的 Internet 邮件头 | [message](../resources/message.md) | 向邮件的 **internetMessageHeaders** 集合添加自定义数据。 |
 | 通过使用扩展向邮件添加自定义应用数据 | [openTypeExtension](../resources/opentypeextension.md)、 <br>[schemaExtension](../resources/schemaextension.md) | [使用扩展向资源添加自定义数据](/graph/extensibility-overview) |
 | 访问半公开的 Outlook MAPI 属性的自定义数据 | [SingleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)、 <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook 扩展属性概述](../resources/extended-properties-overview.md) |
 
@@ -71,7 +71,15 @@ Microsoft Graph API 还提供支持邮件常见用例的方法和操作。
 邮件 API 可以为你开辟与用户互动的新途径：
 
 - [Outlook 邮件 API 概述](/graph/outlook-mail-concept-overview)
-- 向下钻取[邮件](../resources/message.md)和 [mailFolder](../resources/mailfolder.md) 资源的 [方法](../resources/message.md#methods)、[属性](../resources/message.md#properties)和[关系](../resources/message.md#relationships)。
+- 向下钻取[邮件](../resources/message.md)和 [mailFolder](../resources/mailfolder.md) 资源的[方法](../resources/message.md#methods)、[属性](../resources/message.md#properties)和[关系](../resources/message.md#relationships)。
 - 请尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
 
 需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mail-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

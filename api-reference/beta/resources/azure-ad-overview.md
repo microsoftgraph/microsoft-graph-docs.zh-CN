@@ -1,19 +1,19 @@
 ---
 title: 在 Microsoft Graph 中使用 Azure Active Directory 资源
-description: Azure Active Directory (Azure AD) 的 Microsoft Graph 提供 REST Api 来帮助管理您的组织、 资源和资产。
+description: Microsoft Graph Azure Active Directory (Azure AD) 提供 REST API，以帮助管理你的组织、资源和资产。
 localization_priority: Priority
-ms.openlocfilehash: ac4b927a8420cbf8d654dd7f02ca2c232f717296
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 35e938caa05409cb7b4a9da66ef970f63685393c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813620"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512449"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Azure Active Directory 资源
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用 Microsoft Graph，您可以访问[Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)资源来启用类似管理管理员 （目录） 角色的方案邀请外部用户参加组织，并且，如果是[云解决方案 Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider)管理您的客户数据。 Microsoft Graph 还提供了方法应用程序可以使用，例如，若要了解有关用户的可传递组和角色成员身份信息。 
+借助 Microsoft Graph，用户可以访问 [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 资源以支持诸多应用场景，如管理管理员（目录）角色，邀请外部用户进入组织，并且，如果你是[云解决方案提供商 (CSP)](https://partner.microsoft.com/cloud-solution-provider)，则可以管理客户的数据。 Microsoft Graph 还提供了应用可使用的方法；例如，用于发现用户的可传递组和角色成员身份的相关信息的方法。 
 
 > **注意**：一些 Azure AD 资源收录在 API 参考的其他部分中。有关详细信息，请参阅[用户](users.md)和[组](group.md)。
 
@@ -33,22 +33,22 @@ ms.locfileid: "27813620"
 | **用例**        | **REST 资源** | **另请参阅** |
 |:-----------------|:--------|:----------|
 | ** 对象和方法** | | |
-| `directoryObject` 是许多目录资源（如用户和组）继承自的基类。Microsoft Graph 公开了多个可用于发现用户、组和其他目录对象的相关信息的方法。例如，可以在组列表中检查可传递成员身份，也可以返回目录对象是其可传递成员的所有组和目录角色，亦可以从常规资源 ID 列表获取指定类型（如用户或组）的所有资源。 | [directoryObject](../resources/directoryobject.md) | 无 |
-| **管理目录 （管理员） 角色、 管理单元、 目录设置和策略** | | |
+| `directoryObject` 是许多目录资源（如用户和组）继承自的基类。Microsoft Graph 公开了多个可用于发现用户、组和其他目录对象的相关信息的方法。例如，可以在组列表中检查可传递成员身份，也可以返回目录对象是其可传递成员的所有组和目录角色，亦可以从常规资源 ID 列表获取指定类型（如用户或组）的所有资源。 | [directoryObject](../resources/directoryobject.md) | 不适用 |
+| **管理目录（管理员）角色、管理单元、目录设置和策略** | | |
 | 激活 Azure AD 租户中的目录角色，并管理目录角色中的用户成员身份。目录角色亦称为“管理员角色”。 | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) |[在 Azure Active Directory 中分配管理员角色](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)|
-| 管理管理单元。 目录角色委派对其成员的租户级权限。 管理员可以创建和管理委派进行更精细作用域管理权限的用户管理单位。 | [administrativeUnit](../resources/administrativeunit.md) | [Azure AD 中的管理单元管理](https://docs.microsoft.com/azure/active-directory/active-directory-administrative-units-management) |
-| 应用预定义的目录设置跨租户或各个资源实例。 目前，支持仅为 Office 365 组的设置。 是否允许来宾用户组所有者和更多，则目录设置控制行为类似于阻止的 word 的组显示名称的列表。 | [directorySetting](../resources/directorysetting.md) <br/>[directorySettingTemplate](../resources/directorysettingtemplate.md)| [用于配置组设置的 Azure Active Directory cmdlet](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)|
-| 将 Azure AD 策略应用于应用程序、 服务主体、 组或整个组织中。 目前，支持令牌生存期和主页领域发现的策略。  | [策略](../resources/policy.md) | 不适用 |
-| **安全特权的访问 Azure AD** | | |
-| 管理和监视时间绑定特权的访问目录和 Azure 资源的管理员和 IT 专业人员特权标识管理 (PIM)。 | [特权的标识管理 API](../resources/privilegedidentitymanagement-root.md) | [什么是 Azure AD 特权标识管理？](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)|
-| 监视器标识风险事件，如用户登录从感染恶意软件的设备或不熟悉的位置。 | [标识保护服务 API](../resources/identityprotection-root.md) | [Azure Active Directory 标识保护](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>[Azure Active Directory 风险事件](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-risk-events) |
+| 管理管理单元。 目录角色向其成员委派租户机构。 管理员可以创建和管理管理单元，以便向用户更精确地委培具有范围限定的管理机构。 | [administrativeUnit](../resources/administrativeunit.md) | [Azure AD 中的管理单元管理](https://docs.microsoft.com/azure/active-directory/active-directory-administrative-units-management) |
+| 跨租户应用预定义目录设置或将其应用到单个资源实例。 目前，仅支持 Office 365 组设定。 跨租户应用预定义组设置或将其应用到单个资源实例。组设置控制行为，如组显示名称的禁止使用的词语列表，是否允许来宾用户成为组所有者等。 | [directorySetting](../resources/directorysetting.md) <br/>[directorySettingTemplate](../resources/directorysettingtemplate.md)| [用于配置组设置的 Azure Active Directory cmdlet](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)|
+| 将 Azure AD 策略应用到应用程序、服务主体、组或整个组织。 目前，支持令牌生存期和主领域发现策略。  | [策略](../resources/policy.md) | 不适用 |
+| **保护至 Azure AD 的特权访问** | | |
+| 利用 Privileged Identity Management (PIM) 为管理员和 IT 专业人员管理和监控至目录和 Azure 资源的具有时间限定的特权访问。 | [Privileged Identity Management API](../resources/privilegedidentitymanagement-root.md) | [什么是 Azure AD Privileged Identity Management？](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)|
+| 监视身份风险事件，如用户从被恶意感染的设备或从不熟悉的位置登录。 | [Identity Protection 服务 API](../resources/identityprotection-root.md) | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>[Azure Active Directory 风险事件](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-reporting-risk-events) |
 | **管理设备** | | |
 | 管理组织中的注册设备。设备注册绑定到用户，包括笔记本电脑、台式机、平板电脑和移动电话等。设备通常是在云中使用 Device Registration Service 或 Microsoft Intune 进行创建。条件访问策略使用它们进行多重身份验证。 | [设备](../resources/device.md) | [Azure Active Directory 设备注册入门](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)<br/><br/>[什么是 InTune？](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[在 Intune 中注册设备以进行管理](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
-| **应用程序管理** | | |
-| 管理应用程序开发人员租户中的配置。 | [application](../resources/application.md) | [应用程序和 Azure Active Directory 中的服务主体对象](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) |
-| 管理安装在租户中的应用程序。 | [servicePrinicpal](../resources/serviceprincipal.md) | [应用程序和 Azure Active Directory 中的服务主体对象](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) |
-| 管理权限的用户和管理员在租户中安装的应用程序许可。 | [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) | 不适用 |
-| 管理用户、 组和安装在租户中的应用程序的服务主体角色成员身份。 | [appRoleAssignment](../resources/approleassignment.md) | 不适用 |
+| **应用管理** | | |
+| 管理开发人员租户中的应用配置。 | [应用](../resources/application.md) | [Azure Active Directory 中的应用程序和服务主体对象](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) |
+| 管理租户中安装的应用。 | [servicePrinicpal](../resources/serviceprincipal.md) | [Azure Active Directory 中的应用程序和服务主体对象](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) |
+| 管理租户安装的应用中的用户和管理员许可的权限。 | [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) | 不适用 |
+| 管理租户中安装的应用中的用户、组和服务主体角色成员身份。 | [appRoleAssignment](../resources/approleassignment.md) | 不适用 |
 | **合作伙伴租户管理** | | |
 | 获取与客户租户的合作关系的相关信息。 <br/><br/>**注意：** 这仅适用于合作伙伴租户。合作伙伴租户是属于已加入 [Microsoft 云解决方案提供商](https://partnercenter.microsoft.com/partner/programs)、Office 365 Syndication 或 Microsoft Advisor 合作伙伴计划的 Microsoft 合作伙伴的 Azure AD 租户。| [合同](../resources/contract.md) | [从云解决方案提供商应用程序中调用 Microsoft Graph](/graph/auth-cloudsolutionprovider) |
 | 管理与租户关联的域。借助域操作，注册机构可以对 Office 365 等服务自动执行域关联。 | [域](../resources/domain.md) | [将自定义域名添加到 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-domains-add-azure-portal) |
@@ -56,13 +56,21 @@ ms.locfileid: "27813620"
 | 获取组织的相关信息，如商家地址、技术和通知联系人、订阅的服务计划及其关联域。 | [组织](../resources/organization.md) | 无 |
 | 获取公司订阅的服务 SKU 的相关信息。 | [subscribedSku](../resources/subscribedsku.md) | 无 |
 | 邀请外部（来宾）用户加入组织。 | [邀请](../resources/invitation.md) | [什么是 Azure AD B2B 协作？](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
-| **访问 reviews （英文）** | | |
-| 确保组成员身份和应用程序的访问权限是否正确与 access reviews （英文） | [access 会检查 API](../resources/accessreviews-root.md) |[Azure AD 访问审阅](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| **访问审查** | | |
+| 通过访问审查确保组成员关系和应用程序访问权限是正确的 | [访问审查 API](../resources/accessreviews-root.md) |[Azure AD 访问审查](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 ## <a name="next-steps"></a>后续步骤
 目录资源和 API 提供了使用 Microsoft Graph 与用户交互及管理用户体验的新方式。若要了解更多： 
 
 - 深入了解对方案最有帮助的资源的方法和属性。
-- 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
+- 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
 
 需要更多灵感？请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/azure-ad-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

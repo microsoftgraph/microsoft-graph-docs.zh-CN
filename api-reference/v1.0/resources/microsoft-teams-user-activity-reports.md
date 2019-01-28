@@ -3,12 +3,13 @@ title: Microsoft Teams 用户活动报告
 description: 使用 Microsoft Teams 活动报告了解组织中的 Microsoft Teams 用户活动。
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 8ecf68174edb85b2bbf91a6052a6d96ad425dbe6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: pranoychaudhuri
+ms.openlocfilehash: 519094d2c569f418143420909ba871425a4b4af2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966333"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572225"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Microsoft Teams 用户活动报告
 

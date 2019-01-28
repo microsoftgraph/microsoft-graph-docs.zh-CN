@@ -1,49 +1,49 @@
 ---
 title: chatMessage 资源类型
-description: 代表单个聊天消息中的通道或聊天实体。 消息能为根邮件或由**replyToId**属性在消息中定义的线程的一部分。
+description: 表示渠道或聊天实体内的单个聊天消息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
 localization_priority: Priority
-ms.openlocfilehash: ad381102f7e93a4dcccd7b68435d0687ed6b4837
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 98b9918d5763d6003a3c9a177057abe2e7b415ec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855990"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517965"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表单个聊天消息中的[通道](channel.md)或聊天实体。 消息能为根邮件或由**replyToId**属性在消息中定义的线程的一部分。
+表示 [渠道](channel.md)或聊天实体内的单个聊天信息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列表通道消息](../api/channel-list-messages.md) | [chatmessage](chatmessage.md)集合 | 在通道中获取的所有根邮件的列表。|
-|[Get 频道消息](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | 从通道中获取单个根消息。|
-|[列表回复到一条消息](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md)集合| 在通道中获取所有回复到一条消息的列表。|
-|[获取邮件答复](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| 在通道中获取单个邮件答复。|
+|[列出渠道消息](../api/channel-list-messages.md) | [chatmessage](chatmessage.md) 集合 | 获取渠道中的所有根消息列表。|
+|[获取渠道消息](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | 获取渠道中的单个根消息。|
+|[列出消息回复](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) 集合| 获取渠道中的所有消息回复列表。|
+|[获取消息回复](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| 获取渠道中的单个消息回复。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|String| 只读。 邮件的唯一 ID。|
-|replyToId| string | 父消息/根邮件的主题的 id |
-|发件人|[identitySet](identityset.md)| 发件人的邮件的详细信息|
-|etag| string | 邮件的版本号 |
-|messageType|字符串|支持的邮件，当前的类型的值为： 消息，chatEvent，键入|
-|createdDateTime|dateTimeOffset|只读。 创建邮件时的时间戳|
-|lastModifiedDateTime|dateTimeOffset|只读。 时间戳的邮件时编辑更新|
-|被|boolean|如果已软删除一条消息，表示|
-|deletedDateTime|dateTimeOffset|只读。 邮件已被删除的时间戳 |
-|subject|string|邮件主题行。 可选|
-|body|[itemBody](itembody.md)|纯文本/HTML 表示形式的消息内容。 返回纯文本默认情况下应用程序可以查询参数的一部分选择 HTML|
-|摘要|string|摘要无法用于推送通知和摘要视图或秋季后视图的消息文本|
-|提及|[chatMessageMention](chatmention.md)集合| 消息中提到的实体的列表。 当前支持用户、 自动程序、 团队和通道|
-|importance| string | 邮件的重要性： 普通、 高|
-|反应的方式| [chatMessageReaction](chatreaction.md)集合 | 此消息的反应的方式 （例如，如）|
-|区域设置|string|设置由客户端消息的区域设置|
-|attachments|[chatMessageAttachment](chatattachment.md)集合 |附加的文件|
+|id|String| 只读。 消息的唯一 ID。|
+|replyToId| string | 线程的父级消息/根消息的 Id |
+|from|[identitySet](identityset.md)| 消息发送者的详细信息|
+|etag| string | 消息的版本号 |
+|messageType|String|消息类型，当前支持的值包括：message、chatEvent、Typing|
+|createdDateTime|dateTimeOffset|只读。 创建消息时的时间戳|
+|lastModifiedDateTime|dateTimeOffset|只读。 编辑/更新消息时的时间戳|
+|isDeleted|boolean|表示消息是否已被软删除|
+|deletedDateTime|dateTimeOffset|只读。 删除消息时的时间戳 |
+|主题|string|消息主题行。 可选|
+|正文|[itemBody](itembody.md)|消息内容的纯文本/HTML 表示。 默认返回纯文本，应用程序可选择 HTML 作为查询参数的一部分|
+|摘要|string|可用于推送通知的消息摘要文本和摘要视图或回退视图|
+|提及|[chatMessageMention](chatmention.md) 集合| 消息中提到的实体列表。 当前支持用户、机器人、团队、渠道|
+|重要性| string | 消息重要性包括：正常、高|
+|反应| [chatMessageReaction](chatreaction.md) 集合 | 此消息的反应（例如，赞）|
+|区域设置|string|客户设置的消息区域设置|
+|附件|[chatMessageAttachment](chatattachment.md) 集合 |附加文件|
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -91,10 +91,15 @@ ms.locfileid: "27855990"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "chat message resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chatmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

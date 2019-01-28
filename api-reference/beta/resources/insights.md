@@ -1,37 +1,37 @@
 ---
-title: 见解资源类型
-description: 见解是计算使用高级分析功能和机学习技术的关系。 例如，可以确定趋势周围用户的 OneDrive 文档。
+title: insights 资源类型
+description: Insights 是使用高级分析和机器学习技术计算的关系。 例如，你可以标识与用户有关的 OneDrive 文档趋势。
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 38f7afb40c1618a8a7cf9d585c99633e2bb8d940
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 4e71dbca7bf4ebbe054d0da83436e5dc2129cf19
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938312"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513688"
 ---
-# <a name="insights-resource-type"></a>见解资源类型
+# <a name="insights-resource-type"></a>insights 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-见解是计算使用高级分析功能和机学习技术的关系。 例如，可以确定趋势周围用户的 OneDrive 文档。
+Insights 是使用高级分析和机器学习技术计算的关系。 例如，你可以标识与用户有关的 OneDrive 文档趋势。
 
-见解会返回以下 Api:
+Insights 由以下 API 返回：
 
-- [趋势](insights-trending.md)-返回文档从 OneDrive 和趋势周围用户的 SharePoint 网站。
-- [用于](insights-used.md)-返回文档查看和修改的用户。 包含用户使用的文档中的 OneDrive for Business，SharePoint 中，打开作为电子邮件附件和为如框、 收存箱和 Google 驱动器的源中的链接附件。
-- [共享](insights-shared.md)-返回与用户共享的文档。 文档可以共享作为电子邮件附件或 OneDrive for Business 链接中发送电子邮件。
+- [Trending](insights-trending.md) - 返回与用户有关的 OneDrive 和 SharePoint 网站趋势文档。
+- [Used](insights-used.md) - 返回用户查看和修改过的文档。 包括在 OneDrive for Business 和 SharePoint 中使用的文档、以电子邮件附件打开的文档以及来自源（如 Box、DropBox 和 Google 云端硬盘）的链接附件文档。
+- [Shared](insights-shared.md) - 返回与用户共享的文档。 可作为电子邮件附件或电子邮件中发送的 OneDrive for Business 链接的文档。
 
-每个洞察返回了`resourceVisualization`和`resourceReference`复杂值类型 (CVT)。 ResourceVisualization CVT 包含属性，如`title`和`previewImageUrl`。 Microsoft 使用可视化属性来呈现像 Office 深入体验中的文件。
+返回的每个 insight 均为 `resourceVisualization` 和 `resourceReference` 复杂值类型 (CVT)。 resourceVisualization CVT 包含诸如 `title` 和 `previewImageUrl` 之类的属性。 Microsoft 使用可视化属性来渲染 Office Delve 等体验中的文件。
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 关系      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 趋势分析      | [趋势](insights-trending.md)集合       | 确定趋势文档的关系计算。 可以存储趋势文档，在 OneDrive 或 SharePoint 网站中。   |
-| used      | [用于](insights-used.md)集合       | 计算确定文档查看和修改的用户的关系。 包含用户使用的文档中的 OneDrive for Business，SharePoint 中，打开作为电子邮件附件和为如框、 收存箱和 Google 驱动器的源中的链接附件。  |
-| shared        | [共享](insights-shared.md)集合       | 确定与用户共享的文档的关系计算。 文档可以共享作为电子邮件附件或 OneDrive for Business 链接中发送电子邮件。   |
+| 趋势      | [Trending](insights-trending.md) 集合       | 用于标识趋势文档的计算关系。 趋势文档可以存储在 OneDrive 或 SharePoint 网站中。   |
+| 使用的内容      | [Used](insights-used.md) 集合       | 用于标识用户已查看和修改文档的计算关系。 包括在 OneDrive for Business 和 SharePoint 中使用的文档、以电子邮件附件打开的文档以及来自源（如 Box、DropBox 和 Google 云端硬盘）的链接附件文档。  |
+| 共享的内容        | [Shared](insights-shared.md) 集合       | 用于标识与用户共享的文档的计算关系。 可作为电子邮件附件或电子邮件中发送的 OneDrive for Business 链接的文档。   |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -43,3 +43,11 @@ ms.locfileid: "27938312"
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

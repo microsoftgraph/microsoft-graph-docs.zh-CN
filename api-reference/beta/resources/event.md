@@ -4,30 +4,30 @@ description: 日历中的事件。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 3a42bd4c87b6c4d8cb26160ae3c36bc7d6380b79
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3db8b53cd6ebb6b04cc0ad4f20db5c20a60f9e79
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981145"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516047"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[用户](user.md)日历或 Office 365[组](group.md)的默认日历中的事件。
+[用户](user.md)日历或 Office 365 [组](group.md)日历中的事件。
 
 该资源支持：
 
-- 将您自己的数据添加到自定义属性，作为[扩展](/graph/extensibility-overview)。
+- 将你自己的数据作为[扩展](/graph/extensibility-overview)添加到自定义属性。
 - 订阅[更改通知](/graph/webhooks)。
-- 通过提供 [delta](../api/event-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
+- 通过提供 [delta](../api/event-delta.md) 函数，使用 [delta 查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
-> **注意：** 有几个您可以与用户日历、 组日历和其事件交互的方式不同：
+> **注释：** 与用户日历、组日历及其事件交互的方式稍有不同：
 
- - 您可以组织只有用户日历中[calendarGroup](calendargroup.md)。
- - Outlook 自动接受代表组的所有会议请求。 您可以为_用户_日历仅[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)会议请求。
-  - Outlook 不支持为组事件的提醒。 您可以为仅_用户_日历[snooze](../api/event-snoozereminder.md)或[消除](../api/event-dismissreminder.md)的[提醒](reminder.md)。
+ - 只可以组织 [calendarGroup](calendargroup.md) 中的用户日历。
+ - Outlook 将代表组自动接受所有会议请求。 只可以[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)_用户_日历中的会议请求。
+  - Outlook 不支持对组事件提供提醒。 只可以[暂停](../api/event-snoozereminder.md)或[消除](../api/event-dismissreminder.md)_用户_日历中的[提醒](reminder.md)。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -95,72 +95,72 @@ ms.locfileid: "27981145"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|attendees|[Attendee](attendee.md)集合|事件的与会者集合。|
+|与会者|[Attendee](attendee.md) 集合|事件的与会者集合。|
 |body|[ItemBody](itembody.md)|与事件相关联的邮件正文。可以是 HTML 格式或文本格式。|
 |bodyPreview|字符串|与事件相关联的邮件预览。文本格式。|
-|categories|String collection|与事件相关联的类别。 每个类别对应于[outlookCategory](outlookcategory.md)为用户定义的**displayName**属性。|
+|categories|String collection|与事件相关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
 |changeKey|String|标识 event 对象的版本。每次事件更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|事件的结束日期和时间。|
-|hasAttachments|布尔|如果事件包含附件，则设置为 true。|
+|hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |id|String| 只读。|
 |importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
-|isAllDay|布尔|如果事件持续一整天，则设置为 true。|
-|isCancelled|布尔|如果事件已取消，则设置为 true。|
-|isOrganizer|布尔|如果邮件发件人也是组织者，则设置为 true。|
-|isReminderOn|布尔|如果设置警报以提醒用户有事件，则设置为 true。|
+|isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
+|isCancelled|Boolean|如果事件已取消，则设置为 true。|
+|isOrganizer|Boolean|如果邮件发件人也是组织者，则设置为 true。|
+|isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|location|[位置](location.md)|事件的位置。|
-|locations|[位置](location.md)集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
-|onlineMeetingUrl|String|在线会议的 URL。 仅组织者指定为联机会议如 Skype 事件时，该属性是设置。 只读。|
-|organizer|[Recipient](recipient.md)|事件的组织者。|
+|位置|[位置](location.md)|事件的位置。|
+|位置|[location](location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
+|onlineMeetingUrl|String|联机会议的 URL。 仅当组织者将事件指定为联机会议（如 Skype）才会设置此属性。 只读。|
+|组织者|[收件人](recipient.md)|事件的组织者。|
 |originalEndTimeZone|String|创建事件时设置的结束时区。 `tzone://Microsoft/Custom` 值表示旧的自定义时区已在桌面版 Outlook 中设置。|
 |originalStart|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|字符串|创建事件时设置的开始时区。`tzone://Microsoft/Custom` 值表示旧的自定义时区在桌面版 Outlook 中设置。|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|事件的定期模式。|
 |reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
-|responseRequested|布尔|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
+|responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 |responseStatus|[ResponseStatus](responsestatus.md)|指示在事件消息的响应中发送的响应类型。|
 |sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
-|seriesMasterId|String|定期系列主项目，如果该事件是定期系列的一部分的 ID。|
+|seriesMasterId|String|定期系列主项的 ID（如果此事件是定期系列的一部分）。|
 |showAs|String|要显示的状态。 可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |start|[DateTimeTimeZone](datetimetimezone.md)|事件的开始时间。|
-|subject|String|事件的主题行文本。|
-|type|String|事件类型。 可取值为 `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 只读|
-|uid|String|由不同日历间的所有事件实例共享的唯一标识符。 **注意：** 此属性的作用相同`iCalUid`v1.0 终结点上, 对[事件资源](/graph/api/resources/event?view=graph-rest-1.0)的属性，但不是保证具有相同的值。|
+|主题|String|事件的主题行文本。|
+|type|String|事件类型。 可取值为：`singleInstance`、`occurrence`、`exception`、`seriesMaster`。 只读|
+|uid|String|由不同日历间的所有事件实例共享的唯一标识符。 **注释：** 此属性与 v1.0 终结点上的[事件资源](/graph/api/resources/event?view=graph-rest-1.0)的 `iCalUid` 属性相同，但不能保证拥有相同的值。|
 |webLink|String|要在 Outlook Web App 中打开事件的 URL。<br/><br/>如果你通过 Outlook Web App 登录邮箱，该事件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br/><br/>可以从 iFrame 中访问此 URL。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合|事件[FileAttachment](fileattachment.md)和[ItemAttachment](itemattachment.md)， [referenceAttachment](referenceattachment.md)附件的集合。 导航属性。 只读。 可为 Null。|
-|calendar|[Calendar](calendar.md)|包含事件的日历。导航属性。只读。|
-|extensions|[扩展](extension.md)集合|定义的事件的打开扩展的集合。 可为 Null。|
-|instances|[Event](event.md) collection|事件的实例。导航属性。只读。可为 Null。|
+|attachments|[Attachment](attachment.md) 集合|事件的 [FileAttachment](fileattachment.md)、[ItemAttachment](itemattachment.md) 和 [referenceAttachment](referenceattachment.md) 附件的集合。 导航属性。 只读。 可为 Null。|
+|日历|[Calendar](calendar.md)|包含 event. Navigation 属性的日历。只读。|
+|extensions|[扩展](extension.md)集合|为事件定义的开放扩展集合。 可为空。|
+|实例|[Event](event.md) 集合|事件的实例。导航属性。只读。可为空。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为事件定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为事件定义的单值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为事件定义的单值扩展属性的集合。只读。可为空。|
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出事件](../api/user-list-events.md)|[Event](event.md) collection |检索用户邮箱中的 [event](../resources/event.md) 对象列表。该列表包含单个实例会议和系列主控形状。|
+|[列出事件](../api/user-list-events.md)|[Event](event.md) 集合 |检索用户邮箱中的 [event](../resources/event.md) 对象列表。该列表包含单个实例会议和系列主控形状。|
 |[创建事件](../api/user-post-events.md) |[事件](event.md)| 通过发布到实例集合创建新事件。|
 |[获取事件](../api/event-get.md) | [事件](event.md) |读取 event 对象的属性和关系。|
 |[更新](../api/event-update.md) | [事件](event.md)   |更新事件对象。 |
-|[删除](../api/event-delete.md) | 无 |删除事件对象。 |
-|[cancel](../api/event-cancel.md) | 无 | 从组织者的取消消息发送给所有与会者和取消指定的会议。 |
-|[接受](../api/event-accept.md)|无|接受用户日历中指定的事件。|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|无|暂时接受用户日历中的指定的事件。|
-|[拒绝](../api/event-decline.md)|无|拒绝邀请用户日历中指定的事件。|
-|[转发](../api/event-forward.md)|无|允许将会议请求转发到新收件人的组织者或与会者的会议事件。|
+|[删除](../api/event-delete.md) | 无 |删除 event 对象。 |
+|[取消](../api/event-cancel.md) | 无 | 将取消消息从组织者发送至所有与会者，并取消指定会议。 |
+|[接受](../api/event-accept.md)|无|接受用户日历中的指定事件。|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|无|暂时接受用户日历中的指定事件。|
+|[拒绝](../api/event-decline.md)|无|拒绝用户日历中的指定事件邀请。|
+|[转发](../api/event-forward.md)|无|让会议事件的组织者或与会者可以将会议请求转发给新的收件人。|
 |[delta](../api/event-delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。|
-|[dismissReminder](../api/event-dismissreminder.md)|无|消除用户日历中指定的事件的提醒。|
-|[snoozeReminder](../api/event-snoozereminder.md)|无|推迟指定事件提醒用户日历中的新时间之前。|
-|[列出实例](../api/event-list-instances.md) |[Event](event.md) collection| 获取 Event 对象集合。|
+|[dismissReminder](../api/event-dismissreminder.md)|无|消除用户日历中指定事件的提醒。|
+|[snoozeReminder](../api/event-snoozereminder.md)|无|将用户日历中指定事件的提醒推迟至新的时间。|
+|[列出实例](../api/event-list-instances.md) |[Event](event.md) 集合| 获取 Event 对象集合。|
 |**附件**| | |
-|[列出附件](../api/event-list-attachments.md) |[附件](attachment.md) 集合| 获取事件的所有附件。|
-|[Add attachment](../api/event-post-attachments.md) |[Attachment](attachment.md)| 通过发布到附件集合，向事件添加新附件。|
+|[列出附件](../api/event-list-attachments.md) |[Attachment](attachment.md) 集合| 获取事件的所有附件。|
+|[Add attachment](../api/event-post-attachments.md) |[附件](attachment.md)| 通过发布到附件集合，向事件添加新附件。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并将自定义属性添加到新资源或现有资源。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取扩展名称标识的开放扩展。|
@@ -182,10 +182,15 @@ ms.locfileid: "27981145"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/event.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

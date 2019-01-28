@@ -1,23 +1,23 @@
 ---
 title: 创建联机会议
-description: 创建一个代表指定在请求正文中的用户的联机会议。
+description: 代表请求正文中指定的用户创建联机会议。
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ac4fb9b378f644e5cf5ba5e9d6412a6ca1fd1b45
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: dc6521a09bcfaf52b7240d5ad63129fa729d7899
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946929"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516866"
 ---
 # <a name="create-online-meeting"></a>创建联机会议
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建一个代表指定在请求正文中的用户的联机会议。
+代表请求正文中指定的用户创建联机会议。
 
-> **注意**： 会议不会显示在用户的日历。
+> **注释**：会议不会显示在用户的日历上。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,10 +41,10 @@ POST /applications/{id}/onlineMeetings
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[onlineMeeting](../resources/onlinemeeting.md)对象的 JSON 表示形式。
+在请求正文中，提供 [onlineMeeting](../resources/onlinemeeting.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[onlineMeeting](../resources/onlinemeeting.md)对象。
+如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [onlineMeeting](../resources/onlinemeeting.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -75,7 +75,7 @@ Content-Length: 1553
 }
 ```
 
-在请求正文中，提供[onlineMeeting](../resources/onlinemeeting.md)对象的 JSON 表示形式。
+在请求正文中，提供 [onlineMeeting](../resources/onlinemeeting.md) 对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
 
@@ -133,10 +133,15 @@ Content-Length: 1574
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create onlineMeeting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/application-post-onlinemeetings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

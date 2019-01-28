@@ -1,13 +1,13 @@
 ---
 title: fileAttachment 资源类型
-description: '附加到事件、 消息或 post （如文本文件或 Word 文档） 的文件。 **ContentBytes** '
+description: '附加到事件、邮件或帖子的文件（如文本文件或 Word 文档）。**contentBytes** '
 localization_priority: Priority
-ms.openlocfilehash: 81de7a12ca371158d7f6369861a8a197fd544821
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 07dcdac0497caa106eac38d1248661218a7fcc5e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870054"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574815"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
@@ -32,15 +32,15 @@ ms.locfileid: "27870054"
 |:---------------|:--------|:----------|
 |contentBytes|Binary|文件的 Base64 编码内容。|
 |contentId|String|获取 Exchange 存储中的附件 ID。|
-|contentLocation|String|对应于附件内容所在位置的统一资源标识符 (URI)。|
+|contentLocation|String|请勿使用此属性，因为它不受支持。|
 |contentType|String|附件的内容类型。|
 |id|String|附件 ID。|
-|isInline|布尔|如果是内嵌附件则设置为 true。|
+|isInline|Boolean|如果是内嵌附件则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的日期和时间。|
 |name|String|表示显示在表示嵌入的附件的图标下方的文本的名称。该名称不必是实际的文件名。|
 |size|Int32|附件大小，以字节为单位。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 

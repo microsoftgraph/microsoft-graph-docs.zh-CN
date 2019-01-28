@@ -1,19 +1,19 @@
 ---
 title: 获取 appRoleAssignment
-description: 检索的属性和 approleassignment 对象的关系。
+description: 检索 approleassignment 对象的属性和关系。
 localization_priority: Priority
-ms.openlocfilehash: 465ef0365bee8c1dd002fa423232cc615fc45635
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 35537c45e4f156a0b78ffc708eaa39fec8625754
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809658"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517783"
 ---
 # <a name="get-approleassignment"></a>获取 appRoleAssignment
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和 approleassignment 对象的关系。
+检索 approleassignment 对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -43,7 +43,7 @@ GET /groups/{id}/appRoleAssignments/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[appRoleAssignment](../resources/approleassignment.md)对象。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -78,10 +78,15 @@ Content-length: 253
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get appRoleAssignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/approleassignment-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

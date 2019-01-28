@@ -4,16 +4,16 @@ description: 使用此 API 可以创建请求正文中指定的新组。可以�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 736c4350cc5c7c57d0b57562676317317f6f74dc
-ms.sourcegitcommit: 71368f59d267c8188567529e74486e54cc122804
+ms.openlocfilehash: 87494b309dd731c519f0d999396f283c5a2fa583
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/24/2019
-ms.locfileid: "29442323"
+ms.locfileid: "29515907"
 ---
 # <a name="create-group"></a>创建组
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 可以创建请求正文中指定的新[组](../resources/group.md)。可以创建下列 3 种类型之一的组：
 
@@ -229,10 +229,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create group",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-post-groups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
