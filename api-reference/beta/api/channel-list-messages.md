@@ -1,30 +1,30 @@
 ---
-title: 列表通道消息
-description: '检索 （不带答复） 中的工作组的通道的邮件的列表。 若要获取答复一条消息，请调用列表邮件答复或获取邮件答复 API。 '
+title: 列出频道消息
+description: '检索团队频道中的消息列表（无回复）。 若要获取消息的回复，请调用“列出消息回复”或“获取消息回复”API。 '
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: b7059f7bb54fb6a22f6755d3c78567bf16924779
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
-ms.translationtype: MT
+ms.openlocfilehash: bbd2020e85d011b4e94af1d0e56096d4375b41d3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016770"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529171"
 ---
-# <a name="list-channel-messages"></a>列表通道消息
+# <a name="list-channel-messages"></a>列出频道消息
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的[团队](../resources/team.md)[通道](../resources/channel.md)（不带答复） 为[邮件](../resources/chatmessage.md)的列表。 若要获取答复一条消息，请调用[列表邮件答复](channel-get-messagereply.md)或[获取邮件答复](channel-list-messagereplies.md)API。 
+检索[团队](../resources/team.md)[频道](../resources/channel.md)中的[消息](../resources/chatmessage.md)列表（无回复）。 若要获取消息的回复，请调用[列出消息回复](channel-get-messagereply.md)或[获取消息回复](channel-list-messagereplies.md) API。 
 
 ## <a name="permissions"></a>权限
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。若要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）|Group.Read.All,Group.ReadWrite.All|
+|委派（工作或学校帐户）|Group.Read.All、Group.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
-|应用程序| 不支持。 |
+|Application| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ GET /teams/{id}/channels/{id}/messages
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-目前不支持的[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+目前不支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -45,7 +45,7 @@ GET /teams/{id}/channels/{id}/messages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[chatmessage](../resources/chatmessage.md)对象的集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatmessage](../resources/chatmessage.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -126,10 +126,15 @@ Content-length: 201
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get channel messages",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/channel-list-messages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
