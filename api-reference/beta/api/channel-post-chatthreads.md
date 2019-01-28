@@ -1,53 +1,53 @@
 ---
 title: 创建聊天线程
-description: 通过提供根邮件，在指定的通道中创建新的聊天线程。
+description: 通过提供根消息在指定频道中新建聊天线程。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: d748826b98336feffcded345f356663f8fb80f4f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ef8d341310296c810c433a23f0d29be166ca47c5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946355"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511245"
 ---
-# <a name="create-chat-thread"></a><span data-ttu-id="a20e3-103">创建聊天线程</span><span class="sxs-lookup"><span data-stu-id="a20e3-103">Create chat thread</span></span>
+# <a name="create-chat-thread"></a><span data-ttu-id="9e6dc-103">创建聊天线程</span><span class="sxs-lookup"><span data-stu-id="9e6dc-103">Create chat thread</span></span>
 
-> <span data-ttu-id="a20e3-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="a20e3-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a20e3-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="a20e3-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a20e3-106">通过提供根邮件，在指定的[频道](../resources/channel.md)中创建一个新的聊天线程。</span><span class="sxs-lookup"><span data-stu-id="a20e3-106">Create a new chat thread in the specified [channel](../resources/channel.md) by supplying the root messages.</span></span>
+<span data-ttu-id="9e6dc-104">通过提供根消息在指定[频道](../resources/channel.md)中新建聊天线程。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-104">Create a new chat thread in the specified [channel](../resources/channel.md) by supplying the root messages.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a20e3-107">权限</span><span class="sxs-lookup"><span data-stu-id="a20e3-107">Permissions</span></span>
-<span data-ttu-id="a20e3-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a20e3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9e6dc-105">权限</span><span class="sxs-lookup"><span data-stu-id="9e6dc-105">Permissions</span></span>
+<span data-ttu-id="9e6dc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a20e3-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a20e3-110">Permission type</span></span>      | <span data-ttu-id="a20e3-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a20e3-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9e6dc-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="9e6dc-108">Permission type</span></span>      | <span data-ttu-id="9e6dc-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9e6dc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a20e3-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a20e3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a20e3-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a20e3-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a20e3-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a20e3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a20e3-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a20e3-115">Not supported.</span></span>    |
-|<span data-ttu-id="a20e3-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="a20e3-116">Application</span></span> | <span data-ttu-id="a20e3-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="a20e3-117">Not supported.</span></span> |
+|<span data-ttu-id="9e6dc-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9e6dc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9e6dc-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e6dc-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9e6dc-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9e6dc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9e6dc-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-113">Not supported.</span></span>    |
+|<span data-ttu-id="9e6dc-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="9e6dc-114">Application</span></span> | <span data-ttu-id="9e6dc-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-115">Not supported.</span></span> |
 
-> <span data-ttu-id="a20e3-118">目前，仅[委派权限](/graph/permissions-reference)支持此操作。</span><span class="sxs-lookup"><span data-stu-id="a20e3-118">Currently, only [delegated permissions](/graph/permissions-reference) are supported for this operation.</span></span>  <span data-ttu-id="a20e3-119">将来版本将支持应用程序权限。</span><span class="sxs-lookup"><span data-stu-id="a20e3-119">Future releases will support application permissions.</span></span> 
+> <span data-ttu-id="9e6dc-116">目前，此操作只支持[委派权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-116">Currently, only [delegated permissions](/graph/permissions-reference) are supported for this operation.</span></span>  <span data-ttu-id="9e6dc-117">未来版本将支持应用程序权限。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-117">Future releases will support application permissions.</span></span> 
 
-## <a name="http-request"></a><span data-ttu-id="a20e3-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a20e3-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9e6dc-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9e6dc-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/channels/{id}/chatThreads
 ```
-## <a name="request-headers"></a><span data-ttu-id="a20e3-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="a20e3-121">Request headers</span></span>
-| <span data-ttu-id="a20e3-122">名称</span><span class="sxs-lookup"><span data-stu-id="a20e3-122">Name</span></span>       | <span data-ttu-id="a20e3-123">类型</span><span class="sxs-lookup"><span data-stu-id="a20e3-123">Type</span></span> | <span data-ttu-id="a20e3-124">说明</span><span class="sxs-lookup"><span data-stu-id="a20e3-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9e6dc-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="9e6dc-119">Request headers</span></span>
+| <span data-ttu-id="9e6dc-120">名称</span><span class="sxs-lookup"><span data-stu-id="9e6dc-120">Name</span></span>       | <span data-ttu-id="9e6dc-121">类型</span><span class="sxs-lookup"><span data-stu-id="9e6dc-121">Type</span></span> | <span data-ttu-id="9e6dc-122">说明</span><span class="sxs-lookup"><span data-stu-id="9e6dc-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="a20e3-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="a20e3-125">Authorization</span></span>  | <span data-ttu-id="a20e3-126">string</span><span class="sxs-lookup"><span data-stu-id="a20e3-126">string</span></span>  | <span data-ttu-id="a20e3-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a20e3-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9e6dc-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9e6dc-123">Authorization</span></span>  | <span data-ttu-id="9e6dc-124">string</span><span class="sxs-lookup"><span data-stu-id="9e6dc-124">string</span></span>  | <span data-ttu-id="9e6dc-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a20e3-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="a20e3-129">Request body</span></span>
-<span data-ttu-id="a20e3-130">在请求正文中，提供[chatThread](../resources/chatthread.md)对象，其中包含 rootMessage 属性的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a20e3-130">In the request body, supply a JSON representation of a [chatThread](../resources/chatthread.md) object that contains the rootMessage property.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9e6dc-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="9e6dc-127">Request body</span></span>
+<span data-ttu-id="9e6dc-128">在请求正文中，提供包含 rootMessage 属性的 [chatThread](../resources/chatthread.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-128">In the request body, supply a JSON representation of a [chatThread](../resources/chatthread.md) object that contains the rootMessage property.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a20e3-131">响应</span><span class="sxs-lookup"><span data-stu-id="a20e3-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9e6dc-129">响应</span><span class="sxs-lookup"><span data-stu-id="9e6dc-129">Response</span></span>
 
-<span data-ttu-id="a20e3-132">如果成功，此方法返回`201 Created`空响应正文的响应代码。</span><span class="sxs-lookup"><span data-stu-id="a20e3-132">If successful, this method returns `201 Created` response code with an empty reponse body.</span></span>
+<span data-ttu-id="9e6dc-130">如果成功，此方法将返回 `201 Created` 响应代码及空响应正文。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-130">If successful, this method returns a `201 Created` response code and an empty response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a20e3-133">示例</span><span class="sxs-lookup"><span data-stu-id="a20e3-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a20e3-134">请求</span><span class="sxs-lookup"><span data-stu-id="a20e3-134">Request</span></span>
-<span data-ttu-id="a20e3-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a20e3-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9e6dc-131">示例</span><span class="sxs-lookup"><span data-stu-id="9e6dc-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9e6dc-132">请求</span><span class="sxs-lookup"><span data-stu-id="9e6dc-132">Request</span></span>
+<span data-ttu-id="9e6dc-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_chatthread_from_channel"
@@ -66,11 +66,11 @@ Content-type: application/json
 }
 ```
 
-> <span data-ttu-id="a20e3-136">目前，必须将 contentType 指定为一个整数，而不是字符串:"text"或"html"1 的 0。</span><span class="sxs-lookup"><span data-stu-id="a20e3-136">Currently, the contentType must be specified as an integer rather than a string: 0 for "text" or 1 for "html".</span></span>  <span data-ttu-id="a20e3-137">将来 API 版本会修复此错误。</span><span class="sxs-lookup"><span data-stu-id="a20e3-137">Future API releases will fix this.</span></span>
+> <span data-ttu-id="9e6dc-134">目前，contentType 必须指定为整数，而不是字符串：0 表示“文本”或 1 表示“html”。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-134">Currently, the contentType must be specified as an integer rather than a string: 0 for "text" or 1 for "html".</span></span>  <span data-ttu-id="9e6dc-135">今后发布的 API 版本将修复此功能。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-135">Future API releases will fix this.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="a20e3-138">响应</span><span class="sxs-lookup"><span data-stu-id="a20e3-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="9e6dc-136">响应</span><span class="sxs-lookup"><span data-stu-id="9e6dc-136">Response</span></span>
 
-<span data-ttu-id="a20e3-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a20e3-139">Here is an example of the response.</span></span>
+<span data-ttu-id="9e6dc-137">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="9e6dc-137">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,10 +88,15 @@ Content-length: 160
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/channel-post-chatthreads.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

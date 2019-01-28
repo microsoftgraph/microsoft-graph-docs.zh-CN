@@ -1,52 +1,52 @@
 ---
 title: 获取 appRoleAssignment
-description: 检索的属性和 approleassignment 对象的关系。
+description: 检索 approleassignment 对象的属性和关系。
 localization_priority: Priority
-ms.openlocfilehash: 465ef0365bee8c1dd002fa423232cc615fc45635
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 35537c45e4f156a0b78ffc708eaa39fec8625754
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809658"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517783"
 ---
-# <a name="get-approleassignment"></a><span data-ttu-id="4d5b9-103">获取 appRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="4d5b9-103">Get appRoleAssignment</span></span>
+# <a name="get-approleassignment"></a><span data-ttu-id="4fb30-103">获取 appRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="4fb30-103">Get appRoleAssignment</span></span>
 
-> <span data-ttu-id="4d5b9-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="4d5b9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4d5b9-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="4d5b9-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4d5b9-106">检索的属性和 approleassignment 对象的关系。</span><span class="sxs-lookup"><span data-stu-id="4d5b9-106">Retrieve the properties and relationships of approleassignment object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4d5b9-107">权限</span><span class="sxs-lookup"><span data-stu-id="4d5b9-107">Permissions</span></span>
-<span data-ttu-id="4d5b9-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4d5b9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4fb30-104">检索 approleassignment 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="4fb30-104">Retrieve the properties and relationships of approleassignment object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="4fb30-105">权限</span><span class="sxs-lookup"><span data-stu-id="4fb30-105">Permissions</span></span>
+<span data-ttu-id="4fb30-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4fb30-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4d5b9-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4d5b9-110">Permission type</span></span>      | <span data-ttu-id="4d5b9-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4d5b9-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4fb30-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="4fb30-108">Permission type</span></span>      | <span data-ttu-id="4fb30-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4fb30-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4d5b9-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4d5b9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="4d5b9-113">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4d5b9-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="4d5b9-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4d5b9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4d5b9-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4d5b9-115">Not supported.</span></span>    |
-|<span data-ttu-id="4d5b9-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="4d5b9-116">Application</span></span> | <span data-ttu-id="4d5b9-117">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4d5b9-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="4fb30-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4fb30-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4fb30-111">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4fb30-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="4fb30-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4fb30-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4fb30-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="4fb30-113">Not supported.</span></span>    |
+|<span data-ttu-id="4fb30-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="4fb30-114">Application</span></span> | <span data-ttu-id="4fb30-115">Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4fb30-115">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4d5b9-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4d5b9-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4fb30-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4fb30-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/appRoleAssignments/{id}
 GET /servicePrincipals/{id}/appRoleAssignedTo
 GET /groups/{id}/appRoleAssignments/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4d5b9-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4d5b9-119">Optional query parameters</span></span>
-<span data-ttu-id="4d5b9-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="4d5b9-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4fb30-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4fb30-117">Optional query parameters</span></span>
+<span data-ttu-id="4fb30-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="4fb30-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4d5b9-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="4d5b9-121">Request headers</span></span>
-| <span data-ttu-id="4d5b9-122">名称</span><span class="sxs-lookup"><span data-stu-id="4d5b9-122">Name</span></span>       | <span data-ttu-id="4d5b9-123">类型</span><span class="sxs-lookup"><span data-stu-id="4d5b9-123">Type</span></span> | <span data-ttu-id="4d5b9-124">说明</span><span class="sxs-lookup"><span data-stu-id="4d5b9-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4fb30-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4fb30-119">Request headers</span></span>
+| <span data-ttu-id="4fb30-120">名称</span><span class="sxs-lookup"><span data-stu-id="4fb30-120">Name</span></span>       | <span data-ttu-id="4fb30-121">类型</span><span class="sxs-lookup"><span data-stu-id="4fb30-121">Type</span></span> | <span data-ttu-id="4fb30-122">说明</span><span class="sxs-lookup"><span data-stu-id="4fb30-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="4d5b9-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="4d5b9-125">Authorization</span></span>  | <span data-ttu-id="4d5b9-126">string</span><span class="sxs-lookup"><span data-stu-id="4d5b9-126">string</span></span>  | <span data-ttu-id="4d5b9-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4d5b9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4fb30-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="4fb30-123">Authorization</span></span>  | <span data-ttu-id="4fb30-124">string</span><span class="sxs-lookup"><span data-stu-id="4fb30-124">string</span></span>  | <span data-ttu-id="4fb30-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4fb30-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4d5b9-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="4d5b9-129">Request body</span></span>
-<span data-ttu-id="4d5b9-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4d5b9-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4fb30-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="4fb30-127">Request body</span></span>
+<span data-ttu-id="4fb30-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4fb30-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4d5b9-131">响应</span><span class="sxs-lookup"><span data-stu-id="4d5b9-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4fb30-129">响应</span><span class="sxs-lookup"><span data-stu-id="4fb30-129">Response</span></span>
 
-<span data-ttu-id="4d5b9-132">如果成功，此方法返回`200 OK`响应正文中的响应代码和[appRoleAssignment](../resources/approleassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4d5b9-132">If successful, this method returns a `200 OK` response code and [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4d5b9-133">示例</span><span class="sxs-lookup"><span data-stu-id="4d5b9-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4d5b9-134">请求</span><span class="sxs-lookup"><span data-stu-id="4d5b9-134">Request</span></span>
-<span data-ttu-id="4d5b9-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4d5b9-135">Here is an example of the request.</span></span>
+<span data-ttu-id="4fb30-130">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [appRoleAssignment](../resources/approleassignment.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="4fb30-130">If successful, this method returns a `200 OK` response code and a [section](../resources/approleassignment.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="4fb30-131">示例</span><span class="sxs-lookup"><span data-stu-id="4fb30-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4fb30-132">请求</span><span class="sxs-lookup"><span data-stu-id="4fb30-132">Request</span></span>
+<span data-ttu-id="4fb30-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4fb30-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_approleassignment"
@@ -54,8 +54,8 @@ GET /groups/{id}/appRoleAssignments/{id}
 ```http
 GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="4d5b9-136">响应</span><span class="sxs-lookup"><span data-stu-id="4d5b9-136">Response</span></span>
-<span data-ttu-id="4d5b9-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4d5b9-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="4fb30-134">响应</span><span class="sxs-lookup"><span data-stu-id="4fb30-134">Response</span></span>
+<span data-ttu-id="4fb30-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4fb30-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,10 +78,15 @@ Content-length: 253
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get appRoleAssignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/approleassignment-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
