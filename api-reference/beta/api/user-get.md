@@ -4,51 +4,51 @@ description: 检索用户对象的属性和关系。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: da30c60cb9132b70685182fd319f474f9e178720
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3b0a05ee2e2bd2b4f5d2e66f5c2e0efcf27efb59
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914974"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523944"
 ---
-# <a name="get-a-user"></a><span data-ttu-id="091a7-103">获取用户</span><span class="sxs-lookup"><span data-stu-id="091a7-103">Get a user</span></span>
+# <a name="get-a-user"></a><span data-ttu-id="db8ae-103">获取用户</span><span class="sxs-lookup"><span data-stu-id="db8ae-103">Get a user</span></span>
 
-> <span data-ttu-id="091a7-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="091a7-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="091a7-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="091a7-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="091a7-106">检索用户对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="091a7-106">Retrieve the properties and relationships of user object.</span></span>
+<span data-ttu-id="db8ae-104">检索用户对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="db8ae-104">Retrieve the properties and relationships of user object.</span></span>
 
-<span data-ttu-id="091a7-107">由于**用户**资源支持[扩展](/graph/extensibility-overview)，您还可以使用`GET`操作来获取**用户**实例中的自定义属性和扩展数据。</span><span class="sxs-lookup"><span data-stu-id="091a7-107">Since the **user** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.</span></span>
+<span data-ttu-id="db8ae-105">由于**用户**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**用户**实例中的自定义属性和扩展数据。</span><span class="sxs-lookup"><span data-stu-id="db8ae-105">Since the **user** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="091a7-108">权限</span><span class="sxs-lookup"><span data-stu-id="091a7-108">Permissions</span></span>
-<span data-ttu-id="091a7-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="091a7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="db8ae-106">权限</span><span class="sxs-lookup"><span data-stu-id="db8ae-106">Permissions</span></span>
+<span data-ttu-id="db8ae-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="db8ae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="091a7-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="091a7-111">Permission type</span></span>      | <span data-ttu-id="091a7-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="091a7-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="db8ae-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="db8ae-109">Permission type</span></span>      | <span data-ttu-id="db8ae-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="db8ae-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="091a7-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="091a7-113">Delegated (work or school account)</span></span> | <span data-ttu-id="091a7-114">User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="091a7-114">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="091a7-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="091a7-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="091a7-116">User.Read、User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="091a7-116">User.Read, User.ReadWrite</span></span>    |
-|<span data-ttu-id="091a7-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="091a7-117">Application</span></span> | <span data-ttu-id="091a7-118">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="091a7-118">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="db8ae-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="db8ae-111">Delegated (work or school account)</span></span> | <span data-ttu-id="db8ae-112">User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="db8ae-112">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="db8ae-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="db8ae-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="db8ae-114">User.Read、User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="db8ae-114">User.Read, User.ReadWrite</span></span>    |
+|<span data-ttu-id="db8ae-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="db8ae-115">Application</span></span> | <span data-ttu-id="db8ae-116">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db8ae-116">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="091a7-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="091a7-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="db8ae-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="db8ae-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="091a7-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="091a7-120">Optional query parameters</span></span>
-<span data-ttu-id="091a7-121">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="091a7-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="091a7-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="091a7-122">Request headers</span></span>
-| <span data-ttu-id="091a7-123">标头</span><span class="sxs-lookup"><span data-stu-id="091a7-123">Header</span></span>       | <span data-ttu-id="091a7-124">值</span><span class="sxs-lookup"><span data-stu-id="091a7-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="db8ae-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="db8ae-118">Optional query parameters</span></span>
+<span data-ttu-id="db8ae-119">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="db8ae-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="db8ae-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="db8ae-120">Request headers</span></span>
+| <span data-ttu-id="db8ae-121">标头</span><span class="sxs-lookup"><span data-stu-id="db8ae-121">Header</span></span>       | <span data-ttu-id="db8ae-122">值</span><span class="sxs-lookup"><span data-stu-id="db8ae-122">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="091a7-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="091a7-125">Authorization</span></span>  | <span data-ttu-id="091a7-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="091a7-p103">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="091a7-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="091a7-128">Content-Type</span></span>   | <span data-ttu-id="091a7-129">application/json</span><span class="sxs-lookup"><span data-stu-id="091a7-129">application/json</span></span> |
+| <span data-ttu-id="db8ae-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="db8ae-123">Authorization</span></span>  | <span data-ttu-id="db8ae-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="db8ae-p102">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="db8ae-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="db8ae-126">Content-Type</span></span>   | <span data-ttu-id="db8ae-127">application/json</span><span class="sxs-lookup"><span data-stu-id="db8ae-127">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="091a7-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="091a7-130">Request body</span></span>
-<span data-ttu-id="091a7-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="091a7-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="db8ae-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="db8ae-128">Request body</span></span>
+<span data-ttu-id="db8ae-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="db8ae-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="091a7-132">响应</span><span class="sxs-lookup"><span data-stu-id="091a7-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="db8ae-130">响应</span><span class="sxs-lookup"><span data-stu-id="db8ae-130">Response</span></span>
 
-<span data-ttu-id="091a7-133">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="091a7-133">If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="091a7-134">示例</span><span class="sxs-lookup"><span data-stu-id="091a7-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="091a7-135">请求</span><span class="sxs-lookup"><span data-stu-id="091a7-135">Request</span></span>
+<span data-ttu-id="db8ae-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="db8ae-131">If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="db8ae-132">示例</span><span class="sxs-lookup"><span data-stu-id="db8ae-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="db8ae-133">请求</span><span class="sxs-lookup"><span data-stu-id="db8ae-133">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -57,8 +57,8 @@ GET /users/{id | userPrincipalName}
 ```http
 GET https://graph.microsoft.com/beta/me
 ```
-##### <a name="response"></a><span data-ttu-id="091a7-136">响应</span><span class="sxs-lookup"><span data-stu-id="091a7-136">Response</span></span>
-<span data-ttu-id="091a7-137">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="091a7-137">Here is an example of the response.</span></span> <span data-ttu-id="091a7-138">注意：为简洁起见，可能会截断此处展示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="091a7-138">Note: The response object shown here may be truncated for brevity.</span></span> 
+##### <a name="response"></a><span data-ttu-id="db8ae-134">响应</span><span class="sxs-lookup"><span data-stu-id="db8ae-134">Response</span></span>
+<span data-ttu-id="db8ae-135">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="db8ae-135">Here is an example of the response.</span></span> <span data-ttu-id="db8ae-136">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="db8ae-136">Note: The response object shown here may be truncated for brevity.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -87,18 +87,23 @@ Content-length: 491
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="091a7-139">另请参阅</span><span class="sxs-lookup"><span data-stu-id="091a7-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="db8ae-137">另请参阅</span><span class="sxs-lookup"><span data-stu-id="db8ae-137">See also</span></span>
 
-- [<span data-ttu-id="091a7-140">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="091a7-140">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="091a7-141">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="091a7-141">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="091a7-142">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="091a7-142">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="db8ae-138">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="db8ae-138">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="db8ae-139">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="db8ae-139">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="db8ae-140">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="db8ae-140">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get user",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
