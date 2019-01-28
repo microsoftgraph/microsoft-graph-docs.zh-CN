@@ -1,103 +1,111 @@
 ---
-title: 使用呼叫和 Microsoft Graph 中的联机会议 API
-description: Microsoft Graph 呼叫和联机会议 API 将新的维度添加到您的应用程序和服务的交互方式与用户通过启用语音和视频功能。 API，您可以创建呼叫和接收来自用户和应用程序中的 Microsoft 团队的呼叫。 这些 Api 可用于构建可以充当呼叫或会议中的参与者的服务应用程序 （自动程序）。
+title: 使用 Microsoft Graph 中的呼叫和在线会议 API
+description: Microsoft Graph 呼叫和在线会议 API 通过启用语音和视频功能，为应用程序和服务与用户的互动方式添加了新的维度。 该 API 可让你创建呼叫并接收来自 Microsoft Teams 中的用户和应用程序的呼叫。 你可以使用这些 API 构建可在呼叫或会议中充当参与者的服务应用程序（机器人）。
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: bde47093496e70d0113f9d3a522c845148748f42
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ab01bc71ccb4f7490a60c47712198f72032fc157
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956358"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525148"
 ---
-# <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>使用呼叫和 Microsoft Graph 中的联机会议 API
+# <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的呼叫和在线会议 API
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph 呼叫和联机会议 API 将新的维度添加到您的应用程序和服务的交互方式与用户通过启用语音和视频功能。 API，您可以创建呼叫和接收来自用户和应用程序中的 Microsoft 团队的呼叫。 这些 Api 可用于构建可以充当呼叫或会议中的参与者的服务应用程序 （自动程序）。
+Microsoft Graph 呼叫和在线会议 API 通过启用语音和视频功能，为应用程序和服务与用户的互动方式添加了新的维度。 该 API 可让你创建呼叫并接收来自 Microsoft Teams 中的用户和应用程序的呼叫。 你可以使用这些 API 构建可在呼叫或会议中充当参与者的服务应用程序（机器人）。
 
 ## <a name="call-types"></a>呼叫类型
 
-呼叫被分类为对等或多方呼叫。 用户可以启动与您自动程序的对等呼叫或邀请您自动程序到现有多方会议。 用户正在邀请到对等呼叫自动程序时，不不需要任何权限。 参与多方呼叫您 bot、 bot 需要具有加入的组呼叫由租户管理员权限。
+呼叫分为对等呼叫和多方呼叫。 用户可以向机器人发起对等呼叫，也可以邀请机器人加入现有的多方会议。 当用户邀请机器人进行对等呼叫时，无需任何权限。 若要让机器人参与多方呼叫，机器人需要获得租户管理员的许可才能加入群组通话。
 
-![显示对等和多方呼叫图像](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-types.png)
+![显示对等呼叫和多方呼叫的图像](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-types.png)
 
-如果您自动程序创建呼叫，它需要用启动或启动组呼叫权限。 您自动程序已创建的对等呼叫或多方呼叫的选项。
+如果要让机器人创建呼叫，它需要具有发起呼叫或发起群组通话的权限。 机器人可以选择创建对等呼叫或多方呼叫。
 
-- 对等呼叫，需要指定唯一的目标和没有会议坐标 bot。 
-- 如果您 bot 发起呼叫与多个参与者，在后台设置为临时会议和所有人加入会议。 如果指定会议坐标，那么即使只有一个目标多方呼叫是可以设置。
+- 对于对等呼叫，机器人只需要指定一个目标，而无需指定会议坐标。 
+- 如果机器人向多名参与者发起呼叫，则会在幕后设置临时会议，并且每个人都可加入该会议。 如果指定了会议坐标，则即使只有一个目标，也会设置多方呼叫。
 
-可能对等以启动并升级到多方呼叫。 会议已自动设置和媒体重定向到会议。 提供您自动程序已启动组呼叫权限，您自动程序可以通过邀请其他人，启动升级。 如果升级启动另一个参与者，并且 bot 没有加入组呼叫权限，则从调用丢弃您自动程序。
+呼叫可能会以对等的方式开始，并升级为多方。 系统将自动设置会议，并且媒体将重定向到会议。 如果机器人具有发起群组通话的权限，则它可以通过邀请其他人来发起升级。 如果升级是由另一名参与者发起的并且机器人没有加入群组通话的权限，那么将从通话中删除该机器人。
 
-> **重要：** 当从对等情况下，呼叫上报给多方时，并非所有的多方功能均可用。 具体而言，自动程序不会收到名单更新。
+> **重要说明：** 如果将呼叫从对等升级为多方，则并非所有多方呼叫功能都可用。 具体而言，机器人无法接收名单更新。
 
 ## <a name="signaling"></a>信号
 
 ### <a name="incoming-call"></a>传入呼叫
 
-若要接收传入呼叫，您需要注册调用 bot。 Bot 接收传入通知时，它具有以下选项。
+若要接收传入呼叫，你需要注册呼叫机器人。 当机器人接收传入通知时，它包含以下选项。
 
 | 方法                              | 说明                                  |
 |:------------------------------------|:---------------------------------------------|
-| [答案](../api/call-answer.md)     | 应答传入呼叫。                    |
-| [Reject](../api/call-reject.md)     | 拒绝和挂断呼叫。                  |
-| [重定向](../api/call-redirect.md) | 将呼叫重定向。                           |
+| [应答](../api/call-answer.md)     | 应答传入呼叫。                    |
+| [拒绝](../api/call-reject.md)     | 拒绝并挂断呼叫。                  |
+| [重定向](../api/call-redirect.md) | 重定向呼叫。                           |
 
-Bot 可以呼叫重定向到另一个用户或自动程序。 Bot 可以还将其重定向到用户的语音邮件。
+机器人可以将呼叫重定向到其他用户或机器人。 机器人还可以将它重定向到用户的语音邮件。
 
-![显示自动程序重定向至语音邮件的呼叫的图像](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-handling.png)
+![显示机器人将呼叫重定向到语音邮件的图像](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-handling.png)
 
-> **重要：** 重定向或发起出站 pstn 呼叫当前不支持。
+> **重要说明：** 目前不支持向 PSTN 进行重定向或出站呼叫。
 
-### <a name="in-call"></a>呼叫中
+### <a name="in-call"></a>通话中
 
-自动程序的操作是调用对象上可用。 这些呼叫中的参与者作为影响 bot。
-
-| 方法                                                            | 说明                                  |
-|:------------------------------------------------------------------|:---------------------------------------------|
-| [设置为静音](../api/call-mute.md)                                       | 在呼叫中的静音自我。                       |
-| [取消静音](../api/call-unmute.md)                                   | 在呼叫中的取消静音自我。                     |
-| [UpdateMetadata](../api/call-updatemetadata.md)                   | 在名单中的自助更新元数据。          |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) | 启动和停止共享的调用中的屏幕。   |
-
-要与其他参与者的呼叫进行交互，使用参与者对象。
+机器人操作在呼叫对象上可用。 这会影响机器人作为参与者加入呼叫。
 
 | 方法                                                            | 说明                                  |
 |:------------------------------------------------------------------|:---------------------------------------------|
-| [参与者列表](../api/call-list-participants.md)             | 获取参与者对象集合。         |
+| [静音](../api/call-mute.md)                                       | 在呼叫中将自己设为静音。                       |
+| [取消静音](../api/call-unmute.md)                                   | 在呼叫中将自己取消静音。                     |
+| [UpdateMetadata](../api/call-updatemetadata.md)                   | 在名单中更新自己的元数据。          |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) | 在呼叫中开始和停止共享屏幕。   |
+
+若要与呼叫中的其他参与者进行互动，请使用参与者对象。
+
+| 方法                                                            | 说明                                  |
+|:------------------------------------------------------------------|:---------------------------------------------|
+| [列出参与者](../api/call-list-participants.md)             | 获取参与者对象集合。         |
 | [邀请参与者](../api/participant-invite.md)               | 邀请参与者加入活动呼叫。      |
-| [将所有参与者设为都静音](../api/participant-muteall.md)            | 将呼叫中的所有参与者设为都静音。           |
+| [将所有参与者设为静音](../api/participant-muteall.md)            | 将呼叫中的所有参与者设为静音。           |
 
 ## <a name="media"></a>媒体
 
-通过 Microsoft 实时媒体平台管理媒体处理。 实时媒体平台帮助 bot 参与 Microsoft 团队音频/视频呼叫和会议。 它允许实时 bot 参加对等和多方呼叫。
+通过 Microsoft 实时媒体平台来管理媒体处理。 实时媒体平台可帮助机器人参与 Microsoft Teams 音频/视频通话和会议。 它允许实时机器人参与对等呼叫和多方呼叫。
 
-当 bot 应答传入呼叫，或加入新的或现有的呼叫时，则需要告知实时媒体平台将如何处理媒体。 如果您要构建互动语音响应 (IVR) 系统，您可以卸载昂贵音频处理 Microsoft 承载的服务媒体组件。 如果您自动程序需要直接访问媒体流，我们可以提供通过实时媒体 SDK 的应用程序托管媒体选项。
+当机器人接听来电或加入新呼叫或现有呼叫时，需要告诉实时媒体平台如何处理媒体。 如果要构建互动语音响应 (IVR) 系统，则可以将昂贵的音频处理卸载到 Microsoft 服务托管的媒体组件。 如果机器人需要直接访问媒体流，我们会通过实时媒体 SDK 提供应用程序托管的媒体选项。
 
-### <a name="service-hosted-media"></a>服务承载媒体
+### <a name="service-hosted-media"></a>服务托管的媒体
 
-自动程序可以管理工作流和卸载到 Microsoft 实时媒体平台的音频处理。 使用服务承载媒体，您必须实现和承载您 bot 多种选项。 请考虑使用一个可用的[Sdk](https://developer.microsoft.com/graph/code-samples-and-sdks)。 服务承载媒体自动程序可以实现作为无状态服务，如它不处理媒体本地。
+机器人可以管理工作流并将音频处理卸载到 Microsoft 实时媒体平台。 对于服务托管的媒体，你可以通过多个选项来实施和托管机器人。 请考虑使用其中一个可用的 [SDK](https://developer.microsoft.com/graph/code-samples-and-sdks)。 服务托管的媒体机器人可以作为无状态服务进行实施，因为它不在本地处理媒体。
 
 | 方法                                                        | 说明                                             |
 |:--------------------------------------------------------------|:--------------------------------------------------------|
 | [PlayPrompt](../api/call-playprompt.md)                       | 向用户播放音频剪辑。                         |
-| [Record](../api/call-record.md)                               | （可选） 播放提示和录制音频剪辑。      |
-| [SubscribeToTone](../api/call-subscribetotone.md)             | 从用户订阅 DTMF 声音信号。                  |
-| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md) | 取消任何处理已排队的媒体。             |
+| [录制](../api/call-record.md)                               | （可选）播放提示并录制音频剪辑。      |
+| [SubscribeToTone](../api/call-subscribetotone.md)             | 订阅用户的 DTMF 音。                  |
+| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md) | 取消已排队的所有媒体处理。             |
 
-### <a name="application-hosted-media"></a>应用程序托管媒体
+### <a name="application-hosted-media"></a>应用程序托管的媒体
 
-若要获取直接访问媒体 bot、 bot 需要访问媒体权限。 实时媒体库和状态 SDK 帮助您生成调用 bot 富实时媒体。 必须在 Windows 环境中承载应用程序托管的自动程序。 [应用程序托管的媒体示例](https://github.com/microsoftgraph/microsoft-graph-comms-samples)说明如何生成 bot （包括云服务和服务结构） 的各种 Azure 平台中。
+若要让机器人直接访问媒体，该机器人需要具有访问媒体的权限。 实时媒体库和有状态 SDK 可帮助你构建各种实时媒体呼叫机器人。 必须在 Windows 环境中托管应用程序托管的机器人。 [应用程序托管的媒体示例](https://github.com/microsoftgraph/microsoft-graph-comms-samples)显示了如何在各种 Azure 平台（包括云服务和 Service Fabric）中构建机器人。
 
-您可以使用[Microsoft Graph 呼叫 SDK](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/index.html)简化创建自动程序。 SDK 提供功能来管理在内存中的资源的状态并提取自动程序开发人员的媒体堆栈中。
+你可以使用 [Microsoft Graph 呼叫 SDK](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/index.html) 简化机器人的创建过程。 该 SDK 提供了用于管理内存中的资源状态和引入机器人开发人员媒体堆栈的功能。
 
-媒体 SDK 允许 bot 发送和接收音频、 视频和基于视频的屏幕共享内容。 基于视频的屏幕共享为视频信道建模。 Bot 可以订阅混合音频频道服务器和多个视频信道。 对于视频的通道，bot 已发送和接收视频编码的 H.264 流作为或已解码的原始框架可选择。
+媒体 SDK 允许机器人发送和接收音频、视频以及基于视频的屏幕共享内容。 基于视频的屏幕共享将作为视频频道进行建模。 机器人可以订阅混合音频频道和多个视频频道。 对于视频频道，机器人可以选择以编码的 H.264 流或解码的原始帧发送和接收视频。
 
-> **注意：** 您不可能使用 Microsoft.Graph.Calls.Media API 记录或否则保持从呼叫或您自动程序访问的会议的媒体内容。
+> **注释：** 请勿使用 Microsoft.Graph.Calls.Media API 来记录或以其他方式保留机器人访问的通话或会议中的媒体内容。
 
 ## <a name="see-also"></a>另请参阅
 
-[呼叫和联机会议 API 示例](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
+[呼叫和在线会议 API 示例](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 
 [已知问题](/graph/known-issues#calls-and-online-meetings)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/calls-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

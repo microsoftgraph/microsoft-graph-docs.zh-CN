@@ -1,24 +1,24 @@
 ---
-title: 用户： findRoomLists
-description: 获取在租户中定义的会议室列表。
+title: 用户：findRoomLists
+description: 获取租户中定义的会议室列表。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f170b40689b09f54ea53632ca113018de1671b4e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 1cc26367c9cecd16604f7cfefb3be5ce265e3c2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979290"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520576"
 ---
-# <a name="user-findroomlists"></a>用户： findRoomLists
+# <a name="user-findroomlists"></a>用户：findRoomLists
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取在租户中定义的会议室列表。
+获取租户中定义的会议室列表。
 
-租户可以将会议房间组织为会议室列表。 [EmailAddress](../resources/emailaddress.md)实例表示每个会议室和会议室列表。
-您可以获取租户、 租户，[获取所有聊天室](user-findrooms.md)或都特定聊天室列表中的[都获取的所有聊天室](user-findrooms.md)中的所有会议室列表。
+租户可以将会议室整理到会议室列表。 每个会议室和会议室列表用 [emailAddress](../resources/emailaddress.md) 实例表示。
+可以获取租户中的所欲会议室列表、获取租户中的[所有会议室](user-findrooms.md)或获取特定会议室列表的[所有会议室](user-findrooms.md)。
 
 
 ## <a name="permissions"></a>权限
@@ -27,9 +27,9 @@ ms.locfileid: "27979290"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadBasic.All User.Read.All    |
+|委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All |
+|Application | User.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,9 +51,9 @@ GET /users/<id>/findRoomLists
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[emailAddress](../resources/emailaddress.md)集合的对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [emailAddress](../resources/emailaddress.md) 集合对象。
 
-如果租户中不定义任何列表，则返回空数组。
+如果租户中未定义任何列表，则会返回空数组。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -101,10 +101,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: findRoomLists",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-findroomlists.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

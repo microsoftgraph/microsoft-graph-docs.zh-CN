@@ -1,13 +1,13 @@
 ---
 title: passwordProfile 资源类型
-description: 包含与用户关联的密码配置文件。用户 实体的 **passwordProfile** 属性是一个 **passwordProfile** 对象。
+description: 包含与用户关联的密码配置文件。用户实体的 **passwordProfile** 属性是一个 **passwordProfile** 对象。
 localization_priority: Priority
-ms.openlocfilehash: 80d774906fb4897f57b943af827cfbc32e90511f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: cea8dcc114cb599a2d857ced67ac25c9eb275497
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819661"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526023"
 ---
 # <a name="passwordprofile-resource-type"></a>passwordProfile 资源类型
 
@@ -18,6 +18,7 @@ ms.locfileid: "27819661"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|Boolean| 如果用户在下次登录时必须更改密码，则为 **true**；否则为 **false**。 |
+|forceChangePasswordNextSignInWithMfa|Boolean| 如果为 **true**，则在下次登录时，用户必须先执行多重身份验证 (MFA)，然后才会被强制更改密码。 该行为与 **forceChangePasswordNextSignIn** 相同，除了在更改密码之前用户必须先执行多重身份验证。 密码更改后，此属性将自动重置为 **false**。 如未设置，默认值为 **false**。 |
 |密码|String|用户的密码。创建用户时此属性是必需的。此属性可以更新，但用户在下次登录时必须更改密码。密码必须满足用户的 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -35,6 +36,7 @@ ms.locfileid: "27819661"
 ```json
 {
   "forceChangePasswordNextSignIn": true,
+  "forceChangePasswordNextSignInWithMfa": false,
   "password": "string"
 }
 

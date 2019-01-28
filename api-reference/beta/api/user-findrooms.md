@@ -1,23 +1,23 @@
 ---
-title: 用户： findRooms
-description: '获取所有会议房间或特定的会议室列表中用户的租户。 '
+title: 用户：findRooms
+description: '获取用户租户中或特定房间列表中的所有会议室。 '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0be6034056b20473b65e9a04c70419b3e4e1ba95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 70bd060f3c2d5722dca365e4d5f4c7595eab26cd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934007"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524168"
 ---
-# <a name="user-findrooms"></a>用户： findRooms
+# <a name="user-findrooms"></a>用户：findRooms
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取所有会议房间或特定的会议室列表中用户的租户。 
+获取用户租户中或特定房间列表中的所有会议室。 
 
-租户可以将会议房间组织为会议室列表。 [EmailAddress](../resources/emailaddress.md)实例表示每个会议室和会议室列表。 您可以[获取所有会议室列表](user-findroomlists.md)中的租户，请都获取租户中的所有聊天室或都都获取特定会议室列表中的所有聊天室。 您可以获得多租户中的前 100 个聊天室。
+租户可以将会议室整理到会议室列表。 每个会议室和会议室列表用 [emailAddress](../resources/emailaddress.md) 实例表示。 可以获取租户租户中的[所有会议室列表](user-findroomlists.md)、获取租户中的所有会议室，或者获取特定会议室列表的所有会议室。 最多可以访问租户中的前 100 个会议室。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,13 +25,13 @@ ms.locfileid: "27934007"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.ReadBasic.All User.Read.All    |
+|委派（工作或学校帐户） | User.ReadBasic.All、User.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | User.Read.All |
+|Application | User.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取租户中的所有聊天室：
+若要获取租户中的所有会议室：
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +39,7 @@ GET /me/findRooms
 GET /users/<id>/findRooms
 ```
 
-若要获取的租户特定的会议室列表中的所有聊天室：
+若要获取租户特定会议室列表中的所有会议室：
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,7 +51,7 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 
 | 查询参数       | 类型 | 说明 |
 |:---------------|:----------|:----------|
-| RoomList | string | 与会议室列表关联的 SMTP 地址。 由包括 SMTP 地址的[电子邮件地址](../resources/emailaddress.md)实例表示每个会议室列表。 |
+| RoomList | string | 与会议室列表关联的 SMTP 地址。 每个会议室列表用包含 SMTP 地址的 [emailAddress](../resources/emailaddress.md) 实例表示。 |
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
@@ -65,14 +65,14 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[emailAddress](../resources/emailaddress.md)集合的对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [emailAddress](../resources/emailaddress.md) 集合对象。
 
 
 ## <a name="example"></a>示例
 
 ##### <a name="request-1"></a>请求 1
 
-第一个示例获取在登录用户的租户中定义的所有聊天室。
+第一个示例将获取已登录用户租户中定义的所有会议室。
 
 <!-- {
   "blockType": "request",
@@ -130,7 +130,7 @@ Content-type: application/json
 
 ##### <a name="request-2"></a>请求 2
 
-第二个示例获取标识的电子邮件地址 Building2Rooms@contoso.onmicrosoft.com 的指定的会议室列表中的聊天室。
+第二个示例将获取通过电子邮件地址 Building2Rooms@contoso.onmicrosoft.com 标识的特定会议室列表中的会议室。
 
 <!-- {
   "blockType": "request",
@@ -177,10 +177,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: findRooms",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-findrooms.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

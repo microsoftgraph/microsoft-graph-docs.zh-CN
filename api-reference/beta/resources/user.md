@@ -4,16 +4,16 @@ description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a9d3ca1c6f9c67cc2e41907dc22b9f1ec7d28b0a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 443bfc7a7b9ae314677191459cee3a8fcb068a75
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972647"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523972"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示 Azure AD 用户帐户。继承自 [directoryObject](directoryobject.md)。
 
@@ -92,7 +92,7 @@ ms.locfileid: "27972647"
 |city|String|用户所在的城市。支持 $filter。|
 |companyName| String | 与用户关联的公司名称。 只读。
 |consentProvidedForMinor|String|设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
-|country|String|用户所在的国家/地区；例如，“美国”或“英国”。 支持 $filter。|
+|country|String|用户所处的国家/地区，如“美国”或“英国”。支持 $filter。|
 |deletedDateTime|DateTimeOffset| 删除用户的日期和时间。 |
 |department|String|用户工作部门的名称。支持 $filter。|
 |displayName|String|用户通讯簿中显示的名称。 此值通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 支持 $filter 和 $orderby。|
@@ -143,7 +143,7 @@ ms.locfileid: "27972647"
 |surname|String|用户的姓氏。支持 $filter。|
 |usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。示例包括：“US”、“JP”和“GB”。不可为 null。支持 $filter。|
 |userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。
-|userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。 支持 $filter。          |
+|userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。支持 $filter。          |
 
 ### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
 
@@ -157,7 +157,7 @@ ms.locfileid: "27972647"
 
 | 值   | # |说明|
 |:---------------|:--------|:----------|
-| |0|默认值，尚未给用户设置 `ageGroup`。|
+|空|0|默认值，尚未给用户设置 `ageGroup`。|
 |minorWithoutParentalConsent |1|（保留以备今后使用）|
 |minorWithParentalConsent|2| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
 |adult|3|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
@@ -172,7 +172,7 @@ ms.locfileid: "27972647"
 
 | 值    | # |说明|
 |:---------------|:--------|:----------|
-| |0|默认值，尚未给用户设置 `ageGroup`。|
+|空|0|默认值，尚未给用户设置 `ageGroup`。|
 |minor|1|将用户视为未成年人。|
 |notAdult|2|用户所在国家或地区存在其他法规（例如美国、英国、欧盟和韩国），用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
 |adult|3|应将用户视为成年人。|
@@ -181,7 +181,7 @@ ms.locfileid: "27972647"
 
 | 值    | # |说明|
 |:---------------|:--------|:----------|
-| |0|默认值，尚未给用户设置 `consentProvidedForMinor`。|
+|空|0|默认值，尚未给用户设置 `consentProvidedForMinor`。|
 |granted|1|已就用户拥有帐户获得同意。|
 |denied|2|尚未就用户拥有帐户获得同意。|
 |notRequired|3|用户所在地不要求获得同意。|
@@ -355,5 +355,7 @@ ms.locfileid: "27972647"
   "description": "user resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/user.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
 }-->

@@ -2,19 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: Drive
+title: 驱动器
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 581a611fa077eab6d44db01d998d5ea42886f052
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 220f68d2888b29100fdcbb671b5085d3606ec3c2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938186"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521269"
 ---
 # <a name="drive-resource-type"></a>驱动器资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 驱动器资源是表示用户的 OneDrive 或 SharePoint 中文档库的顶级对象。
 
@@ -24,7 +24,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 
 下面是 Drive 资源的 JSON 表示形式。
 
-**drive** 资源由 [**baseItem**](baseitem.md) 派生并继承该资源的属性。
+**drive** 资源派生自 [**baseItem**](baseitem.md) 并继承该资源的属性。
 
 <!--{
   "blockType": "resource",
@@ -75,7 +75,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [identitySet][]               | 识别创建项目的用户、设备或应用程序。只读。                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | 创建项的日期和时间。只读。                                                                                                                                                                                       |
-| 说明          | 字符串                        | 提供驱动器的用户可见说明。 读写。
+| description          | String                        | 提供驱动器的用户可见说明。 读写。
 | driveType            | String                        | 说明了由该资源表示的驱动器的类型。OneDrive 个人版驱动器将返回 `personal`。OneDrive for Business 将返回 `business`。SharePoint 文档库将返回 `documentLibrary`。只读。 |
 | id                   | String                        | 驱动器唯一标识符。只读。                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                                                                                           |
@@ -99,7 +99,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | 项目        | [driveitem](driveitem.md) 集合 | 驱动器中包含的所有项。只读。可为 NULL。
 | root         | [driveitem](driveitem.md)            | 驱动器的根文件夹。只读。
 | special      | [driveitem](driveitem.md) 集合 | OneDrive 中可用的公用文件夹的集合。只读。可为 NULL。
-| 以下    | [DriveItem](driveitem.md)集合 | 用户正在关注的项的列表。 仅在 OneDrive for Business。
+| 关注    | [DriveItem](driveitem.md) 集合 | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
 
 ## <a name="methods"></a>方法
 
@@ -108,13 +108,13 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | [获取其他驱动器的驱动器元数据][drive-get]           | `GET /drives/{drive-id}`    |
 | [获取用户默认驱动器的根文件夹][item-get]       | `GET /drive/root`           |
 | [列出驱动器下的活动][drive-activities]        | `GET /drive/activities`     |
-| [列表后面的项目][drive-following]                     | `GET /drive/following`      |
+| [列出关注的项][drive-following]                     | `GET /drive/following`      |
 | [列出驱动器下的子项][item-children]             | `GET /drive/root/children`  |
 | [列出驱动器中所有项的变更][item-changes]    | `GET /drive/root/delta`     |
 | [搜索驱动器中的项][item-search]               | `GET /drive/root/search`    |
 | [访问特殊文件夹](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
-上表中，在此示例使用`/drive`，但其他路径太是否有效。
+在上表中，各示例使用的是 `/drive`，但其他路径也同样有效。
 
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
@@ -132,11 +132,18 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
   "tocPath": "Drives",
-  "tocBookmarks": { "Resources/Drive": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Drive": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

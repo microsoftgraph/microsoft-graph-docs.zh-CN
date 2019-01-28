@@ -1,28 +1,28 @@
 ---
 title: 列出事件
-description: '从用户的默认日历获取事件对象的列表或 '
+description: '从用户的默认日历或指定的日历获取事件对象列表。 '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 17e5123f5327ab3958f1ec9b2c53d49fc02ab74f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ef16f9f0db1bc1e489bc7322ff72f58598d8d0a6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940090"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526660"
 ---
 # <a name="list-events"></a>列出事件
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从用户的默认日历或从指定的日历，请获取[事件](../resources/event.md)对象的列表。 该列表包含单个实例会议和系列主控形状。
+从用户的默认日历或指定的日历获取[事件](../resources/event.md)对象列表。 该列表包含单实例会议和系列主控事件。
 
 要获取扩展的事件实例，可以[获取日历视图](calendar-list-calendarview.md)，或者[获取事件的实例](event-list-instances.md)。
 
-有两种方案，其中应用程序可在另一个用户的日历中获取事件：
+在以下两种情况下，应用程序可以获取其他用户的日历中的事件：
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享日历，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
+* 如果该应用程序具有应用程序权限，或者
+* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
 
 ### <a name="support-various-time-zones"></a>支持不同时区
@@ -82,12 +82,12 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [event](../resources/event.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-第一个示例获取所有用户的事件。 它指定：
+第一个示例获取用户的所有事件。 它指定以下内容：
 
 - 获取以太平洋标准时间格式返回的日期时间值的 `Prefer: outlook.timezone` 标头。 
 - 返回特定属性的 `$select` 查询参数。如果没有 `$select` 参数，将返回所有事件属性。
 
-请求不指定任何`Prefer: outlook.body-content-type`标头以指示返回的事件正文的特定格式。 
+该请求未指定任何 `Prefer: outlook.body-content-type` 标头来指示返回的事件正文的特定格式。 
 
 <!-- {
   "blockType": "request",
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview,
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response-1"></a>响应 1
-下面是一个响应示例。 因为没有`Prefer: outlook.body-content-type`指定标头，以默认的 HTML 格式返回**body**属性。
+下面是一个响应示例。 由于未指定任何 `Prefer: outlook.body-content-type` 标头，将以默认 HTML 格式返回 **body** 属性。
 <!-- {
   "blockType": "response",
   "name": "get_events",
@@ -181,9 +181,9 @@ Content-length: 1932
 ```
 
 ##### <a name="request-2"></a>请求 2
-第二个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取指定的消息的**body**属性。
+第二个示例介绍如何使用 `Prefer: outlook.body-content-type="text"` 标头获取采用文本格式的指定消息的 **body** 属性。
 
-请求还使用`$select`查询参数返回特定属性。 不带`$select`参数的所有事件属性将返回。
+该请求还使用 `$select` 查询参数返回特定属性。 如果没有 `$select` 参数，将返回所有事件属性。
 <!-- {
   "blockType": "request",
   "name": "get_events_in_text"
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text" 
 ```
 ##### <a name="response-2"></a>响应 2
-下面是一个响应示例。 **Body**属性返回文本格式。 
+下面是一个响应示例。 以文本格式返回 **body** 属性。 
 
 <!-- {
   "blockType": "response",
@@ -226,10 +226,15 @@ Content-length: 640
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List events",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-events.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

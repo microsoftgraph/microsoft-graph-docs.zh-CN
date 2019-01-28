@@ -1,25 +1,25 @@
 ---
-title: 从组中创建工作组
-description: 从组中创建新的团队。
+title: 从组创建团队
+description: 从组新建团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 277a889201f6a161b2ed4191721616a11ead2f41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: a28036cfb253405fab55eca80fa2b0a17232a96c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938690"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524791"
 ---
-# <a name="create-team-from-group"></a>从组中创建工作组
+# <a name="create-team-from-group"></a>从组创建团队
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[组](../resources/group.md)中创建新的[团队](../resources/team.md)。
+从[组](../resources/group.md)新建[团队](../resources/team.md)。
 
-用于创建团队、 组必须具有至少一个所有者。
+若要创建团队，组必须至少拥有一个所有者。
 
-如果创建不超过 15 分钟，则可能创建团队呼叫，因为复制延迟 404 错误代码失败。 建议的模式是重试创建团队呼叫三次与调用之间 10 秒的延迟。
+如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。 建议的模式是重试“创建团队呼叫”三次，每次呼叫之间延迟 10 秒。
 
 ## <a name="permissions"></a>权限
 
@@ -31,7 +31,7 @@ ms.locfileid: "27938690"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All |
 
-> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问它们不的成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,11 +50,11 @@ PUT /groups/{id}/team
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供一个[团队](../resources/team.md)对象的 JSON 表示形式。
+在请求正文中，提供 [team](../resources/team.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，则此方法应返回`201 Created`响应代码和响应正文中的[团队](../resources/team.md)对象。
+如果成功，此方法应该会在响应正文中返回 `201 Created` 响应代码和 [team](../resources/team.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -130,14 +130,19 @@ Content-length: 401
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-put-teams.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 ## <a name="see-also"></a>另请参阅
 
-- [与团队创建组](/graph/teams-create-group-and-team)
+- [创建包含团队的组](/graph/teams-create-group-and-team)

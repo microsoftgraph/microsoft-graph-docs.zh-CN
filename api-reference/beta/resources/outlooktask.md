@@ -1,25 +1,25 @@
 ---
 title: outlookTask 资源类型
-description: '可以跟踪工作项的 Outlook 项目。 '
+description: '可用于跟踪工作项目的 Outlook 项目。 '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f49c74af92037f430b72d7b9fffa4a85aba00942
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 63ab43dd33cb50ff643316865a942659e92304d4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943270"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513345"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可以跟踪工作项的 Outlook 项目。 
+可用于跟踪工作项目的 Outlook 项目。 
 
-任务可用于跟踪开始、 截止日期和实际完成日期和时间，它的进度或状态，无论它定期约会，并要求提醒。
+你可以使用任务来跟踪开始、截止和实际完成日期及时间、其进度或状态、它是否为定期任务并且需要提醒。
 
-日期相关**outlookTask**资源中的属性包括以下项：
+**outlookTask** 资源中与日期相关的属性包括：
 
 - completedDateTime
 - createdDateTime
@@ -28,7 +28,7 @@ ms.locfileid: "27943270"
 - reminderDateTime
 - startDateTime
 
-默认情况下，POST、 获取、 PATCH 和[完成](../api/outlooktask-complete.md)操作 UTC 他们 REST 的响应中返回与日期相关的属性。 您可以使用`Prefer: outlook.timezone`标头，使其具有不同于 UTC 时区中表示的响应中的所有日期相关的属性。 下面的示例返回在东部时间与日期相关的属性的相应的响应中：
+默认情况下，POST、GET、PATCH 和[完成](../api/outlooktask-complete.md)操作会在 UTC 的 REST 响应中返回与日期相关的属性。 你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。 以下示例在对应响应的 EST 中返回与日期相关的属性：
 
 ```
 Prefer: outlook.timezone="Eastern Standard Time"
@@ -38,49 +38,49 @@ Prefer: outlook.timezone="Eastern Standard Time"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 outlookTask](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |获取用户的邮箱中的属性和 Outlook 任务的关系。|
-|[Update](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |更改 Outlook 任务的可写属性。 |
-|[删除](../api/outlooktask-delete.md) | 无 |删除用户的邮箱中指定的任务。 |
-|[Complete](../api/outlooktask-complete.md)|[outlookTask](outlooktask.md)集合|完成 Outlook 任务，这将**completedDateTime**属性设置为当前日期，并**状态**属性设为`completed`。|
+|[获取 outlookTask](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |获取用户邮箱中的 Outlook 任务的属性和关系。|
+|[更新](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |更改 Outlook 任务的可写属性。 |
+|[删除](../api/outlooktask-delete.md) | 无 |删除用户邮箱中的指定任务。 |
+|[完成](../api/outlooktask-complete.md)|[outlookTask](outlooktask.md) 集合|完成 Outlook 任务，它将 **completedDateTime** 属性设置为当前日期，并将 **status** 属性设置为 `completed`。|
 |**附件**| | |
-|[列出附件](../api/outlooktask-list-attachments.md) |[attachment](attachment.md) 集合| 获取有关 Outlook 任务的所有附件。|
-|[Add attachment](../api/outlooktask-post-attachments.md) |[attachment](attachment.md)| 添加的文件、 项 （邮件、 事件或联系人） 或链接到文件作为附件到一个任务。|
+|[列出附件](../api/outlooktask-list-attachments.md) |[attachment](attachment.md) 集合| 获取 Outlook 任务的所有附件。|
+|[添加附件](../api/outlooktask-post-attachments.md) |[附件](attachment.md)| 向任务添加作为附件的文件、项目（消息、事件或联系人）或文件链接。|
 |**扩展属性**| | |
-|[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTask](outlooktask.md)  |创建新的或现有 Outlook 任务中的一个或多个单值扩展的属性。   |
-|[获取与扩展的单值属性的任务](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | 获取包含一个单值使用扩展属性的 Outlook 任务`$expand`或`$filter`。 |
-|[创建多值扩展属性](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | 创建新的或现有 Outlook 任务中的一个或多个多值扩展的属性。  |
-|[获取与多值扩展属性的任务](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | 获取包含多值扩展的属性，通过使用 Outlook 任务`$expand`。 |
+|[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTask](outlooktask.md)  |在新建或现有 Outlook 任务中创建一个或多个单值扩展属性。   |
+|[获取具有单值扩展属性的任务](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | 通过使用 `$expand` 或 `$filter` 获取包含单值扩展属性的 Outlook 任务。 |
+|[创建多值扩展属性](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | 在新建或现有的 Outlook 任务中创建一个或多个多值扩展属性。  |
+|[获取具有多值扩展属性的任务](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | 使用 `$expand` 获取包含一个多值扩展属性的 Outlook 任务。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignedTo|字符串|已分配任务的人员的名称。|
-|body|[itemBody](itembody.md)|任务正文通常包含有关任务的信息。 请注意，仅 HTML 支持类型。|
-|categories|String collection|类别与任务关联。 每个类别对应于用户已定义[outlookCategory](outlookcategory.md)的**displayName**属性。|
-|changeKey|字符串|任务的版本。|
-|completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|中指定的时区任务已完成的日期。|
-|createdDateTime|DateTimeOffset|日期和时间创建任务时。 默认情况下，它是采用 UTC。 您可以提供请求标头中自定义时区。 该属性值使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|在指定时区的任务完成日期。|
-|hasAttachments|布尔|设置为 true 如果任务的附件。|
-|id|字符串|任务的唯一标识符。 只读。|
-|importance|string|事件的重要性。 可取值为：`low`、`normal`、`high`。|
-|isReminderOn|布尔|如果，设置为 true 设置通知提醒的用户的任务。|
-|lastModifiedDateTime|DateTimeOffset|日期和上次修改任务的时间。 默认情况下，它是采用 UTC。 您可以提供请求标头中自定义时区。 该属性值使用 ISO 8601 格式，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|owner|字符串|创建任务的人员的名称。|
+|assignedTo|String|已为其分配任务的人员姓名。|
+|正文|[itemBody](itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
+|类别|String 集合|与任务关联的类别。 每个类别对应于用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
+|changeKey|String|任务的版本。|
+|completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|在指定时区内完成任务的日期。|
+|createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|要在指定时区内完成任务的日期。|
+|hasAttachments|Boolean|如果任务包含附件，则设置为 true。|
+|id|String|任务的唯一标识符。 只读。|
+|重要性|string|事件的重要性。 可取值为：`low`、`normal`、`high`。|
+|isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
+|lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|所有者|String|任务创建者的姓名。|
 |parentFolderId|String|任务的父文件夹的唯一标识符。|
-|recurrence|[patternedRecurrence](patternedrecurrence.md)|定期模式的任务。|
-|reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|发生的日期和时间的任务的提醒通知。|
-|sensitivity|string|指示任务的隐私级别。 可取值为：`normal`、`personal`、`private`、`confidential`。|
-|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|在指定时区时的任务是开始日期。|
-|status|string|指示的状态或任务进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
-|subject|字符串|简要说明或任务的标题。|
+|定期|[patternedRecurrence](patternedrecurrence.md)|任务的定期模式。|
+|reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
+|敏感度|string|指示任务的隐私级别。 可取值为：`normal`、`personal`、`private`、`confidential`。|
+|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|要在指定时区内开始执行任务的日期。|
+|状态|string|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
+|主题|String|任务的简要说明或标题。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合|[FileAttachment](fileattachment.md)和[itemAttachment](itemattachment.md)， [referenceAttachment](referenceattachment.md)附件任务的集合。  只读。 可为 Null。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|多值定义任务的扩展属性的集合。 只读。 可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|定义任务的单值扩展属性的集合。 只读。 可为 Null。|
+|attachments|[attachment](attachment.md) 集合|任务的 [fileAttachment](fileattachment.md)、[itemAttachment](itemattachment.md) 和 [referenceAttachment](referenceattachment.md) 附件的集合。  只读。 可为 Null。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|为任务定义的多值扩展属性的集合。 只读。 可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合|为任务定义的单值扩展属性的集合。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -123,10 +123,15 @@ Prefer: outlook.timezone="Eastern Standard Time"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "outlookTask resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/outlooktask.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

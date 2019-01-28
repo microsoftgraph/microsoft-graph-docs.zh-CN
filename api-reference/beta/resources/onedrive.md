@@ -3,16 +3,16 @@ title: 在 Microsoft Graph 中使用文件
 description: 可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。通过 Microsoft Graph，可以使用存储在 Office 365 中的文件构建各种体验，从仅存储用户文档到复杂的文件共享方案均可。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7d791f983573f56744a47952aff282f822568785
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 8ed01ced4f1aa42f5e3d71b1ec07d6d5f746cb31
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965892"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521991"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>在 Microsoft Graph 中使用文件
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。通过 Microsoft Graph，可以使用存储在 Office 365 中的文件构建各种体验，从仅存储用户文档到复杂的文件共享方案均可。
 
@@ -54,7 +54,7 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 
 * _属性_（像 **id** 和 **name**）公开简单的值（字符串、数字、布尔值）。
 * _Facet_（像**文件**和**照片**）公开复杂的值。存在的**文件**或**文件夹** Facet 表示 **DriveItem** 的行为和属性。
-* _引用_（如 **children** 和 **thumbnails**）指向其他资源的集合。
+* _引用_（像**子项**和**缩略图**）指向其他资源的集合。
 
 ## <a name="commonly-accessed-resources"></a>经常访问的资源
 
@@ -108,3 +108,11 @@ OneDrive 和 SharePoint 文档库最常见的操作之一是与其他人共享�
 Microsoft Graph 还为应用提供了一种直接从共享链接 [访问共享内容](../api/shares-get.md) 的方法。
 
  
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onedrive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
