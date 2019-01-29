@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 0870b95d917e3ac5b5e93600062411d768dab39b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ccb86dc58bd45329996fd02a439dfd06bf312bcb
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514066"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577198"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,12 @@ ms.locfileid: "29514066"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="january-2019"></a>2019 年 1 月
+
+### <a name="reports-apis"></a>报表 API
+
+| **更改类型** | **版本** | **说明**                  |
+|:----------------|:------------|:-----------------------------------------|
+| 添加项        | Beta  | 已将 **office365Active** 和 **office365Inactive** 属性添加到 [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) 实体。|
 
 ### <a name="directory-apis"></a>目录 API
 
@@ -614,7 +620,7 @@ ms.locfileid: "29514066"
 |删除项|beta|已删除 GET /groups/{id}/team/channels，请改用 GET /teams/{id}/channels。 |
 |删除项|beta|已删除 DELETE /groups/{id}/channels/{id}，请改用 DELETE /teams/{id}/channels/{id}。 |
 |删除项|beta|已删除 GET /groups/{id}/channels/{id}，请改用 GET /teams/{id}/channels/{id}。 |
-|删除项|beta|已删除 PATCH /groups/{id}/channels/{id}，请改用 PATCH /teams/{id}/channels/{id}。 |
+|删除|beta|已删除 PATCH /groups/{id}/channels/{id}，请改用 PATCH /teams/{id}/channels/{id}。 |
 |删除项|beta|已删除 POST /groups/{id}/channels/{id}/chatthreads，请改用 POST /teams/{id}/channels/{id}/chatthreads。 |
 |删除项|beta|已删除 GET /groups/{id}/channels，请改用 GET /teams/{id}/channels。 |
 |删除项|beta|已删除 POST /groups/{id}/team/channels，请改用 POST /teams/{id}/channels。 |
