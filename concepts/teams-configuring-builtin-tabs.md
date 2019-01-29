@@ -111,7 +111,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 对于 wiki 选项卡，`teamsAppId` 为 `com.microsoft.teamspace.tab.wiki`。
 Wiki 选项卡不支持通过 Graph 进行配置。
-但请注意，不需要进行太多配置 - 在未配置的 Wiki 选项卡中，第一个用户只需选择“设置选项卡”**** 即可对其进行配置。
+但请注意，不需要进行太多配置 - 在未配置的 Wiki 选项卡中，第一个用户只需选择“**设置选项卡**”即可对其进行配置。
 
 ## <a name="document-library-tabs"></a>文档库选项卡
 
@@ -137,4 +137,4 @@ Wiki 选项卡不支持通过 Graph 进行配置。
 
 对于 SharePoint 页和列表选项卡，`teamsAppId` 为 `2a527703-1f6f-4559-a332-d8a7d288cd88`。
 配置不受支持。
-若您想要配置选项卡，请考虑使用网站选项卡。
+若你想要配置选项卡，请考虑使用网站选项卡。
