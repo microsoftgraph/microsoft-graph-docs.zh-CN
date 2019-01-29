@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 驱动器
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 220f68d2888b29100fdcbb671b5085d3606ec3c2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e788765c3405a1455eda55f6fefdc21ade3da8fd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521269"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573926"
 ---
 # <a name="drive-resource-type"></a>驱动器资源类型
 
@@ -96,10 +96,10 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | 关系 | 类型                                 | 说明
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | [itemActivity][] 集合          | 最近发生在此驱动器下的活动的列表。
-| 项目        | [driveitem](driveitem.md) 集合 | 驱动器中包含的所有项。只读。可为 NULL。
-| root         | [driveitem](driveitem.md)            | 驱动器的根文件夹。只读。
-| special      | [driveitem](driveitem.md) 集合 | OneDrive 中可用的公用文件夹的集合。只读。可为 NULL。
-| 关注    | [DriveItem](driveitem.md) 集合 | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
+| items        | [driveItem](driveitem.md) 集合 | 驱动器中包含的所有项。只读。可为 NULL。
+| root         | [driveItem](driveitem.md)            | 驱动器的根文件夹。只读。
+| special      | [driveItem](driveitem.md) 集合 | OneDrive 中可用的公用文件夹的集合。只读。可为 NULL。
+| following    | [driveItem](driveitem.md) 集合 | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
 
 ## <a name="methods"></a>方法
 

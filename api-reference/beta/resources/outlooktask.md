@@ -4,12 +4,12 @@ description: '可用于跟踪工作项目的 Outlook 项目。 '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 63ab43dd33cb50ff643316865a942659e92304d4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a6d5809f2634f4b9e0f1e30e3fddb0c798f0f6c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513345"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576435"
 ---
 # <a name="outlooktask-resource-type"></a>outlookTask 资源类型
 
@@ -78,9 +78,9 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) 集合|任务的 [fileAttachment](fileattachment.md)、[itemAttachment](itemattachment.md) 和 [referenceAttachment](referenceattachment.md) 附件的集合。  只读。 可为 Null。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|为任务定义的多值扩展属性的集合。 只读。 可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合|为任务定义的单值扩展属性的集合。 只读。 可为 Null。|
+|attachments|[attachment](attachment.md) 集合|任务的 [fileAttachment](fileattachment.md)、[itemAttachment](itemattachment.md) 和 [referenceAttachment](referenceattachment.md) 附件的集合。  只读。 可为空。|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|为任务定义的多值扩展属性的集合。 只读。 可为空。|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合|为任务定义的单值扩展属性的集合。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -89,8 +89,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
   "blockType": "resource",
   "optionalProperties": [
     "attachments",
-    "singleValueExtendedProperties",
-    "multiValueExtendedProperties"
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.outlookTask"
 }-->

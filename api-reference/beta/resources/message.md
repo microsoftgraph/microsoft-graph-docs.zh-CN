@@ -4,12 +4,12 @@ description: 邮箱文件夹中的邮件。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6aae5af68f055c8d10c48024ff8db083a51451da
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ffcd2bc0b61cd53285110b1700fd789124d893e8
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521963"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573646"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 
@@ -33,8 +33,8 @@ ms.locfileid: "29521963"
   "optionalProperties": [
     "attachments",
     "extensions",
-    "singleValueExtendedProperties",
-    "multiValueExtendedProperties",
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty",
     "mentions"
   ],
   "@odata.type": "microsoft.graph.message"
@@ -49,7 +49,7 @@ ms.locfileid: "29521963"
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "conversationIndex": "binary",
+  "conversationIndex": { "type":"String", "format":"base64"},
   "createdDateTime": "String (timestamp)",
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -80,8 +80,8 @@ ms.locfileid: "29521963"
   "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],
   "mentions": [{"@odata.type": "microsoft.graph.mention"}],
-  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
-  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
+  "multiValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
 }
 
 ```
@@ -130,8 +130,8 @@ ms.locfileid: "29521963"
 |attachments|[附件](attachment.md) 集合|邮件的 [fileAttachment](fileattachment.md) 和 [itemAttachment](itemattachment.md) 附件。|
 |extensions|[Extension](extension.md) 集合| 为邮件定义的开放扩展集合。 可为空。|
 |提及|[mention](mention.md) 集合 | 邮件中的提及集合，按 **createdDateTime** 由最新到最旧排序。默认情况下，`GET` /messages 不会返回此属性，在该属性上应用 `$expand` 时除外。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。 可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。可为空。|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。 可为空。|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为邮件定义的单值扩展属性的集合。可为空。|
 
 ## <a name="methods"></a>方法
 

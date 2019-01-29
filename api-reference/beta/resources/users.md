@@ -4,12 +4,12 @@ description: 可以使用 Microsoft Graph 构建基于用户、用户与其他�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f1a08e008f1de343ca6cf4986006c43c7e115af
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b98bdd3f84171823942b3a48dd49a8993597a5ee
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518427"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572176"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 
@@ -36,13 +36,23 @@ ms.locfileid: "29518427"
 
 ## <a name="common-properties"></a>通用属性
 
-| 属性 | 说明 |
-|----------|-------------|
-| displayName | 用户通讯簿中显示的名称。|
-|givenName| 用户的名。 |
+以下内容表示获取或列出用户时返回的属性的默认集。 这些是所有可用属性的子集。 要获取更多用户属性，请使用 `$select` 查询参数。 
+
+|属性 |说明 |
+|:----------|:-------------|
+|id | 用户的唯一标识符。|
+|businessPhones | 用户的电话号码。|
+|displayName | 用户通讯簿中显示的名称。|
+|givenName| 用户的名 |
+|jobTitle | 用户的职务。|
+|mail| 用户的电子邮件地址。 |
+|mobilePhone | 用户的手机号码。|
+|officeLocation | 用户的办公地址。|
+|preferredLanguage | 用户的语言首选项。|
 |surname| 用户的姓。 |
 |mail| 用户的电子邮件地址。 |
 |photo| 用户的个人资料照片。 |
+|userPrincipalName| 用户主体名称。 |
 
 有关详细信息及所有属性的列表，请参阅 [user](user.md) 对象。
 
@@ -50,7 +60,7 @@ ms.locfileid: "29518427"
 >**注意：** 某些操作需要其他权限。
 
 | 路径    | 说明 |
-|---------|-------------|
+|:---------|:-------------|
 |[`/users`](../api/user-list.md) | 列出组织中的用户。 |
 |[`/users/{id}`](../api/user-get.md) | 通过 ID 获取特定用户。 |
 |[`/users/{id}/photo/$value`](../api/profilephoto-get.md)| 获取用户个人资料照片。 |
