@@ -4,56 +4,56 @@ description: 更新 chartaxis 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 76de45518c5f337d6d75577148dabc9b3e260298
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9eb7f4cd2ddf1408f818eff78b7dc4d86a62376c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574528"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643767"
 ---
-# <a name="update-chartaxis"></a><span data-ttu-id="470d4-103">更新 chartaxis</span><span class="sxs-lookup"><span data-stu-id="470d4-103">Update chartaxis</span></span>
+# <a name="update-chartaxis"></a><span data-ttu-id="39695-103">更新 chartaxis</span><span class="sxs-lookup"><span data-stu-id="39695-103">Update chartaxis</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="470d4-104">更新 chartaxis 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="470d4-104">Update the properties of chartaxis object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="470d4-105">权限</span><span class="sxs-lookup"><span data-stu-id="470d4-105">Permissions</span></span>
-<span data-ttu-id="470d4-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="470d4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="39695-104">更新 chartaxis 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="39695-104">Update the properties of chartaxis object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="39695-105">权限</span><span class="sxs-lookup"><span data-stu-id="39695-105">Permissions</span></span>
+<span data-ttu-id="39695-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="39695-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="470d4-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="470d4-108">Permission type</span></span>      | <span data-ttu-id="470d4-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="470d4-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="39695-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="39695-108">Permission type</span></span>      | <span data-ttu-id="39695-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="39695-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="470d4-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="470d4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="470d4-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="470d4-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="470d4-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="470d4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="470d4-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="470d4-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="470d4-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="470d4-114">Application</span></span> | <span data-ttu-id="470d4-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="470d4-115">Not supported.</span></span> |
+|<span data-ttu-id="39695-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="39695-110">Delegated (work or school account)</span></span> | <span data-ttu-id="39695-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="39695-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="39695-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="39695-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="39695-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="39695-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="39695-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="39695-114">Application</span></span> | <span data-ttu-id="39695-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="39695-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="470d4-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="470d4-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="39695-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="39695-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="470d4-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="470d4-117">Optional request headers</span></span>
-| <span data-ttu-id="470d4-118">名称</span><span class="sxs-lookup"><span data-stu-id="470d4-118">Name</span></span>       | <span data-ttu-id="470d4-119">说明</span><span class="sxs-lookup"><span data-stu-id="470d4-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="39695-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="39695-117">Optional request headers</span></span>
+| <span data-ttu-id="39695-118">名称</span><span class="sxs-lookup"><span data-stu-id="39695-118">Name</span></span>       | <span data-ttu-id="39695-119">说明</span><span class="sxs-lookup"><span data-stu-id="39695-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="470d4-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="470d4-120">Authorization</span></span>  | <span data-ttu-id="470d4-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="470d4-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="470d4-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="470d4-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="470d4-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="470d4-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="39695-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="39695-120">Authorization</span></span>  | <span data-ttu-id="39695-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="39695-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="39695-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="39695-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="39695-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="39695-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="470d4-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="470d4-126">Request body</span></span>
-<span data-ttu-id="470d4-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="470d4-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="39695-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="39695-126">Request body</span></span>
+<span data-ttu-id="39695-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="39695-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="470d4-130">属性</span><span class="sxs-lookup"><span data-stu-id="470d4-130">Property</span></span>     | <span data-ttu-id="470d4-131">类型</span><span class="sxs-lookup"><span data-stu-id="470d4-131">Type</span></span>   |<span data-ttu-id="470d4-132">说明</span><span class="sxs-lookup"><span data-stu-id="470d4-132">Description</span></span>|
+| <span data-ttu-id="39695-130">属性</span><span class="sxs-lookup"><span data-stu-id="39695-130">Property</span></span>     | <span data-ttu-id="39695-131">类型</span><span class="sxs-lookup"><span data-stu-id="39695-131">Type</span></span>   |<span data-ttu-id="39695-132">说明</span><span class="sxs-lookup"><span data-stu-id="39695-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="470d4-133">majorUnit</span><span class="sxs-lookup"><span data-stu-id="470d4-133">majorUnit</span></span>|<span data-ttu-id="470d4-134">Json</span><span class="sxs-lookup"><span data-stu-id="470d4-134">Json</span></span>|<span data-ttu-id="470d4-p105">表示两个主要刻度标记之间的间隔。可以设置为数字值或空字符串。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="470d4-p105">Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.</span></span>|
-|<span data-ttu-id="470d4-138">maximum</span><span class="sxs-lookup"><span data-stu-id="470d4-138">maximum</span></span>|<span data-ttu-id="470d4-139">Json</span><span class="sxs-lookup"><span data-stu-id="470d4-139">Json</span></span>|<span data-ttu-id="470d4-p106">表示数值轴上的最大值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="470d4-p106">Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
-|<span data-ttu-id="470d4-143">minimum</span><span class="sxs-lookup"><span data-stu-id="470d4-143">minimum</span></span>|<span data-ttu-id="470d4-144">Json</span><span class="sxs-lookup"><span data-stu-id="470d4-144">Json</span></span>|<span data-ttu-id="470d4-p107">表示数值轴上的最小值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="470d4-p107">Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
-|<span data-ttu-id="470d4-148">minorUnit</span><span class="sxs-lookup"><span data-stu-id="470d4-148">minorUnit</span></span>|<span data-ttu-id="470d4-149">Json</span><span class="sxs-lookup"><span data-stu-id="470d4-149">Json</span></span>|<span data-ttu-id="470d4-p108">表示两个次要刻度标记之间的间隔。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="470d4-p108">Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.</span></span>|
+|<span data-ttu-id="39695-133">majorUnit</span><span class="sxs-lookup"><span data-stu-id="39695-133">majorUnit</span></span>|<span data-ttu-id="39695-134">对象</span><span class="sxs-lookup"><span data-stu-id="39695-134">object</span></span>|<span data-ttu-id="39695-p105">表示两个主要刻度标记之间的间隔。可以设置为数字值或空字符串。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="39695-p105">Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.</span></span>|
+|<span data-ttu-id="39695-138">maximum</span><span class="sxs-lookup"><span data-stu-id="39695-138">maximum</span></span>|<span data-ttu-id="39695-139">对象</span><span class="sxs-lookup"><span data-stu-id="39695-139">object</span></span>|<span data-ttu-id="39695-p106">表示数值轴上的最大值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="39695-p106">Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="39695-143">minimum</span><span class="sxs-lookup"><span data-stu-id="39695-143">minimum</span></span>|<span data-ttu-id="39695-144">对象</span><span class="sxs-lookup"><span data-stu-id="39695-144">object</span></span>|<span data-ttu-id="39695-p107">表示数值轴上的最小值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="39695-p107">Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="39695-148">minorUnit</span><span class="sxs-lookup"><span data-stu-id="39695-148">minorUnit</span></span>|<span data-ttu-id="39695-149">对象</span><span class="sxs-lookup"><span data-stu-id="39695-149">object</span></span>|<span data-ttu-id="39695-p108">表示两个次要刻度标记之间的间隔。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。</span><span class="sxs-lookup"><span data-stu-id="39695-p108">Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="470d4-153">响应</span><span class="sxs-lookup"><span data-stu-id="470d4-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="39695-153">响应</span><span class="sxs-lookup"><span data-stu-id="39695-153">Response</span></span>
 
-<span data-ttu-id="470d4-154">如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChartAxis](../resources/chartaxis.md)对象。</span><span class="sxs-lookup"><span data-stu-id="470d4-154">If successful, this method returns a `200 OK` response code and updated [WorkbookChartAxis](../resources/chartaxis.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="470d4-155">示例</span><span class="sxs-lookup"><span data-stu-id="470d4-155">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="470d4-156">请求</span><span class="sxs-lookup"><span data-stu-id="470d4-156">Request</span></span>
-<span data-ttu-id="470d4-157">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="470d4-157">Here is an example of the request.</span></span>
+<span data-ttu-id="39695-154">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartAxis](../resources/chartaxis.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="39695-154">If successful, this method returns a `200 OK` response code and updated [ChartAxis](../resources/chartaxis.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="39695-155">示例</span><span class="sxs-lookup"><span data-stu-id="39695-155">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="39695-156">请求</span><span class="sxs-lookup"><span data-stu-id="39695-156">Request</span></span>
+<span data-ttu-id="39695-157">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="39695-157">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_chartaxis"
@@ -72,12 +72,12 @@ Content-length: 64
   }
 }
 ```
-##### <a name="response"></a><span data-ttu-id="470d4-158">响应</span><span class="sxs-lookup"><span data-stu-id="470d4-158">Response</span></span>
-<span data-ttu-id="470d4-p109">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="470d4-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="39695-158">响应</span><span class="sxs-lookup"><span data-stu-id="39695-158">Response</span></span>
+<span data-ttu-id="39695-p109">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="39695-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartAxis"
+  "@odata.type": "microsoft.graph.chartaxis"
 } -->
 ```http
 HTTP/1.1 200 OK
