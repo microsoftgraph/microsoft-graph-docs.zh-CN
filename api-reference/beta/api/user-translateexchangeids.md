@@ -4,12 +4,12 @@ description: 对与 Outlook 相关的资源的标识符进行格式转换。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3b09ae9bf6a1cbf1967a900770b07d8c9750ba21
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571287"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643613"
 ---
 # <a name="user-translateexchangeids"></a>用户： translateExchangeIds
 
@@ -25,7 +25,7 @@ ms.locfileid: "29571287"
 |:----------------|:--------------------------------------------|
 | 委派（工作或学校帐户） | User.ReadBasic、 User.Read、 User.ReadWrite、 User.ReadBasic.All、 User.Read.All、 User.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | User.ReadBasic，User.Read，User.ReadWrite |
-| Application | User.Read.All、User.ReadWrite.All |
+| 应用程序 | User.Read.All、User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -114,11 +114,11 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1}",
+      "sourceId": "{rest-formatted-id-1},
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2}",
+      "sourceId": "{rest-formatted-id-2},
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]

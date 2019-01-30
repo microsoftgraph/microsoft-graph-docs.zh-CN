@@ -4,12 +4,12 @@ description: '使用此 API 创建新的工作簿会话。 '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 5b39d83697b97876833074fd3266a6d32e489512
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ab4cc0d983efde535a4d92b6e918dfe9c9881170
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913259"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641860"
 ---
 # <a name="create-session"></a>创建会话
 
@@ -68,7 +68,7 @@ Content-type: application/json
 Content-length: 52
 
 {
-  "persistSession": true
+  "persistChanges": true
 }
 ```
 在请求正文中，提供 [WorkbookSessionInfo](../resources/workbooksessioninfo.md) 对象的 JSON 表示形式。
@@ -87,7 +87,7 @@ Content-length: 52
 
 {
   "id": "id-value",
-  "persistSession": true
+  "persistChanges": true
 }
 ```
 

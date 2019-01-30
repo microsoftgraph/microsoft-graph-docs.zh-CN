@@ -2,12 +2,12 @@
 title: 终结点资源类型
 description: '终结点表示与实体相关联的资源的 Url。  例如，创建一个新的 Office 365 组后，其他资源还会创建作为 Office 365 组的一部分。 包括对话组邮箱和文档和文件组 OneDrive 文件夹等内容。 现在可以在组资源类型上使用的*终结点*导航读取这些 Office 365 group 资源，包括及其关联的资源的 Url 的详细信息。 这样，应用程序以了解这些资源，然后甚至他们自己体验中的嵌入 URL 体验的资源。 '
 localization_priority: Normal
-ms.openlocfilehash: 39a6a2d8213e809f426c492654272aa994c25a6d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6f923cdeb34ec0845d776a67f51db490256ec718
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574480"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640852"
 ---
 # <a name="endpoint-resource-type"></a>终结点资源类型
 
@@ -26,11 +26,11 @@ ms.locfileid: "29574480"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | 功能     | String  | 介绍与此资源相关联的功能。 （如邮件、 对话等） 不可为空。 只读。 |
-| id             | String  | 终结点; 的唯一标识符键。 不可为 null。 只读。|
-| providerId     | String  | 基础服务发布的应用程序 id。 不可为 null。 只读。|
+| id             | String  | 终结点; 的唯一标识符键。 不可为 Null。 只读。|
+| providerId     | String  | 基础服务发布的应用程序 id。 不可为 Null。 只读。|
 | providerName   | String  | 发布基础服务的名称。 只读。|
-| providerResourceId|String| Office 365 组，这是设置为资源 （例如 Yammer.FeedURL 等。） 的已知名称。 不可为 null。 只读。|
-| uri            | String  | 已发布的资源的 URL。 不可为 null。 只读。|
+| providerResourceId|String| Office 365 组，这是设置为资源 （例如 Yammer.FeedURL 等。） 的已知名称。 不可为 Null。 只读。|
+| uri            | String  | 已发布的资源的 URL。 不可为 Null。 只读。|
 
 ## <a name="relationships"></a>关系
 
@@ -45,7 +45,7 @@ ms.locfileid: "29574480"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.endpoint"
+  "@odata.type": "microsoft.graph.Endpoint"
 }-->
 
 ```json

@@ -4,12 +4,12 @@ description: 包含联系人的文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a4fcb5152a3d7cb5f26214cf2b0a1e4a31dc1ffb
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 599f1765b6305d2dc4d482ec035ee4b24eb5183a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575868"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640866"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
 
@@ -51,8 +51,8 @@ ms.locfileid: "29575868"
 |:---------------|:--------|:----------|
 |childFolders|[ContactFolder](contactfolder.md) 集合|文件夹中的子文件夹集合。导航属性。只读。可为 Null。|
 |contacts|[联系人](contact.md) 集合|文件夹中的联系人。导航属性。只读。可为 Null。|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的多值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -63,8 +63,8 @@ ms.locfileid: "29575868"
   "optionalProperties": [
     "childFolders",
     "contacts",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.contactFolder"

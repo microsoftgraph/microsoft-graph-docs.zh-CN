@@ -3,12 +3,12 @@ title: 创建或替换活动
 description: 创建一个新或替换现有用户活动应用程序。 如果您想要在一个请求中创建用户活动和其相关的**historyItems** ，您可以使用深层插入。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: f9dfa75f8503e9fcd9bec6f7b36840e310bf629d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 99c1abc800464a6b3c4113ba825a8455f6cdea40
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520359"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642280"
 ---
 # <a name="create-or-replace-an-activity"></a>创建或替换活动
 
@@ -133,7 +133,7 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false
+            "addImageQuery": "false"
         },
         "backgroundColor": "#ff0000",
         "content": {
@@ -194,7 +194,7 @@ Content-length: 364
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": "false",
+            "addImageQuery": "false"
         },
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
         "backgroundColor": "#ff0000",
@@ -213,7 +213,7 @@ Content-length: 364
         {
             "userTimezone": "Africa/Casablanca",
             "startedDateTime": "2018-02-26T20:54:04.345Z",
-            "lastActiveDateTime": "2018-02-26T20:54:24.345Z",
+            "lastActiveDateTime": "2018-02-26T20:54:24.345Z"
         }
     ]
 }
@@ -249,7 +249,7 @@ Location: https://graph.microsoft.com/beta/me/activities/14332800362997268276
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false
+            "addImageQuery": "false"
         },
         "backgroundColor": "#ff0000",
         "content": {

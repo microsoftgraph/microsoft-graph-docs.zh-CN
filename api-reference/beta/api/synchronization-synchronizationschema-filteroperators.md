@@ -2,12 +2,12 @@
 title: 'synchronizationSchema: filterOperators'
 description: 列出所有支持的范围筛选器中的运算符。
 localization_priority: Normal
-ms.openlocfilehash: c564142aa6a26b3f83fa5f82036e3b97dc13e672
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 68e0c9f583e92989213d1442aee1610b1495bae0
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573226"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641706"
 ---
 # <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
 
@@ -76,11 +76,13 @@ Content-type: application/json
 {
     "value": [
         {
-            "arity": "Unary",
+            "name": "EQUALS",
+            "arity": "Binary",
             "multivaluedComparisonType": "All",
-            "supportedAttributeTypes": [                
-                "@string"
-             ]
+            "supportedAttributeTypes": [
+                "String",
+                "Integer"
+            ]
         }
     ]
 }
@@ -96,7 +98,8 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-               "Boolean"
+                "Integer",
+                "String"
             ]
         },
         {
@@ -104,7 +107,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-              "Boolean"
+                "Boolean"
             ]
         },
         {
@@ -112,6 +115,9 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
+                "Integer",
+                "String",
+                "Binary",
                 "Boolean"
             ]
         },
@@ -120,6 +126,9 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
+                "Integer",
+                "String",
+                "Binary",
                 "Boolean"
             ]
         },
@@ -136,7 +145,8 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Boolean"
+                "Integer",
+                "String"
             ]
         },
         {
@@ -144,7 +154,8 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Boolean"
+                "Integer",
+                "String"
             ]
         },
         {
@@ -152,7 +163,8 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Boolean"
+                "Integer",
+                "String"
             ]
         }
     ]

@@ -2,18 +2,18 @@
 title: expressionInputObject 资源类型
 description: '代表要用作输入的测试数据时[synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)操作执行表达式求值。'
 localization_priority: Normal
-ms.openlocfilehash: 4f0ba06651fdd8a296b0939d05ecefe996f0089f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3e631102505408b955404c4badb33b98f314236f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570958"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641650"
 ---
 # <a name="expressioninputobject-resource-type"></a>expressionInputObject 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表要用作输入的测试数据时[synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md)操作执行表达式求值。
+代表要用作输入的测试数据时[synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)操作执行表达式求值。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

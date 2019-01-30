@@ -4,12 +4,12 @@ description: 根据其在集合中的位置获取图表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 089977be0993f8ed5930b5a29c3b5ee880c6bc34
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 82e5d79ee4498a5b5b4e2fc2adc0461aec13cae4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575938"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643676"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -42,11 +42,11 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|index|Int32|要检索的对象的索引值。从零开始编制索引。|
+|index|number|要检索的对象的索引值。从零开始编制索引。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和[WorkbookChart](../resources/chart.md)响应正文中的对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Chart](../resources/chart.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -54,10 +54,7 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
-  "isComposable": true,
-  "name": "chartcollection_itemat",
-  "idempotent": true,
-  "@type": "requestBodyResourceFor.chartcollection_itemat"
+  "name": "chartcollection_itemat"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
@@ -65,7 +62,8 @@ Content-type: application/json
 Content-length: 20
 
 {
-  "index": 8
+  "index": {
+  }
 }
 ```
 
@@ -74,7 +72,7 @@ Content-length: 20
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChart"
+  "@odata.type": "microsoft.graph.chart"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -4,12 +4,12 @@ description: '代表 Azure Active Directory 租户。 '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b0e1e0563b0e29d49fbf5dece0f62f70e7a71c52
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574990"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642140"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -51,8 +51,8 @@ ms.locfileid: "29574990"
 |postalCode|String| 组织地址的邮政编码。 |
 |preferredLanguage|String| 组织的首选语言。 应遵循 ISO 639-1 代码；例如“en”。 |
 |privacyProfile|[privacyProfile](privacyprofile.md)| 组织的隐私配置文件。            |
-|provisionedPlans|[provisionedPlan](provisionedplan.md)集合| 不可为 null。            |
-|provisioningErrors|onPremisesProvisioningError 集合| 不可为 null。            |
+|provisionedPlans|[ProvisionedPlan](provisionedplan.md) 集合| 不可为 null。            |
+|provisioningErrors|ProvisioningError 集合| 不可为 null。            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
 |state|String| 组织地址所在的省/自治区/直辖市名称。 |
@@ -64,7 +64,7 @@ ms.locfileid: "29574990"
 
 | 关系     | 类型   |说明|
 |:---------------|:--------|:----------|
-|extensions|[扩展](extension.md)集合|打开扩展名为组织资源定义的集合。 可为 NULL。|
+|extensions|[扩展](extension.md)集合|打开扩展名为组织资源定义的集合。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

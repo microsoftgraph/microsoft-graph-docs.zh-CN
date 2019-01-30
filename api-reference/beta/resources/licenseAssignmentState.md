@@ -2,12 +2,12 @@
 title: licenseAssignmentState 资源类型
 description: '用户实体的**licenseAssignmentStates**属性是**licenseAssignmentState**的集合。 为用户提供有关许可证分配的详细信息。 详细信息包括类似的信息：  '
 localization_priority: Normal
-ms.openlocfilehash: f2f905baaba4dddd65266ffafab44febe7a61139
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a33dce3550d5a842493b73c83e8222a579348c9a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575179"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641678"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "29575179"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |assignedByGroup|string|分配此许可证的组 id。 如果工作分配为直接分配许可证，此字段为 Null。 只读。|
-|disabledPlans| String 集合 |此工作分配中禁用服务计划。 只读。|
+|disabledPlans|集合（字符串）|此工作分配中禁用服务计划。 只读。|
 |error|String|许可证分配失败错误。 如果已成功分配许可证，此字段为 Null。 只读。 可能的值： `CountViolation`， `MutuallyExclusiveViolation`， `DependencyViolation`， `ProhibitedInUsageLocationViolation`， `UniquenessViolation`，和`Others`。 有关详细信息如何确定和解决许可证分配错误请参见[此处](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)。|
 |skuId|String|此 SKU 的唯一标识符。 只读。|
 |state|String|指示此工作分配的当前状态。 只读。 可能的值： 活动、 ActiveWithError、 已禁用和错误。|
@@ -33,11 +33,7 @@ ms.locfileid: "29575179"
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@type": "microsoft.graph.licenseAssignmentState"
-}-->
+
 ```json
 {
   "assignedByGroup": "String",

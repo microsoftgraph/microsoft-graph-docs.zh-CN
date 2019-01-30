@@ -2,12 +2,12 @@
 title: 更新 approleassignment
 description: 更新 approleassignment 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 89147651b1a3ea182247cf3620efba9464c4b055
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 54c256e3b94a5bb2d62c2ffe31ecf777d472b93c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572911"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643473"
 ---
 # <a name="update-approleassignment"></a>更新 approleassignment
 
@@ -41,11 +41,11 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|授予创建时间。|
-|id|Guid|已分配给主体角色 id。  必须由其**appRoles**属性中目标资源应用程序**resourceId**声明此角色。 如果资源没有声明任何权限，必须指定默认 id (零 GUID)。                            **注意：** 不可为 null。            |
-|principalDisplayName|String|已授予访问权限的主体的显示名称。|
+|id|Guid|向主体分配的角色 id。  此角色必须由目标资源应用程序 **resourceId** 在其 **appRoles** 属性中声明。 如果资源未声明任何权限，则必须指定默认 id (0 GUID)。                            **注意：** 不可为 null。            |
+|principalDisplayName|String|已授权访问权限的主体的显示名称。|
 |principalId|Guid|要授予访问权限的主体的唯一标识符 (**objectId**)。                            **说明**： 必需。            |
-|principalType|String|主体的类型。  这可以是"User"，"组"或"ServicePrincipal"。|
-|resourceDisplayName|String|对其进行分配资源的显示名称。|
+|principalType|String|主体类型。  它可以是“User”、“Group”或“ServicePrincipal”。|
+|resourceDisplayName|String|已对其进行分配的资源的显示名称。|
 |resourceId|Guid|为其进行工作分配的目标资源 （服务主体） 的唯一标识符 (**objectId**)。|
 
 ## <a name="response"></a>响应
@@ -76,7 +76,7 @@ Content-length: 233
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK

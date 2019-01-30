@@ -4,12 +4,12 @@ description: 表示图表中某个系列的点。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e8ede39ef53bfc39574ebfc86c8138a70fc31ad6
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4fd50e2e0b0f289f719dd6636eab16544e6a80f5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573065"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641965"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint 资源类型
 
@@ -22,37 +22,35 @@ ms.locfileid: "29573065"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 ChartPoint](../api/chartpoint-get.md) | [workbookChartPoint](chartpoint.md) |读取 chartPoint 对象的属性和关系。|
-|[List](../api/chartpoint-list.md) | [workbookChartPoint](chartpoint.md)集合 |获取 chartPoint 对象集合。 |
-|[ItemAt](../api/chartpointscollection-itemat.md)|[workbookChartPoint](chartpoint.md)|根据其在系列中的位置检索点。|
+|[获取 ChartPoint](../api/chartpoint-get.md) | [ChartPoint](chartpoint.md) |读取 chartPoint 对象的属性和关系。|
+|[List](../api/chartpoint-list.md) | [ChartPoint](chartpoint.md) 集合 |获取 chartPoint 对象集合。 |
+|[Itemat](../api/chartpointscollection-itemat.md)|[ChartPoint](chartpoint.md)|根据其在系列中的位置检索点。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|value|Json|返回图表点的值。只读。|
-|id|string|唯一标识符|
+|value|对象|返回图表点的值。只读。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[workbookChartPointFormat](chartpointformat.md)|封装图表点的格式属性。只读。|
+|format|[ChartPointFormat](chartpointformat.md)|封装图表点的格式属性。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartPoint"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartPoint"
 }-->
 
 ```json
 {
-  "value": "string",
-  "id": "string"
+  "value": "string"
 }
 
 ```

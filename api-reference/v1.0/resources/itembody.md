@@ -2,12 +2,12 @@
 title: itemBody 资源类型
 description: 表示项目正文的属性，例如邮件、事件或组帖子。
 localization_priority: Normal
-ms.openlocfilehash: 2eaf3b5e13833665c452eeecd74169915f5ac2fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: df2e7e8cea9e1b2e6a6d1011029a1898e2794f45
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805227"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642560"
 ---
 # <a name="itembody-resource-type"></a>itemBody 资源类型
 
@@ -17,7 +17,7 @@ ms.locfileid: "27805227"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |内容|String|项目的内容。|
-|contentType|bodyType|内容的类型。可能的值为 `Text` 和 `HTML`。|
+|contentType|bodyType|内容的类型。可能的值为 `text` 和 `HTML`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

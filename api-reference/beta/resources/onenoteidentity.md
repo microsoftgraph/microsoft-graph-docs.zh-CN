@@ -4,12 +4,12 @@ description: '**即将提供的支持**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 33cb7d63ab103723ae5bb8d24c19add4bb7ef5ac
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f1b03ad907a0b8f6f3cf2674d74f1ee8722357ea
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576876"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642133"
 ---
 # <a name="onenoteidentity-resource-type"></a>oneNoteIdentity 资源类型
 
@@ -31,7 +31,7 @@ OneNoteIdentity 类型表示_用户_的标识。
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oneNoteIdentity"
+  "@odata.type": "microsoft.graph.onenoteidentity"
 }-->
 
 ```json

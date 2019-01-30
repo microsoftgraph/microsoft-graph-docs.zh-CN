@@ -2,12 +2,12 @@
 title: stringKeyObjectValuePair 资源类型
 description: 表示其中的密钥是一个字符串，值是一个任意 JSON 对象的键 / 值对。 这是认为应该有一个名为属性 OData 打开类型`value`，它是一个有效的 JSON 对象。
 localization_priority: Normal
-ms.openlocfilehash: 819a2e004ee712f1250652ce0b3811940545e643
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8f939c177f2130813c6080d46ad78664f6118857
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572169"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642924"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>stringKeyObjectValuePair 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "29572169"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |Key|String|键。|
-|值|Json|任意的 JSON 对象。|
+|值|任意|任意的 JSON 对象。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -35,8 +35,7 @@ ms.locfileid: "29572169"
 
 ```json
 {
-  "key": "String",
-  "value":"Json"
+  "key": "String"
 }
 
 ```

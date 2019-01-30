@@ -4,12 +4,12 @@ description: " 值是 plannerPlanContextDetails 对象。"
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 2731827a5d9cdb5297e619ecef164339a1b909c0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ca1625a4bf137fc14cc780df4d4d1e5ec3bb226e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571231"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642938"
 ---
 # <a name="plannerplancontextdetailscollection-resource-type"></a>plannerPlanContextDetailsCollection 资源类型
 
@@ -22,17 +22,6 @@ ms.locfileid: "29571231"
 ## <a name="properties"></a>属性
 打开类型的属性可定义由客户端。 在这种情况下，客户应使用的独特的标识符值，该值代表外部上下文与属性名称。 属性值必须是[plannerPlanContextDetails](plannerplancontextdetails.md)对象。 基于 OData，在打开的类型的属性名称不能包含下列字符： `.`， `:`， `@`， `%`。 需要 URL 编码格式编码这些字符。 在收藏夹列表中删除项目，需要的值从集合中删除[plannerPlanContextCollection](plannerplancontextcollection.md)相反，其自动将此对象中删除的项。
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.plannerPlanContextDetailsCollection"
-}-->
-```json
-{
-}
-```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

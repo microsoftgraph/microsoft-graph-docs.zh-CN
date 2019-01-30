@@ -4,12 +4,12 @@ description: 更新 chartgridlines 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 92ef9fe1d8414db0e81b5b5468b15cc503a24603
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cabe56ab279deb5e98898029f60cdfef34c1e031
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570813"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643078"
 ---
 # <a name="update-chartgridlines"></a>更新 chartgridlines
 
@@ -43,11 +43,11 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlin
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|visible|布尔|表示坐标轴网格线是否可见的布尔值。|
+|visible|boolean|表示坐标轴网格线是否可见的布尔值。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[workbookChartGridlines](../resources/chartgridlines.md)对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartGridlines](../resources/chartgridlines.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -69,9 +69,8 @@ Content-length: 21
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartGridlines"
+  "@odata.type": "microsoft.graph.chartGridLines"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

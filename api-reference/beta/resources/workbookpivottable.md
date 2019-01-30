@@ -4,12 +4,12 @@ description: 表示 Excel 数据透视表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 774c407022d700bc5856dc780eff3a6dafa6bc4e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: fc43bf160e93e354ff58b2f960e8ec38d252287f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577457"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641104"
 ---
 # <a name="pivottable-resource-type"></a>pivotTable 资源类型
 
@@ -34,14 +34,13 @@ ms.locfileid: "29577457"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|worksheet|[WorkbookWorksheet](worksheet.md)| 包含当前 PivotTable 对象的工作表。只读。   |
+|worksheet|[worksheet](worksheet.md)| 包含当前数据透视表对象的工作表。只读。   |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

@@ -4,12 +4,12 @@ description: 更新 rangeformat 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b1b3f768af0efe94c5b14177c5e70bbe9a642174
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2bd576fcb30facd220e9abf7a8a1fee8d22f80a7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574423"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642161"
 ---
 # <a name="update-rangeformat"></a>更新 RangeFormat
 
@@ -47,7 +47,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 |horizontalAlignment|string|表示指定对象的水平对齐方式。可能的值是：`General`、`Left`、`Center`、`Right`、`Fill`、`Justify`、`CenterAcrossSelection`、`Distributed`。|
 |rowHeight|double|获取或设置区域中所有行的高度。如果行高不统一，则返回 NULL。|
 |verticalAlignment|string|表示指定对象的垂直对齐方式。可能的值是：`Top`、`Center`、`Bottom`、`Justify`、`Distributed`。|
-|wrapText|布尔|指示 Excel 是否将对象中的文本换行。指示整个区域不具有统一换行设置的空值|
+|wrapText|boolean|指示 Excel 是否将对象中的文本换行。指示整个区域不具有统一换行设置的空值|
 
 ## <a name="response"></a>响应
 
@@ -326,7 +326,7 @@ PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/S
 Content-type: application/json
 
 {
-  "underline": "None",
+  "underline": "Single",
   "color": "#FFFFFF",
   "size": 26
 }
@@ -348,7 +348,7 @@ Content-type: application/json
     "italic": false,
     "name": "Calibri",
     "size": 26,
-    "underline": "None"
+    "underline": "Single"
 }
 ```
 

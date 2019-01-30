@@ -4,12 +4,12 @@ description: 更新 tablecolumn 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b56a37cd0fa55c2d996b8df16a7bf326daaa0da3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1287cb8c7c8e9b477d1e103a1dc845cbb37b3b87
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575235"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641671"
 ---
 # <a name="update-tablecolumn"></a>更新 tablecolumn
 
@@ -42,7 +42,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|values|microsoft.graph.Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
+|values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="response"></a>响应
 

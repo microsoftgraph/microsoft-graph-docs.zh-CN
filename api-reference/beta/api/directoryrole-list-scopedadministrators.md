@@ -4,12 +4,12 @@ description: 检索为目录角色 scopedRoleMembership 对象的列表。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 188e3f0d49252c469a77b2f8903dc4be5b188801
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ab6b68ac96e35249ef216266fafed76be68f40b7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571756"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642476"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>为目录角色的列表 scopedMembers
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/directoryRoles/{id}/scopedMembers
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedRoleMembership",
+  "@odata.type": "microsoft.graph.scopedrolemembership",
   "isCollection": true
 } -->
 ```http

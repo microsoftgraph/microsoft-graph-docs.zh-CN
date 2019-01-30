@@ -4,12 +4,12 @@ description: 检索的终结点对象的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 4f6d5d1fc8578f390dce0fece668a851c47032a7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d8bb01d00fbac03a2b52d95179ec22ca769f9df2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575854"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642378"
 ---
 # <a name="list-endpoints"></a>List endpoints
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.endpoint",
+  "@odata.type": "microsoft.graph.Endpoint",
   "isCollection": true
 } -->
 ```http

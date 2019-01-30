@@ -4,12 +4,12 @@ description: 录制呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1f119cfece969c01e68773e5985eab4010dc9874
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574857"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641902"
 ---
 # <a name="call-record"></a>呼叫： 记录
 
@@ -24,7 +24,7 @@ ms.locfileid: "29574857"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| Application     | Calls.AccessMedia.All                       |
+| 应用程序     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,14 +43,14 @@ POST /applications/{id}/calls/{id}/record
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[mediaPrompt](../resources/mediaprompt.md)集合 | 启动提示之前录制播放 （如果有） 的集合。 客户可以选择单独指定"playPrompt"操作，或者指定的"记录"的一部分主要的所有记录都都使用提示 |
+|提示|[mediaprompt](../resources/mediaprompt.md)集合 | 启动提示之前录制播放 （如果有） 的集合。 客户可以选择单独指定"playPrompt"操作，或者指定的"记录"的一部分主要的所有记录都都使用提示 |
 |bargeInAllowed|布尔值| 允许用户提示完成之前输入的选择。                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| 从我们开始之前我们记录操作超时和失败操作的时间允许的最大初始静音。 如果我们播放提示时，提示完成后从开始此计时器。 |
 |maxSilenceTimeoutInSeconds|Int32| 最大无声超时秒数。|
 |maxRecordDurationInSeconds|Int32| 最大记录持续时间，以秒为单位。|
 |playBeep|布尔值| 播放提示音后播放提示。|
 |streamWhileRecording|布尔值|如果设置为 true，资源位置将提供一旦开始录制。 |
-|stopTones|String 集合|停止指定结束录制音。|
+|stopTones|String collection|停止指定结束录制音。|
 |clientContext|String|客户端上下文。|
 
 ## <a name="response"></a>响应

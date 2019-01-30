@@ -2,12 +2,12 @@
 title: 创建单值扩展属性
 description: '在新建或现有的资源实例中创建一个或多个单值扩展属性。 '
 localization_priority: Normal
-ms.openlocfilehash: 6a9ddee699cac0e11a5656fc12174a9d4fb610c3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3b122eb1a02ddd9e413f5c58bf840b912dd8365f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575445"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641391"
 ---
 # <a name="create-single-value-extended-property"></a>创建单值扩展属性
 
@@ -20,7 +20,7 @@ ms.locfileid: "29575445"
 - [日历](../resources/calendar.md)
 - [联系人](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [event](../resources/event.md)
+- [事件](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [Outlook 任务](../resources/outlooktask.md)
@@ -37,9 +37,9 @@ ms.locfileid: "29575445"
 ## <a name="permissions"></a>权限
 正在根据资源创建中的扩展的属性和权限键入 （委派或应用程序） 您请求，至少要调用此 API 是下表中所指定的权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | Application |
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
-| [日历](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [联系人](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
@@ -150,15 +150,15 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>请求正文
 
-提供资源实例的**singleValueLegacyExtendedProperty**集合属性中的每个[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)对象的 JSON 正文。
+提供每个 [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) 对象在资源实例的 **singleValueExtendedProperties** 集合属性中的 JSON 正文。
 
 |**属性**|**类型**|**说明**|
 |:-----|:-----|:-----|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 一个或多个单值扩展属性的数组。 |
-|id|String|对于**singleValueLegacyExtendedProperty**集合中每个属性，指定此选项可标识该属性。 它必须遵循的受支持的格式之一。 有关详细信息，请参阅[Outlook 扩展属性概述](../resources/extended-properties-overview.md)。 必需。|
-|值|string|对于**singleValueLegacyExtendedProperty**集合中每个属性，指定该属性值。 必需。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 一个或多个单值扩展属性的数组。 |
+|id|String|对于 **singleValueExtendedProperties** 集合中的每个属性，请指定此参数以标识属性。它必须遵照其中一种支持的格式。有关详细信息，请参阅 [Outlook 扩展属性概述](../resources/extended-properties-overview.md)。必需。|
+|值|string|对于 **singleValueExtendedProperties** 集合中的每个属性，请指定属性值。必需。|
 
-在_新_的资源实例中，除了新**singleValueLegacyExtendedProperty**集合中，创建的扩展的属性时提供的资源实例 （即，[邮件](../resources/message.md)、 [mailFolder 的 JSON 表示形式](../resources/mailfolder.md)，[事件](../resources/event.md)等。)
+在_新的_资源实例中创建扩展属性时，除了新的 **singleValueExtendedProperties** 集合，请提供资源实例的 JSON 表示形式（即 [邮件](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[事件](../resources/event.md) 等）。
 
 ## <a name="response"></a>响应
 
@@ -179,7 +179,7 @@ PATCH /groups/{id}/events/{id}
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
 
-第一个示例相同的 POST 操作中创建一个新的事件和单值扩展的属性。 除了您通常要包括的新事件的属性，在请求正文包括**singleValueLegacyExtendedProperty**集合，其中包含一个单值的扩展的属性和以下属性：
+第一个示例在相同的 POST 操作中创建一个新事件和一个单值扩展属性。除了通常要包括的新事件的属性，请求正文还包括 **singleValueExtendedProperties** 集合，该集合包含一个单值扩展属性和以下属性：
 
 - **id** 将属性类型指定为 `String`、GUID 和名为 `Fun` 的属性。
 - **value** 将 `Food` 指定为 `Fun` 属性的值。 
@@ -212,7 +212,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
      {
            "id":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
            "value":"Food"
@@ -232,7 +232,7 @@ Content-Type: application/json
 
 ##### <a name="request-2"></a>请求 2
 
-第二个示例创建一个单值扩展属性指定的现有消息。 **SingleValueLegacyExtendedProperty**数组中的唯一元素的扩展属性。 在请求正文的扩展属性包括：
+第二个示例为指定的现有邮件创建一个单值扩展属性。扩展属性是 **singleValueExtendedProperties** 数组中的唯一元素。请求正文包括扩展属性的以下参数：
 - **id** 将属性类型指定为 `String`、GUID 和名为 `Color` 的属性。
 - **value** 将 `Green` 指定为 `Color` 属性的值。
 
@@ -243,7 +243,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA='
 Content-Type: application/json
 
 {
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
       {
          "id":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
          "value":"Green"

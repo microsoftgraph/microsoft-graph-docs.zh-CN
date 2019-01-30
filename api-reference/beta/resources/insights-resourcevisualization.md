@@ -4,31 +4,33 @@ description: 包含属性的见解复杂类型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 9dc2d50a5bc694204317f8c3332263ce5259e2fc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575102"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641293"
 ---
 # <a name="resourcevisualization-resource-type"></a>resourceVisualization 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含属性的[officeGraphInsights](insights.md)复杂类型。
+包含属性的[见解](insights.md)复杂类型。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-  ],  
-  "@odata.type": "microsoft.graph.resourceVisualization"
-}-->
 ```json
 {
+  "title": "string",
+  "type"  : "string",
+  "mediaType": "string",
+  "previewImageUrl": "string",
+  "previewText": "string",
+  "containerWebUrl": "string",
+  "containerDisplayName": "string",
+  "containerType": "string"
 }
 ```
 

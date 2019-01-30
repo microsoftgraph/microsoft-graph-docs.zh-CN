@@ -2,12 +2,12 @@
 title: networkConnection 资源类型
 description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: 6d28149854ed3157473b678db442ee3474e456c6
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ce7de8d5a0f63c4d924e8092e4e9e05f984ec335
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571917"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643585"
 ---
 # <a name="networkconnection-resource-type"></a>networkConnection 资源类型
 
@@ -31,11 +31,11 @@ ms.locfileid: "29571917"
 |natDestinationPort|String|网络地址转换目标端口。|
 |natSourceAddress|String|网络地址转换源 IP 地址。|
 |natSourcePort|String|网络地址转换源端口。|
-|protocol| securityNetworkProtocol |网络协议。 可能的值为： `unknown`， `ip`， `icmp`， `igmp`， `ggp`， `ipv4`， `tcp`， `pup`， `udp`， `idp`， `ipv6`， `ipv6RoutingHeader`， `ipv6FragmentHeader`， `ipSecEncapsulatingSecurityPayload`， `ipSecAuthenticationHeader`， `icmpV6`， `ipv6NoNextHeader`， `ipv6DestinationOptions`， `nd`, `raw`, `ipx`, `spx`, `spxII`.|
+|protocol|[securityNetworkProtocol](securitynetworkprotocolenumtype.md)|网络协议。 可能的值为： `unknown`， `ip`， `icmp`， `igmp`， `ggp`， `ipv4`， `tcp`， `pup`， `udp`， `idp`， `ipv6`， `ipv6RoutingHeader`， `ipv6FragmentHeader`， `ipSecEncapsulatingSecurityPayload`， `ipSecAuthenticationHeader`， `icmpV6`， `ipv6NoNextHeader`， `ipv6DestinationOptions`， `nd`, `raw`, `ipx`, `spx`, `spxII`.|
 |riskScore|String|提供程序生成/计算风险的网络连接的分数。 建议值的范围为 0-1，这相当于百分比。|
 |sourceAddress|String|源 （即原点） IP 地址 （的网络连接）。|
 |sourcePort|String|源 （即原点） IP （网络连接端口）。|
-|status|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked`、`failed`。|
+|状态|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked`、`failed`。|
 |urlParameters|String|目标 URL 参数 （后缀）。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -4,12 +4,12 @@ description: 用户邮箱中的邮箱文件夹，例如收件箱和草稿箱。 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 25a491a23840de009386d7fbb2e9ee8d0fef7b4e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576729"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642693"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
@@ -100,8 +100,8 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 |childFolders|[MailFolder](mailfolder.md) 集合|mailFolder 中的子文件夹集合。|
 |messageRules | [messageRule](messagerule.md) 集合 | 适用于用户“收件箱”文件夹的规则集合。 |
 |messages|[邮件](message.md) 集合|mailFolder 中的邮件集合。|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的多值扩展属性的集合。只读。可为 NULL。|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 mailFolder 定义的单值扩展属性的集合。只读。可为 NULL。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的多值扩展属性的集合。只读。可为 NULL。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为 mailFolder 定义的单值扩展属性的集合。只读。可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -113,8 +113,8 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
     "childFolders",
     "messageRules",
     "messages",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mailFolder"
@@ -132,8 +132,8 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 ```
 

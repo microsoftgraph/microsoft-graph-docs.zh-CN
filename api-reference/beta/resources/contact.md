@@ -4,12 +4,12 @@ description: 联系人是 Outlook 中的一个项目，你可以在这里组织�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 41eed344abda9e06040a7c20027e219526c83e8f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d2bdc1be9e504bc72ce12ffe924b6da0812b99ce
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576855"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642448"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 
@@ -31,9 +31,9 @@ ms.locfileid: "29576855"
   "blockType": "resource",
   "optionalProperties": [
     "extensions",
-    "multiValueLegacyExtendedProperty",
+    "multiValueExtendedProperties",
     "photo",
-    "singleValueLegacyExtendedProperty"
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.contact"
 }-->
@@ -85,7 +85,7 @@ ms.locfileid: "29576855"
 |:---------------|:--------|:----------|
 |assistantName|String|联系人助理的姓名。|
 |birthday|DateTimeOffset|联系人的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|categories|String collection|与联系人关联的类别。 每个类别对应于[outlookCategory](outlookcategory.md)为用户定义的**displayName**属性。|
+|类别|String collection|与联系人关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
 |changeKey|String|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |children|String collection|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
@@ -124,10 +124,10 @@ ms.locfileid: "29576855"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|extensions|[扩展](extension.md)集合|打开扩展名为该联系人定义的集合。 可为 NULL。|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为联系人定义的多值扩展属性的集合。只读。可为 Null。|
+|extensions|[扩展](extension.md)集合|打开扩展名为该联系人定义的集合。 可为 Null。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为联系人定义的多值扩展属性的集合。只读。可为 Null。|
 |photo|[照片](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="methods"></a>方法
 | 方法           | 返回类型    |说明|

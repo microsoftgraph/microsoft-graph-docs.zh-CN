@@ -4,12 +4,12 @@ description: OneNote 笔记本中的分区组。分区组可以包含分区和�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 0b7368f18058c0c8b00c5b34e5a804521dc64682
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 65e420d014add658a538deb42c01518cd94d611c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575518"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640950"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup 资源类型
 
@@ -29,7 +29,7 @@ OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 }-->
 
 ```json
@@ -62,10 +62,10 @@ OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|parentNotebook|[笔记本](notebook.md)|包含分区组的笔记本。只读。|
-|parentSectionGroup|[sectionGroup](sectiongroup.md)|包含分区组的分区组。只读。|
-|sectionGroups|[sectionGroup](sectiongroup.md)集合|分区中的分区组。只读。可为 NULL。|
-|sections|[onenoteSection](section.md)集合|分区组中的分区。只读。可为 Null。|
+|parentNotebook|[Notebook](notebook.md)|包含分区组的笔记本。只读。|
+|parentSectionGroup|[SectionGroup](sectiongroup.md)|包含分区组的分区组。只读。|
+|sectionGroups|[SectionGroup](sectiongroup.md) collection|分区中的分区组。只读。可为 NULL。|
+|节|[Section](section.md) collection|分区组中的分区。只读。可为 Null。|
 
 ## <a name="methods"></a>方法
 

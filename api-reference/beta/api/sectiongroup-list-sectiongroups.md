@@ -4,12 +4,12 @@ description: 从指定分区组中检索分区组列表。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 6f774699398f7df3c56f09fd8469510a5d10cbe5
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: df313533154862017e0cb2dc96a5a75d83ba27ca
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576127"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643480"
 ---
 # <a name="list-sectiongroups"></a>列出 sectionGroups
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sectionGroups
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionGroup",
+  "@odata.type": "microsoft.graph.sectiongroup",
   "isCollection": true
 } -->
 ```http

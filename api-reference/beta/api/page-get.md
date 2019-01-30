@@ -4,18 +4,18 @@ description: 检索页面对象的属性和关系。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 1cafa1b430f20fc74d045c498d7bba81eb160463
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 57a2c75bbe671086c89818a84f7f8266b90713c6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572631"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642945"
 ---
 # <a name="get-page"></a>获取页面
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[页面](../resources/onenotepage.md)对象的属性和关系。
+检索[页面](../resources/page.md)对象的属性和关系。
 
 **获取页面信息**
 
@@ -69,7 +69,7 @@ GET /sites/{id}/onenote/pages/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [page](../resources/onenotepage.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [page](../resources/page.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

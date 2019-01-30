@@ -4,12 +4,12 @@ description: 用于连接到呼叫的媒体配置。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0b2d8b8063307660b0d4cce459e1906f0b0a99c5
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e4f6e940cd319d10cd3f03e3c94d0473164beb29
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573961"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642616"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig 资源类型
 
@@ -32,7 +32,6 @@ ms.locfileid: "29573961"
   "optionalProperties": [
     "removeFromDefaultAudioGroup"
   ],
-  "abstract": true,
   "@odata.type": "microsoft.graph.mediaConfig"
 }-->
 ```json

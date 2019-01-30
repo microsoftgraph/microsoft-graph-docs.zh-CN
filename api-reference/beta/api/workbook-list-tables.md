@@ -4,12 +4,12 @@ description: 检索 table 对象的列表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a094e217c5f78ce4592779ef7935f9e9b587a577
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: fded1cb53bd7d2ffde837dc7da3c275b2e6917bc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570895"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642434"
 ---
 # <a name="list-tables"></a>列出表
 
@@ -44,7 +44,7 @@ GET /workbook/tables
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[workbookTable](../resources/table.md)对象的集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Table](../resources/table.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookTable",
+  "@odata.type": "microsoft.graph.table",
   "isCollection": true
 } -->
 ```http

@@ -1,12 +1,12 @@
 ---
 title: timeZoneStandard 值
 description: " 值"
-ms.openlocfilehash: fae641b0dbb7f87a55d5bca3db36c1f24c23ad29
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d011f204d1439d312c961445a0b1663b6ac8d60c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574759"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640978"
 ---
 ### <a name="timezonestandard-values"></a>timeZoneStandard 值
 
@@ -319,7 +319,7 @@ ms.locfileid: "29574759"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | reference
 
 
@@ -392,7 +392,7 @@ ms.locfileid: "29574759"
 | 值
 |:-------------------------
 | 无
-| organizer
+| 组织者
 | tentativelyAccepted
 | 接受
 | 拒绝
@@ -641,210 +641,3 @@ ms.locfileid: "29574759"
 |标准|0|标准用户组的成员。|
 |电源|1| Power Users 组的成员。|
 |管理员|2| Administrators 组的成员。|
-
-
-
-### <a name="scopeoperatortype-values"></a>scopeOperatorType 值
-
-| 成员            |值
-|:------------------|:-------
-| 二进制文件              | 0
-| 一元         | 1
-
-
-### <a name="scopeoperatormultivaluedcomparisontype-values"></a>scopeOperatorMultiValuedComparisonType 值
-
-| 成员            |值
-|:------------------|:-------
-| all              | 0
-| 任意         | 1
-
-
-### <a name="scopeoperatormultivaluedcomparisontype-values"></a>scopeOperatorMultiValuedComparisonType 值
-
-| 成员            |值
-|:------------------|:-------
-| 低              | 0
-| 中等         | 1
-| 高         | 2
-
-### <a name="exchangeidformat-values"></a>exchangeIdFormat 值
-
-| 成员            |值
-|:------------------|:-------
-| entryId              | 0
-| ewsId         | 1
-| immutableEntryId         | 2
-| restId         | 2
-| restImmutableEntryId         | 2
-
-### <a name="risklevel-values"></a>riskLevel 值
-
-| 值           
-|:------------------
-| 无
-| 低
-| 中等
-| 高
-| hidden
-| unknownFutureValue
-
-### <a name="riskstate-values"></a>riskState 值
-
-| 值           
-|:------------------
-| 无
-| 低
-| 中等
-| 高
-| hidden
-| unknownFutureValue
-
-### <a name="riskdetail-values"></a>riskDetail 值
-
-| 值           
-|:------------------
-| 无
-| adminGeneratedTemporaryPassword
-| userPerformedSecuredPasswordChange
-| userPerformedSecuredPasswordReset
-| adminConfirmedSigninSafe
-| aiConfirmedSigninSafe
-| userPassedMFADrivenByRiskBasedPolicy
-| adminDismissedAllRiskForUser
-| adminConfirmedSigninCompromised
-| unknownFutureValue
-
-# <a name="securitynetworkprotocol-values"></a>securityNetworkProtocol 值
-
-|成员|值|说明|
-|:---|:---|:---|
-|unknown|-1|未知的协议。|
-|ip|0|Internet 协议。|
-|icmp|1| Internet 消息控制协议。|
-|igmp|2| Internet 组管理协议。|
-|ggp|3| 网关之间的协议。|
-|ipv4|4| Internet 协议版本 4。|
-|tcp|6| 传输控制协议。|
-|pup|12| PARC 通用数据包协议。|
-|udp|17| 用户数据报协议。|
-|idp|22| Internet 数据报协议。|
-|ipv6|41| Internet 协议版本 6 (ipv6)。|
-|ipv6RoutingHeader|43| ipv6 路由标头。|
-|ipv6FragmentHeader|44| ipv6 片段标头。|
-|ipSecEncapsulatingSecurityPayload|50| ipv6 正在封装安全负载标头。|
-|ipSecAuthenticationHeader|51| ipv6 身份验证标头。|
-|icmpV6|58| Ipv6 的 Internet 控件消息协议。|
-|ipv6NoNextHeader|59| ipv6 不下一页眉。|
-|ipv6DestinationOptions|60| ipv6 目标选项标头。|
-|和|77| Net 磁盘协议 （非正式）。|
-|原始|255| 原始 IP 数据包协议。|
-|ipx|1000| Internet 数据包 Exchange 协议。|
-|spx|1256| 排序的包交换协议。|
-|spxII|1257| 排序的包交换版本 2 协议。|
-
-
-
-### <a name="referenceattachmentpermission-values"></a>referenceAttachmentPermission 值
-
-| 成员            |值
-|:------------------|:-------
-| 其他             | 0
-| view              | 1
-| edit              | 2
-| anonymousView     | 3
-| anonymousEdit     | 4
-| organizationView  | 5
-| organizationEdit  | 6
-
-
-### <a name="referenceattachmentprovider-values"></a>referenceAttachmentProvider 值
-
-| 成员            |值
-|:------------------|:-------
-| 其他             | 0
-| oneDriveBusiness  | 1
-| oneDriveConsumer  | 2
-| 收存箱           | 3
-
-### <a name="modality-values"></a>形式值
-
-| 成员                    |值
-|:--------------------------|:-------
-| unknown                   | 0
-| audio                     | 1
-| video                     | 2
-| videoBasedScreenSharing   | 3
-| data                      | 4
-
-### <a name="routingpolicy-values"></a>routingPolicy 值
-
-| 成员                        |值
-|:------------------------------|:-------
-| 无                          | 0
-| noMissedCall                  | 1
-| disableForwardingExceptPhone  | 2
-| disableForwarding             | 3
-
-### <a name="callstate-values"></a>callState 值
-
-| 成员               |值
-|:---------------------|:-------
-| incoming             | 0
-| 建立         | 1
-| 响铃              | 2
-| 建立          | 3
-| 保留                 | 4
-| 转接         | 5
-| transferAccepted     | 6
-| 重定向          | 7
-| 终止          | 8
-| 终止           | 9
-
-### <a name="calldirection-values"></a>callDirection 值
-
-| 成员               |值
-|:---------------------|:-------
-| incoming             | 0
-| 传出             | 1
-
-### <a name="attributetype-values"></a>特性类型的值
-
-| 成员               |值
-|:---------------------|:-------
-| dateTime             | 5
-| 布尔              | 4
-| 二进制文件               | 3
-| reference            | 2
-| integer              | 1
-| @string              | 0
-
-### <a name="operationstatus-values"></a>operationStatus 值
-
-| 成员               |值
-|:---------------------|:-------
-| 为 notStarted           | 0
-| 运行              | 1
-| 完成            | 2
-| failed               | 3
-
-### <a name="operationstatus-values"></a>operationStatus 值
-
-| 成员               |值
-|:---------------------|:-------
-| default              | 0
-| 语音邮件 1
-
-### <a name="recordcompletionreason-values"></a>recordCompletionReason 值
-
-| 成员                    |值
-|:--------------------------|:-------
-| operationCanceled         | 0
-| stopToneDetected          | 1
-| maxRecordDurationReached  | 2
-| initialSilenceTimeout     | 3
-| maxSilenceTimeout         | 4
-| playPromptFailed          | 5
-| playBeepFailed            | 6
-| mediaReceiveTimeout       | 7
-| unspecifiedError          | 8

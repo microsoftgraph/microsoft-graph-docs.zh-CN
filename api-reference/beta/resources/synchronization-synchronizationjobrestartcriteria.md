@@ -2,18 +2,18 @@
 title: synchronizationJobRestartCriteria 资源类型
 description: 定义的范围的[synchronizationJob： 重新启动](../api/synchronization_synchronizationjob_restart.md)操作。
 localization_priority: Normal
-ms.openlocfilehash: 960bfa56d0bb6921ca971722d894d1b837bfab49
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1e6ac952808f80d191fc93e9a804411ec4459d4c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572302"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642518"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>synchronizationJobRestartCriteria 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义的范围的[synchronizationJob： 重新启动](../api/synchronization-synchronizationjob-restart.md)操作。
+定义的范围的[synchronizationJob： 重新启动](../api/synchronization_synchronizationjob_restart.md)操作。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

@@ -3,12 +3,12 @@ title: 活动资源类型
 description: 表示应用程序-例如，TV 显示、 文档或视频游戏中的当前市场活动中的单个活动。 当用户启动与该活动时，以指示该活动的开始和结束时间的历史记录项捕获项目。 根据用户重新启动与该活动随着时间的推移，多个历史记录项为单个用户活动记录。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 3d05c684d9498378a07a944f7aebd5e8a6b97f53
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5deaab5d7ea071bfda686380d49fb41214a7b29e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573835"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641272"
 ---
 # <a name="activity-resource-type"></a>活动资源类型
 
@@ -48,7 +48,7 @@ ms.locfileid: "29573835"
 |visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必需。 包含信息呈现体验中的活动的对象|
 |contentInfo | 类型化的 JSON 对象 | 可选。 一个自定义的数据的 JSON LD 根据[schema.org](https://schema.org)语法的内容的可扩展说明。|
 |expirationDateTime | DateTimeOffset | 由服务器设置。 采用 UTC 对象过期的服务器上时的日期和时间。|
-|status | 枚举字符串 | 由服务器设置。 一个用于标识有效对象的状态代码。 值： 活动更新、 删除、 忽略。|
+|状态 | EnumType | 由服务器设置。 一个用于标识有效对象的状态代码。 值： 活动更新、 删除、 忽略。|
 
 ## <a name="relationships"></a>关系
 
@@ -87,7 +87,7 @@ ms.locfileid: "29573835"
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
-    "status": "active | updated | deleted | ignored",
+    "status": "EnumType",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]

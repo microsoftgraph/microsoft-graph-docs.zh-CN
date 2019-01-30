@@ -4,12 +4,12 @@ description: 包含属性的见解复杂类型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 8cc7e686aebd531a25b6c1637fcf99338df09396
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4fa4563904472fad9fc28fa4acb10b77887b5872
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572295"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642756"
 ---
 # <a name="resourcereference-resource-type"></a>resourceReference 资源类型
 
@@ -20,15 +20,7 @@ ms.locfileid: "29572295"
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
-  ],
-  "@odata.type": "microsoft.graph.resourceReference"
-}-->
+
 ```json
 {
   "webUrl": "string",

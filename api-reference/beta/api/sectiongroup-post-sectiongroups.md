@@ -4,12 +4,12 @@ description: 在指定分区组中新建分区组。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 84f79121bb39f9b7e322edefab48bd56559949d4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 94fc0cc005155ccf9ec3e6bcb8ea0371867b3cc9
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573394"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642686"
 ---
 # <a name="create-sectiongroup"></a>创建 sectionGroup
 
@@ -69,7 +69,7 @@ Content-length: 30
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 } -->
 ```http
 HTTP/1.1 200 OK

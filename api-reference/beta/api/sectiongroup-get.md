@@ -4,12 +4,12 @@ description: 检索 sectionGroup 对象的属性和关系。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 7b0f0b0ec19c64a6e703ce41d024b3112c354da7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2bacba09167724935123becbb5d8194385b5b215
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575686"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643424"
 ---
 # <a name="get-sectiongroup"></a>获取 sectionGroup
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 } -->
 ```http
 HTTP/1.1 200 OK

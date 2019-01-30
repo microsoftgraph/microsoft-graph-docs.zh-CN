@@ -4,12 +4,12 @@ description: '**InvitationParticipant**用于表示一组标识相关联的对�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 666de597d40570a567ea88a375ab15d1e5f09038
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573597"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641916"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "29573597"
 
 | 属性                           | 类型                          | 说明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | operationStatus               | 可取值为：`default`、`voicemail`。 |
+| endpointType                       | String                        | 可取值为：`default`、`voicemail`。 |
 | identity                           | [identitySet](identityset.md) | 与此邀请关联[identitySet](identityset.md) 。                   |
 | languageId                         | String                        | 语言区域性字符串。                                                                                     |
 | 区域                             | String                        | 参与者的区域。                                                           |
@@ -40,7 +40,7 @@ ms.locfileid: "29573597"
 }-->
 ```json
 {
-  "endpointType": "operationStatus",
+  "endpointType": "default | voicemail",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
   "languageId": "String",
   "region": "String",

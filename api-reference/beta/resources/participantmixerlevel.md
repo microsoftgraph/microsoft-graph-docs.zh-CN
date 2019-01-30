@@ -4,12 +4,12 @@ description: 级别，以便进行音频参与者给定的混音器配置
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bb5d28ac45d510a715dcc5001c8ee02b8352bb8c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 14804e02766e375568fac03cb97d2eaf76142353
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575417"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643830"
 ---
 # <a name="participantmixerlevel-resource-type"></a>participantMixerLevel 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "29575417"
 | 属性               | 类型                                                      | 说明                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
 | 放掉                | [audioDuckingConfiguration](audioduckingconfiguration.md) | 放掉的此 partipant 其他源的 （逐步中和输出） 自定义组合的配置。       |
-| exclusiveMode          | 布尔                                                   | 是否应从组合中删除源而无需显式源级别。                       |
+| exclusiveMode          | boolean                                                   | 是否应从组合中删除源而无需显式源级别。                       |
 | 参与者            | String                                                    | 正在为其配置混音器参与者。                                             |
 | sourceLevels           | [audioSourceLevel](audiosourcelevel.md)集合        | 对于其他源的级别配置。                                                              |
 
@@ -39,10 +39,10 @@ ms.locfileid: "29575417"
 }-->
 ```json
 {
-  "ducking": { "@odata.type": "microsoft.graph.audioDuckingConfiguration" },
+  "ducking": { "@odata.type": "#microsoft.graph.audioDuckingConfiguration" },
   "exclusiveMode": true,
   "participant": "String",
-  "sourceLevels": [ { "@odata.type": "microsoft.graph.audioSourceLevel" } ]
+  "sourceLevels": [ { "@odata.type": "#microsoft.graph.audioSourceLevel" } ]
 }
 ```
 

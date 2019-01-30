@@ -3,12 +3,12 @@ title: DriveItemVersion 资源类型
 description: '**DriveItemVersion**资源表示 DriveItem 的特定版本。'
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5b6e9ecd2c3c8ec14958cfa2645f8fb0dbfe30e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: fd6052464d40fcce86b83d93601282dda252c69b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949589"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643984"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "27949589"
 | [列出版本][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [获取版本][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [获取内容][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [还原版本][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
+| [还原版本][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md

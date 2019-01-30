@@ -4,12 +4,12 @@ description: 检索 worksheet 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3010e806f771e51b5f1cb22a68184a133848ef84
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e95cfffe60655ba129839438f58ce5b9efbf11f5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577212"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642672"
 ---
 # <a name="get-worksheet"></a>获取工作表
 
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookWorksheet"
+  "@odata.type": "microsoft.graph.worksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

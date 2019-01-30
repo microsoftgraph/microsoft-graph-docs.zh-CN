@@ -2,12 +2,12 @@
 title: 策略资源类型
 description: 表示 Azure AD 策略。 策略是可以在应用程序、 服务主体、 组或分配给他们的整个组织强制实施的自定义规则。 当前只有一种类型的策略有：
 localization_priority: Normal
-ms.openlocfilehash: bd946da13fc36925e284ad2af29585b37d0a9a3a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576197"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642126"
 ---
 # <a name="policy-resource-type"></a>策略资源类型
 
@@ -28,12 +28,12 @@ ms.locfileid: "29576197"
 |[删除策略](../api/policy-delete.md)|无|删除策略对象。|
 |[分配策略](../api/policy-assign.md)|无|将策略分配给应用程序，服务主体。|
 |[列表策略](../api/policy-list.md)|策略集合|获取组织中的所有策略对象。|
-|[列表分配策略](../api/policy-list-assigned.md)|策略集合|获取所有策略对象分配给应用程序或服务主体。|
+|[列出已分配策略](../api/policy-list-assigned.md)|策略集合|获取所有策略对象分配给应用程序或服务主体。|
 
 ### <a name="common-properties"></a>通用属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|definition|String 集合|字符串版本的特定的策略。 请参阅下文。 必需。|
+|definition|String|字符串版本的特定的策略。 请参阅下文。 必需。|
 |displayName|String|自定义策略名称。 必需。|
 |IsOrganizationDefault|布尔值|如果设置为 true 时，激活此策略。 可以有多个策略相同的策略类型，但只有一个可激活为默认组织。 可选，默认值为 false。|
 |type|String|指定策略的类型。 必须当前"TokenLifetimePolicy"。 必需。|
@@ -41,7 +41,7 @@ ms.locfileid: "29576197"
 #### <a name="common-relationships"></a>常见的关系
 |关系|类型|说明|
 |:-------------|:-----------|:-----------|
-|appliesTo|[directoryObject](../resources/directoryobject.md) 集合|应用程序、 服务主体、 组或组织的策略应用于。|
+|appliesTo|[directoryObject](../resources/directoryobject.md) collection|应用程序、 服务主体、 组或组织的策略应用于。|
 
 ## <a name="token-lifetime-policy"></a>令牌生存期策略
 指定针对不同目的颁发的令牌生存期。 这种策略可向应用程序和服务主体的[分配](../api/policy-assign.md)。 有四种类型的可配置其生命周期的令牌。 访问/刷新令牌对是通过客户端，身份验证过程中获得的而 ID/会话令牌对通过浏览器的身份验证过程中获得。
@@ -70,13 +70,6 @@ ms.locfileid: "29576197"
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.policy"
-}-->
 
 ```json
 {

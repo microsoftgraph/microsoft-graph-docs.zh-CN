@@ -4,12 +4,12 @@ description: 使用此 API 创建新用户。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 04ae713cca285bd9fc16c3957ea1ca71dfea01a6
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9d1e98ffa4be67141d1e5ae679f9f51a71ef92fd
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574087"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642525"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -44,11 +44,11 @@ POST /users
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|accountEnabled |布尔 |启用此帐户时为 true，否则为 false。|
+|accountEnabled |boolean |启用此帐户时为 true，否则为 false。|
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
-|passwordProfile|[passwordProfile](../resources/passwordprofile.md) |用户的密码配置文件。|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。|
 |userPrincipalName |string |用户主体名称 (someuser@contoso.com)。|
 
 由于**用户**资源支持[扩展](/graph/extensibility-overview)，您可以使用`POST`操作并创建它时将使用您自己的数据的自定义属性添加到用户实例。

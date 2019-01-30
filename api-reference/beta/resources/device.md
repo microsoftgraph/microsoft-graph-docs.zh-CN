@@ -4,12 +4,12 @@ description: 代表在目录中注册的设备。 可以在云中使用设备注
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 42b1f0625cfa14f7beff1d4206bd93abb9f9a9e9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1279a39f7aa8983697b980fd6cce44c203d1883e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574871"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641370"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "29574871"
 |[列出设备](../api/device-list.md) | [设备](device.md) 集合| 检索目录中的注册设备列表。 |
 |[更新设备](../api/device-update.md) | [设备](device.md)  |更新的设备对象的属性。 |
 |[删除设备](../api/device-delete.md) | 无 |删除设备对象。 |
-|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 列出设备位于直接成员的组。 |
+|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| 列出设备位于直接成员的组。 |
 |[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出的组的成员的设备。 此操作是传递的。 |
 |[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) 集合| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
@@ -41,9 +41,9 @@ ms.locfileid: "29574871"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |accountEnabled|布尔| 如果帐户已启用，则为 **true**；否则，为 **false**。 默认值为 true。|
-|alternativeSecurityIds| microsoft.graph.alternativeSecurityId 集合 | 仅供内部使用。 不可为 null。 |
+|alternativeSecurityIds|alternativeSecurityId 集合| 仅供内部使用。 不可为 null。 |
 |approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
-|deviceId|字符串 （标识符）| 由 Azure 设备注册服务在设备注册时设置的唯一标识符。 |
+|deviceId|Guid| 由 Azure 设备注册服务在设备注册时设置的唯一标识符。 |
 |deviceMetadata|String| 仅供内部使用。 设置为 null。 |
 |deviceVersion|Int32| 仅供内部使用。 |
 |displayName|String| 设备显示名称。必需。 |
@@ -54,7 +54,7 @@ ms.locfileid: "29574871"
 |onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 只读。|
 |operatingSystem|String| 设备上操作系统的类型。必需。 |
 |operatingSystemVersion|String| 设备的操作系统版本。 必需。 |
-|physicalIds|String 集合| 仅供内部使用。 不可为 null。 |
+|physicalIds|String collection| 仅供内部使用。 不可为 null。 |
 |trustType|String| 加入设备的信任类型。 只读。 可取值为： <br />**Workplace** - 表示*自带个人设备*<br />**AzureAd** - 仅云加入设备<br />**ServerAd** - 加入 Azure AD 的本地域加入设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
 |名称| String | 设备的友好名称。 仅返回如果用户将使用 Microsoft 帐户作为项目 Rome 的一部分。 |
 |状态 | String| 设备联机或脱机。 仅返回如果用户将使用 Microsoft 帐户作为项目 Rome 的一部分。 |
@@ -68,11 +68,11 @@ ms.locfileid: "29574871"
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
 |registeredOwners|[directoryObject](directoryobject.md) 集合| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 NULL。|
-|registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为 NULL。|
-|extensions|[扩展](extension.md)集合|打开扩展名设备定义的集合。 可为 NULL。|
+|registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为 Null。|
+|extensions|[扩展](extension.md)集合|打开扩展名设备定义的集合。 可为 Null。|
 |registeredOwners|[directoryObject](directoryobject.md) 集合|是设备注册所有者的用户。只读。可为 NULL。|
 |registeredUsers|[directoryObject](directoryobject.md) 集合|身份为设备注册用户的用户。只读。可为 Null。|
-|命令 | microsoft.graph.command 集合 | 组的发送到此设备的命令|
+|命令 | Collection(microsoft.graph.command) | 组的发送到此设备的命令|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -92,7 +92,6 @@ ms.locfileid: "29574871"
 ```json
 {
   "accountEnabled": true,
-  "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",

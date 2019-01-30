@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b2b09ddfd99da7094ae25addf95985fdf8c6cf99
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572065"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641377"
 ---
 # <a name="driveitem-resource-type"></a>driveItem 资源类型
 
@@ -38,22 +38,16 @@ ms.locfileid: "29572065"
 
 **driveItem** 资源由 [**baseItem**][baseItem] 派生并继承该资源的属性。
 
-<!-- { 
-       "blockType": "resource", 
-       "@odata.type": "microsoft.graph.driveItem", 
-       "@type.aka": "oneDrive.item",
+<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "keyProperty": "id", "openType": true 
-    } 
--->
+       "keyProperty": "id", "openType": true } -->
 
 ```json
 {
-  "@odata.type": "microsoft.graph.driveItem", 
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -106,7 +100,7 @@ ms.locfileid: "29572065"
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio](audio.md)  | 音频元数据（如果此项是一个音频文件）。只读。
+| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。只读。
 | createdBy            | [identitySet][]    | 识别创建项目的用户、设备和应用程序。只读。
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
 | cTag                 | String             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。
@@ -147,10 +141,10 @@ ms.locfileid: "29572065"
 | analytics          | [itemAnalytics][] 资源      | 有关此项发生查看活动的分析。
 | content            | 流                          | 内容流（如果此项表示一个文件）。
 | children           | driveItem 集合            | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
-| listItem           | [listItem][]                    | 在 SharePoint 中，关联的文档库列表项的驱动器。 只读。 可为 NULL。
+| listItem           | [listItem][]                    | 在 SharePoint 中，关联的文档库列表项的驱动器。 只读。 可为 Null。
 | permissions        | [permission][] 集合       | 项目的权限集。只读。可为 Null。
 | 缩略图         | [thumbnailSet][] 集合     | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
-| 版本           | [driveItemVersion][]集合 | 早期版本的项目列表。 有关详细信息，请参阅[获取早期版本][]。 只读。 可为 NULL。
+| 版本           | [driveItemVersion][]集合 | 早期版本的项目列表。 有关详细信息，请参阅[获取早期版本][]。 只读。 可为 Null。
 
 ## <a name="instance-attributes"></a>实例属性
 

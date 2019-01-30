@@ -2,12 +2,12 @@
 title: oAuth2PermissionGrant 资源类型
 description: 代表已被授予对 （由服务主体） 应用程序的 OAuth 2.0 范围 （委派权限） 为用户或管理员同意过程的一部分。
 localization_priority: Normal
-ms.openlocfilehash: 5d3d900395843f39645f61d1b984e3ed4f79d476
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ea6486aedca4c3fcf73e59a5652ccf517fb01ddc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576967"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640775"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>oAuth2PermissionGrant 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "29576967"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
+  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
 }-->
 
 ```json
@@ -61,7 +61,7 @@ ms.locfileid: "29576967"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |读取属性和 oAuth2PermissionGrant 对象的关系。|
-|[列表 oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md)集合 | 检索 oauth2PermissionGrant 对象的列表。 |
+|[列表 oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) 集合 | 检索 oauth2PermissionGrant 对象的列表。 |
 |[更新 oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |更新 oAuth2PermissionGrant 对象。 |
 |[删除 oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | 无 |删除 oAuth2PermissionGrant 对象。 |
 

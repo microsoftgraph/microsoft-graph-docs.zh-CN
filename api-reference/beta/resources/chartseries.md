@@ -4,12 +4,12 @@ description: 代表图表上的系列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: eccd0d970ffeff7b41ceb0f9af810bb7a420d663
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e5606516092633ff14d23947f73626adc6d83c2c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570657"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643113"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries 资源类型
 
@@ -22,12 +22,12 @@ ms.locfileid: "29570657"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 ChartSeries](../api/chartseries-get.md) | [workbookChartSeries](chartseries.md) |读取 chartSeries 对象的属性和关系。|
-|[创建 ChartPoints](../api/chartseries-post-points.md) |[chartPoints](chartpoint.md)| 通过发布到点集合创建新的 ChartPoints。|
-|[列出 points](../api/chartseries-list-points.md) |[chartPoints](chartpoint.md)集合| 获取 ChartPoints 对象集合。|
-|[Update](../api/chartseries-update.md) | [workbookChartSeries](chartseries.md) |更新 ChartSeries 对象。 |
-|[List](../api/chartseries-list.md) | [workbookChartSeries](chartseries.md)集合 |获取 chartSeries 对象集合。 |
-|[ItemAt](../api/chartseriescollection-itemat.md)|[workbookChartSeries](chartseries.md)|根据其在集合中的位置检索系列|
+|[获取 ChartSeries](../api/chartseries-get.md) | [ChartSeries](chartseries.md) |读取 chartSeries 对象的属性和关系。|
+|[创建 ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| 通过发布到点集合创建新的 ChartPoints。|
+|[列出 points](../api/chartseries-list-points.md) |[ChartPoints](chartpoint.md) 集合| 获取 ChartPoints 对象集合。|
+|[更新](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |更新 ChartSeries 对象。 |
+|[List](../api/chartseries-list.md) | [ChartSeries](chartseries.md) 集合 |获取 chartSeries 对象集合。 |
+|[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|根据其在集合中的位置检索系列|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -37,8 +37,8 @@ ms.locfileid: "29570657"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[workbookChartSeriesFormat](chartseriesformat.md)|表示图表系列的格式，包括填充和线条格式。只读。|
-|points|[workbookChartPoint](chartpoint.md)集合|表示系列中所有数据点的集合。只读。|
+|format|[ChartSeriesFormat](chartseriesformat.md)|表示图表系列的格式，包括填充和线条格式。只读。|
+|points|[ChartPoints](chartpoint.md) 集合|表示系列中所有数据点的集合。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -46,11 +46,10 @@ ms.locfileid: "29570657"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookChartSeries"
+  "@odata.type": "microsoft.graph.chartSeries"
 }-->
 
 ```json

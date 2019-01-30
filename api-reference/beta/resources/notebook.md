@@ -4,12 +4,12 @@ description: OneNote 笔记本。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 715ed59e6a6d109c31f788e92cca751232327136
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: df7793208aa3ba752f1da0bc84903733b79871c9
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573338"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641622"
 ---
 # <a name="notebook-resource-type"></a>notebook 资源类型
 
@@ -68,8 +68,8 @@ OneNote 笔记本。
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|sectionGroups|[sectionGroup](sectiongroup.md)集合|笔记本中的分区组。只读。可为 NULL。|
-|sections|[onenoteSection](section.md)集合|笔记本中的分区。只读。可为 Null。|
+|sectionGroups|[SectionGroup](sectiongroup.md) collection|笔记本中的分区组。只读。可为 NULL。|
+|节|[Section](section.md) collection|笔记本中的分区。只读。可为 Null。|
 
 ## <a name="methods"></a>方法
 

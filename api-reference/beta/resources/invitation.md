@@ -4,12 +4,12 @@ description: '使用邀请管理器来创建一个邀请，以将外部用户添
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 05330d0a8d62dc3afdff5c90301ed4d4a60b2be0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6f303e55735c24edc46cb7107d9541c4b20c479a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577443"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640551"
 ---
 # <a name="invitation-manager"></a>邀请管理器
 
@@ -30,15 +30,15 @@ ms.locfileid: "29577443"
 ## <a name="methods"></a>方法
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-| [创建邀请](../api/invitation-post.md) | 邀请 | 写入 invitation 对象的属性和关系。|
+|[创建邀请](../api/invitation-post.md) | 邀请 | 写入 invitation 对象的属性和关系。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|被邀请的用户的显示名称。|
 |invitedUserEmailAddress|String|被邀请的用户的电子邮件地址。必填。|
-|invitedUserMessageInfo| [invitedUserMessageInfo](../resources/invitedusermessageinfo.md)|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
-|sendInvitationMessage|布尔|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
+|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|要发送至邀请用户的邮件的其他配置，其中包括自定义邮件文本、语言和抄送收件人列表。|
+|sendInvitationMessage|Boolean|指示电子邮件是否应发送至邀请的用户。默认值为 false。|
 |inviteRedirectUrl|String|兑现邀请后，用户应被重定向至的 URL。必填。|
 |inviteRedeemUrl|String|用户可用于兑现邀请的 URL。只读|
 |invitedUserType|String|被邀请的用户的 userType。默认情况下，此值为“来宾”。如果你是公司管理员，则可以以“成员”身份进行邀请。 |
@@ -47,7 +47,7 @@ ms.locfileid: "29577443"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|invitedUser| [User](../resources/user.md) 集合|创建为邀请创建进程组成部分的用户。只读|
+|invitedUser|[用户](user.md)|创建为邀请创建进程组成部分的用户。只读|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -57,13 +57,13 @@ ms.locfileid: "29577443"
 {
   "invitedUserDisplayName": "string",
   "invitedUserEmailAddress": "string",
-  "invitedUserMessageInfo": {"@odata.type": "#microsoft.graph.invitedUserMessageInfo"},
+  "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
   "sendInvitationMessage": false,
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
 
-  "invitedUser": [{"@odata.type": "#microsoft.graph.user"}]
+  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
 }
 ```
 

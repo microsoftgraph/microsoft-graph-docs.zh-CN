@@ -4,12 +4,12 @@ description: 表示 Excel 表格。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a136d7bac22a127ada69c27c656cbded7f5302b5
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2e3e9c93f7459d666fbe7f28a67241c2831b7079
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572680"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642644"
 ---
 # <a name="table-resource-type"></a>表资源类型
 
@@ -56,10 +56,10 @@ ms.locfileid: "29572680"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|columns|[tableColumn](tablecolumn.md)集合|表示表中所有列的集合。只读。|
-|rows|[tableRow](tablerow.md)集合|表示表中所有行的集合。只读。|
-|sort|[tableSort](tablesort.md)|表示表的排序。只读。|
-|worksheet|[workbookWorksheet](worksheet.md)|包含当前表的工作表。只读。|
+|columns|[TableColumn](tablecolumn.md) 集合|表示表中所有列的集合。只读。|
+|rows|[TableRow](tablerow.md) 集合|表示表中所有行的集合。只读。|
+|sort|[TableSort](tablesort.md)|表示表的排序。只读。|
+|worksheet|[Worksheet](worksheet.md)|包含当前表的工作表。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -70,7 +70,7 @@ ms.locfileid: "29572680"
   "optionalProperties": [
      "legacyId"
   ],
-  "@odata.type": "microsoft.graph.workbookTable"
+  "@odata.type": "microsoft.graph.table"
 }-->
 
 ```json

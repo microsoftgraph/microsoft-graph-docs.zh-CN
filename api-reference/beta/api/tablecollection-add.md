@@ -4,12 +4,12 @@ description: 创建一个新表。区域源地址确定将在其下添加表的�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: d8b317bc3e7d91a17039b76199e0db830491e5ad
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a4d96ba219ffe10d0bb0a4e5d414fd474490e84a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571770"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641209"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 
@@ -49,11 +49,11 @@ POST /workbook/worksheets/{id|name}/tables/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|string|表示数据源的 range 对象的地址或名称。如果该地址不包含工作表名称，则使用当前活动的工作表。|
-|hasHeaders|布尔|指示导入的数据是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
+|hasHeaders|boolean|指示导入的数据是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[workbookTable](../resources/table.md)对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Table](../resources/table.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -79,7 +79,7 @@ Content-length: 54
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookTable"
+  "@odata.type": "microsoft.graph.table"
 } -->
 ```http
 HTTP/1.1 200 OK

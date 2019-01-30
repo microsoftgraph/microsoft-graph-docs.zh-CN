@@ -2,12 +2,12 @@
 title: 创建 governanceRoleAssignmentRequest
 description: 创建角色分配请求以表示该操作所需角色分配。 下表列出的操作。
 localization_priority: Normal
-ms.openlocfilehash: 0fc8d96585daf63f53bc6b33985a289e8f810d6b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c936a6cd0ba061fc1dd3758533781d7270673939
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572365"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641265"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>创建 governanceRoleAssignmentRequest
 
@@ -46,7 +46,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者 {code}|
+| Authorization  | Bearer {code}|
 | Content-type  | application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -60,7 +60,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 |assignmentState|字符串|是|工作分配状态。 值可以是``Eligible``和``Active``。|
 |type|字符串|是|请求类型。 值可以是`AdminAdd`， `UserAdd`， `AdminUpdate`， `AdminRemove`， `UserRemove`， `UserExtend`， `UserRenew`，`AdminRenew`和`AdminExtend`。|
 |原因|String| |原因需要提供角色分配请求的审核和查看用途。|
-|计划|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)| | 角色分配请求的时间表。 请求类型的`UserAdd`， `AdminAdd`， `AdminUpdate`，和`AdminExtend`，需要。|
+|计划|[governanceSchedule](../resources/governanceschedule.md)| | 角色分配请求的时间表。 请求类型的`UserAdd`， `AdminAdd`， `AdminUpdate`，和`AdminExtend`，需要。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回`201 Created`响应代码和响应正文中的[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象。
@@ -94,7 +94,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 |assignmentState|字符串|是| 合格 / 活动|
 |type|字符串|是| AdminAdd|
 |原因|String| 取决于角色设置||
-|计划|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|是|        |
+|计划|[governanceSchedule](../resources/governanceschedule.md)|是|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
@@ -177,7 +177,7 @@ Content-length: 226
 |assignmentState|字符串|是| 活动|
 |type|字符串|是| UserAdd|
 |原因|String| 取决于角色设置||
-|计划|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|是|        |
+|计划|[governanceSchedule](../resources/governanceschedule.md)|是|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
@@ -272,7 +272,7 @@ Content-type: application/json
 |assignmentState|字符串|是| 活动|
 |type|字符串|是| UserRemove|
 |原因|字符串| 否||
-|计划|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|否|        |
+|计划|[governanceSchedule](../resources/governanceschedule.md)|否|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
@@ -335,7 +335,7 @@ Content-length: 226
 |assignmentState|字符串|是| 合格 / 活动|
 |type|字符串|是| AdminRemove|
 |原因|字符串| 否||
-|计划|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|否|        |
+|计划|[governanceSchedule](../resources/governanceschedule.md)|否|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
@@ -397,7 +397,7 @@ Content-length: 226
 |assignmentState|字符串|是| 合格 / 活动|
 |type|字符串|是| AdminUpdate|
 |原因|String| 取决于 roleSettings||
-|计划|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|是|        |
+|计划|[governanceSchedule](../resources/governanceschedule.md)|是|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",
@@ -477,7 +477,7 @@ Content-length: 226
 |assignmentState|字符串|是| 合格 / 活动 |
 |type|字符串|是| AdminExtend|
 |原因|String| 取决于 roleSettings||
-|计划|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|是|        |
+|计划|[governanceSchedule](../resources/governanceschedule.md)|是|        |
 ##### <a name="request"></a>请求
 <!-- {
   "blockType": "request",

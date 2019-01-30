@@ -4,12 +4,12 @@ description: 更新 chartfont 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a8e7d2665ce93a62ea27c1a5459382ab07e1184d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4878e78690cc0b28f686d4f0c3c678325397cc07
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574969"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642301"
 ---
 # <a name="update-chartfont"></a>更新 chartfont
 
@@ -43,16 +43,16 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bold| 布尔 |表示字体的加粗状态。|
-|color| string |文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
-|italic| 布尔 |表示字体的斜体状态。|
-|name| string |字体名称（例如"Calibri"）|
-|大小| double |字体大小（例如 11）|
-|underline| 枚举字符串 |应用于字体的下划线类型。可能的值是：`None`、`Single`。|
+|bold|boolean|表示字体的加粗状态。|
+|color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
+|italic|boolean|表示字体的斜体状态。|
+|name|string|字体名称（例如"Calibri"）|
+|大小|double|字体大小（例如 11）|
+|underline|string|应用于字体的下划线类型。可能的值是：`None`、`Single`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[workbookChartFont](../resources/chartfont.md)对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartFont](../resources/chartfont.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -71,7 +71,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 ##### <a name="response"></a>响应
@@ -79,7 +79,7 @@ Content-length: 134
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartFont"
+  "@odata.type": "microsoft.graph.chartFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -92,7 +92,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 

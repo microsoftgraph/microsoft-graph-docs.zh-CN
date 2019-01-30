@@ -55,7 +55,7 @@ items:
       href: /graph/changelog?toc=./ref/toc.json
     - name: 错误
       href: /graph/errors?toc=./ref/toc.json
-- name: 参考
+- name: 引用
   href: overview.md
   items:
   - name: 用户
@@ -85,7 +85,7 @@ items:
         href: api/user-post-events.md
       - name: 列出日历
         href: api/user-list-calendars.md
-      - name: 创建日历
+      - name: Create calendar
         href: api/user-post-calendars.md
       - name: 列出日历组
         href: api/user-list-calendargroups.md
@@ -168,9 +168,9 @@ items:
         href: api/mailfolder-list-messagerules.md
       - name: 创建规则
         href: api/mailfolder-post-messagerules.md
-      - name: 获取邮件提示
+      - name: 获取邮件提醒
         href: api/user-getmailtips.md
-    - name: 笔记
+    - name: 注释
       href: resources/onenote.md
       items:
       - name: 列出笔记本
@@ -285,7 +285,7 @@ items:
           href: api/grouplifecyclepolicy-addgroup.md
         - name: 删除组
           href: api/grouplifecyclepolicy-removegroup.md
-    - name: 附件
+    - name: Attachment
       href: resources/attachment.md
       items:
       - name: 文件附件资源
@@ -385,7 +385,7 @@ items:
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: 获取多值属性
           href: api/multivaluelegacyextendedproperty-get.md
-    - name: 笔记
+    - name: 注释
       href: resources/onenote.md
       items:
       - name: 列出笔记本
@@ -496,7 +496,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: 获取开放扩展
         href: api/opentypeextension-get.md
-    - name: 附件
+    - name: Attachment
       href: resources/attachment.md
       items:
       - name: 文件附件资源
@@ -514,7 +514,7 @@ items:
       items:
       - name: 列出日历
         href: api/user-list-calendars.md
-      - name: 创建日历
+      - name: Create calendar
         href: api/user-post-calendars.md
       - name: Get calendar
         href: api/calendar-get.md
@@ -615,7 +615,7 @@ items:
   - name: 设备和应用
     href: resources/intune-graph-overview.md
     items:
-    - name: 应用程序管理
+    - name: 应用管理
       href: resources/intune-app-conceptual.md
       items:
       - name: Android LOB 应用
@@ -3060,7 +3060,7 @@ items:
         href: api/directory-deleteditems-restore.md
       - name: 由用户拥有的删除列表项
         href: api/directory-deleteditems-user-owned.md
-    - name: Device
+    - name: 设备
       href: resources/device.md
       items:
       - name: 列出设备
@@ -3138,13 +3138,13 @@ items:
     - name: 组设置
       href: resources/groupsetting.md
       items:
-      - name: 创建设置
+      - name: Create setting
         href: api/groupsetting-post-groupsettings.md
-      - name: 获取设置
+      - name: Get setting
         href: api/groupsetting-get.md
-      - name: 列出设置
+      - name: List settings
         href: api/groupsetting-list.md
-      - name: 更新设置
+      - name: Update setting
         href: api/groupsetting-update.md
       - name: 删除设置
         href: api/groupsetting-delete.md
@@ -3155,6 +3155,19 @@ items:
         href: api/groupsettingtemplate-list.md
       - name: 获取组设置模板
         href: api/groupsettingtemplate-get.md
+    - name: 身份提供程序
+      href: resources/identityprovider.md
+      items:
+      - name: 列表标识提供程序
+        href: api/identityprovider-list.md
+      - name: 创建标识提供程序
+        href: api/identityprovider-post-identityproviders.md
+      - name: 获取标识提供程序
+        href: api/identityprovider-get.md
+      - name: 更新标识提供程序
+        href: api/identityprovider-update.md
+      - name: 删除标识提供程序
+        href: api/identityprovider-delete.md
     - name: 邀请管理器
       href: resources/invitation.md
       items:
@@ -3220,7 +3233,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: 获取开放扩展
         href: api/opentypeextension-get.md
-    - name: 附件
+    - name: Attachment
       href: resources/attachment.md
       items:
       - name: 文件附件资源
@@ -3316,10 +3329,10 @@ items:
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: 获取多值属性
           href: api/multivaluelegacyextendedproperty-get.md
-  - name: 笔记
+  - name: 注释
     href: resources/onenote-api-overview.md
     items:
-    - name: 笔记
+    - name: 注释
       href: resources/onenote.md
       items:
       - name: 列出笔记本
@@ -3482,7 +3495,7 @@ items:
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: 获取多值属性
           href: api/multivaluelegacyextendedproperty-get.md
-  - name: 报告
+  - name: 报表
     href: resources/report.md
     items:
     - name: Microsoft 团队设备用法
@@ -3490,7 +3503,7 @@ items:
       items:
       - name: 获取用户详细信息
         href: api/reportroot-getteamsdeviceusageuserdetail.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getteamsdeviceusageusercounts.md
       - name: 获取分发用户计数
         href: api/reportroot-getteamsdeviceusagedistributionusercounts.md
@@ -3499,18 +3512,18 @@ items:
       items:
       - name: 获取用户详细信息
         href: api/reportroot-getteamsuseractivityuserdetail.md
-      - name: 获取活动计数
+      - name: 获取活动数
         href: api/reportroot-getteamsuseractivitycounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getteamsuseractivityusercounts.md
     - name: Outlook 活动
       href: resources/email-activity-reports.md
       items:
       - name: 获取用户详细信息
         href: api/reportroot-getemailactivityuserdetail.md
-      - name: 获取活动计数
+      - name: 获取活动数
         href: api/reportroot-getemailactivitycounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getemailactivityusercounts.md
     - name: Outlook 应用程序使用率
       href: resources/email-app-usage-reports.md
@@ -3519,7 +3532,7 @@ items:
         href: api/reportroot-getemailappusageuserdetail.md
       - name: 获取应用用户数
         href: api/reportroot-getemailappusageappsusercounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getemailappusageusercounts.md
       - name: 获取版本用户数
         href: api/reportroot-getemailappusageversionsusercounts.md
@@ -3541,14 +3554,14 @@ items:
         href: api/reportroot-getoffice365activationsuserdetail.md
       - name: 获取激活数
         href: api/reportroot-getoffice365activationcounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getoffice365activationsusercounts.md
     - name: Office 365 活动用户
       href: resources/office-365-active-users-reports.md
       items:
       - name: 获取用户详细信息
         href: api/reportroot-getoffice365activeuserdetail.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getoffice365activeusercounts.md
       - name: 获取服务用户数
         href: api/reportroot-getoffice365servicesusercounts.md
@@ -3557,7 +3570,7 @@ items:
       items:
       - name: 获取组详细信息
         href: api/reportroot-getoffice365groupsactivitydetail.md
-      - name: 获取活动计数
+      - name: 获取活动数
         href: api/reportroot-getoffice365groupsactivitycounts.md
       - name: 获取组数
         href: api/reportroot-getoffice365groupsactivitygroupcounts.md
@@ -3570,7 +3583,7 @@ items:
       items:
       - name: 获取用户详细信息
         href: api/reportroot-getonedriveactivityuserdetail.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getonedriveactivityusercounts.md
       - name: 获取文件数
         href: api/reportroot-getonedriveactivityfilecounts.md
@@ -3592,7 +3605,7 @@ items:
         href: api/reportroot-getsharepointactivityuserdetail.md
       - name: 获取文件数
         href: api/reportroot-getsharepointactivityfilecounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getsharepointactivityusercounts.md
       - name: 获取页面
         href: api/reportroot-getsharepointactivitypages.md
@@ -3614,9 +3627,9 @@ items:
       items:
       - name: 获取用户详细信息
         href: api/reportroot-getskypeforbusinessactivityuserdetail.md
-      - name: 获取活动计数
+      - name: 获取活动数
         href: api/reportroot-getskypeforbusinessactivitycounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getskypeforbusinessactivityusercounts.md
     - name: Skype 业务设备使用
       href: resources/skype-for-business-device-usage-reports.md
@@ -3625,32 +3638,32 @@ items:
         href: api/reportroot-getskypeforbusinessdeviceusageuserdetail.md
       - name: 获取分发用户计数
         href: api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getskypeforbusinessdeviceusageusercounts.md
     - name: Skype 业务组织者活动
       href: resources/skype-for-business-organizer-activity-reports.md
       items:
-      - name: 获取活动计数
+      - name: 获取活动数
         href: api/reportroot-getskypeforbusinessorganizeractivitycounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getskypeforbusinessorganizeractivityusercounts.md
       - name: 获取分钟数
         href: api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md
     - name: Skype 业务参与者活动
       href: resources/skype-for-business-participant-activity-reports.md
       items:
-      - name: 获取活动计数
+      - name: 获取活动数
         href: api/reportroot-getskypeforbusinessparticipantactivitycounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getskypeforbusinessparticipantactivityusercounts.md
       - name: 获取分钟数
         href: api/reportroot-getskypeforbusinessparticipantactivityminutecounts.md
     - name: Skype 业务对等活动
       href: resources/skype-for-business-peer-to-peer-activity.md
       items:
-      - name: 获取活动计数
+      - name: 获取活动数
         href: api/reportroot-getskypeforbusinesspeertopeeractivitycounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md
       - name: 获取分钟数
         href: api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md
@@ -3659,9 +3672,9 @@ items:
       items:
       - name: 获取用户详细信息
         href: api/reportroot-getyammeractivityuserdetail.md
-      - name: 获取活动计数
+      - name: 获取活动数
         href: api/reportroot-getyammeractivitycounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getyammeractivityusercounts.md
     - name: Yammer 设备用法
       href: resources/yammer-device-usage-reports.md
@@ -3670,7 +3683,7 @@ items:
         href: api/reportroot-getyammerdeviceusageuserdetail.md
       - name: 获取分发用户计数
         href: api/reportroot-getyammerdeviceusagedistributionusercounts.md
-      - name: 获取用户计数
+      - name: 获取用户数
         href: api/reportroot-getyammerdeviceusageusercounts.md
     - name: Yammer 组活动
       href: resources/yammer-groups-activity-reports.md
@@ -3679,7 +3692,7 @@ items:
         href: api/reportroot-getyammergroupsactivitydetail.md
       - name: 获取组数
         href: api/reportroot-getyammergroupsactivitygroupcounts.md
-      - name: 获取活动计数
+      - name: 获取活动数
         href: api/reportroot-getyammergroupsactivitycounts.md
   - name: 安全性
     href: resources/security-api-overview.md
@@ -3695,7 +3708,7 @@ items:
         href: api/alert-update.md
     - name: 错误
       href: resources/security-error-codes.md
-  - name: 站点和列表
+  - name: 网站和列表
     href: resources/sharepoint.md
     items:
     - name: 网站
@@ -3755,7 +3768,7 @@ items:
         href: api/plannerplan-list-buckets.md
       - name: 更新计划
         href: api/plannerplan-update.md
-    - name: Task
+    - name: 任务
       href: resources/plannertask.md
       items:
       - name: 创建任务
@@ -3822,19 +3835,19 @@ items:
     - name: 工作组
       href: resources/team.md
       items:
-      - name: 创建工作组
+      - name: 创建团队
         href: api/team-put-teams.md
-      - name: 获取工作组
+      - name: 获取团队
         href: api/team-get.md
       - name: 更新团队
         href: api/team-update.md
       - name: 存档团队
         href: api/team-archive.md
-      - name: Unarchive 团队
+      - name: 解档团队
         href: api/team-unarchive.md
       - name: 克隆团队
         href: api/team-clone.md
-      - name: 列出您的团队
+      - name: 列出你的团队
         href: api/user-list-joinedteams.md
       - name: 列出所有团队
         href: /graph/teams-list-all-teams?toc=./ref/toc.json
@@ -3884,18 +3897,18 @@ items:
     - name: 频道 (channel)
       href: resources/channel.md
       items:
-      - name: 列表通道
+      - name: 列出频道
         href: api/channel-list.md
-      - name: 创建通道
+      - name: 创建频道
         href: api/channel-post.md
-      - name: 获取通道
+      - name: 获取频道
         href: api/channel-get.md
     - name: Apps
       href: resources/teamsapp.md
       items:
       - name: 团队中的列表应用程序
         href: api/teamsappinstallation-list.md
-      - name: 将应用程序添加到团队
+      - name: 将应用添加到团队
         href: api/teamsappinstallation-add.md
       - name: 从工作组中删除应用程序
         href: api/teamsappinstallation-delete.md
@@ -3952,7 +3965,7 @@ items:
       items:
       - name: 列出计划
         href: api/plannergroup-list-plans.md
-    - name: 笔记
+    - name: 注释
       href: resources/onenote.md
       items:
       - name: 列出笔记本
@@ -4000,7 +4013,7 @@ items:
         href: api/worksheet-list-charts.md
       - name: 添加图表
         href: api/worksheet-post-charts.md
-    - name: Range
+    - name: 区域
       href: resources/range.md
       items:
       - name: 获取范围
@@ -4116,9 +4129,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 02939d2bfd7900587e85fa9cdb18f684749049ff
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+ms.openlocfilehash: 5bbc2f80dbae38658db7594d369e61c9172f9471
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748603"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641783"

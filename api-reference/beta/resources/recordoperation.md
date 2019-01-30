@@ -4,12 +4,12 @@ description: RecordOperation 类型
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 914b8d819fdbcc132d4e04cd12f5c0db9980f659
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6b9deb566e5b527a9f20db69441fa96908212a38
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577184"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641594"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 
@@ -29,6 +29,7 @@ RecordOperation 类型
 | recordResourceAccessToken      | String                      | 要检索录制，需要访问令牌。                                                                                              |
 | recordResourceLocation         | String                      | 录制所在位置。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。 由服务器生成。                                                                                             |
+| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 由服务器生成。                                                 |
 
 ## <a name="relationships"></a>关系
 无
@@ -47,13 +48,14 @@ RecordOperation 类型
 ```json
 {
   "clientContext": "String",
-  "completionReason": "recordCompletionReason",
+  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "recordResourceAccessToken": "String",
   "recordResourceLocation": "String",
-  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"}
+  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
+  "status": "notStarted | running | completed | failed"
 }
 ```
 

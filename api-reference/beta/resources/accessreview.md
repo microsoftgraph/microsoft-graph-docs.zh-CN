@@ -4,12 +4,12 @@ description: '在 Azure AD 中访问审阅功能，`accessReview`代表访问审
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a02cc7cfe74bf9f12c4e2a8568c764934cb0c842
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2cb5d32a8dcc6b12330aca6e831a8ab2083759df
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576344"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642490"
 ---
 # <a name="accessreview-resource-type"></a>accessReview 资源类型
 
@@ -49,15 +49,15 @@ ms.locfileid: "29576344"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | 功能分配的唯一标识符访问审阅。 |
-| `displayName`             |`String`                                                        | 访问审阅名称。 所需在创建。 |
-| `startDateTime`           |`DateTimeOffset`                                                | 审阅安排在启动时 DateTime。  这可能是在将来的日期。  所需在创建。 |
-| `endDateTime`             |`DateTimeOffset`                                                | 审阅安排结束时 DateTime。 这必须是至少一个日期晚于开始日期。  所需在创建。 |
+| `displayName`             |`String`                                                        | 访问审阅名称。 创建时为必需项。 |
+| `startDateTime`           |`DateTimeOffset`                                                | 审阅安排在启动时 DateTime。  这可能是在将来的日期。  创建时为必需项。 |
+| `endDateTime`             |`DateTimeOffset`                                                | 审阅安排结束时 DateTime。 这必须是至少一个日期晚于开始日期。  创建时为必需项。 |
 | `status`                  |`String`                                                        | 此只读字段指定 accessReview 的状态。 典型的状态包括`Initializing`， `NotStarted`， `Starting`，`InProgress`， `Completing`， `Completed`， `AutoReviewing`，和`AutoReviewed`。 |
 | `description`             |`String`                                                        | 访问审阅创建者提供，向审阅者显示说明。 |
-| `businessFlowTemplateId`  |`String`                                                        | 业务流程模板标识符。 所需在创建。 |
-| `reviewerType`            |`String`                                                        | 对目标对象，之一的审阅者的关系类型`self`，`delegated`或`entityOwners`。 所需在创建。 | 
+| `businessFlowTemplateId`  |`String`                                                        | 业务流程模板标识符。 创建时为必需项。 |
+| `reviewerType`            |`String`                                                        | 对目标对象，之一的审阅者的关系类型`self`，`delegated`或`entityOwners`。 创建时为必需项。 | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | 创建此审查的用户。 |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | 为其 access 会检查该对象查看的访问权限分配。 这可以在组中，用户组的成员身份的审阅或应用程序的用户迁移到应用程序的工作分配回顾。 所需在创建。 | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | 为其 access 会检查该对象查看的访问权限分配。 这可以在组中，用户组的成员身份的审阅或应用程序的用户迁移到应用程序的工作分配回顾。 创建时为必需项。 | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | AccessReview 的设置，，请参阅下面的类型定义。 |
 
 
@@ -104,10 +104,10 @@ ms.locfileid: "29576344"
  "description": "string",
  "businessFlowTemplateId": "string (identifier)",
  "reviewerType": "string",
- "createdBy": "microsoft.graph.useridentity",
- "reviewedEntity": "microsoft.graph.entity",
- "settings": "microsoft.graph.entity",
- "reviewers": [ { "@odata.type": "#microsoft.graph.useridentity" } ]
+ "createdBy": "microsoft.graph.userIdentity",
+ "reviewedEntity": "microsoft.graph.identity",
+ "settings": "microsoft.graph.accessReviewSettings",
+ "reviewers": "Collection(microsoft.graph.userIdentity)"
 }
 
 ```

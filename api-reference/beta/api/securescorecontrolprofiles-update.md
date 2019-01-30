@@ -2,12 +2,12 @@
 title: 更新 secureScoreControlProfiles
 description: 更新中更改各种属性，如 assignedTo 或 tenantNote 任何集成的解决方案的可编辑 secureScoreControlProfiles 属性。
 localization_priority: Normal
-ms.openlocfilehash: 2be11c6b369d9dc411afa5af2219c3bfa8605c8a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573359"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642028"
 ---
 # <a name="update-securescorecontrolprofiles"></a>更新 secureScoreControlProfiles
 
@@ -37,7 +37,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}。必需。|
+| 授权  | Bearer {code}。必需。|
 |Prefer | 返回 = 表示形式。 |
 
 ## <a name="request-body"></a>请求正文
@@ -84,16 +84,20 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfile"
+  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-<!-- {
+
+
+
+<!--
+{
   "type": "#page.annotation",
-  "description": "Update secureScoreControlProfile",
+  "description": "Update secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

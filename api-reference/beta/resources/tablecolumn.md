@@ -4,12 +4,12 @@ description: 代表表中的一列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 10c5dbffcb5460ea029368a4c9b6dcfb6c21f256
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9f70b5363ccc7552975db8f2396af705d8bf1557
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574661"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643099"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn 资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "29574661"
 |ID|int|返回标识表内的列的唯一键。只读。|
 |Index|int|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
 |name|string|返回表格列的名称。只读。|
-|values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
+|values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

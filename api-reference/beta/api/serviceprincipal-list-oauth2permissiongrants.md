@@ -2,12 +2,12 @@
 title: servicePrincipal： 列表 oAuth2Permissiongrants
 description: 检索 oAuth2Permissiongrant 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 2d7e27b61dc9c0cdeb4f2f188bb945a3b4544f16
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 34f769f5bd194458689914dd608583c69bbe2076
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572624"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642406"
 ---
 # <a name="serviceprincipal-list-oauth2permissiongrants"></a>servicePrincipal： 列表 oAuth2Permissiongrants
 
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oAuth2Permissiongran
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2PermissionGrant",
+  "@odata.type": "microsoft.graph.oAuth2Permissiongrant",
   "isCollection": true
 } -->
 ```http

@@ -4,12 +4,12 @@ ms.date: 09/10/2017
 title: Audio
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cd1f1af0e1ddcd1d56853c708da7ba03be740812
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573632"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642273"
 ---
 # <a name="audio-facet"></a>Audio Facet
 
@@ -50,11 +50,11 @@ ms.locfileid: "29573632"
 | **album**             | string  | 此音频文件的专辑标题。                          |
 | **albumArtist**       | string  | 此音频文件的专辑上的艺术家。                    |
 | **artist**            | string  | 此音频文件的表演艺术家。                            |
-| **bitrate**           | Int64   | 比特率（以 kbps 为单位）。                                           |
+| **bitrate**           | Int32   | 比特率（以 kbps 为单位）。                                           |
 | **composers**         | string  | 此音频文件的作曲者姓名。                          |
 | **copyright**         | string  | 此音频文件的版权信息。                            |
-| **disc**              | Int16   | 此音频文件源自的光盘编号。                    |
-| **discCount**         | Int16   | 此专辑中的光盘总数。                             |
+| **disc**              | Int32   | 此音频文件源自的光盘编号。                    |
+| **discCount**         | Int32   | 此专辑中的光盘总数。                             |
 | **duration**          | Int64   | 此音频文件的持续时间（以毫秒为单位）                |
 | **genre**             | string  | 此音频文件的流派。                                        |
 | **hasDrm**            | boolean | 指明此文件是否受数字版权管理的保护。   |

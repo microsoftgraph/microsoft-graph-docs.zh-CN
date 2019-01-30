@@ -2,15 +2,15 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
-title: driveItemVersion
+title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 25b480a22b93ce454927177d2d842390496f54de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 69c4ed030d090dce9d8bfd8e7ad7a410ad2d4b27
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528968"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642021"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "29528968"
 | [列出版本][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [获取版本][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [获取内容][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [还原版本][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
+| [还原版本][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md
@@ -58,7 +58,7 @@ ms.locfileid: "29528968"
 | **id**                   | string                                               | 版本 ID。 只读。                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | 上次修改版本的用户的标识。 只读。        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | 上次修改版本的日期和时间。 只读。                 |
-| publication          | [PublicationFacet](../resources/publicationfacet.md) | 指示此特定版本的发布状态。 只读。 |
+| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | 指示此特定版本的发布状态。 只读。 |
 | **size**                 | Int64                                                | 指示此版本项的内容流大小。  |
 
 ## <a name="relationships"></a>关系

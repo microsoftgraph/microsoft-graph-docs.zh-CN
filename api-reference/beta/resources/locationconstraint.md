@@ -2,12 +2,12 @@
 title: locationConstraint 资源类型
 description: 客户端声明的会议地点条件。
 localization_priority: Normal
-ms.openlocfilehash: e15acbac529179b0d79fd8b9b52f691fa9ef1322
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f311ceae1718333ba6ffca55f046317d6da53705
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573030"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642798"
 ---
 # <a name="locationconstraint-resource-type"></a>locationConstraint 资源类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "29573030"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.locationConstraint"
+  "@odata.type": "microsoft.graph.locationconstraint"
 }-->
 
 ```json
@@ -39,7 +39,7 @@ ms.locfileid: "29573030"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |isRequired|Boolean|客户端请求服务在响应中添加会议地点。若为 true，且所有资源处于忙碌状态，[findMeetingTimes](../api/user-findmeetingtimes.md) 将不会返回任何会议时间建议。若为 false，且所有资源处于忙碌状态，**findMeetingTimes** 仍会在没有会议地点的情况下查找会议时间。 |
-|locations|[locationConstraintItem](locationconstraintitem.md) 集合|客户端请求的一个或多个会议地点的约束信息。|
+|位置|[locationConstraintItem](locationconstraintitem.md) 集合|客户端请求的一个或多个会议地点的约束信息。|
 |suggestLocation|Boolean|客户端请求服务返回一个或多个会议地点建议。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

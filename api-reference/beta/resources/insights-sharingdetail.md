@@ -4,12 +4,12 @@ description: '包含共享项目的属性的复杂类型。 '
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 380db80f120b29a0d1dca1a4b052679e483bc6f7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3fff669b2b337e9566cd41a7cd5eb5ab73a84944
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571035"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643347"
 ---
 # <a name="sharingdetail-resource-type"></a>sharingDetail 资源类型
 
@@ -19,13 +19,7 @@ ms.locfileid: "29571035"
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.sharingDetail"
-}-->
 ```json
 {
   "sharedDateTime": "dateTimeOffset",

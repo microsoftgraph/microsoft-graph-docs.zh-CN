@@ -4,12 +4,12 @@ description: 通过缩放图表以适应指定的尺寸，将图表呈现为 bas
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3405ebd80193028ad2e2150c800082993828183d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5892864d8adb94c4c6193dc4776f8febd938ff36
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571777"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642840"
 ---
 # <a name="chart-image"></a>图表：图像
 
@@ -37,14 +37,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 | Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
-## <a name="path-parameters"></a>路径参数
+## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|height|Int32|所需结果图像的高度。 可选。|
-|width|Int32|所需结果图像的宽度。 可选。|
-|fittingMode|string|使用的方法来扩展到指定的尺寸图表 （如果设置高度和宽度）。"  可能的值为： `Fit`， `FitAndCenter`， `Fill`。|
+|height|number|可选。生成的图像的所需高度。|
+|width|number|可选。生成的图像的所需宽度。|
+|fittingMode|string|可选。该方法用于将图表缩放到指定的尺寸（如果设置了高度和宽度）。”可能的值是：`Fit`、`FitAndCenter`、`Fill`。|
 
 ## <a name="response"></a>响应
 
@@ -54,15 +54,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
-
-<!-- { "blockType": "request" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
-<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -73,7 +72,7 @@ Content-length: 3
 }
 ```
 
-## <a name="usage"></a>用法
+##### <a name="usage"></a>用法
 
 可以在 HTML 图像标记内显示 base-64 字符串：`<img src="data:image/png;base64,{base-64 chart image string}/>`。
 

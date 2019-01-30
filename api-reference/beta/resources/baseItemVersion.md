@@ -4,12 +4,12 @@ ms.author: rgregg
 ms.date: 09/17/2017
 title: BaseItemVersion
 localization_priority: Normal
-ms.openlocfilehash: 92784fd9836c0ffd8fe748c2daee0947edefbbdc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: fcf427300007277f7ea6382579ad3a0929ca97d1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571105"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643022"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion 资源类型
 
@@ -20,13 +20,7 @@ ms.locfileid: "29571105"
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-<!--{
-  "blockType": "resource",
-  "abstract": true,
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.baseItemVersion",
-  "@type.aka": "oneDrive.baseItemVersion"
-}-->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.baseItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
 
 ```json
 {

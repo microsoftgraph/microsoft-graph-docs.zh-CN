@@ -4,12 +4,12 @@ description: 检索 chartdatalabels 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e9e62cbed37e150737e2b26def90000309d4e346
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 245e64d5182b4807ffe435026aefe75cf9a672eb
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577303"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29639956"
 ---
 # <a name="get-chartdatalabels"></a>获取 ChartDataLabels
 
@@ -44,7 +44,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和[WorkbookChartDataLabels](../resources/chartdatalabels.md)响应正文中的对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [ChartDataLabels](../resources/chartdatalabels.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartDataLabels"
+  "@odata.type": "microsoft.graph.chartDataLabels"
 } -->
 ```http
 HTTP/1.1 200 OK

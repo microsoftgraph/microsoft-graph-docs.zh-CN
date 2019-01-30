@@ -2,12 +2,12 @@
 title: filterOperatorSchema 资源类型
 description: 介绍可用于筛选器运算符。
 localization_priority: Normal
-ms.openlocfilehash: 366e00b5d21efeaf67e3e799c5b1c2412a68e268
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 04bee90f81c0098832cd4b6355be266668d0f69b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573677"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641818"
 ---
 # <a name="filteroperatorschema-resource-type"></a>filterOperatorSchema 资源类型
 
@@ -19,9 +19,10 @@ ms.locfileid: "29573677"
 
 | 属性                   | 类型                      | 说明    |
 |:---------------------------|:--------------------------|:---------------|
-|实参数量                       | microsoft.graph.scopeOperatorType         |实参运算符的数量。 可取值为：`Binary`、`Unary`。 默认值是`Binary`。|
-|multivaluedComparisonType   | microsoft.graph.scopeOperatorMultiValuedComparisonType          |可取值为：`All`、`Any`。 仅适用于多值属性。 `All`所有的值必须满足条件的方法。 `Any`至少一个值必须满足条件的方法。 默认值是`All`。|
-|supportedAttributeTypes     | 特性类型集合         |属性类型支持的运算符。 可取值为：`Boolean`、`Binary`、`Reference`、`Integer`、`String`。|
+|实参数量                       |String          |实参运算符的数量。 可取值为：`Binary`、`Unary`。 默认值是`Binary`。|
+|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |可取值为：`All`、`Any`。 仅适用于多值属性。 `All`所有的值必须满足条件的方法。 `Any`至少一个值必须满足条件的方法。 默认值是`All`。|
+|name                        |String                     |运算符名称。 |
+|supportedAttributeTypes     |String collection         |属性类型支持的运算符。 可取值为：`Boolean`、`Binary`、`Reference`、`Integer`、`String`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -37,10 +38,12 @@ ms.locfileid: "29573677"
 
 ```json
 {
-  "arity": "microsoft.graph.scopeOperatorType",
-  "multivaluedComparisonType": "microsoft.graph.scopeOperatorMultiValuedComparisonType",  
-  "supportedAttributeTypes": ["attributeType"]
+  "arity": "String",
+  "multivaluedComparisonType": "String",
+  "name": "String",
+  "supportedAttributeTypes": ["String"]
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

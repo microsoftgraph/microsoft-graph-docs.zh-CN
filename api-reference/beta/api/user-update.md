@@ -4,12 +4,12 @@ description: 更新 user 对象的属性。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: beb8277e843b9514d9588ed915ad07040b73fb43
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f8be2b9fa3c135e710b8a0bcf819187e6cb57959
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577128"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643218"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -42,8 +42,8 @@ PATCH /users/{id | userPrincipalName}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
-|accountEnabled|布尔| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
-|assignedLicenses|[microsoft.graph.assignedLicense](../resources/assignedlicense.md)集合|分配给该用户的许可证。不可为 null。            |
+|accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
+|assignedLicenses|[assignedLicense](../resources/assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |city|String|用户所在的城市。支持 $filter。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。支持 $filter。|
@@ -60,7 +60,7 @@ PATCH /users/{id | userPrincipalName}
 |officeLocation|String|用户公司地点的办公室位置。|
 |onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，必须在创建新用户帐户时指定此属性。**重要说明：** 指定该属性时不能使用 **$** 和 **_** 字符。支持 $filter。                            |
 |passwordPolicies|String|指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
-|passwordProfile|[microsoft.graph.passwordProfile](../resources/passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
 |postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。|
 |preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。|

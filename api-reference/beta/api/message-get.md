@@ -4,12 +4,12 @@ description: 检索的属性和 message 对象的关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6699a11d11349b50c6ef53ffd17e3b490c4123e2
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e5f7b8c73ac9e121a1f0cbe1bf4200326d2d4e29
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572519"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643197"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -21,7 +21,7 @@ ms.locfileid: "29572519"
 
 有两种方案，其中应用程序可以在另一个用户的邮件文件夹中收到一条消息：
 
-* 如果应用程序具有应用程序权限，或，
+* 如果该应用程序具有应用程序权限，或者
 * 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享邮件文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 由于**邮件**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**邮件**实例中的自定义属性和扩展数据。
@@ -308,7 +308,7 @@ Content-type: application/json
     },
     {
       "name":"Content-Transfer-Encoding",
-      "value":"String"
+      "value":"binary"
     },
     {
       "name":"Subject",

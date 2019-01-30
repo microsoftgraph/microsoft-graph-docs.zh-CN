@@ -2,12 +2,12 @@
 title: implicitGrantSettings 资源类型
 description: 指定此 web 应用程序是否可以请求令牌使用 OAuth 2.0 隐式流。 单独属性均可用于请求 ID 和访问令牌的隐式流的一部分。 若要启用隐式流，至少一个以下属性必须设置为 true。
 localization_priority: Normal
-ms.openlocfilehash: 82051c3605d9815fef8a0852e0ffa9075f4a6d78
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6714b9448f2e49419e41fa62822498ceaa232170
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574514"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642763"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>implicitGrantSettings 资源类型
 
@@ -24,13 +24,7 @@ ms.locfileid: "29574514"
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.implicitGrantSettings"
-}-->
 ```json
 {
   "enableIdTokenIssuance": "Boolean",

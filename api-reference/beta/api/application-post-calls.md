@@ -1,17 +1,17 @@
 ---
-title: 创建呼叫
+title: 创建调用
 description: 创建新的呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 60bd69bbef636f9e46f8f50a124b9a5a246dbe63
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 52255948a1d375871722a9af1aed8336844ac1bc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573940"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643571"
 ---
-# <a name="create-call"></a>创建呼叫
+# <a name="create-call"></a>创建调用
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "29573940"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                                                                           |
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
-| Application                            | Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.Initiate.All Calls.InitiateGroupCalls.All |
+| 应用程序                            | Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.Initiate.All Calls.InitiateGroupCalls.All |
 
 > **注意：** 与承载的应用程序媒体呼叫，您需要使用上表中列出的权限之一 Calls.AccessMedia.All 权限。
 
@@ -117,6 +117,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 
 {
   "id": "57DAB8B1894C409AB240BD8BEAE78896",

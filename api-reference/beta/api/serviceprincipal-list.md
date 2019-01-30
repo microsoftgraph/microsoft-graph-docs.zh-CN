@@ -1,19 +1,19 @@
 ---
-title: 列表 servicePrincipals
-description: 检索 servicePrincipal 对象的列表。
+title: 列出 servicePrincipals
+description: 检索 servicePrincipal 对象列表。
 localization_priority: Normal
-ms.openlocfilehash: e8698e9715b4443d49224afcac8a5b363132db93
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cd61b69e330ac376d15bfaf99c1147b8f9402d7f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574255"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643627"
 ---
-# <a name="list-serviceprincipals"></a>列表 servicePrincipals
+# <a name="list-serviceprincipals"></a>列出 servicePrincipals
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 servicePrincipal 对象的列表。
+检索 servicePrincipal 对象列表。
 
 ## <a name="permissions"></a>权限
 
@@ -24,7 +24,7 @@ ms.locfileid: "29574255"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.ReadWrite.All Directory.Read.All |
+|应用程序 | Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal",
+  "@odata.type": "microsoft.graph.serviceprincipal",
   "isCollection": true
 } -->
 ```http

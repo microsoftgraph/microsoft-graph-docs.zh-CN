@@ -2,12 +2,12 @@
 title: governanceRoleAssignmentRequest 资源类型
 description: 表示在 Privilegd 标识管理角色分配操作的请求。
 localization_priority: Normal
-ms.openlocfilehash: 838d16455a2eaea2183d008800eaef72a0af2a15
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 242f1d311a2d304d0d8dab0a4e24f9294722ab6e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572099"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642063"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>governanceRoleAssignmentRequest 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "29572099"
 |:------------|:--------|:--------|
 |[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|获取由 ID 指定的角色分配请求  
 |[List](../api/governanceroleassignmentrequest-list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)集合|获取角色分配请求的资源。|
-|[Create](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|创建管理现有或新角色分配的生命周期的请求。|
+|[创建](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|创建管理现有或新角色分配的生命周期的请求。|
 |[Cancel](../api/governanceroleassignmentrequest-cancel.md)|  |取消挂起的角色分配请求。|
-|[Update](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|如果请求中的状态，管理员更新对请求的决策`PendingAdminDecision`。|
+|[更新](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|如果请求中的状态，管理员更新对请求的决策`PendingAdminDecision`。|
 
 ## <a name="properties"></a>属性
 | 属性                  | 类型          |说明|
@@ -37,9 +37,9 @@ ms.locfileid: "29572099"
 |type                       |String         |必需。 表示的角色分配操作的类型。 值可以是 <ul><li>`AdminAdd`： 管理员分配给角色; 用户/组</li><li>`UserAdd`： 用户激活合格分配;</li><li> `AdminUpdate`： 管理员更改现有角色分配</li><li>`AdminRemove`： 管理员角色中移除用户/组<li>`UserRemove`： 用户停用活动的工作分配;<li>`UserExtend`： 用户请求扩展其即将过期的分配;</li><li>`AdminExtend`： 管理员扩展即将过期的工作分配。</li><li>`UserRenew`: 续订其过期的分配; 用户申请</li><li>`AdminRenew`： 管理员扩展即将过期的工作分配。</li></ul>|
 |assignmentState|String  |必需。 工作分配状态。 值可以是 <ul><li> `Eligible`合格的分配</li><li> `Active`-如果直接分配`Active`的管理员，或激活合格工作分配的用户。</li></ul>|
 |requestedDateTime          |DateTimeOffset |只读。 请求创建时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|计划                   |[microsoft.graph.governanceSchedule](governanceschedule.md)|角色分配请求的计划对象。|
+|计划                   |[governanceSchedule](governanceschedule.md)|角色分配请求的计划对象。|
 |原因                     |String         |用户和管理员提供的一条消息时创建有关为什么需要请求。|
-|status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |角色分配请求的状态。|
+|状态                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |角色分配请求的状态。|
 |linkedEligibleRoleAssignmentId|String        |如果这是角色激活请求，它所表示的 id`eligible assignment`所引用;否则，值为`null`。 |
 
 
@@ -49,7 +49,7 @@ ms.locfileid: "29572099"
 |:-------------|:----------------------------------|:----------|
 |资源      |[governanceResource](../resources/governanceresource.md)            |只读。 旨在请求的资源。 |
 |roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|只读。 请求旨在角色定义。 |
-|subject       |[governanceSubject](../resources/governancesubject.md)|只读。 用户/组主体。|
+|主题       |[governanceSubject](../resources/governancesubject.md)|只读。 用户/组主体。|
 
 ### <a name="json-representation"></a>JSON 表示形式
 

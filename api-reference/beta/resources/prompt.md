@@ -4,12 +4,12 @@ description: 提示操作基类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7261e25f1d0ccec85aad0cc19640e944177b5f0e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 0176b2d55a91ffca6071279bc77b532a621496f0
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573639"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642630"
 ---
 # <a name="prompt-resource-type"></a>提示资源类型
 
@@ -20,19 +20,6 @@ ms.locfileid: "29573639"
 ## <a name="properties"></a>属性
 
 无
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.prompt"
-}-->
-
-```json
-{
-}
-```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

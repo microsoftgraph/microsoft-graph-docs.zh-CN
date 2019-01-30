@@ -4,12 +4,12 @@ description: ServiceHostedMediaConfig 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 127450b569a37f00a76696a749c269f55c15b7aa
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2ab19f992dd7fac48844cd46a0600a0242517709
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572449"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642224"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>serviceHostedMediaConfig 资源类型
 
@@ -33,12 +33,11 @@ ServiceHostedMediaConfig 类型。
   "optionalProperties": [
     "preFetchMedia"
   ],
-   "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
 }-->
 ```json
 {
-  "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
+  "preFetchMedia": [ { "@odata.type": "#microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
 }
 ```

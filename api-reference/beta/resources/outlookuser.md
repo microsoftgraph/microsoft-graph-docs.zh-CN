@@ -4,12 +4,12 @@ description: 表示用户可用的 Outlook 服务。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f8265f9da285ce0f52e6201ffdb1298893b86753
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a649de502728bbc51ac53e072c08d95291d20853
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574094"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643543"
 ---
 # <a name="outlookuser-resource-type"></a>outlookUser 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "29574094"
 |[创建 outlookTaskGroup](../api/outlookuser-post-taskgroups.md) |[outlookTaskGroup](outlooktaskgroup.md)| 在用户邮箱中创建 Outlook 任务组。|
 |[列表 taskGroups](../api/outlookuser-list-taskgroups.md) |[outlookTaskGroup](outlooktaskgroup.md)集合| 获取用户的邮箱中的所有 Outlook 任务组。|
 |[创建 outlookTask](../api/outlookuser-post-tasks.md) |[outlookTask](outlooktask.md)| 创建 Outlook 任务中的默认任务组 (`My Tasks`) 和默认任务文件夹 (`Tasks`) 用户的邮箱中。|
-|[List tasks](../api/outlookuser-list-tasks.md) |[outlookTask](outlooktask.md)集合| 获取用户的邮箱中的所有 Outlook 任务。|
+|[List tasks](../api/outlookuser-list-tasks.md) |[outlookTask](outlooktask.md) 集合| 获取用户的邮箱中的所有 Outlook 任务。|
 |[supportedLanguages](../api/outlookuser-supportedlanguages.md) | [localeInfo](localeinfo.md) 集合 | 获取用户支持的区域设置和语言列表，就像在用户的邮箱服务器上配置的那样。 |
 |[supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md) 集合 | 获取用户支持的时区列表，就像在用户的邮箱服务器上配置的那样。 |
 
@@ -41,21 +41,10 @@ ms.locfileid: "29574094"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |masterCategories|[outlookCategory](../resources/outlookcategory.md) 集合| 为用户定义的类别列表。 | 
-|taskFolders|[outlookTaskFolder](outlooktaskfolder.md)集合| 用户的 Outlook 任务文件夹。 只读。 可为 NULL。|
-|taskGroups|[outlookTaskGroup](outlooktaskgroup.md)集合| 用户的 Outlook 任务组。 只读。 可为 NULL。|
-|tasks|[outlookTask](outlooktask.md)集合| 用户的 Outlook 任务。 只读。 可为 NULL。|
+|taskFolders|[outlookTaskFolder](outlooktaskfolder.md)集合| 用户的 Outlook 任务文件夹。 只读。 可为 Null。|
+|taskGroups|[outlookTaskGroup](outlooktaskgroup.md)集合| 用户的 Outlook 任务组。 只读。 可为 Null。|
+|tasks|[outlookTask](outlooktask.md) 集合| 用户的 Outlook 任务。 只读。 可为 Null。|
 
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@type": "microsoft.graph.outlookUser"
-}-->
-```json
-{
-}
-
-```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

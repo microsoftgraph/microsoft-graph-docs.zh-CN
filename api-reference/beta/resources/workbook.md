@@ -4,35 +4,16 @@ description: 工作簿是顶级对象，它包含相关 workbook 对象，例如
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 930a36f32b0768609050e200d705254cf600be4f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a63ee1d3ce2b7b43eea2993cb588b20897b31c32
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572057"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641349"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
 工作簿是顶级对象，它包含相关 workbook 对象，例如工作表、表、范围等。
-
-## <a name="json-representation"></a>JSON 表示形式
-
-下面是资源的 JSON 表示形式。
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbook"
-}-->
-
-```json
-{
-  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
-  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
-  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
-}
-```
 
 ## <a name="properties"></a>属性
 无
@@ -49,9 +30,9 @@ ms.locfileid: "29572057"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|names|[WorkbookNamedItem](workbooknameditem.md)集合|表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
-|表格|[WorkbookTable](table.md) 集合|表示与工作簿关联的表的集合。只读。|
-|Worksheets|[WorkbookWorksheet](worksheet.md)集合|表示与工作簿关联的工作表的集合。只读。|
+|names|[NamedItem](nameditem.md) 集合|表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
+|表格|[Table](table.md) 集合|表示与工作簿关联的表的集合。只读。|
+|Worksheets|[Worksheet](worksheet.md) 集合|表示与工作簿关联的工作表的集合。只读。|
 
 ## <a name="functions"></a>函数
 

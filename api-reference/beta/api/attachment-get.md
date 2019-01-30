@@ -2,12 +2,12 @@
 title: Get attachment
 description: 读取的属性和附件，附加到事件、 邮件、 Outlook 任务或公告的关系。
 localization_priority: Normal
-ms.openlocfilehash: 650892a13fd4977697fa17788c509542b4f1b415
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b346461dad8b0a15d12d0882e0fe8aa4cc2d4774
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574347"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641160"
 ---
 # <a name="get-attachment"></a>Get attachment
 
@@ -25,7 +25,7 @@ ms.locfileid: "29574347"
 
 ## <a name="permissions"></a>权限
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 * 如果访问邮件中的附件： Mail.Read
 * 如果访问事件中的附件： Calendars.Read
@@ -138,7 +138,7 @@ Content-type: application/json
 Content-length: 199
 
 {
-  "@odata.type": "microsoft.graph.fileAttachment",
+  "@odata.type": "#microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value",

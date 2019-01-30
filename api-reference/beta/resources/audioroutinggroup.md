@@ -4,12 +4,12 @@ description: 音频路由组存储在进行多方对话中的参与者之间的�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fb1303e2a6f9e269faf5767093d418cdd0980463
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573016"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643169"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "29573016"
 | 方法                                                  | 返回类型                               | 说明                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [获取 audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | 读取属性和 audioRoutingGroup 对象的关系。|
-| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 更新接收器列表。                       |
-| [Delete](../api/audioroutinggroup-delete.md)            | 无                                      | 音频路由组中删除。              |
+| [更新](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 更新接收器列表。                       |
+| [删除](../api/audioroutinggroup-delete.md)            | 无                                      | 音频路由组中删除。              |
 
 ## <a name="properties"></a>属性
 
@@ -59,9 +59,9 @@ ms.locfileid: "29573016"
 ```json
 {
   "id": "String (identifier)",
-  "receivers": [ "Guid" ],
+  "receivers": [ "String" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "Guid" ]
+  "sources": [ "String" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

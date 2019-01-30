@@ -2,12 +2,12 @@
 title: workingHours 资源类型
 description: 表示特定时区用户一周的工作天数和小时数。
 localization_priority: Normal
-ms.openlocfilehash: 8d0c0c96838af63cd0e1c665d23e54938b4ea34d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 40a74cd1446dc2553e30ebd0616b0b0e33192778
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573821"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642091"
 ---
 # <a name="workinghours-resource-type"></a>workingHours 资源类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "29573821"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| daysOfWeek | dayOfWeek 集合 | 用户一周工作的天数。 |
-| startTime | 字符串 (TimeOfDay) | 一天中用户开始工作的时间。 |
-| endTime | 字符串 (TimeOfDay) | 一天中用户停止工作的时间。 |
+| daysOfWeek | String 集合 | 用户一周工作的天数。 |
+| startTime | Edm.TimeOfDay | 一天中用户开始工作的时间。 |
+| endTime | Edm.TimeOfDay | 一天中用户停止工作的时间。 |
 | timeZone | [timeZoneBase](timezonebase.md) | 工作时间应用的时区。 |
 
 
@@ -45,9 +45,9 @@ ms.locfileid: "29573821"
 
 ```json
 {
-  "daysOfWeek": ["dayOfWeek"],
-  "startTime": "String (TimeOfDay)",
-  "endTime": "String (TimeOfDay)",
+  "daysOfWeek": ["string"],
+  "startTime": "TimeOfDay",
+  "endTime": "TimeOfDay",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 
