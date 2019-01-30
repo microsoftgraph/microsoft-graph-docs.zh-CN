@@ -2,27 +2,27 @@
 title: 收件人资源类型
 description: '表示事件、邮件或组帖子发送或接收端的用户的相关信息。 '
 localization_priority: Normal
-ms.openlocfilehash: 1ae49432e0ef6ab5881b41d9de5adebd306a4da8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9718d7e6ce09a42e742303aaed484fa6335f3cbc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574941"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642581"
 ---
-# <a name="recipient-resource-type"></a><span data-ttu-id="a1e43-103">收件人资源类型</span><span class="sxs-lookup"><span data-stu-id="a1e43-103">recipient resource type</span></span>
+# <a name="recipient-resource-type"></a><span data-ttu-id="20027-103">收件人资源类型</span><span class="sxs-lookup"><span data-stu-id="20027-103">recipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a1e43-104">表示事件、邮件或组帖子发送或接收端的用户的相关信息。</span><span class="sxs-lookup"><span data-stu-id="a1e43-104">Represents information about a user in the sending or receiving end of an event, message or group post.</span></span> 
+<span data-ttu-id="20027-104">表示事件、邮件或组帖子发送或接收端的用户的相关信息。</span><span class="sxs-lookup"><span data-stu-id="20027-104">Represents information about a user in the sending or receiving end of an event, message or group post.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="a1e43-105">属性</span><span class="sxs-lookup"><span data-stu-id="a1e43-105">Properties</span></span>
-| <span data-ttu-id="a1e43-106">属性</span><span class="sxs-lookup"><span data-stu-id="a1e43-106">Property</span></span>     | <span data-ttu-id="a1e43-107">类型</span><span class="sxs-lookup"><span data-stu-id="a1e43-107">Type</span></span>   |<span data-ttu-id="a1e43-108">说明</span><span class="sxs-lookup"><span data-stu-id="a1e43-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="20027-105">属性</span><span class="sxs-lookup"><span data-stu-id="20027-105">Properties</span></span>
+| <span data-ttu-id="20027-106">属性</span><span class="sxs-lookup"><span data-stu-id="20027-106">Property</span></span>     | <span data-ttu-id="20027-107">类型</span><span class="sxs-lookup"><span data-stu-id="20027-107">Type</span></span>   |<span data-ttu-id="20027-108">说明</span><span class="sxs-lookup"><span data-stu-id="20027-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a1e43-109">emailAddress</span><span class="sxs-lookup"><span data-stu-id="a1e43-109">emailAddress</span></span>|[<span data-ttu-id="a1e43-110">EmailAddress</span><span class="sxs-lookup"><span data-stu-id="a1e43-110">EmailAddress</span></span>](emailaddress.md)|<span data-ttu-id="a1e43-111">收件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="a1e43-111">The recipient's email address.</span></span>|
+|<span data-ttu-id="20027-109">emailAddress</span><span class="sxs-lookup"><span data-stu-id="20027-109">emailAddress</span></span>|[<span data-ttu-id="20027-110">EmailAddress</span><span class="sxs-lookup"><span data-stu-id="20027-110">EmailAddress</span></span>](emailaddress.md)|<span data-ttu-id="20027-111">收件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="20027-111">The recipient's email address.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a1e43-112">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a1e43-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="20027-112">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="20027-112">JSON representation</span></span>
 
-<span data-ttu-id="a1e43-113">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a1e43-113">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="20027-113">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="20027-113">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,7 +34,7 @@ ms.locfileid: "29574941"
 
 ```json
 {
-  "emailAddress": {"@odata.type": "#microsoft.graph.emailAddress"}
+  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
 }
 
 ```

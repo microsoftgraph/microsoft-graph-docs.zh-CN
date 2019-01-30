@@ -2,28 +2,28 @@
 title: itemBody 资源类型
 description: 表示项目正文的属性，例如邮件、事件或组帖子。
 localization_priority: Normal
-ms.openlocfilehash: f316beda82f292e62d5063f45363e08eeeff7111
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1cf79f78caa7b2772bc44b99c6b9bdc526340a87
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526142"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643190"
 ---
-# <a name="itembody-resource-type"></a><span data-ttu-id="d7eab-103">itemBody 资源类型</span><span class="sxs-lookup"><span data-stu-id="d7eab-103">itemBody resource type</span></span>
+# <a name="itembody-resource-type"></a><span data-ttu-id="b025e-103">itemBody 资源类型</span><span class="sxs-lookup"><span data-stu-id="b025e-103">itemBody resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d7eab-104">表示项目正文的属性，例如邮件、事件或组帖子。</span><span class="sxs-lookup"><span data-stu-id="d7eab-104">Represents properties of the body of an item, such as a message, event or group post.</span></span>
+<span data-ttu-id="b025e-104">表示项目正文的属性，例如邮件、事件或组帖子。</span><span class="sxs-lookup"><span data-stu-id="b025e-104">Represents properties of the body of an item, such as a message, event or group post.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d7eab-105">属性</span><span class="sxs-lookup"><span data-stu-id="d7eab-105">Properties</span></span>
-| <span data-ttu-id="d7eab-106">属性</span><span class="sxs-lookup"><span data-stu-id="d7eab-106">Property</span></span>     | <span data-ttu-id="d7eab-107">类型</span><span class="sxs-lookup"><span data-stu-id="d7eab-107">Type</span></span>   |<span data-ttu-id="d7eab-108">说明</span><span class="sxs-lookup"><span data-stu-id="d7eab-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b025e-105">属性</span><span class="sxs-lookup"><span data-stu-id="b025e-105">Properties</span></span>
+| <span data-ttu-id="b025e-106">属性</span><span class="sxs-lookup"><span data-stu-id="b025e-106">Property</span></span>     | <span data-ttu-id="b025e-107">类型</span><span class="sxs-lookup"><span data-stu-id="b025e-107">Type</span></span>   |<span data-ttu-id="b025e-108">说明</span><span class="sxs-lookup"><span data-stu-id="b025e-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d7eab-109">内容</span><span class="sxs-lookup"><span data-stu-id="d7eab-109">content</span></span>|<span data-ttu-id="d7eab-110">String</span><span class="sxs-lookup"><span data-stu-id="d7eab-110">String</span></span>|<span data-ttu-id="d7eab-111">项目的内容。</span><span class="sxs-lookup"><span data-stu-id="d7eab-111">The content of the item.</span></span>|
-|<span data-ttu-id="d7eab-112">contentType</span><span class="sxs-lookup"><span data-stu-id="d7eab-112">contentType</span></span>|<span data-ttu-id="d7eab-113">String</span><span class="sxs-lookup"><span data-stu-id="d7eab-113">String</span></span>|<span data-ttu-id="d7eab-p101">内容的类型。可能的值为 `Text` 和 `HTML`。</span><span class="sxs-lookup"><span data-stu-id="d7eab-p101">The type of the content. Possible values are `Text` and `HTML`.</span></span>|
+|<span data-ttu-id="b025e-109">内容</span><span class="sxs-lookup"><span data-stu-id="b025e-109">content</span></span>|<span data-ttu-id="b025e-110">String</span><span class="sxs-lookup"><span data-stu-id="b025e-110">String</span></span>|<span data-ttu-id="b025e-111">项目的内容。</span><span class="sxs-lookup"><span data-stu-id="b025e-111">The content of the item.</span></span>|
+|<span data-ttu-id="b025e-112">contentType</span><span class="sxs-lookup"><span data-stu-id="b025e-112">contentType</span></span>|<span data-ttu-id="b025e-113">String</span><span class="sxs-lookup"><span data-stu-id="b025e-113">String</span></span>|<span data-ttu-id="b025e-p101">内容的类型。可能的值为 `text` 和 `HTML`。</span><span class="sxs-lookup"><span data-stu-id="b025e-p101">The type of the content. Possible values are `text` and `HTML`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d7eab-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d7eab-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b025e-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b025e-116">JSON representation</span></span>
 
-<span data-ttu-id="d7eab-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d7eab-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="b025e-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b025e-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

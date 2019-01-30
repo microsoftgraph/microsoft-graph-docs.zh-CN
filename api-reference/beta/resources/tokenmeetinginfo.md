@@ -4,36 +4,35 @@ description: TokenMeetingInfo 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 717bfbd14c92ea44987cbdadc25eef06ed31a0cc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571070"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642588"
 ---
-# <a name="tokenmeetinginfo-resource-type"></a><span data-ttu-id="8379d-103">tokenMeetingInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="8379d-103">tokenMeetingInfo resource type</span></span>
+# <a name="tokenmeetinginfo-resource-type"></a><span data-ttu-id="6c228-103">tokenMeetingInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="6c228-103">tokenMeetingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8379d-104">TokenMeetingInfo 类型。</span><span class="sxs-lookup"><span data-stu-id="8379d-104">The tokenMeetingInfo type.</span></span>
+<span data-ttu-id="6c228-104">TokenMeetingInfo 类型。</span><span class="sxs-lookup"><span data-stu-id="6c228-104">The tokenMeetingInfo type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8379d-105">属性</span><span class="sxs-lookup"><span data-stu-id="8379d-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6c228-105">属性</span><span class="sxs-lookup"><span data-stu-id="6c228-105">Properties</span></span>
 
-| <span data-ttu-id="8379d-106">属性</span><span class="sxs-lookup"><span data-stu-id="8379d-106">Property</span></span>                     | <span data-ttu-id="8379d-107">类型</span><span class="sxs-lookup"><span data-stu-id="8379d-107">Type</span></span>    | <span data-ttu-id="8379d-108">说明</span><span class="sxs-lookup"><span data-stu-id="8379d-108">Description</span></span>                                                                    |
+| <span data-ttu-id="6c228-106">属性</span><span class="sxs-lookup"><span data-stu-id="6c228-106">Property</span></span>                     | <span data-ttu-id="6c228-107">类型</span><span class="sxs-lookup"><span data-stu-id="6c228-107">Type</span></span>    | <span data-ttu-id="6c228-108">说明</span><span class="sxs-lookup"><span data-stu-id="6c228-108">Description</span></span>                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| <span data-ttu-id="8379d-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="8379d-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="8379d-110">布尔值</span><span class="sxs-lookup"><span data-stu-id="8379d-110">Boolean</span></span> | <span data-ttu-id="8379d-111">指示是否一旦离开对话的主机，也可以继续对话。</span><span class="sxs-lookup"><span data-stu-id="8379d-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
-| <span data-ttu-id="8379d-112">token</span><span class="sxs-lookup"><span data-stu-id="8379d-112">token</span></span>                        | <span data-ttu-id="8379d-113">String</span><span class="sxs-lookup"><span data-stu-id="8379d-113">String</span></span>  | <span data-ttu-id="8379d-114">要加入/激活会议的标记。</span><span class="sxs-lookup"><span data-stu-id="8379d-114">The token to join/activate the meeting.</span></span>                                        |
+| <span data-ttu-id="6c228-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="6c228-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="6c228-110">布尔值</span><span class="sxs-lookup"><span data-stu-id="6c228-110">Boolean</span></span> | <span data-ttu-id="6c228-111">指示是否一旦离开对话的主机，也可以继续对话。</span><span class="sxs-lookup"><span data-stu-id="6c228-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
+| <span data-ttu-id="6c228-112">token</span><span class="sxs-lookup"><span data-stu-id="6c228-112">token</span></span>                        | <span data-ttu-id="6c228-113">String</span><span class="sxs-lookup"><span data-stu-id="6c228-113">String</span></span>  | <span data-ttu-id="6c228-114">要加入/激活会议的标记。</span><span class="sxs-lookup"><span data-stu-id="6c228-114">The token to join/activate the meeting.</span></span>                                        |
 
-## <a name="json-representation"></a><span data-ttu-id="8379d-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="8379d-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6c228-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6c228-115">JSON representation</span></span>
 
-<span data-ttu-id="8379d-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8379d-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6c228-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6c228-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json
@@ -43,7 +42,7 @@ ms.locfileid: "29571070"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="8379d-117">示例</span><span class="sxs-lookup"><span data-stu-id="8379d-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6c228-117">示例</span><span class="sxs-lookup"><span data-stu-id="6c228-117">Example</span></span>
 
 <!-- {
   "blockType": "example",

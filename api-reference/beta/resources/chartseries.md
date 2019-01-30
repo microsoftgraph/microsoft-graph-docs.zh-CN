@@ -4,53 +4,52 @@ description: 代表图表上的系列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: eccd0d970ffeff7b41ceb0f9af810bb7a420d663
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e5606516092633ff14d23947f73626adc6d83c2c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570657"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643113"
 ---
-# <a name="chartseries-resource-type"></a><span data-ttu-id="85659-103">ChartSeries 资源类型</span><span class="sxs-lookup"><span data-stu-id="85659-103">ChartSeries resource type</span></span>
+# <a name="chartseries-resource-type"></a><span data-ttu-id="77b11-103">ChartSeries 资源类型</span><span class="sxs-lookup"><span data-stu-id="77b11-103">ChartSeries resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="85659-104">代表图表上的系列。</span><span class="sxs-lookup"><span data-stu-id="85659-104">Represents a series in a chart.</span></span>
+<span data-ttu-id="77b11-104">代表图表上的系列。</span><span class="sxs-lookup"><span data-stu-id="77b11-104">Represents a series in a chart.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="85659-105">方法</span><span class="sxs-lookup"><span data-stu-id="85659-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="77b11-105">方法</span><span class="sxs-lookup"><span data-stu-id="77b11-105">Methods</span></span>
 
-| <span data-ttu-id="85659-106">方法</span><span class="sxs-lookup"><span data-stu-id="85659-106">Method</span></span>           | <span data-ttu-id="85659-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="85659-107">Return Type</span></span>    |<span data-ttu-id="85659-108">说明</span><span class="sxs-lookup"><span data-stu-id="85659-108">Description</span></span>|
+| <span data-ttu-id="77b11-106">方法</span><span class="sxs-lookup"><span data-stu-id="77b11-106">Method</span></span>           | <span data-ttu-id="77b11-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="77b11-107">Return Type</span></span>    |<span data-ttu-id="77b11-108">说明</span><span class="sxs-lookup"><span data-stu-id="77b11-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="85659-109">获取 ChartSeries</span><span class="sxs-lookup"><span data-stu-id="85659-109">Get ChartSeries</span></span>](../api/chartseries-get.md) | [<span data-ttu-id="85659-110">workbookChartSeries</span><span class="sxs-lookup"><span data-stu-id="85659-110">workbookChartSeries</span></span>](chartseries.md) |<span data-ttu-id="85659-111">读取 chartSeries 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="85659-111">Read properties and relationships of chartSeries object.</span></span>|
-|[<span data-ttu-id="85659-112">创建 ChartPoints</span><span class="sxs-lookup"><span data-stu-id="85659-112">Create ChartPoints</span></span>](../api/chartseries-post-points.md) |[<span data-ttu-id="85659-113">chartPoints</span><span class="sxs-lookup"><span data-stu-id="85659-113">chartPoints</span></span>](chartpoint.md)| <span data-ttu-id="85659-114">通过发布到点集合创建新的 ChartPoints。</span><span class="sxs-lookup"><span data-stu-id="85659-114">Create a new ChartPoints by posting to the points collection.</span></span>|
-|[<span data-ttu-id="85659-115">列出 points</span><span class="sxs-lookup"><span data-stu-id="85659-115">List points</span></span>](../api/chartseries-list-points.md) |<span data-ttu-id="85659-116">[chartPoints](chartpoint.md)集合</span><span class="sxs-lookup"><span data-stu-id="85659-116">[chartPoints](chartpoint.md) collection</span></span>| <span data-ttu-id="85659-117">获取 ChartPoints 对象集合。</span><span class="sxs-lookup"><span data-stu-id="85659-117">Get a ChartPoints object collection.</span></span>|
-|[<span data-ttu-id="85659-118">Update</span><span class="sxs-lookup"><span data-stu-id="85659-118">Update</span></span>](../api/chartseries-update.md) | [<span data-ttu-id="85659-119">workbookChartSeries</span><span class="sxs-lookup"><span data-stu-id="85659-119">workbookChartSeries</span></span>](chartseries.md) |<span data-ttu-id="85659-120">更新 ChartSeries 对象。</span><span class="sxs-lookup"><span data-stu-id="85659-120">Update ChartSeries object.</span></span> |
-|[<span data-ttu-id="85659-121">List</span><span class="sxs-lookup"><span data-stu-id="85659-121">List</span></span>](../api/chartseries-list.md) | <span data-ttu-id="85659-122">[workbookChartSeries](chartseries.md)集合</span><span class="sxs-lookup"><span data-stu-id="85659-122">[workbookChartSeries](chartseries.md) collection</span></span> |<span data-ttu-id="85659-123">获取 chartSeries 对象集合。</span><span class="sxs-lookup"><span data-stu-id="85659-123">Get chartSeries object collection.</span></span> |
-|[<span data-ttu-id="85659-124">ItemAt</span><span class="sxs-lookup"><span data-stu-id="85659-124">ItemAt</span></span>](../api/chartseriescollection-itemat.md)|[<span data-ttu-id="85659-125">workbookChartSeries</span><span class="sxs-lookup"><span data-stu-id="85659-125">workbookChartSeries</span></span>](chartseries.md)|<span data-ttu-id="85659-126">根据其在集合中的位置检索系列</span><span class="sxs-lookup"><span data-stu-id="85659-126">Retrieves a series based on its position in the collection</span></span>|
+|[<span data-ttu-id="77b11-109">获取 ChartSeries</span><span class="sxs-lookup"><span data-stu-id="77b11-109">Get ChartSeries</span></span>](../api/chartseries-get.md) | [<span data-ttu-id="77b11-110">ChartSeries</span><span class="sxs-lookup"><span data-stu-id="77b11-110">ChartSeries</span></span>](chartseries.md) |<span data-ttu-id="77b11-111">读取 chartSeries 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="77b11-111">Read properties and relationships of chartSeries object.</span></span>|
+|[<span data-ttu-id="77b11-112">创建 ChartPoints</span><span class="sxs-lookup"><span data-stu-id="77b11-112">Create ChartPoints</span></span>](../api/chartseries-post-points.md) |[<span data-ttu-id="77b11-113">ChartPoints</span><span class="sxs-lookup"><span data-stu-id="77b11-113">ChartPoints</span></span>](chartpoint.md)| <span data-ttu-id="77b11-114">通过发布到点集合创建新的 ChartPoints。</span><span class="sxs-lookup"><span data-stu-id="77b11-114">Create a new ChartPoints by posting to the points collection.</span></span>|
+|[<span data-ttu-id="77b11-115">列出 points</span><span class="sxs-lookup"><span data-stu-id="77b11-115">List points</span></span>](../api/chartseries-list-points.md) |<span data-ttu-id="77b11-116">[ChartPoints](chartpoint.md) 集合</span><span class="sxs-lookup"><span data-stu-id="77b11-116">[ChartPoints](chartpoint.md) collection</span></span>| <span data-ttu-id="77b11-117">获取 ChartPoints 对象集合。</span><span class="sxs-lookup"><span data-stu-id="77b11-117">Get a ChartPoints object collection.</span></span>|
+|[<span data-ttu-id="77b11-118">更新</span><span class="sxs-lookup"><span data-stu-id="77b11-118">Update</span></span>](../api/chartseries-update.md) | [<span data-ttu-id="77b11-119">ChartSeries</span><span class="sxs-lookup"><span data-stu-id="77b11-119">ChartSeries</span></span>](chartseries.md) |<span data-ttu-id="77b11-120">更新 ChartSeries 对象。</span><span class="sxs-lookup"><span data-stu-id="77b11-120">Update ChartSeries object.</span></span> |
+|[<span data-ttu-id="77b11-121">List</span><span class="sxs-lookup"><span data-stu-id="77b11-121">List</span></span>](../api/chartseries-list.md) | <span data-ttu-id="77b11-122">[ChartSeries](chartseries.md) 集合</span><span class="sxs-lookup"><span data-stu-id="77b11-122">[ChartSeries](chartseries.md) collection</span></span> |<span data-ttu-id="77b11-123">获取 chartSeries 对象集合。</span><span class="sxs-lookup"><span data-stu-id="77b11-123">Get chartSeries object collection.</span></span> |
+|[<span data-ttu-id="77b11-124">Itemat</span><span class="sxs-lookup"><span data-stu-id="77b11-124">Itemat</span></span>](../api/chartseriescollection-itemat.md)|[<span data-ttu-id="77b11-125">ChartSeries</span><span class="sxs-lookup"><span data-stu-id="77b11-125">ChartSeries</span></span>](chartseries.md)|<span data-ttu-id="77b11-126">根据其在集合中的位置检索系列</span><span class="sxs-lookup"><span data-stu-id="77b11-126">Retrieves a series based on its position in the collection</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="85659-127">属性</span><span class="sxs-lookup"><span data-stu-id="85659-127">Properties</span></span>
-| <span data-ttu-id="85659-128">属性</span><span class="sxs-lookup"><span data-stu-id="85659-128">Property</span></span>     | <span data-ttu-id="85659-129">类型</span><span class="sxs-lookup"><span data-stu-id="85659-129">Type</span></span>   |<span data-ttu-id="85659-130">说明</span><span class="sxs-lookup"><span data-stu-id="85659-130">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="77b11-127">属性</span><span class="sxs-lookup"><span data-stu-id="77b11-127">Properties</span></span>
+| <span data-ttu-id="77b11-128">属性</span><span class="sxs-lookup"><span data-stu-id="77b11-128">Property</span></span>     | <span data-ttu-id="77b11-129">类型</span><span class="sxs-lookup"><span data-stu-id="77b11-129">Type</span></span>   |<span data-ttu-id="77b11-130">说明</span><span class="sxs-lookup"><span data-stu-id="77b11-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="85659-131">name</span><span class="sxs-lookup"><span data-stu-id="85659-131">name</span></span>|<span data-ttu-id="85659-132">string</span><span class="sxs-lookup"><span data-stu-id="85659-132">string</span></span>|<span data-ttu-id="85659-133">表示图表中某个系列的名称。</span><span class="sxs-lookup"><span data-stu-id="85659-133">Represents the name of a series in a chart.</span></span>|
+|<span data-ttu-id="77b11-131">name</span><span class="sxs-lookup"><span data-stu-id="77b11-131">name</span></span>|<span data-ttu-id="77b11-132">string</span><span class="sxs-lookup"><span data-stu-id="77b11-132">string</span></span>|<span data-ttu-id="77b11-133">表示图表中某个系列的名称。</span><span class="sxs-lookup"><span data-stu-id="77b11-133">Represents the name of a series in a chart.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="85659-134">关系</span><span class="sxs-lookup"><span data-stu-id="85659-134">Relationships</span></span>
-| <span data-ttu-id="85659-135">关系</span><span class="sxs-lookup"><span data-stu-id="85659-135">Relationship</span></span> | <span data-ttu-id="85659-136">类型</span><span class="sxs-lookup"><span data-stu-id="85659-136">Type</span></span>   |<span data-ttu-id="85659-137">说明</span><span class="sxs-lookup"><span data-stu-id="85659-137">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="77b11-134">关系</span><span class="sxs-lookup"><span data-stu-id="77b11-134">Relationships</span></span>
+| <span data-ttu-id="77b11-135">关系</span><span class="sxs-lookup"><span data-stu-id="77b11-135">Relationship</span></span> | <span data-ttu-id="77b11-136">类型</span><span class="sxs-lookup"><span data-stu-id="77b11-136">Type</span></span>   |<span data-ttu-id="77b11-137">说明</span><span class="sxs-lookup"><span data-stu-id="77b11-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="85659-138">format</span><span class="sxs-lookup"><span data-stu-id="85659-138">format</span></span>|[<span data-ttu-id="85659-139">workbookChartSeriesFormat</span><span class="sxs-lookup"><span data-stu-id="85659-139">workbookChartSeriesFormat</span></span>](chartseriesformat.md)|<span data-ttu-id="85659-p101">表示图表系列的格式，包括填充和线条格式。只读。</span><span class="sxs-lookup"><span data-stu-id="85659-p101">Represents the formatting of a chart series, which includes fill and line formatting. Read-only.</span></span>|
-|<span data-ttu-id="85659-142">points</span><span class="sxs-lookup"><span data-stu-id="85659-142">points</span></span>|<span data-ttu-id="85659-143">[workbookChartPoint](chartpoint.md)集合</span><span class="sxs-lookup"><span data-stu-id="85659-143">[workbookChartPoint](chartpoint.md) collection</span></span>|<span data-ttu-id="85659-p102">表示系列中所有数据点的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="85659-p102">Represents a collection of all points in the series. Read-only.</span></span>|
+|<span data-ttu-id="77b11-138">format</span><span class="sxs-lookup"><span data-stu-id="77b11-138">format</span></span>|[<span data-ttu-id="77b11-139">ChartSeriesFormat</span><span class="sxs-lookup"><span data-stu-id="77b11-139">ChartSeriesFormat</span></span>](chartseriesformat.md)|<span data-ttu-id="77b11-p101">表示图表系列的格式，包括填充和线条格式。只读。</span><span class="sxs-lookup"><span data-stu-id="77b11-p101">Represents the formatting of a chart series, which includes fill and line formatting. Read-only.</span></span>|
+|<span data-ttu-id="77b11-142">points</span><span class="sxs-lookup"><span data-stu-id="77b11-142">points</span></span>|<span data-ttu-id="77b11-143">[ChartPoints](chartpoint.md) 集合</span><span class="sxs-lookup"><span data-stu-id="77b11-143">[ChartPoints](chartpoint.md) collection</span></span>|<span data-ttu-id="77b11-p102">表示系列中所有数据点的集合。只读。</span><span class="sxs-lookup"><span data-stu-id="77b11-p102">Represents a collection of all points in the series. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="85659-146">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="85659-146">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="77b11-146">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="77b11-146">JSON representation</span></span>
 
-<span data-ttu-id="85659-147">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="85659-147">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="77b11-147">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="77b11-147">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookChartSeries"
+  "@odata.type": "microsoft.graph.chartSeries"
 }-->
 
 ```json
