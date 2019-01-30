@@ -2,12 +2,12 @@
 title: programControl 资源类型
 description: 在 Azure AD 中访问审阅功能，程序 control 对象代表链接到程序访问审阅的一个控件。
 localization_priority: Normal
-ms.openlocfilehash: 82d9263a909fb11e688ffa6b27f0cf92601ae9e9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576554"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644005"
 ---
 # <a name="programcontrol-resource-type"></a>programControl 资源类型
 
@@ -36,14 +36,14 @@ ms.locfileid: "29576554"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | 功能指派的标识符的程序和控件之间的链接                                      |
-| `programId`              |`String`                | 程序 programId 此控件是组成部分。 所需在创建。                            |
-| `controlId`              |`String`                | 控件的 controlId，尤其要指出的访问的标识符查看。 所需在创建。                                                |
-| `controlTypeId`          |`String`                | ProgramControlType 标识的程序控件的类型-例如，将链接到来宾访问控制审阅。 所需在创建。 |
+| `programId`              |`String`                | 程序 programId 此控件是组成部分。 创建时为必需项。                            |
+| `controlId`              |`String`                | 控件的 controlId，尤其要指出的访问的标识符查看。 创建时为必需项。                                                |
+| `controlTypeId`          |`String`                | ProgramControlType 标识的程序控件的类型-例如，将链接到来宾访问控制审阅。 创建时为必需项。 |
 | `displayName`            |`String`                | 控件的名称。                                                             |
 | `status`                 |`String`                | 控件的生命周期状态。                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | 创建日期和时间的程序控制。                                        |
 | `owner`                  |[userIdentity](useridentity.md)   | 创建程序控制的用户。                                               |
-| `resource`               | [programResource](programresource.md)       | 资源、 组或应用程序，此程序控制访问审阅的目标。                   |
+| `resource`               |`programResource`       | 资源、 组或应用程序，此程序控制访问审阅的目标。                   |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

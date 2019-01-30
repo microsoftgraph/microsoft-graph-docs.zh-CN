@@ -4,12 +4,12 @@ description: '包含 Outlook 任务 （outlookTask 对象的集合） 的文件�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a117e14ea1cfe4b69cbbf69720a22a0094fb0b72
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: eb61936b9ede67d35127db07c92ba8b7517fe623
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575665"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643921"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "29575665"
 |:---------------|:--------|:----------|
 |[获取 outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |要获取的属性和指定 Outlook 任务文件夹的关系。|
 |[创建 outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| 在指定的任务文件夹中创建 Outlook 任务。|
-|[List tasks](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md)集合| 在指定文件夹中获取所有 Outlook 任务。|
-|[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |更新 Outlook 任务文件夹的可写属性。 |
-|[Delete](../api/outlooktaskfolder-delete.md) | 无 |删除指定的 Outlook 任务文件夹。|
+|[List tasks](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) 集合| 在指定文件夹中获取所有 Outlook 任务。|
+|[更新](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |更新 Outlook 任务文件夹的可写属性。 |
+|[删除](../api/outlooktaskfolder-delete.md) | 无 |删除指定的 Outlook 任务文件夹。|
 |**扩展属性**| | |
 |[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |在新的或现有的 Outlook 任务文件夹中创建一个或多个单值扩展的属性。   |
 |[使用单值扩展属性获取任务文件夹](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | 获取包含一个单值使用扩展属性的 Outlook 任务文件夹`$expand`或`$filter`。 |
@@ -47,9 +47,9 @@ ms.locfileid: "29575665"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|多值定义的任务文件夹的扩展属性的集合。 只读。 可为 NULL。|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection|定义的任务文件夹的单值扩展属性的集合。 只读。 可为 NULL。|
-|tasks|[outlookTask](outlooktask.md)集合|此任务文件夹中的任务。 只读。 可为 NULL。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合|多值定义的任务文件夹的扩展属性的集合。 只读。 可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合|定义的任务文件夹的单值扩展属性的集合。 只读。 可为 Null。|
+|tasks|[outlookTask](outlooktask.md) 集合|此任务文件夹中的任务。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -57,8 +57,8 @@ ms.locfileid: "29575665"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty",
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties",
     "tasks"
   ],
   "@odata.type": "microsoft.graph.outlookTaskFolder"

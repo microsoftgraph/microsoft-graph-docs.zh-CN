@@ -4,12 +4,12 @@ description: 使用此 API 创建新的表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 54e57abb2b283a4784f0bb1e01d175c477312189
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 649fb5848a7c30908a87d8ea643aefa19ca5623e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575375"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640194"
 ---
 # <a name="create-table"></a>创建表
 
@@ -43,11 +43,11 @@ POST /workbook/worksheets/{id|name}/tables/add
 | 参数       | 类型|说明|
 |:---------------|:----------|:----------|
 | Address  | string| 区域地址。如果正在从“worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`) 调用此 API|
-| hasHeaders  | 布尔|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
+| hasHeaders  | boolean|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应正文中的响应代码和[workbookTable](../resources/table.md)对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Table](../resources/table.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -71,7 +71,7 @@ Content-length: 109
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookTable"
+  "@odata.type": "microsoft.graph.table"
 } -->
 ```http
 HTTP/1.1 201 Created

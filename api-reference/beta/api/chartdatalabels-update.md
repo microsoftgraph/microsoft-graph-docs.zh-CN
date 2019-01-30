@@ -4,12 +4,12 @@ description: 更新 chartdatalabels 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 194d48075f143670488c6ae1ab0ff7a92934e4c4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b7eb067bed747ae2532939e61a9e0dec58ff4655
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573240"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640131"
 ---
 # <a name="update-chartdatalabels"></a>更新 chartdatalabels
 
@@ -41,18 +41,18 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|position|string|DataLabelPosition 值，它代表数据标签的位置。 可能的值为： `None`， `Center`， `InsideEnd`， `InsideBase`， `OutsideEnd`， `Left`， `Right`， `Top`， `Bottom`， `BestFit`， `Callout`。|
+|position|string|表示数据标签位置的 DataLabelPosition 值。可能的值是：`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout`。|
 |separator|string|表示用于图表中数据标签的分隔符的字符串。|
-|showBubbleSize|布尔|表示数据标签气泡大小是否可见的布尔值。|
-|showCategoryName|布尔|表示数据标签类别名称是否可见的布尔值。|
-|showLegendKey|布尔|表示数据标签图例标示是否可见的布尔值。|
-|showPercentage|布尔|表示数据标签百分比是否可见的布尔值。|
-|showSeriesName|布尔|表示数据标签系列名称是否可见的布尔值。|
-|showValue|布尔|表示数据标签值是否可见的布尔值。|
+|showBubbleSize|boolean|表示数据标签气泡大小是否可见的布尔值。|
+|showCategoryName|boolean|表示数据标签类别名称是否可见的布尔值。|
+|showLegendKey|boolean|表示数据标签图例标示是否可见的布尔值。|
+|showPercentage|boolean|表示数据标签百分比是否可见的布尔值。|
+|showSeriesName|boolean|表示数据标签系列名称是否可见的布尔值。|
+|showValue|boolean|表示数据标签值是否可见的布尔值。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChartDataLabels](../resources/chartdatalabels.md)对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartDataLabels](../resources/chartdatalabels.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -78,7 +78,7 @@ Content-length: 134
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartDataLabels"
+  "@odata.type": "microsoft.graph.chartDataLabels"
 } -->
 ```http
 HTTP/1.1 200 OK

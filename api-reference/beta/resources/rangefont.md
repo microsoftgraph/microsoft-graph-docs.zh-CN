@@ -4,12 +4,12 @@ description: 此对象表示对象的字体属性（字体名称、字体大小�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 5500ad7a2ea16336e9be617678c4c85562e04bb3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2dee07b7d2573081650bdd15799e4884c774e171
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571133"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640159"
 ---
 # <a name="rangefont-resource-type"></a>RangeFont 资源类型
 
@@ -23,17 +23,17 @@ ms.locfileid: "29571133"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 RangeFont](../api/rangefont-get.md) | [RangeFont](rangefont.md) |读取 rangeFont 对象的属性和关系。|
-|[Update](../api/rangefont-update.md) | [RangeFont](rangefont.md)   |更新 RangeFont 对象。 |
+|[更新](../api/rangefont-update.md) | [RangeFont](rangefont.md)   |更新 RangeFont 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bold|布尔|表示字体的加粗状态。|
+|bold|boolean|表示字体的加粗状态。|
 |color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
-|italic|布尔|表示字体的斜体状态。|
+|italic|boolean|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字号|
-|underline| 枚举字符串 |应用于字体的下划线类型。可能的值是：`None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。|
+|underline|string|应用于字体的下划线类型。可能的值是：`None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,7 +58,7 @@ ms.locfileid: "29571133"
   "italic": true,
   "name": "string",
   "size": 1024,
-  "underline": "None | Single | Double | SingleAccountant | DoubleAccountant"
+  "underline": "string"
 }
 
 ```

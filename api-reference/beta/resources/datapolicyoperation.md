@@ -4,12 +4,12 @@ description: 代表提交的数据策略操作。 它包含跟踪操作的状态
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4547221c8c1b859d4738a5468603ac6890246263
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 0d3ec392bb30614346d2726262851eebc29ee779
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570923"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643991"
 ---
 # <a name="datapolicyoperation-resource-type"></a>dataPolicyOperation 资源类型
 
@@ -29,10 +29,11 @@ ms.locfileid: "29570923"
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|表示此数据策略操作的请求完成时，在 UTC 时间中，使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 在操作完成前，则为 null。|
 |id|String| 此操作的唯一键。 |
-|status|string| 可取值为：`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue`。|
+|状态|string| 可取值为：`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue`。|
 |storageLocation|String|到要从中导出数据的导出请求的 URL 位置。|
 |userId|String|在其执行操作的用户 id。|
 |submittedDateTime|DateTimeOffset|表示此数据操作的请求已提交时，在 UTC 时间中，使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|进度|双精度|指定操作的进度。|
 
 ## <a name="relationships"></a>关系
 无
@@ -57,7 +58,8 @@ ms.locfileid: "29570923"
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)"
+  "submittedDateTime": "String (timestamp)",
+  "progress": "Double"
 }
 
 ```

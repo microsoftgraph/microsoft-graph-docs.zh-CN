@@ -4,12 +4,12 @@ description: 表示图表坐标轴的标题。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e0ad1385bb46dc4ff0e3f6bc9a3acfb861e7af88
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 25a5daf571f7533bd1682974adecad1cfd984894
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572708"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644082"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle 资源类型
 
@@ -22,36 +22,36 @@ ms.locfileid: "29572708"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 ChartAxisTitle](../api/chartaxistitle-get.md) | [WorkbookChartAxisTitle](chartaxistitle.md) |读取 chartAxisTitle 对象的属性和关系。|
-|[Update](../api/chartaxistitle-update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)    |更新 ChartAxisTitle 对象 |
+|[获取 ChartAxisTitle](../api/chartaxistitle-get.md) | [ChartAxisTitle](chartaxistitle.md) |读取 chartAxisTitle 对象的属性和关系。|
+|[更新](../api/chartaxistitle-update.md) | [ChartAxisTitle](chartaxistitle.md)    |更新 ChartAxisTitle 对象 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |text|string|表示坐标轴标题。|
-|visible|布尔|指定坐标轴标题可见性的布尔值。|
+|visible|boolean|指定坐标轴标题可见性的布尔值。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|表示图表坐标轴标题的格式。只读。|
+|format|[ChartAxisTitleFormat](chartaxistitleformat.md)|表示图表坐标轴标题的格式。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "optionalProperties": [],
-  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartAxisTitle"
 }-->
 
 ```json
 {
   "text": "string",
-  "visible": true,
-  "format": {"@odata.type":"microsoft.graph.workbookChartAxisTitleFormat"}
+  "visible": true
 }
 
 ```

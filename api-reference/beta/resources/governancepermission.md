@@ -2,12 +2,12 @@
 title: governancePermission 资源类型
 description: '表示对特定 governanceResource governanceSubject 具有访问权限。  '
 localization_priority: Normal
-ms.openlocfilehash: 9b6e920d92d7010fb325be05cf0b645f9b8d81cd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570720"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643781"
 ---
 # <a name="governancepermission-resource-type"></a>governancePermission 资源类型
 
@@ -27,13 +27,6 @@ ms.locfileid: "29570720"
 
 下面是资源的 JSON 表示形式。
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.governancePermission"
-}-->
 ```json
 {
   "accessLevel": "String",

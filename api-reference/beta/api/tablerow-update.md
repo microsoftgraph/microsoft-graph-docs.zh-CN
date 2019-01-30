@@ -4,12 +4,12 @@ description: 更新 tablerow 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fc3d8ff8b87465c1a68095a1a9973a239d359707
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a57508de840ea4f305a426e70511071c3f1d7d12
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572050"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640985"
 ---
 # <a name="update-tablerow"></a>更新 tablerow
 
@@ -42,7 +42,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|values|microsoft.graph.Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
+|values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="response"></a>响应
 

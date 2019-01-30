@@ -4,12 +4,12 @@ description: 封装线条元素的格式选项。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6bede2e3e8eeb44dbac67832621a2b1586c6b319
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b4409eb18dab41d43adc038b702a65fa8d63e4de
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577051"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640579"
 ---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "29577051"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |读取 chartLineFormat 对象的属性和关系。|
-|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md) |更新 ChartLineFormat 对象。 |
+|[获取 ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |读取 chartLineFormat 对象的属性和关系。|
+|[更新](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |更新 ChartLineFormat 对象。 |
 |[清除](../api/chartlineformat-clear.md)|无|清除图表元素的线条格式。|
 
 ## <a name="properties"></a>属性
@@ -39,11 +39,12 @@ ms.locfileid: "29577051"
 
 下面是资源的 JSON 表示形式。
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "optionalProperties": [],
-  "@odata.type": "microsoft.graph.workbookChartLineFormat"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartLineFormat"
 }-->
 
 ```json

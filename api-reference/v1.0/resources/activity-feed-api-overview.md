@@ -1,18 +1,18 @@
 ---
 title: 使用活动源 REST API
-description: '您可以使用的活动源 API 在 Microsoft Graph 中恢复用户的 actiity 设备和平台。 代表用户通过委派的权限和用户活动权限，可用于个人或工作和学校帐户执行活动订阅源的 API 请求。 '
+description: '您可以使用的活动源 API 在 Microsoft Graph 中恢复用户的活动设备和平台。 代表用户通过委派的权限和用户活动权限，可用于个人或工作和学校帐户执行活动订阅源的 API 请求。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: a229a5231894598fce0ff11f15926256987caa84
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 00b1ac90bd4a1a9fe7cef2a9ffaebcebc2d8d5f4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971842"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641069"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>使用活动源 REST API
 
-您可以使用的活动源 API 在 Microsoft Graph 中恢复用户的 actiity 设备和平台。 代表用户通过[委派权限](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions)和[用户活动权限](/graph/permissions-reference)，可用于与个人或工作和学校帐户执行活动订阅源的 API 请求。 
+您可以使用的活动源 API 在 Microsoft Graph 中恢复用户的活动设备和平台。 代表用户通过[委派权限](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions)和[用户活动权限](/graph/permissions-reference)，可用于与个人或工作和学校帐户执行活动订阅源的 API 请求。 
 
 用户活动由[活动](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity)资源和组织中的基于时间的源表示在集合中的我 / 活动。 
 <!-- Add missing content.

@@ -4,12 +4,12 @@ description: 获取组的成员的列表。 一组可将用户、 联系人、 �
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 6ed3d4e4a927181f6bf8ea2c90edf337b0f8f32d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e1dc5c2b89305373b22b6ef87cfaee25d6669750
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576295"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640740"
 ---
 # <a name="list-group-transitive-members"></a>可传递列表组的成员
 
@@ -85,9 +85,8 @@ Content-type: application/json
 
 {
   "value": [
-    {
     "@odata.type": "#microsoft.graph.user",
-    
+    {
       "businessPhones": [
         "businessPhones-value"
       ],

@@ -2,12 +2,12 @@
 title: synchronizationProgress 资源类型
 description: 代表完成 synchronizationJob 的进度。
 localization_priority: Normal
-ms.openlocfilehash: 39351f07720d44679675396f9e995f5e78e25fcc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572743"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640068"
 ---
 # <a name="synchronizationprogress-resource-type"></a>synchronizationProgress 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "29572743"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.synchronizationProgress"
+  "@odata.type": "microsoft.graph.synchronizationStatus"
 }-->
 
 ```json

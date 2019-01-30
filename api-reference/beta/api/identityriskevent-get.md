@@ -4,12 +4,12 @@ description: 检索的属性和 identityriskevent 对象的关系。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: e86ec77450a1b661311ba9e53b3b3591776323a4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 54bb5a43971fd4108178a7cace6821e4369ec6a6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575700"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640593"
 ---
 # <a name="get-identityriskevent"></a>获取 identityRiskEvent
 
@@ -50,7 +50,7 @@ GET /identityRiskEvents/{id}
   "name": "get_identityriskevent"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/identityRiskEvents/ec50e9fb-9da1-215b-e18c-b7e2a716b2a6
+GET https://graph.microsoft.com/beta/identityRiskEvents/ec50e9fb-9da1-215b-e18c-b7e2a716b2a6-c2b6c2b9-dddc-acd0-2b39-d519d803dbc3-db69711e-9324-ec99-f010-6e63fb972e98
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -68,7 +68,7 @@ Content-length: 251
   "@odata.type": "#microsoft.graph.unfamiliarLocationRiskEvent",
   "closedDateTime": "2016-01-29T20:03:57.7872426Z",
   "createdDateTime": "2016-01-29T00:01:49.126468Z",
-  "id": "ec50e9fb-9da1-215b-e18c-b7e2a716b2a6",
+  "id": "ec50e9fb-9da1-215b-e18c-b7e2a716b2a6-c2b6c2b9-dddc-acd0-2b39-d519d803dbc3-db69711e-9324-ec99-f010-6e63fb972e98",
   "ipAddress": "176.10.104.240",
   "location": "Bern, CH",
   "riskEventDateTime": "2016-01-29T00:00:56.2255665Z",

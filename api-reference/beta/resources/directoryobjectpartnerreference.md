@@ -4,27 +4,27 @@ description: 表示对合作伙伴租户中的目录对象的引用。 继承自
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ba72f70a29e778127454ec3bd4f259331d1fe4c5
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a031586d1f92bf2b8b331e9b71058211b4617382
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570742"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640306"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示对合作伙伴组织中的目录对象的引用。 继承自 [directoryObject](../resources/directoryobject.md)。
+表示对合作伙伴组织中的目录对象的引用。 继承自 [directoryObject](directoryobject.md?view=graph-rest-beta)。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|说明|String| 返回的对象的说明。 只读。 |
+|description|String| 返回的对象的说明。 只读。 |
 |displayName|String| 目录对象返回，如组或应用程序的名称。 只读。 |
 |externalPartnerTenantId|Guid| 合作伙伴租户的租户标识符。 只读。 |
-|id|String| 资源的唯一标识符。 继承自 [directoryObject](../resources/directoryobject.md)。 只读。 |
+|id|String| 资源的唯一标识符。 继承自 [directoryObject](directoryobject.md?view=graph-rest-beta)。 只读。 |
 |objectType|String| 合作伙伴租户中引用的对象的类型。 只读。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

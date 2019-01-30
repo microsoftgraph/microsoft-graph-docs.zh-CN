@@ -2,12 +2,12 @@
 title: 列出 secureScoreControlProfiles
 description: 检索的属性和 secureScoreControlProfiles 对象的关系。
 localization_priority: Normal
-ms.openlocfilehash: 6177af7da65d268af7c089aee3772109fb182959
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6627111633f54eb7bc2584af826b69fd5bd6cf49
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571091"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644026"
 ---
 # <a name="list-securescorecontrolprofiles"></a>列出 secureScoreControlProfiles
 
@@ -37,7 +37,7 @@ GET /security/secureScoreControlProfiles
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必需。|
+| 授权  | Bearer {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -73,6 +73,7 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 
 {
     "value": [

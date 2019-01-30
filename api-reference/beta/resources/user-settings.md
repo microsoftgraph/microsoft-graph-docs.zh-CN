@@ -4,12 +4,12 @@ description: '当前用户设置。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5812141d21a32b8ab1835a75c05cbd57ea25a3a4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 208d232af609f92d5924267ae26831b9929e357a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571812"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640509"
 ---
 # <a name="settings-resource-type"></a>设置资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "29571812"
 ## <a name="methods"></a>方法
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取用户设置](../api/user-get-settings.md) |[settings](../resources/user-settings.md)| 获取用户和组织设置。 |
-|[更新用户设置](../api/user-update-settings.md) |[settings](../resources/user-settings.md)| 更新用户的当前设置。 |
+|[获取用户设置](../api/user-get-settings.md) |[设置](../resources/user-settings.md)| 获取用户和组织设置。 |
+|[更新用户设置](../api/user-update-settings.md) |[设置](../resources/user-settings.md)| 更新用户的当前设置。 |
 
 ## <a name="properties"></a>属性
 
@@ -38,11 +38,7 @@ ms.locfileid: "29571812"
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@type": "microsoft.graph.userSettings"
-}-->
+
 ```json
 {
   "contributionToContentDiscoveryDisabled": false,

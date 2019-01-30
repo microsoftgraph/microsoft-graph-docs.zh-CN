@@ -5,12 +5,12 @@ ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9ecc23abbee165bce9fd4d9a2a5d8aac8aa02f41
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576239"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640656"
 ---
 # <a name="sitepage-resource"></a>sitePage 资源
 
@@ -28,15 +28,15 @@ ms.locfileid: "29576239"
 |:--------------------------------|:------------------------------
 | [列出页面][]                  | 获取 /pages
 | [Get page][]                    | 获取 /pages/ {页-id}
-| [Create][]                      | POST /pages
-| [Delete][]                      | 删除 /pages/ {页-id}
-| [Publish][]                     | 发布 /pages/ {页-id} / 发布
+| [创建][]                      | POST /pages
+| [删除][]                      | 删除 /pages/ {页-id}
+| [发布][]                     | 发布 /pages/ {页-id} / 发布
 
 [列出页面]: ../api/sitepage-list.md
 [Get page]: ../api/sitepage-get.md
-[Create]: ../api/sitepage-create.md
+[创建]: ../api/sitepage-create.md
 [删除]: ../api/sitepage-delete.md
-[Publish]: ../api/sitepage-publish.md
+[发布]: ../api/sitepage-publish.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,7 +56,7 @@ ms.locfileid: "29576239"
   /* page content */
   "title": "string",
   "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
+  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },

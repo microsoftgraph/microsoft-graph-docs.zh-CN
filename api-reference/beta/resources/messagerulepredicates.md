@@ -4,12 +4,12 @@ description: 表示适用于某个规则的一组条件和例外情况。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 324c46728b33e70bae66426c6fbfd46ba830246b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: fda6a160d30dc0d822f2e0aeb5642250d6b69658
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571833"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644033"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates 资源类型
 
@@ -20,12 +20,12 @@ ms.locfileid: "29571833"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| bodyContains |  String 集合 | 表示应该出现在传入邮件正文中的字符串，以便条件或例外情况适用。 |
-| bodyOrSubjectContains |  String 集合 | 表示应该出现在传入邮件正文或主题中的字符串，以便条件或例外情况适用。 |
-| categories | String collection | 表示传入邮件应标记的类别，以便条件或例外情况适用。 |
-| fromAddresses |  [recipient](recipient.md) collection | 表示传入邮件的特定发件人电子邮件地址，以便条件或例外情况适用。 |
+| bodyContains | Collection (String) | 表示应该出现在传入邮件正文中的字符串，以便条件或例外情况适用。 |
+| bodyOrSubjectContains | Collection (String) | 表示应该出现在传入邮件正文或主题中的字符串，以便条件或例外情况适用。 |
+| categories | Collection (String) | 表示传入邮件应标记的类别，以便条件或例外情况适用。 |
+| fromAddresses | Collection ([recipient](recipient.md)) | 表示传入邮件的特定发件人电子邮件地址，以便条件或例外情况适用。 |
 | hasAttachments | Boolean | 指示传入的邮件是否必须包含附件，以便条件或例外情况适用。 |
-| headerContains | String 集合  | 表示出现在传入邮件头中的字符串，以便条件或例外情况适用。 |
+| headerContains | Collection (String) | 表示出现在传入邮件头中的字符串，以便条件或例外情况适用。 |
 | importance | String | 传入邮件上标记的重要性，以便条件或例外情况适用：`low`、`normal`、`high`。 |
 | isApprovalRequest | Boolean | 指示传入的邮件是否必须为审批请求，以便条件或例外情况适用。 |
 | isAutomaticForward | Boolean | 指示传入的邮件是否必须自动转发，以便条件或例外情况适用。 |
@@ -40,15 +40,15 @@ ms.locfileid: "29571833"
 | isVoicemail | Boolean | 指示传入的邮件是否必须有语音邮件，以便条件或例外情况适用。 |
 | messageActionFlag | String  | 表示出现在传入邮件上的 flag-for-action 值，以便条件或例外情况适用。 可取值为：`any`、`call`、`doNotForward`、`followUp`、`fyi`、`forward`、`noResponseNecessary`、`read`、`reply`、`replyToAll`、`review`。 |
 | notSentToMe | Boolean | 指示邮箱所有者是否不能是传入邮件的收件人，以便条件或异常情况适用。 |
-| recipientContains | String 集合 | 表示出现在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中的字符串，以便条件或例外情况适用。 |
-| senderContains |  String 集合 | 表示出现在传入邮件的 **from** 属性中的字符串，以便条件或例外情况适用。 |
+| recipientContains | Collection (String) | 表示出现在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中的字符串，以便条件或例外情况适用。 |
+| senderContains | Collection (String) | 表示出现在传入邮件的 **from** 属性中的字符串，以便条件或例外情况适用。 |
 | sensitivity | String | 表示必须在传入邮件上标记的敏感度级别，以便条件或例外情况适用。 可取值为：`normal`、`personal`、`private`、`confidential`。 |
 | sentCcMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **ccRecipients** 属性中，以便条件或异常情况适用。 |
 | sentOnlyToMe | Boolean | 指示邮箱所有者是否必须是传入邮件的唯一收件人，以便条件或异常情况适用。 |
-| sentToAddresses |  [recipient](recipient.md) collection | 表示必须已向其发送传入邮件的电子邮件地址，以便条件或例外情况适用。 |
+| sentToAddresses | Collection ([recipient](recipient.md)) | 表示必须已向其发送传入邮件的电子邮件地址，以便条件或例外情况适用。 |
 | sentToMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 属性中，以便条件或异常情况适用。 |
 | sentToOrCcMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中，以便条件或异常情况适用。 |
-| subjectContains | String 集合 | 表示出现在传入邮件主题中的字符串，以便条件或例外情况适用。 |
+| subjectContains | Collection (String) | 表示出现在传入邮件主题中的字符串，以便条件或例外情况适用。 |
 | withinSizeRange | [sizeRange](sizerange.md) | 表示传入邮件必须介于其中的最小大小和最大大小（以千字节为单位），以便条件或例外情况适用。 |
 
 
@@ -68,7 +68,7 @@ ms.locfileid: "29571833"
   "bodyContains": ["String"],
   "bodyOrSubjectContains": ["String"],
   "categories": ["String"],
-  "fromAddresses": [{"@odata.type": "#microsoft.graph.recipient"}],
+  "fromAddresses": [{"@odata.type": "microsoft.graph.recipient"}],
   "hasAttachments": "Boolean",
   "headerContains": ["String"],
   "importance": "String",
@@ -90,11 +90,11 @@ ms.locfileid: "29571833"
   "sensitivity": "String",
   "sentCcMe": "Boolean",
   "sentOnlyToMe": "Boolean",
-  "sentToAddresses": [{"@odata.type": "#microsoft.graph.recipient"}],
+  "sentToAddresses": [{"@odata.type": "microsoft.graph.recipient"}],
   "sentToMe": "Boolean",
   "sentToOrCcMe": "Boolean",
   "subjectContains": ["String"],
-  "withinSizeRange": {"@odata.type": "#microsoft.graph.sizeRange"}
+  "withinSizeRange": {"@odata.type": "microsoft.graph.sizeRange"}
 }
 
 ```

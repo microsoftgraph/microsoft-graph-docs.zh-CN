@@ -4,12 +4,12 @@ description: 代表图表坐标轴的主要或次要网格线。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3c57c68e7d9dfcd26741d15e302dd5dddeaae378
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 852b52fd70e619b8720ef56fb0e857fb499f0abf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572533"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640208"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines 资源类型
 
@@ -22,18 +22,18 @@ ms.locfileid: "29572533"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 ChartGridlines](../api/chartgridlines-get.md) | [WorkbookChartGridlines](chartgridlines.md) |读取 chartGridlines 对象的属性和关系。|
-|[Update](../api/chartgridlines-update.md) | [WorkbookChartGridlines](chartgridlines.md)    |更新 ChartGridlines 对象。 |
+|[获取 ChartGridlines](../api/chartgridlines-get.md) | [ChartGridlines](chartgridlines.md) |读取 chartGridlines 对象的属性和关系。|
+|[更新](../api/chartgridlines-update.md) | [ChartGridlines](chartgridlines.md)    |更新 ChartGridlines 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|visible|布尔|表示坐标轴网格线是否可见的布尔值。|
+|visible|boolean|表示坐标轴网格线是否可见的布尔值。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|表示图表网格线的格式。只读。|
+|format|[ChartGridlinesFormat](chartgridlinesformat.md)|表示图表网格线的格式。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,11 +41,10 @@ ms.locfileid: "29572533"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookChartGridlines"
+  "@odata.type": "microsoft.graph.chartGridLines"
 }-->
 
 ```json

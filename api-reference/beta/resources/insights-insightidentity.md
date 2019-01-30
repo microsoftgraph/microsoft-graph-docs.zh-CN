@@ -4,12 +4,12 @@ description: 包含共享项目的属性的复杂类型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 47283a82260d4f03a271a16660d58aca60da94e1
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577224"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643886"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
@@ -19,15 +19,7 @@ ms.locfileid: "29577224"
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
-  ],
-  "@odata.type": "microsoft.graph.insightIdentity"
-}-->
+
 ```json
 {
   "displayName": "string",

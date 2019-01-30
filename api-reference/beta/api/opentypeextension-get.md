@@ -3,12 +3,12 @@ title: 获取开放扩展
 description: 获取用名称或完全限定的名称标识的开放扩展（openTypeExtension 对象）。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 0d815b6c59165081b54afb3295f76b524cfaadc1
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 367e3613e309e02a8ca5ec82c5216e4aeae20d25
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572351"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643900"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 
@@ -28,11 +28,11 @@ ms.locfileid: "29572351"
 
 具体取决于包含分机号和权限的资源类型 （委派或应用程序） 请求下, 表中所指定的权限是最小特权需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | Application |
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.Read.All | 不支持 | Device.ReadWrite.All |
 | [事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [group](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
+| [组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [组事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
@@ -158,7 +158,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.openTypeExtension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -166,7 +166,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "microsoft.graph.openTypeExtension",
+    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -199,7 +199,7 @@ GET https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.openTypeExtension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -207,7 +207,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "microsoft.graph.openTypeExtension",
+    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -301,7 +301,7 @@ Content-type: application/json
     "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
     "extensions": [ 
       { 
-        "@odata.type": "microsoft.graph.openTypeExtension",
+        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
         "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
         "extensionName": "Com.Contoso.Referral",
         "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -334,7 +334,7 @@ GET https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.openTypeExtension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -342,7 +342,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA%3D%3D')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA%3D')/extensions/$entity",
-    "@odata.type": "microsoft.graph.openTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate",
     "extensionName": "Com.Contoso.Estimate",
     "companyName": "Contoso",
@@ -445,7 +445,7 @@ HTTP/1.1 200 OK
     "extensions@odata.context": "https://graph.microsoft.com/beta/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
     "extensions": [ 
       { 
-        "@odata.type": "microsoft.graph.openTypeExtension",
+        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
         "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
         "extensionName": "Com.Contoso.Referral",
         "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",

@@ -2,12 +2,12 @@
 title: scopedRoleMembership 资源类型
 description: 作用域角色成员资格介绍目录角色，进一步范围限定到管理单元 (AU) 的用户的成员的身份。  这提供了一种机制，以允许租户范围公司 adminsistrator 以委派用户管理用户和组的子集组织 （由 AU 正在定义的子集） 的管理权限。
 localization_priority: Normal
-ms.openlocfilehash: c3af7a44221c4cf2822440a6025706c8bd4a93ac
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2d51ad696487e7daafb9b0f4fcef0934e4f6d6e2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575658"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640789"
 ---
 # <a name="scopedrolemembership-resource-type"></a>scopedRoleMembership 资源类型
 
@@ -15,7 +15,7 @@ ms.locfileid: "29575658"
 
 作用域角色成员资格介绍目录角色，进一步范围限定到管理单元 (AU) 的用户的成员的身份。  这提供了一种机制，以允许租户范围公司 adminsistrator 以委派用户管理用户和组的子集组织 （由 AU 正在定义的子集） 的管理权限。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 不支持直接查询到此资源。  请参阅[管理单元](administrativeunit.md)主题，若要查看有关如何查询范围角色成员身份，以及添加和移除范围角色成员身份信息。 
 
 ## <a name="properties"></a>属性
@@ -39,7 +39,7 @@ ms.locfileid: "29575658"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.scopedRoleMembership"
+  "@odata.type": "microsoft.graph.scopedrolemembership"
 }-->
 
 ```json

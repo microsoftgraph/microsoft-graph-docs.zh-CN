@@ -2,12 +2,12 @@
 title: 更新 privilegedRoleSettings
 description: 更新给定的角色设置的角色设置。 将返回一个 privilegedRoleSettings 对象。
 localization_priority: Normal
-ms.openlocfilehash: 7b49d228372e2fa122f9461706f782c60cfea379
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 09464c878c76ed557f30d0eac21e0572fae05062
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577268"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641118"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 
@@ -16,7 +16,7 @@ ms.locfileid: "29577268"
 更新给定的角色设置的角色设置。 将返回一个[privilegedRoleSettings](../resources/privilegedrolesettings.md)对象。
 ## <a name="permissions"></a>权限
 
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 >**注意：** 请求者必须具有以下角色之一： 具有权限的角色管理员、 全局管理员、 安全管理员或安全读取器。 
 
@@ -44,17 +44,17 @@ PUT /privilegedRoles/{id}/settings
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|elevationDuration |字符串 （时间戳） |当激活角色持续时间。 必需。|
-|id| 字符串 （标识符） |角色设置唯一标识符。 只读。 必需。|
-|isMfaOnElevationConfigurable|布尔|**true**如果 mfaOnElevation 可配置。 **false**如果 mfaOnElevation 不可配置。 必需。|
-|lastGlobalAdmin| 布尔值 |仅供内部使用。|
-|maxElavationDuration| 字符串 （时间戳）|激活角色的最长持续时间。 必需。|
-|mfaOnElevation| 布尔值 |如果为**true** MFA 需要激活角色。 **false**如果 MFA 不需要激活角色。 必需。|
-|minElevationDuration| 字符串 （时间戳） |激活角色的最低持续时间。 必需。|
+|elevationDuration|duration|当激活角色持续时间。 必需。|
+|id|string|角色设置唯一标识符。 只读。 必需。|
+|isMfaOnElevationConfigurable|boolean|**true**如果 mfaOnElevation 可配置。 **false**如果 mfaOnElevation 不可配置。 必需。|
+|lastGlobalAdmin|布尔值|仅供内部使用。|
+|maxElavationDuration|duration|激活角色的最长持续时间。 必需。|
+|mfaOnElevation|布尔值|如果为**true** MFA 需要激活角色。 **false**如果 MFA 不需要激活角色。 必需。|
+|minElevationDuration|duration|激活角色的最低持续时间。 必需。|
 |notificationToUserOnElevation|布尔值|**true**如果角色激活时向最终用户发送通知。 **false**如果角色被激活时不发送通知。 必需。|
 |ticketingInfoOnElevation|布尔值|如果为**true**时，票证信息是必需激活角色。 **false**如果票证信息不需要激活角色。 必需。|
 |approvalOnElevation|布尔值|**true**如果情况下审批，需要激活角色。 **false**如果审批不需要激活角色。 必需。|
-|approverIds| 字符串 （标识符） 集合|审批 Id，如果需要激活审核的列表。|
+|approverIds|array|审批 Id，如果需要激活审核的列表。|
 
 ## <a name="response"></a>响应
 

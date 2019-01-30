@@ -2,12 +2,12 @@
 title: networkLocationDetail 资源类型
 description: 指示与的网络位置关联的详细信息。 .
 localization_priority: Normal
-ms.openlocfilehash: 62bdb23c63beb89b85386e6bea67face097cf1ae
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: bfa84591f543253ed794016bbc2d25d325cd0bcc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570937"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643760"
 ---
 # <a name="networklocationdetail-resource-type"></a>networkLocationDetail 资源类型
 指示与的网络位置关联的详细信息。 .
@@ -17,7 +17,7 @@ ms.locfileid: "29570937"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|networkType| 枚举字符串 |提供了网络的类型。 可能的值为`intranet`， `extranet`， `namedNetwork`，和`trusted`。|
+|networkType|String|提供了网络的类型。 可能的值为`intranet`， `extranet`， `namedNetwork`，和`trusted`。|
 |networkName|String|网络的名称。|
 
 
@@ -35,7 +35,7 @@ ms.locfileid: "29570937"
 
 ```json
 {
-  "networkTypes": " intranet | extranet | namedNetwork | trusted ",
+  "networkTypes": "namedNetork",
   "networkName": "String"
 }
 

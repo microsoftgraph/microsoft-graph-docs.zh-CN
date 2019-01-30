@@ -4,12 +4,12 @@ description: 在指定的笔记本中新建分区组。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: daf45947e2f4da41b57b9590dd8831647a196022
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 998aa16ecf269c072a80bdc8b6e6d28ea9c572fa
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577478"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640691"
 ---
 # <a name="create-sectiongroup"></a>创建 sectionGroup
 
@@ -70,7 +70,7 @@ Content-length: 30
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 } -->
 ```http
 HTTP/1.1 200 OK

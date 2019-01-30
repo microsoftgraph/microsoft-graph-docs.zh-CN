@@ -4,12 +4,12 @@ description: 更新 charttitle 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 109c7565cc409064ee25f6a1ee285e6f73be1edf
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e67790672f2e31baaacd0eba500684f7b2275e97
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577317"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640376"
 ---
 # <a name="update-charttitle"></a>更新 charttitle
 
@@ -41,13 +41,13 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|overlay|布尔|表示图表标题是否将叠加在图表上的布尔值。|
+|overlay|boolean|表示图表标题是否将叠加在图表上的布尔值。|
 |text|string|表示图表的标题文本。|
-|visible|布尔|表示 chart title 对象的可见性的布尔值。|
+|visible|boolean|表示 chart title 对象的可见性的布尔值。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[workbookChartTitle](../resources/charttitle.md)对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartTitle](../resources/charttitle.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -71,7 +71,7 @@ Content-length: 64
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartTitle"
+  "@odata.type": "microsoft.graph.chartTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -5,12 +5,12 @@ ms.date: 03/15/2018
 title: 获取网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b6f7196040897d225ccb17d3d6bad6318c76590e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2232a72cc116965332e055178be87eb5eea0405d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575924"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640544"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>获取网站的网站页面列表中的页面
 
@@ -57,7 +57,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "2",
+    "id": 2,
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",

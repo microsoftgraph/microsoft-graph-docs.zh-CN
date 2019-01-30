@@ -4,12 +4,12 @@ description: 表示文件共享或特定用户洞察。 支持以下共享的文
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 49e18318c1e93d2393b957b404ff4617b334f237
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573177"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640124"
 ---
 # <a name="shared-resource-type"></a>共享的资源类型
 
@@ -41,17 +41,11 @@ ms.locfileid: "29573177"
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 资源      | 实体集合 | 用于导航到共享的项目。 文件附件的类型为*fileAttachment*。 对于链接附件，类型为*driveItem*。 |
+| 资源      | Entity        | 用于导航到共享的项目。 文件附件的类型为*fileAttachment*。 对于链接附件，类型为*driveItem*。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.shared"
-}-->
 ```json
 {
   "id": "string",

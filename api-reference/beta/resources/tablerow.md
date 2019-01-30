@@ -4,12 +4,12 @@ description: 表示表中的行。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ea675724af64517fe68d6d79638056a446e53b46
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e1c9dc0f9aad61d815098b76da8620d808c2538a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577220"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643746"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "29577220"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 TableRow](../api/tablerow-get.md) | [TableRow](tablerow.md) |读取 tableRow 对象的属性和关系。|
-|[Update](../api/tablerow-update.md) | [TableRow](tablerow.md)  |更新 TableRow 对象。 |
+|[更新](../api/tablerow-update.md) | [TableRow](tablerow.md)  |更新 TableRow 对象。 |
 |[区域](../api/tablerow-range.md)|[Range](range.md)|返回与整个行相关联的范围对象。|
-|[Delete](../api/tablerow-delete.md)|无|从表中删除行。|
+|[删除](../api/tablerow-delete.md)|无|从表中删除行。|
 |[List](../api/tablerow-list.md) | [TableRow](tablerow.md) 集合 |获取 tableRow 对象的集合。 |
 |[Itemat](../api/tablerowcollection-itemat.md)|[TableRow](tablerow.md)|按行在集合中的位置获取此对象。|
 |[Add](../api/tablerowcollection-add.md)|[TableRow](tablerow.md)|向表中添加新行。|
@@ -34,7 +34,7 @@ ms.locfileid: "29577220"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|int|返回表的行集合内行的索引编号。从零开始编制索引。只读。|
-|values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
+|values|json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="relationships"></a>关系
 无

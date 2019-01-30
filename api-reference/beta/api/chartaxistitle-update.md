@@ -4,12 +4,12 @@ description: 更新 chartaxistitle 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1c06cb996838adc82105a278d4f1182acccdc8a0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6f8e1ba265246678bb930c1135fbf465147c1c7b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574073"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640530"
 ---
 # <a name="update-chartaxistitle"></a>更新 chartaxistitle
 
@@ -44,11 +44,11 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |text|string|表示坐标轴标题。|
-|visible|布尔|指定坐标轴标题可见性的布尔值。|
+|visible|boolean|指定坐标轴标题可见性的布尔值。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChartAxisTitle](../resources/chartaxistitle.md)对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [ChartAxisTitle](../resources/chartaxistitle.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -71,7 +71,7 @@ Content-length: 45
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
+  "@odata.type": "microsoft.graph.chartAxisTitle"
 } -->
 ```http
 HTTP/1.1 200 OK
