@@ -4,17 +4,17 @@ description: 获取组对象的属性和关系。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 92b9c8de30f0070491d84acf9cfc56225c1a7981
-ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.openlocfilehash: 4954ee99b52d3d932421651d17e6b7a8b906f3bf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "29353088"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641335"
 ---
 # <a name="get-group"></a>获取组
 获取组对象的属性和关系。
 
-此操作在默认情况下仅返回所有可用属性的一部分，如[属性](../resources/group.md#properties)部分中所示。 若要获取_非_默认返回的属性，请在 `$select` OData 查询选项中指定这些属性。 请参阅[示例](#request-2)。
+此操作在默认情况下仅返回所有可用属性的一部分，如[属性](../resources/group.md#properties)部分中所示。 若要获取_非_默认返回的属性，请在 `$select` OData 查询选项中指定这些属性。 请参阅 `$select` 的[示例](#request-2)。 **hasMembersWithLicenseErrors** 属性是例外。 请参阅关于如何使用此属性的[示例](group-list.md#request-2)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 ```
 
 #### <a name="response-1"></a>响应 1
-下面是一个响应示例。 它仅包括默认属性。
+下面介绍响应示例。 它仅包括默认属性。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回所有默认属性。
 <!-- {

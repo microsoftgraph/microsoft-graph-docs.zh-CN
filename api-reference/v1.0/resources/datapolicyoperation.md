@@ -16,14 +16,14 @@
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|表示此数据策略操作的请求完成时，在 UTC 时间中，使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 在操作完成前，则为 null。|
-|id|字符串| 此操作的唯一键。 |
-|status|string| 可取值为：`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue`。|
-|storageLocation|字符串|到要从中导出数据的导出请求的 URL 位置。|
+|id|String| 此操作的唯一键。 |
+|状态|string| 可取值为：`notStarted`、`running`、`complete`、`failed`、`unknownFutureValue`。|
+|storageLocation|String|到要从中导出数据的导出请求的 URL 位置。|
 |userId|String|在其执行操作的用户 id。|
 |submittedDateTime|DateTimeOffset|表示此数据操作的请求已提交时，在 UTC 时间中，使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|进度|字符串|指定操作的进度。|
+|进度|String|指定操作的进度。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无。
 
 

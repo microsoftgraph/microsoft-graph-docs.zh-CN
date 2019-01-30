@@ -4,12 +4,12 @@ description: 列出 Azure Active Directory 生成的审核日志。 包括 Azure
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2f9330cd8ca1bd2b17755ffd1e09fee7743355b2
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: df6a737696c855cd60e396c6571169f8c46b3952
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576680"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642035"
 ---
 # <a name="list-directoryaudits"></a>列出 directoryAudits
 
@@ -107,7 +107,7 @@ Content-length: 271
             "app": null
         },
         "targetResources": [{
-            "@odata.type": "microsoft.graph.TargetResourceGroup",
+            "@odata.type": "#microsoft.graph.TargetResourceGroup",
             "id": "ef7x527d-6x92-42x4-8x6d-cfxfdfx57f95",
             "displayName": "Lynda.com",
             "modifiedProperties": [{
@@ -117,7 +117,7 @@ Content-length: 271
             }],
             "groupType": "unifiedGroups"
         }, {
-            "@odata.type": "microsoft.graph.targetResourceUser",
+            "@odata.type": "#microsoft.graph.targetResourceUser",
             "id": "1f0ex8f5-3x61-4x6b-9x50-d4xx572f2bb7",
             "displayName": null,
             "modifiedProperties": [],

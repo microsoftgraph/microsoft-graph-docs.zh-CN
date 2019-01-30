@@ -4,12 +4,12 @@ description: '表示应用程序。 任何将身份验证外包到 Azure Active 
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0ba7bebb1165710c68f4714050109b5c927bddbd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575053"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641552"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -43,25 +43,25 @@ ms.locfileid: "29575053"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|api|[microsoft.graph.api](api.md)| 指定 API 应用程序的设置。 |
+|api|[api](api.md)| 指定 API 应用程序的设置。 |
 |appId| String | Azure AD 分配给应用程序的应用程序唯一标识符。 不可为 Null。 只读。 |
-|appRoles|[microsoft.graph.entity](approle.md) 集合|应用程序可声明的应用程序角色的集合。 这些角色可以分配给用户、组或服务主体。 不可为 Null。|
+|appRoles|[appRole](approle.md) 集合|应用程序可声明的应用程序角色的集合。 这些角色可以分配给用户、组或服务主体。 不可为 Null。|
 |createdDateTime|DateTimeOffset| 注册应用程序的日期和时间。 |
 |deletedDateTime|DateTimeOffset| 删除应用程序的日期和时间。 |
 |displayName|String|应用程序的显示名称。 |
-|id|String|应用程序的唯一标识符。 继承自 [microsoft.graph.directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
+|id|String|应用程序的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。 |
 |identifierUris|String 集合| 用于标识应用程序的 URI。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)。 多值属性筛选器表达式需要 *any* 运算符。 不可为 Null。 |
-|info|[microsoft.graph.informationalUrl](informationalurl.md)| 应用程序的基本配置文件信息。 |
+|info|[informationalUrl](informationalurl.md)| 应用程序的基本配置文件信息。 |
 |isFallbackPublicClient|Boolean| 将回退应用类型指定为公共客户端，例如在移动设备上运行的已安装应用。 默认值为 *false*，这意味着回退应用类型是诸如 Web 应用之类的机密客户端。 在某些情况下，Azure AD 无法确定客户端应用类型（例如 [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) 流，其中在不指定重定向 URI 的情况下配置客户端应用类型）。 在这些情况下，Azure AD 将基于此属性的值解释应用类型。|
-|keyCredentials|[microsoft.graph.keyCredential](keycredential.md) 集合|与应用程序关联的密钥凭据集合，不可为 Null。 |
+|keyCredentials|[keyCredential](keycredential.md) 集合|与应用程序关联的密钥凭据集合，不可为 Null。 |
 |logo|Stream|应用程序的主徽标。 不可为 Null。 |
-|optionalClaims|[microsoft.graph.entity](entity.md) 集合| 保留供以后使用。 |
+|optionalClaims|optionalClaims| 保留供以后使用。 |
 |orgRestrictions|String 集合| 保留供以后使用。 |
-|parentalControlSettings|[microsoft.graph.parentalControlSettings](parentalcontrolsettings.md) 集合 |指定应用程序的家长控制设置。|
-|passwordCredentials|[microsoft.graph.passwordCredential](passwordcredential.md) 集合|与应用程序关联的密码凭据集合。 不可为 Null。|
-|publicClient|[microsoft.graph.publicClient](publicclient.md)| 指定已安装客户端（如台式设备或移动设备）的设置。 |
+|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |指定应用程序的家长控制设置。|
+|passwordCredentials|[passwordCredential](passwordcredential.md) 集合|与应用程序关联的密码凭据集合。 不可为 Null。|
+|publicClient|[publicClient](publicclient.md)| 指定已安装客户端（如台式设备或移动设备）的设置。 |
 |publisherDomain| String | 应用程序的已验证发布者域。 只读。|
-|requiredResourceAccess|[microsoft.graph.requiredResourceAccess](requiredresourceaccess.md) 集合|指定此应用程序需要访问的资源以及在每个资源下所需的 OAuth 权限范围和应用程序角色集。 这种预配置的所需资源访问权限可驱动同意体验。 不可为 Null。|
+|requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) 集合|指定此应用程序需要访问的资源以及在每个资源下所需的 OAuth 权限范围和应用程序角色集。 这种预配置的所需资源访问权限可驱动同意体验。 不可为 Null。|
 |signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 支持的值为：<ul><li>**AzureADMyOrg**：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>**AzureADMultipleOrgs**：在任意组织的 Azure AD 租户（即多租户）中拥有 Microsoft 工作或学校帐户的用户</li> <li>**AzureADandPersonalMicrosoftAccount**：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |tags|String 集合| 可用于分类和标识应用程序的自定义字符串。 |
 |web|[web](web.md)| 指定 Web 应用程序的设置。 |
@@ -92,29 +92,29 @@ ms.locfileid: "29575053"
 
 ```json
 {
-  "api": {"@odata.type": "#microsoft.graph.application"},
+  "api": {"@odata.type": "microsoft.graph.apiApplication"},
   "appId": "String",
-  "appRoles": [{"@odata.type": "#microsoft.graph.approle"}],
+  "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",
   "identifierUris": ["String"],
-  "info": {"@odata.type": "#microsoft.graph.informationalUrl"},
+  "info": {"@odata.type": "microsoft.graph.informationalUrl"},
   "isFallbackPublicClient": true,
-  "keyCredentials": [{"@odata.type": "#microsoft.graph.keyCredential"}],
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
-  "optionalClaims": [{"@odata.type": "#microsoft.graph.entity"}],
+  "optionalClaims": [{"@odata.type": "microsoft.graph.optionalClaims"}],
   "orgRestrictions": ["Guid"],
   "parentalControlSettings": [{"@odata.type": "microsoft.graph.parentalControlSettings"}],
-  "passwordCredentials": [{"@odata.type": "#microsoft.graph.passwordCredential"}],
-  "preAuthorizedApplications": [{"@odata.type": "#microsoft.graph.preAuthorizedApplication"}],
-  "publicClient": {"@odata.type": "#microsoft.graph.publicClientApplication"},
+  "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
+  "preAuthorizedApplications": [{"@odata.type": "microsoft.graph.preAuthorizedApplication"}],
+  "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
-  "requiredResourceAccess": [{"@odata.type": "#microsoft.graph.requiredResourceAccess"}],
+  "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
   "signInAudience": "String",
   "tags": ["String"],
-  "web": {"@odata.type": "#microsoft.graph.webApplication"}
+  "web": {"@odata.type": "microsoft.graph.webApplication"}
 }
 ```
 

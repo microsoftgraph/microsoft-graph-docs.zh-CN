@@ -59,7 +59,7 @@ mailFolder 中的邮件。
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
-|body|[itemBody](itembody.md)|邮件的正文。 可以是 HTML 格式或文本格式。 请了解[邮件正文中的安全 HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned)。|
+|body|[itemBody](itembody.md)|邮件的正文。 可以是 HTML 格式或文本格式。 查看有关[邮件正文中的安全 HTML](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned)的信息。|
 |bodyPreview|字符串|邮件正文中的前 255 个字符。文本格式。|
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
@@ -67,11 +67,11 @@ mailFolder 中的邮件。
 |conversationId|String|电子邮件所属的对话的 ID。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
-|发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。 值必须对应于使用的实际邮箱。 请详细了解为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)。|
+|发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。 值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |hasAttachments|Boolean|指明邮件是否包含附件。此属性不涉及内联附件。因此，如果邮件仅包含内联附件，此属性为 false。若要验证是否存在内联附件，请分析 **body** 属性，以确定是否有 `src` 属性（例如，`<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`）。|
 |id|String|邮件的唯一标识符（请注意，此值可能会随着邮件移动或更改而更改）|
 |importance|importance| 邮件的重要性：`Low`、`Normal`、`High`。|
-|inferenceClassification | inferenceClassificationType | 根据推导出的相关性或重要性或显式重写，对用户邮件的分类。 可能的值为：`focused` 或 `other`。 |
+|inferenceClassification | inferenceClassificationType | 根据推导出的相关性或重要性或根据显式重写，对用户邮件的分类。 可能的值为：`focused` 或 `other`。 |
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合。 该集合包括指示邮件从发件人发送到收件人所采用的网络路径的邮件头。 还可以包含保存邮件应用数据的自定义邮件头。 |
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
@@ -82,7 +82,7 @@ mailFolder 中的邮件。
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|
-|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与 **from** 属性相同。 从[共享邮箱](https://docs.microsoft.com/zh-CN/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/zh-CN/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时，可以将此属性设置为其他值。 在任何情况下，此值必须对应于使用的实际邮箱。 请详细了解为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)。|
+|sender|[recipient](recipient.md)|实际用于生成邮件的帐户。 大多数情况下，此值与“**from**”属性相同。 从[共享邮箱](https://docs.microsoft.com/zh-CN/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/zh-CN/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时，可以将此属性设置为其他值。 在任何情况下，此值必须对应于使用的实际邮箱。 查看更多有关为邮件[设置 from 和 sender 属性](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties)的信息。|
 |sentDateTime|DateTimeOffset|发送邮件的日期和时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
@@ -94,9 +94,9 @@ mailFolder 中的邮件。
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |attachments|[附件](attachment.md)集合|邮件的 [fileAttachment](fileattachment.md) 和 [itemAttachment](itemattachment.md) 附件。|
-|extensions|[扩展](extension.md)集合|为邮件定义的开放扩展集合。 可为 Null。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。 可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。可为 Null。|
+|extensions|[扩展](extension.md)集合|为邮件定义的开放扩展集合。 可为空。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。 可为空。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

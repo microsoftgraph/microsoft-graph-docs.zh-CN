@@ -2,12 +2,12 @@
 title: 获取 appRoleAssignment
 description: 检索 approleassignment 对象的属性和关系。
 localization_priority: Priority
-ms.openlocfilehash: 610120c2c72b89f5af5555d59b2d58bcc09e5f1d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 35537c45e4f156a0b78ffc708eaa39fec8625754
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577002"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640327"
 ---
 # <a name="get-approleassignment"></a>获取 appRoleAssignment
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK

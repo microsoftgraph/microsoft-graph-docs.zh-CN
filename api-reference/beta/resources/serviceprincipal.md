@@ -2,12 +2,12 @@
 title: servicePrincipal 资源类型
 description: 表示目录中的一个应用程序实例。 继承自 directoryObject。
 localization_priority: Priority
-ms.openlocfilehash: d36a82ae885725387e788cf280442afe09fa63de
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cd0ac4d440b2e10f935c02393419754989394816
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574185"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641153"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "29574185"
     "ownedObjects",
     "owners"
   ],
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "@odata.type": "microsoft.graph.serviceprincipal"
 }-->
 
 ```json
@@ -88,14 +88,14 @@ ms.locfileid: "29574185"
 ## <a name="relationships"></a>关系
 | 关系 | 类型 |说明|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo| [appRoleAssignment](approleassignment.md) |为此服务主体分配的主体（用户、组和服务主体）。 只读。|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|为此服务主体分配的主体（用户、组和服务主体）。 只读。|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) 集合|为服务主体分配的应用程序。 只读。 可为 Null。|
 |createdObjects|[directoryObject](directoryobject.md) 集合|此服务主体所创建的目录对象。 只读。 可为 NULL。|
-|memberOf| [directoryObject](directoryobject.md) 集合|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为空。|
-|oauth2PermissionGrants| [oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|与此服务主体关联的用户模拟授权。 只读。 可为 Null。|
-|ownedObjects| [directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为空。|
-|所有者| [directoryObject](directoryobject.md) 集合|拥有此服务主体的目录对象。 所有者是一组允许修改此对象的非管理员用户。 只读。 可为 Null。|
-|policy| [policy](policy.md) 集合|为此服务主体分配的策略。|
+|memberOf|[directoryObject](directoryobject.md) 集合|此服务主体所属的角色。 HTTP 方法：GET 只读。 可为空。|
+|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) 集合|与此服务主体关联的用户模拟授权。 只读。 可为 Null。|
+|ownedObjects|[directoryObject](directoryobject.md) 集合|此服务主体所拥有的目录对象。 只读。 可为空。|
+|所有者|[directoryObject](directoryobject.md) 集合|拥有此服务主体的目录对象。 所有者是一组允许修改此对象的非管理员用户。 只读。 可为 Null。|
+|policy|[policy](policy.md) 集合|为此服务主体分配的策略。|
 
 ## <a name="methods"></a>方法
 

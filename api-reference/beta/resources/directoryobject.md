@@ -4,12 +4,12 @@ description: 表示 Azure Active Directory 对象。**directoryObject** 类型�
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5ba2454a5eda90ec50dbd6a0c152383bb42a437d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 87fb1c21e2fa1e9788890d97f6afbd0b494c555e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573954"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640565"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -25,12 +25,12 @@ ms.locfileid: "29573954"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[获取 directoryObject](../api/directoryobject-get.md) | [directoryObject](../resources/directoryobject.md) |读取 directory 对象的属性。|
+|[获取 directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |读取 directory 对象的属性。|
 |[删除](../api/directoryobject-delete.md) | 无 |删除 directory 对象。 |
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|返回 user、group 或 directory 对象所属的所有组。检查是可传递的。|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| 返回 user、group 或 directory 对象所属的所有组和目录角色。检查是可传递的。 |
-|[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](../resources/directoryobject.md) 集合 | 基于提供的 ID 集获取目录对象集。 |
+|[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) 集合 | 基于提供的 ID 集获取目录对象集。 |
 |[validateProperties](../api/directoryobject-validateproperties.md)|JSON| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
 |[delta](../api/directoryobject-delta.md)|directoryObject 集合| 获取目录对象的增量更改。 支持按派生类型筛选。 |
 
@@ -61,6 +61,7 @@ ms.locfileid: "29573954"
 {
   "id": "string (identifier)"
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

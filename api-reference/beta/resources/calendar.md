@@ -4,12 +4,12 @@ description: 日历即事件容器。 可以是用户的日历，也可以是 Of
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 832a7bc18018f4774e2c8ea8786d510c50e2580c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 162c2a4787d7b89b55135f61f4334c580b224051
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574703"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643865"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -63,8 +63,8 @@ ms.locfileid: "29574703"
 |:---------------|:--------|:----------|
 |calendarView|[event](event.md) 集合|日历的日历视图。导航属性。只读。|
 |events|[event](event.md) 集合|日历中的事件。导航属性。只读。|
-|multiValueLegacyExtendedProperty| [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合 | 为日历定义的多值扩展属性的集合。只读。可为空。|
-|singleValueLegacyExtendedProperty| [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合 | 为日历定义的单值扩展属性的集合。只读。可为 Null。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为日历定义的多值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为日历定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -75,35 +75,11 @@ ms.locfileid: "29574703"
   "optionalProperties": [
     "calendarView",
     "events",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.calendar",
-  "@odata.annotations": [
-    {
-      "property": "calendarView",
-      "capabilities": {
-        "changeTracking": true,
-        "deletable": false,
-        "expandable": false,
-        "insertable": false,
-        "navigability": "single",
-        "searchable": false,
-        "updatable": false
-      }
-    },
-    {
-      "property": "events",
-      "capabilities": {
-        "changeTracking": false,
-        "expandable": false,
-        "navigability": "single",
-        "searchable": false
-      }
-    }
-  ]
+  "@odata.type": "microsoft.graph.calendar"
 }-->
 
 ```json

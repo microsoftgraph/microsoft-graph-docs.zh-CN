@@ -4,12 +4,12 @@ description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 85a921449a57b3e65d4a10e2d0439542f7bb1810
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ef94dc2b6fc6b86e3cae810dd25167b2a6eda8c4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574409"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641762"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -162,8 +162,8 @@ ms.locfileid: "29574409"
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 只读。 可为 NULL。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组和管理单元。 HTTP 方法：GET（支持所有组） 只读。 可为 Null。|
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户、联系人和组。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
-|membersWithLicenseErrors|[user](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。 只读。|
-|onenote|[oneNote](onenote.md)| 只读。|
+|membersWithLicenseErrors|[User](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。 只读。|
+|onenote|[OneNote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
 |photo|[profilePhoto](profilephoto.md)| 组的个人资料照片。 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
@@ -190,7 +190,7 @@ ms.locfileid: "29574409"
     "extensions",
     "memberOf",
     "members",
-    "oneNote",
+    "onenote",
     "owners",
     "photo",
     "photos",    
@@ -224,7 +224,7 @@ ms.locfileid: "29574409"
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": "string",
+  "preferredDataLocation": ["string"],
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,

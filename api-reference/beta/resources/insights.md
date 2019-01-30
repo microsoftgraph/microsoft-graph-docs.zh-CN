@@ -1,15 +1,15 @@
 ---
-title: officeGraphInsights 资源类型
+title: insights 资源类型
 description: Insights 是使用高级分析和机器学习技术计算的关系。 例如，你可以标识与用户有关的 OneDrive 文档趋势。
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: daded26bff88d611ea39754d98007fa3329d142b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4e71dbca7bf4ebbe054d0da83436e5dc2129cf19
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572456"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640166"
 ---
 # <a name="insights-resource-type"></a>insights 资源类型
 
@@ -29,23 +29,13 @@ Insights 由以下 API 返回：
 
 | 关系      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 趋势      | [trending](insights-trending.md) 集合       | 用于标识趋势文档的计算关系。 趋势文档可以存储在 OneDrive 或 SharePoint 网站中。   |
-| 使用的内容      | [usedInsight](insights-used.md) 集合        | 用于标识用户已查看和修改文档的计算关系。 包括在 OneDrive for Business 和 SharePoint 中使用的文档、以电子邮件附件打开的文档以及来自源（如 Box、DropBox 和 Google 云端硬盘）的链接附件文档。  |
-| 共享的内容        | [shared](insights-shared.md) 集合       | 用于标识与用户共享的文档的计算关系。 可作为电子邮件附件或电子邮件中发送的 OneDrive for Business 链接的文档。   |
+| 趋势      | [Trending](insights-trending.md) 集合       | 用于标识趋势文档的计算关系。 趋势文档可以存储在 OneDrive 或 SharePoint 网站中。   |
+| 使用的内容      | [Used](insights-used.md) 集合       | 用于标识用户已查看和修改文档的计算关系。 包括在 OneDrive for Business 和 SharePoint 中使用的文档、以电子邮件附件打开的文档以及来自源（如 Box、DropBox 和 Google 云端硬盘）的链接附件文档。  |
+| 共享的内容        | [Shared](insights-shared.md) 集合       | 用于标识与用户共享的文档的计算关系。 可作为电子邮件附件或电子邮件中发送的 OneDrive for Business 链接的文档。   |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
-  ],
-  "@odata.type": "microsoft.graph.officeGraphInsights"
-}-->
-
 ```json
 {
   "trending": [ { "@odata.type": "microsoft.graph.trending" } ],
