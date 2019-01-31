@@ -2,12 +2,12 @@
 title: signIn 资源类型
 description: '此资源详细说明目录中的用户或应用程序登录活动。 '
 localization_priority: Priority
-ms.openlocfilehash: 3d9b9ffab6b588cbe0a465a637b12649110415d2
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571847"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640964"
 ---
 # <a name="signin-resource-type"></a>signIn 资源类型
 此资源详细说明目录中的用户或应用程序登录活动。 
@@ -38,13 +38,13 @@ ms.locfileid: "29571847"
 |ipAddress|String|提供发生登录的客户端的 IP 地址。|
 |location|[signInLocation](signinlocation.md)|提供发生登录的城市、省/市/自治区和 2 个字母的国家/地区代码。|
 |processingTimeInMilliseconds|Int|提供 AD STS 中的请求处理时间（以毫秒为单位）|
-|riskDetail| enum-string |提供风险用户、登录或风险事件的特定状态背后的“原因”。 可取值包括：`none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`unknownFutureValue`。 值 `none` 表示到目前为止尚未对用户或登录执行任何操作。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
-|riskLevelAggregated| enum-string |提供聚合的风险级别。 可取值为：`none`、`low`、`medium`、`high`、`hidden` 和 `unknownFutureValue`。 值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
-|riskLevelDuringSignIn| enum-string |提供登录期间的风险级别。 可取值为：`none`、`low`、`medium`、`high`、`hidden` 和 `unknownFutureValue`。 值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
-|riskEventTypes| enum-string |提供与登录关联的风险事件类型列表。 可取值为：`unlikelyTravel`、`anonymizedIPAddress`、`maliciousIPAddress`、`unfamiliarFeatures`、`malwareInfectedIPAddress`、`suspiciousIPAddress`、`leakedCredentials`、`investigationsThreatIntelligence`、`generic` 和 `unknownFutureValue`。|
+|riskDetail|`riskDetail`|提供风险用户、登录或风险事件的特定状态背后的“原因”。 可取值包括：`none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`unknownFutureValue`。 值 `none` 表示到目前为止尚未对用户或登录执行任何操作。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
+|riskLevelAggregated|`riskLevel`|提供聚合的风险级别。 可取值为：`none`、`low`、`medium`、`high`、`hidden` 和 `unknownFutureValue`。 值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
+|riskLevelDuringSignIn|`riskLevel`|提供登录期间的风险级别。 可取值为：`none`、`low`、`medium`、`high`、`hidden` 和 `unknownFutureValue`。 值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
+|riskEventTypes|`riskEventTypes`|提供与登录关联的风险事件类型列表。 可取值为：`unlikelyTravel`、`anonymizedIPAddress`、`maliciousIPAddress`、`unfamiliarFeatures`、`malwareInfectedIPAddress`、`suspiciousIPAddress`、`leakedCredentials`、`investigationsThreatIntelligence`、`generic` 和 `unknownFutureValue`。|
 |riskState|`riskState`|提供风险用户、登录或风险事件的“风险状态”。 可取值包括：`none`、`confirmedSafe`、`remediated`、`dismissed`、`atRisk`、`confirmedCompromised`、`unknownFutureValue`。|
 |mfaDetail|[mfaDetail](mfadetail.md)|提供相应登录的 MFA 相关信息，例如“需要 MFA”、“MFA 状态”。|
-|networkLocationDetail| [deviceDetail](networklocationdetail.md) |提供有关网络位置的详细信息。|
+|networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|提供有关网络位置的详细信息。|
 |riskLevel|string| 提供与登录相关的风险级别。可取值为：`low`、`medium`、`high`。|
 |status|[signInStatus](signinstatus.md)|提供登录状态。 可取值包括 `Success` 和 `Failure`。|
 |userDisplayName|String|指示用户的显示名称。|
@@ -91,11 +91,11 @@ ms.locfileid: "29571847"
   "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "riskDetail": "none | adminGeneratedTemporaryPassword | userPerformedSecuredPasswordChange | userPerformedSecuredPasswordReset | adminConfirmedSigninSafe | aiConfirmedSigninSafe | userPassedMFADrivenByRiskBasedPolicy | adminDismissedAllRiskForUser | adminConfirmedSigninCompromised | unknownFutureValue",
-  "riskLevelAggregated": "enum-string",
-  "riskLevelDuringSignIn": "enum-string",
-  "riskState": "riskState",
-  "riskEventTypes": "enum-string",
+  "riskDetail": "string",
+  "riskLevelAggregated": "string",
+  "riskLevelDuringSignIn": "string",
+  "riskState": "string",
+  "riskEventTypes": "string",
   "resourceDisplayName": "string",
   "resourceId": "string",
   "authenticationMethodsUsed": "string",

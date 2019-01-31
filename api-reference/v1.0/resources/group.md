@@ -4,12 +4,12 @@ description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 910af8e2eb87d2e36d39fbf1873477ecfc114c38
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 68f3c5d9f1ee8086ce6f008e621feb8ca4598e7f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726608"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641279"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -97,17 +97,20 @@ ms.locfileid: "28726608"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowExternalSenders|布尔值| 指明组织外部人员能否向群组发送邮件。 默认值为 **false**。 <br><br>仅在 $select 上返回。 |
+|allowExternalSenders|Boolean| 指明组织外部人员能否向群组发送邮件。 默认值为 **false**。 <br><br>仅在 $select 上返回。 |
+|assignedLicenses|[assignedLicense](assignedlicense.md) 集合|分配给该组的许可证。 <br><br>仅在 $select 上返回。 只读。|
 |autoSubscribeNewMembers|布尔值|指示添加到组中的新成员是否将自动订阅接收电子邮件通知。 可以在 PATCH 请求中设置组的这个属性；不要在创建该组的初始 POST 请求中设置它。 默认值为 **false**。 <br><br>仅在 $select 上返回。|
-|Classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](groupsettingtemplate.md)创建 ClassificationList [设置](groupsetting.md)值来定义此属性的有效值。<br><br>默认情况下返回。|
+|classification|字符串|描述该组的分类（如低、中或高业务影响）。通过根据[模板定义](groupsettingtemplate.md)创建 ClassificationList [设置](groupsetting.md)值来定义此属性的有效值。<br><br>默认情况下返回。|
 |createdDateTime|DateTimeOffset| 组的创建时间戳。 值无法修改，并在组创建时自动填充。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 |
 |说明|String|可选的组说明。 <br><br>默认情况下返回。|
 |displayName|String|组的显示名称。 此属性是在创建组时所必需的，并且在更新过程中不能清除。 <br><br>默认情况下返回。 支持 $filter 和 $orderby。 |
-|groupTypes|String collection| 指定要创建的组类型。 可能的值是 `Unified`（创建 Office 365 组）或 `DynamicMembership`（创建动态组）。  对于其他所有组类型（如启用安全机制的组和启用电子邮件的安全组），请勿设置此属性。 <br><br>默认情况下返回。 支持 $filter。|
+|groupTypes|String collection| 指定要创建的组的类型。 可能的值是 `Unified`（创建 Office 365 组）或 `DynamicMembership`（创建动态组）。  对于其他所有组类型（如启用安全机制的组和启用电子邮件的安全组），请勿设置此属性。 <br><br>默认情况下返回。 支持 $filter。|
+|hasMembersWithLicenseErrors|Boolean|指示此组中是否有该基于组的许可证分配中存在许可证错误的成员。 <br><br>GET 操作从未返回此属性。 可将它用作 $filter 参数，获取具有许可证错误的成员的组（也就是说，此属性的筛选器为 true）。 请参阅[示例](../api/group-list.md)。|
 |id|String|组的唯一标识符。 <br><br>默认情况下返回。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
-|isSubscribedByMail|布尔值|指示登录用户是否订阅接收电子邮件对话。 默认值为 **True**。 <br><br>仅在 $select 上返回。 |
+|isSubscribedByMail|Boolean|指示登录用户是否订阅接收电子邮件对话。 默认值为 **True**。 <br><br>仅在 $select 上返回。 |
+|licenseProcessingState|String|指示对所有组成员的组许可证分配的状态。 默认值为 **false**。 只读。 可能的值是：`QueuedForProcessing`、`ProcessingInProgress` 和 `ProcessingComplete`。<br><br>仅在 $select 上返回。 只读。|
 |mail|String|组的 SMTP 地址，例如，“serviceadmins@contoso.onmicrosoft.com”。 <br><br>默认情况下返回。 只读。 支持 $filter。|
-|mailEnabled|布尔值|指定是否为启用邮件的组。如果 **securityEnabled** 属性也为 **true**，则为启用邮件的安全组；否则为 Microsoft Exchange 通讯组。 <br><br>默认情况下返回。|
+|mailEnabled|Boolean|指定是否为启用邮件的组。如果 **securityEnabled** 属性也为 **true**，则为启用邮件的安全组；否则为 Microsoft Exchange 通讯组。 <br><br>默认情况下返回。|
 |mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 <br><br>默认情况下返回。 支持 $filter。|
 |onPremisesLastSyncDateTime|DateTimeOffset|指示组最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 <br><br>默认情况下返回。 只读。 支持 $filter。|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 <br><br>默认情况下返回。|
@@ -119,6 +122,7 @@ ms.locfileid: "28726608"
 |securityEnabled|布尔|指定是否为安全组。 如果 **mailEnabled** 属性也为 true，则为启用邮件的安全组；否则为安全组。 对于 Office 365 组，此属性必须为 **false**。 <br><br>默认情况下返回。 支持 $filter。|
 |unseenCount|Int32|自登录用户上次访问该组以来收到新帖子的对话计数。 <br><br>仅在 $select 上返回。 |
 |visibility|String| 指定 Office 365 组的可见性。 可能的值为：`private`、`public` 或 `hiddenmembership`；空白值视为公共值。  请参阅[组可见性选项](#group-visibility-options)以了解详细信息。<br>只有在创建组时才能设置可见性；不能对其进行编辑。<br>只有统一组才支持可见性；安全组不支持可见性。 <br><br>默认情况下返回。|
+
 
 ### <a name="group-visibility-options"></a>组可见性选项
 
@@ -142,10 +146,11 @@ ms.locfileid: "28726608"
 |驱动器|[drive](drive.md)|组的默认驱动器。 只读。|
 |drives|[drive](drive.md) 集合|组的驱动器。 只读。|
 |events|[事件](event.md) 集合|组的日历事件。|
-|extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 Null。|
+|extensions|[扩展](extension.md)集合|为组定义的开放扩展集合。只读。可为 NULL。|
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 只读。 可为 NULL。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户和组。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组），可为 Null。|
+|membersWithLicenseErrors|[User](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。 只读。|
 |onenote|[Onenote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。所有者是一组允许修改此对象的非管理员用户。仅限 10 个所有者。HTTP 方法：GET（支持所有组），POST（支持 Office 365 组、安全组和启用邮件的安全组）、DELETE（支持 Office 365 组和安全组）。可为 Null。|
 |照片|[profilePhoto](profilephoto.md)| 组的个人资料照片 |
@@ -282,14 +287,17 @@ ms.locfileid: "28726608"
 ```json
 {
   "allowExternalSenders": false,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "autoSubscribeNewMembers": true,
   "classification": "string",
   "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
+  "hasMembersWithLicenseErrors": "Boolean",
   "id": "string (identifier)",
   "isSubscribedByMail": true,
+  "licenseProcessingState": "string",
   "mail": "string",
   "mailEnabled": true,
   "mailNickname": "string",
@@ -312,6 +320,7 @@ ms.locfileid: "28726608"
   "events": [ { "@odata.type": "microsoft.graph.event" }],
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "members": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "membersWithLicenseErrors": [{"@odata.type": "microsoft.graph.user"}],
   "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],

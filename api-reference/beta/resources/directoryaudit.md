@@ -4,12 +4,12 @@ description: 此资源表示目录审核项及其集合
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0f56dea1b07f0814c4b9f1295498c2555c98a2df
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573156"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643753"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 此资源表示目录审核项及其集合
@@ -28,9 +28,9 @@ ms.locfileid: "29573156"
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|指示执行活动的日期和时间。 时间戳类型始终为 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |activityDisplayName|String|指示活动名称或操作名称（例如， “创建用户”、“向组中添加成员”）。 有关记录的活动列表，请参阅 [Azure AD 活动列表](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list)。|
-|additionalDetails|[keyvalue](keyvalue.md) 集合|指示活动的其他详细信息。|
+|additionalDetails|[keyValue](keyvalue.md) 集合|指示活动的其他详细信息。|
 |category|String|指示活动所针对的资源类别。 （例如：用户管理、组管理等。）|
-|correlationId| String（标识符） |指示有助于关联跨各种服务的活动的唯一 ID。 可用于跨服务跟踪日志。|
+|correlationId|GUID|指示有助于关联跨各种服务的活动的唯一 ID。 可用于跨服务跟踪日志。|
 |id|String| 指示活动的唯一 ID。 这是 GUID。|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|指示有关启动活动的用户或应用的信息。|
 |loggedByService|String|指示启动活动的服务的信息（例如：自助服务密码管理、核心目录、B2C、受邀用户、Microsoft Identity Manager、Privileged Identity Management）。|
@@ -60,7 +60,7 @@ ms.locfileid: "29573156"
   "activityDisplayName": "String",
   "additionalDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
   "category": "String",
-  "correlationId": "String (identifier)",
+  "correlationId": "Guid",
   "id": "String (identifier)",
   "initiatedBy": {"@odata.type": "microsoft.graph.auditActivityInitiator"},
   "loggedByService": "String",

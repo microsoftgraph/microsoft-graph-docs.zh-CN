@@ -4,12 +4,12 @@ description: 'Microsoft Teams 中的团队是频道的集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0e8f5a7644e56d1f6f2be08385fc1e9a280828ac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6ed8b298336563d2b07ce2d6a83b90c9400fe53f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526205"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643774"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -64,6 +64,7 @@ Microsoft Teams 中的团队是[频道](channel.md)的集合。 频道表示团�
 |channels|[channel](channel.md) 集合|与团队相关的频道和消息的集合。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
 |owners|[user](user.md)| 此团队的所有者列表。 |
+|operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 | 
 |template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
