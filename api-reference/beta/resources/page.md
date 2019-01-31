@@ -3,11 +3,11 @@ title: 页面资源类型
 description: OneNote 笔记本中的页面。
 localization_priority: Normal
 ms.openlocfilehash: d8c27cdc144e9b192bd0205f256653ff7f04df5f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519239"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29649379"
 ---
 # <a name="page-resource-type"></a>页面资源类型
 
@@ -51,12 +51,12 @@ OneNote 笔记本中的页面。
 |contentUrl|String|页面的 HTML 内容的 URL。只读。|
 |createdByAppId|String|创建页面的应用程序的唯一标识符。只读。|
 |createdDateTime|DateTimeOffset|页面的创建日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
-|id|字串符号|页面的唯一标识符。只读。|
+|id|String|页面的唯一标识符。只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改页面的日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
 |level|Int32|页面的缩进级别。只读。|
 |links|[PageLinks](pagelinks.md)|用于打开页面的链接。如果安装了 OneNote 本机客户端，则 `oneNoteClientURL` 链接将在其中打开页面。`oneNoteWebUrl` 链接将在 OneNote Online 中打开页面。只读。|
 |order|Int32|页面在其父分区中的顺序。只读。|
-|self|字符串|可以在其中获取关于页面的详细信息的终结点。只读。|
+|self|String|可以在其中获取关于页面的详细信息的终结点。只读。|
 |title|String|页面的标题。 |
 
 ## <a name="relationships"></a>关系
