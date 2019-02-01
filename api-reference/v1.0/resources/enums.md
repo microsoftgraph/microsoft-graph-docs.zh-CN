@@ -1,14 +1,27 @@
 ---
-title: timeZoneStandard 值
-description: " 值"
+title: 枚举值
+description: Microsoft Graph 枚举值。
 localization_priority: Normal
-ms.openlocfilehash: 6f9a08a7f20ff9b4f5463c6d7e4877568c49eee1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8022af214f9de374fcb7bc384a5557eb5625ede9
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825730"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690943"
 ---
+### <a name="contactrelationship-values"></a>contactRelationship 值
+
+|成员|值|说明|
+|:---|:---|:---|
+|父|0|用户的父级。|
+|相对|1| 用户的相对。|
+|有助于|2| 用户的有助于。|
+|医生|3| 用户的医生。|
+|监护人|4| 用户的监护人。|
+|子|5| 用户的子级。|
+|其他|6| 向用户未指定的关系。|
+|unknownFutureValue|7| 为了将来兼容的标记值。|
+
 ### <a name="timezonestandard-values"></a>timeZoneStandard 值
 
 | 值
@@ -35,7 +48,7 @@ ms.locfileid: "27825730"
 |:-------------------------
 | 必需
 | 可选
-| resource
+| 资源
 
 
 ### <a name="externalaudiencescope-values"></a>externalAudienceScope 值
@@ -259,7 +272,7 @@ ms.locfileid: "27825730"
 
 | 值
 |:-------------------------
-| 替换
+| Replace
 | 追加
 | Delete
 | 插入
@@ -279,7 +292,7 @@ ms.locfileid: "27825730"
 |:-------------------------
 | 主页
 | 业务
-| 移动
+| mobile
 | 其他
 | 助理
 | homeFax
@@ -293,10 +306,10 @@ ms.locfileid: "27825730"
 
 | 值
 |:-------------------------
-| automatic
+| 自动
 | noPreview
 | checklist
-| 说明
+| description
 | reference
 
 
@@ -369,7 +382,7 @@ ms.locfileid: "27825730"
 | 值
 |:-------------------------
 | 无
-| organizer
+| 组织者
 | tentativelyAccepted
 | 接受
 | 拒绝
@@ -428,28 +441,22 @@ ms.locfileid: "27825730"
 | preset23 | 23      
 | preset24 | 24      
 
-# <a name="security-api-enums"></a>安全 API 枚举
-
-# <a name="alertfeedback-enum-type"></a>alertFeedback 枚举类型
+### <a name="alertfeedback-values"></a>alertFeedback 值
 
 可能的反馈供稿分析师通知上的值。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知。|
 |truePositive|1|通知是 true 误报。|
 |falsePositive|2| 通知是误报。|
 |benignPositive|3| 通知是误报误报。|
 
-# <a name="filehashtype-enum-type"></a>fileHashType 枚举类型
+### <a name="filehashtype-values"></a>fileHashType 值
 
 文件哈希类型的枚举。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的类型。|
 |sha1|1|SHA1 哈希值类型。|
@@ -461,25 +468,21 @@ ms.locfileid: "27825730"
 |peSha1|7| PESHA1 哈希值类型。|
 |peSha256|8| PESHA256 哈希值类型。|
 
-# <a name="connectiondirection-enum-type"></a>connectionDirection 枚举类型
+### <a name="connectiondirection-values"></a>connectionDirection 值
 
 （入站/出站） 的网络连接的方向的枚举。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的连接。|
 |入站|1|入站连接。|
 |出站|2| 出站连接。|
 
-# <a name="connectionstatus-enum-type"></a>connectionStatus 枚举类型
+### <a name="connectionstatus-values"></a>connectionStatus 值
 
 连接的状态的枚举。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的连接状态。|
 |尝试|1|尝试连接。|
@@ -487,13 +490,11 @@ ms.locfileid: "27825730"
 |已阻止|3| 已阻止的连接。|
 |failed|4| 连接失败。|
 
-# <a name="processintegritylevel-enum-type"></a>processIntegrityLevel 枚举类型
+### <a name="processintegritylevel-values"></a>processIntegrityLevel 值
 
 可能的完整性的级别值的过程。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知。|
 |不受信任|10|完整性级别是不受信任。|
@@ -502,13 +503,11 @@ ms.locfileid: "27825730"
 |高|40| 完整性级别为高。|
 |system|50| 完整性级别是系统。|
 
-# <a name="registryhive-enum-type"></a>registryHive 枚举类型
+### <a name="registryhive-values"></a>registryHive 值
 
 枚举的注册表配置单元定义的[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知配置单元。|
 |currentConfig|1|HKEY_CURRENT_CONFIG 配置单元。|
@@ -518,26 +517,22 @@ ms.locfileid: "27825730"
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System 配置单元。|
 |usersDefault|6| HKEY_USERS\\。默认配置单元。|
 
-# <a name="registryoperation-enum-type"></a>registryOperation 枚举类型
+### <a name="registryoperation-values"></a>registryOperation 值
 
 更改的注册表项名称和/或值的操作。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的注册表值类型。|
 |create|1|创建注册表。|
 |修改|2|修改注册表。|
 |delete|3|删除注册表。|
 
-# <a name="registryvaluetype-enum-type"></a>registryValueType 枚举类型
+### <a name="registryvaluetype-values"></a>registryValueType 值
 
 注册表值的 Enum 类型定义的[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的注册表值类型。|
 |二进制文件|1|REG_BINARY 注册表值类型。|
@@ -552,13 +547,11 @@ ms.locfileid: "27825730"
 |qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN 注册表值类型。|
 |sz|11| REG_SZ 注册表值类型。|
 
-# <a name="alertseverity-enum-type"></a>alertSeverity 枚举类型
+### <a name="alertseverity-values"></a>alertSeverity 值
 
 警报严重性的枚举。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知严重性。|
 |信息性|1|严重级别是仅的信息。|
@@ -566,38 +559,31 @@ ms.locfileid: "27825730"
 |中等|3| 严重性为 medium。|
 |高|4| 高严重性。|
 
-# <a name="alertstatus-enum-type"></a>alertStatus 枚举类型
+### <a name="alertstatus-values"></a>alertStatus 值
 
 警报生命周期状态 （阶段） 的可能值。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|状态未知。|
 |newAlert|10| 新通知。|
 |正在进行|20|正在通知。|
 |解析|30|警报已解决。|
 
-# <a name="emailrole-enum-type"></a>emailRole 枚举类型
-
+### <a name="emailrole-values"></a>emailRole 值
 电子邮件角色的可能值。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的角色。|
 |sender|1|电子邮件的发件人。|
 |收件人|2|电子邮件的收件人。|
 
-# <a name="logontype-enum-type"></a>logonType 枚举类型
+### <a name="logontype-values"></a>logonType 值
 
 用户登录的方法的可能值。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|-1|未知。|
 |交互式|0|交互式登录。|
@@ -606,13 +592,11 @@ ms.locfileid: "27825730"
 |batch|3| 登录用户批次。|
 |service|4| 登录服务。|
 
-# <a name="useraccountsecuritytype-enum-type"></a>userAccountSecurityType 枚举类型
+### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
 每个 Windows 定义的用户帐户类型 （组成员身份） 的的可能值。
 
-## <a name="members"></a>成员
-
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
 |unknown|-1|未知。|
 |标准|0|标准用户组的成员。|

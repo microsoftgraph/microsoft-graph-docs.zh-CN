@@ -1,13 +1,26 @@
 ---
-title: timeZoneStandard 值
-description: " 值"
-ms.openlocfilehash: d011f204d1439d312c961445a0b1663b6ac8d60c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+title: 枚举值
+description: Microsoft Graph 枚举值
+ms.openlocfilehash: ab73a185b9e37f99a413486ef4fcdf50bbced7b2
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640978"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690936"
 ---
+### <a name="contactrelationship-values"></a>contactRelationship 值
+
+|成员|值|说明|
+|:---|:---|:---|
+|父|0|用户的父级。|
+|相对|1| 用户的相对。|
+|有助于|2| 用户的有助于。|
+|医生|3| 用户的医生。|
+|监护人|4| 用户的监护人。|
+|子|5| 用户的子级。|
+|其他|6| 向用户未指定的关系。|
+|unknownFutureValue|7| 为了将来兼容的标记值。|
+
 ### <a name="timezonestandard-values"></a>timeZoneStandard 值
 
 | 值
@@ -451,13 +464,9 @@ ms.locfileid: "29640978"
 | preset23 | 23      
 | preset24 | 24      
 
-# <a name="security-api-enums"></a>安全 API 枚举
-
-# <a name="alertfeedback-enum-type"></a>alertFeedback 枚举类型
+### <a name="alertfeedback-values"></a>alertFeedback 值
 
 可能的反馈供稿分析师通知上的值。
-
-## <a name="members"></a>成员
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -466,11 +475,7 @@ ms.locfileid: "29640978"
 |falsePositive|2| 通知是误报。|
 |benignPositive|3| 通知是误报误报。|
 
-# <a name="filehashtype-enum-type"></a>fileHashType 枚举类型
-
-文件哈希类型的枚举。
-
-## <a name="members"></a>成员
+### <a name="filehashtype-values"></a>fileHashType 值
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -484,11 +489,7 @@ ms.locfileid: "29640978"
 |peSha1|7| PESHA1 哈希值类型。|
 |peSha256|8| PESHA256 哈希值类型。|
 
-# <a name="connectiondirection-enum-type"></a>connectionDirection 枚举类型
-
-（入站/出站） 的网络连接的方向的枚举。
-
-## <a name="members"></a>成员
+### <a name="connectiondirection-values"></a>connectionDirection 值
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -496,11 +497,7 @@ ms.locfileid: "29640978"
 |入站|1|入站连接。|
 |出站|2| 出站连接。|
 
-# <a name="connectionstatus-enum-type"></a>connectionStatus 枚举类型
-
-连接的状态的枚举。
-
-## <a name="members"></a>成员
+### <a name="connectionstatus-values"></a>connectionStatus 值
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -510,11 +507,7 @@ ms.locfileid: "29640978"
 |已阻止|3| 已阻止的连接。|
 |failed|4| 连接失败。|
 
-# <a name="processintegritylevel-enum-type"></a>processIntegrityLevel 枚举类型
-
-可能的完整性的级别值的过程。
-
-## <a name="members"></a>成员
+### <a name="processintegritylevel-values"></a>processIntegrityLevel 值
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -525,11 +518,9 @@ ms.locfileid: "29640978"
 |高|40| 完整性级别为高。|
 |system|50| 完整性级别是系统。|
 
-# <a name="registryhive-enum-type"></a>registryHive 枚举类型
+### <a name="registryhive-values"></a>registryHive 值
 
 枚举的注册表配置单元定义的[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)。
-
-## <a name="members"></a>成员
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -541,11 +532,9 @@ ms.locfileid: "29640978"
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System 配置单元。|
 |usersDefault|6| HKEY_USERS\\。默认配置单元。|
 
-# <a name="registryoperation-enum-type"></a>registryOperation 枚举类型
+### <a name="registryoperation-values"></a>registryOperation 值
 
 更改的注册表项名称和/或值的操作。
-
-## <a name="members"></a>成员
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -554,11 +543,9 @@ ms.locfileid: "29640978"
 |修改|2|修改注册表。|
 |delete|3|删除注册表。|
 
-# <a name="registryvaluetype-enum-type"></a>registryValueType 枚举类型
+### <a name="registryvaluetype-values"></a>registryValueType 值
 
 注册表值的 Enum 类型定义的[https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)。
-
-## <a name="members"></a>成员
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -575,11 +562,9 @@ ms.locfileid: "29640978"
 |qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN 注册表值类型。|
 |sz|11| REG_SZ 注册表值类型。|
 
-# <a name="alertseverity-enum-type"></a>alertSeverity 枚举类型
+### <a name="alertseverity-values"></a>alertSeverity 值
 
 警报严重性的枚举。
-
-## <a name="members"></a>成员
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -589,11 +574,9 @@ ms.locfileid: "29640978"
 |中等|3| 严重性为 medium。|
 |高|4| 高严重性。|
 
-# <a name="alertstatus-enum-type"></a>alertStatus 枚举类型
+### <a name="alertstatus-values"></a>alertStatus 值
 
 警报生命周期状态 （阶段） 的可能值。
-
-## <a name="members"></a>成员
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -602,23 +585,19 @@ ms.locfileid: "29640978"
 |正在进行|20|正在通知。|
 |解析|30|警报已解决。|
 
-# <a name="emailrole-enum-type"></a>emailRole 枚举类型
+### <a name="emailrole-values"></a>emailRole 值
 
 电子邮件角色的可能值。
-
-## <a name="members"></a>成员
 
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的角色。|
 |sender|1|电子邮件的发件人。|
-|recipient|2|电子邮件的收件人。|
+|收件人|2|电子邮件的收件人。|
 
-# <a name="logontype-enum-type"></a>logonType 枚举类型
+### <a name="logontype-values"></a>logonType 值
 
 用户登录的方法的可能值。
-
-## <a name="members"></a>成员
 
 |成员|值|说明|
 |:---|:---|:---|
@@ -629,11 +608,9 @@ ms.locfileid: "29640978"
 |batch|3| 登录用户批次。|
 |service|4| 登录服务。|
 
-# <a name="useraccountsecuritytype-enum-type"></a>userAccountSecurityType 枚举类型
+### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType 值
 
 每个 Windows 定义的用户帐户类型 （组成员身份） 的的可能值。
-
-## <a name="members"></a>成员
 
 |成员|值|说明|
 |:---|:---|:---|

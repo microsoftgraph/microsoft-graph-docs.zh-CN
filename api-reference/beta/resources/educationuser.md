@@ -4,12 +4,12 @@ description: 系统中的用户。 这是特定于教育的用户变体，具有
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e8b1f9a98800330b2f46b9de1582c97e475cd162
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d0467ed9ac03a1607d575b6eac5f6b3330b68c3c
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521150"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690929"
 ---
 # <a name="educationuser-resource-type"></a>educationUser 资源类型
 
@@ -34,26 +34,27 @@ ms.locfileid: "29521150"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| 如果帐户已启用，则为 **true**；否则，为 **false**。 创建用户时此属性是必需的。 支持 $filter。    |
-|assignedLicenses|[assignedLicense](assignedlicense.md) 集合|分配给该用户的许可证。不可为 null。            |
+|assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|分配给该用户的计划。只读。不可为 null。 |
-|businessPhones|String collection|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
+|businessPhones|String collection|用户的电话号码。 **注意：** 虽然这是字符串集合，但是只能为该属性设置一个号码。|
 |createdBy|[identitySet](identityset.md)| 创建了用户的实体。 |
 |department|String|用户工作部门的名称。支持 $filter。|
-|displayName|String|用户通讯簿中显示的名称。这通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
+|displayName|String|用户通讯簿中显示的名称。 这通常是用户名字、中间名首字母和姓氏的组合。 此属性在创建用户时是必需的，并且在更新过程中不能清除。 支持 $filter 和 $orderby。|
 |externalSource|`educationExternalSource`| 创建此用户的位置。 可取值为：`sis`、`manual`、`unkownFutureValue`。|
 |givenName|String|用户的名字。支持 $filter。|
 |id|字串符号|用户的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
-|mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。只读。支持 $filter。|
+|mail|String|用户的 SMTP 地址；例如，“jeff@contoso.onmicrosoft.com”。 只读。 支持 $filter。|
 |mailingAddress|[physicalAddress](physicaladdress.md)| 用户的邮件地址。|
-|mailNickname|String|用户的邮件别名。创建用户时必须指定此属性。支持 $filter。|
+|mailNickname|字符串|用户的邮件别名。创建用户时必须指定此属性。支持 $filter。|
 |middleName| String | 用户的中间名。|
 |mobilePhone|String|用户的主要移动电话号码。|
 |passwordPolicies|String|指定用户的密码策略。 此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。 另外，还可以指定“DisablePasswordExpiration”。 可以同时指定两个值；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
 |passwordProfile|[passwordProfile](passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
-|preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。|
+|preferredLanguage|字符串|用户的首选语言。 应遵循 ISO 639-1 代码；例如“en-US”。|
 |primaryRole|string| 用户的默认角色。 用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`enum_sentinel`。 支持 $filter。|
-|provisionedPlans|[provisionedPlan](provisionedplan.md)集合|为用户预配的计划。只读。不可为 null。 |
+|provisionedPlans|[provisionedPlan](provisionedplan.md) 集合|为用户设置的计划。只读。不可为 null。 |
 |residenceAddress|[physicalAddress](physicaladdress.md)| 用户所在的地址。|
+|relatedContacts|[relatedContact](relatedcontact.md)集合|一套与用户相关的联系人。  此可选属性必须指定 $select 子句中，并且只能检索为单个用户。|
 |student|[educationStudent](educationstudent.md)| 如果主要角色为学生，此部分将包含特定于学生的数据。|
 |surname|String|用户的姓氏。支持 $filter。|
 |teacher|[educationTeacher](educationteacher.md)| 如果主要角色为教师，此部分将包含特定于教师的数据。|
@@ -64,8 +65,8 @@ ms.locfileid: "29521150"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|classes|[educationClass](educationclass.md) 集合| 用户所属的课程。 可为空。|
-|schools|[educationSchool](educationschool.md) 集合| 用户所属的学校。 可为空。|
+|classes|[educationClass](educationclass.md) 集合| 用户所属的课程。 可为 Null。|
+|schools|[educationSchool](educationschool.md) 集合| 用户所属的学校。 可为 Null。|
 |assignments| [educationAssignment](educationassignment.md)| 用户的分配列表。 可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
