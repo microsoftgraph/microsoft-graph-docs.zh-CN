@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: ccb86dc58bd45329996fd02a439dfd06bf312bcb
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 49fea88ed8933f22f93955a3093d46588ca623b1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577198"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641307"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,12 @@ ms.locfileid: "29577198"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="january-2019"></a>2019 年 1 月
+
+### <a name="azure-ad-apis"></a>Azure AD API
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|添加项 |v1.0|引入了新的资源类型 [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-v1.0) 实体，以及[创建](/graph/api/identityprovider-post-identityproviders?view=graph-rest-v1.0)、[列出](/graph/api/identityprovider-list?view=graph-rest-v1.0)、[获取](/graph/api/identityprovider-get?view=graph-rest-v1.0)、[更新](/graph/api/identityprovider-update?view=graph-rest-v1.0)和[删除](/graph/api/identityprovider-delete?view=graph-rest-v1.0)操作。|
 
 ### <a name="reports-apis"></a>报表 API
 
@@ -29,6 +35,10 @@ ms.locfileid: "29577198"
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | v1.0 | 向 [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0) 复杂类型添加了 **forceChangePasswordNextSignInWithMfa** 属性。|
+| 添加 | v1.0 | 向 [User](../api-reference/v1.0/resources/user.md) 实体添加了 **licenseAssignmentStates** 属性以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。|
+| 添加 | v1.0 | 添加了 **licenseAssignmentState** 资源以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。| 
+| 添加 | v1.0 | 向 [Group](../api-reference/v1.0/resources/group.md) 实体添加了 **assignedLicenses**、**licenseProcessingState** 和 **hasMembersWithLicenseErrors** 属性及 **membersWithLicenseErrors** 关系以获取[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。|
+| 添加 | beta 版本 | 向 [organization](/graph/api/resources/user?view=graph-rest-beta) 实体添加了 **createdDateTime** 属性。|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
 
@@ -55,6 +65,11 @@ ms.locfileid: "29577198"
 |添加|beta|向 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) 实体添加了 **mobileAppTroubleshootingEvents** 导航属性|
 |添加|beta|向 [mobileAppTroubleshootingEvent](/graph/api/resources/intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta) 实体添加了 **appLogCollectionRequests** 导航属性|
 
+### <a name="microsoft-teams-apis"></a>Microsoft Teams API
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|添加项 |beta 版本| 向 [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta) 枚举添加了 educationStandard、educationClass、educationProfessionalLearningCommunity、educationStaff 和 unknownFutureValue。|
 
 ## <a name="december-2018"></a>2018 年 12 月
 
@@ -2752,7 +2767,7 @@ ms.locfileid: "29577198"
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 添加了 inferenceClassification 资源类型。 |
 | 添加项        | Beta        | 向 mailboxsettings 添加了 timeZone。   |
-| 添加项        | Beta        | 向 _user_ 添加了 API _findMeetingTimes_to。   |
+| 添加        | Beta        | 向 _user_ 添加了 API _findMeetingTimes_to。   |
 
 ## <a name="april-2016"></a>2016 年 4 月
 
