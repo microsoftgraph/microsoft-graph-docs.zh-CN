@@ -4,12 +4,12 @@ description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1845bdbc349712141c5e356acaaafb8ba1c49aba
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3eabe2fc411362a8c10337748205aff7a38509bb
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964457"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642532"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -17,9 +17,9 @@ ms.locfileid: "27964457"
 
 该资源支持：
 
-- 将您自己的数据添加到自定义属性，作为[扩展](/graph/extensibility-overview)。
+- 将你自己的数据作为[扩展](/graph/extensibility-overview)添加到自定义属性。
 - 订阅[更改通知](/graph/webhooks)。
-- 通过提供 [delta](../api/user-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
+- 通过提供 [delta](../api/user-delta.md) 函数，使用 [delta 查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
 ## <a name="methods"></a>方法
 
@@ -29,14 +29,14 @@ ms.locfileid: "27964457"
 |[Create user](../api/user-post-users.md) |[user](user.md)| 新建用户对象。|
 |[Get user](../api/user-get.md) | [user](user.md) |读取 user 对象的属性和关系。|
 |[Update user](../api/user-update.md) | [user](user.md) |更新 user 对象。 |
-|[Delete user](../api/user-delete.md) | 无 |删除 user 对象。 |
+|[Delete user](../api/user-delete.md) | None |删除 user 对象。 |
 |[List messages](../api/user-list-messages.md) |[Message](message.md) collection| 获取已登录用户的邮箱中的所有邮件。|
 |[Create Message](../api/user-post-messages.md) |[Message](message.md)| 通过发布到邮件集合新建邮件。|
 |[List mailFolders](../api/user-list-mailfolders.md) |[MailFolder](mailfolder.md) collection| 在已登录用户的根文件夹下获取邮件文件夹集合。 |
 |[Create mailFolder](../api/user-post-mailfolders.md) |[MailFolder](mailfolder.md)| 通过发布到 mailFolders 集合创建新 MailFolder。|
 |[sendMail](../api/user-sendmail.md)|None|发送请求正文中指定的邮件。|
 |[List events](../api/user-list-events.md) |[Event](event.md) collection| 获取用户邮箱中的 event 对象列表。该列表包含单个实例会议和系列主控形状。|
-|[创建事件](../api/user-post-events.md) |[Event](event.md)| 通过发布到事件集合创建新事件。|
+|[Create event](../api/user-post-events.md) |[Event](event.md)| 通过发布到事件集合创建新事件。|
 |[List calendars](../api/user-list-calendars.md) |[Calendar](calendar.md) collection| 获取 Calendar 对象集合。|
 |[Create calendar](../api/user-post-calendars.md) |[Calendar](calendar.md)| 通过发布到日历集合创建新日历。|
 |[List calendarGroups](../api/user-list-calendargroups.md) |[CalendarGroup](calendargroup.md) collection| 获取 CalendarGroup 对象集合。|
@@ -53,7 +53,7 @@ ms.locfileid: "27964457"
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| 从 ownedObjects 导航属性中获取此用户所拥有的目录对象。|
 |[List registeredDevices](../api/user-list-registereddevices.md) |[directoryObject](directoryobject.md) collection| 从 registeredDevices 导航属性中获取为此用户注册的设备。|
 |[List createdObjects](../api/user-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| 从 createdObjects 导航属性中获取此用户创建的目录对象。|
-|[assignLicense](../api/user-assignlicense.md)|[用户](user.md)|为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。|
+|[assignLicense](../api/user-assignlicense.md)|[user](user.md)|为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。|
 |[List licenseDetails](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) 集合| 获取 licenseDetails 对象集合。|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|返回用户是其成员的所有组。检查是可传递的。|
@@ -72,131 +72,132 @@ ms.locfileid: "27964457"
 |:---------------|:--------|:----------|
 |aboutMe|String|任意形式的文本输入字段，用于介绍用户自身。|
 |accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。创建用户时此属性是必需的。支持 $filter。    |
-|ageGroup|字符串|设置用户的年龄组。 允许值： `null`， `minor`，`notAdult`和`adult`。 请参阅[法律期限组属性定义](#legal-age-group-property-definitions)有关详细信息。 |
+|ageGroup|String|设置用户的年龄组。 允许的值：`null`、`minor`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。 |
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|分配给该用户的许可证。不可为 null。            |
-|assignedPlans|[assignedPlan](assignedplan.md) 集合|分配给该用户的计划。只读。不可为 null。 |
+|assignedPlans|[assignedPlan](assignedplan.md) collection|分配给该用户的计划。只读。不可为 null。 |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |businessPhones|String collection|用户的电话号码。注意：虽然这是字符串集合，但是只能为该属性设置一个号码。|
-|城市|字符串|用户所在的城市。支持 $filter。|
+|城市|String|用户所在的城市。支持 $filter。|
 |companyName | String | 与用户关联的公司名称。 只读。 |
-|consentProvidedForMinor|字符串|设置是否已为未成年人获得许可。 允许值： `null`， `granted`，`denied`和`notRequired`。 请参阅[法律期限组属性定义](#legal-age-group-property-definitions)有关详细信息。|
+|consentProvidedForMinor|String|设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
 |country|String|用户所在的国家/地区；例如，“美国”或“英国”。支持 $filter。|
-|createdDateTime | DateTimeOffset |用户对象的创建的日期。 |
-|department|字符串|用户工作部门的名称。支持 $filter。|
-|displayName|字符串|用户通讯簿中显示的名称。这通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
-|givenName|字符串|用户的名。支持 $filter。|
+|createdDateTime | DateTimeOffset |用户对象的创建日期。 |
+|department|String|用户工作部门的名称。支持 $filter。|
+|displayName|String|用户通讯簿中显示的名称。这通常是用户名字、中间名首字母和姓氏的组合。此属性在创建用户时是必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
+|givenName|String|用户的名。支持 $filter。|
 |hireDate|DateTimeOffset|用户的雇佣日期。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |id|String|用户的唯一标识符。继承自 [directoryObject](directoryobject.md)。键。不可为 null。只读。|
 |imAddresses|String collection|用户的即时消息 IP 语音 (VOIP) 会话初始协议 (SIP) 地址。只读。|
 |interests|String collection|用户介绍自身兴趣的列表。|
-|jobTitle|字符串|用户的职务。支持 $filter。|
-|legalAgeGroupClassification|String| 企业应用程序用于确定的用户的法律年龄组。 此属性是只读的计算基于`ageGroup`和`consentProvidedForMinor`属性。 允许值： `null`， `minorWithOutParentalConsent`， `minorWithParentalConsent`， `minorNoParentalConsentRequired`，`notAdult`和`adult`。 引用[法律期限组属性定义](#legal-age-group-property-definitions)有关详细信息。）|
-|mail|字符串|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。只读。支持 $filter。|
+|jobTitle|String|用户的职务。支持 $filter。|
+|legalAgeGroupClassification|String| 由企业应用程序用于确定用户的法定年龄组。 此属性为只读状态，基于 `ageGroup` 和 `consentProvidedForMinor` 属性计算得出。 允许的值：`null`、`minorWithOutParentalConsent`、`minorWithParentalConsent`、`minorNoParentalConsentRequired`、`notAdult` 和 `adult`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
+|licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) 集合|此用户的许可证分配状态。 只读。|
+|mail|String|用户的 SMTP 地址，例如，“jeff@contoso.onmicrosoft.com”。只读。支持 $filter。|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|已登录用户的主邮箱的设置。可以[获取](../api/user-get-mailboxsettings.md)或[更新](../api/user-update-mailboxsettings.md)用于向传入邮件发送自动答复、区域设置和时区的设置。|
-|mailNickname|字符串|用户的邮件别名。创建用户时必须指定此属性。支持 $filter。|
+|mailNickname|String|用户的邮件别名。创建用户时必须指定此属性。支持 $filter。|
 |mobilePhone|String|用户的主要移动电话号码。|
 |mySite|String|用户个人网站的 URL。|
 |officeLocation|String|用户公司地点的办公室位置。|
-|onPremisesDomainName|字符串| 包含本地`domainFQDN`，也称为 dnsDomainName 从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 只读。 |
-|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选，也不可筛选。 为`onPremisesSyncEnabled`用户，此组属性是主要的内部部署和是只读的。 仅限云用户 (其中`onPremisesSyncEnabled`为 false)，这些属性的创建过程中可以设置或更新。 |
-|onPremisesImmutableId|字符串|此属性用于将内部部署 Active Directory 用户帐户对其 Azure AD 用户对象相关联。 在此图中创建新的用户帐户，如果您使用的联盟的域用户的**userPrincipalName** (UPN) 属性时，必须指定此属性。 **重要：****$** 和**\_** 指定此属性时，不能使用字符。 支持 $filter。                            |
+|onPremisesDomainName|String| 包含从本地目录同步的本地 `domainFQDN`（也称为 dnsDomainName）。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
+|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|包含用户的 extensionAttributes 1-15。 请注意，单个扩展属性既不可选择，也不可筛选。 对于 `onPremisesSyncEnabled` 用户，此属性集是在本地主控的，并且为只读。 对于只使用云的用户（其中 `onPremisesSyncEnabled` 为 false），可以在创建或更新期间设置这些属性。 |
+|onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。 如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，必须在创建新用户帐户时指定此属性。 **重要说明：** 指定此属性时不能使用 **$** 和 **\_** 字符。 支持 $filter。                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|表示上一次对象与本地目录同步的时间；例如：“2013-02-16T03:04:54Z”。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
-|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md)集合| 设置过程中使用 Microsoft 同步产品时错误。 |
-|onPremisesSamAccountName|字符串| 包含本地`samAccountName`从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 只读。 |
-|onPremisesSecurityIdentifier|字符串|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。|
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) 集合| 在预配期间使用 Microsoft 同步产品时发生的错误。 |
+|onPremisesSamAccountName|String| 包含从本地目录同步的本地 `samAccountName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
+|onPremisesSecurityIdentifier|String|包含从本地同步到云的用户的本地安全标识符 (SID)。只读。|
 |onPremisesSyncEnabled|Boolean| 如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。只读 |
-|onPremisesUserPrincipalName|字符串| 包含本地`userPrincipalName`从内部部署目录同步。 正在同步到 Azure Active Directory Azure AD 连接通过其内部部署目录的客户仅填充属性。 只读。 |
-|passwordPolicies|字符串|指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
+|onPremisesUserPrincipalName|String| 包含从本地目录同步的本地 `userPrincipalName`。 仅当客户正在通过 Azure AD Connect 将其本地目录同步到 Azure Active Directory 时，才会填充该属性。 只读。 |
+|passwordPolicies|String|指定用户的密码策略。此值是一个枚举，具有一个可能值“DisableStrongPassword”，允许指定比默认策略弱的密码。还可以指定“DisablePasswordExpiration”。可以同时指定这两个策略；例如：“DisablePasswordExpiration、DisableStrongPassword”。|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
-|postalCode|字符串|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。|
-|preferredDataLocation|字符串|用户首选的数据位置。 有关详细信息，请参阅[OneDrive 联机多地理](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
-|preferredLanguage|字符串|用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。|
+|postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。|
+|preferredDataLocation|String|用户的首选数据位置。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
+|preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码；例如“EN-US”。|
 |preferredName|String|用户的首选名称。|
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) 集合|为用户设置的计划。只读。不可为 null。 |
+|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|为用户设置的计划。只读。不可为 null。 |
 |proxyAddresses|String collection|例如：`["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` 需要多值属性筛选器表达式的 **any** 运算符。只读，不可为 Null。支持 $filter。          |
 |responsibilities|String collection|供用户枚举其职责的列表。|
 |schools|String collection|供用户枚举其学习过的学校列表。|
 |skills|String collection|供用户枚举其技能的列表。|
-|state|字符串|用户地址中的省/市/自治区或省。支持 $filter。|
+|state|String|用户地址中的省/市/自治区或省。支持 $filter。|
 |streetAddress|String|用户公司地点的街道地址。|
-|surname|字符串|用户的姓氏。支持 $filter。|
-|usageLocation|字符串|两个字母的国家/地区代码（ISO 标准 3166）。为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。示例包括：“US”、“JP”和“GB”。不可为 null。支持 $filter。|
+|surname|String|用户的姓氏。支持 $filter。|
+|usageLocation|String|两个字母的国家/地区代码（ISO 标准 3166）。为检查服务在国家/地区的可用性，这对根据法律要求将分配许可证的用户而言是必需的。示例包括：“US”、“JP”和“GB”。不可为 null。支持 $filter。|
 |userPrincipalName|String|用户的用户主体名称 (UPN)。UPN 是用户基于 Internet 标准 RFC 822 的 Internet 式登录名。按照惯例，此名称应映射到用户的电子邮件名称。常规格式是 alias@domain，其中，domain 必须位于租户的已验证域集合中。创建用户时此属性是必需的。可从 [组织](organization.md) 的 **verifiedDomains** 属性访问租户的已验证域。支持 $filter 和 $orderby。
-|userType|字符串|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。支持 $filter。          |
+|userType|String|可用于对目录中的用户类型分类的字符串值，例如“成员”和“访客”。支持 $filter。          |
 
-### <a name="legal-age-group-property-definitions"></a>法律期限组属性定义
+### <a name="legal-age-group-property-definitions"></a>法定年龄组属性定义
 
-本节介绍如何三个 age 组属性 (`legalAgeGroupClassification`，`ageGroup`和`consentProvidedForMinor`) 的 Azure AD 管理员和企业应用程序开发人员用于满足期限相关法规。
+本部分介绍 Azure AD 管理员和企业应用程序开发人员如何使用三个法定年龄组属性（`legalAgeGroupClassification`、`ageGroup` 和 `consentProvidedForMinor`）来满足与年龄相关的法规。
 
-例如： Cameron 是管理员在英国 Holyport 小学的目录。 学校本年度开头他使用许可书面工作征得次要的父级基于 United Kingdom 的年龄相关法规。 从父获得许可允许 Holyport 学校和 Microsoft 应用程序使用次要的帐户。 Cameron 然后创建所有帐户，并设置为"次要"ageGroup 和 consentProvidedForMinor 到"授予"。 使用学生的应用程序就可以禁止不合适进行评级的功能。
+例如：Cameron 是英国 Holyport 小学的名录管理员。 新学年开始，他根据英国与年龄相关的法规，使用入学文件获得未成年人父母的同意。 征得父母同意后，Holyport 学校和 Microsoft 应用可以使用未成年人的帐户。 Cameron 随后创建所有帐户，将 ageGroup 设置为“minor”，并将 consentProvidedForMinor 设置为“granted”。 然后，他的学生使用的应用程序可以禁止不适合未成年人的功能。
 
-#### <a name="legal-age-group-classification"></a>法律期限组分类
+#### <a name="legal-age-group-classification"></a>法定年龄组分类
 
-企业应用程序开发人员使用此只读属性以确保正确处理根据其法律年龄组的用户。 计算基于用户的`ageGroup`和`consentProvidedForMinor`属性。
+企业应用程序开发人员使用此只读属性来确保根据用户的法定年龄组正确处理用户。 此属性是基于用户的 `ageGroup` 和 `consentProvidedForMinor` 属性计算得出的。
 
 | 值    | #  |说明|
 |:---------------|:--------|:----------|
-|null|0|默认值，不`ageGroup`已经为用户设置。|
-|minorWithoutParentalConsent |1|（留作将来使用）|
-|minorWithParentalConsent|2| 用户被视为基于其所在国家/地区的年龄相关规章次要或区域和管理员的帐户已从父或监护人获取适当许可。|
-|成人|3|用户视为成人基于其国家或地区的年龄相关法规。|
-|notAdult|4|是用户距离的国家或地区具有其他期限相关法规 （如美国、 英国、 欧盟或韩国），并且用户的年龄之间次要和成人期限 （作为规定根据的国家或地区）。 通常，这意味着青少年都会被视为`notAdult`监管国家/地区。|
-|minorNoParentalConsentRequired|5|用户是次要，但从的国家或地区已没有与时间有关的法规。|
+|空|0|默认值，尚未给用户设置 `ageGroup`。|
+|minorWithoutParentalConsent |1|（保留以备今后使用）|
+|minorWithParentalConsent|2| 根据用户所在国家或地区与年龄相关的法规，将用户视为未成年人，并且帐户管理员已相应获得父母或监护人的同意。|
+|adult|3|根据用户所在国家或地区与年龄相关的法规，将用户视为成年人。|
+|notAdult|4|用户所在国家或地区存在其他与年龄相关的法规（例如美国、英国、欧盟和韩国），用户的年龄介于未成年人和成年人之间（根据所在国家或地区的规定）。 通常，这意味着会在管控的国家或地区将青少年视为 `notAdult`。|
+|minorNoParentalConsentRequired|5|用户是未成年人，但所在国家或地区没有与年龄相关的法规。|
 
-#### <a name="age-group-and-minor-consent"></a>年龄组和次要同意
+#### <a name="age-group-and-minor-consent"></a>年龄组和未成年人同意
 
-年龄组和次要同意属性是 Azure AD 管理员用来帮助确保正确基于调控用户的国家或地区的年龄相关的管理法规规则处理帐户使用的可选属性。
+年龄组和未成年人同意属性是 Azure AD 管理员使用的可选属性，可帮助确保根据用户所在国家或地区与年龄相关的监管规则正确处理帐户的使用。
 
 #### <a name="agegroup-property"></a>ageGroup 属性
 
 | 值    | #  |说明|
 |:---------------|:--------|:----------|
-|null|0|默认值，不`ageGroup`已经为用户设置。|
-|次要|1|用户是考虑次要。|
-|notAdult|2|用户是从具有法定法规美国、 英国、 欧盟或韩国的国家/地区） 并且用户的年龄孩子期限 （根据国家/地区） 的上限超过和成人年龄小于下限 （作为规定根据的国家或地区）. 基本上，因此视为青少年`notAdult`监管国家/地区。|
-|成人|3|用户应该为成人内容处理。|
+|空|0|默认值，尚未给用户设置 `ageGroup`。|
+|minor|1|将用户视为未成年人。|
+|notAdult|2|用户所在国家或地区存在其他法规（例如美国、英国、欧盟和韩国），用户年龄超过儿童年龄上限（根据所在国家或地区的规定）且低于成年人年龄下限（根据所在国家或地区的规定）。 因此，基本上会在管控的国家或地区将青少年视为 `notAdult`。|
+|adult|3|应将用户视为成年人。|
 
 #### <a name="consentprovidedforminor-property"></a>consentProvidedForMinor 属性
 
 | 值    | #  |说明|
 |:---------------|:--------|:----------|
-|null|0|默认值，不`consentProvidedForMinor`已经为用户设置。|
-|授予|1|已为用户都具有帐户获得许可。|
-|denied|2|用户具有帐户未获得许可。|
-|notRequired|3|用户从不需要同意位置。|
+|空|0|默认值，尚未给用户设置 `consentProvidedForMinor`。|
+|granted|1|已就用户拥有帐户获得同意。|
+|denied|2|尚未就用户拥有帐户获得同意。|
+|notRequired|3|用户所在地不要求获得同意。|
  
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|activities|[userActivity](projectrome-activity.md)集合|跨设备的用户的活动。 只读。 可为 Null。|
-|calendar|[Calendar](calendar.md)|用户的主日历。只读。|
+|activities|[userActivity](projectrome-activity.md) 集合|跨设备的用户活动。 只读。 可为 Null。|
+|日历|[Calendar](calendar.md)|用户的主日历。只读。|
 |calendarGroups|[CalendarGroup](calendargroup.md) collection|用户的日历组。只读。可为 Null。|
 |calendarView|[Event](event.md) collection|日历的日历视图。只读。可为 Null。|
-|calendars|[日历](calendar.md) 集合|用户的日历。只读。可为 Null。|
+|calendars|[Calendar](calendar.md) collection|用户的日历。只读。可为 Null。|
 |contactFolders|[ContactFolder](contactfolder.md) collection|用户的联系人文件夹。只读。可为 Null。|
 |contacts|[Contact](contact.md) collection|用户的联系人。只读。可为 Null。|
-|createdObjects|[directoryObject](directoryobject.md) 集合|由用户创建的 directory 对象。只读。可为 Null。|
+|createdObjects|[directoryObject](directoryobject.md) collection|由用户创建的 directory 对象。只读。可为 Null。|
 |directReports|[directoryObject](directoryobject.md) collection|向此用户报告的用户和联系人。（其 manager 属性已设置为此用户的用户和联系人。）只读。可为 Null。 |
-|drive|[驱动器](drive.md)|用户的 OneDrive。只读。|
-|驱动器|[驱动器](drive.md) 集合| 该用户的可用驱动器集合。只读。 |
+|drive|[drive](drive.md)|用户的 OneDrive。只读。|
+|drives|[drive](drive.md) 集合| 该用户的可用驱动器集合。只读。 |
 |events|[Event](event.md) collection|用户的事件。默认显示“默认日历”下的事件。只读。可为 Null。|
 |extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。只读。可为 Null。|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
-|licenseDetails|[LicenseDetails](licensedetails.md)集合|此用户的许可证详细信息的集合。 可为 Null。|
-|mailFolders|[MailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
+|licenseDetails|[LicenseDetails](licensedetails.md) 集合|此用户许可证详细信息的集合。 可为空。|
+|mailFolders|[MailFolder](mailfolder.md) collection| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
-|memberOf|[directoryObject](directoryobject.md) 集合|用户所属的组和目录角色。只读。可为 Null。|
-|messages|[邮件](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
+|memberOf|[directoryObject](directoryobject.md) collection|用户所属的组和目录角色。只读。可为 Null。|
+|messages|[Message](message.md) collection|邮箱或文件夹中的邮件。只读。可为 Null。|
 |onenote|[Onenote](onenote.md)| 只读。|
 |outlook|[OutlookUser](outlookuser.md)| 只读。|
-|ownedDevices|[directoryObject](directoryobject.md) 集合|用户拥有的设备。只读。可为 Null。|
-|ownedObjects|[directoryObject](directoryobject.md) 集合|用户拥有的 directory 对象。只读。可为 Null。|
-|人脉|[人员](person.md)集合| 与用户相关的人员。 只读。 可为 Null。
+|ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。只读。可为 Null。|
+|ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。只读。可为 Null。|
+|people|[person](person.md) 集合| 与用户相关的人员。 只读。 可为 Null。
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
-|planner|[plannerUser](planneruser.md)| 计划工具资源可能存在的用户的入口点。 只读。|
-|registeredDevices|[directoryObject](directoryobject.md) 集合|已注册的用户的设备。只读。可为 Null。|
+|planner|[plannerUser](planneruser.md)| 用户可能存在的 Planner 资源入口点。 只读。|
+|registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -381,6 +382,7 @@ ms.locfileid: "27964457"
   "interests": ["string"],
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
+  "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
   "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
   "mailNickname": "string",
