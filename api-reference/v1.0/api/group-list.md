@@ -4,12 +4,12 @@ description: 列出组织中所有可用的组，包括但不限于 Office 365 �
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 5081c5013c1bf7c1a1bfbcff58afe5a83aa67bc9
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 8ede194abffe745bee9a23906b965d43de93cec8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726573"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643739"
 ---
 # <a name="list-groups"></a>列出组
 列出组织中所有可用的组，包括但不限于 Office 365 组。
@@ -17,6 +17,8 @@ ms.locfileid: "28726573"
 此操作在默认情况下仅返回每个组的一部分属性。 这些默认属性将记录在[属性](../resources/group.md#properties)部分中。 
 
 若要获取_非_默认返回的属性，请对组执行 [GET](group-get.md) 操作，并在 `$select` OData 查询选项中指定属性。 请参阅[示例](group-get.md#request-2)。
+
+**hasMembersWithLicenseErrors** 属性是例外。 请参阅关于如何使用此属性的[示例](#request-2)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -58,8 +60,8 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [group](../resources/group.md) 对象集合。 该响应仅包括每个组的默认属性。
 
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
-下面展示了示例请求。
+#### <a name="request-1"></a>请求 1
+下面是一个请求示例。
 <!-- {
   "blockType": "request",
   "name": "get_groups"
@@ -68,10 +70,10 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 GET https://graph.microsoft.com/v1.0/groups
 ```
 
-#### <a name="response"></a>响应
+#### <a name="response-1"></a>响应 1
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回每个组的所有默认属性。
+>**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 在实际调用中会返回每个组的所有默认属性。
 
 <!-- {
   "blockType": "response",
@@ -146,6 +148,44 @@ Content-type: application/json
     ]
 }
 
+```
+#### <a name="request-2"></a>请求 2
+此示例使用 `$filter` 查询选项获取成员在基于组的许可证分配中存在许可证错误的组。 还使用 `$select` 查询选项仅获取响应中每个组的 **id** 和 **displayName** 属性，而非其他默认或非默认属性。
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_withlicenseerrors"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
+```
+
+#### <a name="response-2"></a>响应 2
+下面是一个仅包括所请求的属性的响应示例。
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true,
+  "name": "get_groups_withlicenseerrors"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
+    "value": [
+        {
+            "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+            "displayName": "Library Assist"
+        },
+        {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "displayName": "Golf Assist"
+        }
+    ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
