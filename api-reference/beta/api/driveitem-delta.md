@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 同步驱动器的内容
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 14cc73d9e90c71815e6c72047fe78bf2b325abdd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 17dc3a718260a5a40f1b9b8e778247354085f711
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525316"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735584"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -208,11 +208,22 @@ Content-type: application/json
 * 项目中的 `parentReference` 属性将不包括**路径**的值。之所以出现这种情况，是因为重命名文件夹不会导致从 **delta** 返回文件夹的任何后代。**使用增量时应始终按 id 跟踪项目**。
 * 在 OneDrive for Business 和 SharePoint 中，仅驱动器内的 `root` 文件夹支持 `delta`，其他文件夹并不支持。
 
-* Delta 不会返回以下 DriveItem 属性：
+* 下表中所示，则 delta 查询不会返回某些 DriveItem 属性，具体取决于操作和服务类型。
 
-* **cTag**
-* **lastModifiedBy**
-* **size**
+    **OneDrive for Business**
+    
+    | 操作类型 | 省略增量查询的属性 |
+    |---------|----------|
+    | 创建/修改 | `ctag`, `lastModifiedBy` |
+    | Delete | `ctag`, `lastModifiedBy`, `name` |
+
+
+    **OneDrive （使用者）**
+    
+    | 操作类型 | 省略增量查询的属性 |
+    |---------|----------|
+    | 创建/修改 | 无 |
+    | Delete | `ctag`, `size` |
 
 ## <a name="error-responses"></a>错误响应
 
