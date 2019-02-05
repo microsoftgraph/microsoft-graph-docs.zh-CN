@@ -2,12 +2,12 @@
 title: chatMessage 资源类型
 description: 表示渠道或聊天实体内的单个聊天消息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
 localization_priority: Priority
-ms.openlocfilehash: 98b9918d5763d6003a3c9a177057abe2e7b415ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ef91281eff0cc61f992f659bd33debec03841bb4
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517965"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735577"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "29517965"
 |messageType|String|消息类型，当前支持的值包括：message、chatEvent、Typing|
 |createdDateTime|dateTimeOffset|只读。 创建消息时的时间戳|
 |lastModifiedDateTime|dateTimeOffset|只读。 编辑/更新消息时的时间戳|
-|isDeleted|boolean|表示消息是否已被软删除|
+|deleted|布尔值|指示消息是否已被软删除|
 |deletedDateTime|dateTimeOffset|只读。 删除消息时的时间戳 |
 |主题|string|消息主题行。 可选|
 |正文|[itemBody](itembody.md)|消息内容的纯文本/HTML 表示。 默认返回纯文本，应用程序可选择 HTML 作为查询参数的一部分|
@@ -53,7 +53,7 @@ ms.locfileid: "29517965"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "isDeleted",
+    "deleted",
     "deletedDateTime",
     "attachments",
     "importance",

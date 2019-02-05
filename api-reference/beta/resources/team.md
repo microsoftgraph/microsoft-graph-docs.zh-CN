@@ -4,12 +4,12 @@ description: 'Microsoft Teams 中的团队是频道的集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6ed8b298336563d2b07ce2d6a83b90c9400fe53f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 80283edd8d0a4ea2f9abca2a51fda3f96752d96e
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643774"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735597"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -51,6 +51,7 @@ Microsoft Teams 中的团队是[频道](channel.md)的集合。 频道表示团�
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| 组和团队的可见性。 默认值为 Public。 |
 |funSettings|[teamFunSettings](teamfunsettings.md) |用于配置团队中 Giphy、成员和贴纸使用情况的设置。|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |用于配置来宾是否可以在团队中创建、更新或删除频道的设置。|
+|internalId | 字符串 | 已在一些位置（如审核日志/[Office 365 管理活动 API](https://docs.microsoft.com/zh-CN/office/office-365-management-api/office-365-management-activity-api-reference)）使用的团队唯一 ID。 |
 |isArchived|Boolean|此团队是否处于只读模式。 |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |用于配置成员是否可以在团队中执行某些操作（例如，创建频道和添加机器人）的设置。|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |用于配置团队中的消息传递和提及的设置。|
@@ -83,6 +84,7 @@ Microsoft Teams 中的团队是[频道](channel.md)的集合。 频道表示团�
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "internalId": "19:...big.number...@thread.skype",
   "isArchived": false,
   "webUrl": "https://...longUrl..."
 }

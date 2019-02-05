@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 同步驱动器的内容
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 727877f0fde95586f8223557aa1b841507b91c02
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: eac24ac60b176547b56d75ba23972e649c025578
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987844"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735591"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -50,9 +50,9 @@ GET /users/{userId}/drive/root/delta
 
 | 参数   | 类型  | 说明                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | 可选。 如果未指定，枚举层次结构的当前状态。 如果`latest`，返回空与最新的增量令牌的响应。 如果以前的增量令牌，该令牌以来返回新的状态。
+| 令牌  | 字符串 | 可选。 如果未指定，则枚举层次结构的当前状态。 如果为 `latest`，则返回具有最新增量令牌的空响应。 如果为之前的增量令牌，则返回自该令牌起的新状态。
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持使用 `$select`、`$expand` 和 `$top` [OData 查询参数](/graph/query-parameters)自定义响应。
 
@@ -206,10 +206,22 @@ Content-type: application/json
 * 项目中的 `parentReference` 属性将不包括**路径**的值。之所以出现这种情况，是因为重命名文件夹不会导致从 **delta** 返回文件夹的任何后代。**使用增量时应始终按 id 跟踪项目**。
 * 在 OneDrive for Business 和 SharePoint 中，仅驱动器内的 `root` 文件夹支持 `delta`，其他文件夹并不支持。
 
-* Delta 不会返回以下 DriveItem 属性：
-  * **cTag**
-  * **lastModifiedBy**
-  * **size**
+* Delta 查询不会返回某些 DriveItem 属性，具体取决于操作和服务类型，如下表所示。
+
+    **OneDrive for Business**
+    
+    | 操作类型 | Delta 查询忽略的属性 |
+    |---------|----------|
+    | 创建/修改 | `ctag`, `lastModifiedBy` |
+    | 删除 | `ctag`, `lastModifiedBy`, `name` |
+
+
+    **OneDrive（消费者）**
+    
+    | 操作类型 | Delta 查询忽略的属性 |
+    |---------|----------|
+    | 创建/修改 | 不适用 |
+    | 删除 | `ctag`, `size` |
 
 ## <a name="error-responses"></a>错误响应
 
