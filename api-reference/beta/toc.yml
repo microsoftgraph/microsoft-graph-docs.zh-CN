@@ -687,7 +687,7 @@ items:
           href: api/participant-mute.md
         - name: 将所有参与者设为都静音
           href: api/participant-muteall.md
-        - name: 列出参与者
+        - name: List participants
           href: api/call-list-participants.md
         - name: 邀请参与者
           href: api/participant-invite.md
@@ -6642,13 +6642,13 @@ items:
         href: resources/program.md
         items:
         - name: Create
-          href: api/program-list.md
+          href: api/program-create.md
         - name: Delete
-          href: api/program-list.md
+          href: api/program-delete.md
         - name: 列表
           href: api/program-list.md
         - name: Update
-          href: api/program-list.md
+          href: api/program-update.md
         - name: 列表控件
           href: api/program-listcontrols.md
       - name: 程序控件
@@ -6827,13 +6827,13 @@ items:
     - name: 目录设置
       href: resources/directorysetting.md
       items:
-      - name: Create setting
+      - name: 创建设置
         href: api/directorysetting-post-settings.md
-      - name: Get setting
+      - name: 获取设置
         href: api/directorysetting-get.md
-      - name: List settings
+      - name: 列出设置
         href: api/directorysetting-list.md
-      - name: Update setting
+      - name: 更新设置
         href: api/directorysetting-update.md
       - name: 删除设置
         href: api/directorysetting-delete.md
@@ -8325,9 +8325,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 443efbc89a19ae068b60bc47eb9b967f5b893aaa
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 8f2748cef3f6be2b4910cec1958cb1e61cf2268c
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641748"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735612"
