@@ -4,12 +4,12 @@ description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 68f3c5d9f1ee8086ce6f008e621feb8ca4598e7f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: a99d63bd880fd37359ba1d72452093443d41236e
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641279"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745571"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -42,6 +42,8 @@ ms.locfileid: "29641279"
 |[删除所有者](../api/group-delete-owners.md) | 无 |通过 **owners** 导航属性，删除 Office 365 组、安全组或启用邮件的安全组的所有者。|
 |[Add member](../api/group-post-members.md) |无| 通过发布到 **members** 导航属性将用户或组添加到此组（仅支持安全组和启用邮件的安全组）。|
 |[列出成员](../api/group-list-members.md) |[directoryObject](directoryobject.md) 集合| 从 **members** 导航属性中获取属于此组的直接成员的用户和组。|
+|[List transitive members](../api/group-list-transitivemembers.md) |[directoryObject](directoryobject.md) 集合| 获取属于此组成员（包括嵌套成员）的用户、组和设备。|
+|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出用户是其成员的所有组。 此操作是可传递的，并包括此组以嵌套方式所属的组。 |
 |[删除成员](../api/group-delete-members.md) | 无 |通过 **members** 导航属性删除 Office 365 组、安全组或启用邮件的安全组中的成员。可以删除用户或其他组。 |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|在一列组中检查此组的成员身份。此函数是可传递的。|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。|
@@ -177,15 +179,29 @@ ms.locfileid: "29641279"
     "conversations",
     "createdOnBehalfOf",
     "drive",
+    "drives",
     "events",
     "extensions",
+    "groupLifecyclePolicies",
     "memberOf",
     "members",
     "onenote",
     "owners",
     "photo",
+    "photos",
+    "planner",
     "rejectedSenders",
-    "threads"
+    "settings",
+    "sites",
+    "threads",
+
+    "allowExternalSenders",
+    "assignedLicenses",
+    "autoSubscribeNewMembers",
+    "hasMembersWithLicenseErrors",
+    "isSubscribedByMail",
+    "licenseProcessingState",
+    "unseenCount"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.group",
