@@ -55,6 +55,7 @@ items:
             href: office365-groups-concept-overview.md
           - name: 日历
             href: outlook-calendar-concept-overview.md
+            displayName: Outlook
             items:
               - name: 查找会议时间
                 href: findmeetingtimes-example.md
@@ -68,6 +69,7 @@ items:
                 href: outlook-immutable-id.md
           - name: 跨设备体验
             href: cross-device-concept-overview.md
+            displayName: Project Rome
             items:
               - name: 活动源
                 href: activity-feed-concept-overview.md
@@ -79,21 +81,27 @@ items:
                 href: cross-device-app-configuration.md
           - name: 客户预订（预览版）
             href: booking-concept-overview.md
+            displayName: 'Bookings, Microsoft Bookings'
           - name: 数据访问（预览版）
             href: data-connect-concept-overview.md
+            displayName: Microsoft Graph data connect
             items:
               - name: 入门
                 href: data-connect-get-started.md
           - name: 设备和应用
             href: intune-concept-overview.md
+            displayName: Intune
           - name: 教育
             href: education-concept-overview.md
           - name: 文件
             href: onedrive-concept-overview.md
+            displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
           - name: 身份和访问控制
             href: azuread-identity-access-management-concept-overview.md
+            displaName: 'Azure AD, Microsoft identity platform'
           - name: 邮件
             href: outlook-mail-concept-overview.md
+            displayName: 'Outlook, Outlook mail'
             items:
               - name: 自动发送邮件
                 href: outlook-create-send-messages.md
@@ -107,6 +115,7 @@ items:
                 href: outlook-send-mail-from-other-user.md
           - name: 注释
             href: integrate-with-onenote.md
+            idsplayName: OneNote
             items:
               - name: 获取 OneNote 内容
                 href: onenote-get-content.md
@@ -135,6 +144,7 @@ items:
                 href: onenote-error-codes.md
           - name: 个人联系人
             href: outlook-contacts-concept-overview.md
+            displayName: 'Outlook, Outlook contacts, Outlook contact, People'
             items:
               - name: 获取共享联系人
                 href: outlook-get-shared-contacts-folders.md
@@ -158,6 +168,7 @@ items:
                     href: security-qradar-siemintegration.md
           - name: 网站和列表
             href: sharepoint-concept-overview.md
+            displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
           - name: 社交智能
             href: social-intel-concept-overview.md
             items:
@@ -165,8 +176,10 @@ items:
                 href: people-example.md
           - name: 任务和计划
             href: planner-concept-overview.md
+            displayName: Planner
           - name: 团队合作
             href: teams-concept-overview.md
+            displayName: Microsoft Teams
             items:
               - name: 创建组和团队
                 href: teams-create-group-and-team.md
@@ -176,6 +189,7 @@ items:
                 href: teams-configuring-builtin-tabs.md
           - name: 工作簿和图表
             href: excel-concept-overview.md
+            displayName: Excel
             items:
               - name: 管理会话
                 href: excel-manage-sessions.md
@@ -216,8 +230,10 @@ items:
                 href: throttling.md
               - name: 更改通知
                 href: webhooks.md
+                displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
               - name: 跟踪更改
                 href: delta-query-overview.md
+                displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
                 items:
                   - name: 获取事件更改（示例）
                     href: delta-query-events.md
@@ -229,6 +245,7 @@ items:
                     href: delta-query-users.md
               - name: 添加自定义数据
                 href: extensibility-overview.md
+                displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
                 items:
                   - name: 使用开放扩展（示例）
                     href: extensibility-open-users.md
