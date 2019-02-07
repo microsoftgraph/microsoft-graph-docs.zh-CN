@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph 中的活动源 API 启用跨设备体验
 description: 如果你使用活动，这些 Microsoft 体验可以开始在应用中推动交互。 此外，还可以在应用中显示这些活动，以帮助用户恢复他们之前在任何平台（包括 Windows、Android 和 iOS）、任何设备上所做的操作。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: d264ca473dae66a945144c69cb64416d7c703611
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: HT
+ms.openlocfilehash: 8e65615d46e795f1bd4d11d68ff291d938ac6c82
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964940"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760858"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>使用 Microsoft Graph 中的活动源 API 启用跨设备体验
 
@@ -25,8 +25,6 @@ ms.locfileid: "27964940"
 
 ### <a name="let-microsoft-help-drive-app-usage-with-features-that-reach-hundreds-of-millions-of-customers"></a>让 Microsoft 通过可服务于数亿客户的功能来帮助提升应用的使用率
 与用户活动集成不仅能使用户无缝地继续应用中的活动，而且还意味着可以利用一组不断发展的适用于 Windows、iOS 和 Android 的 Microsoft 体验，这些体验旨在提高用户生产力并帮助用户在所有设备上与应用互动。 通过使用 Microsoft Graph，可仅与用户活动进行一次集成，即可服务于数亿消费者和组织中使用 Windows 以及适用于 iOS 和 Android 设备的 Microsoft 产品的数千万客户。
-
-![Windows 日程安排屏幕截图](https://winblogs.azureedge.net/win/2017/05/22-591a3ec9833f4.jpg)
 
 ## <a name="see-also"></a>另请参阅
 

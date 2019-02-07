@@ -4,12 +4,12 @@ description: 'Microsoft Teams 是团队合作和智能通信的终极中心。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: eb87d270822193632fde376950ab4d52515237b6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e1ac6977add3de95b76f27a5e9184ee9f79e798a
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967978"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760816"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 
@@ -82,7 +82,7 @@ Microsoft Teams API 可以增强 Teams 内部和外部的应用：
 
 ## <a name="next-steps"></a>后续步骤
 
-- 观看[概述视频](http://aka.ms/teamsgraph/v1/video)。
+- 观看[概述视频](https://aka.ms/teamsgraph/v1/video)。
 - 了解如何[使用 Microsoft Teams API](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)。
 - 深入了解[团队](/graph/api/resources/team?view=graph-rest-1.0)、[渠道](/graph/api/resources/channel?view=graph-rest-1.0)和[组](/graph/api/resources/group?view=graph-rest-1.0)资源的方法、属性和关系。
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。

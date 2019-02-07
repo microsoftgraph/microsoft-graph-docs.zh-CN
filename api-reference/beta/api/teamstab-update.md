@@ -4,12 +4,12 @@ description: 更新指定的选项卡的属性。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 031f6f91576df2b19382e78461e6a42e2274ae0c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7a87839a1a6a151708b485d8c3fec9657f21f11a
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576176"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760963"
 ---
 # <a name="update-tab"></a>更新选项卡
 
@@ -27,7 +27,7 @@ ms.locfileid: "29576176"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序                            | Group.ReadWrite.All                         |
 
-> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 ```http
@@ -56,7 +56,7 @@ Content-type: application/json
 Content-length: 211
 
 {
-  "name": "My Contoso Tab - updated"
+  "displayName": "My Contoso Tab - updated"
 }
 ```
 #### <a name="response"></a>响应
@@ -66,7 +66,7 @@ Content-type: application/json
 
 {
   "id": "tabId",
-  "name": "My Contoso Tab - updated",
+  "displayName": "My Contoso Tab - updated",
   "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
@@ -81,7 +81,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-[配置到内置选项卡的类型](/graph/teams-configuring-builtin-tabs)
+[配置内置选项卡类型](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
