@@ -4,12 +4,12 @@ description: 新建团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0798ca15e61dcb9522019ba855f5b2e329b97356
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: e34a095597064401f59ad5f78f8ca092e93b94b4
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643844"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745529"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -294,7 +294,11 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>另请参阅
 
+- [可用模板](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)
+- [Teams 零售模板入门](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [Teams 医疗保健模板入门](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [创建包含团队的组](/graph/teams-create-group-and-team)
+
 <!-- {
   "type": "#page.annotation",
   "suppressions": [

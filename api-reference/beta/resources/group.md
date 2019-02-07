@@ -4,19 +4,18 @@ description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: ef94dc2b6fc6b86e3cae810dd25167b2a6eda8c4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: e350ebe21b9db1f4e0b9b954a6621a1d26e81d29
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641762"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745557"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure Active Directory (Azure AD) 组，可以是 Office 365 组、Microsoft Teams 中的团队、动态组或安全组。
-继承自 [directoryObject](directoryobject.md)。
+表示 Azure Active Directory (Azure AD) 组，可以是 Office 365 组（Microsoft Teams 中的团队）、动态组或安全组。继承自 [directoryObject](directoryobject.md)。
 
 出于性能原因，默认情况下 [create](../api/group-post-groups.md)、[get](../api/group-get.md) 和 [list](../api/group-list.md) 操作仅返回更常用属性的子集。 这些_默认_属性将记录在[属性](#properties)部分中。 若要获取非默认返回的任一属性，请在 `$select` OData 查询选项中指定这些属性。 请参阅[示例](../api/group-get.md#request-2)。
 
@@ -48,10 +47,10 @@ ms.locfileid: "29641762"
 |[Remove member](../api/group-delete-members.md) | 无 |通过 **members** 导航属性删除 Office 365 组、安全组或启用邮件的安全组中的成员。可以删除用户或其他组。 |
 |[列出 memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) 集合| 通过 memberOf 导航属性，获取此组是其直接成员的组和管理单元。|
 |[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出此用户所属的组和管理单元。 此操作是可传递的，并包括此组以嵌套方式所属的组。 |
-|[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|检查组列表中的成员身份。 此函数可传递。|
+|[checkMemberGroups](../api/group-checkmembergroups.md)|String 集合|在一列组中检查成员身份。此函数是可传递的。|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|返回此组是其成员的所有组。此函数是可传递的。|
-|[getMemberObjects](../api/group-getmemberobjects.md)|String 集合|返回组所属的所有组和管理单元。 此函数可传递。 |
-|[Create setting](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |基于 directorySettingTemplate 创建设置对象。 POST 请求必须为模板中定义的所有设置提供 settingValues。 只有组特定模板可用于此操作。|
+|[getMemberObjects](../api/group-getmemberobjects.md)|String 集合|返回组所属的所有组和管理单元。此函数是可传递的。 |
+|[Create setting](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |基于 directorySettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。|
 |[Get setting](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |读取特定设置对象的属性。|
 |[List settings](../api/directorysetting-list.md) | [directorySetting](directorysetting.md) 集合 |列出所有设置对象的属性。|
 |[Update setting](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)  |更新 setting 对象。 |
@@ -180,22 +179,38 @@ ms.locfileid: "29641762"
   "blockType": "resource",
   "optionalProperties": [
     "acceptedSenders",
-    "appRoleAssignments",
     "calendar",
     "calendarView",
     "conversations",
     "createdOnBehalfOf",
     "drive",
+    "drives",
+    "endpoints",
     "events",
     "extensions",
+    "groupLifecyclePolicies",
     "memberOf",
     "members",
+    "membersWithLicenseErrors",
     "onenote",
     "owners",
     "photo",
-    "photos",    
+    "photos",
+    "planner",    
     "rejectedSenders",
-    "threads"
+    "settings",
+    "sites",
+    "threads",
+
+    "allowExternalSenders",
+    "assignedLicenses",
+    "autoSubscribeNewMembers",
+    "hasMembersWithLicenseErrors",
+    "isSubscribedByMail",
+    "licenseProcessingState",
+    "unseenConversationsCount",
+    "unseenCount",
+    "unseenMessagesCount"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.group"

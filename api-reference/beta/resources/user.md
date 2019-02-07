@@ -4,12 +4,12 @@ description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2feb77d02e575d378ad54bde9d10e98a9f5db093
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: c8184f858dceec1904678829d54817e86dff3606
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643816"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745578"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -90,7 +90,7 @@ ms.locfileid: "29643816"
 |assignedPlans|[assignedPlan](assignedplan.md) collection|分配给该用户的计划。只读。不可为 null。 |
 |birthday|DateTimeOffset|用户的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |city|String|用户所在的城市。支持 $filter。|
-|companyName| String | 与用户关联的公司名称。 只读。
+|companyName| String | 与用户关联的公司名称。 此属性可用于描述外部用户所属的公司。 |
 |consentProvidedForMinor|String|设置是否已获得未成年人的同意。 允许的值：`null`、`granted`、`denied` 和 `notRequired`。 请参阅[法定年龄组属性定义](#legal-age-group-property-definitions)以了解详细信息。|
 |country|String|用户所处的国家/地区，如“美国”或“英国”。支持 $filter。|
 |createdDateTime|DateTimeOffset|创建用户的日期和时间。 值无法修改，并在实体创建时自动填充。 DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 属性可为 Null。 Null 值表示无法为用户确定准确的创建时间。 只读。 支持 $filter。|

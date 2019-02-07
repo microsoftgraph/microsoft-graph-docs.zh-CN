@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c6cb4b23e6fa383074a0f1ff377060b4cdd9403f
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 8ab58d47fc40434c17d6adf181724823e2f27da7
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735619"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745592"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,12 @@ ms.locfileid: "29735619"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="february-2019"></a>2019 年 2 月
+
+### <a name="directory-apis"></a>目录 API
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|更改 |Beta 和 v1.0| 已将[用户](/graph/api/resources/user?view=graph-rest-v1.0)资源上的 **companyName** 属性更新为可写。|
 
 ### <a name="education-apis"></a>教育版 API
 
@@ -2762,7 +2768,7 @@ ms.locfileid: "29735619"
 
 ### <a name="eventmessages"></a>EventMessages
 
-| **更改类型** | **版本** | **说明**                          |
+| **更改类型** | **Version** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 向 eventMessages 添加了 inferenceClassification 和 extensions。 |
 | 添加项        | Beta        | 向 eventMessageRequest 添加了 responseRequested。 |
