@@ -1,19 +1,19 @@
 ---
 title: 使用 Azure AD v2.0 终结点注册应用
-description: '应用必须使用 Azure AD 注册。注册应用会建立一个唯一的应用程序 ID 和其他值，你的应用可使用这些值通过 Azure AD 进行身份验证并获取令牌。对于 Azure AD v2.0 终结点，请使用 Microsoft 应用程序注册门户注册应用。你可以使用 Microsoft 帐户或工作或学校帐户注册应用。为应用配置身份验证或授权时，你需要根据开发的应用类型复制一个或多个要在注册期间使用的属性。 '
+description: 应用必须使用 Azure AD 注册。 注册应用会建立一个唯一的应用程序 ID，以及你的应用通过 Azure AD 进行身份验证并获取令牌所用的其他值。
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87bff46dcb18585ba0814a5848f3cd67deb855d1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d62fb12c094307fcd09f3e4600046b818ec4bbaa
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930556"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760956"
 ---
-# <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>使用 Azure AD v2.0 终结点注册应用
+# <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>向 Azure AD v2.0 终结点注册应用
 
-应用必须使用 Azure AD 注册。注册应用会建立一个唯一的应用程序 ID 和其他值，你的应用可使用这些值通过 Azure AD 进行身份验证并获取令牌。对于 Azure AD v2.0 终结点，请使用 [Microsoft 应用程序注册门户](https://apps.dev.microsoft.com)注册应用。你可以使用 Microsoft 帐户或工作或学校帐户注册应用。为应用配置身份验证或授权时，你需要根据开发的应用类型复制一个或多个要在注册期间使用的属性。 
+必须向 Azure AD 注册应用。注册应用会建立一个唯一的应用程序 ID，以及你的应用通过 Azure AD 进行身份验证并获取令牌所用的其他值。对于 Azure AD v2.0 终结点，请使用 [Microsoft 应用程序注册门户](https://apps.dev.microsoft.com)注册应用。你可以使用 Microsoft 帐户或工作或学校帐户注册应用。为应用配置身份验证或授权时，你需要根据开发的应用类型复制一个或多个要在注册期间使用的属性。 
 
 
 > **注意：** 本文主要介绍了使用 Azure AD v2.0 终结点注册应用的内容。有关使用 Azure AD 终结点注册应用的信息，请参阅下面的 [Azure AD 终结点注意事项](#azure-ad-endpoint-considerations)。
@@ -89,6 +89,6 @@ ms.locfileid: "27930556"
 - 只能使用工作或学校帐户注册应用。
 - 应用将需要每个平台具有不同的应用程序 ID。
 - 如果应用是多租户应用，则必须在门户中将其显式配置为多租户。
-- 必须在门户中预配置应用需要的所有权限（包括 Microsoft Graph 权限）。 
+- 你必须在门户中预配置应用所需的全部权限（包括 Microsoft Graph 权限）。 
 
-有关使用 Azure 门户添加应用的指导，请参阅[使用 Azure Active Directory 集成应用程序：添加应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)。
+有关使用 Azure 门户添加应用的指导，请参阅[向 Azure Active Directory v2.0 终结点注册应用](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/quickstart-v2-register-an-app)。

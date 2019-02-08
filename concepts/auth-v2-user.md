@@ -1,17 +1,17 @@
 ---
-title: 代表用户访问
-description: '若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Azure AD 获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。你将用于获取访问令牌的确切的身份验证流会依赖于你正在开发的应用类型以及你是否要使用 OpenID Connect 让用户登录到应用中。本机和移动应用还有某些 Web 应用使用的常见流程就是 OAuth 2.0 授权代码授予流程。在本主题中，我们将介绍一个使用此流程的示例。 '
+title: 代表用户获取访问
+description: 若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Azure AD 获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6756657d2181f83f58db00f4b15b220a44492879
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 42bb4fc0e98294c9a319e20a6b4f632f040ef0da
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914267"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760928"
 ---
-# <a name="get-access-on-behalf-of-a-user"></a>代表用户访问
+# <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 若要代表用户使用 Microsoft Graph 读取和写入资源，应用必须从 Azure AD 获取访问令牌，并将令牌附加到其发往 Microsoft Graph 的请求。你将用于获取访问令牌的确切的身份验证流会依赖于你正在开发的应用类型以及你是否要使用 OpenID Connect 让用户登录到应用中。本机和移动应用还有某些 Web 应用使用的常见流程就是 OAuth 2.0 授权代码授予流程。在本主题中，我们将介绍一个使用此流程的示例。 
 
 ## <a name="authentication-and-authorization-steps"></a>身份验证和授权步骤
@@ -239,21 +239,21 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 - 单页应用 (SPA)
 - 后端 Web API：例如，在如本机应用这样的客户端应用场景中，实现 Web API 后端中的功能。使用 Azure AD v2.0 终结点，客户端应用和后端 Web API 必须都具有相同的应用程序 ID。 
 
-有关使用 Azure AD v2.0 终结点的受支持的应用类型的详细信息，请参阅[应用类型](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows)。
+有关使用 Azure AD v2.0 终结点受支持的应用类型的详细信息，请参阅[应用类型](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows)。
 
-> **注意**：从[独立 Web API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types) 调用 Microsoft Graph 目前不受 Azure AD v2.0 终结点支持。在这种场景下，你需要使用 Azure AD 终结点。
+> **注意**：从独立 Web API 调用 Microsoft Graph 目前不受 Azure AD v2.0 终结点支持。在这种场景下，你需要使用 Azure AD 终结点。
 
-有关代表用户从 Azure AD v2.0 终结点获取对 Microsoft Graph 访问的详细信息：
+有关代表用户从 Azure AD v2.0 终结点获取对 Microsoft Graph 访问权限的详细信息：
 
 - 有关针对不同类型应用的协议文档和入门文章的链接，请参阅 [Azure AD v2.0 终结点文档](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)。 
 - 有关身份验证流的详细说明，请参阅 [v2.0 协议](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols)。
 - 有关建议的 Microsoft 和第三方身份验证库和 Azure AD v2.0 服务器中间件的详细信息，请参阅 [Azure Active Directory v2.0 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries)。
 
 ## <a name="azure-ad-endpoint-considerations"></a>Azure AD 终结点注意事项
-Azure AD 终结点和 Azure AD v2.0 终结点的在使用中存在若干区别。例如：
+Azure AD 终结点和 Azure AD v2.0 终结点在使用中存在若干区别。例如：
 
-- 使用 [Azure 门户](https://portal.azure.com)配置应用。有关使用 Azure 门户配置应用的详细信息，请参阅[将应用程序与 Azure Active Directory 相集成：添加应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)
-- 应用将需要每个平台具有不同的应用程序 ID（客户端 ID）。
+- 使用 [Azure 门户](https://portal.azure.com)配置应用。 有关使用 Azure 门户配置应用的详细信息，请参阅[向 Azure Active Directory v2.0 终结点注册应用](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/quickstart-v2-register-an-app)
+- 应用将需要为每个平台提供不同的应用程序 ID（客户端 ID）。
 - 如果应用为多租户应用，则必须在 [Azure 门户](https://portal.azure.com)中通过显式方式将其配置为多租户。
 - 使用 Azure AD 终结点时，应用需要的所有权限必须由开发人员进行配置。Azure AD 终结点不支持动态（增量）同意。
 - Azure AD 终结点使用授权中的 `resource` 参数和令牌请求，指定其需要权限的资源（如 Microsoft Graph）。终结点不支持 `scope` 参数。 

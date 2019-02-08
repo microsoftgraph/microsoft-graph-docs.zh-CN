@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 新建文件夹
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 26a87aefdf692562491f0bda1fcc87a48b4079fa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 4771782804f5fc69db0cf25b6e3f30f176a68e6b
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986710"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760865"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>在驱动器中新建文件夹
 
@@ -68,7 +68,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>响应
 
-如果成功，此方法将新创建的文件夹返回为 [DriveItem][item-resource] 资源。
+如果成功，此方法将新创建的文件夹返回为 [[DriveItem]][item-resource] 资源。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -108,8 +108,11 @@ Content-Type: application/json
 
 ## <a name="error-response"></a>错误响应
 
-请参阅[错误响应][error-response]主题，详细了解错误返回方式。
-[错误响应]: / 图/错误 [项目资源]:./resources/driveitem.md [文件夹方面]:./resources/folder.md
+请参阅[错误响应][error-response]，详细了解错误返回方式。
+
+[error-response]: /graph/errors
+[item-resource]: ../resources/driveitem.md
+[folder-facet]: ../resources/folder.md
 
 <!-- {
   "type": "#page.annotation",

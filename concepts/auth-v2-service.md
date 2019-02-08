@@ -1,17 +1,17 @@
 ---
-title: 无用户访问
-description: '一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。在许多情况下，这些是在的服务器上运行的后台服务或守护程序，不存在登录用户。此类应用的一个示例是电子邮件存档服务，它可以在夜间保持清醒状态并运行。在某些情况下，具有登录用户的应用可能还需要以他们自己的标识调用 Microsoft Graph。例如，应用可能需要使用以下特定功能，该功能要求在组织中具有比登录用户的提升权限更多的权限。  '
+title: 在没有用户的情况下获取访问权限
+description: 一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。 在许多情况下，这些是在服务器上运行的后台服务或守护程序，不存在登录用户。
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ca003bc10551c03dd781db05aad7170b799304b0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4a24d40ea40b24d172a7202f98dc734f4ecead77
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977498"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760914"
 ---
-# <a name="get-access-without-a-user"></a>无用户访问
+# <a name="get-access-without-a-user"></a>在没有用户的情况下获取访问权限
 
 一些应用使用他们自己的标识（而不代表用户）调用 Microsoft Graph。在许多情况下，这些是在的服务器上运行的后台服务或守护程序，不存在登录用户。此类应用的一个示例是电子邮件存档服务，它可以在夜间保持清醒状态并运行。在某些情况下，具有登录用户的应用可能还需要以他们自己的标识调用 Microsoft Graph。例如，应用可能需要使用以下特定功能，该功能要求在组织中具有比登录用户的提升权限更多的权限。  
 
@@ -218,8 +218,8 @@ Content-Length: 407
 
 如果使用的是 Azure AD 终结点，则配置应用和登录到 Azure AD 的方式有一些差异：
 
-- 使用 [Azure 门户](https://portal.azure.com)配置应用。有关使用 Azure 门户配置应用的详细信息，请参阅[将应用程序与 Azure Active Directory 相集成：添加应用程序](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)
-- 如果你的应用为多租户应用，则必须在 [Azure 门户](https://portal.azure.com)中通过显式方式将其配置为多租户。
+- 使用 [Azure 门户](https://portal.azure.com)配置应用。 有关使用 Azure 门户配置应用的详细信息，请参阅[向 Azure Active Directory v2.0 终结点注册应用](https://docs.microsoft.com/zh-CN/azure/active-directory/develop/quickstart-v2-register-an-app)
+- 如果你的应用为多租户应用，则必须在 [Azure 门户](https://portal.azure.com)中显式将其配置为多租户。
 - 没有管理员同意终结点 (`/adminconsent`)，但是，你的应用可以在运行时通过将 `prompt=admin_consent` 参数添加到授权请求来请求管理员同意。有关详细信息，请参阅[将应用程序与 Azure Active Directory 相集成](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)中的**在运行时引发 Azure AD 同意框架**。
 - 授权和令牌请求中的参数不相同。例如，Azure AD 终结点请求中没有 `scope` 参数；但是，`resource` 参数可用于指定为其请求的授权（用于管理员同意）或令牌的资源 (`resource=https://graph.microsoft.com`) 的 URI。
 

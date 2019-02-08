@@ -1,15 +1,15 @@
 ---
 title: 获取访问令牌以调用 Microsoft Graph
-description: '为了调用 Microsoft Graph，应用需要从 Microsoft 的云标识服务 Azure Active Directory (Azure AD) 获取访问令牌。访问令牌包含有关应用的信息（或声明）以及其具有的可通过 Microsoft Graph 使用资源和 API 的权限。若要获取一个访问令牌，应用必须能够使用 Azure AD 进行身份验证，并且用户或管理员需要获得授权以访问所需的 Microsoft Graph 资源。 '
+description: 为了调用 Microsoft Graph，应用必须从 Microsoft 的云标识服务 Azure Active Directory (Azure AD) 获取访问令牌。
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d08c481ab7a42eee4cfabb8c6869225cb6d547ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5438dfd81dddb2089792f37a42f87070d337a6b4
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932068"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760919"
 ---
 # <a name="get-access-tokens-to-call-microsoft-graph"></a>获取访问令牌以调用 Microsoft Graph
 
@@ -147,7 +147,7 @@ Azure AD 和 Azure AD v2.0 之间的主要区别在于：
 
 * 某些功能可能尚未完全在 v2.0 中实现过。例如，如果企业客户启用企业移动性安全功能，如[条件性设备访问](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies)，应用可能无法运行。
 * 不可调用云解决方案提供商应用。
-* [适用于联合租户的 Windows 集成身份验证](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-for-work-and-school-accounts)不受支持。这意味着，联合 Azure AD 租户的用户不可以使用其本地 Active Directory 实例进行无提示身份验证。他们将不得不重新输入其凭据。
+* [适用于联合租户的 Windows 集成身份验证](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#limitations)不受支持。这意味着，联合 Azure AD 租户的用户不可以使用其本地 Active Directory 实例进行无提示身份验证。他们将不得不重新输入其凭据。
 
 有关 Azure AD v2.0 终结点和 Azure AD 终结点之间的差异的详细信息，请参阅 [v2.0 终结点有何不同之处？](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare)。
 
