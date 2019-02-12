@@ -1,12 +1,12 @@
 ---
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是物理和逻辑网络隔离限制在特定国家/地区的地理边框和由本地人员的 Microsoft 企业云服务的实例。
-ms.openlocfilehash: a5f5c5d0ae8611957cb9087de53f5ddd87d1f25d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 06ca3c24cba17e2d18fc4755f00a2c754e508f88
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571294"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892496"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -58,17 +58,17 @@ ms.locfileid: "29571294"
 | Microsoft Graph 功能 | Microsoft Cloud for US Government | Microsoft 云中国由 21Vianet | Microsoft 云德国 |
 |---------------------------|----------------|----------------|----------------|
 | 用户 | ✔ | ✔ | ✔ |
-| 组 | ✔ | ✔ | ✔ |
+| Groups | ✔ | ✔ | ✔ |
 | Excel | ✔| ✔* | ✔ |
 | OneDrive | ✔ | ✔* | ✔ |
 | Outlook 邮件 | ✔ | ✔ | ✔ |
 | Outlook 日历 | ✔ | ✔ | ✔ |
 | 个人联系人 | ✔ | ✔ | ✔ |
 | SharePoint| ✔ | ✔* | ✔ |
-| Delta 查询 | ✔ | ✔ | ✔ |
-| Webhook  | ✔ | ✔ | ✔ |
-| 报表  |➖| ✔ |➖|
-| Microsoft Planner|➖|➖|➖|
+| 规划器|✔ |✔ |✔ |
+| 报告  |➖| ✔ |➖|
+| Delta 查询 | ➖ | ➖| ➖ |
+| Webhook  | ➖| ➖| ➖
 |目录架构扩展 |➖|➖|➖|
 | 开放类型扩展|➖|➖|➖|
   

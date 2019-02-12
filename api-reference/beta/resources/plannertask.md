@@ -4,12 +4,12 @@ description: '**plannerTask** 资源表示 Office 365 中的规划器任务。�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2313b31e0a962f27fa728af8c8953b646210397a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: daa5b451211b442fb1b5b197f323baa4cd37cda7
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511210"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892503"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "29511210"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|activeChecklistItemCount|Int32|核对清单项的数量，其值设置为“false”，表示项目不全。|
+|activeChecklistItemCount|Int32|数清单项目值设置为`false`，表示不完整的项目。|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|此任务已应用的类别。有关可能的值，请参阅[已应用的类别](plannerappliedcategories.md)。|
 |assigneePriority|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |assignments|[plannerAssignments](plannerassignments.md)|被分配任务的接受者集合。|
@@ -46,7 +46,7 @@ ms.locfileid: "29511210"
 |orderHint|String|提示用于为列表视图中的此类项目排序。[此处](planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
 |planId|String|任务所属的计划 ID。|
-|previewType|string|这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。|
+|previewType|String|这将设置显示在任务上的预览类型。可能的值是：`automatic`、`noPreview`、`checklist`、`description`、`reference`。|
 |referenceCount|Int32|任务上存在的外部引用的数量。|
 |startDateTime|DateTimeOffset|任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |title|String|任务的标题。|
@@ -89,7 +89,7 @@ ms.locfileid: "29511210"
   "orderHint": "String",
   "percentComplete": 1024,
   "planId": "String",
-  "previewType": "string",
+  "previewType": "String",
   "referenceCount": 1024,
   "startDateTime": "String (timestamp)",
   "title": "String"
