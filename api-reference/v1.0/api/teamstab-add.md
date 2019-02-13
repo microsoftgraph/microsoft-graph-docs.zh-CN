@@ -4,12 +4,12 @@ description: '将选项卡添加（固定）到团队中的指定频道。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 38609a373ccac9a66b643f600a39de7aeb57cfbb
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cebb4f48a81fb25f2b4836955e8f002b06c69258
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572505"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967268"
 ---
 # <a name="add-tab-to-channel"></a>将选项卡添加到频道
 
@@ -59,7 +59,7 @@ POST /teams/{id}/channels/{id}/tabs
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 {
-  "name": "My Contoso Tab",
+  "displayName": "My Contoso Tab",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
@@ -85,13 +85,14 @@ Content-type: application/json
 
 {
   "id": "794f0e4e-4d10-4bb5-9079-3a465a629eff",
-  "name": "My Contoso Tab",
+  "displayName": "My Contoso Tab",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
     "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
     "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
   },
+  "sortOrderIndex": "20",
   "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"
 }
 ```
@@ -102,10 +103,12 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Add tab to channel",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->
+}
+-->
