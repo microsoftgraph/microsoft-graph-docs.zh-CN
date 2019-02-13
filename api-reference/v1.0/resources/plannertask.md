@@ -4,12 +4,12 @@ description: '**plannerTask** 资源表示 Office 365 中的规划器任务。�
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 3a90dcdc2cbad09355619c1afe1ff3200181fb39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 52dd5917ef0ddb2ec0a05d6952962bfc430c6027
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917585"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892510"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask 资源类型
 
@@ -27,11 +27,11 @@ ms.locfileid: "27917585"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|activeChecklistItemCount|Int32|核对清单项的数量，其值设置为“false”，表示项目不全。|
+|activeChecklistItemCount|Int32|核对清单项的数量，其值设置为 `false`，表示项目不全。|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|此任务已应用的类别。有关可能的值，请参阅[已应用的类别](plannerappliedcategories.md)。|
-|assigneePriority|String|提示用于为列表视图中的此类项目排序。[此处](planner-order-hint-format.md)概述了此格式。|
+|assigneePriority|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |assignments|[plannerAssignments](plannerassignments.md)|被分配任务的接受者集合。|
-|bucketId|字符串|任务所属的地址散列表元 ID。 地址散列表元需要在计划中的任务。 它是 28 字符长度和区分大小写。 服务上执行[格式验证](planner-identifiers-disclaimer.md)。 |
+|bucketId|String|此任务所属的存储桶 ID。 存储桶需要位于任务所在的计划中。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。 |
 |checklistItemCount|Int32|任务上存在的核对清单项的数目。|
 |completedBy|[identitySet](identityset.md)|完成任务的用户的身份。|
 |completedDateTime|DateTimeOffset|只读。任务的 `'percentComplete'` 被设置为 `'100'` 的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
@@ -40,11 +40,11 @@ ms.locfileid: "27917585"
 |createdDateTime|DateTimeOffset|只读。创建任务的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |hasDescription|Boolean|只读。如果任务的 details 对象具有非空的说明，则值为 `true`，否则为 `false`。|
-|id|String|只读。 任务的 ID。 它是 28 字符长度和区分大小写。 服务上执行[格式验证](planner-identifiers-disclaimer.md)。|
-|orderHint|String|提示用于为列表视图中的此类项目排序。[此处](planner-order-hint-format.md)概述了此格式。|
+|id|String|只读。 任务的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
+|orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
 |planId|String|任务所属的计划 ID。|
-|previewType|plannerPreviewType|这将设置显示任务的预览的类型。 可能的值为： `automatic`， `noPreview`， `checklist`， `description`， `reference`。|
+|previewType|String|这将设置显示在任务上的预览类型。 可能的值包括 `automatic`、`noPreview`、`checklist`、`description`、`reference`。|
 |referenceCount|Int32|任务上存在的外部引用的数量。|
 |startDateTime|DateTimeOffset|任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |title|String|任务的标题。|
@@ -88,7 +88,7 @@ ms.locfileid: "27917585"
   "orderHint": "String",
   "percentComplete": 1024,
   "planId": "String",
-  "previewType": "string",
+  "previewType": "String",
   "referenceCount": 1024,
   "startDateTime": "String (timestamp)",
   "title": "String"
