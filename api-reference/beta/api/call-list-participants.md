@@ -1,68 +1,76 @@
 ---
-title: 参与者列表
+title: 列出参与者
 description: 检索呼叫中的参与者对象的列表。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4f4eb95e4aed03dfd9809f8afb0e3f3557717430
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bc38af4a6bee4a380a001310303d67efb2705dcf
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507619"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967345"
 ---
-# <a name="list-participants"></a>参与者列表
+# <a name="list-participants"></a>列出参与者
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索呼叫中的参与者对象的列表。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | 无                                        |
+| 应用程序     | None                                        |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /app/calls/{id}/participants
 GET /applications/{id}/calls/{id}/participants
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
+
 此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称          | 说明               |
+
+| Name          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回`200 OK`响应代码和响应正文中的[参与者](../resources/participant.md)对象的集合。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1"></a>示例 1
-
-##### <a name="request"></a>请求
-下面为请求示例。
+### <a name="request"></a>请求
 
 <!-- {
   "blockType": "request",
   "name": "get-participants"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/app/calls/{id}/participants
+GET https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
+Authorization: Bearer <TOKEN>
 ```
 
-##### <a name="response"></a>响应
+<!-- markdownlint-disable MD024 -->
+
+### <a name="response"></a>响应
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
@@ -73,66 +81,11 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants
   "isCollection": true,
   "truncated": true
 } -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 1152
-
-{
-  "value": [
-    {
-      "id": "id-value",
-      "info": {
-        "identity": {
-          "user": {
-            "id": "550fae72-d251-43ec-868c-373732c2704f",
-            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-            "displayName": "Heidi Steen"
-          }
-        },
-        "languageId": "languageId-value",
-        "region": "region-value"
-      },
-      "isInLobby": false,
-      "isMuted": true,
-      "mediaStreams": [
-        {
-          "sourceId": "1",
-          "direction": "sendReceive",
-          "label": "main-audio",
-          "mediaType": "audio",
-          "serverMuted": false
-        }
-      ],
-      "metadata": "metadata-value"
-    }
-  ]
-}
-```
-
-### <a name="example-2"></a>示例 2
-
-##### <a name="request"></a>请求
-
-```http
-GET /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
-Authorization: Bearer <TOKEN>
-```
-
-##### <a name="response"></a>响应
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.participant",
-  "isCollection": true,
-  "truncated": true
-}-->
-```json
 {
   "value": [
     {

@@ -4,15 +4,14 @@ description: 更新指定的选项卡的属性。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ee0de37fbf5c29399136625431a164cf50eceda6
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 9aff620ce98b729d428ff15f303025d20a21caa3
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735563"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967002"
 ---
 # <a name="update-tab"></a>更新选项卡
-
 
 
 更新指定的[选项卡上](../resources/teamstab.md)的属性。可以使用此配置的选项卡的内容。
@@ -30,12 +29,11 @@ ms.locfileid: "29735563"
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
-
 ```http
 PATCH /teams/{id}/channels/{id}/tabs/{id}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
@@ -75,6 +73,7 @@ Content-type: application/json
     "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
     "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
   },
+  "sortOrderIndex": "20",
   "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"
 }
 ```
@@ -85,10 +84,12 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update tab in channel",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->
+}
+-->

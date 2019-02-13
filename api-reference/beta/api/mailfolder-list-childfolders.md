@@ -4,12 +4,12 @@ description: '在指定的文件夹下获取文件夹集合。 您可以使用`.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 9d54828b97bb82c9ce0ee9eceeee86a4aa975c3d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 96dec9ca1ba6dbd8e50e8eb978756a98657d2c9d
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512547"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967233"
 ---
 # <a name="list-childfolders"></a>列出 childFolder
 
@@ -18,49 +18,66 @@ ms.locfileid: "29512547"
 获取指定文件夹下的文件夹集合。你可以使用 `.../me/MailFolders` 快捷方式获取顶级文件夹集合并导航到其他文件夹。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Mail.Read、Mail.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Mail.Read、Mail.ReadWrite    |
-|应用程序 | Mail.Read、Mail.ReadWrite |
+| 权限类型                        | 权限（从最低特权到最高特权） |
+|:---------------------------------------|:------------------------------------|
+| 委派（工作或学校帐户）     | Mail.Read、Mail.ReadWrite           |
+| 委派（个人 Microsoft 帐户） | Mail.Read、Mail.ReadWrite           |
+| 应用程序                            | Mail.Read、Mail.ReadWrite           |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
+
 此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+
+| Name          | 类型   | 说明               |
+|:--------------|:-------|:--------------------------|
+| Authorization | string | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [MailFolder](../resources/mailfolder.md) 对象集合。
 
-## <a name="example-1"></a>示例 1
-#### <a name="request-1"></a>请求 1
-下面是一个请求示例。
+## <a name="examples"></a>示例
+
+### <a name="example-1-list-mail-folders"></a>示例 1： 列表邮件文件夹
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
 <!-- {
   "blockType": "request",
   "name": "get_childfolders"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 ```
 
-#### <a name="response-1"></a>响应 1
+<!-- markdownlint-disable MD024 -->
+
+#### <a name="response"></a>响应
+
 下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+
+> **注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -68,58 +85,64 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
   "@odata.type": "microsoft.graph.mailFolder",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
   "value": [
     {
-        "id": "AAMkAGVmMDEzA",
-        "displayName": "Internal Screens",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 2,
-        "totalItemCount": 2,
-        "wellKnownName": null
+      "id": "AAMkAGVmMDEzA",
+      "displayName": "Internal Screens",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 2,
+      "totalItemCount": 2,
+      "wellKnownName": null
     },
     {
-        "id": "AAMkAGVmMDEzB",
-        "displayName": "Project Falcon",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 5,
-        "totalItemCount": 5,
-        "wellKnownName": null
+      "id": "AAMkAGVmMDEzB",
+      "displayName": "Project Falcon",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 5,
+      "totalItemCount": 5,
+      "wellKnownName": null
     },
     {
-        "id": "AAMkAGVmMDEzMA",
-        "displayName": "Finder",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 4,
-        "unreadItemCount": 0,
-        "totalItemCount": 0,
-        "wellKnownName": "searchfolders"
+      "id": "AAMkAGVmMDEzMA",
+      "displayName": "Finder",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 4,
+      "unreadItemCount": 0,
+      "totalItemCount": 0,
+      "wellKnownName": "searchfolders"
     }
   ]
 }
 ```
 
-## <a name="example-2"></a>示例 2
-#### <a name="request-2"></a>请求 2
-下面是一个请求示例。
+### <a name="example-2-list-mail-search-folders"></a>示例 2： 列表邮件搜索文件夹
+
+#### <a name="request"></a>请求
+
+下面展示了示例请求。
+
 <!-- {
   "blockType": "request",
   "name": "get_childfolders_of_searchfolders"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 ```
 
-#### <a name="response-2"></a>响应 2
+#### <a name="response"></a>响应
+
 下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+
+> **注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -127,39 +150,36 @@ GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
   "@odata.type": "microsoft.graph.mailSearchFolder",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
   "value": [
     {
-        "id": "AAMkAGVmMDEzA",
-        "displayName": "Internal Screens",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 2,
-        "totalItemCount": 2,
-        "wellKnownName": null
+      "@odata.type": "#microsoft.graph.mailSearchFolder",
+      "id": "AAMkAGE1NWMz",
+      "displayName": "Get MyAnalytics",
+      "parentFolderId": "AAMkAGE1NWMx",
+      "childFolderCount": 0,
+      "unreadItemCount": 6,
+      "totalItemCount": 6,
+      "wellKnownName": null,
+      "isSupported": true,
+      "filterQuery": "contains(subject, 'MyAnalytics')"
     },
     {
-        "id": "AAMkAGVmMDEzB",
-        "displayName": "Project Falcon",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 5,
-        "totalItemCount": 5,
-        "wellKnownName": null
-    },
-    {
-        "id": "AAMkAGVmMDEzMA",
-        "displayName": "Finder",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 4,
-        "unreadItemCount": 0,
-        "totalItemCount": 0,
-        "wellKnownName": "searchfolders"
+      "@odata.type": "#microsoft.graph.mailSearchFolder",
+      "id": "AAMkAGE1NWMy",
+      "displayName": "Action Required",
+      "parentFolderId": "AAMkAGE1NWMx",
+      "childFolderCount": 0,
+      "unreadItemCount": 2,
+      "totalItemCount": 4,
+      "wellKnownName": null,
+      "isSupported": true,
+      "filterQuery": "contains(subject, 'ACTION REQUIRED')"
     }
   ]
 }

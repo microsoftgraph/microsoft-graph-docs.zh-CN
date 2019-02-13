@@ -4,12 +4,12 @@ description: 获取用户的邮箱中的所有 Outlook 任务。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8a9f9af56f821890e01f2a77f5bfb953e7bd31f0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f854d5649c311531e65909c3d6b33f356cd5bac2
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523895"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967352"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -17,7 +17,8 @@ ms.locfileid: "29523895"
 
 获取用户的邮箱中的所有 Outlook 任务。
 
-默认情况下，此操作 （和文章、 修补程序，和[完成](../api/outlooktask-complete.md)任务操作） 返回与日期相关的属性采用 UTC。 您可以使用`Prefer: outlook.timezone`标头，使其具有不同于 UTC 时区中表示的响应中的所有日期相关的属性。 请参阅[示例](outlooktask-get.md#example-2)用于获取单个任务。 您可以应用同样要获取多个任务的标题。 
+默认情况下，此操作 （和文章、 修补程序，和[完成](../api/outlooktask-complete.md)任务操作） 返回与日期相关的属性采用 UTC。
+你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。 请参阅[示例](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time)用于获取单个任务。 您可以应用同样要获取多个任务的标题。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,7 +38,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| 名称      |说明|
+| Name      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
 | Prefer: outlook.timezone | 响应，它可以采用 UTC 如果未指定此标头中指定的时间属性的时区。 可选。|
@@ -59,7 +60,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks
 GET https://graph.microsoft.com/beta/me/outlook/tasks
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 默认情况下，响应中的 date-time 属性采用的是 UTC。 
+下面是一个响应示例。 默认情况下，响应中的 date-time 属性采用的是 UTC。
 
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

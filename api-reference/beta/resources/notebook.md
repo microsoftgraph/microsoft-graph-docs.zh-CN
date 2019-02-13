@@ -4,12 +4,12 @@ description: OneNote 笔记本。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: df7793208aa3ba752f1da0bc84903733b79871c9
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 24e9a7a4b87a59af27166121aff2847f5f15d894
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641622"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967275"
 ---
 # <a name="notebook-resource-type"></a>notebook 资源类型
 
@@ -51,10 +51,10 @@ OneNote 笔记本。
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|createdBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
+|createdBy|[identitySet](identityset.md)|创建项的用户、设备和应用程序标识。只读。|
 |createdDateTime|DateTimeOffset|笔记本的创建日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
-|id|String|笔记本的唯一标识符。只读。|
-|isDefault|Boolean|指示其是否是用户的默认笔记本。只读。|
+|id|字串符号|笔记本的唯一标识符。只读。|
+|isDefault|布尔|指示其是否是用户的默认笔记本。只读。|
 |isShared|Boolean|指示是否共享笔记本。如果为 true，则笔记本的内容可供除所有者之外的人员查看。只读。|
 |lastModifiedBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改笔记本的日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
@@ -77,6 +77,7 @@ OneNote 笔记本。
 |:---------------|:--------|:----------|
 |[Get notebook](../api/notebook-get.md) | [Notebook](notebook.md) |读取笔记本的属性和关系。|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | [recentNotebook](recentnotebook.md) 集合 | 获取用户最近访问过的笔记本的集合。 |
+|[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [Notebook](notebook.md) | 检索的属性和使用其 URL 路径笔记本对象的关系。 |
 |[创建分区组](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| 通过发布到指定笔记本中的 sectionGroups 集合创建分区组。|
 |[List section groups](../api/notebook-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| 获取指定笔记本中的分区组集合。|
 |[Create section](../api/notebook-post-sections.md) |[Section](section.md)| 通过发布到指定笔记本中的分区集合创建分区。|

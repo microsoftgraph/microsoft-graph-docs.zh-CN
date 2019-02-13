@@ -4,12 +4,12 @@ description: 更新 **plannertask** 对象的属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d33df32ace59884298ca6f8773cbbe2100f32f85
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ae2551165405161e071d23cf704851ac18fbf73e
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523811"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967240"
 ---
 # <a name="update-plannertask"></a>更新 plannerTask
 
@@ -31,7 +31,7 @@ ms.locfileid: "29523811"
 PATCH /planner/tasks/<id>
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| 名称       | 说明|
+| Name       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 **plannerTask** 的上次已知 ETag 值。必需。|
@@ -49,7 +49,6 @@ PATCH /planner/tasks/<id>
 |dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |orderHint|String|提示用于为列表视图中的此类项目排序。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
-|planId|String|此任务所属的计划 id。|
 |startDateTime|DateTimeOffset|任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |title|String|任务的标题。|
 

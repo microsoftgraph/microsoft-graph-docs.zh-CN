@@ -4,12 +4,12 @@ description: 更新在任何集成的解决方案，以使警报状态和分配�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 7b218daa56f7648bc888bbc0cd25619b22799325
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 42bc945dde726466439802350796d628ee438e22
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966032"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967317"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -19,15 +19,16 @@ ms.locfileid: "27966032"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-|权限类型      | 权限（从最低特权到最高特权）              |
-|:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |   SecurityEvents.ReadWrite.All  |
-|委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | SecurityEvents.ReadWrite.All |
+| 权限类型                        | 权限（从最低特权到最高特权） |
+|:---------------------------------------|:------------------------------------|
+| 委派（工作或学校帐户）     | SecurityEvents.ReadWrite.All        |
+| 委派（个人 Microsoft 帐户） | 不支持。                      |
+| 应用程序                            | SecurityEvents.ReadWrite.All        |
 
 ## <a name="http-request"></a>HTTP 请求
 
 > **注意：** 您必须为参数和 vendorInformation 包含包括的**警报**ID`provider`和`vendor`使用此方法。
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -36,24 +37,24 @@ PATCH /security/alerts/{alert_id}
 
 ## <a name="request-headers"></a>请求标头
 
-| 名称       | 说明|
-|:-----------|:-----------|
-| Authorization  | Bearer {code}。必需。|
-|Prefer | 返回 = 表示形式 |
+| Name          | 说明              |
+|:--------------|:-------------------------|
+| Authorization | Bearer {code}。必需。 |
+| Prefer        | 返回 = 表示形式    |
 
 ## <a name="request-body"></a>请求正文
 
 在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 **必须**正文包含`vendorInformation`属性与有效`provider`和`vendor`字段。 下表列出了可更新的通知的字段。 不包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
-| 属性   | 类型 |说明|
-|:---------------|:--------|:----------|
-|assignedTo|字符串|分析师通知的名称分配给进行会审、 调查或修复。|
-|closedDateTime|DateTimeOffset|通知关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|comments|String 集合|分析师评论的警报 （客户警报管理）。|
-|反馈|alertFeedback|分析师通知上的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。|
-|status|alertStatus|警报生命周期状态 （阶段）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。|
-|标记前添加的标记|String 集合|可以应用于通知和可以充当筛选条件 (例如，"HVA"，"看到) 的用户可定义标签。|
-|vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|包含有关安全产品/服务供应商、 提供商和 subprovider 的详细信息的复杂类型 (例如，供应商 = Microsoft; 提供程序 = Windows Defender ATP; subProvider = AppLocker)。 **提供程序和供应商字段是必需的。**|
+| 属性          | 类型                                                                   | 说明 |
+|:------------------|:-----------------------------------------------------------------------|:--|
+| assignedTo        | String                                                                 | 分析师通知的名称分配给进行会审、 调查或修复。 |
+| closedDateTime    | DateTimeOffset                                                         | 通知关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 |
+| comments          | String 集合                                                      | 分析师评论的警报 （客户警报管理）。 |
+| 反馈          | alertFeedback                                                          | 分析师通知上的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 |
+| status            | alertStatus                                                            | 警报生命周期状态 （阶段）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 |
+| tags              | String 集合                                                      | 可以应用于通知和可以充当筛选条件 (例如，"HVA"，"看到) 的用户可定义标签。 |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、 提供商和 subprovider 的详细信息的复杂类型 (例如，供应商 = Microsoft; 提供程序 = Windows Defender ATP; subProvider = AppLocker)。 **提供程序和供应商字段是必需的。** |
 
 ## <a name="response"></a>响应
 
@@ -61,9 +62,11 @@ PATCH /security/alerts/{alert_id}
 
 如果使用可选请求标头，则该方法返回`200 OK`响应代码和响应正文中的更新的[通知](../resources/alert.md)对象。
 
-## <a name="example-1"></a>示例 1
+## <a name="examples"></a>示例
 
-### <a name="request"></a>请求
+### <a name="example-1-request-without-prefer-header"></a>示例 1： 请求，但没有更愿意头
+
+#### <a name="request"></a>请求
 
 下面展示了示例请求。
 <!-- {
@@ -78,21 +81,27 @@ Content-type: application/json
 {
   "assignedTo": "String",
   "closedDateTime": "String (timestamp)",
-  "comments": ["String"],
+  "comments": [
+    "String"
+  ],
   "feedback": "@odata.type: microsoft.graph.alertFeedback",
   "status": "@odata.type: microsoft.graph.alertStatus",
-  "tags": ["String"],
-  "vendorInformation":
-    {
-      "provider": "String",
-      "vendor": "String"
-    }
+  "tags": [
+    "String"
+  ],
+  "vendorInformation": {
+    "provider": "String",
+    "vendor": "String"
+  }
 }
 ```
 
-### <a name="response"></a>响应
+<!-- markdownlint-disable MD024 -->
 
-以下是响应的成功的示例。
+#### <a name="response"></a>响应
+
+下面是成功响应的示例。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,9 +112,9 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## <a name="example-2"></a>示例 2
+### <a name="example-2-request-with-prefer-header"></a>示例 2： 使用更愿意标头的请求
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 下面的示例演示包含的请求，`Prefer`请求标头。
 
@@ -122,23 +131,27 @@ Prefer: return=representation
 {
   "assignedTo": "String",
   "closedDateTime": "String (timestamp)",
-  "comments": ["String"],
+  "comments": [
+    "String"
+  ],
   "feedback": "@odata.type: microsoft.graph.alertFeedback",
   "status": "@odata.type: microsoft.graph.alertStatus",
-  "tags": ["String"],
-  "vendorInformation":
-    {
-      "provider": "String",
-      "vendor": "String"
-    }
+  "tags": [
+    "String"
+  ],
+  "vendorInformation": {
+    "provider": "String",
+    "vendor": "String"
+  }
 }
 ```
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 
 下面是响应的示例时可选`Prefer: return=representation`使用请求标头。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,

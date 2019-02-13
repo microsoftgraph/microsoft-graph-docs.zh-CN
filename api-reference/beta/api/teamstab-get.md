@@ -4,12 +4,12 @@ description: '检索的属性和指定的选项卡的关系。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 37274ef76d4f224adb8285f17bfecac6e8bf48ef
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c8c860caa538699635a5b5d92595664b700124cd
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571301"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967170"
 ---
 # <a name="get-tab"></a>获取选项卡
 
@@ -26,14 +26,14 @@ ms.locfileid: "29571301"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.Read.All、Group.ReadWrite.All |
 
-> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 ```http
 GET /teams/{id}/channels/{id}/tabs/{id}
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持 $select，和 $expand [OData 查询参数](/graph/query-parameters)，以帮助自定义的响应。
 
@@ -52,7 +52,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 #### <a name="request"></a>请求
 下面展示了示例请求。
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
 ```
 #### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -65,13 +65,18 @@ Content-length: 401
 
 {
   "id": "tabId",
-  "name": "My Contoso Tab - updated",
-  "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
+  "displayName": "My Contoso Tab - updated",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
     "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
     "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
+  },
+  "teamsApp": {
+      "id": "0d820ecd-def2-4297-adad-78056cde7c78",
+      "externalId": null,
+      "displayName": "Contoso",
+      "distributionMethod": "store"
   },
   "sortOrderIndex": "20",
   "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"

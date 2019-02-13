@@ -4,12 +4,12 @@ description: 使用 Microsoft Graph API 创建或配置 Microsoft Teams 选项�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3f5ed08c25fad9b285397307f6c8e7f1d6cc70a1
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
-ms.translationtype: HT
+ms.openlocfilehash: b14fa7fac0106d03e930ea8e6601616f81076955
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726538"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967191"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>在 Microsoft Teams 中配置内置选项卡类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "28726538"
 
 ## <a name="custom-tabs"></a>自定义选项卡
 
-若要使用 Microsoft Graph 配置与所编写的[选项卡提供程序](https://docs.microsoft.com/zh-CN/microsoftteams/platform/concepts/tabs/tabs-overview)关联的选项卡，请标识 `entityId`、`contentUrl`、`removeUrl` 以及应用的[配置 UI 提供给 Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) 的 `websiteUrl`，并将相同的 `entityId`、`contentUrl`、`removeUrl` 和 `websiteUrl` 值传递给 Microsoft Graph。
+若要使用 Microsoft Graph 配置与所编写的[选项卡提供程序](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview)关联的选项卡，请标识 `entityId`、`contentUrl`、`removeUrl` 以及应用的[配置 UI 提供给 Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) 的 `websiteUrl`，并将相同的 `entityId`、`contentUrl`、`removeUrl` 和 `websiteUrl` 值传递给 Microsoft Graph。
 
-`teamsAppId` 与 [Microsoft Teams 的应用清单架构](https://docs.microsoft.com/zh-CN/microsoftteams/platform/resources/schema/manifest-schema)中的 `id` 相同。
+`teamsAppId` 与 [Microsoft Teams 的应用清单架构](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema)中的 `id` 相同。
 
 ## <a name="website-tabs"></a>网站选项卡
 
@@ -115,7 +115,32 @@ Wiki 选项卡不支持通过 Graph 进行配置。
 
 ## <a name="document-library-tabs"></a>文档库选项卡
 
-对于文档库选项卡，`teamsAppId` 为 `com.microsoft.teamspace.tab.files.sharepoint`。 配置不受支持。
+对于文档库选项卡，`teamsAppId` 为 `com.microsoft.teamspace.tab.files.sharepoint`。 以下是配置。
+
+| 属性   | 类型        | 说明                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | 字符串      | 空字符串 ("")                                        |
+| contentUrl | 字符串      | 根文件夹的文档库的 URL。 您可以通过在浏览器中打开 SharePoint 文件夹、 复制 URL 并删除找到此 URL"/ forms/Allitems.aspx"以及之后的所有内容。 |
+| removeUrl  | 字符串      | Null                                                     |
+| websiteUrl | 字符串      | Null                                                     |
+
+### <a name="example-create-a-configured-document-library-tab"></a>示例： 创建配置的文档库选项卡
+
+以下示例将新建一个配置好的 Word 选项卡。
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+    "displayName": "Document%20Library1",
+    "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
+    "configuration": {
+        "entityId": "",
+        "contentUrl": "https://microsoft.sharepoint-df.com/teams/WWWtest/Shared%20Documents",
+        "removeUrl": null,
+        "websiteUrl": null
+    }
+}
+```
 
 ## <a name="onenote-tabs"></a>OneNote 选项卡
 
@@ -124,7 +149,7 @@ Wiki 选项卡不支持通过 Graph 进行配置。
 | 属性   | 类型        | 说明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | `{randomGuid}_{notebookId}`，其中 {randomGuid} 是所生成的 GUID。                                      |
-| contentUrl | string      | 表单 `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}` 的 URL，其中 `{sectionsUrl}`、`{notebookId}` 和 `{oneNoteWebUrl}` 均可在 [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) 中找到。 斜杠必须经过转义。 {locale} 和 {tid} 是文本。 |
+| contentUrl | 字符串      | 表单 `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}` 的 URL，其中 `{sectionsUrl}`、`{notebookId}` 和 `{oneNoteWebUrl}` 均可在 [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) 中找到。 斜杠必须经过转义。 {locale} 和 {tid} 是文本。 |
 | removeUrl  | string      | 表单 `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}` 的 URL，其中 `{sectionsUrl}`、`{notebookId}` 和 `{oneNoteWebUrl}` 均可在 [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) 中找到。 斜杠必须经过转义。 {locale} 和 {tid} 是文本。 |
 | websiteUrl | string      | 表单 `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}` 的 URL，其中 `oneNoteWebUrl` 可以在 [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) 中找到 |
 
