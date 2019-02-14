@@ -1,12 +1,12 @@
 ---
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是物理和逻辑网络隔离限制在特定国家/地区的地理边框和由本地人员的 Microsoft 企业云服务的实例。
-ms.openlocfilehash: 06ca3c24cba17e2d18fc4755f00a2c754e508f88
-ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
+ms.openlocfilehash: e32330397a75670238f090599635ca68a89f115e
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "29892496"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994389"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -64,11 +64,11 @@ ms.locfileid: "29892496"
 | Outlook 邮件 | ✔ | ✔ | ✔ |
 | Outlook 日历 | ✔ | ✔ | ✔ |
 | 个人联系人 | ✔ | ✔ | ✔ |
-| SharePoint| ✔ | ✔* | ✔ |
+| SharePoint| ✔ | ✔ | ✔ |
 | 规划器|✔ |✔ |✔ |
-| 报告  |➖| ✔ |➖|
+| 报表  |➖| ✔ |➖|
+| Webhook  | ➖|✔* |✔* |
 | Delta 查询 | ➖ | ➖| ➖ |
-| Webhook  | ➖| ➖| ➖
 |目录架构扩展 |➖|➖|➖|
 | 开放类型扩展|➖|➖|➖|
   
@@ -78,7 +78,7 @@ ms.locfileid: "29892496"
 * 应用程序
 * 服务主体
 
-(*)此云中此 API 支持有限。
+(*)Exchange 和 OneDrive 服务有限的支持。 Azure AD 服务不支持。 
 
  > **重要说明：** 特定服务和特定区域的全球服务中的功能可能不可用中所有的国家/地区云。 以找出哪些服务是可用，请参阅[区域中的产品](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)。
 
