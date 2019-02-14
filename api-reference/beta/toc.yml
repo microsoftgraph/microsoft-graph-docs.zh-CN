@@ -443,7 +443,7 @@ items:
         href: api/onenote-list-notebooks.md
       - name: 创建笔记本
         href: api/onenote-post-notebooks.md
-    - name: 照片
+    - name: Photo
       href: resources/profilephoto.md
       items:
       - name: 获取照片
@@ -551,7 +551,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: 获取开放扩展
         href: api/opentypeextension-get.md
-    - name: 附件
+    - name: Attachment
       href: resources/attachment.md
       items:
       - name: 文件附件资源
@@ -2188,7 +2188,7 @@ items:
       - name: 已导入的 Windows Autopilot 设备标识上载
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md
         items:
-        - name: 列出
+        - name: 列表
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-list.md
         - name: 获取
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-get.md
@@ -4315,7 +4315,7 @@ items:
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-create.md
         - name: 删除
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-delete.md
@@ -5384,7 +5384,7 @@ items:
           href: api/intune-notification-notificationmessagetemplate-list.md
         - name: 获取
           href: api/intune-notification-notificationmessagetemplate-get.md
-        - name: 创建
+        - name: Create
           href: api/intune-notification-notificationmessagetemplate-create.md
         - name: 删除
           href: api/intune-notification-notificationmessagetemplate-delete.md
@@ -7235,7 +7235,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: 获取开放扩展
         href: api/opentypeextension-get.md
-    - name: 附件
+    - name: Attachment
       href: resources/attachment.md
       items:
       - name: 文件附件资源
@@ -7380,6 +7380,8 @@ items:
         href: api/notebook-copynotebook.md
       - name: 获取最近使用的笔记本
         href: api/notebook-getrecentnotebooks.md
+      - name: 从 Web URL 获取笔记本
+        href: api/notebook-getnotebookfromweburl.md
       - name: 列出分区
         href: api/notebook-list-sections.md
       - name: 创建分区
@@ -8346,9 +8348,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 65ab8ab45280083c917ec080c39ebdc305b49d43
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: 93a958552a5dab5a62415bee602531e9bb914402
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760977"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967205"
