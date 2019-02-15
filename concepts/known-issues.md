@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 351b02e3d423458fba8dbaec2050530ccaba4df0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 21667092deabf8a0c078da114325c25dbe223045
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576785"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994396"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -38,10 +38,6 @@ ms.locfileid: "29576785"
 有关使用 delta 查询方面的已知问题，请参阅本文中的[“delta 查询”部分](#delta-query)。
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
-
-### <a name="create-chat-thread-api"></a>创建聊天线程 API
-
-当前用于[创建聊天线程](/graph/api/channel-post-chatthreads?view=graph-rest-beta)的 API 将被替换为，与用于[列出频道消息](/graph/api/channel-list-messages?view=graph-rest-beta)的架构一致的更丰富 API。
 
 ### <a name="graph-explorer-and-global-admins"></a>Graph 浏览器和全局管理员
 

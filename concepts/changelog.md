@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 8c97053db703709a172cc8403d3fb2fb1973aa71
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 8b0cc10c46487bbce281ee2233e5c69880cb4156
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967212"
+ms.locfileid: "29994480"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -43,6 +43,10 @@ ms.locfileid: "29967212"
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项 |Beta 和 v1.0| 向[团队](/graph/api/resources/team?view=graph-rest-v1.0)资源添加了 **internalId** 属性。|
 |添加项 |Beta 和 v1.0| 已添加对配置 Word、Excel、PowerPoint、PDF 和文档库[选项卡](teams-configuring-builtin-tabs.md)的支持。 |
+|添加项 |beta| 引入了[在频道中创建消息](/graph/api/channel-post-chatmessage?view=graph-rest-beta) API。 |
+|添加项 |beta| 引入了[在频道中回复消息](/graph/api/channel-post-messagereply?view=graph-rest-beta) API。 |
+|删除项 |beta| 删除了 POST /teams/{id}/channels/{id}/chatThreads API。 改用[在频道中创建消息](/graph/api/channel-post-chatmessage?view=graph-rest-beta)。 |
+
 
 ## <a name="january-2019"></a>2019 年 1 月
 
