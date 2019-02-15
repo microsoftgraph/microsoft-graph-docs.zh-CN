@@ -1,15 +1,15 @@
 ---
 title: meetingTimeSuggestion 资源类型
-description: '会议建议包含类似的会议时间，出勤可能性，个人信息 '
+description: '会议建议, 其中包含会议时间、出勤可能性、个人等信息 '
 localization_priority: Normal
-author: VinodRavichandran
-ms.prod: microsoft-teams
-ms.openlocfilehash: 029e579ce5cba0a578741cb4ce30886090a71cd6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 379bb4ac4be8e2d8d1bec494cf4d573550d46b55
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523181"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057027"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>meetingTimeSuggestion 资源类型
 
@@ -31,10 +31,11 @@ ms.locfileid: "29523181"
 
 ```json
 {
-  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
+  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailabilityDataModel"}],
   "confidence": 1024.0,
-  "locations": [{"@odata.type": "microsoft.graph.location"}],
-  "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
+  "locations": [{"@odata.type": "microsoft.graph.locationDataModel"}],
+  "meetingTimeSlot": {"@odata.type": "microsoft.graph.meetingTimeSlotDataModel"},
+  "order": 1024,
   "organizerAvailability": "String",
   "suggestionReason": "String"
 }
@@ -43,11 +44,11 @@ ms.locfileid: "29523181"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|attendeeAvailability|[attendeeAvailability](attendeeavailability.md) 集合|显示此会议时间建议中各个与会者的忙/闲状态的数组。|
+|attendeeAvailability|[attendeeAvailabilityDataModel](attendeeavailabilitydatamodel.md)集合|显示此会议时间建议中各个与会者的忙/闲状态的数组。|
 |confidence|Double|表示所有与会者的出席可能性的百分比值。|
-|locations|[location](location.md) 集合|指定此会议时间建议中各个会议地点的名称和地理位置的数组。|
-|meetingTimeSlot|[timeSlot](timeslot.md)|建议的会议时间段。|
-|organizerAvailability|字符串| 此会议时间建议中会议组织者的忙/闲状态。可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
+|locations|[locationDataModel](locationdatamodel.md)集合|指定此会议时间建议中各个会议地点的名称和地理位置的数组。|
+|meetingTimeSlot|[meetingTimeSlotDataModel](meetingtimeslotdatamodel.md)|建议的会议时间段。|
+|organizerAvailability|availabilityStatus| 此会议时间建议中会议组织者的忙/闲状态。可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |suggestionReason|String|会议时间建议的理由。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,42 +1,42 @@
 ---
 title: teamsAppInstallation 资源类型
-description: '团队中安装 teamsApp。 '
+description: '在团队中安装的 teamsApp。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b4cf14c36fc0ab0b33f88d4b330e76957e65164a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f6ff72ab99d20eba9880630248e4b61fca5c2521
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512834"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057013"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-安装在[工作组](team.md) [teamsApp](teamsapp.md) 。 应用程序一部分的任何 bot 将成为应用程序添加到任何工作组的一部分。
+在[团队](team.md)中安装的[teamsApp](teamsapp.md) 。 作为应用程序的一部分的任何 bot 都将成为向其添加应用程序的任何团队的一部分。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列表应用程序](../api/teamsappinstallation-list.md) | [teamsappinstallation](teamsapp.md) | 列出了安装团队中的应用程序。|
-|[添加应用程序](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsapp.md) | 将应用添加（安装）到团队。|
-|[删除应用程序](../api/teamsappinstallation-delete.md) | 无 | 删除 （卸载） 从团队应用程序。|
-|[升级的应用程序](../api/teamsappinstallation-delete.md) | 无 | 升级到最新版本的应用程序。|
+|[列出应用程序](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | 列出在团队中安装的应用程序。|
+|[添加应用程序](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | 将应用添加（安装）到团队。|
+|[删除应用程序](../api/teamsappinstallation-delete.md) | 无 | 从团队中删除 (卸载) 应用程序。|
+|[升级应用程序](../api/teamsappinstallation-upgrade.md) | 无 | 升级到最新版本的应用程序。|
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 唯一的 id (不团队 appid)。 |
+| id                  | 字符串   | 唯一 id (而不是团队 appid)。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系   | 类型    | 说明 |
 |:---------------|:--------|:----------|
-|teamsApp|[teamsApp](teamsapp.md)| 安装应用程序。 |
+|teamsApp|[teamsApp](teamsapp.md)| 已安装的应用程序。 |
 |teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| 此版本的应用程序的详细信息。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

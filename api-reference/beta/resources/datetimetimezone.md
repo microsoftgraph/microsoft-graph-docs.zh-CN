@@ -2,12 +2,12 @@
 title: dateTimeTimeZone 资源类型
 description: 介绍某个时间点的日期、时间和时区。
 localization_priority: Normal
-ms.openlocfilehash: aad1318e1623b41a67eb23c20ad42dc48553d81c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ee5359c0ababad2a4f785d17a02ac5bb618d2681
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521276"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057041"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
 
@@ -18,10 +18,10 @@ ms.locfileid: "29521276"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|DateTime|String|日期和时间组合表示形式的单个时间点 (`<date>T<time>`)。|
-|TimeZone|String|以下时区名称之一。|
+|dateTime|String|日期和时间组合表示形式的单个时间点 (`{date}T{time}`)。 例如, "2019-04-16T09:00:00"。|
+|timeZone|字符串|时区名称, 如下所述。|
 
-_TimeZone_ 属性可以设置为 Windows 支持的任意时区，以及以下时区名称。
+可以将**时区**属性设置为 Windows 支持的任意时区, 以及以下时区名称。
 
 Etc/GMT+12
 

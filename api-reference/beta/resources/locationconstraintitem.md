@@ -2,12 +2,14 @@
 title: locationConstraintItem 资源类型
 description: 客户端声明的会议地点条件。
 localization_priority: Normal
-ms.openlocfilehash: 9752b3acec2dd9071e31b743245d662168ecdfd6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 8e0b14096d8be66a6aab6d4e73cf0941d7db7b5c
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508851"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30056999"
 ---
 # <a name="locationconstraintitem-resource-type"></a>locationConstraintItem 资源类型
 
@@ -15,7 +17,7 @@ ms.locfileid: "29508851"
 
 客户端声明的会议地点条件。
 
-由 [location](location.md) 派生。
+派生自[locationDataModel](locationdatamodel.md)。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -46,7 +48,7 @@ ms.locfileid: "29508851"
 | address | [physicalAddress](physicaladdress.md) |位置的街道地址。 |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 地理坐标和位置的海拔高度。 |
 | displayName  | 字符串 | 与地点相关联的名称。                       |
-| locationEmailAddress | String | （可选）与位置相关联的电子邮件地址。 |
+| locationEmailAddress | 字符串 | （可选）与位置相关联的电子邮件地址。 |
 | locationUri | String | （可选）表示位置的 URI。 |
 | resolveAvailability | Boolean | 如果设为 true，且指定的资源处于忙碌状态，[findMeetingTimes](../api/user-findmeetingtimes.md) 会查找另一空闲资源。如果设为 false，且指定的资源处于忙碌状态，**findMeetingTimes** 会返回用户缓存中排名最靠前的资源，而不会检查其是否空闲。默认值为 true。 |
 

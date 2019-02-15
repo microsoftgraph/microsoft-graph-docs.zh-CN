@@ -1,21 +1,23 @@
 ---
-title: 将应用添加到团队
+title: 向团队添加应用
 description: 将应用程序安装到指定的团队。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 353298dc43479057e689f43e3a7274523468caee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 35d2521d9bff37ea45f7496a825429762daaf8f7
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516824"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30056992"
 ---
-# <a name="add-app-to-team"></a>将应用添加到团队
+# <a name="add-app-to-team"></a>向团队添加应用
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将[应用程序](../resources/teamsapp.md)安装到指定的[团队](../resources/team.md)。
+
+>**注意:** 如果使用的是应用程序权限, 则会出现已知问题。 有关详细信息，请参阅[已知问题](graph/concepts/known-issues.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +26,7 @@ ms.locfileid: "29516824"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +43,7 @@ POST /teams/{id}/installedApps
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|teamsApp|String|添加应用程序的 id。|
+|teamsApp|字符串|要添加的应用程序的 id。|
 
 
 ## <a name="response"></a>响应
@@ -61,7 +63,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/installedApps
 }
 ```
 #### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "ignored",
   "truncated": true,

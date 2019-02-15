@@ -1,21 +1,21 @@
 ---
-title: 团队中的列表应用程序
-description: 检索指定团队中安装的应用程序的列表。
+title: 列出团队中的应用
+description: 检索在指定团队中安装的应用程序的列表。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fe3ba5cd3be91c7e69b77f67cb53ab702741c6f5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 749a0c0e0c3a93b54487d9dea8823ad59a2658fd
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524609"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057006"
 ---
-# <a name="list-apps-in-team"></a>团队中的列表应用程序
+# <a name="list-apps-in-team"></a>列出团队中的应用
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索指定[团队](../resources/team.md)中的[应用程序安装](../resources/teamsappinstallation.md)的列表。
+检索在指定[团队](../resources/team.md)中[安装的应用程序](../resources/teamsappinstallation.md)的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -25,7 +25,7 @@ ms.locfileid: "29524609"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Group.Read.All、Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -35,9 +35,9 @@ ms.locfileid: "29524609"
 GET /teams/{id}/installedApps
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
-此方法支持 $filter，$select，和 $expand [OData 查询参数](/graph/query-parameters)，以帮助自定义的响应。
+此方法支持 $filter、$select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -51,7 +51,7 @@ GET /teams/{id}/installedApps
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[teamsApp](../resources/teamsapp.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[teamsApp](../resources/teamsapp.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ### <a name="response"></a>响应
 
 下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都是从实际调用返回。
+>**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +92,7 @@ Content-length: 55
 }
 ```
 
-## <a name="example----getting-the-names-of-the-installed-apps"></a>示例--获取已安装的应用程序的名称
+## <a name="example----getting-the-names-of-the-installed-apps"></a>示例--获取已安装应用程序的名称
 
 ### <a name="request"></a>请求
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDe
 
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

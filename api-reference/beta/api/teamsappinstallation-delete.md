@@ -1,21 +1,23 @@
 ---
-title: 从工作组中删除应用程序
+title: 从团队中删除应用程序
 description: 从指定的团队中卸载应用程序。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 47db9ece65eea6d91d03b4c4652a8c5df59e9e7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: aa75f72375432609afb748959cb82ff63fa1b721
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521984"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057020"
 ---
-# <a name="delete-app-from-team"></a>从工作组中删除应用程序
+# <a name="delete-app-from-team"></a>从团队中删除应用程序
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从指定的[团队](../resources/team.md)中卸载[应用程序](../resources/teamsappinstallation.md)。
+
+>**注意:** 如果使用的是应用程序权限, 则会出现已知问题。 有关详细信息，请参阅[已知问题](graph/concepts/known-issues.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +26,7 @@ ms.locfileid: "29521984"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

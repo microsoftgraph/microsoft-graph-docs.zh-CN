@@ -1,21 +1,23 @@
 ---
-title: 升级团队中应用程序
+title: 升级团队中的应用程序
 description: 升级团队中的应用程序安装
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 30398a21d1ba1d8d37932bf0933e454600f019b2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9ef5c41c8b09512b0ee6ebb888be1df1166cf9c5
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514675"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30056978"
 ---
-# <a name="upgrade-an-app-in-a-team"></a>升级团队中应用程序
+# <a name="upgrade-an-app-in-a-team"></a>升级团队中的应用程序
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-升级[团队](../resources/team.md)中的[应用程序安装](../resources/teamsappinstallation.md)到最新版本的应用程序。
+将[团队](../resources/team.md)中的[应用程序安装](../resources/teamsappinstallation.md)升级到最新版本的应用程序。
+
+>**注意:** 如果使用的是应用程序权限, 则会出现已知问题。 有关详细信息，请参阅[已知问题](graph/concepts/known-issues.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -25,7 +27,7 @@ ms.locfileid: "29514675"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
