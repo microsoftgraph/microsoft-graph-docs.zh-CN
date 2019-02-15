@@ -4315,7 +4315,7 @@ items:
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
         - name: 获取
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
-        - name: Create
+        - name: 创建
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-create.md
         - name: 删除
           href: api/intune-deviceconfig-windows10easemailprofileconfiguration-delete.md
@@ -5384,7 +5384,7 @@ items:
           href: api/intune-notification-notificationmessagetemplate-list.md
         - name: 获取
           href: api/intune-notification-notificationmessagetemplate-get.md
-        - name: Create
+        - name: 创建
           href: api/intune-notification-notificationmessagetemplate-create.md
         - name: 删除
           href: api/intune-notification-notificationmessagetemplate-delete.md
@@ -8011,11 +8011,10 @@ items:
         href: api/channel-list-messagereplies.md
       - name: 获取消息回复
         href: api/channel-get-messagereply.md
-    - name: 聊天线程
-      href: resources/chatthread.md
-      items:
-      - name: 创建聊天线程
-        href: api/channel-post-chatthreads.md
+      - name: 创建消息
+        href: api/channel-post-chatmessage.md
+      - name: 回复消息
+        href: api/channel-post-messagereply.md
     - name: 应用
       href: resources/teamsapp.md
       items:
@@ -8348,9 +8347,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 93a958552a5dab5a62415bee602531e9bb914402
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 7ef9b9c3264eba05b5f388691df086bbbdc336a2
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967205"
+ms.locfileid: "29994417"
