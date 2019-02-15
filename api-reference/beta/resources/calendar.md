@@ -4,12 +4,12 @@ description: 日历即事件容器。 可以是用户的日历，也可以是 Of
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 162c2a4787d7b89b55135f61f4334c580b224051
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 97232646b2485d244373feb0be9d87365af38247
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643865"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057034"
 ---
 # <a name="calendar-resource-type"></a>日历资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "29643865"
 |[列出 calendarView](../api/calendar-list-calendarview.md) |[事件](event.md) 集合| 从用户的主日历 `(../me/calendarview)` 或指定日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。|
 |[列出事件](../api/calendar-list-events.md) |[事件](event.md) 集合| 检索日历中的事件列表。该列表包含单实例会议和系列主控事件。|
 |[创建事件](../api/calendar-post-events.md) |[event](event.md)| 在默认或指定日历中创建新事件。|
-|[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |根据组织者和与会者忙/闲状态以及时间或地点约束，建议会议时间和地点。 |
+|[findMeetingTimes](../api/user-findmeetingtimes.md) |[findMeetingTimesResponse](findmeetingtimesresponse.md) |根据组织者和与会者忙/闲状态以及时间或地点约束，建议会议时间和地点。 |
 |[getSchedule（预览）](../api/calendar-getschedule.md) |[scheduleInformation](scheduleinformation.md) 集合|获取用户、通讯组列表或资源在指定时间段内的忙/闲状态信息。 |
 |[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[日历](calendar.md)  |在新建或现有日历中创建一个或多个单值扩展属性。   |
 |[获取包含单值扩展属性的日历](../api/singlevaluelegacyextendedproperty-get.md)  | [日历](calendar.md) | 通过使用 `$expand` 或 `$filter` 获取包含一个单值扩展属性的日历。 |
