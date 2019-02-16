@@ -4,12 +4,12 @@ description: 将应用程序安装到指定的团队。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 35d2521d9bff37ea45f7496a825429762daaf8f7
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 261d186e23b516e58a428ecfdd2883f7a3bc111d
+ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056992"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30070825"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 
@@ -17,7 +17,7 @@ ms.locfileid: "30056992"
 
 将[应用程序](../resources/teamsapp.md)安装到指定的[团队](../resources/team.md)。
 
->**注意:** 如果使用的是应用程序权限, 则会出现已知问题。 有关详细信息，请参阅[已知问题](graph/concepts/known-issues.md)。
+>**注意:** 如果使用的是应用程序权限, 则会出现已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,7 +43,7 @@ POST /teams/{id}/installedApps
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|teamsApp|字符串|要添加的应用程序的 id。|
+|teamsApp|String|要添加的应用程序的 id。|
 
 
 ## <a name="response"></a>响应

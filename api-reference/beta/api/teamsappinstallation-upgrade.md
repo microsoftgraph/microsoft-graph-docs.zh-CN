@@ -4,12 +4,12 @@ description: 升级团队中的应用程序安装
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9ef5c41c8b09512b0ee6ebb888be1df1166cf9c5
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 0ab151203e3b2ec3ee863bae34a8feed0c6d1064
+ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056978"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30070804"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>升级团队中的应用程序
 
@@ -17,7 +17,7 @@ ms.locfileid: "30056978"
 
 将[团队](../resources/team.md)中的[应用程序安装](../resources/teamsappinstallation.md)升级到最新版本的应用程序。
 
->**注意:** 如果使用的是应用程序权限, 则会出现已知问题。 有关详细信息，请参阅[已知问题](graph/concepts/known-issues.md)。
+>**注意:** 如果使用的是应用程序权限, 则会出现已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues)。
 
 ## <a name="permissions"></a>权限
 
