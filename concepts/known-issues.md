@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 21667092deabf8a0c078da114325c25dbe223045
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 1b71c7d1ee9181a766f8aa20b9b16a085fcf31a8
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994396"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30056964"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -39,10 +39,6 @@ ms.locfileid: "29994396"
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="graph-explorer-and-global-admins"></a>Graph 浏览器和全局管理员
-
-目前，Graph 浏览器允许全局管理员管理他们不拥有或不所属的团队；但如果当前用户不是团队的成员或所有者，其他应用便无法尝试执行相同的 API 调用。
-
 ### <a name="get-teams-and-post-teams-are-not-supported"></a>不支持 GET /teams 和 POST /teams
 
 若要获取团队列表，请参阅[列出所有团队](teams-list-all-teams.md)和[列出团队](/graph/api/user-list-joinedteams?view=graph-rest-1.0)。
@@ -54,6 +50,12 @@ ms.locfileid: "29994396"
 新团队会被列出。
 一些旧团队没有包含“Team”的 **resourceProvisioningOptions** 属性，但新创建的团队和在 Microsoft Teams 中被访问的团队有此属性。
 今后，我们将对尚未在 Microsoft Teams 中打开的现有团队设置 **resourceProvisioningOptions**。
+
+### <a name="installing-and-uninstalling-applications-using-application-permissions"></a>使用应用程序权限安装和卸载应用程序
+
+使用应用程序权限从团队卸载应用时，API 将返回 500 错误代码，即使已成功卸载应用，也是如此。
+
+使用应用程序权限在团队中安装、更新和卸载应用时，不会写入审核日志事件。
 
 ## <a name="groups"></a>组
 
