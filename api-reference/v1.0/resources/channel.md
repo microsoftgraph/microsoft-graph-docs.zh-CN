@@ -45,7 +45,7 @@
 {
   "description": "string",
   "displayName": "string",
-  "id": "string (identifier)",
+  "id": "string (identifier)"
 }
 
 ```
