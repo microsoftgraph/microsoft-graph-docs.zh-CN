@@ -1,34 +1,34 @@
 ---
 title: 创建 enrollmentProfile
 description: 创建新的 enrollmentProfile 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a7bb3fb49b57f38ad938f7d43f28f4ece3fda92
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b38fe9bd6d418823cb2e94aa3fc8ac161ce471c0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414765"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175113"
 ---
-# <a name="create-enrollmentprofile"></a><span data-ttu-id="969c1-103">创建 enrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="969c1-103">Create enrollmentProfile</span></span>
+# <a name="create-enrollmentprofile"></a><span data-ttu-id="09977-103">创建 enrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="09977-103">Create enrollmentProfile</span></span>
 
-> <span data-ttu-id="969c1-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="969c1-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="969c1-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="969c1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="09977-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="09977-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="969c1-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="969c1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="09977-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="09977-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="969c1-107">创建新的[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="969c1-107">Create a new [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
+<span data-ttu-id="09977-106">创建新的[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="09977-106">Create a new [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="969c1-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="969c1-108">Prerequisites</span></span>
-<span data-ttu-id="969c1-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="969c1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="09977-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="09977-107">Prerequisites</span></span>
+<span data-ttu-id="09977-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="09977-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="969c1-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="969c1-111">Permission type</span></span>|<span data-ttu-id="969c1-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="969c1-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="09977-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="09977-110">Permission type</span></span>|<span data-ttu-id="09977-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="09977-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="969c1-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="969c1-113">Delegated (work or school account)</span></span>|<span data-ttu-id="969c1-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="969c1-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="969c1-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="969c1-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="969c1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="969c1-116">Not supported.</span></span>|
-|<span data-ttu-id="969c1-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="969c1-117">Application</span></span>|<span data-ttu-id="969c1-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="969c1-118">Not supported.</span></span>|
+|<span data-ttu-id="09977-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="09977-112">Delegated (work or school account)</span></span>|<span data-ttu-id="09977-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="09977-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="09977-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="09977-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="09977-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="09977-115">Not supported.</span></span>|
+|<span data-ttu-id="09977-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="09977-116">Application</span></span>|<span data-ttu-id="09977-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="09977-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="969c1-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="969c1-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="09977-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="09977-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,36 +37,36 @@ ms.locfileid: "29414765"
 POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="969c1-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="969c1-120">Request headers</span></span>
-|<span data-ttu-id="969c1-121">标头</span><span class="sxs-lookup"><span data-stu-id="969c1-121">Header</span></span>|<span data-ttu-id="969c1-122">值</span><span class="sxs-lookup"><span data-stu-id="969c1-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="09977-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="09977-119">Request headers</span></span>
+|<span data-ttu-id="09977-120">标头</span><span class="sxs-lookup"><span data-stu-id="09977-120">Header</span></span>|<span data-ttu-id="09977-121">值</span><span class="sxs-lookup"><span data-stu-id="09977-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="969c1-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="969c1-123">Authorization</span></span>|<span data-ttu-id="969c1-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="969c1-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="969c1-125">Accept</span><span class="sxs-lookup"><span data-stu-id="969c1-125">Accept</span></span>|<span data-ttu-id="969c1-126">application/json</span><span class="sxs-lookup"><span data-stu-id="969c1-126">application/json</span></span>|
+|<span data-ttu-id="09977-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="09977-122">Authorization</span></span>|<span data-ttu-id="09977-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="09977-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="09977-124">Accept</span><span class="sxs-lookup"><span data-stu-id="09977-124">Accept</span></span>|<span data-ttu-id="09977-125">application/json</span><span class="sxs-lookup"><span data-stu-id="09977-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="969c1-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="969c1-127">Request body</span></span>
-<span data-ttu-id="969c1-128">在请求正文中，提供 enrollmentProfile 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="969c1-128">In the request body, supply a JSON representation for the enrollmentProfile object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="09977-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="09977-126">Request body</span></span>
+<span data-ttu-id="09977-127">在请求正文中, 提供 enrollmentProfile 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="09977-127">In the request body, supply a JSON representation for the enrollmentProfile object.</span></span>
 
-<span data-ttu-id="969c1-129">下表显示时创建 enrollmentProfile 所需的属性。</span><span class="sxs-lookup"><span data-stu-id="969c1-129">The following table shows the properties that are required when you create the enrollmentProfile.</span></span>
+<span data-ttu-id="09977-128">下表显示创建 enrollmentProfile 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="09977-128">The following table shows the properties that are required when you create the enrollmentProfile.</span></span>
 
-|<span data-ttu-id="969c1-130">属性</span><span class="sxs-lookup"><span data-stu-id="969c1-130">Property</span></span>|<span data-ttu-id="969c1-131">类型</span><span class="sxs-lookup"><span data-stu-id="969c1-131">Type</span></span>|<span data-ttu-id="969c1-132">说明</span><span class="sxs-lookup"><span data-stu-id="969c1-132">Description</span></span>|
+|<span data-ttu-id="09977-129">属性</span><span class="sxs-lookup"><span data-stu-id="09977-129">Property</span></span>|<span data-ttu-id="09977-130">类型</span><span class="sxs-lookup"><span data-stu-id="09977-130">Type</span></span>|<span data-ttu-id="09977-131">说明</span><span class="sxs-lookup"><span data-stu-id="09977-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="969c1-133">id</span><span class="sxs-lookup"><span data-stu-id="969c1-133">id</span></span>|<span data-ttu-id="969c1-134">String</span><span class="sxs-lookup"><span data-stu-id="969c1-134">String</span></span>|<span data-ttu-id="969c1-135">对象的 GUID</span><span class="sxs-lookup"><span data-stu-id="969c1-135">The GUID for the object</span></span>|
-|<span data-ttu-id="969c1-136">displayName</span><span class="sxs-lookup"><span data-stu-id="969c1-136">displayName</span></span>|<span data-ttu-id="969c1-137">String</span><span class="sxs-lookup"><span data-stu-id="969c1-137">String</span></span>|<span data-ttu-id="969c1-138">配置文件的名称</span><span class="sxs-lookup"><span data-stu-id="969c1-138">Name of the profile</span></span>|
-|<span data-ttu-id="969c1-139">说明</span><span class="sxs-lookup"><span data-stu-id="969c1-139">description</span></span>|<span data-ttu-id="969c1-140">String</span><span class="sxs-lookup"><span data-stu-id="969c1-140">String</span></span>|<span data-ttu-id="969c1-141">配置文件的说明</span><span class="sxs-lookup"><span data-stu-id="969c1-141">Description of the profile</span></span>|
-|<span data-ttu-id="969c1-142">requiresUserAuthentication</span><span class="sxs-lookup"><span data-stu-id="969c1-142">requiresUserAuthentication</span></span>|<span data-ttu-id="969c1-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="969c1-143">Boolean</span></span>|<span data-ttu-id="969c1-144">指示该配置文件是否要求用户身份验证</span><span class="sxs-lookup"><span data-stu-id="969c1-144">Indicates if the profile requires user authentication</span></span>|
-|<span data-ttu-id="969c1-145">configurationEndpointUrl</span><span class="sxs-lookup"><span data-stu-id="969c1-145">configurationEndpointUrl</span></span>|<span data-ttu-id="969c1-146">String</span><span class="sxs-lookup"><span data-stu-id="969c1-146">String</span></span>|<span data-ttu-id="969c1-147">配置用于注册的终结点 url</span><span class="sxs-lookup"><span data-stu-id="969c1-147">Configuration endpoint url to use for Enrollment</span></span>|
-|<span data-ttu-id="969c1-148">enableAuthenticationViaCompanyPortal</span><span class="sxs-lookup"><span data-stu-id="969c1-148">enableAuthenticationViaCompanyPortal</span></span>|<span data-ttu-id="969c1-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="969c1-149">Boolean</span></span>|<span data-ttu-id="969c1-150">指示要通过 Apple Setup Assistant 而不是的公司门户进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="969c1-150">Indicates to authenticate with Apple Setup Assistant instead of Company Portal.</span></span>|
-|<span data-ttu-id="969c1-151">requireCompanyPortalOnSetupAssistantEnrolledDevices</span><span class="sxs-lookup"><span data-stu-id="969c1-151">requireCompanyPortalOnSetupAssistantEnrolledDevices</span></span>|<span data-ttu-id="969c1-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="969c1-152">Boolean</span></span>|<span data-ttu-id="969c1-153">表示安装程序注册的助手设备上必须的公司门户</span><span class="sxs-lookup"><span data-stu-id="969c1-153">Indicates that Company Portal is required on setup assistant enrolled devices</span></span>|
+|<span data-ttu-id="09977-132">id</span><span class="sxs-lookup"><span data-stu-id="09977-132">id</span></span>|<span data-ttu-id="09977-133">String</span><span class="sxs-lookup"><span data-stu-id="09977-133">String</span></span>|<span data-ttu-id="09977-134">对象的 GUID</span><span class="sxs-lookup"><span data-stu-id="09977-134">The GUID for the object</span></span>|
+|<span data-ttu-id="09977-135">displayName</span><span class="sxs-lookup"><span data-stu-id="09977-135">displayName</span></span>|<span data-ttu-id="09977-136">字符串</span><span class="sxs-lookup"><span data-stu-id="09977-136">String</span></span>|<span data-ttu-id="09977-137">配置文件的名称</span><span class="sxs-lookup"><span data-stu-id="09977-137">Name of the profile</span></span>|
+|<span data-ttu-id="09977-138">说明</span><span class="sxs-lookup"><span data-stu-id="09977-138">description</span></span>|<span data-ttu-id="09977-139">字符串</span><span class="sxs-lookup"><span data-stu-id="09977-139">String</span></span>|<span data-ttu-id="09977-140">配置文件的说明</span><span class="sxs-lookup"><span data-stu-id="09977-140">Description of the profile</span></span>|
+|<span data-ttu-id="09977-141">requiresUserAuthentication</span><span class="sxs-lookup"><span data-stu-id="09977-141">requiresUserAuthentication</span></span>|<span data-ttu-id="09977-142">布尔</span><span class="sxs-lookup"><span data-stu-id="09977-142">Boolean</span></span>|<span data-ttu-id="09977-143">指示配置文件是否需要用户身份验证</span><span class="sxs-lookup"><span data-stu-id="09977-143">Indicates if the profile requires user authentication</span></span>|
+|<span data-ttu-id="09977-144">configurationEndpointUrl</span><span class="sxs-lookup"><span data-stu-id="09977-144">configurationEndpointUrl</span></span>|<span data-ttu-id="09977-145">字符串</span><span class="sxs-lookup"><span data-stu-id="09977-145">String</span></span>|<span data-ttu-id="09977-146">用于注册的配置终结点 url</span><span class="sxs-lookup"><span data-stu-id="09977-146">Configuration endpoint url to use for Enrollment</span></span>|
+|<span data-ttu-id="09977-147">enableAuthenticationViaCompanyPortal</span><span class="sxs-lookup"><span data-stu-id="09977-147">enableAuthenticationViaCompanyPortal</span></span>|<span data-ttu-id="09977-148">布尔</span><span class="sxs-lookup"><span data-stu-id="09977-148">Boolean</span></span>|<span data-ttu-id="09977-149">指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="09977-149">Indicates to authenticate with Apple Setup Assistant instead of Company Portal.</span></span>|
+|<span data-ttu-id="09977-150">requireCompanyPortalOnSetupAssistantEnrolledDevices</span><span class="sxs-lookup"><span data-stu-id="09977-150">requireCompanyPortalOnSetupAssistantEnrolledDevices</span></span>|<span data-ttu-id="09977-151">布尔</span><span class="sxs-lookup"><span data-stu-id="09977-151">Boolean</span></span>|<span data-ttu-id="09977-152">指示在安装助理注册设备上需要公司门户</span><span class="sxs-lookup"><span data-stu-id="09977-152">Indicates that Company Portal is required on setup assistant enrolled devices</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="969c1-154">响应</span><span class="sxs-lookup"><span data-stu-id="969c1-154">Response</span></span>
-<span data-ttu-id="969c1-155">如果成功，此方法返回`201 Created`响应代码和响应正文中的[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="969c1-155">If successful, this method returns a `201 Created` response code and a [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="09977-153">响应</span><span class="sxs-lookup"><span data-stu-id="09977-153">Response</span></span>
+<span data-ttu-id="09977-154">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="09977-154">If successful, this method returns a `201 Created` response code and a [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="969c1-156">示例</span><span class="sxs-lookup"><span data-stu-id="969c1-156">Example</span></span>
+## <a name="example"></a><span data-ttu-id="09977-155">示例</span><span class="sxs-lookup"><span data-stu-id="09977-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="969c1-157">请求</span><span class="sxs-lookup"><span data-stu-id="969c1-157">Request</span></span>
-<span data-ttu-id="969c1-158">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="969c1-158">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="09977-156">请求</span><span class="sxs-lookup"><span data-stu-id="09977-156">Request</span></span>
+<span data-ttu-id="09977-157">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="09977-157">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
@@ -83,8 +83,8 @@ Content-length: 370
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="969c1-159">响应</span><span class="sxs-lookup"><span data-stu-id="969c1-159">Response</span></span>
-<span data-ttu-id="969c1-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="969c1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="09977-158">响应</span><span class="sxs-lookup"><span data-stu-id="09977-158">Response</span></span>
+<span data-ttu-id="09977-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="09977-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
