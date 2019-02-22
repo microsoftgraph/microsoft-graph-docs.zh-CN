@@ -1,37 +1,37 @@
 ---
 title: report 资源类型
-description: 介绍 Intune，支持多个工作流报告资源的 Microsoft Graph api。
+description: 介绍了适用于 Intune 的 Microsoft Graph API 的报告资源, 它支持多个工作流。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 098c20b2460324c4975533902e1b71fde1af41c5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f523f6df0b8b90cb6649ac81f1e433d6df227aea
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407471"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165749"
 ---
-# <a name="report-resource-type"></a><span data-ttu-id="ef341-103">report 资源类型</span><span class="sxs-lookup"><span data-stu-id="ef341-103">report resource type</span></span>
+# <a name="report-resource-type"></a><span data-ttu-id="b781d-103">report 资源类型</span><span class="sxs-lookup"><span data-stu-id="b781d-103">report resource type</span></span>
 
-> <span data-ttu-id="ef341-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="ef341-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ef341-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ef341-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b781d-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="b781d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ef341-106">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="ef341-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="b781d-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b781d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ef341-107">将内容返回相应的上下文中，包括：</span><span class="sxs-lookup"><span data-stu-id="ef341-107">Returns the content appropriate for the context, including:</span></span>
+<span data-ttu-id="b781d-106">返回适用于上下文的内容, 包括:</span><span class="sxs-lookup"><span data-stu-id="b781d-106">Returns the content appropriate for the context, including:</span></span>
 
-- <span data-ttu-id="ef341-108">设备配置配置文件历史记录的报告。</span><span class="sxs-lookup"><span data-stu-id="ef341-108">Device Configuration profile history reports.</span></span>
-- <span data-ttu-id="ef341-109">注册失败报告。</span><span class="sxs-lookup"><span data-stu-id="ef341-109">Enrollment failure reports.</span></span>
+- <span data-ttu-id="b781d-107">设备配置文件历史记录报告。</span><span class="sxs-lookup"><span data-stu-id="b781d-107">Device Configuration profile history reports.</span></span>
+- <span data-ttu-id="b781d-108">注册失败报告。</span><span class="sxs-lookup"><span data-stu-id="b781d-108">Enrollment failure reports.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ef341-110">属性</span><span class="sxs-lookup"><span data-stu-id="ef341-110">Properties</span></span>
-|<span data-ttu-id="ef341-111">属性</span><span class="sxs-lookup"><span data-stu-id="ef341-111">Property</span></span>|<span data-ttu-id="ef341-112">类型</span><span class="sxs-lookup"><span data-stu-id="ef341-112">Type</span></span>|<span data-ttu-id="ef341-113">说明</span><span class="sxs-lookup"><span data-stu-id="ef341-113">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b781d-109">属性</span><span class="sxs-lookup"><span data-stu-id="b781d-109">Properties</span></span>
+|<span data-ttu-id="b781d-110">属性</span><span class="sxs-lookup"><span data-stu-id="b781d-110">Property</span></span>|<span data-ttu-id="b781d-111">类型</span><span class="sxs-lookup"><span data-stu-id="b781d-111">Type</span></span>|<span data-ttu-id="b781d-112">说明</span><span class="sxs-lookup"><span data-stu-id="b781d-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ef341-114">内容</span><span class="sxs-lookup"><span data-stu-id="ef341-114">content</span></span>|<span data-ttu-id="ef341-115">Stream</span><span class="sxs-lookup"><span data-stu-id="ef341-115">Stream</span></span>|<span data-ttu-id="ef341-116">报表内容;因报表类型而异详细信息。</span><span class="sxs-lookup"><span data-stu-id="ef341-116">Report content; details vary by report type.</span></span>|
+|<span data-ttu-id="b781d-113">内容</span><span class="sxs-lookup"><span data-stu-id="b781d-113">content</span></span>|<span data-ttu-id="b781d-114">Stream</span><span class="sxs-lookup"><span data-stu-id="b781d-114">Stream</span></span>|<span data-ttu-id="b781d-115">报告内容;详细信息因报告类型而异。</span><span class="sxs-lookup"><span data-stu-id="b781d-115">Report content; details vary by report type.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ef341-117">关系</span><span class="sxs-lookup"><span data-stu-id="ef341-117">Relationships</span></span>
-<span data-ttu-id="ef341-118">无</span><span class="sxs-lookup"><span data-stu-id="ef341-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="b781d-116">关系</span><span class="sxs-lookup"><span data-stu-id="b781d-116">Relationships</span></span>
+<span data-ttu-id="b781d-117">无</span><span class="sxs-lookup"><span data-stu-id="b781d-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ef341-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ef341-119">JSON Representation</span></span>
-<span data-ttu-id="ef341-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ef341-120">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b781d-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b781d-118">JSON Representation</span></span>
+<span data-ttu-id="b781d-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b781d-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

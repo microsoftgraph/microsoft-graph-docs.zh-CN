@@ -1,36 +1,36 @@
 ---
 title: bitLockerFixedDrivePolicy 资源类型
 description: BitLocker 固定驱动器策略。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f233e4c1779a860cc40dc97007aa0216795928f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e09130a2426f6a7196d472a29f7667b9c044d313
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424663"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164293"
 ---
-# <a name="bitlockerfixeddrivepolicy-resource-type"></a><span data-ttu-id="8263b-103">bitLockerFixedDrivePolicy 资源类型</span><span class="sxs-lookup"><span data-stu-id="8263b-103">bitLockerFixedDrivePolicy resource type</span></span>
+# <a name="bitlockerfixeddrivepolicy-resource-type"></a><span data-ttu-id="7e490-103">bitLockerFixedDrivePolicy 资源类型</span><span class="sxs-lookup"><span data-stu-id="7e490-103">bitLockerFixedDrivePolicy resource type</span></span>
 
-> <span data-ttu-id="8263b-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="8263b-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="8263b-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="8263b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7e490-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="7e490-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8263b-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8263b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7e490-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="7e490-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8263b-107">BitLocker 固定驱动器策略。</span><span class="sxs-lookup"><span data-stu-id="8263b-107">BitLocker Fixed Drive Policies.</span></span>
+<span data-ttu-id="7e490-106">BitLocker 固定驱动器策略。</span><span class="sxs-lookup"><span data-stu-id="7e490-106">BitLocker Fixed Drive Policies.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8263b-108">属性</span><span class="sxs-lookup"><span data-stu-id="8263b-108">Properties</span></span>
-|<span data-ttu-id="8263b-109">属性</span><span class="sxs-lookup"><span data-stu-id="8263b-109">Property</span></span>|<span data-ttu-id="8263b-110">类型</span><span class="sxs-lookup"><span data-stu-id="8263b-110">Type</span></span>|<span data-ttu-id="8263b-111">说明</span><span class="sxs-lookup"><span data-stu-id="8263b-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7e490-107">属性</span><span class="sxs-lookup"><span data-stu-id="7e490-107">Properties</span></span>
+|<span data-ttu-id="7e490-108">属性</span><span class="sxs-lookup"><span data-stu-id="7e490-108">Property</span></span>|<span data-ttu-id="7e490-109">类型</span><span class="sxs-lookup"><span data-stu-id="7e490-109">Type</span></span>|<span data-ttu-id="7e490-110">说明</span><span class="sxs-lookup"><span data-stu-id="7e490-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8263b-112">encryptionMethod</span><span class="sxs-lookup"><span data-stu-id="8263b-112">encryptionMethod</span></span>|[<span data-ttu-id="8263b-113">bitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="8263b-113">bitLockerEncryptionMethod</span></span>](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|<span data-ttu-id="8263b-114">选择固定驱动器的加密方法。</span><span class="sxs-lookup"><span data-stu-id="8263b-114">Select the encryption method for fixed drives.</span></span> <span data-ttu-id="8263b-115">可取值为：`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256`</span><span class="sxs-lookup"><span data-stu-id="8263b-115">Possible values are: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.</span></span>|
-|<span data-ttu-id="8263b-116">requireEncryptionForWriteAccess</span><span class="sxs-lookup"><span data-stu-id="8263b-116">requireEncryptionForWriteAccess</span></span>|<span data-ttu-id="8263b-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="8263b-117">Boolean</span></span>|<span data-ttu-id="8263b-118">此策略设置确定是否需要对固定的数据驱动器可写入的计算机上 BitLocker 保护。</span><span class="sxs-lookup"><span data-stu-id="8263b-118">This policy setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.</span></span>|
-|<span data-ttu-id="8263b-119">recoveryOptions</span><span class="sxs-lookup"><span data-stu-id="8263b-119">recoveryOptions</span></span>|[<span data-ttu-id="8263b-120">bitLockerRecoveryOptions</span><span class="sxs-lookup"><span data-stu-id="8263b-120">bitLockerRecoveryOptions</span></span>](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|<span data-ttu-id="8263b-121">此策略设置可以控制如何受保护的 BitLocker 驱动器恢复所需的凭据不存在的固定的数据。</span><span class="sxs-lookup"><span data-stu-id="8263b-121">This policy setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials.</span></span> <span data-ttu-id="8263b-122">Bitlocker 打开时，将应用此策略设置。</span><span class="sxs-lookup"><span data-stu-id="8263b-122">This policy setting is applied when you turn on BitLocker.</span></span>|
+|<span data-ttu-id="7e490-111">encryptionMethod</span><span class="sxs-lookup"><span data-stu-id="7e490-111">encryptionMethod</span></span>|[<span data-ttu-id="7e490-112">bitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="7e490-112">bitLockerEncryptionMethod</span></span>](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|<span data-ttu-id="7e490-113">选择固定驱动器的加密方法。</span><span class="sxs-lookup"><span data-stu-id="7e490-113">Select the encryption method for fixed drives.</span></span> <span data-ttu-id="7e490-114">可取值为：`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256`</span><span class="sxs-lookup"><span data-stu-id="7e490-114">Possible values are: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.</span></span>|
+|<span data-ttu-id="7e490-115">requireEncryptionForWriteAccess</span><span class="sxs-lookup"><span data-stu-id="7e490-115">requireEncryptionForWriteAccess</span></span>|<span data-ttu-id="7e490-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="7e490-116">Boolean</span></span>|<span data-ttu-id="7e490-117">此策略设置确定固定数据驱动器在计算机上是否可写, 是否需要 BitLocker 保护。</span><span class="sxs-lookup"><span data-stu-id="7e490-117">This policy setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.</span></span>|
+|<span data-ttu-id="7e490-118">recoveryOptions</span><span class="sxs-lookup"><span data-stu-id="7e490-118">recoveryOptions</span></span>|[<span data-ttu-id="7e490-119">bitLockerRecoveryOptions</span><span class="sxs-lookup"><span data-stu-id="7e490-119">bitLockerRecoveryOptions</span></span>](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|<span data-ttu-id="7e490-120">通过此策略设置, 您可以控制在缺少所需凭据的情况中恢复受 BitLocker 保护的固定数据驱动器的方式。</span><span class="sxs-lookup"><span data-stu-id="7e490-120">This policy setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials.</span></span> <span data-ttu-id="7e490-121">启用 BitLocker 时, 将应用此策略设置。</span><span class="sxs-lookup"><span data-stu-id="7e490-121">This policy setting is applied when you turn on BitLocker.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="8263b-123">关系</span><span class="sxs-lookup"><span data-stu-id="8263b-123">Relationships</span></span>
-<span data-ttu-id="8263b-124">无</span><span class="sxs-lookup"><span data-stu-id="8263b-124">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7e490-122">关系</span><span class="sxs-lookup"><span data-stu-id="7e490-122">Relationships</span></span>
+<span data-ttu-id="7e490-123">无</span><span class="sxs-lookup"><span data-stu-id="7e490-123">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="8263b-125">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="8263b-125">JSON Representation</span></span>
-<span data-ttu-id="8263b-126">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8263b-126">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7e490-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7e490-124">JSON Representation</span></span>
+<span data-ttu-id="7e490-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7e490-125">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.bitLockerFixedDrivePolicy"
