@@ -1,21 +1,21 @@
 ---
 title: 更新 windowsManagementApp
 description: 更新 windowsManagementApp 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27ba9154598480972e1d7f2c9a8b5d28bb3ec4b2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3755da3e9f8a5d5ad5f0d061374d9d3f8e277b7b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412406"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165805"
 ---
 # <a name="update-windowsmanagementapp"></a>更新 windowsManagementApp
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)对象的属性。
 
@@ -44,19 +44,19 @@ PATCH /deviceAppManagement/windowsManagementApp
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)对象的 JSON 表示形式。
+在请求正文中, 提供[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)对象的 JSON 表示形式。
 
-下表显示时创建[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)所需的属性。
+下表显示创建[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Windows 管理应用程序的唯一标识符|
-|availableVersion|String|Windows 管理应用程序可用版本。|
+|id|字符串|Windows 管理应用程序的唯一标识符|
+|availableVersion|字符串|Windows 管理应用程序的可用版本。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)对象。
 
 ## <a name="example"></a>示例
 

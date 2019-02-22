@@ -1,48 +1,49 @@
 ---
 title: windowsAutopilotDeploymentProfile 资源类型
-description: Windows 自动执行某些操作部署配置文件
-localization_priority: Normal
+description: Windows Autopilot 部署配置文件
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f97603980f4e76c4dd2f63287822a1e8e984ded
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b3b815e0184ab9969af348338c07c3fabf0b0597
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394108"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168871"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>windowsAutopilotDeploymentProfile 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Windows 自动执行某些操作部署配置文件
+Windows Autopilot 部署配置文件
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取 windowsAutopilotDeploymentProfile](../api/intune-enrollment-windowsautopilotdeploymentprofile-get.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|读取属性和[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)对象的关系。|
+|[获取 windowsAutopilotDeploymentProfile](../api/intune-enrollment-windowsautopilotdeploymentprofile-get.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|读取[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)对象的属性和关系。|
 |[assign 操作](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|无|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|配置文件密钥|
-|displayName|String|配置文件的名称|
-|说明|String|配置文件的说明|
+|id|字串符号|配置文件键|
+|displayName|字符串|配置文件的名称|
+|说明|字符串|配置文件的说明|
 |language|String|在设备上配置的语言|
 |createdDateTime|DateTimeOffset|配置文件创建时间|
 |lastModifiedDateTime|DateTimeOffset|配置文件上次修改时间|
-|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|即开体验设置|
+|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|"开箱即用体验" 设置|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|注册状态屏幕设置|
-|extractHardwareHash|Boolean|配置文件的 HardwareHash 提取|
-|deviceNameTemplate|String|用于自动执行某些操作设备命名的模板。 这可以是自定义文本，并且还可以包含该设备，序列号或随机生成的编号。 由模板生成的文本的总长度可不超过 15 个字符。|
+|extractHardwareHash|布尔|配置文件的 HardwareHash 提取|
+|deviceNameTemplate|字符串|用于命名 AutoPilot 设备的模板。 它可以是自定义文本, 也可以包含设备的序列号或随机生成的数字。 模板生成的文本的总长度不能超过15个字符。|
+|enableWhiteGlove|布尔|为配置文件启用 Autopilot 白色 Glove。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)集合|配置文件分配设备的列表。|
+|assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)集合|配置文件的已分配设备的列表。|
 |assignments|[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)集合|配置文件的组分配列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -82,7 +83,8 @@ Windows 自动执行某些操作部署配置文件
     "allowDeviceUseOnInstallFailure": true
   },
   "extractHardwareHash": true,
-  "deviceNameTemplate": "String"
+  "deviceNameTemplate": "String",
+  "enableWhiteGlove": true
 }
 ```
 

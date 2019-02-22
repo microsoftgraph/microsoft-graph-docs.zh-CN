@@ -1,31 +1,31 @@
 ---
 title: windowsKioskProfile 资源类型
 description: 尚未记录
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55d8c23d3bfae2baf9d632c33390b8aafb5e7ef8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f1c7107982a33452cd9dd00829cba08f108c6394
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420246"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164748"
 ---
 # <a name="windowskioskprofile-resource-type"></a>windowsKioskProfile 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|档案 Id|String|实体的键。|
-|profileName|String|这是用于标识一组应用程序，在开始菜单和用户为其分配此网亭配置这些应用程序的布局的友好名称。|
-|appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|将用于此网亭配置应用程序配置。|
-|userAccountsConfiguration|[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)集合|将锁定到此网亭配置用户帐户。 此集合可以包含 100 个元素的最大值。|
+|profileId|String|实体的键。|
+|profileName|字符串|这是一个友好名称, 用于标识一组应用程序、"开始" 菜单上这些应用程序的布局以及为其分配了此展台配置的用户。|
+|appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|将用于此展台配置的应用程序配置。|
+|userAccountsConfiguration|[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)集合|将锁定到此展台配置的用户帐户。 此集合最多可包含100个元素。|
 
 ## <a name="relationships"></a>关系
 无

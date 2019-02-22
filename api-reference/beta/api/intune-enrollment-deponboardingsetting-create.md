@@ -1,21 +1,21 @@
 ---
 title: 创建 depOnboardingSetting
 description: 创建新的 depOnboardingSetting 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6aa17e5741df007d7ee449a4ab305be37807051d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2d32f988763de3134d5be0e9b13db0f524d82a37
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409816"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164384"
 ---
 # <a name="create-deponboardingsetting"></a>创建 depOnboardingSetting
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象。
 
@@ -44,29 +44,30 @@ POST /deviceManagement/depOnboardingSettings
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 depOnboardingSetting 对象的 JSON 表示形式。
+在请求正文中, 提供 depOnboardingSetting 对象的 JSON 表示形式。
 
-下表显示时创建 depOnboardingSetting 所需的属性。
+下表显示创建 depOnboardingSetting 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 UUID|
-|appleIdentifier|String|Apple ID 用来获取当前的令牌。|
-|tokenExpirationDateTime|DateTimeOffset|该令牌将过期时。|
-|lastModifiedDateTime|DateTimeOffset|当该服务已 onboarded。|
-|lastSuccessfulSyncDateTime|DateTimeOffset|当服务与 Intune 的最后一个 syned|
-|lastSyncTriggeredDateTime|DateTimeOffset|当 Intune 上次请求同步。|
-|shareTokenWithSchoolDataSyncService|Boolean|是否 Dep 令牌共享将启用学校数据同步服务。|
-|lastSyncErrorCode|Int32|在最后一个 dep 同步过程中由 Apple 报告的错误代码。|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 标记类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
-|tokenName|String|Dep 令牌的友好名称|
-|syncedDeviceCount|Int32|获取同步设备计数|
-|dataSharingConsentGranted|Boolean|授予许可与 Apple Dep 服务共享的数据|
+|appleIdentifier|String|用于获取当前令牌的 Apple ID。|
+|tokenExpirationDateTime|DateTimeOffset|令牌将到期的时间。|
+|lastModifiedDateTime|DateTimeOffset|在载入服务时。|
+|lastSuccessfulSyncDateTime|DateTimeOffset|服务上次使用 Intune syned 时|
+|lastSyncTriggeredDateTime|DateTimeOffset|Intune 上次请求同步时。|
+|shareTokenWithSchoolDataSyncService|布尔|是否启用了与学校数据同步服务的 Dep 令牌共享。|
+|lastSyncErrorCode|Int32|上一次 dep 同步期间 Apple 报告的错误代码。|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 令牌类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
+|tokenName|字符串|Dep 令牌的友好名称|
+|syncedDeviceCount|Int32|获取同步的设备计数|
+|dataSharingConsentGranted|布尔|为使用 Apple Dep 服务进行数据共享而授予的同意|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -75,7 +76,7 @@ POST /deviceManagement/depOnboardingSettings
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings
 Content-type: application/json
-Content-length: 514
+Content-length: 576
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -88,7 +89,10 @@ Content-length: 514
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -97,7 +101,7 @@ Content-length: 514
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 627
+Content-Length: 689
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -112,7 +116,10 @@ Content-Length: 627
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 

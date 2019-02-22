@@ -1,21 +1,21 @@
 ---
 title: androidForWorkSettings 资源类型
 description: Android for Work 设置。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c1125890ad05eb00a05f19bb765df6122a10ce7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 016b0c727afb5a4c1864c8e02b91491c54f42b77
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421961"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165707"
 ---
 # <a name="androidforworksettings-resource-type"></a>androidForWorkSettings 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Android for Work 设置。
 
@@ -24,7 +24,7 @@ Android for Work 设置。
 |:---|:---|:---|
 |[获取 androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-get.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|读取 [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) 对象的属性和关系。|
 |[更新 androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-update.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|更新 [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) 对象的属性。|
-|[requestSignupUrl 操作](../api/intune-androidforwork-androidforworksettings-requestsignupurl.md)|String|尚未记录|
+|[requestSignupUrl 操作](../api/intune-androidforwork-androidforworksettings-requestsignupurl.md)|字符串|尚未记录|
 |[completeSignup 操作](../api/intune-androidforwork-androidforworksettings-completesignup.md)|无|尚未记录|
 |[syncApps 操作](../api/intune-androidforwork-androidforworksettings-syncapps.md)|无|尚未记录|
 |[取消绑定操作](../api/intune-androidforwork-androidforworksettings-unbind.md)|无|尚未记录|
@@ -32,16 +32,16 @@ Android for Work 设置。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Android for Work 设置标识符|
-|bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|将绑定使用 Google EMM API 的租户的状态。 可取值为：`notBound`、`bound`、`boundAndValidated`、`unbinding`。|
+|id|字符串|Android for Work 设置标识符|
+|bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|使用 Google EMM API 的租户的绑定状态。 可取值为：`notBound`、`bound`、`boundAndValidated`、`unbinding`。|
 |lastAppSyncDateTime|DateTimeOffset|应用同步的上次完成时间|
-|lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|最后一个应用程序同步结果。 可取值为：`success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
+|lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|上次应用程序同步结果。 可取值为：`success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
 |ownerUserPrincipalName|String|创建了企业的所有者 UPN|
 |ownerOrganizationName|String|载入 Android for Work 时使用的组织名称|
 |lastModifiedDateTime|DateTimeOffset|Android for Work 设置的上次修改时间|
-|enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|指示哪些用户可以注册工作设备管理中 Android 设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
-|targetGroupIds|String 集合|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
-|deviceOwnerManagementEnabled|Boolean|指示是否此帐户 flighting 用于与 CloudDPC Android 设备所有者管理。|
+|enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|指示哪些用户可以在 Android for Work 设备管理中注册设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
+|targetGroupIds|String collection|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
+|deviceOwnerManagementEnabled|布尔|指示此帐户是否为使用 CloudDPC 的 Android 设备所有者管理 flighting。|
 
 ## <a name="relationships"></a>关系
 无

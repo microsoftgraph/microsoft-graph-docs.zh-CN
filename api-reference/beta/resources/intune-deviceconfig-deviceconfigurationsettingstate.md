@@ -1,39 +1,39 @@
 ---
 title: deviceConfigurationSettingState 资源类型
 description: 给定设备的设备配置设置状态。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9355cdf0aab60208246fdae699cda78be65d62ff
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0acfcd697815ee9403e6144c5da34dd824022de3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415185"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165882"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 给定设备的设备配置设置状态。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|setting|String|报告的设置|
+|setting|字符串|报告的设置|
 |settingName|String|报告的本地化/用户友好设置名称|
 |instanceDisplayName|String|报告的设置实例的名称。|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |errorCode|Int64|设置的错误代码|
-|errorDescription|String|错误说明|
-|userId|String|UserId|
-|userName|String|UserName|
+|errorDescription|字符串|错误说明|
+|userId|字符串|UserId|
+|userName|字符串|UserName|
 |userEmail|String|UserEmail|
-|userPrincipalName|String|UserPrincipalName。|
+|userPrincipalName|字符串|UserPrincipalName。|
 |sources|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|参与策略|
-|currentValue|String|设备上设置的当前值|
+|currentValue|字符串|设备上设置的当前值|
 
 ## <a name="relationships"></a>关系
 无

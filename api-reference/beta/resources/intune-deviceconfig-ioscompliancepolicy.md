@@ -1,21 +1,21 @@
 ---
 title: iosCompliancePolicy 资源类型
 description: 此类包含 iOS 的合规性设置。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a43ecbac4ddb4ec7c59c3c24ba8b0b3995e6430a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c97b7762faaf8618c7147f956815cd9f4cb7dc5d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425937"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163089"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>iosCompliancePolicy 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 此类包含 iOS 的合规性设置。
 
@@ -34,14 +34,14 @@ ms.locfileid: "29425937"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|id|字串符号|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|passcodeBlockSimple|Boolean|指示是否阻止简单密码。|
+|passcodeBlockSimple|布尔|指示是否阻止简单密码。|
 |passcodeExpirationDays|Int32|密码过期前的天数。 有效值为 1 至 65535|
 |passcodeMinimumLength|Int32|密码的最小长度。 有效值为 4 至 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|需要密码之前的不活动分钟数。|
@@ -52,13 +52,13 @@ ms.locfileid: "29425937"
 |passcodeRequired|Boolean|指示是否需要密码。|
 |osMinimumVersion|String|最低 IOS 版本。|
 |osMaximumVersion|String|最高 IOS 版本。|
-|osMinimumBuildVersion|String|最小 IOS 生成版本。|
-|osMaximumBuildVersion|String|最大 IOS 生成版本。|
-|securityBlockJailbrokenDevices|Boolean|设备不得越狱或取得 root 权限。|
-|deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
+|osMinimumBuildVersion|字符串|最低 IOS 内部版本。|
+|osMaximumBuildVersion|字符串|最大 IOS 内部版本。|
+|securityBlockJailbrokenDevices|布尔|设备不得越狱或取得 root 权限。|
+|deviceThreatProtectionEnabled|布尔|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|要求移动威胁防护最低风险级别来报告不符合情况。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |managedEmailProfileRequired|Boolean|指示是否需要托管电子邮件配置文件。|
-|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备，没有安装指定的应用程序。 此集合可以包含 100 个元素的最大值。|
+|restrictedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要求设备未安装指定的应用程序。 此集合最多可包含100个元素。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

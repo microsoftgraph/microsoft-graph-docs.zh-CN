@@ -1,21 +1,21 @@
 ---
 title: 更新 symantecCodeSigningCertificate
 description: 更新 symantecCodeSigningCertificate 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5da263a8b4c2bbf121fb994b4d20168c45da9e03
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 26a56296956c3955808a308989a0ca8ded5d4ae5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414023"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168752"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>更新 symantecCodeSigningCertificate
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)对象的属性。
 
@@ -44,27 +44,27 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)对象的 JSON 表示形式。
+在请求正文中, 提供[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)对象的 JSON 表示形式。
 
-下表显示时创建[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)所需的属性。
+下表显示创建[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|content|Binary|中的原始数据格式的 Windows Symantec 代码签名证书。|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
-|password|String|.Pfx 文件所需的密码。|
-|SubjectName|String|证书使用者名称。|
-|subject|String|证书使用者值。|
-|issuerName|String|证书颁发者名称。|
-|颁发者|String|证书颁发者值。|
+|content|Binary|原始数据格式的 Windows Symantec 代码签名证书。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
+|password|字符串|.pfx 文件所需的密码。|
+|SubjectName|String|证书的主题名称。|
+|subject|字符串|证书的主题值。|
+|issuerName|字符串|证书的颁发者名称。|
+|常用|字符串|证书的 Issuer 值。|
 |expirationDateTime|DateTimeOffset|证书到期日期。|
-|uploadDateTime|DateTimeOffset|作为 Symantec Cert 代码签名证书的类型。|
+|uploadDateTime|DateTimeOffset|作为 Symantec 证书的 CodeSigning 证书的类型。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)对象。
 
 ## <a name="example"></a>示例
 

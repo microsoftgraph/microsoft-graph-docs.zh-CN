@@ -4,12 +4,12 @@ description: 获取组对话中的所有线程。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 3aefbf3dffd3c9aeb4244684316aec64a2c8f02b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e08c83f140b86d831d71470dd3d47c14681e3b32
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917753"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164335"
 ---
 # <a name="list-threads"></a>列出线程
 
@@ -24,7 +24,7 @@ ms.locfileid: "27917753"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All、Group.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All、Group.Read.All |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

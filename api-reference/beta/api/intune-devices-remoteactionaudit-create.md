@@ -1,21 +1,21 @@
 ---
 title: 创建 remoteActionAudit
 description: 创建新的 remoteActionAudit 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47ba3de19ca5cdc9b01bb3b65eb8b04e75831d87
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1686005b04e0e9fbf8376f7e14455937feff65af
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396880"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167429"
 ---
 # <a name="create-remoteactionaudit"></a>创建 remoteActionAudit
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象。
 
@@ -44,26 +44,26 @@ POST /deviceManagement/remoteActionAudits
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 remoteActionAudit 对象的 JSON 表示形式。
+在请求正文中, 提供 remoteActionAudit 对象的 JSON 表示形式。
 
-下表显示时创建 remoteActionAudit 所需的属性。
+下表显示创建 remoteActionAudit 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|报告 id。|
+|id|字符串|报告 Id。|
 |deviceDisplayName|String|Intune 设备名称。|
-|userName|String|\[弃用的\]请改用 InitiatedByUserPrincipalName。|
-|initiatedByUserPrincipalName|String|用户启动的设备操作，格式为 UPN。|
-|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值为： `unknown`， `factoryReset`， `removeCompanyData`， `resetPasscode`， `remoteLock`， `enableLostMode`， `disableLostMode`， `locateDevice`， `rebootNow`， `recoverPasscode`， `cleanWindowsDevice`， `logoutSharedAppleDeviceActiveUser`， `quickScan`， `fullScan`， `windowsDefenderUpdateSignatures`， `factoryResetKeepEnrollmentData`， `updateDeviceAccount`， `automaticRedeployment`， `shutDown`.|
-|requestDateTime|DateTimeOffset|发布该操作时，给定采用 UTC 时间。|
-|deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
-|deviceIMEI|String|设备的 IMEI。|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
+|userName|字符串|\[弃用\]请改用 InitiatedByUserPrincipalName。|
+|initiatedByUserPrincipalName|字符串|启动设备操作的用户的格式为 UPN。|
+|action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值为`unknown`: `factoryReset`、 `removeCompanyData`、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan`、、、、、、、、、、、、、、、、 `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`.|
+|requestDateTime|DateTimeOffset|发出操作的时间, 以 UTC 表示。|
+|deviceOwnerUserPrincipalName|字符串|设备所有者的 Upn。|
+|deviceIMEI|字符串|设备的 IMEI。|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|动作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象。
 
 ## <a name="example"></a>示例
 

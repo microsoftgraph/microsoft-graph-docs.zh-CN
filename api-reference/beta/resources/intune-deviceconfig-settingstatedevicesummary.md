@@ -1,21 +1,21 @@
 ---
 title: settingStateDeviceSummary 资源类型
 description: 设置状态的设备合规性策略和配置摘要
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fab849fa44c33996d31ddac15b44c23f8450988d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a3c36b4270896716b6fdb7de11a35b5267ed5d16
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414835"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163677"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设置状态的设备合规性策略和配置摘要
 
@@ -31,13 +31,13 @@ ms.locfileid: "29414835"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |settingName|String|设置的名称|
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|
 |notApplicableDeviceCount|Int32|设置的设备不适用计数|
 |compliantDeviceCount|Int32|设置的设备符合性计数|
-|remediatedDeviceCount|Int32|设置的设备符合性计数|
+|remediatedDeviceCount|Int32|设置的设备合规计数|
 |nonCompliantDeviceCount|Int32|设置的设备不符合计数|
 |errorDeviceCount|Int32|设置的设备错误计数|
 |conflictDeviceCount|Int32|设置的设备冲突错误计数|

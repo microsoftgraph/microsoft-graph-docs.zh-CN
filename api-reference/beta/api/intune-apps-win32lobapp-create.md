@@ -1,21 +1,21 @@
 ---
 title: 创建 win32LobApp
 description: 创建新的 win32LobApp 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 089f84f3578c70e3d83b9f7bbfae11e2e72e1eab
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 89336782798f92a3626a8a46a0ab49cd8b765da3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409025"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168472"
 ---
 # <a name="create-win32lobapp"></a>创建 win32LobApp
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[win32LobApp](../resources/intune-apps-win32lobapp.md)对象。
 
@@ -44,50 +44,50 @@ POST /deviceAppManagement/mobileApps
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 win32LobApp 对象的 JSON 表示形式。
+在请求正文中, 提供 win32LobApp 对象的 JSON 表示形式。
 
-下表显示时创建 win32LobApp 所需的属性。
+下表显示创建 win32LobApp 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|字串符号|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|privacyInformationUrl|String|隐私声明 Url。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|informationUrl|String|详细信息 Url。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|字符串|隐私声明 Url。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|字符串|详细信息 Url。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
-|isAssigned|Boolean|值，指示是否将应用程序分配给至少一个组。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用程序的作用域标记 id 的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|installCommandLine|String|命令行安装此应用程序|
-|uninstallCommandLine|String|命令行来卸载此应用程序|
+|installCommandLine|字符串|要安装此应用程序的命令行|
+|uninstallCommandLine|字符串|要卸载此应用程序的命令行|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|最低适用操作系统的值。|
-|minimumFreeDiskSpaceInMB|Int32|所需安装此应用程序的最小可用磁盘空间的值。|
-|minimumMemoryInMB|Int32|安装此应用程序所需的最低物理内存值。|
-|minimumNumberOfProcessors|Int32|最小处理器的数量需安装此应用程序的值。|
-|minimumCpuSpeedInMHz|Int32|最小的 CPU 速度，需安装此应用程序的值。|
-|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)集合|若要检测 Win32 业务线 (LoB) 应用程序检测规则。|
-|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用程序安装体验。|
-|returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)集合|开机自检安装行为返回代码。|
-|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|MSI 详细信息此 Win32 应用程序是否 MSI 应用程序。|
-|setupFilePath|String|加密 Win32LobApp 包中的安装程序文件的相对路径。|
+|minimumFreeDiskSpaceInMB|Int32|安装此应用程序所需的最小可用磁盘空间的值。|
+|minimumMemoryInMB|Int32|安装此应用程序所需的最小物理内存的值。|
+|minimumNumberOfProcessors|Int32|安装此应用程序所需的最小处理器数的值。|
+|minimumCpuSpeedInMHz|Int32|安装此应用程序所需的最低 CPU 速度的值。|
+|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)集合|检测到 Win32 业务线 (LoB) 应用程序的检测规则。|
+|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用的安装体验。|
+|returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)集合|用于安装后行为的返回代码。|
+|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 msi 应用程序, 则为 msi 详细信息。|
+|setupFilePath|字符串|加密的 Win32LobApp 包中的安装程序文件的相对路径。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[win32LobApp](../resources/intune-apps-win32lobapp.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[win32LobApp](../resources/intune-apps-win32lobapp.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -96,7 +96,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2285
+Content-length: 2364
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -168,7 +168,9 @@ Content-length: 2285
     "productVersion": "Product Version value",
     "upgradeCode": "Upgrade Code value",
     "requiresReboot": true,
-    "packageType": "perUser"
+    "packageType": "perUser",
+    "productName": "Product Name value",
+    "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value"
 }
@@ -179,7 +181,7 @@ Content-length: 2285
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2457
+Content-Length: 2536
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -254,7 +256,9 @@ Content-Length: 2457
     "productVersion": "Product Version value",
     "upgradeCode": "Upgrade Code value",
     "requiresReboot": true,
-    "packageType": "perUser"
+    "packageType": "perUser",
+    "productName": "Product Name value",
+    "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value"
 }

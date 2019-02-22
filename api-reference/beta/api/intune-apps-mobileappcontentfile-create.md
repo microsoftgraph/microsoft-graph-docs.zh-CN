@@ -1,21 +1,21 @@
 ---
 title: 创建 mobileAppContentFile
 description: 创建新的 mobileAppContentFile 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c815cfcb272e0eb79465d81702e158934ec8c42a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 43e56cbf1fd3419cae2d0b88ac64225985e07b5f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394241"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167002"
 ---
 # <a name="create-mobileappcontentfile"></a>创建 mobileAppContentFile
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象。
 
@@ -52,7 +52,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |:---|:---|:---|
 |azureStorageUri|String|Azure 存储 URI。|
 |isCommitted|Boolean|指示文件是否已提交的值。|
-|id|String|文件 ID。|
+|id|字符串|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
 |name|String|文件名称。|
 |size|Int64|加密前的文件大小。|
@@ -60,8 +60,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
 |manifest|Binary|清单信息。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
-|isFrameworkFile|Boolean|指示文件是否框架文件的值。|
-|isDependency|Boolean|内容的文件是否依赖关系的主要内容文件。|
+|isFrameworkFile|布尔|一个指示文件是否为框架文件的值。|
+|isDependency|布尔|内容文件是否依赖于主要内容文件。|
 
 
 

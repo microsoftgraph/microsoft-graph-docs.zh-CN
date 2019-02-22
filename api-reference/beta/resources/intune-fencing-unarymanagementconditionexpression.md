@@ -1,23 +1,23 @@
 ---
 title: unaryManagementConditionExpression 资源类型
-description: 管理条件表达式进行求值使用一元操作。
-localization_priority: Normal
+description: 使用一元运算计算的管理条件表达式。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1224a869ec2ec9cae2f38273f7a68b64d3d7333
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9802cb8162973ecdaa387a29c70d1baa7aec4b8b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406778"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164216"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>unaryManagementConditionExpression 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-管理条件表达式进行求值使用一元操作。
+使用一元运算计算的管理条件表达式。
 
 
 继承自[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
@@ -25,8 +25,8 @@ ms.locfileid: "29406778"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|operator|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|在评估一元运算的运算符。 可能的值为： `not`。|
-|操作数|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|一元运算的操作数。|
+|operator|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|在一元运算的计算中使用的运算符。 可能的值是`not`:。|
+|运算符|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|一元运算的操作数。|
 
 ## <a name="relationships"></a>关系
 无

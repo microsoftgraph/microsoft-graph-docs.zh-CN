@@ -1,21 +1,21 @@
 ---
 title: certificateConnectorSetting 资源类型
 description: 证书连接器设置。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5886418aaddede43f2397ad626028598a63a0066
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 09f4baf9ddd8be630c432fcec5d7df71c442bbe2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398651"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168304"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>certificateConnectorSetting 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 证书连接器设置。
 
@@ -24,10 +24,10 @@ ms.locfileid: "29398651"
 |:---|:---|:---|
 |状态|Int32|证书连接器状态|
 |certExpiryTime|DateTimeOffset|证书过期时间|
-|enrollmentError|String|证书连接器注册错误|
-|lastConnectorConnectionTime|DateTimeOffset|最后一次证书连接符连接|
-|connectorVersion|String|证书连接器的版本|
-|lastUploadVersion|Int64|版本的最后一个上载的证书连接器|
+|enrollmentError|字符串|证书连接器注册错误|
+|lastConnectorConnectionTime|DateTimeOffset|上次连接证书连接器的时间|
+|connectorVersion|字符串|证书连接器的版本|
+|lastUploadVersion|Int64|上次上载的证书连接器的版本|
 
 ## <a name="relationships"></a>关系
 无

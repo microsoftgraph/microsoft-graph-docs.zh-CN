@@ -1,29 +1,29 @@
 ---
 title: deviceManagementScript 资源类型
-description: Intune 将使客户能够在注册的 windows 10 Azure Active Directory 加入设备上运行其 Powershell 脚本。 一次或定期，可以运行该脚本。
-localization_priority: Normal
+description: Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联接设备上运行其 Powershell 脚本的功能。 脚本可以运行一次, 也可以定期运行。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fda826ec8033cd51ad4dd13dbc5b523a21e9e3a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e3fffd6bec8866066824725f1477e6de0e71ebf9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412525"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164062"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Intune 将使客户能够在注册的 windows 10 Azure Active Directory 加入设备上运行其 Powershell 脚本。 一次或定期，可以运行该脚本。
+Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联接设备上运行其 Powershell 脚本的功能。 脚本可以运行一次, 也可以定期运行。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列表 deviceManagementScripts](../api/intune-devices-devicemanagementscript-list.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)集合|列出属性和[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象之间的关系。|
-|[获取 deviceManagementScript](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|读取属性和[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象的关系。|
+|[列出 deviceManagementScripts](../api/intune-devices-devicemanagementscript-list.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)集合|列出[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象的属性和关系。|
+|[获取 deviceManagementScript](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|读取[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象的属性和关系。|
 |[创建 deviceManagementScript](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|创建新的[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象。|
 |[删除 deviceManagementScript](../api/intune-devices-devicemanagementscript-delete.md)|无|删除[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)。|
 |[更新 deviceManagementScript](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|更新[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象的属性。|
@@ -32,27 +32,27 @@ Intune 将使客户能够在注册的 windows 10 Azure Active Directory 加入�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备管理脚本的唯一标识符。|
-|displayName|String|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Script to run 时间间隔。 如果未定义脚本将运行一次|
+|id|字串符号|设备管理脚本的唯一标识符。|
+|displayName|字符串|设备管理脚本的名称。|
+|说明|字符串|设备管理脚本的可选说明。|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|脚本运行的间隔。 如果未定义, 脚本将运行一次|
 |scriptContent|Binary|脚本内容。|
-|createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。|
-|lastModifiedDateTime|DateTimeOffset|日期和设备管理脚本上次修改的时间。|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文中运行的设备管理脚本的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要签脚本签名。|
-|fileName|String|脚本文件的名称。|
-|roleScopeTagIds|String 集合|此 PowerShellScript 实例范围标记 Id 的列表。|
-|runAs32Bit|Boolean|一个值，该值的 PowerShell 脚本是否应运行 32 位|
+|createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。|
+|lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示设备管理脚本在其中运行的执行上下文的类型。 可取值为：`system`、`user`。|
+|enforceSignatureCheck|布尔|指示是否需要检查脚本签名。|
+|fileName|String|脚本文件名。|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 id 的列表。|
+|runAs32Bit|布尔|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)集合|设备管理脚本的组分配列表。|
-|assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)集合|设备管理脚本的组分配列表。|
-|runSummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|运行设备管理脚本摘要。|
-|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)集合|此脚本跨所有设备的运行状态的列表。|
-|userRunStates|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)集合|列表的所有用户此脚本运行状态。|
+|groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)集合|设备管理脚本的组分配的列表。|
+|assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md)集合|设备管理脚本的组分配的列表。|
+|runSummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|设备管理脚本的运行摘要。|
+|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)集合|此脚本在所有设备上的运行状态列表。|
+|userRunStates|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)集合|此脚本在所有用户中的运行状态列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
