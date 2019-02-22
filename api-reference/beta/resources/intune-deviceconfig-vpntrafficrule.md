@@ -1,37 +1,37 @@
 ---
 title: vpnTrafficRule 资源类型
 description: VPN 流量规则定义。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b28d26356eea113f267c4eb0499f9600671f114
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fd004341928260187518966e2356f59faff57898
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415283"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139940"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 VPN 流量规则定义。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|String|名称。|
-|协议|Int32|协议 (0-255)。 0 到 255 之间的有效值|
-|localPortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)集合|仅当协议是 TCP 或 UDP （6 或 17） 时，可以设置本地端口范围。 该集合最多可包含 500 个元素。|
-|remotePortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)集合|仅当协议是 TCP 或 UDP （6 或 17） 时，可以设置远程端口范围。 该集合最多可包含 500 个元素。|
+|name|字符串|别名.|
+|协议|Int32|协议 (0-255)。 有效值为0至255|
+|localPortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)集合|仅当 protocol 为 TCP 或 UDP (6 或 17) 时, 才能设置本地端口范围。 该集合最多可包含 500 个元素。|
+|remotePortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)集合|仅当 protocol 为 TCP 或 UDP (6 或 17) 时, 才能设置远程端口范围。 该集合最多可包含 500 个元素。|
 |localAddressRanges|[iPv4Range](../resources/intune-shared-ipv4range.md)集合|本地地址范围。 该集合最多可包含 500 个元素。|
 |remoteAddressRanges|[iPv4Range](../resources/intune-shared-ipv4range.md)集合|远程地址范围。 该集合最多可包含 500 个元素。|
-|appId|String|应用程序标识符，如果此通信规则触发应用程序。|
-|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|应用程序类型，如果此通信规则触发应用程序。 可取值为：`none`、`desktop`、`universal`。|
-|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|当应用程序触发，该值指示是否启用拆分隧道此路由。 可取值为：`none`、`splitTunnel`、`forceTunnel`。|
-|声明|String|与此通信规则关联的声明。|
+|appId|String|应用程序标识符 (如果应用程序触发此流量规则)。|
+|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|应用程序类型 (如果应用程序触发此流量规则)。 可取值为：`none`、`desktop`、`universal`。|
+|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|当应用程序触发时, 指示是否要沿此路由启用拆分隧道。 可取值为：`none`、`splitTunnel`、`forceTunnel`。|
+|声明|字符串|与此流量规则关联的声明。|
 
 ## <a name="relationships"></a>关系
 无

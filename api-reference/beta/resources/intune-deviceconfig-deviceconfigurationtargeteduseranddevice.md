@@ -1,33 +1,33 @@
 ---
 title: deviceConfigurationTargetedUserAndDevice 资源类型
-description: 冲突一设备配置策略的摘要。
-localization_priority: Normal
+description: 一组设备配置策略的冲突摘要。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e246d9731f5ed9d2ea888ba2b53d335fcbca19f1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 48d73a532f08b0effb6581373300728ad21c5b37
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410740"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144140"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>deviceConfigurationTargetedUserAndDevice 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-冲突一设备配置策略的摘要。
+一组设备配置策略的冲突摘要。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|deviceId|String|签入中的设备 id。|
-|deviceName|String|签入中的设备的名称。|
-|userId|String|在签入的用户 id。|
-|userDisplayName|String|在签入的用户的显示名称|
-|userPrincipalName|String|在签入用户的 UPN。|
-|lastCheckinDateTime|DateTimeOffset|此用户/设备对上一次签入的时间。|
+|deviceId|字符串|签入中设备的 id。|
+|deviceName|String|签入中设备的名称。|
+|userId|字符串|签入中用户的 id。|
+|userDisplayName|String|签入用户的显示名称|
+|userPrincipalName|字符串|签入中的用户的 UPN。|
+|lastCheckinDateTime|DateTimeOffset|此用户/设备对的上次签入时间。|
 
 ## <a name="relationships"></a>关系
 无

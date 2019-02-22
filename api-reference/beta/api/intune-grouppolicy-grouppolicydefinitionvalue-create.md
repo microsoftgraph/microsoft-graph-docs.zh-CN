@@ -1,21 +1,21 @@
 ---
 title: 创建 groupPolicyDefinitionValue
 description: 创建新的 groupPolicyDefinitionValue 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d859a1405c9b2879da1c9b57f31c1ffde3ce0cfc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 327228a370391a48d16a7315399af2c1aad4f318
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429385"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142999"
 ---
 # <a name="create-grouppolicydefinitionvalue"></a>创建 groupPolicyDefinitionValue
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)对象。
 
@@ -40,26 +40,26 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 groupPolicyDefinitionValue 对象的 JSON 表示形式。
+在请求正文中, 提供 groupPolicyDefinitionValue 对象的 JSON 表示形式。
 
-下表显示时创建 groupPolicyDefinitionValue 所需的属性。
+下表显示创建 groupPolicyDefinitionValue 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|日期和时间创建对象。|
-|enabled|Boolean|启用或禁用相关联的组策略定义。|
-|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|指定应如何配置的值。 这可以是一个策略作为或首选项。 可取值为：`policy`、`preference`。|
+|createdDateTime|DateTimeOffset|对象的创建日期和时间。|
+|enabled|布尔值|启用或禁用关联的组策略定义。|
+|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|指定应如何配置值。 这可以是策略, 也可以是首选项。 可取值为：`policy`、`preference`。|
 |id|String|实体的键。|
-|lastModifiedDateTime|DateTimeOffset|日期和实体上次修改的时间。|
+|lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)对象。
 
 ## <a name="example"></a>示例
 

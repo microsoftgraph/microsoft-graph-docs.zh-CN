@@ -1,21 +1,21 @@
 ---
 title: 创建 deviceManagementPartner
 description: 创建新的 deviceManagementPartner 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e343b507d81d4d33ca61845e5e9810a09ca700b6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0b26522e88b50230e4636dac9dc4bb832830d138
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412770"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143223"
 ---
 # <a name="create-devicemanagementpartner"></a>创建 deviceManagementPartner
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) 对象。
 
@@ -50,15 +50,15 @@ POST /deviceManagement/deviceManagementPartners
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|字符串|实体的 Id|
 |lastHeartbeatDateTime|DateTimeOffset|管理员启用“连接到设备管理合作伙伴”选项后上次检测信号的时间戳|
-|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|合作伙伴的此租户的状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|合作伙伴应用程序类型。 可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|合作伙伴应用类型。 可取值为：`unknown`、`singleTenantApp`、`multiTenantApp`。|
 |singleTenantAppId|String|合作伙伴单个租户应用 ID|
 |displayName|String|合作伙伴显示名称|
 |isConfigured|Boolean|是否配置了设备管理合作伙伴|
-|whenPartnerDevicesWillBeRemoved|DateTimeOffset|采用 UTC 时将删除 PartnerDevices 的日期和时间。 这将立即成为过时。|
-|whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|采用 UTC PartnerDevices 将标记为不符合时的日期和时间。 这将立即成为过时。|
+|whenPartnerDevicesWillBeRemoved|DateTimeOffset|将删除 PartnerDevices 时, UTC 格式的 DateTime。 这将很快变成 obselete。|
+|whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|PartnerDevices 将被标记为不符合时的 UTC 格式的日期/时间。 这将很快变成 obselete。|
 |whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|要删除 PartnerDevices 时的日期/时间（UTC 时间）|
 |whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|PartnerDevices 将被标记为“不符合”时的日期/时间（UTC 时间）|
 

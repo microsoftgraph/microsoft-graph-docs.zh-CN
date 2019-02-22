@@ -1,33 +1,33 @@
 ---
 title: outOfBoxExperienceSettings 资源类型
-description: 即开体验设置
-localization_priority: Normal
+description: "\"开箱即用体验\" 设置"
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d2b48fef00c9c3a291a0a2fdfe680b9f4e21030
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1148ba609a6533dcc6cedb9abd50e9191dceb5d2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404601"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145526"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>outOfBoxExperienceSettings 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-即开体验设置
+"开箱即用体验" 设置
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|hidePrivacySettings|Boolean|显示或隐藏给用户的隐私设置|
-|hideEULA|Boolean|显示或隐藏 EULA 给用户|
-|userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|用户的类型。 可取值为：`administrator`、`standard`。|
+|hidePrivacySettings|布尔|向用户显示或隐藏隐私设置|
+|hideEULA|布尔|向用户显示或隐藏 EULA|
+|userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|用户类型。 可取值为：`administrator`、`standard`。|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|AAD 联接身份验证类型。 可取值为：`singleUser`、`shared`。|
-|skipKeyboardSelectionPage|Boolean|如果设置，然后跳过键盘选择页面如果语言和区域设置|
-|hideEscapeLink|Boolean|如果设置为 true，然后用户无法通过开始与不同的帐户，请在公司登录|
+|skipKeyboardSelectionPage|布尔|如果设置了语言和区域, 则选择 "设置", 然后跳过 "键盘选择" 页面|
+|hideEscapeLink|布尔|如果设置为 true, 则用户无法在公司登录时使用不同帐户重新开始|
 
 ## <a name="relationships"></a>关系
 无

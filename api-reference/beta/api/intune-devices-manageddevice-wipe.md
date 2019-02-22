@@ -1,21 +1,21 @@
 ---
 title: wipe 操作
 description: 擦除设备
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56ee058ee4ea6c5760707f895d626b35163c68ba
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2979333890626d197e596d6e768ac26205888276
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398707"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139359"
 ---
-# <a name="wipe-action"></a>wipe 操作
+# <a name="wipe-action"></a>擦除操作
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 擦除设备
 
@@ -24,7 +24,7 @@ ms.locfileid: "29398707"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All DeviceManagementManagedDevices.ReadWrite.All|
+|委派（工作或学校帐户）|devicemanagementmanageddevices.readwrite.all、devicemanagementmanageddevices.readwrite.all 和所有 PriviligedOperation|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |属性|类型|说明|
 |:---|:---|:---|
 |keepEnrollmentData|布尔|尚未记录|
-|keepUserData|Boolean|尚未记录|
+|keepUserData|布尔|尚未记录|
 |macOsUnlockCode|字符串|尚未记录|
 
 

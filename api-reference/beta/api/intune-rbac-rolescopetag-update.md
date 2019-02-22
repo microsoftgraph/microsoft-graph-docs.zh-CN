@@ -1,21 +1,21 @@
 ---
 title: 更新 roleScopeTag
 description: 更新 roleScopeTag 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b05ba0be4e91bd9f4cb39ae316048f1f85194ab
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b6616c7b847f260cb1fba86561387d33aaaaa438
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404811"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145519"
 ---
 # <a name="update-rolescopetag"></a>更新 roleScopeTag
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象的属性。
 
@@ -45,20 +45,20 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象的 JSON 表示形式。
+在请求正文中, 提供[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象的 JSON 表示形式。
 
-下表显示时创建[roleScopeTag](../resources/intune-rbac-rolescopetag.md)所需的属性。
+下表显示创建[roleScopeTag](../resources/intune-rbac-rolescopetag.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 此为只读，且自动生成。|
-|displayName|String|显示或角色作用域标记的友好名称。|
-|说明|String|角色作用域标记的说明。|
+|displayName|字符串|角色范围标记的显示名称或友好名称。|
+|说明|字符串|角色范围标记的说明。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。
 
 ## <a name="example"></a>示例
 

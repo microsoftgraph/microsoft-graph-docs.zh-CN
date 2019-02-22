@@ -4,45 +4,45 @@ description: 更新 deviceManagement 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f4ef1c7eb4711afd2aa29071f160f440dceefba3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 10242540e5f4bfb4d722253c86d25bf22e72d05e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415773"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141214"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference)。
 
-根据工作流而有所不同权限的注释。
+请注意, 该权限根据工作流的不同而有所不同。
 
-| 权限&nbsp;类型&nbsp;(通过&nbsp;工作流) | 权限（从最高特权到最低特权） |
+| 权限&nbsp;类型&nbsp;(按&nbsp;工作流) | 权限（从最高特权到最低特权） |
 |:---|:---|
 | 委派（工作或学校帐户） ||
-| &nbsp;&nbsp; **Android 的工时** | DeviceManagementConfiguration.ReadWrite.All  |
+| &nbsp;&nbsp; **适用于工作的 Android** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **审核** | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; **公司术语** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **公司条款** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **防御** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **入职培训** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **电信支出管理** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **疑难解答** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Windows 信息保护** | DeviceManagementApps.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。|
 | 应用程序 | 不支持。 |
@@ -71,24 +71,24 @@ PATCH /deviceManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备的唯一标识符。|
+|id|字符串|设备的唯一标识符。|
 |**设备配置**|
-|intuneAccountId|GUID|Intune 帐户 ID 给定租户|
-|legacyPcManangementEnabled|Boolean|若要启用非 MDM 属性托管旧 PC 管理此帐户。 此属性是只读的。|
-|maximumDepTokens|Int32|允许每个租户的 DEP 令牌的最大数量。|
+|intuneAccountId|GUID|给定租户的 Intune 帐户 ID|
+|legacyPcManangementEnabled|布尔|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
+|maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
-|accountMoveCompletionDateTime|DateTimeOffset|日期 & 时间时 scaleunits 之间移动租户数据。|
-|adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|管理许可信息。|
-|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|设备 protection overview。|
+|accountMoveCompletionDateTime|DateTimeOffset|在 scaleunits 之间移动租户数据的日期 & 时间。|
+|adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|管理员同意信息。|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|设备保护概述。|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|设备清理规则|
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|租户移动设备管理订阅状态。 可取值为：`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut`。|
 |订阅|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|租户的订阅。 可取值为：`none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB`。|
-|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|恶意软件 overview for windows 设备。|
-|**入职培训**|
+|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|windows 设备的恶意软件概述。|
+|**载入**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。|
 
-请求正文属性支持根据工作流而有所不同。
+请求正文属性支持因工作流而异。
 
 ## <a name="response"></a>响应
 如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象。
@@ -97,7 +97,7 @@ PATCH /deviceManagement
 
 ### <a name="request"></a>请求
 
-下面是请求的以下设备管理工作流示例：
+下面的示例展示了设备管理工作流后的请求:
 
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
@@ -132,7 +132,7 @@ Content-length: 751
 
 下面是一个响应示例。 
 
-注意：为简洁起见，可能会截断此处展示的响应对象。 返回的属性根据工作流和上下文而有所不同。
+注意：为简洁起见，可能会截断此处显示的响应对象。 返回的属性根据工作流和上下文的不同而不同。
 
 ``` http
 HTTP/1.1 200 OK

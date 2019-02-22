@@ -1,23 +1,23 @@
 ---
 title: 更新 windowsOfficeClientConfiguration
-description: 修补程序特定的非安全策略负载。
+description: 修补特定的非安全策略有效负载。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: cb9078e630ab20c38bcf9cb41a08d6e94f370311
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d116d846b6540ea2b9e2a91f54a5abdfa81e2409
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401360"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139247"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>更新 windowsOfficeClientConfiguration
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-修补程序特定的非安全策略负载。
+修补特定的非安全策略有效负载。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,25 +44,25 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)对象的 JSON 表示形式。
+在请求正文中, 提供[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)对象的 JSON 表示形式。
 
-下表显示时创建[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)所需的属性。
+下表显示创建[windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)记录继承|
-|userPreferencePayload|Stream|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)记录继承|
-|policyPayload|Stream|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)记录继承|
-|说明|String|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)记录继承|
-|displayName|String|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)记录继承|
-|priority|Int32|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)记录继承|
-|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)记录继承|
-|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)集合|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)记录继承|
+|id|String|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
+|userPreferencePayload|Stream|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
+|policyPayload|Stream|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
+|说明|字符串|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
+|displayName|字符串|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
+|priority|Int32|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
+|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
+|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)集合|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 

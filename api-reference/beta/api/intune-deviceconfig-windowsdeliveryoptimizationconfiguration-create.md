@@ -1,21 +1,21 @@
 ---
 title: 创建 windowsDeliveryOptimizationConfiguration
 description: 创建新的 windowsDeliveryOptimizationConfiguration 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b469b93c81655ad3f071be1ffdbd36b18f32258
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ca26c05cb9d24563534b0abf48bf663cecebfcdd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429458"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139807"
 ---
 # <a name="create-windowsdeliveryoptimizationconfiguration"></a>创建 windowsDeliveryOptimizationConfiguration
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)对象。
 
@@ -41,30 +41,49 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 windowsDeliveryOptimizationConfiguration 对象的 JSON 表示形式。
+在请求正文中, 提供 windowsDeliveryOptimizationConfiguration 对象的 JSON 表示形式。
 
-下表显示时创建 windowsDeliveryOptimizationConfiguration 所需的属性。
+下表显示创建 windowsDeliveryOptimizationConfiguration 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|指定的下载方法的传递优化可用于管理的大型内容分发方案的网络带宽消耗。 可取值为：`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload`、`bypassMode`。|
+|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|指定传递优化可用于管理大型内容分布方案的网络带宽消耗的下载方法。 可取值为：`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload`、`bypassMode`。|
+|restrictPeerSelectionBy|[deliveryOptimizationRestrictPeerSelectionByOptions](../resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)|指定通过选中的选项来限制对等方选择。
+选项 1 (子网掩码) 仅适用于传递优化模式: 下载模式 LAN (1) 和组 (2)。 可取值为：`notConfigured`、`subnetMask`。|
+|groupIdSource|[deliveryOptimizationGroupIdSource](../resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md)|指定将对等选择限制为特定源。
+此策略中设置的选项仅适用于传递优化模式组 (2) 下载模式。 如果组 (2) 未设置为下载模式, 此策略将被忽略。 对于选项 3-dhcp 选项 id, 客户端将查询 DHCP 选项 id 234, 并使用返回的 GUID 值作为组 ID。|
+|bandwidthMode|[deliveryOptimizationBandwidth](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)|指定使用百分比、absolutes 或小时的前景色和背景带宽使用情况。|
+|backgroundDownloadFromHttpDelayInSeconds|Int64|指定允许使用对等的后台下载中的 HTTP 源延迟的秒数。 有效值为0至4294967295|
+|foregroundDownloadFromHttpDelayInSeconds|Int64|指定在允许使用对等 (0-86400) 的前台下载中延迟 HTTP 源的秒数。 有效值为0至86400
+指定0将传递优化设置为使用云服务管理此设置。 有效值为0至86400|
+|minimumRamAllowedToPeerInGigabytes|Int32|指定使用对等缓存的最小 RAM 大小 (以 GB 为单位) (1-100000)。 有效值为1至100000|
+|minimumDiskSizeAllowedToPeerInGigabytes|Int32|指定使用对等缓存的最小磁盘大小 (以 GB 为单位) (1-100000)。 有效值为1至100000
+建议值:64 gb 到 256 gb。 有效值为1至100000|
+|minimumFileSizeToCacheInMegabytes|Int32|指定启用以使用对等缓存 (1-100000) 的最小内容文件大小 (以 MB 为单位)。 有效值为1至100000
+推荐值: 1 mb 到 100000 MB。 有效值为1至100000|
+|minimumBatteryPercentageAllowedToUpload|Int32|指定允许设备上传数据的最小电池百分比 (0-100)。 有效值为 0 至 100
+默认值为 0。 值为 0 (零) 表示 "不受限制", 将使用云服务默认值。 有效值为 0 至 100|
+|modifyCacheLocation|字符串|指定传递优化应用于其缓存的驱动器。|
+|maximumCacheAgeInDays|Int32|指定在成功下载后, 每个文件保留在传递优化缓存中的最长时间 (以天为单位) (0-49710)。 有效值为0至49710|
+|maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|指定传递优化的最大缓存大小 (以百分比或 GB 为单位)。|
+|vpnPeerCaching|[启用](../resources/intune-shared-enablement.md)|指定是否允许设备在通过 VPN 连接到域网络时参与对等缓存。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 
@@ -73,7 +92,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 313
+Content-length: 1060
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -84,7 +103,26 @@ Content-length: 313
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "deliveryOptimizationMode": "httpOnly"
+  "deliveryOptimizationMode": "httpOnly",
+  "restrictPeerSelectionBy": "subnetMask",
+  "groupIdSource": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSource"
+  },
+  "bandwidthMode": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"
+  },
+  "backgroundDownloadFromHttpDelayInSeconds": 8,
+  "foregroundDownloadFromHttpDelayInSeconds": 8,
+  "minimumRamAllowedToPeerInGigabytes": 2,
+  "minimumDiskSizeAllowedToPeerInGigabytes": 7,
+  "minimumFileSizeToCacheInMegabytes": 1,
+  "minimumBatteryPercentageAllowedToUpload": 7,
+  "modifyCacheLocation": "Modify Cache Location value",
+  "maximumCacheAgeInDays": 5,
+  "maximumCacheSize": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
+  },
+  "vpnPeerCaching": "enabled"
 }
 ```
 
@@ -93,7 +131,7 @@ Content-length: 313
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 485
+Content-Length: 1232
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -107,7 +145,26 @@ Content-Length: 485
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "deliveryOptimizationMode": "httpOnly"
+  "deliveryOptimizationMode": "httpOnly",
+  "restrictPeerSelectionBy": "subnetMask",
+  "groupIdSource": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSource"
+  },
+  "bandwidthMode": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"
+  },
+  "backgroundDownloadFromHttpDelayInSeconds": 8,
+  "foregroundDownloadFromHttpDelayInSeconds": 8,
+  "minimumRamAllowedToPeerInGigabytes": 2,
+  "minimumDiskSizeAllowedToPeerInGigabytes": 7,
+  "minimumFileSizeToCacheInMegabytes": 1,
+  "minimumBatteryPercentageAllowedToUpload": 7,
+  "modifyCacheLocation": "Modify Cache Location value",
+  "maximumCacheAgeInDays": 5,
+  "maximumCacheSize": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
+  },
+  "vpnPeerCaching": "enabled"
 }
 ```
 

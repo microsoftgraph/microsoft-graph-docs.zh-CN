@@ -1,31 +1,31 @@
 ---
 title: edgeCookiePolicy 枚举类型
-description: 若要指定 Microsoft 边缘中允许的 cookie 的可能值。
-localization_priority: Normal
+description: 指定允许在 Microsoft Edge 中使用哪些 cookie 的可能值。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3afbe36c8d08105341cbc6d0fa54220eb22dbf8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c00e16e80847b5ab0f9ed7d8175fcc13fa92a582
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422388"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143923"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-若要指定 Microsoft 边缘中允许的 cookie 的可能值。
+指定允许在 Microsoft Edge 中使用哪些 cookie 的可能值。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|用户定制|0|允许用户设置。|
-|允许|1|允许。|
-|blockThirdParty|2|阻止仅第三方 cookie。|
-|blockAll|3|阻止所有 cookie。|
+|定制|0|允许用户进行设置。|
+|允许|1|允许.|
+|blockThirdParty|双面|仅阻止第三方 cookie。|
+|blockAll|第三章|阻止所有 cookie。|
 
 
 

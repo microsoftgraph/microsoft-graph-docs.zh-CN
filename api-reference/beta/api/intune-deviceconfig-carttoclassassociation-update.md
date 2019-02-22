@@ -1,21 +1,21 @@
 ---
 title: 更新 cartToClassAssociation
 description: 更新 cartToClassAssociation 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8da37fa694c0352ade04c1ae9ce9bca926bc126
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e616dd51136f93e62a5eb751863fd7b97218374c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396796"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144441"
 ---
 # <a name="update-carttoclassassociation"></a>更新 cartToClassAssociation
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象的属性。
 
@@ -44,25 +44,25 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象的 JSON 表示形式。
+在请求正文中, 提供[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象的 JSON 表示形式。
 
-下表显示时创建[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)所需的属性。
+下表显示创建[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|version|Int32|CartToClassAssociation 版本。|
+|version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
-|说明|String|管理员提供 CartToClassAssociation 的说明。|
-|deviceCartIds|String 集合|设备车与类相关联的标识符。|
-|classroomIds|String 集合|教室与设备车相关联的标识符。|
+|说明|字符串|管理员提供的 CartToClassAssociation 说明。|
+|deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
+|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象。
 
 ## <a name="example"></a>示例
 

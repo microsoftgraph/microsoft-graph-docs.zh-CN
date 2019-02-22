@@ -1,23 +1,23 @@
 ---
 title: edgeHomeButtonOpensCustomURL 资源类型
-description: 显示主页按钮。单击主页按钮加载特定的 URL。
-localization_priority: Normal
+description: 显示 "主页" 按钮;单击 "主页" 按钮, 将加载特定的 URL。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 06f73375772f53b546e7e9b758a7513366949326
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e83fd3dbb0961011584ef9d65e01c361ccf6a228
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431405"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143237"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>edgeHomeButtonOpensCustomURL 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-显示主页按钮。单击主页按钮加载特定的 URL。
+显示 "主页" 按钮;单击 "主页" 按钮, 将加载特定的 URL。
 
 
 继承自[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
@@ -25,7 +25,7 @@ ms.locfileid: "29431405"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|homeButtonCustomURL|String|要加载的特定 URL。|
+|homeButtonCustomURL|字符串|要加载的特定 URL。|
 
 ## <a name="relationships"></a>关系
 无

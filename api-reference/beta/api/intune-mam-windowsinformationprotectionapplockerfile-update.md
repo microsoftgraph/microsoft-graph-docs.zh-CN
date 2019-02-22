@@ -1,21 +1,21 @@
 ---
 title: 更新 windowsInformationProtectionAppLockerFile
 description: 更新 windowsInformationProtectionAppLockerFile 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eee21cf2a7f2ece277ab3435b566d486120a8fc1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fe11c8cba9d2cb1eaba6a4225fa48d2b71adf23b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399827"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144035"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>更新 windowsInformationProtectionAppLockerFile
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象的属性。
 
@@ -56,8 +56,8 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |displayName|String|友好名称|
 |fileHash|String|文件的 SHA256 哈希|
 |file|Binary|字节数组形式的文件|
-|id|String|实体的键。|
-|version|String|实体的版本。|
+|id|字符串|实体的键。|
+|version|字符串|实体的版本。|
 
 
 

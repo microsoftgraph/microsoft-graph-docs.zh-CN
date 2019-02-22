@@ -1,35 +1,35 @@
 ---
 title: depOnboardingSetting 资源类型
-description: DepOnboardingSetting 表示正在对 Intune onboarded Apple DEP 服务的实例。 Onboarded 服务实例管理 Apple 令牌用于 Apple 和 Intune 之间同步数据。
-localization_priority: Normal
+description: depOnboardingSetting 表示要载入到 Intune 的 Apple DEP 服务的实例。 载入服务实例管理用于在 apple 和 Intune 之间同步数据的 Apple 令牌。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c0e5bcbdf0a687d4601aa92c8fe0eacdd675cd2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8a3c19a791f97b7cb40bdd2398fec4c1812fdcde
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423767"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145281"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-DepOnboardingSetting 表示正在对 Intune onboarded Apple DEP 服务的实例。 Onboarded 服务实例管理 Apple 令牌用于 Apple 和 Intune 之间同步数据。
+depOnboardingSetting 表示要载入到 Intune 的 Apple DEP 服务的实例。 载入服务实例管理用于在 apple 和 Intune 之间同步数据的 Apple 令牌。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列表 depOnboardingSettings](../api/intune-enrollment-deponboardingsetting-list.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)集合|列出属性和[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象之间的关系。|
-|[获取 depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-get.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|读取属性和[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象的关系。|
+|[列出 depOnboardingSettings](../api/intune-enrollment-deponboardingsetting-list.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)集合|列出[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象的属性和关系。|
+|[获取 depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-get.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|读取[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象的属性和关系。|
 |[创建 depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-create.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|创建新的[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象。|
 |[删除 depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|无|删除[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)。|
 |[更新 depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|更新[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象的属性。|
-|[getEncryptionPublicKey 函数](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|获取要用于加密 Apple 设备注册程序的公钥标记|
-|[uploadDepToken 操作](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|无|上载新的设备注册程序令牌|
-|[syncWithAppleDeviceEnrollmentProgram 操作](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|无|Apple 设备注册程序和 Intune 之间同步|
+|[getEncryptionPublicKey 函数](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|字符串|获取用于加密 Apple 设备注册计划令牌的公钥|
+|[uploadDepToken 操作](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|无|上传新的设备注册程序令牌|
+|[syncWithAppleDeviceEnrollmentProgram 操作](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|无|在 Apple 设备注册计划和 Intune 之间进行同步|
 |[shareForSchoolDataSyncService 操作](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|无|尚未记录|
 |[unshareForSchoolDataSyncService 操作](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|无|尚未记录|
 
@@ -37,17 +37,18 @@ DepOnboardingSetting 表示正在对 Intune onboarded Apple DEP 服务的实例�
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 UUID|
-|appleIdentifier|String|Apple ID 用来获取当前的令牌。|
-|tokenExpirationDateTime|DateTimeOffset|该令牌将过期时。|
-|lastModifiedDateTime|DateTimeOffset|当该服务已 onboarded。|
-|lastSuccessfulSyncDateTime|DateTimeOffset|当服务与 Intune 的最后一个 syned|
-|lastSyncTriggeredDateTime|DateTimeOffset|当 Intune 上次请求同步。|
-|shareTokenWithSchoolDataSyncService|Boolean|是否 Dep 令牌共享将启用学校数据同步服务。|
-|lastSyncErrorCode|Int32|在最后一个 dep 同步过程中由 Apple 报告的错误代码。|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 标记类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
-|tokenName|String|Dep 令牌的友好名称|
-|syncedDeviceCount|Int32|获取同步设备计数|
-|dataSharingConsentGranted|Boolean|授予许可与 Apple Dep 服务共享的数据|
+|appleIdentifier|String|用于获取当前令牌的 Apple ID。|
+|tokenExpirationDateTime|DateTimeOffset|令牌将到期的时间。|
+|lastModifiedDateTime|DateTimeOffset|在载入服务时。|
+|lastSuccessfulSyncDateTime|DateTimeOffset|服务上次使用 Intune syned 时|
+|lastSyncTriggeredDateTime|DateTimeOffset|Intune 上次请求同步时。|
+|shareTokenWithSchoolDataSyncService|布尔|是否启用了与学校数据同步服务的 Dep 令牌共享。|
+|lastSyncErrorCode|Int32|上一次 dep 同步期间 Apple 报告的错误代码。|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 令牌类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
+|tokenName|字符串|Dep 令牌的友好名称|
+|syncedDeviceCount|Int32|获取同步的设备计数|
+|dataSharingConsentGranted|布尔|为使用 Apple Dep 服务进行数据共享而授予的同意|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -79,7 +80,10 @@ DepOnboardingSetting 表示正在对 Intune onboarded Apple DEP 服务的实例�
   "tokenType": "String",
   "tokenName": "String",
   "syncedDeviceCount": 1024,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 

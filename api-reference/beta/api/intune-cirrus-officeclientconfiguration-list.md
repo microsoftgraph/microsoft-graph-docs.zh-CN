@@ -1,21 +1,21 @@
 ---
-title: 列表 officeClientConfigurations
+title: 列出 officeClientConfigurations
 description: 获取所有策略。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 9366cecbbbd34b8732982982253a4cb3bc77be8e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dbbfae2a7568977c8dbdbc640d0829837c5e3fb2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402473"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139709"
 ---
-# <a name="list-officeclientconfigurations"></a>列表 officeClientConfigurations
+# <a name="list-officeclientconfigurations"></a>列出 officeClientConfigurations
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 获取所有策略。
 
@@ -24,7 +24,7 @@ ms.locfileid: "29402473"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
+|委派（工作或学校帐户）|devicemanagementconfiguration.readwrite.all 的所有 devicemanagementconfiguration.readwrite.all|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -47,7 +47,7 @@ GET /officeConfiguration/clientConfigurations
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象集合。
 
 ## <a name="example"></a>示例
 

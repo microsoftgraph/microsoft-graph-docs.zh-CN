@@ -1,21 +1,21 @@
 ---
 title: 创建 androidDeviceOwnerGeneralDeviceConfiguration
 description: 创建新的 androidDeviceOwnerGeneralDeviceConfiguration 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93df53db7c19df9134370f9dbd703d99f631b688
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e05e696b0a2c127abdc8c365829599777f55beae
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421219"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143090"
 ---
 # <a name="create-androiddeviceownergeneraldeviceconfiguration"></a>创建 androidDeviceOwnerGeneralDeviceConfiguration
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)对象。
 
@@ -41,77 +41,77 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 androidDeviceOwnerGeneralDeviceConfiguration 对象的 JSON 表示形式。
+在请求正文中, 提供 androidDeviceOwnerGeneralDeviceConfiguration 对象的 JSON 表示形式。
 
-下表显示时创建 androidDeviceOwnerGeneralDeviceConfiguration 所需的属性。
+下表显示创建 androidDeviceOwnerGeneralDeviceConfiguration 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|accountsBlockModification|Boolean|指示添加或删除帐户被禁用。|
-|appsAllowInstallFromUnknownSources|Boolean|指示允许用户启用到未知源设置。|
+|accountsBlockModification|布尔|指示是否禁用添加或删除帐户。|
+|appsAllowInstallFromUnknownSources|布尔|指示是否允许用户启用 "未知源" 设置。|
 |appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|指示应用程序自动更新策略的值。 可取值为：`notConfigured`、`userChoice`、`never`、`wiFiOnly`、`always`。|
-|appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|如果一个未定义应用程序专门，指示运行时权限请求的权限策略。 可取值为：`deviceDefault`、`prompt`、`autoGrant`、`autoDeny`。|
-|appsRecommendSkippingFirstUseHints|Boolean|建议所有应用程序，请跳过它们可能已添加任何首次使用提示。|
-|bluetoothBlockConfiguration|Boolean|指示阻止用户与配置蓝牙。|
-|bluetoothBlockContactSharing|Boolean|指示阻止用户与共享通过蓝牙的联系人。|
-|cameraBlocked|Boolean|指示禁用照相机使用。|
+|appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|指示对运行时权限请求的权限策略 (如果专门没有为应用程序定义)。 可取值为：`deviceDefault`、`prompt`、`autoGrant`、`autoDeny`。|
+|appsRecommendSkippingFirstUseHints|布尔|是否建议所有应用都将跳过他们可能已添加的任何首次使用提示。|
+|bluetoothBlockConfiguration|布尔|指示是否阻止用户配置蓝牙。|
+|bluetoothBlockContactSharing|布尔|指示是否阻止用户通过蓝牙共享联系人。|
+|cameraBlocked|Boolean|指示是否禁用相机的使用。|
 |cellularBlockWiFiTethering|Boolean|指示是否阻止 Wi-Fi 网络共享。|
-|dataRoamingBlocked|Boolean|指示阻止用户与漫游数据。|
-|dateTimeConfigurationBlocked|Boolean|指示阻止用户手动更改日期或设备上的时间|
-|factoryResetDeviceAdministratorEmails|String 集合|需要进行身份验证后设备出厂重置之前可以设置它的 Google 帐户电子邮件的列表。|
-|factoryResetBlocked|Boolean|指示禁用中设置的出厂重置选项。|
-|kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|将以展台模式，该设备时显示的托管应用程序的列表。 该集合最多可包含 500 个元素。|
-|kioskModeWallpaperUrl|String|要以展台模式设备时，可用于墙纸可公开访问图像 URL。|
-|kioskModeExitCode|String|退出代码以允许用户以展台模式设备时转义从展台模式。|
-|kioskModeVirtualHomeButtonEnabled|Boolean|是否以展台模式设备时显示虚拟主页按钮。|
-|microphoneForceMute|Boolean|指示阻止 unmuting 麦克风设备上。|
-|networkEscapeHatchAllowed|Boolean|指示将允许设备连接到在启动时的临时网络连接。|
-|nfcBlockOutgoingBeam|Boolean|指示阻止 NFC 传出无线发送。|
-|passwordBlockKeyguard|Boolean|指示禁用 keyguard。|
+|dataRoamingBlocked|布尔|指示是否阻止用户使用数据漫游。|
+|dateTimeConfigurationBlocked|布尔|指示是否阻止用户手动更改设备上的日期或时间|
+|factoryResetDeviceAdministratorEmails|String collection|在设备出厂重置之前, 将需要进行身份验证的 Google 帐户电子邮件的列表, 然后才能对其进行设置。|
+|factoryResetBlocked|Boolean|指示是否禁用了 "设置" 中的 "恢复出厂设置" 选项。|
+|kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|设备处于展台模式时将显示的托管应用列表。 该集合最多可包含 500 个元素。|
+|kioskModeWallpaperUrl|字符串|在设备处于展台模式时用于墙纸的可公开访问图像的 URL。|
+|kioskModeExitCode|字符串|退出代码, 以允许用户在设备处于展台模式时从展台模式中进行转义。|
+|kioskModeVirtualHomeButtonEnabled|布尔|设备处于展台模式时是否显示虚拟 "主页" 按钮。|
+|microphoneForceMute|布尔|指示是否阻止观众在设备上的麦克风。|
+|networkEscapeHatchAllowed|布尔|指示在引导时设备是否允许连接到临时网络连接。|
+|nfcBlockOutgoingBeam|布尔|指示是否阻止 NFC 传出横梁。|
+|passwordBlockKeyguard|布尔|指示是否禁用 keyguard。|
 |passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md)集合|要阻止的设备 keyguard 功能的列表。 该集合最多可包含 7 个元素。 可取值为：`notConfigured`、`camera`、`notifications`、`unredactedNotifications`、`trustAgents`、`fingerprint`、`remoteInput`、`allFeatures`。|
-|passwordExpirationDays|Int32|指示该帐户到期和新密码需要之前，可以为设置密码以秒为单位的时间量。 有效值为 1 至 365。|
-|passwordMinimumLength|Int32|指示在设备上所需的密码的最小长度。 有效值为 4 至 16|
-|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时前的不活动毫秒。|
-|passwordPreviousPasswordCountToBlock|Int32|指示密码历史记录，其中用户将无法输入的历史记录中任何密码相同的新密码的长度。 有效值为 0 至 24|
-|passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|指示在设备上所需的最短密码质量。 可取值为：`deviceDefault`、`required`、`numeric`、`numericComplex`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`。|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|指示擦除设备之前，用户可以输入密码不正确的次数。 有效值为 4 至 11|
-|safeBootBlocked|Boolean|指示重新启动设备插入安全启动的被禁用。|
-|screenCaptureBlocked|Boolean|指示禁用的功能，才能屏幕截图。|
-|securityAllowDebuggingFeatures|Boolean|指示阻止用户启用设备上的调试功能。|
-|securityRequireVerifyApps|Boolean|指示是否验证应用程序，则需要。|
-|statusBarBlocked|Boolean|指示是否或状态栏已禁用，包括通知、 快速设置和其他屏幕覆盖。|
-|stayOnModes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)集合|在其中设备的显示将保持电模式的列表。 4 元素的最多可以包含此集合。 可取值为：`notConfigured`、`ac`、`usb`、`wireless`。|
-|storageAllowUsb|Boolean|指示允许 USB 大容量存储。|
-|storageBlockExternalMedia|Boolean|指示阻止外部介质。|
-|storageBlockUsbFileTransfer|Boolean|指示阻止 USB 文件传输。|
-|systemUpdateWindowStartMinutesAfterMidnight|Int32|指示系统更新窗口启动的午夜后的分钟数。 0 到 1440 之间的有效值|
-|systemUpdateWindowEndMinutesAfterMidnight|Int32|指示系统更新窗口结束的午夜后的分钟数。 0 到 1440 之间的有效值|
+|passwordExpirationDays|Int32|指示在密码过期之前可以设置密码的时间量 (以秒为单位) 以及需要新密码的时间 (以秒为单位)。 有效值为 1 至 365。|
+|passwordMinimumLength|Int32|指示设备上所需密码的最小长度。 有效值为 4 至 16|
+|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动时间 (毫秒)。|
+|passwordPreviousPasswordCountToBlock|Int32|指示密码历史记录的长度, 其中用户将不能输入与历史记录中的任何密码相同的新密码。 有效值为 0 至 24|
+|passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|指示设备上所需的最小密码质量。 可取值为：`deviceDefault`、`required`、`numeric`、`numericComplex`、`alphabetic`、`alphanumeric`、`alphanumericWithSymbols`。|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|指示用户在擦除设备之前可以输入不正确密码的次数。 有效值为 4 至 11|
+|safeBootBlocked|布尔|指示是否禁用重新启动设备到安全启动。|
+|screenCaptureBlocked|布尔|指示是否禁用获取屏幕截图的功能。|
+|securityAllowDebuggingFeatures|布尔|指示是否阻止用户启用设备上的调试功能。|
+|securityRequireVerifyApps|布尔|指示是否需要验证应用。|
+|statusBarBlocked|布尔|指示是否禁用状态栏, 包括通知、快速设置和其他屏幕重叠。|
+|stayOnModes|[androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)集合|设备的显示将保持开机状态的模式列表。 此集合最多可包含4个元素。 可取值为：`notConfigured`、`ac`、`usb`、`wireless`。|
+|storageAllowUsb|布尔|指示是否允许 USB 大容量存储。|
+|storageBlockExternalMedia|布尔|指示是否阻止外部媒体。|
+|storageBlockUsbFileTransfer|布尔|指示是否阻止 USB 文件传输。|
+|systemUpdateWindowStartMinutesAfterMidnight|Int32|指示系统更新窗口午夜后启动的分钟数。 有效值为0至1440|
+|systemUpdateWindowEndMinutesAfterMidnight|Int32|指示系统更新窗口结束后的分钟数。 有效值为0至1440|
 |systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|系统更新配置的类型。 可取值为：`deviceDefault`、`postpone`、`windowed`、`automatic`。|
-|systemWindowsBlocked|Boolean|阻止 Android 系统提示窗口中的，如 toast、 电话活动和系统通知。|
-|usersBlockAdd|Boolean|指示将用户和配置文件添加被禁用。|
-|usersBlockRemove|Boolean|指示禁用从设备中删除其他用户。|
-|volumeBlockAdjustment|Boolean|指示调整主音量被禁用。|
-|vpnAlwaysOnPackageIdentifier|String|在 android 应用包将用来处理始终打开的 VPN 连接的应用程序的名称。|
-|vpnAlwaysOnLockdownMode|Boolean|如果始终在 VPN 包名称指定了，锁定网络流量时断开连接的 VPN。|
-|wifiBlockEditConfigurations|Boolean|指示阻止用户编辑 wifi 连接设置。|
-|wifiBlockEditPolicyDefinedConfigurations|Boolean|指示阻止用户编辑只策略定义的网络。|
+|systemWindowsBlocked|布尔|是否阻止 Android 系统提示符窗口, 如 toast、电话活动和系统通知。|
+|usersBlockAdd|布尔|指示是否禁用添加用户和配置文件。|
+|usersBlockRemove|布尔|指示是否禁用从设备中删除其他用户。|
+|volumeBlockAdjustment|布尔|指示是否禁用了调整主音量。|
+|vpnAlwaysOnPackageIdentifier|字符串|将处理永不启用 VPN 连接的应用程序的 Android 应用程序包名称。|
+|vpnAlwaysOnLockdownMode|布尔|如果指定了 always on VPN 包名称, 则在断开 vpn 连接时是否锁定网络流量。|
+|wifiBlockEditConfigurations|布尔|指示是否阻止用户编辑 wifi 连接设置。|
+|wifiBlockEditPolicyDefinedConfigurations|布尔|指示是否阻止用户仅编辑策略定义的网络。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 

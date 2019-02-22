@@ -1,38 +1,48 @@
 ---
 title: 创建订阅
-description: 订阅侦听器应用程序上的 Microsoft Graph 资源的数据更改时收到通知。
+description: 订阅侦听器应用程序, 以在 Microsoft Graph 资源的数据发生更改时接收通知。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 002dd88c7db2650be2303e7df6f86ce9a5fbdaa9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a8b8189780ac0b820551fb885adcf843c9ebe8f4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527575"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140164"
 ---
 # <a name="create-subscription"></a>创建订阅
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-订阅侦听器应用程序上的 Microsoft Graph 资源的数据更改时收到通知。
+订阅侦听器应用程序, 以便在 Microsoft Graph 中的指定资源发生所请求的更改类型时接收通知。
 
 ## <a name="permissions"></a>权限
 
-创建订阅需要应用程序将为其接收通知的资源的读取的权限。 例如，若要获取有关邮件的通知，您的应用程序需要`Mail.Read`权限。 下表列出了对各个资源所需权限的建议。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+创建订阅时需要对资源使用读取作用域。 例如, 若要获取有关邮件的通知, 您的应用`Mail.Read`程序需要该权限。 
+ 
+ 根据所请求的资源和权限类型 (委派或应用程序), 下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 资源类型/项        | 权限          |
-|-----------------------------|---------------------|
-| 联系人                    | Contacts.Read       |
-| Conversations               | Group.Read.All      |
-| Events                      | Calendars.Read      |
-| Messages                    | Mail.Read           |
-| 组                      | Group.Read.All      |
-| 用户                       | User.Read.All       |
-| Drive（用户的 OneDrive）    | Files.ReadWrite     |
-| 驱动器 （共享的 SharePoint 内容和驱动器） | Files.ReadWrite.All |
-| 安全警报              | SecurityEvents.ReadWrite.All |
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----|:-----|:-----|:-----|
+|[联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[driveItem](../resources/driveitem.md)(用户的个人 OneDrive) | 不支持 | Files.ReadWrite | 不支持 |
+|[driveItem](../resources/driveitem.md)(OneDrive for business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
+|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[group](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
+|[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
+|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[安全警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **注意：**/Beta 终结点允许资源最多的应用程序权限。 应用程序权限不支持对话组和 OneDrive 驱动器根项目。
+> **注意:** 对 OneDrive 和 Outlook 项目的订阅有其他限制。 这些限制适用于创建和管理订阅 (获取、更新和删除订阅)。
+
+- 在个人 OneDrive 上, 您可以订阅该驱动器中的根文件夹或任何子文件夹。 在 OneDrive for business 中, 只能订阅根文件夹。 将为订阅的文件夹中的所请求类型的更改发送通知, 或在其层次结构中的任何文件、文件夹或其他**driveItem**实例上发送通知。 您无法订阅不是文件夹的**驱动器**或**driveItem**实例, 例如单个文件。
+
+- 在 Outlook 中, 委派权限仅支持订阅登录用户的邮箱中的文件夹中的项目。 这意味着, 您不能使用委派的权限日历。读取它可订阅其他用户的邮箱中的事件。
+- 若要订阅_共享或委托_文件夹中的 Outlook 联系人、事件或邮件的更改通知, 请执行以下操作:
+
+  - 使用相应的应用程序权限订阅租户中_任何_用户的文件夹或邮箱中的项目更改。
+  - 请勿使用 Outlook 共享权限 ("联系人"、"共享"、"日历"、"共享"、"邮件"、"已读/写" 等), 因为它们**不**支持对共享或委派文件夹中的项目的更改通知进行订阅。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,10 +66,10 @@ POST /subscriptions
 
 ##### <a name="request"></a>请求
 
-在请求正文中，提供[订阅](../resources/subscription.md)对象的 JSON 表示形式。
-`clientState`字段是可选的。
+在请求正文中, 提供[订阅](../resources/subscription.md)对象的 JSON 表示形式。
+该`clientState`字段是可选的。
 
-此示例请求创建有关当前登录用户接收的新邮件通知的订阅。
+此示例请求创建一个订阅, 用于通知当前登录用户接收到的新邮件。
 <!-- {
   "blockType": "request",
   "name": "create_subscription_from_subscriptions"
@@ -78,7 +88,7 @@ Content-type: application/json
 }
 ```
 
-资源属性的有效值如下：
+以下是 resource 属性的有效值:
 
 | 资源类型 | 示例 |
 |:------ |:----- |
@@ -89,7 +99,7 @@ Content-type: application/json
 |组|组|
 |对话|groups('*{id}*')/conversations|
 |驱动器|me/drive/root|
-|安全警报|安全/警告？ $filter = 状态 eq 新建|
+|安全警报|安全/警报？ $filter = 状态 eq ' New '|
 
 ##### <a name="response"></a>响应
 
@@ -120,7 +130,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>通知终结点验证
 
-订阅通知终结点 (中指定`notificationUrl`属性) 必须能够响应验证请求，[设置的用户数据更改的通知](/graph/webhooks#notification-endpoint-validation)中所述。 如果验证失败，请求创建订阅，将返回一个 400 错误请求错误。
+订阅通知终结点 (在`notificationUrl`属性中指定) 必须能够响应验证请求, 如为用户数据中的[更改通知设置通知](/graph/webhooks#notification-endpoint-validation)中所述。 如果验证失败, 则创建订阅的请求将返回400错误的请求错误。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,21 +1,21 @@
 ---
 title: localSecurityOptionsMinimumSessionSecurity 枚举类型
 description: LocalSecurityOptionsMinimumSessionSecurity 的可能值
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c39f2bb6d0bab2aff09fc05bb0492e81102e1b7c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fe6007747aed1037a4dc3d5264bb432182a28c00
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396082"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145344"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>localSecurityOptionsMinimumSessionSecurity 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 LocalSecurityOptionsMinimumSessionSecurity 的可能值
 
@@ -23,9 +23,9 @@ LocalSecurityOptionsMinimumSessionSecurity 的可能值
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|发送 LM & NTLM 响应|
-|requireNtmlV2SessionSecurity|1|如果协商，发送 LM & NTLM 使用 NTLMv2 会话安全|
-|require128BitEncryption|2|发送 LM & 仅 NTLM 响应|
-|ntlmV2And128BitEncryption|3|发送 LM & 仅 NTLMv2 响应|
+|requireNtmlV2SessionSecurity|1|发送 LM & NTLM-使用 NTLMv2 会话安全性 (如果协商)|
+|require128BitEncryption|双面|仅发送 LM & NTLM 响应|
+|ntlmV2And128BitEncryption|第三章|仅发送 LM & NTLMv2 响应|
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: 创建 windowsPrivacyDataAccessControlItem
 description: 创建新的 windowsPrivacyDataAccessControlItem 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e7b78a113134b4d268df3c759dfd7dc700759a35
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: efe12eba472c86dec225b74d7390b669de9928f1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405581"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144609"
 ---
 # <a name="create-windowsprivacydataaccesscontrolitem"></a>创建 windowsPrivacyDataAccessControlItem
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)对象。
 
@@ -44,22 +44,22 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 windowsPrivacyDataAccessControlItem 对象的 JSON 表示形式。
+在请求正文中, 提供 windowsPrivacyDataAccessControlItem 对象的 JSON 表示形式。
 
-下表显示时创建 windowsPrivacyDataAccessControlItem 所需的属性。
+下表显示创建 windowsPrivacyDataAccessControlItem 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|WindowsPrivacyDataAccessControlItem 键。|
-|accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|这指示到指定的应用程序会授予对隐私数据类别的访问级别。 可取值为：`notConfigured`、`forceAllow`、`forceDeny`、`userInControl`。|
-|dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|这指示特定的访问控制将应用于哪个隐私数据类别。 可能的值为： `notConfigured`， `accountInfo`， `appsRunInBackground`， `calendar`， `callHistory`， `camera`， `contacts`， `diagnosticsInfo`， `email`， `location`， `messaging`， `microphone`， `motion`， `notifications`， `phone`， `radios`， `tasks`， `syncWithDevices`， `trustedDevices`.|
-|appPackageFamilyName|String|包系列 Windows 应用程序的名称。 设置时，访问级别应用于指定的应用程序。|
-|appDisplayName|String|包系列 Windows 应用程序的名称。 设置时，访问级别应用于指定的应用程序。|
+|id|字符串|WindowsPrivacyDataAccessControlItem 的键。|
+|accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|这表示将向其授予指定应用程序的隐私数据类别的访问级别。 可取值为：`notConfigured`、`forceAllow`、`forceDeny`、`userInControl`。|
+|dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|这表示将应用特定访问控制的隐私数据类别。 可能的值为`notConfigured`: `accountInfo`、 `appsRunInBackground`、 `calendar` `callHistory` `camera` `contacts` `diagnosticsInfo` `email` `location` `messaging` `microphone` `motion`、、、、、、、、、、、、、、、、 `notifications` `phone` `radios` `tasks` `syncWithDevices` `trustedDevices`.|
+|appPackageFamilyName|字符串|Windows 应用的程序包系列名称。 设置后, 该访问级别将应用于指定的应用程序。|
+|appDisplayName|String|Windows 应用的程序包系列名称。 设置后, 该访问级别将应用于指定的应用程序。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)对象。
 
 ## <a name="example"></a>示例
 

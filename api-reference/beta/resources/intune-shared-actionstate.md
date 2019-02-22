@@ -1,34 +1,34 @@
 ---
 title: actionState 枚举类型
-description: 在设备上的操作的状态
-localization_priority: Normal
+description: 设备上操作的状态
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54f9a636cb579a234097f86aba8cf4e8fb8fefd0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6d55ff0419c6178668bbee921c149c8bc797ebff
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421611"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143398"
 ---
 # <a name="actionstate-enum-type"></a>actionState 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-在设备上的操作的状态
+设备上操作的状态
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|不是有效的操作状态|
-|挂起|1|操作处于挂起状态|
-|取消此事件|2|操作已被取消。|
-|活动|3|操作处于活动状态。|
-|done|4|没有错误完成的操作。|
-|failed|5|失败的操作|
-|notSupported|6|不支持操作。|
+|无|0|操作状态无效|
+|决|1|操作挂起|
+|取消|双面|操作已被取消。|
+|工作|第三章|操作处于活动状态。|
+|done|4|操作已完成, 无错误。|
+|failed|5|操作失败|
+|notSupported|型|操作不受支持。|
 
 
 

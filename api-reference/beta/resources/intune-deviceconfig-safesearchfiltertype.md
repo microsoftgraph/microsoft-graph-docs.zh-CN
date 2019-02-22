@@ -1,30 +1,30 @@
 ---
 title: safeSearchFilterType 枚举类型
-description: 指定需要何种级别的安全搜索 （筛选成人内容）
-localization_priority: Normal
+description: 指定需要哪个级别的安全搜索 (筛选成人内容)
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4493c71b48a0f5ff4b0c48307504087c722393e1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 196131eb11efad25a4b2fa541bf1b20d85dda33e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403481"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140171"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>safeSearchFilterType 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-指定需要何种级别的安全搜索 （筛选成人内容）
+指定需要哪个级别的安全搜索 (筛选成人内容)
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|用户定制|0|用户定义，默认值、 没有用途。|
-|严格|1|严格，最高针对成人内容筛选。|
-|中等|2|中等筛选成人内容 （有效的搜索结果将不会筛选）。|
+|定制|0|用户定义, 默认值, 无意向。|
+|全|1|对成人内容严格、最高的筛选。|
+|从中|双面|针对成人内容的中等筛选 (将不会筛选有效的搜索结果)。|
 
 
 

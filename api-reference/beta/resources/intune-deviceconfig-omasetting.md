@@ -1,29 +1,29 @@
 ---
 title: omaSetting 资源类型
 description: OMA 设置定义。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fdf74ba7e8932ce06bca83d88336239c2abcacf4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fab80ad06fb5654578f29b92e3b0f3aa9c09abdb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411034"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143846"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 OMA 设置定义。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|显示名称。|
-|description|String|说明。|
+|displayName|字符串|显示名称。|
+|description|字符串|说明。|
 |omaUri|String|OMA。|
 
 ## <a name="relationships"></a>关系

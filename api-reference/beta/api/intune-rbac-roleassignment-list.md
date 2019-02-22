@@ -1,21 +1,21 @@
 ---
 title: 列出 roleAssignments
 description: 列出 roleAssignment 对象的属性和关系。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c7316073ce1870c9ebebf5357aaa0f3c41761f5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dd166d7b96931d01c0fd10fc495268d042e0e6f3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414702"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144098"
 ---
 # <a name="list-roleassignments"></a>列出 roleAssignments
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [roleAssignment](../resources/intune-rbac-roleassignment.md) 对象的属性和关系。
 

@@ -3,12 +3,12 @@ title: 删除订阅
 description: 删除订阅。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 9ca4c772cb6d7de088550a16262275b4c43fb9c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9fa5a60bbb00bb7d15ae14a0b76235a5629f2c42
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509460"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140451"
 ---
 # <a name="delete-subscription"></a>删除订阅
 
@@ -18,21 +18,29 @@ ms.locfileid: "29509460"
 
 ## <a name="permissions"></a>权限
 
-下表列出了对各个资源所需权限的建议。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据所请求的资源和权限类型 (委派或应用程序), 下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 资源类型/项        | 权限          |
-|-----------------------------|---------------------|
-| 联系人                    | Contacts.Read       |
-| Conversations               | Group.Read.All      |
-| Events                      | Calendars.Read      |
-| Messages                    | Mail.Read           |
-| 组                      | Group.Read.All      |
-| 用户                       | User.Read.All       |
-| Drive（用户的 OneDrive）    | Files.ReadWrite     |
-| 驱动器 （共享的 SharePoint 内容和驱动器） | Files.ReadWrite.All |
-| 安全警报              | SecurityEvents.ReadWrite.All |
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----|:-----|:-----|:-----|
+|[联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[driveItem](../resources/driveitem.md)(用户的个人 OneDrive) | 不支持 | Files.ReadWrite | 不支持 |
+|[driveItem](../resources/driveitem.md)(OneDrive for business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
+|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[group](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
+|[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
+|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[安全警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-***注意：***/Beta 终结点允许资源最多的应用程序权限。 应用程序权限不支持对话组和 OneDrive 驱动器根项目。
+> **注意:** 对 OneDrive 和 Outlook 项目的订阅有其他限制。 这些限制适用于创建和管理订阅 (获取、更新和删除订阅)。
+
+- 在个人 OneDrive 上, 您可以订阅该驱动器中的根文件夹或任何子文件夹。 在 OneDrive for business 中, 只能订阅根文件夹。 将为订阅的文件夹中的所请求类型的更改发送通知, 或在其层次结构中的任何文件、文件夹或其他 driveItem 对象上发送通知。 您无法订阅不是文件夹的**驱动器**或**driveItem**实例, 例如单个文件。
+
+- 在 Outlook 中, 委派权限仅支持订阅登录用户的邮箱中的文件夹中的项目。 这意味着, 您不能使用委派的权限日历。读取它可订阅其他用户的邮箱中的事件。
+- 若要订阅_共享或委托_文件夹中的 Outlook 联系人、事件或邮件的更改通知, 请执行以下操作:
+
+  - 使用相应的应用程序权限订阅租户中_任何_用户的文件夹或邮箱中的项目更改。
+  - 请勿使用 Outlook 共享权限 ("联系人"、"共享"、"日历"、"共享"、"邮件"、"已读/写" 等), 因为它们**不**支持对共享或委派文件夹中的项目的更改通知进行订阅。
 
 ## <a name="http-request"></a>HTTP 请求
 

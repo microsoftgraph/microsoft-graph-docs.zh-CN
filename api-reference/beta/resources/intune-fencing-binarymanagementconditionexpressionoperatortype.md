@@ -1,29 +1,29 @@
 ---
 title: binaryManagementConditionExpressionOperatorType 枚举类型
-description: 支持管理条件表达式二元运算符。
-localization_priority: Normal
+description: 支持的管理条件表达式的二元运算符。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05b195df95d6f7a85673a352edf090cea7f074aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 35f60b9ee321ef3cbd65cf77273a65e7705f666a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424292"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143804"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binaryManagementConditionExpressionOperatorType 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-支持管理条件表达式二元运算符。
+支持的管理条件表达式的二元运算符。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|或|0|计算一操作数为 true，当且仅当一个或多个操作数为 true。|
-|和|1|当且仅当所有的操作数，则，计算一操作数为 true。|
+|或|0|当且仅当一个或多个操作数为 true 时, 将一组操作数评估为 true。|
+|和|1|当且仅当其所有操作数均为 true 时, 将一组操作数评估为 true。|
 
 
 

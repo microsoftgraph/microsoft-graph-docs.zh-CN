@@ -1,21 +1,21 @@
 ---
 title: 更新 androidForWorkEnrollmentProfile
 description: 更新 androidForWorkEnrollmentProfile 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98d017ca961a012c195e1e729bf4a2527e50f5e0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 77c5dcd3af7caf26c8320486ccb693c5004acc7a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398014"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145624"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>更新 androidForWorkEnrollmentProfile
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) 对象的属性。
 
@@ -51,15 +51,15 @@ PATCH /deviceManagement/androidForWorkEnrollmentProfiles/{androidForWorkEnrollme
 |属性|类型|说明|
 |:---|:---|:---|
 |accountId|String|注册配置文件所属的租户 GUID。|
-|id|String|注册配置文件的唯一 GUID。|
-|displayName|String|注册配置文件的显示名称。|
-|description|String|注册配置文件的说明。|
+|id|字串符号|注册配置文件的唯一 GUID。|
+|displayName|字符串|注册配置文件的显示名称。|
+|description|字符串|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
 |tokenValue|String|为此注册配置文件最新创建的令牌的值。|
 |tokenExpirationDateTime|DateTimeOffset|最新创建的令牌的到期日期/时间。|
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
-|qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
+|qrCodeContent|字符串|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
 
 

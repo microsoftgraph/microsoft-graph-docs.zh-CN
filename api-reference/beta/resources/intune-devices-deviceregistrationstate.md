@@ -1,35 +1,35 @@
 ---
 title: deviceRegistrationState 枚举类型
 description: 设备注册状态。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90f2dc7f8c11940fa01047d8c61f23c8f0389ed8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f04d8c0fddb966504675e3b4c677dfd0bbabe64c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396754"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144623"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备注册状态。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|notRegistered|0|未注册设备。|
-|注册|2|已注册设备。|
-|吊销|3|已阻止、 擦除或停用该设备。|
-|keyConflict|4|设备具有键冲突。|
-|approvalPending|5|设备是待审批状态。|
-|certificateReset|6|设备证书已被重置。|
-|notRegisteredPendingEnrollment|7|未注册设备以及待处理的注册。|
-|unknown|8|未知设备注册状态。|
+|notRegistered|0|设备未注册。|
+|注册|双面|设备已注册。|
+|吊销|第三章|设备已被阻止、已擦除或已停用。|
+|keyConflict|4|设备有键冲突。|
+|approvalPending|5|设备正在等待审批。|
+|certificateReset|型|设备证书已重置。|
+|notRegisteredPendingEnrollment|步|设备未注册且未完成注册。|
+|unknown|utf-8|设备注册状态未知。|
 
 
 

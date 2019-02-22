@@ -1,21 +1,21 @@
 ---
 title: 列出 windows10GeneralConfigurations
 description: 列出 windows10GeneralConfiguration 对象的属性和关系。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 256fd9de47d91be93c7b6fb24c15397b4cc17aa5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d43b1f21095e713ec46aa14056a70f080d84b76c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411958"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146408"
 ---
 # <a name="list-windows10generalconfigurations"></a>列出 windows10GeneralConfigurations
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象的属性和关系。
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 14497
+Content-Length: 14803
 
 {
   "value": [
@@ -177,6 +177,8 @@ Content-Length: 14497
       "edgeBlockPrelaunch": true,
       "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
       "edgePreventCertificateErrorOverride": true,
+      "edgeKioskModeRestriction": "digitalSignage",
+      "edgeKioskResetAfterIdleTimeInMinutes": 4,
       "cellularBlockDataWhenRoaming": true,
       "cellularBlockVpn": true,
       "cellularBlockVpnWhenRoaming": true,
@@ -211,6 +213,9 @@ Content-Length: 14497
       "defenderRequireRealTimeMonitoring": true,
       "defenderScanArchiveFiles": true,
       "defenderScanDownloads": true,
+      "defenderScheduleScanEnableLowCpuPriority": true,
+      "defenderDisableCatchupQuickScan": true,
+      "defenderDisableCatchupFullScan": true,
       "defenderScanNetworkFiles": true,
       "defenderScanIncomingMail": true,
       "defenderScanMappedNetworkDrivesDuringFullScan": true,
@@ -319,6 +324,7 @@ Content-Length: 14497
       "safeSearchFilter": "strict",
       "edgeBlockPopups": true,
       "edgeBlockSearchSuggestions": true,
+      "edgeBlockSearchEngineCustomization": true,
       "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
       "edgeSendIntranetTrafficToInternetExplorer": true,
       "edgeRequireSmartScreen": true,

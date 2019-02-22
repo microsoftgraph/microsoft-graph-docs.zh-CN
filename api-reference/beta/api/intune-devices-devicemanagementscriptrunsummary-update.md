@@ -1,21 +1,21 @@
 ---
 title: 更新 deviceManagementScriptRunSummary
 description: 更新 deviceManagementScriptRunSummary 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55582147aff81bc8d566634a5fb9fdc1ff4ff2fd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dd41b6c7dbb7a2bb361175de564904c11e7e5e80
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413988"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141718"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>更新 deviceManagementScriptRunSummary
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)对象的属性。
 
@@ -44,22 +44,22 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)对象的 JSON 表示形式。
+在请求正文中, 提供[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)对象的 JSON 表示形式。
 
-下表显示时创建[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)所需的属性。
+下表显示创建[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|运行摘要实体的设备管理脚本的键。|
+|id|字符串|设备管理脚本运行摘要实体的键。|
 |successDeviceCount|Int32|成功设备计数。|
 |errorDeviceCount|Int32|错误设备计数。|
-|successUserCount|Int32|成功用户计数。|
+|successUserCount|Int32|成功的用户计数。|
 |errorUserCount|Int32|错误用户计数。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)对象。
 
 ## <a name="example"></a>示例
 

@@ -1,21 +1,21 @@
 ---
 title: 更新 windowsProtectionState
 description: 更新 windowsProtectionState 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: faad744f1a7910b693ea7f87ea0e2ab5dddd7a25
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cbd8c518dc0704bb563fccbd704b57edc77199cc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406204"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143818"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)对象的属性。
 
@@ -45,35 +45,35 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)对象的 JSON 表示形式。
+在请求正文中, 提供[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)对象的 JSON 表示形式。
 
-下表显示时创建[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)所需的属性。
+下表显示创建[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|Boolean|反恶意软件被启用还是没有|
-|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 （如清理挂起完全扫描或挂起的重新启动等）。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|Boolean|是否启用实时保护？|
-|networkInspectionSystemEnabled|Boolean|启用或不网络检查系统？|
-|quickScanOverdue|Boolean|快速扫描过期，或不？|
-|fullScanOverdue|Boolean|或不完全扫描过期？|
-|signatureUpdateOverdue|Boolean|过期的签名或不？|
-|rebootRequired|Boolean|需要或不重新启动？|
-|fullScanRequired|Boolean|所需或不完全扫描？|
-|engineVersion|String|当前终结点保护引擎的版本|
-|特征码版本|String|当前的恶意软件定义版本|
-|antiMalwareVersion|String|当前防恶意软件版本|
-|lastQuickScanDateTime|DateTimeOffset|最后一个快速扫描 datetime|
-|lastFullScanDateTime|DateTimeOffset|最后一个快速扫描 datetime|
-|lastQuickScanSignatureVersion|String|最后一个快速扫描病毒特征版本|
-|lastFullScanSignatureVersion|String|最后一个完全扫描病毒特征版本|
-|lastReportedDateTime|DateTimeOffset|最后一个设备运行状况状态报告的时间|
+|id|字符串|设备保护状态对象的唯一标识符。 这是设备的设备 id|
+|malwareProtectionEnabled|布尔|已启用反恶意软件|
+|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (如清理或挂起完全扫描或等待重新启动等)。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
+|realTimeProtectionEnabled|布尔|是否启用了实时保护？|
+|networkInspectionSystemEnabled|布尔|网络检查系统是否已启用？|
+|quickScanOverdue|布尔|快速扫描是否过期？|
+|fullScanOverdue|布尔|完全扫描逾期？|
+|signatureUpdateOverdue|布尔|签名是否已过期？|
+|rebootRequired|布尔|是否需要重新启动？|
+|fullScanRequired|布尔|需要完全扫描吗？|
+|engineVersion|字符串|当前 endpoint protection 引擎的版本|
+|signatureVersion|字符串|当前恶意软件定义版本|
+|antiMalwareVersion|字符串|当前反恶意软件版本|
+|lastQuickScanDateTime|DateTimeOffset|上次快速扫描日期时间|
+|lastFullScanDateTime|DateTimeOffset|上次快速扫描日期时间|
+|lastQuickScanSignatureVersion|字符串|上次快速扫描签名版本|
+|lastFullScanSignatureVersion|字符串|上次完全扫描签名版本|
+|lastReportedDateTime|DateTimeOffset|上次设备运行状况状态报告时间|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)对象。
 
 ## <a name="example"></a>示例
 

@@ -1,21 +1,21 @@
 ---
 title: 创建 appLogCollectionRequest
 description: 创建新的 appLogCollectionRequest 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3afd1cf00ba706e3fbc1e960e649fc010ae582f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: da12791aab74c59d82b8efb4c98629ac1d809112
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429474"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144994"
 ---
 # <a name="create-applogcollectionrequest"></a>创建 appLogCollectionRequest
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象。
 
@@ -40,26 +40,26 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 appLogCollectionRequest 对象的 JSON 表示形式。
+在请求正文中, 提供 appLogCollectionRequest 对象的 JSON 表示形式。
 
-下表显示时创建 appLogCollectionRequest 所需的属性。
+下表显示创建 appLogCollectionRequest 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|唯一的标识符。 这是 userId_DeviceId_AppId id。|
+|id|字符串|唯一标识符。 这是 userId_DeviceId_AppId id。|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
-|errorMessage|String|如果在上载过程中的任何错误消息|
-|customLogFolders|String 集合|日志文件文件夹的列表。 |
-|completedDateTime|DateTimeOffset|上载日志请求频率达到终端状态的时间|
+|errorMessage|字符串|在上载过程中出现的错误消息|
+|customLogFolders|String collection|日志文件夹的列表。 |
+|completedDateTime|DateTimeOffset|上传日志请求到达终端状态的时间|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)对象。
 
 ## <a name="example"></a>示例
 
