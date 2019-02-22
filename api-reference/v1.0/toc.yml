@@ -592,6 +592,7 @@ items:
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: 获取多值属性
           href: api/multivaluelegacyextendedproperty-get.md
+    displayname: Outlook calendar
   - name: 跨设备体验
     displayName: Project Rome
     href: resources/project-rome-overview.md
@@ -3378,7 +3379,7 @@ items:
         href: api/notebook-list-sectiongroups.md
       - name: 创建分区组
         href: api/notebook-post-sectiongroups.md
-    - name: 分区
+    - name: 部分
       href: resources/section.md
       items:
       - name: 列出分区
@@ -3719,6 +3720,7 @@ items:
         href: api/alert-update.md
     - name: 错误
       href: resources/security-error-codes.md
+    displayname: Security API, Microsoft Intelligent Security Graph
   - name: 网站和列表
     displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
     href: resources/sharepoint.md
@@ -3908,12 +3910,12 @@ items:
         href: api/directory-deleteditems-delete.md
       - name: 恢复已删除的组
         href: api/directory-deleteditems-restore.md
-    - name: 通道
+    - name: 频道
       href: resources/channel.md
       items:
       - name: 列出频道
         href: api/channel-list.md
-      - name: 创建通道
+      - name: 创建频道
         href: api/channel-post.md
       - name: 获取通道
         href: api/channel-get.md
@@ -4147,9 +4149,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 1339855adb73ed440f159043c7d5d60e65752ebd
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: 4295a10b58fa5a762811291710233df5b2d333aa
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760970"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157041"

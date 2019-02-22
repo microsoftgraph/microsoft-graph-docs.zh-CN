@@ -1,23 +1,23 @@
 ---
 title: vppTokenActionResult 资源类型
-description: 使用 Apple 卷购买计划令牌执行操作的状态。
-localization_priority: Normal
+description: 使用 Apple volume purchase Program 令牌执行的操作的状态。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fb78ea991ed43bd100a424ea7ddd7e23b22412d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 853c5c12ca0a85fe0f5a16efa86321e46a28ec5c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414289"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159386"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>vppTokenActionResult 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-使用 Apple 卷购买计划令牌执行操作的状态。
+使用 Apple volume purchase Program 令牌执行的操作的状态。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

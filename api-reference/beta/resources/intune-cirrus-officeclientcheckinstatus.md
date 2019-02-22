@@ -1,35 +1,35 @@
 ---
 title: officeClientCheckinStatus 资源类型
-description: 介绍租户中签入 stats 的实体。
+description: 描述租户签入统计信息的实体。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: aebc534a6c424a9dac4316d0029e2fd35839f0a7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 465b07ba286b9ee3a58132424be2a25b1c7e564e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403257"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156054"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-介绍租户中签入 stats 的实体。
+描述租户签入统计信息的实体。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|userPrincipalName|String|使用设备的用户主体名称。|
-|deviceName|String|要签入的设备名称。|
-|devicePlatform|String|要签入的设备平台。|
-|devicePlatformVersion|String|要签入的设备平台版本。|
-|准备成功|Boolean|如果上次签入已成功。|
-|userId|String|使用设备的用户标识符。|
-|checkinDateTime|DateTimeOffset|最后一个设备签入时间采用 UTC 时间。|
-|errorMessage|String|如果有关联的最后一个签入的错误消息。|
-|appliedPolicies|String 集合|策略列表送达作为最后一个签入的设备。|
+|userPrincipalName|字符串|使用设备的用户主体名称。|
+|deviceName|String|尝试签入的设备名称。|
+|devicePlatform|字符串|尝试签入的设备平台。|
+|devicePlatformVersion|字符串|尝试签入的设备平台版本。|
+|wasSuccessful|布尔|如果上一次签入成功。|
+|userId|字符串|使用设备的用户标识符。|
+|checkinDateTime|DateTimeOffset|UTC 格式的上次设备签入时间。|
+|errorMessage|字符串|如果与上次签入相关联, 则出现错误消息。|
+|appliedPolicies|String collection|上次签入到设备的策略列表。|
 
 ## <a name="relationships"></a>关系
 无

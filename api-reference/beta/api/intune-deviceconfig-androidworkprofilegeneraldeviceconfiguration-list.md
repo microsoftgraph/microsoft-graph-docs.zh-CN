@@ -1,23 +1,23 @@
 ---
-title: 列表 androidWorkProfileGeneralDeviceConfigurations
-description: 列出属性和 androidWorkProfileGeneralDeviceConfiguration 对象之间的关系。
-localization_priority: Normal
+title: 列出 androidWorkProfileGeneralDeviceConfigurations
+description: 列出 androidWorkProfileGeneralDeviceConfiguration 对象的属性和关系。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cc8aed2774ab3c17393f7e16c79158c54e16ad0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 37ef031368648c2d6ccd7e51c3fafb2502e95e28
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402011"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160184"
 ---
-# <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>列表 androidWorkProfileGeneralDeviceConfigurations
+# <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>列出 androidWorkProfileGeneralDeviceConfigurations
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出属性和[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)对象之间的关系。
+列出[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md)对象集合。
 
 ## <a name="example"></a>示例
 

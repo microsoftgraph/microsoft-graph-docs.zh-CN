@@ -1,21 +1,21 @@
 ---
 title: windowsInformationProtectionDataRecoveryCertificate 资源类型
 description: Windows 信息保护 DataRecoveryCertificate
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6a5606906cbec0122137faf3cb454edec785c42
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 74c480b8117f3d8dbf0ad8208bac09b63b113906
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405798"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156187"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>windowsInformationProtectionDataRecoveryCertificate 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Windows 信息保护 DataRecoveryCertificate
 
@@ -23,7 +23,7 @@ Windows 信息保护 DataRecoveryCertificate
 |属性|类型|说明|
 |:---|:---|:---|
 |SubjectName|String|数据恢复证书主题名称|
-|description|String|数据恢复证书说明|
+|description|字符串|数据恢复证书说明|
 |expirationDateTime|DateTimeOffset|数据恢复证书过期日期/时间|
 |证书|Binary|数据恢复证书|
 

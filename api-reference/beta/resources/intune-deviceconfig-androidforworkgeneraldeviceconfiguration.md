@@ -1,23 +1,23 @@
 ---
 title: androidForWorkGeneralDeviceConfiguration 资源类型
-description: Android 的工作常规设备配置。
-localization_priority: Normal
+description: 适用于工作的 Android 常规设备配置。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 427963a80f48e7f98c73a89d0288d515257bbafa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 474e957ea4ebbbafa7922d1258b7a97bcd535e0d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420120"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156362"
 ---
 # <a name="androidforworkgeneraldeviceconfiguration-resource-type"></a>androidForWorkGeneralDeviceConfiguration 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Android 的工作常规设备配置。
+适用于工作的 Android 常规设备配置。
 
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
@@ -25,8 +25,8 @@ Android 的工作常规设备配置。
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列表 androidForWorkGeneralDeviceConfigurations](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)集合|列出属性和[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)对象之间的关系。|
-|[获取 androidForWorkGeneralDeviceConfiguration](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)|读取属性和[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)对象的关系。|
+|[列出 androidForWorkGeneralDeviceConfigurations](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)集合|列出[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)对象的属性和关系。|
+|[获取 androidForWorkGeneralDeviceConfiguration](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)|读取[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)对象的属性和关系。|
 |[创建 androidForWorkGeneralDeviceConfiguration](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-create.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)|创建新的[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)对象。|
 |[删除 androidForWorkGeneralDeviceConfiguration](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-delete.md)|无|删除[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)。|
 |[更新 androidForWorkGeneralDeviceConfiguration](../api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-update.md)|[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)|更新[androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md)对象的属性。|
@@ -36,8 +36,8 @@ Android 的工作常规设备配置。
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -48,36 +48,36 @@ Android 的工作常规设备配置。
 |passwordMinimumLength|Int32|密码的最小长度。 有效值为 4 至 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。 有效的值 1 到 16|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。 有效值为1至16|
 |passwordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
-|workProfileDataSharingType|[androidForWorkCrossProfileDataSharingType](../resources/intune-deviceconfig-androidforworkcrossprofiledatasharingtype.md)|允许共享的数据的类型。 可取值为：`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions`。|
-|workProfileBlockNotificationsWhileDeviceLocked|Boolean|指示阻止通知时设备锁定。|
-|workProfileBlockAddingAccounts|Boolean|阻止用户添加/移除工作配置文件中的帐户。|
-|workProfileBluetoothEnableContactSharing|Boolean|允许蓝牙设备访问企业联系人。|
-|workProfileBlockScreenCapture|Boolean|阻止工作配置文件中的屏幕截图。|
-|workProfileBlockCrossProfileCallerId|Boolean|阻止显示工作 profile 呼叫者 ID 个人配置文件中。|
-|workProfileBlockCamera|Boolean|阻止工作 profile 摄像头。|
-|workProfileBlockCrossProfileContactsSearch|Boolean|个人配置文件中，阻止工作 profile 联系人可用性。|
-|workProfileBlockCrossProfileCopyPaste|Boolean|布尔值，指示设置不允许跨是否启用配置文件复制/粘贴。|
+|workProfileDataSharingType|[androidForWorkCrossProfileDataSharingType](../resources/intune-deviceconfig-androidforworkcrossprofiledatasharingtype.md)|允许的数据共享类型。 可取值为：`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions`。|
+|workProfileBlockNotificationsWhileDeviceLocked|布尔|指示在设备锁定时是否阻止通知。|
+|workProfileBlockAddingAccounts|布尔|阻止用户在工作配置文件中添加/删除帐户。|
+|workProfileBluetoothEnableContactSharing|布尔|允许蓝牙设备访问企业联系人。|
+|workProfileBlockScreenCapture|布尔|在工作配置文件中阻止屏幕捕获。|
+|workProfileBlockCrossProfileCallerId|布尔|阻止显示个人配置文件中的工作配置文件呼叫者 ID。|
+|workProfileBlockCamera|布尔|阻止工作配置文件相机。|
+|workProfileBlockCrossProfileContactsSearch|布尔|阻止个人配置文件中的工作配置文件联系人可用性。|
+|workProfileBlockCrossProfileCopyPaste|布尔|指示是否启用 "禁用跨配置文件复制/粘贴" 设置的 Boolean。|
 |workProfileDefaultAppPermissionPolicy|[androidForWorkDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidforworkdefaultapppermissionpolicytype.md)|必需的密码类型。 可取值为：`deviceDefault`、`prompt`、`autoGrant`、`autoDeny`。|
-|workProfilePasswordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁工作配置文件。|
-|workProfilePasswordBlockTrustAgents|Boolean|指示阻止智能锁定和其他信任代理工作配置文件。|
-|workProfilePasswordExpirationDays|Int32|过期工作配置文件密码之前的天数。 有效值为 1 至 365。|
-|workProfilePasswordMinimumLength|Int32|工作配置文件密码最小长度。 有效值为 4 至 16|
-|workProfilePasswordMinNumericCharacters|Int32|最小 ハ  工作配置文件密码中所需的数字字符。 有效的值 1 到 10|
-|workProfilePasswordMinNonLetterCharacters|Int32|最小 ハ  中工作配置文件密码必须包含非字母字符。 有效的值 1 到 10|
-|workProfilePasswordMinLetterCharacters|Int32|最小 ハ  中工作配置文件密码必须包含字母字符。 有效的值 1 到 10|
-|workProfilePasswordMinLowerCaseCharacters|Int32|最小 ハ  工作配置文件密码中需要的小写字符。 有效的值 1 到 10|
-|workProfilePasswordMinUpperCaseCharacters|Int32|最小 ハ  中工作配置文件密码必须大写字符。 有效的值 1 到 10|
-|workProfilePasswordMinSymbolCharacters|Int32|最小 ハ  工作配置文件密码中需要的符号。 有效的值 1 到 10|
+|workProfilePasswordBlockFingerprintUnlock|布尔|指示是否阻止工作配置文件的指纹解锁。|
+|workProfilePasswordBlockTrustAgents|布尔|指示是否阻止智能锁定和其他信任代理用于工作配置文件。|
+|workProfilePasswordExpirationDays|Int32|工作配置文件密码到期前的天数。 有效值为 1 至 365。|
+|workProfilePasswordMinimumLength|Int32|工作配置文件密码的最小长度。 有效值为 4 至 16|
+|workProfilePasswordMinNumericCharacters|Int32|工作配置文件密码中所需的最小数字字符数。 有效值为1至10|
+|workProfilePasswordMinNonLetterCharacters|Int32|工作配置文件密码中所需的最小非字母字符数。 有效值为1至10|
+|workProfilePasswordMinLetterCharacters|Int32|工作配置文件密码中所需的字母字符的最小数目。 有效值为1至10|
+|workProfilePasswordMinLowerCaseCharacters|Int32|工作配置文件密码中所需的小写字符的最小数量。 有效值为1至10|
+|workProfilePasswordMinUpperCaseCharacters|Int32|工作配置文件密码中要求的大写字符的最小数量。 有效值为1至10|
+|workProfilePasswordMinSymbolCharacters|Int32|工作配置文件密码中所需的最小符号数。 有效值为1至10|
 |workProfilePasswordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
-|workProfilePasswordPreviousPasswordBlockCount|Int32|以前的工作配置文件密码，以阻止数。 有效值为 0 至 24|
-|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|登录失败之前删除工作配置文件允许和已删除的所有企业数据的数量。 有效的值 1 到 16|
-|workProfilePasswordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|工作所需的配置文件密码的类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
-|workProfileRequirePassword|Boolean|密码，则需要或不工作配置文件|
+|workProfilePasswordPreviousPasswordBlockCount|Int32|要阻止的以前的工作配置文件密码的数量。 有效值为 0 至 24|
+|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|在删除工作配置文件和删除所有公司数据之前允许的登录失败次数。 有效值为1至16|
+|workProfilePasswordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|所需的工作配置文件密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
+|workProfileRequirePassword|布尔|对于工作配置文件, 密码是必需的|
 |securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
-|vpnAlwaysOnPackageIdentifier|String|始终在 VPN 中启用锁定模式。|
-|vpnEnableAlwaysOnLockdownMode|Boolean|始终在 VPN 中启用锁定模式。|
+|vpnAlwaysOnPackageIdentifier|字符串|为 always on VPN 启用锁定模式。|
+|vpnEnableAlwaysOnLockdownMode|布尔|为 always on VPN 启用锁定模式。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -85,7 +85,7 @@ Android 的工作常规设备配置。
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|按用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|设备配置设备状态概述 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|设备配置用户状态概述 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|设备配置设置状态设备摘要 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

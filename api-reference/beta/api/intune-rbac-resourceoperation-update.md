@@ -1,21 +1,21 @@
 ---
 title: 更新 resourceOperation
 description: 更新 resourceOperation 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 266d45150c5633a66c5996b5cb9285f97ecaf6bb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e4e7ab1f3edd0de4e36eb8c051b4cc02306f707
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411139"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156747"
 ---
 # <a name="update-resourceoperation"></a>更新 resourceOperation
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [resourceOperation](../resources/intune-rbac-resourceoperation.md) 对象的属性。
 
@@ -50,12 +50,12 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|资源操作的键。 只读，且自动生成。|
-|资源|String|资源此操作所属类别。|
+|id|字串符号|资源操作的键。 只读，且自动生成。|
+|资源|字符串|此操作所属的资源类别。|
 |resourceName|String|执行此操作的资源的名称。|
-|actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
-|说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
-|enabledForScopeValidation|Boolean|确定是否定义每个角色分配的作用域验证权限。|
+|actionName|字符串|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
+|说明|字符串|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
+|enabledForScopeValidation|布尔|确定是否针对按角色分配定义的作用域验证权限。|
 
 
 

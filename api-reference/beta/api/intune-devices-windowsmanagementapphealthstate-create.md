@@ -1,21 +1,21 @@
 ---
 title: 创建 windowsManagementAppHealthState
 description: 创建新的 windowsManagementAppHealthState 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3463e05c58d3b501955f3b04c49cbf112d8a63f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9f8bead779385d8599bdd91932fbf310767b2e35
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416522"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157727"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>创建 windowsManagementAppHealthState
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象。
 
@@ -44,23 +44,23 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 windowsManagementAppHealthState 对象的 JSON 表示形式。
+在请求正文中, 提供 windowsManagementAppHealthState 对象的 JSON 表示形式。
 
-下表显示时创建 windowsManagementAppHealthState 所需的属性。
+下表显示创建 windowsManagementAppHealthState 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Windows 管理应用程序的运行状况状态的唯一标识符|
-|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理应用程序的运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
-|installedVersion|String|Windows 管理应用程序安装的版本。|
-|lastCheckInDateTime|DateTimeOffset|Windows 管理应用程序上次签入的时间。|
-|deviceName|String|设备的 Windows 安装管理应用程序的名称。|
-|deviceOSVersion|String|Windows 10 OS 版本的 Windows 安装管理应用程序的设备。|
+|id|字符串|Windows management 应用运行状况状态的唯一标识符|
+|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理应用运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
+|installedVersion|字符串|Windows 管理应用程序已安装版本。|
+|lastCheckInDateTime|DateTimeOffset|Windows 管理应用程序上次签入时间。|
+|deviceName|String|在其上安装 Windows management 应用的设备的名称。|
+|deviceOSVersion|字符串|windows 10 OS 版本的 windows management app 安装在该设备上。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象。
 
 ## <a name="example"></a>示例
 

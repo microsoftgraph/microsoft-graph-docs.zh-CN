@@ -1,31 +1,31 @@
 ---
 title: mobileAppContentFileUploadState 枚举类型
-description: 包含上载请求状态属性。
-localization_priority: Normal
+description: 包含上载请求状态的属性。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b234c962bb6a2dfc107cbe06d1ee17ce1f5f851d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e6bbda483d68690709c0e9bd084ecd407b10d479
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418797"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156096"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含上载请求状态属性。
+包含上载请求状态的属性。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
 |success|0|尚未记录|
 |transientError|1|尚未记录|
-|error|2|尚未记录|
-|unknown|3|尚未记录|
+|error|双面|尚未记录|
+|unknown|第三章|尚未记录|
 |azureStorageUriRequestSuccess|100|尚未记录|
 |azureStorageUriRequestPending|101|尚未记录|
 |azureStorageUriRequestFailed|102|尚未记录|

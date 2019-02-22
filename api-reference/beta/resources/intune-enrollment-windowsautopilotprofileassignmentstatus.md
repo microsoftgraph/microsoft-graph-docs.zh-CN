@@ -1,21 +1,21 @@
 ---
 title: windowsAutopilotProfileAssignmentStatus 枚举类型
 description: 尚未记录
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68612e2f4ccee46612c82237630efafda484b7e9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b5d1af0e6c91dced1aa12ae72c22430d16674c21
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419119"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156376"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>windowsAutopilotProfileAssignmentStatus 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -23,12 +23,12 @@ ms.locfileid: "29419119"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知的工作分配状态|
-|assignedInSync|1|分配 Intune 中成功的 Windows 自动试用计划同步|
-|assignedOutOfSync|2|分配 Intune 中成功的不与同步 Windows 自动试用计划|
-|assignedUnkownSyncState|3|Intune 和任一中同步中成功分配或与 Windows 自动试用计划不同步|
+|assignedInSync|1|在 Intune 中成功分配, 并与 Windows 自动试用程序同步|
+|assignedOutOfSync|双面|已在 Intune 中成功分配, 与 Windows 自动试用程序不同步|
+|assignedUnkownSyncState|第三章|在 Intune 中成功分配, 并与 Windows 自动试用程序同步或不同步|
 |notAssigned|4|未分配|
-|挂起|5|待处理的工作分配|
-|failed|6| 工作分配失败|
+|决|5|挂起分配|
+|failed|型| 分配失败|
 
 
 
