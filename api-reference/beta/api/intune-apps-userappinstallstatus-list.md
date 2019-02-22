@@ -1,34 +1,34 @@
 ---
-title: 列表 userAppInstallStatuses
-description: 列出属性和 userAppInstallStatus 对象之间的关系。
-localization_priority: Normal
+title: 列出 userAppInstallStatuses
+description: 列出 userAppInstallStatus 对象的属性和关系。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc9a58c913a62028056484f3b686984d2a9a34f1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a89090b81480e99b3c9b5ac0a7ade589971caa11
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405546"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143832"
 ---
-# <a name="list-userappinstallstatuses"></a><span data-ttu-id="63124-103">列表 userAppInstallStatuses</span><span class="sxs-lookup"><span data-stu-id="63124-103">List userAppInstallStatuses</span></span>
+# <a name="list-userappinstallstatuses"></a><span data-ttu-id="3d886-103">列出 userAppInstallStatuses</span><span class="sxs-lookup"><span data-stu-id="3d886-103">List userAppInstallStatuses</span></span>
 
-> <span data-ttu-id="63124-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="63124-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="63124-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="63124-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3d886-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="3d886-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="63124-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="63124-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3d886-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3d886-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="63124-107">列出属性和[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象之间的关系。</span><span class="sxs-lookup"><span data-stu-id="63124-107">List properties and relationships of the [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) objects.</span></span>
+<span data-ttu-id="3d886-106">列出[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="3d886-106">List properties and relationships of the [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="63124-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="63124-108">Prerequisites</span></span>
-<span data-ttu-id="63124-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="63124-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3d886-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="3d886-107">Prerequisites</span></span>
+<span data-ttu-id="3d886-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="3d886-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="63124-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="63124-111">Permission type</span></span>|<span data-ttu-id="63124-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="63124-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="3d886-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="3d886-110">Permission type</span></span>|<span data-ttu-id="3d886-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="3d886-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="63124-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="63124-113">Delegated (work or school account)</span></span>|<span data-ttu-id="63124-114">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="63124-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="63124-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="63124-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="63124-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="63124-116">Not supported.</span></span>|
-|<span data-ttu-id="63124-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="63124-117">Application</span></span>|<span data-ttu-id="63124-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="63124-118">Not supported.</span></span>|
+|<span data-ttu-id="3d886-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3d886-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3d886-113">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="3d886-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="3d886-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3d886-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3d886-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="3d886-115">Not supported.</span></span>|
+|<span data-ttu-id="3d886-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="3d886-116">Application</span></span>|<span data-ttu-id="3d886-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="3d886-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="63124-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="63124-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3d886-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3d886-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,28 +37,28 @@ ms.locfileid: "29405546"
 GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="63124-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="63124-120">Request headers</span></span>
-|<span data-ttu-id="63124-121">标头</span><span class="sxs-lookup"><span data-stu-id="63124-121">Header</span></span>|<span data-ttu-id="63124-122">值</span><span class="sxs-lookup"><span data-stu-id="63124-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3d886-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="3d886-119">Request headers</span></span>
+|<span data-ttu-id="3d886-120">标头</span><span class="sxs-lookup"><span data-stu-id="3d886-120">Header</span></span>|<span data-ttu-id="3d886-121">值</span><span class="sxs-lookup"><span data-stu-id="3d886-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="63124-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="63124-123">Authorization</span></span>|<span data-ttu-id="63124-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="63124-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="63124-125">Accept</span><span class="sxs-lookup"><span data-stu-id="63124-125">Accept</span></span>|<span data-ttu-id="63124-126">application/json</span><span class="sxs-lookup"><span data-stu-id="63124-126">application/json</span></span>|
+|<span data-ttu-id="3d886-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="3d886-122">Authorization</span></span>|<span data-ttu-id="3d886-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="3d886-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="3d886-124">Accept</span><span class="sxs-lookup"><span data-stu-id="3d886-124">Accept</span></span>|<span data-ttu-id="3d886-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3d886-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="63124-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="63124-127">Request body</span></span>
-<span data-ttu-id="63124-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="63124-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3d886-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="3d886-126">Request body</span></span>
+<span data-ttu-id="3d886-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3d886-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="63124-129">响应</span><span class="sxs-lookup"><span data-stu-id="63124-129">Response</span></span>
-<span data-ttu-id="63124-130">如果成功，此方法返回`200 OK`响应代码和响应正文中的[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="63124-130">If successful, this method returns a `200 OK` response code and a collection of [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3d886-128">响应</span><span class="sxs-lookup"><span data-stu-id="3d886-128">Response</span></span>
+<span data-ttu-id="3d886-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="3d886-129">If successful, this method returns a `200 OK` response code and a collection of [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="63124-131">示例</span><span class="sxs-lookup"><span data-stu-id="63124-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3d886-130">示例</span><span class="sxs-lookup"><span data-stu-id="3d886-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="63124-132">请求</span><span class="sxs-lookup"><span data-stu-id="63124-132">Request</span></span>
-<span data-ttu-id="63124-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="63124-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="3d886-131">请求</span><span class="sxs-lookup"><span data-stu-id="3d886-131">Request</span></span>
+<span data-ttu-id="3d886-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="3d886-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 ```
 
-### <a name="response"></a><span data-ttu-id="63124-134">响应</span><span class="sxs-lookup"><span data-stu-id="63124-134">Response</span></span>
-<span data-ttu-id="63124-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="63124-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="3d886-133">响应</span><span class="sxs-lookup"><span data-stu-id="3d886-133">Response</span></span>
+<span data-ttu-id="3d886-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3d886-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

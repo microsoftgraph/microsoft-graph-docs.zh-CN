@@ -1,39 +1,39 @@
 ---
 title: embeddedSIMActivationCode 资源类型
-description: 为移动运营商提供嵌入的 SIM 激活代码。
-localization_priority: Normal
+description: 移动运营商提供的嵌入的 SIM 激活代码。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74f1725ab8f12cb103144dc1897e9bf965c5361b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 955dccb226332b297e30c4d40768f84936b04dbe
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422465"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145225"
 ---
-# <a name="embeddedsimactivationcode-resource-type"></a><span data-ttu-id="e4e8c-103">embeddedSIMActivationCode 资源类型</span><span class="sxs-lookup"><span data-stu-id="e4e8c-103">embeddedSIMActivationCode resource type</span></span>
+# <a name="embeddedsimactivationcode-resource-type"></a><span data-ttu-id="f838b-103">embeddedSIMActivationCode 资源类型</span><span class="sxs-lookup"><span data-stu-id="f838b-103">embeddedSIMActivationCode resource type</span></span>
 
-> <span data-ttu-id="e4e8c-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="e4e8c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="e4e8c-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="e4e8c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f838b-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="f838b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e4e8c-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e4e8c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f838b-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f838b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e4e8c-107">为移动运营商提供嵌入的 SIM 激活代码。</span><span class="sxs-lookup"><span data-stu-id="e4e8c-107">The embedded SIM activation code as provided by the mobile operator.</span></span>
+<span data-ttu-id="f838b-106">移动运营商提供的嵌入的 SIM 激活代码。</span><span class="sxs-lookup"><span data-stu-id="f838b-106">The embedded SIM activation code as provided by the mobile operator.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e4e8c-108">属性</span><span class="sxs-lookup"><span data-stu-id="e4e8c-108">Properties</span></span>
-|<span data-ttu-id="e4e8c-109">属性</span><span class="sxs-lookup"><span data-stu-id="e4e8c-109">Property</span></span>|<span data-ttu-id="e4e8c-110">类型</span><span class="sxs-lookup"><span data-stu-id="e4e8c-110">Type</span></span>|<span data-ttu-id="e4e8c-111">说明</span><span class="sxs-lookup"><span data-stu-id="e4e8c-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f838b-107">属性</span><span class="sxs-lookup"><span data-stu-id="f838b-107">Properties</span></span>
+|<span data-ttu-id="f838b-108">属性</span><span class="sxs-lookup"><span data-stu-id="f838b-108">Property</span></span>|<span data-ttu-id="f838b-109">类型</span><span class="sxs-lookup"><span data-stu-id="f838b-109">Type</span></span>|<span data-ttu-id="f838b-110">说明</span><span class="sxs-lookup"><span data-stu-id="f838b-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e4e8c-112">integratedCircuitCardIdentifier</span><span class="sxs-lookup"><span data-stu-id="e4e8c-112">integratedCircuitCardIdentifier</span></span>|<span data-ttu-id="e4e8c-113">String</span><span class="sxs-lookup"><span data-stu-id="e4e8c-113">String</span></span>|<span data-ttu-id="e4e8c-114">由移动运营商提供，此集成电路卡标识符 (ICCID) 嵌入 SIM 激活代码。</span><span class="sxs-lookup"><span data-stu-id="e4e8c-114">The Integrated Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.</span></span>
-<span data-ttu-id="e4e8c-115">输入项必须匹配以下正则表达式: ^\[0-9\]{19}\[0-9\]?$。</span><span class="sxs-lookup"><span data-stu-id="e4e8c-115">The input must match the following regular expression: '^\[0-9\]{19}\[0-9\]?$'.</span></span>|
-|<span data-ttu-id="e4e8c-116">matchingIdentifier</span><span class="sxs-lookup"><span data-stu-id="e4e8c-116">matchingIdentifier</span></span>|<span data-ttu-id="e4e8c-117">String</span><span class="sxs-lookup"><span data-stu-id="e4e8c-117">String</span></span>|<span data-ttu-id="e4e8c-118">GSMA 关联 SGP.22 RSP 技术规范 4.1 节中的规定 MatchingIdentifier (MatchingID)。</span><span class="sxs-lookup"><span data-stu-id="e4e8c-118">The MatchingIdentifier (MatchingID) as specified in the GSMA Association SGP.22 RSP Technical Specification section 4.1.</span></span>
-<span data-ttu-id="e4e8c-119">输入项必须匹配以下正则表达式: ^\[a-zA-Z0-9\-\]\* $。</span><span class="sxs-lookup"><span data-stu-id="e4e8c-119">The input must match the following regular expression: '^\[a-zA-Z0-9\-\]\*$'.</span></span>|
-|<span data-ttu-id="e4e8c-120">smdpPlusServerAddress</span><span class="sxs-lookup"><span data-stu-id="e4e8c-120">smdpPlusServerAddress</span></span>|<span data-ttu-id="e4e8c-121">String</span><span class="sxs-lookup"><span data-stu-id="e4e8c-121">String</span></span>|<span data-ttu-id="e4e8c-122">SM 的完全限定的域名-DP + GSM 关联 SPG.22 RSP 技术规范中指定的服务器。</span><span class="sxs-lookup"><span data-stu-id="e4e8c-122">The fully qualified domain name of the SM-DP+ server as specified in the GSM Association SPG .22 RSP Technical Specification.</span></span>
-<span data-ttu-id="e4e8c-123">输入项必须匹配以下正则表达式: ^ (\[a-zA-Z0-9\]+(-\[a-zA-Z0-9\]+) \*\.) +\[a-ZA-Z\]{2,}$。</span><span class="sxs-lookup"><span data-stu-id="e4e8c-123">The input must match the following regular expression: '^(\[a-zA-Z0-9\]+(-\[a-zA-Z0-9\]+)\*\.)+\[a-zA-Z\]{2,}$'.</span></span>|
+|<span data-ttu-id="f838b-111">integratedCircuitCardIdentifier</span><span class="sxs-lookup"><span data-stu-id="f838b-111">integratedCircuitCardIdentifier</span></span>|<span data-ttu-id="f838b-112">字符串</span><span class="sxs-lookup"><span data-stu-id="f838b-112">String</span></span>|<span data-ttu-id="f838b-113">由移动运营商提供的此嵌入的 SIM 激活代码的集成电路卡标识符 (ICCID)。</span><span class="sxs-lookup"><span data-stu-id="f838b-113">The Integrated Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.</span></span>
+<span data-ttu-id="f838b-114">输入必须与以下正则表达式匹配: "^\[0-9\]{19}\[0-9\]? $"。</span><span class="sxs-lookup"><span data-stu-id="f838b-114">The input must match the following regular expression: '^\[0-9\]{19}\[0-9\]?$'.</span></span>|
+|<span data-ttu-id="f838b-115">matchingIdentifier</span><span class="sxs-lookup"><span data-stu-id="f838b-115">matchingIdentifier</span></span>|<span data-ttu-id="f838b-116">字符串</span><span class="sxs-lookup"><span data-stu-id="f838b-116">String</span></span>|<span data-ttu-id="f838b-117">GSMA Association SGP RSP 技术规范部分中指定的 MatchingIdentifier (MatchingID) 4.1。</span><span class="sxs-lookup"><span data-stu-id="f838b-117">The MatchingIdentifier (MatchingID) as specified in the GSMA Association SGP.22 RSP Technical Specification section 4.1.</span></span>
+<span data-ttu-id="f838b-118">输入必须与以下正则表达式匹配: ' ^\[Z0-9\-\]\* $ '。</span><span class="sxs-lookup"><span data-stu-id="f838b-118">The input must match the following regular expression: '^\[a-zA-Z0-9\-\]\*$'.</span></span>|
+|<span data-ttu-id="f838b-119">smdpPlusServerAddress</span><span class="sxs-lookup"><span data-stu-id="f838b-119">smdpPlusServerAddress</span></span>|<span data-ttu-id="f838b-120">字符串</span><span class="sxs-lookup"><span data-stu-id="f838b-120">String</span></span>|<span data-ttu-id="f838b-121">在 GSM 关联 SPG .22 RSP 技术规范中指定的 SM + 服务器的完全限定域名。</span><span class="sxs-lookup"><span data-stu-id="f838b-121">The fully qualified domain name of the SM-DP+ server as specified in the GSM Association SPG .22 RSP Technical Specification.</span></span>
+<span data-ttu-id="f838b-122">输入必须与以下正则表达式匹配: "^ (\[Z0-9\]+ (\[-a-Z0-9\]+) \*\.) +\[-za-Z\]{2,}$"。</span><span class="sxs-lookup"><span data-stu-id="f838b-122">The input must match the following regular expression: '^(\[a-zA-Z0-9\]+(-\[a-zA-Z0-9\]+)\*\.)+\[a-zA-Z\]{2,}$'.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e4e8c-124">关系</span><span class="sxs-lookup"><span data-stu-id="e4e8c-124">Relationships</span></span>
-<span data-ttu-id="e4e8c-125">无</span><span class="sxs-lookup"><span data-stu-id="e4e8c-125">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f838b-123">关系</span><span class="sxs-lookup"><span data-stu-id="f838b-123">Relationships</span></span>
+<span data-ttu-id="f838b-124">无</span><span class="sxs-lookup"><span data-stu-id="f838b-124">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e4e8c-126">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e4e8c-126">JSON Representation</span></span>
-<span data-ttu-id="e4e8c-127">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e4e8c-127">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f838b-125">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f838b-125">JSON Representation</span></span>
+<span data-ttu-id="f838b-126">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f838b-126">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.embeddedSIMActivationCode"

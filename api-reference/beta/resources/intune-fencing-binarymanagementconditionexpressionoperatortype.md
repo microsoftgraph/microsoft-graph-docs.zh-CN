@@ -1,29 +1,29 @@
 ---
 title: binaryManagementConditionExpressionOperatorType 枚举类型
-description: 支持管理条件表达式二元运算符。
-localization_priority: Normal
+description: 支持的管理条件表达式的二元运算符。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05b195df95d6f7a85673a352edf090cea7f074aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 35f60b9ee321ef3cbd65cf77273a65e7705f666a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424292"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143804"
 ---
-# <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a><span data-ttu-id="43c9e-103">binaryManagementConditionExpressionOperatorType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="43c9e-103">binaryManagementConditionExpressionOperatorType enum type</span></span>
+# <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a><span data-ttu-id="6704f-103">binaryManagementConditionExpressionOperatorType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="6704f-103">binaryManagementConditionExpressionOperatorType enum type</span></span>
 
-> <span data-ttu-id="43c9e-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="43c9e-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="43c9e-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="43c9e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6704f-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="6704f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="43c9e-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="43c9e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6704f-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="6704f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="43c9e-107">支持管理条件表达式二元运算符。</span><span class="sxs-lookup"><span data-stu-id="43c9e-107">Supported binary operators for management condition expressions.</span></span>
+<span data-ttu-id="6704f-106">支持的管理条件表达式的二元运算符。</span><span class="sxs-lookup"><span data-stu-id="6704f-106">Supported binary operators for management condition expressions.</span></span>
 
-## <a name="members"></a><span data-ttu-id="43c9e-108">成员</span><span class="sxs-lookup"><span data-stu-id="43c9e-108">Members</span></span>
-|<span data-ttu-id="43c9e-109">成员</span><span class="sxs-lookup"><span data-stu-id="43c9e-109">Member</span></span>|<span data-ttu-id="43c9e-110">值</span><span class="sxs-lookup"><span data-stu-id="43c9e-110">Value</span></span>|<span data-ttu-id="43c9e-111">说明</span><span class="sxs-lookup"><span data-stu-id="43c9e-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="6704f-107">成员</span><span class="sxs-lookup"><span data-stu-id="6704f-107">Members</span></span>
+|<span data-ttu-id="6704f-108">成员</span><span class="sxs-lookup"><span data-stu-id="6704f-108">Member</span></span>|<span data-ttu-id="6704f-109">值</span><span class="sxs-lookup"><span data-stu-id="6704f-109">Value</span></span>|<span data-ttu-id="6704f-110">说明</span><span class="sxs-lookup"><span data-stu-id="6704f-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="43c9e-112">或</span><span class="sxs-lookup"><span data-stu-id="43c9e-112">or</span></span>|<span data-ttu-id="43c9e-113">0</span><span class="sxs-lookup"><span data-stu-id="43c9e-113">0</span></span>|<span data-ttu-id="43c9e-114">计算一操作数为 true，当且仅当一个或多个操作数为 true。</span><span class="sxs-lookup"><span data-stu-id="43c9e-114">Evaluates a set of operands as true if and only if one or more of its operands is true.</span></span>|
-|<span data-ttu-id="43c9e-115">和</span><span class="sxs-lookup"><span data-stu-id="43c9e-115">and</span></span>|<span data-ttu-id="43c9e-116">1</span><span class="sxs-lookup"><span data-stu-id="43c9e-116">1</span></span>|<span data-ttu-id="43c9e-117">当且仅当所有的操作数，则，计算一操作数为 true。</span><span class="sxs-lookup"><span data-stu-id="43c9e-117">Evaluates a set of operands as true if and only if all of its operands are true.</span></span>|
+|<span data-ttu-id="6704f-111">或</span><span class="sxs-lookup"><span data-stu-id="6704f-111">or</span></span>|<span data-ttu-id="6704f-112">0</span><span class="sxs-lookup"><span data-stu-id="6704f-112">0</span></span>|<span data-ttu-id="6704f-113">当且仅当一个或多个操作数为 true 时, 将一组操作数评估为 true。</span><span class="sxs-lookup"><span data-stu-id="6704f-113">Evaluates a set of operands as true if and only if one or more of its operands is true.</span></span>|
+|<span data-ttu-id="6704f-114">和</span><span class="sxs-lookup"><span data-stu-id="6704f-114">and</span></span>|<span data-ttu-id="6704f-115">1</span><span class="sxs-lookup"><span data-stu-id="6704f-115">1</span></span>|<span data-ttu-id="6704f-116">当且仅当其所有操作数均为 true 时, 将一组操作数评估为 true。</span><span class="sxs-lookup"><span data-stu-id="6704f-116">Evaluates a set of operands as true if and only if all of its operands are true.</span></span>|
 
 
 

@@ -1,32 +1,32 @@
 ---
 title: appLockerApplicationControlType 枚举类型
 description: AppLocker 应用程序控件类型的可能值
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3bc89620a6dd13a65cfe40f37ba2f775e6a9c83
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 22d108dd3bad90341031d1e965948a9daa59efa1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425720"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141354"
 ---
-# <a name="applockerapplicationcontroltype-enum-type"></a><span data-ttu-id="0f5d6-103">appLockerApplicationControlType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="0f5d6-103">appLockerApplicationControlType enum type</span></span>
+# <a name="applockerapplicationcontroltype-enum-type"></a><span data-ttu-id="3411f-103">appLockerApplicationControlType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="3411f-103">appLockerApplicationControlType enum type</span></span>
 
-> <span data-ttu-id="0f5d6-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="0f5d6-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0f5d6-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="0f5d6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3411f-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="3411f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0f5d6-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0f5d6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3411f-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3411f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0f5d6-107">AppLocker 应用程序控件类型的可能值</span><span class="sxs-lookup"><span data-stu-id="0f5d6-107">Possible values of AppLocker Application Control Types</span></span>
+<span data-ttu-id="3411f-106">AppLocker 应用程序控件类型的可能值</span><span class="sxs-lookup"><span data-stu-id="3411f-106">Possible values of AppLocker Application Control Types</span></span>
 
-## <a name="members"></a><span data-ttu-id="0f5d6-108">成员</span><span class="sxs-lookup"><span data-stu-id="0f5d6-108">Members</span></span>
-|<span data-ttu-id="0f5d6-109">成员</span><span class="sxs-lookup"><span data-stu-id="0f5d6-109">Member</span></span>|<span data-ttu-id="0f5d6-110">值</span><span class="sxs-lookup"><span data-stu-id="0f5d6-110">Value</span></span>|<span data-ttu-id="0f5d6-111">说明</span><span class="sxs-lookup"><span data-stu-id="0f5d6-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="3411f-107">成员</span><span class="sxs-lookup"><span data-stu-id="3411f-107">Members</span></span>
+|<span data-ttu-id="3411f-108">成员</span><span class="sxs-lookup"><span data-stu-id="3411f-108">Member</span></span>|<span data-ttu-id="3411f-109">值</span><span class="sxs-lookup"><span data-stu-id="3411f-109">Value</span></span>|<span data-ttu-id="3411f-110">说明</span><span class="sxs-lookup"><span data-stu-id="3411f-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0f5d6-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="0f5d6-112">notConfigured</span></span>|<span data-ttu-id="0f5d6-113">0</span><span class="sxs-lookup"><span data-stu-id="0f5d6-113">0</span></span>|<span data-ttu-id="0f5d6-114">设备默认值，未选择的应用程序控制类型。</span><span class="sxs-lookup"><span data-stu-id="0f5d6-114">Device default value, no Application Control type selected.</span></span>|
-|<span data-ttu-id="0f5d6-115">enforceComponentsAndStoreApps</span><span class="sxs-lookup"><span data-stu-id="0f5d6-115">enforceComponentsAndStoreApps</span></span>|<span data-ttu-id="0f5d6-116">1</span><span class="sxs-lookup"><span data-stu-id="0f5d6-116">1</span></span>|<span data-ttu-id="0f5d6-117">强制实施 Windows 组件和 store 应用程序。</span><span class="sxs-lookup"><span data-stu-id="0f5d6-117">Enforce Windows component and store apps.</span></span>|
-|<span data-ttu-id="0f5d6-118">auditComponentsAndStoreApps</span><span class="sxs-lookup"><span data-stu-id="0f5d6-118">auditComponentsAndStoreApps</span></span>|<span data-ttu-id="0f5d6-119">2</span><span class="sxs-lookup"><span data-stu-id="0f5d6-119">2</span></span>|<span data-ttu-id="0f5d6-120">审核 Windows 组件和 store 应用程序。</span><span class="sxs-lookup"><span data-stu-id="0f5d6-120">Audit Windows component and store apps.</span></span>|
-|<span data-ttu-id="0f5d6-121">enforceComponentsStoreAppsAndSmartlocker</span><span class="sxs-lookup"><span data-stu-id="0f5d6-121">enforceComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="0f5d6-122">3</span><span class="sxs-lookup"><span data-stu-id="0f5d6-122">3</span></span>|<span data-ttu-id="0f5d6-123">强制实施 Windows 组件、 存储应用程序和智能锁定者。</span><span class="sxs-lookup"><span data-stu-id="0f5d6-123">Enforce Windows components, store apps and smart locker.</span></span>|
-|<span data-ttu-id="0f5d6-124">auditComponentsStoreAppsAndSmartlocker</span><span class="sxs-lookup"><span data-stu-id="0f5d6-124">auditComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="0f5d6-125">4</span><span class="sxs-lookup"><span data-stu-id="0f5d6-125">4</span></span>|<span data-ttu-id="0f5d6-126">审核 Windows 组件，存储应用程序和智能锁定者。</span><span class="sxs-lookup"><span data-stu-id="0f5d6-126">Audit Windows components, store apps and smart locker.</span></span>|
+|<span data-ttu-id="3411f-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="3411f-111">notConfigured</span></span>|<span data-ttu-id="3411f-112">0</span><span class="sxs-lookup"><span data-stu-id="3411f-112">0</span></span>|<span data-ttu-id="3411f-113">设备默认值, 未选择应用程序控件类型。</span><span class="sxs-lookup"><span data-stu-id="3411f-113">Device default value, no Application Control type selected.</span></span>|
+|<span data-ttu-id="3411f-114">enforceComponentsAndStoreApps</span><span class="sxs-lookup"><span data-stu-id="3411f-114">enforceComponentsAndStoreApps</span></span>|<span data-ttu-id="3411f-115">1</span><span class="sxs-lookup"><span data-stu-id="3411f-115">1</span></span>|<span data-ttu-id="3411f-116">强制实施 Windows 组件和应用商店应用。</span><span class="sxs-lookup"><span data-stu-id="3411f-116">Enforce Windows component and store apps.</span></span>|
+|<span data-ttu-id="3411f-117">auditComponentsAndStoreApps</span><span class="sxs-lookup"><span data-stu-id="3411f-117">auditComponentsAndStoreApps</span></span>|<span data-ttu-id="3411f-118">双面</span><span class="sxs-lookup"><span data-stu-id="3411f-118">2</span></span>|<span data-ttu-id="3411f-119">审核 Windows 组件和存储应用程序。</span><span class="sxs-lookup"><span data-stu-id="3411f-119">Audit Windows component and store apps.</span></span>|
+|<span data-ttu-id="3411f-120">enforceComponentsStoreAppsAndSmartlocker</span><span class="sxs-lookup"><span data-stu-id="3411f-120">enforceComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="3411f-121">第三章</span><span class="sxs-lookup"><span data-stu-id="3411f-121">3</span></span>|<span data-ttu-id="3411f-122">强制实施 Windows 组件、存储应用和智能保险箱。</span><span class="sxs-lookup"><span data-stu-id="3411f-122">Enforce Windows components, store apps and smart locker.</span></span>|
+|<span data-ttu-id="3411f-123">auditComponentsStoreAppsAndSmartlocker</span><span class="sxs-lookup"><span data-stu-id="3411f-123">auditComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="3411f-124">4</span><span class="sxs-lookup"><span data-stu-id="3411f-124">4</span></span>|<span data-ttu-id="3411f-125">审核 Windows 组件、存储应用和智能保险箱。</span><span class="sxs-lookup"><span data-stu-id="3411f-125">Audit Windows components, store apps and smart locker.</span></span>|
 
 
 

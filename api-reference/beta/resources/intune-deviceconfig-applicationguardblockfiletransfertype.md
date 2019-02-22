@@ -1,32 +1,32 @@
 ---
 title: applicationGuardBlockFileTransferType 枚举类型
-description: ApplicationGuardBlockFileTransfer 的可能值
-localization_priority: Normal
+description: applicationGuardBlockFileTransfer 的可能值
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9997956d192686a5287e181b25bd5f98184299c5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 32b2d4ef3aabf8082074215825c8e3e08a44ba63
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396271"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142314"
 ---
-# <a name="applicationguardblockfiletransfertype-enum-type"></a><span data-ttu-id="cc4b6-103">applicationGuardBlockFileTransferType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="cc4b6-103">applicationGuardBlockFileTransferType enum type</span></span>
+# <a name="applicationguardblockfiletransfertype-enum-type"></a><span data-ttu-id="7df34-103">applicationGuardBlockFileTransferType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="7df34-103">applicationGuardBlockFileTransferType enum type</span></span>
 
-> <span data-ttu-id="cc4b6-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="cc4b6-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="cc4b6-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="cc4b6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7df34-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="7df34-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="cc4b6-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="cc4b6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7df34-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="7df34-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cc4b6-107">ApplicationGuardBlockFileTransfer 的可能值</span><span class="sxs-lookup"><span data-stu-id="cc4b6-107">Possible values for applicationGuardBlockFileTransfer</span></span>
+<span data-ttu-id="7df34-106">applicationGuardBlockFileTransfer 的可能值</span><span class="sxs-lookup"><span data-stu-id="7df34-106">Possible values for applicationGuardBlockFileTransfer</span></span>
 
-## <a name="members"></a><span data-ttu-id="cc4b6-108">成员</span><span class="sxs-lookup"><span data-stu-id="cc4b6-108">Members</span></span>
-|<span data-ttu-id="cc4b6-109">成员</span><span class="sxs-lookup"><span data-stu-id="cc4b6-109">Member</span></span>|<span data-ttu-id="cc4b6-110">值</span><span class="sxs-lookup"><span data-stu-id="cc4b6-110">Value</span></span>|<span data-ttu-id="cc4b6-111">说明</span><span class="sxs-lookup"><span data-stu-id="cc4b6-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="7df34-107">成员</span><span class="sxs-lookup"><span data-stu-id="7df34-107">Members</span></span>
+|<span data-ttu-id="7df34-108">成员</span><span class="sxs-lookup"><span data-stu-id="7df34-108">Member</span></span>|<span data-ttu-id="7df34-109">值</span><span class="sxs-lookup"><span data-stu-id="7df34-109">Value</span></span>|<span data-ttu-id="7df34-110">说明</span><span class="sxs-lookup"><span data-stu-id="7df34-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cc4b6-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="cc4b6-112">notConfigured</span></span>|<span data-ttu-id="cc4b6-113">0</span><span class="sxs-lookup"><span data-stu-id="cc4b6-113">0</span></span>|<span data-ttu-id="cc4b6-114">未配置</span><span class="sxs-lookup"><span data-stu-id="cc4b6-114">Not Configured</span></span>|
-|<span data-ttu-id="cc4b6-115">blockImageAndTextFile</span><span class="sxs-lookup"><span data-stu-id="cc4b6-115">blockImageAndTextFile</span></span>|<span data-ttu-id="cc4b6-116">1</span><span class="sxs-lookup"><span data-stu-id="cc4b6-116">1</span></span>|<span data-ttu-id="cc4b6-117">阻止剪贴板将图像和文本文件传输</span><span class="sxs-lookup"><span data-stu-id="cc4b6-117">Block clipboard to transfer Image and Text file</span></span>|
-|<span data-ttu-id="cc4b6-118">blockImageFile</span><span class="sxs-lookup"><span data-stu-id="cc4b6-118">blockImageFile</span></span>|<span data-ttu-id="cc4b6-119">2</span><span class="sxs-lookup"><span data-stu-id="cc4b6-119">2</span></span>|<span data-ttu-id="cc4b6-120">阻止剪贴板将图像文件传输</span><span class="sxs-lookup"><span data-stu-id="cc4b6-120">Block clipboard to transfer Image file</span></span>|
-|<span data-ttu-id="cc4b6-121">blockNone</span><span class="sxs-lookup"><span data-stu-id="cc4b6-121">blockNone</span></span>|<span data-ttu-id="cc4b6-122">3</span><span class="sxs-lookup"><span data-stu-id="cc4b6-122">3</span></span>|<span data-ttu-id="cc4b6-123">都不文本文件或图像文件，阻止在转接</span><span class="sxs-lookup"><span data-stu-id="cc4b6-123">Neither of text file or image file is blocked from transferring</span></span>|
-|<span data-ttu-id="cc4b6-124">blockTextFile</span><span class="sxs-lookup"><span data-stu-id="cc4b6-124">blockTextFile</span></span>|<span data-ttu-id="cc4b6-125">4</span><span class="sxs-lookup"><span data-stu-id="cc4b6-125">4</span></span>|<span data-ttu-id="cc4b6-126">若要将文本文件传输的块剪贴板</span><span class="sxs-lookup"><span data-stu-id="cc4b6-126">Block clipboard to transfer Text file</span></span>|
+|<span data-ttu-id="7df34-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="7df34-111">notConfigured</span></span>|<span data-ttu-id="7df34-112">0</span><span class="sxs-lookup"><span data-stu-id="7df34-112">0</span></span>|<span data-ttu-id="7df34-113">未配置</span><span class="sxs-lookup"><span data-stu-id="7df34-113">Not Configured</span></span>|
+|<span data-ttu-id="7df34-114">blockImageAndTextFile</span><span class="sxs-lookup"><span data-stu-id="7df34-114">blockImageAndTextFile</span></span>|<span data-ttu-id="7df34-115">1</span><span class="sxs-lookup"><span data-stu-id="7df34-115">1</span></span>|<span data-ttu-id="7df34-116">阻止剪贴板传输图像和文本文件</span><span class="sxs-lookup"><span data-stu-id="7df34-116">Block clipboard to transfer Image and Text file</span></span>|
+|<span data-ttu-id="7df34-117">blockImageFile</span><span class="sxs-lookup"><span data-stu-id="7df34-117">blockImageFile</span></span>|<span data-ttu-id="7df34-118">双面</span><span class="sxs-lookup"><span data-stu-id="7df34-118">2</span></span>|<span data-ttu-id="7df34-119">阻止剪贴板传输图像文件</span><span class="sxs-lookup"><span data-stu-id="7df34-119">Block clipboard to transfer Image file</span></span>|
+|<span data-ttu-id="7df34-120">blockNone</span><span class="sxs-lookup"><span data-stu-id="7df34-120">blockNone</span></span>|<span data-ttu-id="7df34-121">第三章</span><span class="sxs-lookup"><span data-stu-id="7df34-121">3</span></span>|<span data-ttu-id="7df34-122">不会阻止文本文件或图像文件传输</span><span class="sxs-lookup"><span data-stu-id="7df34-122">Neither of text file or image file is blocked from transferring</span></span>|
+|<span data-ttu-id="7df34-123">blockTextFile</span><span class="sxs-lookup"><span data-stu-id="7df34-123">blockTextFile</span></span>|<span data-ttu-id="7df34-124">4</span><span class="sxs-lookup"><span data-stu-id="7df34-124">4</span></span>|<span data-ttu-id="7df34-125">阻止剪贴板传输文本文件</span><span class="sxs-lookup"><span data-stu-id="7df34-125">Block clipboard to transfer Text file</span></span>|
 
 
 

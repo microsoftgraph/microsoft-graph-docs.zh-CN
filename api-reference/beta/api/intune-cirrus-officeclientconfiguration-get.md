@@ -1,34 +1,34 @@
 ---
 title: 获取 officeClientConfiguration
-description: 获取特定的策略。
+description: 获取特定策略。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 364aa059d5b4c9ba1b1b82599327eb659eb4a58e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 669f545bfac29dfd7a5d34e4491c7c7212575596
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420491"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140647"
 ---
-# <a name="get-officeclientconfiguration"></a><span data-ttu-id="88580-103">获取 officeClientConfiguration</span><span class="sxs-lookup"><span data-stu-id="88580-103">Get officeClientConfiguration</span></span>
+# <a name="get-officeclientconfiguration"></a><span data-ttu-id="c3131-103">获取 officeClientConfiguration</span><span class="sxs-lookup"><span data-stu-id="c3131-103">Get officeClientConfiguration</span></span>
 
-> <span data-ttu-id="88580-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="88580-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="88580-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="88580-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c3131-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c3131-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="88580-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="88580-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c3131-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c3131-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="88580-107">获取特定的策略。</span><span class="sxs-lookup"><span data-stu-id="88580-107">Get a specific policy.</span></span>
+<span data-ttu-id="c3131-106">获取特定策略。</span><span class="sxs-lookup"><span data-stu-id="c3131-106">Get a specific policy.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="88580-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="88580-108">Prerequisites</span></span>
-<span data-ttu-id="88580-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="88580-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c3131-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="c3131-107">Prerequisites</span></span>
+<span data-ttu-id="c3131-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c3131-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="88580-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="88580-111">Permission type</span></span>|<span data-ttu-id="88580-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="88580-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c3131-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="c3131-110">Permission type</span></span>|<span data-ttu-id="c3131-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="c3131-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="88580-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="88580-113">Delegated (work or school account)</span></span>|<span data-ttu-id="88580-114">DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="88580-114">DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="88580-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="88580-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="88580-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="88580-116">Not supported.</span></span>|
-|<span data-ttu-id="88580-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="88580-117">Application</span></span>|<span data-ttu-id="88580-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="88580-118">Not supported.</span></span>|
+|<span data-ttu-id="c3131-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c3131-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c3131-113">devicemanagementconfiguration.readwrite.all 的所有 devicemanagementconfiguration.readwrite.all</span><span class="sxs-lookup"><span data-stu-id="c3131-113">DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="c3131-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c3131-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c3131-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c3131-115">Not supported.</span></span>|
+|<span data-ttu-id="c3131-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="c3131-116">Application</span></span>|<span data-ttu-id="c3131-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="c3131-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="88580-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="88580-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c3131-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c3131-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,30 +37,30 @@ ms.locfileid: "29420491"
 GET /officeConfiguration/clientConfigurations/{key}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="88580-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="88580-120">Optional query parameters</span></span>
-<span data-ttu-id="88580-121">此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="88580-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="88580-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="88580-122">Request headers</span></span>
-|<span data-ttu-id="88580-123">标头</span><span class="sxs-lookup"><span data-stu-id="88580-123">Header</span></span>|<span data-ttu-id="88580-124">值</span><span class="sxs-lookup"><span data-stu-id="88580-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="c3131-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c3131-119">Optional query parameters</span></span>
+<span data-ttu-id="c3131-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="c3131-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c3131-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="c3131-121">Request headers</span></span>
+|<span data-ttu-id="c3131-122">标头</span><span class="sxs-lookup"><span data-stu-id="c3131-122">Header</span></span>|<span data-ttu-id="c3131-123">值</span><span class="sxs-lookup"><span data-stu-id="c3131-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="88580-125">授权</span><span class="sxs-lookup"><span data-stu-id="88580-125">Authorization</span></span>|<span data-ttu-id="88580-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="88580-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="88580-127">Accept</span><span class="sxs-lookup"><span data-stu-id="88580-127">Accept</span></span>|<span data-ttu-id="88580-128">application/json</span><span class="sxs-lookup"><span data-stu-id="88580-128">application/json</span></span>|
+|<span data-ttu-id="c3131-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c3131-124">Authorization</span></span>|<span data-ttu-id="c3131-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="c3131-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c3131-126">Accept</span><span class="sxs-lookup"><span data-stu-id="c3131-126">Accept</span></span>|<span data-ttu-id="c3131-127">application/json</span><span class="sxs-lookup"><span data-stu-id="c3131-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="88580-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="88580-129">Request body</span></span>
-<span data-ttu-id="88580-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="88580-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c3131-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="c3131-128">Request body</span></span>
+<span data-ttu-id="c3131-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c3131-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="88580-131">响应</span><span class="sxs-lookup"><span data-stu-id="88580-131">Response</span></span>
-<span data-ttu-id="88580-132">如果成功，此方法返回`200 OK`响应正文中的响应代码和[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="88580-132">If successful, this method returns a `200 OK` response code and [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c3131-130">响应</span><span class="sxs-lookup"><span data-stu-id="c3131-130">Response</span></span>
+<span data-ttu-id="c3131-131">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="c3131-131">If successful, this method returns a `200 OK` response code and [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="88580-133">示例</span><span class="sxs-lookup"><span data-stu-id="88580-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c3131-132">示例</span><span class="sxs-lookup"><span data-stu-id="c3131-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="88580-134">请求</span><span class="sxs-lookup"><span data-stu-id="88580-134">Request</span></span>
-<span data-ttu-id="88580-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="88580-135">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c3131-133">请求</span><span class="sxs-lookup"><span data-stu-id="c3131-133">Request</span></span>
+<span data-ttu-id="c3131-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c3131-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{key}
 ```
 
-### <a name="response"></a><span data-ttu-id="88580-136">响应</span><span class="sxs-lookup"><span data-stu-id="88580-136">Response</span></span>
-<span data-ttu-id="88580-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="88580-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c3131-135">响应</span><span class="sxs-lookup"><span data-stu-id="c3131-135">Response</span></span>
+<span data-ttu-id="c3131-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c3131-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

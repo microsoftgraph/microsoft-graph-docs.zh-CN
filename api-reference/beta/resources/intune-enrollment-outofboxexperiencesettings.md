@@ -1,39 +1,39 @@
 ---
 title: outOfBoxExperienceSettings 资源类型
-description: 即开体验设置
-localization_priority: Normal
+description: "\"开箱即用体验\" 设置"
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d2b48fef00c9c3a291a0a2fdfe680b9f4e21030
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1148ba609a6533dcc6cedb9abd50e9191dceb5d2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404601"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145526"
 ---
-# <a name="outofboxexperiencesettings-resource-type"></a><span data-ttu-id="57d97-103">outOfBoxExperienceSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="57d97-103">outOfBoxExperienceSettings resource type</span></span>
+# <a name="outofboxexperiencesettings-resource-type"></a><span data-ttu-id="fa4c2-103">outOfBoxExperienceSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="fa4c2-103">outOfBoxExperienceSettings resource type</span></span>
 
-> <span data-ttu-id="57d97-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="57d97-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="57d97-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="57d97-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="fa4c2-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="fa4c2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="57d97-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="57d97-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="fa4c2-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="fa4c2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="57d97-107">即开体验设置</span><span class="sxs-lookup"><span data-stu-id="57d97-107">Out of box experience setting</span></span>
+<span data-ttu-id="fa4c2-106">"开箱即用体验" 设置</span><span class="sxs-lookup"><span data-stu-id="fa4c2-106">Out of box experience setting</span></span>
 
-## <a name="properties"></a><span data-ttu-id="57d97-108">属性</span><span class="sxs-lookup"><span data-stu-id="57d97-108">Properties</span></span>
-|<span data-ttu-id="57d97-109">属性</span><span class="sxs-lookup"><span data-stu-id="57d97-109">Property</span></span>|<span data-ttu-id="57d97-110">类型</span><span class="sxs-lookup"><span data-stu-id="57d97-110">Type</span></span>|<span data-ttu-id="57d97-111">说明</span><span class="sxs-lookup"><span data-stu-id="57d97-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="fa4c2-107">属性</span><span class="sxs-lookup"><span data-stu-id="fa4c2-107">Properties</span></span>
+|<span data-ttu-id="fa4c2-108">属性</span><span class="sxs-lookup"><span data-stu-id="fa4c2-108">Property</span></span>|<span data-ttu-id="fa4c2-109">类型</span><span class="sxs-lookup"><span data-stu-id="fa4c2-109">Type</span></span>|<span data-ttu-id="fa4c2-110">说明</span><span class="sxs-lookup"><span data-stu-id="fa4c2-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="57d97-112">hidePrivacySettings</span><span class="sxs-lookup"><span data-stu-id="57d97-112">hidePrivacySettings</span></span>|<span data-ttu-id="57d97-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="57d97-113">Boolean</span></span>|<span data-ttu-id="57d97-114">显示或隐藏给用户的隐私设置</span><span class="sxs-lookup"><span data-stu-id="57d97-114">Show or hide privacy settings to user</span></span>|
-|<span data-ttu-id="57d97-115">hideEULA</span><span class="sxs-lookup"><span data-stu-id="57d97-115">hideEULA</span></span>|<span data-ttu-id="57d97-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="57d97-116">Boolean</span></span>|<span data-ttu-id="57d97-117">显示或隐藏 EULA 给用户</span><span class="sxs-lookup"><span data-stu-id="57d97-117">Show or hide EULA to user</span></span>|
-|<span data-ttu-id="57d97-118">userType</span><span class="sxs-lookup"><span data-stu-id="57d97-118">userType</span></span>|[<span data-ttu-id="57d97-119">windowsUserType</span><span class="sxs-lookup"><span data-stu-id="57d97-119">windowsUserType</span></span>](../resources/intune-enrollment-windowsusertype.md)|<span data-ttu-id="57d97-120">用户的类型。</span><span class="sxs-lookup"><span data-stu-id="57d97-120">Type of user.</span></span> <span data-ttu-id="57d97-121">可取值为：`administrator`、`standard`。</span><span class="sxs-lookup"><span data-stu-id="57d97-121">Possible values are: `administrator`, `standard`.</span></span>|
-|<span data-ttu-id="57d97-122">deviceUsageType</span><span class="sxs-lookup"><span data-stu-id="57d97-122">deviceUsageType</span></span>|[<span data-ttu-id="57d97-123">windowsDeviceUsageType</span><span class="sxs-lookup"><span data-stu-id="57d97-123">windowsDeviceUsageType</span></span>](../resources/intune-enrollment-windowsdeviceusagetype.md)|<span data-ttu-id="57d97-124">AAD 联接身份验证类型。</span><span class="sxs-lookup"><span data-stu-id="57d97-124">AAD join authentication type.</span></span> <span data-ttu-id="57d97-125">可取值为：`singleUser`、`shared`。</span><span class="sxs-lookup"><span data-stu-id="57d97-125">Possible values are: `singleUser`, `shared`.</span></span>|
-|<span data-ttu-id="57d97-126">skipKeyboardSelectionPage</span><span class="sxs-lookup"><span data-stu-id="57d97-126">skipKeyboardSelectionPage</span></span>|<span data-ttu-id="57d97-127">Boolean</span><span class="sxs-lookup"><span data-stu-id="57d97-127">Boolean</span></span>|<span data-ttu-id="57d97-128">如果设置，然后跳过键盘选择页面如果语言和区域设置</span><span class="sxs-lookup"><span data-stu-id="57d97-128">If set, then skip the keyboard selection page if Language and Region are set</span></span>|
-|<span data-ttu-id="57d97-129">hideEscapeLink</span><span class="sxs-lookup"><span data-stu-id="57d97-129">hideEscapeLink</span></span>|<span data-ttu-id="57d97-130">Boolean</span><span class="sxs-lookup"><span data-stu-id="57d97-130">Boolean</span></span>|<span data-ttu-id="57d97-131">如果设置为 true，然后用户无法通过开始与不同的帐户，请在公司登录</span><span class="sxs-lookup"><span data-stu-id="57d97-131">If set to true, then the user can't start over with different account, on company sign-in</span></span>|
+|<span data-ttu-id="fa4c2-111">hidePrivacySettings</span><span class="sxs-lookup"><span data-stu-id="fa4c2-111">hidePrivacySettings</span></span>|<span data-ttu-id="fa4c2-112">布尔</span><span class="sxs-lookup"><span data-stu-id="fa4c2-112">Boolean</span></span>|<span data-ttu-id="fa4c2-113">向用户显示或隐藏隐私设置</span><span class="sxs-lookup"><span data-stu-id="fa4c2-113">Show or hide privacy settings to user</span></span>|
+|<span data-ttu-id="fa4c2-114">hideEULA</span><span class="sxs-lookup"><span data-stu-id="fa4c2-114">hideEULA</span></span>|<span data-ttu-id="fa4c2-115">布尔</span><span class="sxs-lookup"><span data-stu-id="fa4c2-115">Boolean</span></span>|<span data-ttu-id="fa4c2-116">向用户显示或隐藏 EULA</span><span class="sxs-lookup"><span data-stu-id="fa4c2-116">Show or hide EULA to user</span></span>|
+|<span data-ttu-id="fa4c2-117">userType</span><span class="sxs-lookup"><span data-stu-id="fa4c2-117">userType</span></span>|[<span data-ttu-id="fa4c2-118">windowsUserType</span><span class="sxs-lookup"><span data-stu-id="fa4c2-118">windowsUserType</span></span>](../resources/intune-enrollment-windowsusertype.md)|<span data-ttu-id="fa4c2-119">用户类型。</span><span class="sxs-lookup"><span data-stu-id="fa4c2-119">Type of user.</span></span> <span data-ttu-id="fa4c2-120">可取值为：`administrator`、`standard`。</span><span class="sxs-lookup"><span data-stu-id="fa4c2-120">Possible values are: `administrator`, `standard`.</span></span>|
+|<span data-ttu-id="fa4c2-121">deviceUsageType</span><span class="sxs-lookup"><span data-stu-id="fa4c2-121">deviceUsageType</span></span>|[<span data-ttu-id="fa4c2-122">windowsDeviceUsageType</span><span class="sxs-lookup"><span data-stu-id="fa4c2-122">windowsDeviceUsageType</span></span>](../resources/intune-enrollment-windowsdeviceusagetype.md)|<span data-ttu-id="fa4c2-123">AAD 联接身份验证类型。</span><span class="sxs-lookup"><span data-stu-id="fa4c2-123">AAD join authentication type.</span></span> <span data-ttu-id="fa4c2-124">可取值为：`singleUser`、`shared`。</span><span class="sxs-lookup"><span data-stu-id="fa4c2-124">Possible values are: `singleUser`, `shared`.</span></span>|
+|<span data-ttu-id="fa4c2-125">skipKeyboardSelectionPage</span><span class="sxs-lookup"><span data-stu-id="fa4c2-125">skipKeyboardSelectionPage</span></span>|<span data-ttu-id="fa4c2-126">布尔</span><span class="sxs-lookup"><span data-stu-id="fa4c2-126">Boolean</span></span>|<span data-ttu-id="fa4c2-127">如果设置了语言和区域, 则选择 "设置", 然后跳过 "键盘选择" 页面</span><span class="sxs-lookup"><span data-stu-id="fa4c2-127">If set, then skip the keyboard selection page if Language and Region are set</span></span>|
+|<span data-ttu-id="fa4c2-128">hideEscapeLink</span><span class="sxs-lookup"><span data-stu-id="fa4c2-128">hideEscapeLink</span></span>|<span data-ttu-id="fa4c2-129">布尔</span><span class="sxs-lookup"><span data-stu-id="fa4c2-129">Boolean</span></span>|<span data-ttu-id="fa4c2-130">如果设置为 true, 则用户无法在公司登录时使用不同帐户重新开始</span><span class="sxs-lookup"><span data-stu-id="fa4c2-130">If set to true, then the user can't start over with different account, on company sign-in</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="57d97-132">关系</span><span class="sxs-lookup"><span data-stu-id="57d97-132">Relationships</span></span>
-<span data-ttu-id="57d97-133">无</span><span class="sxs-lookup"><span data-stu-id="57d97-133">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="fa4c2-131">关系</span><span class="sxs-lookup"><span data-stu-id="fa4c2-131">Relationships</span></span>
+<span data-ttu-id="fa4c2-132">无</span><span class="sxs-lookup"><span data-stu-id="fa4c2-132">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="57d97-134">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="57d97-134">JSON Representation</span></span>
-<span data-ttu-id="57d97-135">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="57d97-135">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fa4c2-133">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="fa4c2-133">JSON Representation</span></span>
+<span data-ttu-id="fa4c2-134">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fa4c2-134">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.outOfBoxExperienceSettings"

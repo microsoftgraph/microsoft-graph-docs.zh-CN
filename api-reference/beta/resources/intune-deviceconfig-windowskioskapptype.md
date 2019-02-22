@@ -1,31 +1,31 @@
 ---
 title: windowsKioskAppType 枚举类型
-description: Windows 网亭应用程序的类型。
-localization_priority: Normal
+description: Windows 展台应用程序的类型。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 909a6a4aee9eec4c74a5f1c61f7514cbc429ed05
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d61e5c9096c9452a5bc52b8716bee1ed3d79fb4a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429526"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143377"
 ---
-# <a name="windowskioskapptype-enum-type"></a><span data-ttu-id="b5fb9-103">windowsKioskAppType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="b5fb9-103">windowsKioskAppType enum type</span></span>
+# <a name="windowskioskapptype-enum-type"></a><span data-ttu-id="98975-103">windowsKioskAppType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="98975-103">windowsKioskAppType enum type</span></span>
 
-> <span data-ttu-id="b5fb9-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="b5fb9-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b5fb9-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="b5fb9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="98975-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="98975-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b5fb9-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b5fb9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="98975-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="98975-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b5fb9-107">Windows 网亭应用程序的类型。</span><span class="sxs-lookup"><span data-stu-id="b5fb9-107">The type of Windows kiosk app.</span></span>
+<span data-ttu-id="98975-106">Windows 展台应用程序的类型。</span><span class="sxs-lookup"><span data-stu-id="98975-106">The type of Windows kiosk app.</span></span>
 
-## <a name="members"></a><span data-ttu-id="b5fb9-108">成员</span><span class="sxs-lookup"><span data-stu-id="b5fb9-108">Members</span></span>
-|<span data-ttu-id="b5fb9-109">成员</span><span class="sxs-lookup"><span data-stu-id="b5fb9-109">Member</span></span>|<span data-ttu-id="b5fb9-110">值</span><span class="sxs-lookup"><span data-stu-id="b5fb9-110">Value</span></span>|<span data-ttu-id="b5fb9-111">说明</span><span class="sxs-lookup"><span data-stu-id="b5fb9-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="98975-107">成员</span><span class="sxs-lookup"><span data-stu-id="98975-107">Members</span></span>
+|<span data-ttu-id="98975-108">成员</span><span class="sxs-lookup"><span data-stu-id="98975-108">Member</span></span>|<span data-ttu-id="98975-109">值</span><span class="sxs-lookup"><span data-stu-id="98975-109">Value</span></span>|<span data-ttu-id="98975-110">说明</span><span class="sxs-lookup"><span data-stu-id="98975-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b5fb9-112">unknown</span><span class="sxs-lookup"><span data-stu-id="b5fb9-112">unknown</span></span>|<span data-ttu-id="b5fb9-113">0</span><span class="sxs-lookup"><span data-stu-id="b5fb9-113">0</span></span>|<span data-ttu-id="b5fb9-114">未知。</span><span class="sxs-lookup"><span data-stu-id="b5fb9-114">Unknown.</span></span>|
-|<span data-ttu-id="b5fb9-115">存储</span><span class="sxs-lookup"><span data-stu-id="b5fb9-115">store</span></span>|<span data-ttu-id="b5fb9-116">1</span><span class="sxs-lookup"><span data-stu-id="b5fb9-116">1</span></span>|<span data-ttu-id="b5fb9-117">应用商店应用。</span><span class="sxs-lookup"><span data-stu-id="b5fb9-117">Store App.</span></span>|
-|<span data-ttu-id="b5fb9-118">桌面</span><span class="sxs-lookup"><span data-stu-id="b5fb9-118">desktop</span></span>|<span data-ttu-id="b5fb9-119">2</span><span class="sxs-lookup"><span data-stu-id="b5fb9-119">2</span></span>|<span data-ttu-id="b5fb9-120">桌面应用程序。</span><span class="sxs-lookup"><span data-stu-id="b5fb9-120">Desktop App.</span></span>|
-|<span data-ttu-id="b5fb9-121">aumId</span><span class="sxs-lookup"><span data-stu-id="b5fb9-121">aumId</span></span>|<span data-ttu-id="b5fb9-122">3</span><span class="sxs-lookup"><span data-stu-id="b5fb9-122">3</span></span>|<span data-ttu-id="b5fb9-123">通过 AUMID 输入。</span><span class="sxs-lookup"><span data-stu-id="b5fb9-123">Input by AUMID.</span></span>|
+|<span data-ttu-id="98975-111">unknown</span><span class="sxs-lookup"><span data-stu-id="98975-111">unknown</span></span>|<span data-ttu-id="98975-112">0</span><span class="sxs-lookup"><span data-stu-id="98975-112">0</span></span>|<span data-ttu-id="98975-113">陌生.</span><span class="sxs-lookup"><span data-stu-id="98975-113">Unknown.</span></span>|
+|<span data-ttu-id="98975-114">microsoft</span><span class="sxs-lookup"><span data-stu-id="98975-114">store</span></span>|<span data-ttu-id="98975-115">1</span><span class="sxs-lookup"><span data-stu-id="98975-115">1</span></span>|<span data-ttu-id="98975-116">应用商店应用。</span><span class="sxs-lookup"><span data-stu-id="98975-116">Store App.</span></span>|
+|<span data-ttu-id="98975-117">desktop</span><span class="sxs-lookup"><span data-stu-id="98975-117">desktop</span></span>|<span data-ttu-id="98975-118">双面</span><span class="sxs-lookup"><span data-stu-id="98975-118">2</span></span>|<span data-ttu-id="98975-119">桌面应用程序。</span><span class="sxs-lookup"><span data-stu-id="98975-119">Desktop App.</span></span>|
+|<span data-ttu-id="98975-120">aumId</span><span class="sxs-lookup"><span data-stu-id="98975-120">aumId</span></span>|<span data-ttu-id="98975-121">第三章</span><span class="sxs-lookup"><span data-stu-id="98975-121">3</span></span>|<span data-ttu-id="98975-122">由 AUMID 输入。</span><span class="sxs-lookup"><span data-stu-id="98975-122">Input by AUMID.</span></span>|
 
 
 

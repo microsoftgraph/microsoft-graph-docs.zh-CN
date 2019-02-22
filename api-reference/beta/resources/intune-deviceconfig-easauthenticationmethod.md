@@ -1,29 +1,29 @@
 ---
 title: easAuthenticationMethod 枚举类型
-description: Exchange Active Sync 身份验证方法。
-localization_priority: Normal
+description: Exchange 主动同步身份验证方法。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c113fda996ff9ece3ce2c0f192aa3fb6d6adc994
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e60c1168ad1c0e35628822fa6b111ea4959c90c9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406785"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145736"
 ---
-# <a name="easauthenticationmethod-enum-type"></a><span data-ttu-id="5fbdc-103">easAuthenticationMethod 枚举类型</span><span class="sxs-lookup"><span data-stu-id="5fbdc-103">easAuthenticationMethod enum type</span></span>
+# <a name="easauthenticationmethod-enum-type"></a><span data-ttu-id="26fd5-103">easAuthenticationMethod 枚举类型</span><span class="sxs-lookup"><span data-stu-id="26fd5-103">easAuthenticationMethod enum type</span></span>
 
-> <span data-ttu-id="5fbdc-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="5fbdc-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="5fbdc-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="5fbdc-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="26fd5-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="26fd5-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="5fbdc-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="5fbdc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="26fd5-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="26fd5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="5fbdc-107">Exchange Active Sync 身份验证方法。</span><span class="sxs-lookup"><span data-stu-id="5fbdc-107">Exchange Active Sync authentication method.</span></span>
+<span data-ttu-id="26fd5-106">Exchange 主动同步身份验证方法。</span><span class="sxs-lookup"><span data-stu-id="26fd5-106">Exchange Active Sync authentication method.</span></span>
 
-## <a name="members"></a><span data-ttu-id="5fbdc-108">成员</span><span class="sxs-lookup"><span data-stu-id="5fbdc-108">Members</span></span>
-|<span data-ttu-id="5fbdc-109">成员</span><span class="sxs-lookup"><span data-stu-id="5fbdc-109">Member</span></span>|<span data-ttu-id="5fbdc-110">值</span><span class="sxs-lookup"><span data-stu-id="5fbdc-110">Value</span></span>|<span data-ttu-id="5fbdc-111">说明</span><span class="sxs-lookup"><span data-stu-id="5fbdc-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="26fd5-107">成员</span><span class="sxs-lookup"><span data-stu-id="26fd5-107">Members</span></span>
+|<span data-ttu-id="26fd5-108">成员</span><span class="sxs-lookup"><span data-stu-id="26fd5-108">Member</span></span>|<span data-ttu-id="26fd5-109">值</span><span class="sxs-lookup"><span data-stu-id="26fd5-109">Value</span></span>|<span data-ttu-id="26fd5-110">说明</span><span class="sxs-lookup"><span data-stu-id="26fd5-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5fbdc-112">usernameAndPassword</span><span class="sxs-lookup"><span data-stu-id="5fbdc-112">usernameAndPassword</span></span>|<span data-ttu-id="5fbdc-113">0</span><span class="sxs-lookup"><span data-stu-id="5fbdc-113">0</span></span>|<span data-ttu-id="5fbdc-114">使用用户名和密码进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="5fbdc-114">Authenticate with a username and password.</span></span>|
-|<span data-ttu-id="5fbdc-115">certificate</span><span class="sxs-lookup"><span data-stu-id="5fbdc-115">certificate</span></span>|<span data-ttu-id="5fbdc-116">1</span><span class="sxs-lookup"><span data-stu-id="5fbdc-116">1</span></span>|<span data-ttu-id="5fbdc-117">使用证书进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="5fbdc-117">Authenticate with a certificate.</span></span>|
+|<span data-ttu-id="26fd5-111">usernameAndPassword</span><span class="sxs-lookup"><span data-stu-id="26fd5-111">usernameAndPassword</span></span>|<span data-ttu-id="26fd5-112">0</span><span class="sxs-lookup"><span data-stu-id="26fd5-112">0</span></span>|<span data-ttu-id="26fd5-113">使用用户名和密码进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="26fd5-113">Authenticate with a username and password.</span></span>|
+|<span data-ttu-id="26fd5-114">certificate</span><span class="sxs-lookup"><span data-stu-id="26fd5-114">certificate</span></span>|<span data-ttu-id="26fd5-115">1</span><span class="sxs-lookup"><span data-stu-id="26fd5-115">1</span></span>|<span data-ttu-id="26fd5-116">使用证书进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="26fd5-116">Authenticate with a certificate.</span></span>|
 
 
 
