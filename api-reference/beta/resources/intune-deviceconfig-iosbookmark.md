@@ -1,21 +1,21 @@
 ---
 title: iosBookmark 资源类型
 description: iOS URL 书签
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e95f3bfd40bdf5ca5782aa9233a020623d32d6a5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9de5d95cd14931da850ab9bdaf5c581fd17f09dc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395907"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174994"
 ---
 # <a name="iosbookmark-resource-type"></a>iosBookmark 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 iOS URL 书签
 
@@ -23,8 +23,8 @@ iOS URL 书签
 |属性|类型|说明|
 |:---|:---|:---|
 |url|String|允许访问的 URL|
-|bookmarkFolder|String|向其中应在 Safari 中添加书签的文件夹|
-|displayName|String|书签的显示名称|
+|bookmarkFolder|字符串|应在 Safari 中添加书签的文件夹|
+|displayName|字符串|书签的显示名称|
 
 ## <a name="relationships"></a>关系
 无

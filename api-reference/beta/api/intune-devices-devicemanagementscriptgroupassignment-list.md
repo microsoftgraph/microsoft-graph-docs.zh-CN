@@ -1,23 +1,23 @@
 ---
-title: 列表 deviceManagementScriptGroupAssignments
-description: 列出属性和 deviceManagementScriptGroupAssignment 对象之间的关系。
-localization_priority: Normal
+title: 列出 deviceManagementScriptGroupAssignments
+description: 列出 deviceManagementScriptGroupAssignment 对象的属性和关系。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b760d39bd6d836feeb6f89f52bc9e96e0f945b9c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 44cd62b0a0c4a2e7fb9f032679c615336b09489d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392820"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173932"
 ---
-# <a name="list-devicemanagementscriptgroupassignments"></a>列表 deviceManagementScriptGroupAssignments
+# <a name="list-devicemanagementscriptgroupassignments"></a>列出 deviceManagementScriptGroupAssignments
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出属性和[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)对象之间的关系。
+列出[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAs
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)对象集合。
 
 ## <a name="example"></a>示例
 

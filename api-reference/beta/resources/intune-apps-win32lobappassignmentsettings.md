@@ -1,23 +1,23 @@
 ---
 title: win32LobAppAssignmentSettings 资源类型
-description: 包含用于 Win32 LOB 的移动应用程序分配给组的属性。
-localization_priority: Normal
+description: 包含用于将 Win32 LOB 移动应用程序分配给组的属性。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 215b5c7086c2336f80bc0b812a108fbe2e2c1740
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e98688a10c126ee6597f8d244e4a605a2addeaee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429403"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172175"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>win32LobAppAssignmentSettings 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含用于 Win32 LOB 的移动应用程序分配给组的属性。
+包含用于将 Win32 LOB 移动应用程序分配给组的属性。
 
 
 继承自 [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)
@@ -25,7 +25,7 @@ ms.locfileid: "29429403"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|通知|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|通知状态此应用程序分配。 可取值为：`showAll`、`showReboot`、`hideAll`。|
+|通知|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|此应用程序分配的通知状态。 可取值为：`showAll`、`showReboot`、`hideAll`。|
 
 ## <a name="relationships"></a>Relationships
 无

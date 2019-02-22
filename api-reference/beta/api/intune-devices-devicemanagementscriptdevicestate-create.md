@@ -1,21 +1,21 @@
 ---
 title: 创建 deviceManagementScriptDeviceState
 description: 创建新的 deviceManagementScriptDeviceState 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fbf8d69f7d421407b239a9265f51156a97bd6aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 93bd605b64b652346fbcba03e0fc2952ad6dfaa4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412861"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175078"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>创建 deviceManagementScriptDeviceState
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)对象。
 
@@ -45,23 +45,23 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 deviceManagementScriptDeviceState 对象的 JSON 表示形式。
+在请求正文中, 提供 deviceManagementScriptDeviceState 对象的 JSON 表示形式。
 
-下表显示时创建 deviceManagementScriptDeviceState 所需的属性。
+下表显示创建 deviceManagementScriptDeviceState 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备管理脚本设备状态实体的键。|
-|runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本的最新运行状态。 可取值为：`unknown`、`success`、`fail`。|
-|resultMessage|String|执行输出的详细信息。|
-|lastStateUpdateDateTime|DateTimeOffset|最新时间设备管理脚本执行。|
-|errorCode|Int32|错误代码对应的设备管理脚本错误执行。|
-|errorDescription|String|设备管理脚本错误执行所对应的错误描述。|
+|id|字符串|设备管理脚本设备状态实体的密钥。|
+|runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本最新运行的状态。 可取值为：`unknown`、`success`、`fail`。|
+|resultMessage|字符串|执行输出的详细信息。|
+|lastStateUpdateDateTime|DateTimeOffset|最近执行设备管理脚本的时间。|
+|errorCode|Int32|与设备管理脚本的错误执行相对应的错误代码。|
+|errorDescription|String|与设备管理脚本的错误执行相对应的错误说明。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md)对象。
 
 ## <a name="example"></a>示例
 

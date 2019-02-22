@@ -1,21 +1,21 @@
 ---
 title: 创建 windowsAutopilotDeploymentProfileAssignment
 description: 创建新的 windowsAutopilotDeploymentProfileAssignment 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8cbed97d178b392d56e400f5c2c554ebe573ba41
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 30a6b1b64c4c434dfe364a49c6bf6fe080880a90
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395480"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175071"
 ---
 # <a name="create-windowsautopilotdeploymentprofileassignment"></a>创建 windowsAutopilotDeploymentProfileAssignment
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)对象。
 
@@ -44,19 +44,19 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 windowsAutopilotDeploymentProfileAssignment 对象的 JSON 表示形式。
+在请求正文中, 提供 windowsAutopilotDeploymentProfileAssignment 对象的 JSON 表示形式。
 
-下表显示时创建 windowsAutopilotDeploymentProfileAssignment 所需的属性。
+下表显示创建 windowsAutopilotDeploymentProfileAssignment 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|分配的键。|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|工作分配针对的 Windows 自动执行某些操作部署配置文件。|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Windows Autopilot 部署配置文件的分配目标。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)对象。
 
 ## <a name="example"></a>示例
 

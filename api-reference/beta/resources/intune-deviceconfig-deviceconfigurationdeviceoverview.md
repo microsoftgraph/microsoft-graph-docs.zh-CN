@@ -1,21 +1,21 @@
 ---
 title: deviceConfigurationDeviceOverview 资源类型
 description: 尚未记录
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b581b94e7933e39c012d47c499b0119b61fd41ce
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0cdbbcfde7bc0f1ecc2cf3bab00207adcb70bf40
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395760"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175295"
 ---
 # <a name="deviceconfigurationdeviceoverview-resource-type"></a>deviceConfigurationDeviceOverview 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -31,11 +31,11 @@ ms.locfileid: "29395760"
 |id|String|实体的键。|
 |pendingCount|Int32|挂起设备的数量|
 |notApplicableCount|Int32|不适用设备的数量|
-|notApplicablePlatformCount|Int32|由于不匹配平台和策略不适用设备数|
+|notApplicablePlatformCount|Int32|由于平台和策略不匹配而导致不适用的设备数量|
 |successCount|Int32|成功设备的数量|
 |errorCount|Int32|错误设备的数量|
 |failedCount|Int32|失败设备的数量|
-|conflictCount|Int32|存在冲突的设备数|
+|conflictCount|Int32|发生冲突的设备数|
 |lastUpdateDateTime|DateTimeOffset|上次更新时间|
 |configurationVersion|Int32|用于此概述的策略版本|
 

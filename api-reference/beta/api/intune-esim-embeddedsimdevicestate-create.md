@@ -1,21 +1,21 @@
 ---
 title: 创建 embeddedSIMDeviceState
 description: 创建新的 embeddedSIMDeviceState 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 451f40d7ad23787311e4a0b9ed3c046cbe34b830
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3d7ad1aa42f0cdeec9390d518491a02af346207b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413414"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175253"
 ---
 # <a name="create-embeddedsimdevicestate"></a>创建 embeddedSIMDeviceState
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象。
 
@@ -44,26 +44,26 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 embeddedSIMDeviceState 对象的 JSON 表示形式。
+在请求正文中, 提供 embeddedSIMDeviceState 对象的 JSON 表示形式。
 
-下表显示时创建 embeddedSIMDeviceState 所需的属性。
+下表显示创建 embeddedSIMDeviceState 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|嵌入 SIM 设备状态的唯一标识符。 系统生成时创建分配值。|
-|createdDateTime|DateTimeOffset|创建嵌入的 SIM 设备状态的时间。 生成的服务方。|
-|modifiedDateTime|DateTimeOffset|上次修改嵌入的 SIM 设备状态的时间。 更新服务端。|
-|lastSyncDateTime|DateTimeOffset|嵌入的 SIM 设备上次签入的时间。 更新服务端。|
-|universalIntegratedCircuitCardIdentifier|String|通用集成电路卡标识符 (UICCID) 标识到配置文件是要部署的硬件。|
-|deviceName|String|订阅已的设备名称设置如桌面 JOE|
-|userName|String|订阅已设置到例如 joe@contoso.com 用户名|
-|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于该设备配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
-|stateDetails|String|字符串设置状态的说明。|
+|id|字符串|嵌入的 SIM 卡设备状态的唯一标识符。 创建时分配的系统生成值。|
+|createdDateTime|DateTimeOffset|嵌入的 SIM 设备状态的创建时间。 生成的服务端。|
+|modifiedDateTime|DateTimeOffset|上次修改嵌入的 SIM 设备状态的时间。 更新了服务端。|
+|lastSyncDateTime|DateTimeOffset|嵌入的 SIM 设备上次签入的时间。 更新了服务端。|
+|universalIntegratedCircuitCardIdentifier|字符串|通用集成电路卡标识符 (UICCID), 用于标识要在其上部署配置文件的硬件。|
+|deviceName|String|订阅预配到的设备名称, 例如, 桌面 JOE|
+|userName|字符串|订阅预配到的用户名, 例如 joe@contoso.com|
+|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于设备的配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
+|stateDetails|字符串|设置状态的字符串说明。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象。
 
 ## <a name="example"></a>示例
 

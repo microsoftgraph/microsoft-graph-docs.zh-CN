@@ -1,39 +1,39 @@
 ---
-title: 管理枚举类型
-description: 管理 Microsoft Intune 中设备的状态。
-localization_priority: Normal
+title: managementState 枚举类型
+description: Microsoft Intune 中设备的管理状态。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8d0801949125f3b0cceb865ac1f8546195112e3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3a53b07f89ee551d3e559a42bbe23c5fba808f20
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420015"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174142"
 ---
-# <a name="managementstate-enum-type"></a>管理枚举类型
+# <a name="managementstate-enum-type"></a>managementState 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-管理 Microsoft Intune 中设备的状态。
+Microsoft Intune 中设备的管理状态。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|托管|0|在管理下的设备位于|
-|retirePending|1|废弃命令正在撤消设备上并且正在 unenrolling 从管理|
-|retireFailed|2|停用命令在设备上失败|
-|wipePending|3|擦除命令正在撤消设备上并且正在 unenrolling 从管理|
-|wipeFailed|4|擦除设备上失败的命令|
-|不正常|5|设备不正常。|
-|deletePending|6|删除命令正在撤消对设备 |
-|retireIssued|7|为设备发出了废弃命令|
-|wipeIssued|8|为设备发出了擦除命令|
-|wipeCanceled|9|此设备擦除命令已被取消|
-|retireCanceled|10|此设备废弃命令已被取消|
-|发现|11|发现但不是完全注册的设备。|
+|managed|0|设备正在管理中|
+|retirePending|1|设备和 unenrolling 从管理中的过程中发生停用命令|
+|retireFailed|双面|设备上的停用命令失败|
+|wipePending|第三章|设备和 unenrolling 中的 "擦除" 命令在管理过程中发生|
+|wipeFailed|4|设备上的擦除命令失败|
+|正常|5|设备运行不正常。|
+|deletePending|型|在设备上发生删除命令 |
+|retireIssued|步|为设备发出了停用命令|
+|wipeIssued|utf-8|已为设备发出擦除命令|
+|wipeCanceled|第|已取消此设备的擦除命令|
+|retireCanceled|10|已取消此设备的停用命令|
+|探索|11x17|设备已被发现, 但未完全注册。|
 
 
 

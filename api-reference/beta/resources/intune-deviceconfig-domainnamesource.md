@@ -1,29 +1,29 @@
 ---
 title: domainNameSource 枚举类型
-description: 域名源。
-localization_priority: Normal
+description: Domainname 源。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 933d0d61597ca315616bf94d62b2706725503799
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f88b2e9a99b423421aaec694eb62f66a2a827a87
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418391"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175288"
 ---
 # <a name="domainnamesource-enum-type"></a>domainNameSource 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-域名源。
+Domainname 源。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|fullDomainName|0|完整的域名。|
-|netBiosDomainName|1|net bios 域的名称。|
+|fullDomainName|0|完整的域名称。|
+|netBiosDomainName|1|net bios 域名称。|
 
 
 

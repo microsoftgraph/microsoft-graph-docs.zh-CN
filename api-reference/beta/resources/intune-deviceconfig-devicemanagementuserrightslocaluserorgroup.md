@@ -1,30 +1,30 @@
 ---
 title: deviceManagementUserRightsLocalUserOrGroup 资源类型
-description: 表示一个本地用户或一组用于设置的用户权限的信息。
-localization_priority: Normal
+description: 表示用于用户权限设置的本地用户或组的信息。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a2cc0ff5b9e054398e7878b7d99619b59d109a4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 68c514635540bcf12db27e8a9ca816573293d3ad
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422059"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174858"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-表示一个本地用户或一组用于设置的用户权限的信息。
+表示用于用户权限设置的本地用户或组的信息。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|String|此本地用户或组的名称。|
-|说明|String|此本地用户或组的管理员的说明。|
-|securityIdentifier|String|此本地用户或组的安全标识符 (例如 * 1-5-32-544)。|
+|name|字符串|此本地用户或组的名称。|
+|说明|字符串|管理员对此本地用户或组的说明。|
+|securityIdentifier|字符串|此本地用户或组的安全标识符 (例如 * S-1-5-32-544)。|
 
 ## <a name="relationships"></a>关系
 无

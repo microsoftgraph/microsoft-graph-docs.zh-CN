@@ -4,20 +4,20 @@ description: 然后可将这些类别应用于 Intune Azure 控制台中的设�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b7470f6cf0193474bfaff4f7444ed3df1d9453a5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 75fb11ef3b734e6d5d0490be1abc3c5399433a70
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418860"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174550"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-设备类别提供了一种方式来组织您的设备。 使用设备类别，公司管理员可以定义对其公司有意义的唯一类别。然后可将这些类别应用于 Intune Azure 控制台中的设备，或在用户注册设备时供他们选择。 可以根据设备类别筛选报告并创建动态 Azure Active Directory 设备组。
+设备类别提供了一种组织设备的方法。 使用设备类别, 公司管理员可以定义对其公司有意义的独特类别。然后可将这些类别应用于 Intune Azure 控制台中的设备，或在用户注册设备时供他们选择。 可以根据设备类别筛选报告并创建动态 Azure Active Directory 设备组。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -32,7 +32,7 @@ ms.locfileid: "29418860"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备类别的唯一标识符。 只读。|
-|**入职培训**|
+|**载入**|
 |displayName|String|设备类别的显示名称。|
 |description|String|设备类别的说明（可选）。|
 

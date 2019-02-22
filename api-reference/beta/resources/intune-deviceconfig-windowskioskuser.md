@@ -1,23 +1,23 @@
 ---
 title: windowsKioskUser 资源类型
-description: 用于标识为网亭配置的帐户信息用户基类
-localization_priority: Normal
+description: 用于标识展台配置的帐户信息的用户基类
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 974b89d27a2523efd937c059798b81bce9871758
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b5f71f9ce3478e2c5a7c7347f608d533c15e392c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29397489"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172231"
 ---
 # <a name="windowskioskuser-resource-type"></a>windowsKioskUser 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用于标识为网亭配置的帐户信息用户基类
+用于标识展台配置的帐户信息的用户基类
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
