@@ -1,35 +1,35 @@
 ---
 title: androidPermissionAction 资源类型
-description: 请求的权限时，应采取 Android 应用程序权限和 Android 的操作之间的映射。
-localization_priority: Normal
+description: 在请求该权限时, android 应用程序权限和适用于 android 的操作之间的映射应采取的操作。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62355c3427083df09963e316f3b6b3c104a8662f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e00bb351f2eff093dee21cb393ba622bc5e29ea9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425629"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161570"
 ---
-# <a name="androidpermissionaction-resource-type"></a><span data-ttu-id="bb1fe-103">androidPermissionAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="bb1fe-103">androidPermissionAction resource type</span></span>
+# <a name="androidpermissionaction-resource-type"></a><span data-ttu-id="5779b-103">androidPermissionAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="5779b-103">androidPermissionAction resource type</span></span>
 
-> <span data-ttu-id="bb1fe-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="bb1fe-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="bb1fe-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="bb1fe-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5779b-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="5779b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="bb1fe-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="bb1fe-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5779b-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="5779b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bb1fe-107">请求的权限时，应采取 Android 应用程序权限和 Android 的操作之间的映射。</span><span class="sxs-lookup"><span data-stu-id="bb1fe-107">Mapping between an Android app permission and the action Android should take when that permission is requested.</span></span>
+<span data-ttu-id="5779b-106">在请求该权限时, android 应用程序权限和适用于 android 的操作之间的映射应采取的操作。</span><span class="sxs-lookup"><span data-stu-id="5779b-106">Mapping between an Android app permission and the action Android should take when that permission is requested.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="bb1fe-108">属性</span><span class="sxs-lookup"><span data-stu-id="bb1fe-108">Properties</span></span>
-|<span data-ttu-id="bb1fe-109">属性</span><span class="sxs-lookup"><span data-stu-id="bb1fe-109">Property</span></span>|<span data-ttu-id="bb1fe-110">类型</span><span class="sxs-lookup"><span data-stu-id="bb1fe-110">Type</span></span>|<span data-ttu-id="bb1fe-111">说明</span><span class="sxs-lookup"><span data-stu-id="bb1fe-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5779b-107">属性</span><span class="sxs-lookup"><span data-stu-id="5779b-107">Properties</span></span>
+|<span data-ttu-id="5779b-108">属性</span><span class="sxs-lookup"><span data-stu-id="5779b-108">Property</span></span>|<span data-ttu-id="5779b-109">类型</span><span class="sxs-lookup"><span data-stu-id="5779b-109">Type</span></span>|<span data-ttu-id="5779b-110">说明</span><span class="sxs-lookup"><span data-stu-id="5779b-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bb1fe-112">权限</span><span class="sxs-lookup"><span data-stu-id="bb1fe-112">permission</span></span>|<span data-ttu-id="bb1fe-113">String</span><span class="sxs-lookup"><span data-stu-id="bb1fe-113">String</span></span>|<span data-ttu-id="bb1fe-114">正式 Android 文档中定义的 android 权限字符串。</span><span class="sxs-lookup"><span data-stu-id="bb1fe-114">Android permission string, defined in the official Android documentation.</span></span>  <span data-ttu-id="bb1fe-115">示例 android.permission.READ_CONTACTS。</span><span class="sxs-lookup"><span data-stu-id="bb1fe-115">Example 'android.permission.READ_CONTACTS'.</span></span>|
-|<span data-ttu-id="bb1fe-116">action</span><span class="sxs-lookup"><span data-stu-id="bb1fe-116">action</span></span>|[<span data-ttu-id="bb1fe-117">androidPermissionActionType</span><span class="sxs-lookup"><span data-stu-id="bb1fe-117">androidPermissionActionType</span></span>](../resources/intune-apps-androidpermissionactiontype.md)|<span data-ttu-id="bb1fe-118">Android 权限操作的类型。</span><span class="sxs-lookup"><span data-stu-id="bb1fe-118">Type of Android permission action.</span></span> <span data-ttu-id="bb1fe-119">可取值为：`prompt`、`autoGrant`、`autoDeny`。</span><span class="sxs-lookup"><span data-stu-id="bb1fe-119">Possible values are: `prompt`, `autoGrant`, `autoDeny`.</span></span>|
+|<span data-ttu-id="5779b-111">权限</span><span class="sxs-lookup"><span data-stu-id="5779b-111">permission</span></span>|<span data-ttu-id="5779b-112">字符串</span><span class="sxs-lookup"><span data-stu-id="5779b-112">String</span></span>|<span data-ttu-id="5779b-113">android 权限字符串, 在官方 android 文档中定义。</span><span class="sxs-lookup"><span data-stu-id="5779b-113">Android permission string, defined in the official Android documentation.</span></span>  <span data-ttu-id="5779b-114">示例 "READ_CONTACTS"。</span><span class="sxs-lookup"><span data-stu-id="5779b-114">Example 'android.permission.READ_CONTACTS'.</span></span>|
+|<span data-ttu-id="5779b-115">action</span><span class="sxs-lookup"><span data-stu-id="5779b-115">action</span></span>|[<span data-ttu-id="5779b-116">androidPermissionActionType</span><span class="sxs-lookup"><span data-stu-id="5779b-116">androidPermissionActionType</span></span>](../resources/intune-apps-androidpermissionactiontype.md)|<span data-ttu-id="5779b-117">Android 权限操作的类型。</span><span class="sxs-lookup"><span data-stu-id="5779b-117">Type of Android permission action.</span></span> <span data-ttu-id="5779b-118">可取值为：`prompt`、`autoGrant`、`autoDeny`。</span><span class="sxs-lookup"><span data-stu-id="5779b-118">Possible values are: `prompt`, `autoGrant`, `autoDeny`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="bb1fe-120">Relationships</span><span class="sxs-lookup"><span data-stu-id="bb1fe-120">Relationships</span></span>
-<span data-ttu-id="bb1fe-121">无</span><span class="sxs-lookup"><span data-stu-id="bb1fe-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="5779b-119">Relationships</span><span class="sxs-lookup"><span data-stu-id="5779b-119">Relationships</span></span>
+<span data-ttu-id="5779b-120">无</span><span class="sxs-lookup"><span data-stu-id="5779b-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="bb1fe-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="bb1fe-122">JSON Representation</span></span>
-<span data-ttu-id="bb1fe-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bb1fe-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5779b-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5779b-121">JSON Representation</span></span>
+<span data-ttu-id="5779b-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5779b-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidPermissionAction"

@@ -1,34 +1,34 @@
 ---
 title: 更新 windowsInformationProtectionWipeAction
 description: 更新 windowsInformationProtectionWipeAction 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f49b79d6ebd12d81332613c646623d68dc0b09a2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b198f1387cc3f0806cc6b76953948eca08d88cfc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429442"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159099"
 ---
-# <a name="update-windowsinformationprotectionwipeaction"></a><span data-ttu-id="a8e9e-103">更新 windowsInformationProtectionWipeAction</span><span class="sxs-lookup"><span data-stu-id="a8e9e-103">Update windowsInformationProtectionWipeAction</span></span>
+# <a name="update-windowsinformationprotectionwipeaction"></a><span data-ttu-id="8aaf6-103">更新 windowsInformationProtectionWipeAction</span><span class="sxs-lookup"><span data-stu-id="8aaf6-103">Update windowsInformationProtectionWipeAction</span></span>
 
-> <span data-ttu-id="a8e9e-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="a8e9e-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8aaf6-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a8e9e-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8aaf6-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a8e9e-107">更新[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-107">Update the properties of a [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) object.</span></span>
+<span data-ttu-id="8aaf6-106">更新[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-106">Update the properties of a [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a8e9e-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="a8e9e-108">Prerequisites</span></span>
-<span data-ttu-id="a8e9e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="8aaf6-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="8aaf6-107">Prerequisites</span></span>
+<span data-ttu-id="8aaf6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="a8e9e-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="a8e9e-111">Permission type</span></span>|<span data-ttu-id="a8e9e-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a8e9e-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="8aaf6-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="8aaf6-110">Permission type</span></span>|<span data-ttu-id="8aaf6-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="8aaf6-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a8e9e-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a8e9e-113">Delegated (work or school account)</span></span>|<span data-ttu-id="a8e9e-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8e9e-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="a8e9e-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a8e9e-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a8e9e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-116">Not supported.</span></span>|
-|<span data-ttu-id="a8e9e-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="a8e9e-117">Application</span></span>|<span data-ttu-id="a8e9e-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-118">Not supported.</span></span>|
+|<span data-ttu-id="8aaf6-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8aaf6-112">Delegated (work or school account)</span></span>|<span data-ttu-id="8aaf6-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8aaf6-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="8aaf6-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8aaf6-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8aaf6-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-115">Not supported.</span></span>|
+|<span data-ttu-id="8aaf6-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="8aaf6-116">Application</span></span>|<span data-ttu-id="8aaf6-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a8e9e-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a8e9e-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8aaf6-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8aaf6-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,39 +37,40 @@ ms.locfileid: "29429442"
 PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInformationProtectionWipeActionId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a8e9e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="a8e9e-120">Request headers</span></span>
-|<span data-ttu-id="a8e9e-121">标头</span><span class="sxs-lookup"><span data-stu-id="a8e9e-121">Header</span></span>|<span data-ttu-id="a8e9e-122">值</span><span class="sxs-lookup"><span data-stu-id="a8e9e-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8aaf6-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="8aaf6-119">Request headers</span></span>
+|<span data-ttu-id="8aaf6-120">标头</span><span class="sxs-lookup"><span data-stu-id="8aaf6-120">Header</span></span>|<span data-ttu-id="8aaf6-121">值</span><span class="sxs-lookup"><span data-stu-id="8aaf6-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a8e9e-123">授权</span><span class="sxs-lookup"><span data-stu-id="a8e9e-123">Authorization</span></span>|<span data-ttu-id="a8e9e-124">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a8e9e-125">Accept</span><span class="sxs-lookup"><span data-stu-id="a8e9e-125">Accept</span></span>|<span data-ttu-id="a8e9e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a8e9e-126">application/json</span></span>|
+|<span data-ttu-id="8aaf6-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="8aaf6-122">Authorization</span></span>|<span data-ttu-id="8aaf6-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8aaf6-124">Accept</span><span class="sxs-lookup"><span data-stu-id="8aaf6-124">Accept</span></span>|<span data-ttu-id="8aaf6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8aaf6-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a8e9e-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="a8e9e-127">Request body</span></span>
-<span data-ttu-id="a8e9e-128">在请求正文中，提供[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-128">In the request body, supply a JSON representation for the [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8aaf6-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8aaf6-126">Request body</span></span>
+<span data-ttu-id="8aaf6-127">在请求正文中, 提供[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-127">In the request body, supply a JSON representation for the [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) object.</span></span>
 
-<span data-ttu-id="a8e9e-129">下表显示时创建[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)所需的属性。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-129">The following table shows the properties that are required when you create the [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md).</span></span>
+<span data-ttu-id="8aaf6-128">下表显示创建[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-128">The following table shows the properties that are required when you create the [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md).</span></span>
 
-|<span data-ttu-id="a8e9e-130">属性</span><span class="sxs-lookup"><span data-stu-id="a8e9e-130">Property</span></span>|<span data-ttu-id="a8e9e-131">类型</span><span class="sxs-lookup"><span data-stu-id="a8e9e-131">Type</span></span>|<span data-ttu-id="a8e9e-132">说明</span><span class="sxs-lookup"><span data-stu-id="a8e9e-132">Description</span></span>|
+|<span data-ttu-id="8aaf6-129">属性</span><span class="sxs-lookup"><span data-stu-id="8aaf6-129">Property</span></span>|<span data-ttu-id="8aaf6-130">类型</span><span class="sxs-lookup"><span data-stu-id="8aaf6-130">Type</span></span>|<span data-ttu-id="8aaf6-131">说明</span><span class="sxs-lookup"><span data-stu-id="8aaf6-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a8e9e-133">id</span><span class="sxs-lookup"><span data-stu-id="a8e9e-133">id</span></span>|<span data-ttu-id="a8e9e-134">String</span><span class="sxs-lookup"><span data-stu-id="a8e9e-134">String</span></span>|<span data-ttu-id="a8e9e-135">实体的键。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-135">Key of the entity.</span></span>|
-|<span data-ttu-id="a8e9e-136">status</span><span class="sxs-lookup"><span data-stu-id="a8e9e-136">status</span></span>|[<span data-ttu-id="a8e9e-137">actionState</span><span class="sxs-lookup"><span data-stu-id="a8e9e-137">actionState</span></span>](../resources/intune-shared-actionstate.md)|<span data-ttu-id="a8e9e-138">擦除操作状态。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-138">Wipe action status.</span></span> <span data-ttu-id="a8e9e-139">可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-139">Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.</span></span>|
-|<span data-ttu-id="a8e9e-140">targetedUserId</span><span class="sxs-lookup"><span data-stu-id="a8e9e-140">targetedUserId</span></span>|<span data-ttu-id="a8e9e-141">String</span><span class="sxs-lookup"><span data-stu-id="a8e9e-141">String</span></span>|<span data-ttu-id="a8e9e-142">此擦除操作所针对的 UserId。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-142">The UserId being targeted by this wipe action.</span></span>|
-|<span data-ttu-id="a8e9e-143">targetedDeviceRegistrationId</span><span class="sxs-lookup"><span data-stu-id="a8e9e-143">targetedDeviceRegistrationId</span></span>|<span data-ttu-id="a8e9e-144">String</span><span class="sxs-lookup"><span data-stu-id="a8e9e-144">String</span></span>|<span data-ttu-id="a8e9e-145">此擦除操作所针对 DeviceRegistrationId。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-145">The DeviceRegistrationId being targeted by this wipe action.</span></span>|
-|<span data-ttu-id="a8e9e-146">targetedDeviceName</span><span class="sxs-lookup"><span data-stu-id="a8e9e-146">targetedDeviceName</span></span>|<span data-ttu-id="a8e9e-147">String</span><span class="sxs-lookup"><span data-stu-id="a8e9e-147">String</span></span>|<span data-ttu-id="a8e9e-148">目标的设备名称。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-148">Targeted device name.</span></span>|
-|<span data-ttu-id="a8e9e-149">targetedDeviceMacAddress</span><span class="sxs-lookup"><span data-stu-id="a8e9e-149">targetedDeviceMacAddress</span></span>|<span data-ttu-id="a8e9e-150">String</span><span class="sxs-lookup"><span data-stu-id="a8e9e-150">String</span></span>|<span data-ttu-id="a8e9e-151">目标的设备的 Mac 地址。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-151">Targeted device Mac address.</span></span>|
+|<span data-ttu-id="8aaf6-132">id</span><span class="sxs-lookup"><span data-stu-id="8aaf6-132">id</span></span>|<span data-ttu-id="8aaf6-133">String</span><span class="sxs-lookup"><span data-stu-id="8aaf6-133">String</span></span>|<span data-ttu-id="8aaf6-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-134">Key of the entity.</span></span>|
+|<span data-ttu-id="8aaf6-135">status</span><span class="sxs-lookup"><span data-stu-id="8aaf6-135">status</span></span>|[<span data-ttu-id="8aaf6-136">actionState</span><span class="sxs-lookup"><span data-stu-id="8aaf6-136">actionState</span></span>](../resources/intune-shared-actionstate.md)|<span data-ttu-id="8aaf6-137">擦除操作状态。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-137">Wipe action status.</span></span> <span data-ttu-id="8aaf6-138">可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-138">Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.</span></span>|
+|<span data-ttu-id="8aaf6-139">targetedUserId</span><span class="sxs-lookup"><span data-stu-id="8aaf6-139">targetedUserId</span></span>|<span data-ttu-id="8aaf6-140">字符串</span><span class="sxs-lookup"><span data-stu-id="8aaf6-140">String</span></span>|<span data-ttu-id="8aaf6-141">此擦除操作针对的用户 id。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-141">The UserId being targeted by this wipe action.</span></span>|
+|<span data-ttu-id="8aaf6-142">targetedDeviceRegistrationId</span><span class="sxs-lookup"><span data-stu-id="8aaf6-142">targetedDeviceRegistrationId</span></span>|<span data-ttu-id="8aaf6-143">字符串</span><span class="sxs-lookup"><span data-stu-id="8aaf6-143">String</span></span>|<span data-ttu-id="8aaf6-144">此擦除操作针对的 DeviceRegistrationId。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-144">The DeviceRegistrationId being targeted by this wipe action.</span></span>|
+|<span data-ttu-id="8aaf6-145">targetedDeviceName</span><span class="sxs-lookup"><span data-stu-id="8aaf6-145">targetedDeviceName</span></span>|<span data-ttu-id="8aaf6-146">字符串</span><span class="sxs-lookup"><span data-stu-id="8aaf6-146">String</span></span>|<span data-ttu-id="8aaf6-147">目标设备名称。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-147">Targeted device name.</span></span>|
+|<span data-ttu-id="8aaf6-148">targetedDeviceMacAddress</span><span class="sxs-lookup"><span data-stu-id="8aaf6-148">targetedDeviceMacAddress</span></span>|<span data-ttu-id="8aaf6-149">字符串</span><span class="sxs-lookup"><span data-stu-id="8aaf6-149">String</span></span>|<span data-ttu-id="8aaf6-150">目标设备 Mac 地址。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-150">Targeted device Mac address.</span></span>|
+|<span data-ttu-id="8aaf6-151">lastCheckInDateTime</span><span class="sxs-lookup"><span data-stu-id="8aaf6-151">lastCheckInDateTime</span></span>|<span data-ttu-id="8aaf6-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8aaf6-152">DateTimeOffset</span></span>|<span data-ttu-id="8aaf6-153">此擦除操作所针对的设备的上次签入时间。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-153">Last checkin time of the device that was targeted by this wipe action.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a8e9e-152">响应</span><span class="sxs-lookup"><span data-stu-id="a8e9e-152">Response</span></span>
-<span data-ttu-id="a8e9e-153">如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-153">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8aaf6-154">响应</span><span class="sxs-lookup"><span data-stu-id="8aaf6-154">Response</span></span>
+<span data-ttu-id="8aaf6-155">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md)对象。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-155">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a8e9e-154">示例</span><span class="sxs-lookup"><span data-stu-id="a8e9e-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8aaf6-156">示例</span><span class="sxs-lookup"><span data-stu-id="8aaf6-156">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a8e9e-155">请求</span><span class="sxs-lookup"><span data-stu-id="a8e9e-155">Request</span></span>
-<span data-ttu-id="a8e9e-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-156">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="8aaf6-157">请求</span><span class="sxs-lookup"><span data-stu-id="8aaf6-157">Request</span></span>
+<span data-ttu-id="8aaf6-158">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-158">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInformationProtectionWipeActionId}
 Content-type: application/json
-Content-length: 350
+Content-length: 412
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionWipeAction",
@@ -77,16 +78,17 @@ Content-length: 350
   "targetedUserId": "Targeted User Id value",
   "targetedDeviceRegistrationId": "Targeted Device Registration Id value",
   "targetedDeviceName": "Targeted Device Name value",
-  "targetedDeviceMacAddress": "Targeted Device Mac Address value"
+  "targetedDeviceMacAddress": "Targeted Device Mac Address value",
+  "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a8e9e-157">响应</span><span class="sxs-lookup"><span data-stu-id="a8e9e-157">Response</span></span>
-<span data-ttu-id="a8e9e-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a8e9e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8aaf6-159">响应</span><span class="sxs-lookup"><span data-stu-id="8aaf6-159">Response</span></span>
+<span data-ttu-id="8aaf6-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8aaf6-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 399
+Content-Length: 461
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionWipeAction",
@@ -95,7 +97,8 @@ Content-Length: 399
   "targetedUserId": "Targeted User Id value",
   "targetedDeviceRegistrationId": "Targeted Device Registration Id value",
   "targetedDeviceName": "Targeted Device Name value",
-  "targetedDeviceMacAddress": "Targeted Device Mac Address value"
+  "targetedDeviceMacAddress": "Targeted Device Mac Address value",
+  "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
 

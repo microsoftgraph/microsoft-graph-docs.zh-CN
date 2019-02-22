@@ -1,31 +1,31 @@
 ---
 title: defenderCloudBlockLevelType 枚举类型
 description: 云块级别的可能值
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b309184623cff19e44ee5afea311d46fa89210fb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cbf442a11335602c510a210d7bd805b2a76eb7df
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425909"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156922"
 ---
-# <a name="defendercloudblockleveltype-enum-type"></a><span data-ttu-id="b7b6c-103">defenderCloudBlockLevelType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="b7b6c-103">defenderCloudBlockLevelType enum type</span></span>
+# <a name="defendercloudblockleveltype-enum-type"></a><span data-ttu-id="b6cb2-103">defenderCloudBlockLevelType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="b6cb2-103">defenderCloudBlockLevelType enum type</span></span>
 
-> <span data-ttu-id="b7b6c-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="b7b6c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b7b6c-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="b7b6c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b6cb2-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="b6cb2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b7b6c-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b7b6c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b6cb2-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b6cb2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b7b6c-107">云块级别的可能值</span><span class="sxs-lookup"><span data-stu-id="b7b6c-107">Possible values of Cloud Block Level</span></span>
+<span data-ttu-id="b6cb2-106">云块级别的可能值</span><span class="sxs-lookup"><span data-stu-id="b6cb2-106">Possible values of Cloud Block Level</span></span>
 
-## <a name="members"></a><span data-ttu-id="b7b6c-108">成员</span><span class="sxs-lookup"><span data-stu-id="b7b6c-108">Members</span></span>
-|<span data-ttu-id="b7b6c-109">成员</span><span class="sxs-lookup"><span data-stu-id="b7b6c-109">Member</span></span>|<span data-ttu-id="b7b6c-110">值</span><span class="sxs-lookup"><span data-stu-id="b7b6c-110">Value</span></span>|<span data-ttu-id="b7b6c-111">说明</span><span class="sxs-lookup"><span data-stu-id="b7b6c-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="b6cb2-107">成员</span><span class="sxs-lookup"><span data-stu-id="b6cb2-107">Members</span></span>
+|<span data-ttu-id="b6cb2-108">成员</span><span class="sxs-lookup"><span data-stu-id="b6cb2-108">Member</span></span>|<span data-ttu-id="b6cb2-109">值</span><span class="sxs-lookup"><span data-stu-id="b6cb2-109">Value</span></span>|<span data-ttu-id="b6cb2-110">说明</span><span class="sxs-lookup"><span data-stu-id="b6cb2-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b7b6c-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="b7b6c-112">notConfigured</span></span>|<span data-ttu-id="b7b6c-113">0</span><span class="sxs-lookup"><span data-stu-id="b7b6c-113">0</span></span>|<span data-ttu-id="b7b6c-114">默认值，使用默认 Windows Defender 防病毒软件阻止级别，并提供强检测而不会提高检测的风险合法文件</span><span class="sxs-lookup"><span data-stu-id="b7b6c-114">Default value, uses the default Windows Defender Antivirus blocking level and provides strong detection without increasing the risk of detecting legitimate files</span></span>|
-|<span data-ttu-id="b7b6c-115">高</span><span class="sxs-lookup"><span data-stu-id="b7b6c-115">high</span></span>|<span data-ttu-id="b7b6c-116">1</span><span class="sxs-lookup"><span data-stu-id="b7b6c-116">1</span></span>|<span data-ttu-id="b7b6c-117">高适用检测强的级别。</span><span class="sxs-lookup"><span data-stu-id="b7b6c-117">High applies a strong level of detection.</span></span>|
-|<span data-ttu-id="b7b6c-118">highPlus</span><span class="sxs-lookup"><span data-stu-id="b7b6c-118">highPlus</span></span>|<span data-ttu-id="b7b6c-119">2</span><span class="sxs-lookup"><span data-stu-id="b7b6c-119">2</span></span>|<span data-ttu-id="b7b6c-120">高 + 使用的高级别和应用添加保护措施</span><span class="sxs-lookup"><span data-stu-id="b7b6c-120">High + uses the High level and applies addition protection measures</span></span>|
-|<span data-ttu-id="b7b6c-121">zeroTolerance</span><span class="sxs-lookup"><span data-stu-id="b7b6c-121">zeroTolerance</span></span>|<span data-ttu-id="b7b6c-122">3</span><span class="sxs-lookup"><span data-stu-id="b7b6c-122">3</span></span>|<span data-ttu-id="b7b6c-123">零公差阻止所有未知的可执行文件</span><span class="sxs-lookup"><span data-stu-id="b7b6c-123">Zero tolerance blocks all unknown executables</span></span>|
+|<span data-ttu-id="b6cb2-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="b6cb2-111">notConfigured</span></span>|<span data-ttu-id="b6cb2-112">0</span><span class="sxs-lookup"><span data-stu-id="b6cb2-112">0</span></span>|<span data-ttu-id="b6cb2-113">默认值是, 使用默认的 Windows Defender 防病毒阻止级别, 并提供强大的检测功能, 而不会增加检测合法文件的风险</span><span class="sxs-lookup"><span data-stu-id="b6cb2-113">Default value, uses the default Windows Defender Antivirus blocking level and provides strong detection without increasing the risk of detecting legitimate files</span></span>|
+|<span data-ttu-id="b6cb2-114">高效</span><span class="sxs-lookup"><span data-stu-id="b6cb2-114">high</span></span>|<span data-ttu-id="b6cb2-115">1</span><span class="sxs-lookup"><span data-stu-id="b6cb2-115">1</span></span>|<span data-ttu-id="b6cb2-116">High 适用于强级别的检测。</span><span class="sxs-lookup"><span data-stu-id="b6cb2-116">High applies a strong level of detection.</span></span>|
+|<span data-ttu-id="b6cb2-117">highPlus</span><span class="sxs-lookup"><span data-stu-id="b6cb2-117">highPlus</span></span>|<span data-ttu-id="b6cb2-118">双面</span><span class="sxs-lookup"><span data-stu-id="b6cb2-118">2</span></span>|<span data-ttu-id="b6cb2-119">高级别 + 使用高级别, 并应用附加保护措施</span><span class="sxs-lookup"><span data-stu-id="b6cb2-119">High + uses the High level and applies addition protection measures</span></span>|
+|<span data-ttu-id="b6cb2-120">zeroTolerance</span><span class="sxs-lookup"><span data-stu-id="b6cb2-120">zeroTolerance</span></span>|<span data-ttu-id="b6cb2-121">第三章</span><span class="sxs-lookup"><span data-stu-id="b6cb2-121">3</span></span>|<span data-ttu-id="b6cb2-122">零耐受性阻止所有未知可执行文件</span><span class="sxs-lookup"><span data-stu-id="b6cb2-122">Zero tolerance blocks all unknown executables</span></span>|
 
 
 
