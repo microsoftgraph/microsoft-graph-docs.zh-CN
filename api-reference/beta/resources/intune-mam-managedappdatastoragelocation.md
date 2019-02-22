@@ -1,30 +1,30 @@
 ---
 title: managedAppDataStorageLocation 枚举类型
-description: 托管的应用程序可以可能存储其数据的存储位置
-localization_priority: Normal
+description: 托管应用可能存储其数据的存储位置
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acb9c820670cdf0781de0be576152f25c2a131db
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cd1031027f1a2d7c21acff4781484be79f7183fb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395774"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148546"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>managedAppDataStorageLocation 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-托管的应用程序可以可能存储其数据的存储位置
+托管应用可能存储其数据的存储位置
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
 |oneDriveForBusiness|1|OneDrive for business|
-|sharePoint|2|SharePoint|
-|localStorage|6|在设备上的本地存储|
+|sharePoint|双面|SharePoint|
+|localStorage|型|设备上的本地存储|
 
 
 

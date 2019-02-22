@@ -1,29 +1,29 @@
 ---
 title: proxiedDomain 资源类型
-description: 介绍 Intune，支持多个工作流的 Microsoft Graph api proxiedDomain 资源。
+description: 代理域
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b13e880508c80a009eacb520452c66e7b733ad86
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.prod: Intune
+ms.openlocfilehash: 5edabc31761a3abd79a94bb700392923d2d54513
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421842"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151203"
 ---
 # <a name="proxieddomain-resource-type"></a>proxiedDomain 资源类型
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 代理域
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ipAddressOrFQDN|String|IP 地址或完全限定的域名 (FQDN)。|
-|代理|String|代理服务器 IP 地址或 FQDN。|
+|ipAddressOrFQDN|String|IP 地址或 FQDN|
+|代理|String|代理 IP 或 FQDN|
 
 ## <a name="relationships"></a>关系
 无
@@ -32,7 +32,6 @@ ms.locfileid: "29421842"
 下面是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.proxiedDomain"
 }
 -->
@@ -43,6 +42,7 @@ ms.locfileid: "29421842"
   "proxy": "String"
 }
 ```
+
 
 
 

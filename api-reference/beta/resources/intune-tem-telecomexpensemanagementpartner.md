@@ -1,21 +1,21 @@
 ---
 title: telecomExpenseManagementPartner 资源类型
 description: telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状态。 组织通过合作伙伴载入后，即可允许或禁止合作伙伴打开或关闭 TEM 功能。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e1d148366a9ff67b643bad37e6aef5ed67653d1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dac5531657a63b5f848ecfd9151d9964ccada598
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401850"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148137"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>telecomExpenseManagementPartner 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状态。 组织通过合作伙伴载入后，即可允许或禁止合作伙伴打开或关闭 TEM 功能。
 
@@ -31,11 +31,11 @@ telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|TEM 合作伙伴的唯一标识符。|
-|displayName|String|TEM 合作伙伴的显示名称。|
+|id|字符串|TEM 合作伙伴的唯一标识符。|
+|displayName|字符串|TEM 合作伙伴的显示名称。|
 |url|String|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
 |appAuthorized|Boolean|是否已授权合作伙伴的 AAD 应用访问 Intune。|
-|enabled|Boolean|当前是启用还是禁用了 Intune 的 TEM 服务连接。|
+|enabled|布尔值|当前是启用还是禁用了 Intune 的 TEM 服务连接。|
 |lastConnectionDateTime|DateTimeOffset|TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。|
 
 ## <a name="relationships"></a>关系

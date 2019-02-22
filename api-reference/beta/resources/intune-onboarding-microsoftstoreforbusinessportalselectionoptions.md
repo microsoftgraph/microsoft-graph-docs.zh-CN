@@ -1,30 +1,30 @@
 ---
 title: microsoftStoreForBusinessPortalSelectionOptions 枚举类型
-description: 到门户管理员将同步业务应用程序的可用 Microsoft 存储。 这是 Intune 管理控制台中可用。
-localization_priority: Normal
+description: 管理员同步使用 Microsoft Store for Business 应用的门户。 这在 Intune 管理控制台中可用。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 589a6058a7ff2c30a967192b90c700f30068ab3c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 47182d7282c57b3a00aade30bd3f64319ab34479
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419329"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147941"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>microsoftStoreForBusinessPortalSelectionOptions 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-到门户管理员将同步业务应用程序的可用 Microsoft 存储。 这是 Intune 管理控制台中可用。
+管理员同步使用 Microsoft Store for Business 应用的门户。 这在 Intune 管理控制台中可用。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|此选项不可用的帐户|
-|companyPortal|1|仅 Intune 的公司门户。|
-|privateStore|2|仅 MSFB 专用存储。|
+|无|0|此选项对帐户不可用|
+|companyPortal|1|仅限 Intune 公司门户。|
+|privateStore|双面|仅 MSFB 私人存储。|
 
 
 

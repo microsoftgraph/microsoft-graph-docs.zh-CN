@@ -1,21 +1,21 @@
 ---
 title: 更新 deviceConfigurationDeviceOverview
 description: 更新 deviceConfigurationDeviceOverview 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 180778580f7737141efa935a2dfe87b412b677e3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fcb04aaa007bcab0a625d3f8cfb437bbe71f4a89
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423375"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147178"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>更新 deviceConfigurationDeviceOverview
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md) 对象的属性。
 
@@ -48,7 +48,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -61,11 +61,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。|
 |pendingCount|Int32|挂起设备的数量|
 |notApplicableCount|Int32|不适用设备的数量|
-|notApplicablePlatformCount|Int32|由于不匹配平台和策略不适用设备数|
+|notApplicablePlatformCount|Int32|由于平台和策略不匹配而导致不适用的设备数量|
 |successCount|Int32|成功设备的数量|
 |errorCount|Int32|错误设备的数量|
 |failedCount|Int32|失败设备的数量|
-|conflictCount|Int32|存在冲突的设备数|
+|conflictCount|Int32|发生冲突的设备数|
 |lastUpdateDateTime|DateTimeOffset|上次更新时间|
 |configurationVersion|Int32|用于此概述的策略版本|
 

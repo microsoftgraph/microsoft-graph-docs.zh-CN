@@ -1,23 +1,23 @@
 ---
 title: setAndroidDeviceOwnerFullyManagedEnrollmentState 操作
-description: 将 AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled 设置为给定的值。
-localization_priority: Normal
+description: 将 AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled 设置为给定值。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 840c4a3781a993648abb77ad46f1967073c1b3e8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9a2517b59705ae8f46294b521aa5132c8bd8b1f4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429579"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148914"
 ---
 # <a name="setandroiddeviceownerfullymanagedenrollmentstate-action"></a>setAndroidDeviceOwnerFullyManagedEnrollmentState 操作
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-将 AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled 设置为给定的值。
+将 AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled 设置为给定值。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
@@ -40,7 +40,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/setAndroidDe
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -50,7 +50,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/setAndroidDe
 
 |属性|类型|说明|
 |:---|:---|:---|
-|已启用|Boolean|要设置为 AndroidDeviceOwnerFullyManagedEnrollmentEnabled 的值。|
+|已启用|布尔值|要将 AndroidDeviceOwnerFullyManagedEnrollmentEnabled 设置为的值。|
 
 
 

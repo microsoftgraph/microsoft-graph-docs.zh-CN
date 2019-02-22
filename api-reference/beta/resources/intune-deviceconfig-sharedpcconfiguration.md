@@ -1,21 +1,21 @@
 ---
 title: sharedPCConfiguration 资源类型
 description: 本主题提供由 sharedPCConfiguration 资源公开的已声明方法、属性和关系的说明。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 61d7c1214f629673f2b738d705c055b3020f0ed5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 69bae063082a49bb46b6bdc0e6e3364cbd2a83e5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415108"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152631"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>sharedPCConfiguration 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 本主题提供由 sharedPCConfiguration 资源公开的已声明方法、属性和关系的说明。
 
@@ -36,30 +36,25 @@ ms.locfileid: "29415108"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|指定在共享电脑上管理帐户的方式。 仅当 disableAccountManager 为 false 时适用。|
 |allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|指示允许在共享电脑上使用哪种类型的帐户。 可取值为：`notConfigured`、`guest`、`domain`。|
-|localStorage|[启用](../resources/intune-shared-enablement
-.md)|指定在共享电脑上是否允许本地存储。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|allowLocalStorage|Boolean|指定在共享电脑上是否允许本地存储。|
-|setAccountManager|[启用](../resources/intune-shared-enablement
-.md)|禁用共享电脑模式的帐户管理器。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|disableAccountManager|Boolean|禁用共享电脑模式的帐户管理器。|
-|setEduPolicies|[启用](../resources/intune-shared-enablement
-.md)|指定是否默认共享 PC 教育环境策略应启用/禁用/不配置。 对于 Windows 10 RS2 及更高版本，将应用此策略而不将 Enabled 设置为 true。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|localStorage|[启用](../resources/intune-shared-enablement.md)|指定在共享电脑上是否允许本地存储。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|allowLocalStorage|布尔|指定在共享电脑上是否允许本地存储。|
+|setAccountManager|[启用](../resources/intune-shared-enablement.md)|禁用共享电脑模式的帐户管理器。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|disableAccountManager|布尔|禁用共享电脑模式的帐户管理器。|
+|setEduPolicies|[启用](../resources/intune-shared-enablement.md)|指定是否应启用/禁用/禁用/禁用默认共享 PC 教育环境策略。 对于 Windows 10 RS2 及更高版本，将应用此策略而不将 Enabled 设置为 true。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |disableEduPolicies|Boolean|指定是否应禁用默认的共享电脑教育环境策略。 对于 Windows 10 RS2 及更高版本，将应用此策略而不将 Enabled 设置为 true。|
-|setPowerPolicies|[启用](../resources/intune-shared-enablement
-.md)|指定是否默认共享 PC 电源策略应启用/禁用。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|disablePowerPolicies|Boolean|指定是否应禁用默认的共享电脑电源策略。|
-|signInOnResume|[启用](../resources/intune-shared-enablement
-.md)|指定签名的要求中次设备从唤醒休眠模式。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|setPowerPolicies|[启用](../resources/intune-shared-enablement.md)|指定是否应启用/禁用默认的共享电脑电源策略。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|disablePowerPolicies|布尔|指定是否应禁用默认的共享电脑电源策略。|
+|signInOnResume|[启用](../resources/intune-shared-enablement.md)|指定当设备从睡眠模式唤醒时登录时的要求。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |disableSignInOnResume|Boolean|禁用每当设备从睡眠模式唤醒时需要登录的要求。|
-|enabled|Boolean|启用共享的电脑模式并应用共享的电脑策略。|
+|enabled|布尔值|启用共享的电脑模式并应用共享的电脑策略。|
 |idleTimeBeforeSleepInSeconds|Int32|指定电脑进入睡眠状态之前设备必须保持空闲状态的时间（以秒为单位）。 将此值设置为 0 可防止发生睡眠超时。|
 |kioskAppDisplayName|String|指定启动由 SetKioskAppUserModelId 指定的应用的登录屏幕上显示的帐户的显示文本。 仅在设置 KioskAppUserModelId 后适用。|
 |kioskAppUserModelId|String|指定要与分配的访问权限结合使用的应用的应用程序用户模型 ID。|
@@ -71,7 +66,7 @@ ms.locfileid: "29415108"
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|按用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|设备配置设备状态概述 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|设备配置用户状态概述 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|设备配置设置状态设备摘要 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

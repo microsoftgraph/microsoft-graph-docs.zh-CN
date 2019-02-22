@@ -1,21 +1,21 @@
 ---
 title: 更新 managedDeviceOverview
 description: 更新 managedDeviceOverview 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34271db88490fba3ac635892daac66bf9cf904b8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 642d565a7555446da1728c0a697598de4d5459cc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424530"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147843"
 ---
 # <a name="update-manageddeviceoverview"></a>更新 managedDeviceOverview
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) 对象的属性。
 
@@ -40,7 +40,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -56,8 +56,8 @@ PATCH /deviceManagement/managedDeviceOverview
 |dualEnrolledDeviceCount|Int32|MDM 和 EAS 中注册的设备数|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|设备操作系统摘要。|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Intune 中的 Exchange 访问状态的分配|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|模型和托管帐户中的设备的制造商 meatadata|
-|lastModifiedDateTime|DateTimeOffset|上次修改的日期时间的设备概述 （英文）|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|帐户中托管设备的模型和制造商 meatadata|
+|lastModifiedDateTime|DateTimeOffset|设备的上次修改日期时间概述|
 
 
 

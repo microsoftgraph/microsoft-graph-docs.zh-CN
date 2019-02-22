@@ -1,21 +1,21 @@
 ---
 title: 更新 macOsVppApp
 description: 更新 macOsVppApp 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b34a8e4ae3e179cfa8674abb08565b5fbe0c72a3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6cfd68791f3d5b7b930965b7d0f5d5eb7e54eac5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431367"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149096"
 ---
 # <a name="update-macosvppapp"></a>更新 macOsVppApp
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[macOsVppApp](../resources/intune-apps-macosvppapp.md)对象的属性。
 
@@ -42,49 +42,49 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[macOsVppApp](../resources/intune-apps-macosvppapp.md)对象的 JSON 表示形式。
+在请求正文中, 提供[macOsVppApp](../resources/intune-apps-macosvppapp.md)对象的 JSON 表示形式。
 
-下表显示时创建[macOsVppApp](../resources/intune-apps-macosvppapp.md)所需的属性。
+下表显示创建[macOsVppApp](../resources/intune-apps-macosvppapp.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|字串符号|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|privacyInformationUrl|String|隐私声明 Url。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|informationUrl|String|详细信息 Url。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|字符串|隐私声明 Url。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|字符串|详细信息 Url。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
-|isAssigned|Boolean|值，指示是否将应用程序分配给至少一个组。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用程序的作用域标记 id 的列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。|
 |totalLicenseCount|Int32|VPP 许可证的总数。|
 |releaseDateTime|DateTimeOffset|VPP 应用程序的发布日期和时间。|
 |appStoreUrl|String|存储 URL。|
 |licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|受支持的许可证类型。|
-|vppTokenOrganizationName|String|与 Apple Volume Purchase Program 令牌关联的组织|
+|vppTokenOrganizationName|字符串|与 Apple Volume Purchase Program 令牌关联的组织|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
 |vppTokenAppleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
-|bundleId|String|标识名称。|
-|vppTokenId|String|与此应用程序关联的 VPP 标记的标识符。|
-|revokeLicenseActionResults|[macOsVppAppRevokeLicensesActionResult](../resources/intune-apps-macosvppapprevokelicensesactionresult.md)集合|结果的撤消此应用程序许可证操作。|
+|bundleId|字符串|标识名称。|
+|vppTokenId|字符串|与此应用程序关联的 VPP 令牌的标识符。|
+|revokeLicenseActionResults|[macOsVppAppRevokeLicensesActionResult](../resources/intune-apps-macosvppapprevokelicensesactionresult.md)集合|对此应用吊销许可证操作的结果。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[macOsVppApp](../resources/intune-apps-macosvppapp.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[macOsVppApp](../resources/intune-apps-macosvppapp.md)对象。
 
 ## <a name="example"></a>示例
 

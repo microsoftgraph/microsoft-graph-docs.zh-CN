@@ -1,36 +1,36 @@
 ---
 title: ratingUnitedKingdomMoviesType 枚举类型
-description: 电影分级中英国标签
-localization_priority: Normal
+description: 英国的电影评分标签
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62194038006b011fdc8a70c4b399beef5e8c742b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a78b8569bea252951e4d325adf823b2954b2e0e0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412532"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148116"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-电影分级中英国标签
+英国的电影评分标签
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|allAllowed|0|默认值，允许所有电影内容|
+|allAllowed|0|默认值, 允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
-|常规|2|U 分类是适用于所有岁|
-|universalChildren|3|UC 分类适合前学校子级，旧的分级标签|
-|parentalGuidance|4|PG 分类适合成熟|
-|agesAbove12Video|5|12 年时间，通过，12，视频释放合适|
-|agesAbove12Cinema|6|12A，12 年时间，通过合适的电影版|
-|agesAbove15|7|15，只适合 15 年及较早|
-|成人|8|仅适于成人|
+|概要|双面|U 分类适用于所有年龄段|
+|universalChildren|第三章|UC 分类适用于学校子女、旧评级标签|
+|parentalGuidance|4|PG 分类适用于成熟|
+|agesAbove12Video|5|12, 视频发布适用于12年以上|
+|agesAbove12Cinema|型|12A, 电影发布适用于12年以上|
+|agesAbove15|步|15, 仅适用于15年和更早的|
+|成人|utf-8|仅适用于成年人|
 
 
 

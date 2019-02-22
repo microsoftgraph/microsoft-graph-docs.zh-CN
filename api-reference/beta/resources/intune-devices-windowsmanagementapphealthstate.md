@@ -1,29 +1,29 @@
 ---
 title: windowsManagementAppHealthState 资源类型
-description: Windows 管理应用程序运行状况状态实体。
-localization_priority: Normal
+description: Windows management 应用运行状况状态实体。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 171ae2492eb5077567f4398af678d14044a0b7e2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8841b79b9a284a15999db701e82a2b5062e2930b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395732"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148536"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>windowsManagementAppHealthState 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Windows 管理应用程序运行状况状态实体。
+Windows management 应用运行状况状态实体。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列表 windowsManagementAppHealthStates](../api/intune-devices-windowsmanagementapphealthstate-list.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)集合|列出属性和[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象之间的关系。|
-|[获取 windowsManagementAppHealthState](../api/intune-devices-windowsmanagementapphealthstate-get.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|读取属性和[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象的关系。|
+|[列出 windowsManagementAppHealthStates](../api/intune-devices-windowsmanagementapphealthstate-list.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)集合|列出[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象的属性和关系。|
+|[获取 windowsManagementAppHealthState](../api/intune-devices-windowsmanagementapphealthstate-get.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|读取[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象的属性和关系。|
 |[创建 windowsManagementAppHealthState](../api/intune-devices-windowsmanagementapphealthstate-create.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|创建新的[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象。|
 |[删除 windowsManagementAppHealthState](../api/intune-devices-windowsmanagementapphealthstate-delete.md)|无|删除[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)。|
 |[更新 windowsManagementAppHealthState](../api/intune-devices-windowsmanagementapphealthstate-update.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|更新[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象的属性。|
@@ -31,12 +31,12 @@ Windows 管理应用程序运行状况状态实体。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Windows 管理应用程序的运行状况状态的唯一标识符|
-|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理应用程序的运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
-|installedVersion|String|Windows 管理应用程序安装的版本。|
-|lastCheckInDateTime|DateTimeOffset|Windows 管理应用程序上次签入的时间。|
-|deviceName|String|设备的 Windows 安装管理应用程序的名称。|
-|deviceOSVersion|String|Windows 10 OS 版本的 Windows 安装管理应用程序的设备。|
+|id|字符串|Windows management 应用运行状况状态的唯一标识符|
+|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理应用运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
+|installedVersion|字符串|Windows 管理应用程序已安装版本。|
+|lastCheckInDateTime|DateTimeOffset|Windows 管理应用程序上次签入时间。|
+|deviceName|String|在其上安装 Windows management 应用的设备的名称。|
+|deviceOSVersion|字符串|windows 10 OS 版本的 windows management app 安装在该设备上。|
 
 ## <a name="relationships"></a>关系
 无

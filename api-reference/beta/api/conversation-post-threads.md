@@ -4,12 +4,12 @@ description: 在指定会话中创建新线程。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ad1bf0d6878404913c7de20fecb8d3433f06dd51
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8a4284e51ee74b43ae3e678ed8a54300cf9b9fe9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514213"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149824"
 ---
 # <a name="create-thread"></a>创建线程
 
@@ -28,7 +28,7 @@ ms.locfileid: "29514213"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

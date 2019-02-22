@@ -1,23 +1,23 @@
 ---
 title: windowsUniversalAppXAppAssignmentSettings 资源类型
-description: 包含分配给组的 Windows 通用约移动应用程序时使用的属性。
-localization_priority: Normal
+description: 包含将 Windows 通用 AppX 移动应用程序分配给组时使用的属性。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27755a483be44584aeb82166f56e825df79f8eaa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 58e0c656464d962d1a16a7c4651c4379876bf6ae
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400716"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153730"
 ---
 # <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>windowsUniversalAppXAppAssignmentSettings 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含分配给组的 Windows 通用约移动应用程序时使用的属性。
+包含将 Windows 通用 AppX 移动应用程序分配给组时使用的属性。
 
 
 继承自 [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)
@@ -25,7 +25,7 @@ ms.locfileid: "29400716"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|useDeviceContext|布尔值|是否对 Windows 通用约移动应用程序使用设备执行上下文。|
+|useDeviceContext|布尔值|是否对 Windows 通用 AppX 移动应用程序使用设备执行上下文。|
 
 ## <a name="relationships"></a>关系
 无

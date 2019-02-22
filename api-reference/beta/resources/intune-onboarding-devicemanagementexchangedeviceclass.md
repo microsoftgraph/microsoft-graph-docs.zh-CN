@@ -1,29 +1,29 @@
 ---
 title: deviceManagementExchangeDeviceClass 资源类型
 description: Exchange 中的设备类。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e512253a9b9bc4228d41c369501bec1e7a5e031
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ffa5f9c9f54722711a2e38116c2f2a3e03a3171e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413729"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149565"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>deviceManagementExchangeDeviceClass 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Exchange 中的设备类。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|String|设备类，该类将会受到此规则的名称。|
-|type|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|设备受到此规则的类型例如建模、 系列。 可取值为：`family`、`model`。|
+|name|字符串|将受此规则影响的设备类别的名称。|
+|type|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|受此规则影响的设备类型, 例如 Model、Family。 可取值为：`family`、`model`。|
 
 ## <a name="relationships"></a>Relationships
 无

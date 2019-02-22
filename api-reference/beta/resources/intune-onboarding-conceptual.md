@@ -1,15 +1,15 @@
 ---
-title: 在 Intune 中注册设备以进行管理
-description: " (BYOD) 注册允许用户注册其个人电话、 平板电脑或 Pc。 企业拥有设备 (COD) 注册允许管理场景，例如远程擦除、共享设备或设备的用户相关性。"
+title: 带有 Intune 的板载托管设备-Microsoft Graph API
+description: 列出用于为租户组织进行板载 (配置和初始化) 设备的 Intune 终结点 (REST) 的 Microsoft Graph API。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 895977194822918fc2ac61ed13e0aae938a25166
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2acd4310c07fd1532a1a16bdc419d7bad23bc973
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923745"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147829"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
@@ -22,38 +22,38 @@ ms.locfileid: "27923745"
 以下 Graph 资源可用于在 Intune 中管理注册：
 
 - [证书连接器设置](intune-onboarding-certificateconnectorsetting.md)
-- [管理的设备和应用程序数据](intune-onboarding-deviceandappmanagementdata.md)
+- [设备和应用管理数据](intune-onboarding-deviceandappmanagementdata.md)
 - [设备注册配置](intune-onboarding-deviceenrollmentconfiguration.md)
 - [设备注册限制配置](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [设备注册平台限制](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [设备注册平台限制配置](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
 - [设备注册 Windows Hello 企业版配置](intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)
-- [设备管理 exchange 访问级别](intune-onboarding-devicemanagementexchangeaccesslevel.md)
-- [设备管理 exchange 访问规则](intune-onboarding-devicemanagementexchangeaccessrule.md)
-- [设备管理 exchange 访问规则类型](intune-onboarding-devicemanagementexchangeaccessruletype.md)
+- [设备管理 Exchange 访问级别](intune-onboarding-devicemanagementexchangeaccesslevel.md)
+- [设备管理 Exchange 访问规则](intune-onboarding-devicemanagementexchangeaccessrule.md)
+- [设备管理 Exchange 访问规则类型](intune-onboarding-devicemanagementexchangeaccessruletype.md)
 - [设备管理 Exchange 连接器](intune-onboarding-devicemanagementexchangeconnector.md)
-- [设备管理 exchange 连接器状态](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
-- [设备管理 exchange 连接器同步类型](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
-- [设备管理 exchange 连接器类型](intune-onboarding-devicemanagementexchangeconnectortype.md)
-- [设备管理 exchange 设备类](intune-onboarding-devicemanagementexchangedeviceclass.md)
-- [设备管理 exchange 内部部署策略](intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
+- [设备管理 Exchange 连接器状态](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
+- [设备管理 Exchange 连接器同步类型](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
+- [设备管理 Exchange 连接器类型](intune-onboarding-devicemanagementexchangeconnectortype.md)
+- [设备管理 Exchange 设备类](intune-onboarding-devicemanagementexchangedeviceclass.md)
+- [设备管理 Exchange 本地策略](intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
 - [设备管理合作伙伴](intune-onboarding-devicemanagementpartner.md)
-- [设备管理合作伙伴应用程序类型](intune-onboarding-devicemanagementpartnerapptype.md)
+- [设备管理合作伙伴应用类型](intune-onboarding-devicemanagementpartnerapptype.md)
 - [设备管理合作伙伴租户状态](intune-onboarding-devicemanagementpartnertenantstate.md)
 - [注册配置分配](intune-onboarding-enrollmentconfigurationassignment.md)
 - [Intune 品牌](intune-onboarding-intunebrand.md)
-- [MDM 证书颁发机构](intune-onboarding-mdmauthority.md)
-- [Microsoft 存储业务门户选择选项](intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)
+- [MDM 颁发机构](intune-onboarding-mdmauthority.md)
+- [适用于企业的 Microsoft Store 门户选定内容的选项](intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)
 - [移动威胁防护连接器](intune-onboarding-mobilethreatdefenseconnector.md)
 - [移动威胁合作伙伴租户状态](intune-onboarding-mobilethreatpartnertenantstate.md)
 - [本地条件访问设置](intune-onboarding-onpremisesconditionalaccesssettings.md)
 - [组织](intune-onboarding-organization.md)
-- [端加载项](intune-onboarding-sideloadingkey.md)
+- [侧加载密钥](intune-onboarding-sideloadingkey.md)
 - [VPP 令牌](intune-onboarding-vpptoken.md)
 - [VPP 令牌操作结果](intune-onboarding-vpptokenactionresult.md)
 - [VPP 令牌许可证摘要](intune-onboarding-vpptokenlicensesummary.md)
-- [VPP 令牌 revoke 许可证操作结果](intune-onboarding-vpptokenrevokelicensesactionresult.md)
+- [VPP 令牌撤销许可证操作结果](intune-onboarding-vpptokenrevokelicensesactionresult.md)
 - [VPP 令牌状态](intune-onboarding-vpptokenstate.md)
-- [VPP 令牌的同步状态](intune-onboarding-vpptokensyncstatus.md)
-- [Windows 10 注册完成页上配置](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
-- [Windows Hello 业务 PIN 用法](intune-onboarding-windowshelloforbusinesspinusage.md)
+- [VPP 令牌同步状态](intune-onboarding-vpptokensyncstatus.md)
+- [Windows 10 注册完成页配置](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
+- [Windows Hello 企业版 PIN 使用情况](intune-onboarding-windowshelloforbusinesspinusage.md)

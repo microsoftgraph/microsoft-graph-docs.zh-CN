@@ -1,21 +1,21 @@
 ---
 title: windowsWifiConfiguration 资源类型
 description: 设备配置。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e7a151c9847315fdf3f160ba0355e5bb2f0605e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b4ec447d0e77803f939b9aafb413f05d3e90987e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425853"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153786"
 ---
 # <a name="windowswificonfiguration-resource-type"></a>windowsWifiConfiguration 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备配置。
 
@@ -25,8 +25,8 @@ ms.locfileid: "29425853"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列表 windowsWifiConfigurations](../api/intune-deviceconfig-windowswificonfiguration-list.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)集合|列出属性和[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)对象之间的关系。|
-|[获取 windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-get.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|读取属性和[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)对象的关系。|
+|[列出 windowsWifiConfigurations](../api/intune-deviceconfig-windowswificonfiguration-list.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)集合|列出[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)对象的属性和关系。|
+|[获取 windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-get.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|读取[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)对象的属性和关系。|
 |[创建 windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-create.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|创建新的[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)对象。|
 |[删除 windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-delete.md)|无|删除[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)。|
 |[更新 windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-update.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|更新[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)对象的属性。|
@@ -36,25 +36,25 @@ ms.locfileid: "29425853"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|preSharedKey|String|这是预共享的 WPA 个人 Wi-fi 网络密钥。|
-|wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|指定的 Wifi 安全类型。 可取值为：`open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
-|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|指定 wifi 连接的按流量计费的连接限制类型。 可取值为：`unrestricted`、`fixed`、`variable`。|
-|ssid|String|指定 wifi 连接的 SSID。|
-|networkName|String|指定的网络配置名称。|
-|connectAutomatically|Boolean|指定应在范围中自动连接是否 wifi 连接。|
-|connectToPreferredNetwork|Boolean|指定 wifi 连接是否应连接到时已连接到此的更多首选网络。  需要 ConnectAutomatically 为 true。|
-|connectWhenNetworkNameIsHidden|Boolean|指定是否 wifi 连接应自动连接即使时 SSID 未进行广播。|
-|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|指定代理 Wi-fi 配置设置。 可取值为：`none`、`manual`、`automatic`。|
-|proxyManualAddress|String|指定代理服务器的 IP 地址。|
-|proxyManualPort|Int32|指定的代理服务器的端口。|
-|proxyAutomaticConfigurationUrl|String|指定代理服务器配置脚本的 URL。|
-|forceFIPSCompliance|Boolean|指定是否强制 FIPS 合规性。|
+|preSharedKey|字符串|这是 WPA 个人 wi-fi 网络的预共享密钥。|
+|wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|指定 Wifi 安全类型。 可取值为：`open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
+|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|为 wifi 连接指定按流量计费的连接限制类型。 可取值为：`unrestricted`、`fixed`、`variable`。|
+|ssid|字符串|指定 wifi 连接的 SSID。|
+|networkName|字符串|指定网络配置名称。|
+|connectAutomatically|布尔|指定是否在范围内自动连接 wifi 连接。|
+|connectToPreferredNetwork|布尔|指定 wifi 连接是否应连接到更多的首选网络 (如果已连接到此连接的话)。  要求 ConnectAutomatically 为 true。|
+|connectWhenNetworkNameIsHidden|布尔|指定是否应自动连接 wifi 连接, 即使 SSID 未进行广播也是如此。|
+|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|指定 wlan 配置的代理设置。 可取值为：`none`、`manual`、`automatic`。|
+|proxyManualAddress|字符串|指定代理服务器的 IP 地址。|
+|proxyManualPort|Int32|指定代理服务器的端口。|
+|proxyAutomaticConfigurationUrl|字符串|指定代理服务器配置脚本的 URL。|
+|forceFIPSCompliance|布尔|指定是否强制进行 FIPS 合规性。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -62,7 +62,7 @@ ms.locfileid: "29425853"
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|按用户的设备配置安装状态。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|设备配置设备状态概述 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|设备配置用户状态概述 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|设备配置设置状态设备摘要 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

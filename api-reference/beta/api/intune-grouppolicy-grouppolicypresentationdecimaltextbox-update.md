@@ -1,21 +1,21 @@
 ---
 title: 更新 groupPolicyPresentationDecimalTextBox
 description: 更新 groupPolicyPresentationDecimalTextBox 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4f91abc80fe37fe3f3677afc7d06b547df9bee4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 67a535327d62ccdb8901ed0776ab1b992641ccf7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429346"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154976"
 ---
 # <a name="update-grouppolicypresentationdecimaltextbox"></a>更新 groupPolicyPresentationDecimalTextBox
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)对象的属性。
 
@@ -41,30 +41,30 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)对象的 JSON 表示形式。
+在请求正文中, 提供[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)对象的 JSON 表示形式。
 
-下表显示时创建[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)所需的属性。
+下表显示创建[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|标签|String|任何演示文稿实体的本地化的文本标签。 默认值为空。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|标签|字符串|任何演示文稿实体的本地化文本标签。 默认值为空。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|lastModifiedDateTime|DateTimeOffset|日期和实体上次修改的时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|Int64|指定小数文本框的初始值无符号的整数。 默认值为 1。|
-|旋转|Boolean|如果为 true，则创建调节控件;否则，创建文本框中输入数字。 默认值为 true。|
-|spinStep|Int64|指定的增量更改数字调整控件的无符号的整数。 默认值为 1。|
-|必需|Boolean|在参数框中输入值的要求。 默认值为 false。|
-|minValue|Int64|指定允许的最小值无符号的整数。 默认值为 0。|
-|值|Int64|无符号的整数，指定允许的最大值。 默认值是 9999。|
+|lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|defaultValue|Int64|一个无符号整数, 指定十进制文本框的初始值。 默认值为 1。|
+|派生|布尔|如果为 true, 则创建数值调节钮控件;否则, 请为数字输入创建文本框。 默认值为 true。|
+|spinStep|Int64|一个无符号整数, 指定数值调节钮控件的变化增量。 默认值为 1。|
+|必需|布尔|要求在 "参数" 框中输入值。 默认值为 false。|
+|minValue|Int64|一个无符号整数, 指定允许的最小值。 默认值为 0。|
+|timespan.maxvalue|Int64|一个无符号整数, 指定允许的最大值。 默认值为9999。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)对象。
 
 ## <a name="example"></a>示例
 

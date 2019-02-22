@@ -1,21 +1,21 @@
 ---
 title: 删除 importedDeviceIdentity
 description: 删除 importedDeviceIdentity。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ca255e175bbe804d89ea9534057c2a876d56da7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a5c5d2669747eb16111eb5b50162b79e0621c463
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396180"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152421"
 ---
 # <a name="delete-importeddeviceidentity"></a>删除 importedDeviceIdentity
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。
 

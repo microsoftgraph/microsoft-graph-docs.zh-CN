@@ -1,33 +1,33 @@
 ---
 title: windowsUpdateForBusinessUpdateWeeks 枚举类型
-description: 计划更新安装在相应月份的周
-localization_priority: Normal
+description: 在每月的几周安排更新安装
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 861fcf1a227f57a3d6f5353b64689d02e8ab5996
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2f06f63672a704d1d69ae62b353b025b8b78e063
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395865"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147024"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>windowsUpdateForBusinessUpdateWeeks 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-计划更新安装在相应月份的周
+在每月的几周安排更新安装
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|用户定制|0|允许用户设置。|
-|firstWeek|1|计划更新安装在相应月份的第一周|
-|secondWeek|2|计划上第二个这一周月份的更新安装|
-|thirdWeek|4|计划更新安装在相应月份的第三个星期|
-|fourthWeek|8|计划更新安装在相应月份的第四个星期|
-|everyWeek|15|计划在每周相应月份的更新安装|
+|定制|0|允许用户进行设置。|
+|firstWeek|1|在每月的第一周安排更新安装|
+|secondWeek|双面|在每月的第二周安排更新安装|
+|thirdWeek|4|在每月的第三周安排更新安装|
+|fourthWeek|utf-8|在每月的第四周安排更新安装|
+|everyWeek|个|在每个月的每一周计划更新安装|
 
 
 

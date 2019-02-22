@@ -1,44 +1,44 @@
 ---
 title: mobileAppInstallSummary 资源类型
-description: 包含的移动应用程序安装摘要属性。
-localization_priority: Normal
+description: 包含移动应用程序的安装摘要的属性。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2bd7c30c1b00e83731766bcd80f9a9fafd8e8b7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9747d53c56f9e505b61e1fa38bf5abdc27d14e42
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416711"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150762"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>mobileAppInstallSummary 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含的移动应用程序安装摘要属性。
+包含移动应用程序的安装摘要的属性。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取 mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|读取属性和[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)对象的关系。|
+|[获取 mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|读取[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)对象的属性和关系。|
 |[更新 mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|更新[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|installedDeviceCount|Int32|已成功安装此应用程序的设备数。|
-|failedDeviceCount|Int32|未能安装此应用程序的设备数。|
-|notApplicableDeviceCount|Int32|不适用于此应用程序的设备数。|
-|notInstalledDeviceCount|Int32|没有安装该应用程序的设备数目。|
-|pendingInstallDeviceCount|Int32|已被通知安装此应用程序的设备数。|
-|installedUserCount|Int32|所有成功安装此应用程序的设备的用户数。|
-|failedUserCount|Int32|用户具有 1 或无法安装此应用程序的更多设备数。|
-|notApplicableUserCount|Int32|其设备未所有适用于此应用程序的用户数。|
-|notInstalledUserCount|Int32|未安装该应用程序的一个或多个设备的用户数。|
-|pendingInstallUserCount|Int32|用户具有 1 或更多已经通知安装此应用程序和失败的 0 设备的设备数。|
+|installedDeviceCount|Int32|已成功安装此应用的设备数量。|
+|failedDeviceCount|Int32|安装此应用失败的设备数量。|
+|notApplicableDeviceCount|Int32|不适用于此应用程序的设备数量。|
+|notInstalledDeviceCount|Int32|未安装此应用的设备数量。|
+|pendingInstallDeviceCount|Int32|已通知安装此应用程序的设备数。|
+|installedUserCount|Int32|其设备已成功安装此应用程序的用户数。|
+|failedUserCount|Int32|具有1个或多个无法安装此应用程序的设备的用户数。|
+|notApplicableUserCount|Int32|其设备全部不适用于此应用的用户数。|
+|notInstalledUserCount|Int32|具有1个或多个未安装此应用程序的设备的用户数。|
+|pendingInstallUserCount|Int32|具有1个或多个设备且已收到安装此应用程序并有0个设备出现故障的用户数量。|
 
 ## <a name="relationships"></a>关系
 无
