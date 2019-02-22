@@ -4,33 +4,33 @@ description: 创建新的 deviceCategory 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 71b36a94624140586f2275679df91c4ed7374335
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9f40ec6beb11ed6a299c23b6da905466a47fc5e9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395270"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153709"
 ---
-# <a name="create-devicecategory"></a><span data-ttu-id="ef4b3-103">创建 deviceCategory</span><span class="sxs-lookup"><span data-stu-id="ef4b3-103">Create deviceCategory</span></span>
+# <a name="create-devicecategory"></a><span data-ttu-id="86edf-103">创建 deviceCategory</span><span class="sxs-lookup"><span data-stu-id="86edf-103">Create deviceCategory</span></span>
 
-> <span data-ttu-id="ef4b3-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ef4b3-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="86edf-104">**重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="86edf-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="86edf-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="86edf-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="ef4b3-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="86edf-106">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="86edf-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ef4b3-107">创建新的 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-107">Create a new [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
+<span data-ttu-id="86edf-107">创建新的 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="86edf-107">Create a new [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ef4b3-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="ef4b3-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="86edf-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="86edf-108">Prerequisites</span></span>
 
-<span data-ttu-id="ef4b3-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="86edf-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="86edf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference).</span></span>
 
-|<span data-ttu-id="ef4b3-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="ef4b3-111">Permission type</span></span>|<span data-ttu-id="ef4b3-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="ef4b3-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="86edf-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="86edf-111">Permission type</span></span>|<span data-ttu-id="86edf-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="86edf-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ef4b3-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ef4b3-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="ef4b3-114">&nbsp;&nbsp; **入职培训**</span><span class="sxs-lookup"><span data-stu-id="ef4b3-114">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="ef4b3-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ef4b3-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="ef4b3-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ef4b3-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ef4b3-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-117">Not supported.</span></span>|
-|<span data-ttu-id="ef4b3-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="ef4b3-118">Application</span></span>|<span data-ttu-id="ef4b3-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-119">Not supported.</span></span>|
+|<span data-ttu-id="86edf-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="86edf-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="86edf-114">&nbsp; &nbsp; **载入**</span><span class="sxs-lookup"><span data-stu-id="86edf-114">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="86edf-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86edf-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="86edf-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="86edf-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="86edf-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="86edf-117">Not supported.</span></span>|
+|<span data-ttu-id="86edf-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="86edf-118">Application</span></span>|<span data-ttu-id="86edf-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="86edf-119">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ef4b3-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ef4b3-120">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="86edf-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="86edf-120">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,35 +39,35 @@ ms.locfileid: "29395270"
 POST /deviceManagement/deviceCategories
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ef4b3-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="ef4b3-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="86edf-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="86edf-121">Request headers</span></span>
 
-|<span data-ttu-id="ef4b3-122">标头</span><span class="sxs-lookup"><span data-stu-id="ef4b3-122">Header</span></span>|<span data-ttu-id="ef4b3-123">值</span><span class="sxs-lookup"><span data-stu-id="ef4b3-123">Value</span></span>|
+|<span data-ttu-id="86edf-122">标头</span><span class="sxs-lookup"><span data-stu-id="86edf-122">Header</span></span>|<span data-ttu-id="86edf-123">值</span><span class="sxs-lookup"><span data-stu-id="86edf-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ef4b3-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="ef4b3-124">Authorization</span></span>|<span data-ttu-id="ef4b3-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ef4b3-126">Accept</span><span class="sxs-lookup"><span data-stu-id="ef4b3-126">Accept</span></span>|<span data-ttu-id="ef4b3-127">application/json</span><span class="sxs-lookup"><span data-stu-id="ef4b3-127">application/json</span></span>|
+|<span data-ttu-id="86edf-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="86edf-124">Authorization</span></span>|<span data-ttu-id="86edf-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="86edf-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="86edf-126">Accept</span><span class="sxs-lookup"><span data-stu-id="86edf-126">Accept</span></span>|<span data-ttu-id="86edf-127">application/json</span><span class="sxs-lookup"><span data-stu-id="86edf-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ef4b3-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="ef4b3-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="86edf-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="86edf-128">Request body</span></span>
 
-<span data-ttu-id="ef4b3-129">在请求正文中，提供 deviceCategory 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-129">In the request body, supply a JSON representation for the deviceCategory object.</span></span>
+<span data-ttu-id="86edf-129">在请求正文中，提供 deviceCategory 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="86edf-129">In the request body, supply a JSON representation for the deviceCategory object.</span></span>
 
-<span data-ttu-id="ef4b3-130">下表显示创建 deviceCategory 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-130">The following table shows the properties that are required when you create the deviceCategory.</span></span>
+<span data-ttu-id="86edf-130">下表显示创建 deviceCategory 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="86edf-130">The following table shows the properties that are required when you create the deviceCategory.</span></span>
 
-|<span data-ttu-id="ef4b3-131">属性</span><span class="sxs-lookup"><span data-stu-id="ef4b3-131">Property</span></span>|<span data-ttu-id="ef4b3-132">类型</span><span class="sxs-lookup"><span data-stu-id="ef4b3-132">Type</span></span>|<span data-ttu-id="ef4b3-133">说明</span><span class="sxs-lookup"><span data-stu-id="ef4b3-133">Description</span></span>|
+|<span data-ttu-id="86edf-131">属性</span><span class="sxs-lookup"><span data-stu-id="86edf-131">Property</span></span>|<span data-ttu-id="86edf-132">类型</span><span class="sxs-lookup"><span data-stu-id="86edf-132">Type</span></span>|<span data-ttu-id="86edf-133">说明</span><span class="sxs-lookup"><span data-stu-id="86edf-133">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ef4b3-134">id</span><span class="sxs-lookup"><span data-stu-id="ef4b3-134">id</span></span>|<span data-ttu-id="ef4b3-135">String</span><span class="sxs-lookup"><span data-stu-id="ef4b3-135">String</span></span>|<span data-ttu-id="ef4b3-136">设备类别的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-136">Unique identifier for the device category.</span></span> <span data-ttu-id="ef4b3-137">只读。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-137">Read-only.</span></span>|
-|<span data-ttu-id="ef4b3-138">**Obboarding**</span><span class="sxs-lookup"><span data-stu-id="ef4b3-138">**Obboarding**</span></span>|
-|<span data-ttu-id="ef4b3-139">说明</span><span class="sxs-lookup"><span data-stu-id="ef4b3-139">description</span></span>|<span data-ttu-id="ef4b3-140">String</span><span class="sxs-lookup"><span data-stu-id="ef4b3-140">String</span></span>|<span data-ttu-id="ef4b3-141">设备类别的可选说明。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-141">Optional description for the device category.</span></span>|
-|<span data-ttu-id="ef4b3-142">displayName</span><span class="sxs-lookup"><span data-stu-id="ef4b3-142">displayName</span></span>|<span data-ttu-id="ef4b3-143">String</span><span class="sxs-lookup"><span data-stu-id="ef4b3-143">String</span></span>|<span data-ttu-id="ef4b3-144">设备类别的显示名称。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-144">Display name for the device category.</span></span>|
+|<span data-ttu-id="86edf-134">id</span><span class="sxs-lookup"><span data-stu-id="86edf-134">id</span></span>|<span data-ttu-id="86edf-135">String</span><span class="sxs-lookup"><span data-stu-id="86edf-135">String</span></span>|<span data-ttu-id="86edf-136">设备类别的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="86edf-136">Unique identifier for the device category.</span></span> <span data-ttu-id="86edf-137">只读。</span><span class="sxs-lookup"><span data-stu-id="86edf-137">Read-only.</span></span>|
+|<span data-ttu-id="86edf-138">**Obboarding**</span><span class="sxs-lookup"><span data-stu-id="86edf-138">**Obboarding**</span></span>|
+|<span data-ttu-id="86edf-139">说明</span><span class="sxs-lookup"><span data-stu-id="86edf-139">description</span></span>|<span data-ttu-id="86edf-140">String</span><span class="sxs-lookup"><span data-stu-id="86edf-140">String</span></span>|<span data-ttu-id="86edf-141">设备类别的可选说明。</span><span class="sxs-lookup"><span data-stu-id="86edf-141">Optional description for the device category.</span></span>|
+|<span data-ttu-id="86edf-142">displayName</span><span class="sxs-lookup"><span data-stu-id="86edf-142">displayName</span></span>|<span data-ttu-id="86edf-143">String</span><span class="sxs-lookup"><span data-stu-id="86edf-143">String</span></span>|<span data-ttu-id="86edf-144">设备类别的显示名称。</span><span class="sxs-lookup"><span data-stu-id="86edf-144">Display name for the device category.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ef4b3-145">响应</span><span class="sxs-lookup"><span data-stu-id="ef4b3-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="86edf-145">响应</span><span class="sxs-lookup"><span data-stu-id="86edf-145">Response</span></span>
 
-<span data-ttu-id="ef4b3-146">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-146">If successful, this method returns a `201 Created` response code and a [deviceCategory](../resources/intune-shared-devicecategory.md) object in the response body.</span></span>
+<span data-ttu-id="86edf-146">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="86edf-146">If successful, this method returns a `201 Created` response code and a [deviceCategory](../resources/intune-shared-devicecategory.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ef4b3-147">示例</span><span class="sxs-lookup"><span data-stu-id="ef4b3-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="86edf-147">示例</span><span class="sxs-lookup"><span data-stu-id="86edf-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ef4b3-148">请求</span><span class="sxs-lookup"><span data-stu-id="ef4b3-148">Request</span></span>
+### <a name="request"></a><span data-ttu-id="86edf-148">请求</span><span class="sxs-lookup"><span data-stu-id="86edf-148">Request</span></span>
 
-<span data-ttu-id="ef4b3-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-149">Here is an example of the request.</span></span>
+<span data-ttu-id="86edf-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="86edf-149">Here is an example of the request.</span></span>
 
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCategories
@@ -81,9 +81,9 @@ Content-length: 135
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ef4b3-150">响应</span><span class="sxs-lookup"><span data-stu-id="ef4b3-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="86edf-150">响应</span><span class="sxs-lookup"><span data-stu-id="86edf-150">Response</span></span>
 
-<span data-ttu-id="ef4b3-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ef4b3-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="86edf-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="86edf-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ``` http
 HTTP/1.1 201 Created
