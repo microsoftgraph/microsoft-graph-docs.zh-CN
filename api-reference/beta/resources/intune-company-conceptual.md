@@ -1,15 +1,15 @@
 ---
-title: Microsoft Intune 中的公司条款和条件
-description: 你可以将 Intune 条款和条件部署到用户组，以说明注册、访问工作资源和公司门户应用对设备和用户有何影响。 用户必须接受条款和条件，才能使用公司门户注册和访问其工作。
+title: microsoft Intune 中的公司条款和条件-microsoft Graph API
+description: 列出用于定义租户组织的条款和条件的 Intune 终结点 (REST) 的 Microsoft Graph API。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: eb7221a8a04c35d92f04678369ff690245122f97
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1277a6893ddd306b7050fafc70b815217d376b14
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931529"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172280"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Microsoft Intune 中的公司条款和条件
 
@@ -26,4 +26,4 @@ ms.locfileid: "27931529"
 - [条款和条件](intune-companyterms-termsandconditions.md)
 - [条款和条件接受状态](intune-companyterms-termsandconditionsacceptancestatus.md)
 - [条款和条件分配](intune-companyterms-termsandconditionsassignment.md)
-- [条款和条件组工作分配](intune-companyterms-termsandconditionsgroupassignment.md)
+- [条款和条件组分配](intune-companyterms-termsandconditionsgroupassignment.md)
