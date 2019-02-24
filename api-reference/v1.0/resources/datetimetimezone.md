@@ -2,22 +2,22 @@
 title: dateTimeTimeZone 资源类型
 description: 介绍某个时间点的日期、时间和时区。
 localization_priority: Priority
-ms.openlocfilehash: 9bec62c21f97c58b915ecc40010f8030ea760825
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 9e031b053ebc185ee02fa11571019529a870cf04
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827326"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212359"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
 
 介绍某个时间点的日期、时间和时区。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|dateTime|String|日期和时间组合表示形式的单个时间点 (`<date>T<time>`)。|
-|timeZone|String|以下时区名称之一。|
+|dateTime|字符串|日期和时间组合表示形式的单个时间点（`{date}T{time}`；例如 `2017-08-29T04:00:00.0000000`）。|
+|timeZone|字符串|以下时区名称之一。|
 
 _TimeZone_ 属性可以设置为 Windows 支持的任意时区，以及以下时区名称。
 
