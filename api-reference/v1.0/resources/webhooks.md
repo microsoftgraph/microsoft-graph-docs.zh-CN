@@ -1,30 +1,30 @@
 ---
 title: 使用 Microsoft Graph API 获取更改通知
-description: Microsoft Graph REST API 使用 webhook 机制来将通知传递到客户端。 客户端是配置其自己的 URL，以接收通知的 web 服务。 客户端应用程序使用通知更新时更改其状态。 有关详细信息，包括如何订阅和处理传入通知，请参阅 Set up 中用户数据的更改的通知。
+description: Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端。 客户端是一个 Web 服务，用于配置自身的 URL 以接收通知。 客户端应用使用通知在更改时更新其状态。 有关详细信息（包括如何订阅和处理传入通知），请参阅“设置用户数据更改的通知”。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: cb522c50b2cd9fec007dd32d4257dd68fc56ea6d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 60def6f31ac13ad5417ad3d00e48e700550f6efe
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981411"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159372"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
-Microsoft Graph REST API 使用 webhook 机制来将通知传递到客户端。 客户端是配置其自己的 URL，以接收通知的 web 服务。 客户端应用程序使用通知更新时更改其状态。 有关详细信息，包括如何订阅和处理传入通知，请参阅[设置通知用户数据中的更改](/graph/webhooks)。
+Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端。 客户端是一个 Web 服务，用于配置自身的 URL 以接收通知。 客户端应用使用通知在更改时更新其状态。 有关详细信息（包括如何订阅和处理传入通知），请参阅[设置用户数据更改的通知](/graph/webhooks)。
 
 使用 Microsoft Graph API，应用可以订阅以下资源的更改：
 
-- 邮件
-- 事件
-- 联系人
-- 用户
-- 组
-- 组对话
-- 在 OneDrive，包括与 SharePoint 网站关联的驱动器上共享的内容
-- 用户的个人 OneDrive 文件夹
-- 安全警报
+- Outlook [邮件][]
+- Outlook [事件][]
+- Outlook 个人[联系人][]
+- [用户][]
+- [组][]
+- Office 365 组[对话][]
+- 用户个人 OneDrive 上_任何_ [driveItem][] 文件夹层次结构内的内容
+- OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容
+- 安全[警报][]
 
 ## <a name="permissions"></a>权限
 
@@ -32,14 +32,15 @@ Microsoft Graph REST API 使用 webhook 机制来将通知传递到客户端。 
 
 | 权限类型                        | 支持的资源类型                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| 委派 - 工作或学校帐户     | [联系人][]、[对话][]、[驱动器][]、[事件][]、[组][]、[消息][]、[用户][]、[通知][] |
-| 委派 - 个人 Microsoft 帐户 | [联系人][]、[驱动器][]、[事件][]、[消息][]                                        |
-| 应用程序                            | [联系人][]、[对话][]、[驱动器][]、[事件][]、[组][]、[消息][]、[用户][]、[通知][] |
+| 委派 - 工作或学校帐户     | [警报][]、[联系人][]、[对话][]、[driveItem][]、[事件][]、[组][]、[邮件][]、[用户][]|
+| 委派 - 个人 Microsoft 帐户 | [联系人][]、[driveItem][]、[事件][]、[邮件][]                                        |
+| 应用程序                            | [警报][]、[联系人][]、[driveItem][]、[事件][]、[组][]、[邮件][]、[用户][]|
+
 
 ## <a name="see-also"></a>另请参阅
 
 - [订阅资源类型](./subscription.md)
-- [列表订阅](../api/subscription-list.md)
+- [列出订阅](../api/subscription-list.md)
 - [获取订阅](../api/subscription-get.md)
 - [创建订阅](../api/subscription-post-subscriptions.md)
 - [更新订阅](../api/subscription-update.md)
@@ -47,9 +48,9 @@ Microsoft Graph REST API 使用 webhook 机制来将通知传递到客户端。 
 
 [联系人]: ./contact.md
 [对话]: ./conversation.md
-[驱动器]: ./drive.md
+[driveItem]: ./driveitem.md
 [事件]: ./event.md
 [组]: ./group.md
 [邮件]: ./message.md
 [用户]: ./user.md
-[通知]: ./alert.md
+[警报]: ./alert.md

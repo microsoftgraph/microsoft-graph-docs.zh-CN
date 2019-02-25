@@ -3,34 +3,45 @@ title: 创建订阅
 description: 订阅侦听器应用程序，以在 Microsoft Graph 中的数据发生更改时接收通知。
 localization_priority: Priority
 author: piotrci
-ms.openlocfilehash: 7b23968620abcb8f9a20e4a7b3598c21dec72980
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 6d06e230dd85aadaa4d2b3a4f851b339b34793eb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913883"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157692"
 ---
 # <a name="create-subscription"></a>创建订阅
 
-订阅侦听器应用程序，以在 Microsoft Graph 中的数据发生更改时接收通知。
+订阅侦听器应用程序，以在 Microsoft Graph 中指定资源发生的更改属于请求的更改类型时接收通知。
 
 ## <a name="permissions"></a>权限
 
-创建订阅需要读取资源范围。例如，若要获取通知消息，应用需要 `Mail.Read` 权限。下表列出了对各个资源所需权限的建议。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+ 创建订阅需要读取资源范围。 例如，若要获取消息通知，应用需要 `Mail.Read` 权限。 
+ 
+ 根据请求的资源和权限类型（委托或应用程序），下表中指定的权限为调用此 API 所需的最小权限。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 资源类型/项        | 权限          |
-|-----------------------------|---------------------|
-| 联系人                    | Contacts.Read       |
-| Conversations               | Group.Read.All      |
-| Events                      | Calendars.Read      |
-| Messages                    | Mail.Read           |
-| 组                      | Group.Read.All      |
-| 用户                       | User.Read.All       |
-| Drive（用户的 OneDrive）    | Files.ReadWrite     |
-| 驱动器 （共享的 SharePoint 内容和驱动器） | Files.ReadWrite.All |
-|安全警报| SecurityEvents.ReadWrite.All |
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
+|:-----|:-----|:-----|:-----|
+|[联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
+|[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
+|[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
+|[邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
+|[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
- > **注意：**/V1.0 终结点允许资源最多的应用程序权限。 应用程序权限不支持对话组和 OneDrive 驱动器根项目。
+> **注意：** 订阅 OneDrive 和 Outlook 项还有其他限制。 这些限制适用于订阅的创建和管理（获取、更新和删除订阅）。
+
+- 在个人 OneDrive 上，可订阅根文件夹或该驱动器中的任何子文件夹。 在 OneDrive for Business 上，只可以订阅根文件夹。 对订阅的文件夹或者其层次结构中的任何文件、文件夹或其他 **driveItem** 实例所做更改属于请求的更改类型时，发送通知。 无法订阅不是文件夹的“**驱动器**”或“**driveItem**”实例，例如单个文件。
+
+- 在 Outlook 中，委托的权限仅支持订阅已登录用户的邮箱内文件夹中的项。 也就是说，不能使用委托的权限 Calendars.Read 来订阅另一个用户邮箱中的事件。
+- 订阅_共享或委托_文件夹中 Outlook 联系人、事件或邮件的更改通知：
+
+  - 使用相应的应用程序权限订阅租户内_任何_用户的文件夹或邮箱中项目的更改。
+  - 切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们**不**支持订阅对共享或委托文件夹中的项的更改通知。 
+
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -73,8 +84,8 @@ Content-type: application/json
 }
 ```
 
-在请求正文中，提供[订阅](../resources/subscription.md)对象的 JSON 表示形式。
-`clientState`字段是可选的。
+在请求正文中，提供 [subscription](../resources/subscription.md) 对象的 JSON 表示形式。
+`clientState` 字段是可选的。
 
 ##### <a name="resources-examples"></a>资源示例
 
@@ -86,10 +97,10 @@ Content-type: application/json
 |联系人|me/contacts|
 |日历|me/events|
 |用户|users|
-|组|组|
+|组|groups|
 |对话|groups('*{id}*')/conversations|
 |驱动器|me/drive/root|
-|安全警报|安全/警告？ $filter = 状态 eq 新建|
+|安全警报|security/alerts?$filter=status eq ‘New’|
 
 ##### <a name="response"></a>响应
 
@@ -120,7 +131,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>通知终结点验证
 
-订阅通知终结点 (中指定`notificationUrl`属性) 必须能够响应验证请求，[设置的用户数据更改的通知](/graph/webhooks#notification-endpoint-validation)中所述。 如果验证失败，请求创建订阅，将返回一个 400 错误请求错误。
+通知终结点（于 `notificationUrl` 属性中指定）必须能够响应验证请求，如[设置用户数据更改的通知](/graph/webhooks#notification-endpoint-validation)中所述。 如果验证失败，创建订阅请求返回错误“400 请求无效”。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -649,6 +649,7 @@ items:
           href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
         - name: 获取多值属性
           href: api/multivaluelegacyextendedproperty-get.md
+    displayname: Outlook calendar
   - name: 呼叫和联机会议
     displayName: Microsoft Teams
     href: resources/calls-api-overview.md
@@ -1258,36 +1259,6 @@ items:
           href: api/intune-books-iosvppebookassignment-delete.md
         - name: 更新
           href: api/intune-books-iosvppebookassignment-update.md
-      - name: macOS VPP 应用
-        href: resources/intune-apps-macosvppapp.md
-        items:
-        - name: 列出
-          href: api/intune-apps-macosvppapp-list.md
-        - name: 获取
-          href: api/intune-apps-macosvppapp-get.md
-        - name: 创建
-          href: api/intune-apps-macosvppapp-create.md
-        - name: 删除
-          href: api/intune-apps-macosvppapp-delete.md
-        - name: 更新
-          href: api/intune-apps-macosvppapp-update.md
-      - name: macOS VPP 应用分配的许可证
-        href: resources/intune-apps-macosvppappassignedlicense.md
-        items:
-        - name: 列出
-          href: api/intune-apps-macosvppappassignedlicense-list.md
-        - name: 获取
-          href: api/intune-apps-macosvppappassignedlicense-get.md
-        - name: 创建
-          href: api/intune-apps-macosvppappassignedlicense-create.md
-        - name: 删除
-          href: api/intune-apps-macosvppappassignedlicense-delete.md
-        - name: 更新
-          href: api/intune-apps-macosvppappassignedlicense-update.md
-      - name: macOS VPP 应用分配设置
-        href: resources/intune-apps-macosvppappassignmentsettings.md
-      - name: macOS VPP 应用撤销许可证操作结果
-        href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
       - name: macOS LOB 应用
         href: resources/intune-apps-macoslobapp.md
         items:
@@ -1318,6 +1289,36 @@ items:
           href: api/intune-apps-macosofficesuiteapp-delete.md
         - name: 更新
           href: api/intune-apps-macosofficesuiteapp-update.md
+      - name: macOS VPP 应用
+        href: resources/intune-apps-macosvppapp.md
+        items:
+        - name: 列出
+          href: api/intune-apps-macosvppapp-list.md
+        - name: 获取
+          href: api/intune-apps-macosvppapp-get.md
+        - name: 创建
+          href: api/intune-apps-macosvppapp-create.md
+        - name: 删除
+          href: api/intune-apps-macosvppapp-delete.md
+        - name: 更新
+          href: api/intune-apps-macosvppapp-update.md
+      - name: macOS VPP 应用分配的许可证
+        href: resources/intune-apps-macosvppappassignedlicense.md
+        items:
+        - name: 列出
+          href: api/intune-apps-macosvppappassignedlicense-list.md
+        - name: 获取
+          href: api/intune-apps-macosvppappassignedlicense-get.md
+        - name: 创建
+          href: api/intune-apps-macosvppappassignedlicense-create.md
+        - name: 删除
+          href: api/intune-apps-macosvppappassignedlicense-delete.md
+        - name: 更新
+          href: api/intune-apps-macosvppappassignedlicense-update.md
+      - name: macOS VPP 应用分配设置
+        href: resources/intune-apps-macosvppappassignmentsettings.md
+      - name: macOS VPP 应用撤销许可证操作结果
+        href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
       - name: 托管的 Android LOB 应用
         href: resources/intune-apps-managedandroidlobapp.md
         items:
@@ -2171,7 +2172,7 @@ items:
       - name: 已导入的 Windows Autopilot 设备标识
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
         items:
-        - name: 列出
+        - name: 列表
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
         - name: 获取
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -2271,6 +2272,8 @@ items:
       items:
       - name: 管理员配置的设备合规性状态
         href: resources/intune-deviceconfig-administratorconfigureddevicecompliancestate.md
+      - name: 高级 BitLocker 状态
+        href: resources/intune-deviceconfig-advancedbitlockerstate.md
       - name: 高级威胁防护载入设备设置状态
         href: resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md
         items:
@@ -2598,6 +2601,19 @@ items:
           href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-update.md
       - name: Android 键盘锁功能
         href: resources/intune-deviceconfig-androidkeyguardfeature.md
+      - name: Android OMA cp 配置
+        href: resources/intune-deviceconfig-androidomacpconfiguration.md
+        items:
+        - name: 列表
+          href: api/intune-deviceconfig-androidomacpconfiguration-list.md
+        - name: 获取
+          href: api/intune-deviceconfig-androidomacpconfiguration-get.md
+        - name: 创建
+          href: api/intune-deviceconfig-androidomacpconfiguration-create.md
+        - name: 删除
+          href: api/intune-deviceconfig-androidomacpconfiguration-delete.md
+        - name: 更新
+          href: api/intune-deviceconfig-androidomacpconfiguration-update.md
       - name: Android PKCS 证书配置文件
         href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
         items:
@@ -2952,6 +2968,32 @@ items:
         href: resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md
       - name: Defender 威胁操作
         href: resources/intune-deviceconfig-defenderthreataction.md
+      - name: 传递优化带宽
+        href: resources/intune-deviceconfig-deliveryoptimizationbandwidth.md
+      - name: 传递优化带宽绝对值
+        href: resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md
+      - name: 传递优化带宽工作时间限制
+        href: resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md
+      - name: 传递优化带宽时数百分比
+        href: resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md
+      - name: 传递优化带宽百分比
+        href: resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage.md
+      - name: 传递优化组 ID 自定义
+        href: resources/intune-deviceconfig-deliveryoptimizationgroupidcustom.md
+      - name: 传递优化组 ID 选项类型
+        href: resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md
+      - name: 传递优化组 ID 源
+        href: resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md
+      - name: 传递优化组 ID 选项
+        href: resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md
+      - name: 传递优化最大缓存大小
+        href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md
+      - name: 传递优化最大缓存大小绝对值
+        href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md
+      - name: 传递优化最大缓存大小百分比
+        href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md
+      - name: 传递优化限制对等选择（按选项）
+        href: resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md
       - name: 派生的凭据提供商类型
         href: resources/intune-deviceconfig-derivedcredentialprovidertype.md
       - name: 设备符合性操作项
@@ -3205,9 +3247,11 @@ items:
         href: resources/intune-deviceconfig-devicemanagementuserrightssetting.md
       - name: 设备威胁防护级别
         href: resources/intune-deviceconfig-devicethreatprotectionlevel.md
+      - name: 设备类型
+        href: resources/intune-deviceconfig-devicetypes.md
       - name: 诊断数据提交模式
         href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
-      - name: Dma 保护设备枚举策略类型
+      - name: DMA 保护设备枚举策略类型
         href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
       - name: 域名源
         href: resources/intune-deviceconfig-domainnamesource.md
@@ -3234,9 +3278,11 @@ items:
         href: resources/intune-deviceconfig-edgehomebuttonloadsstartpage.md
       - name: Edge 主页按钮打开自定义 u r l
         href: resources/intune-deviceconfig-edgehomebuttonopenscustomurl.md
-      - name: Edge 主页按钮打开新选项卡
+      - name: Microsoft Edge 主页按钮打开新选项卡
         href: resources/intune-deviceconfig-edgehomebuttonopensnewtab.md
-      - name: Edge 打开选项
+      - name: Microsoft Edge 展台模式限制类型
+        href: resources/intune-deviceconfig-edgekioskmoderestrictiontype.md
+      - name: Microsoft Edge 打开选项
         href: resources/intune-deviceconfig-edgeopenoptions.md
       - name: Edge 搜索引擎
         href: resources/intune-deviceconfig-edgesearchengine.md
@@ -3267,6 +3313,12 @@ items:
         href: resources/intune-deviceconfig-emailsyncduration.md
       - name: 电子邮件同步计划
         href: resources/intune-deviceconfig-emailsyncschedule.md
+      - name: 加密就绪状态
+        href: resources/intune-deviceconfig-encryptionreadinessstate.md
+      - name: 加密报表策略详细信息
+        href: resources/intune-deviceconfig-encryptionreportpolicydetails.md
+      - name: 加密状态
+        href: resources/intune-deviceconfig-encryptionstate.md
       - name: 扩展密钥用法
         href: resources/intune-deviceconfig-extendedkeyusage.md
       - name: 防火墙证书吊销列表检查方法类型
@@ -4010,6 +4062,19 @@ items:
           href: api/intune-deviceconfig-manageddevicecertificatestate-delete.md
         - name: 更新
           href: api/intune-deviceconfig-manageddevicecertificatestate-update.md
+      - name: 托管设备加密状态
+        href: resources/intune-deviceconfig-manageddeviceencryptionstate.md
+        items:
+        - name: 列表
+          href: api/intune-deviceconfig-manageddeviceencryptionstate-list.md
+        - name: 获取
+          href: api/intune-deviceconfig-manageddeviceencryptionstate-get.md
+        - name: 创建
+          href: api/intune-deviceconfig-manageddeviceencryptionstate-create.md
+        - name: 删除
+          href: api/intune-deviceconfig-manageddeviceencryptionstate-delete.md
+        - name: 更新
+          href: api/intune-deviceconfig-manageddeviceencryptionstate-update.md
       - name: 托管设备报告的应用
         href: resources/intune-deviceconfig-manageddevicereportedapp.md
       - name: 媒体内容分级（澳大利亚）
@@ -4823,8 +4888,6 @@ items:
         href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
       - name: Windows 更新计划安装
         href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
-      - name: Windows 更新状态
-        href: resources/intune-deviceconfig-windowsupdatestate.md
       - name: Windows 更新状态
         href: resources/intune-deviceconfig-windowsupdatestatus.md
       - name: Windows 更新类型
@@ -7743,6 +7806,7 @@ items:
         href: api/securescorecontrolprofiles-update.md
     - name: 错误
       href: resources/security-error-codes.md
+    displayname: Security API, Microsoft Intelligent Security Graph
   - name: 网站和列表
     displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
     href: resources/sharepoint.md
@@ -8347,9 +8411,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 7ef9b9c3264eba05b5f388691df086bbbdc336a2
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: cc8fb4bd32656d8e02ef1b7882bab1067176ff11
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994417"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154346"
