@@ -3,12 +3,12 @@ title: 设置用户数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e6cd96f155ad88fa858c9c494538af8c31afa919
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 545a2470e85d82ad3e56ab99943d7487f5df3ca3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818506"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168493"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -20,28 +20,28 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 
 使用 Microsoft Graph API，应用可以订阅以下资源的更改：
 
-- 邮件
-- 事件
-- 联系人
-- 用户
-- 组
-- 组对话
-- OneDrive 上共享的内容，包括与 SharePoint 网站关联的驱动器。
-- 用户的个人 OneDrive 文件夹
-- 安全警报
+- Outlook [邮件][]
+- Outlook [事件][]
+- Outlook 个人[联系人][]
+- [用户][]
+- [组][]
+- Office 365 组[对话][]
+- 用户个人 OneDrive 上_任何_ [driveItem][] 文件夹层次结构内的内容
+- OneDrive for Business 上 [driveItem][] _根文件夹_层次结构内的内容
+- 安全[警报][]
 
-例如，可以创建对特定邮件文件夹的订阅：`me/mailFolders('inbox')/messages`
+可以创建对特定 Outlook 文件夹的订阅，例如收件箱：`me/mailFolders('inbox')/messages`
 
 或以下顶级资源的订阅：`me/messages`、`me/contacts`、`me/events`、`users` 或 `groups`
 
 或以下特定资源实例的订阅：`users/{id}`、`groups/{id}`、`groups/{id}/conversations`
 
-或以下 Sharepoint/OneDrive for Business 驱动器的订阅：`/drive/root`
-
-或对用户个人 OneDrive 的订阅：`/drives/{id}/root`
+或用户个人 OneDrive 中任何文件夹的订阅：`/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-或对新[安全性 API 警报](security-concept-overview.md)的订阅：`/security/alerts?$filter=status eq ‘New’`、`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+或 SharePoint/OneDrive for Business 驱动器根文件夹的订阅：`/drive/root`
+
+或对新[安全性 API](security-concept-overview.md) 警报的订阅：`/security/alerts?$filter=status eq ‘New’`、`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
 ### <a name="azure-ad-resource-limitations"></a>Azure AD 资源限制
 
@@ -242,6 +242,9 @@ notification 对象具有以下属性：
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[drive]: /graph/api/resources/drive?view=graph-rest-1.0
+[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
 [event]: /graph/api/resources/event?view=graph-rest-1.0
+[group]: /graph/api/resources/group?view=graph-rest-1.0
 [message]: /graph/api/resources/message?view=graph-rest-1.0
+[user]: /graph/api/resources/user?view=graph-rest-1.0
+[alert]: /graph/api/resources/alert?view=graph-rest-1.0

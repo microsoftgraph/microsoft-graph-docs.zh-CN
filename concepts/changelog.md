@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: dc4c2d62bbbf3191c2472891e828c13a386e3c7c
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: c8962e6fce28776ab89c759d2e9a7789e82c4f02
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057069"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139674"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -36,6 +36,27 @@ ms.locfileid: "30057069"
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项 |beta|在 [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) 上引入了 relatedContacts 新属性。|
 |添加项 |v1.0|在 [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0) 上引入了 relatedContacts 新属性。|
+
+### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+
+|更改类型|版本|说明|
+|:---|:---|:---|
+|添加项|beta|增加了新实体：<br/>[androidOmaCpConfiguration](/graph/api/resources/intune-deviceconfig-androidomacpconfiguration?view=graph-rest-beta)<br/>[managedDeviceEncryptionState](/graph/api/resources/intune-deviceconfig-manageddeviceencryptionstate?view=graph-rest-beta)<br/>|
+|添加项|beta|新增了复杂类型：<br/>[deliveryOptimizationBandwidth](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidth?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthBusinessHoursLimit](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthHoursWithPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdCustom](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidcustom?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSource](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsource?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSourceOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSize](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesize?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizeAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizePercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage?view=graph-rest-beta)<br/>[encryptionReportPolicyDetails](/graph/api/resources/intune-deviceconfig-encryptionreportpolicydetails?view=graph-rest-beta)<br/>|
+|添加项|beta|增加了新枚举类型：<br/>[advancedBitLockerState](/graph/api/resources/intune-deviceconfig-advancedbitlockerstate?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdOptionsType](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype?view=graph-rest-beta)<br/>[deliveryOptimizationRestrictPeerSelectionByOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions?view=graph-rest-beta)<br/>[deviceTypes](/graph/api/resources/intune-deviceconfig-devicetypes?view=graph-rest-beta)<br/>[edgeKioskModeRestrictionType](/graph/api/resources/intune-deviceconfig-edgekioskmoderestrictiontype?view=graph-rest-beta)<br/>[encryptionReadinessState](/graph/api/resources/intune-deviceconfig-encryptionreadinessstate?view=graph-rest-beta)<br/>[encryptionState](/graph/api/resources/intune-deviceconfig-encryptionstate?view=graph-rest-beta)<br/>|
+|添加项|beta|向 [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta) 实体添加了 **roleScopeTagIds** 属性|
+|添加项|beta|向 [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **autoFillForceAuthentication**、**cellularBlockPlanModification**、**classroomForceAutomaticallyJoinClasses**、**classroomForceUnpromptedAppAndDeviceLock**、**esimBlockModification**、**proximityBlockSetupToNewDevice**、**softwareUpdatesEnforcedDelayInDays** 和 **softwareUpdatesForceDelayed** 属性|
+|添加项|beta|向 [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **softwareUpdatesEnforcedDelayInDays**、**softwareUpdatesForceDelayed** 和 **contentCachingBlocked** 属性|
+|添加项|beta|向 [microsoftStoreForBusinessApp](/graph/api/resources/intune-apps-microsoftstoreforbusinessapp?view=graph-rest-beta) 实体添加了 **licensingType** 属性|
+|添加项|beta|向 [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) 实体添加了 **defenderSecurityCenterDisableClearTpmUI**、**defenderSecurityCenterDisableNotificationAreaUI**、**defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI**、**defenderAdobeReaderLaunchChildProcess** 和 **defenderOfficeCommunicationAppsLaunchChildProcess** 属性|
+|添加项|beta|向 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 实体添加了 **edgeKioskModeRestriction**、**edgeKioskResetAfterIdleTimeInMinutes**、**defenderScheduleScanEnableLowCpuPriority**、**defenderDisableCatchupQuickScan**、**defenderDisableCatchupFullScan** 和 **edgeBlockSearchEngineCustomization** 属性|
+|添加项|beta|向 [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta) 实体添加了 **enableWhiteGlove** 属性|
+|添加项|beta|向 [windowsDeliveryOptimizationConfiguration](/graph/api/resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration?view=graph-rest-beta) 属性添加了 **restrictPeerSelectionBy**、**groupIdSource**、**bandwidthMode**、**backgroundDownloadFromHttpDelayInSeconds**、**foregroundDownloadFromHttpDelayInSeconds**、**minimumRamAllowedToPeerInGigabytes**、**minimumDiskSizeAllowedToPeerInGigabytes**、**minimumFileSizeToCacheInMegabytes**、**minimumBatteryPercentageAllowedToUpload**、**modifyCacheLocation**、**maximumCacheAgeInDays**、**maximumCacheSize** 和 **vpnPeerCaching** 属性|
+|添加项|beta|向 [windowsInformationProtectionWipeAction](/graph/api/resources/intune-mam-windowsinformationprotectionwipeaction?view=graph-rest-beta) 实体添加了 **lastCheckInDateTime** 属性|
+|添加项|beta|向 [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) 实体添加了 **managedDeviceEncryptionStates** 导航属性|
+|添加项|beta|向 [configurationManagerClientEnabledFeatures](/graph/api/resources/intune-devices-configurationmanagerclientenabledfeatures?view=graph-rest-beta) 复杂类型添加了 **endpointProtection** 和 **officeApps** 属性|
+|添加项|beta|向 [win32LobAppMsiInformation](/graph/api/resources/intune-apps-win32lobappmsiinformation?view=graph-rest-beta) 复杂类型添加了 **productName** 和 **publisher** 属性|
+|添加项|beta|向 [managedAppRemediationAction](/graph/api/resources/intune-mam-managedappremediationaction?view=graph-rest-beta) 枚举类型添加了 **warn** 成员|
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
@@ -593,7 +614,7 @@ ms.locfileid: "30057069"
 |添加项|beta|向 [managementAgentType](/graph/api/resources/intune-devices-managementagenttype?view=graph-rest-beta) 枚举类型添加了 **microsoft365ManagedMdm** 成员|
 |添加项|beta|向 [subjectAlternativeNameType](/graph/api/resources/intune-deviceconfig-subjectalternativenametype?view=graph-rest-beta) 枚举类型添加了 **domainNameService** 成员|
 |添加项|beta|向 [wiFiSecurityType](/graph/api/resources/intune-deviceconfig-wifisecuritytype?view=graph-rest-beta) 枚举类型添加了 **wpa2Personal** 和 **wpa2Enterprise** 成员|
-|添加项|beta|向 [windowsMalwareCategory](/graph/api/resources/intune-devices-windowsmalwarecategory?view=graph-rest-beta) 枚举类型添加了 **enterpriseUnwantedSoftware**、**ransom** 和 **hipsRule** 成员|
+|加|beta|向 [windowsMalwareCategory](/graph/api/resources/intune-devices-windowsmalwarecategory?view=graph-rest-beta) 枚举类型添加了 **enterpriseUnwantedSoftware**、**ransom** 和 **hipsRule** 成员|
 
 ### <a name="outlook-calendar"></a>Outlook 日历
 
@@ -1869,7 +1890,7 @@ ms.locfileid: "30057069"
 | 更改类型 | 版本 | 说明                              |
 | :---------- | :------ | :--------------------------------------- |
 | 添加项    | Beta    | 添加了新实体：<br/>[windowsPrivacyDataAccessControlItem](/graph/api/resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem?view=graph-rest-beta)<br/> |
-| Addition    | Beta    | 添加了新复杂类型：<br/>[configurationManagerClientEnabledFeatures](/graph/api/resources/intune-devices-configurationmanagerclientenabledfeatures?view=graph-rest-beta)<br/>[windowsDefenderScanActionResult](/graph/api/resources/intune-devices-windowsdefenderscanactionresult?view=graph-rest-beta)<br/> |
+| 添加项    | Beta    | 添加了新复杂类型：<br/>[configurationManagerClientEnabledFeatures](/graph/api/resources/intune-devices-configurationmanagerclientenabledfeatures?view=graph-rest-beta)<br/>[windowsDefenderScanActionResult](/graph/api/resources/intune-devices-windowsdefenderscanactionresult?view=graph-rest-beta)<br/> |
 | Addition    | Beta    | 在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 上添加了 [windowsDefenderScan](/graph/api/intune-devices-manageddevice-windowsdefenderscan?view=graph-rest-beta) 操作 |
 | Addition    | Beta    | 在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 上添加了 [windowsDefenderUpdateSignatures](/graph/api/intune-devices-manageddevice-windowsdefenderupdatesignatures?view=graph-rest-beta) 操作 |
 | Addition    | Beta    | 在 [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta) 上添加了 [windowsPrivacyAccessControls](/graph/api/intune-deviceconfig-deviceconfiguration-windowsprivacyaccesscontrols?view=graph-rest-beta) 操作 |
