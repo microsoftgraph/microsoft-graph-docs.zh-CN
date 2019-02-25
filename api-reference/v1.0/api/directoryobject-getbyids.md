@@ -1,15 +1,15 @@
 ---
 title: 获取 ID 列表中的目录对象
-description: 选择查询选项不适用于此操作。
+description: select` 查询选项不适用于此操作。
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2fab85844d810627ca4e44395477716eb0828ffa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: a209d391c72edd453bbfe9232b7d02121ca98128
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986815"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212387"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>获取 ID 列表中的目录对象
 
@@ -53,7 +53,7 @@ POST /directoryObjects/getByIds
 | 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
 |ids|String collection| 要返回其对象的 ID 集合。最多可以指定 1000 个 ID。 |
-|types|String collection| 指定一组资源集搜索的资源类型的集合。 如果未指定，则默认为[directoryObject](../resources/directoryobject.md)，其中包含所有目录中定义的资源类型。 派生的任何对象`directoryObject`可能指定集合中的例如：[用户](../resources/user.md)、[组](../resources/group.md)、[设备](../resources/device.md)，等等。 值不区分大小写。|
+|types|String collection| 指定要搜索的资源集合集的资源类型集合。 如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)，其包含目录中定义的所有资源类型。 可以在该集合中指定派生自 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0) 的任何对象，例如：[user](/graph/api/resources/user?view=graph-rest-v1.0)、[group](/graph/api/resources/group?view=graph-rest-v1.0)、[device](/graph/api/resources/device?view=graph-rest-v1.0) 等。 若要搜索对[云解决方案提供商](https://partner.microsoft.com/zh-CN/cloud-solution-provider)合作伙伴组织的引用 ，请指定[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0)。 如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)，其包含目录中定义的所有资源类型，对[云解决方案提供商](https://partner.microsoft.com/zh-CN/cloud-solution-provider)合作伙伴组织的引用除外。 这些值不区分大小写。|
 
 ## <a name="response"></a>响应
 
