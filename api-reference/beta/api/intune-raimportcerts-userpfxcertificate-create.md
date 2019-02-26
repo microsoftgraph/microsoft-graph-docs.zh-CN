@@ -1,21 +1,21 @@
 ---
 title: 创建 userPFXCertificate
 description: 创建新的 userPFXCertificate 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8896e3bb300507f0d1a89892852a2e1d4865d9b3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bf704664785eb1d61aacea3b72dcaed7a02bd24d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418167"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158707"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
 
@@ -44,30 +44,30 @@ POST /deviceManagement/userPfxCertificates
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 userPFXCertificate 对象的 JSON 表示形式。
+在请求正文中, 提供 userPFXCertificate 对象的 JSON 表示形式。
 
-下表显示时创建 userPFXCertificate 所需的属性。
+下表显示创建 userPFXCertificate 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|PFX 证书的唯一标识符。|
-|指纹|String|Sha-1 PFX 证书的指纹。|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的适用于从部署的视图点的用途。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
+|id|字符串|PFX 证书的唯一标识符。|
+|为|String|SHA-1 PFX 证书的指纹。|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
 |userPrincipalName|String|PFX 证书的用户主体名称。|
-|startDateTime|DateTimeOffset|证书的有效性开始日期/时间。|
-|expirationDateTime|DateTimeOffset|证书的有效性过期日期/时间。|
+|startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
+|expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
 |providerName|String|用于加密此 blob 的加密提供程序。|
-|键名|String|用于加密 blob （在提供程序） 项的名称。|
-|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|填充在加密/解密过程中使用提供程序的方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
+|名|String|用于对 blob 进行加密的密钥 (在提供程序中) 的名称。|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|加密/解密过程中提供程序使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|加密的 PFX blob。|
 |encryptedPfxPassword|String|加密的 PFX 密码。|
-|createdDateTime|DateTimeOffset|日期/时间时此 PFX 证书已导入。|
-|lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书时的日期/时间。|
+|createdDateTime|DateTimeOffset|导入此 PFX 证书的日期/时间。|
+|lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书的日期/时间。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
 
 ## <a name="example"></a>示例
 

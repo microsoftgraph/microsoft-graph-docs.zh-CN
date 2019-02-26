@@ -1,29 +1,29 @@
 ---
 title: deviceManagementTroubleshootingErrorResource 资源类型
-description: 到 Azure 门户或 Microsoft doc 可能对象代表链接到故障排除信息的链接。
-localization_priority: Normal
+description: 表示指向疑难解答信息的链接的对象, 则该链接可能指向 Azure 门户或 Microsoft doc。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5653801fb3e4575e642c012721b667f51e791cc1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 25d97a6d085b9f1b7e0b1ab73361be3ac7ae74d2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429574"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155557"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>deviceManagementTroubleshootingErrorResource 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-到 Azure 门户或 Microsoft doc 可能对象代表链接到故障排除信息的链接。
+表示指向疑难解答信息的链接的对象, 则该链接可能指向 Azure 门户或 Microsoft doc。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |text|String|尚未记录|
-|link|String|指向 web 资源的链接。 可以包含任何以下格式化程序: {{UPN}} {{DeviceGUID}} {{UserGUID}}|
+|link|String|指向 web 资源的链接。 可以包含以下任何格式化程序: {{UPN}}、{{DeviceGUID}}、{{UserGUID}}|
 
 ## <a name="relationships"></a>关系
 无

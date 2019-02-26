@@ -4,28 +4,29 @@ description: 删除 user。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3bb78ef11b67ba2a4d0c5f8ab9b15c65ad2ec26f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e66d987c2e88f40dd5b104961e9203dcd636651a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961524"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254623"
 ---
-# <a name="delete-user"></a>删除 user
+# <a name="delete-user"></a>删除用户
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除 [user](../resources/intune-shared-user.md)。
+
 ## <a name="prerequisites"></a>先决条件
-以下权限之一需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
+若要调用此 API, 必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）| _随上下文_|
+|委派（工作或学校帐户）| _因上下文而异_|
 | &nbsp;&nbsp;设备 | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp;入职培训 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp;疑难解答 | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;载入 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;故障排除 | DeviceManagementManagedDevices.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 

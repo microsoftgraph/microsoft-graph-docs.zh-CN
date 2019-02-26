@@ -1,27 +1,29 @@
 ---
 title: ipRange 资源类型
 description: 用于表示 IPV4、IPV6 地址范围的 IP 范围基类
-localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 3d89ee22be38764d6eacadcb28a26a3a83c03bc8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 11208723f62a84e371c37160bdbd0ab251fa2546
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982083"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254588"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于表示 IPV4、IPV6 地址范围的 IP 范围基类
+
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>关系
 无
+
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!-- {

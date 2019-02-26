@@ -1,21 +1,21 @@
 ---
 title: managedEBook 资源类型
 description: 包含托管电子书基属性的抽象类。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08bd5cc6f5630aca0ff5b35c5590875d259ad294
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 24a8619d92eee6c666b7126a84895b14e0404755
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422045"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156033"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含托管电子书基属性的抽象类。
 
@@ -29,9 +29,9 @@ ms.locfileid: "29422045"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |displayName|String|电子书的名称。|
-|description|String|说明。|
+|description|字符串|说明。|
 |publisher|String|发布者。|
 |publishedDateTime|DateTimeOffset|电子书的发布日期和时间。|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。|
@@ -41,9 +41,9 @@ ms.locfileid: "29422045"
 |privacyInformationUrl|String|隐私声明 Url。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
-|categories|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)集合|此电子图书类别列表。|
+|categories|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)集合|此电子书的类别列表。|
 |assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 集合|此电子书的分配列表。|
 |installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|移动应用安装摘要。|
 |deviceStates|[deviceInstallState](../resources/intune-books-deviceinstallstate.md) 集合|此电子书的安装状态列表。|

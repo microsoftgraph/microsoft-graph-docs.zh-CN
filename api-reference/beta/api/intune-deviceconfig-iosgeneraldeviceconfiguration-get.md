@@ -1,21 +1,21 @@
 ---
 title: 获取 iosGeneralDeviceConfiguration
 description: 读取 iosGeneralDeviceConfiguration 对象的属性和关系。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 268e62dca95f09fd530c9c0550053b3b5ec40967
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8e308e14a9a7001e7647e6e40e66694d57c11cf8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405014"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158273"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>获取 iosGeneralDeviceConfiguration
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) 对象的属性和关系。
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9437
+Content-Length: 9800
 
 {
   "value": {
@@ -114,16 +114,20 @@ Content-Length: 9437
     "appStoreBlockInAppPurchases": true,
     "appStoreBlockUIAppInstallation": true,
     "appStoreRequirePassword": true,
+    "autoFillForceAuthentication": true,
     "bluetoothBlockModification": true,
     "cameraBlocked": true,
     "cellularBlockDataRoaming": true,
     "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
     "cellularBlockPerAppDataModification": true,
     "cellularBlockPersonalHotspot": true,
+    "cellularBlockPlanModification": true,
     "cellularBlockVoiceRoaming": true,
     "certificatesBlockUntrustedTlsCertificates": true,
     "classroomAppBlockRemoteScreenObservation": true,
     "classroomAppForceUnpromptedScreenObservation": true,
+    "classroomForceAutomaticallyJoinClasses": true,
+    "classroomForceUnpromptedAppAndDeviceLock": true,
     "compliantAppsList": [
       {
         "@odata.type": "microsoft.graph.appListItem",
@@ -148,6 +152,7 @@ Content-Length: 9437
     ],
     "enterpriseAppBlockTrust": true,
     "enterpriseAppBlockTrustModification": true,
+    "esimBlockModification": true,
     "faceTimeBlocked": true,
     "findMyFriendsBlocked": true,
     "gamingBlockGameCenterFriends": true,
@@ -274,6 +279,7 @@ Content-Length: 9437
     "passcodeRequiredType": "alphanumeric",
     "passcodeRequired": true,
     "podcastsBlocked": true,
+    "proximityBlockSetupToNewDevice": true,
     "safariBlockAutofill": true,
     "safariBlockJavaScript": true,
     "safariBlockPopups": true,
@@ -291,6 +297,8 @@ Content-Length: 9437
     "siriBlockedWhenLocked": true,
     "siriBlockUserGeneratedContent": true,
     "siriRequireProfanityFilter": true,
+    "softwareUpdatesEnforcedDelayInDays": 2,
+    "softwareUpdatesForceDelayed": true,
     "spotlightBlockInternetResults": true,
     "voiceDialingBlocked": true,
     "wallpaperBlockModification": true,

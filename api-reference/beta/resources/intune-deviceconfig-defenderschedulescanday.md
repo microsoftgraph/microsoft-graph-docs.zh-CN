@@ -1,36 +1,36 @@
 ---
 title: defenderScheduleScanDay 枚举类型
 description: 'DefenderScheduleScanDay 的可能值 '
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ee08566d0811666dacad158e380f86b30417a3a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5dc459479fb74214f0efe1913a3d281445bc49f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415178"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154556"
 ---
 # <a name="defenderschedulescanday-enum-type"></a>defenderScheduleScanDay 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 DefenderScheduleScanDay 的可能值 
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|日常|0|每天|
+|日常|0|日常|
 |星期一|1|周一|
-|星期二|2|周二|
-|星期三|3|周三|
-|星期四|4|周四|
-|星期五|5|周五|
-|星期六|6|周六|
-|星期日|7|星期日|
-|noScheduledScan|8|无计划的扫描|
+|2001|双面|周二|
+|星期三|第三章|周三|
+|星期三|4|周四|
+|之前|5|周五|
+|星期六|型|周六|
+|日|步|星期日|
+|noScheduledScan|utf-8|无计划扫描|
 
 
 

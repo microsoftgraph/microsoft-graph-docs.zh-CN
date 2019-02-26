@@ -1,29 +1,30 @@
 ---
 title: firewallPacketQueueingMethodType 枚举类型
-description: FirewallPacketQueueingMethod 的可能值
+description: firewallPacketQueueingMethod 的可能值
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3700df6d2eaf0dd0d2dde8a3f4a90be2e3684951
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: cdd9dc0279abc332bbf7b686f7f429fbd8db8883
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940097"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258924"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>firewallPacketQueueingMethodType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-FirewallPacketQueueingMethod 的可能值
+firewallPacketQueueingMethod 的可能值
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|配置通过 Intune，没有值不会替代的用户配置设备默认值|
-|禁用|1|停用数据包的队列|
-|queueInbound|2|队列加密的入站的数据包|
-|queueOutbound|3|用于呼叫转移队列解密出站数据包|
-|queueBoth|4|队列入站和出站数据包|
+|deviceDefault|0|没有由 Intune 配置的值, 请勿覆盖用户配置的设备默认值|
+|禁用|1|禁用数据包队列|
+|queueInbound|双面|对入站加密的数据包进行排队|
+|queueOutbound|第三章|队列解密出站数据包以供转发|
+|queueBoth|4|对入站和出站数据包进行排队|
 
 
 
