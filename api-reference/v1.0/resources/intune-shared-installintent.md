@@ -1,28 +1,29 @@
 ---
 title: installIntent 枚举类型
-description: 可能值由管理员。 选择安装用途
+description: 管理员选择的安装意向的可能值。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: aaea49b0c808b0591a059f46ed0eb06fa17b6177
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 40c36022e08917ac8fbad0ff2647e28da18270bc
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972052"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260415"
 ---
 # <a name="installintent-enum-type"></a>installIntent 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-可能值由管理员。 选择安装用途
+管理员选择的安装意向的可能值。
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|可用|0|可用安装用途。|
-|必需|1|需要安装用途。|
-|卸载|2|卸载安装用途。|
-|availableWithoutEnrollment|3|提供无注册安装用途。|
+|可用|0|可用的安装意图。|
+|必需|1|必需的安装意图。|
+|卸除|双面|卸载安装意向。|
+|availableWithoutEnrollment|第三章|在没有注册安装意向的情况下可用。|
 
 
 

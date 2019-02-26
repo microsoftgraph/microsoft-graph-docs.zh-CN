@@ -1,30 +1,31 @@
 ---
 title: windowsUpdateType 枚举类型
-description: 分支的设备将接收从其更新
+description: 将从哪些分支设备接收其更新
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 90d1f946dd497e650df5eb07004560dda028e14f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f91657cabec59cf1307253d707ba632bf4f99463
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930339"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260219"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-分支的设备将接收从其更新
+将从哪些分支设备接收其更新
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|用户定制|0|允许用户设置。|
-|all|1|半年 （目标） 通道。 设备从半年通道 （目标） 中获取所有适用的功能更新。|
-|businessReadyOnly|2|半年通道。 设备获取更新功能从半年通道。|
-|windowsInsiderBuildFast|3|Windows 内幕生成-Fast|
-|windowsInsiderBuildSlow|4|Windows 内幕生成-速度较慢|
-|windowsInsiderBuildRelease|5|Windows 内幕发布版本|
+|定制|0|允许用户进行设置。|
+|all|1|半年频道 (定向)。 设备从半年频道 (定向) 获取所有适用的功能更新。|
+|businessReadyOnly|双面|半年频道。 设备从半年频道获取功能更新。|
+|windowsInsiderBuildFast|第三章|Windows 预览体验成员内部版本-快速|
+|windowsInsiderBuildSlow|4|Windows 预览体验成员内部版本-慢|
+|windowsInsiderBuildRelease|5|发布 Windows 预览体验成员内部版本|
 
 
 

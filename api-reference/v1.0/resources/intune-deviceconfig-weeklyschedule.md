@@ -3,31 +3,32 @@ title: weeklySchedule 枚举类型
 description: 每周计划的可能值。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 35f41be7d53017072b399fa4c82192897c804fe2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 04773d2c23dde1d103e2865e6cc8d731337e38a9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934658"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263019"
 ---
 # <a name="weeklyschedule-enum-type"></a>weeklySchedule 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 每周计划的可能值。
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|用户定制|0|用户定义，默认值、 没有用途。|
-|日常|1|每天。|
-|星期日|2|星期日。|
-|星期一|3|星期一。|
-|星期二|4|星期二。|
+|定制|0|用户定义, 默认值, 无意向。|
+|日常|1|日常.|
+|日|双面|星期日。|
+|星期一|第三章|星期一。|
+|2001|4|星期二。|
 |星期三|5|星期三。|
-|星期四|6|星期四。|
-|星期五|7|星期五。|
-|星期六|8|星期六。|
+|星期三|型|星期四。|
+|之前|步|星期五。|
+|星期六|utf-8|星期六。|
 
 
 
