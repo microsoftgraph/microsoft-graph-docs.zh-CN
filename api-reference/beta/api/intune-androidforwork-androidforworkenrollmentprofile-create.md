@@ -1,21 +1,21 @@
 ---
 title: 创建 androidForWorkEnrollmentProfile
 description: 创建新的 androidForWorkEnrollmentProfile 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87079cc940967f84ba66c14740b8c93f8f73ca9e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ca77de40443fba5b37e5d4ba55cdc12bfccb791b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417509"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160996"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>创建 androidForWorkEnrollmentProfile
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) 对象。
 
@@ -40,7 +40,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -51,7 +51,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 |属性|类型|说明|
 |:---|:---|:---|
 |accountId|String|注册配置文件所属的租户 GUID。|
-|id|String|注册配置文件的唯一 GUID。|
+|id|字符串|注册配置文件的唯一 GUID。|
 |displayName|String|注册配置文件的显示名称。|
 |description|String|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|

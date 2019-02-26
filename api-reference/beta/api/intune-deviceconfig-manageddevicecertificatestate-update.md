@@ -1,21 +1,21 @@
 ---
 title: 更新 managedDeviceCertificateState
 description: 更新 managedDeviceCertificateState 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f092cd6adcaf1e8da0846c0ce7af354770319b2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a360e35e83712178d71256bdd6f389081e4047c4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409802"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171699"
 ---
 # <a name="update-manageddevicecertificatestate"></a>更新 managedDeviceCertificateState
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)对象的属性。
 
@@ -60,42 +60,42 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)对象的 JSON 表示形式。
+在请求正文中, 提供[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)对象的 JSON 表示形式。
 
-下表显示时创建[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)所需的属性。
+下表显示创建[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|设备平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`。|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|密钥用法。 可取值为：`keyEncipherment`、`digitalSignature`。|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|有效期单位。 可取值为：`days`、`months`、`years`。|
-|certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|发布状态。 可能的值为： `unknown`， `challengeIssued`， `challengeIssueFailed`， `requestCreationFailed`， `requestSubmitFailed`， `challengeValidationSucceeded`， `challengeValidationFailed`， `issueFailed`， `issuePending`， `issued`， `responseProcessingFailed`， `responsePending`， `enrollmentSucceeded`， `enrollmentNotNeeded`， `revoked`， `removedFromCollection`， `renewVerified`， `installFailed`， `installed`, `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
+|certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|颁发状态。 可能的值为`unknown`: `challengeIssued`、 `challengeIssueFailed`、 `requestCreationFailed` `requestSubmitFailed` `challengeValidationSucceeded` `challengeValidationFailed` `issueFailed` `issuePending` `issued` `responseProcessingFailed` `responsePending` `enrollmentSucceeded`、、、、、、、、、、、、、、、、 `enrollmentNotNeeded` `revoked` `removedFromCollection` `renewVerified` `installFailed` `installed`, `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|
 |certificateKeyStorageProvider|[keyStorageProviderOption](../resources/intune-deviceconfig-keystorageprovideroption.md)|密钥存储提供程序。 可取值为：`useTpmKspOtherwiseUseSoftwareKsp`、`useTpmKspOtherwiseFail`、`usePassportForWorkKspOtherwiseFail`、`useSoftwareKsp`。|
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|使用者名称格式。 可取值为：`commonName`、`commonNameIncludingEmail`、`commonNameAsEmail`、`custom`、`commonNameAsIMEI`、`commonNameAsSerialNumber`、`commonNameAsAadDeviceId`、`commonNameAsIntuneDeviceId`、`commonNameAsDurableDeviceId`。|
-|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|使用者替代名称格式。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`。|
-|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|吊销状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
-|certificateProfileDisplayName|String|证书配置文件的显示名称|
+|certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|使用者可选名称格式。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`。|
+|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|撤消状态。 可取值为：`none`、`pending`、`issued`、`failed`、`revoked`。|
+|certificateProfileDisplayName|String|证书配置文件显示名称|
 |deviceDisplayName|String|设备显示名称|
 |userDisplayName|String|用户显示名称|
 |certificateExpirationDateTime|DateTimeOffset|证书到期日期|
-|certificateLastIssuanceStateChangedDateTime|DateTimeOffset|最后一个证书颁发状态更改|
-|lastCertificateStateChangeDateTime|DateTimeOffset|最后一个证书颁发状态更改|
-|certificateIssuer|String|颁发者|
-|certificateThumbprint|String|指纹|
+|certificateLastIssuanceStateChangedDateTime|DateTimeOffset|上次证书颁发状态更改|
+|lastCertificateStateChangeDateTime|DateTimeOffset|上次证书颁发状态更改|
+|certificateIssuer|String|常用|
+|certificateThumbprint|String|为|
 |certificateSerialNumber|String|序列号|
 |certificateKeyLength|Int32|密钥长度|
-|certificateEnhancedKeyUsage|String|扩展的密钥用法|
+|certificateEnhancedKeyUsage|String|扩展密钥用法|
 |certificateValidityPeriod|Int32|有效期|
-|certificateSubjectNameFormatString|String|自定义主题名称格式的使用者名称格式字符串|
-|certificateSubjectAlternativeNameFormatString|String|自定义格式的使用者替代名称格式字符串|
-|certificateIssuanceDateTime|DateTimeOffset|发布日期|
+|certificateSubjectNameFormatString|String|自定义主题名称格式的主题名称格式字符串|
+|certificateSubjectAlternativeNameFormatString|String|自定义格式的使用者可选名称格式字符串|
+|certificateIssuanceDateTime|DateTimeOffset|颁发日期|
 |certificateErrorCode|Int32|错误代码|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md)对象。
 
 ## <a name="example"></a>示例
 

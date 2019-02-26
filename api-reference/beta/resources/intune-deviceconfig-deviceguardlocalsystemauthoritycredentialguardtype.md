@@ -1,30 +1,30 @@
 ---
 title: deviceGuardLocalSystemAuthorityCredentialGuardType 枚举类型
-description: 凭据 Guard 设置的可能值。
-localization_priority: Normal
+description: Credential Guard 设置的可能值。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d8643744e1f5c36cf6c620ac85a6a99c9a77548
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8452f24f0bc5641d9d7ebcfd68c8cd593443554d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398091"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167856"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardType 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-凭据 Guard 设置的可能值。
+Credential Guard 设置的可能值。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|notConfigured|0|关闭凭据 Guard 远程如果没有 UEFI 锁定之前配置。|
-|enableWithUEFILock|1|打开与 UEFI 锁定凭据 Guard。|
-|enableWithoutUEFILock|2|UEFI 锁定的情况下启用凭据 Guard。|
+|notConfigured|0|如果之前未进行配置, 则远程关闭 Credential Guard (不启用 UEFI 锁定)。|
+|enableWithUEFILock|1|启用 Credential Guard 和 UEFI 锁定。|
+|enableWithoutUEFILock|双面|打开不含 UEFI 锁定的 Credential Guard。|
 
 
 

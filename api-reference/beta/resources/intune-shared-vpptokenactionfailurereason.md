@@ -1,32 +1,32 @@
 ---
 title: vppTokenActionFailureReason 枚举类型
-description: 可能的 Apple 卷购买计划令牌操作失败的原因的类型。
-localization_priority: Normal
+description: Apple volume purchase program 令牌操作失败的可能原因类型。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bba4c339b774fd32a852925729e2e158dc13e52d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 05d3137bb5aac2aef3024825df5e7e0b84ffde51
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393142"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169690"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>vppTokenActionFailureReason 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-可能的 Apple 卷购买计划令牌操作失败的原因的类型。
+Apple volume purchase program 令牌操作失败的可能原因类型。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|无。|
-|appleFailure|1|在 Apple 的服务时出错。|
-|internalError|2|存在内部错误。|
-|expiredVppToken|3|因为 Apple 卷购买计划令牌已过期时出错。|
-|expiredApplePushNotificationCertificate|4|由于 Apple 卷购买程序推送通知证书过期时出错。|
+|appleFailure|1|Apple 的服务上出现错误。|
+|internalError|双面|有一个内部错误。|
+|expiredVppToken|第三章|由于 Apple volume purchase program 令牌已过期, 因此出现错误。|
+|expiredApplePushNotificationCertificate|4|由于 Apple volume purchase program 推送通知证书已过期, 因此出现错误。|
 
 
 

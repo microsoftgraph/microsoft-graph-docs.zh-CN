@@ -1,21 +1,21 @@
 ---
 title: 更新 deviceManagementScriptUserState
 description: 更新 deviceManagementScriptUserState 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2f25746d54bf1d7c8f9a03fcefc9cecb826de68
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 12f149f237b2bee35cacaf7736507baef24c1142
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419938"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167366"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>更新 deviceManagementScriptUserState
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)对象的属性。
 
@@ -44,21 +44,21 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)对象的 JSON 表示形式。
+在请求正文中, 提供[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)对象的 JSON 表示形式。
 
-下表显示时创建[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)所需的属性。
+下表显示创建[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备管理脚本的用户状态实体的键。|
-|successDeviceCount|Int32|成功的特定用户的设备计数。|
-|errorDeviceCount|Int32|错误的特定用户的设备计数。|
+|id|字符串|设备管理脚本用户状态实体的键。|
+|successDeviceCount|Int32|特定用户的成功设备计数。|
+|errorDeviceCount|Int32|特定用户的错误设备计数。|
 |userPrincipalName|String|特定用户的用户主体名称。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md)对象。
 
 ## <a name="example"></a>示例
 

@@ -1,21 +1,21 @@
 ---
 title: 获取 managedAppOperation
 description: 读取 managedAppOperation 对象的属性和关系。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8c04c80a3d1d2e97b1d1e013f740086c4fac5d0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 543ce8ca5caac68ccd178a6fe8fb02d719210c15
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422689"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170047"
 ---
 # <a name="get-managedappoperation"></a>获取 managedAppOperation
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [managedAppOperation](../resources/intune-mam-managedappoperation.md) 对象的属性和关系。
 
@@ -43,7 +43,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/oper
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文

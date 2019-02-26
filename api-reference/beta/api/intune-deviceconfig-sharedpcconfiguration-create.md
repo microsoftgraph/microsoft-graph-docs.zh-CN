@@ -1,21 +1,21 @@
 ---
 title: 创建 sharedPCConfiguration
 description: 创建新的 sharedPCConfiguration 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7397ac87deff546114c71a59fc16c91e33101378
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 73b28cfc822d7ced8ba0e418825ea7ad37949f18
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418104"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165105"
 ---
 # <a name="create-sharedpcconfiguration"></a>创建 sharedPCConfiguration
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md) 对象。
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -53,28 +53,23 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|指定在共享电脑上管理帐户的方式。 仅当 disableAccountManager 为 false 时适用。|
 |allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|指示允许在共享电脑上使用哪种类型的帐户。 可取值为：`notConfigured`、`guest`、`domain`。|
-|localStorage|[启用](../resources/intune-shared-enablement
-.md)|指定在共享电脑上是否允许本地存储。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|localStorage|[启用](../resources/intune-shared-enablement.md)|指定在共享电脑上是否允许本地存储。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |allowLocalStorage|Boolean|指定在共享电脑上是否允许本地存储。|
-|setAccountManager|[启用](../resources/intune-shared-enablement
-.md)|禁用共享电脑模式的帐户管理器。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|setAccountManager|[启用](../resources/intune-shared-enablement.md)|禁用共享电脑模式的帐户管理器。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |disableAccountManager|Boolean|禁用共享电脑模式的帐户管理器。|
-|setEduPolicies|[启用](../resources/intune-shared-enablement
-.md)|指定是否默认共享 PC 教育环境策略应启用/禁用/不配置。 对于 Windows 10 RS2 及更高版本，将应用此策略而不将 Enabled 设置为 true。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|setEduPolicies|[启用](../resources/intune-shared-enablement.md)|指定是否应启用/禁用/禁用/禁用默认共享 PC 教育环境策略。 对于 Windows 10 RS2 及更高版本，将应用此策略而不将 Enabled 设置为 true。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |disableEduPolicies|Boolean|指定是否应禁用默认的共享电脑教育环境策略。 对于 Windows 10 RS2 及更高版本，将应用此策略而不将 Enabled 设置为 true。|
-|setPowerPolicies|[启用](../resources/intune-shared-enablement
-.md)|指定是否默认共享 PC 电源策略应启用/禁用。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|setPowerPolicies|[启用](../resources/intune-shared-enablement.md)|指定是否应启用/禁用默认的共享电脑电源策略。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |disablePowerPolicies|Boolean|指定是否应禁用默认的共享电脑电源策略。|
-|signInOnResume|[启用](../resources/intune-shared-enablement
-.md)|指定签名的要求中次设备从唤醒休眠模式。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|signInOnResume|[启用](../resources/intune-shared-enablement.md)|指定当设备从睡眠模式唤醒时登录时的要求。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |disableSignInOnResume|Boolean|禁用每当设备从睡眠模式唤醒时需要登录的要求。|
 |enabled|Boolean|启用共享的电脑模式并应用共享的电脑策略。|
 |idleTimeBeforeSleepInSeconds|Int32|指定电脑进入睡眠状态之前设备必须保持空闲状态的时间（以秒为单位）。 将此值设置为 0 可防止发生睡眠超时。|

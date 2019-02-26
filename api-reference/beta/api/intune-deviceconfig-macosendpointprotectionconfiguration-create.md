@@ -1,21 +1,21 @@
 ---
 title: 创建 macOSEndpointProtectionConfiguration
 description: 创建新的 macOSEndpointProtectionConfiguration 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31163931fd8f905b2ece59a51ba185211c70c474
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c0ced93721538f745a05165175090397128e796a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415955"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171587"
 ---
 # <a name="create-macosendpointprotectionconfiguration"></a>创建 macOSEndpointProtectionConfiguration
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)对象。
 
@@ -45,31 +45,31 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 macOSEndpointProtectionConfiguration 对象的 JSON 表示形式。
+在请求正文中, 提供 macOSEndpointProtectionConfiguration 对象的 JSON 表示形式。
 
-下表显示时创建 macOSEndpointProtectionConfiguration 所需的属性。
+下表显示创建 macOSEndpointProtectionConfiguration 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例范围标记的列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础的设备配置支持分配的范围标记。 此值为 false，并且实体将不会对作用域的用户可见时，不允许将分配给 ScopeTags 属性。 这将发生在 Silverlight 中创建的旧策略，并可以解析通过删除并重新创建 Azure 门户中的策略。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|系统和确定可以从 macOS 设备上运行的下载位置应用程序的隐私设置。 可取值为：`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere`。|
-|gatekeeperBlockOverride|Boolean|如果设置为 true，则用户将覆盖网关守卫将被禁用。|
-|firewallEnabled|Boolean|是否应启用防火墙，或不。|
-|firewallBlockAllIncoming|Boolean|对应于"阻止所有传入连接"选项。|
-|firewallEnableStealthMode|Boolean|对应于"启用隐藏模式"。|
-|firewallApplications|[macOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md)集合|具有防火墙设置的应用程序的列表。 由用户决定不在此列表上的应用程序的防火墙设置。 该集合最多可包含 500 个元素。|
+|gatekeeperAllowedAppSource|[macOSGatekeeperAppSources](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|确定可以从 macOS 设备上运行哪些下载位置应用程序的系统和隐私设置。 可取值为：`notConfigured`、`macAppStore`、`macAppStoreAndIdentifiedDevelopers`、`anywhere`。|
+|gatekeeperBlockOverride|Boolean|如果设置为 true, 将禁用网关的用户替代。|
+|firewallEnabled|Boolean|是否应启用防火墙。|
+|firewallBlockAllIncoming|Boolean|对应于 "阻止所有传入连接" 选项。|
+|firewallEnableStealthMode|Boolean|对应于 "启用隐形模式"。|
+|firewallApplications|[macOSFirewallApplication](../resources/intune-deviceconfig-macosfirewallapplication.md)集合|具有防火墙设置的应用程序列表。 不在此列表中的应用程序的防火墙设置由用户决定。 该集合最多可包含 500 个元素。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 

@@ -4,46 +4,46 @@ description: Office 客户端配置。
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: c171f5f9f3dcedcab0d14b98a6fea0ba8fbe41eb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7a8371da85ee4bbc54943a8fbb29ec99dcb49a49
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393233"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150559"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>officeClientConfiguration 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 Office 客户端配置。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列表 officeClientConfigurations](../api/intune-cirrus-officeclientconfiguration-list.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)集合|列出属性和[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象之间的关系。|
-|[获取 officeClientConfiguration](../api/intune-cirrus-officeclientconfiguration-get.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|读取属性和[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象的关系。|
-|[assign 操作](../api/intune-cirrus-officeclientconfiguration-assign.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)集合|更换所有目标的组策略。|
+|[列出 officeClientConfigurations](../api/intune-cirrus-officeclientconfiguration-list.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)集合|列出[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象的属性和关系。|
+|[获取 officeClientConfiguration](../api/intune-cirrus-officeclientconfiguration-get.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|读取[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象的属性和关系。|
+|[assign 操作](../api/intune-cirrus-officeclientconfiguration-assign.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)集合|替换策略的所有目标组。|
 |[updatePriorities 操作](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|无|更新策略优先级。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|Office 客户端配置策略的 id。|
-|userPreferencePayload|Stream|首选项设置为 JSON 字符串以二进制格式，用户可以重写这些值。|
-|policyPayload|Stream|策略设置 JSON 字符串以二进制格式，不能由用户更改这些值。|
+|id|String|office 客户端配置策略的 Id。|
+|userPreferencePayload|Stream|首选项设置 JSON string 二进制格式, 则用户可以重写这些值。|
+|policyPayload|Stream|策略设置 JSON string 二进制格式, 用户不能更改这些值。|
 |说明|String|尚未记录|
-|displayName|String|管理员提供的 office 客户端的说明配置策略。|
-|lastModifiedDateTime|日期/时间|上次修改日期时间戳的策略。|
-|priority|Int32|优先级值应为每个策略下租户的唯一值并将用于指定在冲突解决，较低值意味着很高的优先级。|
-|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|用户签入的摘要策略。|
-|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)集合|Office 客户端中签入状态的列表。|
+|displayName|String|管理员提供的 office 客户端配置策略的说明。|
+|lastModifiedDateTime|日期/时间|策略的上次修改日期时间戳。|
+|priority|Int32|对于租户下的每个策略, 优先级值应为唯一值, 并将用于冲突解决, 较低值意味着优先级较高。|
+|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|策略的用户签入摘要。|
+|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md)集合|office 客户端签入状态的列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)集合|组策略的工作分配列表。|
+|assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)集合|策略的组分配列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

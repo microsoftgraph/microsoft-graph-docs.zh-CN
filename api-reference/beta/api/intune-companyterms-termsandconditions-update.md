@@ -1,21 +1,21 @@
 ---
 title: 更新 termsAndConditions
 description: 更新 termsAndConditions 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3eca58812eb4032113e968ad054a7a11bf110b81
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 688e0b980e468172fdfd6037327e1e543ae6fb3b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409487"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160198"
 ---
 # <a name="update-termsandconditions"></a>更新 termsAndConditions
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性。
 
@@ -52,13 +52,13 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|T&C 策略的唯一标识符。|
+|id|字符串|T&C 策略的唯一标识符。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |modifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的 T&C 策略名称。 |
-|说明|String|管理员提供的 T&C 策略描述。|
-|title|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
+|说明|字符串|管理员提供的 T&C 策略描述。|
+|title|字符串|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
 |version|Int32|指示当前条款版本的整数。 当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。|

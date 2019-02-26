@@ -1,30 +1,30 @@
 ---
 title: managedDeviceOwnerType 枚举类型
 description: 设备的所有者类型。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46058226987fdba294f2a6c1c33ff9b57dd1e1fa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 17f85b01ac2fb1dc54edf21e22cd4dd8aa883eb7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400709"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153940"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>managedDeviceOwnerType 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备的所有者类型。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|unknown|0|未知。|
-|公司|1|由公司拥有。|
-|personal|2|拥有的联系人。|
+|unknown|0|陌生.|
+|公司|1|由公司负责。|
+|personal|双面|归某人所有。|
 
 
 

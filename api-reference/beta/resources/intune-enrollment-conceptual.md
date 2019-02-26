@@ -1,15 +1,15 @@
 ---
-title: 使用 Intune 注册企业拥有的设备
-description: " (BYOD) 方案。"
+title: 使用 Intune 注册企业设备-Microsoft Graph API
+description: 列出为租户组织注册设备的适用于 Intune 终结点 (REST) 的 Microsoft Graph API。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9671eb7f66be78075209906a4f6f923256afef36
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 240bdc2d65d1ed8920fe1f9c067f1ffcd31a9f11
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928022"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149831"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 
@@ -21,38 +21,38 @@ ms.locfileid: "27928022"
 
 以下 Graph 资源可用于在 Intune 中管理企业拥有的设备：
 
-- [Active directory 的 windows 自动执行某些操作部署配置文件](intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)
-- [Azure AD windows 自动执行某些操作部署配置文件](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
-- [DEP 注册基本配置文件](intune-enrollment-depenrollmentbaseprofile.md)
+- [Active Directory Windows Autopilot Deployment 配置文件](intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)
+- [Azure AD Windows AutoPilot Deployment 配置文件](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
+- [DEP 注册基准配置文件](intune-enrollment-depenrollmentbaseprofile.md)
 - [DEP 注册配置文件](intune-enrollment-depenrollmentprofile.md)
 - [DEP iOS 注册配置文件](intune-enrollment-depiosenrollmentprofile.md)
 - [DEP macOS 注册配置文件](intune-enrollment-depmacosenrollmentprofile.md)
-- [DEP 了员工就职状态设置](intune-enrollment-deponboardingsetting.md)
-- [DEP 标记类型](intune-enrollment-deptokentype.md)
+- [DEP 载入设置](intune-enrollment-deponboardingsetting.md)
+- [DEP 令牌类型](intune-enrollment-deptokentype.md)
 - [发现源](intune-enrollment-discoverysource.md)
 - [注册配置文件](intune-enrollment-enrollmentprofile.md)
 - [注册状态](intune-enrollment-enrollmentstate.md)
-- [导入的 Apple 设备标识](intune-enrollment-importedappledeviceidentity.md)
-- [导入 Apple 设备标识结果](intune-enrollment-importedappledeviceidentityresult.md)
-- [导入的设备标识](intune-enrollment-importeddeviceidentity.md)
-- [导入设备标识结果](intune-enrollment-importeddeviceidentityresult.md)
-- [导入设备的标识类型](intune-enrollment-importeddeviceidentitytype.md)
-- [导入的 windows 自动执行某些操作设备标识](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
-- [导入的 windows 自动执行某些操作设备标识导入状态](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
-- [导入的 windows 自动执行某些操作设备标识状态](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
-- [导入的 windows 自动执行某些操作设备标识上载](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
-- [导入的 windows 自动执行某些操作设备标识上载状态](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
+- [已导入的 Apple 设备标识](intune-enrollment-importedappledeviceidentity.md)
+- [已导入的 Apple 设备标识结果](intune-enrollment-importedappledeviceidentityresult.md)
+- [已导入的设备标识](intune-enrollment-importeddeviceidentity.md)
+- [已导入的设备标识结果](intune-enrollment-importeddeviceidentityresult.md)
+- [已导入的设备标识类型](intune-enrollment-importeddeviceidentitytype.md)
+- [已导入的 Windows Autopilot 设备标识](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
+- [已导入的 Windows Autopilot 设备标识导入状态](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
+- [已导入的 Windows Autopilot 设备标识状态](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
+- [已导入的 Windows Autopilot 设备标识上载](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
+- [已导入的 Windows Autopilot 设备标识上载状态](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
 - [iTunes 配对模式](intune-enrollment-itunespairingmode.md)
-- [管理证书与指纹](intune-enrollment-managementcertificatewiththumbprint.md)
-- [即开体验设置](intune-enrollment-outofboxexperiencesettings.md)
+- [带指纹的管理证书](intune-enrollment-managementcertificatewiththumbprint.md)
+- [开箱即用体验设置](intune-enrollment-outofboxexperiencesettings.md)
 - [平台](intune-enrollment-platform.md)
-- [Windows 自动执行某些操作部署配置文件](intune-enrollment-windowsautopilotdeploymentprofile.md)
-- [Windows 自动执行某些操作部署配置文件分配](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
-- [自动执行某些操作设备的 Windows 标识](intune-enrollment-windowsautopilotdeviceidentity.md)
-- [Windows 自动执行某些操作配置文件分配详细状态](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
-- [Windows 自动执行某些操作配置文件的工作分配状态](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
-- [Windows 自动执行某些操作设置](intune-enrollment-windowsautopilotsettings.md)
-- [Windows 自动执行某些操作同步状态](intune-enrollment-windowsautopilotsyncstatus.md)
+- [Windows Autopilot Deployment 配置文件](intune-enrollment-windowsautopilotdeploymentprofile.md)
+- [Windows Autopilot Deployment 配置文件分配](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
+- [Windows Autopilot 设备标识](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Windows Autopilot 配置文件分配详细状态](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
+- [Windows Autopilot 配置文件分配状态](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
+- [Windows Autopilot 设置](intune-enrollment-windowsautopilotsettings.md)
+- [Windows Autopilot 同步状态](intune-enrollment-windowsautopilotsyncstatus.md)
 - [Windows 设备使用类型](intune-enrollment-windowsdeviceusagetype.md)
 - [Windows 注册状态屏幕设置](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Windows 用户类型](intune-enrollment-windowsusertype.md)

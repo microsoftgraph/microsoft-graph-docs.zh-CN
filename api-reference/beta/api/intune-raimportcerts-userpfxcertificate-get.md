@@ -1,23 +1,23 @@
 ---
 title: 获取 userPFXCertificate
-description: 读取属性和 userPFXCertificate 对象的关系。
-localization_priority: Normal
+description: 读取 userPFXCertificate 对象的属性和关系。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 464c3e5b9cbbc87987c31d4717028b75ba25dc85
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a023a7c2137a02ce96ad14d9eb1e48d2cac8ce85
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404979"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153093"
 ---
 # <a name="get-userpfxcertificate"></a>获取 userPFXCertificate
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取属性和[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的关系。
+读取[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
@@ -50,7 +50,7 @@ GET /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
 
 ## <a name="example"></a>示例
 

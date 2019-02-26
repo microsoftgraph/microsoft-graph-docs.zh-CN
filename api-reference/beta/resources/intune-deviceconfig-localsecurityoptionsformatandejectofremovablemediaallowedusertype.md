@@ -1,21 +1,21 @@
 ---
 title: localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 枚举类型
 description: LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 的可能值
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b708f1ec4afb3165cfa8f8d59d492f4b6ae4c6c2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e740f5a7e70d4244a1b0216b4d8c9719b2d82304
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424187"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161206"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 的可能值
 
@@ -24,8 +24,8 @@ LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 的可能值
 |:---|:---|:---|
 |notConfigured|0|未配置|
 |管理员|1|管理员|
-|administratorsAndPowerUsers|2|管理员和超级用户|
-|administratorsAndInteractiveUsers|3|管理员和交互式用户 |
+|administratorsAndPowerUsers|双面|管理员和高级用户|
+|administratorsAndInteractiveUsers|第三章|管理员和交互用户 |
 
 
 

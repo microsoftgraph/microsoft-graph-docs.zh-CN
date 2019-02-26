@@ -1,21 +1,21 @@
 ---
 title: 创建 cartToClassAssociation
 description: 创建新的 cartToClassAssociation 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2368507adbf7e0065b10d4c0c93353d81d5d936
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a4fe03f073fec54db6f9136ed104033e1deaf857
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423669"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150083"
 ---
 # <a name="create-carttoclassassociation"></a>创建 cartToClassAssociation
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象。
 
@@ -40,29 +40,29 @@ POST /deviceManagement/cartToClassAssociations
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 cartToClassAssociation 对象的 JSON 表示形式。
+在请求正文中, 提供 cartToClassAssociation 对象的 JSON 表示形式。
 
-下表显示时创建 cartToClassAssociation 所需的属性。
+下表显示创建 cartToClassAssociation 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|version|Int32|CartToClassAssociation 版本。|
+|version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
-|说明|String|管理员提供 CartToClassAssociation 的说明。|
-|deviceCartIds|String 集合|设备车与类相关联的标识符。|
-|classroomIds|String 集合|教室与设备车相关联的标识符。|
+|说明|String|管理员提供的 CartToClassAssociation 说明。|
+|deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
+|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象。
 
 ## <a name="example"></a>示例
 

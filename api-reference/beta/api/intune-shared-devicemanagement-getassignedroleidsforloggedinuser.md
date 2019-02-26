@@ -1,25 +1,25 @@
 ---
 title: getAssignedRoleIdsForLoggedInUser 函数
-description: 检索已分配的角色定义和角色分配的当前经过身份验证的用户。
+description: 检索当前已通过身份验证的用户分配的角色定义和角色分配。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c8d1618aeece15fc482d0d850f8938d45cb53edd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2927568b3363dc012070aae89a2dc3108fe7fa17
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408290"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170292"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>getAssignedRoleIdsForLoggedInUser 函数
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-检索已分配的角色定义和角色分配的当前经过身份验证的用户。
+检索当前已通过身份验证的用户分配的角色定义和角色分配。
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -47,7 +47,7 @@ GET /deviceManagement/getAssignedRoleIdsForLoggedInUser
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此函数返回`200 OK`响应代码和响应正文中**deviceAndAppManagementAssignedRoleId** 。
+如果成功, 此函数会在`200 OK`响应正文中返回响应代码和**deviceAndAppManagementAssignedRoleId** 。
 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求

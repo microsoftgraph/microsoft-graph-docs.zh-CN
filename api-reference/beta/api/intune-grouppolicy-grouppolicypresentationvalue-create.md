@@ -1,21 +1,21 @@
 ---
 title: 创建 groupPolicyPresentationValue
 description: 创建新的 groupPolicyPresentationValue 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6fbf02bdf9fb1c5d7f5fe5790943a956f2200c2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e8e657917d0c07173e9a4a4553a7deaecc0f06f1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429443"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160898"
 ---
 # <a name="create-grouppolicypresentationvalue"></a>创建 groupPolicyPresentationValue
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)对象。
 
@@ -40,24 +40,24 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 groupPolicyPresentationValue 对象的 JSON 表示形式。
+在请求正文中, 提供 groupPolicyPresentationValue 对象的 JSON 表示形式。
 
-下表显示时创建 groupPolicyPresentationValue 所需的属性。
+下表显示创建 groupPolicyPresentationValue 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|lastModifiedDateTime|DateTimeOffset|日期和时间上次修改对象。|
-|createdDateTime|DateTimeOffset|日期和时间创建对象。|
+|lastModifiedDateTime|DateTimeOffset|上次修改对象的日期和时间。|
+|createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |id|String|实体的键。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)对象。
 
 ## <a name="example"></a>示例
 

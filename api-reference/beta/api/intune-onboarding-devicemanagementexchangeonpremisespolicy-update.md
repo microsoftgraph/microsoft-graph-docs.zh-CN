@@ -1,21 +1,21 @@
 ---
 title: 更新 deviceManagementExchangeOnPremisesPolicy
 description: 更新 deviceManagementExchangeOnPremisesPolicy 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 633f1b80895bd84c27c57b5cee26aa286b1d0e49
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a94f22aa4d7dffcd448ad5e742198ddca809d781
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407205"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168024"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>更新 deviceManagementExchangeOnPremisesPolicy
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)对象的属性。
 
@@ -45,22 +45,22 @@ PATCH /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPr
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)对象的 JSON 表示形式。
+在请求正文中, 提供[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)对象的 JSON 表示形式。
 
-下表显示时创建[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)所需的属性。
+下表显示创建[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|尚未记录|
-|notificationContent|Binary|将发送到隔离通过此策略的用户的通知文本。 这是 UTF8 编码字节数组 HTML。|
-|defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Exchange 中的默认访问状态。 此规则全局适用于整个 Exchange 组织。 可取值为：`none`、`allow`、`block`、`quarantine`。|
-|accessRules|[deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)集合|在 Exchange 规则设备访问的列表。 访问规则应用于整个 Exchange 组织的全局|
-|knownDeviceClasses|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)集合|已知到 Exchange 的设备类列表|
+|notificationContent|Binary|将发送给此策略隔离的用户的通知文本。 这是 UTF8 编码的字节数组 HTML。|
+|defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Exchange 中的默认访问状态。 此规则全局应用于整个 Exchange 组织。 可取值为：`none`、`allow`、`block`、`quarantine`。|
+|accessRules|[deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)集合|Exchange 中的设备访问规则列表。 访问规则全局应用于整个 Exchange 组织|
+|knownDeviceClasses|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)集合|已知的 Exchange 设备类别的列表|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)对象。
 
 ## <a name="example"></a>示例
 

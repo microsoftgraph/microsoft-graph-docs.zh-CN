@@ -1,36 +1,36 @@
 ---
 title: deviceProtectionOverview 资源类型
-description: 硬件的给定设备的信息。
-localization_priority: Normal
+description: 给定设备的硬件信息。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 902e3a6062d2aa50c96c27eb9d542905bf9a029d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2d6cd5cc1eef939476a6fa3b5c46a7cfa315607b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418986"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154087"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>deviceProtectionOverview 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-硬件的给定设备的信息。
+给定设备的硬件信息。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|totalReportedDeviceCount|Int32|总设备计数。|
-|inactiveThreatAgentDeviceCount|Int32|非活动威胁代理计数设备|
-|unknownStateThreatAgentDeviceCount|Int32|与为未知计数的威胁代理状态的设备。|
-|pendingSignatureUpdateDeviceCount|Int32|使用旧签名计数的设备。|
-|cleanDeviceCount|Int32|清理设备计数。|
-|pendingFullScanDeviceCount|Int32|待处理的完全扫描设备计数。|
-|pendingRestartDeviceCount|Int32|挂起的重新启动设备计数。|
-|pendingManualStepsDeviceCount|Int32|待处理的手动步骤设备计数。|
-|pendingOfflineScanDeviceCount|Int32|待处理的脱机扫描设备计数。|
+|totalReportedDeviceCount|Int32|设备计数总数。|
+|inactiveThreatAgentDeviceCount|Int32|带有非活动威胁代理计数的设备|
+|unknownStateThreatAgentDeviceCount|Int32|包含威胁代理状态的设备作为未知计数。|
+|pendingSignatureUpdateDeviceCount|Int32|具有旧签名计数的设备。|
+|cleanDeviceCount|Int32|清洗设备计数。|
+|pendingFullScanDeviceCount|Int32|正在等待完全扫描设备计数。|
+|pendingRestartDeviceCount|Int32|等待重新启动设备计数。|
+|pendingManualStepsDeviceCount|Int32|正在等待手动步骤设备计数。|
+|pendingOfflineScanDeviceCount|Int32|等待脱机扫描设备计数。|
 |criticalFailuresDeviceCount|Int32|严重故障设备计数。|
 
 ## <a name="relationships"></a>关系

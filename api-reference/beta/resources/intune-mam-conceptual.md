@@ -1,15 +1,15 @@
 ---
-title: 如何通过 Microsoft Intune 保护公司的应用数据
-description: Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
+title: 使用 microsoft Intune 管理移动应用-microsoft Graph API
+description: 列出与租户组织的移动应用管理 (MAM) 相关的适用于 Intune 终结点 (REST) 的 Microsoft Graph API。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 563f787f2eb37b278a16c35639e0d607d3d9ee68
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4443c78c6ae58979b0390496d8d560bb15a90669
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419000"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150398"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -19,37 +19,37 @@ ms.locfileid: "29419000"
 
 Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢失。
 
-你可以使用 Intune 应用保护策略帮助保护公司的数据。 因为 Intune 应用程序保护策略可用于独立于任何移动设备管理 (MDM) 解决方案，可用于保护贵公司的数据使用或不注册设备的设备管理解决方案中。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
+你可以使用 Intune 应用保护策略帮助保护公司的数据。 由于 Intune 应用保护策略可独立于任何移动设备管理 (MDM) 解决方案使用, 因此您可以使用它在设备管理解决方案中使用或不注册设备来保护公司的数据。 通过实现应用级策略，既可以限制对公司资源的访问，也可以将数据保留在 IT 部门的范围之内。
 
 以下 Graph 资源可用于在 Intune 中管理应用保护策略：
 
 - [Android 管理的应用保护](intune-mam-androidmanagedappprotection.md)
 - [Android 管理的应用注册](intune-mam-androidmanagedappregistration.md)
 - [Android 移动应用标识符](intune-mam-androidmobileappidentifier.md)
-- [应用程序管理级别](intune-mam-appmanagementlevel.md)
+- [应用管理级别](intune-mam-appmanagementlevel.md)
 - [应用程序类型](intune-wip-applicationtype.md)
 - [默认托管的应用保护](intune-mam-defaultmanagedappprotection.md)
-- [Intune 品牌配置文件](intune-wip-intunebrandingprofile.md)
-- [Intune 品牌的配置文件分配](intune-wip-intunebrandingprofileassignment.md)
+- [Intune 品牌打造配置文件](intune-wip-intunebrandingprofile.md)
+- [Intune 品牌打造配置文件分配](intune-wip-intunebrandingprofileassignment.md)
 - [iOS 管理的应用保护](intune-mam-iosmanagedappprotection.md)
 - [iOS 管理的应用注册](intune-mam-iosmanagedappregistration.md)
 - [iOS 移动应用标识符](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
-- [托管应用程序剪贴板共享级别](intune-mam-managedappclipboardsharinglevel.md)
+- [受管理的应用剪贴板共享级别](intune-mam-managedappclipboardsharinglevel.md)
 - [托管的应用配置](intune-mam-managedappconfiguration.md)
-- [托管应用程序数据的加密类型](intune-mam-managedappdataencryptiontype.md)
-- [托管的应用程序数据存储位置](intune-mam-managedappdatastoragelocation.md)
-- [托管的应用程序数据传输级别](intune-mam-managedappdatatransferlevel.md)
+- [受管理应用的数据加密类型](intune-mam-managedappdataencryptiontype.md)
+- [受管理应用的数据存储位置](intune-mam-managedappdatastoragelocation.md)
+- [受管理应用的数据传输级别](intune-mam-managedappdatatransferlevel.md)
 - [托管的应用诊断状态](intune-mam-managedappdiagnosticstatus.md)
-- [托管的应用程序标记原因](intune-mam-managedappflaggedreason.md)
+- [受管理应用的已标记原因](intune-mam-managedappflaggedreason.md)
 - [托管的应用操作](intune-mam-managedappoperation.md)
-- [托管的应用程序 PIN 字符集。](intune-mam-managedapppincharacterset.md)
+- [托管的应用 PIN 字符集](intune-mam-managedapppincharacterset.md)
 - [托管的应用策略](intune-mam-managedapppolicy.md)
 - [托管应用策略部署摘要](intune-mam-managedapppolicydeploymentsummary.md)
 - [每个应用的托管应用策略部署摘要](intune-mam-managedapppolicydeploymentsummaryperapp.md)
 - [托管的应用保护](intune-mam-managedappprotection.md)
 - [托管应用注册](intune-mam-managedappregistration.md)
-- [托管的应用程序修复操作](intune-mam-managedappremediationaction.md)
+- [托管的应用修正操作](intune-mam-managedappremediationaction.md)
 - [托管应用状态](intune-mam-managedappstatus.md)
 - [托管应用原始状态](intune-mam-managedappstatusraw.md)
 - [托管移动应用](intune-mam-managedmobileapp.md)
@@ -65,7 +65,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 信息保护数据恢复证书](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Windows 信息保护桌面应用](intune-mam-windowsinformationprotectiondesktopapp.md)
 - [Windows 信息保护设备注册](intune-mam-windowsinformationprotectiondeviceregistration.md)
-- [Windows 的信息保护实施级别](intune-mam-windowsinformationprotectionenforcementlevel.md)
+- [Windows 信息保护强制级别](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Windows 信息保护 IP 范围集合](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Windows 信息保护网络学习摘要](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
 - [Windows 信息保护 PIN 字符要求](intune-mam-windowsinformationprotectionpincharacterrequirements.md)

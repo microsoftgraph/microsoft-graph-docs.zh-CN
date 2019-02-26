@@ -1,23 +1,23 @@
 ---
-title: 列表 windowsDeliveryOptimizationConfigurations
-description: 列出属性和 windowsDeliveryOptimizationConfiguration 对象之间的关系。
-localization_priority: Normal
+title: 列出 windowsDeliveryOptimizationConfigurations
+description: 列出 windowsDeliveryOptimizationConfiguration 对象的属性和关系。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6ac7b4fcd3967f50a098a9f0149d10e50f3b429
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8652ff72647740ebcaf8b62ccdd5c1fa91d86762
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429328"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168073"
 ---
-# <a name="list-windowsdeliveryoptimizationconfigurations"></a>列表 windowsDeliveryOptimizationConfigurations
+# <a name="list-windowsdeliveryoptimizationconfigurations"></a>列出 windowsDeliveryOptimizationConfigurations
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出属性和[windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)对象之间的关系。
+列出[windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
@@ -41,14 +41,14 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)对象集合。
 
 ## <a name="example"></a>示例
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 566
+Content-Length: 1389
 
 {
   "value": [
@@ -79,7 +79,26 @@ Content-Length: 566
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "deliveryOptimizationMode": "httpOnly"
+      "deliveryOptimizationMode": "httpOnly",
+      "restrictPeerSelectionBy": "subnetMask",
+      "groupIdSource": {
+        "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSource"
+      },
+      "bandwidthMode": {
+        "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"
+      },
+      "backgroundDownloadFromHttpDelayInSeconds": 8,
+      "foregroundDownloadFromHttpDelayInSeconds": 8,
+      "minimumRamAllowedToPeerInGigabytes": 2,
+      "minimumDiskSizeAllowedToPeerInGigabytes": 7,
+      "minimumFileSizeToCacheInMegabytes": 1,
+      "minimumBatteryPercentageAllowedToUpload": 7,
+      "modifyCacheLocation": "Modify Cache Location value",
+      "maximumCacheAgeInDays": 5,
+      "maximumCacheSize": {
+        "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
+      },
+      "vpnPeerCaching": "enabled"
     }
   ]
 }
