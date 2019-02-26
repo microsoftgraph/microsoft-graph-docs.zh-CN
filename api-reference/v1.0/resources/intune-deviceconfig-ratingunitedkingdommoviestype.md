@@ -1,33 +1,34 @@
 ---
 title: ratingUnitedKingdomMoviesType 枚举类型
-description: 电影分级中英国标签
+description: 英国的电影评分标签
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b80ad9cfb9f1b2f449e9758699bd677150903332
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 40cf4e473e48133e59822cdedba1a74cc7a9bb0c
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962182"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260681"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>ratingUnitedKingdomMoviesType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-电影分级中英国标签
+英国的电影评分标签
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|allAllowed|0|默认值，允许所有电影内容|
+|allAllowed|0|默认值, 允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
-|常规|2|U 分类是适用于所有岁|
-|universalChildren|3|UC 分类适合前学校子级，旧的分级标签|
-|parentalGuidance|4|PG 分类适合成熟|
-|agesAbove12Video|5|12 年时间，通过，12，视频释放合适|
-|agesAbove12Cinema|6|12A，12 年时间，通过合适的电影版|
-|agesAbove15|7|15，只适合 15 年及较早|
-|成人|8|仅适于成人|
+|概要|双面|U 分类适用于所有年龄段|
+|universalChildren|第三章|UC 分类适用于学校子女、旧评级标签|
+|parentalGuidance|4|PG 分类适用于成熟|
+|agesAbove12Video|5|12, 视频发布适用于12年以上|
+|agesAbove12Cinema|型|12A, 电影发布适用于12年以上|
+|agesAbove15|步|15, 仅适用于15年和更早的|
+|成人|utf-8|仅适用于成年人|
 
 
 

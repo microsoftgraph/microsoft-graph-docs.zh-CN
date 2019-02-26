@@ -3,19 +3,20 @@ title: deviceEnrollmentWindowsHelloForBusinessConfiguration 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 26eb1eb09ea4a32739794be9fea582ad3f790d44
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4a2dbad17a731c8c63b6ef7705c97deab82a90da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929142"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260989"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>deviceEnrollmentWindowsHelloForBusinessConfiguration 资源类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
+
 
 继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)
 
@@ -34,22 +35,22 @@ ms.locfileid: "27929142"
 |id|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |displayName|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |description|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|priority|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|createdDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|priority|Int32|尚未记录 继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|createdDateTime|DateTimeOffset|尚未记录 继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |version|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|尚未记录|
 |pinMaximumLength|Int32|尚未记录|
-|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
-|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
-|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未编档。 可取值为：`allowed`、`required`、`disallowed`。|
-|state|[启用](../resources/intune-onboarding-enablement.md)|尚未编档。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未记录。 可取值为：`allowed`、`required`、`disallowed`。|
+|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未记录。 可取值为：`allowed`、`required`、`disallowed`。|
+|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|尚未记录。 可取值为：`allowed`、`required`、`disallowed`。|
+|state|[启用](../resources/intune-onboarding-enablement.md)|尚未记录。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |securityDeviceRequired|Boolean|尚未记录|
 |unlockWithBiometricsEnabled|Boolean|尚未记录|
 |remotePassportEnabled|Boolean|尚未记录|
 |pinPreviousBlockCount|Int32|尚未记录|
 |pinExpirationInDays|Int32|尚未记录|
-|enhancedBiometricsState|[启用](../resources/intune-onboarding-enablement.md)|尚未编档。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|enhancedBiometricsState|[启用](../resources/intune-onboarding-enablement.md)|尚未记录。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 ## <a name="relationships"></a>Relationships
 |关系|类型|说明|

@@ -3,26 +3,27 @@ title: importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 43bcf1bf46d68bf95f4153cbc8db857977a157b0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4490568adae1437ff01ac269a910c1fa2f3c4831
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956925"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264188"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityUploadStatus 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|noUpload|0|无上载状态。|
-|挂起|1|挂起的状态。|
-|complete|2|完整的状态。|
-|error|3|错误状态。|
+|noUpload|0|无上传状态。|
+|决|1|挂起状态。|
+|complete|双面|完整状态。|
+|error|第三章|错误状态。|
 
 
 

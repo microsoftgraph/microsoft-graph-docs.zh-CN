@@ -4,27 +4,25 @@ description: 对包含指定设备标记的应用注册发布擦除操作。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 80e7b83001cf177cacaeb84d814509f31cd340cb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b4d74df507e3172713fea4179b321fdf05cc06be
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972001"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261150"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>wipeManagedAppRegistrationsByDeviceTag 操作
 
-
-
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 对包含指定设备标记的应用注册发布擦除操作。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）| _随上下文_ |
+|委派（工作或学校帐户）| _因上下文而异_ |
 | &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|

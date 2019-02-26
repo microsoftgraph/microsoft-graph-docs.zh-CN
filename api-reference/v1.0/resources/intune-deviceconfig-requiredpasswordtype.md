@@ -1,27 +1,28 @@
 ---
 title: requiredPasswordType 枚举类型
-description: 所需的密码的可能值。
+description: 所需密码的可能值。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 2546abb6f01b3d9764a2a3f915e3f0add48016b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 8f0d9aa4d69bad0d03f6fe72569f6b4460dcad87
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926979"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261206"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>requiredPasswordType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-所需的密码的可能值。
+所需密码的可能值。
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|设备默认值，没有用途。|
-|字母数字|1|所需的字母数字密码。|
-|数值|2|所需的数字密码。|
+|deviceDefault|0|设备默认值, 无意向。|
+|字母数字|1|需要字母数字密码。|
+|位数|双面|需要数字密码。|
 
 
 

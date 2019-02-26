@@ -1,29 +1,30 @@
 ---
-title: windowsDeviceType 枚举类型
+title: windowsdevicetype 更改枚举类型
 description: 包含 Windows 设备类型的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: af17ebee38a2f597f5dae7032106ef5faab7fa96
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 075fad8389b00702612575c4df0f9891d2a5cc24
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981971"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264097"
 ---
-# <a name="windowsdevicetype-enum-type"></a>windowsDeviceType 枚举类型
+# <a name="windowsdevicetype-enum-type"></a>windowsdevicetype 更改枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 Windows 设备类型的属性。
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|无标志设置。|
-|桌面|1|是否支持桌面 Windows 设备类型。|
-|移动|2|是否支持 Mobile Windows 设备类型。|
+|无|0|未设置任何标志。|
+|desktop|1|是否支持桌面 Windows 设备类型。|
+|流动|双面|是否支持移动 Windows 设备类型。|
 |全息|4|是否支持全息 Windows 设备类型。|
-|团队|8|是否支持团队 Windows 设备类型。|
+|球队|utf-8|是否支持团队 Windows 设备类型。|
 
 
 

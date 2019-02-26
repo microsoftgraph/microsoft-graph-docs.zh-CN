@@ -3,23 +3,24 @@ title: intuneBrand 资源类型
 description: intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ec1db08ee3e6d6a669078800f2fab69950db14e9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a47e19aaca3aa5e7469d9fb01cbae7b5363c1270
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917704"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257454"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 intuneBrand 包含在自定义公司门户应用程序以及最终用户网页版门户的外观时使用的数据。
+
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|向最终用户显示的公司/组织名称。|
+|displayName|字符串|向最终用户显示的公司/组织名称。|
 |contactITName|String|负责 IT 支持的员工/组织名称。|
 |contactITPhoneNumber|String|负责 IT 支持的员工/组织的电话号码。|
 |contactITEmailAddress|String|负责 IT 支持的员工/组织的电子邮件地址。|
@@ -28,7 +29,7 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |onlineSupportSiteUrl|String|指向公司/组织 IT 支持人员网站的 URL。|
 |onlineSupportSiteName|String|显示公司/组织 IT 支持人员网站的名称。|
 |themeColor|[rgbColor](../resources/intune-onboarding-rgbcolor.md)|公司门户应用程序和 Web 门户中使用的主要主题颜色。|
-|showLogo|布尔值|表示是否显示管理员提供的徽标图像的布尔值。|
+|showLogo|Boolean|表示是否显示管理员提供的徽标图像的布尔值。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有浅色背景。|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有深色背景。|
 |showNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
@@ -36,6 +37,7 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 
 ## <a name="relationships"></a>关系
 无
+
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!-- {

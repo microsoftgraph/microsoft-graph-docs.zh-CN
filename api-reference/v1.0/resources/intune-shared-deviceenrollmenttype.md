@@ -1,35 +1,35 @@
 ---
 title: deviceEnrollmentType 枚举类型
-description: 将移动设备添加到管理的可能方式。
+description: 向管理层添加移动设备的可能方法。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 72acbdf412ebb91269fcdc3f851ffbc204e0274b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 62ff257e2f758776265f52a0d64cde52dbc26115
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987753"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261962"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-将移动设备添加到管理的可能方式。
+向管理层添加移动设备的可能方法。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|unknown|0|默认值，注册类型不是收集的。|
-|userEnrollment|1|通过 BYOD 通道用户驱动的注册。|
-|deviceEnrollmentManager|2|用户注册使用设备注册管理器帐户。|
-|appleBulkWithUser|3|Apple 批量注册及用户质询 （DEP、 Apple 配置器）。|
-|appleBulkWithoutUser|4|Apple 批量注册没有用户质询 （DEP，Apple 配置器 Mobile 配置）。|
-|windowsAzureADJoin|5|Windows Azure AD 10 加入。|
-|windowsBulkUserless|6|Windows 10 批量注册通过 ICD 证书。|
-|windowsAutoEnrollment|7|Windows 10 自动注册。 （添加工作帐户）|
-|windowsBulkAzureDomainJoin|8|Windows 10 批量 Azure AD 加入。|
-|windowsCoManagement|9|Windows 10 共同管理触发自动执行某些操作或组策略。|
+|unknown|0|默认值, 未收集注册类型。|
+|userEnrollment|1|通过 BYOD 通道的用户驱动的注册。|
+|deviceEnrollmentManager|双面|具有设备注册管理员帐户的用户注册。|
+|appleBulkWithUser|第三章|使用用户质询的 Apple 批量注册。 (DEP、Apple 配置器)|
+|appleBulkWithoutUser|4|没有用户质询的 Apple 批量注册。 (DEP、Apple 配置器、移动配置)|
+|windowsAzureADJoin|5|Windows 10 Azure AD 加入。|
+|windowsBulkUserless|型|通过带证书的 ICD 通过 ICD 进行的 Windows 10 批量注册。|
+|windowsAutoEnrollment|步|Windows 10 自动注册。 (添加工作帐户)|
+|windowsBulkAzureDomainJoin|utf-8|Windows 10 批量 Azure AD 加入。|
+|windowsCoManagement|第|由 AutoPilot 或组策略触发的 Windows 10 协同管理。|
 
 
 
