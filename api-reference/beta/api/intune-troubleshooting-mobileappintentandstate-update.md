@@ -1,21 +1,21 @@
 ---
 title: 更新 mobileAppIntentAndState
 description: 更新 mobileAppIntentAndState 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7157711819e4a5b3d4fbeb6ea6c8fce136da9380
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cc6226237b1ebc8d080642b0cfe9bd6fd3f2b500
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405189"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173330"
 ---
 # <a name="update-mobileappintentandstate"></a>更新 mobileAppIntentAndState
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)对象的属性。
 
@@ -44,21 +44,21 @@ PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)对象的 JSON 表示形式。
+在请求正文中, 提供[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)对象的 JSON 表示形式。
 
-下表显示时创建[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)所需的属性。
+下表显示创建[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 UUID|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
 |userId|String|尝试注册设备的用户的标识符。|
-|mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)集合|负载方法和租户的状态的列表。|
+|mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)集合|租户的有效负载意图和状态列表。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)对象。
 
 ## <a name="example"></a>示例
 

@@ -1,28 +1,28 @@
 ---
 title: hardwareInformation 资源类型
-description: 硬件的给定设备的信息。
-localization_priority: Normal
+description: 给定设备的硬件信息。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32b6d0e637c477265a6d23f39e531ca89c7e490c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: be7d87f1d596a4756b3e964cd57f29da60f1c468
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394822"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172875"
 ---
 # <a name="hardwareinformation-resource-type"></a>hardwareInformation 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-硬件的给定设备的信息。
+给定设备的硬件信息。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|serialNumber|String|序列号。|
+|serialNumber|字符串|序列号。|
 |totalStorageSpace|Int64|设备的总存储空间。|
 |freeStorageSpace|Int64|设备的可用存储空间。|
 |imei|String|IMEI|
@@ -30,20 +30,20 @@ ms.locfileid: "29394822"
 |manufacturer|String|设备的制造商|
 |model|String|设备的型号|
 |phoneNumber|String|设备的电话号码|
-|subscriberCarrier|String|订阅者运营商的设备|
-|cellularTechnology|String|移动电话的设备的技术|
+|subscriberCarrier|String|设备的订阅者运营商|
+|cellularTechnology|String|设备的手机网络技术|
 |wifiMac|String|设备的 WiFi MAC 地址|
 |operatingSystemLanguage|String|设备的操作系统语言|
-|isSupervised|Boolean|设备监管的模式|
-|isEncrypted|Boolean|设备加密状态|
-|isSharedDevice|Boolean|共享的 iPad|
-|sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)集合|共享的 Apple 设备上的所有用户|
+|isSupervised|Boolean|受监督的设备模式|
+|isEncrypted|Boolean|设备的加密状态|
+|isSharedDevice|Boolean|共享 iPad|
+|sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)集合|共享 Apple 设备上的所有用户|
 |tpmSpecificationVersion|String|指定规范版本的字符串。|
-|operatingSystemEdition|String|指定的操作系统版本的字符串。|
-|deviceFullQualifiedDomainName|String|（如果有），则返回设备的完全限定的的域名。 如果设备不加入域的它将返回空字符串。 |
-|deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|虚拟化基于安全硬件要求状态。 可取值为：`meetHardwareRequirements`、`secureBootRequired`、`dmaProtectionRequired`、`hyperVNotSupportedForGuestVM`、`hyperVNotAvailable`。|
-|deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|虚拟化基于安全状态。 . 可取值为：`running`、`rebootRequired`、`require64BitArchitecture`、`notLicensed`、`notConfigured`、`doesNotMeetHardwareRequirements`、`other`。|
-|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|本地系统证书颁发机构 (LSA) 凭据 guard 状态。 . 可取值为：`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning`。|
+|operatingSystemEdition|String|指定 OS 版本的字符串。|
+|deviceFullQualifiedDomainName|String|返回设备的完全限定的域名 (如果有)。 如果设备未加入域, 则返回一个空字符串。 |
+|deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|基于虚拟化的安全硬件要求状态。 可取值为：`meetHardwareRequirements`、`secureBootRequired`、`dmaProtectionRequired`、`hyperVNotSupportedForGuestVM`、`hyperVNotAvailable`。|
+|deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|基于虚拟化的安全状态。 . 可取值为：`running`、`rebootRequired`、`require64BitArchitecture`、`notLicensed`、`notConfigured`、`doesNotMeetHardwareRequirements`、`other`。|
+|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|本地系统颁发机构 (LSA) credential guard 状态。 . 可取值为：`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning`。|
 
 ## <a name="relationships"></a>关系
 无

@@ -1,34 +1,34 @@
 ---
 title: ratingIrelandTelevisionType 枚举类型
-description: 在爱尔兰 TV 内容评级标签
-localization_priority: Normal
+description: 爱尔兰的电视内容评级标签
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8177ea18d5a8f840daf8f13c0493288fad342285
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d186659ff2e67217c8d4c6f3b449925907822a11
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394633"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172462"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>ratingIrelandTelevisionType 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-在爱尔兰 TV 内容评级标签
+爱尔兰的电视内容评级标签
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|allAllowed|0|默认值，允许所有 TV 都显示内容|
+|allAllowed|0|默认值, 允许所有电视节目内容|
 |allBlocked|1|不允许任何电视显示内容|
-|常规|2|GA 分类是适用于所有访问群体|
-|children|3|频道分类适合子级|
-|youngAdults|4|YA 分类适合青春期访问群体|
-|parentalSupervision|5|PS 分类邀请父母和监护人考虑限制子级的访问|
-|成熟的|6|MA 分类适合成人|
+|概要|双面|GA 分类适用于所有受众|
+|children|第三章|CH 分类适用于儿童|
+|youngAdults|4|YA 分类适用于 teenage 访问群体|
+|parentalSupervision|5|PS 分类邀请家长和监护人来考虑限制儿童的访问权限|
+|成熟|型|MA 分类适用于成年人|
 
 
 

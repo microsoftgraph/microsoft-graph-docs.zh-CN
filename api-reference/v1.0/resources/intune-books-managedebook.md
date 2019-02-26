@@ -3,19 +3,20 @@ title: managedEBook 资源类型
 description: 包含托管电子书基属性的抽象类。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a2da2254b5d86a16d3a0e60fae0c0ea4215d54a2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ae6151c23bf05b076ade441f908a2810c80f45ed
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917858"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253461"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含托管电子书基属性的抽象类。
+
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
@@ -26,9 +27,9 @@ ms.locfileid: "27917858"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |displayName|String|电子书的名称。|
-|description|String|说明。|
+|description|字符串|说明。|
 |publisher|String|发布者。|
 |publishedDateTime|DateTimeOffset|电子书的发布日期和时间。|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。|
@@ -38,7 +39,7 @@ ms.locfileid: "27917858"
 |privacyInformationUrl|String|隐私声明 Url。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 集合|此电子书的分配列表。|
 |installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|移动应用安装摘要。|

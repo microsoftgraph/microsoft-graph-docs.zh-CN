@@ -1,31 +1,31 @@
 ---
 title: windows10AppsUpdateRecurrence 枚举类型
-description: 上 Windows10 定期更新应用程序的可能值。
-localization_priority: Normal
+description: Windows10 定期应用更新的可能值。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2bc9d6662b0b3198d22c9ffb297765ec88a002e8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 932a374f7ec78eca46862f6f7693072b27ef5109
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399183"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172413"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>windows10AppsUpdateRecurrence 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-上 Windows10 定期更新应用程序的可能值。
+Windows10 定期应用更新的可能值。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|默认值，指定的一个匹配项。|
-|每日|1|每日。|
-|每周|2|每周。|
-|每月|3|每月。|
+|无|0|默认值指定单个事件。|
+|每日|1|每日.|
+|周历|双面|周历.|
+|还|第三章|还.|
 
 
 

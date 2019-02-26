@@ -1,30 +1,30 @@
 ---
-title: 列出 iosVppAppAssignedDeviceLicenses
-description: 列出 iosVppAppAssignedDeviceLicense 对象的属性和关系。
+title: 删除 managedDeviceEncryptionState
+description: 删除 managedDeviceEncryptionState。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0204ab30446af422ac172a4ae7ab6136f12566e8
+ms.openlocfilehash: f38cb16ba9be77257e78766551709a9ebf2edc0c
 ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172826"
+ms.locfileid: "30178246"
 ---
-# <a name="list-iosvppappassigneddevicelicenses"></a>列出 iosVppAppAssignedDeviceLicenses
+# <a name="delete-manageddeviceencryptionstate"></a>删除 managedDeviceEncryptionState
 
 > **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出[iosVppAppAssignedDeviceLicense](../resources/intune-apps-iosvppappassigneddevicelicense.md)对象的属性和关系。
+删除[managedDeviceEncryptionState](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All|
+|委派（工作或学校帐户）|DeviceManagementConfiguration.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -34,7 +34,7 @@ ms.locfileid: "30172826"
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses
+DELETE /deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionStateId}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -47,37 +47,20 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[iosVppAppAssignedDeviceLicense](../resources/intune-apps-iosvppappassigneddevicelicense.md)对象集合。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assignedLicenses
+DELETE https://graph.microsoft.com/beta/deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionStateId}
 ```
 
 ### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 441
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.iosVppAppAssignedDeviceLicense",
-      "id": "bed943d0-43d0-bed9-d043-d9bed043d9be",
-      "userEmailAddress": "User Email Address value",
-      "userId": "User Id value",
-      "userName": "User Name value",
-      "userPrincipalName": "User Principal Name value",
-      "managedDeviceId": "Managed Device Id value",
-      "deviceName": "Device Name value"
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 

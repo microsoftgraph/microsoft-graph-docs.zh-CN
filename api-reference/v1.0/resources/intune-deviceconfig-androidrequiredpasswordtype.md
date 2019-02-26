@@ -1,32 +1,33 @@
 ---
 title: androidRequiredPasswordType 枚举类型
-description: Android 所需的密码类型。
+description: Android 必需的密码类型。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c85466cf722848efa684fc7b5643293d49de2459
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 59a95c74f19fa6e14440eaedd06d385b05d81e5d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964086"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255400"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Android 所需的密码类型。
+Android 必需的密码类型。
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|设备默认值，没有用途。|
-|字母|1|所需的密码字母。|
-|字母数字|2|所需的字母数字密码。|
-|alphanumericWithSymbols|3|所需的符号密码全角字母数字。|
-|lowSecurityBiometric|4|低安全性生物基于所需的密码。|
-|数值|5|所需的数字密码。|
-|numericComplex|6|所需的数字复杂密码。|
-|任意|7|Password 或模式是必需的且任何可接受。|
+|deviceDefault|0|设备默认值, 无意向。|
+|字母|1|要求字母密码。|
+|字母数字|双面|需要字母数字密码。|
+|alphanumericWithSymbols|第三章|需要带符号的字母数字密码。|
+|lowSecurityBiometric|4|要求低安全基于生物特征的密码。|
+|位数|5|需要数字密码。|
+|numericComplex|型|需要数字复杂密码。|
+|任意|步|需要密码或模式, 可以接受。|
 
 
 

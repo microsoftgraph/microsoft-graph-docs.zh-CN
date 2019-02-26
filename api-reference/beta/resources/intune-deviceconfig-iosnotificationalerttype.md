@@ -1,31 +1,31 @@
 ---
 title: iosNotificationAlertType 枚举类型
-description: 通知设置的警报类型。
-localization_priority: Normal
+description: 通知设置警报类型。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db289e15f82750d484fceed4261cfb190e826bea
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c5af4a4e4718734220321a2867d2e6a6be36f254
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407576"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172434"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>iosNotificationAlertType 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-通知设置的警报类型。
+通知设置警报类型。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|设备默认值，没有用途。|
-|横幅|1|横幅。|
-|modal|2|模式。|
-|无|3|无。|
+|deviceDefault|0|设备默认值, 无意向。|
+|分隔|1|分隔.|
+|modal|双面|适合.|
+|无|第三章|无。|
 
 
 

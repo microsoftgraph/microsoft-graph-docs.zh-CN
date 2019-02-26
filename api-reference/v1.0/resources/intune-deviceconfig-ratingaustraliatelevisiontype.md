@@ -1,33 +1,34 @@
 ---
 title: ratingAustraliaTelevisionType 枚举类型
-description: 澳大利亚中的 TV 内容评级标签
+description: 澳大利亚的电视内容评级标签
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 16bd081f157434903578661973bb30e44b3d778d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 3db2989c7cc61eec2cbd736c336c222c23e9a5fe
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976637"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252964"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>ratingAustraliaTelevisionType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-澳大利亚中的 TV 内容评级标签
+澳大利亚的电视内容评级标签
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|allAllowed|0|默认值，允许所有 TV 都显示内容|
+|allAllowed|0|默认值, 允许所有电视节目内容|
 |allBlocked|1|不允许任何电视显示内容|
-|preschoolers|2|P 分类供 preschoolers|
-|children|3|C 分类供子级下 14|
-|常规|4|G 分类是适用于所有岁|
-|parentalGuidance|5|PG 分类建议为年轻的查看者|
-|成熟的|6|M 分类建议为查看者超过 15|
-|agesAbove15|7|MA15 + 分类不适用于查看在 15|
-|agesAbove15AdultViolence|8|AV15 + 分类不适合下 15，成人暴力特有的查看者|
+|preschoolers|双面|P 分类适用于 preschoolers|
+|children|第三章|C 分类适用于14下的儿童|
+|概要|4|G 分类适用于所有年龄段|
+|parentalGuidance|5|对于年轻人查看者, 建议使用 PG 分类|
+|成熟|型|对于超过15的查看者, 建议使用 M 分类|
+|agesAbove15|步|MA15 + 分类不适用于15岁以上的查看器|
+|agesAbove15AdultViolence|utf-8|AV15 + 分类不适用于15岁以上的观众, 特别是成人|
 
 
 

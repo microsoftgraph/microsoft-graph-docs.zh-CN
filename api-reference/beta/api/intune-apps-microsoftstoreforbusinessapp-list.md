@@ -1,21 +1,21 @@
 ---
 title: 列出 microsoftStoreForBusinessApps
 description: 列出 microsoftStoreForBusinessApp 对象的属性和关系。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b02f6296e522fda6033cfddd5cb3b80c03614a22
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e4606ea6482fbeb774cee3ab29fcdb34b8d4b120
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420722"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173463"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>列出 microsoftStoreForBusinessApps
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 列出 [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) 对象的属性和关系。
 
@@ -40,7 +40,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>请求标头
 |标头|值|
 |:---|:---|
-|授权|Bearer &lt;token&gt;。必需。|
+|Authorization|Bearer &lt;token&gt;。必需。|
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1197
+Content-Length: 1454
 
 {
   "value": [
@@ -95,7 +95,14 @@ Content-Length: 1197
       "totalLicenseCount": 1,
       "productKey": "Product Key value",
       "licenseType": "online",
-      "packageIdentityName": "Package Identity Name value"
+      "packageIdentityName": "Package Identity Name value",
+      "licensingType": {
+        "@odata.type": "microsoft.graph.vppLicensingType",
+        "supportUserLicensing": true,
+        "supportDeviceLicensing": true,
+        "supportsUserLicensing": true,
+        "supportsDeviceLicensing": true
+      }
     }
   ]
 }

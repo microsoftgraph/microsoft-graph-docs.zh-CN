@@ -1,32 +1,33 @@
 ---
 title: androidWorkProfileRequiredPasswordType 枚举类型
-description: Android 工作模板所需密码类型。
+description: Android 工作配置文件必需的密码类型。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: cbe1eb1482e979d236c1f8bf92f687077fb189f0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b1dbb0b7e523ea6ca3ac1be3328cf58e30d9a892
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986276"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252936"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>androidWorkProfileRequiredPasswordType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Android 工作模板所需密码类型。
+Android 工作配置文件必需的密码类型。
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|设备默认值，没有用途。|
-|lowSecurityBiometric|1|低安全性生物基于所需的密码。|
-|必需|2|必填。|
-|atLeastNumeric|3|所需的密码至少数值。|
-|numericComplex|4|所需的数字复杂密码。|
-|atLeastAlphabetic|5|所需的密码至少字母。|
-|atLeastAlphanumeric|6|所需的至少字母数字密码。|
-|alphanumericWithSymbols|7|使用所需的符号密码至少字母数字。|
+|deviceDefault|0|设备默认值, 无意向。|
+|lowSecurityBiometric|1|要求低安全基于生物特征的密码。|
+|必需|双面|必需。|
+|atLeastNumeric|第三章|至少需要数字密码。|
+|numericComplex|4|需要数字复杂密码。|
+|atLeastAlphabetic|5|至少需要字母密码。|
+|atLeastAlphanumeric|型|至少需要字母数字密码。|
+|alphanumericWithSymbols|步|至少需要带符号的字母数字密码。|
 
 
 

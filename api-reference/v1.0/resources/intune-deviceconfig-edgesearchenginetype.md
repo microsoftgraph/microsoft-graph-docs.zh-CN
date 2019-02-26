@@ -1,25 +1,26 @@
 ---
 title: edgeSearchEngineType 枚举类型
-description: 允许 IT admind 设置预定义的默认搜索引擎 MDM 控制设备
+description: 允许 IT admind 为受 MDM 控制的设备设置预定义的默认搜索引擎
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c528479d0cb3a04e5ff4cddf082f22616fba2111
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a9ce84430eeb483b1a97cacf5b3fb6897c72e80e
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919923"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253916"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>edgeSearchEngineType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-允许 IT admind 设置预定义的默认搜索引擎 MDM 控制设备
+允许 IT admind 为受 MDM 控制的设备设置预定义的默认搜索引擎
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|default|0|使用出厂设置的边缘分配每用户市场的默认搜索引擎|
+|default|0|使用边缘的工厂设置根据用户市场分配默认搜索引擎|
 |必应|1|将 Bing 设置为默认搜索引擎|
 
 
