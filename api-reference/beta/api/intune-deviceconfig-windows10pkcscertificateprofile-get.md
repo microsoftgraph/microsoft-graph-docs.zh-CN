@@ -1,34 +1,34 @@
 ---
 title: 获取 windows10PkcsCertificateProfile
-description: 读取属性和 windows10PkcsCertificateProfile 对象的关系。
-localization_priority: Normal
+description: 读取 windows10PkcsCertificateProfile 对象的属性和关系。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d2ebf71f1d20cfb95708411f743ad8c229ccdfc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 014c88d59e2dd489e36044f0f9c28f33d7a793aa
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396782"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152029"
 ---
-# <a name="get-windows10pkcscertificateprofile"></a><span data-ttu-id="eafdc-103">获取 windows10PkcsCertificateProfile</span><span class="sxs-lookup"><span data-stu-id="eafdc-103">Get windows10PkcsCertificateProfile</span></span>
+# <a name="get-windows10pkcscertificateprofile"></a><span data-ttu-id="fcc5a-103">获取 windows10PkcsCertificateProfile</span><span class="sxs-lookup"><span data-stu-id="fcc5a-103">Get windows10PkcsCertificateProfile</span></span>
 
-> <span data-ttu-id="eafdc-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="eafdc-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="eafdc-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="eafdc-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="fcc5a-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="eafdc-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="eafdc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="fcc5a-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="eafdc-107">读取属性和[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)对象的关系。</span><span class="sxs-lookup"><span data-stu-id="eafdc-107">Read properties and relationships of the [windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md) object.</span></span>
+<span data-ttu-id="fcc5a-106">读取[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-106">Read properties and relationships of the [windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="eafdc-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="eafdc-108">Prerequisites</span></span>
-<span data-ttu-id="eafdc-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="eafdc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="fcc5a-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="fcc5a-107">Prerequisites</span></span>
+<span data-ttu-id="fcc5a-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="eafdc-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="eafdc-111">Permission type</span></span>|<span data-ttu-id="eafdc-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="eafdc-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="fcc5a-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="fcc5a-110">Permission type</span></span>|<span data-ttu-id="fcc5a-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="fcc5a-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="eafdc-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="eafdc-113">Delegated (work or school account)</span></span>|<span data-ttu-id="eafdc-114">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="eafdc-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="eafdc-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="eafdc-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="eafdc-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="eafdc-116">Not supported.</span></span>|
-|<span data-ttu-id="eafdc-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="eafdc-117">Application</span></span>|<span data-ttu-id="eafdc-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="eafdc-118">Not supported.</span></span>|
+|<span data-ttu-id="fcc5a-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fcc5a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="fcc5a-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="fcc5a-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="fcc5a-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fcc5a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fcc5a-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-115">Not supported.</span></span>|
+|<span data-ttu-id="fcc5a-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="fcc5a-116">Application</span></span>|<span data-ttu-id="fcc5a-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="eafdc-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="eafdc-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fcc5a-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fcc5a-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +39,31 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="eafdc-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="eafdc-120">Optional query parameters</span></span>
-<span data-ttu-id="eafdc-121">此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="eafdc-121">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fcc5a-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="fcc5a-119">Optional query parameters</span></span>
+<span data-ttu-id="fcc5a-120">此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="eafdc-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="eafdc-122">Request headers</span></span>
-|<span data-ttu-id="eafdc-123">标头</span><span class="sxs-lookup"><span data-stu-id="eafdc-123">Header</span></span>|<span data-ttu-id="eafdc-124">值</span><span class="sxs-lookup"><span data-stu-id="eafdc-124">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fcc5a-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="fcc5a-121">Request headers</span></span>
+|<span data-ttu-id="fcc5a-122">标头</span><span class="sxs-lookup"><span data-stu-id="fcc5a-122">Header</span></span>|<span data-ttu-id="fcc5a-123">值</span><span class="sxs-lookup"><span data-stu-id="fcc5a-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="eafdc-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="eafdc-125">Authorization</span></span>|<span data-ttu-id="eafdc-126">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="eafdc-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="eafdc-127">Accept</span><span class="sxs-lookup"><span data-stu-id="eafdc-127">Accept</span></span>|<span data-ttu-id="eafdc-128">application/json</span><span class="sxs-lookup"><span data-stu-id="eafdc-128">application/json</span></span>|
+|<span data-ttu-id="fcc5a-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="fcc5a-124">Authorization</span></span>|<span data-ttu-id="fcc5a-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="fcc5a-126">Accept</span><span class="sxs-lookup"><span data-stu-id="fcc5a-126">Accept</span></span>|<span data-ttu-id="fcc5a-127">application/json</span><span class="sxs-lookup"><span data-stu-id="fcc5a-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="eafdc-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="eafdc-129">Request body</span></span>
-<span data-ttu-id="eafdc-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="eafdc-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fcc5a-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="fcc5a-128">Request body</span></span>
+<span data-ttu-id="fcc5a-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="eafdc-131">响应</span><span class="sxs-lookup"><span data-stu-id="eafdc-131">Response</span></span>
-<span data-ttu-id="eafdc-132">如果成功，此方法返回`200 OK`响应正文中的响应代码和[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="eafdc-132">If successful, this method returns a `200 OK` response code and [windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="fcc5a-130">响应</span><span class="sxs-lookup"><span data-stu-id="fcc5a-130">Response</span></span>
+<span data-ttu-id="fcc5a-131">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-131">If successful, this method returns a `200 OK` response code and [windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="eafdc-133">示例</span><span class="sxs-lookup"><span data-stu-id="eafdc-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fcc5a-132">示例</span><span class="sxs-lookup"><span data-stu-id="fcc5a-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="eafdc-134">请求</span><span class="sxs-lookup"><span data-stu-id="eafdc-134">Request</span></span>
-<span data-ttu-id="eafdc-135">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="eafdc-135">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="fcc5a-133">请求</span><span class="sxs-lookup"><span data-stu-id="fcc5a-133">Request</span></span>
+<span data-ttu-id="fcc5a-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="eafdc-136">响应</span><span class="sxs-lookup"><span data-stu-id="eafdc-136">Response</span></span>
-<span data-ttu-id="eafdc-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="eafdc-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="fcc5a-135">响应</span><span class="sxs-lookup"><span data-stu-id="fcc5a-135">Response</span></span>
+<span data-ttu-id="fcc5a-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="fcc5a-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

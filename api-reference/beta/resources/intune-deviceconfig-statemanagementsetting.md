@@ -1,30 +1,30 @@
 ---
 title: stateManagementSetting 枚举类型
 description: 状态管理设置。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb6ea1ea8d8e6d28bddd0fd3b886863fc14b9407
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 437f76852c75dfc3cfb44e67d52b89ffa42dba20
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419630"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170362"
 ---
-# <a name="statemanagementsetting-enum-type"></a><span data-ttu-id="87ec9-103">stateManagementSetting 枚举类型</span><span class="sxs-lookup"><span data-stu-id="87ec9-103">stateManagementSetting enum type</span></span>
+# <a name="statemanagementsetting-enum-type"></a><span data-ttu-id="e5dcc-103">stateManagementSetting 枚举类型</span><span class="sxs-lookup"><span data-stu-id="e5dcc-103">stateManagementSetting enum type</span></span>
 
-> <span data-ttu-id="87ec9-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="87ec9-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="87ec9-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="87ec9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e5dcc-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e5dcc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="87ec9-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="87ec9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e5dcc-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e5dcc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="87ec9-107">状态管理设置。</span><span class="sxs-lookup"><span data-stu-id="87ec9-107">State Management Setting.</span></span>
+<span data-ttu-id="e5dcc-106">状态管理设置。</span><span class="sxs-lookup"><span data-stu-id="e5dcc-106">State Management Setting.</span></span>
 
-## <a name="members"></a><span data-ttu-id="87ec9-108">成员</span><span class="sxs-lookup"><span data-stu-id="87ec9-108">Members</span></span>
-|<span data-ttu-id="87ec9-109">成员</span><span class="sxs-lookup"><span data-stu-id="87ec9-109">Member</span></span>|<span data-ttu-id="87ec9-110">值</span><span class="sxs-lookup"><span data-stu-id="87ec9-110">Value</span></span>|<span data-ttu-id="87ec9-111">说明</span><span class="sxs-lookup"><span data-stu-id="87ec9-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="e5dcc-107">成员</span><span class="sxs-lookup"><span data-stu-id="e5dcc-107">Members</span></span>
+|<span data-ttu-id="e5dcc-108">成员</span><span class="sxs-lookup"><span data-stu-id="e5dcc-108">Member</span></span>|<span data-ttu-id="e5dcc-109">值</span><span class="sxs-lookup"><span data-stu-id="e5dcc-109">Value</span></span>|<span data-ttu-id="e5dcc-110">说明</span><span class="sxs-lookup"><span data-stu-id="e5dcc-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="87ec9-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="87ec9-112">notConfigured</span></span>|<span data-ttu-id="87ec9-113">0</span><span class="sxs-lookup"><span data-stu-id="87ec9-113">0</span></span>|<span data-ttu-id="87ec9-114">未配置。</span><span class="sxs-lookup"><span data-stu-id="87ec9-114">Not configured.</span></span>|
-|<span data-ttu-id="87ec9-115">已阻止</span><span class="sxs-lookup"><span data-stu-id="87ec9-115">blocked</span></span>|<span data-ttu-id="87ec9-116">1</span><span class="sxs-lookup"><span data-stu-id="87ec9-116">1</span></span>|<span data-ttu-id="87ec9-117">被阻止。</span><span class="sxs-lookup"><span data-stu-id="87ec9-117">Blocked.</span></span>|
-|<span data-ttu-id="87ec9-118">允许</span><span class="sxs-lookup"><span data-stu-id="87ec9-118">allowed</span></span>|<span data-ttu-id="87ec9-119">2</span><span class="sxs-lookup"><span data-stu-id="87ec9-119">2</span></span>|<span data-ttu-id="87ec9-120">允许。</span><span class="sxs-lookup"><span data-stu-id="87ec9-120">Allowed.</span></span>|
+|<span data-ttu-id="e5dcc-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="e5dcc-111">notConfigured</span></span>|<span data-ttu-id="e5dcc-112">0</span><span class="sxs-lookup"><span data-stu-id="e5dcc-112">0</span></span>|<span data-ttu-id="e5dcc-113">未配置。</span><span class="sxs-lookup"><span data-stu-id="e5dcc-113">Not configured.</span></span>|
+|<span data-ttu-id="e5dcc-114">已阻止</span><span class="sxs-lookup"><span data-stu-id="e5dcc-114">blocked</span></span>|<span data-ttu-id="e5dcc-115">1</span><span class="sxs-lookup"><span data-stu-id="e5dcc-115">1</span></span>|<span data-ttu-id="e5dcc-116">堵塞.</span><span class="sxs-lookup"><span data-stu-id="e5dcc-116">Blocked.</span></span>|
+|<span data-ttu-id="e5dcc-117">支持</span><span class="sxs-lookup"><span data-stu-id="e5dcc-117">allowed</span></span>|<span data-ttu-id="e5dcc-118">双面</span><span class="sxs-lookup"><span data-stu-id="e5dcc-118">2</span></span>|<span data-ttu-id="e5dcc-119">支持.</span><span class="sxs-lookup"><span data-stu-id="e5dcc-119">Allowed.</span></span>|
 
 
 

@@ -1,32 +1,32 @@
 ---
 title: applicationGuardBlockClipboardSharingType 枚举类型
-description: ApplicationGuardBlockClipboardSharingType 的可能值
-localization_priority: Normal
+description: applicationGuardBlockClipboardSharingType 的可能值
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f9621db53e16231f710cccb12d79f65d22d4017
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9dba5ba1a2d27862c9adaaa1430631b8cb4cf94d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415059"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160660"
 ---
-# <a name="applicationguardblockclipboardsharingtype-enum-type"></a><span data-ttu-id="8102a-103">applicationGuardBlockClipboardSharingType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="8102a-103">applicationGuardBlockClipboardSharingType enum type</span></span>
+# <a name="applicationguardblockclipboardsharingtype-enum-type"></a><span data-ttu-id="f8d43-103">applicationGuardBlockClipboardSharingType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="f8d43-103">applicationGuardBlockClipboardSharingType enum type</span></span>
 
-> <span data-ttu-id="8102a-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="8102a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="8102a-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="8102a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f8d43-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="f8d43-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8102a-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="8102a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f8d43-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f8d43-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8102a-107">ApplicationGuardBlockClipboardSharingType 的可能值</span><span class="sxs-lookup"><span data-stu-id="8102a-107">Possible values for applicationGuardBlockClipboardSharingType</span></span>
+<span data-ttu-id="f8d43-106">applicationGuardBlockClipboardSharingType 的可能值</span><span class="sxs-lookup"><span data-stu-id="f8d43-106">Possible values for applicationGuardBlockClipboardSharingType</span></span>
 
-## <a name="members"></a><span data-ttu-id="8102a-108">成员</span><span class="sxs-lookup"><span data-stu-id="8102a-108">Members</span></span>
-|<span data-ttu-id="8102a-109">成员</span><span class="sxs-lookup"><span data-stu-id="8102a-109">Member</span></span>|<span data-ttu-id="8102a-110">值</span><span class="sxs-lookup"><span data-stu-id="8102a-110">Value</span></span>|<span data-ttu-id="8102a-111">说明</span><span class="sxs-lookup"><span data-stu-id="8102a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="f8d43-107">成员</span><span class="sxs-lookup"><span data-stu-id="f8d43-107">Members</span></span>
+|<span data-ttu-id="f8d43-108">成员</span><span class="sxs-lookup"><span data-stu-id="f8d43-108">Member</span></span>|<span data-ttu-id="f8d43-109">值</span><span class="sxs-lookup"><span data-stu-id="f8d43-109">Value</span></span>|<span data-ttu-id="f8d43-110">说明</span><span class="sxs-lookup"><span data-stu-id="f8d43-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8102a-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="8102a-112">notConfigured</span></span>|<span data-ttu-id="8102a-113">0</span><span class="sxs-lookup"><span data-stu-id="8102a-113">0</span></span>|<span data-ttu-id="8102a-114">未配置</span><span class="sxs-lookup"><span data-stu-id="8102a-114">Not Configured</span></span>|
-|<span data-ttu-id="8102a-115">blockBoth</span><span class="sxs-lookup"><span data-stu-id="8102a-115">blockBoth</span></span>|<span data-ttu-id="8102a-116">1</span><span class="sxs-lookup"><span data-stu-id="8102a-116">1</span></span>|<span data-ttu-id="8102a-117">阻止剪贴板共享数据从主机到容器和容器迁移到主机</span><span class="sxs-lookup"><span data-stu-id="8102a-117">Block clipboard to share data both from Host to Container and from Container to Host</span></span>|
-|<span data-ttu-id="8102a-118">blockHostToContainer</span><span class="sxs-lookup"><span data-stu-id="8102a-118">blockHostToContainer</span></span>|<span data-ttu-id="8102a-119">2</span><span class="sxs-lookup"><span data-stu-id="8102a-119">2</span></span>|<span data-ttu-id="8102a-120">阻止剪贴板共享数据从主机到容器</span><span class="sxs-lookup"><span data-stu-id="8102a-120">Block clipboard to share data from Host to Container</span></span>|
-|<span data-ttu-id="8102a-121">blockContainerToHost</span><span class="sxs-lookup"><span data-stu-id="8102a-121">blockContainerToHost</span></span>|<span data-ttu-id="8102a-122">3</span><span class="sxs-lookup"><span data-stu-id="8102a-122">3</span></span>|<span data-ttu-id="8102a-123">阻止剪贴板共享数据从容器到主机</span><span class="sxs-lookup"><span data-stu-id="8102a-123">Block clipboard to share data from Container to Host</span></span>|
-|<span data-ttu-id="8102a-124">blockNone</span><span class="sxs-lookup"><span data-stu-id="8102a-124">blockNone</span></span>|<span data-ttu-id="8102a-125">4</span><span class="sxs-lookup"><span data-stu-id="8102a-125">4</span></span>|<span data-ttu-id="8102a-126">共享数据从主机到容器和从容器迁移到主机都不阻止剪贴板</span><span class="sxs-lookup"><span data-stu-id="8102a-126">Block clipboard to share data neither from Host to Container nor from Container to Host</span></span>|
+|<span data-ttu-id="f8d43-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="f8d43-111">notConfigured</span></span>|<span data-ttu-id="f8d43-112">0</span><span class="sxs-lookup"><span data-stu-id="f8d43-112">0</span></span>|<span data-ttu-id="f8d43-113">未配置</span><span class="sxs-lookup"><span data-stu-id="f8d43-113">Not Configured</span></span>|
+|<span data-ttu-id="f8d43-114">blockBoth</span><span class="sxs-lookup"><span data-stu-id="f8d43-114">blockBoth</span></span>|<span data-ttu-id="f8d43-115">1</span><span class="sxs-lookup"><span data-stu-id="f8d43-115">1</span></span>|<span data-ttu-id="f8d43-116">阻止剪贴板将数据从主机共享到容器, 并将容器从容器共享到主机</span><span class="sxs-lookup"><span data-stu-id="f8d43-116">Block clipboard to share data both from Host to Container and from Container to Host</span></span>|
+|<span data-ttu-id="f8d43-117">blockHostToContainer</span><span class="sxs-lookup"><span data-stu-id="f8d43-117">blockHostToContainer</span></span>|<span data-ttu-id="f8d43-118">双面</span><span class="sxs-lookup"><span data-stu-id="f8d43-118">2</span></span>|<span data-ttu-id="f8d43-119">阻止剪贴板将数据从主机共享到容器</span><span class="sxs-lookup"><span data-stu-id="f8d43-119">Block clipboard to share data from Host to Container</span></span>|
+|<span data-ttu-id="f8d43-120">blockContainerToHost</span><span class="sxs-lookup"><span data-stu-id="f8d43-120">blockContainerToHost</span></span>|<span data-ttu-id="f8d43-121">第三章</span><span class="sxs-lookup"><span data-stu-id="f8d43-121">3</span></span>|<span data-ttu-id="f8d43-122">阻止剪贴板将数据从容器共享到主机</span><span class="sxs-lookup"><span data-stu-id="f8d43-122">Block clipboard to share data from Container to Host</span></span>|
+|<span data-ttu-id="f8d43-123">blockNone</span><span class="sxs-lookup"><span data-stu-id="f8d43-123">blockNone</span></span>|<span data-ttu-id="f8d43-124">4</span><span class="sxs-lookup"><span data-stu-id="f8d43-124">4</span></span>|<span data-ttu-id="f8d43-125">阻止剪贴板将数据从主机共享到容器, 也不将其从容器共享到主机</span><span class="sxs-lookup"><span data-stu-id="f8d43-125">Block clipboard to share data neither from Host to Container nor from Container to Host</span></span>|
 
 
 
