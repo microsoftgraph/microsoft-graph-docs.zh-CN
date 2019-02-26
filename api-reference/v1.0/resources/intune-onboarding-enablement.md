@@ -1,27 +1,28 @@
 ---
-title: 启用枚举类型
+title: 启用的枚举类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 25ee1a9e3121dee96830a03e1f6cef18dca684ae
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2bb862dd45b49e67bb1e02b7a34a7945845fd1e7
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933531"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256103"
 ---
-# <a name="enablement-enum-type"></a>启用枚举类型
+# <a name="enablement-enum-type"></a>启用的枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|尚未记录|
 |enabled|1|尚未记录|
-|禁用|2|尚未记录|
+|禁用|双面|尚未记录|
 
 
 

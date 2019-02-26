@@ -1,24 +1,24 @@
 ---
-title: autopilotDeviceStream 函数
-description: 创建自动执行某些操作设备流上载请求。
+title: importedwindowsautopilotdeviceidentityupload 函数
+description: 创建具有 autopilot 设备流的上载请求。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 656a3c525ac1eb6ede3efaa0759e28f6c32c5972
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: df3cd9c7deff70d7cc81f3016d1d08e62c277608
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968451"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253713"
 ---
-# <a name="autopilotdevicestream-function"></a>autopilotDeviceStream 函数
+# <a name="autopilotdevicestream-function"></a>importedwindowsautopilotdeviceidentityupload 函数
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-创建自动执行某些操作设备流上载请求。
+创建具有 autopilot 设备流的上载请求。
+
 ## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
-
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -48,6 +48,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 String。
 
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http

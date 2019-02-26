@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c8962e6fce28776ab89c759d2e9a7789e82c4f02
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 47e4cb6afc2b3057ecc17f85cdbca3672927a06d
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139674"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212394"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -28,6 +28,8 @@ ms.locfileid: "30139674"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|添加项 |Beta 和 v1.0| 在[组织](/graph/api/resources/organization?view=graph-rest-v1.0)上添加了 **createdDateTime** 属性。|
+|添加项 | v1.0 | 添加了新的资源类型 [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0)。|
 |更改 |Beta 和 v1.0| 已将[用户](/graph/api/resources/user?view=graph-rest-v1.0)资源上的 **companyName** 属性更新为可写。|
 
 ### <a name="education-apis"></a>教育版 API

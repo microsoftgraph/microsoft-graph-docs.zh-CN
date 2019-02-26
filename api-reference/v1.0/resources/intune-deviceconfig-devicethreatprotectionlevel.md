@@ -1,30 +1,31 @@
 ---
 title: deviceThreatProtectionLevel 枚举类型
-description: 设备的设备威胁保护 API 的威胁保护级别。
+description: 设备威胁防护 API 的设备威胁保护级别。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a5b908b3d978c6a05897f466e43651b50f9931b2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 1af0231e15cfa815d3fd2e154adf180f3e0c0c43
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974976"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253293"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-设备的设备威胁保护 API 的威胁保护级别。
+设备威胁防护 API 的设备威胁保护级别。
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|不可用|0|默认值。 请勿使用。|
-|保护|1|设备威胁级别要求： 安全。 这是最安全的级别，表示在设备上未发现任何威胁。|
-|低|2|设备威胁保护级别要求： 低。 低代表严重性为会带来风险降至最低到设备或设备数据的威胁。|
-|中等|3|设备威胁保护级别要求： 中等。 中等代表严重性为威胁带来中等风险到的设备或设备数据。|
-|高|4|设备威胁保护级别要求： 高。 高代表严重性为会造成严重到设备或设备数据风险的威胁。|
-|notSet|10|设备威胁保护级别要求： 未设置。 不是设备，以满足了威胁保护级别不要求集代表。|
+|才|0|默认值。 请勿使用。|
+|加密|1|设备威胁级别要求: 安全。 这是最安全的级别, 表示在设备上未发现任何威胁。|
+|降低|双面|设备威胁保护级别要求: 低。 Low 表示对设备或设备数据带来最小风险的威胁的严重程度。|
+|中等|第三章|设备威胁保护级别要求: 中。 中型代表设备或设备数据面临中等风险的威胁的严重程度。|
+|高效|4|设备威胁保护级别要求: 高。 High 表示对设备或设备数据带来严重风险的威胁的严重程度。|
+|notSet|10|设备威胁保护级别要求: 未设置。 未设置表示设备不需要满足威胁保护级别。|
 
 
 

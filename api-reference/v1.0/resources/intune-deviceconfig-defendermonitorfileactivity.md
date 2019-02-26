@@ -1,29 +1,30 @@
 ---
 title: defenderMonitorFileActivity 枚举类型
-description: 用于监控文件活动的可能值。
+description: 监视文件活动的可能值。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d818264470543d077384f055cf2ef4004e019b26
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 39c53847d270639d11b5014291e62dde2668a4d5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937115"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255998"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>defenderMonitorFileActivity 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用于监控文件活动的可能值。
+监视文件活动的可能值。
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|用户定制|0|用户定义，默认值、 没有用途。|
-|禁用|1|禁用监控文件活动。|
-|monitorAllFiles|2|监视所有文件。|
-|monitorIncomingFilesOnly|3| 监视传入的文件。|
-|monitorOutgoingFilesOnly|4|监视传出的文件。|
+|定制|0|用户定义, 默认值, 无意向。|
+|启用|1|禁用监控文件活动。|
+|monitorAllFiles|双面|监视所有文件。|
+|monitorIncomingFilesOnly|第三章| 仅监视传入的文件。|
+|monitorOutgoingFilesOnly|4|仅监视传出文件。|
 
 
 
