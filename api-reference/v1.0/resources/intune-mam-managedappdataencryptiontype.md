@@ -1,28 +1,29 @@
 ---
 title: managedAppDataEncryptionType 枚举类型
-description: 代表向其应用程序数据进行加密托管应用程序的级别
+description: 表示为托管应用程序加密应用程序数据的级别
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 08ac7a36e142a1d19dbaaeb0263ef095072a9e01
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 774312d5f19b223fd33e2c156610f516ae7f48a3
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956813"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256768"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>managedAppDataEncryptionType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-代表向其应用程序数据进行加密托管应用程序的级别
+表示为托管应用程序加密应用程序数据的级别
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|useDeviceSettings|0|应用程序数据进行加密根据设备上的默认设置。|
-|afterDeviceRestart|1|应用程序数据进行加密时重新启动设备。|
-|whenDeviceLockedExceptOpenFiles|2|与此策略关联的应用程序数据进行加密时设备锁定，除打开的文件中的数据|
-|whenDeviceLocked|3|与此策略关联的应用程序数据进行加密时设备锁定|
+|useDeviceSettings|0|应用程序数据根据设备上的默认设置进行加密。|
+|afterDeviceRestart|1|重新启动设备时对应用数据进行加密。|
+|whenDeviceLockedExceptOpenFiles|双面|设备锁定时, 与此策略关联的应用数据将被加密, 但打开的文件中的数据除外|
+|whenDeviceLocked|第三章|设备锁定时, 与此策略关联的应用数据将被加密|
 
 
 

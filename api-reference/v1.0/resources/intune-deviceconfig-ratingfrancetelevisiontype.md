@@ -1,30 +1,31 @@
 ---
 title: ratingFranceTelevisionType 枚举类型
-description: 在法国 TV 内容评级标签
+description: 法国的电视内容评级标签
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f549b51f2a0f867862b82366b39c9ae60b1c2a41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5895c85590eb18e4dcd87751090923918e5eb6e9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947139"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256579"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>ratingFranceTelevisionType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-在法国 TV 内容评级标签
+法国的电视内容评级标签
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|allAllowed|0|默认值，允许所有 TV 都显示内容|
+|allAllowed|0|默认值, 允许所有电视节目内容|
 |allBlocked|1|不允许任何电视显示内容|
-|agesAbove10|2|-10 分类不建议对子级下 10|
-|agesAbove12|3|-12 分类不建议对子级下 12|
-|agesAbove16|4|-16 分类不建议对子级下 16|
-|agesAbove18|5|-18 分类不建议对下 18 的人员|
+|agesAbove10|双面|对于10下的儿童, 不建议使用-10 分类|
+|agesAbove12|第三章|对于不在12的儿童, 不建议使用-12 分类|
+|agesAbove16|4|对于16下的儿童, 不建议使用-16 分类|
+|agesAbove18|5|对于18岁以上的个人, 不建议使用-18 分类|
 
 
 
