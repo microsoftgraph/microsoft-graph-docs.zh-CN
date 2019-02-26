@@ -1,31 +1,31 @@
 ---
 title: vpnOnDemandRuleConnectionAction 枚举类型
-description: VPN 点播规则连接操作。
-localization_priority: Normal
+description: VPN 按需规则连接操作。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25de2bc26f6f52e4b6a8f38e1bc3aad7c6888ec2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6466031c4d913e7ab5679579c284d91ae64c5fa3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29397930"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154164"
 ---
-# <a name="vpnondemandruleconnectionaction-enum-type"></a><span data-ttu-id="3afa9-103">vpnOnDemandRuleConnectionAction 枚举类型</span><span class="sxs-lookup"><span data-stu-id="3afa9-103">vpnOnDemandRuleConnectionAction enum type</span></span>
+# <a name="vpnondemandruleconnectionaction-enum-type"></a><span data-ttu-id="0edd6-103">vpnOnDemandRuleConnectionAction 枚举类型</span><span class="sxs-lookup"><span data-stu-id="0edd6-103">vpnOnDemandRuleConnectionAction enum type</span></span>
 
-> <span data-ttu-id="3afa9-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="3afa9-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="3afa9-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="3afa9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0edd6-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0edd6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3afa9-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3afa9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0edd6-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0edd6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3afa9-107">VPN 点播规则连接操作。</span><span class="sxs-lookup"><span data-stu-id="3afa9-107">VPN On-Demand Rule Connection Action.</span></span>
+<span data-ttu-id="0edd6-106">VPN 按需规则连接操作。</span><span class="sxs-lookup"><span data-stu-id="0edd6-106">VPN On-Demand Rule Connection Action.</span></span>
 
-## <a name="members"></a><span data-ttu-id="3afa9-108">成员</span><span class="sxs-lookup"><span data-stu-id="3afa9-108">Members</span></span>
-|<span data-ttu-id="3afa9-109">成员</span><span class="sxs-lookup"><span data-stu-id="3afa9-109">Member</span></span>|<span data-ttu-id="3afa9-110">值</span><span class="sxs-lookup"><span data-stu-id="3afa9-110">Value</span></span>|<span data-ttu-id="3afa9-111">说明</span><span class="sxs-lookup"><span data-stu-id="3afa9-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="0edd6-107">成员</span><span class="sxs-lookup"><span data-stu-id="0edd6-107">Members</span></span>
+|<span data-ttu-id="0edd6-108">成员</span><span class="sxs-lookup"><span data-stu-id="0edd6-108">Member</span></span>|<span data-ttu-id="0edd6-109">值</span><span class="sxs-lookup"><span data-stu-id="0edd6-109">Value</span></span>|<span data-ttu-id="0edd6-110">说明</span><span class="sxs-lookup"><span data-stu-id="0edd6-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3afa9-112">connect</span><span class="sxs-lookup"><span data-stu-id="3afa9-112">connect</span></span>|<span data-ttu-id="3afa9-113">0</span><span class="sxs-lookup"><span data-stu-id="3afa9-113">0</span></span>|<span data-ttu-id="3afa9-114">连接。</span><span class="sxs-lookup"><span data-stu-id="3afa9-114">Connect.</span></span>|
-|<span data-ttu-id="3afa9-115">evaluateConnection</span><span class="sxs-lookup"><span data-stu-id="3afa9-115">evaluateConnection</span></span>|<span data-ttu-id="3afa9-116">1</span><span class="sxs-lookup"><span data-stu-id="3afa9-116">1</span></span>|<span data-ttu-id="3afa9-117">评估连接。</span><span class="sxs-lookup"><span data-stu-id="3afa9-117">Evaluate Connection.</span></span>|
-|<span data-ttu-id="3afa9-118">忽略</span><span class="sxs-lookup"><span data-stu-id="3afa9-118">ignore</span></span>|<span data-ttu-id="3afa9-119">2</span><span class="sxs-lookup"><span data-stu-id="3afa9-119">2</span></span>|<span data-ttu-id="3afa9-120">忽略。</span><span class="sxs-lookup"><span data-stu-id="3afa9-120">Ignore.</span></span>|
-|<span data-ttu-id="3afa9-121">disconnect</span><span class="sxs-lookup"><span data-stu-id="3afa9-121">disconnect</span></span>|<span data-ttu-id="3afa9-122">3</span><span class="sxs-lookup"><span data-stu-id="3afa9-122">3</span></span>|<span data-ttu-id="3afa9-123">断开连接。</span><span class="sxs-lookup"><span data-stu-id="3afa9-123">Disconnect.</span></span>|
+|<span data-ttu-id="0edd6-111">connect</span><span class="sxs-lookup"><span data-stu-id="0edd6-111">connect</span></span>|<span data-ttu-id="0edd6-112">0</span><span class="sxs-lookup"><span data-stu-id="0edd6-112">0</span></span>|<span data-ttu-id="0edd6-113">连接.</span><span class="sxs-lookup"><span data-stu-id="0edd6-113">Connect.</span></span>|
+|<span data-ttu-id="0edd6-114">evaluateConnection</span><span class="sxs-lookup"><span data-stu-id="0edd6-114">evaluateConnection</span></span>|<span data-ttu-id="0edd6-115">1</span><span class="sxs-lookup"><span data-stu-id="0edd6-115">1</span></span>|<span data-ttu-id="0edd6-116">评估连接。</span><span class="sxs-lookup"><span data-stu-id="0edd6-116">Evaluate Connection.</span></span>|
+|<span data-ttu-id="0edd6-117">忽略</span><span class="sxs-lookup"><span data-stu-id="0edd6-117">ignore</span></span>|<span data-ttu-id="0edd6-118">双面</span><span class="sxs-lookup"><span data-stu-id="0edd6-118">2</span></span>|<span data-ttu-id="0edd6-119">忽略.</span><span class="sxs-lookup"><span data-stu-id="0edd6-119">Ignore.</span></span>|
+|<span data-ttu-id="0edd6-120">disconnect</span><span class="sxs-lookup"><span data-stu-id="0edd6-120">disconnect</span></span>|<span data-ttu-id="0edd6-121">第三章</span><span class="sxs-lookup"><span data-stu-id="0edd6-121">3</span></span>|<span data-ttu-id="0edd6-122">卸下.</span><span class="sxs-lookup"><span data-stu-id="0edd6-122">Disconnect.</span></span>|
 
 
 
