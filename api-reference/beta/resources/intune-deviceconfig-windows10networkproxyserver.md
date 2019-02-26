@@ -1,36 +1,36 @@
 ---
 title: windows10NetworkProxyServer 资源类型
 description: 网络代理服务器策略。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 673cfe99e9cafe1b57fde5c70b7059286a6cc554
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f29c69789f6b2a4d41bbb5179ff71f721c64c88f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418580"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162102"
 ---
-# <a name="windows10networkproxyserver-resource-type"></a><span data-ttu-id="d4e57-103">windows10NetworkProxyServer 资源类型</span><span class="sxs-lookup"><span data-stu-id="d4e57-103">windows10NetworkProxyServer resource type</span></span>
+# <a name="windows10networkproxyserver-resource-type"></a><span data-ttu-id="0fe04-103">windows10NetworkProxyServer 资源类型</span><span class="sxs-lookup"><span data-stu-id="0fe04-103">windows10NetworkProxyServer resource type</span></span>
 
-> <span data-ttu-id="d4e57-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="d4e57-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="d4e57-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="d4e57-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0fe04-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0fe04-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d4e57-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d4e57-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0fe04-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0fe04-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d4e57-107">网络代理服务器策略。</span><span class="sxs-lookup"><span data-stu-id="d4e57-107">Network Proxy Server Policy.</span></span>
+<span data-ttu-id="0fe04-106">网络代理服务器策略。</span><span class="sxs-lookup"><span data-stu-id="0fe04-106">Network Proxy Server Policy.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d4e57-108">属性</span><span class="sxs-lookup"><span data-stu-id="d4e57-108">Properties</span></span>
-|<span data-ttu-id="d4e57-109">属性</span><span class="sxs-lookup"><span data-stu-id="d4e57-109">Property</span></span>|<span data-ttu-id="d4e57-110">类型</span><span class="sxs-lookup"><span data-stu-id="d4e57-110">Type</span></span>|<span data-ttu-id="d4e57-111">说明</span><span class="sxs-lookup"><span data-stu-id="d4e57-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0fe04-107">属性</span><span class="sxs-lookup"><span data-stu-id="0fe04-107">Properties</span></span>
+|<span data-ttu-id="0fe04-108">属性</span><span class="sxs-lookup"><span data-stu-id="0fe04-108">Property</span></span>|<span data-ttu-id="0fe04-109">类型</span><span class="sxs-lookup"><span data-stu-id="0fe04-109">Type</span></span>|<span data-ttu-id="0fe04-110">说明</span><span class="sxs-lookup"><span data-stu-id="0fe04-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d4e57-112">address</span><span class="sxs-lookup"><span data-stu-id="d4e57-112">address</span></span>|<span data-ttu-id="d4e57-113">String</span><span class="sxs-lookup"><span data-stu-id="d4e57-113">String</span></span>|<span data-ttu-id="d4e57-114">代理服务器的地址。</span><span class="sxs-lookup"><span data-stu-id="d4e57-114">Address to the proxy server.</span></span> <span data-ttu-id="d4e57-115">按照以下格式指定地址：<server>\[“:”<port>\]</span><span class="sxs-lookup"><span data-stu-id="d4e57-115">Specify an address in the format <server>\[“:”<port>\]</span></span>|
-|<span data-ttu-id="d4e57-116">exceptions</span><span class="sxs-lookup"><span data-stu-id="d4e57-116">exceptions</span></span>|<span data-ttu-id="d4e57-117">String 集合</span><span class="sxs-lookup"><span data-stu-id="d4e57-117">String collection</span></span>|<span data-ttu-id="d4e57-118">不应使用代理服务器的地址。</span><span class="sxs-lookup"><span data-stu-id="d4e57-118">Addresses that should not use the proxy server.</span></span> <span data-ttu-id="d4e57-119">系统无法将代理服务器用于以本节点中指定的内容开头的地址。</span><span class="sxs-lookup"><span data-stu-id="d4e57-119">The system will not use the proxy server for addresses beginning with what is specified in this node.</span></span>|
-|<span data-ttu-id="d4e57-120">useForLocalAddresses</span><span class="sxs-lookup"><span data-stu-id="d4e57-120">useForLocalAddresses</span></span>|<span data-ttu-id="d4e57-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="d4e57-121">Boolean</span></span>|<span data-ttu-id="d4e57-122">指定是否应将代理服务器用于本地 (Intranet) 地址。</span><span class="sxs-lookup"><span data-stu-id="d4e57-122">Specifies whether the proxy server should be used for local (intranet) addresses.</span></span>|
+|<span data-ttu-id="0fe04-111">address</span><span class="sxs-lookup"><span data-stu-id="0fe04-111">address</span></span>|<span data-ttu-id="0fe04-112">String</span><span class="sxs-lookup"><span data-stu-id="0fe04-112">String</span></span>|<span data-ttu-id="0fe04-113">代理服务器的地址。</span><span class="sxs-lookup"><span data-stu-id="0fe04-113">Address to the proxy server.</span></span> <span data-ttu-id="0fe04-114">按照以下格式指定地址：<server>\[“:”<port>\]</span><span class="sxs-lookup"><span data-stu-id="0fe04-114">Specify an address in the format <server>\[“:”<port>\]</span></span>|
+|<span data-ttu-id="0fe04-115">exceptions</span><span class="sxs-lookup"><span data-stu-id="0fe04-115">exceptions</span></span>|<span data-ttu-id="0fe04-116">String 集合</span><span class="sxs-lookup"><span data-stu-id="0fe04-116">String collection</span></span>|<span data-ttu-id="0fe04-117">不应使用代理服务器的地址。</span><span class="sxs-lookup"><span data-stu-id="0fe04-117">Addresses that should not use the proxy server.</span></span> <span data-ttu-id="0fe04-118">系统无法将代理服务器用于以本节点中指定的内容开头的地址。</span><span class="sxs-lookup"><span data-stu-id="0fe04-118">The system will not use the proxy server for addresses beginning with what is specified in this node.</span></span>|
+|<span data-ttu-id="0fe04-119">useForLocalAddresses</span><span class="sxs-lookup"><span data-stu-id="0fe04-119">useForLocalAddresses</span></span>|<span data-ttu-id="0fe04-120">Boolean</span><span class="sxs-lookup"><span data-stu-id="0fe04-120">Boolean</span></span>|<span data-ttu-id="0fe04-121">指定是否应将代理服务器用于本地 (Intranet) 地址。</span><span class="sxs-lookup"><span data-stu-id="0fe04-121">Specifies whether the proxy server should be used for local (intranet) addresses.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d4e57-123">关系</span><span class="sxs-lookup"><span data-stu-id="d4e57-123">Relationships</span></span>
-<span data-ttu-id="d4e57-124">无</span><span class="sxs-lookup"><span data-stu-id="d4e57-124">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="0fe04-122">关系</span><span class="sxs-lookup"><span data-stu-id="0fe04-122">Relationships</span></span>
+<span data-ttu-id="0fe04-123">无</span><span class="sxs-lookup"><span data-stu-id="0fe04-123">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d4e57-125">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d4e57-125">JSON Representation</span></span>
-<span data-ttu-id="d4e57-126">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d4e57-126">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0fe04-124">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0fe04-124">JSON Representation</span></span>
+<span data-ttu-id="0fe04-125">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0fe04-125">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windows10NetworkProxyServer"

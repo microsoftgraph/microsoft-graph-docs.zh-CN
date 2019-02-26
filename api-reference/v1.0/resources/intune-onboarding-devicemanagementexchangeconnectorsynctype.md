@@ -1,26 +1,27 @@
 ---
 title: deviceManagementExchangeConnectorSyncType 枚举类型
-description: Exchange 连接器同步请求的类型。
+description: 请求的 Exchange Connector 同步的类型。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5af14006bd6f3cc8733faecc8e0219cc02e7fcd9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: cfdd1da2ecec6fb7848787386991ee09741d0b67
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983280"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257580"
 ---
-# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a><span data-ttu-id="bddab-103">deviceManagementExchangeConnectorSyncType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="bddab-103">deviceManagementExchangeConnectorSyncType enum type</span></span>
+# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a><span data-ttu-id="17b09-103">deviceManagementExchangeConnectorSyncType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="17b09-103">deviceManagementExchangeConnectorSyncType enum type</span></span>
 
-> <span data-ttu-id="bddab-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="bddab-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="17b09-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="17b09-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bddab-105">Exchange 连接器同步请求的类型。</span><span class="sxs-lookup"><span data-stu-id="bddab-105">The type of Exchange Connector sync requested.</span></span>
-## <a name="members"></a><span data-ttu-id="bddab-106">成员</span><span class="sxs-lookup"><span data-stu-id="bddab-106">Members</span></span>
-|<span data-ttu-id="bddab-107">成员</span><span class="sxs-lookup"><span data-stu-id="bddab-107">Member</span></span>|<span data-ttu-id="bddab-108">值</span><span class="sxs-lookup"><span data-stu-id="bddab-108">Value</span></span>|<span data-ttu-id="bddab-109">说明</span><span class="sxs-lookup"><span data-stu-id="bddab-109">Description</span></span>|
+<span data-ttu-id="17b09-105">请求的 Exchange Connector 同步的类型。</span><span class="sxs-lookup"><span data-stu-id="17b09-105">The type of Exchange Connector sync requested.</span></span>
+
+## <a name="members"></a><span data-ttu-id="17b09-106">成员</span><span class="sxs-lookup"><span data-stu-id="17b09-106">Members</span></span>
+|<span data-ttu-id="17b09-107">成员</span><span class="sxs-lookup"><span data-stu-id="17b09-107">Member</span></span>|<span data-ttu-id="17b09-108">值</span><span class="sxs-lookup"><span data-stu-id="17b09-108">Value</span></span>|<span data-ttu-id="17b09-109">说明</span><span class="sxs-lookup"><span data-stu-id="17b09-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bddab-110">fullSync</span><span class="sxs-lookup"><span data-stu-id="bddab-110">fullSync</span></span>|<span data-ttu-id="bddab-111">0</span><span class="sxs-lookup"><span data-stu-id="bddab-111">0</span></span>|<span data-ttu-id="bddab-112">在 Exchange 中发现的所有设备。</span><span class="sxs-lookup"><span data-stu-id="bddab-112">Discover all the device in Exchange.</span></span>|
-|<span data-ttu-id="bddab-113">deltaSync</span><span class="sxs-lookup"><span data-stu-id="bddab-113">deltaSync</span></span>|<span data-ttu-id="bddab-114">1</span><span class="sxs-lookup"><span data-stu-id="bddab-114">1</span></span>|<span data-ttu-id="bddab-115">发现其增量同步窗口期间已更新的 Exchange 中的设备。</span><span class="sxs-lookup"><span data-stu-id="bddab-115">Discover only the device in Exchange which have updated during the delta sync window.</span></span>|
+|<span data-ttu-id="17b09-110">完全同步</span><span class="sxs-lookup"><span data-stu-id="17b09-110">fullSync</span></span>|<span data-ttu-id="17b09-111">0</span><span class="sxs-lookup"><span data-stu-id="17b09-111">0</span></span>|<span data-ttu-id="17b09-112">发现 Exchange 中的所有设备。</span><span class="sxs-lookup"><span data-stu-id="17b09-112">Discover all the device in Exchange.</span></span>|
+|<span data-ttu-id="17b09-113">deltaSync</span><span class="sxs-lookup"><span data-stu-id="17b09-113">deltaSync</span></span>|<span data-ttu-id="17b09-114">1</span><span class="sxs-lookup"><span data-stu-id="17b09-114">1</span></span>|<span data-ttu-id="17b09-115">仅发现 Exchange 中的设备在 "delta sync" 窗口中已更新。</span><span class="sxs-lookup"><span data-stu-id="17b09-115">Discover only the device in Exchange which have updated during the delta sync window.</span></span>|
 
 
 

@@ -1,36 +1,36 @@
 ---
 title: chassisType 枚举类型
-description: 机箱类型。
-localization_priority: Normal
+description: 底盘类型。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29daba2a6e1c9aacf97b3b5b946d925c4163ea69
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1e925dcf502c28951bb8636652e5d429d0cd0916
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422381"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161521"
 ---
-# <a name="chassistype-enum-type"></a><span data-ttu-id="bb3e6-103">chassisType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="bb3e6-103">chassisType enum type</span></span>
+# <a name="chassistype-enum-type"></a><span data-ttu-id="c2af9-103">chassisType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="c2af9-103">chassisType enum type</span></span>
 
-> <span data-ttu-id="bb3e6-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="bb3e6-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c2af9-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c2af9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="bb3e6-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c2af9-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c2af9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bb3e6-107">机箱类型。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-107">Chassis type.</span></span>
+<span data-ttu-id="c2af9-106">底盘类型。</span><span class="sxs-lookup"><span data-stu-id="c2af9-106">Chassis type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="bb3e6-108">成员</span><span class="sxs-lookup"><span data-stu-id="bb3e6-108">Members</span></span>
-|<span data-ttu-id="bb3e6-109">成员</span><span class="sxs-lookup"><span data-stu-id="bb3e6-109">Member</span></span>|<span data-ttu-id="bb3e6-110">值</span><span class="sxs-lookup"><span data-stu-id="bb3e6-110">Value</span></span>|<span data-ttu-id="bb3e6-111">说明</span><span class="sxs-lookup"><span data-stu-id="bb3e6-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="c2af9-107">成员</span><span class="sxs-lookup"><span data-stu-id="c2af9-107">Members</span></span>
+|<span data-ttu-id="c2af9-108">成员</span><span class="sxs-lookup"><span data-stu-id="c2af9-108">Member</span></span>|<span data-ttu-id="c2af9-109">值</span><span class="sxs-lookup"><span data-stu-id="c2af9-109">Value</span></span>|<span data-ttu-id="c2af9-110">说明</span><span class="sxs-lookup"><span data-stu-id="c2af9-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bb3e6-112">unknown</span><span class="sxs-lookup"><span data-stu-id="bb3e6-112">unknown</span></span>|<span data-ttu-id="bb3e6-113">0</span><span class="sxs-lookup"><span data-stu-id="bb3e6-113">0</span></span>|<span data-ttu-id="bb3e6-114">未知。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-114">Unknown.</span></span>|
-|<span data-ttu-id="bb3e6-115">桌面</span><span class="sxs-lookup"><span data-stu-id="bb3e6-115">desktop</span></span>|<span data-ttu-id="bb3e6-116">1</span><span class="sxs-lookup"><span data-stu-id="bb3e6-116">1</span></span>|<span data-ttu-id="bb3e6-117">桌面。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-117">Desktop.</span></span>|
-|<span data-ttu-id="bb3e6-118">便携式计算机</span><span class="sxs-lookup"><span data-stu-id="bb3e6-118">laptop</span></span>|<span data-ttu-id="bb3e6-119">2</span><span class="sxs-lookup"><span data-stu-id="bb3e6-119">2</span></span>|<span data-ttu-id="bb3e6-120">便携式计算机。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-120">Laptop.</span></span>|
-|<span data-ttu-id="bb3e6-121">worksWorkstation</span><span class="sxs-lookup"><span data-stu-id="bb3e6-121">worksWorkstation</span></span>|<span data-ttu-id="bb3e6-122">3</span><span class="sxs-lookup"><span data-stu-id="bb3e6-122">3</span></span>|<span data-ttu-id="bb3e6-123">工作站。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-123">Workstation.</span></span>|
-|<span data-ttu-id="bb3e6-124">enterpriseServer</span><span class="sxs-lookup"><span data-stu-id="bb3e6-124">enterpriseServer</span></span>|<span data-ttu-id="bb3e6-125">4</span><span class="sxs-lookup"><span data-stu-id="bb3e6-125">4</span></span>|<span data-ttu-id="bb3e6-126">企业服务器。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-126">Enterprise server.</span></span>|
-|<span data-ttu-id="bb3e6-127">phone</span><span class="sxs-lookup"><span data-stu-id="bb3e6-127">phone</span></span>|<span data-ttu-id="bb3e6-128">100</span><span class="sxs-lookup"><span data-stu-id="bb3e6-128">100</span></span>|<span data-ttu-id="bb3e6-129">电话。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-129">Phone.</span></span>|
-|<span data-ttu-id="bb3e6-130">平板电脑</span><span class="sxs-lookup"><span data-stu-id="bb3e6-130">tablet</span></span>|<span data-ttu-id="bb3e6-131">101</span><span class="sxs-lookup"><span data-stu-id="bb3e6-131">101</span></span>|<span data-ttu-id="bb3e6-132">移动平板电脑。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-132">Mobile tablet.</span></span>|
-|<span data-ttu-id="bb3e6-133">mobileOther</span><span class="sxs-lookup"><span data-stu-id="bb3e6-133">mobileOther</span></span>|<span data-ttu-id="bb3e6-134">102</span><span class="sxs-lookup"><span data-stu-id="bb3e6-134">102</span></span>|<span data-ttu-id="bb3e6-135">其他移动。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-135">Other mobile.</span></span>|
-|<span data-ttu-id="bb3e6-136">mobileUnknown</span><span class="sxs-lookup"><span data-stu-id="bb3e6-136">mobileUnknown</span></span>|<span data-ttu-id="bb3e6-137">103</span><span class="sxs-lookup"><span data-stu-id="bb3e6-137">103</span></span>|<span data-ttu-id="bb3e6-138">未知移动。</span><span class="sxs-lookup"><span data-stu-id="bb3e6-138">Unknown mobile.</span></span>|
+|<span data-ttu-id="c2af9-111">unknown</span><span class="sxs-lookup"><span data-stu-id="c2af9-111">unknown</span></span>|<span data-ttu-id="c2af9-112">0</span><span class="sxs-lookup"><span data-stu-id="c2af9-112">0</span></span>|<span data-ttu-id="c2af9-113">陌生.</span><span class="sxs-lookup"><span data-stu-id="c2af9-113">Unknown.</span></span>|
+|<span data-ttu-id="c2af9-114">desktop</span><span class="sxs-lookup"><span data-stu-id="c2af9-114">desktop</span></span>|<span data-ttu-id="c2af9-115">1</span><span class="sxs-lookup"><span data-stu-id="c2af9-115">1</span></span>|<span data-ttu-id="c2af9-116">Desktop.</span><span class="sxs-lookup"><span data-stu-id="c2af9-116">Desktop.</span></span>|
+|<span data-ttu-id="c2af9-117">手提</span><span class="sxs-lookup"><span data-stu-id="c2af9-117">laptop</span></span>|<span data-ttu-id="c2af9-118">双面</span><span class="sxs-lookup"><span data-stu-id="c2af9-118">2</span></span>|<span data-ttu-id="c2af9-119">手提.</span><span class="sxs-lookup"><span data-stu-id="c2af9-119">Laptop.</span></span>|
+|<span data-ttu-id="c2af9-120">worksWorkstation</span><span class="sxs-lookup"><span data-stu-id="c2af9-120">worksWorkstation</span></span>|<span data-ttu-id="c2af9-121">第三章</span><span class="sxs-lookup"><span data-stu-id="c2af9-121">3</span></span>|<span data-ttu-id="c2af9-122">来说.</span><span class="sxs-lookup"><span data-stu-id="c2af9-122">Workstation.</span></span>|
+|<span data-ttu-id="c2af9-123">enterpriseServer</span><span class="sxs-lookup"><span data-stu-id="c2af9-123">enterpriseServer</span></span>|<span data-ttu-id="c2af9-124">4</span><span class="sxs-lookup"><span data-stu-id="c2af9-124">4</span></span>|<span data-ttu-id="c2af9-125">企业服务器。</span><span class="sxs-lookup"><span data-stu-id="c2af9-125">Enterprise server.</span></span>|
+|<span data-ttu-id="c2af9-126">phone</span><span class="sxs-lookup"><span data-stu-id="c2af9-126">phone</span></span>|<span data-ttu-id="c2af9-127">100</span><span class="sxs-lookup"><span data-stu-id="c2af9-127">100</span></span>|<span data-ttu-id="c2af9-128">电话.</span><span class="sxs-lookup"><span data-stu-id="c2af9-128">Phone.</span></span>|
+|<span data-ttu-id="c2af9-129">版</span><span class="sxs-lookup"><span data-stu-id="c2af9-129">tablet</span></span>|<span data-ttu-id="c2af9-130">101</span><span class="sxs-lookup"><span data-stu-id="c2af9-130">101</span></span>|<span data-ttu-id="c2af9-131">移动平板电脑。</span><span class="sxs-lookup"><span data-stu-id="c2af9-131">Mobile tablet.</span></span>|
+|<span data-ttu-id="c2af9-132">mobileOther</span><span class="sxs-lookup"><span data-stu-id="c2af9-132">mobileOther</span></span>|<span data-ttu-id="c2af9-133">102</span><span class="sxs-lookup"><span data-stu-id="c2af9-133">102</span></span>|<span data-ttu-id="c2af9-134">其他移动。</span><span class="sxs-lookup"><span data-stu-id="c2af9-134">Other mobile.</span></span>|
+|<span data-ttu-id="c2af9-135">mobileUnknown</span><span class="sxs-lookup"><span data-stu-id="c2af9-135">mobileUnknown</span></span>|<span data-ttu-id="c2af9-136">103</span><span class="sxs-lookup"><span data-stu-id="c2af9-136">103</span></span>|<span data-ttu-id="c2af9-137">未知移动。</span><span class="sxs-lookup"><span data-stu-id="c2af9-137">Unknown mobile.</span></span>|
 
 
 
