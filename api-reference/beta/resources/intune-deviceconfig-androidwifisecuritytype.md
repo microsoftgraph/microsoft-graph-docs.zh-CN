@@ -1,29 +1,29 @@
 ---
 title: androidWiFiSecurityType 枚举类型
-description: 用于 Android Wi-fi 安全类型。
-localization_priority: Normal
+description: 适用于 Android 的 wlan 安全类型。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6585558f3c9434e930fbec9bf612b591e74dbf3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e83a43853a59deb4df16399f0b0b177baa2453a8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404258"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172987"
 ---
-# <a name="androidwifisecuritytype-enum-type"></a><span data-ttu-id="30fe4-103">androidWiFiSecurityType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="30fe4-103">androidWiFiSecurityType enum type</span></span>
+# <a name="androidwifisecuritytype-enum-type"></a><span data-ttu-id="0084d-103">androidWiFiSecurityType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="0084d-103">androidWiFiSecurityType enum type</span></span>
 
-> <span data-ttu-id="30fe4-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="30fe4-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="30fe4-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="30fe4-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0084d-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0084d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="30fe4-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="30fe4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0084d-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0084d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="30fe4-107">用于 Android Wi-fi 安全类型。</span><span class="sxs-lookup"><span data-stu-id="30fe4-107">Wi-Fi Security Types for Android.</span></span>
+<span data-ttu-id="0084d-106">适用于 Android 的 wlan 安全类型。</span><span class="sxs-lookup"><span data-stu-id="0084d-106">Wi-Fi Security Types for Android.</span></span>
 
-## <a name="members"></a><span data-ttu-id="30fe4-108">成员</span><span class="sxs-lookup"><span data-stu-id="30fe4-108">Members</span></span>
-|<span data-ttu-id="30fe4-109">成员</span><span class="sxs-lookup"><span data-stu-id="30fe4-109">Member</span></span>|<span data-ttu-id="30fe4-110">值</span><span class="sxs-lookup"><span data-stu-id="30fe4-110">Value</span></span>|<span data-ttu-id="30fe4-111">说明</span><span class="sxs-lookup"><span data-stu-id="30fe4-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="0084d-107">成员</span><span class="sxs-lookup"><span data-stu-id="0084d-107">Members</span></span>
+|<span data-ttu-id="0084d-108">成员</span><span class="sxs-lookup"><span data-stu-id="0084d-108">Member</span></span>|<span data-ttu-id="0084d-109">值</span><span class="sxs-lookup"><span data-stu-id="0084d-109">Value</span></span>|<span data-ttu-id="0084d-110">说明</span><span class="sxs-lookup"><span data-stu-id="0084d-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="30fe4-112">打开</span><span class="sxs-lookup"><span data-stu-id="30fe4-112">open</span></span>|<span data-ttu-id="30fe4-113">0</span><span class="sxs-lookup"><span data-stu-id="30fe4-113">0</span></span>|<span data-ttu-id="30fe4-114">打开 （无身份验证）。</span><span class="sxs-lookup"><span data-stu-id="30fe4-114">Open (No Authentication).</span></span>|
-|<span data-ttu-id="30fe4-115">wpaEnterprise</span><span class="sxs-lookup"><span data-stu-id="30fe4-115">wpaEnterprise</span></span>|<span data-ttu-id="30fe4-116">1</span><span class="sxs-lookup"><span data-stu-id="30fe4-116">1</span></span>|<span data-ttu-id="30fe4-117">WPA-企业/WPA2-企业。</span><span class="sxs-lookup"><span data-stu-id="30fe4-117">WPA-Enterprise/WPA2-Enterprise.</span></span> <span data-ttu-id="30fe4-118">必须使用 AndroidEnterpriseWifiConfiguration 类型配置企业选项。</span><span class="sxs-lookup"><span data-stu-id="30fe4-118">Must use AndroidEnterpriseWifiConfiguration type to configure enterprise options.</span></span>|
+|<span data-ttu-id="0084d-111">open</span><span class="sxs-lookup"><span data-stu-id="0084d-111">open</span></span>|<span data-ttu-id="0084d-112">0</span><span class="sxs-lookup"><span data-stu-id="0084d-112">0</span></span>|<span data-ttu-id="0084d-113">打开 (无身份验证)。</span><span class="sxs-lookup"><span data-stu-id="0084d-113">Open (No Authentication).</span></span>|
+|<span data-ttu-id="0084d-114">wpaEnterprise</span><span class="sxs-lookup"><span data-stu-id="0084d-114">wpaEnterprise</span></span>|<span data-ttu-id="0084d-115">1</span><span class="sxs-lookup"><span data-stu-id="0084d-115">1</span></span>|<span data-ttu-id="0084d-116">WPA-企业/WPA2-企业。</span><span class="sxs-lookup"><span data-stu-id="0084d-116">WPA-Enterprise/WPA2-Enterprise.</span></span> <span data-ttu-id="0084d-117">必须使用 AndroidEnterpriseWifiConfiguration 类型配置企业选项。</span><span class="sxs-lookup"><span data-stu-id="0084d-117">Must use AndroidEnterpriseWifiConfiguration type to configure enterprise options.</span></span>|
 
 
 

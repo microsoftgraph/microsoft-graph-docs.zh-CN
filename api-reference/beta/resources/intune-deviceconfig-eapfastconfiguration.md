@@ -1,31 +1,31 @@
 ---
 title: eapFastConfiguration 枚举类型
-description: EAP FAST 配置的可用设置。
-localization_priority: Normal
+description: EAP 快速配置的可用设置。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1fa2c3c3a4cf0bc245ea7c9fbc4294d69215deee
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d0d8a250b2272ae8b8287f9869697633493b116f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399386"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173568"
 ---
-# <a name="eapfastconfiguration-enum-type"></a><span data-ttu-id="763bd-103">eapFastConfiguration 枚举类型</span><span class="sxs-lookup"><span data-stu-id="763bd-103">eapFastConfiguration enum type</span></span>
+# <a name="eapfastconfiguration-enum-type"></a><span data-ttu-id="3eb8a-103">eapFastConfiguration 枚举类型</span><span class="sxs-lookup"><span data-stu-id="3eb8a-103">eapFastConfiguration enum type</span></span>
 
-> <span data-ttu-id="763bd-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="763bd-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="763bd-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="763bd-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3eb8a-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="3eb8a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="763bd-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="763bd-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3eb8a-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3eb8a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="763bd-107">EAP FAST 配置的可用设置。</span><span class="sxs-lookup"><span data-stu-id="763bd-107">Available settings for EAP-FAST Configuration.</span></span>
+<span data-ttu-id="3eb8a-106">EAP 快速配置的可用设置。</span><span class="sxs-lookup"><span data-stu-id="3eb8a-106">Available settings for EAP-FAST Configuration.</span></span>
 
-## <a name="members"></a><span data-ttu-id="763bd-108">成员</span><span class="sxs-lookup"><span data-stu-id="763bd-108">Members</span></span>
-|<span data-ttu-id="763bd-109">成员</span><span class="sxs-lookup"><span data-stu-id="763bd-109">Member</span></span>|<span data-ttu-id="763bd-110">值</span><span class="sxs-lookup"><span data-stu-id="763bd-110">Value</span></span>|<span data-ttu-id="763bd-111">说明</span><span class="sxs-lookup"><span data-stu-id="763bd-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="3eb8a-107">成员</span><span class="sxs-lookup"><span data-stu-id="3eb8a-107">Members</span></span>
+|<span data-ttu-id="3eb8a-108">成员</span><span class="sxs-lookup"><span data-stu-id="3eb8a-108">Member</span></span>|<span data-ttu-id="3eb8a-109">值</span><span class="sxs-lookup"><span data-stu-id="3eb8a-109">Value</span></span>|<span data-ttu-id="3eb8a-110">说明</span><span class="sxs-lookup"><span data-stu-id="3eb8a-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="763bd-112">noProtectedAccessCredential</span><span class="sxs-lookup"><span data-stu-id="763bd-112">noProtectedAccessCredential</span></span>|<span data-ttu-id="763bd-113">0</span><span class="sxs-lookup"><span data-stu-id="763bd-113">0</span></span>|<span data-ttu-id="763bd-114">使用 EAP-FAST 不受保护的访问凭据 (PAC)。</span><span class="sxs-lookup"><span data-stu-id="763bd-114">Use EAP-FAST without Protected Access Credential (PAC).</span></span>|
-|<span data-ttu-id="763bd-115">useProtectedAccessCredential</span><span class="sxs-lookup"><span data-stu-id="763bd-115">useProtectedAccessCredential</span></span>|<span data-ttu-id="763bd-116">1</span><span class="sxs-lookup"><span data-stu-id="763bd-116">1</span></span>|<span data-ttu-id="763bd-117">使用受保护访问凭据 (PAC)。</span><span class="sxs-lookup"><span data-stu-id="763bd-117">Use Protected Access Credential (PAC).</span></span>|
-|<span data-ttu-id="763bd-118">useProtectedAccessCredentialAndProvision</span><span class="sxs-lookup"><span data-stu-id="763bd-118">useProtectedAccessCredentialAndProvision</span></span>|<span data-ttu-id="763bd-119">2</span><span class="sxs-lookup"><span data-stu-id="763bd-119">2</span></span>|<span data-ttu-id="763bd-120">使用受保护的访问凭据 (PAC) 和设置 pac。</span><span class="sxs-lookup"><span data-stu-id="763bd-120">Use Protected Access Credential (PAC) and Provision PAC.</span></span>|
-|<span data-ttu-id="763bd-121">useProtectedAccessCredentialAndProvisionAnonymously</span><span class="sxs-lookup"><span data-stu-id="763bd-121">useProtectedAccessCredentialAndProvisionAnonymously</span></span>|<span data-ttu-id="763bd-122">3</span><span class="sxs-lookup"><span data-stu-id="763bd-122">3</span></span>|<span data-ttu-id="763bd-123">使用受保护访问凭据 (PAC)，设置 PAC，并以匿名方式这样。</span><span class="sxs-lookup"><span data-stu-id="763bd-123">Use Protected Access Credential (PAC), Provision PAC, and do so anonymously.</span></span>|
+|<span data-ttu-id="3eb8a-111">noProtectedAccessCredential</span><span class="sxs-lookup"><span data-stu-id="3eb8a-111">noProtectedAccessCredential</span></span>|<span data-ttu-id="3eb8a-112">0</span><span class="sxs-lookup"><span data-stu-id="3eb8a-112">0</span></span>|<span data-ttu-id="3eb8a-113">使用 eap-fast (无保护性访问凭据 (PAC))。</span><span class="sxs-lookup"><span data-stu-id="3eb8a-113">Use EAP-FAST without Protected Access Credential (PAC).</span></span>|
+|<span data-ttu-id="3eb8a-114">useProtectedAccessCredential</span><span class="sxs-lookup"><span data-stu-id="3eb8a-114">useProtectedAccessCredential</span></span>|<span data-ttu-id="3eb8a-115">1</span><span class="sxs-lookup"><span data-stu-id="3eb8a-115">1</span></span>|<span data-ttu-id="3eb8a-116">使用受保护的访问凭据 (PAC)。</span><span class="sxs-lookup"><span data-stu-id="3eb8a-116">Use Protected Access Credential (PAC).</span></span>|
+|<span data-ttu-id="3eb8a-117">useProtectedAccessCredentialAndProvision</span><span class="sxs-lookup"><span data-stu-id="3eb8a-117">useProtectedAccessCredentialAndProvision</span></span>|<span data-ttu-id="3eb8a-118">双面</span><span class="sxs-lookup"><span data-stu-id="3eb8a-118">2</span></span>|<span data-ttu-id="3eb8a-119">使用保护性接入身分凭证 (PAC) 和预配 PAC。</span><span class="sxs-lookup"><span data-stu-id="3eb8a-119">Use Protected Access Credential (PAC) and Provision PAC.</span></span>|
+|<span data-ttu-id="3eb8a-120">useProtectedAccessCredentialAndProvisionAnonymously</span><span class="sxs-lookup"><span data-stu-id="3eb8a-120">useProtectedAccessCredentialAndProvisionAnonymously</span></span>|<span data-ttu-id="3eb8a-121">第三章</span><span class="sxs-lookup"><span data-stu-id="3eb8a-121">3</span></span>|<span data-ttu-id="3eb8a-122">使用受保护的访问凭据 (PAC)、预配 PAC, 并以匿名方式执行此操作。</span><span class="sxs-lookup"><span data-stu-id="3eb8a-122">Use Protected Access Credential (PAC), Provision PAC, and do so anonymously.</span></span>|
 
 
 

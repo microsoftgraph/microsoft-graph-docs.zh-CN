@@ -1,35 +1,35 @@
 ---
 title: deviceComplianceActionType 枚举类型
 description: 计划操作类型枚举
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd0db68a21fff79ddbab924e8a1d9bd2ff2e542d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d824f579787bf24cc56704a1c8a9df280d969809
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425741"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173505"
 ---
-# <a name="devicecomplianceactiontype-enum-type"></a><span data-ttu-id="76c3d-103">deviceComplianceActionType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="76c3d-103">deviceComplianceActionType enum type</span></span>
+# <a name="devicecomplianceactiontype-enum-type"></a><span data-ttu-id="dfabc-103">deviceComplianceActionType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="dfabc-103">deviceComplianceActionType enum type</span></span>
 
-> <span data-ttu-id="76c3d-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="76c3d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="76c3d-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="76c3d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="dfabc-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="dfabc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="76c3d-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="76c3d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="dfabc-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="dfabc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="76c3d-107">计划操作类型枚举</span><span class="sxs-lookup"><span data-stu-id="76c3d-107">Scheduled Action Type Enum</span></span>
+<span data-ttu-id="dfabc-106">计划操作类型枚举</span><span class="sxs-lookup"><span data-stu-id="dfabc-106">Scheduled Action Type Enum</span></span>
 
-## <a name="members"></a><span data-ttu-id="76c3d-108">成员</span><span class="sxs-lookup"><span data-stu-id="76c3d-108">Members</span></span>
-|<span data-ttu-id="76c3d-109">成员</span><span class="sxs-lookup"><span data-stu-id="76c3d-109">Member</span></span>|<span data-ttu-id="76c3d-110">值</span><span class="sxs-lookup"><span data-stu-id="76c3d-110">Value</span></span>|<span data-ttu-id="76c3d-111">说明</span><span class="sxs-lookup"><span data-stu-id="76c3d-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="dfabc-107">成员</span><span class="sxs-lookup"><span data-stu-id="dfabc-107">Members</span></span>
+|<span data-ttu-id="dfabc-108">成员</span><span class="sxs-lookup"><span data-stu-id="dfabc-108">Member</span></span>|<span data-ttu-id="dfabc-109">值</span><span class="sxs-lookup"><span data-stu-id="dfabc-109">Value</span></span>|<span data-ttu-id="dfabc-110">说明</span><span class="sxs-lookup"><span data-stu-id="dfabc-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="76c3d-112">noAction</span><span class="sxs-lookup"><span data-stu-id="76c3d-112">noAction</span></span>|<span data-ttu-id="76c3d-113">0</span><span class="sxs-lookup"><span data-stu-id="76c3d-113">0</span></span>|<span data-ttu-id="76c3d-114">任何操作</span><span class="sxs-lookup"><span data-stu-id="76c3d-114">No Action</span></span>|
-|<span data-ttu-id="76c3d-115">通知</span><span class="sxs-lookup"><span data-stu-id="76c3d-115">notification</span></span>|<span data-ttu-id="76c3d-116">1</span><span class="sxs-lookup"><span data-stu-id="76c3d-116">1</span></span>|<span data-ttu-id="76c3d-117">发送通知</span><span class="sxs-lookup"><span data-stu-id="76c3d-117">Send Notification</span></span>|
-|<span data-ttu-id="76c3d-118">阻止</span><span class="sxs-lookup"><span data-stu-id="76c3d-118">block</span></span>|<span data-ttu-id="76c3d-119">2</span><span class="sxs-lookup"><span data-stu-id="76c3d-119">2</span></span>|<span data-ttu-id="76c3d-120">阻止 AAD 中的设备</span><span class="sxs-lookup"><span data-stu-id="76c3d-120">Block the device in AAD</span></span>|
-|<span data-ttu-id="76c3d-121">停用</span><span class="sxs-lookup"><span data-stu-id="76c3d-121">retire</span></span>|<span data-ttu-id="76c3d-122">3</span><span class="sxs-lookup"><span data-stu-id="76c3d-122">3</span></span>|<span data-ttu-id="76c3d-123">停用设备</span><span class="sxs-lookup"><span data-stu-id="76c3d-123">Retire the device</span></span>|
-|<span data-ttu-id="76c3d-124">擦除</span><span class="sxs-lookup"><span data-stu-id="76c3d-124">wipe</span></span>|<span data-ttu-id="76c3d-125">4</span><span class="sxs-lookup"><span data-stu-id="76c3d-125">4</span></span>|<span data-ttu-id="76c3d-126">擦除设备</span><span class="sxs-lookup"><span data-stu-id="76c3d-126">Wipe the device</span></span>|
-|<span data-ttu-id="76c3d-127">removeResourceAccessProfiles</span><span class="sxs-lookup"><span data-stu-id="76c3d-127">removeResourceAccessProfiles</span></span>|<span data-ttu-id="76c3d-128">5</span><span class="sxs-lookup"><span data-stu-id="76c3d-128">5</span></span>|<span data-ttu-id="76c3d-129">从设备中删除资源访问配置文件</span><span class="sxs-lookup"><span data-stu-id="76c3d-129">Remove Resource Access Profiles from the device</span></span>|
-|<span data-ttu-id="76c3d-130">pushNotification</span><span class="sxs-lookup"><span data-stu-id="76c3d-130">pushNotification</span></span>|<span data-ttu-id="76c3d-131">9</span><span class="sxs-lookup"><span data-stu-id="76c3d-131">9</span></span>|<span data-ttu-id="76c3d-132">向设备发送推送通知</span><span class="sxs-lookup"><span data-stu-id="76c3d-132">Send push notification to device</span></span>|
-|<span data-ttu-id="76c3d-133">remoteLock</span><span class="sxs-lookup"><span data-stu-id="76c3d-133">remoteLock</span></span>|<span data-ttu-id="76c3d-134">10</span><span class="sxs-lookup"><span data-stu-id="76c3d-134">10</span></span>|<span data-ttu-id="76c3d-135">远程锁定设备</span><span class="sxs-lookup"><span data-stu-id="76c3d-135">Remotely lock the device</span></span>|
+|<span data-ttu-id="dfabc-111">noAction</span><span class="sxs-lookup"><span data-stu-id="dfabc-111">noAction</span></span>|<span data-ttu-id="dfabc-112">0</span><span class="sxs-lookup"><span data-stu-id="dfabc-112">0</span></span>|<span data-ttu-id="dfabc-113">无操作</span><span class="sxs-lookup"><span data-stu-id="dfabc-113">No Action</span></span>|
+|<span data-ttu-id="dfabc-114">通告</span><span class="sxs-lookup"><span data-stu-id="dfabc-114">notification</span></span>|<span data-ttu-id="dfabc-115">1</span><span class="sxs-lookup"><span data-stu-id="dfabc-115">1</span></span>|<span data-ttu-id="dfabc-116">发送通知</span><span class="sxs-lookup"><span data-stu-id="dfabc-116">Send Notification</span></span>|
+|<span data-ttu-id="dfabc-117">数据</span><span class="sxs-lookup"><span data-stu-id="dfabc-117">block</span></span>|<span data-ttu-id="dfabc-118">双面</span><span class="sxs-lookup"><span data-stu-id="dfabc-118">2</span></span>|<span data-ttu-id="dfabc-119">阻止 AAD 中的设备</span><span class="sxs-lookup"><span data-stu-id="dfabc-119">Block the device in AAD</span></span>|
+|<span data-ttu-id="dfabc-120">注销</span><span class="sxs-lookup"><span data-stu-id="dfabc-120">retire</span></span>|<span data-ttu-id="dfabc-121">第三章</span><span class="sxs-lookup"><span data-stu-id="dfabc-121">3</span></span>|<span data-ttu-id="dfabc-122">停用设备</span><span class="sxs-lookup"><span data-stu-id="dfabc-122">Retire the device</span></span>|
+|<span data-ttu-id="dfabc-123">擦</span><span class="sxs-lookup"><span data-stu-id="dfabc-123">wipe</span></span>|<span data-ttu-id="dfabc-124">4</span><span class="sxs-lookup"><span data-stu-id="dfabc-124">4</span></span>|<span data-ttu-id="dfabc-125">擦除设备</span><span class="sxs-lookup"><span data-stu-id="dfabc-125">Wipe the device</span></span>|
+|<span data-ttu-id="dfabc-126">removeResourceAccessProfiles</span><span class="sxs-lookup"><span data-stu-id="dfabc-126">removeResourceAccessProfiles</span></span>|<span data-ttu-id="dfabc-127">5</span><span class="sxs-lookup"><span data-stu-id="dfabc-127">5</span></span>|<span data-ttu-id="dfabc-128">从设备中删除资源访问配置文件</span><span class="sxs-lookup"><span data-stu-id="dfabc-128">Remove Resource Access Profiles from the device</span></span>|
+|<span data-ttu-id="dfabc-129">pushNotification</span><span class="sxs-lookup"><span data-stu-id="dfabc-129">pushNotification</span></span>|<span data-ttu-id="dfabc-130">第</span><span class="sxs-lookup"><span data-stu-id="dfabc-130">9</span></span>|<span data-ttu-id="dfabc-131">将推送通知发送到设备</span><span class="sxs-lookup"><span data-stu-id="dfabc-131">Send push notification to device</span></span>|
+|<span data-ttu-id="dfabc-132">remoteLock</span><span class="sxs-lookup"><span data-stu-id="dfabc-132">remoteLock</span></span>|<span data-ttu-id="dfabc-133">10</span><span class="sxs-lookup"><span data-stu-id="dfabc-133">10</span></span>|<span data-ttu-id="dfabc-134">远程锁定设备</span><span class="sxs-lookup"><span data-stu-id="dfabc-134">Remotely lock the device</span></span>|
 
 
 
