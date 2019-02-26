@@ -4,26 +4,26 @@ description: 创建新的 deviceCategory 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 709217670f946d92135c15b13b2c825703337daa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 76c1d0c8b22484b3a35d0db49c5a4e578e656880
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950450"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255169"
 ---
 # <a name="create-devicecategory"></a>创建 deviceCategory
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp; **入职培训** | DeviceManagementManaged Devices.ReadWrite.All|
+| &nbsp; &nbsp; **载入** | DeviceManagementManaged 设备。 ReadWrite。|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -50,7 +50,7 @@ POST /deviceManagement/deviceCategories
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备类别的唯一标识符。 只读。|
-|**入职培训**|
+|**载入**|
 |displayName|String|设备类别的显示名称。|
 |description|String|设备类别的可选说明。|
 
