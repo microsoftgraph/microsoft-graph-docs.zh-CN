@@ -1,21 +1,21 @@
 ---
 title: certificateIssuanceStates 枚举类型
 description: 证书颁发状态选项。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa17337a72d00135e75af13c7d111900a710e9d3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6c4414a7e3b1f2ed2806b9f7f695426e0bc73b7b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424698"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157090"
 ---
 # <a name="certificateissuancestates-enum-type"></a>certificateIssuanceStates 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 证书颁发状态选项。
 
@@ -24,26 +24,26 @@ ms.locfileid: "29424698"
 |:---|:---|:---|
 |unknown|0|尚未记录|
 |challengeIssued|1|尚未记录|
-|challengeIssueFailed|2|尚未记录|
-|requestCreationFailed|3|尚未记录|
+|challengeIssueFailed|双面|尚未记录|
+|requestCreationFailed|第三章|尚未记录|
 |requestSubmitFailed|4|尚未记录|
 |challengeValidationSucceeded|5|尚未记录|
-|challengeValidationFailed|6|尚未记录|
-|issueFailed|7|尚未记录|
-|issuePending|8|尚未记录|
-|颁发|9|尚未记录|
+|challengeValidationFailed|型|尚未记录|
+|issueFailed|步|尚未记录|
+|issuePending|utf-8|尚未记录|
+|io|第|尚未记录|
 |responseProcessingFailed|10|尚未记录|
-|responsePending|11|尚未记录|
+|responsePending|11x17|尚未记录|
 |enrollmentSucceeded|12|尚未记录|
 |enrollmentNotNeeded|13|尚未记录|
-|吊销|14|尚未记录|
-|removedFromCollection|15|尚未记录|
-|renewVerified|16|尚未记录|
-|installFailed|17|尚未记录|
-|安装|18|尚未记录|
-|deleteFailed|19|尚未记录|
+|吊销|日|尚未记录|
+|removedFromCollection|个|尚未记录|
+|renewVerified|位|尚未记录|
+|installFailed|×|尚未记录|
+|了|18|尚未记录|
+|deleteFailed|合|尚未记录|
 |deleted|20|尚未记录|
-|renewalRequested|21|尚未记录|
+|renewalRequested|不足|尚未记录|
 |请求|22|尚未记录|
 
 

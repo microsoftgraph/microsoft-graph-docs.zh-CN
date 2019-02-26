@@ -3,25 +3,26 @@ title: appListType 枚举类型
 description: 合规性应用程序列表的可能值。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f1439ab860ab6a1fbf9ff4deb30320bb57fba338
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 379ec2e10e68d62353875cd2b49c0944fe11f4da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967236"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254322"
 ---
 # <a name="applisttype-enum-type"></a>appListType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 合规性应用程序列表的可能值。
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|默认值，没有用途。|
-|appsInListCompliant|1|在列表代表将被视为符合 （仅在列表上的应用程序都符合） 的应用程序。|
-|appsNotInListCompliant|2|在列表代表将被视为不符合标准的应用程序 （所有应用程序是除列表上的应用程序兼容）。|
+|无|0|默认值, 无意向。|
+|appsInListCompliant|1|此列表表示将被视为合规性的应用程序 (仅符合列表中的应用程序)。|
+|appsNotInListCompliant|双面|此列表表示将被视为不合规的应用程序 (所有应用程序都符合列表中的应用程序)。|
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: 获取 macOSGeneralDeviceConfiguration
 description: 读取 macOSGeneralDeviceConfiguration 对象的属性和关系。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a37cb5bb86cede34bb19b900ca9bd2c5fc2b469
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1ae2072afd5ce3477d1a13d60277e17d32e2f76e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403978"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158098"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>获取 macOSGeneralDeviceConfiguration
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象的属性和关系。
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2177
+Content-Length: 2301
 
 {
   "value": {
@@ -128,7 +128,10 @@ Content-Length: 2177
     "passwordBlockFingerprintUnlock": true,
     "passwordBlockAutoFill": true,
     "passwordBlockProximityRequests": true,
-    "passwordBlockAirDropSharing": true
+    "passwordBlockAirDropSharing": true,
+    "softwareUpdatesEnforcedDelayInDays": 2,
+    "softwareUpdatesForceDelayed": true,
+    "contentCachingBlocked": true
   }
 }
 ```

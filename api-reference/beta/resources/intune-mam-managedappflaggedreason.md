@@ -1,29 +1,29 @@
 ---
 title: managedAppFlaggedReason 枚举类型
-description: 用户已标记为其原因
-localization_priority: Normal
+description: 用户已被标记的原因
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9d2d956107d8a8ecbc40f90d29260c2ac06064f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 13b5cdb11725452c78543a9a8d08823eafd426b5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424950"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154066"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>managedAppFlaggedReason 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-用户已标记为其原因
+用户已被标记的原因
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|没有问题。|
-|rootedDevice|1|应用程序注册为根解锁设备上运行。|
+|无|0|无问题。|
+|rootedDevice|1|应用注册在根/解锁设备上运行。|
 
 
 

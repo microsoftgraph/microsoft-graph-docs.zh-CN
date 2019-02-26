@@ -1,21 +1,21 @@
 ---
 title: managedDeviceMobileAppConfiguration 资源类型
 description: 已注册设备移动应用配置的抽象类
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90ac67285ba856916194d30831f556ce6b521dbd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dacccb00a30028a5b9e5144eb843ca52c60da876
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400142"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154248"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>managedDeviceMobileAppConfiguration 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 已注册设备移动应用配置的抽象类
 
@@ -31,7 +31,7 @@ ms.locfileid: "29400142"
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetedMobileApps|String 集合|关联的应用。|
-|roleScopeTagIds|String 集合|此应用程序配置实体范围标记的列表。|
+|roleScopeTagIds|String collection|此应用配置实体的范围标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |description|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
