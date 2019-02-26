@@ -1,30 +1,30 @@
 ---
 title: dmaGuardDeviceEnumerationPolicyType 枚举类型
 description: DmaGuardDeviceEnumerationPolicy 的可能值。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5baa0cfd5c80f954036e10f0e4d04d2b83e57f2b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 512bf44d25629f4b1c88c2309c464e9d0f33f625
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429482"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159708"
 ---
-# <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a><span data-ttu-id="21f4a-103">dmaGuardDeviceEnumerationPolicyType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="21f4a-103">dmaGuardDeviceEnumerationPolicyType enum type</span></span>
+# <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a><span data-ttu-id="95844-103">dmaGuardDeviceEnumerationPolicyType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="95844-103">dmaGuardDeviceEnumerationPolicyType enum type</span></span>
 
-> <span data-ttu-id="21f4a-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="21f4a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="21f4a-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="21f4a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="95844-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="95844-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="21f4a-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="21f4a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="95844-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="95844-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="21f4a-107">DmaGuardDeviceEnumerationPolicy 的可能值。</span><span class="sxs-lookup"><span data-stu-id="21f4a-107">Possible values of the DmaGuardDeviceEnumerationPolicy.</span></span>
+<span data-ttu-id="95844-106">DmaGuardDeviceEnumerationPolicy 的可能值。</span><span class="sxs-lookup"><span data-stu-id="95844-106">Possible values of the DmaGuardDeviceEnumerationPolicy.</span></span>
 
-## <a name="members"></a><span data-ttu-id="21f4a-108">成员</span><span class="sxs-lookup"><span data-stu-id="21f4a-108">Members</span></span>
-|<span data-ttu-id="21f4a-109">成员</span><span class="sxs-lookup"><span data-stu-id="21f4a-109">Member</span></span>|<span data-ttu-id="21f4a-110">值</span><span class="sxs-lookup"><span data-stu-id="21f4a-110">Value</span></span>|<span data-ttu-id="21f4a-111">说明</span><span class="sxs-lookup"><span data-stu-id="21f4a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="95844-107">成员</span><span class="sxs-lookup"><span data-stu-id="95844-107">Members</span></span>
+|<span data-ttu-id="95844-108">成员</span><span class="sxs-lookup"><span data-stu-id="95844-108">Member</span></span>|<span data-ttu-id="95844-109">值</span><span class="sxs-lookup"><span data-stu-id="95844-109">Value</span></span>|<span data-ttu-id="95844-110">说明</span><span class="sxs-lookup"><span data-stu-id="95844-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="21f4a-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="21f4a-112">deviceDefault</span></span>|<span data-ttu-id="21f4a-113">0</span><span class="sxs-lookup"><span data-stu-id="21f4a-113">0</span></span>|<span data-ttu-id="21f4a-114">默认值。</span><span class="sxs-lookup"><span data-stu-id="21f4a-114">Default value.</span></span> <span data-ttu-id="21f4a-115">用户解除锁定的屏幕后，将仅枚举设备 DMA 重新映射不兼容的驱动程序。</span><span class="sxs-lookup"><span data-stu-id="21f4a-115">Devices with DMA remapping incompatible drivers will only be enumerated after the user unlocks the screen.</span></span>|
-|<span data-ttu-id="21f4a-116">blockAll</span><span class="sxs-lookup"><span data-stu-id="21f4a-116">blockAll</span></span>|<span data-ttu-id="21f4a-117">1</span><span class="sxs-lookup"><span data-stu-id="21f4a-117">1</span></span>|<span data-ttu-id="21f4a-118">从不允许设备 DMA 重新映射不兼容的驱动程序启动并随时执行 DMA。</span><span class="sxs-lookup"><span data-stu-id="21f4a-118">Devices with DMA remapping incompatible drivers will never be allowed to start and perform DMA at any time.</span></span>|
-|<span data-ttu-id="21f4a-119">allowAll</span><span class="sxs-lookup"><span data-stu-id="21f4a-119">allowAll</span></span>|<span data-ttu-id="21f4a-120">2</span><span class="sxs-lookup"><span data-stu-id="21f4a-120">2</span></span>|<span data-ttu-id="21f4a-121">在任何时候都将被枚举所有外部的 DMA 能够 PCIe 设备。</span><span class="sxs-lookup"><span data-stu-id="21f4a-121">All external DMA capable PCIe devices will be enumerated at any time.</span></span>|
+|<span data-ttu-id="95844-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="95844-111">deviceDefault</span></span>|<span data-ttu-id="95844-112">0</span><span class="sxs-lookup"><span data-stu-id="95844-112">0</span></span>|<span data-ttu-id="95844-113">默认值。</span><span class="sxs-lookup"><span data-stu-id="95844-113">Default value.</span></span> <span data-ttu-id="95844-114">具有 DMA 重新映射的设备将仅在用户解锁屏幕后枚举不兼容驱动程序。</span><span class="sxs-lookup"><span data-stu-id="95844-114">Devices with DMA remapping incompatible drivers will only be enumerated after the user unlocks the screen.</span></span>|
+|<span data-ttu-id="95844-115">blockAll</span><span class="sxs-lookup"><span data-stu-id="95844-115">blockAll</span></span>|<span data-ttu-id="95844-116">1</span><span class="sxs-lookup"><span data-stu-id="95844-116">1</span></span>|<span data-ttu-id="95844-117">具有 DMA 重新映射的设备不支持的驱动程序在任何时候都不能随时启动和执行 dma。</span><span class="sxs-lookup"><span data-stu-id="95844-117">Devices with DMA remapping incompatible drivers will never be allowed to start and perform DMA at any time.</span></span>|
+|<span data-ttu-id="95844-118">allowAll</span><span class="sxs-lookup"><span data-stu-id="95844-118">allowAll</span></span>|<span data-ttu-id="95844-119">双面</span><span class="sxs-lookup"><span data-stu-id="95844-119">2</span></span>|<span data-ttu-id="95844-120">所有支持外部 DMA 的 PCIe 设备将在任何时候枚举。</span><span class="sxs-lookup"><span data-stu-id="95844-120">All external DMA capable PCIe devices will be enumerated at any time.</span></span>|
 
 
 

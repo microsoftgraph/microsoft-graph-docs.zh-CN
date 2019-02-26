@@ -1,28 +1,29 @@
 ---
 title: mobileThreatPartnerTenantState 枚举类型
-description: 合作伙伴的此租户的状态。
+description: 此租户的合作伙伴状态。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 195fe8fcfac70bc0e98a0ac2f94c28a63b5c9983
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c4962ff9f920b97a0dad361549e9b5829b3740b8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937451"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258091"
 ---
-# <a name="mobilethreatpartnertenantstate-enum-type"></a><span data-ttu-id="9fe36-103">mobileThreatPartnerTenantState 枚举类型</span><span class="sxs-lookup"><span data-stu-id="9fe36-103">mobileThreatPartnerTenantState enum type</span></span>
+# <a name="mobilethreatpartnertenantstate-enum-type"></a><span data-ttu-id="47d88-103">mobileThreatPartnerTenantState 枚举类型</span><span class="sxs-lookup"><span data-stu-id="47d88-103">mobileThreatPartnerTenantState enum type</span></span>
 
-> <span data-ttu-id="9fe36-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="9fe36-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="47d88-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="47d88-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9fe36-105">合作伙伴的此租户的状态。</span><span class="sxs-lookup"><span data-stu-id="9fe36-105">Partner state of this tenant.</span></span>
-## <a name="members"></a><span data-ttu-id="9fe36-106">成员</span><span class="sxs-lookup"><span data-stu-id="9fe36-106">Members</span></span>
-|<span data-ttu-id="9fe36-107">成员</span><span class="sxs-lookup"><span data-stu-id="9fe36-107">Member</span></span>|<span data-ttu-id="9fe36-108">值</span><span class="sxs-lookup"><span data-stu-id="9fe36-108">Value</span></span>|<span data-ttu-id="9fe36-109">Description</span><span class="sxs-lookup"><span data-stu-id="9fe36-109">Description</span></span>|
+<span data-ttu-id="47d88-105">此租户的合作伙伴状态。</span><span class="sxs-lookup"><span data-stu-id="47d88-105">Partner state of this tenant.</span></span>
+
+## <a name="members"></a><span data-ttu-id="47d88-106">成员</span><span class="sxs-lookup"><span data-stu-id="47d88-106">Members</span></span>
+|<span data-ttu-id="47d88-107">成员</span><span class="sxs-lookup"><span data-stu-id="47d88-107">Member</span></span>|<span data-ttu-id="47d88-108">值</span><span class="sxs-lookup"><span data-stu-id="47d88-108">Value</span></span>|<span data-ttu-id="47d88-109">说明</span><span class="sxs-lookup"><span data-stu-id="47d88-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9fe36-110">不可用</span><span class="sxs-lookup"><span data-stu-id="9fe36-110">unavailable</span></span>|<span data-ttu-id="9fe36-111">0</span><span class="sxs-lookup"><span data-stu-id="9fe36-111">0</span></span>|<span data-ttu-id="9fe36-112">合作伙伴不可用。</span><span class="sxs-lookup"><span data-stu-id="9fe36-112">Partner is unavailable.</span></span>|
-|<span data-ttu-id="9fe36-113">可用</span><span class="sxs-lookup"><span data-stu-id="9fe36-113">available</span></span>|<span data-ttu-id="9fe36-114">1</span><span class="sxs-lookup"><span data-stu-id="9fe36-114">1</span></span>|<span data-ttu-id="9fe36-115">合作伙伴才可用。</span><span class="sxs-lookup"><span data-stu-id="9fe36-115">Partner is available.</span></span>|
-|<span data-ttu-id="9fe36-116">enabled</span><span class="sxs-lookup"><span data-stu-id="9fe36-116">enabled</span></span>|<span data-ttu-id="9fe36-117">2</span><span class="sxs-lookup"><span data-stu-id="9fe36-117">2</span></span>|<span data-ttu-id="9fe36-118">合作伙伴处于启用状态。</span><span class="sxs-lookup"><span data-stu-id="9fe36-118">Partner is enabled.</span></span>|
-|<span data-ttu-id="9fe36-119">未响应</span><span class="sxs-lookup"><span data-stu-id="9fe36-119">unresponsive</span></span>|<span data-ttu-id="9fe36-120">3</span><span class="sxs-lookup"><span data-stu-id="9fe36-120">3</span></span>|<span data-ttu-id="9fe36-121">合作伙伴没有响应。</span><span class="sxs-lookup"><span data-stu-id="9fe36-121">Partner is unresponsive.</span></span>|
+|<span data-ttu-id="47d88-110">才</span><span class="sxs-lookup"><span data-stu-id="47d88-110">unavailable</span></span>|<span data-ttu-id="47d88-111">0</span><span class="sxs-lookup"><span data-stu-id="47d88-111">0</span></span>|<span data-ttu-id="47d88-112">合作伙伴不可用。</span><span class="sxs-lookup"><span data-stu-id="47d88-112">Partner is unavailable.</span></span>|
+|<span data-ttu-id="47d88-113">可用</span><span class="sxs-lookup"><span data-stu-id="47d88-113">available</span></span>|<span data-ttu-id="47d88-114">1</span><span class="sxs-lookup"><span data-stu-id="47d88-114">1</span></span>|<span data-ttu-id="47d88-115">合作伙伴可用。</span><span class="sxs-lookup"><span data-stu-id="47d88-115">Partner is available.</span></span>|
+|<span data-ttu-id="47d88-116">enabled</span><span class="sxs-lookup"><span data-stu-id="47d88-116">enabled</span></span>|<span data-ttu-id="47d88-117">双面</span><span class="sxs-lookup"><span data-stu-id="47d88-117">2</span></span>|<span data-ttu-id="47d88-118">启用合作伙伴。</span><span class="sxs-lookup"><span data-stu-id="47d88-118">Partner is enabled.</span></span>|
+|<span data-ttu-id="47d88-119">无</span><span class="sxs-lookup"><span data-stu-id="47d88-119">unresponsive</span></span>|<span data-ttu-id="47d88-120">第三章</span><span class="sxs-lookup"><span data-stu-id="47d88-120">3</span></span>|<span data-ttu-id="47d88-121">合作伙伴无响应。</span><span class="sxs-lookup"><span data-stu-id="47d88-121">Partner is unresponsive.</span></span>|
 
 
 
