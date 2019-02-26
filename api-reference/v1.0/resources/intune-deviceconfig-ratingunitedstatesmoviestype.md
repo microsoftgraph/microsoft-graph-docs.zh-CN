@@ -1,31 +1,32 @@
 ---
 title: ratingUnitedStatesMoviesType 枚举类型
-description: 电影分级美国的标签
+description: 美国的电影评分标签
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f8da7fb7de666c21f8612d9af4a607f2dc483ff3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a6dd842d314f5479f2be05bbbfc9e5544e7c7091
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937549"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260268"
 ---
-# <a name="ratingunitedstatesmoviestype-enum-type"></a><span data-ttu-id="bd76e-103">ratingUnitedStatesMoviesType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="bd76e-103">ratingUnitedStatesMoviesType enum type</span></span>
+# <a name="ratingunitedstatesmoviestype-enum-type"></a><span data-ttu-id="6978b-103">ratingUnitedStatesMoviesType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="6978b-103">ratingUnitedStatesMoviesType enum type</span></span>
 
-> <span data-ttu-id="bd76e-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="bd76e-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="6978b-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="6978b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bd76e-105">电影分级美国的标签</span><span class="sxs-lookup"><span data-stu-id="bd76e-105">Movies rating labels in United States</span></span>
-## <a name="members"></a><span data-ttu-id="bd76e-106">成员</span><span class="sxs-lookup"><span data-stu-id="bd76e-106">Members</span></span>
-|<span data-ttu-id="bd76e-107">成员</span><span class="sxs-lookup"><span data-stu-id="bd76e-107">Member</span></span>|<span data-ttu-id="bd76e-108">值</span><span class="sxs-lookup"><span data-stu-id="bd76e-108">Value</span></span>|<span data-ttu-id="bd76e-109">Description</span><span class="sxs-lookup"><span data-stu-id="bd76e-109">Description</span></span>|
+<span data-ttu-id="6978b-105">美国的电影评分标签</span><span class="sxs-lookup"><span data-stu-id="6978b-105">Movies rating labels in United States</span></span>
+
+## <a name="members"></a><span data-ttu-id="6978b-106">成员</span><span class="sxs-lookup"><span data-stu-id="6978b-106">Members</span></span>
+|<span data-ttu-id="6978b-107">成员</span><span class="sxs-lookup"><span data-stu-id="6978b-107">Member</span></span>|<span data-ttu-id="6978b-108">值</span><span class="sxs-lookup"><span data-stu-id="6978b-108">Value</span></span>|<span data-ttu-id="6978b-109">说明</span><span class="sxs-lookup"><span data-stu-id="6978b-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bd76e-110">allAllowed</span><span class="sxs-lookup"><span data-stu-id="bd76e-110">allAllowed</span></span>|<span data-ttu-id="bd76e-111">0</span><span class="sxs-lookup"><span data-stu-id="bd76e-111">0</span></span>|<span data-ttu-id="bd76e-112">默认值，允许所有电影内容</span><span class="sxs-lookup"><span data-stu-id="bd76e-112">Default value, allow all movies content</span></span>|
-|<span data-ttu-id="bd76e-113">allBlocked</span><span class="sxs-lookup"><span data-stu-id="bd76e-113">allBlocked</span></span>|<span data-ttu-id="bd76e-114">1</span><span class="sxs-lookup"><span data-stu-id="bd76e-114">1</span></span>|<span data-ttu-id="bd76e-115">不允许任何电影内容</span><span class="sxs-lookup"><span data-stu-id="bd76e-115">Do not allow any movies content</span></span>|
-|<span data-ttu-id="bd76e-116">常规</span><span class="sxs-lookup"><span data-stu-id="bd76e-116">general</span></span>|<span data-ttu-id="bd76e-117">2</span><span class="sxs-lookup"><span data-stu-id="bd76e-117">2</span></span>|<span data-ttu-id="bd76e-118">G、 获准加入会议的所有岁</span><span class="sxs-lookup"><span data-stu-id="bd76e-118">G, all ages admitted</span></span>|
-|<span data-ttu-id="bd76e-119">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="bd76e-119">parentalGuidance</span></span>|<span data-ttu-id="bd76e-120">3</span><span class="sxs-lookup"><span data-stu-id="bd76e-120">3</span></span>|<span data-ttu-id="bd76e-121">PG，一些材料可能不适合子级</span><span class="sxs-lookup"><span data-stu-id="bd76e-121">PG, some material may not be suitable for children</span></span>|
-|<span data-ttu-id="bd76e-122">parentalGuidance13</span><span class="sxs-lookup"><span data-stu-id="bd76e-122">parentalGuidance13</span></span>|<span data-ttu-id="bd76e-123">4</span><span class="sxs-lookup"><span data-stu-id="bd76e-123">4</span></span>|<span data-ttu-id="bd76e-124">PG13，一些材料可能不适合子级下 13</span><span class="sxs-lookup"><span data-stu-id="bd76e-124">PG13, some material may be inappropriate for children under 13</span></span>|
-|<span data-ttu-id="bd76e-125">受限制</span><span class="sxs-lookup"><span data-stu-id="bd76e-125">restricted</span></span>|<span data-ttu-id="bd76e-126">5</span><span class="sxs-lookup"><span data-stu-id="bd76e-126">5</span></span>|<span data-ttu-id="bd76e-127">R，查看下 17 需要随附父或成人指导</span><span class="sxs-lookup"><span data-stu-id="bd76e-127">R, viewers under 17 require accompanying parent or adult guardian</span></span>|
-|<span data-ttu-id="bd76e-128">成人</span><span class="sxs-lookup"><span data-stu-id="bd76e-128">adults</span></span>|<span data-ttu-id="bd76e-129">6</span><span class="sxs-lookup"><span data-stu-id="bd76e-129">6</span></span>|<span data-ttu-id="bd76e-130">NC17，仅成人</span><span class="sxs-lookup"><span data-stu-id="bd76e-130">NC17, adults only</span></span>|
+|<span data-ttu-id="6978b-110">allAllowed</span><span class="sxs-lookup"><span data-stu-id="6978b-110">allAllowed</span></span>|<span data-ttu-id="6978b-111">0</span><span class="sxs-lookup"><span data-stu-id="6978b-111">0</span></span>|<span data-ttu-id="6978b-112">默认值, 允许所有电影内容</span><span class="sxs-lookup"><span data-stu-id="6978b-112">Default value, allow all movies content</span></span>|
+|<span data-ttu-id="6978b-113">allBlocked</span><span class="sxs-lookup"><span data-stu-id="6978b-113">allBlocked</span></span>|<span data-ttu-id="6978b-114">1</span><span class="sxs-lookup"><span data-stu-id="6978b-114">1</span></span>|<span data-ttu-id="6978b-115">不允许任何电影内容</span><span class="sxs-lookup"><span data-stu-id="6978b-115">Do not allow any movies content</span></span>|
+|<span data-ttu-id="6978b-116">概要</span><span class="sxs-lookup"><span data-stu-id="6978b-116">general</span></span>|<span data-ttu-id="6978b-117">双面</span><span class="sxs-lookup"><span data-stu-id="6978b-117">2</span></span>|<span data-ttu-id="6978b-118">G, 许可的所有年龄段</span><span class="sxs-lookup"><span data-stu-id="6978b-118">G, all ages admitted</span></span>|
+|<span data-ttu-id="6978b-119">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="6978b-119">parentalGuidance</span></span>|<span data-ttu-id="6978b-120">第三章</span><span class="sxs-lookup"><span data-stu-id="6978b-120">3</span></span>|<span data-ttu-id="6978b-121">PG, 某些材料可能不适用于儿童</span><span class="sxs-lookup"><span data-stu-id="6978b-121">PG, some material may not be suitable for children</span></span>|
+|<span data-ttu-id="6978b-122">parentalGuidance13</span><span class="sxs-lookup"><span data-stu-id="6978b-122">parentalGuidance13</span></span>|<span data-ttu-id="6978b-123">4</span><span class="sxs-lookup"><span data-stu-id="6978b-123">4</span></span>|<span data-ttu-id="6978b-124">PG13, 某些材料可能不适用于13岁以下的儿童</span><span class="sxs-lookup"><span data-stu-id="6978b-124">PG13, some material may be inappropriate for children under 13</span></span>|
+|<span data-ttu-id="6978b-125">受限</span><span class="sxs-lookup"><span data-stu-id="6978b-125">restricted</span></span>|<span data-ttu-id="6978b-126">5</span><span class="sxs-lookup"><span data-stu-id="6978b-126">5</span></span>|<span data-ttu-id="6978b-127">R, 17 下的查看者需要伴随父或成人监护人</span><span class="sxs-lookup"><span data-stu-id="6978b-127">R, viewers under 17 require accompanying parent or adult guardian</span></span>|
+|<span data-ttu-id="6978b-128">成人</span><span class="sxs-lookup"><span data-stu-id="6978b-128">adults</span></span>|<span data-ttu-id="6978b-129">型</span><span class="sxs-lookup"><span data-stu-id="6978b-129">6</span></span>|<span data-ttu-id="6978b-130">NC17, 仅成人</span><span class="sxs-lookup"><span data-stu-id="6978b-130">NC17, adults only</span></span>|
 
 
 

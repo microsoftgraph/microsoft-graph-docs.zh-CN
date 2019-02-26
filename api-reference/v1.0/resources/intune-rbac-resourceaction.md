@@ -3,29 +3,31 @@ title: resourceAction 资源类型
 description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f1db2a1db2c76829ddd39438ed40cd1086fe4e17
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a48d09d8aeadc9a5d60559d25a4bdcc322d10f21
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932708"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262179"
 ---
-# <a name="resourceaction-resource-type"></a><span data-ttu-id="3972a-103">resourceAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="3972a-103">resourceAction resource type</span></span>
+# <a name="resourceaction-resource-type"></a><span data-ttu-id="87858-103">resourceAction 资源类型</span><span class="sxs-lookup"><span data-stu-id="87858-103">resourceAction resource type</span></span>
 
-> <span data-ttu-id="3972a-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="3972a-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="87858-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="87858-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3972a-105">尚未记录</span><span class="sxs-lookup"><span data-stu-id="3972a-105">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="3972a-106">属性</span><span class="sxs-lookup"><span data-stu-id="3972a-106">Properties</span></span>
-|<span data-ttu-id="3972a-107">属性</span><span class="sxs-lookup"><span data-stu-id="3972a-107">Property</span></span>|<span data-ttu-id="3972a-108">类型</span><span class="sxs-lookup"><span data-stu-id="3972a-108">Type</span></span>|<span data-ttu-id="3972a-109">说明</span><span class="sxs-lookup"><span data-stu-id="3972a-109">Description</span></span>|
+<span data-ttu-id="87858-105">尚未记录</span><span class="sxs-lookup"><span data-stu-id="87858-105">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="87858-106">属性</span><span class="sxs-lookup"><span data-stu-id="87858-106">Properties</span></span>
+|<span data-ttu-id="87858-107">属性</span><span class="sxs-lookup"><span data-stu-id="87858-107">Property</span></span>|<span data-ttu-id="87858-108">类型</span><span class="sxs-lookup"><span data-stu-id="87858-108">Type</span></span>|<span data-ttu-id="87858-109">说明</span><span class="sxs-lookup"><span data-stu-id="87858-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3972a-110">allowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="3972a-110">allowedResourceActions</span></span>|<span data-ttu-id="3972a-111">字符串集合</span><span class="sxs-lookup"><span data-stu-id="3972a-111">String collection</span></span>|<span data-ttu-id="3972a-112">允许的操作</span><span class="sxs-lookup"><span data-stu-id="3972a-112">Allowed Actions</span></span>|
-|<span data-ttu-id="3972a-113">notAllowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="3972a-113">notAllowedResourceActions</span></span>|<span data-ttu-id="3972a-114">字符串集合</span><span class="sxs-lookup"><span data-stu-id="3972a-114">String collection</span></span>|<span data-ttu-id="3972a-115">不允许的操作</span><span class="sxs-lookup"><span data-stu-id="3972a-115">Not Allowed Actions</span></span>|
+|<span data-ttu-id="87858-110">allowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="87858-110">allowedResourceActions</span></span>|<span data-ttu-id="87858-111">String collection</span><span class="sxs-lookup"><span data-stu-id="87858-111">String collection</span></span>|<span data-ttu-id="87858-112">允许的操作</span><span class="sxs-lookup"><span data-stu-id="87858-112">Allowed Actions</span></span>|
+|<span data-ttu-id="87858-113">notAllowedResourceActions</span><span class="sxs-lookup"><span data-stu-id="87858-113">notAllowedResourceActions</span></span>|<span data-ttu-id="87858-114">字符串集合</span><span class="sxs-lookup"><span data-stu-id="87858-114">String collection</span></span>|<span data-ttu-id="87858-115">不允许的操作</span><span class="sxs-lookup"><span data-stu-id="87858-115">Not Allowed Actions</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="3972a-116">关系</span><span class="sxs-lookup"><span data-stu-id="3972a-116">Relationships</span></span>
-<span data-ttu-id="3972a-117">无</span><span class="sxs-lookup"><span data-stu-id="3972a-117">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="3972a-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3972a-118">JSON Representation</span></span>
-<span data-ttu-id="3972a-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3972a-119">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="87858-116">关系</span><span class="sxs-lookup"><span data-stu-id="87858-116">Relationships</span></span>
+<span data-ttu-id="87858-117">无</span><span class="sxs-lookup"><span data-stu-id="87858-117">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="87858-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="87858-118">JSON Representation</span></span>
+<span data-ttu-id="87858-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="87858-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.resourceAction"
