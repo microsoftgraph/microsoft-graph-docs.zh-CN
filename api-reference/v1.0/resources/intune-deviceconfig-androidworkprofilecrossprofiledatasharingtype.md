@@ -1,28 +1,29 @@
 ---
 title: androidWorkProfileCrossProfileDataSharingType 枚举类型
-description: Android 工作模板跨共享类型的配置文件数据。
+description: Android 工作配置文件跨配置文件数据共享类型。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7aa701f2e19ae008b0306d1d3c52fdcf53cbf33c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ddfcfc6926005dff2f9befa400e5352d58f92b3b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967271"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253013"
 ---
-# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a><span data-ttu-id="8bd49-103">androidWorkProfileCrossProfileDataSharingType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="8bd49-103">androidWorkProfileCrossProfileDataSharingType enum type</span></span>
+# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a><span data-ttu-id="ca31b-103">androidWorkProfileCrossProfileDataSharingType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="ca31b-103">androidWorkProfileCrossProfileDataSharingType enum type</span></span>
 
-> <span data-ttu-id="8bd49-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="8bd49-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="ca31b-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ca31b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8bd49-105">Android 工作模板跨共享类型的配置文件数据。</span><span class="sxs-lookup"><span data-stu-id="8bd49-105">Android Work Profile cross profile data sharing type.</span></span>
-## <a name="members"></a><span data-ttu-id="8bd49-106">成员</span><span class="sxs-lookup"><span data-stu-id="8bd49-106">Members</span></span>
-|<span data-ttu-id="8bd49-107">成员</span><span class="sxs-lookup"><span data-stu-id="8bd49-107">Member</span></span>|<span data-ttu-id="8bd49-108">值</span><span class="sxs-lookup"><span data-stu-id="8bd49-108">Value</span></span>|<span data-ttu-id="8bd49-109">Description</span><span class="sxs-lookup"><span data-stu-id="8bd49-109">Description</span></span>|
+<span data-ttu-id="ca31b-105">Android 工作配置文件跨配置文件数据共享类型。</span><span class="sxs-lookup"><span data-stu-id="ca31b-105">Android Work Profile cross profile data sharing type.</span></span>
+
+## <a name="members"></a><span data-ttu-id="ca31b-106">成员</span><span class="sxs-lookup"><span data-stu-id="ca31b-106">Members</span></span>
+|<span data-ttu-id="ca31b-107">成员</span><span class="sxs-lookup"><span data-stu-id="ca31b-107">Member</span></span>|<span data-ttu-id="ca31b-108">值</span><span class="sxs-lookup"><span data-stu-id="ca31b-108">Value</span></span>|<span data-ttu-id="ca31b-109">说明</span><span class="sxs-lookup"><span data-stu-id="ca31b-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8bd49-110">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="8bd49-110">deviceDefault</span></span>|<span data-ttu-id="8bd49-111">0</span><span class="sxs-lookup"><span data-stu-id="8bd49-111">0</span></span>|<span data-ttu-id="8bd49-112">设备默认值，没有用途。</span><span class="sxs-lookup"><span data-stu-id="8bd49-112">Device default value, no intent.</span></span>|
-|<span data-ttu-id="8bd49-113">preventAny</span><span class="sxs-lookup"><span data-stu-id="8bd49-113">preventAny</span></span>|<span data-ttu-id="8bd49-114">1</span><span class="sxs-lookup"><span data-stu-id="8bd49-114">1</span></span>|<span data-ttu-id="8bd49-115">防止任何共享。</span><span class="sxs-lookup"><span data-stu-id="8bd49-115">Prevent any sharing.</span></span>|
-|<span data-ttu-id="8bd49-116">allowPersonalToWork</span><span class="sxs-lookup"><span data-stu-id="8bd49-116">allowPersonalToWork</span></span>|<span data-ttu-id="8bd49-117">2</span><span class="sxs-lookup"><span data-stu-id="8bd49-117">2</span></span>|<span data-ttu-id="8bd49-118">允许共享个人配置文件中的请求，以配置文件的数据。</span><span class="sxs-lookup"><span data-stu-id="8bd49-118">Allow data sharing request from personal profile to work profile.</span></span>|
-|<span data-ttu-id="8bd49-119">noRestrictions</span><span class="sxs-lookup"><span data-stu-id="8bd49-119">noRestrictions</span></span>|<span data-ttu-id="8bd49-120">3</span><span class="sxs-lookup"><span data-stu-id="8bd49-120">3</span></span>|<span data-ttu-id="8bd49-121">共享没有限制。</span><span class="sxs-lookup"><span data-stu-id="8bd49-121">No restrictions on sharing.</span></span>|
+|<span data-ttu-id="ca31b-110">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="ca31b-110">deviceDefault</span></span>|<span data-ttu-id="ca31b-111">0</span><span class="sxs-lookup"><span data-stu-id="ca31b-111">0</span></span>|<span data-ttu-id="ca31b-112">设备默认值, 无意向。</span><span class="sxs-lookup"><span data-stu-id="ca31b-112">Device default value, no intent.</span></span>|
+|<span data-ttu-id="ca31b-113">preventAny</span><span class="sxs-lookup"><span data-stu-id="ca31b-113">preventAny</span></span>|<span data-ttu-id="ca31b-114">1</span><span class="sxs-lookup"><span data-stu-id="ca31b-114">1</span></span>|<span data-ttu-id="ca31b-115">阻止任何共享。</span><span class="sxs-lookup"><span data-stu-id="ca31b-115">Prevent any sharing.</span></span>|
+|<span data-ttu-id="ca31b-116">allowPersonalToWork</span><span class="sxs-lookup"><span data-stu-id="ca31b-116">allowPersonalToWork</span></span>|<span data-ttu-id="ca31b-117">双面</span><span class="sxs-lookup"><span data-stu-id="ca31b-117">2</span></span>|<span data-ttu-id="ca31b-118">允许从个人配置文件到工作配置文件的数据共享请求。</span><span class="sxs-lookup"><span data-stu-id="ca31b-118">Allow data sharing request from personal profile to work profile.</span></span>|
+|<span data-ttu-id="ca31b-119">noRestrictions</span><span class="sxs-lookup"><span data-stu-id="ca31b-119">noRestrictions</span></span>|<span data-ttu-id="ca31b-120">第三章</span><span class="sxs-lookup"><span data-stu-id="ca31b-120">3</span></span>|<span data-ttu-id="ca31b-121">共享没有限制。</span><span class="sxs-lookup"><span data-stu-id="ca31b-121">No restrictions on sharing.</span></span>|
 
 
 

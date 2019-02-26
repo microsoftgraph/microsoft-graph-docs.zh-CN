@@ -1,33 +1,33 @@
 ---
 title: windowsUpdateInstallScheduleType 资源类型
 description: 尚未记录
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2319ad2dfc51b2f566231b94e83a19caedcb3d3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5f95f5515e86af1fb08ab950f5d3f49cf1afb93b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398945"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160310"
 ---
-# <a name="windowsupdateinstallscheduletype-resource-type"></a><span data-ttu-id="53db4-103">windowsUpdateInstallScheduleType 资源类型</span><span class="sxs-lookup"><span data-stu-id="53db4-103">windowsUpdateInstallScheduleType resource type</span></span>
+# <a name="windowsupdateinstallscheduletype-resource-type"></a><span data-ttu-id="0560b-103">windowsUpdateInstallScheduleType 资源类型</span><span class="sxs-lookup"><span data-stu-id="0560b-103">windowsUpdateInstallScheduleType resource type</span></span>
 
-> <span data-ttu-id="53db4-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="53db4-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="53db4-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="53db4-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0560b-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="0560b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="53db4-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="53db4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0560b-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="0560b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="53db4-107">尚未记录</span><span class="sxs-lookup"><span data-stu-id="53db4-107">Not yet documented</span></span>
+<span data-ttu-id="0560b-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="0560b-106">Not yet documented</span></span>
 
-## <a name="properties"></a><span data-ttu-id="53db4-108">属性</span><span class="sxs-lookup"><span data-stu-id="53db4-108">Properties</span></span>
-|<span data-ttu-id="53db4-109">属性</span><span class="sxs-lookup"><span data-stu-id="53db4-109">Property</span></span>|<span data-ttu-id="53db4-110">类型</span><span class="sxs-lookup"><span data-stu-id="53db4-110">Type</span></span>|<span data-ttu-id="53db4-111">说明</span><span class="sxs-lookup"><span data-stu-id="53db4-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0560b-107">属性</span><span class="sxs-lookup"><span data-stu-id="0560b-107">Properties</span></span>
+|<span data-ttu-id="0560b-108">属性</span><span class="sxs-lookup"><span data-stu-id="0560b-108">Property</span></span>|<span data-ttu-id="0560b-109">类型</span><span class="sxs-lookup"><span data-stu-id="0560b-109">Type</span></span>|<span data-ttu-id="0560b-110">说明</span><span class="sxs-lookup"><span data-stu-id="0560b-110">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="53db4-112">关系</span><span class="sxs-lookup"><span data-stu-id="53db4-112">Relationships</span></span>
-<span data-ttu-id="53db4-113">无</span><span class="sxs-lookup"><span data-stu-id="53db4-113">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="0560b-111">关系</span><span class="sxs-lookup"><span data-stu-id="0560b-111">Relationships</span></span>
+<span data-ttu-id="0560b-112">无</span><span class="sxs-lookup"><span data-stu-id="0560b-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="53db4-114">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="53db4-114">JSON Representation</span></span>
-<span data-ttu-id="53db4-115">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="53db4-115">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0560b-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0560b-113">JSON Representation</span></span>
+<span data-ttu-id="0560b-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0560b-114">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType"

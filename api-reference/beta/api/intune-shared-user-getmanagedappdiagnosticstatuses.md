@@ -4,31 +4,31 @@ description: 获取给定用户的诊断验证状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 78eb68346d8269b7aa222949e285584b2ddce3cd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 500c3ed0619e15822907d5d5c9b921c7a4ad384f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395830"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160282"
 ---
-# <a name="getmanagedappdiagnosticstatuses-function"></a><span data-ttu-id="2a5cc-103">getManagedAppDiagnosticStatuses 函数</span><span class="sxs-lookup"><span data-stu-id="2a5cc-103">getManagedAppDiagnosticStatuses function</span></span>
+# <a name="getmanagedappdiagnosticstatuses-function"></a><span data-ttu-id="aa380-103">getManagedAppDiagnosticStatuses 函数</span><span class="sxs-lookup"><span data-stu-id="aa380-103">getManagedAppDiagnosticStatuses function</span></span>
 
-> <span data-ttu-id="2a5cc-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="2a5cc-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="aa380-104">**重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="aa380-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="aa380-105">在生产应用程序中不支持使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="aa380-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="2a5cc-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="aa380-106">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="aa380-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2a5cc-107">获取给定用户的诊断验证状态。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-107">Gets diagnostics validation status for a given user.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="2a5cc-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="2a5cc-108">Prerequisites</span></span>
-<span data-ttu-id="2a5cc-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="aa380-107">获取给定用户的诊断验证状态。</span><span class="sxs-lookup"><span data-stu-id="aa380-107">Gets diagnostics validation status for a given user.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="aa380-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="aa380-108">Prerequisites</span></span>
+<span data-ttu-id="aa380-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="aa380-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference).</span></span>
 
-|<span data-ttu-id="2a5cc-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="2a5cc-111">Permission type</span></span>|<span data-ttu-id="2a5cc-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="2a5cc-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="aa380-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="aa380-111">Permission type</span></span>|<span data-ttu-id="aa380-112">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="aa380-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2a5cc-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2a5cc-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="2a5cc-114">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="2a5cc-114">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="2a5cc-115">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="2a5cc-115">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="2a5cc-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2a5cc-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2a5cc-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-117">Not supported.</span></span>|
-|<span data-ttu-id="2a5cc-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="2a5cc-118">Application</span></span>|<span data-ttu-id="2a5cc-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-119">Not supported.</span></span>|
+|<span data-ttu-id="aa380-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="aa380-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="aa380-114">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="aa380-114">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="aa380-115">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="aa380-115">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="aa380-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="aa380-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="aa380-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="aa380-117">Not supported.</span></span>|
+|<span data-ttu-id="aa380-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="aa380-118">Application</span></span>|<span data-ttu-id="aa380-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="aa380-119">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2a5cc-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2a5cc-120">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aa380-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="aa380-120">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,27 +37,27 @@ ms.locfileid: "29395830"
 GET /users/{usersId}/getManagedAppDiagnosticStatuses
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2a5cc-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="2a5cc-121">Request headers</span></span>
-|<span data-ttu-id="2a5cc-122">标头</span><span class="sxs-lookup"><span data-stu-id="2a5cc-122">Header</span></span>|<span data-ttu-id="2a5cc-123">值</span><span class="sxs-lookup"><span data-stu-id="2a5cc-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="aa380-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="aa380-121">Request headers</span></span>
+|<span data-ttu-id="aa380-122">标头</span><span class="sxs-lookup"><span data-stu-id="aa380-122">Header</span></span>|<span data-ttu-id="aa380-123">值</span><span class="sxs-lookup"><span data-stu-id="aa380-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2a5cc-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="2a5cc-124">Authorization</span></span>|<span data-ttu-id="2a5cc-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2a5cc-126">Accept</span><span class="sxs-lookup"><span data-stu-id="2a5cc-126">Accept</span></span>|<span data-ttu-id="2a5cc-127">application/json</span><span class="sxs-lookup"><span data-stu-id="2a5cc-127">application/json</span></span>|
+|<span data-ttu-id="aa380-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="aa380-124">Authorization</span></span>|<span data-ttu-id="aa380-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="aa380-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="aa380-126">Accept</span><span class="sxs-lookup"><span data-stu-id="aa380-126">Accept</span></span>|<span data-ttu-id="aa380-127">application/json</span><span class="sxs-lookup"><span data-stu-id="aa380-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2a5cc-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="2a5cc-128">Request body</span></span>
-<span data-ttu-id="2a5cc-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="aa380-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="aa380-128">Request body</span></span>
+<span data-ttu-id="aa380-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="aa380-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2a5cc-130">响应</span><span class="sxs-lookup"><span data-stu-id="2a5cc-130">Response</span></span>
-<span data-ttu-id="2a5cc-131">如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 [managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) 集合。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-131">If successful, this function returns a `200 OK` response code and a [managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) collection in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="aa380-130">响应</span><span class="sxs-lookup"><span data-stu-id="aa380-130">Response</span></span>
+<span data-ttu-id="aa380-131">如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 [managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) 集合。</span><span class="sxs-lookup"><span data-stu-id="aa380-131">If successful, this function returns a `200 OK` response code and a [managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2a5cc-132">示例</span><span class="sxs-lookup"><span data-stu-id="2a5cc-132">Example</span></span>
-### <a name="request"></a><span data-ttu-id="2a5cc-133">请求</span><span class="sxs-lookup"><span data-stu-id="2a5cc-133">Request</span></span>
-<span data-ttu-id="2a5cc-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="aa380-132">示例</span><span class="sxs-lookup"><span data-stu-id="aa380-132">Example</span></span>
+### <a name="request"></a><span data-ttu-id="aa380-133">请求</span><span class="sxs-lookup"><span data-stu-id="aa380-133">Request</span></span>
+<span data-ttu-id="aa380-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="aa380-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/users/{usersId}/getManagedAppDiagnosticStatuses
 ```
 
-### <a name="response"></a><span data-ttu-id="2a5cc-135">响应</span><span class="sxs-lookup"><span data-stu-id="2a5cc-135">Response</span></span>
-<span data-ttu-id="2a5cc-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2a5cc-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="aa380-135">响应</span><span class="sxs-lookup"><span data-stu-id="aa380-135">Response</span></span>
+<span data-ttu-id="aa380-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="aa380-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
