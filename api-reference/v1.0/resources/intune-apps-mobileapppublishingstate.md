@@ -3,25 +3,26 @@ title: mobileAppPublishingState 枚举类型
 description: 指示应用程序的发布状态。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 270dd416422c0f0b4dfc320937c749f4fe13c766
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0b0823576dd1792b01193d600cdebbe171b47052
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937759"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263390"
 ---
-# <a name="mobileapppublishingstate-enum-type"></a><span data-ttu-id="497b0-103">mobileAppPublishingState 枚举类型</span><span class="sxs-lookup"><span data-stu-id="497b0-103">mobileAppPublishingState enum type</span></span>
+# <a name="mobileapppublishingstate-enum-type"></a><span data-ttu-id="1f8b0-103">mobileAppPublishingState 枚举类型</span><span class="sxs-lookup"><span data-stu-id="1f8b0-103">mobileAppPublishingState enum type</span></span>
 
-> <span data-ttu-id="497b0-104">**注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。</span><span class="sxs-lookup"><span data-stu-id="497b0-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="1f8b0-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="1f8b0-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="497b0-105">指示应用程序的发布状态。</span><span class="sxs-lookup"><span data-stu-id="497b0-105">Indicates the publishing state of an app.</span></span>
-## <a name="members"></a><span data-ttu-id="497b0-106">成员</span><span class="sxs-lookup"><span data-stu-id="497b0-106">Members</span></span>
-|<span data-ttu-id="497b0-107">成员</span><span class="sxs-lookup"><span data-stu-id="497b0-107">Member</span></span>|<span data-ttu-id="497b0-108">值</span><span class="sxs-lookup"><span data-stu-id="497b0-108">Value</span></span>|<span data-ttu-id="497b0-109">Description</span><span class="sxs-lookup"><span data-stu-id="497b0-109">Description</span></span>|
+<span data-ttu-id="1f8b0-105">指示应用程序的发布状态。</span><span class="sxs-lookup"><span data-stu-id="1f8b0-105">Indicates the publishing state of an app.</span></span>
+
+## <a name="members"></a><span data-ttu-id="1f8b0-106">成员</span><span class="sxs-lookup"><span data-stu-id="1f8b0-106">Members</span></span>
+|<span data-ttu-id="1f8b0-107">成员</span><span class="sxs-lookup"><span data-stu-id="1f8b0-107">Member</span></span>|<span data-ttu-id="1f8b0-108">值</span><span class="sxs-lookup"><span data-stu-id="1f8b0-108">Value</span></span>|<span data-ttu-id="1f8b0-109">说明</span><span class="sxs-lookup"><span data-stu-id="1f8b0-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="497b0-110">notPublished</span><span class="sxs-lookup"><span data-stu-id="497b0-110">notPublished</span></span>|<span data-ttu-id="497b0-111">0</span><span class="sxs-lookup"><span data-stu-id="497b0-111">0</span></span>|<span data-ttu-id="497b0-112">尚未发布应用程序。</span><span class="sxs-lookup"><span data-stu-id="497b0-112">The app is not yet published.</span></span>|
-|<span data-ttu-id="497b0-113">处理</span><span class="sxs-lookup"><span data-stu-id="497b0-113">processing</span></span>|<span data-ttu-id="497b0-114">1</span><span class="sxs-lookup"><span data-stu-id="497b0-114">1</span></span>|<span data-ttu-id="497b0-115">待处理的服务商处理应用程序。</span><span class="sxs-lookup"><span data-stu-id="497b0-115">The app is pending service-side processing.</span></span>|
-|<span data-ttu-id="497b0-116">已发布</span><span class="sxs-lookup"><span data-stu-id="497b0-116">published</span></span>|<span data-ttu-id="497b0-117">2</span><span class="sxs-lookup"><span data-stu-id="497b0-117">2</span></span>|<span data-ttu-id="497b0-118">发布应用程序。</span><span class="sxs-lookup"><span data-stu-id="497b0-118">The app is published.</span></span>|
+|<span data-ttu-id="1f8b0-110">notPublished</span><span class="sxs-lookup"><span data-stu-id="1f8b0-110">notPublished</span></span>|<span data-ttu-id="1f8b0-111">0</span><span class="sxs-lookup"><span data-stu-id="1f8b0-111">0</span></span>|<span data-ttu-id="1f8b0-112">应用尚未发布。</span><span class="sxs-lookup"><span data-stu-id="1f8b0-112">The app is not yet published.</span></span>|
+|<span data-ttu-id="1f8b0-113">处理</span><span class="sxs-lookup"><span data-stu-id="1f8b0-113">processing</span></span>|<span data-ttu-id="1f8b0-114">1</span><span class="sxs-lookup"><span data-stu-id="1f8b0-114">1</span></span>|<span data-ttu-id="1f8b0-115">应用程序正在等待服务端处理。</span><span class="sxs-lookup"><span data-stu-id="1f8b0-115">The app is pending service-side processing.</span></span>|
+|<span data-ttu-id="1f8b0-116">已发布</span><span class="sxs-lookup"><span data-stu-id="1f8b0-116">published</span></span>|<span data-ttu-id="1f8b0-117">双面</span><span class="sxs-lookup"><span data-stu-id="1f8b0-117">2</span></span>|<span data-ttu-id="1f8b0-118">应用程序已发布。</span><span class="sxs-lookup"><span data-stu-id="1f8b0-118">The app is published.</span></span>|
 
 
 
