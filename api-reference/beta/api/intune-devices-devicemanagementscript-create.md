@@ -1,21 +1,21 @@
 ---
 title: 创建 deviceManagementScript
 description: 创建新的 deviceManagementScript 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be0ffb8b912b25684ba0ed3dc383a995fb872f3b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 40472e27f1ba900121c5c7927ec5d15f27582c99
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409270"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173617"
 ---
 # <a name="create-devicemanagementscript"></a>创建 deviceManagementScript
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象。
 
@@ -44,29 +44,29 @@ POST /deviceManagement/deviceManagementScripts
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 deviceManagementScript 对象的 JSON 表示形式。
+在请求正文中, 提供 deviceManagementScript 对象的 JSON 表示形式。
 
-下表显示时创建 deviceManagementScript 所需的属性。
+下表显示创建 deviceManagementScript 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备管理脚本的唯一标识符。|
+|id|字符串|设备管理脚本的唯一标识符。|
 |displayName|String|设备管理脚本的名称。|
-|说明|String|设备管理脚本的可选说明。|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Script to run 时间间隔。 如果未定义脚本将运行一次|
+|说明|字符串|设备管理脚本的可选说明。|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|脚本运行的间隔。 如果未定义, 脚本将运行一次|
 |scriptContent|Binary|脚本内容。|
-|createdDateTime|DateTimeOffset|创建设备管理脚本的日期和时间。|
-|lastModifiedDateTime|DateTimeOffset|日期和设备管理脚本上次修改的时间。|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文中运行的设备管理脚本的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要签脚本签名。|
-|fileName|String|脚本文件的名称。|
-|roleScopeTagIds|String 集合|此 PowerShellScript 实例范围标记 Id 的列表。|
-|runAs32Bit|Boolean|一个值，该值的 PowerShell 脚本是否应运行 32 位|
+|createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。|
+|lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示设备管理脚本在其中运行的执行上下文的类型。 可取值为：`system`、`user`。|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
+|fileName|String|脚本文件名。|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 id 的列表。|
+|runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象。
 
 ## <a name="example"></a>示例
 

@@ -1,20 +1,24 @@
 ---
-title: 删除组
-description: 删除组。
+title: 删除组-Microsoft Graph API
+description: 介绍 Microsoft Graph API (REST) 的组资源 (实体) 的 delete 方法。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 65fd34fe01a2543389356e86334e986332210b08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1e252ddfddfcd82bcd3f790c75b34f016f54c9fb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968608"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251193"
 ---
 # <a name="delete-group"></a>删除组
-删除组。
+
+删除组。  
+
+删除后, Office 365 组将移至临时容器, 并可在30天内恢复。  之后, 它们将被永久删除。  若要了解详细信息, 请参阅[deletedItems](../resources/directory.md)。  这仅适用于 Office 365 组。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -24,24 +28,30 @@ ms.locfileid: "27968608"
 |应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
 
 ## <a name="request-headers"></a>请求标头
+
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-#### <a name="request"></a>请求
+
+### <a name="request"></a>请求
+
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
@@ -51,7 +61,8 @@ DELETE /groups/{id}
 DELETE https://graph.microsoft.com/v1.0/groups/{id}
 ```
 
-#### <a name="response"></a>响应
+### <a name="response"></a>响应
+
 下面展示了示例响应。 
 <!-- {
   "blockType": "response",

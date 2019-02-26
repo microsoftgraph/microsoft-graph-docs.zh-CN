@@ -1,34 +1,35 @@
 ---
 title: managedDevicePartnerReportedHealthState 枚举类型
-description: 可用的运行状况状态的设备运行状况 API
+description: 设备运行状况 API 的可用运行状况状态
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 85d6731fc34bb3133fa7aed631d3d687a45a7dce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4e6ef870687f0ee48eebd3d0f8d45eb4c88906ef
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919048"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252054"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-可用的运行状况状态的设备运行状况 API
+设备运行状况 API 的可用运行状况状态
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|unknown|0|设备运行状况不尚未报告|
-|激活|1|设备已激活通过移动的威胁防御合作伙伴，但不是报告运行状况。|
-|停用|2|已由移动的威胁防御合作伙伴停用设备。 未知设备运行状况。|
-|保护|3|设备被视为受移动的威胁防御合作伙伴。|
-|lowSeverity|4|设备通过移动的威胁防御合作伙伴视为低威胁。|
-|mediumSeverity|5|设备通过移动的威胁防御合作伙伴视为中型威胁。|
-|highSeverity|6|设备通过移动的威胁防御合作伙伴视为高威胁。|
-|未响应|7|移动的威胁防御合作伙伴被视为设备未响应。 未知设备运行状况。|
-|威胁|8|设备被视为受到威胁防御合作伙伴。 这意味着设备具有活动的威胁或无法由最终用户轻松修正风险和用户应联系其 IT 管理员。|
-|配置错误|9|设备被视为与威胁防御合作伙伴配置正确。 这意味着设备缺少必需的配置文件或配置威胁防御伙伴能够正常工作，因此威胁或不能完成风险分析。|
+|unknown|0|尚未报告设备运行状况状态|
+|已|1|设备已由移动威胁防护合作伙伴激活, 但尚未报告运行状况。|
+|失效|双面|设备已被移动威胁防护合作伙伴停用。 设备运行状况未知。|
+|加密|第三章|移动威胁防护合作伙伴认为设备受安全保护。|
+|lowSeverity|4|移动威胁防护合作伙伴将设备视为低威胁。|
+|mediumSeverity|5|移动威胁防护合作伙伴认为设备是中型威胁。|
+|highSeverity|型|移动威胁防护合作伙伴将设备视为高威胁。|
+|无|步|移动威胁防护合作伙伴认为设备无响应。 设备运行状况未知。|
+|威胁|utf-8|威胁防御合作伙伴认为设备受到威胁。 这意味着该设备具有活跃的威胁或风险, 最终用户无法轻松修正该设备, 并且用户应联系其 IT 管理员。|
+|配置错误|第|将设备视为与威胁防护合作伙伴配置不正确。 这意味着设备缺少必需的配置文件或配置以使威胁防护合作伙伴正常运行, 因此威胁或风险分析无法完成。|
 
 
 

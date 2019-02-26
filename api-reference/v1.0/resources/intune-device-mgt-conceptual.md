@@ -4,12 +4,12 @@ description: ''
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3d665b70f812a18f840ce43a029fe0729d454745
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4c8f6676647405e8186e9d27466266f6690e2cd1
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980641"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250066"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -27,12 +27,11 @@ ms.locfileid: "27980641"
 - [检测到的应用](intune-devices-detectedapp.md)
 - [设备操作结果](intune-devices-deviceactionresult.md)
 - [设备注册失败原因](intune-troubleshooting-deviceenrollmentfailurereason.md)
-- [设备注册类型](intune-devices-deviceenrollmenttype.md)
 - [设备 Exchange 访问状态摘要](intune-devices-deviceexchangeaccessstatesummary.md)
 - [设备地理位置](intune-devices-devicegeolocation.md)
 - [设备运行状况证明状态](intune-devices-devicehealthattestationstate.md)
-- [设备管理 exchange 访问状态](intune-devices-devicemanagementexchangeaccessstate.md)
-- [设备管理 exchange 访问状态的原因](intune-devices-devicemanagementexchangeaccessstatereason.md)
+- [设备管理 Exchange 访问状态](intune-devices-devicemanagementexchangeaccessstate.md)
+- [设备管理 Exchange 访问状态原因](intune-devices-devicemanagementexchangeaccessstatereason.md)
 - [设备管理订阅状态](intune-devices-devicemanagementsubscriptionstate.md)
 - [设备管理疑难解答事件](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [设备操作系统摘要](intune-devices-deviceoperatingsystemsummary.md)
@@ -42,12 +41,12 @@ ms.locfileid: "27980641"
 - [查找设备操作结果](intune-devices-locatedeviceactionresult.md)
 - [受管理设备](intune-devices-manageddevice.md)
 - [托管设备概述](intune-devices-manageddeviceoverview.md)
-- [管理设备所有者类型](intune-devices-manageddeviceownertype.md)
-- [托管的设备伙伴报告健康状态](intune-devices-manageddevicepartnerreportedhealthstate.md)
+- [托管的设备所有者类型](intune-devices-manageddeviceownertype.md)
+- [托管的设备合作伙伴报告的运行状况](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [管理代理类型](intune-devices-managementagenttype.md)
 - [通知邮件模板](intune-notification-notificationmessagetemplate.md)
 - [通知模板品牌选项](intune-notification-notificationtemplatebrandingoptions.md)
-- [远程协助的白板状态](intune-remoteassistance-remoteassistanceonboardingstatus.md)
+- [远程协助载入状态](intune-remoteassistance-remoteassistanceonboardingstatus.md)
 - [远程协助合作伙伴](intune-remoteassistance-remoteassistancepartner.md)
 - [远程锁定操作结果](intune-devices-remotelockactionresult.md)
 - [重置密码操作结果](intune-devices-resetpasscodeactionresult.md)

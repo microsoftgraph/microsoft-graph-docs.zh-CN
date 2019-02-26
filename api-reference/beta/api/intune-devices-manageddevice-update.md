@@ -1,21 +1,21 @@
 ---
 title: 更新 managedDevice
 description: 更新 managedDevice 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 525623c99d8f3238ee548e634bc7ffe2c3162111
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e3711888ee2c5e6f3d3a5281ec6e14d521eb9695
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404384"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162466"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性。
 
@@ -53,22 +53,22 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备唯一标识符|
+|id|字符串|设备唯一标识符|
 |userId|String|与设备关联的用户的唯一标识符|
 |deviceName|String|设备的名称|
-|hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备 hardward 详细信息。  包含信息，如存储空间、 制造商、 序列号等。|
-|所有者类型|[所有者类型](../resources/intune-devices-ownertype.md)|设备的所有权。 可以是公司或个人。 可取值为：`unknown`、`company`、`personal`。|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是公司或个人。 可取值为：`unknown`、`company`、`personal`。|
+|hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的 hardward 详细信息。  包括存储空间、制造商、序列号等信息。|
+|所有者|[所有者](../resources/intune-devices-ownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) 集合|ComplexType deviceActionResult 对象的列表。|
-|管理|[管理](../resources/intune-devices-managementstate.md)|管理设备的状态。 可取值为：`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered`。|
+|managementState|[managementState](../resources/intune-devices-managementstate.md)|设备的管理状态。 可取值为：`managed`、`retirePending`、`retireFailed`、`wipePending`、`wipeFailed`、`unhealthy`、`deletePending`、`retireIssued`、`wipeIssued`、`wipeCanceled`、`retireCanceled`、`discovered`。|
 |enrolledDateTime|DateTimeOffset|设备的注册时间。|
 |lastSyncDateTime|DateTimeOffset|设备上次成功完成与 Intune 同步的日期和时间。|
-|chassisType|[chassisType](../resources/intune-devices-chassistype.md)|机箱设备的类型。 可取值为：`unknown`、`desktop`、`laptop`、`worksWorkstation`、`enterpriseServer`、`phone`、`tablet`、`mobileOther`、`mobileUnknown`。|
+|chassisType|[chassisType](../resources/intune-devices-chassistype.md)|设备的机箱类型。 可取值为：`unknown`、`desktop`、`laptop`、`worksWorkstation`、`enterpriseServer`、`phone`、`tablet`、`mobileOther`、`mobileUnknown`。|
 |operatingSystem|String|设备的操作系统。 Windows、iOS 等。|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|设备的平台。 可能的值为： `desktop`， `windowsRT`， `winMO6`， `nokia`， `windowsPhone`， `mac`， `winCE`， `winEmbedded`， `iPhone`， `iPad`， `iPod`， `android`， `iSocConsumer`， `unix`， `macMDM`， `holoLens`， `surfaceHub`， `androidForWork`， `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|设备的平台。 可能的值为`desktop`: `windowsRT`、 `winMO6`、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer`、、、、、、、、、、、、、、、、 `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|设备的符合性状态。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
 |jailBroken|String|设备是否已越狱或取得 root 权限。|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、 EAS 等。可能的值为： `eas`， `mdm`， `easMdm`， `intuneClient`， `easIntuneClient`， `configurationManagerClient`， `configurationManagerClientMdm`， `configurationManagerClientMdmEas`， `unknown`， `jamf`， `googleCloudDevicePolicyController`， `microsoft365ManagedMdm`。|
+|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。可能的值为`eas`: `mdm`、 `easMdm`、 `intuneClient` `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown`、、、、、、、、 `microsoft365ManagedMdm` `jamf` `googleCloudDevicePolicyController`|
 |osVersion|String|设备的操作系统版本。|
 |easActivated|Boolean|设备是否已激活 Exchange ActiveSync。|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。|
@@ -76,7 +76,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |aadRegistered|Boolean|设备是否已注册 Azure Active Directory。|
 |azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`。|
-|lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|指示是否启用或禁用丢失的模式。 可取值为：`disabled`、`enabled`。|
+|lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|指示是否已启用或禁用了丢失模式。 可取值为：`disabled`、`enabled`。|
 |activationLockBypassCode|String|允许绕过设备上的激活锁的代码。|
 |emailAddress|String|与设备关联的用户的电子邮件。|
 |azureActiveDirectoryDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。|
@@ -95,7 +95,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |manufacturer|String|设备的制造商|
 |imei|String|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
-|serialNumber|String|序列号|
+|serialNumber|字符串|序列号|
 |phoneNumber|String|设备的电话号码|
 |androidSecurityPatchLevel|String|Android 安全修补程序级别|
 |userDisplayName|String|用户显示名称|
@@ -108,18 +108,18 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |freeStorageSpaceInBytes|Int64|可用存储空间字节数|
 |managedDeviceName|String|用于识别设备的自动生成的名称。 可以覆盖为用户友好名称。|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
-|usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示上次登录的设备的用户|
-|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告 DateTime 的 preferMdmOverGroupPolicy 设置。  设置时，这些 Intune MDM 设置将覆盖组策略设置冲突时。 只读。|
-|autopilotEnrolled|Boolean|如果通过自动试点注册托管的设备，报告。|
-|requireUserEnrollmentApproval|Boolean|报告托管的 iOS 设备是否用户审批注册。|
-|managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书过期日期|
-|iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。|
-|udid|String|IOS 和 macOS 设备的唯一设备标识符。|
-|roleScopeTagIds|String 集合|此设备实例范围标记 Id 的列表。|
-|windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件的计数|
-|windowsRemediatedMalwareCount|Int32|此 windows 设备的补救恶意软件的计数|
-|notes|String|由 IT 管理员在设备上的说明|
-|configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|配置管理器客户端健康状态，仅供 MDM/ConfigMgr 代理管理设备|
+|usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示设备的上次登录用户|
+|preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告设置了 preferMdmOverGroupPolicy 设置的 DateTime。  设置后, 如果存在冲突, Intune MDM 设置将覆盖组策略设置。 只读。|
+|autopilotEnrolled|Boolean|如果托管设备是通过自动引导注册的, 则报告。|
+|requireUserEnrollmentApproval|Boolean|如果托管 iOS 设备是用户审批注册, 则报告。|
+|managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期|
+|iccid|String|集成的电路卡标识符, 它是 SIM 卡的唯一标识号。|
+|udid|String|iOS 和 macOS 设备的唯一设备标识符。|
+|roleScopeTagIds|String collection|此设备实例的范围标记 id 的列表。|
+|windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件计数|
+|windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件计数|
+|notes|String|IT 管理员创建的设备上的注释|
+|configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager 客户端运行状况状态, 仅对由 MDM/ConfigMgr 代理管理的设备有效|
 
 
 
@@ -133,7 +133,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7166
+Content-length: 7224
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -229,7 +229,9 @@ Content-length: 7166
     "resourceAccess": true,
     "deviceConfiguration": true,
     "compliancePolicy": true,
-    "windowsUpdateForBusiness": true
+    "windowsUpdateForBusiness": true,
+    "endpointProtection": true,
+    "officeApps": true
   },
   "wiFiMacAddress": "Wi Fi Mac Address value",
   "deviceHealthAttestationState": {
@@ -306,7 +308,7 @@ Content-length: 7166
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7215
+Content-Length: 7273
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -403,7 +405,9 @@ Content-Length: 7215
     "resourceAccess": true,
     "deviceConfiguration": true,
     "compliancePolicy": true,
-    "windowsUpdateForBusiness": true
+    "windowsUpdateForBusiness": true,
+    "endpointProtection": true,
+    "officeApps": true
   },
   "wiFiMacAddress": "Wi Fi Mac Address value",
   "deviceHealthAttestationState": {

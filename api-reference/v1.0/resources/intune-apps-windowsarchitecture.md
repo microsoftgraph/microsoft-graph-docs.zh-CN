@@ -1,29 +1,30 @@
 ---
-title: windowsArchitecture 枚举类型
+title: windowsarchitecture 更改枚举类型
 description: 包含 Windows 体系结构的属性。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6e675a670ca0e4cf01f43e3338bf35e7e342b673
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e88fcfbb0b3c1ee71d66301e849439bda96ed5d5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937108"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251557"
 ---
-# <a name="windowsarchitecture-enum-type"></a>windowsArchitecture 枚举类型
+# <a name="windowsarchitecture-enum-type"></a>windowsarchitecture 更改枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 包含 Windows 体系结构的属性。
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|无标志设置。|
-|x86|1|是否支持 Windows 体系结构类型 X86。|
-|x64|2|是否支持 Windows 体系结构类型 X64。|
-|arm|4|是否支持 Arm Windows 体系结构类型。|
-|neutral|8|是否支持 Neutral Windows 体系结构类型。|
+|无|0|未设置任何标志。|
+|系列|1|是否支持 X86 Windows 体系结构类型。|
+|x64|双面|是否支持 X64 Windows 体系结构类型。|
+|整理|4|是否支持 Arm Windows 体系结构类型。|
+|neutral|utf-8|是否支持非特定 Windows 体系结构类型。|
 
 
 

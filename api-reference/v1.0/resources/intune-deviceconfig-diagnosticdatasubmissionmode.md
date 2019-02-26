@@ -1,29 +1,30 @@
 ---
 title: diagnosticDataSubmissionMode 枚举类型
-description: 允许该设备发送诊断和使用情况的遥测数据，如 Watson。
-localization_priority: Normal
+description: 允许设备发送诊断和使用遥测数据, 如 Watson。
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: a293288c3891f8ecd77d422986e419d2e3d53767
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 3c0707b97e60da406210d6a091ed0dd4efaa2299
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912944"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251032"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>diagnosticDataSubmissionMode 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-允许该设备发送诊断和使用情况的遥测数据，如 Watson。
+允许设备发送诊断和使用遥测数据, 如 Watson。
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|用户定制|0|允许用户设置。|
-|无|1|从操作系统组件不发送任何遥测数据。 注意： 此值才适用于企业和服务器设备。 在其他设备上使用此设置等同于设置 1 的值。|
-|基本|2|发送基本遥测数据。|
-|增强|3|发送增强，包括使用情况和见解数据的遥测数据。|
-|完整|4|发送完全遥测数据，包括诊断数据，如系统状态。|
+|定制|0|允许用户进行设置。|
+|无|1|不会从 OS 组件发送遥测数据。 注意: 此值仅适用于企业和服务器设备。 在其他设备上使用此设置等效于将值设置为1。|
+|vba|双面|发送基本遥测数据。|
+|有所|第三章|发送包含使用率和见解数据的增强遥测数据。|
+|全|4|发送包含诊断数据 (如系统状态) 的完整遥测数据。|
 
 
 

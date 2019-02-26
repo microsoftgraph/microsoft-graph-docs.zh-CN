@@ -1,21 +1,21 @@
 ---
 title: 更新 restrictedAppsViolation
 description: 更新 restrictedAppsViolation 对象的属性。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01509691e65410776ba57269c8a7cb9e804ee661
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fc2a440872d399cc684c2ce52ce2d825ba52f9ce
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403852"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163348"
 ---
 # <a name="update-restrictedappsviolation"></a>更新 restrictedAppsViolation
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象的属性。
 
@@ -44,19 +44,19 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象的 JSON 表示形式。
+在请求正文中, 提供[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象的 JSON 表示形式。
 
-下表显示时创建[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)所需的属性。
+下表显示创建[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的唯一标识符。 由 accountId、 deviceId、 policyId 和用户 Id|
-|userId|String|用户的唯一标识符，必须为 Guid|
+|id|字符串|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
+|userId|String|用户唯一标识符, 必须为 Guid|
 |userName|String|用户名|
-|managedDeviceId|String|托管的设备的唯一标识符，必须为 Guid|
+|managedDeviceId|String|托管设备唯一标识符, 必须为 Guid|
 |deviceName|String|设备名称|
-|deviceConfigurationId|String|设备配置配置文件的唯一标识符，必须为 Guid|
-|deviceConfigurationName|String|设备配置配置文件名称|
+|deviceConfigurationId|String|设备配置文件唯一标识符, 必须为 Guid|
+|deviceConfigurationName|String|设备配置文件名称|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用程序状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)集合|违反受限制的应用程序的列表|
@@ -64,7 +64,7 @@ PATCH /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedA
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)对象。
 
 ## <a name="example"></a>示例
 

@@ -1,30 +1,31 @@
 ---
 title: automaticUpdateMode 枚举类型
-description: 自动更新模式的的可能值。
+description: 自动更新模式的可能值。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a31c50b5d16f4b9be8db4f95f2bbd9bd0ca123e4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7fd45ff85cbab934aa2549f13ee3e6671c65f9ae
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987858"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251375"
 ---
 # <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-自动更新模式的的可能值。
+自动更新模式的可能值。
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|用户定制|0|用户定义，默认值、 没有用途。|
-|notifyDownload|1|在下载通知。|
-|autoInstallAtMaintenanceTime|2|自动安装在维护时间。|
-|autoInstallAndRebootAtMaintenanceTime|3|自动安装和维护时间重新启动。|
-|autoInstallAndRebootAtScheduledTime|4|自动安装并在计划时间重新启动。|
-|autoInstallAndRebootWithoutEndUserControl|5|自动安装并重新启动不最终用户控件|
+|定制|0|用户定义, 默认值, 无意向。|
+|notifyDownload|1|下载时通知。|
+|autoInstallAtMaintenanceTime|双面|在维护时间自动安装。|
+|autoInstallAndRebootAtMaintenanceTime|第三章|在维护时间自动安装和重启。|
+|autoInstallAndRebootAtScheduledTime|4|在计划的时间自动安装和重启。|
+|autoInstallAndRebootWithoutEndUserControl|5|在没有最终用户控件的情况下自动安装和重启|
 
 
 

@@ -1,30 +1,31 @@
 ---
 title: ratingFranceMoviesType 枚举类型
-description: 在法国分级标签 movies
+description: 法国的电影评级标签
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e2445c885576e72a09bd0c70d3fb91c9ec039276
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 84099ef903c98ec565cdb60a2ac9d8b74b51123f
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942155"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250269"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-在法国分级标签 movies
+法国的电影评级标签
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|allAllowed|0|默认值，允许所有电影内容|
+|allAllowed|0|默认值, 允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
-|agesAbove10|2|10 分类禁止到未在 10 成年人胶片筛选|
-|agesAbove12|3|12 分类禁止到未在 12 成年人胶片筛选|
-|agesAbove16|4|16 分类禁止到未在 16 成年人胶片筛选|
-|agesAbove18|5|18 分类禁止到未在 18 成年人筛选|
+|agesAbove10|双面|10分类禁止将胶片屏蔽到小于10的未成年人|
+|agesAbove12|第三章|12分类禁止将胶片屏蔽到12岁下面的未成年人|
+|agesAbove16|4|16分类禁止将胶片屏蔽到16下的未成年人|
+|agesAbove18|5|18分类禁止筛选到18岁以上的未成年人|
 
 
 

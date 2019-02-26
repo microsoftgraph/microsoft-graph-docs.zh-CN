@@ -1,30 +1,31 @@
 ---
 title: ratingJapanMoviesType 枚举类型
-description: 电影分级日本标签
+description: 日本的电影评级标签
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fedb2a824151a1548d8a91471e3094077fb63b95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 407c725b958c45fc395ba9adbe9634e78a288f53
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957296"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259274"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-电影分级日本标签
+日本的电影评级标签
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|allAllowed|0|默认值，允许所有电影内容|
+|allAllowed|0|默认值, 允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
-|常规|2|适用于所有岁|
-|parentalGuidance|3|PG 12 分类请求家长指南年轻用户在 12|
-|agesAbove15|4|R15 + 分类是 15 的适用于观众或较旧|
-|agesAbove18|5|R18 + 分类是 18 的合适的查看器或更低|
+|概要|双面|适用于所有年龄段|
+|parentalGuidance|第三章|PG-12 分类请求适用于12岁的年轻人的家长指导|
+|agesAbove15|4|R15 + 分类适用于15或更旧的查看者|
+|agesAbove18|5|R18 + 分类适用于18岁或更早的观众|
 
 
 

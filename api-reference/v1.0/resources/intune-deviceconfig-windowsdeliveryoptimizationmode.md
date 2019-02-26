@@ -1,31 +1,32 @@
 ---
 title: windowsDeliveryOptimizationMode 枚举类型
-description: 对等方通讯组的传递优化模式
+description: 对等分发的传递优化模式
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f80c6b5cbe7316c851954154bdb559f370f02b79
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c9034c7c90257a7ca622cd203d4ab84387fd2014
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951514"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251501"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>windowsDeliveryOptimizationMode 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-对等方通讯组的传递优化模式
+对等分发的传递优化模式
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|用户定制|0|允许用户设置。|
-|为 httpOnly|1|HTTP 仅，没有对等|
-|httpWithPeeringNat|2|与同一个网络地址转换器后面对等的 OS 默认 – Http 混合|
-|httpWithPeeringPrivateGroup|3|HTTP 与跨专用组对等混合|
+|定制|0|允许用户进行设置。|
+|httpOnly|1|仅限 HTTP, 无对等|
+|httpWithPeeringNat|双面|OS 默认值–在同一网络地址转换器后具有对等的 Http 混合|
+|httpWithPeeringPrivateGroup|第三章|通过专用组与对等互连的 HTTP 混合|
 |httpWithInternetPeering|4|与 Internet 对等混合的 HTTP|
-|simpleDownload|99|与没有对等的简单 download 模式|
-|bypassMode|100|绕过模式。 不使用传递优化并改用位|
+|simpleDownload|99|无对等的简单下载模式|
+|bypassMode|100|旁路模式。 请勿使用传递优化和改用 BITS|
 
 
 

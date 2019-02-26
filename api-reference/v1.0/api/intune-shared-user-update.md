@@ -4,29 +4,29 @@ description: 更新 user 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 455a3e0c68fadc9768c434f5893dbc950a371bab
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8fb82586ea0fda24297179963b730a097b2d81fa
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922520"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251347"
 ---
-# <a name="update-user"></a>更新 user
+# <a name="update-user"></a>更新用户
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [user](../resources/intune-shared-user.md) 对象的属性。
-## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
+## <a name="prerequisites"></a>先决条件
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）| _随上下文_|
+|委派（工作或学校帐户）| _因上下文而异_|
 | &nbsp;&nbsp;设备管理 | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp;入职培训 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp;疑难解答 | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;载入 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;故障排除 | DeviceManagementManagedDevices.ReadWrite.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -53,7 +53,7 @@ PATCH /users/{usersId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户的唯一标识符。|
-|**入职培训**|
+|**载入**|
 |deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
 
 ## <a name="response"></a>响应
