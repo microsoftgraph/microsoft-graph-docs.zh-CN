@@ -1090,6 +1090,7 @@ items:
         - name: 更新
           href: api/intune-apps-windowsuniversalappx-update.md
     - name: 公司条款
+      displayName: Intune
       href: resources/intune-company-conceptual.md
       items:
       - name: 条款和条件
@@ -1132,12 +1133,13 @@ items:
         - name: 更新
           href: api/intune-companyterms-termsandconditionsassignment-update.md
     - name: 公司注册
+      displayName: Intune
       href: resources/intune-enrollment-conceptual.md
       items:
       - name: 已导入的 Windows Autopilot 设备标识
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
         items:
-        - name: 列出
+        - name: 列表
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
         - name: 获取
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -1167,6 +1169,7 @@ items:
       - name: 已导入的 Windows Autopilot 设备标识上载状态
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
     - name: 设备配置
+      displayName: Intune
       href: resources/intune-device-cfg-conceptual.md
       items:
       - name: Android 符合性策略
@@ -2039,6 +2042,7 @@ items:
       - name: Windows 用户帐户控制设置
         href: resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md
     - name: 设备管理
+      displayName: Intune
       href: resources/intune-device-mgt-conceptual.md
       items:
       - name: 操作状态
@@ -2092,8 +2096,6 @@ items:
         href: resources/intune-devices-deviceactionresult.md
       - name: 设备注册失败原因
         href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
-      - name: 设备注册类型
-        href: resources/intune-devices-deviceenrollmenttype.md
       - name: 设备 Exchange 访问状态摘要
         href: resources/intune-devices-deviceexchangeaccessstatesummary.md
       - name: 设备地理位置
@@ -2263,7 +2265,8 @@ items:
         href: resources/intune-devices-windowsdeviceadaccount.md
       - name: Windows 设备 Azure AD 帐户
         href: resources/intune-devices-windowsdeviceazureadaccount.md
-    - name: 移动应用管理
+    - name: 移动应用管理 (MAM)
+      displayName: Intune
       href: resources/intune-mam-conceptual.md
       items:
       - name: Android 托管应用保护
@@ -2566,6 +2569,7 @@ items:
       - name: Windows 信息保护应用商店应用
         href: resources/intune-mam-windowsinformationprotectionstoreapp.md
     - name: 载入
+      displayName: Intune
       href: resources/intune-onboarding-conceptual.md
       items:
       - name: 设备注册配置
@@ -2735,8 +2739,9 @@ items:
         href: resources/intune-onboarding-vpptokensyncstatus.md
       - name: Windows Hello 企业版 PIN 使用情况
         href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-    - name: 基于角色的访问控制
-      href: resources/intune-rbac-conceptual.md
+    - name: 基于角色的访问控制 (RBAC)
+      displayName: Intune
+      href: /resources/intune-rbac-conceptual.md
       items:
       - name: 设备和应用管理角色分配
         href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -2808,6 +2813,7 @@ items:
       - name: 角色权限
         href: resources/intune-rbac-rolepermission.md
     - name: 共享的资源
+      displayName: Intune
       href: resources/intune-shared-conceptual.md
       items:
       - name: 所有设备分配目标
@@ -2840,6 +2846,8 @@ items:
           href: api/intune-shared-devicecategory-delete.md
         - name: 更新
           href: api/intune-shared-devicecategory-update.md
+      - name: 设备注册类型
+        href: resources/intune-shared-deviceenrollmenttype.md
       - name: 设备管理
         href: resources/intune-shared-devicemanagement.md
         items:
@@ -2888,6 +2896,7 @@ items:
       - name: VPP 令牌帐户类型
         href: resources/intune-shared-vpptokenaccounttype.md
     - name: 电信费用
+      displayName: Intune
       href: resources/intune-tem-conceptual.md
       items:
       - name: 电信费用管理合作伙伴
@@ -4149,9 +4158,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 4295a10b58fa5a762811291710233df5b2d333aa
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0ef10175d057f1e31a49259ad2cea04fcda8f906
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157041"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258896"
