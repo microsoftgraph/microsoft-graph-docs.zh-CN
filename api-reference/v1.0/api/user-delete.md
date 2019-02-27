@@ -1,20 +1,24 @@
 ---
-title: 删除用户
-description: 删除用户。
+title: 删除用户 - Microsoft Graph API
+description: 介绍删除 Microsoft Graph API (REST) 的用户资源（实体）的方法。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 93097c1d2f3f88e3e1f6b4a0166883728b402ba4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ba27c81e5cb6b8bc8738c419b467e686932bc7c8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987088"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258063"
 ---
 # <a name="delete-a-user"></a>删除用户
 
-删除用户。
+删除用户。  
+
+删除时，将用户资源转移到存储时限为 30 日的临时容器中。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。
+
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -24,17 +28,20 @@ ms.locfileid: "27987088"
 |应用程序 | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}
 ```
 
 ## <a name="request-headers"></a>请求标头
+
 | 标头       | 值|
 |:-----------|:------|
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
@@ -42,7 +49,9 @@ DELETE /users/{id | userPrincipalName}
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+## <a name="request"></a>请求
+
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
@@ -51,7 +60,8 @@ DELETE /users/{id | userPrincipalName}
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 ```
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
+
 下面是一个响应示例。 
 <!-- {
   "blockType": "response",

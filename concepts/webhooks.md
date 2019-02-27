@@ -3,12 +3,12 @@ title: 设置用户数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 545a2470e85d82ad3e56ab99943d7487f5df3ca3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 48f9d16374219868418107201ef13a1bf14fb7da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168493"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263375"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -50,8 +50,8 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 - 最大订阅配额：
 
   - 每个应用：总订阅数 50,000
-  - 每个租户：所有应用的总订阅数 35
-  - 每个应用和租户组合：总订阅数 7
+  - 每个租户：所有应用的总订阅数 1000
+  - 每个应用和租户组合：总订阅数 100
 
 - 不支持 Azure AD B2C 租户。
 
@@ -241,10 +241,10 @@ notification 对象具有以下属性：
 - [创建订阅](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
-[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
+[对话]: /graph/api/resources/conversation?view=graph-rest-1.0
 [driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[group]: /graph/api/resources/group?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
-[user]: /graph/api/resources/user?view=graph-rest-1.0
-[alert]: /graph/api/resources/alert?view=graph-rest-1.0
+[事件]: /graph/api/resources/event?view=graph-rest-1.0
+[组]: /graph/api/resources/group?view=graph-rest-1.0
+[邮件]: /graph/api/resources/message?view=graph-rest-1.0
+[用户]: /graph/api/resources/user?view=graph-rest-1.0
+[警报]: /graph/api/resources/alert?view=graph-rest-1.0
