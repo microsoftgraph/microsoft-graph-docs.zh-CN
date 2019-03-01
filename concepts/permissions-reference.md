@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 6f29ce28546410f18d22fe22d353465c370a3296
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: cf5639e09977b052d0c5a9b56c535fdaf66789fa
+ms.sourcegitcommit: 98c3a9c791f82e5fab504f51f49a6835311381c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760935"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30314621"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用 
 Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。作为开发人员，你可以决定应用程序请求哪些 Microsoft Graph 权限。当用户登录你的应用时，他们或处于某些情况下的管理员可以选择是否同意这些权限。如果用户同意，你的应用可以访问它所请求的资源和 API。对于没有已登录用户的应用，安装应用程序或注册时，管理员可以事先同意权限。 
@@ -952,10 +952,10 @@ People.Read.All 权限仅适用于工作和学校帐户。
 
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read_ | 读取用户任务 | 允许应用读取用户任务。 | 否 | 是 |
-| _Tasks.Read.Shared_ | 读取用户任务和共享任务 | 允许应用读取用户有权访问的任务，包括用户个人任务和共享任务。 | 否 | 否 |
-| _Tasks.ReadWrite_ |    创建、读取、更新和删除用户任务和容器 | 允许应用创建、读取、更新和删除分配给已登录用户或与已登录用户共享的任务和容器（以及其中的任务）。| 否 | 是 |
-| _Tasks.ReadWrite.Shared_ | 读取和写入用户任务和共享任务 | 允许应用创建、读取、更新和删除用户有权访问的任务，包括用户个人任务和共享任务。 | 否 | 否 |
+| _Tasks.Read_ | 读取用户任务（预览版） | 允许应用读取用户任务。 | 否 | 是 |
+| _Tasks.Read.Shared_ | 读取用户任务和共享任务（预览版） | 允许应用读取用户有权访问的任务，包括用户个人任务和共享任务。 | 否 | 否 |
+| _Tasks.ReadWrite_ | 创建、读取、更新和删除用户任务和容器（预览版） | 允许应用创建、读取、更新和删除分配给已登录用户或与已登录用户共享的任务和容器（以及其中的任务）。| 否 | 是 |
+| _Tasks.ReadWrite.Shared_ | 读取和写入用户任务和共享任务（预览版） | 允许应用创建、读取、更新和删除用户有权访问的任务，包括用户个人任务和共享任务。 | 否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
