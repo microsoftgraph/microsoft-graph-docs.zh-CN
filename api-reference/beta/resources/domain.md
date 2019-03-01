@@ -4,12 +4,12 @@ description: 表示与租户相关联的域。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8d19909679447e050ea639ee0fcb4cd31288efc0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6b349920f0849ec18b0d5e70fda0bcb16c41e63c
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518637"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342329"
 ---
 # <a name="domain-resource-type"></a>域资源类型
 
@@ -37,12 +37,12 @@ ms.locfileid: "29518637"
 |:---------------|:--------|:----------|
 |[获取域](../api/domain-get.md) | [domain](domain.md) | 读取 domain 对象的属性和关系。|
 |[创建域](../api/domain-post-domains.md) | [domain](domain.md) | 向租户添加域。 |
-|[列出 domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) 集合| 通过对域的引用检索 directory 对象列表。|
+|[列出 domainNameReference](../api/domain-list-domainnamereferences.md) |[directoryObject](directoryobject.md) collection| 通过对域的引用检索 directory 对象列表。|
 |[列出 serviceConfigurationRecords](../api/domain-list-serviceconfigurationrecords.md) |[domainDnsRecord](domaindnsrecord.md) 集合|  检索域配置的域 DNS 记录列表。|
 |[列出 verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |[domainDnsRecord](domaindnsrecord.md) 集合|  检索用于域验证的域 DNS 记录列表。|
 |[更新域](../api/domain-update.md) | [domain](domain.md) |更新域。|
 |[删除域](../api/domain-delete.md) | 无 |删除域。|
-|[ForceDelete 域](../api/domain-forcedelete.md)|无|删除使用异步操作的域。|
+|[ForceDelete 域](../api/domain-forcedelete.md)|无|使用异步操作删除域。|
 |[验证域](../api/domain-verify.md)|[域](domain.md)|验证域的所有权。|
 
 ## <a name="properties"></a>属性
@@ -57,6 +57,8 @@ ms.locfileid: "29518637"
 |isInitial|Boolean| 如果这是由 Microsoft Online Services (companyname.onmicrosoft.com) 创建的初始域，则为 true。每个公司仅有一个初始域。不可为 Null |
 |isRoot|Boolean| 如果此域是一个已验证的根域，则为 true。否则，如果此域为子域或未经验证，则为 false。不可为 Null |
 |isVerified|Boolean| 如果域已完成域所有权验证，则为 true。不可为 Null |
+|passwordNotificationWindowInDays|Int32|指定用户收到其密码将到期的通知之前的天数。 如果未设置该属性, 则将使用默认值14天。|
+|passwordValidityPeriodInDays|Int32| 指定密码在必须更改之前有效的时间长度。 如果未设置该属性, 则将使用默认值90天。 |
 |supportedServices|字符串集合| 分配给域的功能。<br><br>可以包含下列值中的 0 个、1 个或更多个：*电子邮件*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*<br><br> 可以使用 Graph API 添加/删除的值包括：*电子邮件*、*OfficeCommunicationsOnline*、*Yammer*<br>不可为 Null|
 |状态|[domainState](domainstate.md)| 为域计划的异步操作的状态。 |
 
@@ -91,6 +93,8 @@ ms.locfileid: "29518637"
   "isInitial": true,
   "isRoot": true,
   "isVerified": true,
+  "passwordNotificationWindowInDays": 14,
+  "passwordValidityPeriodInDays": 90,
   "state": {"@odata.type": "microsoft.graph.domainState"},
   "supportedServices": ["String"]
 }

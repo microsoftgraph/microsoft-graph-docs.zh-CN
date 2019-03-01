@@ -4,12 +4,12 @@ description: 表示会议请求、取消或响应（可以是下列任一行为�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e6effa3f97b0625786ec999f1b478c3dd8530f52
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 83bed60f90b5f2a5ddcb30c9bb22f5a01f645cec
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917725"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342315"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
@@ -19,9 +19,9 @@ ms.locfileid: "27917725"
 
 如果组织者或应用发送会议请求，会议请求以 **eventMessage** 实例（其中包含 **meetingRequest** 的 **meetingMessageType**）的形式，发送到与会者收件箱中。 此外，Outlook 会自动在与会者日历中创建 **event** 实例，其中 **showAs** 属性设置为 **tentative**。 
 
-若要获取与会者邮箱中关联事件的属性，应用可以使用 **eventMessage** 的 **event** 导航属性，如[获取事件邮件示例](../api/eventmessage-get.md#request-2)中所示。 应用程序还可以响应事件代表与会者以编程方式，通过[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)该事件。
+若要获取与会者邮箱中关联事件的属性，应用可以使用 **eventMessage** 的 **event** 导航属性，如[获取事件邮件示例](../api/eventmessage-get.md#request-2)中所示。 应用程序还可以以编程方式代表与会者响应事件, 即[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)事件。
 
-除了会议请求中，在与会者的会议，用来取消事件管理器的结果的收件箱文件夹或由于与会者响应会议请求的组织者的收件箱中可以找到**eventMessage**实例。 应用可以对事件邮件执行操作，就像对邮件执行操作一样，但略有不同。
+除了会议请求外, 可以在与会者的收件箱文件夹中找到**eventMessage**实例, 因为事件组织者取消会议, 或者由于与会者响应会议请求而在组织者的收件箱中。 应用可以对事件邮件执行操作，就像对邮件执行操作一样，但略有不同。
 
 ## <a name="methods"></a>方法
 
@@ -29,7 +29,7 @@ ms.locfileid: "27917725"
 |:---------------|:--------|:----------|
 |[获取 eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |读取 eventmessage 对象的属性和关系。|
 |[更新](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |更新 eventMessage 对象。 |
-|[删除](../api/message-delete.md) | 无 |更新 eventMessage 对象。 |
+|[删除](../api/message-delete.md) | None |更新 eventMessage 对象。 |
 |[copy](../api/message-copy.md)|[message](message.md)|将邮件复制到文件夹。|
 |[createForward](../api/message-createforward.md)|[message](message.md)|创建转发邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
 |[createReply](../api/message-createreply.md)|[message](message.md)|创建回复邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
@@ -56,26 +56,26 @@ ms.locfileid: "27917725"
 |:---------------|:--------|:----------|
 |bccRecipients|[recipient](recipient.md) collection|邮件的密件抄送收件人。|
 |body|[itemBody](itembody.md)|邮件的正文。可以是 HTML 格式或文本格式。|
-|bodyPreview|字符串|邮件正文中的前 255 个字符。文本格式。|
+|bodyPreview|String|邮件正文中的前 255 个字符。文本格式。|
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|String|邮件的版本。|
 |conversationId|String|电子邮件所属的对话的 ID。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
-|标记|[followupFlag](followupflag.md)|指示状态、开始日期、截止日期或邮件的完成日期的标记值。|
+|flag|[followupFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
-|hasAttachments|布尔|指示邮件是否包含附件。|
-|id|String|事件消息 （注意，如果移动或修改一条消息，可以更改此值） 的唯一标识符|
+|hasAttachments|Boolean|指示邮件是否包含附件。|
+|id|String|事件消息的唯一标识符 (请注意, 如果移动或更改了邮件, 此值可能会更改)|
 |importance|String| 邮件的重要性：`low`、`normal`、`high`。|
-|inferenceClassification|字符串| 可能的值为： `focused`， `other`。|
+|inferenceClassification|字符串| 可能的值为: `focused`、 `other`。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 |
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
-|isDraft|布尔|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
+|isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
 |isRead|Boolean|指示是否已阅读该邮件。|
-|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
-|meetingMessageType|meetingMessageType| 事件消息的类型：`none`、`meetingRequest`、`meetingCancelled`、`meetingAccepted`、`meetingTenativelyAccepted`、`meetingDeclined`。|
+|meetingMessageType|meetingMessageType| 事件消息的类型：`none`、`meetingRequest`、`meetingCancelled`、`meetingAccepted`、`meetingTentativelyAccepted`、`meetingDeclined`。|
 |parentFolderId|String|邮件的父 MailFolder 的唯一标识符。|
 |receivedDateTime|DateTimeOffset|收到邮件的日期和时间。|
 |replyTo|[recipient](recipient.md) collection|在答复时使用的电子邮件地址。|

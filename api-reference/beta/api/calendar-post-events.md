@@ -1,21 +1,21 @@
 ---
 title: 创建事件
-description: 使用此 API 在默认或指定的日历中创建新事件。
+description: 使用此 API 可在默认或指定日历中创建新事件。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7cd5c6ddf9834163bdd3b03dd2ab2aa36cd3b48b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c620b2fb25a0ead99a07304b61db314300f6ea2e
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516327"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342308"
 ---
 # <a name="create-event"></a>创建事件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 在默认或指定的日历中创建新事件。
+使用此 API 在默认或指定日历中创建新事件。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -52,36 +52,54 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 | Content-Type  | application/json. Required.  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Event](../resources/event.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [event](../resources/event.md) 对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
+在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGViNDU7zAAAAAGtlAAA="],
   "name": "create_event_from_calendar"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/events
+POST https://graph.microsoft.com/beta/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events
 Content-type: application/json
-Content-length: 285
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "2016-10-19T10:37:00Z"
+  "subject": "Let's go for lunch",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does next month work for you?"
   },
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+  "start": {
+      "dateTime": "2019-03-10T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2019-03-10T14:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"adelev@contoso.onmicrosoft.com",
+        "name": "Adele Vance"
+      },
+      "type": "required"
+    }
+  ]
 }
 ```
-在请求正文中，提供 [Event](../resources/event.md) 对象的 JSON 表示形式。
+
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
@@ -90,20 +108,86 @@ Content-length: 285
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 285
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "2016-10-19T10:37:00Z"
-  },
-  "uid": "iCalUId-value",
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU7zAAAAAGtlAAA%3D')/events/$entity",
+    "@odata.etag": "W/\"/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==\"",
+    "id": "AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA=",
+    "createdDateTime": "2019-02-28T21:36:26.7105485Z",
+    "lastModifiedDateTime": "2019-02-28T21:36:26.9577227Z",
+    "changeKey": "/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==",
+    "categories": [],
+    "originalStartTimeZone": "Pacific Standard Time",
+    "originalEndTimeZone": "Pacific Standard Time",
+    "uid": "040000008200C780DAE",
+    "reminderMinutesBeforeStart": 15,
+    "isReminderOn": true,
+    "hasAttachments": false,
+    "subject": "Let's go for lunch",
+    "bodyPreview": "Does next month work for you?",
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isOrganizer": true,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "singleInstance",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl": null,
+    "recurrence": null,
+    "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes next month work for you?\r\n</body>\r\n</html>\r\n"
+    },
+    "start": {
+        "dateTime": "2019-03-10T12:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+        "dateTime": "2019-03-10T14:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
+    },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueId": "Harry's Bar",
+            "uniqueIdType": "private"
+        }
+    ],
+    "attendees": [
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Adele Vance",
+                "address": "AdeleV@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "organizer": {
+        "emailAddress": {
+            "name": "Megan Bowen",
+            "address": "MeganB@contoso.OnMicrosoft.com"
+        }
+    }
 }
 ```
 
@@ -112,7 +196,7 @@ Content-length: 285
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create Event",
+  "description": "Create event",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
