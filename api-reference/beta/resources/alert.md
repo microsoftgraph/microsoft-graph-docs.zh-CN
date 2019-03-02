@@ -1,68 +1,70 @@
 ---
-title: 警报的资源类型
-description: 表示 Microsoft 或合作伙伴的安全解决方案具有标识的客户的租户中潜在的安全问题。 使用通知统一和简化安全问题管理跨所有集成的解决方案。 若要了解详细信息，请参阅图资源管理器中的示例查询。
+title: 警报资源类型
+description: 表示 Microsoft 或合作伙伴安全解决方案已确定的客户租户中的潜在安全问题。 使用警报在所有集成的解决方案中统一并优化安全问题管理。 若要了解详细信息, 请参阅 Graph 浏览器中的示例查询。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c7973522b8593d38724ee40374f40d58d3408ff6
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 8fa945cc69b3bc7779ae9ce23e2ee672c48eb1f8
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642399"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364575"
 ---
-# <a name="alert-resource-type"></a>警报的资源类型
+# <a name="alert-resource-type"></a>警报资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Microsoft 或合作伙伴的安全解决方案具有标识的客户的租户中潜在的安全问题。 使用通知统一和简化安全问题管理跨所有集成的解决方案。 若要了解详细信息，请参阅[图资源管理器](https://developer.microsoft.com/graph/graph-explorer)中的示例查询。
+表示 Microsoft 或合作伙伴安全解决方案已确定的客户租户中的潜在安全问题。 使用警报在所有集成的解决方案中统一并优化安全问题管理。 若要了解详细信息, 请参阅[Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的示例查询。
 
-可以从[Microsoft Graph 安全概述 （英文)](security-api-overview.md)中列出的不同的安全提供程序中检索通知。
+可以从[Microsoft Graph 安全概述](security-api-overview.md)中列出的不同安全提供程序中检索警报。
 
 ## <a name="methods"></a>方法
 
 | 方法   | 返回类型|说明|
 |:---------------|:--------|:----------|
-|[获取警报](../api/alert-get.md) | [通知](alert.md) |读取属性和警报对象的关系。|
-|[更新警报](../api/alert-update.md) | [通知](alert.md) |更新警报对象。 |
-|[列出警报](../api/alert-list.md) | [通知](alert.md)集合 |获取通知对象集合。|
+|[获取警报](../api/alert-get.md) | [警报](alert.md) |读取 alert 对象的属性和关系。|
+|[更新警报](../api/alert-update.md) | [警报](alert.md) |更新 alert 对象。 |
+|[列出警报](../api/alert-list.md) | [通知](alert.md)集合 |获取一个警报对象集合。|
+|[更新警报](../api/alert-updatealerts.md)|[通知](alert.md)集合|更新多个 alert 对象。|
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|activityGroupName|String|名称或别名活动组 （攻击） 的此警报归功于。|
-|assignedTo|String|分析师通知的名称分配给进行会审、 调查或修复 （支持[更新](../api/alert-update.md)）。|
-|azureSubscriptionId|String|Azure 订阅 ID，此警报与 Azure 资源如果存在此参数。|
-|azureTenantId |String|Azure Active Directory 租户 id。 必需。 |
-|category|String|警报 （例如，credentialTheft、 勒索软件等） 的类别。|
-|closedDateTime|DateTimeOffset|通知关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，在 2014 年 1 月 1 日午夜 UTC 如下所示： `'2014-01-01T00:00:00Z'` （支持[更新](../api/alert-update.md)）。|
-|cloudAppStates|[cloudAppSecurityState](cloudappsecuritystate.md)集合|有关与通知相关的云应用程序/s 提供程序生成的与安全相关的状态信息。|
-|comments|String collection|通知 （用于客户警报管理） 的客户提供评论 （支持[更新](../api/alert-update.md)）。|
-|confidence|Int32|检测逻辑 （1-100 之间的百分比） 的信心。|
-|createdDateTime |DateTimeOffset|警报的提供程序中由通知的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
-|description|String|警报的说明。|
-|detectionIds|String collection|通知 （每个通知推送到作为单独的记录 SIEM） 与此警报实体集。|
-|eventDateTime |DateTimeOffset|担任生成通知的触发器事件发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
-|反馈|alertFeedback|分析师通知上的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 （支持[更新](../api/alert-update.md)）|
-|fileStates|[fileSecurityState](filesecuritystate.md)集合|有关与通知相关的文件提供程序生成的与安全相关的状态信息。|
-|hostStates|[hostSecurityState](hostsecuritystate.md)集合|有关与此警报主机提供程序生成的与安全相关的状态信息。|
-|id |String|提供程序生成的 GUID/唯一标识符。 只读。 必需。|
-|lastModifiedDateTime|DateTimeOffset|警报的实体的上次修改时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|malwareStates|[malwareState](malwarestate.md)集合|与此警报与相关的恶意软件的威胁智能。|
-|networkConnections|[networkConnection](networkconnection.md)集合|有关与通知相关的网络连接提供程序生成的与安全相关的状态信息。|
-|流程|[过程](process.md)集合|有关或多个进程与此警报提供程序生成的与安全相关的状态信息。|
-|recommendedActions|String collection|供应商/提供程序建议操作才能由于通知 （例如，隔离计算机、 enforce2FA、 重新映像主机）。|
-|registryKeyStates|[registryKeyState](registrykeystate.md)集合|与此通知相关的注册表项有关提供程序生成的与安全相关的状态信息。|
-|严重级别 |alertSeverity|警报严重性-供应商/服务提供商设置。 可取值为：`unknown`、`informational`、`low`、`medium`、`high`。 必需。|
-|sourceMaterials|String collection|超链接 (Uri) 的源材料相关对通知，例如，通知或日志搜索等的提供商的用户界面。|
-|状态 |alertStatus|警报生命周期状态 （阶段）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 （支持[更新](../api/alert-update.md)）。 必需。|
-|tags|String 集合|用户可定义标签可以应用于通知和可以充当筛选条件 （例如"HVA"、"是"等。）（支持[更新](../api/alert-update.md)）。|
-|title |String|通知的标题。 必需。|
-|触发器|[alertTrigger](alerttrigger.md)集合|有关触发通知 （出现在通知中的属性） 的特定属性与安全相关的信息。 通知可能包含多个用户、 主机、 文件、 ip 地址的信息。 此字段指示哪些属性触发警报生成。|
-|userStates|[userSecurityState](usersecuritystate.md)集合|与此通知相关的用户帐户提供程序生成的与安全相关的状态信息。|
-|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|包含有关安全产品/服务供应商、 提供商和 subprovider 的详细信息的复杂类型 (例如，供应商 = Microsoft; 提供程序 = Windows Defender ATP; subProvider = AppLocker)。 必需。|
-|vulnerabilityStates|[vulnerabilityState](vulnerabilitystate.md)集合|与一个或多个与通知相关的安全漏洞的威胁智能。|
+|activityGroupName|String|此警报所针对的活动组 (攻击者) 的名称或别名。|
+|assignedTo|String|为会审、调查或修正分配了警报的分析员的名称 (支持[更新](../api/alert-update.md))。|
+|azureSubscriptionId|String|azure 订阅 ID, 如果此警报与 Azure 资源相关, 则显示此 ID。|
+|azureTenantId |String|Azure Active Directory 租户 ID。 必需。 |
+|category|String|警报类别 (例如, credentialTheft、勒索软件, 等等)。|
+|closedDateTime|DateTimeOffset|警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如, 2014 年1月1日午夜 UTC 将如下所示: `'2014-01-01T00:00:00Z'` (支持[更新](../api/alert-update.md))。|
+|cloudAppStates|[cloudAppSecurityState](cloudappsecuritystate.md)集合|提供程序生成的与此警报相关的云应用程序生成的与安全相关的状态信息。|
+|comments|String collection|客户提供的有关通知的注释 (针对客户通知管理) (支持[更新](../api/alert-update.md))。|
+|confidence|Int32|对检测逻辑的可信度 (1-100 之间的百分比)。|
+|createdDateTime |DateTimeOffset|通知提供程序创建警报的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
+|说明|字符串|通知说明。|
+|detectionIds|String collection|与此警报实体相关的一组警报 (每个警报以单独的记录的形式推送到 SIEM)。|
+|eventDateTime |DateTimeOffset|触发警报 (s) 的事件发生时所发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
+|征求|alertFeedback|通知的分析师反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 (支持[更新](../api/alert-update.md))|
+|fileStates|[fileSecurityState](filesecuritystate.md)集合|提供程序生成的与安全相关的状态信息关于与此警报相关的文件。|
+|historyStates|[alertHistoryState](alerthistorystate.md)集合| 由包含对警报的所有更新的审核日志的**alertHistoryStates**组成的集合。 |
+|hostStates|[hostSecurityState](hostsecuritystate.md)集合|提供程序生成的与安全相关的状态信息关于与此警报相关的主机。|
+|id |字符串|提供程序生成的 GUID/唯一标识符。 只读。 必需。|
+|lastModifiedDateTime|DateTimeOffset|上次修改警报实体的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|malwareStates|[malwareState](malwarestate.md)集合|与此警报相关的恶意软件的威胁智能。|
+|networkConnections|[networkConnection](networkconnection.md)集合|由提供程序生成的有关与此警报相关的网络连接的安全相关的状态信息。|
+|进程|[过程](process.md)集合|提供程序生成的与此警报相关的进程的、与安全相关的状态信息。|
+|recommendedActions|String collection|作为警报的结果 (例如, 隔离计算机、enforce2FA、映像主机) 而要采取的供应商/提供商建议的操作。|
+|registryKeyStates|[registryKeyState](registrykeystate.md)集合|提供程序生成的与安全相关的状态信息关于与此警报相关的注册表项。|
+|度 |alertSeverity|警报严重性-由供应商/提供商设置。 可取值为：`unknown`、`informational`、`low`、`medium`、`high`。 必需。|
+|sourceMaterials|String collection|指向与警报相关的源材料的超链接 (uri), 例如, 提供商用于通知或日志搜索等的用户界面。|
+|status |alertStatus|警报生命周期状态 (阶段)。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 (支持[更新](../api/alert-update.md))。 必需。|
+|tags|String 集合|可应用于警报并可用作筛选条件的用户可定义标签 (例如, "HVA"、"锯" 等)(支持[更新](../api/alert-update.md))。|
+|title |String|通知标题。 必需。|
+|触发|[alertTrigger](alerttrigger.md)集合|有关触发警报的特定属性的安全相关信息 (出现在警报中的属性)。 警报可能包含有关多个用户、主机、文件和 ip 地址的信息。 此字段指示哪些属性触发了警报生成。|
+|userStates|[logonip](usersecuritystate.md)集合|提供程序生成的与此警报相关的用户帐户生成的、与安全相关的状态信息。|
+|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型 (例如, 供应商 = Microsoft; provider = Windows Defender ATP; subprovider = AppLocker)。 必需。|
+|vulnerabilityStates|[vulnerabilityState](vulnerabilitystate.md)集合|与此警报相关的一个或多个漏洞相关的威胁智能。|
 
 ## <a name="relationships"></a>关系
 
@@ -97,6 +99,7 @@ ms.locfileid: "29642399"
   "eventDateTime": "String (timestamp)",
   "feedback": "@odata.type: microsoft.graph.alertFeedback",
   "fileStates": [{"@odata.type": "microsoft.graph.fileSecurityState"}],
+  "historyStates": [{"@odata.type": "microsoft.graph.alertHistoryState"}],
   "hostStates": [{"@odata.type": "microsoft.graph.hostSecurityState"}],
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
