@@ -3,12 +3,12 @@ title: Microsoft Graph 中的主要服务和功能
 description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 Office 365、Windows 10 以及 Microsoft 365 中的企业移动性 + 安全性服务充分集成。 此外，它提供安全性和社交智能，可以提高用户的工作效率、创造性和团队协作，并保护企业资源和用户数据。 '
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 0d164dc95b4ae5de683180de1b6f186dcd98f5f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 98981cddb22fae69bd6b50e05d7caebc4c5c0d8a
+ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820683"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30361889"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -117,6 +117,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 客户预订（预览） | Microsoft Bookings | 针对小型企业，使其客户可以直接在 Web 或 Facebook 上预定服务。 让业务运营商管理客户偏好、服务和定价、员工列表和日程安排，以及其他常见的业务信息。 | [Microsoft Bookings API 概述](booking-concept-overview.md) |
+| Financials（预览版） | Dynamics 365 Business Central | 利用一站式商业管理解决方案，实现财务数据管理、供应链自动化和保护、销售管理和改进客户服务、项目管理和运营优化。| [Business Central API 概述](dynamics-business-central-concept-overview.md) |
 
 
 ## <a name="next-steps"></a>后续步骤
