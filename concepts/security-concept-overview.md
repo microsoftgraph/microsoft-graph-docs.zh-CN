@@ -4,12 +4,12 @@ description: Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: c5fe32fcc4004b37b61d43c5479a445b7c4fbcec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: cde6b57d5b02ab25d6cd86b2db2ce1a7438558e5
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939068"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364547"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
@@ -21,11 +21,17 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>为什么要使用 Microsoft Graph 安全性 API？
 
-使用 [Microsoft Graph 安全性 API](/graph/api/resources/security-api-overview?view=graph-rest-1.0)，可以轻松连接各个 Microsoft 和 Microsoft 合作伙伴安全产品和服务。 借助它，可以更容易地实现并丰富这些解决方案的价值。
+[Microsoft Graph 安全性 API](/graph/api/resources/security-api-overview?view=graph-rest-1.0) 可让你轻松连接来自 Microsoft 和合作伙伴的安全解决方案。 借助它，可以更容易地实现并丰富这些解决方案的价值。 你可以使用以下方法之一轻松连接 Microsoft Graph 安全性 API，具体取决于你的要求：
+
+- [编写代码](https://aka.ms/graphsecuritysdk) – 查找以 C#、Java、NodeJS 等语言编写的[代码示例](https://aka.ms/graphsecurityapicode)。
+- [使用脚本进行连接](https://aka.ms/graphsecuritypowershellsampleblog) – 查找 [PowerShell 示例](https://aka.ms/graphsecuritypowershellsample)。
+- [拖放到工作流和方案中](https://aka.ms/graphsecurityconnectorsblogpost) – 将 [Microsoft Graph 安全连接器](https://aka.ms/graphsecurityconnectors)用于 [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview)、[Microsoft Flow](https://flow.microsoft.com/) 和 [PowerApps](https://powerapps.microsoft.com/)。
+- [将数据导入报告和仪表板](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – 将 [Microsoft Graph 安全连接器用于 Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)。
+- [使用 Jupyter 笔记本进行连接](https://jupyter.org/) – 查找 [Jupyter 笔记本示例](https://aka.ms/graphsecurityjupyternotebooks)。  
 
 ### <a name="unify-and-standardize-alert-tracking"></a>统一和标准化警报跟踪
 
-编写一次代码，即可集成来自任何已集成 Microsoft Graph 的安全解决方案的警报，并跨所有解决方案同步警报状态和分配。 还可以通过 [Azure Monitor](https://docs.microsoft.com/zh-CN/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub) 将警报流式处理到安全信息和事件管理 (SIEM) 解决方案（如 Splunk 和 IBM QRadar）。 若要详细了解 SIEM 与安全性 API 实体的集成，请参阅[与 SIEM 集成](security-siemintegration.md)。
+连接一次，即可集成来自任何已集成 Microsoft Graph 的安全解决方案的警报，并跨所有解决方案同步警报状态和分配。 还可以通过 [Azure Monitor](https://docs.microsoft.com/zh-CN/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub) 将警报流式处理到安全信息和事件管理 (SIEM) 解决方案（如 Splunk 和 IBM QRadar）。 若要详细了解 SIEM 与安全性 API 实体的集成，请参阅[与 SIEM 集成](security-siemintegration.md)。
 
 ### <a name="correlate-security-alerts-to-improve-threat-protection-and-response"></a>关联安全警报以改进威胁防护和响应
 
@@ -39,6 +45,22 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 深入到相关的安全相关库存（如用户、主机和应用），然后添加来自其他 Microsoft Graph 提供程序（Azure AD、Microsoft Intune、Office 365）的组织上下文，以将业务和安全性上下文结合在一起并改进威胁响应。
 
+## <a name="automate-security-workflows-and-reporting"></a>自动执行安全工作流和报告
+
+自动执行安全管理、监视和调查，以提高运营效率和缩短响应时间。 通过将 Microsoft Graph 安全功能集成到报表和仪表板中，获得更深入的见解和上下文。
+
+## <a name="get-deep-insights-to-train-security-solutions"></a>深入了解如何针对安全解决方案进行培训
+
+直观显示在组织内运行的不同安全产品中的数据，以获得更深入的安全见解。 发现从数据中学习并针对安全解决方案进行培训的机会。 该架构提供了多个属性，可以使用你的安全数据来构建丰富的探索性数据集。
+
+## <a name="utilize-your-threat-intelligence-in-microsoft-security-solutions-preview"></a>在 Microsoft 安全解决方案中利用你的威胁智能（预览版）
+
+自动将威胁指标发送到 Microsoft 安全解决方案，以启用 `alert`、`block` 或 `allow` 操作。 直接使用 Microsoft Graph 安全性 API 或利用与领先威胁智能平台的集成。
+
+## <a name="act-quickly-in-response-to-new-threats-preview"></a>迅速采取行动应对新威胁（预览版）
+
+采取快速行动来抵御新威胁，例如采取相关措施来阻止安全工具和工作流中的文件、URL、域或 IP 地址。
+
 ### <a name="proactively-manage-security-risks-preview"></a>主动管理安全风险（预览版）
 
 使用 Microsoft 安全功能分数（预览版）了解组织的安全需求，获取改进方法建议，并预测在采纳这些建议后的改进分数。 可以轻松度量一段时间内的进度，并获取有助于提高分数的具体变更的相关见解。
@@ -49,9 +71,9 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 |**区域**     | **优势**|
 |:---------------|:---------|
-|**托管安全服务提供程序 (MSSP)**|<ul><li>简化了与安全操作工具和服务集成的过程。</li> <li>缩减了部署和维护时间及工作量。</li> <li>能够为 MSSP 客户增值。</li></ul>|
+|**托管安全服务提供程序 (MSSP)**|<ul><li>简化了与安全操作工具、工作流和报告功能集成的过程。</li> <li>缩减了部署和维护时间及工作量。</li> <li>通过对威胁采取措施来自动响应警报。</li> <li>能够为 MSSP 客户增值。</li></ul>|
 |**SIEM 和 IT 风险管理解决方案**|<ul><li>与 Microsoft 安全解决方案和生态系统合作伙伴顺畅集成。</li> <li>丰富的警报元数据。</li> <li>提升了警报关联性。</li></ul>|
-|**应用** <br>（威胁智能、移动、云、IOT、欺诈检测、标识和访问、风险和合规性、防火墙等）|<ul><li>跨各种安全解决方案统一了威胁管理、防护和风险管理。</li> <li>通过 Microsoft Graph 公开了警报、清单、配置和操作。</li> <li>与已启用 Microsoft Graph 的解决方案即时集成。</li></ul>|
+|**应用** <br>（威胁智能、移动、云、IOT、欺诈检测、标识和访问、风险和合规性、防火墙等）|<ul><li>跨各种安全解决方案统一了威胁管理、防护和风险管理。</li> <li>Microsoft Graph 中提供了警报、操作和客户威胁智能。</li> <li>与已启用 Microsoft Graph 的解决方案即时集成。</li> <li>获得深入的安全见解，以针对其他安全解决方案进行培训。</li> </ul>|
 
 ## <a name="api-reference"></a>API 参考
 在查找此服务的 API 参考？
