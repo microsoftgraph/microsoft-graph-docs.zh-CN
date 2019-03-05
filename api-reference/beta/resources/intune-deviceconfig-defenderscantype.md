@@ -1,31 +1,31 @@
 ---
 title: defenderScanType 枚举类型
-description: 系统的可能值扫描类型。
-localization_priority: Normal
+description: 系统扫描类型的可能值。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa60ef6358ac6d78a6b89f65b57345d127cc32e5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8871fca2c46d18ef1de3bab5a5ce88525109b234
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425860"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150720"
 ---
-# <a name="defenderscantype-enum-type"></a><span data-ttu-id="6177a-103">defenderScanType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="6177a-103">defenderScanType enum type</span></span>
+# <a name="defenderscantype-enum-type"></a><span data-ttu-id="d78d2-103">defenderScanType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="d78d2-103">defenderScanType enum type</span></span>
 
-> <span data-ttu-id="6177a-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="6177a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6177a-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="6177a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d78d2-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d78d2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6177a-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="6177a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d78d2-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d78d2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6177a-107">系统的可能值扫描类型。</span><span class="sxs-lookup"><span data-stu-id="6177a-107">Possible values for system scan type.</span></span>
+<span data-ttu-id="d78d2-106">系统扫描类型的可能值。</span><span class="sxs-lookup"><span data-stu-id="d78d2-106">Possible values for system scan type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="6177a-108">成员</span><span class="sxs-lookup"><span data-stu-id="6177a-108">Members</span></span>
-|<span data-ttu-id="6177a-109">成员</span><span class="sxs-lookup"><span data-stu-id="6177a-109">Member</span></span>|<span data-ttu-id="6177a-110">值</span><span class="sxs-lookup"><span data-stu-id="6177a-110">Value</span></span>|<span data-ttu-id="6177a-111">说明</span><span class="sxs-lookup"><span data-stu-id="6177a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="d78d2-107">成员</span><span class="sxs-lookup"><span data-stu-id="d78d2-107">Members</span></span>
+|<span data-ttu-id="d78d2-108">成员</span><span class="sxs-lookup"><span data-stu-id="d78d2-108">Member</span></span>|<span data-ttu-id="d78d2-109">值</span><span class="sxs-lookup"><span data-stu-id="d78d2-109">Value</span></span>|<span data-ttu-id="d78d2-110">说明</span><span class="sxs-lookup"><span data-stu-id="d78d2-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6177a-112">用户定制</span><span class="sxs-lookup"><span data-stu-id="6177a-112">userDefined</span></span>|<span data-ttu-id="6177a-113">0</span><span class="sxs-lookup"><span data-stu-id="6177a-113">0</span></span>|<span data-ttu-id="6177a-114">用户定义，默认值、 没有用途。</span><span class="sxs-lookup"><span data-stu-id="6177a-114">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="6177a-115">禁用</span><span class="sxs-lookup"><span data-stu-id="6177a-115">disabled</span></span>|<span data-ttu-id="6177a-116">1</span><span class="sxs-lookup"><span data-stu-id="6177a-116">1</span></span>|<span data-ttu-id="6177a-117">系统禁用扫描。</span><span class="sxs-lookup"><span data-stu-id="6177a-117">System scan disabled.</span></span>|
-|<span data-ttu-id="6177a-118">快速</span><span class="sxs-lookup"><span data-stu-id="6177a-118">quick</span></span>|<span data-ttu-id="6177a-119">2</span><span class="sxs-lookup"><span data-stu-id="6177a-119">2</span></span>|<span data-ttu-id="6177a-120">快速系统扫描。</span><span class="sxs-lookup"><span data-stu-id="6177a-120">Quick system scan.</span></span>|
-|<span data-ttu-id="6177a-121">完整</span><span class="sxs-lookup"><span data-stu-id="6177a-121">full</span></span>|<span data-ttu-id="6177a-122">3</span><span class="sxs-lookup"><span data-stu-id="6177a-122">3</span></span>|<span data-ttu-id="6177a-123">完整系统扫描。</span><span class="sxs-lookup"><span data-stu-id="6177a-123">Full system scan.</span></span>|
+|<span data-ttu-id="d78d2-111">定制</span><span class="sxs-lookup"><span data-stu-id="d78d2-111">userDefined</span></span>|<span data-ttu-id="d78d2-112">0</span><span class="sxs-lookup"><span data-stu-id="d78d2-112">0</span></span>|<span data-ttu-id="d78d2-113">用户定义, 默认值, 无意向。</span><span class="sxs-lookup"><span data-stu-id="d78d2-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="d78d2-114">禁用</span><span class="sxs-lookup"><span data-stu-id="d78d2-114">disabled</span></span>|<span data-ttu-id="d78d2-115">1</span><span class="sxs-lookup"><span data-stu-id="d78d2-115">1</span></span>|<span data-ttu-id="d78d2-116">系统扫描已禁用。</span><span class="sxs-lookup"><span data-stu-id="d78d2-116">System scan disabled.</span></span>|
+|<span data-ttu-id="d78d2-117">快速</span><span class="sxs-lookup"><span data-stu-id="d78d2-117">quick</span></span>|<span data-ttu-id="d78d2-118">双面</span><span class="sxs-lookup"><span data-stu-id="d78d2-118">2</span></span>|<span data-ttu-id="d78d2-119">快速系统扫描。</span><span class="sxs-lookup"><span data-stu-id="d78d2-119">Quick system scan.</span></span>|
+|<span data-ttu-id="d78d2-120">全</span><span class="sxs-lookup"><span data-stu-id="d78d2-120">full</span></span>|<span data-ttu-id="d78d2-121">第三章</span><span class="sxs-lookup"><span data-stu-id="d78d2-121">3</span></span>|<span data-ttu-id="d78d2-122">完全系统扫描。</span><span class="sxs-lookup"><span data-stu-id="d78d2-122">Full system scan.</span></span>|
 
 
 
