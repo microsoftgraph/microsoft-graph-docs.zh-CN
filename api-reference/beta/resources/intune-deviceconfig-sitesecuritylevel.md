@@ -1,33 +1,33 @@
 ---
 title: siteSecurityLevel 枚举类型
 description: 网站安全级别的可能值。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c60e57907d83c84044e92f41da591474477f3c8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d65ce6c6e3a57185b1daddcef4bec1732333bcc1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396649"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152827"
 ---
-# <a name="sitesecuritylevel-enum-type"></a><span data-ttu-id="19753-103">siteSecurityLevel 枚举类型</span><span class="sxs-lookup"><span data-stu-id="19753-103">siteSecurityLevel enum type</span></span>
+# <a name="sitesecuritylevel-enum-type"></a><span data-ttu-id="a4c90-103">siteSecurityLevel 枚举类型</span><span class="sxs-lookup"><span data-stu-id="a4c90-103">siteSecurityLevel enum type</span></span>
 
-> <span data-ttu-id="19753-104">**重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。</span><span class="sxs-lookup"><span data-stu-id="19753-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="19753-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="19753-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a4c90-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="a4c90-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="19753-106">**注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="19753-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a4c90-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a4c90-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="19753-107">网站安全级别的可能值。</span><span class="sxs-lookup"><span data-stu-id="19753-107">Possible values for site security level.</span></span>
+<span data-ttu-id="a4c90-106">网站安全级别的可能值。</span><span class="sxs-lookup"><span data-stu-id="a4c90-106">Possible values for site security level.</span></span>
 
-## <a name="members"></a><span data-ttu-id="19753-108">成员</span><span class="sxs-lookup"><span data-stu-id="19753-108">Members</span></span>
-|<span data-ttu-id="19753-109">成员</span><span class="sxs-lookup"><span data-stu-id="19753-109">Member</span></span>|<span data-ttu-id="19753-110">值</span><span class="sxs-lookup"><span data-stu-id="19753-110">Value</span></span>|<span data-ttu-id="19753-111">说明</span><span class="sxs-lookup"><span data-stu-id="19753-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="a4c90-107">成员</span><span class="sxs-lookup"><span data-stu-id="a4c90-107">Members</span></span>
+|<span data-ttu-id="a4c90-108">成员</span><span class="sxs-lookup"><span data-stu-id="a4c90-108">Member</span></span>|<span data-ttu-id="a4c90-109">值</span><span class="sxs-lookup"><span data-stu-id="a4c90-109">Value</span></span>|<span data-ttu-id="a4c90-110">说明</span><span class="sxs-lookup"><span data-stu-id="a4c90-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="19753-112">用户定制</span><span class="sxs-lookup"><span data-stu-id="19753-112">userDefined</span></span>|<span data-ttu-id="19753-113">0</span><span class="sxs-lookup"><span data-stu-id="19753-113">0</span></span>|<span data-ttu-id="19753-114">用户定义，默认值、 没有用途。</span><span class="sxs-lookup"><span data-stu-id="19753-114">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="19753-115">低</span><span class="sxs-lookup"><span data-stu-id="19753-115">low</span></span>|<span data-ttu-id="19753-116">1</span><span class="sxs-lookup"><span data-stu-id="19753-116">1</span></span>|<span data-ttu-id="19753-117">低。</span><span class="sxs-lookup"><span data-stu-id="19753-117">Low.</span></span>|
-|<span data-ttu-id="19753-118">mediumLow</span><span class="sxs-lookup"><span data-stu-id="19753-118">mediumLow</span></span>|<span data-ttu-id="19753-119">2</span><span class="sxs-lookup"><span data-stu-id="19753-119">2</span></span>|<span data-ttu-id="19753-120">中低。</span><span class="sxs-lookup"><span data-stu-id="19753-120">Medium-low.</span></span>|
-|<span data-ttu-id="19753-121">中等</span><span class="sxs-lookup"><span data-stu-id="19753-121">medium</span></span>|<span data-ttu-id="19753-122">3</span><span class="sxs-lookup"><span data-stu-id="19753-122">3</span></span>|<span data-ttu-id="19753-123">中等。</span><span class="sxs-lookup"><span data-stu-id="19753-123">Medium.</span></span>|
-|<span data-ttu-id="19753-124">mediumHigh</span><span class="sxs-lookup"><span data-stu-id="19753-124">mediumHigh</span></span>|<span data-ttu-id="19753-125">4</span><span class="sxs-lookup"><span data-stu-id="19753-125">4</span></span>|<span data-ttu-id="19753-126">中-高。</span><span class="sxs-lookup"><span data-stu-id="19753-126">Medium-high.</span></span>|
-|<span data-ttu-id="19753-127">高</span><span class="sxs-lookup"><span data-stu-id="19753-127">high</span></span>|<span data-ttu-id="19753-128">5</span><span class="sxs-lookup"><span data-stu-id="19753-128">5</span></span>|<span data-ttu-id="19753-129">高。</span><span class="sxs-lookup"><span data-stu-id="19753-129">High.</span></span>|
+|<span data-ttu-id="a4c90-111">定制</span><span class="sxs-lookup"><span data-stu-id="a4c90-111">userDefined</span></span>|<span data-ttu-id="a4c90-112">0</span><span class="sxs-lookup"><span data-stu-id="a4c90-112">0</span></span>|<span data-ttu-id="a4c90-113">用户定义, 默认值, 无意向。</span><span class="sxs-lookup"><span data-stu-id="a4c90-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="a4c90-114">降低</span><span class="sxs-lookup"><span data-stu-id="a4c90-114">low</span></span>|<span data-ttu-id="a4c90-115">1</span><span class="sxs-lookup"><span data-stu-id="a4c90-115">1</span></span>|<span data-ttu-id="a4c90-116">低。</span><span class="sxs-lookup"><span data-stu-id="a4c90-116">Low.</span></span>|
+|<span data-ttu-id="a4c90-117">mediumLow</span><span class="sxs-lookup"><span data-stu-id="a4c90-117">mediumLow</span></span>|<span data-ttu-id="a4c90-118">双面</span><span class="sxs-lookup"><span data-stu-id="a4c90-118">2</span></span>|<span data-ttu-id="a4c90-119">中-低。</span><span class="sxs-lookup"><span data-stu-id="a4c90-119">Medium-low.</span></span>|
+|<span data-ttu-id="a4c90-120">中等</span><span class="sxs-lookup"><span data-stu-id="a4c90-120">medium</span></span>|<span data-ttu-id="a4c90-121">第三章</span><span class="sxs-lookup"><span data-stu-id="a4c90-121">3</span></span>|<span data-ttu-id="a4c90-122">中等。</span><span class="sxs-lookup"><span data-stu-id="a4c90-122">Medium.</span></span>|
+|<span data-ttu-id="a4c90-123">mediumHigh</span><span class="sxs-lookup"><span data-stu-id="a4c90-123">mediumHigh</span></span>|<span data-ttu-id="a4c90-124">4</span><span class="sxs-lookup"><span data-stu-id="a4c90-124">4</span></span>|<span data-ttu-id="a4c90-125">中-高。</span><span class="sxs-lookup"><span data-stu-id="a4c90-125">Medium-high.</span></span>|
+|<span data-ttu-id="a4c90-126">高效</span><span class="sxs-lookup"><span data-stu-id="a4c90-126">high</span></span>|<span data-ttu-id="a4c90-127">5</span><span class="sxs-lookup"><span data-stu-id="a4c90-127">5</span></span>|<span data-ttu-id="a4c90-128">高。</span><span class="sxs-lookup"><span data-stu-id="a4c90-128">High.</span></span>|
 
 
 
