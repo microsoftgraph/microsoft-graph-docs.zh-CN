@@ -4,22 +4,22 @@ description: 读取 deviceAppManagement 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d700939f9073ff5d655421942ccc83ff5fc6bf7d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c5d54e1dfeb67192465468a8abe2f26a39c2c50a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935421"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257384"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 读取 [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 
-以下权限之一需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  请注意，在相应权限根据工作流而有所不同。
+若要调用此 API, 必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。  请注意, 相应的权限根据工作流的不同而有所不同。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ```
 
 ## <a name="example-response"></a>响应示例
-为简便起见，如下所示的响应对象可能会被截断。 从实际的呼叫，将返回所有属性。
+为简洁起见, 可能会截断此处显示的响应对象。 所有属性都将从实际调用返回。
 
 ``` http
 HTTP/1.1 200 OK

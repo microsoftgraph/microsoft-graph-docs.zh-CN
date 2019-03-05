@@ -3,29 +3,30 @@ title: dayOfWeek 枚举类型
 description: 工作日的可能值
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d3dc02e065b22bdff1786ea5ff71eab874ac43dd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 6f3f773909b2110a944cfcbc4f632ab7e80e5496
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985632"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258693"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 工作日的可能值
+
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|星期日|0|星期日。|
+|日|0|星期日。|
 |星期一|1|星期一。|
-|星期二|2|星期二。|
-|星期三|3|星期三。|
-|星期四|4|星期四。|
-|星期五|5|星期五。|
-|星期六|6|星期六。|
+|2001|双面|星期二。|
+|星期三|第三章|星期三。|
+|星期三|4|星期四。|
+|之前|5|星期五。|
+|星期六|型|星期六。|
 
 
 

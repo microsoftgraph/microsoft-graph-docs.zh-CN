@@ -1,28 +1,29 @@
 ---
 title: androidWorkProfileDefaultAppPermissionPolicyType 枚举类型
-description: Android 工作配置文件默认应用程序权限策略类型。
+description: Android 工作配置文件默认应用权限策略类型。
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5f4e3b7a01d92981b79311049fd2da46c058c0aa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2d1ca7eb358078852061d6208ca6e1b3f534f1ea
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947510"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255939"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>androidWorkProfileDefaultAppPermissionPolicyType 枚举类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Android 工作配置文件默认应用程序权限策略类型。
+Android 工作配置文件默认应用权限策略类型。
+
 ## <a name="members"></a>成员
-|成员|值|Description|
+|成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|设备默认值，没有用途。|
-|提示|1|提示。|
-|autoGrant|2|自动授予。|
-|autoDeny|3|自动拒绝。|
+|deviceDefault|0|设备默认值, 无意向。|
+|行|1|行.|
+|autoGrant|双面|自动授予。|
+|autoDeny|第三章|自动拒绝。|
 
 
 

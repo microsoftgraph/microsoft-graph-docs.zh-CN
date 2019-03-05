@@ -3,19 +3,20 @@ title: keyValuePair 资源类型
 description: 用于存储自定义设置的键值对
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: db3e24c1c14cb208be66b7a2b0364ad12b162956
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ed4af707320da09c9b72537168f8fd77a424c790
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926440"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258735"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 用于存储自定义设置的键值对
+
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
@@ -24,6 +25,7 @@ ms.locfileid: "27926440"
 
 ## <a name="relationships"></a>关系
 无
+
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 <!-- {
