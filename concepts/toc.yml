@@ -96,6 +96,9 @@ items:
           - name: 文件
             href: onedrive-concept-overview.md
             displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
+          - name: 财务
+            href: dynamics-business-central-concept-overview.md
+            displayname: 'Dynamics, Dynamics 365 Business Central'
           - name: 身份和访问控制
             href: azuread-identity-access-management-concept-overview.md
             displaName: 'Azure AD, Microsoft identity platform'
@@ -166,7 +169,9 @@ items:
                     href: security-splunk-siemintegration.md
                   - name: QRadar
                     href: security-qradar-siemintegration.md
-          - name: 网站和列表
+              - name: 与安全性 API 合作
+                href: security-partner-overview.md
+          - name: 站点和列表
             href: sharepoint-concept-overview.md
             displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
           - name: 社交智能
