@@ -1,30 +1,30 @@
 ---
 title: defenderPotentiallyUnwantedAppAction 枚举类型
-description: Defender 的操作，才能检测到可能有害的应用程序 (PUA)。
-localization_priority: Normal
+description: 要对检测到的可能有害的应用程序 (PUA) 执行的 Defender 操作。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ace0cc29ad284cde63b7e4934fb8cb395f27bbe
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 02ac5da63c2787c2b87479a23899c9d2980c54c4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422752"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173351"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>defenderPotentiallyUnwantedAppAction 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Defender 的操作，才能检测到可能有害的应用程序 (PUA)。
+要对检测到的可能有害的应用程序 (PUA) 执行的 Defender 操作。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|PUA 保护处于关闭状态。 Defender 将不能防范可能有害的应用程序。|
-|阻止|1|在 PUA 保护。 检测到的项目会被阻止。 它们将显示以及其他威胁的历史记录中。|
-|审核|2|审核模式。 Defender 将检测可能有害的应用程序，但不需要任何操作。 您可以查看有关应用程序的信息 Defender 可能需要花费针对操作，通过搜索创建的 Defender 在事件查看器事件。|
+|deviceDefault|0|PUA 保护已关闭。 Defender 将无法抵御可能有害的应用程序。|
+|数据|1|PUA 保护已开启。 已检测到的项目被阻止。 它们将显示在历史记录中, 以及其他威胁。|
+|跟踪|双面|审核模式。 Defender 将检测可能有害的应用程序, 但不执行任何操作。 您可以通过在事件查看器中搜索由 defender 创建的事件, 查看有关应用程序 Defender 执行操作的相关信息。|
 
 
 

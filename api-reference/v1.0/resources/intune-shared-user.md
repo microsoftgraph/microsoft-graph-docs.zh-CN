@@ -4,30 +4,30 @@ description: 表示 Azure Active Directory 用户对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 908abafa3ace358125636b2c38e4cb751536a617
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a7a6c87b5c073e00b660db807ff38c454c302d94
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967357"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253405"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 表示 Azure Active Directory 用户对象。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[用户列表](../api/intune-shared-user-list.md)对象。|[user](../resources/intune-shared-user.md) 集合|列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
-|[获取用户](../api/intune-shared-user-get.md)对象。|[用户](../resources/intune-shared-user.md) 集合|读取 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
-|[创建用户](../api/intune-shared-user-create.md)对象。|[用户](../resources/intune-shared-user.md) 集合|创建新的 [user](../resources/intune-shared-user.md) 对象。|
+|[列出用户](../api/intune-shared-user-list.md)对象。|[user](../resources/intune-shared-user.md) 集合|列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
+|[获取用户](../api/intune-shared-user-get.md)对象。|[user](../resources/intune-shared-user.md) 集合|读取 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
+|[创建用户](../api/intune-shared-user-create.md)对象。|[user](../resources/intune-shared-user.md) 集合|创建新的 [user](../resources/intune-shared-user.md) 对象。|
 |[删除用户](../api/intune-shared-user-delete.md)。|无|删除 [user](../resources/intune-shared-user.md)。|
-|[更新用户](../api/intune-shared-user-update.md)对象。|[user](../resources/intune-shared-user.md)|更新 [user](../resources/intune-shared-user.md) 对象的属性。|
+|[更新 user](../api/intune-shared-user-update.md)对象。|[user](../resources/intune-shared-user.md)|更新 [user](../resources/intune-shared-user.md) 对象的属性。|
 |**设备管理**|
 |[removeAllDevicesFromManagement 操作](../api/intune-shared-user-removealldevicesfrommanagement.md)|无|停用该用户管理的所有设备|
-|**移动应用程序管理 (MAM)**|
+|**移动应用管理 (MAM)**|
 |[getManagedAppDiagnosticStatuses 函数](../api/intune-shared-user-getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) 集合|获取给定用户的诊断验证状态。|
 |[getManagedAppPolicies 函数](../api/intune-shared-user-getmanagedapppolicies.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) 集合|获取给定用户的应用限制。|
 |[wipeManagedAppRegistrationsByDeviceTag 操作](../api/intune-shared-user-wipemanagedappregistrationsbydevicetag.md)|无|对含有指定设备标记的应用注册发布擦除操作。|
@@ -36,7 +36,7 @@ ms.locfileid: "27967357"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|用户的唯一标识符。|
-|**入职培训**|
+|**载入**|
 |deviceEnrollmentLimit|Int32|允许用户注册的最大设备数的限制。 允许的值为 5 或 1000。|
 
 
@@ -45,7 +45,7 @@ ms.locfileid: "27967357"
 |:---|:---|:---|
 |**设备管理**|
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|与用户关联的管理设备。|
-|**移动应用程序管理 (MAM)**|
+|**移动应用管理 (MAM)**|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) 集合|属于用户的零个或多个托管的应用注册。|
 |**疑难解答**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 集合|此用户的故障排除事件列表。|

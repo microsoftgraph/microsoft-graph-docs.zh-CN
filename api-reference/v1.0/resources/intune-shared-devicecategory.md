@@ -4,23 +4,23 @@ description: 然后可将这些类别应用于 Intune Azure 控制台中的设�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0267e547d9ee9f3846fa2f44596638d586f3158d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a0bb1e994bcf42ba91a55fdfc75946204d1f9b06
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968559"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254896"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory 资源类型
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 设备类别提供了整理设备的方法。 公司管理员可以使用设备类别定义对其公司有意义的属于他们自己的类别。然后可将这些类别应用于 Intune Azure 控制台中的设备，或在用户注册设备时供他们选择。 可以根据设备类别筛选报告并创建动态 Azure Active Directory 设备组。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列表 deviceCategories](../api/intune-shared-devicecategory-list.md)集合|列出 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象的属性和关系。|
+|[列出 deviceCategories](../api/intune-shared-devicecategory-list.md)集合|列出 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象的属性和关系。|
 |[Get deviceCategory](../api/intune-shared-devicecategory-get.md)|读取 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象的属性和关系。|
 |[Create deviceCategory](../api/intune-shared-devicecategory-create.md)|创建新的 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象。|
 |[删除 deviceCategory](../api/intune-shared-devicecategory-delete.md)。|
@@ -30,7 +30,7 @@ ms.locfileid: "27968559"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备类别的唯一标识符。 只读。|
-|**入职培训**|
+|**载入**|
 |displayName|String|设备类别的显示名称。|
 |description|String|设备类别的说明（可选）。|
 

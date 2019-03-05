@@ -1,21 +1,21 @@
 ---
 title: 创建 enterpriseCodeSigningCertificate
 description: 创建新的 enterpriseCodeSigningCertificate 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e5ba50739903fce6e462f5c1a2602a4a61221eb3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 20b65d8b1eda5eab4bdd3e497eb6d505753f04de
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402550"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173099"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>创建 enterpriseCodeSigningCertificate
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)对象。
 
@@ -44,26 +44,26 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 enterpriseCodeSigningCertificate 对象的 JSON 表示形式。
+在请求正文中, 提供 enterpriseCodeSigningCertificate 对象的 JSON 表示形式。
 
-下表显示时创建 enterpriseCodeSigningCertificate 所需的属性。
+下表显示创建 enterpriseCodeSigningCertificate 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|content|Binary|中的原始数据格式的 Windows 企业代码签名证书。|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|设置或未设置证书的状态。 可取值为：`notProvisioned`、`provisioned`。|
-|SubjectName|String|证书使用者名称。|
-|subject|String|证书使用者值。|
-|issuerName|String|证书颁发者名称。|
-|颁发者|String|证书颁发者值。|
+|content|Binary|原始数据格式的 Windows 企业代码签名证书。|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
+|SubjectName|String|证书的主题名称。|
+|subject|String|证书的主题值。|
+|issuerName|String|证书的颁发者名称。|
+|常用|String|证书的 Issuer 值。|
 |expirationDateTime|DateTimeOffset|证书到期日期。|
-|uploadDateTime|DateTimeOffset|代码签名证书时它的上载日期时间。|
+|uploadDateTime|DateTimeOffset|上传 CodeSigning 证书时的日期时间。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)对象。
 
 ## <a name="example"></a>示例
 

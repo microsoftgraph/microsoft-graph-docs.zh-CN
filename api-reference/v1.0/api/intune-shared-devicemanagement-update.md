@@ -4,37 +4,37 @@ description: 更新 deviceManagement 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e7351eb15a194c68c4bd3b7abc59d866b5f4f237
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c96877d25476ede3cee6ce407c1df84f08448a9a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985968"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253055"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
-> **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 更新 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象的属性。
+
 ## <a name="prerequisites"></a>先决条件
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-
-| 权限&nbsp;类型&nbsp;(通过&nbsp;工作流) | 权限（从最高特权到最低特权） |
+| 权限&nbsp;类型&nbsp;(按&nbsp;工作流) | 权限（从最高特权到最低特权） |
 |:---|:---|
 | 委派（工作或学校帐户） |
 | &nbsp;&nbsp;审核 | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp;公司术语 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;公司条款 | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;公司注册 | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp;&nbsp;设备配置 | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp;设备管理 | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp;终结点保护 | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Endpoint protection | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp;通知 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp;入职培训 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;载入 | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp;基于角色的访问控制 | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp;远程协助 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp;电信支出管理 | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp;疑难解答 | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;电信费用管理 | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;故障排除 | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; Windows 信息保护 | DeviceManagementApps.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。|
 | 应用程序 | 不支持。 |
@@ -65,11 +65,11 @@ PATCH /deviceManagement
 |**设备配置**|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|租户移动设备管理订阅状态。 可能的值为： `pending`， `active`， `warning`， `disabled`， `deleted`， `blocked`， `lockedOut`。|
-|**入职培训**|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|租户移动设备管理订阅状态。 可取值包括：`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut`。|
+|**载入**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。|
 
-请求正文属性支持根据工作流而有所不同。
+请求正文属性支持因工作流而异。
 
 ## <a name="response"></a>响应
 如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和更新的 [deviceManagement](../resources/intune-shared-devicemanagement.md) 对象。
@@ -109,7 +109,7 @@ Content-length: 751
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处展示的响应对象。 返回的属性根据工作流和上下文而有所不同。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 返回的属性根据工作流和上下文的不同而不同。
 
 ``` http
 HTTP/1.1 200 OK

@@ -1,39 +1,39 @@
 ---
 title: deviceEnrollmentFailureReason 枚举类型
-description: 注册的顶部级别故障类别。
-localization_priority: Normal
+description: 注册的顶级失败类别。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbfe7193c72f1ff1a03a7e7bb4da57d0a032e530
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f03ce73f1d6f8b5edc6b3e3b661f9a7ba79407bb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396208"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163852"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-注册的顶部级别故障类别。
+注册的顶级失败类别。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|unknown|0|默认值是未知失败原因。|
-|身份验证|1|失败的身份验证|
-|授权|2|呼叫已通过身份验证，但未被授权注册。|
-|accountValidation|3|无法验证注册的帐户。 （帐户已被阻止，注册未启用）|
-|userValidation|4|无法验证用户。 (不存在用户，缺少许可证)|
-|deviceNotSupported|5|不支持移动设备管理设备。|
-|inMaintenance|6|帐户是在维护。|
-|badRequest|7|客户端发送请求不是服务理解/支持。|
-|featureNotSupported|8|此帐户不支持使用此注册的功能。|
-|enrollmentRestrictionsEnforced|9|注册限制配置被管理员阻止此注册。|
-|clientDisconnected|10|客户端超时或注册已中止由最终用户。|
-|userAbandonment|11|注册已放弃的最终用户。 （最终用户启动入职培训，但无法完成及时）|
+|unknown|0|默认值, 失败原因未知。|
+|身份验证|1|身份验证失败|
+|授权|双面|呼叫已通过身份验证, 但未获授权进行注册。|
+|accountValidation|第三章|无法验证注册帐户。 (帐户被阻止, 未启用注册)|
+|userValidation|4|无法验证用户。 (用户不存在, 缺少许可证)|
+|deviceNotSupported|5|移动设备管理不支持设备。|
+|inMaintenance|型|帐户处于维护中。|
+|badRequest|步|客户端发送了服务无法理解/支持的请求。|
+|featureNotSupported|utf-8|此帐户不支持此注册使用的功能。|
+|enrollmentRestrictionsEnforced|第|由管理员配置的注册限制阻止了此注册。|
+|clientDisconnected|10|客户端超时或注册被 enduser 中止。|
+|userAbandonment|11x17|注册已被 enduser 放弃。 (Enduser 已开始加入, 但无法及时完成它)|
 
 
 

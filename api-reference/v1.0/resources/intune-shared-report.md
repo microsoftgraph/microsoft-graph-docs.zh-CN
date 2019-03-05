@@ -1,22 +1,21 @@
 ---
 title: report 资源类型
-description: 一个报表，随工作流，任一设备配置配置文件的历史记录或注册失败。
+description: 一种根据工作流 (设备配置文件历史记录或注册失败) 不同的报告。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 5945343684aa20dc8af403eb094bb29648ff4f8f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ad95fa9ef21a6fbf80ddd8265b5bac2e72c1825b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970232"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253559"
 ---
 # <a name="report-resource-type"></a>report 资源类型
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://go.microsoft.com/fwlink/?linkid=839381) Intune 服务。
 
-
-一个报表，随工作流，任一设备配置配置文件的历史记录或注册失败。
+一种根据工作流 (设备配置文件历史记录或注册失败) 不同的报告。
 
 ## <a name="properties"></a>属性
 
