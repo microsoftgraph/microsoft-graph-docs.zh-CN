@@ -1,35 +1,35 @@
 ---
 title: androidForWorkRequiredPasswordType 枚举类型
-description: Android 的工作被必需的密码类型。
-localization_priority: Normal
+description: 适用于工作所需密码类型的 Android。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3da48449de63fa134c68e3f27fd415c286666e4e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0e0e99a5e54797441070308882d4137859390820
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419602"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169473"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>androidForWorkRequiredPasswordType 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Android 的工作被必需的密码类型。
+适用于工作所需密码类型的 Android。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|设备默认值，没有用途。|
-|lowSecurityBiometric|1|低安全性生物基于所需的密码。|
-|必需|2|必需项。|
-|atLeastNumeric|3|所需的密码至少数值。|
-|numericComplex|4|所需的数字复杂密码。|
-|atLeastAlphabetic|5|所需的密码至少字母。|
-|atLeastAlphanumeric|6|所需的至少字母数字密码。|
-|alphanumericWithSymbols|7|使用所需的符号密码至少字母数字。|
+|deviceDefault|0|设备默认值, 无意向。|
+|lowSecurityBiometric|1|要求低安全基于生物特征的密码。|
+|必需|双面|必需。|
+|atLeastNumeric|第三章|至少需要数字密码。|
+|numericComplex|4|需要数字复杂密码。|
+|atLeastAlphabetic|5|至少需要字母密码。|
+|atLeastAlphanumeric|型|至少需要字母数字密码。|
+|alphanumericWithSymbols|步|至少需要带符号的字母数字密码。|
 
 
 

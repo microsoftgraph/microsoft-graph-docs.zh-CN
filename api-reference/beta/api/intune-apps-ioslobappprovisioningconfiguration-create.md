@@ -1,21 +1,21 @@
 ---
 title: 创建 iosLobAppProvisioningConfiguration
 description: 创建新的 iosLobAppProvisioningConfiguration 对象。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9821b36ef52080f752adf89be1b6959e6c920b25
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 08a3cb70d7fc10274e44550d83da252710d9ec9d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405441"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171524"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>创建 iosLobAppProvisioningConfiguration
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 创建新的[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)对象。
 
@@ -44,15 +44,15 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 |Accept|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 iosLobAppProvisioningConfiguration 对象的 JSON 表示形式。
+在请求正文中, 提供 iosLobAppProvisioningConfiguration 对象的 JSON 表示形式。
 
-下表显示时创建 iosLobAppProvisioningConfiguration 所需的属性。
+下表显示创建 iosLobAppProvisioningConfiguration 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |expirationDateTime|DateTimeOffset|可选的配置文件到期日期和时间。|
-|payloadFileName|String|负载文件名 (*.mobileprovision | *.xml)。|
+|payloadFileName|String|有效负载文件名 (*. mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |description|String|管理员提供的设备配置说明。|
@@ -63,7 +63,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)对象。
 
 ## <a name="example"></a>示例
 

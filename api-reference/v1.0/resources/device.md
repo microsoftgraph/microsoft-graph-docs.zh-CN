@@ -4,12 +4,12 @@ description: 表示在组织中注册的设备。 可以在云中使用设备注
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9b69f51e045bff43d4c250f2b00791000df1499e
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.openlocfilehash: e72777691f0c599067c885168c0c58bb49cec3cb
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690922"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379526"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "29690922"
 |[列出设备](../api/device-list.md) | [设备](device.md) 集合| 检索目录中的注册设备列表。 |
 |[更新设备](../api/device-update.md) | [设备](device.md) |更新 device 对象的属性。 |
 |[删除设备](../api/device-delete.md) | 无 |删除 device 对象。 |
-|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| 列出设备位于直接成员的组。 |
+|[List memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| 列出设备是其直接成员的组。 |
 |[列出 registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| 通过 registeredOwners 导航属性，获取身份为设备注册所有者的用户。|
 |[列出 registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) 集合| 从 registeredUsers 导航属性获取设备的注册用户。|
 |**开放扩展**| | |
@@ -40,19 +40,22 @@ ms.locfileid: "29690922"
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| 启用帐户时为 **true**，否则为 **false**。必需。|
 |alternativeSecurityIds|alternativeSecurityId 集合| 仅供内部使用。 不可为 null。 |
-|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：`'2014-01-01T00:00:00Z'`。只读。 |
+|approximateLastSignInDateTime|DateTimeOffset| 时间戳类型表示使用 ISO 8601 格式的日期和时间信息, 并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
+|complianceExpirationDateTime|DateTimeOffset| 设备不再符合标准时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息, 并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。 |
 |deviceId|string| 由 Azure 设备注册服务在设备注册时设置的唯一标识符。 |
 |deviceMetadata|String| 仅供内部使用。 设置为 null。 |
 |deviceVersion|Int32| 仅供内部使用。 |
 |displayName|String|设备显示名称。必需。 |
 |id|字符串|设备唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥，不可为 NULL。只读。|
-|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 此值只可以由 Intune 的任何设备操作系统类型或[批准 MDM 应用程序](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)的 Windows 操作系统设备更新。|
-|isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 此值只可以由 Intune 的任何设备操作系统类型或[批准 MDM 应用程序](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)的 Windows 操作系统设备更新。 |
+|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。|
+|isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|对象最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
 |onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 只读。 |
 |operatingSystem|String| 设备上操作系统的类型。必需。 |
 |operatingSystemVersion|String|设备上操作系统的版本。必需。 |
 |physicalIds|String 集合| 仅供内部使用。 不可为 null。 |
+|profileType|String|设备的配置文件类型。 可取值为：<br />**RegisteredDevice**设置<br />**SecureVM**<br />**Printer**<br />**共享**<br />**IoT**|
+|systemLabels|String collection| 系统应用于设备的标签列表。 |
 |trustType|String| 加入设备的信任类型。 只读。 可取值为： <br />**Workplace** - 表示*自带个人设备*<br />**AzureAd** - 仅云加入设备<br />**ServerAd** - 加入 Azure AD 的本地域加入设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
 
 ## <a name="relationships"></a>关系
@@ -60,8 +63,8 @@ ms.locfileid: "29690922"
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
 |memberOf|[directoryObject](directoryobject.md) collection|此组所属的组。HTTP 方法：GET（支持所有组）只读。可为 Null。|
-|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) 集合| 列出的组的成员的设备。 此操作是传递的。 |
-|registeredOwners|[directoryObject](directoryobject.md) collection|云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 Null。 |
+|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| 列出设备所属的组。 此操作是可传递的。 |
+|registeredOwners|[directoryObject](directoryobject.md) collection|云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为空。 |
 |registeredUsers|[directoryObject](directoryobject.md) 集合|设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -86,6 +89,7 @@ ms.locfileid: "29690922"
   "accountEnabled": true,
   "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
+  "complianceExpirationDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",
   "deviceVersion": 1024,
@@ -98,6 +102,8 @@ ms.locfileid: "29690922"
   "operatingSystem": "string",
   "operatingSystemVersion": "string",
   "physicalIds": ["string"],
+  "profileType": "string",
+  "systemLabels": ["string"],
   "trustType": "string"
 }
 ```

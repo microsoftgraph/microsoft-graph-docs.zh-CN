@@ -1,21 +1,21 @@
 ---
 title: 删除 officeSuiteApp
 description: 删除 officeSuiteApp。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fa38c77e9e3d4d5275c06cbfd49b3df4a526212
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ef5f3fc49dacdb131db9874edbcd46c78b1c689e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29397755"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170929"
 ---
 # <a name="delete-officesuiteapp"></a>删除 officeSuiteApp
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 删除[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)。
 

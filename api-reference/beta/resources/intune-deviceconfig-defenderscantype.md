@@ -1,31 +1,31 @@
 ---
 title: defenderScanType 枚举类型
-description: 系统的可能值扫描类型。
-localization_priority: Normal
+description: 系统扫描类型的可能值。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa60ef6358ac6d78a6b89f65b57345d127cc32e5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8871fca2c46d18ef1de3bab5a5ce88525109b234
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425860"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150720"
 ---
 # <a name="defenderscantype-enum-type"></a>defenderScanType 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-系统的可能值扫描类型。
+系统扫描类型的可能值。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|用户定制|0|用户定义，默认值、 没有用途。|
-|禁用|1|系统禁用扫描。|
-|快速|2|快速系统扫描。|
-|完整|3|完整系统扫描。|
+|定制|0|用户定义, 默认值, 无意向。|
+|禁用|1|系统扫描已禁用。|
+|快速|双面|快速系统扫描。|
+|全|第三章|完全系统扫描。|
 
 
 

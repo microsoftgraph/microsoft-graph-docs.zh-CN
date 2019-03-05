@@ -1,32 +1,32 @@
 ---
 title: macOsVppAppRevokeLicensesActionResult 资源类型
-description: MacOS Vpp 应用程序定义的操作的结果，包含 ActionResult 继承的属性。
-localization_priority: Normal
+description: 定义操作的结果在 MacOS Vpp 应用中, 包含 ActionResult 的继承属性。
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f90bd55476bbbb48ab3a4904886a67b217ab67b7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7cf8390dc2c1541525e288b81defd073144f4132
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429310"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166505"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>macOsVppAppRevokeLicensesActionResult 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-MacOS Vpp 应用程序定义的操作的结果，包含 ActionResult 继承的属性。
+定义操作的结果在 MacOS Vpp 应用中, 包含 ActionResult 的继承属性。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|userId|String|与操作关联的用户 Id。|
-|managedDeviceId|String|DeviceId 与操作关联。|
-|totalLicensesCount|Int32|Revoke 尝试建立为其许可证数的计数。|
-|failedLicensesCount|Int32|失败的吊销许可证数的计数。|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|Revoke 许可证操作失败的原因。 可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate`。|
+|userId|String|与操作关联的用户 id。|
+|managedDeviceId|String|与操作相关联的 DeviceId。|
+|totalLicensesCount|Int32|尝试吊销的许可证数量的计数。|
+|failedLicensesCount|Int32|吊销失败的许可证数的计数。|
+|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|吊销许可证操作失败的原因。 可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate`。|
 |actionName|String|操作名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
 |startDateTime|DateTimeOffset|初始化操作的时间|

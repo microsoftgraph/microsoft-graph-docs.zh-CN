@@ -1,21 +1,21 @@
 ---
 title: deviceGuardLocalSystemAuthorityCredentialGuardState 枚举类型
 description: 尚未记录
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f95ce49ab0154f39f80b9501607c418f097a1354
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 882d7a37abcd34e80c9c0d894d0940a53478d6f3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418916"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171174"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardState 枚举类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 
@@ -24,9 +24,9 @@ ms.locfileid: "29418916"
 |:---|:---|:---|
 |运行|0|运行|
 |rebootRequired|1|需要重新启动|
-|notLicensed|2|未授权以凭据 Guard|
-|notConfigured|3|未配置|
-|virtualizationBasedSecurityNotRunning|4|虚拟化基于安全未运行|
+|notLicensed|双面|未获得凭据防护许可|
+|notConfigured|第三章|未配置|
+|virtualizationBasedSecurityNotRunning|4|基于虚拟化的安全性未运行|
 
 
 

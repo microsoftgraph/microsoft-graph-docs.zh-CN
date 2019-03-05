@@ -1,28 +1,28 @@
 ---
 title: intuneBrand 资源类型
 description: intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4e1e4a4a4042b9a4dd9382f1310d737ac1c9678
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e3e899f418ea9214530ac3b70e493a15655ca873
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398602"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167380"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
-> **重要：** 在 Microsoft Graph 中的 /beta 版本下的 Api 可随时更改。 不支持在生产应用程序中使用这些 API。
+> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
 
-> **注意：** Intune Microsoft Graph API 要求租户[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
+> **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 intuneBrand 包含在自定义公司门户应用程序以及最终用户网页版门户的外观时使用的数据。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|向最终用户显示的公司/组织名称。|
+|displayName|字符串|向最终用户显示的公司/组织名称。|
 |contactITName|String|负责 IT 支持的员工/组织名称。|
 |contactITPhoneNumber|String|负责 IT 支持的员工/组织的电话号码。|
 |contactITEmailAddress|String|负责 IT 支持的员工/组织的电子邮件地址。|
@@ -31,11 +31,11 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |onlineSupportSiteUrl|String|指向公司/组织 IT 支持人员网站的 URL。|
 |onlineSupportSiteName|String|显示公司/组织 IT 支持人员网站的名称。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 Web 门户中使用的主要主题颜色。|
-|showLogo|布尔值|表示是否显示管理员提供的徽标图像的布尔值。|
+|showLogo|Boolean|表示是否显示管理员提供的徽标图像的布尔值。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有浅色背景。|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有深色背景。|
 |showNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Compnay 门户应用程序登陆页面中显示的自定义的图像|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在 Compnay 门户应用登录页中显示的自定义图像|
 |showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 
 ## <a name="relationships"></a>关系
