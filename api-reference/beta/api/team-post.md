@@ -4,12 +4,12 @@ description: 新建团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: d5463bdc2cc5aa5b471e9526be579364991645ad
-ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
+ms.openlocfilehash: 394fa92f6ef97d6bc7a8dff0d4ddfe10c677bf99
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "29892517"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458685"
 ---
 # <a name="create-team"></a>创建团队
 
@@ -62,7 +62,7 @@ POST /teams
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description"
 }
@@ -89,7 +89,7 @@ Content-Location: /teams/{teamId}
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
   "owners@odata.bind": [
@@ -119,7 +119,7 @@ Content-Location: /teams/{teamId}
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
+    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
     "visibility": "Private",
     "displayName": "Sample Engineering Team",
     "description": "This is a sample engineering team, used to showcase the range of properties supported by this API",
@@ -221,7 +221,7 @@ Content-Location: /teams/{teamId}
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/educationClass",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
   "description": "My Class Team’s Description"
 }
@@ -250,7 +250,7 @@ Content-Location: /teams/{teamId}
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/educationClass",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
   "description": "My Class Team’s Description",
   "channels": [
