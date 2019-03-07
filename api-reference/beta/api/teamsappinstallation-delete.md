@@ -4,20 +4,18 @@ description: 从指定的团队中卸载应用程序。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a4857a5e56a16eb9ee0989108fcfe3b185bb5f0c
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.openlocfilehash: 592f488ad73337cc89b92d5a57bd874664fba9cf
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070818"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458664"
 ---
 # <a name="delete-app-from-team"></a>从团队中删除应用程序
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从指定的[团队](../resources/team.md)中卸载[应用程序](../resources/teamsappinstallation.md)。
-
->**注意:** 如果使用的是应用程序权限, 则会出现已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

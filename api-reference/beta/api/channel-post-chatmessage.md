@@ -1,21 +1,21 @@
 ---
-title: 在通道中创建一条消息
-description: 在指定的通道中创建一个新的邮件。
+title: 在频道中发送邮件
+description: 在指定的频道中发送新邮件。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 891181c8797563fac6afb7862a27bd8b49628b5f
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 42dcf26a5e67f58668f4bd321a68e684feef237f
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "30039552"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458636"
 ---
-# <a name="create-a-message-in-a-channel"></a>在通道中创建一条消息
+# <a name="send-a-message-to-a-channel"></a>向频道发送邮件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[频道](../resources/channel.md)中创建一个新的[邮件](../resources/chatmessage.md)。
+在指定的[频道](../resources/channel.md)中创建新[邮件](../resources/chatmessage.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,17 +31,20 @@ ms.locfileid: "30039552"
 ```http
 POST /teams/{id}/channels/{id}/messages
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[message](../resources/chatmessage.md)对象的 JSON 表示形式。 仅正文属性是必需的这是可选的其他属性。
+在请求正文中, 提供[message](../resources/chatmessage.md)对象的 JSON 表示形式。 只有 body 属性是必需的, 其他属性是可选的。
+
+> 注意: 不支持发送包含附件和图像的邮件。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应代码创建的[消息](../resources/chatmessage.md)。
+如果成功, 此方法将`201 Created`在已创建的[邮件](../resources/chatmessage.md)中返回响应代码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -114,7 +117,7 @@ Content-length: 160
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create message",
+  "description": "Send message",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

@@ -4,20 +4,18 @@ description: 将应用程序安装到指定的团队。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 261d186e23b516e58a428ecfdd2883f7a3bc111d
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.openlocfilehash: 1a77d3b01c70273d0d93ca1e3b1b66d1de53f8f0
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070825"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458671"
 ---
 # <a name="add-app-to-team"></a>向团队添加应用
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将[应用程序](../resources/teamsapp.md)安装到指定的[团队](../resources/team.md)。
-
->**注意:** 如果使用的是应用程序权限, 则会出现已知问题。 有关详细信息，请参阅[已知问题](/graph/known-issues)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

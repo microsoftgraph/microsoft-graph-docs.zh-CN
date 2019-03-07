@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 1b71c7d1ee9181a766f8aa20b9b16a085fcf31a8
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: ce0246f20b12bee9f1e474455f87bb3fd9396aee
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056964"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458629"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -50,12 +50,6 @@ ms.locfileid: "30056964"
 新团队会被列出。
 一些旧团队没有包含“Team”的 **resourceProvisioningOptions** 属性，但新创建的团队和在 Microsoft Teams 中被访问的团队有此属性。
 今后，我们将对尚未在 Microsoft Teams 中打开的现有团队设置 **resourceProvisioningOptions**。
-
-### <a name="installing-and-uninstalling-applications-using-application-permissions"></a>使用应用程序权限安装和卸载应用程序
-
-使用应用程序权限从团队卸载应用时，API 将返回 500 错误代码，即使已成功卸载应用，也是如此。
-
-使用应用程序权限在团队中安装、更新和卸载应用时，不会写入审核日志事件。
 
 ## <a name="groups"></a>组
 
