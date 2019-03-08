@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
-ms.openlocfilehash: c5d15c380908f09ef292b7c5794046bad6e95ac8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 85e26779d7c7df72a3176290654511ebd0f9493b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507948"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480263"
 ---
 # <a name="uploadsession-resource"></a>UploadSession 资源
 
@@ -46,7 +46,7 @@ ms.locfileid: "29507948"
 
 ## <a name="see-also"></a>另请参阅
 
-- 通过上传会话上传大文件
+- [通过上载会话上载大文件](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

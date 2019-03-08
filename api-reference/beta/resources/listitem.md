@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2a405ad8a71c766642bd23adbce64c2b57b72e23
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 435544db272b26e6fe3ac0e09803858eec9d05f6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517440"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480878"
 ---
 # <a name="listitem-resource"></a>ListItem 资源
 
@@ -28,11 +28,11 @@ ms.locfileid: "29517440"
 |:-------------------------------|:------------------------
 | [获取][]                        | GET /items/{item-id}
 | [获取列值][Get]       | GET /items/{item-id}?expand=fields
-| [获取分析结果][]              | GET /items/ {项目-id} / 分析
-| [按间隔获取活动][] | GET /items/ {项目-id} / getActivitiesByInterval
-| [Create][]                     | POST /items
+| [获取分析结果][]              | 获取/items/{item-id}/analytics
+| [按间隔获取活动][] | 获取/items/{item-id}/getActivitiesByInterval
+| [创建][]                     | POST /items
 | [删除][]                     | DELETE /items/{item-id}
-| [Update][]                     | PATCH /items/{item-id}
+| [更新][]                     | PATCH /items/{item-id}
 | [更新列值][Update] | PATCH /items/{item-id}/fields
 
 [获取]: ../api/listitem-get.md
@@ -96,7 +96,7 @@ ms.locfileid: "29517440"
 | createdBy            | [identitySet][]   | 此项的创建者的标识。 只读。
 | createdDateTime      | DateTimeOffset    | 创建项目的日期和时间。只读。
 | 说明          | string            | 项目的描述性文本。
-| eTag                 | 字符串            | 该项目的 ETag。只读。                                                          |
+| eTag                 | string            | 该项目的 ETag。只读。                                                          |
 | lastModifiedBy       | [identitySet][]   | 此项的最后一个修饰符的标识。 只读。
 | lastModifiedDateTime | DateTimeOffset    | 上次修改项目的日期和时间。只读。
 | parentReference      | [itemReference][] | 父信息（如果此项具有父级）。读写。
@@ -110,10 +110,10 @@ ms.locfileid: "29517440"
 | 关系名称 | 类型                           | 说明
 |:------------------|:-------------------------------|:-------------------------------
 | activities        | [itemActivity][] 集合    | 最近发生在此项上的活动的列表。
-| analytics         | [itemAnalytics][] 资源     | 有关此项发生查看活动的分析。
+| 分析         | [itemAnalytics][] 资源     | 有关此项上发生的视图活动的分析。
 | driveItem         | [driveItem][]                  | 对于文档库，**driveItem** 关系将 listItem 显示为 **[driveItem][]**。
 | fields            | [fieldValueSet][]              | 在此列表项上设置的列的值。
-| 版本          | [listItemVersion][]集合 | 早期版本的列表项的列表。
+| versions          | [listItemVersion][]集合 | 列表项的以前版本的列表。
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 转换为其他格式
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8d65b7604c2ec17d4225c9cb887cbbfad2223009
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c3761525d0acbd5613a71519d9ebd56ab8475f03
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526303"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481823"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
@@ -19,7 +19,7 @@ ms.locfileid: "29526303"
 使用此 API 检索特定格式的项的内容。
 并非所有文件都可转换成全部格式。
 
-若要下载其原始格式中的项，请参阅[下载项目的内容](driveitem-get-content.md)。
+若要下载其原始格式的项目, 请参阅[下载项目的内容](driveitem-get-content.md)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -36,19 +36,19 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 ## <a name="query-parameters"></a>查询参数
 
-| 参数      | 类型  | 描述                                                    |
+| 参数      | 类型  | 说明                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
 | _format_  | string | 指定应以何种格式下载项内容。 |
 
 
-以下是**format**参数的有效值：
+以下是**format**参数的有效值:
 
 | 值 | 说明                        | 支持的源扩展名
 |:------|:-----------------------------------|---------------------------------
-| glb   | 将项目转换成 GLB 格式  | 不错，fbx、 obj、 往返流、 stl 3mf
-| html  | 将项目转换为 HTML 格式 | eml md、 msg
-| .jpg   | 将项目转换为 JPG 格式  | 3g 2、 3gp、 3gp2、 3gpp、 3mf、 ai、 arw、 asf、 avi、 营业活动报表、 bash、 bat、 bmp、 c、 cbl、 cmd、 不错、 cpp、 cr2、 crw、 cs、 css、 csv、 当前、 dcm、 dcm30、 词典、 dicm、 dicom、 dng、 doc、 docx、 dwg、 eml、 epi、 eps、 epsf、 epsi、 epub、 erf、 fbx、 fppx、 gif、 glb、 h、 hcpheic，heif，htm，html、 ico、 图标、 java、 jfif、 jpeg、 jpg、 js、 json、 密钥、 日志、 m2ts、 m4a、 m4v、 减价、 md、 mef、 mov、 影片、 mp3、 mp4 （英文）、 mp4v、 mrw、 msg、 mts、 nef、 nrw、 数字、 obj、 odp、 odt、 ogg、 orf、 页面、 全景、 pdf、 pef、 php、 pict、 pl、 往返流、 png、 potpotm，potx，pps，ppsx，ppsxm，ppt、 pptm、 pptx、 ps、 ps1、 psb、 psd、 上一年度，原始，rb、 rtf、 rw1、 rw2，sh，素描，sql、 sr2、 stl、 tif、 tiff、 ts、 txt、 vb、 webm、 wma、 wmv (英文)、 xaml、 xbm、 xcf、 xd、 xml、 xpm、 yaml、 yml
-| PDF   | 将项转换成 PDF 格式。  | doc、 docx、 epub、 eml、 htm、 html、 md、 msg、 odp、 ods、 odt、 pps、 ppsx、 ppt、 pptx、 rtf、 tif、 tiff、 xls、 xlsm、 xlsx
+| glb   | 将项目转换为 GLB 格式  | 酷、fbx、obj、往返和 stl、3mf
+| Html  | 将项目转换为 HTML 格式 | .eml、md、msg
+| .jpg   | 将项目转换为 JPG 格式  | 3g2、3gp、3gp2、3gpp、3mf、ai、arw、asf、avi、bas、bash、bat 和 cbl、bmp、c、、cmd、cr2、、crw、cs、css、csv、当前、dcm、dcm30、home.dic、dicm、dicom、dng、、、、、epi、epsf、epsi、epub、erf、fbx、fppx、glb、gif、、、、heic、heif、htm、html、.ico、icon、java、jfif、jpeg、jpg、js、json、key、log、m2ts、m4a、m4v、markdown、md、mef、mov、电影、mp3、、mp4v、mrw、msg、mts、nef、nrw、、、、、ogg、orf、pages、全景、pdf、pef、php、pict、pl、、.png、、potm、.potx、pps、ppsx、ppsxm、ppt、.pptm、.pptx、ps、ps1、psb、psd、py、raw、rb、rtf、rw1、rw2、sh、素描、sql、、、、xml、sr2、webm、xbm、xcf、、xml、
+| pdf   | 将项目转换为 PDF 格式  | doc、.docx、epub、.eml、htm、html、md、msg、odp、ods、odt、pps、ppsx、ppt、.pptx、rtf、tif、tiff、xls、xlsm、.xlsx
 
 ## <a name="optional-request-headers"></a>可选的请求标头
 

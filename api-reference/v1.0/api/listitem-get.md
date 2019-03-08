@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 从 SharePoint 列表中获取条目
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 1a1117717a0afc0d715da2297d69b0453ef2025e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: e9d747e5405a5aeaf97dfdf7e9a97f6236164a5a
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950541"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480640"
 ---
 # <a name="get-an-item-in-a-list"></a>获取列表中的项
 

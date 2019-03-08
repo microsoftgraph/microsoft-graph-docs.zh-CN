@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
-ms.openlocfilehash: 2efb199fafbf7c60af0e13720ea1b9efd93dc05c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1a38cc3e08917b0d4aa2a8df4943ebc932c937d4
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517517"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480794"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "29517517"
 
 | 属性名称             | 类型    | 说明
 |:--------------------------|:--------|:---------------------------------------
-| **allowMultipleValues**   | boolean | 指示是否可以从源中选择多个值。
+| **allowMultipleValues**   | 布尔 | 指示是否可以从源中选择多个值。
 | **allowUnlimitedLength**  | boolean | 指示列中的值是否可以超过 255 个字符的标准限制。
 | **columnName**            | string  | 查找源列的名称。
 | **listId**                | string  | 查找源列表的唯一标识符。

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
-ms.openlocfilehash: e57e74a0dbcb785d88fb7ccdd3aa3c0e62dc882a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f82242da39ebc13d769a0a3471b60dd4ac9df8dc
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517566"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480920"
 ---
 # <a name="folderview-resource-type"></a>FolderView 资源类型
 

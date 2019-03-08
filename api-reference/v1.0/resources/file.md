@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: File
 localization_priority: Normal
-ms.openlocfilehash: 8a247987447dcd97ac0f42a6a4e743a0c80f6bd5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7478ba064b5193ce7ddcd8685fc571a72d4b0057
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862305"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480403"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "27862305"
 
 | 属性 | 类型                    | 说明                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 哈希   | [哈希](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
+| 哈希   | [希](hashes.md) | 文件二进制内容的哈希值（如果可用）。只读。                                                                                    |
 | mimeType | string                  | 文件的 MIME 类型。这由服务器上的逻辑决定，不能是在上载文件时提供的值。只读。 |
 
 ## <a name="remarks"></a>注解 

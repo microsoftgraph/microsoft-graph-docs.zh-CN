@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/14/2017
-title: 标识
+title: 身份
 localization_priority: Normal
-ms.openlocfilehash: 1ac2aea59ab0d6b09ae613b72fbfbf924240a4a0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1f2d1f5a305698438748ee69f73b4143b8afd8fa
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518791"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481564"
 ---
 # <a name="identity-resource-type"></a>标识资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "29518791"
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName         | 字符串 | 此身份的显示名称。请注意，此信息不一定可查看或是最新的。例如，如果用户更改了其显示名称，API 可能会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/driveitem-delta.md) 时不会显示更改后的值。  |
 | id                  | String | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
-| tenantId            | String | （可选） 的租户的唯一标识。                                                                                                                                                                                                                                                                             |
+| tenantId            | String | 租户的唯一标识 (可选)。                                                                                                                                                                                                                                                                             |
 
 ## <a name="remarks"></a>注解
 

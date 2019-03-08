@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: 009dcf77492d8ec77230413dc628076ef0d557fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0f3acc102762cc1243d8be8362149df1d33717dc
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523391"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482040"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "29523391"
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
 | email          | String                        | 为共享邀请的收件人提供的电子邮件地址。只读。                                          |
 | invitedBy      | [identitySet](identityset.md) | 提供创建了此权限的邀请发送者的相关信息（如果信息可用）。只读。 |
-| signInRequired | 布尔                       | 如果 `true`，邀请接收者需要登录才能访问共享的项目。只读。                     |
+| signInRequired | Boolean                       | 如果 `true`，邀请接收者需要登录才能访问共享的项目。只读。                     |
 
 ## <a name="remarks"></a>注解 
 

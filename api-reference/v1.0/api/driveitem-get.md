@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取文件或文件夹
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 094987d5898dcab02c704bdec8e6261811270341
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 9cff51558f84556fc05c69164ba48809acc12fa8
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987158"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481536"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取驱动器
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 58f0a7f302aa41f286d949a4cbae56d6ff1cd62f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0bea809fc719d90dadbde9282f64ac43df4b91e9
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518168"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481284"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -60,7 +60,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ### <a name="path-parameters"></a>路径参数
 
-| 参数名称 | 值  | 说明                                       |
+| 参数名 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _idOrUserPrincipalName_     | string | 必需。 拥有 OneDrive 的用户对象的标识符。 |
 
@@ -78,7 +78,7 @@ GET /groups/{groupId}/drive
 
 ### <a name="path-parameters"></a>路径参数
 
-| 参数名称 | 值  | 说明                                       |
+| 参数名 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _groupId_      | string | 必需。 拥有文档库的组的标识符。 |
 
@@ -94,7 +94,7 @@ GET /sites/{siteId}/drive
 
 ### <a name="path-parameters"></a>路径参数
 
-| 参数名称 | 值  | 说明                                       |
+| 参数名 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _siteId_       | string | 必需。 包含文档库的站点的标识符。 |
 
@@ -112,7 +112,7 @@ GET /drives/{driveId}
 
 ### <a name="path-parameters"></a>路径参数
 
-| 参数名称 | 值  | 说明                                       |
+| 参数名 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _driveId_      | string | 必需。 请求获取的驱动器的标识符。 |
 

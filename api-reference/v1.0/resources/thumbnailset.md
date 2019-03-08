@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
-ms.openlocfilehash: 779cc9129bbbe660286d2350a76451c9666752d5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: a9d92d84c8495b8c138c34f752700ccd0aad64fd
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888870"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480129"
 ---
 # <a name="thumbnailset-resource-type"></a>ThumbnailSet 资源类型
 

@@ -1,17 +1,17 @@
 ---
-title: 创建安全操作
-description: 创建新的安全操作对象。
+title: 创建 securityAction
+description: 创建新的 securityAction 对象。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: e1958f80219234fcae54220491629a921dd8bcfd
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: c8f9e98e57a351bd17776c77449f7d1ff8d8a897
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366887"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482012"
 ---
-# <a name="create-security-action"></a>创建安全操作
+# <a name="create-securityaction"></a>创建 securityAction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,9 +23,9 @@ ms.locfileid: "30366887"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | SecurityActions |
+| 委派（工作或学校帐户）     | SecurityActions.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | SecurityActions |
+| 应用程序                            | SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

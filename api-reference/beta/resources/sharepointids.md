@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 22bf6b1101be9d60ff350e0b04f7627e2b8fb529
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c9f4c3dc54b9eee6cc1ab24058e3fe238fed89a3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524028"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480598"
 ---
 # <a name="sharepointids-resource-type"></a>SharePointIds 资源类型
 
@@ -51,7 +51,7 @@ ms.locfileid: "29524028"
 | listItemUniqueId | string       | OneDrive for Business 或 SharePoint 网站中的项的唯一标识符 (guid)。
 | siteId           | string       | 项的网站集 (SPSite) 的唯一标识符 (guid)。
 | siteUrl          | string (url) | 包含项的网站的 SharePoint URL。
-| tenantId         | string       | 租户的唯一标识符 (guid)。
+| tenantId         | string       | 租赁的唯一标识符 (guid)。
 | webId            | string       | 项的网站集 (SPWeb) 的唯一标识符 (guid)。
 
 ## <a name="remarks"></a>注解

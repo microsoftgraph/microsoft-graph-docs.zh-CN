@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 使用链接共享文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4b4b86621579b945af01eb1dc517b7525220aae8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3f119ea285b3fa9e59ec8c67d5a7b3fd304fd196
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526219"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480500"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 
@@ -52,7 +52,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 |   名称    |  类型  |                                 说明                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **类型**  | string | 要创建的共享链接的类型。`view`、`edit` 或 `embed`。       |
-| **scope** | string | 可选。 要创建的链接的范围。 `anonymous` 或 `organization`。 |
+| **scope** | 字符串 | 可选。 要创建的链接的范围。 `anonymous` 或 `organization`。 |
 
 
 ### <a name="link-types"></a>链接类型

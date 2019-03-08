@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Photo
 localization_priority: Normal
-ms.openlocfilehash: 4d108e4849595fcb945b676426d3d9c05dfb5ba0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 688bee72464c1e518c60720a7f9ca24da1f7d149
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873001"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480976"
 ---
 # <a name="photo-resource-type"></a>Photo 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "27873001"
 | **cameraMake**          | String         | 相机制造商。只读。
 | **cameraModel**         | String         | 相机型号。只读。
 | **fNumber**             | 双精度数         | 相机的 F-stop 值。只读。
-| **exposureDenominator** | Double         | 相机的曝光时间分数的分母。只读。
+| **exposureDenominator** | 双精度数         | 相机的曝光时间分数的分母。只读。
 | **exposureNumerator**   | Double         | 相机的曝光时间分数的分子。只读。
 | **focalLength**         | 双精度数         | 相机的焦距。只读。
 | **iso**                 | Int32          | 相机的 ISO 值。只读。

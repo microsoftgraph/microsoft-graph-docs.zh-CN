@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
 localization_priority: Normal
-ms.openlocfilehash: d064253cfad141d5879afb52451ca28fa2aeca67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1e10997bd70f97fa91177aee48a6ffcecff40ab5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860877"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480836"
 ---
 # <a name="textcolumn-resource-type"></a>TextColumn 资源类型
 
@@ -34,10 +34,10 @@ ms.locfileid: "27860877"
 
 | 属性名称                   | 类型    | 说明
 |:--------------------------------|:--------|:---------------------------------
-| **allowMultipleLines**          | boolean | 是否支持多行文本。
-| **appendChangesToExistingText** | boolean | 对此列的更新应替换现有文本，还是附加到现有文本。
-| **linesForEditing**             | int32   | 文本框的大小。
-| **maxLength**                   | int32   | 值的最大字符数。
+| **allowMultipleLines**          | 布尔 | 是否支持多行文本。
+| **appendChangesToExistingText** | 布尔 | 对此列的更新应替换现有文本，还是附加到现有文本。
+| **linesForEditing**             | 时会   | 文本框的大小。
+| **maxLength**                   | 时会   | 值的最大字符数。
 | **textType**                    | string  | 要存储的文本类型。 必须为 `plain` 或 `richText`.的其中一个
 
 <!-- {

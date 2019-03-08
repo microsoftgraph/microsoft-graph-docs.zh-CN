@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 下载文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4da719df4d8d3560d3dbd3a03297bdcb18a85447
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c927b3fefabd8a3c7d76db149704453b50343834
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511301"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481585"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>下载 DriveItem 的内容
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: SearchResult
+title: searchresult.xml
 localization_priority: Normal
-ms.openlocfilehash: c50f90787627732843e152a37a469c03340aa370
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 025d18a48105ddb5834040aba5944a9bd408cfbc
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511070"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480381"
 ---
 # <a name="searchresult-resource-type"></a>SearchResult 资源类型
 

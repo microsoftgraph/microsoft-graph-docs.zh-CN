@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
-ms.openlocfilehash: cf1f6c6cafd23a5503d645d13e597a8941019fee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: edd495b62f0ccbd163ec31a2efca70923d0bc8ad
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512876"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480766"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn 资源类型
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: File
 localization_priority: Normal
-ms.openlocfilehash: 5812cffd4f7efbcd368cd576df0e16f4aedb7f1a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 219398ea62b825797479bef0b7a2bf52d014c8c0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528415"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480404"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 
@@ -17,7 +17,7 @@ ms.locfileid: "29528415"
 
 **文件**资源将与文件相关的数据项分组到一个单一结构。
 
-如果 DriveItem 具有一个非 null 文件方面，则该项表示一个文件。除了其他属性，文件还具有内容关系，其中包含文件字节流。
+如果 [**DriveItem**](driveitem.md) 具有一个非 null **文件**方面，则该项表示一个文件。除了其他属性，文件还具有**内容**关系，其中包含文件字节流。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

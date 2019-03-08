@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: 598a781c25dd9271be84eb3dfc16b1e5ff439298
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 679f0139f7ad0e94eab1970cc113268a56722663
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862879"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481879"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition 资源
 
@@ -59,10 +59,10 @@ ms.locfileid: "27862879"
 | **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
 | **description**         | string  | 面向用户的列描述。
 | **displayName**         | string  | 面向用户的列名称。
-| **enforceUniqueValues** | boolean | 如果为 true，则此列不能有两个列表项具有相同的值。
-| **hidden**              | boolean | 指定列是否显示在用户界面中。
+| **enforceUniqueValues** | 布尔 | 如果为 true，则此列不能有两个列表项具有相同的值。
+| **hidden**              | 布尔 | 指定列是否显示在用户界面中。
 | **id**                  | string  | 列的唯一标识符。
-| **indexed**             | boolean | 指定列值是否可用于排序和搜索。
+| **indexed**             | 布尔 | 指定列值是否可用于排序和搜索。
 | **name**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
 | **readOnly**            | bool    | 指定是否可以修改列值。
 | **required**            | boolean | 指定列值是否不可选。
@@ -85,7 +85,7 @@ ms.locfileid: "27862879"
 | **text**          | [textColumn][]          | 此列存储文本值。
 
 注意：这些属性对应于 SharePoint 的 [SPFieldType][] 枚举。
-时的最常见的字段类型表示上方，此 API 仍然缺少一些。
+虽然上面表示的是最常见的字段类型, 但此 API 仍缺少一些。
 在这些情况下，不会填充列类型 facet，列将仅具有其基本属性。
 
 ## <a name="remarks"></a>备注

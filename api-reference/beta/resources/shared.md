@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Shared
+title: 共享的内容
 localization_priority: Normal
-ms.openlocfilehash: 33b12ea8e530fd862619c9c20e77a76989efb619
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 04504b5257dfc49ad14cbee1f645120dc31a3387
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507696"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480297"
 ---
 # <a name="shared-resource-type"></a>Shared 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-共享 资源指示 DriveItem 已与他人共享。此资源包括有关如何共享项的信息。
+**共享** 资源指示 DriveItem 已与他人共享。此资源包括有关如何共享项的信息。
 
 如果 [**DriveItem**](driveitem.md) 具有非 NULL **共享** facet，则该项已共享。
 

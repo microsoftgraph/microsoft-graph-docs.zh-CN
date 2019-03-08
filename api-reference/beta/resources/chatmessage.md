@@ -2,12 +2,12 @@
 title: chatMessage 资源类型
 description: 表示渠道或聊天实体内的单个聊天消息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
 localization_priority: Priority
-ms.openlocfilehash: ef91281eff0cc61f992f659bd33debec03841bb4
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: f61668d8c3892482043dd7531a6699974a964527
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735577"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458657"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -23,6 +23,9 @@ ms.locfileid: "29735577"
 |[获取渠道消息](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | 获取渠道中的单个根消息。|
 |[列出消息回复](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) 集合| 获取渠道中的所有消息回复列表。|
 |[获取消息回复](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| 获取渠道中的单个消息回复。|
+|[在渠道中发送消息](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| 在渠道中创建新的顶级消息。|
+|[在渠道中回复消息](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| 在渠道中回复现有消息。|
+
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

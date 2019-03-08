@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Video
+title: 视频
 localization_priority: Normal
-ms.openlocfilehash: 0e26804991128363780ed4336849486c92fc5a07
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: deba8cccb5f0ab80ca03395ef9f798719d542b8d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889255"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480801"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
 
@@ -53,7 +53,7 @@ ms.locfileid: "27889255"
 | **bitrate**               | Int32  | 视频比特率（以位/秒为单位）。
 | **duration**              | Int64  | 文件时长（以毫秒为单位）。
 | **fourCC**                | string | 视频格式的“四个字符代码”名称。
-| **帧速率**             | double | 视频的帧速率。
+| **frameRate**             | double | 视频的帧速率。
 | **height**                | Int32  | 视频高度（以像素为单位）。
 | **width**                 | Int32  | 视频的宽度，以像素为单位。
 

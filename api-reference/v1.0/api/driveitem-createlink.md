@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 使用链接共享文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e80e27860216227e80780f637daedf0cc8b095b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 94081dc75945e938e8559f9535d2f15832865dd6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923038"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480689"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 
@@ -50,7 +50,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 |   名称    |  类型  |                                 说明                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **类型**  | string | 要创建的共享链接的类型。`view`、`edit` 或 `embed`。       |
-| **scope** | string | 可选。 要创建的链接的范围。 `anonymous` 或 `organization`。 |
+| **scope** | 字符串 | 可选。 要创建的链接的范围。 `anonymous` 或 `organization`。 |
 
 
 ### <a name="link-types"></a>链接类型
@@ -70,8 +70,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 | 值          | 说明
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | 带链接的任何人都访问，而无需登录。 这可能包括您的组织外部的人员。 可能由管理员禁用匿名链接支持。
-| `organization` | 登录到您的组织 （租户） 的任何人都可以使用以下链接获取的访问权限。 仅在 OneDrive for Business 和 SharePoint 中可用。
+| `anonymous`    | 拥有该链接的任何人都可以访问, 而无需登录。 这可能包括组织外部的人员。 管理员可能禁用了匿名链接支持。
+| `organization` | 登录到组织 (租户) 的任何人都可以使用链接获取访问权限。 仅在 OneDrive for business 和 SharePoint 中可用。
 
 
 ## <a name="response"></a>响应

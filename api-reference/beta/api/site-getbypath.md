@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 按路径获取 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c81e025f8cee7acfc4eb9761d2168c200d0d4d5a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 574b6537fd218b2337f63f5966b267aa60f0f458
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508802"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481088"
 ---
-# <a name="get-a-site-resource-by-path"></a>按路径获取 site 资源
+# <a name="get-a-site-resource-by-path"></a>按路径获取网站资源
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ GET /sites/{hostname}:/{relative-path}
 
 ## <a name="response"></a>响应
 
-此方法返回唯一标识符引用的网站的 [网站][] 资源。
+此方法返回唯一标识符引用的网站的 [site][] 资源。
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.site" } -->
 

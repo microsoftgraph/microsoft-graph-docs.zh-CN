@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 检索文件或文件夹的缩略图
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 53401c261a69872d57084b845e391615ef768fcb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 68c1adf275a6a8720aab4df638f69c7162e301a6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525232"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481312"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -73,8 +73,7 @@ GET /me/drive/items/{item-id}/thumbnails
 
 这将返回项的可用 **thumbnailSet** 的数组。 驱动器中的任何项都可以有零个或多个缩略图。
 
-**注意：** 可以使用 _select_ 查询字符串参数，控制在 **ThumbnailSet** 中返回的缩略图尺寸。
-例如，`/thumbnails?select=medium` 仅检索中等大小的缩略图。
+**注意：** 可以使用 _select_ 查询字符串参数，控制在 **ThumbnailSet** 中返回的缩略图尺寸。 例如，`/thumbnails?select=medium` 仅检索中等大小的缩略图。
 
 
 ### <a name="response"></a>响应
@@ -213,12 +212,11 @@ Content-type: application/json
 
 下表定义了可能的缩略图大小。虽然可以请求任意的缩略图大小，但可能存在定义的有并迅速返回值：
 
-| 名称           | 解决方案  | 纵横比​​ | 说明                                                          |
+| 名称           | 解决方案  | 纵横比 | 说明                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
 | `small`        | 96 longest  | 原始大小     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
 | `medium`       | 176 longest | 原始大小     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
-| `large`        | 800 longest
- | Original     | 最长边重设为 800 像素的缩略图。               |
+| `large`        | 800 longest | Original     | 最长边重设为 800 像素的缩略图。               |
 | `smallSquare`  | 96x96       | 方形裁剪  | 小方形缩略图                                               |
 | `mediumSquare` | 176x176     | 方形裁剪  | 小方形缩略图                                               |
 | `largeSquare`  | 800x800     | 方形裁剪  | 大方形缩略图                                               |

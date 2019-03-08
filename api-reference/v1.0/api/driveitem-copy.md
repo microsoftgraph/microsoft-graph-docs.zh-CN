@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 复制文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: db953e3221c03cbf094f84e2e36eb1e5b2d7d24b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a4a20a98badcf96848f5317d5625dc1b05750223
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961986"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481389"
 ---
 # <a name="copy-a-driveitem"></a>复制 DriveItem
 
@@ -81,10 +81,9 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-`Location` 头值提供的服务 URL 将返回复制操作的最新状态。
-可以根据此信息[确定复制操作完成时间](/graph/long-running-actions-overview)。
+`Location` 头值提供的服务 URL 将返回复制操作的最新状态。 可以根据此信息[确定复制操作完成时间](/graph/long-running-actions-overview)。
 
-### <a name="remarks"></a>备注
+### <a name="remarks"></a>注解
 
 在许多情况下，复制操作采用异步执行。API 响应仅指明复制操作获得接受还是遭到拒绝（比如说，由于目标文件名已被其他对象使用而遭到拒绝）。
 

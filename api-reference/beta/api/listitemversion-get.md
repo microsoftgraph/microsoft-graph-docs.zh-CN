@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取列表项的以前版本 - SharePoint API
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a23a8218b2be3ff36d719ee25e6fb0c960c5750f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 88f442178d3e703c4861e3a6fe5746a7f0c5e8b8
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526254"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482103"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>获取 ListItemVersion 资源（预览）
 

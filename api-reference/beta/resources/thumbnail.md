@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 缩略图
 localization_priority: Normal
-ms.openlocfilehash: 05fcb6ec4b0821a4243692aab9c15419eb2f630d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 485714109005415d4a2c98fbbf2befb50ca991d0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529752"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481753"
 ---
 # <a name="thumbnail-resource-type"></a>Thumbnail 资源类型
 

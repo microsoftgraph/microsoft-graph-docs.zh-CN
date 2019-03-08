@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取特殊文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fb7afa57093cf4ab1587654c840098deeceb0c24
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ecf36cdc81373a2c6be2cce8ec1dd8fc6457ef34
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514591"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481298"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
 

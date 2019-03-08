@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
 localization_priority: Normal
-ms.openlocfilehash: 524f25b6b5097197daeb8b130b10ff7513010965
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c69dc7c30bff0f43327ec256af6071e34de6b898
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525001"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481494"
 ---
 # <a name="textcolumn-resource-type"></a>TextColumn 资源类型
 

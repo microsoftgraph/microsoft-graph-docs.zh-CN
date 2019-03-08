@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出文件夹的内容
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: dea7edaa84076693b7217476f9ab2797296a5aef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f6e76ca362d8c200ee73b327cdd11ad4b0137e73
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972479"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481046"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 
@@ -53,7 +53,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## <a name="examples"></a>示例
 
-### <a name="list-children-in-the-root-of-the-current-users-drive"></a>在当前用户驱动器的根目录中列出子项
+### <a name="list-children-in-the-root-of-the-current-users-drive"></a>列出当前用户的驱动器根目录中的子项
 
 若要检索驱动器根目录中的文件，请使用驱动器上的 `root` 关系，然后访问子项关系。
 
@@ -84,8 +84,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将返回目标项的子项集合列表。
-子项集合由 [driveItem][item-resource] 资源组成。
+如果成功，此方法将返回目标项的子项集合列表。 子项集合由 [driveItem][item-resource] 资源组成。
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

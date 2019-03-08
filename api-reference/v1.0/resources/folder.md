@@ -1,19 +1,19 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Folder
 localization_priority: Normal
-ms.openlocfilehash: fab5db026b47aa84f7d097a19782b70eac6b6064
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 2c98cb57bfd860b568b1cba95ed7f6fcf455eea1
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821418"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480815"
 ---
-# <a name="folder-resource-type"></a>Folder 资源类型
+# <a name="folder-resource-type"></a>文件夹资源类型
 
-**文件夹**资源将与文件夹相关的数据项分组到一个单一结构。具有非 null **文件夹**方面的 [**DriveItems**](driveitem.md) 是其他 DriveItems 的容器。
+**文件夹**资源将与文件夹相关的数据项分组到一个单一结构。具有非 null **文件夹**方面的 **[DriveItems](driveitem.md)** 是其他 DriveItems 的容器。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -41,7 +41,7 @@ ms.locfileid: "27821418"
 | **childCount** | Int32          | 此容器包含的直接子项数量。
 | **view**       | [folderView][] | 用于定义文件夹的推荐视图的属性集合。
 
-## <a name="remarks"></a>备注 
+## <a name="remarks"></a>注解 
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem][]。
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
-ms.openlocfilehash: 1f8c842f107b5090eb80bba9e614666f10d4dc0b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 163bbb9595da84628a0e9d8ca449fdafbf4089b3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889689"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480787"
 ---
 # <a name="fieldvalueset-resource"></a>FieldValueSet 资源
 

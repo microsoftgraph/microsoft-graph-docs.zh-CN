@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 同步驱动器的内容
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 17dc3a718260a5a40f1b9b8e778247354085f711
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 907c24a85230124473c6db5c067113e5c7d60ab5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735584"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480486"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 
@@ -50,11 +50,11 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>函数参数
 
-| 参数   | 类型  | 描述                                                                                                                          |
+| 参数   | 类型  | 说明                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | 可选。 如果未指定，枚举层次结构的当前状态。 如果`latest`，返回空与最新的增量令牌的响应。 如果以前的增量令牌，该令牌以来返回新的状态。
+| 令牌  | 字符串 | 可选。 如果未指定，则枚举层次结构的当前状态。 如果为 `latest`，则返回具有最新增量令牌的空响应。 如果为之前的增量令牌，则返回自该令牌起的新状态。
 
-## <a name="optional-query-parameters"></a>可选的查询参数
+## <a name="optional-query-parameters"></a>可选查询参数
 
 此方法支持使用 `$select`、`$expand` 和 `$top` [OData 查询参数](/graph/query-parameters)自定义响应。
 
@@ -208,22 +208,22 @@ Content-type: application/json
 * 项目中的 `parentReference` 属性将不包括**路径**的值。之所以出现这种情况，是因为重命名文件夹不会导致从 **delta** 返回文件夹的任何后代。**使用增量时应始终按 id 跟踪项目**。
 * 在 OneDrive for Business 和 SharePoint 中，仅驱动器内的 `root` 文件夹支持 `delta`，其他文件夹并不支持。
 
-* 下表中所示，则 delta 查询不会返回某些 DriveItem 属性，具体取决于操作和服务类型。
+* Delta 查询不会返回某些 DriveItem 属性，具体取决于操作和服务类型，如下表所示。
 
     **OneDrive for Business**
     
-    | 操作类型 | 省略增量查询的属性 |
+    | 操作类型 | Delta 查询忽略的属性 |
     |---------|----------|
     | 创建/修改 | `ctag`, `lastModifiedBy` |
-    | Delete | `ctag`, `lastModifiedBy`, `name` |
+    | 删除 | `ctag`, `lastModifiedBy`, `name` |
 
 
-    **OneDrive （使用者）**
+    **OneDrive（消费者）**
     
-    | 操作类型 | 省略增量查询的属性 |
+    | 操作类型 | Delta 查询忽略的属性 |
     |---------|----------|
-    | 创建/修改 | 无 |
-    | Delete | `ctag`, `size` |
+    | 创建/修改 | 不适用 |
+    | 删除 | `ctag`, `size` |
 
 ## <a name="error-responses"></a>错误响应
 

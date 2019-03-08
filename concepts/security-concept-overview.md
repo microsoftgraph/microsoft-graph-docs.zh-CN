@@ -4,12 +4,12 @@ description: Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: cde6b57d5b02ab25d6cd86b2db2ce1a7438558e5
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: b4a858182f1fca4ce123af05d271d68fc13088f5
+ms.sourcegitcommit: 2937b0e8983baf1b3d244c72a6ae3a211b17a1bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364547"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30376419"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
@@ -45,19 +45,19 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 深入到相关的安全相关库存（如用户、主机和应用），然后添加来自其他 Microsoft Graph 提供程序（Azure AD、Microsoft Intune、Office 365）的组织上下文，以将业务和安全性上下文结合在一起并改进威胁响应。
 
-## <a name="automate-security-workflows-and-reporting"></a>自动执行安全工作流和报告
+### <a name="automate-security-workflows-and-reporting"></a>自动执行安全工作流和报告
 
 自动执行安全管理、监视和调查，以提高运营效率和缩短响应时间。 通过将 Microsoft Graph 安全功能集成到报表和仪表板中，获得更深入的见解和上下文。
 
-## <a name="get-deep-insights-to-train-security-solutions"></a>深入了解如何针对安全解决方案进行培训
+### <a name="get-deep-insights-to-train-security-solutions"></a>深入了解如何针对安全解决方案进行培训
 
 直观显示在组织内运行的不同安全产品中的数据，以获得更深入的安全见解。 发现从数据中学习并针对安全解决方案进行培训的机会。 该架构提供了多个属性，可以使用你的安全数据来构建丰富的探索性数据集。
 
-## <a name="utilize-your-threat-intelligence-in-microsoft-security-solutions-preview"></a>在 Microsoft 安全解决方案中利用你的威胁智能（预览版）
+### <a name="utilize-your-threat-intelligence-in-microsoft-security-solutions-preview"></a>在 Microsoft 安全解决方案中利用你的威胁智能（预览版）
 
 自动将威胁指标发送到 Microsoft 安全解决方案，以启用 `alert`、`block` 或 `allow` 操作。 直接使用 Microsoft Graph 安全性 API 或利用与领先威胁智能平台的集成。
 
-## <a name="act-quickly-in-response-to-new-threats-preview"></a>迅速采取行动应对新威胁（预览版）
+### <a name="act-quickly-in-response-to-new-threats-preview"></a>迅速采取行动应对新威胁（预览版）
 
 采取快速行动来抵御新威胁，例如采取相关措施来阻止安全工具和工作流中的文件、URL、域或 IP 地址。
 

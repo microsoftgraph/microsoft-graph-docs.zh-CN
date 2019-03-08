@@ -2172,7 +2172,7 @@ items:
       - name: 已导入的 Windows Autopilot 设备标识
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
         items:
-        - name: 列表
+        - name: 列出
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
         - name: 获取
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -6672,6 +6672,240 @@ items:
         href: api/permission-update.md
       - name: 删除权限
         href: api/permission-delete.md
+  - name: 财务
+    href: resources/dynamics-graph-reference.md
+    items:
+    - name: 帐户
+      href: resources/dynamics-account.md
+      items:
+      - name: 获取帐户
+        href: api/dynamics-account-get.md
+    - name: 应付款的老旧帐户
+      href: resources/dynamics-agedaccountspayable.md
+      items:
+      - name: 获取应付款的老旧帐户
+        href: api/dynamics-agedaccountspayable-get.md
+    - name: 应收款的老旧帐户
+      href: resources/dynamics-agedaccountsreceivable.md
+      items:
+      - name: 获取应付款的老旧帐户
+        href: api/dynamics-agedaccountsreceivable-get.md
+    - name: 公司
+      href: resources/dynamics-companies.md
+      items:
+      - name: 获取公司
+        href: api/dynamics-companies-get.md
+    - name: 公司信息
+      href: resources/dynamics-companyinformation.md
+      items:
+      - name: 获取公司信息
+        href: api/dynamics-companyinformation-get.md
+      - name: 更新公司信息
+        href: api/dynamics-companyinformation-update.md
+    - name: 国家/地区
+      href: resources/dynamics-countriesregions.md
+      items:
+      - name: 获取国家/地区
+        href: api/dynamics-countriesregions-get.md
+      - name: 创建国家/地区
+        href: api/dynamics-create-countriesregions.md
+      - name: 删除国家/地区
+        href: api/dynamics-countriesregions-delete.md
+    - name: 货币
+      href: resources/dynamics-currencies.md
+      items:
+      - name: 获取货币
+        href: api/dynamics-currencies-get.md
+      - name: 创建货币
+        href: api/dynamics-create-currencies.md
+      - name: 删除货币
+        href: api/dynamics-currencies-delete.md
+    - name: 客户
+      href: resources/dynamics-customer.md
+      items:
+      - name: 获取客户
+        href: api/dynamics-customer-get.md
+      - name: 创建客户
+        href: api/dynamics-create-customer.md
+      - name: 更新客户
+        href: api/dynamics-customer-update.md
+      - name: 删除客户
+        href: api/dynamics-customer-delete.md
+    - name: 客户付款
+      href: resources/dynamics-customerpayment.md
+      items:
+      - name: 获取客户付款
+        href: api/dynamics-customerpayment-get.md
+      - name: 创建客户付款
+        href: api/dynamics-create-customerpayment.md
+      - name: 更新客户付款
+        href: api/dynamics-customerpayment-update.md
+      - name: 删除客户付款
+        href: api/dynamics-customerpayment-delete.md
+    - name: 客户付款分类账
+      href: resources/dynamics-customerpaymentsjournal.md
+      items:
+      - name: 获取客户付款分类账
+        href: api/dynamics-customerpaymentsjournal-get.md
+      - name: 创建客户付款分类账
+        href: api/dynamics-create-customerpaymentsjournal.md
+      - name: 更新客户付款分类账
+        href: api/dynamics-customerpaymentsjournal-update.md
+      - name: 删除客户付款分类账
+        href: api/dynamics-customerpaymentsjournal-delete.md
+    - name: 维度
+      href: resources/dynamics-dimension.md
+      items:
+      - name: 获取维度
+        href: api/dynamics-dimension-get.md
+    - name: 维度值
+      href: resources/dynamics-dimensionvalue.md
+      items:
+      - name: 获取维度
+        href: api/dynamics-dimensionvalue-get.md
+    - name: 员工
+      href: resources/dynamics-employee.md
+      items:
+      - name: 获取员工
+        href: api/dynamics-employee-get.md
+      - name: 创建员工
+        href: api/dynamics-create-employee.md
+      - name: 更新员工
+        href: api/dynamics-employee-update.md
+      - name: 删除员工
+        href: api/dynamics-employee-delete.md
+    - name: 总分类账条目
+      href: resources/dynamics-generalledgerentries.md
+      items:
+      - name: 获取总分类账条目
+        href: api/dynamics-generalledgerentries-get.md
+    - name: 项目
+      href: resources/dynamics-item.md
+      items:
+      - name: 获取项目
+        href: api/dynamics-item-get.md
+      - name: 创建项目
+        href: api/dynamics-create-item.md
+      - name: 更新项目
+        href: api/dynamics-item-update.md
+      - name: 删除项目
+        href: api/dynamics-item-delete.md
+    - name: 项目类别
+      href: resources/dynamics-itemcategories.md
+      items:
+      - name: 获取项目类别
+        href: api/dynamics-itemcategories-get.md
+      - name: 创建项目类别
+        href: api/dynamics-create-itemcategories.md
+      - name: 更新项目类别
+        href: api/dynamics-itemcategories-update.md
+      - name: 删除项目类别
+        href: api/dynamics-itemcategories-delete.md
+    - name: 分类账
+      href: resources/dynamics-journal.md
+      items:
+      - name: 获取分类账
+        href: api/dynamics-journal-get.md
+      - name: 创建分类账
+        href: api/dynamics-create-journal.md
+      - name: 更新分类账
+        href: api/dynamics-journal-update.md
+      - name: 删除分类账
+        href: api/dynamics-journal-delete.md
+    - name: 分类账行
+      href: resources/dynamics-journalline.md
+      items:
+      - name: 获取分类账行
+        href: api/dynamics-journalline-get.md
+      - name: 创建分类账行
+        href: api/dynamics-create-journalline.md
+      - name: 更新分类账行
+        href: api/dynamics-journalline-update.md
+      - name: 删除分类账行
+        href: api/dynamics-journalline-delete.md
+    - name: 支付方式
+      href: resources/dynamics-paymentmethods.md
+      items:
+      - name: 获取支付方式
+        href: api/dynamics-paymentmethods-get.md
+      - name: 创建支付方式
+        href: api/dynamics-create-paymentmethods.md
+      - name: 更新支付方式
+        href: api/dynamics-paymentmethods-update.md
+      - name: 删除支付方式
+        href: api/dynamics-paymentmethods-delete.md
+    - name: 支付期限
+      href: resources/dynamics-paymentterms.md
+      items:
+      - name: 获取支付期限
+        href: api/dynamics-paymentterms-get.md
+      - name: 创建支付期限
+        href: api/dynamics-create-paymentterms.md
+      - name: 更新支付期限
+        href: api/dynamics-paymentterms-update.md
+      - name: 删除支付期限
+        href: api/dynamics-paymentterms-delete.md
+    - name: 运输方式
+      href: resources/dynamics-shipmentmethods.md
+      items:
+      - name: 获取运输方式
+        href: api/dynamics-shipmentmethods-get.md
+      - name: 创建运输方式
+        href: api/dynamics-create-shipmentmethods.md
+      - name: 更新运输方式
+        href: api/dynamics-shipmentmethods-update.md
+      - name: 删除运输方式
+        href: api/dynamics-shipmentmethods-delete.md
+    - name: 税区
+      href: resources/dynamics-taxarea.md
+      items:
+      - name: 获取税区
+        href: api/dynamics-taxarea-get.md
+      - name: 创建税区
+        href: api/dynamics-create-taxarea.md
+      - name: 更新税区
+        href: api/dynamics-taxarea-update.md
+      - name: 删除税区
+        href: api/dynamics-taxarea-delete.md
+    - name: 税项
+      href: resources/dynamics-taxgroups.md
+      items:
+      - name: 获取税项
+        href: api/dynamics-taxgroups-get.md
+      - name: 创建税项
+        href: api/dynamics-create-taxgroups.md
+      - name: 更新税项
+        href: api/dynamics-taxgroups-update.md
+      - name: 删除税项
+        href: api/dynamics-taxgroups-delete.md
+    - name: 试算表
+      href: resources/dynamics-trialbalance.md
+      items:
+      - name: 获取试算表
+        href: api/dynamics-trialbalance-get.md
+    - name: 测量单位
+      href: resources/dynamics-unitsofmeasure.md
+      items:
+      - name: 获取测量单位
+        href: api/dynamics-unitsofmeasure-get.md
+      - name: 创建测量单位
+        href: api/dynamics-create-unitsofmeasure.md
+      - name: 更新测量单位
+        href: api/dynamics-unitsofmeasure-update.md
+      - name: 删除测量单位
+        href: api/dynamics-unitsofmeasure-delete.md
+    - name: 供应商
+      href: resources/dynamics-vendor.md
+      items:
+      - name: 获取供应商
+        href: api/dynamics-vendor-get.md
+      - name: 创建供应商
+        href: api/dynamics-create-vendor.md
+      - name: 更新供应商
+        href: api/dynamics-vendor-update.md
+      - name: 删除供应商
+        href: api/dynamics-vendor-delete.md
+    displayname: Dynamics, Dynamics 365 Business Central
   - name: 身份和访问控制
     displayName: Azure AD, Microsoft identity platform
     href: resources/azure-ad-overview.md
@@ -7780,9 +8014,20 @@ items:
         href: api/reportroot-getyammergroupsactivitygroupcounts.md
       - name: 获取活动计数
         href: api/reportroot-getyammergroupsactivitycounts.md
-  - name: 安全
+  - name: 安全性
     href: resources/security-api-overview.md
     items:
+    - name: 操作
+      href: resources/securityaction.md
+      items:
+      - name: 列出安全操作
+        href: api/securityactions-list.md
+      - name: 创建安全操作
+        href: api/securityactions-post.md
+      - name: 获取安全操作
+        href: api/securityaction-get.md
+      - name: 取消安全操作
+        href: api/securityaction-cancelsecurityaction.md
     - name: 警报
       href: resources/alert.md
       items:
@@ -7792,6 +8037,8 @@ items:
         href: api/alert-get.md
       - name: 更新警报
         href: api/alert-update.md
+      - name: 更新多个警报
+        href: api/alert-updatealerts.md
     - name: 安全功能分数
       href: resources/securescores.md
       items:
@@ -7804,9 +8051,30 @@ items:
         href: api/securescorecontrolprofiles-list.md
       - name: 更新安全功能控制配置文件
         href: api/securescorecontrolprofiles-update.md
+    - name: 威胁智能指示器
+      href: resources/tiindicator.md
+      items:
+      - name: 列出
+        href: api/tiindicators-list.md
+      - name: 创建
+        href: api/tiindicators-post.md
+      - name: 提交多个
+        href: api/tiindicator-submittiindicators.md
+      - name: 获取
+        href: api/tiindicator-get.md
+      - name: 更新
+        href: api/tiindicator-update.md
+      - name: 更新多个
+        href: api/tiindicator-updatetiindicators.md
+      - name: 删除
+        href: api/tiindicator-delete.md
+      - name: 删除多个
+        href: api/tiindicator-deletetiindicators.md
+      - name: 按外部 ID 删除多项
+        href: api/tiindicator-deletetiindicatorsbyexternalid.md
     - name: 错误
       href: resources/security-error-codes.md
-    displayname: Security API, Microsoft Intelligent Security Graph
+    displayname: Security API, Microsoft Graph Security API
   - name: 网站和列表
     displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
     href: resources/sharepoint.md
@@ -8075,7 +8343,7 @@ items:
         href: api/channel-list-messagereplies.md
       - name: 获取消息回复
         href: api/channel-get-messagereply.md
-      - name: 创建消息
+      - name: 发送消息
         href: api/channel-post-chatmessage.md
       - name: 回复消息
         href: api/channel-post-messagereply.md
@@ -8411,9 +8679,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: cc8fb4bd32656d8e02ef1b7882bab1067176ff11
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f8e523c9607558df8b287e684f4bfef9505ff617
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154346"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458692"

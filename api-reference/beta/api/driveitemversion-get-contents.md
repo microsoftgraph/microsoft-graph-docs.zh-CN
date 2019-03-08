@@ -1,24 +1,24 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 下载早期版本
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 57e280a1ecc371505ceda91596fdeb2d6be1abea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 13ff0148980d7331e713334d9f40df5ade33a259
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528016"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481480"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>下载 DriveItemVersion 资源的内容（预览版）
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索某个特定版本的 [DriveItem](../resources/driveitem.md) 的内容。 
+检索[driveItem](../resources/driveitem.md)的特定版本的内容。 
 
->**注意：** 不支持获取当前版本的内容。 而是使用[driveItem 内容终结点](driveitem-get-content.md)。
+>**注意:** 不支持获取当前版本的内容。 而是使用[driveItem 内容终结点](driveitem-get-content.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -53,7 +53,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 
 ## <a name="example"></a>示例
 
-本示例检索当前用户驱动器中的文件的版本。
+本示例检索当前用户驱动器中的文件版本。
 
 ### <a name="request"></a>请求
 
@@ -79,7 +79,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive 不保留文件以前版本的完整元数据。
 
-当您的应用程序检索列表的文件的可用版本时，提供有关特定版本的可用信息返回[driveItemVersion](../resources/driveitemversion.md)资源。
+当您的应用程序检索文件的可用版本列表时, 将返回[driveItemVersion](../resources/driveitemversion.md)资源, 它提供有关特定版本的可用信息。
 
 <!--
 {

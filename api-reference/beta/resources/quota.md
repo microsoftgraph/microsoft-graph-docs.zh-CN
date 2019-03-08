@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 配额
 localization_priority: Normal
-ms.openlocfilehash: ce07852592317568254217c7e869f1da7f296a2e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7cafff3162c7cdc4435df1cde522b42998398693
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525484"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480304"
 ---
 # <a name="quota-resource-type"></a>配额资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**配额**资源提供有关 [驱动器](drive.md) 资源上的空间限制的详细信息。
+**配额**资源提供有关[驱动器](drive.md)资源上的空间限制的详细信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -49,9 +49,9 @@ ms.locfileid: "29525484"
 | remaining     | Int64  | 达到配额限制之前剩余的总空间，以字节为单位。只读。 |
 | deleted       | Int64  | 回收站中的文件占用的总空间，以字节为单位。只读。      |
 | state         | string | 指示存储空间状态的枚举值。只读。 |
-| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | 有关驱动器的存储配额计划的信息。 仅在个人 OneDrive。|
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | 有关驱动器的存储配额计划的信息。 仅在个人 OneDrive 中。|
 
-### <a name="state-enumeration-values"></a>状态的枚举值
+### <a name="state-enumeration-values"></a>状态枚举值
 
 | 值      | 说明                                                                                                                                                                 |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

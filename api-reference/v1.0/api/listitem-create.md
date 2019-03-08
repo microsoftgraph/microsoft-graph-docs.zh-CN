@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 在 SharePoint 列表中创建新条目
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 9a7b81c17f7d0e56bb076fe3e351e8ba9c68e29f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 48cccb9c4200c80a0f37a04493b4df0f2d4066d0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963365"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481025"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 

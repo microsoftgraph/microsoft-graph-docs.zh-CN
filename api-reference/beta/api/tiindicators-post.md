@@ -4,12 +4,12 @@ description: 创建新的 tiIndicator。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 893af5a56c517cbd4c100cbaa767aa42c70d74e2
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 440515a45b4c530f32dd20fe29497e338b54a6bf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366978"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481438"
 ---
 # <a name="create-threat-intelligence-indicator"></a>创建威胁情报指标
 
@@ -23,9 +23,9 @@ ms.locfileid: "30366978"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | ThreatIndicators application.readwrite.ownedby  |
+| 委派（工作或学校帐户）     | ThreatIndicators.ReadWrite.OwnedBy  |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ThreatIndicators application.readwrite.ownedby |
+| 应用程序                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -43,7 +43,7 @@ POST /security/tiIndicators
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中, 提供包含至少一个可观测对象的[tiIndicator](../resources/tiindicator.md)对象的 JSON 表示形式。
+在请求正文中, 提供包含至少一个[电子邮件](../resources/tiindicator.md#indicator-observables---email)、[文件](../resources/tiindicator.md#indicator-observables---file)或[网络](../resources/tiindicator.md#indicator-observables---network)可观测对象的[tiIndicator](../resources/tiindicator.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 

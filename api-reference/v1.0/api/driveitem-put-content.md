@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 上传小文件
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 30899a94783018580227e0d753169bf391ac081d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 59036213350b3efa5c22fd277328176999bbbc11
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991543"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481508"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 DriveItem 的内容
 
@@ -28,7 +28,7 @@ ms.locfileid: "27991543"
 |委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    |
 |应用程序 | Files.ReadWrite.All、Sites.ReadWrite.All |
 
-## <a name="http-request-to-replace-an-existing-item"></a>HTTP 请求（以替换现有项）
+## <a name="http-request-to-replace-an-existing-item"></a>HTTP 请求（替换现有项）
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,7 +40,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
-## <a name="http-request-to-upload-a-new-file"></a>HTTP 请求（以上传新文件）
+## <a name="http-request-to-upload-a-new-file"></a>HTTP 请求（上传新文件）
 
 <!-- { "blockType": "ignored" } -->
 
@@ -58,11 +58,11 @@ PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在新建文件或更新文件的响应正文中返回 [driveItem](../resources/driveitem.md) 对象。
+如果成功，此方法将在新创建或更新的文件的响应正文中返回 [driveItem](../resources/driveitem.md) 对象。
 
 ## <a name="example-upload-a-new-file"></a>示例（上传新文件）
 
-此示例会将字符串“在此处显示文件的内容。”上传至 登录用户驱动器中名为 FileB.txt 的 FolderA 下。
+此示例将字符串“The contents of the file goes here.”上传到 登录用户的驱动器中 FolderA 下名为 FileB.txt 的文件中。
 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 

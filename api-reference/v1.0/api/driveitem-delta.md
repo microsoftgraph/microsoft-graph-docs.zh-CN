@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 同步驱动器的内容
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: eac24ac60b176547b56d75ba23972e649c025578
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: fc1a5a3823b41cf0729ad6a12f56eed8673bbd58
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735591"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480514"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 

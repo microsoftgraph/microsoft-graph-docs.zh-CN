@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 标识
+title: 身份
 localization_priority: Normal
-ms.openlocfilehash: 0d4e7284da7353e7c6902d7ae1958d41f9eafd8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 103657764b2f7073d553a01cd3794c0abecdf4f4
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816014"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481179"
 ---
 # <a name="identity-resource-type"></a>Identity 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "27816014"
 
 | 属性    | 类型   | 说明                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | 字符串 | 此身份的显示名称。请注意，此信息不一定可查看或是最新的。例如，如果用户更改了其显示名称，API 可能会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/driveitem-delta.md) 时不会显示更改后的值。     |
+| displayName | String | 此身份的显示名称。请注意，此信息不一定可查看或是最新的。例如，如果用户更改了其显示名称，API 可能会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/driveitem-delta.md) 时不会显示更改后的值。     |
 | id          | String | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
 
 ## <a name="remarks"></a>注解

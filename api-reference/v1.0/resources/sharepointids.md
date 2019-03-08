@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d65700806c24b0d82d61d05e1e409292bce010a2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 233c2aa4b8ce67b2382996181c9ba2ab57b9e69c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919160"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480264"
 ---
 # <a name="sharepointids-resource-type"></a>SharePointIds 资源类型
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Root
+title: 方根
 localization_priority: Normal
-ms.openlocfilehash: 4753174531517bd1b194c3023efbc31785695f5b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: af69a3242cb8f4673302a8ee08814b06deeb72e3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862045"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481942"
 ---
 # <a name="root-resource-type"></a>根资源类型
 

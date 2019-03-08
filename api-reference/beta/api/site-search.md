@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 按关键字查找 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 16dae8ceab07c2902d1bdd17fa2b9dc045ffd021
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ee4aa139508e6a523ea1858c6b0598a5b8aaf9b5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524182"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480752"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
@@ -18,7 +18,7 @@ ms.locfileid: "29524182"
 
 在 SharePoint 租户中搜索与所提供的关键字匹配的 [网站][]。
 
-[sites]: ../resources/site.md
+[网站]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 

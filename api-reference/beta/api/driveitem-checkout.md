@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 签出文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2d1ce5220b055020c42116c2e93b039a31d229aa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bd69a02a3c243a86d7f9d05b54eb3fac00eeee88
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518483"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481291"
 ---
 # <a name="check-out-a-driveitem-resource"></a>签出 DriveItem 资源
 

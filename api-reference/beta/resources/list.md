@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: List
+title: 列出
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c1cb3b6e74bd95929c392f4789ab916ae0e5569e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: aafae9e9214f98ade129d46b63f0e7f930ac4a9c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527659"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481515"
 ---
 # <a name="list-resource"></a>List 资源
 

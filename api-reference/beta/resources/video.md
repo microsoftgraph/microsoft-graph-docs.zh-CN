@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Video
+title: 视频
 localization_priority: Normal
-ms.openlocfilehash: db560abc31daecc6064820ef6ef958808ddbc297
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1e780c8392316be1f7fcc59f3818085dc462da29
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508543"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481592"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
 
@@ -17,7 +17,7 @@ ms.locfileid: "29508543"
 
 **视频**资源将与视频相关的数据项分组到一个单一结构。
 
-如果 DriveItem 具有一个非 null 视频方面，则该项表示一个视频文件。通过从文件中提取元数据对视频资源的属性进行填充。
+如果 [**DriveItem**](driveitem.md) 具有一个非 null **视频**方面，则该项表示一个视频文件。通过从文件中提取元数据对**视频**资源的属性进行填充。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

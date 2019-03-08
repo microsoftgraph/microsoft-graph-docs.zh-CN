@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 从 SharePoint 列表中获取条目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 248208542b954c11992908529d4f21a9b7d96673
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 60a413060a3b86264cd1b1ae1a2fbc632c98e7bf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512190"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481242"
 ---
 # <a name="get-an-item-in-a-list"></a>获取列表中的项
 
@@ -18,8 +18,8 @@ ms.locfileid: "29512190"
 
 返回[列表][]中某个[项][]的元数据。
 
-[list]: ../resources/list.md
-[item]: ../resources/listitem.md
+[列表]: ../resources/list.md
+[项]: ../resources/listitem.md
 
 ## <a name="permissions"></a>权限
 

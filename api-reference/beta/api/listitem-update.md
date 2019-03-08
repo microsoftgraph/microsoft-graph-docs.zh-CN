@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 更新 SharePoint 列表中的记录
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e85cf419640ae6055f225b51c08ccaa68a008df7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 84164a1acd54d7492c3c0cee9d7afe6e27c87f09
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512519"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481683"
 ---
 # <a name="update-an-item-in-a-list"></a>更新列表中的项
 

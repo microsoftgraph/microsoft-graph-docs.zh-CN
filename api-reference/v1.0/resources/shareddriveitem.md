@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 6e20df0cf50a7fc2648f5df97fcfe84e83992d99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0d0c5a34d12fe467196c0616befc7376835b632c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826192"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481725"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
@@ -64,8 +64,8 @@ ms.locfileid: "27826192"
 
 | 关系名称 | 类型                         | 说明
 | ------------------|:-----------------------------|:-----------------------------------
-| **项目**         | [**driveItem**][driveItem] 集合 | 共享根中包含的所有 driveItem。 不能枚举该集合。
-| **root**          | [**driveItem**][driveItem]   | 用于访问基础**driveItem**。 弃用-使用`driveItem`相反。
+| **项目**         | [**driveItem**][driveItem] 集合 | 共享根中包含的所有 driveItem。 不能枚举此集合。
+| **root**          | [**driveItem**][driveItem]   | 用于访问基础**driveItem**。 已弃用-- `driveItem`改用。
 
 [driveItem]: driveitem.md
 [list]: list.md

@@ -4,12 +4,12 @@ description: 'Microsoft Teams 中的团队是频道的集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 75afbbd61a1986ae4851326b4daba9264735379e
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 9a5f1968753d3d2412b3885e6a09e94f18731e40
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745543"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458678"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -39,6 +39,7 @@ Microsoft Teams 中的团队是[频道](channel.md)的集合。 频道表示团�
 |[将应用添加到团队](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | 将应用添加（安装）到团队。|
 |[将选项卡添加到频道](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | 将选项卡添加（安装）到团队的频道。|
 |[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [获取频道中的消息](../api/channel-list-messages.md) |
+|[发送渠道消息](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [向渠道发送消息](../api/channel-post-chatmessage.md) |
 
 ## <a name="properties"></a>属性
 
@@ -64,7 +65,7 @@ Microsoft Teams 中的团队是[频道](channel.md)的集合。 频道表示团�
 |apps|[teamsApp](teamsapp.md) 集合| （已过时）此团队中安装的应用。|
 |channels|[channel](channel.md) 集合|与团队相关的频道和消息的集合。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
-|owners|[user](user.md)| 此团队的所有者列表。 |
+|owners|[user](user.md)| 此团队的所有者列表。 目前，在使用应用程序权限创建团队时，必须指定一个所有者。 当使用用户委派的权限时，不能指定任何所有者（当前用户是所有者）。 必须将所有者指定为对象 ID (GUID)，而不是 UPN。 |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 | 
 |template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 请参阅[可用模板](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)。 |
 

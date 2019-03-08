@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出驱动器
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 937b537c4ca71b5cee39f60640ede984f1c5797a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a5d716aef5a47acf3f0752d91a478f2d3299a24
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517132"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480318"
 ---
 # <a name="list-available-drives"></a>列出可用的驱动器
 
@@ -111,7 +111,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 大多数用户将只有一个 Drive 资源。
 

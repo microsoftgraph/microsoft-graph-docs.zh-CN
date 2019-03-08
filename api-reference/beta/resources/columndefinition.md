@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: f4e0c3002068ec7dc8ee280b8e8143af621f178c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ddd6b3c6d3048bf7a6d3ab2dbc8ff7259651ee2f
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528933"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481158"
 ---
 # <a name="columndefinition-resource-type"></a>columnDefinition 资源类型
 
@@ -57,12 +57,12 @@ ms.locfileid: "29528933"
 
 列可以包含各种类型的数据。
 以下属性表示列存储的数据类型以及该数据的其他设置。
-（布尔值、 计算，选择、 货币、 日期时间、 查找、 数量、 personOrGroup、 文本） 与类型相关的属性都是互斥的--列可以仅具有指定两者之一。
+与类型相关的属性 (boolean、计算、choice、currency、dateTime、lookup、number、personOrGroup、text) 是相互排斥的--一个列只能有一个指定的属性。
 
 | 属性名称           | 类型    | 说明
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
-| **说明**         | string  | 面向用户的列描述。
+| **description**         | string  | 面向用户的列描述。
 | **displayName**         | string  | 面向用户的列名称。
 | **enforceUniqueValues** | 布尔 | 如果为 true，则此列不能有两个列表项具有相同的值。
 | **hidden**              | 布尔 | 指定列是否显示在用户界面中。
@@ -77,14 +77,14 @@ ms.locfileid: "29528933"
 | **currency**      | [currencyColumn][]      | 此列存储货币值。
 | **dateTime**      | [dateTimeColumn][]      | 此列存储日期时间值。
 | **defaultValue**  | [defaultColumnValue][]  | 此列的默认值。
-| 地理位置   | [geolocationColumn][]   | 此列存储地理位置。
+| **地理位置**   | [geolocationColumn][]   | 此列存储一个地理位置。
 | **lookup**        | [lookupColumn][]        | 从网站中的另一个源查找此列的数据。
 | **number**        | [numberColumn][]        | 此列存储数值。
 | **personOrGroup** | [personOrGroupColumn][] | 此列存储个人或组值。
 | **text**          | [textColumn][]          | 此列存储文本值。
 
->注意：这些属性对应于 SharePoint 的 **SPFieldType** 枚举。
-时的最常见的字段类型表示上表中，此 beta API 仍然缺少一些。
+>**注意:** 这些属性对应于 SharePoint 的[SPFieldType][]枚举。
+虽然在上表中表示的是最常见的字段类型, 但此 beta API 仍缺少一些。
 在这些情况下，不会填充列类型 facet，列将仅具有其基本属性。
 
 ## <a name="remarks"></a>备注

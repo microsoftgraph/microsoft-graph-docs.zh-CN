@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 删除对项的访问权限
+title: 删除对项目的访问权限
 localization_priority: Normal
-ms.openlocfilehash: ee3072a038552cf7e28a9ad105c7a7d1449fa1ed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3cc4f6a151d2990c5180e02888484e1260704f04
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508354"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480556"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>从文件或文件夹中删除共享权限
 

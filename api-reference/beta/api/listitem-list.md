@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 检索 SharePoint 列表中的项
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c96577782218a96952855147702fc6ecddab6652
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 26d2aa28566a666692e49bc0d07305bf793e21d1
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510398"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481690"
 ---
 # <a name="enumerate-items-in-a-list"></a>枚举列表中的项
 
@@ -18,7 +18,7 @@ ms.locfileid: "29510398"
 
 获取[列表][]中[项][item]的集合。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 [item]: ../resources/listitem.md
 
 ## <a name="permissions"></a>权限

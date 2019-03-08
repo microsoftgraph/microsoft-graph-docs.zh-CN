@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 865fc21691eb37811300caaf675b123d1a544ac0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e9525882b08aaae5500ce23a4b54e95d0b0e0d65
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528128"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481802"
 ---
 # <a name="sitecollection-resource"></a>SiteCollection 资源
 
@@ -45,8 +45,8 @@ ms.locfileid: "29528128"
 | 属性名称        | 类型     | 说明
 |:---------------------|:---------|:---------------------------------------------------
 | **主机名称**         | string   | 网站集的主机名称。只读。
-| **dataLocationCode** | string   | 地理区域代码为此网站集所在的位置。 只读。
-| **根**             | [root][] | 如果存在此参数，指示这是 SharePoint 中的根网站集。 只读。
+| **dataLocationCode** | string   | 此网站集所在位置的地理区域代码。 只读。
+| **根**             | [root][] | 如果存在, 则表示这是 SharePoint 中的根网站集。 只读。
 
 [root]: root.md
 

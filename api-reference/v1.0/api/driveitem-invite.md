@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 发送访问项的邀请
+title: 发送邀请以访问项目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 23e58c063e31f8ad68ac887a4fd1d2cd4dcd5274
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f7d3a974143b738b966a8953848f4837c16cd6c8
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976959"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480738"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
-为**DriveItem**发送共享邀请。
-共享邀请提供给收件人的权限，并 （可选） 将其发送电子邮件与[共享链接][]。
+发送 **DriveItem** 的共享邀请。
+共享邀请向收件人提供权限, 并根据需要向其发送带有[共享链接][]的电子邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -61,14 +61,14 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | 参数        | 类型                           | 说明
 |:-----------------|:-------------------------------|:-------------------------
 | recipients       | Collection([DriveRecipient][]) | 将获得访问权限和共享邀请的收件人的集合。
-| message          | 字符串                         | 共享邀请中包含的纯文本格式的邮件。最大长度为 2000 个字符。
-| requireSignIn    | Boolean                        | 指定是否需要邀请的收件人来登录以查看共享的项目。
-| sendInvitation   | Boolean                        | 如果为 true，则[共享链接][]发送给收件人。 否则，直接而发送通知不授予权限。
-| roles            | 集合（字符串）             | 指定要授予共享邀请的收件人的角色。
+| message          | String                         | 共享邀请中包含的纯文本格式的邮件。最大长度为 2000 个字符。
+| requireSignIn    | Boolean                        | 指定是否需要邀请收件人登录才能查看共享项目。
+| sendInvitation   | Boolean                        | 如果为 true, 则会向收件人发送[共享链接][]。 否则, 将直接授予权限, 而不发送通知。
+| roles            | 集合（字符串）             | 指定要向共享邀请的收件人授予的角色。
 
 ## <a name="example"></a>示例
 
-本示例将对电子邮件地址"ryan@contoso.com"一条消息的用户共享邀请发送关于合作完成了文件。
+本示例向电子邮件地址为 "ryan@contoso.com" 的用户发送共享邀请, 并发送一封邮件, 其中包含有关正在合作的文件的消息。
 此邀请授予 Ryan 对该文件的读写访问权限。
 
 ### <a name="http-request"></a>HTTP 请求
@@ -124,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>注解
 
 * 具有 `personal` **driveType**（OneDrive 个人版）的[驱动器](../resources/drive.md)无法创建或修改根 DriveItem 上的权限。
 * 如需可用角色的列表，请参阅[角色枚举](../resources/permission.md#roles-enumeration)。

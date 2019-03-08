@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 复制文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 378f47d380e6d144791d3551a398d1dcd0886295
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cdb22395cfde6820eb5450f39bd1e3408a4f82b2
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517552"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481900"
 ---
 # <a name="copy-a-driveitem"></a>复制 DriveItem
 
@@ -83,8 +83,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-`Location` 头值提供的服务 URL 将返回复制操作的最新状态。
-可以根据此信息[确定复制操作完成时间](/graph/long-running-actions-overview)。
+`Location` 头值提供的服务 URL 将返回复制操作的最新状态。 可以根据此信息[确定复制操作完成时间](/graph/long-running-actions-overview)。
 
 ### <a name="remarks"></a>注解
 

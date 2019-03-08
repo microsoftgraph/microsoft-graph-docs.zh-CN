@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出与我共享的文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5008843a90e405cd1d775286a86e47e6ea62769e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06c6607de9fa36fd8b1dedc3bf5ded3cfad1228e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524273"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481011"
 ---
-# <a name="list-items-shared-with-the-signed-in-user"></a>列出与已登录用户共享的项目
+# <a name="list-items-shared-with-the-signed-in-user"></a>列出与已登录用户共享的项
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,8 +28,8 @@ ms.locfileid: "29524273"
 |委派（个人 Microsoft 帐户） | Files.Read.All、Files.ReadWrite.All    |
 |应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
 
-**注意：** 虽然 /sharedWithMe 请求可通过 Files.Read 或 Files.ReadWrite 权限成功发出，但一些属性可能会丢失。
-此外，如果没有 **All** 权限之一，则无法访问从此 API 返回的共享项。
+**注意:** /sharedWithMe 请求将成功, 同时读取或读取文件。读写权限, 某些属性可能丢失。
+此外，如果没有 **All** 权限之一，无法访问从此 API 返回的共享项。
 
 ## <a name="http-request"></a>HTTP 请求
 

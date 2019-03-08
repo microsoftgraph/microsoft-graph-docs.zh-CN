@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 配额
 localization_priority: Normal
-ms.openlocfilehash: 58969adb525736b8a665844a5fa4b48ae4ca1831
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: a9a5da54aeef3c9666c22c7a2f9bc0d92fc7a405
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848410"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481452"
 ---
 # <a name="quota-resource-type"></a>Quota 资源类型
 

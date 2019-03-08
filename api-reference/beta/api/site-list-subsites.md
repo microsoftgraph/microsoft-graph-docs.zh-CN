@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出 SharePoint 网站的子网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 93cfbe89804425eb49f21e6c0d178004c28ef3ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f5037373ab914dabe33f11892f90a3bcfad77d5b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513310"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480108"
 ---
 # <a name="enumerate-subsites"></a>枚举子网站
 

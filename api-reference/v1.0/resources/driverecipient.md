@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bd1b4466a361af031b9c8e11be63acb46044351a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4792a943598911cc2f0b8329016469ca157bda58
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983378"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480325"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient 资源
 
@@ -35,7 +35,7 @@ ms.locfileid: "27983378"
 
 | 属性名称 | 类型   | 说明                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | String | 收件人的电子邮件地址，前提是收件人有关联的电子邮件地址。                  |
+| email         | 字符串 | 收件人的电子邮件地址，前提是收件人有关联的电子邮件地址。                  |
 | 别名         | String | Domain 对象的别名，适于电子邮件地址不可用的情况（例如，安全组）。 |
 | objectId      | String | 目录中收件人的唯一标识符。                                               |
 

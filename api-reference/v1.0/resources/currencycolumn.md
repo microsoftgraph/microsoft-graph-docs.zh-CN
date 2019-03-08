@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CurrencyColumn
 localization_priority: Normal
-ms.openlocfilehash: e4ee085882cadafc0102ee31e17841978cef7822
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 065ac52a4d5216a4b3e62df892c8fe0a07a82ed0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836454"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481529"
 ---
 # <a name="currencycolumn-resource-type"></a>CurrencyColumn 资源类型
 

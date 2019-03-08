@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取 SharePoint 列表记录的以前版本
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2b79205da64a254c1d09cdaff8ae1ba153ec9ce9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b8a9078bb0e56f3c3068a92bab9835f2a4964f79
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528835"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481340"
 ---
 # <a name="listing-versions-of-a-listitem-preview"></a>列出 ListItem 的版本（预览）
 

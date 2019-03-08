@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 驱动器
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 220f68d2888b29100fdcbb671b5085d3606ec3c2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 82a14f6462604b732119b90d037b2fab711df5af
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641867"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480990"
 ---
 # <a name="drive-resource-type"></a>驱动器资源类型
 

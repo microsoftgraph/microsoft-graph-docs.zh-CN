@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: daee18357e3f19f646a816070ca41a660f7b7ed3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ae22b0a36acb46c2a9d872f224c0a6d4c567782c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810946"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481130"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem 资源类型
 
@@ -55,7 +55,7 @@ ms.locfileid: "27810946"
 | id                   | string            | 驱动器唯一标识符。只读。                                         |
 | createdBy            | [identitySet][]   | 识别创建项目的用户、设备或应用程序。只读。        |
 | createdDateTime      | dateTimeOffset    | 创建项的日期和时间。只读。                                             |
-| 说明          | 字符串            | 提供用户可见项目的说明。 可选。                             |
+| description          | String            | 提供项的用户可见的说明。 可选。                             |
 | eTag                 | string            | 该项目的 ETag。只读。                                                          |
 | lastModifiedBy       | [identitySet][]   | 上次修改项目的用户、设备和应用程序的标识。只读。 |
 | lastModifiedDateTime | dateTimeOffset    | 上次修改项目的日期和时间。只读。                                   |
@@ -63,16 +63,16 @@ ms.locfileid: "27810946"
 | parentReference      | [itemReference][] | 父信息（如果此项具有父级）。读写。                              |
 | WebUrl               | string (url)      | 在浏览器中显示此资源的 URL。只读。                              |
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
-| 关系       | 类型     | Description
+| 关系       | 类型     | 说明
 |:-------------------|:---------|:---------------------------------------------
-| createdByUser      | [用户][] | 创建了项的用户的身份。 只读。
+| createdByUser      | [user][] | 创建了项的用户的身份。 只读。
 | lastModifiedByUser | [用户][] | 上次修改项的用户的身份。 只读。
 
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[用户]: user.md
+[user]: user.md
 
 ## <a name="remarks"></a>注解
 
