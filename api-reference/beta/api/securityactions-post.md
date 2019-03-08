@@ -1,33 +1,33 @@
 ---
-title: 创建安全操作
-description: 创建新的安全操作对象。
+title: 创建 securityAction
+description: 创建新的 securityAction 对象。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: e1958f80219234fcae54220491629a921dd8bcfd
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: c8f9e98e57a351bd17776c77449f7d1ff8d8a897
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366887"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482012"
 ---
-# <a name="create-security-action"></a><span data-ttu-id="d9045-103">创建安全操作</span><span class="sxs-lookup"><span data-stu-id="d9045-103">Create security action</span></span>
+# <a name="create-securityaction"></a><span data-ttu-id="e639b-103">创建 securityAction</span><span class="sxs-lookup"><span data-stu-id="e639b-103">Create securityAction</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d9045-104">创建新的[securityAction](../resources/securityaction.md)对象。</span><span class="sxs-lookup"><span data-stu-id="d9045-104">Create a new [securityAction](../resources/securityaction.md) object.</span></span>
+<span data-ttu-id="e639b-104">创建新的[securityAction](../resources/securityaction.md)对象。</span><span class="sxs-lookup"><span data-stu-id="e639b-104">Create a new [securityAction](../resources/securityaction.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d9045-105">权限</span><span class="sxs-lookup"><span data-stu-id="d9045-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e639b-105">权限</span><span class="sxs-lookup"><span data-stu-id="e639b-105">Permissions</span></span>
 
-<span data-ttu-id="d9045-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d9045-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e639b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e639b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d9045-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d9045-108">Permission type</span></span>                        | <span data-ttu-id="d9045-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d9045-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e639b-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e639b-108">Permission type</span></span>                        | <span data-ttu-id="e639b-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e639b-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="d9045-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d9045-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="d9045-111">SecurityActions</span><span class="sxs-lookup"><span data-stu-id="d9045-111">SecurityActions.ReadWrite.All</span></span> |
-| <span data-ttu-id="d9045-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d9045-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d9045-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="d9045-113">Not supported.</span></span> |
-| <span data-ttu-id="d9045-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d9045-114">Application</span></span>                            | <span data-ttu-id="d9045-115">SecurityActions</span><span class="sxs-lookup"><span data-stu-id="d9045-115">SecurityActions.ReadWrite.All</span></span> |
+| <span data-ttu-id="e639b-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e639b-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e639b-111">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e639b-111">SecurityActions.ReadWrite.All</span></span> |
+| <span data-ttu-id="e639b-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e639b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e639b-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="e639b-113">Not supported.</span></span> |
+| <span data-ttu-id="e639b-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="e639b-114">Application</span></span>                            | <span data-ttu-id="e639b-115">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e639b-115">SecurityActions.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d9045-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d9045-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e639b-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e639b-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,25 +35,25 @@ ms.locfileid: "30366887"
 POST /security/securityActions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d9045-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="d9045-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e639b-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="e639b-117">Request headers</span></span>
 
-| <span data-ttu-id="d9045-118">名称</span><span class="sxs-lookup"><span data-stu-id="d9045-118">Name</span></span>          | <span data-ttu-id="d9045-119">说明</span><span class="sxs-lookup"><span data-stu-id="d9045-119">Description</span></span>   |
+| <span data-ttu-id="e639b-118">名称</span><span class="sxs-lookup"><span data-stu-id="e639b-118">Name</span></span>          | <span data-ttu-id="e639b-119">说明</span><span class="sxs-lookup"><span data-stu-id="e639b-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="d9045-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d9045-120">Authorization</span></span> | <span data-ttu-id="d9045-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="d9045-121">Bearer {code}</span></span> |
+| <span data-ttu-id="e639b-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e639b-120">Authorization</span></span> | <span data-ttu-id="e639b-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="e639b-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d9045-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="d9045-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e639b-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="e639b-122">Request body</span></span>
 
-<span data-ttu-id="d9045-123">在请求正文中, 提供[securityAction](../resources/securityaction.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d9045-123">In the request body, supply a JSON representation of a [securityAction](../resources/securityaction.md) object.</span></span>
+<span data-ttu-id="e639b-123">在请求正文中, 提供[securityAction](../resources/securityaction.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e639b-123">In the request body, supply a JSON representation of a [securityAction](../resources/securityaction.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d9045-124">响应</span><span class="sxs-lookup"><span data-stu-id="d9045-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e639b-124">响应</span><span class="sxs-lookup"><span data-stu-id="e639b-124">Response</span></span>
 
-<span data-ttu-id="d9045-125">如果成功, 此方法在`201 Created`响应正文中返回响应代码和[securityAction](../resources/securityaction.md)对象。</span><span class="sxs-lookup"><span data-stu-id="d9045-125">If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.</span></span>
+<span data-ttu-id="e639b-125">如果成功, 此方法在`201 Created`响应正文中返回响应代码和[securityAction](../resources/securityaction.md)对象。</span><span class="sxs-lookup"><span data-stu-id="e639b-125">If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="d9045-126">示例</span><span class="sxs-lookup"><span data-stu-id="d9045-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e639b-126">示例</span><span class="sxs-lookup"><span data-stu-id="e639b-126">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="d9045-127">请求</span><span class="sxs-lookup"><span data-stu-id="d9045-127">Request</span></span>
+### <a name="request"></a><span data-ttu-id="e639b-127">请求</span><span class="sxs-lookup"><span data-stu-id="e639b-127">Request</span></span>
 
-<span data-ttu-id="d9045-128">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="d9045-128">The following is an example of the request.</span></span>
+<span data-ttu-id="e639b-128">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="e639b-128">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_securityaction_from_security"
@@ -79,12 +79,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="d9045-129">响应</span><span class="sxs-lookup"><span data-stu-id="d9045-129">Response</span></span>
+### <a name="response"></a><span data-ttu-id="e639b-129">响应</span><span class="sxs-lookup"><span data-stu-id="e639b-129">Response</span></span>
 
-<span data-ttu-id="d9045-130">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="d9045-130">The following is an example of the response.</span></span>
+<span data-ttu-id="e639b-130">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="e639b-130">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d9045-131">为了提高可读性, 可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="d9045-131">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d9045-132">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="d9045-132">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="e639b-131">为了提高可读性, 可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="e639b-131">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="e639b-132">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="e639b-132">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

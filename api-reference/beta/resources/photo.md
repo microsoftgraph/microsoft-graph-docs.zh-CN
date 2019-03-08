@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Photo
 localization_priority: Normal
-ms.openlocfilehash: 91b893fe3d6c78e3c3e16cbc41c7d7543b08f8d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d14777b0f39983d6ccf83ae387896c6587635e66
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527624"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480913"
 ---
-# <a name="photo-resource-type"></a><span data-ttu-id="b53de-102">Photo 资源类型</span><span class="sxs-lookup"><span data-stu-id="b53de-102">Photo resource type</span></span>
+# <a name="photo-resource-type"></a><span data-ttu-id="528c5-102">Photo 资源类型</span><span class="sxs-lookup"><span data-stu-id="528c5-102">Photo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b53de-103">**照片**资源提供 [driveItem](driveitem.md) 中的照片和相机属性，例如 EXIF 元数据。</span><span class="sxs-lookup"><span data-stu-id="b53de-103">The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).</span></span>
+<span data-ttu-id="528c5-103">**照片**资源提供 [driveItem](driveitem.md) 中的照片和相机属性，例如 EXIF 元数据。</span><span class="sxs-lookup"><span data-stu-id="528c5-103">The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b53de-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="b53de-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="528c5-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="528c5-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,23 +37,23 @@ ms.locfileid: "29527624"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="b53de-105">属性</span><span class="sxs-lookup"><span data-stu-id="b53de-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="528c5-105">属性</span><span class="sxs-lookup"><span data-stu-id="528c5-105">Properties</span></span>
 
-| <span data-ttu-id="b53de-106">属性</span><span class="sxs-lookup"><span data-stu-id="b53de-106">Property</span></span>                | <span data-ttu-id="b53de-107">类型</span><span class="sxs-lookup"><span data-stu-id="b53de-107">Type</span></span>           | <span data-ttu-id="b53de-108">说明</span><span class="sxs-lookup"><span data-stu-id="b53de-108">Description</span></span>
+| <span data-ttu-id="528c5-106">属性</span><span class="sxs-lookup"><span data-stu-id="528c5-106">Property</span></span>                | <span data-ttu-id="528c5-107">类型</span><span class="sxs-lookup"><span data-stu-id="528c5-107">Type</span></span>           | <span data-ttu-id="528c5-108">说明</span><span class="sxs-lookup"><span data-stu-id="528c5-108">Description</span></span>
 |:------------------------|:---------------|:----------------------------------
-| <span data-ttu-id="b53de-109">**takenDateTime**</span><span class="sxs-lookup"><span data-stu-id="b53de-109">**takenDateTime**</span></span>       | <span data-ttu-id="b53de-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b53de-110">DateTimeOffset</span></span> | <span data-ttu-id="b53de-p101">表示照片拍摄的时间和日期。只读。</span><span class="sxs-lookup"><span data-stu-id="b53de-p101">Represents the date and time the photo was taken. Read-only.</span></span>
-| <span data-ttu-id="b53de-113">**cameraMake**</span><span class="sxs-lookup"><span data-stu-id="b53de-113">**cameraMake**</span></span>          | <span data-ttu-id="b53de-114">String</span><span class="sxs-lookup"><span data-stu-id="b53de-114">String</span></span>         | <span data-ttu-id="b53de-p102">相机制造商。只读。</span><span class="sxs-lookup"><span data-stu-id="b53de-p102">Camera manufacturer. Read-only.</span></span>
-| <span data-ttu-id="b53de-117">**cameraModel**</span><span class="sxs-lookup"><span data-stu-id="b53de-117">**cameraModel**</span></span>         | <span data-ttu-id="b53de-118">String</span><span class="sxs-lookup"><span data-stu-id="b53de-118">String</span></span>         | <span data-ttu-id="b53de-p103">相机型号。只读。</span><span class="sxs-lookup"><span data-stu-id="b53de-p103">Camera model. Read-only.</span></span>
-| <span data-ttu-id="b53de-121">**fNumber**</span><span class="sxs-lookup"><span data-stu-id="b53de-121">**fNumber**</span></span>             | <span data-ttu-id="b53de-122">双精度数</span><span class="sxs-lookup"><span data-stu-id="b53de-122">Double</span></span>         | <span data-ttu-id="b53de-p104">相机的 F-stop 值。只读。</span><span class="sxs-lookup"><span data-stu-id="b53de-p104">The F-stop value from the camera. Read-only.</span></span>
-| <span data-ttu-id="b53de-125">**exposureDenominator**</span><span class="sxs-lookup"><span data-stu-id="b53de-125">**exposureDenominator**</span></span> | <span data-ttu-id="b53de-126">Double</span><span class="sxs-lookup"><span data-stu-id="b53de-126">Double</span></span>         | <span data-ttu-id="b53de-p105">相机的曝光时间分数的分母。只读。</span><span class="sxs-lookup"><span data-stu-id="b53de-p105">The denominator for the exposure time fraction from the camera. Read-only.</span></span>
-| <span data-ttu-id="b53de-129">**exposureNumerator**</span><span class="sxs-lookup"><span data-stu-id="b53de-129">**exposureNumerator**</span></span>   | <span data-ttu-id="b53de-130">Double</span><span class="sxs-lookup"><span data-stu-id="b53de-130">Double</span></span>         | <span data-ttu-id="b53de-p106">相机的曝光时间分数的分子。只读。</span><span class="sxs-lookup"><span data-stu-id="b53de-p106">The numerator for the exposure time fraction from the camera. Read-only.</span></span>
-| <span data-ttu-id="b53de-133">**focalLength**</span><span class="sxs-lookup"><span data-stu-id="b53de-133">**focalLength**</span></span>         | <span data-ttu-id="b53de-134">双精度数</span><span class="sxs-lookup"><span data-stu-id="b53de-134">Double</span></span>         | <span data-ttu-id="b53de-p107">相机的焦距。只读。</span><span class="sxs-lookup"><span data-stu-id="b53de-p107">The focal length from the camera. Read-only.</span></span>
-| <span data-ttu-id="b53de-137">**iso**</span><span class="sxs-lookup"><span data-stu-id="b53de-137">**iso**</span></span>                 | <span data-ttu-id="b53de-138">Int64</span><span class="sxs-lookup"><span data-stu-id="b53de-138">Int64</span></span>          | <span data-ttu-id="b53de-p108">相机的 ISO 值。只读。</span><span class="sxs-lookup"><span data-stu-id="b53de-p108">The ISO value from the camera. Read-only.</span></span>
+| <span data-ttu-id="528c5-109">**takenDateTime**</span><span class="sxs-lookup"><span data-stu-id="528c5-109">**takenDateTime**</span></span>       | <span data-ttu-id="528c5-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="528c5-110">DateTimeOffset</span></span> | <span data-ttu-id="528c5-p101">表示照片拍摄的时间和日期。只读。</span><span class="sxs-lookup"><span data-stu-id="528c5-p101">Represents the date and time the photo was taken. Read-only.</span></span>
+| <span data-ttu-id="528c5-113">**cameraMake**</span><span class="sxs-lookup"><span data-stu-id="528c5-113">**cameraMake**</span></span>          | <span data-ttu-id="528c5-114">String</span><span class="sxs-lookup"><span data-stu-id="528c5-114">String</span></span>         | <span data-ttu-id="528c5-p102">相机制造商。只读。</span><span class="sxs-lookup"><span data-stu-id="528c5-p102">Camera manufacturer. Read-only.</span></span>
+| <span data-ttu-id="528c5-117">**cameraModel**</span><span class="sxs-lookup"><span data-stu-id="528c5-117">**cameraModel**</span></span>         | <span data-ttu-id="528c5-118">String</span><span class="sxs-lookup"><span data-stu-id="528c5-118">String</span></span>         | <span data-ttu-id="528c5-p103">相机型号。只读。</span><span class="sxs-lookup"><span data-stu-id="528c5-p103">Camera model. Read-only.</span></span>
+| <span data-ttu-id="528c5-121">**fNumber**</span><span class="sxs-lookup"><span data-stu-id="528c5-121">**fNumber**</span></span>             | <span data-ttu-id="528c5-122">双精度数</span><span class="sxs-lookup"><span data-stu-id="528c5-122">Double</span></span>         | <span data-ttu-id="528c5-p104">相机的 F-stop 值。只读。</span><span class="sxs-lookup"><span data-stu-id="528c5-p104">The F-stop value from the camera. Read-only.</span></span>
+| <span data-ttu-id="528c5-125">**exposureDenominator**</span><span class="sxs-lookup"><span data-stu-id="528c5-125">**exposureDenominator**</span></span> | <span data-ttu-id="528c5-126">双精度数</span><span class="sxs-lookup"><span data-stu-id="528c5-126">Double</span></span>         | <span data-ttu-id="528c5-p105">相机的曝光时间分数的分母。只读。</span><span class="sxs-lookup"><span data-stu-id="528c5-p105">The denominator for the exposure time fraction from the camera. Read-only.</span></span>
+| <span data-ttu-id="528c5-129">**exposureNumerator**</span><span class="sxs-lookup"><span data-stu-id="528c5-129">**exposureNumerator**</span></span>   | <span data-ttu-id="528c5-130">Double</span><span class="sxs-lookup"><span data-stu-id="528c5-130">Double</span></span>         | <span data-ttu-id="528c5-p106">相机的曝光时间分数的分子。只读。</span><span class="sxs-lookup"><span data-stu-id="528c5-p106">The numerator for the exposure time fraction from the camera. Read-only.</span></span>
+| <span data-ttu-id="528c5-133">**focalLength**</span><span class="sxs-lookup"><span data-stu-id="528c5-133">**focalLength**</span></span>         | <span data-ttu-id="528c5-134">双精度数</span><span class="sxs-lookup"><span data-stu-id="528c5-134">Double</span></span>         | <span data-ttu-id="528c5-p107">相机的焦距。只读。</span><span class="sxs-lookup"><span data-stu-id="528c5-p107">The focal length from the camera. Read-only.</span></span>
+| <span data-ttu-id="528c5-137">**iso**</span><span class="sxs-lookup"><span data-stu-id="528c5-137">**iso**</span></span>                 | <span data-ttu-id="528c5-138">Int64</span><span class="sxs-lookup"><span data-stu-id="528c5-138">Int64</span></span>          | <span data-ttu-id="528c5-p108">相机的 ISO 值。只读。</span><span class="sxs-lookup"><span data-stu-id="528c5-p108">The ISO value from the camera. Read-only.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="b53de-141">注解</span><span class="sxs-lookup"><span data-stu-id="b53de-141">Remarks</span></span>
-<span data-ttu-id="b53de-142">OneDrive for Business 和 SharePoint 仅返回 **takenDateTime** 属性。</span><span class="sxs-lookup"><span data-stu-id="b53de-142">OneDrive for Business and SharePoint only return the **takenDateTime** property.</span></span>
+## <a name="remarks"></a><span data-ttu-id="528c5-141">注解</span><span class="sxs-lookup"><span data-stu-id="528c5-141">Remarks</span></span>
+<span data-ttu-id="528c5-142">OneDrive for Business 和 SharePoint 仅返回 **takenDateTime** 属性。</span><span class="sxs-lookup"><span data-stu-id="528c5-142">OneDrive for Business and SharePoint only return the **takenDateTime** property.</span></span>
 
-<span data-ttu-id="b53de-143">有关 DriveItem 方面的详细信息，请参阅 [DriveItem](driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="b53de-143">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="528c5-143">有关 DriveItem 方面的详细信息，请参阅 [DriveItem](driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="528c5-143">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 <!--
 {
   "type": "#page.annotation",

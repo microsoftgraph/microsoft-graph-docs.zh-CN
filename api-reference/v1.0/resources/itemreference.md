@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
-ms.openlocfilehash: 068e6420344cfa384972abe31157b3306f5b2a4f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5c60ee4a0ac8538d71d37403e6f790e32d6a74cf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862214"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480388"
 ---
-# <a name="itemreference-resource-type"></a><span data-ttu-id="2fe70-102">ItemReference 资源类型</span><span class="sxs-lookup"><span data-stu-id="2fe70-102">ItemReference resource type</span></span>
+# <a name="itemreference-resource-type"></a><span data-ttu-id="6acfc-102">ItemReference 资源类型</span><span class="sxs-lookup"><span data-stu-id="6acfc-102">ItemReference resource type</span></span>
 
-<span data-ttu-id="2fe70-103">**ItemReference** 资源提供了通过 API 查找 [DriveItem](driveitem.md) 的必要信息。</span><span class="sxs-lookup"><span data-stu-id="2fe70-103">The **ItemReference** resource provides information necessary to address a [DriveItem](driveitem.md) via the API.</span></span>
+<span data-ttu-id="6acfc-103">**ItemReference** 资源提供了通过 API 查找 [DriveItem](driveitem.md) 的必要信息。</span><span class="sxs-lookup"><span data-stu-id="6acfc-103">The **ItemReference** resource provides information necessary to address a [DriveItem](driveitem.md) via the API.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2fe70-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2fe70-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6acfc-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6acfc-104">JSON representation</span></span>
 
-<span data-ttu-id="2fe70-105">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2fe70-105">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="6acfc-105">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6acfc-105">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,33 +37,33 @@ ms.locfileid: "27862214"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="2fe70-106">属性</span><span class="sxs-lookup"><span data-stu-id="2fe70-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6acfc-106">属性</span><span class="sxs-lookup"><span data-stu-id="6acfc-106">Properties</span></span>
 
-| <span data-ttu-id="2fe70-107">属性</span><span class="sxs-lookup"><span data-stu-id="2fe70-107">Property</span></span>      | <span data-ttu-id="2fe70-108">类型</span><span class="sxs-lookup"><span data-stu-id="2fe70-108">Type</span></span>              | <span data-ttu-id="2fe70-109">说明</span><span class="sxs-lookup"><span data-stu-id="2fe70-109">Description</span></span>
+| <span data-ttu-id="6acfc-107">属性</span><span class="sxs-lookup"><span data-stu-id="6acfc-107">Property</span></span>      | <span data-ttu-id="6acfc-108">类型</span><span class="sxs-lookup"><span data-stu-id="6acfc-108">Type</span></span>              | <span data-ttu-id="6acfc-109">说明</span><span class="sxs-lookup"><span data-stu-id="6acfc-109">Description</span></span>
 |:--------------|:------------------|:-----------------------------------------
-| <span data-ttu-id="2fe70-110">driveId</span><span class="sxs-lookup"><span data-stu-id="2fe70-110">driveId</span></span>       | <span data-ttu-id="2fe70-111">String</span><span class="sxs-lookup"><span data-stu-id="2fe70-111">String</span></span>            | <span data-ttu-id="2fe70-p101">包含项的驱动器实例的唯一标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="2fe70-p101">Unique identifier of the drive instance that contains the item. Read-only.</span></span>
-| <span data-ttu-id="2fe70-114">driveType</span><span class="sxs-lookup"><span data-stu-id="2fe70-114">driveType</span></span>     | <span data-ttu-id="2fe70-115">String</span><span class="sxs-lookup"><span data-stu-id="2fe70-115">String</span></span>            | <span data-ttu-id="2fe70-116">标识驱动器的类型。</span><span class="sxs-lookup"><span data-stu-id="2fe70-116">Identifies the type of drive.</span></span> <span data-ttu-id="2fe70-117">请参阅 [drive][] 资源查看其值。</span><span class="sxs-lookup"><span data-stu-id="2fe70-117">See [drive][] resource for values.</span></span>
-| <span data-ttu-id="2fe70-118">id</span><span class="sxs-lookup"><span data-stu-id="2fe70-118">id</span></span>            | <span data-ttu-id="2fe70-119">String</span><span class="sxs-lookup"><span data-stu-id="2fe70-119">String</span></span>            | <span data-ttu-id="2fe70-p103">项在驱动器中的唯一标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="2fe70-p103">Unique identifier of the item in the drive. Read-only.</span></span>
-| <span data-ttu-id="2fe70-122">name</span><span class="sxs-lookup"><span data-stu-id="2fe70-122">name</span></span>          | <span data-ttu-id="2fe70-123">字符串</span><span class="sxs-lookup"><span data-stu-id="2fe70-123">String</span></span>            | <span data-ttu-id="2fe70-p104">所引用的项的名称。只读。</span><span class="sxs-lookup"><span data-stu-id="2fe70-p104">The name of the item being referenced. Read-only.</span></span>
-| <span data-ttu-id="2fe70-126">路径</span><span class="sxs-lookup"><span data-stu-id="2fe70-126">path</span></span>          | <span data-ttu-id="2fe70-127">String</span><span class="sxs-lookup"><span data-stu-id="2fe70-127">String</span></span>            | <span data-ttu-id="2fe70-p105">可用于导航到该项的路径。只读。</span><span class="sxs-lookup"><span data-stu-id="2fe70-p105">Path that can be used to navigate to the item. Read-only.</span></span>
-| <span data-ttu-id="2fe70-130">shareId</span><span class="sxs-lookup"><span data-stu-id="2fe70-130">shareId</span></span>       | <span data-ttu-id="2fe70-131">String</span><span class="sxs-lookup"><span data-stu-id="2fe70-131">String</span></span>            | <span data-ttu-id="2fe70-132">可通过 [Shares][] API 访问共享资源的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="2fe70-132">A unique identifier for a shared resource that can be accessed via the [Shares][] API.</span></span>
-| <span data-ttu-id="2fe70-133">sharepointIds</span><span class="sxs-lookup"><span data-stu-id="2fe70-133">sharepointIds</span></span> | <span data-ttu-id="2fe70-134">[sharepointIds][]</span><span class="sxs-lookup"><span data-stu-id="2fe70-134">[sharepointIds][]</span></span> | <span data-ttu-id="2fe70-p106">返回对 SharePoint REST 兼容性有用的标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="2fe70-p106">Returns identifiers useful for SharePoint REST compatibility. Read-only.</span></span>
+| <span data-ttu-id="6acfc-110">driveId</span><span class="sxs-lookup"><span data-stu-id="6acfc-110">driveId</span></span>       | <span data-ttu-id="6acfc-111">字符串</span><span class="sxs-lookup"><span data-stu-id="6acfc-111">String</span></span>            | <span data-ttu-id="6acfc-p101">包含项的驱动器实例的唯一标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="6acfc-p101">Unique identifier of the drive instance that contains the item. Read-only.</span></span>
+| <span data-ttu-id="6acfc-114">driveType</span><span class="sxs-lookup"><span data-stu-id="6acfc-114">driveType</span></span>     | <span data-ttu-id="6acfc-115">String</span><span class="sxs-lookup"><span data-stu-id="6acfc-115">String</span></span>            | <span data-ttu-id="6acfc-116">标识驱动器的类型。</span><span class="sxs-lookup"><span data-stu-id="6acfc-116">Identifies the type of drive.</span></span> <span data-ttu-id="6acfc-117">请参阅 [drive][] 资源查看其值。</span><span class="sxs-lookup"><span data-stu-id="6acfc-117">See [drive][] resource for values.</span></span>
+| <span data-ttu-id="6acfc-118">id</span><span class="sxs-lookup"><span data-stu-id="6acfc-118">id</span></span>            | <span data-ttu-id="6acfc-119">String</span><span class="sxs-lookup"><span data-stu-id="6acfc-119">String</span></span>            | <span data-ttu-id="6acfc-p103">项在驱动器中的唯一标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="6acfc-p103">Unique identifier of the item in the drive. Read-only.</span></span>
+| <span data-ttu-id="6acfc-122">name</span><span class="sxs-lookup"><span data-stu-id="6acfc-122">name</span></span>          | <span data-ttu-id="6acfc-123">字符串</span><span class="sxs-lookup"><span data-stu-id="6acfc-123">String</span></span>            | <span data-ttu-id="6acfc-p104">所引用的项的名称。只读。</span><span class="sxs-lookup"><span data-stu-id="6acfc-p104">The name of the item being referenced. Read-only.</span></span>
+| <span data-ttu-id="6acfc-126">路径</span><span class="sxs-lookup"><span data-stu-id="6acfc-126">path</span></span>          | <span data-ttu-id="6acfc-127">String</span><span class="sxs-lookup"><span data-stu-id="6acfc-127">String</span></span>            | <span data-ttu-id="6acfc-p105">可用于导航到该项的路径。只读。</span><span class="sxs-lookup"><span data-stu-id="6acfc-p105">Path that can be used to navigate to the item. Read-only.</span></span>
+| <span data-ttu-id="6acfc-130">shareId</span><span class="sxs-lookup"><span data-stu-id="6acfc-130">shareId</span></span>       | <span data-ttu-id="6acfc-131">String</span><span class="sxs-lookup"><span data-stu-id="6acfc-131">String</span></span>            | <span data-ttu-id="6acfc-132">可通过 [Shares][] API 访问的共享资源的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="6acfc-132">A unique identifier for a shared resource that can be accessed via the [Shares][] API.</span></span>
+| <span data-ttu-id="6acfc-133">sharepointIds</span><span class="sxs-lookup"><span data-stu-id="6acfc-133">sharepointIds</span></span> | <span data-ttu-id="6acfc-134">[sharepointIds][]</span><span class="sxs-lookup"><span data-stu-id="6acfc-134">[sharepointIds][]</span></span> | <span data-ttu-id="6acfc-p106">返回对 SharePoint REST 兼容性有用的标识符。只读。</span><span class="sxs-lookup"><span data-stu-id="6acfc-p106">Returns identifiers useful for SharePoint REST compatibility. Read-only.</span></span>
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
 [Shares]: ../api/shares-get.md
 
-## <a name="remarks"></a><span data-ttu-id="2fe70-140">注解</span><span class="sxs-lookup"><span data-stu-id="2fe70-140">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6acfc-140">注解</span><span class="sxs-lookup"><span data-stu-id="6acfc-140">Remarks</span></span>
 
-<span data-ttu-id="2fe70-141">为了从 **itemReference** 资源中找到 **driveItem**，请构建以下格式的 URL：</span><span class="sxs-lookup"><span data-stu-id="2fe70-141">To address a **driveItem** from an **itemReference** resource, construct a URL of the format:</span></span>
+<span data-ttu-id="6acfc-141">为了从 **itemReference** 资源中找到 **driveItem**，请构建以下格式的 URL：</span><span class="sxs-lookup"><span data-stu-id="6acfc-141">To address a **driveItem** from an **itemReference** resource, construct a URL of the format:</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
 ```
 
-<span data-ttu-id="2fe70-142">**path** 值是相对于目标驱动器的 API 路径，例如：`/drive/root:/Documents/myfile.docx`。</span><span class="sxs-lookup"><span data-stu-id="2fe70-142">The **path** value is an API path relative to the target drive, for example: `/drive/root:/Documents/myfile.docx`.</span></span>
+<span data-ttu-id="6acfc-142">**path** 值是相对于目标驱动器的 API 路径，例如：`/drive/root:/Documents/myfile.docx`。</span><span class="sxs-lookup"><span data-stu-id="6acfc-142">The **path** value is an API path relative to the target drive, for example: `/drive/root:/Documents/myfile.docx`.</span></span>
 
-<span data-ttu-id="2fe70-143">要检索人工可读路径中的痕迹，可以放心地忽略路径字符串中的第一个 `:` 之前的所有内容。</span><span class="sxs-lookup"><span data-stu-id="2fe70-143">To retrieve the human-readable path for a breadcrumb, you can safely ignore everything up to the first `:` in the path string.</span></span>
+<span data-ttu-id="6acfc-143">要检索人工可读路径中的痕迹，可以放心地忽略路径字符串中的第一个 `:` 之前的所有内容。</span><span class="sxs-lookup"><span data-stu-id="6acfc-143">To retrieve the human-readable path for a breadcrumb, you can safely ignore everything up to the first `:` in the path string.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,49 +1,50 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 获取 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f796d7b02750034be6d2205a4a25f51c2911f5f2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6de9e2c5d74d4ce17b3393ec8649783b9c92d1fa
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521654"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481620"
 ---
-# <a name="get-metadata-for-a-list"></a><span data-ttu-id="0fc5c-102">获取列表的元数据</span><span class="sxs-lookup"><span data-stu-id="0fc5c-102">Get metadata for a list</span></span>
+# <a name="get-metadata-for-a-list"></a><span data-ttu-id="a7973-102">获取列表的元数据</span><span class="sxs-lookup"><span data-stu-id="a7973-102">Get metadata for a list</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0fc5c-103">返回[列表][]的元数据。</span><span class="sxs-lookup"><span data-stu-id="0fc5c-103">Returns the metadata for a [list][].</span></span>
+<span data-ttu-id="a7973-103">返回[列表][]的元数据。</span><span class="sxs-lookup"><span data-stu-id="a7973-103">Returns the metadata for a [list][].</span></span>
 
+[列表]: ../resources/list.md
 [list]: ../resources/list.md
 
-## <a name="permissions"></a><span data-ttu-id="0fc5c-105">权限</span><span class="sxs-lookup"><span data-stu-id="0fc5c-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a7973-105">权限</span><span class="sxs-lookup"><span data-stu-id="a7973-105">Permissions</span></span>
 
-<span data-ttu-id="0fc5c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0fc5c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a7973-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a7973-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0fc5c-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="0fc5c-108">Permission type</span></span>      | <span data-ttu-id="0fc5c-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0fc5c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a7973-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a7973-108">Permission type</span></span>      | <span data-ttu-id="a7973-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a7973-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0fc5c-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0fc5c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0fc5c-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0fc5c-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="0fc5c-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0fc5c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0fc5c-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="0fc5c-113">Not supported.</span></span>    |
-|<span data-ttu-id="0fc5c-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="0fc5c-114">Application</span></span> | <span data-ttu-id="0fc5c-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0fc5c-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a7973-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a7973-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a7973-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a7973-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a7973-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a7973-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a7973-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="a7973-113">Not supported.</span></span>    |
+|<span data-ttu-id="a7973-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a7973-114">Application</span></span> | <span data-ttu-id="a7973-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a7973-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0fc5c-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0fc5c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a7973-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a7973-116">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
-## <a name="request-body"></a><span data-ttu-id="0fc5c-117">请求正文</span><span class="sxs-lookup"><span data-stu-id="0fc5c-117">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a7973-117">请求正文</span><span class="sxs-lookup"><span data-stu-id="a7973-117">Request body</span></span>
 
-<span data-ttu-id="0fc5c-118">请勿为此方法提供请求正文。</span><span class="sxs-lookup"><span data-stu-id="0fc5c-118">Do not supply a request body with this method.</span></span>
+<span data-ttu-id="a7973-118">请勿为此方法提供请求正文。</span><span class="sxs-lookup"><span data-stu-id="a7973-118">Do not supply a request body with this method.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0fc5c-119">示例</span><span class="sxs-lookup"><span data-stu-id="0fc5c-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a7973-119">示例</span><span class="sxs-lookup"><span data-stu-id="a7973-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0fc5c-120">请求</span><span class="sxs-lookup"><span data-stu-id="0fc5c-120">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a7973-120">请求</span><span class="sxs-lookup"><span data-stu-id="a7973-120">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list" } -->
 
@@ -51,7 +52,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=colu
 GET /sites/{site-id}/lists/{list-id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="0fc5c-121">响应</span><span class="sxs-lookup"><span data-stu-id="0fc5c-121">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a7973-121">响应</span><span class="sxs-lookup"><span data-stu-id="a7973-121">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -71,9 +72,9 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="0fc5c-122">借助 `select` 和 `expand` 语句，可以通过单个请求中检索列表元数据、列定义和列表项。</span><span class="sxs-lookup"><span data-stu-id="0fc5c-122">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
+<span data-ttu-id="a7973-122">借助 `select` 和 `expand` 语句，可以通过单个请求中检索列表元数据、列定义和列表项。</span><span class="sxs-lookup"><span data-stu-id="a7973-122">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0fc5c-123">请求</span><span class="sxs-lookup"><span data-stu-id="0fc5c-123">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="a7973-123">请求</span><span class="sxs-lookup"><span data-stu-id="a7973-123">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
@@ -81,7 +82,7 @@ Content-type: application/json
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
-#### <a name="response"></a><span data-ttu-id="0fc5c-124">响应</span><span class="sxs-lookup"><span data-stu-id="0fc5c-124">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="a7973-124">响应</span><span class="sxs-lookup"><span data-stu-id="a7973-124">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 

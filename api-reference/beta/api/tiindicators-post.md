@@ -4,30 +4,30 @@ description: 创建新的 tiIndicator。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 893af5a56c517cbd4c100cbaa767aa42c70d74e2
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 440515a45b4c530f32dd20fe29497e338b54a6bf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366978"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481438"
 ---
-# <a name="create-threat-intelligence-indicator"></a><span data-ttu-id="2d7b6-103">创建威胁情报指标</span><span class="sxs-lookup"><span data-stu-id="2d7b6-103">Create threat intelligence indicator</span></span>
+# <a name="create-threat-intelligence-indicator"></a><span data-ttu-id="ca9e0-103">创建威胁情报指标</span><span class="sxs-lookup"><span data-stu-id="ca9e0-103">Create threat intelligence indicator</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2d7b6-104">创建新的[tiIndicator](../resources/tiindicator.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2d7b6-104">Create a new [tiIndicator](../resources/tiindicator.md) object.</span></span>
+<span data-ttu-id="ca9e0-104">创建新的[tiIndicator](../resources/tiindicator.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ca9e0-104">Create a new [tiIndicator](../resources/tiindicator.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2d7b6-105">权限</span><span class="sxs-lookup"><span data-stu-id="2d7b6-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ca9e0-105">权限</span><span class="sxs-lookup"><span data-stu-id="ca9e0-105">Permissions</span></span>
 
-<span data-ttu-id="2d7b6-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2d7b6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ca9e0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ca9e0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="2d7b6-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="2d7b6-108">Permission type</span></span>                        | <span data-ttu-id="2d7b6-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2d7b6-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ca9e0-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ca9e0-108">Permission type</span></span>                        | <span data-ttu-id="ca9e0-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ca9e0-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="2d7b6-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2d7b6-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="2d7b6-111">ThreatIndicators application.readwrite.ownedby</span><span class="sxs-lookup"><span data-stu-id="2d7b6-111">ThreatIndicators.ReadWrite.OwnedBy</span></span>  |
-| <span data-ttu-id="2d7b6-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2d7b6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d7b6-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="2d7b6-113">Not supported.</span></span> |
-| <span data-ttu-id="2d7b6-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="2d7b6-114">Application</span></span>                            | <span data-ttu-id="2d7b6-115">ThreatIndicators application.readwrite.ownedby</span><span class="sxs-lookup"><span data-stu-id="2d7b6-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="ca9e0-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ca9e0-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ca9e0-111">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="ca9e0-111">ThreatIndicators.ReadWrite.OwnedBy</span></span>  |
+| <span data-ttu-id="ca9e0-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ca9e0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ca9e0-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="ca9e0-113">Not supported.</span></span> |
+| <span data-ttu-id="ca9e0-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ca9e0-114">Application</span></span>                            | <span data-ttu-id="ca9e0-115">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="ca9e0-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2d7b6-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2d7b6-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ca9e0-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ca9e0-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,25 +35,25 @@ ms.locfileid: "30366978"
 POST /security/tiIndicators
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2d7b6-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="2d7b6-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ca9e0-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="ca9e0-117">Request headers</span></span>
 
-| <span data-ttu-id="2d7b6-118">名称</span><span class="sxs-lookup"><span data-stu-id="2d7b6-118">Name</span></span>          | <span data-ttu-id="2d7b6-119">说明</span><span class="sxs-lookup"><span data-stu-id="2d7b6-119">Description</span></span>   |
+| <span data-ttu-id="ca9e0-118">名称</span><span class="sxs-lookup"><span data-stu-id="ca9e0-118">Name</span></span>          | <span data-ttu-id="ca9e0-119">说明</span><span class="sxs-lookup"><span data-stu-id="ca9e0-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="2d7b6-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="2d7b6-120">Authorization</span></span> | <span data-ttu-id="2d7b6-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="2d7b6-121">Bearer {code}</span></span> |
+| <span data-ttu-id="ca9e0-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ca9e0-120">Authorization</span></span> | <span data-ttu-id="ca9e0-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="ca9e0-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2d7b6-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="2d7b6-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ca9e0-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="ca9e0-122">Request body</span></span>
 
-<span data-ttu-id="2d7b6-123">在请求正文中, 提供包含至少一个可观测对象的[tiIndicator](../resources/tiindicator.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2d7b6-123">In the request body, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one observable.</span></span>
+<span data-ttu-id="ca9e0-123">在请求正文中, 提供包含至少一个[电子邮件](../resources/tiindicator.md#indicator-observables---email)、[文件](../resources/tiindicator.md#indicator-observables---file)或[网络](../resources/tiindicator.md#indicator-observables---network)可观测对象的[tiIndicator](../resources/tiindicator.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ca9e0-123">In the request body, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one [email](../resources/tiindicator.md#indicator-observables---email), [file](../resources/tiindicator.md#indicator-observables---file), or [network](../resources/tiindicator.md#indicator-observables---network) observable.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2d7b6-124">响应</span><span class="sxs-lookup"><span data-stu-id="2d7b6-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ca9e0-124">响应</span><span class="sxs-lookup"><span data-stu-id="ca9e0-124">Response</span></span>
 
-<span data-ttu-id="2d7b6-125">如果成功, 此方法在`201 Created`响应正文中返回响应代码和[tiIndicator](../resources/tiindicator.md)对象。</span><span class="sxs-lookup"><span data-stu-id="2d7b6-125">If successful, this method returns `201 Created` response code and a [tiIndicator](../resources/tiindicator.md) object in the response body.</span></span>
+<span data-ttu-id="ca9e0-125">如果成功, 此方法在`201 Created`响应正文中返回响应代码和[tiIndicator](../resources/tiindicator.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ca9e0-125">If successful, this method returns `201 Created` response code and a [tiIndicator](../resources/tiindicator.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2d7b6-126">示例</span><span class="sxs-lookup"><span data-stu-id="2d7b6-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ca9e0-126">示例</span><span class="sxs-lookup"><span data-stu-id="ca9e0-126">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="2d7b6-127">请求</span><span class="sxs-lookup"><span data-stu-id="2d7b6-127">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ca9e0-127">请求</span><span class="sxs-lookup"><span data-stu-id="ca9e0-127">Request</span></span>
 
-<span data-ttu-id="2d7b6-128">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2d7b6-128">The following is an example of the request.</span></span>
+<span data-ttu-id="ca9e0-128">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="ca9e0-128">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_tiindicator_from_security"
@@ -82,12 +82,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="2d7b6-129">响应</span><span class="sxs-lookup"><span data-stu-id="2d7b6-129">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ca9e0-129">响应</span><span class="sxs-lookup"><span data-stu-id="ca9e0-129">Response</span></span>
 
-<span data-ttu-id="2d7b6-130">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="2d7b6-130">The following is an example of the response.</span></span>
+<span data-ttu-id="ca9e0-130">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ca9e0-130">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2d7b6-131">为了提高可读性, 可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="2d7b6-131">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="2d7b6-132">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="2d7b6-132">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ca9e0-131">为了提高可读性, 可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="ca9e0-131">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ca9e0-132">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="ca9e0-132">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 配额
 localization_priority: Normal
-ms.openlocfilehash: 58969adb525736b8a665844a5fa4b48ae4ca1831
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: a9a5da54aeef3c9666c22c7a2f9bc0d92fc7a405
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848410"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481452"
 ---
-# <a name="quota-resource-type"></a><span data-ttu-id="0f49d-102">Quota 资源类型</span><span class="sxs-lookup"><span data-stu-id="0f49d-102">Quota resource type</span></span>
+# <a name="quota-resource-type"></a><span data-ttu-id="c68e7-102">Quota 资源类型</span><span class="sxs-lookup"><span data-stu-id="c68e7-102">Quota resource type</span></span>
 
-<span data-ttu-id="0f49d-103">**配额**资源提供有关 [驱动器](drive.md) 资源上的空间限制的详细信息。</span><span class="sxs-lookup"><span data-stu-id="0f49d-103">The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.</span></span>
+<span data-ttu-id="c68e7-103">**配额**资源提供有关 [驱动器](drive.md) 资源上的空间限制的详细信息。</span><span class="sxs-lookup"><span data-stu-id="c68e7-103">The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0f49d-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0f49d-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c68e7-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c68e7-104">JSON representation</span></span>
 
-<span data-ttu-id="0f49d-105">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="0f49d-105">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c68e7-105">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c68e7-105">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,24 +35,24 @@ ms.locfileid: "27848410"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="0f49d-106">属性</span><span class="sxs-lookup"><span data-stu-id="0f49d-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c68e7-106">属性</span><span class="sxs-lookup"><span data-stu-id="c68e7-106">Properties</span></span>
 
-| <span data-ttu-id="0f49d-107">属性名称</span><span class="sxs-lookup"><span data-stu-id="0f49d-107">Property name</span></span> | <span data-ttu-id="0f49d-108">类型</span><span class="sxs-lookup"><span data-stu-id="0f49d-108">Type</span></span>   | <span data-ttu-id="0f49d-109">说明</span><span class="sxs-lookup"><span data-stu-id="0f49d-109">Description</span></span>                                                                 |
+| <span data-ttu-id="c68e7-107">属性名称</span><span class="sxs-lookup"><span data-stu-id="c68e7-107">Property name</span></span> | <span data-ttu-id="c68e7-108">类型</span><span class="sxs-lookup"><span data-stu-id="c68e7-108">Type</span></span>   | <span data-ttu-id="c68e7-109">说明</span><span class="sxs-lookup"><span data-stu-id="c68e7-109">Description</span></span>                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
-| <span data-ttu-id="0f49d-110">total</span><span class="sxs-lookup"><span data-stu-id="0f49d-110">total</span></span>         | <span data-ttu-id="0f49d-111">Int64</span><span class="sxs-lookup"><span data-stu-id="0f49d-111">Int64</span></span>  | <span data-ttu-id="0f49d-p101">允许的总存储空间，以字节为单位。只读。</span><span class="sxs-lookup"><span data-stu-id="0f49d-p101">Total allowed storage space, in bytes. Read-only.</span></span>                           |
-| <span data-ttu-id="0f49d-114">used</span><span class="sxs-lookup"><span data-stu-id="0f49d-114">used</span></span>          | <span data-ttu-id="0f49d-115">Int64</span><span class="sxs-lookup"><span data-stu-id="0f49d-115">Int64</span></span>  | <span data-ttu-id="0f49d-p102">已使用的总空间，以字节为单位。只读。</span><span class="sxs-lookup"><span data-stu-id="0f49d-p102">Total space used, in bytes. Read-only.</span></span>                                      |
-| <span data-ttu-id="0f49d-118">remaining</span><span class="sxs-lookup"><span data-stu-id="0f49d-118">remaining</span></span>     | <span data-ttu-id="0f49d-119">Int64</span><span class="sxs-lookup"><span data-stu-id="0f49d-119">Int64</span></span>  | <span data-ttu-id="0f49d-p103">达到配额限制之前剩余的总空间，以字节为单位。只读。</span><span class="sxs-lookup"><span data-stu-id="0f49d-p103">Total space remaining before reaching the quota limit, in bytes. Read-only.</span></span> |
-| <span data-ttu-id="0f49d-122">deleted</span><span class="sxs-lookup"><span data-stu-id="0f49d-122">deleted</span></span>       | <span data-ttu-id="0f49d-123">Int64</span><span class="sxs-lookup"><span data-stu-id="0f49d-123">Int64</span></span>  | <span data-ttu-id="0f49d-p104">回收站中的文件占用的总空间，以字节为单位。只读。</span><span class="sxs-lookup"><span data-stu-id="0f49d-p104">Total space consumed by files in the recycle bin, in bytes. Read-only.</span></span>      |
-| <span data-ttu-id="0f49d-126">state</span><span class="sxs-lookup"><span data-stu-id="0f49d-126">state</span></span>         | <span data-ttu-id="0f49d-127">string</span><span class="sxs-lookup"><span data-stu-id="0f49d-127">string</span></span> | <span data-ttu-id="0f49d-p105">指示存储空间状态的枚举值。只读。</span><span class="sxs-lookup"><span data-stu-id="0f49d-p105">Enumeration value that indicates the state of the storage space. Read-only.</span></span> |
+| <span data-ttu-id="c68e7-110">total</span><span class="sxs-lookup"><span data-stu-id="c68e7-110">total</span></span>         | <span data-ttu-id="c68e7-111">Int64</span><span class="sxs-lookup"><span data-stu-id="c68e7-111">Int64</span></span>  | <span data-ttu-id="c68e7-p101">允许的总存储空间，以字节为单位。只读。</span><span class="sxs-lookup"><span data-stu-id="c68e7-p101">Total allowed storage space, in bytes. Read-only.</span></span>                           |
+| <span data-ttu-id="c68e7-114">used</span><span class="sxs-lookup"><span data-stu-id="c68e7-114">used</span></span>          | <span data-ttu-id="c68e7-115">Int64</span><span class="sxs-lookup"><span data-stu-id="c68e7-115">Int64</span></span>  | <span data-ttu-id="c68e7-p102">已使用的总空间，以字节为单位。只读。</span><span class="sxs-lookup"><span data-stu-id="c68e7-p102">Total space used, in bytes. Read-only.</span></span>                                      |
+| <span data-ttu-id="c68e7-118">remaining</span><span class="sxs-lookup"><span data-stu-id="c68e7-118">remaining</span></span>     | <span data-ttu-id="c68e7-119">Int64</span><span class="sxs-lookup"><span data-stu-id="c68e7-119">Int64</span></span>  | <span data-ttu-id="c68e7-p103">达到配额限制之前剩余的总空间，以字节为单位。只读。</span><span class="sxs-lookup"><span data-stu-id="c68e7-p103">Total space remaining before reaching the quota limit, in bytes. Read-only.</span></span> |
+| <span data-ttu-id="c68e7-122">deleted</span><span class="sxs-lookup"><span data-stu-id="c68e7-122">deleted</span></span>       | <span data-ttu-id="c68e7-123">Int64</span><span class="sxs-lookup"><span data-stu-id="c68e7-123">Int64</span></span>  | <span data-ttu-id="c68e7-p104">回收站中的文件占用的总空间，以字节为单位。只读。</span><span class="sxs-lookup"><span data-stu-id="c68e7-p104">Total space consumed by files in the recycle bin, in bytes. Read-only.</span></span>      |
+| <span data-ttu-id="c68e7-126">state</span><span class="sxs-lookup"><span data-stu-id="c68e7-126">state</span></span>         | <span data-ttu-id="c68e7-127">string</span><span class="sxs-lookup"><span data-stu-id="c68e7-127">string</span></span> | <span data-ttu-id="c68e7-p105">指示存储空间状态的枚举值。只读。</span><span class="sxs-lookup"><span data-stu-id="c68e7-p105">Enumeration value that indicates the state of the storage space. Read-only.</span></span> |
 
-## <a name="state-enumeration"></a><span data-ttu-id="0f49d-130">状态枚举</span><span class="sxs-lookup"><span data-stu-id="0f49d-130">State Enumeration</span></span>
+## <a name="state-enumeration"></a><span data-ttu-id="c68e7-130">状态枚举</span><span class="sxs-lookup"><span data-stu-id="c68e7-130">State Enumeration</span></span>
 
-| <span data-ttu-id="0f49d-131">值</span><span class="sxs-lookup"><span data-stu-id="0f49d-131">Value</span></span>      | <span data-ttu-id="0f49d-132">说明</span><span class="sxs-lookup"><span data-stu-id="0f49d-132">Description</span></span>                                                                                                                                                                 |
+| <span data-ttu-id="c68e7-131">值</span><span class="sxs-lookup"><span data-stu-id="c68e7-131">Value</span></span>      | <span data-ttu-id="c68e7-132">说明</span><span class="sxs-lookup"><span data-stu-id="c68e7-132">Description</span></span>                                                                                                                                                                 |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `normal`   | <span data-ttu-id="0f49d-133">驱动器具有充足的剩余配额。</span><span class="sxs-lookup"><span data-stu-id="0f49d-133">The drive has plenty of remaining quota left.</span></span>                                                                                                                               |
-| `nearing`  | <span data-ttu-id="0f49d-134">剩余配额少于总配额空间的 10%。</span><span class="sxs-lookup"><span data-stu-id="0f49d-134">Remaining quota is less than 10% of total quota space.</span></span>                                                                                                                      |
-| `critical` | <span data-ttu-id="0f49d-135">剩余配额少于总配额空间的 1%。</span><span class="sxs-lookup"><span data-stu-id="0f49d-135">Remaining quota is less than 1% of total quota space.</span></span>                                                                                                                       |
-| `exceeded` | <span data-ttu-id="0f49d-p106">使用的配额已超出总配额。在驱动器低于总配额量或购买更多存储空间之前，无法向该驱动器添加新的文件或文件夹。</span><span class="sxs-lookup"><span data-stu-id="0f49d-p106">The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased.</span></span> |
+| `normal`   | <span data-ttu-id="c68e7-133">驱动器具有充足的剩余配额。</span><span class="sxs-lookup"><span data-stu-id="c68e7-133">The drive has plenty of remaining quota left.</span></span>                                                                                                                               |
+| `nearing`  | <span data-ttu-id="c68e7-134">剩余配额少于总配额空间的 10%。</span><span class="sxs-lookup"><span data-stu-id="c68e7-134">Remaining quota is less than 10% of total quota space.</span></span>                                                                                                                      |
+| `critical` | <span data-ttu-id="c68e7-135">剩余配额少于总配额空间的 1%。</span><span class="sxs-lookup"><span data-stu-id="c68e7-135">Remaining quota is less than 1% of total quota space.</span></span>                                                                                                                       |
+| `exceeded` | <span data-ttu-id="c68e7-p106">使用的配额已超出总配额。在驱动器低于总配额量或购买更多存储空间之前，无法向该驱动器添加新的文件或文件夹。</span><span class="sxs-lookup"><span data-stu-id="c68e7-p106">The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased.</span></span> |
 
 <!-- {
   "type": "#page.annotation",
