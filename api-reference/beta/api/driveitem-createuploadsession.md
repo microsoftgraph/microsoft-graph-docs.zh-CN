@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 可恢复的文件上传
+title: 可恢复的文件上载
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4b121fb2f1cbeda13cd67f3f37ba06c67304e6ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b0495a0c63400d6476c1ad9312e708b9ac880e42
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525337"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482390"
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
+# <a name="upload-large-files-with-an-upload-session"></a>通过上载会话上载大文件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,10 +35,10 @@ ms.locfileid: "29525337"
 
 ## <a name="create-an-upload-session"></a>创建上传会话
 
-若要开始大文件上载，您的应用程序必须先请求新的上载会话。
-这将创建的临时存储位置，直到上载完成文件将保存的文件的字节数。
-最后一字节的文件上载完之后完成上载会话和最后一个文件显示在目标文件夹中。
-除非您明确指定的请求，以通过设置完成上载，或者，可以将推迟最终创建的目标文件`deferCommit`中请求参数属性。
+要开始上载大文件，你的应用程序必须先请求新的上载会话。
+这可以创建一个临时存储位置，在上载完成之前保存文件字节数。
+上载最后一个字节后，上载会话即完成，最终文件会出现在目标文件夹中。
+或者, 可以将最终文件创建推迟到目标中, 直到您显式发出请求来完成上载, 方法是在请求参数中`deferCommit`设置该属性。
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -55,9 +55,9 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>请求正文
 
 无需请求正文。
-但是，您可以指定提供有关所上载文件的其他数据在请求正文中的属性和自定义上载操作的语义。
+但是, 可以在请求正文中指定属性, 提供有关要上载的文件的其他数据, 并自定义上传操作的语义。
 
-例如，`item`属性允许设置以下参数：<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+例如, `item`属性允许设置以下参数:<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
   "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
@@ -66,7 +66,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 }
 ```
 
-如果文件名已被使用，并且还会指定直到显式完成请求时不创建最终的文件，下面的示例将控制行为：
+下面的示例控制是否已采用 filename 的行为, 还指定在发出显式完成请求之前不应创建最终文件:
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -82,21 +82,21 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 | 名称       | 值 | 说明                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | 如果包含此请求标头，且提供的 eTag（或 cTag）与项目中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 错误响应。 |
+| *if-match* | etag  | 如果包含此请求标头, 且提供的 eTag (或 cTag) 与项目中的当前 etag 不匹配, 则`412 Precondition Failed`返回错误响应。 |
 
 ## <a name="parameters"></a>参数
 
-| 参数            | 类型                          | 描述
+| 参数            | 类型                          | 说明
 |:---------------------|:------------------------------|:---------------------------------
-| 项                 | driveItemUploadableProperties | 有关所上载文件的数据
-| deferCommit          | Boolean                       | 如果设置为 true，最后一个创建的目标文件需要显式请求。 仅在 OneDrive for Business。
+| 项                 | driveItemUploadableProperties | 有关要上载的文件的数据
+| deferCommit          | Boolean                       | 如果设置为 true, 则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for business 上。
 
 ## <a name="item-properties"></a>项目属性
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| 说明          | String             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
-| name                 | String             | 项目名称（文件名和扩展名）。读写。
+| 说明          | String             | 提供项的用户可见的说明。 读写。 仅适用于 OneDrive 个人版。
+| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
 
 ### <a name="request"></a>请求
 
@@ -141,7 +141,7 @@ Content-Type: application/json
 若要上传文件或文件的一部分，你的应用程序可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。
 你可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 60 MiB 即可。
 
-顺序，必须按顺序上载文件的片段。
+必须按顺序上传文件的段落。
 不按顺序上载文件的片段将导致错误。
 
 **注意：** 如果应用程序将一个文件拆分成多个字节范围，则每个字节范围的大小**必须**是 320 KiB 的倍数（327,680 个字节。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
@@ -207,16 +207,16 @@ Content-Type: application/json
 ## <a name="remarks"></a>注解
 
 * `nextExpectedRanges` 属性不会总是列出所有缺少的范围。
-* 成功写入片段时，它将返回下一个开始范围（例如，"523-"）。
+* 成功写入片段时，它将返回下一个开始范围（例如，“523-”）。
 * 如果因客户端发送了服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。可以 [请求上载状态](#resuming-an-in-progress-upload) 以获取缺少范围的详细列表。
 * 在发出 `PUT` 调用时添加授权标头可能会导致 `HTTP 401 Unauthorized` 响应。只能在第一步中发出 `POST` 时发送授权标头和持有者令牌。不得在发出 `PUT` 时添加授权标头。
 
 ## <a name="completing-a-file"></a>完成文件
 
-如果`deferCommit`为 false 或未设置，然后上载自动完成时的文件的最后一字节范围放置到上载的 URL。
-如果`deferCommit`为 true，则上载文件的最后一字节范围使到上载 URL 后，应该明确完成由最终 POST 请求到上载包含零长度内容的 url。
+如果`deferCommit`为 false 或未设置, 则在将文件的最后一个字节范围放入上载 URL 时, 将自动完成上载。
+如果`deferCommit`为 true, 则在将文件的最后一个字节范围放入上载 url 后, 应将最后一个 POST 请求显式完成上传到包含零长度内容的上载 url。
 
-完成上载后，服务器将响应的最后一个请求`HTTP 201 Created`或`HTTP 200 OK`。
+上载完成后, 服务器将使用或`HTTP 201 Created` `HTTP 200 OK`发出响应最终请求。
 响应正文还将包括 **driveItem** 的默认属性集，用来表示已完成的文件。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->

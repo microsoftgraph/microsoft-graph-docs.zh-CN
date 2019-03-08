@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Image
+title: 图像
 localization_priority: Normal
-ms.openlocfilehash: 588f5185cba3012ce3dce77a9707aa23be2bf0cc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b9b8e65442b268e58f920d9b08b60ae8de35df35
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513926"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482397"
 ---
 # <a name="image-resource-type"></a>图像资源类型
 

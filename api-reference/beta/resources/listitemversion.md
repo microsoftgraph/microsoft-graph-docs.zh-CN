@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/17/2017
-title: listItemVersion
+title: ListItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1d153a8ae8291e0299d1a470db6c8c7e0c8bd3e4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d9b06b54d12abddd3a1586a11b99f7c600ac4508
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524749"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482299"
 ---
 # <a name="listitemversion-resource-type"></a>ListItemVersion 资源类型
 

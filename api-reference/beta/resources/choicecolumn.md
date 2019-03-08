@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ChoiceColumn
 localization_priority: Normal
-ms.openlocfilehash: b0efefbbd6a47a547bc724274fd9bc26b2628442
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 21405fe3aa28e0eef1233cd6f27e63568fb4b00e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510755"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482215"
 ---
 # <a name="choicecolumn-resource-type"></a>ChoiceColumn 资源类型
 

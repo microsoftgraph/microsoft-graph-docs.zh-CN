@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 访问共享项目
 localization_priority: Normal
-ms.openlocfilehash: 62a2b15fbd0715c719e0fefc6a0b02162bc4fdec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1f172060a8b30996ff09b3ca93390da503db9fea
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509579"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482306"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 
@@ -46,7 +46,7 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 若要编码共享 URL，请使用以下逻辑：
 
 1. 首先，使用 base64 编码 URL。
-2. 删除值末尾的 `=` 字符，将 `/` 替换成 `_`，将 `+` 替换成 `-`，从而将 base64 编码结果转换成[未填充的 base64url 格式](https://en.wikipedia.org/wiki/Base64)。
+2. 删除值末尾的 [](https://en.wikipedia.org/wiki/Base64) 字符，将 `=` 替换成 `/`，将 `_` 替换成 `+`，从而将 base64 编码结果转换成`-`。
 3. 将 `u!` 追加到字符串的开头。
 
 例如，若要对 URL 进行 C# 编码，请使用以下代码：
@@ -61,16 +61,16 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 | 名称       | 类型   | 说明                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | 可选。 将设置为一个`prefer`下记录的值。  |
+| **Prefer** | 字符串 | 可选。 将设置为以下记录`prefer`的值之一。  |
 
-### <a name="prefer-header-values"></a>希望使用标头的值
+### <a name="prefer-header-values"></a>首选标头值
 
-| 姓名                          | 说明                                                                                             |
+| 名称                          | 说明                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| redeemSharingLink             | 如果**shareIdOrEncodedSharingUrl**是共享链接，授予对呼叫者持久访问该项    |
-| redeemSharingLinkIfNecessary  | 与值相同 redeemSharingLink，但 access 只能保证被授予此请求的持续时间内 |
+| redeemSharingLink             | 如果**shareIdOrEncodedSharingUrl**是共享链接, 则向呼叫者授予对项目的持久访问权限    |
+| redeemSharingLinkIfNecessary  | 与 redeemSharingLink 相同, 但仅保证在此请求的持续时间内授予访问权限 |
 
-redeemSharingLink 应被视为等效于呼叫者导航到共享链接 （接受共享笔势） 浏览器中，而 redeemSharingLinkIfNecessary 适用于情况，其中的目的是只是为了扫视的链接元数据。
+应将 redeemSharingLink 视为与调用者导航到共享链接的调用者导航到浏览器 (接受共享手势), 而 redeemSharingLinkIfNecessary 的目的是专门用于查看链接的metadata.
 
 ## <a name="response"></a>响应
 

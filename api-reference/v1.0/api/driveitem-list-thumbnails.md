@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 检索文件或文件夹的缩略图
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7543a8177c146779c645d848292b1600a80c3398
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e58cdf153ea1fab98eac1a903e402d80228be5d4
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990591"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482173"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -70,8 +70,7 @@ GET /me/drive/items/{item-id}/thumbnails
 
 这将返回项的可用 **thumbnailSet** 的数组。 驱动器中的任何项都可以有零个或多个缩略图。
 
-**注意：** 可以使用 _select_ 查询字符串参数，控制在 **ThumbnailSet** 中返回的缩略图尺寸。
-例如，`/thumbnails?select=medium` 仅检索中等大小的缩略图。
+**注意：** 可以使用 _select_ 查询字符串参数，控制在 **ThumbnailSet** 中返回的缩略图尺寸。 例如，`/thumbnails?select=medium` 仅检索中等大小的缩略图。
 
 
 ### <a name="response"></a>响应
@@ -210,12 +209,11 @@ Content-type: application/json
 
 下表定义了可能的缩略图大小。虽然可以请求任意的缩略图大小，但可能存在定义的有并迅速返回值：
 
-| 名称           | 分辨率  | 纵横比​​ | 说明                                                          |
+| 名称           | 解决方案  | 纵横比 | 说明                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | 96 longest  | Original     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
-| `medium`       | 176 longest | Original     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
-| `large`        | 800 longest
- | Original     | 最长边重设为 800 像素的缩略图。               |
+| `small`        | 96 longest  | 原始大小     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
+| `medium`       | 176 longest | 原始大小     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
+| `large`        | 800 longest | Original     | 最长边重设为 800 像素的缩略图。               |
 | `smallSquare`  | 96x96       | 方形裁剪  | 小方形缩略图                                               |
 | `mediumSquare` | 176x176     | 方形裁剪  | 小方形缩略图                                               |
 | `largeSquare`  | 800x800     | 方形裁剪  | 大方形缩略图                                               |
@@ -261,7 +259,7 @@ Content-Type: application/json
 **注意：** 返回的缩略图可能与请求的像素尺寸不完全匹配，但与纵横比匹配。
 在某些情况下，如果缩略图已经存在并且可以轻松缩放来匹配请求的分辨率，则可能会返回比请求的大小更大的缩略图。
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>注解
 
 **注意** 在 OneDrive for Business 和 SharePoint 中：
 

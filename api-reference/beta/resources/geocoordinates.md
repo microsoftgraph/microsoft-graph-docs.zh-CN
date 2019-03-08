@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
-ms.openlocfilehash: 45df506820ee242b53630c9d44ed390216bae141
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 221037578e055e5bb57987058a190bc3026b3e0c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525071"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482355"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "29525071"
 |:----------|:-------|:--------------------------------------------------------
 | 海拔  | 双精度数 | 可选。此项高于海平面的高度（以英尺为单位）。只读。
 | 纬度  | 双精度数 | 可选。此项的纬度（以十进制表示）。只读。
-| 经度 | 双精度数 | 可选。此项的经度（以十进制表示）。只读。
+| 经度 | Double | 可选。此项的经度（以十进制表示）。只读。
 
 ## <a name="remarks"></a>注解
 

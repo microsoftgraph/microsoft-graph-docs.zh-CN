@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 上传小文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 408e88cc3fa670c525b9e994e82fbb652489dd9b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 151d7c9479068c5fdcecfb5a04166900bd527230
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508074"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482271"
 ---
-# <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 DriveItem 的内容
+# <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 driveItem 的内容
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

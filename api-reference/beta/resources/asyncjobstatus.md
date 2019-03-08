@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: AsyncJobStatus
 localization_priority: Normal
-ms.openlocfilehash: ee7cc92bff47edc3a1a15b5f27cb2f5afe061d4e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c951aa05b2b0f6f2b036bdf145e161a8d5b52ba7
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510209"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482229"
 ---
 # <a name="asyncjobstatus-resource"></a>AsyncJobStatus 资源
 

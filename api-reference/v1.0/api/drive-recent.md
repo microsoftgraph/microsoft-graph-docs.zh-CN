@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 列出最近使用的文件
+title: 列出最近的文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3548a708084da5b5c22bd31be1130630a577d7bb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: be4f6632f86c62a8672bb94728dee9771aafc540
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922723"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482124"
 ---
 # <a name="list-recent-files"></a>列出最近使用的文件
 
@@ -86,7 +86,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>注解
 
 从**最近**操作返回的部分 driveItem 将包括 **remoteItem** 方面，这表明它们是其他驱动器中的项目。若要访问原始的 driveItem 对象，你将需要使用 **remoteItem** 中提供的信息发出请求，信息格式如下：
 

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 69845652cef0f726ae466a093bf504320c0fdd50
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bc1f4e478b93472b683cd8249d55a98f751dfaa0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508571"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482285"
 ---
 # <a name="get-a-site-resource"></a>获取网站资源
 

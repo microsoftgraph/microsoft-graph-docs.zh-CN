@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Deleted
 localization_priority: Normal
-ms.openlocfilehash: a35bc781555486603c0319c819aa019704e362d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d52ca0a9815e46ebc11a653be381ac65f3cd209e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886140"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482180"
 ---
 # <a name="deleted-facet"></a>Deleted Facet
 

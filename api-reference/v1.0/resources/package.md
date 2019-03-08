@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 程序包
 localization_priority: Normal
-ms.openlocfilehash: 6f518058c6a68716f482bd9b6a870457de3d71a3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c64dfce910456ef9b9415e3332c099d7814a71f2
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866414"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482201"
 ---
 # <a name="package-resource-type"></a>包资源类型
 
 **包** 资源指示 DriveItem 是项的“包”或集合中的顶级项，应视为集合而不是单独的项。
 
-包的一个示例是 OneNote 笔记本。 笔记本由表示笔记本内容的文件和文件夹组成，表示该笔记本的顶级项具有**包** facet，以向客户端指示这是应被特殊处理的数据集。
+包的一个示例是 OneNote 笔记本。笔记本由表示笔记本内容的文件和文件夹组成，表示该笔记本的顶级项具有**包** facet，以向客户端指示这是应被特殊处理的数据集。
 
 具有**包** facet 的 DriveItems 不包括**文件夹**或**文件** facet，但在概念上与具有**文件夹** facet 的项类似。
 
@@ -32,9 +32,9 @@ ms.locfileid: "27866414"
 
 | 属性名称 | 类型   | 说明                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| type          | string | 指示包的类型的字符串。 时`oneNote`是仅当前定义的值，则应产生预期其他包类型返回并据此处理它们。 |
+| 类型          | string | 一个指示包的类型的字符串。 虽然 `oneNote` 是当前唯一定义的值，但应该预见会返回其他包类型并进行相应处理。 |
 
-## <a name="remarks"></a>备注 
+## <a name="remarks"></a>注解 
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: DateTimeColumn
 localization_priority: Normal
-ms.openlocfilehash: e49b749adeaf7b04f9324fe00f9c73bf61f8b2dc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: da8fe44e377a071ee3f20b82f7190b690dcfd6b2
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518679"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482166"
 ---
 # <a name="datetimecolumn-resource-type"></a>DateTimeColumn 资源类型
 

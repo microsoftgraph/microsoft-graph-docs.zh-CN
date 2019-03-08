@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 在 SharePoint 列表中创建新条目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 58e008ffc4685348aa8d69f44cbfcf59f4fbf715
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1af6162fd12c9c3dfc470b97e42a25d0cad8ebea
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528814"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482411"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 
@@ -90,7 +90,7 @@ Content-type: application/json
 
 **注意：** 为清楚起见，将截断 Response 对象。 实际调用会返回默认属性。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 
 <!--

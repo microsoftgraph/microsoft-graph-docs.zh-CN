@@ -1,17 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: IdentitySet
+title: 了解 identityset
 localization_priority: Normal
-ms.openlocfilehash: 63178fc9add3d097b7e8aaf0c5c2a697a91eaeed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0a963f7158dbb812fc1f51fbff208297a2a9f076
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807019"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482194"
 ---
-# <a name="identityset-resource-type"></a>identitySet 资源类型
+# <a name="identityset-resource-type"></a>了解 identityset 资源类型
 
 **IdentitySet** 资源是 [标识](identity.md) 资源的键控集合。它用来表示一组与项目的各种事件相关的标识，例如_创建者_或_上次修改人_。
 
@@ -49,14 +49,14 @@ ms.locfileid: "27807019"
 
 | 属性    | 类型                    | 说明                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
-| application | [标识](identity.md) | 可选。与此操作关联的应用程序。  |
-| 设备      | [标识](identity.md) | 可选。与此操作关联的设备。       |
+| application | [Identity](identity.md) | 可选。与此操作关联的应用程序。  |
+| 设备      | [Identity](identity.md) | 可选。与此操作关联的设备。       |
 | phone       | [identity](identity.md) | 可选。 与此操作关联的电话号码。 |
 | 用户        | [标识](identity.md) | 可选。与此操作关联的用户。         |
 
 ## <a name="remarks"></a>注解 
 
-**IdentitySet**资源的使用情况，请参阅[呼叫](call.md)。
+有关**了解 identityset**资源的使用情况, 请参阅[Call](call.md) 。
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

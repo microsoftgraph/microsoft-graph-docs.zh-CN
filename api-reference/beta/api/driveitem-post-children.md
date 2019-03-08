@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 新建文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2ccbedabb6fc7e6ec179e8ab5c97dd07959252c0
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: a81d8fe2c7511b4fe971ccdf114883088bea65b3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760844"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482320"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>在驱动器中新建文件夹
 
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>响应
 
-如果成功，，则此方法返回新创建的文件夹作为[DriveItem] [item-resource]资源。
+如果成功，此方法将新创建的文件夹返回为 [[DriveItem]][item-resource] 资源。
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 

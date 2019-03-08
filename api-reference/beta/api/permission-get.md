@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取权限
 localization_priority: Normal
-ms.openlocfilehash: 1af1cdaa434a95ed77da360334c88dd653d8747a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 05faf2bdeccc5f1ed1dadc484cf690473902d941
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520023"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482292"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>获取文件或文件夹的共享权限
 

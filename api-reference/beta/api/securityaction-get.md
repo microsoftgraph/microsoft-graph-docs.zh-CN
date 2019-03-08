@@ -1,17 +1,17 @@
 ---
-title: 获取安全操作
+title: 获取 securityAction
 description: 检索 securityAction 对象的属性和关系。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 336a8a73d0ec161f26dd3fcbd36caf86097108f5
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 7bcad2d3249b0ac7c5bd08d3d61742e7dc5166d6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366915"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482250"
 ---
-# <a name="get-security-action"></a>获取安全操作
+# <a name="get-securityaction"></a>获取 securityAction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

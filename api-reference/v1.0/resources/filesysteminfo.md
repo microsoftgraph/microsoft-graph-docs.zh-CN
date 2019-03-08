@@ -1,19 +1,19 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
-ms.openlocfilehash: 9a033a08b496225620245bb48cd1b0bef1f2a323
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 28f5cd631f9ea937150f9bb4c16e3775ea26d5d1
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806844"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482334"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo Facet
 
- **FileSystemInfo** 资源包含设备本地文件系统所报告的项目本地版本的属性。和在本地设备上一样，此 facet 可用于指定项目的上次修改日期或创建日期。
+**FileSystemInfo** 资源包含设备本地文件系统所报告的项目本地版本的属性。和在本地设备上一样，此 facet 可用于指定项目的上次修改日期或创建日期。
 
 可用于 [driveItem][item-resource] 资源的 fileSystemInfo 属性。
 
@@ -40,12 +40,12 @@ ms.locfileid: "27806844"
 | 属性                 | 类型           | 说明                                                                                                          |
 | :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
 | **createdDateTime**      | DateTimeOffset | 在客户端创建文件时的 UTC 日期和时间。                                                              |
-| **lastAccessedDateTime** | DateTimeOffset | 上次访问文件时的 UTC 日期和时间。仅可用于[最近的文件列表](../api/drive-recent.md)。 |
+| **lastAccessedDateTime** | DateTimeOffset | 上次访问文件时的 UTC 日期和时间。 仅可用于[最近的文件列表](../api/drive-recent.md)。 |
 | **lastModifiedDateTime** | DateTimeOffset | 在客户端上次修改文件时的 UTC 日期和时间。                                                        |
 
 ## <a name="notes"></a>注意
 
-来自 [DriveItem](driveitem.md) 资源上同一属性的 **createdDateTime** 和 **lastModifiedDateTime** 值有所不同。DriveItem 资源上的值是从服务中所见的创建和修改的日期和时间。**FileSystemInfo** 资源中存储的值由客户端提供。
+来自 **DriveItem** 资源上同一属性的 **createdDateTime** 和 [lastModifiedDateTime](driveitem.md) 值有所不同。DriveItem 资源上的值是从服务中所见的创建和修改的日期和时间。**FileSystemInfo** 资源中存储的值由客户端提供。
 
 例如，如果星期一在设备上创建文件，但直到星期二才上载到服务，则上载文件的客户端应写入 `fileSystemInfo` facet，以包括星期一这一创建日期。检索项元数据时，项的创建日期将反映为星期二，但 `fileSystemInfo` facet 将显示星期一这一创建的原始创建日期。
 
