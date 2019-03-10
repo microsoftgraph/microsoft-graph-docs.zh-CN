@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取驱动器
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: aaa670111b61fe0ecd1c111e5fd3be650d115435
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 78d31fb584d345a401fddefac37399093c2d084b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978674"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480444"
 ---
 # <a name="get-drive"></a>获取驱动器
 
@@ -64,7 +64,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>获取与组关联的文档库
 
-若要访问组的默认文档库，你的应用程序应请求组中的 **drive** 关系。
+若要访问组的默认文档库，应用应请求组中的 **drive** 关系。
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -82,7 +82,7 @@ GET /groups/{groupId}/drive
 
 ## <a name="get-the-document-library-for-a-site"></a>获取某个站点的文档库
 
-为了访问[站点的](../resources/site.md)默认文档库，你的应用程序应请求站点中的 **drive** 关系。
+若要访问[站点](../resources/site.md)的默认文档库，应用应请求站点中的 **drive** 关系。
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -112,11 +112,11 @@ GET /drives/{drive-id}
 
 | 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | string | 必需。 请求获取的驱动器的标识符。 |
+| _driveId_      | 字符串 | 必需。 请求获取的驱动器的标识符。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-这些方法支持 [$select 查询参数][odata-query-parameters]塑造响应。
+这些方法支持使用 [$select 查询参数][odata-query-parameters]形成响应。
 
 ## <a name="response"></a>响应
 
@@ -148,7 +148,7 @@ Content-type: application/json
 
 ### <a name="error-response-codes"></a>错误响应代码
 
-如果驱动器不存在且无法自动设置（当使用委派身份验证），将返回 `HTTP 404` 响应。
+如果驱动器不存在且无法自动设置（使用委派身份验证时），将返回 `HTTP 404` 响应。
 
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters

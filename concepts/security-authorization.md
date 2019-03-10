@@ -4,12 +4,12 @@ description: 可通过 Microsoft Graph 安全性 API 访问的安全数据是很
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: e20a9abd036414eefc750fd667dbf7c1004b65bb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b46df393b84c72efb40bb88d8cdeb7aca44449d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947083"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480423"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>授权和 Microsoft Graph 安全性 API
 
@@ -78,9 +78,17 @@ Azure AD 租户管理员必须对应用程序显式授予权限。 这必须按�
 3. 在新应用程序注册页面，选择“**添加平台**” > “**Web**”。 在“**重定向 URL**”字段中，输入重定向 URL。
 4. 在“**Microsoft Graph 权限**”部分的“**委派权限**”下，选择“**添加**”。 在对话框中，选择所需的权限。 如需查看权限列表，请参阅[安全权限](permissions-reference.md#security-permissions)。
 
-    >Microsoft Graph 安全性 API 要求，必须对 GET 查询使用 SecurityEvents.Read.All 作用域，并对 PATCH/POST 查询使用 SecurityEvents.ReadWrite.All 作用域。
+    >**注释：** Microsoft Graph 安全性 API 需要 *.Read.All scope 才能进行 GET 查询，需要 *.ReadWrite.All scope 才能进行 PATCH/POST/DELETE 查询。
 
-5. 选择“保存”****。
+    |权限 | 实体 | 受支持的请求 |
+    |:----------|:-------|:-------------------|
+    |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta)（预览） | GET |
+    |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta)（预览） | GET, POST |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta)（预览）</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)（预览） | GET |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta)（预览）</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)（预览） | GET, POST, PATCH |
+    |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta)（预览） | GET, POST, PATCH, DELETE|
+
+5. 选择“**保存**”。
 
 保存以下信息：
 
