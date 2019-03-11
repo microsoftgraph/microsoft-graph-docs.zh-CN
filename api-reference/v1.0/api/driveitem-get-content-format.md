@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 转换为其他格式
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: d33e03df0abcc9417c0fe5bc241e654185bd4313
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: b63e22aa280640362a70efcc4fa0d50673aab63d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978548"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481851"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
 使用此 API 检索特定格式的项的内容。
 并非所有文件都可转换成全部格式。
 
-若要下载其原始格式中的项，请参阅[下载项目的内容](driveitem-get-content.md)。
+若要下载原始格式的项目，请参阅[下载项内容](driveitem-get-content.md)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -41,7 +41,7 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 ### <a name="format-options"></a>格式选项
 
-以下是**format**参数的有效值：
+以下值对于 **format** 参数有效：
 
 | 格式值 | 说明                        | 支持的源扩展名
 |:-------------|:-----------------------------------|----------------------------

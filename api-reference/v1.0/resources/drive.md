@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 3b9744d8b652f0374c71f5304c326ba862c288a4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: a6a406ef5cb011e82d14c54ea0a35cd93eaab837
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929128"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480605"
 ---
 # <a name="drive-resource-type"></a>Drive 资源类型
 
@@ -22,7 +22,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 
 下面是 Drive 资源的 JSON 表示形式。
 
-**drive** 资源由 [**baseItem**](baseitem.md) 派生并继承该资源的属性。
+**drive** 资源派生自 [**baseItem**](baseitem.md) 并继承该资源的属性。
 
 <!--{
   "blockType": "resource",
@@ -73,7 +73,7 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [identitySet][]               | 识别创建项目的用户、设备或应用程序。只读。                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | 创建项的日期和时间。只读。                                                                                                                                                                                       |
-| 说明          | 字符串                        | 提供驱动器的用户可见说明。 读写。
+| description          | String                        | 提供驱动器的用户可见说明。 读写。
 | driveType            | String                        | 说明了由该资源表示的驱动器的类型。OneDrive 个人版驱动器将返回 `personal`。OneDrive for Business 将返回 `business`。SharePoint 文档库将返回 `documentLibrary`。只读。 |
 | id                   | String                        | 驱动器唯一标识符。只读。                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                                                                                           |
@@ -93,10 +93,10 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 
 | 关系 | 类型                                 | 说明
 |:-------------|:-------------------------------------|:-----------------------
-| 项目        | [DriveItem](driveitem.md)集合 | 驱动器中包含的所有项。只读。可为 NULL。
+| items        | [DriveItem](driveitem.md) 集合 | 驱动器中包含的所有项。只读。可为 NULL。
 | root         | [DriveItem](driveitem.md)            | 驱动器的根文件夹。只读。
-| special      | [DriveItem](driveitem.md)集合 | OneDrive 中可用的公用文件夹的集合。只读。可为 NULL。
-| list         | [List](list.md)                      | 在 SharePoint 中，基础文档库列表的驱动器。 只读。 可为 Null。
+| special      | [DriveItem](driveitem.md) 集合 | OneDrive 中可用的公用文件夹的集合。 只读。 可为 Null。
+| list         | [List](list.md)                      | 适合于 SharePoint 中的驱动器，基本文档库列表。 只读。 可为 Null。
 
 ## <a name="methods"></a>方法
 

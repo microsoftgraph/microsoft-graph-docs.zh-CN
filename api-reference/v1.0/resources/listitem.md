@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 3823c53bffce783714a78dfc910299e9ea976d77
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ba4b910f6d86caee23ce191b225d040ef023b4e7
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921393"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481613"
 ---
 # <a name="listitem-resource"></a>ListItem 资源
 
@@ -83,17 +83,17 @@ ms.locfileid: "27921393"
 
 | 属性名称        | 类型              | 说明
 |:---------------------|:------------------|:----------------------------------
-| ID                   | string            | 项的唯一标识符。只读。
+| id                   | string            | 项的唯一标识符。只读。
 | name                 | string            | 项目名称/标题。
 | createdBy            | [identitySet][]   | 此项的创建者的标识。 只读。
 | createdDateTime      | DateTimeOffset    | 创建项目的日期和时间。只读。
 | 说明          | string            | 项目的描述性文本。
-| eTag                 | string            | 该项目的 ETag。只读。                                                          |
+| eTag                 | 字符串            | 该项目的 ETag。只读。                                                          |
 | lastModifiedBy       | [identitySet][]   | 此项的最后一个修饰符的标识。 只读。
 | lastModifiedDateTime | DateTimeOffset    | 上次修改项目的日期和时间。只读。
 | parentReference      | [itemReference][] | 父信息（如果此项具有父级）。读写。
 | sharepointIds        | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
-| WebUrl               | string (url)      | 在浏览器中显示此项目的 URL。只读。
+| webUrl               | string (url)      | 在浏览器中显示此项目的 URL。只读。
 
 ## <a name="relationships"></a>关系
 
@@ -103,7 +103,7 @@ ms.locfileid: "27921393"
 |:------------------|:-------------------------------|:-------------------------------
 | driveItem         | [driveItem][]                  | 对于文档库，**driveItem** 关系将 listItem 显示为 **[driveItem][]**。
 | fields            | [fieldValueSet][]              | 在此列表项上设置的列的值。
-| 版本          | [listItemVersion][]集合 | 早期版本的列表项的列表。
+| 版本          | [listItemVersion][] 集合 | 先前版本的列表项的列表。
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -111,7 +111,7 @@ ms.locfileid: "27921393"
 [fieldValueSet]: fieldvalueset.md
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[列表]: list.md
+[list]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
 

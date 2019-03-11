@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: List
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 6bfd46e0822045869074cb0d78f14e3f0be0c994
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 7946346c5b872cad80eb3b8dc50109862ac15b8e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984386"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481403"
 ---
 # <a name="list-resource"></a>List 资源
 

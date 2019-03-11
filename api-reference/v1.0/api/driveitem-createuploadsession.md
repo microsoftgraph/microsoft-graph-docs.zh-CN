@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 可恢复的文件上传
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 21a6ed64e22e6a8fa7460418de4461adf36e0c4b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 6c430d0887736aed62053bf38541147229071a8b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942477"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482236"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -50,7 +50,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>请求正文
 
 无需请求正文。
-但是，您可以指定`item`属性在请求正文中，提供有关所上载文件的其他数据。
+但是，你可以在请求主体中指定 `item` 属性，以提供与上传的文件相关的其他数据。
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
@@ -85,7 +85,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 |:---------------------|:-------------------|:---------------------------------
 | 说明          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
-| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
+| name                 | String             | 项目名称（文件名和扩展名）。读写。
 
 ### <a name="request"></a>请求
 
@@ -127,20 +127,20 @@ Content-Type: application/json
 
 ## <a name="upload-bytes-to-the-upload-session"></a>将字节上传到上传会话
 
-若要上传文件或文件的一部分，你的应用程序可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。
-你可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 60 MiB 即可。
+若要上传文件或文件的一部分，你的应用可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。
+可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 60 MiB 即可。
 
-顺序，必须按顺序上载文件的片段。
+必须按顺序上传文件的片段。
 不按顺序上载文件的片段将导致错误。
 
-**注意：** 如果应用程序将一个文件拆分成多个字节范围，则每个字节范围的大小**必须**是 320 KiB 的倍数（327,680 个字节。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
+**注意：** 如果应用将一个文件拆分为多个字节范围，则每个字节范围的大小**必须**是 320 KiB（327,680 个字节）的倍数。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
 
 ### <a name="example"></a>示例
 
-在本示例中，应用程序将上传 128 字节大小的文件中的前 26 个字节。
+在本示例中，应用将上传 128 字节大小的文件中的前 26 个字节。
 
 * **Content-Length** 标头指定当前请求的大小。
-* **Content-Range** 标头指定此请求表示的整个文件中的字节范围。
+* **Content-Range** 标头指示此请求表示的整个文件中的字节范围。
 * 要先知道文件的总长度，然后才可以上传文件的第一个片段。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
@@ -153,7 +153,7 @@ Content-Range: bytes 0-25/128
 <bytes 0-25 of the file>
 ```
 
-**重要说明：** 应用程序必须确保 **Content-Range** 标头中指定的文件总大小对于所有的请求都相同。
+**重要说明：** 应用必须确保 **Content-Range** 标头中指定的文件总大小对于所有的请求都相同。
 如果某字节范围声明有不同的文件大小，则请求将失败。
 
 ### <a name="response"></a>响应
@@ -172,11 +172,11 @@ Content-Type: application/json
 }
 ```
 
-应用程序可以使用 **nextExpectedRanges** 值来确定开始上传下一字节范围的位置。
+应用可以使用 **nextExpectedRanges** 值来确定开始上传下一字节范围的位置。
 可能会发现指定了多个范围，这些范围指明了服务器尚未收到的文件部分。 如果需要恢复中断的传输，并且客户端不能确定服务的状态，这个方法很有用。
 
 始终都应根据以下最佳实践确定字节范围大小。 请勿假定 **nextExpectedRanges** 将返回大小范围正确的上传字节范围。
-**nextExpectedRanges** 属性指定尚未收到的文件的范围，而不是应用程序应上传文件的方式。
+**nextExpectedRanges** 属性指示尚未收到的文件的范围，而不是应用应上传文件的方式。
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -203,7 +203,7 @@ Content-Type: application/json
 ## <a name="completing-a-file"></a>完成文件
 
 接收最后一个文件字节范围后，服务器将响应 `HTTP 201 Created` 或 `HTTP 200 OK`。
-响应正文还将包括 **driveItem** 的默认属性集，用来表示已完成的文件。
+响应正文还会包括 **driveItem** 的默认属性集，用来表示已完成的文件。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
 
@@ -313,7 +313,7 @@ Content-Type: application/json
 若要显式提交上传会话，应用必须使用将用来提交上传会话的新 **driveItem** 资源发出 PUT 请求。
 此新请求应纠正生成原始上传错误的错误根源。
 
-若要指示应用程序提交现有上传会话，PUT 请求必须包含 `@microsoft.graph.sourceUrl` 属性以及上传会话 URL 的值。
+若要指示应用提交现有上传会话，PUT 请求必须包含 `@microsoft.graph.sourceUrl` 属性以及上传会话 URL 的值。
 
 <!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 

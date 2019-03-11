@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 下载文件
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 963d9cb2b80fa51f6b4b09d1316505672d876965
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 836ffe051077e41c7fcf9cb0404d8bb016948177
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927959"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481606"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>下载 DriveItem 的内容
 
@@ -61,7 +61,7 @@ GET /me/drive/items/{item-id}/content
 返回 `302 Found` 响应，该响应重定向到文件的预先身份验证的下载 URL。这是可通过 DriveItem 上的 `@microsoft.graph.downloadUrl` 属性获得的同一个 URL。
 
 应用必须遵循响应中的 `Location` 头，才能下载文件内容。
-302 重定向和开始立即下载文件，将自动按照许多 HTTP 客户端库。
+许多 HTTP 客户端库将自动遵循 302 重定向并立即开始下载文件。
 
 预先身份验证的下载 URL 仅在较短的一段时间 （几分钟后）内有效，不需要 `Authorization` 标头即可下载。
 

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 搜索文件
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: bf387d7c0b3ef3b161610bd8ba1d44685dd45764
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 8211d9565640dd1cc3376a2803135352dfa88e3b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976903"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481018"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 
@@ -47,7 +47,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 | 参数 | 类型  | 说明                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| q  | string | 用来搜索项目的查询文本。可以跨多个字段（包括文件名、元数据和文件内容）与值相匹配。 |
+| q  | 字符串 | 用来搜索项目的查询文本。可以跨多个字段（包括文件名、元数据和文件内容）与值相匹配。 |
 
 ## <a name="example"></a>示例
 

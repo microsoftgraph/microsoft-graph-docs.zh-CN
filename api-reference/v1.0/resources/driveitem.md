@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 65668c0d6c0f84ef08e4f7cf8c700ae3f1b33369
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 58253683bfcc7407af398ba801885f9624bb2c28
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986906"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482418"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "27986906"
 
 **DriveItem** 资源拥有作为属性进行模块化的多个 Facet，用于提供 driveItem 的标识和功能相关数据。例如：
 
-* 文件夹具有[**文件夹 facet**][folder]
-* 文件具有[**文件 facet**][file]。
-* 除了文件 facet，图像还具有[**图像 facet**][image]。
-* 使用照相机拍摄的图像（照片）具有[**照片 facet**][photo]，用于将项标识为照片，并提供照片的拍摄时间和拍摄所用设备等属性。
+* 文件夹具有 [**folder facet**][folder]
+* 文件具有 [**file facet**][file]。
+* 除了 file facet 之外，图像还具有 [**image facet**][image]。
+* 使用照相机拍摄的图像（照片）具有 [**photo facet**][photo]，用于将项标识为照片，并提供照片的拍摄时间和拍摄所用设备等属性。
 
 具有**文件夹** Facet 的项目充当项目的容器，因此具有指向文件夹下的 **driveItems** 集合的 `children` 引用。
 
@@ -105,29 +105,29 @@ ms.locfileid: "27986906"
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
 | cTag                 | String             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。
 | deleted              | [deleted][]        | 有关项目删除状态的信息。只读。
-| 说明          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
+| description          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
 | eTag                 | String             | 整个项目（元数据和内容）的 eTag。只读。
 | file                 | [file][]           | 文件元数据（如果此项是一个文件）。只读。
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
 | folder               | [folder][]         | 文件夹元数据（如果此项是一个文件夹）。只读。
-| id                   | 字符串             | 项在驱动器中的唯一标识符。只读。
+| id                   | String             | 项在驱动器中的唯一标识符。只读。
 | image                | [image][]          | 图像元数据（如果此项是一个图像）。只读。
 | lastModifiedBy       | [identitySet][]    | 上次修改项目的用户、设备和应用程序的标识。只读。
 | lastModifiedDateTime | DateTimeOffset     | 上次修改项目的日期和时间。只读。
 | location             | [geoCoordinates][] | 位置元数据（如果此项包含位置数据）。只读。
-| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
-| 包              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
+| name                 | String             | 项目名称（文件名和扩展名）。读写。
+| package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
 | photo                | [照片][]          | 照片元数据（如果此项包含照片）。只读。
 | publication          | [publicationFacet][] | 在支持此类操作的位置提供有关某个项目的已发布或签出状态信息。 默认情况下，不会返回此属性。 只读。 |
 | remoteItem           | [remoteItem][]     | 远程项目数据（如果此项是从驱动器共享的项目，而不是被访问的项目）。只读。
-| root                 | [根][]           | 如果此属性为非 NULL，则表明 driveItem 是驱动器中最上面的 driveItem。
+| root                 | [root][]           | 如果此属性为非 NULL，则表明 driveItem 是驱动器中最上面的 driveItem。
 | searchResult         | [searchResult][]   | 搜索元数据（如果此项目来自搜索结果）。只读。
-| shared               | [共享][]         | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。
+| shared               | [shared][]         | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。
 | sharepointIds        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 | size                 | Int64              | 项目大小，以字节为单位。只读。
 | specialFolder        | [specialFolder][]  | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。
-| video                | [视频][]          | 视频元数据（如果此项是一个视频）。只读。
+| video                | [video][]          | 视频元数据（如果此项是一个视频）。只读。
 | WebDavUrl            | String             | 项的可兼容 WebDAV 的 URL。
 | WebUrl               | String             | 在浏览器中显示此资源的 URL。只读。
 
@@ -138,13 +138,13 @@ ms.locfileid: "27986906"
 | 关系       | 类型                        | 说明
 |:-------------------|:----------------------------|:--------------------------
 | children           | driveItem 集合        | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
-| createdByUser      | [用户][]                    | 创建了项的用户的身份。 只读。
-| lastModifiedByUser | [用户][]                    | 上次修改项的用户的身份。 只读。
-| listItem           | [listItem][]                | 在 SharePoint 中，关联的文档库列表项的驱动器。 只读。 可为 Null。
+| createdByUser      | [user][]                    | 创建了项的用户的身份。 只读。
+| lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。 只读。
+| listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 只读。 可为 null。
 | permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
 | 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
-| 版本           | [driveItemVersion][]集合 | 早期版本的项目列表。 有关详细信息，请参阅[获取早期版本][]。 只读。 可为 Null。
-| workbook           | [workbook][]                | 对于的 Excel 电子表格文件，访问工作簿 API 来处理电子表格的内容。 可为 Null。
+| 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 Null。
+| 工作簿           | [workbook][]                | 如果是 Excel 工作表文件，访问工作簿 API 以使用工作表的内容。 可为 Null。
 
 ## <a name="instance-attributes"></a>实例属性
 
@@ -184,7 +184,7 @@ ms.locfileid: "27986906"
 
 [item-preview]: ../api/driveitem-preview.md
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>说明
 
 在 OneDrive for Business 或 SharePoint 文档库中，如果 **driveItem** 具有[folder][] Facet，则不返回 **cTag** 属性。
 
@@ -196,7 +196,7 @@ ms.locfileid: "27986906"
 [File]: file.md
 [fileSystemInfo]: filesysteminfo.md
 [folder]: folder.md
-[获取早期版本]: ../api/driveitem-list-versions.md
+[获取旧版本]: ../api/driveitem-list-versions.md
 [获取缩略图]: ../api/driveitem-list-thumbnails.md
 [identitySet]: identityset.md
 [image]: image.md
@@ -207,14 +207,14 @@ ms.locfileid: "27986906"
 [permission]: permission.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
-[Root]: root.md
+[root]: root.md
 [searchResult]: searchresult.md
-[Shared]: shared.md
+[shared]: shared.md
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
 [thumbnailSet]: thumbnailset.md
-[video]: video.md
-[workbook]: workbook.md
+[视频]: video.md
+[工作簿]: workbook.md
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 
