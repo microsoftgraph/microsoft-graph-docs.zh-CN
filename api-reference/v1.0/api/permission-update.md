@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 更改共享权限
 localization_priority: Normal
-ms.openlocfilehash: d972dc436b23fb62bb3df544584008eada0e99ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b2c3c41c9feecf7b2874ffdcc468593b6eeb7444
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825338"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482068"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -50,11 +50,11 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 在请求正文中，提供应更新的相关字段的值。
 
 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。
-为了获得最佳性能，不应包括尚未更改的现有值。
+为了实现最佳性能，不得添加未变化的现有值。
 
-| 属性 | 类型              | Description                   |
+| 属性 | 类型              | 说明                   |
 |:---------|:------------------|:------------------------------|
-| roles    | String 集合 | 权限类型的数组。 |
+| roles    | String collection | 权限类型的数组。 |
 
 ## <a name="response"></a>响应
 

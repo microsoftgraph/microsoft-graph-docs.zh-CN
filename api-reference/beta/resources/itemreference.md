@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
-ms.openlocfilehash: eb97c2c638d6a8f1679fa1a1b604249108888e76
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 63155bbeb586956f539b0c28ac1f7706189b5445
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859463"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482278"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 
@@ -41,12 +41,12 @@ ms.locfileid: "27859463"
 
 | 属性      | 类型              | 说明
 |:--------------|:------------------|:-----------------------------------------
-| driveId       | String            | 包含项的驱动器实例的唯一标识符。只读。
+| driveId       | 字符串            | 包含项的驱动器实例的唯一标识符。只读。
 | driveType     | String            | 标识驱动器的类型。 请参阅 [drive][] 资源查看其值。
 | id            | String            | 项在驱动器中的唯一标识符。只读。
-| name          | 字符串            | 所引用的项的名称。只读。
+| name          | String            | 所引用的项的名称。只读。
 | 路径          | String            | 可用于导航到该项的路径。只读。
-| shareId       | String            | 可通过 [Shares][] API 访问共享资源的唯一标识符。
+| shareId       | String            | 可通过 [Shares][] API 访问的共享资源的唯一标识符。
 | sharepointIds | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 
 [drive]: ../resources/drive.md
