@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 获取 SharePoint 列表
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 63b6fc4d2324c44c20e25fabe7ce0a89ce503ae3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 9e667055b47568d712349c6725bd4ebc70aa63fd
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916115"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482348"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
 

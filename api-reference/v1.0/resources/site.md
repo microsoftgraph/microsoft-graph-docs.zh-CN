@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: cd0631d8426dffa6ea731fabe024a1028e080f1c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d4dfb3f340a2b2b7ff5ad5a3c9279cb2a03c63be
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937010"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482089"
 ---
 # <a name="site-resource"></a>Site 资源
 
@@ -105,7 +105,7 @@ ms.locfileid: "27937010"
 |:------------------|:---------------------------------|:----------------------
 | **columns**       | Collection([columnDefinition][]) | 可以在此网站下方的列表中重复使用的列定义集合。
 | **contentTypes**  | Collection([contentType][])      | 为此网站定义的内容类型集合。
-| **drive**         | [驱动器][]                        | 此网站的默认驱动器（文档库）。
+| **drive**         | [drive][]                        | 此网站的默认驱动器（文档库）。
 | **驱动器**        | 集合（[drive][]）            | 网站下方的驱动器集合（文档库）。
 | **项目**         | 集合 ([baseItem][])         | 用于处理包含在此网站中的任何项目。不能枚举该集合。
 | **lists**         | Collection([list][])             | 此网站下方的列表集合。
@@ -118,7 +118,7 @@ ms.locfileid: "27937010"
 [drive]: drive.md
 [identitySet]: identityset.md
 [list]: list.md
-[site]: site.md
+[网站]: site.md
 [onenote]: onenote.md
 
 <!-- {

@@ -2,12 +2,12 @@
 title: Microsoft Graph REST API 1.0 版参考
 description: 欢迎使用 1.0 版终结点的 Microsoft Graph REST API 参考。
 localization_priority: Priority
-ms.openlocfilehash: 6e0dde56aae7857e9ae042f89ba5eb6b01737efa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: bdebe1415ea020f575b0cbf35712b30d7830df05
+ms.sourcegitcommit: 1089e82254068556b0d0c7be45e3270e46c961e6
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829071"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30546007"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API 1.0 版参考
 
@@ -52,5 +52,3 @@ Microsoft Graph 的强大之处在于可以在单个 Microsoft Graph REST 终结
 是否希望在 Microsoft Graph 中增加其他 API 或功能？ 在 [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632) 上发布新功能请求。
 
 对现有 Microsoft Graph API 有反馈意见？ 在 [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues) 上与我们联系。
-
-问题或使用 Microsof 代码的帮助

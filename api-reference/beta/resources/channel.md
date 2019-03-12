@@ -4,12 +4,12 @@ description: '频道是的团队中的 chatMessages 集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 73775cb446e9cd90eaf31ade28f25638465c884e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d58a3e0b867a675e378fa126108331fd5b27856c
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511000"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994466"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
@@ -28,7 +28,8 @@ ms.locfileid: "29511000"
 |[更新频道](../api/channel-patch.md) | [频道](channel.md) | 更新频道属性。|
 |[删除频道](../api/channel-delete.md) | 无 | 删除通道。|
 |[列出频道消息](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | 获取频道中的消息 |
-|[创建聊天线程](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md) 集合| 在指定频道中创建聊天线程。|
+|[发送渠道消息](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [向渠道发送消息](../api/channel-post-chatmessage.md) |
+
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -45,7 +46,6 @@ ms.locfileid: "29511000"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) 集合|频道中的所有消息集合。 一种导航属性。 可为空。 此 API 目前仅支持读取消息，但最终也会支持写入消息。|
-|chatThreads|[chatThread](chatthread.md) 集合|（这将会分阶段推出，以支持消息属性）chatThreads 支持新建消息，但不支持读取消息。 ChatThreads 是一种导航属性，可为空。|
 |选项卡|[teamsTab](../resources/teamstab.md) 集合|频道中的所有选项卡集合。 一种导航属性。|
 
 
@@ -56,7 +56,7 @@ ms.locfileid: "29511000"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "chatthreads"
+    "messages"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.channel"

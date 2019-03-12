@@ -4,12 +4,12 @@ description: Microsoft Graph 安全性 API 提供了统一的界面的架构，�
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: b3f1d041d6b1a525ba9eff63aca19baf287376ae
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: d0d4b68d6b16cc30c93157e1cc90afb4cf72cfae
+ms.sourcegitcommit: 2937b0e8983baf1b3d244c72a6ae3a211b17a1bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364589"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30376426"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -30,17 +30,17 @@ Microsoft Graph 安全性 API 包括以下关键实体。
 
 Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表中显示了对 GET 警报、PATCH 警报（可通过 Microsoft Graph 安全性 API 使用更新，但这些更新可能未在提供商的管理体验中公开）和“订阅”功能（通过 Webhook）。
 
-| 安全提供商 | GET 警报| PATCH 警报| 订阅订阅|
+| 安全提供商 | <p align="center">GET 警报</p>| <p align="center">PATCH 警报</p>| <p align="center">订阅订阅</p>|
 |:------------------|:---------|:-----------|:------------------|
-|[Azure 安全中心](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| &#x2713; | &#x2713; | &#x2713; |
-|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | &#x2713; | &#x2713; | &#x2713; |
-| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | &#x2713; | &#x2713; | &#x2713; |
-|[Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| &#x2713; | &#x2713; | [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|[Azure 高级威胁防护](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| &#x2713; | [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|Office 365 </br> <li> [默认](https://docs.microsoft.com/zh-CN/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/zh-CN/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li> | &#x2713; | [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|[Azure 信息保护](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive)**（预览版）**| &#x2713; | &#x2713; | &#x2713; |
-|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility)**（预览版）**| &#x2713; | [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|[Palo Alto 网络](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| &#x2713; | [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Azure 安全中心](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure 高级威胁防护](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|Office 365 <ul><li> [默认](https://docs.microsoft.com/zh-CN/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/zh-CN/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure 信息保护](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive)**（预览版）**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility)**（预览版）**| <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Palo Alto 网络](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 > **注意：** 新的提供商将会不断加入 Microsoft Graph 安全生态系统。 要请求新的提供商或从现有提供商处获取更长时间的支持，请[在 Microsoft Graph 安全性 GitHub 存储库中提交问题](https://github.com/microsoftgraph/security-api-solutions/issues/new)。
 
 ## <a name="common-use-cases"></a>常见用例
