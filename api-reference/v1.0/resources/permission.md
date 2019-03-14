@@ -1,22 +1,22 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Permission
 localization_priority: Priority
-ms.openlocfilehash: 988a4d6dcd1b04b34c5d2d03aca404b0a570922f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: f2781726be786c5eb0d4ed8103dc3b9a62137597
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834165"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482222"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 
-**** Permission 资源提供为 [DriveItem](driveitem.md) 资源授予的共享权限的相关信息。
+**Permission** 资源提供为 [DriveItem](driveitem.md) 资源授予的共享权限的相关信息。
 
 共享权限具有许多不同的形式。
-**** Permission 资源通过资源上的 facet 表示这些不同的形式。
+**Permission** 资源通过资源上的 facet 表示这些不同的形式。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -78,8 +78,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 | `sp.member` | 对于 SharePoint 和 OneDrive for Business，这表示成员角色。      |
 
 ## <a name="sharing-links"></a>共享链接
-最常见的权限类型是共享链接。
-共享链接提供唯一 URL，其中包含要共享的资源，以及提供对此资源的访问权限的身份验证令牌。 用户无需登录，即可访问通过共享链接共享的内容。 用户可以共享链接，从而提供对内容的只读权限或写入权限。
+最常见的权限类型是共享链接。 共享链接提供唯一 URL，其中包含要共享的资源，以及提供对此资源的访问权限的身份验证令牌。 用户无需登录，即可访问通过共享链接共享的内容。 用户可以共享链接，从而提供对内容的只读权限或写入权限。
 
 ### <a name="view-link"></a>查看链接
 查看链接提供对项的只读权限。
@@ -116,8 +115,7 @@ permission 资源使用 _Facet_ 说明此资源表示的权限种类。
 ```
 
 ### <a name="sharing-invitation"></a>共享邀请
-除了创建共享链接之外，还可以通过电子邮件地址邀请用户。
-在此方案中，权限创建的是发送到用户电子邮件地址的邀请。
+除了创建共享链接之外，还可以通过电子邮件地址邀请用户。 在此方案中，权限创建的是发送到用户电子邮件地址的邀请。
 
 #### <a name="invitation-to-an-email-address"></a>发送到电子邮件地址的邀请
 如果权限是通过电子邮件地址发送给没有匹配帐户的接收者，那么在用户首次单击链接并登录以兑换邀请前，可能无法设置 **grantedTo** 属性。
