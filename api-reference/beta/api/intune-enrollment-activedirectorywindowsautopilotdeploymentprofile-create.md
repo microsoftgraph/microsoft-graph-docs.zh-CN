@@ -4,12 +4,12 @@ description: 创建新的 activeDirectoryWindowsAutopilotDeploymentProfile 对�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8eb470994fc0227cfce3ad497bfe933df646b049
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1434d4cd171c28152ad84089ea3c4ad0b04fc5e7
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162970"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571667"
 ---
 # <a name="create-activedirectorywindowsautopilotdeploymentprofile"></a>创建 activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -41,7 +41,7 @@ POST /deviceManagement/windowsAutopilotDeploymentProfiles
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 activeDirectoryWindowsAutopilotDeploymentProfile 对象的 JSON 表示形式。
@@ -50,17 +50,18 @@ POST /deviceManagement/windowsAutopilotDeploymentProfiles
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|从[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)继承的配置文件密钥|
-|displayName|字符串|继承自[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)的配置文件的名称|
-|说明|字符串|从[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)继承的配置文件的说明|
+|id|String|从[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)继承的配置文件密钥|
+|displayName|String|继承自[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)的配置文件的名称|
+|说明|String|从[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)继承的配置文件的说明|
 |language|String|在继承自[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)的设备上配置的语言|
 |createdDateTime|DateTimeOffset|从[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)继承的配置文件创建时间|
 |lastModifiedDateTime|DateTimeOffset|从[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)继承的个人资料的上次修改时间|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|从[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)继承的 "现成体验" 设置|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|从[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)继承的注册状态屏幕设置|
-|extractHardwareHash|布尔|从[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)继承的配置文件的 HardwareHash 提取|
-|deviceNameTemplate|字符串|用于命名 AutoPilot 设备的模板。 它可以是自定义文本, 也可以包含设备的序列号或随机生成的数字。 模板生成的文本的总长度不能超过15个字符。 继承自[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
-|enableWhiteGlove|布尔|为配置文件启用 Autopilot 白色 Glove。 继承自[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|extractHardwareHash|Boolean|从[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)继承的配置文件的 HardwareHash 提取|
+|deviceNameTemplate|String|用于命名 AutoPilot 设备的模板。 它可以是自定义文本, 也可以包含设备的序列号或随机生成的数字。 模板生成的文本的总长度不能超过15个字符。 继承自[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|此配置文件适用的 AutoPilot 设备类型。 继承自[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)。 可取值为：`windowsPc`、`surfaceHub2`。|
+|enableWhiteGlove|Boolean|为配置文件启用 Autopilot 白色 Glove。 继承自[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 
 
 
@@ -74,7 +75,7 @@ POST /deviceManagement/windowsAutopilotDeploymentProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploymentProfiles
 Content-type: application/json
-Content-length: 1073
+Content-length: 1105
 
 {
   "@odata.type": "#microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile",
@@ -102,6 +103,7 @@ Content-length: 1073
   },
   "extractHardwareHash": true,
   "deviceNameTemplate": "Device Name Template value",
+  "deviceType": "surfaceHub2",
   "enableWhiteGlove": true
 }
 ```
@@ -111,7 +113,7 @@ Content-length: 1073
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1245
+Content-Length: 1277
 
 {
   "@odata.type": "#microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile",
@@ -142,6 +144,7 @@ Content-Length: 1245
   },
   "extractHardwareHash": true,
   "deviceNameTemplate": "Device Name Template value",
+  "deviceType": "surfaceHub2",
   "enableWhiteGlove": true
 }
 ```

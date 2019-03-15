@@ -4,12 +4,12 @@ description: windowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63cb69d7d84940722b9a0436b65aa12efd0b7c72
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4eaa6f948354164debd73793524d047b1ba204fd
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166379"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571436"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
@@ -29,12 +29,14 @@ windowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
 |[更新 windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-update.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|更新[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象的属性。|
 |[assignUserToDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|无|将用户分配给 Autopilot 设备。|
 |[unassignUserFromDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|无|将用户从 Autopilot 设备取消分配。|
+|[assignResourceAccountToDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|无|向 Autopilot 设备分配资源帐户。|
+|[unassignResourceAccountFromDevice 操作](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|无|取消分配 Autopilot 设备中的资源帐户。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
-|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows autopilot 设备的配置文件分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending`、`failed`。|
+|id|String|对象的 GUID|
+|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows autopilot 设备的配置文件分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 Windows autopilot 设备的详细状态。 可取值为：`none`、`hardwareRequirementsNotMet`。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Windows autopilot 设备的配置文件设置时间。|
 |orderIdentifier|String|Windows autopilot 设备的顺序标识符。|
@@ -47,6 +49,11 @@ windowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
 |lastContactedDateTime|DateTimeOffset|Intune 上次联系 Windows autopilot 设备的日期时间。|
 |addressableUserName|String|可寻址的用户名。|
 |userPrincipalName|String|用户主体名称。|
+|resourceName|String|资源名称。|
+|skuNumber|String|SKU 编号|
+|systemFamily|String|系统系列|
+|azureActiveDirectoryDeviceId|String|AAD 设备 ID|
+|managedDeviceId|String|托管设备 ID|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -78,7 +85,12 @@ windowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
   "enrollmentState": "String",
   "lastContactedDateTime": "String (timestamp)",
   "addressableUserName": "String",
-  "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "resourceName": "String",
+  "skuNumber": "String",
+  "systemFamily": "String",
+  "azureActiveDirectoryDeviceId": "String",
+  "managedDeviceId": "String"
 }
 ```
 

@@ -4,12 +4,12 @@ description: 读取 windowsUpdateForBusinessConfiguration 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 872846a4a9d72fa4b685a51a6727fb794ce3c75b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 10af8dbfb47d03ace56d5b6542f8f47651fe19c7
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162739"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570694"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>获取 windowsUpdateForBusinessConfiguration
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2083
+Content-Length: 2186
 
 {
   "value": {
@@ -114,7 +114,9 @@ Content-Length: 2083
     "autoRestartNotificationDismissal": "automatic",
     "scheduleRestartWarningInHours": 13,
     "scheduleImminentRestartWarningInMinutes": 7,
-    "userPauseAccess": "enabled"
+    "userPauseAccess": "enabled",
+    "userWindowsUpdateScanAccess": "enabled",
+    "updateNotificationLevel": "defaultNotifications"
   }
 }
 ```

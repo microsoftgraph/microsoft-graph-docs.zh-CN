@@ -4,12 +4,12 @@ description: 列出 iosManagedAppProtection 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e4b9448543cf756e689dfc3276061c6c32df281e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1c6fb07d0f27d03c21055c8777aba3f71a27c518
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175281"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571807"
 ---
 # <a name="list-iosmanagedappprotections"></a>列出 iosManagedAppProtections
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/iosManagedAppProtections
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtection
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2944
+Content-Length: 3005
 
 {
   "value": [
@@ -110,6 +110,7 @@ Content-Length: 2944
       "appActionIfDeviceComplianceRequired": "wipe",
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+      "allowedOutboundClipboardSharingExceptionLength": 14,
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged",
       "appDataEncryptionType": "afterDeviceRestart",

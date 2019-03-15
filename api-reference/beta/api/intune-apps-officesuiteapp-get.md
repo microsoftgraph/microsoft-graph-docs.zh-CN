@@ -4,12 +4,12 @@ description: 读取 officeSuiteApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7417c55fc05d808b9b071e96eb412a4f296d1c9a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6ba5785624b78ab614e63c12d9ac1cdae36b302f
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159603"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571450"
 ---
 # <a name="get-officesuiteapp"></a>获取 officeSuiteApp
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1853
+Content-Length: 1875
 
 {
   "value": {
@@ -112,6 +112,7 @@ Content-Length: 1853
       "powerPoint": true,
       "publisher": true,
       "sharePointDesigner": true,
+      "teams": true,
       "visio": true,
       "word": true
     },

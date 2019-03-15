@@ -4,12 +4,12 @@ description: 适用于企业的 Windows 更新配置。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f1516a9b7558d6d94f3bfc26e5a55cf983354e2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d13a7f4a49e290f1f1ba6cc41b1071d6f4deb22d
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155480"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571541"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>windowsUpdateForBusinessConfiguration 资源类型
 
@@ -39,16 +39,16 @@ ms.locfileid: "30155480"
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|传递优化模式。 可取值为：`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload`、`bypassMode`。|
+|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|传递优化模式。 可取值为：`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload` 或 `bypassMode`。|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|预发布功能。 可取值为：`userDefined`、`settingsOnly`、`settingsAndExperimentations`、`notAllowed`。|
-|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|自动更新模式。 可取值为：`userDefined`、`notifyDownload`、`autoInstallAtMaintenanceTime`、`autoInstallAndRebootAtMaintenanceTime`、`autoInstallAndRebootAtScheduledTime`、`autoInstallAndRebootWithoutEndUserControl`、`windowsDefault`。|
-|microsoftUpdateServiceAllowed|布尔|允许 Microsoft 更新服务|
-|driversExcluded|布尔|排除 Windows 更新驱动程序|
+|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|自动更新模式。 可取值为：`userDefined`、`notifyDownload`、`autoInstallAtMaintenanceTime`、`autoInstallAndRebootAtMaintenanceTime`、`autoInstallAndRebootAtScheduledTime`、`autoInstallAndRebootWithoutEndUserControl` 或 `windowsDefault`。|
+|microsoftUpdateServiceAllowed|Boolean|允许 Microsoft 更新服务|
+|driversExcluded|Boolean|排除 Windows 更新驱动程序|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|安装计划|
 |qualityUpdatesDeferralPeriodInDays|Int32|推迟质量更新的天数|
 |featureUpdatesDeferralPeriodInDays|Int32|推迟功能更新的天数|
@@ -57,13 +57,13 @@ ms.locfileid: "30155480"
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|质量更新暂停到期日期/时间|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|功能更新暂停到期日期/时间|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|确定将从哪些分支设备接收其更新。 可取值为：`userDefined`、`all`、`businessReadyOnly`、`windowsInsiderBuildFast`、`windowsInsiderBuildSlow`、`windowsInsiderBuildRelease`。|
-|skipChecksBeforeRestart|布尔|设置为在重新启动之前跳过所有复选: 电池级别 = 40%、用户状态、需要显示、演示模式、全屏模式、电话呼叫状态、游戏模式等。 |
+|skipChecksBeforeRestart|Boolean|设置为在重新启动之前跳过所有复选: 电池级别 = 40%、用户状态、需要显示、演示模式、全屏模式、电话呼叫状态、游戏模式等。 |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|在每月的几周安排更新安装。 可取值为：`userDefined`、`firstWeek`、`secondWeek`、`thirdWeek`、`fourthWeek`、`everyWeek`。|
-|qualityUpdatesPauseStartDate|Date|质量更新暂停开始日期。 此属性是只读的。|
-|featureUpdatesPauseStartDate|Date|功能更新暂停开始日期。 此属性是只读的。|
+|qualityUpdatesPauseStartDate|日期|质量更新暂停开始日期。 此属性是只读的。|
+|featureUpdatesPauseStartDate|日期|功能更新暂停开始日期。 此属性是只读的。|
 |featureUpdatesRollbackWindowInDays|Int32|回滚对其有效的功能更新后的天数|
-|qualityUpdatesWillBeRolledBack|布尔|指定是否在下一个设备签入时回滚质量更新|
-|featureUpdatesWillBeRolledBack|布尔|指定是否在下一个设备签入时回滚功能更新|
+|qualityUpdatesWillBeRolledBack|Boolean|指定是否在下一个设备签入时回滚质量更新|
+|featureUpdatesWillBeRolledBack|Boolean|指定是否在下一个设备签入时回滚功能更新|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|质量更新回滚开始日期/时间|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|功能更新回滚的开始日期时间|
 |engagedRestartDeadlineInDays|Int32|在非活动时段自动安排和执行挂起的重启的期限 (以天为单位), 有效范围为2到30天|
@@ -73,8 +73,10 @@ ms.locfileid: "30155480"
 |scheduleRestartWarningInHours|Int32|指定自动重新启动警告提醒通知的期限。 支持的值: 2、4、8、12或 24 (小时)。|
 |scheduleImminentRestartWarningInMinutes|Int32|指定自动重启即将发生的警告通知的期限。 支持的值:15、30或 60 (分钟)。|
 |userPauseAccess|[启用](../resources/intune-shared-enablement.md)|指定是否允许最终用户访问暂停软件更新。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|userWindowsUpdateScanAccess|[启用](../resources/intune-shared-enablement.md)|指定是否禁用用户对扫描 Windows 更新的访问权限。 可取值为：`notConfigured`、`enabled`、`disabled`。|
+|updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|指定用户看到的 Windows 更新通知的具体内容。 可取值为：`notConfigured`、`defaultNotifications`、`restartWarningsOnly`、`disableAllNotifications`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)集合|设备配置文件的组分配列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -138,7 +140,9 @@ ms.locfileid: "30155480"
   "autoRestartNotificationDismissal": "String",
   "scheduleRestartWarningInHours": 1024,
   "scheduleImminentRestartWarningInMinutes": 1024,
-  "userPauseAccess": "String"
+  "userPauseAccess": "String",
+  "userWindowsUpdateScanAccess": "String",
+  "updateNotificationLevel": "String"
 }
 ```
 

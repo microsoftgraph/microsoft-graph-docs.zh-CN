@@ -4,12 +4,12 @@ description: 更新 iosLobAppProvisioningConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 191df244cf163d0a5980c9fc0c5ae3a444e3468c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b85160912a59dacc19849321175f4869b25aeecd
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173085"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571184"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>更新 iosLobAppProvisioningConfiguration
 
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)对象的 JSON 表示形式。
@@ -50,12 +50,13 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |expirationDateTime|DateTimeOffset|可选的配置文件到期日期和时间。|
 |payloadFileName|String|有效负载文件名 (*. mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
+|roleScopeTagIds|String collection|此 iOS LOB 应用设置配置实体的作用域标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|description|String|管理员提供的设备配置说明。|
+|说明|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|
@@ -72,13 +73,16 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}
 Content-type: application/json
-Content-length: 313
+Content-length: 375
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "payloadFileName": "Payload File Name value",
   "payload": "cGF5bG9hZA==",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7
@@ -90,7 +94,7 @@ Content-length: 313
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 485
+Content-Length: 547
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
@@ -98,6 +102,9 @@ Content-Length: 485
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "payloadFileName": "Payload File Name value",
   "payload": "cGF5bG9hZA==",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

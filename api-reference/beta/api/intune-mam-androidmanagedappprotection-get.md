@@ -4,12 +4,12 @@ description: 读取 androidManagedAppProtection 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e063ca66307b79f97cff2aa860a8f7a07df9d43
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bf571deb9421d3362da2014ce2327eaaaef812b7
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165021"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571023"
 ---
 # <a name="get-androidmanagedappprotection"></a>获取 androidManagedAppProtection
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtecti
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2773
+Content-Length: 3101
 
 {
   "value": {
@@ -112,6 +112,7 @@ Content-Length: 2773
     "appActionIfDeviceComplianceRequired": "wipe",
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+    "allowedOutboundClipboardSharingExceptionLength": 14,
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged",
     "screenCaptureBlocked": true,
@@ -129,7 +130,11 @@ Content-Length: 2773
     ],
     "minimumWipePatchVersion": "Minimum Wipe Patch Version value",
     "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
-    "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe"
+    "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
+    "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
+    "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
+    "requiredAndroidSafetyNetAppsVerificationType": "enabled",
+    "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
   }
 }
 ```

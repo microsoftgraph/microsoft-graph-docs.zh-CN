@@ -4,12 +4,12 @@ description: 包含已排除的 Office365 应用程序的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ba3e53a26ff71dde2d5a95fde811e42ba2ccb99
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8dee0d5328f1f69c95159116bf913bc2abb959d7
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154024"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571688"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps 资源类型
 
@@ -31,8 +31,9 @@ ms.locfileid: "30154024"
 |oneNote|Boolean|如果不应排除 MS Office OneNote 的值, 则为。|
 |outlook|Boolean|如果不应排除 MS Office Outlook 的值, 则为。|
 |powerPoint|Boolean|如果不应排除 MS Office PowerPoint, 则值为。|
-|publisher|Boolean|应排除 MS Office 发布服务器的值。|
+|发布者|Boolean|应排除 MS Office 发布服务器的值。|
 |sharePointDesigner|Boolean|如果不应排除 MS Office SharePointDesigner 的值, 则为。|
+|协作|Boolean|如果不应排除 MS Office 团队, 则值为。|
 |visio|Boolean|应排除 MS Office Visio 的值。|
 |word|Boolean|如果不应排除 MS Office Word 的值, 则为。|
 
@@ -60,6 +61,7 @@ ms.locfileid: "30154024"
   "powerPoint": true,
   "publisher": true,
   "sharePointDesigner": true,
+  "teams": true,
   "visio": true,
   "word": true
 }

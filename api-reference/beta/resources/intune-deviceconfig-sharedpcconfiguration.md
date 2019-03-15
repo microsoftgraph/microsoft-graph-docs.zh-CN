@@ -4,12 +4,12 @@ description: 本主题提供由 sharedPCConfiguration 资源公开的已声明�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69bae063082a49bb46b6bdc0e6e3364cbd2a83e5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a3e24f0325c25804709004cac7c1e421c709cb88
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152631"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571044"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>sharedPCConfiguration 资源类型
 
@@ -37,28 +37,29 @@ ms.locfileid: "30152631"
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|指定在共享电脑上管理帐户的方式。 仅当 disableAccountManager 为 false 时适用。|
 |allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|指示允许在共享电脑上使用哪种类型的帐户。 可取值为：`notConfigured`、`guest`、`domain`。|
 |localStorage|[启用](../resources/intune-shared-enablement.md)|指定在共享电脑上是否允许本地存储。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|allowLocalStorage|布尔|指定在共享电脑上是否允许本地存储。|
+|allowLocalStorage|Boolean|指定在共享电脑上是否允许本地存储。|
 |setAccountManager|[启用](../resources/intune-shared-enablement.md)|禁用共享电脑模式的帐户管理器。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|disableAccountManager|布尔|禁用共享电脑模式的帐户管理器。|
+|disableAccountManager|Boolean|禁用共享电脑模式的帐户管理器。|
 |setEduPolicies|[启用](../resources/intune-shared-enablement.md)|指定是否应启用/禁用/禁用/禁用默认共享 PC 教育环境策略。 对于 Windows 10 RS2 及更高版本，将应用此策略而不将 Enabled 设置为 true。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |disableEduPolicies|Boolean|指定是否应禁用默认的共享电脑教育环境策略。 对于 Windows 10 RS2 及更高版本，将应用此策略而不将 Enabled 设置为 true。|
 |setPowerPolicies|[启用](../resources/intune-shared-enablement.md)|指定是否应启用/禁用默认的共享电脑电源策略。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|disablePowerPolicies|布尔|指定是否应禁用默认的共享电脑电源策略。|
+|disablePowerPolicies|Boolean|指定是否应禁用默认的共享电脑电源策略。|
 |signInOnResume|[启用](../resources/intune-shared-enablement.md)|指定当设备从睡眠模式唤醒时登录时的要求。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |disableSignInOnResume|Boolean|禁用每当设备从睡眠模式唤醒时需要登录的要求。|
-|enabled|布尔值|启用共享的电脑模式并应用共享的电脑策略。|
+|enabled|Boolean|启用共享的电脑模式并应用共享的电脑策略。|
 |idleTimeBeforeSleepInSeconds|Int32|指定电脑进入睡眠状态之前设备必须保持空闲状态的时间（以秒为单位）。 将此值设置为 0 可防止发生睡眠超时。|
 |kioskAppDisplayName|String|指定启动由 SetKioskAppUserModelId 指定的应用的登录屏幕上显示的帐户的显示文本。 仅在设置 KioskAppUserModelId 后适用。|
 |kioskAppUserModelId|String|指定要与分配的访问权限结合使用的应用的应用程序用户模型 ID。|
 |maintenanceStartTime|TimeOfDay|指定维护小时的每日开始时间。|
+|fastFirstSignIn|[启用](../resources/intune-shared-enablement.md)|指定是否将新的非管理员 Azure AD 帐户自动连接到预配置的候选本地帐户。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -114,7 +115,8 @@ ms.locfileid: "30152631"
   "idleTimeBeforeSleepInSeconds": 1024,
   "kioskAppDisplayName": "String",
   "kioskAppUserModelId": "String",
-  "maintenanceStartTime": "String (time of day)"
+  "maintenanceStartTime": "String (time of day)",
+  "fastFirstSignIn": "String"
 }
 ```
 

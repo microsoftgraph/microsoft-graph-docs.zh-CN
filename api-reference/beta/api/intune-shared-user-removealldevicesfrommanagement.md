@@ -4,12 +4,12 @@ description: 停用该用户管理的所有设备
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 390a464110c5f6b18b385476862e3316e2be1ed7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 72a4ebafd857abef85231b90327f9f6d94e5f99b
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141221"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571079"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement 操作
 
@@ -19,7 +19,7 @@ ms.locfileid: "30141221"
 
 停用该用户管理的所有设备
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

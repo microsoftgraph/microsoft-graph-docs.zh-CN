@@ -4,12 +4,12 @@ description: 更新 deviceManagement 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 10242540e5f4bfb4d722253c86d25bf22e72d05e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a71212652d789b08a8cb496b6b98c18b12d3e9c7
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141214"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571051"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
@@ -21,7 +21,7 @@ ms.locfileid: "30141214"
 
 ## <a name="prerequisites"></a>先决条件
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 请注意, 该权限根据工作流的不同而有所不同。
 
@@ -34,11 +34,11 @@ ms.locfileid: "30141214"
 | &nbsp; &nbsp; **设备配置** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **远程协助** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **电信费用管理** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -61,7 +61,7 @@ PATCH /deviceManagement
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 
@@ -71,10 +71,10 @@ PATCH /deviceManagement
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备的唯一标识符。|
+|id|String|设备的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|GUID|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|布尔|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
+|legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
 |maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|

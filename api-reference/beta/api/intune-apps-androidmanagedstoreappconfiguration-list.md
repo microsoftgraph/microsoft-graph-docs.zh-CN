@@ -4,12 +4,12 @@ description: 列出 androidManagedStoreAppConfiguration 对象的属性和关系
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03db4da4fe464eeb13d5b7800bf1af9b24b2ae36
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7df116f50c0b3f0c35e85af5e25b8b57eed223bd
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147605"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570946"
 ---
 # <a name="list-androidmanagedstoreappconfigurations"></a>列出 androidManagedStoreAppConfigurations
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 852
+Content-Length: 889
 
 {
   "value": [
@@ -88,7 +88,8 @@ Content-Length: 852
           "permission": "Permission value",
           "action": "autoGrant"
         }
-      ]
+      ],
+      "appSupportsOemConfig": true
     }
   ]
 }

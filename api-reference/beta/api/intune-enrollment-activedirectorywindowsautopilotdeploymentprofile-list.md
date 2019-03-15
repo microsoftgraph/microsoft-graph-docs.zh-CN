@@ -4,12 +4,12 @@ description: 列出 activeDirectoryWindowsAutopilotDeploymentProfile 对象的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4338c236976198263c646fcbb4a256b525f184d0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 50e22ab4ce7218d21ce8a6f3c04ee2e715afeced
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150167"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571709"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>列出 activeDirectoryWindowsAutopilotDeploymentProfiles
 
@@ -41,7 +41,7 @@ GET /deviceManagement/windowsAutopilotDeploymentProfiles
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeployment
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1394
+Content-Length: 1430
 
 {
   "value": [
@@ -95,6 +95,7 @@ Content-Length: 1394
       },
       "extractHardwareHash": true,
       "deviceNameTemplate": "Device Name Template value",
+      "deviceType": "surfaceHub2",
       "enableWhiteGlove": true
     }
   ]

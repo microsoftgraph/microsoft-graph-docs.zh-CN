@@ -4,12 +4,12 @@ description: 更新 windowsAutopilotDeviceIdentity 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8d1afaa0b810d2559daa358c9d7af0895e5ac2d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7e6aaba99e2526b139fd06fa047ec36828ef24a6
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159519"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570785"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>更新 windowsAutopilotDeviceIdentity
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)对象的 JSON 表示形式。
@@ -51,8 +51,8 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
-|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows autopilot 设备的配置文件分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending`、`failed`。|
+|id|String|对象的 GUID|
+|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows autopilot 设备的配置文件分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 Windows autopilot 设备的详细状态。 可取值为：`none`、`hardwareRequirementsNotMet`。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Windows autopilot 设备的配置文件设置时间。|
 |orderIdentifier|String|Windows autopilot 设备的顺序标识符。|
@@ -65,6 +65,11 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |lastContactedDateTime|DateTimeOffset|Intune 上次联系 Windows autopilot 设备的日期时间。|
 |addressableUserName|String|可寻址的用户名。|
 |userPrincipalName|String|用户主体名称。|
+|resourceName|String|资源名称。|
+|skuNumber|String|SKU 编号|
+|systemFamily|String|系统系列|
+|azureActiveDirectoryDeviceId|String|AAD 设备 ID|
+|managedDeviceId|String|托管设备 ID|
 
 
 
@@ -78,7 +83,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}
 Content-type: application/json
-Content-length: 755
+Content-length: 1001
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -94,7 +99,12 @@ Content-length: 755
   "enrollmentState": "enrolled",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "resourceName": "Resource Name value",
+  "skuNumber": "Sku Number value",
+  "systemFamily": "System Family value",
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 
@@ -103,7 +113,7 @@ Content-length: 755
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 804
+Content-Length: 1050
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -120,7 +130,12 @@ Content-Length: 804
   "enrollmentState": "enrolled",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "resourceName": "Resource Name value",
+  "skuNumber": "Sku Number value",
+  "systemFamily": "System Family value",
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 

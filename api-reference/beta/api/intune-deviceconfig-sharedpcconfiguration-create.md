@@ -4,12 +4,12 @@ description: 创建新的 sharedPCConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73b28cfc822d7ced8ba0e418825ea7ad37949f18
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0cddfdc9af67df0961c0361bedb49315578cacf3
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165105"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571583"
 ---
 # <a name="create-sharedpcconfiguration"></a>创建 sharedPCConfiguration
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 sharedPCConfiguration 对象的 JSON 表示形式。
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|指定在共享电脑上管理帐户的方式。 仅当 disableAccountManager 为 false 时适用。|
@@ -76,6 +76,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |kioskAppDisplayName|String|指定启动由 SetKioskAppUserModelId 指定的应用的登录屏幕上显示的帐户的显示文本。 仅在设置 KioskAppUserModelId 后适用。|
 |kioskAppUserModelId|String|指定要与分配的访问权限结合使用的应用的应用程序用户模型 ID。|
 |maintenanceStartTime|TimeOfDay|指定维护小时的每日开始时间。|
+|fastFirstSignIn|[启用](../resources/intune-shared-enablement.md)|指定是否将新的非管理员 Azure AD 帐户自动连接到预配置的候选本地帐户。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 
 
 
@@ -89,7 +90,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1114
+Content-length: 1147
 
 {
   "@odata.type": "#microsoft.graph.sharedPCConfiguration",
@@ -122,7 +123,8 @@ Content-length: 1114
   "idleTimeBeforeSleepInSeconds": 12,
   "kioskAppDisplayName": "Kiosk App Display Name value",
   "kioskAppUserModelId": "Kiosk App User Model Id value",
-  "maintenanceStartTime": "11:59:24.7240000"
+  "maintenanceStartTime": "11:59:24.7240000",
+  "fastFirstSignIn": "enabled"
 }
 ```
 
@@ -131,7 +133,7 @@ Content-length: 1114
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1286
+Content-Length: 1319
 
 {
   "@odata.type": "#microsoft.graph.sharedPCConfiguration",
@@ -167,7 +169,8 @@ Content-Length: 1286
   "idleTimeBeforeSleepInSeconds": 12,
   "kioskAppDisplayName": "Kiosk App Display Name value",
   "kioskAppUserModelId": "Kiosk App User Model Id value",
-  "maintenanceStartTime": "11:59:24.7240000"
+  "maintenanceStartTime": "11:59:24.7240000",
+  "fastFirstSignIn": "enabled"
 }
 ```
 

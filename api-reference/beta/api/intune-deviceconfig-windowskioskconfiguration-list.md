@@ -4,12 +4,12 @@ description: 列出 windowsKioskConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c052ee390fe451c22cdbe047fb99bd1cbeaa97a4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 58c071000b60ae98b62c821bc01854e3d8939136
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168836"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570687"
 ---
 # <a name="list-windowskioskconfigurations"></a>列出 windowsKioskConfigurations
 
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2136
+Content-Length: 2174
 
 {
   "value": [
@@ -92,12 +92,14 @@ Content-Length: 2136
                 "startLayoutTileSize": "small",
                 "name": "Name value",
                 "appType": "store",
+                "autoLaunch": true,
                 "appUserModelId": "App User Model Id value",
                 "appId": "App Id value",
                 "containedAppId": "Contained App Id value"
               }
             ],
             "showTaskBar": true,
+            "allowAccessToDownloadsFolder": true,
             "disallowDesktopApps": true,
             "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
           },
@@ -119,8 +121,7 @@ Content-Length: 2136
       "kioskBrowserBlockedUrlExceptions": [
         "Kiosk Browser Blocked Url Exceptions value"
       ],
-      "edgeKioskEnablePublicBrowsing": true,
-      "edgeKioskResetAfterIdleTimeInMinutes": 4
+      "edgeKioskEnablePublicBrowsing": true
     }
   ]
 }

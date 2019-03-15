@@ -4,12 +4,12 @@ description: 一类应用程序的基类
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0487fa24ecd2d27817349b68063cf606a2401944
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4cccd1b5e7ec7ca16aeb76b87fc31d90e92e7dcd
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170474"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30572080"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>windowsKioskDesktopApp 资源类型
 
@@ -25,9 +25,10 @@ ms.locfileid: "30170474"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的启动布局的应用程序磁贴大小。 可取值为：`hidden`、`small`、`medium`、`wide`、`large`。|
-|name|字符串|表示从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序的友好名称|
+|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的启动布局的应用程序磁贴大小。 可取值为：`hidden`、`small`、`medium`、`wide` 或 `large`。|
+|name|String|表示从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序的友好名称|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序类型。 可取值为：`unknown`、`store`、`desktop`、`aumId`。|
+|autoLaunch|Boolean|允许在从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的多应用程序展台模式中自动启动应用程序|
 |路径|String|定义桌面应用程序的路径|
 |desktopApplicationId|String|定义应用程序的 DesktopApplicationID|
 |desktopApplicationLinkPath|String|定义应用程序的 DesktopApplicationLinkPath|
@@ -48,6 +49,7 @@ ms.locfileid: "30170474"
   "startLayoutTileSize": "String",
   "name": "String",
   "appType": "String",
+  "autoLaunch": true,
   "path": "String",
   "desktopApplicationId": "String",
   "desktopApplicationLinkPath": "String"

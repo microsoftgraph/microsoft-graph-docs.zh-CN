@@ -4,12 +4,12 @@ description: 读取 androidManagedStoreApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d219ec7a8cc51eb28a2e02e4a33e744d665735af
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bb3a35c5f8d3fdc15b1eaac1b6d742ecaa93372
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161010"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570715"
 ---
 # <a name="get-androidmanagedstoreapp"></a>获取 androidManagedStoreApp
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1130
+Content-Length: 1162
 
 {
   "value": {
@@ -99,7 +99,8 @@ Content-Length: 1130
     "appIdentifier": "App Identifier value",
     "usedLicenseCount": 0,
     "totalLicenseCount": 1,
-    "appStoreUrl": "https://example.com/appStoreUrl/"
+    "appStoreUrl": "https://example.com/appStoreUrl/",
+    "supportsOemConfig": true
   }
 }
 ```

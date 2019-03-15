@@ -4,12 +4,12 @@ description: 读取 depMacOSEnrollmentProfile 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88e922e192cfeeb172805d252f1e690c79fdbaa3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 06b366394ce089836fa1047733a9406b021c8998
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166911"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571247"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>获取 depMacOSEnrollmentProfile
 
@@ -44,7 +44,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacO
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1187
+Content-Length: 1266
 
 {
   "value": {
@@ -97,7 +97,9 @@ Content-Length: 1187
     "privacyPaneDisabled": true,
     "registrationDisabled": true,
     "fileVaultDisabled": true,
-    "iCloudDiagnosticsDisabled": true
+    "iCloudDiagnosticsDisabled": true,
+    "iCloudStorageDisabled": true,
+    "chooseYourLockScreenDisabled": true
   }
 }
 ```

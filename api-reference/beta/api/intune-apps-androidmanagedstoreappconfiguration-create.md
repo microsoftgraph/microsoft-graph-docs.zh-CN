@@ -4,12 +4,12 @@ description: 创建新的 androidManagedStoreAppConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f83097929793df891a17ceb1de5c08892fa32c9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4e97ef467a0e615d8da1995fce20fa4a2c00e986
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169459"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571954"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>创建 androidManagedStoreAppConfiguration
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 androidManagedStoreAppConfiguration 对象的 JSON 表示形式。
@@ -50,17 +50,18 @@ POST /deviceAppManagement/mobileAppConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|id|String|实体的键。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|String 集合|关联的应用。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |roleScopeTagIds|String collection|此应用配置实体的范围标记列表。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|description|String|管理员提供的设备配置说明。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|说明|String|管理员提供的设备配置说明。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |displayName|String|管理员提供的设备配置名称。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Android 企业应用程序配置包 id。|
 |payloadJson|String|Android 企业应用配置 JSON 有效负载。|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)集合|Android 应用程序权限和相应权限操作的列表。|
+|appSupportsOemConfig|Boolean|此 AppConfig 是否为 OEMConfig 策略。|
 
 
 
@@ -74,7 +75,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 559
+Content-length: 592
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -95,7 +96,8 @@ Content-length: 559
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "appSupportsOemConfig": true
 }
 ```
 
@@ -104,7 +106,7 @@ Content-length: 559
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 731
+Content-Length: 764
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -128,7 +130,8 @@ Content-Length: 731
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "appSupportsOemConfig": true
 }
 ```
 

@@ -4,12 +4,12 @@ description: 列出 sharedPCConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cd711a832f2706cd4daa3c66a98d49aedd9d31a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f2713784c5df9c6a836ecfa06d27e5b28904ddcb
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159484"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571261"
 ---
 # <a name="list-sharedpcconfigurations"></a>列出 sharedPCConfigurations
 
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1455
+Content-Length: 1492
 
 {
   "value": [
@@ -101,7 +101,8 @@ Content-Length: 1455
       "idleTimeBeforeSleepInSeconds": 12,
       "kioskAppDisplayName": "Kiosk App Display Name value",
       "kioskAppUserModelId": "Kiosk App User Model Id value",
-      "maintenanceStartTime": "11:59:24.7240000"
+      "maintenanceStartTime": "11:59:24.7240000",
+      "fastFirstSignIn": "enabled"
     }
   ]
 }

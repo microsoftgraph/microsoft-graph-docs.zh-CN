@@ -4,12 +4,12 @@ description: 注册 abandonment 详细信息报告的元数据
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d5721e0cb5e466ba684fa1e73572a1ecf87a398b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 67cc5e74b70849df502ea5f00c39e37ed9c55c38
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141060"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571275"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>managedDeviceEnrollmentAbandonmentDetails 函数
 
@@ -19,7 +19,7 @@ ms.locfileid: "30141060"
 
 注册 abandonment 详细信息报告的元数据
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。
@@ -51,8 +51,8 @@ GET /reports/managedDeviceEnrollmentAbandonmentDetails
 |:---|:---|:---|
 |skip|Int32|尚未记录|
 |top|Int32|尚未记录|
-|filter|字符串|尚未记录|
-|skipToken|字符串|尚未记录|
+|筛选器|String|尚未记录|
+|skipToken|String|尚未记录|
 
 
 

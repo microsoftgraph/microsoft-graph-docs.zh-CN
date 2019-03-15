@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1c7107982a33452cd9dd00829cba08f108c6394
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 63f00d8cdb8030a29baccc4a8f29e6c6e562c900
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164748"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571947"
 ---
 # <a name="windowskioskprofile-resource-type"></a>windowsKioskProfile 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "30164748"
 |属性|类型|说明|
 |:---|:---|:---|
 |profileId|String|实体的键。|
-|profileName|字符串|这是一个友好名称, 用于标识一组应用程序、"开始" 菜单上这些应用程序的布局以及为其分配了此展台配置的用户。|
+|profileName|String|这是一个友好名称, 用于标识一组应用程序、"开始" 菜单上这些应用程序的布局以及为其分配了此展台配置的用户。|
 |appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|将用于此展台配置的应用程序配置。|
 |userAccountsConfiguration|[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)集合|将锁定到此展台配置的用户帐户。 此集合最多可包含100个元素。|
 
@@ -50,12 +50,14 @@ ms.locfileid: "30164748"
         "startLayoutTileSize": "String",
         "name": "String",
         "appType": "String",
+        "autoLaunch": true,
         "appUserModelId": "String",
         "appId": "String",
         "containedAppId": "String"
       }
     ],
     "showTaskBar": true,
+    "allowAccessToDownloadsFolder": true,
     "disallowDesktopApps": true,
     "startMenuLayoutXml": "binary"
   },

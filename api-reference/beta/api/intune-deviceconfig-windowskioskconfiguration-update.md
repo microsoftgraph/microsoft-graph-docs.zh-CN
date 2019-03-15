@@ -4,12 +4,12 @@ description: 更新 windowsKioskConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cee7c118ba4e78670c0fdef8dd512bcfdc063d5c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b25f28e9ea87af0c6b6366fe43324c46114c0c5e
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160541"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571576"
 ---
 # <a name="update-windowskioskconfiguration"></a>更新 windowsKioskConfiguration
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)对象的 JSON 表示形式。
@@ -57,7 +57,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md)集合|此策略设置允许为展台配置定义展台配置文件的列表。 此集合最多可包含3个元素。|
@@ -69,7 +69,6 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |kioskBrowserBlockedURLs|String collection|指定展台浏览器不应导航到的 url|
 |kioskBrowserBlockedUrlExceptions|String collection|指定展台浏览器允许其导航到的 url|
 |edgeKioskEnablePublicBrowsing|Boolean|为 Microsoft Edge 浏览器启用公共浏览展台模式。 默认值为 false。|
-|edgeKioskResetAfterIdleTimeInMinutes|Int32|指定在 Microsoft Edge 展台重置前的上次用户活动的时间 (以分钟为单位)。  有效值为0-1440。 默认值为 5。 0表示不重置。 有效值为0至1440|
 
 
 
@@ -83,7 +82,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1719
+Content-length: 1753
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -107,12 +106,14 @@ Content-length: 1719
             "startLayoutTileSize": "small",
             "name": "Name value",
             "appType": "store",
+            "autoLaunch": true,
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
           }
         ],
         "showTaskBar": true,
+        "allowAccessToDownloadsFolder": true,
         "disallowDesktopApps": true,
         "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
       },
@@ -134,8 +135,7 @@ Content-length: 1719
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true,
-  "edgeKioskResetAfterIdleTimeInMinutes": 4
+  "edgeKioskEnablePublicBrowsing": true
 }
 ```
 
@@ -144,7 +144,7 @@ Content-length: 1719
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1891
+Content-Length: 1925
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -171,12 +171,14 @@ Content-Length: 1891
             "startLayoutTileSize": "small",
             "name": "Name value",
             "appType": "store",
+            "autoLaunch": true,
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
           }
         ],
         "showTaskBar": true,
+        "allowAccessToDownloadsFolder": true,
         "disallowDesktopApps": true,
         "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
       },
@@ -198,8 +200,7 @@ Content-Length: 1891
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true,
-  "edgeKioskResetAfterIdleTimeInMinutes": 4
+  "edgeKioskEnablePublicBrowsing": true
 }
 ```
 

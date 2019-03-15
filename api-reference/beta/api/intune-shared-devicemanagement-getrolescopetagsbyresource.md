@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 54cc2ba137a3c4a45fc3ca724fa47c1f3f3e0490
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ea20330fadc4db5a3ed814450b34b660ba230789
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140661"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571289"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>getRoleScopeTagsByResource 函数
 
@@ -19,12 +19,12 @@ ms.locfileid: "30140661"
 
 尚未记录
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
+| &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -41,7 +41,7 @@ GET /deviceManagement/getRoleScopeTagsByResource
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。
@@ -49,7 +49,7 @@ GET /deviceManagement/getRoleScopeTagsByResource
 
 |属性|类型|说明|
 |:---|:---|:---|
-|资源|字符串|尚未记录|
+|资源|String|尚未记录|
 
 
 

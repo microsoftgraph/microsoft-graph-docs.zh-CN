@@ -4,12 +4,12 @@ description: 创建新的 windows10GeneralConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 96e51858dbd5b4268a4e663f49ec5dc0c5734f59
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 883b71c71c6ef2d39f235aa070e02c195bd17890
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159799"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30572059"
 ---
 # <a name="create-windows10generalconfiguration"></a>创建 windows10GeneralConfiguration
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 windows10GeneralConfiguration 对象的 JSON 表示形式。
@@ -51,12 +51,12 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |taskManagerBlockEndTask|Boolean|指定非管理员是否可以使用任务管理器结束任务。|
@@ -64,6 +64,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |enableAutomaticRedeployment|Boolean|允许具有管理权限的用户在设备锁屏的屏幕上使用 CTRL + Win + R 删除所有用户数据和设置, 以便可以自动重新配置设备并将其重新注册到管理中。|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|控制 Microsoft 帐户登录助手 (wlidsvc) NT 服务。 可取值为：`notConfigured`、`disabled`。|
 |authenticationAllowSecondaryDevice|Boolean|允许辅助身份验证设备使用 Windows。|
+|authenticationWebSignIn|[启用](../resources/intune-shared-enablement.md)|指示是否将启用 Web 凭据提供程序。 可取值为：`notConfigured`、`enabled`、`disabled`。|
 |authenticationPreferredAzureADTenantDomainName|String|指定 Azure AD 租户中可用域之间的首选域。|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|指定是否允许或禁止联邦信息处理标准 (FIPS) 策略。|
 |displayAppListWithGdiDPIScalingTurnedOn|String collection|启用了 GDI DPI 缩放的旧版应用程序的列表。|
@@ -128,7 +129,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeNewTabPageURL|String|指定在创建新选项卡时打开的页面。|
 |edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|使 Home 按钮可以隐藏、加载默认起始页、加载新的选项卡页或自定义 URL|
 |edgeHomeButtonConfigurationEnabled|Boolean|启用 "主页" 按钮配置。|
-|edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|指定在开始时打开的页面类型。 可取值为：`notConfigured`、`startPage`、`newTabPage`、`previousPages`、`specificPages`。|
+|edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|指定在开始时打开的页面类型。 可取值为：`notConfigured`、`startPage`、`newTabPage`、`previousPages` 或 `specificPages`。|
 |edgeBlockSideloadingExtensions|Boolean|指示用户是否可以旁加载扩展。|
 |edgeRequiredExtensionPackageFamilyNames|String collection|指定所需的浏览器扩展的程序包系列名称列表, 用户无法关闭这些扩展。|
 |edgeBlockPrinting|Boolean|将 Edge 配置为允许或阻止打印。|
@@ -140,11 +141,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeBlockPrelaunch|Boolean|确定 Microsoft Edge 在 Windows 启动时是否为 prelaunched。|
 |edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|控制边缘在切换到 Internet Explorer 之前显示的消息。 可取值为：`notConfigured`、`disabled`、`enabled`、`keepGoing`。|
 |edgePreventCertificateErrorOverride|Boolean|允许或阻止用户覆盖证书错误。|
-|edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|根据配置展台模式, 控制 Microsoft Edge 设置的限制方式。 可取值为：`notConfigured`、`digitalSignage`、`normalMode`、`publicBrowsingSingleApp`、`publicBrowsingMultiApp`。|
+|edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|根据配置展台模式, 控制 Microsoft Edge 设置的限制方式。 可取值为：`notConfigured`、`digitalSignage`、`normalMode`、`publicBrowsingSingleApp` 或 `publicBrowsingMultiApp`。|
 |edgeKioskResetAfterIdleTimeInMinutes|Int32|指定在 Microsoft Edge 展台重置前的上次用户活动的时间 (以分钟为单位)。  有效值为0-1440。 默认值为 5。 0表示不重置。 有效值为0至1440|
 |cellularBlockDataWhenRoaming|Boolean|是否阻止用户在漫游时通过手机网络使用数据。|
 |cellularBlockVpn|Boolean|是否阻止用户通过手机网络使用 VPN。|
-|cellularBlockVpnWhenRoaming|Boolean|是否阻止用户在通过手机网络漫游时使用 VPN。|
+|cellularBlockVpnWhenRoaming|Boolean|通过手机网络漫游时是否阻止用户使用 VPN。|
 |cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|是否允许设备上的手机网络数据通道。 如果未配置, 则允许手机网络数据通道, 用户可以将其关闭。 可取值为：`blocked`、`required`、`allowed`。|
 |defenderBlockEndUserAccess|Boolean|是否阻止最终用户访问 Defender。|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|删除隔离的恶意软件之前的天数。 有效值为 0 至 90|
@@ -153,7 +154,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderFilesAndFoldersToExclude|String collection|要从扫描和实时保护中排除的文件和文件夹。|
 |defenderFileExtensionsToExclude|String collection|要从扫描和实时保护中排除的文件扩展名。|
 |defenderScanMaxCpu|Int32|扫描期间最大 CPU 使用率。 有效值为 0 至 100|
-|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|监视文件活动的值。 可取值为：`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly`。|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|监视文件活动的值。 可取值为：`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly` 或 `monitorOutgoingFilesOnly`。|
 |defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|获取或设置要对可能有害的应用程序 (PUA) 执行的 Defender 操作, 其中包括具有广告注入行为的软件、软件捆绑软件绑定、付款或订阅的永久请求等。下载 PUA 或尝试自行安装时, Defender 会通知用户。 在 Windows 10 中添加的桌面。 可取值为：`deviceDefault`、`block`、`audit`。|
 |defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|获取或设置要对可能有害的应用程序 (PUA) 执行的 Defender 操作, 其中包括具有广告注入行为的软件、软件捆绑软件绑定、付款或订阅的永久请求等。下载 PUA 或尝试自行安装时, Defender 会通知用户。 在 Windows 10 中添加的桌面。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderProcessesToExclude|String 集合|要从扫描和实时保护中排除的进程。|
@@ -180,16 +181,15 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderCloudExtendedTimeout|Int32|云文件扫描的超时扩展。 有效值为 0 至 50|
 |defenderCloudExtendedTimeoutInSeconds|Int32|云文件扫描的超时扩展。 有效值为 0 至 50|
 |defenderBlockOnAccessProtection|Boolean|允许或禁止 Windows Defender 访问保护功能。|
-|defenderScheduleScanDay|[defenderScheduleScanDay](../resources/intune-deviceconfig-defenderschedulescanday.md)|选择 Windows Defender 扫描应运行的日期。 可取值为：`everyday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`、`sunday`、`noScheduledScan`。|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|检查 Windows Defender 中的用户同意级别以发送数据。 可取值为：`sendSafeSamplesAutomatically`、`alwaysPrompt`、`neverSend`、`sendAllSamplesAutomatically`。|
 |lockScreenAllowTimeoutConfiguration|Boolean|指定是否在 Windows 10 移动版设备的锁定屏幕上显示用户可配置设置以控制屏幕超时。 如果此策略设置为 Allow，则由 lockScreenTimeoutInSeconds 设置的值将被忽略。|
 |lockScreenBlockActionCenterNotifications|Boolean|指示在锁定屏幕上是否阻止操作中心通知。|
 |lockScreenBlockCortana|Boolean|指示系统锁定时用户是否可以使用语音与 Cortana 进行交互。|
 |lockScreenBlockToastNotifications|Boolean|指示是否允许设备锁定屏幕上方的 Toast 通知。|
 |lockScreenTimeoutInSeconds|Int32|设置从 Windows 10 移动版设备的屏幕锁定到屏幕关闭的持续时间（以秒为单位）。 支持的值为 11-1800。 有效值为 11 至 1800|
-|passwordBlockSimple|Boolean|指定是否允许 PIN 或密码，例如“1111”或“1234”。 对于 Windows 10 台式机，它也控制图片密码的使用。|
+|passwordBlockSimple|Boolean|指定是否允许使用 PIN 或密码，例如“1111”或“1234”。 对于 Windows 10 台式机，它也控制图片密码的使用。|
 |passwordExpirationDays|Int32|密码过期天数。 有效值为 0 至 730|
-|passwordMinimumLength|Int32|最短密码长度。 有效值为 4 至 16|
+|passwordMinimumLength|Int32|密码最短长度。 有效值为 4 至 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。 有效值为 0 至 50|
@@ -200,6 +200,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |passwordMinimumAgeInDays|Int32|此安全设置确定用户可以更改密码之前必须使用该密码的时间 (以天为单位)。 有效值为0至998|
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|启用或禁用广告 ID 的使用。 已添加到 Windows 10 版本 1607 中。 可取值为：`notConfigured`、`blocked`、`allowed`。|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|指示在启动应用时是否允许自动接受配对和隐私用户许可对话框。|
+|privacyDisableLaunchExperience|Boolean|此策略可防止在用户登录时为新的和已升级的用户启动隐私体验。|
 |privacyBlockInputPersonalization|Boolean|指示是否阻止 Cortana、Dictation 或 Store 应用程序使用基于云的语音服务。|
 |privacyBlockPublishUserActivities|Boolean|阻止共享体验和发现任务切换器等中的最近使用的资源。|
 |privacyBlockActivityFeed|Boolean|阻止 Cortana、听写或存储应用程序的基于云的语音服务的使用。|
@@ -218,8 +219,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |startMenuHideSleep|Boolean|启用此策略会将“休眠”从开始菜单的电源按钮中隐藏。|
 |startMenuHideSwitchAccount|Boolean|启用此策略会将“切换帐户”从开始菜单的用户磁贴中隐藏。|
 |startMenuHideUserTile|Boolean|启用此策略会将用户磁贴从开始菜单中隐藏。|
-|startMenuLayoutEdgeAssetsXml|Binary|此策略设置使用户可以导入 Edge 资产以与 startMenuLayoutXml 策略一起使用。 开始布局可以包含查找 Edge 本地资产文件的 Edge 应用中的辅助磁贴。 在这种情况下，Edge 本地资产不存在并导致 Edge 辅助磁贴显示为空。 仅当修改 startMenuLayoutXml 策略时才应用此策略。 该值应该是一个 UTF-8 Base64 编码的字节数组。|
-|startMenuLayoutXml|Binary|允许管理员覆盖默认的“开始”菜单布局并阻止用户对其进行更改。 通过基于布局修改模式指定 XML 文件来修改布局。 XML 需要采用 UTF8 编码的字节数组格式。|
+|startMenuLayoutEdgeAssetsXml|二进制数|此策略设置使用户可以导入 Edge 资产以与 startMenuLayoutXml 策略一起使用。 “开始”菜单布局可以包含查找 Edge 本地资产文件的 Edge 应用中的辅助磁贴。 在这种情况下，Edge 本地资产不存在并导致 Edge 辅助磁贴显示为空。 仅当修改 startMenuLayoutXml 策略时才应用此策略。 该值应该是一个 UTF-8 Base64 编码的字节数组。|
+|startMenuLayoutXml|Binary|允许管理员覆盖默认的“开始”菜单布局并阻止用户对其进行更改。 通过基于布局修改架构指定 XML 文件来修改布局。 XML 需要采用 UTF8 编码的字节数组格式。|
 |startMenuMode|[windowsStartMenuModeType](../resources/intune-deviceconfig-windowsstartmenumodetype.md)|允许管理员决定显示“开始”菜单的方式。 可取值为：`userDefined`、`fullScreen`、`nonFullScreen`。|
 |startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|强制“开始”菜单上的文档文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
 |startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|强制“开始”菜单上的下载文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
@@ -238,7 +239,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |settingsBlockPersonalizationPage|Boolean|指示是否阻止在“设置”应用中访问“个性化”。|
 |settingsBlockAccountsPage|Boolean|指示是否阻止在“设置”应用中访问“帐户”。|
 |settingsBlockTimeLanguagePage|Boolean|指示是否阻止在“设置”应用中访问“时间和语言”。|
-|settingsBlockEaseOfAccessPage|Boolean|指示是否阻止在“设置”应用中访问“辅助功能”。|
+|settingsBlockEaseOfAccessPage|Boolean|指示是否阻止在“设置”应用中访问“轻松使用”。|
 |settingsBlockPrivacyPage|Boolean|指示是否阻止在“设置”应用中访问“隐私”。|
 |settingsBlockUpdateSecurityPage|Boolean|指示是否阻止在“设置”应用中访问“更新和安全”。|
 |settingsBlockAppsPage|Boolean|指示是否阻止在“设置”应用中访问“应用”。|
@@ -277,7 +278,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|允许 IT 管理员为 MDM 控制的设备设置默认搜索引擎。 如果未设置 AllowSearchEngineCustomization 策略，则用户可以替代此设置并更改其默认搜索引擎。|
 |edgeHomepageUrls|String 集合|Edge 浏览器上 MDM 注册设备上的主页 URL 列表。|
 |edgeBlockAccessToAboutFlags|Boolean|指示是否阻止访问 Edge 浏览器上关于标志的信息。|
-|smartScreenBlockPromptOverride|Boolean|指示用户是否可以覆盖有关潜在恶意网站的 SmartScreen 筛选器警告。|
+|smartScreenBlockPromptOverride|Boolean|指示用户是否可以替代有关潜在恶意网站的 SmartScreen 筛选器警告。|
 |smartScreenBlockPromptOverrideForFiles|Boolean|指示用户是否可以覆盖关于下载未验证文件的 SmartScreen 筛选器警告|
 |webRtcBlockLocalhostIpAddress|Boolean|指示在使用 WebRTC 拨打电话时是否显示用户的本地主机 IP 地址|
 |internetSharingBlocked|Boolean|指示是否阻止用户使用 Internet 共享。|
@@ -311,7 +312,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |developerUnlockSetting|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|指示是否允许开发人员解锁。 可取值为：`notConfigured`、`blocked`、`allowed`。|
 |sharedUserAppDataAllowed|Boolean|指示是否阻止同一应用的多个用户共享数据。|
 |appsBlockWindowsStoreOriginatedApps|Boolean|指示是否禁用启动 Windows 应用商店中预先安装或已下载的所有应用。|
-|windowsStoreEnablePrivateStoreOnly|Boolean|指示是否启用“仅限私人应用商店”。|
+|windowsStoreEnablePrivateStoreOnly|Boolean|指示是否启用“仅限专用应用商店”。|
 |storageRestrictAppDataToSystemVolume|Boolean|指示应用程序数据是否仅限于系统驱动器。|
 |storageRestrictAppInstallToSystemVolume|Boolean|指示应用程序的安装是否仅限于系统驱动器。|
 |gameDvrBlocked|Boolean|指示是否阻止 DVR 和广播。|
@@ -323,6 +324,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |appManagementMSIAllowUserControlOverInstall|Boolean|此策略设置允许用户更改通常仅供系统管理员使用的安装选项。|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|此策略设置指示 Windows Installer 在系统上安装任何程序时使用提升的权限。|
 |dataProtectionBlockDirectMemoryAccess|Boolean|通过此策略设置, 您可以阻止所有热插拔 PCI 下游端口的直接内存访问 (DMA), 直到用户登录 Windows。|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|Windows 应用的以分号分隔的程序包系列名称的列表。 登录后将启动列出的 Windows 应用。|
 
 
 
@@ -336,7 +338,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 13338
+Content-length: 13518
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -357,6 +359,7 @@ Content-length: 13338
   "enableAutomaticRedeployment": true,
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
+  "authenticationWebSignIn": "enabled",
   "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
@@ -497,7 +500,6 @@ Content-length: 13338
   "defenderCloudExtendedTimeout": 12,
   "defenderCloudExtendedTimeoutInSeconds": 5,
   "defenderBlockOnAccessProtection": true,
-  "defenderScheduleScanDay": "monday",
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
@@ -517,6 +519,7 @@ Content-length: 13338
   "passwordMinimumAgeInDays": 8,
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
+  "privacyDisableLaunchExperience": true,
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
@@ -650,7 +653,10 @@ Content-length: 13338
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
   "appManagementMSIAllowUserControlOverInstall": true,
   "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
-  "dataProtectionBlockDirectMemoryAccess": true
+  "dataProtectionBlockDirectMemoryAccess": true,
+  "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
+    "App Management Package Family Names To Launch After Log On value"
+  ]
 }
 ```
 
@@ -659,7 +665,7 @@ Content-length: 13338
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 13510
+Content-Length: 13690
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -683,6 +689,7 @@ Content-Length: 13510
   "enableAutomaticRedeployment": true,
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
+  "authenticationWebSignIn": "enabled",
   "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
@@ -823,7 +830,6 @@ Content-Length: 13510
   "defenderCloudExtendedTimeout": 12,
   "defenderCloudExtendedTimeoutInSeconds": 5,
   "defenderBlockOnAccessProtection": true,
-  "defenderScheduleScanDay": "monday",
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
@@ -843,6 +849,7 @@ Content-Length: 13510
   "passwordMinimumAgeInDays": 8,
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
+  "privacyDisableLaunchExperience": true,
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
@@ -976,7 +983,10 @@ Content-Length: 13510
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
   "appManagementMSIAllowUserControlOverInstall": true,
   "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
-  "dataProtectionBlockDirectMemoryAccess": true
+  "dataProtectionBlockDirectMemoryAccess": true,
+  "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
+    "App Management Package Family Names To Launch After Log On value"
+  ]
 }
 ```
 

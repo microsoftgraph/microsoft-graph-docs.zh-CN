@@ -4,12 +4,12 @@ description: 创建新的 depMacOSEnrollmentProfile 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dbd5abc203f8391b038454c0995668487a9466e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b9968e03c62f2b377e8644f3f5ac84531f16f15d
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164622"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571723"
 ---
 # <a name="create-depmacosenrollmentprofile"></a>创建 depMacOSEnrollmentProfile
 
@@ -41,7 +41,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 depMacOSEnrollmentProfile 对象的 JSON 表示形式。
@@ -78,6 +78,8 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |registrationDisabled|Boolean|指示是否禁用注册|
 |fileVaultDisabled|Boolean|指示是否禁用了文件电子仓库|
 |iCloudDiagnosticsDisabled|Boolean|指示是否禁用了 iCloud 分析屏幕|
+|iCloudStorageDisabled|Boolean|指示是否禁用了 iCloud 文档和桌面屏幕|
+|chooseYourLockScreenDisabled|Boolean|指示是否禁用了 iCloud 文档和桌面屏幕|
 
 
 
@@ -91,7 +93,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 1061
+Content-length: 1136
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -121,7 +123,9 @@ Content-length: 1061
   "privacyPaneDisabled": true,
   "registrationDisabled": true,
   "fileVaultDisabled": true,
-  "iCloudDiagnosticsDisabled": true
+  "iCloudDiagnosticsDisabled": true,
+  "iCloudStorageDisabled": true,
+  "chooseYourLockScreenDisabled": true
 }
 ```
 
@@ -130,7 +134,7 @@ Content-length: 1061
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1110
+Content-Length: 1185
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -161,7 +165,9 @@ Content-Length: 1110
   "privacyPaneDisabled": true,
   "registrationDisabled": true,
   "fileVaultDisabled": true,
-  "iCloudDiagnosticsDisabled": true
+  "iCloudDiagnosticsDisabled": true,
+  "iCloudStorageDisabled": true,
+  "chooseYourLockScreenDisabled": true
 }
 ```
 
