@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 发送邀请以访问项目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: cc88297c1848e9b66195f9a07ac96167d096a762
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 1e02af913702aace46a5e3ca2f2e2650a2c7839e
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481207"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30676973"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
@@ -66,6 +66,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                                         | 指定邀请的收件人要查看共享项目的登录位置。            |
 | sendInvitation   | Boolean                                         | 指定是否生成电子邮件或帖子 (false)，或是否仅创建权限 (true)。            |
 | roles            | 集合（字符串）                              | 指定授予共享邀请收件人的角色。                         |
+| expirationDateTime | DateTimeOffset                       | 指定权限将在其后过期的日期时间。 在 onedrive for business、SharePoint 和 premium 个人 OneDrive 帐户上可用。
+| password           | String                         | 由创建者在邀请上设置的密码。 可选和 OneDrive 仅个人版
 
 ## <a name="example"></a>示例
 
@@ -91,7 +93,9 @@ Content-type: application/json
   "message": "Here's the file that we're collaborating on.",
   "requireSignIn": true,
   "sendInvitation": true,
-  "roles": [ "write" ]
+  "roles": [ "write" ],
+  "password": "password123",
+  "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
 
@@ -101,7 +105,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -114,16 +118,87 @@ Content-type: application/json
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
+      "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
         "email": "ryan@contoso.com",
         "signInRequired": true
       },
-      "roles": [ "write" ]
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
     }
   ]
 }
 ```
+### <a name="partial-success-response"></a>部分成功响应
+
+当邀请多个收件人时, 通知可能会成功, 其他人也会失败。
+在这种情况下, 服务将返回 HTTP 状态代码为207的部分成功响应。
+当返回部分成功时, 每个失败的收件人的响应将包含`error`一个对象, 其中包含有关出错的信息以及如何修复。
+
+下面的示例展示了部分响应。  
+
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
+
+```json
+HTTP/1.1 207 Multi-Status
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "grantedTo": {
+        "user": {
+          "displayName": "John Adams",
+          "id": "5D8CA5D0-FFF8-4A97-B0A6-8F5AEA339681"
+        }
+      },
+      "id": "1EFG7CA3-7A19-4D57-8CEF-149DB9DDFA62",
+      "invitation": {
+        "email": "adams@contoso.com",
+        "signInRequired": true
+      },
+      "roles": [ "write" ],
+      "error": {
+        "code":"notAllowed",
+        "message":"Account verification needed to unblock sending emails.",
+        "localizedMessage": "Kontobestätigung erforderlich, um das Senden von E-Mails zu entsperren.",
+        "fixItUrl":"http://g.live.com/8SESkydrive/VerifyAccount",
+        "innererror":{  
+          "code":"accountVerificationRequired" 
+        }
+      }
+    },
+    {
+      "grantedTo": {
+        "user": {
+          "displayName": "Ryan Gregg",
+          "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
+        }
+      },
+      "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
+      "invitation": {
+        "email": "ryan@contoso.com",
+        "signInRequired": true
+      },
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
+    }
+  ]
+}
+```
+### <a name="sendnotification-errors"></a>SendNotification 错误
+以下是在发送通知失败时, 应用可能会在嵌套`innererror`的对象中遇到的一些其他错误。 应用程序不需要处理这些。
+
+| 代码                           | 说明
+|:-------------------------------|:--------------------------------------------------------------------------------------
+| accountVerificationRequired    | 若要取消阻止发送通知, 需要进行帐户验证。
+| hipCheckRequired               | 需要解决 HIP (主机入侵防护) 检查以取消阻止发送通知。
+| exchangeInvalidUser            | 找不到当前用户的邮箱。
+| exchangeOutOfMailboxQuota      | 配额不足。
+| exchangeMaxRecipients          | 超过了可以同时发送通知的收件人的最大数量。
+
+>**注意:** 服务可随时添加新的错误代码或停止返回旧的错误代码。
 
 ## <a name="remarks"></a>注解
 

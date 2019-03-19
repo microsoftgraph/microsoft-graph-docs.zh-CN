@@ -4,12 +4,12 @@ description: 班次是计划中计划工时的单位。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c392bfb4a1691ab99d852febdda27cdf1c3b8044
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: cd80cd36bd32ea9efba9e565aabd2da963c51ec8
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657894"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30676966"
 ---
 # <a name="shift-resource-type"></a>shift 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "30657894"
 |[列出班次](../api/schedule-list-shifts.md) | [shift](shift.md)集合 | 获取此计划中`shifts`的列表。|
 |[获取 shift](../api/shift-get.md) | [ctrl](shift.md) | `shift`按 ID 获取。|
 |[替换班次](../api/shift-put.md) | [ctrl](shift.md) | 替换`shift`。|
-|[删除班次](../api/shift-delete.md) | 无 | `shift`从计划中删除。|
+|[删除班次](../api/shift-delete.md) | None | `shift`从计划中删除。|
 
 ## <a name="properties"></a>属性
 |名称          |类型           |说明                                                                                                                                      |
@@ -33,8 +33,8 @@ ms.locfileid: "30657894"
 | id            |`string`      |的 ID `shift`。|
 | userId            |`string`      |分配给的`shift`用户的 ID。 必需。 |
 | schedulingGroupId         |`string`      |属于的计划组`shift`的 ID。 必需。 |
-| sharedShift   |`[shiftItem](shiftitem.md)`  |员工和经理可查看`shift`的共享版本。 必需。 |
-| draftShift        |`[shiftItem](shiftitem.md)`        |经理可查看的草稿`shift`版本。 必需。 |
+| sharedShift   |[shiftItem](shiftitem.md)  |员工和经理可查看`shift`的共享版本。 必需。 |
+| draftShift        |[shiftItem](shiftitem.md)        |经理可查看的草稿`shift`版本。 必需。 |
 | createdDateTime       |`DateTimeOffset`        |首次在其上`shift`创建此项的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如, 2014 年1月1日午夜 UTC 将如下所示: "2014-01-01T00:00: 00Z"。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |上次更新此`shift`时间的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如, 2014 年1月1日午夜 UTC 将如下所示: "2014-01-01T00:00: 00Z"。 |
 | lastModifiedBy        |`microsoft.graph.identitySet`        |最后更新此`shift`的标识。|
