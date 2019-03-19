@@ -4,12 +4,12 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 86f911b787c68062ce2fad2e5e858bac2acc338a
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 051bd2a09c59736d50eea5cbfa330ee0d7d2a198
+ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481431"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30644312"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 

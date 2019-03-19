@@ -1,6 +1,8 @@
 name: Graph 文档
 metadata: {}
 items:
+  - name: Microsoft Graph 文档
+    href: index.yml
   - name: Microsoft Graph 概述
     href: overview.md
     expanded: true

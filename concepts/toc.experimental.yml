@@ -1,13 +1,15 @@
 ### YamlMime:Yaml
-ms.openlocfilehash: 3082d30048f39e6ae7e67635f10cc029dd43d8c4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 41a827f929a9f038c2f5c5594cdfe01c21a19dc6
+ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431218"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30657398"
 name: Graph 文档
 metadata: {}
 items:
+- name: Microsoft Graph 文档
+  href: index.yml
 - name: Microsoft Graph 概述
   href: overview.md
   expanded: true

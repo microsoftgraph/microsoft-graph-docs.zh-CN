@@ -4,12 +4,12 @@ description: Microsoft Graph 安全性 API 提供了统一的界面的架构，�
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: d0d4b68d6b16cc30c93157e1cc90afb4cf72cfae
-ms.sourcegitcommit: 2937b0e8983baf1b3d244c72a6ae3a211b17a1bd
+ms.openlocfilehash: bd208067c2194766bb5f3d93d0caa21be086dca0
+ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30376426"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30644263"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
