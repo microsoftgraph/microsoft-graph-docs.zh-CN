@@ -4,16 +4,16 @@ description: 列出为租户组织注册设备的适用于 Intune 终结点 (RES
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 240bdc2d65d1ed8920fe1f9c067f1ffcd31a9f11
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4b4100265797fd3cefc60e0288961b74839199c2
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149831"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572388"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
@@ -49,6 +49,7 @@ ms.locfileid: "30149831"
 - [Windows Autopilot Deployment 配置文件](intune-enrollment-windowsautopilotdeploymentprofile.md)
 - [Windows Autopilot Deployment 配置文件分配](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Windows Autopilot 设备标识](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Windows autopilot 设备类型](intune-enrollment-windowsautopilotdevicetype.md)
 - [Windows Autopilot 配置文件分配详细状态](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Windows Autopilot 配置文件分配状态](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
 - [Windows Autopilot 设置](intune-enrollment-windowsautopilotsettings.md)

@@ -4,12 +4,12 @@ description: 读取 windows10CompliancePolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e85fb5912f6ae18c8e150a24a5c71157ac4e7b63
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f92faa93dfecb33a7c11c11f8c6c7e82c24f1c8f
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158007"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572220"
 ---
 # <a name="get-windows10compliancepolicy"></a>获取 windows10CompliancePolicy
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1951
+Content-Length: 1977
 
 {
   "value": {
@@ -115,7 +115,8 @@ Content-Length: 1951
     ],
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
-    "configurationManagerComplianceRequired": true
+    "configurationManagerComplianceRequired": true,
+    "tpmRequired": true
   }
 }
 ```

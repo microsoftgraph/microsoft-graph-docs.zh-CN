@@ -4,12 +4,12 @@ description: 更新 depMacOSEnrollmentProfile 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c7d75beebdc2462bff96451c2d60b88f8cab01c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2efa7c1791bb8a7c9ed86e13439903e8458f038a
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164419"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572339"
 ---
 # <a name="update-depmacosenrollmentprofile"></a>更新 depMacOSEnrollmentProfile
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMa
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md)对象的 JSON 表示形式。
@@ -51,33 +51,35 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMa
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的对象的 GUID|
-|displayName|字符串|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的配置文件的名称|
+|displayName|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的配置文件的名称|
 |说明|字符串|从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
-|requiresUserAuthentication|布尔|指示配置文件是否需要从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
+|requiresUserAuthentication|Boolean|指示配置文件是否需要从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
 |configurationEndpointUrl|字符串|用于从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
-|enableAuthenticationViaCompanyPortal|布尔|指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔|指示在从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的安装助理注册设备上需要公司门户|
-|isDefault|布尔|指示这是否是从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的默认配置文件|
-|supervisedModeEnabled|布尔|监督模式, 如果启用, 则为 True, 否则为 false。 有关https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune详细信息, 请参阅。 继承自[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的安装助理注册设备上需要公司门户|
+|isDefault|Boolean|指示这是否是从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的默认配置文件|
+|supervisedModeEnabled|Boolean|监督模式, 如果启用, 则为 True, 否则为 false。 有关https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune详细信息, 请参阅。 继承自[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |supportDepartment|字符串|支持从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承部门信息|
-|passCodeDisabled|布尔|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的密码设置窗格|
-|isMandatory|布尔|指示是否必须从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承配置文件|
-|locationDisabled|布尔|指示是否禁用从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承位置服务设置窗格|
+|passCodeDisabled|Boolean|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的密码设置窗格|
+|isMandatory|Boolean|指示是否必须从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承配置文件|
+|locationDisabled|Boolean|指示是否禁用从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承位置服务设置窗格|
 |supportPhoneNumber|字符串|支持从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的电话号码|
-|profileRemovalDisabled|布尔|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的配置文件删除选项|
-|restoreBlocked|布尔|指示是否阻止从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的还原设置窗格|
-|appleIdDisabled|布尔|指示是否禁用了 Apple id 设置窗格从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
-|termsAndConditionsDisabled|布尔|指示是否已禁用 "条款和条件" 安装窗格从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
-|touchIdDisabled|布尔|指示是否禁用了触控 id 设置窗格从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
-|applePayDisabled|布尔|指示是否禁用了 Apple 付费设置窗格从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
-|zoomDisabled|布尔|指示是否禁用了缩放设置窗格从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
-|siriDisabled|布尔|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 siri 安装窗格|
-|diagnosticsDisabled|布尔|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的诊断设置窗格|
-|displayToneSetupDisabled|布尔|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 displaytone 安装程序屏幕|
-|privacyPaneDisabled|布尔|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的隐私屏幕|
-|registrationDisabled|布尔|指示是否禁用注册|
-|fileVaultDisabled|布尔|指示是否禁用了文件电子仓库|
-|iCloudDiagnosticsDisabled|布尔|指示是否禁用了 iCloud 分析屏幕|
+|profileRemovalDisabled|Boolean|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的配置文件删除选项|
+|restoreBlocked|Boolean|指示是否阻止从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的还原设置窗格|
+|appleIdDisabled|Boolean|指示是否禁用了 Apple id 设置窗格从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
+|termsAndConditionsDisabled|Boolean|指示是否已禁用 "条款和条件" 安装窗格从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
+|touchIdDisabled|Boolean|指示是否禁用了触控 id 设置窗格从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
+|applePayDisabled|Boolean|指示是否禁用了 Apple 付费设置窗格从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
+|zoomDisabled|Boolean|指示是否禁用了缩放设置窗格从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承|
+|siriDisabled|Boolean|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 siri 安装窗格|
+|diagnosticsDisabled|Boolean|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的诊断设置窗格|
+|displayToneSetupDisabled|Boolean|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的 displaytone 安装程序屏幕|
+|privacyPaneDisabled|Boolean|指示是否禁用了从[depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)继承的隐私屏幕|
+|registrationDisabled|Boolean|指示是否禁用注册|
+|fileVaultDisabled|Boolean|指示是否禁用了文件电子仓库|
+|iCloudDiagnosticsDisabled|Boolean|指示是否禁用了 iCloud 分析屏幕|
+|iCloudStorageDisabled|Boolean|指示是否禁用了 iCloud 文档和桌面屏幕|
+|chooseYourLockScreenDisabled|Boolean|指示是否禁用了 iCloud 文档和桌面屏幕|
 
 
 
@@ -91,7 +93,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMa
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacOsEnrollmentProfile
 Content-type: application/json
-Content-length: 1061
+Content-length: 1136
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -121,7 +123,9 @@ Content-length: 1061
   "privacyPaneDisabled": true,
   "registrationDisabled": true,
   "fileVaultDisabled": true,
-  "iCloudDiagnosticsDisabled": true
+  "iCloudDiagnosticsDisabled": true,
+  "iCloudStorageDisabled": true,
+  "chooseYourLockScreenDisabled": true
 }
 ```
 
@@ -130,7 +134,7 @@ Content-length: 1061
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1110
+Content-Length: 1185
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -161,7 +165,9 @@ Content-Length: 1110
   "privacyPaneDisabled": true,
   "registrationDisabled": true,
   "fileVaultDisabled": true,
-  "iCloudDiagnosticsDisabled": true
+  "iCloudDiagnosticsDisabled": true,
+  "iCloudStorageDisabled": true,
+  "chooseYourLockScreenDisabled": true
 }
 ```
 

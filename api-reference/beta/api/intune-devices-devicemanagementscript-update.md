@@ -4,12 +4,12 @@ description: 更新 deviceManagementScript 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fafb11f61f6e98eba90de9054550e673b6d6cbdd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 02c64f6ad5ba9fe81ef71c49197aedd204ffdce4
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141788"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572542"
 ---
 # <a name="update-devicemanagementscript"></a>更新 deviceManagementScript
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象的 JSON 表示形式。
@@ -50,18 +50,18 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|设备管理脚本的唯一标识符。|
+|id|String|设备管理脚本的唯一标识符。|
 |displayName|字符串|设备管理脚本的名称。|
 |说明|字符串|设备管理脚本的可选说明。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|脚本运行的间隔。 如果未定义, 脚本将运行一次|
-|scriptContent|Binary|脚本内容。|
+|scriptContent|二进制数|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示设备管理脚本在其中运行的执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔|指示是否需要检查脚本签名。|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
 |roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 id 的列表。|
-|runAs32Bit|布尔|一个指示 PowerShell 脚本是否应作为32位运行的值|
+|runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 
 

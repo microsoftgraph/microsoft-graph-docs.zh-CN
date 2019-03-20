@@ -4,12 +4,12 @@ description: 此类包含 Windows 10 的合规性设置。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21f0c0e41f63979ab8e9d4a2ff2a649af9de1d97
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bd6b02332eb56a7f52cd16c678fd5f0702d5a0a0
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155970"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572353"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>windows10CompliancePolicy 资源类型
 
@@ -35,11 +35,11 @@ ms.locfileid: "30155970"
 |属性|类型|说明|
 |:---|:---|:---|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|id|字符串|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |passwordRequired|Boolean|需要密码才可解锁 Windows 设备。|
 |passwordBlockSimple|Boolean|指示是否阻止简单密码。|
@@ -51,9 +51,9 @@ ms.locfileid: "30155970"
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。|
 |requireHealthyDeviceReport|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
-|osMinimumVersion|String|最低 Windows 10 版本。|
-|osMaximumVersion|String|最高 Windows 10 版本。|
-|mobileOsMinimumVersion|String|最低 Windows Phone 版本。|
+|osMinimumVersion|字符串|最低 Windows 10 版本。|
+|osMaximumVersion|字符串|最高 Windows 10 版本。|
+|mobileOsMinimumVersion|字符串|最低 Windows Phone 版本。|
 |mobileOsMaximumVersion|String|最高 Windows Phone 版本。|
 |earlyLaunchAntiMalwareDriverEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
 |bitLockerEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
@@ -62,7 +62,7 @@ ms.locfileid: "30155970"
 |storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
 |activeFirewallRequired|Boolean|在 Windows 设备上需要活动防火墙。|
 |defenderEnabled|Boolean|在 windows 设备上需要 windows Defender 反恶意软件。|
-|defenderVersion|String|在 windows 设备上要求 windows Defender 反恶意软件的最低版本。|
+|defenderVersion|字符串|在 windows 设备上要求 windows Defender 反恶意软件的最低版本。|
 |signatureOutOfDate|Boolean|windows 设备上要求 windows Defender 反恶意软件签名为最新。|
 |rtpEnabled|Boolean|在 windows 设备上需要 windows Defender 反恶意软件实时保护。|
 |antivirusRequired|Boolean|要求在 Windows Decurity Center 中注册的任何防病毒解决方案都处于启用和监控 (例如, Symantec、Windows Defender)。|
@@ -71,6 +71,7 @@ ms.locfileid: "30155970"
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|需要设备威胁防护最低风险级别来报告不合规。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |configurationManagerComplianceRequired|Boolean|需要考虑将 SCCM 合规性状态考虑到 Intune 合规性状态。|
+|tpmRequired|Boolean|要求存在受信任的平台模块 (TPM)。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -81,7 +82,7 @@ ms.locfileid: "30155970"
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|设备合规性设备状态概述 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |userStatusOverview|[deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md)|设备合规性用户状态概述 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|合规性设置状态设备摘要 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|assignments|[deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) 集合|此合规性策略的作业集合。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|assignments|[deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) 集合|此合规性策略的分配集合。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -139,7 +140,8 @@ ms.locfileid: "30155970"
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
-  "configurationManagerComplianceRequired": true
+  "configurationManagerComplianceRequired": true,
+  "tpmRequired": true
 }
 ```
 

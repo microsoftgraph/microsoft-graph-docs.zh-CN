@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9521a2265e6fcdb86b60d6fc427c74d74be0b31f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0dff0f10c1bcfbed9bb79bcf6566bb6a329521b5
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164377"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572290"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>managedDeviceEnrollmentFailureDetails 函数
 
@@ -19,7 +19,7 @@ ms.locfileid: "30164377"
 
 尚未记录
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,15 +41,15 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 下表显示了可用于此函数的参数。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|筛选器|字符串|尚未记录|
-|skipToken|字符串|尚未记录|
+|筛选器|String|尚未记录|
+|skipToken|String|尚未记录|
 |skip|Int32|尚未记录|
 |top|Int32|尚未记录|
 

@@ -4,22 +4,22 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 93d2041c6ca0efd53643da0aba3a96a76433f95a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7f56ec152df4060281a4f8ae9e58b794d6009ab9
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164020"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572395"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>verifyWindowsEnrollmentAutoDiscovery 函数
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
 尚未记录
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。

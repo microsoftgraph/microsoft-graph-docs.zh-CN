@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: b893fc83f7ca7552b4decbac3dc37fd0441b7043
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: 2ff7e9f52c7f8671bd2246bedc9ac213bff0c859
+ms.sourcegitcommit: 10adbecb5f82556e5acc2301fc226ae6884e142b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657915"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693692"
 documentType: LandingData
 title: Microsoft Graph 文档
 metadata:
@@ -16,7 +16,7 @@ metadata:
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 12/13/2018
+  ms.date: 03/20/2019
   ms.author: celested
 abstract:
   description: Microsoft Graph 提供了统一的可编程性模型, 可用于为组织和使用者 (与数百万用户的数据进行交互) 生成应用程序。 您可以使用 Microsoft Graph REST api 访问 Azure Active Directory、Office 365 服务、企业移动性和安全服务、Windows 10 服务、Dynamics 365 等中的数据。 浏览我们的文档以了解有关如何使用 Microsoft Graph api 的详细信息。
@@ -37,7 +37,7 @@ sections:
     columns: 3
     items:
     - href: /graph/overview
-      html: <p>了解有关 Microsoft Graph 及其特性和功能的详细信息。</p>
+      html: <p>了解使用 Microsoft Graph 可以执行的操作, 并查看一些常见的 API 用例。</p>
       image:
         src: ./images/index/i_get-started.svg
       title: Microsoft Graph 概述
@@ -77,7 +77,7 @@ sections:
         src: ./images/index/logo_android.svg
       title: Android
     - image:
-        src: ./images/index/angular_solidBlack.svg
+        src: ./images/index/angular.svg
       title: Angular
     - image:
         src: ./images/index/logo_NET.svg
@@ -127,16 +127,16 @@ sections:
     - title: 教程
       values:
       - href: 
-      - href: /tutorials/angular
-      - href: /tutorials/aspnet
+      - href: /graph/tutorials/angular
+      - href: /graph/tutorials/aspnet
       - href: 
       - href: 
       - href: 
-      - href: /tutorials/node
-      - href: /tutorials/php
-      - href: /tutorials/python
-      - href: /tutorials/ruby
-      - href: /tutorials/uwp
+      - href: /graph/tutorials/node
+      - href: /graph/tutorials/php
+      - href: /graph/tutorials/python
+      - href: /graph/tutorials/ruby
+      - href: /graph/tutorials/uwp
       - href: 
     - title: SDK
       values:
@@ -160,12 +160,12 @@ sections:
     columns: 3
     items:
     - href: /graph/changelog
-      html: <p>了解 microsoft graph 中的更改内容, 包括 v1.0 和 beta 终结点 Microsoft graph api。</p>
+      html: <p>了解 Microsoft Graph API 的 v1.0 和 beta 版本中已更改的内容。</p>
       image:
         src: ./images/index/i_backlog.svg
       title: 更改日志
     - href: https://developer.microsoft.com/graph/blogs/
-      html: <p>阅读有关最新新闻和更新的博客。</p>
+      html: <p>阅读博客以获取有关新 api、重大更改等内容的最新消息。</p>
       image:
         src: ./images/index/i_blog.svg
       title: Microsoft Graph 博客

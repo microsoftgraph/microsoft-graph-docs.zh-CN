@@ -4,16 +4,16 @@ description: 列出与租户组织的移动应用管理 (MAM) 相关的适用于
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4443c78c6ae58979b0390496d8d560bb15a90669
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 223efcd67b9e025347f510ce207b093122fa6b52
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150398"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572325"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
@@ -25,6 +25,8 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 
 - [Android 管理的应用保护](intune-mam-androidmanagedappprotection.md)
 - [Android 管理的应用注册](intune-mam-androidmanagedappregistration.md)
+- [Android 托管应用安全网络应用验证类型](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
+- [Android 托管应用安全网络设备证明类型](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
 - [Android 移动应用标识符](intune-mam-androidmobileappidentifier.md)
 - [应用管理级别](intune-mam-appmanagementlevel.md)
 - [应用程序类型](intune-wip-applicationtype.md)

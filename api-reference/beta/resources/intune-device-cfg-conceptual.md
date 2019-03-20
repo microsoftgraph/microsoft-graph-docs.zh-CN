@@ -4,16 +4,16 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点 (
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 40439a32cb9f078d483113cfee8949cd6f288d71
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 691a528e381b4635af15bab6626f5858296c0979
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159267"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572437"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
@@ -125,24 +125,23 @@ ms.locfileid: "30159267"
 - [Defender 示例提交提示](intune-deviceconfig-defenderpromptforsamplesubmission.md)
 - [Defender 保护类型](intune-deviceconfig-defenderprotectiontype.md)
 - [Defender 扫描类型](intune-deviceconfig-defenderscantype.md)
-- [Defender 计划扫描日](intune-deviceconfig-defenderschedulescanday.md)
 - [Defender 安全中心 IT 联系人显示类型](intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)
 - [应用类型中的 Defender 安全中心通知](intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)
 - [Defender 提交示例同意类型](intune-deviceconfig-defendersubmitsamplesconsenttype.md)
 - [Defender 威胁操作](intune-deviceconfig-defenderthreataction.md)
 - [传递优化带宽](intune-deviceconfig-deliveryoptimizationbandwidth.md)
-- [传递优化带宽绝对](intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md)
-- [传递优化带宽营业时间限制](intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)
-- [使用百分比的传递优化带宽小时数](intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md)
+- [传递优化带宽绝对值](intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md)
+- [传递优化带宽工作时间限制](intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)
+- [传递优化带宽时数百分比](intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md)
 - [传递优化带宽百分比](intune-deviceconfig-deliveryoptimizationbandwidthpercentage.md)
-- [传递优化组 id 自定义](intune-deviceconfig-deliveryoptimizationgroupidcustom.md)
-- [传递优化组 id 选项类型](intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)
-- [传递优化组 id 源](intune-deviceconfig-deliveryoptimizationgroupidsource.md)
-- [传递优化组 id 源选项](intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md)
+- [传递优化组 ID 自定义](intune-deviceconfig-deliveryoptimizationgroupidcustom.md)
+- [传递优化组 ID 选项类型](intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)
+- [传递优化组 ID 源](intune-deviceconfig-deliveryoptimizationgroupidsource.md)
+- [传递优化组 ID 选项](intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md)
 - [传递优化最大缓存大小](intune-deviceconfig-deliveryoptimizationmaxcachesize.md)
-- [传递优化最大缓存大小绝对](intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md)
+- [传递优化最大缓存大小绝对值](intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md)
 - [传递优化最大缓存大小百分比](intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md)
-- [传递优化限制按选项的对等方选择](intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)
+- [传递优化限制对等选择（按选项）](intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)
 - [派生的凭据提供商类型](intune-deviceconfig-derivedcredentialprovidertype.md)
 - [设备合规性操作项](intune-deviceconfig-devicecomplianceactionitem.md)
 - [设备合规性操作类型](intune-deviceconfig-devicecomplianceactiontype.md)
@@ -187,9 +186,9 @@ ms.locfileid: "30159267"
 - [Edge 主页按钮隐藏](intune-deviceconfig-edgehomebuttonhidden.md)
 - [Edge 主页按钮加载起始页](intune-deviceconfig-edgehomebuttonloadsstartpage.md)
 - [Edge 主页按钮打开自定义 u r l](intune-deviceconfig-edgehomebuttonopenscustomurl.md)
-- [Edge 主页按钮打开新选项卡](intune-deviceconfig-edgehomebuttonopensnewtab.md)
-- [边缘展台模式限制类型](intune-deviceconfig-edgekioskmoderestrictiontype.md)
-- [Edge 打开选项](intune-deviceconfig-edgeopenoptions.md)
+- [Microsoft Edge 主页按钮打开新选项卡](intune-deviceconfig-edgehomebuttonopensnewtab.md)
+- [Microsoft Edge 展台模式限制类型](intune-deviceconfig-edgekioskmoderestrictiontype.md)
+- [Microsoft Edge 打开选项](intune-deviceconfig-edgeopenoptions.md)
 - [Edge 搜索引擎](intune-deviceconfig-edgesearchengine.md)
 - [Edge 搜索引擎基准](intune-deviceconfig-edgesearchenginebase.md)
 - [Edge 搜索引擎自定义](intune-deviceconfig-edgesearchenginecustom.md)
@@ -200,7 +199,7 @@ ms.locfileid: "30159267"
 - [电子邮件同步持续时间](intune-deviceconfig-emailsyncduration.md)
 - [电子邮件同步计划](intune-deviceconfig-emailsyncschedule.md)
 - [加密就绪状态](intune-deviceconfig-encryptionreadinessstate.md)
-- [加密报告策略详细信息](intune-deviceconfig-encryptionreportpolicydetails.md)
+- [加密报表策略详细信息](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [加密状态](intune-deviceconfig-encryptionstate.md)
 - [扩展密钥用法](intune-deviceconfig-extendedkeyusage.md)
 - [防火墙证书吊销列表检查方法类型](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
@@ -432,6 +431,12 @@ ms.locfileid: "30159267"
 - [Windows 传递优化配置](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows 传递优化模式](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Windows 防火墙网络配置文件](intune-deviceconfig-windowsfirewallnetworkprofile.md)
+- [Windows 防火墙规则](intune-deviceconfig-windowsfirewallrule.md)
+- [Windows 防火墙规则接口类型](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
+- [Windows 防火墙规则网络配置文件类型](intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)
+- [Windows 防火墙规则流量方向类型](intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)
+- [Windows 运行状况监视配置](intune-deviceconfig-windowshealthmonitoringconfiguration.md)
+- [Windows 运行状况监视作用域](intune-deviceconfig-windowshealthmonitoringscope.md)
 - [Windows 身份保护配置](intune-deviceconfig-windowsidentityprotectionconfiguration.md)
 - [Windows Kiosk Active Directory 组](intune-deviceconfig-windowskioskactivedirectorygroup.md)
 - [Windows Kiosk 应用基准](intune-deviceconfig-windowskioskappbase.md)
@@ -471,6 +476,7 @@ ms.locfileid: "30159267"
 - [适用于企业的 Windows 更新配置](intune-deviceconfig-windowsupdateforbusinessconfiguration.md)
 - [适用于企业的 Windows 更新的更新周](intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)
 - [Windows 更新安装计划类型](intune-deviceconfig-windowsupdateinstallscheduletype.md)
+- [Windows 更新通知显示选项](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Windows 更新计划安装](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Windows 更新状态](intune-deviceconfig-windowsupdatestatus.md)
 - [Windows 更新类型](intune-deviceconfig-windowsupdatetype.md)

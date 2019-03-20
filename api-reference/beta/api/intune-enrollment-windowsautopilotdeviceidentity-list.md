@@ -4,12 +4,12 @@ description: 列出 windowsAutopilotDeviceIdentity 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33b44dbd8ed301db3343e9d01dd37fe47b2c04e8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b1520238c53db908b7c5801b679275216b97ef47
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148935"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572248"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>列出 windowsAutopilotDeviceIdentities
 
@@ -42,7 +42,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIden
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 897
+Content-Length: 1163
 
 {
   "value": [
@@ -82,7 +82,12 @@ Content-Length: 897
       "enrollmentState": "enrolled",
       "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
       "addressableUserName": "Addressable User Name value",
-      "userPrincipalName": "User Principal Name value"
+      "userPrincipalName": "User Principal Name value",
+      "resourceName": "Resource Name value",
+      "skuNumber": "Sku Number value",
+      "systemFamily": "System Family value",
+      "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+      "managedDeviceId": "Managed Device Id value"
     }
   ]
 }

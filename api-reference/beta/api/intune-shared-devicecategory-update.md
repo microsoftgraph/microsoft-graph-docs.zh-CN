@@ -4,12 +4,12 @@ description: 更新 deviceCategory 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 221b4700d91766040d899ef0c1048950d4e1d9cf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: eb2d3bc4f081065f27de1c303f87f9e98700d7b9
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161913"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572346"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -21,7 +21,7 @@ ms.locfileid: "30161913"
 
 ## <a name="prerequisites"></a>先决条件
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -58,7 +58,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 
@@ -70,7 +70,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |:---|:---|:---|
 |id|String|设备类别的唯一标识符。 只读。|
 |**载入**|
-|说明|String|设备类别的可选说明。|
+|说明|字符串|设备类别的可选说明。|
 |displayName|String|设备类别的显示名称。|
 
 ## <a name="response"></a>响应

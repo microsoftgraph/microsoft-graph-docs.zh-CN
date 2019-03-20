@@ -4,12 +4,12 @@ description: 列出 defaultManagedAppProtection 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8436ffc33effbfa932b1846b837bd9256e0a018
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a9e6e614334cf025eec45fc08a4e2289d14c9b95
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165434"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572444"
 ---
 # <a name="list-defaultmanagedappprotections"></a>列出 defaultManagedAppProtections
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/defaultManagedAppProtections
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3754
+Content-Length: 4092
 
 {
   "value": [
@@ -110,6 +110,7 @@ Content-Length: 3754
       "appActionIfDeviceComplianceRequired": "wipe",
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+      "allowedOutboundClipboardSharingExceptionLength": 14,
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
       "encryptAppData": true,
@@ -149,7 +150,11 @@ Content-Length: 3754
       "thirdPartyKeyboardsBlocked": true,
       "filterOpenInToOnlyManagedApps": true,
       "disableProtectionOfManagedOutboundOpenInData": true,
-      "protectInboundDataFromUnknownSources": true
+      "protectInboundDataFromUnknownSources": true,
+      "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
+      "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
+      "requiredAndroidSafetyNetAppsVerificationType": "enabled",
+      "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
     }
   ]
 }
