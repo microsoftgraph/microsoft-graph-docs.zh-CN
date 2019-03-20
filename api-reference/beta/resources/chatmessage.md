@@ -2,12 +2,12 @@
 title: chatMessage 资源类型
 description: 表示渠道或聊天实体内的单个聊天消息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
 localization_priority: Priority
-ms.openlocfilehash: f61668d8c3892482043dd7531a6699974a964527
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: a74f422c6bf60e1293d8620b440152be77dacdc7
+ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458657"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30644319"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -31,22 +31,22 @@ ms.locfileid: "30458657"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。 消息的唯一 ID。|
-|replyToId| string | 线程的父级消息/根消息的 Id |
-|from|[identitySet](identityset.md)| 消息发送者的详细信息|
-|etag| string | 消息的版本号 |
-|messageType|String|消息类型，当前支持的值包括：message、chatEvent、Typing|
-|createdDateTime|dateTimeOffset|只读。 创建消息时的时间戳|
-|lastModifiedDateTime|dateTimeOffset|只读。 编辑/更新消息时的时间戳|
-|deleted|布尔值|指示消息是否已被软删除|
-|deletedDateTime|dateTimeOffset|只读。 删除消息时的时间戳 |
-|主题|string|消息主题行。 可选|
+|replyToId| string | 线程的父级消息/根消息的 Id。 |
+|from|[identitySet](identityset.md)| 只读。 消息发送者的详细信息。|
+|etag| string | 消息的版本号。 |
+|messageType|String|消息类型，当前支持的值包括：message、chatEvent、Typing。|
+|createdDateTime|dateTimeOffset|只读。 创建消息时的时间戳。|
+|lastModifiedDateTime|dateTimeOffset|只读。 编辑/更新消息时的时间戳。|
+|deleted|Boolean|指示消息是否已被软删除。|
+|deletedDateTime|dateTimeOffset|只读。 删除消息时的时间戳。 |
+|主题|string|消息主题行。 可选。|
 |正文|[itemBody](itembody.md)|消息内容的纯文本/HTML 表示。 默认返回纯文本，应用程序可选择 HTML 作为查询参数的一部分|
 |摘要|string|可用于推送通知的消息摘要文本和摘要视图或回退视图|
-|提及|[chatMessageMention](chatmention.md) 集合| 消息中提到的实体列表。 当前支持用户、机器人、团队、渠道|
-|重要性| string | 消息重要性包括：正常、高|
+|提及|[chatMessageMention](chatmention.md) 集合| 消息中提到的实体列表。 当前支持用户、机器人、团队、渠道。|
+|重要性| string | 消息重要性包括：正常、高。|
 |反应| [chatMessageReaction](chatreaction.md) 集合 | 此消息的反应（例如，赞）|
 |区域设置|string|客户设置的消息区域设置|
-|附件|[chatMessageAttachment](chatattachment.md) 集合 |附加文件|
+|附件|[chatMessageAttachment](chatattachment.md) 集合 |附加文件。 附件目前是只读的 – 不支持发送附件。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式
