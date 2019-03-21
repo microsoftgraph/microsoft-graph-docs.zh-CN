@@ -2154,6 +2154,10 @@ items:
           href: api/intune-enrollment-importeddeviceidentity-update.md
         - name: importDeviceIdentityList 操作
           href: api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md
+        - name: searchExistingIdentities 操作
+          href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
+        - name: searchExistingIdentities 操作
+          href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
       - name: 已导入的设备标识结果
         href: resources/intune-enrollment-importeddeviceidentityresult.md
         items:
@@ -2246,6 +2250,12 @@ items:
           href: api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md
         - name: unassignUserFromDevice 操作
           href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md
+        - name: assignResourceAccountToDevice 操作
+          href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
+        - name: unassignResourceAccountFromDevice 操作
+          href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
+      - name: Windows Autopilot 设备类型
+        href: resources/intune-enrollment-windowsautopilotdevicetype.md
       - name: Windows Autopilot 配置文件分配详细状态
         href: resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md
       - name: Windows Autopilot 配置文件分配状态
@@ -2958,8 +2968,6 @@ items:
         href: resources/intune-deviceconfig-defenderprotectiontype.md
       - name: Defender 扫描类型
         href: resources/intune-deviceconfig-defenderscantype.md
-      - name: Defender 计划扫描日
-        href: resources/intune-deviceconfig-defenderschedulescanday.md
       - name: Defender 安全中心 IT 联系人显示类型
         href: resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md
       - name: 应用类型中的 Defender 安全中心通知
@@ -4667,6 +4675,29 @@ items:
         href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
       - name: Windows 防火墙网络配置文件
         href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
+      - name: Windows 防火墙规则
+        href: resources/intune-deviceconfig-windowsfirewallrule.md
+      - name: Windows 防火墙规则接口类型
+        href: resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md
+      - name: Windows 防火墙规则网络配置文件类型
+        href: resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md
+      - name: Windows 防火墙规则流量方向类型
+        href: resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md
+      - name: Windows 运行状况监视配置
+        href: resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md
+        items:
+        - name: 列出
+          href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-list.md
+        - name: 获取
+          href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-get.md
+        - name: 创建
+          href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-create.md
+        - name: 删除
+          href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-delete.md
+        - name: 更新
+          href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-update.md
+      - name: Windows 运行状况监视范围
+        href: resources/intune-deviceconfig-windowshealthmonitoringscope.md
       - name: Windows 身份保护配置
         href: resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md
         items:
@@ -4886,6 +4917,8 @@ items:
         href: resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md
       - name: Windows 更新安装计划类型
         href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
+      - name: Windows 更新通知显示选项
+        href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
       - name: Windows 更新计划安装
         href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
       - name: Windows 更新状态
@@ -5616,7 +5649,7 @@ items:
           href: api/intune-devices-windowsprotectionstate-get.md
         - name: 更新
           href: api/intune-devices-windowsprotectionstate-update.md
-    - name: 移动应用管理
+    - name: 移动应用管理 (MAM)
       href: resources/intune-mam-conceptual.md
       items:
       - name: Android 托管应用保护
@@ -5641,6 +5674,10 @@ items:
           href: api/intune-mam-androidmanagedappregistration-get.md
         - name: 创建
           href: api/intune-mam-androidmanagedappregistration-create.md
+      - name: Android 托管应用安全网络应用验证类型
+        href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
+      - name: Android 托管应用安全网络设备证明类型
+        href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
       - name: Android 移动应用标识符
         href: resources/intune-mam-androidmobileappidentifier.md
       - name: 应用管理级别
@@ -6189,7 +6226,7 @@ items:
           href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md
       - name: Windows Hello 企业版 PIN 使用情况
         href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-    - name: 基于角色的访问控制
+    - name: 基于角色的访问控制 (RBAC)
       href: /resources/intune-rbac-conceptual.md
       items:
       - name: 设备和应用管理分配的角色详情
@@ -8399,7 +8436,68 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: 获取开放扩展
         href: api/opentypeextension-get.md
-    - name: 驱动器
+    - name: 计划
+      href: resources/schedule.md
+      items:
+      - name: 创建或替换
+        href: api/team-put-schedule.md
+      - name: 获取
+        href: api/schedule-get.md
+      - name: 共享
+        href: api/schedule-share.md
+    - name: 计划组
+      href: resources/schedulinggroup.md
+      items:
+      - name: 创建
+        href: api/schedule-post-schedulinggroups.md
+      - name: 列出
+        href: api/schedule-list-schedulinggroups.md
+      - name: 获取
+        href: api/schedulinggroup-get.md
+      - name: 替换
+        href: api/schedulinggroup-put.md
+      - name: 删除
+        href: api/schedulinggroup-delete.md
+    - name: 调班
+      href: resources/shift.md
+      items:
+      - name: 创建
+        href: api/schedule-post-shifts.md
+      - name: 列出
+        href: api/schedule-list-shifts.md
+      - name: 获取
+        href: api/shift-get.md
+      - name: 替换
+        href: api/shift-put.md
+      - name: 删除
+        href: api/shift-delete.md
+    - name: 休假
+      href: resources/timeoff.md
+      items:
+      - name: 创建
+        href: api/schedule-post-timesoff.md
+      - name: 列出
+        href: api/schedule-list-timesoff.md
+      - name: 获取
+        href: api/timeoff-get.md
+      - name: 替换
+        href: api/timeoff-put.md
+      - name: 删除
+        href: api/timeoff-delete.md
+    - name: 休假原因
+      href: resources/timeoffreason.md
+      items:
+      - name: 创建
+        href: api/schedule-post-timeoffreasons.md
+      - name: 列出
+        href: api/schedule-list-timeoffreasons.md
+      - name: 获取
+        href: api/timeoffreason-get.md
+      - name: 替换
+        href: api/timeoffreason-put.md
+      - name: 删除
+        href: api/timeoffreason-delete.md
+    - name: Drive
       href: resources/drive.md
       items:
       - name: 获取驱动器
@@ -8679,9 +8777,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: f8e523c9607558df8b287e684f4bfef9505ff617
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: 8f241db6c350664573899b4c25bd2fefb55d7f1b
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458692"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572556"
