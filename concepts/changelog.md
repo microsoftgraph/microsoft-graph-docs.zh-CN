@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: f22796c779e93217cb28da29c333b4ab27e4d5c2
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: 3b483efe388887b89a12a99ecea27b1f85753efd
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458706"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571422"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,38 @@ ms.locfileid: "30458706"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="march-2019"></a>2019 年 3 月
+
+### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+|更改类型|版本|说明|
+|:---|:---|:---|
+|添加项|beta|添加的新实体：<br/>[windowsHealthMonitoringConfiguration](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringconfiguration?view=graph-rest-beta)<br/>|
+|添加项|beta|新增了复杂类型：<br/>[windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta)<br/>|
+|Addition|beta 版本|添加的新枚举类型：<br/>[androidManagedAppSafetyNetAppsVerificationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetappsverificationtype?view=graph-rest-beta)<br/>[androidManagedAppSafetyNetDeviceAttestationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype?view=graph-rest-beta)<br/>[windowsAutopilotDeviceType](/graph/api/resources/intune-enrollment-windowsautopilotdevicetype?view=graph-rest-beta)<br/>[windowsFirewallRuleInterfaceTypes](/graph/api/resources/intune-deviceconfig-windowsfirewallruleinterfacetypes?view=graph-rest-beta)<br/>[windowsFirewallRuleNetworkProfileTypes](/graph/api/resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes?view=graph-rest-beta)<br/>[windowsFirewallRuleTrafficDirectionType](/graph/api/resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype?view=graph-rest-beta)<br/>[windowsHealthMonitoringScope](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringscope?view=graph-rest-beta)<br/>[windowsUpdateNotificationDisplayOption](/graph/api/resources/intune-deviceconfig-windowsupdatenotificationdisplayoption?view=graph-rest-beta)<br/>|
+|Addition|beta|在 [importedDeviceIdentity](/graph/api/resources/intune-enrollment-importeddeviceidentity?view=graph-rest-beta) 集合上添加了 [searchExistingIdentities](o:searchExistingIdentities:Collection(microsoft.graph.importedDeviceIdentity)) 操作 |
+|添加项|beta|在 [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) 上添加了 [assignResourceAccountToDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice?view=graph-rest-beta) 操作 |
+|添加项|beta|在 [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) 上添加了 [unassignResourceAccountFromDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice?view=graph-rest-beta) 操作 |
+|删除|beta|删除了以下枚举类型：<br/>**defenderScheduleScanDay**<br/>|
+|Addition|beta|向 [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta) 实体添加了 **requiredAndroidSafetyNetDeviceAttestationType**、**appActionIfAndroidSafetyNetDeviceAttestationFailed**、**requiredAndroidSafetyNetAppsVerificationType** 和 **appActionIfAndroidSafetyNetAppsVerificationFailed** 属性|
+|添加项|beta|向 [androidManagedStoreApp](/graph/api/resources/intune-apps-androidmanagedstoreapp?view=graph-rest-beta) 实体添加了 **supportsOemConfig** 属性|
+|添加项|beta|向 [androidManagedStoreAppConfiguration](/graph/api/resources/intune-apps-androidmanagedstoreappconfiguration?view=graph-rest-beta) 实体添加了 **appSupportsOemConfig** 属性|
+|添加项|beta|向 [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) 实体添加了 **requiredAndroidSafetyNetDeviceAttestationType**、**appActionIfAndroidSafetyNetDeviceAttestationFailed**、**requiredAndroidSafetyNetAppsVerificationType** 和 **appActionIfAndroidSafetyNetAppsVerificationFailed** 属性|
+|添加项|beta|向 [depMacOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta) 实体添加了 **iCloudStorageDisabled** 和 **chooseYourLockScreenDisabled** 属性|
+|Addition|beta|向 [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta) 实体添加了 **roleScopeTagIds** 属性|
+|添加项|beta|向 [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta) 实体添加了 **allowedOutboundClipboardSharingExceptionLength** 属性|
+|Addition|beta|向 [sharedPCConfiguration](/graph/api/resources/intune-deviceconfig-sharedpcconfiguration?view=graph-rest-beta) 实体添加了 **fastFirstSignIn** 属性|
+|Addition|beta|向 [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta) 属性添加了 **tpmRequired** 属性|
+|Addition|beta|向 [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta) 实体添加了 **firewallRules** 属性|
+|Addition|beta|向 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 实体添加了 **authenticationWebSignIn**、**privacyDisableLaunchExperience** 和 **appManagementPackageFamilyNamesToLaunchAfterLogOn** 属性|
+|删除|beta|从 [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta) 实体中删除了 **defenderScheduleScanDay** 属性|
+|添加项|beta|向 [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta) 实体添加了 **deviceType** 属性|
+|Addition|beta|向 [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) 实体添加了 **resourceName**、**skuNumber**、**systemFamily**、**azureActiveDirectoryDeviceId** 和 **managedDeviceId** 属性|
+|删除|beta|从 [windowsKioskConfiguration](/graph/api/resources/intune-deviceconfig-windowskioskconfiguration?view=graph-rest-beta) 实体删除了 **edgeKioskResetAfterIdleTimeInMinutes** 属性|
+|添加项|beta|向 [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta) 实体添加了 **userWindowsUpdateScanAccess** 和 **updateNotificationLevel** 属性|
+|Addition|beta|向 [excludedApps](/graph/api/resources/intune-apps-excludedapps?view=graph-rest-beta) 复杂类型添加了 **teams** 属性|
+|Addition|beta|向 [windowsKioskAppBase](/graph/api/resources/intune-deviceconfig-windowskioskappbase?view=graph-rest-beta) 复杂类型添加了 **autoLaunch** 属性|
+|Addition|beta|向 [windowsKioskMultipleApps](/graph/api/resources/intune-deviceconfig-windowskioskmultipleapps?view=graph-rest-beta) 复杂类型添加了 **allowAccessToDownloadsFolder** 属性|
+|添加项|beta|向 [androidDeviceOwnerRequiredPasswordType](/graph/api/resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype?view=graph-rest-beta) 枚举类型添加了 **lowSecurityBiometric** 成员|
+|Addition|beta|向 [managedAppFlaggedReason](/graph/api/resources/intune-mam-managedappflaggedreason?view=graph-rest-beta) 枚举类型添加了 **androidBootloaderUnlocked** 和 **androidFactoryRomModified** 成员|
 
 ### <a name="directory-apis"></a>目录 API
 
