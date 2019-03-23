@@ -4,12 +4,12 @@ description: 更新 orgcontact 对象的属性。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 50a0d50d4905c19b152302ee908cbece5eff399a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cec4817472fe5192c7af836131cea83bcb60d77b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517881"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789632"
 ---
 # <a name="update-orgcontact"></a>更新 orgcontact
 
@@ -40,7 +40,7 @@ PATCH /contacts/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|city|String||
+|城市|String||
 |country|String||
 |department|String||
 |onPremisesSyncEnabled|Boolean||
@@ -54,14 +54,14 @@ PATCH /contacts/{id}
 |officeLocation|String||
 |postalCode|String||
 |proxyAddresses|String||
-|state|String||
+|state|字符串||
 |streetAddress|String||
 |surname|String||
-|businessPhones|String||
+|businessPhones|String collection||
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[orgContact](../resources/orgcontact.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[orgContact](../resources/orgcontact.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

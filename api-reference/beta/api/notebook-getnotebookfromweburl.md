@@ -1,29 +1,29 @@
 ---
-title: 笔记本： getNotebookFromWebUrl
-description: 检索的属性和使用其 URL 路径笔记本对象的关系。
+title: '笔记本: getNotebookFromWebUrl'
+description: 使用 URL 路径检索笔记本对象的属性和关系。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 226cbd70343feaf8fe5404aac6077f9b2438aba8
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: b5067f50b1e03c124af8323709fc7b3f70af871b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29982067"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789646"
 ---
-# <a name="notebook-getnotebookfromweburl"></a>笔记本： getNotebookFromWebUrl
+# <a name="notebook-getnotebookfromweburl"></a>笔记本: getNotebookFromWebUrl
 
-[!包括 beta 免责声明]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过使用其 URL 路径中检索的属性和[笔记本](../resources/notebook.md)对象的关系。
+使用其 URL 路径检索[笔记本](../resources/notebook.md)对象的属性和关系。
 
-位置可以是用户在 Office 365、 组笔记本或在 Office 365 上的 SharePoint 网站承载团队笔记本的笔记本。
+该位置可以是 office 365 上的用户笔记本、组笔记本或 office 365 上的 SharePoint 网站托管的团队笔记本。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
+|委派（工作或学校帐户） | 注意: Create、notes、read、read. all、all、all    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -35,21 +35,21 @@ POST /groups/{id}/onenote/notebooks/GetNotebookFromWebUrl
 POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 ```
 ## <a name="request-headers"></a>请求标头
-| Name       | 类型 | 说明|
+| 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | 字符串  | Bearer {token}。必需。 |
-| Accept | string | `application/json` |
+| Authorization  | string  | Bearer {token}。必需。 |
+| 接受 | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供要检索的笔记本的完整 URL 路径的 JSON 表示形式。
+在请求正文中, 提供要检索的笔记本的完整 URL 路径的 JSON 表示形式。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| `webUrl`     |`String`     | 若要检索的笔记本 URL 路径。 它还可以包含"onenote:"前缀。|
+| `webUrl`     |`String`     | 要检索的笔记本的 URL 路径。 它还可以包含 "onenote:" 前缀。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [notebook](../resources/notebook.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[笔记本](../resources/notebook.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

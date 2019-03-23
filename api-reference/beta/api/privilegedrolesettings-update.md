@@ -1,28 +1,28 @@
 ---
 title: 更新 privilegedRoleSettings
-description: 更新给定的角色设置的角色设置。 将返回一个 privilegedRoleSettings 对象。
+description: 更新给定角色设置的角色设置。 将返回一个 privilegedRoleSettings 对象。
 localization_priority: Normal
-ms.openlocfilehash: 09464c878c76ed557f30d0eac21e0572fae05062
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: f416656362c5be0ccdaa2b3aaa7812511e357875
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641118"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789604"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新给定的角色设置的角色设置。 将返回一个[privilegedRoleSettings](../resources/privilegedrolesettings.md)对象。
+更新给定角色设置的角色设置。 将返回一个[privilegedRoleSettings](../resources/privilegedrolesettings.md)对象。
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
->**注意：** 请求者必须具有以下角色之一： 具有权限的角色管理员、 全局管理员、 安全管理员或安全读取器。 
+>**注意:** 请求者必须具有以下角色之一: 特权角色管理员、全局管理员、安全管理员或安全阅读者。 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | PrivilegedAccess 的 AzureAD、directory.accessasuser.all    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -38,29 +38,29 @@ PUT /privilegedRoles/{id}/settings
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[privilegedRoleSettings](../resources/privilegedrolesettings.md)对象的 JSON 表示形式。
+在请求正文中, 提供[privilegedRoleSettings](../resources/privilegedrolesettings.md)对象的 JSON 表示形式。
 
-下表列出更新角色设置时可以提供的属性。
+下表列出了在更新角色设置时可以提供的属性。
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|当激活角色持续时间。 必需。|
-|id|string|角色设置唯一标识符。 只读。 必需。|
-|isMfaOnElevationConfigurable|boolean|**true**如果 mfaOnElevation 可配置。 **false**如果 mfaOnElevation 不可配置。 必需。|
-|lastGlobalAdmin|布尔值|仅供内部使用。|
-|maxElavationDuration|duration|激活角色的最长持续时间。 必需。|
-|mfaOnElevation|布尔值|如果为**true** MFA 需要激活角色。 **false**如果 MFA 不需要激活角色。 必需。|
-|minElevationDuration|duration|激活角色的最低持续时间。 必需。|
-|notificationToUserOnElevation|布尔值|**true**如果角色激活时向最终用户发送通知。 **false**如果角色被激活时不发送通知。 必需。|
-|ticketingInfoOnElevation|布尔值|如果为**true**时，票证信息是必需激活角色。 **false**如果票证信息不需要激活角色。 必需。|
-|approvalOnElevation|布尔值|**true**如果情况下审批，需要激活角色。 **false**如果审批不需要激活角色。 必需。|
-|approverIds|array|审批 Id，如果需要激活审核的列表。|
+|elevationDuration|duration|激活角色的持续时间。 必需。|
+|id|string|角色设置的唯一标识符。 只读。 必需。|
+|isMfaOnElevationConfigurable|布尔|如果 mfaOnElevation 是可配置的,**则为 true** 。 **假**如果 mfaOnElevation 不可配置。 必需。|
+|lastGlobalAdmin|Boolean|仅供内部使用。|
+|maxElavationDuration|duration|已激活角色的最长持续时间。 必需。|
+|mfaOnElevation|Boolean|如果需要 MFA 以激活角色,**则为 true** 。 **假**如果无需进行 MFA 即可激活角色。 必需。|
+|minElevationDuration|duration|已激活角色的最小持续时间。 必需。|
+|notificationToUserOnElevation|Boolean|如果激活角色时向最终用户发送通知,**则为 true** 。 **假**如果在角色激活时不发送通知。 必需。|
+|ticketingInfoOnElevation|Boolean|如果激活角色时需要票证信息,**则为 true** 。 **假**如果激活角色时不需要票证信息。 必需。|
+|approvalOnElevation|Boolean|如果激活角色时需要进行审批,**则为 true** 。 **假**如果激活该角色时不需要审批。 必需。|
+|approverIds|String collection|审批 id 的列表 (如果激活需要审批)。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
 
-请注意，需要将其注册到 PIM 租户。 否则，将返回的 HTTP 403 禁止访问状态代码。
+请注意, 需要将租户注册到 PIM。 否则, 将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

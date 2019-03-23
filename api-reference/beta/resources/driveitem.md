@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9fa2f5cb9d40b0f8f12a5d1a6709eb03bf2975ba
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 7ac95379d8e5eeae07e520f40ae9403c47e98f58
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481487"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789639"
 ---
 # <a name="driveitem-resource-type"></a>driveItem 资源类型
 
@@ -25,10 +25,10 @@ ms.locfileid: "30481487"
 
 **DriveItem** 资源拥有作为属性进行模块化的多个 Facet，用于提供 driveItem 的标识和功能相关数据。例如：
 
-* 文件夹具有[**文件夹 facet**][folder]
-* 文件具有[**文件 facet**][file]。
-* 除了文件 facet，图像还具有[**图像 facet**][image]。
-* 使用照相机拍摄的图像（照片）具有[**照片 facet**][photo]，用于将项标识为照片，并提供照片的拍摄时间和拍摄所用设备等属性。
+* 文件夹具有 [**folder facet**][folder]
+* 文件具有 [**file facet**][file]。
+* 除了 file facet 之外，图像还具有 [**image facet**][image]。
+* 使用照相机拍摄的图像（照片）具有 [**photo facet**][photo]，用于将项标识为照片，并提供照片的拍摄时间和拍摄所用设备等属性。
 
 具有**文件夹** Facet 的项目充当项目的容器，因此具有指向文件夹下的 **driveItems** 集合的 `children` 引用。
 
@@ -49,6 +49,7 @@ ms.locfileid: "30481487"
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "description": "string",
@@ -72,11 +73,13 @@ ms.locfileid: "30481487"
 
   /* relationships */
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "content": { "@odata.type": "Edm.Stream" },
-  "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
+  "createdByUser": { "@odata.type": "microsoft.graph.user" },
+  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "versions": [ {"@odata.type": "Collection(microsoft.graph.driveItemVersion)"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
   /* inherited from baseItem */
   "id": "string (identifier)",
@@ -100,23 +103,24 @@ ms.locfileid: "30481487"
 
 | 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [音频][]          | 音频元数据（如果此项是一个音频文件）。只读。
+| audio                | [audio][]          | 音频元数据（如果此项是一个音频文件）。只读。
+| content              | 流             | 内容流（如果此项表示一个文件）。
 | createdBy            | [identitySet][]    | 识别创建项目的用户、设备和应用程序。只读。
 | createdDateTime      | DateTimeOffset     | 创建项的日期和时间。只读。
 | cTag                 | String             | 项目内容的 eTag。如果只有元数据更改，此 eTag 不会更改。**注意** 如果项目是文件夹，则不返回此属性。只读。
 | deleted              | [deleted][]        | 有关项目删除状态的信息。只读。
-| description          | String             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
+| description          | 字符串             | 提供项的用户可见的说明。读写。仅在 OneDrive 个人版上
 | eTag                 | String             | 整个项目（元数据和内容）的 eTag。只读。
-| 文件                 | [文件][]           | 文件元数据（如果此项是一个文件）。只读。
+| file                 | [file][]           | 文件元数据（如果此项是一个文件）。只读。
 | fileSystemInfo       | [fileSystemInfo][] | 客户端上的文件系统信息。读写。
-| 文件夹               | [文件夹][]         | 文件夹元数据（如果此项是一个文件夹）。只读。
+| folder               | [folder][]         | 文件夹元数据（如果此项是一个文件夹）。只读。
 | id                   | String             | 项在驱动器中的唯一标识符。只读。
-| image                | [图像][]          | 图像元数据（如果此项是一个图像）。只读。
+| image                | [image][]          | 图像元数据（如果此项是一个图像）。只读。
 | lastModifiedBy       | [identitySet][]    | 上次修改项目的用户、设备和应用程序的标识。只读。
 | lastModifiedDateTime | DateTimeOffset     | 上次修改项目的日期和时间。只读。
 | location             | [geoCoordinates][] | 位置元数据（如果此项包含位置数据）。只读。
-| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
-| 包              | [包][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
+| name                 | String             | 项目名称（文件名和扩展名）。读写。
+| package              | [package][]        | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。
 | parentReference      | [itemReference][]  | 父信息（如果此项具有父级）。读写。
 | photo                | [照片][]          | 照片元数据（如果此项包含照片）。只读。
 | publication          | [publicationFacet][] | 在支持此类操作的位置提供有关某个项目的已发布或签出状态信息。 默认情况下，不会返回此属性。 只读。 |
@@ -127,24 +131,27 @@ ms.locfileid: "30481487"
 | sharepointIds        | [sharepointIds][]  | 返回对 SharePoint REST 兼容性有用的标识符。只读。
 | size                 | Int64              | 项目大小，以字节为单位。只读。
 | specialFolder        | [specialFolder][]  | 如果当前项同时也是一个特殊的文件夹，则返回此 facet。只读。
-| video                | [视频][]          | 视频元数据（如果此项是一个视频）。只读。
+| video                | [video][]          | 视频元数据（如果此项是一个视频）。只读。
 | WebDavUrl            | String             | 项的可兼容 WebDAV 的 URL。
-| WebUrl               | 字符串             | 在浏览器中显示此资源的 URL。只读。
+| WebUrl               | String             | 在浏览器中显示此资源的 URL。只读。
 
 **注意：** ETag 和 cTag 属性在容器（文件夹）中以不同的方式工作。更改任意文件夹后代的内容或元数据时，也会修改 CTag 值。除了从后代派生的属性（例如 **childCount** 或 **lastModifiedDateTime**），仅在更改文件夹的属性时修改 eTag 值。
 
 ## <a name="relationships"></a>关系
 
-| 关系       | 类型                            | 说明
-|:-------------------|:--------------------------------|:--------------------------
-| activities         | [itemActivity][] 集合     | 最近发生在此项上的活动的列表。
-| 分析          | [itemAnalytics][] 资源      | 有关此项上发生的视图活动的分析。
-| 内容            | 流                          | 内容流（如果此项表示一个文件）。
-| children           | driveItem 集合            | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
-| listItem           | [listItem][]                    | 对于 SharePoint 中的驱动器, 关联的文档库列表项。 只读。 可为 Null。
-| permissions        | [权限][] 集合       | 项目的权限集。只读。可为 Null。
-| 缩略图         | [thumbnailSet][] collection     | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅[获取缩略图][]。只读。可为 NULL。
-| versions           | [driveItemVersion][]集合 | 项目的以前版本的列表。 有关详细信息, 请参阅[获取早期版本][]。 只读。 可为 Null。
+| 关系       | 类型                        | 说明
+|:-------------------|:----------------------------|:--------------------------
+| activities         | [itemActivity][] 集合 | 最近发生在此项上的活动的列表。
+| analytics          | [itemAnalytics][] 资源  | 有关此项上发生的视图活动的分析。
+| children           | driveItem 集合        | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
+| createdByUser      | [用户][]                    | 创建了项的用户的身份。 只读。
+| lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。 只读。
+| listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 只读。 可为 null。
+| permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
+| 订阅      | [订阅][]集合 | 对项目的一组订阅。 仅在驱动器的根目录上受支持。
+| 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
+| 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 null。
+| 工作簿           | [workbook][]                | 如果是 Excel 工作表文件，访问工作簿 API 以使用工作表的内容。 可为 Null。
 
 ## <a name="instance-attributes"></a>实例属性
 
@@ -157,7 +164,8 @@ ms.locfileid: "30481487"
 | @microsoft.graph.sourceUrl        | string | 发出 PUT 请求时，此实例批注可用于指示服务下载 URL 内容并将其存储为文件。只写。
 
 **注意：**@microsoft.graph.downloadUrl 值是一个短期 URL，不能缓存。
-此 URL 在失效前只能使用很短的时间（1 小时）。 删除用户的文件权限可能不会立即使 URL 无效。
+此 URL 在失效前只能使用很短的时间（1 小时）。
+删除用户的文件权限可能不会立即使 URL 无效。
 
 ## <a name="methods"></a>方法
 
@@ -169,29 +177,29 @@ ms.locfileid: "30481487"
 | [按间隔获取活动][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
 | [列出子项](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
 | [列出版本](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [创建项](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
-| [更新项](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
-| [上传内容](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
+| [创建项目](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
+| [更新项目](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
+| [上载内容](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
 | [下载内容](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
 | [下载特定格式文件][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
 | [删除项](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [移动项](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
-| [复制项](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [搜索项](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [列出驱动器中的变更](../api/driveitem-delta.md)     | `GET /drive/root/delta`
+| [移动项目](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
+| [复制项目](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
+| [搜索项目](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
+| [列出驱动器中的更改](../api/driveitem-delta.md)     | `GET /drive/root/delta`
 | [列出缩略图](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [创建共享链接](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [添加权限](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [列出权限](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [删除权限](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [获取 WebSocket 通道][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [预览项目][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [预览项][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
 [获取分析结果]: ../api/itemanalytics-get.md
 [按间隔获取活动]: ../api/itemactivity-getbyinterval.md
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>说明
 
 在 OneDrive for Business 或 SharePoint 文档库中，如果 **driveItem** 具有[folder][] Facet，则不返回 **cTag** 属性。
 
@@ -203,7 +211,7 @@ ms.locfileid: "30481487"
 [File]: file.md
 [fileSystemInfo]: filesysteminfo.md
 [folder]: folder.md
-[获取早期版本]: ../api/driveitem-list-versions.md
+[获取旧版本]: ../api/driveitem-list-versions.md
 [获取缩略图]: ../api/driveitem-list-thumbnails.md
 [getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
@@ -223,8 +231,10 @@ ms.locfileid: "30481487"
 [shared]: shared.md
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
+[订阅]: subscription.md
 [thumbnailSet]: thumbnailset.md
-[video]: video.md
+[视频]: video.md
+[工作簿]: workbook.md
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 

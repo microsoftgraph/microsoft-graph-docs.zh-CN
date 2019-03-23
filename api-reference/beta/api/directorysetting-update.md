@@ -4,12 +4,12 @@ description: 更新特定目录设置对象的属性。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: baaf6994f7052155173dd58b2c6b021939dc7ba7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1337527b7be6c8cc7f2b52f37a1698d61fa9b842
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529094"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789611"
 ---
 # <a name="update-a-directory-setting"></a>更新目录设置
 
@@ -17,7 +17,7 @@ ms.locfileid: "29529094"
 
 更新特定目录设置对象的属性。
 
-> **注意**： 此 API 的 /beta 版本才适用于组。 此 API 的 /v1.0 版本已被重命名为*更新 groupSettings*。
+> **注意**: 此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*更新 groupSettings*。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,8 @@ ms.locfileid: "29529094"
 |应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->更新租户范围内或组的特定设置。
+<!-- { "blockType": "ignored" } -->
+更新租户范围或组特定设置。
 ```http
 PATCH /settings/{id}
 PATCH /groups/{id}/settings/{id}
@@ -44,7 +45,7 @@ PATCH /groups/{id}/settings/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| values | settingValue | 更新的值集。注意：必须提供整个集合组。无法更新单个值集合。 |
+| 值 | [settingValue](../resources/settingvalue.md)集合 | 更新的值集。注意：必须提供整个集合组。无法更新单个值集合。 |
 
 ## <a name="response"></a>响应
 

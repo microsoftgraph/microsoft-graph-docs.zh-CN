@@ -1,21 +1,21 @@
 ---
-title: 答复通道中的邮件
-description: 对现有通道中邮件答复。
+title: 在渠道中回复消息
+description: 在渠道中回复现有消息。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 700180a6cfc328a62237f3dfffe663bb6c57a24e
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 15e1bfffe7d7634092937a0605debfd5294b142b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "30039554"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789674"
 ---
-# <a name="reply-to-a-message-in-a-channel"></a>答复通道中的邮件
+# <a name="reply-to-a-message-in-a-channel"></a>在渠道中回复消息
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的[频道](../resources/channel.md)中创建新[邮件](../resources/chatmessage.md)答复。
+在指定的[频道](../resources/channel.md)中创建对[邮件](../resources/chatmessage.md)的新答复。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -37,11 +37,11 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[message](../resources/chatmessage.md)对象的 JSON 表示形式。 仅正文属性是必需的这是可选的其他属性。
+在请求正文中, 提供[message](../resources/chatmessage.md)对象的 JSON 表示形式。 只有 body 属性是必需的, 其他属性是可选的。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应代码创建的[消息](../resources/chatmessage.md)。
+如果成功, 此方法将`201 Created`在已创建的[邮件](../resources/chatmessage.md)中返回响应代码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -51,7 +51,7 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
   "name": "post_reply_message"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/messages
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
 
 {
