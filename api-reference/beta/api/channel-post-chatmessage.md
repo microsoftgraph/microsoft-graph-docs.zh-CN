@@ -1,17 +1,17 @@
 ---
-title: 在频道中发送邮件
+title: 在渠道中发送消息
 description: 在指定的频道中发送新邮件。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 42dcf26a5e67f58668f4bd321a68e684feef237f
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: 960c5d8164f2681b71bb2c3b46383bb210240bb2
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458636"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30799982"
 ---
-# <a name="send-a-message-to-a-channel"></a>向频道发送邮件
+# <a name="send-a-message-to-a-channel"></a>向渠道发送消息
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +46,10 @@ POST /teams/{id}/channels/{id}/messages
 
 如果成功, 此方法将`201 Created`在已创建的[邮件](../resources/chatmessage.md)中返回响应代码。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例 
+
+### <a name="example-1-hello-world"></a>示例 1: Hello World
+
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {
@@ -108,6 +111,101 @@ Content-length: 160
     },
     "attachments": [],
     "mentions": [],
+    "reactions": []
+}
+```
+
+### <a name="example-2-mentions"></a>示例 2: @mentions
+
+##### <a name="request"></a>请求
+下面是一个请求示例。
+<!-- {
+  "blockType": "request",
+  "name": "create_chatmessage_from_channel"
+}-->
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+Content-type: application/json
+
+{
+  "body": {
+    "contentType": "html",
+    "content": "Hello World <at id=\"0\">Jane Smith</at>"
+  },
+  "mentions": [
+    {
+      "id": 0,
+      "mentionText": "Jane Smith",
+      "mentioned": {
+        "user": {
+          "displayName": "Jane Smith",
+          "id": "ef1c916a-3135-4417-ba27-8eb7bd084193",
+          "userIdentityType": "aadUser"
+        }
+      }
+    }
+  ]
+}
+```
+
+##### <a name="response"></a>响应
+
+下面是一个响应示例。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 160
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages/$entity",
+    "id": "id-value",
+    "replyToId": null,
+    "etag": "id-value",
+    "messageType": "message",
+    "createdDateTime": "2019-02-04T19:58:15.511Z",
+    "lastModifiedDateTime": null,
+    "deleted": false,
+    "subject": null,
+    "summary": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "policyViolation": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "id-value",
+            "displayName": "Joh Doe",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "Hello World <at id=\"0\">Jane Smith</at>"
+    },
+    "attachments": [],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "Jane Smith",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "ef1c916a-3135-4417-ba27-8eb7bd084193",
+                    "displayName": "Jane Smith",
+                    "userIdentityType": "aadUser"
+                }
+            }
+        }
+    ],
     "reactions": []
 }
 ```

@@ -4,12 +4,12 @@ description: '表示学校的课程。 **educationClass** 资源对应于 Office
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 5a4bbc0560f2a40b5a438ec8276bbcf984a22721
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e02cc4b10e4f1f933921f86735f9b09610cfe818
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526730"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800010"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -30,19 +30,21 @@ ms.locfileid: "29526730"
 |[Add teacher](../api/educationclass-post-teachers.md) |[educationUser](educationuser.md)| 通过发布到 teachers 导航属性，为课程添加一个新的 **educationUser**。|
 |[List teachers](../api/educationclass-list-teachers.md) |[educationUser](educationuser.md) 集合| 获取课程的教师列表。|
 |[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| 通过教师导航属性从课程删除 **educationUser**。|
-|[创建 educationAssignment](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| 通过发布到 assignments 集合中创建新**educationAssignment** 。|
-|[列表分配](../api/educationclass-list-assignments.md) |[educationAssignment](../resources/educationassignment.md)集合| 获取**educationAssignment**对象集合。|
+|[创建 educationAssignment](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| 通过发布到工作分配集合创建新的**educationAssignment** 。|
+|[列出作业](../api/educationclass-list-assignments.md) |[educationAssignment](../resources/educationassignment.md)集合| 获取**educationAssignment**对象集合。|
 |[Get group](../api/educationclass-get-group.md) |[group](group.md)| 获得与此 **educationClass** 对应的 Office 365 **group**。|
+|[创建 educationCategory](../api/educationclass-post-category.md) | [educationCategory](educationCategory.md) | 为此类创建新的**educationCategory** 。|
+|[List categories](../api/educationclass-list-categories.md) | [educationCategory](educationCategory.md)集合 | 获取属于此类的**educationCategory**对象的列表。|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)    |更新 **educationClass** 对象。 |
 |[Delete](../api/educationclass-delete.md) | 无 |删除 **educationClass** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id| 字串符号| 课程的唯一标识符。|
-|description|字符串| 课程说明。|
+|id| String| 课程的唯一标识符。|
+|说明|String| 课程说明。|
 |displayName|String| 课程名称。|
-|mailNickname|String| 向所有成员发送电子邮件的邮件名称（如果已启用）。 |
+|mailNickname|字符串| 向所有成员发送电子邮件的邮件名称（如果已启用）。 |
 |createdBy|[identitySet](identityset.md)| 创建了课程的实体 |
 |classCode|String| 学校用于标识课程的课程代码。|
 |externalId|String| 来自同步系统的课程 ID。 |
@@ -57,7 +59,8 @@ ms.locfileid: "29526730"
 |members|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为空。|
 |schools|[educationSchool](../resources/educationschool.md) 集合| 与此课程相关的所有学校。 可为空。|
 |teachers|[educationUser](../resources/educationuser.md) 集合|  课程中的所有教师。 可为 NULL。|
-|assignments|[educationAssignment](../resources/educationassignment.md)集合| 与此类关联的所有工作分配。 可为 NULL。|
+|assignments|[educationAssignment](../resources/educationassignment.md)集合| 与此类关联的所有工作分配。 可为空。|
+|类别|[educationCategory](../resources/educationassignment.md)集合| 与此类关联的所有类别。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
