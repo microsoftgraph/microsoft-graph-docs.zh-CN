@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 58253683bfcc7407af398ba801885f9624bb2c28
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 8dbbf3b673fe7f436b9600366765425011ab129f
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482418"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789625"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -74,6 +74,7 @@ ms.locfileid: "30482418"
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
   "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
@@ -142,6 +143,7 @@ ms.locfileid: "30482418"
 | lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。 只读。
 | listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 只读。 可为 null。
 | permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
+| 订阅      | [订阅][]集合 | 项目上的订阅集。 仅在驱动器根目录上支持。
 | 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
 | 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 Null。
 | 工作簿           | [workbook][]                | 如果是 Excel 工作表文件，访问工作簿 API 以使用工作表的内容。 可为 Null。
@@ -156,7 +158,9 @@ ms.locfileid: "30482418"
 | @microsoft.graph.downloadUrl      | string | 一个可用于下载此文件的内容的 URL。不需要使用此 URL 进行身份验证。只读。
 | @microsoft.graph.sourceUrl        | string | 发出 PUT 请求时，此实例批注可用于指示服务下载 URL 内容并将其存储为文件。只写。
 
-**注意：**@microsoft.graph.downloadUrl 值是一个短期 URL，不能缓存。此 URL 在失效前只能使用很短的时间（1 小时）。
+**注意：**@microsoft.graph.downloadUrl 值是一个短期 URL，不能缓存。
+此 URL 在失效前只能使用很短的时间（1 小时）。
+删除用户的文件权限可能不会立即使 URL 无效。
 
 ## <a name="methods"></a>方法
 
@@ -180,6 +184,7 @@ ms.locfileid: "30482418"
 | [添加权限](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [列出权限](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [删除权限](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [获取 WebSocket 频道][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [预览项][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
@@ -198,6 +203,7 @@ ms.locfileid: "30482418"
 [folder]: folder.md
 [获取旧版本]: ../api/driveitem-list-versions.md
 [获取缩略图]: ../api/driveitem-list-thumbnails.md
+[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemReference]: itemreference.md
@@ -212,6 +218,7 @@ ms.locfileid: "30482418"
 [shared]: shared.md
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
+[订阅]: subscription.md
 [thumbnailSet]: thumbnailset.md
 [视频]: video.md
 [工作簿]: workbook.md
