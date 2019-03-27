@@ -1,33 +1,33 @@
 ---
 title: scheduleInformation 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: '表示用户、通讯组列表或资源在指定时间段内的可用性。 '
 localization_priority: Normal
-ms.openlocfilehash: e84505ee2f30a5b7b52e9d5b589b8bb24d9a4c95
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6c809b9cf600d9b620164f253d2a37e57a0f5d4d
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521906"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869489"
 ---
-# <a name="scheduleinformation-resource-type"></a><span data-ttu-id="1eb95-104">scheduleInformation 资源类型</span><span class="sxs-lookup"><span data-stu-id="1eb95-104">scheduleInformation resource type</span></span>
+# <a name="scheduleinformation-resource-type"></a><span data-ttu-id="206ef-103">scheduleInformation 资源类型</span><span class="sxs-lookup"><span data-stu-id="206ef-103">scheduleInformation resource type</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="1eb95-105">在指定的时间段代表用户、 通讯组列表或资源的可用性。</span><span class="sxs-lookup"><span data-stu-id="1eb95-105">Represents the availability of a user, distribution list, or resource for a specified time period.</span></span>
+<span data-ttu-id="206ef-104">表示用户、通讯组列表或资源 (会议室或设备) 在指定时间段的可用性。</span><span class="sxs-lookup"><span data-stu-id="206ef-104">Represents the availability of a user, distribution list, or resource (room or equipment) for a specified time period.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1eb95-106">属性</span><span class="sxs-lookup"><span data-stu-id="1eb95-106">Properties</span></span>
-| <span data-ttu-id="1eb95-107">属性</span><span class="sxs-lookup"><span data-stu-id="1eb95-107">Property</span></span>     | <span data-ttu-id="1eb95-108">类型</span><span class="sxs-lookup"><span data-stu-id="1eb95-108">Type</span></span>   |<span data-ttu-id="1eb95-109">说明</span><span class="sxs-lookup"><span data-stu-id="1eb95-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="206ef-105">属性</span><span class="sxs-lookup"><span data-stu-id="206ef-105">Properties</span></span>
+| <span data-ttu-id="206ef-106">属性</span><span class="sxs-lookup"><span data-stu-id="206ef-106">Property</span></span>     | <span data-ttu-id="206ef-107">类型</span><span class="sxs-lookup"><span data-stu-id="206ef-107">Type</span></span>   |<span data-ttu-id="206ef-108">说明</span><span class="sxs-lookup"><span data-stu-id="206ef-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1eb95-110">availabilityView</span><span class="sxs-lookup"><span data-stu-id="1eb95-110">availabilityView</span></span> |<span data-ttu-id="1eb95-111">String</span><span class="sxs-lookup"><span data-stu-id="1eb95-111">String</span></span> |<span data-ttu-id="1eb95-112">表示的合并的视图中的所有项目的可用性的`scheduleItems`。</span><span class="sxs-lookup"><span data-stu-id="1eb95-112">Represents a merged view of availability of all the items in `scheduleItems`.</span></span> <span data-ttu-id="1eb95-113">视图包含的时间段。</span><span class="sxs-lookup"><span data-stu-id="1eb95-113">The view consists of time slots.</span></span> <span data-ttu-id="1eb95-114">指示期间每个时间段的可用性：`0`免费 = `1`= 暂定、 `2`= 忙`3`= 外出、 `4`= 其他地方工作。</span><span class="sxs-lookup"><span data-stu-id="1eb95-114">Availability during each time slot is indicated with: `0`= free, `1`= tentative, `2`= busy, `3`= out of office, `4`= working elsewhere.</span></span>|
-|<span data-ttu-id="1eb95-115">error</span><span class="sxs-lookup"><span data-stu-id="1eb95-115">error</span></span> |[<span data-ttu-id="1eb95-116">freeBusyError</span><span class="sxs-lookup"><span data-stu-id="1eb95-116">freeBusyError</span></span>](freebusyerror.md) |<span data-ttu-id="1eb95-117">从尝试获取用户、 通讯组列表或资源的可用性信息的错误。</span><span class="sxs-lookup"><span data-stu-id="1eb95-117">Error information from attempting to get the availability of the user, distribution list, or resource.</span></span> |
-|<span data-ttu-id="1eb95-118">scheduleId</span><span class="sxs-lookup"><span data-stu-id="1eb95-118">scheduleId</span></span> |<span data-ttu-id="1eb95-119">String</span><span class="sxs-lookup"><span data-stu-id="1eb95-119">String</span></span> |<span data-ttu-id="1eb95-120">用户、 通讯组列表或资源，标识实例**scheduleInformation**SMTP 地址。</span><span class="sxs-lookup"><span data-stu-id="1eb95-120">An SMTP address of the user, distribution list, or resource, identifying an instance of **scheduleInformation**.</span></span> |
-|<span data-ttu-id="1eb95-121">scheduleItems</span><span class="sxs-lookup"><span data-stu-id="1eb95-121">scheduleItems</span></span> |<span data-ttu-id="1eb95-122">[scheduleItem](scheduleitem.md)集合</span><span class="sxs-lookup"><span data-stu-id="1eb95-122">[scheduleItem](scheduleitem.md) collection</span></span> |<span data-ttu-id="1eb95-123">包含描述的用户或资源的可用性的项。</span><span class="sxs-lookup"><span data-stu-id="1eb95-123">Contains the items that describe the availability of the user or resource.</span></span> |
-|<span data-ttu-id="1eb95-124">workingHours</span><span class="sxs-lookup"><span data-stu-id="1eb95-124">workingHours</span></span> |[<span data-ttu-id="1eb95-125">workingHours</span><span class="sxs-lookup"><span data-stu-id="1eb95-125">workingHours</span></span>](workinghours.md) |<span data-ttu-id="1eb95-126">特定时区用户一周的工作天数和小时数。</span><span class="sxs-lookup"><span data-stu-id="1eb95-126">The days of the week and hours in a specific time zone that the user works.</span></span> <span data-ttu-id="1eb95-127">这些设置用户的[mailboxSettings](mailboxsettings.md)的一部分。</span><span class="sxs-lookup"><span data-stu-id="1eb95-127">These are set as part of the user's [mailboxSettings](mailboxsettings.md).</span></span>|
+|<span data-ttu-id="206ef-109">availabilityView</span><span class="sxs-lookup"><span data-stu-id="206ef-109">availabilityView</span></span> |<span data-ttu-id="206ef-110">String</span><span class="sxs-lookup"><span data-stu-id="206ef-110">String</span></span> |<span data-ttu-id="206ef-111">表示中`scheduleItems`所有项的可用性的合并视图。</span><span class="sxs-lookup"><span data-stu-id="206ef-111">Represents a merged view of availability of all the items in `scheduleItems`.</span></span> <span data-ttu-id="206ef-112">视图由时间段组成。</span><span class="sxs-lookup"><span data-stu-id="206ef-112">The view consists of time slots.</span></span> <span data-ttu-id="206ef-113">在每个时间段内的可用性表示`0`为: = `1`free、= `2`暂定、= `3`忙碌、= 外出, `4`= 在其他地方工作。</span><span class="sxs-lookup"><span data-stu-id="206ef-113">Availability during each time slot is indicated with: `0`= free, `1`= tentative, `2`= busy, `3`= out of office, `4`= working elsewhere.</span></span>|
+|<span data-ttu-id="206ef-114">错误</span><span class="sxs-lookup"><span data-stu-id="206ef-114">error</span></span> |[<span data-ttu-id="206ef-115">freeBusyError</span><span class="sxs-lookup"><span data-stu-id="206ef-115">freeBusyError</span></span>](freebusyerror.md) |<span data-ttu-id="206ef-116">有关尝试获取用户、通讯组列表或资源的可用性的错误信息。</span><span class="sxs-lookup"><span data-stu-id="206ef-116">Error information from attempting to get the availability of the user, distribution list, or resource.</span></span> |
+|<span data-ttu-id="206ef-117">scheduleId</span><span class="sxs-lookup"><span data-stu-id="206ef-117">scheduleId</span></span> |<span data-ttu-id="206ef-118">String</span><span class="sxs-lookup"><span data-stu-id="206ef-118">String</span></span> |<span data-ttu-id="206ef-119">标识**scheduleInformation**实例的用户、通讯组列表或资源的 SMTP 地址。</span><span class="sxs-lookup"><span data-stu-id="206ef-119">An SMTP address of the user, distribution list, or resource, identifying an instance of **scheduleInformation**.</span></span> |
+|<span data-ttu-id="206ef-120">scheduleItems</span><span class="sxs-lookup"><span data-stu-id="206ef-120">scheduleItems</span></span> |<span data-ttu-id="206ef-121">[scheduleItem](scheduleitem.md)集合</span><span class="sxs-lookup"><span data-stu-id="206ef-121">[scheduleItem](scheduleitem.md) collection</span></span> |<span data-ttu-id="206ef-122">包含描述用户或资源可用性的项。</span><span class="sxs-lookup"><span data-stu-id="206ef-122">Contains the items that describe the availability of the user or resource.</span></span> |
+|<span data-ttu-id="206ef-123">workingHours</span><span class="sxs-lookup"><span data-stu-id="206ef-123">workingHours</span></span> |[<span data-ttu-id="206ef-124">workingHours</span><span class="sxs-lookup"><span data-stu-id="206ef-124">workingHours</span></span>](workinghours.md) |<span data-ttu-id="206ef-125">特定时区用户一周的工作天数和小时数。</span><span class="sxs-lookup"><span data-stu-id="206ef-125">The days of the week and hours in a specific time zone that the user works.</span></span> <span data-ttu-id="206ef-126">这些设置为用户的[mailboxSettings](mailboxsettings.md)的一部分。</span><span class="sxs-lookup"><span data-stu-id="206ef-126">These are set as part of the user's [mailboxSettings](mailboxsettings.md).</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="1eb95-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1eb95-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="206ef-127">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="206ef-127">JSON representation</span></span>
 
-<span data-ttu-id="1eb95-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1eb95-129">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="206ef-128">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="206ef-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

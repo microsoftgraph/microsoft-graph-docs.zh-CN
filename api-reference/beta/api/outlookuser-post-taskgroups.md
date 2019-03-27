@@ -1,51 +1,51 @@
 ---
 title: 创建 outlookTaskGroup
-description: 在用户邮箱中创建 Outlook 任务组。
+description: 在用户的邮箱中创建一个 Outlook 任务组。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 291eb580228f28754acccff78f60ed6a2004155b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 364510c3d866b193012763d17dbc22f2e1d7c8f7
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516005"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869258"
 ---
-# <a name="create-outlooktaskgroup"></a><span data-ttu-id="d1402-103">创建 outlookTaskGroup</span><span class="sxs-lookup"><span data-stu-id="d1402-103">Create outlookTaskGroup</span></span>
+# <a name="create-outlooktaskgroup"></a><span data-ttu-id="a8728-103">创建 outlookTaskGroup</span><span class="sxs-lookup"><span data-stu-id="a8728-103">Create outlookTaskGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d1402-104">在用户邮箱中创建 Outlook 任务组。</span><span class="sxs-lookup"><span data-stu-id="d1402-104">Create an Outlook task group in the user's mailbox.</span></span>
-## <a name="permissions"></a><span data-ttu-id="d1402-105">权限</span><span class="sxs-lookup"><span data-stu-id="d1402-105">Permissions</span></span>
-<span data-ttu-id="d1402-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d1402-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a8728-104">在用户的邮箱中创建一个 Outlook 任务组。</span><span class="sxs-lookup"><span data-stu-id="a8728-104">Create an Outlook task group in the user's mailbox.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a8728-105">权限</span><span class="sxs-lookup"><span data-stu-id="a8728-105">Permissions</span></span>
+<span data-ttu-id="a8728-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a8728-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d1402-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d1402-108">Permission type</span></span>      | <span data-ttu-id="d1402-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d1402-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a8728-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a8728-108">Permission type</span></span>      | <span data-ttu-id="a8728-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a8728-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d1402-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d1402-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d1402-111">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d1402-111">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="d1402-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d1402-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d1402-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d1402-113">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="d1402-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d1402-114">Application</span></span> | <span data-ttu-id="d1402-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d1402-115">Not supported.</span></span> |
+|<span data-ttu-id="a8728-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a8728-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a8728-111">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a8728-111">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="a8728-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a8728-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8728-113">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a8728-113">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="a8728-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a8728-114">Application</span></span> | <span data-ttu-id="a8728-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a8728-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d1402-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d1402-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a8728-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a8728-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskGroups
 POST /users/{id|userPrincipalName}/outlook/taskGroups
-
 ```
-## <a name="request-headers"></a><span data-ttu-id="d1402-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="d1402-117">Request headers</span></span>
-| <span data-ttu-id="d1402-118">名称</span><span class="sxs-lookup"><span data-stu-id="d1402-118">Name</span></span>       | <span data-ttu-id="d1402-119">说明</span><span class="sxs-lookup"><span data-stu-id="d1402-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a8728-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="a8728-117">Request headers</span></span>
+| <span data-ttu-id="a8728-118">名称</span><span class="sxs-lookup"><span data-stu-id="a8728-118">Name</span></span>       | <span data-ttu-id="a8728-119">说明</span><span class="sxs-lookup"><span data-stu-id="a8728-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="d1402-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d1402-120">Authorization</span></span>  | <span data-ttu-id="d1402-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d1402-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a8728-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a8728-120">Authorization</span></span>  | <span data-ttu-id="a8728-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a8728-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d1402-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="d1402-123">Request body</span></span>
-<span data-ttu-id="d1402-124">在请求正文中，提供[outlookTaskGroup](../resources/outlooktaskgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d1402-124">In the request body, supply a JSON representation of [outlookTaskGroup](../resources/outlooktaskgroup.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a8728-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="a8728-123">Request body</span></span>
+<span data-ttu-id="a8728-124">在请求正文中, 提供[outlookTaskGroup](../resources/outlooktaskgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a8728-124">In the request body, supply a JSON representation of [outlookTaskGroup](../resources/outlooktaskgroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d1402-125">响应</span><span class="sxs-lookup"><span data-stu-id="d1402-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a8728-125">响应</span><span class="sxs-lookup"><span data-stu-id="a8728-125">Response</span></span>
 
-<span data-ttu-id="d1402-126">如果成功，此方法返回`201 Created`响应正文中的响应代码和[outlookTaskGroup](../resources/outlooktaskgroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="d1402-126">If successful, this method returns `201 Created` response code and [outlookTaskGroup](../resources/outlooktaskgroup.md) object in the response body.</span></span>
+<span data-ttu-id="a8728-126">如果成功, 此方法在`201 Created`响应正文中返回响应代码和[outlookTaskGroup](../resources/outlooktaskgroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a8728-126">If successful, this method returns `201 Created` response code and [outlookTaskGroup](../resources/outlooktaskgroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d1402-127">示例</span><span class="sxs-lookup"><span data-stu-id="d1402-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d1402-128">请求</span><span class="sxs-lookup"><span data-stu-id="d1402-128">Request</span></span>
-<span data-ttu-id="d1402-129">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d1402-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a8728-127">示例</span><span class="sxs-lookup"><span data-stu-id="a8728-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a8728-128">请求</span><span class="sxs-lookup"><span data-stu-id="a8728-128">Request</span></span>
+<span data-ttu-id="a8728-129">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a8728-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskgroup_from_outlookuser"
@@ -59,9 +59,9 @@ Content-length: 40
   "name": "Leisure tasks"
 }
 ```
-<span data-ttu-id="d1402-130">在请求正文中，提供[outlookTaskGroup](../resources/outlooktaskgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d1402-130">In the request body, supply a JSON representation of [outlookTaskGroup](../resources/outlooktaskgroup.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="d1402-131">响应</span><span class="sxs-lookup"><span data-stu-id="d1402-131">Response</span></span>
-<span data-ttu-id="d1402-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d1402-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="a8728-130">在请求正文中, 提供[outlookTaskGroup](../resources/outlooktaskgroup.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a8728-130">In the request body, supply a JSON representation of [outlookTaskGroup](../resources/outlooktaskgroup.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="a8728-131">响应</span><span class="sxs-lookup"><span data-stu-id="a8728-131">Response</span></span>
+<span data-ttu-id="a8728-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a8728-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

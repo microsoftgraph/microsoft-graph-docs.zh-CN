@@ -4,50 +4,51 @@ description: 在用户的默认联系人文件夹下创建新的 contactFolder�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 75550f7468bda678d20f09343a7150d5f4e70fd7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 578798cd73ffef061ca10718d7f3d7dd3adfcec5
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521899"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869272"
 ---
-# <a name="create-contactfolder"></a><span data-ttu-id="86ccf-103">创建 ContactFolder</span><span class="sxs-lookup"><span data-stu-id="86ccf-103">Create ContactFolder</span></span>
+# <a name="create-contactfolder"></a><span data-ttu-id="bf6f9-103">创建 ContactFolder</span><span class="sxs-lookup"><span data-stu-id="bf6f9-103">Create ContactFolder</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="86ccf-104">在用户的默认联系人文件夹下创建新的 contactFolder。</span><span class="sxs-lookup"><span data-stu-id="86ccf-104">Create a new contactFolder under the user's default contacts folder.</span></span>
+<span data-ttu-id="bf6f9-104">在用户的默认联系人文件夹下创建新的 contactFolder。</span><span class="sxs-lookup"><span data-stu-id="bf6f9-104">Create a new contactFolder under the user's default contacts folder.</span></span>
 
-<span data-ttu-id="86ccf-105">还可以[创建新的 contactfolder，作为任意指定联系人文件夹的子文件夹](contactfolder-post-childfolders.md)。</span><span class="sxs-lookup"><span data-stu-id="86ccf-105">You can also [create a new contactfolder as a child of any specified contact folder](contactfolder-post-childfolders.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="86ccf-106">权限</span><span class="sxs-lookup"><span data-stu-id="86ccf-106">Permissions</span></span>
-<span data-ttu-id="86ccf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="86ccf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bf6f9-105">还可以[创建新的 contactfolder，作为任意指定联系人文件夹的子文件夹](contactfolder-post-childfolders.md)。</span><span class="sxs-lookup"><span data-stu-id="bf6f9-105">You can also [create a new contactfolder as a child of any specified contact folder](contactfolder-post-childfolders.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="bf6f9-106">权限</span><span class="sxs-lookup"><span data-stu-id="bf6f9-106">Permissions</span></span>
+<span data-ttu-id="bf6f9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bf6f9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="86ccf-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="86ccf-109">Permission type</span></span>      | <span data-ttu-id="86ccf-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="86ccf-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bf6f9-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="bf6f9-109">Permission type</span></span>      | <span data-ttu-id="bf6f9-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bf6f9-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="86ccf-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="86ccf-111">Delegated (work or school account)</span></span> | <span data-ttu-id="86ccf-112">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="86ccf-112">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="86ccf-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="86ccf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="86ccf-114">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="86ccf-114">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="86ccf-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="86ccf-115">Application</span></span> | <span data-ttu-id="86ccf-116">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="86ccf-116">Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="bf6f9-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bf6f9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="bf6f9-112">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bf6f9-112">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="bf6f9-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bf6f9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bf6f9-114">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bf6f9-114">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="bf6f9-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="bf6f9-115">Application</span></span> | <span data-ttu-id="bf6f9-116">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bf6f9-116">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="86ccf-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="86ccf-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bf6f9-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bf6f9-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/contactFolders
 POST /users/{id | userPrincipalName}/contactFolders
 ```
-## <a name="request-headers"></a><span data-ttu-id="86ccf-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="86ccf-118">Request headers</span></span>
-| <span data-ttu-id="86ccf-119">标头</span><span class="sxs-lookup"><span data-stu-id="86ccf-119">Header</span></span>       | <span data-ttu-id="86ccf-120">值</span><span class="sxs-lookup"><span data-stu-id="86ccf-120">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="bf6f9-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="bf6f9-118">Request headers</span></span>
+| <span data-ttu-id="bf6f9-119">标头</span><span class="sxs-lookup"><span data-stu-id="bf6f9-119">Header</span></span>       | <span data-ttu-id="bf6f9-120">值</span><span class="sxs-lookup"><span data-stu-id="bf6f9-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="86ccf-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="86ccf-121">Authorization</span></span>  | <span data-ttu-id="86ccf-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="86ccf-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="86ccf-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="86ccf-124">Content-Type</span></span>  | <span data-ttu-id="86ccf-125">application/json</span><span class="sxs-lookup"><span data-stu-id="86ccf-125">application/json</span></span>  |
+| <span data-ttu-id="bf6f9-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="bf6f9-121">Authorization</span></span>  | <span data-ttu-id="bf6f9-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bf6f9-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="bf6f9-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bf6f9-124">Content-Type</span></span>  | <span data-ttu-id="bf6f9-125">application/json</span><span class="sxs-lookup"><span data-stu-id="bf6f9-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="86ccf-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="86ccf-126">Request body</span></span>
-<span data-ttu-id="86ccf-127">在请求正文中，提供 [ContactFolder](../resources/contactfolder.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="86ccf-127">In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bf6f9-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="bf6f9-126">Request body</span></span>
+<span data-ttu-id="bf6f9-127">在请求正文中，提供 [ContactFolder](../resources/contactfolder.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bf6f9-127">In the request body, supply a JSON representation of [ContactFolder](../resources/contactfolder.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="86ccf-128">响应</span><span class="sxs-lookup"><span data-stu-id="86ccf-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bf6f9-128">响应</span><span class="sxs-lookup"><span data-stu-id="bf6f9-128">Response</span></span>
 
-<span data-ttu-id="86ccf-129">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [ContactFolder](../resources/contactfolder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="86ccf-129">If successful, this method returns `201 Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.</span></span>
+<span data-ttu-id="bf6f9-129">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [ContactFolder](../resources/contactfolder.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bf6f9-129">If successful, this method returns `201 Created` response code and [ContactFolder](../resources/contactfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="86ccf-130">示例</span><span class="sxs-lookup"><span data-stu-id="86ccf-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="86ccf-131">请求</span><span class="sxs-lookup"><span data-stu-id="86ccf-131">Request</span></span>
-<span data-ttu-id="86ccf-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="86ccf-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="bf6f9-130">示例</span><span class="sxs-lookup"><span data-stu-id="bf6f9-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bf6f9-131">请求</span><span class="sxs-lookup"><span data-stu-id="bf6f9-131">Request</span></span>
+<span data-ttu-id="bf6f9-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="bf6f9-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_contactfolder_from_user"
@@ -62,9 +63,9 @@ Content-length: 84
   "displayName": "displayName-value"
 }
 ```
-<span data-ttu-id="86ccf-133">在请求正文中，提供 [contactFolder](../resources/contactfolder.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="86ccf-133">In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="86ccf-134">响应</span><span class="sxs-lookup"><span data-stu-id="86ccf-134">Response</span></span>
-<span data-ttu-id="86ccf-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="86ccf-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="bf6f9-133">在请求正文中，提供 [contactFolder](../resources/contactfolder.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bf6f9-133">In the request body, supply a JSON representation of [contactFolder](../resources/contactfolder.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="bf6f9-134">响应</span><span class="sxs-lookup"><span data-stu-id="bf6f9-134">Response</span></span>
+<span data-ttu-id="bf6f9-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="bf6f9-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
