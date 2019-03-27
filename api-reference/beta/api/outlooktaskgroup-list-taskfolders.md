@@ -1,21 +1,21 @@
 ---
-title: 列表 taskFolders
-description: 获取特定 outlookTaskGroup Outlook 任务文件夹。
+title: 列出 taskFolders
+description: 获取特定 outlookTaskGroup 中的 Outlook 任务文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 16a3463a7cdc4a3bc4efd401c7ca1a8932c82b7c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c639fb0fe8e1ae010c3f5dbfb6b9c85c34009f00
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508284"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869461"
 ---
-# <a name="list-taskfolders"></a>列表 taskFolders
+# <a name="list-taskfolders"></a>列出 taskFolders
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取特定[outlookTaskGroup](../resources/outlooktaskgroup.md)Outlook 任务文件夹。
+获取特定[outlookTaskGroup](../resources/outlooktaskgroup.md)中的 Outlook 任务文件夹。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,6 +28,7 @@ ms.locfileid: "29508284"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskGroups/{id}/taskFolders
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -43,7 +44,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[outlookTaskFolder](../resources/outlooktaskfolder.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

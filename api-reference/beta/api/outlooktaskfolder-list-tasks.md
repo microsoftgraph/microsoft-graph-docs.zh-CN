@@ -1,25 +1,25 @@
 ---
 title: 列出任务
-description: 在指定文件夹中获取所有 Outlook 任务。
+description: 获取指定文件夹中的所有 Outlook 任务。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: dfcd1438d55a22654c5601bc55827d0dedbdc6b2
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: a1769c83dc84e70ed051f5d1d284d00de7c71ae4
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967261"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869467"
 ---
 # <a name="list-tasks"></a>列出任务
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定文件夹中获取所有 Outlook 任务。
+获取指定文件夹中的所有 Outlook 任务。
 
-默认情况下，此操作 （和文章、 修补程序，和[完成](../api/outlooktask-complete.md)任务操作） 返回与日期相关的属性采用 UTC。  您可以使用`Prefer: outlook.timezone`请求标头，使其具有不同于 UTC 时区中表示的响应中的所有日期相关的属性。 请参阅[示例](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time)用于获取单个任务。 您可以应用同样要获取多个任务的标题。
+默认情况下, 此操作 (以及发布、修补和[完成](../api/outlooktask-complete.md)任务操作) 返回 UTC 格式的与日期相关的属性。  您可以使用`Prefer: outlook.timezone`请求标头将响应中的所有与日期相关的属性都以与 UTC 不同的时区表示。 请参阅获取单个任务的[示例](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time)。 您可以按类似方式应用标头以获取多个任务。
 
-如果存在多个任务组，并且想要获取的所有任务在特定任务组中，第一个都[都获取该任务组中的所有任务文件夹](outlooktaskgroup-list-taskfolders.md)，然后都都获取每个这些任务文件夹中的任务。
+如果有多个任务组, 并且想要获取特定任务组中的所有任务, 请首先[获取该任务组中的所有任务文件夹](outlooktaskgroup-list-taskfolders.md), 然后获取这些任务文件夹中每个任务文件夹中的任务。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -33,6 +33,8 @@ ms.locfileid: "29967261"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskFolders/{id}/tasks
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
@@ -40,17 +42,17 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
-| Name      |说明|
+| 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | 响应，它可以采用 UTC 如果未指定此标头中指定的时间属性的时区。 可选。|
+| Prefer: outlook.timezone | 指定响应中时间属性的时区 (如果未指定此标头, 则采用 UTC 格式表示)。 可选。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[outlookTask](../resources/outlooktask.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[outlookTask](../resources/outlooktask.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

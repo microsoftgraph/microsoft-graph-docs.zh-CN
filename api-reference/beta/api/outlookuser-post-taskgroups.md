@@ -1,21 +1,21 @@
 ---
 title: 创建 outlookTaskGroup
-description: 在用户邮箱中创建 Outlook 任务组。
+description: 在用户的邮箱中创建一个 Outlook 任务组。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 291eb580228f28754acccff78f60ed6a2004155b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 364510c3d866b193012763d17dbc22f2e1d7c8f7
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516005"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869258"
 ---
 # <a name="create-outlooktaskgroup"></a>创建 outlookTaskGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在用户邮箱中创建 Outlook 任务组。
+在用户的邮箱中创建一个 Outlook 任务组。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,8 +28,8 @@ ms.locfileid: "29516005"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskGroups
 POST /users/{id|userPrincipalName}/outlook/taskGroups
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -37,11 +37,11 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[outlookTaskGroup](../resources/outlooktaskgroup.md)对象的 JSON 表示形式。
+在请求正文中, 提供[outlookTaskGroup](../resources/outlooktaskgroup.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应正文中的响应代码和[outlookTaskGroup](../resources/outlooktaskgroup.md)对象。
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[outlookTaskGroup](../resources/outlooktaskgroup.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -59,7 +59,7 @@ Content-length: 40
   "name": "Leisure tasks"
 }
 ```
-在请求正文中，提供[outlookTaskGroup](../resources/outlooktaskgroup.md)对象的 JSON 表示形式。
+在请求正文中, 提供[outlookTaskGroup](../resources/outlooktaskgroup.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

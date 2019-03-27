@@ -1,23 +1,23 @@
 ---
 title: 创建 outlookTask
-description: 在指定的任务文件夹中创建 Outlook 任务。
+description: 在指定的任务文件夹中创建一个 Outlook 任务。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8ba293d83e2a202a45cfebf4c318ee73d808e1e4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9d166a34d9cfa40c3a115a8e36e4f04a6732416c
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510594"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869391"
 ---
 # <a name="create-outlooktask"></a>创建 outlookTask
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的任务文件夹中创建 Outlook 任务。
+在指定的任务文件夹中创建一个 Outlook 任务。
 
-POST 方法始终将忽略的时间部分的**开始日期时间**和**dueDateTime**在请求正文中，并假定为始终中指定的时区的午夜的时间。
+POST 方法始终忽略请求正文中**startDateTime**和**dueDateTime**的时间部分, 并假定指定时区中的时间始终为午夜。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -31,6 +31,8 @@ POST 方法始终将忽略的时间部分的**开始日期时间**和**dueDateTi
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskFolders/{id}/tasks
+POST /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
@@ -38,14 +40,14 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Prefer: outlook.timezone | 响应，它可以采用 UTC 如果未指定此标头中指定的时间属性的时区。 可选。|
+| Prefer: outlook.timezone | 指定响应中时间属性的时区 (如果未指定此标头, 则采用 UTC 格式表示)。 可选。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。
+在请求正文中, 提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应正文中的响应代码和[outlookTask](../resources/outlooktask.md)对象。
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[outlookTask](../resources/outlooktask.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -71,9 +73,9 @@ Content-length: 376
   }
 }
 ```
-在请求正文中，提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。
+在请求正文中, 提供[outlookTask](../resources/outlooktask.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-POST 方法将忽略在请求正文中的时间部分，并假定为始终午夜指定时区 (PST) 中的时间。 然后，默认情况下 POST 方法将转换，并在响应中 utc 格式显示所有的日期相关的属性。
+POST 方法忽略请求正文中的时间部分, 并假定指定时区 (PST) 中的时间始终为午夜。 然后, 在默认情况下, POST 方法将在响应中转换并显示 UTC 格式的所有日期相关属性。
 
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

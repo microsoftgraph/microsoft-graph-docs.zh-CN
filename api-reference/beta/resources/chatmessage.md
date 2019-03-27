@@ -2,12 +2,12 @@
 title: chatMessage 资源类型
 description: 表示渠道或聊天实体内的单个聊天消息。 该消息可以是根消息，也可以是消息中的 **replyToId** 属性定义的线程部分。
 localization_priority: Priority
-ms.openlocfilehash: a74f422c6bf60e1293d8620b440152be77dacdc7
-ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
+ms.openlocfilehash: 1f1e38e53a7c7ad1b0452c9facc6d7f97314094e
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30644319"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30799996"
 ---
 # <a name="chatmessage-resource-type"></a>chatMessage 资源类型
 
@@ -38,8 +38,7 @@ ms.locfileid: "30644319"
 |createdDateTime|dateTimeOffset|只读。 创建消息时的时间戳。|
 |lastModifiedDateTime|dateTimeOffset|只读。 编辑/更新消息时的时间戳。|
 |deleted|Boolean|指示消息是否已被软删除。|
-|deletedDateTime|dateTimeOffset|只读。 删除消息时的时间戳。 |
-|主题|string|消息主题行。 可选。|
+|deletedDateTime|dateTimeOffset|只读。 删除消息时的时间戳，如果未删除则为 null。 |
 |正文|[itemBody](itembody.md)|消息内容的纯文本/HTML 表示。 默认返回纯文本，应用程序可选择 HTML 作为查询参数的一部分|
 |摘要|string|可用于推送通知的消息摘要文本和摘要视图或回退视图|
 |提及|[chatMessageMention](chatmention.md) 集合| 消息中提到的实体列表。 当前支持用户、机器人、团队、渠道。|
@@ -78,7 +77,6 @@ ms.locfileid: "30644319"
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
   "lastModifiedDateTime": "string (timestamp)",
-  "isDeleted": "boolean",
   "deletedDateTime": "string (timestamp)",
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},

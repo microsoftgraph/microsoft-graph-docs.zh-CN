@@ -4,12 +4,12 @@ description: 此 API 可用于新建用户日历。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bc95753edb40a428094dd183f1c6517407c6c54b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: afbb37d9394f2c08c94c6c8f41c56431e6938831
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521822"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869328"
 ---
 # <a name="create-calendar"></a>创建日历
 
@@ -28,6 +28,7 @@ ms.locfileid: "29521822"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/calendars
 POST /users/{id | userPrincipalName}/calendars
 ```
 ## <a name="request-headers"></a>请求标头

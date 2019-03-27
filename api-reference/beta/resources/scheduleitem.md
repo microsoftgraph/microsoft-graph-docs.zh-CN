@@ -1,29 +1,29 @@
 ---
 title: scheduleItem 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: 一个项目, 该项目描述与用户的默认日历上的实际事件相对应的用户的可用性。 此项也适用于资源。
 localization_priority: Normal
-ms.openlocfilehash: ed6b7441996cdf00b33be03f70afb888cc9bb251
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a39f45598ab3c427a741659aa93615317c3c57a7
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511350"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869307"
 ---
 # <a name="scheduleitem-resource-type"></a>scheduleItem 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-介绍了在用户的默认日历上与实际事件对应的用户的可用性的项。 此项适用于资源以及。
+一个项目, 该项目描述与用户的默认日历上的实际事件相对应的用户的可用性。 此项也适用于资源 (会议室或设备)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|end |[dateTimeTimeZone](datetimetimezone.md) |日期、 时间和结束对应的事件的时区。 |
-|IsPrivate |Boolean |区分大小写的对应的事件。 如果事件标记为`private`，则返回 false 否则为。 |
-|location |String | 相应的事件是保留或从参加的位置。 可选。|
-|start |[dateTimeTimeZone](datetimetimezone.md) |日期、 时间和相应事件开始的时区。 |
-|status |String | 可用性的用户或资源的相应事件执行过程的状态。 可能的值为： `free`， `tentative`， `busy`， `oof`， `workingElsewhere`， `unknown`。 |
-|subject |String | 相应的事件的主题行。 可选。|
+|end |[dateTimeTimeZone](datetimetimezone.md) |相应事件结束时的日期、时间和时区。 |
+|isPrivate |布尔值 |相应事件的敏感度。 如果已标记`private`事件, 则为 True, 否则为 false。 可选。 |
+|location |String | 保留或参与的相应事件的位置。 可选。|
+|start |[dateTimeTimeZone](datetimetimezone.md) |相应事件的开始日期、时间和时区。 |
+|status |freeBusyStatus | 相应事件期间用户或资源的可用性状态。 可能的值为: `free`、 `tentative`、 `busy` `oof`、、 `workingElsewhere`、 `unknown`。 |
+|subject |String | 相应事件的主题行。 可选。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -33,7 +33,9 @@ ms.locfileid: "29511350"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "isPrivate",
+    "location",
+    "subject"
   ],
   "@odata.type": "microsoft.graph.scheduleItem"
 }-->

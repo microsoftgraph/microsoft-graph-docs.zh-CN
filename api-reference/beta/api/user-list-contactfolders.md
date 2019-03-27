@@ -1,21 +1,21 @@
 ---
-title: 列出 contactFolders
-description: 获取已登录的用户邮箱中的所有联系人文件夹。
+title: List contactFolders
+description: 获取登录用户的邮箱中的所有联系人文件夹。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f5f0a485c3c134b6627fce5d3b8f04c26dee503e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4aca24e167f1d9f1bfe3529e44665347a5e1cdbd
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523279"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869265"
 ---
-# <a name="list-contactfolders"></a>列出 contactFolders
+# <a name="list-contactfolders"></a>List contactFolders
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取已登录的用户邮箱中的所有联系人文件夹。
+获取登录用户的邮箱中的所有联系人文件夹。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,6 +29,7 @@ ms.locfileid: "29523279"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contactFolders
 GET /users/{id | userPrincipalName}/contactFolders
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数

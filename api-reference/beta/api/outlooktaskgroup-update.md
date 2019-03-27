@@ -4,12 +4,12 @@ description: 更新 Outlook 任务组的可写属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b109be3bbb0ac485dd4da7778a69a5dddf8342db
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b628f0cf610afef88a198db721ee5395a34d1e08
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516390"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869482"
 ---
 # <a name="update-outlooktaskgroup"></a>更新 outlooktaskgroup
 
@@ -17,7 +17,7 @@ ms.locfileid: "29516390"
 
 更新 Outlook 任务组的可写属性。
 
-请注意，不能修改的默认任务组中，"我的任务"的名称。
+请注意, 不能修改默认任务组 "我的任务" 的名称。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,6 +30,7 @@ ms.locfileid: "29516390"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/outlook/taskGroups/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
@@ -46,10 +47,10 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[outlookTaskGroup](../resources/outlooktaskgroup.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[outlookTaskGroup](../resources/outlooktaskgroup.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例任务组的名称更改为"个人任务"。 
+下面的示例将任务组的名称更改为 "个人任务"。 
 <!-- {
   "blockType": "request",
   "name": "update_outlooktaskgroup"

@@ -1,25 +1,25 @@
 ---
 title: freeBusyError 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: 表示尝试获取用户、通讯组列表或资源可用性的错误信息。
 localization_priority: Normal
-ms.openlocfilehash: f1ff7717034798830a610b35dbbff5c987cf7371
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e2c755b51e72adf3ff4efa4de5c9438e70d701e1
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529843"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869335"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-表示从尝试获取用户、 通讯组列表或资源的可用性的错误信息。
+表示尝试获取用户、通讯组列表或资源可用性的错误信息。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|message |String |描述的错误。 |
-|ResponseCode |String |从查询的用户、 通讯组列表或资源可用性响应代码。 |
+|message |String |描述错误。 |
+|responseCode |String |对用户、通讯组列表或资源的可用性进行查询的响应代码。 |
 
 
 ## <a name="json-representation"></a>JSON 表示形式

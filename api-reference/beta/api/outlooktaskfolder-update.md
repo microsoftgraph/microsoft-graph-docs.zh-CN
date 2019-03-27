@@ -4,12 +4,12 @@ description: 更新 Outlook 任务文件夹的可写属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 83b75fb2588f58480e51e4e548bfd5d05b7f941b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0475e8b3279278f407ff979fa42cf270ae48192b
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530158"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869405"
 ---
 # <a name="update-outlooktaskfolder"></a>更新 outlooktaskfolder
 
@@ -17,7 +17,7 @@ ms.locfileid: "29530158"
 
 更新 Outlook 任务文件夹的可写属性。
 
-您无法更改默认任务文件夹中，"任务"的**name**属性值。
+无法更改默认任务文件夹 "任务" 的 "**名称**" 属性值。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,6 +30,8 @@ ms.locfileid: "29530158"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/outlook/taskFolders/{id}
+PATCH /me/outlook/taskGroups/{id}/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
@@ -47,10 +49,10 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[outlookTaskFolder](../resources/outlooktaskfolder.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[outlookTaskFolder](../resources/outlooktaskfolder.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例更改为指定的任务文件夹的名称`Charity work`。
+下面的示例将指定的任务文件夹的名称更改为`Charity work`。
 <!-- {
   "blockType": "request",
   "name": "update_outlooktaskfolder"

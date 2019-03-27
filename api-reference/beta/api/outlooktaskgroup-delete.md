@@ -4,12 +4,12 @@ description: 删除指定的 outlookTaskGroup。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b0ec96b876429a8a000da6754db7f39b7f84546f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cfe3c88adf821ca8a5643cdafd5719b5fbb4d40e
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528989"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869433"
 ---
 # <a name="delete-outlooktaskgroup"></a>删除 outlookTaskGroup
 
@@ -28,8 +28,8 @@ ms.locfileid: "29528989"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/outlook/taskGroups/{id}
 DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|

@@ -1,17 +1,17 @@
 ---
-title: 列出 calendarGroups
+title: List calendarGroups
 description: 获取用户的日历组。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5a09f07eb5f5dca4c14f4f684485b38d41177333
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ddd31fa4867d1653906ac6c331b284d18f3daa45
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938592"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869321"
 ---
-# <a name="list-calendargroups"></a>列出 calendarGroups
+# <a name="list-calendargroups"></a>List calendarGroups
 
 获取用户的日历组。
 ## <a name="permissions"></a>权限
@@ -26,6 +26,7 @@ ms.locfileid: "27938592"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/calendarGroups
 GET /users/{id | userPrincipalName}/calendarGroups
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数

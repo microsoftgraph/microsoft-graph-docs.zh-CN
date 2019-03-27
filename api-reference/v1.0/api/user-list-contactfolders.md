@@ -1,17 +1,17 @@
 ---
-title: 列出 contactFolders
+title: List contactFolders
 description: 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 827c56766325ef574d1a81c6997bbef1259ec692
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 61e30ea91e820235987efd2cff43595b179f6b95
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969371"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869279"
 ---
-# <a name="list-contactfolders"></a>列出 contactFolders
+# <a name="list-contactfolders"></a>List contactFolders
 
 获取已登录用户的默认联系人文件夹中的联系人文件夹集合。
 ## <a name="permissions"></a>权限
@@ -26,6 +26,7 @@ ms.locfileid: "27969371"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contactFolders
 GET /users/{id | userPrincipalName}/contactFolders
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数

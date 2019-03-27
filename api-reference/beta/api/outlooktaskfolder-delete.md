@@ -4,12 +4,12 @@ description: 删除指定的 Outlook 任务文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 0ad240cb28fc17204bbad7a608b79d457ca763cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4c526c937f7d92b6e2b0482193f6c0327f4870c1
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515872"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869384"
 ---
 # <a name="delete-outlooktaskfolder"></a>删除 outlookTaskFolder
 
@@ -28,9 +28,10 @@ ms.locfileid: "29515872"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/outlook/taskFolders/{id}
+DELETE /me/outlook/taskGroups/{id}/taskFolders/{id}
 DELETE /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|

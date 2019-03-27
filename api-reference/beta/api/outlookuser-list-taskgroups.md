@@ -1,23 +1,23 @@
 ---
-title: 列表 taskGroups
-description: 获取用户的邮箱中的所有 Outlook 任务组。
+title: 列出 taskGroups
+description: 获取用户邮箱中的所有 Outlook 任务组。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ba8e0982fabcc9a82ae3ba2ec3b9f34b1655932b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b3ebf2896ff8805280c23680915e54f9a094a7c8
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511091"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869356"
 ---
-# <a name="list-taskgroups"></a>列表 taskGroups
+# <a name="list-taskgroups"></a>列出 taskGroups
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户的邮箱中的所有 Outlook 任务组。
+获取用户邮箱中的所有 Outlook 任务组。
 
-响应始终包括默认任务组`My Tasks`，以及任何其他已创建的邮箱中的任务组。
+响应始终包括默认任务组`My Tasks`以及邮箱中已创建的任何其他任务组。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -30,6 +30,7 @@ ms.locfileid: "29511091"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskGroups
 GET /users/{id|userPrincipalName}/outlook/taskGroups
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -45,7 +46,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[outlookTaskGroup](../resources/outlooktaskgroup.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[outlookTaskGroup](../resources/outlooktaskgroup.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

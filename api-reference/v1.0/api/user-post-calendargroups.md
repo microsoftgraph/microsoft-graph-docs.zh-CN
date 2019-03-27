@@ -4,12 +4,12 @@ description: 使用此 API 创建新的 CalendarGroup。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d4a65099101b3e32e92dc4ba1cad62ed265f161a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 775f499bc3fb5562f9936d7d64f20e5494f10bd0
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916122"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869440"
 ---
 # <a name="create-calendargroup"></a>创建 CalendarGroup
 
@@ -26,6 +26,7 @@ ms.locfileid: "27916122"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/calendarGroups
 POST /users/{id | userPrincipalName}/calendarGroups
 ```
 ## <a name="request-headers"></a>请求标头

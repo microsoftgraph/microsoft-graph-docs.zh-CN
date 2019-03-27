@@ -1,21 +1,21 @@
 ---
 title: 获取 outlookTaskGroup
-description: 要获取的属性和指定 Outlook 任务组的关系。
+description: 获取指定的 Outlook 任务组的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d113c913be669df4735c902f261b0ce3f77c67c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b4f260d1ae19cca26720a59f68125caac3b5a846
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513093"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869398"
 ---
 # <a name="get-outlooktaskgroup"></a>获取 outlookTaskGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-要获取的属性和指定 Outlook 任务组的关系。
+获取指定的 Outlook 任务组的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,6 +28,7 @@ ms.locfileid: "29513093"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskGroups/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
@@ -43,7 +44,7 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[outlookTaskGroup](../resources/outlooktaskgroup.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[outlookTaskGroup](../resources/outlooktaskgroup.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

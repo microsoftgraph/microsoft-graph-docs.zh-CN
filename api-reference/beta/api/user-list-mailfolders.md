@@ -1,21 +1,21 @@
 ---
-title: 列出 mailFolder
-description: 获取已登录的用户邮箱中的所有邮件文件夹。
+title: List mailFolders
+description: 获取已登录用户的邮箱中的所有邮件文件夹。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8de6fa03cb0f7b6a85e2055d060101e598265b43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 64b96620d30188c720beaae4875712b1dc8d8e37
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509929"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869293"
 ---
-# <a name="list-mailfolders"></a>列出 mailFolder
+# <a name="list-mailfolders"></a>List mailFolders
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取已登录的用户邮箱中的所有邮件文件夹。
+获取已登录用户的邮箱中的所有邮件文件夹。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,6 +29,7 @@ ms.locfileid: "29509929"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数

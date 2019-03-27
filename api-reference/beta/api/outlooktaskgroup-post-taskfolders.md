@@ -1,21 +1,21 @@
 ---
 title: 创建 outlookTaskFolder
-description: Outlook 任务下创建文件夹指定 outlookTaskGroup。
+description: 在指定的 outlookTaskGroup 下创建 Outlook 任务文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 734be5578f6319307fabcac9c4e4b591b575858e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d1c6621e16d548b24cba264cb0434c5ea5dbd290
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529955"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869251"
 ---
 # <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Outlook 任务下创建文件夹指定[outlookTaskGroup](../resources/outlooktaskgroup.md)。
+在指定的[outlookTaskGroup](../resources/outlooktaskgroup.md)下创建 Outlook 任务文件夹。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -28,8 +28,8 @@ Outlook 任务下创建文件夹指定[outlookTaskGroup](../resources/outlooktas
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskGroups/{id}/taskFolders
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
-
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
@@ -37,15 +37,15 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。
+在请求正文中, 提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应正文中的响应代码和[outlookTaskFolder](../resources/outlooktaskfolder.md)对象。
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[outlookTaskFolder](../resources/outlooktaskfolder.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例创建一个名为任务文件夹`Cooking`指定的任务组中。
+下面的示例创建一个在指定任务`Cooking`组中调用的任务文件夹。
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskfolder_from_outlooktaskgroup"
@@ -60,7 +60,7 @@ Content-length: 131
   "name": "Cooking"
 }
 ```
-在请求正文中，提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。
+在请求正文中, 提供[outlookTaskFolder](../resources/outlooktaskfolder.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
