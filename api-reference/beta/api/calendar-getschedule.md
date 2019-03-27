@@ -4,18 +4,18 @@ description: 获取用户、通讯组列表或资源在指定时间段内的忙/
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 0c2f6a54664242831d7fd3f2ddfc6a44984674e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 48283f7e81a1faea34d91dec72906b71361c816a
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530025"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869377"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户、通讯组列表或资源在指定时间段内的忙/闲状态信息。
+获取用户、通讯组列表或资源（会议室或设备）在指定时间段内的忙/闲状态信息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,7 +45,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|String|表示响应中 **availabilityView** 中的时间段的持续时间。 默认值为 30 分钟，最小值为 6，最大值为 1440。 可选。|
+|availabilityViewInterval|Int32|表示响应中 **availabilityView** 中的时间段的持续时间。 默认值为 30 分钟，最小值为 6，最大值为 1440。 可选。|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|时间段结束的日期、时间和时区。|
 |schedules|String 集合|要获取忙/闲状态信息的用户、通讯组列表或资源的 SMTP 地址集合。|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|时间段开始的日期、时间和时区。|
@@ -67,16 +67,16 @@ Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
 {        
-    "schedules": ["AdeleV@contoso.onmicrosoft.com", "AlexW@contoso.OnMicrosoft.com"],
+    "schedules": ["adelev@contoso.onmicrosoft.com", "meganb@contoso.onmicrosoft.com"],
     "startTime": {
-        "dateTime": "2018-08-06T09:00:00",
+        "dateTime": "2019-03-15T09:00:00",
         "timeZone": "Pacific Standard Time"
     },
     "endTime": {
-        "dateTime": "2018-08-06T18:00:00",
+        "dateTime": "2019-03-15T18:00:00",
         "timeZone": "Pacific Standard Time"
     },
-    "availabilityViewInterval": "15"
+    "availabilityViewInterval": "60"
 }
 ```
 
@@ -93,134 +93,130 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
-    "value":[
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
+    "value": [
         {
-            "scheduleId":"AdeleV@contoso.onmicrosoft.com",
-            "availabilityView":"222222000022000000000000000000000000",
-            "scheduleItems":[
+            "scheduleId": "adelev@contoso.onmicrosoft.com",
+            "availabilityView": "000220000",
+            "scheduleItems": [
                 {
-                    "isPrivate":false,
-                    "status":"Busy",
-                    "subject":"Admininstrators debrief",
-                    "location":"Foyer",
-                    "start":{
-                        "dateTime":"2018-08-06T09:00:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "isPrivate": false,
+                    "status": "busy",
+                    "subject": "Let's go for lunch",
+                    "location": "Harry's Bar",
+                    "start": {
+                        "dateTime": "2019-03-15T12:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     },
-                    "end":{
-                        "dateTime":"2018-08-06T10:30:00.0000000",
-                        "timeZone":"Pacific Standard Time"
-                    }
-                },
-                {
-                    "isPrivate":false,
-                    "status":"Busy",
-                    "subject":"Lunch yoga",
-                    "location":"Courtyard",
-                    "start":{
-                        "dateTime":"2018-08-06T11:30:00.0000000",
-                        "timeZone":"Pacific Standard Time"
-                    },
-                    "end":{
-                        "dateTime":"2018-08-06T12:00:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "end": {
+                        "dateTime": "2019-03-15T14:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     }
                 }
             ],
-            "workingHours":{
-                "daysOfWeek":[
+            "workingHours": {
+                "daysOfWeek": [
                     "monday",
                     "tuesday",
                     "wednesday",
                     "thursday",
                     "friday"
                 ],
-                "startTime":"08:00:00.0000000",
-                "endTime":"17:00:00.0000000",
-                "timeZone":{
-                    "@odata.type":"#microsoft.graph.customTimeZone",
-                    "bias":480,
-                    "name":"Customized Time Zone",
-                    "standardOffset":{
-                        "time":"02:00:00.0000000",
-                        "dayOccurrence":1,
-                        "dayOfWeek":"sunday",
-                        "month":11,
-                        "year":0
-                    },
-                    "daylightOffset":{
-                        "daylightBias":-60,
-                        "time":"02:00:00.0000000",
-                        "dayOccurrence":2,
-                        "dayOfWeek":"sunday",
-                        "month":3,
-                        "year":0
-                    }
+                "startTime": "08:00:00.0000000",
+                "endTime": "17:00:00.0000000",
+                "timeZone": {
+                    "name": "Pacific Standard Time"
                 }
             }
         },
         {
-            "scheduleId":"AlexW@contoso.OnMicrosoft.com",
-            "availabilityView":"111111002222222200000000000000000000",
-            "scheduleItems":[
+            "scheduleId": "meganb@contoso.onmicrosoft.com",
+            "availabilityView": "200220010",
+            "scheduleItems": [
                 {
-                    "isPrivate":false,
-                    "status":"Tentative",
-                    "subject":"Admininstrators debrief",
-                    "location":"Foyer",
-                    "start":{
-                        "dateTime":"2018-08-06T09:00:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "status": "busy",
+                    "start": {
+                        "dateTime": "2019-03-15T08:30:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     },
-                    "end":{
-                        "dateTime":"2018-08-06T10:30:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "end": {
+                        "dateTime": "2019-03-15T09:30:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     }
                 },
                 {
-                    "isPrivate":false,
-                    "status":"Busy",
-                    "subject":"Q4 planning",
-                    "location":"Big Bear",
-                    "start":{
-                        "dateTime":"2018-08-06T11:00:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "status": "busy",
+                    "start": {
+                        "dateTime": "2019-03-15T12:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     },
-                    "end":{
-                        "dateTime":"2018-08-06T13:00:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "end": {
+                        "dateTime": "2019-03-15T14:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    }
+                },
+                {
+                    "status": "tentative",
+                    "start": {
+                        "dateTime": "2019-03-15T12:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    },
+                    "end": {
+                        "dateTime": "2019-03-15T13:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    }
+                },
+                {
+                    "status": "busy",
+                    "start": {
+                        "dateTime": "2019-03-15T13:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    },
+                    "end": {
+                        "dateTime": "2019-03-15T14:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    }
+                },
+                {
+                    "status": "tentative",
+                    "start": {
+                        "dateTime": "2019-03-15T16:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    },
+                    "end": {
+                        "dateTime": "2019-03-15T17:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     }
                 }
             ],
-            "workingHours":{
-                "daysOfWeek":[
+            "workingHours": {
+                "daysOfWeek": [
                     "monday",
                     "tuesday",
                     "wednesday",
                     "thursday",
                     "friday"
                 ],
-                "startTime":"08:00:00.0000000",
-                "endTime":"17:00:00.0000000",
-                "timeZone":{
-                    "@odata.type":"#microsoft.graph.customTimeZone",
-                    "bias":480,
-                    "name":"Customized Time Zone",
-                    "standardOffset":{
-                        "time":"02:00:00.0000000",
-                        "dayOccurrence":1,
-                        "dayOfWeek":"sunday",
-                        "month":11,
-                        "year":0
+                "startTime": "08:00:00.0000000",
+                "endTime": "17:00:00.0000000",
+                "timeZone": {
+                    "@odata.type": "#microsoft.graph.customTimeZone",
+                    "bias": 480,
+                    "name": "Customized Time Zone",
+                    "standardOffset": {
+                        "time": "02:00:00.0000000",
+                        "dayOccurrence": 1,
+                        "dayOfWeek": "sunday",
+                        "month": 11,
+                        "year": 0
                     },
-                    "daylightOffset":{
-                        "daylightBias":-60,
-                        "time":"02:00:00.0000000",
-                        "dayOccurrence":2,
-                        "dayOfWeek":"sunday",
-                        "month":3,
-                        "year":0
+                    "daylightOffset": {
+                        "daylightBias": -60,
+                        "time": "02:00:00.0000000",
+                        "dayOccurrence": 2,
+                        "dayOfWeek": "sunday",
+                        "month": 3,
+                        "year": 0
                     }
                 }
             }

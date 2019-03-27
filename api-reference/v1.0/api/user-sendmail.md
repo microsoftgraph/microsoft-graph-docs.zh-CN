@@ -4,12 +4,12 @@ description: 发送请求正文中指定的邮件。默认情况下，邮件保�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 542c36f4d52c461b5a423d9a7fb93a06b94b9b70
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f08bb8969ee05384f4de0fec90883bb216df19cc
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975804"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869314"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -30,6 +30,7 @@ ms.locfileid: "27975804"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
 ## <a name="request-headers"></a>请求标头
@@ -41,10 +42,10 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |描述|
 |:---------------|:--------|:----------|
-|message|[邮件](../resources/message.md)|要发送的邮件。必需。|
-|saveToSentItems|布尔|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。 |
+|message|[Message](../resources/message.md)|要发送的邮件。必需。|
+|SaveToSentItems|Boolean|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。 |
 
 ## <a name="response"></a>响应
 
@@ -99,7 +100,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="request-2"></a>请求 2
-下一个示例使用自定义 Internet 邮件头中创建一条消息，并将邮件发送。
+以下示例将创建一个带 Internet 消息标头的消息并进行发送。
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"

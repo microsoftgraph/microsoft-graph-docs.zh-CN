@@ -1,21 +1,21 @@
 ---
-title: 获取用户和资源的忙/闲日程安排（预览版）
+title: 获取用户和资源的忙/闲日程安排
 description: 在工作或学校设置中，一种常见方案是查看用户何时有空参加会议，或浏览团队、会议室或设备在一段时间内的状态。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b2ed37055beb344c254e6715777b430baeceebf5
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: 8ecf31ec74327d4f5fbd9d585eef24fcaec60709
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657384"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869195"
 ---
-# <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>获取用户和资源的忙/闲日程安排（预览版）
+# <a name="get-freebusy-schedule-of-users-and-resources"></a>获取用户和资源的忙/闲日程安排
 
 在工作或学校设置中，一种常见方案是查看用户何时有空参加会议，或浏览团队、会议室或设备在一段时间内的状态。
 
-使用 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) 操作，可以获取一个或多个实体（用户、通讯组列表或资源）在特定时间段内的状态信息。 
+使用 [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) 操作，可以获取一个或多个实体（用户、通讯组列表或资源）在特定时间段内的状态信息。 
 
 ## <a name="example"></a>示例
 
@@ -26,7 +26,7 @@ ms.locfileid: "30657384"
   "name": "calendar_getSchedule_concept"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getschedule 
+POST https://graph.microsoft.com/v1.0/me/calendar/getschedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -57,14 +57,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value":[
         {
             "scheduleId":"AlexW@contoso.OnMicrosoft.com",
             "availabilityView":"111111002222222200000000000000000000",
             "scheduleItems":[
                 {
-                    "isPrivate":false,
                     "status":"Tentative",
                     "start":{
                         "dateTime":"2018-08-06T09:00:00.0000000",
@@ -76,7 +75,6 @@ Content-type: application/json
                     }
                 },
                 {
-                    "isPrivate":false,
                     "status":"Busy",
                     "start":{
                         "dateTime":"2018-08-06T11:00:00.0000000",
@@ -135,7 +133,7 @@ Content-type: application/json
 
 默认情况下，每个时间段的长度为 30 分钟。 此示例使用 **availabilityViewInterval** 属性，将时间段自定义为 15 分钟。
 
-## <a name="how-is-getschedule-different-from-findmeetingtimes"></a>getSchedule 与 findMeetingTimes 有何区别
+## <a name="how-does-getschedule-compare-with-findmeetingtimes"></a>getSchedule 如何与 findMeetingTimes 进行比较
 
 [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 操作与 **getSchedule** 类似，两者都读取指定用户和资源的忙/闲状态和工作时间。 这两项操作的区别主要在以下几方面。
 
@@ -157,23 +155,29 @@ Content-type: application/json
 
 **getSchedule** 支持委托方案和仅应用方案。 对于后者，管理员同意应用访问所有日历，即使没有已登录用户，也不例外。
 
+### <a name="permissions"></a>权限
+**findmeetingtimes** 所需的最低特权权限为 Calendars.Read.Shared。
+
+**getSchedule** 所需的最低特权权限为 Calendar.Read。 
 
 ### <a name="version-support"></a>版本支持
 
-**findmeetingtimes** 一般适用于所有应用。 
-
-**getSchedule** 暂处于[预览状态](versioning-and-support.md#beta-version)，因此不适用于生产应用。
+**findmeetingtimes** 和 **getSchedule** 均已正式发布且适用于生产应用。
 
 
-## <a name="permissions"></a>权限
-获取忙/闲信息所需的最低权限是 Calendar.Read。 根据应用方案，这可由已登录用户或管理员同意授予。
-除了所需实体的忙/闲状态和工作时间外，**getSchedule** 还可以返回事件的主题和地点，前提是：
+## <a name="event-data-returned"></a>返回的事件数据
+要使应用能够获取忙/闲信息，**getSchedule** 所需的最低特权权限为 Calendar.Read。 根据应用方案，这可由已登录用户或管理员同意授予。
 
-- 如果事件被标记为低敏感度级别（`normal` 或 `personal`），且符合以下一个或多个条件：
+虽然借助同意后授予的权限，应用可通过 Outlook 在所请求用户的日历上使用 **getSchedule**但所请求的用户可控制该 **getSchedule** 返回的事件数据（若有）。 
 
-- 所需用户的日历设置允许组织中的全部用户查看标题和地点
-- 所需用户的日历与已登录用户共享
-- 已登录用户是所需用户所在组织的管理员。
+例如，**getSchedule** 可返回所请求用户的忙/闲状态和工作时间，还能返回事件的 **subject**、**location** 和 **isPrivate**，但前提是：
+
+- 事件被标记为低敏感度级别（`normal` 或 `personal`），且符合以下一个或多个条件：
+
+   - 所请求的用户的日历设置允许用户登录后查看主题行和位置
+   - 所请求的用户的日历与已登录用户共享
+
+无论已登录用户是否是组织中的管理员，都需遵循这些条件。 所请求的用户可控制返回的事件数据。
 
 ## <a name="time-zone-representation"></a>时区表示
 默认情况下，返回的日程安排项的开始时间和结束时间都采用 UTC。 可使用 `Prefer` 头指定适合应用的时区。 例如： 
@@ -187,6 +191,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 - **getSchedule** 支持一次查找最多 20 个实体的忙/闲信息。 标识为个人的用户数或标识为通讯组列表成员的用户数以及资源数都计入此限制。
 - 查找时间段不得长于 42 天。
 - 如果 **getSchedule** 无法识别指定用户或资源，便会返回一个日程安排项并指明错误。 
+
 
 ## <a name="see-also"></a>另请参阅
 - [权限参考](permissions-reference.md#calendars-permissions)
