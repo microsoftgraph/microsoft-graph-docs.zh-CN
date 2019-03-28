@@ -4,119 +4,121 @@ description: 根据组织者和与会者的可用性以及指定为参数的时�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 345b42690644fb94a2b6b2bdf6b3cfcc9ead6333
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 2aa8f10d1462065f0ae889261f25a15a3c29359b
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057055"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936295"
 ---
-# <a name="user-findmeetingtimes"></a><span data-ttu-id="3d1d8-103">user: findMeetingTimes</span><span class="sxs-lookup"><span data-stu-id="3d1d8-103">user: findMeetingTimes</span></span>
+# <a name="user-findmeetingtimes"></a><span data-ttu-id="82c55-103">user: findMeetingTimes</span><span class="sxs-lookup"><span data-stu-id="82c55-103">user: findMeetingTimes</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3d1d8-104">根据组织者和与会者的可用性以及指定为参数的时间或位置约束, 建议会议时间和位置。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-104">Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.</span></span>
+<span data-ttu-id="82c55-104">根据组织者和与会者的可用性以及指定为参数的时间或位置约束, 建议会议时间和位置。</span><span class="sxs-lookup"><span data-stu-id="82c55-104">Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.</span></span>
 
-<span data-ttu-id="3d1d8-p101">如果 **findMeetingTimes** 无法返回任何会议时间建议，响应会在 **emptySuggestionsReason** 属性中指明原因。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes**。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p101">If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property. Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.</span></span>
+<span data-ttu-id="82c55-p101">如果 **findMeetingTimes** 无法返回任何会议时间建议，响应会在 **emptySuggestionsReason** 属性中指明原因。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes**。</span><span class="sxs-lookup"><span data-stu-id="82c55-p101">If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property. Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.</span></span>
+
+<span data-ttu-id="82c55-107">用于建议会议时间和位置的算法将在一段时间后及时进行微调。</span><span class="sxs-lookup"><span data-stu-id="82c55-107">The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.</span></span> <span data-ttu-id="82c55-108">在与输入参数和日历数据保持静态的测试环境类似的方案中, 预期建议的结果可能会随着时间的推移而发生变化。</span><span class="sxs-lookup"><span data-stu-id="82c55-108">In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="3d1d8-107">权限</span><span class="sxs-lookup"><span data-stu-id="3d1d8-107">Permissions</span></span>
-<span data-ttu-id="3d1d8-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="82c55-109">权限</span><span class="sxs-lookup"><span data-stu-id="82c55-109">Permissions</span></span>
+<span data-ttu-id="82c55-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="82c55-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3d1d8-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="3d1d8-110">Permission type</span></span>      | <span data-ttu-id="3d1d8-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3d1d8-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="82c55-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="82c55-112">Permission type</span></span>      | <span data-ttu-id="82c55-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="82c55-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3d1d8-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3d1d8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="3d1d8-113">Calendars.Read.Shared、Calendars.ReadWrite.Shared</span><span class="sxs-lookup"><span data-stu-id="3d1d8-113">Calendars.Read.Shared, Calendars.ReadWrite.Shared</span></span>    |
-|<span data-ttu-id="3d1d8-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3d1d8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3d1d8-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-115">Not supported.</span></span>    |
-|<span data-ttu-id="3d1d8-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="3d1d8-116">Application</span></span> | <span data-ttu-id="3d1d8-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-117">Not supported.</span></span> |
+|<span data-ttu-id="82c55-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="82c55-114">Delegated (work or school account)</span></span> | <span data-ttu-id="82c55-115">Calendars.Read.Shared、Calendars.ReadWrite.Shared</span><span class="sxs-lookup"><span data-stu-id="82c55-115">Calendars.Read.Shared, Calendars.ReadWrite.Shared</span></span>    |
+|<span data-ttu-id="82c55-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="82c55-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82c55-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="82c55-117">Not supported.</span></span>    |
+|<span data-ttu-id="82c55-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="82c55-118">Application</span></span> | <span data-ttu-id="82c55-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="82c55-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3d1d8-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3d1d8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="82c55-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="82c55-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/findMeetingTimes
 POST /users/{id|userPrincipalName}/findMeetingTimes
 ```
-## <a name="request-headers"></a><span data-ttu-id="3d1d8-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="3d1d8-119">Request headers</span></span>
-| <span data-ttu-id="3d1d8-120">名称</span><span class="sxs-lookup"><span data-stu-id="3d1d8-120">Name</span></span>       | <span data-ttu-id="3d1d8-121">值</span><span class="sxs-lookup"><span data-stu-id="3d1d8-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="82c55-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="82c55-121">Request headers</span></span>
+| <span data-ttu-id="82c55-122">名称</span><span class="sxs-lookup"><span data-stu-id="82c55-122">Name</span></span>       | <span data-ttu-id="82c55-123">值</span><span class="sxs-lookup"><span data-stu-id="82c55-123">Value</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="3d1d8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="3d1d8-122">Authorization</span></span>  | <span data-ttu-id="3d1d8-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="3d1d8-125">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="3d1d8-125">Prefer: outlook.timezone</span></span> | <span data-ttu-id="3d1d8-p104">表示响应的具体时区的字符串，例如，“Pacific Standard Time”。可选。如果未指定此标头则使用 UTC。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p104">A string representing a specific time zone for the response, for example, "Pacific Standard Time". Optional. UTC is used if this header is not specified.</span></span> |
+| <span data-ttu-id="82c55-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="82c55-124">Authorization</span></span>  | <span data-ttu-id="82c55-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="82c55-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="82c55-127">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="82c55-127">Prefer: outlook.timezone</span></span> | <span data-ttu-id="82c55-p105">表示响应的具体时区的字符串，例如，“Pacific Standard Time”。可选。如果未指定此标头则使用 UTC。</span><span class="sxs-lookup"><span data-stu-id="82c55-p105">A string representing a specific time zone for the response, for example, "Pacific Standard Time". Optional. UTC is used if this header is not specified.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3d1d8-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="3d1d8-129">Request body</span></span>
-<span data-ttu-id="3d1d8-p105">下面列出了支持的所有参数。根据你自己的方案，在请求正文中为各个必需参数指定 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p105">All the supported parameters are listed below. Depending on your scenario, specify a JSON object for each of the necessary parameters in the request body.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="82c55-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="82c55-131">Request body</span></span>
+<span data-ttu-id="82c55-p106">下面列出了支持的所有参数。根据你自己的方案，在请求正文中为各个必需参数指定 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="82c55-p106">All the supported parameters are listed below. Depending on your scenario, specify a JSON object for each of the necessary parameters in the request body.</span></span> 
 
 
-| <span data-ttu-id="3d1d8-132">参数</span><span class="sxs-lookup"><span data-stu-id="3d1d8-132">Parameter</span></span>    | <span data-ttu-id="3d1d8-133">类型</span><span class="sxs-lookup"><span data-stu-id="3d1d8-133">Type</span></span>   |<span data-ttu-id="3d1d8-134">说明</span><span class="sxs-lookup"><span data-stu-id="3d1d8-134">Description</span></span>|
+| <span data-ttu-id="82c55-134">参数</span><span class="sxs-lookup"><span data-stu-id="82c55-134">Parameter</span></span>    | <span data-ttu-id="82c55-135">类型</span><span class="sxs-lookup"><span data-stu-id="82c55-135">Type</span></span>   |<span data-ttu-id="82c55-136">说明</span><span class="sxs-lookup"><span data-stu-id="82c55-136">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3d1d8-135">与会者</span><span class="sxs-lookup"><span data-stu-id="3d1d8-135">attendees</span></span>|<span data-ttu-id="3d1d8-136">[attendeeDataModel](../resources/attendeedatamodel.md)集合</span><span class="sxs-lookup"><span data-stu-id="3d1d8-136">[attendeeDataModel](../resources/attendeedatamodel.md) collection</span></span>|<span data-ttu-id="3d1d8-137">会议的与会者或资源的集合。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-137">A collection of attendees or resources for the meeting.</span></span> <span data-ttu-id="3d1d8-138">在对应的 **"类型**" 属性`required`中`optional` , 指定人员的`resource`或, 为会议室和资源 (如会议室) 指定或。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-138">In the corresponding **type** property, specify `required` or `optional` for a person and `resource` for a resource like meeting room.</span></span> <span data-ttu-id="3d1d8-139">如果未指定, \*\*\*\* 则 findMeetingTimes `required`将假定为**type**属性。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-139">If not specified, **findMeetingTimes** assumes `required` for the **type** property.</span></span> <span data-ttu-id="3d1d8-140">空集合导致**findMeetingTimes**仅查找组织者的空闲时间段。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-140">An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer.</span></span> <span data-ttu-id="3d1d8-141">可选。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-141">Optional.</span></span>|
-|<span data-ttu-id="3d1d8-142">isOrganizerOptional</span><span class="sxs-lookup"><span data-stu-id="3d1d8-142">isOrganizerOptional</span></span>|<span data-ttu-id="3d1d8-143">Edm.Boolean</span><span class="sxs-lookup"><span data-stu-id="3d1d8-143">Edm.Boolean</span></span>|<span data-ttu-id="3d1d8-p107">如果组织者不必必须参加，则指定 `True`。默认值为 `false`。可选。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p107">Specify `True` if the organizer doesn't necessarily have to attend. The default is `false`. Optional.</span></span>|
-|<span data-ttu-id="3d1d8-147">locationConstraint</span><span class="sxs-lookup"><span data-stu-id="3d1d8-147">locationConstraint</span></span>|[<span data-ttu-id="3d1d8-148">locationConstraints</span><span class="sxs-lookup"><span data-stu-id="3d1d8-148">locationConstraints</span></span>](../resources/locationconstraints.md)|<span data-ttu-id="3d1d8-p108">组织者对会议地点的要求，如是否必须返回会议地点建议，或是否只能在特定地点举行会议。可选。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p108">The organizer's requirements about the meeting location, such as whether a suggestion for a meeting location is required, or there are specific locations only where the meeting can take place. Optional.</span></span>|
-|<span data-ttu-id="3d1d8-151">maxCandidates</span><span class="sxs-lookup"><span data-stu-id="3d1d8-151">maxCandidates</span></span>|<span data-ttu-id="3d1d8-152">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="3d1d8-152">Edm.Int32</span></span>|<span data-ttu-id="3d1d8-p109">要返回的会议时间建议数量上限。可选。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p109">The maximum number of meeting time suggestions to be returned. Optional.</span></span>|
-|<span data-ttu-id="3d1d8-155">meetingDuration</span><span class="sxs-lookup"><span data-stu-id="3d1d8-155">meetingDuration</span></span>|<span data-ttu-id="3d1d8-156">Edm.Duration</span><span class="sxs-lookup"><span data-stu-id="3d1d8-156">Edm.Duration</span></span>|<span data-ttu-id="3d1d8-157">会议的长度, 以[ISO 8601](https://www.iso.org/iso/iso8601)格式表示。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-157">The length of the meeting, denoted in [ISO 8601](https://www.iso.org/iso/iso8601) format.</span></span> <span data-ttu-id="3d1d8-158">例如, 1 小时表示为 "PT1H", 其中 ' P ' 是持续时间指示器, ' t ' 是时间指示器, ' H ' 是小时指示符。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-158">For example, 1 hour is denoted as 'PT1H', where 'P' is the duration designator, 'T' is the time designator, and 'H' is the hour designator.</span></span> <span data-ttu-id="3d1d8-159">使用 M 指示持续时间的分钟数;例如, 2 小时零30分钟是 "PT2H30M"。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-159">Use M to indicate minutes for the duration; for example, 2 hours and 30 minutes would be 'PT2H30M'.</span></span> <span data-ttu-id="3d1d8-160">如果未指定会议持续时间, 则**findMeetingTimes**将使用默认值30分钟。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-160">If no meeting duration is specified, **findMeetingTimes** uses the default of 30 minutes.</span></span> <span data-ttu-id="3d1d8-161">可选。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-161">Optional.</span></span>|
-|<span data-ttu-id="3d1d8-162">minimumAttendeePercentage</span><span class="sxs-lookup"><span data-stu-id="3d1d8-162">minimumAttendeePercentage</span></span>|<span data-ttu-id="3d1d8-163">Edm.Double</span><span class="sxs-lookup"><span data-stu-id="3d1d8-163">Edm.Double</span></span>| <span data-ttu-id="3d1d8-p111">在响应中返回时间段所需的最低 [confidence](#the-confidence-of-a-meeting-suggestion)。这是一个介于 0 到 100 之间的百分比值。可选。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p111">The minimum required [confidence](#the-confidence-of-a-meeting-suggestion) for a time slot to be returned in the response. It is a % value ranging from 0 to 100. Optional.</span></span>|
-|<span data-ttu-id="3d1d8-167">returnSuggestionReasons</span><span class="sxs-lookup"><span data-stu-id="3d1d8-167">returnSuggestionReasons</span></span>|<span data-ttu-id="3d1d8-168">Edm.Boolean</span><span class="sxs-lookup"><span data-stu-id="3d1d8-168">Edm.Boolean</span></span>|<span data-ttu-id="3d1d8-p112">指定 `True` 可以在 **suggestionReason** 属性中返回每个会议建议的理由。默认为 `false`，即不返回此属性。可选。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p112">Specify `True` to return a reason for each meeting suggestion in the **suggestionReason** property. The default is `false` to not return that property. Optional.</span></span>|
-|<span data-ttu-id="3d1d8-172">timeConstraint</span><span class="sxs-lookup"><span data-stu-id="3d1d8-172">timeConstraint</span></span>|[<span data-ttu-id="3d1d8-173">findMeetingTimesTimeConstraints</span><span class="sxs-lookup"><span data-stu-id="3d1d8-173">findMeetingTimesTimeConstraints</span></span>](../resources/findmeetingtimestimeconstraints.md)|<span data-ttu-id="3d1d8-p113">会议的所有时间限制，可以包括会议性质（**activityDomain** 属性）和可能的会议时间段（**timeSlots** 属性）。如果未指定此参数，则 **findMeetingTimes** 将 **activityDomain** 假定为 `work`。可选。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p113">Any time restrictions for a meeting, which can include the nature of the meeting (**activityDomain** property) and possible meeting time periods (**timeSlots** property). **findMeetingTimes** assumes **activityDomain** as `work` if you don't specify this parameter. Optional.</span></span>|
+|<span data-ttu-id="82c55-137">attendees</span><span class="sxs-lookup"><span data-stu-id="82c55-137">attendees</span></span>|<span data-ttu-id="82c55-138">[attendeeBase](../resources/attendeebase.md) 集合</span><span class="sxs-lookup"><span data-stu-id="82c55-138">[attendeeBase](../resources/attendeebase.md) collection</span></span>|<span data-ttu-id="82c55-139">一组会议与会者或资源。</span><span class="sxs-lookup"><span data-stu-id="82c55-139">A collection of attendees or resources for the meeting.</span></span> <span data-ttu-id="82c55-140">在对应的 **"类型**" 属性`required`中`optional` , 指定人员的`resource`或, 为会议室和资源 (如会议室) 指定或。</span><span class="sxs-lookup"><span data-stu-id="82c55-140">In the corresponding **type** property, specify `required` or `optional` for a person and `resource` for a resource like meeting room.</span></span> <span data-ttu-id="82c55-141">如果未指定, \*\*\*\* 则 findMeetingTimes `required`将假定为**type**属性。</span><span class="sxs-lookup"><span data-stu-id="82c55-141">If not specified, **findMeetingTimes** assumes `required` for the **type** property.</span></span> <span data-ttu-id="82c55-142">若集合为空，**findMeetingTimes** 只会查找组织者的空闲时间段。</span><span class="sxs-lookup"><span data-stu-id="82c55-142">An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer.</span></span> <span data-ttu-id="82c55-143">可选。</span><span class="sxs-lookup"><span data-stu-id="82c55-143">Optional.</span></span>|
+|<span data-ttu-id="82c55-144">isOrganizerOptional</span><span class="sxs-lookup"><span data-stu-id="82c55-144">isOrganizerOptional</span></span>|<span data-ttu-id="82c55-145">Edm.Boolean</span><span class="sxs-lookup"><span data-stu-id="82c55-145">Edm.Boolean</span></span>|<span data-ttu-id="82c55-p108">如果组织者不必必须参加，则指定 `True`。默认值为 `false`。可选。</span><span class="sxs-lookup"><span data-stu-id="82c55-p108">Specify `True` if the organizer doesn't necessarily have to attend. The default is `false`. Optional.</span></span>|
+|<span data-ttu-id="82c55-149">locationConstraint</span><span class="sxs-lookup"><span data-stu-id="82c55-149">locationConstraint</span></span>|[<span data-ttu-id="82c55-150">locationConstraint</span><span class="sxs-lookup"><span data-stu-id="82c55-150">locationConstraint</span></span>](../resources/locationconstraint.md)|<span data-ttu-id="82c55-p109">组织者对会议地点的要求，如是否必须返回会议地点建议，或是否只能在特定地点举行会议。可选。</span><span class="sxs-lookup"><span data-stu-id="82c55-p109">The organizer's requirements about the meeting location, such as whether a suggestion for a meeting location is required, or there are specific locations only where the meeting can take place. Optional.</span></span>|
+|<span data-ttu-id="82c55-153">maxCandidates</span><span class="sxs-lookup"><span data-stu-id="82c55-153">maxCandidates</span></span>|<span data-ttu-id="82c55-154">Edm.Int32</span><span class="sxs-lookup"><span data-stu-id="82c55-154">Edm.Int32</span></span>|<span data-ttu-id="82c55-p110">要返回的会议时间建议数量上限。可选。</span><span class="sxs-lookup"><span data-stu-id="82c55-p110">The maximum number of meeting time suggestions to be returned. Optional.</span></span>|
+|<span data-ttu-id="82c55-157">meetingDuration</span><span class="sxs-lookup"><span data-stu-id="82c55-157">meetingDuration</span></span>|<span data-ttu-id="82c55-158">Edm.Duration</span><span class="sxs-lookup"><span data-stu-id="82c55-158">Edm.Duration</span></span>|<span data-ttu-id="82c55-159">会议的长度, 以[ISO 8601](https://www.iso.org/iso/iso8601)格式表示。</span><span class="sxs-lookup"><span data-stu-id="82c55-159">The length of the meeting, denoted in [ISO 8601](https://www.iso.org/iso/iso8601) format.</span></span> <span data-ttu-id="82c55-160">例如, 1 小时表示为 "PT1H", 其中 ' P ' 是持续时间指示器, ' t ' 是时间指示器, ' H ' 是小时指示符。</span><span class="sxs-lookup"><span data-stu-id="82c55-160">For example, 1 hour is denoted as 'PT1H', where 'P' is the duration designator, 'T' is the time designator, and 'H' is the hour designator.</span></span> <span data-ttu-id="82c55-161">使用 M 指示持续时间的分钟数;例如, 2 小时零30分钟是 "PT2H30M"。</span><span class="sxs-lookup"><span data-stu-id="82c55-161">Use M to indicate minutes for the duration; for example, 2 hours and 30 minutes would be 'PT2H30M'.</span></span> <span data-ttu-id="82c55-162">如果未指定会议持续时间，**findMeetingTimes** 使用默认值 30 分钟。</span><span class="sxs-lookup"><span data-stu-id="82c55-162">If no meeting duration is specified, **findMeetingTimes** uses the default of 30 minutes.</span></span> <span data-ttu-id="82c55-163">可选。</span><span class="sxs-lookup"><span data-stu-id="82c55-163">Optional.</span></span>|
+|<span data-ttu-id="82c55-164">minimumAttendeePercentage</span><span class="sxs-lookup"><span data-stu-id="82c55-164">minimumAttendeePercentage</span></span>|<span data-ttu-id="82c55-165">Edm.Double</span><span class="sxs-lookup"><span data-stu-id="82c55-165">Edm.Double</span></span>| <span data-ttu-id="82c55-p112">在响应中返回时间段所需的最低 [confidence](#the-confidence-of-a-meeting-suggestion)。这是一个介于 0 到 100 之间的百分比值。可选。</span><span class="sxs-lookup"><span data-stu-id="82c55-p112">The minimum required [confidence](#the-confidence-of-a-meeting-suggestion) for a time slot to be returned in the response. It is a % value ranging from 0 to 100. Optional.</span></span>|
+|<span data-ttu-id="82c55-169">returnSuggestionReasons</span><span class="sxs-lookup"><span data-stu-id="82c55-169">returnSuggestionReasons</span></span>|<span data-ttu-id="82c55-170">Edm.Boolean</span><span class="sxs-lookup"><span data-stu-id="82c55-170">Edm.Boolean</span></span>|<span data-ttu-id="82c55-p113">指定 `True` 可以在 **suggestionReason** 属性中返回每个会议建议的理由。默认为 `false`，即不返回此属性。可选。</span><span class="sxs-lookup"><span data-stu-id="82c55-p113">Specify `True` to return a reason for each meeting suggestion in the **suggestionReason** property. The default is `false` to not return that property. Optional.</span></span>|
+|<span data-ttu-id="82c55-174">timeConstraint</span><span class="sxs-lookup"><span data-stu-id="82c55-174">timeConstraint</span></span>|[<span data-ttu-id="82c55-175">timeConstraint</span><span class="sxs-lookup"><span data-stu-id="82c55-175">timeConstraint</span></span>](../resources/timeconstraint.md)|<span data-ttu-id="82c55-p114">会议的所有时间限制，可以包括会议性质（**activityDomain** 属性）和可能的会议时间段（**timeSlots** 属性）。如果未指定此参数，则 **findMeetingTimes** 将 **activityDomain** 假定为 `work`。可选。</span><span class="sxs-lookup"><span data-stu-id="82c55-p114">Any time restrictions for a meeting, which can include the nature of the meeting (**activityDomain** property) and possible meeting time periods (**timeSlots** property). **findMeetingTimes** assumes **activityDomain** as `work` if you don't specify this parameter. Optional.</span></span>|
 
-<span data-ttu-id="3d1d8-177">下表介绍了可以在 **timeConstraint** 参数中进一步指定的限制。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-177">The following table describes the restrictions you can further specify in the **timeConstraint** parameter.</span></span>
+<span data-ttu-id="82c55-179">下表介绍了可以在 **timeConstraint** 参数中进一步指定的限制。</span><span class="sxs-lookup"><span data-stu-id="82c55-179">The following table describes the restrictions you can further specify in the **timeConstraint** parameter.</span></span>
 
-|<span data-ttu-id="3d1d8-178">timeConstraint 中的 activityDomain 值</span><span class="sxs-lookup"><span data-stu-id="3d1d8-178">activityDomain value in timeConstraint</span></span>|<span data-ttu-id="3d1d8-179">会议时间建议</span><span class="sxs-lookup"><span data-stu-id="3d1d8-179">Suggestions for meeting times</span></span>|
+|<span data-ttu-id="82c55-180">timeConstraint 中的 activityDomain 值</span><span class="sxs-lookup"><span data-stu-id="82c55-180">activityDomain value in timeConstraint</span></span>|<span data-ttu-id="82c55-181">会议时间建议</span><span class="sxs-lookup"><span data-stu-id="82c55-181">Suggestions for meeting times</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="3d1d8-180">工时</span><span class="sxs-lookup"><span data-stu-id="3d1d8-180">work</span></span>| <span data-ttu-id="3d1d8-p114">建议处于用户的工作时间（在用户的日历配置中定义该时间，并且可由用户或管理员自定义）内。默认工作时间是星期一到星期五的上午八点到下午五点（使用为邮箱设置的时区）。如果未指定 **activityDomain** 则此为默认值。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p114">Suggestions are within the user's work hours which are defined in the user’s calendar configuration and can be customized by the user or administrator. The default work hours are Monday to Friday, 8am to 5pm in the time zone set for the mailbox. This is the default value if no **activityDomain** is specified.</span></span> |
-|<span data-ttu-id="3d1d8-184">personal</span><span class="sxs-lookup"><span data-stu-id="3d1d8-184">personal</span></span>| <span data-ttu-id="3d1d8-p115">建议处于用户的工作时间内及星期六和星期日。默认是星期一到星期日的上午八点到下午五点（使用邮箱的时区设置）。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p115">Suggestions are within the user's work hours, and Saturday and Sunday. The default is Monday to Sunday, 8am to 5pm, in the time zone setting for the mailbox.</span></span>|
-|<span data-ttu-id="3d1d8-187">unrestricted</span><span class="sxs-lookup"><span data-stu-id="3d1d8-187">unrestricted</span></span> | <span data-ttu-id="3d1d8-188">建议可以是全年任意一天的任意时间段。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-188">Suggestions can be from all hours of a day, all days of a week.</span></span>|
-|<span data-ttu-id="3d1d8-189">unknown</span><span class="sxs-lookup"><span data-stu-id="3d1d8-189">unknown</span></span> | <span data-ttu-id="3d1d8-p116">请勿使用此值，因为以后会弃用此值。当前其行为与 `work` 相同。根据需要将任何现有代码更改为使用 `work`、`personal`、或 `unrestricted`。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p116">Do not use this value as it will be deprecated in the future. Currently behaves the same as `work`. Change any existing code to use `work`, `personal` or `unrestricted` as appropriate.</span></span>|
+|<span data-ttu-id="82c55-182">工时</span><span class="sxs-lookup"><span data-stu-id="82c55-182">work</span></span>| <span data-ttu-id="82c55-p115">建议处于用户的工作时间（在用户的日历配置中定义该时间，并且可由用户或管理员自定义）内。默认工作时间是星期一到星期五的上午八点到下午五点（使用为邮箱设置的时区）。如果未指定 **activityDomain** 则此为默认值。</span><span class="sxs-lookup"><span data-stu-id="82c55-p115">Suggestions are within the user's work hours which are defined in the user’s calendar configuration and can be customized by the user or administrator. The default work hours are Monday to Friday, 8am to 5pm in the time zone set for the mailbox. This is the default value if no **activityDomain** is specified.</span></span> |
+|<span data-ttu-id="82c55-186">personal</span><span class="sxs-lookup"><span data-stu-id="82c55-186">personal</span></span>| <span data-ttu-id="82c55-p116">建议处于用户的工作时间内及星期六和星期日。默认是星期一到星期日的上午八点到下午五点（使用邮箱的时区设置）。</span><span class="sxs-lookup"><span data-stu-id="82c55-p116">Suggestions are within the user's work hours, and Saturday and Sunday. The default is Monday to Sunday, 8am to 5pm, in the time zone setting for the mailbox.</span></span>|
+|<span data-ttu-id="82c55-189">unrestricted</span><span class="sxs-lookup"><span data-stu-id="82c55-189">unrestricted</span></span> | <span data-ttu-id="82c55-190">建议可以是全年任意一天的任意时间段。</span><span class="sxs-lookup"><span data-stu-id="82c55-190">Suggestions can be from all hours of a day, all days of a week.</span></span>|
+|<span data-ttu-id="82c55-191">unknown</span><span class="sxs-lookup"><span data-stu-id="82c55-191">unknown</span></span> | <span data-ttu-id="82c55-p117">请勿使用此值，因为以后会弃用此值。当前其行为与 `work` 相同。根据需要将任何现有代码更改为使用 `work`、`personal`、或 `unrestricted`。</span><span class="sxs-lookup"><span data-stu-id="82c55-p117">Do not use this value as it will be deprecated in the future. Currently behaves the same as `work`. Change any existing code to use `work`, `personal` or `unrestricted` as appropriate.</span></span>|
 
 
-<span data-ttu-id="3d1d8-p117">根据指定的参数，**findMeetingTimes** 会检查组织者和与会者的主日历中的忙/闲状态。此操作会计算出最可行的会议时间，并返回所有会议时间建议。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p117">Based on the specified parameters,**findMeetingTimes** checks the free/busy status in the primary calendars of the organizer and attendees. The action calculates the best possible meeting times, and returns any meeting suggestions.</span></span>
+<span data-ttu-id="82c55-p118">根据指定的参数，**findMeetingTimes** 会检查组织者和与会者的主日历中的忙/闲状态。此操作会计算出最可行的会议时间，并返回所有会议时间建议。</span><span class="sxs-lookup"><span data-stu-id="82c55-p118">Based on the specified parameters,**findMeetingTimes** checks the free/busy status in the primary calendars of the organizer and attendees. The action calculates the best possible meeting times, and returns any meeting suggestions.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3d1d8-195">响应</span><span class="sxs-lookup"><span data-stu-id="3d1d8-195">Response</span></span>
+## <a name="response"></a><span data-ttu-id="82c55-197">响应</span><span class="sxs-lookup"><span data-stu-id="82c55-197">Response</span></span>
 
-<span data-ttu-id="3d1d8-196">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[findMeetingTimesResponse](../resources/findmeetingtimesresponse.md) 。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-196">If successful, this method returns `200 OK` response code and a [findMeetingTimesResponse](../resources/findmeetingtimesresponse.md) in the response body.</span></span> 
+<span data-ttu-id="82c55-198">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [meetingTimeSuggestionsResult](../resources/meetingtimesuggestionsresult.md)。</span><span class="sxs-lookup"><span data-stu-id="82c55-198">If successful, this method returns `200 OK` response code and a [meetingTimeSuggestionsResult](../resources/meetingtimesuggestionsresult.md) in the response body.</span></span> 
 
-<span data-ttu-id="3d1d8-197">**findMeetingTimesResponse**包括会议建议和**emptySuggestionsReason**属性的集合。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-197">A **findMeetingTimesResponse** includes a collection of meeting suggestions and an **emptySuggestionsReason** property.</span></span> <span data-ttu-id="3d1d8-198">每个建议定义为[meetingTimeSuggestion](../resources/meetingtimesuggestion.md), 与会者的可信度平均为要参加的 50%, 或在**minimumAttendeePercentage**参数中指定的特定%。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-198">Each suggestion is defined as a [meetingTimeSuggestion](../resources/meetingtimesuggestion.md), with attendees having on the average a confidence level of 50% to attend, or a specific % that you have specified in the **minimumAttendeePercentage** parameter.</span></span> 
+<span data-ttu-id="82c55-p119">**meetingTimeSuggestionsResult** 包含一组会议时间建议和 **emptySuggestionsReason** 属性。每条建议都被定义为 [meetingTimeSuggestion](../resources/meetingtimesuggestion.md)，同时与会者出席置信度平均值为 50%，或为你在 **minimumAttendeePercentage** 参数中指定的特定百分比值。</span><span class="sxs-lookup"><span data-stu-id="82c55-p119">A **meetingTimeSuggestionsResult** includes a collection of meeting suggestions and an **emptySuggestionsReason** property. Each suggestion is defined as a [meetingTimeSuggestion](../resources/meetingtimesuggestion.md), with attendees having on the average a confidence level of 50% to attend, or a specific % that you have specified in the **minimumAttendeePercentage** parameter.</span></span> 
 
-<span data-ttu-id="3d1d8-199">默认情况下，返回的每条会议时间建议的时区均为 UTC。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-199">By default, each meeting time suggestion is returned in UTC.</span></span> 
+<span data-ttu-id="82c55-201">默认情况下，返回的每条会议时间建议的时区均为 UTC。</span><span class="sxs-lookup"><span data-stu-id="82c55-201">By default, each meeting time suggestion is returned in UTC.</span></span> 
 
-<span data-ttu-id="3d1d8-p119">如果 **findMeetingTimes** 无法返回任何会议时间建议，响应会在 **emptySuggestionsReason** 属性中指明原因。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes**。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p119">If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property. Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.</span></span>
+<span data-ttu-id="82c55-p120">如果 **findMeetingTimes** 无法返回任何会议时间建议，响应会在 **emptySuggestionsReason** 属性中指明原因。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes**。</span><span class="sxs-lookup"><span data-stu-id="82c55-p120">If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property. Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.</span></span>
 
-### <a name="the-confidence-of-a-meeting-suggestion"></a><span data-ttu-id="3d1d8-202">会议时间建议的置信度</span><span class="sxs-lookup"><span data-stu-id="3d1d8-202">The confidence of a meeting suggestion</span></span>
+### <a name="the-confidence-of-a-meeting-suggestion"></a><span data-ttu-id="82c55-204">会议时间建议的置信度</span><span class="sxs-lookup"><span data-stu-id="82c55-204">The confidence of a meeting suggestion</span></span>
 
-<span data-ttu-id="3d1d8-203">**meetingTimeSuggestion** 的 **confidence** 属性值介于 0% 到 100% 之间，表示所有与会者出席会议的可能性（以每个人的忙/闲状态为依据）：</span><span class="sxs-lookup"><span data-stu-id="3d1d8-203">The **confidence** property of a **meetingTimeSuggestion** ranges from 0% to 100%, and represents the chance that all the attendees attend the meeting, based on each of their individual free/busy status:</span></span>
+<span data-ttu-id="82c55-205">**meetingTimeSuggestion** 的 **confidence** 属性值介于 0% 到 100% 之间，表示所有与会者出席会议的可能性（以每个人的忙/闲状态为依据）：</span><span class="sxs-lookup"><span data-stu-id="82c55-205">The **confidence** property of a **meetingTimeSuggestion** ranges from 0% to 100%, and represents the chance that all the attendees attend the meeting, based on each of their individual free/busy status:</span></span>
 
-- <span data-ttu-id="3d1d8-204">对于每个与会者，在指定的会议时间段内，空闲、未知和忙碌状态对应的与会者出席可能性分别为 100%、49% 和 0%。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-204">For each attendee, a free status for a specified meeting time period corresponds to 100% chance of attendance, unknown status 49%, and busy status 0%.</span></span>
-- <span data-ttu-id="3d1d8-205">会议时间建议的置信度是通过计算相应会议的所有指定与会者的出席可能性平均值而得出。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-205">The confidence of a meeting time suggestion is computed by averaging the chance of attendance over all the attendees specified for that meeting.</span></span>
-- <span data-ttu-id="3d1d8-p120">如果有多条会议时间建议，**findMeetingTimes** 操作首先会按计算得出的置信度值由高到低对建议进行排序。如果会议时间建议的置信度相同，此操作会按时间顺序对建议进行排序。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p120">If there are multiple meeting time suggestions, the **findMeetingTimes** action first orders the suggestions by their computed confidence value from high to low. If there are suggestions with the same confidence, the action then orders these suggestions chronologically.</span></span>
-- <span data-ttu-id="3d1d8-p121">可以使用 **findMeetingTimes** 的可选参数 **minimumAttendeePercentage**，指定仅返回置信度不低于特定值的会议时间建议。例如，如果只想返回所有与会者的出席可能性不低于 80% 的会议时间建议，可以将 **minimumAttendeePercentage** 指定为 80%。如果未指定 **minimumAttendeePercentage**，**findMeetingTimes** 假定值为 50%。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p121">You can use the **minimumAttendeePercentage** optional parameter for **findMeetingTimes** to specify only meeting time suggestions of at least certain confidence level should be returned. For example, you can specify a **minimumAttendeePercentage** of 80% if you want only suggestions that have an 80% chance or more that all the attendees are attending. If you do not specify **minimumAttendeePercentage**, **findMeetingTimes** assumes a value of 50%.</span></span>
+- <span data-ttu-id="82c55-206">对于每个与会者，在指定的会议时间段内，空闲、未知和忙碌状态对应的与会者出席可能性分别为 100%、49% 和 0%。</span><span class="sxs-lookup"><span data-stu-id="82c55-206">For each attendee, a free status for a specified meeting time period corresponds to 100% chance of attendance, unknown status 49%, and busy status 0%.</span></span>
+- <span data-ttu-id="82c55-207">会议时间建议的置信度是通过计算相应会议的所有指定与会者的出席可能性平均值而得出。</span><span class="sxs-lookup"><span data-stu-id="82c55-207">The confidence of a meeting time suggestion is computed by averaging the chance of attendance over all the attendees specified for that meeting.</span></span>
+- <span data-ttu-id="82c55-p121">如果有多条会议时间建议，**findMeetingTimes** 操作首先会按计算得出的置信度值由高到低对建议进行排序。如果会议时间建议的置信度相同，此操作会按时间顺序对建议进行排序。</span><span class="sxs-lookup"><span data-stu-id="82c55-p121">If there are multiple meeting time suggestions, the **findMeetingTimes** action first orders the suggestions by their computed confidence value from high to low. If there are suggestions with the same confidence, the action then orders these suggestions chronologically.</span></span>
+- <span data-ttu-id="82c55-p122">可以使用 **findMeetingTimes** 的可选参数 **minimumAttendeePercentage**，指定仅返回置信度不低于特定值的会议时间建议。例如，如果只想返回所有与会者的出席可能性不低于 80% 的会议时间建议，可以将 **minimumAttendeePercentage** 指定为 80%。如果未指定 **minimumAttendeePercentage**，**findMeetingTimes** 假定值为 50%。</span><span class="sxs-lookup"><span data-stu-id="82c55-p122">You can use the **minimumAttendeePercentage** optional parameter for **findMeetingTimes** to specify only meeting time suggestions of at least certain confidence level should be returned. For example, you can specify a **minimumAttendeePercentage** of 80% if you want only suggestions that have an 80% chance or more that all the attendees are attending. If you do not specify **minimumAttendeePercentage**, **findMeetingTimes** assumes a value of 50%.</span></span>
 
-<span data-ttu-id="3d1d8-211">例如，如果会议时间建议涉及 3 位与会者，他们的忙/闲状态如下：</span><span class="sxs-lookup"><span data-stu-id="3d1d8-211">As an example, if a meeting time suggestion involves 3 attendees with the following free/busy status:</span></span>
+<span data-ttu-id="82c55-213">例如，如果会议时间建议涉及 3 位与会者，他们的忙/闲状态如下：</span><span class="sxs-lookup"><span data-stu-id="82c55-213">As an example, if a meeting time suggestion involves 3 attendees with the following free/busy status:</span></span>
 
-|<span data-ttu-id="3d1d8-212">**与会者**</span><span class="sxs-lookup"><span data-stu-id="3d1d8-212">**Attendee**</span></span>|<span data-ttu-id="3d1d8-213">**忙/闲状态**</span><span class="sxs-lookup"><span data-stu-id="3d1d8-213">**Free/busy status**</span></span>|<span data-ttu-id="3d1d8-214">**出席可能性 (%)**</span><span class="sxs-lookup"><span data-stu-id="3d1d8-214">**% Chance of attendance**</span></span>|
+|<span data-ttu-id="82c55-214">**与会者**</span><span class="sxs-lookup"><span data-stu-id="82c55-214">**Attendee**</span></span>|<span data-ttu-id="82c55-215">**忙/闲状态**</span><span class="sxs-lookup"><span data-stu-id="82c55-215">**Free/busy status**</span></span>|<span data-ttu-id="82c55-216">**出席可能性 (%)**</span><span class="sxs-lookup"><span data-stu-id="82c55-216">**% Chance of attendance**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="3d1d8-215">Dana</span><span class="sxs-lookup"><span data-stu-id="3d1d8-215">Dana</span></span> | <span data-ttu-id="3d1d8-216">空闲</span><span class="sxs-lookup"><span data-stu-id="3d1d8-216">Free</span></span> | <span data-ttu-id="3d1d8-217">100%</span><span class="sxs-lookup"><span data-stu-id="3d1d8-217">100%</span></span> |
-|<span data-ttu-id="3d1d8-218">John</span><span class="sxs-lookup"><span data-stu-id="3d1d8-218">John</span></span> | <span data-ttu-id="3d1d8-219">未知</span><span class="sxs-lookup"><span data-stu-id="3d1d8-219">Unknown</span></span> | <span data-ttu-id="3d1d8-220">49%</span><span class="sxs-lookup"><span data-stu-id="3d1d8-220">49%</span></span> |
-|<span data-ttu-id="3d1d8-221">Samantha</span><span class="sxs-lookup"><span data-stu-id="3d1d8-221">Samantha</span></span> | <span data-ttu-id="3d1d8-222">忙碌</span><span class="sxs-lookup"><span data-stu-id="3d1d8-222">Busy</span></span> | <span data-ttu-id="3d1d8-223">0%</span><span class="sxs-lookup"><span data-stu-id="3d1d8-223">0%</span></span> |
+|<span data-ttu-id="82c55-217">Dana</span><span class="sxs-lookup"><span data-stu-id="82c55-217">Dana</span></span> | <span data-ttu-id="82c55-218">空闲</span><span class="sxs-lookup"><span data-stu-id="82c55-218">Free</span></span> | <span data-ttu-id="82c55-219">100%</span><span class="sxs-lookup"><span data-stu-id="82c55-219">100%</span></span> |
+|<span data-ttu-id="82c55-220">John</span><span class="sxs-lookup"><span data-stu-id="82c55-220">John</span></span> | <span data-ttu-id="82c55-221">未知</span><span class="sxs-lookup"><span data-stu-id="82c55-221">Unknown</span></span> | <span data-ttu-id="82c55-222">49%</span><span class="sxs-lookup"><span data-stu-id="82c55-222">49%</span></span> |
+|<span data-ttu-id="82c55-223">Samantha</span><span class="sxs-lookup"><span data-stu-id="82c55-223">Samantha</span></span> | <span data-ttu-id="82c55-224">忙碌</span><span class="sxs-lookup"><span data-stu-id="82c55-224">Busy</span></span> | <span data-ttu-id="82c55-225">0%</span><span class="sxs-lookup"><span data-stu-id="82c55-225">0%</span></span> |
 
-<span data-ttu-id="3d1d8-224">会议时间建议的置信度为与会者出席可能性的平均值，即 (100% + 49% + 0%)/3 = 49.66%。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-224">Then the confidence of the meeting time suggestion, which is the average chance of attendance, is (100% + 49% + 0%)/3 = 49.66%.</span></span>
+<span data-ttu-id="82c55-226">会议时间建议的置信度为与会者出席可能性的平均值，即 (100% + 49% + 0%)/3 = 49.66%。</span><span class="sxs-lookup"><span data-stu-id="82c55-226">Then the confidence of the meeting time suggestion, which is the average chance of attendance, is (100% + 49% + 0%)/3 = 49.66%.</span></span>
 
-<span data-ttu-id="3d1d8-225">如果你在 **findMeetingTimes** 操作中将 **minimumAttendeePercentage** 指定为 80%，此操作将不会在响应中建议此时间，这是因为 49.66% < 80%。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-225">If you specify a **minimumAttendeePercentage** of 80% in a **findMeetingTimes** operation, because 49.66% < 80%, the operation will not suggest this time in the response.</span></span>
+<span data-ttu-id="82c55-227">如果你在 **findMeetingTimes** 操作中将 **minimumAttendeePercentage** 指定为 80%，此操作将不会在响应中建议此时间，这是因为 49.66% < 80%。</span><span class="sxs-lookup"><span data-stu-id="82c55-227">If you specify a **minimumAttendeePercentage** of 80% in a **findMeetingTimes** operation, because 49.66% < 80%, the operation will not suggest this time in the response.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3d1d8-226">示例</span><span class="sxs-lookup"><span data-stu-id="3d1d8-226">Example</span></span>
+## <a name="example"></a><span data-ttu-id="82c55-228">示例</span><span class="sxs-lookup"><span data-stu-id="82c55-228">Example</span></span>
 
-<span data-ttu-id="3d1d8-227">以下示例展示了如何查找预定地点会议的时间，并请求获得各条建议的理由，具体是通过在请求正文中指定以下参数：</span><span class="sxs-lookup"><span data-stu-id="3d1d8-227">The following example shows how to find time to meet at a pre-determined location, and request a reason for each suggestion, by specifying the following parameters in the request body:</span></span>
+<span data-ttu-id="82c55-229">以下示例展示了如何查找预定地点会议的时间，并请求获得各条建议的理由，具体是通过在请求正文中指定以下参数：</span><span class="sxs-lookup"><span data-stu-id="82c55-229">The following example shows how to find time to meet at a pre-determined location, and request a reason for each suggestion, by specifying the following parameters in the request body:</span></span>
 
-- <span data-ttu-id="3d1d8-228">**attendees**</span><span class="sxs-lookup"><span data-stu-id="3d1d8-228">**attendees**</span></span>
-- <span data-ttu-id="3d1d8-229">**locationConstraint**</span><span class="sxs-lookup"><span data-stu-id="3d1d8-229">**locationConstraint**</span></span>
-- <span data-ttu-id="3d1d8-230">**timeConstraint**</span><span class="sxs-lookup"><span data-stu-id="3d1d8-230">**timeConstraint**</span></span>
-- <span data-ttu-id="3d1d8-231">**isOrganizerOptional**</span><span class="sxs-lookup"><span data-stu-id="3d1d8-231">**isOrganizerOptional**</span></span>
-- <span data-ttu-id="3d1d8-232">**meetingDuration**</span><span class="sxs-lookup"><span data-stu-id="3d1d8-232">**meetingDuration**</span></span>
-- <span data-ttu-id="3d1d8-233">**returnSuggestionReasons**</span><span class="sxs-lookup"><span data-stu-id="3d1d8-233">**returnSuggestionReasons**</span></span>
-- <span data-ttu-id="3d1d8-234">**minimumAttendeePercentage**</span><span class="sxs-lookup"><span data-stu-id="3d1d8-234">**minimumAttendeePercentage**</span></span>
+- <span data-ttu-id="82c55-230">**attendees**</span><span class="sxs-lookup"><span data-stu-id="82c55-230">**attendees**</span></span>
+- <span data-ttu-id="82c55-231">**locationConstraint**</span><span class="sxs-lookup"><span data-stu-id="82c55-231">**locationConstraint**</span></span>
+- <span data-ttu-id="82c55-232">**timeConstraint**</span><span class="sxs-lookup"><span data-stu-id="82c55-232">**timeConstraint**</span></span>
+- <span data-ttu-id="82c55-233">**isOrganizerOptional**</span><span class="sxs-lookup"><span data-stu-id="82c55-233">**isOrganizerOptional**</span></span>
+- <span data-ttu-id="82c55-234">**meetingDuration**</span><span class="sxs-lookup"><span data-stu-id="82c55-234">**meetingDuration**</span></span>
+- <span data-ttu-id="82c55-235">**returnSuggestionReasons**</span><span class="sxs-lookup"><span data-stu-id="82c55-235">**returnSuggestionReasons**</span></span>
+- <span data-ttu-id="82c55-236">**minimumAttendeePercentage**</span><span class="sxs-lookup"><span data-stu-id="82c55-236">**minimumAttendeePercentage**</span></span>
 
-<span data-ttu-id="3d1d8-235">设置 **returnSuggestionReasons** 参数后，**suggestionReason** 属性中还会返回各条建议的理由（如果 **findMeetingTimes** 返回建议的话）。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-235">By setting the **returnSuggestionReasons** parameter, you also get an explanation in the **suggestionReason** property for each suggestion, if **findMeetingTimes** returns any suggestion.</span></span>
+<span data-ttu-id="82c55-237">设置 **returnSuggestionReasons** 参数后，**suggestionReason** 属性中还会返回各条建议的理由（如果 **findMeetingTimes** 返回建议的话）。</span><span class="sxs-lookup"><span data-stu-id="82c55-237">By setting the **returnSuggestionReasons** parameter, you also get an explanation in the **suggestionReason** property for each suggestion, if **findMeetingTimes** returns any suggestion.</span></span>
 
-<span data-ttu-id="3d1d8-236">请注意, 该请求指定了 PST 时区中的时间。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-236">Notice that the request specifies time in the PST time zone.</span></span> <span data-ttu-id="3d1d8-237">默认情况下, 响应将返回 UTC 格式的会议时间建议。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-237">By default, the response returns meeting time suggestions in UTC.</span></span> <span data-ttu-id="3d1d8-238">您可以使用`Prefer: outlook.timezone`请求标头为响应中的时间值指定 PST。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-238">You can use the `Prefer: outlook.timezone` request header to specify PST as well for the time values in the response.</span></span>
+<span data-ttu-id="82c55-238">请注意, 该请求指定了 PST 时区中的时间。</span><span class="sxs-lookup"><span data-stu-id="82c55-238">Notice that the request specifies time in the PST time zone.</span></span> <span data-ttu-id="82c55-239">默认情况下, 响应将返回 UTC 格式的会议时间建议。</span><span class="sxs-lookup"><span data-stu-id="82c55-239">By default, the response returns meeting time suggestions in UTC.</span></span> <span data-ttu-id="82c55-240">可以使用 `Prefer: outlook.timezone` 请求头也为响应中的时间值指定 PST 时区。</span><span class="sxs-lookup"><span data-stu-id="82c55-240">You can use the `Prefer: outlook.timezone` request header to specify PST as well for the time values in the response.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="3d1d8-239">请求</span><span class="sxs-lookup"><span data-stu-id="3d1d8-239">Request</span></span>
-<span data-ttu-id="3d1d8-240">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-240">Here is the example request.</span></span>
+##### <a name="request"></a><span data-ttu-id="82c55-241">请求</span><span class="sxs-lookup"><span data-stu-id="82c55-241">Request</span></span>
+<span data-ttu-id="82c55-242">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="82c55-242">Here is the example request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_findmeetingtimes"
@@ -168,12 +170,12 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="3d1d8-241">响应</span><span class="sxs-lookup"><span data-stu-id="3d1d8-241">Response</span></span>
-<span data-ttu-id="3d1d8-p123">下面展示了示例响应。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3d1d8-p123">Here is an example response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="82c55-243">响应</span><span class="sxs-lookup"><span data-stu-id="82c55-243">Response</span></span>
+<span data-ttu-id="82c55-p124">下面展示了示例响应。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="82c55-p124">Here is an example response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.findMeetingTimesResponse",
+  "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
 } -->
 ```http
@@ -182,11 +184,43 @@ Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.findMeetingTimesResponse",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
     "emptySuggestionsReason": "",
     "meetingTimeSuggestions": [
         {
             "confidence": 100,
+            "order": 1,
+            "organizerAvailability": "free",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
+                {
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "displayName": "Conf room Hood"
+                }
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T16:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T17:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
+        },
+        {
+            "confidence": 100,
+            "order": 2,
             "organizerAvailability": "free",
             "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
             "attendeeAvailability": [
@@ -217,7 +251,70 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
         },
         {
             "confidence": 100,
-            "organizerAvailability": "free",
+            "order": 3,
+            "organizerAvailability": "tentative",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
+                {
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "displayName": "Conf room Hood"
+                }
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T15:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T16:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
+        },
+        {
+            "confidence": 100,
+            "order": 4,
+            "organizerAvailability": "tentative",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
+                {
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "displayName": "Conf room Hood"
+                }
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T09:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T10:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
+        },
+        {
+            "confidence": 100,
+            "order": 5,
+            "organizerAvailability": "tentative",
             "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
             "attendeeAvailability": [
                 {
@@ -244,36 +341,6 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "timeZone": "Pacific Standard Time"
                 }
             }
-        },
-        {
-            "confidence": 100,
-            "organizerAvailability": "free",
-            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
-            "attendeeAvailability": [
-                {
-                    "availability": "free",
-                    "attendee": {
-                        "emailAddress": {
-                            "address": "alexw@contoso.onmicrosoft.com"
-                        }
-                    }
-                }
-            ],
-            "locations": [
-                {
-                    "displayName": "Conf room Hood"
-                }
-            ],
-            "meetingTimeSlot": {
-                "start": {
-                    "dateTime": "2019-04-18T16:00:00.0000000",
-                    "timeZone": "Pacific Standard Time"
-                },
-                "end": {
-                    "dateTime": "2019-04-18T17:00:00.0000000",
-                    "timeZone": "Pacific Standard Time"
-                }
-            }
         }
     ]
 }
@@ -290,7 +357,9 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "tocPath": "",
   "suppressions": [
     "Warning: /api-reference/beta/api/user_findmeetingtimes.md:\r\n      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",
-    "Error: /api-reference/beta/api/user-findmeetingtimes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/user-findmeetingtimes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)",
+    "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
+    Expected type Float but actual was Int64. Property: confidence, actual value: '100'"
   ]
 }
 -->
