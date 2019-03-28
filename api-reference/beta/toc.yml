@@ -48,16 +48,16 @@ items:
     - name: 使用架构扩展（示例）
       href: /graph/extensibility-schema-groups?toc=./ref/toc.json
     displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
-  - name: 资源
-    items:
-    - name: 最佳做法
-      href: /graph/best-practices-concept?toc=./ref/toc.json
-    - name: 已知问题
-      href: /graph/known-issues?toc=./ref/toc.json
-    - name: 更改日志
-      href: /graph/changelog?toc=./ref/toc.json
-    - name: 错误
-      href: /graph/errors?toc=./ref/toc.json
+- name: 资源
+  items:
+  - name: 最佳做法
+    href: /graph/best-practices-concept?toc=./ref/toc.json
+  - name: 已知问题
+    href: /graph/known-issues?toc=./ref/toc.json
+  - name: 更改日志
+    href: /graph/changelog?toc=./ref/toc.json
+  - name: 错误
+    href: /graph/errors?toc=./ref/toc.json
 - name: 参考
   href: overview.md
   items:
@@ -101,6 +101,8 @@ items:
         href: api/user-reminderview.md
       - name: 获取忙/闲日程安排
         href: api/calendar-getschedule.md
+      - name: 查找会议时间
+        href: api/user-findmeetingtimes.md
       - name: 查找会议室列表
         href: api/user-findroomlists.md
       - name: 查找会议室
@@ -585,10 +587,10 @@ items:
         href: api/calendar-list-events.md
       - name: 创建事件
         href: api/calendar-post-events.md
-      - name: 查找会议时间
-        href: api/user-findmeetingtimes.md
       - name: 获取忙/闲日程安排
         href: api/calendar-getschedule.md
+      - name: 查找会议时间
+        href: api/user-findmeetingtimes.md
       - name: 查找会议室列表
         href: api/user-findroomlists.md
       - name: 查找会议室
@@ -6532,6 +6534,10 @@ items:
         href: api/educationclass-list-assignments.md
       - name: 创建作业
         href: api/educationclass-post-assignments.md
+      - name: 列出类别
+        href: api/educationclass-list-categories.md
+      - name: 创建类别
+        href: api/educationclass-post-category.md
     - name: 用户
       href: resources/educationuser.md
       items:
@@ -6570,6 +6576,19 @@ items:
         href: api/educationassignment-list-submissions.md
       - name: 获取资源文件夹 URL
         href: api/educationassignment-getresourcesfolderurl.md
+      - name: 列出类别
+        href: api/educationassignment-list-categories.md
+      - name: 添加类别
+        href: api/educationassignment-add-categories.md
+      - name: 删除类别
+        href: api/educationassignment-remove-category.md
+    - name: 类别
+      href: resources/educationcategory.md
+      items:
+      - name: 获取类别
+        href: api/educationcategory-get.md
+      - name: 删除类别
+        href: api/educationcategory-delete.md
     - name: 提交
       href: resources/educationsubmission.md
       items:
@@ -8777,9 +8796,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 8f241db6c350664573899b4c25bd2fefb55d7f1b
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 13cbcec3d464f0b60f7a9f275c174af9fde87bae
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572556"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936344"
