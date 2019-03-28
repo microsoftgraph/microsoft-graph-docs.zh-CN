@@ -4,12 +4,12 @@ description: Outlook 日历属于 Office 365 中的 Outlook 消息传递中心�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f147f3b8edf67940cbb3d0d86a3c3b3c1018895f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d8894897cc8fd9670314d5cc134a2b351b04b1f4
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952949"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869202"
 ---
 # <a name="outlook-calendar-api-overview"></a>Outlook 日历 API 概述
 
@@ -59,7 +59,7 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 
 - 在 Outlook 日历应用设置中，客户可以启用在电子邮件中自动添加事件，如航班、酒店或就餐预订，以及开具发票等。 添加后，即可像用户邮箱中的任何其他[事件](/graph/api/resources/event?view=graph-rest-1.0)那样与这些事件交互，并借此 Outlook 功能生成创造性应用场景。
 - ** 在 Outlook 中，预订会议室就像添加**事件**与会者那样简单。 日历 API 将会议室表示为 [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) 对象。 可以[获取租户中可用的会议室（预览版）](/graph/api/user-findrooms?view=graph-rest-beta)和[会议室列表（预览版）](/graph/api/user-findroomlists?view=graph-rest-beta)。 若要安排在特定会议室召开会议，请将它分配到 **event** 的 **location** 属性。
-- **可以[查找用户和资源在特定时间段内的忙/闲信息（预览版）](outlook-get-free-busy-schedule.md)。 然后，可以将此类数据应用于各种方案，包括资源计划和事件日程安排。
+- **可[查找用户和资源在特定时间段内的忙/闲信息](outlook-get-free-busy-schedule.md)。 然后，可以将此类数据应用于各种方案，包括资源计划和事件日程安排。
 - **如果方案涉及安排在最佳时间召开会议，不妨[使用 findMeetingTimes 标识可召开会议的可能时间或地点](findmeetingtimes-example.md)。 [FindMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) 函数会考虑与会者的忙/闲状态，以及所提供的任何首选会议室、时间和其他限制。 如果首次尝试未返回常见的会议时间，请检查原因，调整条件并再次调用 **findMeetingTimes**。
 
 
@@ -90,7 +90,7 @@ Outlook 和日历 API 提供了很多智能便利的功能来安排事件：
 - 在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0)中选择和试用日历示例查询。
 - 了解以下信息：
   - [在 Outlook 日历中查找可能会议时间](findmeetingtimes-example.md)
-  - [获取用户和资源的忙/闲日程安排（预览版）](outlook-get-free-busy-schedule.md)
+  - [获取用户和资源的忙/闲日程安排](outlook-get-free-busy-schedule.md)
   - [在 Outlook 中将重复约会安排为定期事件](outlook-schedule-recurring-events.md)
   - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
   - [获取共享事件](outlook-get-shared-events-calendars.md)

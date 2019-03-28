@@ -2,14 +2,14 @@
 title: meetingTimeSuggestionsResult 资源类型
 description: 一组会议时间建议（若有）；如果没有建议，则返回原因。
 localization_priority: Normal
-author: VinodRavichandran
-ms.prod: microsoft-teams
-ms.openlocfilehash: ed3af37ba48a48f3bc864dc8d9ad67e729999398
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 3f4aa23e582ead2fc51b9091159e158373be1cd1
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914183"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936267"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>meetingTimeSuggestionsResult 资源类型
 
@@ -19,9 +19,9 @@ ms.locfileid: "27914183"
 
 |**emptySuggestionsReason 值**|**原因**|
 |:-----|:-----|
-| attendeesUnavailable | 所有与会者的忙/闲状态均已知，但任意时间段的与会者出席可能性达不到[会议置信度](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion)阈值（默认为 50%）。|
+| attendeesUnavailable | 所有与会者的可用性都是已知的, 但没有足够的与会者可以达到[会议可信度](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion)阈值, 默认情况下, 在任何时间段中, 默认为 50%。|
 | attendeesUnavailableOrUnknown | 部分或全部与会者的忙/闲状态未知，导致会议置信度下降至设定的阈值（默认为 50%）以下。如果与会者不是组织内部的，或获取忙/闲信息时出错了，与会者的忙/闲状态就会变成未知。|
-| locationsUnavailable | [locationConstraint](locationconstraint.md) 参数的 **isRequired** 属性被指定为必需，但在计算的时间段内尚无可用地点。 |
+| locationsUnavailable | **locationConstraint** 参数的 [isRequired](locationconstraint.md) 属性被指定为必需，但在计算的时间段内尚无可用地点。 |
 | organizerUnavailable | **isOrganizerOptional** 参数为 false，但组织者在请求的时间范围内不空闲。 |
 | unknown | 未返回任何会议时间建议的原因未知。|
 
@@ -47,7 +47,7 @@ ms.locfileid: "27914183"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|不返回任何会议建议的原因。 可能的值为： `attendeesUnavailable`， `attendeesUnavailableOrUnknown`， `locationsUnavailable`， `organizerUnavailable`，或`unknown`。 如果**meetingTimeSuggestions**属性包含任何会议建议，则此属性为空字符串。|
+|emptySuggestionsReason|String|未返回任何会议时间建议的原因。 可能的值为: `attendeesUnavailable`、 `attendeesUnavailableOrUnknown`、 `locationsUnavailable` `organizerUnavailable`、或`unknown`。 如果**meetingTimeSuggestions**属性包含任何会议建议, 则此属性为空字符串。|
 |meetingTimeSuggestions|[meetingTimeSuggestion](meetingtimesuggestion.md) 集合|一组会议时间建议。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

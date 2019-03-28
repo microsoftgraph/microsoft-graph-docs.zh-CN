@@ -4,12 +4,12 @@ description: '会议建议, 其中包含会议时间、出勤可能性、个人�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 379bb4ac4be8e2d8d1bec494cf4d573550d46b55
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: d0f6c36d0fb76c1bc115b9cd0490a79a3f94a77b
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057027"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936232"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>meetingTimeSuggestion 资源类型
 
@@ -31,10 +31,10 @@ ms.locfileid: "30057027"
 
 ```json
 {
-  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailabilityDataModel"}],
+  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
   "confidence": 1024.0,
-  "locations": [{"@odata.type": "microsoft.graph.locationDataModel"}],
-  "meetingTimeSlot": {"@odata.type": "microsoft.graph.meetingTimeSlotDataModel"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
+  "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
   "order": 1024,
   "organizerAvailability": "String",
   "suggestionReason": "String"
@@ -44,10 +44,11 @@ ms.locfileid: "30057027"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|attendeeAvailability|[attendeeAvailabilityDataModel](attendeeavailabilitydatamodel.md)集合|显示此会议时间建议中各个与会者的忙/闲状态的数组。|
+|attendeeAvailability|[attendeeAvailability](attendeeavailability.md) 集合|显示此会议时间建议中各个与会者的忙/闲状态的数组。|
 |confidence|Double|表示所有与会者的出席可能性的百分比值。|
-|locations|[locationDataModel](locationdatamodel.md)集合|指定此会议时间建议中各个会议地点的名称和地理位置的数组。|
-|meetingTimeSlot|[meetingTimeSlotDataModel](meetingtimeslotdatamodel.md)|建议的会议时间段。|
+|locations|[location](location.md) 集合|指定此会议时间建议中各个会议地点的名称和地理位置的数组。|
+|meetingTimeSlot|[timeSlot](timeslot.md)|建议的会议时间段。|
+|顺序|Int32|会议时间建议的顺序按其计算可信度值 (从高到低) 进行排序, 然后按 chronology (如果有相同可信度的建议)。 |
 |organizerAvailability|availabilityStatus| 此会议时间建议中会议组织者的忙/闲状态。可取值为：`free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |suggestionReason|String|会议时间建议的理由。|
 

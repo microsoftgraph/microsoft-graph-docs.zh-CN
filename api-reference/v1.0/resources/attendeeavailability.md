@@ -1,17 +1,19 @@
 ---
 title: attendeeAvailability 资源类型
-description: 与会者的类型和忙/闲状态。
+description: 与会者的可用性。
 localization_priority: Normal
-ms.openlocfilehash: a6dee994fc5eb3786fc1a432adcb9333bdb56ec8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 63014553824b833e2e4cdfb03485fcb7962c01a0
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834746"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936246"
 ---
 # <a name="attendeeavailability-resource-type"></a>attendeeAvailability 资源类型
 
-与会者的类型和忙/闲状态。
+与会者的可用性。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -35,8 +37,8 @@ ms.locfileid: "27834746"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|attendee|[AttendeeBase](attendeebase.md)|与会者类型，即是人员还是资源；如果是人员，是必需还是可选。|
-|availability|freeBusyStatus| 可用性的与会者的状态。 可能的值为： `free`， `tentative`， `busy`， `oof`， `workingElsewhere`， `unknown`。|
+|attendee|[attendeeBase](attendeebase.md)|电子邮件地址和与会者类型-无论是个人还是资源, 如果是个人或资源, 是必需的还是可选的。|
+|availability|freeBusyStatus| 与会者的忙/闲状态。 可能的值为: `free`、 `tentative`、 `busy` `oof`、、 `workingElsewhere`、 `unknown`。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -2,16 +2,18 @@
 title: timeSlot 资源类型
 description: 时间段。
 localization_priority: Normal
-ms.openlocfilehash: e01b8d0f34a21eb18bc92e8bcc4e1b8365541d5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7b09ae7f1c60a8348e9f22b856c65f326432e408
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860562"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936239"
 ---
 # <a name="timeslot-resource-type"></a>timeSlot 资源类型
 
-时间段。
+表示会议的时间段。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -35,8 +37,8 @@ ms.locfileid: "27860562"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|end|[dateTimeTimeZone](datetimetimezone.md)|时间段的开始时间。|
-|start|[dateTimeTimeZone](datetimetimezone.md)|时间段的结束时间。|
+|end|[dateTimeTimeZone](datetimetimezone.md)|时间段开始的日期、时间和时区。 |
+|start|[dateTimeTimeZone](datetimetimezone.md)|时间段结束的日期、时间和时区。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

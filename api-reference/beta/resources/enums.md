@@ -1,12 +1,12 @@
 ---
 title: 枚举值
 description: Microsoft Graph 枚举值
-ms.openlocfilehash: 0e748b53d1b89a20e3973ec35aaf53e02d6a3428
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 2f8bd0065136077cda2228cbec1c2d34d546c7d1
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057048"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936323"
 ---
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
@@ -29,18 +29,6 @@ ms.locfileid: "30057048"
 | iana
 
 
-### <a name="availabilitystatus-values"></a>availabilityStatus 值
-
-| 值
-|:-------------------------
-| unknown
-| 任意
-| 暂
-| 空闲
-| oof  
-| workingElsewhere
-
-
 ### <a name="freebusystatus-values"></a>freeBusyStatus 值
 
 | 成员            |值
@@ -51,16 +39,6 @@ ms.locfileid: "30057048"
 | oof               | 第三章
 | workingElsewhere  | 4
 | unknown           | -1
-
-
-### <a name="addresstype-values"></a>addressType 值
-
-| 值
-|:-------------------------
-| unknown 
-| 回收
-| 知情 
-| 相互
 
 
 ### <a name="physicaladdresstype-values"></a>: physicaladdresstype 值
@@ -79,7 +57,7 @@ ms.locfileid: "30057048"
 |:-------------------------
 | 必需
 | 可选
-| 资源
+| resource
 
 
 ### <a name="externalaudiencescope-values"></a>externalAudienceScope 值
@@ -88,7 +66,7 @@ ms.locfileid: "30057048"
 |:-------------------------
 | 无
 | contactsOnly
-| all
+| 各种
 
 
 ### <a name="automaticrepliesstatus-values"></a>automaticRepliesStatus 值
@@ -136,7 +114,7 @@ ms.locfileid: "30057048"
 | 停留          | 0
 | inProgress    | 1
 | success | 双面
-| error        | 第三章
+| 错误        | 第三章
 | validationError | 4
 | 隔离       | 5
 | 向 unknownfuturevalue | 型
@@ -174,7 +152,7 @@ ms.locfileid: "30057048"
 
 | 值
 |:-------------------------
-| 常规
+| 通用
 | personal
 | private
 | 秘密
@@ -185,7 +163,7 @@ ms.locfileid: "30057048"
 | 值
 |:-------------------------
 | 降低
-| 常规
+| 通用
 | 高效
 
 
@@ -233,7 +211,7 @@ ms.locfileid: "30057048"
 |:-------------------------
 | deviceDefault
 | 分隔
-| modal
+| 适合
 | 无
 
 ### <a name="deviceenrollmentfailurereason-values"></a>deviceEnrollmentFailureReason 值
@@ -241,8 +219,8 @@ ms.locfileid: "30057048"
 | 值
 |:-------------
 | unknown
-| 身份验证
-| 授权
+| authentication
+| 批准
 | accountValidation
 | userValidation
 | deviceNotSupported
@@ -257,14 +235,14 @@ ms.locfileid: "30057048"
 | 值
 |:---------
 | text
-| html
+| Html
 
 
 ### <a name="locationtype-values"></a>locationType 值
 
 | 值
 |:-------------------------
-| default
+| 设置
 | conferenceRoom
 | homeAddress
 | businessAddress
@@ -273,7 +251,7 @@ ms.locfileid: "30057048"
 | 住
 | 餐馆
 | localBusiness
-| 省略
+| postalAddress
 
 ### <a name="locationuniqueidtype-values"></a>locationUniqueIdType 值
 
@@ -295,10 +273,10 @@ ms.locfileid: "30057048"
 | doNotForward
 | 努力
 | 仅供参考
-| 转发
+| 前后
 | noResponseNecessary
 | 自述
-| 答复
+| 响应
 | replyToAll
 | 概述
 
@@ -327,8 +305,8 @@ ms.locfileid: "30057048"
 
 | 值
 |:-------------------------
-| Replace
-| 追加
+| 替换
+| Append
 | 删除
 | 插入
 | 计算
@@ -353,7 +331,7 @@ ms.locfileid: "30057048"
 | homeFax
 | businessFax
 | otherFax
-| 值班
+| pager
 | 无线电台
 
 
@@ -364,7 +342,7 @@ ms.locfileid: "30057048"
 | 自动
 | noPreview
 | checklist
-| 说明
+| description
 | reference
 
 
@@ -426,7 +404,7 @@ ms.locfileid: "30057048"
 ### <a name="onenotesourceservice-values"></a>onenoteSourceService 值
 | 值
 |:---------------------
-| Unknown
+| 未知
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -535,9 +513,9 @@ ms.locfileid: "30057048"
 |:---|:---|:---|
 |unknown|0|未知的连接状态。|
 |尝试|1|已尝试连接。|
-|succeeded|双面| 连接成功。|
-|已阻止|第三章| 连接被阻止。|
-|failed|4| 连接失败。|
+|完成|双面| 连接成功。|
+|堵塞|第三章| 连接被阻止。|
+|未能|4| 连接失败。|
 
 ### <a name="processintegritylevel-values"></a>processIntegrityLevel 值
 

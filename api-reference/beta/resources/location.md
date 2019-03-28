@@ -2,12 +2,14 @@
 title: 位置资源类型
 description: 表示事件的位置信息。
 localization_priority: Normal
-ms.openlocfilehash: 6e3c61bcf8f22a20bf41053c2310dc51f5b800a7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 6c3dd1bdb565ce32e464e38d7909988b4f4c7791
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508606"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936281"
 ---
 # <a name="location-resource-type"></a>位置资源类型
 
@@ -32,10 +34,10 @@ ms.locfileid: "29508606"
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |位置的街道地址。 |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 地理坐标和位置的海拔高度。 |
-| displayName  | 字符串 | 与地点相关联的名称。                       |
-| locationEmailAddress | String | （可选）与位置相关联的电子邮件地址。 |
-| locationUri | String | （可选）表示位置的 URI。 |
-| locationType | String | 位置的类型。 可取值为：`default`、`conferenceRoom`、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress`。 只读。|
+| displayName  | String | 与地点相关联的名称。                       |
+| locationEmailAddress | 字符串 | （可选）与位置相关联的电子邮件地址。 |
+| locationUri | 字符串 | （可选）表示位置的 URI。 |
+| locationType | locationType | 位置的类型。 可取值为：`default`、`conferenceRoom`、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress`。 只读。|
 | uniqueId | String | 仅供内部使用。|
 | uniqueIdType | String | 仅供内部使用。 |
 
@@ -55,8 +57,8 @@ ms.locfileid: "29508606"
   "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "displayName": "string",
   "locationEmailAddress": "string",
-  "locationUri": "string",
   "locationType": "string",
+  "locationUri": "string",
   "uniqueId": "string",
   "uniqueIdType": "string"
 }
