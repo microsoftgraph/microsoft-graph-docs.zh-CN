@@ -4,12 +4,12 @@ description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d0581afe678fd17d50f669bed281d1f0a1e53998
-ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
+ms.openlocfilehash: 2c566c671a3ba83168a77e358c2d8ceccfe1bf45
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30379554"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936316"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -63,7 +63,7 @@ ms.locfileid: "30379554"
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。|
 |[List licenseDetails](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) 集合| 获取 licenseDetails 对象集合。|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|检查组列表中的成员身份。检查是可传递的。|
-|[findmeetingtimes](../api/user-findmeetingtimes.md)|[findMeetingTimesResponse](findmeetingtimesresponse.md)|基于与会者忙闲状态、位置或时间限制查找会议时间和位置。|
+|[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|基于与会者忙闲状态、位置或时间限制查找会议时间和位置。|
 |[findRoomLists](../api/user-findroomlists.md)|[emailaddress.md](emailaddress.md) 集合 | 获取租户中定义的会议室列表。|
 |[findRooms](../api/user-findrooms.md)|[emailaddress.md](emailaddress.md) 集合 | 获取用户租户中或特定房间列表中的所有会议室。 |
 |[getMailTips](../api/user-getmailtips.md)|[邮件提醒](mailtips.md)集合|返回向已登录用户提供的一个或多个收件人的邮件提醒。 |
