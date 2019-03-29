@@ -4,12 +4,12 @@ description: 更新 applePushNotificationCertificate 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee760b38c8f684c0ca7f0c8bcca0c98d8a87d931
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2c16718f06b3f321e3a63180a1ee5155cf39de5a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172042"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981256"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
@@ -20,7 +20,7 @@ ms.locfileid: "30172042"
 更新 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) 对象的 JSON 表示形式。
@@ -50,14 +50,14 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|证书的唯一标识符|
+|id|String|证书的唯一标识符|
 |appleIdentifier|String|用于创建 MDM 推送证书的帐户 Apple ID。|
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
 |certificateUploadStatus|String|证书上载状态。|
 |certificateUploadFailureReason|String|证书上传失败的原因。|
-|certificate|String|尚未记录|
+|证书|String|尚未记录|
 
 
 

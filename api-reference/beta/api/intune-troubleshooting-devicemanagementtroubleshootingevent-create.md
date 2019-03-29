@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementTroubleshootingEvent 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e246f0c6ba05da348db015ce1df65de375253b4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b838278d27dcf7349b570b51ba52c7211174b5fd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149551"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981025"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>创建 deviceManagementTroubleshootingEvent
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149551"
 创建新的 [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/troubleshootingEvents
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 deviceManagementTroubleshootingEvent 对象的 JSON 表示形式。
@@ -50,11 +50,11 @@ POST /deviceManagement/troubleshootingEvents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 UUID|
+|id|String|对象的 UUID|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
 |correlationId|String|用于跟踪服务中的故障的 ID。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。|
-|名|字符串|与疑难解答事件对应的事件名称。 它是可选字段|
+|名|String|与疑难解答事件对应的事件名称。 它是可选字段|
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对, 提供有关疑难解答事件的其他信息|
 
 

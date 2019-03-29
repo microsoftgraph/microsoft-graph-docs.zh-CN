@@ -4,12 +4,12 @@ description: 列出 windows10CompliancePolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0bd129844c40cd6a62162b34d38a91c31fc80998
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: e839a66692ed4db5926b99b15aaadd6853d4fb5c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570729"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980710"
 ---
 # <a name="list-windows10compliancepolicies"></a>列出 windows10CompliancePolicies
 
@@ -20,7 +20,7 @@ ms.locfileid: "30570729"
 列出 [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|

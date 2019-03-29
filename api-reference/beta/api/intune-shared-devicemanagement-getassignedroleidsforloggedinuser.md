@@ -4,12 +4,12 @@ description: 检索当前已通过身份验证的用户分配的角色定义和�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9326f490721f032b38f5fcb64d1cad12602ff76f
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: c8d1618aeece15fc482d0d850f8938d45cb53edd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570778"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981368"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>getAssignedRoleIdsForLoggedInUser 函数
 
@@ -19,7 +19,7 @@ ms.locfileid: "30570778"
 
 检索当前已通过身份验证的用户分配的角色定义和角色分配。
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|

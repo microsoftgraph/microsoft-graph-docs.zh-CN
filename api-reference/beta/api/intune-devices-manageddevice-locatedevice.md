@@ -4,12 +4,12 @@ description: 查找设备
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca93270ee4fd456e4db83820767061a2a6cabeb0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bf28473180be8e740a70d7eebf690c31022f13d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161150"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982362"
 ---
 # <a name="locatedevice-action"></a>locateDevice 操作
 
@@ -20,7 +20,7 @@ ms.locfileid: "30161150"
 查找设备
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

@@ -4,12 +4,12 @@ description: 创建新的 androidForWorkAppConfigurationSchema 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfbd2d8a1c6cefbde7ea8f14e640aa4ef5a0a5fb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ed6c1fc978008d8af62cfe155ab1d217960bf323
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148529"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983055"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>创建 androidForWorkAppConfigurationSchema
 
@@ -20,7 +20,7 @@ ms.locfileid: "30148529"
 创建新的 [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/androidForWorkAppConfigurationSchemas
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 androidForWorkAppConfigurationSchema 对象的 JSON 表示形式。

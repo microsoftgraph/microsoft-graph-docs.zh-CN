@@ -4,12 +4,12 @@ description: 读取 activeDirectoryWindowsAutopilotDeploymentProfile 对象的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01aec0eebc85fde7206b05be357010e96a41a5ea
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: e89520242bdcda9bbfcccc2bc6c491910cefd932
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571975"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981095"
 ---
 # <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>获取 activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571975"
 读取[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|

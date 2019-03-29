@@ -4,12 +4,12 @@ description: 删除 appLogCollectionRequest。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7dce5823e1d0deb60166875a38fe38e2307aa039
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 83ed69b62329a848f82642ca4949b6fdd6f7d2f5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165210"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981809"
 ---
 # <a name="delete-applogcollectionrequest"></a>删除 appLogCollectionRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165210"
 删除[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ DELETE /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootin
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

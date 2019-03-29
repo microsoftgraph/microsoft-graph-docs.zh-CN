@@ -4,12 +4,12 @@ description: 生成在可嵌入组件中使用的 web 令牌。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50355af2e5f9e593501094c0bfd1638cb070df9d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b10259ef36897188102f0b553b6ed7df9b0fdbdd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141242"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981711"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>createGooglePlayWebToken 操作
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141242"
 生成在可嵌入组件中使用的 web 令牌。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供参数的 JSON 表示形式。
@@ -50,7 +50,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 
 |属性|类型|说明|
 |:---|:---|:---|
-|parentUri|字符串|承载组件的页面的 https 路径。|
+|parentUri|String|承载组件的页面的 https 路径。|
 
 
 

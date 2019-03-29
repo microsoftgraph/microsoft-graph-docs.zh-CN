@@ -4,12 +4,12 @@ description: 创建新的 androidDeviceOwnerEnrollmentProfile 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 888c20a0e8b409137501695b9363019d61c732b1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f2034ac39671f5e949c93bc9e2b6468aa7895959
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142397"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30984840"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>创建 androidDeviceOwnerEnrollmentProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142397"
 创建新的[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 androidDeviceOwnerEnrollmentProfile 对象的 JSON 表示形式。
@@ -50,17 +50,17 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 
 |属性|类型|说明|
 |:---|:---|:---|
-|accountId|String|注册配置文件所属的租户 GUID。|
-|id|字串符号|注册配置文件的唯一 GUID。|
-|displayName|字符串|注册配置文件的显示名称。|
-|description|字符串|注册配置文件的说明。|
+|accountId|String|注册配置文件隶属的租户 GUID。|
+|id|String|注册配置文件的唯一 GUID。|
+|displayName|String|注册配置文件的显示名称。|
+|description|String|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
 |tokenValue|String|为此注册配置文件最新创建的令牌的值。|
 |tokenCreationDateTime|DateTimeOffset|创建最近创建的令牌的日期时间。|
 |tokenExpirationDateTime|DateTimeOffset|最新创建的令牌的到期日期/时间。|
 |enrolledDeviceCount|Int32|已使用此注册配置文件进行注册的 Android 设备总数。|
-|qrCodeContent|字符串|用于生成此令牌的 QR 码的字符串。|
+|qrCodeContent|String|用于生成此令牌的 QR 码的字符串。|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|用于生成此令牌的 QR 码的字符串。|
 
 
