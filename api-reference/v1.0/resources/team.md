@@ -4,18 +4,18 @@ description: 'Microsoft Teams 中的团队是频道的集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 692f0d12c172fb6b7088912eec952b519d852cac
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 7c3dd42c25ce8c48722ab857f61e0c6a9a275581
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735570"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964134"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
 
 
-Microsoft Teams 中的团队是[频道](channel.md)的集合。 频道表示团队内部的某个主题，因此是讨论的逻辑隔离。
+Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道表示团队内部的某个主题，因此是讨论的逻辑隔离。
 
 每个团队与一个[组](../resources/group.md)相关联。
 该组具有与团队相同的 ID，例如 /groups/{id}/team 与 /teams/{id} 相同。
@@ -35,7 +35,7 @@ Microsoft Teams 中的团队是[频道](channel.md)的集合。 频道表示团�
 |[列出你的团队](../api/user-list-joinedteams.md) | [team](team.md) 集合 | 列出你属于的团队。 |
 |[列出所有团队](/graph/teams-list-all-teams) | [group](group.md) 集合 | 列出具有团队的所有组。 |
 |[将应用发布到你的组织](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | 创建仅对你的组织可见的 Teams 应用。 |
-|[将应用添加到团队](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | 将应用添加（安装）到团队。|
+|[将应用添加到团队](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | 将应用添加（安装）到团队。|
 |[将选项卡添加到频道](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | 将选项卡添加（安装）到团队的频道。|
 
 ## <a name="properties"></a>属性
