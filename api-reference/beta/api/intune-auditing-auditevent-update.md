@@ -4,31 +4,31 @@ description: 更新 auditEvent 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74941b4c660cc9363fe7c021c8aea46314f4a89e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bdc8a9e13f231b1cf424ada6fbcdfaaacd722cc1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152435"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981200"
 ---
-# <a name="update-auditevent"></a><span data-ttu-id="2e4fb-103">更新 auditEvent</span><span class="sxs-lookup"><span data-stu-id="2e4fb-103">Update auditEvent</span></span>
+# <a name="update-auditevent"></a><span data-ttu-id="da94e-103">更新 auditEvent</span><span class="sxs-lookup"><span data-stu-id="da94e-103">Update auditEvent</span></span>
 
-> <span data-ttu-id="2e4fb-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="da94e-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="da94e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2e4fb-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="da94e-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="da94e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2e4fb-106">更新 [auditEvent](../resources/intune-auditing-auditevent.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-106">Update the properties of a [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
+<span data-ttu-id="da94e-106">更新 [auditEvent](../resources/intune-auditing-auditevent.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="da94e-106">Update the properties of a [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2e4fb-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="2e4fb-107">Prerequisites</span></span>
-<span data-ttu-id="2e4fb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="da94e-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="da94e-107">Prerequisites</span></span>
+<span data-ttu-id="da94e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="da94e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2e4fb-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="2e4fb-110">Permission type</span></span>|<span data-ttu-id="2e4fb-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="2e4fb-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="da94e-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="da94e-110">Permission type</span></span>|<span data-ttu-id="da94e-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="da94e-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2e4fb-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2e4fb-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2e4fb-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2e4fb-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="2e4fb-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2e4fb-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2e4fb-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-115">Not supported.</span></span>|
-|<span data-ttu-id="2e4fb-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="2e4fb-116">Application</span></span>|<span data-ttu-id="2e4fb-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-117">Not supported.</span></span>|
+|<span data-ttu-id="da94e-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="da94e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="da94e-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da94e-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="da94e-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="da94e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="da94e-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="da94e-115">Not supported.</span></span>|
+|<span data-ttu-id="da94e-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="da94e-116">Application</span></span>|<span data-ttu-id="da94e-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="da94e-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2e4fb-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2e4fb-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="da94e-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="da94e-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,41 +37,41 @@ ms.locfileid: "30152435"
 PATCH /deviceManagement/auditEvents/{auditEventId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2e4fb-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="2e4fb-119">Request headers</span></span>
-|<span data-ttu-id="2e4fb-120">标头</span><span class="sxs-lookup"><span data-stu-id="2e4fb-120">Header</span></span>|<span data-ttu-id="2e4fb-121">值</span><span class="sxs-lookup"><span data-stu-id="2e4fb-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="da94e-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="da94e-119">Request headers</span></span>
+|<span data-ttu-id="da94e-120">标头</span><span class="sxs-lookup"><span data-stu-id="da94e-120">Header</span></span>|<span data-ttu-id="da94e-121">值</span><span class="sxs-lookup"><span data-stu-id="da94e-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2e4fb-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2e4fb-122">Authorization</span></span>|<span data-ttu-id="2e4fb-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2e4fb-124">Accept</span><span class="sxs-lookup"><span data-stu-id="2e4fb-124">Accept</span></span>|<span data-ttu-id="2e4fb-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2e4fb-125">application/json</span></span>|
+|<span data-ttu-id="da94e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="da94e-122">Authorization</span></span>|<span data-ttu-id="da94e-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="da94e-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="da94e-124">接受</span><span class="sxs-lookup"><span data-stu-id="da94e-124">Accept</span></span>|<span data-ttu-id="da94e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="da94e-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2e4fb-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="2e4fb-126">Request body</span></span>
-<span data-ttu-id="2e4fb-127">在请求正文中，提供 [auditEvent](../resources/intune-auditing-auditevent.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-127">In the request body, supply a JSON representation for the [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="da94e-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="da94e-126">Request body</span></span>
+<span data-ttu-id="da94e-127">在请求正文中，提供 [auditEvent](../resources/intune-auditing-auditevent.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="da94e-127">In the request body, supply a JSON representation for the [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
 
-<span data-ttu-id="2e4fb-128">下表显示了创建 [auditEvent](../resources/intune-auditing-auditevent.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-128">The following table shows the properties that are required when you create the [auditEvent](../resources/intune-auditing-auditevent.md).</span></span>
+<span data-ttu-id="da94e-128">下表显示了创建 [auditEvent](../resources/intune-auditing-auditevent.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="da94e-128">The following table shows the properties that are required when you create the [auditEvent](../resources/intune-auditing-auditevent.md).</span></span>
 
-|<span data-ttu-id="2e4fb-129">属性</span><span class="sxs-lookup"><span data-stu-id="2e4fb-129">Property</span></span>|<span data-ttu-id="2e4fb-130">类型</span><span class="sxs-lookup"><span data-stu-id="2e4fb-130">Type</span></span>|<span data-ttu-id="2e4fb-131">说明</span><span class="sxs-lookup"><span data-stu-id="2e4fb-131">Description</span></span>|
+|<span data-ttu-id="da94e-129">属性</span><span class="sxs-lookup"><span data-stu-id="da94e-129">Property</span></span>|<span data-ttu-id="da94e-130">类型</span><span class="sxs-lookup"><span data-stu-id="da94e-130">Type</span></span>|<span data-ttu-id="da94e-131">说明</span><span class="sxs-lookup"><span data-stu-id="da94e-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2e4fb-132">id</span><span class="sxs-lookup"><span data-stu-id="2e4fb-132">id</span></span>|<span data-ttu-id="2e4fb-133">字符串</span><span class="sxs-lookup"><span data-stu-id="2e4fb-133">String</span></span>|<span data-ttu-id="2e4fb-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-134">Key of the entity.</span></span>|
-|<span data-ttu-id="2e4fb-135">displayName</span><span class="sxs-lookup"><span data-stu-id="2e4fb-135">displayName</span></span>|<span data-ttu-id="2e4fb-136">String</span><span class="sxs-lookup"><span data-stu-id="2e4fb-136">String</span></span>|<span data-ttu-id="2e4fb-137">事件显示名称。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-137">Event display name.</span></span>|
-|<span data-ttu-id="2e4fb-138">componentName</span><span class="sxs-lookup"><span data-stu-id="2e4fb-138">componentName</span></span>|<span data-ttu-id="2e4fb-139">String</span><span class="sxs-lookup"><span data-stu-id="2e4fb-139">String</span></span>|<span data-ttu-id="2e4fb-140">组件名称。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-140">Component name.</span></span>|
-|<span data-ttu-id="2e4fb-141">actor</span><span class="sxs-lookup"><span data-stu-id="2e4fb-141">actor</span></span>|[<span data-ttu-id="2e4fb-142">auditActor</span><span class="sxs-lookup"><span data-stu-id="2e4fb-142">auditActor</span></span>](../resources/intune-auditing-auditactor.md)|<span data-ttu-id="2e4fb-143">与审核事件关联的 AAD 用户和应用程序。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-143">AAD user and application that are associated with the audit event.</span></span>|
-|<span data-ttu-id="2e4fb-144">activity</span><span class="sxs-lookup"><span data-stu-id="2e4fb-144">activity</span></span>|<span data-ttu-id="2e4fb-145">String</span><span class="sxs-lookup"><span data-stu-id="2e4fb-145">String</span></span>|<span data-ttu-id="2e4fb-146">活动的友好名称。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-146">Friendly name of the activity.</span></span>|
-|<span data-ttu-id="2e4fb-147">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="2e4fb-147">activityDateTime</span></span>|<span data-ttu-id="2e4fb-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2e4fb-148">DateTimeOffset</span></span>|<span data-ttu-id="2e4fb-149">执行活动时的日期时间（UTC 时间）。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-149">The date time in UTC when the activity was performed.</span></span>|
-|<span data-ttu-id="2e4fb-150">activityType</span><span class="sxs-lookup"><span data-stu-id="2e4fb-150">activityType</span></span>|<span data-ttu-id="2e4fb-151">String</span><span class="sxs-lookup"><span data-stu-id="2e4fb-151">String</span></span>|<span data-ttu-id="2e4fb-152">执行的活动类型。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-152">The type of activity that was being performed.</span></span>|
-|<span data-ttu-id="2e4fb-153">activityOperationType</span><span class="sxs-lookup"><span data-stu-id="2e4fb-153">activityOperationType</span></span>|<span data-ttu-id="2e4fb-154">String</span><span class="sxs-lookup"><span data-stu-id="2e4fb-154">String</span></span>|<span data-ttu-id="2e4fb-155">活动的 HTTP 操作类型。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-155">The HTTP operation type of the activity.</span></span>|
-|<span data-ttu-id="2e4fb-156">activityResult</span><span class="sxs-lookup"><span data-stu-id="2e4fb-156">activityResult</span></span>|<span data-ttu-id="2e4fb-157">String</span><span class="sxs-lookup"><span data-stu-id="2e4fb-157">String</span></span>|<span data-ttu-id="2e4fb-158">活动结果。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-158">The result of the activity.</span></span>|
-|<span data-ttu-id="2e4fb-159">correlationId</span><span class="sxs-lookup"><span data-stu-id="2e4fb-159">correlationId</span></span>|<span data-ttu-id="2e4fb-160">Guid</span><span class="sxs-lookup"><span data-stu-id="2e4fb-160">Guid</span></span>|<span data-ttu-id="2e4fb-161">用于关联系统内的活动的客户端请求 ID。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-161">The client request Id that is used to correlate activity within the system.</span></span>|
-|<span data-ttu-id="2e4fb-162">resources</span><span class="sxs-lookup"><span data-stu-id="2e4fb-162">resources</span></span>|<span data-ttu-id="2e4fb-163">[auditResource](../resources/intune-auditing-auditresource.md) 集合</span><span class="sxs-lookup"><span data-stu-id="2e4fb-163">[auditResource](../resources/intune-auditing-auditresource.md) collection</span></span>|<span data-ttu-id="2e4fb-164">正在修改的资源。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-164">Resources being modified.</span></span>|
-|<span data-ttu-id="2e4fb-165">category</span><span class="sxs-lookup"><span data-stu-id="2e4fb-165">category</span></span>|<span data-ttu-id="2e4fb-166">String</span><span class="sxs-lookup"><span data-stu-id="2e4fb-166">String</span></span>|<span data-ttu-id="2e4fb-167">审核类别。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-167">Audit category.</span></span>|
+|<span data-ttu-id="da94e-132">id</span><span class="sxs-lookup"><span data-stu-id="da94e-132">id</span></span>|<span data-ttu-id="da94e-133">String</span><span class="sxs-lookup"><span data-stu-id="da94e-133">String</span></span>|<span data-ttu-id="da94e-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="da94e-134">Key of the entity.</span></span>|
+|<span data-ttu-id="da94e-135">displayName</span><span class="sxs-lookup"><span data-stu-id="da94e-135">displayName</span></span>|<span data-ttu-id="da94e-136">字符串</span><span class="sxs-lookup"><span data-stu-id="da94e-136">String</span></span>|<span data-ttu-id="da94e-137">事件显示名称。</span><span class="sxs-lookup"><span data-stu-id="da94e-137">Event display name.</span></span>|
+|<span data-ttu-id="da94e-138">componentName</span><span class="sxs-lookup"><span data-stu-id="da94e-138">componentName</span></span>|<span data-ttu-id="da94e-139">String</span><span class="sxs-lookup"><span data-stu-id="da94e-139">String</span></span>|<span data-ttu-id="da94e-140">组件名称。</span><span class="sxs-lookup"><span data-stu-id="da94e-140">Component name.</span></span>|
+|<span data-ttu-id="da94e-141">actor</span><span class="sxs-lookup"><span data-stu-id="da94e-141">actor</span></span>|[<span data-ttu-id="da94e-142">auditActor</span><span class="sxs-lookup"><span data-stu-id="da94e-142">auditActor</span></span>](../resources/intune-auditing-auditactor.md)|<span data-ttu-id="da94e-143">与审核事件关联的 AAD 用户和应用程序。</span><span class="sxs-lookup"><span data-stu-id="da94e-143">AAD user and application that are associated with the audit event.</span></span>|
+|<span data-ttu-id="da94e-144">activity</span><span class="sxs-lookup"><span data-stu-id="da94e-144">activity</span></span>|<span data-ttu-id="da94e-145">String</span><span class="sxs-lookup"><span data-stu-id="da94e-145">String</span></span>|<span data-ttu-id="da94e-146">活动的友好名称。</span><span class="sxs-lookup"><span data-stu-id="da94e-146">Friendly name of the activity.</span></span>|
+|<span data-ttu-id="da94e-147">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="da94e-147">activityDateTime</span></span>|<span data-ttu-id="da94e-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="da94e-148">DateTimeOffset</span></span>|<span data-ttu-id="da94e-149">执行活动时的日期时间（UTC 时间）。</span><span class="sxs-lookup"><span data-stu-id="da94e-149">The date time in UTC when the activity was performed.</span></span>|
+|<span data-ttu-id="da94e-150">activityType</span><span class="sxs-lookup"><span data-stu-id="da94e-150">activityType</span></span>|<span data-ttu-id="da94e-151">String</span><span class="sxs-lookup"><span data-stu-id="da94e-151">String</span></span>|<span data-ttu-id="da94e-152">执行的活动类型。</span><span class="sxs-lookup"><span data-stu-id="da94e-152">The type of activity that was being performed.</span></span>|
+|<span data-ttu-id="da94e-153">activityOperationType</span><span class="sxs-lookup"><span data-stu-id="da94e-153">activityOperationType</span></span>|<span data-ttu-id="da94e-154">String</span><span class="sxs-lookup"><span data-stu-id="da94e-154">String</span></span>|<span data-ttu-id="da94e-155">活动的 HTTP 操作类型。</span><span class="sxs-lookup"><span data-stu-id="da94e-155">The HTTP operation type of the activity.</span></span>|
+|<span data-ttu-id="da94e-156">activityResult</span><span class="sxs-lookup"><span data-stu-id="da94e-156">activityResult</span></span>|<span data-ttu-id="da94e-157">String</span><span class="sxs-lookup"><span data-stu-id="da94e-157">String</span></span>|<span data-ttu-id="da94e-158">活动结果。</span><span class="sxs-lookup"><span data-stu-id="da94e-158">The result of the activity.</span></span>|
+|<span data-ttu-id="da94e-159">correlationId</span><span class="sxs-lookup"><span data-stu-id="da94e-159">correlationId</span></span>|<span data-ttu-id="da94e-160">Guid</span><span class="sxs-lookup"><span data-stu-id="da94e-160">Guid</span></span>|<span data-ttu-id="da94e-161">用于关联系统内的活动的客户端请求 ID。</span><span class="sxs-lookup"><span data-stu-id="da94e-161">The client request Id that is used to correlate activity within the system.</span></span>|
+|<span data-ttu-id="da94e-162">resources</span><span class="sxs-lookup"><span data-stu-id="da94e-162">resources</span></span>|<span data-ttu-id="da94e-163">[auditResource](../resources/intune-auditing-auditresource.md) 集合</span><span class="sxs-lookup"><span data-stu-id="da94e-163">[auditResource](../resources/intune-auditing-auditresource.md) collection</span></span>|<span data-ttu-id="da94e-164">正在修改的资源。</span><span class="sxs-lookup"><span data-stu-id="da94e-164">Resources being modified.</span></span>|
+|<span data-ttu-id="da94e-165">category</span><span class="sxs-lookup"><span data-stu-id="da94e-165">category</span></span>|<span data-ttu-id="da94e-166">String</span><span class="sxs-lookup"><span data-stu-id="da94e-166">String</span></span>|<span data-ttu-id="da94e-167">审核类别。</span><span class="sxs-lookup"><span data-stu-id="da94e-167">Audit category.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="2e4fb-168">响应</span><span class="sxs-lookup"><span data-stu-id="2e4fb-168">Response</span></span>
-<span data-ttu-id="2e4fb-169">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [auditEvent](../resources/intune-auditing-auditevent.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-169">If successful, this method returns a `200 OK` response code and an updated [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="da94e-168">响应</span><span class="sxs-lookup"><span data-stu-id="da94e-168">Response</span></span>
+<span data-ttu-id="da94e-169">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [auditEvent](../resources/intune-auditing-auditevent.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="da94e-169">If successful, this method returns a `200 OK` response code and an updated [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2e4fb-170">示例</span><span class="sxs-lookup"><span data-stu-id="2e4fb-170">Example</span></span>
+## <a name="example"></a><span data-ttu-id="da94e-170">示例</span><span class="sxs-lookup"><span data-stu-id="da94e-170">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2e4fb-171">请求</span><span class="sxs-lookup"><span data-stu-id="2e4fb-171">Request</span></span>
-<span data-ttu-id="2e4fb-172">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-172">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="da94e-171">请求</span><span class="sxs-lookup"><span data-stu-id="da94e-171">Request</span></span>
+<span data-ttu-id="da94e-172">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="da94e-172">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
@@ -120,8 +120,8 @@ Content-length: 1390
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="2e4fb-173">响应</span><span class="sxs-lookup"><span data-stu-id="2e4fb-173">Response</span></span>
-<span data-ttu-id="2e4fb-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2e4fb-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="da94e-173">响应</span><span class="sxs-lookup"><span data-stu-id="da94e-173">Response</span></span>
+<span data-ttu-id="da94e-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="da94e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
