@@ -4,12 +4,12 @@ description: 新建用户对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f46fbbc365e52ae9e46db9f6c05c3c8e8eeddc92
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 8f8cf0fb067c5a9cac80308f49fe07af122c1b47
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572255"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965317"
 ---
 # <a name="create-user"></a>创建用户
 
@@ -21,7 +21,7 @@ ms.locfileid: "30572255"
 
 ## <a name="prerequisites"></a>先决条件
 
-若要调用此 API, 必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。  所需的特定权限取决于上下文。
+若要调用此 API, 必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  所需的特定权限取决于上下文。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|

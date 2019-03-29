@@ -4,12 +4,12 @@ description: 读取 deviceAppManagement 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 7a7bc478dc4a9a59b067b5acb3688c0bb0793d9f
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: c27099cdc0e2ffbbc3e0e02cde07b9b4e34ea33c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570820"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963511"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
@@ -21,7 +21,7 @@ ms.locfileid: "30570820"
 
 ## <a name="prerequisites"></a>先决条件
 
-若要调用此 API, 必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。  请注意, 相应的权限根据工作流的不同而有所不同。
+若要调用此 API, 必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  请注意, 相应的权限根据工作流的不同而有所不同。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|

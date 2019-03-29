@@ -4,12 +4,12 @@ description: 更新 windowsManagedDevice 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0e42e2d12ac433dc4808753979ce8c42f593b32
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e1fd03350e06b467713ee1338e62f58cab45b44a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173638"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962552"
 ---
 # <a name="update-windowsmanageddevice"></a>更新 windowsManagedDevice
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173638"
 更新[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md)对象的 JSON 表示形式。
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备的唯一标识符|
+|id|String|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备的唯一标识符|
 |userId|String|与继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备关联的用户的唯一标识符|
 |deviceName|String|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备的名称|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的 hardward 详细信息。  包括存储空间、制造商、序列号等信息。继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -95,7 +95,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |manufacturer|String|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备的制造商|
 |imei|String|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的 IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期过期时间从[managedDevice](../resources/intune-devices-manageddevice.md)继承的日期/时间|
-|serialNumber|String|SerialNumber 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|serialNumber|字符串|SerialNumber 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |phoneNumber|String|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备的电话号码|
 |androidSecurityPatchLevel|String|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的 Android 安全修补程序级别|
 |userDisplayName|String|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的用户显示名称|
@@ -115,7 +115,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|String|集成的电路卡标识符, 它是 SIM 卡的唯一标识号。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|String collection|此设备实例的范围标记 id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|String 集合|此设备实例的范围标记 id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的此 windows 设备的活动恶意软件的计数|
 |windowsRemediatedMalwareCount|Int32|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的此 windows 设备的修正的恶意软件的计数|
 |notes|String|由 IT 管理员创建的设备上的注释继承自[managedDevice](../resources/intune-devices-manageddevice.md)|

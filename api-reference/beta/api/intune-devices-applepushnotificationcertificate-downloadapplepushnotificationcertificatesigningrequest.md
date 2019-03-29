@@ -4,12 +4,12 @@ description: 下载 Apple 推送通知证书签名请求
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8fd7cbbbae02b56b13edcb05006ad2b5caf57d9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a4bce96138ff4e77ff9dddbea4e0612685ec41b3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146744"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965030"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>downloadApplePushNotificationCertificateSigningRequest 函数
 
@@ -20,7 +20,7 @@ ms.locfileid: "30146744"
 下载 Apple 推送通知证书签名请求
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,13 +41,13 @@ GET /deviceManagement/applePushNotificationCertificate/downloadApplePushNotifica
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 String。
+如果成功, 此函数会在`200 OK`响应正文中返回响应代码和字符串。
 
 ## <a name="example"></a>示例
 

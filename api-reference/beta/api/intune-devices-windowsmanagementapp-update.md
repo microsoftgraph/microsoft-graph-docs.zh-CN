@@ -4,12 +4,12 @@ description: 更新 windowsManagementApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3755da3e9f8a5d5ad5f0d061374d9d3f8e277b7b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3b68af1276d24845e3bb90b5e7a6db38a09806aa
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165805"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962839"
 ---
 # <a name="update-windowsmanagementapp"></a>更新 windowsManagementApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165805"
 更新[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md)对象的 JSON 表示形式。
@@ -50,8 +50,8 @@ PATCH /deviceAppManagement/windowsManagementApp
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Windows 管理应用程序的唯一标识符|
-|availableVersion|字符串|Windows 管理应用程序的可用版本。|
+|id|String|Windows 管理应用程序的唯一标识符|
+|availableVersion|String|Windows 管理应用程序的可用版本。|
 
 
 

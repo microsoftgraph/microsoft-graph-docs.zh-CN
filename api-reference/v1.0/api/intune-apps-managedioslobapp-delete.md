@@ -4,12 +4,12 @@ description: 删除 managedIOSLobApp。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c12b02eced5bf987b3f81b3ca68dd8fd6ec92cf
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 3b2602e28fb92f17c108a4b0c92463fe2c8f8b97
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255568"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964883"
 ---
 # <a name="delete-managedioslobapp"></a>删除 managedIOSLobApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255568"
 删除 [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md)。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -39,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

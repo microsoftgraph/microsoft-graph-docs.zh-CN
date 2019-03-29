@@ -4,12 +4,12 @@ description: 更新 userPFXCertificate 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 139d7f3523510728195e5e6f7b725c5fdb05f94a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a7fb9d717520dcf8f780d4891fbaa03144c551f2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158406"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959080"
 ---
 # <a name="update-userpfxcertificate"></a>更新 userPFXCertificate
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158406"
 更新[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的 JSON 表示形式。
@@ -50,17 +50,17 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|PFX 证书的唯一标识符。|
-|为|字符串|SHA-1 PFX 证书的指纹。|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
-|userPrincipalName|字符串|PFX 证书的用户主体名称。|
+|id|String|PFX 证书的唯一标识符。|
+|为|String|SHA-1 PFX 证书的指纹。|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn` 或 `wifi`。|
+|userPrincipalName|String|PFX 证书的用户主体名称。|
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
-|providerName|字符串|用于加密此 blob 的加密提供程序。|
-|名|字符串|用于对 blob 进行加密的密钥 (在提供程序中) 的名称。|
+|providerName|String|用于加密此 blob 的加密提供程序。|
+|名|String|用于对 blob 进行加密的密钥 (在提供程序中) 的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|加密/解密过程中提供程序使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|加密的 PFX blob。|
-|encryptedPfxPassword|字符串|加密的 PFX 密码。|
+|encryptedPfxPassword|String|加密的 PFX 密码。|
 |createdDateTime|DateTimeOffset|导入此 PFX 证书的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书的日期/时间。|
 

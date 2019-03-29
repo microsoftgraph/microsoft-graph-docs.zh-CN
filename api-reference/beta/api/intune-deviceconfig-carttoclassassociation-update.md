@@ -4,12 +4,12 @@ description: 更新 cartToClassAssociation 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e616dd51136f93e62a5eb751863fd7b97218374c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 09e83b523145f79d610b1299d61fafc5d0a03b02
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144441"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964477"
 ---
 # <a name="update-carttoclassassociation"></a>更新 cartToClassAssociation
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144441"
 更新[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md)对象的 JSON 表示形式。
@@ -55,9 +55,9 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
-|说明|字符串|管理员提供的 CartToClassAssociation 说明。|
-|deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
-|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
+|description|String|管理员提供的 CartToClassAssociation 说明。|
+|deviceCartIds|String 集合|要与类关联的设备购物车的标识符。|
+|classroomIds|String 集合|要与设备购物车关联的教室的标识符。|
 
 
 

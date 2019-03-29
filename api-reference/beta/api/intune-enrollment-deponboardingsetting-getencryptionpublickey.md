@@ -4,12 +4,12 @@ description: 获取用于加密 Apple 设备注册计划令牌的公钥
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72149171a964d72be0ef35351638ffcdf27e0289
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cd34c3e6e88d432601aacf6bd8c8df851c90baef
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154262"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965625"
 ---
 # <a name="getencryptionpublickey-function"></a>getEncryptionPublicKey 函数
 
@@ -20,7 +20,7 @@ ms.locfileid: "30154262"
 获取用于加密 Apple 设备注册计划令牌的公钥
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,13 +41,13 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncrypti
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此函数会在响应正文中返回 `200 OK` 响应代码和一个 String。
+如果成功, 此函数会在`200 OK`响应正文中返回响应代码和字符串。
 
 ## <a name="example"></a>示例
 

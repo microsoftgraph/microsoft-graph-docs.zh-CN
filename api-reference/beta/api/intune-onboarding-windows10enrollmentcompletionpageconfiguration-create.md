@@ -4,12 +4,12 @@ description: 创建新的 windows10EnrollmentCompletionPageConfiguration 对象�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0018e99738e09317835af3fe79505c9723c5e6a5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9751c71cee378eabe3bbbf065e2e5ba3e0cdd337
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140290"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957029"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>创建 windows10EnrollmentCompletionPageConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140290"
 创建新的[windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 windows10EnrollmentCompletionPageConfiguration 对象的 JSON 表示形式。
@@ -53,18 +53,18 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |id|String|继承自[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)的注册状态页面配置的 Id|
 |displayName|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |description|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|priority|Int32|尚未记录 继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|createdDateTime|DateTimeOffset|尚未记录 继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|priority|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|createdDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|version|Int32|尚未记录 继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|布尔|显示或隐藏用户的安装进度|
-|blockDeviceSetupRetryByUser|布尔|允许用户在安装失败时重试安装程序|
-|allowDeviceResetOnInstallFailure|布尔|允许或阻止在安装失败时重置设备|
-|allowLogCollectionOnInstallFailure|布尔|在安装失败时允许或阻止日志集合|
-|customErrorMessage|字符串|设置自定义错误消息以在安装失败时显示|
+|version|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|showInstallationProgress|Boolean|显示或隐藏用户的安装进度|
+|blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装程序|
+|allowDeviceResetOnInstallFailure|Boolean|允许或阻止在安装失败时重置设备|
+|allowLogCollectionOnInstallFailure|Boolean|在安装失败时允许或阻止日志集合|
+|customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时 (分钟)|
-|allowDeviceUseOnInstallFailure|布尔|允许用户在安装失败时继续使用设备|
-|selectedMobileAppIds|String collection|选定的应用程序跟踪安装状态|
+|allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
+|selectedMobileAppIds|String 集合|选定的应用程序跟踪安装状态|
 
 
 
