@@ -4,31 +4,31 @@ description: 读取 androidWorkProfileWiFiConfiguration 对象的属性和关系
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a47e2afa8dc58e67ed650e6bf4eb50bae7b2f20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bd8e8cd7f06cb2ae8ee892b2105d5a396870b1f6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157748"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958849"
 ---
-# <a name="get-androidworkprofilewificonfiguration"></a><span data-ttu-id="4b454-103">获取 androidWorkProfileWiFiConfiguration</span><span class="sxs-lookup"><span data-stu-id="4b454-103">Get androidWorkProfileWiFiConfiguration</span></span>
+# <a name="get-androidworkprofilewificonfiguration"></a><span data-ttu-id="7dd6e-103">获取 androidWorkProfileWiFiConfiguration</span><span class="sxs-lookup"><span data-stu-id="7dd6e-103">Get androidWorkProfileWiFiConfiguration</span></span>
 
-> <span data-ttu-id="4b454-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="4b454-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="7dd6e-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4b454-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="4b454-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7dd6e-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4b454-106">读取[androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="4b454-106">Read properties and relationships of the [androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md) object.</span></span>
+<span data-ttu-id="7dd6e-106">读取[androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-106">Read properties and relationships of the [androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4b454-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="4b454-107">Prerequisites</span></span>
-<span data-ttu-id="4b454-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="4b454-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7dd6e-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="7dd6e-107">Prerequisites</span></span>
+<span data-ttu-id="7dd6e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4b454-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="4b454-110">Permission type</span></span>|<span data-ttu-id="4b454-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="4b454-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="7dd6e-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="7dd6e-110">Permission type</span></span>|<span data-ttu-id="7dd6e-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="7dd6e-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4b454-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4b454-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4b454-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="4b454-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="4b454-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4b454-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4b454-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4b454-115">Not supported.</span></span>|
-|<span data-ttu-id="4b454-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="4b454-116">Application</span></span>|<span data-ttu-id="4b454-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="4b454-117">Not supported.</span></span>|
+|<span data-ttu-id="7dd6e-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7dd6e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="7dd6e-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="7dd6e-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="7dd6e-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7dd6e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7dd6e-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-115">Not supported.</span></span>|
+|<span data-ttu-id="7dd6e-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="7dd6e-116">Application</span></span>|<span data-ttu-id="7dd6e-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4b454-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4b454-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7dd6e-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7dd6e-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +39,31 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="4b454-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4b454-119">Optional query parameters</span></span>
-<span data-ttu-id="4b454-120">此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="4b454-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7dd6e-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="7dd6e-119">Optional query parameters</span></span>
+<span data-ttu-id="7dd6e-120">此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4b454-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="4b454-121">Request headers</span></span>
-|<span data-ttu-id="4b454-122">标头</span><span class="sxs-lookup"><span data-stu-id="4b454-122">Header</span></span>|<span data-ttu-id="4b454-123">值</span><span class="sxs-lookup"><span data-stu-id="4b454-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7dd6e-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="7dd6e-121">Request headers</span></span>
+|<span data-ttu-id="7dd6e-122">标头</span><span class="sxs-lookup"><span data-stu-id="7dd6e-122">Header</span></span>|<span data-ttu-id="7dd6e-123">值</span><span class="sxs-lookup"><span data-stu-id="7dd6e-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4b454-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4b454-124">Authorization</span></span>|<span data-ttu-id="4b454-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="4b454-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4b454-126">Accept</span><span class="sxs-lookup"><span data-stu-id="4b454-126">Accept</span></span>|<span data-ttu-id="4b454-127">application/json</span><span class="sxs-lookup"><span data-stu-id="4b454-127">application/json</span></span>|
+|<span data-ttu-id="7dd6e-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="7dd6e-124">Authorization</span></span>|<span data-ttu-id="7dd6e-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="7dd6e-126">接受</span><span class="sxs-lookup"><span data-stu-id="7dd6e-126">Accept</span></span>|<span data-ttu-id="7dd6e-127">application/json</span><span class="sxs-lookup"><span data-stu-id="7dd6e-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4b454-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="4b454-128">Request body</span></span>
-<span data-ttu-id="4b454-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4b454-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7dd6e-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="7dd6e-128">Request body</span></span>
+<span data-ttu-id="7dd6e-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4b454-130">响应</span><span class="sxs-lookup"><span data-stu-id="4b454-130">Response</span></span>
-<span data-ttu-id="4b454-131">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4b454-131">If successful, this method returns a `200 OK` response code and [androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7dd6e-130">响应</span><span class="sxs-lookup"><span data-stu-id="7dd6e-130">Response</span></span>
+<span data-ttu-id="7dd6e-131">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-131">If successful, this method returns a `200 OK` response code and [androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4b454-132">示例</span><span class="sxs-lookup"><span data-stu-id="4b454-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7dd6e-132">示例</span><span class="sxs-lookup"><span data-stu-id="7dd6e-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4b454-133">请求</span><span class="sxs-lookup"><span data-stu-id="4b454-133">Request</span></span>
-<span data-ttu-id="4b454-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4b454-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="7dd6e-133">请求</span><span class="sxs-lookup"><span data-stu-id="7dd6e-133">Request</span></span>
+<span data-ttu-id="7dd6e-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="4b454-135">响应</span><span class="sxs-lookup"><span data-stu-id="4b454-135">Response</span></span>
-<span data-ttu-id="4b454-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="4b454-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7dd6e-135">响应</span><span class="sxs-lookup"><span data-stu-id="7dd6e-135">Response</span></span>
+<span data-ttu-id="7dd6e-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7dd6e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
