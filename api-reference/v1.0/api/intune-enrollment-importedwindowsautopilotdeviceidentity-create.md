@@ -1,15 +1,15 @@
 ---
 title: 创建 importedWindowsAutopilotDeviceIdentity
-description: 创建新importedWindowsAutopilotDeviceIdentity对象。
+description: 创建新的 importedWindowsAutopilotDeviceIdentity 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7aa20bae6db2d3e93178439836ea8abded8563b
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 664b0d52eea5d61918e234c9fa582fa57f50d8b5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251704"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980094"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>创建 importedWindowsAutopilotDeviceIdentity
 
@@ -18,7 +18,7 @@ ms.locfileid: "30251704"
 创建新的 [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -40,7 +40,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 importedWindowsAutopilotDeviceIdentity 对象的 JSON 表示形式。
@@ -49,7 +49,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 GUID|
+|id|String|对象的 GUID|
 |orderIdentifier|String|Windows autopilot 设备订单 Id。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|字符串|Windows autopilot 设备产品密钥。|

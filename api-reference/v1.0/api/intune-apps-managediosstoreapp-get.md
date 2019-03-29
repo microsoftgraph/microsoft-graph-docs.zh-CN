@@ -4,12 +4,12 @@ description: 读取 managedIOSStoreApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3e06f832c64b2b1c98b3d41454cd87fcf213ce2
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 123bf6bc476e018e31d021fbf4666fa530239c50
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255043"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978729"
 ---
 # <a name="get-managediosstoreapp"></a>获取 managedIOSStoreApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255043"
 读取 [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

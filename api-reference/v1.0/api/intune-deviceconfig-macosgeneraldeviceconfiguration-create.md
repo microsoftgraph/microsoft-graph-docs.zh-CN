@@ -4,12 +4,12 @@ description: 创建新的 macOSGeneralDeviceConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3739b566196c6c2dd9717f2cbe4295fcc36ecfad
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: e02159e9f577e001a675de5ee64768f63d1090c0
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252180"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979520"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>创建 macOSGeneralDeviceConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "30252180"
 创建新的 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -39,7 +39,7 @@ POST /deviceManagement/deviceConfigurations
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 macOSGeneralDeviceConfiguration 对象的 JSON 表示形式。

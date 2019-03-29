@@ -4,12 +4,12 @@ description: 更新 androidForWorkSettings 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65550bc588eb5fb0f4d2f11ac785d458e8821a7d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 658744008af023fc2ad419aedc7a369f1ffbcb9f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170789"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976741"
 ---
 # <a name="update-androidforworksettings"></a>更新 androidForWorkSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170789"
 更新 [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/androidForWorkSettings
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md) 对象的 JSON 表示形式。
@@ -50,7 +50,7 @@ PATCH /deviceManagement/androidForWorkSettings
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Android for Work 设置标识符|
+|id|String|Android for Work 设置标识符|
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|使用 Google EMM API 的租户的绑定状态。 可取值为：`notBound`、`bound`、`boundAndValidated`、`unbinding`。|
 |lastAppSyncDateTime|DateTimeOffset|应用同步的上次完成时间|
 |lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|上次应用程序同步结果。 可取值为：`success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|

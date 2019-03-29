@@ -4,12 +4,12 @@ description: 删除 managedIOSStoreApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce9b2e69ab78fc80acd59ead954cba9cd39401e2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e7c45821814c4aefdecf0144a6b684e9400cd4ec
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173813"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979191"
 ---
 # <a name="delete-managediosstoreapp"></a>删除 managedIOSStoreApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173813"
 删除 [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md)
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

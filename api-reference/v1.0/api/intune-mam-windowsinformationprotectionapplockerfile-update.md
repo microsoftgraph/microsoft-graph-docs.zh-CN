@@ -4,12 +4,12 @@ description: 更新 windowsInformationProtectionAppLockerFile 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d42d85d1ca2151239dd9e96b8337d0dab6538ce0
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 97afdcc7a7d0f0025b19ed33e9df2e10e9b275fa
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263180"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979597"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>更新 windowsInformationProtectionAppLockerFile
 
@@ -18,7 +18,7 @@ ms.locfileid: "30263180"
 更新 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象的 JSON 表示形式。
@@ -51,10 +51,10 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|友好名称|
+|displayName|字符串|友好名称|
 |fileHash|String|文件的 SHA256 哈希|
 |file|Binary|字节数组形式的文件|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 

@@ -4,12 +4,12 @@ description: 更新 officeSuiteApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d6e8837741c7376d7f0c33740a0ed6420adf7c89
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 90ca5b6c3c00f04f4120a7102b7f52a3255df263
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572199"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976993"
 ---
 # <a name="update-officesuiteapp"></a>更新 officeSuiteApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572199"
 更新[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -53,34 +53,34 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|privacyInformationUrl|字符串|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|informationUrl|字符串|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |owner|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |autoAcceptEula|Boolean|要在 enduser 的设备上自动接受 EULA 的值。|
 |productIds|[officeProductId](../resources/intune-apps-officeproductid.md)集合|表示 Office365 套件 SKU 的产品 id。 可取值为：`o365ProPlusRetail`、`o365BusinessRetail`、`visioProRetail`、`projectProRetail`。|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|表示从所选 Office365 产品 Id 中排除的应用程序的属性。|
 |useSharedComputerActivation|Boolean|表示共享计算机激活是否不适用于 Office365 应用程序套件的属性。|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|用于表示 Office365 更新通道的属性。 可取值为：`none`、`current`、`deferred`、`firstReleaseCurrent` 或 `firstReleaseDeferred`。|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|表示 Office365 应用程序套件版本的属性。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
-|localesToInstall|String collection|用于表示安装 Office365 中的应用程序时所安装的区域设置的属性。 它使用标准 RFC 6033。 Refhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
+|localesToInstall|String 集合|用于表示安装 Office365 中的应用程序时所安装的区域设置的属性。 它使用标准 RFC 6033。 Refhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|指定设备上安装进度设置 UI 的显示级别。 可取值为：`none`、`full`。|
 |shouldUninstallOlderVersionsOfOffice|Boolean|用于确定是否在将 Office365 应用套件部署到设备时是否卸载现有 Office MSI 的属性。|
-|targetVersion|字符串|表示应在设备上保持部署的 Office365 应用程序套件的特定目标版本的属性。|
-|updateVersion|字符串|表示可用于 Office365 应用程序套件的特定目标版本的更新版本的属性。|
-|officeConfigurationXml|二进制数|表示可为 Office 专业增强版应用程序指定的 XML 配置文件的属性。 优先于所有其他属性。 如果存在, 将使用 XML 配置文件来创建应用程序。|
+|targetVersion|String|表示应在设备上保持部署的 Office365 应用程序套件的特定目标版本的属性。|
+|updateVersion|String|表示可用于 Office365 应用程序套件的特定目标版本的更新版本的属性。|
+|officeConfigurationXml|Binary|表示可为 Office 专业增强版应用程序指定的 XML 配置文件的属性。 优先于所有其他属性。 如果存在, 将使用 XML 配置文件来创建应用程序。|
 
 
 

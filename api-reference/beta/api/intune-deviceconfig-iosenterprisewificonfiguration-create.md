@@ -4,12 +4,12 @@ description: 创建新的 iosEnterpriseWiFiConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7318f147943206b2ec8d660579490dfa6efcb0de
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c3d3c6ee686f82c4d5ac7be6d1b49417a3e7ec44
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170971"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979751"
 ---
 # <a name="create-iosenterprisewificonfiguration"></a>创建 iosEnterpriseWiFiConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170971"
 创建新的[iosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 iosEnterpriseWiFiConfiguration 对象的 JSON 表示形式。
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -71,7 +71,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |preSharedKey|String|这是 WPA 个人 wi-fi 网络的预共享密钥。 继承自[iosWiFiConfiguration](../resources/intune-deviceconfig-ioswificonfiguration.md)|
 |eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|可扩展的身份验证协议 (EAP)。 指示在 wlan 终结点 (路由器) 上设置的 EAP 协议的类型。 可取值为：`eapTls`、`leap`、`eapSim`、`eapTtls`、`peap`、`eapFast`。|
 |eapFastConfiguration|[eapFastConfiguration](../resources/intune-deviceconfig-eapfastconfiguration.md)|eap-fast 配置选项, 当 eap-fast 是所选的 eap 类型时。 可取值为：`noProtectedAccessCredential`、`useProtectedAccessCredential`、`useProtectedAccessCredentialAndProvision`、`useProtectedAccessCredentialAndProvisionAnonymously`。|
-|trustedServerCertificateNames|String collection|将 eap 类型配置为 eap-tls/TTLS/FAST 或 PEAP 时受信任的服务器证书名称。 这是由受信任的证书颁发机构 (CA) 颁发的证书中使用的公用名称。 如果提供此信息, 则可以绕过在最终用户的设备连接到此 wi-fi 网络时显示的动态信任对话框。|
+|trustedServerCertificateNames|String 集合|将 eap 类型配置为 eap-tls/TTLS/FAST 或 PEAP 时受信任的服务器证书名称。 这是由受信任的证书颁发机构 (CA) 颁发的证书中使用的公用名称。 如果提供此信息, 则可以绕过在最终用户的设备连接到此 wi-fi 网络时显示的动态信任对话框。|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|EAP 类型配置为 PEAP 或 EAP-TTLS 时的身份验证方法。 可取值为：`certificate`、`usernameAndPassword`。|
 |innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|eap 类型为 eap 时进行身份验证的非 EAP 方法-TTLS 和 Authenticationmethod 为用户名和密码。 可取值为：`unencryptedPassword`、`challengeHandshakeAuthenticationProtocol`、`microsoftChap`、`microsoftChapVersionTwo`。|
 |outerIdentityPrivacyTemporaryValue|String|将 eap 类型配置为 eap-TTLS、eap-fast 或 PEAP 时启用标识隐私 (外部标识)。 此属性使用您输入的文本屏蔽用户名。 例如, 如果使用 "匿名", 则使用其真实用户名通过此 wlan 连接进行身份验证的每个用户都将显示为 "匿名"。|

@@ -4,12 +4,12 @@ description: 创建新的 dataSharingConsent 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7002b45e1847b63a8692dff6cd7e16b2b9b882c5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bb20f6e6029e33483d28545bf3f9be56b052a8f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167107"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978078"
 ---
 # <a name="create-datasharingconsent"></a>创建 dataSharingConsent
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167107"
 创建新的[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/dataSharingConsents
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 dataSharingConsent 对象的 JSON 表示形式。
@@ -50,13 +50,13 @@ POST /deviceManagement/dataSharingConsents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|数据共享同意 Id|
-|serviceDisplayName|字符串|服务工作流的显示名称|
-|termsUrl|字符串|数据共享同意的 TermsUrl|
-|granted|布尔|"数据共享同意" 的 "已授予" 状态|
+|id|String|数据共享同意 Id|
+|serviceDisplayName|String|服务工作流的显示名称|
+|termsUrl|String|数据共享同意的 TermsUrl|
+|granted|Boolean|"数据共享同意" 的 "已授予" 状态|
 |grantDateTime|DateTimeOffset|授予此帐户的时间许可|
-|grantedByUpn|字符串|授予此帐户同意的用户的 Upn|
-|grantedByUserId|字符串|授予此帐户同意的用户的用户 id|
+|grantedByUpn|String|授予此帐户同意的用户的 Upn|
+|grantedByUserId|String|授予此帐户同意的用户的用户 id|
 
 
 

@@ -4,12 +4,12 @@ description: 删除 mobileAppContent。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fcb5d06df4d96154d17f9519d791fccc1b8436be
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 8ab7fba2cf5fdeec7e73f9cd07f53428ac37c85d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257636"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979947"
 ---
 # <a name="delete-mobileappcontent"></a>删除 mobileAppContent
 
@@ -18,7 +18,7 @@ ms.locfileid: "30257636"
 删除 [mobileAppContent](../resources/intune-apps-mobileappcontent.md)。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobi
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

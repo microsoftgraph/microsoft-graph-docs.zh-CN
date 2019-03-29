@@ -4,12 +4,12 @@ description: 列表属性和importedWindowsAutopilotDeviceIdentity对象关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08dcbeac333b2d2364e73d54269780ab17c038c1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 01d63916bce133d90bf8c0dbd3a12c90fefc1fc9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174170"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973136"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>列表 importedWindowsAutopilotDeviceIdentities
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174170"
 列表属性和[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)对象关系。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

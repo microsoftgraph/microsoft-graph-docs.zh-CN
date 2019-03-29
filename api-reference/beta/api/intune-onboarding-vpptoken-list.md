@@ -4,12 +4,12 @@ description: 列出 vppToken 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f10f196912448a591d6a96559b58dec6bf4b322a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ba7f662a7d55e1216bd85dee3e5910d2fbabb206
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144980"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979310"
 ---
 # <a name="list-vpptokens"></a>列出 vppTokens
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144980"
 列出 [vppToken](../resources/intune-onboarding-vpptoken.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ GET /deviceAppManagement/vppTokens
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

@@ -4,12 +4,12 @@ description: 更新 deviceManagementExchangeConnector 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d8979bf3455c52e52eac735c025dbd45ac38382
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fad828df8c470e42b8a5ee27b3fa2c950149872c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169242"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978148"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>更新 deviceManagementExchangeConnector
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169242"
 更新 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) 对象的 JSON 表示形式。
@@ -50,7 +50,7 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|id|String|尚未记录|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector 的上一次同步时间|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector 状态。 可取值为：`none`、`connectionPending`、`connected`、`disconnected`。|
 |primarySmtpAddress|String|用于配置服务到服务 Exchange Connector 的电子邮件地址。|

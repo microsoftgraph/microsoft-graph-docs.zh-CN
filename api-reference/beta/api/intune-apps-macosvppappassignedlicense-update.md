@@ -4,12 +4,12 @@ description: 更新 macOsVppAppAssignedLicense 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0f0ccb27bb9bedcbd9d83333c60c864dc99e5b4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0481a40d07038c98778c1968347a2c6886fe3a86
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160422"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979653"
 ---
 # <a name="update-macosvppappassignedlicense"></a>更新 macOsVppAppAssignedLicense
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160422"
 更新[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md)对象的 JSON 表示形式。
@@ -51,10 +51,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|userEmailAddress|字符串|用户电子邮件地址。|
+|userEmailAddress|String|用户电子邮件地址。|
 |userId|String|用户 ID。|
 |userName|String|用户名。|
-|userPrincipalName|字符串|用户主体名称。|
+|userPrincipalName|String|用户主体名称。|
 
 
 

@@ -4,12 +4,12 @@ description: 更新 windowsProtectionState 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbd8c518dc0704bb563fccbd704b57edc77199cc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8a77cf48766d2ea6aec8f9f2f1017530226be5bc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143818"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973885"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143818"
 更新[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)对象的 JSON 表示形式。
@@ -51,23 +51,23 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|布尔|已启用反恶意软件|
+|id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
+|malwareProtectionEnabled|Boolean|已启用反恶意软件|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (如清理或挂起完全扫描或等待重新启动等)。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|布尔|是否启用了实时保护？|
-|networkInspectionSystemEnabled|布尔|网络检查系统是否已启用？|
-|quickScanOverdue|布尔|快速扫描是否过期？|
-|fullScanOverdue|布尔|完全扫描逾期？|
-|signatureUpdateOverdue|布尔|签名是否已过期？|
-|rebootRequired|布尔|是否需要重新启动？|
-|fullScanRequired|布尔|需要完全扫描吗？|
-|engineVersion|字符串|当前 endpoint protection 引擎的版本|
-|signatureVersion|字符串|当前恶意软件定义版本|
-|antiMalwareVersion|字符串|当前反恶意软件版本|
+|realTimeProtectionEnabled|Boolean|是否启用了实时保护？|
+|networkInspectionSystemEnabled|Boolean|网络检查系统是否已启用？|
+|quickScanOverdue|Boolean|快速扫描是否过期？|
+|fullScanOverdue|Boolean|完全扫描逾期？|
+|signatureUpdateOverdue|Boolean|签名是否已过期？|
+|rebootRequired|Boolean|是否需要重新启动？|
+|fullScanRequired|Boolean|需要完全扫描吗？|
+|engineVersion|String|当前 endpoint protection 引擎的版本|
+|signatureVersion|String|当前恶意软件定义版本|
+|antiMalwareVersion|String|当前反恶意软件版本|
 |lastQuickScanDateTime|DateTimeOffset|上次快速扫描日期时间|
 |lastFullScanDateTime|DateTimeOffset|上次快速扫描日期时间|
-|lastQuickScanSignatureVersion|字符串|上次快速扫描签名版本|
-|lastFullScanSignatureVersion|字符串|上次完全扫描签名版本|
+|lastQuickScanSignatureVersion|String|上次快速扫描签名版本|
+|lastFullScanSignatureVersion|String|上次完全扫描签名版本|
 |lastReportedDateTime|DateTimeOffset|上次设备运行状况状态报告时间|
 
 

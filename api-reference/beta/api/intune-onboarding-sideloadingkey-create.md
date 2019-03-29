@@ -4,12 +4,12 @@ description: 创建新的 sideLoadingKey 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afaae9fca5d6f459b94e5a6e7a7818d9426a0b6f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5a4a2e715e0255048a6ec13cbf3261bbacb80f3f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142950"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977287"
 ---
 # <a name="create-sideloadingkey"></a>创建 sideLoadingKey
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142950"
 创建新的[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceAppManagement/sideLoadingKeys
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 sideLoadingKey 对象的 JSON 表示形式。
@@ -50,12 +50,12 @@ POST /deviceAppManagement/sideLoadingKeys
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|侧加载密钥唯一 Id。|
-|值|String|侧加载密钥值, 它是一个5x5 值, 由 hiphens 分隔。|
-|displayName|字符串|向 it 专业管理员显示的侧加载密钥名称。|
-|说明|字符串|向 it 专业管理员显示的侧加载密钥说明。|
+|id|String|侧加载密钥唯一 Id。|
+|value|String|侧加载密钥值, 它是一个5x5 值, 由 hiphens 分隔。|
+|displayName|String|向 it 专业管理员显示的侧加载密钥名称。|
+|description|String|向 it 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 it 专业管理员显示的端加载密钥总激活数。|
-|lastUpdatedDateTime|字符串|向 it 专业管理员显示的侧加载密钥上次更新日期。|
+|lastUpdatedDateTime|String|向 it 专业管理员显示的侧加载密钥上次更新日期。|
 
 
 
