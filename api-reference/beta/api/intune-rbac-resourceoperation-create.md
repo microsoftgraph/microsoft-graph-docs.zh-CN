@@ -4,12 +4,12 @@ description: 创建新的 resourceOperation 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ecbe52ac2c988967a121904e63d1bd6e00929a5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fde65e56ec2f9c622140819e68064ed02138e90f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154150"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960368"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
@@ -20,7 +20,7 @@ ms.locfileid: "30154150"
 创建新的 [resourceOperation](../resources/intune-rbac-resourceoperation.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/resourceOperations
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 resourceOperation 对象的 JSON 表示形式。
@@ -50,11 +50,11 @@ POST /deviceManagement/resourceOperations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|资源操作的键。 只读，且自动生成。|
+|id|String|资源操作的键。 只读，且自动生成。|
 |resource|String|此操作所属的资源类别。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
-|说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
+|description|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
 |enabledForScopeValidation|Boolean|确定是否针对按角色分配定义的作用域验证权限。|
 
 
