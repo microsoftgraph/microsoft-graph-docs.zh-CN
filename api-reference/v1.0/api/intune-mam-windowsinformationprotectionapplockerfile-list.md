@@ -4,29 +4,29 @@ description: 列出 windowsInformationProtectionAppLockerFile 对象的属性和
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c29504ec299255d6ad2eb463a0992d4efa7bcdcc
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 220aef93b6e3b77b5c6665d61ec47512c5f30431
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261262"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973815"
 ---
-# <a name="list-windowsinformationprotectionapplockerfiles"></a><span data-ttu-id="34573-103">列出 windowsInformationProtectionAppLockerFiles</span><span class="sxs-lookup"><span data-stu-id="34573-103">List windowsInformationProtectionAppLockerFiles</span></span>
+# <a name="list-windowsinformationprotectionapplockerfiles"></a><span data-ttu-id="21cfc-103">列出 windowsInformationProtectionAppLockerFiles</span><span class="sxs-lookup"><span data-stu-id="21cfc-103">List windowsInformationProtectionAppLockerFiles</span></span>
 
-> <span data-ttu-id="34573-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="34573-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="21cfc-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="21cfc-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="34573-105">列出 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="34573-105">List properties and relationships of the [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) objects.</span></span>
+<span data-ttu-id="21cfc-105">列出 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="21cfc-105">List properties and relationships of the [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="34573-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="34573-106">Prerequisites</span></span>
-<span data-ttu-id="34573-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="34573-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="21cfc-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="21cfc-106">Prerequisites</span></span>
+<span data-ttu-id="21cfc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="21cfc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="34573-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="34573-109">Permission type</span></span>|<span data-ttu-id="34573-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="34573-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="21cfc-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="21cfc-109">Permission type</span></span>|<span data-ttu-id="21cfc-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="21cfc-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="34573-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="34573-111">Delegated (work or school account)</span></span>|<span data-ttu-id="34573-112">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="34573-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="34573-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="34573-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="34573-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="34573-114">Not supported.</span></span>|
-|<span data-ttu-id="34573-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="34573-115">Application</span></span>|<span data-ttu-id="34573-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="34573-116">Not supported.</span></span>|
+|<span data-ttu-id="21cfc-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="21cfc-111">Delegated (work or school account)</span></span>|<span data-ttu-id="21cfc-112">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="21cfc-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="21cfc-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="21cfc-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="21cfc-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="21cfc-114">Not supported.</span></span>|
+|<span data-ttu-id="21cfc-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="21cfc-115">Application</span></span>|<span data-ttu-id="21cfc-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="21cfc-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="34573-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="34573-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="21cfc-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="21cfc-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +38,28 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/protectedAppLockerFiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="34573-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="34573-118">Request headers</span></span>
-|<span data-ttu-id="34573-119">标头</span><span class="sxs-lookup"><span data-stu-id="34573-119">Header</span></span>|<span data-ttu-id="34573-120">值</span><span class="sxs-lookup"><span data-stu-id="34573-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="21cfc-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="21cfc-118">Request headers</span></span>
+|<span data-ttu-id="21cfc-119">标头</span><span class="sxs-lookup"><span data-stu-id="21cfc-119">Header</span></span>|<span data-ttu-id="21cfc-120">值</span><span class="sxs-lookup"><span data-stu-id="21cfc-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="34573-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="34573-121">Authorization</span></span>|<span data-ttu-id="34573-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="34573-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="34573-123">Accept</span><span class="sxs-lookup"><span data-stu-id="34573-123">Accept</span></span>|<span data-ttu-id="34573-124">application/json</span><span class="sxs-lookup"><span data-stu-id="34573-124">application/json</span></span>|
+|<span data-ttu-id="21cfc-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="21cfc-121">Authorization</span></span>|<span data-ttu-id="21cfc-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="21cfc-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="21cfc-123">接受</span><span class="sxs-lookup"><span data-stu-id="21cfc-123">Accept</span></span>|<span data-ttu-id="21cfc-124">application/json</span><span class="sxs-lookup"><span data-stu-id="21cfc-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="34573-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="34573-125">Request body</span></span>
-<span data-ttu-id="34573-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="34573-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="21cfc-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="21cfc-125">Request body</span></span>
+<span data-ttu-id="21cfc-126">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="21cfc-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="34573-127">响应</span><span class="sxs-lookup"><span data-stu-id="34573-127">Response</span></span>
-<span data-ttu-id="34573-128">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="34573-128">If successful, this method returns a `200 OK` response code and a collection of [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="21cfc-127">响应</span><span class="sxs-lookup"><span data-stu-id="21cfc-127">Response</span></span>
+<span data-ttu-id="21cfc-128">如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="21cfc-128">If successful, this method returns a `200 OK` response code and a collection of [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="34573-129">示例</span><span class="sxs-lookup"><span data-stu-id="34573-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="21cfc-129">示例</span><span class="sxs-lookup"><span data-stu-id="21cfc-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="34573-130">请求</span><span class="sxs-lookup"><span data-stu-id="34573-130">Request</span></span>
-<span data-ttu-id="34573-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="34573-131">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="21cfc-130">请求</span><span class="sxs-lookup"><span data-stu-id="21cfc-130">Request</span></span>
+<span data-ttu-id="21cfc-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="21cfc-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles
 ```
 
-### <a name="response"></a><span data-ttu-id="34573-132">响应</span><span class="sxs-lookup"><span data-stu-id="34573-132">Response</span></span>
-<span data-ttu-id="34573-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="34573-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="21cfc-132">响应</span><span class="sxs-lookup"><span data-stu-id="21cfc-132">Response</span></span>
+<span data-ttu-id="21cfc-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="21cfc-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

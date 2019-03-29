@@ -4,31 +4,31 @@ description: 更新 embeddedSIMActivationCodePoolAssignment 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fa2030d6b2b8fb260c28d94caff031ec2db0ae1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03b9a29afd8e32e1a79ee1f363f2fc0d25623f0e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164447"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971505"
 ---
-# <a name="update-embeddedsimactivationcodepoolassignment"></a><span data-ttu-id="97aba-103">更新 embeddedSIMActivationCodePoolAssignment</span><span class="sxs-lookup"><span data-stu-id="97aba-103">Update embeddedSIMActivationCodePoolAssignment</span></span>
+# <a name="update-embeddedsimactivationcodepoolassignment"></a><span data-ttu-id="9eb3b-103">更新 embeddedSIMActivationCodePoolAssignment</span><span class="sxs-lookup"><span data-stu-id="9eb3b-103">Update embeddedSIMActivationCodePoolAssignment</span></span>
 
-> <span data-ttu-id="97aba-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="97aba-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="9eb3b-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="97aba-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="97aba-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9eb3b-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="97aba-106">更新[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="97aba-106">Update the properties of a [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object.</span></span>
+<span data-ttu-id="9eb3b-106">更新[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-106">Update the properties of a [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="97aba-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="97aba-107">Prerequisites</span></span>
-<span data-ttu-id="97aba-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="97aba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="9eb3b-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="9eb3b-107">Prerequisites</span></span>
+<span data-ttu-id="9eb3b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="97aba-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="97aba-110">Permission type</span></span>|<span data-ttu-id="97aba-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="97aba-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="9eb3b-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="9eb3b-110">Permission type</span></span>|<span data-ttu-id="9eb3b-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="9eb3b-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="97aba-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="97aba-112">Delegated (work or school account)</span></span>|<span data-ttu-id="97aba-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97aba-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="97aba-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="97aba-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="97aba-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="97aba-115">Not supported.</span></span>|
-|<span data-ttu-id="97aba-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="97aba-116">Application</span></span>|<span data-ttu-id="97aba-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="97aba-117">Not supported.</span></span>|
+|<span data-ttu-id="9eb3b-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9eb3b-112">Delegated (work or school account)</span></span>|<span data-ttu-id="9eb3b-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9eb3b-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="9eb3b-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9eb3b-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9eb3b-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-115">Not supported.</span></span>|
+|<span data-ttu-id="9eb3b-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="9eb3b-116">Application</span></span>|<span data-ttu-id="9eb3b-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="97aba-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="97aba-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9eb3b-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9eb3b-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +37,31 @@ ms.locfileid: "30164447"
 PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments/{embeddedSIMActivationCodePoolAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="97aba-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="97aba-119">Request headers</span></span>
-|<span data-ttu-id="97aba-120">标头</span><span class="sxs-lookup"><span data-stu-id="97aba-120">Header</span></span>|<span data-ttu-id="97aba-121">值</span><span class="sxs-lookup"><span data-stu-id="97aba-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9eb3b-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="9eb3b-119">Request headers</span></span>
+|<span data-ttu-id="9eb3b-120">标头</span><span class="sxs-lookup"><span data-stu-id="9eb3b-120">Header</span></span>|<span data-ttu-id="9eb3b-121">值</span><span class="sxs-lookup"><span data-stu-id="9eb3b-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="97aba-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="97aba-122">Authorization</span></span>|<span data-ttu-id="97aba-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="97aba-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="97aba-124">Accept</span><span class="sxs-lookup"><span data-stu-id="97aba-124">Accept</span></span>|<span data-ttu-id="97aba-125">application/json</span><span class="sxs-lookup"><span data-stu-id="97aba-125">application/json</span></span>|
+|<span data-ttu-id="9eb3b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="9eb3b-122">Authorization</span></span>|<span data-ttu-id="9eb3b-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="9eb3b-124">接受</span><span class="sxs-lookup"><span data-stu-id="9eb3b-124">Accept</span></span>|<span data-ttu-id="9eb3b-125">application/json</span><span class="sxs-lookup"><span data-stu-id="9eb3b-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="97aba-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="97aba-126">Request body</span></span>
-<span data-ttu-id="97aba-127">在请求正文中, 提供[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="97aba-127">In the request body, supply a JSON representation for the [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9eb3b-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="9eb3b-126">Request body</span></span>
+<span data-ttu-id="9eb3b-127">在请求正文中, 提供[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-127">In the request body, supply a JSON representation for the [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object.</span></span>
 
-<span data-ttu-id="97aba-128">下表显示创建[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="97aba-128">The following table shows the properties that are required when you create the [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md).</span></span>
+<span data-ttu-id="9eb3b-128">下表显示创建[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-128">The following table shows the properties that are required when you create the [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md).</span></span>
 
-|<span data-ttu-id="97aba-129">属性</span><span class="sxs-lookup"><span data-stu-id="97aba-129">Property</span></span>|<span data-ttu-id="97aba-130">类型</span><span class="sxs-lookup"><span data-stu-id="97aba-130">Type</span></span>|<span data-ttu-id="97aba-131">说明</span><span class="sxs-lookup"><span data-stu-id="97aba-131">Description</span></span>|
+|<span data-ttu-id="9eb3b-129">属性</span><span class="sxs-lookup"><span data-stu-id="9eb3b-129">Property</span></span>|<span data-ttu-id="9eb3b-130">类型</span><span class="sxs-lookup"><span data-stu-id="9eb3b-130">Type</span></span>|<span data-ttu-id="9eb3b-131">说明</span><span class="sxs-lookup"><span data-stu-id="9eb3b-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="97aba-132">id</span><span class="sxs-lookup"><span data-stu-id="97aba-132">id</span></span>|<span data-ttu-id="97aba-133">字符串</span><span class="sxs-lookup"><span data-stu-id="97aba-133">String</span></span>|<span data-ttu-id="97aba-134">嵌入的 SIM 激活代码池分配的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="97aba-134">Unique identifier for the embedded SIM activation code pool assignment.</span></span> <span data-ttu-id="97aba-135">创建时分配的系统生成值。</span><span class="sxs-lookup"><span data-stu-id="97aba-135">System generated value assigned when created.</span></span>|
-|<span data-ttu-id="97aba-136">target</span><span class="sxs-lookup"><span data-stu-id="97aba-136">target</span></span>|[<span data-ttu-id="97aba-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="97aba-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="97aba-138">嵌入的 SIM 激活代码池的目标组的类型。</span><span class="sxs-lookup"><span data-stu-id="97aba-138">The type of groups targeted by the embedded SIM activation code pool.</span></span>|
+|<span data-ttu-id="9eb3b-132">id</span><span class="sxs-lookup"><span data-stu-id="9eb3b-132">id</span></span>|<span data-ttu-id="9eb3b-133">String</span><span class="sxs-lookup"><span data-stu-id="9eb3b-133">String</span></span>|<span data-ttu-id="9eb3b-134">嵌入的 SIM 激活代码池分配的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-134">Unique identifier for the embedded SIM activation code pool assignment.</span></span> <span data-ttu-id="9eb3b-135">创建时分配的系统生成值。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-135">System generated value assigned when created.</span></span>|
+|<span data-ttu-id="9eb3b-136">target</span><span class="sxs-lookup"><span data-stu-id="9eb3b-136">target</span></span>|[<span data-ttu-id="9eb3b-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="9eb3b-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="9eb3b-138">嵌入的 SIM 激活代码池的目标组的类型。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-138">The type of groups targeted by the embedded SIM activation code pool.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="97aba-139">响应</span><span class="sxs-lookup"><span data-stu-id="97aba-139">Response</span></span>
-<span data-ttu-id="97aba-140">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="97aba-140">If successful, this method returns a `200 OK` response code and an updated [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9eb3b-139">响应</span><span class="sxs-lookup"><span data-stu-id="9eb3b-139">Response</span></span>
+<span data-ttu-id="9eb3b-140">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)对象。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-140">If successful, this method returns a `200 OK` response code and an updated [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="97aba-141">示例</span><span class="sxs-lookup"><span data-stu-id="97aba-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9eb3b-141">示例</span><span class="sxs-lookup"><span data-stu-id="9eb3b-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="97aba-142">请求</span><span class="sxs-lookup"><span data-stu-id="97aba-142">Request</span></span>
-<span data-ttu-id="97aba-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="97aba-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="9eb3b-142">请求</span><span class="sxs-lookup"><span data-stu-id="9eb3b-142">Request</span></span>
+<span data-ttu-id="9eb3b-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-143">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments/{embeddedSIMActivationCodePoolAssignmentId}
 Content-type: application/json
@@ -75,8 +75,8 @@ Content-length: 179
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="97aba-144">响应</span><span class="sxs-lookup"><span data-stu-id="97aba-144">Response</span></span>
-<span data-ttu-id="97aba-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="97aba-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="9eb3b-144">响应</span><span class="sxs-lookup"><span data-stu-id="9eb3b-144">Response</span></span>
+<span data-ttu-id="9eb3b-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="9eb3b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
