@@ -4,31 +4,31 @@ description: 创建新的 deviceComplianceActionItem 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c17edeb531ef78d81f7750b74029a3af03ec72e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1b7bd39bb8def5404081dde1034e758de58340f0
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152876"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976713"
 ---
-# <a name="create-devicecomplianceactionitem"></a><span data-ttu-id="70adb-103">创建 deviceComplianceActionItem</span><span class="sxs-lookup"><span data-stu-id="70adb-103">Create deviceComplianceActionItem</span></span>
+# <a name="create-devicecomplianceactionitem"></a><span data-ttu-id="de357-103">创建 deviceComplianceActionItem</span><span class="sxs-lookup"><span data-stu-id="de357-103">Create deviceComplianceActionItem</span></span>
 
-> <span data-ttu-id="70adb-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="70adb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="de357-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="de357-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="70adb-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="70adb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="de357-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="de357-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="70adb-106">创建新的 [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="70adb-106">Create a new [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) object.</span></span>
+<span data-ttu-id="de357-106">创建新的 [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="de357-106">Create a new [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="70adb-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="70adb-107">Prerequisites</span></span>
-<span data-ttu-id="70adb-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="70adb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="de357-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="de357-107">Prerequisites</span></span>
+<span data-ttu-id="de357-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="de357-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="70adb-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="70adb-110">Permission type</span></span>|<span data-ttu-id="70adb-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="70adb-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="de357-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="de357-110">Permission type</span></span>|<span data-ttu-id="de357-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="de357-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="70adb-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="70adb-112">Delegated (work or school account)</span></span>|<span data-ttu-id="70adb-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="70adb-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="70adb-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="70adb-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="70adb-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="70adb-115">Not supported.</span></span>|
-|<span data-ttu-id="70adb-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="70adb-116">Application</span></span>|<span data-ttu-id="70adb-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="70adb-117">Not supported.</span></span>|
+|<span data-ttu-id="de357-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="de357-112">Delegated (work or school account)</span></span>|<span data-ttu-id="de357-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="de357-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="de357-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="de357-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="de357-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="de357-115">Not supported.</span></span>|
+|<span data-ttu-id="de357-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="de357-116">Application</span></span>|<span data-ttu-id="de357-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="de357-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="70adb-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="70adb-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="de357-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="de357-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,34 +37,34 @@ ms.locfileid: "30152876"
 POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="70adb-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="70adb-119">Request headers</span></span>
-|<span data-ttu-id="70adb-120">标头</span><span class="sxs-lookup"><span data-stu-id="70adb-120">Header</span></span>|<span data-ttu-id="70adb-121">值</span><span class="sxs-lookup"><span data-stu-id="70adb-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="de357-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="de357-119">Request headers</span></span>
+|<span data-ttu-id="de357-120">标头</span><span class="sxs-lookup"><span data-stu-id="de357-120">Header</span></span>|<span data-ttu-id="de357-121">值</span><span class="sxs-lookup"><span data-stu-id="de357-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="70adb-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="70adb-122">Authorization</span></span>|<span data-ttu-id="70adb-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="70adb-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="70adb-124">Accept</span><span class="sxs-lookup"><span data-stu-id="70adb-124">Accept</span></span>|<span data-ttu-id="70adb-125">application/json</span><span class="sxs-lookup"><span data-stu-id="70adb-125">application/json</span></span>|
+|<span data-ttu-id="de357-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="de357-122">Authorization</span></span>|<span data-ttu-id="de357-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="de357-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="de357-124">接受</span><span class="sxs-lookup"><span data-stu-id="de357-124">Accept</span></span>|<span data-ttu-id="de357-125">application/json</span><span class="sxs-lookup"><span data-stu-id="de357-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="70adb-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="70adb-126">Request body</span></span>
-<span data-ttu-id="70adb-127">在请求正文中，提供 deviceComplianceActionItem 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="70adb-127">In the request body, supply a JSON representation for the deviceComplianceActionItem object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="de357-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="de357-126">Request body</span></span>
+<span data-ttu-id="de357-127">在请求正文中，提供 deviceComplianceActionItem 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="de357-127">In the request body, supply a JSON representation for the deviceComplianceActionItem object.</span></span>
 
-<span data-ttu-id="70adb-128">下表显示了创建 deviceComplianceActionItem 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="70adb-128">The following table shows the properties that are required when you create the deviceComplianceActionItem.</span></span>
+<span data-ttu-id="de357-128">下表显示了创建 deviceComplianceActionItem 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="de357-128">The following table shows the properties that are required when you create the deviceComplianceActionItem.</span></span>
 
-|<span data-ttu-id="70adb-129">属性</span><span class="sxs-lookup"><span data-stu-id="70adb-129">Property</span></span>|<span data-ttu-id="70adb-130">类型</span><span class="sxs-lookup"><span data-stu-id="70adb-130">Type</span></span>|<span data-ttu-id="70adb-131">说明</span><span class="sxs-lookup"><span data-stu-id="70adb-131">Description</span></span>|
+|<span data-ttu-id="de357-129">属性</span><span class="sxs-lookup"><span data-stu-id="de357-129">Property</span></span>|<span data-ttu-id="de357-130">类型</span><span class="sxs-lookup"><span data-stu-id="de357-130">Type</span></span>|<span data-ttu-id="de357-131">说明</span><span class="sxs-lookup"><span data-stu-id="de357-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="70adb-132">id</span><span class="sxs-lookup"><span data-stu-id="70adb-132">id</span></span>|<span data-ttu-id="70adb-133">字符串</span><span class="sxs-lookup"><span data-stu-id="70adb-133">String</span></span>|<span data-ttu-id="70adb-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="70adb-134">Key of the entity.</span></span>|
-|<span data-ttu-id="70adb-135">gracePeriodHours</span><span class="sxs-lookup"><span data-stu-id="70adb-135">gracePeriodHours</span></span>|<span data-ttu-id="70adb-136">Int32</span><span class="sxs-lookup"><span data-stu-id="70adb-136">Int32</span></span>|<span data-ttu-id="70adb-137">强制执行操作前要等待的小时数。</span><span class="sxs-lookup"><span data-stu-id="70adb-137">Number of hours to wait till the action will be enforced.</span></span> <span data-ttu-id="70adb-138">有效值为 0 至 8760</span><span class="sxs-lookup"><span data-stu-id="70adb-138">Valid values 0 to 8760</span></span>|
-|<span data-ttu-id="70adb-139">actionType</span><span class="sxs-lookup"><span data-stu-id="70adb-139">actionType</span></span>|[<span data-ttu-id="70adb-140">deviceComplianceActionType</span><span class="sxs-lookup"><span data-stu-id="70adb-140">deviceComplianceActionType</span></span>](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|<span data-ttu-id="70adb-141">要执行的操作。</span><span class="sxs-lookup"><span data-stu-id="70adb-141">What action to take.</span></span> <span data-ttu-id="70adb-142">可取值为：`noAction`、`notification`、`block`、`retire`、`wipe`、`removeResourceAccessProfiles`、`pushNotification`、`remoteLock`。</span><span class="sxs-lookup"><span data-stu-id="70adb-142">Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`, `remoteLock`.</span></span>|
-|<span data-ttu-id="70adb-143">notificationTemplateId</span><span class="sxs-lookup"><span data-stu-id="70adb-143">notificationTemplateId</span></span>|<span data-ttu-id="70adb-144">String</span><span class="sxs-lookup"><span data-stu-id="70adb-144">String</span></span>|<span data-ttu-id="70adb-145">要使用的通知消息模板</span><span class="sxs-lookup"><span data-stu-id="70adb-145">What notification Message template to use</span></span>|
-|<span data-ttu-id="70adb-146">notificationMessageCCList</span><span class="sxs-lookup"><span data-stu-id="70adb-146">notificationMessageCCList</span></span>|<span data-ttu-id="70adb-147">String collection</span><span class="sxs-lookup"><span data-stu-id="70adb-147">String collection</span></span>|<span data-ttu-id="70adb-148">指定此通知邮件抄送对象的组 ID 列表。</span><span class="sxs-lookup"><span data-stu-id="70adb-148">A list of group IDs to speicify who to CC this notification message to.</span></span>|
+|<span data-ttu-id="de357-132">id</span><span class="sxs-lookup"><span data-stu-id="de357-132">id</span></span>|<span data-ttu-id="de357-133">String</span><span class="sxs-lookup"><span data-stu-id="de357-133">String</span></span>|<span data-ttu-id="de357-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="de357-134">Key of the entity.</span></span>|
+|<span data-ttu-id="de357-135">gracePeriodHours</span><span class="sxs-lookup"><span data-stu-id="de357-135">gracePeriodHours</span></span>|<span data-ttu-id="de357-136">Int32</span><span class="sxs-lookup"><span data-stu-id="de357-136">Int32</span></span>|<span data-ttu-id="de357-137">强制执行操作前要等待的小时数。</span><span class="sxs-lookup"><span data-stu-id="de357-137">Number of hours to wait till the action will be enforced.</span></span> <span data-ttu-id="de357-138">有效值为 0 至 8760</span><span class="sxs-lookup"><span data-stu-id="de357-138">Valid values 0 to 8760</span></span>|
+|<span data-ttu-id="de357-139">actionType</span><span class="sxs-lookup"><span data-stu-id="de357-139">actionType</span></span>|[<span data-ttu-id="de357-140">deviceComplianceActionType</span><span class="sxs-lookup"><span data-stu-id="de357-140">deviceComplianceActionType</span></span>](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|<span data-ttu-id="de357-141">要执行的操作。</span><span class="sxs-lookup"><span data-stu-id="de357-141">What action to take.</span></span> <span data-ttu-id="de357-142">可取值为：`noAction`、`notification`、`block`、`retire`、`wipe`、`removeResourceAccessProfiles`、`pushNotification`、`remoteLock`。</span><span class="sxs-lookup"><span data-stu-id="de357-142">Possible values are: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`, `remoteLock`.</span></span>|
+|<span data-ttu-id="de357-143">notificationTemplateId</span><span class="sxs-lookup"><span data-stu-id="de357-143">notificationTemplateId</span></span>|<span data-ttu-id="de357-144">String</span><span class="sxs-lookup"><span data-stu-id="de357-144">String</span></span>|<span data-ttu-id="de357-145">要使用的通知消息模板</span><span class="sxs-lookup"><span data-stu-id="de357-145">What notification Message template to use</span></span>|
+|<span data-ttu-id="de357-146">notificationMessageCCList</span><span class="sxs-lookup"><span data-stu-id="de357-146">notificationMessageCCList</span></span>|<span data-ttu-id="de357-147">String collection</span><span class="sxs-lookup"><span data-stu-id="de357-147">String collection</span></span>|<span data-ttu-id="de357-148">指定此通知邮件抄送对象的组 ID 列表。</span><span class="sxs-lookup"><span data-stu-id="de357-148">A list of group IDs to speicify who to CC this notification message to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="70adb-149">响应</span><span class="sxs-lookup"><span data-stu-id="70adb-149">Response</span></span>
-<span data-ttu-id="70adb-150">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="70adb-150">If successful, this method returns a `201 Created` response code and a [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="de357-149">响应</span><span class="sxs-lookup"><span data-stu-id="de357-149">Response</span></span>
+<span data-ttu-id="de357-150">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="de357-150">If successful, this method returns a `201 Created` response code and a [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="70adb-151">示例</span><span class="sxs-lookup"><span data-stu-id="70adb-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="de357-151">示例</span><span class="sxs-lookup"><span data-stu-id="de357-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="70adb-152">请求</span><span class="sxs-lookup"><span data-stu-id="70adb-152">Request</span></span>
-<span data-ttu-id="70adb-153">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="70adb-153">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="de357-152">请求</span><span class="sxs-lookup"><span data-stu-id="de357-152">Request</span></span>
+<span data-ttu-id="de357-153">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="de357-153">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}/scheduledActionConfigurations
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 271
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="70adb-154">响应</span><span class="sxs-lookup"><span data-stu-id="70adb-154">Response</span></span>
-<span data-ttu-id="70adb-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="70adb-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="de357-154">响应</span><span class="sxs-lookup"><span data-stu-id="de357-154">Response</span></span>
+<span data-ttu-id="de357-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="de357-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
