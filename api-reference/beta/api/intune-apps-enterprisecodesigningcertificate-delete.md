@@ -4,12 +4,12 @@ description: 删除 enterpriseCodeSigningCertificate。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2c0bcb7a0b5f0234aa660642cbdcdcd13302b97
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 11bfa26aeed0d4ded24aeb1318c47152a12122e3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161031"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974039"
 ---
 # <a name="delete-enterprisecodesigningcertificate"></a>删除 enterpriseCodeSigningCertificate
 
@@ -20,7 +20,7 @@ ms.locfileid: "30161031"
 删除[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ DELETE /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSig
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

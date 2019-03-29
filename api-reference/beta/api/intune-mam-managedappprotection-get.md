@@ -4,12 +4,12 @@ description: 读取 managedAppProtection 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f1aa876b1ea5bdb50bae7a0614d25b24468c6bc
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 16f6672d7ec9ba6a1f9140c85e881cb679dde8f7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572052"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975096"
 ---
 # <a name="get-managedappprotection"></a>获取 managedAppProtection
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572052"
 读取 [managedAppProtection](../resources/intune-mam-managedappprotection.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|

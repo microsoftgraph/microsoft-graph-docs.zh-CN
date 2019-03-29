@@ -4,12 +4,12 @@ description: 删除 networkIPv6ConfigurationManagementCondition。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12e50f163f1954d03d40ba0f83c86d3a9b30c1bf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b2e320f25c97a3f5d7d7dd3df8cc8a469b589a52
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149733"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971351"
 ---
 # <a name="delete-networkipv6configurationmanagementcondition"></a>删除 networkIPv6ConfigurationManagementCondition
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149733"
 删除[networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md)。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ DELETE /deviceManagement/managementConditions/{managementConditionId}/management
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

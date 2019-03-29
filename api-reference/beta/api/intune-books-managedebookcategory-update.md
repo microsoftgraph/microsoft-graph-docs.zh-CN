@@ -4,12 +4,12 @@ description: 更新 managedEBookCategory 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 525444a02c36473912a631c9a4f3e5f9c3f5b25a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 85cda4854d3bbe6f6b1932b1f6fc546044490a56
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146555"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973122"
 ---
 # <a name="update-managedebookcategory"></a>更新 managedEBookCategory
 
@@ -20,7 +20,7 @@ ms.locfileid: "30146555"
 更新[managedEBookCategory](../resources/intune-books-managedebookcategory.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBo
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[managedEBookCategory](../resources/intune-books-managedebookcategory.md)对象的 JSON 表示形式。

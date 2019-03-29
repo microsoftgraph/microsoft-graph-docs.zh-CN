@@ -4,12 +4,12 @@ description: 更新 enrollmentProfile 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1029d87b5df14c79e7e93b849e4bd1caca1066e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 222d8fbe049e7a66ecc0094f179e1dae6b187054
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141305"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975040"
 ---
 # <a name="update-enrollmentprofile"></a>更新 enrollmentProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141305"
 更新[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)对象的 JSON 表示形式。
@@ -50,13 +50,13 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 GUID|
-|displayName|字符串|配置文件的名称|
-|说明|字符串|配置文件的说明|
-|requiresUserAuthentication|布尔|指示配置文件是否需要用户身份验证|
-|configurationEndpointUrl|字符串|用于注册的配置终结点 url|
-|enableAuthenticationViaCompanyPortal|布尔|指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔|指示在安装助理注册设备上需要公司门户|
+|id|字符串|对象的 GUID|
+|displayName|String|配置文件的名称|
+|description|String|配置文件的说明|
+|requiresUserAuthentication|Boolean|指示配置文件是否需要用户身份验证|
+|configurationEndpointUrl|String|用于注册的配置终结点 url|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在安装助理注册设备上需要公司门户|
 
 
 

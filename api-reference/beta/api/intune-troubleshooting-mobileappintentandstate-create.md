@@ -4,12 +4,12 @@ description: 创建新的 mobileAppIntentAndState 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea3c005473c4979515ab7810a4ce1b16a06ebabf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c46a998b3be6c0cc501ab040f9452281210d3df2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145932"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972205"
 ---
 # <a name="create-mobileappintentandstate"></a>创建 mobileAppIntentAndState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145932"
 创建新的[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 mobileAppIntentAndState 对象的 JSON 表示形式。
@@ -50,7 +50,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 UUID|
+|id|String|对象的 UUID|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
 |userId|String|尝试注册设备的用户的标识符。|
 |mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)集合|租户的有效负载意图和状态列表。|

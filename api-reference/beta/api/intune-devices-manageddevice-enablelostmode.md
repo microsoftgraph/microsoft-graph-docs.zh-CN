@@ -4,12 +4,12 @@ description: 启用丢失模式
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3e72cd3620407dc44f2dbd7d3516ded2b641633
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c288c0a506185927dfa00eb0da4606740c2a8892
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168619"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973682"
 ---
 # <a name="enablelostmode-action"></a>enableLostMode 操作
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168619"
 启用丢失模式
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -44,18 +44,18 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供参数的 JSON 表示形式。
 
 下表显示了可用于此操作的参数。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |message|字符串|尚未记录|
 |phoneNumber|String|尚未记录|
-|页脚|字符串|尚未记录|
+|页脚|String|尚未记录|
 
 
 
