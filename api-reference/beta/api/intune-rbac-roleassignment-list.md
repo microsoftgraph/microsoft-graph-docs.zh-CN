@@ -4,12 +4,12 @@ description: 列出 roleAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd166d7b96931d01c0fd10fc495268d042e0e6f3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e83729a78bd5230f447c2542bcdcf3e59a6ba928
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144098"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957897"
 ---
 # <a name="list-roleassignments"></a>列出 roleAssignments
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144098"
 列出 [roleAssignment](../resources/intune-rbac-roleassignment.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

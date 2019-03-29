@@ -4,12 +4,12 @@ description: 创建新的 userPFXCertificate 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf704664785eb1d61aacea3b72dcaed7a02bd24d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 32ac31aba2a3d88feb8b9254de7eedbd71d99a52
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158707"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958499"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158707"
 创建新的[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/userPfxCertificates
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 userPFXCertificate 对象的 JSON 表示形式。
@@ -50,9 +50,9 @@ POST /deviceManagement/userPfxCertificates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|PFX 证书的唯一标识符。|
+|id|String|PFX 证书的唯一标识符。|
 |为|String|SHA-1 PFX 证书的指纹。|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn` 或 `wifi`。|
 |userPrincipalName|String|PFX 证书的用户主体名称。|
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|

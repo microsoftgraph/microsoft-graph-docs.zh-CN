@@ -4,12 +4,12 @@ description: 创建新的 roleScopeTag 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c17eebbcdff6ee9f466568baa8ace0825c73771d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: dbdc7089dc7f02fc49610e3feab07105a83c5984
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154234"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959451"
 ---
 # <a name="create-rolescopetag"></a>创建 roleScopeTag
 
@@ -20,7 +20,7 @@ ms.locfileid: "30154234"
 创建新的[roleScopeTag](../resources/intune-rbac-rolescopetag.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 roleScopeTag 对象的 JSON 表示形式。
@@ -53,7 +53,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |:---|:---|:---|
 |id|String|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色范围标记的显示名称或友好名称。|
-|说明|String|角色范围标记的说明。|
+|description|String|角色范围标记的说明。|
 
 
 
