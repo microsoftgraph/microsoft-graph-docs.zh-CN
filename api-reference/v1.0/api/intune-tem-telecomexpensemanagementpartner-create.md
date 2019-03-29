@@ -4,12 +4,12 @@ description: 创建新的 telecomExpenseManagementPartner 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c83b26e0f9d9c2a881ca37a4a56c2cc37883120
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 8c244dd3cd9062439f20f1c0a5146111e6cfb775
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262326"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969335"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>创建 telecomExpenseManagementPartner
 
@@ -18,7 +18,7 @@ ms.locfileid: "30262326"
 创建新的 [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -39,7 +39,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 telecomExpenseManagementPartner 对象的 JSON 表示形式。
@@ -49,7 +49,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|TEM 合作伙伴的唯一标识符。|
-|displayName|String|TEM 合作伙伴的显示名称。|
+|displayName|字符串|TEM 合作伙伴的显示名称。|
 |url|String|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
 |appAuthorized|Boolean|是否已授权合作伙伴的 AAD 应用访问 Intune。|
 |enabled|Boolean|当前是启用还是禁用了 Intune 的 TEM 服务连接。|

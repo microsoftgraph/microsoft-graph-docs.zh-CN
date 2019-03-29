@@ -4,12 +4,12 @@ description: 更新 deviceCategory 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: eb2d3bc4f081065f27de1c303f87f9e98700d7b9
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 90f5305e2fb52b5ecd184aad837f2c9d8f6334ef
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572346"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970098"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -21,7 +21,7 @@ ms.locfileid: "30572346"
 
 ## <a name="prerequisites"></a>先决条件
 
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -70,7 +70,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |:---|:---|:---|
 |id|String|设备类别的唯一标识符。 只读。|
 |**载入**|
-|说明|字符串|设备类别的可选说明。|
+|description|String|设备类别的可选说明。|
 |displayName|String|设备类别的显示名称。|
 
 ## <a name="response"></a>响应

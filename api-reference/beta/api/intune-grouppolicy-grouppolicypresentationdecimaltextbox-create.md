@@ -4,12 +4,12 @@ description: 创建新的 groupPolicyPresentationDecimalTextBox 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c518eb990927e98a8ea75f8b71d98811f455557
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c5e051e6a6caea007bea9045dd0398f660dcd920
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167163"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969055"
 ---
 # <a name="create-grouppolicypresentationdecimaltextbox"></a>创建 groupPolicyPresentationDecimalTextBox
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167163"
 创建新的[groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 groupPolicyPresentationDecimalTextBox 对象的 JSON 表示形式。
@@ -50,10 +50,10 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 
 |属性|类型|说明|
 |:---|:---|:---|
-|标签|String|任何演示文稿实体的本地化文本标签。 默认值为空。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|Int64|一个无符号整数, 指定十进制文本框的初始值。 默认值为 1。|
+|默认|Int64|一个无符号整数, 指定十进制文本框的初始值。 默认值为 1。|
 |派生|Boolean|如果为 true, 则创建数值调节钮控件;否则, 请为数字输入创建文本框。 默认值为 true。|
 |spinStep|Int64|一个无符号整数, 指定数值调节钮控件的变化增量。 默认值为 1。|
 |必需|Boolean|要求在 "参数" 框中输入值。 默认值为 false。|

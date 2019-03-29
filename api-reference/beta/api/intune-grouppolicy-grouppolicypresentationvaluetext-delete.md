@@ -4,12 +4,12 @@ description: 删除 groupPolicyPresentationValueText。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb93b11aebff99d03a0b12fa4cc95f8f831fbef5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d5d85d3cb944472f3eff1658cfc2755fc97cffb7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162648"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967851"
 ---
 # <a name="delete-grouppolicypresentationvaluetext"></a>删除 groupPolicyPresentationValueText
 
@@ -20,7 +20,7 @@ ms.locfileid: "30162648"
 删除[groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md)。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ DELETE /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

@@ -4,12 +4,12 @@ description: 停用该用户管理的所有设备
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 72a4ebafd857abef85231b90327f9f6d94e5f99b
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 2b03261fb833277e4cbff1ee0be09e8dc277a018
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571079"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961824"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>removeAllDevicesFromManagement 操作
 
@@ -19,7 +19,7 @@ ms.locfileid: "30571079"
 
 停用该用户管理的所有设备
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|

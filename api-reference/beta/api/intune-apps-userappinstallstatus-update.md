@@ -4,12 +4,12 @@ description: 更新 userAppInstallStatus 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3baa0d23be3b004fe32049cee0efe08e8f7d36d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: dce7bcd1e1c806c8f50aa6f4674104fd8d0e781b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144903"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966626"
 ---
 # <a name="update-userappinstallstatus"></a>更新 userAppInstallStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144903"
 更新[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)对象的 JSON 表示形式。
@@ -50,9 +50,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|实体的键。|
+|id|String|实体的键。|
 |userName|String|用户名。|
-|userPrincipalName|字符串|用户主体名称。|
+|userPrincipalName|String|用户主体名称。|
 |installedDeviceCount|Int32|已安装设备的计数。|
 |failedDeviceCount|Int32|已失败设备的计数。|
 |notInstalledDeviceCount|Int32|未安装设备的计数。|

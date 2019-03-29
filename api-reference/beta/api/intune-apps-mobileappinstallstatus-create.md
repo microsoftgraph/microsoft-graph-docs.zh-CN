@@ -4,12 +4,12 @@ description: 创建新的 mobileAppInstallStatus 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 800845615e730c8e9da4573f499728b349121461
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 13fae27ccc022ce8795d787dbd86923d71e2ab24
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149838"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969888"
 ---
 # <a name="create-mobileappinstallstatus"></a>创建 mobileAppInstallStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149838"
 创建新的[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 mobileAppInstallStatus 对象的 JSON 表示形式。
@@ -55,14 +55,14 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 |deviceName|String|设备名称|
 |deviceId|String|设备 ID|
 |lastSyncDateTime|DateTimeOffset|上次同步日期时间|
-|将 mobileappinstallstatusvalue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable`。|
-|installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable`。|
+|将 mobileappinstallstatusvalue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown` 或 `notApplicable`。|
+|installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown` 或 `notApplicable`。|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|应用程序的安装状态详细信息。 可取值为：`noAdditionalDetails`、`seeInstallErrorCode`、`seeUninstallErrorCode`、`pendingReboot`、`platformNotApplicable`、`minimumCpuSpeedNotMet`、`minimumLogicalProcessorCountNotMet`、`minimumPhysicalMemoryNotMet`、`minimumOsVersionNotMet`、`minimumDiskSpaceNotMet`、`processorArchitectureNotApplicable`。|
 |errorCode|Int32|安装或卸载失败的错误代码。|
 |osVersion|String|OS 版本|
 |osDescription|String|OS 说明|
 |userName|String|设备用户名|
-|userPrincipalName|字符串|用户主体名称|
+|userPrincipalName|String|用户主体名称|
 |displayVersion|String|人工可读版本的应用程序|
 
 

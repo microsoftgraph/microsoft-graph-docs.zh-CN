@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementScriptGroupAssignment 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39053b6b56e130f66f8911ca60e4ed95effce385
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: acaf78afef1692280d2b2e8dce4499f754de117e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163409"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970119"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>创建 deviceManagementScriptGroupAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30163409"
 创建新的[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 deviceManagementScriptGroupAssignment 对象的 JSON 表示形式。
@@ -50,8 +50,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|device management script group 分配实体的键。|
-|targetGroupId|字符串|要作为脚本目标的 Azure Active Directory 组的 Id。|
+|id|String|device management script group 分配实体的键。|
+|targetGroupId|String|要作为脚本目标的 Azure Active Directory 组的 Id。|
 
 
 

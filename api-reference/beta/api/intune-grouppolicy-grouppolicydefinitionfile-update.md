@@ -4,12 +4,12 @@ description: 更新 groupPolicyDefinitionFile 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e204382f9237428b30362f7464264f732e13541a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e82a9236f5d062a497eaa25a7fbcd31624d67082
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169410"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970553"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>更新 groupPolicyDefinitionFile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169410"
 更新[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)对象的 JSON 表示形式。
@@ -52,11 +52,11 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|ADMX 文件的本地化友好名称。|
-|description|String|ADMX 文件中策略设置的本地化说明。 默认值为空。|
-|languageCodes|String collection|ADMX 文件的受支持的语言代码。|
+|description|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
+|languageCodes|String 集合|ADMX 文件的受支持的语言代码。|
 |targetPrefix|String|指定在 ADMX 文件中引用命名空间的逻辑名称。|
 |targetNamespace|String|指定用于标识 ADMX 文件中的命名空间的 URI。|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可能的值是：`admxBacked`、`admxIngested`。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 

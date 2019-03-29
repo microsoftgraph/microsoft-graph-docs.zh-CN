@@ -4,12 +4,12 @@ description: 更新 depEnrollmentProfile 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e033d5f4601020e677e31a40b1d46c1e7652283
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 70690403a2c7d2855ce94ac0c58f99d214a7bf7f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171447"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969419"
 ---
 # <a name="update-depenrollmentprofile"></a>更新 depEnrollmentProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171447"
 更新[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)对象的 JSON 表示形式。
@@ -52,7 +52,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |:---|:---|:---|
 |id|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的对象的 GUID|
 |displayName|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的配置文件的名称|
-|说明|String|从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
+|description|String|从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
 |requiresUserAuthentication|Boolean|指示配置文件是否需要从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
 |configurationEndpointUrl|String|用于从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
 |enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|

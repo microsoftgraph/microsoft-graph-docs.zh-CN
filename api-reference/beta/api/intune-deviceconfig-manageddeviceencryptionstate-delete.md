@@ -4,12 +4,12 @@ description: 删除 managedDeviceEncryptionState。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f38cb16ba9be77257e78766551709a9ebf2edc0c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3460bad947ce835ef5c987af52c9bdfeba47ae1a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178246"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969118"
 ---
 # <a name="delete-manageddeviceencryptionstate"></a>删除 managedDeviceEncryptionState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30178246"
 删除[managedDeviceEncryptionState](../resources/intune-deviceconfig-manageddeviceencryptionstate.md)。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ DELETE /deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionS
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

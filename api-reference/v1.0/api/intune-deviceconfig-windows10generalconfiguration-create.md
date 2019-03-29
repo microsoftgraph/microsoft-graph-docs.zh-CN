@@ -4,12 +4,12 @@ description: 创建新的 windows10GeneralConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2ce4b861ca6825af4046edc0fd13322d4d763ac
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: a139fab002cb333c26815c6303fbcc9f17036682
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255984"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969580"
 ---
 # <a name="create-windows10generalconfiguration"></a>创建 windows10GeneralConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255984"
 创建新的 [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -39,7 +39,7 @@ POST /deviceManagement/deviceConfigurations
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 windows10GeneralConfiguration 对象的 JSON 表示形式。
@@ -48,10 +48,10 @@ POST /deviceManagement/deviceConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |enterpriseCloudPrintDiscoveryEndPoint|String|发现云打印机的终结点。|
@@ -72,7 +72,7 @@ POST /deviceManagement/deviceConfigurations
 |smartScreenEnableAppInstallControl|Boolean|允许 IT 管理员控制是否允许用户从应用商店以外的地方安装应用。|
 |personalizationDesktopImageUrl|String|指向需要下载并用作桌面图像的 http 或 https URL，或指向需要用作桌面图像的文件系统上的本地图像的文件 URL。|
 |personalizationLockScreenImageUrl|String|指向需要下载并用作锁屏图像的 jpg、jpeg 或 png 图像的 http 或 https URL，或指向需要用作锁屏图像的文件系统上的本地图像的文件 URL。|
-|bluetoothAllowedServices|String collection|以十六进制格式的字符串指定允许的蓝牙服务和配置文件的列表。|
+|bluetoothAllowedServices|String 集合|以十六进制格式的字符串指定允许的蓝牙服务和配置文件的列表。|
 |bluetoothBlockAdvertising|Boolean|是否阻止用户使用蓝牙广告。|
 |bluetoothBlockDiscoverableMode|Boolean|是否阻止用户使用蓝牙可发现模式。|
 |bluetoothBlockPrePairing|Boolean|是否阻止特定的捆绑蓝牙外围设备自动与主机设备配对。|
@@ -94,15 +94,15 @@ POST /deviceManagement/deviceConfigurations
 |edgeSyncFavoritesWithInternetExplorer|Boolean|在 Internet Explorer 和 Microsoft Edge 之间启用收藏夹同步。 在浏览器之间共享对收藏夹的添加、删除、修改和顺序更改。|
 |cellularBlockDataWhenRoaming|Boolean|是否阻止用户在漫游时通过手机网络使用数据。|
 |cellularBlockVpn|Boolean|是否阻止用户通过手机网络使用 VPN。|
-|cellularBlockVpnWhenRoaming|Boolean|是否阻止用户在通过手机网络漫游时使用 VPN。|
+|cellularBlockVpnWhenRoaming|Boolean|通过手机网络漫游时是否阻止用户使用 VPN。|
 |defenderBlockEndUserAccess|Boolean|是否阻止最终用户访问 Defender。|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|删除隔离的恶意软件之前的天数。 有效值为 0 至 90|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|获取或设置要按威胁级别对检测到的恶意软件执行的 Defender 操作。|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender 进行系统扫描的星期几。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
 |defenderFilesAndFoldersToExclude|String 集合|要从扫描和实时保护中排除的文件和文件夹。|
-|defenderFileExtensionsToExclude|String collection|要从扫描和实时保护中排除的文件扩展名。|
+|defenderFileExtensionsToExclude|String 集合|要从扫描和实时保护中排除的文件扩展名。|
 |defenderScanMaxCpu|Int32|扫描期间最大 CPU 使用率。 有效值为 0 至 100|
-|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|监视文件活动的值。 可取值为：`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly`、`monitorOutgoingFilesOnly`。|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|监视文件活动的值。 可取值为：`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly` 或 `monitorOutgoingFilesOnly`。|
 |defenderProcessesToExclude|String 集合|要从扫描和实时保护中排除的进程。|
 |defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|如何提示用户提交样本的配置。 可取值为：`userDefined`、`alwaysPrompt`、`promptBeforeSendingPersonalData`、`neverSendData`、`sendAllDataWithoutPrompting`。|
 |defenderRequireBehaviorMonitoring|Boolean|指示是否需要行为监控。|
@@ -126,9 +126,9 @@ POST /deviceManagement/deviceConfigurations
 |lockScreenBlockCortana|Boolean|指示系统锁定时用户是否可以使用语音与 Cortana 进行交互。|
 |lockScreenBlockToastNotifications|Boolean|指示是否允许设备锁定屏幕上方的 Toast 通知。|
 |lockScreenTimeoutInSeconds|Int32|设置从 Windows 10 移动版设备的屏幕锁定到屏幕关闭的持续时间（以秒为单位）。 支持的值为 11-1800。 有效值为 11 至 1800|
-|passwordBlockSimple|Boolean|指定是否允许 PIN 或密码，例如“1111”或“1234”。 对于 Windows 10 台式机，它也控制图片密码的使用。|
+|passwordBlockSimple|Boolean|指定是否允许使用 PIN 或密码，例如“1111”或“1234”。 对于 Windows 10 台式机，它也控制图片密码的使用。|
 |passwordExpirationDays|Int32|密码过期天数。 有效值为 0 至 730|
-|passwordMinimumLength|Int32|最短密码长度。 有效值为 4 至 16|
+|passwordMinimumLength|Int32|密码最短长度。 有效值为 4 至 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。 有效值为 0 至 50|
@@ -154,8 +154,8 @@ POST /deviceManagement/deviceConfigurations
 |startMenuHideSleep|Boolean|启用此策略会将“休眠”从开始菜单的电源按钮中隐藏。|
 |startMenuHideSwitchAccount|Boolean|启用此策略会将“切换帐户”从开始菜单的用户磁贴中隐藏。|
 |startMenuHideUserTile|Boolean|启用此策略会将用户磁贴从开始菜单中隐藏。|
-|startMenuLayoutEdgeAssetsXml|Binary|此策略设置使用户可以导入 Edge 资产以与 startMenuLayoutXml 策略一起使用。 开始布局可以包含查找 Edge 本地资产文件的 Edge 应用中的辅助磁贴。 在这种情况下，Edge 本地资产不存在并导致 Edge 辅助磁贴显示为空。 仅当修改 startMenuLayoutXml 策略时才应用此策略。 该值应该是一个 UTF-8 Base64 编码的字节数组。|
-|startMenuLayoutXml|Binary|允许管理员覆盖默认的“开始”菜单布局并阻止用户对其进行更改。 通过基于布局修改模式指定 XML 文件来修改布局。 XML 需要采用 UTF8 编码的字节数组格式。|
+|startMenuLayoutEdgeAssetsXml|Binary|此策略设置使用户可以导入 Edge 资产以与 startMenuLayoutXml 策略一起使用。 “开始”菜单布局可以包含查找 Edge 本地资产文件的 Edge 应用中的辅助磁贴。 在这种情况下，Edge 本地资产不存在并导致 Edge 辅助磁贴显示为空。 仅当修改 startMenuLayoutXml 策略时才应用此策略。 该值应该是一个 UTF-8 Base64 编码的字节数组。|
+|startMenuLayoutXml|Binary|允许管理员覆盖默认的“开始”菜单布局并阻止用户对其进行更改。 通过基于布局修改架构指定 XML 文件来修改布局。 XML 需要采用 UTF8 编码的字节数组格式。|
 |startMenuMode|[windowsStartMenuModeType](../resources/intune-deviceconfig-windowsstartmenumodetype.md)|允许管理员决定显示“开始”菜单的方式。 可取值为：`userDefined`、`fullScreen`、`nonFullScreen`。|
 |startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|强制“开始”菜单上的文档文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
 |startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|强制“开始”菜单上的下载文件夹快捷方式的可见性（显示/隐藏）。 可取值为：`notConfigured`、`hide`、`show`。|
@@ -174,7 +174,7 @@ POST /deviceManagement/deviceConfigurations
 |settingsBlockPersonalizationPage|Boolean|指示是否阻止在“设置”应用中访问“个性化”。|
 |settingsBlockAccountsPage|Boolean|指示是否阻止在“设置”应用中访问“帐户”。|
 |settingsBlockTimeLanguagePage|Boolean|指示是否阻止在“设置”应用中访问“时间和语言”。|
-|settingsBlockEaseOfAccessPage|Boolean|指示是否阻止在“设置”应用中访问“辅助功能”。|
+|settingsBlockEaseOfAccessPage|Boolean|指示是否阻止在“设置”应用中访问“轻松使用”。|
 |settingsBlockPrivacyPage|Boolean|指示是否阻止在“设置”应用中访问“隐私”。|
 |settingsBlockUpdateSecurityPage|Boolean|指示是否阻止在“设置”应用中访问“更新和安全”。|
 |settingsBlockAppsPage|Boolean|指示是否阻止在“设置”应用中访问“应用”。|
@@ -212,7 +212,7 @@ POST /deviceManagement/deviceConfigurations
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|允许 IT 管理员为 MDM 控制的设备设置默认搜索引擎。 如果未设置 AllowSearchEngineCustomization 策略，则用户可以替代此设置并更改其默认搜索引擎。|
 |edgeHomepageUrls|String 集合|Edge 浏览器上 MDM 注册设备上的主页 URL 列表。|
 |edgeBlockAccessToAboutFlags|Boolean|指示是否阻止访问 Edge 浏览器上关于标志的信息。|
-|smartScreenBlockPromptOverride|Boolean|指示用户是否可以覆盖有关潜在恶意网站的 SmartScreen 筛选器警告。|
+|smartScreenBlockPromptOverride|Boolean|指示用户是否可以替代有关潜在恶意网站的 SmartScreen 筛选器警告。|
 |smartScreenBlockPromptOverrideForFiles|Boolean|指示用户是否可以覆盖关于下载未验证文件的 SmartScreen 筛选器警告|
 |webRtcBlockLocalhostIpAddress|Boolean|指示在使用 WebRTC 拨打电话时是否显示用户的本地主机 IP 地址|
 |internetSharingBlocked|Boolean|指示是否阻止用户使用 Internet 共享。|
@@ -246,7 +246,7 @@ POST /deviceManagement/deviceConfigurations
 |developerUnlockSetting|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|指示是否允许开发人员解锁。 可取值为：`notConfigured`、`blocked`、`allowed`。|
 |sharedUserAppDataAllowed|Boolean|指示是否阻止同一应用的多个用户共享数据。|
 |appsBlockWindowsStoreOriginatedApps|Boolean|指示是否禁用启动 Windows 应用商店中预先安装或已下载的所有应用。|
-|windowsStoreEnablePrivateStoreOnly|Boolean|指示是否启用“仅限私人应用商店”。|
+|windowsStoreEnablePrivateStoreOnly|Boolean|指示是否启用“仅限专用应用商店”。|
 |storageRestrictAppDataToSystemVolume|Boolean|指示应用程序数据是否仅限于系统驱动器。|
 |storageRestrictAppInstallToSystemVolume|Boolean|指示应用程序的安装是否仅限于系统驱动器。|
 |gameDvrBlocked|Boolean|指示是否阻止 DVR 和广播。|

@@ -4,12 +4,12 @@ description: 更新 deviceAppManagement 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3afda42d9ffc0989f98d0a9c36debb5ee54e597a
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 6067640d883e771d79e925fd0bcf87c2857c2c0c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572465"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967900"
 ---
 # <a name="update-deviceappmanagement"></a>更新 deviceAppManagement
 
@@ -19,7 +19,7 @@ ms.locfileid: "30572465"
 
 更新 [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) 对象的属性。
 ## <a name="prerequisites"></a>先决条件
-若要调用此 API, 必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。  请注意, 相应的权限根据工作流的不同而有所不同。
+若要调用此 API, 必须有以下权限之一。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。  请注意, 相应的权限根据工作流的不同而有所不同。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|

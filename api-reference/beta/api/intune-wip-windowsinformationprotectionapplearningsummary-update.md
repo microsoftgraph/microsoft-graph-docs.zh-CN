@@ -4,12 +4,12 @@ description: 更新 windowsInformationProtectionAppLearningSummary 对象的属�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f63f199b700f6e079266870aad07fd3870d35e6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c63efa995af1e0445c51f81611b5fd2bcab01600
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153996"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970644"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>更新 windowsInformationProtectionAppLearningSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30153996"
 更新 [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) 对象的 JSON 表示形式。
@@ -50,7 +50,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
+|id|String|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
 |applicationName|String|应用程序名称|
 |applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|应用程序类型。 可取值为：`universal`、`desktop`。|
 |deviceCount|Int32|设备计数|

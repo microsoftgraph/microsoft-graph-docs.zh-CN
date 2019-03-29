@@ -4,12 +4,12 @@ description: 更新 managedDevice 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3711888ee2c5e6f3d3a5281ec6e14d521eb9695
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 56c45659d3e644a80d97f92ff6fe6659c4038d58
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162466"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967935"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -20,7 +20,7 @@ ms.locfileid: "30162466"
 更新 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的 JSON 表示形式。
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备唯一标识符|
+|id|String|设备唯一标识符|
 |userId|String|与设备关联的用户的唯一标识符|
 |deviceName|String|设备的名称|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的 hardward 详细信息。  包括存储空间、制造商、序列号等信息。|
@@ -115,7 +115,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期|
 |iccid|String|集成的电路卡标识符, 它是 SIM 卡的唯一标识号。|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。|
-|roleScopeTagIds|String collection|此设备实例的范围标记 id 的列表。|
+|roleScopeTagIds|String 集合|此设备实例的范围标记 id 的列表。|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件计数|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件计数|
 |notes|String|IT 管理员创建的设备上的注释|

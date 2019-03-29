@@ -4,12 +4,12 @@ description: 删除 androidLobApp。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 647654725ec3490f643d5d1094385247a04817c8
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 330db24bb518b371f7abe3f05528344d061a1c32
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257958"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966836"
 ---
 # <a name="delete-androidlobapp"></a>删除 androidLobApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "30257958"
 删除 [androidLobApp](../resources/intune-apps-androidlobapp.md)。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -39,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

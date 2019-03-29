@@ -4,12 +4,12 @@ description: 创建新的 embeddedSIMActivationCodePool 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c0cf5f48f10d01fbaf5e15d74d8fb2421e203f7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 56862e0f59508743df233106f33446c0065e103d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174599"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967396"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>创建 embeddedSIMActivationCodePool
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174599"
 创建新的[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 embeddedSIMActivationCodePool 对象的 JSON 表示形式。
@@ -50,7 +50,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|嵌入的 SIM 激活代码池的唯一标识符。 创建时分配的系统生成值。|
+|id|String|嵌入的 SIM 激活代码池的唯一标识符。 创建时分配的系统生成值。|
 |displayName|String|管理员定义的嵌入式 SIM 激活代码池的名称。|
 |createdDateTime|DateTimeOffset|创建嵌入的 SIM 激活代码池的时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改嵌入的 SIM 激活代码池的时间。 更新了服务端。|

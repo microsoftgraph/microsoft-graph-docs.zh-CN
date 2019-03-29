@@ -48,16 +48,16 @@ items:
     - name: 使用架构扩展（示例）
       href: /graph/extensibility-schema-groups?toc=./ref/toc.json
     displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-  - name: 资源
-    items:
-    - name: 最佳做法
-      href: /graph/best-practices-concept?toc=./ref/toc.json
-    - name: 已知问题
-      href: /graph/known-issues?toc=./ref/toc.json
-    - name: 更改日志
-      href: /graph/changelog?toc=./ref/toc.json
-    - name: 错误
-      href: /graph/errors?toc=./ref/toc.json
+- name: 资源
+  items:
+  - name: 最佳做法
+    href: /graph/best-practices-concept?toc=./ref/toc.json
+  - name: 已知问题
+    href: /graph/known-issues?toc=./ref/toc.json
+  - name: 更改日志
+    href: /graph/changelog?toc=./ref/toc.json
+  - name: 错误
+    href: /graph/errors?toc=./ref/toc.json
 - name: 参考
   href: overview.md
   items:
@@ -99,6 +99,8 @@ items:
         href: api/user-list-calendarview.md
       - name: 提醒视图
         href: api/user-reminderview.md
+      - name: 获取忙/闲日程安排
+        href: api/calendar-getschedule.md
       - name: 查找会议时间
         href: api/user-findmeetingtimes.md
     - name: 联系人
@@ -534,6 +536,8 @@ items:
         href: api/calendar-post-events.md
       - name: 提醒视图
         href: api/user-reminderview.md
+      - name: 获取忙/闲日程安排
+        href: api/calendar-getschedule.md
       - name: 查找会议时间
         href: api/user-findmeetingtimes.md
     - name: 日历视图
@@ -1139,7 +1143,7 @@ items:
       - name: 已导入的 Windows Autopilot 设备标识
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
         items:
-        - name: 列表
+        - name: 列出
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
         - name: 获取
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -3252,7 +3256,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: 获取开放扩展
         href: api/opentypeextension-get.md
-    - name: Attachment
+    - name: 附件
       href: resources/attachment.md
       items:
       - name: 文件附件资源
@@ -4158,9 +4162,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 0ef10175d057f1e31a49259ad2cea04fcda8f906
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 7a5fa770963c7ac4742ead0a68b6a5beac742539
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258896"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936337"

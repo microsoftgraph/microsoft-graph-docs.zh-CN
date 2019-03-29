@@ -4,12 +4,12 @@ description: 更新 groupPolicyDefinition 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f750e7f6a3bd631973fdeabc59011d0d07301cb4
-ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
+ms.openlocfilehash: f7b2052d587fc6b5a16ba86b534db9cfca89af3c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30644291"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969664"
 ---
 # <a name="update-grouppolicydefinition"></a>更新 groupPolicyDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "30644291"
 更新[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -55,9 +55,9 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|标识策略可应用于的组的类型。 可取值为：`user`、`machine`。|
 |displayName|String|本地化策略名称。|
-|explainText|字符串|与策略关联的本地化说明或帮助文本。 默认值为空白。|
-|categoryPath|字符串|策略的本地化完整类别路径。|
-|supportedOn|字符串|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
+|explainText|String|与策略关联的本地化说明或帮助文本。 默认值为空白。|
+|categoryPath|String|策略的本地化完整类别路径。|
+|supportedOn|String|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可能的值是：`admxBacked`、`admxIngested`。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|

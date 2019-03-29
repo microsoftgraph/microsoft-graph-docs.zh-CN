@@ -4,12 +4,12 @@ description: 创建新的 iosLobAppProvisioningConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab8f4c807e07fec07d798ec64fdb5a52ab9e0211
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 5d8cf36c1e4fe957d05463df2dae4975f2d07fcb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572269"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968656"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>创建 iosLobAppProvisioningConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572269"
 创建新的[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -54,9 +54,9 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 |expirationDateTime|DateTimeOffset|可选的配置文件到期日期和时间。|
 |payloadFileName|String|有效负载文件名 (*. mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
-|roleScopeTagIds|String collection|此 iOS LOB 应用设置配置实体的作用域标记列表。|
+|roleScopeTagIds|String 集合|此 iOS LOB 应用设置配置实体的作用域标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|说明|字符串|管理员提供的设备配置说明。|
+|description|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|

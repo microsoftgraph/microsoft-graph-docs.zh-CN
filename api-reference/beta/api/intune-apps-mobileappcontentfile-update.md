@@ -4,12 +4,12 @@ description: 更新 mobileAppContentFile 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e2cafce913352a0b5298149689e4a404daa020c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 48140f636a2c7d599d33e569633ef531db371f4d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171398"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970070"
 ---
 # <a name="update-mobileappcontentfile"></a>更新 mobileAppContentFile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171398"
 更新 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) 对象的 JSON 表示形式。

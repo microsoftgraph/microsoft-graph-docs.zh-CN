@@ -4,12 +4,12 @@ description: 更新 importedDeviceIdentityResult 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dea1d8309507ae5eb5a969c710308bf2d779be15
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 91f2843d3b4ef366c111e61946f6f307ce2a2c29
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142964"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965793"
 ---
 # <a name="update-importeddeviceidentityresult"></a>更新 importedDeviceIdentityResult
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142964"
 更新[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md)对象的 JSON 表示形式。
@@ -51,15 +51,15 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的导入设备标识的 Id|
-|importedDeviceIdentifier|字符串|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的导入设备标识符|
+|importedDeviceIdentifier|String|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的导入设备标识符|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的导入设备标识的类型。 可取值为：`unknown`、`imei`、`serialNumber`。|
 |lastModifiedDateTime|DateTimeOffset|继承自[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)的说明的上次修改日期时间|
 |createdDateTime|DateTimeOffset|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的设备的上次联系日期时间|
-|说明|字符串|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的设备的说明|
+|description|String|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的设备的说明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune 中的设备的状态继承自[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |platform|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 继承自[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|status|布尔|导入的设备标识的状态|
+|status|Boolean|导入的设备标识的状态|
 
 
 
