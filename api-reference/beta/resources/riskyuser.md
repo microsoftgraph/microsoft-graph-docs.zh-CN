@@ -1,61 +1,52 @@
 ---
 title: riskyUsers 资源类型
-description: 代表 Azure AD 用户面临危险。 Azure AD 不断计算用户根据各种信号和机器学习的风险。 此 API 在 Azure AD 中所有存在风险的用户提供编程访问。
+description: 表示有风险的 Azure AD 用户。 Azure AD 会根据各种信号和机器学习持续评估用户风险。 此 API 提供对 Azure AD 中所有风险用户的编程访问。
 author: cloudhandler
 localization_priority: Normal
-ms.prod: security
-ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3265ea40903ca2c5c10272f5df280bd3715af366
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643907"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003718"
 ---
-# <a name="riskyusers-resource-type"></a><span data-ttu-id="1a92b-105">riskyUsers 资源类型</span><span class="sxs-lookup"><span data-stu-id="1a92b-105">riskyUsers resource type</span></span>
+# <a name="riskyusers-resource-type"></a><span data-ttu-id="28ff9-105">riskyUsers 资源类型</span><span class="sxs-lookup"><span data-stu-id="28ff9-105">riskyUsers resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a92b-106">代表 Azure AD 用户面临危险。</span><span class="sxs-lookup"><span data-stu-id="1a92b-106">Represents Azure AD users who are at risk.</span></span> <span data-ttu-id="1a92b-107">Azure AD 不断计算用户根据各种信号和机器学习的风险。</span><span class="sxs-lookup"><span data-stu-id="1a92b-107">Azure AD continually evaluates user risk based on various signals and machine learning.</span></span> <span data-ttu-id="1a92b-108">此 API 在 Azure AD 中所有存在风险的用户提供编程访问。</span><span class="sxs-lookup"><span data-stu-id="1a92b-108">This API provides programmatic access to all at-risk users in your Azure AD.</span></span>
+<span data-ttu-id="28ff9-106">表示有风险的 Azure AD 用户。</span><span class="sxs-lookup"><span data-stu-id="28ff9-106">Represents Azure AD users who are at risk.</span></span> <span data-ttu-id="28ff9-107">Azure AD 会根据各种信号和机器学习持续评估用户风险。</span><span class="sxs-lookup"><span data-stu-id="28ff9-107">Azure AD continually evaluates user risk based on various signals and machine learning.</span></span> <span data-ttu-id="28ff9-108">此 API 提供对 Azure AD 中所有风险用户的编程访问。</span><span class="sxs-lookup"><span data-stu-id="28ff9-108">This API provides programmatic access to all at-risk users in your Azure AD.</span></span>
 
-> <span data-ttu-id="1a92b-109">**注意：** 此 API 要求的 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="1a92b-109">**Note:** This API requires an Azure AD Premium P2 license.</span></span>
+<span data-ttu-id="28ff9-109">有关风险事件的详细信息, 请参阅[Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)。</span><span class="sxs-lookup"><span data-stu-id="28ff9-109">For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).</span></span>
 
-<span data-ttu-id="1a92b-110">有关风险事件的详细信息，请参阅[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)。</span><span class="sxs-lookup"><span data-stu-id="1a92b-110">For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).</span></span>
+><span data-ttu-id="28ff9-110">**注意:** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="28ff9-110">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="1a92b-111">方法</span><span class="sxs-lookup"><span data-stu-id="1a92b-111">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="28ff9-111">方法</span><span class="sxs-lookup"><span data-stu-id="28ff9-111">Methods</span></span>
 
-| <span data-ttu-id="1a92b-112">方法</span><span class="sxs-lookup"><span data-stu-id="1a92b-112">Method</span></span>   | <span data-ttu-id="1a92b-113">返回类型</span><span class="sxs-lookup"><span data-stu-id="1a92b-113">Return Type</span></span>|<span data-ttu-id="1a92b-114">说明</span><span class="sxs-lookup"><span data-stu-id="1a92b-114">Description</span></span>|
+| <span data-ttu-id="28ff9-112">方法</span><span class="sxs-lookup"><span data-stu-id="28ff9-112">Method</span></span>   | <span data-ttu-id="28ff9-113">返回类型</span><span class="sxs-lookup"><span data-stu-id="28ff9-113">Return Type</span></span>|<span data-ttu-id="28ff9-114">说明</span><span class="sxs-lookup"><span data-stu-id="28ff9-114">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="1a92b-115">列表 riskyUsers</span><span class="sxs-lookup"><span data-stu-id="1a92b-115">List riskyUsers</span></span>](../api/riskyusers-list.md) | [<span data-ttu-id="1a92b-116">riskyUsers</span><span class="sxs-lookup"><span data-stu-id="1a92b-116">riskyUsers</span></span>](riskyuser.md) |<span data-ttu-id="1a92b-117">列出 risky 用户和及其属性。</span><span class="sxs-lookup"><span data-stu-id="1a92b-117">List risky users and their properties.</span></span>|
-|[<span data-ttu-id="1a92b-118">获取 riskyUsers</span><span class="sxs-lookup"><span data-stu-id="1a92b-118">Get riskyUsers</span></span>](../api/riskyusers-get.md) | [<span data-ttu-id="1a92b-119">riskyUsers</span><span class="sxs-lookup"><span data-stu-id="1a92b-119">riskyUsers</span></span>](riskyuser.md)|<span data-ttu-id="1a92b-120">获取特定 risky 用户和其属性。</span><span class="sxs-lookup"><span data-stu-id="1a92b-120">Get a specific risky user and its properties.</span></span>|
+|[<span data-ttu-id="28ff9-115">列出 riskyUsers</span><span class="sxs-lookup"><span data-stu-id="28ff9-115">List riskyUsers</span></span>](../api/riskyusers-list.md) | [<span data-ttu-id="28ff9-116">riskyUsers</span><span class="sxs-lookup"><span data-stu-id="28ff9-116">riskyUsers</span></span>](riskyUser.md) |<span data-ttu-id="28ff9-117">列出有风险的用户及其属性。</span><span class="sxs-lookup"><span data-stu-id="28ff9-117">List risky users and their properties.</span></span>|
+|[<span data-ttu-id="28ff9-118">获取 riskyUsers</span><span class="sxs-lookup"><span data-stu-id="28ff9-118">Get riskyUsers</span></span>](../api/riskyusers-get.md) | [<span data-ttu-id="28ff9-119">riskyUsers</span><span class="sxs-lookup"><span data-stu-id="28ff9-119">riskyUsers</span></span>](riskyUser.md)|<span data-ttu-id="28ff9-120">获取特定的有风险的用户及其属性。</span><span class="sxs-lookup"><span data-stu-id="28ff9-120">Get a specific risky user and its properties.</span></span>|
+|[<span data-ttu-id="28ff9-121">确认 riskyUsers 已泄露</span><span class="sxs-lookup"><span data-stu-id="28ff9-121">Confirm riskyUsers compromised</span></span>](../api/riskyusers-confirmcompromised.md)|<span data-ttu-id="28ff9-122">确认有风险的用户受到威胁。</span><span class="sxs-lookup"><span data-stu-id="28ff9-122">Confirm a risky user as compromised.</span></span>|
+|[<span data-ttu-id="28ff9-123">消除 riskyUsers</span><span class="sxs-lookup"><span data-stu-id="28ff9-123">Dismiss riskyUsers</span></span>](../api/riskyusers-dismiss.md)|<span data-ttu-id="28ff9-124">消除有风险的用户的风险。</span><span class="sxs-lookup"><span data-stu-id="28ff9-124">Dismiss the risk of a risky user.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="1a92b-121">属性</span><span class="sxs-lookup"><span data-stu-id="1a92b-121">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="28ff9-125">属性</span><span class="sxs-lookup"><span data-stu-id="28ff9-125">Properties</span></span>
 
-| <span data-ttu-id="1a92b-122">属性</span><span class="sxs-lookup"><span data-stu-id="1a92b-122">Property</span></span>   | <span data-ttu-id="1a92b-123">类型</span><span class="sxs-lookup"><span data-stu-id="1a92b-123">Type</span></span>|<span data-ttu-id="1a92b-124">说明</span><span class="sxs-lookup"><span data-stu-id="1a92b-124">Description</span></span>|
+| <span data-ttu-id="28ff9-126">属性</span><span class="sxs-lookup"><span data-stu-id="28ff9-126">Property</span></span>   | <span data-ttu-id="28ff9-127">类型</span><span class="sxs-lookup"><span data-stu-id="28ff9-127">Type</span></span>|<span data-ttu-id="28ff9-128">说明</span><span class="sxs-lookup"><span data-stu-id="28ff9-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|`id`|`string`|<span data-ttu-id="1a92b-125">风险的用户的唯一 id</span><span class="sxs-lookup"><span data-stu-id="1a92b-125">Unique id of the user at risk</span></span>|
-|`isDeleted`|`bool`|<span data-ttu-id="1a92b-126">指示是否删除用户。</span><span class="sxs-lookup"><span data-stu-id="1a92b-126">Indicates whether the user is deleted.</span></span> <span data-ttu-id="1a92b-127">可能的值为： `true`，`false`</span><span class="sxs-lookup"><span data-stu-id="1a92b-127">Possible values are: `true`, `false`</span></span>|
-|`isGuest`|`bool`|<span data-ttu-id="1a92b-128">指示用户是否来宾用户。</span><span class="sxs-lookup"><span data-stu-id="1a92b-128">Indicates whether the user is a guest user.</span></span> <span data-ttu-id="1a92b-129">可取值为：`true`、`false`。</span><span class="sxs-lookup"><span data-stu-id="1a92b-129">Possible values are: `true`, `false`.</span></span> <span data-ttu-id="1a92b-130">如果用户的标识位于中考虑租户之外，则为 true。</span><span class="sxs-lookup"><span data-stu-id="1a92b-130">True if user’s identity lies outside of the tenant in consideration.</span></span> <span data-ttu-id="1a92b-131">此用户可以在 Azure AD，MSA 中是 B2B 或 B2C 用户标识或第三方标识提供程序。</span><span class="sxs-lookup"><span data-stu-id="1a92b-131">This user could be a B2B or a B2C user with identity in Azure AD, MSA or 3rd party identity provider.</span></span> <span data-ttu-id="1a92b-132">如果用户的标识位于内部中考虑租户则为 false</span><span class="sxs-lookup"><span data-stu-id="1a92b-132">False if user’s identity lies inside the tenant in consideration</span></span>|
-|`riskDetail`|`riskDetail`|<span data-ttu-id="1a92b-133">提供风险用户、登录或风险事件的特定状态背后的“原因”。</span><span class="sxs-lookup"><span data-stu-id="1a92b-133">Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event.</span></span> <span data-ttu-id="1a92b-134">可取值包括：`none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="1a92b-134">The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`.</span></span> <span data-ttu-id="1a92b-135">值 `none` 表示到目前为止尚未对用户或登录执行任何操作。</span><span class="sxs-lookup"><span data-stu-id="1a92b-135">The value `none` means that no action has been performed on the user or sign-in so far.</span></span>|
-|`riskLevel`|`riskLevel`|<span data-ttu-id="1a92b-136">提供 risky 用户、 登录或风险事件的总体风险级别。</span><span class="sxs-lookup"><span data-stu-id="1a92b-136">Provides the overall risk level of a risky user, sign-in or a risk event.</span></span> <span data-ttu-id="1a92b-137">可取值为：`none`、`low`、`medium`、`high`、`hidden` 和 `unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="1a92b-137">The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`.</span></span> <span data-ttu-id="1a92b-138">值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。</span><span class="sxs-lookup"><span data-stu-id="1a92b-138">The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection.</span></span>|
-|`riskState`|`riskState`|<span data-ttu-id="1a92b-139">提供风险用户、登录或风险事件的“风险状态”。</span><span class="sxs-lookup"><span data-stu-id="1a92b-139">Provides the 'risk state' of a risky user, sign-in or a risk event.</span></span> <span data-ttu-id="1a92b-140">可取值包括：`none`、`confirmedSafe`、`remediated`、`dismissed`、`atRisk`、`confirmedCompromised`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="1a92b-140">The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.</span></span>|
-|`riskLastUpdatedDateTime`|`datetime`|<span data-ttu-id="1a92b-141">日期和 risky 用户上次更新时间</span><span class="sxs-lookup"><span data-stu-id="1a92b-141">The date and time that the risky user was last updated</span></span>|
-|`userDisplayName`|`string`|<span data-ttu-id="1a92b-142">Risky 的用户显示名称</span><span class="sxs-lookup"><span data-stu-id="1a92b-142">Risky user display name</span></span>|
-|`userPrincipalName`|`string`|<span data-ttu-id="1a92b-143">Risky 的用户主体名称</span><span class="sxs-lookup"><span data-stu-id="1a92b-143">Risky user principal name</span></span>|
+|`id`|`string`|<span data-ttu-id="28ff9-129">用户面临风险的唯一 id</span><span class="sxs-lookup"><span data-stu-id="28ff9-129">Unique id of the user at risk</span></span>|
+|`isDeleted`|`bool`|<span data-ttu-id="28ff9-130">指示是否删除用户。</span><span class="sxs-lookup"><span data-stu-id="28ff9-130">Indicates whether the user is deleted.</span></span> <span data-ttu-id="28ff9-131">可能的值包括`true`:、`false`</span><span class="sxs-lookup"><span data-stu-id="28ff9-131">Possible values are: `true`, `false`</span></span>|
+|`isGuest`|`bool`|<span data-ttu-id="28ff9-132">指示用户是否为来宾用户。</span><span class="sxs-lookup"><span data-stu-id="28ff9-132">Indicates whether the user is a guest user.</span></span> <span data-ttu-id="28ff9-133">可取值为：`true`、`false`。</span><span class="sxs-lookup"><span data-stu-id="28ff9-133">Possible values are: `true`, `false`.</span></span> <span data-ttu-id="28ff9-134">如此如果用户的标识位于租户外部, 请考虑。</span><span class="sxs-lookup"><span data-stu-id="28ff9-134">True if user’s identity lies outside of the tenant in consideration.</span></span> <span data-ttu-id="28ff9-135">此用户可以是在 Azure AD、MSA 或第三方标识提供程序中具有标识的 B2B 或 B2C 用户。</span><span class="sxs-lookup"><span data-stu-id="28ff9-135">This user could be a B2B or a B2C user with identity in Azure AD, MSA or 3rd party identity provider.</span></span> <span data-ttu-id="28ff9-136">假如果用户的标识位于租户内部, 则考虑</span><span class="sxs-lookup"><span data-stu-id="28ff9-136">False if user’s identity lies inside the tenant in consideration</span></span>|
+|`isProcessing`|`bool`|<span data-ttu-id="28ff9-137">指示后端正在处理用户的危险状态 wehther</span><span class="sxs-lookup"><span data-stu-id="28ff9-137">Indicates wehther a user's risky state is being processed by the backend</span></span>|
+|`risk`|[<span data-ttu-id="28ff9-138">冒</span><span class="sxs-lookup"><span data-stu-id="28ff9-138">risk</span></span>](risk.md)|<span data-ttu-id="28ff9-139">有风险的用户状态</span><span class="sxs-lookup"><span data-stu-id="28ff9-139">Risky user state</span></span>|
+|`riskLastUpdatedDateTime`|`datetime`|<span data-ttu-id="28ff9-140">上次更新有风险的用户的日期和时间</span><span class="sxs-lookup"><span data-stu-id="28ff9-140">The date and time that the risky user was last updated</span></span>|
+|`userDisplayName`|`string`|<span data-ttu-id="28ff9-141">有风险的用户显示名称</span><span class="sxs-lookup"><span data-stu-id="28ff9-141">Risky user display name</span></span>|
+|`userPrincipalName`|`string`|<span data-ttu-id="28ff9-142">有风险的用户主体名称</span><span class="sxs-lookup"><span data-stu-id="28ff9-142">Risky user principal name</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="1a92b-144">关系</span><span class="sxs-lookup"><span data-stu-id="1a92b-144">Relationships</span></span>
 
-| <span data-ttu-id="1a92b-145">关系</span><span class="sxs-lookup"><span data-stu-id="1a92b-145">Relationship</span></span> | <span data-ttu-id="1a92b-146">类型</span><span class="sxs-lookup"><span data-stu-id="1a92b-146">Type</span></span> |<span data-ttu-id="1a92b-147">说明</span><span class="sxs-lookup"><span data-stu-id="1a92b-147">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="1a92b-148">id</span><span class="sxs-lookup"><span data-stu-id="1a92b-148">id</span></span>|<span data-ttu-id="1a92b-149">UserObjectId</span><span class="sxs-lookup"><span data-stu-id="1a92b-149">UserObjectId</span></span>| <span data-ttu-id="1a92b-150">与给定的风险事件相关联的用户的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="1a92b-150">The unique identifier of the user with which a given risk event is associated with.</span></span>|
-|<span data-ttu-id="1a92b-151">isGuest</span><span class="sxs-lookup"><span data-stu-id="1a92b-151">isGuest</span></span>|<span data-ttu-id="1a92b-152">isGuest</span><span class="sxs-lookup"><span data-stu-id="1a92b-152">isGuest</span></span>| <span data-ttu-id="1a92b-153">Risky 用户可以是家庭用户 (B2E) 或来宾用户 （B2B、 B2C）。</span><span class="sxs-lookup"><span data-stu-id="1a92b-153">A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).</span></span>|
-|<span data-ttu-id="1a92b-154">isDeleted</span><span class="sxs-lookup"><span data-stu-id="1a92b-154">isDeleted</span></span>|<span data-ttu-id="1a92b-155">isDeleted</span><span class="sxs-lookup"><span data-stu-id="1a92b-155">isDeleted</span></span>| <span data-ttu-id="1a92b-156">用户可能也不能删除。</span><span class="sxs-lookup"><span data-stu-id="1a92b-156">A user may or may not be deleted.</span></span> |
-|<span data-ttu-id="1a92b-157">riskState</span><span class="sxs-lookup"><span data-stu-id="1a92b-157">riskState</span></span>|<span data-ttu-id="1a92b-158">riskState</span><span class="sxs-lookup"><span data-stu-id="1a92b-158">riskState</span></span>| <span data-ttu-id="1a92b-159">Risky 用户可能存在多个状态之一。</span><span class="sxs-lookup"><span data-stu-id="1a92b-159">A risky user could exist in one of multiple states.</span></span> |
-|<span data-ttu-id="1a92b-160">riskDetail</span><span class="sxs-lookup"><span data-stu-id="1a92b-160">riskDetail</span></span>|<span data-ttu-id="1a92b-161">riskDetail</span><span class="sxs-lookup"><span data-stu-id="1a92b-161">riskDetail</span></span>| <span data-ttu-id="1a92b-162">特定状态中，risky 用户可能会因多个原因。</span><span class="sxs-lookup"><span data-stu-id="1a92b-162">A risky user could be in a certain state because of multiple reasons.</span></span> |
-|<span data-ttu-id="1a92b-163">riskLevel</span><span class="sxs-lookup"><span data-stu-id="1a92b-163">riskLevel</span></span>|<span data-ttu-id="1a92b-164">riskLevel</span><span class="sxs-lookup"><span data-stu-id="1a92b-164">riskLevel</span></span>| <span data-ttu-id="1a92b-165">Risky 用户可以被视为多个风险级别之一。</span><span class="sxs-lookup"><span data-stu-id="1a92b-165">A risky user could be considered one of multiple risk levels.</span></span> |
+## <a name="json-representation"></a><span data-ttu-id="28ff9-143">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="28ff9-143">JSON representation</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="1a92b-166">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1a92b-166">JSON representation</span></span>
-
-<span data-ttu-id="1a92b-167">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1a92b-167">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="28ff9-144">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="28ff9-144">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -67,13 +58,12 @@ ms.locfileid: "29643907"
 
 ```json
 {
-"id": "string",
+ "id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
 "isGuest": "boolean",
+"isProcessing": "boolean",
 "isDeleted": "boolean",
-"riskDetail":  {"@odata.type": "microsoft.graph.riskDetail"},
-"riskLevel":  {"@odata.type": "microsoft.graph.riskLevel"},
-"riskState":  {"@odata.type": "microsoft.graph.riskState"},
+"risk": {"@odata.type": "microsoft.graph.risk"},
 "userDisplayName": "string",
 "userPrincipalName": "string"
 }
@@ -82,15 +72,10 @@ ms.locfileid: "29643907"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "riskyusers resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/riskyuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->
