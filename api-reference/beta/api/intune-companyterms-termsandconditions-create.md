@@ -4,12 +4,12 @@ description: 创建新的 termsAndConditions 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11015a387d4c22a0293a31641da67ccb650ef1cf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1863abdc31b75d243e569ac363e54215e131af4b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171545"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986185"
 ---
 # <a name="create-termsandconditions"></a>创建 termsAndConditions
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171545"
 创建新的 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/termsAndConditions
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 termsAndConditions 对象的 JSON 表示形式。
@@ -50,12 +50,12 @@ POST /deviceManagement/termsAndConditions
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|T&C 策略的唯一标识符。|
+|id|String|T&C 策略的唯一标识符。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |modifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|displayName|字符串|管理员提供的 T&C 策略名称。 |
-|说明|字符串|管理员提供的 T&C 策略描述。|
+|displayName|String|管理员提供的 T&C 策略名称。 |
+|description|String|管理员提供的 T&C 策略描述。|
 |title|字符串|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|

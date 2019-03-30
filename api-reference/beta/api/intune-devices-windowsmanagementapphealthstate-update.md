@@ -4,12 +4,12 @@ description: 更新 windowsManagementAppHealthState 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de6314de3699821f15125d75241d3df509d52c64
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b22cb44d514865a461e4f330a8a69286ee704db4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160548"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967039"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>更新 windowsManagementAppHealthState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160548"
 更新[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)对象的 JSON 表示形式。
@@ -50,12 +50,12 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Windows management 应用运行状况状态的唯一标识符|
+|id|String|Windows management 应用运行状况状态的唯一标识符|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理应用运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
-|installedVersion|字符串|Windows 管理应用程序已安装版本。|
+|installedVersion|String|Windows 管理应用程序已安装版本。|
 |lastCheckInDateTime|DateTimeOffset|Windows 管理应用程序上次签入时间。|
 |deviceName|String|在其上安装 Windows management 应用的设备的名称。|
-|deviceOSVersion|字符串|windows 10 OS 版本的 windows management app 安装在该设备上。|
+|deviceOSVersion|String|windows 10 OS 版本的 windows management app 安装在该设备上。|
 
 
 

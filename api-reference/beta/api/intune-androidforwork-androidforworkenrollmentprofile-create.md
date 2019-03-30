@@ -4,12 +4,12 @@ description: 创建新的 androidForWorkEnrollmentProfile 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca77de40443fba5b37e5d4ba55cdc12bfccb791b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0f4202ef375eae4799d50e6cbaadc95881af4f06
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160996"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985240"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>创建 androidForWorkEnrollmentProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160996"
 创建新的 [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 androidForWorkEnrollmentProfile 对象的 JSON 表示形式。
@@ -50,8 +50,8 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 
 |属性|类型|说明|
 |:---|:---|:---|
-|accountId|String|注册配置文件所属的租户 GUID。|
-|id|字符串|注册配置文件的唯一 GUID。|
+|accountId|String|注册配置文件隶属的租户 GUID。|
+|id|String|注册配置文件的唯一 GUID。|
 |displayName|String|注册配置文件的显示名称。|
 |description|String|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|

@@ -4,12 +4,12 @@ description: 创建新的 settingStateDeviceSummary 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3af103ab586a636269e17b0f59cb1df7aad20bad
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8d77324ee3d1e13d51cc196d90015ee09e5760c1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164881"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986773"
 ---
 # <a name="create-settingstatedevicesummary"></a>创建 settingStateDeviceSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164881"
 创建新的 [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -50,7 +50,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 settingStateDeviceSummary 对象的 JSON 表示形式。
@@ -59,13 +59,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |settingName|String|设置的名称|
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|
-|notApplicableDeviceCount|Int32|设置的设备不适用计数|
-|compliantDeviceCount|Int32|设置的设备符合性计数|
-|remediatedDeviceCount|Int32|设置的设备合规计数|
+|notApplicableDeviceCount|Int32|设置的设备不可用计数|
+|compliantDeviceCount|Int32|设置的设备符合计数|
+|remediatedDeviceCount|Int32|设置的设备符合性计数|
 |nonCompliantDeviceCount|Int32|设置的设备不符合计数|
 |errorDeviceCount|Int32|设置的设备错误计数|
 |conflictDeviceCount|Int32|设置的设备冲突错误计数|

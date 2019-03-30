@@ -4,12 +4,12 @@ description: 创建新的 windows10EndpointProtectionConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af33879df37b1c3bcb77fe85cbecc66d2640f4a1
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: e1fc2745ffe0a9c3274b23d424401f19f76cc50b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572234"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987235"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>创建 windows10EndpointProtectionConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572234"
 创建新的 [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -53,10 +53,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|此策略旨在提供针对支持外部 DMA 的设备的额外安全性。 通过它, 可以更好地控制支持外部 dma 的设备与 dma 重新映射/设备内存隔离和沙盒不兼容的枚举。 仅当系统固件支持和启用内核 DMA 保护时, 此策略才会生效。 内核 DMA 保护是一项平台功能, 不能通过策略或最终用户进行控制。 在制造时, 系统必须支持它。 若要检查系统是否支持内核 dma 保护, 请在 MSINFO32 的摘要页中检查 "内核 dma 保护" 字段。 可取值为：`deviceDefault`、`blockAll`、`allowAll`。|
@@ -98,9 +98,9 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |localSecurityOptionsBlockMicrosoftAccounts|Boolean|阻止用户向此计算机添加新的 Microsoft 帐户。|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|启用不受密码保护的本地帐户从物理设备以外的位置进行登录。默认值为已启用|
 |localSecurityOptionsDisableAdministratorAccount|Boolean|确定是否启用或禁用本地管理员帐户。|
-|localSecurityOptionsAdministratorAccountName|字符串|定义要与帐户 "管理员" 的安全标识符 (SID) 相关联的不同帐户名称。|
+|localSecurityOptionsAdministratorAccountName|String|定义要与帐户 "管理员" 的安全标识符 (SID) 相关联的不同帐户名称。|
 |localSecurityOptionsDisableGuestAccount|Boolean|确定来宾帐户是否已启用或已禁用。|
-|localSecurityOptionsGuestAccountName|字符串|定义要与帐户 "来宾" 的安全标识符 (SID) 相关联的不同帐户名称。|
+|localSecurityOptionsGuestAccountName|String|定义要与帐户 "来宾" 的安全标识符 (SID) 相关联的不同帐户名称。|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|阻止便携式计算机在无需登录的情况下被移除。|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|仅在将打印机驱动程序连接到共享打印机时, 才将其限制为仅供管理员安装。|
 |localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|如果启用此设置, 则仅允许交互式登录用户访问 cd-rom 媒体。|
@@ -110,11 +110,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|要求用户在登录前按 CTRL + ALT + DEL。|
 |localSecurityOptionsHideLastSignedInUser|Boolean|不显示上次在此设备上登录的用户的用户名。|
 |localSecurityOptionsHideUsernameAtSignIn|Boolean|在输入凭据后以及显示设备桌面之前, 请勿显示登录此设备的人员的用户名。|
-|localSecurityOptionsLogOnMessageTitle|字符串|为尝试登录的用户设置消息标题。|
-|localSecurityOptionsLogOnMessageText|字符串|为尝试登录的用户设置消息文本。|
+|localSecurityOptionsLogOnMessageTitle|String|为尝试登录的用户设置消息标题。|
+|localSecurityOptionsLogOnMessageText|String|为尝试登录的用户设置消息文本。|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|阻止 PKU2U 对此设备的身份验证请求, 以使用联机标识。|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Boolean|LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 实体的 UI 帮助程序布尔值|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|字符串|编辑默认的安全描述符定义语言字符串, 以允许或拒绝用户和组对 SAM 进行远程调用。|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|编辑默认的安全描述符定义语言字符串, 以允许或拒绝用户和组对 SAM 进行远程调用。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许客户端要求协商128位加密和/或 NTLMv2 会话安全性。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|此安全设置允许服务器要求协商128位加密和/或 NTLMv2 会话安全性。 可取值为：`none`、`requireNtmlV2SessionSecurity`、`require128BitEncryption`、`ntlmV2And128BitEncryption`。|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|此安全设置确定用于网络登录的质询/响应身份验证协议。 可取值为：`lmAndNltm`、`lmNtlmAndNtlmV2`、`lmAndNtlmOnly`、`lmAndNtlmV2`、`lmNtlmV2AndNotLm`、`lmNtlmV2AndNotLmOrNtm`。|
@@ -156,10 +156,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderSecurityCenterDisableSecureBootUI|Boolean|用于在 "设备安全性" 下禁用安全引导区域的显示。|
 |defenderSecurityCenterDisableTroubleshootingUI|Boolean|用于在 "设备安全性" 下禁用安全过程故障排除的显示。|
 |defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Boolean|用于在检测到易受攻击的固件时禁用显示更新 TPM 固件。|
-|defenderSecurityCenterOrganizationDisplayName|字符串|向用户显示的公司名称。|
-|defenderSecurityCenterHelpEmail|字符串|向用户显示的电子邮件地址。|
-|defenderSecurityCenterHelpPhone|字符串|向用户显示的电话号码或 Skype ID。|
-|defenderSecurityCenterHelpURL|字符串|"帮助" 门户 URL 将向用户显示。|
+|defenderSecurityCenterOrganizationDisplayName|String|向用户显示的公司名称。|
+|defenderSecurityCenterHelpEmail|String|向用户显示的电子邮件地址。|
+|defenderSecurityCenterHelpPhone|String|向用户显示的电话号码或 Skype ID。|
+|defenderSecurityCenterHelpURL|String|"帮助" 门户 URL 将向用户显示。|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|要从应用程序的显示区域中显示的通知。 可取值为：`notConfigured`、`blockNoncriticalNotifications`、`blockAllNotifications`。|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|配置向最终用户显示 IT 联系人信息的位置。 可取值为：`notConfigured`、`displayInAppAndInNotifications`、`displayOnlyInApp`、`displayOnlyInNotifications`。|
 |firewallBlockStatefulFTP|Boolean|阻止到设备的有状态 FTP 连接|
@@ -201,7 +201,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderEmailContentExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|一个值, 该值指示是否应从电子邮件 (web 邮件/邮件客户端) 中删除可执行内容 (exe、dll、ps、js、vbs 等) 的执行。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|指示使用针对 ransomeware 的高级防护的值。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderGuardMyFoldersType|[folderProtectionType](../resources/intune-deviceconfig-folderprotectiontype.md)|值, 该值指示受保护文件夹的行为。 可取值为：`userDefined`、`enable`、`auditMode`、`blockDiskModification` 或 `auditDiskModification`。|
-|defenderGuardedFoldersAllowedAppPaths|String collection|允许访问受保护文件夹的 exe 路径列表|
+|defenderGuardedFoldersAllowedAppPaths|String 集合|允许访问受保护文件夹的 exe 路径列表|
 |defenderAdditionalGuardedFolders|String 集合|要添加到受保护文件夹列表的文件夹路径列表|
 |defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|值, 该值指示 NetworkProtection 的行为。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderExploitProtectionXml|Binary|包含有关 Exploit Protection 详细信息的 xml 内容。|

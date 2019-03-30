@@ -4,12 +4,12 @@ description: 创建新的 deviceInstallState 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1589bd46e581e9d29c481dbc2c82dcd6733b51b1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: aa2402605f77d9d901c4941ded593e8c1d787040
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144133"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986906"
 ---
 # <a name="create-deviceinstallstate"></a>创建 deviceInstallState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144133"
 创建新的 [deviceInstallState](../resources/intune-books-deviceinstallstate.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -42,7 +42,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 deviceInstallState 对象的 JSON 表示形式。
@@ -51,13 +51,13 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |deviceName|String|设备名称。|
-|deviceId|字符串|设备 ID。|
+|deviceId|String|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
 |installState|[installState](../resources/intune-books-installstate.md)|电子图书的安装状态。 可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
-|errorCode|字符串|安装失败的错误代码。|
-|osVersion|字符串|操作系统版本。|
+|errorCode|String|安装失败的错误代码。|
+|osVersion|String|操作系统版本。|
 |osDescription|String|操作系统说明。|
 |userName|String|设备用户名。|
 

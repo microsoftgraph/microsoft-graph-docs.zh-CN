@@ -4,12 +4,12 @@ description: 创建新的 windowsInformationProtectionDeviceRegistration 对象�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b2e6131a1d4393026ebf88a7ed089ebba2390b2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f07481326f3766e8a9b1173fc07914bb301d6588
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158840"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985989"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>创建 windowsInformationProtectionDeviceRegistration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158840"
 创建新的[windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 windowsInformationProtectionDeviceRegistration 对象的 JSON 表示形式。
@@ -51,11 +51,11 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|userId|字符串|与此设备注册记录相关联的 UserId。|
+|userId|String|与此设备注册记录相关联的 UserId。|
 |deviceRegistrationId|字符串|此设备注册记录的设备标识符。|
 |deviceName|String|设备名称。|
 |deviceType|String|设备类型, 例如, windows 便携式计算机 VS windows phone。|
-|deviceMacAddress|字符串|设备 Mac 地址。|
+|deviceMacAddress|String|设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|设备的上次签入时间。|
 
 
