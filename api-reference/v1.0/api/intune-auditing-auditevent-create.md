@@ -4,12 +4,12 @@ description: 创建新的 auditEvent 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f85c7d8e9ff94ad5f6ae3a10df695c4cbb1f5d6
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 1a08e7266070e3cbaaa0f639660d806d487ef6cb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255970"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987627"
 ---
 # <a name="create-auditevent"></a>创建 auditEvent
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255970"
 创建新的 [auditEvent](../resources/intune-auditing-auditevent.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -39,7 +39,7 @@ POST /deviceManagement/auditEvents
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 auditEvent 对象的 JSON 表示形式。
@@ -48,8 +48,8 @@ POST /deviceManagement/auditEvents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
-|displayName|String|事件显示名称。|
+|id|String|实体的键。|
+|displayName|字符串|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
 |activity|String|活动的友好名称。|

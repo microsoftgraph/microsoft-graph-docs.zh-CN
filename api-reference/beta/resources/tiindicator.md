@@ -4,12 +4,12 @@ description: 威胁智能 (TI) 指标表示用于标识恶意活动的数据。 
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f5374d42fb2601bfa5529de998778530a3b15d01
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: fd86dc4da572c17e35afe939977b65ff99bd30be
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482264"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988859"
 ---
 # <a name="tiindicator-resource-type"></a>tiIndicator 资源类型
 
@@ -27,9 +27,9 @@ ms.locfileid: "30482264"
 | [创建 tiIndicator](../api/tiindicators-post.md) | [tiIndicator](tiindicator.md) | 通过发布到 tiIndicators 集合创建新的 tiIndicator。 |
 | [列出 tiIndicator](../api/tiindicators-list.md) | [tiIndicator](tiindicator.md)集合 | 获取 tiIndicator 对象集合。 |
 | [更新](../api/tiindicator-update.md) | [tiIndicator](tiindicator.md) | 更新 tiIndicator 对象。 |
-| [删除](../api/tiindicator-delete.md) | 无 | 删除 tiIndicator 对象。 |
-|[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|None| 删除多个 tiIndicator 对象。|
-|[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|None| 通过`externalId`属性删除多个 tiIndicator 对象。|
+| [Delete](../api/tiindicator-delete.md) | 无 | 删除 tiIndicator 对象。 |
+|[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|无| 删除多个 tiIndicator 对象。|
+|[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|无| 通过`externalId`属性删除多个 tiIndicator 对象。|
 |[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[tiIndicator](tiindicator.md)集合|通过发布 tiIndicators 集合创建新的 tiIndicators。|
 |[updateTiIndicators](../api/tiindicator-updatetiindicators.md)|[tiIndicator](tiindicator.md)集合| 更新多个 tiIndicator 对象。|
 
@@ -37,28 +37,28 @@ ms.locfileid: "30482264"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|action|string| 在 targetProduct 安全工具中匹配指标时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。 **必需。**|
-|activityGroupNames|String collection|负责威胁指示器所涵盖的恶意活动的各方的网络威胁智能名称。|
+|action|字符串| 在 targetProduct 安全工具中匹配指标时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。 **必需。**|
+|activityGroupNames|String 集合|负责威胁指示器所涵盖的恶意活动的各方的网络威胁智能名称。|
 |additionalInformation|String|可以放置其他 tiIndicator 属性中未涵盖的指标中的额外数据的 "容器" 区域。 放置在 additionalInformation 中的数据通常不会被 targetProduct 安全工具使用。|
 |azureTenantId|String| 当指标为引入时由系统进行标记。 提交客户端的 Azure Active Directory 租户 id。 **必需。**|
 |confidence|Int32|一个整数, 表示对指示器中的数据准确标识恶意行为的可信度。 可接受的值为0– 100, 100 的值为最高。|
-|说明|字符串| 由指示器表示的威胁的简短说明 (100 个字符或更少)。 **必需。**|
-|diamondModel|[diamondModel](#diamondModel-values)|此指示器所在的菱形模型的面积。 可取值为：`unknown`、`adversary`、`capability`、`infrastructure` 或 `victim`。|
+|description|String| 由指示器表示的威胁的简短说明 (100 个字符或更少)。 **必需。**|
+|diamondModel|[diamondModel](#diamondmodel-values)|此指示器所在的菱形模型的面积。 可取值为：`unknown`、`adversary`、`capability`、`infrastructure` 或 `victim`。|
 |expirationDateTime|DateTimeOffset| 指示指示器过期时间的日期/时间字符串。 所有指标都必须具有到期日期, 以避免系统中的陈旧指示器持久化。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 **必需。**|
 |externalId|String| 将指示器与指示器提供程序的系统 (例如外键) 相结合的标识号。 |
 |id|String|当指标为引入时由系统创建。 生成的 GUID/唯一标识符。 只读。|
 |ingestedDateTime|DateTimeOffset| 当指标为引入时由系统进行标记。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |isActive|Boolean| 用于停用系统中的指示器。 默认情况下, 提交的任何指示器都设置为活动状态。 但是, 提供程序可能会将此设置为 "False" 的现有指示器提交到系统中停用指示器。|
-|killChain|[killChain](#killChain-values)集合|一个 JSON 字符串数组, 用于描述此指示器针对终止链上的哪个点或点。 有关确切值, 请参阅下面的 "killChain 值"。 |
+|killChain|[killChain](#killchain-values)集合|一个 JSON 字符串数组, 用于描述此指示器针对终止链上的哪个点或点。 有关确切值, 请参阅下面的 "killChain 值"。 |
 |knownFalsePositives|String|指示符可能导致误报的情况。 这应该是可读的文本。|
-|lastReportedDateTime|DateTimeOffset|上次发现指示器的时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|malwareFamilyNames|String collection|与指示器关联的恶意软件系列名称 (如果存在)。 如果所有可能都可以通过 Windows Defender 安全智能[威胁百科全书](https://www.microsoft.com/wdsi/threats)找到, microsoft 将首选 microsoft 恶意软件系列名称。|
+|lastReportedDateTime|DateTimeOffset|上次发现指示器的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|malwareFamilyNames|String 集合|与指示器关联的恶意软件系列名称 (如果存在)。 如果所有可能都可以通过 Windows Defender 安全智能[威胁百科全书](https://www.microsoft.com/wdsi/threats)找到, microsoft 将首选 microsoft 恶意软件系列名称。|
 |passiveOnly|Boolean |确定该指示符是否应触发对最终用户可见的事件。 如果设置为 "true", 则安全工具将不会通知最终用户已发生 "命中"。 通常情况下, 这通常被视为审核或静默模式, 安全产品只需记录已发生的匹配项, 但不会执行该操作。 默认值为 false。 |
 |度|Int32| 一个整数, 表示由指示器中的数据标识的恶意行为的严重程度。 可接受的值为0– 5, 其中5为最严重, 0 表示根本不严重。 默认值为3。 |
 |tags|String 集合|存储任意标记/关键字的字符串的 JSON 数组。 |
 |targetProduct|String|一个字符串值, 表示应应用指标的单个安全产品。 可接受的值`Azure Sentinel`为:。 **Required**|
-|threatType|[threatType](#threatType-values)| 每个指示器都必须具有有效的指示器威胁类型。 可取值为：`Botnet`、`C2`、`CryptoMining`、`Darknet`、`DDoS`、`MaliciousUrl`、`Malware`、`Phishing`、`Proxy`、`PUA`、`WatchList`。 **必需。** |
-|tlpLevel|[tlpLevel](#tlpLevel-values)| 指标的流量灯协议值。 可取值为：`unknown`、`white`、`green`、`amber` 或 `red`。 **必需。**|
+|threatType|[threatType](#threattype-values)| 每个指示器都必须具有有效的指示器威胁类型。 可取值为：`Botnet`、`C2`、`CryptoMining`、`Darknet`、`DDoS`、`MaliciousUrl`、`Malware`、`Phishing`、`Proxy`、`PUA`、`WatchList`。 **必需。** |
+|tlpLevel|[tlpLevel](#tlplevel-values)| 指标的流量灯协议值。 可取值为：`unknown`、`white`、`green`、`amber` 或 `red`。 **必需。**|
 
 ### <a name="indicator-observables---email"></a>指标 observable-电子邮件
 
@@ -80,7 +80,7 @@ ms.locfileid: "30482264"
 |:-------------|:------------|:------------|
 |fileCompileDateTime|DateTimeOffset|编译文件时的日期/时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |fileCreatedDateTime|DateTimeOffset| 创建文件时的日期/时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息, 并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|fileHashType|string| 存储在 fileHashValue 中的哈希的类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash` 或 `ctph`。|
+|fileHashType|字符串| 存储在 fileHashValue 中的哈希的类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash` 或 `ctph`。|
 |fileHashValue|String| 文件哈希值。|
 |fileMutexName|String| 在基于文件的检测中使用的 Mutex 名称。|
 |fileName|String|如果该标记是基于文件的, 则为该文件的名称。 可以用逗号分隔多个文件名。 |
@@ -145,8 +145,8 @@ ms.locfileid: "30482264"
 |Darknet|指标是 Darknet 节点/网络的指标。
 |DDoS|与活动或即将到来的 DDoS 市场活动相关的指标。|
 |MaliciousUrl|为恶意软件提供服务的 URL。|
-|受到|描述恶意文件的指示器。|
-|骗术|与仿冒活动相关的指示器。|
+|恶意软件|描述恶意文件的指示器。|
+|网络钓鱼|与仿冒活动相关的指示器。|
 |代理|指标是代理服务的指标。|
 |PUA|可能有害的应用程序。|
 |WatchList|这是在不能准确确定威胁或需要手动解释的情况下放置指示器的常规存储桶。 将数据提交到系统的合作伙伴通常不应使用此方法。|

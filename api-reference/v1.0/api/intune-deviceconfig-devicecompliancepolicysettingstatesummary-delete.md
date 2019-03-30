@@ -4,12 +4,12 @@ description: 删除 deviceCompliancePolicySettingStateSummary。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 118b6a82d6b811863aee6e6878aef0a0d874bd9e
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 0a33ec4629b98ab5824a4c7b25e6c268d9c980d0
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258231"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988341"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>删除 deviceCompliancePolicySettingStateSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "30258231"
 删除 [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -39,7 +39,7 @@ DELETE /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComp
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
