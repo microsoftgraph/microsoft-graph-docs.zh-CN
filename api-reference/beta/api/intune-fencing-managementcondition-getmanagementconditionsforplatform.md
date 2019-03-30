@@ -4,31 +4,31 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31eb739da3c29b95b77a9754045213d0abced3f7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 36ca767ebbea212c017812b93d7c41c2700d0949
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141543"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987431"
 ---
-# <a name="getmanagementconditionsforplatform-function"></a><span data-ttu-id="794d1-103">getManagementConditionsForPlatform 函数</span><span class="sxs-lookup"><span data-stu-id="794d1-103">getManagementConditionsForPlatform function</span></span>
+# <a name="getmanagementconditionsforplatform-function"></a><span data-ttu-id="28fb9-103">getManagementConditionsForPlatform 函数</span><span class="sxs-lookup"><span data-stu-id="28fb9-103">getManagementConditionsForPlatform function</span></span>
 
-> <span data-ttu-id="794d1-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="794d1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="28fb9-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="28fb9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="794d1-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="794d1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="28fb9-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="28fb9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="794d1-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="794d1-106">Not yet documented</span></span>
+<span data-ttu-id="28fb9-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="28fb9-106">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="794d1-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="794d1-107">Prerequisites</span></span>
-<span data-ttu-id="794d1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="794d1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="28fb9-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="28fb9-107">Prerequisites</span></span>
+<span data-ttu-id="28fb9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="28fb9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="794d1-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="794d1-110">Permission type</span></span>|<span data-ttu-id="794d1-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="794d1-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="28fb9-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="28fb9-110">Permission type</span></span>|<span data-ttu-id="28fb9-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="28fb9-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="794d1-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="794d1-112">Delegated (work or school account)</span></span>|<span data-ttu-id="794d1-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="794d1-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="794d1-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="794d1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="794d1-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="794d1-115">Not supported.</span></span>|
-|<span data-ttu-id="794d1-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="794d1-116">Application</span></span>|<span data-ttu-id="794d1-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="794d1-117">Not supported.</span></span>|
+|<span data-ttu-id="28fb9-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="28fb9-112">Delegated (work or school account)</span></span>|<span data-ttu-id="28fb9-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="28fb9-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="28fb9-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="28fb9-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="28fb9-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="28fb9-115">Not supported.</span></span>|
+|<span data-ttu-id="28fb9-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="28fb9-116">Application</span></span>|<span data-ttu-id="28fb9-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="28fb9-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="794d1-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="794d1-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="28fb9-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="28fb9-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,35 +38,35 @@ GET /deviceManagement/managementConditions/getManagementConditionsForPlatform
 GET /deviceManagement/managementConditions/{managementConditionId}/managementConditionStatements/{managementConditionStatementId}/managementConditions/getManagementConditionsForPlatform
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="794d1-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="794d1-119">Request headers</span></span>
-|<span data-ttu-id="794d1-120">标头</span><span class="sxs-lookup"><span data-stu-id="794d1-120">Header</span></span>|<span data-ttu-id="794d1-121">值</span><span class="sxs-lookup"><span data-stu-id="794d1-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="28fb9-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="28fb9-119">Request headers</span></span>
+|<span data-ttu-id="28fb9-120">标头</span><span class="sxs-lookup"><span data-stu-id="28fb9-120">Header</span></span>|<span data-ttu-id="28fb9-121">值</span><span class="sxs-lookup"><span data-stu-id="28fb9-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="794d1-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="794d1-122">Authorization</span></span>|<span data-ttu-id="794d1-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="794d1-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="794d1-124">Accept</span><span class="sxs-lookup"><span data-stu-id="794d1-124">Accept</span></span>|<span data-ttu-id="794d1-125">application/json</span><span class="sxs-lookup"><span data-stu-id="794d1-125">application/json</span></span>|
+|<span data-ttu-id="28fb9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="28fb9-122">Authorization</span></span>|<span data-ttu-id="28fb9-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="28fb9-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="28fb9-124">接受</span><span class="sxs-lookup"><span data-stu-id="28fb9-124">Accept</span></span>|<span data-ttu-id="28fb9-125">application/json</span><span class="sxs-lookup"><span data-stu-id="28fb9-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="794d1-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="794d1-126">Request body</span></span>
-<span data-ttu-id="794d1-127">在请求 URL 中，提供以下查询参数（含值）。</span><span class="sxs-lookup"><span data-stu-id="794d1-127">In the request URL, provide the following query parameters with values.</span></span>
-<span data-ttu-id="794d1-128">下表显示了可用于此函数的参数。</span><span class="sxs-lookup"><span data-stu-id="794d1-128">The following table shows the parameters that can be used with this function.</span></span>
+## <a name="request-body"></a><span data-ttu-id="28fb9-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="28fb9-126">Request body</span></span>
+<span data-ttu-id="28fb9-127">在请求 URL 中，提供以下查询参数（含值）。</span><span class="sxs-lookup"><span data-stu-id="28fb9-127">In the request URL, provide the following query parameters with values.</span></span>
+<span data-ttu-id="28fb9-128">下表显示了可用于此函数的参数。</span><span class="sxs-lookup"><span data-stu-id="28fb9-128">The following table shows the parameters that can be used with this function.</span></span>
 
-|<span data-ttu-id="794d1-129">属性</span><span class="sxs-lookup"><span data-stu-id="794d1-129">Property</span></span>|<span data-ttu-id="794d1-130">类型</span><span class="sxs-lookup"><span data-stu-id="794d1-130">Type</span></span>|<span data-ttu-id="794d1-131">说明</span><span class="sxs-lookup"><span data-stu-id="794d1-131">Description</span></span>|
+|<span data-ttu-id="28fb9-129">属性</span><span class="sxs-lookup"><span data-stu-id="28fb9-129">Property</span></span>|<span data-ttu-id="28fb9-130">类型</span><span class="sxs-lookup"><span data-stu-id="28fb9-130">Type</span></span>|<span data-ttu-id="28fb9-131">说明</span><span class="sxs-lookup"><span data-stu-id="28fb9-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="794d1-132">platform</span><span class="sxs-lookup"><span data-stu-id="794d1-132">platform</span></span>|[<span data-ttu-id="794d1-133">devicePlatformType</span><span class="sxs-lookup"><span data-stu-id="794d1-133">devicePlatformType</span></span>](../resources/intune-shared-deviceplatformtype.md)|<span data-ttu-id="794d1-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="794d1-134">Not yet documented</span></span>|
+|<span data-ttu-id="28fb9-132">platform</span><span class="sxs-lookup"><span data-stu-id="28fb9-132">platform</span></span>|[<span data-ttu-id="28fb9-133">devicePlatformType</span><span class="sxs-lookup"><span data-stu-id="28fb9-133">devicePlatformType</span></span>](../resources/intune-shared-deviceplatformtype.md)|<span data-ttu-id="28fb9-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="28fb9-134">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="794d1-135">响应</span><span class="sxs-lookup"><span data-stu-id="794d1-135">Response</span></span>
-<span data-ttu-id="794d1-136">如果成功, 此函数会在`200 OK`响应正文中返回响应代码和[managementCondition](../resources/intune-fencing-managementcondition.md)集合。</span><span class="sxs-lookup"><span data-stu-id="794d1-136">If successful, this function returns a `200 OK` response code and a [managementCondition](../resources/intune-fencing-managementcondition.md) collection in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="28fb9-135">响应</span><span class="sxs-lookup"><span data-stu-id="28fb9-135">Response</span></span>
+<span data-ttu-id="28fb9-136">如果成功, 此函数会在`200 OK`响应正文中返回响应代码和[managementCondition](../resources/intune-fencing-managementcondition.md)集合。</span><span class="sxs-lookup"><span data-stu-id="28fb9-136">If successful, this function returns a `200 OK` response code and a [managementCondition](../resources/intune-fencing-managementcondition.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="794d1-137">示例</span><span class="sxs-lookup"><span data-stu-id="794d1-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="28fb9-137">示例</span><span class="sxs-lookup"><span data-stu-id="28fb9-137">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="794d1-138">请求</span><span class="sxs-lookup"><span data-stu-id="794d1-138">Request</span></span>
-<span data-ttu-id="794d1-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="794d1-139">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="28fb9-138">请求</span><span class="sxs-lookup"><span data-stu-id="28fb9-138">Request</span></span>
+<span data-ttu-id="28fb9-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="28fb9-139">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/managementConditions/getManagementConditionsForPlatform(platform='parameterValue')
 ```
 
-### <a name="response"></a><span data-ttu-id="794d1-140">响应</span><span class="sxs-lookup"><span data-stu-id="794d1-140">Response</span></span>
-<span data-ttu-id="794d1-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="794d1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="28fb9-140">响应</span><span class="sxs-lookup"><span data-stu-id="28fb9-140">Response</span></span>
+<span data-ttu-id="28fb9-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="28fb9-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
