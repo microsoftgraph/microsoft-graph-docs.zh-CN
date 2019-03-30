@@ -4,31 +4,31 @@ description: 读取 androidManagedStoreAccountEnterpriseSettings 对象的属性
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ded6c18d599b5a5429523e61207389561c14b20c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9b25663aab2152ee9674322ae8fabfa1fc820191
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164251"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985681"
 ---
-# <a name="get-androidmanagedstoreaccountenterprisesettings"></a><span data-ttu-id="bfc96-103">获取 androidManagedStoreAccountEnterpriseSettings</span><span class="sxs-lookup"><span data-stu-id="bfc96-103">Get androidManagedStoreAccountEnterpriseSettings</span></span>
+# <a name="get-androidmanagedstoreaccountenterprisesettings"></a><span data-ttu-id="92bc9-103">获取 androidManagedStoreAccountEnterpriseSettings</span><span class="sxs-lookup"><span data-stu-id="92bc9-103">Get androidManagedStoreAccountEnterpriseSettings</span></span>
 
-> <span data-ttu-id="bfc96-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="bfc96-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="92bc9-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="92bc9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="bfc96-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="bfc96-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="92bc9-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="92bc9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bfc96-106">读取[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="bfc96-106">Read properties and relationships of the [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object.</span></span>
+<span data-ttu-id="92bc9-106">读取[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="92bc9-106">Read properties and relationships of the [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="bfc96-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="bfc96-107">Prerequisites</span></span>
-<span data-ttu-id="bfc96-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="bfc96-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="92bc9-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="92bc9-107">Prerequisites</span></span>
+<span data-ttu-id="92bc9-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="92bc9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bfc96-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="bfc96-110">Permission type</span></span>|<span data-ttu-id="bfc96-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="bfc96-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="92bc9-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="92bc9-110">Permission type</span></span>|<span data-ttu-id="92bc9-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="92bc9-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="bfc96-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bfc96-112">Delegated (work or school account)</span></span>|<span data-ttu-id="bfc96-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="bfc96-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="bfc96-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bfc96-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bfc96-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="bfc96-115">Not supported.</span></span>|
-|<span data-ttu-id="bfc96-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="bfc96-116">Application</span></span>|<span data-ttu-id="bfc96-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="bfc96-117">Not supported.</span></span>|
+|<span data-ttu-id="92bc9-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="92bc9-112">Delegated (work or school account)</span></span>|<span data-ttu-id="92bc9-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="92bc9-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="92bc9-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="92bc9-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="92bc9-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="92bc9-115">Not supported.</span></span>|
+|<span data-ttu-id="92bc9-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="92bc9-116">Application</span></span>|<span data-ttu-id="92bc9-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="92bc9-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="bfc96-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bfc96-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="92bc9-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="92bc9-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +37,31 @@ ms.locfileid: "30164251"
 GET /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="bfc96-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="bfc96-119">Optional query parameters</span></span>
-<span data-ttu-id="bfc96-120">此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="bfc96-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="92bc9-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="92bc9-119">Optional query parameters</span></span>
+<span data-ttu-id="92bc9-120">此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="92bc9-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="bfc96-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="bfc96-121">Request headers</span></span>
-|<span data-ttu-id="bfc96-122">标头</span><span class="sxs-lookup"><span data-stu-id="bfc96-122">Header</span></span>|<span data-ttu-id="bfc96-123">值</span><span class="sxs-lookup"><span data-stu-id="bfc96-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="92bc9-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="92bc9-121">Request headers</span></span>
+|<span data-ttu-id="92bc9-122">标头</span><span class="sxs-lookup"><span data-stu-id="92bc9-122">Header</span></span>|<span data-ttu-id="92bc9-123">值</span><span class="sxs-lookup"><span data-stu-id="92bc9-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="bfc96-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="bfc96-124">Authorization</span></span>|<span data-ttu-id="bfc96-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="bfc96-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="bfc96-126">Accept</span><span class="sxs-lookup"><span data-stu-id="bfc96-126">Accept</span></span>|<span data-ttu-id="bfc96-127">application/json</span><span class="sxs-lookup"><span data-stu-id="bfc96-127">application/json</span></span>|
+|<span data-ttu-id="92bc9-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="92bc9-124">Authorization</span></span>|<span data-ttu-id="92bc9-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="92bc9-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="92bc9-126">接受</span><span class="sxs-lookup"><span data-stu-id="92bc9-126">Accept</span></span>|<span data-ttu-id="92bc9-127">application/json</span><span class="sxs-lookup"><span data-stu-id="92bc9-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bfc96-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="bfc96-128">Request body</span></span>
-<span data-ttu-id="bfc96-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="bfc96-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="92bc9-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="92bc9-128">Request body</span></span>
+<span data-ttu-id="92bc9-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="92bc9-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bfc96-130">响应</span><span class="sxs-lookup"><span data-stu-id="bfc96-130">Response</span></span>
-<span data-ttu-id="bfc96-131">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)对象。</span><span class="sxs-lookup"><span data-stu-id="bfc96-131">If successful, this method returns a `200 OK` response code and [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="92bc9-130">响应</span><span class="sxs-lookup"><span data-stu-id="92bc9-130">Response</span></span>
+<span data-ttu-id="92bc9-131">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)对象。</span><span class="sxs-lookup"><span data-stu-id="92bc9-131">If successful, this method returns a `200 OK` response code and [androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bfc96-132">示例</span><span class="sxs-lookup"><span data-stu-id="bfc96-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="92bc9-132">示例</span><span class="sxs-lookup"><span data-stu-id="92bc9-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="bfc96-133">请求</span><span class="sxs-lookup"><span data-stu-id="bfc96-133">Request</span></span>
-<span data-ttu-id="bfc96-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="bfc96-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="92bc9-133">请求</span><span class="sxs-lookup"><span data-stu-id="92bc9-133">Request</span></span>
+<span data-ttu-id="92bc9-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="92bc9-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccountEnterpriseSettings
 ```
 
-### <a name="response"></a><span data-ttu-id="bfc96-135">响应</span><span class="sxs-lookup"><span data-stu-id="bfc96-135">Response</span></span>
-<span data-ttu-id="bfc96-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="bfc96-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="92bc9-135">响应</span><span class="sxs-lookup"><span data-stu-id="92bc9-135">Response</span></span>
+<span data-ttu-id="92bc9-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="92bc9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
