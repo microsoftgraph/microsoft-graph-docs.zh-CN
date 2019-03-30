@@ -4,12 +4,12 @@ description: 删除 defaultManagedAppProtection。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a4544068b7a9dd8e92a96340569d95baadf7c50
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 72157172ab612fcaf63d12531d6f1252c6dfac55
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260779"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989048"
 ---
 # <a name="delete-defaultmanagedappprotection"></a>删除 defaultManagedAppProtection
 
@@ -18,7 +18,7 @@ ms.locfileid: "30260779"
 删除 [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -39,7 +39,7 @@ DELETE /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProte
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

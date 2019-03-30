@@ -4,12 +4,12 @@ description: 创建新的 depOnboardingSetting 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d32f988763de3134d5be0e9b13db0f524d82a37
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7eab98e4549e1aa1f0e97258c51e1063b85f4f85
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164384"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989517"
 ---
 # <a name="create-deponboardingsetting"></a>创建 depOnboardingSetting
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164384"
 创建新的[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ POST /deviceManagement/depOnboardingSettings
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供 depOnboardingSetting 对象的 JSON 表示形式。
@@ -56,13 +56,13 @@ POST /deviceManagement/depOnboardingSettings
 |lastModifiedDateTime|DateTimeOffset|在载入服务时。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|服务上次使用 Intune syned 时|
 |lastSyncTriggeredDateTime|DateTimeOffset|Intune 上次请求同步时。|
-|shareTokenWithSchoolDataSyncService|布尔|是否启用了与学校数据同步服务的 Dep 令牌共享。|
+|shareTokenWithSchoolDataSyncService|Boolean|是否启用了与学校数据同步服务的 Dep 令牌共享。|
 |lastSyncErrorCode|Int32|上一次 dep 同步期间 Apple 报告的错误代码。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 令牌类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
-|tokenName|字符串|Dep 令牌的友好名称|
+|tokenName|String|Dep 令牌的友好名称|
 |syncedDeviceCount|Int32|获取同步的设备计数|
-|dataSharingConsentGranted|布尔|为使用 Apple Dep 服务进行数据共享而授予的同意|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|dataSharingConsentGranted|Boolean|为使用 Apple Dep 服务进行数据共享而授予的同意|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 
 

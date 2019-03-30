@@ -4,12 +4,12 @@ description: 更新 deviceConfigurationConflictSummary 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ceff42a7f1c495769756cd8b8077918b51eade9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cfe4b4d9925b64e35a5e79fad5f1f124350a1ee4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149999"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989237"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>更新 deviceConfigurationConflictSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149999"
 更新[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)对象的属性。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md)对象的 JSON 表示形式。
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|与给定设置发生冲突的策略集|
 |id|String|此组冲突策略的 id。 此 id 是 ConflictingDeviceConfigurations 中的所有策略的 id, 以字典顺序分隔, 由下划线分隔。|
-|contributingSettings|String collection|与给定策略发生冲突的设置集|
+|contributingSettings|String 集合|与给定策略发生冲突的设置集|
 |deviceCheckinsImpacted|Int32|受冲突策略和设置影响的签入次数|
 
 

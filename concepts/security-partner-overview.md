@@ -4,12 +4,12 @@ description: '这篇文章介绍了由 Microsoft Graph 安全性 API 启用的�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f584e58c957e92ee4e61a6a12e333fc659428c48
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 312c13cdad2ce8341095a87d33f4a5b01f7e1eef
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30367153"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003697"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>与 Microsoft Graph 安全 API 合作-技术合作伙伴机会
 
@@ -61,9 +61,8 @@ Microsoft 以两种主要方式启用技术合作伙伴集成。
 
 - 聚合来自多个提供程序的警报以创建事件。
 - 访问其他上下文以通知警报优先顺序和响应。
-
-使警报状态在管理警报的系统之间保持同步。 </br>
-深入了解安全状态, 并提供有关如何使用安全分数进行改进的建议。
+- 使警报状态在管理警报的系统之间保持同步。
+- 深入了解安全状态, 并提供有关如何使用安全分数进行改进的建议。
 
 ### <a name="share-threat-intelligence-to-enable-custom-detections"></a>共享威胁智能以启用自定义检测
 

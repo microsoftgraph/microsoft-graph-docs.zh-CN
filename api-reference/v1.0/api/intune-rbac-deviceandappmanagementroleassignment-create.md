@@ -4,12 +4,12 @@ description: 创建新的 deviceAndAppManagementRoleAssignment 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c83c8521fc4c72b2dd0e96a607efa0f1bb9de8a0
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 04797f0674ff824d2881ffdfa2500d3d3e7c79bc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255645"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989059"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>创建 deviceAndAppManagementRoleAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255645"
 创建新的 [deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) 对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
@@ -39,7 +39,7 @@ POST /deviceManagement/roleAssignments
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 deviceAndAppManagementRoleAssignment 对象的 JSON 表示形式。
@@ -51,7 +51,7 @@ POST /deviceManagement/roleAssignments
 |id|String|实体的键。 此为只读，且自动生成。 继承自 [roleAssignment](../resources/intune-rbac-roleassignment.md)|
 |displayName|String|角色分配的显示或友好名称。 继承自 [roleAssignment](../resources/intune-rbac-roleassignment.md)|
 |description|String|角色分配的说明。 继承自 [roleAssignment](../resources/intune-rbac-roleassignment.md)|
-|resourceScopes|String collection|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。 继承自 [roleAssignment](../resources/intune-rbac-roleassignment.md)|
+|resourceScopes|String 集合|角色作用域成员安全组的 ID 列表。  这些是来自 Azure Active Directory 的 ID。 继承自 [roleAssignment](../resources/intune-rbac-roleassignment.md)|
 |members|String collection|角色成员安全组的 ID 列表。 这些是 Azure Active Directory 中的 ID。|
 
 
