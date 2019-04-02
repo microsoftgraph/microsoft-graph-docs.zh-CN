@@ -1,26 +1,26 @@
 ---
 title: 列出联系人
-description: 获取用户的邮箱中的联系人。
+description: 获取用户邮箱中的联系人。
 localization_priority: Normal
-author: dkershaw10
+author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8c444a818b933196ddc46ae0d12d64355656bd7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a1eaeac682f511bf9b895e06e6a19b3bc728a38c
+ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510909"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026008"
 ---
 # <a name="list-contacts"></a>列出联系人
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户的邮箱中的联系人。
+获取用户邮箱中的联系人。
 
-有两种方案，其中应用程序可在另一个用户的联系人文件夹中获取联系人：
+在以下两种情况下, 应用可以在其他用户的 "联系人" 文件夹中获取联系人:
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享联系人文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
+* 如果该应用程序具有应用程序权限，或者
+* 如果应用程序具有来自一个用户的相应委派权限, 而另一个用户与该用户共享了一个联系人文件夹, 或者, 已向该用户授予了对该用户的委派访问[权限](#permissions)。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
 
 
 ## <a name="permissions"></a>权限
@@ -53,16 +53,16 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-您可以使用`$filter`筛选器的联系人的查询参数基于其电子邮件地址：
+您可以使用`$filter`查询参数根据其电子邮件地址筛选联系人:
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-请注意，您可以使用`$filter`， `any`，和`eq`仅子的**address**属性**emailAddresses**集合中的实例上的运算符。 即您不能筛选所依据的**名称**或任何其他子属性的实例**emailAddresses**，也可以应用任何其他运算符或运行`filter`，如`ne`， `le`，和`startswith()`。
+请注意, 只能在`$filter`emailAddresses `any`集合中的`eq`实例的**address**子属性上使用、和运算符。 **** 也就是说, 不能对 emailAddresses 实例的**名称**或任何其他子属性进行筛选, 也不**** 能将任何其他运算符或函数`filter`应用于 ( `ne`如`le`、和`startswith()`)。
 
-有关一般信息`$filter`查询参数，请参阅[OData 查询参数](/graph/query-parameters)。
+有关`$filter`查询参数的一般信息, 请参阅[OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -74,10 +74,10 @@ GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[联系人](../resources/contact.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[contact](../resources/contact.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例获取已登录的用户的联系人的**displayName**和**emailAddresses**属性。
+下面的示例获取已登录用户的联系人的**displayName**和**emailAddresses**属性。
 <!-- {
   "blockType": "request",
   "name": "get_contacts"

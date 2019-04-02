@@ -1,19 +1,21 @@
 ---
 title: 列出实例
-description: '获取指定的时间范围内的事件的实例 （匹配项）。 如果该事件是`SeriesMaster`类型，这将返回 '
+description: 获取指定的时间范围的事件的实例（发生次数）。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6e18572a0c9f8d7d20ad8f3740559d645e4fa9e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a697baa177060c3c885eb7a804620c147a0923fd
+ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977015"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026001"
 ---
 # <a name="list-instances"></a>列出实例
 
-获取指定的时间范围的事件的实例（发生次数）。如果事件的类型是 `SeriesMaster`，这将返回在指定的时间范围内事件的发生次数和异常。
+获取指定的时间范围的事件的实例（发生次数）。 
+
+如果事件的类型是 `seriesMaster`，这将返回在指定的时间范围内事件的发生次数和异常。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,8 +52,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|startDateTime|字符串|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
-|endDateTime|字符串|时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。|
+|startDateTime|String|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
+|endDateTime|String|时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。|
 
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 ## <a name="request-headers"></a>请求标头
@@ -68,18 +70,20 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Event](../resources/event.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+下面的示例在指定的时间范围内, 事件是定期系列的主事件的事件发生和异常。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGUzYRgWAAA="],
   "name": "get_instances"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}/instances
+GET https://graph.microsoft.com/v1.0/me/events/AAMkAGUzYRgWAAA=/instances?startDateTime=2019-04-08T09:00:00.0000000&endDateTime=2019-04-30T09:00:00.0000000&$select=subject,bodyPreview,seriesMasterId,type,recurrence,start,end
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
+  "name": "get_instances",
   "truncated": true,
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
@@ -87,22 +91,79 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/instances
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 354
 
 {
-  "value": [
-    {
-      "originalStartTimeZone": "originalStartTimeZone-value",
-      "originalEndTimeZone": "originalEndTimeZone-value",
-      "responseStatus": {
-        "response": "",
-        "time": "datetime-value"
-      },
-      "iCalUId": "iCalUId-value",
-      "reminderMinutesBeforeStart": 99,
-      "isReminderOn": true
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/events('AAMkAGUzYRgWAAA%3D')/instances(subject,bodyPreview,seriesMasterId,type,recurrence,start,end)",
+    "value": [
+        {
+            "@odata.etag": "W/\"x3IAvB5fbUWf4XNcBFLNUwAAKuA3yQ==\"",
+            "id": "AAMkAGUzYAgI1sE1TatAAEYAAAAAlNFb2CNPe0ucP9you",
+            "subject": "Review strategy for Q3",
+            "bodyPreview": "Changing meeting from 4/15 to 4/16.",
+            "seriesMasterId": "AAMkAGUzYRgWAAA=",
+            "type": "exception",
+            "recurrence": null,
+            "start": {
+                "dateTime": "2019-04-16T20:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2019-04-16T21:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        },
+        {
+            "@odata.etag": "W/\"x3IAvB5fbUWf4XNcBFLNUwAAKuA3yQ==\"",
+            "id": "AAMkAGUzYAgI1ru1JMcAAEYAAAAAlNFb2CNPe0ucP9you",
+            "subject": "Review strategy for Q3",
+            "bodyPreview": "",
+            "seriesMasterId": "AAMkAGUzYRgWAAA=",
+            "type": "occurrence",
+            "recurrence": null,
+            "start": {
+                "dateTime": "2019-04-08T20:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2019-04-08T21:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        },
+        {
+            "@odata.etag": "W/\"x3IAvB5fbUWf4XNcBFLNUwAAKuA3yQ==\"",
+            "id": "AAMkAGUzYAgI1sa1do_AAEYAAAAAlNFb2CNPe0ucP9you",
+            "subject": "Review strategy for Q3",
+            "bodyPreview": "",
+            "seriesMasterId": "AAMkAGUzYRgWAAA=",
+            "type": "occurrence",
+            "recurrence": null,
+            "start": {
+                "dateTime": "2019-04-22T20:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2019-04-22T21:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        },
+        {
+            "@odata.etag": "W/\"x3IAvB5fbUWf4XNcBFLNUwAAKuA3yQ==\"",
+            "id": "AAMkAGUzYAgI1sw1n3PAAEYAAAAAlNFb2CNPe0ucP9you",
+            "subject": "Review strategy for Q3",
+            "bodyPreview": "",
+            "seriesMasterId": "AAMkAGUzYRgWAAA=",
+            "type": "occurrence",
+            "recurrence": null,
+            "start": {
+                "dateTime": "2019-04-29T20:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2019-04-29T21:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        }
+    ]
 }
 ```
 
