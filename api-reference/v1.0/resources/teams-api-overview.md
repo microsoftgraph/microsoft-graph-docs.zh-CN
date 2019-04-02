@@ -4,24 +4,24 @@ description: Microsoft Teams 是 Office 365 中基于聊天的工作区，可提
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 07281fef3a3e7dd5ee396bb49a0409c23d57c45f
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: b0462b350df52a85a1a452be6ce38def86600eb3
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994438"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003739"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
 
 
-Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、规划器计划等对象的内置访问权限。
+Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定于团队的日历、文件、OneNote 笔记、规划器计划、排班计划等对象的内置访问权限。
 
 ## <a name="key-resources-in-microsoft-teams"></a>Microsoft Teams 中的重要资源
 
 | 资源 | 方法 |
 |:---------------|:--------|
-|[team](../resources/team.md)| [列出你的团队](../api/user-list-joinedteams.md)、[列出所有团队](/graph/teams-list-all-teams)、[创建](../api/team-put-teams.md)、[读取](../api/team-get.md)、[更新](../api/team-update.md)、[删除](/graph/api/group-delete?view=graph-rest-1.0)、[克隆](../api/team-clone.md)、[归档](../api/team-archive.md)[取消归档](../api/team-unarchive.md) |
+|[团队](../resources/team.md)| [列出你的团队](../api/user-list-joinedteams.md)、[列出所有团队](/graph/teams-list-all-teams)、[创建](../api/team-put-teams.md)、[读取](../api/team-get.md)、[更新](../api/team-update.md)、[删除](/graph/api/group-delete?view=graph-rest-1.0)、[克隆](../api/team-clone.md)、[归档](../api/team-archive.md)[取消归档](../api/team-unarchive.md) |
 |[组](../resources/group.md)| [添加成员](../api/group-post-members.md)、 [移除成员](../api/group-delete-members.md)、[添加所有者](../api/group-post-owners.md)、 [移除所有者](../api/group-delete-owners.md)、[获取文件](drive.md)、[获取笔记本](/graph/api/resources/notebook?view=graph-rest-1.0)、[获取计划](plannergroup.md)、[获取日历](event.md) |
 |[频道](../resources/channel.md)|[列出](../api/channel-list.md)、[创建](../api/channel-post.md)、[读取](../api/channel-get.md)、[更新](../api/channel-patch.md)、[删除](../api/channel-delete.md)|
 |[teamsTab](../resources/teamstab.md) |[列出](../api/teamstab-list.md)、[创建](../api/teamstab-add.md)、[读取](../api/teamstab-get.md)、[更新](../api/teamstab-update.md)、[删除](../api/teamstab-delete.md) |
@@ -29,6 +29,11 @@ Microsoft Teams 是 Office 365 中基于聊天的工作区，可提供对特定�
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [列出](../api/teamsappinstallation-list.md)、[安装](../api/teamsappinstallation-add.md)、[升级](../api/teamsappinstallation-delete.md)、[移除](../api/teamsappinstallation-delete.md) |
 | [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta)（预览）| [列出](/graph/api/channel-list-messages?view=graph-rest-beta)、[发送](/graph/api/channel-post-chatmessage?view=graph-rest-beta)、[读取](/graph/api/channel-get-message?view=graph-rest-beta) |
 | [调用](/graph/api/resources/call?view=graph-rest-beta)（预览）| [应答](/graph/api/call-answer?view=graph-rest-beta)、[拒绝](/graph/api/call-reject?view=graph-rest-beta)、[重定向](/graph/api/call-redirect?view=graph-rest-beta)、[静音](/graph/api/call-mute?view=graph-rest-beta)、[取消静音](/graph/api/call-unmute?view=graph-rest-beta)、[更新元数据](/graph/api/call-updatemetadata?view=graph-rest-beta)、[更改屏幕共享角色](/graph/api/call-changescreensharingrole?view=graph-rest-beta)、[列出参与者](/graph/api/call-list-participants?view=graph-rest-beta)、[邀请参与者](/graph/api/participant-invite?view=graph-rest-beta)、[将所有参与者设为静音](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[计划](/graph/api/resources/schedule?view=graph-rest-beta)（预览）| [创建或替换](/graph/api/team-put-schedule?view=graph-rest-beta)、[获取](/graph/api/schedule-get?view=graph-rest-beta)、[共享](/graph/api/schedule-share?view=graph-rest-beta) |
+|[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta)（预览）| [创建](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta)、[列出](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta)、[获取](/graph/api/schedulinggroup-get?view=graph-rest-beta)、[替换](/graph/api/schedulinggroup-put?view=graph-rest-beta)、[删除](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
+|[排班](/graph/api/resources/shift?view=graph-rest-beta)（预览）| [创建](/graph/api/schedule-post-shifts?view=graph-rest-beta)、[列出](/graph/api/schedule-list-shifts?view=graph-rest-beta)、[获取](/graph/api/shift-get?view=graph-rest-beta)、[替换](/graph/api/shift-put?view=graph-rest-beta)、[删除](/graph/api/shift-delete?view=graph-rest-beta) |
+|[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta)（预览）| [创建](/graph/api/schedule-post-timesoff?view=graph-rest-beta)、[列出](/graph/api/schedule-list-timesoff?view=graph-rest-beta)、[获取](/graph/api/timeoff-get?view=graph-rest-beta)、[替换](/graph/api/timeoff-put?view=graph-rest-beta)、[删除](/graph/api/timeoff-delete?view=graph-rest-beta) |
+|[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta)（预览）| [创建](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta)、[列出](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta)、[获取](/graph/api/timeoffreason-get?view=graph-rest-beta)、[替换](/graph/api/timeoffreason-put?view=graph-rest-beta)、[删除](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
 
 ## <a name="teams-and-groups"></a>用户和组
 
