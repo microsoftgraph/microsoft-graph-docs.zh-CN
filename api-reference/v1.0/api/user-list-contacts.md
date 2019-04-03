@@ -1,24 +1,24 @@
 ---
 title: 列出联系人
-description: 从已登录的用户默认联系人文件夹中获取联系人的集合。
-author: dkershaw10
+description: 从已登录用户的默认联系人文件夹中获取联系人集合。
+author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3f0f7fd86987e3d2923d8ea81a8ca7fbf87900b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3c648e753c3959d3b22072edbd4b796d0f8c154b
+ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984134"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026022"
 ---
 # <a name="list-contacts"></a>列出联系人
 
-从已登录的用户默认联系人文件夹中获取联系人的集合。
+从已登录用户的默认联系人文件夹中获取联系人集合。
 
-有两种方案，其中应用程序可在另一个用户的联系人文件夹中获取联系人：
+在以下两种情况下，应用可以获取其他用户的联系人文件夹中的联系人：
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享联系人文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
+* 如果该应用程序具有应用程序权限，或者
+* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
 
 
 ## <a name="permissions"></a>权限
@@ -51,16 +51,16 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-您可以使用`$filter`筛选器的联系人的查询参数基于其电子邮件地址：
+可以使用 `$filter` 查询参数根据联系人的电子邮件地址来筛选联系人：
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-请注意，您可以使用`$filter`， `any`，和`eq`仅子的**address**属性**emailAddresses**集合中的实例上的运算符。 即您不能筛选所依据的**名称**或任何其他子属性的实例**emailAddresses**，也可以应用任何其他运算符或运行`filter`，如`ne`， `le`，和`startswith()`。
+请注意，可以仅针对 **emailAddresses** 集合的实例的 **address** 子属性使用 `$filter`、`any` 和 `eq` 运算符。 也就是说，不能筛选 **emailAddresses** 的实例的 **name** 或其他子属性，也不能对 `filter` 应用任何其他运算符或函数，例如 `ne`、`le` 和 `startswith()`。
 
-有关一般信息`$filter`查询参数，请参阅[OData 查询参数](/graph/query-parameters)。
+有关 `$filter` 查询参数的一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
 
 
