@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 2ff7e9f52c7f8671bd2246bedc9ac213bff0c859
-ms.sourcegitcommit: 10adbecb5f82556e5acc2301fc226ae6884e142b
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693692"
 documentType: LandingData
 title: Microsoft Graph 文档
 metadata:
@@ -22,155 +16,155 @@ abstract:
   description: Microsoft Graph API 提供有统一的可编程性模型，你可将其用于为组织和消费者生成应用，与数百万用户的数据进行交互。 你可以使用 Microsoft Graph REST API 访问 Azure Active Directory、Office 365 服务、企业移动性和安全性服务、Windows 10 服务、Dynamics 365 等中的数据。 阅读我们的文档，详细了解如何使用 Microsoft Graph API。
   aside:
     image:
-      alt: 
+      alt: null
       height: 110
       src: ./images/index/whatsnew-video.png
       width: 250
-    title: Microsoft Graph 新增功能 (12:39)
-    href: https://www.youtube.com/watch?v=3X10r2VVLCg
+    title: 'Microsoft Graph 新增功能 (12:39)'
+    href: 'https://www.youtube.com/watch?v=3X10r2VVLCg'
     width: 250
 sections:
-- items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /graph/overview
+            html: <p>了解 Microsoft Graph 的功能并查看常见的 API 用例。</p>
+            image:
+              src: ./images/index/i_get-started.svg
+            title: Microsoft Graph 概述
+          - href: /graph/overview-major-services
+            html: <p>熟悉 Microsoft Graph 中提供的主要服务和功能。</p>
+            image:
+              src: ./images/index/i_overview.svg
+            title: 服务和功能
+          - href: 'https://developer.microsoft.com/graph/graph-explorer/'
+            html: <p>通过 Microsoft Graph 提出请求并查看响应。</p>
+            image:
+              src: ./images/index/i_queries.svg
+            title: Graph 浏览器
+          - href: /graph/use-the-api
+            html: <p>了解如何开始使用 Microsoft Graph API 访问 Microsoft 云服务资源。</p>
+            image:
+              src: ./images/index/i_code-edit.svg
+            title: 使用 API
+          - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
+            html: <p>使用 Microsoft Graph REST API v1.0 满足你的特定生产需求。</p>
+            image:
+              src: ./images/index/i_api-reference.svg
+            title: Microsoft Graph REST API v1.0
+          - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
+            html: <p>试用 Microsoft Graph beta 终结点。</p>
+            image:
+              src: ./images/index/i_api.svg
+            title: Microsoft Graph REST API Beta
+  - title: 支持的平台
     items:
-    - href: /graph/overview
-      html: <p>了解 Microsoft Graph 的功能并查看常见的 API 用例。</p>
-      image:
-        src: ./images/index/i_get-started.svg
-      title: Microsoft Graph 概述
-    - href: /graph/overview-major-services
-      html: <p>熟悉 Microsoft Graph 中提供的主要服务和功能。</p>
-      image:
-        src: ./images/index/i_overview.svg
-      title: 服务和功能
-    - href: https://developer.microsoft.com/graph/graph-explorer/
-      html: <p>通过 Microsoft Graph 提出请求并查看响应。</p>
-      image:
-        src: ./images/index/i_queries.svg
-      title: Graph 浏览器
-    - href: /graph/use-the-api
-      html: <p>了解如何开始使用 Microsoft Graph API 访问 Microsoft 云服务资源。</p>
-      image:
-        src: ./images/index/i_code-edit.svg
-      title: 使用 API
-    - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
-      html: <p>使用 Microsoft Graph REST API v1.0 满足你的特定生产需求。</p>
-      image:
-        src: ./images/index/i_api-reference.svg
-      title: Microsoft Graph REST API v1.0
-    - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
-      html: <p>试用 Microsoft Graph beta 终结点。</p>
-      image:
-        src: ./images/index/i_api.svg
-      title: Microsoft Graph REST API Beta
-- title: 支持的平台
-  items:
-  - type: paragraph
-    text: 查找 SDK 并进行平台特定的分步培训练习，指导你了解基本的 Microsoft Graph 概念，包括如何创建使用 Azure AD 身份验证并通过 Microsoft Graph 访问数据的简单应用程序。
-  - type: table
-    style: dataMatrix
-    columns:
-    - image:
-        src: ./images/index/logo_android.svg
-      title: Android
-    - image:
-        src: ./images/index/angular.svg
-      title: Angular
-    - image:
-        src: ./images/index/logo_NET.svg
-      title: ASP.NET
-    - image:
-        src: ./images/index/logo_ios.svg
-      title: iOS
-    - image:
-        src: ./images/index/logo_java.svg
-      title: Java
-    - image:
-        src: ./images/index/logo_js.svg
-      title: JavaScript
-    - image:
-        src: ./images/index/logo_nodejs.svg
-      title: Node.js
-    - image:
-        src: ./images/index/logo_php.svg
-      title: PHP
-    - image:
-        src: ./images/index/logo_python.svg
-      title: Python
-    - image:
-        src: ./images/index/logo_ruby.svg
-      title: Ruby
-    - image:
-        src: ./images/index/logo_windows.svg
-      title: UWP
-    - image:
-        src: ./images/index/logo_xamarin.svg
-      title: Xamarin
-    rows:
-    - title: 快速入门
-      values:
-      - href: https://developer.microsoft.com/graph/quick-start?platform=option-android
-      - href: https://developer.microsoft.com/graph/quick-start?platform=option-angular
-      - href: https://developer.microsoft.com/graph/quick-start?platform=option-dotnet
-      - href: https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift
-      - href: 
-      - href: 
-      - href: https://developer.microsoft.com/graph/quick-start?platform=option-node
-      - href: https://developer.microsoft.com/graph/quick-start?platform=option-php
-      - href: https://developer.microsoft.com/graph/quick-start?platform=option-Python
-      - href: https://developer.microsoft.com/graph/quick-start?platform=option-ruby
-      - href: https://developer.microsoft.com/graph/quick-start?platform=option-windowsuniversal
-      - href: https://developer.microsoft.com/graph/quick-start?platform=option-xamarin
-    - title: 教程
-      values:
-      - href: 
-      - href: /graph/tutorials/angular
-      - href: /graph/tutorials/aspnet
-      - href: 
-      - href: 
-      - href: 
-      - href: /graph/tutorials/node
-      - href: /graph/tutorials/php
-      - href: /graph/tutorials/python
-      - href: /graph/tutorials/ruby
-      - href: /graph/tutorials/uwp
-      - href: 
-    - title: SDK
-      values:
-      - href: https://github.com/microsoftgraph/msgraph-sdk-android
-      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
-      - href: https://www.nuget.org/packages/Microsoft.Graph
-      - href: https://github.com/microsoftgraph/msgraph-sdk-objc
-      - href: https://github.com/microsoftgraph/msgraph-sdk-java
-      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
-      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
-      - href: https://github.com/microsoftgraph/msgraph-sdk-php
-      - href: 
-      - href: https://github.com/microsoftgraph/msgraph-sdk-ruby
-      - href: https://www.nuget.org/packages/Microsoft.Graph
-      - href: https://www.nuget.org/packages/Microsoft.Graph
-- title: 资源
-  items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: 查找 SDK 并进行平台特定的分步培训练习，指导你了解基本的 Microsoft Graph 概念，包括如何创建使用 Azure AD 身份验证并通过 Microsoft Graph 访问数据的简单应用程序。
+      - type: table
+        style: dataMatrix
+        columns:
+          - image:
+              src: ./images/index/logo_android.svg
+            title: Android
+          - image:
+              src: ./images/index/angular.svg
+            title: Angular
+          - image:
+              src: ./images/index/logo_NET.svg
+            title: ASP.NET
+          - image:
+              src: ./images/index/logo_ios.svg
+            title: iOS
+          - image:
+              src: ./images/index/logo_java.svg
+            title: Java
+          - image:
+              src: ./images/index/logo_js.svg
+            title: JavaScript
+          - image:
+              src: ./images/index/logo_nodejs.svg
+            title: Node.js
+          - image:
+              src: ./images/index/logo_php.svg
+            title: PHP
+          - image:
+              src: ./images/index/logo_python.svg
+            title: Python
+          - image:
+              src: ./images/index/logo_ruby.svg
+            title: Ruby
+          - image:
+              src: ./images/index/logo_windows.svg
+            title: UWP
+          - image:
+              src: ./images/index/logo_xamarin.svg
+            title: Xamarin
+        rows:
+          - title: 快速入门
+            values:
+              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-android'
+              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-angular'
+              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-dotnet'
+              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift'
+              - href: null
+              - href: null
+              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-node'
+              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-php'
+              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-Python'
+              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-ruby'
+              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-windowsuniversal'
+              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-xamarin'
+          - title: 教程
+            values:
+              - href: /graph/tutorials/android
+              - href: /graph/tutorials/angular
+              - href: /graph/tutorials/aspnet
+              - href: null
+              - href: null
+              - href: null
+              - href: /graph/tutorials/node
+              - href: /graph/tutorials/php
+              - href: /graph/tutorials/python
+              - href: /graph/tutorials/ruby
+              - href: /graph/tutorials/uwp
+              - href: /graph/tutorials/xamarin
+          - title: SDK
+            values:
+              - href: 'https://github.com/microsoftgraph/msgraph-sdk-android'
+              - href: 'https://github.com/microsoftgraph/msgraph-sdk-javascript'
+              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
+              - href: 'https://github.com/microsoftgraph/msgraph-sdk-objc'
+              - href: 'https://github.com/microsoftgraph/msgraph-sdk-java'
+              - href: 'https://github.com/microsoftgraph/msgraph-sdk-javascript'
+              - href: 'https://github.com/microsoftgraph/msgraph-sdk-javascript'
+              - href: 'https://github.com/microsoftgraph/msgraph-sdk-php'
+              - href: null
+              - href: 'https://github.com/microsoftgraph/msgraph-sdk-ruby'
+              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
+              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
+  - title: 资源
     items:
-    - href: /graph/changelog
-      html: <p>了解 v1.0 和 beta 版 Microsoft Graph API 中的更改内容。</p>
-      image:
-        src: ./images/index/i_backlog.svg
-      title: 更改日志
-    - href: https://developer.microsoft.com/graph/blogs/
-      html: <p>阅读博客，获取与新 API、重大更改等相关的最新消息。</p>
-      image:
-        src: ./images/index/i_blog.svg
-      title: Microsoft Graph API
-    - href: /graph/known-issues
-      html: <p>了解与 Microsoft Graph 相关的已知问题。</p>
-      image:
-        src: ./images/index/i_investigate.svg
-      title: 已知问题
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: /graph/changelog
+            html: <p>了解 v1.0 和 beta 版 Microsoft Graph API 中的更改内容。</p>
+            image:
+              src: ./images/index/i_backlog.svg
+            title: 更改日志
+          - href: 'https://developer.microsoft.com/graph/blogs/'
+            html: <p>阅读博客，获取与新 API、重大更改等相关的最新消息。</p>
+            image:
+              src: ./images/index/i_blog.svg
+            title: Microsoft Graph API
+          - href: /graph/known-issues
+            html: <p>了解与 Microsoft Graph 相关的已知问题。</p>
+            image:
+              src: ./images/index/i_investigate.svg
+            title: 已知问题
