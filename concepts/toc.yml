@@ -30,6 +30,8 @@ items:
           - name: 教程
             href: tutorials.md
             items:
+              - name: Android
+                href: /graph/tutorials/android
               - name: Angular
                 href: /graph/tutorials/angular
               - name: ASP.NET
@@ -48,6 +50,8 @@ items:
                 href: /graph/tutorials/react
               - name: UWP
                 href: /graph/tutorials/uwp
+              - name: Xamarin
+                href: /graph/tutorials/xamarin
       - name: 学习
         expanded: true
         items:
