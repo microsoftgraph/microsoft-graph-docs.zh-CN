@@ -3,12 +3,12 @@ title: 使用查询参数自定义响应
 description: Microsoft Graph 提供可选的查询参数，可用于指定和控制响应中返回的数据量。支持以下查询参数。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 749415c25e03e3c29cdfb4b48ff66c562de0b84a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: aff7fa2cb36c1ab5a5464c09221178e2a5e88ab1
+ms.sourcegitcommit: 953895b28b6bae6e17eead938565fde289c49ef7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818912"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479907"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>使用查询参数自定义响应
 
@@ -30,7 +30,7 @@ Microsoft Graph API 操作可以支持以下一个或多个 OData 系统查询�
 | [$filter](#filter-parameter)       | 筛选结果（行）。|[`/users?$filter=startswith(givenName,'J')`][filter-example]
 | [$format](#format-parameter)       | 返回指定媒体格式的结果。|[`/users?$format=json`][format-example]
 | [$orderby](#orderby-parameter)     | 对结果进行排序。|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search-parameter)       | 根据搜索条件返回结果。目前支持用于 **messages** 和 **person** 集合。|[`/me/messages?$search=pizza`][search-example]
+| [$search](#search-parameter)       | 返回基于搜索条件的结果。 目前支持**邮件**和**人员**集。|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | 筛选属性（列）。|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | 对结果集建立索引。一些 API 也使用它来实现分页，并且可以与 `$top` 一起使用来手动对结果分页。 | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | 设置结果的页面大小。 |[`/users?$top=2`][top-example]
@@ -58,6 +58,14 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
+### <a name="escaping-single-quotes"></a>转义单引号
+
+对于使用单引号的请求，如果任何参数值也包含单引号，则必须进行双转义；否则，由于语法无效，请求将失败。 在示例中，字符串值 `let''s meet for lunch?` 进行了单引号转义。
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet for lunch?'
+```
+
 ## <a name="count-parameter"></a>count 参数
 
 使用 `$count` 查询参数以包括集合中项总数的计数，以及从 Microsoft Graph 返回的数据值页。 
@@ -68,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
+[在 Graph 浏览器中试用](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
 >**注意：** 派生自 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 的资源集合（如 [user](/graph/api/resources/user?view=graph-rest-1.0) 或 [group](/graph/api/resources/group?view=graph-rest-1.0) 集合）不支持 `$count`。
@@ -85,7 +93,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
+[在 Graph 浏览器中试用](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
 使用一些资源集合，还可以添加 `$select` 参数，指定要在扩展资源中返回的属性。下面的示例执行与上一示例几乎相同的查询，不同之处在于使用 [`$select`](#select-parameter) 语句将为扩展子项返回的属性限制为 **id** 和 **name** 属性。
 
@@ -169,7 +177,7 @@ GET https://graph.microsoft.com/v1.0/users?$orderby=displayName
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
 ```
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
+[在 Graph 浏览器中试用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
 
 若要以升序或降序对结果进行排序，请向字段名称追加 `asc` 或 `desc`，并用空格隔开。例如，`?$orderby=name%20desc`。
 
@@ -179,7 +187,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
+[在 Graph 浏览器中试用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
 如果指定 $filter，服务器会推断结果的排序顺序。 如果同时使用 `$orderby` 和 `$filter`，由于服务器始终推断 `$filter` 结果的排序顺序，因此必须先在 `$orderby` 中列出 `$filter` 的属性，然后再列出其他任何属性，且必须按照它们在 `$filter` 参数中的顺序列出这些属性。 
 
@@ -189,7 +197,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[在 Graph 浏览器中试调用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+[在 Graph 浏览器中试用](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
  > **注意：** 使用从 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) 派生的 Azure AD 资源（如 [user](/graph/api/resources/user?view=graph-rest-1.0) 和 [group](/graph/api/resources/group?view=graph-rest-1.0)），则不能合并 `$orderby` 与 `$filter` 表达式。 
 
@@ -220,18 +228,18 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 |:-------------------------|:------------|:---------|
 | **attachment**           | 电子邮件附件的文件名。|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
 | **bcc**           | 电子邮件的 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
-| **body**           | 电子邮件正文。|[`me/messages?$search="body:excitement"`][search-body-example]
+| **正文**           | 电子邮件正文。|[`me/messages?$search="body:excitement"`][search-body-example]
 | **cc**           | 电子邮件的 **cc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
 | **from**           | 电子邮件的发件人，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
 | **hasAttachment** | 如果电子邮件附件不是内联附件，则为 true；否则，为 false。 |[`me/messages?$search="hasAttachments=true"`][search-from-example]
 | **importance**           | 发件人在发送邮件时可以指定的电子邮件重要性。 可取值包括 `low`、`medium` 或 `high`。|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
-| **Kind**           | 邮件类型。 可取值包括 `contacts`、`docs`、`email`、`faxes`、`im`、`journals`、`meetings`、`notes`、`posts`、`rssfeeds`、`tasks` 或 `voicemail`。|[`me/messages?$search="kind:voicemail"`][search-kind-example]
+| **kind**           | 邮件类型。 可取值包括 `contacts`、`docs`、`email`、`faxes`、`im`、`journals`、`meetings`、`notes`、`posts`、`rssfeeds`、`tasks` 或 `voicemail`。|[`me/messages?$search="kind:voicemail"`][search-kind-example]
 | **participants**           | 电子邮件的 **from**、**to**、**cc** 和 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="participants:danas"`][search-part-example]
 | **received**           | 收件人接收电子邮件的日期。|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
 | **recipients**           | 电子邮件的 **to**、**cc** 和 **bcc** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
 | **sent**           | 发件人发送电子邮件的日期。|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
 | **size**           | 邮件大小（以字节为单位）。|[`me/messages?$search="size:1..500000"`][search-size-example]
-| **subject**           | 电子邮件主题行中的文本。 .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
+| **subject**           | 电子邮件主题行中的文本。 。|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
 | **to**           | 电子邮件的 **to** 字段，可指定为 SMTP 地址、显示名称或别名。|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
 
 
@@ -239,10 +247,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 - [Exchange 中的可搜索属性](https://docs.microsoft.com/zh-CN/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)。
 
-- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/zh-CN/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- 
-  [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+- [Exchange 2016 中的就地电子数据展示的邮件属性和搜索运算符](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>对 person 集合使用 $search
 
