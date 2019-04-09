@@ -4,12 +4,12 @@ description: '获取登录用户的邮箱（包括“已删除邮件”和“待
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 828dac4a345eaba3bb902ba5d96dec4852501033
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3a29392318de78c1e1ff5bd4ad4b560bc9c460f4
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523566"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518530"
 ---
 # <a name="list-messages"></a>List messages
 
@@ -17,14 +17,14 @@ ms.locfileid: "29523566"
 
 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。 
 
-具体而言，您可以对邮件筛选和获取仅包含[提及](../resources/mention.md)的登录用户的那些。
+特别是, 您可以对邮件进行筛选, 并只获取那些包含已[](../resources/mention.md)登录用户的说明。
 
-请注意，默认情况下，`GET /me/messages`操作不会返回**提到**属性。 使用`$expand`查询参数[找到一条消息中的每个提及的详细信息](../api/message-get.md#request-2)。
+请注意, 默认情况下`GET /me/messages` , 该操作不会返回**提及**属性。 使用`$expand`查询参数[在邮件中查找每个提及的详细信息](../api/message-get.md#request-2)。
 
-有两种应用程序，另一个用户的邮件文件夹中收到消息的情况：
+在以下两种情况下, 应用可以在其他用户的邮件文件夹中获取邮件:
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享邮件文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+* 如果该应用程序具有应用程序权限，或者
+* 如果应用程序具有来自一个用户的相应委派权限, 而另一个用户与该用户共享了一个邮件文件夹, 或者, 已向该用户授予了对该用户的委派访问[权限](#permissions)。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 
 ## <a name="permissions"></a>权限
@@ -32,8 +32,8 @@ ms.locfileid: "29523566"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Mail.Read、Mail.ReadWrite    |
-|委派（个人 Microsoft 帐户） | Mail.Read、Mail.ReadWrite    |
+|委派（工作或学校帐户） | user.readbasic.all、邮件、读取、封写    |
+|委派（个人 Microsoft 帐户） | user.readbasic.all、邮件、读取、封写    |
 |应用程序 | Mail.Read、Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -54,7 +54,7 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-若要获取包括**提及**的用户的用户的邮箱中的所有邮件：
+若要获取用户邮箱中包含用户**提及**的所有邮件, 请执行以下操作:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -65,7 +65,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-您可以使用`$filter`查询**mentionsPreview**属性来获取这些消息是否有提及登录用户的参数。
+您可以使用`$filter` **mentionsPreview**属性上的查询参数来获取那些提及已登录用户的消息。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -78,13 +78,13 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[消息](../resources/message.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[message](../resources/message.md)对象集合。
 
 此请求的默认页面大小为 10 封邮件。 
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-第一个示例获取已登录的用户邮箱中的顶部的 10 条消息。
+第一个示例获取已登录用户的邮箱中的前10封邮件。
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -124,9 +124,9 @@ Content-length: 317
 
 
 ##### <a name="request-2"></a>请求 2
-下一个示例为那些提及用户筛选器已登录的用户邮箱中的所有邮件。 它使用`$select`的响应中返回的属性的每条消息子集。 
+下一个示例将对登录用户邮箱中的所有邮件进行筛选, 以查找那些提及该用户的邮件。 它使用`$select`返回响应中每个邮件的属性子集。 
 
-此示例还包含 URL 的查询参数字符串中的空格字符编码。
+该示例还合并了查询参数字符串中的空格字符的 URL 编码。
 <!-- {
   "blockType": "request",
   "name": "get_messages_with_mentions"
@@ -187,7 +187,7 @@ Content-length: 987
 ```
 
 ##### <a name="request-3"></a>请求 3
-第三个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以获取每封邮件的**正文**和**uniqueBody**属性以文本格式。
+第三个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取每个邮件的**body**和**uniqueBody**属性。
 <!-- {
   "blockType": "request",
   "name": "get_messages_in_text"

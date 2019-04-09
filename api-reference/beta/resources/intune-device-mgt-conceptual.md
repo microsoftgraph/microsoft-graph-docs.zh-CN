@@ -4,20 +4,20 @@ description: 列出用于定义租户组织的管理设备的 Intune 终结点 (
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a25be51643e87d644f37c08c9382fd203d45f5b5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cf2c6ccec71eed225b87a52a3e5941f54b606b01
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170586"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518565"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
-- [管理员同意](intune-devices-adminconsent.md)
+- [管理员许可](intune-devices-adminconsent.md)
 - [管理员许可状态](intune-devices-adminconsentstate.md)
 - [应用日志集下载详情](intune-devices-applogcollectiondownloaddetails.md)
 - [应用日志集请求](intune-devices-applogcollectionrequest.md)
@@ -50,19 +50,51 @@ ms.locfileid: "30170586"
 - [基于 Device Guard 虚拟化的安全硬件要求状态](intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)
 - [基于 Device Guard 虚拟化的安全状态](intune-devices-deviceguardvirtualizationbasedsecuritystate.md)
 - [设备运行状况证明状态](intune-devices-devicehealthattestationstate.md)
+- [设备管理抽象复杂设置定义](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
+- [设备管理抽象复杂设置实例](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
+- [设备管理布尔值设置实例](intune-deviceintent-devicemanagementbooleansettinginstance.md)
+- [设备管理集合设置定义](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
+- [设备管理集合设置实例](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
+- [设备管理复杂设置定义](intune-deviceintent-devicemanagementcomplexsettingdefinition.md)
+- [设备管理复杂设置实例](intune-deviceintent-devicemanagementcomplexsettinginstance.md)
+- [设备管理约束](intune-deviceintent-devicemanagementconstraint.md)
+- [设备管理枚举约束](intune-deviceintent-devicemanagementenumconstraint.md)
+- [设备管理枚举值](intune-deviceintent-devicemanagementenumvalue.md)
 - [设备管理 Exchange 访问状态](intune-devices-devicemanagementexchangeaccessstate.md)
 - [设备管理 Exchange 访问状态原因](intune-devices-devicemanagementexchangeaccessstatereason.md)
+- [设备管理整数设置实例](intune-deviceintent-devicemanagementintegersettinginstance.md)
+- [设备管理意向](intune-deviceintent-devicemanagementintent.md)
+- [设备管理意向分配](intune-deviceintent-devicemanagementintentassignment.md)
+- [设备管理意向设备设置状态摘要](intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)
+- [设备管理意向设备状态](intune-deviceintent-devicemanagementintentdevicestate.md)
+- [设备管理意向设备状态摘要](intune-deviceintent-devicemanagementintentdevicestatesummary.md)
+- [设备管理意向设置类别](intune-deviceintent-devicemanagementintentsettingcategory.md)
+- [设备管理意向用户状态](intune-deviceintent-devicemanagementintentuserstate.md)
+- [设备管理意向用户状态摘要](intune-deviceintent-devicemanagementintentuserstatesummary.md)
 - [设备管理脚本](intune-devices-devicemanagementscript.md)
 - [设备管理脚本分配](intune-devices-devicemanagementscriptassignment.md)
 - [设备管理脚本设备状态](intune-devices-devicemanagementscriptdevicestate.md)
 - [设备管理脚本组分配](intune-devices-devicemanagementscriptgroupassignment.md)
 - [设备管理脚本运行摘要](intune-devices-devicemanagementscriptrunsummary.md)
 - [设备管理脚本用户状态](intune-devices-devicemanagementscriptuserstate.md)
+- [设备管理设置布尔约束](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
+- [设备管理设置类别](intune-deviceintent-devicemanagementsettingcategory.md)
+- [设备管理设置定义](intune-deviceintent-devicemanagementsettingdefinition.md)
+- [设备管理设置依赖性](intune-deviceintent-devicemanagementsettingdependency.md)
+- [设备管理设置实例](intune-deviceintent-devicemanagementsettinginstance.md)
+- [设备管理设置 integer 约束](intune-deviceintent-devicemanagementsettingintegerconstraint.md)
+- [设备管理设置 regex 约束](intune-deviceintent-devicemanagementsettingregexconstraint.md)
+- [设备管理设置字符串长度约束](intune-deviceintent-devicemanagementsettingstringlengthconstraint.md)
+- [设备管理设置 xml 约束](intune-deviceintent-devicemanagementsettingxmlconstraint.md)
+- [设备管理字符串设置实例](intune-deviceintent-devicemanagementstringsettinginstance.md)
 - [设备管理订阅状态](intune-devices-devicemanagementsubscriptionstate.md)
 - [设备管理订阅](intune-devices-devicemanagementsubscriptions.md)
+- [设备管理模板](intune-deviceintent-devicemanagementtemplate.md)
+- [设备管理模板设置类别](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
 - [设备管理疑难解答错误详情](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [设备管理疑难解答错误资源](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [设备管理疑难解答事件](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
+- [Device 管理意向值类型](intune-deviceintent-devicemanangementintentvaluetype.md)
 - [设备操作系统摘要](intune-devices-deviceoperatingsystemsummary.md)
 - [设备保护概述](intune-devices-deviceprotectionoverview.md)
 - [设备注册状态](intune-devices-deviceregistrationstate.md)
@@ -75,15 +107,15 @@ ms.locfileid: "30170586"
 - [硬件信息](intune-devices-hardwareinformation.md)
 - [运行状况](intune-devices-healthstate.md)
 - [每小时计划](intune-devices-hourlyschedule.md)
-- [已本地化的通知邮件](intune-notification-localizednotificationmessage.md)
+- [已本地化的通知消息](intune-notification-localizednotificationmessage.md)
 - [查找设备操作结果](intune-devices-locatedeviceactionresult.md)
 - [位置管理条件](intune-fencing-locationmanagementcondition.md)
 - [登录用户](intune-devices-loggedonuser.md)
 - [丢失模式状态](intune-devices-lostmodestate.md)
-- [受管理设备](intune-devices-manageddevice.md)
+- [托管的设备](intune-devices-manageddevice.md)
 - [托管设备清理设置](intune-devices-manageddevicecleanupsettings.md)
 - [托管设备型号和制造商](intune-devices-manageddevicemodelsandmanufacturers.md)
-- [托管设备概述](intune-devices-manageddeviceoverview.md)
+- [托管的设备概述](intune-devices-manageddeviceoverview.md)
 - [托管的设备所有者类型](intune-devices-manageddeviceownertype.md)
 - [托管的设备合作伙伴报告的运行状况](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [托管设备远程操作](intune-devices-manageddeviceremoteaction.md)
@@ -120,6 +152,12 @@ ms.locfileid: "30170586"
 - [重置密码操作结果](intune-devices-resetpasscodeactionresult.md)
 - [撤销 Apple VPP 许可证操作结果](intune-devices-revokeapplevpplicensesactionresult.md)
 - [运行计划](intune-devices-runschedule.md)
+- [安全基线合规性状态](intune-deviceintent-securitybaselinecompliancestate.md)
+- [安全基准设备状态](intune-deviceintent-securitybaselinedevicestate.md)
+- [安全基准设置状态](intune-deviceintent-securitybaselinesettingstate.md)
+- [安全比较基准状态](intune-deviceintent-securitybaselinestate.md)
+- [安全基准状态摘要](intune-deviceintent-securitybaselinestatesummary.md)
+- [安全基准模板](intune-deviceintent-securitybaselinetemplate.md)
 - [共享 Apple 设备用户](intune-devices-sharedappledeviceuser.md)
 - [一元管理条件表达式](intune-fencing-unarymanagementconditionexpression.md)
 - [一元管理条件表达式运算符类型](intune-fencing-unarymanagementconditionexpressionoperatortype.md)

@@ -4,12 +4,12 @@ description: 'deviceManagement 资源代表其内容因工作流而异的容器,
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 23ea35468bbff4010b5ed089b086fbb6cd7a9845
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b23285738d8a4268ce55d056ccd49defb823369a
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163026"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518538"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -24,6 +24,7 @@ deviceManagement 资源代表其内容因工作流而异的容器, 包括:
 - 公司条款和条件 
 - 公司注册配置文件
 - 设备配置设置
+- 设备意向设置
 - 设备管理
 - 电子 SIM (ESIM)
 - 防御
@@ -46,7 +47,7 @@ deviceManagement 资源代表其内容因工作流而异的容器, 包括:
 |**设备管理**|
 |[sendCustomNotificationToCompanyPortal 操作](../api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md)|无|尚未记录|
 |**载入**|
-|[verifyWindowsEnrollmentAutoDiscovery function](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|布尔值|尚未记录|
+|[verifyWindowsEnrollmentAutoDiscovery 函数](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|Boolean|尚未记录|
 |**基于角色的访问控制 (RBAC)**|
 |[getEffectivePermissions 函数](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|检索当前验证的用户的有效权限|
 |[getRoleScopeTagsByIds 函数](../api/intune-shared-devicemanagement-getrolescopetagsbyids.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合|尚未记录|
@@ -56,10 +57,10 @@ deviceManagement 资源代表其内容因工作流而异的容器, 包括:
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|与设备关联的唯一标识符。|
+|id|String|与设备关联的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|Guid|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|布尔|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
+|legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
 |maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
@@ -105,6 +106,11 @@ deviceManagement 资源代表其内容因工作流而异的容器, 包括:
 |iosUpdateStatuses|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) 集合|此帐户的 IOS 软件更新安装状态。|
 |ndesConnectors|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)集合|此帐户的 Ndes 连接器的集合。|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|软件更新状态摘要。|
+|**设备意向**|
+|意向|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)集合|设备管理意向|
+|settingDefinitions|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)集合|设备管理意向设置定义|
+|模版|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)集合|可用模板|
+|类别|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)集合|可用类别|
 |**设备管理**|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Apple 推送通知证书。|
 |dataSharingConsents|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)集合|数据共享同意。|
@@ -114,7 +120,7 @@ deviceManagement 资源代表其内容因工作流而异的容器, 包括:
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) 集合|托管设备列表。|
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)集合|与租户的设备远程操作审核列表。|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)集合|租户中受影响的恶意软件的列表。|
-|**注册**|
+|**开户**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)集合|每个租户的多个 DEP 令牌集合。|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)集合|导入的设备标识。|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) 集合|导入的 Windows AutoPilot 设备的集合。|

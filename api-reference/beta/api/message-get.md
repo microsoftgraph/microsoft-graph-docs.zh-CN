@@ -1,28 +1,28 @@
 ---
 title: 获取邮件
-description: 检索的属性和 message 对象的关系。
+description: 检索 message 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e5f7b8c73ac9e121a1f0cbe1bf4200326d2d4e29
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 8d15a1f07ae42e9c203a26a970896fea0d360494
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643197"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518516"
 ---
 # <a name="get-message"></a>获取邮件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和[message](../resources/message.md)对象的关系。
+检索[message](../resources/message.md)对象的属性和关系。
 
-例如，您可以收到一条消息，展开邮件中所有[提及](../resources/mention.md)的实例。
+例如, 您可以收到一条消息, 并在邮件中展开所有[提及](../resources/mention.md)的实例。
 
-有两种方案，其中应用程序可以在另一个用户的邮件文件夹中收到一条消息：
+在以下两种情况下, 应用可以在其他用户的邮件文件夹中获取邮件:
 
 * 如果该应用程序具有应用程序权限，或者
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享邮件文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+* 如果应用程序具有来自一个用户的相应委派权限, 而另一个用户与该用户共享了一个邮件文件夹, 或者, 已向该用户授予了对该用户的委派访问[权限](#permissions)。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 由于**邮件**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**邮件**实例中的自定义属性和扩展数据。
 
@@ -32,13 +32,14 @@ ms.locfileid: "29643197"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Mail.Read    |
-|委派（个人 Microsoft 帐户） | Mail.Read    |
+|委派（工作或学校帐户） | user.readbasic.all、mail. Read    |
+|委派（个人 Microsoft 帐户） | user.readbasic.all、mail. Read    |
 |应用程序 | Mail.Read |
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要获取指定的消息：<!-- { "blockType": "ignored" } -->
+若要获取指定的邮件:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
 GET /users/{id | userPrincipalName}/messages/{id}
@@ -46,7 +47,8 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-收到一条消息，并展开邮件中的所有提及：<!-- { "blockType": "ignored" } -->
+若要获取邮件并展开邮件中的所有提及内容, 请执行以下操作:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=mentions
 GET /users/{id | userPrincipalName}/messages/{id}?$expand=mentions
@@ -57,7 +59,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-您可以使用`$expand`上的**提到**导航属性获取邮件中包含的每个[提及](../resources/mention.md)的详细信息的消息的查询参数扩展。
+您可以使用 " `$expand` **提及**导航" 属性上的查询参数, 以获取一条消息, 其中包含已展开邮件中每个[提及](../resources/mention.md)的详细信息。
 
 
 
@@ -75,7 +77,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [message](../resources/message.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-第一个示例获取指定的消息。 它不指定任何标头，以指示要返回的正文的所需的格式。
+第一个示例获取指定的邮件。 它不指定任何标头以指示要返回的正文的所需格式。
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
@@ -85,8 +87,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
 ```
 ##### <a name="response-1"></a>响应 1
-下面是一个响应示例。 **正文**和**uniqueBody**属性中的默认 HTML 格式返回。
-注意： 为了简单起见截断如下所示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 **body**和**uniqueBody**属性以默认的 HTML 格式返回。
+注意: 为简洁起见, 此处显示的响应对象将被截断。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,7 +117,7 @@ Content-length: 523
 ```
 
 ##### <a name="request-2"></a>请求 2
-在下一个示例中，已登录的用户是 Dana Swope。 该示例演示 Dana 的邮箱中获取指定的消息中的所有提及的详细信息。
+在下一个示例中, 登录用户是 Dana Swope。 此示例显示了如何获取 Dana 的邮箱中指定邮件中所有提及内容的详细信息。
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
@@ -225,7 +227,7 @@ Content-length: 2248
 
 ##### <a name="request-3"></a>请求 3
 
-第三个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以获取的**正文**和**uniqueBody**指定的消息的文本格式。
+第三个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取指定邮件的**正文**和**uniqueBody** 。
 
 <!-- {
   "blockType": "request",
@@ -240,7 +242,7 @@ Prefer: outlook.body-content-type="text"
 
 ##### <a name="response-3"></a>响应 3
 
-下面是一个响应示例。 注意： 该响应包括`Preference-Applied: outlook.body-content-type`标头以确认`Prefer: outlook.body-content-type`请求标头。
+下面是一个响应示例。 注意: 响应包括用于确认`Preference-Applied: outlook.body-content-type` `Prefer: outlook.body-content-type`请求标头的标头。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -271,7 +273,7 @@ Content-length: 1550
 
 ##### <a name="request-4"></a>请求 4
 
-第四个示例演示如何获取特定邮件的 Internet 邮件标头。  
+第四个示例演示如何获取特定邮件的 Internet 邮件头。  
 
 <!-- {
   "blockType": "request",
@@ -285,7 +287,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkAGVmMDEz')?$select=interne
 
 ##### <a name="response-4"></a>响应 4
 
-下面是一个响应示例。 注意： 响应对象中的 Internet 邮件头数减少了为简便起见。
+下面是一个响应示例。 注意: 响应对象中的 Internet 邮件头数已降低为简洁起见。
 
 <!-- {
   "blockType": "response",
@@ -330,7 +332,7 @@ Content-type: application/json
 
 - [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
 - [使用开放扩展向用户添加自定义数据（预览）](/graph/extensibility-open-users)
-- [使用架构扩展向组添加自定义数据（预览）](/graph/extensibility-schema-groups)
+- [使用架构扩展向组添加自定义数据 (预览)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
