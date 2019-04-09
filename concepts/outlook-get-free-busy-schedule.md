@@ -4,12 +4,12 @@ description: 在工作或学校设置中，一种常见方案是查看用户何�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 8ecf31ec74327d4f5fbd9d585eef24fcaec60709
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.openlocfilehash: 5e8fd1cd96c852c07c87bcaa35396fdd0fa5857d
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869195"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518495"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>获取用户和资源的忙/闲日程安排
 
@@ -158,7 +158,7 @@ Content-type: application/json
 ### <a name="permissions"></a>权限
 **findmeetingtimes** 所需的最低特权权限为 Calendars.Read.Shared。
 
-**getSchedule** 所需的最低特权权限为 Calendar.Read。 
+**getSchedule** 所需的最低特权权限为 Calendars.Read。 
 
 ### <a name="version-support"></a>版本支持
 
@@ -166,7 +166,7 @@ Content-type: application/json
 
 
 ## <a name="event-data-returned"></a>返回的事件数据
-要使应用能够获取忙/闲信息，**getSchedule** 所需的最低特权权限为 Calendar.Read。 根据应用方案，这可由已登录用户或管理员同意授予。
+要使应用能够获取忙/闲信息，**getSchedule** 所需的最低特权权限为 Calendars.Read。 根据应用方案，这可由已登录用户或管理员同意授予。
 
 虽然借助同意后授予的权限，应用可通过 Outlook 在所请求用户的日历上使用 **getSchedule**但所请求的用户可控制该 **getSchedule** 返回的事件数据（若有）。 
 
@@ -195,4 +195,4 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ## <a name="see-also"></a>另请参阅
 - [权限参考](permissions-reference.md#calendars-permissions)
-- [在 Outlook 日历上查找可能的会议时间](findmeetingtimes-example.md)
+- [在 Outlook 日历上找到可能的会议时间](findmeetingtimes-example.md)
