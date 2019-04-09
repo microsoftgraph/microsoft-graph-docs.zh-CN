@@ -1,21 +1,21 @@
 ---
-title: 获取 riskyUsers
-description: 检索**riskyUsers**对象的属性和关系。
+title: 获取 riskyUser
+description: 检索**riskyUser**对象的属性和关系。
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b65135fcd1ad77304b98f18fa595154aee984910
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: 6ad7c9853b4f00850e77f3bc70e0136abfec3064
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31003711"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31559855"
 ---
-# <a name="get-riskyusers"></a>获取 riskyUsers
+# <a name="get-riskyuser"></a>获取 riskyUser
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索**riskyUsers**对象的属性和关系。
+检索**riskyUser**对象的属性和关系。
 
 >**注意:** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
@@ -31,7 +31,7 @@ ms.locfileid: "31003711"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /riskyUsers/{query}
+GET /riskyUsers/{id}
 ```
 
 
@@ -52,31 +52,34 @@ GET /riskyUsers/{query}
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser"
+  "name": "get_riskyuser",
+  "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/{id}
+GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": "true",
+  "isGuest": true,
   "isProcessing": true,
-  "isDeleted": "true",
+  "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
   "riskState": "atRisk"
-  "userDisplayName": "Jon Doe",
-  "userPrincipalName": "jon@contoso.com"
+  "userDisplayName": "Alex Wilbur",
+  "userPrincipalName": "alexw@contoso.com"
 }
 ```
 

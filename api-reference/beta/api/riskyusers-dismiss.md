@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
-ms.openlocfilehash: 8e7a64e5762808691c4997c83b112a17c9667d47
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: 3027320b25c35e60e1b5dccabc7ff34ea642a953
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31013129"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31560099"
 ---
 # <a name="dismiss-riskyusers"></a>消除 riskyUsers
 
@@ -18,7 +18,7 @@ ms.locfileid: "31013129"
 
 >**注意:** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-消除**riskyUsers**对象的风险。 此操作会将目标用户的风险级别设置为 "无"。
+消除**riskyUser**对象的风险。 此操作会将目标用户的风险级别设置为 "无"。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,7 +46,7 @@ POST /riskyUsers/dismiss
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 NoContent` 响应代码。
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -56,8 +56,8 @@ POST /riskyUsers/dismiss
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/dismiss
+Content-Type: application/json
 
-Request Body
 {
   "userIds": [
     "04487ee0-f4f6-4e7f-8999-facc5a30e232",
@@ -69,11 +69,10 @@ Request Body
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

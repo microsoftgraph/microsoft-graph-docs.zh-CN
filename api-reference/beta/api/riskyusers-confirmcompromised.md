@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
-ms.openlocfilehash: 9ae07bf8d1d4a41764aa145a9c7508da339d7ce2
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: beca64415a2d03898d57cd9cda2fb248121c424b
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31013122"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31559973"
 ---
 # <a name="confirm-riskyusers-compromised"></a>确认 riskyUsers 已泄露
 
@@ -18,7 +18,7 @@ ms.locfileid: "31013122"
 
 >**注意:** riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-确认[riskyUsers](../resources/riskyuser.md)对象是否已泄露。 这会将目标用户的风险级别设置为 "高"。
+确认[riskyUser](../resources/riskyuser.md)对象是否已泄露。 这会将目标用户的风险级别设置为 "高"。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,7 +47,7 @@ POST /riskyUsers/confirmCompromised
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法将`204 No Content`返回响应代码
+如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -57,9 +57,8 @@ POST /riskyUsers/confirmCompromised
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/confirmCompromised
+Content-type: application/json
 
-
-Request Body
 {
   "userIds": [
     "29f270bb-4d23-4f68-8a57-dc73dc0d4caf",
@@ -71,11 +70,10 @@ Request Body
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -86,6 +84,5 @@ HTTP/1.1 204 NoContent
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  "suppressions": []
 }-->
