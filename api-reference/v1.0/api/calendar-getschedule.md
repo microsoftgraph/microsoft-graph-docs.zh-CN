@@ -4,12 +4,12 @@ description: 获取用户、通讯组列表或资源在指定时间段内的忙/
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 24e58a1e11bac8e9707aad17db43543862cfe486
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.openlocfilehash: e39b5e010c57bb74f518321f51cc4f3e4c709637
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926590"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518509"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 
@@ -20,9 +20,9 @@ ms.locfileid: "30926590"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Calendar.Read、Calendar.ReadWrite    |
+|委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | Calendar.Read、Calendar.ReadWrite |
+|Application | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
