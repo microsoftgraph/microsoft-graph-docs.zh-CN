@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 7bdd5b9ca02a05676a2b745b6087acfb39cf3304
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 6dd7d831c621170b6f9739d112793c215425b9c2
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364561"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518558"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用 
 Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。作为开发人员，你可以决定应用程序请求哪些 Microsoft Graph 权限。当用户登录你的应用时，他们或处于某些情况下的管理员可以选择是否同意这些权限。如果用户同意，你的应用可以访问它所请求的资源和 API。对于没有已登录用户的应用，安装应用程序或注册时，管理员可以事先同意权限。 
@@ -172,9 +172,9 @@ _Application.ReadWrite.OwnedBy_ 权限允许与 _Application.ReadWrite.All_ 相�
 * _Calendars.Read.Shared_：查找所有与会者都均有空参加的会议时间 (`POST /users/{id|userPrincipalName}/findMeetingTimes`)。
 * _Calendars.ReadWrite_：将事件添加到用户日历 (`POST /me/events`)。
 
-#### <a name="application"></a>应用程序
+#### <a name="application"></a>Application
 
-* _Calendars.Read_：在 bob@contoso.com 组织整理的会议室日历中查找事件 (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`)。
+* _Calendars.Read_：在按 bob@contoso.com (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`) 整理的会议室日历中查找事件。
 * _Calendars.Read_：列出 5 月份用户日历上的所有事件 (`GET /users/{id | userPrincipalName}/calendarView?startDateTime=2017-05-01T00:00:00&endDateTime=2017-06-01T00:00:00`)
 * _Calendars.ReadWrite_：将获准休假事件添加到用户日历 (`POST /users/{id | userPrincipalName}/events`)。
 * _Calendars.Send_：发送邮件 (`POST /users/{id | userPrincipalName}/sendCalendars`)。
@@ -388,8 +388,8 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 | _Files.ReadWrite_  | 具有对用户文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户的文件。 | 否| 是 |
 | _Files.ReadWrite.All_ | 具备对用户可以访问的所有文件的完全访问权限 | 允许应用读取、创建、更新和删除登录用户可以访问的所有文件。 | 否 | 是 |
 | _Files.ReadWrite.AppFolder_ | 具有对应用程序文件夹的完全访问权限（预览） | （预览）允许应用读取、创建、更新和删除应用程序文件夹中的文件。 | 否 | 否 |
-| _Files.Read.Selected_  | 读取用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> （预览）允许应用读取用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。  | 否 | 否 |
-| _Files.ReadWrite.Selected_ | 读取和写入用户选择的文件 | **Microsoft Graph 提供一定程度的支持（见“注解”）** <br/> （预览）允许应用读取和写入用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。 | 否 | 否 |
+| _Files.Read.Selected_  | 读取用户选择的文件 | **Microsoft Graph 中的支持受限；详见备注** <br/> （预览）允许应用读取用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。  | 否 | 否 |
+| _Files.ReadWrite.Selected_ | 读取和写入用户选择的文件 | **Microsoft Graph 中的支持受限；详见备注** <br/> （预览）允许应用读取和写入用户选择的文件。在用户选择文件后，应用有几个小时的访问权限。 | 否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -628,6 +628,7 @@ _IdentityRiskyUser.Read.All_ 仅适用于工作或学校帐户。 对于通过�
 |   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    读取用户邮件 | 允许应用读取用户邮箱中的电子邮件。 | 否 | 是
+| _Mail.ReadBasic_ |    读取用户基本邮件（预览） | （预览版）让应用能够读取已登录用户的邮箱，但不读取正文、previewBody、附件和所有扩展属性。 不包含邮件搜索权限。 | 否 | 是
 | _Mail.ReadWrite_ |    对用户邮件的读写权限 | 允许应用创建、读取、更新和删除用户邮箱中的电子邮件。不包括发送电子邮件的权限。| 否 | 是
 | _Mail.Read.Shared_ |    读取用户邮件和共享邮件 | 允许应用读取用户可以访问的邮件，包括用户个人邮件和共享邮件。 | 否 | 否
 | _Mail.ReadWrite.Shared_ |    读取和写入用户邮件和共享邮件 | 允许应用创建、读取、更新和删除用户有权访问的邮件，包括用户个人邮件和共享邮件。不包括邮件发送权限。 | 否 | 否
@@ -662,9 +663,9 @@ _Mail.Read.Shared_、_Mail.ReadWrite.Shared_ 和 _Mail.Send.Shared_ 仅适用于
 * _Mail.Send_：发送邮件 (`POST /me/sendmail`)。
 * _MailboxSettings.ReadWrite_：更新用户的自动答复 (`PATCH /me/mailboxSettings`)。
 
-#### <a name="application"></a>应用程序
+#### <a name="application"></a>Application
 
-* _Mail.Read_：从 bob@contoso.com 查找邮件 (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`)。
+* _Mail.Read_：从: bob@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`) 中查找邮件。
 * _Mail.ReadWrite_：在名为“`Expense Reports`”的收件箱中新建文件夹 (`POST /users/{id | userPrincipalName}/mailfolders`)。
 * _Mail.Send_：发送邮件 (`POST /users/{id | userPrincipalName}/sendmail`)。
 * _MailboxSettings.Read_：获取用户邮箱的默认时区 (`GET /users/{id | userPrincipalName}/mailboxSettings/timeZone`)
@@ -719,7 +720,7 @@ _Member.Read.Hidden_ 仅对工作或学校帐户有效。
 | _Notes.ReadWrite_ |    读取和写入用户 OneNote 笔记本 | 允许应用代表已登录用户读取、共享和修改 OneNote 笔记本。 | 否 | 是
 | _Notes.Read.All_ |    读取用户可以访问的所有 OneNote 笔记本 | 允许应用读取登录用户在组织中有权访问的 OneNote 笔记本。 | 否 | 是
 | _Notes.ReadWrite.All_ |    读取和写入用户可以访问的所有 OneNote 笔记本。 | 允许应用读取、共享和修改已登录用户在组织中有权访问的 OneNote 笔记本。| 否 | 否
-| _Notes.ReadWrite.CreatedByApp_ |    有限的笔记本访问权限（不推荐使用） | **不推荐使用** <br/>请勿使用。此权限不授予任何特权。 | 否 | 否
+| _Notes.ReadWrite.CreatedByApp_ |    受限的笔记本访问权限（已弃用） | **已弃用** <br/>请勿使用。此权限不授予任何特权。 | 否 | 否
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -806,7 +807,7 @@ _Notes.ReadWrite_ 和 _Notes.ReadWrite.All_ 还允许应用修改针对已登录
 | _email_ |    查看用户的电子邮件地址 | 允许应用读取用户的主电子邮件地址。 | 否 | 否 |
 | _offline_access_ |    随时访问用户数据 | 允许应用读取和更新用户数据，即使用户当前没有在使用此应用，也不例外。| 否 | 否 |
 | _openid_ |    让用户登录 | 允许用户以其工作或学校帐户登录应用，并允许应用查看用户的基本个人资料信息。| 否 | 否 |
-| _个人资料_ |    查看用户的基本个人资料 | 允许应用查看用户的基本个人资料（名称、图片、用户名称）。| 否 | 否 |
+| _profile_ |    查看用户的基本个人资料 | 允许应用查看用户的基本个人资料（名称、图片、用户名称）。| 否 | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -890,7 +891,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _SecurityEvents.Read.All_        |  读取组织的安全事件 | 允许应用代表已登录用户读取组织的安全事件。 | 是  | 否 |
 | _SecurityEvents.ReadWrite.All_   | 读取和更新组织的安全事件。 | 允许应用代表已登录用户读取组织的安全事件。 还允许应用代表已登录用户更新安全事件中的可编辑属性。 | 是  | 否 |
 | _SecurityActions.Read.All_        |  读取组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。 | 是  | 否 |
-| _SecurityActions.ReadWrite.All_   | 读取和更新组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。  | 可访问  | 否 |
+| _SecurityActions.ReadWrite.All_   | 读取和更新组织的安全措施 | 允许应用代表登录的用户读取组织的安全措施。  | 是  | 否 |
 | _ThreatIndicators.ReadWrite.OwnedBy_   | 管理此应用创建或拥有的威胁指标 | 允许应用代表登录的用户读取组织的安全措施。  | 是  | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
@@ -925,7 +926,7 @@ People.Read.All 权限仅适用于工作和学校帐户。
 | _Sites.Read.All_        | 读取所有网站集中的项目 | 允许应用代表登录用户读取文档，并列出所有网站集中的项目。 | 否  | 否 |
 | _Sites.ReadWrite.All_   | 读取和写入所有网站集中的项目 | 允许应用代表登录用户编辑或删除所有网站集中的文档和列表项。 | 否  | 否 |
 | _Sites.Manage.All_      | 创建、编辑和删除所有网站集中的项目和列表 | 允许应用代表登录用户管理和创建所有网站集中的列表、文档和列表项。 | 否 | 否 |
-| _Sites.FullControl.All_ | 具有对所有网站集的完全控制权限 | 允许应用代表登录用户具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  | 否 |
+| _Sites.FullControl.All_ | 完全控制所有网站集 | 允许应用代表登录用户具有对所有网站集中的 SharePoint 网站的完全控制权限。  | 是  | 否 |
 
 #### <a name="application-permissions"></a>应用程序权限
 
@@ -1037,7 +1038,7 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 |:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read.All_ |    读取所有用户的完整个人资料 | 允许应用在没有登录用户的情况下读取组织中其他用户的整套个人资料属性、组成员身份、下属和经理。| 是 |
 | _User.ReadWrite.All_ |   读取和写入所有用户的完整个人资料 | 允许应用在没有登录用户的情况下读取和写入组织中其他用户的整套个人资料属性、组成员身份、下属和经理。还允许应用创建和删除非管理用户。不允许重置用户密码。 | 是 |
-| _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用无需具有已登录用户即可将来宾用户邀请到你的组织。 | 可访问 |
+| _User.Invite.All_  |     将来宾用户邀请到组织 | 允许应用无需具有已登录用户即可将来宾用户邀请到你的组织。 | 是 |
 | _User.Export.All_       |    导出用户数据 | 允许应用导出组织用户数据，而无需是登录用户。| 可访问 |
 
 ### <a name="remarks"></a>注解
@@ -1136,7 +1137,7 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 
 ### <a name="access-scenarios-on-the-user-resource"></a>关于 User 资源的访问方案
 
-| **涉及用户的应用任务**   |  **必需的权限** | **权限字符串** |
+| **涉及用户的应用任务**   |  **所需权限** | **权限字符串** |
 |:-------------------------------|:---------------------|:---------------|
 | 应用想要读取其他用户的基本信息（仅限显示名称和图片），例如展示人员挑选经验   | _User.ReadBasic.All_  |  读取所有用户的基本个人资料 |
 | 应用想要读取已登录用户的完整用户个人资料（请参见直接下属和经理等)     | _User.Read_ | 允许登录和读取用户个人资料|
@@ -1151,7 +1152,7 @@ _User.ReadBasic.All_ 权限限制应用访问称为基本个人资料的有限�
 
 ### <a name="access-scenarios-on-the-group-resource"></a>关于组资源的访问方案
     
-| **涉及组的应用任务**  |  **必需的权限** |  **权限字符串** |
+| **涉及组的应用任务**  |  **所需权限** |  **权限字符串** |
 |:-------------------------------|:---------------------|:---------------|
 | 应用想要读取基本组信息（仅限显示名称和图片），例如展示组挑选经验  | _Group.Read.All_  | 读取所有组|
 | 应用想要读取所有 Office 365 组中的全部内容（包括文件、对话）。它还需要显示组成员，同时能够更新组成员（若是所有者）。  |  _Group.Read.All_ | 读取所有网站集中的项、读取所有组|

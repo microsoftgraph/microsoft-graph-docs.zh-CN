@@ -4,12 +4,12 @@ description: 在指定的频道中发送新邮件。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 960c5d8164f2681b71bb2c3b46383bb210240bb2
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.openlocfilehash: 56834a628465fc5721e0dc7ef7eb5e05065dccbc
+ms.sourcegitcommit: bf3d0c94faeb206f9f986423a436fb355acd54c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30799982"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "31751548"
 ---
 # <a name="send-a-message-to-a-channel"></a>向渠道发送消息
 
@@ -115,7 +115,7 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-mentions"></a>示例 2: @mentions
+### <a name="example-2-mentions"></a>示例 2:@mentions
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -206,6 +206,93 @@ Content-length: 160
             }
         }
     ],
+    "reactions": []
+}
+```
+
+### <a name="example-3-cards"></a>示例 3: 卡片
+
+##### <a name="request"></a>请求
+下面是一个请求示例。
+<!-- {
+  "blockType": "request",
+  "name": "create_chatmessage_from_channel"
+}-->
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+Content-type: application/json
+
+{
+    "subject": null,
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
+            "contentType": "application/vnd.microsoft.card.thumbnail",
+            "contentUrl": null,
+            "content": "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\\r\\nAnd a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\r\\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
+            "name": null,
+            "thumbnailUrl": null
+        }
+    ]
+}
+```
+
+##### <a name="response"></a>响应
+
+下面是一个响应示例。
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 160
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('bdb7bcda-9c3b-4341-b9a9-f52bf9a23407')/channels('19%3A786524f437c042b68bac5c0511ad6be2%40thread.skype')/messages/$entity",
+    "id": "1554837297516",
+    "replyToId": null,
+    "etag": "1554837297516",
+    "messageType": "message",
+    "createdDateTime": "2019-04-09T19:14:57.516Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "policyViolation": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "id-value",
+            "displayName": "Joh Doe",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
+    },
+    "attachments": [
+        {
+            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
+            "contentType": "application/vnd.microsoft.card.thumbnail",
+            "contentUrl": null,
+            "content": "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\\r\\n\\r\\n\\r\\nAnd a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\r\\n\\r\\n\\r\\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
+            "name": null,
+            "thumbnailUrl": null
+        }
+    ],
+    "mentions": [],
     "reactions": []
 }
 ```
