@@ -553,7 +553,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: 获取开放扩展
         href: api/opentypeextension-get.md
-    - name: Attachment
+    - name: 附件
       href: resources/attachment.md
       items:
       - name: 文件附件资源
@@ -771,7 +771,7 @@ items:
     - name: 预订业务
       href: resources/bookingbusiness.md
       items:
-      - name: 列出
+      - name: List
         href: api/bookingbusiness-list.md
       - name: 创建
         href: api/bookingbusiness-post-bookingbusinesses.md
@@ -812,7 +812,7 @@ items:
     - name: 预订客户
       href: resources/bookingcustomer.md
       items:
-      - name: 列出
+      - name: List
         href: api/bookingbusiness-list-customers.md
       - name: 创建
         href: api/bookingbusiness-post-customers.md
@@ -825,7 +825,7 @@ items:
     - name: 预订服务
       href: resources/bookingservice.md
       items:
-      - name: 列出
+      - name: List
         href: api/bookingbusiness-list-services.md
       - name: 创建
         href: api/bookingbusiness-post-services.md
@@ -838,7 +838,7 @@ items:
     - name: 预订职员
       href: resources/bookingstaffmember.md
       items:
-      - name: 列出
+      - name: List
         href: api/bookingbusiness-list-staffmembers.md
       - name: 创建
         href: api/bookingbusiness-post-staffmembers.md
@@ -1529,6 +1529,8 @@ items:
           href: api/intune-apps-mobileapp-assign.md
         - name: getTopMobileApps
           href: api/intune-apps-mobileapp-gettopmobileapps.md
+        - name: updateRelationships 操作
+          href: api/intune-apps-mobileapp-updaterelationships.md
       - name: 移动应用分配
         href: resources/intune-apps-mobileappassignment.md
         items:
@@ -1589,6 +1591,21 @@ items:
           href: api/intune-apps-mobileappcontentfile-renewupload.md
       - name: 移动应用内容文件上传状态
         href: resources/intune-apps-mobileappcontentfileuploadstate.md
+      - name: 移动应用程序 dependecy 类型
+        href: resources/intune-apps-mobileappdependecytype.md
+      - name: 移动应用程序依赖项
+        href: resources/intune-apps-mobileappdependency.md
+        items:
+        - name: 列出
+          href: api/intune-apps-mobileappdependency-list.md
+        - name: 获取
+          href: api/intune-apps-mobileappdependency-get.md
+        - name: 创建
+          href: api/intune-apps-mobileappdependency-create.md
+        - name: 删除
+          href: api/intune-apps-mobileappdependency-delete.md
+        - name: 更新
+          href: api/intune-apps-mobileappdependency-update.md
       - name: 移动应用安装状态
         href: resources/intune-apps-mobileappinstallstatus.md
         items:
@@ -1624,6 +1641,15 @@ items:
           href: api/intune-apps-mobileappprovisioningconfiggroupassignment-update.md
       - name: 移动应用发布状态
         href: resources/intune-apps-mobileapppublishingstate.md
+      - name: 移动应用关系
+        href: resources/intune-apps-mobileapprelationship.md
+        items:
+        - name: 列出
+          href: api/intune-apps-mobileapprelationship-list.md
+        - name: 获取
+          href: api/intune-apps-mobileapprelationship-get.md
+      - name: 移动应用关系状态
+        href: resources/intune-apps-mobileapprelationshipstate.md
       - name: 移动包含的应用
         href: resources/intune-apps-mobilecontainedapp.md
         items:
@@ -1764,6 +1790,8 @@ items:
         href: resources/intune-apps-win32lobappfilesystemdetection.md
       - name: Win32 LOB 应用文件系统检测类型
         href: resources/intune-apps-win32lobappfilesystemdetectiontype.md
+      - name: Win32 LOB 应用程序文件系统要求
+        href: resources/intune-apps-win32lobappfilesystemrequirement.md
       - name: Win32 LOB 应用安装体验
         href: resources/intune-apps-win32lobappinstallexperience.md
       - name: Win32 LOB 应用 msi 信息
@@ -1774,12 +1802,20 @@ items:
         href: resources/intune-apps-win32lobappnotification.md
       - name: Win32 LOB 应用 Power Shell 脚本检测
         href: resources/intune-apps-win32lobapppowershellscriptdetection.md
+      - name: Win32 LOB 应用程序电源命令行管理程序脚本检测类型
+        href: resources/intune-apps-win32lobapppowershellscriptdetectiontype.md
+      - name: Win32 LOB 应用程序 power shell 脚本要求
+        href: resources/intune-apps-win32lobapppowershellscriptrequirement.md
       - name: Win32 LOB 应用产品代码检测
         href: resources/intune-apps-win32lobappproductcodedetection.md
       - name: Win32 LOB 应用注册表检测
         href: resources/intune-apps-win32lobappregistrydetection.md
       - name: Win32 LOB 应用注册表检测类型
         href: resources/intune-apps-win32lobappregistrydetectiontype.md
+      - name: Win32 LOB 应用程序注册表要求
+        href: resources/intune-apps-win32lobappregistryrequirement.md
+      - name: Win32 LOB 应用要求
+        href: resources/intune-apps-win32lobapprequirement.md
       - name: Win32 LOB 应用返回代码
         href: resources/intune-apps-win32lobappreturncode.md
       - name: Win32 LOB 应用返回代码类型
@@ -2188,6 +2224,10 @@ items:
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md
         - name: 更新
           href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-update.md
+        - name: 导入操作
+          href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md
+        - name: 导入操作
+          href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md
       - name: 已导入的 Windows Autopilot 设备标识导入状态
         href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md
       - name: 已导入的 Windows Autopilot 设备标识状态
@@ -2345,6 +2385,19 @@ items:
         href: resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md
       - name: Android 设备所有者电池充电模式
         href: resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md
+      - name: Android 设备所有者合规性策略
+        href: resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md
+        items:
+        - name: 列出
+          href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-list.md
+        - name: 获取
+          href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-get.md
+        - name: 创建
+          href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-create.md
+        - name: 删除
+          href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-delete.md
+        - name: 更新
+          href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
       - name: Android 设备所有者默认应用权限策略类型
         href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
       - name: Android 设备所有者常规设备配置
@@ -2360,6 +2413,8 @@ items:
           href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-delete.md
         - name: 更新
           href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-update.md
+      - name: Android 设备所有者播放存储模式
+        href: resources/intune-deviceconfig-androiddeviceownerplaystoremode.md
       - name: Android 设备所有者必填密码类型
         href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md
       - name: Android 设备所有者系统更新安装类型
@@ -3977,6 +4032,19 @@ items:
           href: api/intune-deviceconfig-macosenterprisewificonfiguration-delete.md
         - name: 更新
           href: api/intune-deviceconfig-macosenterprisewificonfiguration-update.md
+      - name: macOS 扩展配置
+        href: resources/intune-deviceconfig-macosextensionsconfiguration.md
+        items:
+        - name: 列出
+          href: api/intune-deviceconfig-macosextensionsconfiguration-list.md
+        - name: 获取
+          href: api/intune-deviceconfig-macosextensionsconfiguration-get.md
+        - name: 创建
+          href: api/intune-deviceconfig-macosextensionsconfiguration-create.md
+        - name: 删除
+          href: api/intune-deviceconfig-macosextensionsconfiguration-delete.md
+        - name: 更新
+          href: api/intune-deviceconfig-macosextensionsconfiguration-update.md
       - name: macOS 防火墙应用程序
         href: resources/intune-deviceconfig-macosfirewallapplication.md
       - name: macOS 网关守卫应用源
@@ -4007,6 +4075,10 @@ items:
           href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-delete.md
         - name: 更新
           href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-update.md
+      - name: macOS 内核扩展
+        href: resources/intune-deviceconfig-macoskernelextension.md
+      - name: macOS 启动项目
+        href: resources/intune-deviceconfig-macoslaunchitem.md
       - name: macOS SCEP 证书配置文件
         href: resources/intune-deviceconfig-macosscepcertificateprofile.md
         items:
@@ -5110,10 +5182,216 @@ items:
         href: resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md
       - name: 设备运行状况证明状态
         href: resources/intune-devices-devicehealthattestationstate.md
+      - name: 设备管理抽象复杂设置定义
+        href: resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-update.md
+      - name: 设备管理抽象复杂设置实例
+        href: resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-update.md
+      - name: 设备管理布尔值设置实例
+        href: resources/intune-deviceintent-devicemanagementbooleansettinginstance.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementbooleansettinginstance-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementbooleansettinginstance-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementbooleansettinginstance-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementbooleansettinginstance-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementbooleansettinginstance-update.md
+      - name: 设备管理集合设置定义
+        href: resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-update.md
+      - name: 设备管理集合设置实例
+        href: resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-update.md
+      - name: 设备管理复杂设置定义
+        href: resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-update.md
+      - name: 设备管理复杂设置实例
+        href: resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-update.md
+      - name: 设备管理约束
+        href: resources/intune-deviceintent-devicemanagementconstraint.md
+      - name: 设备管理枚举约束
+        href: resources/intune-deviceintent-devicemanagementenumconstraint.md
+      - name: 设备管理枚举值
+        href: resources/intune-deviceintent-devicemanagementenumvalue.md
       - name: 设备管理 Exchange 访问状态
         href: resources/intune-devices-devicemanagementexchangeaccessstate.md
       - name: 设备管理 Exchange 访问状态原因
         href: resources/intune-devices-devicemanagementexchangeaccessstatereason.md
+      - name: 设备管理整数设置实例
+        href: resources/intune-deviceintent-devicemanagementintegersettinginstance.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementintegersettinginstance-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementintegersettinginstance-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementintegersettinginstance-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementintegersettinginstance-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementintegersettinginstance-update.md
+      - name: 设备管理意向
+        href: resources/intune-deviceintent-devicemanagementintent.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementintent-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementintent-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementintent-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementintent-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementintent-update.md
+        - name: updateSettings 操作
+          href: api/intune-deviceintent-devicemanagementintent-updatesettings.md
+        - name: 分配操作
+          href: api/intune-deviceintent-devicemanagementintent-assign.md
+      - name: 设备管理意向分配
+        href: resources/intune-deviceintent-devicemanagementintentassignment.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementintentassignment-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementintentassignment-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementintentassignment-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementintentassignment-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementintentassignment-update.md
+      - name: 设备管理意向设备设置状态摘要
+        href: resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-update.md
+      - name: 设备管理意向设备状态
+        href: resources/intune-deviceintent-devicemanagementintentdevicestate.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementintentdevicestate-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementintentdevicestate-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementintentdevicestate-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementintentdevicestate-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementintentdevicestate-update.md
+      - name: 设备管理意向设备状态摘要
+        href: resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md
+        items:
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementintentdevicestatesummary-get.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementintentdevicestatesummary-update.md
+      - name: 设备管理意向设置类别
+        href: resources/intune-deviceintent-devicemanagementintentsettingcategory.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementintentsettingcategory-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementintentsettingcategory-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementintentsettingcategory-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementintentsettingcategory-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementintentsettingcategory-update.md
+      - name: 设备管理意向用户状态
+        href: resources/intune-deviceintent-devicemanagementintentuserstate.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementintentuserstate-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementintentuserstate-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementintentuserstate-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementintentuserstate-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementintentuserstate-update.md
+      - name: 设备管理意向用户状态摘要
+        href: resources/intune-deviceintent-devicemanagementintentuserstatesummary.md
+        items:
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementintentuserstatesummary-get.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementintentuserstatesummary-update.md
       - name: 设备管理脚本
         href: resources/intune-devices-devicemanagementscript.md
         items:
@@ -5188,10 +5466,96 @@ items:
           href: api/intune-devices-devicemanagementscriptuserstate-delete.md
         - name: 更新
           href: api/intune-devices-devicemanagementscriptuserstate-update.md
+      - name: 设备管理设置布尔约束
+        href: resources/intune-deviceintent-devicemanagementsettingbooleanconstraint.md
+      - name: 设备管理设置类别
+        href: resources/intune-deviceintent-devicemanagementsettingcategory.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementsettingcategory-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementsettingcategory-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementsettingcategory-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementsettingcategory-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementsettingcategory-update.md
+      - name: 设备管理设置定义
+        href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementsettingdefinition-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementsettingdefinition-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementsettingdefinition-update.md
+      - name: 设备管理设置依赖性
+        href: resources/intune-deviceintent-devicemanagementsettingdependency.md
+      - name: 设备管理设置实例
+        href: resources/intune-deviceintent-devicemanagementsettinginstance.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementsettinginstance-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementsettinginstance-get.md
+      - name: 设备管理设置 integer 约束
+        href: resources/intune-deviceintent-devicemanagementsettingintegerconstraint.md
+      - name: 设备管理设置 regex 约束
+        href: resources/intune-deviceintent-devicemanagementsettingregexconstraint.md
+      - name: 设备管理设置字符串长度约束
+        href: resources/intune-deviceintent-devicemanagementsettingstringlengthconstraint.md
+      - name: 设备管理设置 xml 约束
+        href: resources/intune-deviceintent-devicemanagementsettingxmlconstraint.md
+      - name: 设备管理字符串设置实例
+        href: resources/intune-deviceintent-devicemanagementstringsettinginstance.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementstringsettinginstance-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementstringsettinginstance-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementstringsettinginstance-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementstringsettinginstance-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementstringsettinginstance-update.md
       - name: 设备管理订阅状态
         href: resources/intune-devices-devicemanagementsubscriptionstate.md
       - name: 设备管理订阅
         href: resources/intune-devices-devicemanagementsubscriptions.md
+      - name: 设备管理模板
+        href: resources/intune-deviceintent-devicemanagementtemplate.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementtemplate-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementtemplate-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementtemplate-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementtemplate-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementtemplate-update.md
+        - name: createInstance 操作
+          href: api/intune-deviceintent-devicemanagementtemplate-createinstance.md
+      - name: 设备管理模板设置类别
+        href: resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-list.md
+        - name: 获取
+          href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-get.md
+        - name: 创建
+          href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-create.md
+        - name: 删除
+          href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-update.md
       - name: 设备管理疑难解答错误详情
         href: resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md
       - name: 设备管理疑难解答错误资源
@@ -5209,6 +5573,8 @@ items:
           href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
         - name: 更新
           href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-update.md
+      - name: Device 管理意向值类型
+        href: resources/intune-deviceintent-devicemanangementintentvaluetype.md
       - name: 设备操作系统摘要
         href: resources/intune-devices-deviceoperatingsystemsummary.md
       - name: 设备保护概述
@@ -5538,6 +5904,67 @@ items:
         href: resources/intune-devices-revokeapplevpplicensesactionresult.md
       - name: 运行计划
         href: resources/intune-devices-runschedule.md
+      - name: 安全基线合规性状态
+        href: resources/intune-deviceintent-securitybaselinecompliancestate.md
+      - name: 安全基准设备状态
+        href: resources/intune-deviceintent-securitybaselinedevicestate.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-securitybaselinedevicestate-list.md
+        - name: 获取
+          href: api/intune-deviceintent-securitybaselinedevicestate-get.md
+        - name: 创建
+          href: api/intune-deviceintent-securitybaselinedevicestate-create.md
+        - name: 删除
+          href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-securitybaselinedevicestate-update.md
+      - name: 安全基准设置状态
+        href: resources/intune-deviceintent-securitybaselinesettingstate.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-securitybaselinesettingstate-list.md
+        - name: 获取
+          href: api/intune-deviceintent-securitybaselinesettingstate-get.md
+        - name: 创建
+          href: api/intune-deviceintent-securitybaselinesettingstate-create.md
+        - name: 删除
+          href: api/intune-deviceintent-securitybaselinesettingstate-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-securitybaselinesettingstate-update.md
+      - name: 安全比较基准状态
+        href: resources/intune-deviceintent-securitybaselinestate.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-securitybaselinestate-list.md
+        - name: 获取
+          href: api/intune-deviceintent-securitybaselinestate-get.md
+        - name: 创建
+          href: api/intune-deviceintent-securitybaselinestate-create.md
+        - name: 删除
+          href: api/intune-deviceintent-securitybaselinestate-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-securitybaselinestate-update.md
+      - name: 安全基准状态摘要
+        href: resources/intune-deviceintent-securitybaselinestatesummary.md
+        items:
+        - name: 获取
+          href: api/intune-deviceintent-securitybaselinestatesummary-get.md
+        - name: 更新
+          href: api/intune-deviceintent-securitybaselinestatesummary-update.md
+      - name: 安全基准模板
+        href: resources/intune-deviceintent-securitybaselinetemplate.md
+        items:
+        - name: 列出
+          href: api/intune-deviceintent-securitybaselinetemplate-list.md
+        - name: 获取
+          href: api/intune-deviceintent-securitybaselinetemplate-get.md
+        - name: 创建
+          href: api/intune-deviceintent-securitybaselinetemplate-create.md
+        - name: 删除
+          href: api/intune-deviceintent-securitybaselinetemplate-delete.md
+        - name: 更新
+          href: api/intune-deviceintent-securitybaselinetemplate-update.md
       - name: 共享 Apple 设备用户
         href: resources/intune-devices-sharedappledeviceuser.md
       - name: 一元管理条件表达式
@@ -6999,7 +7426,7 @@ items:
       - name: 业务流模板
         href: resources/businessflowtemplate.md
         items:
-        - name: 列出
+        - name: List
           href: api/businessflowtemplate-list.md
       - name: 程序
         href: resources/program.md
@@ -7008,7 +7435,7 @@ items:
           href: api/program-create.md
         - name: 删除
           href: api/program-delete.md
-        - name: 列出
+        - name: List
           href: api/program-list.md
         - name: 更新
           href: api/program-update.md
@@ -7021,7 +7448,7 @@ items:
           href: api/programcontrol-create.md
         - name: 删除
           href: api/programcontrol-delete.md
-        - name: 列出
+        - name: List
           href: api/programcontrol-list.md
       - name: 程序控制类型
         href: resources/programcontroltype.md
@@ -7592,7 +8019,7 @@ items:
         href: api/opentypeextension-post-opentypeextension.md
       - name: 获取开放扩展
         href: api/opentypeextension-get.md
-    - name: Attachment
+    - name: 附件
       href: resources/attachment.md
       items:
       - name: 文件附件资源
@@ -8546,7 +8973,7 @@ items:
     - name: Outlook 任务
       href: resources/outlooktask.md
       items:
-      - name: 列出
+      - name: List
         href: api/outlookuser-list-tasks.md
       - name: 创建
         href: api/outlookuser-post-tasks.md
@@ -8554,7 +8981,7 @@ items:
         href: api/outlooktask-get.md
       - name: 更新
         href: api/outlooktask-update.md
-      - name: 删除
+      - name: Delete
         href: api/outlooktask-delete.md
       - name: 完全
         href: api/outlooktask-complete.md
@@ -8565,7 +8992,7 @@ items:
     - name: Outlook 任务文件夹
       href: resources/outlooktaskfolder.md
       items:
-      - name: 列出
+      - name: List
         href: api/outlookuser-list-taskfolders.md
       - name: 创建
         href: api/outlookuser-post-taskfolders.md
@@ -8573,7 +9000,7 @@ items:
         href: api/outlooktaskfolder-get.md
       - name: 更新
         href: api/outlooktaskfolder-update.md
-      - name: 删除
+      - name: Delete
         href: api/outlooktaskfolder-delete.md
       - name: 在文件夹中列出任务
         href: api/outlooktaskfolder-list-tasks.md
@@ -8582,7 +9009,7 @@ items:
     - name: Outlook 任务组
       href: resources/outlooktaskgroup.md
       items:
-      - name: 列出
+      - name: List
         href: api/outlookuser-list-taskgroups.md
       - name: 创建
         href: api/outlookuser-post-taskgroups.md
@@ -8590,7 +9017,7 @@ items:
         href: api/outlooktaskgroup-get.md
       - name: 更新
         href: api/outlooktaskgroup-update.md
-      - name: 删除
+      - name: Delete
         href: api/outlooktaskfolder-delete.md
       - name: 在组中列出任务文件夹
         href: api/outlooktaskfolder-list-tasks.md
@@ -8800,9 +9227,9 @@ items:
       - name: 删除订阅
         href: api/subscription-delete.md
   expanded: true
-ms.openlocfilehash: 7cb0dba94a4110464b4dbcb1a798f4cb5f0ecabf
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
-ms.translationtype: HT
+ms.openlocfilehash: 4a85b684028afd4ddcda2e71231bb0ac38ed50df
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31003746"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807565"

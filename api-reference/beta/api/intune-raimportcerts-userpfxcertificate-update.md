@@ -4,31 +4,31 @@ description: 更新 userPFXCertificate 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a7fb9d717520dcf8f780d4891fbaa03144c551f2
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8f84d0579805fcb2fed5664a6046b380a9ce08cf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959080"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807670"
 ---
-# <a name="update-userpfxcertificate"></a><span data-ttu-id="67609-103">更新 userPFXCertificate</span><span class="sxs-lookup"><span data-stu-id="67609-103">Update userPFXCertificate</span></span>
+# <a name="update-userpfxcertificate"></a><span data-ttu-id="950bd-103">更新 userPFXCertificate</span><span class="sxs-lookup"><span data-stu-id="950bd-103">Update userPFXCertificate</span></span>
 
-> <span data-ttu-id="67609-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="67609-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="950bd-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="950bd-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="67609-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="67609-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="950bd-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="950bd-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="67609-106">更新[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="67609-106">Update the properties of a [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) object.</span></span>
+<span data-ttu-id="950bd-106">更新[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="950bd-106">Update the properties of a [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="67609-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="67609-107">Prerequisites</span></span>
-<span data-ttu-id="67609-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="67609-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="950bd-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="950bd-107">Prerequisites</span></span>
+<span data-ttu-id="950bd-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="950bd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="67609-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="67609-110">Permission type</span></span>|<span data-ttu-id="67609-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="67609-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="950bd-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="950bd-110">Permission type</span></span>|<span data-ttu-id="950bd-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="950bd-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="67609-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="67609-112">Delegated (work or school account)</span></span>|<span data-ttu-id="67609-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="67609-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="67609-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="67609-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="67609-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="67609-115">Not supported.</span></span>|
-|<span data-ttu-id="67609-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="67609-116">Application</span></span>|<span data-ttu-id="67609-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="67609-117">Not supported.</span></span>|
+|<span data-ttu-id="950bd-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="950bd-112">Delegated (work or school account)</span></span>|<span data-ttu-id="950bd-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="950bd-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="950bd-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="950bd-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="950bd-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="950bd-115">Not supported.</span></span>|
+|<span data-ttu-id="950bd-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="950bd-116">Application</span></span>|<span data-ttu-id="950bd-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="950bd-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="67609-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="67609-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="950bd-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="950bd-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,42 +37,42 @@ ms.locfileid: "30959080"
 PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="67609-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="67609-119">Request headers</span></span>
-|<span data-ttu-id="67609-120">标头</span><span class="sxs-lookup"><span data-stu-id="67609-120">Header</span></span>|<span data-ttu-id="67609-121">值</span><span class="sxs-lookup"><span data-stu-id="67609-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="950bd-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="950bd-119">Request headers</span></span>
+|<span data-ttu-id="950bd-120">标头</span><span class="sxs-lookup"><span data-stu-id="950bd-120">Header</span></span>|<span data-ttu-id="950bd-121">值</span><span class="sxs-lookup"><span data-stu-id="950bd-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="67609-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="67609-122">Authorization</span></span>|<span data-ttu-id="67609-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="67609-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="67609-124">接受</span><span class="sxs-lookup"><span data-stu-id="67609-124">Accept</span></span>|<span data-ttu-id="67609-125">application/json</span><span class="sxs-lookup"><span data-stu-id="67609-125">application/json</span></span>|
+|<span data-ttu-id="950bd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="950bd-122">Authorization</span></span>|<span data-ttu-id="950bd-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="950bd-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="950bd-124">接受</span><span class="sxs-lookup"><span data-stu-id="950bd-124">Accept</span></span>|<span data-ttu-id="950bd-125">application/json</span><span class="sxs-lookup"><span data-stu-id="950bd-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="67609-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="67609-126">Request body</span></span>
-<span data-ttu-id="67609-127">在请求正文中, 提供[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="67609-127">In the request body, supply a JSON representation for the [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="950bd-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="950bd-126">Request body</span></span>
+<span data-ttu-id="950bd-127">在请求正文中, 提供[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="950bd-127">In the request body, supply a JSON representation for the [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) object.</span></span>
 
-<span data-ttu-id="67609-128">下表显示创建[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="67609-128">The following table shows the properties that are required when you create the [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md).</span></span>
+<span data-ttu-id="950bd-128">下表显示创建[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="950bd-128">The following table shows the properties that are required when you create the [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md).</span></span>
 
-|<span data-ttu-id="67609-129">属性</span><span class="sxs-lookup"><span data-stu-id="67609-129">Property</span></span>|<span data-ttu-id="67609-130">类型</span><span class="sxs-lookup"><span data-stu-id="67609-130">Type</span></span>|<span data-ttu-id="67609-131">说明</span><span class="sxs-lookup"><span data-stu-id="67609-131">Description</span></span>|
+|<span data-ttu-id="950bd-129">属性</span><span class="sxs-lookup"><span data-stu-id="950bd-129">Property</span></span>|<span data-ttu-id="950bd-130">类型</span><span class="sxs-lookup"><span data-stu-id="950bd-130">Type</span></span>|<span data-ttu-id="950bd-131">说明</span><span class="sxs-lookup"><span data-stu-id="950bd-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="67609-132">id</span><span class="sxs-lookup"><span data-stu-id="67609-132">id</span></span>|<span data-ttu-id="67609-133">String</span><span class="sxs-lookup"><span data-stu-id="67609-133">String</span></span>|<span data-ttu-id="67609-134">PFX 证书的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="67609-134">Unique identifier for the PFX certificate.</span></span>|
-|<span data-ttu-id="67609-135">为</span><span class="sxs-lookup"><span data-stu-id="67609-135">thumbprint</span></span>|<span data-ttu-id="67609-136">String</span><span class="sxs-lookup"><span data-stu-id="67609-136">String</span></span>|<span data-ttu-id="67609-137">SHA-1 PFX 证书的指纹。</span><span class="sxs-lookup"><span data-stu-id="67609-137">SHA-1 thumbprint of the PFX certificate.</span></span>|
-|<span data-ttu-id="67609-138">intendedPurpose</span><span class="sxs-lookup"><span data-stu-id="67609-138">intendedPurpose</span></span>|[<span data-ttu-id="67609-139">userPfxIntendedPurpose</span><span class="sxs-lookup"><span data-stu-id="67609-139">userPfxIntendedPurpose</span></span>](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|<span data-ttu-id="67609-140">证书的预期目的是从部署的角度来看。</span><span class="sxs-lookup"><span data-stu-id="67609-140">Certificate's intended purpose from the point-of-view of deployment.</span></span> <span data-ttu-id="67609-141">可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn` 或 `wifi`。</span><span class="sxs-lookup"><span data-stu-id="67609-141">Possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.</span></span>|
-|<span data-ttu-id="67609-142">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="67609-142">userPrincipalName</span></span>|<span data-ttu-id="67609-143">String</span><span class="sxs-lookup"><span data-stu-id="67609-143">String</span></span>|<span data-ttu-id="67609-144">PFX 证书的用户主体名称。</span><span class="sxs-lookup"><span data-stu-id="67609-144">User Principal Name of the PFX certificate.</span></span>|
-|<span data-ttu-id="67609-145">startDateTime</span><span class="sxs-lookup"><span data-stu-id="67609-145">startDateTime</span></span>|<span data-ttu-id="67609-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="67609-146">DateTimeOffset</span></span>|<span data-ttu-id="67609-147">证书的有效期开始日期/时间。</span><span class="sxs-lookup"><span data-stu-id="67609-147">Certificate's validity start date/time.</span></span>|
-|<span data-ttu-id="67609-148">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="67609-148">expirationDateTime</span></span>|<span data-ttu-id="67609-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="67609-149">DateTimeOffset</span></span>|<span data-ttu-id="67609-150">证书的有效期到期日期/时间。</span><span class="sxs-lookup"><span data-stu-id="67609-150">Certificate's validity expiration date/time.</span></span>|
-|<span data-ttu-id="67609-151">providerName</span><span class="sxs-lookup"><span data-stu-id="67609-151">providerName</span></span>|<span data-ttu-id="67609-152">String</span><span class="sxs-lookup"><span data-stu-id="67609-152">String</span></span>|<span data-ttu-id="67609-153">用于加密此 blob 的加密提供程序。</span><span class="sxs-lookup"><span data-stu-id="67609-153">Crypto provider used to encrypt this blob.</span></span>|
-|<span data-ttu-id="67609-154">名</span><span class="sxs-lookup"><span data-stu-id="67609-154">keyName</span></span>|<span data-ttu-id="67609-155">String</span><span class="sxs-lookup"><span data-stu-id="67609-155">String</span></span>|<span data-ttu-id="67609-156">用于对 blob 进行加密的密钥 (在提供程序中) 的名称。</span><span class="sxs-lookup"><span data-stu-id="67609-156">Name of the key (within the provider) used to encrypt the blob.</span></span>|
-|<span data-ttu-id="67609-157">paddingScheme</span><span class="sxs-lookup"><span data-stu-id="67609-157">paddingScheme</span></span>|[<span data-ttu-id="67609-158">userPfxPaddingScheme</span><span class="sxs-lookup"><span data-stu-id="67609-158">userPfxPaddingScheme</span></span>](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|<span data-ttu-id="67609-159">加密/解密过程中提供程序使用的填充方案。</span><span class="sxs-lookup"><span data-stu-id="67609-159">Padding scheme used by the provider during encryption/decryption.</span></span> <span data-ttu-id="67609-160">可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。</span><span class="sxs-lookup"><span data-stu-id="67609-160">Possible values are: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.</span></span>|
-|<span data-ttu-id="67609-161">encryptedPfxBlob</span><span class="sxs-lookup"><span data-stu-id="67609-161">encryptedPfxBlob</span></span>|<span data-ttu-id="67609-162">Binary</span><span class="sxs-lookup"><span data-stu-id="67609-162">Binary</span></span>|<span data-ttu-id="67609-163">加密的 PFX blob。</span><span class="sxs-lookup"><span data-stu-id="67609-163">Encrypted PFX blob.</span></span>|
-|<span data-ttu-id="67609-164">encryptedPfxPassword</span><span class="sxs-lookup"><span data-stu-id="67609-164">encryptedPfxPassword</span></span>|<span data-ttu-id="67609-165">String</span><span class="sxs-lookup"><span data-stu-id="67609-165">String</span></span>|<span data-ttu-id="67609-166">加密的 PFX 密码。</span><span class="sxs-lookup"><span data-stu-id="67609-166">Encrypted PFX password.</span></span>|
-|<span data-ttu-id="67609-167">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="67609-167">createdDateTime</span></span>|<span data-ttu-id="67609-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="67609-168">DateTimeOffset</span></span>|<span data-ttu-id="67609-169">导入此 PFX 证书的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="67609-169">Date/time when this PFX certificate was imported.</span></span>|
-|<span data-ttu-id="67609-170">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="67609-170">lastModifiedDateTime</span></span>|<span data-ttu-id="67609-171">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="67609-171">DateTimeOffset</span></span>|<span data-ttu-id="67609-172">上次修改此 PFX 证书的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="67609-172">Date/time when this PFX certificate was last modified.</span></span>|
+|<span data-ttu-id="950bd-132">id</span><span class="sxs-lookup"><span data-stu-id="950bd-132">id</span></span>|<span data-ttu-id="950bd-133">String</span><span class="sxs-lookup"><span data-stu-id="950bd-133">String</span></span>|<span data-ttu-id="950bd-134">PFX 证书的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="950bd-134">Unique identifier for the PFX certificate.</span></span>|
+|<span data-ttu-id="950bd-135">为</span><span class="sxs-lookup"><span data-stu-id="950bd-135">thumbprint</span></span>|<span data-ttu-id="950bd-136">String</span><span class="sxs-lookup"><span data-stu-id="950bd-136">String</span></span>|<span data-ttu-id="950bd-137">SHA-1 PFX 证书的指纹。</span><span class="sxs-lookup"><span data-stu-id="950bd-137">SHA-1 thumbprint of the PFX certificate.</span></span>|
+|<span data-ttu-id="950bd-138">intendedPurpose</span><span class="sxs-lookup"><span data-stu-id="950bd-138">intendedPurpose</span></span>|[<span data-ttu-id="950bd-139">userPfxIntendedPurpose</span><span class="sxs-lookup"><span data-stu-id="950bd-139">userPfxIntendedPurpose</span></span>](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|<span data-ttu-id="950bd-140">证书的预期目的是从部署的角度来看。</span><span class="sxs-lookup"><span data-stu-id="950bd-140">Certificate's intended purpose from the point-of-view of deployment.</span></span> <span data-ttu-id="950bd-141">可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn` 或 `wifi`。</span><span class="sxs-lookup"><span data-stu-id="950bd-141">Possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.</span></span>|
+|<span data-ttu-id="950bd-142">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="950bd-142">userPrincipalName</span></span>|<span data-ttu-id="950bd-143">String</span><span class="sxs-lookup"><span data-stu-id="950bd-143">String</span></span>|<span data-ttu-id="950bd-144">PFX 证书的用户主体名称。</span><span class="sxs-lookup"><span data-stu-id="950bd-144">User Principal Name of the PFX certificate.</span></span>|
+|<span data-ttu-id="950bd-145">startDateTime</span><span class="sxs-lookup"><span data-stu-id="950bd-145">startDateTime</span></span>|<span data-ttu-id="950bd-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="950bd-146">DateTimeOffset</span></span>|<span data-ttu-id="950bd-147">证书的有效期开始日期/时间。</span><span class="sxs-lookup"><span data-stu-id="950bd-147">Certificate's validity start date/time.</span></span>|
+|<span data-ttu-id="950bd-148">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="950bd-148">expirationDateTime</span></span>|<span data-ttu-id="950bd-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="950bd-149">DateTimeOffset</span></span>|<span data-ttu-id="950bd-150">证书的有效期到期日期/时间。</span><span class="sxs-lookup"><span data-stu-id="950bd-150">Certificate's validity expiration date/time.</span></span>|
+|<span data-ttu-id="950bd-151">providerName</span><span class="sxs-lookup"><span data-stu-id="950bd-151">providerName</span></span>|<span data-ttu-id="950bd-152">String</span><span class="sxs-lookup"><span data-stu-id="950bd-152">String</span></span>|<span data-ttu-id="950bd-153">用于加密此 blob 的加密提供程序。</span><span class="sxs-lookup"><span data-stu-id="950bd-153">Crypto provider used to encrypt this blob.</span></span>|
+|<span data-ttu-id="950bd-154">名</span><span class="sxs-lookup"><span data-stu-id="950bd-154">keyName</span></span>|<span data-ttu-id="950bd-155">String</span><span class="sxs-lookup"><span data-stu-id="950bd-155">String</span></span>|<span data-ttu-id="950bd-156">用于对 blob 进行加密的密钥 (在提供程序中) 的名称。</span><span class="sxs-lookup"><span data-stu-id="950bd-156">Name of the key (within the provider) used to encrypt the blob.</span></span>|
+|<span data-ttu-id="950bd-157">paddingScheme</span><span class="sxs-lookup"><span data-stu-id="950bd-157">paddingScheme</span></span>|[<span data-ttu-id="950bd-158">userPfxPaddingScheme</span><span class="sxs-lookup"><span data-stu-id="950bd-158">userPfxPaddingScheme</span></span>](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|<span data-ttu-id="950bd-159">加密/解密过程中提供程序使用的填充方案。</span><span class="sxs-lookup"><span data-stu-id="950bd-159">Padding scheme used by the provider during encryption/decryption.</span></span> <span data-ttu-id="950bd-160">可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。</span><span class="sxs-lookup"><span data-stu-id="950bd-160">Possible values are: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.</span></span>|
+|<span data-ttu-id="950bd-161">encryptedPfxBlob</span><span class="sxs-lookup"><span data-stu-id="950bd-161">encryptedPfxBlob</span></span>|<span data-ttu-id="950bd-162">Binary</span><span class="sxs-lookup"><span data-stu-id="950bd-162">Binary</span></span>|<span data-ttu-id="950bd-163">加密的 PFX blob。</span><span class="sxs-lookup"><span data-stu-id="950bd-163">Encrypted PFX blob.</span></span>|
+|<span data-ttu-id="950bd-164">encryptedPfxPassword</span><span class="sxs-lookup"><span data-stu-id="950bd-164">encryptedPfxPassword</span></span>|<span data-ttu-id="950bd-165">String</span><span class="sxs-lookup"><span data-stu-id="950bd-165">String</span></span>|<span data-ttu-id="950bd-166">加密的 PFX 密码。</span><span class="sxs-lookup"><span data-stu-id="950bd-166">Encrypted PFX password.</span></span>|
+|<span data-ttu-id="950bd-167">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="950bd-167">createdDateTime</span></span>|<span data-ttu-id="950bd-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="950bd-168">DateTimeOffset</span></span>|<span data-ttu-id="950bd-169">导入此 PFX 证书的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="950bd-169">Date/time when this PFX certificate was imported.</span></span>|
+|<span data-ttu-id="950bd-170">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="950bd-170">lastModifiedDateTime</span></span>|<span data-ttu-id="950bd-171">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="950bd-171">DateTimeOffset</span></span>|<span data-ttu-id="950bd-172">上次修改此 PFX 证书的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="950bd-172">Date/time when this PFX certificate was last modified.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="67609-173">响应</span><span class="sxs-lookup"><span data-stu-id="67609-173">Response</span></span>
-<span data-ttu-id="67609-174">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="67609-174">If successful, this method returns a `200 OK` response code and an updated [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="950bd-173">响应</span><span class="sxs-lookup"><span data-stu-id="950bd-173">Response</span></span>
+<span data-ttu-id="950bd-174">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="950bd-174">If successful, this method returns a `200 OK` response code and an updated [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="67609-175">示例</span><span class="sxs-lookup"><span data-stu-id="67609-175">Example</span></span>
+## <a name="example"></a><span data-ttu-id="950bd-175">示例</span><span class="sxs-lookup"><span data-stu-id="950bd-175">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="67609-176">请求</span><span class="sxs-lookup"><span data-stu-id="67609-176">Request</span></span>
-<span data-ttu-id="67609-177">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="67609-177">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="950bd-176">请求</span><span class="sxs-lookup"><span data-stu-id="950bd-176">Request</span></span>
+<span data-ttu-id="950bd-177">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="950bd-177">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userPfxCertificates/{userPFXCertificateId}
 Content-type: application/json
@@ -93,8 +93,8 @@ Content-length: 523
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="67609-178">响应</span><span class="sxs-lookup"><span data-stu-id="67609-178">Response</span></span>
-<span data-ttu-id="67609-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="67609-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="950bd-178">响应</span><span class="sxs-lookup"><span data-stu-id="950bd-178">Response</span></span>
+<span data-ttu-id="950bd-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="950bd-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -117,7 +117,6 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 
