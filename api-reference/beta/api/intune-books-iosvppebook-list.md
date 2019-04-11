@@ -4,31 +4,31 @@ description: 列出 iosVppEBook 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41e55b35fd56d7353e179f2c3db9e2e8f6d304aa
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 942a00f848ee5770b6b720513c1f55f3408c7a65
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977616"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773348"
 ---
-# <a name="list-iosvppebooks"></a><span data-ttu-id="b27da-103">列出 iosVppEBooks</span><span class="sxs-lookup"><span data-stu-id="b27da-103">List iosVppEBooks</span></span>
+# <a name="list-iosvppebooks"></a><span data-ttu-id="e7c32-103">列出 iosVppEBooks</span><span class="sxs-lookup"><span data-stu-id="e7c32-103">List iosVppEBooks</span></span>
 
-> <span data-ttu-id="b27da-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="b27da-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e7c32-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e7c32-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b27da-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b27da-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e7c32-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e7c32-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b27da-106">列出 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="b27da-106">List properties and relationships of the [iosVppEBook](../resources/intune-books-iosvppebook.md) objects.</span></span>
+<span data-ttu-id="e7c32-106">列出 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="e7c32-106">List properties and relationships of the [iosVppEBook](../resources/intune-books-iosvppebook.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b27da-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="b27da-107">Prerequisites</span></span>
-<span data-ttu-id="b27da-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b27da-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e7c32-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="e7c32-107">Prerequisites</span></span>
+<span data-ttu-id="e7c32-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e7c32-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b27da-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b27da-110">Permission type</span></span>|<span data-ttu-id="b27da-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="b27da-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e7c32-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="e7c32-110">Permission type</span></span>|<span data-ttu-id="e7c32-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="e7c32-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b27da-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b27da-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b27da-113">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="b27da-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="b27da-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b27da-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b27da-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="b27da-115">Not supported.</span></span>|
-|<span data-ttu-id="b27da-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="b27da-116">Application</span></span>|<span data-ttu-id="b27da-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="b27da-117">Not supported.</span></span>|
+|<span data-ttu-id="e7c32-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e7c32-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e7c32-113">DeviceManagementApps.ReadWrite.All、DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="e7c32-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="e7c32-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e7c32-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e7c32-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="e7c32-115">Not supported.</span></span>|
+|<span data-ttu-id="e7c32-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="e7c32-116">Application</span></span>|<span data-ttu-id="e7c32-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="e7c32-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b27da-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b27da-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e7c32-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e7c32-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,28 +37,28 @@ ms.locfileid: "30977616"
 GET /deviceAppManagement/managedEBooks
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b27da-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="b27da-119">Request headers</span></span>
-|<span data-ttu-id="b27da-120">标头</span><span class="sxs-lookup"><span data-stu-id="b27da-120">Header</span></span>|<span data-ttu-id="b27da-121">值</span><span class="sxs-lookup"><span data-stu-id="b27da-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e7c32-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="e7c32-119">Request headers</span></span>
+|<span data-ttu-id="e7c32-120">标头</span><span class="sxs-lookup"><span data-stu-id="e7c32-120">Header</span></span>|<span data-ttu-id="e7c32-121">值</span><span class="sxs-lookup"><span data-stu-id="e7c32-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b27da-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="b27da-122">Authorization</span></span>|<span data-ttu-id="b27da-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="b27da-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b27da-124">接受</span><span class="sxs-lookup"><span data-stu-id="b27da-124">Accept</span></span>|<span data-ttu-id="b27da-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b27da-125">application/json</span></span>|
+|<span data-ttu-id="e7c32-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7c32-122">Authorization</span></span>|<span data-ttu-id="e7c32-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="e7c32-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e7c32-124">接受</span><span class="sxs-lookup"><span data-stu-id="e7c32-124">Accept</span></span>|<span data-ttu-id="e7c32-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e7c32-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b27da-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="b27da-126">Request body</span></span>
-<span data-ttu-id="b27da-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b27da-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e7c32-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="e7c32-126">Request body</span></span>
+<span data-ttu-id="e7c32-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e7c32-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b27da-128">响应</span><span class="sxs-lookup"><span data-stu-id="b27da-128">Response</span></span>
-<span data-ttu-id="b27da-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="b27da-129">If successful, this method returns a `200 OK` response code and a collection of [iosVppEBook](../resources/intune-books-iosvppebook.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e7c32-128">响应</span><span class="sxs-lookup"><span data-stu-id="e7c32-128">Response</span></span>
+<span data-ttu-id="e7c32-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e7c32-129">If successful, this method returns a `200 OK` response code and a collection of [iosVppEBook](../resources/intune-books-iosvppebook.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b27da-130">示例</span><span class="sxs-lookup"><span data-stu-id="b27da-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e7c32-130">示例</span><span class="sxs-lookup"><span data-stu-id="e7c32-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b27da-131">请求</span><span class="sxs-lookup"><span data-stu-id="b27da-131">Request</span></span>
-<span data-ttu-id="b27da-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b27da-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e7c32-131">请求</span><span class="sxs-lookup"><span data-stu-id="e7c32-131">Request</span></span>
+<span data-ttu-id="e7c32-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e7c32-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks
 ```
 
-### <a name="response"></a><span data-ttu-id="b27da-133">响应</span><span class="sxs-lookup"><span data-stu-id="b27da-133">Response</span></span>
-<span data-ttu-id="b27da-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b27da-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e7c32-133">响应</span><span class="sxs-lookup"><span data-stu-id="e7c32-133">Response</span></span>
+<span data-ttu-id="e7c32-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e7c32-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -99,6 +99,7 @@ Content-Length: 1171
   ]
 }
 ```
+
 
 
 

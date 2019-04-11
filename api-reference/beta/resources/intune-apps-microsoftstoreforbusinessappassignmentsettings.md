@@ -4,34 +4,34 @@ description: 包含用于为组分配适用于企业的 Microsoft 应用商店�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fdcf4633433f471383e4c5b1c670eb5f5a8cb37
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 64aca2bde63a3a0e4295be6eb38f1d3362e52337
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164923"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771759"
 ---
-# <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a><span data-ttu-id="d5cee-103">microsoftStoreForBusinessAppAssignmentSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="d5cee-103">microsoftStoreForBusinessAppAssignmentSettings resource type</span></span>
+# <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a><span data-ttu-id="1a99d-103">microsoftStoreForBusinessAppAssignmentSettings 资源类型</span><span class="sxs-lookup"><span data-stu-id="1a99d-103">microsoftStoreForBusinessAppAssignmentSettings resource type</span></span>
 
-> <span data-ttu-id="d5cee-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d5cee-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="1a99d-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="1a99d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d5cee-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d5cee-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1a99d-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="1a99d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d5cee-106">包含用于为组分配适用于企业的 Microsoft 应用商店移动应用的属性。</span><span class="sxs-lookup"><span data-stu-id="d5cee-106">Contains properties used to assign an Microsoft Store for Business mobile app to a group.</span></span>
+<span data-ttu-id="1a99d-106">包含用于为组分配适用于企业的 Microsoft 应用商店移动应用的属性。</span><span class="sxs-lookup"><span data-stu-id="1a99d-106">Contains properties used to assign an Microsoft Store for Business mobile app to a group.</span></span>
 
 
-<span data-ttu-id="d5cee-107">继承自 [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="d5cee-107">Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span></span>
+<span data-ttu-id="1a99d-107">继承自 [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="1a99d-107">Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d5cee-108">属性</span><span class="sxs-lookup"><span data-stu-id="d5cee-108">Properties</span></span>
-|<span data-ttu-id="d5cee-109">属性</span><span class="sxs-lookup"><span data-stu-id="d5cee-109">Property</span></span>|<span data-ttu-id="d5cee-110">类型</span><span class="sxs-lookup"><span data-stu-id="d5cee-110">Type</span></span>|<span data-ttu-id="d5cee-111">说明</span><span class="sxs-lookup"><span data-stu-id="d5cee-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="1a99d-108">属性</span><span class="sxs-lookup"><span data-stu-id="1a99d-108">Properties</span></span>
+|<span data-ttu-id="1a99d-109">属性</span><span class="sxs-lookup"><span data-stu-id="1a99d-109">Property</span></span>|<span data-ttu-id="1a99d-110">类型</span><span class="sxs-lookup"><span data-stu-id="1a99d-110">Type</span></span>|<span data-ttu-id="1a99d-111">说明</span><span class="sxs-lookup"><span data-stu-id="1a99d-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d5cee-112">useDeviceContext</span><span class="sxs-lookup"><span data-stu-id="d5cee-112">useDeviceContext</span></span>|<span data-ttu-id="d5cee-113">布尔值</span><span class="sxs-lookup"><span data-stu-id="d5cee-113">Boolean</span></span>|<span data-ttu-id="d5cee-114">是否要将设备执行上下文用于适用于企业的 Microsoft 应用商店移动应用。</span><span class="sxs-lookup"><span data-stu-id="d5cee-114">Whether or not to use device execution context for Microsoft Store for Business mobile app.</span></span>|
+|<span data-ttu-id="1a99d-112">useDeviceContext</span><span class="sxs-lookup"><span data-stu-id="1a99d-112">useDeviceContext</span></span>|<span data-ttu-id="1a99d-113">布尔值</span><span class="sxs-lookup"><span data-stu-id="1a99d-113">Boolean</span></span>|<span data-ttu-id="1a99d-114">是否要将设备执行上下文用于适用于企业的 Microsoft 应用商店移动应用。</span><span class="sxs-lookup"><span data-stu-id="1a99d-114">Whether or not to use device execution context for Microsoft Store for Business mobile app.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d5cee-115">关系</span><span class="sxs-lookup"><span data-stu-id="d5cee-115">Relationships</span></span>
-<span data-ttu-id="d5cee-116">无</span><span class="sxs-lookup"><span data-stu-id="d5cee-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="1a99d-115">关系</span><span class="sxs-lookup"><span data-stu-id="1a99d-115">Relationships</span></span>
+<span data-ttu-id="1a99d-116">无</span><span class="sxs-lookup"><span data-stu-id="1a99d-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d5cee-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d5cee-117">JSON Representation</span></span>
-<span data-ttu-id="d5cee-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d5cee-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1a99d-117">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1a99d-117">JSON Representation</span></span>
+<span data-ttu-id="1a99d-118">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1a99d-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings"
@@ -43,6 +43,7 @@ ms.locfileid: "30164923"
   "useDeviceContext": true
 }
 ```
+
 
 
 
