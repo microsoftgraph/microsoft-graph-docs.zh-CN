@@ -4,35 +4,35 @@ description: 表示 ios Web 内容筛选器设置类型, 该类型启用 ios 自
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74e281a4cbc08467730680b556e6e8026535ff3a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 91efedb47fff71a66d12e0d2c976d61fab2fa76c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155662"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777926"
 ---
-# <a name="ioswebcontentfilterautofilter-resource-type"></a><span data-ttu-id="2276e-104">iosWebContentFilterAutoFilter 资源类型</span><span class="sxs-lookup"><span data-stu-id="2276e-104">iosWebContentFilterAutoFilter resource type</span></span>
+# <a name="ioswebcontentfilterautofilter-resource-type"></a><span data-ttu-id="bae22-104">iosWebContentFilterAutoFilter 资源类型</span><span class="sxs-lookup"><span data-stu-id="bae22-104">iosWebContentFilterAutoFilter resource type</span></span>
 
-> <span data-ttu-id="2276e-105">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="2276e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="bae22-105">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="bae22-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2276e-106">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2276e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="bae22-106">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="bae22-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2276e-107">表示 ios Web 内容筛选器设置类型, 该类型启用 ios 自动筛选功能并允许其他 URL 访问控制。</span><span class="sxs-lookup"><span data-stu-id="2276e-107">Represents an iOS Web Content Filter setting type, which enables iOS automatic filter feature and allows for additional URL access control.</span></span> <span data-ttu-id="2276e-108">在不使用属性值的情况下构建时, iOS 设备将启用自动筛选器 (而不考虑)。</span><span class="sxs-lookup"><span data-stu-id="2276e-108">When constructed with no property values, the iOS device will enable the automatic filter regardless.</span></span>
+<span data-ttu-id="bae22-107">表示 ios Web 内容筛选器设置类型, 该类型启用 ios 自动筛选功能并允许其他 URL 访问控制。</span><span class="sxs-lookup"><span data-stu-id="bae22-107">Represents an iOS Web Content Filter setting type, which enables iOS automatic filter feature and allows for additional URL access control.</span></span> <span data-ttu-id="bae22-108">在不使用属性值的情况下构建时, iOS 设备将启用自动筛选器 (而不考虑)。</span><span class="sxs-lookup"><span data-stu-id="bae22-108">When constructed with no property values, the iOS device will enable the automatic filter regardless.</span></span>
 
 
-<span data-ttu-id="2276e-109">继承自[iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span><span class="sxs-lookup"><span data-stu-id="2276e-109">Inherits from [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span></span>
+<span data-ttu-id="bae22-109">继承自[iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span><span class="sxs-lookup"><span data-stu-id="bae22-109">Inherits from [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2276e-110">属性</span><span class="sxs-lookup"><span data-stu-id="2276e-110">Properties</span></span>
-|<span data-ttu-id="2276e-111">属性</span><span class="sxs-lookup"><span data-stu-id="2276e-111">Property</span></span>|<span data-ttu-id="2276e-112">类型</span><span class="sxs-lookup"><span data-stu-id="2276e-112">Type</span></span>|<span data-ttu-id="2276e-113">说明</span><span class="sxs-lookup"><span data-stu-id="2276e-113">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="bae22-110">属性</span><span class="sxs-lookup"><span data-stu-id="bae22-110">Properties</span></span>
+|<span data-ttu-id="bae22-111">属性</span><span class="sxs-lookup"><span data-stu-id="bae22-111">Property</span></span>|<span data-ttu-id="bae22-112">类型</span><span class="sxs-lookup"><span data-stu-id="bae22-112">Type</span></span>|<span data-ttu-id="bae22-113">说明</span><span class="sxs-lookup"><span data-stu-id="bae22-113">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2276e-114">allowedUrls</span><span class="sxs-lookup"><span data-stu-id="2276e-114">allowedUrls</span></span>|<span data-ttu-id="2276e-115">String collection</span><span class="sxs-lookup"><span data-stu-id="2276e-115">String collection</span></span>|<span data-ttu-id="2276e-116">允许访问的其他 url</span><span class="sxs-lookup"><span data-stu-id="2276e-116">Additional URLs allowed for access</span></span>|
-|<span data-ttu-id="2276e-117">blockedUrls</span><span class="sxs-lookup"><span data-stu-id="2276e-117">blockedUrls</span></span>|<span data-ttu-id="2276e-118">String collection</span><span class="sxs-lookup"><span data-stu-id="2276e-118">String collection</span></span>|<span data-ttu-id="2276e-119">为 access 阻止的其他 url</span><span class="sxs-lookup"><span data-stu-id="2276e-119">Additional URLs blocked for access</span></span>|
+|<span data-ttu-id="bae22-114">allowedUrls</span><span class="sxs-lookup"><span data-stu-id="bae22-114">allowedUrls</span></span>|<span data-ttu-id="bae22-115">String 集合</span><span class="sxs-lookup"><span data-stu-id="bae22-115">String collection</span></span>|<span data-ttu-id="bae22-116">允许访问的其他 url</span><span class="sxs-lookup"><span data-stu-id="bae22-116">Additional URLs allowed for access</span></span>|
+|<span data-ttu-id="bae22-117">blockedUrls</span><span class="sxs-lookup"><span data-stu-id="bae22-117">blockedUrls</span></span>|<span data-ttu-id="bae22-118">String 集合</span><span class="sxs-lookup"><span data-stu-id="bae22-118">String collection</span></span>|<span data-ttu-id="bae22-119">为 access 阻止的其他 url</span><span class="sxs-lookup"><span data-stu-id="bae22-119">Additional URLs blocked for access</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="2276e-120">关系</span><span class="sxs-lookup"><span data-stu-id="2276e-120">Relationships</span></span>
-<span data-ttu-id="2276e-121">无</span><span class="sxs-lookup"><span data-stu-id="2276e-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="bae22-120">关系</span><span class="sxs-lookup"><span data-stu-id="bae22-120">Relationships</span></span>
+<span data-ttu-id="bae22-121">无</span><span class="sxs-lookup"><span data-stu-id="bae22-121">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2276e-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2276e-122">JSON Representation</span></span>
-<span data-ttu-id="2276e-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2276e-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bae22-122">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="bae22-122">JSON Representation</span></span>
+<span data-ttu-id="bae22-123">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bae22-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosWebContentFilterAutoFilter"
@@ -49,6 +49,7 @@ ms.locfileid: "30155662"
   ]
 }
 ```
+
 
 
 
