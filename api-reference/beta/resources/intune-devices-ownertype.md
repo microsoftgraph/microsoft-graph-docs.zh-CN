@@ -4,12 +4,12 @@ description: 设备的所有者类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 113744129e6a86cccc0188187cd54e64a1266cd6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: aef5adc3bd1736f8f54b0ee2f91121586431dc10
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150643"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786033"
 ---
 # <a name="ownertype-enum-type"></a>所有者类型的枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30150643"
 |unknown|0|陌生.|
 |公司|1|由公司负责。|
 |personal|双面|归某人所有。|
+
 
 
 

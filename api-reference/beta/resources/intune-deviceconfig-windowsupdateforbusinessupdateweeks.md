@@ -4,12 +4,12 @@ description: 在每月的几周安排更新安装
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f06f63672a704d1d69ae62b353b025b8b78e063
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f2b9e1a65902a6ebf78c122eb06d6a4ba70e63e7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147024"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788210"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>windowsUpdateForBusinessUpdateWeeks 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "30147024"
 |thirdWeek|4|在每月的第三周安排更新安装|
 |fourthWeek|utf-8|在每月的第四周安排更新安装|
 |everyWeek|个|在每个月的每一周计划更新安装|
+
 
 
 

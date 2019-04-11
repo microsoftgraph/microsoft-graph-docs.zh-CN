@@ -4,12 +4,12 @@ description: 列出 deviceManagementIntentDeviceState 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e9f1f38dc75b0d7e5488382a26ecd3100fbc6da
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f346be0470ed49551363e5975b6642cb2e06587d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523761"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787160"
 ---
 # <a name="list-devicemanagementintentdevicestates"></a>列出 deviceManagementIntentDeviceStates
 
@@ -79,8 +79,6 @@ Content-Length: 456
   ]
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 包含将 Windows AppX 移动应用程序分配给组时使用的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83e384167984f1eda640ef1faa1f4241b1badbbb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f15af8bf60dae2b40473eb23a1093f9e73bda7b6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167576"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785921"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>windowsAppXAppAssignmentSettings 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "30167576"
   "useDeviceContext": true
 }
 ```
+
 
 
 

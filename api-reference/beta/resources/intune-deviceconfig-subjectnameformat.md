@@ -4,12 +4,12 @@ description: 主题名称格式选项。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f12068576ff78d74f2e1b6119a2030ff7835a7d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6202deb0a225da136216eddbb44818cb3ba3a3c5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158553"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789729"
 ---
 # <a name="subjectnameformat-enum-type"></a>subjectNameFormat 枚举类型
 
@@ -25,12 +25,13 @@ ms.locfileid: "30158553"
 |commonName|0|公用名。|
 |commonNameIncludingEmail|1|公用名称, 包括电子邮件。|
 |commonNameAsEmail|双面|电子邮件的常见名称。|
-|自定义|第三章|自定义主题名称格式。|
+|自|第三章|自定义主题名称格式。|
 |commonNameAsIMEI|5|作为 IMEI 的常用名称。|
 |commonNameAsSerialNumber|型|作为序列号的常用名称。|
 |commonNameAsAadDeviceId|步|作为序列号的常用名称。|
 |commonNameAsIntuneDeviceId|utf-8|作为序列号的常用名称。|
 |commonNameAsDurableDeviceId|第|作为序列号的常用名称。|
+
 
 
 

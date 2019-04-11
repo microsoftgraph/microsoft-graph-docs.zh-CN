@@ -4,12 +4,12 @@ description: 自定义扩展密钥用法定义
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1487d217693135e26df99d4d72491abac4123ba7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cd89a46c2739f80a0a5c661884fb5e72c6e17522
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173288"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789211"
 ---
 # <a name="extendedkeyusage-resource-type"></a>extendedKeyUsage 资源类型
 
@@ -42,6 +42,7 @@ ms.locfileid: "30173288"
   "objectIdentifier": "String"
 }
 ```
+
 
 
 

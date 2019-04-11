@@ -4,12 +4,12 @@ description: 列出 deviceConfigurationAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b39206581090300fdf8769ef972b3b968b10faaa
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f9c02a4a8fa44f54fc95f07f9d469ccd6d3218f2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984946"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789148"
 ---
 # <a name="list-deviceconfigurationassignments"></a>列出 deviceConfigurationAssignments
 
@@ -84,6 +84,7 @@ Content-Length: 271
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 windowsStoreApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0bffd776d09219c9ad589492afd8b6cd98c41388
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a723b135a8d0b315db9b3c84fe561c38cc01d59a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965331"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786152"
 ---
 # <a name="get-windowsstoreapp"></a>获取 windowsStoreApp
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 982
+Content-Length: 1011
 
 {
   "value": {
@@ -95,10 +95,12 @@ Content-Length: 982
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "appStoreUrl": "https://example.com/appStoreUrl/"
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 表示设备状态的意向的实体
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2872fa9cccd4f68f274605168689068cf52b157
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 1db6b0d5d7376b5c71b3be5753a777477c3b3850
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522536"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785760"
 ---
 # <a name="devicemanagementintentdevicestate-resource-type"></a>deviceManagementIntentDeviceState 资源类型
 
@@ -62,8 +62,6 @@ ms.locfileid: "31522536"
   "deviceId": "String"
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 为 Windows Update for Business 振铃扩展功能更新暂停。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52544ff78bbfb077936e9b20fa5fda6326f830f3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 99026500c43824343b9cb7e5fe9501dcba1189c1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963840"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787958"
 ---
 # <a name="extendfeatureupdatespause-action"></a>extendFeatureUpdatesPause 操作
 
@@ -64,6 +64,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

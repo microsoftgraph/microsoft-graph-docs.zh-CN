@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementIntentDeviceSettingStateSummary 对象
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9223cd47bf6c837acf06c2daa185c5675d6f3c8
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 4bfe4c44bdd0ec2a68e58c3a881dbe00ae1b7f5e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522802"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787601"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>创建 deviceManagementIntentDeviceSettingStateSummary
 
@@ -104,8 +104,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
-
 
 
 

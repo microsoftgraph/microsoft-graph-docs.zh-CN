@@ -4,12 +4,12 @@ description: BitLockerRecoveryInformationType 类型
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea36ffe652d9e881dc0b41af49a01a36c14460ec
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e46dfbecf3c8018cbf0d73dc61721046c43e5b8a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162438"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789757"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>bitLockerRecoveryInformationType 枚举类型
 
@@ -24,6 +24,7 @@ BitLockerRecoveryInformationType 类型
 |:---|:---|:---|
 |passwordAndKey|1|存储恢复密码和密钥包。|
 |passwordOnly|双面|仅存储恢复密码。|
+
 
 
 

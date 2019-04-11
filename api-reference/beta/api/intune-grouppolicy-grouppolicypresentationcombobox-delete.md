@@ -4,12 +4,12 @@ description: 删除 groupPolicyPresentationComboBox。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dba60c4cf076eb8bf37ccc7dd939f6aaa37f393a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 249506ca005783a1a246f8603fe6f0b4ed86ec98
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987291"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787692"
 ---
 # <a name="delete-grouppolicypresentationcombobox"></a>删除 groupPolicyPresentationComboBox
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

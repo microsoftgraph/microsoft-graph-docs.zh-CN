@@ -4,12 +4,12 @@ description: 包含设备管理脚本的设备运行状态的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 390c48a6c7d0cf040891cf77e4e89bae3aeca79e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b985b7641d66c806acc544174fffff4a2216421a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169760"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784955"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>deviceManagementScriptDeviceState 资源类型
 
@@ -31,9 +31,9 @@ ms.locfileid: "30169760"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备管理脚本设备状态实体的密钥。|
+|id|String|设备管理脚本设备状态实体的密钥。|
 |runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本最新运行的状态。 可取值为：`unknown`、`success`、`fail`。|
-|resultMessage|字符串|执行输出的详细信息。|
+|resultMessage|String|执行输出的详细信息。|
 |lastStateUpdateDateTime|DateTimeOffset|最近执行设备管理脚本的时间。|
 |errorCode|Int32|与设备管理脚本的错误执行相对应的错误代码。|
 |errorDescription|String|与设备管理脚本的错误执行相对应的错误说明。|
@@ -62,6 +62,7 @@ ms.locfileid: "30169760"
   "errorDescription": "String"
 }
 ```
+
 
 
 

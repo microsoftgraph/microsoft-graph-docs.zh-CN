@@ -4,12 +4,12 @@ description: 创建新的 remoteActionAudit 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ce034699478a3e670590e64beea240e0b24e1f9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 820f6acd0d5959eb0c75e2bc0a272ca3ec3e5cf8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971547"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788462"
 ---
 # <a name="create-remoteactionaudit"></a>创建 remoteActionAudit
 
@@ -107,6 +107,7 @@ Content-Length: 504
   "actionState": "pending"
 }
 ```
+
 
 
 

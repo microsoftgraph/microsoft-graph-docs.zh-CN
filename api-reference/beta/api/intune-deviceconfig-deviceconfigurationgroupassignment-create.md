@@ -4,12 +4,12 @@ description: 创建新的 deviceConfigurationGroupAssignment 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9dc2a7895e33c8d9ecf0b5bc0a47e202dfed0b69
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f1c7edbe6e646647ffa9887ae49a16539c451e20
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981739"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785725"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>创建 deviceConfigurationGroupAssignment
 
@@ -60,7 +60,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。|
 |targetGroupId|String|要将设备配置定向到的 AAD 组的 Id。|
-|excludeGroup|Boolean|指示是否应排除此组。 应包含组的默认值|
+|excludeGroup|布尔值|指示是否应排除此组。 应包含组的默认值|
 
 
 
@@ -97,6 +97,7 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
+
 
 
 

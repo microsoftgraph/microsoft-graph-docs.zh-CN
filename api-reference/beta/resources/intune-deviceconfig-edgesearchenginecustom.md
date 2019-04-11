@@ -4,12 +4,12 @@ description: 允许 IT 管理员为 MDM 控制的设备设置自定义默认搜�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1f97de9b4665769ea4e9731045603664673f64f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a936cc49aebb1021005a005ebcaf85473a355376
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165728"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787475"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>edgeSearchEngineCustom 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "30165728"
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
+
 
 
 

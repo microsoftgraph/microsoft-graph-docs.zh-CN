@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationTextBox 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca072271258c2c7512ba8270bcc590975812b815
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9b5b7ac370825c54c55ebdcfc0c219dd3916834a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962020"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789085"
 ---
 # <a name="update-grouppolicypresentationtextbox"></a>更新 groupPolicyPresentationTextBox
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |默认|String|显示在文本框中的本地化默认字符串。 默认值为空白。|
-|必需|Boolean|要求在文本框中输入值。 默认值为 false。|
+|必需|布尔值|要求在文本框中输入值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数, 指定最大文本字符数。 默认值为1023。|
 
 
@@ -98,6 +98,7 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
+
 
 
 

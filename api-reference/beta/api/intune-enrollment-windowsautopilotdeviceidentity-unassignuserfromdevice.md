@@ -4,12 +4,12 @@ description: 将用户从 Autopilot 设备取消分配。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf8d5b70c09407f058a6fe01a450f827e91f89c4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 27b157190cae8369c2362cf133c5c43da6f825a3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964001"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788910"
 ---
 # <a name="unassignuserfromdevice-action"></a>unassignUserFromDevice 操作
 
@@ -63,6 +63,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIde
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

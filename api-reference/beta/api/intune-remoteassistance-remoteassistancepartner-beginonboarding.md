@@ -1,15 +1,15 @@
 ---
 title: beginOnboarding 操作
-description: 尚未记录
+description: 启动 "加入" 的请求。  必须与相应的 TeamViewer 帐户信息结合使用
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6548edc23599760e4c4419f32edcf4052fbce7c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 36fa3b2d27bbcad94ad2427c5a248a3ae5360fc8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976370"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789869"
 ---
 # <a name="beginonboarding-action"></a>beginOnboarding 操作
 
@@ -17,7 +17,7 @@ ms.locfileid: "30976370"
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+启动 "加入" 的请求。  必须与相应的 TeamViewer 帐户信息结合使用
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

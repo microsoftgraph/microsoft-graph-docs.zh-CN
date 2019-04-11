@@ -4,12 +4,12 @@ description: 此租户的合作伙伴状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11276fa24b5128c52c39fcc4c8a944df39c865b2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 944e9cf172bd39dd50a41e55af5fb02421d81c4f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153331"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787349"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "30153331"
 |异常|第三章|合作伙伴连接已终止。|
 |拒绝|4|拒绝合作伙伴邮件。|
 |无|5|合作伙伴无响应。|
+
 
 
 

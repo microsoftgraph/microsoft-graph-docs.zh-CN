@@ -4,12 +4,12 @@ description: 列出 easEmailProfileConfigurationBase 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d02dd0b2d3cc0df1cbe1a6c30672aa875e959899
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5c000782ff255602d2de5b3b1b1ecac0aaac4164
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962202"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785718"
 ---
 # <a name="list-easemailprofileconfigurationbases"></a>列出 easEmailProfileConfigurationBases
 
@@ -87,6 +87,7 @@ Content-Length: 715
   ]
 }
 ```
+
 
 
 

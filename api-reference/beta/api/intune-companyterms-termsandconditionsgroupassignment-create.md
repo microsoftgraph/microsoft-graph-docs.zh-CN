@@ -4,12 +4,12 @@ description: 创建新的 termsAndConditionsGroupAssignment 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95f5b9f065175918f0508378372274f6f2947539
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c390ed0d3d5fce21cc69adfe513169833d8f4a43
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957260"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787510"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>创建 termsAndConditionsGroupAssignment
 
@@ -86,6 +86,7 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
+
 
 
 

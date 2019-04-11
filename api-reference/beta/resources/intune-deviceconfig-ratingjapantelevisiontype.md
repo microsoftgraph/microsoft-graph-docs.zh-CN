@@ -4,12 +4,12 @@ description: 日本的电视内容评级标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ace7af782204433990c8a24ae595b4b5cd0a0071
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 11d65f44791ebbaeac35c6814070b9b707f9a268
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168689"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788455"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>ratingJapanTelevisionType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30168689"
 |allAllowed|0|默认值, 允许所有电视节目内容|
 |allBlocked|1|不允许任何电视显示内容|
 |explicitAllowed|双面|明确允许所有电视内容|
+
 
 
 

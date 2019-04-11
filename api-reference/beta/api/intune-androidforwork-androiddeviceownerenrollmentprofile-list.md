@@ -4,12 +4,12 @@ description: 列出 androidDeviceOwnerEnrollmentProfile 对象的属性和关系
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6c9164a02f7e94484ee254227bf1ec50d201ee7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 16244072fd53cdf611c41fc03f5ed96ee0d6c7ae
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980444"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789351"
 ---
 # <a name="list-androiddeviceownerenrollmentprofiles"></a>列出 androidDeviceOwnerEnrollmentProfiles
 
@@ -88,6 +88,7 @@ Content-Length: 838
   ]
 }
 ```
+
 
 
 

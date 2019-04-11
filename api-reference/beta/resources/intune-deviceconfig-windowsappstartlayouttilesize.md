@@ -4,12 +4,12 @@ description: "\"开始\" 布局中 Windows 应用的磁贴大小。"
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fdb4f09d8e9cec666c1b89aabe987891e093500c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 498cb8f38eeb4f4223655156e2d6ef5f178140a8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173939"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785746"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>windowsAppStartLayoutTileSize 枚举类型
 
@@ -22,11 +22,12 @@ ms.locfileid: "30173939"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|hidden|0|隐藏。|
+|hidden|0|可见.|
 |小|1|较小的1x1。|
 |中等|双面|中2x2。|
 |丰富|第三章|宽4x2。|
 |大|4|大型4x4。|
+
 
 
 

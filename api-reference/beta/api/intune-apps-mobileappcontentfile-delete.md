@@ -4,12 +4,12 @@ description: 删除 mobileAppContentFile。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93dfeef29888232543185482413aa174dfb49990
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 92bfd6ccf3f679add50a2a3b9a1d57b058a5c073
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962321"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789183"
 ---
 # <a name="delete-mobileappcontentfile"></a>删除 mobileAppContentFile
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

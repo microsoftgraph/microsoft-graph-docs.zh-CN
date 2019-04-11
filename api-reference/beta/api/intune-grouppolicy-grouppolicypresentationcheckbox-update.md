@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationCheckBox 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92f5af7496dda48aced995e33e077be7fa6ff5f7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a00c21cf6fdd177432b5aa5a28e4e816a3b9ffea
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962391"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787587"
 ---
 # <a name="update-grouppolicypresentationcheckbox"></a>更新 groupPolicyPresentationCheckBox
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultChecked|Boolean|复选框的默认值。 默认值为 false。|
+|defaultChecked|布尔值|复选框的默认值。 默认值为 false。|
 
 
 
@@ -92,6 +92,7 @@ Content-Length: 240
   "defaultChecked": true
 }
 ```
+
 
 
 

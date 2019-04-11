@@ -4,12 +4,12 @@ description: 清理 Windows 设备
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dcfdda5a3b626f55656d07e788dc6711f82d6c4a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 68775825b67e6e6410f5159f1a43b1dc3f248bb6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984903"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785844"
 ---
 # <a name="cleanwindowsdevice-action"></a>cleanWindowsDevice 操作
 
@@ -34,9 +34,9 @@ ms.locfileid: "30984903"
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/cleanWindowsDevice
 POST /deviceManagement/managedDevices/{managedDeviceId}/cleanWindowsDevice
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/cleanWindowsDevice
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/cleanWindowsDevice
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/cleanWindowsDevice
 ```
 
@@ -65,7 +65,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/cleanWindowsDevice
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/cleanWindowsDevice
 
 Content-type: application/json
 Content-length: 28
@@ -80,6 +80,7 @@ Content-length: 28
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

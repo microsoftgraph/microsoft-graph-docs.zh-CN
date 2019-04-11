@@ -4,12 +4,12 @@ description: 包含业务线应用内容版本文件加密信息的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 060f8eac1bfff3f0d2e18d52428deb884da4a759
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9a2236e2c63703ea5af2662d5b0f4594e7888799
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168570"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789722"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>fileEncryptionInfo 资源类型
 
@@ -52,6 +52,7 @@ ms.locfileid: "30168570"
   "fileDigestAlgorithm": "String"
 }
 ```
+
 
 
 

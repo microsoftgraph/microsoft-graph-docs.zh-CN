@@ -4,12 +4,12 @@ description: 使用上载导入 windows autopilot 设备。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ab6152a4347a7694e1ca6995fa683bda29b7206
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5267125b660e2700f31b7ff06e678bf9e1649e0c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169634"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786362"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>importedWindowsAutopilotDeviceIdentityUpload 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "30169634"
 |createdDateTimeUtc|DateTimeOffset|创建实体时的日期/时间。|
 |status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|上载状态。 可取值为：`noUpload`、`pending`、`complete`、`error`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |deviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) 集合|作为此上载的一部分的所有 Autopilot 设备的集合。|
@@ -57,6 +57,7 @@ ms.locfileid: "30169634"
   "status": "String"
 }
 ```
+
 
 
 

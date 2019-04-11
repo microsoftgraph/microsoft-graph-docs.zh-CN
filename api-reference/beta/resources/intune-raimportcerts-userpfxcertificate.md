@@ -4,12 +4,12 @@ description: 封装用户的 PFX 证书所需的所有信息的实体。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 534b2fa0f5f3240ead38deae45d3cc88091e40d8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 31a634c8c442cdbf53034b7d39062c1a3d0f5a01
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154927"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789862"
 ---
 # <a name="userpfxcertificate-resource-type"></a>userPFXCertificate 资源类型
 
@@ -31,17 +31,17 @@ ms.locfileid: "30154927"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|PFX 证书的唯一标识符。|
-|为|字符串|SHA-1 PFX 证书的指纹。|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
-|userPrincipalName|字符串|PFX 证书的用户主体名称。|
+|id|String|PFX 证书的唯一标识符。|
+|为|String|SHA-1 PFX 证书的指纹。|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn` 或 `wifi`。|
+|userPrincipalName|String|PFX 证书的用户主体名称。|
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
-|providerName|字符串|用于加密此 blob 的加密提供程序。|
-|名|字符串|用于对 blob 进行加密的密钥 (在提供程序中) 的名称。|
+|providerName|String|用于加密此 blob 的加密提供程序。|
+|名|String|用于对 blob 进行加密的密钥 (在提供程序中) 的名称。|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|加密/解密过程中提供程序使用的填充方案。 可取值为：`none`、`pkcs1`、`oaepSha1`、`oaepSha256`、`oaepSha384`、`oaepSha512`。|
 |encryptedPfxBlob|Binary|加密的 PFX blob。|
-|encryptedPfxPassword|字符串|加密的 PFX 密码。|
+|encryptedPfxPassword|String|加密的 PFX 密码。|
 |createdDateTime|DateTimeOffset|导入此 PFX 证书的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改此 PFX 证书的日期/时间。|
 
@@ -74,7 +74,6 @@ ms.locfileid: "30154927"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

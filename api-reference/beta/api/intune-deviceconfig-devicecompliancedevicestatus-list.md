@@ -4,12 +4,12 @@ description: 列出 deviceComplianceDeviceStatus 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01c9427b26a7088513581af1e5b27ef91abdf673
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4747c2759f92ce007866309e7fb832316f89edca
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969804"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789456"
 ---
 # <a name="list-devicecompliancedevicestatuses"></a>列出 deviceComplianceDeviceStatuses
 
@@ -81,6 +81,7 @@ Content-Length: 566
   ]
 }
 ```
+
 
 
 

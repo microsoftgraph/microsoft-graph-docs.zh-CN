@@ -4,12 +4,12 @@ description: 可以定义将在设备检测到特定 IP 网络设置时触发的
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 132c61b9a3203cf1d04a2d2cbfc6a8d6a9e19552
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 27f6e0705e7eee1e4e980c9f663df987c32c0705
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147773"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788252"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>networkIPv6ConfigurationManagementCondition 资源类型
 
@@ -35,18 +35,18 @@ IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows (circa Redstone
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|uniqueName|字符串|管理条件的唯一名称。 在管理条件表达式中使用。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|displayName|字符串|管理条件的管理员定义名称。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|说明|字符串|管理条件的管理员定义的说明。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
+|id|String|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
+|uniqueName|String|管理条件的唯一名称。 在管理条件表达式中使用。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
+|displayName|String|管理条件的管理员定义名称。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
+|description|字符串|管理条件的管理员定义的说明。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|管理条件的创建时间。 生成的服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|ipV6Prefix|字符串|要连接到的 IPv6 子网。 例如 2001: db8::/32|
-|ipV6Gateway|字符串|IPv6 网关地址。 例如 2001: db8:: 1|
-|ipV6DNSServerList|String collection|为适配器配置的 IPv6 DNS 服务器。|
-|dnsSuffixList|String collection|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
+|ipV6Prefix|String|要连接到的 IPv6 子网。 例如 2001: db8::/32|
+|ipV6Gateway|String|IPv6 网关地址。 例如 2001: db8:: 1|
+|ipV6DNSServerList|String 集合|为适配器配置的 IPv6 DNS 服务器。|
+|dnsSuffixList|String 集合|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -84,6 +84,7 @@ IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows (circa Redstone
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 iosVppAppAssignedDeviceLicense。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b935da4ca179cad431bb27667592fa270a8afed4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f1c3541ead487208ee7f6959a16206d1c3a3b2b0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968684"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789050"
 ---
 # <a name="delete-iosvppappassigneddevicelicense"></a>删除 iosVppAppAssignedDeviceLicense
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

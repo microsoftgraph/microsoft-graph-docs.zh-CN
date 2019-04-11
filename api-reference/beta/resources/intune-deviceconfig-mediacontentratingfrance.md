@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 40883571c2c17b466dbc6740280c34f8efa55282
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9e3d270bfb876f33afdd1944f070aaefe58fe569
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165665"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786782"
 ---
 # <a name="mediacontentratingfrance-resource-type"></a>mediaContentRatingFrance 资源类型
 
@@ -42,6 +42,7 @@ ms.locfileid: "30165665"
   "tvRating": "String"
 }
 ```
+
 
 
 

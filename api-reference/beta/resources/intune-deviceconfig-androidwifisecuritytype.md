@@ -4,12 +4,12 @@ description: 适用于 Android 的 wlan 安全类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e83a43853a59deb4df16399f0b0b177baa2453a8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: edc0f2d28891c48e4df73bdbdfda9edb931c90e2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172987"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787083"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>androidWiFiSecurityType 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "30172987"
 |:---|:---|:---|
 |open|0|打开 (无身份验证)。|
 |wpaEnterprise|1|WPA-企业/WPA2-企业。 必须使用 AndroidEnterpriseWifiConfiguration 类型配置企业选项。|
+
 
 
 

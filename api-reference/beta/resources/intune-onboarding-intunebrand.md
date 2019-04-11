@@ -4,12 +4,12 @@ description: intuneBrand 包含在自定义公司门户应用程序以及最终�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3e899f418ea9214530ac3b70e493a15655ca873
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ffaa20097147d5edcfc8af84418d65d6db29a746
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167380"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788294"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
@@ -22,7 +22,7 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|向最终用户显示的公司/组织名称。|
+|displayName|String|向最终用户显示的公司/组织名称。|
 |contactITName|String|负责 IT 支持的员工/组织名称。|
 |contactITPhoneNumber|String|负责 IT 支持的员工/组织的电话号码。|
 |contactITEmailAddress|String|负责 IT 支持的员工/组织的电子邮件地址。|
@@ -31,11 +31,12 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
 |onlineSupportSiteUrl|String|指向公司/组织 IT 支持人员网站的 URL。|
 |onlineSupportSiteName|String|显示公司/组织 IT 支持人员网站的名称。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 Web 门户中使用的主要主题颜色。|
-|showLogo|Boolean|表示是否显示管理员提供的徽标图像的布尔值。|
+|showLogo|布尔值|表示是否显示管理员提供的徽标图像的布尔值。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有浅色背景。|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用中显示的徽标图像，徽标后有深色背景。|
 |showNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在 Compnay 门户应用登录页中显示的自定义图像|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|在公司门户应用登录页中显示的自定义图像|
+|customPrivacyMessage|String|自定义隐私邮件。|
 |showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 
 ## <a name="relationships"></a>关系
@@ -82,9 +83,11 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
     "type": "String",
     "value": "binary"
   },
+  "customPrivacyMessage": "String",
   "showDisplayNameNextToLogo": true
 }
 ```
+
 
 
 

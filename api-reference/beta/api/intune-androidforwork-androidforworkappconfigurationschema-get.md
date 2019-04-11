@@ -4,12 +4,12 @@ description: 读取 androidForWorkAppConfigurationSchema 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4028244c487aaecbb9ab53a18800ee7769239f6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6e5c6e60a34632dccb95b2ad66473ec9f143b89d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977343"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789904"
 ---
 # <a name="get-androidforworkappconfigurationschema"></a>获取 androidForWorkAppConfigurationSchema
 
@@ -97,6 +97,7 @@ Content-Length: 913
   }
 }
 ```
+
 
 
 

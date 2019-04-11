@@ -1,15 +1,15 @@
 ---
 title: remoteAssistanceOnboardingStatus 枚举类型
-description: 尚未记录
+description: 当前 TeamViewer 连接器状态
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed4e99b41df0a66389d56ae7160d6395b78d7bcf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 23490e61f4134b723cfc066043f132c44c295019
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163068"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787895"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>remoteAssistanceOnboardingStatus 枚举类型
 
@@ -17,14 +17,15 @@ ms.locfileid: "30163068"
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+当前 TeamViewer 连接器状态
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|notOnboarded|0|尚未记录|
-|加入|1|尚未记录|
-|载入|双面|尚未记录|
+|notOnboarded|0|当没有已配置或活动的活动的 TeamViewer 连接器时报告的状态|
+|加入|1|系统启动 TeamViewer 连接时报告的状态, 但该服务尚未完成连接器的确认|
+|载入|双面|系统使用 TeamViewer 成功交换帐户信息并可以立即启动与客户端的远程协助会话时报告的状态|
+
 
 
 

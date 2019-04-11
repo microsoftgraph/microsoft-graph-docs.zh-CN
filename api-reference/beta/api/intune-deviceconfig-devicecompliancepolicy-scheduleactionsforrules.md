@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 759d6a6f9f786e52d2d3966a62c62792b6387c76
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9dd714fea92c7e152e3d9700d05869240a05ad78
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987151"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787062"
 ---
 # <a name="scheduleactionsforrules-action"></a>scheduleActionsForRules 操作
 
@@ -83,6 +83,7 @@ Content-length: 242
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

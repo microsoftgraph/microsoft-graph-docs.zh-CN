@@ -4,12 +4,12 @@ description: 爱尔兰的电视内容评级标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d186659ff2e67217c8d4c6f3b449925907822a11
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a9f5360f625a9e53513752133ca619d297a1dd82
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172462"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785396"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>ratingIrelandTelevisionType 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30172462"
 |youngAdults|4|YA 分类适用于 teenage 访问群体|
 |parentalSupervision|5|PS 分类邀请家长和监护人来考虑限制儿童的访问权限|
 |成熟|型|MA 分类适用于成年人|
+
 
 
 

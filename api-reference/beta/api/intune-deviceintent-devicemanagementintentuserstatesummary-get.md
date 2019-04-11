@@ -4,12 +4,12 @@ description: 读取 deviceManagementIntentUserStateSummary 对象的属性和关
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 258b0892de6cc299274911711ed2f04edb8a8d1a
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 961b480fdadeb89d06fd0fb7d7b0b84c309eb0c7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523628"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789575"
 ---
 # <a name="get-devicemanagementintentuserstatesummary"></a>获取 deviceManagementIntentUserStateSummary
 
@@ -79,8 +79,6 @@ Content-Length: 280
   }
 }
 ```
-
-
 
 
 

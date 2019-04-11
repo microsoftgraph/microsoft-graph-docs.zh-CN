@@ -4,12 +4,12 @@ description: 删除 androidForWorkPkcsCertificateProfile。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2552926c4deb14080e8a73a4809f294c6dab3a1b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5938798a017bbc12054790175ee2b54d6ca8f66a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959059"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787755"
 ---
 # <a name="delete-androidforworkpkcscertificateprofile"></a>删除 androidForWorkPkcsCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

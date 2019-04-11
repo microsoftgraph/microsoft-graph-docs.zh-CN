@@ -4,12 +4,12 @@ description: 读取 enrollmentProfile 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1cc472bcbfd54c4ac5814270fb5aabf9a625a5a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d29a5d64432ebef22a40f9a3d2655882e6786ea3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988516"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789029"
 ---
 # <a name="get-enrollmentprofile"></a>获取 enrollmentProfile
 
@@ -80,6 +80,7 @@ Content-Length: 454
   }
 }
 ```
+
 
 
 

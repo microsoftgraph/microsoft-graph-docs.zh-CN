@@ -4,12 +4,12 @@ description: 删除 unsupportedDeviceConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e60c461b9a088921166dea1aed387b8081f156e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d50aec63ed1c258a190c9c64bae9aa39f6cbe222
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975481"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785697"
 ---
 # <a name="delete-unsupporteddeviceconfiguration"></a>删除 unsupportedDeviceConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

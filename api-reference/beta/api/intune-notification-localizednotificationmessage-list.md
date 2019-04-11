@@ -4,12 +4,12 @@ description: 列出 localizedNotificationMessage 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be8bf0b1a24dc62472e8449e8b93476b7fe74e15
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d2403a3655b3d22f19dd54e243a44b44deafe80a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965548"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785242"
 ---
 # <a name="list-localizednotificationmessages"></a>列出 localizedNotificationMessages
 
@@ -78,6 +78,7 @@ Content-Length: 374
   ]
 }
 ```
+
 
 
 

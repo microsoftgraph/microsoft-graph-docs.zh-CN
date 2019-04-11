@@ -4,12 +4,12 @@ description: 确定特定 Windows 隐私数据类别的访问级别。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2cdf124d3da6bf2c08954365a87ae0a97b05267
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 10486899094cf275cb3fb9254114d92cb7d12388
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159064"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788105"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>windowsPrivacyDataAccessLevel 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30159064"
 |forceAllow|1|将允许应用访问指定的隐私数据。|
 |forceDeny|双面|将拒绝应用程序访问指定的隐私数据。|
 |userInControl|第三章|当应用尝试访问指定的隐私数据时, 系统将提示用户。|
+
 
 
 

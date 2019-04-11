@@ -4,12 +4,12 @@ description: 在共享电脑上删除帐户时的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9d94233233577d22a8c3661fb6e2ce82408d2a9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6db021476afdc47129fd677702bc6cc58af204fd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139933"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787125"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30139933"
 |迫切|0|立即删除。|
 |diskSpaceThreshold|1|在磁盘空间阈值中删除。|
 |diskSpaceThresholdOrInactiveThreshold|双面|在磁盘空间阈值或非活动阈值中删除。|
+
 
 
 

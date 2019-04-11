@@ -4,12 +4,12 @@ description: 创建新的 networkIPv6ConfigurationManagementCondition 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dee9ff40118cb52d51c53204332b859e0bb0bba
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d20721c1f92e3d710abe24df2304cd2bec431084
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966143"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788511"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>创建 networkIPv6ConfigurationManagementCondition
 
@@ -127,6 +127,7 @@ Content-Length: 651
   ]
 }
 ```
+
 
 
 

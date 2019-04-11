@@ -4,12 +4,12 @@ description: 读取 managedDeviceCertificateState 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04a3f3cc2d1e7b76e152ce0915673f0e4610c1d6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 20a936a232fac842cbb8d3d8dbebe57d678cd2e9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960627"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789022"
 ---
 # <a name="get-manageddevicecertificatestate"></a>获取 managedDeviceCertificateState
 
@@ -114,6 +114,7 @@ Content-Length: 1637
   }
 }
 ```
+
 
 
 

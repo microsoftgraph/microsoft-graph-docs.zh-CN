@@ -4,12 +4,12 @@ description: 包含单个 Intune 应用类别的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 190fc435cbcfb1ad262e93f86bec84de989f9194
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 60d7468f5b353b120081d99d315ce1719bef7d4c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140563"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789407"
 ---
 # <a name="mobileappcategory-resource-type"></a>mobileAppCategory 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "30140563"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

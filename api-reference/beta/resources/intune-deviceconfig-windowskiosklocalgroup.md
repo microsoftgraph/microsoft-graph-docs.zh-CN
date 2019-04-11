@@ -4,12 +4,12 @@ description: 用于标识展台配置的本地组的类
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3479226d770c7030fefed1a7f2f65a02808479d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 54a4686282e4c13f657adf010a3e0272025eb249
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169522"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789519"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>windowsKioskLocalGroup 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "30169522"
   "groupName": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 实体表示策略定义上多行文本框演示文稿的字符串�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fef2f1564f67cc3fce4e294e2d1b356f5d414ff
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4a96a57ec89783d1ed1f06b1edc5d0a1f5e88068
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162249"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788714"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>groupPolicyPresentationValueMultiText 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "30162249"
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|values|String collection|关联演示文稿的非空字符串的集合。|
+|值|String 集合|关联演示文稿的非空字符串的集合。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -64,6 +64,7 @@ ms.locfileid: "30162249"
   ]
 }
 ```
+
 
 
 

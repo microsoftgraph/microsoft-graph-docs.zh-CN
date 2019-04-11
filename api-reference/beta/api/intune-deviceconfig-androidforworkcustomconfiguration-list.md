@@ -4,12 +4,12 @@ description: 列出 androidForWorkCustomConfiguration 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4183265ae2f8addf0f9e609b3bbafd8bd912ee7f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 820b75025d550154ac5fa04f77693fb6557de045
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965170"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788602"
 ---
 # <a name="list-androidforworkcustomconfigurations"></a>列出 androidForWorkCustomConfigurations
 
@@ -92,6 +92,7 @@ Content-Length: 786
   ]
 }
 ```
+
 
 
 

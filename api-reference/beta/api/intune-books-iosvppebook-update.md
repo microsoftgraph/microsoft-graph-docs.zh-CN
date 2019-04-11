@@ -4,12 +4,12 @@ description: 更新 iosVppEBook 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b2a9c4f972c62bbcd37ffbc9af061ed6ae99e55
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e795ce19381152e0d6d829ea883f774796fe7266
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985023"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785648"
 ---
 # <a name="update-iosvppebook"></a>更新 iosVppEBook
 
@@ -151,6 +151,7 @@ Content-Length: 1026
   ]
 }
 ```
+
 
 
 

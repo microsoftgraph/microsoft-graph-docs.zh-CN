@@ -4,12 +4,12 @@ description: 包含检测运算符的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 477306e8f4ed5029d9f504ca80ed7126ee1093f2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 662a49dfcb5f4c80e870185849c6943ace9eed88
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165938"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788182"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>win32LobAppDetectionOperator 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30165938"
 |greaterThanOrEqual|5|大于或等于运算符。|
 |lessThan|utf-8|小于运算符。|
 |lessThanOrEqual|第|小于或等于运算符。|
+
 
 
 

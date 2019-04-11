@@ -4,12 +4,12 @@ description: 租户移动设备管理订阅。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6dbf73ad6eac2bd60518446857c4fccc121d314f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4e17823eb8fd07c9e7a624db425ef55540e43c96
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143979"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785060"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>deviceManagementSubscriptions 枚举类型
 
@@ -22,12 +22,13 @@ ms.locfileid: "30143979"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|无|0|无|
+|无|0|None|
 |intune|1|Microsoft Intune 订阅|
 |office365|双面|Office365 订阅|
 |intunePremium|4|Microsoft Intune 高级订阅|
 |intune_EDU|utf-8|Microsoft Intune 教育版订阅|
 |intune_SMB|位|适用于小型企业订阅的 Microsoft Intune|
+
 
 
 

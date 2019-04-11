@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b9621b7d43fdbb774a51ffc1110dfb4ade9201c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9492d1a36f571b253b77e85d2ea631399c845805
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961201"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787230"
 ---
 # <a name="updatewindowsdeviceaccount-action"></a>updateWindowsDeviceAccount 操作
 
@@ -34,9 +34,9 @@ ms.locfileid: "30961201"
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/updateWindowsDeviceAccount
 POST /deviceManagement/managedDevices/{managedDeviceId}/updateWindowsDeviceAccount
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/updateWindowsDeviceAccount
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/updateWindowsDeviceAccount
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/updateWindowsDeviceAccount
 ```
 
@@ -65,7 +65,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/updateWindowsDeviceAccount
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/updateWindowsDeviceAccount
 
 Content-type: application/json
 Content-length: 532
@@ -91,6 +91,7 @@ Content-length: 532
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

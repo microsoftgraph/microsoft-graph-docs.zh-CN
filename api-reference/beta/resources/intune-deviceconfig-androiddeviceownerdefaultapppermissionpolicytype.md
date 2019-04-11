@@ -4,12 +4,12 @@ description: Android 设备所有者默认应用程序权限策略类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 039e7434dacff1cc005a75dcea7fae4e25393b21
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0eb1958c539078d7625fc6d930be75136273b974
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150538"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786019"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>androidDeviceOwnerDefaultAppPermissionPolicyType 枚举类型
 
@@ -23,9 +23,10 @@ Android 设备所有者默认应用程序权限策略类型。
 |成员|值|说明|
 |:---|:---|:---|
 |deviceDefault|0|设备默认值, 无意向。|
-|行|1|行.|
+|提示|1|行.|
 |autoGrant|双面|自动授予。|
 |autoDeny|第三章|自动拒绝。|
+
 
 
 

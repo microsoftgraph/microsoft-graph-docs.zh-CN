@@ -4,12 +4,12 @@ description: 配置 S 模式解锁的可能选项
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a451108c6e55f8587317dfc43caf8bc84cca673
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 841c95fa1b02f0923c9659ab9c1858b4c2b9560c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144714"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784948"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>windowsSModeConfiguration 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30144714"
 |noRestriction|0|此选项将删除对解锁 S 模式的所有限制-默认|
 |数据|1|此选项将阻止用户从 S 模式解锁设备|
 |解锁|双面|此选项将从 S 模式解锁设备|
+
 
 
 

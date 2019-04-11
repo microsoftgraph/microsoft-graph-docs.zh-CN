@@ -4,12 +4,12 @@ description: 丢失模式的状态, 指示是否已启用或已禁用模式丢�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a12e9d09a94ec17ae77b5ff754fca7ce18e43f94
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7940ec90b85e09143cc5bc6fbc54e80b5fa4bf9e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154724"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786327"
 ---
 # <a name="lostmodestate-enum-type"></a>lostModeState 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "30154724"
 |:---|:---|:---|
 |禁用|0|已禁用丢失模式。|
 |enabled|1|已启用丢失模式。|
+
 
 
 

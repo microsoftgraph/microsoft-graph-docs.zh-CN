@@ -4,12 +4,12 @@ description: "\"开始\" 菜单的显示模式类型。"
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b41cca60d4da983ccf1e92370db2454c4e0a483
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03f4fcc1c16c09a4e510034a83c300733ac2767c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170964"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788000"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>windowsStartMenuModeType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30170964"
 |定制|0|用户定义。 默认值。|
 |全屏|1|全屏。|
 |nonFullScreen|双面|非全屏。|
+
 
 
 

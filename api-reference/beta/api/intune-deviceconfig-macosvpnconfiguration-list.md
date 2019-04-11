@@ -4,12 +4,12 @@ description: 列出 macOSVpnConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f93768906dc3a6c82957620b7ce502f38c5f30d5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b969ca9748d6962e41f1790e492c5a7a5773e50f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984651"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787195"
 ---
 # <a name="list-macosvpnconfigurations"></a>列出 macOSVpnConfigurations
 
@@ -140,6 +140,7 @@ Content-Length: 2334
   ]
 }
 ```
+
 
 
 

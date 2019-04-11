@@ -4,12 +4,12 @@ description: LocalSecurityOptionsStandardUserElevationPromptBehavior 的可能�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a4df38eee068ed87d8f84c0a043bb00838def70
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8aca3e16b52acbd8655ece4db0098c3aafafca17
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148214"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785977"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsStandardUserElevationPromptBehaviorType 枚举类型
 
@@ -26,6 +26,7 @@ LocalSecurityOptionsStandardUserElevationPromptBehavior 的可能值
 |automaticallyDenyElevationRequests|1|自动拒绝提升请求|
 |promptForCredentialsOnTheSecureDesktop|双面|在安全桌面上提示凭据|
 |promptForCredentials|第三章|提示输入凭据|
+
 
 
 

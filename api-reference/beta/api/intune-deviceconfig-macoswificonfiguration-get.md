@@ -4,12 +4,12 @@ description: 读取 macOSWiFiConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0ac66115ed93ad0e5ff633da16219902844b47d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 20683d5d87aafb2c5e1aafb38dcd05ade350f58f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980829"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786929"
 ---
 # <a name="get-macoswificonfiguration"></a>获取 macOSWiFiConfiguration
 
@@ -95,6 +95,7 @@ Content-Length: 910
   }
 }
 ```
+
 
 
 

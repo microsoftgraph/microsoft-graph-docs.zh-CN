@@ -4,12 +4,12 @@ description: 更新 deviceManagementIntentDeviceState 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4711d0942ea1d0bb3dd6a328b747373bcf3e52c9
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f4c9a80e9b7221d9ab7ef42ec23b389c1f3bf326
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522599"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787650"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a>更新 deviceManagementIntentDeviceState
 
@@ -101,8 +101,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 包含用于检测 Win32 应用程序的 PowerShell 脚本属性
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa5452fd9e73aef846d0b6de86a2b84e2c42ba26
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ca55a55ea17dcd032204dcb786ea07a9801f4674
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168521"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785641"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>win32LobAppPowerShellScriptDetection 资源类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "30168521"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|enforceSignatureCheck|布尔|一个指示是否强制执行签名检查的值|
-|runAs32Bit|布尔|一个指示此脚本是否应作为32位运行的值|
-|scriptContent|字符串|用于检测 Win32 业务线 (LoB) 应用程序的 base64 编码的脚本内容|
+|enforceSignatureCheck|布尔值|一个指示是否强制执行签名检查的值|
+|runAs32Bit|布尔值|一个指示此脚本是否应作为32位运行的值|
+|scriptContent|String|用于检测 Win32 业务线 (LoB) 应用程序的 base64 编码的脚本内容|
 
 ## <a name="relationships"></a>关系
 无
@@ -47,6 +47,7 @@ ms.locfileid: "30168521"
   "scriptContent": "String"
 }
 ```
+
 
 
 

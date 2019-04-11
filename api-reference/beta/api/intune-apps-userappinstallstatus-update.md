@@ -4,12 +4,12 @@ description: 更新 userAppInstallStatus 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dce7bcd1e1c806c8f50aa6f4674104fd8d0e781b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: eb999de52c39bc3e0a0e97c4e80d3043bb700165
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966626"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785256"
 ---
 # <a name="update-userappinstallstatus"></a>更新 userAppInstallStatus
 
@@ -98,6 +98,7 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
+
 
 
 

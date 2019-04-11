@@ -4,12 +4,12 @@ description: 读取 eBookInstallSummary 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 460c0738d9d0bbbbde200b9a5aec74a62bb07f06
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: de533e9b66af24193a0f8f6e1caed5bb947f1249
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969629"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788658"
 ---
 # <a name="get-ebookinstallsummary"></a>获取 eBookInstallSummary
 
@@ -80,6 +80,7 @@ Content-Length: 320
   }
 }
 ```
+
 
 
 

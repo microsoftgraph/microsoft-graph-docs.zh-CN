@@ -4,12 +4,12 @@ description: 通过 Intune 管理或预注册的 Windows 设备
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0e5811df6bfcdb360b5f8f3b03822a38bdbaab4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e217dc423000850be1f2da6eed8c771813e3c6d3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161227"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786488"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>windowsManagedDevice 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "30161227"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备的唯一标识符|
+|id|String|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备的唯一标识符|
 |userId|String|与继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备关联的用户的唯一标识符|
 |deviceName|String|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备的名称|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的 hardward 详细信息。  包括存储空间、制造商、序列号等信息。继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -64,14 +64,14 @@ ms.locfileid: "30161227"
 |azureADDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|设备注册状态。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
 |deviceCategoryDisplayName|String|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备类别显示名称|
-|isSupervised|Boolean|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的设备监督状态|
+|isSupervised|布尔值|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的设备监督状态|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|设备上次与 Exchange 联系的时间。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange 中设备的访问状态。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`none`、`unknown`、`allowed`、`blocked`、`quarantined`。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange 中设备访问状态的出现原因。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp`。|
 |remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |isEncrypted|Boolean|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的设备加密状态|
-|userPrincipalName|字符串|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的设备用户主体名称|
+|userPrincipalName|String|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的设备用户主体名称|
 |model|String|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备的模型|
 |manufacturer|String|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备的制造商|
 |imei|String|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的 IMEI|
@@ -91,12 +91,12 @@ ms.locfileid: "30161227"
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示从[managedDevice](../resources/intune-devices-manageddevice.md)继承的设备的上次登录用户|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告设置了 preferMdmOverGroupPolicy 设置的 DateTime。  设置后, 如果存在冲突, Intune MDM 设置将覆盖组策略设置。 只读。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|Boolean|如果托管设备是通过自动引导注册的, 则报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|Boolean|如果托管 iOS 设备是用户审批注册, 则报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|布尔值|如果托管设备是通过自动引导注册的, 则报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|布尔值|如果托管 iOS 设备是用户审批注册, 则报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|String|集成的电路卡标识符, 它是 SIM 卡的唯一标识号。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|String collection|此设备实例的范围标记 id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|String 集合|此设备实例的范围标记 id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的此 windows 设备的活动恶意软件的计数|
 |windowsRemediatedMalwareCount|Int32|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的此 windows 设备的修正的恶意软件的计数|
 |notes|String|由 IT 管理员创建的设备上的注释继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -108,6 +108,7 @@ ms.locfileid: "30161227"
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的设备上当前安装的所有应用程序|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备类别|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|设备保护状态。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|users|[user](../resources/intune-shared-user.md) 集合|与托管设备关联的主要用户。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -286,6 +287,7 @@ ms.locfileid: "30161227"
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 一个代表布尔值的设置实例
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1c300641ea50118b667d5c33c6f688dcaf55c2d
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: ff746cc368ba3048075ce795f514709ad2866bee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522508"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787237"
 ---
 # <a name="devicemanagementbooleansettinginstance-resource-type"></a>deviceManagementBooleanSettingInstance 资源类型
 
@@ -59,8 +59,6 @@ ms.locfileid: "31522508"
   "value": true
 }
 ```
-
-
 
 
 

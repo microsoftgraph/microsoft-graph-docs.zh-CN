@@ -4,12 +4,12 @@ description: 列出 windowsHealthMonitoringConfiguration 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c1412e7cedb65750a986c6ba994279d32e7ef4d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 69c07f07b94211a44a44e43c589bc625cd57baaa
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961754"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788028"
 ---
 # <a name="list-windowshealthmonitoringconfigurations"></a>列出 windowsHealthMonitoringConfigurations
 
@@ -85,6 +85,7 @@ Content-Length: 628
   ]
 }
 ```
+
 
 
 

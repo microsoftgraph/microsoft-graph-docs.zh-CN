@@ -4,12 +4,12 @@ description: 读取 userPFXCertificate 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d2448e0f3275fdda043dcd9bbbb3ad129f485ccc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 339f7662beae46c2c8513a59bd84c6b66d06a256
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988369"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787664"
 ---
 # <a name="get-userpfxcertificate"></a>获取 userPFXCertificate
 
@@ -86,7 +86,6 @@ Content-Length: 742
   }
 }
 ```
-
 
 
 

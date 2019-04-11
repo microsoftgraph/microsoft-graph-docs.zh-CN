@@ -4,12 +4,12 @@ description: Android 应用程序的自定义配置架构内的单个配置项�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8acd3dc2eddbab3433c30289a8273fd8ca397848
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 964916f9f6a46cd8b276e304bfb341d6504db0d2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169200"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785816"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>androidManagedStoreAppConfigurationSchemaItem 资源类型
 
@@ -23,8 +23,8 @@ Android 应用程序的自定义配置架构内的单个配置项。
 |属性|类型|说明|
 |:---|:---|:---|
 |schemaItemKey|String|应用程序用于标识项的唯一键|
-|displayName|String|用户可读的名称|
-|说明|String|项在应用程序内所控制内容的说明|
+|displayName|字符串|用户可读的名称|
+|description|String|项在应用程序内所控制内容的说明|
 |defaultBoolValue|布尔值|如果由应用开发人员指定，则为布尔类型项的默认值|
 |defaultIntValue|Int32|如果由应用开发人员指定，则为整数类型项的默认值|
 |defaultStringValue|String|如果由应用开发人员指定，则为字符串类型项的默认值|
@@ -64,6 +64,7 @@ Android 应用程序的自定义配置架构内的单个配置项。
   ]
 }
 ```
+
 
 
 

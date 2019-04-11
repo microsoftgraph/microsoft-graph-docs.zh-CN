@@ -4,12 +4,12 @@ description: 读取 securityBaselineDeviceState 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eed3261393f4975e194100fa24ec14bfa97f10b8
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: b536089afe7ec59ca1d79b09a4c63da7060ce560
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524573"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789617"
 ---
 # <a name="get-securitybaselinedevicestate"></a>获取 securityBaselineDeviceState
 
@@ -79,8 +79,6 @@ Content-Length: 392
   }
 }
 ```
-
-
 
 
 

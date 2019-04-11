@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b10d498edd03850a52aa09ba29e352a143a77c5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: af5236ebf464300584525fbaebae271133134b0a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163439"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786572"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>mediaContentRatingJapan 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "30163439"
 |movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|为日本选择的电影评级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove15`、`agesAbove18`。|
 |tvRating|[ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|为日本选择的电视评级。 可取值为：`allAllowed`、`allBlocked`、`explicitAllowed`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -42,6 +42,7 @@ ms.locfileid: "30163439"
   "tvRating": "String"
 }
 ```
+
 
 
 

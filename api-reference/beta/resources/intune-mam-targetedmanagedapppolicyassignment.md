@@ -4,12 +4,12 @@ description: 组或应用的部署类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f93f9f6a7cc887f5d303b0fafbbb3488d29a27b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ced81e320608e34fba6d4b2b96b101f61aebaa59
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175092"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786124"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>targetedManagedAppPolicyAssignment 资源类型
 
@@ -53,6 +53,7 @@ ms.locfileid: "30175092"
   }
 }
 ```
+
 
 
 

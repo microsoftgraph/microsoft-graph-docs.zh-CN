@@ -4,12 +4,12 @@ description: ApplicationGuardEnabledOptions 的可能值
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0954121ca183cf6f189206820770bea57fcb88af
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ac967cf80c15ce7947049f2ff444f8b8f0fb90fd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142635"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789785"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>applicationGuardEnabledOptions 枚举类型
 
@@ -26,6 +26,7 @@ ApplicationGuardEnabledOptions 的可能值
 |enabledForEdge|1|启用边缘|
 |enabledForOffice|双面|为 Office 启用|
 |enabledForEdgeAndOffice|第三章|为边缘和办公室启用|
+
 
 
 

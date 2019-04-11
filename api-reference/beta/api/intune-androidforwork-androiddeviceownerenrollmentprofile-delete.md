@@ -4,12 +4,12 @@ description: 删除 androidDeviceOwnerEnrollmentProfile。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88895238ade9a3ad15bb6506033b6d558ddf6684
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4a39f2aaac5dc3fb458d9be9d0a3085ff64bae33
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976811"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789295"
 ---
 # <a name="delete-androiddeviceownerenrollmentprofile"></a>删除 androidDeviceOwnerEnrollmentProfile
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrol
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

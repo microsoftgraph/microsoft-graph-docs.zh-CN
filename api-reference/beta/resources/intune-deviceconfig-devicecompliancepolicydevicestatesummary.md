@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83e9279c819ad928afc1c0e7c7ddc9bd5ba87a5a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 68e66c7b63b8d17bf6f68ec4408cdfe113b2a9a6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145792"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786852"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>deviceCompliancePolicyDeviceStateSummary 资源类型
 
@@ -65,6 +65,7 @@ ms.locfileid: "30145792"
   "conflictDeviceCount": 1024
 }
 ```
+
 
 
 

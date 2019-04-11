@@ -4,12 +4,12 @@ description: 读取 enrollmentTroubleshootingEvent 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cecb9d13a6b499902a04c28f836478d71c9cded0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 21de48e21ef4dd0b1036942945d7db88d8b1c0b2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958940"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785515"
 ---
 # <a name="get-enrollmenttroubleshootingevent"></a>获取 enrollmentTroubleshootingEvent
 
@@ -106,7 +106,6 @@ Content-Length: 1318
   }
 }
 ```
-
 
 
 

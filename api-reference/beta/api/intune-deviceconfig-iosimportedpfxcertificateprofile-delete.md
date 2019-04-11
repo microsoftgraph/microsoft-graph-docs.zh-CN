@@ -4,12 +4,12 @@ description: 删除 iosImportedPFXCertificateProfile。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82ec30828ee1fff7408c6e11437c54ad24176cc1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9e49b791a1b4b6ccfea7df5ec47ff020fdef421a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988362"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787321"
 ---
 # <a name="delete-iosimportedpfxcertificateprofile"></a>删除 iosImportedPFXCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

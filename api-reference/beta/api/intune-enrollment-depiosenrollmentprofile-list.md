@@ -4,12 +4,12 @@ description: 列出 depIOSEnrollmentProfile 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c75d0a77cb372fbbd47a9c27c9ddd442376e475
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a9176cfeaebc5e219ea64d68ecf82767877d2f8d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966276"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789092"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>列出 depIOSEnrollmentProfiles
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2006
+Content-Length: 2065
 
 {
   "value": [
@@ -93,6 +93,7 @@ Content-Length: 2006
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
       "privacyPaneDisabled": true,
+      "deviceNameTemplate": "Device Name Template value",
       "iTunesPairingMode": "allow",
       "managementCertificates": [
         {
@@ -118,6 +119,7 @@ Content-Length: 2006
   ]
 }
 ```
+
 
 
 

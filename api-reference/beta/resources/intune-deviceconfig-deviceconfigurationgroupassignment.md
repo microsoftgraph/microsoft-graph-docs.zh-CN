@@ -4,12 +4,12 @@ description: 设备配置组分配。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2daa30edbfecc73fcc8daee766b1aae723110e59
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1805cb29e8920876d8a340c9379d7b3200c4c779
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172378"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789162"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>deviceConfigurationGroupAssignment 资源类型
 
@@ -32,8 +32,8 @@ ms.locfileid: "30172378"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|targetGroupId|字符串|要将设备配置定向到的 AAD 组的 Id。|
-|excludeGroup|布尔|指示是否应排除此组。 应包含组的默认值|
+|targetGroupId|String|要将设备配置定向到的 AAD 组的 Id。|
+|excludeGroup|布尔值|指示是否应排除此组。 应包含组的默认值|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -56,6 +56,7 @@ ms.locfileid: "30172378"
   "excludeGroup": true
 }
 ```
+
 
 
 

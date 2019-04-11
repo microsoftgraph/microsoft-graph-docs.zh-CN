@@ -4,12 +4,12 @@ description: 更新 windowsInformationProtectionDeviceRegistration 对象的属�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4e9a4f742bd425a4f7a57fc8375b4f96fe1fb3a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 54d8dc2e1c2c62d956502e48791ad55e0787de03
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974886"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786075"
 ---
 # <a name="update-windowsinformationprotectiondeviceregistration"></a>更新 windowsInformationProtectionDeviceRegistration
 
@@ -101,6 +101,7 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

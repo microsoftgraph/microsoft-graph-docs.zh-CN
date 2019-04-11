@@ -4,12 +4,12 @@ description: 应用程序的管理级别
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5768c6c11aa330eab3a94ce85c7abe1fef126dda
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d72bcc7478edaa3aa670d617b327bcc73f4f969c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168815"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786194"
 ---
 # <a name="appmanagementlevel-enum-type"></a>appManagementLevel 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30168815"
 |受|1|受|
 |mdm|双面|MDM|
 |androidEnterprise|4|Android 企业版|
+
 
 
 
