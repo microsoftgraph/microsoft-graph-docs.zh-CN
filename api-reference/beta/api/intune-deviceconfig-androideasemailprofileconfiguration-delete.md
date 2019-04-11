@@ -4,12 +4,12 @@ description: 删除 androidEasEmailProfileConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a39c79ac1994eeec372085454f2a9151561ffb0c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7c9b5a2d7417cc20a2267061ed079273e885aee2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958352"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806487"
 ---
 # <a name="delete-androideasemailprofileconfiguration"></a>删除 androidEasEmailProfileConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: MacOS Volume Purchase Program 许可证分配。 此类不支持创
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8c7d8eea98c92ae1a041b8220c171d62fceb385
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 31f8e078f7695a115ce92d6d3f687d41a13831fc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158889"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806298"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>macOsVppAppAssignedLicense 资源类型
 
@@ -32,10 +32,10 @@ MacOS Volume Purchase Program 许可证分配。 此类不支持创建、删除�
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|userEmailAddress|字符串|用户电子邮件地址。|
+|userEmailAddress|String|用户电子邮件地址。|
 |userId|String|用户 ID。|
 |userName|String|用户名。|
-|userPrincipalName|字符串|用户主体名称。|
+|userPrincipalName|String|用户主体名称。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,6 +58,7 @@ MacOS Volume Purchase Program 许可证分配。 此类不支持创建、删除�
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

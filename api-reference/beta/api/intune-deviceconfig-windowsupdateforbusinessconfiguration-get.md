@@ -4,12 +4,12 @@ description: 读取 windowsUpdateForBusinessConfiguration 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83445c8f91d3d88090e7bb3e624c2b5115aee1dd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2f7ace053c4d6089dfb750af1a48a17ff651dc8c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970294"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805409"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>获取 windowsUpdateForBusinessConfiguration
 
@@ -120,6 +120,7 @@ Content-Length: 2186
   }
 }
 ```
+
 
 
 

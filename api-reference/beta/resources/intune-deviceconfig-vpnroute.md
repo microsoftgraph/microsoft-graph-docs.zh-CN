@@ -4,12 +4,12 @@ description: VPN 路由定义。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54706d47267eef8fff6c465f24e4e9caa183ccc3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c13cb40b5324620eebeb7230135ef981dba84f36
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154297"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807712"
 ---
 # <a name="vpnroute-resource-type"></a>vpnRoute 资源类型
 
@@ -42,6 +42,7 @@ VPN 路由定义。
   "prefixSize": 1024
 }
 ```
+
 
 
 

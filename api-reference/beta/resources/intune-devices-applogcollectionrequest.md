@@ -4,12 +4,12 @@ description: AppLogCollectionRequest 实体。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed0512340431be0456ebbbc5a3bffbb2713fda89
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6b528f2ee74abf347b7ed31b323814197c8fa0bf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151700"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805927"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>appLogCollectionRequest 资源类型
 
@@ -35,7 +35,7 @@ AppLogCollectionRequest 实体。
 |id|String|唯一标识符。 这是 userId_DeviceId_AppId id。|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
 |errorMessage|String|在上载过程中出现的错误消息|
-|customLogFolders|String collection|日志文件夹的列表。 |
+|customLogFolders|String 集合|日志文件夹的列表。 |
 |completedDateTime|DateTimeOffset|上传日志请求到达终端状态的时间|
 
 ## <a name="relationships"></a>关系
@@ -61,6 +61,7 @@ AppLogCollectionRequest 实体。
   "completedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

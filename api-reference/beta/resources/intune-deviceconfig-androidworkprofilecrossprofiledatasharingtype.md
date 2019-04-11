@@ -4,12 +4,12 @@ description: Android 工作配置文件跨配置文件数据共享类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73315d5ace052cf49a372c5563bf7d5af35662e5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6a0a5dd257636f2e90e1b5c1d2e46e6d24feef7b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159113"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807320"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>androidWorkProfileCrossProfileDataSharingType 枚举类型
 
@@ -26,6 +26,7 @@ Android 工作配置文件跨配置文件数据共享类型。
 |preventAny|1|阻止任何共享。|
 |allowPersonalToWork|双面|允许从个人配置文件到工作配置文件的数据共享请求。|
 |noRestrictions|第三章|共享没有限制。|
+
 
 
 

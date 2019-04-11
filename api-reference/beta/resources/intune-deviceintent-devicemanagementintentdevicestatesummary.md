@@ -4,12 +4,12 @@ description: 表示意向的设备状态摘要的实体
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e65c798cb6d3a3ca5dd1542296b513360d2b080
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f78f35a11241b5bf0376816827e79c6b1cc3e7bf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524090"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805857"
 ---
 # <a name="devicemanagementintentdevicestatesummary-resource-type"></a>deviceManagementIntentDeviceStateSummary 资源类型
 
@@ -59,8 +59,6 @@ ms.locfileid: "31524090"
   "successCount": 1024
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationValueList 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e2be7f3f6f1cab47174f8be78ec9655e1d368fd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c493a6127c21770e57cfbb69ff14e536c1a46f24
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983468"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807376"
 ---
 # <a name="update-grouppolicypresentationvaluelist"></a>更新 groupPolicyPresentationValueList
 
@@ -102,6 +102,7 @@ Content-Length: 394
   ]
 }
 ```
+
 
 
 

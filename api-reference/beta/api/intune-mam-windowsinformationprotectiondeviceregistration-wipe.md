@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c429fb1b2350ce296ee08d6a0f51816d4bfdd394
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 96e3b47dbdd4aa8bb26df310dbb5bba02522f094
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965919"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805878"
 ---
 # <a name="wipe-action"></a>擦除操作
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProt
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

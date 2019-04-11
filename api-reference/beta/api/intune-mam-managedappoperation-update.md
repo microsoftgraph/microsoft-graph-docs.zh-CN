@@ -4,12 +4,12 @@ description: 更新 managedAppOperation 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6eec0b5068b96330a81ea4d1d305cd7cc5f9e6fe
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e6644c18d2d22ce72c42a2d6b29fa7e6a6d116d1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985198"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805185"
 ---
 # <a name="update-managedappoperation"></a>更新 managedAppOperation
 
@@ -94,6 +94,7 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
 
 
 

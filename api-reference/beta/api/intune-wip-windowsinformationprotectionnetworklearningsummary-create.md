@@ -4,12 +4,12 @@ description: 创建新的 windowsInformationProtectionNetworkLearningSummary 对
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d7946f4858dd2ee53d1411165ef23fe8ee553ea
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cdc1fed0c8afd1e8dcadd3c2a64d4f7a1ad47b37
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974935"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804947"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>创建 windowsInformationProtectionNetworkLearningSummary
 
@@ -89,6 +89,7 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
 
 
 

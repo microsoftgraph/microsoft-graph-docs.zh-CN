@@ -4,12 +4,12 @@ description: 使用默认区域设置中指定的 notificationMessageTemplate �
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4733ca6219fb4cd6ba1684856fcdc6b2a5b648e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 389fc976ab8394434f38173495b22d89112bca66
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974641"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806921"
 ---
 # <a name="sendtestmessage-action"></a>sendTestMessage 操作
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTempla
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

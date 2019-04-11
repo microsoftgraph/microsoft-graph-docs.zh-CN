@@ -4,12 +4,12 @@ description: 平台特定注册限制
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eecbc405fd56d21f7be1c7b9bccd5254db89c8d1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e8ba3306c5a4af4dfbb8b97e4d4794b917ebbf64
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140598"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806452"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>deviceEnrollmentPlatformRestriction 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30140598"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|platformBlocked|布尔|阻止平台注册|
+|platformBlocked|布尔值|阻止平台注册|
 |personalDeviceEnrollmentBlocked|Boolean|阻止个人拥有的设备注册|
 |osMinimumVersion|String|支持的最小 OS 版本|
 |osMaximumVersion|String|支持的最大 OS 版本|
@@ -46,6 +46,7 @@ ms.locfileid: "30140598"
   "osMaximumVersion": "String"
 }
 ```
+
 
 
 

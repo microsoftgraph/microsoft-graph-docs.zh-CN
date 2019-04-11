@@ -4,12 +4,12 @@ description: 创建新的 windowsPhone81StoreApp 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f825a8504b8b0cedfd8ffd4e482f29f0dbc38dc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 04b5c7be425ee63449be498a92c79e9490656533
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974312"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806249"
 ---
 # <a name="create-windowsphone81storeapp"></a>创建 windowsPhone81StoreApp
 
@@ -67,6 +67,7 @@ POST /deviceAppManagement/mobileApps
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |appStoreUrl|String|Windows Phone 8.1 应用商店 URL。|
 
 
@@ -81,7 +82,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 748
+Content-length: 775
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81StoreApp",
@@ -105,6 +106,7 @@ Content-length: 748
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
@@ -114,7 +116,7 @@ Content-length: 748
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 920
+Content-Length: 947
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81StoreApp",
@@ -141,9 +143,11 @@ Content-Length: 920
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
 
 
 

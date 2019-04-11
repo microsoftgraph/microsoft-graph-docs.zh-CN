@@ -4,12 +4,12 @@ description: VPN 代理服务器。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b8a452cdde7c4c360107a67396d8f5ce49d6eb1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c711f02dc0b4f7e44ff1bd54669ed9befb73e42a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145274"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807642"
 ---
 # <a name="vpnproxyserver-resource-type"></a>vpnProxyServer 资源类型
 
@@ -22,9 +22,9 @@ VPN 代理服务器。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|字符串|代理的自动配置脚本 url。|
+|automaticConfigurationScriptUrl|String|代理的自动配置脚本 url。|
 |address|String|处理.|
-|port|Int32|端口. 有效值为0至65535|
+|端口|Int32|端口. 有效值为0至65535|
 
 ## <a name="relationships"></a>关系
 无
@@ -44,6 +44,7 @@ VPN 代理服务器。
   "port": 1024
 }
 ```
+
 
 
 

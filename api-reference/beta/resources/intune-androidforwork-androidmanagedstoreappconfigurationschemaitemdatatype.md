@@ -4,12 +4,12 @@ description: Android 应用程序的自定义配置架构中的配置项目的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08ccd029d142d9794c259181b6d6b3688d59f856
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a73ba699a9fba27a82c98c17e7a0151e716f8da9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151735"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805682"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>androidManagedStoreAppConfigurationSchemaItemDataType 枚举类型
 
@@ -22,7 +22,7 @@ Android 应用程序的自定义配置架构中的配置项目的数据类型
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|布尔值|0|尚未记录|
+|bool|0|尚未记录|
 |integer|1|尚未记录|
 |string|双面|尚未记录|
 |决定|第三章|尚未记录|
@@ -30,6 +30,7 @@ Android 应用程序的自定义配置架构中的配置项目的数据类型
 |bundle|5|尚未记录|
 |bundleArray|型|尚未记录|
 |hidden|步|尚未记录|
+
 
 
 

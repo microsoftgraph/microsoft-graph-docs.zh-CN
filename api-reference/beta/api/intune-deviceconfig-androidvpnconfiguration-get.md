@@ -4,12 +4,12 @@ description: 读取 androidVpnConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 120b39fb994956ea65d5540d0464a4aec826cd5b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b48b27d13c697ee3f0d70856463042566fe09c7a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958030"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806592"
 ---
 # <a name="get-androidvpnconfiguration"></a>获取 androidVpnConfiguration
 
@@ -113,6 +113,7 @@ Content-Length: 1247
   }
 }
 ```
+
 
 
 

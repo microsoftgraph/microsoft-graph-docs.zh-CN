@@ -4,12 +4,12 @@ description: 删除 securityBaselineSettingState。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f69ac521929963cc0482bfb7e752b72670636d6
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 84c12d56e33d2e8a1a4c44d2a77faad470eed8b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522809"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805563"
 ---
 # <a name="delete-securitybaselinesettingstate"></a>删除 securityBaselineSettingState
 
@@ -20,7 +20,7 @@ ms.locfileid: "31522809"
 删除[securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md)。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|

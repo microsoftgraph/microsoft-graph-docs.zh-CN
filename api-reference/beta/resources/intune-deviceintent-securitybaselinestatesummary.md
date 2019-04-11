@@ -4,12 +4,12 @@ description: 帐户安全基准的安全基准合规性状态摘要。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28a479ec175a939d65d4d11c963df575a28e59d1
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 8133fb325b0c2abdacf38e034aedc6523b13623c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523957"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806725"
 ---
 # <a name="securitybaselinestatesummary-resource-type"></a>securityBaselineStateSummary 资源类型
 
@@ -59,8 +59,6 @@ ms.locfileid: "31523957"
   "notApplicableCount": 1024
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 读取 windowsPhoneXAP 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81bbe4c6727f3d0a5b53f1cebbfbea7c211bc75e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 128a86a5d33e3c7bcfd6eb6a8572c29f0567b809
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986332"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805087"
 ---
 # <a name="get-windowsphonexap"></a>获取 windowsPhoneXAP
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1433
+Content-Length: 1462
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1433
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -113,6 +114,7 @@ Content-Length: 1433
   }
 }
 ```
+
 
 
 

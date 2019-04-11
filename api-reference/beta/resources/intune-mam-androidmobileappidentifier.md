@@ -4,12 +4,12 @@ description: Android 应用的标识符。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a45c31a7829102dfabee85f930be397dede17513
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8106475817a333838a9f7e6a591f15ddd2ce111d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140101"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805731"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>androidMobileAppIdentifier 资源类型
 
@@ -43,6 +43,7 @@ Android 应用的标识符。
   "packageId": "String"
 }
 ```
+
 
 
 

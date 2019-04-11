@@ -4,12 +4,12 @@ description: 包含主屏幕上的应用页面的文件夹
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8afb80b9130356671d80e5ec52f96bf74ed53d7e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9526e51b4fa69f0332922481c53648eb7d574c10
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153737"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807740"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>iosHomeScreenFolder 资源类型
 
@@ -57,6 +57,7 @@ ms.locfileid: "30153737"
   ]
 }
 ```
+
 
 
 

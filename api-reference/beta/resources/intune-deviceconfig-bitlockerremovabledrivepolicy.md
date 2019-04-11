@@ -4,12 +4,12 @@ description: BitLocker 可移动驱动器策略。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e7e343fc32af61b38c1cd14cf1fba29de549e99
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: aef69dc1ac05b838d1bb6a17e17f8ebde27edc1a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149425"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805584"
 ---
 # <a name="bitlockerremovabledrivepolicy-resource-type"></a>bitLockerRemovableDrivePolicy 资源类型
 
@@ -23,7 +23,7 @@ BitLocker 可移动驱动器策略。
 |属性|类型|说明|
 |:---|:---|:---|
 |encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|选择可移动驱动器的加密方法。 可取值为：`aesCbc128`、`aesCbc256`、`xtsAes128`、`xtsAes256`|
-|requireEncryptionForWriteAccess|布尔|指示是否阻止对其他组织中配置的设备的写入权限。  如果 requireEncryptionForWriteAccess 为 false，则此值没有影响。|
+|requireEncryptionForWriteAccess|布尔值|指示是否阻止对其他组织中配置的设备的写入权限。  如果 requireEncryptionForWriteAccess 为 false，则此值没有影响。|
 |blockCrossOrganizationWriteAccess|Boolean|此策略设置决定可移动数据驱动器是否需要 BitLocker 保护，以使其在计算机上可写。|
 
 ## <a name="relationships"></a>关系
@@ -44,6 +44,7 @@ BitLocker 可移动驱动器策略。
   "blockCrossOrganizationWriteAccess": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 用于存储单个组策略演示文稿的值的基本演示文稿�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7449ba37fe1ce747d698b01979ae4c88525dad7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8d4f3d1493e85708335797252301b451f5e41520
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156929"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805052"
 ---
 # <a name="grouppolicypresentationvalue-resource-type"></a>groupPolicyPresentationValue 资源类型
 
@@ -57,6 +57,7 @@ ms.locfileid: "30156929"
   "id": "String (identifier)"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 部署应用的标识符。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 842987c0ed12322d77e0f28fc71d197950452dfe
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0ec1c0d00a4b865cc48898943d540d0d378e8697
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148634"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806046"
 ---
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "30148634"
 |属性|类型|说明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|包含其操作系统类型的应用标识符。|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系
@@ -56,6 +56,7 @@ ms.locfileid: "30148634"
   "version": "String"
 }
 ```
+
 
 
 

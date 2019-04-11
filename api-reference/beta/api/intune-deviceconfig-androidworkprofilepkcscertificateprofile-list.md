@@ -4,12 +4,12 @@ description: 列出 androidWorkProfilePkcsCertificateProfile 对象的属性和�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81a31b40e3e0d7ef4a8caf539f636deb45aff25c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 882fba3a94546ccc0f804f199c466c23e8921ccb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958674"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807586"
 ---
 # <a name="list-androidworkprofilepkcscertificateprofiles"></a>列出 androidWorkProfilePkcsCertificateProfiles
 
@@ -90,15 +90,16 @@ Content-Length: 1282
           "objectIdentifier": "Object Identifier value"
         }
       ],
+      "subjectAlternativeNameType": "emailAddress",
       "certificationAuthority": "Certification Authority value",
       "certificationAuthorityName": "Certification Authority Name value",
       "certificateTemplateName": "Certificate Template Name value",
-      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-      "subjectAlternativeNameType": "emailAddress"
+      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
     }
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 groupPolicyPresentationValueList。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8515f19227995748395ddc2f4df5316a3cbf0351
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b223f0cf2a6deb2eae7046b1e8ceaa0d672dd51b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988530"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807075"
 ---
 # <a name="delete-grouppolicypresentationvaluelist"></a>删除 groupPolicyPresentationValueList
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

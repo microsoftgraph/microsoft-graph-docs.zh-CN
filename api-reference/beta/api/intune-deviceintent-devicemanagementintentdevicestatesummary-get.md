@@ -4,12 +4,12 @@ description: 读取 deviceManagementIntentDeviceStateSummary 对象的属性和�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c19956d3119cbedd18540dae5975d2bbb18337a
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: e10b01ba1f560742da42258255fa8d8e4fdb47a8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522438"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807782"
 ---
 # <a name="get-devicemanagementintentdevicestatesummary"></a>获取 deviceManagementIntentDeviceStateSummary
 
@@ -80,8 +80,6 @@ Content-Length: 321
   }
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 读取 targetedManagedAppPolicyAssignment 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ec10669261bf4ca32af063d86e29d6aebcf7bbd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ec3abec81ea2d39e088c96d2f5d2650010818e4a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986409"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807355"
 ---
 # <a name="get-targetedmanagedapppolicyassignment"></a>获取 targetedManagedAppPolicyAssignment
 
@@ -81,6 +81,7 @@ Content-Length: 252
   }
 }
 ```
+
 
 
 

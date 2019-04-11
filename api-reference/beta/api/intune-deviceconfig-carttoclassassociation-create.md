@@ -4,12 +4,12 @@ description: 创建新的 cartToClassAssociation 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6996f3ad5f22a5b623d6f259e9bf1b8ee43d087d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c683b2ae19caa55c62f0af834fbb8b74d5fb904c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959353"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806375"
 ---
 # <a name="create-carttoclassassociation"></a>创建 cartToClassAssociation
 
@@ -110,6 +110,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 

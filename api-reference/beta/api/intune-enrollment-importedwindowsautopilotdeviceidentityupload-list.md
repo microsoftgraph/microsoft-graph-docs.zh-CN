@@ -4,12 +4,12 @@ description: 列出 importedWindowsAutopilotDeviceIdentityUpload 对象的属性
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 916f11cbaf324751dc3353861f31b69a9dde2eec
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 82fcb17b23f820c998aa119c018cdb5c16b418ee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962713"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807656"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentityuploads"></a>列出 importedWindowsAutopilotDeviceIdentityUploads
 
@@ -75,6 +75,7 @@ Content-Length: 270
   ]
 }
 ```
+
 
 
 

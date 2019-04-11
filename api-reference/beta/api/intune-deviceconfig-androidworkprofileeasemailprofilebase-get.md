@@ -4,12 +4,12 @@ description: 读取 androidWorkProfileEasEmailProfileBase 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d503aed74bf10f436bc14e49b16782e57168d69d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 40496b69653f6809584d29279d07c5c4aa78408e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986927"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807614"
 ---
 # <a name="get-androidworkprofileeasemailprofilebase"></a>获取 androidWorkProfileEasEmailProfileBase
 
@@ -91,6 +91,7 @@ Content-Length: 718
   }
 }
 ```
+
 
 
 

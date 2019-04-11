@@ -4,12 +4,12 @@ description: 更新 microsoftStoreForBusinessApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f206898bc37d16dfb987a3b91aa8d2a660c0209
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 44e6d282610f2cd836689a6d68d77e33714ae20b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963910"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806417"
 ---
 # <a name="update-microsoftstoreforbusinessapp"></a>更新 microsoftStoreForBusinessApp
 
@@ -69,6 +69,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |usedLicenseCount|Int32|使用中的适用于企业的 Microsoft Store 许可证数。|
 |totalLicenseCount|Int32|适用于企业的 Microsoft Store 许可证总数。|
 |productKey|字串符号|应用产品密钥|
@@ -88,7 +89,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1105
+Content-length: 1132
 
 {
   "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
@@ -112,6 +113,7 @@ Content-length: 1105
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
@@ -132,7 +134,7 @@ Content-length: 1105
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1277
+Content-Length: 1304
 
 {
   "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
@@ -159,6 +161,7 @@ Content-Length: 1277
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
@@ -173,6 +176,7 @@ Content-Length: 1277
   }
 }
 ```
+
 
 
 

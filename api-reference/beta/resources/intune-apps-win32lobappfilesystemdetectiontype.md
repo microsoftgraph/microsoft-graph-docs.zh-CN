@@ -4,12 +4,12 @@ description: 包含所有受支持的文件系统检测类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc62005b02c30902937035199faffe663e232f4a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 08783d51d6d54b0ccf2cf6d7077185e9e1c286fb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163495"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804961"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>win32LobAppFileSystemDetectionType 枚举类型
 
@@ -28,6 +28,8 @@ ms.locfileid: "30163495"
 |createdDate|第三章|创建日期。|
 |version|4|版本值类型。|
 |sizeInMB|5|大小检测类型。|
+|doesNotExist|型|指定的文件或文件夹不存在。|
+
 
 
 

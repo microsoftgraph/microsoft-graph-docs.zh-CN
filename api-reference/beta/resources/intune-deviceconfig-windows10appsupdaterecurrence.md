@@ -4,12 +4,12 @@ description: Windows10 定期应用更新的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 932a374f7ec78eca46862f6f7693072b27ef5109
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 56cbfc6f6a8b9952682a5f7cfeeb2f4caffc94b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172413"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806753"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>windows10AppsUpdateRecurrence 枚举类型
 
@@ -26,6 +26,7 @@ Windows10 定期应用更新的可能值。
 |每日|1|每日.|
 |周历|双面|周历.|
 |还|第三章|还.|
+
 
 
 

@@ -4,12 +4,12 @@ description: 上传新的设备注册程序令牌
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8dae26d3ccef0a21e109475c470462d29e720d42
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 553f0156304d69af79ca957a9d05a0115a41d93a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972863"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807880"
 ---
 # <a name="uploaddeptoken-action"></a>uploadDepToken 操作
 
@@ -79,6 +79,7 @@ Content-length: 69
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

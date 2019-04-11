@@ -4,12 +4,12 @@ description: 读取 importedWindowsAutopilotDeviceIdentity 对象的属性和关
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed4e2ba7b1f198f70cea6376621e36a8aed28d89
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 786533d0c65b623c00e9326336f9993339033fb2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965569"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805304"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>获取 importedWindowsAutopilotDeviceIdentity
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDe
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 635
+Content-Length: 671
 
 {
   "value": {
@@ -75,6 +75,7 @@ Content-Length: 635
     "orderIdentifier": "Order Identifier value",
     "serialNumber": "Serial Number value",
     "productKey": "Product Key value",
+    "importId": "Import Id value",
     "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
     "state": {
       "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -86,6 +87,7 @@ Content-Length: 635
   }
 }
 ```
+
 
 
 

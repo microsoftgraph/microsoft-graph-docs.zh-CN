@@ -4,12 +4,12 @@ description: 为 Windows Update for Business 振铃扩展质量更新暂停。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f0b65caee2181713dbe5419d9b323fc59ce940c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 714d699497564b13962163069d34bb63d9ee1794
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971687"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805332"
 ---
 # <a name="extendqualityupdatespause-action"></a>extendQualityUpdatesPause 操作
 
@@ -64,6 +64,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 windowsWifiEnterpriseEAPConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bed495315582aa58b705a6ec3c9988d153cf1fa7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4d081b99f15da256d443d6c39ce35195e241bd63
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985107"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805416"
 ---
 # <a name="delete-windowswifienterpriseeapconfiguration"></a>删除 windowsWifiEnterpriseEAPConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

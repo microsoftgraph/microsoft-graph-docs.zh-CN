@@ -4,12 +4,12 @@ description: 读取 depEnrollmentProfile 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18d533a7713a431dd07231968c126a45b94a7da2
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cebfca8f92db411a8877f6090b65eea8756f73af
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965373"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806515"
 ---
 # <a name="get-depenrollmentprofile"></a>获取 depEnrollmentProfile
 
@@ -110,6 +110,7 @@ Content-Length: 1498
   }
 }
 ```
+
 
 
 

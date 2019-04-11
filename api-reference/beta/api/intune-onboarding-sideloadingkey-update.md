@@ -4,12 +4,12 @@ description: 更新 sideLoadingKey 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 408cc20d76eaa06260ddd1a0de485cc3a2d57abc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6eaab5e4fd2b12ce65c87304a47490447e6f3664
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977532"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807747"
 ---
 # <a name="update-sideloadingkey"></a>更新 sideLoadingKey
 
@@ -98,6 +98,7 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 groupPolicyPresentationCheckBox。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7de1a570c6c2011a98d9b0c1e5425bee4e4f5c1e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 35b7d94929de5a59371d2f10fb3da50f59ab2227
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963091"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805962"
 ---
 # <a name="delete-grouppolicypresentationcheckbox"></a>删除 groupPolicyPresentationCheckBox
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

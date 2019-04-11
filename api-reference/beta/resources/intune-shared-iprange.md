@@ -4,12 +4,12 @@ description: 用于表示 IPV4、IPV6 地址范围的 IP 范围基类
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd4d21af712e5bf70e2d5d90e1204be546eb8ec7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d82988aaa54ec02915d889c7ab555e743388fa59
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171139"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807292"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
 
@@ -38,6 +38,7 @@ ms.locfileid: "30171139"
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
+
 
 
 

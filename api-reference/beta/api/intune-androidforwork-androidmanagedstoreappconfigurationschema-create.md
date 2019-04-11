@@ -4,12 +4,12 @@ description: 创建新的 androidManagedStoreAppConfigurationSchema 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 10def3b377d7de59fd16f491e8054129b73c9189
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 71079de480b0c450873b30ae8127dca6a507a9c3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979548"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806144"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>创建 androidManagedStoreAppConfigurationSchema
 
@@ -131,6 +131,7 @@ Content-Length: 854
   ]
 }
 ```
+
 
 
 

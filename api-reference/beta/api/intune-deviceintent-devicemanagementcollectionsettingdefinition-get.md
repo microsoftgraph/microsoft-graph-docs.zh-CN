@@ -4,12 +4,12 @@ description: 读取 deviceManagementCollectionSettingDefinition 对象的属性�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17c3f611446043febfe02af653ca23ee51e97a40
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 2feecc715c03590daf50354d7f651e557f49e591
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524041"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807537"
 ---
 # <a name="get-devicemanagementcollectionsettingdefinition"></a>获取 deviceManagementCollectionSettingDefinition
 
@@ -102,8 +102,6 @@ Content-Length: 917
   }
 }
 ```
-
-
 
 
 

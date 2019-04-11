@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementScriptUserState 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aff7161ebd220924bd8c8c05bff4cd138b3ea59e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 465ee52f3ac8e0341419e778ec95ec1daa040aa5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967655"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807432"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>创建 deviceManagementScriptUserState
 
@@ -92,6 +92,7 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

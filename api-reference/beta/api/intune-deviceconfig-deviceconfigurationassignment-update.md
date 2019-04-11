@@ -4,12 +4,12 @@ description: 更新 deviceConfigurationAssignment 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebf6397d567fdafa6b45b6a68e791c09788cb180
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 70dda5714222b17f4a366016de308868d8840a42
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974830"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806991"
 ---
 # <a name="update-deviceconfigurationassignment"></a>更新 deviceConfigurationAssignment
 
@@ -98,6 +98,7 @@ Content-Length: 218
   }
 }
 ```
+
 
 
 

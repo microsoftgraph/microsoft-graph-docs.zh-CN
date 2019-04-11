@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9328ccc8b3c6b7ce6af220d8f798497e00448a8b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d1d2b608a285413e8ad4f7049d06982a06878450
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159274"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807166"
 ---
 # <a name="mediacontentratingnewzealand-resource-type"></a>mediaContentRatingNewZealand 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "30159274"
 |属性|类型|说明|
 |:---|:---|:---|
 |movieRating|[ratingNewZealandMoviesType](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|为新西兰选择的电影评级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`mature`、`agesAbove13`、`agesAbove15`、`agesAbove16`、`agesAbove18`、`restricted`、`agesAbove16Restricted`。|
-|tvRating|[ratingNewZealandTelevisionType](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|为新西兰选择的电视评级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`adults`。|
+|tvRating|[ratingNewZealandTelevisionType](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|为新西兰选择的电视评级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance` 或 `adults`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -42,6 +42,7 @@ ms.locfileid: "30159274"
   "tvRating": "String"
 }
 ```
+
 
 
 

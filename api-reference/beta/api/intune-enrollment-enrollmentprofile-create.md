@@ -4,12 +4,12 @@ description: 创建新的 enrollmentProfile 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fea367f3a4978d02a117edc6de5ebc70466000c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4c78d5076038b85140d31e0e9000dda99f9dddff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962874"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807593"
 ---
 # <a name="create-enrollmentprofile"></a>创建 enrollmentProfile
 
@@ -53,10 +53,10 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |id|字符串|对象的 GUID|
 |displayName|String|配置文件的名称|
 |description|String|配置文件的说明|
-|requiresUserAuthentication|Boolean|指示配置文件是否需要用户身份验证|
+|requiresUserAuthentication|布尔值|指示配置文件是否需要用户身份验证|
 |configurationEndpointUrl|String|用于注册的配置终结点 url|
-|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在安装助理注册设备上需要公司门户|
+|enableAuthenticationViaCompanyPortal|布尔值|指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔值|指示在安装助理注册设备上需要公司门户|
 
 
 
@@ -101,6 +101,7 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
 
 
 

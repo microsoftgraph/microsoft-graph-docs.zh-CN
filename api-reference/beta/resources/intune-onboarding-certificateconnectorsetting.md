@@ -4,12 +4,12 @@ description: 证书连接器设置。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09f4baf9ddd8be630c432fcec5d7df71c442bbe2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6fe154ed3150ae434f8068bc04a56dd6e5b48744
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168304"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806480"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>certificateConnectorSetting 资源类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "30168304"
 |:---|:---|:---|
 |状态|Int32|证书连接器状态|
 |certExpiryTime|DateTimeOffset|证书过期时间|
-|enrollmentError|字符串|证书连接器注册错误|
+|enrollmentError|String|证书连接器注册错误|
 |lastConnectorConnectionTime|DateTimeOffset|上次连接证书连接器的时间|
-|connectorVersion|字符串|证书连接器的版本|
+|connectorVersion|String|证书连接器的版本|
 |lastUploadVersion|Int64|上次上载的证书连接器的版本|
 
 ## <a name="relationships"></a>关系
@@ -50,6 +50,7 @@ ms.locfileid: "30168304"
   "lastUploadVersion": 1024
 }
 ```
+
 
 
 

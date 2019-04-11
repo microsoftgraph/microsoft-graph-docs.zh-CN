@@ -4,12 +4,12 @@ description: 表示模板设置类别的实体
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8703ca7f797555a2736d4b71916f36db3c7dc16
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 0f8974c102bcd07bb6042e703f38b59840a164b6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522949"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807250"
 ---
 # <a name="devicemanagementtemplatesettingcategory-resource-type"></a>deviceManagementTemplateSettingCategory 资源类型
 
@@ -58,8 +58,6 @@ ms.locfileid: "31522949"
   "displayName": "String"
 }
 ```
-
-
 
 
 

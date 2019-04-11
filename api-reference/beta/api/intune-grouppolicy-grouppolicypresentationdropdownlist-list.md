@@ -4,12 +4,12 @@ description: 列出 groupPolicyPresentationDropdownList 对象的属性和关系
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 58f9f524b177396b5ddf712919183d226e3c78d4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7708e0dd8a3dd2e01c5cc09e50c4fee9d47d78fb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971925"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807649"
 ---
 # <a name="list-grouppolicypresentationdropdownlists"></a>列出 groupPolicyPresentationDropdownLists
 
@@ -88,6 +88,7 @@ Content-Length: 703
   ]
 }
 ```
+
 
 
 

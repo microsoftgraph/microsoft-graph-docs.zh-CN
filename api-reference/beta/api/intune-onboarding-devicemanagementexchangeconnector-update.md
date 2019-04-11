@@ -4,12 +4,12 @@ description: 更新 deviceManagementExchangeConnector 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fad828df8c470e42b8a5ee27b3fa2c950149872c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f0ba49a6d3fbc082a03d3d870530e9665af2d479
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978148"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807733"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>更新 deviceManagementExchangeConnector
 
@@ -110,6 +110,7 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
 
 
 

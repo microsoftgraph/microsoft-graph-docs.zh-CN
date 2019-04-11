@@ -4,12 +4,12 @@ description: 更新 windows10EnrollmentCompletionPageConfiguration 对象的属�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 862ec01be1bd6b99351d9b01f16797ae4a376e75
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1f2916db923230af2cfa7738416e6c10db4fea8c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981130"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806221"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>更新 windows10EnrollmentCompletionPageConfiguration
 
@@ -57,13 +57,13 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |createdDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |version|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolean|显示或隐藏用户的安装进度|
-|blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装程序|
-|allowDeviceResetOnInstallFailure|Boolean|允许或阻止在安装失败时重置设备|
-|allowLogCollectionOnInstallFailure|Boolean|在安装失败时允许或阻止日志集合|
+|showInstallationProgress|布尔值|显示或隐藏用户的安装进度|
+|blockDeviceSetupRetryByUser|布尔值|允许用户在安装失败时重试安装程序|
+|allowDeviceResetOnInstallFailure|布尔值|允许或阻止在安装失败时重置设备|
+|allowLogCollectionOnInstallFailure|布尔值|在安装失败时允许或阻止日志集合|
 |customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时 (分钟)|
-|allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
+|allowDeviceUseOnInstallFailure|布尔值|允许用户在安装失败时继续使用设备|
 |selectedMobileAppIds|String 集合|选定的应用程序跟踪安装状态|
 
 
@@ -127,6 +127,7 @@ Content-Length: 755
   ]
 }
 ```
+
 
 
 

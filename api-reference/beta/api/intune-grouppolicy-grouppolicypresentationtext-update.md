@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationText 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0bc14acab2d290e2716dba471d2c6d37d8c1ebe6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fe3d41371ca9ec27b2555ed18ec46519d47f3538
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967207"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807936"
 ---
 # <a name="update-grouppolicypresentationtext"></a>更新 groupPolicyPresentationText
 
@@ -89,6 +89,7 @@ Content-Length: 209
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

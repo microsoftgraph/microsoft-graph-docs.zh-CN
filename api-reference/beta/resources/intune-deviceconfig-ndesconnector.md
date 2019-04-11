@@ -4,12 +4,12 @@ description: 表示 OnPrem Ndes 连接器的实体。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71a37cc86e72ba48a32988c8cdd034874e490a8c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3781827d93f1e646becc2ee47de57cbba82dfc63
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146927"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806662"
 ---
 # <a name="ndesconnector-resource-type"></a>ndesConnector 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "30146927"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|NDES 连接器的键。|
+|id|String|NDES 连接器的键。|
 |lastConnectionDateTime|DateTimeOffset|Ndes 连接器的上次连接时间|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes 连接器状态。 可取值为：`none`、`active`、`inactive`。|
 |displayName|String|Ndes 连接器的友好名称。|
@@ -56,6 +56,7 @@ ms.locfileid: "30146927"
   "displayName": "String"
 }
 ```
+
 
 
 

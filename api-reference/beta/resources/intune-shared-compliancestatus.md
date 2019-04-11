@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 77c10919e67e5b05028fbd88ba1fe82aa1fba5a0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b71b74c7819b108f5f1a68406614828e814104d8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168094"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806837"
 ---
 # <a name="compliancestatus-enum-type"></a>complianceStatus 枚举类型
 
@@ -27,9 +27,10 @@ ms.locfileid: "30168094"
 |合格|双面|尚未记录|
 |得以|第三章|尚未记录|
 |合规|4|尚未记录|
-|error|5|尚未记录|
+|错误|5|尚未记录|
 |冲突|型|尚未记录|
 |notAssigned|步|尚未记录|
+
 
 
 

@@ -4,12 +4,12 @@ description: 创建新的 deviceComplianceActionItem 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b7bd39bb8def5404081dde1034e758de58340f0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cfbccac27a5c3adee6c972c1ae7ad2fa541b410a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976713"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807600"
 ---
 # <a name="create-devicecomplianceactionitem"></a>创建 deviceComplianceActionItem
 
@@ -99,6 +99,7 @@ Content-Length: 320
   ]
 }
 ```
+
 
 
 

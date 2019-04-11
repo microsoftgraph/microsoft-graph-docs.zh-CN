@@ -4,12 +4,12 @@ description: 读取 mobileContainedApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f991137debd56d64854362e79a8f3159c6a5eb9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 91a70a98c4be3cbb00fd4d8d1e8c1999290d4405
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964162"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807866"
 ---
 # <a name="get-mobilecontainedapp"></a>获取 mobileContainedApp
 
@@ -76,6 +76,7 @@ Content-Length: 132
   }
 }
 ```
+
 
 
 

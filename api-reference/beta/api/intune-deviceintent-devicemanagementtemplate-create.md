@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementTemplate 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f992103b45a2e35380339fefc933b1db7819885
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 23c86d654d229c4932a9e5b7d86d980416637b2a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522627"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807922"
 ---
 # <a name="create-devicemanagementtemplate"></a>创建 deviceManagementTemplate
 
@@ -89,8 +89,6 @@ Content-Length: 194
   "description": "Description value"
 }
 ```
-
-
 
 
 

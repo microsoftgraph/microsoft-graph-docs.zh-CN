@@ -4,12 +4,12 @@ description: 重新启动设备
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 113937741b18d34d6337697483d7919b5eca4613
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 781742036efcb88141434c1763c6dd0a9daff37d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981494"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806690"
 ---
 # <a name="rebootnow-action"></a>rebootNow 操作
 
@@ -34,9 +34,9 @@ ms.locfileid: "30981494"
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/rebootNow
 POST /deviceManagement/managedDevices/{managedDeviceId}/rebootNow
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/rebootNow
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/rebootNow
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/rebootNow
 ```
 
@@ -57,7 +57,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/rebootNow
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/rebootNow
 ```
 
 ### <a name="response"></a>响应
@@ -65,6 +65,7 @@ POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

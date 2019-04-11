@@ -4,12 +4,12 @@ description: Apple VPN 连接类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53ed413b05e29a10cebf151c718e55c75de702c4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9cbb3b3ba87a65d248da248bfe66abb426fdd764
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155599"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806018"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>appleVpnConnectionType 枚举类型
 
@@ -36,6 +36,7 @@ Apple VPN 连接类型。
 |f5Access2018|11x17|F5 访问2018。|
 |citrixSso|12|Citrix Sso。|
 |paloAltoGlobalProtectV2|13|Palo Alto 网络 GlobalProtect V2。|
+
 
 
 

@@ -4,12 +4,12 @@ description: 德国的电影评分标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a8543c0dd565edd12fcb0db4e523e5273570d5b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d5072b95d54b0640115f350d9e8de26e8ec23112
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139520"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807817"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>ratingGermanyMoviesType 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30139520"
 |agesAbove12|4|Ab 12 Jahren, 12 岁及更早|
 |agesAbove16|5|Ab 16 Jahren, 超过16岁及以上|
 |成人|型|Ab 18 Jahren, 仅成人|
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 win32LobApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 536cdbdfbda69541898d78528dd21cb3b10fb55d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 33ca578b48ef988132592a77977a8561b591e309
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974158"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807488"
 ---
 # <a name="get-win32lobapp"></a>获取 win32LobApp
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2709
+Content-Length: 3101
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 2709
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -126,6 +127,17 @@ Content-Length: 2709
         "detectionValue": "Detection Value value"
       }
     ],
+    "requirementRules": [
+      {
+        "@odata.type": "microsoft.graph.win32LobAppRegistryRequirement",
+        "operator": "equal",
+        "detectionValue": "Detection Value value",
+        "check32BitOn64System": true,
+        "keyPath": "Key Path value",
+        "valueName": "Value Name value",
+        "detectionType": "exists"
+      }
+    ],
     "installExperience": {
       "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
       "runAsAccount": "user"
@@ -151,6 +163,7 @@ Content-Length: 2709
   }
 }
 ```
+
 
 
 

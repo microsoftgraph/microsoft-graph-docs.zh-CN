@@ -4,12 +4,12 @@ description: OMA 设置字符串 XML 定义。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 846ed1c9bb17065b82f2663e7f4276b34442f9bd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d8dbc23845f62c5f2a70af9051efa732b3d3d8ad
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164531"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807369"
 ---
 # <a name="omasettingstringxml-resource-type"></a>omaSettingStringXml 资源类型
 
@@ -26,8 +26,8 @@ OMA 设置字符串 XML 定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|字符串|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|字符串|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|String|与 Value 属性关联的文件名 (*.xml)。|
 |value|Binary|值。 （UTF8 编码的字节数组）|
 
@@ -51,6 +51,7 @@ OMA 设置字符串 XML 定义。
   "value": "binary"
 }
 ```
+
 
 
 

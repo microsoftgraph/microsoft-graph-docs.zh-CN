@@ -4,12 +4,12 @@ description: 删除 iosScepCertificateProfile。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5797c3be06d16bb90388d200d5bfb38e36756cec
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e6d5351c8674aa0618bb1c403cda0950098ac2b2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988285"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807838"
 ---
 # <a name="delete-iosscepcertificateprofile"></a>删除 iosScepCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

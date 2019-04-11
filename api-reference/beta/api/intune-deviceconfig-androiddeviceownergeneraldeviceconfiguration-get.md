@@ -4,12 +4,12 @@ description: 读取 androidDeviceOwnerGeneralDeviceConfiguration 对象的属性
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c74ae6746fb0011f0b9b8f9650cbafde01a02f56
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1e2ea1c39f3ac0cb760173fb9ce8552c4637bffa
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984175"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805843"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>获取 androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2854
+Content-Length: 3260
 
 {
   "value": {
@@ -109,6 +109,8 @@ Content-Length: 2854
     "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
     "kioskModeExitCode": "Kiosk Mode Exit Code value",
     "kioskModeVirtualHomeButtonEnabled": true,
+    "kioskModeBluetoothConfigurationEnabled": true,
+    "kioskModeWiFiConfigurationEnabled": true,
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,
@@ -118,10 +120,17 @@ Content-Length: 2854
     ],
     "passwordExpirationDays": 6,
     "passwordMinimumLength": 5,
+    "passwordMinimumLetterCharacters": 15,
+    "passwordMinimumLowerCaseCharacters": 2,
+    "passwordMinimumNonLetterCharacters": 2,
+    "passwordMinimumNumericCharacters": 0,
+    "passwordMinimumSymbolCharacters": 15,
+    "passwordMinimumUpperCaseCharacters": 2,
     "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
     "passwordPreviousPasswordCountToBlock": 4,
     "passwordRequiredType": "required",
     "passwordSignInFailureCountBeforeFactoryReset": 12,
+    "playStoreMode": "allowList",
     "safeBootBlocked": true,
     "screenCaptureBlocked": true,
     "securityAllowDebuggingFeatures": true,
@@ -147,6 +156,7 @@ Content-Length: 2854
   }
 }
 ```
+
 
 
 

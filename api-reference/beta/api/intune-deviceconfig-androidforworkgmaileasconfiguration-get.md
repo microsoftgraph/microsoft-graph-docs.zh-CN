@@ -4,12 +4,12 @@ description: 读取 androidForWorkGmailEasConfiguration 对象的属性和关系
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62f4405d801858352d3da221294f4069a253e342
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fd8ea8e8d98ce9fed631f33fc17d6ad3e4bd5dbf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978939"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806872"
 ---
 # <a name="get-androidforworkgmaileasconfiguration"></a>获取 androidForWorkGmailEasConfiguration
 
@@ -91,6 +91,7 @@ Content-Length: 716
   }
 }
 ```
+
 
 
 

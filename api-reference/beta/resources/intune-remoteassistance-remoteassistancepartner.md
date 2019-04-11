@@ -1,15 +1,15 @@
 ---
 title: remoteAssistancePartner 资源类型
-description: remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据和状态。
+description: RemoteAssistPartner 资源表示给定的远程协助合作伙伴服务的元数据和状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c09965131e7c1d053f12aad9c7e0c8304ea42cd6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3343d0e9d68c76db91f1153704176d70b06a7483
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158861"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805486"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>remoteAssistancePartner 资源类型
 
@@ -17,7 +17,7 @@ ms.locfileid: "30158861"
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据和状态。
+RemoteAssistPartner 资源表示给定的远程协助合作伙伴服务的元数据和状态。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -27,16 +27,16 @@ remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据
 |[创建 remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-create.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|创建新的 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象。|
 |[删除 remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-delete.md)|无|删除 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)。|
 |[更新 remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-update.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|更新 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象的属性。|
-|[beginOnboarding 操作](../api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md)|无|尚未记录|
-|[断开连接操作](../api/intune-remoteassistance-remoteassistancepartner-disconnect.md)|无|尚未记录|
+|[beginOnboarding 操作](../api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md)|无|启动 "加入" 的请求。  必须与相应的 TeamViewer 帐户信息结合使用|
+|[断开连接操作](../api/intune-remoteassistance-remoteassistancepartner-disconnect.md)|无|请求删除活动的 TeamViewer 连接器|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|合作伙伴的唯一标识符。|
-|displayName|String|合作伙伴的显示名称。|
+|id|String|合作伙伴的唯一标识符。|
+|displayName|字符串|合作伙伴的显示名称。|
 |onboardingUrl|String|合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|待定. 可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|当前 TeamViewer 连接器状态的友好说明。 可取值为：`notOnboarded`、`onboarding`、`onboarded`。|
 |lastConnectionDateTime|DateTimeOffset|TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。|
 
 ## <a name="relationships"></a>关系
@@ -60,6 +60,7 @@ remoteAssistPartner 资源表示给定远程协助合作伙伴服务的元数据
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
 
 
 
