@@ -4,12 +4,12 @@ description: 指定需要哪个级别的安全搜索 (筛选成人内容)
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 196131eb11efad25a4b2fa541bf1b20d85dda33e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 564e641fcdc7e0d06d48666881fc3bcedfe3505c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140171"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794727"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>safeSearchFilterType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30140171"
 |定制|0|用户定义, 默认值, 无意向。|
 |全|1|对成人内容严格、最高的筛选。|
 |从中|双面|针对成人内容的中等筛选 (将不会筛选有效的搜索结果)。|
+
 
 
 

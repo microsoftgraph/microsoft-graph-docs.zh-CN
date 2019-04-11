@@ -4,12 +4,12 @@ description: 读取 windows10SecureAssessmentConfiguration 对象的属性和关
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c686b65913da32304a7aef783a3e8eb12d73a5ec
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 301b2f691b5f998171f3037a0376d3ec4afb25ba
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968005"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793908"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>获取 windows10SecureAssessmentConfiguration
 
@@ -91,6 +91,7 @@ Content-Length: 724
   }
 }
 ```
+
 
 
 

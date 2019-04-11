@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca4e5f1da8dc03c98c3d5e72fc03177cdcbf38b2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 66a22d0d3cc5caa53c41607da1d1de8185f22a62
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157461"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793754"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>deviceHealthAttestationState 资源类型
 
@@ -102,6 +102,7 @@ ms.locfileid: "30157461"
   "healthAttestationSupportedStatus": "String"
 }
 ```
+
 
 
 

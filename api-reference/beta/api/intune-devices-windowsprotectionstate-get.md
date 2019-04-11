@@ -4,12 +4,12 @@ description: 读取 windowsProtectionState 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25fde11d74a5d43523d024231974526e7775d050
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 35fb6f7c57e3d526db0a4dfeb4e9639d5c329597
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975460"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790086"
 ---
 # <a name="get-windowsprotectionstate"></a>获取 windowsProtectionState
 
@@ -92,6 +92,7 @@ Content-Length: 971
   }
 }
 ```
+
 
 
 

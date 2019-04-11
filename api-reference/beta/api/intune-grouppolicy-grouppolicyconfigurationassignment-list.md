@@ -4,12 +4,12 @@ description: 列出 groupPolicyConfigurationAssignment 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d848cb89b8e787358d0947a984263cf682ab9845
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f94d607db688fd420ca6e646f5d553e1ae2b6ea7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967235"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790261"
 ---
 # <a name="list-grouppolicyconfigurationassignments"></a>列出 groupPolicyConfigurationAssignments
 
@@ -77,6 +77,7 @@ Content-Length: 344
   ]
 }
 ```
+
 
 
 

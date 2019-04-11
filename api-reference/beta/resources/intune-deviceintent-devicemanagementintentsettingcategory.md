@@ -4,12 +4,12 @@ description: 表示意向设置类别的实体
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3765f120e3bda0bf8f41fa6e3d42ed557092d35b
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 1551d4d4217b03380feef46d07d9f0cc5dac4064
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522557"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792487"
 ---
 # <a name="devicemanagementintentsettingcategory-resource-type"></a>deviceManagementIntentSettingCategory 资源类型
 
@@ -58,8 +58,6 @@ ms.locfileid: "31522557"
   "displayName": "String"
 }
 ```
-
-
 
 
 

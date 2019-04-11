@@ -4,12 +4,12 @@ description: 读取 windowsIdentityProtectionConfiguration 对象的属性和关
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf319135d5c487f123a99a4d4ee64f602bdf5f61
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fed21c47211e7d1774d18bc0edbfab3bc3f1ca39
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972429"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791801"
 ---
 # <a name="get-windowsidentityprotectionconfiguration"></a>获取 windowsIdentityProtectionConfiguration
 
@@ -99,6 +99,7 @@ Content-Length: 1051
   }
 }
 ```
+
 
 
 

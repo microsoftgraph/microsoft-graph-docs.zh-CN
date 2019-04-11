@@ -4,12 +4,12 @@ description: 读取 officeSuiteApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa744933f90af9c0dd174a5fc22bc1993b9105c5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 881a4385de25f64f8dfedd3a002204d04b163a0e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958863"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793964"
 ---
 # <a name="get-officesuiteapp"></a>获取 officeSuiteApp
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1875
+Content-Length: 1904
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1875
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "autoAcceptEula": true,
     "productIds": [
       "o365BusinessRetail"
@@ -130,6 +131,7 @@ Content-Length: 1875
   }
 }
 ```
+
 
 
 

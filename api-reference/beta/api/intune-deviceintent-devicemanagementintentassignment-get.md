@@ -4,12 +4,12 @@ description: 读取 deviceManagementIntentAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5bc905e67f60f03523b25fe23aa2a69b07db9f29
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: b07e48d33ad4d2b7653fc27ac3fcf47a2e568ccd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522662"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791367"
 ---
 # <a name="get-devicemanagementintentassignment"></a>获取 deviceManagementIntentAssignment
 
@@ -77,8 +77,6 @@ Content-Length: 250
   }
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 用于标识您的展台配置的 UWP 应用信息的类
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0a3b56c7bc9856b98708b63c247479e6ccf9c9b
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: f3bb9c57de0e3e60d1c62adb62c3d1a274c6f853
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571156"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793495"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>windowsKioskSingleUWPApp 资源类型
 
@@ -52,6 +52,7 @@ ms.locfileid: "30571156"
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 androidForWorkPkcsCertificateProfile 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 139f048e8e799e3f4722b804af7d66580bcbc7fe
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 72498ae4767eca07c0f8de09cde360b1c344db36
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984630"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792606"
 ---
 # <a name="get-androidforworkpkcscertificateprofile"></a>获取 androidForWorkPkcsCertificateProfile
 
@@ -93,14 +93,15 @@ Content-Length: 1210
         "objectIdentifier": "Object Identifier value"
       }
     ],
+    "subjectAlternativeNameType": "emailAddress",
     "certificationAuthority": "Certification Authority value",
     "certificationAuthorityName": "Certification Authority Name value",
     "certificateTemplateName": "Certificate Template Name value",
-    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-    "subjectAlternativeNameType": "emailAddress"
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
   }
 }
 ```
+
 
 
 

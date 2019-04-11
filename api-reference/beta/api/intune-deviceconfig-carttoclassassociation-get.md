@@ -4,12 +4,12 @@ description: 读取 cartToClassAssociation 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4a05c5dfdba6813b5b0c48c63884ca6982d9404
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2a6002fae4d1283944ff48ffd3a9e77c562b8810
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980885"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791381"
 ---
 # <a name="get-carttoclassassociation"></a>获取 cartToClassAssociation
 
@@ -85,6 +85,7 @@ Content-Length: 488
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 groupPolicyPresentationValueLongDecimal 对象的属性和�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca06c64cd592404f3361805739e3a716f741d22b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 55ba50d6d2848fcf9d3d019dad522667642ccb4e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969363"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794755"
 ---
 # <a name="get-grouppolicypresentationvaluelongdecimal"></a>获取 groupPolicyPresentationValueLongDecimal
 
@@ -77,6 +77,7 @@ Content-Length: 297
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 表示设置类别的实体
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c373ef2bfa72bf08e6259ece1166b4e10101789
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 6af038e31135a99e473f6b14638655af073e1602
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522501"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794818"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>deviceManagementSettingCategory 资源类型
 
@@ -54,8 +54,6 @@ ms.locfileid: "31522501"
   "displayName": "String"
 }
 ```
-
-
 
 
 

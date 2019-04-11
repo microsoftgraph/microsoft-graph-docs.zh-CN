@@ -4,12 +4,12 @@ description: iOS 批量采购计划许可证分配。 此类不支持创建、�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3499f3cfb1b15c76dbd70ec1a0634367c3107f87
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 162eaeebd8c678bf29b3b40729114f67d1325c86
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169333"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790373"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>iosVppAppAssignedLicense 资源类型
 
@@ -32,10 +32,10 @@ iOS 批量采购计划许可证分配。 此类不支持创建、删除或更新
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|userEmailAddress|字符串|用户电子邮件地址。|
+|userEmailAddress|String|用户电子邮件地址。|
 |userId|String|用户 ID。|
 |userName|String|用户名。|
-|userPrincipalName|字符串|用户主体名称。|
+|userPrincipalName|String|用户主体名称。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,6 +58,7 @@ iOS 批量采购计划许可证分配。 此类不支持创建、删除或更新
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Windows 信息保护 DataRecoveryCertificate
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74c480b8117f3d8dbf0ad8208bac09b63b113906
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 272a1e5f7bf1df1c9e16b2239caeee94cc81f12d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156187"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790632"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>windowsInformationProtectionDataRecoveryCertificate 资源类型
 
@@ -23,7 +23,7 @@ Windows 信息保护 DataRecoveryCertificate
 |属性|类型|说明|
 |:---|:---|:---|
 |SubjectName|String|数据恢复证书主题名称|
-|description|字符串|数据恢复证书说明|
+|description|String|数据恢复证书说明|
 |expirationDateTime|DateTimeOffset|数据恢复证书过期日期/时间|
 |证书|Binary|数据恢复证书|
 
@@ -46,6 +46,7 @@ Windows 信息保护 DataRecoveryCertificate
   "certificate": "binary"
 }
 ```
+
 
 
 

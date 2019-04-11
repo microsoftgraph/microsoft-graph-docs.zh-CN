@@ -4,12 +4,12 @@ description: 列出 windows81SCEPCertificateProfile 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d29d7b29775d007289039ee98c7f05d1c19d298
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7de2aeb08cda4d11ff4622c929f610d2fd809121
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972345"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790345"
 ---
 # <a name="list-windows81scepcertificateprofiles"></a>列出 windows81SCEPCertificateProfiles
 
@@ -112,6 +112,7 @@ Content-Length: 1616
   ]
 }
 ```
+
 
 
 

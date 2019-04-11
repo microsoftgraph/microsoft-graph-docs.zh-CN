@@ -4,12 +4,12 @@ description: 删除 iosStoreApp。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e71e9b3ce3adb7e808822cf8e37a5cdfb66a74b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f4a21ae255d43ea08ff7c2f8d5403901a1dbb382
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961012"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792935"
 ---
 # <a name="delete-iosstoreapp"></a>删除 iosStoreApp
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

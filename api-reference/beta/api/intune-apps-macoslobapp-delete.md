@@ -4,12 +4,12 @@ description: 删除 macOSLobApp。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf0b03de6673c49d15717181d03f92b8bd4d5db4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2b1d1049cf87e2f34bd0ae4d2d7646fe98cbc80f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965065"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792011"
 ---
 # <a name="delete-macoslobapp"></a>删除 macOSLobApp
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

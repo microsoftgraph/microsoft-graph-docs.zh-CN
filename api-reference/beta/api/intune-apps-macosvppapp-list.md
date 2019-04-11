@@ -4,12 +4,12 @@ description: 列出 macOsVppApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b7087965a1aa06d557d9eea3c96d5b6f81cee8e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c8c3e92200c86f661e8d6511e16166a83b0892f5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985464"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793180"
 ---
 # <a name="list-macosvppapps"></a>列出 macOsVppApps
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2263
+Content-Length: 2294
 
 {
   "value": [
@@ -91,6 +91,7 @@ Content-Length: 2263
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
       "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -125,6 +126,7 @@ Content-Length: 2263
   ]
 }
 ```
+
 
 
 

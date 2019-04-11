@@ -4,12 +4,12 @@ description: 删除 remoteActionAudit。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1503b31970ce54501c5325fb8004343b88064492
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d6e0196abdce9dd61c9df9145609520c27612960
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965226"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790989"
 ---
 # <a name="delete-remoteactionaudit"></a>删除 remoteActionAudit
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits/{rem
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

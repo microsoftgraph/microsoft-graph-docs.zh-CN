@@ -4,12 +4,12 @@ description: AppLogUploadStatus
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f8243436fa9ec5a56f442626cea31819ca1eaef
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2b59210e7a00fde1e62e1cbc056f0bd34625330e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174387"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792732"
 ---
 # <a name="apploguploadstate-enum-type"></a>appLogUploadState 枚举类型
 
@@ -24,7 +24,8 @@ AppLogUploadStatus
 |:---|:---|:---|
 |决|0|请求正在等待处理或在处理|
 |后|1|请求已完成, 且文件已上载到 Azure blob 以供下载。|
-|failed|双面|请求已完成处理且处于错误状态。|
+|未能|双面|请求已完成处理且处于错误状态。|
+
 
 
 

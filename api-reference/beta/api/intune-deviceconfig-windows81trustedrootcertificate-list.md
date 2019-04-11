@@ -4,12 +4,12 @@ description: 列出 windows81TrustedRootCertificate 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97cad7fa2c52852fdbaefb2d8368b7e41ba4bad3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e6fcbec1f10dba0c10e333f2e79a8ae4ba2d396c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985065"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791269"
 ---
 # <a name="list-windows81trustedrootcertificates"></a>列出 windows81TrustedRootCertificates
 
@@ -85,6 +85,7 @@ Content-Length: 686
   ]
 }
 ```
+
 
 
 

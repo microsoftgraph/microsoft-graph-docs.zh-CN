@@ -4,12 +4,12 @@ description: 自动更新模式的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bba7addc5ae3b7942c3e52e1d8989100e27b2831
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9af00bda442c1a152820323fc0b7e1ddfcd8c384
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156782"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791479"
 ---
 # <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30156782"
 |autoInstallAndRebootAtScheduledTime|4|在计划的时间自动安装和重启。|
 |autoInstallAndRebootWithoutEndUserControl|5|在没有最终用户控件的情况下自动安装和重启|
 |windowsDefault|型|重置为 Windows 默认值。|
+
 
 
 

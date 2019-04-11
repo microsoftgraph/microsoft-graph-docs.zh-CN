@@ -4,12 +4,12 @@ description: Exchange Connector 的当前状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acfb4bccf0cbf9a2fc7b1074c119ac2f9c74855f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 87b45805c7beb15147cf90f8c2f6bef1b82ecb7f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149810"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792242"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>deviceManagementExchangeConnectorStatus 枚举类型
 
@@ -26,6 +26,7 @@ Exchange Connector 的当前状态。
 |connectionPending|1|与 Exchange 环境的挂起连接。|
 |连|双面|已连接到 Exchange 环境|
 |被|第三章|断开与 Exchange 环境的连接|
+
 
 
 

@@ -4,12 +4,12 @@ description: 表示对应用注册应用的操作。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5fb8ad24a86822b657e4f0239f78ab8f08656ee4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 545cacaa5f5d4c065e681dea1604d0fa89036132
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162207"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790275"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "30162207"
 |displayName|String|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
 |state|String|操作的当前状态|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系
@@ -58,6 +58,7 @@ ms.locfileid: "30162207"
   "version": "String"
 }
 ```
+
 
 
 

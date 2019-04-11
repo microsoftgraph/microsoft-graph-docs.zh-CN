@@ -4,12 +4,12 @@ description: 包含设备管理脚本的用户运行状态的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f2a0d24c76d0eb01e7a7edc889dae47ae5bc0fa
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f2476329a402e0d6a50594ab110e88da4b5f5ac1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144742"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792291"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>deviceManagementScriptUserState 资源类型
 
@@ -31,10 +31,10 @@ ms.locfileid: "30144742"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|设备管理脚本用户状态实体的键。|
+|id|String|设备管理脚本用户状态实体的键。|
 |successDeviceCount|Int32|特定用户的成功设备计数。|
 |errorDeviceCount|Int32|特定用户的错误设备计数。|
-|userPrincipalName|字符串|特定用户的用户主体名称。|
+|userPrincipalName|String|特定用户的用户主体名称。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -58,6 +58,7 @@ ms.locfileid: "30144742"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

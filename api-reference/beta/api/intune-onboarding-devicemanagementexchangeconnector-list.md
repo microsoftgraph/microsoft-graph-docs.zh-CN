@@ -4,12 +4,12 @@ description: 列出 deviceManagementExchangeConnector 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8092bda865f7df1de3e0b1cee4ea60d7010317f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9ecfe1bdc8fe4457a3fc152d23e173275b009487
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966325"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794657"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>列出 deviceManagementExchangeConnectors
 
@@ -82,6 +82,7 @@ Content-Length: 616
   ]
 }
 ```
+
 
 
 

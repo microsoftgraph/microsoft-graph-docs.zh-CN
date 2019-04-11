@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementScript 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a46e5eed8a4b5c678c9510d7471e3b7dc450ccb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 13afc26b59d6e9d46b68e1754f9b4362b5bda916
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959276"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793936"
 ---
 # <a name="create-devicemanagementscript"></a>创建 deviceManagementScript
 
@@ -58,10 +58,10 @@ POST /deviceManagement/deviceManagementScripts
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
+|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
 |roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 id 的列表。|
-|runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
+|runAs32Bit|布尔值|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 
 
@@ -122,6 +122,7 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
 
 
 

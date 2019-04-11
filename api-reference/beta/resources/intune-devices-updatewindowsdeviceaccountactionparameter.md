@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81c401509315535e163b3a32224ee3a91ac67a15
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 95ed870849faebec289cd59ba9d58eee67d27fd9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145148"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794048"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>updateWindowsDeviceAccountActionParameter 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "30145148"
 |属性|类型|说明|
 |:---|:---|:---|
 |deviceAccount|[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|尚未记录|
-|passwordRotationEnabled|布尔|尚未记录|
+|passwordRotationEnabled|Boolean|尚未记录|
 |calendarSyncEnabled|布尔值|尚未记录|
-|deviceAccountEmail|字符串|尚未记录|
+|deviceAccountEmail|String|尚未记录|
 |exchangeServer|String|尚未记录|
 |sessionInitiationProtocalAddress|String|尚未记录|
 
@@ -53,6 +53,7 @@ ms.locfileid: "30145148"
   "sessionInitiationProtocalAddress": "String"
 }
 ```
+
 
 
 

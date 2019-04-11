@@ -4,12 +4,12 @@ description: 更新 localizedNotificationMessage 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3c8b5983283bbcb8f8cd88e3b2aa5921f969128
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b581cccd28801ea9316953568bb8191a8904eaae
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958786"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789988"
 ---
 # <a name="update-localizednotificationmessage"></a>更新 localizedNotificationMessage
 
@@ -97,6 +97,7 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
 
 
 

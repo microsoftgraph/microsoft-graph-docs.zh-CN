@@ -4,12 +4,12 @@ description: SignInAssistantSettings 的值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a672343e0c5d62133ef0dce40e7969e24e69b1c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f363967ef6aec0b6f505bc130ee29f05278bc378
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163754"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794125"
 ---
 # <a name="signinassistantoptions-enum-type"></a>signInAssistantOptions 枚举类型
 
@@ -24,6 +24,7 @@ SignInAssistantSettings 的值。
 |:---|:---|:---|
 |notConfigured|0|未配置-wlidsvc Start 将设置为 SERVICE_DEMAND_START。|
 |禁用|1|Disabled-wlidsvc Start 将设置为 SERVICE_DISABLED。|
+
 
 
 

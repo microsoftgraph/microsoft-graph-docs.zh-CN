@@ -4,12 +4,12 @@ description: 列出 androidWorkProfileCustomConfiguration 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f676ccf093f719dcdd241c87c60129cffc12b015
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9f6db8c38e266b0897dbfbd8b5429c152836d039
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975789"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791220"
 ---
 # <a name="list-androidworkprofilecustomconfigurations"></a>列出 androidWorkProfileCustomConfigurations
 
@@ -92,6 +92,7 @@ Content-Length: 790
   ]
 }
 ```
+
 
 
 

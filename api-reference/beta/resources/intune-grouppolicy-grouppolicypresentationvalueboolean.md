@@ -4,12 +4,12 @@ description: 实体表示策略定义上 checkbox 演示文稿的布尔值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f748937572acb4239c14aad93a6a383d354baf1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f47087424474ea142098292d82748aeb10d6af16
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167303"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790849"
 ---
 # <a name="grouppolicypresentationvalueboolean-resource-type"></a>groupPolicyPresentationValueBoolean 资源类型
 
@@ -62,6 +62,7 @@ ms.locfileid: "30167303"
   "value": true
 }
 ```
+
 
 
 

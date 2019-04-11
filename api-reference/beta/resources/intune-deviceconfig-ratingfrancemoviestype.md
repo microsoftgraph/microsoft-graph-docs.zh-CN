@@ -4,12 +4,12 @@ description: 法国的电影评级标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 123a1e4c63891ad39cb0a238fd61393b555734f8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 12c775d7717dfd06f20e8300fe3e04db6c526840
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172406"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794153"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>ratingFranceMoviesType 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "30172406"
 |agesAbove12|第三章|12分类禁止将胶片屏蔽到12岁下面的未成年人|
 |agesAbove16|4|16分类禁止将胶片屏蔽到16下的未成年人|
 |agesAbove18|5|18分类禁止筛选到18岁以上的未成年人|
+
 
 
 

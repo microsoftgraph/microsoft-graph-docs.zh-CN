@@ -4,12 +4,12 @@ description: 读取 mobileAppProvisioningConfigGroupAssignment 对象的属性�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5be8f8253b144385b36692652acef9f7c2c70a8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d81f87776609a6b99b918ee5800365018b96b67a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961985"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791619"
 ---
 # <a name="get-mobileappprovisioningconfiggroupassignment"></a>获取 mobileAppProvisioningConfigGroupAssignment
 
@@ -75,6 +75,7 @@ Content-Length: 203
   }
 }
 ```
+
 
 
 

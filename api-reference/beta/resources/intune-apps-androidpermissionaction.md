@@ -4,12 +4,12 @@ description: 在请求该权限时, android 应用程序权限和适用于 andro
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e00bb351f2eff093dee21cb393ba622bc5e29ea9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fec33b2600e88e6a4dfae644c335d9652c20abe0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161570"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792963"
 ---
 # <a name="androidpermissionaction-resource-type"></a>androidPermissionAction 资源类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "30161570"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|权限|字符串|android 权限字符串, 在官方 android 文档中定义。  示例 "READ_CONTACTS"。|
+|拒绝|String|android 权限字符串, 在官方 android 文档中定义。  示例 "READ_CONTACTS"。|
 |action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Android 权限操作的类型。 可取值为：`prompt`、`autoGrant`、`autoDeny`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -42,6 +42,7 @@ ms.locfileid: "30161570"
   "action": "String"
 }
 ```
+
 
 
 

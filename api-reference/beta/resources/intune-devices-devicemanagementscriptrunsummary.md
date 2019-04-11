@@ -4,12 +4,12 @@ description: 包含设备管理脚本的运行摘要的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fe26fc121d0d1d9339de999101975d2c4c225a5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6807114ebaf7ba3a778520c7b2a383f5a13c31f1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174268"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794195"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>deviceManagementScriptRunSummary 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "30174268"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备管理脚本运行摘要实体的键。|
+|id|String|设备管理脚本运行摘要实体的键。|
 |successDeviceCount|Int32|成功设备计数。|
 |errorDeviceCount|Int32|错误设备计数。|
 |successUserCount|Int32|成功的用户计数。|
@@ -55,6 +55,7 @@ ms.locfileid: "30174268"
   "errorUserCount": 1024
 }
 ```
+
 
 
 

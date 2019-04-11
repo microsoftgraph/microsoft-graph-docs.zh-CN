@@ -4,12 +4,12 @@ description: 租户移动设备管理订阅状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 716e313ccd0c9c7827a11eba88e2388d50a3716e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 015768fb5150a64f13f3d34581a10b822712395c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141781"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791087"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>deviceManagementSubscriptionState 枚举类型
 
@@ -24,11 +24,12 @@ ms.locfileid: "30141781"
 |:---|:---|:---|
 |决|0|Pending|
 |工作|1|Active|
-|warning|双面|警告|
-|禁用|第三章|已禁用|
+|警告|双面|警告|
+|禁用|第三章|Disabled|
 |deleted|4|Deleted|
-|已阻止|5|Blocked|
+|堵塞|5|Blocked|
 |lockedOut|utf-8|LockedOut|
+
 
 
 

@@ -4,12 +4,12 @@ description: 包含用户的安装状态的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4778728fbec389b276e5098ffa859f13ccb6a9e4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3efd555f4b4a728e9a4ae660eac9568cb7e3b2a9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143958"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791115"
 ---
 # <a name="userappinstallstatus-resource-type"></a>userAppInstallStatus 资源类型
 
@@ -31,9 +31,9 @@ ms.locfileid: "30143958"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|实体的键。|
+|id|String|实体的键。|
 |userName|String|用户名。|
-|userPrincipalName|字符串|用户主体名称。|
+|userPrincipalName|String|用户主体名称。|
 |installedDeviceCount|Int32|已安装设备的计数。|
 |failedDeviceCount|Int32|已失败设备的计数。|
 |notInstalledDeviceCount|Int32|Not installed device count。|
@@ -63,6 +63,7 @@ ms.locfileid: "30143958"
   "notInstalledDeviceCount": 1024
 }
 ```
+
 
 
 

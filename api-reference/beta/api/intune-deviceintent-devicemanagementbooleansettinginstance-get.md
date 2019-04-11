@@ -4,12 +4,12 @@ description: 读取 deviceManagementBooleanSettingInstance 对象的属性和关
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bcb8f382f0dd394d84456406de2f21ee16a7a1e0
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: b1f00b9d9c967d43711b12b01035818ec212d88c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522746"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792466"
 ---
 # <a name="get-devicemanagementbooleansettinginstance"></a>获取 deviceManagementBooleanSettingInstance
 
@@ -80,8 +80,6 @@ Content-Length: 254
   }
 }
 ```
-
-
 
 
 

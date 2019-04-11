@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aac9194ca888b8e46358748754856cdb072d8c12
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 717824e8d0731fe50cb00537e8c8d73647de3778
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967144"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790233"
 ---
 # <a name="importappledeviceidentitylist-action"></a>importAppleDeviceIdentityList 操作
 
@@ -116,6 +116,7 @@ Content-Length: 715
   ]
 }
 ```
+
 
 
 

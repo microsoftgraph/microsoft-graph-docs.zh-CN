@@ -4,12 +4,12 @@ description: 读取 androidManagedStoreApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e57057f856529322931d5681d4e3faf9e234f427
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 51934e39cea37d2bd3f0f51c875b8c6a470ec49b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977098"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790968"
 ---
 # <a name="get-androidmanagedstoreapp"></a>获取 androidManagedStoreApp
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1162
+Content-Length: 1191
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1162
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "packageId": "Package Id value",
     "appIdentifier": "App Identifier value",
     "usedLicenseCount": 0,
@@ -104,6 +105,7 @@ Content-Length: 1162
   }
 }
 ```
+
 
 
 

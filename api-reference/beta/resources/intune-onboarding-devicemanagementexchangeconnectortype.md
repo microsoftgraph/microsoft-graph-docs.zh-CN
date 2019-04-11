@@ -4,12 +4,12 @@ description: Exchange Connector 的类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8742a146f1183376424678f070b902eb052df5ac
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 75129a49352bb2cfe738c0dd58e382b26530ef53
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150433"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791017"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>deviceManagementExchangeConnectorType 枚举类型
 
@@ -26,6 +26,7 @@ Exchange Connector 的类型。
 |otg|1|连接到 O365 多租户 Exchange 环境|
 |serviceToService|双面|Intune 服务直接连接到 O365 多租户 Exchange 环境|
 |专用|第三章|连接到 O365 专用 Exchange 环境。|
+
 
 
 

@@ -2,14 +2,14 @@
 title: List messages
 description: '获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。 '
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3a29392318de78c1e1ff5bd4ad4b560bc9c460f4
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 19cb2dc1dd1e86cd697319a0dc8a729cb712e463
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518530"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792186"
 ---
 # <a name="list-messages"></a>List messages
 
@@ -17,7 +17,11 @@ ms.locfileid: "31518530"
 
 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。 
 
-特别是, 您可以对邮件进行筛选, 并只获取那些包含已[](../resources/mention.md)登录用户的说明。
+从邮箱中获取邮件可能会导致多个请求, 具体取决于页面大小和邮箱数据。 默认的页面大小为10封邮件。 若要获取下一页邮件, 只需将返回的整个 URL 应用`@odata.nextLink`到下一个消息获取请求。 此 URL 包括您在初始请求中可能指定的任何查询参数。 
+
+请勿尝试从`@odata.nextLink` URL 中提取`$skip`值来处理响应。 此 API 使用`$skip`值来保留它在用户邮箱中已有的所有项的计数, 以返回邮件类型项的页面。 因此, 即使在初始响应中, `$skip`该值也会大于页面大小。 有关详细信息, 请参阅[在应用中分页 Microsoft Graph 数据](/graph/paging)。
+
+您可以对邮件进行筛选, 并只获取那些包含已[](../resources/mention.md)登录用户的说明。
 
 请注意, 默认情况下`GET /me/messages` , 该操作不会返回**提及**属性。 使用`$expand`查询参数[在邮件中查找每个提及的详细信息](../api/message-get.md#request-2)。
 
@@ -80,20 +84,19 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 如果成功, 此方法在响应`200 OK`正文中返回响应代码和[message](../resources/message.md)对象集合。
 
-此请求的默认页面大小为 10 封邮件。 
-
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-第一个示例获取已登录用户的邮箱中的前10封邮件。
+第一个示例获取已登录用户的邮箱中的默认前10封邮件。 它使用`$select`返回响应中每个邮件的属性子集。 
 <!-- {
   "blockType": "request",
   "name": "get_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages
+GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
 ##### <a name="response-1"></a>响应 1
-下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+下面是一个响应示例。 若要获取下一页邮件, 请将返回`@odata.nextLink`的 URL 应用于后续的 get 请求。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,28 +106,107 @@ GET https://graph.microsoft.com/beta/me/messages
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 317
 
 {
-  "value": [
-    {
-      "receivedDateTime": "2016-10-19T10:37:00Z",
-      "sentDateTime": "2016-10-19T10:37:00Z",
-      "hasAttachments": true,
-      "subject": "subject-value",
-      "body": {
-        "contentType": "",
-        "content": "content-value"
-      },
-      "bodyPreview": "bodyPreview-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$select=sender%2csubject&$skip=14",
+    "value": [
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
+            "id": "AAMkAGUAAAwTW09AAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
+            "id": "AAMkAGUAAAq5QKlAAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
+            "id": "AAMkAGUAAAq5QKkAAA=",
+            "subject": "Your Azure AD Identity Protection Weekly Digest",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Azure",
+                    "address": "azure-noreply@microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
+            "id": "AAMkAGUAAAq5QKjAAA=",
+            "subject": "Use attached file",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
+            "id": "AAMkAGUAAAq5QKiAAA=",
+            "subject": "Original invitation",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
+            "id": "AAMkAGUAAAq5QKhAAA=",
+            "subject": "Koala image",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
+            "id": "AAMkAGUAAAq5QKgAAA=",
+            "subject": "Sales invoice template",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessageRequest",
+            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
+            "id": "AAMkAGUAAAq5T8tAAA=",
+            "subject": "Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
 
 
 ##### <a name="request-2"></a>请求 2
-下一个示例将对登录用户邮箱中的所有邮件进行筛选, 以查找那些提及该用户的邮件。 它使用`$select`返回响应中每个邮件的属性子集。 
+下一个示例将对登录用户邮箱中的所有邮件进行筛选, 以查找那些提及该用户的邮件。 它还`$select`用于在响应中返回每个邮件的属性子集。 
 
 该示例还合并了查询参数字符串中的空格字符的 URL 编码。
 <!-- {

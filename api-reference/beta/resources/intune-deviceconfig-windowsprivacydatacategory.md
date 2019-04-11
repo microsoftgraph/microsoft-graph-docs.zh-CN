@@ -4,12 +4,12 @@ description: 用于隐私数据访问的 Windows 隐私数据类别说明符。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3097ed916ec9f215880caf46bcdc02616ce5d2c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 89f9f74c61888e9acbf40f8059444d41cef8afae
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154451"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792914"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>windowsPrivacyDataCategory 枚举类型
 
@@ -30,17 +30,18 @@ ms.locfileid: "30154451"
 |拍照|5|允许应用访问用户设备上的摄像头。 已添加到 Windows 10 版本 1607 中。|
 |contacts|型|允许应用访问用户的联系信息。 已添加到 Windows 10 版本 1607 中。|
 |diagnosticsInfo|步|允许应用访问其他正在运行的应用程序的诊断信息。 在 Windows 10 版本1703中添加。|
-|电子邮件|utf-8|允许应用访问和发送电子邮件。 已添加到 Windows 10 版本 1607 中。|
+|email|utf-8|允许应用访问和发送电子邮件。 已添加到 Windows 10 版本 1607 中。|
 |location|第|允许应用访问设备用户的确切位置数据。 已添加到 Windows 10 版本 1607 中。|
 |讯息|10|允许应用读取或发送消息、文本或 MMS。 已添加到 Windows 10 版本 1607 中。|
-|microphone|11x17|允许应用在用户设备上使用麦克风。 已添加到 Windows 10 版本 1607 中。|
+|着|11x17|允许应用在用户设备上使用麦克风。 已添加到 Windows 10 版本 1607 中。|
 |动作|12|允许应用使用在设备用户上生成的运动数据。 已添加到 Windows 10 版本 1607 中。|
 |通知|13|允许应用访问用户的通知。 已添加到 Windows 10 版本 1607 中。|
 |phone|日|允许应用访问电话数据并拨打电话。 已添加到 Windows 10 版本 1607 中。|
 |收发|个|允许应用使用无线收发器 (包括蓝牙) 发送和接收数据。 已添加到 Windows 10 版本 1607 中。|
-|tasks|位|允许应用访问任务计划程序。 在 Windows 10 版本1703中添加。|
+|任务|位|允许应用访问任务计划程序。 在 Windows 10 版本1703中添加。|
 |syncWithDevices|×|允许应用自动与未明确配对用户设备的无线设备共享和同步信息。 已添加到 Windows 10 版本 1607 中。|
 |trustedDevices|18|允许应用访问受信任的设备。 已添加到 Windows 10 版本 1607 中。|
+
 
 
 

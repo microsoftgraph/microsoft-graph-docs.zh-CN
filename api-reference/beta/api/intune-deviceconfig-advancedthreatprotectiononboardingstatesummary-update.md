@@ -4,12 +4,12 @@ description: 更新 advancedThreatProtectionOnboardingStateSummary 对象的属�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ca5bb4fe9ef9fe0b5ac67e2d4569713fef2ea6d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0be5ec3f75cc57c008ff53f7e0f50a6e5a79f567
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964211"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790541"
 ---
 # <a name="update-advancedthreatprotectiononboardingstatesummary"></a>更新 advancedThreatProtectionOnboardingStateSummary
 
@@ -107,6 +107,7 @@ Content-Length: 380
   "notAssignedDeviceCount": 6
 }
 ```
+
 
 
 

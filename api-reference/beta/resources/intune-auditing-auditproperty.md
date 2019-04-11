@@ -4,12 +4,12 @@ description: 包含审核属性的属性的类。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d06bd1b628848a34e6fa830a525c049526b46ee
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3f864f41a2068d6455dccb0a539c14e7e4b9dc6d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139030"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792760"
 ---
 # <a name="auditproperty-resource-type"></a>auditProperty 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30139030"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|显示名称。|
+|displayName|String|显示名称。|
 |oldValue|String|旧值。|
 |NewValue|String|新值。|
 
@@ -44,6 +44,7 @@ ms.locfileid: "30139030"
   "newValue": "String"
 }
 ```
+
 
 
 

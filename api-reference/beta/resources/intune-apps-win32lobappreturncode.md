@@ -4,12 +4,12 @@ description: 包含 Win32 应用的返回代码属性
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4402464bd4618f1e33b9b766be529cbe592165c0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4c05d695b05a001e6854e254bf065d6fb41ba773
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174585"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791346"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>win32LobAppReturnCode 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "30174585"
 |属性|类型|说明|
 |:---|:---|:---|
 |returnCode|Int32|返回代码。|
-|type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|返回代码的类型。 可取值为：`failed`、`success`、`softReboot`、`hardReboot`、`retry`。|
+|类型|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|返回代码的类型。 可取值为：`failed`、`success`、`softReboot`、`hardReboot` 或 `retry`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -42,6 +42,7 @@ ms.locfileid: "30174585"
   "type": "String"
 }
 ```
+
 
 
 

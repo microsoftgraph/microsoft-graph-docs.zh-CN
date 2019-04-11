@@ -4,12 +4,12 @@ description: 创建新的 androidForWorkEnrollmentProfile 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f4202ef375eae4799d50e6cbaadc95881af4f06
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1beabbd597ebaee3ab75bb51fa7dc59f28369a34
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985240"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790807"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>创建 androidForWorkEnrollmentProfile
 
@@ -119,6 +119,7 @@ Content-Length: 668
   }
 }
 ```
+
 
 
 

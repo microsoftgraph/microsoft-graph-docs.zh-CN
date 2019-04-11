@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a11694511911c23951c8c0ff6667c18f5c318bc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 128e0d63cfc2c613eb0ee16e4cf0a82d0e0c32e8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962370"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793124"
 ---
 # <a name="gettargetedusersanddevices-action"></a>getTargetedUsersAndDevices 操作
 
@@ -96,6 +96,7 @@ Content-Length: 409
   ]
 }
 ```
+
 
 
 

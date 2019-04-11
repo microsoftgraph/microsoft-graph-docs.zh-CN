@@ -4,12 +4,12 @@ description: 列出 androidWorkProfileGeneralDeviceConfiguration 对象的属性
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c3d77f2e3224d5fbb959b6b442fa6db254173c8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e04a5efc3fe325a17f866955af0d83a9ce130fe9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973661"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794475"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>列出 androidWorkProfileGeneralDeviceConfigurations
 
@@ -119,6 +119,7 @@ Content-Length: 2435
   ]
 }
 ```
+
 
 
 

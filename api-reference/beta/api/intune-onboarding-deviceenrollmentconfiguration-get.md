@@ -4,12 +4,12 @@ description: 读取 deviceEnrollmentConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff30d19a6177dc0b7bc40f0cb4b644abc50bce70
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b137cf4225dae8c85960210bc1f49360eb20d4c6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974214"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793397"
 ---
 # <a name="get-deviceenrollmentconfiguration"></a>获取 deviceEnrollmentConfiguration
 
@@ -80,6 +80,7 @@ Content-Length: 392
   }
 }
 ```
+
 
 
 

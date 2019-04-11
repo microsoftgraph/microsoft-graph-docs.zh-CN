@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 145a61bba73c90be6fec2818be5fe4aed4156ca9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: edafd2837cd0c8677ebd096f7ad50c4de1f1b8f7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960865"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791507"
 ---
 # <a name="targetapps-action"></a>targetApps 操作
 
@@ -88,6 +88,7 @@ Content-length: 286
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

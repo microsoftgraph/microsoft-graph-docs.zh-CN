@@ -4,12 +4,12 @@ description: 壁纸显示位置说明符的枚举类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea7980d8005f3a2ddbb515528f3330881296c191
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d408a37c1f535aeb0e51cc50327f2897803093b0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146625"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791409"
 ---
 # <a name="ioswallpaperdisplaylocation-enum-type"></a>iosWallpaperDisplayLocation 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30146625"
 |锁屏|1|在锁屏屏幕上显示配置的壁纸图像。|
 |homeScreen|双面|已配置的壁纸图像显示在 "主页 (图标列表)" 屏幕上。|
 |lockAndHomeScreens|第三章|在锁屏屏幕和主屏幕上显示配置的壁纸图像。|
+
 
 
 

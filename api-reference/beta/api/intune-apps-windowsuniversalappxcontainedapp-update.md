@@ -4,12 +4,12 @@ description: 更新 windowsUniversalAppXContainedApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4eeae30dd48689b2df656a5ea78139af01970c1b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ffc389f5b43132c21bfd0abfbfb7d45783e4ba75
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959157"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792312"
 ---
 # <a name="update-windowsuniversalappxcontainedapp"></a>更新 windowsUniversalAppXContainedApp
 
@@ -88,6 +88,7 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 iosWiFiConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e7e52b786422c005ca656048d32c53ad05ad18d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 72a77aaf5cbf28846a961cb074ad8e8c5e8bfee1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963987"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791430"
 ---
 # <a name="delete-ioswificonfiguration"></a>删除 iosWiFiConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 deviceManagementSettingCategory 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04e05de03549874ea084ebea4925be3a65fb9c61
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 0932dc3bccf38d6317da3d986d3aadb13d70fa30
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522886"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790828"
 ---
 # <a name="get-devicemanagementsettingcategory"></a>获取 deviceManagementSettingCategory
 
@@ -75,8 +75,6 @@ Content-Length: 187
   }
 }
 ```
-
-
 
 
 

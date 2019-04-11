@@ -4,12 +4,12 @@ description: 读取 windows81CompliancePolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f38be120780bce53bb5568128b2bd59e5fc6a39e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2e97162681df00d5728006d363ed3c242be244ff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989566"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794706"
 ---
 # <a name="get-windows81compliancepolicy"></a>获取 windows81CompliancePolicy
 
@@ -93,6 +93,7 @@ Content-Length: 897
   }
 }
 ```
+
 
 
 

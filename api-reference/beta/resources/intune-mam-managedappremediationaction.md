@@ -4,12 +4,12 @@ description: 要应用于托管应用程序的管理员启动的操作。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eabaa59c9419193d6dd984eaaa791e395f67eb50
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1eb9643fc1b4c8c4ec858fd00b0a65a40c225307
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161717"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791262"
 ---
 # <a name="managedappremediationaction-enum-type"></a>managedAppRemediationAction 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30161717"
 |数据|0|要阻止的应用程序和相应的公司数据|
 |擦|1|要擦除的应用程序和相应的公司数据|
 |警告|双面|要警告的应用程序和相应的用户|
+
 
 
 

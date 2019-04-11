@@ -4,12 +4,12 @@ description: 一类应用程序的基类
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a247c3f02dc64657ec9cd297d8fff5d8591549cd
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 8526eeafbeea990ff2b3f487dd94cfe7b7d302bd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572535"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792830"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>windowsKioskUWPApp 资源类型
 
@@ -28,10 +28,10 @@ ms.locfileid: "30572535"
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的启动布局的应用程序磁贴大小。 可取值为：`hidden`、`small`、`medium`、`wide` 或 `large`。|
 |name|String|表示从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序的友好名称|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的应用程序类型。 可取值为：`unknown`、`store`、`desktop`、`aumId`。|
-|autoLaunch|Boolean|允许在从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的多应用程序展台模式中自动启动应用程序|
-|appUserModelId|字符串|这是在展台模式下可启动使用的唯一应用程序用户模型 ID (AUMID)|
+|autoLaunch|布尔值|允许在从[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)继承的多应用程序展台模式中自动启动应用程序|
+|appUserModelId|String|这是在展台模式下可启动使用的唯一应用程序用户模型 ID (AUMID)|
 |appId|String|这将引用将作为展台配置的目标的 Intune 应用|
-|containedAppId|字符串|这将从 Intune 应用程序中引用包含的应用程序|
+|containedAppId|String|这将从 Intune 应用程序中引用包含的应用程序|
 
 ## <a name="relationships"></a>关系
 无
@@ -55,6 +55,7 @@ ms.locfileid: "30572535"
   "containedAppId": "String"
 }
 ```
+
 
 
 

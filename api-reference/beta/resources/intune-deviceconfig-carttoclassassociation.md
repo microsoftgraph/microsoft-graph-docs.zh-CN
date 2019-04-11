@@ -4,12 +4,12 @@ description: 用于将设备购物车与教室关联的 CartToClassAssociation�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 228a3bfc873fdaf1fbd77e51a79ca184c2416d7c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b756e4b9f5bd00a812eba65948c415a5f0719c20
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156593"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793096"
 ---
 # <a name="carttoclassassociation-resource-type"></a>cartToClassAssociation 资源类型
 
@@ -36,9 +36,9 @@ ms.locfileid: "30156593"
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
-|说明|字符串|管理员提供的 CartToClassAssociation 说明。|
-|deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
-|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
+|description|String|管理员提供的 CartToClassAssociation 说明。|
+|deviceCartIds|String 集合|要与类关联的设备购物车的标识符。|
+|classroomIds|String 集合|要与设备购物车关联的教室的标识符。|
 
 ## <a name="relationships"></a>关系
 无
@@ -68,6 +68,7 @@ ms.locfileid: "30156593"
   ]
 }
 ```
+
 
 
 

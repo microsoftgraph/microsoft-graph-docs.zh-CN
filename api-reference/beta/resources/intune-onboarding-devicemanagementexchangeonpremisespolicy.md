@@ -4,12 +4,12 @@ description: 表示为租户配置的 Exchange OnPremises 策略的单一实例�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 492a1f238bcbdd6891b99bca1f48c13bcabd5ab0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d8605a3062d8808ea6a4d0b5397283f0ca82d920
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142768"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791192"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>deviceManagementExchangeOnPremisesPolicy 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "30142768"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|id|String|尚未记录|
 |notificationContent|Binary|将发送给此策略隔离的用户的通知文本。 这是 UTF8 编码的字节数组 HTML。|
 |defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Exchange 中的默认访问状态。 此规则全局应用于整个 Exchange 组织。 可取值为：`none`、`allow`、`block`、`quarantine`。|
 |accessRules|[deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)集合|Exchange 中的设备访问规则列表。 访问规则全局应用于整个 Exchange 组织|
@@ -73,6 +73,7 @@ ms.locfileid: "30142768"
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f81d061a25c945b70b87fc10a6841b79fbe8026
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c4de1a6cba1ee05fbfcd333911892d51903669c4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971792"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790450"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>windowsPrivacyAccessControls 操作
 
@@ -88,6 +88,7 @@ Content-length: 379
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

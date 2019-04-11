@@ -4,12 +4,12 @@ description: 删除 androidForWorkGmailEasConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25159b2e372d2da345b21ae5f8124fda6e07c07e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 028725263eea0f0c5df4a28c9054b3c570e2ed9e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976188"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793593"
 ---
 # <a name="delete-androidforworkgmaileasconfiguration"></a>删除 androidForWorkGmailEasConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
