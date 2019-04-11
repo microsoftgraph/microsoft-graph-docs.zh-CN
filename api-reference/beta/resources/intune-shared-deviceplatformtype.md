@@ -4,32 +4,33 @@ description: 支持的平台类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e060cba22c0f5dcb45ab17f5624f7a0246123810
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 51f74a9820b808bcc5685494665c67679d2191a3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139905"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782882"
 ---
-# <a name="deviceplatformtype-enum-type"></a><span data-ttu-id="3b66b-103">devicePlatformType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="3b66b-103">devicePlatformType enum type</span></span>
+# <a name="deviceplatformtype-enum-type"></a><span data-ttu-id="ada3d-103">devicePlatformType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="ada3d-103">devicePlatformType enum type</span></span>
 
-> <span data-ttu-id="3b66b-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="3b66b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ada3d-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="ada3d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3b66b-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="3b66b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ada3d-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ada3d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3b66b-106">支持的平台类型。</span><span class="sxs-lookup"><span data-stu-id="3b66b-106">Supported platform types.</span></span>
+<span data-ttu-id="ada3d-106">支持的平台类型。</span><span class="sxs-lookup"><span data-stu-id="ada3d-106">Supported platform types.</span></span>
 
-## <a name="members"></a><span data-ttu-id="3b66b-107">成员</span><span class="sxs-lookup"><span data-stu-id="3b66b-107">Members</span></span>
-|<span data-ttu-id="3b66b-108">成员</span><span class="sxs-lookup"><span data-stu-id="3b66b-108">Member</span></span>|<span data-ttu-id="3b66b-109">值</span><span class="sxs-lookup"><span data-stu-id="3b66b-109">Value</span></span>|<span data-ttu-id="3b66b-110">说明</span><span class="sxs-lookup"><span data-stu-id="3b66b-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="ada3d-107">成员</span><span class="sxs-lookup"><span data-stu-id="ada3d-107">Members</span></span>
+|<span data-ttu-id="ada3d-108">成员</span><span class="sxs-lookup"><span data-stu-id="ada3d-108">Member</span></span>|<span data-ttu-id="ada3d-109">值</span><span class="sxs-lookup"><span data-stu-id="ada3d-109">Value</span></span>|<span data-ttu-id="ada3d-110">说明</span><span class="sxs-lookup"><span data-stu-id="ada3d-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3b66b-111">android</span><span class="sxs-lookup"><span data-stu-id="3b66b-111">android</span></span>|<span data-ttu-id="3b66b-112">0</span><span class="sxs-lookup"><span data-stu-id="3b66b-112">0</span></span>|<span data-ttu-id="3b66b-113">Android.</span><span class="sxs-lookup"><span data-stu-id="3b66b-113">Android.</span></span>|
-|<span data-ttu-id="3b66b-114">androidForWork</span><span class="sxs-lookup"><span data-stu-id="3b66b-114">androidForWork</span></span>|<span data-ttu-id="3b66b-115">1</span><span class="sxs-lookup"><span data-stu-id="3b66b-115">1</span></span>|<span data-ttu-id="3b66b-116">AndroidForWork。</span><span class="sxs-lookup"><span data-stu-id="3b66b-116">AndroidForWork.</span></span>|
-|<span data-ttu-id="3b66b-117">iOS</span><span class="sxs-lookup"><span data-stu-id="3b66b-117">iOS</span></span>|<span data-ttu-id="3b66b-118">双面</span><span class="sxs-lookup"><span data-stu-id="3b66b-118">2</span></span>|<span data-ttu-id="3b66b-119">iOS.</span><span class="sxs-lookup"><span data-stu-id="3b66b-119">iOS.</span></span>|
-|<span data-ttu-id="3b66b-120">macOS</span><span class="sxs-lookup"><span data-stu-id="3b66b-120">macOS</span></span>|<span data-ttu-id="3b66b-121">第三章</span><span class="sxs-lookup"><span data-stu-id="3b66b-121">3</span></span>|<span data-ttu-id="3b66b-122">MacOS.</span><span class="sxs-lookup"><span data-stu-id="3b66b-122">MacOS.</span></span>|
-|<span data-ttu-id="3b66b-123">windowsPhone81</span><span class="sxs-lookup"><span data-stu-id="3b66b-123">windowsPhone81</span></span>|<span data-ttu-id="3b66b-124">4</span><span class="sxs-lookup"><span data-stu-id="3b66b-124">4</span></span>|<span data-ttu-id="3b66b-125">WindowsPhone 8.1。</span><span class="sxs-lookup"><span data-stu-id="3b66b-125">WindowsPhone 8.1.</span></span>|
-|<span data-ttu-id="3b66b-126">windows81AndLater</span><span class="sxs-lookup"><span data-stu-id="3b66b-126">windows81AndLater</span></span>|<span data-ttu-id="3b66b-127">5</span><span class="sxs-lookup"><span data-stu-id="3b66b-127">5</span></span>|<span data-ttu-id="3b66b-128">Windows 8.1 及更高版本</span><span class="sxs-lookup"><span data-stu-id="3b66b-128">Windows 8.1 and later</span></span>|
-|<span data-ttu-id="3b66b-129">windows10AndLater</span><span class="sxs-lookup"><span data-stu-id="3b66b-129">windows10AndLater</span></span>|<span data-ttu-id="3b66b-130">型</span><span class="sxs-lookup"><span data-stu-id="3b66b-130">6</span></span>|<span data-ttu-id="3b66b-131">Windows 10 及更高版本。</span><span class="sxs-lookup"><span data-stu-id="3b66b-131">Windows 10 and later.</span></span>|
-|<span data-ttu-id="3b66b-132">androidWorkProfile</span><span class="sxs-lookup"><span data-stu-id="3b66b-132">androidWorkProfile</span></span>|<span data-ttu-id="3b66b-133">步</span><span class="sxs-lookup"><span data-stu-id="3b66b-133">7</span></span>|<span data-ttu-id="3b66b-134">Android 工作配置文件。</span><span class="sxs-lookup"><span data-stu-id="3b66b-134">Android Work Profile.</span></span>|
+|<span data-ttu-id="ada3d-111">android</span><span class="sxs-lookup"><span data-stu-id="ada3d-111">android</span></span>|<span data-ttu-id="ada3d-112">0</span><span class="sxs-lookup"><span data-stu-id="ada3d-112">0</span></span>|<span data-ttu-id="ada3d-113">Android.</span><span class="sxs-lookup"><span data-stu-id="ada3d-113">Android.</span></span>|
+|<span data-ttu-id="ada3d-114">androidForWork</span><span class="sxs-lookup"><span data-stu-id="ada3d-114">androidForWork</span></span>|<span data-ttu-id="ada3d-115">1</span><span class="sxs-lookup"><span data-stu-id="ada3d-115">1</span></span>|<span data-ttu-id="ada3d-116">AndroidForWork。</span><span class="sxs-lookup"><span data-stu-id="ada3d-116">AndroidForWork.</span></span>|
+|<span data-ttu-id="ada3d-117">iOS</span><span class="sxs-lookup"><span data-stu-id="ada3d-117">iOS</span></span>|<span data-ttu-id="ada3d-118">双面</span><span class="sxs-lookup"><span data-stu-id="ada3d-118">2</span></span>|<span data-ttu-id="ada3d-119">iOS.</span><span class="sxs-lookup"><span data-stu-id="ada3d-119">iOS.</span></span>|
+|<span data-ttu-id="ada3d-120">macOS</span><span class="sxs-lookup"><span data-stu-id="ada3d-120">macOS</span></span>|<span data-ttu-id="ada3d-121">第三章</span><span class="sxs-lookup"><span data-stu-id="ada3d-121">3</span></span>|<span data-ttu-id="ada3d-122">MacOS.</span><span class="sxs-lookup"><span data-stu-id="ada3d-122">MacOS.</span></span>|
+|<span data-ttu-id="ada3d-123">windowsPhone81</span><span class="sxs-lookup"><span data-stu-id="ada3d-123">windowsPhone81</span></span>|<span data-ttu-id="ada3d-124">4</span><span class="sxs-lookup"><span data-stu-id="ada3d-124">4</span></span>|<span data-ttu-id="ada3d-125">WindowsPhone 8.1。</span><span class="sxs-lookup"><span data-stu-id="ada3d-125">WindowsPhone 8.1.</span></span>|
+|<span data-ttu-id="ada3d-126">windows81AndLater</span><span class="sxs-lookup"><span data-stu-id="ada3d-126">windows81AndLater</span></span>|<span data-ttu-id="ada3d-127">5</span><span class="sxs-lookup"><span data-stu-id="ada3d-127">5</span></span>|<span data-ttu-id="ada3d-128">Windows 8.1 及更高版本</span><span class="sxs-lookup"><span data-stu-id="ada3d-128">Windows 8.1 and later</span></span>|
+|<span data-ttu-id="ada3d-129">windows10AndLater</span><span class="sxs-lookup"><span data-stu-id="ada3d-129">windows10AndLater</span></span>|<span data-ttu-id="ada3d-130">型</span><span class="sxs-lookup"><span data-stu-id="ada3d-130">6</span></span>|<span data-ttu-id="ada3d-131">Windows 10 及更高版本。</span><span class="sxs-lookup"><span data-stu-id="ada3d-131">Windows 10 and later.</span></span>|
+|<span data-ttu-id="ada3d-132">androidWorkProfile</span><span class="sxs-lookup"><span data-stu-id="ada3d-132">androidWorkProfile</span></span>|<span data-ttu-id="ada3d-133">步</span><span class="sxs-lookup"><span data-stu-id="ada3d-133">7</span></span>|<span data-ttu-id="ada3d-134">Android 工作配置文件。</span><span class="sxs-lookup"><span data-stu-id="ada3d-134">Android Work Profile.</span></span>|
+
 
 
 

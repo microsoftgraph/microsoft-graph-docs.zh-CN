@@ -4,43 +4,43 @@ description: 表示有关组织应用保护和配置的非类型化状态报告�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34c70a268c3940843759844c27de7f31bfab002e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f7c609c8ac1a228be588c5bdfe93cca7d42069da
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154192"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781538"
 ---
-# <a name="managedappstatusraw-resource-type"></a><span data-ttu-id="25941-103">managedAppStatusRaw 资源类型</span><span class="sxs-lookup"><span data-stu-id="25941-103">managedAppStatusRaw resource type</span></span>
+# <a name="managedappstatusraw-resource-type"></a><span data-ttu-id="d0760-103">managedAppStatusRaw 资源类型</span><span class="sxs-lookup"><span data-stu-id="d0760-103">managedAppStatusRaw resource type</span></span>
 
-> <span data-ttu-id="25941-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="25941-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="d0760-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d0760-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="25941-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="25941-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d0760-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d0760-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="25941-106">表示有关组织应用保护和配置的非类型化状态报告。</span><span class="sxs-lookup"><span data-stu-id="25941-106">Represents an un-typed status report about organizations app protection and configuration.</span></span>
+<span data-ttu-id="d0760-106">表示有关组织应用保护和配置的非类型化状态报告。</span><span class="sxs-lookup"><span data-stu-id="d0760-106">Represents an un-typed status report about organizations app protection and configuration.</span></span>
 
 
-<span data-ttu-id="25941-107">继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span><span class="sxs-lookup"><span data-stu-id="25941-107">Inherits from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>
+<span data-ttu-id="d0760-107">继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span><span class="sxs-lookup"><span data-stu-id="d0760-107">Inherits from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>
 
-## <a name="methods"></a><span data-ttu-id="25941-108">方法</span><span class="sxs-lookup"><span data-stu-id="25941-108">Methods</span></span>
-|<span data-ttu-id="25941-109">方法</span><span class="sxs-lookup"><span data-stu-id="25941-109">Method</span></span>|<span data-ttu-id="25941-110">返回类型</span><span class="sxs-lookup"><span data-stu-id="25941-110">Return Type</span></span>|<span data-ttu-id="25941-111">说明</span><span class="sxs-lookup"><span data-stu-id="25941-111">Description</span></span>|
+## <a name="methods"></a><span data-ttu-id="d0760-108">方法</span><span class="sxs-lookup"><span data-stu-id="d0760-108">Methods</span></span>
+|<span data-ttu-id="d0760-109">方法</span><span class="sxs-lookup"><span data-stu-id="d0760-109">Method</span></span>|<span data-ttu-id="d0760-110">返回类型</span><span class="sxs-lookup"><span data-stu-id="d0760-110">Return Type</span></span>|<span data-ttu-id="d0760-111">说明</span><span class="sxs-lookup"><span data-stu-id="d0760-111">Description</span></span>|
 |:---|:---|:---|
-|[<span data-ttu-id="25941-112">列出 managedAppStatusRaws</span><span class="sxs-lookup"><span data-stu-id="25941-112">List managedAppStatusRaws</span></span>](../api/intune-mam-managedappstatusraw-list.md)|<span data-ttu-id="25941-113">[managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) 集合</span><span class="sxs-lookup"><span data-stu-id="25941-113">[managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) collection</span></span>|<span data-ttu-id="25941-114">列出 [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="25941-114">List properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) objects.</span></span>|
-|[<span data-ttu-id="25941-115">获取 managedAppStatusRaw</span><span class="sxs-lookup"><span data-stu-id="25941-115">Get managedAppStatusRaw</span></span>](../api/intune-mam-managedappstatusraw-get.md)|[<span data-ttu-id="25941-116">managedAppStatusRaw</span><span class="sxs-lookup"><span data-stu-id="25941-116">managedAppStatusRaw</span></span>](../resources/intune-mam-managedappstatusraw.md)|<span data-ttu-id="25941-117">读取 [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="25941-117">Read properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) object.</span></span>|
+|[<span data-ttu-id="d0760-112">列出 managedAppStatusRaws</span><span class="sxs-lookup"><span data-stu-id="d0760-112">List managedAppStatusRaws</span></span>](../api/intune-mam-managedappstatusraw-list.md)|<span data-ttu-id="d0760-113">[managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) 集合</span><span class="sxs-lookup"><span data-stu-id="d0760-113">[managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) collection</span></span>|<span data-ttu-id="d0760-114">列出 [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="d0760-114">List properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) objects.</span></span>|
+|[<span data-ttu-id="d0760-115">获取 managedAppStatusRaw</span><span class="sxs-lookup"><span data-stu-id="d0760-115">Get managedAppStatusRaw</span></span>](../api/intune-mam-managedappstatusraw-get.md)|[<span data-ttu-id="d0760-116">managedAppStatusRaw</span><span class="sxs-lookup"><span data-stu-id="d0760-116">managedAppStatusRaw</span></span>](../resources/intune-mam-managedappstatusraw.md)|<span data-ttu-id="d0760-117">读取 [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="d0760-117">Read properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) object.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="25941-118">属性</span><span class="sxs-lookup"><span data-stu-id="25941-118">Properties</span></span>
-|<span data-ttu-id="25941-119">属性</span><span class="sxs-lookup"><span data-stu-id="25941-119">Property</span></span>|<span data-ttu-id="25941-120">类型</span><span class="sxs-lookup"><span data-stu-id="25941-120">Type</span></span>|<span data-ttu-id="25941-121">说明</span><span class="sxs-lookup"><span data-stu-id="25941-121">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d0760-118">属性</span><span class="sxs-lookup"><span data-stu-id="d0760-118">Properties</span></span>
+|<span data-ttu-id="d0760-119">属性</span><span class="sxs-lookup"><span data-stu-id="d0760-119">Property</span></span>|<span data-ttu-id="d0760-120">类型</span><span class="sxs-lookup"><span data-stu-id="d0760-120">Type</span></span>|<span data-ttu-id="d0760-121">说明</span><span class="sxs-lookup"><span data-stu-id="d0760-121">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="25941-122">displayName</span><span class="sxs-lookup"><span data-stu-id="25941-122">displayName</span></span>|<span data-ttu-id="25941-123">String</span><span class="sxs-lookup"><span data-stu-id="25941-123">String</span></span>|<span data-ttu-id="25941-124">状态报告的友好名称。</span><span class="sxs-lookup"><span data-stu-id="25941-124">Friendly name of the status report.</span></span> <span data-ttu-id="25941-125">继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span><span class="sxs-lookup"><span data-stu-id="25941-125">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
-|<span data-ttu-id="25941-126">id</span><span class="sxs-lookup"><span data-stu-id="25941-126">id</span></span>|<span data-ttu-id="25941-127">字符串</span><span class="sxs-lookup"><span data-stu-id="25941-127">String</span></span>|<span data-ttu-id="25941-128">实体的键。</span><span class="sxs-lookup"><span data-stu-id="25941-128">Key of the entity.</span></span> <span data-ttu-id="25941-129">继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span><span class="sxs-lookup"><span data-stu-id="25941-129">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
-|<span data-ttu-id="25941-130">version</span><span class="sxs-lookup"><span data-stu-id="25941-130">version</span></span>|<span data-ttu-id="25941-131">String</span><span class="sxs-lookup"><span data-stu-id="25941-131">String</span></span>|<span data-ttu-id="25941-132">实体的版本。</span><span class="sxs-lookup"><span data-stu-id="25941-132">Version of the entity.</span></span> <span data-ttu-id="25941-133">继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span><span class="sxs-lookup"><span data-stu-id="25941-133">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
-|<span data-ttu-id="25941-134">content</span><span class="sxs-lookup"><span data-stu-id="25941-134">content</span></span>|[<span data-ttu-id="25941-135">Json</span><span class="sxs-lookup"><span data-stu-id="25941-135">Json</span></span>](../resources/intune-mam-json.md)|<span data-ttu-id="25941-136">状态报告内容。</span><span class="sxs-lookup"><span data-stu-id="25941-136">Status report content.</span></span>|
+|<span data-ttu-id="d0760-122">displayName</span><span class="sxs-lookup"><span data-stu-id="d0760-122">displayName</span></span>|<span data-ttu-id="d0760-123">String</span><span class="sxs-lookup"><span data-stu-id="d0760-123">String</span></span>|<span data-ttu-id="d0760-124">状态报告的友好名称。</span><span class="sxs-lookup"><span data-stu-id="d0760-124">Friendly name of the status report.</span></span> <span data-ttu-id="d0760-125">继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span><span class="sxs-lookup"><span data-stu-id="d0760-125">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
+|<span data-ttu-id="d0760-126">id</span><span class="sxs-lookup"><span data-stu-id="d0760-126">id</span></span>|<span data-ttu-id="d0760-127">String</span><span class="sxs-lookup"><span data-stu-id="d0760-127">String</span></span>|<span data-ttu-id="d0760-128">实体的键。</span><span class="sxs-lookup"><span data-stu-id="d0760-128">Key of the entity.</span></span> <span data-ttu-id="d0760-129">继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span><span class="sxs-lookup"><span data-stu-id="d0760-129">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
+|<span data-ttu-id="d0760-130">version</span><span class="sxs-lookup"><span data-stu-id="d0760-130">version</span></span>|<span data-ttu-id="d0760-131">String</span><span class="sxs-lookup"><span data-stu-id="d0760-131">String</span></span>|<span data-ttu-id="d0760-132">实体的版本。</span><span class="sxs-lookup"><span data-stu-id="d0760-132">Version of the entity.</span></span> <span data-ttu-id="d0760-133">继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span><span class="sxs-lookup"><span data-stu-id="d0760-133">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
+|<span data-ttu-id="d0760-134">content</span><span class="sxs-lookup"><span data-stu-id="d0760-134">content</span></span>|[<span data-ttu-id="d0760-135">Json</span><span class="sxs-lookup"><span data-stu-id="d0760-135">Json</span></span>](../resources/intune-mam-json.md)|<span data-ttu-id="d0760-136">状态报告内容。</span><span class="sxs-lookup"><span data-stu-id="d0760-136">Status report content.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="25941-137">关系</span><span class="sxs-lookup"><span data-stu-id="25941-137">Relationships</span></span>
-<span data-ttu-id="25941-138">无</span><span class="sxs-lookup"><span data-stu-id="25941-138">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="d0760-137">关系</span><span class="sxs-lookup"><span data-stu-id="d0760-137">Relationships</span></span>
+<span data-ttu-id="d0760-138">无</span><span class="sxs-lookup"><span data-stu-id="d0760-138">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="25941-139">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="25941-139">JSON Representation</span></span>
-<span data-ttu-id="25941-140">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="25941-140">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d0760-139">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d0760-139">JSON Representation</span></span>
+<span data-ttu-id="d0760-140">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d0760-140">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -58,6 +58,7 @@ ms.locfileid: "30154192"
   }
 }
 ```
+
 
 
 
