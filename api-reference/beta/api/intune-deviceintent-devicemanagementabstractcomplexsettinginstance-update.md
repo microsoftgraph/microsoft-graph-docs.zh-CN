@@ -4,31 +4,31 @@ description: 更新 deviceManagementAbstractComplexSettingInstance 对象的属�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df71a7d85e2911b76832b87e3ef90457009ad8c1
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: b50e7376c27f7201a8f66b081f9dab95a90535e2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523747"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801349"
 ---
-# <a name="update-devicemanagementabstractcomplexsettinginstance"></a><span data-ttu-id="d4450-103">更新 deviceManagementAbstractComplexSettingInstance</span><span class="sxs-lookup"><span data-stu-id="d4450-103">Update deviceManagementAbstractComplexSettingInstance</span></span>
+# <a name="update-devicemanagementabstractcomplexsettinginstance"></a><span data-ttu-id="07a1b-103">更新 deviceManagementAbstractComplexSettingInstance</span><span class="sxs-lookup"><span data-stu-id="07a1b-103">Update deviceManagementAbstractComplexSettingInstance</span></span>
 
-> <span data-ttu-id="d4450-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d4450-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="07a1b-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="07a1b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d4450-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d4450-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="07a1b-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="07a1b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d4450-106">更新[deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="d4450-106">Update the properties of a [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) object.</span></span>
+<span data-ttu-id="07a1b-106">更新[deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="07a1b-106">Update the properties of a [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d4450-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="d4450-107">Prerequisites</span></span>
-<span data-ttu-id="d4450-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d4450-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="07a1b-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="07a1b-107">Prerequisites</span></span>
+<span data-ttu-id="07a1b-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="07a1b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d4450-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="d4450-110">Permission type</span></span>|<span data-ttu-id="d4450-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="d4450-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="07a1b-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="07a1b-110">Permission type</span></span>|<span data-ttu-id="07a1b-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="07a1b-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d4450-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d4450-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d4450-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d4450-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="d4450-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d4450-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d4450-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d4450-115">Not supported.</span></span>|
-|<span data-ttu-id="d4450-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="d4450-116">Application</span></span>|<span data-ttu-id="d4450-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="d4450-117">Not supported.</span></span>|
+|<span data-ttu-id="07a1b-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="07a1b-112">Delegated (work or school account)</span></span>|<span data-ttu-id="07a1b-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="07a1b-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="07a1b-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="07a1b-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="07a1b-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="07a1b-115">Not supported.</span></span>|
+|<span data-ttu-id="07a1b-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="07a1b-116">Application</span></span>|<span data-ttu-id="07a1b-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="07a1b-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d4450-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d4450-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="07a1b-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="07a1b-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,33 +40,33 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMan
 PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceManagementTemplateSettingCategoryId}/recommendedSettings/{deviceManagementSettingInstanceId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d4450-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="d4450-119">Request headers</span></span>
-|<span data-ttu-id="d4450-120">标头</span><span class="sxs-lookup"><span data-stu-id="d4450-120">Header</span></span>|<span data-ttu-id="d4450-121">值</span><span class="sxs-lookup"><span data-stu-id="d4450-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="07a1b-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="07a1b-119">Request headers</span></span>
+|<span data-ttu-id="07a1b-120">标头</span><span class="sxs-lookup"><span data-stu-id="07a1b-120">Header</span></span>|<span data-ttu-id="07a1b-121">值</span><span class="sxs-lookup"><span data-stu-id="07a1b-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d4450-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d4450-122">Authorization</span></span>|<span data-ttu-id="d4450-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="d4450-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d4450-124">接受</span><span class="sxs-lookup"><span data-stu-id="d4450-124">Accept</span></span>|<span data-ttu-id="d4450-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d4450-125">application/json</span></span>|
+|<span data-ttu-id="07a1b-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="07a1b-122">Authorization</span></span>|<span data-ttu-id="07a1b-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="07a1b-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="07a1b-124">接受</span><span class="sxs-lookup"><span data-stu-id="07a1b-124">Accept</span></span>|<span data-ttu-id="07a1b-125">application/json</span><span class="sxs-lookup"><span data-stu-id="07a1b-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d4450-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="d4450-126">Request body</span></span>
-<span data-ttu-id="d4450-127">在请求正文中, 提供[deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d4450-127">In the request body, supply a JSON representation for the [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="07a1b-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="07a1b-126">Request body</span></span>
+<span data-ttu-id="07a1b-127">在请求正文中, 提供[deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="07a1b-127">In the request body, supply a JSON representation for the [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) object.</span></span>
 
-<span data-ttu-id="d4450-128">下表显示创建[deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="d4450-128">The following table shows the properties that are required when you create the [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md).</span></span>
+<span data-ttu-id="07a1b-128">下表显示创建[deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="07a1b-128">The following table shows the properties that are required when you create the [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md).</span></span>
 
-|<span data-ttu-id="d4450-129">属性</span><span class="sxs-lookup"><span data-stu-id="d4450-129">Property</span></span>|<span data-ttu-id="d4450-130">类型</span><span class="sxs-lookup"><span data-stu-id="d4450-130">Type</span></span>|<span data-ttu-id="d4450-131">说明</span><span class="sxs-lookup"><span data-stu-id="d4450-131">Description</span></span>|
+|<span data-ttu-id="07a1b-129">属性</span><span class="sxs-lookup"><span data-stu-id="07a1b-129">Property</span></span>|<span data-ttu-id="07a1b-130">类型</span><span class="sxs-lookup"><span data-stu-id="07a1b-130">Type</span></span>|<span data-ttu-id="07a1b-131">说明</span><span class="sxs-lookup"><span data-stu-id="07a1b-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d4450-132">id</span><span class="sxs-lookup"><span data-stu-id="d4450-132">id</span></span>|<span data-ttu-id="d4450-133">String</span><span class="sxs-lookup"><span data-stu-id="d4450-133">String</span></span>|<span data-ttu-id="d4450-134">从[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)继承的设置实例 ID</span><span class="sxs-lookup"><span data-stu-id="d4450-134">The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="d4450-135">definitionId</span><span class="sxs-lookup"><span data-stu-id="d4450-135">definitionId</span></span>|<span data-ttu-id="d4450-136">String</span><span class="sxs-lookup"><span data-stu-id="d4450-136">String</span></span>|<span data-ttu-id="d4450-137">继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID</span><span class="sxs-lookup"><span data-stu-id="d4450-137">The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="d4450-138">valueJson</span><span class="sxs-lookup"><span data-stu-id="d4450-138">valueJson</span></span>|<span data-ttu-id="d4450-139">String</span><span class="sxs-lookup"><span data-stu-id="d4450-139">String</span></span>|<span data-ttu-id="d4450-140">继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d4450-140">JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="d4450-141">implementationId</span><span class="sxs-lookup"><span data-stu-id="d4450-141">implementationId</span></span>|<span data-ttu-id="d4450-142">String</span><span class="sxs-lookup"><span data-stu-id="d4450-142">String</span></span>|<span data-ttu-id="d4450-143">此复杂设置的所选实现的定义 ID</span><span class="sxs-lookup"><span data-stu-id="d4450-143">The definition ID for the chosen implementation of this complex setting</span></span>|
+|<span data-ttu-id="07a1b-132">id</span><span class="sxs-lookup"><span data-stu-id="07a1b-132">id</span></span>|<span data-ttu-id="07a1b-133">String</span><span class="sxs-lookup"><span data-stu-id="07a1b-133">String</span></span>|<span data-ttu-id="07a1b-134">从[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)继承的设置实例 ID</span><span class="sxs-lookup"><span data-stu-id="07a1b-134">The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="07a1b-135">definitionId</span><span class="sxs-lookup"><span data-stu-id="07a1b-135">definitionId</span></span>|<span data-ttu-id="07a1b-136">String</span><span class="sxs-lookup"><span data-stu-id="07a1b-136">String</span></span>|<span data-ttu-id="07a1b-137">继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID</span><span class="sxs-lookup"><span data-stu-id="07a1b-137">The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="07a1b-138">valueJson</span><span class="sxs-lookup"><span data-stu-id="07a1b-138">valueJson</span></span>|<span data-ttu-id="07a1b-139">String</span><span class="sxs-lookup"><span data-stu-id="07a1b-139">String</span></span>|<span data-ttu-id="07a1b-140">继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="07a1b-140">JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="07a1b-141">implementationId</span><span class="sxs-lookup"><span data-stu-id="07a1b-141">implementationId</span></span>|<span data-ttu-id="07a1b-142">String</span><span class="sxs-lookup"><span data-stu-id="07a1b-142">String</span></span>|<span data-ttu-id="07a1b-143">此复杂设置的所选实现的定义 ID</span><span class="sxs-lookup"><span data-stu-id="07a1b-143">The definition ID for the chosen implementation of this complex setting</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="d4450-144">响应</span><span class="sxs-lookup"><span data-stu-id="d4450-144">Response</span></span>
-<span data-ttu-id="d4450-145">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)对象。</span><span class="sxs-lookup"><span data-stu-id="d4450-145">If successful, this method returns a `200 OK` response code and an updated [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="07a1b-144">响应</span><span class="sxs-lookup"><span data-stu-id="07a1b-144">Response</span></span>
+<span data-ttu-id="07a1b-145">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)对象。</span><span class="sxs-lookup"><span data-stu-id="07a1b-145">If successful, this method returns a `200 OK` response code and an updated [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d4450-146">示例</span><span class="sxs-lookup"><span data-stu-id="d4450-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="07a1b-146">示例</span><span class="sxs-lookup"><span data-stu-id="07a1b-146">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d4450-147">请求</span><span class="sxs-lookup"><span data-stu-id="d4450-147">Request</span></span>
-<span data-ttu-id="d4450-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d4450-148">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="07a1b-147">请求</span><span class="sxs-lookup"><span data-stu-id="07a1b-147">Request</span></span>
+<span data-ttu-id="07a1b-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="07a1b-148">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/settings/{deviceManagementSettingInstanceId}
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 216
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="d4450-149">响应</span><span class="sxs-lookup"><span data-stu-id="d4450-149">Response</span></span>
-<span data-ttu-id="d4450-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d4450-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="07a1b-149">响应</span><span class="sxs-lookup"><span data-stu-id="07a1b-149">Response</span></span>
+<span data-ttu-id="07a1b-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="07a1b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -95,8 +95,6 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
-
-
 
 
 

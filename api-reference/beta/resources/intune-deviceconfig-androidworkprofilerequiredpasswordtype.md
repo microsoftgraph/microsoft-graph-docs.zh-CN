@@ -4,32 +4,33 @@ description: Android 工作配置文件必需的密码类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 742ffaff4c235f9abfeb44d707a3af4429fc86e6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3bbe0e64fdbbca78766bf7471d29d6cdf17b0714
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169186"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802721"
 ---
-# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a><span data-ttu-id="a6dcf-103">androidWorkProfileRequiredPasswordType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="a6dcf-103">androidWorkProfileRequiredPasswordType enum type</span></span>
+# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a><span data-ttu-id="9630e-103">androidWorkProfileRequiredPasswordType 枚举类型</span><span class="sxs-lookup"><span data-stu-id="9630e-103">androidWorkProfileRequiredPasswordType enum type</span></span>
 
-> <span data-ttu-id="a6dcf-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="a6dcf-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="9630e-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="9630e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a6dcf-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a6dcf-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9630e-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="9630e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a6dcf-106">Android 工作配置文件必需的密码类型。</span><span class="sxs-lookup"><span data-stu-id="a6dcf-106">Android Work Profile required password type.</span></span>
+<span data-ttu-id="9630e-106">Android 工作配置文件必需的密码类型。</span><span class="sxs-lookup"><span data-stu-id="9630e-106">Android Work Profile required password type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="a6dcf-107">成员</span><span class="sxs-lookup"><span data-stu-id="a6dcf-107">Members</span></span>
-|<span data-ttu-id="a6dcf-108">成员</span><span class="sxs-lookup"><span data-stu-id="a6dcf-108">Member</span></span>|<span data-ttu-id="a6dcf-109">值</span><span class="sxs-lookup"><span data-stu-id="a6dcf-109">Value</span></span>|<span data-ttu-id="a6dcf-110">说明</span><span class="sxs-lookup"><span data-stu-id="a6dcf-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="9630e-107">成员</span><span class="sxs-lookup"><span data-stu-id="9630e-107">Members</span></span>
+|<span data-ttu-id="9630e-108">成员</span><span class="sxs-lookup"><span data-stu-id="9630e-108">Member</span></span>|<span data-ttu-id="9630e-109">值</span><span class="sxs-lookup"><span data-stu-id="9630e-109">Value</span></span>|<span data-ttu-id="9630e-110">说明</span><span class="sxs-lookup"><span data-stu-id="9630e-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a6dcf-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="a6dcf-111">deviceDefault</span></span>|<span data-ttu-id="a6dcf-112">0</span><span class="sxs-lookup"><span data-stu-id="a6dcf-112">0</span></span>|<span data-ttu-id="a6dcf-113">设备默认值, 无意向。</span><span class="sxs-lookup"><span data-stu-id="a6dcf-113">Device default value, no intent.</span></span>|
-|<span data-ttu-id="a6dcf-114">lowSecurityBiometric</span><span class="sxs-lookup"><span data-stu-id="a6dcf-114">lowSecurityBiometric</span></span>|<span data-ttu-id="a6dcf-115">1</span><span class="sxs-lookup"><span data-stu-id="a6dcf-115">1</span></span>|<span data-ttu-id="a6dcf-116">要求低安全基于生物特征的密码。</span><span class="sxs-lookup"><span data-stu-id="a6dcf-116">Low security biometrics based password required.</span></span>|
-|<span data-ttu-id="a6dcf-117">必需</span><span class="sxs-lookup"><span data-stu-id="a6dcf-117">required</span></span>|<span data-ttu-id="a6dcf-118">双面</span><span class="sxs-lookup"><span data-stu-id="a6dcf-118">2</span></span>|<span data-ttu-id="a6dcf-119">必需。</span><span class="sxs-lookup"><span data-stu-id="a6dcf-119">Required.</span></span>|
-|<span data-ttu-id="a6dcf-120">atLeastNumeric</span><span class="sxs-lookup"><span data-stu-id="a6dcf-120">atLeastNumeric</span></span>|<span data-ttu-id="a6dcf-121">第三章</span><span class="sxs-lookup"><span data-stu-id="a6dcf-121">3</span></span>|<span data-ttu-id="a6dcf-122">至少需要数字密码。</span><span class="sxs-lookup"><span data-stu-id="a6dcf-122">At least numeric password required.</span></span>|
-|<span data-ttu-id="a6dcf-123">numericComplex</span><span class="sxs-lookup"><span data-stu-id="a6dcf-123">numericComplex</span></span>|<span data-ttu-id="a6dcf-124">4</span><span class="sxs-lookup"><span data-stu-id="a6dcf-124">4</span></span>|<span data-ttu-id="a6dcf-125">需要数字复杂密码。</span><span class="sxs-lookup"><span data-stu-id="a6dcf-125">Numeric complex password required.</span></span>|
-|<span data-ttu-id="a6dcf-126">atLeastAlphabetic</span><span class="sxs-lookup"><span data-stu-id="a6dcf-126">atLeastAlphabetic</span></span>|<span data-ttu-id="a6dcf-127">5</span><span class="sxs-lookup"><span data-stu-id="a6dcf-127">5</span></span>|<span data-ttu-id="a6dcf-128">至少需要字母密码。</span><span class="sxs-lookup"><span data-stu-id="a6dcf-128">At least alphabetic password required.</span></span>|
-|<span data-ttu-id="a6dcf-129">atLeastAlphanumeric</span><span class="sxs-lookup"><span data-stu-id="a6dcf-129">atLeastAlphanumeric</span></span>|<span data-ttu-id="a6dcf-130">型</span><span class="sxs-lookup"><span data-stu-id="a6dcf-130">6</span></span>|<span data-ttu-id="a6dcf-131">至少需要字母数字密码。</span><span class="sxs-lookup"><span data-stu-id="a6dcf-131">At least alphanumeric password required.</span></span>|
-|<span data-ttu-id="a6dcf-132">alphanumericWithSymbols</span><span class="sxs-lookup"><span data-stu-id="a6dcf-132">alphanumericWithSymbols</span></span>|<span data-ttu-id="a6dcf-133">步</span><span class="sxs-lookup"><span data-stu-id="a6dcf-133">7</span></span>|<span data-ttu-id="a6dcf-134">至少需要带符号的字母数字密码。</span><span class="sxs-lookup"><span data-stu-id="a6dcf-134">At least alphanumeric with symbols password required.</span></span>|
+|<span data-ttu-id="9630e-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="9630e-111">deviceDefault</span></span>|<span data-ttu-id="9630e-112">0</span><span class="sxs-lookup"><span data-stu-id="9630e-112">0</span></span>|<span data-ttu-id="9630e-113">设备默认值, 无意向。</span><span class="sxs-lookup"><span data-stu-id="9630e-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="9630e-114">lowSecurityBiometric</span><span class="sxs-lookup"><span data-stu-id="9630e-114">lowSecurityBiometric</span></span>|<span data-ttu-id="9630e-115">1</span><span class="sxs-lookup"><span data-stu-id="9630e-115">1</span></span>|<span data-ttu-id="9630e-116">要求低安全基于生物特征的密码。</span><span class="sxs-lookup"><span data-stu-id="9630e-116">Low security biometrics based password required.</span></span>|
+|<span data-ttu-id="9630e-117">必需</span><span class="sxs-lookup"><span data-stu-id="9630e-117">required</span></span>|<span data-ttu-id="9630e-118">双面</span><span class="sxs-lookup"><span data-stu-id="9630e-118">2</span></span>|<span data-ttu-id="9630e-119">必需。</span><span class="sxs-lookup"><span data-stu-id="9630e-119">Required.</span></span>|
+|<span data-ttu-id="9630e-120">atLeastNumeric</span><span class="sxs-lookup"><span data-stu-id="9630e-120">atLeastNumeric</span></span>|<span data-ttu-id="9630e-121">第三章</span><span class="sxs-lookup"><span data-stu-id="9630e-121">3</span></span>|<span data-ttu-id="9630e-122">至少需要数字密码。</span><span class="sxs-lookup"><span data-stu-id="9630e-122">At least numeric password required.</span></span>|
+|<span data-ttu-id="9630e-123">numericComplex</span><span class="sxs-lookup"><span data-stu-id="9630e-123">numericComplex</span></span>|<span data-ttu-id="9630e-124">4</span><span class="sxs-lookup"><span data-stu-id="9630e-124">4</span></span>|<span data-ttu-id="9630e-125">需要数字复杂密码。</span><span class="sxs-lookup"><span data-stu-id="9630e-125">Numeric complex password required.</span></span>|
+|<span data-ttu-id="9630e-126">atLeastAlphabetic</span><span class="sxs-lookup"><span data-stu-id="9630e-126">atLeastAlphabetic</span></span>|<span data-ttu-id="9630e-127">5</span><span class="sxs-lookup"><span data-stu-id="9630e-127">5</span></span>|<span data-ttu-id="9630e-128">至少需要字母密码。</span><span class="sxs-lookup"><span data-stu-id="9630e-128">At least alphabetic password required.</span></span>|
+|<span data-ttu-id="9630e-129">atLeastAlphanumeric</span><span class="sxs-lookup"><span data-stu-id="9630e-129">atLeastAlphanumeric</span></span>|<span data-ttu-id="9630e-130">型</span><span class="sxs-lookup"><span data-stu-id="9630e-130">6</span></span>|<span data-ttu-id="9630e-131">至少需要字母数字密码。</span><span class="sxs-lookup"><span data-stu-id="9630e-131">At least alphanumeric password required.</span></span>|
+|<span data-ttu-id="9630e-132">alphanumericWithSymbols</span><span class="sxs-lookup"><span data-stu-id="9630e-132">alphanumericWithSymbols</span></span>|<span data-ttu-id="9630e-133">步</span><span class="sxs-lookup"><span data-stu-id="9630e-133">7</span></span>|<span data-ttu-id="9630e-134">至少需要带符号的字母数字密码。</span><span class="sxs-lookup"><span data-stu-id="9630e-134">At least alphanumeric with symbols password required.</span></span>|
+
 
 
 

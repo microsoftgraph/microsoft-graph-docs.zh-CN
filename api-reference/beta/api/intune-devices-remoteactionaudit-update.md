@@ -4,31 +4,31 @@ description: 更新 remoteActionAudit 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 429ad79b6163f3c755bae5a47503c9b90536f44e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6cfae09fc5dd7e90e2109a5a858a25b062922df1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969671"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802546"
 ---
-# <a name="update-remoteactionaudit"></a><span data-ttu-id="de1c0-103">更新 remoteActionAudit</span><span class="sxs-lookup"><span data-stu-id="de1c0-103">Update remoteActionAudit</span></span>
+# <a name="update-remoteactionaudit"></a><span data-ttu-id="d6259-103">更新 remoteActionAudit</span><span class="sxs-lookup"><span data-stu-id="d6259-103">Update remoteActionAudit</span></span>
 
-> <span data-ttu-id="de1c0-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="de1c0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="d6259-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="d6259-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="de1c0-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="de1c0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d6259-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="d6259-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="de1c0-106">更新[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="de1c0-106">Update the properties of a [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) object.</span></span>
+<span data-ttu-id="d6259-106">更新[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象的属性。</span><span class="sxs-lookup"><span data-stu-id="d6259-106">Update the properties of a [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="de1c0-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="de1c0-107">Prerequisites</span></span>
-<span data-ttu-id="de1c0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="de1c0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d6259-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="d6259-107">Prerequisites</span></span>
+<span data-ttu-id="d6259-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d6259-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="de1c0-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="de1c0-110">Permission type</span></span>|<span data-ttu-id="de1c0-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="de1c0-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d6259-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="d6259-110">Permission type</span></span>|<span data-ttu-id="d6259-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="d6259-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="de1c0-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="de1c0-112">Delegated (work or school account)</span></span>|<span data-ttu-id="de1c0-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="de1c0-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="de1c0-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="de1c0-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="de1c0-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="de1c0-115">Not supported.</span></span>|
-|<span data-ttu-id="de1c0-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="de1c0-116">Application</span></span>|<span data-ttu-id="de1c0-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="de1c0-117">Not supported.</span></span>|
+|<span data-ttu-id="d6259-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d6259-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d6259-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6259-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="d6259-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d6259-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d6259-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d6259-115">Not supported.</span></span>|
+|<span data-ttu-id="d6259-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="d6259-116">Application</span></span>|<span data-ttu-id="d6259-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="d6259-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="de1c0-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="de1c0-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d6259-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d6259-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,38 +37,38 @@ ms.locfileid: "30969671"
 PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="de1c0-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="de1c0-119">Request headers</span></span>
-|<span data-ttu-id="de1c0-120">标头</span><span class="sxs-lookup"><span data-stu-id="de1c0-120">Header</span></span>|<span data-ttu-id="de1c0-121">值</span><span class="sxs-lookup"><span data-stu-id="de1c0-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d6259-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="d6259-119">Request headers</span></span>
+|<span data-ttu-id="d6259-120">标头</span><span class="sxs-lookup"><span data-stu-id="d6259-120">Header</span></span>|<span data-ttu-id="d6259-121">值</span><span class="sxs-lookup"><span data-stu-id="d6259-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="de1c0-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="de1c0-122">Authorization</span></span>|<span data-ttu-id="de1c0-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="de1c0-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="de1c0-124">接受</span><span class="sxs-lookup"><span data-stu-id="de1c0-124">Accept</span></span>|<span data-ttu-id="de1c0-125">application/json</span><span class="sxs-lookup"><span data-stu-id="de1c0-125">application/json</span></span>|
+|<span data-ttu-id="d6259-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d6259-122">Authorization</span></span>|<span data-ttu-id="d6259-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="d6259-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d6259-124">接受</span><span class="sxs-lookup"><span data-stu-id="d6259-124">Accept</span></span>|<span data-ttu-id="d6259-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d6259-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="de1c0-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="de1c0-126">Request body</span></span>
-<span data-ttu-id="de1c0-127">在请求正文中, 提供[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="de1c0-127">In the request body, supply a JSON representation for the [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d6259-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="d6259-126">Request body</span></span>
+<span data-ttu-id="d6259-127">在请求正文中, 提供[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d6259-127">In the request body, supply a JSON representation for the [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) object.</span></span>
 
-<span data-ttu-id="de1c0-128">下表显示创建[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="de1c0-128">The following table shows the properties that are required when you create the [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md).</span></span>
+<span data-ttu-id="d6259-128">下表显示创建[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="d6259-128">The following table shows the properties that are required when you create the [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md).</span></span>
 
-|<span data-ttu-id="de1c0-129">属性</span><span class="sxs-lookup"><span data-stu-id="de1c0-129">Property</span></span>|<span data-ttu-id="de1c0-130">类型</span><span class="sxs-lookup"><span data-stu-id="de1c0-130">Type</span></span>|<span data-ttu-id="de1c0-131">说明</span><span class="sxs-lookup"><span data-stu-id="de1c0-131">Description</span></span>|
+|<span data-ttu-id="d6259-129">属性</span><span class="sxs-lookup"><span data-stu-id="d6259-129">Property</span></span>|<span data-ttu-id="d6259-130">类型</span><span class="sxs-lookup"><span data-stu-id="d6259-130">Type</span></span>|<span data-ttu-id="d6259-131">说明</span><span class="sxs-lookup"><span data-stu-id="d6259-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="de1c0-132">id</span><span class="sxs-lookup"><span data-stu-id="de1c0-132">id</span></span>|<span data-ttu-id="de1c0-133">String</span><span class="sxs-lookup"><span data-stu-id="de1c0-133">String</span></span>|<span data-ttu-id="de1c0-134">报告 Id。</span><span class="sxs-lookup"><span data-stu-id="de1c0-134">Report Id.</span></span>|
-|<span data-ttu-id="de1c0-135">deviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="de1c0-135">deviceDisplayName</span></span>|<span data-ttu-id="de1c0-136">String</span><span class="sxs-lookup"><span data-stu-id="de1c0-136">String</span></span>|<span data-ttu-id="de1c0-137">Intune 设备名称。</span><span class="sxs-lookup"><span data-stu-id="de1c0-137">Intune device name.</span></span>|
-|<span data-ttu-id="de1c0-138">userName</span><span class="sxs-lookup"><span data-stu-id="de1c0-138">userName</span></span>|<span data-ttu-id="de1c0-139">String</span><span class="sxs-lookup"><span data-stu-id="de1c0-139">String</span></span>|<span data-ttu-id="de1c0-140">\[弃用\]请改用 InitiatedByUserPrincipalName。</span><span class="sxs-lookup"><span data-stu-id="de1c0-140">\[deprecated\] Please use InitiatedByUserPrincipalName instead.</span></span>|
-|<span data-ttu-id="de1c0-141">initiatedByUserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="de1c0-141">initiatedByUserPrincipalName</span></span>|<span data-ttu-id="de1c0-142">String</span><span class="sxs-lookup"><span data-stu-id="de1c0-142">String</span></span>|<span data-ttu-id="de1c0-143">启动设备操作的用户的格式为 UPN。</span><span class="sxs-lookup"><span data-stu-id="de1c0-143">User who initiated the device action, format is UPN.</span></span>|
-|<span data-ttu-id="de1c0-144">action</span><span class="sxs-lookup"><span data-stu-id="de1c0-144">action</span></span>|[<span data-ttu-id="de1c0-145">remoteAction</span><span class="sxs-lookup"><span data-stu-id="de1c0-145">remoteAction</span></span>](../resources/intune-devices-remoteaction.md)|<span data-ttu-id="de1c0-146">操作名称。</span><span class="sxs-lookup"><span data-stu-id="de1c0-146">The action name.</span></span> <span data-ttu-id="de1c0-147">可能的值为`unknown`: `factoryReset`、 `removeCompanyData`、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan`、、、、、、、、、、、、、、、、 `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`.</span><span class="sxs-lookup"><span data-stu-id="de1c0-147">Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`.</span></span>|
-|<span data-ttu-id="de1c0-148">requestDateTime</span><span class="sxs-lookup"><span data-stu-id="de1c0-148">requestDateTime</span></span>|<span data-ttu-id="de1c0-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="de1c0-149">DateTimeOffset</span></span>|<span data-ttu-id="de1c0-150">发出操作的时间, 以 UTC 表示。</span><span class="sxs-lookup"><span data-stu-id="de1c0-150">Time when the action was issued, given in UTC.</span></span>|
-|<span data-ttu-id="de1c0-151">deviceOwnerUserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="de1c0-151">deviceOwnerUserPrincipalName</span></span>|<span data-ttu-id="de1c0-152">String</span><span class="sxs-lookup"><span data-stu-id="de1c0-152">String</span></span>|<span data-ttu-id="de1c0-153">设备所有者的 Upn。</span><span class="sxs-lookup"><span data-stu-id="de1c0-153">Upn of the device owner.</span></span>|
-|<span data-ttu-id="de1c0-154">deviceIMEI</span><span class="sxs-lookup"><span data-stu-id="de1c0-154">deviceIMEI</span></span>|<span data-ttu-id="de1c0-155">String</span><span class="sxs-lookup"><span data-stu-id="de1c0-155">String</span></span>|<span data-ttu-id="de1c0-156">设备的 IMEI。</span><span class="sxs-lookup"><span data-stu-id="de1c0-156">IMEI of the device.</span></span>|
-|<span data-ttu-id="de1c0-157">actionState</span><span class="sxs-lookup"><span data-stu-id="de1c0-157">actionState</span></span>|[<span data-ttu-id="de1c0-158">actionState</span><span class="sxs-lookup"><span data-stu-id="de1c0-158">actionState</span></span>](../resources/intune-shared-actionstate.md)|<span data-ttu-id="de1c0-159">动作状态。</span><span class="sxs-lookup"><span data-stu-id="de1c0-159">Action state.</span></span> <span data-ttu-id="de1c0-160">可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。</span><span class="sxs-lookup"><span data-stu-id="de1c0-160">Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.</span></span>|
+|<span data-ttu-id="d6259-132">id</span><span class="sxs-lookup"><span data-stu-id="d6259-132">id</span></span>|<span data-ttu-id="d6259-133">String</span><span class="sxs-lookup"><span data-stu-id="d6259-133">String</span></span>|<span data-ttu-id="d6259-134">报告 Id。</span><span class="sxs-lookup"><span data-stu-id="d6259-134">Report Id.</span></span>|
+|<span data-ttu-id="d6259-135">deviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="d6259-135">deviceDisplayName</span></span>|<span data-ttu-id="d6259-136">String</span><span class="sxs-lookup"><span data-stu-id="d6259-136">String</span></span>|<span data-ttu-id="d6259-137">Intune 设备名称。</span><span class="sxs-lookup"><span data-stu-id="d6259-137">Intune device name.</span></span>|
+|<span data-ttu-id="d6259-138">userName</span><span class="sxs-lookup"><span data-stu-id="d6259-138">userName</span></span>|<span data-ttu-id="d6259-139">String</span><span class="sxs-lookup"><span data-stu-id="d6259-139">String</span></span>|<span data-ttu-id="d6259-140">\[弃用\]请改用 InitiatedByUserPrincipalName。</span><span class="sxs-lookup"><span data-stu-id="d6259-140">\[deprecated\] Please use InitiatedByUserPrincipalName instead.</span></span>|
+|<span data-ttu-id="d6259-141">initiatedByUserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="d6259-141">initiatedByUserPrincipalName</span></span>|<span data-ttu-id="d6259-142">String</span><span class="sxs-lookup"><span data-stu-id="d6259-142">String</span></span>|<span data-ttu-id="d6259-143">启动设备操作的用户的格式为 UPN。</span><span class="sxs-lookup"><span data-stu-id="d6259-143">User who initiated the device action, format is UPN.</span></span>|
+|<span data-ttu-id="d6259-144">action</span><span class="sxs-lookup"><span data-stu-id="d6259-144">action</span></span>|[<span data-ttu-id="d6259-145">remoteAction</span><span class="sxs-lookup"><span data-stu-id="d6259-145">remoteAction</span></span>](../resources/intune-devices-remoteaction.md)|<span data-ttu-id="d6259-146">操作名称。</span><span class="sxs-lookup"><span data-stu-id="d6259-146">The action name.</span></span> <span data-ttu-id="d6259-147">可能的值为`unknown`: `factoryReset`、 `removeCompanyData`、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan`、、、、、、、、、、、、、、、、 `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`.</span><span class="sxs-lookup"><span data-stu-id="d6259-147">Possible values are: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown`.</span></span>|
+|<span data-ttu-id="d6259-148">requestDateTime</span><span class="sxs-lookup"><span data-stu-id="d6259-148">requestDateTime</span></span>|<span data-ttu-id="d6259-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d6259-149">DateTimeOffset</span></span>|<span data-ttu-id="d6259-150">发出操作的时间, 以 UTC 表示。</span><span class="sxs-lookup"><span data-stu-id="d6259-150">Time when the action was issued, given in UTC.</span></span>|
+|<span data-ttu-id="d6259-151">deviceOwnerUserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="d6259-151">deviceOwnerUserPrincipalName</span></span>|<span data-ttu-id="d6259-152">String</span><span class="sxs-lookup"><span data-stu-id="d6259-152">String</span></span>|<span data-ttu-id="d6259-153">设备所有者的 Upn。</span><span class="sxs-lookup"><span data-stu-id="d6259-153">Upn of the device owner.</span></span>|
+|<span data-ttu-id="d6259-154">deviceIMEI</span><span class="sxs-lookup"><span data-stu-id="d6259-154">deviceIMEI</span></span>|<span data-ttu-id="d6259-155">String</span><span class="sxs-lookup"><span data-stu-id="d6259-155">String</span></span>|<span data-ttu-id="d6259-156">设备的 IMEI。</span><span class="sxs-lookup"><span data-stu-id="d6259-156">IMEI of the device.</span></span>|
+|<span data-ttu-id="d6259-157">actionState</span><span class="sxs-lookup"><span data-stu-id="d6259-157">actionState</span></span>|[<span data-ttu-id="d6259-158">actionState</span><span class="sxs-lookup"><span data-stu-id="d6259-158">actionState</span></span>](../resources/intune-shared-actionstate.md)|<span data-ttu-id="d6259-159">动作状态。</span><span class="sxs-lookup"><span data-stu-id="d6259-159">Action state.</span></span> <span data-ttu-id="d6259-160">可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。</span><span class="sxs-lookup"><span data-stu-id="d6259-160">Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="de1c0-161">响应</span><span class="sxs-lookup"><span data-stu-id="de1c0-161">Response</span></span>
-<span data-ttu-id="de1c0-162">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象。</span><span class="sxs-lookup"><span data-stu-id="de1c0-162">If successful, this method returns a `200 OK` response code and an updated [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d6259-161">响应</span><span class="sxs-lookup"><span data-stu-id="d6259-161">Response</span></span>
+<span data-ttu-id="d6259-162">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)对象。</span><span class="sxs-lookup"><span data-stu-id="d6259-162">If successful, this method returns a `200 OK` response code and an updated [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="de1c0-163">示例</span><span class="sxs-lookup"><span data-stu-id="de1c0-163">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d6259-163">示例</span><span class="sxs-lookup"><span data-stu-id="d6259-163">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="de1c0-164">请求</span><span class="sxs-lookup"><span data-stu-id="de1c0-164">Request</span></span>
-<span data-ttu-id="de1c0-165">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="de1c0-165">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d6259-164">请求</span><span class="sxs-lookup"><span data-stu-id="d6259-164">Request</span></span>
+<span data-ttu-id="d6259-165">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d6259-165">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits/{remoteActionAuditId}
 Content-type: application/json
@@ -87,8 +87,8 @@ Content-length: 455
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="de1c0-166">响应</span><span class="sxs-lookup"><span data-stu-id="de1c0-166">Response</span></span>
-<span data-ttu-id="de1c0-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="de1c0-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d6259-166">响应</span><span class="sxs-lookup"><span data-stu-id="d6259-166">Response</span></span>
+<span data-ttu-id="d6259-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="d6259-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -107,6 +107,7 @@ Content-Length: 504
   "actionState": "pending"
 }
 ```
+
 
 
 

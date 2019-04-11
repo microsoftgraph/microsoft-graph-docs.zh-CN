@@ -4,31 +4,31 @@ description: 列出 embeddedSIMDeviceState 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1dd9697d9b5481dbfd1cd826036ef712ed5227d8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 79f13f5ea9a176dc9aa9281e5bdc39b2770bf042
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979779"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801251"
 ---
-# <a name="list-embeddedsimdevicestates"></a><span data-ttu-id="1b007-103">列出 embeddedSIMDeviceStates</span><span class="sxs-lookup"><span data-stu-id="1b007-103">List embeddedSIMDeviceStates</span></span>
+# <a name="list-embeddedsimdevicestates"></a><span data-ttu-id="31cbf-103">列出 embeddedSIMDeviceStates</span><span class="sxs-lookup"><span data-stu-id="31cbf-103">List embeddedSIMDeviceStates</span></span>
 
-> <span data-ttu-id="1b007-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="1b007-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="31cbf-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="31cbf-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1b007-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="1b007-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="31cbf-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="31cbf-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1b007-106">列出[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="1b007-106">List properties and relationships of the [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) objects.</span></span>
+<span data-ttu-id="31cbf-106">列出[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="31cbf-106">List properties and relationships of the [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1b007-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="1b007-107">Prerequisites</span></span>
-<span data-ttu-id="1b007-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1b007-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="31cbf-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="31cbf-107">Prerequisites</span></span>
+<span data-ttu-id="31cbf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="31cbf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1b007-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="1b007-110">Permission type</span></span>|<span data-ttu-id="1b007-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="1b007-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="31cbf-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="31cbf-110">Permission type</span></span>|<span data-ttu-id="31cbf-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="31cbf-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1b007-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1b007-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1b007-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="1b007-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="1b007-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1b007-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1b007-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="1b007-115">Not supported.</span></span>|
-|<span data-ttu-id="1b007-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="1b007-116">Application</span></span>|<span data-ttu-id="1b007-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="1b007-117">Not supported.</span></span>|
+|<span data-ttu-id="31cbf-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="31cbf-112">Delegated (work or school account)</span></span>|<span data-ttu-id="31cbf-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="31cbf-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="31cbf-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="31cbf-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="31cbf-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="31cbf-115">Not supported.</span></span>|
+|<span data-ttu-id="31cbf-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="31cbf-116">Application</span></span>|<span data-ttu-id="31cbf-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="31cbf-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1b007-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1b007-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="31cbf-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="31cbf-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,28 +37,28 @@ ms.locfileid: "30979779"
 GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/deviceStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1b007-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="1b007-119">Request headers</span></span>
-|<span data-ttu-id="1b007-120">标头</span><span class="sxs-lookup"><span data-stu-id="1b007-120">Header</span></span>|<span data-ttu-id="1b007-121">值</span><span class="sxs-lookup"><span data-stu-id="1b007-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="31cbf-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="31cbf-119">Request headers</span></span>
+|<span data-ttu-id="31cbf-120">标头</span><span class="sxs-lookup"><span data-stu-id="31cbf-120">Header</span></span>|<span data-ttu-id="31cbf-121">值</span><span class="sxs-lookup"><span data-stu-id="31cbf-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1b007-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="1b007-122">Authorization</span></span>|<span data-ttu-id="1b007-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="1b007-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1b007-124">接受</span><span class="sxs-lookup"><span data-stu-id="1b007-124">Accept</span></span>|<span data-ttu-id="1b007-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1b007-125">application/json</span></span>|
+|<span data-ttu-id="31cbf-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="31cbf-122">Authorization</span></span>|<span data-ttu-id="31cbf-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="31cbf-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="31cbf-124">接受</span><span class="sxs-lookup"><span data-stu-id="31cbf-124">Accept</span></span>|<span data-ttu-id="31cbf-125">application/json</span><span class="sxs-lookup"><span data-stu-id="31cbf-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1b007-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="1b007-126">Request body</span></span>
-<span data-ttu-id="1b007-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1b007-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="31cbf-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="31cbf-126">Request body</span></span>
+<span data-ttu-id="31cbf-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="31cbf-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1b007-128">响应</span><span class="sxs-lookup"><span data-stu-id="1b007-128">Response</span></span>
-<span data-ttu-id="1b007-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="1b007-129">If successful, this method returns a `200 OK` response code and a collection of [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="31cbf-128">响应</span><span class="sxs-lookup"><span data-stu-id="31cbf-128">Response</span></span>
+<span data-ttu-id="31cbf-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="31cbf-129">If successful, this method returns a `200 OK` response code and a collection of [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1b007-130">示例</span><span class="sxs-lookup"><span data-stu-id="1b007-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="31cbf-130">示例</span><span class="sxs-lookup"><span data-stu-id="31cbf-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1b007-131">请求</span><span class="sxs-lookup"><span data-stu-id="1b007-131">Request</span></span>
-<span data-ttu-id="1b007-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1b007-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="31cbf-131">请求</span><span class="sxs-lookup"><span data-stu-id="31cbf-131">Request</span></span>
+<span data-ttu-id="31cbf-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="31cbf-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/deviceStates
 ```
 
-### <a name="response"></a><span data-ttu-id="1b007-133">响应</span><span class="sxs-lookup"><span data-stu-id="1b007-133">Response</span></span>
-<span data-ttu-id="1b007-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="1b007-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="31cbf-133">响应</span><span class="sxs-lookup"><span data-stu-id="31cbf-133">Response</span></span>
+<span data-ttu-id="31cbf-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="31cbf-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -81,6 +81,7 @@ Content-Length: 602
   ]
 }
 ```
+
 
 
 

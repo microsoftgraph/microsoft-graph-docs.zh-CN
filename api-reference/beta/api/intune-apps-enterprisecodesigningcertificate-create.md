@@ -4,31 +4,31 @@ description: 创建新的 enterpriseCodeSigningCertificate 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce8700728284af5d2092d6fa6b3057368106eb6e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6cd85a33da06395314fc30836ba6f28de00c98ba
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975236"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802077"
 ---
-# <a name="create-enterprisecodesigningcertificate"></a><span data-ttu-id="93638-103">创建 enterpriseCodeSigningCertificate</span><span class="sxs-lookup"><span data-stu-id="93638-103">Create enterpriseCodeSigningCertificate</span></span>
+# <a name="create-enterprisecodesigningcertificate"></a><span data-ttu-id="595cd-103">创建 enterpriseCodeSigningCertificate</span><span class="sxs-lookup"><span data-stu-id="595cd-103">Create enterpriseCodeSigningCertificate</span></span>
 
-> <span data-ttu-id="93638-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="93638-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="595cd-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="595cd-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="93638-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="93638-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="595cd-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="595cd-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="93638-106">创建新的[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="93638-106">Create a new [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) object.</span></span>
+<span data-ttu-id="595cd-106">创建新的[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="595cd-106">Create a new [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="93638-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="93638-107">Prerequisites</span></span>
-<span data-ttu-id="93638-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="93638-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="595cd-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="595cd-107">Prerequisites</span></span>
+<span data-ttu-id="595cd-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="595cd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="93638-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="93638-110">Permission type</span></span>|<span data-ttu-id="93638-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="93638-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="595cd-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="595cd-110">Permission type</span></span>|<span data-ttu-id="595cd-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="595cd-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="93638-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="93638-112">Delegated (work or school account)</span></span>|<span data-ttu-id="93638-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="93638-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="93638-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="93638-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="93638-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="93638-115">Not supported.</span></span>|
-|<span data-ttu-id="93638-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="93638-116">Application</span></span>|<span data-ttu-id="93638-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="93638-117">Not supported.</span></span>|
+|<span data-ttu-id="595cd-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="595cd-112">Delegated (work or school account)</span></span>|<span data-ttu-id="595cd-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="595cd-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="595cd-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="595cd-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="595cd-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="595cd-115">Not supported.</span></span>|
+|<span data-ttu-id="595cd-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="595cd-116">Application</span></span>|<span data-ttu-id="595cd-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="595cd-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="93638-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="93638-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="595cd-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="595cd-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,38 +37,38 @@ ms.locfileid: "30975236"
 POST /deviceAppManagement/enterpriseCodeSigningCertificates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="93638-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="93638-119">Request headers</span></span>
-|<span data-ttu-id="93638-120">标头</span><span class="sxs-lookup"><span data-stu-id="93638-120">Header</span></span>|<span data-ttu-id="93638-121">值</span><span class="sxs-lookup"><span data-stu-id="93638-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="595cd-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="595cd-119">Request headers</span></span>
+|<span data-ttu-id="595cd-120">标头</span><span class="sxs-lookup"><span data-stu-id="595cd-120">Header</span></span>|<span data-ttu-id="595cd-121">值</span><span class="sxs-lookup"><span data-stu-id="595cd-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="93638-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="93638-122">Authorization</span></span>|<span data-ttu-id="93638-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="93638-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="93638-124">接受</span><span class="sxs-lookup"><span data-stu-id="93638-124">Accept</span></span>|<span data-ttu-id="93638-125">application/json</span><span class="sxs-lookup"><span data-stu-id="93638-125">application/json</span></span>|
+|<span data-ttu-id="595cd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="595cd-122">Authorization</span></span>|<span data-ttu-id="595cd-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="595cd-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="595cd-124">接受</span><span class="sxs-lookup"><span data-stu-id="595cd-124">Accept</span></span>|<span data-ttu-id="595cd-125">application/json</span><span class="sxs-lookup"><span data-stu-id="595cd-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="93638-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="93638-126">Request body</span></span>
-<span data-ttu-id="93638-127">在请求正文中, 提供 enterpriseCodeSigningCertificate 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="93638-127">In the request body, supply a JSON representation for the enterpriseCodeSigningCertificate object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="595cd-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="595cd-126">Request body</span></span>
+<span data-ttu-id="595cd-127">在请求正文中, 提供 enterpriseCodeSigningCertificate 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="595cd-127">In the request body, supply a JSON representation for the enterpriseCodeSigningCertificate object.</span></span>
 
-<span data-ttu-id="93638-128">下表显示创建 enterpriseCodeSigningCertificate 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="93638-128">The following table shows the properties that are required when you create the enterpriseCodeSigningCertificate.</span></span>
+<span data-ttu-id="595cd-128">下表显示创建 enterpriseCodeSigningCertificate 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="595cd-128">The following table shows the properties that are required when you create the enterpriseCodeSigningCertificate.</span></span>
 
-|<span data-ttu-id="93638-129">属性</span><span class="sxs-lookup"><span data-stu-id="93638-129">Property</span></span>|<span data-ttu-id="93638-130">类型</span><span class="sxs-lookup"><span data-stu-id="93638-130">Type</span></span>|<span data-ttu-id="93638-131">说明</span><span class="sxs-lookup"><span data-stu-id="93638-131">Description</span></span>|
+|<span data-ttu-id="595cd-129">属性</span><span class="sxs-lookup"><span data-stu-id="595cd-129">Property</span></span>|<span data-ttu-id="595cd-130">类型</span><span class="sxs-lookup"><span data-stu-id="595cd-130">Type</span></span>|<span data-ttu-id="595cd-131">说明</span><span class="sxs-lookup"><span data-stu-id="595cd-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="93638-132">id</span><span class="sxs-lookup"><span data-stu-id="93638-132">id</span></span>|<span data-ttu-id="93638-133">String</span><span class="sxs-lookup"><span data-stu-id="93638-133">String</span></span>|<span data-ttu-id="93638-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="93638-134">The key of the entity.</span></span>|
-|<span data-ttu-id="93638-135">content</span><span class="sxs-lookup"><span data-stu-id="93638-135">content</span></span>|<span data-ttu-id="93638-136">Binary</span><span class="sxs-lookup"><span data-stu-id="93638-136">Binary</span></span>|<span data-ttu-id="93638-137">原始数据格式的 Windows 企业代码签名证书。</span><span class="sxs-lookup"><span data-stu-id="93638-137">The Windows Enterprise Code-Signing Certificate in the raw data format.</span></span>|
-|<span data-ttu-id="93638-138">status</span><span class="sxs-lookup"><span data-stu-id="93638-138">status</span></span>|[<span data-ttu-id="93638-139">certificateStatus</span><span class="sxs-lookup"><span data-stu-id="93638-139">certificateStatus</span></span>](../resources/intune-apps-certificatestatus.md)|<span data-ttu-id="93638-140">证书状态已设置或未设置。</span><span class="sxs-lookup"><span data-stu-id="93638-140">The Certificate Status Provisioned or not Provisioned.</span></span> <span data-ttu-id="93638-141">可取值为：`notProvisioned`、`provisioned`。</span><span class="sxs-lookup"><span data-stu-id="93638-141">Possible values are: `notProvisioned`, `provisioned`.</span></span>|
-|<span data-ttu-id="93638-142">SubjectName</span><span class="sxs-lookup"><span data-stu-id="93638-142">subjectName</span></span>|<span data-ttu-id="93638-143">String</span><span class="sxs-lookup"><span data-stu-id="93638-143">String</span></span>|<span data-ttu-id="93638-144">证书的主题名称。</span><span class="sxs-lookup"><span data-stu-id="93638-144">The Subject Name for the cert.</span></span>|
-|<span data-ttu-id="93638-145">subject</span><span class="sxs-lookup"><span data-stu-id="93638-145">subject</span></span>|<span data-ttu-id="93638-146">String</span><span class="sxs-lookup"><span data-stu-id="93638-146">String</span></span>|<span data-ttu-id="93638-147">证书的主题值。</span><span class="sxs-lookup"><span data-stu-id="93638-147">The Subject Value for the cert.</span></span>|
-|<span data-ttu-id="93638-148">issuerName</span><span class="sxs-lookup"><span data-stu-id="93638-148">issuerName</span></span>|<span data-ttu-id="93638-149">String</span><span class="sxs-lookup"><span data-stu-id="93638-149">String</span></span>|<span data-ttu-id="93638-150">证书的颁发者名称。</span><span class="sxs-lookup"><span data-stu-id="93638-150">The Issuer Name for the cert.</span></span>|
-|<span data-ttu-id="93638-151">常用</span><span class="sxs-lookup"><span data-stu-id="93638-151">issuer</span></span>|<span data-ttu-id="93638-152">String</span><span class="sxs-lookup"><span data-stu-id="93638-152">String</span></span>|<span data-ttu-id="93638-153">证书的 Issuer 值。</span><span class="sxs-lookup"><span data-stu-id="93638-153">The Issuer value for the cert.</span></span>|
-|<span data-ttu-id="93638-154">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="93638-154">expirationDateTime</span></span>|<span data-ttu-id="93638-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="93638-155">DateTimeOffset</span></span>|<span data-ttu-id="93638-156">证书到期日期。</span><span class="sxs-lookup"><span data-stu-id="93638-156">The Cert Expiration Date.</span></span>|
-|<span data-ttu-id="93638-157">uploadDateTime</span><span class="sxs-lookup"><span data-stu-id="93638-157">uploadDateTime</span></span>|<span data-ttu-id="93638-158">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="93638-158">DateTimeOffset</span></span>|<span data-ttu-id="93638-159">上传 CodeSigning 证书时的日期时间。</span><span class="sxs-lookup"><span data-stu-id="93638-159">The date time of CodeSigning Cert when it is uploaded.</span></span>|
+|<span data-ttu-id="595cd-132">id</span><span class="sxs-lookup"><span data-stu-id="595cd-132">id</span></span>|<span data-ttu-id="595cd-133">String</span><span class="sxs-lookup"><span data-stu-id="595cd-133">String</span></span>|<span data-ttu-id="595cd-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="595cd-134">The key of the entity.</span></span>|
+|<span data-ttu-id="595cd-135">content</span><span class="sxs-lookup"><span data-stu-id="595cd-135">content</span></span>|<span data-ttu-id="595cd-136">Binary</span><span class="sxs-lookup"><span data-stu-id="595cd-136">Binary</span></span>|<span data-ttu-id="595cd-137">原始数据格式的 Windows 企业代码签名证书。</span><span class="sxs-lookup"><span data-stu-id="595cd-137">The Windows Enterprise Code-Signing Certificate in the raw data format.</span></span>|
+|<span data-ttu-id="595cd-138">status</span><span class="sxs-lookup"><span data-stu-id="595cd-138">status</span></span>|[<span data-ttu-id="595cd-139">certificateStatus</span><span class="sxs-lookup"><span data-stu-id="595cd-139">certificateStatus</span></span>](../resources/intune-apps-certificatestatus.md)|<span data-ttu-id="595cd-140">证书状态已设置或未设置。</span><span class="sxs-lookup"><span data-stu-id="595cd-140">The Certificate Status Provisioned or not Provisioned.</span></span> <span data-ttu-id="595cd-141">可取值为：`notProvisioned`、`provisioned`。</span><span class="sxs-lookup"><span data-stu-id="595cd-141">Possible values are: `notProvisioned`, `provisioned`.</span></span>|
+|<span data-ttu-id="595cd-142">SubjectName</span><span class="sxs-lookup"><span data-stu-id="595cd-142">subjectName</span></span>|<span data-ttu-id="595cd-143">String</span><span class="sxs-lookup"><span data-stu-id="595cd-143">String</span></span>|<span data-ttu-id="595cd-144">证书的主题名称。</span><span class="sxs-lookup"><span data-stu-id="595cd-144">The Subject Name for the cert.</span></span>|
+|<span data-ttu-id="595cd-145">subject</span><span class="sxs-lookup"><span data-stu-id="595cd-145">subject</span></span>|<span data-ttu-id="595cd-146">String</span><span class="sxs-lookup"><span data-stu-id="595cd-146">String</span></span>|<span data-ttu-id="595cd-147">证书的主题值。</span><span class="sxs-lookup"><span data-stu-id="595cd-147">The Subject Value for the cert.</span></span>|
+|<span data-ttu-id="595cd-148">issuerName</span><span class="sxs-lookup"><span data-stu-id="595cd-148">issuerName</span></span>|<span data-ttu-id="595cd-149">String</span><span class="sxs-lookup"><span data-stu-id="595cd-149">String</span></span>|<span data-ttu-id="595cd-150">证书的颁发者名称。</span><span class="sxs-lookup"><span data-stu-id="595cd-150">The Issuer Name for the cert.</span></span>|
+|<span data-ttu-id="595cd-151">常用</span><span class="sxs-lookup"><span data-stu-id="595cd-151">issuer</span></span>|<span data-ttu-id="595cd-152">String</span><span class="sxs-lookup"><span data-stu-id="595cd-152">String</span></span>|<span data-ttu-id="595cd-153">证书的 Issuer 值。</span><span class="sxs-lookup"><span data-stu-id="595cd-153">The Issuer value for the cert.</span></span>|
+|<span data-ttu-id="595cd-154">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="595cd-154">expirationDateTime</span></span>|<span data-ttu-id="595cd-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="595cd-155">DateTimeOffset</span></span>|<span data-ttu-id="595cd-156">证书到期日期。</span><span class="sxs-lookup"><span data-stu-id="595cd-156">The Cert Expiration Date.</span></span>|
+|<span data-ttu-id="595cd-157">uploadDateTime</span><span class="sxs-lookup"><span data-stu-id="595cd-157">uploadDateTime</span></span>|<span data-ttu-id="595cd-158">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="595cd-158">DateTimeOffset</span></span>|<span data-ttu-id="595cd-159">上传 CodeSigning 证书时的日期时间。</span><span class="sxs-lookup"><span data-stu-id="595cd-159">The date time of CodeSigning Cert when it is uploaded.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="93638-160">响应</span><span class="sxs-lookup"><span data-stu-id="93638-160">Response</span></span>
-<span data-ttu-id="93638-161">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="93638-161">If successful, this method returns a `201 Created` response code and a [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="595cd-160">响应</span><span class="sxs-lookup"><span data-stu-id="595cd-160">Response</span></span>
+<span data-ttu-id="595cd-161">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md)对象。</span><span class="sxs-lookup"><span data-stu-id="595cd-161">If successful, this method returns a `201 Created` response code and a [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="93638-162">示例</span><span class="sxs-lookup"><span data-stu-id="93638-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="595cd-162">示例</span><span class="sxs-lookup"><span data-stu-id="595cd-162">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="93638-163">请求</span><span class="sxs-lookup"><span data-stu-id="93638-163">Request</span></span>
-<span data-ttu-id="93638-164">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="93638-164">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="595cd-163">请求</span><span class="sxs-lookup"><span data-stu-id="595cd-163">Request</span></span>
+<span data-ttu-id="595cd-164">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="595cd-164">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates
 Content-type: application/json
@@ -87,8 +87,8 @@ Content-length: 390
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="93638-165">响应</span><span class="sxs-lookup"><span data-stu-id="93638-165">Response</span></span>
-<span data-ttu-id="93638-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="93638-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="595cd-165">响应</span><span class="sxs-lookup"><span data-stu-id="595cd-165">Response</span></span>
+<span data-ttu-id="595cd-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="595cd-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -107,6 +107,7 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
+
 
 
 
