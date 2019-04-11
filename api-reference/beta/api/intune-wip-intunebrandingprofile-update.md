@@ -4,12 +4,12 @@ description: 更新 intuneBrandingProfile 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8a805e8878dbd41493c550647ed9e038c320b13
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3f957966ed18003b65b164aff53b4a3d74468051
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976657"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776974"
 ---
 # <a name="update-intunebrandingprofile"></a>更新 intuneBrandingProfile
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |id|String|配置文件键|
 |profileName|String|配置文件的名称|
 |profileDescription|String|配置文件的说明|
-|isDefaultProfile|Boolean|显示配置文件是否用于默认设置。|
+|isDefaultProfile|布尔值|显示配置文件是否用于默认设置。|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 时。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间。|
 |displayName|字符串|向最终用户显示的公司/组织名称。|
@@ -65,7 +65,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |onlineSupportSiteUrl|String|指向公司/组织 IT 支持人员网站的 URL。|
 |onlineSupportSiteName|String|显示公司/组织 IT 支持人员网站的名称。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 Web 门户中使用的主要主题颜色。|
-|showLogo|Boolean|表示是否显示管理员提供的徽标图像的布尔值。|
+|showLogo|布尔值|表示是否显示管理员提供的徽标图像的布尔值。|
 |showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在主题颜色背景上的公司门户应用程序中显示的徽标图像。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在 "浅色背景" 的公司门户应用程序中显示的徽标图像。|
@@ -172,6 +172,7 @@ Content-Length: 1377
   }
 }
 ```
+
 
 
 

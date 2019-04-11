@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementIntentDeviceState 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 594d1e4ffb425c2f2de8380c79a47359790d5f40
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: ff0032426fd28bec8ab0f022bffa2bb52d063408
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522935"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779235"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a>创建 deviceManagementIntentDeviceState
 
@@ -101,8 +101,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
-
 
 
 

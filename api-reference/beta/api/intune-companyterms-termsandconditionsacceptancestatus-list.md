@@ -4,12 +4,12 @@ description: 列出 termsAndConditionsAcceptanceStatus 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a402096b49848ff02691f6c5135e449eac4676cc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 491ba611ad85a1f9c1709b7778d97f34c71df458
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976125"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775392"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>列出 termsAndConditionsAcceptanceStatuses
 
@@ -76,6 +76,7 @@ Content-Length: 313
   ]
 }
 ```
+
 
 
 

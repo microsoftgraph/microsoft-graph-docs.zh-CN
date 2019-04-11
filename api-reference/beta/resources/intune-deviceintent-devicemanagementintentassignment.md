@@ -4,12 +4,12 @@ description: 意向分配实体
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a955187e079e1f77accb21361bfe49689f52108
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 521a853a7c0f37fb32df67d6c2933b7486d8206a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522424"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776610"
 ---
 # <a name="devicemanagementintentassignment-resource-type"></a>deviceManagementIntentAssignment 资源类型
 
@@ -54,8 +54,6 @@ ms.locfileid: "31522424"
   }
 }
 ```
-
-
 
 
 

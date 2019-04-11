@@ -4,12 +4,12 @@ description: LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e740f5a7e70d4244a1b0216b4d8c9719b2d82304
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03a1a7130be5d4437825f7687c3988f99a6b383c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161206"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778136"
 ---
 # <a name="localsecurityoptionsformatandejectofremovablemediaallowedusertype-enum-type"></a>localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType 枚举类型
 
@@ -26,6 +26,7 @@ LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 的可能值
 |管理员|1|管理员|
 |administratorsAndPowerUsers|双面|管理员和高级用户|
 |administratorsAndInteractiveUsers|第三章|管理员和交互用户 |
+
 
 
 

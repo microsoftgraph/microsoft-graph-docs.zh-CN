@@ -4,12 +4,12 @@ description: 更新 androidManagedStoreAppConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ead4bd4da95b6ef962cf2104344c4c81ca72516
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c4944f1053e9201d5bf1e6138c24977054a80ec5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985128"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775259"
 ---
 # <a name="update-androidmanagedstoreappconfiguration"></a>更新 androidManagedStoreAppConfiguration
 
@@ -61,7 +61,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 |packageId|String|Android 企业应用程序配置包 id。|
 |payloadJson|String|Android 企业应用配置 JSON 有效负载。|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)集合|Android 应用程序权限和相应权限操作的列表。|
-|appSupportsOemConfig|Boolean|此 AppConfig 是否为 OEMConfig 策略。|
+|appSupportsOemConfig|布尔值|此 AppConfig 是否为 OEMConfig 策略。|
 
 
 
@@ -134,6 +134,7 @@ Content-Length: 764
   "appSupportsOemConfig": true
 }
 ```
+
 
 
 

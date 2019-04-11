@@ -4,12 +4,12 @@ description: 管理代理类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb948626035bed2dac7ee18d103aa083bd0f2aeb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cf8a40b8d6951c13da49766430fdd7fb303cbba0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172539"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775301"
 ---
 # <a name="managementagenttype-enum-type"></a>managementAgentType 枚举类型
 
@@ -34,6 +34,7 @@ ms.locfileid: "30172539"
 |jamf|32|设备属性是从 Jamf 中提取的。|
 |googleCloudDevicePolicyController|64|设备由 Google 的 CloudDPC 管理。|
 |microsoft365ManagedMdm|258|此设备由 Microsoft 365 到 Intune 管理。|
+
 
 
 

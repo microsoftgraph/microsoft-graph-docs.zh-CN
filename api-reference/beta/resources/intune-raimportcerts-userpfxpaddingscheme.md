@@ -4,12 +4,12 @@ description: 加密提供程序使用的填充方案的受支持的值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b90edec7aa6d6051fbe2e4e9cb53c38752750239
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8e1028f5e3bcac6b3ece66efb1ca50e7b65ea2bf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175379"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776274"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>userPfxPaddingScheme 枚举类型
 
@@ -28,7 +28,6 @@ ms.locfileid: "30175379"
 |oaepSha256|第三章|尚未记录|
 |oaepSha384|4|尚未记录|
 |oaepSha512|5|尚未记录|
-
 
 
 

@@ -4,12 +4,12 @@ description: 读取 groupPolicyPresentationComboBox 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73b051028d8c97c13f35e3fe33b27a119516b754
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7e1c7010a75ea31c9fb238845a1c562786638831
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975159"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779452"
 ---
 # <a name="get-grouppolicypresentationcombobox"></a>获取 groupPolicyPresentationComboBox
 
@@ -83,6 +83,7 @@ Content-Length: 385
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 以百分比形式指定的带宽限制。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7fb30ca54911723c619c8199ca32a9542772a6da
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 29b76946def2d87725e6764235718f97743be177
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177859"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777856"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>deliveryOptimizationBandwidthPercentage 资源类型
 
@@ -47,6 +47,7 @@ ms.locfileid: "30177859"
   "maximumForegroundBandwidthPercentage": 1024
 }
 ```
+
 
 
 

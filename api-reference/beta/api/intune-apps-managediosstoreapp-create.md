@@ -4,12 +4,12 @@ description: 创建新的 managedIOSStoreApp 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bbc7769b864c922a827031ed14b07c0c6e99754e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 752539cb8a568435d43be0914d80761a9169cf54
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962916"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775490"
 ---
 # <a name="create-managediosstoreapp"></a>创建 managedIOSStoreApp
 
@@ -67,6 +67,7 @@ POST /deviceAppManagement/mobileApps
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|应用程序的可用性。 继承自[managedApp](../resources/intune-apps-managedapp.md)。 可取值为：`global`、`lineOfBusiness`。|
 |version|String|应用程序的版本。 继承自 [managedApp](../resources/intune-apps-managedapp.md)|
 |bundleId|String|应用的捆绑 ID。|
@@ -86,7 +87,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1191
+Content-length: 1218
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -110,6 +111,7 @@ Content-length: 1191
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "bundleId": "Bundle Id value",
@@ -135,7 +137,7 @@ Content-length: 1191
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1363
+Content-Length: 1390
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -162,6 +164,7 @@ Content-Length: 1363
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "bundleId": "Bundle Id value",
@@ -181,6 +184,7 @@ Content-Length: 1363
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 列出 windowsAutopilotDeviceIdentity 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c9a1b38f90b23335b0f87acb0185969d4e64cc2
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8daa708453fff7ec30c8281dc97dc5c146eed671
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30956630"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777982"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>列出 windowsAutopilotDeviceIdentities
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIden
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1163
+Content-Length: 1201
 
 {
   "value": [
@@ -74,6 +74,7 @@ Content-Length: 1163
       "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
       "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
       "orderIdentifier": "Order Identifier value",
+      "groupTag": "Group Tag value",
       "purchaseOrderIdentifier": "Purchase Order Identifier value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
@@ -92,6 +93,7 @@ Content-Length: 1163
   ]
 }
 ```
+
 
 
 

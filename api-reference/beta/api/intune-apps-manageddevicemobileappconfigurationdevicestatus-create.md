@@ -4,12 +4,12 @@ description: 创建新的 managedDeviceMobileAppConfigurationDeviceStatus 对象
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 370106dd87139ab678fdfac019cc17f6c826103b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: dc1ef988467bb2d592ca6f0b8e00874b860bc351
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973619"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778500"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>创建 managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -108,6 +108,7 @@ Content-Length: 512
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

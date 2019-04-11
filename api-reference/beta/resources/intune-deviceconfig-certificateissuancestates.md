@@ -4,12 +4,12 @@ description: 证书颁发状态选项。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c4414a7e3b1f2ed2806b9f7f695426e0bc73b7b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 53cc553464cbb037c67465be043a746c53bcf3d6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157090"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775504"
 ---
 # <a name="certificateissuancestates-enum-type"></a>certificateIssuanceStates 枚举类型
 
@@ -45,6 +45,7 @@ ms.locfileid: "30157090"
 |deleted|20|尚未记录|
 |renewalRequested|不足|尚未记录|
 |请求|22|尚未记录|
+
 
 
 

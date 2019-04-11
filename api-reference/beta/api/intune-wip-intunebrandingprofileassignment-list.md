@@ -4,12 +4,12 @@ description: 列出 intuneBrandingProfileAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d81bed6c633336acb1f782e48dcbcaf7f91aab1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 10b728c7a371a7fcf5dadd28b5884048d3758a95
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964652"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775777"
 ---
 # <a name="list-intunebrandingprofileassignments"></a>列出 intuneBrandingProfileAssignments
 
@@ -76,6 +76,7 @@ Content-Length: 273
   ]
 }
 ```
+
 
 
 

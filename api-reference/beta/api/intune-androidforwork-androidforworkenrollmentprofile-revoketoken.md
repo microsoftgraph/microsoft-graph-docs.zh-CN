@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 479b36f3b3ca28c9856f24f93f5e3997f8e9aead
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c8b4349b5f5dd83a21475a9221fd5009b7527413
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960991"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775819"
 ---
 # <a name="revoketoken-action"></a>revokeToken 操作
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmentP
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

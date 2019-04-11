@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementIntent 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c8532ddacd98cd5fcc163544deb663e64cd5390
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 2cfe8b1eee66c0aa950bf4c25fa499e0b74dd4b0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522739"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776190"
 ---
 # <a name="create-devicemanagementintent"></a>创建 deviceManagementIntent
 
@@ -97,8 +97,6 @@ Content-Length: 317
   "templateId": "Template Id value"
 }
 ```
-
-
 
 
 

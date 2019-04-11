@@ -4,12 +4,12 @@ description: 实体表示策略定义上长小数文本框演示文稿的无符�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fd0c256b7118fcb0b378bbcd856bad949d52f1b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1c4386084fff68d6db9be9106bd4da361ed1b933
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158056"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775854"
 ---
 # <a name="grouppolicypresentationvaluelongdecimal-resource-type"></a>groupPolicyPresentationValueLongDecimal 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "30158056"
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|值|Int64|关联演示文稿的无符号长值。|
+|value|Int64|关联演示文稿的无符号长值。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -62,6 +62,7 @@ ms.locfileid: "30158056"
   "value": 1024
 }
 ```
+
 
 
 

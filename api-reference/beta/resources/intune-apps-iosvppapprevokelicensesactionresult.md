@@ -4,12 +4,12 @@ description: 定义适用于 iOS Vpp 应用程序的操作的结果, 包含 Acti
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 542382411fcc1070dc0c397efbf43431081d73f7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cc9ef2e11bc4502b580bce25ffb7e94f301b8d13
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153450"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778472"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>iosVppAppRevokeLicensesActionResult 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "30153450"
 |managedDeviceId|String|与操作相关联的 DeviceId。|
 |totalLicensesCount|Int32|尝试吊销的许可证数量的计数。|
 |failedLicensesCount|Int32|吊销失败的许可证数的计数。|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|吊销许可证操作失败的原因。 可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate`。|
+|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|吊销许可证操作失败的原因。 可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken` 或 `expiredApplePushNotificationCertificate`。|
 |actionName|String|操作名|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |startDateTime|DateTimeOffset|初始化操作的时间|
 |lastUpdatedDateTime|DateTimeOffset|操作状态上次更新的时间|
 
@@ -56,6 +56,7 @@ ms.locfileid: "30153450"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

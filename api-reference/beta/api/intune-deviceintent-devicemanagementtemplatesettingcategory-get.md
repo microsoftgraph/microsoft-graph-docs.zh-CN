@@ -4,12 +4,12 @@ description: 读取 deviceManagementTemplateSettingCategory 对象的属性和�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e371b9342e2193c530fabb2991fcd13b98adfa2
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f2189edd9d94fe165f752740a745473ff5310666
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522431"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776967"
 ---
 # <a name="get-devicemanagementtemplatesettingcategory"></a>获取 deviceManagementTemplateSettingCategory
 
@@ -75,8 +75,6 @@ Content-Length: 195
   }
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 适用于 Android 设备所有者的系统更新类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6f99ba32a5461913579a23e7fe8f29a3c0b6950
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 86f5e5d2c698652e7155c300fdd51e50442a1c44
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163656"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777002"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>androidDeviceOwnerSystemUpdateInstallType 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30163656"
 |推迟|1|将更新自动安装推迟30天。|
 |开|双面|在每日维护时段内自动安装。|
 |自动|第三章|尽快自动安装更新。|
+
 
 
 

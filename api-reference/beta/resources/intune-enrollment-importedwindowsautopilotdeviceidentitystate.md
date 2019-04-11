@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72ed544a7b4f9e4ddf003104b191ee064b884f76
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 42726817395296945fc593552ee50154fa34d332
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159008"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779767"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>importedWindowsAutopilotDeviceIdentityState 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "30159008"
 |属性|类型|说明|
 |:---|:---|:---|
 |deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)|设备目录服务 (DDS) 报告的设备状态。 可取值为：`unknown`、`pending`、`partial`、`complete`、`error`。|
-|deviceRegistrationId|字符串|设备目录服务 (DDS) 报告的成功添加设备的设备注册 ID。|
+|deviceRegistrationId|String|设备目录服务 (DDS) 报告的成功添加设备的设备注册 ID。|
 |deviceErrorCode|Int32|设备目录服务 (DDS) 报告的设备错误代码。|
 |deviceErrorName|字符串|设备目录服务 (DDS) 报告的设备错误名称。|
 
@@ -46,6 +46,7 @@ ms.locfileid: "30159008"
   "deviceErrorName": "String"
 }
 ```
+
 
 
 

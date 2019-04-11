@@ -4,12 +4,12 @@ description: 从共享 Apple 设备删除用户操作结果
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 368a7acc2fd90e79b3ed1361220dd70f722cd217
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 90dec4f79d44d4441d23bdba649ddeb3caa311a7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173239"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776813"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>deleteUserFromSharedAppleDeviceActionResult 资源类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "30173239"
 |属性|类型|说明|
 |:---|:---|:---|
 |actionName|String|操作名称 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|继承自[deviceActionResult](../resources/intune-devices-deviceactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
-|startDateTime|DateTimeOffset|启动操作的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|继承自[deviceActionResult](../resources/intune-devices-deviceactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|startDateTime|DateTimeOffset|操作启动的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|操作状态上次更新的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |userPrincipalName|String|要删除的用户的用户主体名称|
 
@@ -51,6 +51,7 @@ ms.locfileid: "30173239"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

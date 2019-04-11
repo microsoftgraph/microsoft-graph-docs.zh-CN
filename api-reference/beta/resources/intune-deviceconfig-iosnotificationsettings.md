@@ -4,12 +4,12 @@ description: 说明通知设置的项。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2876146e7e20ad94a7356f623a5b2e17443a18f8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d2fbc197f858b595bfe8572badddef9dadf6b3c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172700"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779641"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings 资源类型
 
@@ -26,10 +26,10 @@ ms.locfileid: "30172700"
 |appName|String|要与 bundleID 关联的应用程序名称。|
 |发布者|String|要与 bundleID 关联的发布者。|
 |enabled|Boolean|指示是否允许此应用使用通知。|
-|showInNotificationCenter|Boolean|指示是否可以在通知中心中显示通知。|
-|showOnLockScreen|Boolean|指示是否可以在锁定屏幕上显示通知。|
+|showInNotificationCenter|布尔值|指示是否可以在通知中心中显示通知。|
+|showOnLockScreen|布尔值|指示是否可以在锁定屏幕上显示通知。|
 |alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|指示此应用的通知的警报类型。 可取值为：`deviceDefault`、`banner`、`modal`、`none`。|
-|badgesEnabled|Boolean|指示是否允许此应用使用徽章。|
+|badgesEnabled|布尔值|指示是否允许此应用使用徽章。|
 |soundsEnabled|布尔值|指示是否允许此应用使用声音。|
 
 ## <a name="relationships"></a>关系
@@ -56,6 +56,7 @@ ms.locfileid: "30172700"
   "soundsEnabled": true
 }
 ```
+
 
 
 

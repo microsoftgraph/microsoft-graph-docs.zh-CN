@@ -4,12 +4,12 @@ description: 列出 deviceManagementSettingInstance 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc7359fd1961fbe53c8052685c9d19c6caace4d4
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 31378f7317a5d1f3e6d016705ae1809c2a445fa3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522823"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777198"
 ---
 # <a name="list-devicemanagementsettinginstances"></a>列出 deviceManagementSettingInstances
 
@@ -78,8 +78,6 @@ Content-Length: 249
   ]
 }
 ```
-
-
 
 
 

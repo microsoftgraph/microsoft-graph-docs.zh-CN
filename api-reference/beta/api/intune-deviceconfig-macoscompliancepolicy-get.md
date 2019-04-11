@@ -4,12 +4,12 @@ description: 读取 macOSCompliancePolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 48fe09ed55aef04c71bf776de8f4a23d5e77fef1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: eff5f16daedcd5381370e64c3b078938474a5580
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972520"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778430"
 ---
 # <a name="get-macoscompliancepolicy"></a>获取 macOSCompliancePolicy
 
@@ -102,6 +102,7 @@ Content-Length: 1334
   }
 }
 ```
+
 
 
 

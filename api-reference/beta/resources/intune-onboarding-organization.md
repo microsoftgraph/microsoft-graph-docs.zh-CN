@@ -4,12 +4,12 @@ description: 组织资源表示在租户级别操作和配置的全局设置和�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6de006bf465546fdb00769f5d3541a65a6b5580b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9806c1d263710ecaef2c04af89926e7568ad94da
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167506"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778101"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "30167506"
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出 organizations](../api/intune-onboarding-organization-list.md)|[organization](../resources/intune-onboarding-organization.md) 集合|列出 [organization](../resources/intune-onboarding-organization.md) 对象的属性和关系。|
-|[获取 organization](../api/intune-onboarding-organization-get.md)|[组织](../resources/intune-onboarding-organization.md)|读取 [organization](../resources/intune-onboarding-organization.md) 对象的属性和关系。|
-|[更新 organization](../api/intune-onboarding-organization-update.md)|[organization](../resources/intune-onboarding-organization.md)|更新 [organization](../resources/intune-onboarding-organization.md) 对象的属性。|
+|[获取组织](../api/intune-onboarding-organization-get.md)|[组织](../resources/intune-onboarding-organization.md)|读取 [organization](../resources/intune-onboarding-organization.md) 对象的属性和关系。|
+|[更新组织](../api/intune-onboarding-organization-update.md)|[组织](../resources/intune-onboarding-organization.md)|更新 [organization](../resources/intune-onboarding-organization.md) 对象的属性。|
 |[setMobileDeviceManagementAuthority 操作](../api/intune-onboarding-organization-setmobiledevicemanagementauthority.md)|Int32|设置移动设备管理机构|
 
 ## <a name="properties"></a>属性
@@ -61,6 +61,7 @@ ms.locfileid: "30167506"
   }
 }
 ```
+
 
 
 

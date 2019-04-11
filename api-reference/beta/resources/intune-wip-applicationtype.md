@@ -4,12 +4,12 @@ description: 可能的应用程序类型
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e8026ee1b0becb4e465dd7688699d652ea01f892
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6a5cbefcdb902564fd19b9445afceac058be3c20
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151280"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776596"
 ---
 # <a name="applicationtype-enum-type"></a>applicationType 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "30151280"
 |:---|:---|:---|
 |普遍|1|windows 通用应用程序|
 |desktop|双面|windows 桌面应用程序|
+
 
 
 

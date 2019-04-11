@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f737432597d4528d1a682cd15552230af0ae83e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 43bc64243cb330f0761c8ded3ab646a0cde4f926
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156502"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778003"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>sharedAppleDeviceUser 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "30156502"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|userPrincipalName|字符串|用户名|
-|dataToSync|布尔|要同步的数据|
+|userPrincipalName|String|用户名|
+|dataToSync|布尔值|要同步的数据|
 |dataQuota|Int64|数据配额|
 |dataUsed|Int64|数据配额|
 
@@ -46,6 +46,7 @@ ms.locfileid: "30156502"
   "dataUsed": 1024
 }
 ```
+
 
 
 

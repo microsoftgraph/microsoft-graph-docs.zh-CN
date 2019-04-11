@@ -4,12 +4,12 @@ description: 删除 windowsUpdateForBusinessConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6770c8898f0905051ff5b7b28554e9c95747d836
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9b2d66bede03e9936d84625e04b12b92a6ea04cd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962069"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775840"
 ---
 # <a name="delete-windowsupdateforbusinessconfiguration"></a>删除 windowsUpdateForBusinessConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

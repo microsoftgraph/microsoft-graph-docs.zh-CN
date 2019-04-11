@@ -4,12 +4,12 @@ description: 列出 appLogCollectionRequest 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0da9d487b250677cf4ef486c8fdeb39de317afba
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0def63422162a6ef372ed1e42506869131293c91
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964022"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775357"
 ---
 # <a name="list-applogcollectionrequests"></a>列出 appLogCollectionRequests
 
@@ -79,6 +79,7 @@ Content-Length: 371
   ]
 }
 ```
+
 
 
 

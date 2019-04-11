@@ -4,12 +4,12 @@ description: 列出 androidForWorkWiFiConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c347d8a5db60747086afea3a0f1a5442a539e839
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4b3221fca276c3cd691f3676209a28ad54063036
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979506"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776141"
 ---
 # <a name="list-androidforworkwificonfigurations"></a>列出 androidForWorkWiFiConfigurations
 
@@ -88,6 +88,7 @@ Content-Length: 711
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 iosLobApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0de46d89b0848dcf91c9031f8d35e1954fed2cd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 474f47954a8ab2af7abeac46ac5b35e716971769
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962083"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777884"
 ---
 # <a name="get-ioslobapp"></a>获取 iosLobApp
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1645
+Content-Length: 1674
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1645
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -119,6 +120,7 @@ Content-Length: 1645
   }
 }
 ```
+
 
 
 

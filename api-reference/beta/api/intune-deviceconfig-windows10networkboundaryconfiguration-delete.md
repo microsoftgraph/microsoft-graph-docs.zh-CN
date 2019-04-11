@@ -4,12 +4,12 @@ description: 删除 windows10NetworkBoundaryConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d75f4528ba7a6b39d3d52a8b926978ef7f63c1cf
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f07aed9b3dcbc5ac2acfaad7dc0c8cc8ff20a830
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964435"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776330"
 ---
 # <a name="delete-windows10networkboundaryconfiguration"></a>删除 windows10NetworkBoundaryConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

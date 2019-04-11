@@ -4,12 +4,12 @@ description: 用于标识展台配置的 AzureAD 组的类
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f05bf9d01e8442a54c9fa70b863e3789309bd9d4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a3224f55f4a5158fb8c0850a4dbea7e6bcf8d18d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175134"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778052"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>windowsKioskAzureADGroup 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "30175134"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|将锁定到此展台配置的 AzureAD 组的显示名称|
-|groupId|字符串|将锁定到此展台配置的 AzureAD 组的 ID|
+|displayName|String|将锁定到此展台配置的 AzureAD 组的显示名称|
+|groupId|String|将锁定到此展台配置的 AzureAD 组的 ID|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,6 +45,7 @@ ms.locfileid: "30175134"
   "groupId": "String"
 }
 ```
+
 
 
 

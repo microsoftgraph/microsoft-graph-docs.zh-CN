@@ -4,12 +4,12 @@ description: 列出 depEnrollmentProfile 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8922c94cfcd4e0870d1392059d07b89e9f7250cb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 382ec08d6a876fc16f1a32b554152f7c22219c69
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968308"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775147"
 ---
 # <a name="list-depenrollmentprofiles"></a>列出 depEnrollmentProfiles
 
@@ -109,6 +109,7 @@ Content-Length: 1588
   ]
 }
 ```
+
 
 
 

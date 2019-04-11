@@ -4,12 +4,12 @@ description: 指定 VPN 流量规则的路由策略。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a7c6121b9adc47d116a7b3321ca150a8d42449a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 360a7ea9ab46a9d482fd8e41c2d2a64041453e88
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157342"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777779"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>vpnTrafficRuleRoutingPolicyType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30157342"
 |无|0|未指定路由策略。|
 |splitTunnel|1|将通过 VPN 路由指定应用的网络流量。|
 |forceTunnel|双面|所有网络流量将通过 VPN 路由。|
+
 
 
 

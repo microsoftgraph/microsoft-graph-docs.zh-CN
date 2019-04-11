@@ -4,12 +4,12 @@ description: InkWorkspaceAccess 设置的值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1920884b884c36b09b7bd4f196198229cabf374a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c9ca8c2a0367bc057f540d7b64c490e200374024
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143867"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775462"
 ---
 # <a name="inkaccesssetting-enum-type"></a>inkAccessSetting 枚举类型
 
@@ -25,6 +25,7 @@ InkWorkspaceAccess 设置的值。
 |notConfigured|0|未配置。|
 |enabled|1|了.|
 |禁用|双面|禁用.|
+
 
 
 

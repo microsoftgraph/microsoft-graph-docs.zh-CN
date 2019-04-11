@@ -4,12 +4,12 @@ description: 表示 iOS 主屏幕上的项
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 832b38b7b27c810c78db07bedcd8083d8b203070
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7b4685c62177dcb7d8cdf0f827d5af085d571d9b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139947"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779732"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>iosHomeScreenItem 资源类型
 
@@ -40,6 +40,7 @@ ms.locfileid: "30139947"
   "displayName": "String"
 }
 ```
+
 
 
 

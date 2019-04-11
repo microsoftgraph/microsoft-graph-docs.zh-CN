@@ -4,12 +4,12 @@ description: 每个用户的每个设备违反受限制的应用配置文件
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8764d3d84ba0706f3769ef019def43cb080660d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 067b801d917435c1ff9d3722d078609f2c626baf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139912"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778080"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>restrictedAppsViolation 资源类型
 
@@ -31,13 +31,13 @@ ms.locfileid: "30139912"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
-|userId|字符串|用户唯一标识符, 必须为 Guid|
-|userName|字符串|用户名|
-|managedDeviceId|字符串|托管设备唯一标识符, 必须为 Guid|
+|id|String|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
+|userId|String|用户唯一标识符, 必须为 Guid|
+|userName|String|用户名|
+|managedDeviceId|String|托管设备唯一标识符, 必须为 Guid|
 |deviceName|String|设备名称|
-|deviceConfigurationId|字符串|设备配置文件唯一标识符, 必须为 Guid|
-|deviceConfigurationName|字符串|设备配置文件名称|
+|deviceConfigurationId|String|设备配置文件唯一标识符, 必须为 Guid|
+|deviceConfigurationName|String|设备配置文件名称|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用程序状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)集合|违反受限制的应用程序的列表|
@@ -73,6 +73,7 @@ ms.locfileid: "30139912"
   ]
 }
 ```
+
 
 
 

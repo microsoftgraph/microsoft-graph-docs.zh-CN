@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementTemplateSettingCategory 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c413a05d2e055d1b0d247355725c15b5acc11ffc
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 35bdbf02baad1c41ea88fb71df802b1056931553
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522634"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779207"
 ---
 # <a name="create-devicemanagementtemplatesettingcategory"></a>创建 deviceManagementTemplateSettingCategory
 
@@ -86,8 +86,6 @@ Content-Length: 170
   "displayName": "Display Name value"
 }
 ```
-
-
 
 
 

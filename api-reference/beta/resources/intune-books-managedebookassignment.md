@@ -4,12 +4,12 @@ description: 包含用于为组分配电子书的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7954dbb1208a59842dd0a743e18e4f81466e09f6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 325e094698bb2ccbfaf4c41dd46f71c461c8681f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146877"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777870"
 ---
 # <a name="managedebookassignment-resource-type"></a>managedEBookAssignment 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "30146877"
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|电子图书的分配目标。|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|电子图书的安装意图。 可取值为：`available`、`required`、`uninstall`、`availableWithoutEnrollment`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -56,6 +56,7 @@ ms.locfileid: "30146877"
   "installIntent": "String"
 }
 ```
+
 
 
 

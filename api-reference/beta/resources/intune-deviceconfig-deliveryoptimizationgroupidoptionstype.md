@@ -4,12 +4,12 @@ description: DeliveryOptimizationGroupIdOptionsType 设置的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a210f8c38542181f6fe93c7f0410114e89379c6b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9823380e8c7e4ffef1c1aa913c9db0cf08ede888
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177943"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779613"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>deliveryOptimizationGroupIdOptionsType 枚举类型
 
@@ -27,6 +27,7 @@ DeliveryOptimizationGroupIdOptionsType 设置的可能值。
 |authenticatedDomainSid|双面|经过身份验证的域 SID。|
 |dhcpUserOption|第三章|DHCP 用户选项。|
 |dnsSuffix|4|DNS 后缀。|
+
 
 
 

@@ -4,12 +4,12 @@ description: Exchange 中的设备访问规则。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38b021bc2f0a4ffa19ca551c2621b08f21e8a35e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 832e11829300ccd1ac4e1d4e6b08acafb908f3b2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165777"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779823"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>deviceManagementExchangeAccessRule 资源类型
 
@@ -25,7 +25,7 @@ Exchange 中的设备访问规则。
 |deviceClass|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|将受此规则影响的设备类别。|
 |accessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|此规则授予的 Exchange 访问级别。 可取值为：`none`、`allow`、`block`、`quarantine`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -46,6 +46,7 @@ Exchange 中的设备访问规则。
   "accessLevel": "String"
 }
 ```
+
 
 
 

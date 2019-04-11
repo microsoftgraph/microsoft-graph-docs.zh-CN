@@ -4,12 +4,12 @@ description: 列出 windowsUpdateForBusinessConfiguration 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26e73ad5b242f4e52f8cbe0b96c169162c3af7bb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 69255efec1902e5455d02dcbefd3950caf1fca75
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979849"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775875"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>列出 windowsUpdateForBusinessConfigurations
 
@@ -118,6 +118,7 @@ Content-Length: 2292
   ]
 }
 ```
+
 
 
 

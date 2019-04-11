@@ -4,12 +4,12 @@ description: 更新 windowsInformationProtectionWipeAction 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d966be5680688f1bbcedbdd2cad1133937d89a05
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e59eeb987e678764adcd5f4378f6bfdc5b4907e0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970637"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777604"
 ---
 # <a name="update-windowsinformationprotectionwipeaction"></a>更新 windowsInformationProtectionWipeAction
 
@@ -101,6 +101,7 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

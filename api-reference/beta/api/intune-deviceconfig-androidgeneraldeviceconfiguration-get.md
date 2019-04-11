@@ -4,12 +4,12 @@ description: 读取 androidGeneralDeviceConfiguration 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ffd30d5a76e5637822388968a4f1e09b6285f7d8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8933bbb69da21be34313cb127a38aeb2d57bb2a3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964855"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779683"
 ---
 # <a name="get-androidgeneraldeviceconfiguration"></a>获取 androidGeneralDeviceConfiguration
 
@@ -174,6 +174,7 @@ Content-Length: 3552
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 表示应从赋值中排除的组。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0397a3f3def5be86b10f17e50617d488bf6a1512
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cbd211bec428ff3a03ff989fa9ece36e5c55c561
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175393"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775189"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>exclusionGroupAssignmentTarget 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "30175393"
   "groupId": "String"
 }
 ```
+
 
 
 

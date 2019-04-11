@@ -4,12 +4,12 @@ description: 列出 mobileAppContent 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 804a8127fd780a80995f8de63b4b344fae2aaecc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 689322ae27432ecac349e38a10ed766e26bfdf7a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980423"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775637"
 ---
 # <a name="list-mobileappcontents"></a>列出 mobileAppContents
 
@@ -75,6 +75,7 @@ Content-Length: 148
   ]
 }
 ```
+
 
 
 

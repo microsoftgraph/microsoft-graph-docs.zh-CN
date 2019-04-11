@@ -4,12 +4,12 @@ description: 给定设备的移动应用意图和安装状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76db364b53c9ccb6b4057835b853705cd49ca410
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e39a8e869a688dc74ebcc18e4ef56fc16459013d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146751"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777975"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>mobileAppIntentAndStateDetail 资源类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "30146751"
 |:---|:---|:---|
 |applicationId|String|MobieApp 标识符。|
 |displayName|String|管理员提供或导入的应用标题。|
-|mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md)|移动应用程序意向。 可取值为：`available`、`notAvailable`、`requiredInstall`、`requiredUninstall`、`requiredAndAvailableInstall`、`availableInstallWithoutEnrollment`、`exclude`。|
-|displayVersion|字符串|人工可读版本的应用程序|
-|installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown`、`notApplicable`。|
+|mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md)|移动应用程序意向。 可取值为：`available`、`notAvailable`、`requiredInstall`、`requiredUninstall`、`requiredAndAvailableInstall`、`availableInstallWithoutEnrollment` 或 `exclude`。|
+|displayVersion|String|人工可读版本的应用程序|
+|installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown` 或 `notApplicable`。|
 |supportedDeviceTypes|[mobileAppSupportedDeviceType](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md)集合|应用程序支持的平台。|
 
 ## <a name="relationships"></a>关系
@@ -57,7 +57,6 @@ ms.locfileid: "30146751"
   ]
 }
 ```
-
 
 
 

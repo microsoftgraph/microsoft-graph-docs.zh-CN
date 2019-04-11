@@ -4,12 +4,12 @@ description: 管理员选择的安装意向的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a6c000524d8179643b4a32d47ca05df9c7b32de
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 13436f259e254463874fe03217025380735e9b26
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161255"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777576"
 ---
 # <a name="installintent-enum-type"></a>installIntent 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30161255"
 |必需|1|必需的安装意图。|
 |卸除|双面|卸载安装意向。|
 |availableWithoutEnrollment|第三章|在没有注册安装意向的情况下可用。|
+
 
 
 

@@ -4,12 +4,12 @@ description: 列出 defaultManagedAppProtection 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20661fcda1760d5f191c7deba5e16640344d2799
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 42b5fc9090508f426de8407bea7f00d995bd8dad
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989412"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777191"
 ---
 # <a name="list-defaultmanagedappprotections"></a>列出 defaultManagedAppProtections
 
@@ -159,6 +159,7 @@ Content-Length: 4092
   ]
 }
 ```
+
 
 
 

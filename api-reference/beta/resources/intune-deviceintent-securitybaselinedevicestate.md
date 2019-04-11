@@ -4,12 +4,12 @@ description: 设备安全基准的安全基准合规性状态摘要。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d32e5523f540d5b9fa2e517efe88bc123825ae6b
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f1fb6bd8ee8e474fdf96bc2c70f4db288571d795
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522529"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779795"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>securityBaselineDeviceState 资源类型
 
@@ -60,8 +60,6 @@ ms.locfileid: "31522529"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

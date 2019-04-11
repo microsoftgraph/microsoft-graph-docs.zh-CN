@@ -4,12 +4,12 @@ description: 帐户的安全基准模板
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b572d3cc25943438f190a46fd23704a2eb6b7be3
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 4287b83281299110fefad3ee2e2c6bd0e861e4da
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522340"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778164"
 ---
 # <a name="securitybaselinetemplate-resource-type"></a>securityBaselineTemplate 资源类型
 
@@ -62,8 +62,6 @@ ms.locfileid: "31522340"
   "description": "String"
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 列出 deviceConfigurationGroupAssignment 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f5d8262aa3b8c0cc19c4c85631a0a23a7aa5ba8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d17f7e1becdf35c645edd451c791ad811e9a9842
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976538"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775028"
 ---
 # <a name="list-deviceconfigurationgroupassignments"></a>列出 deviceConfigurationGroupAssignments
 
@@ -83,6 +83,7 @@ Content-Length: 244
   ]
 }
 ```
+
 
 
 

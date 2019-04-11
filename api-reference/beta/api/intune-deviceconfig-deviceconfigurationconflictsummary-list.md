@@ -4,12 +4,12 @@ description: 列出 deviceConfigurationConflictSummary 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fcc6a3f90620c7f3a13c5fe10513af9b92e41a1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 57c8ae67e0b09a289196c98d463ec68fe45c7a1f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973927"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776148"
 ---
 # <a name="list-deviceconfigurationconflictsummaries"></a>列出 deviceConfigurationConflictSummaries
 
@@ -84,6 +84,7 @@ Content-Length: 495
   ]
 }
 ```
+
 
 
 

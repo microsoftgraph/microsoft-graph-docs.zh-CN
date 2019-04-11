@@ -4,12 +4,12 @@ description: 隐藏 "主页" 按钮。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cec92faba5f152dd438e4eda5055d98042915942
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d188bb9c481c694d7d0f2117b1bcff4d1c369dcd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164790"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775014"
 ---
 # <a name="edgehomebuttonhidden-resource-type"></a>edgeHomeButtonHidden 资源类型
 
@@ -41,6 +41,7 @@ ms.locfileid: "30164790"
   "@odata.type": "#microsoft.graph.edgeHomeButtonHidden"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: firewallCertificateRevocationListCheckMethod 的可能值
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74989961978ddd10f2c14e57cfe31e25ac831703
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 789ba503887a7200491f3fdc307ccaeb302b3f05
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170075"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776785"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>firewallCertificateRevocationListCheckMethodType 枚举类型
 
@@ -26,6 +26,7 @@ firewallCertificateRevocationListCheckMethod 的可能值
 |无|1|不检查证书吊销列表|
 |应试|双面|仅当支票确认证书时, 才尝试 CRL 检查并允许证书|
 |无须|第三章|在允许证书之前, 需要进行成功的 CRL 检查|
+
 
 
 

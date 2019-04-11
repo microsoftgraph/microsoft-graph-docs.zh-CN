@@ -4,12 +4,12 @@ description: 指定角色分配的作用域的类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6089021851e3d953fce4874b11e343b4747adf40
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d9659c4eaa1f4080ef5dd07a5e69f76a7a14d50
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150692"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775686"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>roleAssignmentScopeType 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30150692"
 |allDevices|1|允许向所有 Intune 设备分配作业。|
 |allLicensedUsers|双面|允许向所有 Intune 许可用户分配作业。|
 |allDevicesAndLicensedUsers|第三章|允许分配给所有 Intune 设备和许可的用户。|
+
 
 
 

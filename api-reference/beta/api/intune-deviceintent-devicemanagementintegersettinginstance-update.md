@@ -4,12 +4,12 @@ description: 更新 deviceManagementIntegerSettingInstance 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 385f569d0984db15aeb4f5b8da739a1a4ccc7b2d
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 801a78d1c8b55fc061f2cee8163e6971b19eb481
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522620"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775336"
 ---
 # <a name="update-devicemanagementintegersettinginstance"></a>更新 deviceManagementIntegerSettingInstance
 
@@ -95,8 +95,6 @@ Content-Length: 222
   "value": 5
 }
 ```
-
-
 
 
 

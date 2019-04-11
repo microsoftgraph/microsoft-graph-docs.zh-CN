@@ -4,12 +4,12 @@ description: Android VPN 连接类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 430ec2beaf0bdc4ff05fb077bf7d23c19a735495
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 584f2d7ca14c05c87542c500b16af74f4f96b129
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159953"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778920"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>androidVpnConnectionType 枚举类型
 
@@ -28,6 +28,7 @@ Android VPN 连接类型。
 |dellSonicWallMobileConnect|第三章|戴尔 SonicWALL 移动连接。|
 |checkPointCapsuleVpn|4|检查点胶囊 VPN。|
 |citrix|5|Citrix|
+
 
 
 

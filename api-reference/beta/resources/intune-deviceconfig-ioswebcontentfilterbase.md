@@ -4,12 +4,12 @@ description: 表示 iOS Web 内容筛选器设置基类型。 空的和抽象的
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 440d85a8d3f07e61eb7936f31b01138ca6a74d53
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8b6edda75e538bcd9fa6efdf47a8c36909205409
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167625"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779606"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>iosWebContentFilterBase 资源类型
 
@@ -38,6 +38,7 @@ ms.locfileid: "30167625"
   "@odata.type": "#microsoft.graph.iosWebContentFilterBase"
 }
 ```
+
 
 
 

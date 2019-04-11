@@ -4,12 +4,12 @@ description: 系统扫描类型的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8871fca2c46d18ef1de3bab5a5ce88525109b234
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7c1b1200b3c72f1417e31dc432c405b286b21a07
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150720"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775105"
 ---
 # <a name="defenderscantype-enum-type"></a>defenderScanType 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30150720"
 |禁用|1|系统扫描已禁用。|
 |快速|双面|快速系统扫描。|
 |全|第三章|完全系统扫描。|
+
 
 
 

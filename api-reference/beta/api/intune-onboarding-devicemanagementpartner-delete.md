@@ -4,12 +4,12 @@ description: 删除 deviceManagementPartner。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70100ea2dcb8c51750e9bcbb6a6067168af10751
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4a07a8aecff16021ff5eca91b661e123302f11ff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984742"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775987"
 ---
 # <a name="delete-devicemanagementpartner"></a>删除 deviceManagementPartner
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartner
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

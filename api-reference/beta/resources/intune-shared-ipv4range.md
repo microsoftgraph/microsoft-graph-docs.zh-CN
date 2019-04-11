@@ -4,12 +4,12 @@ description: IPv4 范围定义。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 521c27396c483ba07cc39aec583dd3e610da267d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c896eb6f9a35992d7370cf29124d8072c171eb30
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160513"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776925"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range 资源类型
 
@@ -45,6 +45,7 @@ IPv4 范围定义。
   "upperAddress": "String"
 }
 ```
+
 
 
 

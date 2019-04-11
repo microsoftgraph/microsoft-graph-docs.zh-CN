@@ -4,12 +4,12 @@ description: 列出 androidGeneralDeviceConfiguration 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 783e64977611a66661ebfee01bee9ec475a27ce1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6c5a911d6366ad3b3367db2f12250a7db5e5192a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983951"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778409"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>列出 androidGeneralDeviceConfigurations
 
@@ -172,6 +172,7 @@ Content-Length: 3766
   ]
 }
 ```
+
 
 
 

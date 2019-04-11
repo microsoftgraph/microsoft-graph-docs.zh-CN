@@ -4,12 +4,12 @@ description: 更新 settingStateDeviceSummary 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7fa47448fffacf3e48e7b9f63a34cf93b4392044
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ae2edd382d6f9930163fc5d31b32e4a7a18389c7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986857"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776988"
 ---
 # <a name="update-settingstatedevicesummary"></a>更新 settingStateDeviceSummary
 
@@ -119,6 +119,7 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
 
 
 

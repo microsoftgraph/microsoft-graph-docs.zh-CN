@@ -4,12 +4,12 @@ description: 列出 microsoftStoreForBusinessContainedApp 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fe99f47bc825bded577304e4d8dac55fcfbb317
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a0119748c6fcf0ddb76cae8f3988d33776ebdf0e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980871"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775672"
 ---
 # <a name="list-microsoftstoreforbusinesscontainedapps"></a>列出 microsoftStoreForBusinessContainedApps
 
@@ -76,6 +76,7 @@ Content-Length: 221
   ]
 }
 ```
+
 
 
 

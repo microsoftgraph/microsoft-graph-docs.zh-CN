@@ -4,12 +4,12 @@ description: 列出 securityBaselineSettingState 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e427dd3de17fe48875043d6da0bc4ed970d7957
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 5954caa31cbb915df0713d412daf75e4291ebb6c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522928"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778577"
 ---
 # <a name="list-securitybaselinesettingstates"></a>列出 securityBaselineSettingStates
 
@@ -20,7 +20,7 @@ ms.locfileid: "31522928"
 列出[securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md)对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|

@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e71d25a4aeeca1682aca94931fa50e724b870319
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 42a4167997fc3a4d5b1c4a8d9885951cc54583ae
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966486"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776911"
 ---
 # <a name="completesignup-action"></a>completeSignup 操作
 
@@ -77,6 +77,7 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 更新 deviceManagementCollectionSettingInstance 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14b47b74e878b5ab8d1f2ffc17c9581dacbb4700
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: cc551207d46d3ef4f0a6587bb0c2a9daf5f58a4e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522942"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779081"
 ---
 # <a name="update-devicemanagementcollectionsettinginstance"></a>更新 deviceManagementCollectionSettingInstance
 
@@ -92,8 +92,6 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
-
-
 
 
 

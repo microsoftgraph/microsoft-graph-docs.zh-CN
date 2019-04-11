@@ -4,12 +4,12 @@ description: 列出 groupPolicyPresentationTextBox 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f265910797f4c69e78dbfb6b8845c72e58faf176
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d0e067e457439e22e208ab3cab8322473fcf0ea6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957199"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779256"
 ---
 # <a name="list-grouppolicypresentationtextboxes"></a>列出 groupPolicyPresentationTextBoxes
 
@@ -78,6 +78,7 @@ Content-Length: 355
   ]
 }
 ```
+
 
 
 

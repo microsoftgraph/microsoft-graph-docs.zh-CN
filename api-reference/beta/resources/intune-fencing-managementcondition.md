@@ -4,12 +4,12 @@ description: 管理条件是可以动态触发的事件, 如地域时限、时�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 594716867cec1dcef9e0fee87af21fb63af99df0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b10442832d08507c3d33b71dd38928bc1be895d9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163103"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775245"
 ---
 # <a name="managementcondition-resource-type"></a>managementCondition 资源类型
 
@@ -29,10 +29,10 @@ ms.locfileid: "30163103"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|管理条件的唯一标识符。 创建时分配的系统生成值。|
-|uniqueName|字符串|管理条件的唯一名称。 在管理条件表达式中使用。|
-|displayName|字符串|管理条件的管理员定义名称。|
-|说明|字符串|管理条件的管理员定义的说明。|
+|id|String|管理条件的唯一标识符。 创建时分配的系统生成值。|
+|uniqueName|String|管理条件的唯一名称。 在管理条件表达式中使用。|
+|displayName|String|管理条件的管理员定义名称。|
+|description|字符串|管理条件的管理员定义的说明。|
 |createdDateTime|DateTimeOffset|管理条件的创建时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。|
 |eTag|String|管理条件的 ETag。 更新了服务端。|
@@ -66,6 +66,7 @@ ms.locfileid: "30163103"
   ]
 }
 ```
+
 
 
 
