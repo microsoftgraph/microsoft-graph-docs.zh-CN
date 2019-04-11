@@ -4,12 +4,12 @@ description: 用于 Windows 信息保护的应用
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2b8739fd045d4b8e6293164fc7e9b14154a475c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fb14092fa9f347e551a4871da69d9a3631b96e8c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139282"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782042"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>windowsInformationProtectionApp 资源类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "30139282"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|应用显示名称。|
-|description|字符串|应用的说明。|
+|description|String|应用的说明。|
 |publisherName|String|发布者名称|
 |productName|String|产品名称。|
-|denied|布尔值|如果为 true，则应用的保护或免除受到拒绝。|
+|denied|Boolean|如果为 true，则应用的保护或免除受到拒绝。|
 
 ## <a name="relationships"></a>关系
 无
@@ -48,6 +48,7 @@ ms.locfileid: "30139282"
   "denied": true
 }
 ```
+
 
 
 

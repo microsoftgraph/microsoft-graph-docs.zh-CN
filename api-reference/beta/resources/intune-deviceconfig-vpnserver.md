@@ -4,12 +4,12 @@ description: VPN 服务器定义。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9dd09e7ab0280120dd207424a862696ba087e20c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bf45848059f7cbd74b408b4074b0ebc5c31b4e5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170460"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782833"
 ---
 # <a name="vpnserver-resource-type"></a>vpnServer 资源类型
 
@@ -24,7 +24,7 @@ VPN 服务器定义。
 |:---|:---|:---|
 |说明|String|说明。|
 |address|String|地址 (IP 地址、FQDN 或 URL)|
-|isDefaultServer|Boolean|默认服务器。|
+|isDefaultServer|布尔值|默认服务器。|
 
 ## <a name="relationships"></a>关系
 无
@@ -44,6 +44,7 @@ VPN 服务器定义。
   "isDefaultServer": true
 }
 ```
+
 
 
 

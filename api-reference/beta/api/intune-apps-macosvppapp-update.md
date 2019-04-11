@@ -4,12 +4,12 @@ description: 更新 macOsVppApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b43aa666a5594f8352fb4db6c85f11dbec37d80a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4999fc7b610bff43922c061eb5b1b1110b71c296
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970784"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780936"
 ---
 # <a name="update-macosvppapp"></a>更新 macOsVppApp
 
@@ -69,6 +69,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。|
 |totalLicenseCount|Int32|VPP 许可证的总数。|
 |releaseDateTime|DateTimeOffset|VPP 应用程序的发布日期和时间。|
@@ -93,7 +94,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1842
+Content-length: 1869
 
 {
   "@odata.type": "#microsoft.graph.macOsVppApp",
@@ -117,6 +118,7 @@ Content-length: 1842
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -155,7 +157,7 @@ Content-length: 1842
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2014
+Content-Length: 2041
 
 {
   "@odata.type": "#microsoft.graph.macOsVppApp",
@@ -182,6 +184,7 @@ Content-Length: 2014
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -214,6 +217,7 @@ Content-Length: 2014
   ]
 }
 ```
+
 
 
 

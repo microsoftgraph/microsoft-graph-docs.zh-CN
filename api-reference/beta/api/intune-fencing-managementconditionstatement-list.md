@@ -4,12 +4,12 @@ description: 列出 managementConditionStatement 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 463984d270c66c14352014caa12430a561528383
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5aae8a1c0f59fb7d71052a8c94fb2e35eb8a7566
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988957"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783344"
 ---
 # <a name="list-managementconditionstatements"></a>列出 managementConditionStatements
 
@@ -85,6 +85,7 @@ Content-Length: 576
   ]
 }
 ```
+
 
 
 

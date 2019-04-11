@@ -4,12 +4,12 @@ description: Apple 推送通知证书。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c1bf303a3d0acee799819177bfca4b186a69ee3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6513e088c07fcc8d3b98b90a52d8d98f9df4a74c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154955"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784521"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate 资源类型
 
@@ -24,19 +24,19 @@ Apple 推送通知证书。
 |:---|:---|:---|
 |[获取 applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-get.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|读取 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) 对象的属性和关系。|
 |[更新 applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-update.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|更新 [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) 对象的属性。|
-|[downloadApplePushNotificationCertificateSigningRequest 函数](../api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest.md)|字符串|下载 Apple 推送通知证书签名请求|
+|[downloadApplePushNotificationCertificateSigningRequest 函数](../api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest.md)|String|下载 Apple 推送通知证书签名请求|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|证书的唯一标识符|
+|id|String|证书的唯一标识符|
 |appleIdentifier|String|用于创建 MDM 推送证书的帐户 Apple ID。|
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
-|certificateUploadStatus|字符串|证书上载状态。|
-|certificateUploadFailureReason|字符串|证书上传失败的原因。|
-|certificate|字符串|尚未记录|
+|certificateUploadStatus|String|证书上载状态。|
+|certificateUploadFailureReason|String|证书上传失败的原因。|
+|证书|String|尚未记录|
 
 ## <a name="relationships"></a>关系
 无
@@ -62,6 +62,7 @@ Apple 推送通知证书。
   "certificate": "String"
 }
 ```
+
 
 
 

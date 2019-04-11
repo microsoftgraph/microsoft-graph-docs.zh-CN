@@ -4,12 +4,12 @@ description: 每个设备的加密报告
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee73ab13ea48707eed745bced197fdd7ae5676b8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9193c795f9c488b5f157014c81d00a4b5118d149
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177845"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779872"
 ---
 # <a name="manageddeviceencryptionstate-resource-type"></a>managedDeviceEncryptionState 资源类型
 
@@ -32,10 +32,10 @@ ms.locfileid: "30177845"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|userPrincipalName|字符串|用户名|
+|userPrincipalName|String|用户名|
 |deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|设备的平台。 可能的值为`desktop`: `windowsRT`、 `winMO6`、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer`、、、、、、、、、、、、、、、、 `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
 |osVersion|String|设备的操作系统版本|
-|tpmSpecificationVersion|字符串|设备 TPM 版本|
+|tpmSpecificationVersion|String|设备 TPM 版本|
 |deviceName|String|设备名称|
 |encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|加密准备情况状态。 可取值为：`notReady`、`ready`。|
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|设备加密状态。 可取值为：`notEncrypted`、`encrypted`。|
@@ -76,6 +76,7 @@ ms.locfileid: "30177845"
   ]
 }
 ```
+
 
 
 

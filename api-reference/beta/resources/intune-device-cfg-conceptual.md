@@ -4,12 +4,12 @@ description: 列出用于定义租户组织的配置设备的 Intune 终结点 (
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 691a528e381b4635af15bab6626f5858296c0979
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 0c25373b7a1c7657b2aee290c9a6ce5d0ae23cb9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572437"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781440"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -31,8 +31,10 @@ ms.locfileid: "30572437"
 - [Android 自定义配置](intune-deviceconfig-androidcustomconfiguration.md)
 - [Android 设备所有者应用自动更新策略类型](intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)
 - [Android 设备所有者电池充电模式](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
+- [Android 设备所有者合规性策略](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Android 设备所有者默认应用权限策略类型](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Android 设备所有者常规设备配置](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
+- [Android 设备所有者播放存储模式](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android 设备所有者必填密码类型](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Android 设备所有者系统更新安装类型](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
 - [Android 设备所有者 Wi-Fi 配置](intune-deviceconfig-androiddeviceownerwificonfiguration.md)
@@ -119,7 +121,7 @@ ms.locfileid: "30572437"
 - [默认的设备符合性策略](intune-deviceconfig-defaultdevicecompliancepolicy.md)
 - [Defender 攻击面类型](intune-deviceconfig-defenderattacksurfacetype.md)
 - [Defender 云块级别类型](intune-deviceconfig-defendercloudblockleveltype.md)
-- [Defender 检测到的恶意软件操作](intune-deviceconfig-defenderdetectedmalwareactions.md)
+- [Defender 检测到恶意软件操作](intune-deviceconfig-defenderdetectedmalwareactions.md)
 - [Defender 监视器文件活动](intune-deviceconfig-defendermonitorfileactivity.md)
 - [Defender 可能不需要的应用操作](intune-deviceconfig-defenderpotentiallyunwantedappaction.md)
 - [Defender 示例提交提示](intune-deviceconfig-defenderpromptforsamplesubmission.md)
@@ -143,18 +145,18 @@ ms.locfileid: "30572437"
 - [传递优化最大缓存大小百分比](intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md)
 - [传递优化限制对等选择（按选项）](intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)
 - [派生的凭据提供商类型](intune-deviceconfig-derivedcredentialprovidertype.md)
-- [设备合规性操作项](intune-deviceconfig-devicecomplianceactionitem.md)
+- [设备符合性操作项](intune-deviceconfig-devicecomplianceactionitem.md)
 - [设备合规性操作类型](intune-deviceconfig-devicecomplianceactiontype.md)
 - [设备合规性设备概述](intune-deviceconfig-devicecompliancedeviceoverview.md)
 - [设备合规性设备状态](intune-deviceconfig-devicecompliancedevicestatus.md)
 - [设备合规性策略](intune-deviceconfig-devicecompliancepolicy.md)
-- [设备合规性策略分配](intune-deviceconfig-devicecompliancepolicyassignment.md)
-- [设备合规性策略设备状态摘要](intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)
-- [设备合规性策略设置状态](intune-deviceconfig-devicecompliancepolicysettingstate.md)
-- [设备合规性策略设置状态摘要](intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)
-- [适用于规则的设备合规性计划操作](intune-deviceconfig-devicecompliancescheduledactionforrule.md)
-- [设备合规性设置状态](intune-deviceconfig-devicecompliancesettingstate.md)
-- [设备合规性用户概述](intune-deviceconfig-devicecomplianceuseroverview.md)
+- [设备符合性策略分配](intune-deviceconfig-devicecompliancepolicyassignment.md)
+- [设备符合性策略设备状态摘要](intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)
+- [设备符合性策略设置状态](intune-deviceconfig-devicecompliancepolicysettingstate.md)
+- [设备符合性策略设置状态摘要](intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)
+- [适用于规则的设备符合性计划操作](intune-deviceconfig-devicecompliancescheduledactionforrule.md)
+- [设备符合性设置状态](intune-deviceconfig-devicecompliancesettingstate.md)
+- [设备符合性用户概述](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [设备合规性用户状态](intune-deviceconfig-devicecomplianceuserstatus.md)
 - [设备配置](intune-deviceconfig-deviceconfiguration.md)
 - [设备配置分配](intune-deviceconfig-deviceconfigurationassignment.md)
@@ -284,15 +286,18 @@ ms.locfileid: "30572437"
 - [本地安全选项智能卡删除行为类型](intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)
 - [本地安全选项标准用户提升提示行为类型](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [macOS 证书配置文件基础](intune-deviceconfig-macoscertificateprofilebase.md)
-- [macOS 合规性策略](intune-deviceconfig-macoscompliancepolicy.md)
+- [macOS 符合性策略](intune-deviceconfig-macoscompliancepolicy.md)
 - [macOS 自定义配置](intune-deviceconfig-macoscustomconfiguration.md)
-- [macOS 设备功能配置](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
+- [Apple 设备功能配置](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
 - [macOS Endpoint Protection 配置](intune-deviceconfig-macosendpointprotectionconfiguration.md)
 - [macOS 企业版 Wi-Fi 配置](intune-deviceconfig-macosenterprisewificonfiguration.md)
+- [macOS 扩展配置](intune-deviceconfig-macosextensionsconfiguration.md)
 - [macOS 防火墙应用程序](intune-deviceconfig-macosfirewallapplication.md)
 - [macOS 网关守卫应用源](intune-deviceconfig-macosgatekeeperappsources.md)
 - [macOS 常规设备配置](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
 - [macOS 导入的 PFX 证书配置文件](intune-deviceconfig-macosimportedpfxcertificateprofile.md)
+- [macOS 内核扩展](intune-deviceconfig-macoskernelextension.md)
+- [macOS 启动项目](intune-deviceconfig-macoslaunchitem.md)
 - [macOS SCEP 证书配置文件](intune-deviceconfig-macosscepcertificateprofile.md)
 - [macOS 信任的根证书](intune-deviceconfig-macostrustedrootcertificate.md)
 - [macOS VPN 配置](intune-deviceconfig-macosvpnconfiguration.md)
@@ -318,7 +323,7 @@ ms.locfileid: "30572437"
 - [PEAP 非 EAP 身份验证方法](intune-deviceconfig-noneapauthenticationmethodforpeap.md)
 - [编号范围](intune-deviceconfig-numberrange.md)
 - [OMA 设置](intune-deviceconfig-omasetting.md)
-- [OMA 设置 base64](intune-deviceconfig-omasettingbase64.md)
+- [OMA 设置 Base64](intune-deviceconfig-omasettingbase64.md)
 - [OMA 设置布尔值](intune-deviceconfig-omasettingboolean.md)
 - [OMA 设置日期/时间](intune-deviceconfig-omasettingdatetime.md)
 - [OMA 设置浮点数](intune-deviceconfig-omasettingfloatingpoint.md)
@@ -358,7 +363,7 @@ ms.locfileid: "30572437"
 - [共享电脑帐户删除策略类型](intune-deviceconfig-sharedpcaccountdeletionpolicytype.md)
 - [共享电脑帐户管理器策略](intune-deviceconfig-sharedpcaccountmanagerpolicy.md)
 - [共享电脑允许的帐户类型](intune-deviceconfig-sharedpcallowedaccounttype.md)
-- [共享的电脑配置](intune-deviceconfig-sharedpcconfiguration.md)
+- [共享电脑配置](intune-deviceconfig-sharedpcconfiguration.md)
 - [登录助手选项](intune-deviceconfig-signinassistantoptions.md)
 - [网站安全级别](intune-deviceconfig-sitesecuritylevel.md)
 - [软件更新状态摘要](intune-deviceconfig-softwareupdatestatussummary.md)
@@ -401,7 +406,7 @@ ms.locfileid: "30572437"
 - [Windows 10 自定义配置](intune-deviceconfig-windows10customconfiguration.md)
 - [Windows 10 EAS 电子邮件配置文件配置](intune-deviceconfig-windows10easemailprofileconfiguration.md)
 - [Windows 10 版本类型](intune-deviceconfig-windows10editiontype.md)
-- [Windows 10 终结点保护配置](intune-deviceconfig-windows10endpointprotectionconfiguration.md)
+- [Windows 10 Endpoint Protection 配置](intune-deviceconfig-windows10endpointprotectionconfiguration.md)
 - [Windows 10 企业版新式应用管理配置](intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md)
 - [Windows 10 常规配置](intune-deviceconfig-windows10generalconfiguration.md)
 - [Windows 10 导入的 PFX 证书配置文件](intune-deviceconfig-windows10importedpfxcertificateprofile.md)
@@ -436,7 +441,7 @@ ms.locfileid: "30572437"
 - [Windows 防火墙规则网络配置文件类型](intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)
 - [Windows 防火墙规则流量方向类型](intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)
 - [Windows 运行状况监视配置](intune-deviceconfig-windowshealthmonitoringconfiguration.md)
-- [Windows 运行状况监视作用域](intune-deviceconfig-windowshealthmonitoringscope.md)
+- [Windows 运行状况监视范围](intune-deviceconfig-windowshealthmonitoringscope.md)
 - [Windows 身份保护配置](intune-deviceconfig-windowsidentityprotectionconfiguration.md)
 - [Windows Kiosk Active Directory 组](intune-deviceconfig-windowskioskactivedirectorygroup.md)
 - [Windows Kiosk 应用基准](intune-deviceconfig-windowskioskappbase.md)
@@ -457,7 +462,7 @@ ms.locfileid: "30572437"
 - [Windows Kiosk 访问者](intune-deviceconfig-windowskioskvisitor.md)
 - [Windows 网络隔离策略](intune-deviceconfig-windowsnetworkisolationpolicy.md)
 - [Windows Phone 8.1 证书配置文件基础](intune-deviceconfig-windowsphone81certificateprofilebase.md)
-- [Windows Phone 8.1 合规性策略](intune-deviceconfig-windowsphone81compliancepolicy.md)
+- [Windows Phone  8.1 符合性策略](intune-deviceconfig-windowsphone81compliancepolicy.md)
 - [Windows Phone 8.1 自定义配置](intune-deviceconfig-windowsphone81customconfiguration.md)
 - [Windows Phone 8.1 常规配置](intune-deviceconfig-windowsphone81generalconfiguration.md)
 - [Windows Phone 8.1 导入的 PFX 证书配置文件](intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md)

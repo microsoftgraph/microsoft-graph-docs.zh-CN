@@ -4,12 +4,12 @@ description: 列出 windowsManagedDevice 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29c3e5199d97e19d92c9205daffb4ce9d45b7b27
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6b87da64194a033ec6fe753bcf6c77fa899a307c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981900"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781342"
 ---
 # <a name="list-windowsmanageddevices"></a>列出 windowsManagedDevices
 
@@ -34,8 +34,8 @@ ms.locfileid: "30981900"
 }
 -->
 ``` http
-GET /users/{usersId}/managedDevices
 GET /deviceManagement/managedDevices
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices
 ```
 
@@ -56,7 +56,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/managedDevices
+GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ```
 
 ### <a name="response"></a>响应
@@ -238,6 +238,7 @@ Content-Length: 7973
   ]
 }
 ```
+
 
 
 

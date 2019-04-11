@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 679f44364dc5d534fa58e874502b5b51609a995f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fc97c48b7c4b5505808d8370e7181f2d7ca0d0ee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975950"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780404"
 ---
 # <a name="getlicensesforapp-function"></a>getLicensesForApp 函数
 
@@ -84,6 +84,7 @@ Content-Length: 298
   ]
 }
 ```
+
 
 
 

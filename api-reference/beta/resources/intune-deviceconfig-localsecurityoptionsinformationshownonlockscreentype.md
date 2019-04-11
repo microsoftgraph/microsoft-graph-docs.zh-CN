@@ -4,12 +4,12 @@ description: LocalSecurityOptionsInformationShownOnLockScreenType 的可能值
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1709fe10b6e6992aba128da57cb77006633c6909
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 86f532ffa894cc7542600d4f37bd25172a22dfd4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156131"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781552"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>localSecurityOptionsInformationShownOnLockScreenType 枚举类型
 
@@ -26,6 +26,7 @@ LocalSecurityOptionsInformationShownOnLockScreenType 的可能值
 |userDisplayNameDomainUser|1|用户显示名称、域名和用户名|
 |userDisplayNameOnly|双面|仅限用户显示名称|
 |doNotDisplayUser|第三章|不显示用户信息|
+
 
 
 

@@ -4,12 +4,12 @@ description: 表示将设置应用于设备的意图的实体
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 909b071279b35c2ffec4c27b3431d25f7da8ac46
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 2de7d4e8c177317aa220d6aafbba4bda8b7fe299
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524244"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780922"
 ---
 # <a name="devicemanagementintent-resource-type"></a>deviceManagementIntent 资源类型
 
@@ -71,8 +71,6 @@ ms.locfileid: "31524244"
   "templateId": "String"
 }
 ```
-
-
 
 
 

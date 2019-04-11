@@ -4,12 +4,12 @@ description: 用于为展台配置标识 AzureAD 用户帐户的类
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: feda393a6bee1b3cfc55d16cc91d321a5b99d54d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 93a47ba1bafe8f2070eedb028cb0eaa64808d03d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168248"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783851"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>windowsKioskAzureADUser 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "30168248"
 |属性|类型|说明|
 |:---|:---|:---|
 |userId|String|将锁定到此展台配置的 AzureAD 用户的 ID|
-|userPrincipalName|字符串|将锁定到此展台配置的用户帐户|
+|userPrincipalName|String|将锁定到此展台配置的用户帐户|
 
 ## <a name="relationships"></a>关系
 无
@@ -45,6 +45,7 @@ ms.locfileid: "30168248"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

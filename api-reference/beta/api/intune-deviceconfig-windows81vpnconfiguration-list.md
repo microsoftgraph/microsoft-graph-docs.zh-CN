@@ -4,12 +4,12 @@ description: 列出 windows81VpnConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d5edea30066e21f30fffc95d7ee71d01bb7007b7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 88cd658fb27d6288c930d5dccbc3e996ddaa0ae1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976671"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784556"
 ---
 # <a name="list-windows81vpnconfigurations"></a>列出 windows81VpnConfigurations
 
@@ -105,6 +105,7 @@ Content-Length: 1352
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 设备操作结果
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c435241056f5e29166355829d1c40438b525a92
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d46aa2d4359430d17e3f3892b8b526a9efed603
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151427"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781868"
 ---
 # <a name="deviceactionresult-resource-type"></a>deviceActionResult 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "30151427"
 |属性|类型|说明|
 |:---|:---|:---|
 |actionName|String|操作名|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |startDateTime|DateTimeOffset|初始化操作的时间|
 |lastUpdatedDateTime|DateTimeOffset|操作状态上次更新的时间|
 
@@ -46,6 +46,7 @@ ms.locfileid: "30151427"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

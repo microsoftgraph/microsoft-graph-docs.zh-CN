@@ -4,12 +4,12 @@ description: 描述 Android for Work 应用程序的自定义配置的架构。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad9f8751ef07677899cc6820342aa3da6b8c2332
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e73da8fba5db59d1b1dc849f67c86ff87a27017c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164230"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780033"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>androidForWorkAppConfigurationSchema 资源类型
 
@@ -75,6 +75,7 @@ ms.locfileid: "30164230"
   ]
 }
 ```
+
 
 
 

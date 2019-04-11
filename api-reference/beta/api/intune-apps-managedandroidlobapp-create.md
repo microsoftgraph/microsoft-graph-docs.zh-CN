@@ -4,12 +4,12 @@ description: 创建新的 managedAndroidLobApp 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f81cf78430119e1b244c6063f8d4f92920dca3b0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9e99e21e2cbc558cb8d482298224e79a60fc1aea
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973717"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783512"
 ---
 # <a name="create-managedandroidlobapp"></a>创建 managedAndroidLobApp
 
@@ -67,6 +67,7 @@ POST /deviceAppManagement/mobileApps
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|应用程序的可用性。 继承自[managedApp](../resources/intune-apps-managedapp.md)。 可取值为：`global`、`lineOfBusiness`。|
 |version|String|应用程序的版本。 继承自 [managedApp](../resources/intune-apps-managedapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
@@ -91,7 +92,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1464
+Content-length: 1491
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -115,6 +116,7 @@ Content-length: 1464
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
@@ -150,7 +152,7 @@ Content-length: 1464
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1636
+Content-Length: 1663
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -177,6 +179,7 @@ Content-Length: 1636
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
@@ -206,6 +209,7 @@ Content-Length: 1636
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

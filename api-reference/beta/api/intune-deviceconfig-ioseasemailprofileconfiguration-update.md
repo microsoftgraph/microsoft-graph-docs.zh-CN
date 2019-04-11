@@ -4,12 +4,12 @@ description: 更新 iosEasEmailProfileConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d104fff1264466f6e78ccd7c660f6f76c542e9e8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7470630caf4cedc46a5f51efeed926dfe7502fba
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968628"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780474"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>更新 iosEasEmailProfileConfiguration
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -66,22 +66,22 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |customDomainName|String|在设备上安装之前生成电子邮件配置文件时使用的自定义域名值。 继承自[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |帐户|String|帐户名称。|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|此电子邮件配置文件的身份验证方法。 可取值为：`usernameAndPassword`、`certificate`。|
-|blockMovingMessagesToOtherEmailAccounts|Boolean|指示是否阻止将邮件移动到其他电子邮件帐户。|
-|blockSendingEmailFromThirdPartyApps|Boolean|指示是否阻止来自第三方应用的发送电子邮件。|
-|blockSyncingRecentlyUsedEmailAddresses|Boolean|指示是否阻止同步最近使用的电子邮件地址, 例如, 撰写新电子邮件时。|
+|blockMovingMessagesToOtherEmailAccounts|布尔值|指示是否阻止将邮件移动到其他电子邮件帐户。|
+|blockSendingEmailFromThirdPartyApps|布尔值|指示是否阻止来自第三方应用的发送电子邮件。|
+|blockSyncingRecentlyUsedEmailAddresses|布尔值|指示是否阻止同步最近使用的电子邮件地址, 例如, 撰写新电子邮件时。|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|电子邮件的持续时间应同步回。 . 可取值为：`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth` 或 `unlimited`。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|在设备上安装之前, 从 AAD 中选出并插入到此配置文件中的电子邮件属性。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
 |hostName|String|本机邮件应用程序连接到的 Exchange 位置 (URL)。|
-|requireSmime|Boolean|指示是否使用 S/MIME 证书。|
-|smimeEnablePerMessageSwitch|Boolean|指示是否允许未加密的电子邮件。|
-|smimeEncryptByDefaultEnabled|Boolean|如果设置为 "true S/MIME 加密", 则默认为启用。|
-|smimeSigningEnabled|Boolean|如果为此帐户启用了设置为 true S/MIME 签名|
-|smimeSigningUserOverrideEnabled|Boolean|如果设置为 true, 则用户可以打开或关闭 S/MIME 签名。|
-|smimeEncryptByDefaultUserOverrideEnabled|Boolean|如果设置为 true, 则用户可以默认切换加密设置。|
-|smimeSigningCertificateUserOverrideEnabled|Boolean|如果设置为 true, 则用户可以选择签名标识。|
-|smimeEncryptionCertificateUserOverrideEnabled|Boolean|如果设置为 true, 则用户可以选择 S/MIME 加密标识。 |
-|requireSsl|Boolean|指示是否使用 SSL。|
-|useOAuth|Boolean|指定连接是否应使用 OAuth 进行身份验证。|
+|requireSmime|布尔值|指示是否使用 S/MIME 证书。|
+|smimeEnablePerMessageSwitch|布尔值|指示是否允许未加密的电子邮件。|
+|smimeEncryptByDefaultEnabled|布尔值|如果设置为 "true S/MIME 加密", 则默认为启用。|
+|smimeSigningEnabled|布尔值|如果为此帐户启用了设置为 true S/MIME 签名|
+|smimeSigningUserOverrideEnabled|布尔值|如果设置为 true, 则用户可以打开或关闭 S/MIME 签名。|
+|smimeEncryptByDefaultUserOverrideEnabled|布尔值|如果设置为 true, 则用户可以默认切换加密设置。|
+|smimeSigningCertificateUserOverrideEnabled|布尔值|如果设置为 true, 则用户可以选择签名标识。|
+|smimeEncryptionCertificateUserOverrideEnabled|布尔值|如果设置为 true, 则用户可以选择 S/MIME 加密标识。 |
+|requireSsl|布尔值|指示是否使用 SSL。|
+|useOAuth|布尔值|指定连接是否应使用 OAuth 进行身份验证。|
 
 
 
@@ -174,6 +174,7 @@ Content-Length: 1365
   "useOAuth": true
 }
 ```
+
 
 
 

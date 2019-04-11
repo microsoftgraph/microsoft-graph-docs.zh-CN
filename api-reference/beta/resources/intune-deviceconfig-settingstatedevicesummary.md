@@ -4,12 +4,12 @@ description: 设置状态的设备合规性策略和配置摘要
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3c36b4270896716b6fdb7de11a35b5267ed5d16
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0f233b285fa9967dca03406c3ca7c649773e9832
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163677"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782679"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary 资源类型
 
@@ -31,13 +31,13 @@ ms.locfileid: "30163677"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |settingName|String|设置的名称|
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|
-|notApplicableDeviceCount|Int32|设置的设备不适用计数|
-|compliantDeviceCount|Int32|设置的设备符合性计数|
-|remediatedDeviceCount|Int32|设置的设备合规计数|
+|notApplicableDeviceCount|Int32|设置的设备不可用计数|
+|compliantDeviceCount|Int32|设置的设备符合计数|
+|remediatedDeviceCount|Int32|设置的设备符合性计数|
 |nonCompliantDeviceCount|Int32|设置的设备不符合计数|
 |errorDeviceCount|Int32|设置的设备错误计数|
 |conflictDeviceCount|Int32|设置的设备冲突错误计数|
@@ -68,6 +68,7 @@ ms.locfileid: "30163677"
   "conflictDeviceCount": 1024
 }
 ```
+
 
 
 

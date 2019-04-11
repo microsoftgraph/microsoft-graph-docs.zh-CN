@@ -4,12 +4,12 @@ description: 包含用于检测 Win32 应用程序的产品代码和版本属性
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 854d54b034b0e2e0dc0e7ce8e7f73466f37dd263
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 755d0470873da1e5176e0962ace955d1fc647b80
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173232"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780453"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>win32LobAppProductCodeDetection 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "30173232"
 |属性|类型|说明|
 |:---|:---|:---|
 |productCode|String|Win32 业务线 (LoB) 应用程序的产品代码。|
-|productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|用于检测产品版本的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan`、`lessThanOrEqual`。|
+|productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|用于检测产品版本的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
 |productVersion|String|Win32 业务线 (LoB) 应用的产品版本。|
 
 ## <a name="relationships"></a>关系
@@ -47,6 +47,7 @@ ms.locfileid: "30173232"
   "productVersion": "String"
 }
 ```
+
 
 
 

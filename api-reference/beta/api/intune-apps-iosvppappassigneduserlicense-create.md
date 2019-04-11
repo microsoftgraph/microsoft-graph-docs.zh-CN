@@ -4,12 +4,12 @@ description: 创建新的 iosVppAppAssignedUserLicense 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e905316197453dfde89f8e074a8105b88d28e1c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c59a79c158bfa9c14d3e489765d8f6b6e1c5e538
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970448"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784231"
 ---
 # <a name="create-iosvppappassigneduserlicense"></a>创建 iosVppAppAssignedUserLicense
 
@@ -95,6 +95,7 @@ Content-Length: 287
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

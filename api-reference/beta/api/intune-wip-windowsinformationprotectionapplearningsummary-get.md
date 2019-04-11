@@ -4,12 +4,12 @@ description: 读取 windowsInformationProtectionAppLearningSummary 对象的属�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e64f66377af4d8e8fca4dda7b6e81aeb6b37aeb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4b91adf5f634682da812d79a22c001afd45eb557
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976769"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780467"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>获取 windowsInformationProtectionAppLearningSummary
 
@@ -77,6 +77,7 @@ Content-Length: 269
   }
 }
 ```
+
 
 
 

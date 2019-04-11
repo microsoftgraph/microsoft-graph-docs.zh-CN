@@ -4,12 +4,12 @@ description: GroupId 支持类型
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 126d23b79fa890110879450d168ee80f727d53ca
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0d725c691174cbd8c174acfdeb7682ed61ecaa6b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178225"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784675"
 ---
 # <a name="deliveryoptimizationgroupidsource-resource-type"></a>deliveryOptimizationGroupIdSource 资源类型
 
@@ -38,6 +38,7 @@ GroupId 支持类型
   "@odata.type": "#microsoft.graph.deliveryOptimizationGroupIdSource"
 }
 ```
+
 
 
 

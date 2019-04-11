@@ -4,12 +4,12 @@ description: 使用一元运算计算的管理条件表达式。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9802cb8162973ecdaa387a29c70d1baa7aec4b8b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6554f62805bcd1d45f6db165367624434e794117
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164216"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783722"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>unaryManagementConditionExpression 资源类型
 
@@ -47,6 +47,7 @@ ms.locfileid: "30164216"
   }
 }
 ```
+
 
 
 

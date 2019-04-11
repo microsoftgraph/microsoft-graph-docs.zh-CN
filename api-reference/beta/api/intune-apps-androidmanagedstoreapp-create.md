@@ -4,12 +4,12 @@ description: 创建新的 androidManagedStoreApp 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b69c5f734e5609b17dc76057d85278ac60fbfac
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: eeb677be50132c8da0d48ad564eba8284fd69fef
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970301"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781188"
 ---
 # <a name="create-androidmanagedstoreapp"></a>创建 androidManagedStoreApp
 
@@ -67,12 +67,13 @@ POST /deviceAppManagement/mobileApps
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |packageId|String|包标识符。|
 |appIdentifier|String|标识名称。|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。|
 |totalLicenseCount|Int32|VPP 许可证的总数。|
 |appStoreUrl|String|"播放工作商店" 应用程序 URL。|
-|supportsOemConfig|Boolean|此应用是否支持 OEMConfig 策略。|
+|supportsOemConfig|布尔值|此应用是否支持 OEMConfig 策略。|
 
 
 
@@ -86,7 +87,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 911
+Content-length: 938
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -110,6 +111,7 @@ Content-length: 911
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
@@ -124,7 +126,7 @@ Content-length: 911
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1083
+Content-Length: 1110
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -151,6 +153,7 @@ Content-Length: 1083
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
@@ -159,6 +162,7 @@ Content-Length: 1083
   "supportsOemConfig": true
 }
 ```
+
 
 
 

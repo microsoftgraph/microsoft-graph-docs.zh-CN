@@ -4,12 +4,12 @@ description: 移动应用故障排除事件中包含的历史记录项。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 646fb576e8590d9f5c58b2b67c6fd3612cf689f0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3f8bbcbd3b8291b16fa1cae1eb7c4b3fba30baf6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171216"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784857"
 ---
 # <a name="mobileapptroubleshootingdevicecheckinhistory-resource-type"></a>mobileAppTroubleshootingDeviceCheckinHistory 资源类型
 
@@ -43,7 +43,6 @@ ms.locfileid: "30171216"
   "occurrenceDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

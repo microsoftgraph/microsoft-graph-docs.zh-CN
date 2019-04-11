@@ -4,12 +4,12 @@ description: 更新 termsAndConditionsAssignment 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17051c4b665f171d6ce2d2c3fbe4c09acbe3fc45
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 512d40143d92638d82951c1f9cae06d882630de3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964974"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784353"
 ---
 # <a name="update-termsandconditionsassignment"></a>更新 termsAndConditionsAssignment
 
@@ -90,6 +90,7 @@ Content-Length: 217
   }
 }
 ```
+
 
 
 

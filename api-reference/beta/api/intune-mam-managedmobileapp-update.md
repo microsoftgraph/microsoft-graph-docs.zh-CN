@@ -4,12 +4,12 @@ description: 更新 managedMobileApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 378c28bfee54090fd0802ff4c5ae61b262adf41f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7912fc159257fd1d416fd8f8b6b1d1dc05e6086c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972324"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783106"
 ---
 # <a name="update-managedmobileapp"></a>更新 managedMobileApp
 
@@ -96,6 +96,7 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
+
 
 
 

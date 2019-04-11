@@ -4,12 +4,12 @@ description: 创建新的 managedDeviceEncryptionState 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd0a2310f7f7ead0fd59e8f1b6ca66e8811667bb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6edba4844d56f1c1f87ff146f547cd4b08699c84
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960788"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780817"
 ---
 # <a name="create-manageddeviceencryptionstate"></a>创建 managedDeviceEncryptionState
 
@@ -125,6 +125,7 @@ Content-Length: 707
   ]
 }
 ```
+
 
 
 

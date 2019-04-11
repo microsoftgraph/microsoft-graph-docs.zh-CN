@@ -4,12 +4,12 @@ description: 包含某个设备的安装状态的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c25c9b81be783734f54f4e2edc21f27b070e2ed
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bd0fb8d9f73cf19c4bd2b8be0e6ff40c8247b247
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166246"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782672"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "30166246"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |deviceName|String|设备名称。|
 |deviceId|String|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
@@ -66,6 +66,7 @@ ms.locfileid: "30166246"
   "userName": "String"
 }
 ```
+
 
 
 

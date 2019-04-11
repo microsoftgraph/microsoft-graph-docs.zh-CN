@@ -4,12 +4,12 @@ description: 支持的平台类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e060cba22c0f5dcb45ab17f5624f7a0246123810
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 51f74a9820b808bcc5685494665c67679d2191a3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139905"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782882"
 ---
 # <a name="deviceplatformtype-enum-type"></a>devicePlatformType 枚举类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "30139905"
 |windows81AndLater|5|Windows 8.1 及更高版本|
 |windows10AndLater|型|Windows 10 及更高版本。|
 |androidWorkProfile|步|Android 工作配置文件。|
+
 
 
 

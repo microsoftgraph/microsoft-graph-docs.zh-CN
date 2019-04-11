@@ -4,12 +4,12 @@ description: 读取 deviceConfigurationUserStateSummary 对象的属性和关系
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5980ddd2555ea56933e14521e262387f6baf9bc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8ebb40f84b7e61e27d5fbed4dc0b0407d0f20258
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966479"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783652"
 ---
 # <a name="get-deviceconfigurationuserstatesummary"></a>获取 deviceConfigurationUserStateSummary
 
@@ -81,6 +81,7 @@ Content-Length: 361
   }
 }
 ```
+
 
 
 

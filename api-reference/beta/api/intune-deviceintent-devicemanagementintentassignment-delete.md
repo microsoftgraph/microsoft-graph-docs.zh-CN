@@ -4,12 +4,12 @@ description: 删除 deviceManagementIntentAssignment。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fc34df00e96f22daf589d89d44761ea06ffb7c6
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 9fd9f942458b0a5d4a31eb6dad361d0469755a06
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522452"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783393"
 ---
 # <a name="delete-devicemanagementintentassignment"></a>删除 deviceManagementIntentAssignment
 
@@ -62,8 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 表示有关组织应用保护和配置的非类型化状态报告�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34c70a268c3940843759844c27de7f31bfab002e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f7c609c8ac1a228be588c5bdfe93cca7d42069da
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154192"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781538"
 ---
 # <a name="managedappstatusraw-resource-type"></a>managedAppStatusRaw 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "30154192"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|状态报告的友好名称。 继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
-|id|字符串|实体的键。 继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
+|id|String|实体的键。 继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
 |version|String|实体的版本。 继承自 [managedAppStatus](../resources/intune-mam-managedappstatus.md)|
 |content|[Json](../resources/intune-mam-json.md)|状态报告内容。|
 
@@ -58,6 +58,7 @@ ms.locfileid: "30154192"
   }
 }
 ```
+
 
 
 

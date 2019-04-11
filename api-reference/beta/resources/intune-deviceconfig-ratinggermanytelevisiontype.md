@@ -4,12 +4,12 @@ description: 德国的电视内容评级标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5efdbf5f9bd9aa3d29c366a0e3769aa29b6f411c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8cc91bd7988dbc8f1c1f36d4aaf28e10d2609710
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158140"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779984"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>ratingGermanyTelevisionType 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30158140"
 |agesAbove12|4|Ab 12 Jahren, 12 岁及更早|
 |agesAbove16|5|Ab 16 Jahren, 超过16岁及以上|
 |成人|型|Ab 18 Jahren, 仅成人|
+
 
 
 

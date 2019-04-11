@@ -4,12 +4,12 @@ description: 设备类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1f70ebf9ab8e22512bdb6f1238bec7c4354582f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 604009d8a636a367203f9c9ced69aa22f40bfbc7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178169"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781034"
 ---
 # <a name="devicetypes-enum-type"></a>deviceTypes 枚举类型
 
@@ -44,6 +44,7 @@ ms.locfileid: "30178169"
 |blackberry|100|Blackberry.|
 |palm|101|Palm.|
 |unknown|255|表示设备类型未知。|
+
 
 
 

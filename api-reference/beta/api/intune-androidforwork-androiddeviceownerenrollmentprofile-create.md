@@ -4,12 +4,12 @@ description: 创建新的 androidDeviceOwnerEnrollmentProfile 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2034ac39671f5e949c93bc9e2b6468aa7895959
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7589c0842a30068035a1c423339d5df22e5fc1cb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984840"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783470"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>创建 androidDeviceOwnerEnrollmentProfile
 
@@ -122,6 +122,7 @@ Content-Length: 737
   }
 }
 ```
+
 
 
 

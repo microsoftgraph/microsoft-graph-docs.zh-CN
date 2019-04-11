@@ -4,12 +4,12 @@ description: 文件夹保护的可能值
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0682f5bfbef65b982762e10a9425a8381d645d7d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 741565678be1bfb533c4445c02c767f87fdfca05
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170334"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781083"
 ---
 # <a name="folderprotectiontype-enum-type"></a>folderProtectionType 枚举类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30170334"
 |auditMode|双面|允许功能, 但生成日志。|
 |blockDiskModification|第三章|阻止不受信任的应用写入磁盘扇区。|
 |auditDiskModification|4|在不受信任的应用写入磁盘扇区时生成日志。|
+
 
 
 

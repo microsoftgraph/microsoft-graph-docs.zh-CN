@@ -4,12 +4,12 @@ description: 更新 roleAssignment 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26cd7776c00a7914ca10282f0e1cc86b2790b7ea
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 55d285d6bf0f8188ee7363442434f4faaceac362
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976580"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784260"
 ---
 # <a name="update-roleassignment"></a>更新 roleAssignment
 
@@ -106,6 +106,7 @@ Content-Length: 326
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3449e1f1a2b8651cea407690019d458d5ac24fa9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c581b6ffe1653c2962c03c8e6fe5d27d706882d5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147752"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784738"
 ---
 # <a name="applogcollectiondownloaddetails-resource-type"></a>appLogCollectionDownloadDetails 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "30147752"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|downloadUrl|字符串|下载已完成 AppLogUploadRequest 的 SAS Url|
-|decryptionKey|字符串|DecryptionKey 作为 string|
+|downloadUrl|String|下载已完成 AppLogUploadRequest 的 SAS Url|
+|decryptionKey|String|DecryptionKey 作为 string|
 |appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm 的内容。 可能的值是`aes256`:。|
 
 ## <a name="relationships"></a>关系
@@ -44,6 +44,7 @@ ms.locfileid: "30147752"
   "appLogDecryptionAlgorithm": "String"
 }
 ```
+
 
 
 

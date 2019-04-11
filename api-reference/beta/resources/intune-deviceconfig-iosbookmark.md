@@ -4,12 +4,12 @@ description: iOS URL 书签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9de5d95cd14931da850ab9bdaf5c581fd17f09dc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5231ccbae496e310e414c6429190e0b4d53cbaa7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174994"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782798"
 ---
 # <a name="iosbookmark-resource-type"></a>iosBookmark 资源类型
 
@@ -23,8 +23,8 @@ iOS URL 书签
 |属性|类型|说明|
 |:---|:---|:---|
 |url|String|允许访问的 URL|
-|bookmarkFolder|字符串|应在 Safari 中添加书签的文件夹|
-|displayName|字符串|书签的显示名称|
+|bookmarkFolder|String|应在 Safari 中添加书签的文件夹|
+|displayName|String|书签的显示名称|
 
 ## <a name="relationships"></a>关系
 无
@@ -44,6 +44,7 @@ iOS URL 书签
   "displayName": "String"
 }
 ```
+
 
 
 

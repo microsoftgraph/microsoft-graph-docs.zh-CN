@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20ad1bab8d10f69d06b7a3126ef83aeaea92fdd0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9601dcc28cb38b4aea3dcde14cc1d4a59f3967d0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151084"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782648"
 ---
 # <a name="windowsdeviceusagetype-enum-type"></a>windowsDeviceUsageType 枚举类型
 
@@ -23,7 +23,8 @@ ms.locfileid: "30151084"
 |成员|值|说明|
 |:---|:---|:---|
 |singleUser|0|单一用户设备类型|
-|共享的内容|1|共享设备类型|
+|shared|1|共享设备类型|
+
 
 
 

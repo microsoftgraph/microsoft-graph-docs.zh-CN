@@ -4,12 +4,12 @@ description: 日本的电影评级标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f327bd9c3623cbe768e7a87ba8af416ae9b0e4e6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3bc6d1f12d9a7eec2a2f88d483670d34cabe1349
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147640"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783274"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>ratingJapanMoviesType 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "30147640"
 |parentalGuidance|第三章|PG-12 分类请求适用于12岁的年轻人的家长指导|
 |agesAbove15|4|R15 + 分类适用于15或更旧的查看者|
 |agesAbove18|5|R18 + 分类适用于18岁或更早的观众|
+
 
 
 

@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6461fa802e691ebc3491573462031b3c117c3035
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3d88d3fa5985d4b210e616f6767be660e9f8c9a6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142565"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781391"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>enrollmentConfigurationAssignment 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "30142565"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|id|String|尚未记录|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|尚未记录|
 
 ## <a name="relationships"></a>关系
@@ -54,6 +54,7 @@ ms.locfileid: "30142565"
   }
 }
 ```
+
 
 
 

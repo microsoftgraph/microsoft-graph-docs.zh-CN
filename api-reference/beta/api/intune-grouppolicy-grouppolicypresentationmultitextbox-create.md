@@ -4,12 +4,12 @@ description: 创建新的 groupPolicyPresentationMultiTextBox 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb72cebea71fff791f0b8f5be25abc353b17ee85
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5615488ce6b4e5a7e4d477192b19aedf047f4c22
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981620"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783330"
 ---
 # <a name="create-grouppolicypresentationmultitextbox"></a>创建 groupPolicyPresentationMultiTextBox
 
@@ -53,7 +53,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|必需|Boolean|要求在文本框中输入值。 默认值为 false。|
+|必需|布尔值|要求在文本框中输入值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数, 指定最大文本字符数。 默认值为1023。|
 |maxStrings|Int64|一个无符号整数, 指定最大字符串数。 默认值为 0 。|
 
@@ -97,6 +97,7 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 networkIPv6ConfigurationManagementCondition 对象的属性�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6dcff43475b6aed7392265e49de54bb2fa285fbd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3ea9c859a422d04ae30c8ce8941d938ff78e7411
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987305"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783232"
 ---
 # <a name="get-networkipv6configurationmanagementcondition"></a>获取 networkIPv6ConfigurationManagementCondition
 
@@ -92,6 +92,7 @@ Content-Length: 708
   }
 }
 ```
+
 
 
 

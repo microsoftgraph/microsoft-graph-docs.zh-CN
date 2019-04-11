@@ -4,12 +4,12 @@ description: 读取 windowsMobileMSI 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef7ec5a755feeef49e6196001c22a23cb18e6a75
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 826679cc9aefbe39d85a49ca10503fee925e1731
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981228"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780299"
 ---
 # <a name="get-windowsmobilemsi"></a>获取 windowsMobileMSI
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1296
+Content-Length: 1325
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1296
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -107,6 +108,7 @@ Content-Length: 1296
   }
 }
 ```
+
 
 
 

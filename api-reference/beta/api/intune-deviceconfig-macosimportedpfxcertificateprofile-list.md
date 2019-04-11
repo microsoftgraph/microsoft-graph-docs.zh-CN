@@ -4,12 +4,12 @@ description: 列出 macOSImportedPFXCertificateProfile 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fb13f772d27d1a7b433625fa93b7e2d3b87f380
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b32e9bc2492dd6cd22f981396c65c3ee8241fa62
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971309"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782406"
 ---
 # <a name="list-macosimportedpfxcertificateprofiles"></a>列出 macOSImportedPFXCertificateProfiles
 
@@ -89,6 +89,7 @@ Content-Length: 797
   ]
 }
 ```
+
 
 
 

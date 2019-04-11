@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 882d7a37abcd34e80c9c0d894d0940a53478d6f3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b1beadaf29254bf3b346960d18863159010eda46
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171174"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782658"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardState 枚举类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30171174"
 |notLicensed|双面|未获得凭据防护许可|
 |notConfigured|第三章|未配置|
 |virtualizationBasedSecurityNotRunning|4|基于虚拟化的安全性未运行|
+
 
 
 

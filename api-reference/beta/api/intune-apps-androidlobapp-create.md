@@ -4,12 +4,12 @@ description: 创建新的 androidLobApp 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a592e0439f71da8ad9192ff69fbfc703ebc02b34
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a87209ffa9f5bd4acbeaae77aaf2aa0b968d24d0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958737"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781174"
 ---
 # <a name="create-androidlobapp"></a>创建 androidLobApp
 
@@ -67,6 +67,7 @@ POST /deviceAppManagement/mobileApps
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
@@ -89,7 +90,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1386
+Content-length: 1413
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -113,6 +114,7 @@ Content-length: 1386
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -146,7 +148,7 @@ Content-length: 1386
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1558
+Content-Length: 1585
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -173,6 +175,7 @@ Content-Length: 1558
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -200,6 +203,7 @@ Content-Length: 1558
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

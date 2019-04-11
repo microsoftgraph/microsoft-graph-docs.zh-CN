@@ -4,12 +4,12 @@ description: 更新 macOSOfficeSuiteApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2d16ac32245c5d8964e591f251ab88bb2984772
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0cc1378dc39903599387f67a206c90ac478d5531
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968264"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780768"
 ---
 # <a name="update-macosofficesuiteapp"></a>更新 macOSOfficeSuiteApp
 
@@ -69,6 +69,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 
 
 
@@ -82,7 +83,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 691
+Content-length: 718
 
 {
   "@odata.type": "#microsoft.graph.macOSOfficeSuiteApp",
@@ -105,7 +106,8 @@ Content-length: 691
   "isAssigned": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "dependentAppCount": 1
 }
 ```
 
@@ -114,7 +116,7 @@ Content-length: 691
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 863
+Content-Length: 890
 
 {
   "@odata.type": "#microsoft.graph.macOSOfficeSuiteApp",
@@ -140,9 +142,11 @@ Content-Length: 863
   "isAssigned": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "dependentAppCount": 1
 }
 ```
+
 
 
 

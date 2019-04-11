@@ -4,12 +4,12 @@ description: 读取 deviceManagementScriptAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ccfc1eb1870830e442ef29f17fc28f1a3a872c3e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: aaeb678fd9e4ec553c7b20358790fbc9f301f5bd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971386"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783309"
 ---
 # <a name="get-devicemanagementscriptassignment"></a>获取 deviceManagementScriptAssignment
 
@@ -77,6 +77,7 @@ Content-Length: 250
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 显示 "主页" 按钮;单击 "主页" 按钮, 将加载特定的 U
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e83fd3dbb0961011584ef9d65e01c361ccf6a228
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2dad4baba5fd55b99efd6b2b7ebadf1973d6c9c8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143237"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783713"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>edgeHomeButtonOpensCustomURL 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "30143237"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|homeButtonCustomURL|字符串|要加载的特定 URL。|
+|homeButtonCustomURL|String|要加载的特定 URL。|
 
 ## <a name="relationships"></a>关系
 无
@@ -43,6 +43,7 @@ ms.locfileid: "30143237"
   "homeButtonCustomURL": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 deviceConfigurationUserStatus 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87231b866db45fdbc1035ad420b7021a1c15c81b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9265a59476dc2f31e55dc41ac93024e9da3d5140
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962951"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783484"
 ---
 # <a name="get-deviceconfigurationuserstatus"></a>获取 deviceConfigurationUserStatus
 
@@ -87,6 +87,7 @@ Content-Length: 372
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 跨帐户的设备合规性策略设置状态摘要。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb9802ecca80178eb98ca041d26d45b8688ebb36
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 89cbf2bb8df1ae24917d03c2b4c4535da76be094
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173155"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780411"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>deviceCompliancePolicySettingStateSummary 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "30173155"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |setting|String|设置类名和属性名。|
 |settingName|String|设置的名称。|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|设置平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
@@ -72,6 +72,7 @@ ms.locfileid: "30173155"
   "conflictDeviceCount": 1024
 }
 ```
+
 
 
 

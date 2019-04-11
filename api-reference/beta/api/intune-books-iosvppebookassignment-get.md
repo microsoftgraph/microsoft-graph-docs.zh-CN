@@ -4,12 +4,12 @@ description: 读取 iosVppEBookAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14353514016fe2be9c061f577d6471527c1c1147
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 616f68adc6d56d8d2b11d81345b1538d69ebf1d2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977924"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780978"
 ---
 # <a name="get-iosvppebookassignment"></a>获取 iosVppEBookAssignment
 
@@ -78,6 +78,7 @@ Content-Length: 273
   }
 }
 ```
+
 
 
 

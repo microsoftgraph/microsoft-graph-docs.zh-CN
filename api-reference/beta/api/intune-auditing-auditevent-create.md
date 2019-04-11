@@ -4,12 +4,12 @@ description: 创建新的 auditEvent 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a11ca29ca4d251285ef4f6a1842b9d7174ee66f5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: db854a7a7331600ee33352010439936c59e90e08
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972681"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782707"
 ---
 # <a name="create-auditevent"></a>创建 auditEvent
 
@@ -170,6 +170,7 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
 
 
 

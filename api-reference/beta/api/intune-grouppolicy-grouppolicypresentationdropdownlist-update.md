@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationDropdownList 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 170034d102f0d03bad1ca35e36f1d8219ab249ba
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bee92900d50e5813e12568ce9fd717b01deed590
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989056"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783015"
 ---
 # <a name="update-grouppolicypresentationdropdownlist"></a>更新 groupPolicyPresentationDropdownList
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultItem|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|用于标识项目列表的默认选择的本地化字符串值。|
 |items|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)集合|表示一组本地化的显示名称及其关联的值。|
-|必需|Boolean|要求在 "参数" 框中输入值。 默认值为 false。|
+|必需|布尔值|要求在 "参数" 框中输入值。 默认值为 false。|
 
 
 
@@ -118,6 +118,7 @@ Content-Length: 602
   "required": true
 }
 ```
+
 
 
 

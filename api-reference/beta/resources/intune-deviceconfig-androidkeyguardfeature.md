@@ -4,12 +4,12 @@ description: Android keyguard 功能。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2987a8220bbbcfc99238587a989b890aff958e47
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b0ff958273d8b39293709b14a960d8bd6b3ea940
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161948"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784388"
 ---
 # <a name="androidkeyguardfeature-enum-type"></a>androidKeyguardFeature 枚举类型
 
@@ -30,6 +30,7 @@ Android keyguard 功能。
 |其次|5|在安全 keyguard 屏幕上使用指纹传感器。|
 |remoteInput|型|在安全 keyguard 屏幕上时发出通知文本条目。|
 |allFeatures|步|在安全 keyguard 屏幕上时的所有 keyguard 功能。|
+
 
 
 

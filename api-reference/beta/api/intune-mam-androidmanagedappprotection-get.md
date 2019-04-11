@@ -4,12 +4,12 @@ description: 读取 androidManagedAppProtection 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70da0cc9fbeca949026eed1eb5114c307374e7ca
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 564ff47389ce0a45bc1222df7956e9a09dcec67c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962048"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783998"
 ---
 # <a name="get-androidmanagedappprotection"></a>获取 androidManagedAppProtection
 
@@ -138,6 +138,7 @@ Content-Length: 3101
   }
 }
 ```
+
 
 
 

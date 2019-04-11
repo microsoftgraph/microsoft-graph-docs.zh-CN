@@ -4,12 +4,12 @@ description: 更新 windowsWifiConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a74afbbab4f3d3beea45f423f323d75998c3010f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 07573055554ac68aea1caa14a774c92bb2ef713f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983447"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781566"
 ---
 # <a name="update-windowswificonfiguration"></a>更新 windowsWifiConfiguration
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -65,14 +65,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|为 wifi 连接指定按流量计费的连接限制类型。 可取值为：`unrestricted`、`fixed`、`variable`。|
 |ssid|String|指定 wifi 连接的 SSID。|
 |networkName|String|指定网络配置名称。|
-|connectAutomatically|Boolean|指定是否在范围内自动连接 wifi 连接。|
-|connectToPreferredNetwork|Boolean|指定 wifi 连接是否应连接到更多的首选网络 (如果已连接到此连接的话)。  要求 ConnectAutomatically 为 true。|
-|connectWhenNetworkNameIsHidden|Boolean|指定是否应自动连接 wifi 连接, 即使 SSID 未进行广播也是如此。|
+|connectAutomatically|布尔值|指定是否在范围内自动连接 wifi 连接。|
+|connectToPreferredNetwork|布尔值|指定 wifi 连接是否应连接到更多的首选网络 (如果已连接到此连接的话)。  要求 ConnectAutomatically 为 true。|
+|connectWhenNetworkNameIsHidden|布尔值|指定是否应自动连接 wifi 连接, 即使 SSID 未进行广播也是如此。|
 |proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|指定 wlan 配置的代理设置。 可取值为：`none`、`manual`、`automatic`。|
 |proxyManualAddress|String|指定代理服务器的 IP 地址。|
 |proxyManualPort|Int32|指定代理服务器的端口。|
 |proxyAutomaticConfigurationUrl|String|指定代理服务器配置脚本的 URL。|
-|forceFIPSCompliance|Boolean|指定是否强制进行 FIPS 合规性。|
+|forceFIPSCompliance|布尔值|指定是否强制进行 FIPS 合规性。|
 
 
 
@@ -147,6 +147,7 @@ Content-Length: 958
   "forceFIPSCompliance": true
 }
 ```
+
 
 
 

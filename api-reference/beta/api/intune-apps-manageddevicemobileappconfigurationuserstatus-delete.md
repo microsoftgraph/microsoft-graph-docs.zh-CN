@@ -4,12 +4,12 @@ description: 删除 managedDeviceMobileAppConfigurationUserStatus。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3d8e86895d56b95cbb0afe8dd6bda8e3afd1d63
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1714f1aadc4eb802bc96eadd553dc6bdabb62c60
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980241"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780369"
 ---
 # <a name="delete-manageddevicemobileappconfigurationuserstatus"></a>删除 managedDeviceMobileAppConfigurationUserStatus
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

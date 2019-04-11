@@ -4,12 +4,12 @@ description: 列出 deviceManagementBooleanSettingInstance 对象的属性和关
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec53073b22b068a71d58d32af3f43ef4d4a983e7
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 51e5a8042da8d7c3ded9760686104bbcbbcd0c10
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523789"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782000"
 ---
 # <a name="list-devicemanagementbooleansettinginstances"></a>列出 deviceManagementBooleanSettingInstances
 
@@ -79,8 +79,6 @@ Content-Length: 278
   ]
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 数据共享同意信息。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75ef8b899c6fa7645b31cd77ada7420b0f753a60
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7e1cb144957ee000a4e077f0f9c58065fad3a8dc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174648"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780194"
 ---
 # <a name="datasharingconsent-resource-type"></a>dataSharingConsent 资源类型
 
@@ -32,13 +32,13 @@ ms.locfileid: "30174648"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|数据共享同意 Id|
-|serviceDisplayName|字符串|服务工作流的显示名称|
-|termsUrl|字符串|数据共享同意的 TermsUrl|
-|granted|布尔|"数据共享同意" 的 "已授予" 状态|
+|id|String|数据共享同意 Id|
+|serviceDisplayName|String|服务工作流的显示名称|
+|termsUrl|String|数据共享同意的 TermsUrl|
+|granted|布尔值|"数据共享同意" 的 "已授予" 状态|
 |grantDateTime|DateTimeOffset|授予此帐户的时间许可|
-|grantedByUpn|字符串|授予此帐户同意的用户的 Upn|
-|grantedByUserId|字符串|授予此帐户同意的用户的用户 id|
+|grantedByUpn|String|授予此帐户同意的用户的 Upn|
+|grantedByUserId|String|授予此帐户同意的用户的用户 id|
 
 ## <a name="relationships"></a>关系
 无
@@ -63,6 +63,7 @@ ms.locfileid: "30174648"
   "grantedByUserId": "String"
 }
 ```
+
 
 
 

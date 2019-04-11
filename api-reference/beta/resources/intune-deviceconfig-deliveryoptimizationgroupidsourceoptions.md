@@ -4,12 +4,12 @@ description: 组 id 选项类型
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d54a98bef3b9c0e0517b426332b8d3223e904c8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0cd541fd9ff3a91f40be1b6ccea67787cdad2567
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177852"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784864"
 ---
 # <a name="deliveryoptimizationgroupidsourceoptions-resource-type"></a>deliveryOptimizationGroupIdSourceOptions 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "30177852"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|groupIdSourceOption|[deliveryOptimizationGroupIdOptionsType](../resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)|将此策略设置为限制对特定源的对等方选择。 可取值为：`notConfigured`、`adSite`、`authenticatedDomainSid`、`dhcpUserOption`、`dnsSuffix`。|
+|groupIdSourceOption|[deliveryOptimizationGroupIdOptionsType](../resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)|将此策略设置为限制对特定源的对等方选择。 可取值为：`notConfigured`、`adSite`、`authenticatedDomainSid`、`dhcpUserOption` 或 `dnsSuffix`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -43,6 +43,7 @@ ms.locfileid: "30177852"
   "groupIdSourceOption": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 用于保存用于通过 Google 的 Android 管理 API (如令牌�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0cd3ede4193ea3fdb33d33010349812150848e7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0422bf09d990c02c984b45fa144d6ae12661f718
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169340"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784437"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>androidEnrollmentCompanyCode 资源类型
 
@@ -48,6 +48,7 @@ ms.locfileid: "30169340"
   }
 }
 ```
+
 
 
 

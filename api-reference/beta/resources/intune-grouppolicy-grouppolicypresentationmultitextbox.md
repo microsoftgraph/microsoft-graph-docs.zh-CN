@@ -4,12 +4,12 @@ description: 表示 admx multiTextBox 元素和 admx multiText 元素。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70656a4922227371c1f4aa795b851acd4a8f5de9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0f17177b55d6033b35c4476e9df61150e785ba45
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163845"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784458"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>groupPolicyPresentationMultiTextBox 资源类型
 
@@ -34,17 +34,17 @@ ms.locfileid: "30163845"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|标签|String|任何演示文稿实体的本地化文本标签。 默认值为空。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|必需|Boolean|要求在文本框中输入值。 默认值为 false。|
+|必需|布尔值|要求在文本框中输入值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数, 指定最大文本字符数。 默认值为1023。|
-|maxStrings|Int64|一个无符号整数, 指定最大字符串数。 默认值为0。|
+|maxStrings|Int64|一个无符号整数, 指定最大字符串数。 默认值为 0 。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|与演示文稿相关联的组策略定义。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|定义|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|与演示文稿相关联的组策略定义。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -65,6 +65,7 @@ ms.locfileid: "30163845"
   "maxStrings": 1024
 }
 ```
+
 
 
 

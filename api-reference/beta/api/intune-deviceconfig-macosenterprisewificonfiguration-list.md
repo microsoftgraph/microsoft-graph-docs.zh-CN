@@ -4,12 +4,12 @@ description: 列出 macOSEnterpriseWiFiConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5611087e8b4c2bcd552859140cf5ec422ec20a4e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a204cc0c842451e88e1e678c2b7b0e467c9cf09e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974970"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780502"
 ---
 # <a name="list-macosenterprisewificonfigurations"></a>列出 macOSEnterpriseWiFiConfigurations
 
@@ -101,6 +101,7 @@ Content-Length: 1406
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 deviceCompliancePolicyDeviceStateSummary 对象的属性和�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb1a670a5bad56be70e7fcdf825593bede032038
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 263aa01436577c1a79d1d285fd000ec5e51ceb7c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985492"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782014"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>获取 deviceCompliancePolicyDeviceStateSummary
 
@@ -83,6 +83,7 @@ Content-Length: 439
   }
 }
 ```
+
 
 
 

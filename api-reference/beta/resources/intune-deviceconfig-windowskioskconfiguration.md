@@ -4,12 +4,12 @@ description: 此实体提供展台资源公开的已声明方法、属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63b9269086aa97b6be543abcc201288c00eba456
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 92cea089ea86e1ad56607442ac983d83c0c78e68
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572514"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784577"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>windowsKioskConfiguration 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "30572514"
 |[列出 windowsKioskConfigurations](../api/intune-deviceconfig-windowskioskconfiguration-list.md)|[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)集合|列出[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)对象的属性和关系。|
 |[获取 windowsKioskConfiguration](../api/intune-deviceconfig-windowskioskconfiguration-get.md)|[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)|读取[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)对象的属性和关系。|
 |[创建 windowsKioskConfiguration](../api/intune-deviceconfig-windowskioskconfiguration-create.md)|[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)|创建新的[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)对象。|
-|[删除 windowsKioskConfiguration](../api/intune-deviceconfig-windowskioskconfiguration-delete.md)|None|删除[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)。|
+|[删除 windowsKioskConfiguration](../api/intune-deviceconfig-windowskioskconfiguration-delete.md)|无|删除[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)。|
 |[更新 windowsKioskConfiguration](../api/intune-deviceconfig-windowskioskconfiguration-update.md)|[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)|更新[windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md)对象的属性。|
 
 ## <a name="properties"></a>属性
@@ -36,21 +36,21 @@ ms.locfileid: "30572514"
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md)集合|此策略设置允许为展台配置定义展台配置文件的列表。 此集合最多可包含3个元素。|
-|kioskBrowserDefaultUrl|字符串|指定浏览器在启动时应导航到的默认 URL。|
-|kioskBrowserEnableHomeButton|Boolean|启用展台浏览器的 "主页" 按钮。 默认情况下, "主页" 按钮处于禁用状态。|
-|kioskBrowserEnableNavigationButtons|Boolean|启用展台浏览器的导航按钮 (前进/后退)。 默认情况下, 导航按钮处于禁用状态。|
-|kioskBrowserEnableEndSessionButton|Boolean|启用展台浏览器的结束会话按钮。 默认情况下, "结束会话" 按钮处于禁用状态。|
+|kioskBrowserDefaultUrl|String|指定浏览器在启动时应导航到的默认 URL。|
+|kioskBrowserEnableHomeButton|布尔值|启用展台浏览器的 "主页" 按钮。 默认情况下, "主页" 按钮处于禁用状态。|
+|kioskBrowserEnableNavigationButtons|布尔值|启用展台浏览器的导航按钮 (前进/后退)。 默认情况下, 导航按钮处于禁用状态。|
+|kioskBrowserEnableEndSessionButton|布尔值|启用展台浏览器的结束会话按钮。 默认情况下, "结束会话" 按钮处于禁用状态。|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|指定在展台浏览器以全新状态重新启动之前会话处于空闲状态的分钟数。  有效值为1-1440。 有效值为1至1440|
-|kioskBrowserBlockedURLs|String collection|指定展台浏览器不应导航到的 url|
-|kioskBrowserBlockedUrlExceptions|String collection|指定展台浏览器允许其导航到的 url|
-|edgeKioskEnablePublicBrowsing|Boolean|为 Microsoft Edge 浏览器启用公共浏览展台模式。 默认值为 false。|
+|kioskBrowserBlockedURLs|String 集合|指定展台浏览器不应导航到的 url|
+|kioskBrowserBlockedUrlExceptions|String 集合|指定展台浏览器允许其导航到的 url|
+|edgeKioskEnablePublicBrowsing|布尔值|为 Microsoft Edge 浏览器启用公共浏览展台模式。 默认值为 false。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -129,6 +129,7 @@ ms.locfileid: "30572514"
   "edgeKioskEnablePublicBrowsing": true
 }
 ```
+
 
 
 

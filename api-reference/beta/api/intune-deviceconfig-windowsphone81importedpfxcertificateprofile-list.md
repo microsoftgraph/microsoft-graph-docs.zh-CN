@@ -4,12 +4,12 @@ description: 列出 windowsPhone81ImportedPFXCertificateProfile 对象的属性�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9e6e1d8900d5c0bb4dc541d2c09e92460a9bfde
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 935cdc6697156e5105cacc38eb1764a12ed73852
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961390"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780229"
 ---
 # <a name="list-windowsphone81importedpfxcertificateprofiles"></a>列出 windowsPhone81ImportedPFXCertificateProfiles
 
@@ -90,6 +90,7 @@ Content-Length: 868
   ]
 }
 ```
+
 
 
 

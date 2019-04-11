@@ -4,12 +4,12 @@ description: 读取 resourceOperation 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 30733448080002ee52f86ea189b885126daef83b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2ab1a48550e8b99b942baac2bcc9e37542606011
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970189"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780159"
 ---
 # <a name="get-resourceoperation"></a>获取 resourceOperation
 
@@ -79,6 +79,7 @@ Content-Length: 331
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 证书吊销状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c182cf2317f185108570116a283973d481f17ab2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5fd9a6cd34df322a057d16e3d803d8685f7cd173
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159442"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782805"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>certificateRevocationStatus 枚举类型
 
@@ -25,8 +25,9 @@ ms.locfileid: "30159442"
 |无|0|未被吊销。|
 |决|1|撤销挂起。|
 |io|双面|已发出吊销命令。|
-|failed|第三章|吊销失败。|
+|未能|第三章|吊销失败。|
 |吊销|4|吊销.|
+
 
 
 

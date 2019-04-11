@@ -4,12 +4,12 @@ description: 传递优化最大缓存大小百分比类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7579b95d0adefb09c9312596f4604fe9d5b05548
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5f48b85c269da4204b985a19701b9d40a50358e6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177831"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780663"
 ---
 # <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a>deliveryOptimizationMaxCacheSizePercentage 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "30177831"
   "maximumCacheSizePercentage": 1024
 }
 ```
+
 
 
 

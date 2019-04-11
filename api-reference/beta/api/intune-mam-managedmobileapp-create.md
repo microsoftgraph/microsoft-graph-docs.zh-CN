@@ -4,12 +4,12 @@ description: 创建新的 managedMobileApp 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 188095ec57e46898cbbccd31668d2ce9b4fd75a6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d825acd6700c3415320c229c18a80e6aa30a1de2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984042"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782224"
 ---
 # <a name="create-managedmobileapp"></a>创建 managedMobileApp
 
@@ -96,6 +96,7 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
+
 
 
 

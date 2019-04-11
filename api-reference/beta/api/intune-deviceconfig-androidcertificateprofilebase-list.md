@@ -4,12 +4,12 @@ description: 列出 androidCertificateProfileBase 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e412772fedfea9dc4bea7582b9fc7f47e56a500
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8d73052f902a4e9a8583a552764785d9fdd32c09
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980339"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781937"
 ---
 # <a name="list-androidcertificateprofilebases"></a>列出 androidCertificateProfileBases
 
@@ -95,6 +95,7 @@ Content-Length: 968
   ]
 }
 ```
+
 
 
 

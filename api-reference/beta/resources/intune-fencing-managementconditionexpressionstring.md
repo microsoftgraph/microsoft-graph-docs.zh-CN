@@ -4,12 +4,12 @@ description: 管理条件表达式字符串是管理条件表达式的字符串�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc4552ab6cc97676ced32ae7e7f5649262c4f4f7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f3dac405c71e4e85cc29bb36d335a57bb51fbe0f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151007"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783736"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>managementConditionExpressionString 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "30151007"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|value|字符串|管理条件语句表达式字符串值。|
+|value|String|管理条件语句表达式字符串值。|
 
 ## <a name="relationships"></a>关系
 无
@@ -43,6 +43,7 @@ ms.locfileid: "30151007"
   "value": "String"
 }
 ```
+
 
 
 

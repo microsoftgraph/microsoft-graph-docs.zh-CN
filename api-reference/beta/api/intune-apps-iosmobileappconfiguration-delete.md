@@ -4,12 +4,12 @@ description: 删除 iosMobileAppConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75160353484d4f7a44f0b786b5471c15be930c54
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ab157d96f8557463a2a248ace7b7ec23f9e5775f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986101"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781314"
 ---
 # <a name="delete-iosmobileappconfiguration"></a>删除 iosMobileAppConfiguration
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

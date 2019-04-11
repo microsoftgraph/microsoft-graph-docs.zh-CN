@@ -4,12 +4,12 @@ description: 停用设备
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e4aa2cd4211b37695c08248e1ff5b8f64e44aeb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4b687d776893eb0de2402dadde57fda44c45340c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967074"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784493"
 ---
 # <a name="retire-action"></a>retire 操作
 
@@ -34,9 +34,9 @@ ms.locfileid: "30967074"
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/retire
 POST /deviceManagement/managedDevices/{managedDeviceId}/retire
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/retire
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/retire
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/retire
 ```
 
@@ -57,7 +57,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/retire
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/retire
 ```
 
 ### <a name="response"></a>响应
@@ -65,6 +65,7 @@ POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

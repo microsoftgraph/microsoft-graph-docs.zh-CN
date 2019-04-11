@@ -4,12 +4,12 @@ description: 列出 androidForWorkScepCertificateProfile 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0d390cf4245a79e9ef14e7e9eb482f361bf7a43
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 24214bf70813769794681a1eaf64f8f1784add63
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984007"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781405"
 ---
 # <a name="list-androidforworkscepcertificateprofiles"></a>列出 androidForWorkScepCertificateProfiles
 
@@ -90,6 +90,7 @@ Content-Length: 1566
           "objectIdentifier": "Object Identifier value"
         }
       ],
+      "subjectAlternativeNameType": "emailAddress",
       "scepServerUrls": [
         "Scep Server Urls value"
       ],
@@ -105,12 +106,12 @@ Content-Length: 1566
           "sanType": "emailAddress",
           "name": "Name value"
         }
-      ],
-      "subjectAlternativeNameType": "emailAddress"
+      ]
     }
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 androidForWorkApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 557b7a64b9dd75f88e4258bd83d6be9c9ab4d377
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5be7c09de0d797b30748b2dcdcd28ff266b29468
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974599"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782917"
 ---
 # <a name="get-androidforworkapp"></a>获取 androidForWorkApp
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1125
+Content-Length: 1154
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1125
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "packageId": "Package Id value",
     "appIdentifier": "App Identifier value",
     "usedLicenseCount": 0,
@@ -103,6 +104,7 @@ Content-Length: 1125
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 windows81VpnConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1e8a535296277a76de2201d0d19ff345aa0503a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: dbdf2bdecce6c0ebdea9eaf6c34509b574f11095
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961852"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784514"
 ---
 # <a name="delete-windows81vpnconfiguration"></a>删除 windows81VpnConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

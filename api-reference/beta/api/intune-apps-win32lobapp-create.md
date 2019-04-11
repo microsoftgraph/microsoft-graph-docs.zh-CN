@@ -4,12 +4,12 @@ description: 创建新的 win32LobApp 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a945b6118c016cfa93cd1ea87958718f60bd2ea4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9b4249ff5579ea29ca7c756956f6260df079a3a6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958541"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784815"
 ---
 # <a name="create-win32lobapp"></a>创建 win32LobApp
 
@@ -67,6 +67,7 @@ POST /deviceAppManagement/mobileApps
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
@@ -79,6 +80,7 @@ POST /deviceAppManagement/mobileApps
 |minimumNumberOfProcessors|Int32|安装此应用程序所需的最小处理器数的值。|
 |minimumCpuSpeedInMHz|Int32|安装此应用程序所需的最低 CPU 速度的值。|
 |detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)集合|检测到 Win32 业务线 (LoB) 应用程序的检测规则。|
+|requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)集合|用于检测 Win32 业务线 (LoB) 应用程序的要求规则。|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用的安装体验。|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)集合|用于安装后行为的返回代码。|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 msi 应用程序, 则为 msi 详细信息。|
@@ -96,7 +98,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2364
+Content-length: 2732
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -120,6 +122,7 @@ Content-length: 2364
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -149,6 +152,17 @@ Content-length: 2364
       "detectionType": "exists",
       "operator": "equal",
       "detectionValue": "Detection Value value"
+    }
+  ],
+  "requirementRules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRequirement",
+      "operator": "equal",
+      "detectionValue": "Detection Value value",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "detectionType": "exists"
     }
   ],
   "installExperience": {
@@ -181,7 +195,7 @@ Content-length: 2364
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2536
+Content-Length: 2904
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -208,6 +222,7 @@ Content-Length: 2536
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -239,6 +254,17 @@ Content-Length: 2536
       "detectionValue": "Detection Value value"
     }
   ],
+  "requirementRules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRequirement",
+      "operator": "equal",
+      "detectionValue": "Detection Value value",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "detectionType": "exists"
+    }
+  ],
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "user"
@@ -263,6 +289,7 @@ Content-Length: 2536
   "setupFilePath": "Setup File Path value"
 }
 ```
+
 
 
 

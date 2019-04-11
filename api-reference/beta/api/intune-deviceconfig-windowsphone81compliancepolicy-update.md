@@ -4,12 +4,12 @@ description: 更新 windowsPhone81CompliancePolicy 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: edd05d3f90698c5ec4a4aa9e10259a0f6976fedd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 804fdb19f5f9ba17afb3b8880f7b3ed602cdf197
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964288"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782413"
 ---
 # <a name="update-windowsphone81compliancepolicy"></a>更新 windowsPhone81CompliancePolicy
 
@@ -64,7 +64,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
-|passwordRequired|Boolean|是否需要密码。|
+|passwordRequired|布尔值|是否需要密码。|
 |osMinimumVersion|String|最低 Windows Phone 版本。|
 |osMaximumVersion|String|最高 Windows Phone 版本。|
 |storageRequireEncryption|Boolean|要求对 Windows Phone 设备加密。|
@@ -136,6 +136,7 @@ Content-Length: 841
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

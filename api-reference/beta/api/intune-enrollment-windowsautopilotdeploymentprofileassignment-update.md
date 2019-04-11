@@ -4,12 +4,12 @@ description: 更新 windowsAutopilotDeploymentProfileAssignment 对象的属性�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32a8be36d4c426a316dc5dc86df76276b2bb6981
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 562ae8b137754acc3475ba98fb335a4f7e7310dd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986444"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783400"
 ---
 # <a name="update-windowsautopilotdeploymentprofileassignment"></a>更新 windowsAutopilotDeploymentProfileAssignment
 
@@ -90,6 +90,7 @@ Content-Length: 232
   }
 }
 ```
+
 
 
 

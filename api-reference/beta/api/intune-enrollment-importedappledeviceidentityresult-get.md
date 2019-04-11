@@ -4,12 +4,12 @@ description: 读取 importedAppleDeviceIdentityResult 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7427b15f8172039a7337f15c7cab22fea18b722d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 94d2f467edb0830423bdf0b30ba5f18aff4fa8d2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957603"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782154"
 ---
 # <a name="get-importedappledeviceidentityresult"></a>获取 importedAppleDeviceIdentityResult
 
@@ -85,6 +85,7 @@ Content-Length: 675
   }
 }
 ```
+
 
 
 

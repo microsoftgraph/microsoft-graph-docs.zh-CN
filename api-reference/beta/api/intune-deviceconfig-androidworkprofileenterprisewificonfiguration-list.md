@@ -4,12 +4,12 @@ description: 列出 androidWorkProfileEnterpriseWiFiConfiguration 对象的属�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4fdcb2a9510763ac1e59e21b619b17ed4267e62
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9d8654e3266b09c528a7e4be62586ea2d165b6aa
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972289"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782091"
 ---
 # <a name="list-androidworkprofileenterprisewificonfigurations"></a>列出 androidWorkProfileEnterpriseWiFiConfigurations
 
@@ -93,6 +93,7 @@ Content-Length: 1065
   ]
 }
 ```
+
 
 
 

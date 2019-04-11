@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationValueText 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21680b8f97837dd65c4c214ad04399792b4bedda
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7146ae749f08d4de2319406381700c49e123574b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957624"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782343"
 ---
 # <a name="update-grouppolicypresentationvaluetext"></a>更新 groupPolicyPresentationValueText
 
@@ -90,6 +90,7 @@ Content-Length: 273
   "value": "Value value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 advancedThreatProtectionOnboardingDeviceSettingState 对象�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63083ad5dc17460505396cca5fc52632647744b8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 39120d0fca4daec77b720176bbec4f36703fca5b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961425"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783316"
 ---
 # <a name="get-advancedthreatprotectiononboardingdevicesettingstate"></a>获取 advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -86,6 +86,7 @@ Content-Length: 669
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Windows management 应用运行状况状态实体。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8841b79b9a284a15999db701e82a2b5062e2930b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5c02904a5a4cc4d0242c35e487d30f2b2ed6083a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148536"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784780"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>windowsManagementAppHealthState 资源类型
 
@@ -31,12 +31,12 @@ Windows management 应用运行状况状态实体。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Windows management 应用运行状况状态的唯一标识符|
+|id|String|Windows management 应用运行状况状态的唯一标识符|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows 管理应用运行状况状态。 可取值为：`unknown`、`healthy`、`unhealthy`。|
-|installedVersion|字符串|Windows 管理应用程序已安装版本。|
+|installedVersion|String|Windows 管理应用程序已安装版本。|
 |lastCheckInDateTime|DateTimeOffset|Windows 管理应用程序上次签入时间。|
 |deviceName|String|在其上安装 Windows management 应用的设备的名称。|
-|deviceOSVersion|字符串|windows 10 OS 版本的 windows management app 安装在该设备上。|
+|deviceOSVersion|String|windows 10 OS 版本的 windows management app 安装在该设备上。|
 
 ## <a name="relationships"></a>关系
 无
@@ -60,6 +60,7 @@ Windows management 应用运行状况状态实体。
   "deviceOSVersion": "String"
 }
 ```
+
 
 
 

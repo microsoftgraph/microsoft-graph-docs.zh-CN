@@ -4,12 +4,12 @@ description: 读取 androidForWorkCustomConfiguration 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7efbd5530e1574ec004f7e0b4d6b9cd2d7eb490
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b2e6a4faf3f94846a34a3ee7f725abece6769e20
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960333"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781433"
 ---
 # <a name="get-androidforworkcustomconfiguration"></a>获取 androidForWorkCustomConfiguration
 
@@ -94,6 +94,7 @@ Content-Length: 732
   }
 }
 ```
+
 
 
 

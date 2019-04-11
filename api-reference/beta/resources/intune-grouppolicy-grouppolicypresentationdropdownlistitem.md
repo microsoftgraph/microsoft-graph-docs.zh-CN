@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 628d749446520a0925945dab1f200e1367804087
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bccbd186c3b63145473509bec4312ad0633fe535
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147962"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784141"
 ---
 # <a name="grouppolicypresentationdropdownlistitem-resource-type"></a>groupPolicyPresentationDropdownListItem 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "30147962"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|下拉列表项的本地化显示名称。|
-|值|字符串|下拉列表项的关联值|
+|displayName|String|下拉列表项的本地化显示名称。|
+|value|String|下拉列表项的关联值|
 
 ## <a name="relationships"></a>关系
 无
@@ -42,6 +42,7 @@ ms.locfileid: "30147962"
   "value": "String"
 }
 ```
+
 
 
 

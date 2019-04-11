@@ -4,12 +4,12 @@ description: 电子邮件同步计划的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad725c393b68805c2d6ac2470718fd68a7b0f16d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1da569d7050e88dd5eb41640bc2d8eaa602bb2b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174844"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781279"
 ---
 # <a name="emailsyncschedule-enum-type"></a>emailSyncSchedule 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30174844"
 |thirtyMinutes|4|每三十分钟同步一次。|
 |sixtyMinutes|5|每60分钟同步一次。|
 |basedOnMyUsage|型|根据我的使用情况进行同步。|
+
 
 
 

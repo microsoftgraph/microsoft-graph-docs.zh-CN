@@ -4,12 +4,12 @@ description: 支持的管理条件表达式的二元运算符。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35f60b9ee321ef3cbd65cf77273a65e7705f666a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: afba6f274f6a597a77c2684800caf7b52d65aed1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143804"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784703"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>binaryManagementConditionExpressionOperatorType 枚举类型
 
@@ -23,7 +23,8 @@ ms.locfileid: "30143804"
 |成员|值|说明|
 |:---|:---|:---|
 |或|0|当且仅当一个或多个操作数为 true 时, 将一组操作数评估为 true。|
-|和|1|当且仅当其所有操作数均为 true 时, 将一组操作数评估为 true。|
+|and|1|当且仅当其所有操作数均为 true 时, 将一组操作数评估为 true。|
+
 
 
 

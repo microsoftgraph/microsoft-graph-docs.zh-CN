@@ -4,12 +4,12 @@ description: OMA 设置整数定义。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cb87ecf7f658e9eb6ed19904a09460d2b2695be4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 54eec27cf91bb1da7790ae1432452ac026bf1683
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172322"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781923"
 ---
 # <a name="omasettinginteger-resource-type"></a>omaSettingInteger 资源类型
 
@@ -25,7 +25,7 @@ OMA 设置整数定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |值|Int32|值。|
@@ -49,6 +49,7 @@ OMA 设置整数定义。
   "value": 1024
 }
 ```
+
 
 
 

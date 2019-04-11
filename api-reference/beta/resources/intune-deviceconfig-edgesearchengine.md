@@ -4,12 +4,12 @@ description: 允许 IT 管理员为 MDM 控制的设备设置预定义的默认�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75c5864a9f9d78b9ea9555c31ae1bc2baec28e49
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 86604849a488f9f9bf8626f8bfba205efd11a532
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163215"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782763"
 ---
 # <a name="edgesearchengine-resource-type"></a>edgeSearchEngine 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "30163215"
 |:---|:---|:---|
 |edgeSearchEngineType|[edgeSearchEngineType](../resources/intune-deviceconfig-edgesearchenginetype.md)|允许 IT 管理员为 MDM 控制的设备设置预定义的默认搜索引擎。 可取值为：`default`、`bing`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -43,6 +43,7 @@ ms.locfileid: "30163215"
   "edgeSearchEngineType": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 允许 IT admind 为受 MDM 控制的设备设置预定义的默认
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d20abb4e0ffb6dc6a99ea323c920dc2065eb36e6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 64c0adffd21f6411b2ea86a29d7d5b72233924a0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161612"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783176"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>windowsSpotlightEnablementSettings 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30161612"
 |notConfigured|0|未配置 "在锁屏上聚焦" 屏幕|
 |禁用|1|在锁屏屏幕上禁用 Windows 聚焦|
 |enabled|双面|在锁屏屏幕上启用 Windows 聚焦|
+
 
 
 

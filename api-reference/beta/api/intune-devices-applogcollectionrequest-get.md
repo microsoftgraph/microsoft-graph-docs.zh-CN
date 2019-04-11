@@ -4,12 +4,12 @@ description: 读取 appLogCollectionRequest 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f3daa16ac5a343db6f057e74f80096c568bc0eb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1d7183082374adaf9fb1016002868297f63a93c4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959850"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782133"
 ---
 # <a name="get-applogcollectionrequest"></a>获取 appLogCollectionRequest
 
@@ -80,6 +80,7 @@ Content-Length: 341
   }
 }
 ```
+
 
 
 

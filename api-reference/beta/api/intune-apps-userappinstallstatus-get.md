@@ -4,12 +4,12 @@ description: 读取 userAppInstallStatus 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8400dd6ab8e2be4b464207065cd77fbe065f7e2
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1cf893e2121d5c2499a2049d7cf39a8eb3e26ec9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962384"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781902"
 ---
 # <a name="get-userappinstallstatus"></a>获取 userAppInstallStatus
 
@@ -79,6 +79,7 @@ Content-Length: 321
   }
 }
 ```
+
 
 
 
