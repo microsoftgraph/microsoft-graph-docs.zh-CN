@@ -4,12 +4,12 @@ description: 删除 macOSScepCertificateProfile。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d6b2a382f6f184a9b6c730748f8253e382b8068
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 720d1b19fed45762fd3a4973c62b6788564fcf0c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980836"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772921"
 ---
 # <a name="delete-macosscepcertificateprofile"></a>删除 macOSScepCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

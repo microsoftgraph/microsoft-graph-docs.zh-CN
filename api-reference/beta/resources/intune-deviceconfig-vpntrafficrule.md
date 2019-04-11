@@ -4,12 +4,12 @@ description: VPN 流量规则定义。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd004341928260187518966e2356f59faff57898
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c22ead3b037ff18dbd9c1dedbf68b11f2b55a3bc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139940"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771885"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule 资源类型
 
@@ -22,7 +22,7 @@ VPN 流量规则定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|字符串|别名.|
+|name|String|别名.|
 |协议|Int32|协议 (0-255)。 有效值为0至255|
 |localPortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)集合|仅当 protocol 为 TCP 或 UDP (6 或 17) 时, 才能设置本地端口范围。 该集合最多可包含 500 个元素。|
 |remotePortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)集合|仅当 protocol 为 TCP 或 UDP (6 或 17) 时, 才能设置远程端口范围。 该集合最多可包含 500 个元素。|
@@ -31,7 +31,7 @@ VPN 流量规则定义。
 |appId|String|应用程序标识符 (如果应用程序触发此流量规则)。|
 |appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|应用程序类型 (如果应用程序触发此流量规则)。 可取值为：`none`、`desktop`、`universal`。|
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|当应用程序触发时, 指示是否要沿此路由启用拆分隧道。 可取值为：`none`、`splitTunnel`、`forceTunnel`。|
-|声明|字符串|与此流量规则关联的声明。|
+|声称|String|与此流量规则关联的声明。|
 
 ## <a name="relationships"></a>关系
 无
@@ -82,6 +82,7 @@ VPN 流量规则定义。
   "claims": "String"
 }
 ```
+
 
 
 

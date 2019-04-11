@@ -4,12 +4,12 @@ description: 列出 iosVppApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba31286eb405c7d7e7699bef471a84e15e13de7c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 056e5225ca018f650eea8a42d6f2d31cce285430
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966493"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774860"
 ---
 # <a name="list-iosvppapps"></a>列出 iosVppApps
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2413
+Content-Length: 2444
 
 {
   "value": [
@@ -91,6 +91,7 @@ Content-Length: 2413
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
       "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -130,6 +131,7 @@ Content-Length: 2413
   ]
 }
 ```
+
 
 
 

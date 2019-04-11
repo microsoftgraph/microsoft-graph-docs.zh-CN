@@ -4,12 +4,12 @@ description: 更新 importedAppleDeviceIdentityResult 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c52a6c6dc591a2ccb5c8bd71dbc7f5c074d8564
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3c90d79b2af81e832e15f8d53f6aac446b5311f0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969601"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771213"
 ---
 # <a name="update-importedappledeviceidentityresult"></a>更新 importedAppleDeviceIdentityResult
 
@@ -60,8 +60,8 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 |lastContactedDateTime|DateTimeOffset|从[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)继承的设备的上次联系日期时间|
 |description|String|从[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)继承的设备的说明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune 中的设备的状态继承自[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|platform|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 继承自[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|status|Boolean|导入的设备标识的状态|
+|platform|[platform](../resources/intune-enrollment-platform.md)|设备的平台。 继承自[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
+|status|布尔值|导入的设备标识的状态|
 
 
 
@@ -115,6 +115,7 @@ Content-Length: 630
   "status": true
 }
 ```
+
 
 
 

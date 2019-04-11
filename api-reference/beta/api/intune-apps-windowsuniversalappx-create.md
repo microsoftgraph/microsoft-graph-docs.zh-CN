@@ -4,12 +4,12 @@ description: 创建新的 windowsUniversalAppX 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc6678b950ca5894b5fd480e74f8a4ab4ed371dd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3e73f49b21b353ce1947f3d5c0f9ad35269c8fa8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971561"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773439"
 ---
 # <a name="create-windowsuniversalappx"></a>创建 windowsUniversalAppX
 
@@ -67,6 +67,7 @@ POST /deviceAppManagement/mobileApps
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
@@ -91,7 +92,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1388
+Content-length: 1415
 
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -115,6 +116,7 @@ Content-length: 1388
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -143,7 +145,7 @@ Content-length: 1388
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1560
+Content-Length: 1587
 
 {
   "@odata.type": "#microsoft.graph.windowsUniversalAppX",
@@ -170,6 +172,7 @@ Content-Length: 1560
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -192,6 +195,7 @@ Content-Length: 1560
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

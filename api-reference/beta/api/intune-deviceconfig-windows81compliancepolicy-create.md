@@ -4,12 +4,12 @@ description: 创建新的 windows81CompliancePolicy 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c2c8646185ca0355aceab0863f375768e390d38
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1ea2f8c87341689d7db42a33e1bc653eefd4136b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985177"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770690"
 ---
 # <a name="create-windows81compliancepolicy"></a>创建 windows81CompliancePolicy
 
@@ -57,7 +57,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|passwordRequired|Boolean|需要密码才可解锁 Windows 设备。|
+|passwordRequired|布尔值|需要密码才可解锁 Windows 设备。|
 |passwordBlockSimple|Boolean|指示是否阻止简单密码。|
 |passwordExpirationDays|Int32|密码过期天数。|
 |passwordMinimumLength|Int32|密码最短长度。|
@@ -136,6 +136,7 @@ Content-Length: 836
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

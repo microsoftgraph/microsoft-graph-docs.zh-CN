@@ -4,12 +4,12 @@ description: 读取 androidCertificateProfileBase 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37cc5555f799daea5a67e623a9588e40a6bdb8d1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 17080d435678ac9c03039f9a34c257f5501bcc4e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964897"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773362"
 ---
 # <a name="get-androidcertificateprofilebase"></a>获取 androidCertificateProfileBase
 
@@ -98,6 +98,7 @@ Content-Length: 908
   }
 }
 ```
+
 
 
 

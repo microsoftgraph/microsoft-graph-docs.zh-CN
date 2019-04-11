@@ -4,12 +4,12 @@ description: 删除 windows10EasEmailProfileConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdd7d2f67e0856575a889d1eae1d21f83e7f0002
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2c37591634d585e116f1728be4e55f6ca2956877
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981347"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770555"
 ---
 # <a name="delete-windows10easemailprofileconfiguration"></a>删除 windows10EasEmailProfileConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

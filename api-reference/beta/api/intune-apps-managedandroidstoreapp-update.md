@@ -4,12 +4,12 @@ description: 更新 managedAndroidStoreApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e934496db707e87e6995d787143c7ab2d76c1e68
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0b037aafb1be17fe11f77e0a23ed7bd50fc67813
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963063"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770982"
 ---
 # <a name="update-managedandroidstoreapp"></a>更新 managedAndroidStoreApp
 
@@ -69,6 +69,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|应用程序的可用性。 继承自[managedApp](../resources/intune-apps-managedapp.md)。 可取值为：`global`、`lineOfBusiness`。|
 |version|String|应用程序的版本。 继承自 [managedApp](../resources/intune-apps-managedapp.md)|
 |packageId|String|应用的包 ID。|
@@ -87,7 +88,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1237
+Content-length: 1264
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -111,6 +112,7 @@ Content-length: 1237
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "packageId": "Package Id value",
@@ -140,7 +142,7 @@ Content-length: 1237
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1409
+Content-Length: 1436
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -167,6 +169,7 @@ Content-Length: 1409
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "packageId": "Package Id value",
@@ -190,6 +193,7 @@ Content-Length: 1409
   }
 }
 ```
+
 
 
 

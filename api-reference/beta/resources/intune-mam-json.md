@@ -4,12 +4,12 @@ description: 表示以 JSON 格式返回的数据
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c602b1dd355d2780d564ffe3a6e25b3c18bff7ac
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 16ad26bc81d236d153c6188817575b4d682e6ce9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153926"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771612"
 ---
 # <a name="json-resource-type"></a>Json 资源类型
 
@@ -38,6 +38,7 @@ ms.locfileid: "30153926"
   "@odata.type": "#microsoft.graph.Json"
 }
 ```
+
 
 
 

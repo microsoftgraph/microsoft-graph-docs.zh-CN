@@ -4,12 +4,12 @@ description: 美国的电视内容评级标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d016565ba9fdbb62ea24d39d52f0e2931bab3117
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8e280ad851e9d53b8c1dc2d000419d8aaa2d9c6c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166834"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771360"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>ratingUnitedStatesTelevisionType 枚举类型
 
@@ -30,6 +30,7 @@ ms.locfileid: "30166834"
 |parentalGuidance|5|TV PG、家长指导|
 |childrenAbove14|型|电视-14, 儿童年龄14及更高版本|
 |成人|步|仅限成人的电视-MA|
+
 
 
 

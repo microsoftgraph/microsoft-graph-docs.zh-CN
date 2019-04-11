@@ -4,12 +4,12 @@ description: 创建新的 termsAndConditionsAcceptanceStatus 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f52776540219acfc61dfb096b6b7b3d742f8ac9e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 086d84a79a593dc04b6975ea3e46809a9f1c8d21
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974305"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771661"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>创建 termsAndConditionsAcceptanceStatus
 
@@ -92,6 +92,7 @@ Content-Length: 260
   "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
 }
 ```
+
 
 
 

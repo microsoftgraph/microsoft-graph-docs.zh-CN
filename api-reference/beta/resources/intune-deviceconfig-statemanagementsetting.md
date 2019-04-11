@@ -4,12 +4,12 @@ description: 状态管理设置。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 437f76852c75dfc3cfb44e67d52b89ffa42dba20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 553c746eded6c71d2195a7899917a57bce8441c1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170362"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771920"
 ---
 # <a name="statemanagementsetting-enum-type"></a>stateManagementSetting 枚举类型
 
@@ -23,8 +23,9 @@ ms.locfileid: "30170362"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|已阻止|1|堵塞.|
+|堵塞|1|堵塞.|
 |支持|双面|支持.|
+
 
 
 

@@ -4,12 +4,12 @@ description: OMA 设置布尔定义。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 739c7377b2b85ff3bae9dd0cf755961a9ca3cbb9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ff861d014ea134be95975977eccf3672d9be6698
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161591"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773649"
 ---
 # <a name="omasettingboolean-resource-type"></a>omaSettingBoolean 资源类型
 
@@ -26,7 +26,7 @@ OMA 设置布尔定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|字符串|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Boolean|值。|
 
@@ -49,6 +49,7 @@ OMA 设置布尔定义。
   "value": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 表示用于用户权限设置的本地用户或组的信息。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68c514635540bcf12db27e8a9ca816573293d3ad
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cfdb49ef0b98e3d76d092b1ebf9574d6df8c47d9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174858"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774713"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>deviceManagementUserRightsLocalUserOrGroup 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "30174858"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|字符串|此本地用户或组的名称。|
-|说明|字符串|管理员对此本地用户或组的说明。|
-|securityIdentifier|字符串|此本地用户或组的安全标识符 (例如 * S-1-5-32-544)。|
+|name|String|此本地用户或组的名称。|
+|description|字符串|管理员对此本地用户或组的说明。|
+|securityIdentifier|String|此本地用户或组的安全标识符 (例如 * S-1-5-32-544)。|
 
 ## <a name="relationships"></a>关系
 无
@@ -44,6 +44,7 @@ ms.locfileid: "30174858"
   "securityIdentifier": "String"
 }
 ```
+
 
 
 

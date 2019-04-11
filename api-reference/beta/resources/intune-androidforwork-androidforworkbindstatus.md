@@ -4,12 +4,12 @@ description: 使用 Google EMM API 的租户的绑定状态
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f926f808e566263fd59526aa5531baf827ce3f72
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 74d5079dcde477fb99ac96eeed72e105506b9d81
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139562"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772074"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>androidForWorkBindStatus 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30139562"
 |绑定|1|尚未记录|
 |boundAndValidated|双面|尚未记录|
 |解除|第三章|尚未记录|
+
 
 
 

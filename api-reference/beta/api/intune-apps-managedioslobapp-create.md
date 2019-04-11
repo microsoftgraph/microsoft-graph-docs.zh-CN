@@ -4,12 +4,12 @@ description: 创建新的 managedIOSLobApp 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d83596cc07dab20efb5a53e812fcdfbb3560bd79
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e51887909019e6c42767e03cf44e275a364b60b5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973836"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771374"
 ---
 # <a name="create-managedioslobapp"></a>创建 managedIOSLobApp
 
@@ -67,6 +67,7 @@ POST /deviceAppManagement/mobileApps
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|应用程序的可用性。 继承自[managedApp](../resources/intune-apps-managedapp.md)。 可取值为：`global`、`lineOfBusiness`。|
 |version|String|应用程序的版本。 继承自 [managedApp](../resources/intune-apps-managedapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
@@ -92,7 +93,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1442
+Content-length: 1469
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -116,6 +117,7 @@ Content-length: 1442
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
@@ -147,7 +149,7 @@ Content-length: 1442
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1614
+Content-Length: 1641
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -174,6 +176,7 @@ Content-Length: 1614
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
@@ -199,6 +202,7 @@ Content-Length: 1614
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

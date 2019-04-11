@@ -4,12 +4,12 @@ description: 设备位置
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1eaa46929ae627dbf6cdee8d300b7910b4817ffc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: acf2987e7c022754ff0659d82027b4d0d26901bd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149600"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772172"
 ---
 # <a name="devicegeolocation-resource-type"></a>deviceGeoLocation 资源类型
 
@@ -56,6 +56,7 @@ ms.locfileid: "30149600"
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
+
 
 
 

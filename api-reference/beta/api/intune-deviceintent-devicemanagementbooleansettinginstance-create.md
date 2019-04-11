@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementBooleanSettingInstance 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ebbdb0964af92056eac19c63da9f9dc4a5a9778
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 239fef02ae06cbacc193c06de03fdb6ba3dbedb9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522606"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770464"
 ---
 # <a name="create-devicemanagementbooleansettinginstance"></a>创建 deviceManagementBooleanSettingInstance
 
@@ -95,8 +95,6 @@ Content-Length: 225
   "value": true
 }
 ```
-
-
 
 
 

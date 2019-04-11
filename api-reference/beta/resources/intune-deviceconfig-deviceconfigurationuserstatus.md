@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4a0bc100347649f58f210bf0f4f65c0640edaf73
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4c7d975d3c59976a2880f7299917d8a1158ddc4d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173610"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773208"
 ---
 # <a name="deviceconfigurationuserstatus-resource-type"></a>deviceConfigurationUserStatus 资源类型
 
@@ -31,12 +31,12 @@ ms.locfileid: "30173610"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |userDisplayName|String|DevicePolicyStatus 的用户名。|
 |devicesCount|Int32|该用户的设备计数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|字符串|UserPrincipalName。|
+|userPrincipalName|String|UserPrincipalName。|
 
 ## <a name="relationships"></a>关系
 无
@@ -60,6 +60,7 @@ ms.locfileid: "30173610"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

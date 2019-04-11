@@ -4,12 +4,12 @@ description: 删除 windows10CompliancePolicy。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87bd2e940626066d51b4a7b4285bc5363b52afd5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d24c5eb6028110dfcdd88ae26ce4c614a48f49f9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975537"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772158"
 ---
 # <a name="delete-windows10compliancepolicy"></a>删除 windows10CompliancePolicy
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

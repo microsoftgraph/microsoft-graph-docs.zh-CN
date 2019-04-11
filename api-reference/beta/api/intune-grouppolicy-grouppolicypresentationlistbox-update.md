@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationListBox 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 635f78e3bbbde80e0f7107f42d250019198a9887
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e1714ccb918cb145574e6868cabf024558fc76f3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961376"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773901"
 ---
 # <a name="update-grouppolicypresentationlistbox"></a>更新 groupPolicyPresentationListBox
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|explicitValue|Boolean|如果指定此选项, 则用户必须指定注册表子项值和注册表子项名称。 列表框显示两列, 一个用于名称, 一个用于数据。 默认值为 false。|
+|explicitValue|布尔值|如果指定此选项, 则用户必须指定注册表子项值和注册表子项名称。 列表框显示两列, 一个用于名称, 一个用于数据。 默认值为 false。|
 
 
 
@@ -92,6 +92,7 @@ Content-Length: 238
   "explicitValue": true
 }
 ```
+
 
 
 

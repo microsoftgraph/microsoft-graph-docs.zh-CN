@@ -4,12 +4,12 @@ description: 创建新的 androidDeviceOwnerWiFiConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d6a69c43ef51024226a89e700a6495bfddfdb2b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: aa815b191a13937a411faf209155028a488b72d0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976279"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773516"
 ---
 # <a name="create-androiddeviceownerwificonfiguration"></a>创建 androidDeviceOwnerWiFiConfiguration
 
@@ -54,18 +54,18 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |networkName|String|网络名称|
 |ssid|String|这是广播到所有设备的 wi-fi 网络的名称。|
-|connectAutomatically|Boolean|当此网络在范围内时自动连接。 将此设置为 true 将跳过用户提示, 并自动将设备连接到 wlan 网络。|
-|connectWhenNetworkNameIsHidden|Boolean|当设置为 true 时, 此配置文件将强制设备连接到不会将其 SSID 广播给所有设备的网络。|
+|connectAutomatically|布尔值|当此网络在范围内时自动连接。 将此设置为 true 将跳过用户提示, 并自动将设备连接到 wlan 网络。|
+|connectWhenNetworkNameIsHidden|布尔值|当设置为 true 时, 此配置文件将强制设备连接到不会将其 SSID 广播给所有设备的网络。|
 |wiFiSecurityType|[androidDeviceOwnerWiFiSecurityType](../resources/intune-deviceconfig-androiddeviceownerwifisecuritytype.md)|指示 wi-fi 终结点是否使用基于 EAP 的安全类型。 可取值为：`open`、`wep`、`wpaPersonal`。|
 |preSharedKey|String|这是 WPA 个人 wi-fi 网络的预共享密钥。|
-|preSharedKeyIsSet|Boolean|这是 WPA 个人 wi-fi 网络的预共享密钥。|
+|preSharedKeyIsSet|布尔值|这是 WPA 个人 wi-fi 网络的预共享密钥。|
 
 
 
@@ -128,6 +128,7 @@ Content-Length: 681
   "preSharedKeyIsSet": true
 }
 ```
+
 
 
 

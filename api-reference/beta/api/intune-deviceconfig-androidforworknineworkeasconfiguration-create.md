@@ -4,12 +4,12 @@ description: 创建新的 androidForWorkNineWorkEasConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d8493d75b3a4755d8a883c61534b7a0b3c20fad
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d60043a2a88d2be8ebb6acf41428908bfd05aa86
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984049"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771864"
 ---
 # <a name="create-androidforworknineworkeasconfiguration"></a>创建 androidForWorkNineWorkEasConfiguration
 
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -63,11 +63,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|应将电子邮件同步到的时间段。 继承自[androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)。 可取值为：`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth` 或 `unlimited`。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|在设备上安装之前, 从 AAD 中选出并插入到此配置文件中的电子邮件属性。 继承自[androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
 |hostName|String|邮件应用程序连接到的 Exchange 位置 (URL)。 继承自[androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)|
-|requireSsl|Boolean|指示是否使用 SSL。 继承自[androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)|
+|requireSsl|布尔值|指示是否使用 SSL。 继承自[androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)|
 |usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|在设备上安装之前, 从 AAD 中选取并插入到此配置文件中的 Username 属性。 继承自[androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md)。 可取值为：`username`、`userPrincipalName`、`samAccountName`、`primarySmtpAddress`。|
-|syncCalendar|Boolean|切换同步日历。 如果设置为 false, 则表示设备上的日历处于关闭状态。|
-|syncContacts|Boolean|切换同步联系人。 如果设置为 false, 则设备上的联系人处于关闭状态。|
-|syncTasks|Boolean|切换同步任务。 如果设备上的 "设置为 false 任务" 处于关闭状态。|
+|syncCalendar|布尔值|切换同步日历。 如果设置为 false, 则表示设备上的日历处于关闭状态。|
+|syncContacts|布尔值|切换同步联系人。 如果设置为 false, 则设备上的联系人处于关闭状态。|
+|syncTasks|布尔值|切换同步任务。 如果设备上的 "设置为 false 任务" 处于关闭状态。|
 
 
 
@@ -134,6 +134,7 @@ Content-Length: 738
   "syncTasks": true
 }
 ```
+
 
 
 

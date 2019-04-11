@@ -4,12 +4,12 @@ description: 表示一般性故障的事件。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d4cbdba099e273ad1e48fede43a445111929b6a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8eb30a9759ee26a93f3a5d32874cebe457850389
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143272"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771913"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>deviceManagementTroubleshootingEvent 资源类型
 
@@ -31,11 +31,11 @@ ms.locfileid: "30143272"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|对象的 UUID|
+|id|String|对象的 UUID|
 |eventDateTime|DateTimeOffset|事件发生的时间。|
 |correlationId|String|用于跟踪服务中的故障的 ID。|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|包含有关错误及其修正的详细信息的对象。|
-|名|字符串|与疑难解答事件对应的事件名称。 它是可选字段|
+|名|String|与疑难解答事件对应的事件名称。 它是可选字段|
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对, 提供有关疑难解答事件的其他信息|
 
 ## <a name="relationships"></a>关系
@@ -79,7 +79,6 @@ ms.locfileid: "30143272"
   ]
 }
 ```
-
 
 
 

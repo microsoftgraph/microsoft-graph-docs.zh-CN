@@ -4,12 +4,12 @@ description: 删除了 windowsphone81appxbundle。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82aa53bb94266ab8770a4616c64b449d5f611f64
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fae900dc82a81ecc01dd3281811fe9e03b4ef32a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958506"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770296"
 ---
 # <a name="delete-windowsphone81appxbundle"></a>删除了 windowsphone81appxbundle
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

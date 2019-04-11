@@ -4,12 +4,12 @@ description: 更新 deviceEnrollmentPlatformRestrictionsConfiguration 对象的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7432e9bd253499ac225ba6f033dd6af5b43e266
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c2897815a7324f88d4c10c4e5c940bc2d6b078cc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967725"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772648"
 ---
 # <a name="update-deviceenrollmentplatformrestrictionsconfiguration"></a>更新 deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -204,6 +204,7 @@ Content-Length: 2403
   }
 }
 ```
+
 
 
 

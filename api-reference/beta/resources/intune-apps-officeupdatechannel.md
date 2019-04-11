@@ -4,12 +4,12 @@ description: 用于指定 Office365 更新频道的枚举。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62b91cc33ecce517015e7070caacd4dab8b9fbcf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4db2473213e879b7beee7f082767bb4a9f63aee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147857"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772109"
 ---
 # <a name="officeupdatechannel-enum-type"></a>officeUpdateChannel 枚举类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30147857"
 |关联表|双面|尚未记录|
 |firstReleaseCurrent|第三章|尚未记录|
 |firstReleaseDeferred|4|尚未记录|
+
 
 
 

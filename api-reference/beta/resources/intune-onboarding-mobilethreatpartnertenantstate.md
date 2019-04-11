@@ -4,12 +4,12 @@ description: 此租户的合作伙伴状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 57a20c07c55d4204b7505319476be8737e364a18
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b145805247a41f28e957cc024941d0e0448a73ff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168297"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772291"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30168297"
 |可用|1|合作伙伴可用。|
 |enabled|双面|启用合作伙伴。|
 |无|第三章|合作伙伴无响应。|
+
 
 
 

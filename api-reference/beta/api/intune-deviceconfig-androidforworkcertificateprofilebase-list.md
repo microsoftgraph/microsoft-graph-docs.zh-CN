@@ -4,12 +4,12 @@ description: 列出 androidForWorkCertificateProfileBase 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3203170703fb1e3ea6490797dfbe985c94a2eff9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f50d90bc706064ed1add8166a31c417900dc6ccb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981473"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773803"
 ---
 # <a name="list-androidforworkcertificateprofilebases"></a>列出 androidForWorkCertificateProfileBases
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 922
+Content-Length: 975
 
 {
   "value": [
@@ -89,11 +89,13 @@ Content-Length: 922
           "name": "Name value",
           "objectIdentifier": "Object Identifier value"
         }
-      ]
+      ],
+      "subjectAlternativeNameType": "emailAddress"
     }
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 实体表示策略定义上的列表框演示文稿的名称/值对
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 885fc70e51353bf2df9eedfe6293147c3778fc3a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 89c3f6a538777e7f5b4e1393164a3ed243d76903
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155396"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771115"
 ---
 # <a name="grouppolicypresentationvaluelist-resource-type"></a>groupPolicyPresentationValueList 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "30155396"
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|values|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|关联的演示文稿的一对列表。|
+|值|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|关联的演示文稿的一对列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -68,6 +68,7 @@ ms.locfileid: "30155396"
   ]
 }
 ```
+
 
 
 

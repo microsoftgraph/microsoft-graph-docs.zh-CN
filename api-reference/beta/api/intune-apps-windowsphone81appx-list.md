@@ -4,12 +4,12 @@ description: 列出了 windowsphone81appx 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2d75c7ce3b7e408cc772a9afeaafc6c8af4fec6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 74fd1c1cc525508472f3d097113ec3ce8173cc31
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962307"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773726"
 ---
 # <a name="list-windowsphone81appxs"></a>列出 windowsPhone81AppXs
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1821
+Content-Length: 1852
 
 {
   "value": [
@@ -91,6 +91,7 @@ Content-Length: 1821
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -115,6 +116,7 @@ Content-Length: 1821
   ]
 }
 ```
+
 
 
 

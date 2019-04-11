@@ -4,12 +4,12 @@ description: 列出 deviceManagementScriptUserState 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c419401df73e5cee5749582a6cd7b1c60e839cb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d4d16a8c54a0fc099ef173db8e72ecbed5a11f3b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969132"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773908"
 ---
 # <a name="list-devicemanagementscriptuserstates"></a>列出 deviceManagementScriptUserStates
 
@@ -76,6 +76,7 @@ Content-Length: 282
   ]
 }
 ```
+
 
 
 

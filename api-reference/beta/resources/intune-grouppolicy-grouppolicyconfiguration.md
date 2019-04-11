@@ -4,12 +4,12 @@ description: 组策略配置实体包含一个或多个组策略定义的配置�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 540da94d92f3056a6699b7112f3589f6da4b7144
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f9c925ba10b1dde26e51a64b912c33143d58def3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160751"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774440"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>groupPolicyConfiguration 资源类型
 
@@ -27,14 +27,14 @@ ms.locfileid: "30160751"
 |[创建 groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-create.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|创建新的[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)对象。|
 |[删除 groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-delete.md)|无|删除[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)。|
 |[更新 groupPolicyConfiguration](../api/intune-grouppolicy-grouppolicyconfiguration-update.md)|[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|更新[groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md)对象的属性。|
-|[assign 操作](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)集合|尚未记录|
+|[分配操作](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|[groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)集合|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |displayName|String|用户提供的资源对象的名称。|
-|说明|String|用户提供的资源对象的说明。|
+|description|String|用户提供的资源对象的说明。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
@@ -62,6 +62,7 @@ ms.locfileid: "30160751"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 加密报告的策略详细信息
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9232acd2a155169385956b9d20b3011c963090a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9c9903b54483fc6f77cd183abee0e54b10acf9cc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177915"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771010"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>encryptionReportPolicyDetails 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "30177915"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|policyId|字符串|加密报告的策略 Id|
-|policyName|字符串|加密报告的策略名称|
+|policyId|String|加密报告的策略 Id|
+|policyName|String|加密报告的策略名称|
 
 ## <a name="relationships"></a>关系
 无
@@ -42,6 +42,7 @@ ms.locfileid: "30177915"
   "policyName": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 列出 deviceManagementIntentDeviceSettingStateSummary 对象的属
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52382173b6982a76948d9fef86239c7111e52c7c
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 7820b432fff0c7c59043504547f0b5ec01854184
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522361"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774146"
 ---
 # <a name="list-devicemanagementintentdevicesettingstatesummaries"></a>列出 deviceManagementIntentDeviceSettingStateSummaries
 
@@ -80,8 +80,6 @@ Content-Length: 398
   ]
 }
 ```
-
-
 
 
 

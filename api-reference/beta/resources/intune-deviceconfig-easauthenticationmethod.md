@@ -4,12 +4,12 @@ description: Exchange 主动同步身份验证方法。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e60c1168ad1c0e35628822fa6b111ea4959c90c9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 465370d47a38d4f4c234b724060f33ab4f89a723
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145736"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774349"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>easAuthenticationMethod 枚举类型
 
@@ -23,7 +23,8 @@ Exchange 主动同步身份验证方法。
 |成员|值|说明|
 |:---|:---|:---|
 |usernameAndPassword|0|使用用户名和密码进行身份验证。|
-|certificate|1|使用证书进行身份验证。|
+|证书|1|使用证书进行身份验证。|
+
 
 
 

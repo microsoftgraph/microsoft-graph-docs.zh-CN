@@ -4,12 +4,12 @@ description: 邮件模板的品牌选项。 已在 Intune 管理员控制台中�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e208f0d1ba1e72e1598120ec844fa77a4b8d3b9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5972e1a450d7ad9b568edb96c609c71fff1df579
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172441"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773873"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30172441"
 |includeCompanyLogo|1|包括公司徽标。|
 |includeCompanyName|双面|包括公司名称。|
 |includeContactInformation|4|包含联系人信息。|
+
 
 
 

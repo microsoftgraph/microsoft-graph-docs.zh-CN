@@ -4,12 +4,12 @@ description: 列出 iosVppAppAssignedDeviceLicense 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 61ae06fdfb35b804f33b9d5bb6143ab785924bc4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e81d08c01f88231fede223ee40275c4390076736
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975285"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772431"
 ---
 # <a name="list-iosvppappassigneddevicelicenses"></a>列出 iosVppAppAssignedDeviceLicenses
 
@@ -79,6 +79,7 @@ Content-Length: 441
   ]
 }
 ```
+
 
 
 

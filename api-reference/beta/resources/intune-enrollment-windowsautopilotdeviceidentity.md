@@ -4,12 +4,12 @@ description: windowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4eaa6f948354164debd73793524d047b1ba204fd
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 5729c1b47a56f06ffd931df66b2c0ae1d76adc5b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571436"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774727"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>windowsAutopilotDeviceIdentity 资源类型
 
@@ -39,7 +39,8 @@ windowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Windows autopilot 设备的配置文件分配状态。 可取值为：`unknown`、`assignedInSync`、`assignedOutOfSync`、`assignedUnkownSyncState`、`notAssigned`、`pending` 或 `failed`。|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|配置文件分配 Windows autopilot 设备的详细状态。 可取值为：`none`、`hardwareRequirementsNotMet`。|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Windows autopilot 设备的配置文件设置时间。|
-|orderIdentifier|String|Windows autopilot 设备的顺序标识符。|
+|orderIdentifier|String|Windows autopilot 设备的顺序标识符-已弃用|
+|groupTag|String|Windows autopilot 设备的 Group 标记。|
 |purchaseOrderIdentifier|String|Windows autopilot 设备的采购订单标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|字符串|Windows autopilot 设备产品密钥。|
@@ -77,6 +78,7 @@ windowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
   "deploymentProfileAssignmentDetailedStatus": "String",
   "deploymentProfileAssignedDateTime": "String (timestamp)",
   "orderIdentifier": "String",
+  "groupTag": "String",
   "purchaseOrderIdentifier": "String",
   "serialNumber": "String",
   "productKey": "String",
@@ -93,6 +95,7 @@ windowsAutopilotDeviceIdentity 资源表示 Windows Autopilot 设备。
   "managedDeviceId": "String"
 }
 ```
+
 
 
 

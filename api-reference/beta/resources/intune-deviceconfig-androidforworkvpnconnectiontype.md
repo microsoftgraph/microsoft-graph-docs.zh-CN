@@ -4,12 +4,12 @@ description: 适用于 Android 的工作 VPN 连接类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db2804111bd63e886a24ff043e2f3d39c768a93e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4a8cffb385549f803a55f1414592663f10908ae
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156264"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773152"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>androidForWorkVpnConnectionType 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "30156264"
 |dellSonicWallMobileConnect|第三章|戴尔 SonicWALL 移动连接。|
 |checkPointCapsuleVpn|4|检查点胶囊 VPN。|
 |citrix|5|Citrix|
+
 
 
 

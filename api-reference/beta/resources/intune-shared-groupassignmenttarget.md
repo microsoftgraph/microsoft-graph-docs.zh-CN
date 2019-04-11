@@ -4,12 +4,12 @@ description: 表示组的赋值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68a276dc2a750db801b6f4ae893dbfc57ae66a97
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d67b7789f30dd1226c7918e734d615db4ee83ac
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140304"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773292"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>groupAssignmentTarget 资源类型
 
@@ -43,6 +43,7 @@ ms.locfileid: "30140304"
   "groupId": "String"
 }
 ```
+
 
 
 

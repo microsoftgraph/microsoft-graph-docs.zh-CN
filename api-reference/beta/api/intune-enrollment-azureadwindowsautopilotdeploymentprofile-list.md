@@ -4,12 +4,12 @@ description: 列出 azureADWindowsAutopilotDeploymentProfile 对象的属性和�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbc636e7e7ae66ab3206a7dafe375e55a4f896f7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ad94902263cd62ee7bd06d52e39fe6717d8dab1f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960375"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774181"
 ---
 # <a name="list-azureadwindowsautopilotdeploymentprofiles"></a>列出 azureADWindowsAutopilotDeploymentProfiles
 
@@ -101,6 +101,7 @@ Content-Length: 1422
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 读取 deviceComplianceDeviceOverview 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6819d575529343b0290e1a3518fe4f1781db1207
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 567595a61cb282b2b26ac9ec1a3ee2d06a5cd6c4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975425"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774020"
 ---
 # <a name="get-devicecompliancedeviceoverview"></a>获取 deviceComplianceDeviceOverview
 
@@ -83,6 +83,7 @@ Content-Length: 432
   }
 }
 ```
+
 
 
 

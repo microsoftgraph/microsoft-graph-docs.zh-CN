@@ -4,12 +4,12 @@ description: Microsoft Intune 中设备的管理状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a53b07f89ee551d3e559a42bbe23c5fba808f20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 05dc0db1ecbe88616ca36db82bad2081b4133e3f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174142"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772907"
 ---
 # <a name="managementstate-enum-type"></a>managementState 枚举类型
 
@@ -34,6 +34,7 @@ Microsoft Intune 中设备的管理状态。
 |wipeCanceled|第|已取消此设备的擦除命令|
 |retireCanceled|10|已取消此设备的停用命令|
 |探索|11x17|设备已被发现, 但未完全注册。|
+
 
 
 

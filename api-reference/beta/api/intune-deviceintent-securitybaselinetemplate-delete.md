@@ -4,12 +4,12 @@ description: 删除 securityBaselineTemplate。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e171d8da79680e903ca7e58b6da7020fe02e3c89
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 1218c3131938feb61591182d2821389e8f545cf3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522704"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772676"
 ---
 # <a name="delete-securitybaselinetemplate"></a>删除 securityBaselineTemplate
 
@@ -62,8 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

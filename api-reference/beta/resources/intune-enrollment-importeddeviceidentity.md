@@ -4,12 +4,12 @@ description: importedDeviceIdentity 资源表示已为预注册配置预暂存�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f5dcc3d7ef6cb59bffe1d7b8cfda958e76c3e35
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: d7cc903fa1b30177f037493fe090ebfde31831b0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572101"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771941"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>importedDeviceIdentity 资源类型
 
@@ -39,9 +39,9 @@ importedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯
 |lastModifiedDateTime|DateTimeOffset|说明的上次修改日期时间|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
-|说明|String|设备的说明|
+|description|String|设备的说明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune 中设备的状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|platform|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
+|platform|[platform](../resources/intune-enrollment-platform.md)|设备的平台。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -68,6 +68,7 @@ importedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯
   "platform": "String"
 }
 ```
+
 
 
 

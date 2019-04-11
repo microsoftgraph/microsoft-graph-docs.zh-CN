@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab12a9d04cb385660932f33efd7ab4129adf889e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e7874e0080d19b4cadb350b5198a80d1f080ed1c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981893"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770821"
 ---
 # <a name="getmanagementconditionstatementsforplatform-function"></a>getManagementConditionStatementsForPlatform 函数
 
@@ -92,6 +92,7 @@ Content-Length: 576
   ]
 }
 ```
+
 
 
 

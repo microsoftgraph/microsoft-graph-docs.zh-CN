@@ -4,12 +4,12 @@ description: 托管设备上安装的托管或未托管应用。 未托管应用
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e2ace6b945799e8f21af08c3134598b86c05d88
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 01233111e74da95f84d0cbeb81e4675a5c6e049d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142432"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773194"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp 资源类型
 
@@ -22,16 +22,16 @@ ms.locfileid: "30142432"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List detectedApps](../api/intune-devices-detectedapp-list.md)|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|列出 [detectedApp](../resources/intune-devices-detectedapp.md) 对象的属性和关系。|
-|[Get detectedApp](../api/intune-devices-detectedapp-get.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|读取 [detectedApp](../resources/intune-devices-detectedapp.md) 对象的属性和关系。|
-|[Create detectedApp](../api/intune-devices-detectedapp-create.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|创建新的 [detectedApp](../resources/intune-devices-detectedapp.md) 对象。|
-|[Delete detectedApp](../api/intune-devices-detectedapp-delete.md)|无|删除 [detectedApp](../resources/intune-devices-detectedapp.md)。|
-|[Update detectedApp](../api/intune-devices-detectedapp-update.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|更新 [detectedApp](../resources/intune-devices-detectedapp.md) 对象的属性。|
+|[列出 detectedApps](../api/intune-devices-detectedapp-list.md)|[detectedApp](../resources/intune-devices-detectedapp.md) 集合|列出 [detectedApp](../resources/intune-devices-detectedapp.md) 对象的属性和关系。|
+|[获取 detectedApp](../api/intune-devices-detectedapp-get.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|读取 [detectedApp](../resources/intune-devices-detectedapp.md) 对象的属性和关系。|
+|[创建 detectedApp](../api/intune-devices-detectedapp-create.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|创建新的 [detectedApp](../resources/intune-devices-detectedapp.md) 对象。|
+|[删除 detectedApp](../api/intune-devices-detectedapp-delete.md)|无|删除 [detectedApp](../resources/intune-devices-detectedapp.md)。|
+|[更新 detectedApp](../api/intune-devices-detectedapp-update.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|更新 [detectedApp](../resources/intune-devices-detectedapp.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
+|id|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
 |displayName|字符串|发现的应用程序的名称。 只读|
 |version|String|发现的应用程序的版本。 只读|
 |sizeInByte|Int64|发现的应用程序的大小，以字节为单位。 只读|
@@ -60,6 +60,7 @@ ms.locfileid: "30142432"
   "deviceCount": 1024
 }
 ```
+
 
 
 

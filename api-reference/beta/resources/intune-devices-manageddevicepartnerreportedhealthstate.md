@@ -4,12 +4,12 @@ description: 设备运行状况 API 的可用运行状况状态
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60a3071094e2667b896401c6df29977f9923884c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 04ed30c087bb9f607f1579819d09def103658ca3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143769"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772480"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>managedDevicePartnerReportedHealthState 枚举类型
 
@@ -32,6 +32,7 @@ ms.locfileid: "30143769"
 |无|步|移动威胁防护合作伙伴认为设备无响应。 设备运行状况未知。|
 |威胁|utf-8|威胁防御合作伙伴认为设备受到威胁。 这意味着该设备具有活跃的威胁或风险, 最终用户无法轻松修正该设备, 并且用户应联系其 IT 管理员。|
 |配置错误|第|将设备视为与威胁防护合作伙伴配置不正确。 这意味着设备缺少必需的配置文件或配置以使威胁防护合作伙伴正常运行, 因此威胁或风险分析无法完成。|
+
 
 
 

@@ -4,12 +4,12 @@ description: 管理条件语句是一组管理条件, 在满足所有包含的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41b696ee92b3098ea06c55c923fb3058706414ce
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a90d17bd56a2fbb957bdde5ba8b159baeb3ae2e9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167471"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773530"
 ---
 # <a name="managementconditionstatement-resource-type"></a>managementConditionStatement 资源类型
 
@@ -33,9 +33,9 @@ ms.locfileid: "30167471"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
+|id|String|管理条件语句的唯一标识符。 创建时分配的系统生成值。|
 |displayName|String|管理条件语句的管理员定义名称。|
-|说明|字符串|管理员定义的管理条件语句的说明。|
+|description|字符串|管理员定义的管理条件语句的说明。|
 |createdDateTime|DateTimeOffset|管理条件语句的创建时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改管理条件语句的时间。 更新了服务端。|
 |表达式|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|用于评估管理条件语句是否已激活/停用的管理条件语句表达式。|
@@ -73,6 +73,7 @@ ms.locfileid: "30167471"
   ]
 }
 ```
+
 
 
 

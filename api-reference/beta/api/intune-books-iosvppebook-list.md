@@ -4,12 +4,12 @@ description: 列出 iosVppEBook 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41e55b35fd56d7353e179f2c3db9e2e8f6d304aa
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 942a00f848ee5770b6b720513c1f55f3408c7a65
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977616"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773348"
 ---
 # <a name="list-iosvppebooks"></a>列出 iosVppEBooks
 
@@ -99,6 +99,7 @@ Content-Length: 1171
   ]
 }
 ```
+
 
 
 

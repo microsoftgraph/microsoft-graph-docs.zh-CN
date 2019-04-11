@@ -4,12 +4,12 @@ description: 一个代表 MicrosoftStoreForBusinessApp 的包含应用程序的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f3fa508d9b3dc8053024e1ddc82d23ef15311e3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7c1d85373743e66f8d744200a488fa902f0d6944
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166099"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771626"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>microsoftStoreForBusinessContainedApp 资源类型
 
@@ -55,6 +55,7 @@ ms.locfileid: "30166099"
   "appUserModelId": "String"
 }
 ```
+
 
 
 

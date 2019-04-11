@@ -4,12 +4,12 @@ description: 创建新的 iosVppAppAssignedDeviceLicense 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42109f11ffb01fa90b5ecde9e7952d4113fb23ba
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ced922ee489e1f17f6b33df4a2807fee776fe0ff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972905"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771248"
 ---
 # <a name="create-iosvppappassigneddevicelicense"></a>创建 iosVppAppAssignedDeviceLicense
 
@@ -101,6 +101,7 @@ Content-Length: 376
   "deviceName": "Device Name value"
 }
 ```
+
 
 
 

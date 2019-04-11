@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5d1af0e6c91dced1aa12ae72c22430d16674c21
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5f4c6fbfcbefd88af31f2875cf33755b3be21e06
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156376"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773187"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>windowsAutopilotProfileAssignmentStatus 枚举类型
 
@@ -28,7 +28,8 @@ ms.locfileid: "30156376"
 |assignedUnkownSyncState|第三章|在 Intune 中成功分配, 并与 Windows 自动试用程序同步或不同步|
 |notAssigned|4|未分配|
 |决|5|挂起分配|
-|failed|型| 分配失败|
+|未能|型| 分配失败|
+
 
 
 

@@ -4,12 +4,12 @@ description: 创建新的 notificationMessageTemplate 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3a42b9bb9ffff93f1ae92c94899ee1c76e8c6d9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 60f5ef2ae0f46a85e2f793eb90c969a1fb28d311
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959290"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770654"
 ---
 # <a name="create-notificationmessagetemplate"></a>创建 notificationMessageTemplate
 
@@ -101,6 +101,7 @@ Content-Length: 372
   ]
 }
 ```
+
 
 
 

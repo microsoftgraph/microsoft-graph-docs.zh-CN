@@ -4,12 +4,12 @@ description: 表示 ADMX 文本元素。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2021108ef033e1529911de57be24612935896d22
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3fd411b0a8fc8e9ed623a0070e1f670a146970cc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142859"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772844"
 ---
 # <a name="grouppolicypresentationtext-resource-type"></a>groupPolicyPresentationText 资源类型
 
@@ -34,14 +34,14 @@ ms.locfileid: "30142859"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|标签|字符串|任何演示文稿实体的本地化文本标签。 默认值为空。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|与演示文稿相关联的组策略定义。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|定义|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|与演示文稿相关联的组策略定义。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -59,6 +59,7 @@ ms.locfileid: "30142859"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

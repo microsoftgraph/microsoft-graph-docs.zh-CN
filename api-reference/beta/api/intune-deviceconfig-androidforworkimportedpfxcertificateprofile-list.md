@@ -4,12 +4,12 @@ description: 列出 androidForWorkImportedPFXCertificateProfile 对象的属性�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05eac6207534419ad2ae4c34927f1074ed43b248
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 805927c25e4b9741aa742f75d0e86743e213d1de
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30956735"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772263"
 ---
 # <a name="list-androidforworkimportedpfxcertificateprofiles"></a>列出 androidForWorkImportedPFXCertificateProfiles
 
@@ -96,6 +96,7 @@ Content-Length: 1027
   ]
 }
 ```
+
 
 
 

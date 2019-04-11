@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationValueLongDecimal 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cddaed3f562df00e25854bba6beb1f00ee832d43
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5264964eaf3882f83e48be3fb92bbed3065ce03a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968019"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771353"
 ---
 # <a name="update-grouppolicypresentationvaluelongdecimal"></a>更新 groupPolicyPresentationValueLongDecimal
 
@@ -90,6 +90,7 @@ Content-Length: 268
   "value": 5
 }
 ```
+
 
 
 

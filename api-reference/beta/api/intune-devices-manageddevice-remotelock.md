@@ -4,12 +4,12 @@ description: 远程锁定
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35787fe0776774d1f2550b7a3a19d662b42cae0d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d96ccdcb4339400f3460f09e2279f4c8bf76f770
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973626"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770485"
 ---
 # <a name="remotelock-action"></a>remoteLock 操作
 
@@ -34,9 +34,9 @@ ms.locfileid: "30973626"
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/remoteLock
 POST /deviceManagement/managedDevices/{managedDeviceId}/remoteLock
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/remoteLock
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/remoteLock
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/remoteLock
 ```
 
@@ -57,7 +57,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/remoteLock
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/remoteLock
 ```
 
 ### <a name="response"></a>响应
@@ -65,6 +65,7 @@ POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

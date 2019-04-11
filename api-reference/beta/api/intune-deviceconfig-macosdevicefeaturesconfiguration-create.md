@@ -4,12 +4,12 @@ description: 创建新的 macOSDeviceFeaturesConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65b535959a5c8b58bd945870395e83f18ce6d171
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: df5edc6fc28b4e4f9e242bd30cff38458e5edd42
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979359"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771416"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>创建 macOSDeviceFeaturesConfiguration
 
@@ -54,12 +54,30 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |airPrintDestinations|[airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)集合|应始终显示的 AirPrint 打印机的数组。 该集合最多可包含 500 个元素。 继承自[appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
+|autoLaunchItems|[macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)集合|用户登录时要启动的应用程序、文件、文件夹和其他项目的列表。 该集合最多可包含 500 个元素。|
+|adminShowHostInfo|布尔值|是否在登录窗口中显示管理员主机信息。|
+|loginWindowText|String|要在登录窗口中显示的自定义文本。|
+|authorizedUsersListHidden|布尔值|是否在登录窗口中显示 "名称" 和 "密码" 对话框或用户列表。|
+|authorizedUsersListHideLocalUsers|布尔值|是否在登录窗口的授权用户列表中仅显示网络和系统用户。|
+|authorizedUsersListHideMobileAccounts|布尔值|是否在登录窗口上的授权用户列表中隐藏移动用户。|
+|authorizedUsersListIncludeNetworkUsers|布尔值|是否在登录窗口上的授权用户列表中显示网络用户。|
+|authorizedUsersListHideAdminUsers|布尔值|是否在登录窗口的授权用户列表中隐藏管理员用户。|
+|authorizedUsersListShowOtherManagedUsers|布尔值|是否在登录窗口上的授权用户列表中显示其他用户。|
+|shutDownDisabled|布尔值|是否在登录窗口中隐藏 "关机" 按钮项。|
+|restartDisabled|布尔值|是否在登录窗口中隐藏 "重新启动" 按钮项。|
+|sleepDisabled|布尔值|是否在登录窗口中隐藏 "睡眠" 菜单项。|
+|consoleAccessDisabled|布尔值|其他用户是否会忽略使用 ">console>" 的专用用户名。|
+|shutDownDisabledWhileLoggedIn|布尔值|用户登录时是否禁用登录窗口上的 "关闭" 菜单项。|
+|restartDisabledWhileLoggedIn|布尔值|用户登录时是否禁用登录窗口上的重启菜单项。|
+|powerOffDisabledWhileLoggedIn|布尔值|用户登录时登录窗口上的 "断电" 菜单项是否将被禁用。|
+|logOutDisabledWhileLoggedIn|布尔值|用户登录时, 登录窗口上的注销菜单项是否会被禁用。|
+|screenLockDisableImmediate|布尔值|是否禁用即时屏幕锁定功能。|
 
 
 
@@ -73,7 +91,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 500
+Content-length: 1334
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -92,7 +110,31 @@ Content-length: 500
       "port": 4,
       "forceTls": true
     }
-  ]
+  ],
+  "autoLaunchItems": [
+    {
+      "@odata.type": "microsoft.graph.macOSLaunchItem",
+      "path": "Path value",
+      "hide": true
+    }
+  ],
+  "adminShowHostInfo": true,
+  "loginWindowText": "Login Window Text value",
+  "authorizedUsersListHidden": true,
+  "authorizedUsersListHideLocalUsers": true,
+  "authorizedUsersListHideMobileAccounts": true,
+  "authorizedUsersListIncludeNetworkUsers": true,
+  "authorizedUsersListHideAdminUsers": true,
+  "authorizedUsersListShowOtherManagedUsers": true,
+  "shutDownDisabled": true,
+  "restartDisabled": true,
+  "sleepDisabled": true,
+  "consoleAccessDisabled": true,
+  "shutDownDisabledWhileLoggedIn": true,
+  "restartDisabledWhileLoggedIn": true,
+  "powerOffDisabledWhileLoggedIn": true,
+  "logOutDisabledWhileLoggedIn": true,
+  "screenLockDisableImmediate": true
 }
 ```
 
@@ -101,7 +143,7 @@ Content-length: 500
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 672
+Content-Length: 1506
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -123,9 +165,34 @@ Content-Length: 672
       "port": 4,
       "forceTls": true
     }
-  ]
+  ],
+  "autoLaunchItems": [
+    {
+      "@odata.type": "microsoft.graph.macOSLaunchItem",
+      "path": "Path value",
+      "hide": true
+    }
+  ],
+  "adminShowHostInfo": true,
+  "loginWindowText": "Login Window Text value",
+  "authorizedUsersListHidden": true,
+  "authorizedUsersListHideLocalUsers": true,
+  "authorizedUsersListHideMobileAccounts": true,
+  "authorizedUsersListIncludeNetworkUsers": true,
+  "authorizedUsersListHideAdminUsers": true,
+  "authorizedUsersListShowOtherManagedUsers": true,
+  "shutDownDisabled": true,
+  "restartDisabled": true,
+  "sleepDisabled": true,
+  "consoleAccessDisabled": true,
+  "shutDownDisabledWhileLoggedIn": true,
+  "restartDisabledWhileLoggedIn": true,
+  "powerOffDisabledWhileLoggedIn": true,
+  "logOutDisabledWhileLoggedIn": true,
+  "screenLockDisableImmediate": true
 }
 ```
+
 
 
 

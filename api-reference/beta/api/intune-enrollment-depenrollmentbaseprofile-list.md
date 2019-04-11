@@ -4,12 +4,12 @@ description: 列出 depEnrollmentBaseProfile 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d1eed381d2865bee7995b9707b8539330a95aab
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4bdb72bbed0c884aca8f077a557c759774d88424
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977742"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772718"
 ---
 # <a name="list-depenrollmentbaseprofiles"></a>列出 depEnrollmentBaseProfiles
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1145
+Content-Length: 1204
 
 {
   "value": [
@@ -92,11 +92,13 @@ Content-Length: 1145
       "siriDisabled": true,
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
-      "privacyPaneDisabled": true
+      "privacyPaneDisabled": true,
+      "deviceNameTemplate": "Device Name Template value"
     }
   ]
 }
 ```
+
 
 
 

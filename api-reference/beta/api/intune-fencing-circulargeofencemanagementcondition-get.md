@@ -4,12 +4,12 @@ description: 读取 circularGeofenceManagementCondition 对象的属性和关系
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 581df7a9ffd552d66c6d5568e3ca7abcea1e7b5b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 183a63ebb715938fcce63ab3bd8edadacf552a2d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971141"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772592"
 ---
 # <a name="get-circulargeofencemanagementcondition"></a>获取 circularGeofenceManagementCondition
 
@@ -87,6 +87,7 @@ Content-Length: 659
   }
 }
 ```
+
 
 
 

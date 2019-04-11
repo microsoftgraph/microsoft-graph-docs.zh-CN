@@ -4,12 +4,12 @@ description: 创建新的 roleDefinition 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3f23888e92909c629a7b91f010d64f9e184f0b5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3949cf3dbeab5a9c6c1717d2103c574f532aad46
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960193"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772928"
 ---
 # <a name="create-roledefinition"></a>创建 roleDefinition
 
@@ -180,6 +180,7 @@ Content-Length: 1256
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 可能与 Apple volume purchase Program 令牌关联的同步状态
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46de00423a08e7edc6f5ac9c62d1caf0165e1d94
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 59653a8df6c0fd08ffd0d8aa3081d58e56447a95
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170425"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772095"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>vppTokenSyncStatus 枚举类型
 
@@ -25,7 +25,8 @@ ms.locfileid: "30170425"
 |无|0|默认状态。|
 |inProgress|1|上次同步进行中。|
 |后|双面|上次同步成功完成。|
-|failed|第三章|上次同步失败。|
+|未能|第三章|上次同步失败。|
+
 
 
 

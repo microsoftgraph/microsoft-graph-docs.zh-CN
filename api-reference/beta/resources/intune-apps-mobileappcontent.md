@@ -4,12 +4,12 @@ description: 包含特定应用版本的内容属性。 每个 mobileAppContent 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82c2100fb7bd9e906bf6cf9092d3df88865c26e8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4e4b7255f82fe9b0fa0b517e66aeb00e05ee16b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153443"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773985"
 ---
 # <a name="mobileappcontent-resource-type"></a>mobileAppContent 资源类型
 
@@ -53,6 +53,7 @@ ms.locfileid: "30153443"
   "id": "String (identifier)"
 }
 ```
+
 
 
 

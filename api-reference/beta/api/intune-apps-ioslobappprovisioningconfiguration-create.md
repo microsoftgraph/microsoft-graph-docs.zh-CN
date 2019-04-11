@@ -4,12 +4,12 @@ description: 创建新的 iosLobAppProvisioningConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d8cf36c1e4fe957d05463df2dae4975f2d07fcb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 89420fa4680fdb6978ebff209c36f4f81804596a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968656"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772683"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>创建 iosLobAppProvisioningConfiguration
 
@@ -112,6 +112,7 @@ Content-Length: 547
   "version": 7
 }
 ```
+
 
 
 

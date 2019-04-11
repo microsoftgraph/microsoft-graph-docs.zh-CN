@@ -4,12 +4,12 @@ description: 创建新的 embeddedSIMActivationCodePool 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56862e0f59508743df233106f33446c0065e103d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1fc25e95f961630b19b022c4156ef0b6ec2059b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967396"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772067"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>创建 embeddedSIMActivationCodePool
 
@@ -110,6 +110,7 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
+
 
 
 

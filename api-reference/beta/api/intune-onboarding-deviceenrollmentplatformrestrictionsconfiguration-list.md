@@ -4,12 +4,12 @@ description: 列出 deviceEnrollmentPlatformRestrictionsConfiguration 对象的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 447e6620d234f938fda73ef3215344e4dd1d3a0f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 04de8226942b38352198a35a89cea08b63ed4133
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957148"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770324"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>列出 deviceEnrollmentPlatformRestrictionsConfigurations
 
@@ -128,6 +128,7 @@ Content-Length: 2664
   ]
 }
 ```
+
 
 
 

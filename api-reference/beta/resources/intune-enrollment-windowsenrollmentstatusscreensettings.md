@@ -4,12 +4,12 @@ description: 注册状态屏幕设置
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5684a447b82f285784eda1bf71c13f35d766a570
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 18c947bbfc7e11ba4acef967171f77a7806b3509
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148683"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772795"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>windowsEnrollmentStatusScreenSettings 资源类型
 
@@ -22,13 +22,13 @@ ms.locfileid: "30148683"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|hideInstallationProgress|布尔|显示或隐藏用户的安装进度|
-|allowDeviceUseBeforeProfileAndAppInstallComplete|布尔|在配置文件和应用安装完成之前允许或阻止用户使用设备|
-|blockDeviceSetupRetryByUser|布尔|允许用户在安装失败时重试安装程序|
-|allowLogCollectionOnInstallFailure|布尔|在安装失败时允许或阻止日志集合|
-|customErrorMessage|字符串|设置自定义错误消息以在安装失败时显示|
+|hideInstallationProgress|布尔值|显示或隐藏用户的安装进度|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|布尔值|在配置文件和应用安装完成之前允许或阻止用户使用设备|
+|blockDeviceSetupRetryByUser|布尔值|允许用户在安装失败时重试安装程序|
+|allowLogCollectionOnInstallFailure|布尔值|在安装失败时允许或阻止日志集合|
+|customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时 (分钟)|
-|allowDeviceUseOnInstallFailure|布尔|允许用户在安装失败时继续使用设备|
+|allowDeviceUseOnInstallFailure|布尔值|允许用户在安装失败时继续使用设备|
 
 ## <a name="relationships"></a>关系
 无
@@ -52,6 +52,7 @@ ms.locfileid: "30148683"
   "allowDeviceUseOnInstallFailure": true
 }
 ```
+
 
 
 

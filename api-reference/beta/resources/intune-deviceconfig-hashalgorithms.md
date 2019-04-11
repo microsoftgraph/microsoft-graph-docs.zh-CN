@@ -4,12 +4,12 @@ description: 哈希算法选项。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92788ec5afc3e3ddfbe89d847282ab5d5c74cc08
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 416d07266f9564bc8685447ee5a318014d462d69
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149719"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770961"
 ---
 # <a name="hashalgorithms-enum-type"></a>hashAlgorithms 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "30149719"
 |:---|:---|:---|
 |sha1|1|SHA-1 哈希算法。|
 |sha2|双面|sha-1 哈希算法。|
+
 
 
 

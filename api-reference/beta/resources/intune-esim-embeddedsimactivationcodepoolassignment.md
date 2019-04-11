@@ -4,12 +4,12 @@ description: 嵌入的 SIM 激活代码池分配实体可将特定的 embeddedSI
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60b92a7b1232ba19a4166171fa118b18f7a263b8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a5ec64384bd5620b74f9cdca2148e6b3064e9c98
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163390"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771521"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>embeddedSIMActivationCodePoolAssignment 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "30163390"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|嵌入的 SIM 激活代码池分配的唯一标识符。 创建时分配的系统生成值。|
+|id|String|嵌入的 SIM 激活代码池分配的唯一标识符。 创建时分配的系统生成值。|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|嵌入的 SIM 激活代码池的目标组的类型。|
 
 ## <a name="relationships"></a>关系
@@ -54,6 +54,7 @@ ms.locfileid: "30163390"
   }
 }
 ```
+
 
 
 

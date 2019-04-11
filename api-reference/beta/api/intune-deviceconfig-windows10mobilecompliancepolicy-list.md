@@ -4,12 +4,12 @@ description: 列出 windows10MobileCompliancePolicy 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4442d65a81d5d9c65781cd076f1bbca22e465024
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 937a3603c4a17c2cd845417625609f6b6f2ea6b3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984798"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774615"
 ---
 # <a name="list-windows10mobilecompliancepolicies"></a>列出 windows10MobileCompliancePolicies
 
@@ -106,6 +106,7 @@ Content-Length: 1503
   ]
 }
 ```
+
 
 
 

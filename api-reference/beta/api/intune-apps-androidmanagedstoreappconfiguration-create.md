@@ -4,12 +4,12 @@ description: 创建新的 androidManagedStoreAppConfiguration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee33f730fa05e1bb7a9640622960a37b926d1780
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 295f02e35e8d25b096678216817a11e9b4ac5c69
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986269"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773040"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>创建 androidManagedStoreAppConfiguration
 
@@ -61,7 +61,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 |packageId|String|Android 企业应用程序配置包 id。|
 |payloadJson|String|Android 企业应用配置 JSON 有效负载。|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md)集合|Android 应用程序权限和相应权限操作的列表。|
-|appSupportsOemConfig|Boolean|此 AppConfig 是否为 OEMConfig 策略。|
+|appSupportsOemConfig|布尔值|此 AppConfig 是否为 OEMConfig 策略。|
 
 
 
@@ -134,6 +134,7 @@ Content-Length: 764
   "appSupportsOemConfig": true
 }
 ```
+
 
 
 

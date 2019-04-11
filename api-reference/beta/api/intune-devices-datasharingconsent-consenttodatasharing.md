@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13dd9de18575d9c1c531fc62d51bdd86bdabed83
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 84cbd281cdd8c20e62e321cf23ad1ba832fd0d5e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981851"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773852"
 ---
 # <a name="consenttodatasharing-action"></a>consentToDataSharing 操作
 
@@ -77,6 +77,7 @@ Content-Length: 417
   }
 }
 ```
+
 
 
 

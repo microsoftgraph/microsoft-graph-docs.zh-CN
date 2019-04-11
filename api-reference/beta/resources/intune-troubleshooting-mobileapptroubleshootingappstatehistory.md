@@ -4,12 +4,12 @@ description: 移动应用故障排除事件中包含的历史记录项。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd39115de207532b42d1554da54e154a5066eb76
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 75285b5dec8b3b3808f2e81a4655d9298d12d486
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150958"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772081"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>mobileAppTroubleshootingAppStateHistory 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "30150958"
 |属性|类型|说明|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|历史记录项目发生的时间。 继承自[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|目标为的 AAD 安全组 id。 可取值为：`unknown`、`installCommandSent`、`installed`、`uninstalled`、`userRequestedInstall`。|
+|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|目标为的 AAD 安全组 id。 可取值为：`unknown`、`installCommandSent`、`installed`、`uninstalled` 或 `userRequestedInstall`。|
 |runState|[runState](../resources/intune-shared-runstate.md)|项目的状态。 可取值为：`unknown`、`success`、`fail`。|
 |errorCode|String|失败的错误代码, 如果没有失败, 则为空。|
 
@@ -49,7 +49,6 @@ ms.locfileid: "30150958"
   "errorCode": "String"
 }
 ```
-
 
 
 

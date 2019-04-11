@@ -4,12 +4,12 @@ description: 用户已被标记的原因
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 15942be9f9b6d8b25941f0726ff6046feeea386b
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: bf3190ce35d56ef83d19368001175896cb794c01
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572157"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772368"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>managedAppFlaggedReason 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30572157"
 |rootedDevice|1|应用注册在根/解锁设备上运行。|
 |androidBootloaderUnlocked|双面|应用注册在解锁了启用程序的 Android 设备上运行。|
 |androidFactoryRomModified|第三章|应用注册在已修改出厂 ROM 的 Android 设备上运行。|
+
 
 
 

@@ -4,12 +4,12 @@ description: 管理员配置的设备合规性状态枚举
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0735c93122972b7961cef86cd6bc0e0acdff4b4d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a6440720ba0d179511475180a3e8e052244f9842
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144308"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773859"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>administratorConfiguredDeviceComplianceState 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "30144308"
 |:---|:---|:---|
 |basedOnDeviceCompliancePolicy|0|根据其他合规性策略设置合规性状态|
 |合规|1|将合规性设置为不符合|
+
 
 
 

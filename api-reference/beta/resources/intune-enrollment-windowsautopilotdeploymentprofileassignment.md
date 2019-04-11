@@ -4,12 +4,12 @@ description: 将 Windows Autopilot 部署配置文件分配给 AAD 组。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5147a3a7414c44d8b17345b97b54fdfc6a7f81c8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b9c5106393fa49f6d3260ee6cdfd57a9422a2d99
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151455"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771682"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>windowsAutopilotDeploymentProfileAssignment 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "30151455"
   }
 }
 ```
+
 
 
 

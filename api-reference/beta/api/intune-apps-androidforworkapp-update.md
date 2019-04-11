@@ -4,12 +4,12 @@ description: 更新 androidForWorkApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 86c2362829ea1b7d7651161992171fef1d4a52a6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 17ede025105b80923d4dbdeab80753328e3c2aa8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963833"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773600"
 ---
 # <a name="update-androidforworkapp"></a>更新 androidForWorkApp
 
@@ -69,6 +69,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |packageId|String|包标识符。|
 |appIdentifier|String|标识名称。|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。|
@@ -87,7 +88,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 876
+Content-length: 903
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkApp",
@@ -111,6 +112,7 @@ Content-length: 876
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
@@ -124,7 +126,7 @@ Content-length: 876
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1048
+Content-Length: 1075
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkApp",
@@ -151,6 +153,7 @@ Content-Length: 1048
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
@@ -158,6 +161,7 @@ Content-Length: 1048
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
 
 
 

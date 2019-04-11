@@ -4,12 +4,12 @@ description: 列出 sideLoadingKey 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1cda8acb55662ff9f13f416b3972d01fdf00e908
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: eb0e52c016785a2d1d4cbe7807bc0bf4beb3993c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972800"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770751"
 ---
 # <a name="list-sideloadingkeies"></a>列出 sideLoadingKeies
 
@@ -78,6 +78,7 @@ Content-Length: 356
   ]
 }
 ```
+
 
 
 

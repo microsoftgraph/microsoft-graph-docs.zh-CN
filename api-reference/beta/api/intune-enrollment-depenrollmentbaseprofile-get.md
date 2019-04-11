@@ -4,12 +4,12 @@ description: 读取 depEnrollmentBaseProfile 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc50399c727885268141fa19902157217dc97aa7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: dcfc07c48ed9d780bb80c16057dd4d57627b15df
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987585"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773936"
 ---
 # <a name="get-depenrollmentbaseprofile"></a>获取 depEnrollmentBaseProfile
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1079
+Content-Length: 1136
 
 {
   "value": {
@@ -94,10 +94,12 @@ Content-Length: 1079
     "siriDisabled": true,
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
-    "privacyPaneDisabled": true
+    "privacyPaneDisabled": true,
+    "deviceNameTemplate": "Device Name Template value"
   }
 }
 ```
+
 
 
 

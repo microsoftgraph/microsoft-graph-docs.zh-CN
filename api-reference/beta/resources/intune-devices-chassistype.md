@@ -4,12 +4,12 @@ description: 底盘类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e925dcf502c28951bb8636652e5d429d0cd0916
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: eeee3eefb63c5387b134daeb75f920dbe13d1236
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161521"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772571"
 ---
 # <a name="chassistype-enum-type"></a>chassisType 枚举类型
 
@@ -31,6 +31,7 @@ ms.locfileid: "30161521"
 |版|101|移动平板电脑。|
 |mobileOther|102|其他移动。|
 |mobileUnknown|103|未知移动。|
+
 
 
 

@@ -4,12 +4,12 @@ description: 包含用于将 Win32 LOB 移动应用程序分配给组的属性�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e98688a10c126ee6597f8d244e4a605a2addeaee
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 445cd1a03a7495d4946f600dea3773d7bd9e2249
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172175"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774237"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>win32LobAppAssignmentSettings 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "30172175"
 |:---|:---|:---|
 |通知|[win32LobAppNotification](../resources/intune-apps-win32lobappnotification.md)|此应用程序分配的通知状态。 可取值为：`showAll`、`showReboot`、`hideAll`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -43,6 +43,7 @@ ms.locfileid: "30172175"
   "notifications": "String"
 }
 ```
+
 
 
 

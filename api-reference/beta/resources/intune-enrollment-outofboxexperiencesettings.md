@@ -4,12 +4,12 @@ description: "\"开箱即用体验\" 设置"
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1148ba609a6533dcc6cedb9abd50e9191dceb5d2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0f465297f437f3710f8c789d8683794b7c9d5fa5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145526"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773509"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>outOfBoxExperienceSettings 资源类型
 
@@ -22,12 +22,12 @@ ms.locfileid: "30145526"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|hidePrivacySettings|布尔|向用户显示或隐藏隐私设置|
-|hideEULA|布尔|向用户显示或隐藏 EULA|
+|hidePrivacySettings|布尔值|向用户显示或隐藏隐私设置|
+|hideEULA|布尔值|向用户显示或隐藏 EULA|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|用户类型。 可取值为：`administrator`、`standard`。|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|AAD 联接身份验证类型。 可取值为：`singleUser`、`shared`。|
-|skipKeyboardSelectionPage|布尔|如果设置了语言和区域, 则选择 "设置", 然后跳过 "键盘选择" 页面|
-|hideEscapeLink|布尔|如果设置为 true, 则用户无法在公司登录时使用不同帐户重新开始|
+|skipKeyboardSelectionPage|布尔值|如果设置了语言和区域, 则选择 "设置", 然后跳过 "键盘选择" 页面|
+|hideEscapeLink|布尔值|如果设置为 true, 则用户无法在公司登录时使用不同帐户重新开始|
 
 ## <a name="relationships"></a>关系
 无
@@ -50,6 +50,7 @@ ms.locfileid: "30145526"
   "hideEscapeLink": true
 }
 ```
+
 
 
 

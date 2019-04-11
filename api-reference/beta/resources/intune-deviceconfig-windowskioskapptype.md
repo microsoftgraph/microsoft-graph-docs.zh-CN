@@ -4,12 +4,12 @@ description: Windows 展台应用程序的类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d61e5c9096c9452a5bc52b8716bee1ed3d79fb4a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c8c03bdc2e2ac94f1e3a5be74569afdfd8d5bb6a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143377"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771122"
 ---
 # <a name="windowskioskapptype-enum-type"></a>windowsKioskAppType 枚举类型
 
@@ -26,6 +26,7 @@ Windows 展台应用程序的类型。
 |microsoft|1|应用商店应用。|
 |desktop|双面|桌面应用程序。|
 |aumId|第三章|由 AUMID 输入。|
+
 
 
 

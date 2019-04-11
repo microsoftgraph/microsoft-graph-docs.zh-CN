@@ -4,12 +4,12 @@ description: 创建新的 mobileAppContent 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e742b486a7677c527e8a5c4201883d01c41a817
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ba9b744b85644e554993801c801da5d0c23b3409
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961089"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770513"
 ---
 # <a name="create-mobileappcontent"></a>创建 mobileAppContent
 
@@ -85,6 +85,7 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
+
 
 
 

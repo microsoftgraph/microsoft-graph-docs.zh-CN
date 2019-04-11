@@ -4,12 +4,12 @@ description: Exchange 中的设备类。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ffa5f9c9f54722711a2e38116c2f2a3e03a3171e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7ec9f0242521bf23b4ed5f1c9f002211d542e48c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149565"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774657"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>deviceManagementExchangeDeviceClass 资源类型
 
@@ -22,10 +22,10 @@ Exchange 中的设备类。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|字符串|将受此规则影响的设备类别的名称。|
-|type|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|受此规则影响的设备类型, 例如 Model、Family。 可取值为：`family`、`model`。|
+|name|String|将受此规则影响的设备类别的名称。|
+|类型|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|受此规则影响的设备类型, 例如 Model、Family。 可取值为：`family`、`model`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -42,6 +42,7 @@ Exchange 中的设备类。
   "type": "String"
 }
 ```
+
 
 
 
