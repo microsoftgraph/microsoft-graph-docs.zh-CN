@@ -4,12 +4,12 @@ description: 美国的电影评分标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8475e3cfa4dbdd2e93f685a1b954d44516104ac3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 804110ee07c85a1ca68f259e8b4ae9a206f5f29b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152736"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801433"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30152736"
 |parentalGuidance13|4|PG13, 某些材料可能不适用于13岁以下的儿童|
 |受限|5|R, 17 下的查看者需要伴随父或成人监护人|
 |成人|型|NC17, 仅成人|
+
 
 
 

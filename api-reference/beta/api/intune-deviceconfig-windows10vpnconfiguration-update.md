@@ -4,12 +4,12 @@ description: 更新 windows10VpnConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea2d9ef423e6cf5bfe6bcca19b5ef205a77e2aa4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 473090742f7b6019a32eec4566ef66d4aca6321f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963630"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802000"
 ---
 # <a name="update-windows10vpnconfiguration"></a>更新 windows10VpnConfiguration
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -65,21 +65,21 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |customXml|Binary|配置 VPN 连接的自定义 XML 命令。 (UTF8 编码的字节数组)继承自[windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
 |profileTarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|配置文件目标类型。 可取值为：`user`、`device`、`autoPilotDevice`。|
 |connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|连接类型。 可取值为：`pulseSecure`、`f5EdgeClient`、`dellSonicWallMobileConnect`、`checkPointCapsuleVpn`、`automatic`、`ikEv2`、`l2tp`、`pptp`、`citrix`、`paloAltoGlobalProtect`。|
-|enableSplitTunneling|Boolean|启用拆分隧道。|
-|enableAlwaysOn|Boolean|启用始终打开模式。|
-|enableDeviceTunnel|Boolean|启用设备隧道。|
-|enableDnsRegistration|Boolean|使用内部 DNS 启用 IP 地址注册。|
+|enableSplitTunneling|布尔值|启用拆分隧道。|
+|enableAlwaysOn|布尔值|启用始终打开模式。|
+|enableDeviceTunnel|布尔值|启用设备隧道。|
+|enableDnsRegistration|布尔值|使用内部 DNS 启用 IP 地址注册。|
 |dnsSuffixes|String 集合|指定要添加到 dns 搜索列表以正确路由短名称的 dns 后缀。|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|身份验证方法。 可取值为：`certificate`、`usernameAndPassword`、`customEapXml`。|
-|rememberUserCredentials|Boolean|记住用户凭据。|
-|enableConditionalAccess|Boolean|启用条件访问。|
-|enableSingleSignOnWithAlternateCertificate|Boolean|启用具有备用证书的单一登录 (SSO)。|
+|rememberUserCredentials|布尔值|记住用户凭据。|
+|enableConditionalAccess|布尔值|启用条件访问。|
+|enableSingleSignOnWithAlternateCertificate|布尔值|启用具有备用证书的单一登录 (SSO)。|
 |singleSignOnEku|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|单一登录扩展密钥用法 (EKU)。|
 |singleSignOnIssuerHash|String|单一登录颁发者哈希。|
 |eapXml|Binary|可扩展的身份验证协议 (EAP) XML。 （UTF8 编码的字节数组）|
 |proxyServer|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|代理服务器。|
 |associatedApps|[windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md)集合|关联的应用。 该集合最多可包含 10000 个元素。|
-|onlyAssociatedAppsCanUseConnection|Boolean|仅关联的应用程序可以使用连接 (每个应用 VPN)。|
+|onlyAssociatedAppsCanUseConnection|布尔值|仅关联的应用程序可以使用连接 (每个应用 VPN)。|
 |windowsInformationProtectionDomain|String|与此连接关联的 Windows 信息保护 (WIP) 域。|
 |trafficRules|[vpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md)集合|流量规则。 该集合最多可包含 1000 个元素。|
 |航线|[vpnRoute](../resources/intune-deviceconfig-vpnroute.md)集合|路由 (可选用于第三方提供程序)。 该集合最多可包含 1000 个元素。|
@@ -347,6 +347,7 @@ Content-Length: 3559
   ]
 }
 ```
+
 
 
 

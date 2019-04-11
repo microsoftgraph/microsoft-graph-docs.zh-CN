@@ -4,12 +4,12 @@ description: 给定设备的硬件信息。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d6cd5cc1eef939476a6fa3b5c46a7cfa315607b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3f76918b5a959a6621fb7f5c6480a7a2513afead
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154087"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804310"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>deviceProtectionOverview 资源类型
 
@@ -58,6 +58,7 @@ ms.locfileid: "30154087"
   "criticalFailuresDeviceCount": 1024
 }
 ```
+
 
 
 

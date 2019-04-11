@@ -4,12 +4,12 @@ description: 更新 termsAndConditionsGroupAssignment 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d76b67f72b18ed29cc98c4bad7c9c035b4ee01ca
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 650477e810035039cdc9513ac41a387539fb761c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975880"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804016"
 ---
 # <a name="update-termsandconditionsgroupassignment"></a>更新 termsAndConditionsGroupAssignment
 
@@ -86,6 +86,7 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
+
 
 
 

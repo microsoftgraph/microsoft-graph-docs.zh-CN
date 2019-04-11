@@ -4,12 +4,12 @@ description: 删除 appleVppTokenTroubleshootingEvent。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f017ea2a87ede19280cd8890d0c222dc059978b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b1e7bca7459833fcd7105db84804f229ea9e82d2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972744"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804212"
 ---
 # <a name="delete-applevpptokentroubleshootingevent"></a>删除 appleVppTokenTroubleshootingEvent
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

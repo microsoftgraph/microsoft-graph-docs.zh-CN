@@ -4,12 +4,12 @@ description: 从共享 Apple 设备中删除用户
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36255c9a15982c0e18372c666218e2ce7dba3e55
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8ef8f95424b270df7797335bec0d608790dc56f9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957757"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801895"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>deleteUserFromSharedAppleDevice 操作
 
@@ -34,9 +34,9 @@ ms.locfileid: "30957757"
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/deleteUserFromSharedAppleDevice
 POST /deviceManagement/managedDevices/{managedDeviceId}/deleteUserFromSharedAppleDevice
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deleteUserFromSharedAppleDevice
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/deleteUserFromSharedAppleDevice
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/deleteUserFromSharedAppleDevice
 ```
 
@@ -65,7 +65,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/deleteUserFromSharedAppleDevice
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/deleteUserFromSharedAppleDevice
 
 Content-type: application/json
 Content-length: 56
@@ -80,6 +80,7 @@ Content-length: 56
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

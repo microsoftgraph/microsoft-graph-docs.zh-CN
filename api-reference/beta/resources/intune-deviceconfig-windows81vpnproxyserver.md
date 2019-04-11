@@ -4,12 +4,12 @@ description: VPN 代理服务器。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6783502079ab3ce3adf3f8133662ab3eab578bd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1a337dc2d18ed5f10ecb9f8f654a7d19175fc476
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145204"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800908"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>windows81VpnProxyServer 资源类型
 
@@ -25,11 +25,11 @@ VPN 代理服务器。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|字符串|代理的自动配置脚本 url。 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|automaticConfigurationScriptUrl|String|代理的自动配置脚本 url。 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|处理. 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|port|Int32|端口. 从[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)继承的有效值为0至65535|
-|automaticallyDetectProxySettings|布尔|自动检测代理设置。|
-|bypassProxyServerForLocalAddress|布尔|对本地地址绕过代理服务器。|
+|端口|Int32|端口. 从[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)继承的有效值为0至65535|
+|automaticallyDetectProxySettings|布尔值|自动检测代理设置。|
+|bypassProxyServerForLocalAddress|布尔值|对本地地址绕过代理服务器。|
 
 ## <a name="relationships"></a>关系
 无
@@ -51,6 +51,7 @@ VPN 代理服务器。
   "bypassProxyServerForLocalAddress": true
 }
 ```
+
 
 
 

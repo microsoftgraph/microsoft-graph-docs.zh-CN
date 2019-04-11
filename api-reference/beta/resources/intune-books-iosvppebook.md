@@ -4,12 +4,12 @@ description: 包含 iOS Vpp eBook的属性的类。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca890a6b15ac232d8fb685913379ba8bf69f35cc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e792e79520c1ad02c90d2fcd54da995ea81ec6e3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149439"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804744"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook 资源类型
 
@@ -25,39 +25,39 @@ ms.locfileid: "30149439"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[List iosVppEBooks](../api/intune-books-iosvppebook-list.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md) 集合|列出 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象的属性和关系。|
-|[Get iosVppEBook](../api/intune-books-iosvppebook-get.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|读取 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象的属性和关系。|
-|[Create iosVppEBook](../api/intune-books-iosvppebook-create.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|创建新的 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象。|
-|[Delete iosVppEBook](../api/intune-books-iosvppebook-delete.md)|无|删除 [iosVppEBook](../resources/intune-books-iosvppebook.md)。|
-|[Update iosVppEBook](../api/intune-books-iosvppebook-update.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|更新 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象的属性。|
+|[列出 iosVppEBooks](../api/intune-books-iosvppebook-list.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md) 集合|列出 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象的属性和关系。|
+|[获取 iosVppEBook](../api/intune-books-iosvppebook-get.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|读取 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象的属性和关系。|
+|[创建 iosVppEBook](../api/intune-books-iosvppebook-create.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|创建新的 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象。|
+|[删除 iosVppEBook](../api/intune-books-iosvppebook-delete.md)|无|删除 [iosVppEBook](../resources/intune-books-iosvppebook.md)。|
+|[更新 iosVppEBook](../api/intune-books-iosvppebook-update.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|更新 [iosVppEBook](../resources/intune-books-iosvppebook.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字串符号|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|displayName|字符串|电子书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|description|字符串|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|publisher|字符串|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|publishedDateTime|DateTimeOffset|电子书的发布日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|id|String|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|String|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|description|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|publisher|String|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|publishedDateTime|DateTimeOffset|电子图书的发布日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|createdDateTime|DateTimeOffset|电子书文件的创建日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|createdDateTime|DateTimeOffset|电子图书文件的创建日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改电子书的日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|informationUrl|字符串|详细信息 Url。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|privacyInformationUrl|字符串|隐私声明 Url。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|informationUrl|String|详细信息 URL。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|String|隐私声明 URL。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|Vpp 令牌 ID。|
-|appleId|字符串|与 Vpp 令牌关联的 Apple ID。|
-|vppOrganizationName|字符串|Vpp 令牌的组织名称。|
+|appleId|String|与 Vpp 令牌关联的 Apple ID。|
+|vppOrganizationName|String|Vpp 令牌的组织名称。|
 |genres|String 集合|流派。|
 |language|String|语言。|
 |seller|String|经销商。|
 |totalLicenseCount|Int32|许可证总数。|
 |usedLicenseCount|Int32|使用的许可证数。|
-|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
+|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|categories|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)集合|此电子书的类别列表。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|类别|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)集合|此电子书的类别列表。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 集合|此电子书的作业列表。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|移动应用安装摘要。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |deviceStates|[deviceInstallState](../resources/intune-books-deviceinstallstate.md) 集合|此电子书的安装状态列表。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
@@ -103,6 +103,7 @@ ms.locfileid: "30149439"
   ]
 }
 ```
+
 
 
 

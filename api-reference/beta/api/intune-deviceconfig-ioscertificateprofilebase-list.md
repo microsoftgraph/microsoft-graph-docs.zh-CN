@@ -4,12 +4,12 @@ description: 列出 iosCertificateProfileBase 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1141de371634dbab2afd073573fff73eb185be6c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bc4b42b2b044e190ef3a5648638ffe949d9b2540
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971232"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804863"
 ---
 # <a name="list-ioscertificateprofilebases"></a>列出 iosCertificateProfileBases
 
@@ -88,6 +88,7 @@ Content-Length: 743
   ]
 }
 ```
+
 
 
 

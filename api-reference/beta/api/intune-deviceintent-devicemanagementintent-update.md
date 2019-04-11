@@ -4,12 +4,12 @@ description: 更新 deviceManagementIntent 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d73b31e74b56355e46f79ff9c5961f605f2f4fc
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: c6cf31f6b4e0ee8eeaf88b9421587e52d6b4b2f1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523978"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800733"
 ---
 # <a name="update-devicemanagementintent"></a>更新 deviceManagementIntent
 
@@ -97,8 +97,6 @@ Content-Length: 317
   "templateId": "Template Id value"
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: 指定每个隐私数据类别的访问控制级别
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9589eab792620a2b534473ba9544d97c93ae8910
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 18cae7e3afe2d9deb0efd55092b1fc1f5e3693b8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174058"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800047"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>windowsPrivacyDataAccessControlItem 资源类型
 
@@ -31,10 +31,10 @@ ms.locfileid: "30174058"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|WindowsPrivacyDataAccessControlItem 的键。|
+|id|String|WindowsPrivacyDataAccessControlItem 的键。|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|这表示将向其授予指定应用程序的隐私数据类别的访问级别。 可取值为：`notConfigured`、`forceAllow`、`forceDeny`、`userInControl`。|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|这表示将应用特定访问控制的隐私数据类别。 可能的值为`notConfigured`: `accountInfo`、 `appsRunInBackground`、 `calendar` `callHistory` `camera` `contacts` `diagnosticsInfo` `email` `location` `messaging` `microphone` `motion`、、、、、、、、、、、、、、、、 `notifications` `phone` `radios` `tasks` `syncWithDevices` `trustedDevices`.|
-|appPackageFamilyName|字符串|Windows 应用的程序包系列名称。 设置后, 该访问级别将应用于指定的应用程序。|
+|appPackageFamilyName|String|Windows 应用的程序包系列名称。 设置后, 该访问级别将应用于指定的应用程序。|
 |appDisplayName|String|Windows 应用的程序包系列名称。 设置后, 该访问级别将应用于指定的应用程序。|
 
 ## <a name="relationships"></a>关系
@@ -58,6 +58,7 @@ ms.locfileid: "30174058"
   "appDisplayName": "String"
 }
 ```
+
 
 
 

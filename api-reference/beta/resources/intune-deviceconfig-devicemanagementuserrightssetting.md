@@ -4,12 +4,12 @@ description: 代表用户权限设置。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8fd9d2217fd39c4d2dc8e9db28cb5b5dcd0a1e6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2228e28b2edb3584a0861628644188d6fd54495b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172182"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802623"
 ---
 # <a name="devicemanagementuserrightssetting-resource-type"></a>deviceManagementUserRightsSetting 资源类型
 
@@ -49,6 +49,7 @@ ms.locfileid: "30172182"
   ]
 }
 ```
+
 
 
 

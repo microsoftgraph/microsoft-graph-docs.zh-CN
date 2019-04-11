@@ -4,12 +4,12 @@ description: 在 Apple volume purchase program 令牌上执行的吊销许可证
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec3ccf2bfd72ae9f6aeb85e3a7228faac09a8b2c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 432419f337750362256140b8d13a1841b49907d4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158168"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802161"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>vppTokenRevokeLicensesActionResult 资源类型
 
@@ -26,12 +26,12 @@ ms.locfileid: "30158168"
 |属性|类型|说明|
 |:---|:---|:---|
 |actionName|String|从[vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)继承的操作名称|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|继承自[vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|继承自[vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |startDateTime|DateTimeOffset|从[vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)继承的操作的开始时间|
 |lastUpdatedDateTime|DateTimeOffset|上次更新操作状态的时间从[vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)继承|
 |totalLicensesCount|Int32|试图吊销的许可证数量的计数。|
 |failedLicensesCount|Int32|无法撤消的许可证数量的计数。|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|吊销许可证操作失败的原因。 可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate`。|
+|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|吊销许可证操作失败的原因。 可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken` 或 `expiredApplePushNotificationCertificate`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -55,6 +55,7 @@ ms.locfileid: "30158168"
   "actionFailureReason": "String"
 }
 ```
+
 
 
 

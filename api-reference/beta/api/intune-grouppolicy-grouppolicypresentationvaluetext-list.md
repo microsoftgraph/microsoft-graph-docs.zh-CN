@@ -4,12 +4,12 @@ description: 列出 groupPolicyPresentationValueText 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c857f1f6d7fc44f640649ea121b1be4c0a9753f6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0d62922702d8e19b4b7f2f968f39360f0e38f04d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965191"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800901"
 ---
 # <a name="list-grouppolicypresentationvaluetexts"></a>列出 groupPolicyPresentationValueTexts
 
@@ -76,6 +76,7 @@ Content-Length: 326
   ]
 }
 ```
+
 
 
 

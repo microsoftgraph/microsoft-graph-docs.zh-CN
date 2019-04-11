@@ -4,12 +4,12 @@ description: 读取 groupPolicyDefinition 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97ac44260ef0c7bdc27e5156182db769c5e65fb7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 71af6ad469317ba5776fb0d13f464909c30b8394
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959199"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804114"
 ---
 # <a name="get-grouppolicydefinition"></a>获取 groupPolicyDefinition
 
@@ -84,6 +84,7 @@ Content-Length: 435
   }
 }
 ```
+
 
 
 

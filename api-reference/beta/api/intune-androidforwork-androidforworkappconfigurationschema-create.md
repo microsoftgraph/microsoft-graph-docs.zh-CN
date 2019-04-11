@@ -4,12 +4,12 @@ description: 创建新的 androidForWorkAppConfigurationSchema 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed6c1fc978008d8af62cfe155ab1d217960bf323
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 93742039823782fbfe06f2c072a5bb6022d2e5da
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983055"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800194"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>创建 androidForWorkAppConfigurationSchema
 
@@ -131,6 +131,7 @@ Content-Length: 844
   ]
 }
 ```
+
 
 
 

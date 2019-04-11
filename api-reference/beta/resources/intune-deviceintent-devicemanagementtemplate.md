@@ -4,12 +4,12 @@ description: 表示已定义的设备设置集合的实体
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3cf144ed30a017dc1f3ae84fc481568adc0d0d09
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a55e4426f37f0261f5adbd1ac4830de6ede3e3ed
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522515"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801874"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>deviceManagementTemplate 资源类型
 
@@ -58,8 +58,6 @@ ms.locfileid: "31522515"
   "description": "String"
 }
 ```
-
-
 
 
 

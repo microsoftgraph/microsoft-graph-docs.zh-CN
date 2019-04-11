@@ -4,12 +4,12 @@ description: 移动应用故障排除事件中包含的历史记录项。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a93b88f850e2fa220903362375774d8a6dded59c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cbbf575c7eaecb93e0256d6f672d0c4d6bdd0edf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160499"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802490"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>mobileAppTroubleshootingAppPolicyCreationHistory 资源类型
 
@@ -47,7 +47,6 @@ ms.locfileid: "30160499"
   "errorCode": "String"
 }
 ```
-
 
 
 

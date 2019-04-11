@@ -4,12 +4,12 @@ description: 包含用于对 iOS LOB 应用程序设置和配置的组分配的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b230d2da5aa251c84544a867d6a6eee75bec3fe
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d6a87b3cc18724007a948935ef5a00a1341efc6b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144938"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804611"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>iosLobAppProvisioningConfigurationAssignment 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "30144938"
   }
 }
 ```
+
 
 
 

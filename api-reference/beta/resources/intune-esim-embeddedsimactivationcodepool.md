@@ -4,12 +4,12 @@ description: 池代表一组嵌入的 SIM 激活代码。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55cd515bf57dedf4cac2826000d7bc8e9764e3dd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a1cecbcd21b878ea0cba5168d40444ece5937912
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158980"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804478"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>embeddedSIMActivationCodePool 资源类型
 
@@ -27,12 +27,12 @@ ms.locfileid: "30158980"
 |[创建 embeddedSIMActivationCodePool](../api/intune-esim-embeddedsimactivationcodepool-create.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|创建新的[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)对象。|
 |[删除 embeddedSIMActivationCodePool](../api/intune-esim-embeddedsimactivationcodepool-delete.md)|无|删除[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)。|
 |[更新 embeddedSIMActivationCodePool](../api/intune-esim-embeddedsimactivationcodepool-update.md)|[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)|更新[embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md)对象的属性。|
-|[assign 操作](../api/intune-esim-embeddedsimactivationcodepool-assign.md)|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)集合|尚未记录|
+|[分配操作](../api/intune-esim-embeddedsimactivationcodepool-assign.md)|[embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md)集合|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|嵌入的 SIM 激活代码池的唯一标识符。 创建时分配的系统生成值。|
+|id|String|嵌入的 SIM 激活代码池的唯一标识符。 创建时分配的系统生成值。|
 |displayName|String|管理员定义的嵌入式 SIM 激活代码池的名称。|
 |createdDateTime|DateTimeOffset|创建嵌入的 SIM 激活代码池的时间。 生成的服务端。|
 |modifiedDateTime|DateTimeOffset|上次修改嵌入的 SIM 激活代码池的时间。 更新了服务端。|
@@ -71,6 +71,7 @@ ms.locfileid: "30158980"
   "activationCodeCount": 1024
 }
 ```
+
 
 
 

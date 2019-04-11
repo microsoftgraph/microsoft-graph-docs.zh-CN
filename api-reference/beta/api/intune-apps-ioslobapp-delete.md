@@ -4,12 +4,12 @@ description: 删除 iosLobApp。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93d34dde8062828bbb616d87370dae55376541cb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5e2be7ea388ca7db70d24c9851a9f70c5ac4c4ad
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974144"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801951"
 ---
 # <a name="delete-ioslobapp"></a>删除 iosLobApp
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

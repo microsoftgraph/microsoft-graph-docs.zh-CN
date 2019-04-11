@@ -4,12 +4,12 @@ description: 删除 officeSuiteApp。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e73f26686c751c05a5c2425ff30b2d0894f9bf1c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5341dd1028f2c9503962956845f1a9042a411b06
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966556"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802028"
 ---
 # <a name="delete-officesuiteapp"></a>删除 officeSuiteApp
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: termsAndConditionsGroupAssignment 实体表示分配给给定组的
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b5b97e691ff16ce2c86057ab5dae229d8657974
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0f3518dcc31bf703d3fe42e6bab15d5731d5beb5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142684"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800915"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>termsAndConditionsGroupAssignment 资源类型
 
@@ -32,7 +32,7 @@ termsAndConditionsGroupAssignment 实体表示分配给给定组的给定条款�
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一标识符。|
-|targetGroupId|字符串|向其分配 T&C 策略的组的唯一标识符。|
+|targetGroupId|String|向其分配 T&C 策略的组的唯一标识符。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -54,6 +54,7 @@ termsAndConditionsGroupAssignment 实体表示分配给给定组的给定条款�
   "targetGroupId": "String"
 }
 ```
+
 
 
 

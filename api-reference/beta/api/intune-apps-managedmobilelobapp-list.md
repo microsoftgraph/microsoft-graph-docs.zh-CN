@@ -4,12 +4,12 @@ description: 列出 managedMobileLobApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c0ca4455f5bf418389da059516a9f68ef5ca439
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a21b9ec5186907f267c21f4a0b3987d63065a242
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959780"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800565"
 ---
 # <a name="list-managedmobilelobapps"></a>列出 managedMobileLobApps
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1196
+Content-Length: 1227
 
 {
   "value": [
@@ -91,6 +91,7 @@ Content-Length: 1196
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "appAvailability": "lineOfBusiness",
       "version": "Version value",
       "committedContentVersion": "Committed Content Version value",
@@ -100,6 +101,7 @@ Content-Length: 1196
   ]
 }
 ```
+
 
 
 

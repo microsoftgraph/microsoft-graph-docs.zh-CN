@@ -4,12 +4,12 @@ description: 读取 windowsAutopilotDeviceIdentity 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db567c3d79e6df3a4f03603fa7506c3c451d4476
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 23e76d4de1b06f999563f8be33dc198dbad79950
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959808"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804051"
 ---
 # <a name="get-windowsautopilotdeviceidentity"></a>获取 windowsAutopilotDeviceIdentity
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIden
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1109
+Content-Length: 1145
 
 {
   "value": {
@@ -76,6 +76,7 @@ Content-Length: 1109
     "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
     "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
     "orderIdentifier": "Order Identifier value",
+    "groupTag": "Group Tag value",
     "purchaseOrderIdentifier": "Purchase Order Identifier value",
     "serialNumber": "Serial Number value",
     "productKey": "Product Key value",
@@ -93,6 +94,7 @@ Content-Length: 1109
   }
 }
 ```
+
 
 
 

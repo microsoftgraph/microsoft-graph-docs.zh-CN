@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b93036ddbf68d5d87464138f065a0447f3309a2c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4008d271f33bb68e9cc770c41bddb4129f597bd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139492"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803022"
 ---
 # <a name="deptokentype-enum-type"></a>depTokenType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30139492"
 |无|0|令牌类型为无|
 |保护|1|令牌类型为 Dep。|
 |appleSchoolManager|双面|令牌类型为 Apple 学校管理器|
+
 
 
 

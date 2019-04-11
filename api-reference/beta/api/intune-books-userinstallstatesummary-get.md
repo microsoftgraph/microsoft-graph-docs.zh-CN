@@ -4,12 +4,12 @@ description: 读取 userInstallStateSummary 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf0fa353fc3457bb923ed76b5a3f4f3b02370416
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: aba89079e213e55077820021b26e704c803b2b2f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978295"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802217"
 ---
 # <a name="get-userinstallstatesummary"></a>获取 userInstallStateSummary
 
@@ -78,6 +78,7 @@ Content-Length: 269
   }
 }
 ```
+
 
 
 

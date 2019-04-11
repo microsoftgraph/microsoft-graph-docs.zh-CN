@@ -4,12 +4,12 @@ description: 读取 iosTrustedRootCertificate 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c3952fccfd6cc93e40ea6354b5b58712f079601
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9d0c085512136f145ee4bacfe02deed0c364b040
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968166"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800509"
 ---
 # <a name="get-iostrustedrootcertificate"></a>获取 iosTrustedRootCertificate
 
@@ -86,6 +86,7 @@ Content-Length: 580
   }
 }
 ```
+
 
 
 

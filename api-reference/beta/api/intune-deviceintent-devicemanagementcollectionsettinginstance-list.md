@@ -4,12 +4,12 @@ description: 列出 deviceManagementCollectionSettingInstance 对象的属性和
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91a91838191afe14c55dfacac76d2bf598450bf3
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f60ec11a7e874027af9b0cbf8e1ecc5db006b0d4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522410"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802252"
 ---
 # <a name="list-devicemanagementcollectionsettinginstances"></a>列出 deviceManagementCollectionSettingInstances
 
@@ -78,8 +78,6 @@ Content-Length: 259
   ]
 }
 ```
-
-
 
 
 

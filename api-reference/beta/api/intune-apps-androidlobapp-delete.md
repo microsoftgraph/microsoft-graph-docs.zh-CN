@@ -4,12 +4,12 @@ description: 删除 androidLobApp。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2eecce8b085d0bf3dafd541be47553f99307ad06
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0843ac16b7fb9169cb8bd57c85adcaae0f52b4c6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974067"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800117"
 ---
 # <a name="delete-androidlobapp"></a>删除 androidLobApp
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

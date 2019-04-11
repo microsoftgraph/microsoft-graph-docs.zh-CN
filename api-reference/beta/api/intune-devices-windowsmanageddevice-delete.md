@@ -4,12 +4,12 @@ description: 删除 windowsManagedDevice。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 19ebb4bec38efd7186bddb3727749ddcb4beb524
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0cd0ed3a818b3bc996c48a79a83bb2d8ca8057f5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967977"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800985"
 ---
 # <a name="delete-windowsmanageddevice"></a>删除 windowsManagedDevice
 
@@ -34,9 +34,9 @@ ms.locfileid: "30967977"
 }
 -->
 ``` http
-DELETE /users/{usersId}/managedDevices/{managedDeviceId}
 DELETE /deviceManagement/managedDevices/{managedDeviceId}
 DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
+DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}
 DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
@@ -57,7 +57,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devi
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-DELETE https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 ```
 
 ### <a name="response"></a>响应
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedD
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

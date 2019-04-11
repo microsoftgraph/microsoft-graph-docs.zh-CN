@@ -4,12 +4,12 @@ description: Apple volume purchase Program 令牌的可能类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 109cbfee1153ec4ef547ac14ca5efd0a2c2054b3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ad7c11f5ce44a39a749d63abb61da7b01948799e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143384"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802035"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>vppTokenAccountType 枚举类型
 
@@ -24,6 +24,7 @@ Apple volume purchase Program 令牌的可能类型。
 |:---|:---|:---|
 |知情|0|与业务程序相关联的 Apple volume purchase program 令牌。|
 |受|1|与教育计划相关联的 Apple volume purchase program 令牌。|
+
 
 
 

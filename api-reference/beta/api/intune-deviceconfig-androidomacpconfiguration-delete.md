@@ -4,12 +4,12 @@ description: 删除 androidOmaCpConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7fe0dd75e21fd406b8ecf0b2e06b0012cbb3c79
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9caec0eed26a3276328588b661532c4e7522f5cb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963854"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799956"
 ---
 # <a name="delete-androidomacpconfiguration"></a>删除 androidOmaCpConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

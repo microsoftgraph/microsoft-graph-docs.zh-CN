@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b14deee504a6a8a767a366e77129ad60107c383
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ef7d321cd31687c84792c48c8af38364b869a51f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139051"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803673"
 ---
 # <a name="certificatestatus-enum-type"></a>certificateStatus 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "30139051"
 |:---|:---|:---|
 |notProvisioned|0|尚未记录|
 |已设置|1|尚未记录|
+
 
 
 

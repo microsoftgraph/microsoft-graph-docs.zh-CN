@@ -4,12 +4,12 @@ description: OMA 设置字符串定义。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ba2da95a8a60ef0cf6d2ba03b024c5200e0c5a8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a22c69270126349d8d1d4afca4555abd18768aa3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162046"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803029"
 ---
 # <a name="omasettingstring-resource-type"></a>omaSettingString 资源类型
 
@@ -25,10 +25,10 @@ OMA 设置字符串定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|字符串|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|值|String|值。|
+|value|String|值。|
 
 ## <a name="relationships"></a>关系
 无
@@ -49,6 +49,7 @@ OMA 设置字符串定义。
   "value": "String"
 }
 ```
+
 
 
 

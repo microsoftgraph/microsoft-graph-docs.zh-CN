@@ -4,12 +4,12 @@ description: 列出 deviceManagementTemplate 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eec73f4660ac1d4b05a3c8a45c4ab333b734fde3
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 2a49075e77e1b23245571ceef3b0e6053f5190bb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523943"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802315"
 ---
 # <a name="list-devicemanagementtemplates"></a>列出 deviceManagementTemplates
 
@@ -75,8 +75,6 @@ Content-Length: 243
   ]
 }
 ```
-
-
 
 
 

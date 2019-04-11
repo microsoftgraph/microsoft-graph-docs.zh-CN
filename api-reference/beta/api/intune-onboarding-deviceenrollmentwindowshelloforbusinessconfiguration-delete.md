@@ -4,12 +4,12 @@ description: 删除 deviceEnrollmentWindowsHelloForBusinessConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5338a4ae00250e10106803e5f7de4aeb966e627
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: aba16875ff0f9a3c141dfea8388c1b8014791301
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959318"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804275"
 ---
 # <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a>删除 deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

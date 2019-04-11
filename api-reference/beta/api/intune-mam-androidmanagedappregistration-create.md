@@ -4,12 +4,12 @@ description: 创建新的 androidManagedAppRegistration 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97ff5274358abd9ada2ee14e624e516a74b01d29
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ac720baf581d50841249499ea7607823fe31ab38
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962811"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804828"
 ---
 # <a name="create-androidmanagedappregistration"></a>创建 androidManagedAppRegistration
 
@@ -143,6 +143,7 @@ Content-Length: 987
   "patchVersion": "Patch Version value"
 }
 ```
+
 
 
 

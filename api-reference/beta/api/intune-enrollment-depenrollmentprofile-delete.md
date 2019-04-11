@@ -4,12 +4,12 @@ description: 删除 depEnrollmentProfile。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b90112305deac200b9ad4e46d6d568d4d64dbad
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d1bfdd0465d79d47413dd56732d0fa6a2a789cb3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957198"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800782"
 ---
 # <a name="delete-depenrollmentprofile"></a>删除 depEnrollmentProfile
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

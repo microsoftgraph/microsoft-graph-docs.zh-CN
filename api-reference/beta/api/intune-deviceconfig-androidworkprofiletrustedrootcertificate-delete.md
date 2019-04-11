@@ -4,12 +4,12 @@ description: 删除 androidWorkProfileTrustedRootCertificate。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 877ffd489083041c75475dea180d1cc53fc79232
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 787d4a5448d57bcd55e7d056a8b6ba7cdbdd2367
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982327"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803638"
 ---
 # <a name="delete-androidworkprofiletrustedrootcertificate"></a>删除 androidWorkProfileTrustedRootCertificate
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

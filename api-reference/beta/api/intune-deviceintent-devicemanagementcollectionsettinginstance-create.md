@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementCollectionSettingInstance 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df6d4c9e0aff1a3b66d651d076f89c6fc7eae27b
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f141460a8f67d257702c9f307970f710ef19b0d3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524216"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801818"
 ---
 # <a name="create-devicemanagementcollectionsettinginstance"></a>创建 deviceManagementCollectionSettingInstance
 
@@ -92,8 +92,6 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
-
-
 
 
 

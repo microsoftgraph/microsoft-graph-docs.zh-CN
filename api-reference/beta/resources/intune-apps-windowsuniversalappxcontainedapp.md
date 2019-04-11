@@ -4,12 +4,12 @@ description: 一个表示包含的 WindowsUniversalAppX 应用程序的应用程
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68c7c8a18e3d22b983a232859f5d56d73a79cc87
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ff3f5b074d0a88c93fadd52c48059b73e6a82506
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157923"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804352"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>windowsUniversalAppXContainedApp 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "30157923"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|字符串|WindowsUniversalAppX 应用程序包含的应用程序用户模型 ID。|
+|appUserModelId|String|WindowsUniversalAppX 应用程序包含的应用程序用户模型 ID。|
 
 ## <a name="relationships"></a>关系
 无
@@ -55,6 +55,7 @@ ms.locfileid: "30157923"
   "appUserModelId": "String"
 }
 ```
+
 
 
 

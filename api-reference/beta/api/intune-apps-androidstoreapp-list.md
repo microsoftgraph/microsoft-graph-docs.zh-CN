@@ -4,12 +4,12 @@ description: 列出 androidStoreApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0ab42416053a69795cb660db4eac3ab77fb6ca6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 63043ee03267762d9b310e9dc8f555e85144b8d3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977259"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800600"
 ---
 # <a name="list-androidstoreapps"></a>列出 androidStoreApps
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1584
+Content-Length: 1615
 
 {
   "value": [
@@ -91,6 +91,7 @@ Content-Length: 1584
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "packageId": "Package Id value",
       "appIdentifier": "App Identifier value",
       "appStoreUrl": "https://example.com/appStoreUrl/",
@@ -115,6 +116,7 @@ Content-Length: 1584
   ]
 }
 ```
+
 
 
 

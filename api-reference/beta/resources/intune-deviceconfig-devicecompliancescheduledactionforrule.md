@@ -4,12 +4,12 @@ description: 计划的规则操作
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e201e66765c7a50fa372f33bea536c6c694c3fe2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e3b5d7df3dd4451e5b068b3b544cb0a841911cb2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165504"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800439"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>deviceComplianceScheduledActionForRule 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "30165504"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |ruleName|String|此计划操作适用的规则名称。|
 
 ## <a name="relationships"></a>关系
@@ -54,6 +54,7 @@ ms.locfileid: "30165504"
   "ruleName": "String"
 }
 ```
+
 
 
 

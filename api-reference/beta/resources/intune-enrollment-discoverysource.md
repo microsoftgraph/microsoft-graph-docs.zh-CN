@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1999bfce9fa7057e133fa83f13ee5440d42f96b2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2506cc1c0ae8cbb623a88c3681bbbd36462a2622
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140500"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803344"
 ---
 # <a name="discoverysource-enum-type"></a>discoverySource 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30140500"
 |unknown|0|DiscoverySource 未知。|
 |adminImport|双面|设备由管理员导入。|
 |deviceEnrollmentProgram|4|设备由 Apple 设备注册计划 (Dep) 添加。|
+
 
 
 

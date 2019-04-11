@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fefa449c14736908c73c9a590ec9736b23d1c603
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e00b089d546dbb5a512d30e31c2828debd108ac3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169123"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804023"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>windowsDeviceAccount 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30169123"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|password|字符串|尚未记录|
+|password|String|尚未记录|
 
 ## <a name="relationships"></a>关系
 无
@@ -40,6 +40,7 @@ ms.locfileid: "30169123"
   "password": "String"
 }
 ```
+
 
 
 

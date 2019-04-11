@@ -4,12 +4,12 @@ description: 读取 windowsAppX 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2eeb32989ceed83d8469b70d1996f7c62b2e6b35
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 771ca124f5e5a02c08477aafc49672b9c2bd2444
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986920"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800264"
 ---
 # <a name="get-windowsappx"></a>获取 windowsAppX
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1617
+Content-Length: 1646
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1617
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -117,6 +118,7 @@ Content-Length: 1617
   }
 }
 ```
+
 
 
 

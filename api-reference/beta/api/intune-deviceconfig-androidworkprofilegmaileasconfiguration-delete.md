@@ -4,12 +4,12 @@ description: 删除 androidWorkProfileGmailEasConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d0dd8ea4419e6fd7ecb856244618b2b50b14504
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a0b96a6a279152e6704539b97a8bebd2535df165
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989468"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804345"
 ---
 # <a name="delete-androidworkprofilegmaileasconfiguration"></a>删除 androidWorkProfileGmailEasConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

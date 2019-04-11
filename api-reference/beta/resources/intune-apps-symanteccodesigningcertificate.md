@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 550ba33f81db9fb38f6d19f3b756a67d7c3b9aa1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03f028dffe4db6a2e43a90d708bc16c61615a6a0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158714"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804450"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>symantecCodeSigningCertificate 资源类型
 
@@ -33,9 +33,9 @@ ms.locfileid: "30158714"
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
 |password|字符串|.pfx 文件所需的密码。|
 |SubjectName|String|证书的主题名称。|
-|subject|字符串|证书的主题值。|
-|issuerName|字符串|证书的颁发者名称。|
-|常用|字符串|证书的 Issuer 值。|
+|subject|String|证书的主题值。|
+|issuerName|String|证书的颁发者名称。|
+|常用|String|证书的 Issuer 值。|
 |expirationDateTime|DateTimeOffset|证书到期日期。|
 |uploadDateTime|DateTimeOffset|作为 Symantec 证书的 CodeSigning 证书的类型。|
 
@@ -65,6 +65,7 @@ ms.locfileid: "30158714"
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

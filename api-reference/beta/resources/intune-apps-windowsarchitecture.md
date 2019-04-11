@@ -4,12 +4,12 @@ description: 包含 Windows 体系结构的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64a3175d020e045361e13035f4cb101a26f2e8f6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ebed524aefbe9ea75773fac675408f889fb43247
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152120"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803197"
 ---
 # <a name="windowsarchitecture-enum-type"></a>windowsarchitecture 更改枚举类型
 
@@ -26,8 +26,9 @@ ms.locfileid: "30152120"
 |系列|1|是否支持 X86 Windows 体系结构类型。|
 |x64|双面|是否支持 X64 Windows 体系结构类型。|
 |整理|4|是否支持 Arm Windows 体系结构类型。|
-|neutral|utf-8|是否支持非特定 Windows 体系结构类型。|
+|中性|utf-8|是否支持非特定 Windows 体系结构类型。|
 |arm64|位|是否支持 Arm64 Windows 体系结构类型。|
+
 
 
 

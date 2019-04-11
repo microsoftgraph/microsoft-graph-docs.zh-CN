@@ -4,12 +4,12 @@ description: Windows 信息保护 AppLocker 文件
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a3e21b6b73f7d53f7791fbeaf4e5f995c9a7a4b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 40856d8b77c9ed97975fb123151cebe4011473b3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148396"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803092"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>windowsInformationProtectionAppLockerFile 资源类型
 
@@ -31,11 +31,11 @@ Windows 信息保护 AppLocker 文件
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|友好名称|
+|displayName|字符串|友好名称|
 |fileHash|String|文件的 SHA256 哈希|
 |file|Binary|字节数组形式的文件|
-|id|字符串|实体的键。|
-|version|字符串|实体的版本。|
+|id|String|实体的键。|
+|version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -58,6 +58,7 @@ Windows 信息保护 AppLocker 文件
   "version": "String"
 }
 ```
+
 
 
 

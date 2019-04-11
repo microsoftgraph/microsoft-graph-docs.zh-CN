@@ -4,12 +4,12 @@ description: 更新 deviceManagementAbstractComplexSettingInstance 对象的属�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df71a7d85e2911b76832b87e3ef90457009ad8c1
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: b50e7376c27f7201a8f66b081f9dab95a90535e2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523747"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801349"
 ---
 # <a name="update-devicemanagementabstractcomplexsettinginstance"></a>更新 deviceManagementAbstractComplexSettingInstance
 
@@ -95,8 +95,6 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
-
-
 
 
 

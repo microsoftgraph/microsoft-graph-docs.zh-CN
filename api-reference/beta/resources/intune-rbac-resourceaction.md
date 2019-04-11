@@ -1,15 +1,15 @@
 ---
 title: resourceAction 资源类型
-description: 尚未记录
+description: 资源的允许和不允许的操作的集合。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d229a6d4d8b514cbf092efb224ff09dfb0c78ad4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b4cccb0b47d0d4724ebba7a4749529ccbfe5f7f6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157622"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803904"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction 资源类型
 
@@ -17,13 +17,13 @@ ms.locfileid: "30157622"
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+资源的允许和不允许的操作的集合。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedResourceActions|String collection|允许的操作|
-|notAllowedResourceActions|字符串集合|不允许的操作|
+|allowedResourceActions|字符串集合|允许的操作|
+|notAllowedResourceActions|字符串集合|不允许操作。|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,6 +46,7 @@ ms.locfileid: "30157622"
   ]
 }
 ```
+
 
 
 

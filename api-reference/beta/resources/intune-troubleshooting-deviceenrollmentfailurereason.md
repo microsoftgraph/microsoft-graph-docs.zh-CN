@@ -4,12 +4,12 @@ description: 注册的顶级失败类别。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f03ce73f1d6f8b5edc6b3e3b661f9a7ba79407bb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a0921098dcaa4905b0b7eaf5722acf4edac8419f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163852"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804793"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>deviceEnrollmentFailureReason 枚举类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "30163852"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|默认值, 失败原因未知。|
-|身份验证|1|身份验证失败|
-|授权|双面|呼叫已通过身份验证, 但未获授权进行注册。|
+|authentication|1|身份验证失败|
+|批准|双面|呼叫已通过身份验证, 但未获授权进行注册。|
 |accountValidation|第三章|无法验证注册帐户。 (帐户被阻止, 未启用注册)|
 |userValidation|4|无法验证用户。 (用户不存在, 缺少许可证)|
 |deviceNotSupported|5|移动设备管理不支持设备。|
@@ -34,7 +34,6 @@ ms.locfileid: "30163852"
 |enrollmentRestrictionsEnforced|第|由管理员配置的注册限制阻止了此注册。|
 |clientDisconnected|10|客户端超时或注册被 enduser 中止。|
 |userAbandonment|11x17|注册已被 enduser 放弃。 (Enduser 已开始加入, 但无法及时完成它)|
-
 
 
 

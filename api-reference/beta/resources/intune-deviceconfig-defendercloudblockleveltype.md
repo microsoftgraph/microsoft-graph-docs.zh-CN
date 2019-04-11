@@ -4,12 +4,12 @@ description: 云块级别的可能值
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbf442a11335602c510a210d7bd805b2a76eb7df
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 88872e6d37afd1820559018bff6943e3ee623a0b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156922"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803211"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType 枚举类型
 
@@ -26,6 +26,7 @@ ms.locfileid: "30156922"
 |高效|1|High 适用于强级别的检测。|
 |highPlus|双面|高级别 + 使用高级别, 并应用附加保护措施|
 |zeroTolerance|第三章|零耐受性阻止所有未知可执行文件|
+
 
 
 

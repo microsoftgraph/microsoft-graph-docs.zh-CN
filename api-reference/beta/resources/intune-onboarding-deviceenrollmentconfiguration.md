@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d429856c8253a6c1bf47747d2c1ad481820ada9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4ac4d37529eb6e3688b110146801a7ec5ee533c4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150678"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801398"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration 资源类型
 
@@ -24,15 +24,15 @@ ms.locfileid: "30150678"
 |:---|:---|:---|
 |[列出 deviceEnrollmentConfigurations](../api/intune-onboarding-deviceenrollmentconfiguration-list.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 集合|列出 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 对象的属性和关系。|
 |[获取 deviceEnrollmentConfiguration](../api/intune-onboarding-deviceenrollmentconfiguration-get.md)|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|读取 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) 对象的属性和关系。|
-|[setPriority action](../api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md)|无|尚未记录|
+|[setPriority 操作](../api/intune-onboarding-deviceenrollmentconfiguration-setpriority.md)|无|尚未记录|
 |[分配操作](../api/intune-onboarding-deviceenrollmentconfiguration-assign.md)|无|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|注册状态页面配置的 Id|
-|displayName|字符串|尚未记录|
-|description|字符串|尚未记录|
+|displayName|String|尚未记录|
+|description|String|尚未记录|
 |优先级|Int32|尚未记录|
 |createdDateTime|DateTimeOffset|尚未记录|
 |lastModifiedDateTime|DateTimeOffset|尚未记录|
@@ -63,6 +63,7 @@ ms.locfileid: "30150678"
   "version": 1024
 }
 ```
+
 
 
 

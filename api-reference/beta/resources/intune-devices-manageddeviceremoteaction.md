@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7aafc5402ceeebb56f948a669d4bf1f461578d0c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c619a45f1ddfe20654c208fed424631e4d3e183c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172798"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801132"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>managedDeviceRemoteAction 枚举类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30172798"
 |fullScan|双面|尚未记录|
 |quickScan|第三章|尚未记录|
 |signatureUpdate|4|尚未记录|
+
 
 
 

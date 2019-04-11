@@ -4,12 +4,12 @@ description: 列出 mdmWindowsInformationProtectionPolicy 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27a0fe4783b63ffabdabb6d68e2e8bafd9a43f7b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 09c6b2df9aa998d428264840c16a8fed30cf166a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983076"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800670"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>列出 mdmWindowsInformationProtectionPolicies
 
@@ -199,6 +199,7 @@ Content-Length: 4684
   ]
 }
 ```
+
 
 
 

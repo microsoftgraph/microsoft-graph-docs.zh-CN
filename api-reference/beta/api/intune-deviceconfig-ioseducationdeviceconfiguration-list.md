@@ -4,12 +4,12 @@ description: 列出 iosEducationDeviceConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa4f568bc041b9fc74faeffd97b5c62c1b7f346f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bb9767ed7a67687c94c6e8c133f2cec1d7e2aba7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981627"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800481"
 ---
 # <a name="list-ioseducationdeviceconfigurations"></a>列出 iosEducationDeviceConfigurations
 
@@ -83,6 +83,7 @@ Content-Length: 510
   ]
 }
 ```
+
 
 
 

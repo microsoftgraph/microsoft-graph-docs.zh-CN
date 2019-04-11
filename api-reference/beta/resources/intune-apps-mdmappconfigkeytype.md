@@ -4,12 +4,12 @@ description: 应用配置密钥类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 220e3ebf0bb9482b64c894025f233404769bff8c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ea0fa95f79e3378b785001c80682c3188b094427
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145218"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802966"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType 枚举类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30145218"
 |realType|双面|尚未记录|
 |booleanType|第三章|尚未记录|
 |tokenType|4|尚未记录|
+
 
 
 

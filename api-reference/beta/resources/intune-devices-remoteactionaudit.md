@@ -4,12 +4,12 @@ description: 在属于某个租户的设备上启动的远程操作的报告。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c06f7472addff7c475eeeb8ac3f1a26cc7ea78bc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 70a4a95019db6ca3025d0090981ca6563d335ffe
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165875"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804261"
 ---
 # <a name="remoteactionaudit-resource-type"></a>remoteActionAudit 资源类型
 
@@ -31,14 +31,14 @@ ms.locfileid: "30165875"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|报告 Id。|
+|id|String|报告 Id。|
 |deviceDisplayName|String|Intune 设备名称。|
-|userName|字符串|\[弃用\]请改用 InitiatedByUserPrincipalName。|
-|initiatedByUserPrincipalName|字符串|启动设备操作的用户的格式为 UPN。|
+|userName|String|\[弃用\]请改用 InitiatedByUserPrincipalName。|
+|initiatedByUserPrincipalName|String|启动设备操作的用户的格式为 UPN。|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|操作名称。 可能的值为`unknown`: `factoryReset`、 `removeCompanyData`、 `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan`、、、、、、、、、、、、、、、、 `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown`.|
 |requestDateTime|DateTimeOffset|发出操作的时间, 以 UTC 表示。|
-|deviceOwnerUserPrincipalName|字符串|设备所有者的 Upn。|
-|deviceIMEI|字符串|设备的 IMEI。|
+|deviceOwnerUserPrincipalName|String|设备所有者的 Upn。|
+|deviceIMEI|String|设备的 IMEI。|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|动作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed`、`notSupported`。|
 
 ## <a name="relationships"></a>关系
@@ -66,6 +66,7 @@ ms.locfileid: "30165875"
   "actionState": "String"
 }
 ```
+
 
 
 

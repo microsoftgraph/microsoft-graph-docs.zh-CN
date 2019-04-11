@@ -4,12 +4,12 @@ description: 删除 importedAppleDeviceIdentityResult。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed37f4876300133548993299be94573ee7f2505e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 98e985d3679985ed6dfdb352d9a7a5a3b84fc5ee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973248"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800453"
 ---
 # <a name="delete-importedappledeviceidentityresult"></a>删除 importedAppleDeviceIdentityResult
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

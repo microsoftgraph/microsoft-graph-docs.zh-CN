@@ -4,12 +4,12 @@ description: 列出 androidForWorkVpnConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62514005cf382eff511078fd4b4682e619f09ebe
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 41ce65c4acc129eb934454a09dc0733436d9105c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977308"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802119"
 ---
 # <a name="list-androidforworkvpnconfigurations"></a>列出 androidForWorkVpnConfigurations
 
@@ -111,6 +111,7 @@ Content-Length: 1346
   ]
 }
 ```
+
 
 
 

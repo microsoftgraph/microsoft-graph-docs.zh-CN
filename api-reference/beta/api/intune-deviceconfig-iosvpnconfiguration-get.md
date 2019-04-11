@@ -4,12 +4,12 @@ description: 读取 iosVpnConfiguration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ac3b598660e974859942c8f4d17d40b336bfca8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6cb35fef9ebd6fb7784bea2773a4774355f89885
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983769"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804093"
 ---
 # <a name="get-iosvpnconfiguration"></a>获取 iosVpnConfiguration
 
@@ -149,6 +149,7 @@ Content-Length: 2383
   }
 }
 ```
+
 
 
 

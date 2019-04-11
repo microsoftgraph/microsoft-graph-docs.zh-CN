@@ -4,12 +4,12 @@ description: Intune 将向客户提供在已注册的 windows 10 Azure Active Di
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 19e61bf994a21305b4cf081c593b8d46cbb7806f
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 6599f0dbc083859bef4f7a334d36fdcdfa63ee86
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572416"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801594"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript 资源类型
 
@@ -25,7 +25,7 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |[列出 deviceManagementScripts](../api/intune-devices-devicemanagementscript-list.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)集合|列出[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象的属性和关系。|
 |[获取 deviceManagementScript](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|读取[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象的属性和关系。|
 |[创建 deviceManagementScript](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|创建新的[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象。|
-|[删除 deviceManagementScript](../api/intune-devices-devicemanagementscript-delete.md)|None|删除[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)。|
+|[删除 deviceManagementScript](../api/intune-devices-devicemanagementscript-delete.md)|无|删除[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)。|
 |[更新 deviceManagementScript](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|更新[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)对象的属性。|
 |[分配操作](../api/intune-devices-devicemanagementscript-assign.md)|无|尚未记录|
 
@@ -33,17 +33,17 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备管理脚本的唯一标识符。|
-|displayName|字符串|设备管理脚本的名称。|
-|说明|字符串|设备管理脚本的可选说明。|
+|displayName|String|设备管理脚本的名称。|
+|description|String|设备管理脚本的可选说明。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|脚本运行的间隔。 如果未定义, 脚本将运行一次|
-|scriptContent|二进制数|脚本内容。|
+|scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
+|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 id 的列表。|
-|runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
+|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 id 的列表。|
+|runAs32Bit|布尔值|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -83,6 +83,7 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
   "runAs32Bit": true
 }
 ```
+
 
 
 

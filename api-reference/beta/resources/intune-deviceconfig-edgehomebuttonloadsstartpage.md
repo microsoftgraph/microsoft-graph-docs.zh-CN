@@ -4,12 +4,12 @@ description: 显示 "主页" 按钮;单击 "主页" 按钮可加载起始页-这
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a721699d932cd3874d38d3f55e628ff0110c7f7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fc84f8eabbb1db68a48cdc940a522aba18479ff9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167072"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802553"
 ---
 # <a name="edgehomebuttonloadsstartpage-resource-type"></a>edgeHomeButtonLoadsStartPage 资源类型
 
@@ -41,6 +41,7 @@ ms.locfileid: "30167072"
   "@odata.type": "#microsoft.graph.edgeHomeButtonLoadsStartPage"
 }
 ```
+
 
 
 

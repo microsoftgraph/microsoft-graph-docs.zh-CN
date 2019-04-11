@@ -4,12 +4,12 @@ description: 设备保护状态实体。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eebf798a41e5cbab27fab849cdead8a288a782e2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9ecdc3ab743502ff4aef78fa8923248399ce16f4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148312"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803099"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>windowsProtectionState 资源类型
 
@@ -28,23 +28,23 @@ ms.locfileid: "30148312"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|布尔|已启用反恶意软件|
+|id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
+|malwareProtectionEnabled|布尔值|已启用反恶意软件|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (如清理或挂起完全扫描或等待重新启动等)。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|布尔|是否启用了实时保护？|
-|networkInspectionSystemEnabled|布尔|网络检查系统是否已启用？|
-|quickScanOverdue|布尔|快速扫描是否过期？|
-|fullScanOverdue|布尔|完全扫描逾期？|
-|signatureUpdateOverdue|布尔|签名是否已过期？|
-|rebootRequired|布尔|是否需要重新启动？|
-|fullScanRequired|布尔|需要完全扫描吗？|
-|engineVersion|字符串|当前 endpoint protection 引擎的版本|
-|signatureVersion|字符串|当前恶意软件定义版本|
-|antiMalwareVersion|字符串|当前反恶意软件版本|
+|realTimeProtectionEnabled|布尔值|是否启用了实时保护？|
+|networkInspectionSystemEnabled|布尔值|网络检查系统是否已启用？|
+|quickScanOverdue|布尔值|快速扫描是否过期？|
+|fullScanOverdue|布尔值|完全扫描逾期？|
+|signatureUpdateOverdue|布尔值|签名是否已过期？|
+|rebootRequired|布尔值|是否需要重新启动？|
+|fullScanRequired|布尔值|需要完全扫描吗？|
+|engineVersion|String|当前 endpoint protection 引擎的版本|
+|signatureVersion|String|当前恶意软件定义版本|
+|antiMalwareVersion|String|当前反恶意软件版本|
 |lastQuickScanDateTime|DateTimeOffset|上次快速扫描日期时间|
 |lastFullScanDateTime|DateTimeOffset|上次快速扫描日期时间|
-|lastQuickScanSignatureVersion|字符串|上次快速扫描签名版本|
-|lastFullScanSignatureVersion|字符串|上次完全扫描签名版本|
+|lastQuickScanSignatureVersion|String|上次快速扫描签名版本|
+|lastFullScanSignatureVersion|String|上次完全扫描签名版本|
 |lastReportedDateTime|DateTimeOffset|上次设备运行状况状态报告时间|
 
 ## <a name="relationships"></a>关系
@@ -83,6 +83,7 @@ ms.locfileid: "30148312"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

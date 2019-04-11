@@ -4,12 +4,12 @@ description: 列出 windows81CertificateProfileBase 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a84848dd1abdfba2de399617724f2191c82e585f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b3becbc01cd0e9804bde108536ce5e7b0c1c485e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988677"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804772"
 ---
 # <a name="list-windows81certificateprofilebases"></a>列出 windows81CertificateProfileBases
 
@@ -103,6 +103,7 @@ Content-Length: 1243
   ]
 }
 ```
+
 
 
 

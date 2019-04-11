@@ -4,12 +4,12 @@ description: 创建新的 vppToken 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31717a52cf66fdd0c4d2eff0717250a131540e9f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 189ba6e9ee465d5f0916254c22303ff445fda868
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964421"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802630"
 ---
 # <a name="create-vpptoken"></a>创建 vppToken
 
@@ -63,10 +63,10 @@ POST /deviceAppManagement/vppTokens
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
-|dataSharingConsentGranted|Boolean|同意授予与 Apple volume purchase program 的数据共享。|
+|dataSharingConsentGranted|布尔值|同意授予与 Apple volume purchase program 的数据共享。|
 |displayName|String|管理员指定的令牌友好名称。|
 |locationName|String|从 Apple VPP 返回的令牌位置。|
-|claimTokenManagementFromExternalMdm|Boolean|管理员同意允许来自外部 MDM 的声明令牌管理。|
+|claimTokenManagementFromExternalMdm|布尔值|管理员同意允许来自外部 MDM 的声明令牌管理。|
 |roleScopeTagIds|String 集合|分配给此实体的角色范围标记 id。|
 
 
@@ -153,6 +153,7 @@ Content-Length: 1115
   ]
 }
 ```
+
 
 
 

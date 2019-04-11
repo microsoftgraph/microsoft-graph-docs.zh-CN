@@ -4,12 +4,12 @@ description: 列出 dataSharingConsent 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6eb19aec6bbb3c3df111855dfd871dd38cfb7822
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9b171ac3697a858e4cb8bfae3e030945fe07e7ae
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981781"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803134"
 ---
 # <a name="list-datasharingconsents"></a>列出 dataSharingConsents
 
@@ -79,6 +79,7 @@ Content-Length: 447
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 表示托管应用程序列表中的应用
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a7e005681917f0edffe00b33947d2bd2bd5b2ff5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7f452de7d002368c204cb57cc352ac9f9658609a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172245"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803841"
 ---
 # <a name="applistitem-resource-type"></a>appListItem 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "30172245"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|字符串|应用程序名称|
-|publisher|字符串|应用程序发布者|
+|name|String|应用程序名称|
+|publisher|String|应用程序发布者|
 |appStoreUrl|String|应用程序的应用商店 URL|
 |appId|String|应用程序或应用程序的捆绑标识符|
 
@@ -46,6 +46,7 @@ ms.locfileid: "30172245"
   "appId": "String"
 }
 ```
+
 
 
 

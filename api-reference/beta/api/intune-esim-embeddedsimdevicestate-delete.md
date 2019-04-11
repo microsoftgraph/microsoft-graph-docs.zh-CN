@@ -4,12 +4,12 @@ description: 删除 embeddedSIMDeviceState。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a5e2a2a8d65f3b1cdb8ea3d6e64f722af65d2d7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1d24ce93f14cab3e8350da2b98f623e2c3ecf3ad
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970861"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803645"
 ---
 # <a name="delete-embeddedsimdevicestate"></a>删除 embeddedSIMDeviceState
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCo
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

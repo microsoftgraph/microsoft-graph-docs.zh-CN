@@ -4,12 +4,12 @@ description: 创建新的 enterpriseCodeSigningCertificate 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce8700728284af5d2092d6fa6b3057368106eb6e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6cd85a33da06395314fc30836ba6f28de00c98ba
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975236"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802077"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>创建 enterpriseCodeSigningCertificate
 
@@ -107,6 +107,7 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
+
 
 
 

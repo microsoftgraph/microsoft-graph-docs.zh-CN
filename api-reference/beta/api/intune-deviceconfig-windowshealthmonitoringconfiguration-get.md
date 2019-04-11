@@ -4,12 +4,12 @@ description: 读取 windowsHealthMonitoringConfiguration 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a07caea3ca1ff1e8c47af53411b903ad0e6b5c57
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 01e972987b20d5294e5f4478899a86d7678bb9b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965177"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800236"
 ---
 # <a name="get-windowshealthmonitoringconfiguration"></a>获取 windowsHealthMonitoringConfiguration
 
@@ -87,6 +87,7 @@ Content-Length: 588
   }
 }
 ```
+
 
 
 

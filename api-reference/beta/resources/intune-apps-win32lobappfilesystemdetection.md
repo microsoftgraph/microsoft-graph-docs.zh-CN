@@ -4,12 +4,12 @@ description: 包含用于检测 Win32 应用程序的文件或文件夹路径
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afa4bd087d5b703da41f7fa44b74b3e9e16e80a3
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: e899a9caa5e4f21292ec56c5595bc77d3b68bcc2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570701"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803246"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>win32LobAppFileSystemDetection 资源类型
 
@@ -27,8 +27,8 @@ ms.locfileid: "30570701"
 |:---|:---|:---|
 |路径|String|用于检测 Win32 业务线 (LoB) 应用程序的文件或文件夹路径|
 |fileOrFolderName|String|要检测 Win32 业务线 (LoB) 应用程序的文件或文件夹名称|
-|check32BitOn64System|Boolean|一个指示此文件或文件夹是否用于检查64位系统上的32位应用程序的值|
-|detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|文件系统检测类型。 可取值为：`notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB`。|
+|check32BitOn64System|布尔值|一个指示此文件或文件夹是否用于检查64位系统上的32位应用程序的值|
+|detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|文件系统检测类型。 可取值为：`notConfigured`、`exists`、`modifiedDate`、`createdDate`、`version`、`sizeInMB` 或 `doesNotExist`。|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|用于文件或文件夹检测的运算符。 可取值为：`notConfigured`、`equal`、`notEqual`、`greaterThan`、`greaterThanOrEqual`、`lessThan` 或 `lessThanOrEqual`。|
 |detectionValue|String|文件或文件夹检测值|
 
@@ -53,6 +53,7 @@ ms.locfileid: "30570701"
   "detectionValue": "String"
 }
 ```
+
 
 
 

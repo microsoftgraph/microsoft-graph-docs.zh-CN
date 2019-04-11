@@ -4,12 +4,12 @@ description: 创建新的 iosStoreApp 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e141a17154dcebb127e1fda5e36edc9c7c9e3913
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0eed3299a74db8c3dbb965cf13ee0e9f0157020a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30956882"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800334"
 ---
 # <a name="create-iosstoreapp"></a>创建 iosStoreApp
 
@@ -67,6 +67,7 @@ POST /deviceAppManagement/mobileApps
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |bundleId|String|标识名称。|
 |appStoreUrl|String|Apple App Store URL|
 |applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|可运行此应用的 iOS 体系结构。|
@@ -84,7 +85,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1113
+Content-length: 1140
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -108,6 +109,7 @@ Content-length: 1113
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "bundleId": "Bundle Id value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "applicableDeviceType": {
@@ -131,7 +133,7 @@ Content-length: 1113
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1285
+Content-Length: 1312
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -158,6 +160,7 @@ Content-Length: 1285
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "bundleId": "Bundle Id value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "applicableDeviceType": {
@@ -175,6 +178,7 @@ Content-Length: 1285
   }
 }
 ```
+
 
 
 

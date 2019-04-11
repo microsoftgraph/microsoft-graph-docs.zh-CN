@@ -4,12 +4,12 @@ description: 令牌中给定应用的许可证摘要。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9c126323e0f5785752238ec64cfade2c34d5c24
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1292caa41a2e56c42adde8be7f9bb8988b369cd7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161059"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802679"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>vppTokenLicenseSummary 资源类型
 
@@ -48,6 +48,7 @@ ms.locfileid: "30161059"
   "usedLicenseCount": 1024
 }
 ```
+
 
 
 

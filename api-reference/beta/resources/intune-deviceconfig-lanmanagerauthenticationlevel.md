@@ -4,12 +4,12 @@ description: LanManagerAuthenticationLevel 的可能值
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63f04f1ef2fc12fa0352aeec803c46fb4ebab3d2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e3b93f229661de3e2fbb28f764288983b2fd83bb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166568"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801244"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>lanManagerAuthenticationLevel 枚举类型
 
@@ -28,6 +28,7 @@ LanManagerAuthenticationLevel 的可能值
 |lmAndNtlmV2|第三章|仅发送 LM & NTLMv2 响应|
 |lmNtlmV2AndNotLm|4|仅发送 LM & NTLMv2 响应。 拒绝 LM|
 |lmNtlmV2AndNotLmOrNtm|5|仅发送 LM & NTLMv2 响应。 拒绝 LM & NTLM|
+
 
 
 

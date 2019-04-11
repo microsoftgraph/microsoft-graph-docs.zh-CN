@@ -4,12 +4,12 @@ description: 更新 deviceManagementSettingDefinition 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d349fd80a65020e03b691305bb2e968ec5407db5
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f11167524956ff3eddc9a5508fb30fdd81e2aa73
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522571"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801454"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>更新 deviceManagementSettingDefinition
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |id|String|设置定义的 ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|值的数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
 |displayName|String|设置的显示名称|
-|isTopLevel|Boolean|如果设置是顶级的, 则可以对其进行配置, 而无需将其包装在集合或复杂设置中|
+|isTopLevel|布尔值|如果设置是顶级的, 则可以对其进行配置, 而无需将其包装在集合或复杂设置中|
 |description|String|设置的说明|
 |documentationUrl|String|设置文档的 Url|
 |keywords|String 集合|与设置相关联的关键字|
@@ -142,8 +142,6 @@ Content-Length: 777
   ]
 }
 ```
-
-
 
 
 

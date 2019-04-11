@@ -4,12 +4,12 @@ description: Windows 管理应用实体。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a10e3a0779dac787857203941d266d9ab9a7712
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 99367ae51bbfe2ad044a99b465f70f5f8316e2d8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140080"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802420"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>windowsManagementApp 资源类型
 
@@ -28,8 +28,8 @@ Windows 管理应用实体。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|Windows 管理应用程序的唯一标识符|
-|availableVersion|字符串|Windows 管理应用程序的可用版本。|
+|id|String|Windows 管理应用程序的唯一标识符|
+|availableVersion|String|Windows 管理应用程序的可用版本。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -52,6 +52,7 @@ Windows 管理应用实体。
   "availableVersion": "String"
 }
 ```
+
 
 
 

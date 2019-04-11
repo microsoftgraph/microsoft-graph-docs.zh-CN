@@ -4,12 +4,12 @@ description: Windows 信息保护应用学习摘要实体。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c42fbe9da221e9c41a29291d6a279b1144cd355
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: be7f1eb6f3149499edccd75f2f352ac6ad5a84ef
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169487"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801706"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>windowsInformationProtectionAppLearningSummary 资源类型
 
@@ -56,6 +56,7 @@ Windows 信息保护应用学习摘要实体。
   "deviceCount": 1024
 }
 ```
+
 
 
 

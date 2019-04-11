@@ -4,12 +4,12 @@ description: 实体描述有关单个组策略的所有信息。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c5062fda984dbe1dda518e77ff271750d30adb8
-ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
+ms.openlocfilehash: a9e411c2672650e3e603bfa0e64fde1c4db53607
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30644284"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802763"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>groupPolicyDefinition 资源类型
 
@@ -30,9 +30,9 @@ ms.locfileid: "30644284"
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|标识策略可应用于的组的类型。 可取值为：`user`、`machine`。|
 |displayName|String|本地化策略名称。|
-|explainText|字符串|与策略关联的本地化说明或帮助文本。 默认值为空白。|
-|categoryPath|字符串|策略的本地化完整类别路径。|
-|supportedOn|字符串|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
+|explainText|String|与策略关联的本地化说明或帮助文本。 默认值为空白。|
+|categoryPath|String|策略的本地化完整类别路径。|
+|supportedOn|String|用于指定受策略影响的操作系统或应用程序版本的本地化字符串。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可能的值是：`admxBacked`、`admxIngested`。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
@@ -64,6 +64,7 @@ ms.locfileid: "30644284"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

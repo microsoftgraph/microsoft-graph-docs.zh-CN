@@ -4,12 +4,12 @@ description: 适用于 iOS EDU 的受信任的根和 PFX 证书。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c94b7bc75022f8338a41da3b3b9d135dff47ac3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8d9060c28744bae52d4690bf75487e298d58d2a1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142649"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800929"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>iosEduCertificateSettings 资源类型
 
@@ -23,15 +23,15 @@ ms.locfileid: "30142649"
 |属性|类型|说明|
 |:---|:---|:---|
 |trustedRootCertificate|Binary|受信任的根证书。|
-|certFileName|字符串|要在 UI 中显示的文件名。|
-|certificationAuthority|字符串|PKCS 证书颁发机构。|
-|certificationAuthorityName|字符串|PKCS 证书颁发机构名称。|
-|certificateTemplateName|字符串|PKCS 证书模板名称。|
+|certFileName|String|要在 UI 中显示的文件名。|
+|certificationAuthority|String|PKCS 证书颁发机构。|
+|certificationAuthorityName|String|PKCS 证书颁发机构名称。|
+|certificateTemplateName|String|PKCS 证书模板名称。|
 |renewalThresholdPercentage|Int32|证书续订阈值百分比。 有效值为1至99|
 |certificateValidityPeriodValue|Int32|证书有效期限的值。|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|证书有效期的小数位数。 可取值为：`days`、`months`、`years`。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -54,6 +54,7 @@ ms.locfileid: "30142649"
   "certificateValidityPeriodScale": "String"
 }
 ```
+
 
 
 

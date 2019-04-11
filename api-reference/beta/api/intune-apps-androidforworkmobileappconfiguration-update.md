@@ -4,12 +4,12 @@ description: 更新 androidForWorkMobileAppConfiguration 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c85fead9933dcf46975cd3359b52dbe84c58db3f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9df7c49d2a67363e3a6b4f66c6b610798ccce23c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976237"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804506"
 ---
 # <a name="update-androidforworkmobileappconfiguration"></a>更新 androidForWorkMobileAppConfiguration
 
@@ -131,6 +131,7 @@ Content-Length: 732
   ]
 }
 ```
+
 
 
 

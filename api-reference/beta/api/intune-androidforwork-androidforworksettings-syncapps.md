@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cd6f56e3e583abd1d7536f39665803de18ae173
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 97de84fc7ee56d942a7226ee03dd01a30f014b49
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958093"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801468"
 ---
 # <a name="syncapps-action"></a>syncApps 操作
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/sy
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

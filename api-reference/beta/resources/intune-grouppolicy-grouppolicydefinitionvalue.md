@@ -4,12 +4,12 @@ description: "\"定义值\" 实体存储单个组策略定义的值。"
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e822cb4ce46a0fa9492f7624904588fd1b10a7c3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2aa0eef1b4921d1b364486b9af254fba2a8322c0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142614"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800992"
 ---
 # <a name="grouppolicydefinitionvalue-resource-type"></a>groupPolicyDefinitionValue 资源类型
 
@@ -32,8 +32,8 @@ ms.locfileid: "30142614"
 |属性|类型|说明|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
-|enabled|布尔值|启用或禁用关联的组策略定义。|
-|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|指定应如何配置值。 这可以是策略, 也可以是首选项。 可取值为：`policy`、`preference`。|
+|enabled|Boolean|启用或禁用关联的组策略定义。|
+|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|指定应如何配置值。 这可以是策略, 也可以是首选项。 可能的值是：`policy`、`preference`。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
@@ -41,7 +41,7 @@ ms.locfileid: "30142614"
 |关系|类型|说明|
 |:---|:---|:---|
 |presentationValues|[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)集合|与定义值关联的组策略呈现值值。|
-|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|与值关联的组策略定义。|
+|定义|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|与值关联的组策略定义。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -61,6 +61,7 @@ ms.locfileid: "30142614"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

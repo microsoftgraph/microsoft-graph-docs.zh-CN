@@ -4,12 +4,12 @@ description: 列出 deviceManagementScript 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be5e92ef3d3a916d969443a2648da84f0641714c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8ceff08ba72eb4dace69e2017b1b513bd456e20a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967445"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799991"
 ---
 # <a name="list-devicemanagementscripts"></a>列出 deviceManagementScripts
 
@@ -88,6 +88,7 @@ Content-Length: 716
   ]
 }
 ```
+
 
 
 

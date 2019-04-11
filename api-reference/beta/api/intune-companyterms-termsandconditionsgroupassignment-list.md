@@ -4,12 +4,12 @@ description: 列出 termsAndConditionsGroupAssignment 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bfc8110bcd49962bb3a632a15cd19e668136106
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3f57dabab20ac88d819abb58b857e416b0fa65a8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984056"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800054"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>列出 termsAndConditionsGroupAssignments
 
@@ -74,6 +74,7 @@ Content-Length: 214
   ]
 }
 ```
+
 
 
 

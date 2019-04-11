@@ -4,12 +4,12 @@ description: 列出 groupPolicyPresentationValueMultiText 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a30322eb1d95fb9696bfb2fc3e7cbc304227c473
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bf27f015ab34b0e8e5f4990eb7eeaaf866b72060
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968320"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802224"
 ---
 # <a name="list-grouppolicypresentationvaluemultitexts"></a>列出 groupPolicyPresentationValueMultiTexts
 
@@ -78,6 +78,7 @@ Content-Length: 353
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 组策略配置类型
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c0d3a0daa73fef30e5425e188958bdc54e61778d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7e520bdac154ad418cd56a7984eff71ab925984d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164685"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801335"
 ---
 # <a name="grouppolicyconfigurationtype-enum-type"></a>groupPolicyConfigurationType 枚举类型
 
@@ -23,7 +23,8 @@ ms.locfileid: "30164685"
 |成员|值|说明|
 |:---|:---|:---|
 |policy|0|策略类型不 tattoo 值, 这意味着将删除值, 允许使用原始配置值。 策略类型取代应用程序配置设置, 以便应用程序始终知道该值。 策略类型可阻止用户通过应用程序的用户界面修改值。|
-|preference|1|首选项类型不 tattoo 值, 这意味着不会从注册表中删除该值。 首选项类型将覆盖用户配置的值, 并且不会保留以前的值。 首选类型不阻止用户通过应用程序的用户界面修改值。|
+|优先权|1|首选项类型不 tattoo 值, 这意味着不会从注册表中删除该值。 首选项类型将覆盖用户配置的值, 并且不会保留以前的值。 首选类型不阻止用户通过应用程序的用户界面修改值。|
+
 
 
 

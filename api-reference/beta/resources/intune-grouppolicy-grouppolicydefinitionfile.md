@@ -4,12 +4,12 @@ description: 实体表示 ADMX (管理模板) XML 文件。 ADMX 文件包含组
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 494a2f8ff80b3a7f8ee9db9fea4d795494c19a92
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7ecccc683187b592c422d26a6f41bfd15b9d805b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161332"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804135"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile 资源类型
 
@@ -29,18 +29,18 @@ ms.locfileid: "30161332"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|ADMX 文件的本地化友好名称。|
-|description|String|ADMX 文件中策略设置的本地化说明。 默认值为空。|
-|languageCodes|String collection|ADMX 文件的受支持的语言代码。|
+|description|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
+|languageCodes|String 集合|ADMX 文件的受支持的语言代码。|
 |targetPrefix|String|指定在 ADMX 文件中引用命名空间的逻辑名称。|
 |targetNamespace|String|指定用于标识 ADMX 文件中的命名空间的 URI。|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可取值为：`admxBacked`、`admxIngested`。|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可能的值是：`admxBacked`、`admxIngested`。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|定义|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)集合|与文件相关联的组策略定义。|
+|限定|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)集合|与文件相关联的组策略定义。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -65,6 +65,7 @@ ms.locfileid: "30161332"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

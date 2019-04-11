@@ -4,12 +4,12 @@ description: 更新 deviceManagementBooleanSettingInstance 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6345fa1883cb8e909cad1859cfde96de1c4ffcb1
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 9b44eaef87424f66146ca3337aab524ec8c35782
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522613"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804702"
 ---
 # <a name="update-devicemanagementbooleansettinginstance"></a>更新 deviceManagementBooleanSettingInstance
 
@@ -95,8 +95,6 @@ Content-Length: 225
   "value": true
 }
 ```
-
-
 
 
 

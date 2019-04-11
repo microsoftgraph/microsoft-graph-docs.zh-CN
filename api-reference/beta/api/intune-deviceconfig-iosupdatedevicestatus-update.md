@@ -4,12 +4,12 @@ description: 更新 iosUpdateDeviceStatus 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12fb29b0a65cafbf274028b55c3706562704ed02
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5e25aeea1ccb384387c5004b8ef4a0837b38dbec
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989041"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802294"
 ---
 # <a name="update-iosupdatedevicestatus"></a>更新 iosUpdateDeviceStatus
 
@@ -119,6 +119,7 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 
