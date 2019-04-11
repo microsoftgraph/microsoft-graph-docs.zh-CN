@@ -4,31 +4,31 @@ description: 更新 localizedNotificationMessage 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3c8b5983283bbcb8f8cd88e3b2aa5921f969128
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b581cccd28801ea9316953568bb8191a8904eaae
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958786"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789988"
 ---
-# <a name="update-localizednotificationmessage"></a><span data-ttu-id="21725-103">更新 localizedNotificationMessage</span><span class="sxs-lookup"><span data-stu-id="21725-103">Update localizedNotificationMessage</span></span>
+# <a name="update-localizednotificationmessage"></a><span data-ttu-id="491b0-103">更新 localizedNotificationMessage</span><span class="sxs-lookup"><span data-stu-id="491b0-103">Update localizedNotificationMessage</span></span>
 
-> <span data-ttu-id="21725-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="21725-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="491b0-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="491b0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="21725-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="21725-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="491b0-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="491b0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="21725-106">更新 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="21725-106">Update the properties of a [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object.</span></span>
+<span data-ttu-id="491b0-106">更新 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="491b0-106">Update the properties of a [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="21725-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="21725-107">Prerequisites</span></span>
-<span data-ttu-id="21725-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="21725-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="491b0-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="491b0-107">Prerequisites</span></span>
+<span data-ttu-id="491b0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="491b0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="21725-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="21725-110">Permission type</span></span>|<span data-ttu-id="21725-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="21725-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="491b0-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="491b0-110">Permission type</span></span>|<span data-ttu-id="491b0-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="491b0-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="21725-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="21725-112">Delegated (work or school account)</span></span>|<span data-ttu-id="21725-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="21725-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="21725-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="21725-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="21725-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="21725-115">Not supported.</span></span>|
-|<span data-ttu-id="21725-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="21725-116">Application</span></span>|<span data-ttu-id="21725-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="21725-117">Not supported.</span></span>|
+|<span data-ttu-id="491b0-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="491b0-112">Delegated (work or school account)</span></span>|<span data-ttu-id="491b0-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="491b0-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="491b0-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="491b0-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="491b0-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="491b0-115">Not supported.</span></span>|
+|<span data-ttu-id="491b0-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="491b0-116">Application</span></span>|<span data-ttu-id="491b0-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="491b0-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="21725-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="21725-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="491b0-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="491b0-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "30958786"
 PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="21725-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="21725-119">Request headers</span></span>
-|<span data-ttu-id="21725-120">标头</span><span class="sxs-lookup"><span data-stu-id="21725-120">Header</span></span>|<span data-ttu-id="21725-121">值</span><span class="sxs-lookup"><span data-stu-id="21725-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="491b0-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="491b0-119">Request headers</span></span>
+|<span data-ttu-id="491b0-120">标头</span><span class="sxs-lookup"><span data-stu-id="491b0-120">Header</span></span>|<span data-ttu-id="491b0-121">值</span><span class="sxs-lookup"><span data-stu-id="491b0-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="21725-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="21725-122">Authorization</span></span>|<span data-ttu-id="21725-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="21725-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="21725-124">接受</span><span class="sxs-lookup"><span data-stu-id="21725-124">Accept</span></span>|<span data-ttu-id="21725-125">application/json</span><span class="sxs-lookup"><span data-stu-id="21725-125">application/json</span></span>|
+|<span data-ttu-id="491b0-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="491b0-122">Authorization</span></span>|<span data-ttu-id="491b0-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="491b0-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="491b0-124">接受</span><span class="sxs-lookup"><span data-stu-id="491b0-124">Accept</span></span>|<span data-ttu-id="491b0-125">application/json</span><span class="sxs-lookup"><span data-stu-id="491b0-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="21725-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="21725-126">Request body</span></span>
-<span data-ttu-id="21725-127">在请求正文中，提供 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="21725-127">In the request body, supply a JSON representation for the [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="491b0-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="491b0-126">Request body</span></span>
+<span data-ttu-id="491b0-127">在请求正文中，提供 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="491b0-127">In the request body, supply a JSON representation for the [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object.</span></span>
 
-<span data-ttu-id="21725-128">下表显示创建 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="21725-128">The following table shows the properties that are required when you create the [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).</span></span>
+<span data-ttu-id="491b0-128">下表显示创建 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="491b0-128">The following table shows the properties that are required when you create the [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).</span></span>
 
-|<span data-ttu-id="21725-129">属性</span><span class="sxs-lookup"><span data-stu-id="21725-129">Property</span></span>|<span data-ttu-id="21725-130">类型</span><span class="sxs-lookup"><span data-stu-id="21725-130">Type</span></span>|<span data-ttu-id="21725-131">说明</span><span class="sxs-lookup"><span data-stu-id="21725-131">Description</span></span>|
+|<span data-ttu-id="491b0-129">属性</span><span class="sxs-lookup"><span data-stu-id="491b0-129">Property</span></span>|<span data-ttu-id="491b0-130">类型</span><span class="sxs-lookup"><span data-stu-id="491b0-130">Type</span></span>|<span data-ttu-id="491b0-131">说明</span><span class="sxs-lookup"><span data-stu-id="491b0-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="21725-132">id</span><span class="sxs-lookup"><span data-stu-id="21725-132">id</span></span>|<span data-ttu-id="21725-133">String</span><span class="sxs-lookup"><span data-stu-id="21725-133">String</span></span>|<span data-ttu-id="21725-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="21725-134">Key of the entity.</span></span>|
-|<span data-ttu-id="21725-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="21725-135">lastModifiedDateTime</span></span>|<span data-ttu-id="21725-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="21725-136">DateTimeOffset</span></span>|<span data-ttu-id="21725-137">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="21725-137">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="21725-138">locale</span><span class="sxs-lookup"><span data-stu-id="21725-138">locale</span></span>|<span data-ttu-id="21725-139">String</span><span class="sxs-lookup"><span data-stu-id="21725-139">String</span></span>|<span data-ttu-id="21725-140">此消息的目标区域设置。</span><span class="sxs-lookup"><span data-stu-id="21725-140">The Locale for which this message is destined.</span></span>|
-|<span data-ttu-id="21725-141">subject</span><span class="sxs-lookup"><span data-stu-id="21725-141">subject</span></span>|<span data-ttu-id="21725-142">String</span><span class="sxs-lookup"><span data-stu-id="21725-142">String</span></span>|<span data-ttu-id="21725-143">消息模板主题。</span><span class="sxs-lookup"><span data-stu-id="21725-143">The Message Template Subject.</span></span>|
-|<span data-ttu-id="21725-144">messageTemplate</span><span class="sxs-lookup"><span data-stu-id="21725-144">messageTemplate</span></span>|<span data-ttu-id="21725-145">String</span><span class="sxs-lookup"><span data-stu-id="21725-145">String</span></span>|<span data-ttu-id="21725-146">消息模板内容。</span><span class="sxs-lookup"><span data-stu-id="21725-146">The Message Template content.</span></span>|
-|<span data-ttu-id="21725-147">isDefault</span><span class="sxs-lookup"><span data-stu-id="21725-147">isDefault</span></span>|<span data-ttu-id="21725-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="21725-148">Boolean</span></span>|<span data-ttu-id="21725-149">用于指示这是否是语言回退的默认区域设置的标记。</span><span class="sxs-lookup"><span data-stu-id="21725-149">Flag to indicate whether or not this is the default locale for language fallback.</span></span> <span data-ttu-id="21725-150">此标志只能设置。</span><span class="sxs-lookup"><span data-stu-id="21725-150">This flag can only be set.</span></span> <span data-ttu-id="21725-151">若要取消设置，请在其他本地化通知消息中将该属性设置为 true。</span><span class="sxs-lookup"><span data-stu-id="21725-151">To unset, set this property to true on another Localized Notification Message.</span></span>|
+|<span data-ttu-id="491b0-132">id</span><span class="sxs-lookup"><span data-stu-id="491b0-132">id</span></span>|<span data-ttu-id="491b0-133">String</span><span class="sxs-lookup"><span data-stu-id="491b0-133">String</span></span>|<span data-ttu-id="491b0-134">实体的键。</span><span class="sxs-lookup"><span data-stu-id="491b0-134">Key of the entity.</span></span>|
+|<span data-ttu-id="491b0-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="491b0-135">lastModifiedDateTime</span></span>|<span data-ttu-id="491b0-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="491b0-136">DateTimeOffset</span></span>|<span data-ttu-id="491b0-137">上次修改对象的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="491b0-137">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="491b0-138">locale</span><span class="sxs-lookup"><span data-stu-id="491b0-138">locale</span></span>|<span data-ttu-id="491b0-139">String</span><span class="sxs-lookup"><span data-stu-id="491b0-139">String</span></span>|<span data-ttu-id="491b0-140">此消息的目标区域设置。</span><span class="sxs-lookup"><span data-stu-id="491b0-140">The Locale for which this message is destined.</span></span>|
+|<span data-ttu-id="491b0-141">subject</span><span class="sxs-lookup"><span data-stu-id="491b0-141">subject</span></span>|<span data-ttu-id="491b0-142">String</span><span class="sxs-lookup"><span data-stu-id="491b0-142">String</span></span>|<span data-ttu-id="491b0-143">消息模板主题。</span><span class="sxs-lookup"><span data-stu-id="491b0-143">The Message Template Subject.</span></span>|
+|<span data-ttu-id="491b0-144">messageTemplate</span><span class="sxs-lookup"><span data-stu-id="491b0-144">messageTemplate</span></span>|<span data-ttu-id="491b0-145">String</span><span class="sxs-lookup"><span data-stu-id="491b0-145">String</span></span>|<span data-ttu-id="491b0-146">消息模板内容。</span><span class="sxs-lookup"><span data-stu-id="491b0-146">The Message Template content.</span></span>|
+|<span data-ttu-id="491b0-147">isDefault</span><span class="sxs-lookup"><span data-stu-id="491b0-147">isDefault</span></span>|<span data-ttu-id="491b0-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="491b0-148">Boolean</span></span>|<span data-ttu-id="491b0-149">用于指示这是否是语言回退的默认区域设置的标记。</span><span class="sxs-lookup"><span data-stu-id="491b0-149">Flag to indicate whether or not this is the default locale for language fallback.</span></span> <span data-ttu-id="491b0-150">此标志只能设置。</span><span class="sxs-lookup"><span data-stu-id="491b0-150">This flag can only be set.</span></span> <span data-ttu-id="491b0-151">若要取消设置，请在其他本地化通知消息中将该属性设置为 true。</span><span class="sxs-lookup"><span data-stu-id="491b0-151">To unset, set this property to true on another Localized Notification Message.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="21725-152">响应</span><span class="sxs-lookup"><span data-stu-id="21725-152">Response</span></span>
-<span data-ttu-id="21725-153">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="21725-153">If successful, this method returns a `200 OK` response code and an updated [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="491b0-152">响应</span><span class="sxs-lookup"><span data-stu-id="491b0-152">Response</span></span>
+<span data-ttu-id="491b0-153">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="491b0-153">If successful, this method returns a `200 OK` response code and an updated [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="21725-154">示例</span><span class="sxs-lookup"><span data-stu-id="21725-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="491b0-154">示例</span><span class="sxs-lookup"><span data-stu-id="491b0-154">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="21725-155">请求</span><span class="sxs-lookup"><span data-stu-id="21725-155">Request</span></span>
-<span data-ttu-id="21725-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="21725-156">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="491b0-155">请求</span><span class="sxs-lookup"><span data-stu-id="491b0-155">Request</span></span>
+<span data-ttu-id="491b0-156">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="491b0-156">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 200
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="21725-157">响应</span><span class="sxs-lookup"><span data-stu-id="21725-157">Response</span></span>
-<span data-ttu-id="21725-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="21725-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="491b0-157">响应</span><span class="sxs-lookup"><span data-stu-id="491b0-157">Response</span></span>
+<span data-ttu-id="491b0-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="491b0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -97,6 +97,7 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
 
 
 

@@ -4,31 +4,31 @@ description: 为给定应用撤销分配的 iOS VPP 设备许可证。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4933c6f5e26f27711142a3a48068c585c684a3db
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e0dcb1481a4c0a19205952d8d1994d65648cc1e9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982586"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790660"
 ---
-# <a name="revokedevicelicense-action"></a><span data-ttu-id="a2ed1-103">revokeDeviceLicense 操作</span><span class="sxs-lookup"><span data-stu-id="a2ed1-103">revokeDeviceLicense action</span></span>
+# <a name="revokedevicelicense-action"></a><span data-ttu-id="2a499-103">revokeDeviceLicense 操作</span><span class="sxs-lookup"><span data-stu-id="2a499-103">revokeDeviceLicense action</span></span>
 
-> <span data-ttu-id="a2ed1-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="2a499-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="2a499-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a2ed1-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2a499-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="2a499-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a2ed1-106">为给定应用撤销分配的 iOS VPP 设备许可证。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-106">Revoke assigned iOS VPP device license for given app.</span></span>
+<span data-ttu-id="2a499-106">为给定应用撤销分配的 iOS VPP 设备许可证。</span><span class="sxs-lookup"><span data-stu-id="2a499-106">Revoke assigned iOS VPP device license for given app.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a2ed1-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="a2ed1-107">Prerequisites</span></span>
-<span data-ttu-id="a2ed1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2a499-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="2a499-107">Prerequisites</span></span>
+<span data-ttu-id="2a499-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2a499-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a2ed1-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a2ed1-110">Permission type</span></span>|<span data-ttu-id="a2ed1-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a2ed1-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="2a499-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="2a499-110">Permission type</span></span>|<span data-ttu-id="2a499-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="2a499-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a2ed1-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a2ed1-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a2ed1-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a2ed1-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="a2ed1-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a2ed1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a2ed1-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-115">Not supported.</span></span>|
-|<span data-ttu-id="a2ed1-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="a2ed1-116">Application</span></span>|<span data-ttu-id="a2ed1-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-117">Not supported.</span></span>|
+|<span data-ttu-id="2a499-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2a499-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2a499-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2a499-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="2a499-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2a499-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2a499-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="2a499-115">Not supported.</span></span>|
+|<span data-ttu-id="2a499-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="2a499-116">Application</span></span>|<span data-ttu-id="2a499-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="2a499-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a2ed1-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a2ed1-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2a499-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2a499-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +39,31 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/revokeDeviceLicense
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a2ed1-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="a2ed1-119">Request headers</span></span>
-|<span data-ttu-id="a2ed1-120">标头</span><span class="sxs-lookup"><span data-stu-id="a2ed1-120">Header</span></span>|<span data-ttu-id="a2ed1-121">值</span><span class="sxs-lookup"><span data-stu-id="a2ed1-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2a499-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="2a499-119">Request headers</span></span>
+|<span data-ttu-id="2a499-120">标头</span><span class="sxs-lookup"><span data-stu-id="2a499-120">Header</span></span>|<span data-ttu-id="2a499-121">值</span><span class="sxs-lookup"><span data-stu-id="2a499-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a2ed1-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a2ed1-122">Authorization</span></span>|<span data-ttu-id="a2ed1-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a2ed1-124">接受</span><span class="sxs-lookup"><span data-stu-id="a2ed1-124">Accept</span></span>|<span data-ttu-id="a2ed1-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a2ed1-125">application/json</span></span>|
+|<span data-ttu-id="2a499-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2a499-122">Authorization</span></span>|<span data-ttu-id="2a499-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="2a499-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="2a499-124">接受</span><span class="sxs-lookup"><span data-stu-id="2a499-124">Accept</span></span>|<span data-ttu-id="2a499-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2a499-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a2ed1-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a2ed1-126">Request body</span></span>
-<span data-ttu-id="a2ed1-127">在请求正文中，提供参数的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-127">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2a499-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="2a499-126">Request body</span></span>
+<span data-ttu-id="2a499-127">在请求正文中，提供参数的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2a499-127">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="a2ed1-128">下表显示了可用于此操作的参数。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-128">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="2a499-128">下表显示了可用于此操作的参数。</span><span class="sxs-lookup"><span data-stu-id="2a499-128">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="a2ed1-129">属性</span><span class="sxs-lookup"><span data-stu-id="a2ed1-129">Property</span></span>|<span data-ttu-id="a2ed1-130">类型</span><span class="sxs-lookup"><span data-stu-id="a2ed1-130">Type</span></span>|<span data-ttu-id="a2ed1-131">说明</span><span class="sxs-lookup"><span data-stu-id="a2ed1-131">Description</span></span>|
+|<span data-ttu-id="2a499-129">属性</span><span class="sxs-lookup"><span data-stu-id="2a499-129">Property</span></span>|<span data-ttu-id="2a499-130">类型</span><span class="sxs-lookup"><span data-stu-id="2a499-130">Type</span></span>|<span data-ttu-id="2a499-131">说明</span><span class="sxs-lookup"><span data-stu-id="2a499-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a2ed1-132">managedDeviceId</span><span class="sxs-lookup"><span data-stu-id="a2ed1-132">managedDeviceId</span></span>|<span data-ttu-id="a2ed1-133">String</span><span class="sxs-lookup"><span data-stu-id="a2ed1-133">String</span></span>|<span data-ttu-id="a2ed1-134">要吊销其已分配应用程序许可证的 DeviceId</span><span class="sxs-lookup"><span data-stu-id="a2ed1-134">DeviceId for whom assigned app license is to be revoked</span></span>|
-|<span data-ttu-id="a2ed1-135">notifyManagedDevices</span><span class="sxs-lookup"><span data-stu-id="a2ed1-135">notifyManagedDevices</span></span>|<span data-ttu-id="a2ed1-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="a2ed1-136">Boolean</span></span>|<span data-ttu-id="a2ed1-137">指示是否应将吊销通知发送到设备的布尔值</span><span class="sxs-lookup"><span data-stu-id="a2ed1-137">Boolean that indicates if revoke notification should be sent to device</span></span>|
+|<span data-ttu-id="2a499-132">managedDeviceId</span><span class="sxs-lookup"><span data-stu-id="2a499-132">managedDeviceId</span></span>|<span data-ttu-id="2a499-133">String</span><span class="sxs-lookup"><span data-stu-id="2a499-133">String</span></span>|<span data-ttu-id="2a499-134">要吊销其已分配应用程序许可证的 DeviceId</span><span class="sxs-lookup"><span data-stu-id="2a499-134">DeviceId for whom assigned app license is to be revoked</span></span>|
+|<span data-ttu-id="2a499-135">notifyManagedDevices</span><span class="sxs-lookup"><span data-stu-id="2a499-135">notifyManagedDevices</span></span>|<span data-ttu-id="2a499-136">布尔值</span><span class="sxs-lookup"><span data-stu-id="2a499-136">Boolean</span></span>|<span data-ttu-id="2a499-137">指示是否应将吊销通知发送到设备的布尔值</span><span class="sxs-lookup"><span data-stu-id="2a499-137">Boolean that indicates if revoke notification should be sent to device</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a2ed1-138">响应</span><span class="sxs-lookup"><span data-stu-id="a2ed1-138">Response</span></span>
-<span data-ttu-id="a2ed1-139">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-139">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="2a499-138">响应</span><span class="sxs-lookup"><span data-stu-id="2a499-138">Response</span></span>
+<span data-ttu-id="2a499-139">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="2a499-139">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a2ed1-140">示例</span><span class="sxs-lookup"><span data-stu-id="a2ed1-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2a499-140">示例</span><span class="sxs-lookup"><span data-stu-id="2a499-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a2ed1-141">请求</span><span class="sxs-lookup"><span data-stu-id="a2ed1-141">Request</span></span>
-<span data-ttu-id="a2ed1-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-142">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="2a499-141">请求</span><span class="sxs-lookup"><span data-stu-id="2a499-141">Request</span></span>
+<span data-ttu-id="2a499-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="2a499-142">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/revokeDeviceLicense
 
@@ -76,11 +76,12 @@ Content-length: 85
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a2ed1-143">响应</span><span class="sxs-lookup"><span data-stu-id="a2ed1-143">Response</span></span>
-<span data-ttu-id="a2ed1-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a2ed1-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2a499-143">响应</span><span class="sxs-lookup"><span data-stu-id="2a499-143">Response</span></span>
+<span data-ttu-id="2a499-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="2a499-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
