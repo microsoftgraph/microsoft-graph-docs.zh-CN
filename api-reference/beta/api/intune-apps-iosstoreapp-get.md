@@ -4,12 +4,12 @@ description: 读取 iosStoreApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 484906f9e3f277c8b542d5d878037bff26bcb8d3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 38ff9b01e813772e08c0d15a598a59c07511addb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968719"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799186"
 ---
 # <a name="get-iosstoreapp"></a>获取 iosStoreApp
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1382
+Content-Length: 1411
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1382
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "bundleId": "Bundle Id value",
     "appStoreUrl": "https://example.com/appStoreUrl/",
     "applicableDeviceType": {
@@ -113,6 +114,7 @@ Content-Length: 1382
   }
 }
 ```
+
 
 
 

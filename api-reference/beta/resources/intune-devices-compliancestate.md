@@ -4,12 +4,12 @@ description: 合规性状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29357c5248aea78ffca8af464ecf4c3af17bdbc3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8c462df866b3c711bf4738c70ad4a1b0d68ceeb4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172924"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796267"
 ---
 # <a name="compliancestate-enum-type"></a>complianceState 枚举类型
 
@@ -26,9 +26,10 @@ ms.locfileid: "30172924"
 |合格|1|合格.|
 |合规|双面|设备不合规, 并将从公司资源中阻止。|
 |冲突|第三章|与其他规则冲突。|
-|error|4|错误。|
+|错误|4|错误。|
 |inGracePeriod|254|Device 不合规, 但仍有权访问公司资源|
 |configManager|255|由配置管理器管理|
+
 
 
 

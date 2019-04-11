@@ -4,12 +4,12 @@ description: 列出 embeddedSIMActivationCodePoolAssignment 对象的属性和�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2595adcfd070a0e48819bde8e9a3747dcdbf901f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a22bc554bd8dbfac7f4a03a37c9130ca04ea1e5a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958212"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796603"
 ---
 # <a name="list-embeddedsimactivationcodepoolassignments"></a>列出 embeddedSIMActivationCodePoolAssignments
 
@@ -76,6 +76,7 @@ Content-Length: 281
   ]
 }
 ```
+
 
 
 

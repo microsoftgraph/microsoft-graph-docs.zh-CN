@@ -4,12 +4,12 @@ description: 更新 groupPolicyDefinition 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7b2052d587fc6b5a16ba86b534db9cfca89af3c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7fdeb268ed9373a32801f9128563deb40de99eba
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969664"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798157"
 ---
 # <a name="update-grouppolicydefinition"></a>更新 groupPolicyDefinition
 
@@ -106,6 +106,7 @@ Content-Length: 398
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

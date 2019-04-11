@@ -4,12 +4,12 @@ description: 安装状态的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0554df30b4d7165c0164749730e2584af6cc35fd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 25b731f79ed78b7eb4f52a38eaa53a5b49e3df80
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158210"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798703"
 ---
 # <a name="installstate-enum-type"></a>installState 枚举类型
 
@@ -24,10 +24,11 @@ ms.locfileid: "30158210"
 |:---|:---|:---|
 |notApplicable|0|不适用。|
 |了|1|了.|
-|failed|双面|未能.|
+|未能|双面|未能.|
 |notInstalled|第三章|未安装。|
 |uninstallFailed|4|卸载失败。|
 |unknown|5|陌生.|
+
 
 
 

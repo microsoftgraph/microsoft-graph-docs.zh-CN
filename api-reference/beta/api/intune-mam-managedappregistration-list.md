@@ -4,12 +4,12 @@ description: 列出 managedAppRegistration 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac5ed45dee3f9d91b551d141d3cefa7b21aa80b9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 14b4d813c1af7d063ded15e5fcfd81593cdfae3e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967459"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798486"
 ---
 # <a name="list-managedappregistrations"></a>列出 managedAppRegistrations
 
@@ -93,6 +93,7 @@ Content-Length: 1014
   ]
 }
 ```
+
 
 
 

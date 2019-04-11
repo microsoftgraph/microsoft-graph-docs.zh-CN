@@ -4,12 +4,12 @@ description: 实体表示策略定义上的十进制文本框表示形式的无�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ba15c9875b45ce9f250aabb2cbffc8cceea81f4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e260c1f554667429e5086c1f5c9eb603bd098f56
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163698"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799165"
 ---
 # <a name="grouppolicypresentationvaluedecimal-resource-type"></a>groupPolicyPresentationValueDecimal 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "30163698"
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|值|Int64|关联的演示文稿的无符号整数值。|
+|value|Int64|关联的演示文稿的无符号整数值。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -62,6 +62,7 @@ ms.locfileid: "30163698"
   "value": 1024
 }
 ```
+
 
 
 

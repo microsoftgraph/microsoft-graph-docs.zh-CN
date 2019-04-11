@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b4fdd0e857976d6e9721c3f50e9af6f7960454c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1e9b1b3584436ac62c48fe84340834f849558d4e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173057"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797912"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosUpdatesInstallStatus 枚举类型
 
@@ -39,6 +39,7 @@ ms.locfileid: "30173057"
 |installFailed|-2016330702|尚未记录|
 |notSupportedOperation|-2016330701|尚未记录|
 |sharedDeviceUserLoggedInError|-2016330699|尚未记录|
+
 
 
 

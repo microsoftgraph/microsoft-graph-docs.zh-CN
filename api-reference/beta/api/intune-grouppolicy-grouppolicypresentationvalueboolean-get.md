@@ -4,12 +4,12 @@ description: 读取 groupPolicyPresentationValueBoolean 对象的属性和关系
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d00854a860beba0260050f9e1ea7947c4fbe6b5c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 34801e4cb46e128eb6787bb470548a75dfc535dd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977861"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795504"
 ---
 # <a name="get-grouppolicypresentationvalueboolean"></a>获取 groupPolicyPresentationValueBoolean
 
@@ -77,6 +77,7 @@ Content-Length: 296
   }
 }
 ```
+
 
 
 

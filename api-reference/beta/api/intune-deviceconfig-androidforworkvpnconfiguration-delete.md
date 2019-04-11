@@ -4,12 +4,12 @@ description: 删除 androidForWorkVpnConfiguration。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a58532e6a8d22c2a666d45693b5874902834418
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 52c19c47b2af534717feed53ebc08cc628f407a2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967606"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797877"
 ---
 # <a name="delete-androidforworkvpnconfiguration"></a>删除 androidForWorkVpnConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

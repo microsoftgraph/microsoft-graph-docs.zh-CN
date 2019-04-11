@@ -4,12 +4,12 @@ description: 根据展台模式指定 Microsoft Edge 设置的限制方式。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0dcd1d30895acbdecf9d9cc706ee14b7907f14f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 74b03555456c058411c9a50c7392f29fe60d3aed
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177957"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799543"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>edgeKioskModeRestrictionType 枚举类型
 
@@ -27,6 +27,7 @@ ms.locfileid: "30177957"
 |normalMode|双面|正常模式 (Microsoft Edge 的完整版本)。|
 |publicBrowsingSingleApp|第三章|单应用模式中的公共浏览。|
 |publicBrowsingMultiApp|4|多应用模式中的公共浏览 (inPrivate)。|
+
 
 
 

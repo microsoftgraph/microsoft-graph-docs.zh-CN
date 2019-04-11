@@ -4,12 +4,12 @@ description: 此实体包含在自定义公司门户应用程序的租户级别�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f21cc97cd701f9826743475c4055aed6bafe9ca
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3eae52bbb19eaca46c74d275ae7da3d16050a50e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144700"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799914"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile 资源类型
 
@@ -27,27 +27,27 @@ ms.locfileid: "30144700"
 |[创建 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|创建新的[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象。|
 |[删除 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|无|删除[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)。|
 |[更新 intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|更新[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)对象的属性。|
-|[assign 操作](../api/intune-wip-intunebrandingprofile-assign.md)|无|尚未记录|
+|[分配操作](../api/intune-wip-intunebrandingprofile-assign.md)|无|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|配置文件键|
-|profileName|字符串|配置文件的名称|
-|profileDescription|字符串|配置文件的说明|
-|isDefaultProfile|布尔|显示配置文件是否用于默认设置。|
+|id|String|配置文件键|
+|profileName|String|配置文件的名称|
+|profileDescription|String|配置文件的说明|
+|isDefaultProfile|布尔值|显示配置文件是否用于默认设置。|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 时。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间。|
 |displayName|字符串|向最终用户显示的公司/组织名称。|
-|contactITName|字符串|负责 IT 支持的员工/组织名称。|
-|contactITPhoneNumber|字符串|负责 IT 支持的员工/组织的电话号码。|
-|contactITEmailAddress|字符串|负责 IT 支持的员工/组织的电子邮件地址。|
-|contactITNotes|字符串|负责 IT 支持的员工/组织的文本注释。|
-|privacyUrl|字符串|指向公司/组织隐私策略的 URL。|
-|onlineSupportSiteUrl|字符串|指向公司/组织 IT 支持人员网站的 URL。|
+|contactITName|String|负责 IT 支持的员工/组织名称。|
+|contactITPhoneNumber|String|负责 IT 支持的员工/组织的电话号码。|
+|contactITEmailAddress|String|负责 IT 支持的员工/组织的电子邮件地址。|
+|contactITNotes|String|负责 IT 支持的员工/组织的文本注释。|
+|privacyUrl|String|指向公司/组织隐私策略的 URL。|
+|onlineSupportSiteUrl|String|指向公司/组织 IT 支持人员网站的 URL。|
 |onlineSupportSiteName|String|显示公司/组织 IT 支持人员网站的名称。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 Web 门户中使用的主要主题颜色。|
-|showLogo|布尔|表示是否显示管理员提供的徽标图像的布尔值。|
+|showLogo|布尔值|表示是否显示管理员提供的徽标图像的布尔值。|
 |showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在主题颜色背景上的公司门户应用程序中显示的徽标图像。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在 "浅色背景" 的公司门户应用程序中显示的徽标图像。|
@@ -108,6 +108,7 @@ ms.locfileid: "30144700"
   }
 }
 ```
+
 
 
 

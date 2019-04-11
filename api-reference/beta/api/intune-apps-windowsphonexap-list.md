@@ -4,12 +4,12 @@ description: 列出 windowsPhoneXAP 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4957026739dfa0f1c0fd42e04870f99762d5f360
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a9bee1911a9c3903cf36381210fb6305acd450af
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979156"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795714"
 ---
 # <a name="list-windowsphonexaps"></a>列出 windowsPhoneXAPs
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1525
+Content-Length: 1556
 
 {
   "value": [
@@ -91,6 +91,7 @@ Content-Length: 1525
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -110,6 +111,7 @@ Content-Length: 1525
   ]
 }
 ```
+
 
 
 

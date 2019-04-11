@@ -4,12 +4,12 @@ description: 列出 windowsIdentityProtectionConfiguration 对象的属性和关
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8661e998021d17eca77bdb737c9d55d9cae4aabc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 55dbdbe088f4967f66929ab9d73a30a96976f6b3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981011"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798220"
 ---
 # <a name="list-windowsidentityprotectionconfigurations"></a>列出 windowsIdentityProtectionConfigurations
 
@@ -97,6 +97,7 @@ Content-Length: 1115
   ]
 }
 ```
+
 
 
 

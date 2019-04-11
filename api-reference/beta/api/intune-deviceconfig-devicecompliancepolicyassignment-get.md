@@ -4,12 +4,12 @@ description: 读取 deviceCompliancePolicyAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebe956cd4e547cae95c8e184d7311999a44e8b42
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 60d7e822323c6051ed8f6b3e1c875133c0205a70
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968341"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795511"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>获取 deviceCompliancePolicyAssignment
 
@@ -77,6 +77,7 @@ Content-Length: 250
   }
 }
 ```
+
 
 
 

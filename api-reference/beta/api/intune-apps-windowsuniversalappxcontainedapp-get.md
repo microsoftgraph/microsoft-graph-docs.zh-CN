@@ -4,12 +4,12 @@ description: 读取 windowsUniversalAppXContainedApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bed5522578cee4f414e352b73fcb295e106e1ec5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: defbdb0f378c39c67e3c7861801a25b79c1aee32
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976629"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795581"
 ---
 # <a name="get-windowsuniversalappxcontainedapp"></a>获取 windowsUniversalAppXContainedApp
 
@@ -77,6 +77,7 @@ Content-Length: 196
   }
 }
 ```
+
 
 
 

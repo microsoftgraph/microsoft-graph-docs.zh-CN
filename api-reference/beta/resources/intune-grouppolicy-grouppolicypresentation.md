@@ -4,12 +4,12 @@ description: 组策略定义中任何其他选项的显示演示文稿的基本�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d6abbcde241059a15969236b3ab7bcb0825d67d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 00151ec7c75a071df9c6485a68749cce07e6f91a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166876"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797240"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>groupPolicyPresentation 资源类型
 
@@ -28,14 +28,14 @@ ms.locfileid: "30166876"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|标签|字符串|任何演示文稿实体的本地化文本标签。 默认值为空。|
+|label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。|
 |id|String|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|definition|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|与演示文稿相关联的组策略定义。|
+|定义|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|与演示文稿相关联的组策略定义。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -53,6 +53,7 @@ ms.locfileid: "30166876"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

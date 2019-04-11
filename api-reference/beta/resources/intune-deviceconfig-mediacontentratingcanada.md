@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38f3bac4e8410a3c63bd07319888ab0a5fc7df19
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 503218cf76d235f4122e36d1d358dce9a76e0fda
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146345"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799704"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>mediaContentRatingCanada 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30146345"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|movieRating|[ratingCanadaMoviesType](../resources/intune-deviceconfig-ratingcanadamoviestype.md)|为加拿大选择的电影评级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove14`、`agesAbove18`、`restricted`。|
+|movieRating|[ratingCanadaMoviesType](../resources/intune-deviceconfig-ratingcanadamoviestype.md)|为加拿大选择的电影评级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove14`、`agesAbove18` 或 `restricted`。|
 |tvRating|[ratingCanadaTelevisionType](../resources/intune-deviceconfig-ratingcanadatelevisiontype.md)|为加拿大选择的电视评级。 可取值为：`allAllowed`、`allBlocked`、`children`、`childrenAbove8`、`general`、`parentalGuidance`、`agesAbove14`、`agesAbove18`。|
 
 ## <a name="relationships"></a>关系
@@ -42,6 +42,7 @@ ms.locfileid: "30146345"
   "tvRating": "String"
 }
 ```
+
 
 
 

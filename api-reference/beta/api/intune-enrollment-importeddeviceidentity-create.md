@@ -4,12 +4,12 @@ description: 创建新的 importedDeviceIdentity 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d91ebc37a348f86a83d0a17c3b2af1ab7f0292e6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0be79099f755963eb039bc4f280200fe346e99ec
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977728"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798920"
 ---
 # <a name="create-importeddeviceidentity"></a>创建 importedDeviceIdentity
 
@@ -58,7 +58,7 @@ POST /deviceManagement/importedDeviceIdentities
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
 |description|String|设备的说明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune 中设备的状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|platform|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
+|platform|[platform](../resources/intune-enrollment-platform.md)|设备的平台。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 
 
 
@@ -105,6 +105,7 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
+
 
 
 

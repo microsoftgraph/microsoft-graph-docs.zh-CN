@@ -4,12 +4,12 @@ description: 创建新的 securityBaselineState 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f481bc5a3fa5e58017a671fe2fed43baa4c30af1
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a365d1e59696e89f6812490422722285f3645fc5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522522"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796869"
 ---
 # <a name="create-securitybaselinestate"></a>创建 securityBaselineState
 
@@ -20,7 +20,7 @@ ms.locfileid: "31522522"
 创建新的[securityBaselineState](../resources/intune-deviceintent-securitybaselinestate.md)对象。
 
 ## <a name="prerequisites"></a>先决条件
-要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/concepts/permissions-reference.md)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|

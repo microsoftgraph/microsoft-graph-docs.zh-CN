@@ -4,12 +4,12 @@ description: 包含用于为组分配 MDM 应用配置的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 064f881f0d90d2748446bcd618b07767c4836db5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b098b98130e2a01716767b64b3a40f8e4b38812a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149978"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796365"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>managedDeviceMobileAppConfigurationAssignment 资源类型
 
@@ -54,6 +54,7 @@ ms.locfileid: "30149978"
   }
 }
 ```
+
 
 
 

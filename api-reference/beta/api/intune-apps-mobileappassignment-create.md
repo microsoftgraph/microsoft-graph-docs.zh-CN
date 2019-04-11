@@ -4,12 +4,12 @@ description: 创建新的 mobileAppAssignment 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d42e1dde94037e932757f0d0c6202bcb10e3f540
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 55f9f20027657f826d1aa92bfdebbb7bdf57ed35
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985044"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796981"
 ---
 # <a name="create-mobileappassignment"></a>创建 mobileAppAssignment
 
@@ -100,6 +100,7 @@ Content-Length: 322
   }
 }
 ```
+
 
 
 

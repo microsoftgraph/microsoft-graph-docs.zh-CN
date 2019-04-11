@@ -4,12 +4,12 @@ description: 登录用户
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5dfaa8bbaa879fc48c5f6ea31d1b7b14e998820
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a2b92d8504ba4854109efa30d0637bca1ea35d7b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148928"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799459"
 ---
 # <a name="loggedonuser-resource-type"></a>loggedOnUser 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30148928"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|userId|String|用户 id|
+|userId|String|用户 ID|
 |lastLogOnDateTime|DateTimeOffset|用户登录的日期时间|
 
 ## <a name="relationships"></a>关系
@@ -42,6 +42,7 @@ ms.locfileid: "30148928"
   "lastLogOnDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

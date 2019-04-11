@@ -4,12 +4,12 @@ description: 更新 windowsProtectionState 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a77cf48766d2ea6aec8f9f2f1017530226be5bc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b53e93f09be2b091ffe3e6a30cd109feb55c8d8a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973885"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797401"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
@@ -52,15 +52,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|Boolean|已启用反恶意软件|
+|malwareProtectionEnabled|布尔值|已启用反恶意软件|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (如清理或挂起完全扫描或等待重新启动等)。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|Boolean|是否启用了实时保护？|
-|networkInspectionSystemEnabled|Boolean|网络检查系统是否已启用？|
-|quickScanOverdue|Boolean|快速扫描是否过期？|
-|fullScanOverdue|Boolean|完全扫描逾期？|
-|signatureUpdateOverdue|Boolean|签名是否已过期？|
-|rebootRequired|Boolean|是否需要重新启动？|
-|fullScanRequired|Boolean|需要完全扫描吗？|
+|realTimeProtectionEnabled|布尔值|是否启用了实时保护？|
+|networkInspectionSystemEnabled|布尔值|网络检查系统是否已启用？|
+|quickScanOverdue|布尔值|快速扫描是否过期？|
+|fullScanOverdue|布尔值|完全扫描逾期？|
+|signatureUpdateOverdue|布尔值|签名是否已过期？|
+|rebootRequired|布尔值|是否需要重新启动？|
+|fullScanRequired|布尔值|需要完全扫描吗？|
 |engineVersion|String|当前 endpoint protection 引擎的版本|
 |signatureVersion|String|当前恶意软件定义版本|
 |antiMalwareVersion|String|当前反恶意软件版本|
@@ -135,6 +135,7 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
 
 
 

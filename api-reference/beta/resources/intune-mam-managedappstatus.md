@@ -4,12 +4,12 @@ description: 表示组织的应用保护和配置状态。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cc9f6596e9d9361a8c211809bf0f621fe36bcd4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6df9c36f15e3e20389dfc46d306b896c3fe77b5b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153156"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799144"
 ---
 # <a name="managedappstatus-resource-type"></a>managedAppStatus 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "30153156"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|状态报告的友好名称。|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系
@@ -51,6 +51,7 @@ ms.locfileid: "30153156"
   "version": "String"
 }
 ```
+
 
 
 

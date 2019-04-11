@@ -4,12 +4,12 @@ description: Windows 移动应用需要的最低操作系统。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f230ed4860e3ff8bad7968367ce5337b59521d4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c20bdf575041e28e348f050f7bad4688f76e1398
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152883"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798794"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem 资源类型
 
@@ -22,13 +22,13 @@ Windows 移动应用需要的最低操作系统。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|v8_0|Boolean|Windows 版本 8.0 或更高版本。|
-|v8_1|Boolean|Windows 版本 8.1 或更高版本。|
+|v8_0|布尔值|Windows 版本 8.0 或更高版本。|
+|v8_1|布尔值|Windows 版本 8.1 或更高版本。|
 |v10_0|布尔值|Windows 版本 10.0 或更高版本。|
-|v10_1607|Boolean|Windows 10 1607 或更高版本。|
-|v10_1703|Boolean|Windows 10 1703 或更高版本。|
-|v10_1709|Boolean|Windows 10 1709 或更高版本。|
-|v10_1803|Boolean|Windows 10 1803 或更高版本。|
+|v10_1607|布尔值|Windows 10 1607 或更高版本。|
+|v10_1703|布尔值|Windows 10 1703 或更高版本。|
+|v10_1709|布尔值|Windows 10 1709 或更高版本。|
+|v10_1803|布尔值|Windows 10 1803 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -52,6 +52,7 @@ Windows 移动应用需要的最低操作系统。
   "v10_1803": true
 }
 ```
+
 
 
 

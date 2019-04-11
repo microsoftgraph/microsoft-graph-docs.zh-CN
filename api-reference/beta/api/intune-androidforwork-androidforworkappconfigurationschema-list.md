@@ -4,12 +4,12 @@ description: 列出 androidForWorkAppConfigurationSchema 对象的属性和关�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0edeb76021474c0e11cb70c8f2e7b042ae8dfedc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8e11d11e1e5af7f52eb37e5b1fc6c60181b728d4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984539"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799935"
 ---
 # <a name="list-androidforworkappconfigurationschemas"></a>列出 androidForWorkAppConfigurationSchemas
 
@@ -96,6 +96,7 @@ Content-Length: 977
   ]
 }
 ```
+
 
 
 

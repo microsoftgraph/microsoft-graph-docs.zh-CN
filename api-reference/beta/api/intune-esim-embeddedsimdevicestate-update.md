@@ -4,12 +4,12 @@ description: 更新 embeddedSIMDeviceState 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8307ebc185a6543b706befc433b7e26b17702b38
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1fbf7679467e228531bb7bc57eb9e11f5a2c9eff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981977"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797758"
 ---
 # <a name="update-embeddedsimdevicestate"></a>更新 embeddedSIMDeviceState
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 |lastSyncDateTime|DateTimeOffset|嵌入的 SIM 设备上次签入的时间。 更新了服务端。|
 |universalIntegratedCircuitCardIdentifier|String|通用集成电路卡标识符 (UICCID), 用于标识要在其上部署配置文件的硬件。|
 |deviceName|String|订阅预配到的设备名称, 例如, 桌面 JOE|
-|userName|String|订阅预配到的用户名, 例如 joe@contoso.com|
+|userName|String|订阅预配到的用户名, 例如joe@contoso.com|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于设备的配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
 |stateDetails|String|设置状态的字符串说明。|
 
@@ -105,6 +105,7 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
+
 
 
 

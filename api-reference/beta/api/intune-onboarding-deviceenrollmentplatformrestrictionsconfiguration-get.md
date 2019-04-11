@@ -4,12 +4,12 @@ description: 读取 deviceEnrollmentPlatformRestrictionsConfiguration 对象的�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 91614078abccac16b577e91b69f635577ebd0c47
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5aa2a4eeb38580572d9a4adb4d0c2fcbad630b3d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981305"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795539"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>获取 deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -129,6 +129,7 @@ Content-Length: 2536
   }
 }
 ```
+
 
 
 

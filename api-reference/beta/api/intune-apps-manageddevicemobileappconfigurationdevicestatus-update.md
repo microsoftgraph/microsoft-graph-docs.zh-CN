@@ -4,12 +4,12 @@ description: 更新 managedDeviceMobileAppConfigurationDeviceStatus 对象的属
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 48afdece32d82d0112ebc77cf13fa71ff1b175d1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e0732c53a076081c35a836e7d34ed4b2427026e4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961943"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795966"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>更新 managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -108,6 +108,7 @@ Content-Length: 512
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

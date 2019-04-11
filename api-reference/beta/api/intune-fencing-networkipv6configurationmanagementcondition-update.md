@@ -4,12 +4,12 @@ description: 更新 networkIPv6ConfigurationManagementCondition 对象的属性�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2e6c6f7a51945e8cc54c9c80e47ea26337b4ac6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: be681eccf66f6aa71e13c3bf4eb306a5d8d3f73f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979842"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796911"
 ---
 # <a name="update-networkipv6configurationmanagementcondition"></a>更新 networkIPv6ConfigurationManagementCondition
 
@@ -127,6 +127,7 @@ Content-Length: 651
   ]
 }
 ```
+
 
 
 

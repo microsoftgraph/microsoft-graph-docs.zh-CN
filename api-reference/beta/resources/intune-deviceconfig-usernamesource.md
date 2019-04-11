@@ -4,12 +4,12 @@ description: 用户名源。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 001fb659c86b3403e6a206daa72f9d12d8bdb383
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 53eae35e947b958c21df63ece3156da4107e8d0b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166232"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796337"
 ---
 # <a name="usernamesource-enum-type"></a>usernameSource 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30166232"
 |userPrincipalName|0|用户主体名称。|
 |primarySmtpAddress|1|主 SMTP 地址。|
 |samAccountName|双面|用户 sam 帐户名称。|
+
 
 
 

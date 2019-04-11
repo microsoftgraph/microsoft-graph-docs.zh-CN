@@ -4,12 +4,12 @@ description: wi-fi 代理设置。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d5b07b018008fe7d7cff8e93046d530bfcecaf6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4677a7113a32f6da1cebac561b10a2e411a5e363
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145106"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796253"
 ---
 # <a name="wifiproxysetting-enum-type"></a>wiFiProxySetting 枚举类型
 
@@ -25,6 +25,7 @@ wi-fi 代理设置。
 |无|0|无代理。|
 |手动|1|通过地址和端口的手动代理设置。|
 |自动|双面|通过 URL 自动代理设置。|
+
 
 
 

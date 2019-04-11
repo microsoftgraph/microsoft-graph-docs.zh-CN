@@ -4,12 +4,12 @@ description: 澳大利亚的电影评级标签
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 150f5612e0f904c5fda251d630fa3a9df749e5d5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 438b255970d42bfb0ef63018e87fcbcdfe62b163
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162662"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797849"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>ratingAustraliaMoviesType 枚举类型
 
@@ -29,6 +29,7 @@ ms.locfileid: "30162662"
 |成熟|4|不建议在15下对查看器使用 M 分类|
 |agesAbove15|5|MA15 + 分类不适用于15岁以上的查看器|
 |agesAbove18|型|R18 + 分类不适用于18岁以上的观众|
+
 
 
 

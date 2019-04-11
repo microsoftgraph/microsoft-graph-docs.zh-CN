@@ -4,12 +4,12 @@ description: 读取 managedDeviceOverview 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fdbf0b3f7f5f62edd15c0177a9191334e28af92
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 67149f922a75ab09e55dcfc37c0f86db96a4353e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979604"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798976"
 ---
 # <a name="get-manageddeviceoverview"></a>获取 managedDeviceOverview
 
@@ -104,6 +104,7 @@ Content-Length: 1139
   }
 }
 ```
+
 
 
 

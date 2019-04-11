@@ -4,12 +4,12 @@ description: 包含 iOS 移动应用需要的最低操作系统的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98ad7191b919905e18246e904744b79dfeead06e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3775a9bbc9eee6bfef5dd1bef8235bf6fc770603
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161493"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795174"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem 资源类型
 
@@ -22,11 +22,11 @@ ms.locfileid: "30161493"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|v8_0|布尔|版本 8.0 或更高版本。|
-|v9_0|布尔|版本 9.0 或更高版本。|
-|v10_0|布尔|版本 10.0 或更高版本。|
+|v8_0|布尔值|版本 8.0 或更高版本。|
+|v9_0|布尔值|版本 9.0 或更高版本。|
+|v10_0|布尔值|版本 10.0 或更高版本。|
 |v11_0|布尔值|版本 11.0 或更高版本。|
-|v12_0|布尔|版本12.0 或更高版本。|
+|v12_0|布尔值|版本12.0 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -48,6 +48,7 @@ ms.locfileid: "30161493"
   "v12_0": true
 }
 ```
+
 
 
 

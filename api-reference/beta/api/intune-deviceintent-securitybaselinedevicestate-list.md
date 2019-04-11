@@ -4,12 +4,12 @@ description: 列出 securityBaselineDeviceState 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 792c81187dfb5fb9388ba49e24e793adc1805b97
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 96e9a3fabe38ed3985769e21393636a605dbad6c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522921"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795378"
 ---
 # <a name="list-securitybaselinedevicestates"></a>列出 securityBaselineDeviceStates
 
@@ -78,8 +78,6 @@ Content-Length: 420
   ]
 }
 ```
-
-
 
 
 

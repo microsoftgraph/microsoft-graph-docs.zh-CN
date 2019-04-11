@@ -4,12 +4,12 @@ description: 列出 managedIOSStoreApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 665bb6de65002957d87ce1100c3ebfb617002771
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: db0fc75096f80f94561809005761c88617e68eaf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964008"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796064"
 ---
 # <a name="list-managediosstoreapps"></a>列出 managedIOSStoreApps
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1560
+Content-Length: 1591
 
 {
   "value": [
@@ -91,6 +91,7 @@ Content-Length: 1560
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "appAvailability": "lineOfBusiness",
       "version": "Version value",
       "bundleId": "Bundle Id value",
@@ -112,6 +113,7 @@ Content-Length: 1560
   ]
 }
 ```
+
 
 
 

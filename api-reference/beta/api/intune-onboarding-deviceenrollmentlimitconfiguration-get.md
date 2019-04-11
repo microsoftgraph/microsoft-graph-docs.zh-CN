@@ -4,12 +4,12 @@ description: 读取 deviceEnrollmentLimitConfiguration 对象的属性和关系�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4e67dc04b7f24e6ddd5d74d68f7d4ee67640af3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b10a8fce8d8733e6552acea68fc48f82cf30c575
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964225"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798640"
 ---
 # <a name="get-deviceenrollmentlimitconfiguration"></a>获取 deviceEnrollmentLimitConfiguration
 
@@ -81,6 +81,7 @@ Content-Length: 414
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 列出 deviceManagementIntentAssignment 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a306d84f18e795d4179fd665f2ec3b3d02faf5d9
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 7d4299bfef366945cc42bab8a6dd84886cd342e1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522781"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796631"
 ---
 # <a name="list-devicemanagementintentassignments"></a>列出 deviceManagementIntentAssignments
 
@@ -76,8 +76,6 @@ Content-Length: 274
   ]
 }
 ```
-
-
 
 
 

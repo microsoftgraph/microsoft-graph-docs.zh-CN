@@ -4,12 +4,12 @@ description: 使用二元运算计算的管理条件表达式。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d70306923b86f6d42942c5ce6b78ff31819d47d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 50092f7031719fb1050706ed81280a347638117d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150482"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799410"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>binaryManagementConditionExpression 资源类型
 
@@ -51,6 +51,7 @@ ms.locfileid: "30150482"
   }
 }
 ```
+
 
 
 

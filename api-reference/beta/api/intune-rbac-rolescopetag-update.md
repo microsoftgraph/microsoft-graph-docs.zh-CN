@@ -4,12 +4,12 @@ description: 更新 roleScopeTag 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a0adb3e151eb4b9d54a7c83d886deb99ac23573
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c3670850bb0a9b3907b02c3e48d893b35ce7fcbb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959423"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799207"
 ---
 # <a name="update-rolescopetag"></a>更新 roleScopeTag
 
@@ -90,6 +90,7 @@ Content-Length: 182
   "description": "Description value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 列出 mobileApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87810732b6d3cf77574f7eb299b7a7e272bb3f18
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b125753c16dd96b8e6513fdcc24106cc6a6d3e83
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981263"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798297"
 ---
 # <a name="list-mobileapps"></a>列出 mobileApps
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 982
+Content-Length: 1013
 
 {
   "value": [
@@ -90,11 +90,13 @@ Content-Length: 982
       "isAssigned": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ]
+      ],
+      "dependentAppCount": 1
     }
   ]
 }
 ```
+
 
 
 

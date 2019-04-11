@@ -4,12 +4,12 @@ description: 读取 enterpriseCodeSigningCertificate 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed7779156aa18f86403a4e4e892da2e618d6e5ec
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bf1496dad2518d01aa5560004abe44c01d4fe8b0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974347"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798815"
 ---
 # <a name="get-enterprisecodesigningcertificate"></a>获取 enterpriseCodeSigningCertificate
 
@@ -82,6 +82,7 @@ Content-Length: 478
   }
 }
 ```
+
 
 
 

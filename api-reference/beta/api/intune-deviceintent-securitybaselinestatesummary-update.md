@@ -4,12 +4,12 @@ description: 更新 securityBaselineStateSummary 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1cfd2f6eafd638822b5bd66887ab36d3bf95a88d
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a5ac7e4094f415af6b2922eaa03af663d0cf0572
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523621"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795882"
 ---
 # <a name="update-securitybaselinestatesummary"></a>更新 securityBaselineStateSummary
 
@@ -101,8 +101,6 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
-
-
 
 
 

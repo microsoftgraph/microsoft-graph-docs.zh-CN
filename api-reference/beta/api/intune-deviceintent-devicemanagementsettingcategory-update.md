@@ -4,12 +4,12 @@ description: 更新 deviceManagementSettingCategory 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 258d89d433beee80458d51d911783ad99b7bf442
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 5d47786cd3f14e173f904b0f0fe18d316ecde26c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522900"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797954"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>更新 deviceManagementSettingCategory
 
@@ -86,8 +86,6 @@ Content-Length: 162
   "displayName": "Display Name value"
 }
 ```
-
-
 
 
 

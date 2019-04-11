@@ -4,12 +4,12 @@ description: 更新 managedDeviceEncryptionState 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9898d9eeb5e26dfa13707f5e93faa9907bcf1dee
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 994cf3a4e0760e9f760856f50ee954eea010f524
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978211"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797072"
 ---
 # <a name="update-manageddeviceencryptionstate"></a>更新 managedDeviceEncryptionState
 
@@ -125,6 +125,7 @@ Content-Length: 707
   ]
 }
 ```
+
 
 
 

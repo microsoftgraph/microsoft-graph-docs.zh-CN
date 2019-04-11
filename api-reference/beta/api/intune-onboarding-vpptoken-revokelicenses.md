@@ -4,12 +4,12 @@ description: 吊销与特定 appleVolumePurchaseProgramToken 相关联的许可�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5094711ad545c24fff27716e7a33bd5acafc7dac
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d6799edd63f555275ea5f4142844c55611923ac5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980962"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795322"
 ---
 # <a name="revokelicenses-action"></a>revokeLicenses 操作
 
@@ -77,6 +77,7 @@ Content-length: 36
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

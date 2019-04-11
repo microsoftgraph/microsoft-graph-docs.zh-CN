@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75f8bf0c97fee5796524a68aa55cd1bd6b1dd16d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4ed0c25a4fbed3a7ec85af639d91c691f7cafdc5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964785"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798255"
 ---
 # <a name="createtoken-action"></a>createToken 操作
 
@@ -77,6 +77,7 @@ Content-length: 35
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 合规性应用程序列表的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b7d11107ca3ea2b698e28cd288f163ec190b0a6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a05fc37f692d58a4d5d434037fd9d1ebe09ecaa9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172672"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798724"
 ---
 # <a name="applisttype-enum-type"></a>appListType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30172672"
 |无|0|默认值, 无意向。|
 |appsInListCompliant|1|此列表表示将被视为合规性的应用程序 (仅符合列表中的应用程序)。|
 |appsNotInListCompliant|双面|此列表表示将被视为不合规的应用程序 (所有应用程序都符合列表中的应用程序)。|
+
 
 
 

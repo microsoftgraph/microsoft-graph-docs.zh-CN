@@ -4,12 +4,12 @@ description: 包含审核主角的属性的类。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b748eaea907bc2f763bb5567d7963c33b31bddd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 77150c7a2b883acc6857cd0866459fb9423dfa6c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141123"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798745"
 ---
 # <a name="auditactor-resource-type"></a>auditActor 资源类型
 
@@ -22,12 +22,12 @@ ms.locfileid: "30141123"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|type|字符串|主角类型。|
+|类型|字符串|主角类型。|
 |userPermissions|String collection|执行审核时的用户权限列表。|
-|applicationId|字符串|AAD 应用程序 ID。|
-|applicationDisplayName|字符串|应用程序的名称。|
-|userPrincipalName|字符串|用户主体名称 (UPN)。|
-|servicePrincipalName|字符串|服务主体名称 (SPN)。|
+|applicationId|String|AAD 应用程序 ID。|
+|applicationDisplayName|String|应用程序的名称。|
+|userPrincipalName|String|用户主体名称 (UPN)。|
+|servicePrincipalName|String|服务主体名称 (SPN)。|
 |ipAddress|String|IPAddress。|
 |userId|String|用户 ID。|
 
@@ -56,6 +56,7 @@ ms.locfileid: "30141123"
   "userId": "String"
 }
 ```
+
 
 
 

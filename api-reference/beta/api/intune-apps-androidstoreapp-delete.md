@@ -4,12 +4,12 @@ description: 删除 androidStoreApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe5bdafba4919a61cbc5b072836a52eceb44d8b6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 78b6a414347c2100435222b13edcee7537e30b01
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982621"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797352"
 ---
 # <a name="delete-androidstoreapp"></a>删除 androidStoreApp
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

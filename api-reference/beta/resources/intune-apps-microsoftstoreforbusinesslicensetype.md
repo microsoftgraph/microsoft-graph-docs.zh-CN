@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e81ca6f09253c43ae936bbc243124fd8d9a19268
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 470f2b398bb146c6522d0fc0c6fe884813b12d92
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151070"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795924"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>microsoftStoreForBusinessLicenseType 枚举类型
 
@@ -24,6 +24,7 @@ ms.locfileid: "30151070"
 |:---|:---|:---|
 |脱机|0|尚未记录|
 |隐私声明|1|尚未记录|
+
 
 
 

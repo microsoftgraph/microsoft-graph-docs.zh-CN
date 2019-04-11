@@ -4,12 +4,12 @@ description: 读取 androidEasEmailProfileConfiguration 对象的属性和关系
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9239ade28da569fa3a6954745833669b7d4a78bf
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a31d70dc74e5a92ecad4c543c48d8a0ce606e5c6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976356"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798234"
 ---
 # <a name="get-androideasemailprofileconfiguration"></a>获取 androidEasEmailProfileConfiguration
 
@@ -100,6 +100,7 @@ Content-Length: 1036
   }
 }
 ```
+
 
 
 

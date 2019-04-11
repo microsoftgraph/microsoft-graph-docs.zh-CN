@@ -4,12 +4,12 @@ description: Apple volume purchase program 令牌操作失败的可能原因类�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05d3137bb5aac2aef3024825df5e7e0b84ffde51
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c9adb896d384be99496c016ef3bd39b02ff1a28e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169690"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798528"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>vppTokenActionFailureReason 枚举类型
 
@@ -27,6 +27,7 @@ Apple volume purchase program 令牌操作失败的可能原因类型。
 |internalError|双面|有一个内部错误。|
 |expiredVppToken|第三章|由于 Apple volume purchase program 令牌已过期, 因此出现错误。|
 |expiredApplePushNotificationCertificate|4|由于 Apple volume purchase program 推送通知证书已过期, 因此出现错误。|
+
 
 
 

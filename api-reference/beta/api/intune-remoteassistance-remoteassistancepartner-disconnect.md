@@ -1,15 +1,15 @@
 ---
 title: disconnect 操作
-description: 尚未记录
+description: 请求删除活动的 TeamViewer 连接器
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b07297796f4da30421e5d9eaf8ffdcce2d46efdd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: dda674128dc42690ec5385cf5e2ac350f9284fc1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970140"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795406"
 ---
 # <a name="disconnect-action"></a>断开连接操作
 
@@ -17,7 +17,7 @@ ms.locfileid: "30970140"
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+请求删除活动的 TeamViewer 连接器
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

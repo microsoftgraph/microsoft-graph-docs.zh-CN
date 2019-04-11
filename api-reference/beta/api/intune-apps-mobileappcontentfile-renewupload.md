@@ -4,12 +4,12 @@ description: 续订用于应用程序文件上传的 SAS URI。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce285fa3bf9f76587a47cd04513611b40f3c2752
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 65fc94d0a263d851c8a252017186c98dc65cbe57
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966080"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798416"
 ---
 # <a name="renewupload-action"></a>renewUpload 操作
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppI
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

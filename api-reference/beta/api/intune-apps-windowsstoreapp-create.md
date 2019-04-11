@@ -4,12 +4,12 @@ description: 创建新的 windowsStoreApp 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba16ba7aa7ad0e3c12cc47cf228a8c2b49e7c941
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d5939c747da8955ce8269b784a452dcee433c23a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983923"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797443"
 ---
 # <a name="create-windowsstoreapp"></a>创建 windowsStoreApp
 
@@ -67,6 +67,7 @@ POST /deviceAppManagement/mobileApps
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |appStoreUrl|String|Windows 应用商店 URL。|
 
 
@@ -81,7 +82,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 741
+Content-length: 768
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreApp",
@@ -105,6 +106,7 @@ Content-length: 741
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
@@ -114,7 +116,7 @@ Content-length: 741
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 913
+Content-Length: 940
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreApp",
@@ -141,9 +143,11 @@ Content-Length: 913
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
 
 
 

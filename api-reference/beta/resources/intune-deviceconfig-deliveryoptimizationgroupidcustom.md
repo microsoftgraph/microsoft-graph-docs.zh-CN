@@ -4,12 +4,12 @@ description: 自定义组 id 类型
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec3b00920d0ead3df5fe694e110825615f449ef4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d4f369c9a3b62480549f19d4a7c1d7b1d0bb196
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177971"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796589"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>deliveryOptimizationGroupIdCustom 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "30177971"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|groupIdCustom|字符串|指定设备所属的任意组 ID|
+|groupIdCustom|String|指定设备所属的任意组 ID|
 
 ## <a name="relationships"></a>关系
 无
@@ -43,6 +43,7 @@ ms.locfileid: "30177971"
   "groupIdCustom": "String"
 }
 ```
+
 
 
 

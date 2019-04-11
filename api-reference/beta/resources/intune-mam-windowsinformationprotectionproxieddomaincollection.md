@@ -4,12 +4,12 @@ description: Windows 信息保护代理域集合
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c03eba4089fc984478854cd50b378c0f2d9b155
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0cf20d0a0afb33732278b9c8f988b3008854b770
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143405"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799270"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>windowsInformationProtectionProxiedDomainCollection 资源类型
 
@@ -48,6 +48,7 @@ Windows 信息保护代理域集合
   ]
 }
 ```
+
 
 
 

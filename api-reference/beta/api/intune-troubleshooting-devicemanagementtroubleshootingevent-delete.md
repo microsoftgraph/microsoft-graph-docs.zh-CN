@@ -4,12 +4,12 @@ description: 删除 deviceManagementTroubleshootingEvent。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a39f1d188f91cebd3d083246aa361e2deb3969f1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1836521a9ef4cba9dd4bdcf98b4383665816e8d9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972093"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799578"
 ---
 # <a name="delete-devicemanagementtroubleshootingevent"></a>删除 deviceManagementTroubleshootingEvent
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

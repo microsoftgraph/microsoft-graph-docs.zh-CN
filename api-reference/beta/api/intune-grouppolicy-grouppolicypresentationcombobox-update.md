@@ -4,12 +4,12 @@ description: 更新 groupPolicyPresentationComboBox 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9dbb758f82c31e271cba2d5e2182efe947f78f5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4df510c4dab590c97a5399a1ab453afa2099bc1f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974130"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798633"
 ---
 # <a name="update-grouppolicypresentationcombobox"></a>更新 groupPolicyPresentationComboBox
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |默认|String|组合框中显示的本地化默认字符串。 默认值为空白。|
 |推荐|String 集合|组合框下拉列表中列出的本地化字符串。 默认值为空白。|
-|必需|Boolean|指定是否必须为参数指定值。 默认值为 false。|
+|必需|布尔值|指定是否必须为参数指定值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数, 指定参数的最大文本字符数。 默认值为1023。|
 
 
@@ -105,6 +105,7 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
+
 
 
 

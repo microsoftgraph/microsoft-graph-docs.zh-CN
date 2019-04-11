@@ -4,12 +4,12 @@ description: 包含 Windows 业务线应用程序的包信息的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba69fe277809b3ce4d6f81a198fc305204984d73
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e1dda51d5c98cb27ab9e71c7bef9167959c9052
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166449"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799613"
 ---
 # <a name="windowspackageinformation-resource-type"></a>了 windowspackageinformation 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "30166449"
 |属性|类型|说明|
 |:---|:---|:---|
 |将 applicablearchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可在其上运行此应用程序的 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`、`arm64`。|
-|displayName|字符串|显示名称。|
+|displayName|String|显示名称。|
 |identityName|String|标识名称。|
 |identityPublisher|String|标识发布者。|
 |identityResourceIdentifier|String|标识资源标识符。|
@@ -61,6 +61,7 @@ ms.locfileid: "30166449"
   }
 }
 ```
+
 
 
 

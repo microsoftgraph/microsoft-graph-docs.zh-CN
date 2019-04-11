@@ -4,12 +4,12 @@ description: 创建新的 deviceManagementIntegerSettingInstance 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32ead48975e72b668724c09b38e990fb56b02def
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 33b2b22d8a1004624a63c9b27e3b25285df9c75f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522697"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799795"
 ---
 # <a name="create-devicemanagementintegersettinginstance"></a>创建 deviceManagementIntegerSettingInstance
 
@@ -95,8 +95,6 @@ Content-Length: 222
   "value": 5
 }
 ```
-
-
 
 
 

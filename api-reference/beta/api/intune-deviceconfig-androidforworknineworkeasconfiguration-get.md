@@ -4,12 +4,12 @@ description: 读取 androidForWorkNineWorkEasConfiguration 对象的属性和关
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7b779d30ed583578181dafc71e5169e863e8aa9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 496a7b8ae083bd9475568ce39d265783dd2ab702
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982852"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798318"
 ---
 # <a name="get-androidforworknineworkeasconfiguration"></a>获取 androidForWorkNineWorkEasConfiguration
 
@@ -94,6 +94,7 @@ Content-Length: 797
   }
 }
 ```
+
 
 
 

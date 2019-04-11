@@ -4,12 +4,12 @@ description: 一个代表字符串值的设置实例
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ea58c6fdb4a8ad3a2a68ead7044943093c22bb1
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 3297085a905934792de2d371f295b467ad9a8e44
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522543"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794944"
 ---
 # <a name="devicemanagementstringsettinginstance-resource-type"></a>deviceManagementStringSettingInstance 资源类型
 
@@ -59,8 +59,6 @@ ms.locfileid: "31522543"
   "value": "String"
 }
 ```
-
-
 
 
 

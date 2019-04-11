@@ -4,12 +4,12 @@ description: 更新 deviceManagementComplexSettingInstance 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81662e2dbf4ec062ff7dfd04f7b4073fb11f46b0
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 983dc7013a3e81fe0ad50314127b2ca7b7ca7de2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524027"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797338"
 ---
 # <a name="update-devicemanagementcomplexsettinginstance"></a>更新 deviceManagementComplexSettingInstance
 
@@ -92,8 +92,6 @@ Content-Length: 207
   "valueJson": "Value Json value"
 }
 ```
-
-
 
 
 

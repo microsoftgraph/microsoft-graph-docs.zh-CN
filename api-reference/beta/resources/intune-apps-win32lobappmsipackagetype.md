@@ -4,12 +4,12 @@ description: 指示 MSI Win32LobApp 的包类型。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 637c694eda2bb46d869b3f7aadd40b469879468e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bf4c76615bb2b72545c502513450b2d5f4baef6e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172763"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796155"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>win32LobAppMsiPackageType 枚举类型
 
@@ -25,6 +25,7 @@ ms.locfileid: "30172763"
 |perMachine|0|指示每计算机应用程序包。|
 |perUser|1|指示每用户应用程序包。|
 |dualPurpose|双面|指示一个双用途应用程序包。|
+
 
 
 

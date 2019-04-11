@@ -4,12 +4,12 @@ description: 更新 windowsManagementAppHealthSummary 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b6749c6858f51295b1221afecf802fa088a952a7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 008b49500a6b323f1b440488022fd836e25b5ac5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965604"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799501"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>更新 windowsManagementAppHealthSummary
 
@@ -92,6 +92,7 @@ Content-Length: 210
   "unknownDeviceCount": 2
 }
 ```
+
 
 
 

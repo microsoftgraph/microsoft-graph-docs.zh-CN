@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46454f41526c87df765ac060c019cd91ec44a24b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5a36d7bb5aa3680252db848e0733186536819cf5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170012"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799039"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>deviceConfigurationUserOverview 资源类型
 
@@ -63,6 +63,7 @@ ms.locfileid: "30170012"
   "configurationVersion": 1024
 }
 ```
+
 
 
 

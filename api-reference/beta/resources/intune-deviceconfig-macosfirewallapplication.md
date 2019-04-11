@@ -4,12 +4,12 @@ description: 表示 macOS 防火墙应用程序列表中的应用程序
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 477911dba492bdda09eb815aba968bb7f63955bf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 45d8742a888eb492b71bf9829b9621bde9608ef5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145400"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794965"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>macOSFirewallApplication 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "30145400"
 |属性|类型|说明|
 |:---|:---|:---|
 |bundleId|String|应用程序的 BundleId。|
-|allowsIncomingConnections|布尔|是否允许传入连接。|
+|allowsIncomingConnections|布尔值|是否允许传入连接。|
 
 ## <a name="relationships"></a>关系
 无
@@ -42,6 +42,7 @@ ms.locfileid: "30145400"
   "allowsIncomingConnections": true
 }
 ```
+
 
 
 

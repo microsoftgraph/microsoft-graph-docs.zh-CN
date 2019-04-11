@@ -4,12 +4,12 @@ description: 远程操作 Intune 支持。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4eb232f53ecb6b857e1a762ac0bef59c9ca246a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4d7835ac9ecc1c9e7df7724032a97d31d7d99069
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174872"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799438"
 ---
 # <a name="remoteaction-enum-type"></a>remoteAction 枚举类型
 
@@ -41,6 +41,7 @@ ms.locfileid: "30174872"
 |updateDeviceAccount|位|用户启动操作以更新设备上的帐户。|
 |automaticRedeployment|×|用户启动操作以 automatice 重新部署设备|
 |关闭|18|用户启动一种关闭设备的操作。|
+
 
 
 

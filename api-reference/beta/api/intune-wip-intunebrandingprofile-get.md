@@ -4,12 +4,12 @@ description: 读取 intuneBrandingProfile 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b8fc2a999f1dbf0b112d6b74e970b8e3491fe3b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6a17a41f5fe803f1ceb579b3207d34cd8f85e91b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970371"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798780"
 ---
 # <a name="get-intunebrandingprofile"></a>获取 intuneBrandingProfile
 
@@ -110,6 +110,7 @@ Content-Length: 1472
   }
 }
 ```
+
 
 
 

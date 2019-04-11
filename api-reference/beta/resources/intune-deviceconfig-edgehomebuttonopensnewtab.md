@@ -4,12 +4,12 @@ description: 显示 "主页" 按钮;单击 "主页" 按钮将加载新的选项�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc9f3f09f71a7db42b4065fb807ce62ca236f200
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6e91c7f4347a26d8bd7cf0265a90d6ac1fd42ca6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154535"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796323"
 ---
 # <a name="edgehomebuttonopensnewtab-resource-type"></a>edgeHomeButtonOpensNewTab 资源类型
 
@@ -41,6 +41,7 @@ ms.locfileid: "30154535"
   "@odata.type": "#microsoft.graph.edgeHomeButtonOpensNewTab"
 }
 ```
+
 
 
 

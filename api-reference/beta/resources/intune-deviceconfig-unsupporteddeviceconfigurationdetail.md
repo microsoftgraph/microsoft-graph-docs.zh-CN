@@ -4,12 +4,12 @@ description: 有关实体不受支持的原因的说明。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ebdb6eb91dd64c1605288cc0cb1260f8fe7440a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 660f73774025a065565fb72ca74c9674a4159fc0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148466"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795056"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>unsupportedDeviceConfigurationDetail 资源类型
 
@@ -20,10 +20,10 @@ ms.locfileid: "30148466"
 有关实体不受支持的原因的说明。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|message|字符串|一条消息, 说明实体不受支持的原因。|
-|propertyName|字符串|如果邮件与原始实体中的特定属性相关, 则为该属性的名称。|
+|message|String|一条消息, 说明实体不受支持的原因。|
+|propertyName|String|如果邮件与原始实体中的特定属性相关, 则为该属性的名称。|
 
 ## <a name="relationships"></a>关系
 无
@@ -42,6 +42,7 @@ ms.locfileid: "30148466"
   "propertyName": "String"
 }
 ```
+
 
 
 

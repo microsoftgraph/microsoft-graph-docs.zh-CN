@@ -4,12 +4,12 @@ description: 应用程序在媒体内容中的分级
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 301d8dc3c41865e86c8d997e329cfa5f57a7cbc9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 44e9c83846eed23588dbf796be9e3f7969829e84
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155319"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799585"
 ---
 # <a name="ratingappstype-enum-type"></a>ratingAppsType 枚举类型
 
@@ -28,6 +28,7 @@ ms.locfileid: "30155319"
 |agesAbove9|第三章|9 +、年龄9及更高版本|
 |agesAbove12|4|12 +, 年龄12岁及以上 |
 |agesAbove17|5|17 +、年龄17及更高版本|
+
 
 
 

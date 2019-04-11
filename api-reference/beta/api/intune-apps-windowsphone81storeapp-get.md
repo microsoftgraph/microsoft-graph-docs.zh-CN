@@ -4,12 +4,12 @@ description: 读取 windowsPhone81StoreApp 对象的属性和关系。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f35e07e98e3e8982a746f25342e50219b1ab692b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6feb60e2c23f617f7cb96b3b4a72bc270427fe53
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967361"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799018"
 ---
 # <a name="get-windowsphone81storeapp"></a>获取 windowsPhone81StoreApp
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 989
+Content-Length: 1018
 
 {
   "value": {
@@ -95,10 +95,12 @@ Content-Length: 989
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "appStoreUrl": "https://example.com/appStoreUrl/"
   }
 }
 ```
+
 
 
 

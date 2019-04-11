@@ -4,12 +4,12 @@ description: 创建新的 windowsManagedDevice 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51c8f4281a65ac73f5db00e59a3df12a69967ec5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fdc1c7c142e0c00a5eb8b9129018d1ee4e434e6f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987116"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797359"
 ---
 # <a name="create-windowsmanageddevice"></a>创建 windowsManagedDevice
 
@@ -34,8 +34,8 @@ ms.locfileid: "30987116"
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices
 POST /deviceManagement/managedDevices
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices
 ```
 
@@ -82,7 +82,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |azureADDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|设备注册状态。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
 |deviceCategoryDisplayName|String|继承自[managedDevice](../resources/intune-devices-manageddevice.md)的设备类别显示名称|
-|isSupervised|Boolean|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的设备监督状态|
+|isSupervised|布尔值|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的设备监督状态|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|设备上次与 Exchange 联系的时间。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Exchange 中设备的访问状态。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`none`、`unknown`、`allowed`、`blocked`、`quarantined`。|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Exchange 中设备访问状态的出现原因。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`none`、`unknown`、`exchangeGlobalRule`、`exchangeIndividualRule`、`exchangeDeviceRule`、`exchangeUpgrade`、`exchangeMailboxPolicy`、`other`、`compliant`、`notCompliant`、`notEnrolled`、`unknownLocation`、`mfaRequired`、`azureADBlockDueToAccessPolicy`、`compromisedPassword`、`deviceNotKnownWithManagedApp`。|
@@ -109,8 +109,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示从[managedDevice](../resources/intune-devices-manageddevice.md)继承的设备的上次登录用户|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告设置了 preferMdmOverGroupPolicy 设置的 DateTime。  设置后, 如果存在冲突, Intune MDM 设置将覆盖组策略设置。 只读。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|Boolean|如果托管设备是通过自动引导注册的, 则报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|Boolean|如果托管 iOS 设备是用户审批注册, 则报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|布尔值|如果托管设备是通过自动引导注册的, 则报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|布尔值|如果托管 iOS 设备是用户审批注册, 则报告。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|String|集成的电路卡标识符, 它是 SIM 卡的唯一标识号。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -130,7 +130,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices
 Content-type: application/json
 Content-length: 7231
 
@@ -477,6 +477,7 @@ Content-Length: 7280
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 删除 managedAndroidStoreApp。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e4c3a4f34bcd48632e95105743d5ee92fb28e51b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e8665ca6928db2e131cf76b516423cf1d8d0828c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977028"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795483"
 ---
 # <a name="delete-managedandroidstoreapp"></a>删除 managedAndroidStoreApp
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

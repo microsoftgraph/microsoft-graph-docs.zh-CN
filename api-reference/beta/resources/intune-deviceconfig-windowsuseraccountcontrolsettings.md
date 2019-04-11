@@ -4,12 +4,12 @@ description: Windows 用户帐户控制设置的可能值。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8302566eea465ec4477a01845778ab2d7ddee9fe
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6b63fe44abfb0a06e5978d78e49c392c08122e38
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146709"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795784"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>windowsUserAccountControlSettings 枚举类型
 
@@ -27,6 +27,7 @@ Windows 用户帐户控制设置的可能值。
 |notifyOnAppChanges|双面|通知应用更改。|
 |notifyOnAppChangesWithoutDimming|第三章|在应用程序发生更改时通知桌面不变暗。|
 |neverNotify|4|从不通知。|
+
 
 
 

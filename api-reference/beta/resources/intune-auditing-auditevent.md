@@ -4,12 +4,12 @@ description: 包含审核事件的属性的类。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fd9971b5b6ddce9b3a826ff569d1925ef9cff97
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1c6004db55f25f92261de8fd6ee2a5418928e9a1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153674"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798521"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent 资源类型
 
@@ -33,13 +33,13 @@ ms.locfileid: "30153674"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |displayName|字符串|事件显示名称。|
-|componentName|字符串|组件名称。|
+|componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
-|activity|字符串|活动的友好名称。|
+|activity|String|活动的友好名称。|
 |activityDateTime|DateTimeOffset|执行活动时的日期时间（UTC 时间）。|
-|activityType|字符串|执行的活动类型。|
+|activityType|String|执行的活动类型。|
 |activityOperationType|String|活动的 HTTP 操作类型。|
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
@@ -101,6 +101,7 @@ ms.locfileid: "30153674"
   "category": "String"
 }
 ```
+
 
 
 

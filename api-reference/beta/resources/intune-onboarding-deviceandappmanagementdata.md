@@ -4,12 +4,12 @@ description: 导出的数据
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3b91b0186b2263a936cabe02bd533a550a24748
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1a889e65463733971dd36d04e6bba8a140fdba16
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154850"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795707"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>deviceAndAppManagementData 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30154850"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|内容|Stream|尚未记录|
+|content|流|尚未记录|
 
 ## <a name="relationships"></a>关系
 无
@@ -40,6 +40,7 @@ ms.locfileid: "30154850"
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: 更新 microsoftStoreForBusinessContainedApp 对象的属性。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 645910272847fa075d34a6739258187b38acb8b6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 20526c67ba34a2e508b625f8bc2fafeb9ba0b2eb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988257"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798591"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>更新 microsoftStoreForBusinessContainedApp
 
@@ -88,6 +88,7 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
+
 
 
 

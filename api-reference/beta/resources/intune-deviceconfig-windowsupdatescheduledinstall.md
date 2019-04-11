@@ -4,12 +4,12 @@ description: 尚未记录
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de36e3777518cf7c79a7590c19147d014e2aee7d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cd3a1aafe751bd5db334387cc3872c68e6de6637
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172504"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797919"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>windowsUpdateScheduledInstall 资源类型
 
@@ -45,6 +45,7 @@ ms.locfileid: "30172504"
   "scheduledInstallTime": "String (time of day)"
 }
 ```
+
 
 
 

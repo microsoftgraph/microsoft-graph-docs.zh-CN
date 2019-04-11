@@ -4,12 +4,12 @@ description: 为给定应用撤销分配的 iOS VPP 用户许可证。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36acec91e93c357c48cff3ea75429232b09a0440
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 690e547929e53f2378ca0244c0c57a7444652628
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972212"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795644"
 ---
 # <a name="revokeuserlicense-action"></a>revokeUserLicense 操作
 
@@ -53,7 +53,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |属性|类型|说明|
 |:---|:---|:---|
 |userId|String|要吊销的已分配应用程序许可证的用户 id|
-|notifyManagedDevices|Boolean|指示是否应将吊销通知发送到设备的布尔值|
+|notifyManagedDevices|布尔值|指示是否应将吊销通知发送到设备的布尔值|
 
 
 
@@ -81,6 +81,7 @@ Content-length: 66
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

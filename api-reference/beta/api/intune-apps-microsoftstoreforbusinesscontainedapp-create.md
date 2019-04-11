@@ -4,12 +4,12 @@ description: 创建新的 microsoftStoreForBusinessContainedApp 对象。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b49eedc4c82402f7391291c131d46c3bc00100da
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c7d8894e01b7993e50f12ee3aa3e83173fbebb11
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964316"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795672"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>创建 microsoftStoreForBusinessContainedApp
 
@@ -88,6 +88,7 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
+
 
 
 

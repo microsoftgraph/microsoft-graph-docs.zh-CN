@@ -4,12 +4,12 @@ description: 一个抽象类, 表示充当包的 mobileApp 中包含的应用程
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3400349244e738644d4885b2265c5f7f4ceb84e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 05874102e62e86e5b64fb20c892c2e96c66acfc9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145197"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795133"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>mobileContainedApp 资源类型
 
@@ -47,6 +47,7 @@ ms.locfileid: "30145197"
   "id": "String (identifier)"
 }
 ```
+
 
 
 
