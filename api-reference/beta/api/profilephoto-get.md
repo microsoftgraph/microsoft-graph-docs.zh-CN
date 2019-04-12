@@ -2,12 +2,12 @@
 title: 获取照片
 description: 获取指定的 profilePhoto 或其元数据（**profilePhoto** 属性）。
 localization_priority: Priority
-ms.openlocfilehash: 759c0ff3ac2585f43ea38963e10b001250702c56
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 55bdf01515f654eb1622703f9b846de840bc5611
+ms.sourcegitcommit: bf3d0c94faeb206f9f986423a436fb355acd54c1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509628"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "31751555"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -15,19 +15,19 @@ ms.locfileid: "29509628"
 
 获取指定的 [profilePhoto](../resources/profilephoto.md) 或其元数据（**profilePhoto** 属性）。
 
-获取照片操作首先会尝试从 Office 365 检索指定的照片。 如果 Office 365 中没有此照片，则 API 会尝试从 Azure Active Directory 检索该照片。
+获取照片方法首先尝试从 Office 365 检索指定的照片。 如果 Office 365 中没有此照片，则 API 尝试从 Azure Active Directory 检索该照片。
 
 Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。
 
 可以获取最大照片的元数据，也可以指定尺寸来获取相应照片尺寸的元数据。
 如果请求的大小不可用，则仍然可以获取用户已上载且可供使用的较小大小。
 例如，如果用户上传像素为 504x504 的照片，除 648x648 外所有尺寸的照片都可供下载。
-如果在用户邮箱或 Azure Active Directory 中找不到指定尺寸，返回的是尺寸“1x1”和剩余元数据。
+如果在用户邮箱或 Azure Active Directory 中找不到指定尺寸，则返回的是尺寸 1x1 和剩余元数据。
 
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
+要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-> **注意：** 测试版中的获取照片操作支持用户的工作、学校或个人帐户。 但是获取照片元数据操作仅支持用户的工作或学校帐户，不支持个人帐户。
+> **注意：** beta 版中的获取照片方法支持用户的工作、学校或个人帐户。 但是获取照片元数据方法仅支持用户的工作或学校帐户，不支持个人帐户。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -66,10 +66,6 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 GET /me/photos/{size}
 GET /users/{id | userPrincipalName}/photos/{size}
 GET /groups/{id}/photos/{size}
-GET /me/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
-GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
 ## <a name="path-parameters"></a>路径参数
@@ -79,7 +75,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 |size  |String  | 照片尺寸。 Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -95,9 +91,11 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ### <a name="response-for-getting-the-metadata-of-the-photo"></a>获取照片元数据的响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [profilePhoto](../resources/profilephoto.md) 对象。
 
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
-此请求为已登录用户获取最大可用大小的照片。
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-the-photo-of-the-signed-in-user-in-the-largest-available-size"></a>示例 1：为已登录用户获取最大可用大小的照片
+
+##### <a name="request"></a>请求
 
 <!-- {
   "blockType": "ignored"
@@ -107,12 +105,12 @@ GET https://graph.microsoft.com/beta/me/photo/$value
 Content-Type: image/jpg
 ```
 
-##### <a name="response-1"></a>响应 1
-包含所请求照片的二进制数据。HTTP 响应代码为 200。
+##### <a name="response"></a>响应
+包含所请求照片的二进制数据。 HTTP 响应代码为 200。
 
-##### <a name="request-2"></a>请求 2
-此请求获取已登录用户的 48x48 照片。
+### <a name="example-2-get-the-48x48-photo-for-the-signed-in-user"></a>示例 2：获取已登录用户的 48x48 照片
 
+##### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -121,11 +119,12 @@ GET https://graph.microsoft.com/beta/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### <a name="response-2"></a>响应 2
-包含所请求的 48x48 照片的二进制数据。HTTP 响应代码为 200。
+##### <a name="response"></a>响应
+包含所请求的 48x48 照片的二进制数据。 HTTP 响应代码为 200。
 
-##### <a name="request-3"></a>请求 3
-此请求获取已登录用户的用户照片的元数据。
+### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>示例 3：获取已登录用户的用户照片的元数据
+
+##### <a name="request"></a>请求
 
 <!-- {
   "blockType": "ignored"
@@ -134,8 +133,10 @@ Content-Type: image/jpg
 GET https://graph.microsoft.com/beta/me/photo
 ```
 
-##### <a name="response-3"></a>响应 3
-以下响应数据显示照片的元数据。注意：为了简单起见，可能会将此处所示的响应对象截断。
+##### <a name="response"></a>响应
+以下响应数据显示照片的元数据。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "ignored"
@@ -155,7 +156,9 @@ Content-type: application/json
 }
 ```
 
-以下响应数据显示还没有为用户上载照片时的响应内容。注意：为了简单起见，可能会将此处所示的响应对象截断。
+以下响应数据显示还没有为用户上传照片时的响应内容。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "ignored"
@@ -176,7 +179,7 @@ Content-type: application/json
 ```
 ## <a name="using-the-binary-data-of-the-requested-photo"></a>使用所请求照片的二进制数据
 
-使用 `/photo/$value` 终结点来获取个人资料照片的二进制数据时，需要将数据转换为 Base64 字符串，以便将其添加为电子邮件附件。 以下是 JavaScript 中的一个示例，介绍如何创建一个数组，并将其作为 [Outlook 邮件](user-post-messages.md)的 `Attachments` 参数值传递。
+使用 `/photo/$value` 终结点来获取个人资料照片的二进制数据时，需要将数据转换为 Base64 字符串，以便将其添加为电子邮件附件。 以下 JavaScript 示例介绍如何创建一个数组，并将其作为 [Outlook 邮件](user-post-messages.md)的 `Attachments` 参数值传递。
 
       const attachments = [{
         '@odata.type': '#microsoft.graph.fileAttachment',
