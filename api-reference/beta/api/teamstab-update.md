@@ -1,21 +1,21 @@
 ---
 title: 更新选项卡
-description: 更新指定的选项卡的属性。
+description: 更新指定选项卡的属性。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7a87839a1a6a151708b485d8c3fec9657f21f11a
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: 929c000790dc88c7fdcfd74b23995b56685a40bd
+ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760963"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824386"
 ---
 # <a name="update-tab"></a>更新选项卡
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新指定的[选项卡上](../resources/teamstab.md)的属性。可以使用此配置的选项卡的内容。
+更新指定[选项卡](../resources/teamstab.md)的属性。这可用于配置选项卡的内容。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,11 +41,11 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[tab](../resources/teamstab.md)对象的 JSON 表示形式。
+在请求正文中, 提供[tab](../resources/teamstab.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功，此方法返回 `200 OK` 响应代码。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
@@ -61,7 +61,7 @@ Content-length: 211
 ```
 #### <a name="response"></a>响应
 ```http
-HTTP/1.1 200 Success
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {

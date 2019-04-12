@@ -4,12 +4,12 @@ description: '将选项卡添加（固定）到团队中的指定频道。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5235cc7dd99098fce1bdad437a74d65e6a437742
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 8a1caf00f16fc1f4384977913073623b02d2a33a
+ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967226"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824414"
 ---
 # <a name="add-tab-to-channel"></a>将选项卡添加到频道
 
@@ -45,7 +45,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `201 OK` 响应代码。
+如果成功，此方法返回 `201 Created` 响应代码。
 
 ## <a name="example"></a>示例
 
