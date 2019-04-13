@@ -2,38 +2,42 @@
 title: List messages
 description: 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5bc831c952f13dbf67b4e7d3de6ccfd5aa28f0b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: dd3a5cbf3e5f4ee87b74602187c230f6be92940a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976021"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799907"
 ---
-# <a name="list-messages"></a><span data-ttu-id="8564b-103">List messages</span><span class="sxs-lookup"><span data-stu-id="8564b-103">List messages</span></span>
+# <a name="list-messages"></a><span data-ttu-id="dec6a-103">列出邮件</span><span class="sxs-lookup"><span data-stu-id="dec6a-103">List messages</span></span>
 
-<span data-ttu-id="8564b-104">获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。</span><span class="sxs-lookup"><span data-stu-id="8564b-104">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span>
+<span data-ttu-id="dec6a-104">获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。</span><span class="sxs-lookup"><span data-stu-id="dec6a-104">Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).</span></span>
 
-<span data-ttu-id="8564b-105">目前，此操作返回纯 HTML 格式的邮件正文。</span><span class="sxs-lookup"><span data-stu-id="8564b-105">Currently, this operation returns message bodies in only HTML format.</span></span>
+<span data-ttu-id="dec6a-105">根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。</span><span class="sxs-lookup"><span data-stu-id="dec6a-105">Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests.</span></span> <span data-ttu-id="dec6a-106">默认页面大小为 10 封邮件。</span><span class="sxs-lookup"><span data-stu-id="dec6a-106">The default page size for this request is 10 messages.</span></span> <span data-ttu-id="dec6a-107">若要获取下一页的邮件，只需将 `@odata.nextLink` 中返回的整个 URL 应用于下一个 get-messages 请求。</span><span class="sxs-lookup"><span data-stu-id="dec6a-107">To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request.</span></span> <span data-ttu-id="dec6a-108">此 URL 包括可能已在初始请求中指定的任何查询参数。</span><span class="sxs-lookup"><span data-stu-id="dec6a-108">This URL includes any query parameters you may have specified in the initial request.</span></span> 
 
-<span data-ttu-id="8564b-106">有两种应用程序，另一个用户的邮件文件夹中收到消息的情况：</span><span class="sxs-lookup"><span data-stu-id="8564b-106">There are two scenarios where an app can get messages in another user's mail folder:</span></span>
+<span data-ttu-id="dec6a-109">不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。</span><span class="sxs-lookup"><span data-stu-id="dec6a-109">Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses.</span></span> <span data-ttu-id="dec6a-110">此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。</span><span class="sxs-lookup"><span data-stu-id="dec6a-110">This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items.</span></span> <span data-ttu-id="dec6a-111">因此，甚至在初始响应中，`$skip` 值都会大于页面大小。</span><span class="sxs-lookup"><span data-stu-id="dec6a-111">It's therefore possible that even in the initial response, the `$skip` value is larger than the page size.</span></span> <span data-ttu-id="dec6a-112">有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。</span><span class="sxs-lookup"><span data-stu-id="dec6a-112">For more information, see [Paging Microsoft Graph data in your app](/graph/paging).</span></span>
 
-* <span data-ttu-id="8564b-107">如果应用程序具有应用程序权限，或，</span><span class="sxs-lookup"><span data-stu-id="8564b-107">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="8564b-108">如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享邮件文件夹，或具有委派的访问赋予该用户。</span><span class="sxs-lookup"><span data-stu-id="8564b-108">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="8564b-109">请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。</span><span class="sxs-lookup"><span data-stu-id="8564b-109">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
+<span data-ttu-id="dec6a-113">目前，此操作返回纯 HTML 格式的邮件正文。</span><span class="sxs-lookup"><span data-stu-id="dec6a-113">Currently, this operation returns message bodies in only HTML format.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8564b-110">权限</span><span class="sxs-lookup"><span data-stu-id="8564b-110">Permissions</span></span>
-<span data-ttu-id="8564b-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8564b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dec6a-114">在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：</span><span class="sxs-lookup"><span data-stu-id="dec6a-114">There are two scenarios where an app can get contacts in another user's contact folder:</span></span>
 
-|<span data-ttu-id="8564b-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="8564b-113">Permission type</span></span>      | <span data-ttu-id="8564b-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8564b-114">Permissions (from least to most privileged)</span></span>              |
+* <span data-ttu-id="dec6a-115">如果该应用具有应用程序权限，或者</span><span class="sxs-lookup"><span data-stu-id="dec6a-115">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="dec6a-116">如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。</span><span class="sxs-lookup"><span data-stu-id="dec6a-116">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="dec6a-117">请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。</span><span class="sxs-lookup"><span data-stu-id="dec6a-117">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="dec6a-118">权限</span><span class="sxs-lookup"><span data-stu-id="dec6a-118">Permissions</span></span>
+<span data-ttu-id="dec6a-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dec6a-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="dec6a-121">权限类型</span><span class="sxs-lookup"><span data-stu-id="dec6a-121">Permission type</span></span>      | <span data-ttu-id="dec6a-122">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dec6a-122">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8564b-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8564b-115">Delegated (work or school account)</span></span> | <span data-ttu-id="8564b-116">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8564b-116">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="8564b-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8564b-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8564b-118">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8564b-118">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="8564b-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="8564b-119">Application</span></span> | <span data-ttu-id="8564b-120">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8564b-120">Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="dec6a-123">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dec6a-123">Delegated (work or school account)</span></span> | <span data-ttu-id="dec6a-124">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dec6a-124">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="dec6a-125">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dec6a-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dec6a-126">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dec6a-126">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="dec6a-127">应用程序</span><span class="sxs-lookup"><span data-stu-id="dec6a-127">Application</span></span> | <span data-ttu-id="dec6a-128">Mail.Read、Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dec6a-128">Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8564b-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8564b-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dec6a-129">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dec6a-129">HTTP request</span></span>
 
-<span data-ttu-id="8564b-122">若要获取用户邮箱中的所有邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="8564b-122">To get all the messages in a user's mailbox:</span></span>
+<span data-ttu-id="dec6a-130">若要获取用户邮箱中的所有邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="dec6a-130">To get all the messages in a user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -41,7 +45,7 @@ GET /me/messages
 GET /users/{id | userPrincipalName}/messages
 ```
 
-<span data-ttu-id="8564b-123">若要获取用户邮箱中特定文件夹中的邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="8564b-123">To get messages in a specific folder in the user's mailbox:</span></span>
+<span data-ttu-id="dec6a-131">若要获取用户邮箱中特定文件夹中的邮件，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="dec6a-131">To get messages in a specific folder in the user's mailbox:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,36 +53,35 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="8564b-124">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="8564b-124">Optional query parameters</span></span>
-<span data-ttu-id="8564b-125">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="8564b-125">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="8564b-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="8564b-126">Request headers</span></span>
-| <span data-ttu-id="8564b-127">名称</span><span class="sxs-lookup"><span data-stu-id="8564b-127">Name</span></span>       | <span data-ttu-id="8564b-128">类型</span><span class="sxs-lookup"><span data-stu-id="8564b-128">Type</span></span> | <span data-ttu-id="8564b-129">说明</span><span class="sxs-lookup"><span data-stu-id="8564b-129">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="dec6a-132">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="dec6a-132">Optional query parameters</span></span>
+<span data-ttu-id="dec6a-133">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="dec6a-133">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="dec6a-134">请求标头</span><span class="sxs-lookup"><span data-stu-id="dec6a-134">Request headers</span></span>
+| <span data-ttu-id="dec6a-135">名称</span><span class="sxs-lookup"><span data-stu-id="dec6a-135">Name</span></span>       | <span data-ttu-id="dec6a-136">类型</span><span class="sxs-lookup"><span data-stu-id="dec6a-136">Type</span></span> | <span data-ttu-id="dec6a-137">说明</span><span class="sxs-lookup"><span data-stu-id="dec6a-137">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="8564b-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="8564b-130">Authorization</span></span>  | <span data-ttu-id="8564b-131">string</span><span class="sxs-lookup"><span data-stu-id="8564b-131">string</span></span>  | <span data-ttu-id="8564b-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8564b-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="8564b-134">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="8564b-134">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="8564b-135">string</span><span class="sxs-lookup"><span data-stu-id="8564b-135">string</span></span> | <span data-ttu-id="8564b-136">要返回的 **body** 和 **uniqueBody** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="8564b-136">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="8564b-137">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="8564b-137">Values can be "text" or "html".</span></span> <span data-ttu-id="8564b-138">如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。</span><span class="sxs-lookup"><span data-stu-id="8564b-138">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="8564b-139">可选。</span><span class="sxs-lookup"><span data-stu-id="8564b-139">Optional.</span></span> |
+| <span data-ttu-id="dec6a-138">Authorization</span><span class="sxs-lookup"><span data-stu-id="dec6a-138">Authorization</span></span>  | <span data-ttu-id="dec6a-139">string</span><span class="sxs-lookup"><span data-stu-id="dec6a-139">string</span></span>  | <span data-ttu-id="dec6a-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dec6a-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dec6a-142">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="dec6a-142">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="dec6a-143">string</span><span class="sxs-lookup"><span data-stu-id="dec6a-143">string</span></span> | <span data-ttu-id="dec6a-144">要返回的 **body** 和 **uniqueBody** 属性的格式。</span><span class="sxs-lookup"><span data-stu-id="dec6a-144">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="dec6a-145">可取值为“text”或“html”。</span><span class="sxs-lookup"><span data-stu-id="dec6a-145">Values can be "text" or "html".</span></span> <span data-ttu-id="dec6a-146">如果未指定此头，采用 HTML 格式返回 **body** 和 **uniqueBody** 属性。</span><span class="sxs-lookup"><span data-stu-id="dec6a-146">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="dec6a-147">可选。</span><span class="sxs-lookup"><span data-stu-id="dec6a-147">Optional.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="8564b-140">请求正文</span><span class="sxs-lookup"><span data-stu-id="8564b-140">Request body</span></span>
-<span data-ttu-id="8564b-141">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="8564b-141">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dec6a-148">请求正文</span><span class="sxs-lookup"><span data-stu-id="dec6a-148">Request body</span></span>
+<span data-ttu-id="dec6a-149">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="dec6a-149">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8564b-142">响应</span><span class="sxs-lookup"><span data-stu-id="8564b-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dec6a-150">响应</span><span class="sxs-lookup"><span data-stu-id="dec6a-150">Response</span></span>
 
-<span data-ttu-id="8564b-143">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和一组 [Message](../resources/message.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8564b-143">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
+<span data-ttu-id="dec6a-151">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Message](../resources/message.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="dec6a-151">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
 
-<span data-ttu-id="8564b-144">此请求的默认页面大小为 10 封邮件。</span><span class="sxs-lookup"><span data-stu-id="8564b-144">The default page size for this request is 10 messages.</span></span>
-
-## <a name="example"></a><span data-ttu-id="8564b-145">示例</span><span class="sxs-lookup"><span data-stu-id="8564b-145">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8564b-146">请求</span><span class="sxs-lookup"><span data-stu-id="8564b-146">Request</span></span>
-<span data-ttu-id="8564b-147">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8564b-147">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="dec6a-152">示例</span><span class="sxs-lookup"><span data-stu-id="dec6a-152">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dec6a-153">请求</span><span class="sxs-lookup"><span data-stu-id="dec6a-153">Request</span></span>
+<span data-ttu-id="dec6a-154">此示例获取已登录用户的邮箱中的默认前 10 封邮件。</span><span class="sxs-lookup"><span data-stu-id="dec6a-154">This example gets the default, top 10 messages in the signed-in user's mailbox.</span></span> <span data-ttu-id="dec6a-155">它使用 `$select` 在响应中返回每封邮件的属性的子集。</span><span class="sxs-lookup"><span data-stu-id="dec6a-155">It uses `$select` to return a subset of the properties of each message in the response.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages
+GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ```
-##### <a name="response"></a><span data-ttu-id="8564b-148">响应</span><span class="sxs-lookup"><span data-stu-id="8564b-148">Response</span></span>
-<span data-ttu-id="8564b-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8564b-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="dec6a-156">响应</span><span class="sxs-lookup"><span data-stu-id="dec6a-156">Response</span></span>
+<span data-ttu-id="dec6a-157">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="dec6a-157">Here is an example of the response.</span></span> <span data-ttu-id="dec6a-158">若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用 于后续 GET 请求。</span><span class="sxs-lookup"><span data-stu-id="dec6a-158">To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.</span></span>
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,22 +91,125 @@ GET https://graph.microsoft.com/v1.0/me/messages
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 317
 
 {
-  "value": [
-    {
-      "receivedDateTime": "datetime-value",
-      "sentDateTime": "datetime-value",
-      "hasAttachments": true,
-      "subject": "subject-value",
-      "body": {
-        "contentType": "",
-        "content": "content-value"
-      },
-      "bodyPreview": "bodyPreview-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$select=sender%2csubject&$skip=14",
+    "value": [
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
+            "id": "AAMkAGUAAAwTW09AAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
+            "id": "AAMkAGUAAAq5QKlAAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
+            "id": "AAMkAGUAAAq5QKkAAA=",
+            "subject": "Your Azure AD Identity Protection Weekly Digest",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Azure",
+                    "address": "azure-noreply@microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
+            "id": "AAMkAGUAAAq5QKjAAA=",
+            "subject": "Use attached file",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
+            "id": "AAMkAGUAAAq5QKiAAA=",
+            "subject": "Original invitation",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
+            "id": "AAMkAGUAAAq5QKhAAA=",
+            "subject": "Koala image",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
+            "id": "AAMkAGUAAAq5QKgAAA=",
+            "subject": "Sales invoice template",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessage",
+            "@odata.etag": "W/\"DAAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dft\"",
+            "id": "AAMkAGUAAAq5UMVAAA=",
+            "subject": "Accepted: Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Adele Vance",
+                    "address": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A17A02BCF30C4937A87B14273385667C-ADELEV"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessage",
+            "@odata.etag": "W/\"DAAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DfF\"",
+            "id": "AAMkAGUAAAq5UMUAAA=",
+            "subject": "Accepted: Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Adele Vance",
+                    "address": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A17A02BCF30C4937A87B14273385667C-ADELEV"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessage",
+            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
+            "id": "AAMkAGUAAAq5T8tAAA=",
+            "subject": "Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
 
