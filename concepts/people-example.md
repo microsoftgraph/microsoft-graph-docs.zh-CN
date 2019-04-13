@@ -1,16 +1,16 @@
 ---
 title: 在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
-description: Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最高的人员。 相关性由用户的通信和协作模式及业务关系决定。 人员可以是当地联系人、社交网络或所在组织目录中的联系人以及来自最近通信（例如电子邮件和 Skype）的人员。 生成此见解的同时，People API 还会提供模糊匹配搜索支持和检索登录用户组织中其他用户的相关用户列表的功能。
-ms.date: 12/04/2018
+description: 'Microsoft Graph 应用程序可以使用 People API 检索与用户相关度最高的人员。 '
+ms.date: 4/9/2019
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 40c916de42cf8d3b56bf56ee07b3f1ae045a7557
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966977"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797142"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>在 Microsoft Graph 中使用 People API 获取与你相关度最高的人员的信息
 
@@ -946,3 +946,32 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //fuzzy match with Tyler's name
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
+
+### <a name="working-with-feature-implementation"></a>“同事”功能实现
+ 
+配置文件所有者和其他人员之间必须有公共关系，这些人员才会显示在配置文件所有者的列表中。 下图显示了用户 A、与其他用户（用户 B）的关系的索引，以及显示用户关系子集的公共配置文件。
+
+![“同事”关系的图像](images/working-with.png)
+ 
+下面是公共关系的示例：
+
+- 在组织结构图中相连的个人：经理、直接下属、同事（其经理相同） 
+- 人数少于 30 的公共组或通讯组列表的成员。 公共组具有可在目录中找到的成员身份列表。
+ 
+如果配置文件所有者与某人通信，并且他们之间没有公共关系（例如组织结构图联系或共同的组），则其他人将看不到他们已在进行通信的事实。
+
+人员的排名（即他们出现在配置文件所有者页面上的顺序）由配置文件所有者与列表上人员之间的私人和公共沟通确定。
+ 
+私人沟通的示例包括：
+- 相互发送电子邮件，另一个人的名字在“收件人”行中
+- 通过将用户名称包括在日历邀请中来邀请用户参加会议 
+ 
+公共交互的示例包括：
+- 作为公共组的一部分相互发送或接收电子邮件 
+- 作为组的一部分，或在已邀请了超过 X 名用户的情况下邀请用户参加会议
+ 
+排名不会根据用户 A（查看其他人的页面的用户）的身份发生变化。 排名由用户 B（配置文件所有者）和用户 C（显示在配置文件所有者的列表中）之间的交互级别确定。
+ 
+为了使用户 C 出现，配置文件所有者必须位于包含该用户的相对较小的公共组/DL（意味着可在目录中找到成员身份列表）中。
+ 
+组织外部的人员不会显示在配置文件所有者的列表上。 通过电子邮件或会议沟通，但不属于同一组织的人员将不会显示在“同事”部分中。
