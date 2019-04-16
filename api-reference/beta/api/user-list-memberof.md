@@ -1,21 +1,21 @@
 ---
-title: 列表用户 memberOf
-description: 获取组、 目录角色和管理单元的直接成员的用户。 此操作是不可传递的。
+title: 列出用户 memberOf
+description: 获取用户是其直接成员的组、目录角色和管理单元。 此操作不可传递。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c7d7f1fa0636be0831c866c23ed133361dd24df3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 41c436cfe2a83da00eadda94914c707e1c1aee62
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509705"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889910"
 ---
-# <a name="list-user-memberof"></a>列表用户 memberOf
+# <a name="list-user-memberof"></a>列出用户 memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取组、 目录角色和管理单元的直接成员的用户。 此操作是不可传递的。
+获取用户是其直接成员的组、目录角色和管理单元。 此操作不可传递。
 
 ## <a name="permissions"></a>权限
 
@@ -31,6 +31,8 @@ ms.locfileid: "29509705"
 
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/memberOf
+or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 
@@ -41,7 +43,7 @@ GET /users/{id | userPrincipalName}/memberOf
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Accept  | application/json|
+| 接受  | application/json|
 
 ## <a name="request-body"></a>请求正文
 

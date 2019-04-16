@@ -1,12 +1,12 @@
 ---
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是物理和逻辑网络隔离的 Microsoft 企业云服务实例, 这些实例限制在特定国家/地区的地理边界内, 并由当地人员运营。
-ms.openlocfilehash: f04da510e46572140c70b0df89eefeac57974b00
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a32d8bde766718aa0f6f6080ed4b8ff4e3e7f520
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518502"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889903"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -70,9 +70,9 @@ ms.locfileid: "31518502"
 | SharePoint| ✔ | ✔ | ✔ |
 | 规划器|✔ |✔ |✔ |
 | 报表  |➖| ✔ |➖|
-| Webhook  | ➖|✔* |✔* |
+| 更改通知 (webhook)  | ➖|✔* |✔* |
 | Delta 查询 | ➖ | ➖| ➖ |
-|目录架构扩展 |➖|➖|➖|
+| 目录架构扩展 |➖|➖|➖|
 | 开放类型扩展|➖|➖|➖|
   
 以下其他 Microsoft Graph 功能在所有国家/地区云部署的`/beta`预览 (在终结点上) 中可用, 但在另有说明的情况除外:
@@ -80,6 +80,7 @@ ms.locfileid: "31518502"
 * 组织联系人
 * 应用程序
 * 服务主体
+* 更改通知 (webhook)
 
 (*)仅对 Exchange 和 OneDrive 服务的有限支持。 Azure AD services 不受支持。 
 
@@ -90,7 +91,7 @@ ms.locfileid: "31518502"
 - [Microsoft 国家/地区群](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
 - [适用于美国政府的 Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
 - [由世纪互联运营的 Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
-- [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
+- [Office 365 德国版](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Azure 政府](https://azure.microsoft.com/global-infrastructure/government/)
 - [Azure 中国世纪互联](https://docs.microsoft.com/azure/china/)
 - [Azure 德国](https://docs.microsoft.com/azure/germany/)

@@ -1,23 +1,23 @@
 ---
 title: 解档团队
-description: 还原存档的团队。 这将还原发送消息和编辑团队，遵守租户和工作组设置用户的功能。 工作组已存档使用存档 API。
+description: 还原存档的团队。 这将恢复用户发送邮件和编辑团队的能力, abiding 受租户和团队设置的支持。 使用存档 API 存档团队。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: d21eb7d3531b69e148c0d420217fc309e0ea99ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0c39cac6a61f09c0531f1c337ff01e1b3c077b67
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518133"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31890036"
 ---
 # <a name="unarchive-team"></a>解档团队
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-还原存档的[团队](../resources/team.md)。 这将还原发送消息和编辑团队，遵守租户和工作组设置用户的功能。 工作组已存档使用[存档](team-archive.md)API。
+还原存档的[团队](../resources/team.md)。 这将恢复用户发送邮件和编辑团队的能力, abiding 受租户和团队设置的支持。 使用[存档](team-archive.md)API 存档团队。
 
-Unarchiving 是异步操作。 一旦异步操作已成功完成，此 API 响应后可能出现的团队未存档。
+Unarchiving 是一种异步操作。 异步操作成功完成后, 团队即为 unarchived, 这可能会在此 API 的响应之后发生。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ Unarchiving 是异步操作。 一旦异步操作已成功完成，此 API 响�
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All    |
 
-> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,11 +46,11 @@ POST /teams/{id}/unarchive
 
 ## <a name="response"></a>响应
 
-如果 unarchiving 已成功启动，此方法返回`202 Accepted`响应代码。 响应还将包含`Location`标头，其中包含的[teamsAsyncOperation](../resources/teamsasyncoperation.md)创建处理 unarchiving 团队的位置。 通过对此位置进行 GET 请求检查 unarchiving 操作的状态。
+如果 unarchiving 成功启动, 此方法将`202 Accepted`返回响应代码。 该响应还将包含一个`Location`标头, 其中包含为处理团队的 unarchiving 而创建的[teamsAsyncOperation](../resources/teamsasyncoperation.md)的位置。 通过向此位置发出 GET 请求, 检查 unarchiving 操作的状态。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
-下面是一个请求示例。
+以下是请求的示例。
 <!-- {
   "blockType": "ignored",
   "name": "unarchive_team"
@@ -60,10 +60,10 @@ POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 ```
 
 #### <a name="response"></a>响应
-下面是响应的示例。
+下面是响应的一个示例。
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams{id}/operations({opId})
+Location: /teams({id})/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```

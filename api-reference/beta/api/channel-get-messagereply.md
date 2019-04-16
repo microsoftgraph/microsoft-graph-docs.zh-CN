@@ -1,28 +1,28 @@
 ---
-title: 获取对通道消息的回复
-description: 获取对一条消息的单个回复中的工作组的通道。
+title: 获取对频道消息的答复
+description: 获取团队频道中对邮件的单个答复。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1bfd1ab079119a55cd9a031dc6a42e01074288be
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e61996d8f23e2606598954ce73ce0a4270308126
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515592"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889966"
 ---
-# <a name="get-a-reply-to-a-channel-message"></a>获取对通道消息的回复
+# <a name="get-a-reply-to-a-channel-message"></a>获取对频道消息的答复
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[通道](../resources/channel.md)的工作组中获取单个[邮件](../resources/chatmessage.md)答复。
+获取团队[频道](../resources/channel.md)中对[邮件](../resources/chatmessage.md)的单个答复。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
-|委派（工作或学校帐户）|Group.Read.All,Group.ReadWrite.All|
+|委派（工作或学校帐户）|Group.Read.All、Group.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持|
 |应用程序| 不支持。 |
 
@@ -33,7 +33,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-目前不支持的[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+目前不支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -44,7 +44,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[chatmessage](../resources/chatmessage.md)对象的集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatmessage](../resources/chatmessage.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -98,9 +98,14 @@ Content-length: 201
   ],
   "mentions": [
       {
-          "type": "user",
           "id": "id-value ",
-          "mentionText": "Test User"
+          "mentionText": "Test User",
+          "mentioned": {
+          "user": {
+            "id": "id-value",
+            "displayName: "string"
+          }
+        }
       }
   ],
   "importance": "normal",

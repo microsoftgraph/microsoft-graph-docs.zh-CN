@@ -4,12 +4,12 @@ description: '检索团队频道中的消息列表（无回复）。 若要获�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: bbd2020e85d011b4e94af1d0e56096d4375b41d3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 000e85db202ea08677876a288e6a68dc2e20ed52
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529171"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31890001"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -18,7 +18,7 @@ ms.locfileid: "29529171"
 检索[团队](../resources/team.md)[频道](../resources/channel.md)中的[消息](../resources/chatmessage.md)列表（无回复）。 若要获取消息的回复，请调用[列出消息回复](channel-get-messagereply.md)或[获取消息回复](channel-list-messagereplies.md) API。 
 
 ## <a name="permissions"></a>权限
-需要以下权限之一才能调用此 API。若要了解详细信息（包括如何选择权限），请参阅[权限](/graph/permissions-reference)。
+需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
 |---------|-------------|
@@ -102,10 +102,15 @@ Content-length: 201
         ],
         "mentions": [
             {
-                "type": "user",
                 "id": "id-value ",
-                "mentionText": "Test User"
+                "mentionText": "Test User",
+                "mentioned": {
+                "user": {
+                    "id": "id-value",
+                    "displayName: "string"
+                }
             }
+        }
         ],
         "importance": "normal",
         "reactions": [
