@@ -1,14 +1,14 @@
 ---
 title: 获取开放扩展
-description: 获取用名称或完全限定的名称标识的开放扩展（openTypeExtension 对象）。
+description: 获取按名称或完全限定的名称标识的开放扩展（openTypeExtension 对象）。
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: d3bc96577f86a7bc5d2006f42a03943363d70169
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ee5a8d8f5d98024055b4d28dd67281f8e2e6d453
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953229"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889938"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 
@@ -24,12 +24,12 @@ ms.locfileid: "27953229"
 
 ## <a name="permissions"></a>权限
 
-具体取决于包含分机号和权限的资源类型 （委派或应用程序） 请求下, 表中所指定的权限是最小特权需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据包含扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.Read.All | 不支持 | Device.ReadWrite.All |
-| [事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [组事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
@@ -63,7 +63,7 @@ GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>获取一个通过匹配的扩展插件扩展的已知资源实例 
 
-对于事件、组事件、组帖子、邮件、个人联系人资源类型，可使用与获取资源实例相同的 REST 请求，查找 **id** 属性与筛选器匹配的扩展插件，然后使用此扩展插件扩展这个资源实例。该响应包括大部分资源属性。
+对于事件、组事件、组帖子、邮件、个人联系人资源类型，可使用与获取资源实例相同的 REST 请求，查找 **id** 属性与筛选器匹配的扩展插件，然后使用此扩展插件扩展这个资源实例。 该响应包括大部分资源属性。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -110,7 +110,7 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 请确保对 `$filter` 字符串中的空格字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)。
 
-|名称|值|说明|
+|Name|值|说明|
 |:---------------|:--------|:-------|
 |$filter|string|返回其 **id** 与 `extensionId` 参数值匹配的扩展。|
 |具有 **any** 运算符的 $filter|string|返回特定资源集合的实例，其中包含其 **id** 与 `extensionId` 参数值匹配的扩展。|
@@ -370,7 +370,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 ```
 
 
-####<a name="response-5"></a>响应 5
+#### <a name="response-5"></a>响应 5
 
 在第五个示例的响应中，用户邮箱中仅有一封邮件，其 **id** 等于 `Com.Contoso.Referral`。
 

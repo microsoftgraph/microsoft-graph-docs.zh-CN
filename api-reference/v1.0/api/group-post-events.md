@@ -1,15 +1,15 @@
 ---
 title: 创建事件
-description: 使用此 API 新建事件。
+description: 使用此 API 创建新事件。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 1d264ec205d8f94027a8121253819c2613d1f4d6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 194a24ac589cffa56a235a0bce39500f8cdd9d4e
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941119"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889945"
 ---
 # <a name="create-event"></a>创建事件
 使用此 API 新建[事件](../resources/event.md)。
@@ -77,7 +77,7 @@ Content-length: 285
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 285
 

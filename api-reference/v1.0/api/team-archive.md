@@ -4,25 +4,25 @@ description: '存档指定的团队。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c7ac186eeb937b1dda0b1df4878260e61fe30b18
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
-ms.translationtype: MT
+ms.openlocfilehash: 28c1ea9d96d55587f95af85c9aba50a43fe08d60
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016637"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31890022"
 ---
 # <a name="archive-team"></a>存档团队
 
 
 
-存档指定的[团队](../resources/team.md)。 团队存档时，用户可以不再发送或团队中的任何频道上的邮件，类似编辑工作组的名称、 说明或其他设置，或通常对团队大多数的更改。
-向团队的成员身份更改继续允许。
+存档指定的[团队](../resources/team.md)。 存档团队后，用户无法再团队中的任意频道上发送或点赞消息，无法再编辑团队名称、说明和其他设置，且通常也无法再对团队进行大部分更改。
+仍可向团队进行成员身份更改。
 
-存档是异步操作。 一旦异步操作已成功完成，此 API 响应后可能出现的存档团队。
+存档属于异步操作。 该异步操作成功完成后，团队即已存档，此 API 作出响应后就可能出现此情况。
 
-才能存档团队，团队和[组](../resources/group.md)必须具有一个所有者。
+要对团队存档，团队和[组](../resources/group.md)都必须有一个所有者。
 
-若要从其存档状态还原团队，使用 API 对[unarchive](team-unarchive.md)。
+要从存档状态还原团队，请使用 API [取消存档](team-unarchive.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -33,7 +33,7 @@ ms.locfileid: "28016637"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All    |
 
-> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -46,21 +46,21 @@ POST /teams/{id}/archive
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
-在请求中，则可以_选择_包括`shouldSetSpoSiteReadOnlyForMembers`以 json 格式的参数正文，，如下所示。
+在请求中，可_选择性地_在 JSON 正文中包括 `shouldSetSpoSiteReadOnlyForMembers` 参数，如下所示。
 ```JSON
 {
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-此可选的参数定义是否与团队关联的 Sharepoint Online 网站上设置为只读的工作组成员的权限。 设置为 false 或省略正文完全将导致正在跳过此步骤。
+此可选参数定义了是否在与团队关联的 Sharepoint Online 网站上将团队成员的权限设置为“只读”。 如果将其设置为 false 或完全省略正文，将导致跳过此步骤。
 
 ## <a name="response"></a>响应
 
-如果存档成功启动，此方法返回`202 Accepted`响应代码。 响应还将包含`Location`标头，其中包含已创建以处理存档的团队[teamsAsyncOperation](../resources/teamsasyncoperation.md)的位置。 通过对此位置进行 GET 请求检查存档操作的状态。
+如果成功开始存档，此方法将返回一个 `202 Accepted` 响应代码。 响应还将包含一个 `Location` 标头，后者包含创建用于处理团队存档操作的 [teamsAsyncOperation](../resources/teamsasyncoperation.md) 的位置。 可通过向此位置发出 GET 请求，查看存档操作的状态。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 <!-- {
   "blockType": "ignored",
   "name": "archive_team"
@@ -69,10 +69,10 @@ POST /teams/{id}/archive
 POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 ```
 #### <a name="response"></a>响应
-下面是响应的示例。
+响应示例如下所示。
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams{id}/operations({opId})
+Location: /teams({id})/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```
