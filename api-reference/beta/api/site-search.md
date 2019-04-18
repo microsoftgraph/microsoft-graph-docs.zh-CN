@@ -5,18 +5,18 @@ ms.date: 09/10/2017
 title: 按关键字查找 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ee4aa139508e6a523ea1858c6b0598a5b8aaf9b5
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 156093c9d3b87f0a4e44f6928b36a8aa92a4ef4d
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480752"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904110"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 SharePoint 租户中搜索与所提供的关键字匹配的 [网站][]。
+在 SharePoint 租户中搜索与所提供的关键字匹配的[网站][]。
 
 [网站]: ../resources/site.md
 
@@ -67,6 +67,7 @@ Content-type: application/json
   ]
 }
 ```
+>**注意:** 用于排序的唯一属性是**createdDateTime**。 搜索筛选器是在检索搜索结果时使用多个属性的无文本搜索。
 
 <!--
 {
