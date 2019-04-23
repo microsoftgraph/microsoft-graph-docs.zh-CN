@@ -4,12 +4,12 @@ description: Outlook 项（邮件、事件、联系人、任务）有一个有�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e88f4d457f76990dc3e6145ebf2730087ad2a74e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e0ddee215b7574e152fa5ffc574d218d5a2f811a
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961713"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904089"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>获取 Outlook 资源的不可变标识符
 
@@ -17,7 +17,7 @@ Outlook 项（邮件、事件、联系人、任务）有一个有趣行为，你
 
 > **重要说明：** 不可变标识符仅适用于 Microsoft Graph /beta 版本。
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-it-works"></a>运作方式
 
 不可变 ID 是一项可选的 Microsoft Graph 功能。 若要选择使用此功能，应用必须在 API 请求中发送额外 HTTP 头：
 

@@ -4,18 +4,18 @@ description: q=excelstarter)。
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 234130a8fa56dfdc078c694069a9fe879140d27f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a8fcc90d4050cb6f0db2fb5e2b3a22d267f8cede
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954881"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904068"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>使用 Microsoft Graph 将数据写入 Excel 工作簿
 
 Excel REST API 提供了一种简单的、独立于平台的方法将信息上传到 Excel 工作簿。 本主题介绍如何在三个 Web 开发框架上将简单数据集写入 Excel 工作簿：ASP.NET、Angular 和 React。 你可以通过访问 [GitHub 上的 Microsoft Graph Excel 入门版示例](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter)来查看本主题所采用的代码示例。
 
-> **注意：** 这三个示例将数据写入名为 demo.xlxs**** 的 Excel 工作簿。 它们都提供了此工作簿，以便你可以将其上传到你自己的 OneDrive，不过，你也可以使用 Microsoft Graph 将文件上传到 OneDrive。 如果有意了解 REST 调用，你需要将任何类型的文件上传到你的 OneDrive 根文件夹，请参阅 [Microsoft Graph Excel REST API ASP.NET 待办事项列表示例](https://github.com/microsoftgraph/aspnet-todo-rest-sample)。
+> **注意：** 这三个示例将数据写入名为 **demo.xlsx** 的 Excel 工作簿。 它们都提供了此工作簿，以便你可以将其上传到你自己的 OneDrive，不过，你也可以使用 Microsoft Graph 将文件上传到 OneDrive。 如果有意了解 REST 调用，你需要将任何类型的文件上传到你的 OneDrive 根文件夹，请参阅 [Microsoft Graph Excel REST API ASP.NET 待办事项列表示例](https://github.com/microsoftgraph/aspnet-todo-rest-sample)。
 
 这三个 Excel 入门版示例均执行相同的操作：检索登录用户的名称和地址，并将这两条信息添加到 demo.xlsx**** 工作簿中的新行。 你可以通过将信息添加到代表你想要添加的一行或多行的二维数组中来修改示例，以添加额外的行。
 

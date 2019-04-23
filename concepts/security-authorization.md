@@ -4,12 +4,12 @@ description: 可通过 Microsoft Graph 安全性 API 访问的安全数据是很
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 4b46df393b84c72efb40bb88d8cdeb7aca44449d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 795ac1da43c3ba67dcbc83853e4bbb0d54cdae0f
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480423"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904040"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>授权和 Microsoft Graph 安全性 API
 
