@@ -6,11 +6,11 @@ title: 使用链接共享文件
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 3f119ea285b3fa9e59ec8c67d5a7b3fd304fd196
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480500"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454580"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 
@@ -49,7 +49,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 请求正文定义应用程序正在请求的共享链接的属性。
 请求应为具有以下属性的 JSON 对象。
 
-|   名称    |  类型  |                                 说明                                  |
+|   名称    |  类型  |                                 描述                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **类型**  | string | 要创建的共享链接的类型。`view`、`edit` 或 `embed`。       |
 | **scope** | 字符串 | 可选。 要创建的链接的范围。 `anonymous` 或 `organization`。 |

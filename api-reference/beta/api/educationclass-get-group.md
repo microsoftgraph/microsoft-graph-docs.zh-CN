@@ -5,15 +5,13 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: bd5cac6b952f58c27a3f801db8679dfc48b16de3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518882"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457961"
 ---
 # <a name="get-group"></a>获取组
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索与此 **educationClass** 对应的 Office 365 **group**。
 
@@ -26,7 +24,7 @@ ms.locfileid: "29518882"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  来自 EduRoster.ReadBasic、EduRoster.Read、EduRoster.Write 以及 Directory.Read.All|
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All 以及 Directory.Read.All| 
+|Application | EduRoster.Read.All、EduRoster.ReadWrite.All 以及 Directory.Read.All| 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +48,7 @@ GET /education/classes/{id}/group
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/classes/2961761D-8094-4183-A9F6-8E36E966C7D9/group
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/group
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -91,15 +89,10 @@ Content-length: xxx
 
 <!-- uuid: 0087D9B3-1418-4C87-91C9-A18C6D93706B
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get user",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationclass-get-group.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

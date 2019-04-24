@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9c3c79e2b8fc3182b05063228f02f5e4fafaba70
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936856"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453204"
 ---
 # <a name="get-rangeformat"></a>获取 RangeFormat
 
@@ -21,7 +21,7 @@ ms.locfileid: "27936856"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和[WorkbookRangeFormat](../resources/rangeformat.md)响应正文中的对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[WorkbookRangeFormat](../resources/rangeformat.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

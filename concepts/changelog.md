@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c99c3eb7cb7b1085e2609b460545c111537aeefe
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.openlocfilehash: 746902cb9e091a5b206966c631d6b68930e76ff9
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31981066"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,12 @@ ms.locfileid: "31889987"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="april-2019"></a>2019 年 4 月
+### <a name="azure-ad-b2c-apis"></a>Azure AD B2C API
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | Beta |引入新的资源类型 [trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta)。 此资源类型支持[创建](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta)、[列表](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)、[获取](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta)、[更新](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta)和[删除](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta)操作。|
+
 
 ### <a name="directory-apis"></a>目录 API
 
@@ -267,7 +273,7 @@ ms.locfileid: "31889987"
 
 ## <a name="january-2019"></a>2019 年 1 月
 
-### <a name="azure-ad-apis"></a>Azure AD API
+### <a name="azure-ad-b2c-apis"></a>Azure AD B2C API
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1008,7 +1014,7 @@ ms.locfileid: "31889987"
 
 ### <a name="education-api"></a>教育版 API
 
-| **更改类型** | **Version**   | **说明**                          |
+| **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 更改          | v1.0 和 beta | 必须有 **Members.Read.Hidden** 范围，才能使用仅应用令牌对 [educationClass](/graph/api/resources/educationclass?view=graph-rest-1.0) 实体读取或更新 **Members** 集合。 |
 |更改           |Beta           |更新了 [educationsubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta) 状态属性中 **educationSubmissionStatus** 类型的可能值。|
@@ -2645,7 +2651,7 @@ ms.locfileid: "31889987"
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| 添加项        | Beta        | 使用[架构扩展](extensibility-overview.md#schema-extensions)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>消息<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](extensibility-schema-groups.md) |
+| 添加项        | Beta        | 使用[架构扩展](extensibility-overview.md#schema-extensions)通过应用程序数据扩展 Microsoft Graph。该操作在以下资源上受支持：<br/>管理单元<br/>日历事件<br/>设备<br/>组<br/>message<br/>组织<br/>个人联系人<br/>帖子<br/>用户<br/>请参阅以下示例：<br/>[使用架构扩展向组添加自定义数据（预览）](extensibility-schema-groups.md) |
 | 添加项        | Beta        | 提供另一种不需要验证的 .com 虚域就能创建架构扩展定义的方法。有关详细信息，请参阅[架构扩展](extensibility-overview.md#schema-extensions)。 |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>使用开放扩展将自定义数据添加到 Microsoft Graph。
@@ -2867,7 +2873,7 @@ ms.locfileid: "31889987"
 
 ### <a name="outlook-calendar"></a>Outlook 日历
 
-| **更改类型** | **版本** | **说明**                          |
+| **更改类型** | **Version** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 向 [event](/graph/api/resources/event?view=graph-rest-1.0) 资源添加了 **onlineMeetingUrl** 属性。 |
 | Addition        | Beta        | 向事件资源添加了 [forward](/graph/api/event-forward?view=graph-rest-beta) 操作。 |

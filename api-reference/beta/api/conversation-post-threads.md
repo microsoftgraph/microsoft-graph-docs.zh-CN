@@ -1,21 +1,19 @@
 ---
 title: 创建线程
-description: 在指定会话中创建新线程。
+description: '在指定会话中创建新线程。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 8a4284e51ee74b43ae3e678ed8a54300cf9b9fe9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149824"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455595"
 ---
 # <a name="create-thread"></a>创建线程
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-在指定会话中创建新线程。
+在指定会话中创建新线程。 
 
 按指定方式创建线程和帖子。使用 [回复线程](conversationthread-reply.md) 进一步发布到该线程。或者，如果你获得帖子 ID，还可以在该线程中 [回复](post-reply.md) 帖子。
 
@@ -28,7 +26,7 @@ ms.locfileid: "30149824"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -55,7 +53,7 @@ POST /groups/{id}/conversations/{id}/threads
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
+POST https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 Content-type: application/json
 
 {
@@ -71,7 +69,7 @@ Content-type: application/json
 在请求正文中，提供 [ConversationThread](../resources/conversationthread.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新线程的 `id`。下面是一个响应示例。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新线程的 `id`。下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,15 +87,10 @@ Content-length: 346
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/conversation-post-threads.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

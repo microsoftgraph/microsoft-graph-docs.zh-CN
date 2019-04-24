@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a63ee1d3ce2b7b43eea2993cb588b20897b31c32
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453586"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
@@ -23,12 +23,12 @@ ms.locfileid: "29641349"
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[Create Session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |创建工作簿会话以启动永久或非永久会话。|
-|[Close Session](../api/workbook-closesession.md) | 无 |关闭现有会话。|
+|[Close Session](../api/workbook-closesession.md) | None |关闭现有会话。|
 |[Refresh Session](../api/workbook-refreshsession.md) | 无 |刷新现有会话。|
 
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
+| 关系 | 类型   |描述|
 |:---------------|:--------|:----------|
 |names|[NamedItem](nameditem.md) 集合|表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
 |表格|[Table](table.md) 集合|表示与工作簿关联的表的集合。只读。|
@@ -36,9 +36,9 @@ ms.locfileid: "29641349"
 
 ## <a name="functions"></a>函数
 
-[Excel 函数](#functions)使用 JSON 对象调用使用语法 `POST /workbook/functions/{function-name}` 并在正文中提供函数自变量的工作簿函数。该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。`null` 的 `error` 值表示该函数执行成功。 
+[Excel 函数](#functions)使用 JSON 对象调用使用语法 `POST /workbook/functions/{function-name}` 并在正文中提供函数自变量的工作簿函数。该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。`error` 的 `null` 值表示该函数执行成功。 
 
-受支持函数的完整列表在[此处](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。
+受支持函数的完整列表在 [此处](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。
 
 _重要说明_： 
 * 使用 range 对象（而不是范围地址字符串）提供范围输入参数。  

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 4e439356f2156a14bdbc906972c44f3c3299b05b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523104"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456631"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
@@ -23,7 +23,7 @@ ms.locfileid: "29523104"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |描述|
 |:---------------|:--------|:----------|
 |startCell|string|起始单元格。这是图表将移动到的位置。起始单元格为左上角或右上角的单元格，具体取决于用户的从右到左显示设置。|
 |endCell|string|可选。结束单元格。如果已指定，图表的宽度和高度将设置为完全覆盖此单元格/区域。|

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: ace424d12e38e4bb907923ea542ebd7330130d06
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643977"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453505"
 ---
 # <a name="rangeview-resource-type"></a>rangeView 资源类型
 
@@ -26,7 +26,7 @@ RangeView 表示父范围的一组可见单元格。
 |[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|返回与范围视图相关联的范围对象|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 |columnCount|Int32|返回可见列数。只读。|
 |formulas|Json|表示采用 A1 表示法的公式。 |
@@ -40,7 +40,7 @@ RangeView 表示父范围的一组可见单元格。
 |values|Json|表示指定的 RangeView 的原始值。返回的数据可能是字符串、数字，也可能是布尔值。包含错误的单元格将返回错误字符串。   |
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |说明|
+| 关系 | 类型   |描述|
 |:---------------|:--------|:----------|
 |rows|[workbookRangeView](workbookrangeview.md) 集合| 表示一组与范围相关联的范围视图。只读。  只读。|
 

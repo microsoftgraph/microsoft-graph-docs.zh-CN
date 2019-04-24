@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 40dfe68ec16415dbfa4abcbdb46da8cc9f89c961
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927301"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453232"
 ---
 # <a name="update-rangefont"></a>更新 rangefont
 
@@ -21,7 +21,7 @@ ms.locfileid: "27927301"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,18 +39,18 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
-|bold|boolean|表示字体的加粗状态。|
+|bold|布尔|表示字体的加粗状态。|
 |color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
-|italic|boolean|表示字体的斜体状态。|
+|italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字号|
-|underline|string|应用于字体的下划线类型。 可能的值为： `None`， `Single`， `Double`， `SingleAccountant`， `DoubleAccountant`。|
+|underline|string|应用于字体的下划线类型。 可能的值包括 `None`、`Single`、`Double`、`SingleAccountant`、`DoubleAccountant`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookRangeFont](../resources/rangefont.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookRangeFont](../resources/rangefont.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

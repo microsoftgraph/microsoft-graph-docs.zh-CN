@@ -1,23 +1,23 @@
 ---
 author: chackman
 ms.author: chackman
-title: 按照驱动器项目
+title: 关注驱动器项
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: b0c8835593ed7203cc6239485f1dcd4f17f24fe7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518336"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454403"
 ---
-# <a name="follow-drive-item"></a>按照驱动器项目
+# <a name="follow-drive-item"></a>关注驱动器项
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-按照[driveItem](../resources/driveitem.md)。
+关注[driveItem](../resources/driveitem.md)。
 
->**注意：** 若要取消追随项目，请参阅[于取消追随项目](driveitem-unfollow.md)。
+>**注意:** 若要取消追随某个项目, 请参阅取消[追随项目](driveitem-unfollow.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,11 +47,11 @@ POST /users/{user-id}/drive/items/{item-id}/follow
 
 ## <a name="response"></a>响应
 
-此方法返回[DriveItem](../resources/driveitem.md)正在关注的项目。
+此方法返回正在遵循的项的[DriveItem](../resources/driveitem.md) 。
 
 ## <a name="example"></a>示例
 
-本示例遵循由标识项`{item-id}`。
+本示例将遵循由标识的`{item-id}`项目。
 
 <!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
 

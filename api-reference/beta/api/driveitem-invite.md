@@ -6,11 +6,11 @@ title: 发送邀请以访问项目
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 1e02af913702aace46a5e3ca2f2e2650a2c7839e
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30676973"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454326"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
@@ -59,7 +59,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 }
 ```
 
-| 参数        | 类型                                            | 说明                                                                                                |
+| 参数        | 类型                                            | 描述                                                                                                |
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
 | recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | 将获得访问权限和共享邀请的收件人的集合。                                            |
 | message          | String                                          | 共享邀请中包含的纯文本格式的邮件。最大长度为 2000 个字符。 |

@@ -1,24 +1,24 @@
 ---
 title: synchronizationJobRestartCriteria 资源类型
-description: 定义的范围的[synchronizationJob： 重新启动](../api/synchronization_synchronizationjob_restart.md)操作。
+description: '定义[synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md)操作的范围。'
 localization_priority: Normal
 ms.openlocfilehash: 1e6ac952808f80d191fc93e9a804411ec4459d4c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642518"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453614"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>synchronizationJobRestartCriteria 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义的范围的[synchronizationJob： 重新启动](../api/synchronization_synchronizationjob_restart.md)操作。
+定义[synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md)操作的范围。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
-|resetScope|String| 以逗号分隔的下列值的组合： `Full`， `QuarantineState`， `Watermark`， `Escrows`， `ConnectorDataStore`。 使用`Full`如果希望所有选项。|
+|resetScope|字符串| 以下`Full`值的逗号分隔组合:、 `QuarantineState` `Watermark` `Escrows`、、。 `ConnectorDataStore` 如果`Full`您想要所有选项, 请使用。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

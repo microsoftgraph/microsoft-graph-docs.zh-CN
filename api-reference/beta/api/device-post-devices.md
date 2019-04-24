@@ -1,21 +1,21 @@
 ---
 title: 创建设备
-description: 创建一个新的设备。
+description: 创建新设备。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4ad0400a74deec35daa4e28f91cafde5310c65c1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640516"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455133"
 ---
 # <a name="create-device"></a>创建设备
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建一个新的设备。
+创建新设备。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -24,7 +24,7 @@ ms.locfileid: "29640516"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /devices
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [device](../resources/device.md) 对象的 JSON 表示形式。
 
-由于**设备**资源支持[扩展](/graph/extensibility-overview)，您可以使用`POST`操作并创建它时将使用您自己的数据的自定义属性添加到设备实例。
+由于**设备**资源支持[扩展](/graph/extensibility-overview), 因此可以在创建设备`POST`实例时使用该操作并向其添加包含自己的数据的自定义属性。
 
 ## <a name="response"></a>响应
 

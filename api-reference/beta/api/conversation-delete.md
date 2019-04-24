@@ -5,15 +5,13 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: af7aead90efdf40ce30d58dbc5c7c6b20d26f15f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523041"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455570"
 ---
 # <a name="delete-conversation"></a>删除对话
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除对话。
 ## <a name="permissions"></a>权限
@@ -50,7 +48,7 @@ DELETE /groups/{id}/conversations/{id}
   "name": "delete_conversation"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
@@ -64,15 +62,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete conversation",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/conversation-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -1,36 +1,36 @@
 ---
 title: synchronizationRule 资源类型
-description: 定义同步引擎，包括要同步的对象和方向，应如何执行同步如何从源目录对象应匹配目标目录中的对象以及如何属性应转换他们正在同步时从源到目标目录。
+description: 定义同步引擎的同步执行方式, 包括要同步的对象和在哪个方向上, 源目录中的对象应与目标目录中的对象匹配, 以及属性应在将其从源目录同步到目标目录时进行转换。
 localization_priority: Normal
 ms.openlocfilehash: deaf27ec46268eebe289e502bdf3b62a659cf1fb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517923"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453642"
 ---
 # <a name="synchronizationrule-resource-type"></a>synchronizationRule 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义同步引擎，包括要同步的对象和方向，应如何执行同步如何从源目录对象应匹配目标目录中的对象以及如何属性应转换他们正在同步时从源到目标目录。
+定义同步引擎的同步执行方式, 包括要同步的对象和在哪个方向上, 源目录中的对象应与目标目录中的对象匹配, 以及属性应在将其从源目录同步到目标目录时进行转换。
 
->**注意：** 同步规则定义一个方向-从到目标目录源目录同步。 规则属性的一部分定义的源和目标目录。
+>**注意:** 同步规则将一个方向的同步定义为将源目录中的同步到目标目录。 源和目标目录定义为规则属性的一部分。
 
-同步规则更新[同步架构](synchronization-synchronizationschema.md)的一部分。
+同步规则将作为[同步架构](synchronization-synchronizationschema.md)的一部分进行更新。
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | 说明    |
+| 属性      | 类型      | 描述    |
 |:--------------|:----------|:---------------|
-|可编辑       |Boolean    |`true`如果可以自定义同步规则;，`false`如果此规则是只读的并且不应被更改。|
-|id             |String     |同步规则标识符。 必须是同步引擎识别的标识符。 支持标识符可以找到 API 返回的同步模板中的规则。|
-|元数据       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md)集合 |其他扩展属性。 除非明确由支持团队，不应更改元数据值。|
-|name           |String     |可读同步规则的名称。 不可为 null。|
-|objectMappings |[objectMapping](synchronization-objectmapping.md)集合    |规则支持的对象映射的集合。 指示同步引擎应同步的对象。|
-|priority       |整数    |相对于[synchronizationSchema](synchronization-synchronizationschema.md)中其他规则的优先级。 将首先处理与最低优先级编号的规则。|
-|sourceDirectoryName       |String    |源目录的名称。 必须匹配[synchronizationSchema](synchronization-synchronizationschema.md)中的目录定义之一。|
-|targetDirectoryName       |String    |目标目录的名称。 必须匹配[synchronizationSchema](synchronization-synchronizationschema.md)中的目录定义之一。|
+|变为       |Boolean    |`true`如果可以对同步规则进行自定义, 则为  ;`false`如果此规则为只读, 则不应更改。|
+|id             |String     |同步规则标识符。 必须是同步引擎可识别的标识符之一。 在 API 返回的同步模板中可以找到受支持的规则标识符。|
+|metadata       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md)集合 |其他扩展属性。 除非支持团队明确指示, 否则不应更改元数据值。|
+|name           |String     |可读的同步规则名称。 不可为空。|
+|objectMappings |[objectMapping](synchronization-objectmapping.md)集合    |该规则支持的对象映射的集合。 通知同步引擎应同步哪些对象。|
+|priority       |整数    |相对于[synchronizationSchema](synchronization-synchronizationschema.md)中其他规则的优先级。 将首先处理具有最低优先级编号的规则。|
+|sourceDirectoryName       |字符串    |源目录的名称。 必须与[synchronizationSchema](synchronization-synchronizationschema.md)中的一个目录定义相匹配。|
+|targetDirectoryName       |字符串    |目标目录的名称。 必须与[synchronizationSchema](synchronization-synchronizationschema.md)中的一个目录定义相匹配。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

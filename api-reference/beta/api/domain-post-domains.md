@@ -5,15 +5,13 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 8f7c9677d4bd3dd7088f3b3d67c49fad6caa360e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509915"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454842"
 ---
 # <a name="create-domain"></a>创建域
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 向租户添加域。
 
@@ -28,7 +26,7 @@ ms.locfileid: "29509915"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -61,7 +59,7 @@ POST /domains
   "id": "create_domain_from_domains"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/domains
+POST https://graph.microsoft.com/v1.0/domains
 Content-type: application/json
 Content-length: 192
 
@@ -95,15 +93,10 @@ Content-length: 192
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create domain",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/domain-post-domains.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

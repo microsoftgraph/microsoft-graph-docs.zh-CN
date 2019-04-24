@@ -3,12 +3,12 @@ title: 'Microsoft Graph 权限引用 '
 description: Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。 作为开发人员，你可以决定应用请求哪些 Microsoft Graph 权限。
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: ac2d600e41d2d535b12122f99630d548082bbe46
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.openlocfilehash: 4ec732fdc9e2a1c91ff6e5bb58c26e606272e641
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31980954"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用 
 Microsoft Graph 公开了控制应用程序对资源（如用户、组和邮件）的访问权限的粒度权限。作为开发人员，你可以决定应用程序请求哪些 Microsoft Graph 权限。当用户登录你的应用时，他们或处于某些情况下的管理员可以选择是否同意这些权限。如果用户同意，你的应用可以访问它所请求的资源和 API。对于没有已登录用户的应用，安装应用程序或注册时，管理员可以事先同意权限。 
@@ -1012,6 +1012,30 @@ _任务_权限用于控制对 Outlook 任务的访问权限。Microsoft Planner 
 * _Agreement.Read.All_：阅读所有使用条款协议 (`GET /beta/agreements`)
 * _Agreement.ReadWrite.All_：阅读和编写所有使用条款协议 (`POST /beta/agreements`)
 * _AgreementAcceptance.Read_：阅读用户使用条款接受状态 (`GET /beta/me/agreementAcceptances`)
+
+有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+---
+
+## <a name="trust-framework-policy-permissions"></a>信任框架策略权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | 阅读所有 trustFramework 策略 | 允许应用代表已登录用户阅读所有 TrustFramework 策略。 | 是 | 否 |
+| _Policy.ReadWrite.TrustFramework_ | 阅读和编写所有 trustFramework 策略 | 允许应用代表已登录用户阅读和编写所有 TrustFramework 策略。 | 是 | 否 |
+
+### <a name="remarks"></a>注解
+工作或学校帐户必须是租户的全局管理员。
+
+### <a name="example-usage"></a>用法示例
+
+#### <a name="delegated"></a>委派
+以下使用对两种委派权限均有效：
+
+* _Policy.Read.All_：阅读所有 trustFramework 策略 (`GET /beta/trustFramework/policies`)
+* _Policy.ReadWrite.TrustFramework_：阅读和编写所有 trustFramework 策略 (`POST /beta/trustFramework/policies`)
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
 

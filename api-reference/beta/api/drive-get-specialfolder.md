@@ -6,15 +6,13 @@ title: 获取特殊文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: ecf36cdc81373a2c6be2cce8ec1dd8fc6457ef34
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481298"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454783"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用特殊集合可以按名称访问特殊文件夹。
 
@@ -87,10 +85,10 @@ Content-type: application/json
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
-GET /me/drive/special/{name}/children
+GET /me/drive/special/{special-folder-name}/children
 ```
 
 ### <a name="response"></a>响应
@@ -117,15 +115,10 @@ Content-Type: application/json
 
 如果应用拥有只读权限，且特殊文件夹尚不存在，那么可能无法请求获取特殊文件夹或其子项，响应为 `404 Not Found` 或 `403 Forbidden` 错误。
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Access known folders in OneDrive through the special folder collection",
   "keywords": "known folders",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Special folders",
-  "suppressions": [
-    "Error: /api-reference/beta/api/drive-get-specialfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "OneDrive/Drive/Special folders"
+} -->

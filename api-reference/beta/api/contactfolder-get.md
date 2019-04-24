@@ -5,22 +5,20 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5ab29eb96f900404f035442605047bd2df3e37e2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530018"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455659"
 ---
 # <a name="get-contactfolder"></a>获取 contactFolder
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 通过使用联系人文件夹 ID 获取联系人文件夹。
 
-有两种方案相关应用程序可以在哪里找到另一个用户的联系人文件夹：
+在以下两种情况下, 应用可以获取其他用户的联系人文件夹:
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享联系人文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
+* 如果该应用程序具有应用程序权限，或者
+* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
 
 
 ## <a name="permissions"></a>权限
@@ -59,7 +57,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
   "name": "get_contactfolder"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/contactFolders/{id}
+GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -76,22 +74,16 @@ Content-length: 104
 {
   "displayName": "Finance",
   "id": "AAMkAGI2TKI5AAA=",
-  "parentFolderId": "AAMkAGI2AAEOAAA=",
-  "wellKnownName": null
+  "parentFolderId": "AAMkAGI2AAEOAAA="
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get contactFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/contactfolder-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

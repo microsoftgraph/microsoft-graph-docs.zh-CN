@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 2d1377a0a8c19538ea1c0c19483512736e129559
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640264"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456603"
 ---
 # <a name="update-chart"></a>更新图表
 
@@ -23,7 +23,7 @@ ms.locfileid: "29640264"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,9 +39,9 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
-|height|double|表示 chart 对象的高度，以磅值表示。|
+|高度|double|表示 chart 对象的高度，以磅值表示。|
 |left|double|从图表左侧到工作表原点的距离，以磅值表示。|
 |name|string|表示 chart 对象的名称。|
 |top|double|表示从对象左边界至第 1 行顶部（在工作表上）或图表区域顶部（在图表上）的距离，以磅值表示。|

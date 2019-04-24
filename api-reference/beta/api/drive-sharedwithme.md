@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出与我共享的文件
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 06c6607de9fa36fd8b1dedc3bf5ded3cfad1228e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481011"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454552"
 ---
-# <a name="list-items-shared-with-the-signed-in-user"></a>列出与已登录用户共享的项
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="list-items-shared-with-the-signed-in-user"></a>列出与已登录用户共享的项目
 
 检索已与[驱动器](../resources/drive.md)所有者共享的 [DriveItem](../resources/driveitem.md) 资源的集合。
 
@@ -28,12 +26,12 @@ ms.locfileid: "30481011"
 |委派（个人 Microsoft 帐户） | Files.Read.All、Files.ReadWrite.All    |
 |应用程序 | Files.Read.All、Files.ReadWrite.All、Sites.Read.All、Sites.ReadWrite.All |
 
-**注意:** /sharedWithMe 请求将成功, 同时读取或读取文件。读写权限, 某些属性可能丢失。
-此外，如果没有 **All** 权限之一，无法访问从此 API 返回的共享项。
+**注意：** 虽然 /sharedWithMe 请求可通过 Files.Read 或 Files.ReadWrite 权限成功发出，但一些属性可能会丢失。
+此外，如果没有 **All** 权限之一，则无法访问从此 API 返回的共享项。
 
 ## <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/sharedWithMe
@@ -91,15 +89,10 @@ Content-Type: application/json
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List the items shared with the owner of a drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "Sharing/Shared with me",
-  "suppressions": [
-    "Error: /api-reference/beta/api/drive-sharedwithme.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Sharing/Shared with me"
+} -->

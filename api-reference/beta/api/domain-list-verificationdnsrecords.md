@@ -1,25 +1,23 @@
 ---
 title: 列出 verificationDnsRecords
-description: 检索 domainDnsRecord 对象列表。
+description: 检索 domainDnsRecord 对象的列表。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a470f6bddb9cade8083afb3eb5d5cf76cf4dba32
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522838"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454951"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+检索[domainDnsRecord](../resources/domaindnsrecord.md)对象的列表。
 
-检索 [domainDnsRecord](../resources/domaindnsrecord.md) 对象列表。
+在验证所有权之前, 不能使用 Azure AD 租户相关联的域。 若要验证域的所有权, 请检索域验证记录并将详细信息添加到域的区域文件中。 可以通过域注册机构或 DNS 服务器配置来完成此操作。
 
-必须完成所有权验证，才可以使用与 Azure AD 租户关联的域。若要验证该域的所有权，请检索域验证记录并向该阈的区域文件添加详细信息。这可以通过域名注册机构或 DNS 服务器配置完成。
-
-需要对根域进行验证。例如，需要对 contoso.com 进行验证。如果已验证根域，则将自动验证该根域的子域。例如，如果已验证 contoso.com，则将自动验证 subdomain.contoso.com。
+根域需要验证。 例如, contoso.com 需要验证。 如果验证了根域, 则会自动验证根域的子域。 例如, 如果 contoso.com 已经过验证, 则会自动验证 subdomain.contoso.com。
 
 ## <a name="permissions"></a>权限
 
@@ -30,7 +28,7 @@ ms.locfileid: "29522838"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
+|Application | Directory.Read.All、Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +55,7 @@ GET /domains/{id}/verificationDnsRecords
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [domainDnsRecord](../resources/domaindnsrecord.md) 对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[domainDnsRecord](../resources/domaindnsrecord.md)对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -67,7 +65,7 @@ GET /domains/{id}/verificationDnsRecords
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
 
 ##### <a name="response"></a>响应
@@ -100,15 +98,10 @@ Content-length: 220
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List verificationDnsRecords",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/domain-list-verificationdnsrecords.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

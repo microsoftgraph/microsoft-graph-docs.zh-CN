@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 649a0c88779ab54c8e4cb8ab93238be3ee000a4d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952543"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32452840"
 ---
 # <a name="update-rangeformat"></a>更新 RangeFormat
 
@@ -21,7 +21,7 @@ ms.locfileid: "27952543"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,22 +39,22 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 |columnWidth|double|获取或设置区域内的所有列的宽度。如果列宽不统一，则返回 NULL。|
-|horizontalAlignment|string|代表指定对象的水平对齐方式。 可能的值为： `General`， `Left`， `Center`， `Right`， `Fill`， `Justify`， `CenterAcrossSelection`， `Distributed`。|
+|horizontalAlignment|string|表示指定对象的水平对齐方式。 可能的值为: `General`、 `Left`、 `Center` `Right` `Fill` `Justify` `CenterAcrossSelection`、、、、 `Distributed`。|
 |rowHeight|double|获取或设置区域中所有行的高度。如果行高不统一，则返回 NULL。|
-|verticalAlignment|string|代表指定对象的垂直对齐方式。 可能的值为： `Top`， `Center`， `Bottom`， `Justify`， `Distributed`。|
+|verticalAlignment|string|表示指定对象的垂直对齐方式。 可能的值包括 `Top`、`Center`、`Bottom`、`Justify`、`Distributed`。|
 |wrapText|boolean|指示 Excel 是否将对象中的文本换行。指示整个区域不具有统一换行设置的空值|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookRangeFormat](../resources/rangeformat.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookRangeFormat](../resources/rangeformat.md)对象。
 ## <a name="example"></a>示例
 
 ### <a name="update-the-format-fill-and-font-properties-in-three-table-cells"></a>更新三个表格单元格的格式、填充和字体属性
 
-下面的示例演示如何更新[WorkbookRangeFormat](../resources/rangeformat.md)、 [WorkbookRangeFill](../resources/rangefill.md)和[WorkbookRangeFont](../resources/rangefont.md)属性指定范围的属性。
+下面的示例演示如何更新指定区域的[WorkbookRangeFormat](../resources/rangeformat.md)、 [WorkbookRangeFill](../resources/rangefill.md)和[WorkbookRangeFont](../resources/rangefont.md)属性的属性。
 
 这组请求的结果是一个表格，其中的三个单元格的格式如下图中的前三个单元格所示。
 

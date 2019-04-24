@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 83c46208edf769a2c3d3a97d242b874596d3308d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641111"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456085"
 ---
 # <a name="update-chartlegend"></a>更新 chartlegend
 
@@ -23,7 +23,7 @@ ms.locfileid: "29641111"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,11 +39,11 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/legend
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
-|overlay|boolean|表示图表图例是否应该与图表主体重叠的布尔值。|
+|overlay|布尔|表示图表图例是否应该与图表主体重叠的布尔值。|
 |position|string|表示图例在图表上的位置。可能的值是：`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。|
-|visible|boolean|表示 ChartLegend 对象的可见性的布尔值。|
+|visible|布尔|表示 ChartLegend 对象的可见性的布尔值。|
 
 ## <a name="response"></a>响应
 

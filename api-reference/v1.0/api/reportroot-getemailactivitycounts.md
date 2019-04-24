@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 0fe35855bdc3283027d121b30b497ff1b0e7f107
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575193"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32452718"
 ---
 # <a name="reportroot-getemailactivitycounts"></a>reportRoot: getEmailActivityCounts
 
@@ -25,7 +25,7 @@ ms.locfileid: "29575193"
 | :------------------------------------- | :--------------------------------------- |
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
-| 应用                            | Reports.Read.All                         |
+| Application                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ GET /reports/getEmailActivityCounts(period='{period_value}')
 
 在请求 URL 中，提供以下参数的有效值。
 
-| 参数 | 类型   | 说明                              |
+| 参数 | 类型   | 描述                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
@@ -47,7 +47,7 @@ GET /reports/getEmailActivityCounts(period='{period_value}')
 
 | 名称          | 说明                              |
 | :------------ | :--------------------------------------- |
-| Authorization | 持有者{令牌}。必需。                |
+| Authorization | Bearer {token}。必需。                |
 | If-None-Match | 如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。 可选。 |
 
 ## <a name="response"></a>响应

@@ -1,30 +1,30 @@
 ---
 title: 删除 educationSubmissionResource
-description: 删除提交资源。 这仅可通过学生。 如果工作分配从复制资源，删除当前副本后，将创建的资源的新副本。
+description: 从提交中删除资源。 仅学生可以执行此操作。 如果资源是从分配中复制的, 则在删除当前副本后将创建该资源的新副本。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: a735cb1451e8d3eb8df13e6fa395c3e02393f451
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518980"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457513"
 ---
 # <a name="delete-educationsubmissionresource"></a>删除 educationSubmissionResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除提交资源。 这仅可通过学生。 如果工作分配从复制资源，删除当前副本后，将创建的资源的新副本。 这样，您可以"重置"资源到其原始状态。 如果资源从工作分配不复制，但是从学生已添加，将只删除资源。
+从提交中删除资源。 仅学生可以执行此操作。 如果资源是从分配中复制的, 则在删除当前副本后将创建该资源的新副本。 这使您可以将资源 "重置" 为其原始状态。 如果资源不是从分配中复制的, 而是从学生添加的, 则只会删除该资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite  |
+|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -6,15 +6,13 @@ title: 列出有权访问文件的权限
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 6917cb17cc9b6c1f04a63d85b05cd5d7e543fa84
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480843"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454389"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出 DriveItem 中的共享权限
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出 [DriveItem](../resources/driveitem.md) 中的有效共享权限。
 
@@ -76,7 +74,7 @@ DriveItem 的有效共享权限可能有两个来源：
 
 本示例检索登录用户驱动器中某个项的权限集合。
 
-<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions
@@ -142,15 +140,10 @@ Content-Type: application/json
 
 [error-response]: /graph/errors
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List an item's permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "Sharing/Permissions",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-list-permissions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Sharing/Permissions"
+} -->

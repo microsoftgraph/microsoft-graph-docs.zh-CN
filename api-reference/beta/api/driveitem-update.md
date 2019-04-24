@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 更新文件或文件夹
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 8da5c90383e7f73012bf86d668316c6443372425
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480619"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454263"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 按 ID 或路径更新 [DriveItem](../resources/driveitem.md) 元数据。
 
@@ -63,7 +61,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 本示例将 DriveItem 资源重命名为“new-file-name.docx”。
 
-<!-- { "blockType": "request", "name": "update-item" } -->
+<!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -98,15 +96,10 @@ Content-type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update or replace the contents or properties of an item.",
   "keywords": "update,replace,contents,item",
   "section": "documentation",
-  "tocPath": "Items/Update",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Update"
+} -->

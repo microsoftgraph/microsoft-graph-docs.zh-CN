@@ -1,37 +1,37 @@
 ---
 title: synchronizationTaskExecution 资源类型
-description: 总结了运行同步作业的结果。
+description: 概述同步作业的运行结果。
 localization_priority: Normal
 ms.openlocfilehash: 37a0fd57269cef6d3cb03c5cc5c38d3024fe198d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510552"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453861"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>synchronizationTaskExecution 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-总结了运行同步作业的结果。
+概述同步作业的运行结果。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
-|activityIdentifier           |String |运行作业的标识符。|
-|countEntitled                |Int64  |处理已分配为此应用程序的条目数。|
-|countEntitledForProvisioning |Int64  |处理已分配的资源调配的条目数。|
-|countEscrowed                |Int64  |保管 （错误） 的条目数。|
-|countEscrowedRaw             |Int64  |已保管，包括 escrows 系统生成的条目数。|
-|countExported                |Int64  |导出的条目数。|
-|countExports                 |Int64  |预计要导出的条目数。|
-|countImported                |Int64  |导入的项目数。|
+|activityIdentifier           |字符串 |作业运行的标识符。|
+|countEntitled                |Int64  |为此应用程序分配的已处理项的计数。|
+|countEntitledForProvisioning |Int64  |为设置分配的已处理项的计数。|
+|countEscrowed                |Int64  |escrowed (错误) 的项的计数。|
+|countEscrowedRaw             |Int64  |escrowed 的条目数, 包括系统生成的 escrows。|
+|countExported                |Int64  |已导出条目的计数。|
+|countExports                 |Int64  |预期要导出的条目数。|
+|countImported                |Int64  |导入的条目数。|
 |countImportedDeltas          |Int64  |导入的增量更改的计数。|
-|countImportedReferenceDeltas |Int64  |导入增量-更改与引用更改的计数。|
-|error                        |[synchronizationError](synchronization-synchronizationerror.md)|如果遇到错误，将包含一个**synchronizationError**详细信息。|
-|state                        |String |汇总结果的此次运行的代码。 可取值为：`Succeeded`、`Failed`、`EntryLevelErrors`。|
-|timeBegan                    |DateTimeOffset|开始此作业的运行时的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|timeEnded                    |DateTimeOffset|结束此作业的运行时的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|countImportedReferenceDeltas |Int64  |与引用更改相关的导入的 delta 更改的计数。|
+|error                        |[synchronizationError](synchronization-synchronizationerror.md)|如果遇到错误, 则包含包含详细信息的**synchronizationError**对象。|
+|state                        |String |对此运行的结果进行汇总的代码。 可取值为：`Succeeded`、`Failed`、`EntryLevelErrors`。|
+|timeBegan                    |DateTimeOffset|开始运行此作业的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|timeEnded                    |DateTimeOffset|此作业运行结束的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

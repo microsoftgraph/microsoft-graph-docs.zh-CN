@@ -6,11 +6,11 @@ title: 下载文件
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: c927b3fefabd8a3c7d76db149704453b50343834
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481585"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454408"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>下载 DriveItem 的内容
 

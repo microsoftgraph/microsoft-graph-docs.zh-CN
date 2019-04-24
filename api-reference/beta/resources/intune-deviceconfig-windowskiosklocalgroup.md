@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 54a4686282e4c13f657adf010a3e0272025eb249
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789519"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453969"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>windowsKioskLocalGroup 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "31789519"
 继承自[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|名|String|将锁定到此展台配置的本地组的名称|
+|名|字符串|将锁定到此展台配置的本地组的名称|
 
 ## <a name="relationships"></a>关系
 无

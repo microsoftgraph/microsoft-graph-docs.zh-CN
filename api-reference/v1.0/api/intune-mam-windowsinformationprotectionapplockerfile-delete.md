@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6b5a0dd3ea9adc19779a7fdf2eb583362f73baba
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976202"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453903"
 ---
 # <a name="delete-windowsinformationprotectionapplockerfile"></a>删除 windowsInformationProtectionAppLockerFile
 
@@ -24,7 +24,7 @@ ms.locfileid: "30976202"
 |:---|:---|
 |委派（工作或学校帐户）|DeviceManagementApps.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {

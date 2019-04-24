@@ -1,26 +1,26 @@
 ---
 title: 获取联系人
-description: 检索的属性和关系的联系人对象。
+description: 检索 contact 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e758a088400168ca755aae755054fcd57c1d092a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530116"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455679"
 ---
 # <a name="get-contact"></a>获取联系人
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和关系的联系人对象。
+检索 contact 对象的属性和关系。
 
-有两种方案，其中应用程序可在另一个用户的联系人文件夹中获取联系人：
+在以下两种情况下, 应用可以在其他用户的 "联系人" 文件夹中获取联系人:
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享联系人文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
+* 如果该应用程序具有应用程序权限，或者
+* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
 
 
 ## <a name="permissions"></a>权限
@@ -33,17 +33,18 @@ ms.locfileid: "29530116"
 |应用程序 | Contacts.Read、Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->[联系人](../resources/contact.md)在用户的邮箱。
+<!-- { "blockType": "ignored" } -->
+用户邮箱中的[联系人](../resources/contact.md)。
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-[联系人](../resources/contact.md)从用户的顶级[contactFolder](../resources/contactfolder.md) 。
+来自用户的顶级[contactFolder](../resources/contactfolder.md)的[联系人](../resources/contact.md)。
 ```http
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-[contactFolder](../resources/mailfolder.md) 的子文件夹中包含的 [联系人](../resources/contact.md)。下面的示例显示了一个嵌套级别，但联系人可能位于子级的子级中，诸如此类。
+[contactFolder](../resources/contact.md) 的子文件夹中包含的 [联系人](../resources/mailfolder.md)。  下面的示例显示了一个嵌套级别，但联系人可能位于子级的子级中，诸如此类。
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
@@ -51,7 +52,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="optional-query-parameters"></a>可选的查询参数
 |Name|值|说明|
 |:---------------|:--------|:-------|
-|$expand|string|要在响应中扩展和添加的关系（以逗号分隔的列表）。 查看关系的[联系人](../resources/contact.md)对象所支持的名称。 |
+|$expand|string|要在响应中扩展和添加的关系（以逗号分隔的列表）。 有关受支持的名称, 请参阅[contact](../resources/contact.md)对象的关系表。 |
 |$select|string|要在响应中包括的属性的列表（以逗号分隔）。|
 
 ## <a name="request-headers"></a>请求标头

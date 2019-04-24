@@ -5,15 +5,13 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: ac037d2309246e8a2a7b4f763755fba77fbf8281
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518021"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457650"
 ---
 # <a name="list-educationusers"></a>列出 educationUsers
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索学校中的用户列表。
 
@@ -24,7 +22,7 @@ ms.locfileid: "29518021"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+|Application | EduRoster.Read.All、EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +49,7 @@ GET /education/schools/{id}/users
   "name": "get_users"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/schools/10002/users
+GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/users
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -108,15 +106,10 @@ Content-length: 593
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List users",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationschool-list-users.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

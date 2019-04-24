@@ -1,30 +1,30 @@
 ---
 title: plannerFavoritePlanReference 资源类型
-description: '**PlannerFavoritePlanReference**资源类型代表对由用户标记为收藏 plannerPlan 的引用。 '
+description: '**plannerFavoritePlanReference**资源类型代表对已标记为用户收藏的 plannerPlan 的引用。 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 77a931a882cc4b01725bd8ceb0ae6bcc721a9013
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518385"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457097"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>plannerFavoritePlanReference 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerFavoritePlanReference**资源类型代表对由用户标记为收藏[plannerPlan](plannerplan.md)的引用。 客户端应注意**plannerFavoritePlanReference**条目可以引用**plannerPlans**的被删除，用户不再可以访问，或已更新具有不同的标题。
+**plannerFavoritePlanReference**资源类型代表对已标记为用户收藏的[plannerPlan](plannerplan.md)的引用。 客户端应注意, **plannerFavoritePlanReference**条目可以引用已删除的**plannerPlans** 、用户无法再访问或已使用其他标题进行更新。
 
-我们建议客户端差异时通知用户，并保持最新条目。
+我们建议客户端在存在差异时通知用户, 并将这些条目保持为最新。
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
-|orderHint|String|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](planner-order-hint-format.md)定义中。|
-|planTitle|String|用户将其标记为收藏时计划的标题。|
+|orderHint|字符串|用于为列表视图中的此类型项目排序的提示。此格式在[使用规划器中的排序提示](planner-order-hint-format.md)定义中。|
+|planTitle|字符串|用户将其标记为收藏时计划的标题。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

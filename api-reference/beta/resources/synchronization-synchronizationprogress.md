@@ -1,28 +1,28 @@
 ---
 title: synchronizationProgress 资源类型
-description: 代表完成 synchronizationJob 的进度。
+description: 表示 synchronizationJob 的进度向完成。
 localization_priority: Normal
 ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640068"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453955"
 ---
 # <a name="synchronizationprogress-resource-type"></a>synchronizationProgress 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表完成[synchronizationJob](synchronization-synchronizationjob.md)的进度。
+表示[synchronizationJob](synchronization-synchronizationjob.md)的进度向完成。
 
 ## <a name="properties"></a>属性
 
-| 属性                              | 类型      | 说明    |
+| 属性                              | 类型      | 描述    |
 |:--------------------------------------|:----------|:---------------|
-|completedUnits|Int32|进度比例; 分子已处理的更改的单位数。|
-|progressObservationDateTime|DateTimeOffset|进度观察值作为偏移量，以分钟为单位从 UTC 时间。|
-|totalUnits|Int32|进度比例; 分母处理以完成同步更改的单位数。|
-|单位|String|单位的可选说明。|
+|completedUnits|Int32|进度比率的分子;已处理的更改的单位数。|
+|progressObservationDateTime|DateTimeOffset|进度观察的时间, 作为从 UTC 的偏移量 (以分钟为单位)。|
+|totalUnits|Int32|进度比率的分母;要处理的用于完成同步的更改的多个单元。|
+|units|字符串|单位的可选说明。|
 
 <!-- The troubleshootingUrl property is missing a description -->
 

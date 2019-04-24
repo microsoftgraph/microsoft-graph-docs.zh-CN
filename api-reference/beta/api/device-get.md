@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b6b0bc325620a27d9383b4a12d5f3da970c0c267
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515970"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455280"
 ---
 # <a name="get-device"></a>获取设备
 
@@ -17,7 +17,7 @@ ms.locfileid: "29515970"
 
 获取 device 对象的属性和关系。
 
-由于**设备**资源支持[扩展](/graph/extensibility-overview)，您还可以使用`GET`操作来获取**设备**实例中的自定义属性和扩展数据。
+由于**设备**资源支持[扩展](/graph/extensibility-overview), 因此您还可以使用此`GET`操作获取**设备**实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -27,7 +27,7 @@ ms.locfileid: "29515970"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
+|Application | Device.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

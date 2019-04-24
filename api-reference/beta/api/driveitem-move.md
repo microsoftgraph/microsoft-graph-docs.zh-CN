@@ -6,15 +6,13 @@ title: 移动文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 18bd8493babed354576c5b8066b3bab5de537e65
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482033"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454333"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到一个新的文件夹
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 **parentReference**。
 
@@ -65,7 +63,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 本示例将 {item-id} 指定的项目移动到用户驱动器中 ID 为 `new-parent-folder-id` 的文件夹中。
 
-<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -73,7 +71,7 @@ Content-type: application/json
 
 {
   "parentReference": {
-    "id": "new-parent-folder-id"
+    "id": "{new-parent-folder-id}"
   },
   "name": "new-item-name.txt"
 }
@@ -107,15 +105,10 @@ Content-type: application/json
 
 [error-response]: /graph/errors
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Move an item to another location or rename the item.",
   "keywords": "move,rename,mv,change location",
   "section": "documentation",
-  "tocPath": "Items/Move",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-move.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Move"
+} -->

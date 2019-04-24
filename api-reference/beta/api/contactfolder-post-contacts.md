@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 3fd45ee7f77e2d485b7a972b8454807368796226
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528058"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455672"
 ---
 # <a name="create-contact"></a>创建联系人
 

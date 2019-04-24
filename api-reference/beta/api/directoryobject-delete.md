@@ -1,21 +1,21 @@
 ---
 title: 删除 directoryObject
-description: 删除 directoryObject
+description: 删除 directoryObject。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 63e9d4574c505158171c93fd7ac9dc51678c7d2b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507717"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455091"
 ---
 # <a name="delete-directoryobject"></a>删除 directoryObject
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除 directoryObject
+删除 directoryObject。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -24,9 +24,9 @@ ms.locfileid: "29507717"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
-**注意：** 用户、 组和联系人是目录对象的类型。 因此，如果您需要删除用户，则以下权限将可以应使用： User.ReadWrite.All
+**注意：** 用户、组和联系人是 directory 对象的类型。 因此, 如果需要删除用户, 可以且应使用以下权限: User. ReadWrite。 All
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http

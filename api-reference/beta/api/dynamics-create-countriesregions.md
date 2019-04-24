@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: a78ba9ce04dc1b9a5a39cf9e742de7503afc9c3f
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365407"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454130"
 ---
 # <a name="create-countriesregions"></a>创建 countriesRegions
 在 Dynamics 365 Business Central 中创建一个 countriesRegions 对象。
@@ -23,7 +23,7 @@ ms.locfileid: "30365407"
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
 |委派 (个人 Microsoft 帐户|不支持。|
-|应用程序|Financials.ReadWrite.All|
+|Application|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```

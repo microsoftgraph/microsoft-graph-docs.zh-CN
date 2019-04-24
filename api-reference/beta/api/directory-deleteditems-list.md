@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 72a7e810f26b281158cc83c91627d6abf7982301
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517433"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455196"
 ---
 # <a name="list-deleted-items"></a>列出已删除的项目
 
@@ -22,8 +22,8 @@ ms.locfileid: "29517433"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 用户： User.Read.All Directory.Read.All、 User.ReadWrite.All、 Directory.AccessAsUser.All
-* 组： Group.Read.All Directory.Read.All、 Group.ReadWrite.All、 Directory.AccessAsUser.All
+* 对于用户: directory.accessasuser.all、全部、全部读取、全部、全部、全部、全部、目录
+* 对于 groups: group. all、directory.accessasuser.all、Group 写 all、all、all。 all
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /directory/deletedItems/microsoft.graph.user
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
-| Accept  | application/json |
+| 接受  | application/json |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

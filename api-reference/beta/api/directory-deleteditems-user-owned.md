@@ -1,23 +1,23 @@
 ---
-title: Permissions
-description: '检索列表的、 由指定用户拥有的最近已删除项目。  '
+title: 权限
+description: '检索指定用户拥有的最近删除的项目的列表。  '
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f02d6dccd005696c130c6bb4a1f42c603943e5c8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960565"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455063"
 ---
-# <a name="list-deleted-items-owned-by-a-user"></a>**由用户拥有的删除列表项**
+# <a name="list-deleted-items-owned-by-a-user"></a>**列出用户拥有的已删除项目**
 
-检索列表的、 由指定用户拥有的最近已删除项目。  
+检索指定用户拥有的最近删除的项目的列表。  
 
-目前，删除列表项功能的用户所拥有的[group](../resources/group.md)资源仅支持。
+目前, 列出已删除项目仅支持用户拥有的[组](../resources/group.md)资源的功能。
 
-这是服务操作，这意味着它不支持分页。  API 返回多达 1,000 个用户，按 ID 排序所拥有的已删除的对象  应用户拥有 1,000 个或多个删除对象，该 API 返回 nothing。
+这是一个服务操作, 这意味着它不支持分页。  API 返回最大为1000个已删除的对象, 这些对象归用户所有, 按 ID 排序。  如果用户拥有1000或更多删除的对象, API 将返回 nothing。
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +27,7 @@ ms.locfileid: "27960565"
 | --- | --- |
 | 委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） |  不支持。 |
-| 应用程序 | Group.Read.All、Group.ReadWrite.All  |
+| Application | Group.Read.All、Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,7 +37,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 ## <a name="request-headers"></a>请求标头
 
-| **名称**      | **Description**           |
+| **名称**      | **说明**           |
 | ------------- | ------------------------- |
 | Authorization | Bearer {token}。必需。 |
 
@@ -50,16 +50,16 @@ POST /directory/deletedItems/getUserOwnedObjects
 }
 ```
 
-在请求正文需要以下参数：
+请求正文需要以下参数:
 
-| 参数    | 类型 |说明|
+| 参数    | 类型 |描述|
 |:---------------|:--------|:----------|
 |userId|String|所有者的 ID。|
-|type|字符串|要返回; 的拥有对象的类型`Group`目前唯一受支持的值。|
+|类型|字符串|要返回的所拥有的对象的类型;`Group`目前是唯一受支持的值。|
 
 ## <a name="response"></a>响应
 
-成功的请求返回`200 OK`响应代码;响应对象包含[目录 （已删除项）](../resources/directory.md)的属性。
+成功的请求`200 OK`返回响应代码;response 对象包括[目录 (已删除项目)](../resources/directory.md)属性。
 
 ## <a name="example"></a>示例
 
@@ -81,7 +81,7 @@ Content-type: application/json
 
 ###### <a name="response"></a>响应
 
-下面是一个响应示例。 注意： 为了简单起见，此响应对象可能被截断。 从实际的调用返回所有支持的属性。
+下面是一个响应示例。 注意: 为简洁起见, 可能会截断此响应对象。 所有受支持的属性都从实际调用返回。
 
 ``` http
 HTTP/1.1 200

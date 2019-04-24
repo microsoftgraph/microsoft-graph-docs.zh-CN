@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1337527b7be6c8cc7f2b52f37a1698d61fa9b842
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789611"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454797"
 ---
 # <a name="update-a-directory-setting"></a>更新目录设置
 
@@ -26,7 +26,7 @@ ms.locfileid: "30789611"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ PATCH /groups/{id}/settings/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 
 
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 | 值 | [settingValue](../resources/settingvalue.md)集合 | 更新的值集。注意：必须提供整个集合组。无法更新单个值集合。 |
 

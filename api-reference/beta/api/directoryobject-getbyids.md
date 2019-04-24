@@ -1,15 +1,15 @@
 ---
 title: 获取 ID 列表中的目录对象
-description: 选择查询选项不适用于此操作。
+description: select` 查询选项不适用于此操作。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 7c76335889f336af6098eb00740085b40614c1ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512225"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455175"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>获取 ID 列表中的目录对象
 
@@ -31,7 +31,7 @@ ms.locfileid: "29512225"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All |
+|Application | Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -52,10 +52,10 @@ POST /directoryObjects/getByIds
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数   | 类型 |说明|
+| 参数   | 类型 |描述|
 |:---------------|:--------|:----------|
 |ids|String collection| 要返回其对象的 ID 集合。最多可以指定 1000 个 ID。 |
-|types|String collection| 指定一组资源集搜索的资源类型的集合。 如果未指定，则默认为[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)，其中包含所有目录中定义的资源类型。 可能集合中的指定派生自[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)任何对象例如：[用户](/graph/api/resources/user?view=graph-rest-beta)、[组](/graph/api/resources/group?view=graph-rest-beta)、[设备](/graph/api/resources/device?view=graph-rest-beta)，等等。 若要搜索引用[云解决方案提供商](https://partner.microsoft.com/en-us/cloud-solution-provider)合作伙伴组织指定[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)。 如果未指定，则默认为[directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)，其中包含所有目录，除引用[云解决方案提供商](https://partner.microsoft.com/en-us/cloud-solution-provider)合作伙伴组织中定义的资源类型。 值不区分大小写。|
+|types|String collection| 指定要搜索的资源集合集的资源类型集合。 如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)，其包含目录中定义的所有资源类型。 可以在该集合中指定派生自 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) 的任何对象，例如：[user](/graph/api/resources/user?view=graph-rest-beta)、[group](/graph/api/resources/group?view=graph-rest-beta)、[device](/graph/api/resources/device?view=graph-rest-beta) 等。 若要搜索对[云解决方案提供商](https://partner.microsoft.com/en-us/cloud-solution-provider)合作伙伴组织的引用 ，请指定[directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta)。 如果未指定，则默认为 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)，其包含目录中定义的所有资源类型，对[云解决方案提供商](https://partner.microsoft.com/en-us/cloud-solution-provider)合作伙伴组织的引用除外。 这些值不区分大小写。|
 
 ## <a name="response"></a>响应
 

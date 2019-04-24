@@ -1,19 +1,17 @@
 ---
 title: 获取 educationClass
-description: "  组管理员表示教师类中。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。"
+description: "  组管理员代表课程中的教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。"
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 148725d58d5647a85061f3b781e26cec2cb1c816
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509369"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457884"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从系统检索课程。 课程是带特殊属性的通用组，向系统表明该组是课程。 组成员表示学生；组管理员代表课程教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。
 
@@ -24,7 +22,7 @@ ms.locfileid: "29509369"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduRoster.ReadBasic  |
 |委派（个人 Microsoft 帐户） |  不支持  |
-|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+|Application | EduRoster.Read.All、EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +49,7 @@ GET /education/classes/{id}
   "name": "get_educationclass"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/classes/11023
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -88,15 +86,10 @@ Content-length: 224
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationclass-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

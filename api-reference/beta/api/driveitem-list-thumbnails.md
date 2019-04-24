@@ -6,11 +6,11 @@ title: 检索文件或文件夹的缩略图
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 68c1adf275a6a8720aab4df638f69c7162e301a6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481312"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454375"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -108,9 +108,9 @@ Content-type: application/json
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 ```
 
-### <a name="path-parameters"></a>Path 参数
+### <a name="path-parameters"></a>路径参数
 
-| 名称         | 类型   | 说明                                                                              |
+| 名称         | 类型   | 描述                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | 引用的项目的唯一标识符。                                           |
 | **thumb-id** | 数字 | 缩略图的索引，通常介于 0 到 4 之间。 如果没有自定义缩略图，索引为 0。 |
@@ -212,7 +212,7 @@ Content-type: application/json
 
 下表定义了可能的缩略图大小。虽然可以请求任意的缩略图大小，但可能存在定义的有并迅速返回值：
 
-| 名称           | 解决方案  | 纵横比 | 说明                                                          |
+| 名称           | 解决方案  | 纵横比 | 描述                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
 | `small`        | 96 longest  | 原始大小     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
 | `medium`       | 176 longest | 原始大小     | 裁剪为 OneDrive Web 视图的标准项目大小。         |

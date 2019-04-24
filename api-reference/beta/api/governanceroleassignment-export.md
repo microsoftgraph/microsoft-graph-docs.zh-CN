@@ -1,45 +1,46 @@
 ---
 title: 导出 governanceRoleAssignmentRequests
-description: 检索的格式 governanceRoleAssignmentRequests 集合`application/octet-stream`，其中可以解析为浏览器中的.csv 文件。
+description: 以格式`application/octet-stream`检索 governanceRoleAssignmentRequests 的集合, 可以在浏览器中将其解析为 .csv 文件。
 localization_priority: Normal
 ms.openlocfilehash: 82c36f176dfed1a4a848c045ce3274e1152bb953
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522425"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457173"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>导出 governanceRoleAssignmentRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的格式[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)集合`application/octet-stream`，其中可以解析为浏览器中的.csv 文件。
+以格式`application/octet-stream`检索[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合, 可以在浏览器中将其解析为 .csv 文件。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess.ReadWrite.AzureResources |
+|Application | PrivilegedAccess AzureResources |
 
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->导出[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)对资源的集合
+<!-- { "blockType": "ignored" } -->
+导出资源的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)集合
     
->**注意：** 除了权限范围，该请求需要具有至少一个角色分配对资源的请求程序。 
+>**注意:** 除了权限范围之外, 此请求还要求请求者在资源上至少有一个角色分配。 
     
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
 ```
 
-导出的我的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)集合
+导出地雷的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)集合
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq+'{myId}'
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -50,10 +51,10 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和内容类型的`application/octet-stream`。
+如果成功, 此方法将`200 OK`返回响应代码和类型`application/octet-stream`的内容。
 
 ## <a name="example"></a>示例
-本示例保存为.csv 文件订阅 Wingtip Toys-prod 移中的所有角色分配。 
+本示例将所有角色分配作为 .csv 文件保存在订阅 Wingtip 玩具-生产中。 
 
 ##### <a name="request"></a>请求
 ```http

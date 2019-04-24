@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 272a1e5f7bf1df1c9e16b2239caeee94cc81f12d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790632"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453993"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>windowsInformationProtectionDataRecoveryCertificate 资源类型
 
@@ -20,10 +20,10 @@ ms.locfileid: "31790632"
 Windows 信息保护 DataRecoveryCertificate
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |SubjectName|String|数据恢复证书主题名称|
-|description|String|数据恢复证书说明|
+|description|字符串|数据恢复证书说明|
 |expirationDateTime|DateTimeOffset|数据恢复证书过期日期/时间|
 |证书|Binary|数据恢复证书|
 

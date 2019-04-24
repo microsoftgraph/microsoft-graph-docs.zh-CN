@@ -6,15 +6,13 @@ title: 复制文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: cdb22395cfde6820eb5450f39bd1e3408a4f82b2
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481900"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454559"
 ---
 # <a name="copy-a-driveitem"></a>复制 DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 以异步方式在新父项下或使用新名称创建一个 [driveItem][item-resource] 副本（包括任何子项）。
 
@@ -45,7 +43,7 @@ POST /users/{userId}/drive/items/{itemId}/copy
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 
-| 名称            | 值                                          | 说明                                                                                                 |
+| Name            | 值                                          | 说明                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | 可选。引用在其中创建副本的父项。                                         |
 | name            | string                                         | 可选。副本的新名称。如果未提供新名称，将同一名称用作原始名称。    |
@@ -57,7 +55,7 @@ POST /users/{userId}/drive/items/{itemId}/copy
 本示例将由 `{item-id}` 标识的文件复制到使用 `driveId` 和 `id` 值标识的文件夹。
 该文件的新副本将被命名为 `contoso plan (copy).txt`。
 
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
 
 ```http
 POST /me/drive/items/{item-id}/copy
@@ -91,15 +89,10 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
 
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-copy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Copy"
+} -->

@@ -1,25 +1,25 @@
 ---
 title: meetingInfo 资源类型
-description: 会议指定要创建或加入会议的信息。
+description: 指定用于创建或加入会议的会议信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c1126a3408b8353e927b5653fe60dd4a89125051
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509355"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457135"
 ---
 # <a name="meetinginfo-resource-type"></a>meetingInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-会议指定要创建或加入会议的信息。
+指定用于创建或加入会议的会议信息。
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型    | 说明|
+| 属性       | 类型    | 描述|
 |:---------------|:--------|:----------|
 | allowConversationWithoutHost | Boolean |  |
 

@@ -1,23 +1,23 @@
 ---
-title: 列表目录设置
+title: 列出目录设置
 description: 检索目录设置对象的列表。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 708faad9dc90bf5f79f89d72b381391843371766
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515935"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454825"
 ---
-# <a name="list-directory-settings"></a>列表目录设置
+# <a name="list-directory-settings"></a>列出目录设置
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索目录设置对象的列表。
 
-> **注意**： 此 API 的 /beta 版本才适用于组。 此 API 的 /v1.0 版本已被重命名为*列表 groupSettings*。
+> **注意**: 此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*List groupSettings*。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,8 @@ ms.locfileid: "29515935"
 |应用程序 | Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->列出租户范围或组设置
+<!-- { "blockType": "ignored" } -->
+列出租户范围或组设置
 ```http
 GET /settings
 GET /group/{id}/settings
@@ -47,7 +48,7 @@ GET /group/{id}/settings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[directorySetting](../resources/directorysetting.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[directorySetting](../resources/directorysetting.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -1,23 +1,23 @@
 ---
-title: 将文件上载到 educationSynchronizationProfile 后启动同步
-description: 验证文件上载到租户中的特定学校数据同步配置文件。 如果验证操作成功，将配置文件上启动同步。 否则，响应将包含错误和警告。 如果响应中包含错误，将不会启动同步。 如果则响应中包含仅警告，将启动同步。
+title: 将文件上传到 educationSynchronizationProfile 后开始同步
+description: 验证是否已将文件上载到租户中的特定学校数据同步配置文件。 如果验证成功, 将在配置文件上启动同步。 否则, 响应中将包含错误和警告。 如果响应中包含错误, 同步将不会启动。 如果响应仅包含警告, 将启动同步。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 1447178e80d30058b415345aea83dce4390e6bcf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512351"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457418"
 ---
-# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上载到 educationSynchronizationProfile 后启动同步
+# <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>将文件上传到 educationSynchronizationProfile 后开始同步
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-验证文件上载到租户中特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。 如果验证操作成功，将配置文件上启动同步。 否则，响应将包含错误和警告。 如果响应中包含错误，将不会启动同步。 如果则响应中包含仅警告，将启动同步。
+验证是否已将文件上载到租户中的特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。 如果验证成功, 将在配置文件上启动同步。 否则, 响应中将包含错误和警告。 如果响应中包含错误, 同步将不会启动。 如果响应仅包含警告, 将启动同步。
 
-> **注意：** 仅当数据提供程序的类型[educationcsvdataprovider](../resources/educationcsvdataprovider.md)时，请使用此方法。 此外，需要设置之前可以启动配置文件的状态属性。 轮询要检查其状态属性的配置文件对象。
+> **注意:** 仅当数据提供程序的类型为[educationcsvdataprovider](../resources/educationcsvdataprovider.md)时, 才可使用此方法。 此外, 还需要先设置配置文件的 state 属性, 然后才能启动该属性。 轮询配置文件对象以检查其状态属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,8 +25,8 @@ ms.locfileid: "29512351"
 | 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /synchronizationProfiles/{id}/start
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 OK` 响应代码。 如果不成功，则返回`400 Bad Request`。 如果找到任何错误或警告则响应中包含的响应正文一部分[educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md)对象的集合。
+如果成功，此方法返回 `200 OK` 响应代码。 如果不成功, 则返回`400 Bad Request`。 如果发现任何错误或警告, 响应将包含[educationFileSynchronizationVerificationMessage](../resources/educationfilesynchronizationverificationmessage.md)对象的集合作为响应正文的一部分。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

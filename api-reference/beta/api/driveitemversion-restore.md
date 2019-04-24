@@ -6,11 +6,11 @@ title: 还原以前的版本
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 74ac8e9913b1d199d9baa019de6ea32b38e3654f
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480549"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454291"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>还原 DriveItem 的以前版本
 

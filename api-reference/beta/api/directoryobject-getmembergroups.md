@@ -1,21 +1,21 @@
 ---
 title: 获取成员组
-description: 返回指定的用户、 组、 服务主体或目录对象是成员的所有组。 可传递此函数。
+description: 返回指定的用户、组、服务主体或目录对象所属的所有组。 此函数是可传递的。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 9ab73b691ed9cfa4c756e4f0134adf9df7350aae
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526170"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455098"
 ---
 # <a name="get-member-groups"></a>获取成员组
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回指定的用户、 组、 服务主体或目录对象是成员的所有组。 可传递此函数。
+返回指定的用户、组、服务主体或目录对象所属的所有组。 此函数是可传递的。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,7 +25,7 @@ ms.locfileid: "29526170"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All |
+|Application | Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /directoryObjects/{id}/getMemberGroups
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |描述|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组；**false** 指定应返回包含实体的所有组和目录角色。**注意**：如果参数为 **true**，只能对一位用户调用此函数。 |
 

@@ -1,23 +1,23 @@
 ---
-title: 列表 directorySettingTemplates
-description: 目录设置模板代表一组目录设置，从目录设置可能会创建和租户中使用的模板。  此操作检索可用的 directorySettingTemplates 对象的列表。
+title: 列出 directorySettingTemplates
+description: 目录设置模板代表目录设置的一组模板, 在租户中可以创建和使用目录设置。  此操作将检索可用的 directorySettingTemplates 对象的列表。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1cd0112bd0d9f98f969832427d497d6e9ba2aa14
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530102"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454769"
 ---
-# <a name="list-directorysettingtemplates"></a>列表 directorySettingTemplates
+# <a name="list-directorysettingtemplates"></a>列出 directorySettingTemplates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-目录设置模板代表一组目录设置，从目录设置可能会创建和租户中使用的模板。  此操作检索可用的 directorySettingTemplates 对象的列表。
+目录设置模板代表目录设置的一组模板, 在租户中可以创建和使用目录设置。  此操作将检索可用的 directorySettingTemplates 对象的列表。
 
-> **注意**： 此 API 的 /beta 版本才适用于组。 此 API 的 /v1.0 版本已被重命名为*列表 groupSettingTemplate*。
+> **注意**: 此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*List groupSettingTemplate*。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,7 +46,7 @@ GET /directorySettingTemplates
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[directorySettingTemplate](../resources/directorysettingtemplate.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[directorySettingTemplate](../resources/directorysettingtemplate.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

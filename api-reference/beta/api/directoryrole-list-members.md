@@ -1,21 +1,21 @@
 ---
 title: 列出成员
-description: 检索分配给目录角色的用户列表。只能将用户分配给目录角色。
+description: 检索分配给目录角色的用户列表。  只能将用户分配给目录角色。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4365408309a8d87387da76695257207f03bf5ce5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519575"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454790"
 ---
 # <a name="list-members"></a>列出成员
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索分配给目录角色的用户列表。只能将用户分配给目录角色。
+检索分配给目录角色的用户列表。  只能将用户分配给目录角色。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

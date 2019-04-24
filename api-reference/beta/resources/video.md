@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 视频
 localization_priority: Normal
 ms.openlocfilehash: 1e780c8392316be1f7fcc59f3818085dc462da29
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481592"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454021"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
 
@@ -46,7 +46,7 @@ ms.locfileid: "30481592"
 
 ## <a name="properties"></a>属性
 
-| 属性名称             | 类型   | 说明
+| 属性名称             | 类型   | 描述
 |:--------------------------|:-------|:----------------------------------------
 | **audioBitsPerSample**    | Int32  | 每个样本的音频位数。
 | **audioChannels**         | Int32  | 音频频道数。

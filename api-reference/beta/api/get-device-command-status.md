@@ -1,19 +1,19 @@
 ---
 title: 获取设备命令状态
-description: 获取设备上的命令的状态。 状态代码的完整列表，请参阅 actionStatus 的列表。
+description: 获取设备上命令的状态。 有关状态代码的完整列表, 请参阅 actionStatus 的列表。
 localization_priority: Normal
 ms.openlocfilehash: ae5fe1f2b6b48c0a739911bd20370562e8540f18
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510111"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457149"
 ---
 # <a name="get-device-command-status"></a>获取设备命令状态
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取设备上的命令的状态。 状态代码的完整列表，请参阅[actionStatus 的列表](#list-of-actionstatus)。
+获取设备上命令的状态。 有关状态代码的完整列表, 请参阅[actionStatus 的列表](#list-of-actionstatus)。
 
 ## <a name="permissions"></a>权限
 
@@ -23,7 +23,7 @@ ms.locfileid: "29510111"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。    |
 |委派（个人 Microsoft 帐户） | Device.Command    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -38,7 +38,7 @@ GET me/devices/{id}/commands/{id}
 | 标头 |值
 |:----|:------|
 |Authorization| Bearer {token}。必需。 |
-|Accept | application/json |
+|接受 | application/json |
 
 ## <a name="response"></a>响应
 <!-- { "blockType": "ignored" } -->
@@ -63,26 +63,26 @@ HTTP/1.1 200 OK
   }
 ```
 
-## <a name="list-of-actionstatus"></a>ActionStatus 的列表
+## <a name="list-of-actionstatus"></a>actionStatus 列表
 
-- 请求，/ / 命令已创建并正在等待处理
-- sentToTarget，/ / 命令已发送到目标设备
-- 执行 / / 目标设备确认收到该命令，并且正在执行它
-- 完成，/ / 命令执行完毕
-- failedToSend，/ / 服务未能发送到目标设备命令
-- executionFailed，/ / 命令执行失败
-- commandDropped，/ / 命令而丢弃客户端设备是否处于 ConnectedStandby 状态
-- 取消，/ / 取消命令
-- 正在取消，/ / 取消该命令
-- canceled、 / / 命令已被取消
-- 重试，/ / 服务正在重试发送到目标的命令
-- 过期，/ / 命令处理超过到期时间
-- 错误: / / 内部处理命令时的错误
-- 自定义 / / 自定义状态
+- 请求、//命令已创建, 正在等待处理
+- 已将 sentToTarget、//命令发送到目标设备
+- 正在执行、//目标设备确认了命令的接收并正在执行该命令
+- 已完成,//命令执行已完成
+- failedToSend,//服务无法将命令发送到目标设备
+- executionFailed,//命令执行失败
+- commandDropped、//设备处于 ConnectedStandby 状态时由客户端丢弃的命令
+- 取消、//取消命令
+- 取消、//取消命令
+- 已取消,//命令已取消
+- 重试,//服务正在重试将命令发送到目标
+- 已过期,//命令处理超过了过期时间
+- 处理命令时出现错误,//内部错误
+- 自定义//自定义状态
 
 ## <a name="example"></a>示例
 
-本示例中，您需要的设备 ID 和的命令的已颁发的设备 ID。 对的设备时发出 GET 返回 ID 调用`/me/devices`，并执行 POST 时，则返回 ID 的命令对调用`/me/devices/{id}/command`。
+在此示例中, 将需要设备的 id 以及已颁发给设备的命令的 id。 在发出对`/me/devices`的 GET 呼叫时, 将返回设备 ID, 并且在对`/me/devices/{id}/command`进行开机自检呼叫时返回命令 id。
 
 #### <a name="request"></a>请求
 
@@ -127,9 +127,9 @@ HTTP/1.1 200 OK
 ```
 
 
-## <a name="get-command-payload"></a>获取命令负载
+## <a name="get-command-payload"></a>获取命令有效负载
 
-获取响应负载设备上的特定操作。 响应负载用于查询应用程序服务时返回带数据。
+获取设备上特定操作的响应负载。 在查询应用程序服务以传送数据时, 将使用响应负载。
 
 
 ### <a name="permissions"></a>权限
@@ -140,7 +140,7 @@ HTTP/1.1 200 OK
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。    |
 |委派（个人 Microsoft 帐户） | Device.Command    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -155,7 +155,7 @@ GET me/devices/{id}/command/{id}/responsePayload
 | 标头 |值
 |:----|:------|
 |Authorization| Bearer {token}。必需。 |
-|Accept | application/json |
+|接受 | application/json |
 
 ### <a name="response"></a>响应
 <!-- { "blockType": "ignored" } -->
@@ -176,7 +176,7 @@ HTTP/1.1 200 OK
 
 ### <a name="example"></a>示例
 
-本示例中，您需要的设备 ID 和的命令的已颁发的设备 ID。 在呼叫的设备时发出 GET 返回 ID `/me/devices`，并执行 POST 时，则返回 ID 的命令对调用`/me/devices/{id}/command`。
+在此示例中, 将需要设备的 id 以及已颁发给设备的命令的 id。 在`/me/devices`发出 GET 呼叫时, 将返回设备 ID, 并在对`/me/devices/{id}/command`进行开机自检呼叫时返回命令 id。
 
 #### <a name="request"></a>请求
 

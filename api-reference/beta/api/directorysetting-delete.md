@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c66335ec863460c9b2167e25a7e78850846e105c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515823"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454860"
 ---
 # <a name="delete-a-directory-setting"></a>删除目录设置
 
@@ -17,7 +17,7 @@ ms.locfileid: "29515823"
 
 删除目录设置。
 
-> **注意**： 此 API 的 /beta 版本才适用于组。 此 API 的 /v1.0 版本已被重命名为*删除 groupSettings*。
+> **注意**: 此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*删除 groupSettings*。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,10 +26,11 @@ ms.locfileid: "29515823"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.ReadWrite.All |
+|Application | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->删除特定的租户范围或组设置
+<!-- { "blockType": "ignored" } -->
+删除特定的租户范围或组设置
 ```http
 DELETE /settings/{id}
 DELETE /groups/{id}/settings/{id}

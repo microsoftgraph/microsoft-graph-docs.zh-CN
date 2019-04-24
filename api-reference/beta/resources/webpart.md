@@ -6,17 +6,17 @@ title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 9c019da7cb10a8c26faa8d338c54436043f83db8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453607"
 ---
-# <a name="webpart-resource"></a>web 部件资源
+# <a name="webpart-resource"></a>webPart 资源
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Web 部件**资源表示类型和呈现[sitePage](sitepage.md)web 部件的信息。
+**webPart**资源表示[sitePage](sitepage.md)上的 web 部件的类型和呈现信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -37,18 +37,18 @@ ms.locfileid: "29640173"
 
 ## <a name="properties"></a>属性
 
-| 属性                | 类型             | 说明
+| 属性                | 类型             | 描述
 |:------------------------|:-----------------|:----------------------------------
-| **类型**                | String           | 指定 web 部件类型的唯一标识符。 只读。
-| **data**                | [sitePageData][] | 所需的 web 部件 （随 web 部件） 属性
+| **类型**                | 字符串           | 指定 web 部件类型的唯一标识符。 只读。
+| **data**                | [sitePageData][] | web 部件的必需属性 (因 web 部件而异)
 
 [sitePageData]: sitepagedata.md
 
-## <a name="remarks"></a>注释
+## <a name="remarks"></a>备注
 
-Web 部件可以定义在**数据**下自己所需的属性。
+Web 部件可以在**data**下定义自己的必需属性。
 
-有关页面的详细信息，请参阅[sitePage](sitepage.md)。
+有关页面的详细信息, 请参阅[sitePage](sitepage.md)。
 <!--
 {
   "type": "#page.annotation",

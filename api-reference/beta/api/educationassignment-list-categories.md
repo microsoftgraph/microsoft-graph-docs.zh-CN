@@ -5,11 +5,11 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 925b2f558b98e50cfcebd7b68c3af52452f2e3df
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800968"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458234"
 ---
 # <a name="list-categories"></a>列出类别
 
@@ -24,7 +24,7 @@ ms.locfileid: "30800968"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | 不支持。 | 
+|Application | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +32,7 @@ ms.locfileid: "30800968"
 GET /education/classes/{id}/assignments/{id}/categories
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |

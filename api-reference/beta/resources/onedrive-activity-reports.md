@@ -1,21 +1,21 @@
 ---
 title: OneDrive 活动报表
-description: 您可以获取许可使用 OneDrive 看它们与 OneDrive 上的文件的交互的每个用户的活动。 此外可帮助您了解协作事通过显示共享的文件数的级别。
+description: 您可以通过查看其与 onedrive 上的文件的交互, 获取获得使用 onedrive 的每个用户的活动。 它还可帮助您了解通过显示共享文件数而进行的协作级别。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: d545f1d92beee89e19eb47cfd8c6ba8c391c5349
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574003"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457093"
 ---
 # <a name="onedrive-activity-reports"></a>OneDrive 活动报表
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以获取许可使用 OneDrive 看它们与 OneDrive 上的文件的交互的每个用户的活动。 此外可帮助您了解协作事通过显示共享的文件数的级别。
+您可以通过查看其与 onedrive 上的文件的交互, 获取获得使用 onedrive 的每个用户的活动。 它还可帮助您了解通过显示共享文件数而进行的协作级别。
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - OneDrive for Business 活动](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353)。
 

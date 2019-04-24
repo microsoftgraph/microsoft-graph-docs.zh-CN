@@ -5,11 +5,11 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e71d7c8c6489d5856e5f2441cd93c7fdea033bd4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524287"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457142"
 ---
 # <a name="meetingcapability-resource-type"></a>meetingCapability 资源类型
 
@@ -19,10 +19,10 @@ ms.locfileid: "29524287"
 
 ## <a name="properties"></a>属性
 
-| 属性                          | 类型    | 说明                                                        |
+| 属性                          | 类型    | 描述                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| allowAnonymousUsersToDialOut      | Boolean | 指示是否在会议中允许匿名用户拨出。 |
-| allowAnonymousUsersToStartMeeting | Boolean | 指示是否允许匿名用户开始会议。  |
+| allowAnonymousUsersToDialOut      | Boolean | 指示是否允许在会议中拨出匿名用户。 |
+| allowAnonymousUsersToStartMeeting | Boolean | 指示是否允许匿名用户启动会议。  |
 | autoAdmittedUsers                 | String  | 可取值为：`everyoneInCompany`、`everyone`。              |
 
 ## <a name="json-representation"></a>JSON 表示形式

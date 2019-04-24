@@ -2,17 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 可恢复的文件上载
+title: 可恢复的文件上传
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: b0495a0c63400d6476c1ad9312e708b9ac880e42
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482390"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454438"
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>通过上载会话上载大文件
+# <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,7 +57,8 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 无需请求正文。
 但是, 可以在请求正文中指定属性, 提供有关要上载的文件的其他数据, 并自定义上传操作的语义。
 
-例如, `item`属性允许设置以下参数:<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+例如, `item`属性允许设置以下参数:
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
   "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
@@ -82,21 +83,21 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 | 名称       | 值 | 说明                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | 如果包含此请求标头, 且提供的 eTag (或 cTag) 与项目中的当前 etag 不匹配, 则`412 Precondition Failed`返回错误响应。 |
+| *if-match* | etag  | 如果包含此请求标头，且提供的 eTag（或 cTag）与项目中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 错误响应。 |
 
 ## <a name="parameters"></a>参数
 
-| 参数            | 类型                          | 说明
+| 参数            | 类型                          | 描述
 |:---------------------|:------------------------------|:---------------------------------
 | 项                 | driveItemUploadableProperties | 有关要上载的文件的数据
 | deferCommit          | Boolean                       | 如果设置为 true, 则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for business 上。
 
 ## <a name="item-properties"></a>项目属性
 
-| 属性             | 类型               | 说明
+| 属性             | 类型               | 描述
 |:---------------------|:-------------------|:---------------------------------
-| 说明          | String             | 提供项的用户可见的说明。 读写。 仅适用于 OneDrive 个人版。
-| name                 | 字符串             | 项目名称（文件名和扩展名）。读写。
+| 说明          | 字符串             | 提供项的用户可见的说明。 读写。 仅适用于 OneDrive 个人版。
+| name                 | String             | 项目名称（文件名和扩展名）。读写。
 
 ### <a name="request"></a>请求
 
@@ -138,20 +139,20 @@ Content-Type: application/json
 
 ## <a name="upload-bytes-to-the-upload-session"></a>将字节上传到上传会话
 
-若要上传文件或文件的一部分，你的应用程序可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。
-你可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 60 MiB 即可。
+若要上传文件或文件的一部分，你的应用可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。
+可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 60 MiB 即可。
 
-必须按顺序上传文件的段落。
+必须按顺序上传文件的片段。
 不按顺序上载文件的片段将导致错误。
 
-**注意：** 如果应用程序将一个文件拆分成多个字节范围，则每个字节范围的大小**必须**是 320 KiB 的倍数（327,680 个字节。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
+**注意：** 如果应用将一个文件拆分为多个字节范围，则每个字节范围的大小**必须**是 320 KiB（327,680 个字节）的倍数。 如果使用的片断大小不能被 320 KiB 整除，会导致在提交某些文件时出错。
 
 ### <a name="example"></a>示例
 
-在本示例中，应用程序将上传 128 字节大小的文件中的前 26 个字节。
+在本示例中，应用将上传 128 字节大小的文件中的前 26 个字节。
 
 * **Content-Length** 标头指定当前请求的大小。
-* **Content-Range** 标头指定此请求表示的整个文件中的字节范围。
+* **Content-Range** 标头指示此请求表示的整个文件中的字节范围。
 * 要先知道文件的总长度，然后才可以上传文件的第一个片段。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-piece", "scopes": "files.readwrite" } -->
@@ -164,7 +165,7 @@ Content-Range: bytes 0-25/128
 <bytes 0-25 of the file>
 ```
 
-**重要说明：** 应用程序必须确保 **Content-Range** 标头中指定的文件总大小对于所有的请求都相同。
+**重要说明：** 应用必须确保 **Content-Range** 标头中指定的文件总大小对于所有的请求都相同。
 如果某字节范围声明有不同的文件大小，则请求将失败。
 
 ### <a name="response"></a>响应
@@ -183,11 +184,11 @@ Content-Type: application/json
 }
 ```
 
-应用程序可以使用 **nextExpectedRanges** 值来确定开始上传下一字节范围的位置。
+应用可以使用 **nextExpectedRanges** 值来确定开始上传下一字节范围的位置。
 可能会发现指定了多个范围，这些范围指明了服务器尚未收到的文件部分。 如果需要恢复中断的传输，并且客户端不能确定服务的状态，这个方法很有用。
 
 始终都应根据以下最佳实践确定字节范围大小。 请勿假定 **nextExpectedRanges** 将返回大小范围正确的上传字节范围。
-**nextExpectedRanges** 属性指定尚未收到的文件的范围，而不是应用程序应上传文件的方式。
+**nextExpectedRanges** 属性指示尚未收到的文件的范围，而不是应用应上传文件的方式。
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 
@@ -204,10 +205,10 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 * `nextExpectedRanges` 属性不会总是列出所有缺少的范围。
-* 成功写入片段时，它将返回下一个开始范围（例如，“523-”）。
+* 成功写入片段时，它将返回下一个开始范围（例如，"523-"）。
 * 如果因客户端发送了服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。可以 [请求上载状态](#resuming-an-in-progress-upload) 以获取缺少范围的详细列表。
 * 在发出 `PUT` 调用时添加授权标头可能会导致 `HTTP 401 Unauthorized` 响应。只能在第一步中发出 `POST` 时发送授权标头和持有者令牌。不得在发出 `PUT` 时添加授权标头。
 
@@ -217,7 +218,7 @@ Content-Type: application/json
 如果`deferCommit`为 true, 则在将文件的最后一个字节范围放入上载 url 后, 应将最后一个 POST 请求显式完成上传到包含零长度内容的上载 url。
 
 上载完成后, 服务器将使用或`HTTP 201 Created` `HTTP 200 OK`发出响应最终请求。
-响应正文还将包括 **driveItem** 的默认属性集，用来表示已完成的文件。
+响应正文还会包括 **driveItem** 的默认属性集，用来表示已完成的文件。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->
 
@@ -349,7 +350,7 @@ Content-Type: application/json
 若要显式提交上传会话，应用必须使用将用来提交上传会话的新 **driveItem** 资源发出 PUT 请求。
 此新请求应纠正生成原始上传错误的错误根源。
 
-若要指示应用程序提交现有上传会话，PUT 请求必须包含 `@microsoft.graph.sourceUrl` 属性以及上传会话 URL 的值。
+若要指示应用提交现有上传会话，PUT 请求必须包含 `@microsoft.graph.sourceUrl` 属性以及上传会话 URL 的值。
 
 <!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 

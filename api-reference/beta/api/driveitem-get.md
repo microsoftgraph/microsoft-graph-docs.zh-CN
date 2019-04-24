@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取文件或文件夹
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 578d7bcbba51876390f9e0134d3c589d64b51e81
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480451"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454417"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过文件系统路径或 ID 在[驱动器](../resources/drive.md)中检索 [DriveItem](../resources/driveitem.md) 的元数据。
 
@@ -67,7 +65,7 @@ GET /users/{userId}/drive/root:/{item-path}
 
 下面是用户的 OneDrive 的根文件夹请求示例。
 
-<!-- { "blockType": "request", "name": "get-item-metadata" }-->
+<!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root
@@ -109,7 +107,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 请参阅[错误响应][error-response]，详细了解错误返回方式。
 
@@ -118,15 +116,10 @@ Content-type: application/json
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Items/Get item",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Get item"
+} -->

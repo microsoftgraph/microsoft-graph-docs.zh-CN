@@ -6,11 +6,11 @@ title: 下载早期版本
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 13ff0148980d7331e713334d9f40df5ade33a259
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481480"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454249"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>下载 DriveItemVersion 资源的内容（预览版）
 

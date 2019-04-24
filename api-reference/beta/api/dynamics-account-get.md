@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 2f9d18867474a637ea1f44ef7046d2b476edd47a
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365330"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454235"
 ---
 # <a name="get-accounts"></a>获取帐户
 检索 Dynamics 365 Business Central 的 account 对象的属性和关系。
@@ -23,7 +23,7 @@ ms.locfileid: "30365330"
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
 |委派 (个人 Microsoft 帐户|不支持。|
-|应用程序|Financials.ReadWrite.All|
+|Application|Financials.ReadWrite.All|
 
 
 ## <a name="http-request"></a>HTTP 请求

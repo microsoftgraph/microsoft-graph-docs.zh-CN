@@ -6,11 +6,11 @@ title: 转换为其他格式
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: c3761525d0acbd5613a71519d9ebd56ab8475f03
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481823"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454424"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
@@ -19,7 +19,7 @@ ms.locfileid: "30481823"
 使用此 API 检索特定格式的项的内容。
 并非所有文件都可转换成全部格式。
 
-若要下载其原始格式的项目, 请参阅[下载项目的内容](driveitem-get-content.md)。
+若要下载原始格式的项目，请参阅[下载项内容](driveitem-get-content.md)。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -41,7 +41,7 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _format_  | string | 指定应以何种格式下载项内容。 |
 
 
-以下是**format**参数的有效值:
+以下值对于 **format** 参数有效：
 
 | 值 | 说明                        | 支持的源扩展名
 |:------|:-----------------------------------|---------------------------------

@@ -6,11 +6,11 @@ title: 签入文件
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: ea8d4b8ec5399e867bd94c261ce95783f8ea27ba
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481074"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454573"
 ---
 # <a name="check-in-changes-to-a-driveitem-resource"></a>签入对 DriveItem 资源的更改
 
@@ -45,7 +45,7 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 在请求正文中，提供具有以下参数的 JSON 对象。
 
 
-|   名称    | 值  |                                                说明                                                |
+|   Name    | 值  |                                                说明                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
 | checkInAs | 字符串 | 可选。 完成签入操作后文档的所需状态。 可以是 `published` 或未指定。 |
 | comment   | string | 与此版本相关联的签入注释。                                                   |

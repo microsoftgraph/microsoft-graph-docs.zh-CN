@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3e52555d8ac9b010028ee3bc716255db8a563e73
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250955"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456988"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>windowsFirewallNetworkProfile 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "30250955"
 Windows 防火墙配置文件策略。
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |firewallEnabled|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|将主机设备配置为允许或阻止网络配置文件的防火墙和高级安全强制实施。 可取值为：`notConfigured`、`blocked`、`allowed`。|
 |stealthModeBlocked|Boolean|阻止服务器在隐藏模式下运行。 当 StealthModeRequired 和 StealthModeBlocked 均为 true 时, StealthModeBlocked 优先。|

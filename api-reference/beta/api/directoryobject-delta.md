@@ -1,21 +1,21 @@
 ---
-title: directoryObject： 增量
-description: 获取新创建、 更新或删除以下类型的目录对象： 用户、 组和组织的联系人，请在单个增量查询。 请参阅修订的详细信息。
+title: 'directoryObject: delta'
+description: '在单个增量查询中获取以下类型的新创建、更新或删除的目录对象: 用户、组和组织联系人。 有关详细信息, 请参阅跟踪更改。'
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 56ee662050858ff3d46b12b6885ba9e418d0e59d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641363"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455168"
 ---
-# <a name="directoryobject-delta"></a>directoryObject： 增量
+# <a name="directoryobject-delta"></a>directoryObject: delta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取新创建、 更新或删除以下类型的目录对象：[用户](../resources/user.md)、[组](../resources/group.md)和[组织的联系人](../resources/orgcontact.md)，请在单个增量查询。 有关详细信息，请参阅[修订](/graph/delta-query-overview)。
+在单个增量查询中获取以下类型的新创建、更新或删除的目录对象:[用户](../resources/user.md)、[组](../resources/group.md)和[组织联系人](../resources/orgcontact.md)。 有关详细信息, 请参阅[跟踪更改](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -29,7 +29,7 @@ ms.locfileid: "29641363"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要开始跟踪的更改，您发出请求包含增量函数对 directoryObjects 资源。
+若要开始跟踪更改, 请在 directoryObjects 资源上发出包含 delta 函数的请求。
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,23 +39,23 @@ GET /directoryObjects/delta
 
 ## <a name="query-parameters"></a>查询参数
 
-跟踪更改会导致一个或多个**增量**函数调用的往返。 如果您使用任何查询参数 (以外的其他`$deltatoken`和`$skiptoken`)，则必须指定该初始**增量**请求中。 Microsoft Graph 自动将任何指定的参数编码为的令牌部分`nextLink`或`deltaLink`响应中提供的 URL。
+跟踪更改会产生一个或多个**delta**函数调用的往返。 如果使用任何查询参数 (而不是`$deltatoken` and `$skiptoken`), 则必须在初始**delta**请求中指定它。 Microsoft Graph 自动将任何指定的参数编码到响应中提供`nextLink`的`deltaLink` or URL 的令牌部分。
 
 只需预先指定所需的任何查询参数一次。
 
 在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
 
-| 查询参数 | 类型 |说明|
+| 查询参数 | 类型 |描述|
 |:---------------|:--------|:----------|
 | $deltatoken | string | 对同一个用户集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
 | $skiptoken | string | 对之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个用户集合中有进一步的更改需要追踪。 |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
-此方法支持可选的 OData 查询参数，以帮助自定义响应。
+此方法支持可选的 OData 查询参数来帮助自定义响应。
 
-- 您可以使用`$filter`与特殊`isOf`派生自 directoryObject 运算符筛选类型的子集。
-  - 您可以组合使用的多个表达式`or`，这使您能够具有跟踪多个类型的单个增量查询。 请参阅[第三个示例](#request-3)的详细信息。
+- 您可以与`$filter`特殊`isOf`运算符一起使用, 以筛选从 directoryObject 派生的类型的子集。
+  - 您可以将多个表达式与`or`结合使用, 这样您就可以让单个增量查询跟踪多个类型。 有关详细信息, 请参阅[第三个示例](#request-3)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -63,7 +63,7 @@ GET /directoryObjects/delta
 |:---------------|:----------|
 | Authorization  | 持有者&lt;令牌&gt;|
 | Content-Type  | application/json |
-| Prefer | 返回 = 最少 <br><br>指定与请求使用此标头`deltaLink`会返回自上次循环后已更改的对象属性。 可选。 |
+| Prefer | return = 最小 <br><br>如果使用使用 a 的`deltaLink`请求指定此标头, 则将仅返回自上一轮后已更改的对象属性。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -71,41 +71,41 @@ GET /directoryObjects/delta
 
 ### <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[用户](../resources/directoryobject.md)集合的对象。 响应还包括`nextLink`URL 或`deltaLink`URL。
+如果成功，此方法的响应正文返回`200 OK`响应代码和[用户](../resources/directoryobject.md)集合对象。 该响应还包括`nextLink` url 或`deltaLink` url。
 
-- 如果`nextLink`返回 URL:
-  - 这指示有会话中检索的数据的其他页面。 应用程序将继续进行请求使用`nextLink`直到 URL `deltaLink` URL 包含响应中。
-  - 响应包含一组相同的属性，如初始增量查询请求中所示。 这样，您可以在启动增量周期捕获对象的完整当前状态。
+- 如果返回`nextLink` URL:
+  - 这表示在会话中有要检索的其他数据页。 应用程序将继续使用`nextLink` URL 发出请求, 直到`deltaLink`响应中包含 url 为止。
+  - 响应包含与初始 delta 查询请求中相同的属性集。 这使您可以在启动增量循环时捕获对象的完整当前状态。
 
-- 如果`deltaLink`返回 URL:
-  - 这表明没有更多有关要返回的资源的现有状态数据。 保存并使用`deltaLink`URL 以了解如何更改为下一轮中的资源。
-  - 您可以选择指定`Prefer:return=minimal`标头，以响应时间以来已经更改的属性值中包括`deltaLink`颁发。
+- 如果返回`deltaLink` URL:
+  - 这表示没有更多有关要返回的资源的现有状态的数据。 保存并使用`deltaLink` URL, 了解下一轮中对资源的更改。
+  - 您可以选择指定`Prefer:return=minimal`标头, 以便仅将自发出以来`deltaLink`发生更改的属性的响应值包括在响应值中。
 
-#### <a name="default-return-the-same-properties-as-initial-delta-request"></a>默认值： 返回作为初始增量请求的同一属性
+#### <a name="default-return-the-same-properties-as-initial-delta-request"></a>默认值: 返回与初始 delta 请求相同的属性
 
-默认情况下，请求使用`deltaLink`或`nextLink`与选定初始增量查询中相同的属性返回以下方式：
+默认情况下, 请求使用`deltaLink`或`nextLink`返回在初始 delta 查询中以下列方式选择的相同属性:
 
-- 如果已更改的属性，在响应中包含的新值。 这包括属性被设置为 null 值。
-- 如果具有未更改的属性，在响应中包含的旧值。
-- 如果从未它将不会包含在响应中根本之前设置该属性。
+- 如果属性已更改, 则新值将包含在响应中。 这包括设置为 null 值的属性。
+- 如果该属性未更改, 则响应中将包含旧值。
+- 如果从未设置该属性, 则根本不会将其包含在响应中。
 
 
-> **注意：** 与此行为，通过查看响应它不能以告知属性是否已更改或未。 此外，则 delta 响应容易很大，因为它们包含的所有属性值。
+> **注意:** 在这种情况下, 通过查看响应, 无法判断属性是否正在更改。 此外, 增量响应往往很大, 因为它们包含所有属性值。
 
-#### <a name="alternative-return-only-the-changed-properties"></a>可选： 仅返回已更改的属性
+#### <a name="alternative-return-only-the-changed-properties"></a>替代方法: 仅返回更改的属性
 
-添加可选请求标头中的`prefer:return=minimal`-导致以下行为：
+添加可选请求标头- `prefer:return=minimal` -导致以下行为:
 
-- 如果已更改的属性，在响应中包含的新值。 这包括属性被设置为 null 值。
-- 如果具有未更改的属性，该属性不包括在响应中根本。 （不同于默认行为。）
+- 如果属性已更改, 则新值将包含在响应中。 这包括设置为 null 值的属性。
+- 如果该属性未更改, 则该属性根本不包含在响应中。 (与默认行为不同。)
 
-> **注意：** 标头可以添加到`deltaLink`任何时间点的增量周期中的请求。 头只影响的响应中包括的属性集，而不会影响如何执行增量查询。
+> **注意:** 可以在增量循环中的任何`deltaLink`时间点将标头添加到请求中。 标头只会影响响应中包含的一组属性, 而不会影响增量查询的执行方式。
 
 ## <a name="example"></a>示例
 
 ### <a name="request-1"></a>请求 1
 
-下面是一个请求示例。 没有任何`$select`参数，以便跟踪和返回一组默认属性。
+下面是一个请求示例。 没有`$select`参数, 因此会跟踪并返回默认的属性集。
 <!-- {
   "blockType": "request",
   "name": "user_delta"
@@ -117,9 +117,9 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 ### <a name="response-1"></a>响应 1
 
-以下是时使用的响应示例`deltaLink`获取从查询初始化。 不`isOf`已使用筛选器，以便返回所有派生自 directoryObject 的类型。
+以下是使用`deltaLink`从查询初始化获取的响应的示例。 未`isOf`使用任何筛选器, 因此将返回从 directoryObject 派生的所有类型。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -184,7 +184,7 @@ Content-type: application/json
 
 ### <a name="request-2"></a>请求 2
 
-下一个示例演示如何使用备用内容最少响应行为：
+下面的示例展示了如何使用替代的最小响应行为:
 <!-- {
   "blockType": "request",
   "name": "directoryObject_delta"
@@ -197,7 +197,7 @@ Prefer: return=minimal
 
 ### <a name="response-2"></a>响应 2
 
-以下是时使用的响应示例`deltaLink`获取从查询初始化。 请注意会返回实际发生了更改的属性。
+以下是使用`deltaLink`从查询初始化获取的响应的示例。 注释仅返回实际已更改的属性。
 
 <!-- {
   "blockType": "response",
@@ -237,7 +237,7 @@ Content-type: application/json
 
 ### <a name="request-3"></a>请求 3
 
-下面的示例演示初始请求使用`isOf`运算符筛选出只有用户和组的实体：
+下一个示例显示使用`isOf`运算符筛选出仅用户和组实体的初始请求:
 <!-- {
   "blockType": "request",
   "name": "directoryobject_delta"
@@ -249,7 +249,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Micros
 
 ### <a name="response-3"></a>响应 3
 
-以下是时使用的响应示例`deltaLink`获取从查询初始化。 请注意返回的唯一用户和组对象：
+以下是使用`deltaLink`从查询初始化获取的响应的示例。 请注意, 仅返回 user 和 group 对象:
 
 <!-- {
   "blockType": "response",
@@ -298,7 +298,7 @@ Content-type: application/json
 }
 ```
 
-- [使用增量查询来跟踪 Microsoft Graph 数据中的更改](/graph/delta-query-overview)。
+- [使用 delta 查询跟踪 Microsoft Graph 数据中的更改](/graph/delta-query-overview)。
 - [获取用户的增量更改](/graph/delta-query-users)。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

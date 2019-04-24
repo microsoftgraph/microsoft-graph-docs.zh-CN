@@ -1,21 +1,21 @@
 ---
-title: 列表设备可传递组
-description: 获取组的成员的设备。 此 API 请求是可传递，，，也将返回设备位于嵌套的成员的所有组。
+title: 列出设备可传递组
+description: 获取设备所属的组。 此 API 请求是可传递的, 并且还将返回设备是其嵌套成员的所有组。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 69cd4e4be3f02d3609bc9f0af2f094533c67dba7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528163"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455084"
 ---
-# <a name="list-device-transitive-groups"></a>列表设备可传递组
+# <a name="list-device-transitive-groups"></a>列出设备可传递组
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取组的成员的设备。 此 API 请求是可传递，，，也将返回设备位于嵌套的成员的所有组。
+获取设备所属的组。 此 API 请求是可传递的, 并且还将返回设备是其嵌套成员的所有组。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +44,7 @@ GET /devices/{id}/transitiveMemberOf
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Accept  | application/json|
+| 接受  | application/json|
 
 ## <a name="request-body"></a>请求正文
 

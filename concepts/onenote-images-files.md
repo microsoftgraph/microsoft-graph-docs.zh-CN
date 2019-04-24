@@ -4,12 +4,12 @@ description: " Office 365 上的企业级笔记本"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: b2eee772a69270e8b88a8d998af27fa892df5eb1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e07c9e3d4ccc16c19c83950eda2fdc24107c4b79
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961720"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31980919"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>将图像、视频和文件添加到 OneNote 页面
 
@@ -447,11 +447,13 @@ Content-Type: application/pdf
 
 ## <a name="size-limitations-for-post-pages-requests"></a>POST 页面请求的大小限制
 
-发送图像和文件数据时，应注意以下限制：<!--TODO: check these-->
+发送图像和文件数据时，应注意以下限制： <!--TODO: check these-->
 
-- POST 的总大小限制为 ~ 70 MB，包括图像、文件和其他数据。 实际限制会受下游编码的影响，因此没有固定的字节计数限制。 超过此限制的请求可能会产生不可靠的结果。
+- Microsoft Graph REST API 具有 4 MB 请求限制。 上方的所有项目将失败，显示错误消息“请求过大 (413)”。 
 
-- 每个数据部件限制为 25 MB，包括部件标头。 Microsoft Graph 将拒绝超过此限制的数据部件。 
+- 底层 OneNote REST API 的请求限制较高，但你无法通过 Microsoft Graph API 访问它。 
+  - POST 的总大小限制为 ~ 70 MB，包括图像、文件和其他数据。 实际限制会受下游编码的影响，因此没有固定的字节计数限制。 超过此限制的请求可能会产生不可靠的结果。
+  - 每个数据部件限制为 25 MB，包括部件标头。 Microsoft Graph 将拒绝超过此限制的数据部件。 
 
 - 每个页面的最大图像数为 150。 使用 `src="https://..."` 属性时，API 将忽略超出此限制的 **img** 标记。
 

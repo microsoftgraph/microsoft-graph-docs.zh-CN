@@ -3,11 +3,11 @@ title: web 资源类型
 description: 指定 Web 应用程序的设置。
 localization_priority: Normal
 ms.openlocfilehash: 7e03977481f0c021b7d67ec44fd4db275642cdf8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643508"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453948"
 ---
 # <a name="web-resource-type"></a>web 资源类型
 
@@ -17,12 +17,12 @@ ms.locfileid: "29643508"
 
 ## <a name="properties"></a>属性
 
-| 属性 | 类型 | 说明 |
+| 属性 | 类型 | 描述 |
 |:---------|:-----|:------------|
-|implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| 指定此 web 应用程序是否可以请求令牌使用 OAuth 2.0 隐式流。|
-|logoutUrl|String| 指定 Microsoft 授权服务使用[正向通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[反向通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户时所使用的 URL。 |
-|oauth2AllowImplicitFlow|布尔值| 已弃用。 请勿使用。 | 
-|redirectUris|String collection| 指定用于登录，用户令牌发送到的 Url 或 Uri 的 OAuth 2.0 授权代码和访问令牌发送到的重定向。 |
+|implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| 指定此 web 应用程序是否可以使用 OAuth 2.0 隐式流请求令牌。|
+|logoutUrl|字符串| 指定将由 Microsoft 的授权服务用来使用[前通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[后通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户的 URL。 |
+|oauth2AllowImplicitFlow|Boolean| 已弃用。 请勿使用。 | 
+|redirectUris|String collection| 指定向其发送用户令牌以进行登录的 url, 或向其发送 OAuth 2.0 授权代码和访问令牌的重定向 uri。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c5327c246c3a1dc58b0b1431fdff330cf7b6a732
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526310"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455077"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
@@ -24,9 +24,9 @@ ms.locfileid: "29526310"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All Directory.ReadWrite.All 或 Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | "directory"、"all" 或 "directory.accessasuser.all"    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序 | Directory.Read.All 或 Directory.ReadWrite.All |
+|Application | Directory.Read.All 或 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取驱动器
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 0bea809fc719d90dadbde9282f64ac43df4b91e9
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481284"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454741"
 ---
 # <a name="get-drive"></a>获取驱动器
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 [Drive](../resources/drive.md) 资源的属性和关系。
 
@@ -38,7 +36,7 @@ ms.locfileid: "30481284"
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive
@@ -52,7 +50,7 @@ GET /me/drive
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /users/{idOrUserPrincipalName}/drive
@@ -60,17 +58,17 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ### <a name="path-parameters"></a>路径参数
 
-| 参数名 | 值  | 说明                                       |
+| 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _idOrUserPrincipalName_     | string | 必需。 拥有 OneDrive 的用户对象的标识符。 |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>获取与组关联的文档库
 
-若要访问组的默认文档库，你的应用程序应请求组中的 **drive** 关系。
+若要访问组的默认文档库，应用应请求组中的 **drive** 关系。
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /groups/{groupId}/drive
@@ -78,13 +76,13 @@ GET /groups/{groupId}/drive
 
 ### <a name="path-parameters"></a>路径参数
 
-| 参数名 | 值  | 说明                                       |
+| 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _groupId_      | string | 必需。 拥有文档库的组的标识符。 |
 
 ## <a name="get-the-document-library-for-a-site"></a>获取某个站点的文档库
 
-为了访问[站点的](../resources/site.md)默认文档库，你的应用程序应请求站点中的 **drive** 关系。
+若要访问[站点](../resources/site.md)的默认文档库，应用应请求站点中的 **drive** 关系。
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -94,7 +92,7 @@ GET /sites/{siteId}/drive
 
 ### <a name="path-parameters"></a>路径参数
 
-| 参数名 | 值  | 说明                                       |
+| 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _siteId_       | string | 必需。 包含文档库的站点的标识符。 |
 
@@ -107,18 +105,18 @@ GET /sites/{siteId}/drive
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{driveId}
+GET /drives/{drive-id}
 ```
 
 ### <a name="path-parameters"></a>路径参数
 
-| 参数名 | 值  | 说明                                       |
+| 参数名称 | 值  | 说明                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | string | 必需。 请求获取的驱动器的标识符。 |
+| _driveId_      | 字符串 | 必需。 请求获取的驱动器的标识符。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-这些方法支持 [$select 查询参数][odata-query-parameters]塑造响应。
+这些方法支持使用 [$select 查询参数][odata-query-parameters]形成响应。
 
 ## <a name="response"></a>响应
 
@@ -150,20 +148,23 @@ Content-type: application/json
 
 ### <a name="error-response-codes"></a>错误响应代码
 
-如果驱动器不存在且无法自动设置（当使用委派身份验证），将返回 `HTTP 404` 响应。
+如果驱动器不存在且无法自动设置（使用委派身份验证时），将返回 `HTTP 404` 响应。
 
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "Drives/Get drive",
   "suppressions": [
-    "Error: /api-reference/beta/api/drive-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+      "Warning: /api-reference/v1.0/api/drive-get.md:
+        Unable to map some markdown elements into schema.
+            Unmapped methods:
+        get-drive-default, get-drive-by-user, get-drive-by-group, get-drive-by-id
+            Unmapped tables:
+        Permissions - AuthScopes, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters"
+  ],
+  "tocPath": "Drives/Get drive"
+} -->

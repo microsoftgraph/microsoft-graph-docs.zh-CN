@@ -5,11 +5,11 @@ ms.date: 09/14/2017
 title: VersionAction
 localization_priority: Normal
 ms.openlocfilehash: c65b3cf021321a7e021c5fa4193abdcdce6c635a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520604"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453854"
 ---
 # <a name="versionaction-resource-type"></a>VersionAction 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "29520604"
 
 ## <a name="properties"></a>属性
 
-| 属性名称 | 类型   | 说明
+| 属性名称 | 类型   | 描述
 |:--------------|:-------|:----------------------------------------------------
 | newVersion    | string | 此操作创建的新版本的名称。
 

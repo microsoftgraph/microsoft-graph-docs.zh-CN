@@ -1,28 +1,28 @@
 ---
 title: meetingParticipantInfo 资源类型
-description: 有关会议中的参与者的信息。
+description: 会议参与者的相关信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1ba727344b1f653125a482b592e7d28c11d1d3d5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515025"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457114"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>meetingParticipantInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-有关会议中的参与者的信息。
+会议参与者的相关信息。
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型                          | 说明                              |
+| 属性       | 类型                          | 描述                              |
 |:---------------|:------------------------------|:-----------------------------------------|
-| Identity       | [identitySet](identityset.md) | 参与者的标识信息。 |
-| UPN            | String                        | 参与者的用户主体名称。  |
+| 窃取       | [identitySet](identityset.md) | 参与者的标识信息。 |
+| upn            | 字符串                        | 参与者的用户主体名称。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

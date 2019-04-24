@@ -1,46 +1,46 @@
 ---
 title: synchronizationStatus 资源类型
-description: 代表 synchronizationJob 的当前状态。
+description: 表示 synchronizationJob 的当前状态。
 localization_priority: Normal
 ms.openlocfilehash: 404fe4f7f58b8189b3059c212aa1ce858350bb01
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523762"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453868"
 ---
 # <a name="synchronizationstatus-resource-type"></a>synchronizationStatus 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表[synchronizationJob](synchronization-synchronizationjob.md)的当前状态。
+表示[synchronizationJob](synchronization-synchronizationjob.md)的当前状态。
 
 ## <a name="properties"></a>属性
 
 | 属性                              | 类型      | 描述    |
 |:--------------------------------------|:----------|:---------------|
-|code|String|高级状态代码的同步作业。 可取值为：`NotConfigured`、`NotRun`、`Active`、`Paused`、`Quarantine`。|
-|countSuccessiveCompleteFailures|Int64|连续次数此作业失败。|
-|escrowsPruned|Boolean|`true`如果在初始同步期间已修剪作业的 escrows （对象级错误）。 如果在初始同步过程达到阈值通常会将作业放在隔离的错误，则可以修剪 escrows。 而不是进入隔离，同步过程清除作业的错误，并将继续，直到完成初始同步。 完成初始同步后，此作业将暂停并等待客户清理错误。|
+|code|字符串|同步作业的高级别状态代码。 可取值为：`NotConfigured`、`NotRun`、`Active`、`Paused` 或 `Quarantine`。|
+|countSuccessiveCompleteFailures|Int64|此作业连续失败的次数。|
+|escrowsPruned|Boolean|`true`在初始同步过程中, 如果作业的 escrows (对象级错误) 被修剪。 在初始同步过程中, 可以对 Escrows 进行修剪, 从而达到通常会将作业放入隔离的错误阈值。 同步过程不会进入隔离, 而是清除作业的错误并继续, 直到初始同步完成。 初始同步完成后, 作业将暂停, 并等待客户清除错误。|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|上次执行作业的详细信息。|
-|lastSuccessfulExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|上次执行此作业，没有任何错误的详细信息。|
-|lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|导出到目标目录的对象的作业的上次执行的详细信息。|
-|Progress|[synchronizationProgress](synchronization-synchronizationprogress.md)集合|完成作业的进度的详细信息。|
-|隔离|[synchronizationQuarantine](synchronization-quarantine.md)|如果作业在隔离，隔离详细信息。|
-|steadyStateFirstAchievedTime|DateTimeOffset|首先达到稳定状态 （过程没有更多更改） 时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|steadyStateLastAchievedTime|DateTimeOffset|上次达到稳定状态 （过程没有更多更改） 时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|synchronizedEntryCountByType|[stringKeyLongValuePair](synchronization-stringkeylongvaluepair.md)集合|按对象类型列出的同步对象数。|
-|troubleshootingUrl|String|发生错误，带有问题的疑难解答步骤的 URL。|
+|lastSuccessfulExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|此作业的最后一次执行的详细信息, 其中未包含任何错误。|
+|lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|上次执行作业的详细信息, 该作业将对象导出到目标目录中。|
+|progress|[synchronizationProgress](synchronization-synchronizationprogress.md)集合|完成作业进度的详细信息。|
+|隔离|[synchronizationQuarantine](synchronization-quarantine.md)|如果作业在隔离中, 则隔离详细信息。|
+|steadyStateFirstAchievedTime|DateTimeOffset|稳定状态 (不再对进程所做的更改) 第一次实现的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|steadyStateLastAchievedTime|DateTimeOffset|上次达到稳定状态 (不再对进程所做的更改) 的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|synchronizedEntryCountByType|[stringKeyLongValuePair](synchronization-stringkeylongvaluepair.md)集合|按对象类型列出的已同步对象的计数。|
+|troubleshootingUrl|字符串|出现错误时, 将包含问题的故障排除步骤的 URL。|
 
-### <a name="synchronization-status-code-details"></a>同步状态代码的详细信息
+### <a name="synchronization-status-code-details"></a>同步状态代码详细信息
 
 | 值                              | 说明    |
 |:-----------------------------------|:---------------|
-|NotConfigured                       |作业已未配置，永远不会运行。 提供未授权。 |
-|NotRun                              |作业已配置并可能启动，但尚未完成其第一个域。|
-|活动                              |定期运行作业。|
-|暂停                              |作业已暂停 （通常是由管理员） 和当前未运行，但保留作业的状态。|
-|隔离                          |作业处于隔离。 有大量的错误，或者关键错误，例如吊销过期凭据时，可能发生此错误。 在隔离中同步过程将尝试减少频率运行作业。|
+|NotConfigured                       |作业未配置且从未运行。 未提供任何授权。 |
+|NotRun                              |作业已配置且可能已启动, 但尚未完成其第一次运行。|
+|活动                              |作业正在定期运行。|
+|暂停                              |作业已暂停 (通常由管理员执行), 当前未在运行, 但保留作业的状态。|
+|隔离                          |作业处于隔离中。 当出现大量错误或严重错误 (如已吊销/已过期的凭据) 时, 可能会发生这种情况。 在隔离过程中, 同步过程将尝试以降低的频率运行作业。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,21 +1,19 @@
 ---
-title: 获取 Contract
+title: 获取合同
 description: 检索 contract 对象的属性和关系。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 6fa54d813a456cc5a29aadc84ec29f99dc475f9f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513261"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455588"
 ---
-# <a name="get-contract"></a>获取 Contract
+# <a name="get-contract"></a>获取合同
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-检索 [contract](../resources/contract.md) 对象的属性和关系。
+检索[contract](../resources/contract.md)对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +48,7 @@ GET /contracts/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Contract](../resources/contract.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[Contract](../resources/contract.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -60,7 +58,7 @@ GET /contracts/{id}
   "name": "get_contract"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/contracts/{id}
+GET https://graph.microsoft.com/v1.0/contracts/{id}
 ```
 
 ##### <a name="response"></a>响应
@@ -68,7 +66,7 @@ GET https://graph.microsoft.com/beta/contracts/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract"
+  "@odata.type": "microsoft.graph.contract"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -86,15 +84,10 @@ Content-length: 186
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get Contract",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/contract-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

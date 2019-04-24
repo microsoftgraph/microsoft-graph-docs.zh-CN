@@ -1,21 +1,21 @@
 ---
 title: 检查成员组
-description: 检查这些组的组和从该列表中的返回指定列表中的成员资格
+description: 检查指定组列表中的成员身份, 并从该列表返回这些组
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 53c89a6dd6fb0c16e0df7c6035ed0667c227787d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522523"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455189"
 ---
 # <a name="check-member-groups"></a>检查成员组
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检查成员资格组和从该列表中的返回指定列表中指定的用户、 组、 服务主体或目录对象所属的这些组。 可传递此函数。
+检查指定组列表中的成员身份, 并从该列表返回指定用户、组、服务主体或目录对象所属的组。 此函数是可传递的。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,7 +25,7 @@ ms.locfileid: "29522523"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All |
+|Application | Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |描述|
 |:---------------|:--------|:----------|
 |groupIds|String|包含检查成员身份的组中的对象 ID 的集合。可以指定多达 20 个组。|
 

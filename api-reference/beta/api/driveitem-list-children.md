@@ -6,11 +6,11 @@ title: 列出文件夹的内容
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 96c5623ba2534086fbcd2130b5b5228e53208c35
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482187"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454382"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 
@@ -55,7 +55,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## <a name="examples"></a>示例
 
-### <a name="list-children-in-the-root-of-the-current-users-drive"></a>在当前用户驱动器的根目录中列出子项
+### <a name="list-children-in-the-root-of-the-current-users-drive"></a>列出当前用户的驱动器根目录中的子项
 
 若要检索驱动器根目录中的文件，请使用驱动器上的 `root` 关系，然后访问子项关系。
 

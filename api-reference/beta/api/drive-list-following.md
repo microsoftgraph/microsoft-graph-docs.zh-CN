@@ -1,22 +1,22 @@
 ---
 author: chackman
 ms.author: chackman
-title: 后面的列表项
+title: 列出关注的项
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: df38a11a09f4ec86eb029f236030cc4565e5d939
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523307"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454804"
 ---
-# <a name="list-followed-items"></a>后面的列表项
+# <a name="list-followed-items"></a>列出关注的项
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出跟登录用户的[项目](../resources/driveitem.md)。
-此集合包括用户的驱动器中的项目以及他们有权访问从其他驱动器的项目。
+列出已登录用户的后续[项目](../resources/driveitem.md)。
+此集合包含用户驱动器中的项目，以及他们有从其他驱动器进行访问的权限的项目。
 
 ## <a name="permissions"></a>权限
 
@@ -38,8 +38,8 @@ GET /me/drive/following
 
 ## <a name="response"></a>响应
 
-此方法返回的项目的驱动器的所有者正在关注的[driveItem](../resources/driveitem.md)资源的集合。
-如果未不找到任何项目，则返回一个空集合。
+此方法返回驱动器所有者正在关注的项目的[driveItem](../resources/driveitem.md)资源的集合。
+如果未找到任何项目，则返回一个空集合。
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 

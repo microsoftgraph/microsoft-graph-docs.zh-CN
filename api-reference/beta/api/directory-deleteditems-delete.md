@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 048008e31bc5cd7884dd3d7e9259412070404d9d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528198"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455120"
 ---
 # <a name="permanently-delete-item"></a>永久删除项目
 
@@ -22,8 +22,8 @@ ms.locfileid: "29528198"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 用户： User.ReadWrite.All、 Directory.AccessAsUser.All
-* 组： Group.ReadWrite.All、 Directory.AccessAsUser.All
+* 对于用户: directory.accessasuser.all 的所有用户。
+* 对于组: directory.accessasuser.all 和 all 的组
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ DELETE /directory/deleteditems/{id}
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
-| Accept  | application/json |
+| 接受  | application/json |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

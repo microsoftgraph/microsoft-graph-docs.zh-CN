@@ -1,18 +1,18 @@
 ---
 title: 获取 directoryAudit
-description: 提供 （或获取） 特定的 Azure Active Directory 审核日志项。 包括用户、 应用程序、 设备和组管理、 特权标识管理、 访问评论、 使用条款、 标识保护、 密码管理 （SSPR 和管理密码重置的 Azure Active Directory 中的各种服务所生成的审核日志)，自助服务组管理等...
+description: 提供 (或获取) 特定的 Azure Active Directory 审核日志项。 包括 Azure Active Directory 中各种服务生成的审核日志，这些服务包括用户、应用、设备和组管理、Privileged Identity Management、访问评审、使用条款、Identity Protection、密码管理（SSPR 和管理员密码重置）、自助服务组管理等。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 43b478aed8ac6beb28d9db53d0c97c01b34f173a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956316"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455112"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
-提供 （或获取） 特定的 Azure Active Directory 审核日志项。 包括用户、 应用程序、 设备和组管理、 特权标识管理、 访问评论、 使用条款、 标识保护、 密码管理 （SSPR 和管理密码重置的 Azure Active Directory 中的各种服务所生成的审核日志)，自助服务组管理等...
+提供 (或获取) 特定的 Azure Active Directory 审核日志项。 包括 Azure Active Directory 中各种服务生成的审核日志，这些服务包括用户、应用、设备和组管理、Privileged Identity Management、访问评审、使用条款、Identity Protection、密码管理（SSPR 和管理员密码重置）、自助服务组管理等。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -21,9 +21,9 @@ ms.locfileid: "27956316"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用程序 | AuditLog.Read.All | 
+|Application | AuditLog.Read.All | 
 
-此外，应用程序必须采用到 Azure AD 中[正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
+此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -31,7 +31,7 @@ ms.locfileid: "27956316"
 GET /auditLogs/directoryAudits/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持以下 OData 查询参数，有助于自定义响应。 查看有关如何使用这些参数的[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+此方法支持以下 OData 查询参数，它们有助于自定义响应。 请参看 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，了解如何使用这些参数。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[directoryAudit](../resources/directoryaudit.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[directoryAudit](../resources/directoryaudit.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

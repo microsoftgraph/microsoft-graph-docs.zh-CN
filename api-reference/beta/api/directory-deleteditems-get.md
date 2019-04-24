@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d77161c19807ab99b3c9c8771ea910d1d6e90e42
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514451"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455161"
 ---
 # <a name="get-deleted-item"></a>获取已删除的项目
 
@@ -22,8 +22,8 @@ ms.locfileid: "29514451"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 用户： User.Read.All，User.ReadWrite.All，Directory.Read.All
-* 组： Group.Read.All，Group.ReadWrite.All，Directory.Read.All
+* 对于用户: 用户: read. all, read. all
+* 对于组: group. all、group. all、Read. all
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /directory/deleteditems/{id}
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
-| Accept  | application/json |
+| 接受  | application/json |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

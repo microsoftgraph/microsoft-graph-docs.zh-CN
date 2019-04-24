@@ -1,19 +1,21 @@
 ---
 title: 获取 calendarGroup
-description: 检索日历组对象的属性和关系。
+description: 检索 calendargroup 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5444677ac2b2f4f8428203b7ef0cbc5027132751
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932558"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453288"
 ---
 # <a name="get-calendargroup"></a>获取 calendarGroup
 
-检索日历组对象的属性和关系。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+检索 calendargroup 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -66,7 +68,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
+GET https://graph.microsoft.com/beta/me/calendarGroups/{id}
 ```
 
 ##### <a name="response"></a>响应
@@ -95,10 +97,15 @@ Content-length: 110
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get calendarGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/calendargroup-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

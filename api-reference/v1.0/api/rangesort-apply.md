@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: be024f3eacbb4e2d1178ec7b82a8e8ca604aff60
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967103"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32452704"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -21,7 +21,7 @@ ms.locfileid: "27967103"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,13 +40,13 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |说明|
+| 参数    | 类型   |描述|
 |:---------------|:--------|:----------|
-|fields|WorkbookSortField 集合|作为排序依据的条件列表。|
-|matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|
-|hasHeaders|boolean|可选。该区域是否有标头。|
-|orientation|string|可选。 是否操作排序的行或列。  可能的值为： `Rows`， `Columns`。|
-|方法|string|可选。 用于中文字符排序方法。  可能的值为： `PinYin`， `StrokeCount`。|
+|域|WorkbookSortField 集合|要用作排序依据的条件列表。|
+|matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
+|hasHeaders|布尔|可选。该区域是否有标头。|
+|orientation|字符串|可选。 该操作是对行还是列排序。  可能的值为: `Rows`、 `Columns`。|
+|方法|字符串|可选。 用于中文字符的排序方法。  可能的值为: `PinYin`、 `StrokeCount`。|
 
 ## <a name="response"></a>响应
 

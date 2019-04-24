@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 上传小文件
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 151d7c9479068c5fdcecfb5a04166900bd527230
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482271"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454396"
 ---
-# <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 driveItem 的内容
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="upload-or-replace-the-contents-of-a-driveitem"></a>上传或替换 DriveItem 的内容
 
 通过简单的上载 API，你可以在单个 API 调用中提供新文件的内容，也可以更新现有文件的内容。此方法仅支持最大大小为 4 MB 的文件。
 
@@ -30,7 +28,7 @@ ms.locfileid: "30482271"
 |委派（个人 Microsoft 帐户） | Files.ReadWrite、Files.ReadWrite.All    |
 |应用程序 | Files.ReadWrite.All、Sites.ReadWrite.All |
 
-## <a name="http-request-to-replace-an-existing-item"></a>HTTP 请求（以替换现有项）
+## <a name="http-request-to-replace-an-existing-item"></a>HTTP 请求（替换现有项）
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,7 +40,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
-## <a name="http-request-to-upload-a-new-file"></a>HTTP 请求（以上传新文件）
+## <a name="http-request-to-upload-a-new-file"></a>HTTP 请求（上传新文件）
 
 <!-- { "blockType": "ignored" } -->
 
@@ -60,11 +58,11 @@ PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在新建文件或更新文件的响应正文中返回 [driveItem](../resources/driveitem.md) 对象。
+如果成功，此方法将在新创建或更新的文件的响应正文中返回 [driveItem](../resources/driveitem.md) 对象。
 
 ## <a name="example-upload-a-new-file"></a>示例（上传新文件）
 
-此示例会将字符串“在此处显示文件的内容。”上传至 登录用户驱动器中名为 FileB.txt 的 FolderA 下。
+此示例将字符串“The contents of the file goes here.”上传到 登录用户的驱动器中 FolderA 下名为 FileB.txt 的文件中。
 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
@@ -131,14 +129,9 @@ Content-Type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a new file with content or update a file's content.",
   "keywords": "insert,upsert,update,upload",
-  "section": "documentation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-put-content.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "section": "documentation"
+} -->

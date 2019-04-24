@@ -5,19 +5,17 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c221ee4ec889f77712417ca7fca1c6d7708881ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524315"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454867"
 ---
 # <a name="update-domain"></a>更新域
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 更新域对象的属性。
 
-> **重要说明：** 只有已验证的域可以进行更新。
+> **重要说明:** 仅已验证的域可以进行更新。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +26,7 @@ ms.locfileid: "29524315"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Domain.ReadWrite.All |
+|Application | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -47,21 +45,22 @@ PATCH /domains/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，仅包含已更改的值。
+在请求正文中, 提供要更新的相关字段的值。 未包含在请求正文中的现有属性将保留其以前的值, 或根据对其他属性值的更改重新计算这些属性。 为了获得最佳性能, 仅包含更改的值。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码，不返回任何响应正文。
+如果成功, 此方法将`204 No Content`返回响应代码, 不返回任何响应正文。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "update_domain"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/domains/contoso.com
+PATCH https://graph.microsoft.com/v1.0/domains/contoso.com
 Content-type: application/json
 
 {
@@ -86,15 +85,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update domain",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/domain-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

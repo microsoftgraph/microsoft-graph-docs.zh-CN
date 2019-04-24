@@ -1,25 +1,25 @@
 ---
-title: website 资源类型
-description: 代表一个网站。
+title: 网站资源类型
+description: 代表网站。
 localization_priority: Normal
 ms.openlocfilehash: 3f8aadaf0a6b6beb2394664f04195267062dc9ae
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641244"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454042"
 ---
-# <a name="website-resource-type"></a>website 资源类型
+# <a name="website-resource-type"></a>网站资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表一个网站。
+代表网站。
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
-|type|String| 可能的值是：`other`、`home`、`work`、`blog`、`profile`。|
+|类型|字符串| 可取值为：`other`、`home`、`work`、`blog` 或 `profile`。|
 |address|string|网站的 URL。|
 |displayName|string|网站的显示名称。|
 

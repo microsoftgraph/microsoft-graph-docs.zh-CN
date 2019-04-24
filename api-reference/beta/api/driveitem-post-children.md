@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 新建文件夹
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: a81d8fe2c7511b4fe971ccdf114883088bea65b3
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482320"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454361"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>在驱动器中新建文件夹
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用指定的父项或路径在[驱动器](../resources/drive.md)中新建文件夹或 [DriveItem](../resources/driveitem.md)。
 
@@ -116,15 +114,10 @@ Content-Type: application/json
 [item-resource]: ../resources/driveitem.md
 [folder-facet]: ../resources/folder.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a folder item in a drive.",
   "keywords": "create,folder,new item",
   "section": "documentation",
-  "tocPath": "Items/Create folder",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-post-children.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Create folder"
+} -->

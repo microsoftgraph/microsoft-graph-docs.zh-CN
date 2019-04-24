@@ -1,53 +1,53 @@
 ---
 title: synchronizationSchema 资源类型
-description: 定义对象将同步和同步方式。 同步架构包含特定同步作业的设置信息的大部分。 通常情况下，您将自定义某些属性的映射，或添加范围筛选器同步只有满足特定条件的对象。
+description: 定义将同步的对象以及同步的对象。 同步架构包含特定同步作业的大部分安装信息。 通常情况下, 您将自定义一些属性映射, 或添加作用域筛选器以仅同步满足特定条件的对象。
 localization_priority: Normal
 ms.openlocfilehash: e7bb91ef473a04552c4c5f33ffc9d54eb86a9b7a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515928"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453847"
 ---
 # <a name="synchronizationschema-resource-type"></a>synchronizationSchema 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义对象将同步和同步方式。 同步架构包含特定同步作业的设置信息的大部分。 通常情况下，您将自定义某些[属性映射](synchronization-attributemapping.md)，或添加[范围筛选器](synchronization-filter.md)以同步只有满足特定条件的对象。
+定义将同步的对象以及同步的对象。 同步架构包含特定同步作业的大部分安装信息。 通常情况下, 您将自定义一些[属性映射](synchronization-attributemapping.md), 或添加[作用域筛选器](synchronization-filter.md)以仅同步满足特定条件的对象。
 
 以下各节介绍了同步架构的高级组件。
 
 ## <a name="directory-definitions"></a>目录定义
 
-[目录定义](synchronization-directorydefinition.md)提供有关目录和其对象的同步引擎信息。 例如，目录定义告知同步引擎 Azure AD 目录具有名为**用户**和**组**，这些对象，并为这些属性的类型支持哪些属性的对象。 为了在同步规则/对象映射中使用的特定对象和属性，他们必须定义为目录定义的一部分。
+[目录定义](synchronization-directorydefinition.md)提供有关目录及其对象的同步引擎信息。 例如, 目录定义告知同步引擎: Azure AD 目录包含名为**user**和**group**的对象, 这些对象支持哪些属性以及这些属性的类型。 为了在同步规则/对象映射中使用特定对象和属性, 必须将其定义为目录定义的一部分。
 
 ## <a name="synchronization-rules"></a>同步规则
 
-[同步规则](synchronization-synchronizationrule.md)是同步安装程序的核心。 它们为同步引擎定义应如何执行的同步、 包括哪些对象应保持同步，从源目录对象与目标目录中的对象的匹配方式，并且应属性的方式转换他们正在同步时从源到目标目录。 
+[同步规则](synchronization-synchronizationrule.md)是同步设置的核心。 它们定义同步引擎应如何执行同步, 包括应同步的对象、源目录中的对象与目标目录中的对象的匹配方式以及属性应如何在将其从源目录同步到目标目录时进行转换。 
 
 ## <a name="object-mappings"></a>对象映射
 
-[对象映射](synchronization-objectmapping.md)是同步规则的主要部分。 每个对象映射定义如何给定的对象应同步从源到目标目录。 具体而言，映射定义源目录中的对象与目标目录中某个对象的匹配方式什么 （如果有） 范围筛选器应使用决定是否设置一个对象，以及应如何转换对象属性他们正在同步时从源到目标目录。
+[对象映射](synchronization-objectmapping.md)是同步规则的主要部分。 每个对象映射定义应如何将给定对象从源同步到目标目录。 特别是, 映射定义源目录中的对象应如何与目标目录中的对象匹配, 应使用什么 (如果有) 作用域筛选器来决定是否设置对象, 以及应如何转换对象属性将其从源目录同步到目标目录。
 
 ## <a name="methods"></a>方法
 
 | 方法        | 返回类型               | 说明                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[获取架构](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |读取属性和**synchronizationSchema**对象的关系。|
-|[更新架构](../api/synchronization-synchronizationschema-update.md)    |无   |更新同步架构。 |
-|[删除架构](../api/synchronization-synchronizationschema-delete.md)    |无   |删除自定义的架构，重置为默认配置的架构。 |
-|[列表筛选器运算符](../api/synchronization-synchronizationschema-filteroperators.md)    |[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)集合   |列出所有支持的范围筛选器中的运算符。 |
-|[List 属性映射函数](../api/synchronization-synchronizationschema-functions.md)    |[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)集合   |列出属性映射表达式中支持的所有功能。 |
-|[分析属性映射表达式](../api/synchronization-synchronizationschema-parseexpression.md)|[parseExpressionResponse](synchronization-parseexpressionresponse.md)|分析 [attributeMappingSource 字符串表达式|(../ resources/synchronization_attributemappingsource.md) 对象。|
+|[获取架构](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |读取**synchronizationSchema**对象的属性和关系。|
+|[更新架构](../api/synchronization-synchronizationschema-update.md)    |None   |更新同步架构。 |
+|[删除架构](../api/synchronization-synchronizationschema-delete.md)    |None   |删除自定义架构, 将架构重置为默认配置。 |
+|[列表筛选器运算符](../api/synchronization-synchronizationschema-filteroperators.md)    |[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)集合   |列出作用域筛选器支持的所有运算符。 |
+|[列表属性映射函数](../api/synchronization-synchronizationschema-functions.md)    |[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)集合   |列出属性映射表达式中支持的所有函数。 |
+|[分析属性映射表达式](../api/synchronization-synchronizationschema-parseexpression.md)|[parseExpressionResponse](synchronization-parseexpressionresponse.md)|将字符串表达式分析为 [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) 对象。|
 
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | 说明    |
+| 属性      | 类型      | 描述    |
 |:--------------|:----------|:---------------|
-|directories            |[directoryDefinition](synchronization-directorydefinition.md)集合   |描述目录和[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)的一部分的对象。 |
-|synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md)集合   |同步规则[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)，配置的集合 |
-|version                |String                             |架构，每次架构更改自动更新的版本。|
+|目录名            |[directoryDefinition](synchronization-directorydefinition.md)集合   |描述作为[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)一部分的目录和对象。 |
+|synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md)集合   |为[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)配置的同步规则的集合。 |
+|version                |String                             |架构的版本, 随每个架构更改自动更新。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

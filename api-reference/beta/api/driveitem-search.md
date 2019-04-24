@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 搜索文件
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 201102a5332bc6e4ae6fe7d43a71238bb849b21e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481372"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454319"
 ---
-# <a name="search-for-a-driveitems-within-a-drive"></a>在驱动器中搜索 DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 
 在项目层次结构中搜索与查询匹配的项目。
 可以在文件夹层次结构、整个驱动器或与当前用户共享的文件内执行搜索。
@@ -49,7 +47,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 | 参数 | 类型  | 说明                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| q  | string | 用来搜索项目的查询文本。可以跨多个字段（包括文件名、元数据和文件内容）与值相匹配。 |
+| q  | 字符串 | 用来搜索项目的查询文本。可以跨多个字段（包括文件名、元数据和文件内容）与值相匹配。 |
 
 ## <a name="example"></a>示例
 
@@ -57,7 +55,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 下面是一个请求搜索当前用户的 OneDrive 示例
 
-<!-- { "blockType": "request", "name": "item_search" }-->
+<!-- { "blockType": "request", "name": "item_search", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root/search(q='{search-query}')
@@ -100,7 +98,7 @@ Content-type: application/json
 
 ### <a name="example"></a>示例
 
-<!-- { "blockType": "request", "name": "item_search_all" }-->
+<!-- { "blockType": "request", "name": "item_search_all", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/search(q='{search-query}')
@@ -123,7 +121,7 @@ Content-type: application/json
         "name": "Contoso Project",
         "folder": {},
         "searchResult": { "onClickTelemetryUrl": "https://bing.com/0123456789abc!123" },
-        "remoteItem": { "id": "!23141901", "driveId": "s!1020101jlkjl12lx" }
+        "remoteItem": { "id": "!23141901", "parentReference": { "driveId": "s!1020101jlkjl12lx" } }
       },
       {
         "id": "0123456789abc!456",
@@ -144,15 +142,10 @@ Content-type: application/json
 [item-resource]: ../resources/driveitem.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Search for a file across a OneDrive.",
   "keywords": "search,query,bing,filename,content",
   "section": "documentation",
-  "tocPath": "Items/Search",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Search"
+} -->

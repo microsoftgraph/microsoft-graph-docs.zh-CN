@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 4bfe977a90a43749e2a7b9faefea46c8b998eb65
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986024"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453197"
 ---
 # <a name="list-borders"></a>列出边框
 
@@ -21,7 +21,7 @@ ms.locfileid: "27986024"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[WorkbookRangeBorder](../resources/rangeborder.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[WorkbookRangeBorder](../resources/rangeborder.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

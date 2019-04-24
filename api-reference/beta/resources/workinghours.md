@@ -3,11 +3,11 @@ title: workingHours 资源类型
 description: 表示特定时区用户一周的工作天数和小时数。
 localization_priority: Normal
 ms.openlocfilehash: 40a74cd1446dc2553e30ebd0616b0b0e33192778
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642091"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453310"
 ---
 # <a name="workinghours-resource-type"></a>workingHours 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "29642091"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 | daysOfWeek | String 集合 | 用户一周工作的天数。 |
 | startTime | Edm.TimeOfDay | 一天中用户开始工作的时间。 |

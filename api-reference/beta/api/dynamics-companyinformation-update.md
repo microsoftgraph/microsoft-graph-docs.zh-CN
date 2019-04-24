@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 82833c7b9d3d329b5dfb566f8e4b9b72d47c49ab
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366618"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454228"
 ---
 # <a name="update-companyinformation"></a>更新 companyInformation
 更新 Dynamics 365 Business Central 的公司信息对象的属性。
@@ -23,7 +23,7 @@ ms.locfileid: "30366618"
 |:---------------|:------------------------------------------|
 |委派（工作或学校帐户）|Financials.ReadWrite.All |
 |委派 (个人 Microsoft 帐户|不支持。|
-|应用程序|Financials.ReadWrite.All|
+|Application|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP 请求
 ```

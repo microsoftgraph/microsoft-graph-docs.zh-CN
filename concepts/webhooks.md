@@ -3,12 +3,12 @@ title: 设置用户数据更改的通知
 description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户端。客户端是用于配置自身的 URL 以接收通知的 Web 服务。客户端应用使用通知在更改时更新其状态。
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 48f9d16374219868418107201ef13a1bf14fb7da
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 7060a1d6f213a413c453725774da8ffeedb1b277
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31980933"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 
@@ -45,13 +45,17 @@ Microsoft Graph 接受订阅请求之后，将通知推送到订阅中指定的 
 
 ### <a name="azure-ad-resource-limitations"></a>Azure AD 资源限制
 
-基于 Azure AD 的资源（用户、组）采用了某些限制，超出限制时可能会产生错误：
+基于 Azure AD 的资源（用户、组）采用了某些限制，超出限制时将会产生错误：
+
+> **请注意**：这些限制不适用于来自 Azure AD 以外的服务的资源。 例如，应用可以创建许多更多的 `message` 或 `event` 资源订阅，这些订阅受到 Microsoft Graph 中的 Exchange Online 服务支持。
 
 - 最大订阅配额：
 
   - 每个应用：总订阅数 50,000
   - 每个租户：所有应用的总订阅数 1000
   - 每个应用和租户组合：总订阅数 100
+
+超出限制时，尝试创建订阅将导致[错误响应](errors.md) - `403 Forbidden`。 `message` 属性将说明已超出什么限制。
 
 - 不支持 Azure AD B2C 租户。
 

@@ -4,19 +4,19 @@ description: 不支持在生产应用程序中使用这些 API。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 736684812d2cbc10affed82a3f946d75731f6768
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519792"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454566"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 不支持在生产应用程序中使用这些 API。
 
-允许您接收使用[socket.io][]的[驱动器][]的近乎实时的更改通知。
-Socket.io 是 JavaScript 利用 Websocket 的常用通知库。 若要了解详细信息，请参阅[socket.io](https://socket.io)。
+允许您使用[socket.io][]接收[驱动器][]的近实时更改通知。
+Socket.io 是适用于 JavaScript 的热门通知库, 可利用 websocket。 若要了解详细信息, 请参阅[socket.io](https://socket.io)。
 
 [drive]: ../resources/drive.md
 [socket.io]: https://socket.io/
@@ -27,9 +27,9 @@ Socket.io 是 JavaScript 利用 Websocket 的常用通知库。 若要了解详�
 
 | 权限类型                        | 权限（从最低特权到最高特权）
 |:---------------------------------------|:-------------------------------------------
-| 委派（工作或学校帐户）     | Files.Read，Files.ReadWrite，Files.ReadWrite.All Sites.ReadWrite.All
-| 委派（个人 Microsoft 帐户） | Files.Read，Files.ReadWrite，Files.ReadWrite.All
-| 应用程序                            | 不支持。
+| 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
+| 委派（个人 Microsoft 帐户） | Read, 文件. readwrite, 全部文件。
+| Application                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -53,7 +53,7 @@ GET /me/drive/root/subscriptions/socketIo
 
 ### <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[订阅](../resources/subscription.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[订阅](../resources/subscription.md)对象。
 
 <!-- {
   "blockType": "response",
@@ -70,11 +70,11 @@ Content-type: application/json
 }
 ```
 
-`notificationUrl`返回是 socket.io 终结点 URL。
-若要使用 socket.io 客户端中使用它，拆分字符串，在`/callback?`标记。
-前的字符串的一部分`/callback?`是 socket.io 终结点 URL 并且后的字符串的一部分必须授予对库不透明的查询字符串。
+`notificationUrl`返回的是 socket.io 终结点 URL。
+若要将它与 socket.io 客户端一起使用, 请拆分`/callback?`令牌上的字符串。
+之前`/callback?`的字符串部分是 socket.io 终结点 URL, 后面的字符串部分是必须向库提供的不透明查询字符串。
 
-下面的示例演示如何使用`notificationUrl`socket.io JavaScript 中使用。
+下面的示例演示如何在 JavaScript 中`notificationUrl`将 with socket.io。
 
 ```javascript
 // this is the notificationUrl returned from this API

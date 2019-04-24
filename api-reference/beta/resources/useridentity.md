@@ -1,35 +1,35 @@
 ---
 title: userIdentity 类型
-description: '为 Azure AD 访问 reviews （英文），此类型的访问评审的审阅者表示 Azure AD 用户标识。  '
+description: '对于 azure ad 访问审核, 此类型表示访问审核的审阅者的 Azure ad 用户标识。  '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ab8076c5ff24e20006b5a5569dacf4c45d987512
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529465"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453976"
 ---
 # <a name="useridentity-type"></a>userIdentity 类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-对于[access 会检查](accessreviews-root.md)Azure AD，此类型的访问评审的审阅者代表 Azure AD 用户标识。  
-在 Azure AD 审核日志的上下文中，这表示启动或审核活动受影响的用户信息。
+对于 azure ad[访问审核](accessreviews-root.md), 此类型表示访问审核的审阅者的 Azure ad 用户标识。  
+在 Azure AD 审核日志的上下文中, 这表示已启动或受审核活动影响的用户信息。
 
-此类型继承自[identity](identity.md)和一个其他属性，用户的用户主体名称。
+此类型继承自[标识](identity.md), 并且具有一个附加属性 (用户的用户主体名称)。
 
 ## <a name="methods"></a>方法
 
-无。  您将在请求正文中包含此类型的对象时[创建 accessReview](../api/accessreview-create.md)。
+无。  [创建 accessReview](../api/accessreview-create.md)时, 您可以在请求的正文中包含此类型的对象。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
-| `displayName` | `String` | 标识的显示名称。 请注意，这可能会始终不可用或最新。    |
+| `displayName` | `String` | 此身份的显示名称。 请注意, 这可能并不总是可用, 也不是最新的。    |
 | `id`          | `String` | 身份的唯一标识符。  |
-| `ipAddress`| `String`| 指示执行活动 （仅用于审核日志） 的用户所使用的客户端 IP 地址。|
+| `ipAddress`| `String`| 指示执行活动的用户使用的客户端 IP 地址 (仅限审核日志)。|
 | `userPrincipalName`|`String` | 用户的 userPrincipalName 属性。 |
 
 ## <a name="remarks"></a>注解
@@ -44,9 +44,9 @@ ms.locfileid: "29529465"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 accessReview 审阅者](../api/accessreview-listreviewers.md) |       [userIdentity](useridentity.md)集合| 要获取 accessReview 审阅的者。 |
-|[添加 accessReview 审阅者](../api/accessreview-addreviewer.md) |      无。   |   将审阅者添加到 accessReview。 |
-|[删除 accessReview 审阅者](../api/accessreview-removereviewer.md) | 无。  |   删除 accessReview 审阅者。 |
+|[获取 accessReview 审阅者](../api/accessreview-listreviewers.md) |       [userIdentity](useridentity.md)集合| 获取 accessReview 的审阅者。 |
+|[添加 accessReview 审阅者](../api/accessreview-addreviewer.md) |      无。   |   向 accessReview 添加审阅者。 |
+|[删除 accessReview 审阅者](../api/accessreview-removereviewer.md) | 无。  |   从 accessReview 中删除审阅者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

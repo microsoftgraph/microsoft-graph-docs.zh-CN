@@ -3,11 +3,11 @@ title: 获取 FormatProtection
 description: 检索 formatprotection 对象的属性和关系。
 localization_priority: Normal
 ms.openlocfilehash: 5b2f994eb411f366c321c2329893d485c2cec4b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527024"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457156"
 ---
 # <a name="get-formatprotection"></a>获取 FormatProtection
 
@@ -21,7 +21,7 @@ ms.locfileid: "29527024"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|应用程序 | 不支持。 |
+|Application | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
