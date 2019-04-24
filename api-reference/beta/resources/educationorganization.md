@@ -1,28 +1,28 @@
 ---
 title: educationOrganization 资源类型
-description: '用于模型之间的教育扇区中的不同组织类型通用性抽象实体。  '
+description: '用于对教育部门中不同组织类型之间的通用性进行建模的抽象实体。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 122717952781cd8effe415fb01b07ec9bf71143d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507472"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507178"
 ---
 # <a name="educationorganization-resource-type"></a>educationOrganization 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于模型之间的教育扇区中的不同组织类型通用性抽象实体。  
+用于对教育部门中不同组织类型之间的通用性进行建模的抽象实体。  
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|String| 组织说明。|
-|displayName|String| 组织的显示名称。|
-|externalSource|string| 从在其中创建此组织的源。 可取值为：`sis`、`manual`、`unknownFutureValue`。|
+|说明|字符串| 组织说明。|
+|displayName|String| 组织显示名称。|
+|externalSource|string| 从中创建此组织的源。 可取值为：`sis`、`manual`、`unknownFutureValue`。|
 
 ## <a name="relationships"></a>Relationships
 无。

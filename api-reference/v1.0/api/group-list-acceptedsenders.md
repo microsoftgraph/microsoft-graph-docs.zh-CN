@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 4299b83e5cb11f4c6eea460621198b43ab3c0890
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985758"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584717"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
 获取此组 acceptedSenders 列表中的用户或组列表。
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 
 #### <a name="response"></a>响应
 下面展示了示例响应。
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

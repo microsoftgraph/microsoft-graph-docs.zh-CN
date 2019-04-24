@@ -1,21 +1,21 @@
 ---
 title: 删除 scopedRoleMember
-description: 删除管理单元的作用域角色成员。
+description: 从管理单元中删除作用域角色成员。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d373f9f88a6fba2f542abf8f58b751d05f3e75ae
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515158"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459435"
 ---
 # <a name="remove-a-scopedrolemember"></a>删除 scopedRoleMember
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除管理单元的作用域角色成员。
+从管理单元中删除作用域角色成员。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

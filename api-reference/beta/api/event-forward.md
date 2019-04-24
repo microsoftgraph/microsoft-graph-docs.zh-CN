@@ -1,23 +1,23 @@
 ---
-title: 事件： 转接
-description: '此操作允许组织者或与会者的会议事件转发 '
+title: '事件: 前进'
+description: '此操作允许会议事件的组织者或与会者转发 '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 6f1b3e1f089d927aeb21ca80ff77edda63121c60
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510384"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464340"
 ---
-# <a name="event-forward"></a>事件： 转接
+# <a name="event-forward"></a>事件: 前进
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作允许组织者或与会者的会议[事件](../resources/event.md)，将会议请求转发到新的收件人。 
+此操作允许会议[事件](../resources/event.md)的组织者或与会者将会议请求转发给新的收件人。 
 
-如果从与会者的 Office 365 邮箱到另一个收件人转发会议事件时，此操作将还发送一条消息，通知的转发，组织者，并将收件人添加到的会议事件的组织者的副本。 转发 Outlook.com 帐户时，这种便利不可用。
+如果将会议事件从与会者的 Office 365 邮箱转发给另一个收件人, 此操作还会发送一封邮件, 通知组织者转发, 并将该收件人添加到组织者的会议事件副本中。 从 Outlook.com 帐户进行转发时, 此便利功能不可用。
 
 
 ## <a name="permissions"></a>权限
@@ -61,7 +61,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |Comment|String|要包含的注释。可以为空字符串。|
-|ToRecipients|[recipient](../resources/recipient.md) collection|要转接到的事件的收件人列表。|
+|ToRecipients|[recipient](../resources/recipient.md) collection|要将事件转发到的收件人列表。|
 
 ## <a name="response"></a>响应
 

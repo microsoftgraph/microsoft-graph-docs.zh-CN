@@ -1,26 +1,26 @@
 ---
 title: plannerPlanContextDetails 资源类型
-description: '**PlannerPlanContextDetails**资源包含有关 plannerPlanContext 的其他信息。'
+description: '**plannerPlanContextDetails**资源包含有关 plannerPlanContext 的其他信息。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 025e5b1623333d0235ae83e061e30247a3d130f6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520247"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32505947"
 ---
 # <a name="plannerplancontextdetails-resource-type"></a>plannerPlanContextDetails 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerPlanContextDetails**资源包含有关[plannerPlanContext](plannerplancontext.md)的其他信息。
+**plannerPlanContextDetails**资源包含有关[plannerPlanContext](plannerplancontext.md)的其他信息。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|url|String|由关联[plannerPlanContext](plannerplancontext.md)的用户体验的 URL。 |
+|url|String|由关联的[plannerPlanContext](plannerplancontext.md)表示的用户体验的 URL。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 453e8c03c40966aedeaf58a4f441f7c16500d9a0
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800970"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457775"
 ---
 # <a name="create-educationcategory"></a>创建 educationCategory
 

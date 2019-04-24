@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a86283e088a4ef28beb1c0139d3650877ed0d651
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775119"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32470438"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>更新 deviceConfigurationConflictSummary
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |:---|:---|:---|
 |conflictingDeviceConfigurations|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|与给定设置发生冲突的策略集|
 |id|String|此组冲突策略的 id。 此 id 是 ConflictingDeviceConfigurations 中的所有策略的 id, 以字典顺序分隔, 由下划线分隔。|
-|contributingSettings|String 集合|与给定策略发生冲突的设置集|
+|contributingSettings|String collection|与给定策略发生冲突的设置集|
 |deviceCheckinsImpacted|Int32|受冲突策略和设置影响的签入次数|
 
 

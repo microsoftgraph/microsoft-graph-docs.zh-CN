@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: d863b13f506901c3216405cc612043cbd87fad3f
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365561"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463752"
 ---
 # <a name="create-paymentterms"></a>创建 paymentTerms
 在 Dynamics 365 Business Central 中创建付款条款对象。

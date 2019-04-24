@@ -1,21 +1,21 @@
 ---
-title: Get administrativeUnit
-description: 检索对应于此**educationSchool**简单目录**administrativeUnit** 。
+title: 获取 administrativeUnit
+description: 检索与此**educationSchool**相对应的简单目录**administrativeUnit** 。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 47dd3b5543f7f10385529aef56e99537abc2f524
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520702"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457689"
 ---
-# <a name="get-administrativeunit"></a>Get administrativeUnit
+# <a name="get-administrativeunit"></a>获取 administrativeUnit
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索对应于此**educationSchool**简单目录**administrativeUnit** 。
+检索与此**educationSchool**相对应的简单目录**administrativeUnit** 。
 
 >**注意：** 如果使用委派令牌，成员只能看到有关自己学校的信息。 在这种情况下，使用 `...beta/education/me/schools` 资源。
 
@@ -41,7 +41,7 @@ GET /education/schools/{id}/administrativeUnit
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[administrativeUnit](../resources/administrativeunit.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[administrativeUnit](../resources/administrativeunit.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

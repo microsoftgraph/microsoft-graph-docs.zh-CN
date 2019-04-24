@@ -5,11 +5,11 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0c0e5c0cd58c867f7c69a3ac5d4f99a11af223ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511441"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459351"
 ---
 # <a name="delete-audio-routing-group"></a>删除音频路由组
 
@@ -24,7 +24,7 @@ ms.locfileid: "29511441"
 | :-------------- | :------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| 应用程序     | JoinGroupCalls、InitiateGroupCalls 和所有调用 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

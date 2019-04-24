@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e66a21b9de53a8b93c74b1034784ea00fb514942
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256341"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463479"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>windowsDefenderAdvancedThreatProtectionConfiguration 资源类型
 
@@ -35,10 +35,10 @@ Windows Defender 高级威胁防护配置。
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|allowSampleSharing|Boolean|Windows Defender 高级威胁防护“允许示例共享”规则|
+|allowSampleSharing|布尔|Windows Defender 高级威胁防护“允许示例共享”规则|
 |enableExpeditedTelemetryReporting|Boolean|加速 Windows Defender 高级威胁防护遥测报告的频率。|
 
 ## <a name="relationships"></a>关系

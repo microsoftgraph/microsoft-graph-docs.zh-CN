@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d803ac7a3f6525b0ea947b5739c1434100a4f8a0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785522"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32470249"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>更新 deviceConfigurationGroupAssignment
 
@@ -59,8 +59,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|targetGroupId|String|要将设备配置定向到的 AAD 组的 Id。|
-|excludeGroup|布尔值|指示是否应排除此组。 应包含组的默认值|
+|targetGroupId|字符串|要将设备配置定向到的 AAD 组的 Id。|
+|excludeGroup|布尔|指示是否应排除此组。 应包含组的默认值|
 
 
 

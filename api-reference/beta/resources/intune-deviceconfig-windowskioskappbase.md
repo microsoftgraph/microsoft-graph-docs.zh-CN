@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6254ca7835687d64d209b118f9ed0d4a4ec26e8e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778073"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464284"
 ---
 # <a name="windowskioskappbase-resource-type"></a>windowsKioskAppBase 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "31778073"
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|开始布局的应用程序磁贴大小。 可取值为：`hidden`、`small`、`medium`、`wide` 或 `large`。|
 |name|String|表示应用程序的友好名称|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|应用类型。 可取值为：`unknown`、`store`、`desktop`、`aumId`。|
-|autoLaunch|布尔值|允许在多应用展台模式下自动启动应用|
+|autoLaunch|布尔|允许在多应用展台模式下自动启动应用|
 
 ## <a name="relationships"></a>关系
 无

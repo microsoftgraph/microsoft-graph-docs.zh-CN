@@ -1,28 +1,28 @@
 ---
 title: serviceHostedMediaConfig 资源类型
-description: ServiceHostedMediaConfig 类型。
+description: serviceHostedMediaConfig 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2ab19f992dd7fac48844cd46a0600a0242517709
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642224"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463276"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>serviceHostedMediaConfig 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ServiceHostedMediaConfig 类型。
+serviceHostedMediaConfig 类型。
 
 ## <a name="properties"></a>属性
 
 | 属性                    | 类型                                                        | 说明                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| preFetchMedia               | [mediaInfo](mediainfo.md)集合                        | 媒体预取列表。                   |
-| removeFromDefaultAudioGroup | 布尔值                                                     | 从默认音频组中删除自我参与者。 |
+| preFetchMedia               | [mediaInfo](mediainfo.md)集合                        | 预回迁的介质列表。                   |
+| removeFromDefaultAudioGroup | 布尔                                                     | 从默认的音频组中删除自参与者。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

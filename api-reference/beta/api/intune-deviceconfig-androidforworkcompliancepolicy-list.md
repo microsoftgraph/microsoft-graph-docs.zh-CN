@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 10ac4d1cf54ca7805f2d30204c37919ae9dc0e5a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772606"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32479272"
 ---
 # <a name="list-androidforworkcompliancepolicies"></a>列出 androidForWorkCompliancePolicies
 

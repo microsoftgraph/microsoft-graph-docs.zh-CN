@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d87a60747fce6eb85cb50439eb14f14a207280d8
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772438"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466138"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
@@ -51,12 +51,12 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|证书的唯一标识符|
-|appleIdentifier|String|用于创建 MDM 推送证书的帐户 Apple ID。|
+|appleIdentifier|字符串|用于创建 MDM 推送证书的帐户 Apple ID。|
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
-|certificateUploadStatus|String|证书上载状态。|
-|certificateUploadFailureReason|String|证书上传失败的原因。|
+|certificateUploadStatus|字符串|证书上载状态。|
+|certificateUploadFailureReason|字符串|证书上传失败的原因。|
 |证书|String|尚未记录|
 
 

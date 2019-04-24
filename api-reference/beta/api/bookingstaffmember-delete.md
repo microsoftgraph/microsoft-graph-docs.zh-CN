@@ -1,27 +1,27 @@
 ---
 title: 删除 bookingStaffMember
-description: 删除指定 bookingbusiness 中的人员成员。
+description: 删除指定 bookingbusiness 中的教职员工成员。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 7532e7911af9caf35d6b7eb98f28553fed1c807a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461904"
 ---
 # <a name="delete-bookingstaffmember"></a>删除 bookingStaffMember
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除指定[bookingbusiness](../resources/bookingbusiness.md)中的[人员成员](../resources/bookingstaffmember.md)。
+删除指定[bookingbusiness](../resources/bookingbusiness.md)中的[教职员工成员](../resources/bookingstaffmember.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.ReadWrite.All Bookings.Manage.All   |
+|委派（工作或学校帐户） |  全部预订. 全部, 全部预订. 全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 

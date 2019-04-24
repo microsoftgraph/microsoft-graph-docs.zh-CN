@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: e97b364e7a30a85bd5b9109dd41806b7ed8589a4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145386"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32482779"
 ---
 # <a name="list-windowsofficeclientsecurityconfigurations"></a>列出 windowsOfficeClientSecurityConfigurations
 
@@ -41,7 +41,7 @@ GET /officeConfiguration/clientConfigurations
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

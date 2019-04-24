@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c5f247b4221d4cfc0df8e2c95f5db8887ac48244
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787314"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32471670"
 ---
 # <a name="delete-carttoclassassociation"></a>删除 cartToClassAssociation
 

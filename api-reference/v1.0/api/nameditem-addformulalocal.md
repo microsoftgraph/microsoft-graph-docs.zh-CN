@@ -3,11 +3,11 @@ title: 添加已命名项 FormulaLocal
 description: 使用用户的公式区域设置，将新名称添加到给定范围的集合。
 localization_priority: Normal
 ms.openlocfilehash: 24232699220a025c19a4e2141d15ac76f0ad807f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460889"
 ---
 # <a name="add-named-item-formulalocal"></a>添加已命名项 FormulaLocal
 使用用户的公式区域设置，将新名称添加到给定范围的集合。
@@ -40,12 +40,12 @@ POST /workbook/worksheets({id|name})/names/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|已命名项的名称。|
-|公式|字符串|名称将引用的公式或区域。|
+|公式|string|名称将引用的公式或区域。|
 |comment|字符串|与此已命名项相关联的注释。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和[WorkbookNamedItem](../resources/nameditem.md)响应正文中的对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[WorkbookNamedItem](../resources/nameditem.md)对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

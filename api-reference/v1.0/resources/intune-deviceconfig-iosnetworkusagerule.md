@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 516e880e4b6230ca165426b849f57609dcc6e6ad
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250101"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585067"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>iosNetworkUsageRule 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "30250101"
 |属性|类型|说明|
 |:---|:---|:---|
 |managedApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|要应用此规则的托管应用的相关信息。 该集合最多可包含 500 个元素。|
-|cellularDataBlockWhenRoaming|Boolean|如果设置为 true，则在漫游时将不允许相应的托管应用使用手机网络数据。|
+|cellularDataBlockWhenRoaming|布尔|如果设置为 true，则在漫游时将不允许相应的托管应用使用手机网络数据。|
 |cellularDataBlocked|Boolean|如果设置为 true，则在任何时间均不允许相应的托管应用使用手机网络数据。|
 
 ## <a name="relationships"></a>关系

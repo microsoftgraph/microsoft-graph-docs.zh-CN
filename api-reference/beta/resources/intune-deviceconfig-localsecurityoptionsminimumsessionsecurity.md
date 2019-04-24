@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a087c9d99164ce5c830b2d40022d7ddd99736547
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806396"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460651"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>localSecurityOptionsMinimumSessionSecurity 枚举类型
 
@@ -24,8 +24,8 @@ LocalSecurityOptionsMinimumSessionSecurity 的可能值
 |:---|:---|:---|
 |无|0|发送 LM & NTLM 响应|
 |requireNtmlV2SessionSecurity|1|发送 LM & NTLM-使用 NTLMv2 会话安全性 (如果协商)|
-|require128BitEncryption|双面|仅发送 LM & NTLM 响应|
-|ntlmV2And128BitEncryption|第三章|仅发送 LM & NTLMv2 响应|
+|require128BitEncryption|2 |仅发送 LM & NTLM 响应|
+|ntlmV2And128BitEncryption|3 |仅发送 LM & NTLMv2 响应|
 
 
 

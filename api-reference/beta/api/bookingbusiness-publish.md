@@ -1,30 +1,30 @@
 ---
-title: bookingBusiness： 发布
-description: 将此业务的计划页提供给外部的客户。
+title: 'bookingBusiness: 发布'
+description: 使此业务的日程安排页面对外部客户可用。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 11d8bea864772c0bcc4365c056973fac782add5d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508655"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462009"
 ---
-# <a name="bookingbusiness-publish"></a>bookingBusiness： 发布
+# <a name="bookingbusiness-publish"></a>bookingBusiness: 发布
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将此业务的计划页提供给外部的客户。
+使此业务的日程安排页面对外部客户可用。
 
-**IsPublished**属性设置为 true，并**publicUrl**属性设为计划页的 URL。
+将**isPublished**属性设置为 true, 并将**publicUrl**属性设置为计划页面的 URL。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.Manage.All   |
+|委派（工作或学校帐户） |  预订. 全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -45,7 +45,7 @@ POST /bookingBusinesses/{id}/publish
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-下面的示例展示了如何调用此 API。
+下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 <!-- {

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: c83a4fb2b6878f23dacfa8258a06e0f9da33fe33
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365715"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458388"
 ---
 # <a name="update-customerpaymentjournals"></a>更新 customerPaymentJournals
 更新 Dynamics 365 Business Central 的客户付款日记帐对象的属性。

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a1d8affc86d478e4d274e1dafa118ba8d46cca3a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800691"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32483626"
 ---
 # <a name="create-iosvppebook"></a>创建 iosVppEBook
 
@@ -51,24 +51,24 @@ POST /deviceAppManagement/managedEBooks
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|displayName|String|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|description|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|publisher|String|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|字符串|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|description|字符串|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|publisher|字符串|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|电子图书的发布日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |createdDateTime|DateTimeOffset|电子图书文件的创建日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改电子书的日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|informationUrl|String|详细信息 URL。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|privacyInformationUrl|String|隐私声明 URL。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|informationUrl|字符串|详细信息 URL。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|字符串|隐私声明 URL。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|Vpp 令牌 ID。|
-|appleId|String|与 Vpp 令牌关联的 Apple ID。|
-|vppOrganizationName|String|Vpp 令牌的组织名称。|
+|appleId|字符串|与 Vpp 令牌关联的 Apple ID。|
+|vppOrganizationName|字符串|Vpp 令牌的组织名称。|
 |genres|String 集合|流派。|
-|language|String|语言。|
+|language|字符串|语言。|
 |seller|String|经销商。|
 |totalLicenseCount|Int32|许可证总数。|
 |usedLicenseCount|Int32|使用的许可证数。|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 

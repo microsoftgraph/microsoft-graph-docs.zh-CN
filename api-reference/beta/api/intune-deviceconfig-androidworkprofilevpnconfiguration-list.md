@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a127f018f166e747f8146b234f75e454af334b09
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786369"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32472587"
 ---
 # <a name="list-androidworkprofilevpnconfigurations"></a>列出 androidWorkProfileVpnConfigurations
 

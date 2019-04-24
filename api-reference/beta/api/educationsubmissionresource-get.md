@@ -1,28 +1,28 @@
 ---
 title: 获取 educationSubmissionResource
-description: 检索特定资源提交相关联的属性。 此资源是工作中资源列表中，应考虑工作进程中的由一个学生。 如果它已从分配复制回工作分配资源的可能指针与包装此资源。
+description: 检索与提交相关联的特定资源的属性。 此资源在 "工作" 资源列表中, 应将其视为学生在处理过程中工作。 如果从分配中复制了此资源, 则会将该资源的可能指针返回到分配资源。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: b76d697afa842fe5315792d803e9b704a628a0b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518364"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464682"
 ---
 # <a name="get-educationsubmissionresource"></a>获取 educationSubmissionResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索特定资源提交相关联的属性。 此资源是"工作"资源列表中，应考虑工作进程中的由一个学生。 如果它已从分配复制回工作分配资源的可能指针与包装此资源。
+检索与提交相关联的特定资源的属性。 此资源在 "工作" 资源列表中, 应将其视为学生在处理过程中工作。 如果从分配中复制了此资源, 则会将该资源的可能指针返回到分配资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadBasic，EduAssignments.ReadWriteBasic，EduAssignments.Read EduAssignments.ReadWrite  |
+|委派（工作或学校帐户） |  EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

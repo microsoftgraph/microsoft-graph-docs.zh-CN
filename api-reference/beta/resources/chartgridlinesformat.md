@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 542180d54f3dedc6ef9e1b4b2ea0deaf9bda8fb9
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642364"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460945"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>ChartGridlinesFormat 资源类型
 

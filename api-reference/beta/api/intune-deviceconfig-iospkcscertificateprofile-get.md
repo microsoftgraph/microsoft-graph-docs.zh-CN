@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ed0faddd67cd4c38a11b23af456d2290171829e2
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780271"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467279"
 ---
 # <a name="get-iospkcscertificateprofile"></a>获取 iosPkcsCertificateProfile
 

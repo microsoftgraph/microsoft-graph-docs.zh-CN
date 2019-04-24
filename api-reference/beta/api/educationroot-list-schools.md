@@ -5,15 +5,13 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: cf10d18188f09ee7c65195358e224f183ffd906e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515725"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457735"
 ---
 # <a name="list-educationschools"></a>列出 educationSchools
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索所有 school 对象的列表。
 
@@ -27,7 +25,8 @@ ms.locfileid: "29515725"
 |应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->' http GET/教育/学校
+<!-- { "blockType": "ignored" } -->
+```http GET /education/schools
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -49,7 +48,7 @@ The following is an example of the request.
   "name": "get_schools"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/schools
+GET https://graph.microsoft.com/v1.0/education/schools
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -104,15 +103,10 @@ Content-length: 345
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List schools",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationroot-list-schools.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

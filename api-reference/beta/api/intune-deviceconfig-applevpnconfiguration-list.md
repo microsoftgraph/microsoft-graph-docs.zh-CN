@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ef4e0c40c66fcaba0c34c8b2d03e9e5adc42affb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781720"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32471565"
 ---
 # <a name="list-applevpnconfigurations"></a>列出 appleVpnConfigurations
 

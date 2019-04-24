@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 2aea4388ef29978606a7bc09813c7cd92f977ed5
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364596"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459183"
 ---
 # <a name="get-alert"></a>获取警报
 
@@ -39,7 +39,7 @@ GET /security/alerts/{id}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必需。|
+| Authorization  | 持有者 {代码}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 

@@ -1,19 +1,19 @@
 ---
-title: 应用程序列表
-description: 检索与 connectorGroup 关联的应用程序对象的列表。
+title: 列出应用程序
+description: 检索与 connectorGroup 相关联的 application 对象的列表。
 localization_priority: Normal
 ms.openlocfilehash: 47be81d4f154d87865113fa02b04a58151545507
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519358"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455756"
 ---
-# <a name="list-applications"></a>应用程序列表
+# <a name="list-applications"></a>列出应用程序
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与 connectorGroup 关联的应用程序对象的列表。
+检索与 connectorGroup 相关联的 application 对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -34,14 +34,14 @@ GET /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer  必需|
+| Authorization  | 负载. 必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[应用程序](../resources/application.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[application](../resources/application.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

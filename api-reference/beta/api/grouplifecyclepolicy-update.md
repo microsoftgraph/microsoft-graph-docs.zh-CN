@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 69073693203981debbfa8010468df271ea65cef3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512078"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501761"
 ---
 # <a name="update-grouplifecyclepolicy"></a>更新 groupLifecyclePolicy
 
@@ -26,7 +26,7 @@ ms.locfileid: "29512078"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持 |
-|应用程序 | Directory.ReadWrite.All |
+|应用 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ PATCH /groupLifecyclePolicies/{id}
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|alternateNotificationEmails|String| 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
+|alternateNotificationEmails|字符串| 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
 |groupLifetimeInDays|Int32| 还剩多少天组就到期且需要续订。 续订后，组的有效期就会延长定义的天数。 |
 |managedGroupTypes|String| 到期策略适用的组类型。 可取值为 **All**、**Selected** 或 **None**。 |
 

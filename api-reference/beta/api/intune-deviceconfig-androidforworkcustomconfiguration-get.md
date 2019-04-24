@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b2e6a4faf3f94846a34a3ee7f725abece6769e20
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781433"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32479370"
 ---
 # <a name="get-androidforworkcustomconfiguration"></a>获取 androidForWorkCustomConfiguration
 

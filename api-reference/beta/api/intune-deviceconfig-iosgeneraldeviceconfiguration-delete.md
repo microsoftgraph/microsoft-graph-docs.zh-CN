@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bd7bd65fd75c2d1cac3d4c27bafc57a66d142a07
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802700"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467195"
 ---
 # <a name="delete-iosgeneraldeviceconfiguration"></a>删除 iosGeneralDeviceConfiguration
 

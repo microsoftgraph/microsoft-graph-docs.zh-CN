@@ -1,21 +1,21 @@
 ---
 title: ChartTitle 资源类型
-description: 表示图表的 chart title 对象。
+description: 表示图表的图表标题对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: a71aed2da93c2121492f1eb29826470b797768ed
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643312"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460987"
 ---
 # <a name="charttitle-resource-type"></a>ChartTitle 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示图表的 chart title 对象。
+表示图表的图表标题对象。
 
 
 ## <a name="methods"></a>方法
@@ -28,9 +28,9 @@ ms.locfileid: "29643312"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|overlay|boolean|表示图表标题是否将叠加在图表上的布尔值。|
+|overlay|布尔|表示图表标题是否将叠加在图表上的布尔值。|
 |text|string|表示图表的标题文本。|
-|visible|boolean|表示 chart title 对象的可见性的布尔值。|
+|visible|布尔|表示 chart title 对象的可见性的布尔值。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

@@ -1,21 +1,21 @@
 ---
-title: 呼叫： changeScreenSharingRole
-description: 启动和停止共享的调用中的屏幕。 此 API 用于允许应用程序共享屏幕内容与呼叫或会议的参与者。
+title: '调用: changeScreenSharingRole'
+description: 在呼叫中开始和停止共享屏幕。 此 API 用于允许应用程序与呼叫或会议的参与者共享屏幕内容。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f0bdd9a4c8e900d9a1ec5f7801fa959ebdaae1e1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514731"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461273"
 ---
-# <a name="call-changescreensharingrole"></a>呼叫： changeScreenSharingRole
+# <a name="call-changescreensharingrole"></a>调用: changeScreenSharingRole
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-启动和停止共享的调用中的屏幕。 此 API 用于允许应用程序共享屏幕内容与呼叫或会议的参与者。
+在呼叫中开始和停止共享屏幕。 此 API 用于允许应用程序与呼叫或会议的参与者共享屏幕内容。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|role|String|可能的值为: 查看、 共享|
+|role|字符串|可能的值为: "查看器"、"共享资源"|
 
 ## <a name="response"></a>响应
-返回响应代码。
+返回`202 Accepted`响应代码。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

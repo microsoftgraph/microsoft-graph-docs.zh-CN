@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 690e547929e53f2378ca0244c0c57a7444652628
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795644"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32495629"
 ---
 # <a name="revokeuserlicense-action"></a>revokeUserLicense 操作
 
@@ -53,7 +53,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |属性|类型|说明|
 |:---|:---|:---|
 |userId|String|要吊销的已分配应用程序许可证的用户 id|
-|notifyManagedDevices|布尔值|指示是否应将吊销通知发送到设备的布尔值|
+|notifyManagedDevices|布尔|指示是否应将吊销通知发送到设备的布尔值|
 
 
 

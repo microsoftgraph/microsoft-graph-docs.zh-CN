@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6e8d5093150871e747c44f4ee83d7a04e172e5ab
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799781"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32470403"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>创建 deviceComplianceScheduledActionForRule
 

@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 928f37b4d29a4443c947bd92bf4a71f9f8a05f59
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800964"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507313"
 ---
 # <a name="educationcategory-resource-type"></a>educationCategory 资源类型
 

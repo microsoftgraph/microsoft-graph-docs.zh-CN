@@ -1,21 +1,21 @@
 ---
 title: educationCsvDataProvider 资源类型
-description: '用于输入的源 CSV 文件时设置学校数据同步配置文件。  '
+description: '用于在 CSV 文件为输入源时设置学校数据同步配置文件。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: bebacbc1c618c7558d81bde2611840e8d225a8fd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529871"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507173"
 ---
 # <a name="educationcsvdataprovider-resource-type"></a>educationCsvDataProvider 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于输入的源 CSV 文件时设置学校数据同步配置文件。  
+用于在 CSV 文件为输入源时设置学校数据同步配置文件。  
 
 派生自[educationSynchronizationDataProvider](educationsynchronizationdataprovider.md)。
 
@@ -23,7 +23,7 @@ ms.locfileid: "29529871"
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **自定义项** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | 可选自定义项应用于同步配置文件。|
+| **操作** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | 要应用于同步配置文件的可选自定义项。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

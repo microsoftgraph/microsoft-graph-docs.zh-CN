@@ -1,23 +1,23 @@
 ---
-title: 列表组 memberOf
-description: 获取组和管理组是直接成员的单位。
+title: 列出组 memberOf
+description: 获取组是其直接成员的组和管理单元。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: ecf127e7cc4af4aada3d75ef6415a242b0a9411b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517538"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502110"
 ---
-# <a name="list-group-memberof"></a>列表组 memberOf
+# <a name="list-group-memberof"></a>列出组 memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取组和管理组是直接成员的单位。
+获取组是其直接成员的组和管理单元。
 
-此操作不可传递。与获取用户的 Office 365 组不同，该操作将返回所有类型的组，而不仅是 Office 365 组。 
+此操作不可传递。 与获取用户的 Office 365 组不同, 这将返回所有类型的组, 而不只是 Office 365 组。 
 
 ## <a name="permissions"></a>权限
 
@@ -64,8 +64,8 @@ GET https://graph.microsoft.com/beta/groups/{id}/memberOf
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,27 +1,27 @@
 ---
 title: 更新 bookingappointment
-description: 更新中指定 bookingbusiness bookingAppointment 对象的属性。
+description: 更新指定 bookingbusiness 中的 bookingAppointment 对象的属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: cde8a309e3544f5ed5cdf84f7c50d33e95084526
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529234"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462414"
 ---
 # <a name="update-bookingappointment"></a>更新 bookingappointment
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新中指定[bookingbusiness](../resources/bookingbusiness.md) [bookingAppointment](../resources/bookingappointment.md)对象的属性。
+更新指定[bookingbusiness](../resources/bookingbusiness.md)中的[bookingAppointment](../resources/bookingappointment.md)对象的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All，Bookings.ReadWrite.All，Bookings.Manage.All   |
+|委派（工作或学校帐户） |  BookingsAppointment, 全部, 全部登记, 全部, 预订。 all   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -40,39 +40,39 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|customerEmailAddress|String|预订约会[bookingCustomer](../resources/bookingcustomer.md) SMTP 地址。|
-|customerId|String|该约会的[bookingCustomer](../resources/bookingcustomer.md)的 ID。 如果未指定 ID 创建约会时，将创建一个新的**bookingCustomer**对象。 设置后，您应考虑**customerId**变。|
-|customerLocation|[location](../resources/location.md)|代表[bookingCustomer](../resources/bookingcustomer.md)预订约会的位置信息。|
-|customerName|String|客户的名称。|
-|customerNotes|String|从与此约会关联的客户的备注。 您可以获取仅当读取此**bookingAppointment**其 id 值 <br> 仅在最初使用新的客户创建约会时，您可以设置该属性。 此时，从由**customerId**客户计算的值。|
-|customerPhone|String|客户的电话号码。|
-|duration|持续时间|约会中[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式的长度。 |
-|end|[dateTimeTimeZone](../resources/datetimetimezone.md)|日期、 时间和约会的结束的时区。|
-|invoiceAmount|双精度|记帐的发票量。|
-|invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|日期、 时间和此约会的发票的时区。|
-|invoiceId|String|发票的 ID。|
-|invoiceStatus|string| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
-|invoiceUrl|String|在 Microsoft 预订发票的 URL。|
-|optOutOfCustomerEmail|Boolean|True 表示该约会的[bookingCustomer](../resources/bookingcustomer.md)不希望接收该约会的确认。|
-|后|持续时间|保留后的清理，例如约会结束的时间量。 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示的值。 |
-|缓冲区|持续时间|保留之前的准备，例如约会开始的时间量。 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示的值。|
-|Price|双精度|指定[bookingService](../resources/bookingservice.md)约会正则价格。|
-|priceType|string| 为服务定价结构提供灵活性设置。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
-|提醒|[bookingReminder](../resources/bookingreminder.md)集合|客户提醒发送该约会的集合。 此属性的值时，可仅读取此**bookingAppointment**由其 id。|
-|selfServiceAppointmentId|String|约会，如果约会的已创建直接通过计划页上的客户而不是由员工成员客户替的其他跟踪 ID。|
-|服务 Id|String|与此约会相关联的[bookingService](../resources/bookingservice.md) ID。|
-|serviceLocation|[location](../resources/location.md)|传递服务的位置的位置。|
-|service_name|String|与此约会关联**bookingService**的名称。<br>创建一个新的约会时，此属性是可选的。 如果未指定，它是从与约会**serviceId**属性关联的服务进行计算。|
-|serviceNotes|String|从[bookingStaffMember](../resources/bookingstaffmember.md)备注。 此属性的值时，可仅读取此**bookingAppointment**由其 id。|
-|staffMemberIds|String 集合|每个[bookingStaffMember](../resources/bookingstaffmember.md)此约会中安排的 ID。|
-|start|[dateTimeTimeZone](../resources/datetimetimezone.md)|日期、 时间和时区约会的开始。|
+|customerEmailAddress|字符串|预订约会的[bookingCustomer](../resources/bookingcustomer.md)的 SMTP 地址。|
+|customerId|字符串|此约会的[bookingCustomer](../resources/bookingcustomer.md)的 ID。 如果创建约会时未指定 ID, 则会创建一个新的**bookingCustomer**对象。 设置后, 应考虑**customerId**不可变。|
+|customerLocation|[location](../resources/location.md)|表示预订约会的[bookingCustomer](../resources/bookingcustomer.md)的位置信息。|
+|customerName|字符串|客户的名称。|
+|customerNotes|字符串|来自与此约会相关联的客户的注释。 仅当按 ID 读取此**bookingAppointment**时, 才能获取该值。 <br> 只有在最初创建新客户的约会时, 才能设置该属性。 然后, 将从**customerId**表示的客户计算该值。|
+|customerPhone|字符串|客户的电话号码。|
+|duration|持续时间|约会的长度, 以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。 |
+|end|[dateTimeTimeZone](../resources/datetimetimezone.md)|约会结束的日期、时间和时区。|
+|invoiceAmount|双精度|发票上的计费金额。|
+|invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|此约会的发票的日期、时间和时区。|
+|invoiceId|字符串|发票的 ID。|
+|invoiceStatus|字符串| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
+|invoiceUrl|字符串|Microsoft 预订中发票的 URL。|
+|optOutOfCustomerEmail|布尔|如果为 True, 则表示此约会的[bookingCustomer](../resources/bookingcustomer.md)不希望收到此约会的确认。|
+|postBuffer|持续时间|在约会结束后保留的时间长度, 例如, 进行清理。 值以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。 |
+|preBuffer|持续时间|在约会开始之前保留的时间量 (以供准备) 为例。 值以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。|
+|特价|双精度|指定[bookingService](../resources/bookingservice.md)的约会的常规价格。|
+|priceType|字符串| 一种设置, 可为服务的定价结构提供灵活性。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
+|提醒|[bookingReminder](../resources/bookingreminder.md)集合|为此约会发送的客户提醒的集合。 此属性的值仅在按 ID 读取此**bookingAppointment**时可用。|
+|selfServiceAppointmentId|字符串|约会的其他跟踪 ID, 如果约会是由客户在日程安排页面上直接创建的, 而不是代表客户由教职员工成员创建的。|
+|服务 Id|字符串|与此约会相关联的[bookingService](../resources/bookingservice.md)的 ID。|
+|serviceLocation|[location](../resources/location.md)|服务的传递位置。|
+|serviceName|字符串|与此约会相关联的**bookingService**的名称。<br>创建新约会时, 此属性是可选的。 如果未指定, 则通过**serviceId**属性从与约会关联的服务计算。|
+|serviceNotes|字符串|来自[bookingStaffMember](../resources/bookingstaffmember.md)的注释。 此属性的值仅在按 ID 读取此**bookingAppointment**时可用。|
+|staffMemberIds|String collection|在此约会中计划的每个[bookingStaffMember](../resources/bookingstaffmember.md)的 ID。|
+|start|[dateTimeTimeZone](../resources/datetimetimezone.md)|约会开始的日期、时间和时区。|
 
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例更改服务通过一天的日期和更新的发票日期。
+下面的示例将服务日期更改为一天, 并同时更新发票日期。
 <!-- {
   "blockType": "request",
   "name": "update_bookingappointment"

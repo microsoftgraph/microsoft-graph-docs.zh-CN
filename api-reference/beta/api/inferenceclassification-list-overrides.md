@@ -1,21 +1,21 @@
 ---
-title: 列出替代
-description: 获取用户已将设置为始终以特定方式分类来自特定发件人关注的收件箱覆盖。
+title: 列表替代
+description: 获取重点收件箱覆盖, 用户已设置为始终按特定方式对来自特定发件人的邮件进行分类。
 localization_priority: Normal
 ms.openlocfilehash: a49d47e39caff5c00981d02551b0eeb564239f73
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511917"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501278"
 ---
-# <a name="list-overrides"></a>列出替代
+# <a name="list-overrides"></a>列表替代
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户已将设置为始终以特定方式分类来自特定发件人[关注的收件箱](../resources/manage-focused-inbox.md)覆盖。
+获取[重点收件箱](../resources/manage-focused-inbox.md)覆盖, 用户已设置为始终按特定方式对来自特定发件人的邮件进行分类。
 
-每个替代均对应一个发件人的 SMTP 地址。最初，用户没有任何替代。
+每个替代均对应一个发件人的 SMTP 地址。 最初，用户没有任何替代。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -42,7 +42,7 @@ GET /users/{id}/inferenceClassification/overrides
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[inferenceClassificationOverride](../resources/inferenceclassificationoverride.md)对象的集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

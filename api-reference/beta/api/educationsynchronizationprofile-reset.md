@@ -1,23 +1,23 @@
 ---
-title: 重置 sync educationSynchronizationProfile 上
-description: 重置为租户中的特定学校数据同步配置文件同步。
+title: 在 educationSynchronizationProfile 上重置同步
+description: 在租户中重置特定学校数据同步配置文件的同步。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 502eb8d7afdc61926a024b7ddfbac5383a146622
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520408"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457501"
 ---
-# <a name="reset-sync-on-an-educationsynchronizationprofile"></a>重置 sync educationSynchronizationProfile 上
+# <a name="reset-sync-on-an-educationsynchronizationprofile"></a>在 educationSynchronizationProfile 上重置同步
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-重置为租户中特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)同步。
+在租户中重置特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)的同步。
 
-> **注意：** 此操作将导致同步重新启动。 遇到的任何错误都将被删除。 将从 Azure Active Directory (Azure AD) 中不删除任何数据。 
+> **注意:** 此操作将导致重新启动同步。 遇到的任何错误都将被删除。 将不会从 azure Active Directory (azure AD) 中删除任何数据。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -25,7 +25,7 @@ ms.locfileid: "29520408"
 | 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派（个人 Microsoft 帐户）|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求

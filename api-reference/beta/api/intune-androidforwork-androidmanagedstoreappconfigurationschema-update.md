@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 95b01edae05234c1e6bd9c801d3f5c5f83287195
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782525"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32497568"
 ---
 # <a name="update-androidmanagedstoreappconfigurationschema"></a>更新 androidManagedStoreAppConfigurationSchema
 

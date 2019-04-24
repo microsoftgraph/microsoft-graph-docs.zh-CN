@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 676b69e029c31384466b1924a32d301b6ec84f7a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776582"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32495398"
 ---
 # <a name="get-iosvppappassignedlicense"></a>获取 iosVppAppAssignedLicense
 

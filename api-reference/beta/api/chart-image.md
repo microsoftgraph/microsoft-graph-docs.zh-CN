@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 5892864d8adb94c4c6193dc4776f8febd938ff36
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642840"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456530"
 ---
 # <a name="chart-image"></a>图表：图像
 
@@ -60,8 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
-<!-- { "blockType": "ignored" } -->
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -1,15 +1,15 @@
 ---
-title: 列表 governanceRoleAssignmentRequests
+title: 列出 governanceRoleAssignmentRequests
 description: '检索 governanceRoleAssignmentRequests 的集合。 '
 localization_priority: Normal
 ms.openlocfilehash: 5ad26ef352eae93e9c804cfb62f5d00df12e32ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515459"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503273"
 ---
-# <a name="list-governanceroleassignmentrequests"></a>列表 governanceRoleAssignmentRequests
+# <a name="list-governanceroleassignmentrequests"></a>列出 governanceRoleAssignmentRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,35 +20,36 @@ ms.locfileid: "29515459"
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess.ReadWrite.AzureResources |
+|应用程序 | PrivilegedAccess AzureResources |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->列出[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)对资源的集合。
+<!-- { "blockType": "ignored" } -->
+列出资源上的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合。
     
->**注意：** 除了权限范围，该请求需要具有至少一个角色分配对资源的请求程序。
+>**注意:** 除了权限范围之外, 该请求还要求请求者在资源上至少有一个角色分配。
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-列出的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)我的集合。
+列出地雷的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-列出的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)挂起管理员决策的集合。
+列出作为等待管理员决策的[governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md)的集合。
     
->**注意：** 除了权限范围，此请求需要请求程序至少有一个`Active`管理员角色分配 (`owner`或`user access administrator`) 对资源。
+>**注意:** 除了权限范围之外, 此请求还要求请求者在资源上至少`Active`有一个管理员角色`owner`分配`user access administrator`(或)。
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -59,14 +60,14 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象集合。
 
 ## <a name="example"></a>示例
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequests"
 }-->
-管理员查询订阅 Wingtip Toys-prod 移待处理的角色分配请求。
+管理员查询挂起的订阅 Wingtip 玩具的角色分配请求。
 ##### <a name="request"></a>请求
 
 ```http

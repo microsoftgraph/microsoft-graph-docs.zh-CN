@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 49a4e16e6f24ebac22c760cf11e63c220181d0b9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509082"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457481"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -17,12 +17,12 @@ ms.locfileid: "29509082"
 
 获取指定的 [event](../resources/event.md) 对象的属性和关系。
 
-有两种方案，其中应用程序可在另一个用户的日历中获取事件：
+在以下两种情况下, 应用可以在其他用户的日历中获取事件:
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享日历，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
+* 如果该应用程序具有应用程序权限，或者
+* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
-由于**事件**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**事件**实例中的自定义属性和扩展数据。
+由于 **event** 资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**事件**实例中的自定义属性和扩展数据。
 
 
 ### <a name="support-various-time-zones"></a>支持不同时区
@@ -89,7 +89,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 - 获取以太平洋标准时间格式返回的日期时间值的 `Prefer: outlook.timezone` 标头。 
 - 返回特定属性的 `$select` 查询参数。如果没有 `$select` 参数，将返回所有事件属性。
 
-请求不指定任何`Prefer: outlook.body-content-type`标头以指示返回的事件正文的特定格式。 
+该请求未指定任何 `Prefer: outlook.body-content-type` 标头来指示返回的事件正文的特定格式。 
 
 <!-- {
   "blockType": "request",
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/me/events('AAMkAGIAAAoZDOFAAA=')?$select=su
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response-1"></a>响应 1
-下面是一个响应示例。 因为没有`Prefer: outlook.body-content-type`指定标头，以默认的 HTML 格式返回**body**属性。 
+下面是一个响应示例。 由于未指定任何 `Prefer: outlook.body-content-type` 标头，将以默认 HTML 格式返回 **body** 属性。 
 
 <!-- {
   "blockType": "response",
@@ -178,9 +178,9 @@ Content-length: 1928
 ```
 
 ##### <a name="request-2"></a>请求 2
-第二个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取指定的事件的**body**属性。
+第二个示例演示如何使用`Prefer: outlook.body-content-type="text"`标头以文本格式获取指定事件的**body**属性。
 
-请求还使用`$select`查询参数返回特定属性。 不带`$select`参数的所有事件属性将返回。
+该请求还使用 `$select` 查询参数返回特定属性。 如果没有 `$select` 参数，将返回所有事件属性。
 
 <!-- {
   "blockType": "request",
@@ -191,7 +191,7 @@ GET https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAoZDOFAAA=')?$select=s
 Prefer: outlook.body-content-type="text"
 ```
 ##### <a name="response-2"></a>响应 2
-下面展示了示例响应。 **Body**属性返回文本格式。 
+下面是一个响应示例。 以文本格式返回 **body** 属性。 
 
 <!-- {
   "blockType": "response",
@@ -221,7 +221,7 @@ Content-length: 636
 
 ##### <a name="request-3"></a>请求 3
 
-第三个示例演示如何获取指定多个位置的事件 该请求指定返回特定属性的 `$select` 查询参数。 
+第三个示例演示如何获取一个指定多个位置的事件。 该请求指定返回特定属性的 `$select` 查询参数。 
 
 <!-- {
   "blockType": "request",
@@ -233,7 +233,7 @@ GET https://graph.microsoft.com/beta/me/events('AAMkADAGAADDdm4NAAA=')?$select=s
 ##### <a name="response-3"></a>响应 3
 下面是一个响应示例。 **locations** 属性包括组织事件的 3 个地点的详细信息。 
 
-由于该请求未指定任何`Prefer: outlook.timezone`或`Prefer: outlook.body-content-type`中默认 UTC 时区，显示标头、**开始**和**结束**属性和正文采用默认的 HTML 格式。  
+由于请求未指定`Prefer: outlook.timezone` any 或`Prefer: outlook.body-content-type`标头, 因此**开始**和**结束**属性显示在默认的 UTC 时区中, 而正文采用的是默认的 HTML 格式。  
 
 <!-- {
   "blockType": "response",

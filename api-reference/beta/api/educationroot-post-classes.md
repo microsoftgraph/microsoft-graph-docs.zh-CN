@@ -1,19 +1,17 @@
 ---
 title: 创建 educationClass
-description: 创建新课程。 此操作还会创建通用组。 当您使用此 API 创建的类时，它将添加到组，这将特殊属性
+description: 创建新课程。 此操作还会创建通用组。 当您使用此 API 创建类时, 它会将特殊属性添加到组中, 这将
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 9d6146251bf5f5badd733ab58272adbc0e71dea3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507941"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457734"
 ---
 # <a name="create-educationclass"></a>创建 educationClass
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建新课程。 此操作还会创建通用组。 当使用此 API 创建课程时，会向组添加特殊属性，继而在 Microsoft Teams 中添加分配和特殊处理等功能。
 
@@ -52,7 +50,7 @@ POST /education/classes
   "name": "create_educationclass_from_educationroot"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes
+POST https://graph.microsoft.com/v1.0/education/classes
 Content-type: application/json
 Content-length: 224
 
@@ -102,15 +100,10 @@ Content-length: 224
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationroot-post-classes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

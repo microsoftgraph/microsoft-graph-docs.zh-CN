@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: add44c591da6b0a970eedd800822191ef215ef6d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809378"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32489014"
 ---
 # <a name="get-mobileappdependency"></a>获取 mobileAppDependency
 

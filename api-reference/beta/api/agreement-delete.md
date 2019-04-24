@@ -3,11 +3,11 @@ title: 删除协议
 description: 删除协议对象。
 localization_priority: Normal
 ms.openlocfilehash: 95766f28e5456c1b4f410de65ae12dccd881727e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459547"
 ---
 # <a name="delete-agreement"></a>删除协议
 
@@ -31,7 +31,7 @@ DELETE /agreements/<id>
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c59a79c158bfa9c14d3e489765d8f6b6e1c5e538
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784231"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32495503"
 ---
 # <a name="create-iosvppappassigneduserlicense"></a>创建 iosVppAppAssignedUserLicense
 
@@ -51,8 +51,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userEmailAddress|String|用户电子邮件地址。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userId|String|用户 ID。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userEmailAddress|字符串|用户电子邮件地址。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userId|字符串|用户 ID。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|String|用户名。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userPrincipalName|String|用户主体名称。 继承自[iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: a8b01124db732866e1a7b971af57d7e0a2b692e1
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365736"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507250"
 ---
 # <a name="customerpaymentsjournals-resource-type"></a>customerPaymentsJournals 资源类型
 表示 Dynamics 365 Business Central 中的客户付款日志。

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 55af41d002548a9920c22e6c492ac7ed3eaff54e
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366576"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458500"
 ---
 # <a name="update-paymentmethods"></a>更新 paymentMethods
 更新 Dynamics 365 Business Central 的付款方式对象的属性。

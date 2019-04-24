@@ -1,21 +1,21 @@
 ---
 title: 添加应用程序密码
-description: 向应用程序中的强密码。
+description: 向应用程序添加强密码。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 15189ee709b2b369d014f9854bcdbd4dc1b7e9be
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526821"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459198"
 ---
 # <a name="add-application-password"></a>添加应用程序密码
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-向应用程序中的强密码。
+向应用程序添加强密码。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,7 +42,7 @@ POST /applications/{id}/addPassword
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和密码对象。 Azure AD 将生成一个强密码通过返回的`secretText`属性。 没有方法，以便将来检索此密码。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和 password 对象。 Azure AD 生成通过`secretText`属性返回的强密码。 将来无法检索此密码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

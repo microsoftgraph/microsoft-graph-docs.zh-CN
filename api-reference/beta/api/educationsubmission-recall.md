@@ -1,30 +1,30 @@
 ---
-title: educationSubmission： 记忆功能
-description: '指示学生想要收回提交。 此操作仅可通过学生。 '
+title: 'educationSubmission: 撤回'
+description: '指示学生想要参加提交。 仅学生可以执行此操作。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 0be94d2888223ca31e37b71e490c4a9fdc28b7d0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520415"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457627"
 ---
-# <a name="educationsubmission-recall"></a>educationSubmission： 记忆功能
+# <a name="educationsubmission-recall"></a>educationSubmission: 撤回
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指示学生想要收回提交。 此操作仅可通过学生。 返回到"工作"，它将从"提交"更改提交的状态。
+指示学生想要参加提交。 仅学生可以执行此操作。 它会将提交的状态从 "已提交" 更改为 "正在运行"。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite  |
+|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持  |
-|应用程序 |不支持。  | 
+|Application |不支持。  | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

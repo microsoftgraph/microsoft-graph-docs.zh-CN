@@ -1,17 +1,17 @@
 ---
-title: 呼叫： playPrompt
+title: '调用: playPrompt'
 description: 在呼叫中播放提示。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 32ea1b838a71d40a6f6106a648962c6a77c29057
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507787"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461232"
 ---
-# <a name="call-playprompt"></a>呼叫： playPrompt
+# <a name="call-playprompt"></a>调用: playPrompt
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +22,8 @@ ms.locfileid: "29507787"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不受支持。                               |
-| 委派（个人 Microsoft 帐户） | 不受支持。                               |
+| 委派（工作或学校帐户）     | 不支持。                               |
+| 委派（个人 Microsoft 帐户） | 不支持。                               |
 | 应用程序                            | 无。                                        |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -44,11 +44,11 @@ POST /applications/{id}/calls/{id}/playPrompt
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[提示](../resources/prompt.md)集合||
-|ClientContext|String|客户端上下文。|
+|提示|[提示符](../resources/prompt.md)集合||
+|适用|字符串|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[playPromptOperation](../resources/playPromptOperation.md)对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[playPromptOperation](../resources/playPromptOperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>通知-完成的操作
+##### <a name="notification---operation-completed"></a>通知-操作已完成
 
 ```http
 POST https://bot.contoso.com/api/calls

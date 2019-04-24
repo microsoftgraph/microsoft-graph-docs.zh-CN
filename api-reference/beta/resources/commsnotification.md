@@ -1,29 +1,29 @@
 ---
 title: commsNotification 资源类型
-description: 通信，请通知发布 Communications 服务器以更改通知的基类型。
+description: 通信服务器发布的用于通知更改的通信通知基类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2372720976b5d06ffe49c00068625bdb92048674
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529514"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460672"
 ---
 # <a name="commsnotification-resource-type"></a>commsNotification 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通信，请通知发布 Communications 服务器以更改通知的基类型。
+通信服务器发布的用于通知更改的通信通知基类型。
 
 ## <a name="properties"></a>属性
 | 属性       | 类型    | 说明                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | String  | 可取值为：`created`、`updated`、`deleted`。      |
-| 资源       | String  | 已更改的资源 URI。                      |
+| changeType     | 字符串  | 可取值为：`created`、`updated`、`deleted`。      |
+| 资源       | 字符串  | 已更改的资源的 URI。                      |
 
-> **注意：**`resourceData`可用作其他数据。 它是一个实体或 Collection(entity) 根据打包通知中的更改的次数。
+> **注意:**`resourceData`可用作其他数据。 它是一个实体或集合 (实体), 具体取决于通知中打包的更改的数量。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

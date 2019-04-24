@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: ad8d9f26faa4fcc2f03f2da04c073857bcfd152f
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365722"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458563"
 ---
 # <a name="get-dimensionvalues"></a>获取 dimensionValues
 检索 Dynamics 365 Business Central 的维度值对象的属性和关系。

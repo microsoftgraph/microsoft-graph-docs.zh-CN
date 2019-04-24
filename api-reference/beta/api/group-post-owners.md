@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 049c860be95e2f4f4b83848d8d8be6b3dd0ed9c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517167"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502141"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
@@ -17,7 +17,7 @@ ms.locfileid: "29517167"
 
 将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。
 
->**重要：** 如果更新组的所有者和创建组团队，它可以最多为 2 小时数所有者以便与 Microsoft 团队进行同步。 此外，如果您希望能够-例如，通过创建计划工具计划-团队中做出的更改的所有者所有者还需要添加为组/工作组成员。 
+>**重要说明:** 如果您更新组所有者并为该组创建了一个团队, 则最长可能需要2小时才能与 Microsoft 团队同步所有者。 此外, 如果您希望所有者能够在团队中进行更改 (例如, 通过创建 Planner 计划), 则还需要将所有者添加为组/团队成员。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -63,8 +63,8 @@ Content-length: 30
 在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

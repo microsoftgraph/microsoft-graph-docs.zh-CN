@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 20f4c0eaf8470f01619a9ff4067bec0d95851b3c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789750"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464622"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>windowsKioskActiveDirectoryGroup 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "31789750"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|名|String|将锁定到此展台配置的 AD 组的名称|
+|名|字符串|将锁定到此展台配置的 AD 组的名称|
 
 ## <a name="relationships"></a>关系
 无

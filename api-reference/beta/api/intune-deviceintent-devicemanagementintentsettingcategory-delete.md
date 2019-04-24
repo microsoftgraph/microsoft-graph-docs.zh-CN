@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 86d274158a521e66d87af47a60bfe94b27b287ee
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806900"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507824"
 ---
 # <a name="delete-devicemanagementintentsettingcategory"></a>删除 deviceManagementIntentSettingCategory
 

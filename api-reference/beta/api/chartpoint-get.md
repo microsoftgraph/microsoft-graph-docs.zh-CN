@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: d1150c2698f6842c8513977d8d49da264104a350
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640495"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456113"
 ---
 # <a name="get-chartpoint"></a>获取 ChartPoint
 

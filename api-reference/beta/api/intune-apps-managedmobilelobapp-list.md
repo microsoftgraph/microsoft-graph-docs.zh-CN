@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a21b9ec5186907f267c21f4a0b3987d63065a242
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800565"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32491625"
 ---
 # <a name="list-managedmobilelobapps"></a>列出 managedMobileLobApps
 

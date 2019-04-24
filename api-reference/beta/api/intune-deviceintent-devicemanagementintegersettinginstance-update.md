@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 801a78d1c8b55fc061f2cee8163e6971b19eb481
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775336"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32509224"
 ---
 # <a name="update-devicemanagementintegersettinginstance"></a>更新 deviceManagementIntegerSettingInstance
 
@@ -54,8 +54,8 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|从[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)继承的设置实例 ID|
-|definitionId|String|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID|
-|valueJson|String|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式|
+|definitionId|字符串|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID|
+|valueJson|字符串|继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式|
 |值|Int32|整数值|
 
 

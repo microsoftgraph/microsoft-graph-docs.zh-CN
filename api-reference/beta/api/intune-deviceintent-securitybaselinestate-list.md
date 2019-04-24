@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4d1c334b5f377d4fd31e2209bf6940fc2bf65a76
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783491"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466110"
 ---
 # <a name="list-securitybaselinestates"></a>列出 securityBaselineStates
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6367aa4c86b00c77d4e64c31bf734407a8ac75d2
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796449"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32470921"
 ---
 # <a name="assign-action"></a>分配操作
 

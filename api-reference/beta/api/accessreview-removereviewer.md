@@ -1,21 +1,21 @@
 ---
 title: 删除 accessReview 审阅者
-description: '在 Azure AD 访问评论功能中，更新要删除的用户审阅者作为现有 accessReview 对象。  此操作仅允许尚未完成，访问审阅和仅访问审阅显式指定审阅者的位置。 此操作不允许用户在其中查看他们自己的访问，访问审阅，不应在其中为审阅者分配组的所有者访问审阅。 '
+description: '在 "Azure AD access 评论" 功能中, 更新现有 accessReview 对象以将用户删除为审阅者。  仅允许对尚未完成的访问权限审核执行此操作, 并且仅适用于显式指定审阅者的访问审核。 此操作不允许用于用户查看其自己的访问权限的访问审核, 而不适用于将组所有者分配为审阅者的访问审核。 '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d3b6ea0fecb6b9179f40fa185aa770a743776eaa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523125"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459429"
 ---
 # <a name="remove-accessreview-reviewer"></a>删除 accessReview 审阅者
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中，更新要删除的用户审阅者作为现有[accessReview](../resources/accessreview.md)对象。  此操作仅允许尚未完成，访问审阅和仅访问审阅显式指定审阅者的位置。 此操作不允许用户在其中查看他们自己的访问，访问审阅，不应在其中为审阅者分配组的所有者访问审阅。 
+在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 更新现有[accessReview](../resources/accessreview.md)对象以将用户删除为审阅者。  仅允许对尚未完成的访问权限审核执行此操作, 并且仅适用于显式指定审阅者的访问审核。 此操作不允许用于用户查看其自己的访问权限的访问审核, 而不适用于将组所有者分配为审阅者的访问审核。 
 
 
 ## <a name="permissions"></a>权限
@@ -23,7 +23,7 @@ ms.locfileid: "29523125"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
+|委派（工作或学校帐户）     | AccessReview |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -35,22 +35,22 @@ DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-应提供没有请求正文。
+不应提供请求正文。
 
 
 ## <a name="response"></a>响应
-如果成功，则此方法将返回 200 系列响应代码。
+如果成功, 此方法将返回一个200系列响应代码。
 
 ## <a name="example"></a>示例
 
-这是更新一次性 （不) 访问回顾删除不必要的审阅者的示例。
+这是更新一次性 (不定期) 访问评审以删除不必要的审阅者的示例。
 
 
 ##### <a name="request"></a>请求
-在请求 URL 中，提供 accessReview 对象的 id，然后用户对象的 id。
+在请求 URL 中, 提供 accessReview 对象的 id, 然后提供 user 对象的 id。
 
 <!-- {
   "blockType": "request",

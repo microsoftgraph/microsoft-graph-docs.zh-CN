@@ -5,15 +5,13 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: edc9272d8b31804b170424a27123ca66b4611e28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513324"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464759"
 ---
 # <a name="delete-educationuser"></a>删除 educationUser
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除用户。
 
@@ -52,7 +50,7 @@ DELETE /education/users/{id}
   "name": "delete_educationuser"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/users/13019
+DELETE https://graph.microsoft.com/v1.0/education/users/{user-id}
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -66,15 +64,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete educationUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationuser-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

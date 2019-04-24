@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d7053cda0381212049bfc57be8910d84d366cd8c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805269"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32511751"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>创建 windowsUpdateForBusinessConfiguration
 
@@ -53,32 +53,32 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|传递优化模式。 可取值为：`userDefined`、`httpOnly`、`httpWithPeeringNat`、`httpWithPeeringPrivateGroup`、`httpWithInternetPeering`、`simpleDownload` 或 `bypassMode`。|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|预发布功能。 可取值为：`userDefined`、`settingsOnly`、`settingsAndExperimentations`、`notAllowed`。|
 |automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|自动更新模式。 可取值为：`userDefined`、`notifyDownload`、`autoInstallAtMaintenanceTime`、`autoInstallAndRebootAtMaintenanceTime`、`autoInstallAndRebootAtScheduledTime`、`autoInstallAndRebootWithoutEndUserControl` 或 `windowsDefault`。|
-|microsoftUpdateServiceAllowed|布尔值|允许 Microsoft 更新服务|
-|driversExcluded|布尔值|排除 Windows 更新驱动程序|
+|microsoftUpdateServiceAllowed|布尔|允许 Microsoft 更新服务|
+|driversExcluded|布尔|排除 Windows 更新驱动程序|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|安装计划|
 |qualityUpdatesDeferralPeriodInDays|Int32|推迟质量更新的天数|
 |featureUpdatesDeferralPeriodInDays|Int32|推迟功能更新的天数|
-|qualityUpdatesPaused|布尔值|暂停质量更新|
+|qualityUpdatesPaused|布尔|暂停质量更新|
 |featureUpdatesPaused|Boolean|暂停功能更新|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|质量更新暂停到期日期/时间|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|功能更新暂停到期日期/时间|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|确定将从哪些分支设备接收其更新。 可取值为：`userDefined`、`all`、`businessReadyOnly`、`windowsInsiderBuildFast`、`windowsInsiderBuildSlow`、`windowsInsiderBuildRelease`。|
-|skipChecksBeforeRestart|布尔值|设置为在重新启动之前跳过所有复选: 电池级别 = 40%、用户状态、需要显示、演示模式、全屏模式、电话呼叫状态、游戏模式等。 |
+|skipChecksBeforeRestart|布尔|设置为在重新启动之前跳过所有复选: 电池级别 = 40%、用户状态、需要显示、演示模式、全屏模式、电话呼叫状态、游戏模式等。 |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|在每月的几周安排更新安装。 可取值为：`userDefined`、`firstWeek`、`secondWeek`、`thirdWeek`、`fourthWeek`、`everyWeek`。|
 |qualityUpdatesPauseStartDate|Date|质量更新暂停开始日期。 此属性是只读的。|
 |featureUpdatesPauseStartDate|Date|功能更新暂停开始日期。 此属性是只读的。|
 |featureUpdatesRollbackWindowInDays|Int32|回滚对其有效的功能更新后的天数|
-|qualityUpdatesWillBeRolledBack|布尔值|指定是否在下一个设备签入时回滚质量更新|
-|featureUpdatesWillBeRolledBack|布尔值|指定是否在下一个设备签入时回滚功能更新|
+|qualityUpdatesWillBeRolledBack|布尔|指定是否在下一个设备签入时回滚质量更新|
+|featureUpdatesWillBeRolledBack|布尔|指定是否在下一个设备签入时回滚功能更新|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|质量更新回滚开始日期/时间|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|功能更新回滚的开始日期时间|
 |engagedRestartDeadlineInDays|Int32|在非活动时段自动安排和执行挂起的重启的期限 (以天为单位), 有效范围为2到30天|

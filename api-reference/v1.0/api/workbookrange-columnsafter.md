@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 1c74a16a84f63d0b385126e2b4b2b9b43e3ffde6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987866"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585466"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -35,9 +35,9 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|count|Int32|可选。 要在结果区域中包括的列数。 一般情况下，使用正数创建当前范围之外的范围。 为负数还可用于创建当前范围内的范围。 默认值为 1|
+|count|Int32|可选。 生成的范围中要包含的列数。 一般来说，使用正数可以在当前范围之外创建一个范围。 也可以使用负数在当前范围之内创建一个范围。 默认值为 1|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |

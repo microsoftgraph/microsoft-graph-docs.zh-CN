@@ -1,21 +1,21 @@
 ---
-title: 呼叫： 拒绝
-description: 拒绝传入的呼叫。
+title: '呼叫: 拒绝'
+description: 拒绝传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 5b42ebee208431cd0a02be291d07f580d98c87a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516187"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461302"
 ---
-# <a name="call-reject"></a>呼叫： 拒绝
+# <a name="call-reject"></a>呼叫: 拒绝
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-拒绝传入的呼叫。
+拒绝传入呼叫。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,7 +43,7 @@ POST /applications/{id}/calls/{id}/reject
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|原因|String|拒绝原因。|
+|在于|字符串|拒绝原因。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
@@ -55,7 +55,7 @@ Returns `202 Accepted` response code
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
 
-##### <a name="notification---incoming"></a>通知-传入
+##### <a name="notification---incoming"></a>通知传入
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -137,7 +137,7 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---deleted"></a>删除通知
+##### <a name="notification---deleted"></a>通知-已删除
 
 ```http
 POST https://bot.contoso.com/api/calls

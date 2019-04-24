@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c60644e72a5885a2155ed8ef9feae965bd86b0cb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780845"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32485925"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>创建 windowsUniversalAppXContainedApp
 
@@ -53,7 +53,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|WindowsUniversalAppX 应用程序包含的应用程序用户模型 ID。|
+|appUserModelId|字符串|WindowsUniversalAppX 应用程序包含的应用程序用户模型 ID。|
 
 
 

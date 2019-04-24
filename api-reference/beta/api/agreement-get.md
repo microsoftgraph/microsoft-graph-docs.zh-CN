@@ -1,19 +1,19 @@
 ---
 title: 获取协议
-description: 检索的属性和协议对象的关系。
+description: 检索协议对象的属性和关系。
 localization_priority: Normal
 ms.openlocfilehash: da36b6cb2d12c92d4bf12ec2ce4836f5bbc5efe1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517125"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459190"
 ---
 # <a name="get-agreement"></a>获取协议
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和[协议](../resources/agreement.md)对象的关系。
+检索[协议](../resources/agreement.md)对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -36,12 +36,12 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[协议](../resources/agreement.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[协议](../resources/agreement.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 <!-- {

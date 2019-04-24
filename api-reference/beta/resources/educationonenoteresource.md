@@ -1,27 +1,27 @@
 ---
 title: educationOneNoteResource 资源类型
-description: 'EducationResource 一个子类。 这表示在 OneNote 页面的位置。  '
+description: 'educationResource 的子类。 这表示 OneNote 页面的位置。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 60b0e4647f1a601d3cbe206e264f7d288ee2110c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521416"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507194"
 ---
 # <a name="educationonenoteresource-resource-type"></a>educationOneNoteResource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)一个子类。 这表示在 OneNote 页面的位置。  
+[educationResource](educationresource.md)的子类。 这表示 OneNote 页面的位置。  
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|pageUrl|String|在 OneNote 中页的 Microsoft Graph URL。|
-|sectionName|String|分配应复制到或已复制到的部分名称。|
+|pageUrl|字符串|OneNote 中页面的 Microsoft Graph URL。|
+|sectionName|字符串|应将分配复制到中或复制到中的部分名称。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: db854a7a7331600ee33352010439936c59e90e08
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32485409"
 ---
 # <a name="create-auditevent"></a>创建 auditEvent
 
@@ -52,12 +52,12 @@ POST /deviceManagement/auditEvents
 |:---|:---|:---|
 |id|String|实体的键。|
 |displayName|字符串|事件显示名称。|
-|componentName|String|组件名称。|
+|componentName|字符串|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
-|activity|String|活动的友好名称。|
+|activity|字符串|活动的友好名称。|
 |activityDateTime|DateTimeOffset|执行活动时的日期时间（UTC 时间）。|
-|activityType|String|执行的活动类型。|
-|activityOperationType|String|活动的 HTTP 操作类型。|
+|activityType|字符串|执行的活动类型。|
+|activityOperationType|字符串|活动的 HTTP 操作类型。|
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|

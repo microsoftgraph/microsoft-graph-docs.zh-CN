@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 570970296444b5bb4d5033bf26a03214d9fa8dac
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957359"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585213"
 ---
 # <a name="delete-messagerule"></a>删除 messageRule
 

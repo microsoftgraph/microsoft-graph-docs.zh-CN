@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 46b8b8eb12c2ac6e69b7d9b6b26bec98c77c8e4b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794258"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32483640"
 ---
 # <a name="update-deviceinstallstate"></a>更新 deviceInstallState
 
@@ -52,13 +52,13 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|deviceName|String|设备名称。|
-|deviceId|String|设备 ID。|
+|deviceName|字符串|设备名称。|
+|deviceId|字符串|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
 |installState|[installState](../resources/intune-books-installstate.md)|电子图书的安装状态。 可取值为：`notApplicable`、`installed`、`failed`、`notInstalled`、`uninstallFailed`、`unknown`。|
-|errorCode|String|安装失败的错误代码。|
-|osVersion|String|操作系统版本。|
-|osDescription|String|操作系统说明。|
+|errorCode|字符串|安装失败的错误代码。|
+|osVersion|字符串|操作系统版本。|
+|osDescription|字符串|操作系统说明。|
 |userName|String|设备用户名。|
 
 

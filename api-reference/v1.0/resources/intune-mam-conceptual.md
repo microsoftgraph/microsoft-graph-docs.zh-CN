@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 85c002b9b9a8271b47209ca11bb27eb2885815a1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984379"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465550"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -34,15 +34,15 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [IPv6 范围](intune-mam-ipv6range.md)
 - [JSON](intune-mam-json.md)
 - [键/值对](intune-mam-keyvaluepair.md)
-- [托管应用程序剪贴板共享级别](intune-mam-managedappclipboardsharinglevel.md)
+- [受管理的应用剪贴板共享级别](intune-mam-managedappclipboardsharinglevel.md)
 - [托管的应用配置](intune-mam-managedappconfiguration.md)
-- [托管应用程序数据的加密类型](intune-mam-managedappdataencryptiontype.md)
-- [托管的应用程序数据存储位置](intune-mam-managedappdatastoragelocation.md)
-- [托管的应用程序数据传输级别](intune-mam-managedappdatatransferlevel.md)
+- [受管理应用的数据加密类型](intune-mam-managedappdataencryptiontype.md)
+- [受管理应用的数据存储位置](intune-mam-managedappdatastoragelocation.md)
+- [受管理应用的数据传输级别](intune-mam-managedappdatatransferlevel.md)
 - [托管的应用诊断状态](intune-mam-managedappdiagnosticstatus.md)
-- [托管的应用程序标记原因](intune-mam-managedappflaggedreason.md)
+- [受管理应用的已标记原因](intune-mam-managedappflaggedreason.md)
 - [托管的应用操作](intune-mam-managedappoperation.md)
-- [托管的应用程序 PIN 字符集。](intune-mam-managedapppincharacterset.md)
+- [托管的应用 PIN 字符集](intune-mam-managedapppincharacterset.md)
 - [托管的应用策略](intune-mam-managedapppolicy.md)
 - [托管应用策略部署摘要](intune-mam-managedapppolicydeploymentsummary.md)
 - [每个应用的托管应用策略部署摘要](intune-mam-managedapppolicydeploymentsummaryperapp.md)
@@ -63,7 +63,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows 信息保护应用锁定程序文件](intune-mam-windowsinformationprotectionapplockerfile.md)
 - [Windows 信息保护数据恢复证书](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Windows 信息保护桌面应用](intune-mam-windowsinformationprotectiondesktopapp.md)
-- [Windows 的信息保护实施级别](intune-mam-windowsinformationprotectionenforcementlevel.md)
+- [Windows 信息保护强制级别](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Windows 信息保护 IP 范围集合](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Windows 信息保护网络学习摘要](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
 - [Windows 信息保护 PIN 字符要求](intune-mam-windowsinformationprotectionpincharacterrequirements.md)

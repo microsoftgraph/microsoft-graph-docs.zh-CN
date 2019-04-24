@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 588338589d90ad54db43810d5fd45541cea483eb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800649"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459121"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>managedAppDiagnosticStatus 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "31800649"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|validationName|String|验证友好名称|
+|validationName|字符串|验证友好名称|
 |state|String|操作状态|
 |mitigationInstruction|String|有关如何降低失败验证的说明|
 

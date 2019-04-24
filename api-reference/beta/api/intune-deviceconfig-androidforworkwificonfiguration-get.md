@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 76ce6b40de38101478cbf7ef79879e0928ef9b94
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32478026"
 ---
 # <a name="get-androidforworkwificonfiguration"></a>获取 androidForWorkWiFiConfiguration
 

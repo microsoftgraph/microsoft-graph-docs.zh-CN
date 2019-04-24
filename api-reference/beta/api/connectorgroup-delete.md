@@ -3,11 +3,11 @@ title: 删除 connectorGroup
 description: 删除 connectorGroup。
 localization_priority: Normal
 ms.openlocfilehash: a0fd138281b8337df49388f4a10dc34cc02da18d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516026"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455910"
 ---
 # <a name="delete-connectorgroup"></a>删除 connectorGroup
 
@@ -24,7 +24,7 @@ ms.locfileid: "29516026"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.ReadWrite.All |
 
-> **注意：** 连接器组不能有与之关联的任何连接器。
+> **注意:** 连接器组不能有任何关联的连接器。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ DELETE /connectorGroups/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | Bearer  必需|
+| Authorization  | 负载. 必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

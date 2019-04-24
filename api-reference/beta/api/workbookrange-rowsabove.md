@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b1258a55c9b371070216b1955ea40cd66a58cac6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509453"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460973"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -39,7 +39,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 |:---------------|:--------|:----------|
 |count|Int32|可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |

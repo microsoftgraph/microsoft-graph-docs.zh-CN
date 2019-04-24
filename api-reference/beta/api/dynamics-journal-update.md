@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 5c5614a84852e81977cdf443543364507544bd27
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365855"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458661"
 ---
 # <a name="update-journals"></a>更新日记
 更新 Dynamics 365 Business Central 的日记对象的属性。

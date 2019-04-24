@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6b83be788af46e781706718e43cc68b39a75f79d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774272"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463507"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>windowsMobileMSI 资源类型
 
@@ -25,39 +25,39 @@ ms.locfileid: "31774272"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 windowsMobileMSIs](../api/intune-apps-windowsmobilemsi-list.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 集合|列出 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 对象的属性和关系。|
-|[获取 windowsMobileMSI](../api/intune-apps-windowsmobilemsi-get.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|读取 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 对象的属性和关系。|
-|[创建 windowsMobileMSI](../api/intune-apps-windowsmobilemsi-create.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|创建新的 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 对象。|
-|[删除 windowsMobileMSI](../api/intune-apps-windowsmobilemsi-delete.md)|无|删除 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)。|
-|[更新 windowsMobileMSI](../api/intune-apps-windowsmobilemsi-update.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|更新 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 对象的属性。|
+|[List windowsMobileMSIs](../api/intune-apps-windowsmobilemsi-list.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 集合|列出 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 对象的属性和关系。|
+|[Get windowsMobileMSI](../api/intune-apps-windowsmobilemsi-get.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|读取 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 对象的属性和关系。|
+|[Create windowsMobileMSI](../api/intune-apps-windowsmobilemsi-create.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|创建新的 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 对象。|
+|[Delete windowsMobileMSI](../api/intune-apps-windowsmobilemsi-delete.md)|无|删除 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)。|
+|[Update windowsMobileMSI](../api/intune-apps-windowsmobilemsi-update.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|更新 [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|字符串|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|字符串|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |owner|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|committedContentVersion|字符串|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
+|fileName|字符串|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |commandLine|String|命令行。|
-|productCode|String|产品代码。|
-|productVersion|String|Windows Mobile MSI 业务线 (LoB) 应用的产品版本。|
+|productCode|字符串|产品代码。|
+|productVersion|字符串|Windows Mobile MSI 业务线 (LoB) 应用的产品版本。|
 |ignoreVersionDetection|Boolean|控制应用的版本是否将用于检测安装在设备上的应用的布尔值。 对于使用自更新功能的 Windows Mobile MSI 业务线 (LoB) 应用，将此值设置为 true。|
 |identityVersion|String|标识版本。|
 |useDeviceContext|布尔值|指示是否在设备上下文中安装双模式 MSI。 如果为 true, 则将为所有用户安装应用程序。 如果为 false, 将按用户安装应用程序。 如果为 null, 服务将使用 MSI 包的默认安装上下文。 在双模式 MSI 的情况下, 此默认值将为每个用户。  不能为非双重模式的应用程序进行设置。  在首次创建应用程序后, 不能更改。|

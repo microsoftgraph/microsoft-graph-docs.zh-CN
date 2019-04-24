@@ -5,16 +5,13 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 335ea1a1d85d874fc0a33c51909aeb9575730f2b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526968"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502169"
 ---
 # <a name="create-acceptedsender"></a>删除 acceptedSender
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 向 acceptedSender 列表中添加新用户或组。
 
 在请求主体的 `@odata.id` 中指定用户或组。已接受的发件人列表中的用户可以发布到组对话。确保未在接受的发件人和拒绝的发件人列表中指定同一用户或组，否则会发生错误。
@@ -52,12 +49,12 @@ POST /groups/{id}/acceptedSenders/$ref
   "name": "create_acceptedsender"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref
+POST https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
+  "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
 
@@ -73,15 +70,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create acceptedSender",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-post-acceptedsenders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 59fd4d5783fa11ceac5f0ac6f86495ccd17d215a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806207"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32489463"
 ---
 # <a name="create-mobileappcontentfile"></a>创建 mobileAppContentFile
 
@@ -60,8 +60,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
 |manifest|Binary|清单信息。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
-|isFrameworkFile|布尔值|一个指示文件是否为框架文件的值。|
-|isDependency|布尔值|内容文件是否依赖于主要内容文件。|
+|isFrameworkFile|布尔|一个指示文件是否为框架文件的值。|
+|isDependency|布尔|内容文件是否依赖于主要内容文件。|
 
 
 

@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 1d644e3f9f74a2ff34ad557f8dac97bc131f7f03
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520499"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455581"
 ---
 # <a name="update-contactfolder"></a>更新 contactfolder
 
@@ -42,9 +42,9 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|字符串|文件夹的显示名称。|
+|displayName|String|文件夹的显示名称。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
-|wellKnownName|string|如果文件夹为识别的文件夹的文件夹的名称。 当前`contacts`是仅识别联系人文件夹。|
+|wellKnownName|字符串|文件夹的名称 (如果文件夹是可识别的文件夹)。 当前`contacts`是唯一可识别的 "联系人" 文件夹。|
 
 ## <a name="response"></a>响应
 

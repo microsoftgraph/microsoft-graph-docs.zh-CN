@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 84c12d56e33d2e8a1a4c44d2a77faad470eed8b7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805563"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466257"
 ---
 # <a name="delete-securitybaselinesettingstate"></a>删除 securityBaselineSettingState
 

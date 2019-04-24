@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a014d254331a7639a0a7848a15543124c46be88f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795014"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32483024"
 ---
 # <a name="delete-userinstallstatesummary"></a>删除 userInstallStateSummary
 

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: bef5008bbacb1729f48758b228e55a3f6adc2af0
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365470"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507299"
 ---
 # <a name="journal-resource-type"></a>日记资源类型
 代表 Dynamics 365 Business Central 中的日记。
@@ -20,10 +20,10 @@ ms.locfileid: "30365470"
 
 | 方法                                            |返回类型|说明    |
 |:--------------------------------------------------|:----------|:--------------|
-|[获取日记](../api/dynamics-journal-get.md)      |日志    |获取日记。   |
+|[获取分类账](../api/dynamics-journal-get.md)      |日志    |获取日记。   |
 |[过帐日记](../api/dynamics-create-journal.md)  |日志    |创建日记。|
 |[修补程序日记](../api/dynamics-journal-update.md) |日志    |更新日记。|
-|[删除日记](../api/dynamics-journal-delete.md)|无       |删除日记。|
+|[删除分类账](../api/dynamics-journal-delete.md)|无       |删除日记。|
 
 ## <a name="properties"></a>属性
 | 属性           | 类型                  |说明                                           |

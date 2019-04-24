@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 32746cfbbdd65255108c9cc0df3fa9dd587ba09a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962356"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585179"
 ---
 # <a name="update-iosdevicefeaturesconfiguration"></a>更新 iosDeviceFeaturesConfiguration
 
@@ -51,10 +51,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|assetTagTemplate|String|设备的资产标签信息，显示在登录窗口和锁定屏幕上。|
+|assetTagTemplate|字符串|设备的资产标签信息，显示在登录窗口和锁定屏幕上。|
 |lockScreenFootnote|String|显示在登录窗口和锁定屏幕上的脚注。 在 iOS 9.3.1 及更高版本中可用。|
 |homeScreenDockIcons|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) 集合|主屏幕 Dock 上显示的应用和文件夹的列表。 该集合最多可包含 500 个元素。|
 |homeScreenPages|[iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md) 集合|主屏幕上的页面的列表。 该集合最多可包含 500 个元素。|

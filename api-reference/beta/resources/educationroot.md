@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 91f0162402b8c87042fab622710d314f27d6f4e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523510"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507145"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot 资源类型
 
@@ -34,9 +34,9 @@ ms.locfileid: "29523510"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|classes|[educationClass](educationclass.md) 集合| 只读。可为 NULL。|
-|me|[educationUser](educationuser.md)| 只读。可为 NULL。|
-|schools|[educationSchool](educationschool.md) 集合| 只读。可为 NULL。|
+|classes|[educationClass](educationclass.md) 集合| 只读。 可为 Null。|
+|me|[educationUser](educationuser.md)| 只读。 可为 Null。|
+|schools|[educationSchool](educationschool.md) 集合| 只读。 可为 Null。|
 |users|[educationUser](educationuser.md) 集合| 只读。可为 NULL。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

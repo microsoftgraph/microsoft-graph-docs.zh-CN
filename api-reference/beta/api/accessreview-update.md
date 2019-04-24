@@ -1,23 +1,23 @@
 ---
 title: 更新 accessReview
-description: 在 Azure AD 访问评论功能中，更新现有 accessReview 对象更改一个或多个其属性。
+description: 在 "Azure AD 访问评论" 功能中, 更新现有 accessReview 对象以更改其一个或多个属性。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1256ccdabea8eb5c0c0ffb3365e0c87276999236
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524364"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459442"
 ---
 # <a name="update-accessreview"></a>更新 accessReview
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中，更新现有[accessReview](../resources/accessreview.md)对象更改一个或多个其属性。
+在 "Azure AD[访问评论](../resources/accessreviews-root.md)" 功能中, 更新现有[accessReview](../resources/accessreview.md)对象以更改其一个或多个属性。
 
-此 API 不是要更改的审阅者或评审的决策。  若要更改审阅者，请使用[addReviewer](accessreview-addreviewer.md)或[removeReviewer](accessreview-removereviewer.md) Api。  若要停止已启动一次性审阅中或已启动的定期查看实例，早期，使用[停止](accessreview-stop.md)API。 若要应用到目标组或应用程序的访问权限的决策，使用[应用](accessreview-apply.md)API。 
+此 API 不用于更改审阅的审阅者或决策。  若要更改审阅者, 请使用[addReviewer](accessreview-addreviewer.md)或[removeReviewer](accessreview-removereviewer.md) api。  若要停止已启动的一次性审核, 或提前审核已启动的定期检查实例, 请提前使用[stop](accessreview-stop.md) API。 若要将决策应用于目标组或应用访问权限, 请使用[应用](accessreview-apply.md)API。 
 
 
 ## <a name="permissions"></a>权限
@@ -25,7 +25,7 @@ ms.locfileid: "29524364"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
+|委派（工作或学校帐户）     | AccessReview |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -37,31 +37,31 @@ PATCH /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[accessReview](../resources/accessreview.md)对象的参数的 JSON 表示形式。
+在请求正文中, 提供[accessReview](../resources/accessreview.md)对象的参数的 JSON 表示形式。
 
-下表显示可更新 accessReview 时提供的属性。
+下表显示了在更新 accessReview 时可提供的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | 访问审阅名称。  |
-| `startDateTime`           |`DateTimeOffset`                                                | 审阅安排在启动时 DateTime。  这必须是在将来的日期。   |
-| `endDateTime`             |`DateTimeOffset`                                                | 审阅安排结束时 DateTime。 这必须是至少一个日期晚于开始日期。   |
-| `description`             |`String`                                                        | 说明，向审阅者显示。 |
+| `startDateTime`           |`DateTimeOffset`                                                | 计划开始评审时的日期时间。  这必须是将来的日期。   |
+| `endDateTime`             |`DateTimeOffset`                                                | 计划结束评审时的日期/时间。 此时间必须至少为一个晚于开始日期的一天。   |
+| `description`             |`String`                                                        | 要向审阅者显示的说明。 |
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`204, Accepted`响应代码和响应正文中的[accessReview](../resources/accessreview.md)对象。
+如果成功, 此方法在响应`204, Accepted`正文中返回响应代码和[accessReview](../resources/accessreview.md)对象。
 
 ## <a name="example"></a>示例
 
-这是一次性的 （不) 访问审阅更新的示例。
+这是更新一次性 (不定期) 访问评审的示例。
 
 ##### <a name="request"></a>请求
-在请求正文中，提供[accessReview](../resources/accessreview.md)对象的新属性的 JSON 表示形式。
+在请求正文中, 提供[accessReview](../resources/accessreview.md)对象的新属性的 JSON 表示形式。
 
 <!-- {
   "blockType": "request",

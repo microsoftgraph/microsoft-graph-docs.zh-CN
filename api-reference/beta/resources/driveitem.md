@@ -6,13 +6,13 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 7ac95379d8e5eeae07e520f40ae9403c47e98f58
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789639"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507579"
 ---
-# <a name="driveitem-resource-type"></a>driveItem 资源类型
+# <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -146,9 +146,9 @@ ms.locfileid: "30789639"
 | children           | driveItem 集合        | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
 | createdByUser      | [用户][]                    | 创建了项的用户的身份。 只读。
 | lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。 只读。
-| listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 只读。 可为 null。
+| listItem           | [listItem][]                | 对于 SharePoint 中的驱动器，关联的文档库列表项。 此为只读属性。 可为 null。
 | permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
-| 订阅      | [订阅][]集合 | 对项目的一组订阅。 仅在驱动器的根目录上受支持。
+| 订阅      | [订阅][]集合 | 项目上的订阅集。 仅在驱动器根目录上支持。
 | 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
 | 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 null。
 | 工作簿           | [workbook][]                | 如果是 Excel 工作表文件，访问工作簿 API 以使用工作表的内容。 可为 Null。
@@ -159,7 +159,7 @@ ms.locfileid: "30789639"
 
 | 属性名称                     | 类型   | 说明
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | string | 为创建新项目的操作解决冲突的行为。你可以使用值 *fail*、*replace* 或 *rename*。PUT 的默认值是*replace*。绝不会返回包含该批注的项目。只写。
+| @microsoft.graph.conflictBehavior | 字符串 | 为创建新项目的操作解决冲突的行为。你可以使用值 *fail*、*replace* 或 *rename*。PUT 的默认值是*replace*。绝不会返回包含该批注的项目。只写。
 | @microsoft.graph.downloadUrl      | string | 一个可用于下载此文件的内容的 URL。不需要使用此 URL 进行身份验证。只读。
 | @microsoft.graph.sourceUrl        | string | 发出 PUT 请求时，此实例批注可用于指示服务下载 URL 内容并将其存储为文件。只写。
 
@@ -192,7 +192,7 @@ ms.locfileid: "30789639"
 | [添加权限](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [列出权限](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [删除权限](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [获取 WebSocket 通道][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
+| [获取 WebSocket 频道][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [预览项][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md

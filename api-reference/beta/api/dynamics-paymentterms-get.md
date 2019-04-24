@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 14f7b2b36b687190817dc348e975ba1a23c99aae
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365505"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458409"
 ---
 # <a name="get-paymentterms"></a>获取 paymentTerms
 检索 Dynamics 365 Business Central 的付款条款对象的属性和关系。

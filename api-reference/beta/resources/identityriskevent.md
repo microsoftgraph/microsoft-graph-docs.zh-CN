@@ -1,57 +1,57 @@
 ---
 title: identityRiskEvent 资源类型
-description: 检测到的 Azure Active Directory 标识保护风险事件。 它是为每个特定的风险事件类型的基类型：
+description: 'Azure Active Directory 标识保护检测到的风险事件。 它是每个特定风险事件类型的基本类型:'
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
 ms.openlocfilehash: b5c36ab898805c0638cc199ff8cfb893444f04ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514178"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506389"
 ---
 # <a name="identityriskevent-resource-type"></a>identityRiskEvent 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检测到的[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)风险事件。 它是为每个特定的风险事件类型的基类型：
+[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的风险事件。 它是每个特定风险事件类型的基本类型:
 
 | 事件类型         | 说明|
 |:---------------|:-----------|
-|[anonymousipRiskEvent](anonymousipriskevent.md) | 从匿名登录 IP 地址。 |
-|[malwareRiskEvent](malwareriskevent.md) | 登录从感染恶意软件的设备。 |
-|[impossibleTravelRiskEvent](impossibletravelriskevent.md) | 对在典型的位置的意思出差。 |
-|[leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) | 具有泄漏凭据的用户。 |
-|[suspiciousIpRiskEvent](suspiciousipriskevent.md) | 登录从可疑 IP 地址。 |
-|[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) | 登录从不熟悉的位置。 |
+|[anonymousipRiskEvent](anonymousipriskevent.md) | 来自匿名 IP 地址的登录。 |
+|[malwareRiskEvent](malwareriskevent.md) | 来自恶意软件感染的设备的登录。 |
+|[impossibleTravelRiskEvent](impossibletravelriskevent.md) | 无法传播到非典型位置。 |
+|[leakedCredentialsRiskEvent](leakedcredentialsriskevent.md) | 凭据泄露的用户。 |
+|[suspiciousIpRiskEvent](suspiciousipriskevent.md) | 来自可疑 IP 地址的登录。 |
+|[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) | 来自不熟悉位置的登录。 |
 
-[Azure AD 身份保护文档](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-risk-events)中，可以找到有关风险事件的完整信息。
+有关风险事件的完整信息, 请参阅[Azure AD Identity Protection 文档](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-risk-events)。
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 identityRiskEvent](../api/identityriskevent-get.md) | [identityRiskEvent](identityriskevent.md) |读取属性和 identityRiskEvent 对象的关系。|
+|[获取 identityRiskEvent](../api/identityriskevent-get.md) | [identityRiskEvent](identityriskevent.md) |读取 identityRiskEvent 对象的属性和关系。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|closedDateTime|dateTimeOffset| 日期和时间的风险事件已关闭|
-|createdDateTime|dateTimeOffset| 日期和时间的风险事件的创建。 始终是大于或等于风险事件本身的 datetime。 这是正确的属性，以用作筛选器时查询风险事件。|
+|closedDateTime|dateTimeOffset| 风险事件关闭的日期和时间|
+|createdDateTime|dateTimeOffset| 风险事件的创建日期和时间。 此值始终大于或等于风险事件本身的日期时间。 这是查询风险事件时用作筛选器的正确属性。|
 |id|string| 只读|
-|riskEventDateTime|dateTimeOffset| 日期和风险事件发生的时间|
-|riskEventStatus|string| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
+|riskEventDateTime|dateTimeOffset| 风险事件发生的日期和时间|
+|riskEventStatus|字符串| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
 |riskLevel|string| 可取值为：`low`、`medium`、`high`。|
-|riskEventType|string| 风险类型|
-|userDisplayName|string| 风险的用户的名称|
-|userId|string| 风险的用户 id|
-|userPrincipalName|string| 风险的用户的用户主体名称|
+|riskEventType|字符串| 风险的类型|
+|userDisplayName|字符串| 具有风险的用户的名称|
+|userId|字符串| 用户面临风险的 id|
+|userPrincipalName|字符串| 用户面临风险的用户主体名称|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 只读。可为 NULL。|
+|impactedUser|[用户](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 45f8fcc08fb9b3b260ff6446c99948124777f327
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779116"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32470480"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>创建 deviceCompliancePolicySettingStateSummary
 
@@ -51,7 +51,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|setting|String|设置类名和属性名。|
+|setting|字符串|设置类名和属性名。|
 |settingName|String|设置的名称。|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|设置平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |unknownDeviceCount|Int32|未知设备的数量|

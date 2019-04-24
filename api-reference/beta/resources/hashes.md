@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 希
 localization_priority: Normal
 ms.openlocfilehash: be7d3b27b1ef22976dc93ea5aecbc2a64031e8b4
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480115"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506347"
 ---
 # <a name="hashes-resource-type"></a>Hashes 资源类型
 
@@ -41,8 +41,8 @@ ms.locfileid: "30480115"
 
 | 属性         | 类型   | 说明                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | 文件内容的 SHA1 哈希（如果可用）。只读。 |
-| **crc32Hash**    | String | 文件的 CRC32 值（如果可用）。只读。            |
+| **sha1Hash**     | 字符串 | 文件内容的 SHA1 哈希（如果可用）。只读。 |
+| **crc32Hash**    | 字符串 | 文件的 CRC32 值（如果可用）。只读。            |
 | **quickXorHash** | String | 文件的专有哈希，可用于确定文件内容是否更改（如果存在）。只读。 |
 
 **注意：** 在某些情况下，哈希值不可用。如果出现这种情况，将在下载项后对项上的哈希值进行更新。

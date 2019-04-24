@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ff0032426fd28bec8ab0f022bffa2bb52d063408
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779235"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32508321"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a>创建 deviceManagementIntentDeviceState
 
@@ -52,11 +52,11 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceStates
 |:---|:---|:---|
 |id|String|ID|
 |userPrincipalName|String|在设备上报告的用户主体名称|
-|userName|String|在设备上报告的用户名|
+|userName|字符串|在设备上报告的用户名|
 |deviceDisplayName|String|报告的设备名称|
 |lastReportedDateTime|DateTimeOffset|意向报表的上次修改日期时间|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|意图的设备状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
-|deviceId|String|报告的设备 id|
+|deviceId|字符串|报告的设备 id|
 
 
 

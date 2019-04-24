@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 4fd50e2e0b0f289f719dd6636eab16544e6a80f5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641965"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460917"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint 资源类型
 
@@ -23,13 +23,13 @@ ms.locfileid: "29641965"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 ChartPoint](../api/chartpoint-get.md) | [ChartPoint](chartpoint.md) |读取 chartPoint 对象的属性和关系。|
-|[List](../api/chartpoint-list.md) | [ChartPoint](chartpoint.md) 集合 |获取 chartPoint 对象集合。 |
+|[列出](../api/chartpoint-list.md) | [ChartPoint](chartpoint.md) 集合 |获取 chartPoint 对象集合。 |
 |[Itemat](../api/chartpointscollection-itemat.md)|[ChartPoint](chartpoint.md)|根据其在系列中的位置检索点。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|value|对象|返回图表点的值。只读。|
+|值|object|返回图表点的值。只读。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

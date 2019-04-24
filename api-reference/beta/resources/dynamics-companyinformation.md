@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 0f8671cbade11cc9db6bf797c39eb17acf286ef7
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365911"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507271"
 ---
 # <a name="companyinformation-resource-type"></a>companyInformation 资源类型
 表示为 Dynamics 365 Business Central 中的当前公司指定的信息, 例如名称、地址、电子邮件地址和网站地址。
@@ -30,16 +30,16 @@ ms.locfileid: "30365911"
 |id            |GUID|公司的唯一 ID。 不可编辑。|
 |displayName   |string   |公司的显示名称。           |
 |address       |[翻.省略](../resources/dynamics-complextypes.md)|公司地址。 查看复杂类型以获取其他详细信息。|
-|phoneNumber   |string   |公司的电话号码。       |
-|faxNumber     |string   |公司的传真号码。             |
-|电子邮件         |string   |公司的电子邮件地址。          |
-|website       |string   |公司的网站地址。        |
-|taxRegistrationNumber|string|公司的税务登记编号。|
-|currencyCode  |string   |公司参与业务的货币。 只读。|
+|phoneNumber   |字符串   |公司的电话号码。       |
+|faxNumber     |字符串   |公司的传真号码。             |
+|email         |字符串   |公司的电子邮件地址。          |
+|website       |字符串   |公司的网站地址。        |
+|taxRegistrationNumber|字符串|公司的税务登记编号。|
+|currencyCode  |字符串   |公司参与业务的货币。 只读。|
 |currentFiscalYearStartDate|date|公司的当前会计年度开始日期。 只读。|
-|领域      |string   |公司所属的行业。  |
+|领域      |字符串   |公司所属的行业。  |
 |头像       |stream   |公司徽标。 只读。          |
-|businessProfileId|string|链接到财务公司的业务配置文件 ID。 只读。|
+|businessProfileId|字符串|链接到财务公司的业务配置文件 ID。 只读。|
 |lastModifiedDateTime|datetime|上次修改公司的日期/时间。 只读。|  
 
 

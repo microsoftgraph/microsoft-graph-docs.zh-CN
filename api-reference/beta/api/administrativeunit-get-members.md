@@ -1,21 +1,21 @@
 ---
 title: 获取成员
-description: 使用此 API 获取一个管理单元中的特定成员 （用户或组）。
+description: 使用此 API 获取管理单元中的特定成员 (用户或组)。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 67067d0e465aab61449a42cd833f9e6ce07fcd12
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526793"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459624"
 ---
 # <a name="get-a-member"></a>获取成员
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 获取一个管理单元中的特定成员 （用户或组）。
+使用此 API 获取管理单元中的特定成员 (用户或组)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,7 +42,7 @@ GET /administrativeUnits/{id}/members/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[用户](../resources/user.md)或[组](../resources/group.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[user](../resources/user.md)或[group](../resources/group.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -53,7 +53,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是 respone 的一个示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 ```http
 HTTP/1.1 200 OK

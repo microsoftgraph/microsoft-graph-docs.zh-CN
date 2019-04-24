@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 485d254252bfdf15df5fd8b3faea4b19f6f59f05
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365666"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458339"
 ---
 # <a name="delete-employees"></a>删除员工
 从 Dynamics 365 Business Central 中删除员工。

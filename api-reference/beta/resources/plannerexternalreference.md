@@ -1,32 +1,30 @@
 ---
 title: plannerExternalReference 资源类型
-description: '**plannerExternalReference** 资源表示引用（文件、URL 等附件）的元数据。它是 externalReferences 对象的属性-值对的值。'
+description: '**plannerExternalReference**资源表示引用的元数据 (如文件、URL)。 它是 externalReferences 对象中的属性-值对的值。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 95084e8a4d2d1b117fc627902b2bd8163fcc82f6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461239"
 ---
 # <a name="plannerexternalreference-resource-type"></a>plannerExternalReference 资源类型
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-**plannerExternalReference** 资源表示引用（文件、URL 等附件）的元数据。它是 [externalReferences 对象](plannerexternalreferences.md)的属性-值对的值。
+**plannerExternalReference**资源表示引用的元数据 (如文件、URL)。 它是[externalReferences 对象](plannerexternalreferences.md)中的属性-值对的值。
 
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|alias|String|描述引用的别名。|
-|lastModifiedBy|[identitySet](identityset.md)|只读。上一次修改它的用户 ID。|
-|lastModifiedDateTime|DateTimeOffset|只读。上一次修改它的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|previewPriority|String|用于设置在任务上以预览形式显示引用的相对优先级顺序。|
-|type|String|用于描述引用的类型。类型包括：`PowerPoint`、`Word`、`Excel`、`Other`。|
+|alias|字符串|用于描述引用的名称别名。|
+|lastModifiedBy|[identitySet](identityset.md)|只读。 上次修改此 ID 的用户 ID。|
+|lastModifiedDateTime|DateTimeOffset|只读。 上次修改的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|previewPriority|字符串|用于设置引用将显示为任务预览的相对优先级顺序。|
+|类型|String|用于描述引用的类型。 类型包括: `PowerPoint`、 `Word`、 `Excel`、 `Other`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -52,15 +50,10 @@ ms.locfileid: "29518707"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "plannerExternalReference resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerexternalreference.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -1,33 +1,33 @@
 ---
 title: 强制域删除
-description: 删除使用长时间运行的异步操作的域。
+description: 使用异步长时间运行的操作删除域。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bbf56fdd2f623a918b43298626bd08269ad922ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918425"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467503"
 ---
 # <a name="force-domain-deletion"></a>强制域删除
 
-删除使用长时间运行的异步操作的域。
+使用异步长时间运行的操作删除域。
 
-此操作的一部分执行下列操作：
+在此操作过程中, 将执行以下操作:
 
-* 更新`userPrincipalName`， `mail`，和`proxyAddresses`属性`users`与要使用初始 onmicrosoft.com 域的已删除域的引用。
+* 通过将`userPrincipalName`对`mail`已删除`proxyAddresses`域的引用的、和属性更新为使用初始 onmicrosoft.com 域。 `users`
 
-* 更新`mail`属性`groups`与要使用初始 onmicrosoft.com 域的已删除域的引用。
+* 将`groups`包含`mail`对已删除域的引用的属性更新为使用初始 onmicrosoft.com 域。
 
-* 更新`identifierUris`属性`applications`与要使用初始 onmicrosoft.com 域的已删除域的引用。
+* 将`applications`包含`identifierUris`对已删除域的引用的属性更新为使用初始 onmicrosoft.com 域。
 
-* 如果要重命名的对象的数量大于 1000年，则返回错误。
+* 如果要重命名的对象的数量大于 1000, 则返回错误。
 
-* 如果的`applications`要重命名为多租户应用程序，则返回一个错误。
+* 如果要重命名`applications`的其中一个是多租户应用, 则会返回错误。
 
-域删除完成后，已删除的域的 API 操作将返回 HTTP 404 状态代码。 若要验证删除的域，可以执行[get 域](domain-get.md)操作。
+域删除完成后, 已删除域的 API 操作将返回 HTTP 404 状态代码。 若要验证域的删除, 您可以执行 "[获取域](domain-get.md)" 操作。
 
 ## <a name="permissions"></a>权限
 
@@ -49,7 +49,7 @@ POST /domains/{id}/forceDelete
 
 > 对于 {id}，请使用其完全限定的域名指定该域。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称 | 说明 |
 |:---------------|:----------|
@@ -62,11 +62,11 @@ POST /domains/{id}/forceDelete
 
 | 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| 若要禁用其重命名用户帐户的选项。 如果禁用的用户帐户，则用户将不允许登录。 如果设置为**true** `users`更新为属于此操作将被禁用。  默认值为**true**。 |
+|`disableUserAccounts`|`Boolean`| 禁用重命名的用户帐户的选项。 如果用户帐户已禁用, 则不允许用户登录。 如果设置为**true** , `users`则将禁用作为此操作的一部分进行更新的。  默认值为 **True**。 |
 
 ## <a name="response-body"></a>响应正文
 
-如果成功，此方法返回`HTTP/1.1 204 OK`状态代码。
+如果成功, 此方法将`HTTP/1.1 204 OK`返回状态代码。
 
 ## <a name="example"></a>示例
 

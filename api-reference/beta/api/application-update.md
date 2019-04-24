@@ -1,21 +1,21 @@
 ---
 title: 更新应用程序
-description: 更新应用程序对象的属性。
+description: 更新 application 对象的属性。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 335281a0ac37ae3b966f731112223f019a67437d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642826"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459379"
 ---
 # <a name="update-application"></a>更新应用程序
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新应用程序对象的属性。
+更新 application 对象的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,27 +41,27 @@ PATCH /applications/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowPublicClient|布尔值| 指定应用程序可用作公共客户端。 例如，移动设备上运行安装的应用程序。 默认值为 *false*。 |
+|allowPublicClient|布尔| 指定应用程序是否可以充当公共客户端。 例如, 在移动设备上运行的已安装应用程序。 默认值为 *false*。 |
 |api|[api](../resources/api.md)| 指定 API 应用程序的设置。 |
-|appRoles|[appRole](../resources/approle.md) 集合|应用程序可声明的应用程序角色的集合。 这些角色可以分配给用户、组或服务主体。 不可为 Null。|
-|applicationAliases|String 集合| 用于标识应用程序的 URI。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)。 多值属性筛选器表达式需要 *any* 运算符。 不可为 Null。 |
+|appRoles|[appRole](../resources/approle.md) 集合|应用程序可声明的应用程序角色的集合。 这些角色可以分配给用户、组或服务主体。 不可为空。|
+|重|String collection| 用于标识应用程序的 URI。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)。 多值属性筛选器表达式需要 *any* 运算符。 不可为 Null。 |
 |createdDateTime|DateTimeOffset| 注册应用程序的日期和时间。 |
 |deletedDateTime|DateTimeOffset| 删除应用程序的日期和时间。 |
 |displayName|String|应用程序的显示名称。 |
 |id|String|应用程序的唯一标识符。 继承自 [directoryObject](../resources/directoryobject.md)。 键。 不可为 null。 只读。 |
 |info|[informationalUrl](../resources/informationalurl.md)| 应用程序的基本配置文件信息。 | 指定已安装客户端（如台式设备或移动设备）的设置。 |
 |keyCredentials|[keyCredential](../resources/keycredential.md) 集合|与应用程序关联的密钥凭据集合，不可为 Null。 |
-|logo|Stream|应用程序的主徽标。 不可为 Null。 |
-|orgRestrictions|String 集合| 应用程序所使用的受限组织 tenantIds。  如果集合为空，该应用程序是多租户 （不受限制）。 如果集合包含 tenantIds，应用程序仅限于组织 tenantIds 集合中。 指定其他租户但未注册应用程序其中 tenantId 意味着应用程序自身的 tenantId 为间接包含。 |
-|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) 集合|与应用程序关联的密码凭据集合。 不可为 Null。|
-|preAuthorizedApplications|[preAuthorizedApplication](../resources/preauthorizedapplication.md)集合| 列出应用程序和隐式同意请求的权限。 需要管理员可以提供了到应用程序的许可。 preAuthorizedApplications 不需要用户同意所请求的权限。 PreAuthorizedApplications 中列出的权限不需要用户同意。 但是，preAuthorizedApplications 中未列出任何其他请求的权限要求用户同意。 |
+|logo|Stream|应用程序的主徽标。 不可为空。 |
+|orgRestrictions|String collection| 应用程序受限制的组织 tenantIds。  如果集合为空, 则应用程序为多租户 (不受限制)。 如果集合包含 tenantIds, 则将应用程序限制为集合中的组织 tenantIds。 如果指定其他租户, 而不是在其中注册应用程序的 tenantid, 则意味着应用程序自身的 tenantid 将被间接包括在内。 |
+|passwordCredentials|[passwordCredential](../resources/passwordcredential.md) 集合|与应用程序关联的密码凭据集合。 不可为空。|
+|preAuthorizedApplications|[preAuthorizedApplication](../resources/preauthorizedapplication.md)集合| 列出了应用程序和请求的隐式同意权限。 要求管理员向应用程序提供许可。 preAuthorizedApplications 不要求用户同意请求的权限。 preAuthorizedApplications 中列出的权限不需要用户同意。 但是, preAuthorizedApplications 中未列出的任何其他请求的权限都需要用户同意。 |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) 集合|指定此应用程序需要访问的资源以及在每个资源下所需的 OAuth 权限范围和应用程序角色集。 这种预配置的所需资源访问权限可驱动同意体验。 不可为 Null。|
-|标记|String 集合| 可用于分类和标识应用程序的自定义字符串。 |
+|tags|String 集合| 可用于分类和标识应用程序的自定义字符串。 |
 |web|[web](../resources/web.md)| 指定 Web 应用程序的设置。 |
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`204 No Content`响应代码和不响应正文中返回任何内容。
+如果成功, 此方法将`204 No Content`返回响应代码, 并且不会在响应正文中返回任何内容。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

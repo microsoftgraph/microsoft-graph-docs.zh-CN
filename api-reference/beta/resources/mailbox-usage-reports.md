@@ -1,21 +1,21 @@
 ---
 title: 邮箱使用情况报表
-description: 您可以通过邮箱和活动的主要基于电子邮件发送和接收其级别的用户的信息。 此外，还可以了解每个邮箱占用的存储空间，以及即将达到存储配额的邮箱数。
+description: 您可以使用邮箱及其活动级别 (主要基于发送和接收的电子邮件) 获取有关用户的信息。 此外，还可以了解每个邮箱占用的存储空间，以及即将达到存储配额的邮箱数。
 localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
 ms.openlocfilehash: ae0b3294750271f32d91dca79f75e7cf44641045
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576323"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463521"
 ---
-# <a name="mailbox-usage-reports"></a>邮箱使用情况报表
+# <a name="mailbox-usage-reports"></a>邮箱使用情况报告
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以通过邮箱和活动的主要基于电子邮件发送和接收其级别的用户的信息。 此外，还可以了解每个邮箱占用的存储空间，以及即将达到存储配额的邮箱数。
+您可以使用邮箱及其活动级别 (主要基于发送和接收的电子邮件) 获取有关用户的信息。 此外，还可以了解每个邮箱占用的存储空间，以及即将达到存储配额的邮箱数。
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - 邮箱使用情况](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729)。
 

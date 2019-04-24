@@ -1,28 +1,28 @@
 ---
-title: 列表资源
-description: 列出与此提交关联的资源。 **SubmissionResource**对象是正在从事实际资源对象学生的包装。 如果这复制从分配过程的工作分配，包装还包括指向上工作分配的资源的指针。 这些资源是工作分配的工作副本。 **SubmittedResources**是正式已提交以进行评分的资源。
+title: 列出资源
+description: 列出与此提交相关联的资源。 **submissionResource**对象是学生正在处理的实际资源对象周围的包装。 包装还包括指向工作分配中的资源的指针 (如果这是在分配过程中从分配中复制的)。 这些资源是工作分配的工作副本。 **submittedResources**是已提交以进行评分的资源。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: b9069cb6ec20f65b82cacca8f862a05ff0af7b5d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526184"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464745"
 ---
-# <a name="list-resources"></a>列表资源
+# <a name="list-resources"></a>列出资源
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出与此提交关联的资源。 **SubmissionResource**对象是正在从事实际资源对象学生的包装。 如果这复制从分配过程的工作分配，包装还包括指向上工作分配的资源的指针。 这些资源是工作分配的工作副本。 **SubmittedResources**是正式已提交以进行评分的资源。
+列出与此提交相关联的资源。 **submissionResource**对象是学生正在处理的实际资源对象周围的包装。 包装还包括指向工作分配中的资源的指针 (如果这是在分配过程中从分配中复制的)。 这些资源是工作分配的工作副本。 **submittedResources**是已提交以进行评分的资源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadBasic，EduAssignments.ReadWriteBasic，EduAssignments.Read EduAssignments.ReadWrite  |
+|委派（工作或学校帐户） |  EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments  |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。 | 
 
@@ -42,7 +42,7 @@ GET /educationClasses/assignments/{id}/submissions/{id}/resources
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[educationSubmissionResource](../resources/educationsubmissionresource.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

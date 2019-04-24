@@ -5,11 +5,11 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 3c68f4a9950437ddcebc0cd40237bef07c597648
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800962"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457912"
 ---
 # <a name="delete-educationcategory"></a>删除 educationCategory
 
@@ -24,7 +24,7 @@ ms.locfileid: "30800962"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）| EduAssignments、ReadWriteBasic、EduAssignments |
 |委派（个人 Microsoft 帐户） |   不支持。 |
-|应用程序 | 不支持。  | 
+|应用 | 不支持。  | 
 
 ## <a name="http-request"></a>HTTP 请求
 

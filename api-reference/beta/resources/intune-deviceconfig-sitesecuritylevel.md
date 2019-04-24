@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 209b14cd5aff03d7cca2792999c9e1328774e578
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791647"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464657"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>siteSecurityLevel 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31791647"
 |:---|:---|:---|
 |定制|0|用户定义, 默认值, 无意向。|
 |降低|1|低。|
-|mediumLow|双面|中-低。|
-|中等|第三章|中。|
-|mediumHigh|4|中-高。|
+|mediumLow|2 |中-低。|
+|中等|3 |中。|
+|mediumHigh|4 |中-高。|
 |高效|5|高。|
 
 

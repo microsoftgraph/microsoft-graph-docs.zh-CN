@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7f189c425fa7e13385f38adfe32f01f9a4a26882
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774923"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465802"
 ---
 # <a name="list-devicemanagementscriptdevicestates"></a>列出 deviceManagementScriptDeviceStates
 

@@ -3,11 +3,11 @@ title: Json 资源类型
 description: 表示以 JSON 格式返回的数据
 localization_priority: Normal
 ms.openlocfilehash: 5e41417fadfccdc5e0c0f08675496d50222d3ecb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867541"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585151"
 ---
 # <a name="json-resource-type"></a>Json 资源类型
 

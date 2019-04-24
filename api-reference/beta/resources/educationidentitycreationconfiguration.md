@@ -1,23 +1,23 @@
 ---
 title: educationIdentityCreationConfiguration 资源类型
-description: 创建学校数据配置文件标识上定义的设置。 这些身份包括学生和教师。 根据这些设置，将在目录中创建用户。
+description: 定义有关创建学校数据配置文件标识的设置。 这些标识包括学生和教师。 根据这些设置, 将在目录中创建用户。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 92ad3c36a9379bb570f2a635038903e64a0309e8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511399"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507159"
 ---
 ## <a name="educationidentitycreationconfiguration-resource-type"></a>educationIdentityCreationConfiguration 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建学校数据配置文件标识上定义的设置。 这些身份包括学生和教师。 根据这些设置，将在目录中创建用户。
+定义有关创建学校数据配置文件标识的设置。 这些标识包括学生和教师。 根据这些设置, 将在目录中创建用户。
 
-> **注意：** 如果您有目录同步到本地之间的同步开启，Active Directory 和 Azure Active Directory (Azure AD)，请改用[educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md)资源。
+> **注意:** 如果你打开了目录同步以在本地 Active directory 和 azure Active directory (azure AD) 之间同步, 请改用[educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md)资源。
 
 派生自[educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md)。
 
