@@ -5,29 +5,29 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e71d7c8c6489d5856e5f2441cd93c7fdea033bd4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524287"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457142"
 ---
-# <a name="meetingcapability-resource-type"></a><span data-ttu-id="635fd-103">meetingCapability 资源类型</span><span class="sxs-lookup"><span data-stu-id="635fd-103">meetingCapability resource type</span></span>
+# <a name="meetingcapability-resource-type"></a><span data-ttu-id="48e38-103">meetingCapability 资源类型</span><span class="sxs-lookup"><span data-stu-id="48e38-103">meetingCapability resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="635fd-104">包含会议的功能</span><span class="sxs-lookup"><span data-stu-id="635fd-104">Contains the capabilities of a meeting</span></span>
+<span data-ttu-id="48e38-104">包含会议的功能</span><span class="sxs-lookup"><span data-stu-id="48e38-104">Contains the capabilities of a meeting</span></span>
 
-## <a name="properties"></a><span data-ttu-id="635fd-105">属性</span><span class="sxs-lookup"><span data-stu-id="635fd-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="48e38-105">属性</span><span class="sxs-lookup"><span data-stu-id="48e38-105">Properties</span></span>
 
-| <span data-ttu-id="635fd-106">属性</span><span class="sxs-lookup"><span data-stu-id="635fd-106">Property</span></span>                          | <span data-ttu-id="635fd-107">类型</span><span class="sxs-lookup"><span data-stu-id="635fd-107">Type</span></span>    | <span data-ttu-id="635fd-108">说明</span><span class="sxs-lookup"><span data-stu-id="635fd-108">Description</span></span>                                                        |
+| <span data-ttu-id="48e38-106">属性</span><span class="sxs-lookup"><span data-stu-id="48e38-106">Property</span></span>                          | <span data-ttu-id="48e38-107">类型</span><span class="sxs-lookup"><span data-stu-id="48e38-107">Type</span></span>    | <span data-ttu-id="48e38-108">描述</span><span class="sxs-lookup"><span data-stu-id="48e38-108">Description</span></span>                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
-| <span data-ttu-id="635fd-109">allowAnonymousUsersToDialOut</span><span class="sxs-lookup"><span data-stu-id="635fd-109">allowAnonymousUsersToDialOut</span></span>      | <span data-ttu-id="635fd-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="635fd-110">Boolean</span></span> | <span data-ttu-id="635fd-111">指示是否在会议中允许匿名用户拨出。</span><span class="sxs-lookup"><span data-stu-id="635fd-111">Indicates whether anonymous users dialout is allowed in a meeting.</span></span> |
-| <span data-ttu-id="635fd-112">allowAnonymousUsersToStartMeeting</span><span class="sxs-lookup"><span data-stu-id="635fd-112">allowAnonymousUsersToStartMeeting</span></span> | <span data-ttu-id="635fd-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="635fd-113">Boolean</span></span> | <span data-ttu-id="635fd-114">指示是否允许匿名用户开始会议。</span><span class="sxs-lookup"><span data-stu-id="635fd-114">Indicates whether anonymous users are allowed to start a meeting.</span></span>  |
-| <span data-ttu-id="635fd-115">autoAdmittedUsers</span><span class="sxs-lookup"><span data-stu-id="635fd-115">autoAdmittedUsers</span></span>                 | <span data-ttu-id="635fd-116">String</span><span class="sxs-lookup"><span data-stu-id="635fd-116">String</span></span>  | <span data-ttu-id="635fd-117">可取值为：`everyoneInCompany`、`everyone`。</span><span class="sxs-lookup"><span data-stu-id="635fd-117">Possible values are: `everyoneInCompany`, `everyone`.</span></span>              |
+| <span data-ttu-id="48e38-109">allowAnonymousUsersToDialOut</span><span class="sxs-lookup"><span data-stu-id="48e38-109">allowAnonymousUsersToDialOut</span></span>      | <span data-ttu-id="48e38-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="48e38-110">Boolean</span></span> | <span data-ttu-id="48e38-111">指示是否允许在会议中拨出匿名用户。</span><span class="sxs-lookup"><span data-stu-id="48e38-111">Indicates whether anonymous users dialout is allowed in a meeting.</span></span> |
+| <span data-ttu-id="48e38-112">allowAnonymousUsersToStartMeeting</span><span class="sxs-lookup"><span data-stu-id="48e38-112">allowAnonymousUsersToStartMeeting</span></span> | <span data-ttu-id="48e38-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="48e38-113">Boolean</span></span> | <span data-ttu-id="48e38-114">指示是否允许匿名用户启动会议。</span><span class="sxs-lookup"><span data-stu-id="48e38-114">Indicates whether anonymous users are allowed to start a meeting.</span></span>  |
+| <span data-ttu-id="48e38-115">autoAdmittedUsers</span><span class="sxs-lookup"><span data-stu-id="48e38-115">autoAdmittedUsers</span></span>                 | <span data-ttu-id="48e38-116">String</span><span class="sxs-lookup"><span data-stu-id="48e38-116">String</span></span>  | <span data-ttu-id="48e38-117">可取值为：`everyoneInCompany`、`everyone`。</span><span class="sxs-lookup"><span data-stu-id="48e38-117">Possible values are: `everyoneInCompany`, `everyone`.</span></span>              |
 
-## <a name="json-representation"></a><span data-ttu-id="635fd-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="635fd-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="48e38-118">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="48e38-118">JSON representation</span></span>
 
-<span data-ttu-id="635fd-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="635fd-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="48e38-119">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="48e38-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

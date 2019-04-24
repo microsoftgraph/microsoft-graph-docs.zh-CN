@@ -1,31 +1,31 @@
 ---
 title: meetingInfo 资源类型
-description: 会议指定要创建或加入会议的信息。
+description: 指定用于创建或加入会议的会议信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c1126a3408b8353e927b5653fe60dd4a89125051
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509355"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457135"
 ---
-# <a name="meetinginfo-resource-type"></a><span data-ttu-id="48662-103">meetingInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="48662-103">meetingInfo resource type</span></span>
+# <a name="meetinginfo-resource-type"></a><span data-ttu-id="99595-103">meetingInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="99595-103">meetingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="48662-104">会议指定要创建或加入会议的信息。</span><span class="sxs-lookup"><span data-stu-id="48662-104">Meeting information specified to create or join a meeting.</span></span>
+<span data-ttu-id="99595-104">指定用于创建或加入会议的会议信息。</span><span class="sxs-lookup"><span data-stu-id="99595-104">Meeting information specified to create or join a meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="48662-105">属性</span><span class="sxs-lookup"><span data-stu-id="48662-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="99595-105">属性</span><span class="sxs-lookup"><span data-stu-id="99595-105">Properties</span></span>
 
-| <span data-ttu-id="48662-106">属性</span><span class="sxs-lookup"><span data-stu-id="48662-106">Property</span></span>       | <span data-ttu-id="48662-107">类型</span><span class="sxs-lookup"><span data-stu-id="48662-107">Type</span></span>    | <span data-ttu-id="48662-108">说明</span><span class="sxs-lookup"><span data-stu-id="48662-108">Description</span></span>|
+| <span data-ttu-id="99595-106">属性</span><span class="sxs-lookup"><span data-stu-id="99595-106">Property</span></span>       | <span data-ttu-id="99595-107">类型</span><span class="sxs-lookup"><span data-stu-id="99595-107">Type</span></span>    | <span data-ttu-id="99595-108">描述</span><span class="sxs-lookup"><span data-stu-id="99595-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="48662-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="48662-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="48662-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="48662-110">Boolean</span></span> |  |
+| <span data-ttu-id="99595-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="99595-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="99595-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="99595-110">Boolean</span></span> |  |
 
-## <a name="json-representation"></a><span data-ttu-id="48662-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="48662-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="99595-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="99595-111">JSON representation</span></span>
 
-<span data-ttu-id="48662-112">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="48662-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="99595-112">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="99595-112">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

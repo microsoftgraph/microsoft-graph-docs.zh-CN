@@ -1,50 +1,50 @@
 ---
-title: 列表 governanceResources
+title: 列出 governanceResources
 description: 检索请求者有权访问的 governanceResource 的集合。
 localization_priority: Normal
 ms.openlocfilehash: 998e18a0139f0cbe41901da935faee2f7f24e9eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525666"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457170"
 ---
-# <a name="list-governanceresources"></a><span data-ttu-id="59dd8-103">列表 governanceResources</span><span class="sxs-lookup"><span data-stu-id="59dd8-103">List governanceResources</span></span>
+# <a name="list-governanceresources"></a><span data-ttu-id="15860-103">列出 governanceResources</span><span class="sxs-lookup"><span data-stu-id="15860-103">List governanceResources</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="59dd8-104">检索[governanceResource](../resources/governanceresource.md)的请求者有权访问的集合。</span><span class="sxs-lookup"><span data-stu-id="59dd8-104">Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.</span></span>
+<span data-ttu-id="15860-104">检索请求者有权访问的[governanceResource](../resources/governanceresource.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="15860-104">Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="59dd8-105">权限</span><span class="sxs-lookup"><span data-stu-id="59dd8-105">Permissions</span></span>
-<span data-ttu-id="59dd8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="59dd8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="15860-105">权限</span><span class="sxs-lookup"><span data-stu-id="15860-105">Permissions</span></span>
+<span data-ttu-id="15860-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="15860-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="59dd8-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="59dd8-108">Permission type</span></span>      | <span data-ttu-id="59dd8-109">权限</span><span class="sxs-lookup"><span data-stu-id="59dd8-109">Permissions</span></span>              |
+|<span data-ttu-id="15860-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="15860-108">Permission type</span></span>      | <span data-ttu-id="15860-109">权限</span><span class="sxs-lookup"><span data-stu-id="15860-109">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="59dd8-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="59dd8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="59dd8-111">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="59dd8-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="59dd8-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="59dd8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="59dd8-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="59dd8-113">Not supported.</span></span>    |
-|<span data-ttu-id="59dd8-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="59dd8-114">Application</span></span> | <span data-ttu-id="59dd8-115">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="59dd8-115">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
+|<span data-ttu-id="15860-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="15860-110">Delegated (work or school account)</span></span> | <span data-ttu-id="15860-111">PrivilegedAccess AzureResources</span><span class="sxs-lookup"><span data-stu-id="15860-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="15860-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="15860-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15860-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="15860-113">Not supported.</span></span>    |
+|<span data-ttu-id="15860-114">Application</span><span class="sxs-lookup"><span data-stu-id="15860-114">Application</span></span> | <span data-ttu-id="15860-115">PrivilegedAccess AzureResources</span><span class="sxs-lookup"><span data-stu-id="15860-115">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="59dd8-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="59dd8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15860-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="15860-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="59dd8-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="59dd8-117">Optional query parameters</span></span>
-<span data-ttu-id="59dd8-118">此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。</span><span class="sxs-lookup"><span data-stu-id="59dd8-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="15860-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="15860-117">Optional query parameters</span></span>
+<span data-ttu-id="15860-118">此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="15860-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="59dd8-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="59dd8-119">Request headers</span></span>
-| <span data-ttu-id="59dd8-120">名称</span><span class="sxs-lookup"><span data-stu-id="59dd8-120">Name</span></span>      |<span data-ttu-id="59dd8-121">说明</span><span class="sxs-lookup"><span data-stu-id="59dd8-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="15860-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="15860-119">Request headers</span></span>
+| <span data-ttu-id="15860-120">名称</span><span class="sxs-lookup"><span data-stu-id="15860-120">Name</span></span>      |<span data-ttu-id="15860-121">说明</span><span class="sxs-lookup"><span data-stu-id="15860-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="59dd8-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="59dd8-122">Authorization</span></span>  | <span data-ttu-id="59dd8-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="59dd8-123">Bearer {code}</span></span>|
+| <span data-ttu-id="15860-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="15860-122">Authorization</span></span>  | <span data-ttu-id="15860-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="15860-123">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="59dd8-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="59dd8-124">Request body</span></span>
-<span data-ttu-id="59dd8-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="59dd8-125">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="59dd8-126">响应</span><span class="sxs-lookup"><span data-stu-id="59dd8-126">Response</span></span>
-<span data-ttu-id="59dd8-127">如果成功，此方法返回`200 OK`响应代码和响应正文中的[governanceResource](../resources/governanceresource.md)对象的集合。</span><span class="sxs-lookup"><span data-stu-id="59dd8-127">If successful, this method returns a `200 OK` response code and collection of [governanceResource](../resources/governanceresource.md) objects in the response body.</span></span>
-## <a name="examples"></a><span data-ttu-id="59dd8-128">示例</span><span class="sxs-lookup"><span data-stu-id="59dd8-128">Examples</span></span>
+## <a name="request-body"></a><span data-ttu-id="15860-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="15860-124">Request body</span></span>
+<span data-ttu-id="15860-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="15860-125">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="15860-126">响应</span><span class="sxs-lookup"><span data-stu-id="15860-126">Response</span></span>
+<span data-ttu-id="15860-127">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceResource](../resources/governanceresource.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="15860-127">If successful, this method returns a `200 OK` response code and collection of [governanceResource](../resources/governanceresource.md) objects in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="15860-128">示例</span><span class="sxs-lookup"><span data-stu-id="15860-128">Examples</span></span>
 
-<span data-ttu-id="59dd8-129">此示例将列出当前可以访问的所有资源。</span><span class="sxs-lookup"><span data-stu-id="59dd8-129">This example lists all resources I can currently access.</span></span>
-##### <a name="request"></a><span data-ttu-id="59dd8-130">请求</span><span class="sxs-lookup"><span data-stu-id="59dd8-130">Request</span></span>
+<span data-ttu-id="15860-129">本示例列出了我当前可以访问的所有资源。</span><span class="sxs-lookup"><span data-stu-id="15860-129">This example lists all resources I can currently access.</span></span>
+##### <a name="request"></a><span data-ttu-id="15860-130">请求</span><span class="sxs-lookup"><span data-stu-id="15860-130">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_governanceresources"
@@ -52,10 +52,10 @@ GET /privilegedAccess/azureResources/resources
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ```
-##### <a name="response"></a><span data-ttu-id="59dd8-131">响应</span><span class="sxs-lookup"><span data-stu-id="59dd8-131">Response</span></span>
-<span data-ttu-id="59dd8-132">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="59dd8-132">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="15860-131">响应</span><span class="sxs-lookup"><span data-stu-id="15860-131">Response</span></span>
+<span data-ttu-id="15860-132">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="15860-132">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="59dd8-p102">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="59dd8-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="15860-p102">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="15860-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

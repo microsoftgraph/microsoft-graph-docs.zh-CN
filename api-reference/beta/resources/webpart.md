@@ -6,19 +6,19 @@ title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 9c019da7cb10a8c26faa8d338c54436043f83db8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453607"
 ---
-# <a name="webpart-resource"></a><span data-ttu-id="33468-102">web 部件资源</span><span class="sxs-lookup"><span data-stu-id="33468-102">webPart resource</span></span>
+# <a name="webpart-resource"></a><span data-ttu-id="0c883-102">webPart 资源</span><span class="sxs-lookup"><span data-stu-id="0c883-102">webPart resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="33468-103">**Web 部件**资源表示类型和呈现[sitePage](sitepage.md)web 部件的信息。</span><span class="sxs-lookup"><span data-stu-id="33468-103">The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitepage.md).</span></span>
+<span data-ttu-id="0c883-103">**webPart**资源表示[sitePage](sitepage.md)上的 web 部件的类型和呈现信息。</span><span class="sxs-lookup"><span data-stu-id="0c883-103">The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitepage.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="33468-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="33468-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0c883-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0c883-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,20 +35,20 @@ ms.locfileid: "29640173"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="33468-105">属性</span><span class="sxs-lookup"><span data-stu-id="33468-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0c883-105">属性</span><span class="sxs-lookup"><span data-stu-id="0c883-105">Properties</span></span>
 
-| <span data-ttu-id="33468-106">属性</span><span class="sxs-lookup"><span data-stu-id="33468-106">Property</span></span>                | <span data-ttu-id="33468-107">类型</span><span class="sxs-lookup"><span data-stu-id="33468-107">Type</span></span>             | <span data-ttu-id="33468-108">说明</span><span class="sxs-lookup"><span data-stu-id="33468-108">Description</span></span>
+| <span data-ttu-id="0c883-106">属性</span><span class="sxs-lookup"><span data-stu-id="0c883-106">Property</span></span>                | <span data-ttu-id="0c883-107">类型</span><span class="sxs-lookup"><span data-stu-id="0c883-107">Type</span></span>             | <span data-ttu-id="0c883-108">描述</span><span class="sxs-lookup"><span data-stu-id="0c883-108">Description</span></span>
 |:------------------------|:-----------------|:----------------------------------
-| <span data-ttu-id="33468-109">**类型**</span><span class="sxs-lookup"><span data-stu-id="33468-109">**type**</span></span>                | <span data-ttu-id="33468-110">String</span><span class="sxs-lookup"><span data-stu-id="33468-110">String</span></span>           | <span data-ttu-id="33468-111">指定 web 部件类型的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="33468-111">A unique identifier specifying the webPart type.</span></span> <span data-ttu-id="33468-112">只读。</span><span class="sxs-lookup"><span data-stu-id="33468-112">Read-only.</span></span>
-| <span data-ttu-id="33468-113">**data**</span><span class="sxs-lookup"><span data-stu-id="33468-113">**data**</span></span>                | <span data-ttu-id="33468-114">[sitePageData][]</span><span class="sxs-lookup"><span data-stu-id="33468-114">[sitePageData][]</span></span> | <span data-ttu-id="33468-115">所需的 web 部件 （随 web 部件） 属性</span><span class="sxs-lookup"><span data-stu-id="33468-115">The required properties for the webPart (varies by webPart)</span></span>
+| <span data-ttu-id="0c883-109">**类型**</span><span class="sxs-lookup"><span data-stu-id="0c883-109">**type**</span></span>                | <span data-ttu-id="0c883-110">字符串</span><span class="sxs-lookup"><span data-stu-id="0c883-110">String</span></span>           | <span data-ttu-id="0c883-111">指定 web 部件类型的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="0c883-111">A unique identifier specifying the webPart type.</span></span> <span data-ttu-id="0c883-112">只读。</span><span class="sxs-lookup"><span data-stu-id="0c883-112">Read-only.</span></span>
+| <span data-ttu-id="0c883-113">**data**</span><span class="sxs-lookup"><span data-stu-id="0c883-113">**data**</span></span>                | <span data-ttu-id="0c883-114">[sitePageData][]</span><span class="sxs-lookup"><span data-stu-id="0c883-114">[sitePageData][]</span></span> | <span data-ttu-id="0c883-115">web 部件的必需属性 (因 web 部件而异)</span><span class="sxs-lookup"><span data-stu-id="0c883-115">The required properties for the webPart (varies by webPart)</span></span>
 
 [sitePageData]: sitepagedata.md
 
-## <a name="remarks"></a><span data-ttu-id="33468-117">注释</span><span class="sxs-lookup"><span data-stu-id="33468-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0c883-117">备注</span><span class="sxs-lookup"><span data-stu-id="0c883-117">Remarks</span></span>
 
-<span data-ttu-id="33468-118">Web 部件可以定义在**数据**下自己所需的属性。</span><span class="sxs-lookup"><span data-stu-id="33468-118">Web parts can define their own required properties under **data**.</span></span>
+<span data-ttu-id="0c883-118">Web 部件可以在**data**下定义自己的必需属性。</span><span class="sxs-lookup"><span data-stu-id="0c883-118">Web parts can define their own required properties under **data**.</span></span>
 
-<span data-ttu-id="33468-119">有关页面的详细信息，请参阅[sitePage](sitepage.md)。</span><span class="sxs-lookup"><span data-stu-id="33468-119">For more information about pages, see [sitePage](sitepage.md).</span></span>
+<span data-ttu-id="0c883-119">有关页面的详细信息, 请参阅[sitePage](sitepage.md)。</span><span class="sxs-lookup"><span data-stu-id="0c883-119">For more information about pages, see [sitePage](sitepage.md).</span></span>
 <!--
 {
   "type": "#page.annotation",

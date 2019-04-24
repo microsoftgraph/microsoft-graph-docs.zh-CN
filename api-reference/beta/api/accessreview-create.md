@@ -1,75 +1,75 @@
 ---
 title: 创建 accessReview
-description: Azure AD 中访问审阅功能，创建一个新的 accessReview 对象。
+description: 在 "Azure AD access 评论" 功能中, 创建一个新的 accessReview 对象。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 669b11a8f3b52e867d6b3e803c9419968924928b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517797"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456820"
 ---
-# <a name="create-accessreview"></a><span data-ttu-id="23df3-103">创建 accessReview</span><span class="sxs-lookup"><span data-stu-id="23df3-103">Create accessReview</span></span>
+# <a name="create-accessreview"></a><span data-ttu-id="df454-103">创建 accessReview</span><span class="sxs-lookup"><span data-stu-id="df454-103">Create accessReview</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="23df3-104">在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中创建新的[accessReview](../resources/accessreview.md)对象。</span><span class="sxs-lookup"><span data-stu-id="23df3-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.</span></span>
+<span data-ttu-id="df454-104">在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 创建一个新的[accessReview](../resources/accessreview.md)对象。</span><span class="sxs-lookup"><span data-stu-id="df454-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.</span></span>
 
-<span data-ttu-id="23df3-105">此请求之前，呼叫者必须具有之前[检索业务流程模板列表中的](businessflowtemplate-list.md)，具有的值`businessFlowTemplateId`要包含在请求中。</span><span class="sxs-lookup"><span data-stu-id="23df3-105">Before making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.</span></span>
+<span data-ttu-id="df454-105">在发出此请求之前, 呼叫者必须先[检索业务流模板列表](businessflowtemplate-list.md), 才能将值`businessFlowTemplateId`包含在请求中。</span><span class="sxs-lookup"><span data-stu-id="df454-105">Before making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.</span></span>
 
-<span data-ttu-id="23df3-106">进行此请求之后, 将呼叫者应[创建 programControl](programcontrol-create.md)，若要访问评审链接到的程序。</span><span class="sxs-lookup"><span data-stu-id="23df3-106">After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.</span></span>  
+<span data-ttu-id="df454-106">发出此请求后, 调用方应[创建一个 programControl](programcontrol-create.md), 以将访问审核链接到某个程序。</span><span class="sxs-lookup"><span data-stu-id="df454-106">After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.</span></span>  
 
-## <a name="permissions"></a><span data-ttu-id="23df3-107">权限</span><span class="sxs-lookup"><span data-stu-id="23df3-107">Permissions</span></span>
-<span data-ttu-id="23df3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="23df3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="df454-107">权限</span><span class="sxs-lookup"><span data-stu-id="df454-107">Permissions</span></span>
+<span data-ttu-id="df454-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="df454-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="23df3-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="23df3-110">Permission type</span></span>                        | <span data-ttu-id="23df3-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="23df3-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="df454-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="df454-110">Permission type</span></span>                        | <span data-ttu-id="df454-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="df454-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="23df3-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="23df3-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="23df3-113">AccessReview.ReadWrite.All，也应具有完成后续呼叫中以创建 programControl 方案的 ProgramControl.ReadWrite.All 和</span><span class="sxs-lookup"><span data-stu-id="23df3-113">AccessReview.ReadWrite.All, and should also have ProgramControl.ReadWrite.All to complete scenario with the subsequent call to create a programControl</span></span> |
-|<span data-ttu-id="23df3-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="23df3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="23df3-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="23df3-115">Not supported.</span></span> |
-|<span data-ttu-id="23df3-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="23df3-116">Application</span></span>                            | <span data-ttu-id="23df3-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="23df3-117">Not supported.</span></span> |
+|<span data-ttu-id="df454-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="df454-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="df454-113">AccessReview, 并且还应具有 ProgramControl。在随后调用以创建 ProgramControl 的情况下, 它们都是完整的。</span><span class="sxs-lookup"><span data-stu-id="df454-113">AccessReview.ReadWrite.All, and should also have ProgramControl.ReadWrite.All to complete scenario with the subsequent call to create a programControl</span></span> |
+|<span data-ttu-id="df454-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="df454-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="df454-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="df454-115">Not supported.</span></span> |
+|<span data-ttu-id="df454-116">Application</span><span class="sxs-lookup"><span data-stu-id="df454-116">Application</span></span>                            | <span data-ttu-id="df454-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="df454-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="23df3-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="23df3-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="df454-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="df454-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /accessReviews
 ```
-## <a name="request-headers"></a><span data-ttu-id="23df3-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="23df3-119">Request headers</span></span>
-| <span data-ttu-id="23df3-120">名称</span><span class="sxs-lookup"><span data-stu-id="23df3-120">Name</span></span>         | <span data-ttu-id="23df3-121">类型</span><span class="sxs-lookup"><span data-stu-id="23df3-121">Type</span></span>        | <span data-ttu-id="23df3-122">说明</span><span class="sxs-lookup"><span data-stu-id="23df3-122">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="df454-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="df454-119">Request headers</span></span>
+| <span data-ttu-id="df454-120">名称</span><span class="sxs-lookup"><span data-stu-id="df454-120">Name</span></span>         | <span data-ttu-id="df454-121">类型</span><span class="sxs-lookup"><span data-stu-id="df454-121">Type</span></span>        | <span data-ttu-id="df454-122">说明</span><span class="sxs-lookup"><span data-stu-id="df454-122">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="23df3-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="23df3-123">Authorization</span></span> | <span data-ttu-id="23df3-124">string</span><span class="sxs-lookup"><span data-stu-id="23df3-124">string</span></span> | <span data-ttu-id="23df3-125">持有者令牌</span><span class="sxs-lookup"><span data-stu-id="23df3-125">Bearer \{token\}.</span></span> <span data-ttu-id="23df3-126">必需。</span><span class="sxs-lookup"><span data-stu-id="23df3-126">Required.</span></span> |
+| <span data-ttu-id="df454-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="df454-123">Authorization</span></span> | <span data-ttu-id="df454-124">string</span><span class="sxs-lookup"><span data-stu-id="df454-124">string</span></span> | <span data-ttu-id="df454-p102">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="df454-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="23df3-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="23df3-127">Request body</span></span>
-<span data-ttu-id="23df3-128">在请求正文中，提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="23df3-128">In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="df454-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="df454-127">Request body</span></span>
+<span data-ttu-id="df454-128">在请求正文中, 提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="df454-128">In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.</span></span>
 
-<span data-ttu-id="23df3-129">下表显示时创建 accessReview 所需的属性。</span><span class="sxs-lookup"><span data-stu-id="23df3-129">The following table shows the properties that are required when you create an accessReview.</span></span>
+<span data-ttu-id="df454-129">下表显示创建 accessReview 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="df454-129">The following table shows the properties that are required when you create an accessReview.</span></span>
 
-| <span data-ttu-id="23df3-130">属性</span><span class="sxs-lookup"><span data-stu-id="23df3-130">Property</span></span>     | <span data-ttu-id="23df3-131">类型</span><span class="sxs-lookup"><span data-stu-id="23df3-131">Type</span></span>        | <span data-ttu-id="23df3-132">说明</span><span class="sxs-lookup"><span data-stu-id="23df3-132">Description</span></span> |
+| <span data-ttu-id="df454-130">属性</span><span class="sxs-lookup"><span data-stu-id="df454-130">Property</span></span>     | <span data-ttu-id="df454-131">类型</span><span class="sxs-lookup"><span data-stu-id="df454-131">Type</span></span>        | <span data-ttu-id="df454-132">描述</span><span class="sxs-lookup"><span data-stu-id="df454-132">Description</span></span> |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | <span data-ttu-id="23df3-133">访问审阅名称。</span><span class="sxs-lookup"><span data-stu-id="23df3-133">The access review name.</span></span>  |
-| `startDateTime`           |`DateTimeOffset`                                                | <span data-ttu-id="23df3-134">审阅安排在启动时 DateTime。</span><span class="sxs-lookup"><span data-stu-id="23df3-134">The DateTime when the review is scheduled to be start.</span></span>  <span data-ttu-id="23df3-135">这必须是在将来的日期。</span><span class="sxs-lookup"><span data-stu-id="23df3-135">This must be a date in the future.</span></span>   |
-| `endDateTime`             |`DateTimeOffset`                                                | <span data-ttu-id="23df3-136">审阅安排结束时 DateTime。</span><span class="sxs-lookup"><span data-stu-id="23df3-136">The DateTime when the review is scheduled to end.</span></span> <span data-ttu-id="23df3-137">这必须是至少一个日期晚于开始日期。</span><span class="sxs-lookup"><span data-stu-id="23df3-137">This must be at least one day later than the start date.</span></span>   |
-| `description`             |`String`                                                        | <span data-ttu-id="23df3-138">说明，向审阅者显示。</span><span class="sxs-lookup"><span data-stu-id="23df3-138">The description, to show to the reviewers.</span></span> |
-| `businessFlowTemplateId`  |`String`                                                        | <span data-ttu-id="23df3-139">业务流程模板标识符，从[businessFlowTemplate](../resources/businessflowtemplate.md)获得。</span><span class="sxs-lookup"><span data-stu-id="23df3-139">The business flow template identifier, obtained from a [businessFlowTemplate](../resources/businessflowtemplate.md).</span></span>  |
-| `reviewerType`            |`String`                                                        | <span data-ttu-id="23df3-140">审阅者已审阅对象之一的访问权限的关系类型`self`， `delegated`，或`entityOwners`。</span><span class="sxs-lookup"><span data-stu-id="23df3-140">The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegated`, or `entityOwners`.</span></span> | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | <span data-ttu-id="23df3-141">为其访问审阅创建对象，如组的成员身份或向应用程序的用户的分配。</span><span class="sxs-lookup"><span data-stu-id="23df3-141">The object for which an access review is created, such as the membership of a group or the assignments of users to an application.</span></span> | 
+| `displayName`             |`String`                                                        | <span data-ttu-id="df454-133">访问审阅名称。</span><span class="sxs-lookup"><span data-stu-id="df454-133">The access review name.</span></span>  |
+| `startDateTime`           |`DateTimeOffset`                                                | <span data-ttu-id="df454-134">计划开始评审时的日期时间。</span><span class="sxs-lookup"><span data-stu-id="df454-134">The DateTime when the review is scheduled to be start.</span></span>  <span data-ttu-id="df454-135">这必须是将来的日期。</span><span class="sxs-lookup"><span data-stu-id="df454-135">This must be a date in the future.</span></span>   |
+| `endDateTime`             |`DateTimeOffset`                                                | <span data-ttu-id="df454-136">计划结束评审时的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="df454-136">The DateTime when the review is scheduled to end.</span></span> <span data-ttu-id="df454-137">此时间必须至少为一个晚于开始日期的一天。</span><span class="sxs-lookup"><span data-stu-id="df454-137">This must be at least one day later than the start date.</span></span>   |
+| `description`             |`String`                                                        | <span data-ttu-id="df454-138">要向审阅者显示的说明。</span><span class="sxs-lookup"><span data-stu-id="df454-138">The description, to show to the reviewers.</span></span> |
+| `businessFlowTemplateId`  |`String`                                                        | <span data-ttu-id="df454-139">从[businessFlowTemplate](../resources/businessflowtemplate.md)获取的业务流模板标识符。</span><span class="sxs-lookup"><span data-stu-id="df454-139">The business flow template identifier, obtained from a [businessFlowTemplate](../resources/businessflowtemplate.md).</span></span>  |
+| `reviewerType`            |`String`                                                        | <span data-ttu-id="df454-140">审阅者的关系类型: 审阅的对象的访问权限、 `self` `delegated`、或。 `entityOwners`</span><span class="sxs-lookup"><span data-stu-id="df454-140">The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegated`, or `entityOwners`.</span></span> | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | <span data-ttu-id="df454-141">为其创建访问审核的对象, 例如组的成员身份或向应用程序分配的用户。</span><span class="sxs-lookup"><span data-stu-id="df454-141">The object for which an access review is created, such as the membership of a group or the assignments of users to an application.</span></span> | 
 
 
-<span data-ttu-id="23df3-142">如果要提供 reviewerType 具有值`delegated`，然后将呼叫者还必须包括`reviewers`属性，与[userIdentity](../resources/useridentity.md)审阅者的集合。</span><span class="sxs-lookup"><span data-stu-id="23df3-142">If the reviewerType being supplied has the value `delegated`, then the caller must also include the `reviewers` property, with a collection of [userIdentity](../resources/useridentity.md) of the reviewers.</span></span>
+<span data-ttu-id="df454-142">如果要提供的 reviewerType 具有值`delegated`, 则调用方还必须包括该`reviewers`属性, 其中包含审阅人的[userIdentity](../resources/useridentity.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="df454-142">If the reviewerType being supplied has the value `delegated`, then the caller must also include the `reviewers` property, with a collection of [userIdentity](../resources/useridentity.md) of the reviewers.</span></span>
 
-<span data-ttu-id="23df3-143">此外，呼叫者可以包括设置，以创建定期查看系列或更改默认查看行为。</span><span class="sxs-lookup"><span data-stu-id="23df3-143">In addition, the caller can include settings, to create a recurring review series or to change from the default review behavior.</span></span> <span data-ttu-id="23df3-144">具体而言，若要创建定期查看，呼叫者必须包括`accessReviewRecurrenceSettings`中访问检查设置，</span><span class="sxs-lookup"><span data-stu-id="23df3-144">In particular, to create a recurring review, the caller must include the `accessReviewRecurrenceSettings` within the access review settings,</span></span>
+<span data-ttu-id="df454-143">此外, 呼叫者还可以包括设置、创建定期审阅系列或从默认的审阅行为更改。</span><span class="sxs-lookup"><span data-stu-id="df454-143">In addition, the caller can include settings, to create a recurring review series or to change from the default review behavior.</span></span> <span data-ttu-id="df454-144">特别是, 若要创建定期检查, 呼叫者必须在 " `accessReviewRecurrenceSettings`访问审核设置" 中包含 "",</span><span class="sxs-lookup"><span data-stu-id="df454-144">In particular, to create a recurring review, the caller must include the `accessReviewRecurrenceSettings` within the access review settings,</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="23df3-145">响应</span><span class="sxs-lookup"><span data-stu-id="23df3-145">Response</span></span>
-<span data-ttu-id="23df3-146">如果成功，此方法返回`201, Created`响应代码和响应正文中的[accessReview](../resources/accessreview.md)对象。</span><span class="sxs-lookup"><span data-stu-id="23df3-146">If successful, this method returns a `201, Created` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="df454-145">响应</span><span class="sxs-lookup"><span data-stu-id="df454-145">Response</span></span>
+<span data-ttu-id="df454-146">如果成功, 此方法在响应`201, Created`正文中返回响应代码和[accessReview](../resources/accessreview.md)对象。</span><span class="sxs-lookup"><span data-stu-id="df454-146">If successful, this method returns a `201, Created` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="23df3-147">示例</span><span class="sxs-lookup"><span data-stu-id="23df3-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="df454-147">示例</span><span class="sxs-lookup"><span data-stu-id="df454-147">Example</span></span>
 
-<span data-ttu-id="23df3-148">这是创建一次性 （而不是定期） 访问回顾，显式指定为审阅者的两个用户的一个示例。</span><span class="sxs-lookup"><span data-stu-id="23df3-148">This is an example of creating a one-time (not recurring) access review, explicitly specifying two users as the reviewers.</span></span>
+<span data-ttu-id="df454-148">下面的示例演示了如何创建一次性 (非定期) 访问审核, 并将两个用户显式指定为审阅者。</span><span class="sxs-lookup"><span data-stu-id="df454-148">This is an example of creating a one-time (not recurring) access review, explicitly specifying two users as the reviewers.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="23df3-149">请求</span><span class="sxs-lookup"><span data-stu-id="23df3-149">Request</span></span>
-<span data-ttu-id="23df3-150">在请求正文中，提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="23df3-150">In the request body, supply a JSON representation of the [accessReview](../resources/accessreview.md) object.</span></span>
+##### <a name="request"></a><span data-ttu-id="df454-149">请求</span><span class="sxs-lookup"><span data-stu-id="df454-149">Request</span></span>
+<span data-ttu-id="df454-150">在请求正文中, 提供[accessReview](../resources/accessreview.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="df454-150">In the request body, supply a JSON representation of the [accessReview](../resources/accessreview.md) object.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -120,8 +120,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="23df3-151">响应</span><span class="sxs-lookup"><span data-stu-id="23df3-151">Response</span></span>
-><span data-ttu-id="23df3-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="23df3-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="df454-151">响应</span><span class="sxs-lookup"><span data-stu-id="df454-151">Response</span></span>
+><span data-ttu-id="df454-p106">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="df454-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
