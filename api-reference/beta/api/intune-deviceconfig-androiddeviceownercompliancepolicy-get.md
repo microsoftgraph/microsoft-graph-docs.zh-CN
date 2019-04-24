@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a5b33d032ea77e89d9cad7d727aa01ebcbfe2aa4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809193"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32481042"
 ---
 # <a name="get-androiddeviceownercompliancepolicy"></a>获取 androidDeviceOwnerCompliancePolicy
 

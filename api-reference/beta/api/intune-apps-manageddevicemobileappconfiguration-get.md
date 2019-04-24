@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 943e4076e08f29c32d14feab6a5ed3bf07c55d73
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771969"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32494978"
 ---
 # <a name="get-manageddevicemobileappconfiguration"></a>获取 managedDeviceMobileAppConfiguration
 

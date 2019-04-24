@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 836f2c647fd9894a7d39bba80e5f15f3f11ef81f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255862"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502732"
 ---
 # <a name="delete-group"></a>删除组
 
@@ -17,7 +17,7 @@ ms.locfileid: "30255862"
 
 删除组。  
 
-删除后, Office 365 组将移至临时容器, 并可在30天内恢复。  之后, 它们将被永久删除。  若要了解详细信息, 请参阅[deletedItems](../resources/directory.md)。  这仅适用于 Office 365 组。
+删除后, Office 365 组将移至临时容器, 并可在30天内恢复。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。  这仅适用于 Office 365 组。
 
 ## <a name="permissions"></a>权限
 

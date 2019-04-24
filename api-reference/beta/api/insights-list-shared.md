@@ -1,21 +1,21 @@
 ---
-title: 共享列表
-description: 返回与用户共享的文件列表中的计算的洞察。
+title: 共享的列表
+description: 计算出的洞察力, 返回与用户共享的文件的列表。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 2eef2a9b306984a8ad05bcf8fefca2458d609ab1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 009d9f65b5403139235e5f9afa932ebbe54ff9d4
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500380"
 ---
-# <a name="list-shared"></a>共享列表
+# <a name="list-shared"></a>共享的列表
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回与用户共享的文件列表中的计算的洞察。
+计算出的洞察力, 返回与用户共享的文件的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,21 +30,21 @@ ms.locfileid: "29517349"
 ```http
 GET /me/insights/shared
 ```
-请求用户 id 或者 userPrincipalName 才可以访问由用户，而不是任何其他人：
+具有 "user id" 或 "userPrincipalName" 的请求只能由用户访问, 而不能由其他人访问:
 ```http
-GET /users/<id | userPrincipalName>/insights/shared
+GET /users/{id | userPrincipalName}/insights/shared
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-您可以使用`$filter`查询参数来筛选共享的项目。 例如，基于类型：
+您可以使用`$filter`查询参数筛选共享项目。 例如, 基于类型:
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-请参阅可用的容器类型和[resourceVisualization](../resources/insights-resourcevisualization.md)中可以通过筛选的类型。
+请参阅可在[resourceVisualization](../resources/insights-resourcevisualization.md)中筛选的可用容器类型和类型。
 
-您还可以检索特定的用户共享的文件。 例如，通过指定`lastshared/sharedby/address`属性：
+您还可以检索由特定用户共享的文件。 例如, 通过指定`lastshared/sharedby/address`属性:
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
@@ -55,14 +55,14 @@ GET /users/<id | userPrincipalName>/insights/shared
 | 标头       |  值|
 |:-------------|:------|
 | Authorization  | Bearer {token}。必需。|
-| Accept  | application/json|
+| 接受  | application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码以及响应正文中的[共享](../resources/insights-shared.md)项目的列表。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[共享](../resources/insights-shared.md)项列表。
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
@@ -111,8 +111,8 @@ GET https://graph.microsoft.com/beta/me/insights/shared
 }
 ```
 
-### <a name="expanding-resource"></a>展开资源
-可以扩展共享洞察引用的资源。
+### <a name="expanding-resource"></a>扩展资源
+共享洞察力引用的资源可以扩展。
 ```http
 GET https://graph.microsoft.com/beta/me/insights/shared/{id}/resource
 ```

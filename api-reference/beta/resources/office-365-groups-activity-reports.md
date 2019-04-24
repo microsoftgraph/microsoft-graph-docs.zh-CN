@@ -1,21 +1,21 @@
 ---
 title: Office 365 组活动报表
-description: 可以在组织中获得的 Office 365 组活动见解并查看多少个 Office 365 组被创建和使用。
+description: 您可以深入了解组织中的 office 365 组的活动, 并查看创建和使用了多少个 office 365 组。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: e698a1096d244b864bbb15cf06c16e8cf79ff1f2
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572197"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32505571"
 ---
 # <a name="office-365-groups-activity-reports"></a>Office 365 组活动报表
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可以在组织中获得的 Office 365 组活动见解并查看多少个 Office 365 组被创建和使用。
+您可以深入了解组织中的 office 365 组的活动, 并查看创建和使用了多少个 office 365 组。
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Office 365 组](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)。
 

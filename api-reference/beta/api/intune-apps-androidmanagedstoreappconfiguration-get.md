@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d7d69550b7f4fe3294d2522935118327fc3f7f50
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797219"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32496511"
 ---
 # <a name="get-androidmanagedstoreappconfiguration"></a>获取 androidManagedStoreAppConfiguration
 

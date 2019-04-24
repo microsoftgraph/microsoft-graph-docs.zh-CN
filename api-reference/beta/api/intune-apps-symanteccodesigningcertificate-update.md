@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d21f72c62bd31bb25312e2b86835c339807d81ae
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792683"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32488776"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>更新 symantecCodeSigningCertificate
 
@@ -56,8 +56,8 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |password|字符串|.pfx 文件所需的密码。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的主题值。|
-|issuerName|String|证书的颁发者名称。|
-|常用|String|证书的 Issuer 值。|
+|issuerName|字符串|证书的颁发者名称。|
+|常用|字符串|证书的 Issuer 值。|
 |expirationDateTime|DateTimeOffset|证书到期日期。|
 |uploadDateTime|DateTimeOffset|作为 Symantec 证书的 CodeSigning 证书的类型。|
 

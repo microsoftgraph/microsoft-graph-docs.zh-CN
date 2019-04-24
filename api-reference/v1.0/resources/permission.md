@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Permission
 localization_priority: Priority
 ms.openlocfilehash: f2781726be786c5eb0d4ed8103dc3b9a62137597
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482222"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462513"
 ---
 # <a name="permission-resource-type"></a>Permission 资源类型
 

@@ -3,11 +3,11 @@ title: 更新 governanceRoleSetting
 description: 更新 governanceRoleSetting 的属性。
 localization_priority: Normal
 ms.openlocfilehash: f9c851f95df340693626ff82c960243eb2f85b54
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789618"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503035"
 ---
 # <a name="update-governancerolesetting"></a>更新 governanceRoleSetting
 

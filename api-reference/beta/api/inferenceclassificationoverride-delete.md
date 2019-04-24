@@ -1,19 +1,19 @@
 ---
 title: 删除 inferenceClassificationOverride
-description: 删除由其 ID 指定的中心收件箱覆盖
+description: 删除由其 ID 指定的重点收件箱覆盖。
 localization_priority: Normal
 ms.openlocfilehash: 16298ebb02b0540272c0c858abf5b16759de824d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513828"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501061"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>删除 inferenceClassificationOverride
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除由其 ID 指定的[中心收件箱](../resources/manage-focused-inbox.md)覆盖
+删除由其 ID 指定的[重点收件箱](../resources/manage-focused-inbox.md)覆盖。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

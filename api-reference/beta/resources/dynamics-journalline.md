@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 7a6841bcc2f893f8ca794e7d8e6aeafbcd4e48ca
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365953"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507292"
 ---
 # <a name="journallines-resource-type"></a>journalLines 资源类型
 代表 Dynamics 365 Business Central 中的日记中的一条线。
@@ -36,9 +36,9 @@ ms.locfileid: "30365953"
 |postingDate           |date                    |日志行的过帐日期。                          |
 |documentNumber        |字符串, 最大大小为20 |指定日记行的文档编号。                  |
 |externalDocumentNumber|字符串, 最大大小为20 |指定日记行的外部文档编号。        |
-|量                |decimal                 |指定日记行所包含的总金额 (包括 VAT)。|
-|说明           |字符串, 最大大小为50 |日记行的说明, 由用户或 autocreated 提供。|
-|批注               |字符串, 最大大小为250|用户在日志行上指定的注释。                      |
+|量                |数位                 |指定日记行所包含的总金额 (包括 VAT)。|
+|description           |字符串, 最大大小为50 |日记行的说明, 由用户或 autocreated 提供。|
+|注释               |字符串, 最大大小为250|用户在日志行上指定的注释。                      |
 |lastModifiedDateTime  |datetime                |修改日记行的最后一个日期/时间。 只读。        |
 
 ## <a name="relationships"></a>关系

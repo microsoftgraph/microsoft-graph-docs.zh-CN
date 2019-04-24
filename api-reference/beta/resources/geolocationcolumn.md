@@ -5,17 +5,17 @@ ms.date: 09/10/2018
 title: GeolocationColumn
 localization_priority: Normal
 ms.openlocfilehash: 9c39a7f646f6f78a9e321f05765a252d5f66de30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527213"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506426"
 ---
 # <a name="geolocationcolumn-resource-type"></a>geolocationColumn 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-对[columnDefinition](columndefinition.md)资源**geolocationColumn**表明列包含地理位置。
+[columnDefinition](columndefinition.md)资源上的**geolocationColumn**指示该列包含一个地理位置。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -29,7 +29,7 @@ ms.locfileid: "29527213"
 
 ## <a name="properties"></a>属性
 
-**GeolocationColumn**资源包含任何属性。
+**geolocationColumn**资源不包含任何属性。
 
 <!--
 {

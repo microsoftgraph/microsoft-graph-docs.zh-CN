@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d79011c34c05abf770a4883e3a67e30c9f1f18bd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806403"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32512549"
 ---
 # <a name="get-windowsphone81trustedrootcertificate"></a>获取 windowsPhone81TrustedRootCertificate
 

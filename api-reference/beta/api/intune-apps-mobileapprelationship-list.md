@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 89aed8daf6939d3c2e9a68b1567fdd63f0b9a8ed
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31808890"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32488825"
 ---
 # <a name="list-mobileapprelationships"></a>列出 mobileAppRelationships
 

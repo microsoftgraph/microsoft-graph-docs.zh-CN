@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 7eb0ef44a5e07c8c293ba804cc8ec31a8312576d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520870"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501845"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
 
@@ -17,7 +17,7 @@ ms.locfileid: "29520870"
 
 续订组以更新到期时间。 续订后，组的有效期就会延长策略中定义的天数。
 
-> **注意：** 在 V1.0，可[使用 group 资源，以使续订请求](/graph/api/group-renew?view=graph-rest-1.0)。
+> **注意:** 在1.0 版中,[使用组资源发出续订请求](/graph/api/group-renew?view=graph-rest-1.0)。
 
 ## <a name="permissions"></a>权限
 
@@ -28,7 +28,7 @@ ms.locfileid: "29520870"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All 或 Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持 |
-|应用程序 | Group.ReadWrite.All 或 Directory.ReadWrite.All |
+|应用 | Group.ReadWrite.All 或 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /groupLifecyclePolicies/renewGroup
 
 | 参数 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|groupId|Guid| 要更新的组 id。 |
+|groupId|Guid| 要续订的组的 id。 |
 
 ## <a name="response"></a>响应
 

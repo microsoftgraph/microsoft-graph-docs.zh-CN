@@ -1,21 +1,21 @@
 ---
 title: 组：subscribeByMail
-description: 调用此方法将允许当前用户接收有关该组中新帖子、活动和文件的电子邮件通知。仅支持 Office 365 组。
+description: 调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。 仅支持 Office 365 组。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 0a334daa005947099da324aab31ccc2a1da6b6e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516418"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501950"
 ---
 # <a name="group-subscribebymail"></a>组：subscribeByMail
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-调用此方法将使当前用户可以接收电子邮件通知，对此组，有关新帖子、 事件和文件组中。 仅支持 Office 365 组。
+调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。 仅支持 Office 365 组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

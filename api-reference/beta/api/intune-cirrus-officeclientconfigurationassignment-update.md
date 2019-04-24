@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 9820bfd08d509ee0eb5903a847be62e4d417b346
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148627"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32483115"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>更新 officeClientConfigurationAssignment
 
@@ -41,7 +41,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)对象的 JSON 表示形式。
@@ -50,7 +50,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|id|String|尚未记录|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|尚未记录|
 
 

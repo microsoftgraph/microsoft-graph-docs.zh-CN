@@ -5,15 +5,13 @@ ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
 ms.openlocfilehash: 65bbd2e371c856a6ffbd2c55ecba88c1635ce41c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480283"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506327"
 ---
 # <a name="filesysteminfo-facet"></a>FileSystemInfo Facet
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **FileSystemInfo** 资源包含设备本地文件系统所报告的项目本地版本的属性。和在本地设备上一样，此 facet 可用于指定项目的上次修改日期或创建日期。
 
@@ -63,15 +61,10 @@ ms.locfileid: "30480283"
 
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
   "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/FileSystemInfo",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/filesysteminfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Facets/FileSystemInfo"
+} -->

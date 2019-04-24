@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: dc628f5241d7586f74e99b1cd882fcc3c064358f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793026"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32498177"
 ---
 # <a name="unbind-action"></a>unbind 操作
 

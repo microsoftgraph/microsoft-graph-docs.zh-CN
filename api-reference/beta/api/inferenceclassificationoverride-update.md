@@ -1,19 +1,19 @@
 ---
-title: 更新 inferenceclassificationoverride
-description: '指定重写更改为中心的收件箱的**classifyAs**域。 '
+title: 更新 inferenceClassificationOverride
+description: '根据指定更改重点收件箱覆盖的**classifyAs**字段。 '
 localization_priority: Normal
 ms.openlocfilehash: 0cb3eab7f8a4efece8099ca8f65577d8a06b18d6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508515"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500844"
 ---
-# <a name="update-inferenceclassificationoverride"></a>更新 inferenceclassificationoverride
+# <a name="update-inferenceclassificationoverride"></a>更新 inferenceClassificationOverride
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指定重写更改[中心收件箱](../resources/manage-focused-inbox.md)的**classifyAs**域。 
+根据指定更改[重点收件箱](../resources/manage-focused-inbox.md)覆盖的**classifyAs**字段。 
 
 不能在 [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) 示例中使用 PATCH 更改任何其他字段。 
 

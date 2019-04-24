@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 93742039823782fbfe06f2c072a5bb6022d2e5da
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800194"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501110"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>创建 androidForWorkAppConfigurationSchema
 

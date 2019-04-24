@@ -1,19 +1,19 @@
 ---
 title: 更新 identityProvider
-description: 更新现有 identityProvider 中的属性。
+description: 更新现有 identityprovider.read.all 中的属性。
 localization_priority: Normal
 ms.openlocfilehash: d98bc5d0bd7a8f165f33c89548a69805039cdf07
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525743"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501453"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新现有[identityProvider](../resources/identityprovider.md)中的属性。
+更新现有 [identityProvider](../resources/identityprovider.md) 中的属性。
 
 ## <a name="permissions"></a>权限
 
@@ -43,21 +43,21 @@ PATCH /identityProviders/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，将一个 JSON 对象，提供需要更新的一个或多个属性。
+在请求正文中，为 JSON 对象提供一个或多个需要更新的属性。
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|String|应用程序的客户端 ID。 这是注册的标识提供程序的应用程序时所获得的客户端 ID。|
-|client_secret|String|应用程序客户端机密。 这是注册的标识提供程序的应用程序时所获得的客户端机密。|
+|clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
+|clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
 |name|String|标识提供程序的显示名称。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。 如果不成功，`4xx`与特定的详细信息，则返回错误。
+如果成功，此方法返回 `204 No Content` 响应代码。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
 
-以下示例更新的令牌生存期**identityProvider**定义，并将其设置为默认组织。
+以下示例会更新令牌生命周期 **identityProvider** 的定义并将其设置为组织默认值。
 
 ##### <a name="request"></a>请求
 

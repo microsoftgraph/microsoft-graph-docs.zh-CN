@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 16244072fd53cdf611c41fc03f5ed96ee0d6c7ae
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789351"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500326"
 ---
 # <a name="list-androiddeviceownerenrollmentprofiles"></a>列出 androidDeviceOwnerEnrollmentProfiles
 

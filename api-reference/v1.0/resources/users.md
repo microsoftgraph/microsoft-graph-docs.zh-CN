@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bfd7778d3fdc9675880b98a356dd690c4b1eaec8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966942"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456883"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>在 Microsoft Graph 中与用户一起工作
 
@@ -20,7 +20,7 @@ ms.locfileid: "27966942"
 - 通过用户 ID，`/users/{id | userPrincipalName}` 
 - 通过使用已登录的用户的 `/me` 别名，这与 `/users/{signed-in user's id}` 相同
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>授权
 
 需要以下 [权限](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) 之一才能访问用户操作。用户可将前三个权限授予应用程序。其余权限只能由管理员授予应用。
 
@@ -39,7 +39,7 @@ ms.locfileid: "27966942"
 
 |属性 |说明 |
 |:----------|:-------------|
-|ID | 用户的唯一标识符。|
+|id | 用户的唯一标识符。|
 |businessPhones | 用户的电话号码。|
 |displayName | 用户通讯簿中显示的名称。|
 |givenName| 用户的名 |

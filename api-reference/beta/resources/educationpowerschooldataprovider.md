@@ -1,21 +1,21 @@
 ---
 title: educationPowerSchoolDataProvider 资源
-description: 用于 PowerSchool 用作输入源时设置学校数据同步配置文件。
+description: 用于在将 PowerSchool 用作输入源时设置学校数据同步配置文件。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 2469a99b8acbfa1bd4e5167cf67caa102fa9422e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510461"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507115"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider 资源
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于[PowerSchool](https://www.powerschool.com/solutions/student-information-system-sis/)用作输入源时设置学校数据同步配置文件。
+用于在将[PowerSchool](https://www.powerschool.com/solutions/student-information-system-sis/)用作输入源时设置学校数据同步配置文件。
 
 派生自[educationSynchronizationDataProvider](educationsynchronizationdataprovider.md)。
 
@@ -23,13 +23,13 @@ ms.locfileid: "29510461"
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **connectionUrl** | String | 连接到 PowerSchool 实例 URL。 |
-| **clientId** | String |  用于连接到 PowerSchool 客户端 ID。 |
-| client_secret | String |  客户端机密进行身份验证与 PowerSchool 实例的连接。 |
-| **schoolsIds** | String 集合 |  学校同步的列表。 |
-| **schoolYear** | String |  要同步的学校年份。 |
-| **allowTeachersInMultipleSchools** | Boolean |  指示源是否有多个标识符是单个学生或教师。 |
-| **自定义项** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | 可选自定义要应用于同步配置文件。|
+| **connectionUrl** | 字符串 | 指向 PowerSchool 实例的连接 URL。 |
+| **clientId** | 字符串 |  用于连接到 PowerSchool 的客户端 ID。 |
+| **clientSecret** | 字符串 |  用于对与 PowerSchool 实例的连接进行身份验证的客户端密码。 |
+| **schoolsIds** | String collection |  要同步的学校列表。 |
+| **schoolYear** | 字符串 |  要同步的学校年。 |
+| **allowTeachersInMultipleSchools** | 布尔 |  指示源是否具有单个学生或教师的多个标识符。 |
+| **操作** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | 要应用于同步配置文件的可选自定义项。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 <!-- {

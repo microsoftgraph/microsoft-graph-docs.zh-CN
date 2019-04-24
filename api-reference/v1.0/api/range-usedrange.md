@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: db17537de2cd002a16b2c0306d4e4c9304010e44
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961475"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503672"
 ---
 # <a name="range-usedrange"></a>Range:UsedRange
 
@@ -40,7 +40,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 ## <a name="path-parameters"></a>路径参数
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|valuesOnly|boolean|可选。仅将有值的单元格视为已使用的单元格。|
+|valuesOnly|布尔|可选。仅将有值的单元格视为已使用的单元格。|
 
 ## <a name="response"></a>响应
 
@@ -81,7 +81,7 @@ Content-length: 169
 }
 ```
 
-下面是一个示例指定可选`valuesOnly`参数。
+下面是一个指定可选`valuesOnly`参数的示例。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -1,28 +1,28 @@
 ---
 title: educationSynchronizationLicenseAssignment 资源类型
-description: 代表分配给用户帐户的许可信息。 该资源将用于创建新的用户帐户时设置许可证分配。
+description: 表示要分配给用户帐户的许可证信息。 创建新用户帐户时, 资源将用于设置许可证分配。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: ce1ae196ba4f014a039e81713119b01fa69e6170
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525820"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507094"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>educationSynchronizationLicenseAssignment 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表分配给用户帐户的许可信息。 该资源将用于创建新的用户帐户时设置许可证分配。
+表示要分配给用户帐户的许可证信息。 创建新用户帐户时, 资源将用于设置许可证分配。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| appliesTo | string | 要分配许可证的用户角色类型。 可取值为：`student`、`teacher`。         |
-| **skuIds** | 字符串集合 |  表示分配的许可证的 SKU 标识符。        |
+| **appliesTo** | 字符串 | 要分配给许可证的用户角色类型。 可取值为：`student`、`teacher`。         |
+| **skuIds** | 字符串集合 |  表示要分配的许可证的 SKU 标识符。        |
 
 ## <a name="json-representation"></a>JSON 表示形式
 <!-- {

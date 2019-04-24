@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 59d40d358809214c4ad04996c42f24cd4c97e634
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31798927"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32495405"
 ---
 # <a name="create-iosvppappassignedlicense"></a>创建 iosVppAppAssignedLicense
 
@@ -51,8 +51,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|userEmailAddress|String|用户电子邮件地址。|
-|userId|String|用户 ID。|
+|userEmailAddress|字符串|用户电子邮件地址。|
+|userId|字符串|用户 ID。|
 |userName|String|用户名。|
 |userPrincipalName|String|用户主体名称。|
 

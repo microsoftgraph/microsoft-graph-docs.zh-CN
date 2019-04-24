@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 3d102e28bc04b6a2c2f8635e28f94e591c003bf5
-ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30379533"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456916"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 

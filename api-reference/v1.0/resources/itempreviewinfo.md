@@ -5,15 +5,15 @@ ms.date: 3/16/2018
 title: ItemPreviewInfo
 localization_priority: Normal
 ms.openlocfilehash: e7df636f9c406a499baa5ef3be1748273920cac4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885475"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585235"
 ---
 # <a name="itempreviewinfo-resource-type"></a>itemPreviewInfo 资源类型
 
-**ItemPreviewInfo**资源包含有关如何将嵌入的[driveItem](driveitem.md)预览信息。
+**itemPreviewInfo**资源包含有关如何嵌入[driveItem](driveitem.md)的预览的信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -27,15 +27,15 @@ ms.locfileid: "27885475"
 
 ## <a name="properties"></a>属性
 
-| 名称           | 类型   | Description
+| 名称           | 类型   | 说明
 |:---------------|:-------|:---------------------------------------------------
-| getUrl         | string | 适用于嵌入使用 HTTP GET （iframe 等） 的 URL
-| postUrl        | string | 适用于嵌入使用 HTTP POST URL （窗体发布，JS 等。）
-| postParameters | string | 如果使用 postUrl 包括 POST 参数
+| getUrl         | 字符串 | 适合使用 HTTP GET (iframe 等) 进行嵌入的 URL
+| postUrl        | 字符串 | 适合使用 HTTP POST (窗体 POST、JS 等) 嵌入的 URL
+| postParameters | 字符串 | 如果使用 postUrl, 则发布要包括的参数
 
-GetUrl、 postUrl，或同时可能会返回根据支持指定的选项的当前状态。
+根据指定选项的当前支持状态, 可能会返回 getUrl、postUrl 或 both。
 
-postParameters 是字符串格式设置为`application/x-www-form-urlencoded`，并且应该相应地设置执行 POST 到 postUrl 内容类型。 例如：
+postParameters 是格式为`application/x-www-form-urlencoded`的字符串, 如果向 postUrl 执行 POST, 应相应地设置内容类型。 例如：
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -43,4 +43,4 @@ Content-Type: application/x-www-form-urlencoded
 param1=value&param2=another%20value
 ```
 
-不透明应考虑的 Url 和参数的格式。
+url 和参数的格式应被认为是不透明的。

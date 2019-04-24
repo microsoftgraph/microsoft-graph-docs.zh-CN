@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 201f5c0b00b991dc5160070447751e7f81fcc860
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786425"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32495308"
 ---
 # <a name="delete-macosvppappassignedlicense"></a>删除 macOsVppAppAssignedLicense
 

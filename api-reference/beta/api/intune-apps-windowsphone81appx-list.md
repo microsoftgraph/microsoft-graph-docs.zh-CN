@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 74fd1c1cc525508472f3d097113ec3ce8173cc31
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773726"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32487971"
 ---
 # <a name="list-windowsphone81appxs"></a>列出 windowsPhone81AppXs
 

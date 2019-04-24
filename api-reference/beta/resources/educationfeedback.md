@@ -1,29 +1,29 @@
 ---
 title: educationFeedback 资源类型
-description: 从教师向学生的反馈。 此属性表示以及 who 反馈这两个的文本部分。
+description: 从教师到学生的反馈。 此属性表示反馈的文本部分以及发件人数。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 90e55b20b371d04bc3c6d45bb84fe6bf42157a2f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515634"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507136"
 ---
 # <a name="educationfeedback-resource-type"></a>educationFeedback 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从教师向学生的反馈。 此属性表示以及 who 反馈这两个的文本部分。
+从教师到学生的反馈。 此属性表示反馈的文本部分以及发件人数。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|feedbackBy|[identitySet](identityset.md)|创建用户的反馈。|
-|feedbackDateTime|DateTimeOffset|提供反馈时时刻。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|text|[itemBody](itembody.md)|反馈|
+|feedbackBy|[identitySet](identityset.md)|创建了反馈的用户。|
+|feedbackDateTime|DateTimeOffset|提供反馈的时间点。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|text|[itemBody](itembody.md)|征求.|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

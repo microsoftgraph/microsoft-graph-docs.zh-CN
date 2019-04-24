@@ -1,29 +1,29 @@
 ---
 title: governanceSubject 资源类型
-description: 表示用户、 组和管理特权标识管理 (PIM) 中的服务主体。
+description: 表示在特权标识管理 (PIM) 中管理的用户、组和服务主体。
 localization_priority: Normal
 ms.openlocfilehash: a83825a147429c81b3e83b2f2fb384672d2f527e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519162"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506425"
 ---
 # <a name="governancesubject-resource-type"></a>governanceSubject 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示用户、 组和管理特权标识管理 (PIM) 中的服务主体。
+表示在特权标识管理 (PIM) 中管理的用户、组和服务主体。
 
 
 ## <a name="properties"></a>属性
 | 属性  | 类型       |说明|
 |:----------|:----------|:----------|
-|id         |字串符号     | 主题的 id。|
-|type       |字符串     |主题类型。 值可以是``User``， ``Group``，和``ServicePrincipal``。|
-|displayName|String     |主题的显示名称。|
-|email      |String     |用户使用者的电子邮件地址。 如果主题位于其他类型，它为空。|
-|principalName|String   |主体的用户主体名称。 如果主题位于其他类型，它为空。|
+|id         |String     | 主题的 id。|
+|类型       |字符串     |主题的类型。 值可以是``User``、 ``Group``和。 ``ServicePrincipal``|
+|displayName|字符串     |主题的显示名称。|
+|email      |字符串     |用户主题的电子邮件地址。 如果主题在其他类型中, 则为空。|
+|principalName|String   |用户主题的主体名称。 如果主题在其他类型中, 则为空。|
 
 ## <a name="relationships"></a>关系
 无

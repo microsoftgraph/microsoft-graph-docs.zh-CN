@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 48ee13a67d97f9c5c1a96a6ef6e104c5629f4108
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517615"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506529"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "29517615"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|获取应用程序 | [Application](application.md) |读取属性和 application 对象的关系。|
+|[获取应用程序](../api/excelapplication-get.md) | [应用程序](application.md) |读取 application 对象的属性和关系。|
 |[Calculate](../api/excelapplication-calculate.md)|无|重新计算 Excel 中当前打开的所有工作簿。|
 
 ## <a name="properties"></a>属性

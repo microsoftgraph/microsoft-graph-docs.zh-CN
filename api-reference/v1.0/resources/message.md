@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 40bb849ba7dd62a3571ab5bf95e70eb6b9a27a85
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745550"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463045"
 ---
 # <a name="message-resource-type"></a>邮件资源类型
 

@@ -5,11 +5,11 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: b0462b350df52a85a1a452be6ce38def86600eb3
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31003739"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462338"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 

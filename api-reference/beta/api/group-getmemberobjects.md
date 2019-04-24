@@ -1,21 +1,21 @@
 ---
 title: 'group: getMemberObjects'
-description: 返回组所属的所有组和管理单元。 检查是可传递的。 注意： 以便将不返回任何目录角色，组不能为目录角色的成员。
+description: 返回组所属的所有组和管理单元。 检查是可传递的。 注意：组不能是目录角色的成员，因此不会返回任何目录角色。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 4b71a683d3c311acc36ca0ab669c5d6d44180f31
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518714"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502394"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回组所属的所有组和管理单元。 检查是可传递的。 注意： 以便将不返回任何目录角色，组不能为目录角色的成员。
+返回组所属的所有组和管理单元。 检查是可传递的。 注意：组不能是目录角色的成员，因此不会返回任何目录角色。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

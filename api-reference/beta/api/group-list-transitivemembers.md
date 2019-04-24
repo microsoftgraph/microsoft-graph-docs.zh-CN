@@ -1,21 +1,21 @@
 ---
-title: 可传递列表组的成员
-description: 获取组的成员的列表。 一组可将用户、 联系人、 设备、 服务主体和其他组作为成员。 此操作可传递，也将返回所有嵌套成员一个平面列表。
+title: 列表组可传递成员
+description: 获取组成员的列表。 组可以将用户、联系人、设备、服务主体和其他组作为成员。 此操作是可传递的, 并且还将返回所有嵌套成员的简单列表。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: e1dc5c2b89305373b22b6ef87cfaee25d6669750
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640740"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502109"
 ---
-# <a name="list-group-transitive-members"></a>可传递列表组的成员
+# <a name="list-group-transitive-members"></a>列表组可传递成员
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取组的成员的列表。 一组可将用户、 联系人、 设备、 服务主体和其他组作为成员。 此操作可传递，也将返回所有嵌套成员一个平面列表。
+获取组成员的列表。 组可以将用户、联系人、设备、服务主体和其他组作为成员。 此操作是可传递的, 并且还将返回所有嵌套成员的简单列表。
 
 ## <a name="permissions"></a>权限
 
@@ -23,11 +23,11 @@ ms.locfileid: "29640740"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All，Directory.AccessAsUser.All，User.ReadBasic.All User.Read.All    |
+|委派（工作或学校帐户） | directory.accessasuser.all、user.readbasic.all、用户、全部、用户、全部读取。所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Directory.Read.All User.Read.All |
+|应用程序 | read. all, User. all |
 
-> 注意： 列表中隐藏成员资格组的成员，则 Member.Read.Hidden 权限是必需。
+> 注意: 若要列出隐藏的成员资格组的成员, 则需要使用 Read。隐藏权限是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -71,8 +71,8 @@ GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

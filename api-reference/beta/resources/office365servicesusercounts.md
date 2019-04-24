@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 36fd043be3cef36951f7651d625f4a93d3b5f8cc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573891"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32505457"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>office365ServicesUserCounts 资源类型
 
@@ -17,22 +17,22 @@ ms.locfileid: "29573891"
 
 | 属性                 | 类型   | 说明                              |
 | :----------------------- | :----- | ---------------------------------------- |
-| reportRefreshDate        | Date   | 内容最晚日期。          |
-| exchangeActive           | Int64  | 在 Exchange 上的活动用户数。 任何用户都可以读取和发送电子邮件被视为活动用户。 |
-| exchangeInactive         | Int64  | 在 Exchange 上的非活动用户数。 |
-| oneDriveActive           | Int64  | 在 OneDrive 上的活动用户数。 查看或编辑文件、 内部或外部，共享文件或同步文件的任何用户被视为活动用户。 |
-| oneDriveInactive         | Int64  | Onedrive 非活动用户数。 |
-| sharePointActive         | Int64  | 在 SharePoint 上的活动用户数。 查看或编辑文件、 共享文件内部或外部同步文件，或查看 SharePoint 页的任何用户被视为活动用户。 |
-| sharePointInactive       | Int64  | 在 SharePoint 上的非活动用户数。 |
-| skypeForBusinessActive   | Int64  | Skype 的业务上的活动用户数。 组织或参加会议，或加入对等会话的任何用户被视为活动用户。 |
-| skypeForBusinessInactive | Int64  | Skype 的业务的非活动用户数。 |
-| yammerActive             | Int64  | Yammer 上的活动用户数。 任何用户都可以发布、 读取或类似于邮件被视为活动用户。 |
-| yammerInactive           | Int64  | 在 Yammer 上的非活动用户数。  |
-| teamsActive              | Int64  | 在 Microsoft 团队的活动用户数。 在工作组通道中发布消息、 私人聊天会话中发送的邮件或参加会议或进行呼叫的任何用户被视为活动用户。 |
-| teamsInactive            | Int64  | 在 Microsoft 团队的非活动用户数。     |
+| reportRefreshDate        | Date   | 内容的最新日期。          |
+| exchangeActive           | Int64  | Exchange 上的活动用户数。 任何可以读取和发送电子邮件的用户都被视为活动用户。 |
+| exchangeInactive         | Int64  | Exchange 上的非活动用户数。 |
+| oneDriveActive           | Int64  | OneDrive 上的活动用户数。 任何查看或编辑文件、内部或外部共享文件或已同步文件的用户都被视为活动用户。 |
+| oneDriveInactive         | Int64  | OneDrive 上的非活动用户数。 |
+| sharePointActive         | Int64  | SharePoint 上的活动用户数。 任何查看或编辑过文件、内部或外部共享文件、同步文件或查看 SharePoint 页面的用户都被视为活动用户。 |
+| sharePointInactive       | Int64  | SharePoint 上的非活动用户数。 |
+| skypeForBusinessActive   | Int64  | Skype for business 中的活动用户数。 任何组织或参加过会议的用户或加入的对等会话都被视为活动用户。 |
+| skypeForBusinessInactive | Int64  | Skype for business 上的非活动用户数。 |
+| yammerActive             | Int64  | Yammer 上的活动用户数。 任何可以发布、阅读或赞邮件的用户都被视为活动用户。 |
+| yammerInactive           | Int64  | Yammer 上的非活动用户数。  |
+| teamsActive              | Int64  | Microsoft 团队中的活动用户数。 任何在团队频道中投递了邮件、在私人聊天会话中发送的邮件或参与会议或呼叫的用户都被视为活动用户。 |
+| teamsInactive            | Int64  | Microsoft 团队中的非活动用户数。     |
 | office365Active          | Int64  | Office 365 上的活动用户数。   |
 | office365Inactive        | Int64  | Office 365 上的非活动用户数。     |
-| reportPeriod             | String | 报告涵盖天数。    |
+| reportPeriod             | 字符串 | 报告覆盖的天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f07aed9b3dcbc5ac2acfaad7dc0c8cc8ff20a830
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776330"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32516474"
 ---
 # <a name="delete-windows10networkboundaryconfiguration"></a>删除 windows10NetworkBoundaryConfiguration
 

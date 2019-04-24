@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3e8f0aa1c3ba924769bec41231019f76739b23be
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789673"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32512514"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>更新 windowsPhone81GeneralConfiguration
 
@@ -54,24 +54,24 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|applyOnlyToWindowsPhone81|布尔值|指示此策略是否仅适用于 Windows Phone 8.1 的值。 此属性是只读的。|
-|appsBlockCopyPaste|布尔值|指示是否阻止复制粘贴。|
-|bluetoothBlocked|布尔值|指示是否阻止蓝牙。|
-|cameraBlocked|布尔值|指示是否阻止照相机。|
-|cellularBlockWifiTethering|布尔值|指示是否阻止 Wi-Fi 网络共享。 如果 Wi-Fi 被阻止，没有任何影响。|
+|applyOnlyToWindowsPhone81|布尔|指示此策略是否仅适用于 Windows Phone 8.1 的值。 此属性是只读的。|
+|appsBlockCopyPaste|布尔|指示是否阻止复制粘贴。|
+|bluetoothBlocked|布尔|指示是否阻止蓝牙。|
+|cameraBlocked|布尔|指示是否阻止照相机。|
+|cellularBlockWifiTethering|布尔|指示是否阻止 Wi-Fi 网络共享。 如果 Wi-Fi 被阻止，没有任何影响。|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|位于 AppComplianceList 中的列表。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
-|diagnosticDataBlockSubmission|布尔值|指示是否阻止诊断数据提交。|
+|diagnosticDataBlockSubmission|布尔|指示是否阻止诊断数据提交。|
 |emailBlockAddingAccounts|Boolean|指示是否阻止自定义电子邮件帐户。|
-|locationServicesBlocked|布尔值|指示是否阻止位置服务。|
-|microsoftAccountBlocked|布尔值|指示是否阻止使用 Microsoft 帐户。|
-|nfcBlocked|布尔值|指示是否阻止近场通信。|
+|locationServicesBlocked|布尔|指示是否阻止位置服务。|
+|microsoftAccountBlocked|布尔|指示是否阻止使用 Microsoft 帐户。|
+|nfcBlocked|布尔|指示是否阻止近场通信。|
 |passwordBlockSimple|Boolean|指示是否阻止同步日历。|
 |passwordExpirationDays|Int32|密码过期前的天数。|
 |passwordMinimumLength|Int32|密码的最小长度。|
@@ -80,13 +80,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
-|passwordRequired|布尔值|指示是否需要密码。|
-|screenCaptureBlocked|布尔值|指示是否阻止屏幕截图。|
-|storageBlockRemovableStorage|布尔值|指示是否阻止可移动存储。|
-|storageRequireEncryption|布尔值|指示是否需要加密。|
-|webBrowserBlocked|布尔值|指示是否阻止 Web 浏览器。|
-|wifiBlocked|布尔值|指示是否阻止 Wi-Fi。|
-|wifiBlockAutomaticConnectHotspots|布尔值|指示是否阻止自动连接到 Wi-Fi 热点。 如果 Wi-Fi 被阻止，没有任何影响。|
+|passwordRequired|布尔|指示是否需要密码。|
+|screenCaptureBlocked|布尔|指示是否阻止屏幕截图。|
+|storageBlockRemovableStorage|布尔|指示是否阻止可移动存储。|
+|storageRequireEncryption|布尔|指示是否需要加密。|
+|webBrowserBlocked|布尔|指示是否阻止 Web 浏览器。|
+|wifiBlocked|布尔|指示是否阻止 Wi-Fi。|
+|wifiBlockAutomaticConnectHotspots|布尔|指示是否阻止自动连接到 Wi-Fi 热点。 如果 Wi-Fi 被阻止，没有任何影响。|
 |wifiBlockHotspotReporting|Boolean|指示是否阻止 Wi-Fi 热点报告。 如果 Wi-Fi 被阻止，没有任何影响。|
 |windowsStoreBlocked|Boolean|指示是否阻止 Windows 应用商店。|
 

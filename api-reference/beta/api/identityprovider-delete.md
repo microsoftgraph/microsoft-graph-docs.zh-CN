@@ -1,19 +1,19 @@
 ---
 title: 删除 identityProvider
-description: 删除现有 identityProvider。
+description: 删除现有的 identityProvider。
 localization_priority: Normal
 ms.openlocfilehash: bb64f10b656697ab2cf611dd9be0468c295b15e8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514353"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501586"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除现有[identityProvider](../resources/identityprovider.md)。
+删除现有的 [identityProvider](../resources/identityprovider.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -50,7 +50,7 @@ DELETE /identityProviders/{id}
 
 ## <a name="example"></a>示例
 
-下面的示例删除**identityProvider**。
+以下示例会删除 **identityProvider**。
 
 ##### <a name="request"></a>请求
 

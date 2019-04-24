@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8ffb7ae6f0e9430c5775513f26a0aba27c6b0caa
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781482"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32495741"
 ---
 # <a name="list-iosmobileappconfigurations"></a>列出 iosMobileAppConfigurations
 

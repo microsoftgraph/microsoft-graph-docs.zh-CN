@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 41daca4fe9ba7e4bb6a271cf26fbe9789bba70ad
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773551"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32511898"
 ---
 # <a name="get-windowsphoneeasemailprofileconfiguration"></a>获取 windowsPhoneEASEmailProfileConfiguration
 

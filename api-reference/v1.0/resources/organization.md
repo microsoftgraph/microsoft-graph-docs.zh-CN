@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ecd92005849870704002c4e7617d2f0e76a7031b
-ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212366"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462649"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
