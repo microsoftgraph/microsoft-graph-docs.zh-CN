@@ -1,21 +1,21 @@
 ---
 title: 更新事件
-description: 更新 event 对象的属性。
+description: 更新事件对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: b3f101c14a69c6dc2b3687e9d4a1509e6ac7a531
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643949"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464032"
 ---
 # <a name="update-event"></a>更新事件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[event](../resources/event.md)对象的属性。
+更新[事件](../resources/event.md)对象的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -55,32 +55,32 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 
 | 属性       | 类型    | 说明 |
 |:---------------|:--------|:------------|
-| 与会者|Attendee|事件的与会者集合。|
+| attendees|与会者|事件的与会者集合。|
 | body|ItemBody|与事件相关联的邮件正文。|
-| categories|String|与事件相关联的类别。|
+| categories|字符串|与事件相关联的类别。|
 | end|DateTimeTimeZone|事件的结束日期和时间。<br/><br/>默认情况下，结束时间使用 UTC 格式。可以在 EndTimeZone 中指定可选的时区，用该时区表示结束时间并包括与 UTC 的时间偏移量。请注意，如果使用 EndTimeZone，必须为 StartTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 9:34：“2015-02-25T21:34:00-08:00”。 |
-| 重要性|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
-| isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
-| isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
+| importance|字符串|事件的重要性。 可取值为：`low`、`normal`、`high`。|
+| isAllDay|布尔|如果事件持续一整天，则设置为 true。|
+| isReminderOn|布尔|如果设置警报以提醒用户有事件，则设置为 true。|
 | 位置|位置|事件的位置。|
 |位置|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
 | 定期|PatternedRecurrence|事件的定期模式。|
 | reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
 | responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
-| sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
-| showAs|String|要显示的状态。 可能的值为： `free` ， `tentative`， `busy`， `oof`， `workingElsewhere`， `unknown`。|
+| sensitivity|字符串| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
+| showAs|String|要显示的状态。 可能的值为`free` : `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`、。|
 | start|DateTimeTimeZone|事件的开始时间。 <br/><br/>默认情况下，开始时间使用 UTC 格式。可以在 StartTimeZone 中指定可选的时区，用该时区表示开始时间并包括与 UTC 的时间偏移量。请注意，如果使用 StartTimeZone，你也必须为 EndTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 7:34：“2015-02-25T19:34:00-08:00”。  |
 | subject|String|事件的主题行文本。|
 
-由于**事件**资源支持[扩展](/graph/extensibility-overview)，您可以使用`PATCH`操作添加、 更新或删除您自己的扩展现有**事件**实例中的自定义属性中的特定于应用程序的数据。
+由于**事件**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用该`PATCH`操作在现有**事件**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
-如果您要更新的**事件**是定期系列的主事件，包含多个与会者，并且包含单独已更新的实例，多个电子邮件发送的通知： 一个用于主系列，每个实例具有一个已进行了更新。
+如果您正在更新的**事件**是定期系列的主事件, 包含多个与会者, 并且具有单独更新的实例, 则会发出多个通知电子邮件: 一个主系列, 一个是, 每个实例包含已更新。
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [event](../resources/event.md) 对象。
 
->**注意：** 此方法可返回的错误代码 HTTP 400 错误请求响应`ErrorOccurrenceCrossingBoundary`并显示以下错误消息： 已修改的事件是通过或重叠相邻事件。 这指示更新违反了以下 Outlook 限制重复例外： 出现或上一个匹配项，天之前不能移动，不能将移动到或之后的以下匹配项的天。
+>**注意:** 此方法可以返回一个错误代码为的`ErrorOccurrenceCrossingBoundary` HTTP 400 请求响应, 并返回以下错误消息: 修改的事件发生交叉或重叠的相邻事件。 这表明更新违反了对定期例外的以下 Outlook 限制: 不能将事件移到上一次出现的日期之前或之前, 也不能将其移至以下事件的日期或时间。
 
 ## <a name="example"></a>示例
 

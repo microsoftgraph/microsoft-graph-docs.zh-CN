@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 87ed72ab4a07ffbe3d8757b4283f85aa5f4791d3
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643375"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461026"
 ---
 # <a name="chartaxisformat-resource-type"></a>ChartAxisFormat 资源类型
 

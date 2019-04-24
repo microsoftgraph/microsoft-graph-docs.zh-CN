@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2d6f48f0fdb95f2d88f6af5f62975792453367d9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773488"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466131"
 ---
 # <a name="create-securitybaselinetemplate"></a>创建 securityBaselineTemplate
 
@@ -52,7 +52,7 @@ POST /deviceManagement/templates
 |:---|:---|:---|
 |id|String|从[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承的模板 ID|
 |displayName|String|从[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承的模板的显示名称|
-|description|String|模板的说明继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|description|字符串|模板的说明继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 
 
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 5d8c414034a110db64b770a72fe2e3540806acdd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573464"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462947"
 ---
 # <a name="office-365-groups-activity-reports"></a>Office 365 组活动报表
 

@@ -1,38 +1,38 @@
 ---
 title: teamsAsyncOperation 资源类型
-description: 'Microsoft 团队异步操作是超越单个 API 请求的生命周期的操作。 '
+description: 'Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的操作。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: dea11ee20e09f1de7c058ef7704e6a824ba2f765
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963435"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462254"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>teamsAsyncOperation 资源类型
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的操作。 这些操作运行时间较长, 或者在发起请求的时间范围内完成的成本太高。
 
-Microsoft 团队异步操作是超越单个 API 请求的生命周期的操作。 这些操作是运行时间较长或太高完成其原始请求的时间范围。
-
-启动异步操作后，该方法将返回 202 接受响应代码。 响应还将包含位置标头，其中包含 teamsAsyncOperation 的位置。 定期检查通过对此位置; 进行 GET 请求的操作的状态等待 > 检查之间的 30 秒。
-请求成功完成时，状态将为"成功"，并且 targetResourceLocation 将指向创建修改资源。
+当异步操作启动时, 该方法将返回202接受的响应代码。 该响应还将包含一个位置标头, 其中包含 teamsAsyncOperation 的位置。 通过向此位置发出 GET 请求来定期检查操作的状态;在两个检查之间等待 >30 秒。
+当请求成功完成时, 状态将为 "已成功", targetResourceLocation 将指向 "已创建/已修改" 的资源。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型   | 说明 |
 |:---------------|:--------|:----------|
-|ID|string |唯一的操作的 id。|
-|： 键入|[teamsAsyncOperationType](teamsasyncoperationtype.md) |表示所描述的操作的类型。|
+|id|string |唯一操作 id。|
+|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |指示正在描述的操作的类型。|
 |createdDateTime|DateTimeOffset |创建操作的时间。|
 |status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作状态。|
-|lastActionDateTime|DateTimeOffset |上次更新时间异步操作的时间。|
-|attemptsCount|Int32|操作已被标记为成功或失败前尝试次数。|
-|targetResourceId|guid |创建或修改此异步操作，通常[团队](../resources/team.md)的结果的对象 ID。|
-|targetResourceLocation|string|对象已创建或修改此异步操作的结果的位置。 此 URL 应视为不透明的值，并不解析到它的组件路径。|
-|error|[operationError](operationerror.md)|使异步操作失败的任何错误。|
+|lastActionDateTime|DateTimeOffset |上次更新异步操作的时间。|
+|attemptsCount|Int32|在标记为 "成功" 或 "失败" 之前尝试操作的次数。|
+|targetResourceId|containerparentjob |作为此异步操作 (通常为[团队](../resources/team.md)) 的结果创建或修改的对象的 ID。|
+|targetResourceLocation|字符串|作为此异步操作的结果创建或修改的对象的位置。 应将此 URL 视为不透明值, 而不会将其解析为其组件路径。|
+|error|[operationError](operationerror.md)|导致异步操作失败的任何错误。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -60,10 +60,15 @@ Microsoft 团队异步操作是超越单个 API 请求的生命周期的操作�
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teams async operation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsasyncoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

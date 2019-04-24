@@ -1,21 +1,21 @@
 ---
-title: 呼叫： 传输
-description: 将活动呼叫转接。
+title: '呼叫: 转移'
+description: 转移活动呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b1c503be31b17fb608abbec340aa9390ce315435
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516250"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462429"
 ---
-# <a name="call-transfer"></a>呼叫： 传输
+# <a name="call-transfer"></a>呼叫: 转移
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将活动呼叫转接。
+转移活动呼叫。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,15 +43,15 @@ POST /applications/{id}/calls/{id}/transfer
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|这是目标转接的参与者。|
-|ClientContext|String|客户端上下文。|
+|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|作为转移目标的参与者。|
+|适用|字符串|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回响应代码。
+返回`202 Accepted`响应代码。
 
 ## <a name="examples"></a>示例
 
-### <a name="transfer-call-directly-with-no-user-involvement"></a>与没有用户参与直接转接呼叫
+### <a name="transfer-call-directly-with-no-user-involvement"></a>直接转接呼叫, 无用户参与
 
 以下示例演示如何调用此 API。
 
@@ -98,7 +98,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>通知-传输
+##### <a name="notification---transferring"></a>通知-转移
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>通知-接受转接
+##### <a name="notification---transfer-accepted"></a>通知-传输已接受
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -166,7 +166,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>通知-终止
+##### <a name="notification---terminated"></a>通知终止
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -196,7 +196,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="consultative-transfer"></a>咨询转接
+### <a name="consultative-transfer"></a>咨询转移
 
 ##### <a name="request"></a>请求
 
@@ -236,7 +236,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>通知-传输
+##### <a name="notification---transferring"></a>通知-转移
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -270,7 +270,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>通知-接受转接
+##### <a name="notification---transfer-accepted"></a>通知-传输已接受
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -304,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>通知-终止
+##### <a name="notification---terminated"></a>通知终止
 
 ```http
 POST https://bot.contoso.com/api/calls

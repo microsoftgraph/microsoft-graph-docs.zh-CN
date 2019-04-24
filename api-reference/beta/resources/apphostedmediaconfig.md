@@ -1,28 +1,28 @@
 ---
 title: appHostedMediaConfig 资源类型
-description: 媒体堆栈承载的应用程序。
+description: 由应用程序托管的媒体堆栈。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a2e52c1c4d48649c5763be643f8b2ededb71bce5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643690"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460896"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>appHostedMediaConfig 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-媒体堆栈承载的应用程序。
+由应用程序托管的媒体堆栈。
 
 ## <a name="properties"></a>属性
 
 | 属性                          | 类型    | 说明                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| blob                              | String  | 媒体配置 blob 智能媒体代理生成。    |
-| removeFromDefaultAudioGroup       | 布尔值 | 从默认音频组中删除音频                       |
+| 块                              | 字符串  | 由智能媒体代理生成的媒体配置 blob。    |
+| removeFromDefaultAudioGroup       | 布尔 | 从默认音频组中删除音频                       |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

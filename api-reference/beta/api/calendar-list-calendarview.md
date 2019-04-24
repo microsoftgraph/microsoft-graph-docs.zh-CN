@@ -1,19 +1,17 @@
 ---
 title: 列出 calendarView
-description: 获取由一个时间范围，定义日历视图中的匹配项、 例外和事件的单个实例
-localization_priority: Normal
+description: 在由时间范围定义的日历视图中获取事件的具体值、异常和单个实例,
+localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: b360d47c99de387daf5b421623f926ad7912b912
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520891"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461829"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从用户或群组的默认日历 `(../me/calendarview)` 或用户的其他一些日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。
 
@@ -24,14 +22,18 @@ ms.locfileid: "29520891"
 * 群组日历中的事件：Group.Read.All 或 Group.ReadWrite.All
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->用户或组的默认[日历](../resources/calendar.md)。
+
+用户或组的默认 [日历](../resources/calendar.md)。
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /groups/{id}/calendar/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
-默认 [calendarGroup](../resources/calendargroup.md) 中的用户 [calendar](../resources/calendar.md)。
+默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -41,6 +43,7 @@ GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/calendarView?st
 ```
 
 指定 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarGroups/{id}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -52,11 +55,11 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|startDateTime|String|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
+|startDateTime|字符串|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
 |endDateTime|String|时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。|
 
 此方法还支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明 |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {token}。必需。  |
@@ -76,7 +79,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendar/calendarView?startDateTime=2017-01-01T19:00:00.0000000&endDateTime=2017-01-07T19:00:00.0000000
+GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017-01-01T19:00:00.0000000&endDateTime=2017-01-07T19:00:00.0000000
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -98,9 +101,9 @@ Content-length: 354
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
         "response": "response-value",
-        "time": "2016-10-19T10:37:00Z"
+        "time": "datetime-value"
       },
-      "uid": "iCalUId-value",
+      "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
     }
@@ -110,15 +113,10 @@ Content-length: 354
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List calendarView",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/calendar-list-calendarview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

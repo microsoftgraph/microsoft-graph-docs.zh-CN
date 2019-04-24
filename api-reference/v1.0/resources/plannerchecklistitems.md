@@ -1,32 +1,35 @@
 ---
 title: plannerChecklistItems 资源类型
-description: '**plannerChecklistItemCollection** 资源表示任务上的清单项集合。它是开放类型。它是任务详细信息对象的组成部分。该属性值对中的值是 checklistItem 对象。'
+description: '**plannerChecklistItemCollection**资源表示任务上的检查表项的集合。 它是开放类型。 它是任务详细信息对象的一部分。 属性-值对中的值是 checklistItem 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 17c1d8c0529e0d85ebc784d25c2dc284f1775c0f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982699"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462282"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>plannerChecklistItems 资源类型
 
-**plannerChecklistItemCollection** 资源表示任务上的清单项集合。它是开放类型。它是[任务详细信息](plannertaskdetails.md)对象的组成部分。该属性值对中的值是 [checklistItem](plannerchecklistitem.md) 对象。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+**plannerChecklistItemCollection**资源表示任务上的检查表项的集合。 它是开放类型。 它是[任务详细信息](plannertaskdetails.md)对象的一部分。 属性-值对中的值是[checklistItem](plannerchecklistitem.md)对象。
 
 
 ## <a name="properties"></a>属性
-开放类型的属性可以由客户端定义。在这种情况下，客户端应将 **GUID** 作为属性，并且其值必须为 [checklistItem](plannerchecklistitem.md) 对象。下面是一个示例。若要删除清单中的项，请将该属性值设置为 `null`。
+可由客户端定义打开类型的属性。 在这种情况下, 客户端应将**guid**作为属性提供, 并且它们的值必须是[checklistItem](plannerchecklistitem.md)对象。 示例如下所示。 若要删除检查表中的项目, 请将该属性的值`null`设置为。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是资源的 JSON 表示形式
+下面是资源的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",
-  "openType": true,
-  "optionalProperties": [ "String-value" ],
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.plannerChecklistItems"
 }-->
 
@@ -42,7 +45,7 @@ ms.locfileid: "27982699"
   }
 }
 ```
-// 示例
+示例
 
 ```json
 {
@@ -78,10 +81,15 @@ ms.locfileid: "27982699"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerChecklistItems resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannerchecklistitems.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

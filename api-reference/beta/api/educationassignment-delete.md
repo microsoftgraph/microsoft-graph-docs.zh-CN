@@ -1,30 +1,30 @@
 ---
 title: 删除 educationAssignment
-description: 删除现有的工作分配。 仅在类的教师可以删除工作分配。
+description: 删除现有工作分配。 只有课堂中的教师才能删除工作分配。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 2356330a75558ea88b94c9266fb2d4a387e87b59
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515886"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464738"
 ---
 # <a name="delete-educationassignment"></a>删除 educationAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除现有的工作分配。 仅在类的教师可以删除工作分配。
+删除现有工作分配。 只有课堂中的教师才能删除工作分配。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）| EduAssignments.ReadWriteBasic EduAssignments.ReadWrite |
-|委派（个人 Microsoft 帐户） |   不受支持。 |
-|应用程序 | 不受支持。  | 
+|委派（工作或学校帐户）| EduAssignments、ReadWriteBasic、EduAssignments |
+|委派（个人 Microsoft 帐户） |   不支持。 |
+|应用 | 不支持。  | 
 
 ## <a name="http-request"></a>HTTP 请求
 

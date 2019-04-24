@@ -1,29 +1,29 @@
 ---
-title: 呼叫： 设为静音
-description: 允许应用程序本身设为静音。
+title: '呼叫: 静音'
+description: 允许应用程序将其本身设为静音。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2f619cdc42ff914999ad8826ff31452ff82ea6a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524077"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461246"
 ---
-# <a name="call-mute"></a>呼叫： 设为静音
+# <a name="call-mute"></a>呼叫: 静音
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-允许应用程序本身设为静音。
+允许应用程序将其本身设为静音。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不受支持。                               |
-| 委派（个人 Microsoft 帐户） | 不受支持。                               |
+| 委派（工作或学校帐户）     | 不支持。                               |
+| 委派（个人 Microsoft 帐户） | 不支持。                               |
 | 应用程序                            | 无。                                        |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/mute
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|ClientContext|String|客户端上下文。|
+|适用|字符串|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[commsOperation](../resources/commsoperation.md)对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

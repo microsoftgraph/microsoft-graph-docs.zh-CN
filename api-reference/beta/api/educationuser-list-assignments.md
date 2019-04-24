@@ -1,28 +1,28 @@
 ---
-title: 列表分配
-description: 返回分配给用户的所有类的分配的列表。 此实用程序命名空间允许呼叫者可以在单个呼叫，而不必重新分配请求从每个类中查找学生的所有工作分配。 工作分配列表包含所需获取类命名空间内从工作分配的详细的信息。 工作分配的所有其他操作应使用类命名空间。
+title: 列出作业
+description: 返回为所有类分配给用户的工作分配的列表。 此实用程序命名空间允许呼叫者在单个呼叫中查找所有学生的分配, 而无需从每个班级中请求分配。 工作分配列表包含从类命名空间中获取工作分配的详细信息所需的内容。 分配上的所有其他操作都应使用类命名空间。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: e2e11eb94c07fc523d6d64143ffc3df401fd9906
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515977"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457408"
 ---
-# <a name="list-assignments"></a>列表分配
+# <a name="list-assignments"></a>列出作业
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回分配给用户的所有类的分配的列表。 此实用程序命名空间允许呼叫者可以在单个呼叫，而不必重新分配请求从每个类中查找学生的所有工作分配。 工作分配列表包含所需获取类命名空间内从工作分配的详细的信息。 工作分配的所有其他操作应使用类命名空间。
+返回为所有类分配给用户的工作分配的列表。 此实用程序命名空间允许呼叫者在单个呼叫中查找所有学生的分配, 而无需从每个班级中请求分配。 工作分配列表包含从类命名空间中获取工作分配的详细信息所需的内容。 分配上的所有其他操作都应使用类命名空间。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | EduAssignments.ReadBasic，EduAssignments.ReadWriteBasic，EduAssignments.Read EduAssignments.ReadWrite  |
+|委派（工作或学校帐户） | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments  |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。 | 
 
@@ -43,7 +43,7 @@ GET /education/users/{id}/assignments
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[educationAssignment](../resources/educationassignment.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationAssignment](../resources/educationassignment.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

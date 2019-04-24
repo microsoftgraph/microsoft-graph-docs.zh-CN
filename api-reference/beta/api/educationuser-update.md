@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: ae49192b349f39b091ecaa1706099e5f10782432
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517097"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464822"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -42,14 +42,14 @@ PATCH /education/users/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName| String| 显示用户名称|
-|givenName| String | 名字 |
-|middleName| String | 用户的中间名|
-|surname| 字符串 | 用户的姓|
+|displayName| 字符串| 显示用户名称|
+|givenName| 字符串 | 名字 |
+|middleName| 字符串 | 用户的中间名|
+|surname| String | 用户的姓|
 |mail| String| 电子邮件地址|
 |mobilePhone| String | 用户的移动电话号码 |
-|externalSource|string| 可取值为：`sis`、`manual`、`enum_sentinel`。|
-|externalSource|string| 创建此用户的位置。  可取值为：`sis`、`manual`、`enum_sentinel`。|
+|externalSource|字符串| 可取值为：`sis`、`manual`、`enum_sentinel`。|
+|externalSource|字符串| 创建此用户的位置。  可取值为：`sis`、`manual`、`enum_sentinel`。|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| 用户的邮件地址。|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| 用户所在的地址。|
 |primaryRole|string| 用户的默认角色。  用户的角色在各课程中可能有所不同。 可取值为：`student`、`teacher`、`enum_sentinel`。|

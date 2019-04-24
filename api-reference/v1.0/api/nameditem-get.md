@@ -3,11 +3,11 @@ title: 获取 NamedItem
 description: 检索 nameditem 对象的属性和关系。
 localization_priority: Normal
 ms.openlocfilehash: ee9ce271ebf6ad687324d2ba9d378ae7151460cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867191"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460903"
 ---
 # <a name="get-nameditem"></a>获取 NamedItem
 
@@ -40,7 +40,7 @@ GET /workbook/names/{name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和[WorkbookNamedItem](../resources/nameditem.md)响应正文中的对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[WorkbookNamedItem](../resources/nameditem.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

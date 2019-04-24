@@ -1,30 +1,30 @@
 ---
 title: 获取 educationSynchronizationProfile
-description: 检索学校数据同步配置文件中租户基于的标识符。
+description: 根据标识符检索租户中的学校数据同步配置文件。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 47757956db9e93bb13f4167ef330c7b79d7851b1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530179"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464710"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索基于标识符为租户中学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。
+根据标识符检索租户中的学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:-----------|:----------|
-| 委派（工作或学校帐户） | EduAdministration.Read EduAdministration.ReadWrite |
-|委派（个人 Microsoft 帐户）|不支持。|
-|应用程序| EduAdministration.Read.All EduAdministration.ReadWrite.All |
+| 委派（工作或学校帐户） | EduAdministration、EduAdministration |
+|委派 (个人 Microsoft 帐户|不支持。|
+|应用程序| EduAdministration、EduAdministration 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /synchronizationProfiles/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

@@ -1,30 +1,30 @@
 ---
 title: 获取 governanceResource
-description: 检索的属性和 governanceResource 对象的关系。
+description: 检索 governanceResource 对象的属性和关系。
 localization_priority: Normal
 ms.openlocfilehash: be24fb8822101f7a67a5bd60f1fe018cf1a08f6b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522145"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463927"
 ---
 # <a name="get-governanceresource"></a>获取 governanceResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和[governanceResource](../resources/governanceresource.md)对象的关系。
+检索[governanceResource](../resources/governanceresource.md)对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess.ReadWrite.AzureResources |
+|应用程序 | PrivilegedAccess AzureResources |
 
-除了权限范围，此 API 要求具有至少一个角色分配对资源的请求程序。
+除了权限范围之外, 此 API 还要求请求者具有对资源的至少一个角色分配。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -32,10 +32,10 @@ ms.locfileid: "29522145"
 GET /privilegedAccess/azureResources/resources/{id}
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**仅**支持`$select`和`$expand` [OData 查询参数](/graph/query-parameters)，以帮助自定义的响应。
+## <a name="optional-query-parameters"></a>可选查询参数
+此方法**仅**支持`$select`和`$expand` [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -43,10 +43,10 @@ GET /privilegedAccess/azureResources/resources/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[governanceResource](../resources/governanceresource.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceResource](../resources/governanceresource.md)对象。
 
 ## <a name="example"></a>示例
-本示例演示如何获取订阅 Wingtip Toys-prod 移 (e5e7d29d-5465-45ac-885f-4716a5ee74b5) 的详细信息。
+本示例演示如何获取订阅 Wingtip 玩具-生产 (e5e7d29d-5465-45ac-885f-4716a5ee74b5) 的详细信息。
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"

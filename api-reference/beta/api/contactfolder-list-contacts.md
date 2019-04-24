@@ -1,21 +1,21 @@
 ---
 title: 列出联系人
-description: 在登录用户的邮箱 (.../me/contacts)，或从指定的联系人文件夹，则获取所有联系人。
+description: 获取登录用户的邮箱中的所有联系人 (../me/contacts), 或从指定的联系人文件夹中获取。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: b3e5ee2ad13e454c0ab118b1a5b14509c9b33fbd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529206"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455693"
 ---
 # <a name="list-contacts"></a>列出联系人
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在登录用户的邮箱 (.../me/contacts)，或从指定的联系人文件夹，则获取所有联系人。
+获取登录用户的邮箱中的所有联系人 (../me/contacts), 或从指定的联系人文件夹中获取。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

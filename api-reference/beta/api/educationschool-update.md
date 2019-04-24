@@ -5,15 +5,13 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: c7dd9cafe1238170599e802738d42bd287ebf47f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523643"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464766"
 ---
 # <a name="update-educationschool-properties"></a>更新 educationschool 属性
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 school 对象的属性。
 
@@ -42,16 +40,16 @@ PATCH /education/schools/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName| String| 学校的显示名称| 
+|displayName| 字符串| 学校的显示名称| 
 |description| 字符串 | 学校描述| 
-|principalEmail| String| 主体的电子邮件地址|
-|principalName| String | 主体名称|
-|externalPrincipalId| String | 同步系统中主体的 ID。 |
-|highestGrade|String| 教授的最高年级。 |
-|lowestGrade|String| 教授的最低年级。 |
-|schoolNumber|String| 学校编号。|
-|externalId|String| 同步系统中学校的 ID。 |
-|phone|String| 学校电话号码。 |
+|principalEmail| 字符串| 主体的电子邮件地址|
+|principalName| 字符串 | 主体名称|
+|externalPrincipalId| 字符串 | 同步系统中主体的 ID。 |
+|highestGrade|字符串| 教授的最高年级。 |
+|lowestGrade|字符串| 教授的最低年级。 |
+|schoolNumber|字符串| 学校编号。|
+|externalId|字符串| 同步系统中学校的 ID。 |
+|phone|字符串| 学校电话号码。 |
 |fax|String| 学校传真号码。 |
 |address|[physicalAddress](../resources/physicaladdress.md)| 学校地址。|
 |createdBy|[identitySet](../resources/identityset.md)|创建了学校的实体。|
@@ -66,7 +64,7 @@ PATCH /education/schools/{id}
   "name": "update_educationschool"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/education/schools/10002
+PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
 Content-type: application/json
 Content-length: 292
 
@@ -117,15 +115,10 @@ Content-length: 292
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update educationschool",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationschool-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

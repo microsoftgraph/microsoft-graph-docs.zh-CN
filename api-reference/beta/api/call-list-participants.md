@@ -1,21 +1,21 @@
 ---
 title: 列出参与者
-description: 检索呼叫中的参与者对象的列表。
+description: 在呼叫中检索参与者对象的列表。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: bc38af4a6bee4a380a001310303d67efb2705dcf
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967345"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461269"
 ---
 # <a name="list-participants"></a>列出参与者
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索呼叫中的参与者对象的列表。
+在呼叫中检索参与者对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -25,7 +25,7 @@ ms.locfileid: "29967345"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | None                                        |
+| 应用程序     | 无                                        |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,13 +36,13 @@ GET /app/calls/{id}/participants
 GET /applications/{id}/calls/{id}/participants
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
-| Name          | 说明               |
+| 名称          | 说明               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}。必需。 |
 
@@ -52,7 +52,7 @@ GET /applications/{id}/calls/{id}/participants
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[参与者](../resources/participant.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[参与者](../resources/participant.md)对象集合。
 
 ## <a name="examples"></a>示例
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fd8ea8e8d98ce9fed631f33fc17d6ad3e4bd5dbf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806872"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32478908"
 ---
 # <a name="get-androidforworkgmaileasconfiguration"></a>获取 androidForWorkGmailEasConfiguration
 

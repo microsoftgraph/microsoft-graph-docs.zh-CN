@@ -1,28 +1,28 @@
 ---
 title: 获取 bookingCurrency
-description: 获取可供 Microsoft 预订业务 bookingCurrency 对象的属性。
+description: 获取可用于 Microsoft 预订业务的 bookingCurrency 对象的属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: b4fd1cf854d84001d58a64dac18ca7fb276e6efa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524224"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461645"
 ---
 # <a name="get-bookingcurrency"></a>获取 bookingCurrency
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取可供 Microsoft 预订业务[bookingCurrency](../resources/bookingcurrency.md)对象的属性。 **Id**属性，它是货币代码，用于指定货币。
+获取可用于 Microsoft 预订业务的[bookingCurrency](../resources/bookingcurrency.md)对象的属性。 使用**id**属性 (即货币代码) 指定货币。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Bookings.Read.All，BookingsAppointment.ReadWrite.All，Bookings.ReadWrite.All Bookings.Manage.All   |
+|委派（工作或学校帐户） | BookingsAppointment、全部、预订、全部、登记、全部、预订。所有   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -42,7 +42,7 @@ GET /bookingCurrencies/<id>
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[bookingCurrency](../resources/bookingcurrency.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[bookingCurrency](../resources/bookingcurrency.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -54,7 +54,7 @@ GET /bookingCurrencies/<id>
 GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

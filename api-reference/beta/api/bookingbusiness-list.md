@@ -1,25 +1,25 @@
 ---
-title: 列表 bookingBusinesses
-description: 获取租户已创建 bookingbusiness 对象的集合。
+title: 列出 errorexceededfindcountlimit
+description: 获取已为租户创建的 bookingbusiness 对象的集合。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 8018b8ac7f9d2e5f74e4233dbc36c2a6faa2d9a8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523153"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461797"
 ---
-# <a name="list-bookingbusinesses"></a>列表 bookingBusinesses
+# <a name="list-bookingbusinesses"></a>列出 errorexceededfindcountlimit
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取租户已创建[bookingbusiness](../resources/bookingbusiness.md)对象的集合。
+获取已为租户创建的[bookingbusiness](../resources/bookingbusiness.md)对象的集合。
 
-此操作返回集合中的**id**和的每个预订业务的**displayName** 。 出于性能考虑，它不返回其他属性。 您可以通过[GET](bookingbusiness-get.md)操作中指定其**id**获取预订业务的其他属性。
+此操作仅返回集合中每个预订业务的**id**和**displayName** 。 出于性能考虑, 它不返回其他属性。 您可以通过在[get](bookingbusiness-get.md)操作中指定其**id**来获取预订业务的其他属性。
 
-此外可以通过指定的字符串中查询的预订企业`query`参数执行子字符串匹配的租户企业之间。 请参阅以下[示例](#request-2)。
+您还可以通过在`query`参数中指定字符串以执行租户的业务中的子字符串匹配, 从而查询预订业务。 请参阅以下[示例](#request-2)。
 
 
 ## <a name="permissions"></a>权限
@@ -27,7 +27,7 @@ ms.locfileid: "29523153"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.Read.All，BookingsAppointment.ReadWrite.All，Bookings.ReadWrite.All Bookings.Manage.All   |
+|委派（工作或学校帐户） |  BookingsAppointment、全部、预订、全部、登记、全部、预订。所有   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -39,10 +39,10 @@ GET /bookingBusinesses
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-此方法还支持`query`参数接受一个字符串值。 此参数获取将结果限制为与指定的字符串匹配的企业。 您可以看到下面[的示例](#request-2)。
+此方法还支持接受`query`字符串值的参数。 此参数将 GET 结果限制为与指定的字符串匹配的企业。 您可以参阅下面的[示例](#request-2)。
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -50,10 +50,10 @@ GET /bookingBusinesses
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[bookingBusiness](../resources/bookingbusiness.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[bookingBusiness](../resources/bookingbusiness.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-下面的示例获取租户中的预定企业。
+下面的示例获取租户中的预订企业。
 <!-- {
   "blockType": "request",
   "name": "get_bookingbusinesses"
@@ -90,7 +90,7 @@ Content-type: application/json
 
 
 ##### <a name="request-2"></a>请求 2
-下面的示例演示如何使用`query`参数获取租户中的一个或多个匹配预订企业。
+下面的示例演示如何使用`query`参数在租户中获取一个或多个匹配的预订企业。
 <!-- {
   "blockType": "request",
   "name": "query_bookingbusinesses"

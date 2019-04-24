@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 64e4e3e0e7920a486cf0979c63dee252648e5aa5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797051"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32471250"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>创建 deviceComplianceDeviceStatus
 
@@ -51,8 +51,8 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|deviceDisplayName|String|DevicePolicyStatus 的设备名。|
-|userName|String|报告的用户名|
+|deviceDisplayName|字符串|DevicePolicyStatus 的设备名。|
+|userName|字符串|报告的用户名|
 |deviceModel|String|报告的设备模型|
 |platform|Int32|报告的设备的平台|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|

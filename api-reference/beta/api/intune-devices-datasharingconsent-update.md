@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c7a2afb73ae2e9a139feb70c80449bdba100a3d0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783813"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465844"
 ---
 # <a name="update-datasharingconsent"></a>更新 dataSharingConsent
 
@@ -51,12 +51,12 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|数据共享同意 Id|
-|serviceDisplayName|String|服务工作流的显示名称|
-|termsUrl|String|数据共享同意的 TermsUrl|
-|granted|布尔值|"数据共享同意" 的 "已授予" 状态|
+|serviceDisplayName|字符串|服务工作流的显示名称|
+|termsUrl|字符串|数据共享同意的 TermsUrl|
+|granted|布尔|"数据共享同意" 的 "已授予" 状态|
 |grantDateTime|DateTimeOffset|授予此帐户的时间许可|
-|grantedByUpn|String|授予此帐户同意的用户的 Upn|
-|grantedByUserId|String|授予此帐户同意的用户的用户 id|
+|grantedByUpn|字符串|授予此帐户同意的用户的 Upn|
+|grantedByUserId|字符串|授予此帐户同意的用户的用户 id|
 
 
 

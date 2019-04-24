@@ -2,18 +2,16 @@
 title: 列出事件
 description: 检索日历中的事件列表。该列表包含单个实例会议和系列主控形状。
 author: angelgolfer-ms
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: b92c9049867891f27fc7d75b3bfe4be8bd3fdb17
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519561"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461876"
 ---
 # <a name="list-events"></a>列出事件
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索日历中的事件列表。该列表包含单个实例会议和系列主控形状。
 
@@ -29,13 +27,14 @@ ms.locfileid: "29519561"
 |应用程序 | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->用户或组的默认[日历](../resources/calendar.md)。
+<!-- { "blockType": "ignored" } -->
+用户或组的默认 [日历](../resources/calendar.md)。
 ```http
 GET /me/calendar/events
 GET /users/{id | userPrincipalName}/calendar/events
 GET /groups/{id}/calendar/events
 ```
-默认 [calendarGroup](../resources/calendargroup.md) 中的用户 [calendar](../resources/calendar.md)。
+默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。
 ```http
 GET /me/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendars/{id}/events
@@ -70,7 +69,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
   "name": "get_events"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendar/events
+GET https://graph.microsoft.com/v1.0/me/calendar/events
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -92,9 +91,9 @@ Content-length: 354
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
         "response": "",
-        "time": "2016-10-19T10:37:00Z"
+        "time": "datetime-value"
       },
-      "uid": "iCalUId-value",
+      "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
     }
@@ -104,15 +103,10 @@ Content-length: 354
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List events",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/calendar-list-events.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

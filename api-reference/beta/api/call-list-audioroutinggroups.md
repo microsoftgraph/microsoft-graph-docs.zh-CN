@@ -1,17 +1,17 @@
 ---
-title: 列表音频路由组
+title: 列出音频路由组
 description: 检索**audioRoutingGroup**对象的列表。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 02a782af2bb7690cc55dd3a4632aeb0cf93734da
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518525"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461257"
 ---
-# <a name="list-audio-routing-groups"></a>列表音频路由组
+# <a name="list-audio-routing-groups"></a>列出音频路由组
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,9 +22,9 @@ ms.locfileid: "29518525"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不受支持。                               |
-| 委派（个人 Microsoft 帐户） | 不受支持。                               |
-| 应用程序     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| 委派（工作或学校帐户）     | 不支持。                               |
+| 委派（个人 Microsoft 帐户） | 不支持。                               |
+| 应用     | JoinGroupCalls、InitiateGroupCalls 和所有调用 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -45,7 +45,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[audioRoutingGroup](../resources/audioroutinggroup.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[audioRoutingGroup](../resources/audioroutinggroup.md)对象集合。
 
 ## <a name="example"></a>示例
 

@@ -1,27 +1,27 @@
 ---
 title: 更新 bookingstaffmember
-description: 更新在指定 bookingbusiness bookingStaffMember 的属性。
+description: 更新指定 bookingbusiness 中的 bookingStaffMember 的属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 608580a16d796a4ee1b296c0a19caea110326cff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514556"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461659"
 ---
 # <a name="update-bookingstaffmember"></a>更新 bookingstaffmember
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新在指定[bookingbusiness](../resources/bookingbusiness.md) [bookingStaffMember](../resources/bookingstaffmember.md)的属性。
+更新指定[bookingbusiness](../resources/bookingbusiness.md)中的[bookingStaffMember](../resources/bookingstaffmember.md)的属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.ReadWrite.All Bookings.Manage.All   |
+|委派（工作或学校帐户） |  全部预订. 全部, 全部预订. 全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -40,19 +40,19 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|True 表示，如果该人员成员是 Office 365 用户，预订 API 使用 Office 365，以及**workingHours**属性的员工成员的个人日历来确定可用性。 |
-|ColorIndex|Int32|标识要表示员工成员的颜色。 颜色对应于预订应用程序中的**人员详细信息**页面中的调色板。|
-|displayName|字符串|员工成员，显示给客户的名称。|
-|emailAddress|String|员工成员的电子邮件地址。 这可以随着业务，相同的 Office 365 租户中或不同的电子邮件域中。 如果**sendConfirmationsToOwner**属性设置为使用此电子邮件地址的企业计划策略中，则返回 true。|
-|role|string| 企业中的人员成员角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。|
-|useBusinessHours|Boolean|True 表示由业务的**工作时间**属性来确定员工成员的可用性。 False，则意味着可用性由员工成员的**workingHouse**属性设置。|
-|workingHours|[bookingWorkHours](../resources/bookingworkhours.md)集合|员工成员了可供预定的一周中每一天时间范围。|
+|availabilityIsAffectedByPersonalCalendar|布尔|如果为 True, 则表示如果教职员工成员是 office 365 用户, 则预订 API 将使用 office 365 中的教职员工成员的个人日历以及**workingHours**属性来确定可用性。 |
+|colorIndex|Int32|标识代表教职员工成员的颜色。 该颜色对应于预订应用中的 "**员工详细信息**" 页上的调色板。|
+|displayName|String|向客户显示的教职员工成员的姓名。|
+|emailAddress|String|教职员工成员的电子邮件地址。 这可以位于与企业相同的 Office 365 租户中, 也可以位于不同的电子邮件域中。 如果在企业的计划策略中将**sendConfirmationsToOwner**属性设置为 true, 则使用此电子邮件地址。|
+|role|字符串| 企业中教职员工成员的角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。|
+|useBusinessHours|布尔|如果为 True, 则表示教职员工成员的可用性取决于企业的**businessHours**属性。 False 表示可用性由教职员工成员的**workingHouse**属性设置决定。|
+|workingHours|[bookingWorkHours](../resources/bookingworkhours.md)集合|教职员工成员可用于预订的一周中每一天的小时数。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例更改员工成员的计划已的工作。
+以下示例将教职员工成员的日程安排更改为 "星期一关"。
 <!-- {
   "blockType": "request",
   "name": "update_bookingstaffmember"

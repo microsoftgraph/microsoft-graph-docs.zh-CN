@@ -1,21 +1,21 @@
 ---
 title: 获取 calendarGroup
-description: 检索日历组对象的属性和关系。
+description: 检索 calendargroup 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: c5eb48f208a9f4a6e8fa0b6c6268722501b16d52
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517657"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461414"
 ---
 # <a name="get-calendargroup"></a>获取 calendarGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索日历组对象的属性和关系。
+检索 calendargroup 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 

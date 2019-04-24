@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 06c5b6661320d2212579e4788fc29ce7c2861660
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982278"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460518"
 ---
 # <a name="update-devicecompliancedevicestatus"></a>更新 deviceComplianceDeviceStatus
 
@@ -49,8 +49,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|deviceDisplayName|String|DevicePolicyStatus 的设备名。|
-|userName|String|报告的用户名|
+|deviceDisplayName|字符串|DevicePolicyStatus 的设备名。|
+|userName|字符串|报告的用户名|
 |deviceModel|String|报告的设备模型|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|

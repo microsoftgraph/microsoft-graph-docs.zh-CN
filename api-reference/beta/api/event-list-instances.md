@@ -4,16 +4,14 @@ description: 获取指定的时间范围的事件的实例（发生次数）。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 73db9643de5fa34d3ff1efff1a22773d859e5055
-ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
+ms.openlocfilehash: 974d0f9de05e23ced89875b14c0976cff128b53d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026015"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457493"
 ---
 # <a name="list-instances"></a>列出实例
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取指定的时间范围的事件的实例（发生次数）。 
 
@@ -54,7 +52,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|startDateTime|String|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
+|startDateTime|字符串|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
 |endDateTime|String|时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。|
 
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
@@ -75,25 +73,27 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 下面的示例在指定的时间范围内, 事件是定期系列的主事件的事件发生和异常。
 <!-- {
   "blockType": "request",
-  "name": "get_instances"
-}-->
-```http
-GET https://graph.microsoft.com/beta/me/events/AAMkAGUzYRgWAAA=/instances?startDateTime=2019-04-08T09:00:00.0000000&endDateTime=2019-04-30T09:00:00.0000000&$select=subject,bodyPreview,seriesMasterId,type,recurrence,start,end
-```
-##### <a name="response"></a>响应
-下面是一个响应示例。
-<!-- {
-  "blockType": "request",
-  "name": "get_instances",
   "sampleKeys": ["AAMkAGUzYRgWAAA="],
   "name": "get_instances"
 }-->
+```http
+GET https://graph.microsoft.com/v1.0/me/events/AAMkAGUzYRgWAAA=/instances?startDateTime=2019-04-08T09:00:00.0000000&endDateTime=2019-04-30T09:00:00.0000000&$select=subject,bodyPreview,seriesMasterId,type,recurrence,start,end
+```
+##### <a name="response"></a>响应
+下面是一个响应示例。 
+<!-- {
+  "blockType": "response",
+  "name": "get_instances",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event",
+  "isCollection": true
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/events('AAMkAGUzYRgWAAA%3D')/instances(subject,bodyPreview,seriesMasterId,type,recurrence,start,end)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/events('AAMkAGUzYRgWAAA%3D')/instances(subject,bodyPreview,seriesMasterId,type,recurrence,start,end)",
     "value": [
         {
             "@odata.etag": "W/\"x3IAvB5fbUWf4XNcBFLNUwAAKuA3yQ==\"",
@@ -169,15 +169,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List instances",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/event-list-instances.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

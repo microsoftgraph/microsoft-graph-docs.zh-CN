@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 9b8d3b2099173911f3ddbadf17a36ba17a4c9027
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800967"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464857"
 ---
 # <a name="remove-educationcategory"></a>删除 educationCategory
 

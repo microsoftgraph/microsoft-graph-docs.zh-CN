@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9f2cb66df449dc8586ef3fb3f822fadf62891902
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800607"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466166"
 ---
 # <a name="update-securitybaselinetemplate"></a>更新 securityBaselineTemplate
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}
 |:---|:---|:---|
 |id|String|从[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承的模板 ID|
 |displayName|String|从[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)继承的模板的显示名称|
-|description|String|模板的说明继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|description|字符串|模板的说明继承自[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 
 
 

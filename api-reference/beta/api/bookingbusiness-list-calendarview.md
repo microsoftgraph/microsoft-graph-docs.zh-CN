@@ -1,28 +1,28 @@
 ---
-title: 列表的预定 calendarView
-description: 获得 bookingBusiness，在指定的日期范围中出现 bookingAppointment 对象的集合。
+title: 列出 Bookings 日历视图
+description: 获取 bookingBusiness 的 bookingAppointment 对象的集合, 该集合在指定的日期范围内发生。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 39b96e089d035ffd21155064252e36fd07a0a6c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526072"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461775"
 ---
-# <a name="list-bookings-calendarview"></a>列表的预定 calendarView
+# <a name="list-bookings-calendarview"></a>列出 Bookings 日历视图
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获得[bookingBusiness](../resources/bookingbusiness.md)，在指定的日期范围中出现[bookingAppointment](../resources/bookingappointment.md)对象的集合。
+获取[bookingBusiness](../resources/bookingbusiness.md)的[bookingAppointment](../resources/bookingappointment.md)对象的集合, 该集合在指定的日期范围内发生。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.Read.All，BookingsAppointment.ReadWrite.All，Bookings.ReadWrite.All Bookings.Manage.All   |
+|委派（工作或学校帐户） |  BookingsAppointment、全部、预订、全部、登记、全部、预订。所有   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -42,14 +42,14 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|start|DateTimeOffset|开始日期和时间的时间范围，表示以 ISO 8601 格式，为 UTC 或从 UTC 偏移量。 例如，午夜 UTC 2018 Jan 1，如下所示:"2018年-01-01T00:00:00Z'，和 PST 的同一时间将如下所示:"2017年-12-31T16:00:00-08:00。|
-|end|DateTimeOffset|结束日期和时间的时间范围，表示 ISO 8601 格式，为 UTC 或从 UTC 偏移量。 例如，3 am UTC 上 2018 Jan 1，如下所示:"2018年-01-01T03:00:00Z'，和 PST 的同一时间将如下所示:"2017年-12-31T19:00:00-08:00。|
+|start|DateTimeOffset|时间范围的开始日期和时间, 以 ISO 8601 格式表示, 如 utc 或 utc 时差。 例如, 2018 年1月1日午夜 UTC 将如下所示: ' 2018-01-01T00:00: 00Z ', PST 的相同时间如下所示: ' 2017-12-31T16:00:00-08:00 '。|
+|end|DateTimeOffset|时间范围的结束日期和时间, 以 ISO 8601 格式表示, 即 utc 或 utc 时差。 例如, 2018 年1月1日的 3am UTC 如下所示: ' 2018-01-01T03:00: 00Z ', PST 中的相同时间如下所示: ' 2017-12-31T19:00:00-08:00 '。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200, OK`响应正文中的响应代码和[bookingAppointment](../resources/bookingappointment.md)集合的对象。
+如果成功, 此方法在`200, OK`响应正文中返回响应代码和[bookingAppointment](../resources/bookingappointment.md)集合对象。
 
 ## <a name="example"></a>示例
-下面的示例展示了如何调用此 API。
+下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 <!-- {
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

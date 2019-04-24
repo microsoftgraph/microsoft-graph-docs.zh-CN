@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9f398d5f0e431588ea68e2c1eff1031dbe09e7e4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986640"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584752"
 ---
 # <a name="bypassactivationlock-action"></a>bypassActivationLock 操作
 

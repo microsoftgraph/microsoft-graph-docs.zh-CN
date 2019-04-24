@@ -1,28 +1,28 @@
 ---
-title: educationAssignment： 发布
-description: 此操作将工作分配的状态从其原始草稿状态更改为已发布状态中。 仅在类中的教师可以发起此呼叫。 草稿状态工作分配后，学生看不到工作分配，也不会有任何提交对象。 此 API 调用时，创建提交对象，并且学生的列表中显示的工作分配。
+title: 'educationAssignment: 发布'
+description: 此操作将工作分配的状态从其原始草稿状态更改为 "已发布" 状态。 只有班级中的一名教师可以进行此呼叫。 当工作分配处于草稿状态时, 学生将看不到该工作分配, 也不会有任何提交对象。 调用此 API 时, 将创建提交对象, 并且该工作分配将显示在学生的列表中。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: bac9c38d5fbd2ce80693a468c0a2d229085f32cd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508711"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458185"
 ---
-# <a name="educationassignment-publish"></a>educationAssignment： 发布
+# <a name="educationassignment-publish"></a>educationAssignment: 发布
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作将工作分配的状态从其原始草稿状态更改为已发布状态中。 仅在类中的教师可以发起此呼叫。 草稿状态工作分配后，学生看不到工作分配，也不会有任何提交对象。 此 API 调用时，创建提交对象，并且学生的列表中显示的工作分配。
+此操作将工作分配的状态从其原始草稿状态更改为 "已发布" 状态。 只有班级中的一名教师可以进行此呼叫。 当工作分配处于草稿状态时, 学生将看不到该工作分配, 也不会有任何提交对象。 调用此 API 时, 将创建提交对象, 并且该工作分配将显示在学生的列表中。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite  |
+|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -46,7 +46,7 @@ POST /education/classes/{id}/assignments/{id}/publish
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 <!-- {
   "blockType": "request",
   "name": "educationassignment_publish"
@@ -56,7 +56,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。 
+响应示例如下所示。 
 
 <!-- {
   "blockType": "response",

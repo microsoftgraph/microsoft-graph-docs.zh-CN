@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c65f3c49159f6025ae32ee9a12c7acc395742509
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787741"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466124"
 ---
 # <a name="update-securitybaselinesettingstate"></a>更新 securityBaselineSettingState
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/managedDevices/{managedDeviceId}/securityBaselineStates/
 |id|String|实体的唯一标识符|
 |settingName|String|报告的设置名称|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|安全基准设置的符合性状态。 可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
-|settingCategoryId|String|此设置所属的设置类别 id|
+|settingCategoryId|字符串|此设置所属的设置类别 id|
 
 
 

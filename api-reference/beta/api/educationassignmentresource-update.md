@@ -1,28 +1,28 @@
 ---
 title: 更新 educationAssignmentResource
-description: '更新资源分配相关联的属性。 仅在类的教师可以更改工作分配的资源对象。  '
+description: '更新与工作分配相关联的资源的属性。 只有课堂中的教师才能更改工作分配资源对象。  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 34b1c05937f57fe46d5d854d21a7c2e0b68240d2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527953"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457954"
 ---
 # <a name="update-educationassignmentresource"></a>更新 educationAssignmentResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新资源分配相关联的属性。 仅在类的教师可以更改工作分配的资源对象。  
+更新与工作分配相关联的资源的属性。 只有课堂中的教师才能更改工作分配资源对象。  
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite   |
+|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -42,11 +42,11 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean| 指示工作分配发布时是否应将此资源复制到每个学生的资源对象。|
-|资源|educationResource| Resource 对象 |
+|distributeForStudentWork|布尔| 指示在发布工作分配时是否应将此资源复制到每个学生的资源对象。|
+|资源|educationResource| Resource 对象。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[educationAssignmentResource](../resources/educationassignmentresource.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[educationAssignmentResource](../resources/educationassignmentresource.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

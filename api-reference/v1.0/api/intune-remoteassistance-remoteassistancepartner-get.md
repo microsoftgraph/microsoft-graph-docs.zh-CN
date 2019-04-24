@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b9ebe24dd668eab75bfb45f8cdd34b25428f15b9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976251"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585228"
 ---
 # <a name="get-remoteassistancepartner"></a>获取 remoteAssistancePartner
 

@@ -1,27 +1,27 @@
 ---
 title: 删除 bookingAppointment
-description: 删除在指定 bookingbusiness bookingAppointment。
+description: 删除指定 bookingbusiness 中的 bookingAppointment。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: a8abe1961be7e3caf36c9d690497347f42c83fde
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513716"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461113"
 ---
 # <a name="delete-bookingappointment"></a>删除 bookingAppointment
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除在指定[bookingbusiness](../resources/bookingbusiness.md) [bookingAppointment](../resources/bookingappointment.md) 。
+删除指定[bookingbusiness](../resources/bookingbusiness.md)中的[bookingAppointment](../resources/bookingappointment.md) 。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All，Bookings.ReadWrite.All，Bookings.Manage.All   |
+|委派（工作或学校帐户） |  BookingsAppointment, 全部, 全部登记, 全部, 预订。 all   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -54,7 +54,7 @@ DELETE /bookingBusinesses/{id}/appointments/{id}
 DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKqAAA=
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true

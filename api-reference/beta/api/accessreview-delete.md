@@ -1,27 +1,27 @@
 ---
 title: 删除 accessReview
-description: 在 Azure AD 中访问审阅功能，删除 accessReview 对象。
+description: 在 "Azure AD access 评论" 功能中, 删除 accessReview 对象。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 28848cc047306259248d0ba4663ab3eb3e964224
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527771"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456813"
 ---
 # <a name="delete-accessreview"></a>删除 accessReview
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中，删除[accessReview](../resources/accessreview.md)对象。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 删除[accessReview](../resources/accessreview.md)对象。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview.ReadWrite.All，也应具有完成呼叫中以删除 programControl 方案的 ProgramControl.ReadWrite.All 和 |
+|委派（工作或学校帐户）     | AccessReview, 此外, 还应具有 ProgramControl。若要完成调用以删除 ProgramControl |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -33,7 +33,7 @@ DELETE /accessReviews('<id>')
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

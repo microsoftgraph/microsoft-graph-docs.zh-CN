@@ -1,28 +1,28 @@
 ---
 title: meetingParticipants 资源类型
-description: 在会议中的参与者。
+description: 会议中的参与者。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 57a07e29beae6915c7e40f7fb8a6e941351fd38f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508781"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463822"
 ---
 # <a name="meetingparticipants-resource-type"></a>meetingParticipants 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在会议中的参与者。
+会议中的参与者。
 
 ## <a name="properties"></a>属性
 
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
 | attendees | [meetingParticipantInfo](meetingparticipantinfo.md)集合 |  |
-| organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| 组织者 | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

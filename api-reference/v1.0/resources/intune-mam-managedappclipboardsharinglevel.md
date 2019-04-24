@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: dcbee5e0b7aa6343e31d57d14557bc0f0586fb80
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250024"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465200"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>managedAppClipboardSharingLevel 枚举类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "30250024"
 |:---|:---|:---|
 |allApps|0|允许在所有应用程序之间进行共享 (托管或不允许)|
 |managedAppsWithPasteIn|1|允许在启用了粘贴的所有托管应用之间进行共享|
-|managedApps|双面|允许在所有托管应用之间进行共享|
-|已阻止|第三章|已禁用应用程序之间的共享|
+|managedApps|2 |允许在所有托管应用之间进行共享|
+|堵塞|3 |已禁用应用程序之间的共享|
 
 
 

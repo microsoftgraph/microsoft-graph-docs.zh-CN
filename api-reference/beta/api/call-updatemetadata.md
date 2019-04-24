@@ -1,21 +1,21 @@
 ---
-title: 呼叫： updateMetadata
-description: 更新应用程序的元数据与呼叫相关联。
+title: '调用: updateMetadata'
+description: 更新与调用相关联的 appliation 的元数据。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b3dade26dde72acd796cc3751df136fde4a4bbea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463493"
 ---
-# <a name="call-updatemetadata"></a>呼叫： updateMetadata
+# <a name="call-updatemetadata"></a>调用: updateMetadata
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新应用程序的元数据与呼叫相关联。
+更新与调用相关联的 appliation 的元数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "29507983"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                               |
 | 委派（个人 Microsoft 帐户） | 不支持                               |
-| 应用程序     | Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.InitiateGroupCalls.All |
+| 应用程序     | JoinGroupCallsasGuest、JoinGroupCalls、InitiateGroupCalls 和。 all |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/updateMetadata
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|元数据|String|提供在名单中的参与者的数据的 blob。|
-|ClientContext|String|客户端上下文。|
+|metadata|字符串|名单中参与者提供的数据的 blob。|
+|适用|字符串|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和具有[commsOperation](../resources/commsoperation.md)创建的此请求 uri 中的位置标头。
+返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

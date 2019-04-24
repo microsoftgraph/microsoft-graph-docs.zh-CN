@@ -1,23 +1,23 @@
 ---
-title: 创建通道
-description: 在 Microsoft 团队，在请求正文中的规定创建新的通道。
-localization_priority: Normal
+title: 创建频道
+description: 在请求正文中指定的 Microsoft 团队中创建一个新通道。
+localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: c1163b82bc5d2b6170079ab80ff77a1cc341c627
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530032"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456561"
 ---
-# <a name="create-channel"></a>创建通道
+# <a name="create-channel"></a>创建频道
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Microsoft 团队，在请求正文中的规定创建新的[通道](../resources/channel.md)。
 
-> **注意**： 没有应用程序权限和此 API 的已知的问题。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。
+在请求正文中指定的 Microsoft 团队中创建一个新[通道](../resources/channel.md)。
+
+> **注意**: 应用程序权限和此 API 存在一个已知问题。 有关详细信息, 请参阅[已知问题列表](/graph/known-issues#application-permissions)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "29530032"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All    |
 
-> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /teams/{id}/channels
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[信道](../resources/channel.md)对象的 JSON 表示形式。
+在请求正文中, 提供[通道](../resources/channel.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应正文中的响应代码和[频道](../resources/channel.md)对象。
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[通道](../resources/channel.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -57,7 +57,7 @@ POST /teams/{id}/channels
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels
 Content-type: application/json
 
 {
@@ -86,15 +86,10 @@ Content-length: 201
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create Channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/channel-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

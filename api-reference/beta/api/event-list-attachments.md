@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cf092595f558d3aa1529023029ce84c6f2a4cb87
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524007"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463955"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -44,13 +44,13 @@ GET /groups/{id}/events/{id}/attachments
 
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-具体而言，您可以使用`$expand`查询参数来包含所有事件附件内嵌与事件属性的其余部分。 例如：
+特别是, 您可以使用`$expand`查询参数将所有事件附件与其余事件属性一起包含在内联中。 例如：
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|

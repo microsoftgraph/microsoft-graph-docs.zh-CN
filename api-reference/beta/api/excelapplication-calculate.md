@@ -1,17 +1,17 @@
 ---
-title: 应用程序： 计算
+title: '应用程序: 计算'
 description: 重新计算 Excel 中当前打开的所有工作簿。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: f16c858f7e8c9d85dbe8252bde0a791bc325514c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514500"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464011"
 ---
-# <a name="application-calculate"></a>应用程序： 计算
+# <a name="application-calculate"></a>应用程序: 计算
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

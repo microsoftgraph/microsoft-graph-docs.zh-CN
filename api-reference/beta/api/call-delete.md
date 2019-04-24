@@ -5,11 +5,11 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: ed4ae5c8fdd397541e015a31bc6ecee948f0ea0e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513233"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461305"
 ---
 # <a name="delete-call"></a>删除呼叫
 
@@ -23,8 +23,8 @@ ms.locfileid: "29513233"
 
 | 权限类型 | 权限（从最低特权到最高特权）                  |
 | :-------------- | :----------------------------------------------------------- |
-| 委派（工作或学校帐户）     | 不受支持。                         |
-| 委派（个人 Microsoft 帐户） | 不受支持。                         |
+| 委派（工作或学校帐户）     | 不支持。                         |
+| 委派（个人 Microsoft 帐户） | 不支持。                         |
 | 应用程序                            | 无。                                  |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -70,7 +70,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}
 HTTP/1.1 204 No Content
 ```
 
-##### <a name="notification---terminating"></a>通知-终止
+##### <a name="notification---terminating"></a>通知终止
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -99,7 +99,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>通知-终止
+##### <a name="notification---terminated"></a>通知终止
 
 ```http
 POST https://bot.contoso.com/api/calls

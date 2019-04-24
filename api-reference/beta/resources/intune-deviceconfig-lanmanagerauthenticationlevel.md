@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e3b93f229661de3e2fbb28f764288983b2fd83bb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801244"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460490"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>lanManagerAuthenticationLevel 枚举类型
 
@@ -24,9 +24,9 @@ LanManagerAuthenticationLevel 的可能值
 |:---|:---|:---|
 |lmAndNltm|0|发送 LM & NTLM 响应|
 |lmNtlmAndNtlmV2|1|发送 LM & NTLM-使用 NTLMv2 会话安全性 (如果协商)|
-|lmAndNtlmOnly|双面|仅发送 LM & NTLM 响应|
-|lmAndNtlmV2|第三章|仅发送 LM & NTLMv2 响应|
-|lmNtlmV2AndNotLm|4|仅发送 LM & NTLMv2 响应。 拒绝 LM|
+|lmAndNtlmOnly|2 |仅发送 LM & NTLM 响应|
+|lmAndNtlmV2|3 |仅发送 LM & NTLMv2 响应|
+|lmNtlmV2AndNotLm|4 |仅发送 LM & NTLMv2 响应。 拒绝 LM|
 |lmNtlmV2AndNotLmOrNtm|5|仅发送 LM & NTLMv2 响应。 拒绝 LM & NTLM|
 
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9cce3e0d592b6be6f633910b8305a15ece1d30fa
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785410"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463539"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions 资源类型
 
@@ -22,11 +22,11 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 termsAndConditionses](../api/intune-companyterms-termsandconditions-list.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 集合|列出 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性和关系。|
-|[获取 termsAndConditions](../api/intune-companyterms-termsandconditions-get.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|读取 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性和关系。|
-|[创建 termsAndConditions](../api/intune-companyterms-termsandconditions-create.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|创建新的 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象。|
-|[删除 termsAndConditions](../api/intune-companyterms-termsandconditions-delete.md)|无|删除 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)。|
-|[更新 termsAndConditions](../api/intune-companyterms-termsandconditions-update.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|更新 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性。|
+|[List termsAndConditionses](../api/intune-companyterms-termsandconditions-list.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 集合|列出 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性和关系。|
+|[Get termsAndConditions](../api/intune-companyterms-termsandconditions-get.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|读取 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性和关系。|
+|[Create termsAndConditions](../api/intune-companyterms-termsandconditions-create.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|创建新的 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象。|
+|[Delete termsAndConditions](../api/intune-companyterms-termsandconditions-delete.md)|无|删除 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)。|
+|[Update termsAndConditions](../api/intune-companyterms-termsandconditions-update.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|更新 [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -35,10 +35,10 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |modifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|displayName|String|管理员提供的 T&C 策略名称。 |
-|description|String|管理员提供的 T&C 策略描述。|
+|displayName|字符串|管理员提供的 T&C 策略名称。 |
+|description|字符串|管理员提供的 T&C 策略描述。|
 |title|字符串|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
-|bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
+|bodyText|字符串|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
 |acceptanceStatement|String|管理员提供的条款和条件说明，通常会说明接受 T&C 策略中陈述的条款和条件意味着什么。 这会向用户显示，提示用户接受 T&C 策略。|
 |version|Int32|指示当前条款版本的整数。 当管理员对条款进行更改，并希望要求用户重新接受修改的 T&C 策略时会递增。|
 

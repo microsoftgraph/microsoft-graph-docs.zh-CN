@@ -1,17 +1,17 @@
 ---
-title: 呼叫： 重定向
+title: '呼叫: 重定向'
 description: 重定向传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a6a926aa082cc35896d11ec4124091b0d2c838c0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511987"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461268"
 ---
-# <a name="call-redirect"></a>呼叫： 重定向
+# <a name="call-redirect"></a>呼叫: 重定向
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,18 +43,18 @@ POST /applications/{id}/calls/{id}/redirect
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|Targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。|
-|targetDisposition|String|可能的值是：`default`|
-|timeout|Int32|超时的重定向操作的秒数。|
-|maskCallee|Boolean|指示是否屏蔽被叫方。|
-|maskCaller|Boolean|指示是否屏蔽呼叫者。|
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。|
+|targetDisposition|字符串|可能的值为:`default`|
+|timeout|Int32|重定向操作的超时时间 (秒)。|
+|maskCallee|布尔|指示是否屏蔽被叫方。|
+|maskCaller|布尔|指示是否屏蔽调用方。|
 
 ## <a name="response"></a>响应
-返回响应代码。
+返回`202 Accepted`响应代码
 
 ## <a name="examples"></a>示例
 
-### <a name="redirect-a-call"></a>将呼叫重定向
+### <a name="redirect-a-call"></a>重定向呼叫
 
 ##### <a name="request"></a>请求
 下面为请求示例。
@@ -103,9 +103,9 @@ Content-Length: 515
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="forward-a-call"></a>转移呼叫
+### <a name="forward-a-call"></a>转接呼叫
 
-##### <a name="notification---incoming"></a>通知-传入
+##### <a name="notification---incoming"></a>通知传入
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -220,7 +220,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>通知-终止
+##### <a name="notification---terminated"></a>通知终止
 
 ```http
 POST https://bot.contoso.com/api/calls

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 2d3f133f6f9c1e6e349902593e0f37191e3aecbc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520821"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455707"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -49,12 +49,12 @@ GET /users/<id>/contactFolders/delta
 
 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | 字符串  | application/json. Required. |
-| Prefer | string  | odata.maxpagesize={x}。可选。 |
+| Content-Type  | string  | application/json. Required. |
+| Prefer | 字符串  | odata.maxpagesize={x}。可选。 |
 
 ## <a name="response"></a>响应
 

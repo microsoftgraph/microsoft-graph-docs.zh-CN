@@ -1,21 +1,21 @@
 ---
-title: 在 educationSynchronizationProfile 暂停同步
-description: 暂停租户中的特定学校数据同步配置文件的同步。
+title: 暂停 educationSynchronizationProfile 上的同步
+description: 暂停租户中特定学校数据同步配置文件的同步。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 5c9ba7d2ab3f67880105d45d9d98506b8e8caaac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510930"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464689"
 ---
-# <a name="pause-sync-on-an-educationsynchronizationprofile"></a>在 educationSynchronizationProfile 暂停同步
+# <a name="pause-sync-on-an-educationsynchronizationprofile"></a>暂停 educationSynchronizationProfile 上的同步
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-暂停的租户特定的学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)同步。
+暂停租户中特定学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)的同步。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -23,7 +23,7 @@ ms.locfileid: "29510930"
 | 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派（个人 Microsoft 帐户）|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求

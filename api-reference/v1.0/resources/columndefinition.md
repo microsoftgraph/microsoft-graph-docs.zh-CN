@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
 ms.openlocfilehash: 679f0139f7ad0e94eab1970cc113268a56722663
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481879"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584850"
 ---
 # <a name="columndefinition-resource"></a>ColumnDefinition 资源
 
@@ -56,8 +56,8 @@ ms.locfileid: "30481879"
 
 | 属性名称           | 类型    | 说明
 |:------------------------|:--------|:-----------------------------------------
-| **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
-| **description**         | string  | 面向用户的列描述。
+| **columnGroup**         | 字符串  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
+| **说明**         | 字符串  | 面向用户的列描述。
 | **displayName**         | string  | 面向用户的列名称。
 | **enforceUniqueValues** | 布尔 | 如果为 true，则此列不能有两个列表项具有相同的值。
 | **hidden**              | 布尔 | 指定列是否显示在用户界面中。

@@ -3,11 +3,11 @@ title: chunkedUploadSessionDescriptor 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.openlocfilehash: b11bff34e70585c4cf7be23f5ce6d3a0c2ac0a0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834606"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460602"
 ---
 # <a name="chunkeduploadsessiondescriptor-resource-type"></a>chunkedUploadSessionDescriptor 资源类型
 

@@ -1,15 +1,15 @@
 ---
-title: 列表 governanceRoleAssignments
+title: 列出 governanceRoleAssignments
 description: 检索 governanceRoleAssignments 的集合。
 localization_priority: Normal
 ms.openlocfilehash: b6b83397d93ab502758202c7f22513d97db37540
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524868"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465251"
 ---
-# <a name="list-governanceroleassignments"></a>列表 governanceRoleAssignments
+# <a name="list-governanceroleassignments"></a>列出 governanceRoleAssignments
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,22 +20,22 @@ ms.locfileid: "29524868"
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess.ReadWrite.AzureResources |
+|应用程序 | PrivilegedAccess AzureResources |
 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 
-列出[governanceRoleAssignments](../resources/governanceroleassignment.md)对资源的集合。
+列出资源上的[governanceRoleAssignments](../resources/governanceroleassignment.md)的集合。
 
->**注意：** 除了权限范围，该请求需要具有至少一个角色分配对资源的请求程序。 
+>**注意:** 除了权限范围之外, 此请求还要求请求者在资源上至少有一个角色分配。 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-列出的[governanceRoleAssignments](../resources/governanceroleassignment.md)我的集合。
+列出地雷的[governanceRoleAssignments](../resources/governanceroleassignment.md)的集合。
 ```http
 GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
 ```
@@ -51,10 +51,10 @@ GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[governanceRoleAssignment](../resources/governanceroleassignment.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignment](../resources/governanceroleassignment.md)对象集合。
 ## <a name="example"></a>示例
 
-本示例演示如何获取我角色分配的订阅 Wingtip Toys-prod 移。
+本示例演示如何在订阅 Wingtip 玩具-生产中获取我的角色分配。
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignments"

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 0fd287fa8674991979633573a4d1ebfdc66fa826
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508424"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455686"
 ---
 # <a name="contact-delta"></a>contact: delta
 
@@ -42,18 +42,18 @@ GET /users/<id>/contactFolders/{id}/contacts/delta
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
 | $deltatoken | 字符串 | 对同一个联系人集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | string | 之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个联系人集合中有进一步的更改需要跟踪。 |
+| $skiptoken | 字符串 | 之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个联系人集合中有进一步的更改需要跟踪。 |
 
 ### <a name="odata-query-parameters"></a>OData 查询参数
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
 
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | 字符串  | application/json. Required. |
+| Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 
 ## <a name="response"></a>响应

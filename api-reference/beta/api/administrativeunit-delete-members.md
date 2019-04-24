@@ -1,21 +1,21 @@
 ---
 title: 删除成员
-description: 使用此 API 可删除成员 （用户或组） 从一个管理单元。
+description: 使用此 API 可从管理单元中删除成员 (用户或组)。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 29ea8aa11850909c9e7122c55dc6c686ae9135a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528079"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459498"
 ---
 # <a name="remove-a-member"></a>删除成员
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 可删除成员 （用户或组） 从一个管理单元。
+使用此 API 可从管理单元中删除成员 (用户或组)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,7 +46,7 @@ DELETE /administrativeUnits/{id}/members/{id}/$ref
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面是一个请求示例。 在下面的示例中，id1 的目标管理单元，表示的标识符和 id2 表示要从指定的管理单元中删除的成员用户或组的唯一标识符。 
+下面是一个请求示例。 在下面的示例中, id1 表示目标管理单元的标识符, id2 表示要从目标管理单元中删除的成员用户或组的唯一标识符。 
 
 ```http
 DELETE https://graph.microsoft.com/beta/administrativeUnits/{id1}/members/{id2}/$ref

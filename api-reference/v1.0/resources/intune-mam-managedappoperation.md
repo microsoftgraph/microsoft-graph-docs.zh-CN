@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fe7416c5357b83bd9dc7eb82d94aae6a6d740667
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253468"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465214"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "30253468"
 |displayName|String|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
 |state|String|操作的当前状态|
-|id|字符串|实体的键。|
+|id|String|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系

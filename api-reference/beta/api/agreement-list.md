@@ -1,15 +1,15 @@
 ---
-title: 列表协议
+title: 列出协议
 description: 检索协议对象的列表。
 localization_priority: Normal
 ms.openlocfilehash: 82674e81b6b059ffafedf3b9c15c19e90438dc28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525974"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459199"
 ---
-# <a name="list-agreements"></a>列表协议
+# <a name="list-agreements"></a>列出协议
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,12 +36,12 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[协议](../resources/agreement.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[协议](../resources/agreement.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 <!-- {

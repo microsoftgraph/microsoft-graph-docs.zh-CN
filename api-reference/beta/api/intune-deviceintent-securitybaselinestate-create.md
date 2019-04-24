@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a365d1e59696e89f6812490422722285f3645fc5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796869"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466075"
 ---
 # <a name="create-securitybaselinestate"></a>创建 securityBaselineState
 
@@ -51,7 +51,7 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/securityBaselineStates
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|securityBaselineTemplateId|String|安全基准模板 id|
+|securityBaselineTemplateId|字符串|安全基准模板 id|
 |displayName|String|安全基准的显示名称|
 
 

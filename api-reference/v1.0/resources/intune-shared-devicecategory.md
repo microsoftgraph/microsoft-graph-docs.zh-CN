@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: a0bb1e994bcf42ba91a55fdfc75946204d1f9b06
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254896"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585331"
 ---
 # <a name="devicecategory-resource-type"></a>deviceCategory 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "30254896"
 |id|String|设备类别的唯一标识符。 只读。|
 |**载入**|
 |displayName|String|设备类别的显示名称。|
-|description|String|设备类别的说明（可选）。|
+|description|字符串|设备类别的说明（可选）。|
 
 ## <a name="relationships"></a>关系
 无

@@ -1,17 +1,17 @@
 ---
-title: 呼叫： 答案
+title: '呼叫: 应答'
 description: 应答传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c5a93121e5f01939ad28808f7055fcad98a734ff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530046"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461315"
 ---
-# <a name="call-answer"></a>呼叫： 答案
+# <a name="call-answer"></a>呼叫: 应答
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,9 +43,9 @@ POST /applications/{id}/calls/{id}/answer
 
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |将在其传递回调回调或订阅 ID。 必需。                                                               |
-|acceptedModalities|String 集合                         |列表接受形式。 可能的值是： `unknown`， `audio`， `video`， `screenSharing`， `videoBasedScreenSharing`， `data`。 必需。 |
-|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|媒体配置。 必需。                                                                                                            |
+|callbackUri       |String                                    |用于传递回拨的回拨或订阅 ID。 需要                                                               |
+|acceptedModalities|String collection                         |接受形式的列表。 可能的值为`unknown`: `audio`、 `video`、 `screenSharing`、 `videoBasedScreenSharing`、 `data`、。 需要 |
+|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|媒体配置。 需要                                                                                                            |
 
 ## <a name="response"></a>响应
 此方法返回`202 Accepted`响应代码。
@@ -89,9 +89,9 @@ Content-Length: 211
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="answer-voip-call-with-service-hosted-media"></a>服务承载媒体与 VOIP 呼叫应答
+### <a name="answer-voip-call-with-service-hosted-media"></a>使用服务托管媒体应答 VOIP 呼叫
 
-##### <a name="notification---incoming"></a>通知-传入
+##### <a name="notification---incoming"></a>通知传入
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -226,7 +226,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>通知-建立
+##### <a name="notification---established"></a>已建立通知
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -255,9 +255,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="answer-voip-call-with-application-hosted-media"></a>应答与承载的应用程序媒体的 VOIP 呼叫
+### <a name="answer-voip-call-with-application-hosted-media"></a>使用应用程序托管媒体应答 VOIP 呼叫
 
-##### <a name="notification---incoming"></a>通知-传入
+##### <a name="notification---incoming"></a>通知传入
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -370,7 +370,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>通知-建立
+##### <a name="notification---established"></a>已建立通知
 
 ```http
 POST https://bot.contoso.com/api/calls

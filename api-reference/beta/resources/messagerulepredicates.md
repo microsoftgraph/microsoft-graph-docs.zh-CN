@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: fda6a160d30dc0d822f2e0aeb5642250d6b69658
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644033"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463535"
 ---
 # <a name="messagerulepredicates-resource-type"></a>messageRulePredicates 资源类型
 
@@ -27,26 +27,26 @@ ms.locfileid: "29644033"
 | hasAttachments | Boolean | 指示传入的邮件是否必须包含附件，以便条件或例外情况适用。 |
 | headerContains | Collection (String) | 表示出现在传入邮件头中的字符串，以便条件或例外情况适用。 |
 | importance | String | 传入邮件上标记的重要性，以便条件或例外情况适用：`low`、`normal`、`high`。 |
-| isApprovalRequest | Boolean | 指示传入的邮件是否必须为审批请求，以便条件或例外情况适用。 |
-| isAutomaticForward | Boolean | 指示传入的邮件是否必须自动转发，以便条件或例外情况适用。 |
-| isAutomaticReply | Boolean | 指示传入的邮件是否必须自动答复，以便条件或例外情况适用。 |
-| isEncrypted | Boolean | 指示传入的邮件是否必须加密，以便条件或例外情况适用。 |
-| isMeetingRequest | Boolean | 指示传入的邮件是否必须为会议请求，以便条件或例外情况适用。 |
-| isMeetingResponse | Boolean | 指示传入的邮件是否必须为会议响应，以便条件或例外情况适用。 |
-| isNonDeliveryReport | Boolean | 指示传入的邮件是否必须为未送达报告，以便条件或例外情况适用。 |
-| isPermissionControlled | Boolean | 指示传入的邮件是否必须受权限控制（受 RMS 保护），以便条件或例外情况适用。 |
-| isReadReceipt | Boolean | 指示传入的邮件是否必须为已读回执，以便条件或例外情况适用。 |
-| isSigned | Boolean | 指示传入的邮件是否必须有 S/MIME 签名，以便条件或例外情况适用。 |
-| isVoicemail | Boolean | 指示传入的邮件是否必须有语音邮件，以便条件或例外情况适用。 |
+| isApprovalRequest | 布尔 | 指示传入的邮件是否必须为审批请求，以便条件或例外情况适用。 |
+| isAutomaticForward | 布尔 | 指示传入的邮件是否必须自动转发，以便条件或例外情况适用。 |
+| isAutomaticReply | 布尔 | 指示传入的邮件是否必须自动答复，以便条件或例外情况适用。 |
+| isEncrypted | 布尔 | 指示传入的邮件是否必须加密，以便条件或例外情况适用。 |
+| isMeetingRequest | 布尔 | 指示传入的邮件是否必须为会议请求，以便条件或例外情况适用。 |
+| isMeetingResponse | 布尔 | 指示传入的邮件是否必须为会议响应，以便条件或例外情况适用。 |
+| isNonDeliveryReport | 布尔 | 指示传入的邮件是否必须为未送达报告，以便条件或例外情况适用。 |
+| isPermissionControlled | 布尔 | 指示传入的邮件是否必须受权限控制（受 RMS 保护），以便条件或例外情况适用。 |
+| isReadReceipt | 布尔 | 指示传入的邮件是否必须为已读回执，以便条件或例外情况适用。 |
+| isSigned | 布尔 | 指示传入的邮件是否必须有 S/MIME 签名，以便条件或例外情况适用。 |
+| isVoicemail | 布尔 | 指示传入的邮件是否必须有语音邮件，以便条件或例外情况适用。 |
 | messageActionFlag | String  | 表示出现在传入邮件上的 flag-for-action 值，以便条件或例外情况适用。 可取值为：`any`、`call`、`doNotForward`、`followUp`、`fyi`、`forward`、`noResponseNecessary`、`read`、`reply`、`replyToAll`、`review`。 |
-| notSentToMe | Boolean | 指示邮箱所有者是否不能是传入邮件的收件人，以便条件或异常情况适用。 |
+| notSentToMe | 布尔 | 指示邮箱所有者是否不能是传入邮件的收件人，以便条件或异常情况适用。 |
 | recipientContains | Collection (String) | 表示出现在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中的字符串，以便条件或例外情况适用。 |
 | senderContains | Collection (String) | 表示出现在传入邮件的 **from** 属性中的字符串，以便条件或例外情况适用。 |
 | sensitivity | String | 表示必须在传入邮件上标记的敏感度级别，以便条件或例外情况适用。 可取值为：`normal`、`personal`、`private`、`confidential`。 |
-| sentCcMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **ccRecipients** 属性中，以便条件或异常情况适用。 |
-| sentOnlyToMe | Boolean | 指示邮箱所有者是否必须是传入邮件的唯一收件人，以便条件或异常情况适用。 |
+| sentCcMe | 布尔 | 指示邮箱所有者是否必须在传入邮件的 **ccRecipients** 属性中，以便条件或异常情况适用。 |
+| sentOnlyToMe | 布尔 | 指示邮箱所有者是否必须是传入邮件的唯一收件人，以便条件或异常情况适用。 |
 | sentToAddresses | Collection ([recipient](recipient.md)) | 表示必须已向其发送传入邮件的电子邮件地址，以便条件或例外情况适用。 |
-| sentToMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 属性中，以便条件或异常情况适用。 |
+| sentToMe | 布尔 | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 属性中，以便条件或异常情况适用。 |
 | sentToOrCcMe | Boolean | 指示邮箱所有者是否必须在传入邮件的 **toRecipients** 或 **ccRecipients** 属性中，以便条件或异常情况适用。 |
 | subjectContains | Collection (String) | 表示出现在传入邮件主题中的字符串，以便条件或例外情况适用。 |
 | withinSizeRange | [sizeRange](sizerange.md) | 表示传入邮件必须介于其中的最小大小和最大大小（以千字节为单位），以便条件或例外情况适用。 |

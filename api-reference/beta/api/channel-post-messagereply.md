@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 15e1bfffe7d7634092937a0605debfd5294b142b
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789674"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456463"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>在渠道中回复消息
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 9771507e336ecf82b93eb2c12d22f45f47eb74fc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572589"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462940"
 ---
 # <a name="onedrive-activity-reports"></a>OneDrive 活动报表
 

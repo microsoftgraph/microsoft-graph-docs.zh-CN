@@ -5,15 +5,13 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 781bb0ff01a2c5efb469e91824a7ee9c3b5036cd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507871"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455623"
 ---
 # <a name="get-conversation"></a>获取对话
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 conversation 对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -21,9 +19,9 @@ ms.locfileid: "29507871"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Group.Read.All    |
+|委派（工作或学校帐户） | group. 全部, group。 Read. all    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All、Group.Read.All |
+|应用程序 | group. 全部, group。 Read. all |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +50,7 @@ GET /groups/{id}/conversations/{id}
   "name": "get_conversation"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
+GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -69,7 +67,7 @@ Content-length: 201
 {
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
+  "lastDeliveredDateTime": "datetime-value",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
@@ -80,15 +78,10 @@ Content-length: 201
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get conversation",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/conversation-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

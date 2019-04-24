@@ -1,21 +1,21 @@
 ---
 title: 添加 accessReview 审阅者
-description: '在 Azure AD 访问评论功能中，更新要作为审阅者添加另一个用户现有 accessReview 对象。  此操作仅允许尚未完成，访问审阅和仅访问审阅显式指定审阅者的位置。 此操作不允许用户在其中查看他们自己的访问，访问审阅，不应在其中为审阅者分配组的所有者访问审阅。 '
+description: '在 "Azure AD access 评论" 功能中, 更新现有的 accessReview 对象以将其他用户添加为审阅者。  仅允许对尚未完成的访问权限审核执行此操作, 并且仅适用于显式指定审阅者的访问审核。 此操作不允许用于用户查看其自己的访问权限的访问审核, 而不适用于将组所有者分配为审阅者的访问审核。 '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1a526451330321c7fbbfd1d5287dd5ad892eee84
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516362"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456855"
 ---
 # <a name="add-accessreview-reviewer"></a>添加 accessReview 审阅者
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中，更新要作为审阅者添加另一个用户现有[accessReview](../resources/accessreview.md)对象。  此操作仅允许尚未完成，访问审阅和仅访问审阅显式指定审阅者的位置。 此操作不允许用户在其中查看他们自己的访问，访问审阅，不应在其中为审阅者分配组的所有者访问审阅。 
+在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 更新现有的[accessReview](../resources/accessreview.md)对象以将其他用户添加为审阅者。  仅允许对尚未完成的访问权限审核执行此操作, 并且仅适用于显式指定审阅者的访问审核。 此操作不允许用于用户查看其自己的访问权限的访问审核, 而不适用于将组所有者分配为审阅者的访问审核。 
 
 
 ## <a name="permissions"></a>权限
@@ -23,7 +23,7 @@ ms.locfileid: "29516362"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
+|委派（工作或学校帐户）     | AccessReview |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -35,27 +35,27 @@ POST /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供用户将成为审阅者的 ID 的 JSON 表示形式。
+在请求正文中, 提供将成为审阅者的用户 ID 的 JSON 表示形式。
 
-下表显示可更新 accessReview 时提供的属性。
+下表显示了在更新 accessReview 时可提供的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| `id`             |`String`                                                        | 用户 id。  |
+| `id`             |`String`                                                        | 用户 ID。  |
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201, Created`响应代码。
+如果成功, 此方法将`201, Created`返回响应代码。
 
 ## <a name="example"></a>示例
 
-这是一次性的 （不) 访问审阅更新与其他审阅者的示例。
+以下是使用其他审阅者更新一次性 (不定期) 访问评审的示例。
 
 ##### <a name="request"></a>请求
-在请求正文中，提供的用户对象的 id 的 JSON 表示形式。
+在请求正文中, 提供 user 对象的 id 的 JSON 表示形式。
 
 <!-- {
   "blockType": "request",

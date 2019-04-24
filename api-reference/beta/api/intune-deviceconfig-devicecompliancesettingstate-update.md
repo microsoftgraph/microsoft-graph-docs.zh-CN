@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 646e69d1bc637dde947ddddf03eb62d25c07148f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783029"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32469801"
 ---
 # <a name="update-devicecompliancesettingstate"></a>更新 deviceComplianceSettingState
 
@@ -52,15 +52,15 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 |:---|:---|:---|
 |id|String|实体的键|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|设备平台类型。 可能的值为`desktop`: `windowsRT`、 `winMO6`、 `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer`、、、、、、、、、、、、、、、、 `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise`, `blackberry`, `palm`, `unknown`.|
-|setting|String|设置类名和属性名。|
-|settingName|String|报告的设置名称|
-|deviceId|String|报告的设备 ID|
-|deviceName|String|报告的设备名称|
-|userId|String|报告的用户 ID|
+|setting|字符串|设置类名和属性名。|
+|settingName|字符串|报告的设置名称|
+|deviceId|字符串|报告的设备 ID|
+|deviceName|字符串|报告的设备名称|
+|userId|字符串|报告的用户 ID|
 |userEmail|String|报告的用户电子邮件地址|
-|userName|String|报告的用户名|
+|userName|字符串|报告的用户名|
 |userPrincipalName|String|报告的用户主体名称|
-|deviceModel|String|报告的设备模型|
+|deviceModel|字符串|报告的设备模型|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
 

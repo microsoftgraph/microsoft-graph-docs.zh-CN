@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9936ba70226927c617cce6768313f2d91f2b1f5e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988502"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459743"
 ---
 # <a name="get-manageddevice"></a>获取 managedDevice
 

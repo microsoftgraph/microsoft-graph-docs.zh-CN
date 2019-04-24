@@ -1,29 +1,29 @@
 ---
-title: 呼叫： cancelMediaProcessing
-description: 取消媒体处理所有正在进行的任何 PlayPrompt 或记录的操作。
+title: '调用: cancelMediaProcessing'
+description: 取消所有正在进行的任何 PlayPrompt 或记录操作的媒体处理。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 77c35cb0cfeaea6ebb2e623b32b1fa3c70f65777
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527848"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461306"
 ---
-# <a name="call-cancelmediaprocessing"></a>呼叫： cancelMediaProcessing
+# <a name="call-cancelmediaprocessing"></a>调用: cancelMediaProcessing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-取消媒体处理所有正在进行的任何 PlayPrompt 或记录的操作。
+取消所有正在进行的任何 PlayPrompt 或记录操作的媒体处理。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | 不受支持。                              |
-| 委派（个人 Microsoft 帐户） | 不受支持。                              |
+| 委派（工作或学校帐户）     | 不支持。                              |
+| 委派（个人 Microsoft 帐户） | 不支持。                              |
 | 应用程序                            | 无。                                       |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 
 | 参数      | 类型    | 说明                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | Boolean | 指示是否要停止所有操作或当前标志。 |
-| ClientContext  | String  | 客户端上下文。                                            |
+| 各种            | 布尔 | 指示是否停止所有操作或当前操作的标志。 |
+| 适用  | 字符串  | 客户端上下文。                                            |
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和具有[commsOperation](../resources/commsoperation.md)创建的此请求 uri 中的位置标头。
+返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -84,7 +84,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>通知-完成的操作
+##### <a name="notification---operation-completed"></a>通知-操作已完成
 
 ```http
 POST https://bot.contoso.com/api/calls

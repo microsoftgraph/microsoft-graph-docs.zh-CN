@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 922c600d81bf890980a9d33d14b3255f8ac70be6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959893"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585347"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -37,7 +37,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
 |:---------------|:--------|:----------|
 |count|Int32|可选。生成的范围中要包含的行数。一般来说，使用正数可以在当前范围之外创建一个范围。也可以使用负数在当前范围之内创建一个范围。默认值为 1。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -85,7 +85,7 @@ Content-length: 157
 }
 ```
 
-如果调用不带可选`count`参数，此函数返回的区域上方的单个行。
+如果不带可选`count`参数调用, 则此函数将返回区域上方的单个行。
 
 ##### <a name="request"></a>请求
 <!--{

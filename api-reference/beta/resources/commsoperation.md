@@ -1,21 +1,21 @@
 ---
 title: commsOperation 资源类型
-description: 某些长时间运行操作的状态。
+description: 某个长时间运行的操作的状态。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b7914bd9692b4d9a94294f9a09659467e10550a6
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642203"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460595"
 ---
 # <a name="commsoperation-resource-type"></a>commsOperation 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-某些长时间运行操作的状态。
+某个长时间运行的操作的状态。
 
 ## <a name="methods"></a>方法
 无
@@ -24,12 +24,12 @@ ms.locfileid: "29642203"
 
 | 属性           | 类型                        | 说明                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | 客户端上下文。                                                             |
+| 适用      | 字符串                      | 客户端上下文。                                                             |
 | createdDateTime    | DateTimeOffset              | 操作的开始时间。                                                |
-| id                 | String                      | 操作 ID。只读。 由服务器生成。                                  |
-| lastActionDateTime | DateTimeOffset              | 操作的上次活动时间。                                   |
+| id                 | String                      | 操作 id。只读。 由服务器生成。                                  |
+| lastActionDateTime | DateTimeOffset              | 操作的上一操作的时间。                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | 结果信息。 只读。 由服务器生成。                            |
-| 状态             | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
+| status             | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 |
 
 ## <a name="relationships"></a>关系
 无

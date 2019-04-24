@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8e5c0a9f6999fdec9ce0e0589c08148aefe48558
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804380"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467384"
 ---
 # <a name="get-ioseducationdeviceconfiguration"></a>获取 iosEducationDeviceConfiguration
 

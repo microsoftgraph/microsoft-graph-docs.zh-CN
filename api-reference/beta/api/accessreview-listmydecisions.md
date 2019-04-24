@@ -1,27 +1,27 @@
 ---
-title: 列出我 accessReview 决策
-description: 在 Azure AD 访问评论功能中，为审阅者检索呼叫用户的 accessReview 对象的决策。
+title: 列出我的 accessReview 决策
+description: 在 "Azure AD 访问评论" 功能中, 检索 accessReview 对象作为审阅者的呼叫用户的决策。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: e19e3b0581c995f1b0ef52369d3a3e7545696d1c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525323"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459449"
 ---
-# <a name="list-my-accessreview-decisions"></a>列出我 accessReview 决策
+# <a name="list-my-accessreview-decisions"></a>列出我的 accessReview 决策
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中，为审阅者检索呼叫用户的[accessReview](../resources/accessreview.md)对象的决策。
+在 "Azure AD[访问评论](../resources/accessreviews-root.md)" 功能中, 检索[accessReview](../resources/accessreview.md)对象作为审阅者的呼叫用户的决策。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  此外必须允许登录的用户读取此特定访问审查。 |
+|委派（工作或学校帐户）     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  登录用户还必须允许用户阅读此特定访问评审。 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -33,13 +33,13 @@ GET /accessReviews('{reviewId}')/myDecisions
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-应提供没有请求正文。
+不应提供请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200, OK`响应代码和在响应正文中，为其呼叫用户是分配给审阅者[accessReviewDecision](../resources/accessreviewdecision.md)对象的数组。
+如果成功, 此方法在响应`200, OK`正文中返回响应代码和[accessReviewDecision](../resources/accessreviewdecision.md)对象的数组, 为其调用用户是分配的审阅者。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -81,8 +81,8 @@ Content-type: application/json
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  检索访问审阅。 |
-|[列表 accessReview 决策](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)集合|    检索所有 accessReview 的决策。|
+|[获取 accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  检索访问评审。 |
+|[列出 accessReview 决策](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md)集合|    检索 accessReview 的所有决策。|
 
 
 <!--

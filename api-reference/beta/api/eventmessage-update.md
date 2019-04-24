@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 160fbf70f243174265fc6e4e54feabb8042bd450
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513583"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463958"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
@@ -44,10 +44,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|categories|String|与邮件关联的类别。|
+|类别|String|与邮件关联的类别。|
 |重要性|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
-|isAllDay |Boolean|指示是否事件持续的整个天。 调整此属性需要调整事件以及的**开始日期时间**和**endDateTime**属性。|
-|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isAllDay |Boolean|指示事件是否持续一整天。 调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。|
+|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
 |isRead|Boolean|指示是否已阅读该邮件。|
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 

@@ -1,17 +1,17 @@
 ---
 title: timeConstraint 资源类型
-description: 根据活动的特定性质和开放时间段，将会议时间建议限制为某周的几个小时或几天。
+description: 根据指定的活动和打开时间段的性质, 将会议时间建议限制在一周的特定时间和几天。
 localization_priority: Normal
 ms.openlocfilehash: b6e239abbd0d9f7b4f83df4a60625a2f88131476
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815090"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456950"
 ---
 # <a name="timeconstraint-resource-type"></a>timeConstraint 资源类型
 
-根据活动的特定性质和开放时间段，将会议时间建议限制为某周的几个小时或几天。
+根据指定的活动和打开时间段的性质, 将会议时间建议限制在一周的特定时间和几天。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -35,7 +35,7 @@ ms.locfileid: "27815090"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|activityDomain|activityDomain|活动，可选的特点。 可能的值为： `work`， `personal`， `unrestricted`，或`unknown`。|
+|activityDomain|activityDomain|（可选）会议性质。 可能的值是: `work`、 `personal`、 `unrestricted`或`unknown`。|
 |timeslots|[timeSlot](timeslot.md) 集合|一组时间段。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

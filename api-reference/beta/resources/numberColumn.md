@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
 ms.openlocfilehash: edd495b62f0ccbd163ec31a2efca70923d0bc8ad
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480766"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463290"
 ---
 # <a name="numbercolumn-resource-type"></a>NumberColumn 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "30480766"
 | 属性名称      | 类型   | 说明
 |:-------------------|:-------|:-----------------------------------------------
 | **decimalPlaces**  | string | 要显示的小数位数。 有关可能的值的信息，请参阅以下信息。
-| **displayAs**      | string | 值在用户体验中的显示方式。 必须为 `number` 或 `percentage` 的其中一个。 如果未指定，则视为 `number`。
+| **displayAs**      | 字符串 | 值在用户体验中的显示方式。 必须为 `number` 或 `percentage` 的其中一个。 如果未指定，则视为 `number`。
 | **maximum**        | double | 最大允许值。
 | **minimum**        | double | 最小允许值。
 

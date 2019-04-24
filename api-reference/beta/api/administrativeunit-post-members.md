@@ -1,21 +1,21 @@
 ---
 title: 添加成员
-description: 使用此 API 成员 （用户或组） 添加到一个管理单元。
+description: 使用此 API 将成员 (用户或组) 添加到管理单元。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c1cc9ce7e091ac96ca2484c74404c3a4b04b19ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509481"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459230"
 ---
 # <a name="add-a-member"></a>添加成员
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 成员 （用户或组） 添加到一个管理单元。
+使用此 API 将成员 (用户或组) 添加到管理单元。
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
@@ -40,7 +40,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[用户](../resources/user.md)、[组](../resources/group.md)或[directoryObject](../resources/directoryobject.md)要添加的 JSON 表示形式。
+在请求正文中, 提供要添加的[用户](../resources/user.md)、[组](../resources/group.md)或[directoryObject](../resources/directoryobject.md)的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
@@ -60,7 +60,7 @@ Content-length: 109
 }
 
 ```
-在请求正文中，提供的 JSON 表示形式`id`您想要添加的[用户](../resources/user.md)或[组](../resources/group.md)对象。
+在请求正文中, 提供要添加的[用户](../resources/user.md)或`id` [组](../resources/group.md)对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
 下面是一个响应示例。

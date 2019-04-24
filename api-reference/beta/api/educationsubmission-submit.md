@@ -1,28 +1,28 @@
 ---
-title: educationSubmission： 提交
-description: 指示学生完成的工作，并且已准备好分配中分发操作。 仅可由学生执行此操作。
+title: 'educationSubmission: 提交'
+description: 指示学生完成工作并准备好在工作分配中进行准备的操作。 仅学生可以执行此操作。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 3f67e5b07ed1093ee63e9b6fdf7647fa6891dacc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510769"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464724"
 ---
-# <a name="educationsubmission-submit"></a>educationSubmission： 提交
+# <a name="educationsubmission-submit"></a>educationSubmission: 提交
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指示学生完成的工作，并且已准备好分配中分发操作。 仅可由学生执行此操作。 这将更改从"工作"到"提交"提交的状态。 在提交过程中，所有资源将都复制到 submittedResources 地址散列表元中。 教师将看评分的提交的资源列表。
+指示学生完成工作并准备好在工作分配中进行准备的操作。 仅学生可以执行此操作。 这会将提交状态从 "正在运行" 更改为 "已提交"。 在提交过程中, 所有资源都将复制到 submittedResources 存储桶中。 教师将在 "已提交的资源" 列表中查找评分。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite  |
+|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 

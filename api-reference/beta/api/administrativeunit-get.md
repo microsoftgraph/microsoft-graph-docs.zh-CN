@@ -1,23 +1,23 @@
 ---
-title: Get administrativeUnit
-description: 检索的属性和 administrativeUnit 对象的关系。
+title: 获取 administrativeUnit
+description: 检索 administrativeUnit 对象的属性和关系。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 588d116d546503fa8db6c8ba56c5d0e328a10b8a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521605"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459464"
 ---
-# <a name="get-administrativeunit"></a>Get administrativeUnit
+# <a name="get-administrativeunit"></a>获取 administrativeUnit
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和[administrativeUnit](../resources/administrativeunit.md)对象的关系。
+检索[administrativeUnit](../resources/administrativeunit.md)对象的属性和关系。
 
-由于**administrativeUnit**资源支持[扩展](/graph/extensibility-overview)，您还可以使用`GET`操作来获取**administrativeUnit**实例中的自定义属性和扩展数据。
+由于**administrativeUnit**资源支持[扩展](/graph/extensibility-overview), 因此您还可以使用此`GET`操作获取**administrativeUnit**实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,7 +47,7 @@ GET /administrativeUnits/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[administrativeUnit](../resources/administrativeunit.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[administrativeUnit](../resources/administrativeunit.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

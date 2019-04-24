@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 8a61d92ada713da1533d6c25e3f8acbc30969d33
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640075"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460951"
 ---
 # <a name="chartlegendformat-resource-type"></a>ChartLegendFormat 资源类型
 

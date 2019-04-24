@@ -3,11 +3,11 @@ title: NamedItem：Range
 description: 返回与名称相关的 range 对象。如果已命名项目的类型不是区域，将引发异常。
 localization_priority: Normal
 ms.openlocfilehash: 93b00c813c84d7013f23d6dbe30cd86640b4e880
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851175"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460861"
 ---
 # <a name="nameditem-range"></a>NamedItem：Range
 

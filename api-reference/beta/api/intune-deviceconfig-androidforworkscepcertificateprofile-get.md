@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6e0199fb4a47aa953a9408a5bc6a74cfda86c025
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774328"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32478362"
 ---
 # <a name="get-androidforworkscepcertificateprofile"></a>获取 androidForWorkScepCertificateProfile
 

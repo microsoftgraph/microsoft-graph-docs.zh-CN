@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fc4754a190f19dab34ac417d2852ccc9e06ba9f4
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465347"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
@@ -30,17 +30,17 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|创建日期和时间|
 |lastSyncDateTime|DateTimeOffset|上次应用与管理服务同步的日期和时间。|
-|applicationVersion|String|应用版本|
-|managementSdkVersion|String|应用管理 SDK 版本|
-|platformVersion|String|操作系统版本|
-|deviceType|String|主机设备类型|
+|applicationVersion|字符串|应用版本|
+|managementSdkVersion|字符串|应用管理 SDK 版本|
+|platformVersion|字符串|操作系统版本|
+|deviceType|字符串|主机设备类型|
 |deviceTag|String|应用管理 SDK 生成的标记，它可帮助关联托管在同一设备上的应用。 不保证在所有情况下与应用关联。|
 |deviceName|String|主机设备名称|
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)集合|标记应用注册的零个或多个原因。 例如， 在取得 root 权限的设备上运行的应用|
-|userId|String|此应用注册所属的用户 ID。|
+|userId|字符串|此应用注册所属的用户 ID。|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|应用包标识符|
-|id|字符串|实体的键。|
-|version|String|实体的版本。|
+|id|String|实体的键。|
+|version|字符串|实体的版本。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

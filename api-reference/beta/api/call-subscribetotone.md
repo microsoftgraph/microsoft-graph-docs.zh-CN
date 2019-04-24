@@ -1,21 +1,21 @@
 ---
-title: 呼叫： subscribeToTone
-description: 订阅 DTMF （双音多频信号）。 这使您用户按键在电话上按下键时收到通知。
+title: '调用: subscribeToTone'
+description: 订阅 DTMF (双音多频信号)。 这样, 当用户在 "按键电话" 上按下按键时, 您就会收到通知。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f3fe078965877204b767b689ace293c3d4f46a9d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519442"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461251"
 ---
-# <a name="call-subscribetotone"></a>呼叫： subscribeToTone
+# <a name="call-subscribetotone"></a>调用: subscribeToTone
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-订阅 DTMF （双音多频信号）。 这使您的用户"按键"在电话上按下键时收到通知。
+订阅 DTMF (双音多频信号)。 这样, 你就可以在用户按 "按键时" 电话上的键时收到通知。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 
 | 参数      | 类型    | 说明 |
 |:---------------|:--------|:------------|
-| ClientContext  | String  | 客户端上下文。 |
+| 适用  | 字符串  | 客户端上下文。 |
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和具有[commsOperation](../resources/commsoperation.md)创建的此请求 uri 中的位置标头。
+返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -82,7 +82,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>通知-完成的操作
+##### <a name="notification---operation-completed"></a>通知-操作已完成
 
 ```http
 POST https://bot.contoso.com/api/calls

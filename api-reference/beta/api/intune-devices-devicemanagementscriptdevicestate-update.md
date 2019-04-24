@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1623fa762ff0089627e73eeae5e93dbc13f0a209
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803918"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465781"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>更新 deviceManagementScriptDeviceState
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 |:---|:---|:---|
 |id|String|设备管理脚本设备状态实体的密钥。|
 |runState|[runState](../resources/intune-shared-runstate.md)|设备管理脚本最新运行的状态。 可取值为：`unknown`、`success`、`fail`。|
-|resultMessage|String|执行输出的详细信息。|
+|resultMessage|字符串|执行输出的详细信息。|
 |lastStateUpdateDateTime|DateTimeOffset|最近执行设备管理脚本的时间。|
 |errorCode|Int32|与设备管理脚本的错误执行相对应的错误代码。|
 |errorDescription|String|与设备管理脚本的错误执行相对应的错误说明。|

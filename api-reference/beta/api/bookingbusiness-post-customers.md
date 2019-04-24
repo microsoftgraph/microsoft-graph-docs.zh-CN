@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 4557d65edf4727659fdae94599c0796fc940ed1d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523958"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461790"
 ---
 # <a name="create-bookingcustomer"></a>创建 bookingCustomer
 
@@ -21,7 +21,7 @@ ms.locfileid: "29523958"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  BookingsAppointment.ReadWrite.All，Bookings.ReadWrite.All，Bookings.Manage.All   |
+|委派（工作或学校帐户） |  BookingsAppointment, 全部, 全部登记, 全部, 预订。 all   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -37,11 +37,11 @@ POST /bookingBusinesses/{id}/customers
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[bookingCustomer](../resources/bookingcustomer.md)对象的 JSON 表示形式。
+在请求正文中, 提供[bookingCustomer](../resources/bookingcustomer.md)对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201, Created`响应正文中的响应代码和[bookingCustomer](../resources/bookingcustomer.md)对象。
+如果成功, 此方法在`201, Created`响应正文中返回响应代码和[bookingCustomer](../resources/bookingcustomer.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -60,9 +60,9 @@ Content-type: application/json
     "emailAddress": "jonis@relecloud.com"
 }
 ```
-在请求正文中，提供[bookingCustomer](../resources/bookingcustomer.md)对象的 JSON 表示形式。
+在请求正文中, 提供[bookingCustomer](../resources/bookingcustomer.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

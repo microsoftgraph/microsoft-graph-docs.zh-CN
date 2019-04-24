@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: BooleanColumn
 localization_priority: Normal
 ms.openlocfilehash: 9da7ec74cad4e6b766816669506081f74c47530b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482159"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461002"
 ---
 # <a name="booleancolumn-resource-type"></a>BooleanColumn 资源类型
 

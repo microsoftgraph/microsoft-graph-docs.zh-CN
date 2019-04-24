@@ -1,27 +1,27 @@
 ---
-title: 事件： 取消
-description: '此操作允许组织者的会议发送取消邮件和取消事件。 '
+title: '事件: 取消'
+description: '此操作允许会议组织者发送取消邮件并取消事件。 '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e39066c3360113965b0009473e520557853ba284
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530151"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457516"
 ---
-# <a name="event-cancel"></a>事件： 取消
+# <a name="event-cancel"></a>事件: 取消
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作允许组织者的会议发送取消邮件和取消事件。 
+此操作允许会议组织者发送取消邮件并取消事件。 
 
-操作将事件移到已删除邮件文件夹中。 组织者还可以取消的定期会议通过提供出现事件 id。 调用此操作与会者获取错误 （HTTP 400 错误请求），与以下错误消息：
+该操作会将事件移动到 "已删除邮件" 文件夹中。 组织者还可以通过提供发生事件 ID 来取消定期会议的事件。 调用此操作的与会者将收到错误 (HTTP 400 错误请求), 并提供以下错误消息:
 
-"无法完成您的请求。 您需要取消会议组织者。"
+无法完成您的请求。 您必须是组织者才能取消会议。 "
 
-此操作与[删除](event-delete.md)区别在于**取消**可供仅组织者，并允许组织者向取消有关与会者发送自定义消息。
+此操作与中的 "删除" 不同, "**取消**" 中的 "[删除](event-delete.md)" 仅对组织者可用, 并允许组织者向与会者发送有关取消的自定义消息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|注释|String|有关取消发送给所有与会者的注释。 可选。|
+|注释|String|有关向所有与会者发送的取消的注释。 可选。|
 
 ## <a name="response"></a>响应
 

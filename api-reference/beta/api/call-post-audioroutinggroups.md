@@ -1,21 +1,21 @@
 ---
 title: 创建音频路由组
-description: 创建新**audioRoutingGroup**。
+description: 创建新的**audioRoutingGroup**。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: dc0e2a3463229762b3a641f33f77f2df8d506aa0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522859"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461218"
 ---
 # <a name="create-audio-routing-group"></a>创建音频路由组
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新**audioRoutingGroup**。
+创建新的**audioRoutingGroup**。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "29522859"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                               |
 | 委派（个人 Microsoft 帐户） | 不支持。                               |
-| 应用程序                            | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| 应用程序                            | JoinGroupCalls、InitiateGroupCalls 和所有调用 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,14 +39,14 @@ POST /applications/{id}/calls/{id}/audioRoutingGroups
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。
+在请求正文中, 提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[audioRoutingGroup](../resources/audioroutinggroup.md)对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[audioRoutingGroup](../resources/audioroutinggroup.md)对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-one-to-one-audio-routing-group"></a>示例 1： 一对一音频路由组
+### <a name="example-1-one-to-one-audio-routing-group"></a>示例 1: 一对一音频路由组
 
 ##### <a name="request"></a>请求
 下面为请求示例。
@@ -72,7 +72,7 @@ Content-Length: 233
 }
 ```
 
-在请求正文中，提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。
+在请求正文中, 提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
 
@@ -99,7 +99,7 @@ Content-Length: 233
   ]
 }
 ```
-### <a name="example-2-multicast-audioroutinggroup"></a>示例 2： 多播的 audioRoutingGroup
+### <a name="example-2-multicast-audioroutinggroup"></a>示例 2: 多播 audioRoutingGroup
 
 ##### <a name="request"></a>请求
 下面为请求示例。
@@ -130,7 +130,7 @@ Content-Length: 233
 }
 ```
 
-在请求正文中，提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。
+在请求正文中, 提供[audioRoutingGroup](../resources/audioroutinggroup.md)对象的 JSON 表示形式。
 
 ##### <a name="response"></a>响应
 

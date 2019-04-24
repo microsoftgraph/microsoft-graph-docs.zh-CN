@@ -1,21 +1,21 @@
 ---
 title: 更新 educationSynchronizationProfile
-description: 更新为租户中为现有学校数据同步配置文件属性。
+description: 更新租户中现有 school 数据同步配置文件的属性。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 668aad65abe2c9b3d4609400118f9341748210f1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510573"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464712"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>更新 educationSynchronizationProfile
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新租户中的现有学校数据[同步配置文件](../resources/educationsynchronizationprofile.md)属性。
+更新租户中现有 school 数据[同步配置文件](../resources/educationsynchronizationprofile.md)的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -23,7 +23,7 @@ ms.locfileid: "29510573"
 | 权限类型 | 权限 |
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
-|委派（个人 Microsoft 帐户）|不支持。|
+|委派 (个人 Microsoft 帐户|不支持。|
 |应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
@@ -39,10 +39,10 @@ PUT /synchronizationProfiles
 | Content-Type | string | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[synchronizationProfile](../resources/educationsynchronizationprofile.md)对象的 JSON 表示形式。
+在请求正文中, 提供[synchronizationProfile](../resources/educationsynchronizationprofile.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`202, Accepted`响应代码和响应正文中的[synchronizationProfile](../resources/educationsynchronizationprofile.md)对象。
+如果成功, 此方法在响应`202, Accepted`正文中返回响应代码和[synchronizationProfile](../resources/educationsynchronizationprofile.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

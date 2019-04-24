@@ -5,13 +5,15 @@ ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
 ms.openlocfilehash: a9d92d84c8495b8c138c34f752700ccd0aad64fd
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480129"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457016"
 ---
 # <a name="thumbnailset-resource-type"></a>ThumbnailSet 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ThumbnailSet** 资源是键控的 [缩略图](thumbnail.md) 资源集合。它用来表示与 DriveItem 相关联的一组缩略图。
 
@@ -19,19 +21,13 @@ ms.locfileid: "30480129"
 
 下面是资源的 JSON 表示形式。
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "source",
-    "small",
-    "medium",
-    "large"
-  ],
+  "optionalProperties": ["source", "small", "medium", "large"],
+  "openType": true,
   "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.thumbnailSet",
-  "openType": true
-}-->
+  "@odata.type": "microsoft.graph.thumbnailSet"
+} -->
 
 ```json
 {
@@ -55,9 +51,14 @@ ms.locfileid: "30480129"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ThumbnailSet enables access to thumbnails of different sizes",
   "section": "documentation",
-  "tocPath": "Resources/ThumbnailSet"
-} -->
+  "tocPath": "Resources/ThumbnailSet",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/thumbnailset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

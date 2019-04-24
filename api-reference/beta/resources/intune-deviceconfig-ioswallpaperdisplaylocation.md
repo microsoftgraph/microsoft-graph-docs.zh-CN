@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d408a37c1f535aeb0e51cc50327f2897803093b0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791409"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460393"
 ---
 # <a name="ioswallpaperdisplaylocation-enum-type"></a>iosWallpaperDisplayLocation 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31791409"
 |:---|:---|:---|
 |notConfigured|0|没有为壁纸显示指定位置。|
 |锁屏|1|在锁屏屏幕上显示配置的壁纸图像。|
-|homeScreen|双面|已配置的壁纸图像显示在 "主页 (图标列表)" 屏幕上。|
-|lockAndHomeScreens|第三章|在锁屏屏幕和主屏幕上显示配置的壁纸图像。|
+|homeScreen|2 |已配置的壁纸图像显示在 "主页 (图标列表)" 屏幕上。|
+|lockAndHomeScreens|3 |在锁屏屏幕和主屏幕上显示配置的壁纸图像。|
 
 
 

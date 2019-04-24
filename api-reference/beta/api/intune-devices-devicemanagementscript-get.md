@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fa56cf17415494edbb324c1507ab3d05894c90dd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785165"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465795"
 ---
 # <a name="get-devicemanagementscript"></a>获取 deviceManagementScript
 

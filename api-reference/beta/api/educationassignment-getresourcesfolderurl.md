@@ -1,29 +1,29 @@
 ---
 title: 'educationAssignment: getResourcesFolderUrl'
-description: '此函数返回 OneDrive URL 应其中上载所有基于文件的资源 （Word、 Excel 和等等）。  '
+description: '此函数返回您应上载所有基于文件的资源 (Word、Excel 等) 的 OneDrive URL。  '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 43bef729d2cf37561d0742ebb3adfb21fe4f486e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512029"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464651"
 ---
 # <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: getResourcesFolderUrl
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此函数返回 OneDrive URL 应其中上载所有基于文件的资源 （Word、 Excel 和等等）。  
-请注意，文件必须位于此文件夹中以添加为资源。 仅在类中的教师可以确定要上载的文件。 
+此函数返回您应上载所有基于文件的资源 (Word、Excel 等) 的 OneDrive URL。  
+请注意, 文件必须位于此文件夹中才能作为资源添加。 只有课堂中的老师可以确定要上载的文件。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadBasic EduAssignments.Read  |
+|委派（工作或学校帐户） |  EduAssignments、user.readbasic.all、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -41,12 +41,12 @@ POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 Ok` 响应代码。 正文将包含在其中放入所有基于文件的资源文件夹的 OneDrive URL。
+如果成功，此方法返回 `200 Ok` 响应代码。 正文将包含要在其中放置所有基于文件的资源的文件夹的 OneDrive URL。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 <!-- {
   "blockType": "request",
   "name": "educationassignment_publish"
@@ -56,7 +56,7 @@ POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。 
+响应示例如下所示。 
 
 <!-- {
   "blockType": "response",

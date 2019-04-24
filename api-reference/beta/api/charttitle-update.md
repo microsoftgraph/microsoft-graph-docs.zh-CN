@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: e67790672f2e31baaacd0eba500684f7b2275e97
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640376"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455807"
 ---
 # <a name="update-charttitle"></a>更新 charttitle
 
@@ -41,9 +41,9 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/title
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|overlay|boolean|表示图表标题是否将叠加在图表上的布尔值。|
+|overlay|布尔|表示图表标题是否将叠加在图表上的布尔值。|
 |text|string|表示图表的标题文本。|
-|visible|boolean|表示 chart title 对象的可见性的布尔值。|
+|visible|布尔|表示 chart title 对象的可见性的布尔值。|
 
 ## <a name="response"></a>响应
 

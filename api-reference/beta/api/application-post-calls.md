@@ -1,21 +1,21 @@
 ---
 title: 创建调用
-description: 创建新的呼叫。
+description: 创建新呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 52255948a1d375871722a9af1aed8336844ac1bc
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643571"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459050"
 ---
 # <a name="create-call"></a>创建调用
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的呼叫。
+创建新呼叫。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,9 +24,9 @@ ms.locfileid: "29643571"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持                                                                           |
 | 委派（个人 Microsoft 帐户） | 不支持                                                                           |
-| 应用程序                            | Calls.JoinGroupCallsasGuest.All，Calls.JoinGroupCalls.All，Calls.Initiate.All Calls.InitiateGroupCalls.All |
+| 应用程序                            | JoinGroupCallsasGuest、JoinGroupCalls、calls、InitiateGroupCalls、all、和。 |
 
-> **注意：** 与承载的应用程序媒体呼叫，您需要使用上表中列出的权限之一 Calls.AccessMedia.All 权限。
+> **注意:** 对于具有应用程序托管媒体的呼叫, 您需要 AccessMedia 具有上表中列出的权限之一的所有权限。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -41,18 +41,18 @@ POST /applications/{id}/calls
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[呼叫](../resources/call.md)对象的 JSON 表示形式。
+在请求正文中, 提供[call](../resources/call.md)对象的 JSON 表示形式。
 
-> **注意：** 属性标记为`Server generated`处理时，将忽略`POST`上`app/calls`。
+> **注意:** 在`Server generated` `app/calls`处理`POST`时, 被标记为的属性将被忽略。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[呼叫](../resources/call.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[call](../resources/call.md)对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>创建与承载的服务媒体的对等 VOIP 呼叫
+### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>使用服务托管媒体创建对等 VOIP 呼叫
 
-> **注意：** 此呼叫需要 Calls.Initiate.All 权限。
+> **注意:** 此调用需要调用. Initiate。 All 权限。
 
 ##### <a name="request"></a>请求
 下面为请求示例。
@@ -188,7 +188,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---established"></a>通知-建立
+##### <a name="notification---established"></a>已建立通知
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -217,9 +217,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>创建与承载的应用程序媒体的对等 VOIP 呼叫
+### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>使用应用程序托管媒体创建对等 VOIP 呼叫
 
-> 注意： 需要 Calls.Initiate.All 和 Calls.AccessMedia.All 权限。
+> 注意: 需要调用. Initiate. all 和 AccessMedia 权限。
 
 ##### <a name="request"></a>请求
 下面为请求示例。
@@ -268,9 +268,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-group-call-with-service-hosted-media"></a>创建承载服务媒体组呼叫
+### <a name="create-group-call-with-service-hosted-media"></a>使用服务托管媒体创建组呼叫
 
-> **注意：** 本示例需要 Calls.InitiateGroupCalls.All 和 Calls.AccessMedia.All 的权限。
+> **注意:** 此示例需要 InitiateGroupCalls 和 AccessMedia。所有权限。
 
 ##### <a name="request"></a>请求
 
@@ -334,9 +334,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-private-meeting-with-service-hosted-media"></a>加入与服务的专用会议承载媒体
+### <a name="join-private-meeting-with-service-hosted-media"></a>加入具有服务托管媒体的专用会议
 
-> **注意：** 本示例需要 Calls.JoinGroupCalls.All 权限。
+> **注意:** 此示例需要 JoinGroupCalls 权限。
 
 ##### <a name="request"></a>请求
 
@@ -390,9 +390,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a>通道使用加入会议服务承载媒体
+### <a name="join-channel-meeting-with-service-hosted-media"></a>加入使用服务托管媒体的渠道会议
 
-> **注意：** 本示例需要 Calls.JoinGroupCalls.All 权限。
+> **注意:** 此示例需要 JoinGroupCalls 权限。
 
 ##### <a name="request"></a>请求
 
@@ -447,9 +447,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a>以与承载的服务媒体来宾身份加入通道
+### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a>以具有服务托管媒体的来宾身份加入频道会议
 
-> **注意：** 本示例需要 Calls.JoinGroupCallsAsGuest.All 权限。
+> **注意:** 此示例需要 JoinGroupCallsAsGuest 权限。
 
 ##### <a name="request"></a>请求
 

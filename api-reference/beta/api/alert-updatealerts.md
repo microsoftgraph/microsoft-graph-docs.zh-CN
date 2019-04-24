@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 5be6374d70baaf4205d5fc1e431111844ce34313
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366992"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459310"
 ---
 # <a name="alert-updatealerts"></a>警报: updateAlerts
 
@@ -47,7 +47,7 @@ POST /security/alerts/updateAlerts
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|value|[通知](../resources/alert.md)集合| 要更新的通知的集合。 每个实体都必须具有要更新的**id**、 **vendorInformation**和其他可编辑属性。|
+|值|[通知](../resources/alert.md)集合| 要更新的通知的集合。 每个实体都必须具有要更新的**id**、 **vendorInformation**和其他可编辑属性。|
 
 ## <a name="response"></a>响应
 
@@ -91,7 +91,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。

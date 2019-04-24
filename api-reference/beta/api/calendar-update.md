@@ -1,15 +1,15 @@
 ---
 title: Update calendar
-description: '更新 calendar 对象的属性。 日历可以是一个用户， '
+description: '更新 calendar 对象的属性。 日历可以是用户的一种, '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 2fb6ea839d6565c379c2d9af55920bd0166a7fb1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508473"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461722"
 ---
 # <a name="update-calendar"></a>Update calendar
 
@@ -26,13 +26,14 @@ ms.locfileid: "29508473"
 |应用程序 | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->用户或组的默认[日历](../resources/calendar.md)。
+<!-- { "blockType": "ignored" } -->
+用户或组的默认 [日历](../resources/calendar.md)。
 ```http
 PATCH /me/calendar
 PATCH /users/{id | userPrincipalName}/calendar
 PATCH /groups/{id}/calendar
 ```
-默认 [calendarGroup](../resources/calendargroup.md) 中的用户 [calendar](../resources/calendar.md)。
+默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。
 ```http
 PATCH /me/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}
@@ -57,7 +58,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |color|String|在 UI 中指定将该日历与其他日历区分开来的颜色主题。属性值有：LightBlue=0、LightGreen=1、LightOrange=2、LightGray=3、LightYellow=4、LightTeal=5、LightPink=6、LightBrown=7、LightRed=8、MaxColor=9、Auto=-1|
-|isDefaultCalendar|Boolean|如果该日历否则是用户的默认日历，false。|
+|isDefaultCalendar|Boolean|如果此日历是用户的默认日历，则值为 true，否则为 false。|
 |name|String|日历名称。|
 
 ## <a name="response"></a>响应

@@ -1,47 +1,47 @@
 ---
 title: 获取 governanceRoleAssignment
-description: 检索的属性和 governanceRoleAssignment 的关系。
+description: 检索 governanceRoleAssignment 的属性和关系。
 localization_priority: Normal
 ms.openlocfilehash: f699e1b5332652b2b87f3972d2ae47b06894b2e4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508837"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463836"
 ---
 # <a name="get-governanceroleassignment"></a>获取 governanceRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和[governanceRoleAssignment](../resources/governanceroleassignment.md)的关系。
+检索[governanceRoleAssignment](../resources/governanceroleassignment.md)的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess.ReadWrite.AzureResources |
+|应用程序 | PrivilegedAccess AzureResources |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-1. 获取对资源的[governanceRoleAssignment](../resources/governanceroleassignment.md)
+1. 获取资源的[governanceRoleAssignment](../resources/governanceroleassignment.md)
 
-    *注意： 权限范围，除了需要具有至少一个角色分配对资源的请求程序。* 
+    *注意: 除了权限范围之外, 要求请求者至少具有对资源的一个角色分配。* 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments/{id}
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
-2. 获取我的[governanceRoleAssignment](../resources/governanceroleassignment.md)
+2. 获取地雷的[governanceRoleAssignment](../resources/governanceroleassignment.md)
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'{myId}'
 ```
 
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法**不支持[OData 查询参数](/graph/query-parameters)以外的其他**`$filter`以帮助自定义响应。
+## <a name="optional-query-parameters"></a>可选查询参数
+此方法不**** 支持除之外`$filter`的[OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -49,13 +49,13 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[governanceRoleAssignment](../resources/governanceroleassignment.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignment](../resources/governanceroleassignment.md)对象。
 ## <a name="example"></a>示例
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignment"
 }-->
-获取订阅"Wingtip Toys-prod 移" [governanceRoleAssignment](../resources/governanceroleassignment.md)
+获取订阅 "Wingtip 玩具-生产" 的[governanceRoleAssignment](../resources/governanceroleassignment.md)
 ##### <a name="request"></a>请求
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/0ba78f41-ee7a-4227-adb9-1499431b2164?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'

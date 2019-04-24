@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 91cbfb4bba360ca11558e8dd0c01cf8a854a9c5e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788693"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466082"
 ---
 # <a name="createdownloadurl-action"></a>createDownloadUrl 操作
 

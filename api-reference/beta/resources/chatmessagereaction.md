@@ -3,11 +3,11 @@ title: chatMessageReaction 资源类型
 description: '表示对了 chatmessage 实体的反应。 '
 localization_priority: Normal
 ms.openlocfilehash: 5020653ef02c1604aece46f3ff2c7ea1c82a75ec
-ms.sourcegitcommit: 953895b28b6bae6e17eead938565fde289c49ef7
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31481382"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460637"
 ---
 # <a name="chatmessagereaction-resource-type"></a>chatMessageReaction 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "31481382"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|reactionType|string| 反应的类型。 计划的值包括: <br><ul><li>类似于邮件, 在这种情况下内容为空。</li><li>表情符号-表情符号反应。 将内容设置为表情符号的 unicode 值。</li><li>标签-内容设置为标签中的字符串。</li></ul>|
+|reactionType|字符串| 反应的类型。 计划的值包括: <br><ul><li>类似于邮件, 在这种情况下内容为空。</li><li>表情符号-表情符号反应。 将内容设置为表情符号的 unicode 值。</li><li>标签-内容设置为标签中的字符串。</li></ul>|
 |createdDateTime|dateTimeOffset|以 ISO-8601 格式表示的根邮件的 UTC 时间戳。|
 |user|identitySet|reacted 邮件的用户。|
 

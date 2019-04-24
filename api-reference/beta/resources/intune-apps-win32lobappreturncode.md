@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4c05d695b05a001e6854e254bf065d6fb41ba773
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791346"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461085"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>win32LobAppReturnCode 资源类型
 

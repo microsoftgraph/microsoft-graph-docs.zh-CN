@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c0ee2535cf9e47b08e1eb44d8fa9b07fb078c2bd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799655"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456516"
 ---
 # <a name="send-a-message-to-a-channel"></a>向渠道发送消息
 
@@ -115,7 +115,7 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-mentions"></a>示例 2:@mentions
+### <a name="example-2-mentions"></a>示例 2: @mentions
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

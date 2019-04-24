@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 1ca407ab560f70ae0d65252e397705cb878e0f52
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522936"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457758"
 ---
 # <a name="update-educationclass-properties"></a>更新 educationclass 属性
 
@@ -42,10 +42,11 @@ PATCH /education/classes/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|String| 课程说明。|
-|displayName|String| 课程名称。|
+|说明|字符串| 课程说明。|
+|displayName|字符串| 课程名称。|
 |mailNickname|String| 用于向所有用户发送电子邮件的电子邮件别名（如果已启用）。 |
-<!-- Please verify the revised description here. -->| classCode |字符串 |Class 代码使用学校。 || externalId |字符串 |从同步系统类的 ID。 | |externalName|String|同步系统中的课程名称。| |externalSource|string| 此课程的创建方式。 可取值为：`sis`、`manual`、`enum_sentinel`。|
+<!-- Please verify the revised description here. -->
+|classCode|String| 由学校使用的课程代码。| |externalId|String| 来自同步系统的课程 ID。 | |externalName|String|同步系统中的课程名称。| |externalSource|string| 此课程的创建方式。 可取值为：`sis`、`manual`、`enum_sentinel`。|
 
 ## <a name="response"></a>响应
 如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和更新的 [educationClass](../resources/educationclass.md) 对象。

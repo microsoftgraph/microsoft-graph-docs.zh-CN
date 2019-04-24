@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 8a55331752eb435400b19b02760d974dea972a3e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954986"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463682"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -36,7 +36,8 @@ ms.locfileid: "27954986"
 |应用程序 | Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->[邮件](../resources/message.md)用户的邮箱中的附件。
+<!-- { "blockType": "ignored" } -->
+用户邮箱中的 [邮件](../resources/message.md) 附件。
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -51,7 +52,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |

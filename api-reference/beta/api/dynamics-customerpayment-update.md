@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: eada35069ab748b93f115ee9639ecb755c19345a
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458528"
 ---
 # <a name="update-customerpayments"></a>更新 customerPayments
 更新 Dynamics 365 Business Central 的 customer 付款对象的属性。

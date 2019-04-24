@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: e5606516092633ff14d23947f73626adc6d83c2c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643113"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460994"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "29643113"
 |[创建 ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| 通过发布到点集合创建新的 ChartPoints。|
 |[列出 points](../api/chartseries-list-points.md) |[ChartPoints](chartpoint.md) 集合| 获取 ChartPoints 对象集合。|
 |[更新](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |更新 ChartSeries 对象。 |
-|[List](../api/chartseries-list.md) | [ChartSeries](chartseries.md) 集合 |获取 chartSeries 对象集合。 |
+|[列出](../api/chartseries-list.md) | [ChartSeries](chartseries.md) 集合 |获取 chartSeries 对象集合。 |
 |[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|根据其在集合中的位置检索系列|
 
 ## <a name="properties"></a>属性

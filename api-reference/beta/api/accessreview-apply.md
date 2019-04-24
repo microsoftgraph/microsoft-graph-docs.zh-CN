@@ -1,28 +1,28 @@
 ---
 title: 应用 accessReview
-description: '在 Azure AD 中访问评论功能、 apply 完成 accessReview 的决策。  目标对象可以是一次性访问回顾或定期访问评审的实例。  '
+description: '在 "Azure AD 访问评论" 功能中, 应用已完成 accessReview 的决策。  目标对象可以是一次性访问评审, 也可以是定期访问评审的实例。  '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 9612f3bcb8a032ee32cd7b058d3f21950c9b120f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512211"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456876"
 ---
 # <a name="apply-accessreview"></a>应用 accessReview
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能应用完成[accessReview](../resources/accessreview.md)的决策。  目标对象可以是一次性访问回顾或定期访问评审的实例。  
+在 "Azure AD[访问评论](../resources/accessreviews-root.md)" 功能中, 应用已完成[accessReview](../resources/accessreview.md)的决策。  目标对象可以是一次性访问评审, 也可以是定期访问评审的实例。  
 
 
-访问审阅完毕后，或者因为它到达的结束日期或管理员手动停止，将自动应用未配置供审阅，您可以调用应用，以应用所做的更改。 应用，发生此事件，直到要删除的访问权限的决定不显示对源资源，用户例如保留其组成员身份。 通过调用应用，由更新的组或应用程序实现的审阅结果。 如果用户的访问被拒绝在审阅中，当管理员调用此 API，Azure AD 中删除其成员身份或应用程序的工作分配。 
+在访问审核完成后, 因为它已达到结束日期或管理员手动停止, 且未为审阅配置自动应用, 所以您可以调用 apply 以应用所做的更改。 在应用之前, 不会在源资源上显示有关删除访问权限的决策, 因此实例的用户将保留其组成员身份。 通过调用 apply, 评审的结果通过更新组或应用程序来实现。 如果在审阅中拒绝了用户的访问权限, 则当管理员调用此 API 时, Azure AD 将删除其成员身份或应用程序分配。 
 
-访问查看已完成，并自动应用之后进行配置，然后查看的状态将从已完成通过中间状态更改和最后将更改为状态应用。 您应该会看到拒绝的用户，如果要删除资源中的任何组成员身份或应用程序的工作分配，请过几分钟。
+在访问评审完成且配置了自动应用后, 评审的状态将从 "已完成" 更改为 "中间状态", 最后将更改为 "已应用的状态"。 您应该会看到已拒绝的用户 (如果有) 在几分钟内从资源组成员身份或应用分配中删除。
 
-配置的自动应用审阅，或选择应用不会影响的本地目录中的组或动态组。 如果您想要更改组的内部部署，下载结果并将这些更改应用于该目录中的组的表示形式。
+已配置的自动应用审阅, 或选择 "应用" 不会对源于内部部署目录或动态组的组产生影响。 如果要更改源于内部部署的组, 请下载结果并将这些更改应用于该目录中的组的表示形式。
 
 
 ## <a name="permissions"></a>权限
@@ -30,7 +30,7 @@ ms.locfileid: "29512211"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
+|委派（工作或学校帐户）     | AccessReview |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -42,7 +42,7 @@ POST /accessReviews('<id>')/applyDecisions()
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -53,7 +53,7 @@ POST /accessReviews('<id>')/applyDecisions()
 
 ## <a name="see-also"></a>另请参阅
 
-- [如何完成访问审阅](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
+- [如何完成访问评审](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

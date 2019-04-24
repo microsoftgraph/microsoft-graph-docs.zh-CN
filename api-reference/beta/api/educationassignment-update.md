@@ -1,28 +1,28 @@
 ---
 title: 更新 educationassignment
-description: 更新的 assignment 对象。 仅教师类中的可以执行此操作。 请注意，您无法使用 PATCH 请求更改的工作分配状态。 使用发布操作更改的工作分配状态。
+description: 更新工作分配对象。 只有课堂中的教师才能执行此操作。 请注意, 不能使用 PATCH 请求来更改工作分配的状态。 使用 "发布" 操作可更改工作分配状态。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: eb5762f86e1572f9a9d5876199c945154a25293b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524959"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458164"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新的 assignment 对象。 仅教师类中的可以执行此操作。 请注意，您无法使用 PATCH 请求更改的工作分配状态。 使用[发布](../api/educationassignment-publish.md)操作更改的工作分配状态。
+更新工作分配对象。 只有课堂中的教师才能执行此操作。 请注意, 不能使用 PATCH 请求来更改工作分配的状态。 使用 "[发布](../api/educationassignment-publish.md)" 操作可更改工作分配状态。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite  |
+|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -42,17 +42,17 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|Boolean| 是否可以在截止日期之后提交提交。|
-|allowStudentsToAddResourcesToSubmission|Boolean| 是否学生可以将资源添加到提交。 指示在提交的那些项目是否来自工作分配资源列表。 |
-|assignDateTime|DateTimeOffset| 应将工作分配发布到学生的日期。 |
+|allowLateSubmissions|布尔| 提交在截止日期之后是否可以提交。|
+|allowStudentsToAddResourcesToSubmission|布尔| 学生是否可以将资源添加到提交。 指示提交的唯一项目是否来自工作分配资源列表。 |
+|assignDateTime|DateTimeOffset| 应将分配发布给学生的日期。 |
 |assignTo|educationAssignmentRecipient| 获取工作分配的学生。|
-|displayName|String| 工作分配的名称。 |
-|dueDateTime|DateTimeOffset| 截止日期工作分配。 |
-|分级|educationAssignmentGradeType| 如何将评分工作分配。|
-|说明|itemBody| 要赋予以及工作分配学生的说明。 |
+|displayName|String| 分配的名称。 |
+|dueDateTime|DateTimeOffset| 日期工作分配到期。 |
+|评分|educationAssignmentGradeType| 将如何对工作分配进行评分。|
+|指令|itemBody| 向学生分配的说明以及工作分配。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[educationAssignment](../resources/educationassignment.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[educationAssignment](../resources/educationassignment.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

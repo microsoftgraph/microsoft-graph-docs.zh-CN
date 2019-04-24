@@ -5,11 +5,11 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 5ff8d61a2796edd615a66416b4f8f4d6d565909a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985446"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462471"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>PersonOrGroupColumn 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "27985446"
 | 属性名称              | 类型    | 说明
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | boolean | 指示是否可以从源中选择多个值。
-| **displayAs**              | string  | 如何显示有关所选个人或组的信息。 请参阅下文。
+| **displayAs**              | 字符串  | 如何显示有关所选个人或组的信息。 请参阅下文。
 | **chooseFromType**         | string  | 是否允许仅选择人员，或同时选择人员和组。 必须为 `peopleAndGroups` 或 `peopleOnly` 的其中一个。
 
 ## <a name="displayas-options"></a>DisplayAs 选项

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 60d7e822323c6051ed8f6b3e1c875133c0205a70
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795511"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32470368"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>获取 deviceCompliancePolicyAssignment
 

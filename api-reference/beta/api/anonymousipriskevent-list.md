@@ -1,15 +1,15 @@
 ---
-title: 列表 anonymousIpRiskEvents
+title: 列出 anonymousIpRiskEvents
 description: 检索 anonymousipriskevent 对象的列表。
 localization_priority: Normal
 ms.openlocfilehash: c2927ae470441d581a0879e97e395ca7720035f4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516810"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459260"
 ---
-# <a name="list-anonymousipriskevents"></a>列表 anonymousIpRiskEvents
+# <a name="list-anonymousipriskevents"></a>列出 anonymousIpRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ GET /anonymousIpRiskEvents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[anonymousIpRiskEvent](../resources/anonymousipriskevent.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[anonymousIpRiskEvent](../resources/anonymousipriskevent.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

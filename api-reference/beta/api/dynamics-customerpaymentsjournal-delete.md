@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 6309aac868d360867e4690e6efa71ebd64a5fbb3
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365547"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458353"
 ---
 # <a name="delete-customerpaymentjournals"></a>删除 customerPaymentJournals
 从 Dynamics 365 Business Central 中删除客户付款日记对象。

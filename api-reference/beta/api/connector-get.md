@@ -3,11 +3,11 @@ title: 获取连接器
 description: 检索连接器对象的属性。
 localization_priority: Normal
 ms.openlocfilehash: 00813ad399190c764ba6c2d8607fa4e97a32b094
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525407"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455784"
 ---
 # <a name="get-connector"></a>获取连接器
 
@@ -34,14 +34,14 @@ GET /connectorGroups/{id}/members/{id}
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer  必需|
+| Authorization  | 负载. 必需|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[连接器](../resources/connector.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[连接器](../resources/connector.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -1,21 +1,21 @@
 ---
 title: 更新音频路由组
-description: 源和接收器 audioRoutingGroup 的修改。
+description: 修改 audioRoutingGroup 的源和接收器。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 02a6c8142ec36becd2a06a16d81bff7d1ceff75b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524672"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461033"
 ---
 # <a name="update-audio-routing-group"></a>更新音频路由组
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-源和接收器[audioRoutingGroup](../resources/audioroutinggroup.md)的修改。
+修改[audioRoutingGroup](../resources/audioroutinggroup.md)的源和接收器。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "29524672"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| 应用程序     | JoinGroupCalls、InitiateGroupCalls 和所有调用 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,12 +43,12 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
-| 接收器 | String 集合 | AudioRoutingGroup 中的目标参与者。 |
+| 接收器 | String collection | audioRoutingGroup 中的目标参与者。 |
 | routingMode | String | 可取值为：`oneToOne`、`multicast`。 |
-| sources | String 集合 | 在 audioRoutingGroup 源参与者。 |
+| 源 | String collection | audioRoutingGroup 中的源参与者。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[audioRoutingGroup](../resources/audioroutinggroup.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[audioRoutingGroup](../resources/audioroutinggroup.md)对象。
 
 ## <a name="example"></a>示例
 

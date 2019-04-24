@@ -5,15 +5,13 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 1bdba9bb9da0ad0277ba73c4f2c28eec13072913
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461638"
 ---
 # <a name="delete-calendar"></a>删除日历
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除默认日历以外的日历。
 ## <a name="permissions"></a>权限
@@ -26,7 +24,8 @@ ms.locfileid: "29511567"
 |应用程序 | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->默认[calendarGroup](../resources/calendargroup.md)中的默认日历之外的用户的[日历](../resources/calendar.md)。
+<!-- { "blockType": "ignored" } -->
+默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)（非默认日历）。
 ```http
 DELETE /me/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}
@@ -39,7 +38,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 DELETE /me/calendarGroups/{id}/calendars/{id}
 DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称           |  类型    | 说明|
 |:---------------|:---------|:----------|
 | Authorization  |  string  | Bearer {token}。必需。 |
@@ -59,7 +58,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
   "name": "delete_calendar"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/calendar
+DELETE https://graph.microsoft.com/v1.0/me/calendar
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
@@ -73,15 +72,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete calendar",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/calendar-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

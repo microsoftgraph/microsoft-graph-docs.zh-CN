@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 597b49f65027ae2d01cbfddf741ff8ca08f83eb2
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796932"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460525"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>localSecurityOptionsAdministratorElevationPromptBehaviorType 枚举类型
 
@@ -24,11 +24,11 @@ LocalSecurityOptionsAdministratorElevationPromptBehavior 的可能值
 |:---|:---|:---|
 |notConfigured|0|未配置|
 |elevateWithoutPrompting|1|在不提示的情况下提升。|
-|promptForCredentialsOnTheSecureDesktop|双面|在安全桌面上提示凭据|
-|promptForConsentOnTheSecureDesktop|第三章|安全桌面上的同意提示|
-|promptForCredentials|4|提示输入凭据|
+|promptForCredentialsOnTheSecureDesktop|2 |在安全桌面上提示凭据|
+|promptForConsentOnTheSecureDesktop|3 |安全桌面上的同意提示|
+|promptForCredentials|4 |提示输入凭据|
 |promptForConsent|5|同意提示|
-|promptForConsentForNonWindowsBinaries|型|非 Windows 二进制文件的同意提示|
+|promptForConsentForNonWindowsBinaries|6 |非 Windows 二进制文件的同意提示|
 
 
 

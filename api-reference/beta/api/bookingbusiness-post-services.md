@@ -1,27 +1,27 @@
 ---
 title: 创建 bookingService
-description: 创建新的指定 bookingbusiness bookingService。
+description: 为指定的 bookingbusiness 创建新的 bookingService。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 50501ac1dd79b41b9e970f870964fffaace2f8da
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516110"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461771"
 ---
 # <a name="create-bookingservice"></a>创建 bookingService
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新[bookingService](../resources/bookingservice.md)的指定[bookingbusiness](../resources/bookingbusiness.md)。
+为指定的[bookingbusiness](../resources/bookingbusiness.md)创建新的[bookingService](../resources/bookingservice.md) 。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.ReadWrite.All Bookings.Manage.All   |
+|委派（工作或学校帐户） |  全部预订. 全部, 全部预订. 全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -37,11 +37,11 @@ POST /bookingBusinesses/{id}/services
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[bookingService](../resources/bookingservice.md)对象的 JSON 表示形式。
+在请求正文中, 提供[bookingService](../resources/bookingservice.md)对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201, Created`响应正文中的响应代码和[bookingService](../resources/bookingservice.md)对象。
+如果成功, 此方法在`201, Created`响应正文中返回响应代码和[bookingService](../resources/bookingservice.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -114,9 +114,9 @@ Content-type: application/json
     ]
 }
 ```
-在请求正文中，提供[bookingService](../resources/bookingservice.md)对象的 JSON 表示形式。
+在请求正文中, 提供[bookingService](../resources/bookingservice.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

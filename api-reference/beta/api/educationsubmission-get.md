@@ -1,30 +1,30 @@
 ---
 title: 获取 educationSubmission
-description: '检索特定提交。 一个提交对象，代表学生的工作分配。 提交表示与此工作关联资源。 仅提交分配给学生可以查看和修改提交。 教师具有所有提交到的完全访问权限。 '
+description: '检索特定的提交。 提交对象表示学生的工作分配。 与提交相关联的资源表示这一工作。 仅向其分配提交的学生可以查看和修改提交。 教师具有对所有提交的完全访问权限。 '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: d0542bec537b8317a46e98c215768f5228f9a07c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511952"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457647"
 ---
 # <a name="get-educationsubmission"></a>获取 educationSubmission
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索特定提交。 一个提交对象，代表学生的工作分配。 提交表示与此工作关联资源。 仅提交分配给学生可以查看和修改提交。 教师具有所有提交到的完全访问权限。 
+检索特定的提交。 提交对象表示学生的工作分配。 与提交相关联的资源表示这一工作。 仅向其分配提交的学生可以查看和修改提交。 教师具有对所有提交的完全访问权限。 
 
-薪等级和教师的反馈也是此对象的一部分。 仅教师可以添加或更改薪等级和反馈。 已发布工作分配之前，学生将不会看到薪等级或反馈。 基本权限不包括薪等级和反馈，但包含其他所有内容。
+教师的评分和反馈也是此对象的一部分。 只有教师可以添加或更改成绩和反馈。 在发布工作分配之前, 学生将看不到评分或反馈。 基本权限不包括评分和反馈, 但包括其他所有内容。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadBasic，EduAssignments.ReadWriteBasic，EduAssignments.Read EduAssignments.ReadWrite |
+|委派（工作或学校帐户） |  EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[educationSubmission](../resources/educationsubmission.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSubmission](../resources/educationsubmission.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

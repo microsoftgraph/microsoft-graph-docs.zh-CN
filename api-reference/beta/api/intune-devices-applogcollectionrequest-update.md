@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a924def5da43959478ebaf060bd46e51408a2293
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795763"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466089"
 ---
 # <a name="update-applogcollectionrequest"></a>更新 appLogCollectionRequest
 
@@ -52,8 +52,8 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 |:---|:---|:---|
 |id|String|唯一标识符。 这是 userId_DeviceId_AppId id。|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
-|errorMessage|String|在上载过程中出现的错误消息|
-|customLogFolders|String 集合|日志文件夹的列表。 |
+|errorMessage|字符串|在上载过程中出现的错误消息|
+|customLogFolders|String collection|日志文件夹的列表。 |
 |completedDateTime|DateTimeOffset|上传日志请求到达终端状态的时间|
 
 

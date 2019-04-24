@@ -1,21 +1,21 @@
 ---
 title: 'event: decline'
-description: 拒绝邀请用户日历中指定的事件。
+description: 拒绝用户日历中的指定事件邀请。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 27b29221c741c9aca9e42009d437b2559224d832
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522152"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464472"
 ---
 # <a name="event-decline"></a>event: decline
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-拒绝邀请用户[日历](../resources/calendar.md)中指定的[事件](../resources/event.md)。
+拒绝对用户[日历](../resources/calendar.md)中指定[事件](../resources/event.md)的邀请。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

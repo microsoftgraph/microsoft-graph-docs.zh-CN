@@ -1,38 +1,38 @@
 ---
-title: userSecurityState 资源类型
-description: 包含状态信息的用户帐户。
+title: logonip 资源类型
+description: 包含有关用户帐户的状态信息。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 9f451f2bc42500eee15bd59809c124a79186916f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27992054"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463808"
 ---
-# <a name="usersecuritystate-resource-type"></a>userSecurityState 资源类型
+# <a name="usersecuritystate-resource-type"></a>logonip 资源类型
 
-包含状态信息的用户帐户。
+包含有关用户帐户的状态信息。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|aadUserId|字符串|AAD 用户对象标识符 (GUID)-表示物理/多 account 用户实体。|
-|accountName|字符串|（没有 Active Directory 域和 DNS 域） 的用户帐户的帐户名 (也称为`mailNickName`)。|
-|domainName|String|NetBIOS/Active Directory 域的用户帐户 （即域 \ 帐户格式）。|
-|emailRole|emailRole|电子邮件相关的通知的用户帐户的电子邮件角色。 可取值为：`unknown`、`sender`、`recipient`。|
-|isVpn|Boolean|指示用户是否可以通过 VPN 登录。|
-|logonDateTime|DateTimeOffset|在登录所发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|logonId|字符串|用户登录 id。|
-|logonIp|字符串|登录请求源自的 IP 地址。|
-|logonLocation|字符串|此用户相关联的用户登录事件 （由 IP 地址映射） 位置。|
+|aadUserId|字符串|AAD 用户对象标识符 (GUID)-表示物理/多帐户用户实体。|
+|accountName|字符串|用户帐户的帐户名 (不包含 Active Directory 域或 DNS 域)-(也`mailNickName`称为)。|
+|domainName|String|用户帐户的 NetBIOS/Active Directory 域 (即, 域 \ 帐户格式)。|
+|emailRole|emailRole|对于与电子邮件相关的警报-用户帐户的电子邮件 "role"。 可取值为：`unknown`、`sender`、`recipient`。|
+|isVpn|布尔|指示用户是否通过 VPN 登录。|
+|logonDateTime|DateTimeOffset|登录发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|logonId|字符串|用户登录 ID。|
+|usersecuritystate|字符串|发出登录请求的 IP 地址。|
+|logonLocation|字符串|与用户登录事件关联的此用户的位置 (按 IP 地址映射)。|
 |logonType|logonType|用户登录的方法。 可取值为：`unknown`、`interactive`、`remoteInteractive`、`network`、`batch`、`service`。|
-|onPremisesSecurityIdentifier|字符串|Active Directory （本地） 安全标识符 (SID) 的用户。|
-|riskScore|字符串|带有提供程序生成/计算风险的用户帐户的分数。 建议值的范围为 0-1，这相当于百分比。|
-|userAccountType|userAccountSecurityType|用户帐户类型 （组成员身份），每 Windows 定义。 可取值为：`unknown`、`standard`、`power`、`administrator`。|
-|userPrincipalName|字符串|用户登录名-internet 格式: （用户帐户名） @ （用户帐户 DNS 域名）。|
+|onPremisesSecurityIdentifier|字符串|用户的 Active Directory (本地) 安全标识符 (SID)。|
+|riskScore|字符串|提供程序生成/计算的风险分数的用户帐户。 建议的值范围为 0-1, 这相当于一个百分比。|
+|userAccountType|userAccountSecurityType|每个 Windows 定义的用户帐户类型 (组成员身份)。 可取值为：`unknown`、`standard`、`power`、`administrator`。|
+|userPrincipalName|String|用户登录名-internet 格式: (用户帐户名称) @ (用户帐户 DNS 域名)。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

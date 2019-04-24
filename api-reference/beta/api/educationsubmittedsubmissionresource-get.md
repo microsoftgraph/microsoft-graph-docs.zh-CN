@@ -1,28 +1,28 @@
 ---
 title: 获取 educationSubmittedSubmissionResource
-description: 返回提交的资源。 这将供教师后学生已提交，并教师已发布提交之后将可供学生。  注意教师会保留在一些资源的备注。
+description: 返回已提交的资源。 这在学生提交后将对教师可用, 并将在教师发布提交后供学生使用。  请注意, 教师可以在某些资源中留下笔记。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: e529231e6503b67390b7248228af84dc59b5f633
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513275"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457478"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>获取 educationSubmittedSubmissionResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-返回提交的资源。 这将供教师后学生已提交，并教师已发布提交之后将可供学生。  注意教师会保留在一些资源的备注。
+返回已提交的资源。 这在学生提交后将对教师可用, 并将在教师发布提交后供学生使用。  请注意, 教师可以在某些资源中留下笔记。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadBasic，EduAssignments.ReadWriteBasic，EduAssignments.Read EduAssignments.ReadWrite  |
+|委派（工作或学校帐户） |  EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

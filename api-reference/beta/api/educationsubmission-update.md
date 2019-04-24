@@ -1,21 +1,21 @@
 ---
 title: 更新 educationsubmission
-description: 将薪等级和反馈添加到提交。 仅教师可以执行此操作。 请注意，基本权限不具有访问薪等级属性，因此无法写入薪等级或反馈。 此操作不会释放分数，以及向学生发送反馈。 教师必须采取的薪等级数据返回到学生显式释放操作。
+description: 将评分和反馈添加到提交。 只有教师才能执行此操作。 请注意, 基本权限不具有对年级属性的访问权限, 因此无法对年级或反馈进行写入。 此操作不会向学生发布评分和反馈。 教师必须采取显式释放操作, 才能将评分数据返回给学生。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 5c420d2c6e512d8fed0d713340fea482b0888ca1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526114"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464843"
 ---
 # <a name="update-educationsubmission"></a>更新 educationsubmission
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将薪等级和反馈添加到提交。 仅教师可以执行此操作。 请注意，基本权限不具有访问薪等级属性，因此无法写入薪等级或反馈。 此操作不会释放分数，以及向学生发送反馈。 教师必须采取的薪等级数据返回到学生显式释放操作。
+将评分和反馈添加到提交。 只有教师才能执行此操作。 请注意, 基本权限不具有对年级属性的访问权限, 因此无法对年级或反馈进行写入。 此操作不会向学生发布评分和反馈。 教师必须采取显式释放操作, 才能将评分数据返回给学生。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,11 +43,11 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|反馈|educationFeedback||
+|征求|educationFeedback||
 |grade|educationAssignmentGrade||
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[educationSubmission](../resources/educationsubmission.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[educationSubmission](../resources/educationsubmission.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

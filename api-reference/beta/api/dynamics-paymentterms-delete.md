@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 2ab608cc7e8f0e6ea17ea9911746fea52fc66a7a
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365785"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458689"
 ---
 # <a name="delete-paymentterms"></a>删除 paymentTerms
 从 Dynamics 365 Business Central 中删除付款条款对象。

@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f3c57f8784bf642df7944bc6295ebd4fadc0ba43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511154"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459279"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -44,11 +44,11 @@ PATCH /administrativeUnits/{id}
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|description|string|管理单元的说明。|
-|displayName|string|管理单元的显示名称。|
-|visibility|string|可见性管理单元。 如果，未设置默认值为"公共"。 可以设置为"HiddenMembership"，隐藏从非成员的成员身份。|
+|说明|string|管理单元的说明。|
+|displayName|字符串|管理单元的显示名称。|
+|visibility|string|管理单元的可见性。 如果未设置, 则默认值为 "public"。 可以设置为 "HiddenMembership", 这将隐藏非成员的成员资格。|
 
-由于**administrativeUnit**资源支持[扩展](/graph/extensibility-overview)，您可以使用`PATCH`操作添加、 更新或删除您自己的扩展现有**administrativeUnit**实例中的自定义属性中的特定于应用程序的数据。
+由于**administrativeUnit**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用该`PATCH`操作在现有**administrativeUnit**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 ## <a name="response"></a>响应
 

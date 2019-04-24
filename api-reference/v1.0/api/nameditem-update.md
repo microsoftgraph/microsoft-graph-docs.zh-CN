@@ -3,11 +3,11 @@ title: 更新 nameditem
 description: 更新 nameditem 对象的属性。
 localization_priority: Normal
 ms.openlocfilehash: 59919e030d06e4c84242396d61c68d601433cc7a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838708"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460879"
 ---
 # <a name="update-nameditem"></a>更新 nameditem
 
@@ -37,12 +37,12 @@ PATCH /workbook/names/{name}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|visible|boolean|指定对象是否可见。|
+|visible|布尔|指定对象是否可见。|
 |comment|   string  |表示与此名称相关联的注释。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookNamedItem](../resources/nameditem.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookNamedItem](../resources/nameditem.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

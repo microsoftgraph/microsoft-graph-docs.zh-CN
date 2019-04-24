@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 2549d8babd000a36f0ff3ccd38541ef3c1b2e466
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925817"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463668"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
@@ -34,18 +34,18 @@ ms.locfileid: "27925817"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String|该学校的 GUID。|
-|displayName| String| 学校的显示名称。| 
-|description| String | 学校描述。| 
-|status| string| 只读。 可能的值为： `inactive`， `active`， `expired`， `deleteable`。|
-|externalSource| educationExternalSource| 只读。  可能的值为： `sis`， `manual`， `unknownFutureValue`。|
-|principalEmail| String| 主体的电子邮件地址。|
-|principalName| String | 主体名称。|
-|externalPrincipalId| String | 同步系统中主体的 ID。 |
-|highestGrade|String| 教授的最高年级。 |
-|lowestGrade|String| 教授的最低年级。 |
-|schoolNumber|String| 学校编号。|
+|displayName| 字符串| 学校的显示名称。| 
+|description| 字符串 | 学校描述。| 
+|status| string| 只读。 可能的值为: `inactive`、 `active`、 `expired`、 `deleteable`。|
+|externalSource| educationExternalSource| 只读。  可能的值包括 `sis`、`manual`、`unknownFutureValue`。|
+|principalEmail| 字符串| 主体的电子邮件地址。|
+|principalName| 字符串 | 主体名称。|
+|externalPrincipalId| 字符串 | 同步系统中主体的 ID。 |
+|highestGrade|字符串| 教授的最高年级。 |
+|lowestGrade|字符串| 教授的最低年级。 |
+|schoolNumber|字符串| 学校编号。|
 |externalId|String| 同步系统中学校的 ID。 |
-|phone|String| 学校电话号码。 |
+|phone|字符串| 学校电话号码。 |
 |fax|String| 学校传真号码。 |
 |address|[physicalAddress](physicaladdress.md)| 学校地址。|
 |createdBy|[identitySet](identityset.md)|创建了学校的实体。|
@@ -54,7 +54,7 @@ ms.locfileid: "27925817"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) 集合| 在学校教授的课程。 可为 NULL。|
-|users|[educationUser](educationuser.md) 集合| 学校中的用户。 可为 NULL。|
+|users|[educationUser](educationuser.md) 集合| 学校中的用户。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

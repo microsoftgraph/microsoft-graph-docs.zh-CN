@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 88f07b46231a942098a157f00097393d60253982
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511896"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462405"
 ---
 # <a name="delete-bookingbusiness"></a>删除 bookingBusiness
 
@@ -21,7 +21,7 @@ ms.locfileid: "29511896"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.Manage.All   |
+|委派（工作或学校帐户） |  预订. 全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 

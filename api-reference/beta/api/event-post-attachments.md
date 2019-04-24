@@ -1,15 +1,15 @@
 ---
 title: Add attachment
-description: 使用此 API 附件添加到事件。 相那里
+description: 使用此 API 将 附件 添加到事件。 由于存在
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: ece15b579bae9e439eb9303c8b594631ce9b9b31
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525225"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464016"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -176,7 +176,7 @@ Content-length: 162
 
 ### <a name="request"></a>请求
 
-下面是请求的添加到现有的事件的引用附件的示例。
+下面的示例展示了向现有事件添加引用附件的请求。
 附件指向 OneDrive 上的文件夹。
 <!-- {
   "blockType": "request",
@@ -201,7 +201,7 @@ Content-length: 319
 
 ### <a name="response"></a>响应
 
-下面是响应的完整的一个示例。
+下面的示例展示了完整的响应。
 <!-- {
   "blockType": "response",
   "truncated": true,

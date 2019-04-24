@@ -1,21 +1,21 @@
 ---
 title: 删除联系人
-description: 删除联系人
+description: 删除联系人。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: be83bb8f655190d2da6aace13def579e371ef024
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514766"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455735"
 ---
 # <a name="delete-contact"></a>删除联系人
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除联系人
+删除联系人。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,8 @@ ms.locfileid: "29514766"
 |应用程序 | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->[联系人](../resources/contact.md)从用户的默认[contactFolder](../resources/contactfolder.md)。
+<!-- { "blockType": "ignored" } -->
+用户的默认[contactFolder](../resources/contactfolder.md)中的[联系人](../resources/contact.md)。
 ```http
 DELETE /me/contacts/{id}
 DELETE /users/{id | userPrincipalName}/contacts/{id}
@@ -36,7 +37,7 @@ DELETE /users/{id | userPrincipalName}/contacts/{id}
 DELETE /me/contactFolders/{id}/contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-[联系人](../resources/contact.md) [contactFolder](../resources/mailfolder.md)子文件夹中包含。  下面的示例演示一个级别的嵌套，但联系人可以位于子级的子级，依此类推。
+[contactFolder](../resources/contact.md) 的子文件夹中包含的 [联系人](../resources/mailfolder.md)。  下面的示例显示了一个嵌套级别，但联系人可能位于子级的子级中，诸如此类。
 ```http
 DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}

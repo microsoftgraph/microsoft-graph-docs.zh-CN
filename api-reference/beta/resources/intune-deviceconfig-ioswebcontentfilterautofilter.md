@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 91efedb47fff71a66d12e0d2c976d61fab2fa76c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777926"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460413"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>iosWebContentFilterAutoFilter 资源类型
 
@@ -25,8 +25,8 @@ ms.locfileid: "31777926"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|allowedUrls|String 集合|允许访问的其他 url|
-|blockedUrls|String 集合|为 access 阻止的其他 url|
+|allowedUrls|String collection|允许访问的其他 url|
+|blockedUrls|String collection|为 access 阻止的其他 url|
 
 ## <a name="relationships"></a>关系
 无

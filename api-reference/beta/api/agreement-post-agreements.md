@@ -3,11 +3,11 @@ title: 创建协议
 description: 创建新的协议对象。
 localization_priority: Normal
 ms.openlocfilehash: 5040651e032a4f5d0ef2340646f11eb51bfff5eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514423"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459223"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -31,28 +31,28 @@ POST /agreements
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | 字符串 | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[协议](../resources/agreement.md)对象的 JSON 表示形式。
+在请求正文中, 提供[协议](../resources/agreement.md)对象的 JSON 表示形式。
 
 下表显示创建用户时所需的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|协议中的显示名称。|
-|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否能够展开和查看接受之前协议。|
-|文件/文件名|String|协议文件 (例如，TOU.pdf) 的名称。|
-|文件/isDefault|Boolean|指示是否这是默认协议文件，是否无区域性匹配的客户端首选项。 如果没有文件被标记为默认，第一个将被视为默认。|
-|文件/语言|String|区域性格式 languagecode2-国家/地区/regioncode2 中的协议文件。 languagecode2 是小写字母双字母代码派生自 ISO 639-1。 国家/地区/regioncode2 派生自 ISO 3166，它通常包括两个大写字母或 BCP 47 语言标记 (例如，EN-US)。|
-|文件/fileData/数据|Binary|代表使用条款 PDF 文档的数据。|
+|displayName|String|协议的显示名称。|
+|isViewingBeforeAcceptanceRequired|布尔|指示用户是否必须在接受前展开并查看协议。|
+|files/fileName|字符串|协议文件的名称 (例如, TOU)。|
+|files/isDefault|布尔|指示是否为默认协议文件 (如果没有任何区域性与客户端首选项匹配)。 如果没有任何文件被标记为默认值, 则第一项将被视为默认值。|
+|文件/语言|字符串|协议文件的区域性 (格式为 languagecode2/regioncode2)。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166, 通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us)。|
+|files/fileData/data|Binary|表示使用 PDF 文档的术语的数据。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201, Created`响应正文中的响应代码和[协议](../resources/agreement.md)对象。
+如果成功, 此方法在响应`201, Created`正文中返回响应代码和[协议](../resources/agreement.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中，提供[协议](../resources/agreement.md)对象的 JSON 表示形式。
+在请求正文中, 提供[协议](../resources/agreement.md)对象的 JSON 表示形式。
 
 <!-- {
   "blockType": "request",

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: c65a742d617818b2d25b936cbd9ba8eb0fc63d83
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365540"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458304"
 ---
 # <a name="delete-journallines"></a>删除 journalLines
 从 Dynamics 365 Business Central 中删除日记行对象。

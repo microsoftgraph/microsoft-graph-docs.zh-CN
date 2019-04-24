@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: dba24dafef030ae53fc83fb06d1cc7b99ed71e81
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528800"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461624"
 ---
 # <a name="update-bookingbusiness"></a>更新 bookingbusiness
 
@@ -21,7 +21,7 @@ ms.locfileid: "29528800"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.ReadWrite.All Bookings.Manage.All   |
+|委派（工作或学校帐户） |  全部预订. 全部, 全部预订. 全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -40,21 +40,21 @@ PATCH /bookingBusinesses/<id>
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](../resources/physicaladdress.md)|业务街道地址。|
-|工作时间|[bookingWorkHours](../resources/bookingworkhours.md)集合|业务操作的时间点。|
-|businessType|String|业务类型。|
-|defaultCurrencyIso|String|企业中运行 Microsoft 预订的货币代码。|
-|displayName|String|接口与客户的业务名称。|
-|email|字符串|业务电子邮件地址。|
-|phone|String|业务电话号码。|
-|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|指定如何创建此业务预订。|
-|websiteUrl|String|业务网站的 URL。|
+|address|[physicalAddress](../resources/physicaladdress.md)|企业的街道地址。|
+|businessHours|[bookingWorkHours](../resources/bookingworkhours.md)集合|业务的运行时间。|
+|businessType|字符串|企业的类型。|
+|defaultCurrencyIso|字符串|业务在 Microsoft 预订中所运行的货币的代码。|
+|displayName|String|与客户进行交互的企业的名称。|
+|email|字符串|企业的电子邮件地址。|
+|phone|String|企业的电话号码。|
+|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|指定如何为此公司创建预订。|
+|webSiteUrl|字符串|业务网站的 URL。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例将更新的业务电子邮件地址和日程安排策略，更改为一个小时、 业务默认预定时间段和换预订最多 30 天。
+下面的示例更新业务电子邮件地址和日程安排策略, 将公司默认的预定时间段更改为一个小时, 并提前预订30天。
 <!-- {
   "blockType": "request",
   "name": "update_bookingbusiness"
@@ -75,7 +75,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true

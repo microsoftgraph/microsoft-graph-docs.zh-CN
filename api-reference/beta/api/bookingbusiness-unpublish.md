@@ -1,30 +1,30 @@
 ---
-title: bookingBusiness： 取消发布
-description: 对外部客户进行此业务计划页上不可用。
+title: 'bookingBusiness: 取消发布'
+description: 使此业务的计划页面对外部客户不可用。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 0b6c8122d37e5f6cdb1698b0d86295156e3481a0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517524"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461841"
 ---
-# <a name="bookingbusiness-unpublish"></a>bookingBusiness： 取消发布
+# <a name="bookingbusiness-unpublish"></a>bookingBusiness: 取消发布
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-对外部客户进行此业务计划页上不可用。
+使此业务的计划页面对外部客户不可用。
 
-**IsPublished**属性设置为 false，并**publicUrl**属性设为 null。
+将**isPublished**属性设置为 false, 并将**publicUrl**属性设置为 null。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.Manage.All   |
+|委派（工作或学校帐户） |  预订. 全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -45,7 +45,7 @@ POST /bookingBusinesses/{id}/unpublish
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-下面的示例展示了如何调用此 API。
+下面是一个如何调用此 API 的示例。
 ##### <a name="request"></a>请求
 下面展示了示例请求。
 <!-- {

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: df18ff1902dd750ef44311e2924a7e63e0ba0e58
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644075"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460954"
 ---
 # <a name="chartaxes-resource-type"></a>ChartAxes 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "29644075"
 |:---------------|:--------|:----------|
 |categoryAxis|[ChartAxis](chartaxis.md)|表示图表中的类别轴。只读。|
 |seriesAxis|[ChartAxis](chartaxis.md)|表示三维图表的系列轴。只读。|
-|valueAxis|[ChartAxis](chartaxis.md)|表示坐标轴中的数值轴。只读。|
+|值坐标轴|[ChartAxis](chartaxis.md)|表示坐标轴中的数值轴。只读。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a5dac286f2f722e7cf58b69e143111568fbddbe1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802644"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464927"
 ---
 # <a name="servicestarttype-enum-type"></a>serviceStartType 枚举类型
 
@@ -24,7 +24,7 @@ xbox service 启动类型的可能值
 |:---|:---|:---|
 |手动|0|手动服务启动类型 (默认)|
 |自动|1|自动服务启动类型|
-|禁用|双面|禁用服务启动类型|
+|禁用|2 |禁用服务启动类型|
 
 
 

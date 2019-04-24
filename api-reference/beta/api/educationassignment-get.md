@@ -1,21 +1,21 @@
 ---
 title: 获取 educationAssignment
-description: " 教师可以查看类中的所有工作分配。"
+description: " 教师可以查看课程中的所有工作分配。"
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: eba959dcaf2478f3c49fc0fbb434d7269e37e5ba
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508368"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458241"
 ---
 # <a name="get-educationassignment"></a>获取 educationAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-要获取的属性和工作分配的关系。 学生只能看到分配分配给它们。教师可以查看类中的所有工作分配。
+获取工作分配的属性和关系。 学生只能查看分配给他们的工作分配;教师可以查看课程中的所有工作分配。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -23,7 +23,7 @@ ms.locfileid: "29508368"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | EduAssignments.ReadBasic，EduAssignments.ReadWriteBasic，EduAssignments.Read EduAssignments.ReadWrite |
+|委派（工作或学校帐户） | EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。  | 
 
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignments/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[educationAssignment](../resources/educationassignment.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationAssignment](../resources/educationassignment.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

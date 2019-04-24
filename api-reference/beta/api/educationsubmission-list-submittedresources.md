@@ -1,28 +1,28 @@
 ---
-title: 列表 submittedResources
-description: 列出正式已提交的分级的资源。 学生负责提交无法重新分配不更改提交列表中。 这是真实的资源的包装，如果工作分配从复制此资源可包含回实际工作分配资源的指针。
+title: 列出 submittedResources
+description: 列出已提交进行评分的资源。 拥有提交的学生无法在不重新提交工作分配的情况下更改已提交的列表。 这是围绕真实资源的包装, 如果此资源是从工作分配复制的, 则可以包含指向实际工作分配资源的指针。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 021b167ae6991ce1ac799dcec4da21ac452fddb1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507773"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457669"
 ---
-# <a name="list-submittedresources"></a>列表 submittedResources
+# <a name="list-submittedresources"></a>列出 submittedResources
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出正式已提交的分级的资源。 学生负责提交无法重新分配不更改提交列表中。 这是真实的资源的包装，如果工作分配从复制此资源可包含回实际工作分配资源的指针。
+列出已提交进行评分的资源。 拥有提交的学生无法在不重新提交工作分配的情况下更改已提交的列表。 这是围绕真实资源的包装, 如果此资源是从工作分配复制的, 则可以包含指向实际工作分配资源的指针。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadBasic，EduAssignments.ReadWriteBasic，EduAssignments.Read EduAssignments.ReadWrite  |
+|委派（工作或学校帐户） |  EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[educationSubmissionResource](../resources/educationsubmissionresource.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[educationSubmissionResource](../resources/educationsubmissionresource.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
