@@ -5,23 +5,22 @@ ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
 ms.openlocfilehash: ed10b586ee55ccd32e81b03bdc6359ee13605877
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480164"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506522"
 ---
-# <a name="fieldvalueset-resource"></a><span data-ttu-id="c348a-102">FieldValueSet 资源</span><span class="sxs-lookup"><span data-stu-id="c348a-102">FieldValueSet resource</span></span>
+# <a name="fieldvalueset-resource"></a><span data-ttu-id="f324d-102">FieldValueSet 资源</span><span class="sxs-lookup"><span data-stu-id="f324d-102">FieldValueSet resource</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="f324d-103">表示 [listItem](listitem.md) 资源中的列值。</span><span class="sxs-lookup"><span data-stu-id="f324d-103">Represents the column values in a [listItem](listitem.md) resource.</span></span>
 
-<span data-ttu-id="c348a-103">表示 [listItem](listitem.md) 资源中的列值。</span><span class="sxs-lookup"><span data-stu-id="c348a-103">Represents the column values in a [listItem](listitem.md) resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f324d-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f324d-104">JSON representation</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c348a-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c348a-104">JSON representation</span></span>
-
-<span data-ttu-id="c348a-105">下面是 **fieldValueSet** 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c348a-105">Here is a JSON representation of a **fieldValueSet** resource.</span></span>
+<span data-ttu-id="f324d-105">下面是 **fieldValueSet** 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f324d-105">Here is a JSON representation of a **fieldValueSet** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-       "keyProperty": "id", "openType": true } -->
+      "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
+       "baseType": "microsoft.graph.entity", "openType": true } -->
 
 ```json
 {
@@ -33,34 +32,29 @@ ms.locfileid: "30480164"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="c348a-106">属性</span><span class="sxs-lookup"><span data-stu-id="c348a-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f324d-106">属性</span><span class="sxs-lookup"><span data-stu-id="f324d-106">Properties</span></span>
 
-<span data-ttu-id="c348a-107">**listItem** 中的每个用户可见字段作为 **fieldValueSet** 中的名称/值对返回。</span><span class="sxs-lookup"><span data-stu-id="c348a-107">Each user-visible field in the **listItem** is returned as a name-value pair in the **fieldValueSet**.</span></span>
-<span data-ttu-id="c348a-108">上面是针对包含**作者**、**名称**、**颜色**和**数量**这四列列表的一个示例。</span><span class="sxs-lookup"><span data-stu-id="c348a-108">The example above is for a list that contains four columns, **Author**, **Name**, **Color**, and **Quantity**.</span></span>
+<span data-ttu-id="f324d-107">**listItem** 中的每个用户可见字段作为 **fieldValueSet** 中的名称/值对返回。</span><span class="sxs-lookup"><span data-stu-id="f324d-107">Each user-visible field in the **listItem** is returned as a name-value pair in the **fieldValueSet**.</span></span>
+<span data-ttu-id="f324d-108">上面是针对包含**作者**、**名称**、**颜色**和**数量**这四列列表的一个示例。</span><span class="sxs-lookup"><span data-stu-id="f324d-108">The example above is for a list that contains four columns, **Author**, **Name**, **Color**, and **Quantity**.</span></span>
 
-<span data-ttu-id="c348a-109">默认情况下不返回查找字段（如上述 `Author`）。</span><span class="sxs-lookup"><span data-stu-id="c348a-109">Lookup fields (like `Author` above) are not returned by default.</span></span>
-<span data-ttu-id="c348a-110">相反，服务器会返回一个引用查找中锁定的 listItem 的“LookupId”字段（如上述 `AuthorLookupId`）。</span><span class="sxs-lookup"><span data-stu-id="c348a-110">Instead, the server returns a 'LookupId' field (like `AuthorLookupId` above) referencing the listItem targeted in the lookup.</span></span>
-<span data-ttu-id="c348a-111">“LookupId”字段的名称是原始字段名称，后跟 `LookupId`。</span><span class="sxs-lookup"><span data-stu-id="c348a-111">The name of the 'LookupId' field is the original field name followed by `LookupId`.</span></span>
+<span data-ttu-id="f324d-109">默认情况下不返回查找字段（如上述 `Author`）。</span><span class="sxs-lookup"><span data-stu-id="f324d-109">Lookup fields (like `Author` above) are not returned by default.</span></span>
+<span data-ttu-id="f324d-110">相反，服务器会返回一个引用查找中锁定的 listItem 的“LookupId”字段（如上述 `AuthorLookupId`）。</span><span class="sxs-lookup"><span data-stu-id="f324d-110">Instead, the server returns a 'LookupId' field (like `AuthorLookupId` above) referencing the listItem targeted in the lookup.</span></span>
+<span data-ttu-id="f324d-111">“LookupId”字段的名称是原始字段名称，后跟 `LookupId`。</span><span class="sxs-lookup"><span data-stu-id="f324d-111">The name of the 'LookupId' field is the original field name followed by `LookupId`.</span></span>
 
-<span data-ttu-id="c348a-112">单个查询中可能请求最多 12 个查找字段。</span><span class="sxs-lookup"><span data-stu-id="c348a-112">Up to 12 lookup fields may be requested in a single query.</span></span>
-<span data-ttu-id="c348a-113">如果请求包含带所需字段的 `select` 语句，服务器将返回查找值。</span><span class="sxs-lookup"><span data-stu-id="c348a-113">The server will return lookup values if your request includes a `select` statement with the fields you need.</span></span>
-<span data-ttu-id="c348a-114">示例：</span><span class="sxs-lookup"><span data-stu-id="c348a-114">Example:</span></span>
+<span data-ttu-id="f324d-112">单个查询中可能请求最多 12 个查找字段。</span><span class="sxs-lookup"><span data-stu-id="f324d-112">Up to 12 lookup fields may be requested in a single query.</span></span>
+<span data-ttu-id="f324d-113">如果请求包含带所需字段的 `select` 语句，服务器将返回查找值。</span><span class="sxs-lookup"><span data-stu-id="f324d-113">The server will return lookup values if your request includes a `select` statement with the fields you need.</span></span>
+<span data-ttu-id="f324d-114">示例：</span><span class="sxs-lookup"><span data-stu-id="f324d-114">Example:</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Author,BookTitle,PageCount)
 ```
 
-<span data-ttu-id="c348a-115">你可以在单个查询中请求最多 12 个查找字段以及任意数量的常规字段。</span><span class="sxs-lookup"><span data-stu-id="c348a-115">You may request up to 12 lookup fields in a single query, plus any number of regular fields.</span></span>
+<span data-ttu-id="f324d-115">你可以在单个查询中请求最多 12 个查找字段以及任意数量的常规字段。</span><span class="sxs-lookup"><span data-stu-id="f324d-115">You may request up to 12 lookup fields in a single query, plus any number of regular fields.</span></span>
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/FieldValueSet",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/fieldvalueset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Resources/FieldValueSet"
+} -->
