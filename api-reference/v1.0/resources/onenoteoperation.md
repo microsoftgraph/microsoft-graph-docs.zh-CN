@@ -1,28 +1,31 @@
 ---
 title: onenoteOperation 资源类型
-description: 某些长时间运行的 OneNote 操作的状态。
+description: 特定的长时间运行的 OneNote 操作的状态。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: eaab313e9399e6e8724d5096b7ac29ec315889ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977463"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462660"
 ---
-# <a name="onenoteoperation-resource-type"></a><span data-ttu-id="1fcaa-103">onenoteOperation 资源类型</span><span class="sxs-lookup"><span data-stu-id="1fcaa-103">onenoteOperation resource type</span></span>
+# <a name="onenoteoperation-resource-type"></a><span data-ttu-id="c6563-103">onenoteOperation 资源类型</span><span class="sxs-lookup"><span data-stu-id="c6563-103">onenoteOperation resource type</span></span>
 
-<span data-ttu-id="1fcaa-104">某些长时间运行的 OneNote 操作的状态。</span><span class="sxs-lookup"><span data-stu-id="1fcaa-104">The status of certain long-running OneNote operations.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a><span data-ttu-id="1fcaa-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1fcaa-105">JSON representation</span></span>
+<span data-ttu-id="c6563-104">特定的长时间运行的 OneNote 操作的状态。</span><span class="sxs-lookup"><span data-stu-id="c6563-104">The status of certain long-running OneNote operations.</span></span>
 
-<span data-ttu-id="1fcaa-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1fcaa-106">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c6563-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c6563-105">JSON representation</span></span>
 
-<!--{
+<span data-ttu-id="c6563-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c6563-106">Here is a JSON representation of the resource.</span></span>
+
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.operation",
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 
@@ -39,34 +42,39 @@ ms.locfileid: "27977463"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="1fcaa-107">属性</span><span class="sxs-lookup"><span data-stu-id="1fcaa-107">Properties</span></span>
-| <span data-ttu-id="1fcaa-108">属性</span><span class="sxs-lookup"><span data-stu-id="1fcaa-108">Property</span></span>     | <span data-ttu-id="1fcaa-109">类型</span><span class="sxs-lookup"><span data-stu-id="1fcaa-109">Type</span></span>   |<span data-ttu-id="1fcaa-110">说明</span><span class="sxs-lookup"><span data-stu-id="1fcaa-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c6563-107">属性</span><span class="sxs-lookup"><span data-stu-id="c6563-107">Properties</span></span>
+| <span data-ttu-id="c6563-108">属性</span><span class="sxs-lookup"><span data-stu-id="c6563-108">Property</span></span>     | <span data-ttu-id="c6563-109">类型</span><span class="sxs-lookup"><span data-stu-id="c6563-109">Type</span></span>   |<span data-ttu-id="c6563-110">说明</span><span class="sxs-lookup"><span data-stu-id="c6563-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1fcaa-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="1fcaa-111">createdDateTime</span></span>| <span data-ttu-id="1fcaa-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1fcaa-112">DateTimeOffset</span></span> |<span data-ttu-id="1fcaa-113">操作的开始时间。</span><span class="sxs-lookup"><span data-stu-id="1fcaa-113">The start time of the operation.</span></span>|
-|<span data-ttu-id="1fcaa-114">error</span><span class="sxs-lookup"><span data-stu-id="1fcaa-114">error</span></span>|[<span data-ttu-id="1fcaa-115">onenoteOperationError</span><span class="sxs-lookup"><span data-stu-id="1fcaa-115">onenoteOperationError</span></span>](onenoteoperationerror.md)|<span data-ttu-id="1fcaa-116">操作返回的错误。</span><span class="sxs-lookup"><span data-stu-id="1fcaa-116">The error returned by the operation.</span></span>|
-|<span data-ttu-id="1fcaa-117">id</span><span class="sxs-lookup"><span data-stu-id="1fcaa-117">id</span></span>|<span data-ttu-id="1fcaa-118">string</span><span class="sxs-lookup"><span data-stu-id="1fcaa-118">string</span></span>|<span data-ttu-id="1fcaa-119">操作 ID。只读。</span><span class="sxs-lookup"><span data-stu-id="1fcaa-119">The operation id. Read-only.</span></span>|
-|<span data-ttu-id="1fcaa-120">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="1fcaa-120">lastActionDateTime</span></span>| <span data-ttu-id="1fcaa-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1fcaa-121">DateTimeOffset</span></span> |<span data-ttu-id="1fcaa-122">操作的上次活动时间。</span><span class="sxs-lookup"><span data-stu-id="1fcaa-122">The time of the last action of the operation.</span></span>|
-|<span data-ttu-id="1fcaa-123">resourceId</span><span class="sxs-lookup"><span data-stu-id="1fcaa-123">resourceId</span></span>|<span data-ttu-id="1fcaa-124">string</span><span class="sxs-lookup"><span data-stu-id="1fcaa-124">string</span></span>|<span data-ttu-id="1fcaa-125">资源 ID。</span><span class="sxs-lookup"><span data-stu-id="1fcaa-125">The resource id.</span></span>|
-|<span data-ttu-id="1fcaa-126">resourceLocation</span><span class="sxs-lookup"><span data-stu-id="1fcaa-126">resourceLocation</span></span>|<span data-ttu-id="1fcaa-127">string</span><span class="sxs-lookup"><span data-stu-id="1fcaa-127">string</span></span>|<span data-ttu-id="1fcaa-p101">对象的资源 URI。例如，复制页面或分区的资源 URI。</span><span class="sxs-lookup"><span data-stu-id="1fcaa-p101">The resource URI for the object. For example, the resource URI for a copied page or section.</span></span> |
-|<span data-ttu-id="1fcaa-130">status</span><span class="sxs-lookup"><span data-stu-id="1fcaa-130">status</span></span>|<span data-ttu-id="1fcaa-131">string</span><span class="sxs-lookup"><span data-stu-id="1fcaa-131">string</span></span>|<span data-ttu-id="1fcaa-132">操作的当前状态：`notstarted`、`running`、`completed`、`failed`</span><span class="sxs-lookup"><span data-stu-id="1fcaa-132">The current status of the operation: `notstarted`, `running`, `completed`, `failed`</span></span> |
-|<span data-ttu-id="1fcaa-133">percentComplete</span><span class="sxs-lookup"><span data-stu-id="1fcaa-133">percentComplete</span></span>|<span data-ttu-id="1fcaa-134">string</span><span class="sxs-lookup"><span data-stu-id="1fcaa-134">string</span></span>|<span data-ttu-id="1fcaa-135">操作仍处于 `running` 状态时操作的完成百分比</span><span class="sxs-lookup"><span data-stu-id="1fcaa-135">The operation percent complete if the operation is still in `running` status</span></span>
+|<span data-ttu-id="c6563-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="c6563-111">createdDateTime</span></span>| <span data-ttu-id="c6563-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c6563-112">DateTimeOffset</span></span> |<span data-ttu-id="c6563-113">操作的开始时间。</span><span class="sxs-lookup"><span data-stu-id="c6563-113">The start time of the operation.</span></span>|
+|<span data-ttu-id="c6563-114">error</span><span class="sxs-lookup"><span data-stu-id="c6563-114">error</span></span>|[<span data-ttu-id="c6563-115">onenoteOperationError</span><span class="sxs-lookup"><span data-stu-id="c6563-115">onenoteOperationError</span></span>](onenoteoperationerror.md)|<span data-ttu-id="c6563-116">操作返回的错误。</span><span class="sxs-lookup"><span data-stu-id="c6563-116">The error returned by the operation.</span></span>|
+|<span data-ttu-id="c6563-117">id</span><span class="sxs-lookup"><span data-stu-id="c6563-117">id</span></span>|<span data-ttu-id="c6563-118">string</span><span class="sxs-lookup"><span data-stu-id="c6563-118">string</span></span>|<span data-ttu-id="c6563-119">操作 id。只读。</span><span class="sxs-lookup"><span data-stu-id="c6563-119">The operation id. Read-only.</span></span>|
+|<span data-ttu-id="c6563-120">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="c6563-120">lastActionDateTime</span></span>| <span data-ttu-id="c6563-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c6563-121">DateTimeOffset</span></span> |<span data-ttu-id="c6563-122">操作的上一操作的时间。</span><span class="sxs-lookup"><span data-stu-id="c6563-122">The time of the last action of the operation.</span></span>|
+|<span data-ttu-id="c6563-123">resourceId</span><span class="sxs-lookup"><span data-stu-id="c6563-123">resourceId</span></span>|<span data-ttu-id="c6563-124">字符串</span><span class="sxs-lookup"><span data-stu-id="c6563-124">string</span></span>|<span data-ttu-id="c6563-125">资源 id。</span><span class="sxs-lookup"><span data-stu-id="c6563-125">The resource id.</span></span>|
+|<span data-ttu-id="c6563-126">resourceLocation</span><span class="sxs-lookup"><span data-stu-id="c6563-126">resourceLocation</span></span>|<span data-ttu-id="c6563-127">字符串</span><span class="sxs-lookup"><span data-stu-id="c6563-127">string</span></span>|<span data-ttu-id="c6563-128">对象的资源 URI。</span><span class="sxs-lookup"><span data-stu-id="c6563-128">The resource URI for the object.</span></span> <span data-ttu-id="c6563-129">例如, 复制的页或节的资源 URI。</span><span class="sxs-lookup"><span data-stu-id="c6563-129">For example, the resource URI for a copied page or section.</span></span> |
+|<span data-ttu-id="c6563-130">status</span><span class="sxs-lookup"><span data-stu-id="c6563-130">status</span></span>|<span data-ttu-id="c6563-131">string</span><span class="sxs-lookup"><span data-stu-id="c6563-131">string</span></span>|<span data-ttu-id="c6563-132">操作的当前状态: `notstarted`、 `running`、、 `completed``failed`</span><span class="sxs-lookup"><span data-stu-id="c6563-132">The current status of the operation: `notstarted`, `running`, `completed`, `failed`</span></span> |
+|<span data-ttu-id="c6563-133">percentComplete</span><span class="sxs-lookup"><span data-stu-id="c6563-133">percentComplete</span></span>|<span data-ttu-id="c6563-134">字符串</span><span class="sxs-lookup"><span data-stu-id="c6563-134">string</span></span>|<span data-ttu-id="c6563-135">如果操作仍处于`running`状态, 则操作完成百分比为</span><span class="sxs-lookup"><span data-stu-id="c6563-135">The operation percent complete if the operation is still in `running` status</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="1fcaa-136">关系</span><span class="sxs-lookup"><span data-stu-id="1fcaa-136">Relationships</span></span>
-<span data-ttu-id="1fcaa-137">无</span><span class="sxs-lookup"><span data-stu-id="1fcaa-137">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="c6563-136">关系</span><span class="sxs-lookup"><span data-stu-id="c6563-136">Relationships</span></span>
+<span data-ttu-id="c6563-137">无</span><span class="sxs-lookup"><span data-stu-id="c6563-137">None</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="1fcaa-138">方法</span><span class="sxs-lookup"><span data-stu-id="1fcaa-138">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="c6563-138">方法</span><span class="sxs-lookup"><span data-stu-id="c6563-138">Methods</span></span>
 
-| <span data-ttu-id="1fcaa-139">方法</span><span class="sxs-lookup"><span data-stu-id="1fcaa-139">Method</span></span>           | <span data-ttu-id="1fcaa-140">返回类型</span><span class="sxs-lookup"><span data-stu-id="1fcaa-140">Return Type</span></span>    |<span data-ttu-id="1fcaa-141">说明</span><span class="sxs-lookup"><span data-stu-id="1fcaa-141">Description</span></span>|
+| <span data-ttu-id="c6563-139">方法</span><span class="sxs-lookup"><span data-stu-id="c6563-139">Method</span></span>           | <span data-ttu-id="c6563-140">返回类型</span><span class="sxs-lookup"><span data-stu-id="c6563-140">Return Type</span></span>    |<span data-ttu-id="c6563-141">说明</span><span class="sxs-lookup"><span data-stu-id="c6563-141">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="1fcaa-142">Get operation</span><span class="sxs-lookup"><span data-stu-id="1fcaa-142">Get operation</span></span>](../api/onenoteoperation-get.md) | [<span data-ttu-id="1fcaa-143">onenoteOperation</span><span class="sxs-lookup"><span data-stu-id="1fcaa-143">onenoteOperation</span></span>](onenoteoperation.md) |<span data-ttu-id="1fcaa-144">获取操作状态。</span><span class="sxs-lookup"><span data-stu-id="1fcaa-144">Get the status of the operation.</span></span> |
+|[<span data-ttu-id="c6563-142">Get 操作</span><span class="sxs-lookup"><span data-stu-id="c6563-142">Get operation</span></span>](../api/onenoteoperation-get.md) | [<span data-ttu-id="c6563-143">onenoteOperation</span><span class="sxs-lookup"><span data-stu-id="c6563-143">onenoteOperation</span></span>](onenoteoperation.md) |<span data-ttu-id="c6563-144">获取操作的状态。</span><span class="sxs-lookup"><span data-stu-id="c6563-144">Get the status of the operation.</span></span> |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "onenoteOperation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onenoteoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

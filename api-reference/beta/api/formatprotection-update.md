@@ -3,52 +3,52 @@ title: 更新 formatProtection
 description: 更新 formatprotection 对象的属性。
 localization_priority: Normal
 ms.openlocfilehash: f1ee62cf4c483c821d80de42dc8645f9cda2bdeb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520527"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463959"
 ---
-# <a name="update-formatprotection"></a><span data-ttu-id="e90ab-103">更新 formatProtection</span><span class="sxs-lookup"><span data-stu-id="e90ab-103">Update formatprotection</span></span>
+# <a name="update-formatprotection"></a><span data-ttu-id="bb6e7-103">更新 formatProtection</span><span class="sxs-lookup"><span data-stu-id="bb6e7-103">Update formatprotection</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e90ab-104">更新 formatprotection 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="e90ab-104">Update the properties of formatprotection object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e90ab-105">权限</span><span class="sxs-lookup"><span data-stu-id="e90ab-105">Permissions</span></span>
-<span data-ttu-id="e90ab-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e90ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bb6e7-104">更新 formatprotection 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="bb6e7-104">Update the properties of formatprotection object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="bb6e7-105">权限</span><span class="sxs-lookup"><span data-stu-id="bb6e7-105">Permissions</span></span>
+<span data-ttu-id="bb6e7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bb6e7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e90ab-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e90ab-108">Permission type</span></span>      | <span data-ttu-id="e90ab-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e90ab-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bb6e7-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="bb6e7-108">Permission type</span></span>      | <span data-ttu-id="bb6e7-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bb6e7-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e90ab-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e90ab-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e90ab-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e90ab-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e90ab-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e90ab-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e90ab-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e90ab-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="e90ab-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="e90ab-114">Application</span></span> | <span data-ttu-id="e90ab-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="e90ab-115">Not supported.</span></span> |
+|<span data-ttu-id="bb6e7-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bb6e7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="bb6e7-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bb6e7-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="bb6e7-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bb6e7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bb6e7-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bb6e7-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="bb6e7-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="bb6e7-114">Application</span></span> | <span data-ttu-id="bb6e7-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="bb6e7-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e90ab-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e90ab-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bb6e7-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bb6e7-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/protection
 PATCH /workbook/worksheets/{id|name}/range(<address>)/format/protection
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="e90ab-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="e90ab-117">Optional request headers</span></span>
-| <span data-ttu-id="e90ab-118">名称</span><span class="sxs-lookup"><span data-stu-id="e90ab-118">Name</span></span>       | <span data-ttu-id="e90ab-119">说明</span><span class="sxs-lookup"><span data-stu-id="e90ab-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="bb6e7-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="bb6e7-117">Optional request headers</span></span>
+| <span data-ttu-id="bb6e7-118">名称</span><span class="sxs-lookup"><span data-stu-id="bb6e7-118">Name</span></span>       | <span data-ttu-id="bb6e7-119">说明</span><span class="sxs-lookup"><span data-stu-id="bb6e7-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="e90ab-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e90ab-120">Authorization</span></span>  | <span data-ttu-id="e90ab-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e90ab-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bb6e7-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="bb6e7-120">Authorization</span></span>  | <span data-ttu-id="bb6e7-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="bb6e7-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e90ab-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="e90ab-123">Request body</span></span>
-<span data-ttu-id="e90ab-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="e90ab-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bb6e7-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="bb6e7-123">Request body</span></span>
+<span data-ttu-id="bb6e7-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="bb6e7-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="e90ab-127">属性</span><span class="sxs-lookup"><span data-stu-id="e90ab-127">Property</span></span>     | <span data-ttu-id="e90ab-128">类型</span><span class="sxs-lookup"><span data-stu-id="e90ab-128">Type</span></span>   |<span data-ttu-id="e90ab-129">说明</span><span class="sxs-lookup"><span data-stu-id="e90ab-129">Description</span></span>|
+| <span data-ttu-id="bb6e7-127">属性</span><span class="sxs-lookup"><span data-stu-id="bb6e7-127">Property</span></span>     | <span data-ttu-id="bb6e7-128">类型</span><span class="sxs-lookup"><span data-stu-id="bb6e7-128">Type</span></span>   |<span data-ttu-id="bb6e7-129">说明</span><span class="sxs-lookup"><span data-stu-id="bb6e7-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e90ab-130">formulaHidden</span><span class="sxs-lookup"><span data-stu-id="e90ab-130">formulaHidden</span></span>|<span data-ttu-id="e90ab-131">布尔</span><span class="sxs-lookup"><span data-stu-id="e90ab-131">boolean</span></span>|<span data-ttu-id="e90ab-p104">表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。</span><span class="sxs-lookup"><span data-stu-id="e90ab-p104">Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.</span></span>|
-|<span data-ttu-id="e90ab-134">已锁定</span><span class="sxs-lookup"><span data-stu-id="e90ab-134">locked</span></span>|<span data-ttu-id="e90ab-135">布尔</span><span class="sxs-lookup"><span data-stu-id="e90ab-135">boolean</span></span>|<span data-ttu-id="e90ab-p105">指示 Excel 是否锁定对象中的单元格。指示整个区域不具有统一锁定设置的空值。</span><span class="sxs-lookup"><span data-stu-id="e90ab-p105">Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.</span></span>|
+|<span data-ttu-id="bb6e7-130">formulaHidden</span><span class="sxs-lookup"><span data-stu-id="bb6e7-130">formulaHidden</span></span>|<span data-ttu-id="bb6e7-131">布尔</span><span class="sxs-lookup"><span data-stu-id="bb6e7-131">boolean</span></span>|<span data-ttu-id="bb6e7-p104">表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。</span><span class="sxs-lookup"><span data-stu-id="bb6e7-p104">Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.</span></span>|
+|<span data-ttu-id="bb6e7-134">已锁定</span><span class="sxs-lookup"><span data-stu-id="bb6e7-134">locked</span></span>|<span data-ttu-id="bb6e7-135">boolean</span><span class="sxs-lookup"><span data-stu-id="bb6e7-135">boolean</span></span>|<span data-ttu-id="bb6e7-p105">指示 Excel 是否锁定对象中的单元格。指示整个区域不具有统一锁定设置的空值。</span><span class="sxs-lookup"><span data-stu-id="bb6e7-p105">Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e90ab-138">响应</span><span class="sxs-lookup"><span data-stu-id="e90ab-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bb6e7-138">响应</span><span class="sxs-lookup"><span data-stu-id="bb6e7-138">Response</span></span>
 
-<span data-ttu-id="e90ab-139">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [FormatProtection](../resources/formatprotection.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="e90ab-139">If successful, this method returns a `200 OK` response code and updated [FormatProtection](../resources/formatprotection.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="e90ab-140">示例</span><span class="sxs-lookup"><span data-stu-id="e90ab-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e90ab-141">请求</span><span class="sxs-lookup"><span data-stu-id="e90ab-141">Request</span></span>
-<span data-ttu-id="e90ab-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e90ab-142">Here is an example of the request.</span></span>
+<span data-ttu-id="bb6e7-139">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [FormatProtection](../resources/formatprotection.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="bb6e7-139">If successful, this method returns a `200 OK` response code and updated [FormatProtection](../resources/formatprotection.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="bb6e7-140">示例</span><span class="sxs-lookup"><span data-stu-id="bb6e7-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bb6e7-141">请求</span><span class="sxs-lookup"><span data-stu-id="bb6e7-141">Request</span></span>
+<span data-ttu-id="bb6e7-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="bb6e7-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_formatprotection"
@@ -63,8 +63,8 @@ Content-length: 45
   "formulaHidden": true
 }
 ```
-##### <a name="response"></a><span data-ttu-id="e90ab-143">响应</span><span class="sxs-lookup"><span data-stu-id="e90ab-143">Response</span></span>
-<span data-ttu-id="e90ab-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e90ab-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="bb6e7-143">响应</span><span class="sxs-lookup"><span data-stu-id="bb6e7-143">Response</span></span>
+<span data-ttu-id="bb6e7-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="bb6e7-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

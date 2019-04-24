@@ -5,28 +5,28 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f387750fcd06bc2520479b511c24b4ac7ce333dd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961838"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585263"
 ---
-# <a name="create-remoteassistancepartner"></a><span data-ttu-id="b5bd1-103">创建 remoteAssistancePartner</span><span class="sxs-lookup"><span data-stu-id="b5bd1-103">Create remoteAssistancePartner</span></span>
+# <a name="create-remoteassistancepartner"></a><span data-ttu-id="7815f-103">创建 remoteAssistancePartner</span><span class="sxs-lookup"><span data-stu-id="7815f-103">Create remoteAssistancePartner</span></span>
 
-> <span data-ttu-id="b5bd1-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7815f-104">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="7815f-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b5bd1-105">创建新的 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-105">Create a new [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.</span></span>
+<span data-ttu-id="7815f-105">创建新的 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7815f-105">Create a new [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="b5bd1-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="b5bd1-106">Prerequisites</span></span>
-<span data-ttu-id="b5bd1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7815f-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="7815f-106">Prerequisites</span></span>
+<span data-ttu-id="7815f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7815f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b5bd1-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="b5bd1-109">Permission type</span></span>|<span data-ttu-id="b5bd1-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="b5bd1-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="7815f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="7815f-109">Permission type</span></span>|<span data-ttu-id="7815f-110">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="7815f-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="b5bd1-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b5bd1-111">Delegated (work or school account)</span></span>|<span data-ttu-id="b5bd1-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5bd1-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="b5bd1-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b5bd1-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b5bd1-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-114">Not supported.</span></span>|
-|<span data-ttu-id="b5bd1-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="b5bd1-115">Application</span></span>|<span data-ttu-id="b5bd1-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-116">Not supported.</span></span>|
+|<span data-ttu-id="7815f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7815f-111">Delegated (work or school account)</span></span>|<span data-ttu-id="7815f-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7815f-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="7815f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7815f-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7815f-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="7815f-114">Not supported.</span></span>|
+|<span data-ttu-id="7815f-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="7815f-115">Application</span></span>|<span data-ttu-id="7815f-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="7815f-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="b5bd1-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b5bd1-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7815f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7815f-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,34 +35,34 @@ ms.locfileid: "30961838"
 POST /deviceManagement/remoteAssistancePartners
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b5bd1-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="b5bd1-118">Request headers</span></span>
-|<span data-ttu-id="b5bd1-119">标头</span><span class="sxs-lookup"><span data-stu-id="b5bd1-119">Header</span></span>|<span data-ttu-id="b5bd1-120">值</span><span class="sxs-lookup"><span data-stu-id="b5bd1-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7815f-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="7815f-118">Request headers</span></span>
+|<span data-ttu-id="7815f-119">标头</span><span class="sxs-lookup"><span data-stu-id="7815f-119">Header</span></span>|<span data-ttu-id="7815f-120">值</span><span class="sxs-lookup"><span data-stu-id="7815f-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="b5bd1-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b5bd1-121">Authorization</span></span>|<span data-ttu-id="b5bd1-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="b5bd1-123">接受</span><span class="sxs-lookup"><span data-stu-id="b5bd1-123">Accept</span></span>|<span data-ttu-id="b5bd1-124">application/json</span><span class="sxs-lookup"><span data-stu-id="b5bd1-124">application/json</span></span>|
+|<span data-ttu-id="7815f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="7815f-121">Authorization</span></span>|<span data-ttu-id="7815f-122">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="7815f-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="7815f-123">接受</span><span class="sxs-lookup"><span data-stu-id="7815f-123">Accept</span></span>|<span data-ttu-id="7815f-124">application/json</span><span class="sxs-lookup"><span data-stu-id="7815f-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b5bd1-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="b5bd1-125">Request body</span></span>
-<span data-ttu-id="b5bd1-126">在请求正文中，提供 remoteAssistancePartner 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-126">In the request body, supply a JSON representation for the remoteAssistancePartner object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7815f-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="7815f-125">Request body</span></span>
+<span data-ttu-id="7815f-126">在请求正文中，提供 remoteAssistancePartner 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7815f-126">In the request body, supply a JSON representation for the remoteAssistancePartner object.</span></span>
 
-<span data-ttu-id="b5bd1-127">下表显示创建 remoteAssistancePartner 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-127">The following table shows the properties that are required when you create the remoteAssistancePartner.</span></span>
+<span data-ttu-id="7815f-127">下表显示创建 remoteAssistancePartner 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="7815f-127">The following table shows the properties that are required when you create the remoteAssistancePartner.</span></span>
 
-|<span data-ttu-id="b5bd1-128">属性</span><span class="sxs-lookup"><span data-stu-id="b5bd1-128">Property</span></span>|<span data-ttu-id="b5bd1-129">类型</span><span class="sxs-lookup"><span data-stu-id="b5bd1-129">Type</span></span>|<span data-ttu-id="b5bd1-130">说明</span><span class="sxs-lookup"><span data-stu-id="b5bd1-130">Description</span></span>|
+|<span data-ttu-id="7815f-128">属性</span><span class="sxs-lookup"><span data-stu-id="7815f-128">Property</span></span>|<span data-ttu-id="7815f-129">类型</span><span class="sxs-lookup"><span data-stu-id="7815f-129">Type</span></span>|<span data-ttu-id="7815f-130">说明</span><span class="sxs-lookup"><span data-stu-id="7815f-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b5bd1-131">id</span><span class="sxs-lookup"><span data-stu-id="b5bd1-131">id</span></span>|<span data-ttu-id="b5bd1-132">String</span><span class="sxs-lookup"><span data-stu-id="b5bd1-132">String</span></span>|<span data-ttu-id="b5bd1-133">合作伙伴的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-133">Unique identifier of the partner.</span></span>|
-|<span data-ttu-id="b5bd1-134">displayName</span><span class="sxs-lookup"><span data-stu-id="b5bd1-134">displayName</span></span>|<span data-ttu-id="b5bd1-135">字符串</span><span class="sxs-lookup"><span data-stu-id="b5bd1-135">String</span></span>|<span data-ttu-id="b5bd1-136">合作伙伴的显示名称。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-136">Display name of the partner.</span></span>|
-|<span data-ttu-id="b5bd1-137">onboardingUrl</span><span class="sxs-lookup"><span data-stu-id="b5bd1-137">onboardingUrl</span></span>|<span data-ttu-id="b5bd1-138">String</span><span class="sxs-lookup"><span data-stu-id="b5bd1-138">String</span></span>|<span data-ttu-id="b5bd1-139">合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-139">URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.</span></span>|
-|<span data-ttu-id="b5bd1-140">onboardingStatus</span><span class="sxs-lookup"><span data-stu-id="b5bd1-140">onboardingStatus</span></span>|[<span data-ttu-id="b5bd1-141">remoteAssistanceOnboardingStatus</span><span class="sxs-lookup"><span data-stu-id="b5bd1-141">remoteAssistanceOnboardingStatus</span></span>](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|<span data-ttu-id="b5bd1-142">待定.</span><span class="sxs-lookup"><span data-stu-id="b5bd1-142">TBD.</span></span> <span data-ttu-id="b5bd1-143">可取值为：`notOnboarded`、`onboarding`、`onboarded`。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-143">Possible values are: `notOnboarded`, `onboarding`, `onboarded`.</span></span>|
-|<span data-ttu-id="b5bd1-144">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="b5bd1-144">lastConnectionDateTime</span></span>|<span data-ttu-id="b5bd1-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b5bd1-145">DateTimeOffset</span></span>|<span data-ttu-id="b5bd1-146">TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-146">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
+|<span data-ttu-id="7815f-131">id</span><span class="sxs-lookup"><span data-stu-id="7815f-131">id</span></span>|<span data-ttu-id="7815f-132">String</span><span class="sxs-lookup"><span data-stu-id="7815f-132">String</span></span>|<span data-ttu-id="7815f-133">合作伙伴的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="7815f-133">Unique identifier of the partner.</span></span>|
+|<span data-ttu-id="7815f-134">displayName</span><span class="sxs-lookup"><span data-stu-id="7815f-134">displayName</span></span>|<span data-ttu-id="7815f-135">字符串</span><span class="sxs-lookup"><span data-stu-id="7815f-135">String</span></span>|<span data-ttu-id="7815f-136">合作伙伴的显示名称。</span><span class="sxs-lookup"><span data-stu-id="7815f-136">Display name of the partner.</span></span>|
+|<span data-ttu-id="7815f-137">onboardingUrl</span><span class="sxs-lookup"><span data-stu-id="7815f-137">onboardingUrl</span></span>|<span data-ttu-id="7815f-138">String</span><span class="sxs-lookup"><span data-stu-id="7815f-138">String</span></span>|<span data-ttu-id="7815f-139">合作伙伴的载入门户的 URL，其中管理员可以配置其远程协助服务。</span><span class="sxs-lookup"><span data-stu-id="7815f-139">URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.</span></span>|
+|<span data-ttu-id="7815f-140">onboardingStatus</span><span class="sxs-lookup"><span data-stu-id="7815f-140">onboardingStatus</span></span>|[<span data-ttu-id="7815f-141">remoteAssistanceOnboardingStatus</span><span class="sxs-lookup"><span data-stu-id="7815f-141">remoteAssistanceOnboardingStatus</span></span>](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|<span data-ttu-id="7815f-142">待定.</span><span class="sxs-lookup"><span data-stu-id="7815f-142">TBD.</span></span> <span data-ttu-id="7815f-143">可取值为：`notOnboarded`、`onboarding`、`onboarded`。</span><span class="sxs-lookup"><span data-stu-id="7815f-143">Possible values are: `notOnboarded`, `onboarding`, `onboarded`.</span></span>|
+|<span data-ttu-id="7815f-144">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="7815f-144">lastConnectionDateTime</span></span>|<span data-ttu-id="7815f-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7815f-145">DateTimeOffset</span></span>|<span data-ttu-id="7815f-146">TEM 合作伙伴发送到 Intune 的上一个请求的时间戳。</span><span class="sxs-lookup"><span data-stu-id="7815f-146">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="b5bd1-147">响应</span><span class="sxs-lookup"><span data-stu-id="b5bd1-147">Response</span></span>
-<span data-ttu-id="b5bd1-148">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-148">If successful, this method returns a `201 Created` response code and a [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7815f-147">响应</span><span class="sxs-lookup"><span data-stu-id="7815f-147">Response</span></span>
+<span data-ttu-id="7815f-148">如果成功，此方法将在响应正文中返回 `201 Created` 响应代码和 [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="7815f-148">If successful, this method returns a `201 Created` response code and a [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b5bd1-149">示例</span><span class="sxs-lookup"><span data-stu-id="b5bd1-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7815f-149">示例</span><span class="sxs-lookup"><span data-stu-id="7815f-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b5bd1-150">请求</span><span class="sxs-lookup"><span data-stu-id="b5bd1-150">Request</span></span>
-<span data-ttu-id="b5bd1-151">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-151">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="7815f-150">请求</span><span class="sxs-lookup"><span data-stu-id="7815f-150">Request</span></span>
+<span data-ttu-id="7815f-151">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7815f-151">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners
 Content-type: application/json
@@ -77,8 +77,8 @@ Content-length: 266
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="b5bd1-152">响应</span><span class="sxs-lookup"><span data-stu-id="b5bd1-152">Response</span></span>
-<span data-ttu-id="b5bd1-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b5bd1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7815f-152">响应</span><span class="sxs-lookup"><span data-stu-id="7815f-152">Response</span></span>
+<span data-ttu-id="7815f-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="7815f-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

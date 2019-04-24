@@ -1,36 +1,36 @@
 ---
 title: educationOrganization 资源类型
-description: '用于模型之间的教育扇区中的不同组织类型通用性抽象实体。  '
+description: '用于对教育部门中不同组织类型之间的通用性进行建模的抽象实体。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 122717952781cd8effe415fb01b07ec9bf71143d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507472"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507178"
 ---
-# <a name="educationorganization-resource-type"></a><span data-ttu-id="ca4d8-103">educationOrganization 资源类型</span><span class="sxs-lookup"><span data-stu-id="ca4d8-103">educationOrganization resource type</span></span>
+# <a name="educationorganization-resource-type"></a><span data-ttu-id="c1654-103">educationOrganization 资源类型</span><span class="sxs-lookup"><span data-stu-id="c1654-103">educationOrganization resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ca4d8-104">用于模型之间的教育扇区中的不同组织类型通用性抽象实体。</span><span class="sxs-lookup"><span data-stu-id="ca4d8-104">Abstract entity used to model the commonality between different organization types within the education sector.</span></span>  
+<span data-ttu-id="c1654-104">用于对教育部门中不同组织类型之间的通用性进行建模的抽象实体。</span><span class="sxs-lookup"><span data-stu-id="c1654-104">Abstract entity used to model the commonality between different organization types within the education sector.</span></span>  
 
-## <a name="properties"></a><span data-ttu-id="ca4d8-105">属性</span><span class="sxs-lookup"><span data-stu-id="ca4d8-105">Properties</span></span>
-| <span data-ttu-id="ca4d8-106">属性</span><span class="sxs-lookup"><span data-stu-id="ca4d8-106">Property</span></span>     | <span data-ttu-id="ca4d8-107">类型</span><span class="sxs-lookup"><span data-stu-id="ca4d8-107">Type</span></span>   |<span data-ttu-id="ca4d8-108">说明</span><span class="sxs-lookup"><span data-stu-id="ca4d8-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c1654-105">属性</span><span class="sxs-lookup"><span data-stu-id="c1654-105">Properties</span></span>
+| <span data-ttu-id="c1654-106">属性</span><span class="sxs-lookup"><span data-stu-id="c1654-106">Property</span></span>     | <span data-ttu-id="c1654-107">类型</span><span class="sxs-lookup"><span data-stu-id="c1654-107">Type</span></span>   |<span data-ttu-id="c1654-108">说明</span><span class="sxs-lookup"><span data-stu-id="c1654-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ca4d8-109">说明</span><span class="sxs-lookup"><span data-stu-id="ca4d8-109">description</span></span>|<span data-ttu-id="ca4d8-110">String</span><span class="sxs-lookup"><span data-stu-id="ca4d8-110">String</span></span>| <span data-ttu-id="ca4d8-111">组织说明。</span><span class="sxs-lookup"><span data-stu-id="ca4d8-111">Organization description.</span></span>|
-|<span data-ttu-id="ca4d8-112">displayName</span><span class="sxs-lookup"><span data-stu-id="ca4d8-112">displayName</span></span>|<span data-ttu-id="ca4d8-113">String</span><span class="sxs-lookup"><span data-stu-id="ca4d8-113">String</span></span>| <span data-ttu-id="ca4d8-114">组织的显示名称。</span><span class="sxs-lookup"><span data-stu-id="ca4d8-114">Organization display name.</span></span>|
-|<span data-ttu-id="ca4d8-115">externalSource</span><span class="sxs-lookup"><span data-stu-id="ca4d8-115">externalSource</span></span>|<span data-ttu-id="ca4d8-116">string</span><span class="sxs-lookup"><span data-stu-id="ca4d8-116">string</span></span>| <span data-ttu-id="ca4d8-117">从在其中创建此组织的源。</span><span class="sxs-lookup"><span data-stu-id="ca4d8-117">Source where this organization was created from.</span></span> <span data-ttu-id="ca4d8-118">可取值为：`sis`、`manual`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="ca4d8-118">Possible values are: `sis`, `manual`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="c1654-109">说明</span><span class="sxs-lookup"><span data-stu-id="c1654-109">description</span></span>|<span data-ttu-id="c1654-110">字符串</span><span class="sxs-lookup"><span data-stu-id="c1654-110">String</span></span>| <span data-ttu-id="c1654-111">组织说明。</span><span class="sxs-lookup"><span data-stu-id="c1654-111">Organization description.</span></span>|
+|<span data-ttu-id="c1654-112">displayName</span><span class="sxs-lookup"><span data-stu-id="c1654-112">displayName</span></span>|<span data-ttu-id="c1654-113">String</span><span class="sxs-lookup"><span data-stu-id="c1654-113">String</span></span>| <span data-ttu-id="c1654-114">组织显示名称。</span><span class="sxs-lookup"><span data-stu-id="c1654-114">Organization display name.</span></span>|
+|<span data-ttu-id="c1654-115">externalSource</span><span class="sxs-lookup"><span data-stu-id="c1654-115">externalSource</span></span>|<span data-ttu-id="c1654-116">string</span><span class="sxs-lookup"><span data-stu-id="c1654-116">string</span></span>| <span data-ttu-id="c1654-117">从中创建此组织的源。</span><span class="sxs-lookup"><span data-stu-id="c1654-117">Source where this organization was created from.</span></span> <span data-ttu-id="c1654-118">可取值为：`sis`、`manual`、`unknownFutureValue`。</span><span class="sxs-lookup"><span data-stu-id="c1654-118">Possible values are: `sis`, `manual`, `unknownFutureValue`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ca4d8-119">Relationships</span><span class="sxs-lookup"><span data-stu-id="ca4d8-119">Relationships</span></span>
-<span data-ttu-id="ca4d8-120">无。</span><span class="sxs-lookup"><span data-stu-id="ca4d8-120">None.</span></span>
+## <a name="relationships"></a><span data-ttu-id="c1654-119">Relationships</span><span class="sxs-lookup"><span data-stu-id="c1654-119">Relationships</span></span>
+<span data-ttu-id="c1654-120">无。</span><span class="sxs-lookup"><span data-stu-id="c1654-120">None.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="ca4d8-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ca4d8-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c1654-121">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c1654-121">JSON representation</span></span>
 
-<span data-ttu-id="ca4d8-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ca4d8-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c1654-122">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c1654-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

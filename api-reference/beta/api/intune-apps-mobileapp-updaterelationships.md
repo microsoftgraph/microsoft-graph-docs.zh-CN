@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 35e0be0efc1496aa92534a5bd36bab6eacafd143
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809186"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32489903"
 ---
-# <a name="updaterelationships-action"></a><span data-ttu-id="c689c-103">updateRelationships 操作</span><span class="sxs-lookup"><span data-stu-id="c689c-103">updateRelationships action</span></span>
+# <a name="updaterelationships-action"></a><span data-ttu-id="a0273-103">updateRelationships 操作</span><span class="sxs-lookup"><span data-stu-id="a0273-103">updateRelationships action</span></span>
 
-> <span data-ttu-id="c689c-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c689c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="a0273-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="a0273-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c689c-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c689c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a0273-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a0273-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c689c-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="c689c-106">Not yet documented</span></span>
+<span data-ttu-id="a0273-106">尚未记录</span><span class="sxs-lookup"><span data-stu-id="a0273-106">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="c689c-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="c689c-107">Prerequisites</span></span>
-<span data-ttu-id="c689c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c689c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a0273-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="a0273-107">Prerequisites</span></span>
+<span data-ttu-id="a0273-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a0273-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c689c-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="c689c-110">Permission type</span></span>|<span data-ttu-id="c689c-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="c689c-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="a0273-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a0273-110">Permission type</span></span>|<span data-ttu-id="a0273-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a0273-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c689c-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c689c-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c689c-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c689c-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="c689c-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c689c-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c689c-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c689c-115">Not supported.</span></span>|
-|<span data-ttu-id="c689c-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="c689c-116">Application</span></span>|<span data-ttu-id="c689c-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="c689c-117">Not supported.</span></span>|
+|<span data-ttu-id="a0273-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a0273-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a0273-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0273-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="a0273-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a0273-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a0273-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a0273-115">Not supported.</span></span>|
+|<span data-ttu-id="a0273-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="a0273-116">Application</span></span>|<span data-ttu-id="a0273-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="a0273-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c689c-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c689c-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a0273-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a0273-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,30 +39,30 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app/updateRelationships
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c689c-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="c689c-119">Request headers</span></span>
-|<span data-ttu-id="c689c-120">标头</span><span class="sxs-lookup"><span data-stu-id="c689c-120">Header</span></span>|<span data-ttu-id="c689c-121">值</span><span class="sxs-lookup"><span data-stu-id="c689c-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a0273-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="a0273-119">Request headers</span></span>
+|<span data-ttu-id="a0273-120">标头</span><span class="sxs-lookup"><span data-stu-id="a0273-120">Header</span></span>|<span data-ttu-id="a0273-121">值</span><span class="sxs-lookup"><span data-stu-id="a0273-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="c689c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c689c-122">Authorization</span></span>|<span data-ttu-id="c689c-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="c689c-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="c689c-124">接受</span><span class="sxs-lookup"><span data-stu-id="c689c-124">Accept</span></span>|<span data-ttu-id="c689c-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c689c-125">application/json</span></span>|
+|<span data-ttu-id="a0273-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a0273-122">Authorization</span></span>|<span data-ttu-id="a0273-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a0273-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="a0273-124">接受</span><span class="sxs-lookup"><span data-stu-id="a0273-124">Accept</span></span>|<span data-ttu-id="a0273-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a0273-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c689c-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c689c-126">Request body</span></span>
-<span data-ttu-id="c689c-127">在请求正文中，提供参数的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c689c-127">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a0273-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a0273-126">Request body</span></span>
+<span data-ttu-id="a0273-127">在请求正文中，提供参数的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a0273-127">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="c689c-128">下表显示了可用于此操作的参数。</span><span class="sxs-lookup"><span data-stu-id="c689c-128">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="a0273-128">下表显示了可用于此操作的参数。</span><span class="sxs-lookup"><span data-stu-id="a0273-128">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="c689c-129">属性</span><span class="sxs-lookup"><span data-stu-id="c689c-129">Property</span></span>|<span data-ttu-id="c689c-130">类型</span><span class="sxs-lookup"><span data-stu-id="c689c-130">Type</span></span>|<span data-ttu-id="c689c-131">说明</span><span class="sxs-lookup"><span data-stu-id="c689c-131">Description</span></span>|
+|<span data-ttu-id="a0273-129">属性</span><span class="sxs-lookup"><span data-stu-id="a0273-129">Property</span></span>|<span data-ttu-id="a0273-130">类型</span><span class="sxs-lookup"><span data-stu-id="a0273-130">Type</span></span>|<span data-ttu-id="a0273-131">说明</span><span class="sxs-lookup"><span data-stu-id="a0273-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c689c-132">相互</span><span class="sxs-lookup"><span data-stu-id="c689c-132">relationships</span></span>|<span data-ttu-id="c689c-133">[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)集合</span><span class="sxs-lookup"><span data-stu-id="c689c-133">[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection</span></span>|<span data-ttu-id="c689c-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="c689c-134">Not yet documented</span></span>|
+|<span data-ttu-id="a0273-132">相互</span><span class="sxs-lookup"><span data-stu-id="a0273-132">relationships</span></span>|<span data-ttu-id="a0273-133">[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)集合</span><span class="sxs-lookup"><span data-stu-id="a0273-133">[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection</span></span>|<span data-ttu-id="a0273-134">尚未记录</span><span class="sxs-lookup"><span data-stu-id="a0273-134">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="c689c-135">响应</span><span class="sxs-lookup"><span data-stu-id="c689c-135">Response</span></span>
-<span data-ttu-id="c689c-136">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="c689c-136">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="a0273-135">响应</span><span class="sxs-lookup"><span data-stu-id="a0273-135">Response</span></span>
+<span data-ttu-id="a0273-136">如果成功，此操作返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="a0273-136">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c689c-137">示例</span><span class="sxs-lookup"><span data-stu-id="c689c-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a0273-137">示例</span><span class="sxs-lookup"><span data-stu-id="a0273-137">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c689c-138">请求</span><span class="sxs-lookup"><span data-stu-id="c689c-138">Request</span></span>
-<span data-ttu-id="c689c-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c689c-139">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="a0273-138">请求</span><span class="sxs-lookup"><span data-stu-id="a0273-138">Request</span></span>
+<span data-ttu-id="a0273-139">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a0273-139">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/updateRelationships
 
@@ -81,8 +81,8 @@ Content-length: 256
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="c689c-140">响应</span><span class="sxs-lookup"><span data-stu-id="c689c-140">Response</span></span>
-<span data-ttu-id="c689c-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c689c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="a0273-140">响应</span><span class="sxs-lookup"><span data-stu-id="a0273-140">Response</span></span>
+<span data-ttu-id="a0273-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a0273-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -1,28 +1,28 @@
 ---
 title: educationAssignmentGradeType 资源类型
-description: 代表将如何评分工作分配。 **Assignments.grading**属性中使用此选项。
+description: 表示将对工作分配进行评分的方式。 这在**工作分配. 评分**属性中使用。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 68809d88574f0ba01d6e2fafac2f60ea4229112c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523314"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507278"
 ---
-# <a name="educationassignmentgradetype-resource-type"></a><span data-ttu-id="b20e0-104">educationAssignmentGradeType 资源类型</span><span class="sxs-lookup"><span data-stu-id="b20e0-104">educationAssignmentGradeType resource type</span></span>
+# <a name="educationassignmentgradetype-resource-type"></a><span data-ttu-id="2f2ff-104">educationAssignmentGradeType 资源类型</span><span class="sxs-lookup"><span data-stu-id="2f2ff-104">educationAssignmentGradeType resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b20e0-105">代表将如何评分工作分配。</span><span class="sxs-lookup"><span data-stu-id="b20e0-105">Represents how an assignment will be graded.</span></span> <span data-ttu-id="b20e0-106">**Assignments.grading**属性中使用此选项。</span><span class="sxs-lookup"><span data-stu-id="b20e0-106">This is used within the **assignments.grading** property.</span></span>
+<span data-ttu-id="2f2ff-105">表示将对工作分配进行评分的方式。</span><span class="sxs-lookup"><span data-stu-id="2f2ff-105">Represents how an assignment will be graded.</span></span> <span data-ttu-id="2f2ff-106">这在**工作分配. 评分**属性中使用。</span><span class="sxs-lookup"><span data-stu-id="2f2ff-106">This is used within the **assignments.grading** property.</span></span>
 
-<span data-ttu-id="b20e0-107">此超类别不能直接在工作分配属性中。</span><span class="sxs-lookup"><span data-stu-id="b20e0-107">This superclass can not be used directly in the assignment property.</span></span> <span data-ttu-id="b20e0-108">存在允许薪等级分配到多个不同的方式。</span><span class="sxs-lookup"><span data-stu-id="b20e0-108">It exists to allow for multiple different ways to grade assignments.</span></span>
+<span data-ttu-id="2f2ff-107">此超类不能直接在工作分配属性中使用。</span><span class="sxs-lookup"><span data-stu-id="2f2ff-107">This superclass can not be used directly in the assignment property.</span></span> <span data-ttu-id="2f2ff-108">它的用途是允许多种不同的工作分配评分。</span><span class="sxs-lookup"><span data-stu-id="2f2ff-108">It exists to allow for multiple different ways to grade assignments.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="b20e0-109">属性</span><span class="sxs-lookup"><span data-stu-id="b20e0-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="2f2ff-109">属性</span><span class="sxs-lookup"><span data-stu-id="2f2ff-109">Properties</span></span>
 
-<span data-ttu-id="b20e0-110">无。</span><span class="sxs-lookup"><span data-stu-id="b20e0-110">None.</span></span>
+<span data-ttu-id="2f2ff-110">无。</span><span class="sxs-lookup"><span data-stu-id="2f2ff-110">None.</span></span>
 
 <!-- {
   "blockType": "resource",
