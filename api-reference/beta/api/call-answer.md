@@ -1,60 +1,60 @@
 ---
-title: 呼叫： 答案
+title: '呼叫: 应答'
 description: 应答传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c5a93121e5f01939ad28808f7055fcad98a734ff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530046"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461315"
 ---
-# <a name="call-answer"></a><span data-ttu-id="0e686-103">呼叫： 答案</span><span class="sxs-lookup"><span data-stu-id="0e686-103">call: answer</span></span>
+# <a name="call-answer"></a><span data-ttu-id="8ee6c-103">呼叫: 应答</span><span class="sxs-lookup"><span data-stu-id="8ee6c-103">call: answer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0e686-104">应答传入呼叫。</span><span class="sxs-lookup"><span data-stu-id="0e686-104">Answer an incoming call.</span></span>
+<span data-ttu-id="8ee6c-104">应答传入呼叫。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-104">Answer an incoming call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0e686-105">权限</span><span class="sxs-lookup"><span data-stu-id="0e686-105">Permissions</span></span>
-<span data-ttu-id="0e686-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0e686-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8ee6c-105">权限</span><span class="sxs-lookup"><span data-stu-id="8ee6c-105">Permissions</span></span>
+<span data-ttu-id="8ee6c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="0e686-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="0e686-108">Permission type</span></span> | <span data-ttu-id="0e686-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0e686-109">Permissions (from least to most privileged)</span></span>                 |
+| <span data-ttu-id="8ee6c-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="8ee6c-108">Permission type</span></span> | <span data-ttu-id="8ee6c-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8ee6c-109">Permissions (from least to most privileged)</span></span>                 |
 | :-------------- | :-----------------------------------------------------------|
-| <span data-ttu-id="0e686-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0e686-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="0e686-111">不支持</span><span class="sxs-lookup"><span data-stu-id="0e686-111">Not Supported</span></span>                        |
-| <span data-ttu-id="0e686-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0e686-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0e686-113">不支持</span><span class="sxs-lookup"><span data-stu-id="0e686-113">Not Supported</span></span>                        |
-| <span data-ttu-id="0e686-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="0e686-114">Application</span></span>     | <span data-ttu-id="0e686-115">无</span><span class="sxs-lookup"><span data-stu-id="0e686-115">None</span></span>                                                        |
+| <span data-ttu-id="8ee6c-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8ee6c-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="8ee6c-111">不支持</span><span class="sxs-lookup"><span data-stu-id="8ee6c-111">Not Supported</span></span>                        |
+| <span data-ttu-id="8ee6c-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8ee6c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8ee6c-113">不支持</span><span class="sxs-lookup"><span data-stu-id="8ee6c-113">Not Supported</span></span>                        |
+| <span data-ttu-id="8ee6c-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="8ee6c-114">Application</span></span>     | <span data-ttu-id="8ee6c-115">无</span><span class="sxs-lookup"><span data-stu-id="8ee6c-115">None</span></span>                                                        |
 
-## <a name="http-request"></a><span data-ttu-id="0e686-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0e686-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8ee6c-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8ee6c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/answer
 POST /applications/{id}/calls/{id}/answer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0e686-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="0e686-117">Request headers</span></span>
-| <span data-ttu-id="0e686-118">名称</span><span class="sxs-lookup"><span data-stu-id="0e686-118">Name</span></span>          | <span data-ttu-id="0e686-119">说明</span><span class="sxs-lookup"><span data-stu-id="0e686-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="8ee6c-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="8ee6c-117">Request headers</span></span>
+| <span data-ttu-id="8ee6c-118">名称</span><span class="sxs-lookup"><span data-stu-id="8ee6c-118">Name</span></span>          | <span data-ttu-id="8ee6c-119">说明</span><span class="sxs-lookup"><span data-stu-id="8ee6c-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="0e686-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="0e686-120">Authorization</span></span> | <span data-ttu-id="0e686-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0e686-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8ee6c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8ee6c-120">Authorization</span></span> | <span data-ttu-id="8ee6c-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0e686-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="0e686-123">Request body</span></span>
-<span data-ttu-id="0e686-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="0e686-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8ee6c-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="8ee6c-123">Request body</span></span>
+<span data-ttu-id="8ee6c-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="0e686-125">参数</span><span class="sxs-lookup"><span data-stu-id="0e686-125">Parameter</span></span>        | <span data-ttu-id="0e686-126">类型</span><span class="sxs-lookup"><span data-stu-id="0e686-126">Type</span></span>                                     |<span data-ttu-id="0e686-127">说明</span><span class="sxs-lookup"><span data-stu-id="0e686-127">Description</span></span>                                                                                                                                    |
+| <span data-ttu-id="8ee6c-125">参数</span><span class="sxs-lookup"><span data-stu-id="8ee6c-125">Parameter</span></span>        | <span data-ttu-id="8ee6c-126">类型</span><span class="sxs-lookup"><span data-stu-id="8ee6c-126">Type</span></span>                                     |<span data-ttu-id="8ee6c-127">说明</span><span class="sxs-lookup"><span data-stu-id="8ee6c-127">Description</span></span>                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="0e686-128">callbackUri</span><span class="sxs-lookup"><span data-stu-id="0e686-128">callbackUri</span></span>       |<span data-ttu-id="0e686-129">String</span><span class="sxs-lookup"><span data-stu-id="0e686-129">String</span></span>                                    |<span data-ttu-id="0e686-130">将在其传递回调回调或订阅 ID。</span><span class="sxs-lookup"><span data-stu-id="0e686-130">The callback or subscription ID on which callbacks will be delivered.</span></span> <span data-ttu-id="0e686-131">必需。</span><span class="sxs-lookup"><span data-stu-id="0e686-131">(Required)</span></span>                                                               |
-|<span data-ttu-id="0e686-132">acceptedModalities</span><span class="sxs-lookup"><span data-stu-id="0e686-132">acceptedModalities</span></span>|<span data-ttu-id="0e686-133">String 集合</span><span class="sxs-lookup"><span data-stu-id="0e686-133">String collection</span></span>                         |<span data-ttu-id="0e686-134">列表接受形式。</span><span class="sxs-lookup"><span data-stu-id="0e686-134">The list of accept modalities.</span></span> <span data-ttu-id="0e686-135">可能的值是： `unknown`， `audio`， `video`， `screenSharing`， `videoBasedScreenSharing`， `data`。</span><span class="sxs-lookup"><span data-stu-id="0e686-135">Possible value are: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`.</span></span> <span data-ttu-id="0e686-136">必需。</span><span class="sxs-lookup"><span data-stu-id="0e686-136">(Required)</span></span> |
-|<span data-ttu-id="0e686-137">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="0e686-137">mediaConfig</span></span>       |[<span data-ttu-id="0e686-138">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="0e686-138">mediaConfig</span></span>](../resources/mediaconfig.md)|<span data-ttu-id="0e686-139">媒体配置。</span><span class="sxs-lookup"><span data-stu-id="0e686-139">The media configuration.</span></span> <span data-ttu-id="0e686-140">必需。</span><span class="sxs-lookup"><span data-stu-id="0e686-140">(Required)</span></span>                                                                                                            |
+|<span data-ttu-id="8ee6c-128">callbackUri</span><span class="sxs-lookup"><span data-stu-id="8ee6c-128">callbackUri</span></span>       |<span data-ttu-id="8ee6c-129">String</span><span class="sxs-lookup"><span data-stu-id="8ee6c-129">String</span></span>                                    |<span data-ttu-id="8ee6c-130">用于传递回拨的回拨或订阅 ID。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-130">The callback or subscription ID on which callbacks will be delivered.</span></span> <span data-ttu-id="8ee6c-131">需要</span><span class="sxs-lookup"><span data-stu-id="8ee6c-131">(Required)</span></span>                                                               |
+|<span data-ttu-id="8ee6c-132">acceptedModalities</span><span class="sxs-lookup"><span data-stu-id="8ee6c-132">acceptedModalities</span></span>|<span data-ttu-id="8ee6c-133">String collection</span><span class="sxs-lookup"><span data-stu-id="8ee6c-133">String collection</span></span>                         |<span data-ttu-id="8ee6c-134">接受形式的列表。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-134">The list of accept modalities.</span></span> <span data-ttu-id="8ee6c-135">可能的值为`unknown`: `audio`、 `video`、 `screenSharing`、 `videoBasedScreenSharing`、 `data`、。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-135">Possible value are: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`.</span></span> <span data-ttu-id="8ee6c-136">需要</span><span class="sxs-lookup"><span data-stu-id="8ee6c-136">(Required)</span></span> |
+|<span data-ttu-id="8ee6c-137">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="8ee6c-137">mediaConfig</span></span>       |[<span data-ttu-id="8ee6c-138">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="8ee6c-138">mediaConfig</span></span>](../resources/mediaconfig.md)|<span data-ttu-id="8ee6c-139">媒体配置。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-139">The media configuration.</span></span> <span data-ttu-id="8ee6c-140">需要</span><span class="sxs-lookup"><span data-stu-id="8ee6c-140">(Required)</span></span>                                                                                                            |
 
-## <a name="response"></a><span data-ttu-id="0e686-141">响应</span><span class="sxs-lookup"><span data-stu-id="0e686-141">Response</span></span>
-<span data-ttu-id="0e686-142">此方法返回`202 Accepted`响应代码。</span><span class="sxs-lookup"><span data-stu-id="0e686-142">This method returns `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="8ee6c-141">响应</span><span class="sxs-lookup"><span data-stu-id="8ee6c-141">Response</span></span>
+<span data-ttu-id="8ee6c-142">此方法返回`202 Accepted`响应代码。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-142">This method returns `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="0e686-143">示例</span><span class="sxs-lookup"><span data-stu-id="0e686-143">Examples</span></span>
-<span data-ttu-id="0e686-144">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="0e686-144">The following example shows how to call this API.</span></span>
+## <a name="examples"></a><span data-ttu-id="8ee6c-143">示例</span><span class="sxs-lookup"><span data-stu-id="8ee6c-143">Examples</span></span>
+<span data-ttu-id="8ee6c-144">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-144">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="0e686-145">请求</span><span class="sxs-lookup"><span data-stu-id="0e686-145">Request</span></span>
-<span data-ttu-id="0e686-146">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="0e686-146">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="8ee6c-145">请求</span><span class="sxs-lookup"><span data-stu-id="8ee6c-145">Request</span></span>
+<span data-ttu-id="8ee6c-146">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-146">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -77,8 +77,8 @@ Content-Length: 211
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="0e686-147">响应</span><span class="sxs-lookup"><span data-stu-id="0e686-147">Response</span></span>
-<span data-ttu-id="0e686-148">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="0e686-148">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="8ee6c-147">响应</span><span class="sxs-lookup"><span data-stu-id="8ee6c-147">Response</span></span>
+<span data-ttu-id="8ee6c-148">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="8ee6c-148">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -89,9 +89,9 @@ Content-Length: 211
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="answer-voip-call-with-service-hosted-media"></a><span data-ttu-id="0e686-149">服务承载媒体与 VOIP 呼叫应答</span><span class="sxs-lookup"><span data-stu-id="0e686-149">Answer VOIP call with service hosted media</span></span>
+### <a name="answer-voip-call-with-service-hosted-media"></a><span data-ttu-id="8ee6c-149">使用服务托管媒体应答 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="8ee6c-149">Answer VOIP call with service hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="0e686-150">通知-传入</span><span class="sxs-lookup"><span data-stu-id="0e686-150">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="8ee6c-150">通知传入</span><span class="sxs-lookup"><span data-stu-id="8ee6c-150">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -159,7 +159,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="0e686-151">请求</span><span class="sxs-lookup"><span data-stu-id="0e686-151">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="8ee6c-151">请求</span><span class="sxs-lookup"><span data-stu-id="8ee6c-151">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -191,13 +191,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="0e686-152">响应</span><span class="sxs-lookup"><span data-stu-id="0e686-152">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="8ee6c-152">响应</span><span class="sxs-lookup"><span data-stu-id="8ee6c-152">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="0e686-153">通知-建立</span><span class="sxs-lookup"><span data-stu-id="0e686-153">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="8ee6c-153">通知-建立</span><span class="sxs-lookup"><span data-stu-id="8ee6c-153">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -226,7 +226,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="0e686-154">通知-建立</span><span class="sxs-lookup"><span data-stu-id="0e686-154">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="8ee6c-154">已建立通知</span><span class="sxs-lookup"><span data-stu-id="8ee6c-154">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -255,9 +255,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="0e686-155">应答与承载的应用程序媒体的 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="0e686-155">Answer VOIP call with application hosted media</span></span>
+### <a name="answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="8ee6c-155">使用应用程序托管媒体应答 VOIP 呼叫</span><span class="sxs-lookup"><span data-stu-id="8ee6c-155">Answer VOIP call with application hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="0e686-156">通知-传入</span><span class="sxs-lookup"><span data-stu-id="0e686-156">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="8ee6c-156">通知传入</span><span class="sxs-lookup"><span data-stu-id="8ee6c-156">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -312,7 +312,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="0e686-157">请求</span><span class="sxs-lookup"><span data-stu-id="0e686-157">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="8ee6c-157">请求</span><span class="sxs-lookup"><span data-stu-id="8ee6c-157">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -335,13 +335,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="0e686-158">响应</span><span class="sxs-lookup"><span data-stu-id="0e686-158">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="8ee6c-158">响应</span><span class="sxs-lookup"><span data-stu-id="8ee6c-158">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="0e686-159">通知-建立</span><span class="sxs-lookup"><span data-stu-id="0e686-159">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="8ee6c-159">通知-建立</span><span class="sxs-lookup"><span data-stu-id="8ee6c-159">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -370,7 +370,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="0e686-160">通知-建立</span><span class="sxs-lookup"><span data-stu-id="0e686-160">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="8ee6c-160">已建立通知</span><span class="sxs-lookup"><span data-stu-id="8ee6c-160">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

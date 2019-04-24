@@ -1,59 +1,59 @@
 ---
 title: 更新音频路由组
-description: 源和接收器 audioRoutingGroup 的修改。
+description: 修改 audioRoutingGroup 的源和接收器。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 02a6c8142ec36becd2a06a16d81bff7d1ceff75b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524672"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461033"
 ---
-# <a name="update-audio-routing-group"></a><span data-ttu-id="1c607-103">更新音频路由组</span><span class="sxs-lookup"><span data-stu-id="1c607-103">Update audio routing group</span></span>
+# <a name="update-audio-routing-group"></a><span data-ttu-id="48fe0-103">更新音频路由组</span><span class="sxs-lookup"><span data-stu-id="48fe0-103">Update audio routing group</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1c607-104">源和接收器[audioRoutingGroup](../resources/audioroutinggroup.md)的修改。</span><span class="sxs-lookup"><span data-stu-id="1c607-104">Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
+<span data-ttu-id="48fe0-104">修改[audioRoutingGroup](../resources/audioroutinggroup.md)的源和接收器。</span><span class="sxs-lookup"><span data-stu-id="48fe0-104">Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1c607-105">权限</span><span class="sxs-lookup"><span data-stu-id="1c607-105">Permissions</span></span>
-<span data-ttu-id="1c607-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1c607-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="48fe0-105">权限</span><span class="sxs-lookup"><span data-stu-id="48fe0-105">Permissions</span></span>
+<span data-ttu-id="48fe0-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="48fe0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1c607-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="1c607-108">Permission type</span></span> | <span data-ttu-id="1c607-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1c607-109">Permissions (from least to most privileged)</span></span>                |
+| <span data-ttu-id="48fe0-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="48fe0-108">Permission type</span></span> | <span data-ttu-id="48fe0-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="48fe0-109">Permissions (from least to most privileged)</span></span>                |
 | :-------------- | :--------------------------------------------------------- |
-| <span data-ttu-id="1c607-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1c607-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="1c607-111">不支持</span><span class="sxs-lookup"><span data-stu-id="1c607-111">Not Supported</span></span>                       |
-| <span data-ttu-id="1c607-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1c607-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c607-113">不支持</span><span class="sxs-lookup"><span data-stu-id="1c607-113">Not Supported</span></span>                       |
-| <span data-ttu-id="1c607-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="1c607-114">Application</span></span>     | <span data-ttu-id="1c607-115">Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="1c607-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="48fe0-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="48fe0-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="48fe0-111">不支持</span><span class="sxs-lookup"><span data-stu-id="48fe0-111">Not Supported</span></span>                       |
+| <span data-ttu-id="48fe0-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="48fe0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="48fe0-113">不支持</span><span class="sxs-lookup"><span data-stu-id="48fe0-113">Not Supported</span></span>                       |
+| <span data-ttu-id="48fe0-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="48fe0-114">Application</span></span>     | <span data-ttu-id="48fe0-115">JoinGroupCalls、InitiateGroupCalls 和所有调用</span><span class="sxs-lookup"><span data-stu-id="48fe0-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1c607-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1c607-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="48fe0-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="48fe0-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
 PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1c607-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="1c607-117">Request headers</span></span>
-| <span data-ttu-id="1c607-118">名称</span><span class="sxs-lookup"><span data-stu-id="1c607-118">Name</span></span>          | <span data-ttu-id="1c607-119">说明</span><span class="sxs-lookup"><span data-stu-id="1c607-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="48fe0-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="48fe0-117">Request headers</span></span>
+| <span data-ttu-id="48fe0-118">名称</span><span class="sxs-lookup"><span data-stu-id="48fe0-118">Name</span></span>          | <span data-ttu-id="48fe0-119">说明</span><span class="sxs-lookup"><span data-stu-id="48fe0-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="1c607-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="1c607-120">Authorization</span></span> | <span data-ttu-id="1c607-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1c607-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="48fe0-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="48fe0-120">Authorization</span></span> | <span data-ttu-id="48fe0-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="48fe0-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1c607-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="1c607-123">Request body</span></span>
-<span data-ttu-id="1c607-124">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="1c607-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="1c607-125">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="1c607-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="1c607-126">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="1c607-126">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="48fe0-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="48fe0-123">Request body</span></span>
+<span data-ttu-id="48fe0-124">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="48fe0-124">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="48fe0-125">请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。</span><span class="sxs-lookup"><span data-stu-id="48fe0-125">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="48fe0-126">为了获得最佳性能，请勿加入尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="48fe0-126">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="1c607-127">属性</span><span class="sxs-lookup"><span data-stu-id="1c607-127">Property</span></span>       | <span data-ttu-id="1c607-128">类型</span><span class="sxs-lookup"><span data-stu-id="1c607-128">Type</span></span>    |<span data-ttu-id="1c607-129">说明</span><span class="sxs-lookup"><span data-stu-id="1c607-129">Description</span></span>|
+| <span data-ttu-id="48fe0-127">属性</span><span class="sxs-lookup"><span data-stu-id="48fe0-127">Property</span></span>       | <span data-ttu-id="48fe0-128">类型</span><span class="sxs-lookup"><span data-stu-id="48fe0-128">Type</span></span>    |<span data-ttu-id="48fe0-129">说明</span><span class="sxs-lookup"><span data-stu-id="48fe0-129">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="1c607-130">接收器</span><span class="sxs-lookup"><span data-stu-id="1c607-130">receivers</span></span> | <span data-ttu-id="1c607-131">String 集合</span><span class="sxs-lookup"><span data-stu-id="1c607-131">String collection</span></span> | <span data-ttu-id="1c607-132">AudioRoutingGroup 中的目标参与者。</span><span class="sxs-lookup"><span data-stu-id="1c607-132">The target participants in the audioRoutingGroup.</span></span> |
-| <span data-ttu-id="1c607-133">routingMode</span><span class="sxs-lookup"><span data-stu-id="1c607-133">routingMode</span></span> | <span data-ttu-id="1c607-134">String</span><span class="sxs-lookup"><span data-stu-id="1c607-134">String</span></span> | <span data-ttu-id="1c607-135">可取值为：`oneToOne`、`multicast`。</span><span class="sxs-lookup"><span data-stu-id="1c607-135">Possible values are: `oneToOne`, `multicast`.</span></span> |
-| <span data-ttu-id="1c607-136">sources</span><span class="sxs-lookup"><span data-stu-id="1c607-136">sources</span></span> | <span data-ttu-id="1c607-137">String 集合</span><span class="sxs-lookup"><span data-stu-id="1c607-137">String collection</span></span> | <span data-ttu-id="1c607-138">在 audioRoutingGroup 源参与者。</span><span class="sxs-lookup"><span data-stu-id="1c607-138">The source participant in the audioRoutingGroup.</span></span> |
+| <span data-ttu-id="48fe0-130">接收器</span><span class="sxs-lookup"><span data-stu-id="48fe0-130">receivers</span></span> | <span data-ttu-id="48fe0-131">String collection</span><span class="sxs-lookup"><span data-stu-id="48fe0-131">String collection</span></span> | <span data-ttu-id="48fe0-132">audioRoutingGroup 中的目标参与者。</span><span class="sxs-lookup"><span data-stu-id="48fe0-132">The target participants in the audioRoutingGroup.</span></span> |
+| <span data-ttu-id="48fe0-133">routingMode</span><span class="sxs-lookup"><span data-stu-id="48fe0-133">routingMode</span></span> | <span data-ttu-id="48fe0-134">String</span><span class="sxs-lookup"><span data-stu-id="48fe0-134">String</span></span> | <span data-ttu-id="48fe0-135">可取值为：`oneToOne`、`multicast`。</span><span class="sxs-lookup"><span data-stu-id="48fe0-135">Possible values are: `oneToOne`, `multicast`.</span></span> |
+| <span data-ttu-id="48fe0-136">源</span><span class="sxs-lookup"><span data-stu-id="48fe0-136">sources</span></span> | <span data-ttu-id="48fe0-137">String collection</span><span class="sxs-lookup"><span data-stu-id="48fe0-137">String collection</span></span> | <span data-ttu-id="48fe0-138">audioRoutingGroup 中的源参与者。</span><span class="sxs-lookup"><span data-stu-id="48fe0-138">The source participant in the audioRoutingGroup.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="1c607-139">响应</span><span class="sxs-lookup"><span data-stu-id="1c607-139">Response</span></span>
-<span data-ttu-id="1c607-140">如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[audioRoutingGroup](../resources/audioroutinggroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="1c607-140">If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="48fe0-139">响应</span><span class="sxs-lookup"><span data-stu-id="48fe0-139">Response</span></span>
+<span data-ttu-id="48fe0-140">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[audioRoutingGroup](../resources/audioroutinggroup.md)对象。</span><span class="sxs-lookup"><span data-stu-id="48fe0-140">If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1c607-141">示例</span><span class="sxs-lookup"><span data-stu-id="1c607-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="48fe0-141">示例</span><span class="sxs-lookup"><span data-stu-id="48fe0-141">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1c607-142">请求</span><span class="sxs-lookup"><span data-stu-id="1c607-142">Request</span></span>
-<span data-ttu-id="1c607-143">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="1c607-143">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="48fe0-142">请求</span><span class="sxs-lookup"><span data-stu-id="48fe0-142">Request</span></span>
+<span data-ttu-id="48fe0-143">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="48fe0-143">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -76,9 +76,9 @@ Content-Length: 233
   ]
 }
 ```
-##### <a name="response"></a><span data-ttu-id="1c607-144">响应</span><span class="sxs-lookup"><span data-stu-id="1c607-144">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="48fe0-144">响应</span><span class="sxs-lookup"><span data-stu-id="48fe0-144">Response</span></span>
 
-> <span data-ttu-id="1c607-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1c607-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="48fe0-p104">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="48fe0-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -1,32 +1,32 @@
 ---
 title: meetingParticipants 资源类型
-description: 在会议中的参与者。
+description: 会议中的参与者。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 57a07e29beae6915c7e40f7fb8a6e941351fd38f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508781"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463822"
 ---
-# <a name="meetingparticipants-resource-type"></a><span data-ttu-id="16a01-103">meetingParticipants 资源类型</span><span class="sxs-lookup"><span data-stu-id="16a01-103">meetingParticipants resource type</span></span>
+# <a name="meetingparticipants-resource-type"></a><span data-ttu-id="f3c53-103">meetingParticipants 资源类型</span><span class="sxs-lookup"><span data-stu-id="f3c53-103">meetingParticipants resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="16a01-104">在会议中的参与者。</span><span class="sxs-lookup"><span data-stu-id="16a01-104">Participants in a meeting.</span></span>
+<span data-ttu-id="f3c53-104">会议中的参与者。</span><span class="sxs-lookup"><span data-stu-id="f3c53-104">Participants in a meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="16a01-105">属性</span><span class="sxs-lookup"><span data-stu-id="16a01-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f3c53-105">属性</span><span class="sxs-lookup"><span data-stu-id="f3c53-105">Properties</span></span>
 
-| <span data-ttu-id="16a01-106">属性</span><span class="sxs-lookup"><span data-stu-id="16a01-106">Property</span></span>       | <span data-ttu-id="16a01-107">类型</span><span class="sxs-lookup"><span data-stu-id="16a01-107">Type</span></span>    | <span data-ttu-id="16a01-108">说明</span><span class="sxs-lookup"><span data-stu-id="16a01-108">Description</span></span>|
+| <span data-ttu-id="f3c53-106">属性</span><span class="sxs-lookup"><span data-stu-id="f3c53-106">Property</span></span>       | <span data-ttu-id="f3c53-107">类型</span><span class="sxs-lookup"><span data-stu-id="f3c53-107">Type</span></span>    | <span data-ttu-id="f3c53-108">说明</span><span class="sxs-lookup"><span data-stu-id="f3c53-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="16a01-109">attendees</span><span class="sxs-lookup"><span data-stu-id="16a01-109">attendees</span></span> | <span data-ttu-id="16a01-110">[meetingParticipantInfo](meetingparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="16a01-110">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> |  |
-| <span data-ttu-id="16a01-111">organizer</span><span class="sxs-lookup"><span data-stu-id="16a01-111">organizer</span></span> | [<span data-ttu-id="16a01-112">meetingParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="16a01-112">meetingParticipantInfo</span></span>](meetingparticipantinfo.md) |  |
+| <span data-ttu-id="f3c53-109">attendees</span><span class="sxs-lookup"><span data-stu-id="f3c53-109">attendees</span></span> | <span data-ttu-id="f3c53-110">[meetingParticipantInfo](meetingparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="f3c53-110">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> |  |
+| <span data-ttu-id="f3c53-111">组织者</span><span class="sxs-lookup"><span data-stu-id="f3c53-111">organizer</span></span> | [<span data-ttu-id="f3c53-112">meetingParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="f3c53-112">meetingParticipantInfo</span></span>](meetingparticipantinfo.md) |  |
 
-## <a name="json-representation"></a><span data-ttu-id="16a01-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="16a01-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f3c53-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f3c53-113">JSON representation</span></span>
 
-<span data-ttu-id="16a01-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="16a01-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f3c53-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f3c53-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

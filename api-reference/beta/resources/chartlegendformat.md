@@ -5,30 +5,30 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 8a61d92ada713da1533d6c25e3f8acbc30969d33
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640075"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460951"
 ---
-# <a name="chartlegendformat-resource-type"></a><span data-ttu-id="4221b-103">ChartLegendFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="4221b-103">ChartLegendFormat resource type</span></span>
+# <a name="chartlegendformat-resource-type"></a><span data-ttu-id="39672-103">ChartLegendFormat 资源类型</span><span class="sxs-lookup"><span data-stu-id="39672-103">ChartLegendFormat resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4221b-104">封装图表图例的格式属性。</span><span class="sxs-lookup"><span data-stu-id="4221b-104">Encapsulates the format properties of a chart legend.</span></span>
+<span data-ttu-id="39672-104">封装图表图例的格式属性。</span><span class="sxs-lookup"><span data-stu-id="39672-104">Encapsulates the format properties of a chart legend.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="4221b-105">方法</span><span class="sxs-lookup"><span data-stu-id="4221b-105">Methods</span></span>
-<span data-ttu-id="4221b-106">无</span><span class="sxs-lookup"><span data-stu-id="4221b-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="39672-105">方法</span><span class="sxs-lookup"><span data-stu-id="39672-105">Methods</span></span>
+<span data-ttu-id="39672-106">无</span><span class="sxs-lookup"><span data-stu-id="39672-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4221b-107">属性</span><span class="sxs-lookup"><span data-stu-id="4221b-107">Properties</span></span>
-<span data-ttu-id="4221b-108">无</span><span class="sxs-lookup"><span data-stu-id="4221b-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="39672-107">属性</span><span class="sxs-lookup"><span data-stu-id="39672-107">Properties</span></span>
+<span data-ttu-id="39672-108">无</span><span class="sxs-lookup"><span data-stu-id="39672-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="4221b-109">关系</span><span class="sxs-lookup"><span data-stu-id="4221b-109">Relationships</span></span>
-| <span data-ttu-id="4221b-110">关系</span><span class="sxs-lookup"><span data-stu-id="4221b-110">Relationship</span></span> | <span data-ttu-id="4221b-111">类型</span><span class="sxs-lookup"><span data-stu-id="4221b-111">Type</span></span>   |<span data-ttu-id="4221b-112">说明</span><span class="sxs-lookup"><span data-stu-id="4221b-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="39672-109">关系</span><span class="sxs-lookup"><span data-stu-id="39672-109">Relationships</span></span>
+| <span data-ttu-id="39672-110">关系</span><span class="sxs-lookup"><span data-stu-id="39672-110">Relationship</span></span> | <span data-ttu-id="39672-111">类型</span><span class="sxs-lookup"><span data-stu-id="39672-111">Type</span></span>   |<span data-ttu-id="39672-112">说明</span><span class="sxs-lookup"><span data-stu-id="39672-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4221b-113">fill</span><span class="sxs-lookup"><span data-stu-id="4221b-113">fill</span></span>|[<span data-ttu-id="4221b-114">ChartFill</span><span class="sxs-lookup"><span data-stu-id="4221b-114">ChartFill</span></span>](chartfill.md)|<span data-ttu-id="4221b-p101">表示对象的填充格式，包括背景格式信息。只读。</span><span class="sxs-lookup"><span data-stu-id="4221b-p101">Represents the fill format of an object, which includes background formating information. Read-only.</span></span>|
-|<span data-ttu-id="4221b-117">font</span><span class="sxs-lookup"><span data-stu-id="4221b-117">font</span></span>|[<span data-ttu-id="4221b-118">ChartFont</span><span class="sxs-lookup"><span data-stu-id="4221b-118">ChartFont</span></span>](chartfont.md)|<span data-ttu-id="4221b-p102">表示图表图例的字体属性，例如字体名称、字体大小、颜色等。只读。</span><span class="sxs-lookup"><span data-stu-id="4221b-p102">Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.</span></span>|
+|<span data-ttu-id="39672-113">fill</span><span class="sxs-lookup"><span data-stu-id="39672-113">fill</span></span>|[<span data-ttu-id="39672-114">ChartFill</span><span class="sxs-lookup"><span data-stu-id="39672-114">ChartFill</span></span>](chartfill.md)|<span data-ttu-id="39672-p101">表示对象的填充格式，包括背景格式信息。只读。</span><span class="sxs-lookup"><span data-stu-id="39672-p101">Represents the fill format of an object, which includes background formating information. Read-only.</span></span>|
+|<span data-ttu-id="39672-117">font</span><span class="sxs-lookup"><span data-stu-id="39672-117">font</span></span>|[<span data-ttu-id="39672-118">ChartFont</span><span class="sxs-lookup"><span data-stu-id="39672-118">ChartFont</span></span>](chartfont.md)|<span data-ttu-id="39672-p102">表示图表图例的字体属性，例如字体名称、字体大小、颜色等。只读。</span><span class="sxs-lookup"><span data-stu-id="39672-p102">Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

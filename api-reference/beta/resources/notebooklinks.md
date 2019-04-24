@@ -5,21 +5,21 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: f6995c112410d22cfe5849f54d0077bf8b79f6b3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517363"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463278"
 ---
-# <a name="notebooklinks-resource-type"></a><span data-ttu-id="1ad38-103">notebookLinks 资源类型</span><span class="sxs-lookup"><span data-stu-id="1ad38-103">notebookLinks resource type</span></span>
+# <a name="notebooklinks-resource-type"></a><span data-ttu-id="06386-103">notebookLinks 资源类型</span><span class="sxs-lookup"><span data-stu-id="06386-103">notebookLinks resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1ad38-104">用于打开 OneNote 笔记本的链接。</span><span class="sxs-lookup"><span data-stu-id="1ad38-104">Links for opening a OneNote notebook.</span></span>
+<span data-ttu-id="06386-104">用于打开 OneNote 笔记本的链接。</span><span class="sxs-lookup"><span data-stu-id="06386-104">Links for opening a OneNote notebook.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="1ad38-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1ad38-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="06386-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="06386-105">JSON representation</span></span>
 
-<span data-ttu-id="1ad38-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1ad38-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="06386-106">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="06386-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,11 +36,11 @@ ms.locfileid: "29517363"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="1ad38-107">属性</span><span class="sxs-lookup"><span data-stu-id="1ad38-107">Properties</span></span>
-| <span data-ttu-id="1ad38-108">属性</span><span class="sxs-lookup"><span data-stu-id="1ad38-108">Property</span></span>     | <span data-ttu-id="1ad38-109">类型</span><span class="sxs-lookup"><span data-stu-id="1ad38-109">Type</span></span>   |<span data-ttu-id="1ad38-110">说明</span><span class="sxs-lookup"><span data-stu-id="1ad38-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="06386-107">属性</span><span class="sxs-lookup"><span data-stu-id="06386-107">Properties</span></span>
+| <span data-ttu-id="06386-108">属性</span><span class="sxs-lookup"><span data-stu-id="06386-108">Property</span></span>     | <span data-ttu-id="06386-109">类型</span><span class="sxs-lookup"><span data-stu-id="06386-109">Type</span></span>   |<span data-ttu-id="06386-110">说明</span><span class="sxs-lookup"><span data-stu-id="06386-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1ad38-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="1ad38-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="1ad38-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="1ad38-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="1ad38-113">如果安装了 OneNote 本机客户端，则在其中打开笔记本。</span><span class="sxs-lookup"><span data-stu-id="1ad38-113">Opens the notebook in the OneNote native client if it's installed.</span></span>|
-|<span data-ttu-id="1ad38-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="1ad38-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="1ad38-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="1ad38-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="1ad38-116">在 OneNote Online 中打开笔记本。</span><span class="sxs-lookup"><span data-stu-id="1ad38-116">Opens the notebook in OneNote Online.</span></span>|
+|<span data-ttu-id="06386-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="06386-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="06386-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="06386-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="06386-113">如果安装了 OneNote 本机客户端，则在其中打开笔记本。</span><span class="sxs-lookup"><span data-stu-id="06386-113">Opens the notebook in the OneNote native client if it's installed.</span></span>|
+|<span data-ttu-id="06386-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="06386-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="06386-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="06386-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="06386-116">在 OneNote Online 中打开笔记本。</span><span class="sxs-lookup"><span data-stu-id="06386-116">Opens the notebook in OneNote Online.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,47 +5,47 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 767dea301d554e2ec0131d373b2206b0ef87db6a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525911"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461827"
 ---
-# <a name="delete-bookingcustomer"></a><span data-ttu-id="234e5-103">删除 bookingCustomer</span><span class="sxs-lookup"><span data-stu-id="234e5-103">Delete bookingCustomer</span></span>
+# <a name="delete-bookingcustomer"></a><span data-ttu-id="6e40c-103">删除 bookingCustomer</span><span class="sxs-lookup"><span data-stu-id="6e40c-103">Delete bookingCustomer</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="234e5-104">删除指定的[bookingCustomer](../resources/bookingcustomer.md)对象。</span><span class="sxs-lookup"><span data-stu-id="234e5-104">Delete the specified [bookingCustomer](../resources/bookingcustomer.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="234e5-105">权限</span><span class="sxs-lookup"><span data-stu-id="234e5-105">Permissions</span></span>
-<span data-ttu-id="234e5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="234e5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6e40c-104">删除指定的[bookingCustomer](../resources/bookingcustomer.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6e40c-104">Delete the specified [bookingCustomer](../resources/bookingcustomer.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="6e40c-105">权限</span><span class="sxs-lookup"><span data-stu-id="6e40c-105">Permissions</span></span>
+<span data-ttu-id="6e40c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6e40c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="234e5-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="234e5-108">Permission type</span></span>      | <span data-ttu-id="234e5-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="234e5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6e40c-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="6e40c-108">Permission type</span></span>      | <span data-ttu-id="6e40c-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6e40c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="234e5-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="234e5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="234e5-111">BookingsAppointment.ReadWrite.All，Bookings.ReadWrite.All，Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="234e5-111">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="234e5-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="234e5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="234e5-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="234e5-113">Not supported.</span></span>   |
-|<span data-ttu-id="234e5-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="234e5-114">Application</span></span> | <span data-ttu-id="234e5-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="234e5-115">Not supported.</span></span>  |
+|<span data-ttu-id="6e40c-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6e40c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6e40c-111">BookingsAppointment, 全部, 全部登记, 全部, 预订。 all</span><span class="sxs-lookup"><span data-stu-id="6e40c-111">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="6e40c-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6e40c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6e40c-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="6e40c-113">Not supported.</span></span>   |
+|<span data-ttu-id="6e40c-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="6e40c-114">Application</span></span> | <span data-ttu-id="6e40c-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="6e40c-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="234e5-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="234e5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6e40c-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6e40c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /bookingBusinesses/{id}/customers/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="234e5-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="234e5-117">Request headers</span></span>
-| <span data-ttu-id="234e5-118">名称</span><span class="sxs-lookup"><span data-stu-id="234e5-118">Name</span></span>       | <span data-ttu-id="234e5-119">说明</span><span class="sxs-lookup"><span data-stu-id="234e5-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6e40c-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="6e40c-117">Request headers</span></span>
+| <span data-ttu-id="6e40c-118">名称</span><span class="sxs-lookup"><span data-stu-id="6e40c-118">Name</span></span>       | <span data-ttu-id="6e40c-119">说明</span><span class="sxs-lookup"><span data-stu-id="6e40c-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="234e5-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="234e5-120">Authorization</span></span>  | <span data-ttu-id="234e5-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="234e5-121">Bearer {code}</span></span>|
+| <span data-ttu-id="6e40c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="6e40c-120">Authorization</span></span>  | <span data-ttu-id="6e40c-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="6e40c-121">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="234e5-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="234e5-122">Request body</span></span>
-<span data-ttu-id="234e5-123">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="234e5-123">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6e40c-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="6e40c-122">Request body</span></span>
+<span data-ttu-id="6e40c-123">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6e40c-123">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="234e5-124">响应</span><span class="sxs-lookup"><span data-stu-id="234e5-124">Response</span></span>
-<span data-ttu-id="234e5-p102">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="234e5-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6e40c-124">响应</span><span class="sxs-lookup"><span data-stu-id="6e40c-124">Response</span></span>
+<span data-ttu-id="6e40c-p102">如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="6e40c-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="234e5-127">示例</span><span class="sxs-lookup"><span data-stu-id="234e5-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="234e5-128">请求</span><span class="sxs-lookup"><span data-stu-id="234e5-128">Request</span></span>
-<span data-ttu-id="234e5-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="234e5-129">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6e40c-127">示例</span><span class="sxs-lookup"><span data-stu-id="6e40c-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6e40c-128">请求</span><span class="sxs-lookup"><span data-stu-id="6e40c-128">Request</span></span>
+<span data-ttu-id="6e40c-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6e40c-129">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_bookingcustomer"
@@ -53,8 +53,8 @@ DELETE /bookingBusinesses/{id}/customers/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers/80b5ddda-1e3b-4c9d-abe2-d606cc075e2e
 ```
-##### <a name="response"></a><span data-ttu-id="234e5-130">响应</span><span class="sxs-lookup"><span data-stu-id="234e5-130">Response</span></span>
-<span data-ttu-id="234e5-131">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="234e5-131">The following is an example of the response.</span></span> <span data-ttu-id="234e5-132">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="234e5-132">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="234e5-133">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="234e5-133">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6e40c-130">响应</span><span class="sxs-lookup"><span data-stu-id="6e40c-130">Response</span></span>
+<span data-ttu-id="6e40c-131">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6e40c-131">The following is an example of the response.</span></span> <span data-ttu-id="6e40c-132">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="6e40c-132">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="6e40c-133">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="6e40c-133">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
