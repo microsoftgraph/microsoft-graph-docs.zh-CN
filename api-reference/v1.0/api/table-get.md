@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: a83d0b13ec6955832ba0d9b70fccde687b804c75
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943415"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520667"
 ---
 # <a name="get-table"></a>获取表格
 
@@ -43,7 +43,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和[WorkbookTable](../resources/table.md)响应正文中的对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[WorkbookTable](../resources/table.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

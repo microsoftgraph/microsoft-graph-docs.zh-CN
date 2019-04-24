@@ -6,13 +6,15 @@ title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 9be9d0dc133c9b62a89504a79ce9da4836337cfe
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482404"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32519876"
 ---
 # <a name="listinfo-resource"></a>ListInfo 资源
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **listInfo** 复杂类型提供有关 [list][] 的其他信息。
 
@@ -53,14 +55,15 @@ ms.locfileid: "30482404"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "tocPath": "",
   "suppressions": [
-    "Warning: /api-reference/v1.0/resources/listinfo.md:
-      Found potential enums in resource example that weren't defined in a table:(documentLibrary,genericList,tasks,survey,links,announcements,contacts,...) are in resource, but () are in table"
-  ],
-  "tocPath": ""
-}-->
+    "Error: /api-reference/beta/resources/listinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

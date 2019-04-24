@@ -3,13 +3,15 @@ title: 更新照片
 description: 更新 photo 对象的属性。
 localization_priority: Normal
 ms.openlocfilehash: 80c866eab74307d3001887110e050aa438cdde9f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883781"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521066"
 ---
 # <a name="update-photo"></a>更新照片
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新 photo 对象的属性。
 ## <a name="permissions"></a>权限
@@ -51,7 +53,7 @@ PATCH /drive/root/createdByUser/photo
   "name": "update_photo"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
+PATCH https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 Content-type: application/json
 Content-length: 53
 
@@ -82,10 +84,15 @@ Content-length: 53
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update photo",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/photo-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

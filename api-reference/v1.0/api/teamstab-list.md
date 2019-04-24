@@ -1,27 +1,28 @@
 ---
-title: 在通道列表选项卡
-description: '检索团队中指定的通道中的选项卡的列表。 '
+title: 通道中的列表选项卡
+description: '检索团队中指定通道中的选项卡列表。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb4a90109c58fb30f268bead15a90178d7317a71
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967177"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521745"
 ---
-# <a name="list-tabs-in-channel"></a>在通道列表选项卡
+# <a name="list-tabs-in-channel"></a>通道中的列表选项卡
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索指定的[频道](../resources/channel.md)中[团队](../resources/team.md)中的[选项卡](../resources/teamstab.md)的列表。 
+检索[团队](../resources/team.md)中指定[通道](../resources/channel.md)中的[选项卡](../resources/teamstab.md)列表。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Group.Read.All    |
+|委派（工作或学校帐户） | group. 全部, group。 Read. all    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 | 应用程序                            | Group.Read.All、Group.ReadWrite.All         |
 
@@ -46,13 +47,13 @@ GET /teams/{id}/channels/{id}/tabs
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[选项卡](../resources/teamstab.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[选项卡](../resources/teamstab.md)对象集合。
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面展示了示例请求。
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs?$expand=teamsApp
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs?$expand=teamsApp
 ```
 
 #### <a name="response"></a>响应
@@ -104,6 +105,9 @@ Content-type: application/json
   "description": "List all tabs in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

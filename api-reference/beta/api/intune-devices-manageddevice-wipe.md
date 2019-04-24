@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 91bdbd45355c986e7ef59bf5e8be6621db462001
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790653"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520037"
 ---
 # <a name="wipe-action"></a>擦除操作
 

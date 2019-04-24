@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9dbdb076fb8817e8916b47b23f92b3b343879470
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779025"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32519435"
 ---
 # <a name="delete-iostrustedrootcertificate"></a>删除 iosTrustedRootCertificate
 

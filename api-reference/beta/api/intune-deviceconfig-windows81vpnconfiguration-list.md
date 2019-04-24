@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 88cd658fb27d6288c930d5dccbc3e996ddaa0ae1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784556"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32515202"
 ---
 # <a name="list-windows81vpnconfigurations"></a>列出 windows81VpnConfigurations
 

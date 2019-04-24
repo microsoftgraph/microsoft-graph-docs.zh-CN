@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5ca2ad56eddec38667e3e32e7ee58a8014adf45f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801944"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32519008"
 ---
 # <a name="get-ioswificonfiguration"></a>获取 iosWiFiConfiguration
 

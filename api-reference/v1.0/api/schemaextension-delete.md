@@ -4,13 +4,15 @@ description: 删除架构扩展定义。
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 63b5f03c569439dad6615a0a23682d50646329a4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966830"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521052"
 ---
 # <a name="delete-schemaextension"></a>删除 schemaExtension
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除[架构扩展](../resources/schemaextension.md)定义。
 
@@ -53,7 +55,7 @@ DELETE /schemaExtensions/{id}
   "name": "delete_schemaextension"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/schemaExtensions/{id}
+DELETE https://graph.microsoft.com/beta/schemaExtensions/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
@@ -72,10 +74,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete schemaExtension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/schemaextension-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

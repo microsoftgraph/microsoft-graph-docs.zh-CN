@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 0c875615fb9650ecafafd503d37e88b0473fd482
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981978"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521206"
 ---
 # <a name="group-resetunseencount"></a>组：resetUnseenCount
 重置当前用户自上次访问后未查看的所有帖子的 unseenCount。仅支持 Office 365 组。
@@ -52,7 +52,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/resetUnseenCount
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,21 +1,21 @@
 ---
 title: 列出 serviceConfigurationRecords
-description: 检索启用域服务所需的 domainDnsRecord 对象列表。
+description: 检索为域启用服务所需的 domainDnsRecord 对象的列表。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4237b0b0f1c7bddfe8572268a367207a2eeb1434
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917487"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520086"
 ---
 # <a name="list-serviceconfigurationrecords"></a>列出 serviceConfigurationRecords
 
-检索启用域服务所需的 [domainDnsRecord](../resources/domaindnsrecord.md) 对象列表。
+检索为域启用服务所需的[domainDnsRecord](../resources/domaindnsrecord.md)对象的列表。
 
-使用返回的列表将记录添加到域的区域文件。这可以通过域名注册机构或 DNS 服务器配置完成。
+使用返回的列表将记录添加到域的区域文件中。 可以通过域注册机构或 DNS 服务器配置来完成此操作。
 
 ## <a name="permissions"></a>权限
 
@@ -51,7 +51,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [domainDnsRecord](../resources/domaindnsrecord.md) 对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[domainDnsRecord](../resources/domaindnsrecord.md)对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

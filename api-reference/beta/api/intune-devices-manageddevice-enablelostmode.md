@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 735ee2659c603b03718a0e0031973dd5addb21eb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791626"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520219"
 ---
 # <a name="enablelostmode-action"></a>enableLostMode 操作
 

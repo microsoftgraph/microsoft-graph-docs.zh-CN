@@ -6,17 +6,19 @@ title: 按路径获取 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 4ecef58fb6d4ae63c5976bfce10aed0c47b408d1
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481732"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520788"
 ---
 # <a name="get-a-site-resource-by-path"></a>按路径获取网站资源
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 检索[网站][]资源的属性和关系。**网站**资源表示 SharePoint 中的团队网站。
 
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 
 除了可以[按 ID 检索网站](site-get.md)外，还可以按相对服务器 URL 路径检索网站。
 
@@ -42,7 +44,7 @@ ms.locfileid: "30481732"
 
 若要通过相对路径访问根 SharePoint 网站，请运行以下命令：
 
-<!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "service.sharepoint sites.read.all" } -->
 
 ```http
 GET /sites/{hostname}:/{relative-path}
@@ -56,10 +58,15 @@ GET /sites/{hostname}:/{relative-path}
 
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/json
 
 {
   "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
+  "owner": {
+    "user": { 
+      "displayName": "Daron Spektor",
+      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
+    }
+  },
   "displayName": "OneDrive Team Site",
   "name": "1drvteam",
   "createdDateTime": "2017-05-09T20:56:00Z",
@@ -68,16 +75,15 @@ Content-Type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "tocPath": "Sites/Get by path",
   "suppressions": [
-    "Warning: Couldn't serialize request for path /sites/{var}/children/{var} into EDMX: System.InvalidOperationException: Uri path requires navigating into unknown object hierarchy: missing property 'children' on 'site'. Possible issues:
-         1) Doc bug where 'children' isn't defined on the resource.      2) Doc bug where 'children' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.       3) Doc bug where 'site' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation
-     at ApiDocs.Publishing.CSDL.CsdlWriter.ParseRequestTargetType(String requestPath, MethodCollection requestMethodCollection, EntityFramework edmx, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 982
-     at ApiDocs.Publishing.CSDL.CsdlWriter.ProcessRestRequestPaths(EntityFramework edmx, String[] baseUrlsToRemove, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 653"
-  ],
-  "tocPath": "Sites/Get by path"
-} -->
+    "Error: /api-reference/beta/api/site-getbypath.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

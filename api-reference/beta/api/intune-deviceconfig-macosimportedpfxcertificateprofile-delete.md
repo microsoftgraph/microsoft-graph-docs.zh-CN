@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 078298e3d4dd158c137736896fd4e7b1bb08eba2
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783659"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32518560"
 ---
 # <a name="delete-macosimportedpfxcertificateprofile"></a>删除 macOSImportedPFXCertificateProfile
 

@@ -1,17 +1,17 @@
 ---
-title: 将应用程序添加到团队
+title: 向团队添加应用
 description: 将应用程序安装到指定的团队。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8332204de2c75235720d7b2652d029e9f145f576
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b1a241ebb9d39b26e12f59b6f8f08e71220d8021
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922373"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521892"
 ---
-# <a name="add-app-to-team"></a>将应用程序添加到团队
+# <a name="add-app-to-team"></a>向团队添加应用
 
 
 
@@ -24,7 +24,7 @@ ms.locfileid: "27922373"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | 不支持。 |
+|应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -39,9 +39,9 @@ POST /teams/{id}/installedApps
 
 ## <a name="request-body"></a>请求正文
 
-| 属性     | 类型   |Description|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|teamsApp| [teamsApp](../resources/teamsapp.md) |添加应用程序。|
+|teamsApp| [teamsApp](../resources/teamsapp.md) |要添加的应用程序。|
 
 
 ## <a name="response"></a>响应
@@ -62,7 +62,7 @@ POST /teams/{id}/installedApps
 }
 ```
 #### <a name="response"></a>响应
-下面展示了示例响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "ignored",
   "truncated": true,

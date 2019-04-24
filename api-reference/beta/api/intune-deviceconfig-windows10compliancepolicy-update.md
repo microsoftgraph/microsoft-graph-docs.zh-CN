@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: dfbf37f9fdb2e95aea58540d3e7b6d0b49557748
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804618"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32517804"
 ---
 # <a name="update-windows10compliancepolicy"></a>更新 windows10CompliancePolicy
 
@@ -50,43 +50,43 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|passwordRequired|布尔值|需要密码才可解锁 Windows 设备。|
-|passwordBlockSimple|布尔值|指示是否阻止简单密码。|
-|passwordRequiredToUnlockFromIdle|布尔值|需要密码才可解锁空闲设备。|
+|passwordRequired|布尔|需要密码才可解锁 Windows 设备。|
+|passwordBlockSimple|布尔|指示是否阻止简单密码。|
+|passwordRequiredToUnlockFromIdle|布尔|需要密码才可解锁空闲设备。|
 |passwordMinutesOfInactivityBeforeLock|Int32|在需要密码之前不活动的分钟数。|
 |passwordExpirationDays|Int32|密码过期天数。|
 |passwordMinimumLength|Int32|密码最短长度。|
 |passwordMinimumCharacterSetCount|Int32|密码中必需的字符集数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
 |passwordPreviousPasswordBlockCount|Int32|防止重复使用的先前密码的数量。|
-|requireHealthyDeviceReport|布尔值|要求设备由 Windows 设备运行状况证明报告为正常。|
-|osMinimumVersion|String|最低 Windows 10 版本。|
-|osMaximumVersion|String|最高 Windows 10 版本。|
-|mobileOsMinimumVersion|String|最低 Windows Phone 版本。|
+|requireHealthyDeviceReport|布尔|要求设备由 Windows 设备运行状况证明报告为正常。|
+|osMinimumVersion|字符串|最低 Windows 10 版本。|
+|osMaximumVersion|字符串|最高 Windows 10 版本。|
+|mobileOsMinimumVersion|字符串|最低 Windows Phone 版本。|
 |mobileOsMaximumVersion|String|最高 Windows Phone 版本。|
-|earlyLaunchAntiMalwareDriverEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
-|bitLockerEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
-|secureBootEnabled|布尔值|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
+|earlyLaunchAntiMalwareDriverEnabled|布尔|要求设备由 Windows 设备运行状况证明报告为正常 - 提前启动反恶意驱动程序已启用。|
+|bitLockerEnabled|布尔|要求设备由 Windows 设备运行状况证明报告为正常 - bit locker 已启用。|
+|secureBootEnabled|布尔|要求设备由 Windows 设备运行状况证明报告为正常 - 安全启动已启用。|
 |codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
 |storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
-|activeFirewallRequired|布尔值|在 Windows 设备上需要活动防火墙。|
-|defenderEnabled|布尔值|在 windows 设备上需要 windows Defender 反恶意软件。|
-|defenderVersion|String|在 windows 设备上要求 windows Defender 反恶意软件的最低版本。|
-|signatureOutOfDate|布尔值|windows 设备上要求 windows Defender 反恶意软件签名为最新。|
-|rtpEnabled|布尔值|在 windows 设备上需要 windows Defender 反恶意软件实时保护。|
-|antivirusRequired|布尔值|要求在 Windows Decurity Center 中注册的任何防病毒解决方案都处于启用和监控 (例如, Symantec、Windows Defender)。|
-|antiSpywareRequired|布尔值|要求在 Windows Decurity Center 中注册的任何反间谍软件解决方案都处于启用和监控 (例如, Symantec、Windows Defender)。|
+|activeFirewallRequired|布尔|在 Windows 设备上需要活动防火墙。|
+|defenderEnabled|布尔|在 windows 设备上需要 windows Defender 反恶意软件。|
+|defenderVersion|字符串|在 windows 设备上要求 windows Defender 反恶意软件的最低版本。|
+|signatureOutOfDate|布尔|windows 设备上要求 windows Defender 反恶意软件签名为最新。|
+|rtpEnabled|布尔|在 windows 设备上需要 windows Defender 反恶意软件实时保护。|
+|antivirusRequired|布尔|要求在 Windows Decurity Center 中注册的任何防病毒解决方案都处于启用和监控 (例如, Symantec、Windows Defender)。|
+|antiSpywareRequired|布尔|要求在 Windows Decurity Center 中注册的任何反间谍软件解决方案都处于启用和监控 (例如, Symantec、Windows Defender)。|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)集合|Windows 设备上的有效操作系统内部版本范围。 该集合最多可包含 10000 个元素。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|需要设备威胁防护最低风险级别来报告不合规。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
-|configurationManagerComplianceRequired|布尔值|需要考虑将 SCCM 合规性状态考虑到 Intune 合规性状态。|
+|configurationManagerComplianceRequired|布尔|需要考虑将 SCCM 合规性状态考虑到 Intune 合规性状态。|
 
 
 

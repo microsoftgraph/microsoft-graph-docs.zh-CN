@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: df975d13ddc97c0c6b592d02d61a978c5a0db732
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919811"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520485"
 ---
 # <a name="update-table"></a>更新表
 
@@ -41,13 +41,13 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|表的名称。|
-|showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
-|showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
-|style|string|代表表格样式的常量值。 可能的值为： 至 TableStyleLight21，至 TableStyleMedium28，至 TableStyleStyleDark11 TableStyleStyleDark1 TableStyleMedium1 TableStyleLight1。 此外可以指定自定义用户定义的样式工作簿中存在。|
+|showHeaders|布尔|指示标头行是否可见。该值可以设置为显示或删除标头行。|
+|showTotals|布尔|指示总计行是否可见。该值可以设置为显示或删除总计行。|
+|style|string|表示表格样式的常量值。 可取值为：TableStyleLight1 到 TableStyleLight21、TableStyleMedium1 到 TableStyleMedium28、TableStyleStyleDark1 到 TableStyleStyleDark11。 还可以指定工作簿中显示的用户定义的自定义样式。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookTable](../resources/table.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookTable](../resources/table.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

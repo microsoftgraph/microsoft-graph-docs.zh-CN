@@ -1,19 +1,19 @@
 ---
 title: 创建分区
-description: 在指定的节组中创建新 onenoteSection。
+description: 在指定的分区组中创建新的 onenoteSection。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 91ed02c363de0fc39af594e2e0932e4c4ad605bf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947076"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520905"
 ---
 # <a name="create-section"></a>创建分区
 
-在指定的节组中创建新[onenoteSection](../resources/section.md) 。
+在指定的分区组中创建新的[onenoteSection](../resources/section.md) 。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,7 +44,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[onenoteSection](../resources/section.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[onenoteSection](../resources/section.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
