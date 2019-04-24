@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 477a8fd2e647d8bdc3babdcb48bccba469912e93
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520947"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502076"
 ---
 # <a name="list-owners"></a>列出所有者
 
@@ -58,8 +58,8 @@ GET https://graph.microsoft.com/beta/groups/{id}/owners
 ```
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,19 +1,19 @@
 ---
 title: 创建 inferenceClassificationOverride
-description: '创建发件人的 SMTP 地址被标识为中心的收件箱覆盖。 今后来自该 SMTP 地址的邮件将被始终分类 '
+description: '为由 SMTP 地址标识的发件人创建重点收件箱覆盖。 将对来自该 SMTP 地址的未来邮件进行一致的分类 '
 localization_priority: Normal
 ms.openlocfilehash: 234972bea59343a13d9104bbe222edf4be526987
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516117"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501292"
 ---
 # <a name="create-inferenceclassificationoverride"></a>创建 inferenceClassificationOverride
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建发件人的 SMTP 地址被标识为[中心的收件箱](../resources/manage-focused-inbox.md)覆盖。 从邮件未来一致地进行分类 SMTP 地址重写中指定。
+为由 SMTP 地址标识的发件人创建[重点收件箱](../resources/manage-focused-inbox.md)覆盖。 将以后来自该 SMTP 地址的邮件一致归为替代中指定的类别。
 
 **注意**
 

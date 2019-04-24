@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: fac999f0c238d7b0769ae95238d452786556a1de
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922695"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461169"
 ---
 # <a name="update-chartlineformat"></a>更新 chartlineformat
 
@@ -45,7 +45,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridline
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChartLineFormat](../resources/chartlineformat.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookChartLineFormat](../resources/chartlineformat.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: e8b5a0a6a0c6a4f72805845f7c7c579043c05c0e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643942"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502846"
 ---
 # <a name="remove-rejectedsender"></a>删除 rejectedSender
 

@@ -3,11 +3,11 @@ title: 更新 approleassignment
 description: 更新 approleassignment 对象的属性。
 localization_priority: Normal
 ms.openlocfilehash: 54c256e3b94a5bb2d62c2ffe31ecf777d472b93c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643473"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458955"
 ---
 # <a name="update-approleassignment"></a>更新 approleassignment
 
@@ -40,17 +40,17 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|creationTimestamp|DateTimeOffset|授予创建时间。|
+|creationTimestamp|DateTimeOffset|创建授予的时间。|
 |id|Guid|向主体分配的角色 id。  此角色必须由目标资源应用程序 **resourceId** 在其 **appRoles** 属性中声明。 如果资源未声明任何权限，则必须指定默认 id (0 GUID)。                            **注意：** 不可为 null。            |
-|principalDisplayName|String|已授权访问权限的主体的显示名称。|
-|principalId|Guid|要授予访问权限的主体的唯一标识符 (**objectId**)。                            **说明**： 必需。            |
-|principalType|String|主体类型。  它可以是“User”、“Group”或“ServicePrincipal”。|
+|principalDisplayName|字符串|已授权访问权限的主体的显示名称。|
+|principalId|Guid|要向其授予访问权限的主体的唯一标识符 (**objectId**)。                            **备注**: 必需。            |
+|principalType|字符串|主体类型。  它可以是“User”、“Group”或“ServicePrincipal”。|
 |resourceDisplayName|String|已对其进行分配的资源的显示名称。|
-|resourceId|Guid|为其进行工作分配的目标资源 （服务主体） 的唯一标识符 (**objectId**)。|
+|resourceId|Guid|为其进行了分配的目标资源 (服务主体) 的唯一标识符 (**objectId**)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[appRoleAssignment](../resources/approleassignment.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[appRoleAssignment](../resources/approleassignment.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

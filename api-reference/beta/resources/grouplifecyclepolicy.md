@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: c69a54ef5323b1e3d171135d4b1b0231b6834c79
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970239"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506354"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "27970239"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|alternateNotificationEmails|String| 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
+|alternateNotificationEmails|字符串| 针对没有所有者的组向其发送通知的电子邮件地址列表。 可以用分号隔开电子邮件地址，从而定义多个电子邮件地址。 |
 |groupLifetimeInDays|Int32| 还剩多少天组就到期且需要续订。 续订后，组的有效期就会延长定义的天数。 |
 |id|Guid| 策略的唯一标识符。 只读。|
 |managedGroupTypes|String| 到期策略适用的组类型。 可取值为 **All**、**Selected** 或 **None**。 |

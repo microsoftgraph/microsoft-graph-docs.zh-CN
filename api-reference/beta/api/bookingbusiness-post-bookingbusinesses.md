@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 95a9217392953d287689dca7a7b6f4c74fbe6383
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519246"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461757"
 ---
 # <a name="create-bookingbusiness"></a>创建 bookingBusiness
 
@@ -17,13 +17,13 @@ ms.locfileid: "29519246"
 
 在租户中创建新的 Microsoft 预订业务。
 
-这是设置预订业务其中必须指定业务显示名称的第一步。 您可以包括其他信息，如业务地址、 网站地址和计划策略，或者该信息稍后通过设置[更新](bookingbusiness-update.md) **bookingBusiness**。
+这是设置预订业务 (必须在其中指定业务显示名称) 的第一步。 您可以包含其他信息 (如商务地址、网站地址和计划策略), 也可以在以后通过[更新](bookingbusiness-update.md) **bookingBusiness**来设置该信息。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Bookings.Manage.All  |
+|委派（工作或学校帐户） |  预订. 全部  |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。 |
 
@@ -39,11 +39,11 @@ POST /bookingBusinesses
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[bookingBusiness](../resources/bookingbusiness.md)对象的 JSON 表示形式。
+在请求正文中, 提供[bookingBusiness](../resources/bookingbusiness.md)对象的 JSON 表示形式。
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201, Created`响应正文中的响应代码和[bookingBusiness](../resources/bookingbusiness.md)对象。
+如果成功, 此方法在`201, Created`响应正文中返回响应代码和[bookingBusiness](../resources/bookingbusiness.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -73,9 +73,9 @@ Content-type: application/json
     "defaultCurrencyIso":"USD"
 }
 ```
-在请求正文中，提供[bookingBusiness](../resources/bookingbusiness.md)对象的 JSON 表示形式。
+在请求正文中, 提供[bookingBusiness](../resources/bookingbusiness.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

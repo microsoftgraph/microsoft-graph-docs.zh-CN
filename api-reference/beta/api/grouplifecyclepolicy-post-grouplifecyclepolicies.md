@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 9ba07aeaa0d9aabf63fb6d8598fb238e03c3586d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522677"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501836"
 ---
 # <a name="create-grouplifecyclepolicy"></a>创建 groupLifecyclePolicy
 
@@ -26,7 +26,7 @@ ms.locfileid: "29522677"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持 |
-|应用程序 |  Directory.ReadWrite.All |
+|应用 |  Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -3,11 +3,11 @@ title: 获取 governanceRoleAssignmentRequest
 description: '获取 governanceRoleAssignmentRequest。 '
 localization_priority: Normal
 ms.openlocfilehash: 6914dbe8c45bcc05bc684b08fb5fdf87405a045a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524133"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503700"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>获取 governanceRoleAssignmentRequest
 
@@ -20,13 +20,13 @@ ms.locfileid: "29524133"
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess.ReadWrite.AzureResources |
+|应用程序 | PrivilegedAccess AzureResources |
 
-除了权限范围，它需要请求程序 
-*   若要对资源; 具有至少一个角色分配或
-*   [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的主题。
+除了权限范围之外, 还需要请求程序 
+*   对资源至少有一个角色分配;和
+*   是[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的主题。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,10 +45,10 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)对象。
 
 ## <a name="example"></a>示例
-获取一个角色分配请求
+获取角色分配请求
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequest"

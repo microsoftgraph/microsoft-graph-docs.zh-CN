@@ -1,29 +1,29 @@
 ---
-title: 列表 governanceRoleDefinitions
-description: 获取对资源的 governanceRoleDefinitions 集合。
+title: 列出 governanceRoleDefinitions
+description: 获取资源的 governanceRoleDefinitions 集合。
 localization_priority: Normal
 ms.openlocfilehash: 0e03a75446723743cc43eef63c42dd0f39c86126
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525197"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503052"
 ---
-# <a name="list-governanceroledefinitions"></a>列表 governanceRoleDefinitions
+# <a name="list-governanceroledefinitions"></a>列出 governanceRoleDefinitions
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取对资源的[governanceRoleDefinitions](../resources/governanceroledefinition.md)集合。
+获取资源的[governanceRoleDefinitions](../resources/governanceroledefinition.md)集合。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureResources  |
+|委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | PrivilegedAccess.ReadWrite.AzureResources |
+|应用程序 | PrivilegedAccess AzureResources |
 
-除了权限范围，此 API 要求具有至少一个角色分配对资源的请求程序。
+除了权限范围之外, 此 API 还要求请求者具有对资源的至少一个角色分配。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +32,7 @@ GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions
 GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{resourceId}'
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -42,13 +42,13 @@ GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{res
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[governanceRoleDefinition](../resources/governanceroledefinition.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[governanceRoleDefinition](../resources/governanceroledefinition.md)对象集合。
 ## <a name="example"></a>示例
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinitions"
 }-->
-本示例演示如何获取 Wingtip Toys-prod 移的订阅的所有角色定义。
+本示例演示如何获取订阅 Wingtip 玩具-生产的所有角色定义。
 ##### <a name="request"></a>请求
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions  

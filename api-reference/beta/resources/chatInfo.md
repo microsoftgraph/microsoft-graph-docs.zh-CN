@@ -5,11 +5,11 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3c1414d10a262280bcf0d3a307fc0c71aed2fbde
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507661"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461069"
 ---
 # <a name="chatinfo-resource-type"></a>chatInfo 资源类型
 
@@ -21,9 +21,9 @@ ms.locfileid: "29507661"
 
 | 属性            | 类型    | 说明|
 |:--------------------|:--------|:-----------|
-| MessageId           | String  | Microsoft 团队通道中的邮件的唯一标识符。 |
-| replyChainMessageId | String  | 答复邮件的 ID。 |
-| threadId            | String  | Microsoft 团队中的线程的唯一标识符。 |
+| messageId           | 字符串  | Microsoft 团队频道中的邮件的唯一标识符。 |
+| replyChainMessageId | 字符串  | 答复邮件的 ID。 |
+| threadId            | 字符串  | Microsoft 团队中的线程的唯一标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

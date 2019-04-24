@@ -1,21 +1,21 @@
 ---
 title: educationSynchronizationOAuth2ClientCredentialsConnectionSettings 资源
-description: 当 OAuth2 客户端凭据授予以用于连接到的数据提供程序时，应使用此连接设置类型设置配置文件。
+description: 如果要使用 OAuth2 客户端凭据授予连接到数据提供程序, 则此连接设置类型应用于设置配置文件。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 37121868793dd76aec2c3b48182e114348d21014
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523552"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507033"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>educationSynchronizationOAuth2ClientCredentialsConnectionSettings 资源
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-当[OAuth2 客户端凭据授予](https://tools.ietf.org/html/rfc6749#section-4.4)以用于连接到的数据提供程序时，应使用此连接设置类型设置配置文件。
+如果要使用[OAuth2 客户端凭据授予](https://tools.ietf.org/html/rfc6749#section-4.4)连接到数据提供程序, 则此连接设置类型应用于设置配置文件。
 
 派生自[educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md)。
 
@@ -23,8 +23,8 @@ ms.locfileid: "29523552"
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **tokenUrl** | String | 要获取访问令牌的数据提供程序的 URL。 |
-| **scope** | String | [访问请求的范围](https://tools.ietf.org/html/rfc6749#section-3.3)。 |
+| **tokenUrl** | 字符串 | 用于获取数据提供程序的访问令牌的 URL。 |
+| **scope** | 字符串 | [访问请求的范围](https://tools.ietf.org/html/rfc6749#section-3.3)。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 <!-- {

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 62ff257e2f758776265f52a0d64cde52dbc26115
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261962"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585361"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>deviceEnrollmentType 枚举类型
 
@@ -22,14 +22,14 @@ ms.locfileid: "30261962"
 |:---|:---|:---|
 |unknown|0|默认值, 未收集注册类型。|
 |userEnrollment|1|通过 BYOD 通道的用户驱动的注册。|
-|deviceEnrollmentManager|双面|具有设备注册管理员帐户的用户注册。|
-|appleBulkWithUser|第三章|使用用户质询的 Apple 批量注册。 (DEP、Apple 配置器)|
-|appleBulkWithoutUser|4|没有用户质询的 Apple 批量注册。 (DEP、Apple 配置器、移动配置)|
+|deviceEnrollmentManager|2 |具有设备注册管理员帐户的用户注册。|
+|appleBulkWithUser|3 |使用用户质询的 Apple 批量注册。 (DEP、Apple 配置器)|
+|appleBulkWithoutUser|4 |没有用户质询的 Apple 批量注册。 (DEP、Apple 配置器、移动配置)|
 |windowsAzureADJoin|5|Windows 10 Azure AD 加入。|
-|windowsBulkUserless|型|通过带证书的 ICD 通过 ICD 进行的 Windows 10 批量注册。|
-|windowsAutoEnrollment|步|Windows 10 自动注册。 (添加工作帐户)|
-|windowsBulkAzureDomainJoin|utf-8|Windows 10 批量 Azure AD 加入。|
-|windowsCoManagement|第|由 AutoPilot 或组策略触发的 Windows 10 协同管理。|
+|windowsBulkUserless|6 |通过带证书的 ICD 通过 ICD 进行的 Windows 10 批量注册。|
+|windowsAutoEnrollment|7 |Windows 10 自动注册。 (添加工作帐户)|
+|windowsBulkAzureDomainJoin|8 |Windows 10 批量 Azure AD 加入。|
+|windowsCoManagement|9 |由 AutoPilot 或组策略触发的 Windows 10 协同管理。|
 
 
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5f3bd1d0aff7e09d5828496de348805075d0b330
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259743"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503525"
 ---
 # <a name="iosdevicetype-resource-type"></a>iosDeviceType 资源类型
 
@@ -20,7 +20,7 @@ ms.locfileid: "30259743"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|iPad|Boolean|应用是否应该在 iPad 上运行。|
+|iPad|布尔|应用是否应该在 iPad 上运行。|
 |iPhoneAndIPod|布尔值|应用是否应该在 iPhone 和 iPod 上运行。|
 
 ## <a name="relationships"></a>关系

@@ -1,34 +1,34 @@
 ---
 title: educationSynchronizationDataProvider 资源类型
-description: '代表源 SI 架构。 这样，系统以了解如何将传入的数据映射到 Azure Active Directory (Azure AD) 架构。 '
+description: '代表源 SIS 架构。 这使系统可以了解如何将传入数据映射到 azure Active Directory (azure AD) 架构。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: f592e75a3a6df1728839494ee41ac28065450d60
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515494"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507037"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>educationSynchronizationDataProvider 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表源 SI 架构。 这样，系统以了解如何将传入的数据映射到 Azure Active Directory (Azure AD) 架构。
+代表源 SIS 架构。 这使系统可以了解如何将传入数据映射到 azure Active Directory (azure AD) 架构。
 
-> **注意：** 此复杂类型是抽象类。 引用的特定类型的数据提供程序列出。
+> **注意:** 此复杂类型是抽象的。 请参阅列出的特定类型的数据提供程序。
 
-## <a name="derived-types"></a>派生的类型
+## <a name="derived-types"></a>派生类型
 | 类型 | 说明 |
 |:-|:-|:-|
-| [educationcsvdataprovider](educationcsvdataprovider.md) | 作为输入源用于 CSV 文件。 |
-| [educationpowerschooldataprovider](educationpowerschooldataprovider.md) | 用于 PowerSchool 作为输入源。 |
-| [educationonerosterapidataprovider](educationonerosterapidataprovider.md) | 作为输入源用于 OneRoster API。 |
+| [educationcsvdataprovider](educationcsvdataprovider.md) | 将 CSV 文件用作输入源。 |
+| [educationpowerschooldataprovider](educationpowerschooldataprovider.md) | 与 PowerSchool 用作输入源。 |
+| [educationonerosterapidataprovider](educationonerosterapidataprovider.md) | 与 OneRoster API 一起用于输入源。 |
 
 ## <a name="properties"></a>属性
 
-此类型不公开的任何属性。
+此类型不公开任何属性。
 <!--
 {
   "type": "#page.annotation",

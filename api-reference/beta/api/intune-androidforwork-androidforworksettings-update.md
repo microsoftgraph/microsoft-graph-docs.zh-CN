@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7f71d9087b457189d3796306e0585981c0e58855
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785144"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32498212"
 ---
 # <a name="update-androidforworksettings"></a>更新 androidForWorkSettings
 
@@ -54,12 +54,12 @@ PATCH /deviceManagement/androidForWorkSettings
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|使用 Google EMM API 的租户的绑定状态。 可取值为：`notBound`、`bound`、`boundAndValidated`、`unbinding`。|
 |lastAppSyncDateTime|DateTimeOffset|应用同步的上次完成时间|
 |lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|上次应用程序同步结果。 可取值为：`success`、`credentialsNotValid`、`androidForWorkApiError`、`managementServiceError`、`unknownError`、`none`。|
-|ownerUserPrincipalName|String|创建了企业的所有者 UPN|
+|ownerUserPrincipalName|字符串|创建了企业的所有者 UPN|
 |ownerOrganizationName|String|载入 Android for Work 时使用的组织名称|
 |lastModifiedDateTime|DateTimeOffset|Android for Work 设置的上次修改时间|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|指示哪些用户可以在 Android for Work 设备管理中注册设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
 |targetGroupIds|String collection|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
-|deviceOwnerManagementEnabled|布尔值|指示此帐户是否为使用 CloudDPC 的 Android 设备所有者管理 flighting。|
+|deviceOwnerManagementEnabled|布尔|指示此帐户是否为使用 CloudDPC 的 Android 设备所有者管理 flighting。|
 
 
 

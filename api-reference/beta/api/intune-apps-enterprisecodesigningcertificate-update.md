@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: cc97e3cceada031747dbbc32b40e0c9b6b8c31e6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31798843"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32496476"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>更新 enterpriseCodeSigningCertificate
 
@@ -55,8 +55,8 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的主题值。|
-|issuerName|String|证书的颁发者名称。|
-|常用|String|证书的 Issuer 值。|
+|issuerName|字符串|证书的颁发者名称。|
+|常用|字符串|证书的 Issuer 值。|
 |expirationDateTime|DateTimeOffset|证书到期日期。|
 |uploadDateTime|DateTimeOffset|上传 CodeSigning 证书时的日期时间。|
 

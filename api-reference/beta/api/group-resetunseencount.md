@@ -1,21 +1,21 @@
 ---
 title: 组：resetUnseenCount
-description: 重置当前用户自上次访问后未查看的所有帖子的 unseenCount。仅支持 Office 365 组。
+description: 重置当前用户自上次访问后未查看的所有帖子的 unseenCount。 仅支持 Office 365 组。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: aa37261a536437d0e82195ecfaae06de9e1c6a3a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524812"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502006"
 ---
 # <a name="group-resetunseencount"></a>组：resetUnseenCount
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-重置的上次访问后没有发现当前用户的所有帖子 unseenCount。 仅支持 Office 365 组。
+重置当前用户自上次访问后未查看的所有帖子的 unseenCount。 仅支持 Office 365 组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

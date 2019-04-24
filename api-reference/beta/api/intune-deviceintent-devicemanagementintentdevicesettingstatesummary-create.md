@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4bfe4c44bdd0ec2a68e58c3a881dbe00ae1b7f5e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787601"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32508426"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>创建 deviceManagementIntentDeviceSettingStateSummary
 

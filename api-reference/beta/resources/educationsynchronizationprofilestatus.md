@@ -1,36 +1,36 @@
 ---
 title: educationSynchronizationProfileStatus 资源类型
-description: '代表学校数据同步配置文件的同步状态。 '
+description: '表示学校数据同步配置文件的同步状态。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 12908f6454cb27c673935f1e4c64c921b7ff0dcd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523538"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507089"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>educationSynchronizationProfileStatus 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表学校数据[同步配置文件](educationsynchronizationprofile.md)的同步状态。 
+表示学校数据[同步配置文件](educationsynchronizationprofile.md)的同步状态。 
 
-> **注意：** 更新**educationSynchronizationProfileStatus**可能由于后台同步处理的异步特性延迟。
+> **注意:** 由于后台同步处理的异步特性, 对**educationSynchronizationProfileStatus**的更新可能会延迟。
 
 ## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:-|:-|:-|
-| [要获取同步的状态](../api/educationsynchronizationprofilestatus-get.md) | **educationSynchronizationProfileStatus** | 返回一个特定的同步配置文件的状态。 |
+| [获取同步状态](../api/educationsynchronizationprofilestatus-get.md) | **educationSynchronizationProfileStatus** | 返回特定同步配置文件的状态。 |
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **status** | educationSynchronizationStatus | 同步状态。可能的值为： `paused`， `inProgress`， `success`， `error`， `quarantined`， `validationError`。 |
-| **lastSynchronizationDateTime** | DateTimeOffset | 表示当观察的目录中最新更改的时间。  |
+| **status** | educationSynchronizationStatus | 同步的状态。可能的值为`paused`: `inProgress`、 `success`、 `error`、 `quarantined`、 `validationError`、。 |
+| **lastSynchronizationDateTime** | DateTimeOffset | 表示在目录中观察到的最新更改的时间。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 <!-- {

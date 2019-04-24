@@ -1,47 +1,47 @@
 ---
 title: governanceRoleSetting 资源类型
-description: " 规则，依此类推。"
+description: " 规则等。"
 localization_priority: Normal
 ms.openlocfilehash: a52769d4714608df11bdde826ca37907d7942e4e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508165"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506317"
 ---
 # <a name="governancerolesetting-resource-type"></a>governanceRoleSetting 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表一组在需要时创建或修改角色分配评估针对每个角色定义的配置。 例如，角色设置可能包括"最大工作分配持续时间"规则"MFA 上激活需要"规则，以及等。
+表示在创建或修改角色分配时需要评估的每个角色定义上的一组配置。 例如, 角色设置可能包括 "最大分配持续时间" 规则、"激活时需要 MFA" 规则等。
 
 ## <a name="methods"></a>方法
 
 | 方法          | 返回类型 |说明|
 |:---------------|:--------|:--------|
-|[List](../api/governancerolesetting-list.md) | [governanceRoleSetting](../resources/governancerolesetting.md)集合|列出角色设置对资源的集合。|
-|[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |读取属性和角色设置的关系。|
-|[Update](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |更新角色设置对象。 |
+|[List](../api/governancerolesetting-list.md) | [governanceRoleSetting](../resources/governancerolesetting.md)集合|列出资源的角色设置的集合。|
+|[获取](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |读取角色设置的属性和关系。|
+|[更新](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |更新角色设置对象。 |
 
 ## <a name="properties"></a>属性
 |属性               |类型                                      |说明|
 |:--------------------|:---------------------------------------|:----------|
-|id                   |String                                  |RoleSetting 的 id。|
-|resourceId           |String                                  |必需。 与关联的角色设置资源的 id。|
-|roleDefinitionId     |String                                  |必需。 角色设置相关联的角色定义 id。|
-|isDefault            |Boolean                                 |只读。 指示 roleSetting 是否是默认 roleSetting|
-|lastUpdatedDateTime  |DateTimeOffset                          |只读。 上次更新时间角色设置的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|lastUpdatedBy        |String                                  |只读。 显示上次更新时间 roleSetting 的管理员名称。|
-|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)集合|管理员尝试添加合格的角色分配时计算规则设置。|
-|adminMemberSettings  |[governanceRuleSetting](../resources/governancerulesetting.md)集合|管理员尝试添加直接成员角色分配时计算规则设置。|
-|userEligibleSettings |[governanceRuleSetting](../resources/governancerulesetting.md)集合|当用户尝试添加合格的角色分配时计算规则设置。 此时不支持的设置。|
-|userMemberSettings   |[governanceRuleSetting](../resources/governancerulesetting.md)集合|当用户尝试激活其角色分配时计算规则设置。|
+|id                   |String                                  |roleSetting 的 id。|
+|resourceId           |字符串                                  |必需。 与角色设置相关联的资源的 id。|
+|roleDefinitionId     |字符串                                  |必需。 与角色设置相关联的角色定义的 id。|
+|isDefault            |Boolean                                 |只读。 指示 roleSetting 是否为默认 roleSetting|
+|lastUpdatedDateTime  |DateTimeOffset                          |只读。 上次更新角色设置的时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|lastUpdatedBy        |String                                  |只读。 上次更新 roleSetting 的管理员的显示名称。|
+|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)集合|在管理员尝试添加符合条件的角色分配时评估的规则设置。|
+|adminMemberSettings  |[governanceRuleSetting](../resources/governancerulesetting.md)集合|在管理员尝试添加直接成员角色分配时评估的规则设置。|
+|userEligibleSettings |[governanceRuleSetting](../resources/governancerulesetting.md)集合|用户尝试添加符合条件的角色分配时评估的规则设置。 目前不支持该设置。|
+|userMemberSettings   |[governanceRuleSetting](../resources/governancerulesetting.md)集合|用户尝试激活他的角色分配时评估的规则设置。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|资源|[governanceResource](../resources/governanceresource.md)|只读。 此角色设置关联的资源。|
-|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|只读。 角色定义的强制执行与此角色设置。 |
+|资源|[governanceResource](../resources/governanceresource.md)|只读。 此角色设置的关联资源。|
+|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|只读。 使用此角色设置强制实施的角色定义。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

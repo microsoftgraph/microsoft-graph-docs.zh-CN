@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0e1bd6ff98e08127eee8c881c01d2b961dfe355b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806613"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32488706"
 ---
 # <a name="get-webapp"></a>获取 webApp
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 42a4167997fc3a4d5b1c4a8d9885951cc54583ae
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776911"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32498919"
 ---
 # <a name="completesignup-action"></a>completeSignup 操作
 

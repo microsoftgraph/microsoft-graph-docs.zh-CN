@@ -1,19 +1,19 @@
 ---
 title: 创建 identityProvider
-description: 通过指定显示名称、 identityProvider 类型、 客户端 ID 和客户端机密创建新 identityProvider。
+description: 通过指定显示名称、identityProvider 类型、客户端 ID 和客户端密码，创建新的 identityProvider。
 localization_priority: Normal
 ms.openlocfilehash: c0b005d729510fa68d9edd8bfea7b85687543cf2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514647"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501264"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过指定显示名称、 identityProvider 类型、 客户端 ID 和客户端机密创建新[identityProvider](../resources/identityprovider.md) 。
+通过指定显示名称、identityProvider 类型、客户端 ID 和客户端密码，创建新的 [identityProvider](../resources/identityprovider.md)。
 
 ## <a name="permissions"></a>权限
 
@@ -43,22 +43,22 @@ POST /identityProviders
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[identityProvider](../resources/identityprovider.md)对象的 JSON 表示形式。 下表中列出的所有属性都是必需的。
+在请求正文中，提供 [identityProvider](../resources/identityprovider.md) 对象的 JSON 表示形式。 下表中列出的所有属性均未必需属性。
 
 |属性|类型|说明|
 |:---------------|:--------|:----------|
-|clientId|String|应用程序的客户端 ID。 这是注册的标识提供程序的应用程序时所获得的客户端 ID。|
-|client_secret|String|应用程序客户端机密。 这是注册的标识提供程序的应用程序时所获得的客户端机密。|
+|clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
+|clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
 |name|String|标识提供程序的显示名称。|
-|type|String|标识提供程序类型。 它必须是下列值之一： <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|type|字符串|标识提供程序类型。 它必须是下列值之一: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应正文中的响应代码和[identityProvider](../resources/identityprovider.md)对象。 如果不成功，`4xx`与特定的详细信息，则返回错误。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [identityProvider](../resources/identityprovider.md) 对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
 
-下面的示例创建**identityProvider**。
+以下示例会创建 **identityProvider**。
 
 ##### <a name="request"></a>请求
 

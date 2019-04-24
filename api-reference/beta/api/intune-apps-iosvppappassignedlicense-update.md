@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5df0eb8e0b973f00d3fac70bfebd26da029cc7eb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786747"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32495531"
 ---
 # <a name="update-iosvppappassignedlicense"></a>更新 iosVppAppAssignedLicense
 
@@ -51,8 +51,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/as
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|userEmailAddress|String|用户电子邮件地址。|
-|userId|String|用户 ID。|
+|userEmailAddress|字符串|用户电子邮件地址。|
+|userId|字符串|用户 ID。|
 |userName|String|用户名。|
 |userPrincipalName|String|用户主体名称。|
 

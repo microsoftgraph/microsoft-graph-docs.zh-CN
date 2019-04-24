@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 7822528aacc9d6f104012d43004fbb9aabba127c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990801"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506690"
 ---
 # <a name="emailappusageusercounts-resource-type"></a>emailAppUsageUserCounts 资源类型
 
@@ -17,7 +17,7 @@ ms.locfileid: "27990801"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | 日期   |
+| reportRefreshDate | Date   |
 | mailForMac        | Int64  |
 | outlookForMac     | Int64  |
 | outlookForWindows | Int64  |
@@ -27,8 +27,8 @@ ms.locfileid: "27990801"
 | pop3App           | Int64  |
 | imap4App          | Int64  |
 | smtpApp           | Int64  |
-| reportDate        | 日期   |
-| reportPeriod      | String |
+| reportDate        | Date   |
+| reportPeriod      | 字符串 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

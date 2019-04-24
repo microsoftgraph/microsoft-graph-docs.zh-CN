@@ -5,15 +5,13 @@ ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
 ms.openlocfilehash: ed10b586ee55ccd32e81b03bdc6359ee13605877
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480164"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506522"
 ---
 # <a name="fieldvalueset-resource"></a>FieldValueSet 资源
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示 [listItem](listitem.md) 资源中的列值。
 
@@ -21,7 +19,8 @@ ms.locfileid: "30480164"
 
 下面是 **fieldValueSet** 资源的 JSON 表示形式。
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-       "keyProperty": "id", "openType": true } -->
+      "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
+       "baseType": "microsoft.graph.entity", "openType": true } -->
 
 ```json
 {
@@ -52,15 +51,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 你可以在单个查询中请求最多 12 个查找字段以及任意数量的常规字段。
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/FieldValueSet",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/fieldvalueset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Resources/FieldValueSet"
+} -->

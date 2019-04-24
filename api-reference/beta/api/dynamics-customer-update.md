@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 0d3c69d3e8ef7951fceefba875dbab2d9949db59
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365673"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458423"
 ---
 # <a name="update-customers"></a>更新客户
 更新 Dynamics 365 Business Central 的 customer 对象的属性。
@@ -37,7 +37,7 @@ PATCH /financials/companies('{id}')/customers('{id}')
 |标头         |值                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}。必需。 |
-|Content-Type   |application/json。         |
+|Content-Type   |application/json.         |
 |If-Match       |必需。 如果包含此请求标头, 且提供的 eTag 与**客户**的当前标记不匹配, 则不会更新**客户**。 |
 
 ## <a name="request-body"></a>请求正文

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: c3d36d06f0a3eb819af07d3edf512114a03c4409
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365708"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458444"
 ---
 # <a name="update-employees"></a>更新员工
 为 Dynamics 365 Business Central 更新 employee 对象的属性。
@@ -38,7 +38,7 @@ PATCH /financials/companies('{id}')/employees('{id}')
 |标头         |值                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}。必需。 |
-|Content-Type   |application/json。         |
+|Content-Type   |application/json.         |
 |If-Match       |必需。 如果包含此请求标头, 且提供的 eTag 与**员工**的当前标记不匹配, 则不会更新**员工**。 |
 
 ## <a name="request-body"></a>请求正文

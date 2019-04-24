@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: ac21262858137074ed92978f0ab6530052fcc2de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515676"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502166"
 ---
 # <a name="add-member"></a>添加成员
 
@@ -61,11 +61,11 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 ```
-在请求正文中，提供的 JSON 表示形式`id`您想要添加的[directoryObject](../resources/directoryobject.md)、[用户](../resources/user.md)或[组](../resources/group.md)对象。
+在请求正文中, 提供要添加的[directoryObject](../resources/directoryobject.md)、 `id` [user](../resources/user.md)或[group](../resources/group.md)对象的 JSON 表示形式。
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面展示了示例响应。
+>**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

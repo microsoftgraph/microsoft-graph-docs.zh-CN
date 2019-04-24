@@ -5,15 +5,13 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 599447ff1006fcfa5b17cc320777b49f36576ad5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518651"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463903"
 ---
 # <a name="mailboxsettings-resource-type"></a>mailboxSettings 资源类型
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 已登录用户的主邮箱的设置。
 
@@ -24,7 +22,7 @@ ms.locfileid: "29518651"
 |archiveFolder|string|用户存档文件夹的文件夹 ID。|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。|
 |语言|[localeInfo](localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
-|timeZone|string|用户邮箱的默认时区。|
+|timeZone|字符串|用户邮箱的默认时区。|
 |workingHours|[workingHours](workinghours.md)|特定时区用户一周的工作天数和小时数。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -52,15 +50,10 @@ ms.locfileid: "29518651"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "mailboxSettings resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mailboxsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 805927c25e4b9741aa742f75d0e86743e213d1de
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772263"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32478649"
 ---
 # <a name="list-androidforworkimportedpfxcertificateprofiles"></a>列出 androidForWorkImportedPFXCertificateProfiles
 

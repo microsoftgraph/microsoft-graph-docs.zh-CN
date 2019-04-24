@@ -1,24 +1,24 @@
 ---
 title: educationAssignmentRecipient 资源类型
-description: 使用**assignments.assignTo**属性中。 此超类别是抽象，您无法
+description: 在**assignTo**属性中使用。 此超类是抽象的, 无法
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 43ce19e62bf49932eb42b04e0bf22e4ab8cf0261
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511784"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507315"
 ---
 # <a name="educationassignmentrecipient-resource-type"></a>educationAssignmentRecipient 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用**assignments.assignTo**属性中。 此超类别是抽象，无法在分配给此值设置属性。 此超类别代表时发布工作分配工作分配应分配给用户。
+在**assignTo**属性中使用。 此超类是抽象的, 不能将赋值中的属性设置为此值。 此超类别表示在发布工作分配时应将分配分配给谁。
 
 
-[EducationAssignmentClassRecipient](educationassignmentclassrecipient.md)资源是此超类别的一个子类。
+[educationAssignmentClassRecipient](educationassignmentclassrecipient.md)资源是此超类的子类。
 
 ## <a name="properties"></a>属性
 无。

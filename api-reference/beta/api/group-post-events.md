@@ -1,15 +1,15 @@
 ---
 title: 创建事件
-description: 使用此 API 新建事件。
+description: 使用此 API 创建新事件。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 978f156302380edc05df79ec3a53c1ab0f853f41
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889952"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502157"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -71,7 +71,7 @@ Content-length: 285
 在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 
 #### <a name="response"></a>响应
-下面是一个响应示例。
+下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",

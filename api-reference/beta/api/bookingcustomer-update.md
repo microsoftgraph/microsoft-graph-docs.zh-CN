@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 90de81666335c1825e1d134f9b898ee4b6561664
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461729"
 ---
 # <a name="update-bookingcustomer"></a>更新 bookingcustomer
 
@@ -21,7 +21,7 @@ ms.locfileid: "29525309"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | BookingsAppointment.ReadWrite.All，Bookings.ReadWrite.All，Bookings.Manage.All   |
+|委派（工作或学校帐户） | BookingsAppointment, 全部, 全部登记, 全部, 预订。 all   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -40,11 +40,11 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|字符串|客户的名称。|
+|displayName|String|客户的名称。|
 |emailAddress|String|客户的 SMTP 地址。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[bookingCustomer](../resources/bookingcustomer.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[bookingCustomer](../resources/bookingcustomer.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -62,7 +62,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

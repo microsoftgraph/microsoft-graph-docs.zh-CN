@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c683b2ae19caa55c62f0af834fbb8b74d5fb904c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806375"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32471579"
 ---
 # <a name="create-carttoclassassociation"></a>创建 cartToClassAssociation
 
@@ -55,9 +55,9 @@ POST /deviceManagement/cartToClassAssociations
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
-|description|String|管理员提供的 CartToClassAssociation 说明。|
-|deviceCartIds|String 集合|要与类关联的设备购物车的标识符。|
-|classroomIds|String 集合|要与设备购物车关联的教室的标识符。|
+|description|字符串|管理员提供的 CartToClassAssociation 说明。|
+|deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
+|classroomIds|String collection|要与设备购物车关联的教室的标识符。|
 
 
 

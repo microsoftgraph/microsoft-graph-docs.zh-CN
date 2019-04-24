@@ -3,11 +3,11 @@ title: 更新图标
 description: 更新 icon 对象的属性。
 localization_priority: Normal
 ms.openlocfilehash: 995c67a54e6394e23ef58cc3dc730473b437c6f5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529703"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501579"
 ---
 # <a name="update-icon"></a>更新图标
 
@@ -40,7 +40,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|int|表示给定集合中图标的索引。|
-|set|string|表示图标所属的集合。可能的值是：`Invalid`、`ThreeArrows`、`ThreeArrowsGray`、`ThreeFlags`、`ThreeTrafficLights1`、`ThreeTrafficLights2`、`ThreeSigns`、`ThreeSymbols`、`ThreeSymbols2`、`FourArrows`、`FourArrowsGray`、`FourRedToBlack`、`FourRating`、`FourTrafficLights`、`FiveArrows`、`FiveArrowsGray`、`FiveRating`、`FiveQuarters`、`ThreeStars`、`ThreeTriangles``FiveBoxes`。|
+|set|string|表示图标所属的集合。 可取值为：`Invalid`、`ThreeArrows`、`ThreeArrowsGray`、`ThreeFlags`、`ThreeTrafficLights1`、`ThreeTrafficLights2`、`ThreeSigns`、`ThreeSymbols`、`ThreeSymbols2`、`FourArrows`、`FourArrowsGray`、`FourRedToBlack`、`FourRating`、`FourTrafficLights`、`FiveArrows`、`FiveArrowsGray`、`FiveRating`、`FiveQuarters`、`ThreeStars`、`ThreeTriangles`、`FiveBoxes`。|
 
 ## <a name="response"></a>响应
 

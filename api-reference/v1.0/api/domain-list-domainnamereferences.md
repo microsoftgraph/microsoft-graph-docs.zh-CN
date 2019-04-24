@@ -1,19 +1,19 @@
 ---
 title: 列出 domainNameReferences
-description: 通过对域的引用检索 directoryObject 列表。返回列表将包含依赖域的所有目录对象。
+description: 使用对域的引用检索 directoryObject 列表。 返回的列表将包含对域具有依赖性的所有目录对象。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4b9846f1a24b393609494542cf1785ec511f5b49
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963659"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467272"
 ---
 # <a name="list-domainnamereferences"></a>列出 domainNameReferences
 
-通过对域的引用检索 [directoryObject](../resources/directoryobject.md) 列表。返回列表将包含依赖域的所有目录对象。
+使用对域的引用检索[directoryObject](../resources/directoryobject.md)列表。 返回的列表将包含对域具有依赖性的所有目录对象。
 
 ## <a name="permissions"></a>权限
 

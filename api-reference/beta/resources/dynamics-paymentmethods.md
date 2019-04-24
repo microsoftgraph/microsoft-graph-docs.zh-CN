@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 1e4cd044d4b552a9239b742efb302633524ce22b
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366646"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507243"
 ---
 # <a name="paymentmethods-resource-type"></a>paymentMethods 资源类型
 代表 Dynamics 365 Business Central 中的付款方式, 如 PayPal、信用卡和银行帐户。
@@ -29,7 +29,7 @@ ms.locfileid: "30366646"
 | 属性           | 类型   |说明                                                  |
 |:-------------------|:-------|:------------------------------------------------------------|
 |id                  |GUID    |paymentMethods 的唯一 ID。 不可编辑。           |
-|code                |字符串  |指定付款方法代码。                           |
+|code                |string  |指定付款方法代码。                           |
 |displayName         |string  |指定付款方法的显示名称。                   |
 |lastModifiedDateTime|datetime|上次修改付款方法的日期/时间。 只读。|  
 

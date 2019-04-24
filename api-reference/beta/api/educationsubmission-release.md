@@ -1,28 +1,28 @@
 ---
-title: educationSubmission： 发行版
-description: " 指示完成分级。 此操作仅可通过教师。"
+title: 'educationSubmission: release'
+description: " 并指示已完成评分。 此操作仅可由教师完成。"
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: fb8d9ce6646cb7055f2edb4cc56c7d9784d96915
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530172"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464490"
 ---
-# <a name="educationsubmission-release"></a>educationSubmission： 发行版
+# <a name="educationsubmission-release"></a>educationSubmission: release
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此操作会使薪等级和学生向此提交操作相关联的反馈。 这将提交的状态从"提交"变为"发布"，并指示完成分级。 此操作仅可通过教师。
+此操作使与此提交相关联的评分和反馈可供学生使用。 这会将提交状态从 "已提交" 更改为 "已发布", 并指示已完成评分。 此操作仅可由教师完成。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite   |
+|委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
 |应用程序 | 不支持。 | 
 

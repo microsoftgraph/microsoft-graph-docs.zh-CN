@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1a8668fa78c5996b2d33af18e7cbd23a03df1200
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959766"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459708"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Update importedWindowsAutopilotDeviceIdentity
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 |:---|:---|:---|
 |id|String|对象的 GUID|
 |orderIdentifier|String|Windows autopilot 设备订单 Id。|
-|serialNumber|String|Windows autopilot 设备序列号。|
+|serialNumber|字符串|Windows autopilot 设备序列号。|
 |productKey|字符串|Windows autopilot 设备产品密钥。|
 |hardwareIdentifier|Binary|Windows autopilot 设备硬件 Blob。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|

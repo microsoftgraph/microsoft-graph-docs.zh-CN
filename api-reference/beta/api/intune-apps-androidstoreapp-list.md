@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 63043ee03267762d9b310e9dc8f555e85144b8d3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800600"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32496539"
 ---
 # <a name="list-androidstoreapps"></a>列出 androidStoreApps
 
