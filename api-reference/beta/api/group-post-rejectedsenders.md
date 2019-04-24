@@ -5,65 +5,60 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 12e3cab10c75a35e0abb0a1efe43b1c9d2adbf3f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514115"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502183"
 ---
-# <a name="create-rejectedsender"></a><span data-ttu-id="1aef7-103">创建 rejectedSender</span><span class="sxs-lookup"><span data-stu-id="1aef7-103">Create rejectedSender</span></span>
+# <a name="create-rejectedsender"></a><span data-ttu-id="305ca-103">创建 rejectedSender</span><span class="sxs-lookup"><span data-stu-id="305ca-103">Create rejectedSender</span></span>
+<span data-ttu-id="305ca-104">将新用户或组添加到 acceptedSender 列表中。</span><span class="sxs-lookup"><span data-stu-id="305ca-104">Add a new user or group to the rejectedSender list.</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="305ca-p101">在请求主体的 `@odata.id` 中指定用户或组。已拒绝的发件人列表中的用户无法发布到组对话（在 POST 请求 URL 中标识）。确保未在拒绝的发件人和接受的发件人列表中指定同一用户或组，否则会发生错误。</span><span class="sxs-lookup"><span data-stu-id="305ca-p101">Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot post to conversations of the group (identified in the POST request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
 
-<span data-ttu-id="1aef7-104">将新用户或组添加到 acceptedSender 列表中。</span><span class="sxs-lookup"><span data-stu-id="1aef7-104">Add a new user or group to the rejectedSender list.</span></span>
+## <a name="permissions"></a><span data-ttu-id="305ca-108">权限</span><span class="sxs-lookup"><span data-stu-id="305ca-108">Permissions</span></span>
+<span data-ttu-id="305ca-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="305ca-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="1aef7-p101">在请求主体的 `@odata.id` 中指定用户或组。已拒绝的发件人列表中的用户无法发布到组对话（在 POST 请求 URL 中标识）。确保未在拒绝的发件人和接受的发件人列表中指定同一用户或组，否则会发生错误。</span><span class="sxs-lookup"><span data-stu-id="1aef7-p101">Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot post to conversations of the group (identified in the POST request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.</span></span>
-
-## <a name="permissions"></a><span data-ttu-id="1aef7-108">权限</span><span class="sxs-lookup"><span data-stu-id="1aef7-108">Permissions</span></span>
-<span data-ttu-id="1aef7-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1aef7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="1aef7-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="1aef7-111">Permission type</span></span>      | <span data-ttu-id="1aef7-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1aef7-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="305ca-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="305ca-111">Permission type</span></span>      | <span data-ttu-id="305ca-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="305ca-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1aef7-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1aef7-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1aef7-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1aef7-114">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1aef7-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1aef7-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1aef7-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1aef7-116">Not supported.</span></span>    |
-|<span data-ttu-id="1aef7-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="1aef7-117">Application</span></span> | <span data-ttu-id="1aef7-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="1aef7-118">Not supported.</span></span> |
+|<span data-ttu-id="305ca-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="305ca-113">Delegated (work or school account)</span></span> | <span data-ttu-id="305ca-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="305ca-114">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="305ca-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="305ca-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="305ca-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="305ca-116">Not supported.</span></span>    |
+|<span data-ttu-id="305ca-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="305ca-117">Application</span></span> | <span data-ttu-id="305ca-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="305ca-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1aef7-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1aef7-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="305ca-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="305ca-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/rejectedSenders/$ref
 ```
-
-## <a name="request-headers"></a><span data-ttu-id="1aef7-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="1aef7-120">Request headers</span></span>
-| <span data-ttu-id="1aef7-121">标头</span><span class="sxs-lookup"><span data-stu-id="1aef7-121">Header</span></span>       | <span data-ttu-id="1aef7-122">值</span><span class="sxs-lookup"><span data-stu-id="1aef7-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="305ca-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="305ca-120">Request headers</span></span>
+| <span data-ttu-id="305ca-121">标头</span><span class="sxs-lookup"><span data-stu-id="305ca-121">Header</span></span>       | <span data-ttu-id="305ca-122">值</span><span class="sxs-lookup"><span data-stu-id="305ca-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1aef7-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1aef7-123">Authorization</span></span>  | <span data-ttu-id="1aef7-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1aef7-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="305ca-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="305ca-123">Authorization</span></span>  | <span data-ttu-id="305ca-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="305ca-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1aef7-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="1aef7-126">Request body</span></span>
-<span data-ttu-id="1aef7-127">在请求正文中，提供 user 或 group 对象的 ID。</span><span class="sxs-lookup"><span data-stu-id="1aef7-127">In the request body, supply the id of a user or group object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="305ca-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="305ca-126">Request body</span></span>
+<span data-ttu-id="305ca-127">在请求正文中，提供 user 或 group 对象的 ID。</span><span class="sxs-lookup"><span data-stu-id="305ca-127">In the request body, supply the id of a user or group object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1aef7-128">响应</span><span class="sxs-lookup"><span data-stu-id="1aef7-128">Response</span></span>
-<span data-ttu-id="1aef7-129">此方法返回 `204 No Content` 响应代码，不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="1aef7-129">This method returns `204 No Content` response code and no response body.</span></span>
+## <a name="response"></a><span data-ttu-id="305ca-128">响应</span><span class="sxs-lookup"><span data-stu-id="305ca-128">Response</span></span>
+<span data-ttu-id="305ca-129">此方法返回 `204 No Content` 响应代码，不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="305ca-129">This method returns `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1aef7-130">示例</span><span class="sxs-lookup"><span data-stu-id="1aef7-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="1aef7-131">请求</span><span class="sxs-lookup"><span data-stu-id="1aef7-131">Request</span></span>
-<span data-ttu-id="1aef7-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="1aef7-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="305ca-130">示例</span><span class="sxs-lookup"><span data-stu-id="305ca-130">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="305ca-131">请求</span><span class="sxs-lookup"><span data-stu-id="305ca-131">Request</span></span>
+<span data-ttu-id="305ca-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="305ca-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
-  "name": "create_rejectedsender"
+  "name": "create_directoryobject_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref
+POST https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
+  "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-
-#### <a name="response"></a><span data-ttu-id="1aef7-133">响应</span><span class="sxs-lookup"><span data-stu-id="1aef7-133">Response</span></span>
-<span data-ttu-id="1aef7-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="1aef7-134">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="305ca-133">响应</span><span class="sxs-lookup"><span data-stu-id="305ca-133">Response</span></span>
+<span data-ttu-id="305ca-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="305ca-134">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -74,15 +69,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create rejectedSender",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-post-rejectedsenders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->
