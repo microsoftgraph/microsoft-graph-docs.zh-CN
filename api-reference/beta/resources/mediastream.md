@@ -1,31 +1,31 @@
 ---
 title: mediaStream 资源类型
-description: MediaStream 类型。
+description: mediaStream 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4867675da3427beb790beb240cd7bc0b86f04317
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519960"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581535"
 ---
 # <a name="mediastream-resource-type"></a>mediaStream 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-MediaStream 类型。
+mediaStream 类型。
 
 ## <a name="properties"></a>属性
 
 | 属性    | 类型    | 说明                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| Direction   | String  | 方向。 可能的值为`inactive`， `sendOnly`， `receiveOnly`， `sendReceive`。                  |
-| 标签       | String  | 媒体流标签。                                                                                       |
-| MediaType   | String  | 媒体类型。 可能的值是`unknown`， `audio`， `video`， `videoBasedScreenSharing`， `data`。        |
-| serverMuted | Boolean | 如果媒体服务器将设为静音。                                                                          |
-| SourceId    | String  | 源 id。                                                                                                |
+| direction   | String  | 方向。 可能的值为`inactive`、 `sendOnly`、 `receiveOnly`、 `sendReceive`。                  |
+| label       | String  | 媒体流标签。                                                                                       |
+| 群组   | String  | 媒体类型。 可能的值为`unknown`、 `audio` `video` `videoBasedScreenSharing`、、 `data`。        |
+| serverMuted | Boolean | 如果服务器已将媒体设为静音。                                                                          |
+| sourceId    | String  | 源 ID。                                                                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

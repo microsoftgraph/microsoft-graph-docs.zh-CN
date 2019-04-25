@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: TextColumn
 localization_priority: Normal
 ms.openlocfilehash: c69dc7c30bff0f43327ec256af6071e34de6b898
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481494"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582890"
 ---
 # <a name="textcolumn-resource-type"></a>TextColumn 资源类型
 

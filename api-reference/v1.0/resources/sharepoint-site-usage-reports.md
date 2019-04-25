@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 999be8cc10eb0bfa3c937d2fe3e5a849e7423a34
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575067"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579217"
 ---
 # <a name="sharepoint-site-usage-reports"></a>SharePoint 网站使用情况报表
 

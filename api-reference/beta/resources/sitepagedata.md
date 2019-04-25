@@ -6,19 +6,19 @@ title: SitePageData
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 78661f5ce6336f4430297d8969ff8cd82b761c9a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644019"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583394"
 ---
 # <a name="sitepagedata-resource"></a>sitePageData 资源
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**SitePageData**资源表示[web 部件][]的属性。 Web 部件，这些属性有所不同，这是 OpenType 没有固定的属性。
+**sitePageData**资源表示[web 部件][]的属性。 由于这些属性因 web 部件而异, 这是没有固定属性的 OpenType。
 
-[web 部件]: webpart.md
+[.webpart]: webpart.md
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -34,7 +34,7 @@ ms.locfileid: "29644019"
 ```
 
 ## <a name="properties"></a>属性
-此资源具有没有固定的属性，而 OpenType 包含定义 web 部件所需的所有属性。
+此资源没有固定属性, 但它是包含定义 web 部件所需的所有属性的 OpenType。
 
 <!--
 {

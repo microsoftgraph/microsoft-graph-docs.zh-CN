@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: a1a1ed26b7f0e659af0b7aeebae7f6da456afddf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943478"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580287"
 ---
 # <a name="messagerule-resource-type"></a>messageRule 资源类型
 
@@ -68,7 +68,7 @@ ms.locfileid: "27943478"
 |[Get rule](../api/messagerule-get.md) | [messageRule](messagerule.md) |读取 **messageRule** 对象的属性和关系。|
 |[Create](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |通过指定一组条件和操作来创建 **messageRule** 对象。|
 |[Update](../api/messagerule-update.md) | [messageRule](messagerule.md) |为 **messageRule** 对象更改可写属性并保存更改。 |
-|[Delete](../api/messagerule-delete.md) | 无 |删除指定的 **messageRule** 对象。 |
+|[删除](../api/messagerule-delete.md) | 无 |删除指定的 **messageRule** 对象。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

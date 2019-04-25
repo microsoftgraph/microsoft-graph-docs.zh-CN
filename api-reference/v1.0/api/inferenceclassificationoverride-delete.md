@@ -3,11 +3,11 @@ title: 删除 inferenceClassificationOverride
 description: 删除由其 ID 指定的替代。
 localization_priority: Normal
 ms.openlocfilehash: 303593fd666d24e2d3a1b095898c9756afd850bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832886"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577600"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>删除 inferenceClassificationOverride
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3d58516c9e6b72f8412f3a75be53092f18b9fe2f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970007"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583165"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>列出 targetedManagedAppConfigurations
 

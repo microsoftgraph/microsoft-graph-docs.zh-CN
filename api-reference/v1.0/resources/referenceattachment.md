@@ -3,11 +3,11 @@ title: referenceAttachment 资源类型
 description: 到 OneDrive for Business 云驱动器或其他支持的存储位置上的文件（例如文本文件或 Word 文档）的链接，附加到事件、邮件或帖子中。
 localization_priority: Normal
 ms.openlocfilehash: 0696ac4b0f93ed4982ec576a15afe071486f9c88
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853121"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579413"
 ---
 # <a name="referenceattachment-resource-type"></a>referenceAttachment 资源类型
 
@@ -26,10 +26,10 @@ ms.locfileid: "27853121"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentType|String|附件的内容类型。|
-|id|String|附件 ID。只读。|
-|isInline|布尔|如果附件显示为内嵌在嵌入对象的正文中，则设置为 true。|
+|id|字符串|附件 ID。只读。|
+|isInline|Boolean|如果附件显示为内嵌在嵌入对象的正文中，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|名称|String|显示在用于表示嵌入附件的图标下方的文本。这不必是实际的文件名。|
+|name|String|显示在用于表示嵌入附件的图标下方的文本。这不必是实际的文件名。|
 |size|Int32|存储在邮件附件中的元数据大小（以字节为单位）。 此值不表示实际文件的大小。|
 
 ## <a name="relationships"></a>关系

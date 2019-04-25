@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 12409685e21b338a86b392f32449b006a0e958f7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960544"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581742"
 ---
 # <a name="message-forward"></a>邮件：转发
 

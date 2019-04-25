@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: bcb69c09d621ce3cce006fd9130afa0a70e4cdb8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912818"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582911"
 ---
 # <a name="teamsuseractivityusercounts-resource-type"></a>teamsUserActivityUserCounts 资源类型
 
@@ -17,11 +17,11 @@ ms.locfileid: "27912818"
 
 | 属性            | 类型   |
 | :------------------ | :----- |
-| reportRefreshDate   | 日期   |
-| reportDate          | 日期   |
+| reportRefreshDate   | Date   |
+| reportDate          | Date   |
 | teamChatMessages    | Int64  |
 | privateChatMessages | Int64  |
-| 呼叫               | Int64  |
+| calls               | Int64  |
 | 会议            | Int64  |
 | otherActions        | Int64  |
 | reportPeriod        | String |

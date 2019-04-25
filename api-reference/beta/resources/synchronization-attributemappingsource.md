@@ -1,27 +1,27 @@
 ---
 title: attributeMappingSource 资源类型
-description: '定义如何值应为源对象中提取 （或转换）。 例如，它可以是简单取自源对象上, 一个给定属性的值或它可以是字符串串联/提取/替换基于多个源属性更为复杂的表达式。 '
+description: '定义应如何从源对象提取 (或转换) 值。 例如, 它可以是从源对象的给定属性中获取的简单值, 也可以是基于多个源属性的字符串串联/提取/替换的更复杂表达式。 '
 localization_priority: Normal
 ms.openlocfilehash: 1d15cd82c0a58ac8bdd3ac5805abc166322f27fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510405"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582135"
 ---
 # <a name="attributemappingsource-resource-type"></a>attributeMappingSource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义如何值应为源对象中提取 （或转换）。 例如，它可以是简单取自源对象上, 一个给定属性的值或它可以是字符串串联/提取/替换基于多个源属性更为复杂的表达式。 
+定义应如何从源对象提取 (或转换) 值。 例如, 它可以是从源对象的给定属性中获取的简单值, 也可以是基于多个源属性的字符串串联/提取/替换的更复杂表达式。 
 
 ## <a name="properties"></a>属性
 
 | 属性              | 类型                      | 说明               |
 |:----------------------|:--------------------------|:--------------------------|
-|表达式             |String                     |此**attributeMappingSource**对象的表达式等效表示形式。|
-|name                   |String                     |映射源名称参数。 具体取决于**type**属性值，这可以是函数，源属性或用于以常量值的名称的名称。 |
-|参数             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)集合 | 如果该对象代表一个函数，列出函数参数。 参数包含**attributeMappingSource**对象本身，允许使用复杂的表达式。 如果**类型**不是`Function`，此属性将为空数组。 |
+|表达式             |String                     |此**attributeMappingSource**对象的等效表达式表示形式。|
+|name                   |String                     |映射源的 Name 参数。 根据**type**属性值, 这可以是函数的名称、源属性的名称或要使用的常数值。 |
+|parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)集合 | 如果此对象代表函数, 则列出函数参数。 参数由**attributeMappingSource**对象本身组成, 从而允许复杂的表达式。 如果**type**不`Function`是, 则此属性将为 null/空数组。 |
 |type                   | String                    |此属性映射源的类型。 可取值为：`Attribute`、`Constant`、`Function`。 默认值为 `Attribute`。| 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -47,7 +47,7 @@ ms.locfileid: "29510405"
 
 ## <a name="json-examples"></a>JSON 示例
 
-简单属性对属性映射
+属性映射的简单属性
 
 <!-- {
   "blockType": "resource",
@@ -65,7 +65,7 @@ ms.locfileid: "29510405"
 }
 ```
 
-源属性中提取前 8 个字符的表达式
+从 source 属性提取前8个字符的表达式
 
 <!-- {
   "blockType": "resource",

@@ -6,11 +6,11 @@ title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: e9525882b08aaae5500ce23a4b54e95d0b0e0d65
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481802"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583695"
 ---
 # <a name="sitecollection-resource"></a>SiteCollection 资源
 
@@ -46,7 +46,7 @@ ms.locfileid: "30481802"
 |:---------------------|:---------|:---------------------------------------------------
 | **主机名称**         | string   | 网站集的主机名称。只读。
 | **dataLocationCode** | string   | 此网站集所在位置的地理区域代码。 只读。
-| **根**             | [root][] | 如果存在, 则表示这是 SharePoint 中的根网站集。 只读。
+| **根**             | [根][] | 如果存在, 则表示这是 SharePoint 中的根网站集。 只读。
 
 [root]: root.md
 

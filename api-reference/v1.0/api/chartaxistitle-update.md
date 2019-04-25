@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: a38e768904539c011a44ebc8b242a86f22ce43fb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932684"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580075"
 ---
 # <a name="update-chartaxistitle"></a>更新 chartaxistitle
 
@@ -42,11 +42,11 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |text|string|表示坐标轴标题。|
-|visible|boolean|指定坐标轴标题可见性的布尔值。|
+|visible|布尔|指定坐标轴标题可见性的布尔值。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChartAxisTitle](../resources/chartaxistitle.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookChartAxisTitle](../resources/chartaxistitle.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

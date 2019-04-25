@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1b26dfa8330a2c00f8d51659a45000e3a04a5c66
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988768"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577460"
 ---
 # <a name="create-ioslobapp"></a>创建 iosLobApp
 
@@ -48,9 +48,9 @@ POST /deviceAppManagement/mobileApps
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|说明|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 077b7b4431671d2e615517c030df7868c580f581
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974257"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580026"
 ---
 # <a name="update-chartfont"></a>更新 chartfont
 
@@ -41,16 +41,16 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bold|boolean|表示字体的加粗状态。|
+|bold|布尔|表示字体的加粗状态。|
 |color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
-|italic|boolean|表示字体的斜体状态。|
+|italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字体大小（例如 11）|
-|underline|string|应用于字体的下划线类型。 可能的值为： `None`， `Single`。|
+|underline|string|应用于字体的下划线类型。 可能的值为: `None`、 `Single`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChartFont](../resources/chartfont.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookChartFont](../resources/chartfont.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

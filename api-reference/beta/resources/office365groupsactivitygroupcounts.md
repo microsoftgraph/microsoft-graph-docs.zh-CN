@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: b202d5189c1edeeeaa45d447aa7cc078dd263858
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572484"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581420"
 ---
 # <a name="office365groupsactivitygroupcounts-resource-type"></a>office365GroupsActivityGroupCounts 资源类型
 
@@ -17,11 +17,11 @@ ms.locfileid: "29572484"
 
 | 属性          | 类型   | 说明                              |
 | :---------------- | :----- | ---------------------------------------- |
-| reportRefreshDate | Date   | 内容最晚日期。          |
-| total             | Int64  | 组的总数。              |
-| 活动            | Int64  | 活动的组的数目。 组被视为活动发生以下任一： 组邮箱收到电子邮件;用户可以查看、 编辑、 共享，或同步中 SharePoint 文档库; 文件用户查看 SharePoint 页面; 例如：用户发布、 读取或喜欢 Yammer 组中的邮件。 |
-| reportDate        | Date   | 在其的组数处于活动状态日期。 |
-| reportPeriod      | String | 报告涵盖天数。    |
+| reportRefreshDate | Date   | 内容的最新日期。          |
+| total             | Int64  | 总组数。              |
+| 工作            | Int64  | 活动组的数量。 如果发生以下任一情况, 则会将组视为活动的: 组邮箱收到电子邮件;用户在 SharePoint 文档库中查看、编辑、共享或同步文件;用户查看了 SharePoint 页面;用户在 Yammer 组中投递、阅读或赞了邮件。 |
+| reportDate        | Date   | 多个组处于活动状态的日期。 |
+| reportPeriod      | String | 报告覆盖的天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

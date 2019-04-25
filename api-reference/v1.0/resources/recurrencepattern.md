@@ -3,11 +3,11 @@ title: recurrencePattern 资源类型
 description: '描述了定期事件的重复发生频率。 '
 localization_priority: Normal
 ms.openlocfilehash: ebdb8a71d9f3acfb40191a7148f55999f6158aa1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892181"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579385"
 ---
 # <a name="recurrencepattern-resource-type"></a>recurrencePattern 资源类型
 
@@ -33,10 +33,10 @@ ms.locfileid: "27892181"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |dayOfMonth|Int32|事件在相应月份的多少号发生。 如果 **type** 为 `absoluteMonthly` 或 `absoluteYearly`，此为必需属性。 |
-|daysOfWeek|dayOfWeek 集合|事件在星期几（一系列值）发生。 可能的值为： `sunday`， `monday`， `tuesday`， `wednesday`， `thursday`， `friday`， `saturday`。 <br>如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，且 **daysOfWeek** 指定超过一天，事件遵循相应模式的第一天规则。 <br> 如果 **type** 为 `weekly`、`relativeMonthly` 或 `relativeYearly`，此为必需属性。|
-|firstDayOfWeek|dayOfWeek|周的第一天。 可能的值为： `sunday`， `monday`， `tuesday`， `wednesday`， `thursday`， `friday`， `saturday`。 默认值为 `sunday`。 如果 **type** 为 `weekly`，此为必需属性。 |
-|index|weekIndex|指定事件在 **daysOfsWeek** 中指定的允许天数的哪个实例上发生，从当月的第一个实例开始计数。 可能的值为： `first`， `second`， `third`， `fourth`， `last`。 默认值为 `first`。 如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，请使用此可选属性。 |
-|interval|Int32|间隔的单元数，可以是天数、周数、月数或年数，具体视 **type** 而定。 此为必需属性。 |
+|daysOfWeek|dayOfWeek 集合|事件在星期几（一系列值）发生。 可取值包括：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。 <br>如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，且 **daysOfWeek** 指定超过一天，事件遵循相应模式的第一天规则。 <br> 如果 **type** 为 `weekly`、`relativeMonthly` 或 `relativeYearly`，此为必需属性。|
+|firstDayOfWeek|dayOfWeek|周的第一天。 可取值包括：`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。 默认值为 `sunday`。 如果 **type** 为 `weekly`，此为必需属性。 |
+|index|weekIndex|指定事件在 **daysOfsWeek** 中指定的第几个星期几实例发生，从相应月份的第一个实例开始计算。 可能的值包括 `first`、`second`、`third`、`fourth`、`last`。 默认值为 `first`。 如果 **type** 为 `relativeMonthly` 或 `relativeYearly`，请使用此可选属性。 |
+|interval|Int32|间隔的单元数，可以是天数、周数、月数或年数，具体视 **type** 而定。 必需。 |
 |month|Int32|事件发生的月份。  这是一个介于 1 到 12 之间的数字。|
 |type|recurrencePatternType|定期模式类型：`daily`、`weekly`、`absoluteMonthly`、`relativeMonthly`、`absoluteYearly` 或 `relativeYearly`。 此为必需属性。|
 

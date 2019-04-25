@@ -3,11 +3,11 @@ title: 提醒资源类型
 description: 用户日历中的事件提醒。
 localization_priority: Normal
 ms.openlocfilehash: e8aa591f078b90249b36d3dc2f666ddac4502461
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815720"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579343"
 ---
 # <a name="reminder-resource-type"></a>提醒资源类型
 

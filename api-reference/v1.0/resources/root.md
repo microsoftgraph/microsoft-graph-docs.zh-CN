@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 方根
 localization_priority: Normal
 ms.openlocfilehash: af69a3242cb8f4673302a8ee08814b06deeb72e3
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481942"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579273"
 ---
 # <a name="root-resource-type"></a>根资源类型
 

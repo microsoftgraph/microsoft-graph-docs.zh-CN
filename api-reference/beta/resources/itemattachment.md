@@ -1,19 +1,19 @@
 ---
 title: itemAttachment 资源类型
-description: 联系人、 事件或附加到另一个事件的消息
+description: 附加到另一个事件的联系人、事件或邮件,
 localization_priority: Normal
 ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640418"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581094"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-联系人、 事件或附加到另一个[事件](../resources/event.md)、[消息](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[发布](../resources/post.md)的消息。  
+附加到另一个[事件](../resources/event.md)、[邮件](../resources/message.md)、 [Outlook 任务](../resources/outlooktask.md)或[公告](../resources/post.md)的联系人、事件或邮件。  
 
 派生自 [附件](attachment.md)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "29640418"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentType|String|附件的内容类型。|
-|id|String| 附件 ID。|
+|id|字符串| 附件 ID。|
 |isInline|Boolean|如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的时间和日期。|
 |name|String|附件的显示名称。|
@@ -37,7 +37,7 @@ ms.locfileid: "29640418"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|项|[OutlookItem](outlookitem.md)|附加的联系人、 消息或事件中。 导航属性。|
+|项|[OutlookItem](outlookitem.md)|附加的联系人、消息或事件。 导航属性。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

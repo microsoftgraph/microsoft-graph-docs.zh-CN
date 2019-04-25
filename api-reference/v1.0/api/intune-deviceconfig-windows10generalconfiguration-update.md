@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a83940e3892ea02a9416ccbf97d99de63a57a3c1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970826"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578797"
 ---
 # <a name="update-windows10generalconfiguration"></a>更新 windows10GeneralConfiguration
 
@@ -48,11 +48,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |enterpriseCloudPrintDiscoveryEndPoint|String|发现云打印机的终结点。|
 |enterpriseCloudPrintOAuthAuthority|String|获取 OAuth 令牌的身份验证终结点。|
@@ -99,8 +99,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|删除隔离的恶意软件之前的天数。 有效值为 0 至 90|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|获取或设置要按威胁级别对检测到的恶意软件执行的 Defender 操作。|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender 进行系统扫描的星期几。 可取值为：`userDefined`、`everyday`、`sunday`、`monday`、`tuesday`、`wednesday`、`thursday`、`friday`、`saturday`。|
-|defenderFilesAndFoldersToExclude|String 集合|要从扫描和实时保护中排除的文件和文件夹。|
-|defenderFileExtensionsToExclude|String 集合|要从扫描和实时保护中排除的文件扩展名。|
+|defenderFilesAndFoldersToExclude|String collection|要从扫描和实时保护中排除的文件和文件夹。|
+|defenderFileExtensionsToExclude|String collection|要从扫描和实时保护中排除的文件扩展名。|
 |defenderScanMaxCpu|Int32|扫描期间最大 CPU 使用率。 有效值为 0 至 100|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|监视文件活动的值。 可取值为：`userDefined`、`disable`、`monitorAllFiles`、`monitorIncomingFilesOnly` 或 `monitorOutgoingFilesOnly`。|
 |defenderProcessesToExclude|String 集合|要从扫描和实时保护中排除的进程。|

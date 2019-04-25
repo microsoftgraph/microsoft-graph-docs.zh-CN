@@ -6,34 +6,34 @@ title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640656"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583401"
 ---
 # <a name="sitepage-resource"></a>sitePage 资源
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此资源代表 SitePages[列表][]中的页面。
-它包含标题、 布局和[web 部件][]s 的集合。
+此资源表示 "SitePages"[列表][]中的页面。
+它包含[web 部件][]s 的标题、布局和集合。
 
 ## <a name="tasks-on-a-page"></a>页面上的任务
 
-为**sitePage**资源提供了下列任务。
-下面的所有示例都是相对于[网站][]，如： `https://graph.microsoft.com/{api-version}/sites/{site-id}`。
+以下任务可用于**sitePage**资源。
+下面的所有示例都是相对于[网站][]而言的`https://graph.microsoft.com/{api-version}/sites/{site-id}`, 例如:。
 
 | 常见任务                     | HTTP 方法
 |:--------------------------------|:------------------------------
-| [列出页面][]                  | 获取 /pages
-| [Get page][]                    | 获取 /pages/ {页-id}
-| [创建][]                      | POST /pages
-| [删除][]                      | 删除 /pages/ {页-id}
-| [发布][]                     | 发布 /pages/ {页-id} / 发布
+| [列出页面][]                  | 获取/pages
+| [获取页面][]                    | 获取/pages/{page-id}
+| [创建][]                      | POST/pages
+| [删除][]                      | 删除/pages/{page-id}
+| [发布][]                     | POST/pages/{page-id}/publish
 
 [列出页面]: ../api/sitepage-list.md
-[Get page]: ../api/sitepage-get.md
+[获取页面]: ../api/sitepage-get.md
 [创建]: ../api/sitepage-create.md
 [删除]: ../api/sitepage-delete.md
 [发布]: ../api/sitepage-publish.md
@@ -75,29 +75,29 @@ ms.locfileid: "29640656"
 
 ## <a name="properties"></a>属性
 
-**SitePage**资源具有以下属性。
+**sitePage**资源具有以下属性。
 
 | 属性名称    | 类型                         | 说明
 |:-----------------|:-----------------------------|:---------------------------
-| contentType      | [contentTypeInfo][]          | 页面内容类型。
+| contentType      | [contentTypeInfo][]          | 页面的内容类型。
 
 ## <a name="page-content"></a>页面内容
 
-**SitePage**资源具有以下内容的字段。
+**sitePage**资源具有以下内容字段。
 
 | 属性名称      | 类型                       | 说明
 |:-------------------|:---------------------------|:---------------------------
 | title              | 字符串                     | 页面的标题。
-| pageLayout         | string                     | 页的页面布局的名称。
-| web 部件           | [web 部件][]                | Web 部件页上。
+| pageLayout         | string                     | 页面的页面布局的名称。
+| 部件           | [.webpart][]                | 页面上的 web 部件。
 
 ## <a name="authoring-metadata"></a>创作元数据
 
-**SitePage**资源具有创作相关的以下元数据。 PublishingState 属性将反映创作 like 签出或发布的状态页。
+**sitePage**资源具有以下与创作相关的元数据。 publishingState 属性将反映页面创作状态 (如 "已签出" 或 "已发布")。
 
 | 属性名称          | 类型                   | 说明
 |:-----------------------|:-----------------------|:---------------------------
-| publishingState        | [publicationFacet][]   | 发布状态和页的 MM.mm 版本。
+| publishingState        | [publicationFacet][]   | 页面的发布状态和 MM.mm 版本。
 
 以下属性继承自 ** [baseItem][]**。
 
@@ -106,15 +106,15 @@ ms.locfileid: "29640656"
 | id                   | string            | 项的唯一标识符。只读。
 | name                 | string            | 项目名称/标题。
 | createdBy            | [identitySet][]   | 此项的创建者的标识。 只读。
-| eTag                 | string            | 该项目的 ETag。只读。
+| eTag                 | 字符串            | 该项目的 ETag。只读。
 | lastModifiedBy       | [identitySet][]   | 此项的最后一个修饰符的标识。 只读。
 | lastModifiedDateTime | DateTimeOffset    | 上次修改项目的日期和时间。只读。
 | parentReference      | [itemReference][] | 上次修改项目的日期和时间。只读。
-| WebUrl               | string (url)      | 在浏览器中显示此项目的 URL。只读。
+| webUrl               | string (url)      | 在浏览器中显示此项目的 URL。只读。
 
 ## <a name="relationships"></a>关系
 
-**SitePage**资源没有与其他资源的关系。
+**sitePage**资源不具有与其他资源的关系。
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -125,8 +125,8 @@ ms.locfileid: "29640656"
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
-[site]: site.md
-[web 部件]: webpart.md
+[网站]: site.md
+[.webpart]: webpart.md
 
 <!--
 {

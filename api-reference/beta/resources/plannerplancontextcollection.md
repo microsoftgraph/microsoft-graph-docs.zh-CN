@@ -1,26 +1,26 @@
 ---
 title: plannerPlanContextCollection 资源类型
-description: '**PlannerPlanContextCollection**资源表示的外部上下文计划链接到的集合。 此资源是开放的类型，plannerPlan 对象的一部分。 属性值对中的值是 plannerPlanContext 对象。'
+description: '**plannerPlanContextCollection**资源表示规划所链接到的外部上下文的集合。 此资源是打开的类型, 并且是 plannerPlan 对象的一部分。 属性-值对中的值是 plannerPlanContext 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 6ec515a164c5b0fca6334930b55a4b5d4e73b7d9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516495"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581714"
 ---
 # <a name="plannerplancontextcollection-resource-type"></a>plannerPlanContextCollection 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-**PlannerPlanContextCollection**资源表示的外部上下文计划链接到的集合。 此资源是开放的类型， [plannerPlan](plannerplan.md)对象的一部分。 属性值对中的值是[plannerPlanContext](plannerplancontext.md)对象。
+**plannerPlanContextCollection**资源表示规划所链接到的外部上下文的集合。 此资源是打开的类型, 并且是[plannerPlan](plannerplan.md)对象的一部分。 属性-值对中的值是[plannerPlanContext](plannerplancontext.md)对象。
 
 
 ## <a name="properties"></a>属性
-您可以定义此打开类型的属性。 属性值应为独特标识符值，该值代表外部上下文与属性名称。 属性值必须是[plannerPlanContext](plannerplancontext.md)对象。 基于 OData 要求，在打开的类型的属性名称不能包含下列字符： `.`， `:`， `%`， `@`。 需要使用 URL 编码进行编码这些字符。 在收藏夹列表中删除项目，设置对属性的值`null`。
+您可以定义此开放类型的属性。 属性值应是表示外部上下文作为属性名称的独特标识符。 属性值必须是[plannerPlanContext](plannerplancontext.md)对象。 根据 OData 要求, 开放式类型中的属性名称不能包含以下字符: `.`、 `:`、 `%`、 `@`。 需要使用 URL 编码对这些字符进行编码。 若要删除收藏夹列表中的项, 请将该属性的值设置`null`为。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

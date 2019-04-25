@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d47441a66ab0b2ed3602a69f4a92a06050708f67
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936499"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577831"
 ---
 # <a name="get-a-group-setting"></a>获取组设置
 
@@ -29,18 +29,18 @@ ms.locfileid: "27936499"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 
-获取特定租户范围或组设置。
+获取特定的租户范围或组设置。
 
 ```http
 GET /groupSettings/{id}
 GET /groups/{id}/settings/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 > 注意：不支持 $filter。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称 | 说明 |
 |:----------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -51,7 +51,7 @@ GET /groups/{id}/settings/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [groupSetting](../resources/groupsetting.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[groupSetting](../resources/groupsetting.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

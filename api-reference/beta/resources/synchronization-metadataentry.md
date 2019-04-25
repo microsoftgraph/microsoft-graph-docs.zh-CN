@@ -3,11 +3,11 @@ title: metadataEntry 资源类型
 description: 给定对象的元数据。
 localization_priority: Normal
 ms.openlocfilehash: a6b9170144917e4c7b66bb52c1efb17d93167ef0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511777"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581750"
 ---
 # <a name="metadataentry-resource-type"></a>metadataEntry 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "29511777"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |Key|String|元数据属性的名称。|
-|值|String|元数据属性的值。|
+|value|String|元数据属性的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

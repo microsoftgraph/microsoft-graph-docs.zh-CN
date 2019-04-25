@@ -1,31 +1,31 @@
 ---
 title: teamsAsyncOperationStatus 枚举类型
-description: 介绍 teamsAsyncOperation 的当前状态。
+description: 描述 teamsAsyncOperation 的当前状态。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e9138adcc646677955a12091a3fb15badfd39f13
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578860"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>teamsAsyncOperationStatus 枚举类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-介绍[teamsAsyncOperation](teamsasyncoperation.md)的当前状态。
+描述[teamsAsyncOperation](teamsasyncoperation.md)的当前状态。
 
 ## <a name="members"></a>成员
 
 | 成员 | 值| 说明 |
 |:---------------|:--------|:----------|
-|Invalid|0%|值无效|
-|NotStarted|$1|尚未开始此操作。|
-|InProgress|-2|正在运行的操作。|
-|succeeded|-3|操作成功。|
-|failed|-4|操作失败。|
+|无效|0|值无效。|
+|notStarted|1|操作尚未开始。|
+|inProgress|2 |操作正在运行。|
+|完成|3 |操作成功。|
+|未能|4 |操作失败。|
 <!--
 {
   "type": "#page.annotation",

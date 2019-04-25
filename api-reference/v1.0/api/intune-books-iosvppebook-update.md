@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 859428a352d3db6e7c5cbd0688878d3df672eaf5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966871"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577110"
 ---
 # <a name="update-iosvppebook"></a>更新 iosVppEBook
 
@@ -48,9 +48,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|displayName|String|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|description|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|id|字符串|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|字符串|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|说明|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publisher|String|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|电子图书的发布日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|

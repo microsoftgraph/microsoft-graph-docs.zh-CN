@@ -3,11 +3,11 @@ title: multiValueLegacyExtendedProperty 资源类型
 description: 包含值集合的扩展属性。
 localization_priority: Normal
 ms.openlocfilehash: 87823559bad3e149ef3c4d4d6f21f43cf66c41fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827032"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580266"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>multiValueLegacyExtendedProperty 资源类型
 
@@ -19,16 +19,16 @@ ms.locfileid: "27827032"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | 受支持的资源实例有：[message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md)、[calendar](../resources/calendar.md)、[contact](../resources/contact.md) 或 [contactFolder](../resources/contactfolder.md)。请注意，不支持 [post](../resources/post.md) 组。 | 在新建或现有的支持资源实例中创建 **multiValueLegacyExtendedProperty**。 |
-|[Get](../api/multivaluelegacyextendedproperty-get.md) |通过 [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 对象扩展的受支持的资源实例（[message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md)、[calendar](../resources/calendar.md)、[contact](../resources/contact.md)、[contactFolder](../resources/contactfolder.md) 或 [post](../resources/post.md) 组）。 |使用 `$expand` 获取具有扩展属性的资源实例。|
+|[帖子](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | 受支持的资源实例有：[message](../resources/message.md)、[mailFolder](../resources/mailfolder.md)、[event](../resources/event.md)、[calendar](../resources/calendar.md)、[contact](../resources/contact.md) 或 [contactFolder](../resources/contactfolder.md)。请注意，不支持 [post](../resources/post.md) 组。 | 在新建或现有的支持资源实例中创建 **multiValueLegacyExtendedProperty**。 |
+|[获取](../api/multivaluelegacyextendedproperty-get.md) |通过 [multiValueLegacyExtendedProperty](../resources/message.md) 对象扩展的受支持的资源实例（[message](../resources/mailfolder.md)、[mailFolder](../resources/event.md)、[event](../resources/calendar.md)、[calendar](../resources/contact.md)、[contact](../resources/contactfolder.md)、[contactFolder](../resources/post.md) 或 [post](multivaluelegacyextendedproperty.md) 组）。 |使用 `$expand` 获取具有扩展属性的资源实例。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|ID|string|属性标识符。只读。|
+|id|string|属性标识符。只读。|
 |value|string collection|属性值的集合。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 

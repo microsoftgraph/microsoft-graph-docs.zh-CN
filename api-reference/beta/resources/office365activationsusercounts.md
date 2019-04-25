@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 0d5ed2af02f429f5fd4d6e92b408d2e8e420f4d0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574542"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581511"
 ---
 # <a name="office365activationsusercounts-resource-type"></a>office365ActivationsUserCounts 资源类型
 
@@ -17,11 +17,11 @@ ms.locfileid: "29574542"
 
 | 属性                 | 类型   | 说明                              |
 | :----------------------- | :----- | ---------------------------------------- |
-| reportRefreshDate        | Date   | 内容最晚日期。          |
-| productType              | String | 产品类型，如"Office 365 ProPlus"、"Project 客户端"或"Visio Pro for Office 365"。 |
-| 分配                 | Int64  | 产品许可证已分配的用户数。 |
-| 激活                | Int64  | 已激活产品的用户数。 |
-| sharedComputerActivation | Int64  | 共享计算机使用该产品的用户数。 |
+| reportRefreshDate        | Date   | 内容的最新日期。          |
+| productType              | String | 产品类型, 如 "Office 365 专业增强版"、"Project Client" 或 "Visio Pro for Office 365"。 |
+| 赋予                 | Int64  | 已为产品许可证分配了用户数量。 |
+| 已                | Int64  | 激活产品的用户数。 |
+| sharedComputerActivation | Int64  | 在共享计算机上使用该产品的用户数。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

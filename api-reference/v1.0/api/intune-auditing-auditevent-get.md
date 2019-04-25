@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 48509d87a9ff5396fe0b3ebc52c338a15aba336c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974949"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579935"
 ---
 # <a name="get-auditevent"></a>获取 auditEvent
 

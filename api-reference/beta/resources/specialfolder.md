@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
 ms.openlocfilehash: ff1bee4ce71bf76c94951d298f80db74609710e6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481543"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582274"
 ---
 # <a name="specialfolder-resource-type"></a>SpecialFolder 资源类型
 
@@ -51,7 +51,7 @@ ms.locfileid: "30481543"
 
 以下是 OneDrive 个人版和 OneDrive for Business 中可用的特殊文件夹。
 
-| Name        | 文件夹 ID    | 说明                                                              |
+| 名称        | 文件夹 ID    | 说明                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
 | 应用根目录    | `approot`    | 应用程序的个人文件夹。通常位于 `/Apps/{Application Name}` 中 |
 | 本机照片 | `cameraroll` | 本机照片备份文件夹。不适用于 OneDrive for Business。   |

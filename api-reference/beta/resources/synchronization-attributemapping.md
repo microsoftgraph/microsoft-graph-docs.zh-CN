@@ -1,31 +1,31 @@
 ---
 title: attributeMapping 资源类型
-description: 定义同步过程中流给定的目标属性的值应如何。
+description: 定义如何在同步过程中传递给定目标属性的值。
 localization_priority: Normal
 ms.openlocfilehash: 16235cce73a17b462f6f44aedf0c8759277983c1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641874"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582088"
 ---
 # <a name="attributemapping-resource-type"></a>attributeMapping 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义同步过程中流给定的目标属性的值应如何。
+定义如何在同步过程中传递给定目标属性的值。
 
 ## <a name="properties"></a>属性
 
 | 属性                  | 类型                      | 说明    |
 |:--------------------------|:--------------------------|:---------------|
-|defaultValue               | 字符串                    |默认值用于以防**source**属性计算结果为`null`。 可选。|
+|默认               | String                    |要在对`null`**源**属性进行求值的情况下使用的默认值。 可选。|
 |exportMissingReferences    |String                     |仅供内部使用。|
-|flowBehavior               |attributeFlowBehavior      |定义此属性时应可导出到目标目录。 可能的值为：`FlowWhenChanged`和`FlowAlways`。 默认值为 `FlowWhenChanged`。 |
-|flowType                   |attributeFlowType          |定义此属性时应更新目标目录中。 可能的值为： `Always` （默认）， `ObjectAddOnly` （仅当创建新对象）， `MultiValueAddOnly` （仅当更改正在添加新值到多值属性）。 |
-|matchingPriority           |Int32                      |如果大于 0，则此属性将用于执行源和目标目录之间的对象的初始匹配。 同步引擎将尝试查找匹配对象属性使用的第一次匹配优先级最低值。 如果找不到下, 一匹配 priority 属性将使用，依此类推直到找到匹配项，或没有匹配属性会保留。 仅对于预计具有唯一的值，如电子邮件、 属性应用作匹配的属性。|
-|source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | 定义如何值应为源对象中提取 （或转换）。 |
-|targetAttributeName        |String                     |对目标对象的属性的名称。 |
+|flowBehavior               |attributeFlowBehavior      |定义何时应将此属性导出到目标目录。 可能的值为`FlowWhenChanged` : `FlowAlways`和。 默认值为 `FlowWhenChanged`。 |
+|flowType                   |attributeFlowType          |定义应何时在目标目录中更新此属性。 可能的值为`Always` : (默认值`ObjectAddOnly` ), (仅在创建新对象时`MultiValueAddOnly` ) (仅当更改将新值添加到多值属性时)。 |
+|matchingPriority           |Int32                      |如果高于 0, 则此属性将用于执行源目录和目标目录之间的对象的初始匹配。 同步引擎将尝试使用具有最小匹配优先级值的属性来查找匹配的对象。 如果未找到, 则将使用具有下一个匹配的优先级的属性, 在找到匹配项或不留下更多匹配属性的情况下, 将使用该属性。 应仅将应具有唯一值的属性 (如电子邮件) 用作匹配属性。|
+|源                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | 定义应如何从源对象提取 (或转换) 值。 |
+|targetAttributeName        |String                     |目标对象上的属性的名称。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
