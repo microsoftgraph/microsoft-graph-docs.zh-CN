@@ -1,19 +1,19 @@
 ---
 title: 'synchronizationJob: validateCredentials'
-description: 验证的凭据是在租户中有效。
+description: 验证凭据在租户中是否有效。
 localization_priority: Normal
 ms.openlocfilehash: 122d673e89f15697b2fdeefbcefb516cf9ad89ca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519001"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537117"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-验证的凭据是在租户中有效。
+验证凭据在租户中是否有效。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,11 +40,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Boolean|当`true`、`credentials`将忽略参数并将改为验证以前保存的凭据 （如果有）。 |
-|凭据|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)集合|若要验证的凭据。 忽略何时`useSavedCredentials`，则参数`true`。|
+|useSavedCredentials|布尔值|时`true`, 将`credentials`忽略该参数, 而改为验证以前保存的凭据 (如果有)。 |
+|凭据|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)集合|要验证的凭据。 当`useSavedCredentials`参数为`true`时忽略。|
 
 ## <a name="response"></a>响应
-验证是否成功，则此方法返回`204, No Content`响应代码。 它不返回任何响应正文中。
+如果验证成功, 此方法将`204, No Content`返回响应代码。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 

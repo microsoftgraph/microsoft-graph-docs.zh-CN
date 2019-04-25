@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: dc460f702089496f3de46aaca45b4b1b3ff49d58
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980578"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534715"
 ---
 # <a name="list-worksheets"></a>列出工作表
 
@@ -42,7 +42,7 @@ GET /workbook/worksheets
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[WorkbookWorksheet](../resources/worksheet.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[WorkbookWorksheet](../resources/worksheet.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

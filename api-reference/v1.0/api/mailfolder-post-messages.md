@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 50eac4d20ff5ce82298b74dbfff2da510bd49a27
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565427"
 ---
 # <a name="create-message"></a>创建邮件
 

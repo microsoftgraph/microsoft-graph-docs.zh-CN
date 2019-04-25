@@ -2,11 +2,11 @@
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是物理和逻辑网络隔离的 Microsoft 企业云服务实例, 这些实例限制在特定国家/地区的地理边界内, 并由当地人员运营。
 ms.openlocfilehash: a32d8bde766718aa0f6f6080ed4b8ff4e3e7f520
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889903"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526304"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -60,8 +60,8 @@ ms.locfileid: "31889903"
 
 | Microsoft Graph 功能 | Microsoft Cloud for US Government | 由世纪互联运营的 Microsoft 云中国 | Microsoft 云德国 |
 |---------------------------|----------------|----------------|----------------|
-| 用户 | ✔ | ✔ | ✔ |
-| 组 | ✔ | ✔ | ✔ |
+| Users | ✔ | ✔ | ✔ |
+| Groups | ✔ | ✔ | ✔ |
 | Excel | ✔| ✔* | ✔ |
 | OneDrive | ✔ | ✔* | ✔ |
 | Outlook 邮件 | ✔ | ✔ | ✔ |

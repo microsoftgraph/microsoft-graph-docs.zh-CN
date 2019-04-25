@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: bf078e34f216dde5a3daf3bcf0cecd27517e7da7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941441"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565413"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 
@@ -34,14 +34,14 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-查询 URL 为文件夹 ID 或已知文件夹名称中指定的父文件夹。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
+将查询 URL 中的父文件夹指定为文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。
 
 ## <a name="request-headers"></a>请求标头
 
 | 标头 | 值 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必填。 |
-| Content-Type | `application/json`. 必填。 |
+| Authorization | `Bearer {token}`. 必需。 |
+| Content-Type | `application/json`. 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应代码和响应正文的[mailFolder](../resources/mailfolder.md)资源。
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[mailFolder](../resources/mailfolder.md)资源。
 
 ## <a name="example"></a>示例
 
@@ -78,7 +78,7 @@ Content-length: 159
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 
-> **注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

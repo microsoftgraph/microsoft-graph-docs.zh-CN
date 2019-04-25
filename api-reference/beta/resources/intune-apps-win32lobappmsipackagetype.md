@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bf4c76615bb2b72545c502513450b2d5f4baef6e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796155"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534442"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>win32LobAppMsiPackageType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31796155"
 |:---|:---|:---|
 |perMachine|0|指示每计算机应用程序包。|
 |perUser|1|指示每用户应用程序包。|
-|dualPurpose|双面|指示一个双用途应用程序包。|
+|dualPurpose|2 |指示一个双用途应用程序包。|
 
 
 

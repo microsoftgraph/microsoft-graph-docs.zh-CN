@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 0602b02592bec5210f243f77654a52ba96e6746a
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366800"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526151"
 ---
 # <a name="dynamics-365-business-central-api-overview-preview"></a>Dynamics 365 Business 中央 API 概述 (预览)
 Dynamics 365 business Central 是一个易于使用和调整的一体式业务管理解决方案, 可帮助您连接业务并做出更明智的决策。 它提供了业务的端到端视图, 使您能够管理财务、自动化和保护供应链、更智能化地销售和改进客户服务、使项目按时完成并在预算范围之内, 并优化您的操作。

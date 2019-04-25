@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: da8d93f955fcac0530d093a33d9018930767e710
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657516"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537734"
 ---
 # <a name="create-schedulinggroup"></a>创建 schedulingGroup
 

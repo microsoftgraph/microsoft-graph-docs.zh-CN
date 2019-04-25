@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: d66911b1906df828ee4e1b345e8090070ddebab9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517559"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536948"
 ---
 # <a name="table-databodyrange"></a>Table:DataBodyRange
 

@@ -5,25 +5,25 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: cda1dde9b22b9304fd412405758435be2f6143bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516313"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535696"
 ---
 # <a name="alerttrigger-resource-type"></a>alertTrigger 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含有关触发检测属性的信息 （警报实体中存在属性）。
+包含有关触发检测的属性 (警报实体中存在属性) 的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|name|String|充当检测触发器属性的名称。|
-|type|String|用于解释： 键值对中属性的类型。 例如，String、 Boolean、 等。|
-|值|String|充当检测触发器属性的值。|
+|name|String|充当检测触发器的属性的名称。|
+|类型|字符串|用于解释的键: 值对中的属性的类型。 例如, String、Boolean 等。|
+|value|String|充当检测触发器的属性的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

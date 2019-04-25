@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: cb3973c082b1711b2fe27113c55732d8937d92d0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805108"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534239"
 ---
 # <a name="update-windowsmanageddevice"></a>更新 windowsManagedDevice
 
@@ -115,7 +115,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|String|集成的电路卡标识符, 它是 SIM 卡的唯一标识号。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|String 集合|此设备实例的范围标记 id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|String collection|此设备实例的范围标记 id 的列表。 继承自[managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsActiveMalwareCount|Int32|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的此 windows 设备的活动恶意软件的计数|
 |windowsRemediatedMalwareCount|Int32|从[managedDevice](../resources/intune-devices-manageddevice.md)继承的此 windows 设备的修正的恶意软件的计数|
 |notes|String|由 IT 管理员创建的设备上的注释继承自[managedDevice](../resources/intune-devices-manageddevice.md)|

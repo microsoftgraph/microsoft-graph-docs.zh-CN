@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b6a1b678b77cf4bd4d20d9d3d0a68178dbc07151
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526919"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535983"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: range
 

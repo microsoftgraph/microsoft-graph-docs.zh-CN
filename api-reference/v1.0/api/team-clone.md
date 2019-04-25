@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c3b6b8e9615491275f981a759fabc4ed6a683373
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889924"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534722"
 ---
 # <a name="clone-a-team"></a>克隆团队
 

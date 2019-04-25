@@ -1,19 +1,19 @@
 ---
-title: 列表 servicePrincipal memberOf
-description: 获取主体此服务是直接成员的组和目录角色。 此操作是不可传递的。
+title: 列出 servicePrincipal memberOf
+description: 获取此服务主体是其直接成员的组和目录角色。 此操作不可传递。
 localization_priority: Normal
 ms.openlocfilehash: 84f82f632ef9c8f7e933d024f4d7df958415f140
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524203"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537469"
 ---
-# <a name="list-serviceprincipal-memberof"></a>列表 servicePrincipal memberOf
+# <a name="list-serviceprincipal-memberof"></a>列出 servicePrincipal memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取主体此服务是直接成员的组和目录角色。 此操作是不可传递的。
+获取此服务主体是其直接成员的组和目录角色。 此操作不可传递。
 
 ## <a name="permissions"></a>权限
 

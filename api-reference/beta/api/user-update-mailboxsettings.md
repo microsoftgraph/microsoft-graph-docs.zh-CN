@@ -1,15 +1,15 @@
 ---
 title: 获取用户的邮箱设置
-description: 更新用户邮箱的一个或多个设置。这包括自动答复（收到发件人的电子邮件时自动通知发件人）、区域设置（语言和国家/地区）、时区和工作时间的设置。
+description: 更新用户邮箱的一个或多个设置。 这包括自动答复的设置 (在收到电子邮件时自动通知人员)、区域设置 (语言和国家/地区)、时区和工作时间。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 90140a5c6f7822730b172dbc5a424c97b2fafc39
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516222"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536555"
 ---
 # <a name="update-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -21,7 +21,7 @@ ms.locfileid: "29516222"
 
 **注意**：不能创建或删除任何邮箱设置。
 
-更新用户的首选时区时，可以指定 Windows 时区或 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（亦称为“Olson 时区”）。 下面的[示例 2](#request-2)中所示，您便可以进一步自定义时区。
+更新用户的首选时区时，可以指定 Windows 时区或 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（亦称为“Olson 时区”）。 您还可以进一步自定义时区, 如下面的[示例 2](#request-2)所示。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -50,7 +50,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。 还可以设置仅供将来的日期范围内的此类通知。|
+|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。 只能将此类通知设置为将来日期范围。|
 |语言|[localeInfo](../resources/localeinfo.md)|用户的区域设置信息，包括首选语言和国家/地区。|
 |timeZone|string|用户邮箱的默认时区。|
 |workingHours|[workingHours](../resources/workinghours.md)|用户工作的小时数、一周的天数和时区。|
@@ -99,7 +99,7 @@ Content-Type: application/json
 }
 ```
 ##### <a name="response-1"></a>响应 1
-该响应包括自动答复的更新设置。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+该响应包括自动答复的更新设置。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_1",

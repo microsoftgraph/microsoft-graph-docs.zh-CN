@@ -1,19 +1,19 @@
 ---
-title: 获取 Contract
+title: 获取合同
 description: 检索 contract 对象的属性和关系。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ba6ba3dd1e0dc631f5aeb61dd6d714e9d7a81bb6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917424"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566176"
 ---
-# <a name="get-contract"></a>获取 Contract
+# <a name="get-contract"></a>获取合同
 
-检索 [contract](../resources/contract.md) 对象的属性和关系。
+检索[contract](../resources/contract.md)对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -48,7 +48,7 @@ GET /contracts/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Contract](../resources/contract.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[Contract](../resources/contract.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

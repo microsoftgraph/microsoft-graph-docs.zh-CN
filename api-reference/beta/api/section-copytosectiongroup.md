@@ -1,23 +1,23 @@
 ---
-title: 'section: copyToSectionGroup'
+title: '部分: copyToSectionGroup'
 description: 将分区复制到特定分区组。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 0b67f140871b6fa81c81f3e5ffceee492b62b3af
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514164"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537846"
 ---
-# <a name="section-copytosectiongroup"></a>section: copyToSectionGroup
+# <a name="section-copytosectiongroup"></a>部分: copyToSectionGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将分区复制到特定分区组。
 
-对于 Copy 操作，请遵循异步调用模式：首先调用 Copy 操作，然后轮询该操作终结点获取结果。
+对于复制操作, 请遵循异步调用模式: 首先调用复制操作, 然后轮询操作终结点以获取结果。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,15 +43,15 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供包含操作所需参数的 JSON 对象。
+在请求正文中, 提供一个 JSON 对象, 其中包含您的操作所需的参数。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|若要将复制到的 SharePoint 网站的 id。 仅当将复制到 Office 365 团队网站使用。|
-|siteId|String|SharePoint 网站复制到的 id。 仅当将复制到 Office 365 团队网站使用。|
-|groupId|String|要复制到的组的 ID。仅在复制到 Office 365 组时使用。|
-|id|String|必需。目标分区组的 ID。 |
-|renameAs|String|副本的名称。默认为现有项的名称。 |
+|siteCollectionId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
+|siteId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
+|groupId|String|要复制到的组的 id。 仅在复制到 Office 365 组时使用。|
+|id|String|必需。 目标分区组的 id。 |
+|renameAs|String|副本的名称。 默认值为现有项目的名称。 |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||
@@ -59,7 +59,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。轮询 Operation-Location 终结点以[获取复制操作的状态](onenoteoperation-get.md)。
+如果成功, 此方法将`202 Accepted`返回响应代码和`Operation-Location`标头。 轮询操作-位置终结点以[获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

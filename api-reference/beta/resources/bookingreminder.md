@@ -5,25 +5,25 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 0e5188a5a440134d11404c102b4641fc98cad04f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526079"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535474"
 ---
 # <a name="bookingreminder-resource-type"></a>bookingReminder 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-表示当并向其发送电子邮件提醒。
+表示何时以及何时发送电子邮件提醒。
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
-|message|String|提醒中的消息。|
-|Offset|持续时间|开始前应发送提醒的约会的时间量。 它表示[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式。|
-|recipients|String| Shouold 接收人员提醒。 可取值为：`allAttendees`、`staff`、`customer`。|
+|message|String|提醒中的邮件。|
+|一定|持续时间|约会开始前的时间量应发送提醒。 它以[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。|
+|recipients|String| shouold 收到提醒的人员。 可取值为：`allAttendees`、`staff`、`customer`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,23 +1,23 @@
 ---
 title: 修补程序通道
-description: 更新指定的频道的属性。
+description: 更新指定通道的属性。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4c3a03aaab52da62f56ca376035e56a9b8584832
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984337"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565574"
 ---
 # <a name="patch-channel"></a>修补程序通道
 
 
 
-更新指定的[频道](../resources/channel.md)的属性。
+更新指定[通道](../resources/channel.md)的属性。
 
-> **注意**： 没有应用程序权限和此 API 的已知的问题。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。
+> **注意**: 应用程序权限和此 API 存在一个已知问题。 有关详细信息, 请参阅[已知问题列表](/graph/known-issues#application-permissions)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -28,7 +28,7 @@ ms.locfileid: "27984337"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All |
 
-> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ PATCH /teams/{id}/channels/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[信道](../resources/channel.md)对象的 JSON 表示形式。
+在请求正文中, 提供[通道](../resources/channel.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: eac07b5d3e81e3e3098fb63bbf0be838c7d51b2c
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366894"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537046"
 ---
 # <a name="delete-threat-intelligence-indicator"></a>删除威胁情报指标
 
@@ -23,9 +23,9 @@ ms.locfileid: "30366894"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | ThreatIndicators application.readwrite.ownedby |
+| 委派（工作或学校帐户）     | ThreatIndicators.ReadWrite.OwnedBy |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ThreatIndicators application.readwrite.ownedby |
+| 应用程序                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP 请求
 

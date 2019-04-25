@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2f9c4608aaa8d951b5a5fed6b499643e5a4d63d0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956337"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565560"
 ---
 # <a name="get-datapolicyoperation"></a>获取 dataPolicyOperation
 
@@ -20,9 +20,9 @@ ms.locfileid: "27956337"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  User.Export.All User.Read.All  |
+|委派（工作或学校帐户） |  将用户导出为 all、user、Read。 all  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | User.Export.All User.Read.All | 
+|应用程序 | 将用户导出为 all、user、Read。 all | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /dataPolicyOperations/{id}
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[dataPolicyOperation](../resources/datapolicyoperation.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[dataPolicyOperation](../resources/datapolicyoperation.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 <!-- {

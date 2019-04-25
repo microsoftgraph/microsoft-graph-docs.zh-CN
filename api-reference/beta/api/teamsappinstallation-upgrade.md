@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1000bcbb8aeaa26cd1b580bd4c11a4018a3a82f9
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458643"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536731"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>升级团队中的应用程序
 

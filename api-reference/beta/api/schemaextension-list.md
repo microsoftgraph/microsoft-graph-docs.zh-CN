@@ -1,20 +1,20 @@
 ---
-title: 列出 schemaExtensions
-description: '获取由您拥有当前租户 （即可以是任何应用程序创建的 schemaExtension 对象的列表 '
+title: 列出 schemaExtension
+description: '获取您在当前租户中拥有的任何应用程序创建的 schemaExtension 对象的列表 (可 '
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: a320cc0261c40ee8b87dcc658c6ca146d77190e6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529157"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537767"
 ---
-# <a name="list-schemaextensions"></a>列出 schemaExtensions
+# <a name="list-schemaextensions"></a>列出 schemaExtension
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取你在当前租户中所拥有的任何应用创建的 [schemaExtension](../resources/schemaextension.md) 对象（可以是 **InDevelopment**、**Available**、或 **Deprecated** 状态）及其他应用拥有的标记为 **Available** 的所有其他架构扩展的列表。 
+获取您在当前租户中拥有的任何应用 (可以是**InDevelopment**、**可用**或弃用) 创建的[schemaExtension](../resources/schemaextension.md)对象的列表****, 以及被标记为**的其他应用程序所拥有的其他所有架构扩展。可用**。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,10 +45,10 @@ GET /schemaExtensions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [schemaExtension](../resources/schemaextension.md) 对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[schemaExtension](../resources/schemaextension.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-以下示例演示了如何通过筛选扩展的唯一 **ID** 在所有可访问的扩展中查找特定的扩展。 
+下面的示例演示如何通过筛选其唯一**id**来查看特定项的所有可访问扩展。 
 <!-- {
   "blockType": "request",
   "name": "get_schemaextensions"

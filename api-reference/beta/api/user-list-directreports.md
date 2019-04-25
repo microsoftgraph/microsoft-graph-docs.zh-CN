@@ -1,27 +1,25 @@
 ---
-title: 列出 directReports
-description: 获取用户的直接下属。返回指定此用户作为经理的用户和联系人。
-localization_priority: Normal
+title: List directReports
+description: 获取用户的直接下属。 返回指定此用户作为经理的用户和联系人。
+localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d56b8dc4579f40156e30a46b00af0f5bfcd82b97
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520345"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536538"
 ---
-# <a name="list-directreports"></a>列出 directReports
+# <a name="list-directreports"></a>List directReports
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-获取用户的直接下属。返回指定此用户作为经理的用户和联系人。
+获取用户的直接下属。 返回指定此用户作为经理的用户和联系人。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read、User.ReadWrite、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | 如果是, 则为用户读取、用户读取、全部、全部、全部、directory.accessasuser.all、全部、全部、全部、目录。    |
 |委派（个人 Microsoft 帐户） | User.Read、User.ReadWrite    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -52,7 +50,7 @@ GET /users/{id | userPrincipalName}/directReports
   "name": "get_directreports"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/directReports
+GET https://graph.microsoft.com/v1.0/me/directReports
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -78,15 +76,10 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-list-directreports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

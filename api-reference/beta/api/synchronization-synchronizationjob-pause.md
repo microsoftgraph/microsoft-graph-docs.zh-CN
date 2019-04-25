@@ -1,19 +1,19 @@
 ---
-title: synchronizationJob： 暂停
-description: 暂时停止同步。 所有的进度，包括作业状态保持不变，且该作业将继续从停止时开始调用的地方。
+title: 'synchronizationJob: pause'
+description: 临时停止同步。 所有进度 (包括作业状态) 均保持不变, 作业将从开始调用时停止的位置继续。
 localization_priority: Normal
 ms.openlocfilehash: 9f8cac05511b5efd17234ccf16b763999418bf2a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513919"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537168"
 ---
-# <a name="synchronizationjob-pause"></a>synchronizationJob： 暂停
+# <a name="synchronizationjob-pause"></a>synchronizationJob: pause
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-暂时停止同步。 所有的进度，包括作业状态保持不变，且该作业将继续从停止时[启动](../api/synchronization-synchronizationjob-start.md)调用的地方。
+临时停止同步。 所有进度 (包括作业状态) 均保持不变, 作业将从[开始](../api/synchronization-synchronizationjob-start.md)调用时停止的位置继续。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,12 +42,12 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 ## <a name="response"></a>响应
 
-如果成功，返回`204 No Content`响应。 它不返回任何响应正文中。
+如果成功, 则返回`204 No Content`响应。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_pause"
@@ -57,7 +57,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。
+响应示例如下所示。
 <!-- {
   "blockType": "response",
   "truncated": true,

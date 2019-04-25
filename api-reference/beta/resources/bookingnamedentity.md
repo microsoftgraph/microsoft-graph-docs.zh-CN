@@ -5,22 +5,22 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 1cee769181fdf8dce694050cdbc2658fdf29ece4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515319"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535450"
 ---
 # <a name="bookingnamedentity-resource-type"></a>bookingNamedEntity 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-这是提供显示名称，例如 Microsoft 预订实体[bookingBusiness](bookingbusiness.md)、 [bookingPerson](bookingperson.md)、 [bookingService](bookingservice.md)的基类型。
+这是 Microsoft 预订实体的基本类型, 可提供显示名称, 例如, [bookingBusiness](bookingbusiness.md)、 [bookingPerson](bookingperson.md)、 [bookingService](bookingservice.md)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|String|派生实体，哪些接口与客户的名称。|
+|displayName|String|派生实体的名称, 与客户进行交互。|
 |id|String| 派生实体的 ID。 只读。|
 
 ## <a name="relationships"></a>关系

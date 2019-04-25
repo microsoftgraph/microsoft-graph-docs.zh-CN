@@ -1,19 +1,19 @@
 ---
 title: 'synchronizationSchema: filterOperators'
-description: 列出所有支持的范围筛选器中的运算符。
+description: 列出作用域筛选器支持的所有运算符。
 localization_priority: Normal
 ms.openlocfilehash: 68e0c9f583e92989213d1442aee1610b1495bae0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641706"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537123"
 ---
 # <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出所有支持的[范围筛选器](../resources/synchronization-filter.md)的运算符。
+列出[作用域筛选器](../resources/synchronization-filter.md)支持的所有运算符。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,12 +44,12 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200, OK`响应代码和响应正文中的[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)集合对象。
+如果成功, 此方法在响应`200, OK`正文中返回响应代码和[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)集合对象。
 
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_filteroperators"
@@ -59,9 +59,9 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。
+响应示例如下所示。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将返回实际呼叫中的所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性将在实际调用中返回。
 
 <!-- {
   "blockType": "response",

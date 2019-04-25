@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 616a57bc31eab557a2b4ea9ab017ca3b43885491
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510587"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536813"
 ---
 # <a name="list-tablecolumncollection"></a>列出 TableColumnCollection
 

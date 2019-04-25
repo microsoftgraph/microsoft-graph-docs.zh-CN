@@ -5,11 +5,11 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d62fb12c094307fcd09f3e4600046b818ec4bbaa
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760956"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521906"
 ---
 # <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>向 Azure AD v2.0 终结点注册应用
 

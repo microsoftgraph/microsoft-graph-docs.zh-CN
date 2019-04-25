@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: d2bdc1be9e504bc72ce12ffe924b6da0812b99ce
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642448"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535471"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 
@@ -85,20 +85,20 @@ ms.locfileid: "29642448"
 |:---------------|:--------|:----------|
 |assistantName|String|联系人助理的姓名。|
 |birthday|DateTimeOffset|联系人的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|类别|String collection|与联系人关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
+|categories|String collection|与联系人关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
 |changeKey|String|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |children|String collection|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
 |createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|部门|String|联系人所在的部门。|
-|displayName|String|联系人的显示名称。 您可以[创建](../api/user-post-contacts.md)或[更新](../api/contact-update.md)操作中指定的显示名称。 请注意，以后对其他属性更新可能会导致自动生成的值覆盖已指定的显示名称值。 若要保留现有的值，请始终作为[更新](../api/contact-update.md)操作中的 displayName 包括它。|
+|department|String|联系人所在的部门。|
+|displayName|String|联系人的显示名称。 您可以在[创建](../api/user-post-contacts.md)或[更新](../api/contact-update.md)操作中指定显示名称。 请注意, 对其他属性的后续更新可能会导致自动生成的值覆盖您指定的 displayName 值。 若要保留预先存在的值, 请始终在[更新](../api/contact-update.md)操作中将其包含为 displayName。|
 |emailAddresses|[typedEmailAddress](typedemailaddress.md)集合|联系人的电子邮件地址。|
 |fileAs|String|联系人备案的姓名。|
-|flag|[followupFlag](followupflag.md)|标志值，该值指示状态、 开始日期、 截止日期或为该联系人的完成日期。 |
+|flag|[followupFlag](followupflag.md)|指示联系人的状态、开始日期、截止日期或完成日期的标志值。 |
 |gender |String |联系人的性别。 |
 |generation|String|联系人所属的代。|
 |givenName|String|联系人的名。|
-|id|String|联系人的唯一标识符。只读。|
+|id|字符串|联系人的唯一标识符。只读。|
 |imAddresses|String collection|联系人的即时消息 (IM) 地址。|
 |initials|String|联系人的姓名缩写。|
 |jobTitle|String|联系人的职务。|
@@ -109,14 +109,14 @@ ms.locfileid: "29642448"
 |officeLocation|String|联系人的办公室位置。|
 |parentFolderId|String|联系人的父文件夹 ID。|
 |personalNotes|String|有关联系人的用户备注。|
-|phones |[phone](phone.md) collection |例如，家庭电话、 移动电话和商务电话与该联系人，关联的电话号码。 |
-|postalAddresses |[physicalAddress](physicaladdress.md)集合 |解决与该联系人，例如家庭地址和业务地址。 |
+|phones |[phone](phone.md) collection |与联系人关联的电话号码, 例如, 家庭电话、移动电话和商务电话。 |
+|postalAddresses |[physicalAddress](physicaladdress.md)集合 |与联系人关联的地址, 例如家庭地址和公司地址。 |
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
-|title|String|联系人的职位。|
+|title|字符串|联系人的职位。|
 |websites |[website](website.md) collection|与联系人关联的网站。 |
-|weddingAnniversary |Date |联系人的婚礼周年日。 |
+|weddingAnniversary |Date |联系人的婚礼周年纪念。 |
 |yomiCompanyName|String|联系人的注音日文公司名称。|
 |yomiGivenName|String|联系人的注音日文名字。|
 |yomiSurname|String|联系人的注音日文姓氏。|
@@ -124,16 +124,16 @@ ms.locfileid: "29642448"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|extensions|[扩展](extension.md)集合|打开扩展名为该联系人定义的集合。 可为 Null。|
+|extensions|[扩展](extension.md)集合|为联系人定义的开放扩展集合。 可为空。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为联系人定义的多值扩展属性的集合。只读。可为 Null。|
 |photo|[照片](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="methods"></a>方法
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取联系人](../api/contact-get.md) | [联系人](contact.md) |读取 contact 对象的属性和关系。|
-|[创建](../api/user-post-contacts.md) | [联系人](contact.md) |将联系人添加到联系人根文件夹或其他联系人文件夹的联系人端点中。|
+|[获取联系人](../api/contact-get.md) | [contact](contact.md) |读取 contact 对象的属性和关系。|
+|[创建](../api/user-post-contacts.md) | [contact](contact.md) |将联系人添加到联系人根文件夹或其他联系人文件夹的联系人端点中。|
 |[更新](../api/contact-update.md) | [联系人](contact.md) |更新 contact 对象。 |
 |[删除](../api/contact-delete.md) | 无 |删除 contact 对象。 |
 |[delta](../api/contact-delta.md)|[联系人](contact.md)集合| 获取指定文件夹中已添加、删除或更新的联系人集。|
@@ -143,9 +143,9 @@ ms.locfileid: "29642448"
 |**架构扩展**| | |
 |[添加架构扩展值](/graph/extensibility-schema-groups) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 |**扩展属性**| | |
-|[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[联系人](contact.md)  |在新建或现有的联系人中创建一个或多个单值扩展属性。   |
-|[获取具有单值扩展属性的联系人](../api/singlevaluelegacyextendedproperty-get.md)  | [联系人](contact.md) | 通过使用 `$expand` 或 `$filter` 获取包含一个单值扩展属性的联系人。 |
-|[创建多值扩展属性](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [联系人](contact.md) | 在新建或现有的联系人中创建一个或多个多值扩展属性。  |
+|[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |在新建或现有的联系人中创建一个或多个单值扩展属性。   |
+|[获取具有单值扩展属性的联系人](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | 通过使用 `$expand` 或 `$filter` 获取包含一个单值扩展属性的联系人。 |
+|[创建多值扩展属性](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contact](contact.md) | 在新建或现有的联系人中创建一个或多个多值扩展属性。  |
 |[获取具有多值扩展属性的联系人](../api/multivaluelegacyextendedproperty-get.md)  | [联系人](contact.md) | 使用 `$expand` 获取包含一个多值扩展属性的联系人。 |
 
 ## <a name="see-also"></a>另请参阅

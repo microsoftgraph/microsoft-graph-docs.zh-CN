@@ -1,26 +1,26 @@
 ---
 title: 'privilegedRoleAssignment: makePermanent'
-description: 请为永久的角色分配。
+description: 将角色分配标记为永久。
 localization_priority: Normal
 ms.openlocfilehash: 9c6334662cf8496262b49b14ceb3f51f7a4f8dbc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511392"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538684"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-请为永久的角色分配。
+将角色分配标记为永久。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-需要注册到 PIM 租户。 否则，将返回 HTTP 403 禁止访问错误。
+需要将租户注册到 PIM。 否则, 将返回 HTTP 403 禁止错误。
 
-请求者需要有_特权角色管理员_角色。 
+请求者需要具有_特权角色管理员_角色。 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,13 +43,13 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|原因|string|可选。 若要使此呼叫原因。|
-|ticketNumber|string|可选。 与此操作关联的票证数。|
-|ticketSystem|string|可选。 票证系统。|
+|在于|字符串|可选。 执行此调用的原因。|
+|ticketNumber|字符串|可选。 与此操作相关联的票证编号。|
+|ticketSystem|字符串|可选。 票证系统。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 3db8b53cd6ebb6b04cc0ad4f20db5c20a60f9e79
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643963"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506711"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 

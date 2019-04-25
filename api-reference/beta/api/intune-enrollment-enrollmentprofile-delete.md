@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 982f0207e75aba8accbe15185f4a2db1f944855d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791920"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32533127"
 ---
 # <a name="delete-enrollmentprofile"></a>删除 enrollmentProfile
 

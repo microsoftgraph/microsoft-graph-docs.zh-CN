@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 1f3e2b5cacb3bb7ab462cc127b9cbc2e3b85019f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529108"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536773"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -44,7 +44,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|number|指定新列的相对位置。之前位于此位置的列向右移动。索引值应等于或小于最后一列的索引值，因此不能用于在表末尾附加列。从零开始编制索引。|
-|values|（布尔值、字符串或数字）|可选。未设置格式的表列值的二维数组。|
+|值|（布尔值、字符串或数字）|可选。未设置格式的表列值的二维数组。|
 
 ## <a name="response"></a>响应
 

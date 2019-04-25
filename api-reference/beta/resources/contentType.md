@@ -5,15 +5,13 @@ ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
 ms.openlocfilehash: c90dd8889d07f903a7d3c79d9e4e5db3b9f2a30b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522971"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535408"
 ---
 # <a name="contenttype-resource-type"></a>ContentType 资源类型
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **ContentType** 资源代表 SharePoint 中的_内容类型_。
 内容类型使你可以定义一组列，这些列必须存在于 [**list**][list] 中的每个 [**listItem**][listItem] 上。
@@ -24,7 +22,10 @@ ms.locfileid: "29522971"
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是 **contentType** 资源的 JSON 表示形式。
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType" } -->
+<!-- {
+  "blockType": "resource",
+ "baseType": "microsoft.graph.entity",
+ "@odata.type": "microsoft.graph.contentType" } -->
 
 ```json
 {
@@ -47,15 +48,15 @@ ms.locfileid: "29522971"
 
 | 属性名称     | 类型                 | 说明
 |:------------------|:---------------------|:----------------------------------
-| **description**   | string               | 项目的描述性文本。
+| **说明**   | string               | 项目的描述性文本。
 | **group**         | string               | 此内容类型所属的组的名称。 可以帮助组织相关的内容类型。
-| **hidden**        | boolean              | 指示内容类型是否隐藏于此列表的“新建”菜单中。
+| **hidden**        | 布尔              | 指示内容类型是否隐藏于此列表的“新建”菜单中。
 | **id**            | string               | 内容类型的唯一标识符。
 | **inheritedFrom** | [itemReference][]    | 如果此内容类型继承自另一个作用域（如某个站点），则会提供对在其中定义内容类型的项的引用。
 | **name**          | string               | 内容类型的名称。
 | **order**         | [contentTypeOrder][] | 指定在选择 UI 中显示内容类型的顺序。
 | **parentId**      | string               | 内容类型的唯一标识符。
-| **readOnly**      | boolean              | 如果为 `true`，则不能修改内容类型，除非此值首次设置为 `false`。
+| **readOnly**      | 布尔              | 如果为 `true`，则不能修改内容类型，除非此值首次设置为 `false`。
 | **sealed**        | boolean              | 如果为 `true`，则不能由用户或通过下推操作修改内容类型。 只有网站集管理员可以密封或解封内容类型。
 
 ## <a name="relationships"></a>关系
@@ -71,15 +72,10 @@ ms.locfileid: "29522971"
 [itemReference]: itemreference.md
 [contentTypeOrder]: contenttypeorder.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentType",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/contentType.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Resources/ContentType"
+} -->

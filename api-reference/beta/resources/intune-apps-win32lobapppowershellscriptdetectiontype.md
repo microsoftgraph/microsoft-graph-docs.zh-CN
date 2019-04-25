@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4dc45a3b7ec8fe2732a89022fd3c74c0959bbc1c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809373"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534533"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>win32LobAppPowerShellScriptDetectionType 枚举类型
 
@@ -24,11 +24,11 @@ ms.locfileid: "31809373"
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |string|1|输出数据类型为 string。|
-|dateTime|双面|输出数据类型为 "日期时间"。|
-|integer|第三章|输出数据类型为 integer。|
-|float|4|输出数据类型为 float。|
-|version|5|输出数据类型为版本。|
-|布尔|型|输出数据类型为布尔值。|
+|dateTime|2 |输出数据类型为 "日期时间"。|
+|integer|3 |输出数据类型为 integer。|
+|点数|4 |输出数据类型为 float。|
+|version|5 |输出数据类型为版本。|
+|布尔|6 |输出数据类型为布尔值。|
 
 
 

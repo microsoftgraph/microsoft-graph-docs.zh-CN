@@ -2,18 +2,18 @@
 title: 存档团队
 description: '存档指定的团队。 '
 author: nkramer
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 28c1ea9d96d55587f95af85c9aba50a43fe08d60
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31890022"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520247"
 ---
 # <a name="archive-team"></a>存档团队
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 存档指定的[团队](../resources/team.md)。 存档团队后，用户无法再团队中的任意频道上发送或点赞消息，无法再编辑团队名称、说明和其他设置，且通常也无法再对团队进行大部分更改。
 仍可向团队进行成员身份更改。
@@ -66,7 +66,7 @@ POST /teams/{id}/archive
   "name": "archive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/archive
+POST https://graph.microsoft.com/beta/teams/{id}/archive
 ```
 #### <a name="response"></a>响应
 响应示例如下所示。
@@ -78,10 +78,15 @@ Content-Length: 0
 ```
 <!-- uuid: e848414b-4669-4484-ac36-1504c58a3fb8
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Archive team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-archive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

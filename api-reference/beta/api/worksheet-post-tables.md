@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 649fb5848a7c30908a87d8ea643aefa19ca5623e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640194"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535826"
 ---
 # <a name="create-table"></a>创建表
 
@@ -42,8 +42,8 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 | 参数       | 类型|说明|
 |:---------------|:----------|:----------|
-| Address  | string| 区域地址。如果正在从“worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`) 调用此 API|
-| hasHeaders  | boolean|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
+| Address  | string| 区域地址。 如果要从`worksheets/{id|name}/tables/add`路径调用此 API, 则无需支持地址中的工作表名称前缀。 但是, 如果要调用此`workbook/tables/add`路径 off, 请提供需要在其上创建表的工作表名称 (示例:) `sheet1!A1:D4`|
+| hasHeaders  | 布尔|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
 ## <a name="response"></a>响应
 

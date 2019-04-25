@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 220c0b1e9b21c609009616d75567c0469b276cd4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534736"
 ---
 # <a name="create-table"></a>创建表
 
@@ -41,11 +41,11 @@ POST /workbook/tables/{table-id}/add
 | 参数           | 类型      |说明|
 |:---------------|:----------|:----------|
 | Address  | string| 区域地址。若要从 `worksheets/{id or name}/tables/add` 路径调用此 API，地址中无需有工作表名称前缀。不过，若要从 `workbook/tables/add` 路径调用此 API，请提供需要在其中创建表的工作表名称（例如：`sheet1!A1:D4`）|
-| hasHeaders  | boolean|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
+| hasHeaders  | 布尔|指示区域是否具有列标签的布尔值。如果源不包含标头（即，当此属性设置为 false 时），Excel 将自动生成标头，数据将向下移动一行。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应代码和[WorkbookTable](../resources/table.md)响应正文中的对象。
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[WorkbookTable](../resources/table.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出 SharePoint 网站的子网站
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: fd0b4c43ae03bd7f09ea095e2f7a73b6fa1dbc13
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481186"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520809"
 ---
 # <a name="enumerate-subsites"></a>枚举子网站
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取为 [网站][] 定义的子网站集合。
 
@@ -30,10 +32,10 @@ ms.locfileid: "30481186"
 
 ## <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
+GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
 ## <a name="response"></a>响应
@@ -66,10 +68,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/List subsites"
-} -->
+  "tocPath": "Sites/List subsites",
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 8f8b689840220267fe1f048b0108193ba1cdb308
-ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30379498"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535227"
 ---
 # <a name="device-resource-type"></a>设备资源类型
 
@@ -47,34 +47,34 @@ ms.locfileid: "30379498"
 |deviceId|Guid| 由 Azure 设备注册服务在设备注册时设置的唯一标识符。 |
 |deviceMetadata|String| 仅供内部使用。 设置为 null。 |
 |deviceVersion|Int32| 仅供内部使用。 |
-|displayName|String| 设备显示名称。必需。 |
-|id|字符串|设备唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥，不可为 NULL。只读。|
-|isCompliant|Boolean|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。|
+|displayName|字符串| 设备显示名称。必需。 |
+|id|String|设备唯一标识符。继承自 [directoryObject](directoryobject.md)。密钥，不可为 NULL。只读。|
+|isCompliant|布尔值|如果设备符合移动设备管理 (MDM) 策略，则为 **true**；否则；为 **false**。 只读。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。|
 |isManaged|Boolean|如果设备由移动设备管理 (MDM) 应用进行托管，则为 **true**；否则，为 **false**。 这只能由 Intune 针对任何设备 OS 类型或经批准的适用于 Windows OS 设备的[MDM 应用](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)进行更新。 |
 |onPremisesLastSyncDateTime|DateTimeOffset|对象最后一次与本地目录同步的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：`'2014-01-01T00:00:00Z'`。只读。 |
 |onPremisesSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。 只读。|
 |operatingSystem|String| 设备上操作系统的类型。必需。 |
 |operatingSystemVersion|String| 设备的操作系统版本。 必需。 |
 |physicalIds|String collection| 仅供内部使用。 不可为 null。 |
-|profileType|String|设备的配置文件类型。 可取值为：<br />**RegisteredDevice**设置<br />**SecureVM**<br />**Printer**<br />**共享**<br />**IoT**|
+|profileType|String|设备的配置文件类型。 可能的值：<br />**RegisteredDevice**设置<br />**SecureVM**<br />**Printer**<br />**Shared**<br />**IoT**|
 |systemLabels|String collection| 系统应用于设备的标签列表。 |
 |trustType|String| 加入设备的信任类型。 只读。 可取值为： <br />**Workplace** - 表示*自带个人设备*<br />**AzureAd** - 仅云加入设备<br />**ServerAd** - 加入 Azure AD 的本地域加入设备。 如需了解更多详情，请参阅 [Azure Active Directory 中的设备管理简介](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
 |名称| String | 设备的友好名称。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
 |状态 | String| 设备处于联机或脱机状态。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
 |平台 |String|设备平台。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。|
-|Kind| String| 设备的外形规格。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
-|型号| String| 设备型号。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
+|Kind| 字符串| 设备的外形规格。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
+|模型| String| 设备型号。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
 |负责| String| 设备的制造商。 仅当用户使用 Microsoft 帐户以 Project 罗马的一部分登录时返回。 |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展集合。只读。可为 NULL。|
-|registeredOwners|[directoryObject](directoryobject.md) collection| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 NULL。|
-|registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为空。|
+|registeredOwners|[directoryObject](directoryobject.md) collection| 云加入设备或已注册个人设备的用户。 已注册的所有者是在注册时设置。 目前，只能有一个所有者。 只读。 可为 Null。|
+|registeredUsers|[directoryObject](directoryobject.md) 集合| 设备的已注册用户集合。 对于云加入设备和已注册的个人设备，已注册用户在设备注册时设置为与已注册所有者相同的值。 只读。 可为 Null。|
 |extensions|[扩展](extension.md)集合|为设备定义的开放扩展的集合。 可为空。|
 |registeredOwners|[directoryObject](directoryobject.md) collection|是设备注册所有者的用户。只读。可为 NULL。|
-|registeredUsers|[directoryObject](directoryobject.md) 集合|身份为设备注册用户的用户。只读。可为 Null。|
+|registeredUsers|[directoryObject](directoryobject.md) 集合|身份为设备注册用户的用户。只读。可为 NULL。|
 |命令 | 集合 ("microsoft." 命令) | 发送到此设备的一组命令|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -1,19 +1,19 @@
 ---
 title: 更新 conversationthread
-description: 锁定或解锁线程，以允许或避免进一步向线程发布。
+description: 锁定或解除锁定线程，以允许或避免进一步向线程发布。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: a4f09f77c5f11a0933956dd60c9b15ff6be3116f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927721"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564090"
 ---
 # <a name="update-conversationthread"></a>更新 conversationthread
 
-锁定或解锁线程，以允许或避免进一步向线程发布。
+锁定或解除锁定线程，以允许或避免进一步向线程发布。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -41,7 +41,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|isLocked|Boolean|指示线程是否已锁定。设置为 `true` 以禁止发布。|
+|resource.islocked|Boolean|指示线程是否已锁定。设置为 `true` 以禁止发布。|
 
 ## <a name="response"></a>响应
 

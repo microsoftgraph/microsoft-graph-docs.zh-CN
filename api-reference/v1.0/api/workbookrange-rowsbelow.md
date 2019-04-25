@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 3b0f4add673d7bf6a8e976b037c39256e69be72d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991690"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534652"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -85,7 +85,7 @@ Content-length: 157
 }
 ```
 
-如果调用不带`count`参数，此函数将默认为一行。
+如果不带`count`参数调用, 则此函数默认为一行。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

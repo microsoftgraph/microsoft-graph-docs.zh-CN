@@ -1,26 +1,26 @@
 ---
 title: fileSecurityState 资源类型
-description: 包含与通知相关的文件 （处理） 有关的信息。
+description: 包含有关与警报相关的文件 (不处理) 的信息。
 localization_priority: Normal
 ms.openlocfilehash: 14ffa41b395bde04972f0af0436297aa4d038524
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894094"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564790"
 ---
 # <a name="filesecuritystate-resource-type"></a>fileSecurityState 资源类型
 
-包含与通知相关的文件 （处理） 有关的信息。
+包含有关与警报相关的文件 (不处理) 的信息。
 
 ## <a name="properties"></a>属性
 
-| 属性   | 类型|Description|
+| 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|包含文件哈希 （加密和位置） 的复杂类型。|
-|name|字符串|文件名 （不带路径）。|
-|路径|字符串|文件/imageFile 完整文件路径。|
-|riskScore|字符串|提供程序生成/计算风险评分的警报的文件。 建议值的范围为 0-1，这相当于百分比。|
+|fileHash|[fileHash](filehash.md)|包含文件哈希 (加密和位置敏感) 的复杂类型。|
+|name|String|文件名 (不含路径)。|
+|路径|String|文件/imageFile 的完整文件路径。|
+|riskScore|String|通知文件的提供程序生成/计算风险分数。 建议的值范围为 0-1, 这相当于一个百分比。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

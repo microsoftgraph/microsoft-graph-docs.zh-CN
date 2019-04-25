@@ -1,15 +1,15 @@
 ---
 title: checkMemberGroups
-description: 检查指定组的列表中的成员身份。 从列表中返回这些的组
+description: 检查指定组列表中的成员身份。 从列表中返回这些组
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0d7452795cb0a8ffdf3a966a3e350a8634b2a7ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516894"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536781"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -29,7 +29,7 @@ ms.locfileid: "29516894"
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                                     |
 | 应用程序                            | ~~User.Read.All~~、~~User.ReadWrite.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
 
-> **注意：** 此 API 当前需要 `Directory.Read.All` 权限或更高权限。 使用`User.Read.All`或`User.ReadWrite.All`权限将返回错误。 这是一个已知 bug。
+> **注意:** 此 API 当前需要`Directory.Read.All`权限或更高权限。 使用`User.Read.All`或`User.ReadWrite.All`权限将返回错误。 这是一个已知 bug。
 
 ## <a name="http-request"></a>HTTP 请求
 

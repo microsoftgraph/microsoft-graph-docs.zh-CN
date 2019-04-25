@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 1a7e906e50ddf39e4c9e2d3d9dde11226c7ec662
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365323"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534848"
 ---
 # <a name="trialbalance-resource-type"></a>trialBalance 资源类型
 表示 Dynamics 365 Business Central 中的试算平衡表。
@@ -25,7 +25,7 @@ ms.locfileid: "30365323"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|number|string|trialBalance 项目的 G/L 帐号|
+|数字|string|trialBalance 项目的 G/L 帐号|
 |accountId|GUID|记录的 G/L 帐户的唯一标识符。|
 |accountType|string|记录的 G/L 帐户的帐户类型。|
 |显示屏|string|trialBalance 项目的 G/L 帐户名称。|

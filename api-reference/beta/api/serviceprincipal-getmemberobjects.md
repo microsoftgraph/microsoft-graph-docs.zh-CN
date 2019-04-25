@@ -1,19 +1,19 @@
 ---
 title: 'servicePrincipal: getMemberObjects'
-description: 获取组和目录角色的成员的此服务主体的列表。  可传递此检查。
+description: 获取此服务主体所属的组和目录角色的列表。  此检查是可传递的。
 localization_priority: Normal
 ms.openlocfilehash: a1856e0c359e464078f7689043d1bea493c2bb13
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520758"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537475"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取组和目录角色的成员的此服务主体的列表。  可传递此检查。
+获取此服务主体所属的组和目录角色的列表。  此检查是可传递的。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

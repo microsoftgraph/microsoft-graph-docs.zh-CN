@@ -6,27 +6,27 @@ title: 从 SharePoint 网站中删除页面
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f855942288556fdf07e2b3af78408976c34eb052
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513023"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537109"
 ---
-# <a name="delete-page-from-the-site-pages-list-of-a-site"></a>从网站的网站的页面列表中删除页
+# <a name="delete-page-from-the-site-pages-list-of-a-site"></a>从网站的 "网站页面" 列表中删除页面
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[网站][]中网站的页面[列表][]中删除[sitePage][] 。
+从[网站][]的 "网站页面"[列表][]中删除[sitePage][] 。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
->**注意：** 若要删除项，用户必须已授予对要删除的项目的应用程序写入访问。
+>**注意:** 若要删除项, 用户必须已授予应用程序对要删除的项的写入权限。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,7 +55,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 
 ## <a name="response"></a>响应
 
-如果成功，此呼叫将返回`204 No Content`以指示已删除资源和没有要返回的响应。
+如果成功, 此调用将返回`204 No Content`响应, 表示资源已被删除, 没有任何可返回的内容。
 
 ## <a name="example"></a>示例
 

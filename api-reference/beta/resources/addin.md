@@ -1,15 +1,15 @@
 ---
-title: 外接程序资源类型
+title: addIn 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.openlocfilehash: d2a63d4428cbb3bcc7cc169711eb6cc6b9e00a6f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643718"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535774"
 ---
-# <a name="addin-resource-type"></a>外接程序资源类型
+# <a name="addin-resource-type"></a>addIn 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,9 +36,9 @@ ms.locfileid: "29643718"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|guid||
-|properties|[keyValue](keyvalue.md)集合||
-|type|字符串||
+|id|containerparentjob||
+|properties|[keyValue](keyvalue.md) 集合||
+|类型|字符串||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

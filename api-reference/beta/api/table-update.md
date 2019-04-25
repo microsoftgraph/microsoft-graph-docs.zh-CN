@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 2b78603a261145e2047b5e16175143a3b3c591e1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641741"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536764"
 ---
 # <a name="update-table"></a>更新表
 
@@ -43,8 +43,8 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|表的名称。|
-|showHeaders|boolean|指示标头行是否可见。该值可以设置为显示或删除标头行。|
-|showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
+|showHeaders|布尔|指示标头行是否可见。该值可以设置为显示或删除标头行。|
+|showTotals|布尔|指示总计行是否可见。该值可以设置为显示或删除总计行。|
 |style|string|表示表格样式的常量值。可能的值是：TableStyleLight1 thru TableStyleLight21、TableStyleMedium1 thru TableStyleMedium28、TableStyleStyleDark1 thru TableStyleStyleDark11。还可以指定工作簿中显示的用户定义的自定义样式。|
 
 ## <a name="response"></a>响应

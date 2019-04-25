@@ -1,19 +1,19 @@
 ---
-title: servicePrincipals： 列表 ownedObjects
-description: 检索拥有的 servicePrincipal 对象的列表。  这可能包括应用程序或组。
+title: 'servicePrincipals: List ownedObjects'
+description: 检索 servicePrincipal 拥有的对象的列表。  这可能包括应用程序或组。
 localization_priority: Normal
 ms.openlocfilehash: 788ee23010825a657e8eb5664f11de1d2cf1b34a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514234"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537543"
 ---
-# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals： 列表 ownedObjects
+# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: List ownedObjects
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索拥有的 servicePrincipal 对象的列表。  这可能包括应用程序或组。
+检索 servicePrincipal 拥有的对象的列表。  这可能包括应用程序或组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

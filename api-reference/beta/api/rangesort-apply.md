@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 7979033ce520f0d29172a910f4935c428bee383f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523580"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538259"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -44,11 +44,11 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|fields|SortField|作为排序依据的条件列表。|
+|域|SortField|作为排序依据的条件列表。|
 |matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
 |hasHeaders|布尔|可选。该区域是否有标头。|
 |orientation|string|可选。该操作是对行还是列排序。可能的值是：`Rows`、`Columns`。|
-|method|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
+|方法|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
 
 ## <a name="response"></a>响应
 

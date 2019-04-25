@@ -4,12 +4,12 @@ description: 检索 securityAction 对象的列表。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 1a161fd6113e6f29b061bd1dca9d2c4b16d7ee9c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 93988de6a970df22350e8d0fc89126c8becfe493
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482313"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537580"
 ---
 # <a name="list-securityactions"></a>列出 securityActions
 
@@ -23,7 +23,7 @@ ms.locfileid: "30482313"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | SecurityActions、SecurityActions 和所有 |
+| 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | SecurityActions、SecurityActions 和所有 |
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/security/securityActions
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。

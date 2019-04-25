@@ -4,19 +4,19 @@ description: 使用此 API 创建新用户。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9d1e98ffa4be67141d1e5ae679f9f51a71ef92fd
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: fe7fddb437684bbf038de39198b74be4fc5e1824
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642525"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536565"
 ---
 # <a name="create-user"></a>创建用户
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新用户。
-在请求正文中包含用户创建。 至少，您必须指定用户的必需的属性。 您可以选择指定任何其他可写属性。
+请求正文包含要创建的用户。 至少必须指定必需的用户属性。 可以选择指定其他任意可写属性。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,14 +44,14 @@ POST /users
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|accountEnabled |boolean |启用此帐户时为 true，否则为 false。|
+|accountEnabled |布尔 |启用此帐户时为 true，否则为 false。|
 |displayName |string |要在用户的通讯簿中显示的名称。|
 |onPremisesImmutableId |string |如果你对用户的 userPrincipalName (UPN) 属性使用联盟域，只需在创建新用户帐户时指定。|
 |mailNickname |string |用户的邮件别名。|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |用户的密码配置文件。|
 |userPrincipalName |string |用户主体名称 (someuser@contoso.com)。|
 
-由于**用户**资源支持[扩展](/graph/extensibility-overview)，您可以使用`POST`操作并创建它时将使用您自己的数据的自定义属性添加到用户实例。
+由于**用户**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用`POST`操作, 并在创建用户实例时向用户实例中添加自定义属性和您自己的数据。
 
 ## <a name="response"></a>响应
 
@@ -89,7 +89,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.user"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

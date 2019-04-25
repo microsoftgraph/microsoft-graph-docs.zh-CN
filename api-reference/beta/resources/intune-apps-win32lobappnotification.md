@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3774aea1e3737157bf3242cc03990312a7d3510e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790492"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534470"
 ---
 # <a name="win32lobappnotification-enum-type"></a>win32LobAppNotification 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31790492"
 |:---|:---|:---|
 |showAll|0|显示所有通知。|
 |showReboot|1|仅显示重新启动通知并禁止其他通知。|
-|hideAll|双面|隐藏所有通知。|
+|hideAll|2 |隐藏所有通知。|
 
 
 

@@ -1,25 +1,25 @@
 ---
-title: 删除通道
-description: 删除通道。
+title: 删除频道
+description: 删除频道。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 846aa0b00fc07a0a25e3eb3aae07bcccdbd936ec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939677"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565595"
 ---
-# <a name="delete-channel"></a>删除通道
+# <a name="delete-channel"></a>删除频道
 
 
 
-删除[通道](../resources/channel.md)。
+删除[频道](../resources/channel.md)。
 
-> **注意**： 没有应用程序权限和此 API 的已知的问题。 有关详细信息，请参阅[已知问题列表](/graph/known-issues#application-permissions)。
+> **注意**: 应用程序权限和此 API 存在一个已知问题。 有关详细信息, 请参阅[已知问题列表](/graph/known-issues#application-permissions)。
 
-> **注意**： 已删除的通道中的数据将继续存储的几周，以便于恢复已删除通道团队所有者。 在此期间，可能无法创建新的通道使用相同的 displayName。
+> **注意**: 已删除频道中的数据将继续存储几周, 以允许团队所有者恢复已删除的频道。 在这段时间内, 可能不会创建具有相同 displayName 的新通道。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -30,7 +30,7 @@ ms.locfileid: "27939677"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All    |
 
-> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问团队它们不是的成员。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -62,7 +62,7 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true

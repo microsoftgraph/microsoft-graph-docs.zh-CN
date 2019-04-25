@@ -1,16 +1,18 @@
 ---
 title: 获取订阅
 description: 检索订阅的属性和关系。
-localization_priority: Priority
+localization_priority: Normal
 author: piotrci
 ms.openlocfilehash: f2a1088ac6f84d236aec64fad6e0fd0d9d21e473
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156467"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520632"
 ---
 # <a name="get-subscription"></a>获取订阅
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索订阅的属性和关系。
 
@@ -39,7 +41,6 @@ ms.locfileid: "30156467"
 
   - 使用相应的应用程序权限订阅租户内_任何_用户的文件夹或邮箱中项目的更改。
   - 切勿使用 Outlook 共享权限（Contacts.Read.Shared、Calendars.Read.Shared、Mail.Read.Shared 及其相应的读写权限），因为它们**不**支持订阅对共享或委托文件夹中的项的更改通知。
- 
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +57,7 @@ GET /subscriptions/{id}
 ## <a name="request-headers"></a>请求标头
 
 | 名称       | 类型 | 说明|
-|:-----------|:------|:----------|
+|:-----------|:-----|:-----------|
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
@@ -78,7 +79,7 @@ GET /subscriptions/{id}
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/subscriptions/{id}
+GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 
 ##### <a name="response"></a>响应
@@ -109,10 +110,15 @@ Content-length: 252
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get subscription",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

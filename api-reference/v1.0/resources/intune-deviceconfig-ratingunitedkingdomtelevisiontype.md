@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4b65561cd54a347e03bbe895d70fec7edfc1b602
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257125"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534645"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>ratingUnitedKingdomTelevisionType 枚举类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30257125"
 |:---|:---|:---|
 |allAllowed|0|默认值, 允许所有电视节目内容|
 |allBlocked|1|不允许任何电视显示内容|
-|caution|双面|允许电视内容带警告消息|
+|:|2 |允许电视内容带警告消息|
 
 
 

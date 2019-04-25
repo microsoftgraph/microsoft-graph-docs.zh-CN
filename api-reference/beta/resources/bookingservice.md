@@ -5,46 +5,46 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 35e439888b39c81451242f01d2aaae89b65ad8ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519883"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535485"
 ---
 # <a name="bookingservice-resource-type"></a>bookingService 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-代表由[bookingBusiness](bookingbusiness.md)，如的服务名称、 价格和通常提供了此类服务的人员提供的特定服务的信息。
+表示有关[bookingBusiness](bookingbusiness.md)提供的特定服务的信息, 如服务名称、价格和通常提供此类服务的人员。
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列表服务](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md)集合 | 指定[bookingbusiness](../resources/bookingbusiness.md)中获取**bookingService**对象的列表。|
-|[创建 bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | 创建用于指定[bookingbusiness](../resources/bookingbusiness.md) **bookingService** 。 |
-|[获取 bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |指定[bookingbusiness](../resources/bookingbusiness.md)中获取的属性和**bookingService**对象的关系。|
-|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |更新中指定[bookingbusiness](../resources/bookingbusiness.md) **bookingService**对象。 |
-|[删除](../api/bookingservice-delete.md) | 无 |删除在指定[bookingbusiness](../resources/bookingbusiness.md) **bookingService**对象。 |
+|[列出服务](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md)集合 | 获取指定[bookingbusiness](../resources/bookingbusiness.md)中的**bookingService**对象的列表。|
+|[创建 bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | 为指定的[bookingbusiness](../resources/bookingbusiness.md)创建**bookingService** 。 |
+|[获取 bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |获取指定[bookingbusiness](../resources/bookingbusiness.md)中的**bookingService**对象的属性和关系。|
+|[更新](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |更新指定[bookingbusiness](../resources/bookingbusiness.md)中的**bookingService**对象。 |
+|[删除](../api/bookingservice-delete.md) | 无 |删除指定[bookingbusiness](../resources/bookingbusiness.md)中的**bookingService**对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|defaultDuration|持续时间|默认服务中的天、 小时、 分钟和秒数字表示的长度。 例如，P11D23H59M59.999999999999S。 |
+|defaultDuration|持续时间|服务的默认长度, 以天数、小时数、分钟数和秒数表示。 例如, p11d23h59m 59.999999999999 s。 |
 |defaultLocation|[location](location.md)|服务的默认物理位置。|
-|defaultPrice|双精度|该服务默认货币价格。|
-|defaultPriceType|string|负责服务的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
-|defaultReminders|[bookingReminder](bookingreminder.md)集合|默认设置的该服务的约会的提醒。 此属性的值时，可仅读取此**bookingService**由其 id。|
-|说明|字符串|服务的文本说明。|
-|displayName|String|服务名称。|
+|defaultPrice|双精度|服务的默认货币价格。|
+|defaultPriceType|string|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
+|defaultReminders|[bookingReminder](bookingreminder.md)集合|此服务的约会的默认提醒集。 此属性的值仅在按 ID 读取此**bookingService**时可用。|
+|description|String|服务的文本说明。|
+|displayName|字符串|服务名称。|
 |emailAddress|String|电子邮件地址|
-|id|字串符号|该服务，以 GUID 格式的 ID。 只读。|
-|isHiddenFromCustomers|Boolean|True 表示该服务不是预定的客户。|
+|id|字符串|该服务的 ID (采用 GUID 格式)。 只读。|
+|isHiddenFromCustomers|布尔值|如果为 True, 则表示此服务不可供客户预订。|
 |notes|String|有关此服务的其他信息。|
-|后|持续时间|此服务的时间为缓冲区之后为约会结束，且在下一步之前客户约会可以为预约。|
-|缓冲区|持续时间|缓冲区之前可以启动此服务的约会的时间。|
-|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|确定如何创建和管理服务此类型的约会的策略集。|
-|staffMemberIds|String 集合|表示这些[员工](bookingstaffmember.md)提供此服务。 |
+|postBuffer|持续时间|此服务的约会结束后以及下一个客户约会可以被预订前要缓冲的时间。|
+|preBuffer|持续时间|在此服务的约会开始之前要缓冲的时间。|
+|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|确定应如何创建和管理此类服务的约会的一组策略。|
+|staffMemberIds|String collection|代表提供此服务的[教职员工成员](bookingstaffmember.md)。 |
 
 ## <a name="relationships"></a>关系
 无

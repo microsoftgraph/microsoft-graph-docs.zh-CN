@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 74a73ef71035594e3d9600499791525fe67c9c71
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774699"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566519"
 ---
 # <a name="mdmauthority-enum-type"></a>mdmAuthority 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31774699"
 |:---|:---|:---|
 |unknown|0|未知|
 |intune|1|Intune|
-|sccm|双面|SCCM|
-|office365|第三章|Office365|
+|sccm|2 |SCCM|
+|office365|3 |Office365|
 
 
 

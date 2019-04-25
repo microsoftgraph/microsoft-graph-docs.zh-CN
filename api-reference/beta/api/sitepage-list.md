@@ -6,21 +6,21 @@ title: 列出网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641188"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537193"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>列表中的网站网站页面列表的页面
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中列出页面
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从网站页面[列表][]的网站[的网站][]中获取 [sitePages] [] 的集合。 （具有分页） 返回网站中的所有页面。
+从网站[网站][]的 "网站页面"[列表][]中获取 [sitePages] [] 的集合。 将返回网站中的所有页面 (使用分页)。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 

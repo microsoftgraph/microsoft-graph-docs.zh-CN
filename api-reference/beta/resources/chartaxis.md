@@ -1,21 +1,21 @@
 ---
 title: ChartAxis 资源类型
-description: 表示图表中的单个坐标轴。
+description: 代表图表中的单个坐标轴。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 6cb780272887b6a9b637bbec24b68b37db93657e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640929"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535570"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示图表中的单个坐标轴。
+代表图表中的单个坐标轴。
 
 
 ## <a name="methods"></a>方法
@@ -28,16 +28,16 @@ ms.locfileid: "29640929"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|majorUnit|对象|表示两个主要刻度标记之间的间隔。可以设置为数字值或空字符串。返回的值始终为数字。|
-|maximum|对象|表示数值轴上的最大值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
+|majorUnit|object|表示两个主要刻度标记之间的间隔。可以设置为数字值或空字符串。返回的值始终为数字。|
+|maximum|object|表示数值轴上的最大值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
 |minimum|对象|表示数值轴上的最小值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
-|minorUnit|对象|表示两个次要刻度标记之间的间隔。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
+|minorUnit|object|表示两个次要刻度标记之间的间隔。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |format|[ChartAxisFormat](chartaxisformat.md)|表示 chart 对象的格式，包括线条和字体格式。只读。|
-|majorGridlines|[ChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的主要网格线的 gridline 对象。只读。|
+|majorGridlines|[ChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的主要网格线的网格线对象。只读。|
 |minorGridlines|[ChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的次要网格线的网格线对象。只读。|
 |title|[ChartAxisTitle](chartaxistitle.md)|表示坐标轴标题。只读。|
 

@@ -1,19 +1,19 @@
 ---
 title: 创建 synchronizationTemplate
-description: 创建新的同步模板给定应用程序。
+description: 为给定应用程序创建新的同步模板。
 localization_priority: Normal
 ms.openlocfilehash: ce519b57766956b10d05b6b3745ca16f609b597c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509887"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536962"
 ---
 # <a name="create-synchronizationtemplate"></a>创建 synchronizationTemplate
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的同步模板给定应用程序。
+为给定应用程序创建新的同步模板。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -38,16 +38,16 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要创建的[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。 `id`，`applicationId`和`factoryTag`，需要属性。 如果没有`schema`提供的默认架构与模板，关联`factoryTag`将使用属性。
+在请求正文中, 提供要创建的[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。 和属性是必需的`id` `applicationId` `factoryTag` 如果模板`schema`未提供, 则将使用与该`factoryTag`属性相关联的默认架构。
 
 ### <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。
 
 ### <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 <!-- {
   "blockType": "request",
   "name": "create_synchronizationtemplate_from_synchronization"
@@ -64,8 +64,8 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将返回实际呼叫中的所有属性。
+响应示例如下所示。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性将在实际调用中返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

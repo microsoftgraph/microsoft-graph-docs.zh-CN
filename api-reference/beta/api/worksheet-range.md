@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 81c88cd8cd454c5b31d143cd22f61412a77074c7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530088"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535800"
 ---
 # <a name="worksheet-range"></a>Worksheet:Range
 

@@ -1,15 +1,15 @@
 ---
 author: VinodRavichandran
 ms.date: 09/10/2017
-title: Audio
+title: 音频
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642273"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535590"
 ---
 # <a name="audio-facet"></a>Audio Facet
 
@@ -57,7 +57,7 @@ ms.locfileid: "29642273"
 | **discCount**         | Int32   | 此专辑中的光盘总数。                             |
 | **duration**          | Int64   | 此音频文件的持续时间（以毫秒为单位）                |
 | **genre**             | string  | 此音频文件的流派。                                        |
-| **hasDrm**            | boolean | 指明此文件是否受数字版权管理的保护。   |
+| **hasDrm**            | 布尔 | 指明此文件是否受数字版权管理的保护。   |
 | **isVariableBitrate** | boolean | 指明此文件是否已经过可变比特率编码。            |
 | **title**             | string  | 此音频文件的标题。                                         |
 | **track**             | Int32   | 此音频文件在原始光盘上的曲目编号。    |

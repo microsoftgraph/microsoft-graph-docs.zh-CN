@@ -5,20 +5,20 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 6bb3f134e4c0cced1ac0ebbc9ec05aebc2c3d664
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961867"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566211"
 ---
 # <a name="get-contact"></a>获取联系人
 
 检索 contact 对象的属性和关系。
 
-有两种方案，其中应用程序可在另一个用户的联系人文件夹中获取联系人：
+在以下两种情况下, 应用可以在其他用户的 "联系人" 文件夹中获取联系人:
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享联系人文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
+* 如果该应用程序具有应用程序权限，或者
+* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
 
 
 ## <a name="permissions"></a>权限
@@ -31,7 +31,8 @@ ms.locfileid: "27961867"
 |应用程序 | Contacts.Read、Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->[联系人](../resources/contact.md)从用户的默认[contactFolder](../resources/contactfolder.md)。
+<!-- { "blockType": "ignored" } -->
+来自用户的默认 [contactFolder](../resources/contactfolder.md) 中的 [联系人](../resources/contact.md)。
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
@@ -47,7 +48,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-|Name|值|说明|
+|名称|值|说明|
 |:---------------|:--------|:-------|
 |$expand|string|要在响应中扩展和包括的关系的列表（以逗号分隔）。请参阅支持的名称的 [contact](../resources/contact.md) 对象的关系表。 |
 |$select|string|要在响应中包括的属性的列表（以逗号分隔）。|

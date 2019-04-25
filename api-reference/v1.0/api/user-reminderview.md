@@ -5,14 +5,14 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 7cfabb0595ed0787e3e7a96cc589526fddc8314f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983777"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564048"
 ---
 # <a name="user-reminderview"></a>user: reminderView
-返回一组事件提醒中用户日历中指定的开始和结束时间。 
+在指定的开始时间和结束时间内, 返回用户日历中的事件提醒列表。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -21,7 +21,7 @@ ms.locfileid: "27983777"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    |
-|应用程序 | Calendars.Read、Calendars.ReadWrite |
+|Application | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -34,8 +34,8 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|startDateTime|字符串|事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。|
-|endDateTime|字符串|事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。|
+|startDateTime|String|事件（已设置提醒）的开始日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T19:00:00.0000000”。|
+|endDateTime|String|事件（已设置提醒）的结束日期和时间。该值用 ISO 8601 格式表示，例如，“2015-11-08T20:00:00.0000000”。|
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值|

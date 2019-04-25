@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e6ee9d73d25945480123f7cf8ef44d8eacc45e0d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797135"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32533980"
 ---
 # <a name="get-depiosenrollmentprofile"></a>获取 depIOSEnrollmentProfile
 

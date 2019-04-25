@@ -1,25 +1,25 @@
 ---
 title: 获取用户的邮箱设置
-description: '获取用户的 mailboxSettings。 这包括 （通知时自动的人员的自动答复设置 '
+description: '获取用户的 mailboxSettings。 这包括自动答复的设置 (在以下情况自动通知人员 '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 569a891e51d09c03467108c0a7ed012e04ba6352
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510244"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536545"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取用户的[mailboxSettings](../resources/mailboxsettings.md)。 这包括 （通知自动在收到其电子邮件时的人员） 的自动答复、 区域设置 （语言和国家/地区）、 时区、 和工作时间的设置。
+获取用户的 [mailboxSettings](../resources/mailboxsettings.md)。 这包括自动答复的设置 (在收到电子邮件时自动通知人员)、区域设置 (语言和国家/地区)、时区和工作时间。
 
 可以查看所有邮箱设置或获取特定设置。
 
-时区是用户可以为用户邮箱设置的首选设置之一。 用户可选择它从[支持的时区](outlookuser-supportedtimezones.md)的管理员设置的用户的邮箱服务器。 管理员将设置中的 Windows 所在的时区格式或[Internet 分配编号证书颁发机构 (IANA) 所在的时区](https://www.iana.org/time-zones)（也称为 Olson 时区） 格式的时区。 Windows 时区是默认格式。 
+时区是用户可以为用户邮箱设置的首选设置之一。 用户从管理员为用户的邮箱服务器设置的[受支持时区](outlookuser-supportedtimezones.md)中选择该区域。 管理员在 Windows 时区格式或[Internet 分配的号码颁发机构 (IANA)](https://www.iana.org/time-zones)时区 (也称为 "Olson 时区") 格式中设置时区。 Windows 时区是默认格式。 
 
 获取用户的首选时区时，时区按创建时的格式返回。 若要将时区设置为某种特定格式（Windows 或 IANA），可以先[将相应格式的首选时区更新为邮箱设置](user-update-mailboxsettings.md)。 随后便可以获取相应格式的时区。 也可以在应用中单独管理格式转换。
 
@@ -33,13 +33,15 @@ ms.locfileid: "29510244"
 |应用程序 | MailboxSettings.Read、MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-若要获取所有用户的邮箱设置：<!-- { "blockType": "ignored" } -->
+若要获取用户的所有邮箱设置, 请执行以下操作:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-若要获取特定设置-仅自动答复设置、 区域设置、 时区、 或工作时间：<!-- { "blockType": "ignored" } -->
+若要获取特定设置-仅限自动答复设置、区域设置、时区或工作时间:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -84,7 +86,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 GET https://graph.microsoft.com/beta/me/mailboxSettings
 ```
 ##### <a name="response-1"></a>响应 1
-该响应中包括登录用户的所有邮箱的设置。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+响应包括已登录用户的所有邮箱设置。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -182,7 +184,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/mailboxSettings/workingHours
 ```
 ##### <a name="response-3"></a>响应 3
-该响应仅包括工作时间设置。 请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+该响应仅包括工作时间设置。 请注意，用户的工作时间在[自定义时区](../resources/customtimezone.md)内。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",

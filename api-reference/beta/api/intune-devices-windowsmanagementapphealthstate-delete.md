@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1db134b79377c7e9811b2912fcaa1b58a337e19e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779326"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534197"
 ---
 # <a name="delete-windowsmanagementapphealthstate"></a>删除 windowsManagementAppHealthState
 

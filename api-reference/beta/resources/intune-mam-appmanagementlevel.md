@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d72bcc7478edaa3aa670d617b327bcc73f4f969c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786194"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563964"
 ---
 # <a name="appmanagementlevel-enum-type"></a>appManagementLevel 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31786194"
 |:---|:---|:---|
 |发生|0|Unspecified|
 |受|1|受|
-|mdm|双面|MDM|
-|androidEnterprise|4|Android 企业版|
+|mdm|2 |MDM|
+|androidEnterprise|4 |Android 企业版|
 
 
 

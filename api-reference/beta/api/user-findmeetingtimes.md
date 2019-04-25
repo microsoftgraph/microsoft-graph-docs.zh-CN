@@ -1,25 +1,25 @@
 ---
 title: 'user: findMeetingTimes'
-description: 根据组织者和与会者的可用性以及指定为参数的时间或位置约束, 建议会议时间和位置。
+description: 根据组织者和与会者的空闲状况以及指定为参数的时间或位置，推荐会议时间和位置。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 2aa8f10d1462065f0ae889261f25a15a3c29359b
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936295"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536516"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-根据组织者和与会者的可用性以及指定为参数的时间或位置约束, 建议会议时间和位置。
+根据组织者和与会者的空闲状况以及指定为参数的时间或位置，推荐会议时间和位置。
 
 如果 **findMeetingTimes** 无法返回任何会议时间建议，响应会在 **emptySuggestionsReason** 属性中指明原因。根据此值，可以更好地调整参数，并重新调用 **findMeetingTimes**。
 
-用于建议会议时间和位置的算法将在一段时间后及时进行微调。 在与输入参数和日历数据保持静态的测试环境类似的方案中, 预期建议的结果可能会随着时间的推移而发生变化。
+用于推荐会议时间和位置的算法将时不时地进行优化。 在输入参数和日历数据保持静止的测试环境等场景中，所推荐的结果可能随着时间的变化而有所不同。
 
 
 ## <a name="permissions"></a>权限
@@ -115,7 +115,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 设置 **returnSuggestionReasons** 参数后，**suggestionReason** 属性中还会返回各条建议的理由（如果 **findMeetingTimes** 返回建议的话）。
 
-请注意, 该请求指定了 PST 时区中的时间。 默认情况下, 响应将返回 UTC 格式的会议时间建议。 可以使用 `Prefer: outlook.timezone` 请求头也为响应中的时间值指定 PST 时区。
+请注意，该请求按 PST 时区指定时间。 默认情况下，答复将按 UTC 的形式返回会议时间建议。 还可使用 `Prefer: outlook.timezone` 请求头指定将 PST 用于答复中的时间值。
 
 ##### <a name="request"></a>请求
 下面展示了示例请求。

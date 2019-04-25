@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 访问共享项目
 localization_priority: Normal
 ms.openlocfilehash: 1f172060a8b30996ff09b3ca93390da503db9fea
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482306"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537452"
 ---
 # <a name="accessing-shared-driveitems"></a>访问共享 DriveItem
 

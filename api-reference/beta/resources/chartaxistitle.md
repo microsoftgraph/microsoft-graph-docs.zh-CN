@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 25a5daf571f7533bd1682974adecad1cfd984894
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644082"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535443"
 ---
 # <a name="chartaxistitle-resource-type"></a>ChartAxisTitle 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "29644082"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |text|string|表示坐标轴标题。|
-|visible|boolean|指定坐标轴标题可见性的布尔值。|
+|visible|布尔|指定坐标轴标题可见性的布尔值。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

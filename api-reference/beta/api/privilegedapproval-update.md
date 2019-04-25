@@ -3,11 +3,11 @@ title: 更新 privilegedapproval
 description: 更新 privilegedapproval 对象的属性。
 localization_priority: Normal
 ms.openlocfilehash: cb108ca35b07138f84a9fd969bfe7c7241e9672e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524896"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538673"
 ---
 # <a name="update-privilegedapproval"></a>更新 privilegedapproval
 
@@ -20,7 +20,7 @@ ms.locfileid: "29524896"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | PrivilegedAccess 的 AzureAD、directory.accessasuser.all    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。 |
 
@@ -40,7 +40,7 @@ PATCH /privilegedApproval/<id>
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |approvalDuration|持续时间||
-|approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
+|approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted` 或 `canceled`。|
 |approvalType|String||
 |approverReason|String||
 |endDateTime|DateTimeOffset||
@@ -51,9 +51,9 @@ PATCH /privilegedApproval/<id>
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。
+如果成功, 此方法将`204 No Content`返回响应代码
 
-请注意，需要将其注册到 PIM 租户。 否则，将返回的 HTTP 403 禁止访问状态代码。
+请注意, 需要将租户注册到 PIM。 否则, 将返回 HTTP 403 禁止的状态代码。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

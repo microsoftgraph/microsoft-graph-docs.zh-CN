@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6916521c8edef1b1decfb6b006779a372d3ab4e5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781951"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566323"
 ---
 # <a name="rolescopetag-resource-type"></a>roleScopeTag 资源类型
 
@@ -31,9 +31,9 @@ ms.locfileid: "31781951"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 此为只读，且自动生成。|
+|id|字符串|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色范围标记的显示名称或友好名称。|
-|description|String|角色范围标记的说明。|
+|说明|String|角色范围标记的说明。|
 
 ## <a name="relationships"></a>关系
 无

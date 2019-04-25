@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4ce491760b670953ca87e7953fb0d91c3c3a12f7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787874"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32533260"
 ---
 # <a name="update-deponboardingsetting"></a>更新 depOnboardingSetting
 
@@ -62,7 +62,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |tokenName|String|Dep 令牌的友好名称|
 |syncedDeviceCount|Int32|获取同步的设备计数|
 |dataSharingConsentGranted|布尔值|为使用 Apple Dep 服务进行数据共享而授予的同意|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 
 

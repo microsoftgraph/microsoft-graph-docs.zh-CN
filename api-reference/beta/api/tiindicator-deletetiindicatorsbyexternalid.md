@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 82cdd0d9688e778982244a06a2a2e5d558d25807
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366943"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537033"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator: deleteTiIndicatorsByExternalId
 
@@ -23,9 +23,9 @@ ms.locfileid: "30366943"
 
 | 权限类型  | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | ThreatIndicators application.readwrite.ownedby |
+| 委派（工作或学校帐户）     | ThreatIndicators.ReadWrite.OwnedBy |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | ThreatIndicators application.readwrite.ownedby |
+| 应用程序                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,7 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|value|String collection| `externalIds`要删除的**tiIndicator**对象的集合。 |
+|值|String collection| `externalIds`要删除的**tiIndicator**对象的集合。 |
 
 ## <a name="response"></a>响应
 
@@ -79,7 +79,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。

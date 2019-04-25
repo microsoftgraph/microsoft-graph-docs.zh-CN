@@ -1,25 +1,25 @@
 ---
-title: 列表 privilegedRoles
+title: 列出 privilegedRoles
 description: 检索 privilegedRole 对象的列表。
 localization_priority: Normal
 ms.openlocfilehash: d954cedbaf4b164fe0649a3565ea0212d148c322
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518077"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538585"
 ---
-# <a name="list-privilegedroles"></a>列表 privilegedRoles
+# <a name="list-privilegedroles"></a>列出 privilegedRoles
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[privilegedRole](../resources/privilegedrole.md)对象的列表。
 
-若要筛选查询的结果，请使用标准 OData ``$filter`` Uri 中的表达式。
+若要筛选查询中的结果，请在 URL 中使用标准 OData ``$filter`` 表达式。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要拥有以下角色之一：_具有权限的角色管理员_、_全局管理员_、_安全管理员_或_安全读取器_。
+请求者需要具有以下角色之一:_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。
  
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -46,9 +46,9 @@ GET /privilegedRoles
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[privilegedRole](../resources/privilegedrole.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[privilegedRole](../resources/privilegedrole.md)对象集合。
 
-请注意，需要将其注册到 PIM 租户。 否则，将返回的 HTTP 403 禁止访问状态代码。
+请注意, 需要将租户注册到 PIM。 否则, 将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

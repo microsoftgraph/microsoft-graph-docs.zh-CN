@@ -5,20 +5,20 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5bab3c729795f70789c66b22899b412d5f6abdf0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923794"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566162"
 ---
 # <a name="get-contactfolder"></a>获取 contactFolder
 
 通过使用联系人文件夹 ID 获取联系人文件夹。
 
-有两种方案相关应用程序可以在哪里找到另一个用户的联系人文件夹：
+在以下两种情况下, 应用可以获取其他用户的联系人文件夹:
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享联系人文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
+* 如果该应用程序具有应用程序权限，或者
+* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了联系人文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-contacts-folders)。
 
 
 ## <a name="permissions"></a>权限
