@@ -1,30 +1,30 @@
 ---
 title: plannerPlanContextCollection 资源类型
-description: '**PlannerPlanContextCollection**资源表示的外部上下文计划链接到的集合。 此资源是开放的类型，plannerPlan 对象的一部分。 属性值对中的值是 plannerPlanContext 对象。'
+description: '**plannerPlanContextCollection**资源表示规划所链接到的外部上下文的集合。 此资源是打开的类型, 并且是 plannerPlan 对象的一部分。 属性-值对中的值是 plannerPlanContext 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 6ec515a164c5b0fca6334930b55a4b5d4e73b7d9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516495"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581714"
 ---
-# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="839cc-105">plannerPlanContextCollection 资源类型</span><span class="sxs-lookup"><span data-stu-id="839cc-105">plannerPlanContextCollection resource type</span></span>
+# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="f2c08-105">plannerPlanContextCollection 资源类型</span><span class="sxs-lookup"><span data-stu-id="f2c08-105">plannerPlanContextCollection resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-<span data-ttu-id="839cc-106">**PlannerPlanContextCollection**资源表示的外部上下文计划链接到的集合。</span><span class="sxs-lookup"><span data-stu-id="839cc-106">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="839cc-107">此资源是开放的类型， [plannerPlan](plannerplan.md)对象的一部分。</span><span class="sxs-lookup"><span data-stu-id="839cc-107">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="839cc-108">属性值对中的值是[plannerPlanContext](plannerplancontext.md)对象。</span><span class="sxs-lookup"><span data-stu-id="839cc-108">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
+<span data-ttu-id="f2c08-106">**plannerPlanContextCollection**资源表示规划所链接到的外部上下文的集合。</span><span class="sxs-lookup"><span data-stu-id="f2c08-106">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="f2c08-107">此资源是打开的类型, 并且是[plannerPlan](plannerplan.md)对象的一部分。</span><span class="sxs-lookup"><span data-stu-id="f2c08-107">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="f2c08-108">属性-值对中的值是[plannerPlanContext](plannerplancontext.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f2c08-108">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="839cc-109">属性</span><span class="sxs-lookup"><span data-stu-id="839cc-109">Properties</span></span>
-<span data-ttu-id="839cc-110">您可以定义此打开类型的属性。</span><span class="sxs-lookup"><span data-stu-id="839cc-110">You can define the properties of this open type.</span></span> <span data-ttu-id="839cc-111">属性值应为独特标识符值，该值代表外部上下文与属性名称。</span><span class="sxs-lookup"><span data-stu-id="839cc-111">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="839cc-112">属性值必须是[plannerPlanContext](plannerplancontext.md)对象。</span><span class="sxs-lookup"><span data-stu-id="839cc-112">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="839cc-113">基于 OData 要求，在打开的类型的属性名称不能包含下列字符： `.`， `:`， `%`， `@`。</span><span class="sxs-lookup"><span data-stu-id="839cc-113">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="839cc-114">需要使用 URL 编码进行编码这些字符。</span><span class="sxs-lookup"><span data-stu-id="839cc-114">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="839cc-115">在收藏夹列表中删除项目，设置对属性的值`null`。</span><span class="sxs-lookup"><span data-stu-id="839cc-115">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="f2c08-109">属性</span><span class="sxs-lookup"><span data-stu-id="f2c08-109">Properties</span></span>
+<span data-ttu-id="f2c08-110">您可以定义此开放类型的属性。</span><span class="sxs-lookup"><span data-stu-id="f2c08-110">You can define the properties of this open type.</span></span> <span data-ttu-id="f2c08-111">属性值应是表示外部上下文作为属性名称的独特标识符。</span><span class="sxs-lookup"><span data-stu-id="f2c08-111">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="f2c08-112">属性值必须是[plannerPlanContext](plannerplancontext.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f2c08-112">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="f2c08-113">根据 OData 要求, 开放式类型中的属性名称不能包含以下字符: `.`、 `:`、 `%`、 `@`。</span><span class="sxs-lookup"><span data-stu-id="f2c08-113">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="f2c08-114">需要使用 URL 编码对这些字符进行编码。</span><span class="sxs-lookup"><span data-stu-id="f2c08-114">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="f2c08-115">若要删除收藏夹列表中的项, 请将该属性的值设置`null`为。</span><span class="sxs-lookup"><span data-stu-id="f2c08-115">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="839cc-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="839cc-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f2c08-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f2c08-116">JSON representation</span></span>
 
-<span data-ttu-id="839cc-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="839cc-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f2c08-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f2c08-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

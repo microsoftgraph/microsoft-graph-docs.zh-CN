@@ -5,35 +5,35 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 63b4b997a0ae559338fffd2acfabaa35dcc306e0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938732"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581266"
 ---
-# <a name="mailboxusagedetail-resource-type"></a><span data-ttu-id="8406d-103">mailboxUsageDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="8406d-103">mailboxUsageDetail resource type</span></span>
+# <a name="mailboxusagedetail-resource-type"></a><span data-ttu-id="6345a-103">mailboxUsageDetail 资源类型</span><span class="sxs-lookup"><span data-stu-id="6345a-103">mailboxUsageDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8406d-104">属性</span><span class="sxs-lookup"><span data-stu-id="8406d-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6345a-104">属性</span><span class="sxs-lookup"><span data-stu-id="6345a-104">Properties</span></span>
 
-| <span data-ttu-id="8406d-105">属性</span><span class="sxs-lookup"><span data-stu-id="8406d-105">Property</span></span>                        | <span data-ttu-id="8406d-106">类型</span><span class="sxs-lookup"><span data-stu-id="8406d-106">Type</span></span>    |
+| <span data-ttu-id="6345a-105">属性</span><span class="sxs-lookup"><span data-stu-id="6345a-105">Property</span></span>                        | <span data-ttu-id="6345a-106">类型</span><span class="sxs-lookup"><span data-stu-id="6345a-106">Type</span></span>    |
 | :------------------------------ | :------ |
-| <span data-ttu-id="8406d-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="8406d-107">reportRefreshDate</span></span>               | <span data-ttu-id="8406d-108">日期</span><span class="sxs-lookup"><span data-stu-id="8406d-108">Date</span></span>    |
-| <span data-ttu-id="8406d-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="8406d-109">userPrincipalName</span></span>               | <span data-ttu-id="8406d-110">字符串</span><span class="sxs-lookup"><span data-stu-id="8406d-110">String</span></span>  |
-| <span data-ttu-id="8406d-111">displayName</span><span class="sxs-lookup"><span data-stu-id="8406d-111">displayName</span></span>                     | <span data-ttu-id="8406d-112">字符串</span><span class="sxs-lookup"><span data-stu-id="8406d-112">String</span></span>  |
-| <span data-ttu-id="8406d-113">被</span><span class="sxs-lookup"><span data-stu-id="8406d-113">isDeleted</span></span>                       | <span data-ttu-id="8406d-114">布尔</span><span class="sxs-lookup"><span data-stu-id="8406d-114">Boolean</span></span> |
-| <span data-ttu-id="8406d-115">deletedDate</span><span class="sxs-lookup"><span data-stu-id="8406d-115">deletedDate</span></span>                     | <span data-ttu-id="8406d-116">日期</span><span class="sxs-lookup"><span data-stu-id="8406d-116">Date</span></span>    |
-| <span data-ttu-id="8406d-117">createdDate</span><span class="sxs-lookup"><span data-stu-id="8406d-117">createdDate</span></span>                     | <span data-ttu-id="8406d-118">日期</span><span class="sxs-lookup"><span data-stu-id="8406d-118">Date</span></span>    |
-| <span data-ttu-id="8406d-119">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="8406d-119">lastActivityDate</span></span>                | <span data-ttu-id="8406d-120">日期</span><span class="sxs-lookup"><span data-stu-id="8406d-120">Date</span></span>    |
-| <span data-ttu-id="8406d-121">itemCount</span><span class="sxs-lookup"><span data-stu-id="8406d-121">itemCount</span></span>                       | <span data-ttu-id="8406d-122">Int64</span><span class="sxs-lookup"><span data-stu-id="8406d-122">Int64</span></span>   |
-| <span data-ttu-id="8406d-123">storageUsedInBytes</span><span class="sxs-lookup"><span data-stu-id="8406d-123">storageUsedInBytes</span></span>              | <span data-ttu-id="8406d-124">Int64</span><span class="sxs-lookup"><span data-stu-id="8406d-124">Int64</span></span>   |
-| <span data-ttu-id="8406d-125">issueWarningQuotaInBytes</span><span class="sxs-lookup"><span data-stu-id="8406d-125">issueWarningQuotaInBytes</span></span>        | <span data-ttu-id="8406d-126">Int64</span><span class="sxs-lookup"><span data-stu-id="8406d-126">Int64</span></span>   |
-| <span data-ttu-id="8406d-127">prohibitSendQuotaInBytes</span><span class="sxs-lookup"><span data-stu-id="8406d-127">prohibitSendQuotaInBytes</span></span>        | <span data-ttu-id="8406d-128">Int64</span><span class="sxs-lookup"><span data-stu-id="8406d-128">Int64</span></span>   |
-| <span data-ttu-id="8406d-129">prohibitSendReceiveQuotaInBytes</span><span class="sxs-lookup"><span data-stu-id="8406d-129">prohibitSendReceiveQuotaInBytes</span></span> | <span data-ttu-id="8406d-130">Int64</span><span class="sxs-lookup"><span data-stu-id="8406d-130">Int64</span></span>   |
-| <span data-ttu-id="8406d-131">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="8406d-131">reportPeriod</span></span>                    | <span data-ttu-id="8406d-132">String</span><span class="sxs-lookup"><span data-stu-id="8406d-132">String</span></span>  |
+| <span data-ttu-id="6345a-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="6345a-107">reportRefreshDate</span></span>               | <span data-ttu-id="6345a-108">Date</span><span class="sxs-lookup"><span data-stu-id="6345a-108">Date</span></span>    |
+| <span data-ttu-id="6345a-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="6345a-109">userPrincipalName</span></span>               | <span data-ttu-id="6345a-110">String</span><span class="sxs-lookup"><span data-stu-id="6345a-110">String</span></span>  |
+| <span data-ttu-id="6345a-111">displayName</span><span class="sxs-lookup"><span data-stu-id="6345a-111">displayName</span></span>                     | <span data-ttu-id="6345a-112">String</span><span class="sxs-lookup"><span data-stu-id="6345a-112">String</span></span>  |
+| <span data-ttu-id="6345a-113">isDeleted</span><span class="sxs-lookup"><span data-stu-id="6345a-113">isDeleted</span></span>                       | <span data-ttu-id="6345a-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="6345a-114">Boolean</span></span> |
+| <span data-ttu-id="6345a-115">deletedDate</span><span class="sxs-lookup"><span data-stu-id="6345a-115">deletedDate</span></span>                     | <span data-ttu-id="6345a-116">Date</span><span class="sxs-lookup"><span data-stu-id="6345a-116">Date</span></span>    |
+| <span data-ttu-id="6345a-117">createdDate</span><span class="sxs-lookup"><span data-stu-id="6345a-117">createdDate</span></span>                     | <span data-ttu-id="6345a-118">Date</span><span class="sxs-lookup"><span data-stu-id="6345a-118">Date</span></span>    |
+| <span data-ttu-id="6345a-119">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="6345a-119">lastActivityDate</span></span>                | <span data-ttu-id="6345a-120">Date</span><span class="sxs-lookup"><span data-stu-id="6345a-120">Date</span></span>    |
+| <span data-ttu-id="6345a-121">itemCount</span><span class="sxs-lookup"><span data-stu-id="6345a-121">itemCount</span></span>                       | <span data-ttu-id="6345a-122">Int64</span><span class="sxs-lookup"><span data-stu-id="6345a-122">Int64</span></span>   |
+| <span data-ttu-id="6345a-123">storageUsedInBytes</span><span class="sxs-lookup"><span data-stu-id="6345a-123">storageUsedInBytes</span></span>              | <span data-ttu-id="6345a-124">Int64</span><span class="sxs-lookup"><span data-stu-id="6345a-124">Int64</span></span>   |
+| <span data-ttu-id="6345a-125">issueWarningQuotaInBytes</span><span class="sxs-lookup"><span data-stu-id="6345a-125">issueWarningQuotaInBytes</span></span>        | <span data-ttu-id="6345a-126">Int64</span><span class="sxs-lookup"><span data-stu-id="6345a-126">Int64</span></span>   |
+| <span data-ttu-id="6345a-127">prohibitSendQuotaInBytes</span><span class="sxs-lookup"><span data-stu-id="6345a-127">prohibitSendQuotaInBytes</span></span>        | <span data-ttu-id="6345a-128">Int64</span><span class="sxs-lookup"><span data-stu-id="6345a-128">Int64</span></span>   |
+| <span data-ttu-id="6345a-129">prohibitSendReceiveQuotaInBytes</span><span class="sxs-lookup"><span data-stu-id="6345a-129">prohibitSendReceiveQuotaInBytes</span></span> | <span data-ttu-id="6345a-130">Int64</span><span class="sxs-lookup"><span data-stu-id="6345a-130">Int64</span></span>   |
+| <span data-ttu-id="6345a-131">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="6345a-131">reportPeriod</span></span>                    | <span data-ttu-id="6345a-132">String</span><span class="sxs-lookup"><span data-stu-id="6345a-132">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="8406d-133">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="8406d-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6345a-133">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="6345a-133">JSON representation</span></span>
 
-<span data-ttu-id="8406d-134">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8406d-134">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6345a-134">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="6345a-134">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
