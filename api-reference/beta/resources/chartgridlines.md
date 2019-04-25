@@ -5,39 +5,39 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 852b52fd70e619b8720ef56fb0e857fb499f0abf
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640208"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543698"
 ---
-# <a name="chartgridlines-resource-type"></a><span data-ttu-id="f0cca-103">ChartGridlines 资源类型</span><span class="sxs-lookup"><span data-stu-id="f0cca-103">ChartGridlines resource type</span></span>
+# <a name="chartgridlines-resource-type"></a><span data-ttu-id="657f8-103">ChartGridlines 资源类型</span><span class="sxs-lookup"><span data-stu-id="657f8-103">ChartGridlines resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f0cca-104">代表图表坐标轴的主要或次要网格线。</span><span class="sxs-lookup"><span data-stu-id="f0cca-104">Represents major or minor gridlines on a chart axis.</span></span>
+<span data-ttu-id="657f8-104">代表图表坐标轴的主要或次要网格线。</span><span class="sxs-lookup"><span data-stu-id="657f8-104">Represents major or minor gridlines on a chart axis.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="f0cca-105">方法</span><span class="sxs-lookup"><span data-stu-id="f0cca-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="657f8-105">方法</span><span class="sxs-lookup"><span data-stu-id="657f8-105">Methods</span></span>
 
-| <span data-ttu-id="f0cca-106">方法</span><span class="sxs-lookup"><span data-stu-id="f0cca-106">Method</span></span>           | <span data-ttu-id="f0cca-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="f0cca-107">Return Type</span></span>    |<span data-ttu-id="f0cca-108">说明</span><span class="sxs-lookup"><span data-stu-id="f0cca-108">Description</span></span>|
+| <span data-ttu-id="657f8-106">方法</span><span class="sxs-lookup"><span data-stu-id="657f8-106">Method</span></span>           | <span data-ttu-id="657f8-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="657f8-107">Return Type</span></span>    |<span data-ttu-id="657f8-108">说明</span><span class="sxs-lookup"><span data-stu-id="657f8-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="f0cca-109">获取 ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="f0cca-109">Get ChartGridlines</span></span>](../api/chartgridlines-get.md) | [<span data-ttu-id="f0cca-110">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="f0cca-110">ChartGridlines</span></span>](chartgridlines.md) |<span data-ttu-id="f0cca-111">读取 chartGridlines 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f0cca-111">Read properties and relationships of chartGridlines object.</span></span>|
-|[<span data-ttu-id="f0cca-112">更新</span><span class="sxs-lookup"><span data-stu-id="f0cca-112">Update</span></span>](../api/chartgridlines-update.md) | [<span data-ttu-id="f0cca-113">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="f0cca-113">ChartGridlines</span></span>](chartgridlines.md)    |<span data-ttu-id="f0cca-114">更新 ChartGridlines 对象。</span><span class="sxs-lookup"><span data-stu-id="f0cca-114">Update ChartGridlines object.</span></span> |
+|[<span data-ttu-id="657f8-109">获取 ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="657f8-109">Get ChartGridlines</span></span>](../api/chartgridlines-get.md) | [<span data-ttu-id="657f8-110">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="657f8-110">ChartGridlines</span></span>](chartgridlines.md) |<span data-ttu-id="657f8-111">读取 chartGridlines 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="657f8-111">Read properties and relationships of chartGridlines object.</span></span>|
+|[<span data-ttu-id="657f8-112">更新</span><span class="sxs-lookup"><span data-stu-id="657f8-112">Update</span></span>](../api/chartgridlines-update.md) | [<span data-ttu-id="657f8-113">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="657f8-113">ChartGridlines</span></span>](chartgridlines.md)    |<span data-ttu-id="657f8-114">更新 ChartGridlines 对象。</span><span class="sxs-lookup"><span data-stu-id="657f8-114">Update ChartGridlines object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="f0cca-115">属性</span><span class="sxs-lookup"><span data-stu-id="f0cca-115">Properties</span></span>
-| <span data-ttu-id="f0cca-116">属性</span><span class="sxs-lookup"><span data-stu-id="f0cca-116">Property</span></span>     | <span data-ttu-id="f0cca-117">类型</span><span class="sxs-lookup"><span data-stu-id="f0cca-117">Type</span></span>   |<span data-ttu-id="f0cca-118">说明</span><span class="sxs-lookup"><span data-stu-id="f0cca-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="657f8-115">属性</span><span class="sxs-lookup"><span data-stu-id="657f8-115">Properties</span></span>
+| <span data-ttu-id="657f8-116">属性</span><span class="sxs-lookup"><span data-stu-id="657f8-116">Property</span></span>     | <span data-ttu-id="657f8-117">类型</span><span class="sxs-lookup"><span data-stu-id="657f8-117">Type</span></span>   |<span data-ttu-id="657f8-118">说明</span><span class="sxs-lookup"><span data-stu-id="657f8-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f0cca-119">visible</span><span class="sxs-lookup"><span data-stu-id="f0cca-119">visible</span></span>|<span data-ttu-id="f0cca-120">boolean</span><span class="sxs-lookup"><span data-stu-id="f0cca-120">boolean</span></span>|<span data-ttu-id="f0cca-121">表示坐标轴网格线是否可见的布尔值。</span><span class="sxs-lookup"><span data-stu-id="f0cca-121">Boolean value representing if the axis gridlines are visible or not.</span></span>|
+|<span data-ttu-id="657f8-119">visible</span><span class="sxs-lookup"><span data-stu-id="657f8-119">visible</span></span>|<span data-ttu-id="657f8-120">布尔</span><span class="sxs-lookup"><span data-stu-id="657f8-120">boolean</span></span>|<span data-ttu-id="657f8-121">表示坐标轴网格线是否可见的布尔值。</span><span class="sxs-lookup"><span data-stu-id="657f8-121">Boolean value representing if the axis gridlines are visible or not.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="f0cca-122">关系</span><span class="sxs-lookup"><span data-stu-id="f0cca-122">Relationships</span></span>
-| <span data-ttu-id="f0cca-123">关系</span><span class="sxs-lookup"><span data-stu-id="f0cca-123">Relationship</span></span> | <span data-ttu-id="f0cca-124">类型</span><span class="sxs-lookup"><span data-stu-id="f0cca-124">Type</span></span>   |<span data-ttu-id="f0cca-125">说明</span><span class="sxs-lookup"><span data-stu-id="f0cca-125">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="657f8-122">关系</span><span class="sxs-lookup"><span data-stu-id="657f8-122">Relationships</span></span>
+| <span data-ttu-id="657f8-123">关系</span><span class="sxs-lookup"><span data-stu-id="657f8-123">Relationship</span></span> | <span data-ttu-id="657f8-124">类型</span><span class="sxs-lookup"><span data-stu-id="657f8-124">Type</span></span>   |<span data-ttu-id="657f8-125">说明</span><span class="sxs-lookup"><span data-stu-id="657f8-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f0cca-126">format</span><span class="sxs-lookup"><span data-stu-id="f0cca-126">format</span></span>|[<span data-ttu-id="f0cca-127">ChartGridlinesFormat</span><span class="sxs-lookup"><span data-stu-id="f0cca-127">ChartGridlinesFormat</span></span>](chartgridlinesformat.md)|<span data-ttu-id="f0cca-p101">表示图表网格线的格式。只读。</span><span class="sxs-lookup"><span data-stu-id="f0cca-p101">Represents the formatting of chart gridlines. Read-only.</span></span>|
+|<span data-ttu-id="657f8-126">format</span><span class="sxs-lookup"><span data-stu-id="657f8-126">format</span></span>|[<span data-ttu-id="657f8-127">ChartGridlinesFormat</span><span class="sxs-lookup"><span data-stu-id="657f8-127">ChartGridlinesFormat</span></span>](chartgridlinesformat.md)|<span data-ttu-id="657f8-p101">表示图表网格线的格式。只读。</span><span class="sxs-lookup"><span data-stu-id="657f8-p101">Represents the formatting of chart gridlines. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f0cca-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f0cca-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="657f8-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="657f8-130">JSON representation</span></span>
 
-<span data-ttu-id="f0cca-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f0cca-131">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="657f8-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="657f8-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

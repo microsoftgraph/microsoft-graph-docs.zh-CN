@@ -1,46 +1,46 @@
 ---
 title: 创建和发送通知
-description: '创建和发送通知目标用户通过 Microsoft Graph。 通知存储在 Microsoft Graph 通知源存储，并发送到的用户登录到所有设备终结点上的所有应用程序客户端。  '
+description: '创建并发送针对用户通过 Microsoft Graph 的通知。 通知存储在 Microsoft Graph 通知源存储中, 并发送到用户登录到的所有设备终结点上的所有应用程序客户端。  '
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 70c7992a6fd323b909d948976132304fa04393c4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546377"
 ---
-# <a name="create-and-send-a-notification"></a><span data-ttu-id="a16da-104">创建和发送通知</span><span class="sxs-lookup"><span data-stu-id="a16da-104">Create and send a notification</span></span>
+# <a name="create-and-send-a-notification"></a><span data-ttu-id="7b4f2-104">创建和发送通知</span><span class="sxs-lookup"><span data-stu-id="7b4f2-104">Create and send a notification</span></span>
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a16da-105">创建和发送通知目标用户通过 Microsoft Graph。</span><span class="sxs-lookup"><span data-stu-id="a16da-105">Create and send a notification targeting a user through Microsoft Graph.</span></span> <span data-ttu-id="a16da-106">通知存储在 Microsoft Graph 通知源存储，并发送到的用户登录到所有设备终结点上的所有应用程序客户端。</span><span class="sxs-lookup"><span data-stu-id="a16da-106">The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.</span></span>  
-## <a name="permissions"></a><span data-ttu-id="a16da-107">权限</span><span class="sxs-lookup"><span data-stu-id="a16da-107">Permissions</span></span>
-<span data-ttu-id="a16da-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a16da-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7b4f2-105">创建并发送针对用户通过 Microsoft Graph 的通知。</span><span class="sxs-lookup"><span data-stu-id="7b4f2-105">Create and send a notification targeting a user through Microsoft Graph.</span></span> <span data-ttu-id="7b4f2-106">通知存储在 Microsoft Graph 通知源存储中, 并发送到用户登录到的所有设备终结点上的所有应用程序客户端。</span><span class="sxs-lookup"><span data-stu-id="7b4f2-106">The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.</span></span>  
+## <a name="permissions"></a><span data-ttu-id="7b4f2-107">权限</span><span class="sxs-lookup"><span data-stu-id="7b4f2-107">Permissions</span></span>
+<span data-ttu-id="7b4f2-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7b4f2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a16da-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a16da-110">Permission type</span></span>      | <span data-ttu-id="a16da-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a16da-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7b4f2-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="7b4f2-110">Permission type</span></span>      | <span data-ttu-id="7b4f2-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7b4f2-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a16da-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a16da-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a16da-113">Notifications.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="a16da-113">Notifications.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="a16da-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a16da-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a16da-115">Notifications.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="a16da-115">Notifications.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="7b4f2-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7b4f2-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7b4f2-113">Notifications.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="7b4f2-113">Notifications.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="7b4f2-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7b4f2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7b4f2-115">Notifications.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="7b4f2-115">Notifications.ReadWrite.CreatedByApp</span></span>    |
 
-## <a name="http-request"></a><span data-ttu-id="a16da-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a16da-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7b4f2-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7b4f2-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /me/notifications/
 ```
-## <a name="request-headers"></a><span data-ttu-id="a16da-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="a16da-117">Request headers</span></span>
-|<span data-ttu-id="a16da-118">名称</span><span class="sxs-lookup"><span data-stu-id="a16da-118">Name</span></span> | <span data-ttu-id="a16da-119">类型</span><span class="sxs-lookup"><span data-stu-id="a16da-119">Type</span></span> | <span data-ttu-id="a16da-120">说明</span><span class="sxs-lookup"><span data-stu-id="a16da-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7b4f2-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="7b4f2-117">Request headers</span></span>
+|<span data-ttu-id="7b4f2-118">名称</span><span class="sxs-lookup"><span data-stu-id="7b4f2-118">Name</span></span> | <span data-ttu-id="7b4f2-119">类型</span><span class="sxs-lookup"><span data-stu-id="7b4f2-119">Type</span></span> | <span data-ttu-id="7b4f2-120">说明</span><span class="sxs-lookup"><span data-stu-id="7b4f2-120">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="a16da-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="a16da-121">Authorization</span></span> | <span data-ttu-id="a16da-122">string</span><span class="sxs-lookup"><span data-stu-id="a16da-122">string</span></span> |<span data-ttu-id="a16da-123">Authorization 标头用于传递的呼叫方凭据。</span><span class="sxs-lookup"><span data-stu-id="a16da-123">The authorization header is used to pass the credentials of the calling party.</span></span> <span data-ttu-id="a16da-124">持有者令牌</span><span class="sxs-lookup"><span data-stu-id="a16da-124">Bearer {token}.</span></span> <span data-ttu-id="a16da-125">必需。</span><span class="sxs-lookup"><span data-stu-id="a16da-125">Required.</span></span> |
-## <a name="request-body"></a><span data-ttu-id="a16da-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a16da-126">Request body</span></span>
-<span data-ttu-id="a16da-127">在请求正文中，提供[通知](../resources/projectrome-notification.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a16da-127">In the request body, supply a JSON representation of a [notification](../resources/projectrome-notification.md) object.</span></span>
+|<span data-ttu-id="7b4f2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="7b4f2-121">Authorization</span></span> | <span data-ttu-id="7b4f2-122">string</span><span class="sxs-lookup"><span data-stu-id="7b4f2-122">string</span></span> |<span data-ttu-id="7b4f2-123">授权标头用于传递呼叫方的凭据。</span><span class="sxs-lookup"><span data-stu-id="7b4f2-123">The authorization header is used to pass the credentials of the calling party.</span></span> <span data-ttu-id="7b4f2-124">持有者 {令牌}。</span><span class="sxs-lookup"><span data-stu-id="7b4f2-124">Bearer {token}.</span></span> <span data-ttu-id="7b4f2-125">必需。</span><span class="sxs-lookup"><span data-stu-id="7b4f2-125">Required.</span></span> |
+## <a name="request-body"></a><span data-ttu-id="7b4f2-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="7b4f2-126">Request body</span></span>
+<span data-ttu-id="7b4f2-127">在请求正文中, 提供[通知](../resources/projectrome-notification.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7b4f2-127">In the request body, supply a JSON representation of a [notification](../resources/projectrome-notification.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a16da-128">响应</span><span class="sxs-lookup"><span data-stu-id="a16da-128">Response</span></span>
-<span data-ttu-id="a16da-129">如果成功，此方法返回`201 Created`响应代码，指示已成功创建并存储通知。</span><span class="sxs-lookup"><span data-stu-id="a16da-129">If successful, this method returns the `201 Created` response code that indicates that the notification was successfully created and stored.</span></span> 
-## <a name="example"></a><span data-ttu-id="a16da-130">示例</span><span class="sxs-lookup"><span data-stu-id="a16da-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="a16da-131">请求</span><span class="sxs-lookup"><span data-stu-id="a16da-131">Request</span></span>
-<span data-ttu-id="a16da-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a16da-132">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="7b4f2-128">响应</span><span class="sxs-lookup"><span data-stu-id="7b4f2-128">Response</span></span>
+<span data-ttu-id="7b4f2-129">如果成功, 此方法将`201 Created`返回指示已成功创建和存储通知的响应代码。</span><span class="sxs-lookup"><span data-stu-id="7b4f2-129">If successful, this method returns the `201 Created` response code that indicates that the notification was successfully created and stored.</span></span> 
+## <a name="example"></a><span data-ttu-id="7b4f2-130">示例</span><span class="sxs-lookup"><span data-stu-id="7b4f2-130">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="7b4f2-131">请求</span><span class="sxs-lookup"><span data-stu-id="7b4f2-131">Request</span></span>
+<span data-ttu-id="7b4f2-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7b4f2-132">The following is an example of the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/me/notifications/
@@ -68,8 +68,8 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="a16da-133">响应</span><span class="sxs-lookup"><span data-stu-id="a16da-133">Response</span></span>
-<span data-ttu-id="a16da-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="a16da-134">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="7b4f2-133">响应</span><span class="sxs-lookup"><span data-stu-id="7b4f2-133">Response</span></span>
+<span data-ttu-id="7b4f2-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7b4f2-134">The following is an example of the response.</span></span>
 
 ```http
 HTTP/1.1 201
