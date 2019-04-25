@@ -1,19 +1,19 @@
 ---
 title: 更新 secureScoreControlProfiles
-description: 更新中更改各种属性，如 assignedTo 或 tenantNote 任何集成的解决方案的可编辑 secureScoreControlProfiles 属性。
+description: 在任何集成的解决方案中更新可编辑的 secureScoreControlProfiles 属性以更改各种属性, 如 "分配给/分配" 或 "tenantNote"。
 localization_priority: Normal
 ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642028"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545581"
 ---
 # <a name="update-securescorecontrolprofiles"></a>更新 secureScoreControlProfiles
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新中更改各种属性，如**assignedTo**或**tenantNote**任何集成的解决方案的可编辑**secureScoreControlProfiles**属性。
+在任何集成的解决方案中更新可编辑的**secureScoreControlProfiles**属性以更改各种属性, 如 "**分配给/分配**" 或 " **tenantNote**"。
 
 ## <a name="permissions"></a>权限
 
@@ -21,9 +21,9 @@ ms.locfileid: "29642028"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |   SecurityEvents.ReadWrite.All。  |
+|委派（工作或学校帐户） |   securityevents.readwrite.all。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | SecurityEvents.ReadWrite.All。 |
+|应用程序 | securityevents.readwrite.all。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,25 +37,25 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| 授权  | Bearer {code}。必需。|
-|Prefer | 返回 = 表示形式。 |
+| Authorization  | 持有者 {代码}。 必需。|
+|Prefer | 返回 = 表示。 |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 下表列出了可以为 secureScoreControlProfile 更新字段。 不包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中, 提供应更新的相关字段的值的 JSON 表示形式。 下表列出了可为 secureScoreControlProfile 更新的字段。 未包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
-|assignedTo|String|分析师控件的名称分配给进行会审、 实施或修复。|
-|tenantNote|String|分析师评论 （用于客户控件管理） 的控件。|
-|controlStateUpdates| String|分析师驱动控件上的设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
+|assignedTo|String|为会审、实现或修正分配的控制分析员的名称。|
+|tenantNote|String|控件上的分析师注释 (针对客户控制管理)。|
+|controlStateUpdates| String|控件上的分析导向设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
 
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
 
-如果使用可选请求标头，则该方法返回`200 OK`响应代码和响应正文中的更新的[secureScoreControlProfiles](../resources/securescorecontrolprofiles.md)对象。
+如果使用可选请求标头, 则该方法将在`200 OK`响应正文中返回响应代码和更新的[secureScoreControlProfiles](../resources/securescorecontrolprofiles.md)对象。
 
 ## <a name="example"></a>示例
 

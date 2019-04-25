@@ -5,15 +5,13 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e1c4c567c56e869ed1e18ff0c887393c8345929d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529787"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540897"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将 mailfolder 及其内容复制到其他 mailfolder。
 
@@ -37,7 +35,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ```
 
 ## <a name="request-headers"></a>请求标头
-
 | 标头 | 值 |
 |:-------|:------|
 | Authorization | `Bearer {token}`. 必需。 |
@@ -53,14 +50,13 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文的[mailFolder](../resources/mailfolder.md)资源。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[mailFolder](../resources/mailfolder.md)资源。
 
 ## <a name="example"></a>示例
 
 下面是一个如何调用此 API 的示例。
 
 ##### <a name="request"></a>请求
-
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
@@ -68,7 +64,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
+POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -82,7 +78,6 @@ Content-length: 44
 下面是一个响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,15 +101,10 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "mailFolder: copy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/mailfolder-copy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -1,13 +1,13 @@
 ---
 title: 将 /me 定义为单一实例
-description: 这些是我必须以确保减价扫描程序文档中添加的内容
+description: 必须在文档中添加以下内容, 以确保 Markdown-扫描程序
 localization_priority: Normal
 ms.openlocfilehash: da71bfcb25efbebdf4e6a111f23d8d16e3aca342
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842894"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569527"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>帮助程序（未包含在文档中的示例）
 

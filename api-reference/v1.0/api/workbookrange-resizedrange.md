@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 4eb5aad208ecd7c60e45b2419b61570915bb7338
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931291"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554644"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 获取与当前范围对象类似的范围对象，但其右下角可通过一定数量的行和列进行展开（或合拢）。
@@ -35,7 +35,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |deltaRows|Int32|相对于当前范围，右下角展开的行数。使用正数可展开范围，使用负数可合拢范围|
-|deltaColumns|Int32|扩展的右下角，相对于当前范围的列数。 使用扩展范围，为正数或负数降低它。|
+|deltaColumns|Int32|相对于当前范围, 从右下角扩展的列数。 使用正数可展开范围，使用负数可合拢范围。|
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|

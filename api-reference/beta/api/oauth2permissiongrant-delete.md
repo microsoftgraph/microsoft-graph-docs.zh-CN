@@ -3,11 +3,11 @@ title: 删除 oAuth2PermissionGrant
 description: 删除 oAuth2PermissionGrant。
 localization_priority: Normal
 ms.openlocfilehash: 5c115ada8e39412fbe64259da02b1eadef3f263b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523356"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540147"
 ---
 # <a name="delete-oauth2permissiongrant"></a>删除 oAuth2PermissionGrant
 

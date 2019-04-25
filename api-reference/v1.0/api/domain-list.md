@@ -1,19 +1,19 @@
 ---
 title: 列出域
-description: 检索 domain 对象列表。
+description: 检索域对象的列表。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4039995fc8b588b3a6a318b457e0eaba28b8dfa6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927347"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583618"
 ---
 # <a name="list-domains"></a>列出域
 
-检索 domain 对象列表。
+检索域对象的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,14 +36,14 @@ GET /domains
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。|
-| Accept         | application/json； |
+| 接受         | application/json; |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [domain](../resources/domain.md) 对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[domain](../resources/domain.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

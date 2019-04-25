@@ -1,19 +1,17 @@
 ---
 title: 列出 calendarView
-description: 获取由一个时间范围，从用户的默认日历中，定义日历视图中的匹配项、 例外和事件的单个实例
-localization_priority: Normal
+description: '从用户的默认日历中获取由时间范围定义的日历视图中的事件发生、异常和单个实例。 '
+localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: efef09cd8f0167804fb6b94dc71f7ab0cf30b183
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529717"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544258"
 ---
 # <a name="list-calendarview"></a>列出 calendarView
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从用户的默认日历或其他一些日历中，获取由时间范围定义的日历视图中的事件发生次数、异常和单个实例。
 ## <a name="permissions"></a>权限
@@ -23,9 +21,10 @@ ms.locfileid: "29529717"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    |
-|应用程序 | Calendars.Read、Calendars.ReadWrite |
+|Application | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
+
 用户的默认 [calendar](../resources/calendar.md)。
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -81,7 +80,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
   "name": "get_calendarview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2016-01-01T19:00:00.0000000&endDateTime=2016-10-01T19:00:00.0000000
+GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2016-01-01T19:00:00.0000000&endDateTime=2016-10-01T19:00:00.0000000 
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -103,9 +102,9 @@ Content-length: 354
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
         "response": "",
-        "time": "2016-10-19T10:37:00Z"
+        "time": "datetime-value"
       },
-      "uid": "iCalUId-value",
+      "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
     }
@@ -115,15 +114,10 @@ Content-length: 354
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List calendarView",
-  "keywords": "calendar",
+  "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-list-calendarview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

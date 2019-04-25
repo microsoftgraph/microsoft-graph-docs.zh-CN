@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a05fc37f692d58a4d5d434037fd9d1ebe09ecaa9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31798724"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549322"
 ---
 # <a name="applisttype-enum-type"></a>appListType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31798724"
 |:---|:---|:---|
 |无|0|默认值, 无意向。|
 |appsInListCompliant|1|此列表表示将被视为合规性的应用程序 (仅符合列表中的应用程序)。|
-|appsNotInListCompliant|双面|此列表表示将被视为不合规的应用程序 (所有应用程序都符合列表中的应用程序)。|
+|appsNotInListCompliant|2 |此列表表示将被视为不合规的应用程序 (所有应用程序都符合列表中的应用程序)。|
 
 
 

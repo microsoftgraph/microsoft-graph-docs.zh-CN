@@ -1,21 +1,21 @@
 ---
 title: 列出用户设备
-description: 获取支持 Project Rome 功能的用户设备的列表。 这包括以启动应用程序，或者邮件或将数据发送到应用程序的能力。 在您之后执行 GET 呼叫我/设备，传递中要向您的设备发送命令的设备 ID。
+description: 获取支持 Project 罗马功能的用户设备列表。 这包括启动应用程序的功能, 或向应用程序发送数据或向其发送数据的功能。 在对我/设备执行 GET 呼叫后, 传入设备的 ID 以将命令发送到设备。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 891f66691149106d4ff5a2951170524203eb2ea7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509523"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544275"
 ---
 # <a name="list-user-devices"></a>列出用户设备
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取支持 Project Rome 功能的用户设备的列表。 这包括以启动应用程序，或者邮件或将数据发送到应用程序的能力。 在您之后执行 GET 呼叫我/设备中的设备 ID 传递到向设备[发送命令](send-device-command.md)。
+获取支持 Project 罗马功能的用户设备列表。 这包括启动应用程序的功能, 或向应用程序发送数据或向其发送数据的功能。 在对我/设备执行 GET 呼叫后, 传入设备的 ID 以[将命令发送](send-device-command.md)到设备。
 
 ## <a name="permissions"></a>权限
 
@@ -41,14 +41,14 @@ GET me/devices
 | 标头 |值
 |:----|:------|
 |Authorization| Bearer {token}。必需。 |
-|Accept | application/json |
+|接受 | application/json |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在响应正文中返回一个 200 响应代码以及用户设备属性。
+如果成功, 此方法在响应正文中返回一个200响应代码和用户设备属性。
 
 <!-- { "blockType": "ignored" } -->
 
@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 ```
 
 ## <a name="example"></a>示例
-本示例将返回用户的设备的列表。 若要命令设备使用`me/devices/{id}/command`，您将需要获取的设备，则返回的 ID。
+本示例将返回用户的设备列表。 若要使用`me/devices/{id}/command`命令设备, 您需要获取返回的设备的 ID。
 
 #### <a name="request"></a>请求
 
@@ -95,7 +95,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>响应
 
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "ignored",

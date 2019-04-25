@@ -1,30 +1,30 @@
 ---
 title: teamMemberSettings 资源类型
-description: 例如，要配置的成员可以执行某些操作时，是否设置创建通道，并将自动程序，添加团队中。
+description: 用于配置成员是否可以在团队中执行某些操作（例如，创建频道和添加机器人）的设置。
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 6ffd1dba4a0aafb1364a6d3f1ee673e2381c7178
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954251"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548472"
 ---
 # <a name="teammembersettings-resource-type"></a>teamMemberSettings 资源类型
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-例如，要配置的成员可以执行某些操作时，是否设置创建通道，并将自动程序，添加[团队](team.md)中。
+用于配置成员是否可以在[团队](team.md)中执行某些操作 (例如, 创建频道和添加 bot) 的设置。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|布尔|如果设置为 true，则成员可以添加和更新通道。|
-|allowDeleteChannels|布尔|如果设置为 true，则成员可以删除通道。|
-|allowAddRemoveApps|布尔|如果设置为 true，则成员可以添加和删除应用程序。|
-|allowCreateUpdateRemoveTabs|布尔|如果设置为 true，则成员可以添加、 更新和删除选项卡。 |
-|allowCreateUpdateRemoveConnectors|布尔|如果设置为 true，则成员可以添加、 更新和删除连接器。|
+|allowCreateUpdateChannels|布尔值|如果设置为 true, 则成员可以添加和更新频道。|
+|allowDeleteChannels|布尔值|如果设置为 true, 则成员可以删除频道。|
+|allowAddRemoveApps|布尔值|如果设置为 true, 则成员可以添加和删除应用。|
+|allowCreateUpdateRemoveTabs|布尔值|如果设置为 true, 则成员可以添加、更新和删除选项卡。 |
+|allowCreateUpdateRemoveConnectors|布尔值|如果设置为 true, 则成员可以添加、更新和删除连接器。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -47,10 +47,15 @@ ms.locfileid: "27954251"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "team's memberSettings resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teammembersettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

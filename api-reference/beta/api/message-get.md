@@ -4,12 +4,12 @@ description: 检索 message 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8d15a1f07ae42e9c203a26a970896fea0d360494
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: b1a94d396d5c249cdadda233632bb596d34a3625
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518516"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540490"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -19,10 +19,12 @@ ms.locfileid: "31518516"
 
 例如, 您可以收到一条消息, 并在邮件中展开所有[提及](../resources/mention.md)的实例。
 
+您可以使用`$value`参数来[获取邮件的 MIME 内容](/graph/outlook-get-mime-message)。
+
 在以下两种情况下, 应用可以在其他用户的邮件文件夹中获取邮件:
 
-* 如果该应用程序具有应用程序权限，或者
-* 如果应用程序具有来自一个用户的相应委派权限, 而另一个用户与该用户共享了一个邮件文件夹, 或者, 已向该用户授予了对该用户的委派访问[权限](#permissions)。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+* 如果该应用具有应用程序权限，或者
+* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 由于**邮件**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**邮件**实例中的自定义属性和扩展数据。
 
@@ -47,6 +49,15 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
+若要获取指定邮件的 MIME 内容, 请执行以下操作:
+<!-- { "blockType": "ignored" } --> 
+```http 
+GET /me/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/messages/{id}/$value 
+GET /me/mailFolders/{id}/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
+```
+
 若要获取邮件并展开邮件中的所有提及内容, 请执行以下操作:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -57,9 +68,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-您可以使用 " `$expand` **提及**导航" 属性上的查询参数, 以获取一条消息, 其中包含已展开邮件中每个[提及](../resources/mention.md)的详细信息。
+使用`$value`参数获取邮件的 MIME 内容。
+
+使用 " `$expand` **提及**" 导航属性上的查询参数, 可以获取消息, 其中包含已展开邮件中每个[提及](../resources/mention.md)的详细信息。
 
 
 
@@ -332,7 +345,7 @@ Content-type: application/json
 
 - [使用扩展向资源添加自定义数据](/graph/extensibility-overview)
 - [使用开放扩展向用户添加自定义数据（预览）](/graph/extensibility-open-users)
-- [使用架构扩展向组添加自定义数据 (预览)](/graph/extensibility-schema-groups)
+- [使用架构扩展向组添加自定义数据（预览）](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

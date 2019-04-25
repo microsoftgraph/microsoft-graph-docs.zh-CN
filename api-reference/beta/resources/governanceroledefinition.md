@@ -1,46 +1,46 @@
 ---
 title: governanceRoleDefinition 资源类型
-description: 表示角色定义。 有关 Azure 资源，它可以表示 Azure RBAC 角色，如所有者、 读者、 参与者、 等。
+description: 表示角色定义。 对于 azure 资源, 它可以表示 azure RBAC 角色, 如所有者、读者、参与者等。
 localization_priority: Normal
 ms.openlocfilehash: 867864892bac9107c44ba9125336429248b6697e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528639"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547438"
 ---
 # <a name="governanceroledefinition-resource-type"></a>governanceRoleDefinition 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-表示角色定义。 有关 Azure 资源，它可以表示 Azure RBAC 角色，如所有者、 读者、 参与者、 等。
+表示角色定义。 对于 azure 资源, 它可以表示 azure RBAC 角色, 如所有者、读者、参与者等。
 
 
 ## <a name="methods"></a>方法
 
 | 方法          | 返回类型 |说明|
 |:---------------|:--------|:--------|:----------|
-|[List](../api/governanceroledefinition-list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md)集合 |列出对资源的角色定义的集合。|
-|[Get](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |读取的属性并由 id 指定的角色定义实体的关系。|
-不`POST`， `PUT`， `PATCH`，`DELETE`支持`roleDefinitions`现在实体集。
+|[List](../api/governanceroledefinition-list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md)集合 |列出资源上的角色定义的集合。|
+|[获取](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |读取由 id 指定的角色定义实体的属性和关系。|
+目前`POST`, `PUT`entity `PATCH`set `DELETE`上`roleDefinitions`不支持,,,。
 ## <a name="properties"></a>属性
 | 属性  | 类型      |说明|
 |:----|:----------|:----------|:----------|
-|id         |字符串     |角色定义的 id。 |
+|id         |String     |角色定义的 id。 |
 |resourceId |String     |必需。 与角色定义关联的资源的 id。 |
-|externalId   |String     |外部角色定义的 id。|
-|displayName|String     |角色定义的显示名称。|
-|subjectCount|Int32     |可选。 分配给角色的主题数。 它表示对资源的请求者的访问状态。 若要获取的属性，请是明确使用`$select=subjectCount`查询中。|
-|eligibleAssignmentCount|Int32|可选。 合格的角色分配相关联的角色定义数。 若要获取的属性，请是明确使用`$select=eligibleAssignmentCount`查询中。|
-|activeAssignmentCount|Int32    |可选。 活动的角色分配相关联的角色定义数。  若要获取的属性，请是明确使用`$select=activeAssignmentCount`查询中。|
+|externalId   |String     |角色定义的外部 id。|
+|displayName|字符串     |角色定义的显示名称。|
+|subjectCount|Int32     |可选。 分配给角色的主题数量。 它表示请求者对资源的访问状态。 若要获取属性, 请明确在`$select=subjectCount`查询中使用。|
+|eligibleAssignmentCount|Int32|可选。 与角色定义关联的符合条件的角色分配数。 若要获取属性, 请明确在`$select=eligibleAssignmentCount`查询中使用。|
+|activeAssignmentCount|Int32    |可选。 与角色定义关联的活动角色分配的数量。  若要获取属性, 请明确在`$select=activeAssignmentCount`查询中使用。|
 
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|资源|[governanceResource](../resources/governanceresource.md)|只读。 相关联的角色定义的资源。|
-|roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|角色定义关联的角色设置。|
+|资源|[governanceResource](../resources/governanceresource.md)|只读。 角色定义的关联资源。|
+|roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|角色定义的关联角色设置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

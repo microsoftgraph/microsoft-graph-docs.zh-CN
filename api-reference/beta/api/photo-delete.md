@@ -3,11 +3,11 @@ title: 删除照片
 description: 删除照片。
 localization_priority: Normal
 ms.openlocfilehash: 8f29f272aeaebd8aed7de14b817d3e4c7719f511
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526926"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539022"
 ---
 # <a name="delete-photo"></a>删除照片
 
@@ -35,7 +35,7 @@ DELETE /drive/root/createdByUser/photo
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | if-match  | string  | 如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。|
-| Authorization  | 字符串  | Bearer {token}。必需。 |
+| Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

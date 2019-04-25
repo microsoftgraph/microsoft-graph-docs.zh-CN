@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 75aa4bd91ad6f1038fdc42460c6a3c9ab928a09d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911817"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579471"
 ---
 # <a name="rangefill-resource-type"></a>RangeFill 资源类型
 
@@ -21,15 +21,15 @@ ms.locfileid: "27911817"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 RangeFill](../api/rangefill-get.md) | [WorkbookRangeFill](rangefill.md) |读取 rangeFill 对象的属性和关系。|
-|[Update](../api/rangefill-update.md) | [WorkbookRangeFill](rangefill.md)   |更新 RangeFill 对象 |
-|[Clear](../api/rangefill-clear.md)|无|重置区域背景。|
+|[更新](../api/rangefill-update.md) | [WorkbookRangeFill](rangefill.md)   |更新 RangeFill 对象 |
+|[清除](../api/rangefill-clear.md)|无|重置区域背景。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |color|string|表示窗体 #RRGGBB（例如“FFA500”）的边框线条颜色或作为已命名的 HTML 颜色（例如“orange”）的 HTML 颜色代码。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 

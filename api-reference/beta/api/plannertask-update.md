@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: ae2551165405161e071d23cf704851ac18fbf73e
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967240"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538845"
 ---
 # <a name="update-plannertask"></a>更新 plannerTask
 
@@ -31,7 +31,7 @@ ms.locfileid: "29967240"
 PATCH /planner/tasks/<id>
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
-| Name       | 说明|
+| 名称       | 说明|
 |:-----------|:-----------|
 | Authorization  | Bearer {token}。必需。 |
 | If-Match  | 要更新的 **plannerTask** 的上次已知 ETag 值。必需。|
@@ -44,10 +44,10 @@ PATCH /planner/tasks/<id>
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|此任务已应用的类别。有关可能的值，请参阅[已应用的类别](../resources/plannerappliedcategories.md)。|
 |assigneePriority|String|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|分配到任务的用户集合。|
-|bucketId|String|任务所属的地址散列表元 id。 地址散列表元需要在计划中的任务。 它是 28 字符长度和区分大小写。 服务上执行[格式验证](../resources/tasks-identifiers-disclaimer.md)。 |
+|bucketId|String|任务所属的存储桶 id。 存储桶需要位于任务所在的计划中。 长度为 28 个字符，区分大小写。 [格式验证](../resources/tasks-identifiers-disclaimer.md)在服务上完成。 |
 |conversationThreadId|字符串|任务对话的线程 id。这是在组中创建的对话线程对象的 id。|
 |dueDateTime|DateTimeOffset|任务截止的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|orderHint|String|提示用于为列表视图中的此类项目排序。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
+|orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
 |percentComplete|Int32|任务完成的百分比。当设置为 `100` 时，任务被视为完成。 |
 |startDateTime|DateTimeOffset|任务开始的日期和时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |title|String|任务的标题。|

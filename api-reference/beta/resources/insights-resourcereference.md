@@ -1,21 +1,21 @@
 ---
 title: resourceReference 资源类型
-description: 包含属性的见解复杂类型。
+description: 包含见解的属性的复杂类型。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 4fa4563904472fad9fc28fa4acb10b77887b5872
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642756"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549704"
 ---
 # <a name="resourcereference-resource-type"></a>resourceReference 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含属性的[见解](insights.md)复杂类型。
+包含[见解](insights.md)的属性的复杂类型。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -33,9 +33,9 @@ ms.locfileid: "29642756"
 
 | 属性      | 类型      | 说明  |
 | ------------- |-----------| -------------|
-| WebUrl        | String    | 通向引用的项的 URL。 |
-| id            | String    | 项目的唯一标识符。           |
-| type          | String    | 一个 string 值，可以用于分类项目，如"microsoft.graph.driveItem" |
+| WebUrl        | String    | 指向引用项的 URL。 |
+| id            | 字符串    | 项目的唯一标识符。           |
+| 类型          | String    | 一个可用于对项目进行分类的字符串值, 例如 "driveItem" |
 <!--
 {
   "type": "#page.annotation",

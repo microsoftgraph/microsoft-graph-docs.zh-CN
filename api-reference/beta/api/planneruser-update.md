@@ -1,21 +1,21 @@
 ---
 title: 更新 plannerUser
-description: 更新 plannerUser 对象的属性。 此操作可用于添加或删除计划从用户的收藏夹计划列表中，并以指示该计划用户具有最近查看。
+description: 更新 plannerUser 对象的属性。 您可以使用此操作在用户的 "收藏夹计划" 列表中添加或删除计划, 并指示用户最近查看过的计划。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 95c631d39fb650dea0b87871bdd10d92a3ab31eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508921"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538751"
 ---
 # <a name="update-planneruser"></a>更新 plannerUser
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新[plannerUser](../resources/planneruser.md)对象的属性。 此操作可用于添加或删除计划从用户的收藏夹计划列表中，并以指示该计划用户具有最近查看。
+更新[plannerUser](../resources/planneruser.md)对象的属性。 您可以使用此操作在用户的 "收藏夹计划" 列表中添加或删除计划, 并指示用户最近查看过的计划。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,25 +34,25 @@ PATCH /me/planner
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}。必需。|
-| If-Match  | 最后的**plannerUser**要更新的已知的 ETag 值。 必需。|
+| Authorization  | 持有者 {代码}。 必需。|
+| If-Match  | 要更新的**plannerUser**的最新已知 ETag 值。 必需。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|对包含用户已标记为收藏计划引用的集合。|
-|recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|对包含对用户具有最近查看的计划的引用的集合。|
+|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|对集合所做的更改, 其中包含对用户已标记为收藏的计划的引用。|
+|recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|对集合的更改, 其中包含对用户最近查看过的计划的引用。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[plannerUser](../resources/planneruser.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[plannerUser](../resources/planneruser.md)对象。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面展示了示例请求。 此请求将作为用户的收藏夹中添加 ID"jd8S5gOaFk2S8aWCIAJz42QAAxtD"计划"下一版本讨论"，并从最喜爱的计划列表中删除 id 为"7oTB5aMIAE2rVo 1N L7RmQAGX2q"计划。
-它还更新计划"jd8S5gOaFk2S8aWCIAJz42QAAxtD"的视图上次。
+下面展示了示例请求。 此请求将 id 为 "jd8S5gOaFk2S8aWCIAJz42QAAxtD" 的计划 "下一次发布讨论" 添加为用户的收藏夹, 并从 "收藏夹计划" 列表中删除 id 为 "7oTB5aMIAE2rVo-1N-L7RmQAGX2q" 的计划。
+它还更新了计划 "jd8S5gOaFk2S8aWCIAJz42QAAxtD" 的上次查看时间。
 <!-- {
   "blockType": "ignored",
   "name": "update_planneruser"

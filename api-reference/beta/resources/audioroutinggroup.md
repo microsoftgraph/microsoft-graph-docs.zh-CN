@@ -1,31 +1,31 @@
 ---
 title: audioRoutingGroup 资源类型
-description: 音频路由组存储在进行多方对话中的参与者之间的专用音频路由。 源是参与者本身而接收器是进行多方对话中的其他参与者的子集。
+description: 音频路由组在多方对话中的参与者之间存储专用音频路由。 源是参与者本身, 而接收器是多方对话中的其他参与者的子集。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643169"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543999"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-音频路由组存储在进行多方对话中的参与者之间的专用音频路由。 源是参与者本身而接收器是进行多方对话中的其他参与者的子集。
+音频路由组在多方对话中的参与者之间存储专用音频路由。 源是参与者本身, 而接收器是多方对话中的其他参与者的子集。
 
-> **注意：**[ConfigureMixer](../api/participant-configuremixer.md)不涉及任何路由，用于整个呼叫设置源接收器组合的音量级别。
+> **注意:**[ConfigureMixer](../api/participant-configuremixer.md)不涉及任何路由, 而是用于设置源接收器组合的音量级别的整个调用。
 
 ## <a name="methods"></a>方法
 
 | 方法                                                  | 返回类型                               | 说明                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
-| [获取 audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | 读取属性和 audioRoutingGroup 对象的关系。|
+| [获取 audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | 读取 audioRoutingGroup 对象的属性和关系。|
 | [更新](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | 更新接收器列表。                       |
-| [删除](../api/audioroutinggroup-delete.md)            | 无                                      | 音频路由组中删除。              |
+| [删除](../api/audioroutinggroup-delete.md)            | 无                                      | 删除音频路由组。              |
 
 ## <a name="properties"></a>属性
 
@@ -34,13 +34,13 @@ ms.locfileid: "29643169"
 | id            | String            | 只读。 由服务器生成。                                         |
 | 接收器     | String 集合 | 接收参与者 id 的列表。                                   |
 | routingMode   | String            | 路由组模式。  可取值为：`oneToOne`、`multicast`。   |
-| sources       | String 集合 | 源参与者 id 的列表。                                      |
+| 源       | String 集合 | 源参与者 id 的列表。                                      |
 
-> **注意：** 路由模式确定源和接收器的限制。 支持以下路由组。
-> - `oneToOne`-源和接收器具有只有一个参与者。
-> - `multicast`-源有一个参与者，但有多个接收器。 接收器列表可能会更新。
+> **注意:** 路由模式确定对源和接收器的限制。 仅支持以下路由组。
+> - `oneToOne`-源和接收器每个只有一个参与者。
+> - `multicast`-源具有一个参与者, 但有多个接收器。 收件人列表可能会更新。
 
-> **注意：** 如果创建许多音频路由组 （例如每个参与者自动程序），则将被转接仅顶部 4 基准扬声器的音频。 它与自定义音频路由组，即使意味着，如果扬声器不调节主混音器中，即使仅为此扬声器和自动程序的专用音频组他/她不能通过 bot 听到。
+> **注意:** 如果创建了多个音频路由组 (例如, 每个参与者的 bot), 则仅转发前4个主扬声器的音频。 除了自定义的音频路由组, 如果扬声器在主混音器中的音量不足, 他/她也不会听到此扬声器和机器人的专用音频组, 即使在主混音器中没有太大的声音。
 
 ## <a name="relationships"></a>关系
 无

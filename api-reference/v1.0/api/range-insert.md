@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: aa59abfd2b60454a73472fc5283d3c7212ee48ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929044"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558200"
 ---
 # <a name="range-insert"></a>Range: insert
 
@@ -42,7 +42,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|Shift|string|指定移动单元格的方式。  可能的值为： `Down`， `Right`。|
+|Shift|string|指定移动单元格的方式。  可能的值为: `Down`、 `Right`。|
 
 ## <a name="response"></a>响应
 

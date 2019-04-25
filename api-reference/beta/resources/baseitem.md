@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
 ms.openlocfilehash: 8e01d219fcc67c583fddba8d9893ed94a23c409b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481970"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535549"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem 资源类型
 
@@ -55,7 +55,7 @@ ms.locfileid: "30481970"
 | id                   | string            | 驱动器唯一标识符。只读。                                         |
 | createdBy            | [identitySet][]   | 识别创建项目的用户、设备或应用程序。只读。        |
 | createdDateTime      | dateTimeOffset    | 创建项的日期和时间。只读。                                             |
-| eTag                 | string            | 该项目的 ETag。只读。                                                          |
+| eTag                 | 字符串            | 该项目的 ETag。只读。                                                          |
 | lastModifiedBy       | [identitySet][]   | 上次修改项目的用户、设备和应用程序的标识。只读。 |
 | lastModifiedDateTime | dateTimeOffset    | 上次修改项目的日期和时间。只读。                                   |
 | name                 | string            | 项目名称。读写。                                                      |

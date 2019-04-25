@@ -1,27 +1,27 @@
 ---
-title: 计划工具： 增量
-description: 检索用户订阅对象更改。
+title: 'Planner: delta'
+description: 检索对用户订阅的对象所做的更改。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: 772a5d487f48b1552707da45729a84c7fdf7da2f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525722"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546827"
 ---
-# <a name="planner-delta"></a>计划工具： 增量
+# <a name="planner-delta"></a>Planner: delta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索用户是[订阅](../resources/planner-overview.md#track-changes-using-delta-query)的对象更改。
+检索对用户[订阅](../resources/planner-overview.md#track-changes-using-delta-query)的对象所做的更改。
 
-此方法允许您的应用程序的用户可以访问从中计划程序随着时间的推移对象跟踪更改。
+此方法允许应用程序跟踪对用户可从计划程序中的时间段内访问的对象的更改。
 
-此方法的返回值可能包含 hetergenous 计划程序中的对象的类型。
+此方法的返回值可能包含来自 Planner 的对象的异构类型。
 
-有关跟踪 Microsoft Graph 数据中的更改的详细信息，请参阅[使用增量查询来跟踪 Microsoft Graph 数据中的更改](/graph/delta-query-overview)。
+有关在 microsoft graph 数据中跟踪更改的详细信息, 请参阅[使用 delta query 跟踪 microsoft graph 数据中的更改](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ GET /me/planner/all/delta
 GET /users/<id>/planner/all/delta
 ```
 
-任何其他查询参数 (如`$select`， `$expand`，或`$filter`) 当前支持的增量查询的计划程序的实现。
+在计划程序的 delta 查询实现`$select`中`$expand`, 当前`$filter`不支持任何其他查询参数 (如、或)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -56,11 +56,11 @@ GET /users/<id>/planner/all/delta
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和更改要应用于响应正文和要执行增量同步链接中的对象的集合。
+如果成功, 此方法将返回`200 OK`响应代码和要应用于响应正文中的对象的更改集合, 以及要遵循的增量同步链接。
 
-如果`deltaLink`，呼叫者使用的格式不正确，此终结点将返回 HTTP 400。
+`deltaLink`如果呼叫者使用的是格式不正确的, 则此终结点将返回 HTTP 400。
 
-如果`deltaLink`，呼叫者使用太旧，此终结点将返回 HTTP 410。
+如果呼叫`deltaLink`者使用的过旧, 此终结点将返回 HTTP 410。
 
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，所示的响应对象可能已缩短。 从实际的呼叫，将返回所有已更改的属性。
+>**注意：** 为了提高可读性，可能缩短了显示的响应对象。 所有已更改的属性都将从实际调用返回。
 
 <!-- {
   "blockType": "response",

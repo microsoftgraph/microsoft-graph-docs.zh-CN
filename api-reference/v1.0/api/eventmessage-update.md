@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: a906dbbdb9a82e78a49ea41399e3791c9d52645b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943884"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584227"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
@@ -42,11 +42,11 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|categories|String|与邮件关联的类别。|
-|重要性|String|邮件的重要性。 可能的值为： `Low`， `Normal`， `High`。|
-|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
-|isRead|布尔|指示是否已阅读该邮件。|
-|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|类别|String|与邮件关联的类别。|
+|importance|String|邮件的重要性。 可能的值包括 `Low`、`Normal`、`High`。|
+|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isRead|Boolean|指示是否已阅读该邮件。|
+|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 
 ## <a name="response"></a>响应
 

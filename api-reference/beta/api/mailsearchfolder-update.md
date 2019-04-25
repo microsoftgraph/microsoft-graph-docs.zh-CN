@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 54e901751fc404ba2099205c6b16d86c99d9b05f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528464"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540596"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
@@ -44,10 +44,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| displayName | String | [MailFolder](../resources/mailfolder.md)显示名称。|
-| includeNestedFolders | Boolean | 如何应遍历的邮箱文件夹层次结构。 `true`意味着应为深入搜索完成时`false`意味着浅表搜索应改为完成。 |
-| sourceFolderIDs | String 集合 | 应 mined 邮箱文件夹。 |
-| filterQuery | String | 要筛选的邮件的 OData 查询。 |
+| displayName | String | [mailFolder](../resources/mailfolder.md)的显示名称。|
+| includeNestedFolders | 布尔值 | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索, 而不是`false`指应改为进行浅表搜索。 |
+| sourceFolderIDs | String collection | 应挖掘的邮箱文件夹。 |
+| filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [mailFolder](../resources/mailfolder.md) 对象。

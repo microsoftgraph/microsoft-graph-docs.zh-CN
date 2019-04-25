@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ec8990a2b0c2d0f674304c4005fbf28a0b5a631e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976889"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583744"
 ---
 # <a name="list-registeredowners"></a>列出 registeredOwner
 

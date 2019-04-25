@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bdf7f7adb4a5b54fd3de2d85b5e40175f62afb5b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971001"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550090"
 ---
 # <a name="get-iosupdateconfiguration"></a>获取 iosUpdateConfiguration
 

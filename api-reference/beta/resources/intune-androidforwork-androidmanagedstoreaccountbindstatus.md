@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1a23bd8917959ea7f5f0fa7f82f6c09a6640b18e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777828"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552441"
 ---
 # <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>androidManagedStoreAccountBindStatus 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31777828"
 |:---|:---|:---|
 |notBound|0|尚未记录|
 |绑定|1|尚未记录|
-|boundAndValidated|双面|尚未记录|
-|解除|第三章|尚未记录|
+|boundAndValidated|2 |尚未记录|
+|解除|3 |尚未记录|
 
 
 

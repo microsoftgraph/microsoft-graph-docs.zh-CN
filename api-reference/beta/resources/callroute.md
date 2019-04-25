@@ -1,28 +1,28 @@
 ---
 title: callRoute 资源类型
-description: CallRoute 类型。
+description: callRoute 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cfa470c4d3a03655221cab1f29baa60d00a8cf6c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512799"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543829"
 ---
 # <a name="callroute-resource-type"></a>callRoute 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-CallRoute 类型。
+callRoute 类型。
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型                          | 说明                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
-| Final               | [identitySet](identityset.md) | 解析为呼叫中的标识。               |
-| Original            | [identitySet](identityset.md) | 最初在呼叫中使用的标识。           |
+| 终稿               | [identitySet](identityset.md) | 在呼叫中解析为的标识。               |
+| 源语言            | [identitySet](identityset.md) | 最初在呼叫中使用的标识。           |
 | routingType         | String                        | 可取值为：`forwarded`、`lookup`、`selfFork`。  |
 
 ## <a name="json-representation"></a>JSON 表示形式

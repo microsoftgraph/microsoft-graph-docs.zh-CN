@@ -1,34 +1,34 @@
 ---
 title: objectMapping 资源类型
-description: 定义如何给定的对象应同步从源目录到目标目录。 具体而言，它定义源目录中的对象与目标目录中某个对象的匹配方式什么 （如果有） 范围筛选器应确定如果我们想要设置给定的对象，以及应对象属性如何转换从到目标目录源。
+description: 定义给定对象应如何从源目录同步到目标目录。 具体而言, 它定义源目录中的对象应与目标目录中的对象匹配的方式, 应使用什么 (如果有) 作用域筛选器确定是否要预配给定的对象, 以及应如何转换对象属性源到目标目录。
 localization_priority: Normal
 ms.openlocfilehash: 274d401c28abc25d904c259b00a673f3c0a53888
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526912"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581751"
 ---
 # <a name="objectmapping-resource-type"></a>objectMapping 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义如何给定的对象应同步从源目录到目标目录。 具体而言，它定义源目录中的对象与目标目录中某个对象的匹配方式什么 （如果有） 范围筛选器应确定如果我们想要设置给定的对象，以及应对象属性如何转换从到目标目录源。
+定义给定对象应如何从源目录同步到目标目录。 具体而言, 它定义源目录中的对象应与目标目录中的对象匹配的方式, 应使用什么 (如果有) 作用域筛选器确定是否要预配给定的对象, 以及应如何转换对象属性源到目标目录。
 
-对象映射主[同步规则](synchronization-synchronizationrule.md)属于和更新[同步架构](synchronization-synchronizationschema.md)的一部分。
+对象映射是[同步规则](synchronization-synchronizationrule.md)的主要部分, 并作为[同步架构](synchronization-synchronizationschema.md)的一部分进行更新。
 
 ## <a name="properties"></a>属性
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|attributeMappings  |[attributeMapping](synchronization-attributemapping.md)集合    | 属性映射定义从源对象映射到目标对象和如何应流哪些属性。 许多函数可供支持的原始源值转换。|
-|enabled        |Boolean    |当`true`，将同步过程中处理此对象映射。 当`false`，将跳过此对象映射。|
-|flowTypes      |objectFlowType    |此对象映射为启用了哪些流类型。 `Add`在目标目录中，创建新对象`Update`修改现有对象和`Delete`取消设置现有用户。 默认值是`Add, Update, Delete`。 |
-|元数据       |metadataEntry 集合    |其他扩展属性。 除非明确提到，不应更改元数据值。|
-|name           |String     |对象映射的 human 友好名称。|
-|范围          |[filter](synchronization-filter.md)     |定义一个筛选器，用于确定是否应设置给定的对象。 例如，您可能希望向只位于美国的设置用户。|
-|sourceObjectName           |String     |源目录中对象的名称。 必须匹配源[目录定义](synchronization-directorydefinition.md)的对象名称。|
-|目标           |String     |目标目录中的对象的名称。 必须匹配从目标[目录定义](synchronization-directorydefinition.md)的对象名称。|
+|attributeMappings  |[attributeMapping](synchronization-attributemapping.md)集合    | 属性映射定义将哪些属性从源对象映射到目标对象以及它们的流动方式。 有许多函数可用于支持原始源值的转换。|
+|enabled        |Boolean    |在`true`此情况下, 将在同步过程中处理此对象映射。 何时`false`, 将跳过此对象映射。|
+|flowTypes      |objectFlowType    |为此对象映射启用了哪些流类型。 `Add`在目标目录中创建新的对象`Update` , 修改现有的对象`Delete` , 并 deprovisions 现有用户。 默认值为`Add, Update, Delete`。 |
+|metadata       |metadataEntry 集合    |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|
+|name           |String     |对象映射的人友好名称。|
+|范围          |[filter](synchronization-filter.md)     |定义在决定是否应设置给定对象时要使用的筛选器。 例如, 您可能希望仅预配位于美国的用户。|
+|sourceObjectName           |String     |源目录中的对象的名称。 必须与源[目录定义](synchronization-directorydefinition.md)中的对象名称相匹配。|
+|targetObjectName           |String     |目标目录中的对象的名称。 必须与目标[目录定义](synchronization-directorydefinition.md)中的对象名称相匹配。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

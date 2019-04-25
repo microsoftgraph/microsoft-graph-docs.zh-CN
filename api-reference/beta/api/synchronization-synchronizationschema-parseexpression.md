@@ -1,21 +1,21 @@
 ---
 title: 'synchronizationSchema: parseExpression'
-description: '(../ resources/synchronization_attributemappingsource.md) 对象。 '
+description: '(../resources/synchronization_attributemappingsource.md) 对象。 '
 localization_priority: Normal
 ms.openlocfilehash: 27545333c6ff7b3c9ffde3e1c59abd09465db1c2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522964"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545357"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-分析给定的字符串表达式转换 [attributeMappingSource | (.../ resources/synchronization_attributemappingsource.md) 对象。 
+将给定的字符串表达式解析为 [attributeMappingSource | (.。。/resources/synchronization_attributemappingsource.md) 对象。 
 
-有关表达式的详细信息，请参阅[在 Azure Active Directory 中的属性映射的编写表达式](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。
+有关表达式的详细信息, 请参阅[在 Azure Active Directory 中编写属性映射的表达式](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,12 +43,12 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|表达式               |String               |若要分析的表达式。|
-|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|测试针对表达式进行求值的数据对象。 可选。|
+|表达式               |String               |要分析的表达式。|
+|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|要对表达式进行求值的测试数据对象。 可选。|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |将映射到此表达式的属性的定义。 可选。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md)对象。
 
 ## <a name="example"></a>示例
 

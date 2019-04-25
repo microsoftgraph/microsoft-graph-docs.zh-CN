@@ -1,21 +1,21 @@
 ---
-title: 参与者： 设为静音
-description: 将呼叫中的特定参与者设为静音。
+title: '参与者: 静音'
+description: 将呼叫中的特定参与者静音。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0fa4190ca6a3871c42af3c753cb3d9d48d320bd5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521738"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539398"
 ---
-# <a name="participant-mute"></a>参与者： 设为静音
+# <a name="participant-mute"></a>参与者: 静音
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将呼叫中的特定参与者设为静音。
+将呼叫中的特定参与者静音。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|ClientContext|String|客户端上下文。|
+|适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[commsOperation](../resources/commsoperation.md)对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -90,7 +90,7 @@ Content-Length: 259
 }
 ```
 
-## <a name="example---mute-specific-participant"></a>示例-静音特定参与者
+## <a name="example---mute-specific-participant"></a>示例-特定参与者的静音
 
 ##### <a name="request"></a>请求
 
@@ -127,7 +127,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a>通知-更新与设为静音的参与者名单
+##### <a name="notification---roster-updated-with-participant-muted"></a>通知-名单在参与者静音时更新
 
 ```http
 POST https://bot.contoso.com/api/calls

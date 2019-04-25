@@ -1,21 +1,21 @@
 ---
-title: 更新 plannerplan
-description: 更新 **plannerplan** 对象的属性。
+title: 更新 plannerPlan
+description: 更新**plannerPlan**对象的属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 86f486ceb5b2adca66049e5370dc0b6fa5c670ff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509069"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538936"
 ---
-# <a name="update-plannerplan"></a>更新 plannerplan
+# <a name="update-plannerplan"></a>更新 plannerPlan
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 **plannerplan** 对象的属性。
+更新**plannerPlan**对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,8 +44,8 @@ PATCH /planner/plans/<id>
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|所有者|String|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
-|title|字符串|计划的标题。|
+|所有者|字符串|拥有计划的[组](../resources/group.md)`id`。必须存在有效的组才能设置此字段。设置后，只能由所有者更新此字段。|
+|title|String|计划的标题。|
 
 ## <a name="response"></a>响应
 

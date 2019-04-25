@@ -1,19 +1,19 @@
 ---
 title: 获取 synchronizationTemplate
-description: 通过其标识符来检索同步模板。
+description: 按其标识符检索同步模板。
 localization_priority: Normal
 ms.openlocfilehash: 4fc13ee5d83d6501f75bb45ce69f189b8809270c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524371"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545167"
 ---
 # <a name="get-synchronizationtemplate"></a>获取 synchronizationTemplate
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过其标识符来检索同步模板。
+按其标识符检索同步模板。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,20 +43,20 @@ GET servicePrincipals/{id}/synchronization/templates/{templateId}
 
 ### <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。
 
 ### <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/templates/Slack
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将返回实际呼叫中的所有属性。
+响应示例如下所示。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性将在实际调用中返回。
 
 ```http
 HTTP/1.1 200 OK

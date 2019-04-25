@@ -1,19 +1,19 @@
 ---
-title: 可传递列表组的成员
-description: 获取组的成员的列表。 一组可将用户、 设备和其他组作为成员。 此操作可传递，也将返回所有嵌套成员一个平面列表。
+title: 列表组可传递成员
+description: 获取组成员的列表。 组可以将用户、设备和其他组作为成员。 此操作是可传递的, 并且还将返回所有嵌套成员的简单列表。
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: dd6417916a7d1e2f79735db3dce4f1c3465d6577
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694501"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534708"
 ---
-# <a name="list-group-transitive-members"></a>可传递列表组的成员
+# <a name="list-group-transitive-members"></a>列表组可传递成员
 
-获取组的成员的列表。 一组可将用户、 设备和其他组作为成员。 此操作可传递，也将返回所有嵌套成员一个平面列表。
+获取组成员的列表。 组可以将用户、设备和其他组作为成员。 此操作是可传递的, 并且还将返回所有嵌套成员的简单列表。
 
 ## <a name="permissions"></a>权限
 
@@ -21,11 +21,11 @@ ms.locfileid: "29694501"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Directory.Read.All，Directory.AccessAsUser.All，User.ReadBasic.All User.Read.All    |
-|委派（Microsoft 个人帐户） | 不支持。    |
-|应用程序 | Directory.Read.All User.Read.All |
+|委派（工作或学校帐户） | directory.accessasuser.all、user.readbasic.all、用户、全部、用户、全部读取。所有    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | read. all, User. all |
 
->**注意：** 列表中隐藏成员资格组的成员，则 Member.Read.Hidden 权限是必需的。
+>**注意:** 若要列出隐藏的成员资格组的成员, 则需要使用 Read. hidden 权限是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8ce6d0e6f884dafa80b3181dfe44cbce1ff51341
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776421"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552294"
 ---
 # <a name="ioslobapp-resource-type"></a>iosLobApp 资源类型
 
@@ -25,16 +25,16 @@ ms.locfileid: "31776421"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 iosLobApps](../api/intune-apps-ioslobapp-list.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md) 集合|列出 [iosLobApp](../resources/intune-apps-ioslobapp.md) 对象的属性和关系。|
-|[获取 iosLobApp](../api/intune-apps-ioslobapp-get.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md)|读取 [iosLobApp](../resources/intune-apps-ioslobapp.md) 对象的属性和关系。|
-|[创建 iosLobApp](../api/intune-apps-ioslobapp-create.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md)|创建新的 [iosLobApp](../resources/intune-apps-ioslobapp.md) 对象。|
-|[删除 iosLobApp](../api/intune-apps-ioslobapp-delete.md)|无|删除 [iosLobApp](../resources/intune-apps-ioslobapp.md)。|
-|[更新 iosLobApp](../api/intune-apps-ioslobapp-update.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md)|更新 [iosLobApp](../resources/intune-apps-ioslobapp.md) 对象的属性。|
+|[List iosLobApps](../api/intune-apps-ioslobapp-list.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md) 集合|列出 [iosLobApp](../resources/intune-apps-ioslobapp.md) 对象的属性和关系。|
+|[Get iosLobApp](../api/intune-apps-ioslobapp-get.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md)|读取 [iosLobApp](../resources/intune-apps-ioslobapp.md) 对象的属性和关系。|
+|[Create iosLobApp](../api/intune-apps-ioslobapp-create.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md)|创建新的 [iosLobApp](../resources/intune-apps-ioslobapp.md) 对象。|
+|[Delete iosLobApp](../api/intune-apps-ioslobapp-delete.md)|无|删除 [iosLobApp](../resources/intune-apps-ioslobapp.md)。|
+|[Update iosLobApp](../api/intune-apps-ioslobapp-update.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md)|更新 [iosLobApp](../resources/intune-apps-ioslobapp.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -50,7 +50,7 @@ ms.locfileid: "31776421"
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6202deb0a225da136216eddbb44818cb3ba3a3c5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789729"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548675"
 ---
 # <a name="subjectnameformat-enum-type"></a>subjectNameFormat 枚举类型
 
@@ -24,13 +24,13 @@ ms.locfileid: "31789729"
 |:---|:---|:---|
 |commonName|0|公用名。|
 |commonNameIncludingEmail|1|公用名称, 包括电子邮件。|
-|commonNameAsEmail|双面|电子邮件的常见名称。|
-|自|第三章|自定义主题名称格式。|
-|commonNameAsIMEI|5|作为 IMEI 的常用名称。|
-|commonNameAsSerialNumber|型|作为序列号的常用名称。|
-|commonNameAsAadDeviceId|步|作为序列号的常用名称。|
-|commonNameAsIntuneDeviceId|utf-8|作为序列号的常用名称。|
-|commonNameAsDurableDeviceId|第|作为序列号的常用名称。|
+|commonNameAsEmail|2 |电子邮件的常见名称。|
+|自|3 |自定义主题名称格式。|
+|commonNameAsIMEI|5 |作为 IMEI 的常用名称。|
+|commonNameAsSerialNumber|6 |作为序列号的常用名称。|
+|commonNameAsAadDeviceId|7 |作为序列号的常用名称。|
+|commonNameAsIntuneDeviceId|8 |作为序列号的常用名称。|
+|commonNameAsDurableDeviceId|9 |作为序列号的常用名称。|
 
 
 

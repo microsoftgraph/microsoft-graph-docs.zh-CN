@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 747244e8a820a9bf73b3d99a6043c3134348e75d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971884"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578104"
 ---
 # <a name="table-headerrowrange"></a>Table:HeaderRowRange
 

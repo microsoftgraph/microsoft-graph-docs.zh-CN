@@ -1,15 +1,15 @@
 ---
-title: 列表 leakedCredentialsRiskEvents
+title: 列出 leakedCredentialsRiskEvents
 description: 检索 leakedcredentialsriskevent 对象的列表。
 localization_priority: Normal
 ms.openlocfilehash: ad34b75117c33014f76464ed85d5f4a644d1de8e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511686"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541036"
 ---
-# <a name="list-leakedcredentialsriskevents"></a>列表 leakedCredentialsRiskEvents
+# <a name="list-leakedcredentialsriskevents"></a>列出 leakedCredentialsRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ GET /leakedCredentialsRiskEvents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[leakedCredentialsRiskEvent](../resources/leakedcredentialsriskevent.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[leakedCredentialsRiskEvent](../resources/leakedcredentialsriskevent.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

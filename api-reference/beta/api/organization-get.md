@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0313fb5912d8cc9e12319fafac518becfee105a7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520079"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539790"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -17,7 +17,7 @@ ms.locfileid: "29520079"
 
 检索当前经过身份验证的组织的属性和关系。
 
-由于**组织**资源支持[扩展](/graph/extensibility-overview)，您还可以使用`GET`操作来获取**组织**实例中的自定义属性和扩展数据。
+由于**组织**资源支持[扩展](/graph/extensibility-overview), 因此您还可以使用操作`GET`来获取**组织**实例中的自定义属性和扩展数据。
 
 ## <a name="permissions"></a>权限
 
@@ -25,7 +25,7 @@ ms.locfileid: "29520079"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read、Directory.Read.All |
+|委派（工作或学校帐户） | read、目录。所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | Directory.Read.All |
 

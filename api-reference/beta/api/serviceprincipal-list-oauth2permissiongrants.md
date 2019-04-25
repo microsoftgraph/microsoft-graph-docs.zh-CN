@@ -1,15 +1,15 @@
 ---
-title: servicePrincipal： 列表 oAuth2Permissiongrants
+title: 'servicePrincipal: List oAuth2Permissiongrants'
 description: 检索 oAuth2Permissiongrant 对象的列表。
 localization_priority: Normal
 ms.openlocfilehash: 34f769f5bd194458689914dd608583c69bbe2076
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642406"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537534"
 ---
-# <a name="serviceprincipal-list-oauth2permissiongrants"></a>servicePrincipal： 列表 oAuth2Permissiongrants
+# <a name="serviceprincipal-list-oauth2permissiongrants"></a>servicePrincipal: List oAuth2Permissiongrants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/oAuth2Permissiongrants
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[oAuth2Permissiongrant](../resources/oauth2permissiongrant.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[oAuth2Permissiongrant](../resources/oauth2permissiongrant.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

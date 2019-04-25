@@ -1,41 +1,41 @@
 ---
 title: privilegedRoleSettings 资源类型
-description: 代表特权角色的设置。
+description: 表示特权角色的设置。
 localization_priority: Normal
 ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642777"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563246"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表特权角色的设置。
+表示特权角色的设置。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |读取属性和 privilegedRoleSettings 对象的关系。|
+|[获取 privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |读取 privilegedRoleSettings 对象的属性和关系。|
 |[更新 privilegedRoleSettings](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |更新 privilegedRoleSettings 对象。|
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|当激活角色持续时间。|
-|id|string| 角色设置唯一标识符。 只读。|
-|isMfaOnElevationConfigurable|boolean|**true**如果 mfaOnElevation 可配置。 **false**如果 mfaOnElevation 不可配置。|
-|lastGlobalAdmin|boolean|仅供内部。|
-|maxElavationDuration|duration|激活角色的最大持续时间。|
-|mfaOnElevation|boolean|如果为**true** MFA 需要激活角色。 **false**如果 MFA 不需要激活角色。|
-|minElevationDuration|duration|最少持续时间激活角色。|
-|notificationToUserOnElevation|boolean|**true**如果角色激活时向最终用户发送通知。 **false**如果角色被激活时不发送通知。|
-|ticketingInfoOnElevation|boolean|如果为**true**时，票证信息是必需激活角色。 **false**如果票证信息不需要激活角色。|
-|approvalOnElevation|boolean|**true**如果情况下审批，需要激活角色。 **false**如果审批不需要激活角色。|
-|approverIds|array|审批 id，如果需要激活审核的列表。|
+|elevationDuration|duration|激活角色的持续时间。|
+|id|string| 角色设置的唯一标识符。 只读。|
+|isMfaOnElevationConfigurable|布尔|如果 mfaOnElevation 是可配置的,**则为 true** 。 **假**如果 mfaOnElevation 不可配置。|
+|lastGlobalAdmin|布尔|仅供内部使用。|
+|maxElavationDuration|duration|已激活角色的最大持续时间。|
+|mfaOnElevation|布尔|如果需要 MFA 以激活角色,**则为 true** 。 **假**如果无需进行 MFA 即可激活角色。|
+|minElevationDuration|duration|已激活角色的最短持续时间。|
+|notificationToUserOnElevation|布尔|如果激活角色时向最终用户发送通知,**则为 true** 。 **假**如果在角色激活时不发送通知。|
+|ticketingInfoOnElevation|布尔|如果激活角色时需要票证信息,**则为 true** 。 **假**如果激活角色时不需要票证信息。|
+|approvalOnElevation|布尔|如果激活角色时需要进行审批,**则为 true** 。 **假**如果激活该角色时不需要审批。|
+|approverIds|数组|审批 id 的列表 (如果激活需要审批)。|
 
 ## <a name="relationships"></a>关系
 无

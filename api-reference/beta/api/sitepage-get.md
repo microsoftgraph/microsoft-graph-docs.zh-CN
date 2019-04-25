@@ -6,21 +6,21 @@ title: 获取网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 2232a72cc116965332e055178be87eb5eea0405d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640544"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545270"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>获取网站的网站页面列表中的页面
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中获取页面
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在[网站][]中的网站的页面[列表][]返回[sitePage][]的元数据。
+返回[网站][]的 "网站页面"[列表][]中的[sitePage][]的元数据。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 

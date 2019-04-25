@@ -1,19 +1,19 @@
 ---
 title: sectionGroup 资源类型
-description: OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
+description: OneNote 笔记本中的分区组。 节组可以包含节和节组。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: ec27343121ba20ef65703f3df1d53e6c62ccc8e4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961874"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579140"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup 资源类型
 
-OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
+OneNote 笔记本中的分区组。 节组可以包含节和节组。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -49,32 +49,32 @@ OneNote 笔记本中的分区组。分区组可以包含分区和分区组。
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
-|createdDateTime|DateTimeOffset|分区组的创建日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
-|id|字符串|分区组的唯一标识符。只读。|
+|createdDateTime|DateTimeOffset|节组的创建日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
+|id|String|节组的唯一标识符。 只读。|
 |lastModifiedBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
-|lastModifiedDateTime|DateTimeOffset|上次修改分区组的日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
-|displayName|String|分区组的名称。|
-|sectionGroupsUrl|String|`sectionGroups` 导航属性的 URL，其将返回分区组中的所有分区组。只读。|
-|sectionsUrl|String|`sections` 导航属性的 URL，其将返回分区组中的所有分区。只读。|
-|self|字符串|可以在其中获取关于分区阻的详细信息的终结点。只读。|
+|lastModifiedDateTime|DateTimeOffset|上次修改节组的日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
+|displayName|String|节组的名称。|
+|sectionGroupsUrl|String|`sectionGroups`导航属性的 URL, 该 URL 返回节组中的所有节组。 只读。|
+|sectionsUrl|String|`sections`导航属性的 URL, 该 URL 返回节组中的所有节。 只读。|
+|自学|String|终结点，您可在此处获取关于节组的详细信息。 只读。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|包含分区组的笔记本。只读。|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|包含分区组的分区组。只读。|
-|sectionGroups|[SectionGroup](sectiongroup.md) collection|分区中的分区组。只读。可为 NULL。|
-|sections|[OnenoteSection](section.md)集合|分区组中的分区。只读。可为 Null。|
+|parentNotebook|[Notebook](notebook.md)|包含分区组的笔记本。 只读。|
+|parentSectionGroup|[SectionGroup](sectiongroup.md)|包含节组的节组。 只读。|
+|sectionGroups|[SectionGroup](sectiongroup.md)集合|节中的节组。 此为只读属性。 可为 Null。|
+|分区|[OnenoteSection](section.md)集合|分区组中的节。 此为只读属性。 可为 Null。|
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Get section group](../api/sectiongroup-get.md) | [SectionGroup](sectiongroup.md) |读取分区组的属性和关系。|
-|[Create section group](../api/sectiongroup-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| 通过发布到指定分区组中的 sectionGroups 集合创建分区组。|
-|[List section groups](../api/sectiongroup-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| 获取指定分区组中的分区组集合。|
-|[Create section](../api/sectiongroup-post-sections.md) |[OnenoteSection](section.md)| 通过发布到指定分区组中的分区集合创建分区。|
-|[List sections](../api/sectiongroup-list-sections.md) |[OnenoteSection](section.md)集合| 获取指定分区组中的分区集合。|
+|[获取分区组](../api/sectiongroup-get.md) | [SectionGroup](sectiongroup.md) |读取分区组的属性和关系。|
+|[创建分区组](../api/sectiongroup-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| 通过发布到指定分区组中的 sectionGroups 集合创建分区组。|
+|[列出分区组](../api/sectiongroup-list-sectiongroups.md) |[SectionGroup](sectiongroup.md)集合| 获取指定分区组中的分区组的集合。|
+|[创建分区](../api/sectiongroup-post-sections.md) |[OnenoteSection](section.md)| 通过发布到指定分区组中的节集合来创建节。|
+|[列出分区](../api/sectiongroup-list-sections.md) |[OnenoteSection](section.md)集合| 获取指定分区组中的节的集合。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,19 +1,19 @@
 ---
 title: 列出 servicePrincipals
-description: 检索 servicePrincipal 对象列表。
+description: 检索 servicePrincipal 对象的列表。
 localization_priority: Normal
 ms.openlocfilehash: cd61b69e330ac376d15bfaf99c1147b8f9402d7f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643627"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545233"
 ---
 # <a name="list-serviceprincipals"></a>列出 servicePrincipals
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 servicePrincipal 对象列表。
+检索 servicePrincipal 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ GET /servicePrincipals
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[servicePrincipal](../resources/serviceprincipal.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[servicePrincipal](../resources/serviceprincipal.md)对象集合。
 
 ## <a name="example"></a>示例
 

@@ -1,27 +1,27 @@
 ---
 title: noMediaConfig 资源类型
-description: 指示没有媒体的媒体配置。
+description: 用于指示无媒体的媒体配置。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 8d564493889cc367ecdb697ce4031c40a4cbbbef
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641314"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581623"
 ---
 # <a name="nomediaconfig-resource-type"></a>noMediaConfig 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指示没有媒体的媒体配置。
+用于指示无媒体的媒体配置。
 
 ## <a name="properties"></a>属性
 
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | 布尔值 |  |
+| removeFromDefaultAudioGroup | Boolean |  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

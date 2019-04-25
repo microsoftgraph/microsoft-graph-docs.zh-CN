@@ -1,19 +1,19 @@
 ---
 title: 列表策略
-description: 检索目录中的所有策略对象。
+description: 检索目录中的所有 policy 对象。
 localization_priority: Normal
 ms.openlocfilehash: 292eb457b87629d0034b97b3c781d75adc0da4e8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510020"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538706"
 ---
 # <a name="list-policies"></a>列表策略
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索目录中的所有[策略](../resources/policy.md)对象。
+检索目录中的所有[policy](../resources/policy.md)对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -39,10 +39,10 @@ GET /policies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[策略](../resources/policy.md)对象。 如果不成功...
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[policy](../resources/policy.md)对象。 如果不成功 .。。
 
 ## <a name="example"></a>示例
-以下示例检索所有策略。
+下面的示例检索所有策略。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

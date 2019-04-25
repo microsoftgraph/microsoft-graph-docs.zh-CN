@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 27e5276b3aea656e771a47fee3ff04183147facf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526996"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539384"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones(TimeZoneStand
 ```
 
 ##### <a name="response-2"></a>响应 2
-下面展示了示例响应。 
+下面是一个响应示例。 
 
 <!-- {
   "blockType": "response",

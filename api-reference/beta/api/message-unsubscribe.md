@@ -1,31 +1,31 @@
 ---
-title: 消息： 取消订阅
-description: 提交代表登录用户的电子邮件请求取消订阅电子邮件通讯组列表。 使用中的信息`List-Unsubscribe`标头。
+title: '邮件: 取消订阅'
+description: 代表已登录用户提交电子邮件请求, 以从电子邮件通讯组列表中取消订阅。 使用`List-Unsubscribe`标头中的信息。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 69d14315fc0732ed12db357f9aa9a0c837f48f29
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508823"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540358"
 ---
-# <a name="message-unsubscribe"></a>消息： 取消订阅
+# <a name="message-unsubscribe"></a>邮件: 取消订阅
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提交代表登录用户的电子邮件请求取消订阅电子邮件通讯组列表。 使用中的信息`List-Unsubscribe`标头。
+代表已登录用户提交电子邮件请求, 以从电子邮件通讯组列表中取消订阅。 使用`List-Unsubscribe`标头中的信息。
 
-邮件发件人可以使用邮件列表以用户友好的方式通过包括一个选项以收件人退出。他们可以通过指定实现`List-Unsubscribe`关注[RFC 2369](https://www.faqs.org/rfcs/rfc2369.html)每个邮件中的页眉。
+邮件发件人可以通过包含一个用于选择收件人的选项, 以用户友好的方式使用邮寄列表。可以通过在[RFC-2369](https://www.faqs.org/rfcs/rfc2369.html)之后`List-Unsubscribe`的每封邮件中指定标头来执行此操作。
 
-**注释**具体而言，以**取消**操作，发件人必须指定`mailto:`和不基于 URL 的取消信息。
+**注释**特别是, 要使**取消订阅**操作正常运行, 发件人`mailto:`必须指定而不是基于 URL 的取消订阅信息。
 
-设置该标题将对[邮件](../resources/message.md)实例与**unsubscribeEnabled**属性还设置`true`，并**unsubscribeData**属性设为标题数据。
+设置该标头也会将[消息](../resources/message.md)实例的**unsubscribeEnabled**属性设置为`true`, 并将**unsubscribeData**属性设置为标头数据。
 
-如果一条消息的**unsubscribeEnabled**属性是`true`，您可以使用**取消**操作取消类似今后的邮件用户管理邮件发件人。
+如果邮件的**unsubscribeEnabled**属性为`true`, 则可以使用 "**取消订阅**" 操作从邮件发件人托管的类似的未来邮件中取消订阅用户。
 
-成功，则**取消**操作会将邮件移到**已删除邮件**文件夹中。 发件人管理将来邮件通讯组从实际的用户的排除。
+成功的**取消订阅**操作将邮件移动到 "**已删除邮件**" 文件夹。 用户从将来的邮件分发中实际排除的用户由发件人管理。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

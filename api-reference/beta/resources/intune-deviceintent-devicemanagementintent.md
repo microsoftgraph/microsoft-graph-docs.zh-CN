@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2de7d4e8c177317aa220d6aafbba4bda8b7fe299
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780922"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541855"
 ---
 # <a name="devicemanagementintent-resource-type"></a>deviceManagementIntent 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "31780922"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|意向 ID|
+|id|字符串|意向 ID|
 |displayName|String|用户给定的显示名称|
 |description|String|用户提供的说明|
 |isAssigned|Boolean|指示是否将意向分配给用户|
@@ -44,7 +44,7 @@ ms.locfileid: "31780922"
 |关系|类型|说明|
 |:---|:---|:---|
 |settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)集合|要应用的所有设置的集合|
-|类别|[deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)集合|在意向中设置类别的集合|
+|categories|[deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)集合|在意向中设置类别的集合|
 |assignments|[deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)集合|工作分配集合|
 |deviceSettingStateSummaries|[deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)集合|设置及其状态和这些设备的计数, 这些设备属于意向中所有设置的对应状态|
 |deviceStates|[deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)集合|将应用该意向的所有设备的状态的集合|

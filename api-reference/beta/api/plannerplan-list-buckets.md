@@ -1,15 +1,15 @@
 ---
 title: 列出存储桶
-description: 检索 plannerPlan 对象包含的 plannerbucket 对象的列表。
+description: 检索 plannerPlan 对象包含的 **plannerbucket** 对象的列表。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: df28d0f69b3b8549b2ae29ee1f7b0a1a8c6992cd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515522"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538929"
 ---
 # <a name="list-buckets"></a>列出存储桶
 

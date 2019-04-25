@@ -1,21 +1,21 @@
 ---
 title: 列出附件
-description: 获取附件对象附加到 Outlook 任务的列表。
+description: 获取附加到 Outlook 任务的附件对象的列表。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 9d330f0a86b99bbd667ff1f32a5b5fc549dfc7f2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526905"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539779"
 ---
 # <a name="list-attachments"></a>列出附件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[附件](../resources/attachment.md)对象附加到 Outlook 任务的列表。
+获取附加到 Outlook 任务的[附件](../resources/attachment.md)对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -52,7 +52,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[attachment](../resources/attachment.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[附件](../resources/attachment.md)对象集合。
 
 ## <a name="example"></a>示例
 

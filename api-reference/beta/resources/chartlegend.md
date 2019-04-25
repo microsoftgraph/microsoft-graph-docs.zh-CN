@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 13c054403eb93afce03775138c151e67bc2f57d7
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640243"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543758"
 ---
 # <a name="chartlegend-resource-type"></a>ChartLegend 资源类型
 
@@ -28,9 +28,9 @@ ms.locfileid: "29640243"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|overlay|boolean|表示图表图例是否应该与图表主体重叠的布尔值。|
+|overlay|布尔|表示图表图例是否应该与图表主体重叠的布尔值。|
 |position|string|表示图例在图表上的位置。可能的值是：`Top`、`Bottom`、`Left`、`Right`、`Corner`、`Custom`。|
-|visible|boolean|表示 ChartLegend 对象的可见性的布尔值。|
+|visible|布尔|表示 ChartLegend 对象的可见性的布尔值。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

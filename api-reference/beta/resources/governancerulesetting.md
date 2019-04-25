@@ -1,26 +1,26 @@
 ---
 title: governanceRuleSetting 资源类型
-description: 表示角色设置组成的规则。
+description: 表示角色设置所组成的规则。
 localization_priority: Normal
 ms.openlocfilehash: bbb44760cf4b7377e5e5cc6dd312c2caee9897fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547447"
 ---
 # <a name="governancerulesetting-resource-type"></a>governanceRuleSetting 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示角色设置组成的规则。
+表示角色设置所组成的规则。
 
 
 ## <a name="properties"></a>属性
 |属性      | 类型         |说明|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|String        |规则的 id。 例如，``ExpirationRule``和``MfaRule``。|
-|setting       |String        |规则的设置。 值为 string JSON 格式的 Parameter_Name:Parameter_Value 对的列表。 例如，`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
+|ruleIdentifier|String        |规则的 id。 例如``ExpirationRule``和``MfaRule``。|
+|setting       |String        |规则的设置。 该值是一个包含 Parameter_Name: Parameter_Value 格式的对列表的 JSON 字符串。 例如，`{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 6c3dd1bdb565ce32e464e38d7909988b4f4c7791
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936281"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578139"
 ---
 # <a name="location-resource-type"></a>位置资源类型
 
@@ -35,8 +35,8 @@ ms.locfileid: "30936281"
 | address | [physicalAddress](physicaladdress.md) |位置的街道地址。 |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | 地理坐标和位置的海拔高度。 |
 | displayName  | String | 与地点相关联的名称。                       |
-| locationEmailAddress | 字符串 | （可选）与位置相关联的电子邮件地址。 |
-| locationUri | 字符串 | （可选）表示位置的 URI。 |
+| locationEmailAddress | String | （可选）与位置相关联的电子邮件地址。 |
+| locationUri | String | （可选）表示位置的 URI。 |
 | locationType | locationType | 位置的类型。 可取值为：`default`、`conferenceRoom`、`homeAddress`、`businessAddress`、`geoCoordinates`、`streetAddress`、`hotel`、`restaurant`、`localBusiness`、`postalAddress`。 只读。|
 | uniqueId | String | 仅供内部使用。|
 | uniqueIdType | String | 仅供内部使用。 |

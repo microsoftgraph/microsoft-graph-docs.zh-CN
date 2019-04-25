@@ -5,15 +5,13 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 922fa813009090e504a71049ca0f8c717fc48354
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869475"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547692"
 ---
 # <a name="create-calendargroup"></a>创建 CalendarGroup
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 创建新的 CalendarGroup。
 ## <a name="permissions"></a>权限
@@ -52,7 +50,7 @@ POST /users/{id | userPrincipalName}/calendarGroups
   "name": "create_calendargroup_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendarGroups
+POST https://graph.microsoft.com/v1.0/me/calendarGroups
 Content-type: application/json
 Content-length: 90
 
@@ -85,15 +83,10 @@ Content-length: 110
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create CalendarGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-post-calendargroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

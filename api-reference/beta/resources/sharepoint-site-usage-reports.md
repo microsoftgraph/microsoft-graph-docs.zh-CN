@@ -1,21 +1,21 @@
 ---
 title: SharePoint 网站使用情况报表
-description: 您可以获取来自 SharePoint 的用户存储在 SharePoint 网站、 多少文件主动正在被使用，和存储在所有这些网站使用的文件总数方面得到的值的高级视图。 然后，您可以深化到的 SharePoint 网站使用率报告，以便了解趋势和每个网站的所有站点级别的详细信息。
+description: 您可以根据用户在 sharepoint 网站中存储的文件总数、活动使用的文件数以及在所有这些网站中使用的存储, 从 sharepoint 中获取要获取的值的高级别视图。 然后，可深入研究 SharePoint 网站使用情况报表，了解所有网站的趋势和其中每个网站的详细信息。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: f25d752a179eac68b34465010ce6f2cb7fab08e8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575277"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584071"
 ---
 # <a name="sharepoint-site-usage-reports"></a>SharePoint 网站使用情况报表
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以获取来自 SharePoint 的用户存储在 SharePoint 网站、 多少文件主动正在被使用，和存储在所有这些网站使用的文件总数方面得到的值的高级视图。 然后，您可以深化到的 SharePoint 网站使用率报告，以便了解趋势和每个网站的所有站点级别的详细信息。
+您可以根据用户在 sharepoint 网站中存储的文件总数、活动使用的文件数以及在所有这些网站中使用的存储, 从 sharepoint 中获取要获取的值的高级别视图。 然后，可深入研究 SharePoint 网站使用情况报表，了解所有网站的趋势和其中每个网站的详细信息。
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - SharePoint 网站使用情况](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)。
 

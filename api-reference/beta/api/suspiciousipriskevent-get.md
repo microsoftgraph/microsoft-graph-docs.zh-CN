@@ -1,19 +1,19 @@
 ---
 title: 获取 suspiciousIpRiskEvent
-description: 检索的属性和 suspiciousipriskevent 对象的关系。
+description: 检索 suspiciousipriskevent 对象的属性和关系。
 localization_priority: Normal
 ms.openlocfilehash: 64218e000eb32065a65d68d69e3735caa11b3ca0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521556"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545363"
 ---
 # <a name="get-suspiciousipriskevent"></a>获取 suspiciousIpRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和 suspiciousipriskevent 对象的关系。
+检索 suspiciousipriskevent 对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,7 +39,7 @@ GET /suspiciousIpRiskEvents/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[suspiciousIpRiskEvent](../resources/suspiciousipriskevent.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[suspiciousIpRiskEvent](../resources/suspiciousipriskevent.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

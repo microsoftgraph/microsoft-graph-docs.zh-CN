@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 662a49dfcb5f4c80e870185849c6943ace9eed88
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788182"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550782"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>win32LobAppDetectionOperator 枚举类型
 
@@ -24,11 +24,11 @@ ms.locfileid: "31788182"
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |平等|1|等号运算符。|
-|notEqual|双面|运算符不相等。|
-|greaterThan|4|大于运算符。|
-|greaterThanOrEqual|5|大于或等于运算符。|
-|lessThan|utf-8|小于运算符。|
-|lessThanOrEqual|第|小于或等于运算符。|
+|notEqual|2 |运算符不相等。|
+|greaterThan|4 |大于运算符。|
+|greaterThanOrEqual|5 |大于或等于运算符。|
+|lessThan|8 |小于运算符。|
+|lessThanOrEqual|9 |小于或等于运算符。|
 
 
 

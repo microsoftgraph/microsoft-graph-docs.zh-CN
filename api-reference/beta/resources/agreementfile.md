@@ -1,19 +1,19 @@
 ---
 title: agreementFile 资源类型
-description: 表示使用协议文件租户管理使用 Azure Active Directory (Azure AD) 的可自定义术语。 它包含有关协议文件的元数据 (例如，名称、 语言，以及它是否为默认的文件)。
+description: 表示租户使用 azure Active Directory (azure AD) 管理的可自定义使用条款协议文件。 它包含有关协议文件的元数据 (例如, 名称、语言以及它是否为默认文件)。
 localization_priority: Normal
 ms.openlocfilehash: 446173e83d32af96f938cbee15964ea204a62f7e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511427"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535746"
 ---
 # <a name="agreementfile-resource-type"></a>agreementFile 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示使用协议文件租户管理使用 Azure Active Directory (Azure AD) 的可自定义术语。 它包含有关协议文件的元数据 (例如，名称、 语言，以及它是否为默认的文件)。
+表示租户使用 azure Active Directory (azure AD) 管理的可自定义使用条款协议文件。 它包含有关协议文件的元数据 (例如, 名称、语言以及它是否为默认文件)。
 
 <!--
 ## Methods
@@ -28,11 +28,11 @@ ms.locfileid: "29511427"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|fileData|[agreementFileData](agreementfiledata.md)|表示使用 PDF 文档中的条款的数据。 只读。|
-|fileName|String|协议文件 (例如，TOU.pdf) 的名称。 只读。|
+|fileData|[agreementFileData](agreementfiledata.md)|代表使用条款的 PDF 文档的数据。 只读。|
+|fileName|String|协议文件的名称 (例如, TOU)。 只读。|
 |id|String|只读。|
-|isDefault|Boolean|指示是否这是默认协议文件，是否无区域性匹配的客户端首选项。 如果没有任何文件被标记为默认值，第一个将被视为默认值。 只读。|
-|language|String|区域性格式 languagecode2-国家/地区/regioncode2 中的协议文件。 languagecode2 是小写字母双字母代码派生自 ISO 639-1。 国家/地区/regioncode2 派生自 ISO 3166，它通常包括两个大写字母或 BCP 47 语言标记 (例如，EN-US)。 只读。|
+|isDefault|Boolean|指示是否为默认协议文件 (如果没有任何区域性与客户端首选项匹配)。 如果没有任何文件被标记为默认值, 则第一个文件将被视为默认值。 只读。|
+|language|String|协议文件的区域性 (格式为 languagecode2/regioncode2)。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166, 通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us)。 只读。|
 
 ## <a name="relationships"></a>关系
 无。

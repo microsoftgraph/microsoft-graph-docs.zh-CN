@@ -5,30 +5,30 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 19cb2dc1dd1e86cd697319a0dc8a729cb712e463
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792186"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547793"
 ---
-# <a name="list-messages"></a>List messages
+# <a name="list-messages"></a>列出邮件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取登录用户的邮箱（包括“已删除邮件”和“待筛选邮件”文件夹）中的邮件。 
 
-从邮箱中获取邮件可能会导致多个请求, 具体取决于页面大小和邮箱数据。 默认的页面大小为10封邮件。 若要获取下一页邮件, 只需将返回的整个 URL 应用`@odata.nextLink`到下一个消息获取请求。 此 URL 包括您在初始请求中可能指定的任何查询参数。 
+根据页面大小和邮箱数据，从邮箱中获取邮件可能会引发多个请求。 默认页面大小为 10 封邮件。 若要获取下一页的邮件，只需将 `@odata.nextLink` 中返回的整个 URL 应用于下一个 get-messages 请求。 此 URL 包括可能已在初始请求中指定的任何查询参数。 
 
-请勿尝试从`@odata.nextLink` URL 中提取`$skip`值来处理响应。 此 API 使用`$skip`值来保留它在用户邮箱中已有的所有项的计数, 以返回邮件类型项的页面。 因此, 即使在初始响应中, `$skip`该值也会大于页面大小。 有关详细信息, 请参阅[在应用中分页 Microsoft Graph 数据](/graph/paging)。
+不要尝试从 `@odata.nextLink` URL 中提取 `$skip` 值来操纵响应。 此 API 使用 `$skip` 值来保留其已在用户邮箱中遍历的所有项的计数，以返回 message-type 项的页面。 因此，甚至在初始响应中，`$skip` 值都会大于页面大小。 有关详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。
 
 您可以对邮件进行筛选, 并只获取那些包含已[](../resources/mention.md)登录用户的说明。
 
 请注意, 默认情况下`GET /me/messages` , 该操作不会返回**提及**属性。 使用`$expand`查询参数[在邮件中查找每个提及的详细信息](../api/message-get.md#request-2)。
 
-在以下两种情况下, 应用可以在其他用户的邮件文件夹中获取邮件:
+在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
-* 如果该应用程序具有应用程序权限，或者
-* 如果应用程序具有来自一个用户的相应委派权限, 而另一个用户与该用户共享了一个邮件文件夹, 或者, 已向该用户授予了对该用户的委派访问[权限](#permissions)。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+* 如果该应用具有应用程序权限，或者
+* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 
 ## <a name="permissions"></a>权限
@@ -86,7 +86,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-第一个示例获取已登录用户的邮箱中的默认前10封邮件。 它使用`$select`返回响应中每个邮件的属性子集。 
+第一个示例获取已登录用户的邮箱中的默认前10封邮件。 它使用 `$select` 在响应中返回每封邮件的属性的子集。 
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -95,7 +95,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
 ##### <a name="response-1"></a>响应 1
-下面是一个响应示例。 若要获取下一页邮件, 请将返回`@odata.nextLink`的 URL 应用于后续的 get 请求。
+下面是一个响应示例。 若要获取下一页邮件，请将 `@odata.nextLink` 中返回的 URL 应用 于后续 GET 请求。
 
 <!-- {
   "blockType": "response",

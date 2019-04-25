@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 219e996bdf9b796cdd6a000b988e0f2ac73023ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509985"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536525"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 

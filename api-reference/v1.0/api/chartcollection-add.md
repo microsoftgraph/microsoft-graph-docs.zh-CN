@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 1e4813ee72f7cccb109369ef12b884efe24e9563
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916402"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580068"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -40,13 +40,13 @@ POST /workbook/worksheets/{id|name}/charts/add
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|type|string|代表图表的类型。  可能的值为： `ColumnClustered`， `ColumnStacked`， `ColumnStacked100`， `BarClustered`， `BarStacked`， `BarStacked100`， `LineStacked`， `LineStacked100`， `LineMarkers`， `LineMarkersStacked`， `LineMarkersStacked100`， `PieOfPie`， `etc.`。|
+|类型|string|表示图表的类型。  可能的值为: `ColumnClustered`、 `ColumnStacked`、 `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` `LineStacked` `PieOfPie` `etc.`、、、、、、、、、、。 `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100`|
 |sourceData|Json|对应于源数据的 Range 对象。|
-|seriesBy|string|可选。 指定的方式列或行用作图表上的数据系列。  可能的值为： `Auto`， `Columns`， `Rows`。|
+|seriesBy|字符串|可选。 指定列或行在图表上用作数据系列的方式。  可能的值包括 `Auto`、`Columns`、`Rows`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和[WorkbookChart](../resources/chart.md)响应正文中的对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[WorkbookChart](../resources/chart.md)对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。

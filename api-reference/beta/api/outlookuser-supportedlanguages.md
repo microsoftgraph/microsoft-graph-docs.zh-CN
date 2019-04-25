@@ -5,15 +5,13 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 7898bc48d436c0d4b71b9c911802ecc348592245
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510720"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539425"
 ---
 # <a name="outlookuser-supportedlanguages"></a>outlookUser: supportedLanguages
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户支持的区域设置和语言列表，用户的邮箱服务器上配置了此信息。
 
@@ -56,7 +54,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
   "name": "user_supportedlanguages"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/outlook/supportedLanguages
+GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
 ```
 
 ##### <a name="response"></a>响应
@@ -72,7 +70,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.localeInfo)",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.localeInfo)",
   "value":[
     {
       "locale":"af-ZA",
@@ -92,15 +90,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "user: supportedLanguages",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlookuser-supportedlanguages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

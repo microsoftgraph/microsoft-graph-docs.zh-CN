@@ -3,11 +3,11 @@ title: 获取照片
 description: 检索 photo 对象的属性和关系。
 localization_priority: Normal
 ms.openlocfilehash: ffe127cf7e59a4cf29275a7673cb95e1ce7e4581
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538950"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -55,7 +55,7 @@ GET /drive/root/createdByUser/photo
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": false,

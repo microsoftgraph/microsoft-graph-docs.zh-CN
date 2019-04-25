@@ -1,15 +1,15 @@
 ---
 title: 组：checkMemberGroups
-description: 检查指定组的列表中的成员身份。 从列表中返回这些的组
+description: 检查指定组列表中的成员身份。 从列表返回这些组
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.openlocfilehash: 8abac44bf6c97e0ebbd8235ec246f19f0c73e920
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932117"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524181"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 
@@ -25,9 +25,9 @@ ms.locfileid: "27932117"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | 委派（工作或学校帐户）     | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
-| 应用程序                            | _Group.Read.All_，Directory.Read.All。 Directory.ReadWrite.All                               |
+| 应用程序                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
 
-> **注意：** 此 API 目前需要`Directory.Read.All`权限或更高版本。 使用`Group.Read.All`权限将返回错误。 这是一个已知 bug。
+> **注意：** 此 API 当前需要 `Directory.Read.All` 权限或更高权限。 使用 `Group.Read.All` 权限将返回错误。 这是一个已知 bug。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ POST /groups/{id}/checkMemberGroups
 
 | 参数 | 类型              | 说明           |
 | :-------- | :---------------- | :-------------------- |
-| groupIds  | String 集合 | 组 ID 的数组 |
+| groupIds  | String collection | 组 ID 的数组 |
 
 ## <a name="response"></a>响应
 

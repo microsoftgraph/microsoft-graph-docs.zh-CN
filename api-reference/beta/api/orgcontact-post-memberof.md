@@ -1,21 +1,21 @@
 ---
 title: 创建 memberOf
-description: 使用此 API 创建新 memberOf。
+description: 使用此 API 创建新的 memberOf。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 466074d2d23dc4b991c8c153252028587fd5afcc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518917"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539708"
 ---
 # <a name="create-memberof"></a>创建 memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 创建新 memberOf。
+使用此 API 创建新的 memberOf。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 

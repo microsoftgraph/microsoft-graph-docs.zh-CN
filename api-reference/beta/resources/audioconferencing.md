@@ -1,31 +1,31 @@
 ---
 title: audioConferencing 资源类型
-description: 代表 onlineMeeting 电话访问信息。
+description: 表示 onlineMeeting 的电话访问信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb822f2049d84f9a2460370f05d5dfc85c347f15
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535541"
 ---
 # <a name="audioconferencing-resource-type"></a>audioConferencing 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表[onlineMeeting](onlinemeeting.md)电话访问信息。
+表示[onlineMeeting](onlinemeeting.md)的电话访问信息。
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型    | 说明                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | 指向包含拨入信息的可从外部访问网页的 URL。 |
-| leaderPasscode      | String  | 连接到音频会议提供商所需的主持人密码。      |
+| dialinUrl           | String  | 包含拨入信息的可从外部访问的网页的 URL。 |
+| leaderPasscode      | String  | 连接到音频会议提供商所需的领导者密码。      |
 | participantPasscode | String  | 连接到音频会议提供商所需的参与者密码。 |
 | tollFreeNumber      | String  | 要连接到音频会议提供商的免费电话号码。              |
-| tollNumber          | String  | 要连接到音频会议提供商的收费电话号码。                   |
+| tollNumber          | String  | 要连接到音频会议提供商的收费号码。                   |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

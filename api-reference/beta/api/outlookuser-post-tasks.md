@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 4de57847638ef98347a7561291d12486468428ee
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869454"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539625"
 ---
 # <a name="create-outlooktask"></a>创建 outlookTask
 

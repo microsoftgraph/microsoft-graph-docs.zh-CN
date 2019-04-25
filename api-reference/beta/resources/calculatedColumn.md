@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: CalculatedColumn
 localization_priority: Normal
 ms.openlocfilehash: 74f0e6430d47e0015fa849bb0d4ddf81690a9355
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481907"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543906"
 ---
 # <a name="calculatedcolumn-resource-type"></a>CalculatedColumn 资源类型
 

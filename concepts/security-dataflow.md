@@ -5,11 +5,11 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.openlocfilehash: 47731520b9ae959212750aea4f9668d58ac85a08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987809"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521677"
 ---
 # <a name="microsoft-graph-security-api-data-flow"></a>Microsoft Graph 安全性 API 数据流
 

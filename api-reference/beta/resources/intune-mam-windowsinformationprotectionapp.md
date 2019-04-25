@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fb14092fa9f347e551a4871da69d9a3631b96e8c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782042"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579175"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>windowsInformationProtectionApp 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "31782042"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|应用显示名称。|
-|description|String|应用的说明。|
+|说明|String|应用的说明。|
 |publisherName|String|发布者名称|
 |productName|String|产品名称。|
 |denied|Boolean|如果为 true，则应用的保护或免除受到拒绝。|

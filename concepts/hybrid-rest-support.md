@@ -3,16 +3,15 @@ title: 使用 REST API 访问 Exchange 混合部署中的邮箱（预览）
 description: 在属于 Office 365 的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。
 localization_priority: Priority
 ms.openlocfilehash: 5dab9fea5a9d9c9177befc90ccb64b3bb03b6b33
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526172"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>使用 REST API 访问 Exchange 混合部署中的邮箱（预览版）
 
-在作为 Office 365 一部分的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。
-Exchange 本地服务器的 Exchange 2016 累积更新 3 (CU3) 于 2016 年 9 月发布，增加了对 REST API 与 Office 365 集成的支持。 如果你的应用使用 v1.0 的[邮件](/graph/api/resources/message?view=graph-rest-1.0)、[日历](/graph/api/resources/calendar?view=graph-rest-1.0)或[联系人](/graph/api/resources/contact?view=graph-rest-1.0) API，则只要部署满足特定的[要求](#requirements-for-the-rest-api-to-work-in-hybrid-deployments)，现在还可以在_混合_部署中找到无缝的身份验证和应用程序体验，而不论该邮箱是在本地还是在云中。 
+在作为 Office 365 一部分的 Exchange Online 中，Microsoft Graph 始终提供对云中客户邮箱的访问权限。Exchange 本地服务器的 Exchange 2016 累积更新 3 (CU3) 于 2016 年 9 月发布，增加了对 REST API 与 Office 365 集成的支持。如果你的应用使用 v1.0 的[邮件](/graph/api/resources/message?view=graph-rest-1.0)、[日历](/graph/api/resources/calendar?view=graph-rest-1.0)或[联系人](/graph/api/resources/contact?view=graph-rest-1.0) API，则只要部署满足特定的[要求](#requirements-for-the-rest-api-to-work-in-hybrid-deployments)，现在还可以在混合部署中找到无缝的身份验证和应用程序体验，而不论该邮箱是在本地还是在云中。 
 
 
 当 Microsoft Graph 在后台识别到一个 REST API 调用正在尝试访问混合部署中的本地邮箱时，它会将 REST 请求代理到本地 REST 终结点，然后处理此请求。此发现使得访问 REST API 成为可能。
@@ -21,7 +20,7 @@ Exchange 本地服务器的 Exchange 2016 累积更新 3 (CU3) 于 2016 年 9 �
 
 >只有 v1.0 的邮件、日历和联系人 API 可用于混合部署中的邮箱。其他 v1.0 API 集，如[组](/graph/api/resources/group?view=graph-rest-1.0) API，或者其他版本中的 API 都不能用于上述邮箱。如果尝试使用的 API 不是混合部署中受支持的 API 集，则会收到以下错误消息：
 
->“此邮箱的 REST API 当前处于预览阶段。 可以在 https://dev.outlook.com 中查找有关预览 REST API 的详细信息。”
+>“此邮箱的 REST API 当前处于预览阶段。可以在 https://dev.outlook.com 中查找有关预览 REST API 的详细信息。”
 
 ## <a name="requirements-for-the-rest-api-to-work-in-hybrid-deployments"></a>REST API 用于混合部署的要求
 

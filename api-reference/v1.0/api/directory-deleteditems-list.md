@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 25012a2437dd24345aebdc57351dea1f4ae1cfa6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924921"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555134"
 ---
 # <a name="list-deleted-items"></a>列出已删除的项目
 
@@ -43,7 +43,7 @@ GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-此 API 当前支持从已删除的项目中检索组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。 类型指定为 URI 的必需部分。 不支持调用 GET/目录/deletedItems 没有类型。
+此 API 当前支持从已删除的项目中检索组 (microsoft.graph.group) 或用户 (microsoft.graph.user) 的对象类型。 类型指定为 URI 的必需部分。 不支持不使用类型调用 GET/directory/deletedItems。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
@@ -52,7 +52,7 @@ GET /directory/deletedItems/microsoft.graph.user
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
-| Accept  | application/json |
+| 接受  | application/json |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

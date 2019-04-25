@@ -1,19 +1,19 @@
 ---
-title: synchronizationSchema： 函数
-description: 列出所有 attributeMappingSource 当前支持的功能。
+title: 'synchronizationSchema: 函数'
+description: 列出 attributeMappingSource 中当前支持的所有函数。
 localization_priority: Normal
 ms.openlocfilehash: edfdb169f9945759e062cf2c57d5f6f3b4c22f2e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523412"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545247"
 ---
-# <a name="synchronizationschema-functions"></a>synchronizationSchema： 函数
+# <a name="synchronizationschema-functions"></a>synchronizationSchema: 函数
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出所有[attributeMappingSource](../resources/synchronization-attributemappingsource.md)当前支持的功能。
+列出[attributeMappingSource](../resources/synchronization-attributemappingsource.md)中当前支持的所有函数。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,12 +44,12 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)对象集合。
 
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_functions"
@@ -59,9 +59,9 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。
+响应示例如下所示。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将返回实际呼叫中的所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性将在实际调用中返回。
 
 <!--
 {

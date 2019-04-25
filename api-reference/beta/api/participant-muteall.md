@@ -1,21 +1,21 @@
 ---
-title: 参与者： muteAll
-description: 将呼叫中的所有参与者设为都静音。
+title: '参与者: muteAll'
+description: 将呼叫中的所有参与者设为静音。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2a74a224141b77f0a09718bbafee3cf1dab0e8e9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522831"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539370"
 ---
-# <a name="participant-muteall"></a>参与者： muteAll
+# <a name="participant-muteall"></a>参与者: muteAll
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将呼叫中的所有参与者设为都静音。
+将呼叫中的所有参与者设为静音。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participants|String 集合|若要将设为静音的参与者。|
-|ClientContext|String|客户端上下文。|
+|participants|String collection|要静音的参与者。|
+|适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[commsOperation](../resources/commsoperation.md)对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。

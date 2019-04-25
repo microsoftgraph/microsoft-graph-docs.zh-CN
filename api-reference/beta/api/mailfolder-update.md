@@ -1,21 +1,21 @@
 ---
-title: 更新 MailFolder
-description: 更新 mailfolder 对象的属性。
+title: 更新 mailFolder
+description: 更新 mailFolder 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 63642678a58271bd0c0218879bf22504842c11e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518112"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540638"
 ---
-# <a name="update-mailfolder"></a>更新 MailFolder
+# <a name="update-mailfolder"></a>更新 mailFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 mailfolder 对象的属性。
+更新[mailFolder](../resources/mailfolder.md)对象的属性。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

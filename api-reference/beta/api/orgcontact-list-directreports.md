@@ -1,17 +1,17 @@
 ---
-title: orgContact： 列表 directReports
+title: 'orgContact: List directReports'
 description: 获取联系人的直接下属。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 8912116ca3f9b7602841e7ec1963b7ed4259061d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523769"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539854"
 ---
-# <a name="orgcontact-list-directreports"></a>orgContact： 列表 directReports
+# <a name="orgcontact-list-directreports"></a>orgContact: List directReports
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

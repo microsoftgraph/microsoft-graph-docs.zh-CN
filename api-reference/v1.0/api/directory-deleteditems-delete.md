@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 12b1970601bf2e938ecaee8ff63a1ce9f1ada90d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991928"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583548"
 ---
 # <a name="permanently-delete-item"></a>永久删除项目
 
@@ -45,7 +45,7 @@ DELETE /directory/deletedItems/{id}
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
-| Accept  | application/json |
+| 接受  | application/json |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

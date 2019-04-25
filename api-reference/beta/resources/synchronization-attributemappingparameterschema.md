@@ -1,27 +1,27 @@
 ---
 title: attributeMappingParameterSchema 资源类型
-description: 介绍在 attributeMappingFunctionSchema 中使用的单个参数。
+description: 描述在 attributeMappingFunctionSchema 中使用的单个参数。
 localization_priority: Normal
 ms.openlocfilehash: bad88fc58dcc529f086a3e3870e0bb10a9d23329
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529948"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582162"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>attributeMappingParameterSchema 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-介绍在[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)中使用的单个参数。
+描述在[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)中使用的单个参数。
 
 ## <a name="properties"></a>属性
 
 | 属性                   | 类型                      | 说明    |
 |:---------------------------|:-------------------------|:---------------|
-|allowMultipleOccurrences    |Boolean                   |给定的参数可提供多次 (多个输入中的字符串，如`Concatenate(string,string,...)`函数)。 |
-|name                        |String                    |参数名称 |
-|必需                    |Boolean                   |`true`如果该参数是必需的;否则为`false`。 |
+|allowMultipleOccurrences    |Boolean                   |给定参数可多次提供 (例如, `Concatenate(string,string,...)`函数中的多个输入字符串)。 |
+|name                        |String                    |参数名称。 |
+|必需                    |Boolean                   |`true`如果参数是必需的;否则`false`为。 |
 |type                        |String                    |可取值为：`Boolean`、`Binary`、`Reference`、`Integer` 或 `String`。 默认值为 `String`。|
 
 ## <a name="json-representation"></a>JSON 表示形式

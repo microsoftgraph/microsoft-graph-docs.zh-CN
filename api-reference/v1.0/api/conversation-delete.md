@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: b9c13c996b99874541a287d97a2669daf0a1825b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928365"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566113"
 ---
 # <a name="delete-conversation"></a>删除对话
 

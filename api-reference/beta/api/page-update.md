@@ -5,11 +5,11 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: d80aae98828fa2ad07360e3a5b8d660e5d980b35
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519806"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539386"
 ---
 # <a name="update-page"></a>更新页面
 
@@ -21,7 +21,7 @@ ms.locfileid: "29519806"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Notes.ReadWrite、Notes.ReadWrite.All    |
+|委派（工作或学校帐户） | 请注意, readwrite, All    |
 |委派（个人 Microsoft 帐户） | Notes.ReadWrite    |
 |应用程序 | Notes.ReadWrite.All |
 
@@ -40,11 +40,11 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[patchContentCommand](../resources/patchcontentcommand.md)对象表示的更改 ' 页上的数组。 有关详细信息和示例，请参阅[更新 OneNote 页面内容](/graph/onenote-update-page)。
+在请求正文中, 提供[patchContentCommand](../resources/patchcontentcommand.md)对象的数组, 这些对象代表页面的更改。 有关详细信息和示例, 请参阅[更新 OneNote 页面内容](/graph/onenote-update-page)。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。PATCH 请求未返回任何 JSON 数据。
+如果成功，此方法返回 `204 No Content` 响应代码。  PATCH 请求未返回任何 JSON 数据。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

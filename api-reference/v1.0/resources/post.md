@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: d594b7f44a39f17427ac395d4cd734d064d8b1ae
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982867"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548486"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
 表示 [conversationThread](conversationthread.md) 实体中的各个帖子项。
@@ -21,7 +21,7 @@ ms.locfileid: "27982867"
 - [在新对话中创建线程](../api/group-post-threads.md)
 - [创建新对话](../api/group-post-conversations.md)
 
-通过该资源可以使用[扩展](/graph/extensibility-overview)将自己的数据添加到自定义属性。
+使用此资源，可以使用[扩展](/graph/extensibility-overview)将自己的数据添加到自定义属性。
 
 ## <a name="methods"></a>方法
 
@@ -31,8 +31,8 @@ ms.locfileid: "27982867"
 |[获取帖子](../api/post-get.md) | [帖子](post.md) |获取指定的线程中帖子的属性和关系。|
 |[答复](../api/post-reply.md)|无|在组对话中答复帖子，并向指定线程中添加新帖子。|
 |[转发](../api/post-forward.md)|无|将帖子转发给收件人。|
-|**Attachments**| | |
-|[列出附件](../api/post-list-attachments.md) |[attachment](attachment.md) 集合| 获取帖子的所有附件。|
+|**附件**| | |
+|[列出附件](../api/post-list-attachments.md) |[附件](attachment.md)集合| 获取帖子的所有附件。|
 |[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| 将附件添加到帖子中。 |
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
@@ -54,22 +54,22 @@ ms.locfileid: "27982867"
 |conversationId|String|对话的唯一 ID。只读。|
 |conversationThreadId|String|对话线程的唯一 ID。只读。|
 |createdDateTime|DateTimeOffset|创建帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|from|[收件人](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
-|hasAttachments|布尔|指示帖子是否具有至少一个附件。这是默认属性。|
+|发件人|[recipient](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
+|hasAttachments|Boolean|指示帖子是否具有至少一个附件。这是默认属性。|
 |id|String| 只读。|
 |lastModifiedDateTime|DateTimeOffset|帖子上次修改时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |newParticipants|[recipient](recipient.md) collection|添加到此线程作为帖子一部分的对话参与者。|
 |receivedDateTime|DateTimeOffset|接收到帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |sender|[recipient](recipient.md)|包含发件人的地址未指定发件人时，发件人的值假定为已经过验证身份的用户的地址。这是默认属性。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md) 集合| 只读。可为 NULL。|
+|attachments|[Attachment](attachment.md) 集合| 只读。可为 NULL。|
 |extensions|[扩展](extension.md)集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
 |inReplyTo|[帖子](post.md)| 只读。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为帖子定义的单值扩展属性的集合。只读。可为 Null。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 NULL。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为帖子定义的单值扩展属性的集合。只读。可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

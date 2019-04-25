@@ -1,19 +1,19 @@
 ---
-title: 列出 ownedObject
-description: 获取用户拥有的 directory 对象列表。
+title: List ownedObjects
+description: 获取用户拥有的 directory 对象的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 43ee92b27522157ccd691435812e59da24041f7f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955744"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571231"
 ---
-# <a name="list-ownedobjects"></a>列出 ownedObject
+# <a name="list-ownedobjects"></a>List ownedObjects
 
-获取用户拥有的 directory 对象列表。
+获取用户拥有的 directory 对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -34,7 +34,7 @@ GET /users/{id | userPrincipalName}/ownedObjects
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Accept  | application/json|
+| 接受  | application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

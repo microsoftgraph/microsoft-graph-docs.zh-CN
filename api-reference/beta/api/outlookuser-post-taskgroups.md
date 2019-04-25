@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 364510c3d866b193012763d17dbc22f2e1d7c8f7
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869258"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539657"
 ---
 # <a name="create-outlooktaskgroup"></a>创建 outlookTaskGroup
 

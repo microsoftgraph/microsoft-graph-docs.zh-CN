@@ -1,21 +1,21 @@
 ---
 title: educationSubmissionRecipient 资源类型
-description: 代表一组不同的用户可以向其分配提交的抽象类。 可能值包括个人或组。 **Submission.recipient**属性中使用此选项。
+description: 表示可向其分配提交的不同用户组的抽象类。 可能的值包括个人或组。 这在 "**提交. 收件人**" 属性中使用。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 27b9714c2ae20a46447adacb4e98112945d9c12a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516873"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542856"
 ---
 # <a name="educationsubmissionrecipient-resource-type"></a>educationSubmissionRecipient 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表一组不同的用户可以向其分配提交的抽象类。 可能值包括个人或组。 **Submission.recipient**属性中使用此选项。
+表示可向其分配提交的不同用户组的抽象类。 可能的值包括个人或组。 这在 "**提交. 收件人**" 属性中使用。
 
 
 ## <a name="properties"></a>属性

@@ -4,11 +4,11 @@ description: Delta 查询可通过一系列的查询文件夹中查询邮件的�
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: 0200c49c1a673a338af793649bb67f9628c2e8f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820907"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526131"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>获取文件夹中邮件的增量更改
 

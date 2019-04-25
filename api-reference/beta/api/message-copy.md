@@ -5,15 +5,13 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: a5dfd92c6478414c8890b6c411b5a9385a992198
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514248"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540589"
 ---
 # <a name="message-copy"></a>message: copy
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将邮件复制到文件夹。
 
@@ -55,14 +53,13 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应代码和响应正文的[邮件](../resources/message.md)资源。
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[消息](../resources/message.md)资源。
 
 ## <a name="example"></a>示例
 
 下面是一个如何调用此 API 的示例。
 
 ##### <a name="request"></a>请求
-
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
@@ -70,7 +67,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/messages/{id}/copy
+POST https://graph.microsoft.com/v1.0/me/messages/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -96,8 +93,8 @@ Content-type: application/json
 Content-length: 248
 
 {
-  "receivedDateTime": "2016-10-19T10:37:00Z",
-  "sentDateTime": "2016-10-19T10:37:00Z",
+  "receivedDateTime": "datetime-value",
+  "sentDateTime": "datetime-value",
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
@@ -110,15 +107,10 @@ Content-length: 248
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "message: copy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/message-copy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

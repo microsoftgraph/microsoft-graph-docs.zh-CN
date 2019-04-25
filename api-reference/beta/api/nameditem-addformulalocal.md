@@ -3,11 +3,11 @@ title: 添加已命名项 FormulaLocal
 description: 使用用户的公式区域设置，将新名称添加到给定范围的集合。
 localization_priority: Normal
 ms.openlocfilehash: 064bc4a6e8183b58242522dfe663d2585eed09b5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643970"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540162"
 ---
 # <a name="add-named-item-formulalocal"></a>添加已命名项 FormulaLocal
 使用用户的公式区域设置，将新名称添加到给定范围的集合。
@@ -40,7 +40,7 @@ POST /workbook/worksheets({id|name})/names/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|已命名项的名称。|
-|公式|字符串|名称将引用的公式或区域。|
+|公式|string|名称将引用的公式或区域。|
 |comment|字符串|与此已命名项相关联的注释。|
 
 ## <a name="response"></a>响应

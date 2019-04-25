@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8dafd0dff52fdbded8f6ff0fc8d6743a84dee797
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988334"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541386"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
@@ -48,7 +48,7 @@ POST /deviceManagement/resourceOperations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|资源操作的键。 只读，且自动生成。|
+|id|字符串|资源操作的键。 只读，且自动生成。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |description|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|

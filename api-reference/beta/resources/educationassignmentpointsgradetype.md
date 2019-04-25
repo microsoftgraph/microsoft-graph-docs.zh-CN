@@ -1,28 +1,28 @@
 ---
 title: educationAssignmentPointsGradeType 资源类型
-description: '**Assignments.grading**属性一起使用。 这是 educationAssignmentGradeType 的一个子类。'
+description: 与**工作分配. 评分**属性一起使用。 这是 educationAssignmentGradeType 的子类。
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 567bff38f8a20456dffffdd91775a1e32852fe20
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508893"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543084"
 ---
 # <a name="educationassignmentpointsgradetype-resource-type"></a>educationAssignmentPointsGradeType 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Assignments.grading**属性一起使用。 这是[educationAssignmentGradeType](educationassignmentgradetype.md)的一个子类。
+与**工作分配. 评分**属性一起使用。 这是[educationAssignmentGradeType](educationassignmentgradetype.md)的子类。
 
-这表示工作分配的分级范围，并将每个学生可以获得的点的最大数目存储在此工作项。 当此设置工作分配上时，每个提交将获取与之关联的每个学生的点的存储[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)属性。
+这表示将对工作分配进行评分, 并存储每个学生可在此工作项上实现的最大分数数。 在工作分配上设置此设置后, 每个提交都将获取一个[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)属性, 该属性与每个学生的点数相关联。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|maxPoints|单精度| 最大点可能的此工作分配。  |
+|maxPoints|单倍行距| 此工作分配可能的最大分数。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

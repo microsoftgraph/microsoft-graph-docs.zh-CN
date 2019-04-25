@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 47cdb200f7de493c6fcc83b3d77be2af1824ef65
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869426"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536465"
 ---
 # <a name="send-mail"></a>发送邮件
 
@@ -49,7 +49,7 @@ POST /users/{id | userPrincipalName}/sendMail
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|邮件|[邮件](../resources/message.md)|要发送的邮件。必需。|
+|邮件|[Message](../resources/message.md)|要发送的邮件。必需。|
 |SaveToSentItems|Boolean|指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。|
 
 如果要使用**提及**在新邮件中呼叫其他用户, 请执行以下操作:
@@ -146,7 +146,7 @@ Content-length: 344
 ```
 
 ##### <a name="response-2"></a>响应 2
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -156,7 +156,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="request-3"></a>请求 3
-下一个示例使用自定义 Internet 邮件头创建一封邮件, 并发送该邮件。
+以下示例将创建一个带 Internet 消息标头的消息并进行发送。
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"

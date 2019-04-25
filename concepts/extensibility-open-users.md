@@ -4,11 +4,11 @@ description: '我们将举例逐步介绍如何使用*开放扩展*。 '
 author: dkershaw10
 localization_priority: Priority
 ms.openlocfilehash: 69b0918dba3159a552e2b00d4f54b21e67d017e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867261"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526138"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>使用开放扩展向用户添加自定义数据
 我们将引导你完成一个示例，演示如何使用*开放扩展*。 

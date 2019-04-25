@@ -1,19 +1,19 @@
 ---
-title: 列出组设置
-description: 检索组设置对象列表。
+title: 列表组设置
+description: 检索组设置对象的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8cb245c786ef1fbede3e305fd73df74eb574393c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 445e03aebe0743aaaf674e4ad458eb7b392186fb
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932362"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577838"
 ---
-# <a name="list-group-settings"></a>列出组设置
+# <a name="list-group-settings"></a>列表组设置
 
-检索组设置对象列表。
+检索组设置对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -33,14 +33,14 @@ ms.locfileid: "27932362"
 
 ```http
 GET /groupSettings
-GET group/{id}/settings
+GET groups/{id}/settings
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
-> 注意：不支持 $filter。
+>**注意：** 不支持 $filter。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称 | 说明 |
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -50,7 +50,7 @@ GET group/{id}/settings
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [groupSetting](../resources/groupsetting.md) 对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[groupSetting](../resources/groupsetting.md)对象集合。
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求

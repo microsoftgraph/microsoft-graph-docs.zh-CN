@@ -5,15 +5,13 @@ ms.date: 09/10/2017
 title: 删除对项目的访问权限
 localization_priority: Normal
 ms.openlocfilehash: 3cc4f6a151d2990c5180e02888484e1260704f04
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480556"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539464"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>从文件或文件夹中删除共享权限
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除 [DriveItem](../resources/driveitem.md) 访问权限。
 
@@ -21,6 +19,7 @@ ms.locfileid: "30480556"
 **InheritedFrom** 属性必须为 `null`。
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -32,6 +31,7 @@ ms.locfileid: "30480556"
 ## <a name="http-request"></a>HTTP 请求
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 DELETE /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
@@ -46,7 +46,6 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | 如果包含此请求标头，且提供的 eTag（或 cTag）与项中的当前标记不匹配，则返回 `412 Precondition Failed` 响应，并且不会删除该项。 |
 
-
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
@@ -55,10 +54,10 @@ DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 本示例从当前用户 OneDrive 的项 {item-id} 中删除标识为 {perm-id} 的权限。
 
-<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
+<!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite", "tags": "service.graph" }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permissions/{perm-id}
+DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
 ### <a name="response"></a>响应
@@ -75,15 +74,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Remove an item's sharing permissions",
   "keywords": "permission, permissions, sharing, remove permissions, delete permissions",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Delete permission",
-  "suppressions": [
-    "Error: /api-reference/beta/api/permission-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Sharing/Remove permissions"
+} -->

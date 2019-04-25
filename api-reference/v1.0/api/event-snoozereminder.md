@@ -1,19 +1,19 @@
 ---
 title: 'event: snoozeReminder'
-description: 推迟事件提醒用户日历中的新时间之前。
+description: 将用户日历中的事件的提醒推迟到新时间。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: d3f8ffab576182f5e67dad49e34c67d886fe0bde
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932411"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584304"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
-推迟新时间之前提醒用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)。
+将用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)的提醒推迟到新时间。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

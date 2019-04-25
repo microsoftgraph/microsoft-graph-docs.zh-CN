@@ -4,11 +4,11 @@ description: Microsoft Graph 提供单一 API 终结点，以便用户能够通�
 author: dkershaw10
 localization_priority: Priority
 ms.openlocfilehash: 7b1789fb12a971dab3b5ad591bc65fc49b85c76e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865091"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526214"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
 

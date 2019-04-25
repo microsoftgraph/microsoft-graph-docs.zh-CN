@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 5e0b03eeea8c0e9d22a9f7279c821f6d90211470
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800969"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542844"
 ---
 # <a name="educationformresource-resource-type"></a>educationFormResource 资源类型
 

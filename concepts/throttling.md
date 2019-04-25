@@ -4,11 +4,11 @@ description: 限制可调节并发调用服务的数量，以防止资源的过�
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: 8b3b8c5b0ec5a5209ad96f87dc677f4331c24e0b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812641"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580979"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Microsoft Graph 限制指南
 

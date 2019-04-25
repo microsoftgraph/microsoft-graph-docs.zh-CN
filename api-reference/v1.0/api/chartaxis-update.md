@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 2b5e7d208322edbb56b6a67a43d84cfa4ece5955
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969609"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580217"
 ---
 # <a name="update-chartaxis"></a>更新 chartaxis
 
@@ -48,7 +48,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChartAxis](../resources/chartaxis.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookChartAxis](../resources/chartaxis.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

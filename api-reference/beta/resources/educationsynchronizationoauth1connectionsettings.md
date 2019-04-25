@@ -1,23 +1,23 @@
 ---
 title: educationSynchronizationOAuth1ConnectionSettings 资源
-description: 当 OAuth1 要用于连接到的数据提供程序时，应使用此连接设置类型设置配置文件。
+description: 当 OAuth1 用于连接到数据提供程序时, 此连接设置类型应用于设置配置文件。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 71e45033c022061b72c1ea0be815ff3e0b611475
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516670"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542819"
 ---
 # <a name="educationsynchronizationoauth1connectionsettings-resource"></a>educationSynchronizationOAuth1ConnectionSettings 资源
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-当 OAuth1 要用于连接到的数据提供程序时，应使用此连接设置类型设置配置文件。
+当 OAuth1 用于连接到数据提供程序时, 此连接设置类型应用于设置配置文件。
 
-派生自[microsoft.graph.educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md)。
+从[educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md)中派生。
 
 ## <a name="properties"></a>属性
 

@@ -1,19 +1,19 @@
 ---
 title: 更新 synchronizationTemplate
-description: 更新 （覆盖） 与给定应用程序关联的同步模板。
+description: Update (override) 与给定应用程序关联的同步模板。
 localization_priority: Normal
 ms.openlocfilehash: 152186afd9f7b7cce2a04170de7148d454525d80
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517461"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536860"
 ---
 # <a name="update-synchronizationtemplate"></a>更新 synchronizationTemplate
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新 （覆盖） 与给定应用程序关联的同步模板。
+Update (override) 与给定应用程序关联的同步模板。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -38,7 +38,7 @@ PUT application/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要替换现有模板的[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象。 确保提供了所有属性。 缺少的属性将被清除。
+在请求正文中, 提供[synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md)对象以替换现有模板。 请确保提供所有属性。 缺少的属性将被清除。
 
 ### <a name="response"></a>响应
 
@@ -47,9 +47,9 @@ PUT application/{id}/synchronization/templates/{templateId}
 ### <a name="examples"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。 
+请求示例如下所示。 
 
->**注意：** 为便于阅读将被截如下所示的请求对象。 在实际呼叫中包含的所有属性。
+>**注意:** 为了提高可读性, 此处显示的请求对象已缩短。 在实际调用中包括所有属性。
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationtemplate"
@@ -67,7 +67,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。
+响应示例如下所示。
 <!-- {
   "blockType": "response",
   "truncated": true,

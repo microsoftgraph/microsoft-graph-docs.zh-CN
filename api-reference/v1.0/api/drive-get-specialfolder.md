@@ -6,11 +6,11 @@ title: 获取特殊文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 55b976a32583546d7ed5993083af82dc0a55121f
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482376"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551412"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
 

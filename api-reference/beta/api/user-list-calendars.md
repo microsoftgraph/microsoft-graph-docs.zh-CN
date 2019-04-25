@@ -1,19 +1,17 @@
 ---
 title: 列出日历
 description: '获取用户的所有日历（`/calendars` 导航属性），从默认日历组或特定日历组中获取日历。 '
-localization_priority: Normal
+localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 576defc97cfaf7b3d6924f522e6463fcb56907d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526275"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547863"
 ---
 # <a name="list-calendars"></a>列出日历
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户的所有日历（`/calendars` 导航属性），从默认日历组或特定日历组中获取日历。 
 ## <a name="permissions"></a>权限
@@ -23,7 +21,7 @@ ms.locfileid: "29526275"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    |
-|应用程序 | Calendars.Read、Calendars.ReadWrite |
+|Application | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -68,7 +66,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
   "name": "get_calendars"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendars
+GET https://graph.microsoft.com/v1.0/me/calendars
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -83,20 +81,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/calendars",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendars",
     "value": [
         {
-            "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
+            "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
             "id": "AAMkAGI2TGuLAAA=",
             "name": "Calendar",
             "color": "auto",
             "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
-            "isDefaultCalendar": true,
             "canShare":true,
             "canViewPrivateItems":true,
-            "hexColor": "",
-            "isShared":false,
-            "isSharedWithMe":false,
             "canEdit":true,
             "owner":{
                 "name":"Samantha Booth",
@@ -105,20 +99,14 @@ Content-type: application/json
         }
     ]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List calendars",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-list-calendars.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

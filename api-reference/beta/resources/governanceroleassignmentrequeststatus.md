@@ -1,27 +1,27 @@
 ---
 title: governanceRoleAssignmentRequestStatus 资源类型
-description: 代表 governanceRoleAssignmentRequest 的状态。
+description: 表示 governanceRoleAssignmentRequest 的状态。
 localization_priority: Normal
 ms.openlocfilehash: f4f0b23cf13de5beedb1964484ec4fbbb6e98720
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510174"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547428"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>governanceRoleAssignmentRequestStatus 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的状态。
+表示[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)的状态。
 
 
 ## <a name="properties"></a>属性
 属性       | 类型 |说明|
 |:----|:-------------|:-----|
-|状态 |String| 角色分配请求的状态。 值可以是`InProgress`或`Closed`。|
-|子状态 |String| Sub 角色分配请求的状态。 值可以是`Accepted`， `PendingEvaluation`， `Granted`， `Denied`， `PendingProvisioning`， `Provisioned`， `PendingRevocation`， `Revoked`， `Canceled`， `Failed`， `PendingApprovalProvisioning`， `PendingApproval`， `FailedAsResourceIsLocked`， `PendingAdminDecision`， `AdminApproved`， `AdminDenied`， `TimedOut`，和`ProvisioningStarted`。|
-|statusDetails       |[keyValue](../resources/keyvalue.md)集合| 角色分配请求的状态的详细信息。 它所表示不同规则评估的结果。 |
+|状态 |字符串| 角色分配请求的状态。 值可以是`InProgress`或`Closed`。|
+|状态值 |String| 角色分配请求的子状态。 值可以是`Accepted`、 `PendingEvaluation`、 `Granted` `Denied` `PendingProvisioning` `Provisioned` `ProvisioningStarted`、、、、、、、、和。 `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `PendingRevocation` `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning`|
+|statusDetails       |[keyValue](../resources/keyvalue.md) 集合| 角色分配请求状态的详细信息。 它表示不同规则的评估结果。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

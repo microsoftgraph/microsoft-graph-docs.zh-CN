@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b0ff958273d8b39293709b14a960d8bd6b3ea940
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784388"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556233"
 ---
 # <a name="androidkeyguardfeature-enum-type"></a>androidKeyguardFeature 枚举类型
 
@@ -24,12 +24,12 @@ Android keyguard 功能。
 |:---|:---|:---|
 |notConfigured|0|未配置;此值将被忽略。|
 |拍照|1|在安全 keyguard 屏幕上使用摄像头。|
-|通知|双面|在安全 keyguard 屏幕上显示通知。|
-|unredactedNotifications|第三章|在安全 keyguard 屏幕上显示 unredacted 通知。|
-|trustAgents|4|在安全 keyguard 屏幕上信任代理状态。|
-|其次|5|在安全 keyguard 屏幕上使用指纹传感器。|
-|remoteInput|型|在安全 keyguard 屏幕上时发出通知文本条目。|
-|allFeatures|步|在安全 keyguard 屏幕上时的所有 keyguard 功能。|
+|通知|2 |在安全 keyguard 屏幕上显示通知。|
+|unredactedNotifications|3 |在安全 keyguard 屏幕上显示 unredacted 通知。|
+|trustAgents|4 |在安全 keyguard 屏幕上信任代理状态。|
+|其次|5 |在安全 keyguard 屏幕上使用指纹传感器。|
+|remoteInput|6 |在安全 keyguard 屏幕上时发出通知文本条目。|
+|allFeatures|7 |在安全 keyguard 屏幕上时的所有 keyguard 功能。|
 
 
 

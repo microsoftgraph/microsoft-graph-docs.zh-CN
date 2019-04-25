@@ -1,15 +1,15 @@
 ---
 title: 获取 eventMessage
-description: 展开参数以获取与会者的日历中的相关联的事件的**事件**导航属性。
+description: 在**事件**导航属性中展开参数, 以在与会者的日历中获取关联的事件。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 53428679904ba41ce5a539d62eba2a48cce4eedc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956701"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584185"
 ---
 # <a name="get-eventmessage"></a>获取 eventMessage
 
@@ -145,7 +145,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=microsoft.graph.eventMessage/event
 ```
 ##### <a name="response-2"></a>响应 2
-下面展示了示例响应。 响应中返回关联事件的属性。 注意：为了简单起见，可能会将此处所示的响应对象截断。 将从实际调用中返回所有属性。
+下面是一个响应示例。 响应中返回关联事件的属性。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",

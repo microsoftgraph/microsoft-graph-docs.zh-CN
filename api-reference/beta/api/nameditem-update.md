@@ -3,11 +3,11 @@ title: 更新 nameditem
 description: 更新 nameditem 对象的属性。
 localization_priority: Normal
 ms.openlocfilehash: ffb01e0998b3b94706e50ed461014fcfd11ce927
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640628"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540331"
 ---
 # <a name="update-nameditem"></a>更新 nameditem
 
@@ -39,7 +39,7 @@ PATCH /workbook/names(<name>)
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|visible|boolean|指定对象是否可见。|
+|visible|布尔|指定对象是否可见。|
 |comment|   string  |表示与此名称相关联的注释。|
 
 ## <a name="response"></a>响应

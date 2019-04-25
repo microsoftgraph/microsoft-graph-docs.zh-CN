@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 56693a04d6f0579d043b4d745fe53ae61536b82e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510090"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540462"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -25,7 +25,7 @@ ms.locfileid: "29510090"
 
 所有这些类型的 attachment 资源均派生自 [attachment](../resources/attachment.md) 资源。 
 
-您可以通过其 attachments 集合，向其投递添加到现有邮件附件或到新邮件的正在[绘制](../api/user-post-messages.md)，或[创建和发送即时](../api/user-sendmail.md)。
+您可以通过发布到现有邮件的附件集合, 或在正在[起草](../api/user-post-messages.md)的新邮件中添加附件, 或[在即时创建和发送](../api/user-sendmail.md)附件。
 
 由于目前每个 REST 请求的总大小限制为 4 MB，这就要求可添加的附件小于 4 MB。
 ## <a name="permissions"></a>权限
@@ -38,7 +38,8 @@ ms.locfileid: "29510090"
 |应用程序 | Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->[邮件](../resources/message.md)用户的邮箱中的附件。
+<!-- { "blockType": "ignored" } -->
+用户邮箱中的 [邮件](../resources/message.md) 附件。
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -64,7 +65,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[Attachment](../resources/attachment.md)对象。
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[附件](../resources/attachment.md)对象。
 
 ## <a name="example-file-attachment"></a>示例（文件附件）
 
@@ -174,7 +175,7 @@ Content-length: 162
 ## <a name="example-reference-attachment"></a>示例（参考附件）
 
 ##### <a name="request"></a>请求
-下面是请求的添加到现有邮件引用附件的示例。
+下面的示例展示了向现有邮件添加引用附件的请求。
 附件指向 OneDrive 上的文件夹。
 <!-- {
   "blockType": "request",
@@ -198,7 +199,7 @@ Content-length: 319
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的完整的一个示例。
+下面的示例展示了完整的响应。
 <!-- {
   "blockType": "response",
   "truncated": true,

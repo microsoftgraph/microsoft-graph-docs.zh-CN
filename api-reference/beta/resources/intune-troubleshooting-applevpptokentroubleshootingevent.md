@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bf62dbf0c3a894e6bf1837d41f133ad3e74cc2cd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790506"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556492"
 ---
 # <a name="applevpptokentroubleshootingevent-resource-type"></a>appleVppTokenTroubleshootingEvent 资源类型
 

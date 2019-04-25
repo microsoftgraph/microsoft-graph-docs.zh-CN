@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bec545efcc5c2558f0a882781a475444a644a940
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807530"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550677"
 ---
 # <a name="securitybaselinecompliancestate-enum-type"></a>securityBaselineComplianceState 枚举类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "31807530"
 |:---|:---|:---|
 |unknown|0|未知状态|
 |安全|1|安全状态|
-|notApplicable|双面|不适用的状态|
-|notSecure|第三章|不安全状态|
-|错误|4|错误状态|
-|冲突|5|冲突状态|
+|notApplicable|2 |不适用的状态|
+|notSecure|3 |不安全状态|
+|error|4 |错误状态|
+|冲突|5 |冲突状态|
 
 
 

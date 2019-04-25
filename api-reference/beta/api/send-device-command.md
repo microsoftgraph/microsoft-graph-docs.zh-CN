@@ -1,19 +1,19 @@
 ---
 title: 发送设备命令
-description: '此 API 支持 Project Rome 功能命令与 Microsoft 帐户关联的设备。 在执行 GET 呼叫后`me/devices`，向您的设备发出命令的设备 ID 中传递。 支持两种类型的命令： LaunchURI 和 AppServices。 如果您正在使用 LaunchURI，指定*类型*和*负载*参数。 对于 AppService 呼叫，指定 '
+description: '此 API 使 Project 罗马功能能够命令与 Microsoft 帐户关联的设备。 在`me/devices`执行 GET 呼叫后, 传入设备的 ID 以向设备发出命令。 支持两种类型的命令: LaunchURI 和 AppServices。 如果使用的是 LaunchURI, 请指定*type*和*载荷*参数。 对于 AppService 调用, 请指定 '
 localization_priority: Normal
 ms.openlocfilehash: d0c25200933a4a87a66349e457c500c496272b08
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526240"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537523"
 ---
 # <a name="send-device-command"></a>发送设备命令
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-此 API 支持 Project Rome 功能命令与 Microsoft 帐户关联的设备。 在执行 GET 呼叫后`me/devices`，向您的设备发出命令的设备 ID 中传递。 支持两种类型的命令： LaunchURI 和 AppServices。 如果您正在使用 LaunchURI，指定*类型*和*负载*参数。 AppService 呼叫的指定*类型*、*负载*、 *packageFamilyName*和*appServiceName*参数。
+此 API 使 Project 罗马功能能够命令与 Microsoft 帐户关联的设备。 在`me/devices`执行 GET 呼叫后, 传入设备的 ID 以向设备发出命令。 支持两种类型的命令: LaunchURI 和 AppServices。 如果使用的是 LaunchURI, 请指定*type*和*载荷*参数。 对于 AppService 调用, 指定*type*、*载荷*、 *packageFamilyName*和*appServiceName*参数。
 
 ## <a name="permissions"></a>权限
 
@@ -40,11 +40,11 @@ POST me/devices/{id}/commands
 | 标头 |值
 |:----|:------|
 |Authorization| Bearer {token}。必需。 |
-|Accept | application/json |
+|接受 | application/json |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供的命令属性的 JSON 表示形式。
+在请求正文中, 提供命令属性的 JSON 表示形式。
 
 ```json
 {
@@ -76,23 +76,23 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
-## <a name="command-properties"></a>Command Properties 
+## <a name="command-properties"></a>命令属性 
 
-|**Name**|**类型**|**说明**|
+|**Name**|**Type**|**说明**|
 |:----|:------|:------|
-|payload | microsoft.graph.json| 负载以将发送到应用程序服务或启动在设备上的 URI。 |
-|responsePayload | microsoft.graph.json| 返回从目标设备的负载。 |
-|postBackURI | String | 回发 URI 发送更新的随后进行通知。 |
-|packageFamilyName | String | Windows 应用程序包系列名称。 |
-|appServiceName | String | 由目标应用程序定义的应用程序服务的名称。 所需如果启动应用程序服务。 |
-|type| String | LaunchURI 或 AppService。 |
-|id| 字串符号 | 已向设备发送命令的 ID。 |
+|payload | microsoft. json| 要发送到应用程序服务或启动设备上的 URI 的有效负载。 |
+|responsePayload | microsoft. json| 从目标设备返回的有效负载。 |
+|postBackURI | String | 回发 URI 以发送后续的更新通知。 |
+|packageFamilyName | String | Windows 程序包系列应用程序的名称。 |
+|appServiceName | String | 由目标应用程序定义的应用服务的名称。 如果启动应用服务, 则为必需。 |
+|类型| String | LaunchURI 或 AppService。 |
+|id| String | 已发送到设备的命令的 ID。 |
 |actionStatus | String | 命令的[状态](get-device-command-status.md)。 |
-|error| String| 目标应用程序的请求相关联的任何错误。 |
+|error| String| 与目标应用程序中的请求关联的任何错误。 |
 
 ## <a name="launch-uri-example"></a>启动 URI 示例
 
-下面是 LaunchURI 请求; 的一个示例它将启动 URI 或目标设备上的应用程序。 要启动 URI 或应用程序，发出公告使用的设备 ID (从上执行 GET 呼叫获取`me/devices`)。 *类型*参数设置为*LaunchURI*和提供 URI 值，如https://bing.com。
+下面的示例展示了 LaunchURI 请求。它会启动一个 URI 或目标设备上的应用程序。 若要启动 URI 或应用, 请使用设备 ID 发出 POST (通过执行 GET 呼叫获取`me/devices`)。 将*类型*参数设置为*LaunchURI* , 并提供 URI 值 (如https://bing.com)。
 
 #### <a name="request"></a>请求
 
@@ -115,7 +115,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>响应 
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "ignored",
@@ -144,11 +144,11 @@ HTTP/1.1 201 OK
 ```
 
 
-## <a name="app-service-example"></a>应用程序服务示例
+## <a name="app-service-example"></a>App service 示例
 
-下面是查询应用程序服务在设备上的一个示例。 若要使用的应用程序服务必须执行 POST 呼叫使用的设备 id (从上执行 GET 呼叫获取`me/devices`)。 若要使用下面的示例，您必须目标设备上安装[Rome 应用程序](https://aka.ms/romanapp)。
+下面的示例展示了如何在设备上查询应用服务。 若要使用应用服务, 必须使用设备 id (通过执行 GET 呼叫获取`me/devices`) 执行 POST 呼叫。 若要使用以下示例, 必须在目标设备上安装[罗马应用程序](https://aka.ms/romanapp)。
 
-必须在调用设置多个其他属性。 *类型*必须设置为*AppService* *AppServiceName*必须设置为应用程序服务应用程序中定义的名称、 *PackageFamilyName*必须设置为应用程序清单和*负载*中定义的程序包系列名称包含的键和值您正在呼叫的目标应用程序中的服务。
+必须在调用中设置多个附加属性。 *Type*必须设置为*AppService*, *AppServiceName*必须设置为应用程序中定义的应用服务的名称, *PackageFamilyName*必须设置为应用程序清单中定义的程序包系列名称和*有效负载*保留您在目标应用程序中调用的服务的键和值。
 
 #### <a name="request"></a>请求
 

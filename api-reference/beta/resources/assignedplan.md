@@ -1,19 +1,17 @@
 ---
 title: assignedPlan 资源类型
-description: '**用户** 实体和 组织 实体的 AssignedPlans 属性都是一个 assignedPlan 集合。'
+description: '**用户** 实体和 组织 实体的 AssignedPlans 属性都是一个 **assignedPlan** 集合。'
 localization_priority: Normal
 ms.openlocfilehash: 3e06894fa71f81993b94d174d6cde8a54126fd62
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525134"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535646"
 ---
 # <a name="assignedplan-resource-type"></a>assignedPlan 资源类型
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-[用户](user.md) 实体和 [组织](organization.md) 实体的 **AssignedPlans** 属性都是一个 **assignedPlan** 集合。
+**用户** 实体和 [组织](user.md) 实体的 [AssignedPlans](organization.md) 属性都是一个 **assignedPlan** 集合。
 
 
 ## <a name="properties"></a>属性
@@ -48,15 +46,10 @@ ms.locfileid: "29525134"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "assignedPlan resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/assignedplan.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -1,19 +1,19 @@
 ---
-title: 列表设备组
-description: 获取此设备直接成员的组。 此操作是不可传递的。
+title: 列出设备组
+description: 获取此设备是其直接成员的组。 此操作不可传递。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1642b6ee758af5d2ab4004ea5b7a5293f33f7d01
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912377"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583751"
 ---
-# <a name="list-device-groups"></a>列表设备组
+# <a name="list-device-groups"></a>列出设备组
 
-获取此设备直接成员的组。 此操作是不可传递的。
+获取此设备是其直接成员的组。 此操作不可传递。
 
 ## <a name="permissions"></a>权限
 
@@ -36,7 +36,7 @@ GET /devices/{id}/memberOf
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Accept  | application/json|
+| 接受  | application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

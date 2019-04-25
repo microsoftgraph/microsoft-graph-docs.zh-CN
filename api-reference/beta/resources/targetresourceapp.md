@@ -1,16 +1,16 @@
 ---
 title: targetResourceApp 资源类型
-description: 指示已添加、 更新或删除管理员审核活动的一部分的应用程序对象。 派生 targetResource 资源。
+description: 指示作为审核活动的一部分被管理员添加、更新或删除的应用程序对象。 派生自 targetResource 资源。
 localization_priority: Normal
 ms.openlocfilehash: e426eacb1bdea15a2666f45bb061d28afcc693bf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873365"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583114"
 ---
 # <a name="targetresourceapp-resource-type"></a>targetResourceApp 资源类型
-指示已添加、 更新或删除管理员审核活动的一部分的应用程序对象。 派生[targetResource](targetresource.md)资源。
+指示作为审核活动的一部分被管理员添加、更新或删除的应用程序对象。 派生自[targetResource](targetresource.md)资源。
 
 
 

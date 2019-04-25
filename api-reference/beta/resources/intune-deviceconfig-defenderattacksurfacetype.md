@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 29610eca9dbb157a5ce4d51bcb67fa479814d17d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807950"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549291"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>defenderAttackSurfaceType 枚举类型
 
@@ -24,7 +24,7 @@ Defender 攻击面减少规则的可能值
 |:---|:---|:---|
 |定制|0|设备默认值, 无意向。|
 |数据|1|阻止功能。|
-|auditMode|双面|不会更改功能, 而是生成日志。|
+|auditMode|2 |不会更改功能, 而是生成日志。|
 
 
 

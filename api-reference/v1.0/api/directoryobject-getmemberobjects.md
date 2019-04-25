@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 03d70d0b26746f42f920daf3666ca37db5f1e15b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957149"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578643"
 ---
 # <a name="get-member-objects"></a>获取成员对象
 

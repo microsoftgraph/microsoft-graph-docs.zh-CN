@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 18da5ee6a71a9c91a4caa0fe513749107fd5cbf6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783421"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556734"
 ---
 # <a name="androideaptype-enum-type"></a>androidEapType 枚举类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "31783421"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|eapTls|13|可扩展的身份验证协议-传输层安全性 (eap-tls)。|
+|eapTls|13 |可扩展的身份验证协议-传输层安全性 (eap-tls)。|
 |eapTtls|不足|可扩展的身份验证协议-隧道传输层安全性 (EAP-TTLS)。|
 |peap|word|受保护的可扩展身份验证协议 (PEAP)。|
 

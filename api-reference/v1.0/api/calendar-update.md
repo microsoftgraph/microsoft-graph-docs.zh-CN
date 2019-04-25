@@ -1,15 +1,15 @@
 ---
 title: Update calendar
-description: '更新 calendar 对象的属性。 日历可以是一个用户， '
+description: '更新 calendar 对象的属性。 日历可以是用户的一种, '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: ad372b18397d24185c3e05daabe206fc3336f544
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987830"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580585"
 ---
 # <a name="update-calendar"></a>Update calendar
 
@@ -24,13 +24,14 @@ ms.locfileid: "27987830"
 |应用程序 | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->用户或组的默认[日历](../resources/calendar.md)。
+<!-- { "blockType": "ignored" } -->
+用户或组的默认 [日历](../resources/calendar.md)。
 ```http
 PATCH /me/calendar
 PATCH /users/{id | userPrincipalName}/calendar
 PATCH /groups/{id}/calendar
 ```
-默认 [calendarGroup](../resources/calendargroup.md) 中的用户 [calendar](../resources/calendar.md)。
+默认 [calendarGroup](../resources/calendargroup.md) 中用户的 [日历](../resources/calendar.md)。
 ```http
 PATCH /me/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}

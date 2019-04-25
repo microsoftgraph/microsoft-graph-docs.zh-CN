@@ -1,38 +1,38 @@
 ---
 title: educationSynchronizationError 资源类型
-description: 代表在学校数据配置文件的验证和/或同步过程中的错误。无法验证和/或与 Azure Active Directory (Azure AD) 将同步的每个条目生成是唯一的错误。
+description: 表示学校数据配置文件验证和/或同步过程中出现的错误。对于无法验证和/或与 azure Active Directory (azure AD) 同步的每个条目, 都会生成一个唯一的错误。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 5c937e95441132e4633b0f5e48a75b0597b8f08d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525141"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542927"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>educationSynchronizationError 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表在学校数据配置文件的验证和/或同步过程中的错误。无法验证和/或与 Azure Active Directory (Azure AD) 将同步的每个条目生成是唯一的错误。
+表示学校数据配置文件验证和/或同步过程中出现的错误。对于无法验证和/或与 azure Active Directory (azure AD) 同步的每个条目, 都会生成一个唯一的错误。
 
 ## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:-|:-|:-|
-| [获取同步错误](../api/educationsynchronizationerrors-get.md) | **educationSynchronizationError**集合| 返回一个配置文件相关联的同步错误的列表。 |
+| [获取同步错误](../api/educationsynchronizationerrors-get.md) | **educationSynchronizationError**集合| 返回与配置文件关联的同步错误的列表。 |
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| **entryType** | string |  代表同步实体 （学校、 节、 学生、 教师）。       |
-| errorCode | string |  表示此错误的错误代码。         |
-| **ErrorMessage** | string |  包含错误的说明。        |
+| **entryType** | string |  表示 sync 实体 (学校、节、学生、教师)。       |
+| **错误** | string |  表示此错误的错误代码。         |
+| **errorMessage** | string |  包含错误的说明。        |
 | **joiningValue** | string |  条目的唯一标识符。         |
-| recordedDateTime | DateTimeOffset | 出现此错误的时间。         |
-| **reportableIdentifier** | string | 此错误条目的标识符。       |
+| **recordedDateTime** | DateTimeOffset | 出现此错误的时间。         |
+| **reportableIdentifier** | string | 此错误项的标识符。       |
 
 ## <a name="json-representation"></a>JSON 表示形式
 <!-- {

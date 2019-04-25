@@ -6,17 +6,17 @@ title: 发布页面
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 5a00a69542c2b59b1b268433b08656c87d194feb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507528"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545221"
 ---
-# <a name="sitepage-publish"></a>sitePage： 发布
+# <a name="sitepage-publish"></a>sitePage: 发布
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-发布[sitePage][]资源，使页面的版本可供所有用户的最新版本。 如果页已签出，签入此页面并将其发布。 如果页已签出到此 api 呼叫者，页是自动签入，然后发布。
+发布[sitePage][]资源的最新版本, 使页面的版本可供所有用户使用。 如果该页面已签出, 请签入该页面并发布它。 如果页面已签出到此 API 的调用方, 则会自动签入并发布该页面。
 
 [sitePage]: ../resources/sitepage.md
 
@@ -40,7 +40,7 @@ POST /sites/{siteId}/pages/{pageId}/publish
 
 ## <a name="request-body"></a>请求正文
 
-此消息没有请求正文。 发送任何请求正文将被忽略。
+此邮件没有请求正文。 发送的任何请求正文都将被忽略。
 
 ## <a name="response"></a>响应
 

@@ -1,15 +1,15 @@
 ---
 title: Add attachment
-description: 使用此 API 向帖子添加附件。 相那里
+description: 使用此 API 将 附件 添加到帖子。 由于存在
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 4349673b5400674394db33540f09a407a0a6af33
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527890"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538734"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -35,7 +35,8 @@ ms.locfileid: "29527890"
 |应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->[发布](../resources/post.md)[线程](../resources/conversationthread.md)属于组的[对话](../resources/conversation.md)中的附件。
+<!-- { "blockType": "ignored" } -->
+属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/attachments
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
@@ -141,7 +142,7 @@ Content-length: 162
 ## <a name="example-reference-attachment"></a>示例（参考附件）
 
 ##### <a name="request"></a>请求
-下面是请求的添加到现有张贴内容的引用附件的示例。
+下面的示例展示了向现有帖子添加引用附件的请求。
 附件指向 OneDrive 上的文件夹。
 <!-- {
   "blockType": "request",
@@ -165,7 +166,7 @@ Content-length: 319
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的完整的一个示例。
+下面的示例展示了完整的响应。
 <!-- {
   "blockType": "response",
   "truncated": true,

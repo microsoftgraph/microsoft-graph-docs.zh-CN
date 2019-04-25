@@ -1,29 +1,29 @@
 ---
 title: educationExcelResource 资源类型
-description: 'EducationResource 一个子类。 此资源类型表示 Excel 文档。  '
+description: 'educationResource 的子类。 此资源类型代表一个 Excel 文档。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 14d7823f166ca12d202a6561bc9fe7b158ab7476
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522418"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542816"
 ---
 # <a name="educationexcelresource-resource-type"></a>educationExcelResource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)一个子类。 此资源类型表示 Excel 文档。  
+[educationResource](educationresource.md)的子类。 此资源类型代表一个 Excel 文档。  
  
->**注意：** Excel 文件必须与此资源所属的工作分配或提交对象关联的资源文件夹中。
+>**注意:** Excel 文件必须位于与此资源所属的 "分配" 或 "提交" 对象相关联的资源文件夹中。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|FileURL|String|Excel 文件对象的指针。|
+|fileUrl|String|指向 Excel 文件对象的指针。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

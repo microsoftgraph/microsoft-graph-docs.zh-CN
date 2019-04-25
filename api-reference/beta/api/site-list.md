@@ -1,31 +1,31 @@
 ---
 title: 枚举网站
-description: 列出组织中的匹配提供的筛选器条件和查询选项可用 [站点] []。
+description: 列出组织中符合提供的筛选条件和查询选项的可用 [sites] []。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f225d9990637f8251ae40e3f66b0f993bbf74f32
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520338"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545192"
 ---
 # <a name="enumerate-sites"></a>枚举网站
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出与提供的筛选器条件匹配并查询选项的组织中可用的[网站][]。
+列出组织中符合提供的筛选条件和查询选项的可用[网站][]。
 
-当前支持仅以下查询选项：
+目前仅支持以下查询选项:
 
-| 筛选语句             | SELECT 语句        | 说明
+| Filter 语句             | Select 语句        | 说明
 |:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | 列出组织中的所有根级别网站集。 用于发现每个地理位置的主网站。
+|`siteCollection/root ne null` | `siteCollection,webUrl` | 列出组织中的所有根级别网站集。 对于发现每个地理位置的主站点很有用。
 
-此外，您可能使用针对 / 网站集合的**[搜索][]** 查询查找匹配关键字给定的网站。
+此外, 您可以对 "/sites" 集合使用**[搜索][]** 查询来查找与给定关键字匹配的网站。
 
-[Search]: site-search.md
-[sites]: ../resources/site.md
+[查询]: site-search.md
+[网站]: ../resources/site.md
 
 ## <a name="permissions"></a>权限
 

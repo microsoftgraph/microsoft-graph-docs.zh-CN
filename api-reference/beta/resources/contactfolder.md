@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 599f1765b6305d2dc4d482ec035ee4b24eb5183a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640866"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543383"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "29640866"
 |[创建子 ContactFolder](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| 创建新的 contactFolder 作为指定文件夹的子文件夹。|
 |[delta](../api/contact-delta.md)|[联系人](contact.md)集合| 获取用户邮箱中已添加、删除或移除的联系人文件夹集。|
 |[列出文件夹中的联系人](../api/contactfolder-list-contacts.md) |[contact](contact.md) 集合| 从已登录用户的默认联系人文件夹 (`.../me/contacts`) 或指定的联系人文件夹中获取联系人集合。|
-|[在文件夹中创建联系人](../api/contactfolder-post-contacts.md) |[联系人](contact.md)| 将联系人添加到联系人根文件夹或其他联系人文件夹的 `contacts` 终结点中。|
+|[在文件夹中创建联系人](../api/contactfolder-post-contacts.md) |[contact](contact.md)| 将联系人添加到联系人根文件夹或其他联系人文件夹的 `contacts` 终结点中。|
 |**扩展属性**| | |
 |[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md)  |在新建或现有的 contactFolder 中创建一个或多个单值扩展属性。   |
 |[获取包含单值扩展属性的 contactFolder](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | 通过使用 `$expand` 或 `$filter` 获取包含一个单值扩展属性的 contactFolder。 |
@@ -42,17 +42,17 @@ ms.locfileid: "29640866"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |displayName|String|文件夹的显示名称。|
-|id|String|联系人文件夹的唯一标识符。只读。|
+|id|字符串|联系人文件夹的唯一标识符。只读。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
-|wellKnownName|string|如果文件夹为识别的文件夹的文件夹的名称。 当前`contacts`是仅识别联系人文件夹。|
+|wellKnownName|string|文件夹的名称 (如果文件夹是可识别的文件夹)。 当前`contacts`是唯一可识别的 "联系人" 文件夹。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |childFolders|[ContactFolder](contactfolder.md) 集合|文件夹中的子文件夹集合。导航属性。只读。可为 Null。|
-|contacts|[联系人](contact.md) 集合|文件夹中的联系人。导航属性。只读。可为 Null。|
+|contacts|[Contact](contact.md) collection|文件夹中的联系人。导航属性。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

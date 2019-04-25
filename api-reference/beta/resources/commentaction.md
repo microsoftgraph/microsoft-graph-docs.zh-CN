@@ -5,11 +5,11 @@ ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal
 ms.openlocfilehash: e674c996002b3a54c92886dd1c5dca7a76c56b51
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526268"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543460"
 ---
 # <a name="commentaction-resource-type"></a>CommentAction 资源类型
 

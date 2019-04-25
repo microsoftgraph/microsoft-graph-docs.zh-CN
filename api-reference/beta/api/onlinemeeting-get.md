@@ -1,24 +1,24 @@
 ---
-title: Get 联机会议
-description: 检索的属性和**onlineMeeting**对象的关系。
+title: 获取联机会议
+description: 检索**onlineMeeting**对象的属性和关系。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: ef45d73aef8124d962d05ea84117c93bac16f0a2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510650"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539931"
 ---
-# <a name="get-online-meeting"></a>Get 联机会议
+# <a name="get-online-meeting"></a>获取联机会议
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和**onlineMeeting**对象的关系。
+检索**onlineMeeting**对象的属性和关系。
 
-> **注意：**`GET`方法仅限于[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)。云视频互操作许可用户并使用此方法来获取要加入会议的详细信息，将生成这些 Id。
-> 对于正则流，自动程序可以使用`joinURL`要加入会议时，没有查阅有必要。
+> **注意:** 此`GET`方法限制为[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)。这些 id 是为云-视频互操作许可的用户生成的, 此方法用于获取加入会议的详细信息。
+> 对于常规流, bot 可以使用`joinURL`加入会议, 而无需进行查找。
 
 ## <a name="permissions"></a>权限
 
@@ -26,9 +26,9 @@ ms.locfileid: "29510650"
 
 | 权限类型                        | 权限（从最低特权到最高特权）           |
 |:---------------------------------------|:------------------------------------------------------|
-| 委派（工作或学校帐户）     | 不受支持。                                        |
-| 委派（个人 Microsoft 帐户） | 不受支持。                                        |
-| 应用程序                            | OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All |
+| 委派（工作或学校帐户）     | 不支持。                                        |
+| 委派（个人 Microsoft 帐户） | 不支持。                                        |
+| 应用程序                            | OnlineMeetings、OnlineMeetings 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -49,7 +49,7 @@ GET /applications/{id}/onlineMeetings/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[onlineMeeting](../resources/onlinemeeting.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[onlineMeeting](../resources/onlinemeeting.md)对象。
 
 ## <a name="example"></a>示例
 

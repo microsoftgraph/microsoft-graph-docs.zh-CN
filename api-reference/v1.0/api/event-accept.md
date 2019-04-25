@@ -1,19 +1,19 @@
 ---
 title: 'event: accept'
-description: 接受用户日历中指定的事件。
+description: 接受用户日历中的指定事件。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5e89aa5cd934805fed9e8b08f93fed6d4e7cfe8d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972563"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550005"
 ---
 # <a name="event-accept"></a>event: accept
 
-接受用户[日历](../resources/calendar.md)中指定的[事件](../resources/event.md)。
+接受用户[日历](../resources/calendar.md)中的指定[事件](../resources/event.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

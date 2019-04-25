@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 更改共享权限
 localization_priority: Normal
 ms.openlocfilehash: fceffc8cc530e1beec9062aea6552d1dcc825c1e
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789660"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539111"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 

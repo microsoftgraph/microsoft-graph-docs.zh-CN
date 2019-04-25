@@ -1,15 +1,15 @@
 ---
 title: teamsUserActivityUserDetail 资源类型
-description: 以下是资源 JSON representaion。
+description: 下面是资源的 JSON representaion。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 32b611ee9ec01b0339389256b8c8dff9eac99fa9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913427"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582904"
 ---
 # <a name="teamsuseractivityuserdetail-resource-type"></a>teamsUserActivityUserDetail 资源类型
 
@@ -17,22 +17,22 @@ ms.locfileid: "27913427"
 
 | 属性                | 类型              |
 | :---------------------- | :---------------- |
-| reportRefreshDate       | 日期              |
-| userPrincipalName       | 字符串            |
-| lastActivityDate        | 日期              |
-| 被               | 布尔           |
-| deletedDate             | 日期              |
-| assignedProducts        | String 集合 |
+| reportRefreshDate       | Date              |
+| userPrincipalName       | String            |
+| lastActivityDate        | Date              |
+| isDeleted               | Boolean           |
+| deletedDate             | Date              |
+| assignedProducts        | String collection |
 | teamChatMessageCount    | Int64             |
 | privateChatMessageCount | Int64             |
 | callCount               | Int64             |
 | meetingCount            | Int64             |
-| hasOtherAction          | 布尔           |
+| hasOtherAction          | Boolean           |
 | reportPeriod            | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-以下是资源 JSON representaion。
+下面是资源的 JSON representaion。
 
 <!-- {
   "blockType": "resource",

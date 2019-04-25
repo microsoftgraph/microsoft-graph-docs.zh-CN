@@ -1,17 +1,17 @@
 ---
 title: FormatProtection 资源类型
-description: 表示对 range 对象的格式保护。
+description: 表示对范围对象的格式保护。
 localization_priority: Normal
 ms.openlocfilehash: e4c32c8be8f6ef3aeaaf763ee88998bcbe235503
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876774"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542051"
 ---
 # <a name="formatprotection-resource-type"></a>FormatProtection 资源类型
 
-表示对 range 对象的格式保护。
+表示对范围对象的格式保护。
 
 
 ## <a name="methods"></a>方法
@@ -19,15 +19,15 @@ ms.locfileid: "27876774"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 FormatProtection](../api/formatprotection-get.md) | [FormatProtection](formatprotection.md) |读取 formatProtection 对象的属性和关系。|
-|[Update](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)  |更新 FormatProtection 对象。 |
+|[更新](../api/formatprotection-update.md) | [FormatProtection](formatprotection.md)  |更新 FormatProtection 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|formulaHidden|boolean|表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。|
+|formulaHidden|布尔|表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。|
 |已锁定|boolean|指示 Excel 是否锁定对象中的单元格。指示整个区域不具有统一锁定设置的空值。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 

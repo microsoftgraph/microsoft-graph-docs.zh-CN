@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 1b467f73ed2a4a5e48cb1243c5b1326591bcd707
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575116"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581448"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>office365GroupsActivityDetail 资源类型
 
@@ -17,24 +17,24 @@ ms.locfileid: "29575116"
 
 | 属性                          | 类型    | 说明                              |
 | :-------------------------------- | :------ | ---------------------------------------- |
-| reportRefreshDate                 | Date    | 内容最晚日期。          |
+| reportRefreshDate                 | Date    | 内容的最新日期。          |
 | groupDisplayName                  | String  | 组的显示名称。           |
-| 被                         | 布尔值 | 此用户是否已被删除或软删除。 |
-| ownerPrincipalName                | String  | 组的所有者主体名称。          |
-| lastActivityDate                  | Date    | 以下方案的最后一个活动日期： 组邮箱收到电子邮件;用户可以查看、 编辑、 共享，或同步中 SharePoint 文档库; 文件用户查看 SharePoint 页面; 例如：用户发布、 读取或喜欢 Yammer 组中的邮件。 |
-| groupType                         | String  | 组类型。 可能的值为：**公共**或**专用**。 |
+| isDeleted                         | Boolean | 此用户是否已被删除或软删除。 |
+| ownerPrincipalName                | String  | 组所有者的主体名称。          |
+| lastActivityDate                  | Date    | 以下应用场景的上次活动日期: 组邮箱收到电子邮件;用户在 SharePoint 文档库中查看、编辑、共享或同步文件;用户查看了 SharePoint 页面;用户在 Yammer 组中投递、阅读或赞了邮件。 |
+| groupType                         | String  | 组类型。 可能的值是: **Public**或**Private**。 |
 | memberCount                       | Int64   | 组成员计数。                  |
-| externalMemberCount               | Int64   | 组外部成员计数。         |
-| exchangeReceivedEmailCount        | Int64   | 组邮箱收到的电子邮件数。 |
+| externalMemberCount               | Int64   | group 外部成员计数。         |
+| exchangeReceivedEmailCount        | Int64   | 组邮箱接收的电子邮件数。 |
 | sharePointActiveFileCount         | Int64   | SharePoint 组网站中的活动文件数。 |
-| yammerPostedMessageCount          | Int64   | 发布到 Yammer 组的消息数。 |
-| yammerReadMessageCount            | Int64   | Yammer 组中读取的消息数。 |
-| yammerLikedMessageCount           | Int64   | 喜欢 Yammer 组中的消息数。 |
+| yammerPostedMessageCount          | Int64   | 发布到 Yammer 组的邮件数。 |
+| yammerReadMessageCount            | Int64   | Yammer 组中读取的邮件数。 |
+| yammerLikedMessageCount           | Int64   | Yammer 组中的已赞邮件数。 |
 | exchangeMailboxTotalItemCount     | Int64   | 组邮箱中的项目数。 |
-| exchangeMailboxStorageUsedInBytes | Int64   | 使用的组邮箱的存储。   |
-| sharePointTotalFileCount          | Int64   | SharePoint 组网站中的文件总数。 |
-| sharePointSiteStorageUsedInBytes  | Int64   | 使用 SharePoint 组网站的存储。 |
-| reportPeriod                      | String  | 报告涵盖天数。    |
+| exchangeMailboxStorageUsedInBytes | Int64   | 组邮箱所使用的存储。   |
+| sharePointTotalFileCount          | Int64   | SharePoint 组网站中的总文件数。 |
+| sharePointSiteStorageUsedInBytes  | Int64   | SharePoint 组网站所使用的存储区。 |
+| reportPeriod                      | String  | 报告覆盖的天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

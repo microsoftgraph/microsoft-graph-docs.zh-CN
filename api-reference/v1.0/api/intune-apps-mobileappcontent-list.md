@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7d8f864b17f2d89e40108fb29c29733996d8636b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962440"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541659"
 ---
 # <a name="list-mobileappcontents"></a>列出 mobileAppContents
 

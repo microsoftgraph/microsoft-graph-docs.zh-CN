@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: AsyncJobStatus
 localization_priority: Normal
 ms.openlocfilehash: c951aa05b2b0f6f2b036bdf145e161a8d5b52ba7
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482229"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544013"
 ---
 # <a name="asyncjobstatus-resource"></a>AsyncJobStatus 资源
 

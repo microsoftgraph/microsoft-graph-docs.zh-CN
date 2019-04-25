@@ -1,19 +1,19 @@
 ---
 title: 列出 secureScores
-description: 检索的属性和 secureScores 对象的关系。
+description: 检索 secureScores 对象的属性和关系。
 localization_priority: Normal
 ms.openlocfilehash: e574c3e52eb60f29dac89e2795b04666c7a1f02b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642959"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545462"
 ---
 # <a name="list-securescores"></a>列出 secureScores
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和[secureScores](../resources/securescores.md)对象的关系。
+检索[secureScores](../resources/securescores.md)对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -21,9 +21,9 @@ ms.locfileid: "29642959"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  SecurityEvents.Read.All，SecurityEvents.ReadWrite.All。   |
+|委派（工作或学校帐户） |  securityevents.readwrite.all、securityevents.readwrite.all、all。   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | SecurityEvents.Read.All，SecurityEvents.ReadWrite.All。 |
+|应用程序 | securityevents.readwrite.all、securityevents.readwrite.all、all。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,7 +37,7 @@ GET /security/secureScores
 
 | 名称      |说明|
 |:----------|:----------|
-| 授权  | Bearer {code}。必需。|
+| Authorization  | 持有者 {代码}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -45,7 +45,7 @@ GET /security/secureScores
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的**secureScores**对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和**secureScores**对象。
 
 ## <a name="example"></a>示例
 

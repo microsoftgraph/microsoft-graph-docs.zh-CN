@@ -5,11 +5,11 @@ ms.date: 09/14/2017
 title: EditAction
 localization_priority: Normal
 ms.openlocfilehash: e319f6889b520f90d9414c4115060edbe2e2f0cc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526765"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543042"
 ---
 # <a name="editaction-resource-type"></a>EditAction 资源类型
 

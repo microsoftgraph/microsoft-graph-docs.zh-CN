@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7528b79652be799e2cc8b9b6d30622f10b5c6a0e
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534596"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>sharedPCAllowedAccountType 枚举类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "30263173"
 |成员|值|说明|
 |:---|:---|:---|
 |操作系统|1|仅来宾帐户。|
-|domain|双面|仅加入域的帐户。|
+|domain|2 |仅加入域的帐户。|
 
 
 

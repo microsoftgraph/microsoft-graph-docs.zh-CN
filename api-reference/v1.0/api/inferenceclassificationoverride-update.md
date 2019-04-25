@@ -3,11 +3,11 @@ title: 更新 inferenceclassificationoverride
 description: '按指定内容更改替代的 **ClassifyAs** 字段。 '
 localization_priority: Normal
 ms.openlocfilehash: fdd11e6c3d3f4fb72d9f94226e8cb3d35dde2c03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843972"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577572"
 ---
 # <a name="update-inferenceclassificationoverride"></a>更新 inferenceclassificationoverride
 
@@ -46,7 +46,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|classifyAs|string| 指定如何将传入消息从特定发件人应总是为类别。 可能的值为： `focused`， `other`。|
+|classifyAs|string| 指定来自特定发件人的传入邮件始终应如何分类。 可能的值为: `focused`、 `other`。|
 
 ## <a name="response"></a>响应
 

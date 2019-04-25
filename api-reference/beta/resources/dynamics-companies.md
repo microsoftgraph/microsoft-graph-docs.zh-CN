@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: f1faca36af25bc8cb3e9019e0dc5b4460991e70d
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365680"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543106"
 ---
 # <a name="companies-resource-type"></a>公司资源类型
 代表 "Dynamics 365 Business Central 中的公司" 资源类型。 
@@ -20,7 +20,7 @@ ms.locfileid: "30365680"
 
 | 方法         | 返回类型  |说明|
 |:---------------|:-------------|:----------|
-|[获取公司](../api/dynamics-companies-get.md)|保险公司|获取公司。|
+|[获取公司](../api/dynamics-companies-get.md)|companies|获取公司。|
 
 ## <a name="properties"></a>属性
 | 属性        | 类型 |说明                             |

@@ -1,25 +1,25 @@
 ---
-title: 配置与自定义目标属性同步
-description: 您可以自定义您的同步架构，以包括目标目录中定义的自定义属性。 本文介绍如何通过添加名的新字段的自定义的销售队伍订阅`officeCode`。 您设置同步从 Azure Active Directory (Azure AD) 到销售队伍，并为每个用户，您将填充`officeCode`字段中销售队伍的值与`extensionAttribute10`字段中 Azure AD。
+title: 配置与自定义目标属性的同步
+description: 您可以自定义同步架构, 以包括在目标目录中定义的自定义属性。 本文介绍如何通过添加名`officeCode`为的新字段来自定义 Salesforce 订阅。 你将同步从 azure Active Directory (Azure AD) 设置为 Salesforce, 对于每个用户, 将使用 Azure AD `officeCode`中的`extensionAttribute10`字段的值填充 Salesforce 中的字段。
 localization_priority: Normal
 ms.openlocfilehash: 1b0a19bab796f7bd8261ebf898450c07bf1415e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508879"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582116"
 ---
-# <a name="configure-synchronization-with-custom-target-attributes"></a>配置与自定义目标属性同步
+# <a name="configure-synchronization-with-custom-target-attributes"></a>配置与自定义目标属性的同步
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以自定义您的同步架构，以包括目标目录中定义的自定义属性。 本文介绍如何通过添加名的新字段的自定义的销售队伍订阅`officeCode`。 您设置同步从 Azure Active Directory (Azure AD) 到销售队伍，并为每个用户，您将填充`officeCode`字段中销售队伍的值与`extensionAttribute10`字段中 Azure AD。
+您可以自定义同步架构, 以包括在目标目录中定义的自定义属性。 本文介绍如何通过添加名`officeCode`为的新字段来自定义 Salesforce 订阅。 你将同步从 azure Active Directory (Azure AD) 设置为 Salesforce, 对于每个用户, 将使用 Azure AD `officeCode`中的`extensionAttribute10`字段的值填充 Salesforce 中的字段。
 
-本文假定您已添加了支持同步到通过[Azure 门户](https://portal.azure.com)，确保您知道应用程序显示名称，租户的应用程序和 Microsoft Graph 具有一个授权令牌。 有关如何获取授权令牌的信息，请参阅[获取访问令牌调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。
+本文假定您已添加了一个应用程序, 该应用程序支持通过[Azure 门户](https://portal.azure.com)同步到您的租户, 您知道应用程序显示名称, 并且您具有 Microsoft Graph 的授权令牌。 有关如何获取授权令牌的信息, 请参阅[获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>按显示名称查找服务主体对象
 
-下面的示例演示如何查找与销售队伍的显示名称的服务主体对象。
+下面的示例演示如何查找显示名称为 Salesforce 的服务主体对象。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -47,12 +47,12 @@ Authorization: Bearer {Token}
 }
 ```
 
-`{servicePrincipalId}`是`167e33e9-f80e-490e-b4d8-698d4a80fb3e`。
+`{servicePrincipalId}`为`167e33e9-f80e-490e-b4d8-698d4a80fb3e`。
 
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>服务主体的上下文中的列表同步作业 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>在服务主体的上下文中列出同步作业 
 
-下面的示例演示如何获取`jobId`，您需要使用。 通常，响应返回只有一个作业。
+下面的示例演示如何获取需要使用`jobId`的。 通常情况下, 响应仅返回一个作业。
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -71,7 +71,7 @@ Authorization: Bearer {Token}
 }
 ```
 
-`{jobId}`是`SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`。
+`{jobId}`为`SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`。
 
 
 ## <a name="get-the-synchronization-schema"></a>获取同步架构
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/sync
 Authorization: Bearer {Token}
 ```
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将返回实际呼叫中的所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性将在实际调用中返回。
 
 <!-- {
   "blockType": "response",
@@ -183,20 +183,20 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>添加 officeCode 属性和属性之间的映射定义
+## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>为 officeCode 属性添加定义以及属性之间的映射
 
-使用纯文本编辑器 （如[记事本 + +](https://notepad-plus-plus.org/)或[JSON 编辑器联机](https://www.jsoneditoronline.org/)） 您选择的：
+使用您选择的纯文本编辑器 (例如,[记事本 + +](https://notepad-plus-plus.org/)或[JSON 编辑器 Online](https://www.jsoneditoronline.org/)) 执行以下操作:
 
-1. 添加的[属性定义](synchronization-attributedefinition.md)`officeCode`属性。 
+1. 为`officeCode`属性添加[属性定义](synchronization-attributedefinition.md)。 
 
-    - 在目录中，查找与名称 salesforce.com，和对象的数组中的目录下，找到一个指定的**用户**。
-    - 将新属性添加到列表中，指定的名称和类型，如下面的示例中所示。
+    - 在 "目录" 下, 查找名称为 "salesforce.com" 的目录, 并在对象的数组中查找名为**User**的一个。
+    - 将新属性添加到列表中, 并指定名称和类型, 如下面的示例所示。
 
-2. 添加[属性映射](synchronization-attributemapping.md)之间`officeCode`和`extensionAttribute10`。
+2. 在和`officeCode` `extensionAttribute10`之间添加[属性映射](synchronization-attributemapping.md)。
 
-    - 下[synchronizationRules](synchronization-synchronizationrule.md)，查找作为源目录，并为目标目录 Salesforce.com 指定 Azure AD 的规则 (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`)。
-    - 在规则[objectMappings](synchronization-objectmapping.md) ，找到用户之间的映射 (`"sourceObjectName": "User",   "targetObjectName": "User"`)。
-    - 在**objectMapping** [attributeMappings](synchronization-attributemapping.md)数组中，添加一个新项，如下面的示例中所示。
+    - 在 " [synchronizationRules](synchronization-synchronizationrule.md)" 下, 查找指定 Azure AD 作为源目录的规则, 并将 Salesforce.com 指定为目标`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`目录 ()。
+    - 在规则的 " [objectMappings](synchronization-objectmapping.md) " 中, 查找 "用户之间的`"sourceObjectName": "User",   "targetObjectName": "User"`映射" ()。
+    - 在**objectMapping**的[attributeMappings](synchronization-attributemapping.md)数组中, 添加一个新项, 如下面的示例所示。
 
 ```json
 {  
@@ -248,7 +248,7 @@ HTTP/1.1 200 OK
 
 ## <a name="save-the-modified-synchronization-schema"></a>保存修改后的同步架构
 
-保存更新的同步架构时，请确保您包括整个架构，其中包括未修改的部件。 此请求将使用您提供一个替换现有的架构。
+保存更新后的同步架构时, 请确保包含整个架构, 包括未修改的部分。 此请求将使用您提供的架构替换现有架构。
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -261,7 +261,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-如果架构已成功保存下, 一步迭代的同步作业，则它将启动重新处理您 Azure AD 中的所有帐户和新的映射将应用于所有已设置的帐户。
+如果架构已成功保存, 则在同步作业的下一次迭代中, 它将开始重新处理 Azure AD 中的所有帐户, 并且新的映射将应用于所有已设置的帐户。
 <!--
 {
   "type": "#page.annotation",

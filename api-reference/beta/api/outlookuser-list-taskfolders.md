@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 4037567a61ba6cd96759053035edef66455b94fa
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869237"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539660"
 ---
 # <a name="list-taskfolders"></a>列出 taskFolders
 

@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c870e1d6d9e294aadef50fb08d9e173e5aa62f5d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917550"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577873"
 ---
 # <a name="remove-directory-role-member"></a>删除目录角色成员
 

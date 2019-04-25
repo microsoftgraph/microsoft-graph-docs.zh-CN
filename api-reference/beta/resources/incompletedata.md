@@ -5,18 +5,18 @@ ms.date: 10/06/2017
 title: IncompleteData
 localization_priority: Normal
 ms.openlocfilehash: f2493263d5293b95cbe386b46c56429d11dda089
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525085"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549032"
 ---
 # <a name="incompletedata-resource-type"></a>incompleteData 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**IncompleteData**方面指示资源生成不完整的数据。
-内的属性可能提供有关信息，为什么不完整数据。
+**incompleteData** facet 指示资源是使用不完整的数据生成的。
+中的属性可能提供了有关不完整数据的原因的信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -33,8 +33,8 @@ ms.locfileid: "29525085"
 
 | 属性                  | 类型           | 说明
 |:--------------------------|:---------------|:--------------------------------
-| missingDataBeforeDateTime | DateTimeOffset | 该服务不具有之前指定的时间的源数据。
-| wasThrottled              | Boolean        | 由于活动太多而未录制一些数据。
+| missingDataBeforeDateTime | DateTimeOffset | 该服务在指定的时间之前没有源数据。
+| wasThrottled              | 布尔值        | 由于活动过多而未记录某些数据。
 
 <!--
 {

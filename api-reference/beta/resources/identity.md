@@ -5,11 +5,11 @@ ms.date: 09/14/2017
 title: 身份
 localization_priority: Normal
 ms.openlocfilehash: 1f2d1f5a305698438748ee69f73b4143b8afd8fa
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481564"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547384"
 ---
 # <a name="identity-resource-type"></a>标识资源类型
 

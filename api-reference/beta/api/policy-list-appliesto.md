@@ -1,19 +1,19 @@
 ---
-title: 列表应用程序和服务与特定的策略分配的安全主体
-description: 检索与指定的策略分配的应用程序和服务主体对象。
+title: 列出分配了特定策略的应用程序和服务主体
+description: 使用分配的指定策略检索应用程序和服务主体对象。
 localization_priority: Normal
 ms.openlocfilehash: d7449428216a2e68d9ab8bb8399ca0e8dc4b72fd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510475"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538748"
 ---
-# <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>列表应用程序和服务与特定的策略分配的安全主体
+# <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>列出分配了特定策略的应用程序和服务主体
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与指定的策略分配的[应用程序](../resources/application.md)和[服务主体](../resources/serviceprincipal.md)对象。
+使用分配的指定策略检索[应用程序](../resources/application.md)和[服务主体](../resources/serviceprincipal.md)对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -39,10 +39,10 @@ GET /policies/{id}/appliesTo
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[应用程序](../resources/application.md)和[服务主体](../resources/serviceprincipal.md)对象。 如果不成功，`4xx`与特定的详细信息，则返回错误。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[应用程序](../resources/application.md)和[服务主体](../resources/serviceprincipal.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
-以下示例检索与特定的策略分配的应用程序和服务主体。
+下面的示例检索分配了特定策略的应用程序和服务主体。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

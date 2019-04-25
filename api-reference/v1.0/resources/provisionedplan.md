@@ -1,17 +1,17 @@
 ---
 title: provisionedPlan 资源类型
-description: 用户 实体和 组织 实体的 **provisionedPlans** 属性都是一个 **provisionedPlan** 集合。
+description: '**用户** 实体和 组织 实体的 provisionedPlans 属性都是一个 **provisionedPlan** 集合。'
 localization_priority: Normal
 ms.openlocfilehash: dd8d4f5b406a2291a829d7c11d4948bd9a08d453
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831484"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579662"
 ---
 # <a name="provisionedplan-resource-type"></a>provisionedPlan 资源类型
 
-[用户](user.md) 实体和 [组织](organization.md) 实体的 **provisionedPlans** 属性都是一个 **provisionedPlan** 集合。
+**用户** 实体和 [组织](user.md) 实体的 [provisionedPlans](organization.md) 属性都是一个 **provisionedPlan** 集合。
 
 
 ## <a name="properties"></a>属性

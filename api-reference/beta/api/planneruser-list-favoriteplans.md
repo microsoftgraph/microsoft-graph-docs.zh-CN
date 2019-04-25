@@ -1,21 +1,21 @@
 ---
-title: 列表 favoritePlans
-description: 检索 plannerPlans 由用户标记为最喜爱的列表。 您可以通过更新 plannerUser 资源标记为最喜爱的计划。
+title: 列出 favoritePlans
+description: 检索标记为用户收藏的 plannerPlans 的列表。 您可以通过更新 plannerUser 资源将计划标记为收藏。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: c189b3a3a7ed6d36272c05e9614fd6d0327600d4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519120"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538719"
 ---
-# <a name="list-favoriteplans"></a>列表 favoritePlans
+# <a name="list-favoriteplans"></a>列出 favoritePlans
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[plannerPlans](../resources/plannerplan.md)由用户标记为最喜爱的列表。 您可以按[更新 plannerUser 资源](planneruser-update.md)标记为最喜爱的计划。
+检索标记为用户收藏的[plannerPlans](../resources/plannerplan.md)的列表。 您可以通过[更新 plannerUser 资源](planneruser-update.md)将计划标记为收藏。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -38,12 +38,12 @@ GET /users/<id>/planner/favoritePlans
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必需。|
+| Authorization  | 持有者 {代码}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[plannerPlan](../resources/plannerplan.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[plannerPlan](../resources/plannerplan.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

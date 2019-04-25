@@ -1,65 +1,65 @@
 ---
 title: accessReviewDecision 资源类型
-description: 在 Azure AD 中访问审阅功能，`accessReviewDecision`代表 Azure AD 访问检查决策的特定实体的访问。  内访问审阅或定期访问回顾实例，还有一`accessReviewDecision`每个已审阅的用户。  例如，如果组具有两个来宾和一个非访客成员，作为来宾访问审阅执行为该组，然后将两个访问审阅决策对象。  如果审阅者更改其决策，或其他审阅者重写它们，则`accessReviewDecision`更新。
+description: 在 azure ad access 评论功能中, `accessReviewDecision`表示特定实体的访问的 azure ad 访问审核决策。  在访问评审或定期访问审核实例中, 每个审阅的用户都有`accessReviewDecision`一个。  例如, 如果一个组有两个来宾, 一个非来宾作为成员, 并且对该组执行来宾的访问审核, 则会有两个访问审核决策对象。  如果审阅者更改`accessReviewDecision`了他们的决定, 或另一个审阅者将其覆盖, 则会更新。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 9642c8a51e4e9efe1a1748243b0e24aeff07cfa0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517398"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535760"
 ---
 # <a name="accessreviewdecision-resource-type"></a>accessReviewDecision 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD[访问审阅](accessreviews-root.md)功能中，`accessReviewDecision`代表 Azure AD 访问检查决策的特定实体的访问。  内访问审阅或定期访问回顾实例，还有一`accessReviewDecision`每个已审阅的用户。  例如，如果组具有两个来宾和一个非访客成员，作为来宾访问审阅执行为该组，然后将两个访问审阅决策对象。  如果审阅者更改其决策，或其他审阅者重写它们，则`accessReviewDecision`更新。
+在 azure ad [access 评论](accessreviews-root.md)功能中, `accessReviewDecision`表示特定实体的访问的 azure ad 访问审核决策。  在访问评审或定期访问审核实例中, 每个审阅的用户都有`accessReviewDecision`一个。  例如, 如果一个组有两个来宾, 一个非来宾作为成员, 并且对该组执行来宾的访问审核, 则会有两个访问审核决策对象。  如果审阅者更改`accessReviewDecision`了他们的决定, 或另一个审阅者将其覆盖, 则会更新。
 
 
 ## <a name="methods"></a>方法
 
-无。  访问查看初始化，并不能删除时，此类型的对象会自动创建功能。  它们可以使用的[决策](../api/accessreview-listdecisions.md)和[mydecisions](../api/accessreview-listmydecisions.md)关系访问查看从检索。
+无。  此类对象将在 access 评审初始化时自动创建, 并且无法删除。  可以使用[决策](../api/accessreview-listdecisions.md)和[mydecisions](../api/accessreview-listmydecisions.md)关系从访问审核中检索它们。
 
 ## <a name="properties"></a>属性
 
-下表说明了此类型的对象的基本属性。 
+此表阐释了此类型对象的基本属性。 
 
 | 属性                        | 类型                         | 说明                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
-| `id`                            |`String`                      | 内访问审阅决策的 id。                                                                                     |
-| `accessReviewId`                |`String`                      | 功能生成访问审阅的 id。                                                                                       |
+| `id`                            |`String`                      | 访问评审中决策的 id。                                                                                     |
+| `accessReviewId`                |`String`                      | 功能生成的访问评审的 id。                                                                                       |
 | `reviewedBy`                    |[userIdentity](useridentity.md)| 审阅者的标识。                                                                                       |
-| `reviewedDate`                  |`DateTimeOffset`              | 提供的日期和时间，此最新的审阅访问权限。                                                                         |
-| `reviewResult`                  |`String`                      | 审阅结果。                                                                                    |
-| `justification`                 |`String`                      | 审阅者的业务理由，如果提供。                                                                         |
-| `appliedBy`                     |[userIdentity](useridentity.md)| 审阅完成后，如果已手动应用的结果，应用决策的用户的用户标识。                                                           |
-| `appliedDateTime`               |`DateTimeOffset`              | 日期和时间时应用的审阅决策。                                                          |
-| `applyResult`                   |`String`                      | 应用的决策，之一的结果`NotApplied`， `Success`， `Failed`，`NotFound`或`NotSupported`。                      |
-| `accessRecommendation`          |`String`                      | 显示给审阅者，之一功能-生成建议`Approve`，`Deny`或`NotAvailable`。 |
+| `reviewedDate`                  |`DateTimeOffset`              | 提供此访问权限最近一次审阅的日期和时间。                                                                         |
+| `reviewResult`                  |`String`                      | 评审的结果。                                                                                    |
+| `justification`                 |`String`                      | 审阅者的业务理由 (如果提供)。                                                                         |
+| `appliedBy`                     |[userIdentity](useridentity.md)| 当评审完成时, 如果手动应用了结果, 则为应用决策的用户的用户标识。                                                           |
+| `appliedDateTime`               |`DateTimeOffset`              | 应用评审决策的日期和时间。                                                          |
+| `applyResult`                   |`String`                      | 应用`NotApplied`决策、 `Success` `Failed`、、 `NotFound`或`NotSupported`的结果。                      |
+| `accessRecommendation`          |`String`                      | 向审阅者、 `Approve` `Deny`或`NotAvailable`之一显示的功能生成的建议。 |
 
 
-此外，其他属性可能会出现根据拥有已决定的访问权限的对象的对象类型。  例如，如果访问检查决策为特定用户的组成员身份或应用程序访问，可能要让他们要删除的访问权限的用户被标识通过这些属性：
+此外, 还可能会出现其他属性, 具体取决于拥有所决定的访问权限的对象的对象类型。  例如, 如果访问审核决策是特定用户的组成员身份或应用程序访问权限, 则可以通过以下属性来标识可能要删除其访问权限的用户:
 
 | 属性                        | 类型                         | 说明                                                                                            |
 | :------------------------------ | :-----------------------     | :----------------------------------------------------------------------------------------------------- |
-| `userId`                            |`String`                      | 已检查其访问权限的用户的 id。                                                                                    |
-| `userDisplayName`                            |`String`                      | 已检查其访问权限的用户的显示名称。                                                                                     |
-| `userPrincipalName`                            |`String`                      | 已检查其访问权限的用户的用户主体名称。                                                                                     |
+| `userId`                            |`String`                      | 已查看其访问权限的用户的 id。                                                                                    |
+| `userDisplayName`                            |`String`                      | 已查看其访问权限的用户的显示名称。                                                                                     |
+| `userPrincipalName`                            |`String`                      | 已查看其访问权限的用户的用户主体名称。                                                                                     |
 
 
 
 ## <a name="relationships"></a>关系
 
-无。  可以使用[accessReview](accessreview.md)对象的[决策](../api/accessreview-listdecisions.md)和[mydecisions](../api/accessreview-listmydecisions.md)关系访问查看从检索此类型的对象。
+无。  通过使用[accessReview](accessreview.md)对象的[决策](../api/accessreview-listdecisions.md)和[mydecisions](../api/accessreview-listmydecisions.md)关系, 可以从访问审核中检索此类型的对象。
 
 ## <a name="see-also"></a>另请参阅
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列表 accessReview 决策](../api/accessreview-listdecisions.md) |      [accessReviewDecision](accessreviewdecision.md)集合| 获取 accessReview 的决策。|
-|[列出我 accessReview 决策](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md)集合| 审阅者，以获取 accessReview 我决策。|
+|[列出 accessReview 决策](../api/accessreview-listdecisions.md) |      [accessReviewDecision](accessreviewdecision.md)集合| 获取 accessReview 的决策。|
+|[列出我的 accessReview 决策](../api/accessreview-listmydecisions.md) |     [accessReviewDecision](accessreviewdecision.md)集合| 作为审阅者, 请 accessReview 的决策。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: dac616314626f3acd5a88e6bc88755a3051f43fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524847"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539015"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>更新 plannerAssignedToTaskBoardTaskFormat
 
@@ -41,8 +41,8 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|使用任务板的 AssignedTo 视图上的顺序任务提示的字典。 每个条目的键是一个任务分配给用户，值为 order 提示。 中定义的每个值的格式 [计划程序中使用订单提示 (.../ resources/planner_order_hint_format.md)。|
-|unassignedOrderHint|String|提示值已使用任务的任务板 AssignedTo 视图时任务未分配给任何人，或 orderHintsByAssignee 词典不提供 order 提示用户任务分配给。 [使用规划器中的顺序提示](../resources/planner-order-hint-format.md)中定义格式。|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|用于对任务板的 "分配" 视图上的任务进行排序的提示的字典。 每个条目的键是任务分配到的用户之一, 值是 order 提示。 每个值的格式在 [使用 Planner 中的排序提示] (.。/resources/planner_order_hint_format.md)。|
+|unassignedOrderHint|字符串|在任务未分配给任何人时, 或者如果 orderHintsByAssignee 字典没有为任务分配到的用户提供 order 提示, 用于在任务板的 "分配给" 视图中对任务进行排序的提示值。 格式是在计划程序[中使用 order 提示](../resources/planner-order-hint-format.md)定义的。|
 
 ## <a name="response"></a>响应
 

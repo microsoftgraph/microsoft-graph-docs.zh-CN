@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c2e06522680085502e3007dd4863bd703c4bed44
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793558"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550544"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>deviceManagementSettingDefinition 资源类型
 
@@ -31,13 +31,13 @@ ms.locfileid: "31793558"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设置定义的 ID|
+|id|字符串|设置定义的 ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|值的数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
 |displayName|String|设置的显示名称|
 |isTopLevel|布尔值|如果设置是顶级的, 则可以对其进行配置, 而无需将其包装在集合或复杂设置中|
 |description|String|设置的说明|
 |documentationUrl|String|设置文档的 Url|
-|keywords|String 集合|与设置相关联的关键字|
+|keywords|String collection|与设置相关联的关键字|
 |施加|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)集合|设置值的约束集合|
 |依|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)集合|对其他设置的依赖项的集合|
 

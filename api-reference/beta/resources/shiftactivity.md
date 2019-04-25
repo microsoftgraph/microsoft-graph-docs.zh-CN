@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0a5b877c2c24d1764e9badb44dab1f25143c2dce
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657523"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583779"
 ---
 # <a name="shiftactivity-resource-type"></a>shiftActivity 资源类型
 
@@ -21,8 +21,8 @@ ms.locfileid: "30657523"
 | 属性                         | 类型                    | 说明                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
 | isPaid               | `bool`                  | 指示是否`microsoft.graph.user`应在其`shift`期间向活动付款。 必需。    |
-| startDateTime               | `DateTimeOffset`                  | 的开始日期和时间`shiftActivity`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如, 2014 年1月1日午夜 UTC 将如下所示: "2014-01-01T00:00: 00Z"。 必需。 |
-| endDateTime               | `DateTimeOffset`                  | 的结束日期和时间`shiftActivity`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如, 2014 年1月1日午夜 UTC 将如下所示: "2014-01-01T00:00: 00Z"。 必需。    |
+| startDateTime               | `DateTimeOffset`                  | 的开始日期和时间`shiftActivity`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必需。 |
+| endDateTime               | `DateTimeOffset`                  | 的结束日期和时间`shiftActivity`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必需。    |
 | code               | `string`                  | 的客户定义的代码`shiftActivity`。 必需。    |
 | displayName               | `string`                  | 的名称`shiftActivity`。 此为必需属性。    |
 

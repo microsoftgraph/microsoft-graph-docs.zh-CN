@@ -3,11 +3,11 @@ title: 获取照片
 description: 获取指定的 profilePhoto 或其元数据（**profilePhoto** 属性）。
 localization_priority: Priority
 ms.openlocfilehash: 55bdf01515f654eb1622703f9b846de840bc5611
-ms.sourcegitcommit: bf3d0c94faeb206f9f986423a436fb355acd54c1
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31751555"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538555"
 ---
 # <a name="get-photo"></a>获取照片
 

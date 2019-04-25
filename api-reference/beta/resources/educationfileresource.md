@@ -1,26 +1,26 @@
 ---
 title: educationFileResource 资源类型
-description: EducationResource 代表相关联的工作分配或提交文件对象的一个子类。  在这种情况下，文件不是一个特殊的文件 （Word、 Excel 和等等），但没有在系统中的特殊处理文件。 文件资源必须存储在与工作分配或提交此资源附加到关联的**资源**。
+description: 代表与分配或提交相关联的 file 对象的 educationResource 的子类。  在这种情况下, 该文件不是特殊文件 (Word、Excel 等) 之一, 而是在系统中没有特殊处理的文件。 文件资源必须存储在与此资源附加到的工作分配或提交相关联的**resourceFolder**中。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 15ca31576618f15e64b85d860077785160c25989
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520793"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542851"
 ---
 # <a name="educationfileresource-resource-type"></a>educationFileResource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)代表相关联的工作分配或提交文件对象的一个子类。  在这种情况下，文件不是一个特殊的文件 （Word、 Excel 和等等），但没有在系统中的特殊处理文件。 文件资源必须存储在与工作分配或提交此资源附加到关联的**资源**。
+代表与分配或提交相关联的 file 对象的[educationResource](educationresource.md)的子类。  在这种情况下, 该文件不是特殊文件 (Word、Excel 等) 之一, 而是在系统中没有特殊处理的文件。 文件资源必须存储在与此资源附加到的工作分配或提交相关联的**resourceFolder**中。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|FileURL|String|在磁盘上的文件资源的位置。|
+|fileUrl|String|文件资源在磁盘上的位置。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

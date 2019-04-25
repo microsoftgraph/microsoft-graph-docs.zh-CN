@@ -5,11 +5,11 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 3ed6feeeb14203b33138b4ac551db8f29bd4a1a5
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904061"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521778"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>从云解决方案提供商应用程序中调用 Microsoft Graph
 

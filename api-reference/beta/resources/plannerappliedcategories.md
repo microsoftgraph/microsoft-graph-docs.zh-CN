@@ -1,24 +1,25 @@
 ---
 title: plannerAppliedCategories 资源类型
-description: '**AppliedCategoriesCollection**资源代表已应用于任务类别 （或标签） 的集合。 它是 plannerTask 对象的一部分。'
+description: '**AppliedCategoriesCollection**资源表示已应用于任务的类别 (或标签) 的集合。 它是 plannerTask 对象的一部分。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: b4e3ae92d179669d449d33c34ade4ae4476570fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517664"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541344"
 ---
 # <a name="plannerappliedcategories-resource-type"></a>plannerAppliedCategories 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**AppliedCategoriesCollection** 资源表示已应用于任务的类别（或标签）的集合。她是 [plannerTask](plannertask.md) 对象的组成部分。最多可向一个任务应用 6 个类别。类别说明，例如 `category1`、`category2` 等，是[计划详细信息](plannerplandetails.md)对象的组成部分。它是开放类型。
+**AppliedCategoriesCollection**资源表示已应用于任务的类别 (或标签) 的集合。 它是[plannerTask](plannertask.md)对象的一部分。
+最多可以将6个类别应用于一个任务。 类别说明 (如`category1` `category2`等) 是 "[计划详细信息](plannerplandetails.md)" 对象的一部分。 这是开放类型。
 
 ## <a name="properties"></a>属性
-开放类型的属性可以由客户端定义。但是在这种情况下，在任务上应用相应的类别时客户端必须将 `category1`、`category2`、`category3`、`category4`、`category5` 和/或 `category6` 作为属性，且其值要为 `true` 布尔值。下面是一个示例。不应用这些类别时，则将属性值设置为 `false` 布尔值来自动删除属性。 
+可由客户端定义打开类型的属性。 但在这种情况下, 客户端`category1`必须`category2`提供`category3`、 `category4`、 `category5` 、和/ `category6`或属性值作为属性, 当`true`对该任务应用相应的类别时, 这些属性的值为 boolean。 示例如下所示。 如果它们不适用, 则通过将属性值设置为`false`布尔值来自动删除属性。 
 
 ## <a name="json-representation"></a>JSON 表示形式
 

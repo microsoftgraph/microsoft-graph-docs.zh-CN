@@ -1,19 +1,19 @@
 ---
-title: 列表同步作业
-description: 列出现有作业的给定应用程序实例 （服务主体）。
+title: 列出同步作业
+description: 列出给定应用程序实例 (服务主体) 的现有作业。
 localization_priority: Normal
 ms.openlocfilehash: 265b1f5a32239173154ef51077d59f3104ad03b3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518959"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545140"
 ---
-# <a name="list-synchronization-jobs"></a>列表同步作业
+# <a name="list-synchronization-jobs"></a>列出同步作业
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出现有作业的给定应用程序实例 （服务主体）。
+列出给定应用程序实例 (服务主体) 的现有作业。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,12 +42,12 @@ GET /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[synchronizationJob](../resources/synchronization-synchronizationjob.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[synchronizationJob](../resources/synchronization-synchronizationjob.md)对象集合。
 
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 <!-- {
   "blockType": "request",
   "name": "get_jobs"
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。 
+响应示例如下所示。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 

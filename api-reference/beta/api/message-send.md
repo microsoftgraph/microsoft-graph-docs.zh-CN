@@ -1,15 +1,15 @@
 ---
 title: 邮件：发送
-description: 在草稿文件夹发送邮件。 草稿消息可以是新的邮件草稿、 答复草稿、 全部答复草稿或
+description: 在草稿箱文件夹中发送邮件。 草稿邮件可以是新邮件草稿、回复草稿、全部答复草稿或
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 5e7689e2b0bdd07c1739b4d3f640eb71b8dd0a35
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516593"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540413"
 ---
 # <a name="message-send"></a>邮件：发送
 
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Length | 数字 | 0。 被必需。 |
+| Content-Length | 数字 | 0. 必需。 |
 
 ## <a name="request-body"></a>请求正文
 

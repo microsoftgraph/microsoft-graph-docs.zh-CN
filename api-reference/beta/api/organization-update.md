@@ -5,17 +5,17 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 090be61f98ecd8f55a5e1a9edfe45bf7b39f23de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526842"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539755"
 ---
 # <a name="update-organization"></a>更新组织
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新当前经过身份验证的组织的属性。 在这种情况下，`organization`指一准确按照一条记录上，因此必须请求中指定其**ID** 。  **ID**是也称为组织**tenantId** 。
+更新当前经过身份验证的组织的属性。 在这种情况`organization`下, 将定义为恰好一个记录的集合, 因此必须在请求中指定其**ID** 。  该**ID**也称为组织的**tenantId** 。
 
 ## <a name="permissions"></a>权限
 
@@ -47,13 +47,13 @@ PATCH /organization/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|String 集合|                                        **注意：** 不可为 null。            |
+|marketingNotificationEmails|String collection|                                        **注意：** 不可为 null。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|组织的隐私配置文件（设置 statementUrl 和 contactEmail）。            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String 集合||
-|technicalNotificationMails|String 集合|                                        **注意：** 不可为 null。            |
+|technicalNotificationMails|String collection|                                        **注意：** 不可为 null。            |
 
-由于**组织**资源支持[扩展](/graph/extensibility-overview)，您可以使用`PATCH`操作添加、 更新或删除您自己的扩展现有**组织**实例中的自定义属性中的特定于应用程序的数据。
+由于**组织**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用该`PATCH`操作在现有**组织**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
 
 ## <a name="response"></a>响应
 

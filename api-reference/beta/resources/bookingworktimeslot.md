@@ -5,24 +5,24 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: a193843617d5acc7e18d8a06993a1629b80762be
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513786"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543708"
 ---
 # <a name="bookingworktimeslot-resource-type"></a>bookingWorkTimeSlot 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-用于开始和结束时间。
+工作的开始和结束时间。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|end|TimeOfDay|工作开始的时间。 例如，08:00:00.0000000。|
-|start|TimeOfDay|工作停止的时间。 例如，17:00:00.0000000。|
+|end|TimeOfDay|一天中开始工作的时间。 例如, 08:00: 00.0000000。|
+|start|TimeOfDay|一天中停止工作的时间。 例如, 17:00: 00.0000000。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

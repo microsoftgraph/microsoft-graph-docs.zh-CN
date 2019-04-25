@@ -3,11 +3,11 @@ title: Microsoft Graph 错误响应和资源类型
 description: "  "
 localization_priority: Priority
 ms.openlocfilehash: 6e38985732c95cf928e78aad62d569134c19d8ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526124"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Microsoft Graph 错误响应和资源类型
 

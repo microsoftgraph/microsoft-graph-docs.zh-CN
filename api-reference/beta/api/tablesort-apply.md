@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: f2279109f83758958cb00940604854c4edeecd45
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523440"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544566"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -43,7 +43,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|fields|SortField|作为排序依据的条件列表。|
+|域|SortField|作为排序依据的条件列表。|
 |matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
 |方法|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
 

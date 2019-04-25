@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: azure-ad
 ms.openlocfilehash: a03ca03e0b7105c8f07347f6ed52aa322a6fd090
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342287"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583107"
 ---
 # <a name="targetresource-resource-type"></a>targetResource 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30342287"
 |:---------------|:--------|:----------|
 |id|字符串|指示资源的唯一 ID。|
 |displayName|String|指示为资源定义的可见名称。 通常是在创建资源时指定的。|
-|type|字符串|描述资源类型。  示例值包括`Application`、 `Group`、 `ServicePrincipal`和`User`。|
+|type|String|描述资源类型。  示例值包括`Application`、 `Group`、 `ServicePrincipal`和`User`。|
 |userPrincipalName|String|当 "**类型**" 设置`User`为时, 这包括启动操作的用户名;`null`对于其他类型。|
 |groupType|String|当 "**类型**" 设置`Group`为时, 这表示组类型。|
 |ModifiedProperties|[modifiedProperty](modifiedproperty.md)集合|指示已更改的每个属性的名称、旧值和新值。 属性值取决于操作**类型**。|

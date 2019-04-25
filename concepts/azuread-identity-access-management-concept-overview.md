@@ -4,11 +4,11 @@ description: 'Azure Active Directory (Azure AD) 有助于集中化标识和访�
 author: jackson-woods
 localization_priority: Priority
 ms.openlocfilehash: 634b2c806065f6e1b7cd2a0f2aca41cfdb2aa7fb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871503"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570255"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD 标识和访问管理 API 概述
 

@@ -4,11 +4,11 @@ description: 检索订阅的属性和关系。
 localization_priority: Normal
 author: piotrci
 ms.openlocfilehash: c73f01a65a2b81bfa34818f9a7a96f754501bd65
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163467"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545171"
 ---
 # <a name="get-subscription"></a>获取订阅
 
@@ -25,10 +25,10 @@ ms.locfileid: "30163467"
 |[联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md)（用户的个人 OneDrive） | 不支持 | Files.ReadWrite | 不支持 |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | 不支持 | Files.ReadWrite.All |
-|[事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 |[组对话](../resources/conversation.md) | Group.Read.All | 不支持 | 不支持 |
-|[邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 |安全[警报](../resources/alert.md) | SecurityEvents.ReadWrite.All | 不支持 | SecurityEvents.ReadWrite.All |
 |[用户](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 

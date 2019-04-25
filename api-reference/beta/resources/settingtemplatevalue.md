@@ -1,28 +1,28 @@
 ---
 title: settingTemplateValue 资源类型
-description: 如果该设置未被实例化，则表示单独的模板设置定义，包括设置的默认值。
+description: 表示单个模板设置定义, 包括设置的默认值 (如果未实例化设置)。
 localization_priority: Normal
 ms.openlocfilehash: 80b640419eb2084888dcd6887ece54b4fd4bdf3c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528009"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583675"
 ---
 # <a name="settingtemplatevalue-resource-type"></a>settingTemplateValue 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-如果该设置未被实例化，则表示单独的模板设置定义，包括设置的默认值。
+表示单个模板设置定义, 包括设置的默认值 (如果未实例化设置)。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|defaultValue|string|设置的默认值。 只读。|
+|默认|string|设置的默认值。 只读。|
 |说明|string|设置的说明。 只读。|
 |name|string|设置的名称。 只读。|
-|type|字符串|设置的类型。 只读。|
+|类型|string|设置的类型。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

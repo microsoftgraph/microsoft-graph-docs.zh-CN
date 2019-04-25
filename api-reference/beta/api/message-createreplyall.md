@@ -1,15 +1,15 @@
 ---
 title: 'message: createReplyAll'
-description: '创建包含评论或更新任何消息属性的全部答复邮件草稿 '
+description: '创建 "全部答复" 邮件的草稿, 以包含注释或更新任何邮件属性。 '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 8d42517daa5c8242f28c6dfb3cb4d508b2667ed5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528576"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540525"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -19,9 +19,9 @@ ms.locfileid: "29528576"
 
 **注意**
 
-- 您可以指定注释或的**body**属性`message`参数。 如果同时指定将返回 HTTP 400 错误请求出错。
-- 如果**回复**属性指定在原始邮件中，每个 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822))，您应发送给收件人的答复  
-**回复**和**toRecipients**属性，并不**从**和**toRecipients**属性中的收件人。 
+- 您可以指定`message`参数的注释或**body**属性。 同时指定这两个将返回 HTTP 400 错误的请求错误。
+- 如果在原始邮件中指定了**replyTo**属性 (根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822))), 则应将答复发送给收件人  
+**replyTo**和**toRecipients**属性, 而不是**from**和**toRecipients**属性中的收件人。 
 
 
 ## <a name="permissions"></a>权限
@@ -53,14 +53,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[message](../resources/message.md)|全部答复邮件中更新任何可写属性。|
+|message|[邮件](../resources/message.md)|全部在答复邮件中更新的可写属性。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。
 
 ## <a name="example"></a>示例
-下面的示例草稿答复所有，并将附件和批注添加一个**createReplyAll**呼叫中的所有。
+下面的示例创建一个草稿以全部答复, 并在一个**createReplyAll**调用中添加附件和批注。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {

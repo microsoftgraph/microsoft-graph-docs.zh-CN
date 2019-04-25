@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: File
+title: 文件
 localization_priority: Normal
 ms.openlocfilehash: 219398ea62b825797479bef0b7a2bf52d014c8c0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480404"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547632"
 ---
 # <a name="file-resource-type"></a>File 资源类型
 

@@ -1,19 +1,19 @@
 ---
 title: 'event: tentativelyAccept'
-description: 暂时接受用户日历中的指定的事件。
+description: 暂时接受用户日历中的指定事件。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 0ab714f4f80702dd99be0dde80c9caf307c5c14c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957674"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584325"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
-暂时接受用户[日历](../resources/calendar.md)中指定的[事件](../resources/event.md)。
+暂时接受用户[日历](../resources/calendar.md)中的指定[事件](../resources/event.md)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,7 +54,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|响应中包含的文本。可选。|
-|sendResponse|布尔|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
+|sendResponse|Boolean|如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。|
 
 ## <a name="response"></a>响应
 

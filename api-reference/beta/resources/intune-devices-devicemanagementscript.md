@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6599f0dbc083859bef4f7a334d36fdcdfa63ee86
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801594"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578013"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript 资源类型
 
@@ -32,18 +32,18 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备管理脚本的唯一标识符。|
-|displayName|String|设备管理脚本的名称。|
-|description|String|设备管理脚本的可选说明。|
+|id|字符串|设备管理脚本的唯一标识符。|
+|displayName|字符串|设备管理脚本的名称。|
+|说明|String|设备管理脚本的可选说明。|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|脚本运行的间隔。 如果未定义, 脚本将运行一次|
 |scriptContent|Binary|脚本内容。|
 |createdDateTime|DateTimeOffset|设备管理脚本的创建日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改设备管理脚本的日期和时间。|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
-|enforceSignatureCheck|布尔值|指示是否需要检查脚本签名。|
+|enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String 集合|此 PowerShellScript 实例的范围标记 id 的列表。|
-|runAs32Bit|布尔值|一个指示 PowerShell 脚本是否应作为32位运行的值|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 id 的列表。|
+|runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

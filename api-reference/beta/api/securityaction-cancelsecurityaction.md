@@ -4,12 +4,12 @@ description: 取消安全操作。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 1b37563ffde274944dc877482602c36d2bf3a4bd
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: be737b6c1f6a8421cc87a7dd8efc222b48d7c078
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366950"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545667"
 ---
 # <a name="securityaction-cancelsecurityaction"></a>securityAction: cancelSecurityAction
 
@@ -23,9 +23,9 @@ ms.locfileid: "30366950"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | SecurityActions |
+| 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | SecurityActions |
+| 应用程序                            | SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 

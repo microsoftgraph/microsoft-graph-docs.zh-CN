@@ -5,23 +5,23 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 2bacba09167724935123becbb5d8194385b5b215
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643424"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537579"
 ---
 # <a name="get-sectiongroup"></a>获取 sectionGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 [sectionGroup](../resources/sectiongroup.md) 对象的属性和关系。
+检索[sectionGroup](../resources/sectiongroup.md)对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
+|委派（工作或学校帐户） | 注意: Create、notes、read、read. all、all、all    |
 |委派（个人 Microsoft 帐户） | Notes.Create、Notes.Read、Notes.ReadWrite    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
@@ -36,13 +36,13 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-默认查询展开 `parentNotebook`，并选择其 `id`、`name` 和 `self` 属性。分区组的有效 `expand` 值为 `parentNotebook` 和`parentSectionGroup`。
+默认查询将展开`parentNotebook`并选择其`id`、 `name`和`self`属性。 节`expand`组的有效值为`parentNotebook`和`parentSectionGroup`。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Accept | string | `application/json` |
+| 接受 | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

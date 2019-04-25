@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 01fd069173fff1a7a6868f1596326fcb44d77fb7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932271"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550117"
 ---
 # <a name="list-photos"></a>List photos
 检索 [profilePhoto](../resources/profilephoto.md) 对象列表。
@@ -21,7 +21,7 @@ ms.locfileid: "27932271"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用 | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All |
+|应用程序 | Group.ReadBasic.All、Group.Read.All、Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -55,8 +55,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/photos
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

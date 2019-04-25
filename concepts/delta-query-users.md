@@ -4,11 +4,11 @@ description: Delta 查询可通过调用一系列 delta 函数查询用户的添
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: b4f79951f79393e22c40ef9a4f55e29e0145ccea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850475"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526333"
 ---
 # <a name="get-incremental-changes-for-users"></a>获取用户的增量更改
 

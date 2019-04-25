@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: d1c6621e16d548b24cba264cb0434c5ea5dbd290
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869251"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539633"
 ---
 # <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
 

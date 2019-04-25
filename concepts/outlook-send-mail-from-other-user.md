@@ -6,11 +6,11 @@ localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
 ms.openlocfilehash: 44ddc4e4f9e7c535610bbd29fcc71eea8bfa8ee9
-ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "29892489"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558020"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>从其他用户身份发送 Outlook 邮件
 

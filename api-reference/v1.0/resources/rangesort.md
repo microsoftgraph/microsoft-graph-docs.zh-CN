@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 6d1fb0be3feae69ff2cae34f360a0f78d46a6172
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947573"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579506"
 ---
 # <a name="rangesort-resource-type"></a>RangeSort 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "27947573"
 ## <a name="properties"></a>属性
 无
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式

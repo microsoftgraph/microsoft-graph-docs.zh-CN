@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 192a1b3dbcad17415f260670075f5970632687fb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790037"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534029"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>列出 activeDirectoryWindowsAutopilotDeploymentProfiles
 

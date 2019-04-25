@@ -5,11 +5,11 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: dc1bdcacad4196b9903ebb41b40c6c86b81b317c
-ms.sourcegitcommit: 1089e82254068556b0d0c7be45e3270e46c961e6
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "30546000"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521738"
 ---
 # <a name="get-access-tokens-to-call-microsoft-graph"></a>获取访问令牌以调用 Microsoft Graph
 
@@ -184,7 +184,7 @@ Azure AD 文档包含尤其关注使用 Azure AD 进行身份验证和授权的�
 
 - [Azure AD v2.0 终结点文档](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)是最容易开始的地方。本文包含概述链接、协议文档以及适用于所有按正在开发的应用类型组织的不同平台的入门文章。 
 - 有关按客户端或服务器身份验证库列出的示例，请参阅 [Azure Active Directory v2.0 身份验证库](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries)。 
-- 也可以通过 [Azure 代码库](https://azure.microsoft.com/resources/samples/?service=active-directory)中的平台浏览 Azure AD 示例。 注意：你无法根据终结点版本限定搜索。 
+- 也可以通过 [Azure 代码库](https://azure.microsoft.com/resources/samples/?service=active-directory)中的平台浏览 Azure AD 示例。注意：你无法根据终结点版本限定搜索。 
 
 对于 Azure AD 终结点： 
 

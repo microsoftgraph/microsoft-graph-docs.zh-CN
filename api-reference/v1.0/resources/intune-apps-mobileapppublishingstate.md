@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0b0823576dd1792b01193d600cdebbe171b47052
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263390"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557836"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState 枚举类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30263390"
 |:---|:---|:---|
 |notPublished|0|应用尚未发布。|
 |处理|1|应用程序正在等待服务端处理。|
-|已发布|双面|应用程序已发布。|
+|发布|2 |应用程序已发布。|
 
 
 

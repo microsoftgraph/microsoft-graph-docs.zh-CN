@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 46a51d0a1d4bea5cebc4c3178f6776d80f313fbd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922730"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579007"
 ---
 # <a name="group-renew"></a>group: renew
 
@@ -24,7 +24,7 @@ ms.locfileid: "27922730"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.ReadWrite.All 或 Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持 |
-|应用程序 | Group.ReadWrite.All 或 Directory.ReadWrite.All |
+|Application | Group.ReadWrite.All 或 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

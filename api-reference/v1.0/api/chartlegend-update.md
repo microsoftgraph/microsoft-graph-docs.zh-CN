@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: bdd765cebe86015bdd01ef42c9db829a89c7749f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930255"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579928"
 ---
 # <a name="update-chartlegend"></a>更新 chartlegend
 
@@ -39,13 +39,13 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/legend
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|overlay|boolean|表示图表图例是否应该与图表主体重叠的布尔值。|
-|position|string|代表图表上图例的位置。 可能的值为： `Top`， `Bottom`， `Left`， `Right`， `Corner`， `Custom`。|
-|visible|boolean|表示 ChartLegend 对象的可见性的布尔值。|
+|overlay|布尔|表示图表图例是否应该与图表主体重叠的布尔值。|
+|position|string|表示图例在图表上的位置。 可能的值为: `Top`、 `Bottom`、 `Left` `Right`、、 `Corner`、 `Custom`。|
+|visible|布尔|表示 ChartLegend 对象的可见性的布尔值。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChartLegend](../resources/chartlegend.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookChartLegend](../resources/chartlegend.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

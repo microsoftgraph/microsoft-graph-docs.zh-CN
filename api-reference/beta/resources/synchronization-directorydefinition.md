@@ -1,32 +1,32 @@
 ---
 title: directoryDefinition 资源类型
-description: 提供有关目录和其对象的同步引擎信息。 此资源告知同步引擎，例如目录有对象名为**用户**和**组**，这些对象，并为这些属性的类型支持哪些属性。 为了参与同步规则和对象映射的对象和属性，必须作为目录定义的一部分定义它们。
+description: 提供有关目录及其对象的同步引擎信息。 此资源将告知同步引擎, 例如, 目录包含名为**user**和**group**的对象、支持这些对象的属性以及这些属性的类型。 为了使对象和属性参与同步规则和对象映射, 必须将它们定义为目录定义的一部分。
 localization_priority: Normal
 ms.openlocfilehash: 22ba4a7f3b5b5d3154ec6b3f5d42bd6f1b8f09d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508123"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582059"
 ---
 # <a name="directorydefinition-resource-type"></a>directoryDefinition 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供有关目录和其对象的同步引擎信息。 此资源告知同步引擎，例如目录有对象名为**用户**和**组**，这些对象，并为这些属性的类型支持哪些属性。 为了参与[同步规则](synchronization-synchronizationrule.md)和[对象映射](synchronization-objectmapping.md)的对象和属性，必须作为目录定义的一部分定义它们。
+提供有关目录及其对象的同步引擎信息。 此资源将告知同步引擎, 例如, 目录包含名为**user**和**group**的对象、支持这些对象的属性以及这些属性的类型。 为了使对象和属性参与[同步规则](synchronization-synchronizationrule.md)和[对象映射](synchronization-objectmapping.md), 必须将它们定义为目录定义的一部分。
 
-一般情况下，为[同步模板](synchronization-synchronizationtemplate.md)的一部分提供的默认[同步架构](synchronization-synchronizationschema.md)将定义最常用的对象和为该目录的属性。 但是，如果目录支持的自定义属性，您可能想要展开与您自己的自定义对象或属性的默认定义。 有关详细信息，请参阅[配置自定义属性同步](synchronization-configure-with-directory-extension-attributes.md)以及[与配置与目录的扩展属性](synchronization-configure-with-custom-target-attributes.md)。
+通常, 作为[同步模板](synchronization-synchronizationtemplate.md)的一部分提供的默认[同步架构](synchronization-synchronizationschema.md)将为该目录定义最常用的对象和属性。 但是, 如果目录支持添加自定义属性, 则可能需要使用自己的自定义对象或属性扩展默认定义。 有关详细信息, 请参阅[配置与自定义属性的同步](synchronization-configure-with-custom-target-attributes.md)和[配置与目录扩展属性的同步](synchronization-configure-with-directory-extension-attributes.md)。
 
-目录定义更新[同步架构](synchronization-synchronizationschema.md)的一部分。
+目录定义作为[同步架构](synchronization-synchronizationschema.md)的一部分进行更新。
 
 ## <a name="properties"></a>属性
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|id           |String     |目录标识符。 不可为 null。|
-|元数据       |metadataEntry 集合    |其他扩展属性。 除非明确提到，不应更改元数据值。|
-|name           |String     |目录的名称。 必须是唯一[同步架构](synchronization-synchronizationschema.md)中。 不可为 null。|
-|Objects        |[objectDefinition](synchronization-objectdefinition.md)集合    |目录支持的对象的集合。|
+|id           |字符串     |目录标识符。 不可为 null。|
+|metadata       |metadataEntry 集合    |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|
+|name           |String     |目录的名称。 在[同步架构](synchronization-synchronizationschema.md)中必须是唯一的。 不可为 null。|
+|对象        |[objectDefinition](synchronization-objectdefinition.md)集合    |目录支持的对象集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,31 +1,31 @@
 ---
 title: 创建开放扩展
-description: 创建 open 分机号 （openTypeExtension 对象），并添加自定义属性
+description: 创建开放扩展 (openTypeExtension 对象) 并添加自定义属性
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: a654d0bc48bc5f4f83be4adaf258fa3186914745
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539951"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建一个打开的扩展 （[openTypeExtension](../resources/opentypeextension.md)对象） 和支持的资源的新的或现有实例中添加自定义属性。
+创建开放扩展 ([openTypeExtension](../resources/opentypeextension.md)对象), 并在新的或现有的受支持的资源实例中添加自定义属性。
 
-> **注意：** 如果您正在创建在 Outlook 资源的打开扩展，请参阅[openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)**特定于 Outlook 的注意事项**。
+> **注意:** 如果要创建 outlook 资源的开放扩展, 请参阅[openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的**Outlook 特定注意事项**。
 
 ## <a name="permissions"></a>权限
 
-根据您正在创建中的扩展名的资源和权限类型 （委派或应用程序） 请求下, 表中所指定的权限是最小特权需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据要在其中创建扩展的资源以及请求的权限类型 (委派或应用程序), 下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.AccessAsUser.All | 不支持 | Device.ReadWrite.All |
-| [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [组](../resources/group.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
 | [组事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
@@ -38,7 +38,7 @@ ms.locfileid: "29642707"
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>在新资源实例中创建扩展插件
 
-使用同一 REST 请求您用于创建实例。
+使用您用于创建实例的相同 REST 请求。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,13 +49,13 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**注意：** 此语法演示创建支持的资源实例的一些常见方法。 允许您创建这些资源实例的所有其他 POST 语法支持创建打开扩展名中其方式类似。
+>**注意:** 此语法展示了创建受支持的资源实例的一些常见方法。 所有其他允许您创建这些资源实例的 POST 语法都支持以类似方式在其中创建开放扩展。
 
-若要了解如何在请求正文中添加新资源实例和扩展的属性，请参阅[请求正文](#request-body)部分。
+若要了解如何在请求正文中添加新资源实例[和扩展插件](#request-body)的属性，请参阅_请求正文_部分。
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>在现有资源实例中创建扩展插件
 
-在请求中标识资源实例，然后对 **extensions** 导航属性执行 `POST`。
+在请求中标识资源实例，然后对 `POST` 导航属性执行 ****。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -71,9 +71,9 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**注意：** 此语法演示来标识资源实例，以便在其中创建一个扩展的一些常见方法。 允许您确定这些资源实例的所有其他语法支持以类似方式在其中创建打开的扩展。
+>**注意:** 此语法显示了一些用于标识资源实例的常见方法, 以便在其中创建扩展。 允许您标识这些资源实例的所有其他语法都支持以类似方式在其中创建开放扩展。
 
-若要了解如何在请求正文中添加扩展，请参阅[请求正文](#request-body)部分。
+若要了解如何在请求正文中添加[扩展插件](#request-body)，请参阅_请求正文_部分。
 
 ## <a name="path-parameters"></a>路径参数
 
@@ -90,11 +90,11 @@ POST /users/{id|userPrincipalName}/extensions
 
 ## <a name="request-body"></a>请求正文
 
-与以下所需的名称 / 值对任何其他自定义数据提供[openTypeExtension](../resources/opentypeextension.md)，JSON 正文。 JSON 负载中的数据可以基元类型或基元类型的数组。
+提供具有以下必需的名称-值对和任何其他自定义数据的[openTypeExtension](../resources/opentypeextension.md)的 JSON 正文。 JSON 负载中的数据可以是基元类型或基元类型数组。
 
 | 名称       | 值 |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | OpenTypeExtension |
 | extensionName | %unique_string% |
 
 在_新_资源实例中创建扩展插件时，除了新的 **openTypeExtension** 对象之外，还要提供 JSON 表示形式的相关属性才能创建此类资源实例。
@@ -105,8 +105,8 @@ POST /users/{id|userPrincipalName}/extensions
 
 响应代码可以是 `201 Created`，也可以是 `202 Accepted`，具体视操作而定。
 
-当您创建一个使用您用于创建资源实例的相同操作的扩展时，操作将返回它返回使用该操作创建无扩展名的资源实例时的相同响应代码。
-请参阅创建的实例中，列出[上面](#create-an-extension-in-a-new-resource-instance)的相应主题。
+使用与创建资源实例相同的操作创建扩展时, 该操作将返回在使用操作创建资源实例而不带扩展时返回的响应代码。
+请参阅有关创建实例的相应主题，如[上 ](#create-an-extension-in-a-new-resource-instance)所列。
 
 ### <a name="response-body"></a>响应正文
 
@@ -127,7 +127,7 @@ POST /users/{id|userPrincipalName}/extensions
 
   - `Microsoft.Graph.OpenTypeExtension` 类型。
   - 扩展名“Com.Contoso.Referral”。
-  - 其他数据存储为 JSON 有效负载中的三个自定义属性： `companyName`， `expirationDate`，和`dealValue`。
+  - 要存储为 JSON 有效负载中的三个自定义属性的`companyName`其他`expirationDate`数据: `dealValue`、和。
 
 <!-- {
   "blockType": "request",
@@ -165,7 +165,7 @@ POST https://graph.microsoft.com/beta/me/messages
 
 下面是第一个示例的响应。响应正文包括新邮件的属性以及新扩展的以下属性：
 
-- 具有完全限定的名称 `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
+- 具有完全限定的名称 **** 的 `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral` 属性。
 - 请求中指定的默认属性 **extensionName**。
 - 请求中指定的作为 3 个自定义属性存储的自定义数据。
 
@@ -272,7 +272,7 @@ POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 下面是第二个示例的响应。请求正文包括新扩展的如下内容：
 
 - 默认属性 **extensionName**。
-- 具有完全限定的名称 `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
+- 具有完全限定的名称 **** 的 `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral` 属性。
 - 要存储的自定义数据。
 
 <!-- {

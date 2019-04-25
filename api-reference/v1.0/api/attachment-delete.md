@@ -3,11 +3,11 @@ title: 删除附件
 description: 从日历事件、电子邮件或组帖子中删除附件。
 localization_priority: Normal
 ms.openlocfilehash: f6ac2e60c9fdc8a224e22a49e6928cdc41e9730b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816994"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551461"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -15,9 +15,9 @@ ms.locfileid: "27816994"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 如果访问邮件中的附件： Mail.ReadWrite。
-* 如果访问事件中的附件： Calendars.ReadWrite。
-* 如果访问组文章中的附件： Group.ReadWrite.All。
+* 如果访问邮件中的附件: 邮件。
+* 如果访问事件中的附件: 日历. 读写。
+* 如果访问组帖子中的附件: group. 全部。
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All.
@@ -66,8 +66,7 @@ DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-[邮件](../resources/message.md)的用户的邮箱中[mailFolder](../resources/mailfolder.md)子文件夹中包含的附件。  下面的示例演示一个级别的嵌套，但一条消息可以位于子级的子级，依此类推。
-<!-- { "blockType": "ignored" } -->
+用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}

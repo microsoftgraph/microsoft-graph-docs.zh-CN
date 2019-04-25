@@ -1,26 +1,26 @@
 ---
 title: plannerRecentPlanReferenceCollection 资源类型
-description: '**PlannerRecentPlanReferenceCollection**资源代表最近已由用户查看的计划对引用的集合。 此资源是开放的类型，plannerUser 对象的一部分。 属性名称是相应计划的 ID。 属性值对中的值是 plannerRecentPlanReference 对象。'
+description: '**plannerRecentPlanReferenceCollection**资源表示对用户最近查看的计划的引用集合。 此资源是打开的类型, 并且是 plannerUser 对象的一部分。 属性名称是对应计划的 ID。 属性-值对中的值是 plannerRecentPlanReference 对象。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: e27375e3f2395b3528873d8b83f0b5aa6f48d52e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514990"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583177"
 ---
 # <a name="plannerrecentplanreferencecollection-resource-type"></a>plannerRecentPlanReferenceCollection 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerRecentPlanReferenceCollection**资源代表最近已由用户查看的计划对引用的集合。 此资源是开放的类型， [plannerUser](planneruser.md)对象的一部分。 属性名称是相应计划的 ID。 属性值对中的值是[plannerRecentPlanReference](plannerrecentplanreference.md)对象。
-集合的大小超过预先确定的最大值时，添加对新引用此集合将自动删除最早的项。
+**plannerRecentPlanReferenceCollection**资源表示对用户最近查看的计划的引用集合。 此资源是打开的类型, 并且是[plannerUser](planneruser.md)对象的一部分。 属性名称是对应计划的 ID。 属性-值对中的值是[plannerRecentPlanReference](plannerrecentplanreference.md)对象。
+如果将新的引用添加到此集合中, 则当集合的大小超过预先确定的最大值时, 将自动删除最旧的项。
 
 
 ## <a name="properties"></a>属性
-您可以定义此打开类型的属性。 属性名称是`id` [plannerPlan](plannerplan.md)资源的值和它们的值必须是[plannerRecentPlanReference](plannerrecentplanreference.md)对象。 在收藏夹列表中删除项目，设置对属性的值`null`。
+您可以定义此开放类型的属性。 属性名称是`id` [plannerPlan](plannerplan.md)资源的值, 它们的值必须是[plannerRecentPlanReference](plannerrecentplanreference.md)对象。 若要删除收藏夹列表中的项, 请将该属性的值设置`null`为。
 
 
 ## <a name="json-representation"></a>JSON 表示形式

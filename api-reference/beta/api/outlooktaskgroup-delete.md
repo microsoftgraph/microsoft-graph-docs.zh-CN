@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cfe3c88adf821ca8a5643cdafd5719b5fbb4d40e
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869433"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539975"
 ---
 # <a name="delete-outlooktaskgroup"></a>删除 outlookTaskGroup
 

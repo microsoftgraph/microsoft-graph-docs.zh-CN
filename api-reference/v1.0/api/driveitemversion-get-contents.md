@@ -4,11 +4,11 @@ description: 检索某个特定版本的 DriveItem 的内容。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: b6b1f8fbb840cba88f05cb30e2617ca23cb6ad1f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960838"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550446"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>下载 DriveItemVersion 资源的内容
 
@@ -47,7 +47,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 
 ## <a name="example"></a>示例
 
-本示例检索当前用户驱动器中的文件的版本。
+本示例检索当前用户驱动器中的文件版本。
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -73,7 +73,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive 不保留文件以前版本的完整元数据。
 
-当应用检索文件的可用版本列表时，将返回 [DriveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。
+当应用程序检索文件的可用版本列表时，将返回 [DriveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。
 
 <!-- {
   "type": "#page.annotation",

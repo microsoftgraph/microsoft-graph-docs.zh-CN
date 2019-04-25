@@ -1,24 +1,24 @@
 ---
 title: filterOperand 资源类型
-description: 包含的操作数值的集合。
+description: 包含操作数的值的集合。
 localization_priority: Normal
 ms.openlocfilehash: ab62477889cc92954ed308c508e18a638cd59375
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515375"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581805"
 ---
 # <a name="filteroperand-resource-type"></a>filterOperand 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-包含的操作数值的集合。
+包含操作数的值的集合。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|values|String 集合|值的集合。|
+|值|String collection|值的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

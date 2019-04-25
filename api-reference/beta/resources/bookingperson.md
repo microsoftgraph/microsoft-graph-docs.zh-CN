@@ -5,24 +5,24 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: be00e59e2378c454cd9c939f992376dd9c54c3b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508403"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543777"
 ---
 # <a name="bookingperson-resource-type"></a>bookingPerson 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-这是 Microsoft 预订业务，可以是[bookingCustomer](bookingcustomer.md)或[bookingStaffMember](bookingstaffmember.md)中的人员的基类型。
+这是 Microsoft 记帐企业中的人员的基本类型, 可以是[bookingCustomer](bookingcustomer.md)或[bookingStaffMember](bookingstaffmember.md)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|String|派生实体，哪些接口与客户的名称。|
+|displayName|字符串|派生实体的名称, 与客户进行交互。|
 |emailAddress|String|人员的电子邮件地址。|
-|id|字符串| 派生实体的 ID。 只读。|
+|id|String| 派生实体的 ID。 只读。|
 
 ## <a name="relationships"></a>关系
 无

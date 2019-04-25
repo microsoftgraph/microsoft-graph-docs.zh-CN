@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 11b38679916f85d9606989442ffb53e41c51c855
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342322"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542962"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
@@ -97,22 +97,22 @@ ms.locfileid: "30342322"
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
 |changeKey|String|邮件的版本。|
-|conversationId|String|电子邮件所属对话的 ID。|
+|conversationId|String|电子邮件所属的对话的 ID。|
 |conversationIndex|Binary|电子邮件所属对话的索引。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求的会议的结束时间。|
-|flag|[followUpFlag](followupflag.md)|指示状态、开始日期、截止日期或邮件的完成日期的标记值。|
+|flag|[followUpFlag](followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
 |发件人|[recipient](recipient.md)|邮箱所有者和邮件发件人。|
 |hasAttachments|Boolean|指示邮件是否包含附件。|
-|id|字符串||
+|id|字串符号||
 |importance|String| 邮件的重要性：`low`、`normal`、`high`。|
 |inferenceClassification|String| 可取值为：`focused`、`other`。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |邮件 ID 采用 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 指定的格式。 |
-|isAllDay |Boolean|指示事件是否持续一整天。 调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。|
-|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isAllDay |布尔|指示事件是否持续一整天。 调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。|
+|isDeliveryReceiptRequested|布尔值|指示是否需要发送邮件已读回执。|
 |isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isOutOfDate|Boolean|指示此会议请求是否已由较新的请求发出。|
+|isOutOfDate|布尔值|指示此会议请求是否已由较新的请求发出。|
 |isRead|Boolean|指示是否已阅读该邮件。|
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
@@ -127,7 +127,7 @@ ms.locfileid: "30342322"
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求的会议的开始时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
-|type|字符串|所需会议的类型: `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
+|类型|字符串|所需会议的类型: `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
 |uniqueBody|[itemBody](itembody.md)|当前邮件专用的邮件正文部分。|
 |UnsubscribeData|String|从 List-Unsubscribe 标头中解析的有效条目。若 UnsubscribeEnabled 属性为 true，则这是 List-Unsubscribe 标头中的邮件命令的数据。|
 |UnsubscribeEnabled|Boolean|指示邮件是否已启用取消订阅。若 list-Unsubscribe 标头符合 rfc-2369，则其值为 True。|
@@ -136,9 +136,9 @@ ms.locfileid: "30342322"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md)集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为空。|
+|attachments|[附件](attachment.md)集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
-|extensions|[extension](extension.md) 集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
+|extensions|[扩展](extension.md)集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 eventMessage 定义的多值扩展属性的集合。只读。可为 Null。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 eventMessage 定义的单值扩展属性的集合。只读。可为 Null。|
 
@@ -149,12 +149,12 @@ ms.locfileid: "30342322"
 |[获取 eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |读取 eventmessage 对象的属性和关系。|
 |[更新](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |更新 eventMessage 对象。|
 |[删除](../api/eventmessage-delete.md) | None |更新 eventMessage 对象。|
-|[copy](../api/message-copy.md)|[message](message.md)|将邮件复制到文件夹。|
-|[createForward](../api/message-createforward.md)|[message](message.md)|创建转发邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
-|[createReply](../api/message-createreply.md)|[message](message.md)|创建回复邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
-|[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|创建全部答复邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
+|[copy](../api/message-copy.md)|[邮件](message.md)|将邮件复制到文件夹。|
+|[createForward](../api/message-createforward.md)|[邮件](message.md)|创建转发邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
+|[createReply](../api/message-createreply.md)|[邮件](message.md)|创建回复邮件的草稿。然后，你可以 [更新](../api/message-update.md) 或 [发送](../api/message-send.md) 草稿。|
+|[createReplyAll](../api/message-createreplyall.md)|[邮件](message.md)|创建全部答复邮件的草稿。然后，可以[更新](../api/message-update.md)或[发送](../api/message-send.md)草稿。|
 |[转发](../api/message-forward.md)|无|转发邮件。然后邮件保存在已发送邮件文件夹中。|
-|[move](../api/message-move.md)|[message](message.md)|将邮件移到文件夹。此操作会在目标文件夹中新建邮件副本。|
+|[移动](../api/message-move.md)|[message](message.md)|将邮件移到文件夹。此操作会在目标文件夹中新建邮件副本。|
 |[回复](../api/message-reply.md)|无|答复邮件发件人然后邮件保存在已发送邮件文件夹中。|
 |[replyAll](../api/message-replyall.md)|无|答复邮件的所有收件人。然后邮件保存在已发送邮件文件夹中。|
 |[发送](../api/message-send.md)|无|发送以前创建的邮件草稿。然后邮件保存在已发送邮件文件夹中。|

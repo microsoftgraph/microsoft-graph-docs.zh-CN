@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5852e43e32b58a714e44dcbcad2a77e3f1999bf9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922933"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573373"
 ---
 # <a name="list-calendars"></a>列出日历
 

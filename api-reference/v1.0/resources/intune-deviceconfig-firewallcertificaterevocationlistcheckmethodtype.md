@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a475f32d4572b0aa8ed2a52befc7a58eb6077253
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257629"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541163"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>firewallCertificateRevocationListCheckMethodType 枚举类型
 
@@ -22,8 +22,8 @@ firewallCertificateRevocationListCheckMethod 的可能值
 |:---|:---|:---|
 |deviceDefault|0|没有由 Intune 配置的值, 请勿覆盖用户配置的设备默认值|
 |无|1|不检查证书吊销列表|
-|应试|双面|仅当支票确认证书时, 才尝试 CRL 检查并允许证书|
-|无须|第三章|在允许证书之前, 需要进行成功的 CRL 检查|
+|应试|2 |仅当支票确认证书时, 才尝试 CRL 检查并允许证书|
+|无须|3 |在允许证书之前, 需要进行成功的 CRL 检查|
 
 
 

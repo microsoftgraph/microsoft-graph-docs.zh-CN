@@ -5,11 +5,11 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 2aa153234f6fab60d020c115bc6e972168a4fa37
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640285"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545665"
 ---
 # <a name="create-page"></a>创建页面
 
@@ -93,8 +93,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意： 为了简单起见截断如下所示的响应对象。 将从实际调用中返回所有属性。
-<!-- { "blockType": "ignored" } -->
+下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

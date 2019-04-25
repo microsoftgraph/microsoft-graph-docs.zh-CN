@@ -1,25 +1,23 @@
 ---
 title: 创建页面
-description: 在默认笔记本的默认分区中新建 OneNote 页面。
+description: 在默认笔记本的默认分区中创建新的 OneNote 页面。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 9b8a48de889a0db5c6eea42fcbd64cae4ff23a43
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640810"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539968"
 ---
 # <a name="create-page"></a>创建页面
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+在默认笔记本的默认分区中创建新的 OneNote 页面。
 
-在默认笔记本的默认分区中新建 OneNote 页面。
+若要在默认笔记本的不同节中创建页面, 可以使用`sectionName`查询参数。  示例：`../onenote/pages?sectionName=My%20section`
 
-若要在默认笔记本的不同分区中创建页面，可以使用 `sectionName` 查询参数。示例：`../onenote/pages?sectionName=My%20section`
-
-`POST /onenote/pages` 操作仅用于在当前用户的默认笔记本中创建页面。如果你将其他笔记本作为目标，则可以[在指定分区中创建页面](../api/section-post-pages.md)。           
+该`POST /onenote/pages`操作仅用于在当前用户的默认笔记本中创建页面。 如果要将其他笔记本作为目标, 可以[在指定分区中创建页面](../api/section-post-pages.md)。           
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,23 +44,23 @@ POST /sites/{id}/onenote/pages
 | Content-Type | string | HTML 内容（包括多部分请求必备的“演示”部分）的 `text/html` 或 `application/xhtml+xml`。多部分请求使用 `multipart/form-data; boundary=your-boundary` 内容类型。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供页面的 HTML 内容。
+在请求正文中, 提供页面的 HTML 内容。
 
 正文可以将 HTML 直接置于请求正文中，或者其可以包含多部分消息格式，如示例中所示。如果要发送二进制数据，则必须发送多部分请求。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [page](../resources/page.md) 对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和新的[page](../resources/page.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 
-在 `../onenote/pages` 路径下，可以使用 `sectionName` 查询参数在默认笔记本的特定分区中创建页面。示例：`../onenote/pages?sectionName=My%20section`。如果分区不存在（或已重命名），API 将创建新的分区。
+在`../onenote/pages`路径中, 可以使用`sectionName`查询参数在默认笔记本的特定节中创建页面。 示例：`../onenote/pages?sectionName=My%20section`。 如果该节不存在 (或已重命名), API 将创建一个新分区。
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/me/onenote/pages
+POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
@@ -101,8 +99,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意： 为了简单起见截断如下所示的响应对象。 将从实际调用中返回所有属性。
-<!-- { "blockType": "ignored" } -->
+下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -127,15 +124,10 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create Page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/onenote-post-pages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

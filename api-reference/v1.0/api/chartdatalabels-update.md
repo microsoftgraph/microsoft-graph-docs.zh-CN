@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 44eb2888a878d71b04017198f3eae7bc8a637097
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571434"
 ---
 # <a name="update-chartdatalabels"></a>更新 chartdatalabels
 
@@ -39,18 +39,18 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|position|string|DataLabelPosition 值，它代表数据标签的位置。 可能的值为： `None`， `Center`， `InsideEnd`， `InsideBase`， `OutsideEnd`， `Left`， `Right`， `Top`， `Bottom`， `BestFit`， `Callout`。|
-|separator|string|表示用于图表中数据标签的分隔符的字符串。|
-|showBubbleSize|boolean|表示数据标签气泡大小是否可见的布尔值。|
-|showCategoryName|boolean|表示数据标签类别名称是否可见的布尔值。|
-|showLegendKey|boolean|表示数据标签图例标示是否可见的布尔值。|
-|showPercentage|boolean|表示数据标签百分比是否可见的布尔值。|
-|showSeriesName|boolean|表示数据标签系列名称是否可见的布尔值。|
-|showValue|boolean|表示数据标签值是否可见的布尔值。|
+|position|字符串|表示数据标签的位置的 DataLabelPosition 值。 可能的值为: `None`、 `Center`、 `InsideEnd` `InsideBase` `OutsideEnd` `Left` `Right` `Top` `Bottom`、、、、、、、、 `Callout` `BestFit`。|
+|Separator|string|表示用于图表中数据标签的分隔符的字符串。|
+|showBubbleSize|布尔|表示数据标签气泡大小是否可见的布尔值。|
+|showCategoryName|布尔|表示数据标签类别名称是否可见的布尔值。|
+|showLegendKey|布尔|表示数据标签图例标示是否可见的布尔值。|
+|showPercentage|布尔|表示数据标签百分比是否可见的布尔值。|
+|showSeriesName|布尔|表示数据标签系列名称是否可见的布尔值。|
+|showValue|布尔|表示数据标签值是否可见的布尔值。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChartDataLabels](../resources/chartdatalabels.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookChartDataLabels](../resources/chartdatalabels.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

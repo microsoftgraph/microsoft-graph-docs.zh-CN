@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 51815dffc0048ec88b81cbe6034a42e108e5b222
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803568"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550579"
 ---
 # <a name="ipv6range-resource-type"></a>iPv6Range 资源类型
 

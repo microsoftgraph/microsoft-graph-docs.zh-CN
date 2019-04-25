@@ -1,15 +1,15 @@
 ---
-title: List oauth2PermissionGrants
+title: 列出 oauth2PermissionGrants
 description: 检索 oauth2PermissionGrant 对象的列表。
 localization_priority: Normal
 ms.openlocfilehash: 9af84b4af64466658058259a665d426484511526
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643253"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540192"
 ---
-# <a name="list-oauth2permissiongrants"></a>List oauth2PermissionGrants
+# <a name="list-oauth2permissiongrants"></a>列出 oauth2PermissionGrants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ GET /oauth2PermissionGrants
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md)对象集合。
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求

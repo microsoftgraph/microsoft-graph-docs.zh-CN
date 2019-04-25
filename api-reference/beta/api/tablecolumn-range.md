@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 0ab03c35a11786c25b66a6d73b6001a130bd055b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526247"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544773"
 ---
 # <a name="tablecolumn-range"></a>TableColumn:Range
 

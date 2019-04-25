@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 22c5b959f87b6178fa406bc4fd5d00ad52e5cf55
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517482"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535241"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 
@@ -25,9 +25,9 @@ ms.locfileid: "29517482"
 |:---------------|:------------|:------------|
 |[Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | 获取已删除项目的属性。 |
 |[Restore deleted item](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| 还原最近删除的项目。 |
-|[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) 集合| 获取最近删除的项目列表。 |
+|[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) collection| 获取最近删除的项目列表。 |
 |[Permanently delete an item](../api/directory-deleteditems-delete.md) | 无 | 永久删除项目。 |
-|[由用户拥有的删除列表项](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) 集合 | 列出了由用户拥有的目录项。 |
+|[列出用户拥有的已删除项目](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 列出用户拥有的目录项。 |
 
 ## <a name="properties"></a>属性
 | 属性   | 类型 |说明|
@@ -37,7 +37,7 @@ ms.locfileid: "29517482"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|DeletedItems|[directoryObject](directoryobject.md) 集合| 最近删除的项目。 只读。 可为 NULL。|
+|DeletedItems|[directoryObject](directoryobject.md) 集合| 最近删除的项目。 此为只读属性。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

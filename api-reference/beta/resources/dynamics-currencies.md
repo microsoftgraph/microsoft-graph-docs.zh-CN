@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: c0d15b8d20e99537cb2f567a9f8fe12b45dbd389
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366625"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543068"
 ---
 # <a name="currencies-resource-type"></a>货币资源类型
 表示 Dynamics 365 Business Central 中使用的货币。
@@ -28,11 +28,11 @@ ms.locfileid: "30366625"
 | 属性              | 类型   |说明                                                   |
 |:----------------------|:-------|:-------------------------------------------------------------|
 |id                     |GUID    |货币的唯一 ID。 不可编辑。                  |
-|code                   |字符串  |指定货币代码。                                  |
+|code                   |string  |指定货币代码。                                  |
 |displayName            |string  |指定货币显示名称。                          |
 |符号                 |string  |指定在支票上显示的此货币符号。|
 |amountDecimalPlaces    |string  |指定系统将按此货币的金额显示的小数位数。|
-|amountRoundingPrecision|decimal |指定此货币的舍入金额时要使用的时间间隔的大小。|
+|amountRoundingPrecision|数位 |指定此货币的舍入金额时要使用的时间间隔的大小。|
 |lastModifiedDateTime   |datetime|修改了货币的最后一个日期/时间。 只读。       |  
 
 

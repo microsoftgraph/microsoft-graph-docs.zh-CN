@@ -1,21 +1,21 @@
 ---
 title: List messages
-description: 列出已登录的用户邮箱中的所有邮件或中指定的文件夹中的邮箱或驱动器的这些邮件。
+description: 列出登录用户的邮箱中的所有邮件, 或邮箱或驱动器中指定文件夹中的邮件。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 24f7a0792c264c059ea034e749e6683c0f9eb8c3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515396"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540683"
 ---
-# <a name="list-messages"></a>List messages
+# <a name="list-messages"></a>列出邮件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出已登录的用户邮箱中的所有邮件或中指定的文件夹中的邮箱或驱动器的这些邮件。
+列出登录用户的邮箱中的所有邮件, 或邮箱或驱动器中指定文件夹中的邮件。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

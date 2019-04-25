@@ -1,21 +1,21 @@
 ---
-title: 列表用户可传递 memberOf
-description: 获取组、 目录角色和管理单元的用户的成员。 此 API 请求是可传递，，，也将返回用户是嵌套的成员的所有组。
+title: 列出用户可传递的 memberOf
+description: 获取用户所属的组、目录角色和管理单元。 此 API 请求是可传递的, 并且还将返回用户是其嵌套成员的所有组。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b0681196b994e9a0c88a2b2d05e25e3166a5242f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528863"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547716"
 ---
-# <a name="list-user-transitive-memberof"></a>列表用户可传递 memberOf
+# <a name="list-user-transitive-memberof"></a>列出用户可传递的 memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取组、 目录角色和管理单元的用户的成员。 此 API 请求是可传递，，，也将返回用户是嵌套的成员的所有组。
+获取用户所属的组、目录角色和管理单元。 此 API 请求是可传递的, 并且还将返回用户是其嵌套成员的所有组。
 
 ## <a name="permissions"></a>权限
 
@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Accept  | application/json|
+| 接受  | application/json|
 
 ## <a name="request-body"></a>请求正文
 

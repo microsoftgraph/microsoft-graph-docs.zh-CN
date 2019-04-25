@@ -5,15 +5,13 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 578798cd73ffef061ca10718d7f3d7dd3adfcec5
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869272"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547709"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在用户的默认联系人文件夹下创建新的 contactFolder。
 
@@ -54,7 +52,7 @@ POST /users/{id | userPrincipalName}/contactFolders
   "name": "create_contactfolder_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/contactFolders
+POST https://graph.microsoft.com/v1.0/me/contactFolders
 Content-type: application/json
 Content-length: 84
 
@@ -85,15 +83,10 @@ Content-length: 104
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create ContactFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-post-contactfolders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

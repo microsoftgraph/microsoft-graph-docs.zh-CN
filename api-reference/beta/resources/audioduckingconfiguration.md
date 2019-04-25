@@ -1,32 +1,32 @@
 ---
 title: audioDuckingConfiguration 资源类型
-description: 参数放掉的其他源 （逐步注销其他源。）
+description: 其他源的 ducking 参数 (逐步淘汰 in 和其他来源。)
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: d61e4150250df25e020f45a65676d1c55c0e4c9d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522460"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544098"
 ---
 # <a name="audioduckingconfiguration-resource-type"></a>audioDuckingConfiguration 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-参数放掉的其他源 （逐步注销其他源。）
+其他源的 ducking 参数 (逐步淘汰 in 和其他来源。)
 
 ## <a name="properties"></a>属性
 
 | 属性      | 类型     | 说明                                                                     |
 | :------------ | :------- | :-------------------------------------------------------------------------------|
-| lowerLevel    | Int64    | 源中时源正在 ducked %的卷。             |
-| rampActive    | Int64    | 时间 （以毫秒计） 计的 ducked 源以"淡出"。 |
-| rampInactive  | Int64    | 时间 （以毫秒计） 计的 ducked 源"淡出"。  |
-| upperLevel    | Int64    | 源中时源不正在 ducked %的卷。         |
+| lowerLevel    | Int64    | 源正在 ducked 时, 源的数量 (以百分比为单位)。             |
+| rampActive    | Int64    | ducked 源到 "淡出" 所需的时间量 (以毫秒为单位)。 |
+| rampInactive  | Int64    | ducked 源到 "淡入" 所需的时间 (以毫秒为单位)。  |
+| upperLevel    | Int64    | 源未 ducked 时的源数量 (以百分比为单位)。         |
 
-> **注意：** 提升持续时间不能超过 5000 毫秒。
+> **注意:** 斜向持续时间不能超过5000毫秒。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

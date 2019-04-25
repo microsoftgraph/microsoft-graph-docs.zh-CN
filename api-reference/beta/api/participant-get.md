@@ -1,21 +1,21 @@
 ---
 title: 获取参与者
-description: 检索的属性和**参与者**对象的关系。
+description: 检索**参与者**对象的属性和关系。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 5b966b3fae9ea687fea22e01227e585d5d69d4cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507668"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539381"
 ---
 # <a name="get-participant"></a>获取参与者
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和**参与者**对象的关系。
+检索**参与者**对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -34,7 +34,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持[OData 查询参数](/graph/query-parameters)以帮助自定义的响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称          | 说明               |
@@ -45,7 +45,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[参与者](../resources/participant.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[参与者](../resources/participant.md)对象。
 
 ## <a name="example"></a>示例
 

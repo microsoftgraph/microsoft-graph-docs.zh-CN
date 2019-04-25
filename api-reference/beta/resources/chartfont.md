@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: c507a966dc6b29e46935c5c77a85b557a84cc69c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641167"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543717"
 ---
 # <a name="chartfont-resource-type"></a>ChartFont 资源类型
 
@@ -28,9 +28,9 @@ ms.locfileid: "29641167"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bold|boolean|表示字体的加粗状态。|
-|color|string|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
-|italic|boolean|表示字体的斜体状态。|
+|bold|布尔|表示字体的加粗状态。|
+|color|字符串|文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。|
+|italic|布尔|表示字体的斜体状态。|
 |name|string|字体名称（例如"Calibri"）|
 |大小|double|字体大小（例如 11）|
 |underline|string|应用于字体的下划线类型。可能的值是：`None`、`Single`。|

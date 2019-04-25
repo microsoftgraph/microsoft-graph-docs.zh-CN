@@ -1,15 +1,15 @@
 ---
 title: subscribedSku 资源类型
-description: " 创建、 更新和删除不受支持。 不支持查询筛选器表达式。 继承自 directoryObject。"
+description: " 不支持创建、更新和删除。 不支持查询筛选表达式。 继承自 directoryObject。"
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 090e6912ce2f337a8e30322c9b45161af73175cc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522698"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582075"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku 资源类型
 
@@ -21,18 +21,18 @@ ms.locfileid: "29522698"
 ## <a name="methods"></a>方法
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|获取 subscribedSku | [subscribedSku](subscribedsku.md) |读取 subscribedSku 对象的属性和关系。|
-|[列出 subscribedSku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |检索组织已获取的商业订阅列表。|
+|[获取 subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |读取 subscribedSku 对象的属性和关系。|
+|[列出 subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |检索组织已获取的商业订阅列表。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|appliesTo|字符串| 例如，“用户”或“公司”。 |
-|capabilityStatus|String| 例如，“Enabled”。 |
+|appliesTo|String| 例如，“用户”或“公司”。 |
+|capabilityStatus|String| 例如, "Enabled"。 |
 |consumedUnits|Int32| 已分配的许可证数量。 |
-|id|String| 订阅的 sku 对象的唯一标识符。密钥，不可为 NULL。 |
+|id|String| 订阅的 sku 对象的唯一标识符。 键, 不可为 null。 |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| 有关预付许可证的数量和状态的信息。 |
-|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| 有关 SKU 可用服务计划的信息。不可为 null |
+|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| 有关 SKU 可用服务计划的信息。 不可为 null |
 |skuId|Guid| 服务 SKU 的唯一标识符 (GUID)。 |
 |skuPartNumber|String| SKU 商品编号；例如：“AAD_PREMIUM”或“RMSBASIC”。 |
 

@@ -5,11 +5,11 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: c66ab2f29ee44d76ed0ee300743f50cb0debdd16
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642728"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535531"
 ---
 # <a name="call-resource-type"></a>call 资源类型
 
@@ -83,8 +83,8 @@ ms.locfileid: "29642728"
 
 | 关系        | 类型                                                 | 说明                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) 集合 | 只读。可为空。                                                |
-| operations          | [commsOperation](commsoperation.md) 集合       | 只读。可为空。                                                |
+| audioRoutingGroups  | [audioRoutingGroup](audioroutinggroup.md) 集合 | 只读。 可为 NULL。                                                |
+| operations          | [commsOperation](commsoperation.md) 集合       | 只读。 可为 Null。                                                |
 | participants        | [participant](participant.md) 集合             | 只读。可为空。                                                |
 
 ## <a name="json-representation"></a>JSON 表示形式

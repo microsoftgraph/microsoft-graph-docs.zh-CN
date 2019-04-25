@@ -1,15 +1,15 @@
 ---
 title: directoryRoleTemplate 资源类型
-description: 表示目录角色模板。目录角色模板指定目录角色 (directoryRole) 的属性值。租户中每个已激活的目录角色都有一个相关的目录角色模板对象。要读取目录角色或更新其成员，首先必须在租户中将其激活。默认情况下，仅激活公司管理员目录角色。要激活其他可用目录角色，发送 POST 请求到此目录角色模板 ID 的  端点，角色基于此模板，且此模板在请求的 roleTemplateId 参数中指定。在成功完成请求后，你可以开始读取，并将成员分配给目录角色。注意：目录角色模板针对用户目录角色公开。用户目录角色是隐式的，对目录客户端不可见。租户中的每个用户按基础结构分配到此角色。已激活该角色。请勿使用此模板。
+description: '表示目录角色模板。 目录角色模板指定目录角色 (directoryRole) 的属性值。 每个可在租户中激活的目录角色都有一个关联的目录角色模板对象。 要读取目录角色或更新其成员，首先必须在租户中将其激活。 默认情况下仅激活公司管理员目录角色。 若要激活其他可用目录角色, 请将 POST 请求发送`/directoryRoles`到具有目录角色的 ID 的终结点, 该目录角色基于该角色模板的**roleTemplateId**参数在请求中的指定。 成功完成此请求后, 即可开始读取和分配目录角色的成员。 **注意**: 为 Users 目录角色公开了一个目录角色模板。 Users 目录角色是隐式的, 对目录客户端不可见。 租户中的每个用户都通过基础结构分配到此角色。 角色已激活。 请勿使用此模板。'
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: dd813c9f7676e7190e5aedbb6d9b950e9ffc6aac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526156"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543264"
 ---
 # <a name="directoryroletemplate-resource-type"></a>directoryRoleTemplate 资源类型
 
@@ -22,14 +22,14 @@ ms.locfileid: "29526156"
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|获取 directoryRoleTemplate | [directoryRoleTemplate](directoryroletemplate.md) |读取 directoryroletemplate 对象的属性和关系。|
+|[获取 directoryRoleTemplate](../api/directoryroletemplate-get.md) | [directoryRoleTemplate](directoryroletemplate.md) |读取 directoryroletemplate 对象的属性和关系。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |说明|String|可设置目录角色说明。只读。|
 |displayName|String|可设置目录角色显示名称。只读。 |
-|id|String|模板的的唯一标识符。继承自 [directoryObject](directoryobject.md)。在 POST 请求中指定 **roleTemplateId** 属性的目录角色模板的 **id** 将在租户中激活 [directoryRole](directoryrole.md)。密钥，不可为 NULL。只读。|
+|id|字符串|模板的的唯一标识符。继承自 [directoryObject](directoryobject.md)。在 POST 请求中指定 **roleTemplateId** 属性的目录角色模板的 **id** 将在租户中激活 [directoryRole](directoryrole.md)。密钥，不可为 NULL。只读。|
 
 ## <a name="relationships"></a>关系
 无

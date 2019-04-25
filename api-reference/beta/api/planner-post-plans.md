@@ -5,15 +5,13 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: a5383bacedef2e7e6df718a4286f034e67f6a7d9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524714"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539006"
 ---
 # <a name="create-plannerplan"></a>创建 plannerPlan
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 新建 **plannerPlan**。
 
@@ -44,7 +42,8 @@ POST /planner/plans
 
 在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。**plannerPlan** 所有者属性必须设为[组](../resources/group.md)对象的 id。
 
->**注意：** 正在创建计划的用户必须将拥有计划的组的成员。 当使用[创建组](../api/group-post-groups.md)创建一个新的组时，您不是添加到组，作为成员。 创建组后，将自己添加为成员使用[组发布成员](../api/group-post-members.md)。
+>**注意：** 正在创建计划的用户必须是拥有该计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
+
 
 ## <a name="response"></a>响应
 
@@ -57,12 +56,13 @@ POST /planner/plans
 ### <a name="request"></a>请求
 
 下面是一个请求示例。
+
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
 ``` http
-POST https://graph.microsoft.com/beta/planner/plans
+POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
 Content-length: 381
 
@@ -77,6 +77,7 @@ Content-length: 381
 ### <a name="response"></a>响应
 
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,15 +106,10 @@ Content-length: 357
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create plannerPlan",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/planner-post-plans.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

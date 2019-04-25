@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: c94e79f688e117960b3a8a0f2c9888a908634a82
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572330"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581721"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>office365GroupsActivityCounts 资源类型
 
@@ -17,13 +17,13 @@ ms.locfileid: "29572330"
 
 | 属性               | 类型   | 说明                              |
 | :--------------------- | :----- | ---------------------------------------- |
-| reportRefreshDate      | Date   | 内容最晚日期。          |
-| exchangeEmailsReceived | Int64  | 通过组邮箱收到的电子邮件数。 |
-| yammerMessagesPosted   | Int64  | 发布到 Yammer 组的消息数。 |
-| yammerMessagesRead     | Int64  | Yammer 组中读取的消息数。 |
-| yammerMessagesLiked    | Int64  | 喜欢 Yammer 组中的消息数。 |
-| reportDate             | Date   | 大量的电子邮件发送到组邮箱或日期已发布、 读取或喜欢 Yammer 组中的邮件数 |
-| reportPeriod           | String | 报告涵盖天数。    |
+| reportRefreshDate      | Date   | 内容的最新日期。          |
+| exchangeEmailsReceived | Int64  | 由组邮箱接收的电子邮件数。 |
+| yammerMessagesPosted   | Int64  | 发布到 Yammer 组的邮件数。 |
+| yammerMessagesRead     | Int64  | Yammer 组中读取的邮件数。 |
+| yammerMessagesLiked    | Int64  | Yammer 组中的已赞邮件数。 |
+| reportDate             | Date   | 向组邮箱或邮件中发送了大量电子邮件的日期已在 Yammer 组中投递、读取或赞 |
+| reportPeriod           | String | 报告覆盖的天数。    |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

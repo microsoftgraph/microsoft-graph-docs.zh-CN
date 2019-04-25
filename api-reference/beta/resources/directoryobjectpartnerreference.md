@@ -1,15 +1,15 @@
 ---
 title: directoryObjectPartnerReference 资源类型
-description: 表示对合作伙伴租户中的目录对象的引用。 继承自 directoryObject。
+description: 表示对合作伙伴租户中的 directory 对象的引用。 继承自 directoryObject。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a031586d1f92bf2b8b331e9b71058211b4617382
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640306"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543273"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference 资源类型
 
@@ -21,11 +21,11 @@ ms.locfileid: "29640306"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|description|String| 返回的对象的说明。 只读。 |
-|displayName|String| 目录对象返回，如组或应用程序的名称。 只读。 |
+|说明|String| 返回的对象的说明。 只读。 |
+|displayName|字符串| 返回的目录对象的名称, 如 group 或 application。 只读。 |
 |externalPartnerTenantId|Guid| 合作伙伴租户的租户标识符。 只读。 |
-|id|String| 资源的唯一标识符。 继承自 [directoryObject](directoryobject.md?view=graph-rest-beta)。 只读。 |
-|objectType|String| 合作伙伴租户中引用的对象的类型。 只读。 |
+|id|字符串| 资源的唯一标识符。 继承自 [directoryObject](directoryobject.md?view=graph-rest-beta)。 只读。 |
+|objectType|String| 合作伙伴租户中被引用对象的类型。 只读。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 86f5e5d2c698652e7155c300fdd51e50442a1c44
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777002"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556338"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>androidDeviceOwnerSystemUpdateInstallType 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31777002"
 |:---|:---|:---|
 |deviceDefault|0|设备默认行为, 通常提示用户接受系统更新。|
 |推迟|1|将更新自动安装推迟30天。|
-|开|双面|在每日维护时段内自动安装。|
-|自动|第三章|尽快自动安装更新。|
+|开|2 |在每日维护时段内自动安装。|
+|自动|3 |尽快自动安装更新。|
 
 
 

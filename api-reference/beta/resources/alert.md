@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 8fa945cc69b3bc7779ae9ce23e2ee672c48eb1f8
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364575"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535787"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -42,7 +42,7 @@ ms.locfileid: "30364575"
 |comments|String collection|客户提供的有关通知的注释 (针对客户通知管理) (支持[更新](../api/alert-update.md))。|
 |confidence|Int32|对检测逻辑的可信度 (1-100 之间的百分比)。|
 |createdDateTime |DateTimeOffset|通知提供程序创建警报的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
-|说明|字符串|通知说明。|
+|description|String|通知说明。|
 |detectionIds|String collection|与此警报实体相关的一组警报 (每个警报以单独的记录的形式推送到 SIEM)。|
 |eventDateTime |DateTimeOffset|触发警报 (s) 的事件发生时所发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
 |征求|alertFeedback|通知的分析师反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 (支持[更新](../api/alert-update.md))|
@@ -56,9 +56,9 @@ ms.locfileid: "30364575"
 |进程|[过程](process.md)集合|提供程序生成的与此警报相关的进程的、与安全相关的状态信息。|
 |recommendedActions|String collection|作为警报的结果 (例如, 隔离计算机、enforce2FA、映像主机) 而要采取的供应商/提供商建议的操作。|
 |registryKeyStates|[registryKeyState](registrykeystate.md)集合|提供程序生成的与安全相关的状态信息关于与此警报相关的注册表项。|
-|度 |alertSeverity|警报严重性-由供应商/提供商设置。 可取值为：`unknown`、`informational`、`low`、`medium`、`high`。 必需。|
+|度 |alertSeverity|警报严重性-由供应商/提供商设置。 可取值为：`unknown`、`informational`、`low`、`medium` 或 `high`。 必需。|
 |sourceMaterials|String collection|指向与警报相关的源材料的超链接 (uri), 例如, 提供商用于通知或日志搜索等的用户界面。|
-|status |alertStatus|警报生命周期状态 (阶段)。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 (支持[更新](../api/alert-update.md))。 必需。|
+|状态 |alertStatus|警报生命周期状态 (阶段)。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 (支持[更新](../api/alert-update.md))。 必需。|
 |tags|String 集合|可应用于警报并可用作筛选条件的用户可定义标签 (例如, "HVA"、"锯" 等)(支持[更新](../api/alert-update.md))。|
 |title |String|通知标题。 必需。|
 |触发|[alertTrigger](alerttrigger.md)集合|有关触发警报的特定属性的安全相关信息 (出现在警报中的属性)。 警报可能包含有关多个用户、主机、文件和 ip 地址的信息。 此字段指示哪些属性触发了警报生成。|

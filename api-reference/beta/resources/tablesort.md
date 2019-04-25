@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 612e0cb7d59011f04ae992f80119fc1da572b582
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511742"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583205"
 ---
 # <a name="tablesort-resource-type"></a>TableSort 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "29511742"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|获取 TableSort | [TableSort](tablesort.md) |读取 tableSort 对象的属性和关系。|
+|[获取 TableSort](../api/tablesort-get.md) | [TableSort](tablesort.md) |读取 tableSort 对象的属性和关系。|
 |[应用](../api/tablesort-apply.md)|无|执行排序操作。|
 |[清除](../api/tablesort-clear.md)|None|清除表上的当前排序。尽管这不能修改表的排序，但它会清除标题按钮的状态。|
 |[重新应用](../api/tablesort-reapply.md)|无|对表重新应用当前的排序参数。|
@@ -30,13 +30,13 @@ ms.locfileid: "29511742"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|matchCase|布尔|表示最后一次对表进行排序时大小写是否有影响。只读。|
+|matchCase|boolean|表示最后一次对表进行排序时大小写是否有影响。只读。|
 |方法|string|表示最后一次对表排序所使用的中文字符排序方法。可能的值是：`PinYin`、`StrokeCount`。只读。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|fields|[SortField](sortfield.md)|表示最后一次对表排序所使用的当前条件。只读。|
+|域|[SortField](sortfield.md)|表示最后一次对表排序所使用的当前条件。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 14bf57133ad953d40c3cf39cca4cdf8c4f9f19f0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986339"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550019"
 ---
 # <a name="list-rejectedsenders"></a>列出 rejectedSender
 获取此组 rejectedSenders 列表中的用户或组列表。 
@@ -56,8 +56,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

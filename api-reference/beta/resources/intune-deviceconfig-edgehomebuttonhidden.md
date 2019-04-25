@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d188bb9c481c694d7d0f2117b1bcff4d1c369dcd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775014"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551734"
 ---
 # <a name="edgehomebuttonhidden-resource-type"></a>edgeHomeButtonHidden 资源类型
 

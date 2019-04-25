@@ -1,19 +1,19 @@
 ---
 title: 更新 synchronizationSchema
-description: 更新给定的作业或模板的同步架构。 此方法完全请求中提供的一个与替换当前架构。 若要更新的模板架构，进行应用程序对象上的呼叫。 您必须是应用程序的所有者。
+description: 更新给定作业或模板的同步架构。 此方法将当前架构完全替换为请求中提供的架构。 若要更新模板的架构, 请对 application 对象进行调用。 您必须是应用程序的所有者。
 localization_priority: Normal
 ms.openlocfilehash: 13ee7d996b0e02834b77cd222380747c02d7fcc2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525547"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536955"
 ---
 # <a name="update-synchronizationschema"></a>更新 synchronizationSchema
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-更新给定的作业或模板的同步架构。 此方法完全请求中提供的一个与替换当前架构。 若要更新的模板架构，进行应用程序对象上的呼叫。 您必须是应用程序的所有者。
+更新给定作业或模板的同步架构。 此方法将当前架构完全替换为请求中提供的架构。 若要更新模板的架构, 请对 application 对象进行调用。 您必须是应用程序的所有者。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -39,18 +39,18 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要替换与现有的架构的[synchronizationSchema](../resources/synchronization-synchronizationschema.md)对象。
+在请求正文中, 提供[synchronizationSchema](../resources/synchronization-synchronizationschema.md)对象以将现有架构替换为。
 
 ## <a name="response"></a>响应
 
-如果成功，返回`204 No Content`响应代码。 它不返回任何响应正文中。
+如果成功, 则返回`204 No Content`响应代码。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 
->**注意：** 为便于阅读将被截如下所示的请求对象。 提供实际呼叫中的所有属性。
+>**注意:** 为了提高可读性, 此处显示的请求对象已缩短。 在实际调用中提供所有属性。
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationschema"
@@ -102,7 +102,7 @@ PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。
+响应示例如下所示。
 <!-- {
   "blockType": "response",
   "truncated": true,

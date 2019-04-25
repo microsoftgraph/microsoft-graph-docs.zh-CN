@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
 ms.openlocfilehash: 63155bbeb586956f539b0c28ac1f7706189b5445
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482278"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581056"
 ---
 # <a name="itemreference-resource-type"></a>ItemReference 资源类型
 
@@ -43,8 +43,8 @@ ms.locfileid: "30482278"
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | 字符串            | 包含项的驱动器实例的唯一标识符。只读。
 | driveType     | String            | 标识驱动器的类型。 请参阅 [drive][] 资源查看其值。
-| id            | String            | 项在驱动器中的唯一标识符。只读。
-| name          | String            | 所引用的项的名称。只读。
+| id            | 字符串            | 项在驱动器中的唯一标识符。只读。
+| name          | 字符串            | 所引用的项的名称。只读。
 | 路径          | String            | 可用于导航到该项的路径。只读。
 | shareId       | String            | 可通过 [Shares][] API 访问的共享资源的唯一标识符。
 | sharepointIds | [sharepointIds][] | 返回对 SharePoint REST 兼容性有用的标识符。只读。
@@ -71,5 +71,9 @@ GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

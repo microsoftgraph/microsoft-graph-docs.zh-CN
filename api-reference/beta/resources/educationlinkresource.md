@@ -1,27 +1,27 @@
 ---
 title: educationLinkResource 资源类型
-description: EducationResource 一个子类。 此资源是链接，并且不会不具有任何其他数据与其关联。
+description: educationResource 的子类。 此资源是链接, 不具有与之关联的任何其他数据。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 09e7c7c5070d6f8f288dbf18d6fb9ce81b456092
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516957"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542863"
 ---
 # <a name="educationlinkresource-resource-type"></a>educationLinkResource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[EducationResource](educationresource.md)一个子类。 此资源是链接，并且不会不具有任何其他数据与其关联。
+[educationResource](educationresource.md)的子类。 此资源是链接, 不具有与之关联的任何其他数据。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|link|String|资源的 URL。|
+|link|String|指向资源的 URL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

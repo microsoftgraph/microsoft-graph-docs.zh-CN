@@ -5,15 +5,15 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0c39cac6a61f09c0531f1c337ff01e1b3c077b67
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31890036"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536789"
 ---
 # <a name="unarchive-team"></a>解档团队
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 还原存档的[团队](../resources/team.md)。 这将恢复用户发送邮件和编辑团队的能力, abiding 受租户和团队设置的支持。 使用[存档](team-archive.md)API 存档团队。
 
@@ -50,17 +50,17 @@ POST /teams/{id}/unarchive
 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
-以下是请求的示例。
+请求示例如下所示。
 <!-- {
   "blockType": "ignored",
   "name": "unarchive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/unarchive
+POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 ```
 
 #### <a name="response"></a>响应
-下面是响应的一个示例。
+响应示例如下所示。
 ```http
 HTTP/1.1 202 Accepted
 Location: /teams({id})/operations({opId})
@@ -70,15 +70,10 @@ Content-Length: 0
 
 <!-- uuid: 9a9bb83f-6f35-4426-bb04-73ca43ad6cc8
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Unarchive team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/team-unarchive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

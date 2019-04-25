@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 607b89201958ec2c8062109e2e02b1749b1c96ef
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31890567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536591"
 ---
 # <a name="user-revokesigninsessions"></a>用户: revokeSignInSessions
 
@@ -26,7 +26,7 @@ ms.locfileid: "31890567"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | directory.accessasuser.all 的所有用户的读写。 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | Directory.ReadWrite.All、Directory.AccessAsUser.All |
+|应用程序                            | Directory.ReadWrite.All、Directory.AccessAsUser.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

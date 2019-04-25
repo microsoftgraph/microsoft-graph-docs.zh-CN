@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 03612cd65dbefac4e31f1a4d06085ba635fe1eab
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800003"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543040"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
@@ -62,7 +62,7 @@ ms.locfileid: "30800003"
 |:---------------|:--------|:----------|
 |资源|[educationAssignmentResource](educationassignmentresource.md)集合| 学习与此工作分配相关联的对象。  只有教师可以修改此列表。 可为空。|
 |提交|[educationSubmission](educationsubmission.md)集合| 发布后, 每个学生都有一个提交对象代表其工作和评分。  只读。 可为 Null。|
-|类别|[educationCategory](educationcategory.md)集合| 设置后, 用户可以轻松地找到给定类型的工作分配。  只读。 可为 Null。|
+|categories|[educationCategory](educationcategory.md)集合| 设置后, 用户可以轻松地找到给定类型的工作分配。  只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

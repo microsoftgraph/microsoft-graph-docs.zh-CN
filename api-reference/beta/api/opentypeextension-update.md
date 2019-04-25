@@ -4,11 +4,11 @@ description: 通过请求正文中的属性更新开放扩展（openTypeExtensio
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: c24714f51a75f17ebe56314ab6dc683701085420
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641034"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539934"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 
@@ -19,16 +19,16 @@ ms.locfileid: "29641034"
 - 如果请求正文中的属性与现有属性在扩展中的名称相匹配，则更新扩展中的数据。
 - 否则，属性及其数据将添加到扩展中。 
 
-扩展中的数据可以是基元类型，也可以是基元类型数组。
+扩展插件中的数据可以是基元类型，也可以是基元类型数组。
 
 ## <a name="permissions"></a>权限
 
-根据扩展中创建的资源和权限类型 （委派或应用程序） 请求下, 表中所指定的权限是最小特权需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据在其中创建扩展的资源以及请求的权限类型 (委派或应用程序), 下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.AccessAsUser.All | 不支持 | Device.ReadWrite.All |
-| [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [组](../resources/group.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
 | [组事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
@@ -77,7 +77,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 
 | 名称       | 值 |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | OpenTypeExtension |
 | extensionName | %unique_string% |
 
 ## <a name="response"></a>响应
@@ -164,7 +164,7 @@ Content-type: application/json
 
 #### <a name="request-2"></a>请求 2
 
-第二个示例展示如何在组帖子中更新扩展。该扩展最初由以下 JSON 负载表示，其中的 `2015-07-03T13:04:00Z` 的值为 `expirationDate`
+第二个示例展示如何在组帖子中更新扩展。该扩展最初由以下 JSON 负载表示，其中的 `expirationDate` 的值为 `2015-07-03T13:04:00Z`
 
 <!-- { "blockType": "ignored" } -->
 ```http

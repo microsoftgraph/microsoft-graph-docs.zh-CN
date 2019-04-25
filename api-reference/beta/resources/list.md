@@ -2,15 +2,15 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: 列出
+title: List
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: aafae9e9214f98ade129d46b63f0e7f930ac4a9c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481515"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581531"
 ---
 # <a name="list-resource"></a>List 资源
 
@@ -103,7 +103,7 @@ ms.locfileid: "30481515"
 | **说明**          | string           | 项目的描述性文本。
 | **lastModifiedBy**       | [identitySet][]  | 此项的最后一个修饰符的标识。 只读。
 | **lastModifiedDateTime** | DateTimeOffset   | 上次修改项目的日期和时间。只读。
-| **WebUrl**               | string (url)     | 在浏览器中显示此项目的 URL。只读。
+| **webUrl**               | string (url)     | 在浏览器中显示此项目的 URL。只读。
 
 ## <a name="relationships"></a>关系
 
@@ -112,7 +112,7 @@ ms.locfileid: "30481515"
 | 关系名称 | 类型                        | 说明
 |:------------------|:----------------------------|:------------------------------
 | **activities**    | [itemActivity][] 集合 | 最近发生在此列表内的活动。
-| **drive**         | [drive][]                   | 仅存在于文档库中。 允许访问作为具有 [driveItems][driveItem] 的 [drive][] 资源的列表。
+| **驱动器**         | [drive][]                   | 仅存在于文档库中。 允许访问作为具有 [driveItems][driveItem] 的 [drive][] 资源的列表。
 | **items**         | Collection([listItem][])    | 列表中包含的所有项。
 
 [baseItem]: baseitem.md

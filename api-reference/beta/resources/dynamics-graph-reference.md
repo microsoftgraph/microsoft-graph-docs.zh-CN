@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: ee67d28a90732bdc1d804da41994de32bf0a7f4f
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366590"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543077"
 ---
 # <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Dynamics 365 Business Central API
 您可以使用 microsoft Graph 连接 web 服务或 SaaS 解决方案并将其与 Microsoft Dynamics 365 Business Central 相集成。 通过 microsoft Graph, 你可以构建可获得授权访问和与 microsoft Dynamics 365 业务中心数据无缝集成的应用程序。
@@ -23,7 +23,7 @@ ms.locfileid: "30366590"
 Dynamics 365 Business Central API 允许您通过通过单个终结点连接并集成的应用程序读取和修改业务数据。 例如, 使用 API 获取对[客户](../resources/dynamics-customer.md)和[供应商](../resources/dynamics-vendor.md)信息的访问权限, 或[查看逾期付款](../resources/dynamics-agedaccountspayable.md)。
 
 ## <a name="next-steps"></a>后续步骤
-Dynamics 365 Business Central API 可为你与用户接洽的新方式开放。 若要了解详细信息, 请参阅以下内容:
+Dynamics 365 Business Central API 可为你与用户接洽的新方式开放。 要了解更多信息，请参阅以下内容：
 
 + [Dynamics 365 Business Central 概述](/graph/dynamics-business-central-concept-overview)
 + 请尝试[Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)。

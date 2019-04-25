@@ -1,29 +1,27 @@
 ---
 title: domainState 资源类型
-description: 表示域上经过计划的异步操作的状态。
+description: 表示在域上计划的异步操作的状态。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 39ded8e4ff3458ebaceea09b3003d0bd14be36cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512974"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543166"
 ---
 # <a name="domainstate-resource-type"></a>domainState 资源类型
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-表示域上经过计划的异步操作的状态。
+表示在域上计划的异步操作的状态。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
-| lastActionDateTime | DateTimeOffset | 上个活动发生时的时间戳。计划操作、异步任务启动及操作完成后将更新此值。 |
-| 操作 | String | 异步操作类型。其值可以为 *ForceDelete* 或 *Verification*。 |
-| status | String | 操作的当前状态。 <br> *Scheduled* - 已计划操作但尚未启动。 <br> *InProgress* - 任务已启动并且正在进行中。 <br> *Failed* - 操作已失败。 |
+| lastActionDateTime | DateTimeOffset | 上一次活动发生时的时间戳。 在计划工序、异步任务启动和操作完成时, 会更新该值。 |
+| 操作 | String | 异步操作的类型。 这些值可以是*ForceDelete*或*验证* |
+| 状态 | 字符串 | 操作的当前状态。 <br> *计划*-操作已计划, 但尚未启动。 <br> *InProgress* -任务已启动并且正在进行中。 <br> *failed* -操作失败。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -47,15 +45,10 @@ ms.locfileid: "29512974"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "domainState resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/domainstate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

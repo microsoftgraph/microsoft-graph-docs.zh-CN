@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: fd86dc4da572c17e35afe939977b65ff99bd30be
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988859"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582849"
 ---
 # <a name="tiindicator-resource-type"></a>tiIndicator 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "30988859"
 | [创建 tiIndicator](../api/tiindicators-post.md) | [tiIndicator](tiindicator.md) | 通过发布到 tiIndicators 集合创建新的 tiIndicator。 |
 | [列出 tiIndicator](../api/tiindicators-list.md) | [tiIndicator](tiindicator.md)集合 | 获取 tiIndicator 对象集合。 |
 | [更新](../api/tiindicator-update.md) | [tiIndicator](tiindicator.md) | 更新 tiIndicator 对象。 |
-| [Delete](../api/tiindicator-delete.md) | 无 | 删除 tiIndicator 对象。 |
+| [删除](../api/tiindicator-delete.md) | 无 | 删除 tiIndicator 对象。 |
 |[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|无| 删除多个 tiIndicator 对象。|
 |[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|无| 通过`externalId`属性删除多个 tiIndicator 对象。|
 |[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[tiIndicator](tiindicator.md)集合|通过发布 tiIndicators 集合创建新的 tiIndicators。|
@@ -37,26 +37,26 @@ ms.locfileid: "30988859"
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|action|字符串| 在 targetProduct 安全工具中匹配指标时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。 **必需。**|
-|activityGroupNames|String 集合|负责威胁指示器所涵盖的恶意活动的各方的网络威胁智能名称。|
+|action|string| 在 targetProduct 安全工具中匹配指标时要应用的操作。 可取值为：`unknown`、`allow`、`block`、`alert`。 **必需。**|
+|activityGroupNames|String collection|负责威胁指示器所涵盖的恶意活动的各方的网络威胁智能名称。|
 |additionalInformation|String|可以放置其他 tiIndicator 属性中未涵盖的指标中的额外数据的 "容器" 区域。 放置在 additionalInformation 中的数据通常不会被 targetProduct 安全工具使用。|
 |azureTenantId|String| 当指标为引入时由系统进行标记。 提交客户端的 Azure Active Directory 租户 id。 **必需。**|
 |confidence|Int32|一个整数, 表示对指示器中的数据准确标识恶意行为的可信度。 可接受的值为0– 100, 100 的值为最高。|
-|description|String| 由指示器表示的威胁的简短说明 (100 个字符或更少)。 **必需。**|
+|说明|String| 由指示器表示的威胁的简短说明 (100 个字符或更少)。 **必需。**|
 |diamondModel|[diamondModel](#diamondmodel-values)|此指示器所在的菱形模型的面积。 可取值为：`unknown`、`adversary`、`capability`、`infrastructure` 或 `victim`。|
 |expirationDateTime|DateTimeOffset| 指示指示器过期时间的日期/时间字符串。 所有指标都必须具有到期日期, 以避免系统中的陈旧指示器持久化。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 **必需。**|
 |externalId|String| 将指示器与指示器提供程序的系统 (例如外键) 相结合的标识号。 |
-|id|String|当指标为引入时由系统创建。 生成的 GUID/唯一标识符。 只读。|
-|ingestedDateTime|DateTimeOffset| 当指标为引入时由系统进行标记。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|id|字符串|当指标为引入时由系统创建。 生成的 GUID/唯一标识符。 只读。|
+|ingestedDateTime|DateTimeOffset| 当指标为引入时由系统进行标记。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |isActive|Boolean| 用于停用系统中的指示器。 默认情况下, 提交的任何指示器都设置为活动状态。 但是, 提供程序可能会将此设置为 "False" 的现有指示器提交到系统中停用指示器。|
 |killChain|[killChain](#killchain-values)集合|一个 JSON 字符串数组, 用于描述此指示器针对终止链上的哪个点或点。 有关确切值, 请参阅下面的 "killChain 值"。 |
 |knownFalsePositives|String|指示符可能导致误报的情况。 这应该是可读的文本。|
-|lastReportedDateTime|DateTimeOffset|上次发现指示器的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|malwareFamilyNames|String 集合|与指示器关联的恶意软件系列名称 (如果存在)。 如果所有可能都可以通过 Windows Defender 安全智能[威胁百科全书](https://www.microsoft.com/wdsi/threats)找到, microsoft 将首选 microsoft 恶意软件系列名称。|
+|lastReportedDateTime|DateTimeOffset|上次发现指示器的时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|malwareFamilyNames|String collection|与指示器关联的恶意软件系列名称 (如果存在)。 如果所有可能都可以通过 Windows Defender 安全智能[威胁百科全书](https://www.microsoft.com/wdsi/threats)找到, microsoft 将首选 microsoft 恶意软件系列名称。|
 |passiveOnly|Boolean |确定该指示符是否应触发对最终用户可见的事件。 如果设置为 "true", 则安全工具将不会通知最终用户已发生 "命中"。 通常情况下, 这通常被视为审核或静默模式, 安全产品只需记录已发生的匹配项, 但不会执行该操作。 默认值为 false。 |
 |度|Int32| 一个整数, 表示由指示器中的数据标识的恶意行为的严重程度。 可接受的值为0– 5, 其中5为最严重, 0 表示根本不严重。 默认值为3。 |
 |tags|String 集合|存储任意标记/关键字的字符串的 JSON 数组。 |
-|targetProduct|String|一个字符串值, 表示应应用指标的单个安全产品。 可接受的值`Azure Sentinel`为:。 **Required**|
+|targetProduct|String|一个字符串值, 表示应应用指标的单个安全产品。 可接受的值`Azure Sentinel`为:。 **必需**|
 |threatType|[threatType](#threattype-values)| 每个指示器都必须具有有效的指示器威胁类型。 可取值为：`Botnet`、`C2`、`CryptoMining`、`Darknet`、`DDoS`、`MaliciousUrl`、`Malware`、`Phishing`、`Proxy`、`PUA`、`WatchList`。 **必需。** |
 |tlpLevel|[tlpLevel](#tlplevel-values)| 指标的流量灯协议值。 可取值为：`unknown`、`white`、`green`、`amber` 或 `red`。 **必需。**|
 
@@ -80,7 +80,7 @@ ms.locfileid: "30988859"
 |:-------------|:------------|:------------|
 |fileCompileDateTime|DateTimeOffset|编译文件时的日期/时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |fileCreatedDateTime|DateTimeOffset| 创建文件时的日期/时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息, 并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|fileHashType|字符串| 存储在 fileHashValue 中的哈希的类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash` 或 `ctph`。|
+|fileHashType|string| 存储在 fileHashValue 中的哈希的类型。 可取值为：`unknown`、`sha1`、`sha256`、`md5`、`authenticodeHash256`、`lsHash` 或 `ctph`。|
 |fileHashValue|String| 文件哈希值。|
 |fileMutexName|String| 在基于文件的检测中使用的 Mutex 名称。|
 |fileName|String|如果该标记是基于文件的, 则为该文件的名称。 可以用逗号分隔多个文件名。 |
@@ -127,7 +127,7 @@ ms.locfileid: "30988859"
 
 | 值 | 说明 |
 |:-------|:------------|
-|操作|Indcates 攻击者利用受危害的系统执行诸如分布式拒绝服务攻击之类的操作。|
+|Actions|Indcates 攻击者利用受危害的系统执行诸如分布式拒绝服务攻击之类的操作。|
 |C2|表示操纵受损系统时所使用的控制通道。|
 |Delivery|将攻击代码分发给受害者的过程 (例如, USB、电子邮件、网站)。|
 |具备|利用漏洞的攻击代码 (例如, 代码执行)。|

@@ -5,15 +5,13 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 868f6e9b753296f6828ec1537eb04ca232c1991e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514927"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540707"
 ---
 # <a name="create-message"></a>创建邮件
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 在 mailfolder 中新建邮件。
 ## <a name="permissions"></a>权限
@@ -52,13 +50,13 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
   "name": "create_message_from_mailfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders/{id}/messages
+POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages
 Content-type: application/json
 Content-length: 248
 
 {
-  "receivedDateTime": "2016-10-19T10:37:00Z",
-  "sentDateTime": "2016-10-19T10:37:00Z",
+  "receivedDateTime": "datetime-value",
+  "sentDateTime": "datetime-value",
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
@@ -82,8 +80,8 @@ Content-type: application/json
 Content-length: 248
 
 {
-  "receivedDateTime": "2016-10-19T10:37:00Z",
-  "sentDateTime": "2016-10-19T10:37:00Z",
+  "receivedDateTime": "datetime-value",
+  "sentDateTime": "datetime-value",
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
@@ -96,15 +94,10 @@ Content-length: 248
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create Message",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/mailfolder-post-messages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

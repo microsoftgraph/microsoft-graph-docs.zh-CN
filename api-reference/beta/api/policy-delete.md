@@ -3,11 +3,11 @@ title: 删除策略
 description: 删除策略。
 localization_priority: Normal
 ms.openlocfilehash: e4e5f5372e2904e1f74bc25224e3d2b1ce7ba154
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520436"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538726"
 ---
 # <a name="delete-policy"></a>删除策略
 
@@ -39,10 +39,10 @@ DELETE /policies/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码。 如果不成功...
+如果成功，此方法返回 `204 No Content` 响应代码。 如果不成功 .。。
 
 ## <a name="example"></a>示例
-下面的示例删除策略。
+下面的示例删除一个策略。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

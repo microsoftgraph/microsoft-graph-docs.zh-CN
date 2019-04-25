@@ -2,24 +2,24 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: 按间隔中获取项活动状态
+title: 按间隔获取项目活动统计
 localization_priority: Normal
 ms.openlocfilehash: f9601538d825efe346ab57fdbecd6c74dc9978d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516453"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541297"
 ---
-# <a name="get-item-activity-stats-by-interval"></a>按间隔中获取项活动状态
+# <a name="get-item-activity-stats-by-interval"></a>按间隔获取项目活动统计
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[ItemActivityStats][]获得的指定的时间间隔内发生下此资源的活动。
+获取在指定时间间隔内此资源下发生的活动的[itemActivityStats][] 。
 
->**注意：****ItemAnalytics**资源尚不可用所有[国家/地区的部署](/graph/deployments)中。
+>**注意:****itemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
-分析聚合可能不可用的所有操作类型。
+分析聚合可能不适用于所有操作类型。
 
 [itemActivityStats]: ../resources/itemactivitystat.md
 
@@ -47,9 +47,9 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | 参数      | 类型               | 说明
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  | 字符串 （时间戳） | 聚合活动的开始时间。
-| endDateTime    | 字符串 （时间戳） | 聚合活动哪些结束时间。
-| interval       | string             | 聚合时间间隔。
+| startDateTime  | 字符串 (时间戳) | 聚合活动的开始时间。
+| endDateTime    | 字符串 (时间戳) | 聚合活动的结束时间。
+| interval       | string             | 聚合间隔。
 
 ## <a name="example"></a>示例
 

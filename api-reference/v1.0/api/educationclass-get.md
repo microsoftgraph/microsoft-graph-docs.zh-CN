@@ -1,15 +1,15 @@
 ---
 title: 获取 educationClass
-description: "  组管理员表示教师类中。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。"
+description: "  组管理员代表课程中的教师。 如果使用的是委派令牌，用户只会看到他们作为成员的课程。"
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 80cc29ec8536c66e3b7af1b688fd6e1b2a715ea3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991718"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550509"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -22,7 +22,7 @@ ms.locfileid: "27991718"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduRoster.ReadBasic  |
 |委派（个人 Microsoft 帐户） |  不支持  |
-|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+|Application | EduRoster.Read.All、EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

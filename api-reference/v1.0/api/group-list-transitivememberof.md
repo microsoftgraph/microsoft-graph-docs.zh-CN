@@ -1,19 +1,19 @@
 ---
-title: 列表组可传递 memberOf
-description: 获取组的组的成员。  此操作可传递，也将包括此组是嵌套的成员的所有组。 与不同获取用户的 Office 365 组，这将返回所有类型的组，而不仅仅是 Office 365 组。
+title: 列表组可传递的 memberOf
+description: 获取组所属的组。  此操作是可传递的, 还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同, 这将返回所有类型的组, 而不只是 Office 365 组。
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 7134318471101309dcf8f2778106afa549e9aa62
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694508"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542016"
 ---
-# <a name="list-group-transitive-memberof"></a>列表组可传递 memberOf
+# <a name="list-group-transitive-memberof"></a>列表组可传递的 memberOf
 
-获取组的组的成员。  此操作可传递，也将包括此组是嵌套的成员的所有组。 与不同获取用户的 Office 365 组，这将返回所有类型的组，而不仅仅是 Office 365 组。
+获取组所属的组。  此操作是可传递的, 还将包括此组嵌套成员的所有组。 与获取用户的 Office 365 组不同, 这将返回所有类型的组, 而不只是 Office 365 组。
 
 ## <a name="permissions"></a>权限
 

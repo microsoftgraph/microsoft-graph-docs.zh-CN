@@ -1,19 +1,19 @@
 ---
-title: servicePrincipals： 列表所有者
-description: 检索 servicePrincipal 的所有者的列表。
+title: 'servicePrincipals: 列出所有者'
+description: 检索 servicePrincipal 的所有者列表。
 localization_priority: Normal
 ms.openlocfilehash: ee591818db1183cee03079754ebf5d6278dcb9a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520282"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545244"
 ---
-# <a name="serviceprincipals-list-owners"></a>servicePrincipals： 列表所有者
+# <a name="serviceprincipals-list-owners"></a>servicePrincipals: 列出所有者
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 servicePrincipal 的所有者的列表。
+检索 servicePrincipal 的所有者列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

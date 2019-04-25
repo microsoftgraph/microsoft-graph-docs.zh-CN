@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 0f61866885f0798b9e96f80e22a636fb5f619e34
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939719"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581683"
 ---
 # <a name="chart-image"></a>图表：图像
 
@@ -42,9 +42,9 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|height|Int32|所需结果图像的高度。 可选。|
-|width|Int32|所需结果图像的宽度。 可选。|
-|fittingMode|string|使用的方法来扩展到指定的尺寸图表 （如果设置高度和宽度）。"  可能的值为： `Fit`， `FitAndCenter`， `Fill`。|
+|height|Int32|生成的图像的所需高度。 可选。|
+|width|Int32|生成的图像的所需宽度。 可选。|
+|fittingMode|string|用于将图表缩放到指定尺寸 (如果同时设置了高度和宽度) 的方法。  可能的值包括 `Fit`、`FitAndCenter`、`Fill`。|
 
 ## <a name="response"></a>响应
 
@@ -62,8 +62,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
-<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true

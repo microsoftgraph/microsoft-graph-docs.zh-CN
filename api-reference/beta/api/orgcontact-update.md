@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: cec4817472fe5192c7af836131cea83bcb60d77b
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789632"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539881"
 ---
 # <a name="update-orgcontact"></a>更新 orgcontact
 
@@ -40,8 +40,8 @@ PATCH /contacts/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|城市|String||
-|country|String||
+|city|String||
+|country|字符串||
 |department|String||
 |onPremisesSyncEnabled|Boolean||
 |displayName|String||

@@ -1,27 +1,27 @@
 ---
 title: objectDefinition 资源类型
-description: 描述对象和其属性。 对象定义属于 directoryDefinition，更新 synchronizationSchema 的一部分。
+description: 描述对象及其属性。 对象定义是 directoryDefinition 的一部分, 它作为 synchronizationSchema 的一部分进行更新。
 localization_priority: Normal
 ms.openlocfilehash: d8182cad44deac156c077e977551abc9c31c7d25
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514129"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581755"
 ---
 # <a name="objectdefinition-resource-type"></a>objectDefinition 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-描述对象和其属性。 对象定义属于[directoryDefinition](synchronization-directorydefinition.md)，对其进行更新[synchronizationSchema](synchronization-synchronizationschema.md)的一部分。
+描述对象及其属性。 对象定义是[directoryDefinition](synchronization-directorydefinition.md)的一部分, 它作为[synchronizationSchema](synchronization-synchronizationschema.md)的一部分进行更新。
 
 ## <a name="properties"></a>属性
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
 |attributes     |[attributeDefinition](synchronization-attributedefinition.md)集合    | 定义对象的属性。 |
-|元数据       |[metadataEntry](synchronization-metadataentry.md)集合   |其他扩展属性。 除非明确提到，不应更改元数据值。|
-|name           |String     |对象的名称。 必须是唯一目录定义中。 不可为 null。|
+|metadata       |[metadataEntry](synchronization-metadataentry.md)集合   |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|
+|name           |String     |对象的名称。 在目录定义中必须是唯一的。 不可为 null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

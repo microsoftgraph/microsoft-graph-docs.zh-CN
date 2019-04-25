@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6938fd41b6cd7c089b08edb629bc1197ec47c2d7
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254049"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548087"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>vppTokenSyncStatus 枚举类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "30254049"
 |:---|:---|:---|
 |无|0|默认状态。|
 |inProgress|1|上次同步进行中。|
-|后|双面|上次同步成功完成。|
-|failed|第三章|上次同步失败。|
+|后|2 |上次同步成功完成。|
+|未能|3 |上次同步失败。|
 
 
 

@@ -3,11 +3,11 @@ title: 添加已命名项
 description: 使用用户的公式区域设置，将新名称添加到给定范围的集合。
 localization_priority: Normal
 ms.openlocfilehash: dd35f2ded1c08c5f6b99a017b89dd6b5b50026b7
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643858"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540228"
 ---
 # <a name="add-named-item"></a>添加已命名项
 
@@ -43,7 +43,7 @@ POST /workbook/worksheets({id|name})/names/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|string|已命名项的名称。|
-|reference|字符串|名称将引用的公式或区域。|
+|reference|string|名称将引用的公式或区域。|
 |comment|字符串|与此已命名项相关联的注释。|
 
 ## <a name="response"></a>响应

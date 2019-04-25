@@ -1,29 +1,29 @@
 ---
 title: 消息：replyAll
-description: '通过指定注释和修改任何可更新属性回复邮件的所有收件人 '
+description: '通过指定注释并修改任何可更新的属性来答复邮件的所有收件人 '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 05f552676400196aed275c32020bcdf5211d0e31
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528611"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540385"
 ---
 # <a name="message-replyall"></a>消息：replyAll
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过指定注释和所有使用**replyAll**方法修改的回复，任何可更新属性回复邮件的所有收件人。 然后在已发送邮件文件夹中保存邮件。
+通过使用**replyAll**方法指定注释并修改所有可更新的答复属性来答复邮件的所有收件人。 然后邮件保存在已发送邮件文件夹中。
 
-此外，您可以第一个[创建草稿全部答复邮件](../api/message-createreplyall.md)包含评论或更新任何消息属性，然后[发送](../api/message-send.md)答复。
+或者, 您可以先[创建草稿的 "全部答复" 邮件](../api/message-createreplyall.md), 以包含注释或更新任何邮件属性, 然后[发送](../api/message-send.md)答复。
 
 **注意**
 
-- 您可以指定注释或的**body**属性`message`参数。 如果同时指定将返回 HTTP 400 错误请求出错。
-- 如果**回复**属性指定在原始邮件中，每个 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822))，您应发送给收件人的答复  
-**回复**和**toRecipients**属性，并不**从**和**toRecipients**属性中的收件人。 
+- 您可以指定`message`参数的注释或**body**属性。 同时指定这两个将返回 HTTP 400 错误的请求错误。
+- 如果在原始邮件中指定了**replyTo**属性 (根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822))), 则应将答复发送给收件人  
+**replyTo**和**toRecipients**属性, 而不是**from**和**toRecipients**属性中的收件人。 
 
 
 ## <a name="permissions"></a>权限
@@ -55,14 +55,14 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
-|message|[message](../resources/message.md)|若要在答复邮件更新任何可写属性。|
+|message|[邮件](../resources/message.md)|答复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
-下面的示例包括一条注释，并将添加到全部答复邮件附件。
+以下示例包含注释并将附件添加到全部答复邮件中。
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {

@@ -1,21 +1,21 @@
 ---
 title: 创建策略
-description: 通过指定显示名称、 策略类型和策略说明创建新的策略对象。
+description: 通过指定显示名称、策略类型和策略说明来创建新的 policy 对象。
 localization_priority: Normal
 ms.openlocfilehash: 30a311b45f9705a07b62541a4f3a110daade09fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527694"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546841"
 ---
 # <a name="create-policy"></a>创建策略
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过指定显示名称、 策略类型和策略说明创建新的[策略](../resources/policy.md)对象。
+通过指定显示名称、策略类型和策略说明来创建新的[policy](../resources/policy.md)对象。
 
->注意： 将被存储之前验证策略的详细信息。 如果它未通过验证，400 错误的请求将返回。
+>注意: 将在存储策略详细信息之前对其进行验证。 如果它未通过验证, 将返回400个错误的请求。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -38,22 +38,22 @@ POST /policies
 | Content-Type | application/json  | 实体正文中的数据性质。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供了[策略](../resources/policy.md)对象的 JSON 表示形式。
+在请求正文中, 提供[policy](../resources/policy.md)对象的 JSON 表示形式。
 
-下表显示当您创建策略时所需的属性。
+下表显示创建策略时所需的属性。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|definition|String|[策略](../resources/policy.md)对象的字符串版本。|
-|displayName|String|自定义策略名称。|
-|type|String|指定策略的类型。 当前值必须为"TokenLifetimePolicy"|
+|定义|String|[policy](../resources/policy.md)对象的字符串版本。|
+|displayName|String|策略的自定义名称。|
+|类型|String|指定策略的类型。 当前必须是 "TokenLifetimePolicy"|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应正文中的响应代码和[策略](../resources/policy.md)对象。 如果不成功，`4xx`与特定的详细信息，则返回错误。  
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[policy](../resources/policy.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。  
 
 ## <a name="example"></a>示例
-下面的示例创建新的令牌生存期策略。 请注意字符串定义参数具有转义双引号括起来。
+下面的示例创建一个新的令牌生存期策略。 请注意, 字符串定义参数中包含转义双引号。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

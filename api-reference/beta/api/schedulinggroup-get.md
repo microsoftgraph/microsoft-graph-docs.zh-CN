@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 46131e90cac2a6f5a4e75409eefd6bbf2eda7888
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657572"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537796"
 ---
 # <a name="get-schedulinggroup"></a>获取 schedulingGroup
 

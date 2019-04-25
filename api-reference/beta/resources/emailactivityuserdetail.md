@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: b871bf5dbaedd961fad09bf97be868f46e7430a1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938305"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542830"
 ---
 # <a name="emailactivityuserdetail-resource-type"></a>emailActivityUserDetail 资源类型
 
@@ -17,16 +17,16 @@ ms.locfileid: "27938305"
 
 | 属性          | 类型              |
 | :---------------- | :---------------- |
-| reportRefreshDate | 日期              |
-| userPrincipalName | 字符串            |
-| displayName       | 字符串            |
-| 被         | 布尔           |
-| deletedDate       | 日期              |
-| lastActivityDate  | 日期              |
+| reportRefreshDate | Date              |
+| userPrincipalName | String            |
+| displayName       | String            |
+| isDeleted         | 布尔值           |
+| deletedDate       | Date              |
+| lastActivityDate  | Date              |
 | sendCount         | Int64             |
 | receiveCount      | Int64             |
 | readCount         | Int64             |
-| assignedProducts  | String 集合 |
+| assignedProducts  | String collection |
 | reportPeriod      | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式

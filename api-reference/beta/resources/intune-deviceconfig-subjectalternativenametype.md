@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ea055171fade56361562aeac065a67b23154e207
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792508"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548668"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>subjectAlternativeNameType 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31792508"
 |:---|:---|:---|
 |无|0|无使用者可选名称。|
 |emailAddress|1|电子邮件地址。|
-|userPrincipalName|双面|用户主体名称 (UPN)。|
-|customAzureADAttribute|4|自定义 Azure AD 属性。|
-|domainNameService|utf-8|域名服务 (DNS)。|
+|userPrincipalName|2 |用户主体名称 (UPN)。|
+|customAzureADAttribute|4 |自定义 Azure AD 属性。|
+|domainNameService|8 |域名服务 (DNS)。|
 
 
 

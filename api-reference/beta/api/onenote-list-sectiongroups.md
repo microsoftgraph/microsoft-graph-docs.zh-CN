@@ -1,27 +1,25 @@
 ---
 title: 列出 sectionGroups
-description: 检索 sectionGroup 对象列表。
+description: 检索 sectionGroup 对象的列表。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 05aa4e415d246fecb476c808ee42b06e2ad1a0ce
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641930"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540392"
 ---
 # <a name="list-sectiongroups"></a>列出 sectionGroups
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-检索 [sectionGroup](../resources/sectiongroup.md) 对象列表。
+检索[sectionGroup](../resources/sectiongroup.md)对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
+|委派（工作或学校帐户） | 注意: Create、notes、read、read. all、all、all    |
 |委派（个人 Microsoft 帐户） | Notes.Create、Notes.Read、Notes.ReadWrite    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
@@ -34,24 +32,24 @@ GET /groups/{id}/onenote/sectionGroups
 GET /sites/{id}/onenote/sectionGroups
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-默认排序顺序是 `name asc`。
+默认排序顺序为`name asc`。
 
-默认查询展开 `parentNotebook`，并选择其 `id`、`displayName` 和 `self` 属性。分区组的有效 `expand` 值为 `sections`、`sectionGroups`、`parentNotebook` 和 `parentSectionGroup`。
+默认查询将展开`parentNotebook`并选择其`id`、 `displayName`和`self`属性。 节`expand`组`sections`的有效值为`sectionGroups`、 `parentNotebook`、和。 `parentSectionGroup`
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Accept | string | `application/json` |
+| 接受 | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [sectionGroup](../resources/sectiongroup.md) 对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[sectionGroup](../resources/sectiongroup.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -60,14 +58,14 @@ GET /sites/{id}/onenote/sectionGroups
   "name": "get_sectiongroups"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/onenote/sectionGroups
+GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup",
+  "@odata.type": "microsoft.graph.sectionGroup",
   "isCollection": true
 } -->
 ```http
@@ -80,8 +78,7 @@ Content-length: 378
     {
       "sectionsUrl": "sectionsUrl-value",
       "sectionGroupsUrl": "sectionGroupsUrl-value",
-      "displayName": "name-value",
-      "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+      "displayName": "name-value",      
       "createdBy": {
         "user": {
           "id": "id-value",
@@ -101,15 +98,10 @@ Content-length: 378
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List sectionGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/onenote-list-sectiongroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

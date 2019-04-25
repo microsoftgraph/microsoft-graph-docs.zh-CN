@@ -1,15 +1,15 @@
 ---
-title: 列出替代
+title: 列表替代
 description: 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的替代。
 localization_priority: Normal
 ms.openlocfilehash: ab8324ac892df570ed0d28fabb7b31f3280adcef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883893"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577614"
 ---
-# <a name="list-overrides"></a>列出替代
+# <a name="list-overrides"></a>列表替代
 
 获取用户设置为始终以特定方式对来自特定发件人的邮件进行分类的替代。
 

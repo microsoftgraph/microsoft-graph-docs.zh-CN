@@ -3,11 +3,11 @@ title: 服务根
 description: 2015-10-25 14:57:30 UTC-->
 localization_priority: Normal
 ms.openlocfilehash: 7fc6729eac7dc32e0f92770fc3357af960510dd8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827886"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549655"
 ---
 # <a name="service-root"></a>服务根
 
@@ -29,7 +29,7 @@ ms.locfileid: "27827886"
 |[列出组](../api/group-list.md) | [组](group.md) 集合 |获取 group 对象集合。 |
 |[列出组织](../api/organization-get.md) | [组织](organization.md) 集合 |获取 organization 对象集合。 |
 |[列出 subscribedSku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |获取 subscribedSku 对象集合。 |
-|[创建用户](../api/user-post-users.md) |[用户](user.md)| 通过发布到用户集合创建新用户。|
+|[Create user](../api/user-post-users.md) |[user](user.md)| 通过发布到用户集合创建新用户。|
 |[列出用户](../api/user-list.md) | [用户](user.md) 集合 |获取 user 对象集合。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

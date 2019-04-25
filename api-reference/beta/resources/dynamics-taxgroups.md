@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: bdfbec8f5373637924262388dab0e9c74c363af9
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366688"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543124"
 ---
 # <a name="taxgroups-resource-type"></a>taxGroups 资源类型
 代表 Dynamics 365 Business Central 中的 taxGroups 资源类型。
@@ -28,7 +28,7 @@ ms.locfileid: "30366688"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|GUID|taxGroup 的唯一 ID。 只读。|
-|code|字符串|指定税务组。|
+|code|string|指定税务组。|
 |displayName|string|指定税务组的显示名称。|
 |taxType|string|指定组的税金类型。|
 |lastModifiedDateTime|datetime|税组的最后修改日期时间。 只读。|  

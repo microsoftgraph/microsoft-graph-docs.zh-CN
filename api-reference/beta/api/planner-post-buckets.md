@@ -5,15 +5,13 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 8baf98de9431c0627edfcf4adb8c04a16bc2a77f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525708"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539037"
 ---
 # <a name="create-plannerbucket"></a>创建 plannerBucket
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 新建 **plannerBucket**。
 
@@ -54,7 +52,7 @@ POST /planner/buckets
   "name": "create_plannerbucket_from_planner"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/planner/buckets
+POST https://graph.microsoft.com/v1.0/planner/buckets
 Content-type: application/json
 Content-length: 92
 
@@ -87,15 +85,10 @@ Content-length: 145
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create plannerBucket",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/planner-post-buckets.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->
