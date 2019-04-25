@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 0c93ecd601e941cd68f0b6f8d668775e7de3feef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975957"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550040"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -46,11 +46,11 @@ PATCH /education/users/{id}
 |surname| String | 用户的姓|
 |mail| String| 电子邮件地址|
 |mobilePhone| String | 用户的移动电话号码 |
-|externalSource|string| 可能的值为： `sis`， `manual`， `enum_sentinel`。|
-|externalSource|string| 创建此用户的位置。  可能的值为： `sis`， `manual`， `enum_sentinel`。|
+|externalSource|string| 可能的值包括 `sis`、`manual`、`enum_sentinel`。|
+|externalSource|string| 创建此用户的位置。  可能的值包括 `sis`、`manual`、`enum_sentinel`。|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| 用户的邮件地址。|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| 用户所在的地址。|
-|primaryRole|string| 用户的默认角色。  用户的角色在各课程中可能有所不同。 可能的值为： `student`， `teacher`， `enum_sentinel`。|
+|primaryRole|string| 用户的默认角色。  用户的角色在各课程中可能有所不同。 可能的值包括 `student`、`teacher`、`enum_sentinel`。|
 |student|[educationStudent](../resources/educationstudent.md)| 如果主要角色为学生，此部分将包含特定于学生的数据。|
 |teacher|[educationTeacher](../resources/educationteacher.md)| 如果主要角色为教师，此部分将包含特定于教师的数据。|
 
