@@ -1,33 +1,33 @@
 ---
 title: 创建页面
-description: 在默认笔记本的默认分区中新建 OneNote 页面。
+description: 在默认笔记本的默认分区中创建新的 OneNote 页面。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 799650628ae2436c2162adf2f1cbf692ee35d4f4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983441"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562116"
 ---
-# <a name="create-page"></a><span data-ttu-id="45034-103">创建页面</span><span class="sxs-lookup"><span data-stu-id="45034-103">Create page</span></span>
+# <a name="create-page"></a><span data-ttu-id="98869-103">创建页面</span><span class="sxs-lookup"><span data-stu-id="98869-103">Create page</span></span>
 
-<span data-ttu-id="45034-104">在默认笔记本的默认分区中新建 OneNote 页面。</span><span class="sxs-lookup"><span data-stu-id="45034-104">Create a new OneNote page in the default section of the default notebook.</span></span>
+<span data-ttu-id="98869-104">在默认笔记本的默认分区中创建新的 OneNote 页面。</span><span class="sxs-lookup"><span data-stu-id="98869-104">Create a new OneNote page in the default section of the default notebook.</span></span>
 
-<span data-ttu-id="45034-p101">若要在默认笔记本的不同分区中创建页面，可以使用 `sectionName` 查询参数。示例：`../onenote/pages?sectionName=My%20section`</span><span class="sxs-lookup"><span data-stu-id="45034-p101">To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.  Example: `../onenote/pages?sectionName=My%20section`</span></span>
+<span data-ttu-id="98869-105">若要在默认笔记本的不同节中创建页面, 可以使用`sectionName`查询参数。</span><span class="sxs-lookup"><span data-stu-id="98869-105">To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.</span></span>  <span data-ttu-id="98869-106">示例：`../onenote/pages?sectionName=My%20section`</span><span class="sxs-lookup"><span data-stu-id="98869-106">Example: `../onenote/pages?sectionName=My%20section`</span></span>
 
-<span data-ttu-id="45034-p102">`POST /onenote/pages` 操作仅用于在当前用户的默认笔记本中创建页面。如果你将其他笔记本作为目标，则可以[在指定分区中创建页面](../api/section-post-pages.md)。</span><span class="sxs-lookup"><span data-stu-id="45034-p102">The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook. If you're targeting other notebooks, you can [create pages in a specified section](../api/section-post-pages.md).</span></span>           
-## <a name="permissions"></a><span data-ttu-id="45034-109">权限</span><span class="sxs-lookup"><span data-stu-id="45034-109">Permissions</span></span>
-<span data-ttu-id="45034-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="45034-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="98869-107">该`POST /onenote/pages`操作仅用于在当前用户的默认笔记本中创建页面。</span><span class="sxs-lookup"><span data-stu-id="98869-107">The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook.</span></span> <span data-ttu-id="98869-108">如果要将其他笔记本作为目标, 可以[在指定分区中创建页面](../api/section-post-pages.md)。</span><span class="sxs-lookup"><span data-stu-id="98869-108">If you're targeting other notebooks, you can [create pages in a specified section](../api/section-post-pages.md).</span></span>           
+## <a name="permissions"></a><span data-ttu-id="98869-109">权限</span><span class="sxs-lookup"><span data-stu-id="98869-109">Permissions</span></span>
+<span data-ttu-id="98869-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="98869-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="45034-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="45034-112">Permission type</span></span>      | <span data-ttu-id="45034-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="45034-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="98869-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="98869-112">Permission type</span></span>      | <span data-ttu-id="98869-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="98869-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="45034-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="45034-114">Delegated (work or school account)</span></span> | <span data-ttu-id="45034-115">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45034-115">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="45034-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="45034-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45034-117">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="45034-117">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="45034-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="45034-118">Application</span></span> | <span data-ttu-id="45034-119">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45034-119">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="98869-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="98869-114">Delegated (work or school account)</span></span> | <span data-ttu-id="98869-115">Notes.Create、Notes.ReadWrite、Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98869-115">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="98869-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="98869-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="98869-117">Notes.Create、Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="98869-117">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="98869-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="98869-118">Application</span></span> | <span data-ttu-id="98869-119">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="98869-119">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="45034-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="45034-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98869-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="98869-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -37,26 +37,26 @@ POST /groups/{id}/onenote/pages
 POST /sites/{id}/onenote/pages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="45034-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="45034-121">Request headers</span></span>  
-| <span data-ttu-id="45034-122">名称</span><span class="sxs-lookup"><span data-stu-id="45034-122">Name</span></span>       | <span data-ttu-id="45034-123">类型</span><span class="sxs-lookup"><span data-stu-id="45034-123">Type</span></span> | <span data-ttu-id="45034-124">说明</span><span class="sxs-lookup"><span data-stu-id="45034-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="98869-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="98869-121">Request headers</span></span>  
+| <span data-ttu-id="98869-122">名称</span><span class="sxs-lookup"><span data-stu-id="98869-122">Name</span></span>       | <span data-ttu-id="98869-123">类型</span><span class="sxs-lookup"><span data-stu-id="98869-123">Type</span></span> | <span data-ttu-id="98869-124">说明</span><span class="sxs-lookup"><span data-stu-id="98869-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="45034-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="45034-125">Authorization</span></span>  | <span data-ttu-id="45034-126">string</span><span class="sxs-lookup"><span data-stu-id="45034-126">string</span></span>  | <span data-ttu-id="45034-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="45034-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="45034-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="45034-129">Content-Type</span></span> | <span data-ttu-id="45034-130">string</span><span class="sxs-lookup"><span data-stu-id="45034-130">string</span></span> | <span data-ttu-id="45034-p105">HTML 内容（包括多部分请求必备的“演示”部分）的 `text/html` 或 `application/xhtml+xml`。多部分请求使用 `multipart/form-data; boundary=your-boundary` 内容类型。</span><span class="sxs-lookup"><span data-stu-id="45034-p105">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
+| <span data-ttu-id="98869-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="98869-125">Authorization</span></span>  | <span data-ttu-id="98869-126">string</span><span class="sxs-lookup"><span data-stu-id="98869-126">string</span></span>  | <span data-ttu-id="98869-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="98869-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="98869-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="98869-129">Content-Type</span></span> | <span data-ttu-id="98869-130">string</span><span class="sxs-lookup"><span data-stu-id="98869-130">string</span></span> | <span data-ttu-id="98869-p105">HTML 内容（包括多部分请求必备的“演示”部分）的 `text/html` 或 `application/xhtml+xml`。多部分请求使用 `multipart/form-data; boundary=your-boundary` 内容类型。</span><span class="sxs-lookup"><span data-stu-id="98869-p105">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="45034-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="45034-133">Request body</span></span>
-<span data-ttu-id="45034-134">在请求正文中，提供页面的 HTML 内容。</span><span class="sxs-lookup"><span data-stu-id="45034-134">In the request body, supply the HTML content for the page.</span></span>
+## <a name="request-body"></a><span data-ttu-id="98869-133">请求正文</span><span class="sxs-lookup"><span data-stu-id="98869-133">Request body</span></span>
+<span data-ttu-id="98869-134">在请求正文中, 提供页面的 HTML 内容。</span><span class="sxs-lookup"><span data-stu-id="98869-134">In the request body, supply the HTML content for the page.</span></span>
 
-<span data-ttu-id="45034-p106">正文可以将 HTML 直接置于请求正文中，或者其可以包含多部分消息格式，如示例中所示。如果要发送二进制数据，则必须发送多部分请求。</span><span class="sxs-lookup"><span data-stu-id="45034-p106">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
+<span data-ttu-id="98869-p106">正文可以将 HTML 直接置于请求正文中，或者其可以包含多部分消息格式，如示例中所示。如果要发送二进制数据，则必须发送多部分请求。</span><span class="sxs-lookup"><span data-stu-id="98869-p106">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
 
-## <a name="response"></a><span data-ttu-id="45034-137">响应</span><span class="sxs-lookup"><span data-stu-id="45034-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="98869-137">响应</span><span class="sxs-lookup"><span data-stu-id="98869-137">Response</span></span>
 
-<span data-ttu-id="45034-138">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [page](../resources/page.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="45034-138">If successful, this method returns a `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
+<span data-ttu-id="98869-138">如果成功, 此方法在响应`201 Created`正文中返回响应代码和新的[page](../resources/page.md)对象。</span><span class="sxs-lookup"><span data-stu-id="98869-138">If successful, this method returns a `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="45034-139">示例</span><span class="sxs-lookup"><span data-stu-id="45034-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="45034-140">请求</span><span class="sxs-lookup"><span data-stu-id="45034-140">Request</span></span>
-<span data-ttu-id="45034-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="45034-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="98869-139">示例</span><span class="sxs-lookup"><span data-stu-id="98869-139">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="98869-140">请求</span><span class="sxs-lookup"><span data-stu-id="98869-140">Request</span></span>
+<span data-ttu-id="98869-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="98869-141">Here is an example of the request.</span></span>
 
-<span data-ttu-id="45034-p107">在 `../onenote/pages` 路径下，可以使用 `sectionName` 查询参数在默认笔记本的特定分区中创建页面。示例：`../onenote/pages?sectionName=My%20section`。如果分区不存在（或已重命名），API 将创建新的分区。</span><span class="sxs-lookup"><span data-stu-id="45034-p107">In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.</span></span>
+<span data-ttu-id="98869-142">在`../onenote/pages`路径中, 可以使用`sectionName`查询参数在默认笔记本的特定节中创建页面。</span><span class="sxs-lookup"><span data-stu-id="98869-142">In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook.</span></span> <span data-ttu-id="98869-143">示例：`../onenote/pages?sectionName=My%20section`。</span><span class="sxs-lookup"><span data-stu-id="98869-143">Example: `../onenote/pages?sectionName=My%20section`.</span></span> <span data-ttu-id="98869-144">如果该节不存在 (或已重命名), API 将创建一个新分区。</span><span class="sxs-lookup"><span data-stu-id="98869-144">If the section doesn't exist (or was renamed), the API will create a new section.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -98,9 +98,8 @@ Content-Type:application/pdf
 
 --MyPartBoundary198374--
 ```
-##### <a name="response"></a><span data-ttu-id="45034-145">响应</span><span class="sxs-lookup"><span data-stu-id="45034-145">Response</span></span>
-<span data-ttu-id="45034-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="45034-146">Here is an example of the response.</span></span> <span data-ttu-id="45034-147">注意： 为了简单起见截断如下所示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="45034-147">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="45034-148">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="45034-148">All of the properties will be returned from an actual call.</span></span>
-<!-- { "blockType": "ignored" } -->
+##### <a name="response"></a><span data-ttu-id="98869-145">响应</span><span class="sxs-lookup"><span data-stu-id="98869-145">Response</span></span>
+<span data-ttu-id="98869-p108">下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="98869-p108">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call. </span></span><!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
