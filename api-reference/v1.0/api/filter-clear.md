@@ -3,47 +3,47 @@ title: 'Filter: clear'
 description: 清除给定列上的筛选器。
 localization_priority: Normal
 ms.openlocfilehash: bea500516e898fbbad2bbb881be437004405fb84
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872238"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524153"
 ---
-# <a name="filter-clear"></a><span data-ttu-id="650b7-103">Filter: clear</span><span class="sxs-lookup"><span data-stu-id="650b7-103">Filter: clear</span></span>
+# <a name="filter-clear"></a><span data-ttu-id="94365-103">Filter: clear</span><span class="sxs-lookup"><span data-stu-id="94365-103">Filter: clear</span></span>
 
-<span data-ttu-id="650b7-104">清除给定列上的筛选器。</span><span class="sxs-lookup"><span data-stu-id="650b7-104">Clear the filter on the given column.</span></span>
-## <a name="permissions"></a><span data-ttu-id="650b7-105">权限</span><span class="sxs-lookup"><span data-stu-id="650b7-105">Permissions</span></span>
-<span data-ttu-id="650b7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="650b7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="94365-104">清除给定列上的筛选器。</span><span class="sxs-lookup"><span data-stu-id="94365-104">Clear the filter on the given column.</span></span>
+## <a name="permissions"></a><span data-ttu-id="94365-105">权限</span><span class="sxs-lookup"><span data-stu-id="94365-105">Permissions</span></span>
+<span data-ttu-id="94365-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="94365-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="650b7-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="650b7-108">Permission type</span></span>      | <span data-ttu-id="650b7-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="650b7-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="94365-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="94365-108">Permission type</span></span>      | <span data-ttu-id="94365-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="94365-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="650b7-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="650b7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="650b7-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="650b7-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="650b7-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="650b7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="650b7-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="650b7-113">Not supported.</span></span>    |
-|<span data-ttu-id="650b7-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="650b7-114">Application</span></span> | <span data-ttu-id="650b7-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="650b7-115">Not supported.</span></span> |
+|<span data-ttu-id="94365-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="94365-110">Delegated (work or school account)</span></span> | <span data-ttu-id="94365-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="94365-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="94365-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="94365-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="94365-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="94365-113">Not supported.</span></span>    |
+|<span data-ttu-id="94365-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="94365-114">Application</span></span> | <span data-ttu-id="94365-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="94365-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="650b7-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="650b7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="94365-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="94365-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/{id|name}/filter/clear
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="650b7-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="650b7-117">Request headers</span></span>
-| <span data-ttu-id="650b7-118">名称</span><span class="sxs-lookup"><span data-stu-id="650b7-118">Name</span></span>       | <span data-ttu-id="650b7-119">说明</span><span class="sxs-lookup"><span data-stu-id="650b7-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="94365-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="94365-117">Request headers</span></span>
+| <span data-ttu-id="94365-118">名称</span><span class="sxs-lookup"><span data-stu-id="94365-118">Name</span></span>       | <span data-ttu-id="94365-119">说明</span><span class="sxs-lookup"><span data-stu-id="94365-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="650b7-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="650b7-120">Authorization</span></span>  | <span data-ttu-id="650b7-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="650b7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="94365-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="94365-120">Authorization</span></span>  | <span data-ttu-id="94365-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="94365-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="650b7-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="650b7-123">Request body</span></span>
-<span data-ttu-id="650b7-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="650b7-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="94365-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="94365-123">Request body</span></span>
+<span data-ttu-id="94365-124">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="94365-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="650b7-125">响应</span><span class="sxs-lookup"><span data-stu-id="650b7-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="94365-125">响应</span><span class="sxs-lookup"><span data-stu-id="94365-125">Response</span></span>
 
-<span data-ttu-id="650b7-p103">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="650b7-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="94365-p103">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="94365-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="650b7-128">示例</span><span class="sxs-lookup"><span data-stu-id="650b7-128">Example</span></span>
-<span data-ttu-id="650b7-129">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="650b7-129">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="650b7-130">请求</span><span class="sxs-lookup"><span data-stu-id="650b7-130">Request</span></span>
-<span data-ttu-id="650b7-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="650b7-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="94365-128">示例</span><span class="sxs-lookup"><span data-stu-id="94365-128">Example</span></span>
+<span data-ttu-id="94365-129">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="94365-129">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="94365-130">请求</span><span class="sxs-lookup"><span data-stu-id="94365-130">Request</span></span>
+<span data-ttu-id="94365-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="94365-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "filter_clear"
@@ -52,8 +52,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/cl
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
 ```
 
-##### <a name="response"></a><span data-ttu-id="650b7-132">响应</span><span class="sxs-lookup"><span data-stu-id="650b7-132">Response</span></span>
-<span data-ttu-id="650b7-133">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="650b7-133">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="94365-132">响应</span><span class="sxs-lookup"><span data-stu-id="94365-132">Response</span></span>
+<span data-ttu-id="94365-133">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="94365-133">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

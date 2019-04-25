@@ -3,28 +3,28 @@ title: timeZoneBase 资源类型
 description: 时区的基本表示形式。
 localization_priority: Normal
 ms.openlocfilehash: 9fc07961aaa475980309d8c843b613da8b42e448
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511644"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523012"
 ---
-# <a name="timezonebase-resource-type"></a><span data-ttu-id="22b0d-103">timeZoneBase 资源类型</span><span class="sxs-lookup"><span data-stu-id="22b0d-103">timeZoneBase resource type</span></span>
+# <a name="timezonebase-resource-type"></a><span data-ttu-id="9ebb4-103">timeZoneBase 资源类型</span><span class="sxs-lookup"><span data-stu-id="9ebb4-103">timeZoneBase resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="22b0d-104">时区的基本表示形式。</span><span class="sxs-lookup"><span data-stu-id="22b0d-104">The basic representation of a time zone.</span></span>
+<span data-ttu-id="9ebb4-104">时区的基本表示形式。</span><span class="sxs-lookup"><span data-stu-id="9ebb4-104">The basic representation of a time zone.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="22b0d-105">属性</span><span class="sxs-lookup"><span data-stu-id="22b0d-105">Properties</span></span>
-| <span data-ttu-id="22b0d-106">属性</span><span class="sxs-lookup"><span data-stu-id="22b0d-106">Property</span></span>     | <span data-ttu-id="22b0d-107">类型</span><span class="sxs-lookup"><span data-stu-id="22b0d-107">Type</span></span>   |<span data-ttu-id="22b0d-108">说明</span><span class="sxs-lookup"><span data-stu-id="22b0d-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9ebb4-105">属性</span><span class="sxs-lookup"><span data-stu-id="9ebb4-105">Properties</span></span>
+| <span data-ttu-id="9ebb4-106">属性</span><span class="sxs-lookup"><span data-stu-id="9ebb4-106">Property</span></span>     | <span data-ttu-id="9ebb4-107">类型</span><span class="sxs-lookup"><span data-stu-id="9ebb4-107">Type</span></span>   |<span data-ttu-id="9ebb4-108">说明</span><span class="sxs-lookup"><span data-stu-id="9ebb4-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="22b0d-109">name</span><span class="sxs-lookup"><span data-stu-id="22b0d-109">name</span></span> | <span data-ttu-id="22b0d-110">string</span><span class="sxs-lookup"><span data-stu-id="22b0d-110">string</span></span> | <span data-ttu-id="22b0d-111">时区的名称。</span><span class="sxs-lookup"><span data-stu-id="22b0d-111">The name of a time zone.</span></span> <span data-ttu-id="22b0d-112">它可以是一个标准时区名称，例如“夏威夷-阿留申标准时间”，或自定义时区的“自定义时区”。</span><span class="sxs-lookup"><span data-stu-id="22b0d-112">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
+| <span data-ttu-id="9ebb4-109">name</span><span class="sxs-lookup"><span data-stu-id="9ebb4-109">name</span></span> | <span data-ttu-id="9ebb4-110">string</span><span class="sxs-lookup"><span data-stu-id="9ebb4-110">string</span></span> | <span data-ttu-id="9ebb4-111">时区的名称。</span><span class="sxs-lookup"><span data-stu-id="9ebb4-111">The name of a time zone.</span></span> <span data-ttu-id="9ebb4-112">它可以是一个标准时区名称，例如“夏威夷-阿留申标准时间”，或自定义时区的“自定义时区”。</span><span class="sxs-lookup"><span data-stu-id="9ebb4-112">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="22b0d-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="22b0d-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9ebb4-113">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="9ebb4-113">JSON representation</span></span>
 
-<span data-ttu-id="22b0d-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="22b0d-114">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9ebb4-114">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="9ebb4-114">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

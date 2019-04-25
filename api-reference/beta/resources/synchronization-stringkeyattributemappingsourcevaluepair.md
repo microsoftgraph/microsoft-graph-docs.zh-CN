@@ -1,29 +1,29 @@
 ---
 title: stringKeyAttributeMappingSourceValuePair 资源类型
-description: 表示其中的密钥是一个字符串，并且值为 attributeMappingSource 的键 / 值对。
+description: 表示键值对, 其中键是字符串, 值为 attributeMappingSource。
 localization_priority: Normal
 ms.openlocfilehash: ff914c23a238356a821d2902bf18900cf9957548
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516215"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523222"
 ---
-# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a><span data-ttu-id="5f0ae-103">stringKeyAttributeMappingSourceValuePair 资源类型</span><span class="sxs-lookup"><span data-stu-id="5f0ae-103">stringKeyAttributeMappingSourceValuePair resource type</span></span>
+# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a><span data-ttu-id="47c8d-103">stringKeyAttributeMappingSourceValuePair 资源类型</span><span class="sxs-lookup"><span data-stu-id="47c8d-103">stringKeyAttributeMappingSourceValuePair resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5f0ae-104">表示其中的密钥是一个字符串，并且值为[attributeMappingSource](synchronization-attributemappingsource.md)的键 / 值对。</span><span class="sxs-lookup"><span data-stu-id="5f0ae-104">Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).</span></span>
+<span data-ttu-id="47c8d-104">表示键值对, 其中键是字符串, 值为[attributeMappingSource](synchronization-attributemappingsource.md)。</span><span class="sxs-lookup"><span data-stu-id="47c8d-104">Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5f0ae-105">属性</span><span class="sxs-lookup"><span data-stu-id="5f0ae-105">Properties</span></span>
-| <span data-ttu-id="5f0ae-106">属性</span><span class="sxs-lookup"><span data-stu-id="5f0ae-106">Property</span></span>     | <span data-ttu-id="5f0ae-107">类型</span><span class="sxs-lookup"><span data-stu-id="5f0ae-107">Type</span></span>   |<span data-ttu-id="5f0ae-108">说明</span><span class="sxs-lookup"><span data-stu-id="5f0ae-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="47c8d-105">属性</span><span class="sxs-lookup"><span data-stu-id="47c8d-105">Properties</span></span>
+| <span data-ttu-id="47c8d-106">属性</span><span class="sxs-lookup"><span data-stu-id="47c8d-106">Property</span></span>     | <span data-ttu-id="47c8d-107">类型</span><span class="sxs-lookup"><span data-stu-id="47c8d-107">Type</span></span>   |<span data-ttu-id="47c8d-108">说明</span><span class="sxs-lookup"><span data-stu-id="47c8d-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5f0ae-109">Key</span><span class="sxs-lookup"><span data-stu-id="5f0ae-109">key</span></span>|<span data-ttu-id="5f0ae-110">String</span><span class="sxs-lookup"><span data-stu-id="5f0ae-110">String</span></span>|<span data-ttu-id="5f0ae-111">参数的名称。</span><span class="sxs-lookup"><span data-stu-id="5f0ae-111">The name of the parameter.</span></span>|
-|<span data-ttu-id="5f0ae-112">值</span><span class="sxs-lookup"><span data-stu-id="5f0ae-112">value</span></span>|[<span data-ttu-id="5f0ae-113">attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="5f0ae-113">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="5f0ae-114">参数的值。</span><span class="sxs-lookup"><span data-stu-id="5f0ae-114">The value of the parameter.</span></span>|
+|<span data-ttu-id="47c8d-109">Key</span><span class="sxs-lookup"><span data-stu-id="47c8d-109">key</span></span>|<span data-ttu-id="47c8d-110">String</span><span class="sxs-lookup"><span data-stu-id="47c8d-110">String</span></span>|<span data-ttu-id="47c8d-111">参数的名称。</span><span class="sxs-lookup"><span data-stu-id="47c8d-111">The name of the parameter.</span></span>|
+|<span data-ttu-id="47c8d-112">值</span><span class="sxs-lookup"><span data-stu-id="47c8d-112">value</span></span>|[<span data-ttu-id="47c8d-113">attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="47c8d-113">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="47c8d-114">参数的值。</span><span class="sxs-lookup"><span data-stu-id="47c8d-114">The value of the parameter.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5f0ae-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="5f0ae-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="47c8d-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="47c8d-115">JSON representation</span></span>
 
-<span data-ttu-id="5f0ae-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5f0ae-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="47c8d-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="47c8d-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
