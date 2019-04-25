@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: d398782cef79cdf92bc56502f7c6cbf1bcdee99d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979283"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553608"
 ---
 # <a name="teamsdeviceusagedistributionusercounts-resource-type"></a>teamsDeviceUsageDistributionUserCounts 资源类型
 
@@ -17,13 +17,13 @@ ms.locfileid: "27979283"
 
 | 属性          | 类型   |
 | :---------------- | :----- |
-| reportRefreshDate | 日期   |
+| reportRefreshDate | Date   |
 | web               | Int64  |
 | windowsPhone      | Int64  |
 | androidPhone      | Int64  |
 | ios               | Int64  |
 | mac               | Int64  |
-| windows           | Int64  |
+| 时间           | Int64  |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式

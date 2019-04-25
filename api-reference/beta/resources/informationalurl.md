@@ -3,11 +3,11 @@ title: informationalUrl 资源类型
 description: 应用程序的基本配置文件信息。
 localization_priority: Normal
 ms.openlocfilehash: 5085c144045631c530cbb66f5e1f27186a63b380
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513646"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548703"
 ---
 # <a name="informationalurl-resource-type"></a>informationalUrl 资源类型
 
@@ -19,10 +19,10 @@ ms.locfileid: "29513646"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|市场营销|String| 链接到应用程序的市场营销页。 例如，https://www.contoso.com/app/marketing |
-|隐私|String| 链接到应用程序的隐私声明。 例如，https://www.contoso.com/app/privacy |
-|支持|String| 链接到应用程序的支持网页。 例如，https://www.contoso.com/app/support |
-|termsOfService|String| 链接到的服务语句的应用程序的术语。 例如，https://www.contoso.com/app/termsofservice |
+|部门|String| 指向应用程序的市场营销页面的链接。 例如，https://www.contoso.com/app/marketing |
+|私密性|String| 指向应用程序的隐私声明的链接。 例如，https://www.contoso.com/app/privacy |
+|支持|String| 指向应用程序的支持页的链接。 例如，https://www.contoso.com/app/support |
+|termsOfService|String| 指向应用程序的服务条款声明的链接。 例如，https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

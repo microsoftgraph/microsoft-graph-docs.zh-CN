@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2b0011c0f6833599493a64734aeb3e29147bf949
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771228"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551888"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31771228"
 |:---|:---|:---|
 |success|0|尚未记录|
 |transientError|1|尚未记录|
-|错误|双面|尚未记录|
-|unknown|第三章|尚未记录|
+|error|2 |尚未记录|
+|unknown|3 |尚未记录|
 |azureStorageUriRequestSuccess|100|尚未记录|
 |azureStorageUriRequestPending|101|尚未记录|
 |azureStorageUriRequestFailed|102|尚未记录|

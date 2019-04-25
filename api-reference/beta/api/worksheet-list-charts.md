@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9f3b293f0f52086e7d34bd9dff3c909fe4c5b85b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641601"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547618"
 ---
 # <a name="list-charts"></a>列出图表
 

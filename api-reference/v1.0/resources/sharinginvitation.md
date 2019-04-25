@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
 ms.openlocfilehash: 0cb09136f4093b290f37ee851cb7d2d0ca10c1bf
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480542"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549592"
 ---
 # <a name="sharinginvitation-resource-type"></a>SharingInvitation 资源类型
 

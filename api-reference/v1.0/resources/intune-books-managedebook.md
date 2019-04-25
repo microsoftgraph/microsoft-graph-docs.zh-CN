@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ae6151c23bf05b076ade441f908a2810c80f45ed
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253461"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534358"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
@@ -28,8 +28,8 @@ ms.locfileid: "30253461"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|字符串|实体的键。|
-|displayName|String|电子书的名称。|
-|description|字符串|说明。|
+|displayName|字符串|电子书的名称。|
+|description|String|说明。|
 |publisher|String|发布者。|
 |publishedDateTime|DateTimeOffset|电子书的发布日期和时间。|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。|
@@ -39,7 +39,7 @@ ms.locfileid: "30253461"
 |privacyInformationUrl|String|隐私声明 Url。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|描述|
+|关系|类型|说明|
 |:---|:---|:---|
 |assignments|[managedEBookAssignment](../resources/intune-books-managedebookassignment.md) 集合|此电子书的分配列表。|
 |installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|移动应用安装摘要。|

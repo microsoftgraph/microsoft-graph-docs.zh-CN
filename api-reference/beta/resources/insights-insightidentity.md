@@ -5,11 +5,11 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643886"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549564"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
@@ -32,8 +32,8 @@ ms.locfileid: "29643886"
 
 | 属性              | 类型          | 说明  |
 | -------------         |-----------    | -------------|
-| displayName       | String          | 共享项目的用户的显示名称。 |
-| id              | String        | 共享项目的用户的 id。     |
+| displayName       | 字符串          | 共享项目的用户的显示名称。 |
+| id              | String        | 共享项的用户的 id。     |
 | address             | String      | 共享项目的用户的电子邮件地址。  |
 <!--
 {

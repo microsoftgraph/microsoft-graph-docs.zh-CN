@@ -1,53 +1,53 @@
 ---
 title: teamsApp 资源类型
-description: 应用程序中的 Microsoft 团队应用程序目录。
+description: Microsoft 团队应用程序目录中的应用程序。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: fe60222ae6c5d8475722e18e69555df2d3892759
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529941"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553948"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-应用程序中[的 Microsoft 团队](teams-api-overview.md)应用程序目录。
+[Microsoft 团队](teams-api-overview.md)应用程序目录中的应用程序。
 
-用户可以看到这些应用程序中 Microsoft 团队存储，并且可以将这些应用程序安装中[团队](team.md)使用[添加到团队的应用程序](../api/teamsappinstallation-add.md)方法。
+用户可以在 Microsoft 团队存储中查看这些应用程序, 并且可以使用 "向[团队添加应用程序](../api/teamsappinstallation-add.md)" 方法在[团队](team.md)中安装这些应用程序。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出已发布的应用程序](../api/teamsapp-list.md) | [teamsApp](teamsapp.md) 集合 | 列出来自 Microsoft 团队的应用程序目录的已发布应用程序。|
+|[列出已发布的应用程序](../api/teamsapp-list.md) | [teamsApp](teamsapp.md) 集合 | 列出 Microsoft 团队应用程序目录中的已发布应用程序。|
 |[发布应用程序](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | 将应用程序发布到组织的应用程序目录。|
-|[更新的已发布的应用程序](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 更新组织的应用程序目录中的已发布应用程序。|
-|[删除已发布的应用程序](../api/teamsapp-delete.md) | 无 | 从组织的应用程序目录中删除的已发布的应用程序。|
+|[更新已发布的应用程序](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 更新组织的应用程序目录中的已发布应用程序。|
+|[删除已发布的应用程序](../api/teamsapp-delete.md) | 无 | 从组织的应用程序目录中删除已发布的应用程序。|
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 目录应用程序的生成应用程序 ID （不同[的 Microsoft 团队 zip 应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中的开发人员提供的 ID。 |
-| externalId          | string   | 目录中[的 Microsoft 团队 zip 应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)的应用程序开发人员提供的 ID。 |
-| displayName                | string   | 目录应用程序[的 Microsoft 团队 zip 应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中应用程序开发人员提供的名称。 |
-| distributionMethod  | teamsAppDistributionMethod     | 应用程序分配方法。 |
+| id                  | string   | 目录应用程序生成的应用程序 id (与[Microsoft 团队 zip 应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中开发人员提供的 id 不同。 |
+| externalId          | string   | [Microsoft 团队 zip 应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中的应用程序开发人员提供的目录的 ID。 |
+| displayName                | string   | [Microsoft 团队 zip 应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中的应用程序开发人员提供的目录应用程序的名称。 |
+| distributionMethod  | teamsAppDistributionMethod     | 应用的分发方法。 |
 
 ### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod 值
 
 |Member|值|说明|
 |:---|:---|:---|
-|存储区|0%| 应用程序都可以通过 Microsoft 团队应用程序商店的所有租户。|
-|组织|$1|只能在此租户应用程序。|
-|sideloaded|-2|应用程序是仅供用户/工作组其安装到。|
+|microsoft|0| 该应用程序可通过 Microsoft 团队应用商店对所有租户可用。|
+|组织|1|该应用程序仅在此租户中可用。|
+|旁加载|2 |该应用程序仅适用于其安装到的用户/团队。|
 
 ## <a name="relationships"></a>关系
 
-| 关系 | 类型   | 描述 |
+| 关系 | 类型   | 说明 |
 |:---------------|:--------|:----------|
 |appDefinitions|[teamsAppDefinition](teamsappdefinition.md)集合| 每个版本的应用程序的详细信息。 |
 
@@ -70,7 +70,7 @@ ms.locfileid: "29529941"
 
 # <a name="see-also"></a>另请参阅
 
-- [teamsappinstallation](teamsappinstallation.md)
+- [teamsAppInstallation](teamsappinstallation.md)
 - [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
 

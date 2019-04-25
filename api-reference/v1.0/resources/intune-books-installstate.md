@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1672872dfe355bdd034d829a1d3b387fc9dadbcb
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264363"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565959"
 ---
 # <a name="installstate-enum-type"></a>installState 枚举类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "30264363"
 |:---|:---|:---|
 |notApplicable|0|不适用。|
 |了|1|了.|
-|failed|双面|未能.|
-|notInstalled|第三章|未安装。|
-|uninstallFailed|4|卸载失败。|
-|unknown|5|陌生.|
+|未能|2 |未能.|
+|notInstalled|3 |未安装。|
+|uninstallFailed|4 |卸载失败。|
+|unknown|5 |陌生.|
 
 
 

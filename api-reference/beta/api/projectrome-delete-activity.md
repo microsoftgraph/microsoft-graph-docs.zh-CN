@@ -1,20 +1,18 @@
 ---
 title: 删除活动
-description: 删除现有用户活动应用程序。
+description: 删除应用程序的现有用户活动。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 78a3d2363d569a66985199fa2a6b2c6a5f6e5d30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526933"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546376"
 ---
 # <a name="delete-an-activity"></a>删除活动
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-删除现有用户活动应用程序。
+删除应用程序的现有用户活动。
 
 ## <a name="permissions"></a>权限
 
@@ -43,11 +41,11 @@ DELETE /me/activities/{id}
 
 ## <a name="request-body"></a>请求正文
 
-没有请求正文中。
+无请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`204 No Content`如果活动的已删除的响应代码。
+如果成功, 此方法将返回`204 No Content`响应代码 (如果活动已删除)。
 
 ## <a name="example"></a>示例
 
@@ -61,7 +59,7 @@ DELETE /me/activities/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
+DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
 ```
 
 ##### <a name="response"></a>响应
@@ -79,15 +77,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete activity",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-delete-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

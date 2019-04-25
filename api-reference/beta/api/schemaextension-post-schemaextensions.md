@@ -4,11 +4,11 @@ description: 创建一个新的 schemaExtension 定义以扩展支持资源类�
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 446339abd7bc99879df3b6ac19dd6040ab16bf03
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514311"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545644"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 
@@ -45,12 +45,12 @@ POST /schemaExtensions
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [schemaExtension](../resources/schemaextension.md) 对象的 JSON 表示形式。
 
-下表显示时创建的架构扩展可用的属性。
+下表显示创建架构扩展时可用的属性。
 
 | 参数 | 类型 | 说明|
 |:---------------|:--------|:----------|
-|说明|字符串|架构扩展的说明。|
-|id|字串符号|架构扩展定义的唯一标识符。 <br>你可以使用下面两种方法之一分配值： <ul><li>连接其中一个已验证域的域名与架构扩展名称，形成此格式的唯一字符串：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 示例：`contoso_mySchema`。 注意：仅支持以下顶级域下已经过验证的域：`.com`、`.net`、`.gov`、`.edu` 或 `.org`。 </li><li>提供一个架构名称，并让 Microsoft Graph 使用此格式的架构名称完成 **id** 分配：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如 `extkvbmkofy_mySchema`。</li></ul>此属性一旦创建，便无法更改。 |
+|说明|String|架构扩展的说明。|
+|id|字符串|架构扩展定义的唯一标识符。 <br>你可以使用下面两种方法之一分配值： <ul><li>连接其中一个已验证域的域名与架构扩展名称，形成此格式的唯一字符串：\{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}。 示例：`contoso_mySchema`。 注意：仅支持以下顶级域下已经过验证的域：`.com`、`.net`、`.gov`、`.edu` 或 `.org`。 </li><li>提供一个架构名称，并让 Microsoft Graph 使用此格式的架构名称完成 **id** 分配：ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}。例如 `extkvbmkofy_mySchema`。</li></ul>此属性一旦创建，便无法更改。 |
 |owner|String|（可选）属于架构扩展所有者的应用程序的 `appId`。 可在创建时提供此属性以设置所有者。  如果未提供，则会将调用应用程序的 `appId` 设置为所有者。 因此，如果使用 Graph 浏览器新建一个架构扩展定义，则**必须**提供 owner 属性（以此为例）。 设置后，此属性为只读，且无法更改。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。|
 |targetTypes|String collection|此架构扩展定义适用的支持架构扩展的 Microsoft Graph 资源类型集。|

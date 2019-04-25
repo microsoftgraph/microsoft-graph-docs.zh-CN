@@ -4,11 +4,11 @@ description: OneDrive 和 SharePoint 可以配置为保留文件的历史记录�
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: fa25734967aca0ad5c7022f147ca243530f1ac3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932061"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548110"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>列出 DriveItem 的版本
 
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 OneDrive 不保留文件以前版本的完整元数据。
 
-当应用检索文件的可用版本列表时，将返回 [DriveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。
+当应用程序检索文件的可用版本列表时，将返回 [DriveItemVersion](../resources/driveitemversion.md) 资源，它提供有关特定版本的可用信息。
 
 
 <!-- {

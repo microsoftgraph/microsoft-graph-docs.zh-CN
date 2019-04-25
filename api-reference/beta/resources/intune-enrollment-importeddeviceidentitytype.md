@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c22866ea0a79bc620595024f8182c3d0aa3f198d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802259"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542135"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>importedDeviceIdentityType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31802259"
 |:---|:---|:---|
 |unknown|0|importedDeviceIdentityType 的值未知。|
 |imei|1|设备标识的类型为 imei。|
-|serialNumber|双面|设备标识的类型为序列号。|
+|serialNumber|2 |设备标识的类型为序列号。|
 
 
 

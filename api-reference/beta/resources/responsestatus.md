@@ -3,11 +3,11 @@ title: responseStatus 资源类型
 description: 会议请求的响应状态。
 localization_priority: Normal
 ms.openlocfilehash: 270c432235b929af2cb55ff63e10397fea5f92fb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528072"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562984"
 ---
 # <a name="responsestatus-resource-type"></a>responseStatus 资源类型
 

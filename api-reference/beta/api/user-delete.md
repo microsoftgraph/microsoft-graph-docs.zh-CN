@@ -1,15 +1,15 @@
 ---
-title: 删除用户-Microsoft Graph API
-description: 介绍 Microsoft Graph API (REST) 的用户资源 (实体) 的 delete 方法。
+title: 删除用户 - Microsoft Graph API
+description: 介绍删除 Microsoft Graph API (REST) 的用户资源（实体）的方法。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f7f8ed5b11930865d88ed7f01530c052c3e63738
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253790"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548122"
 ---
 # <a name="delete-a-user"></a>删除用户
 
@@ -17,7 +17,7 @@ ms.locfileid: "30253790"
 
 删除用户。  
 
-删除后, 用户资源将移至临时容器, 并可在30天内恢复。  之后, 它们将被永久删除。  若要了解详细信息, 请参阅[deletedItems](../resources/directory.md)。
+删除时，将用户资源转移到存储时限为 30 日的临时容器中。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。
 
 ## <a name="permissions"></a>权限
 

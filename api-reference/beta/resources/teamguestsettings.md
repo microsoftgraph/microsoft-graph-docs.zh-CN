@@ -5,23 +5,23 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4d76ffcbc5ec675ee670394854183c07721c0af9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522306"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554007"
 ---
 # <a name="teamguestsettings-resource-type"></a>teamGuestSettings 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于配置来宾是否可以在团队中创建、更新或删除频道的设置。
+用于配置来宾是否可以在[团队](team.md)中创建、更新或删除频道的设置。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Boolean|如果设置为 true，则来宾可以添加和更新通道。|
-|allowDeleteChannels|Boolean|如果设置为 true，则来宾可以删除通道。|
+|allowCreateUpdateChannels|布尔值|如果设置为 true, 则来宾可以添加和更新频道。|
+|allowDeleteChannels|布尔值|如果设置为 true, 则来宾可以删除频道。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

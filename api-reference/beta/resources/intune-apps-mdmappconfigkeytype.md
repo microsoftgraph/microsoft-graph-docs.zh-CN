@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ea0fa95f79e3378b785001c80682c3188b094427
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802966"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554070"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>mdmAppConfigKeyType 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31802966"
 |:---|:---|:---|
 |stringType|0|尚未记录|
 |integerType|1|尚未记录|
-|realType|双面|尚未记录|
-|booleanType|第三章|尚未记录|
-|tokenType|4|尚未记录|
+|realType|2 |尚未记录|
+|booleanType|3 |尚未记录|
+|tokenType|4 |尚未记录|
 
 
 

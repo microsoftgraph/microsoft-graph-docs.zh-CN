@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1a337dc2d18ed5f10ecb9f8f654a7d19175fc476
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800908"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554252"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>windows81VpnProxyServer 资源类型
 

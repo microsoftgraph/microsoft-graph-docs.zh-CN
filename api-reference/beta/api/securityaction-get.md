@@ -4,12 +4,12 @@ description: 检索 securityAction 对象的属性和关系。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 7bcad2d3249b0ac7c5bd08d3d61742e7dc5166d6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: fcbecbd0c15efc493164929f769a79deb3cbd98a
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482250"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545502"
 ---
 # <a name="get-securityaction"></a>获取 securityAction
 
@@ -23,7 +23,7 @@ ms.locfileid: "30482250"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | SecurityActions、SecurityActions 和所有 |
+| 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | SecurityActions、SecurityActions 和所有 |
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。

@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 1999833036d4e1452cb45bedbd58a0e2d160df39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928015"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550453"
 ---
 # <a name="add-a-student"></a>添加学生
 
@@ -22,7 +22,7 @@ ms.locfileid: "27928015"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | EduRoster.ReadWrite.All 以及 Member.Read.Hidden | 
+|应用程序 | eduroster.read.all 所有加号 Member。 Read. Hidden | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

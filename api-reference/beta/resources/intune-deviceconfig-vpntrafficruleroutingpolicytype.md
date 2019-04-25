@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 360a7ea9ab46a9d482fd8e41c2d2a64041453e88
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777779"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555015"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>vpnTrafficRuleRoutingPolicyType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31777779"
 |:---|:---|:---|
 |无|0|未指定路由策略。|
 |splitTunnel|1|将通过 VPN 路由指定应用的网络流量。|
-|forceTunnel|双面|所有网络流量将通过 VPN 路由。|
+|forceTunnel|2 |所有网络流量将通过 VPN 路由。|
 
 
 

@@ -4,11 +4,11 @@ description: 将 ListItem 的以前版本还原为当前版本。 这将使用�
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 3ba63f56838d07a0031baf613dec8e0847aaf2e6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963393"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542058"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>还原 ListItem 的以前版本
 

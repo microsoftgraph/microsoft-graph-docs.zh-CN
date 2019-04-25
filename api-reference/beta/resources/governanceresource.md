@@ -1,19 +1,19 @@
 ---
 title: governanceResource 资源类型
-description: 表示无法管理特权标识管理 (PIM) 的资源。 有关 Azure 资源，它可以是订阅和资源组，如虚拟机、 SQL 数据库等资源。
+description: 表示可由特权标识管理 (PIM) 管理的资源。 对于 Azure 资源, 它可以是订阅、资源组和资源 (如虚拟机、SQL 数据库等)。
 localization_priority: Normal
 ms.openlocfilehash: 92a738350a47cc9eaf436382d020330fac89db1f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528555"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547422"
 ---
 # <a name="governanceresource-resource-type"></a>governanceResource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示无法管理特权标识管理 (PIM) 的资源。 有关 Azure 资源，它可以是订阅和资源组，如虚拟机、 SQL 数据库等资源。
+表示可由特权标识管理 (PIM) 管理的资源。 对于 Azure 资源, 它可以是订阅、资源组和资源 (如虚拟机、SQL 数据库等)。
 
 
 ## <a name="methods"></a>方法
@@ -21,33 +21,33 @@ ms.locfileid: "29528555"
 | 方法          | 返回类型 |说明|
 |:---------------|:--------|:----------|
 |[List](../api/governanceresource-list.md) | [governanceResource](../resources/governanceresource.md)集合|列出请求者有权访问的资源的集合。|
-|[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |读取属性并由 id 指定的资源实体的关系。|
-|注册 | |注册 PIM 服务非托管 Azure 订阅或管理组。 |
+|[获取](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |读取由 id 指定的资源实体的属性和关系。|
+|[报名](../api/governanceresource-register.md) | |将非托管 Azure 订阅或管理组注册到 PIM 服务。 |
 
-不`POST`， `PUT`， `PATCH`，`DELETE`支持`roleDefinitions`现在实体集。
+目前`POST`, `PUT`entity `PATCH`set `DELETE`上`roleDefinitions`不支持,,。
 
 ## <a name="properties"></a>属性
 | 属性          |类型         |说明|
 |:------------------|:----------|:----------|
-|id                 |字串符号     |资源的 ID。 处于 GUID 格式。|
-|externalId           |String   |外部资源，表示其原始 id 外部系统中的 id。 例如，订阅资源的外部 id 可以是"/ 订阅/c14ae696-5e0c-4e5d-88cc-bef6637737ac"。 |
-|type               |字符串     |必需。 资源类型 例如，对于 Azure 资源，键入无法为"订阅"、"ResourceGroup"、"Microsoft.Sql/server"等。|
-|displayName        |String     |资源的显示名称。|
-|status             |String     |给定资源的状态。 例如，它可能表示是否资源被锁定或未 (值： `Active` / `Locked`)。 注意： 该属性可能进行扩展，以便将来以支持更多方案。|
-|registeredDateTime|DateTimeOffset      |代表资源中 PIM 的注册时的日期时间。|
-|registeredRoot|String      |PIM 中注册的资源的根范围 externalId。 根范围可以是父、 祖父或更高版本上级资源。|
-|roleAssignmentCount|Int32      |可选。 给定资源的角色分配的数目。 若要获取的属性，请是明确使用`$select=roleAssignmentCount`查询中。|
-|roleDefinitionCount|Int32      |可选。 给定资源的角色定义的数目。 若要获取的属性，请是明确使用`$select=roleDefinitionCount`查询中。|
-|permissions|[governancePermission](../resources/governancepermission.md)      |可选。 它表示对资源的请求者的访问状态。若要获取的属性，请是明确使用`$select=permissions`查询中。|
+|id                 |String     |资源的 id。 它采用 GUID 格式。|
+|externalId           |String   |资源的外部 id, 表示其在外部系统中的原始 id。 例如, 订阅资源的外部 id 可以是 "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac"。 |
+|类型               |String     |必需。 资源类型。 例如, 对于 Azure 资源, 类型可以是 "订阅"、"ResourceGroup"、"Microsoft .sql/服务器" 等。|
+|displayName        |字符串     |资源的显示名称。|
+|状态             |字符串     |给定资源的状态。 例如, 它可以表示资源是否已锁定 (values: `Active` / `Locked`)。 注意: 将来可能会扩展此属性以支持更多方案。|
+|registeredDateTime|DateTimeOffset      |表示在 PIM 中注册资源的日期时间。|
+|registeredRoot|String      |在 PIM 中注册的资源的根作用域的 externalId。 根作用域可以是父级、祖父或更高的上级资源。|
+|roleAssignmentCount|Int32      |可选。 给定资源的角色分配数。 若要获取属性, 请明确在`$select=roleAssignmentCount`查询中使用。|
+|roleDefinitionCount|Int32      |可选。 给定资源的角色定义的数量。 若要获取属性, 请明确在`$select=roleDefinitionCount`查询中使用。|
+|permissions|[governancePermission](../resources/governancepermission.md)      |可选。 它表示请求者对资源的访问状态。若要获取属性, 请明确在`$select=permissions`查询中使用。|
 
 ## <a name="relationships"></a>关系
 | 关系   | 类型                                         |说明|
 |:---------------|:---------------------------------------------|:----------|
-|roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md)集合|角色分配资源的集合。|
-|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)集合|资源的角色定义的集合。|
-|roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)集合|角色分配请求资源的集合。|
-|roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md)集合|资源角色设置的集合。|
-|Parent          |[governanceResource](../resources/governanceresource.md)           |只读。 父资源。 为`pimforazurerbac`方案中，它可以表示资源所属的订阅。|
+|roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md)集合|资源的角色分配的集合。|
+|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md)集合|资源的角色 defintions 集合。|
+|roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)集合|资源的角色分配请求的集合。|
+|roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md)集合|资源的角色设置的集合。|
+|母语          |[governanceResource](../resources/governanceresource.md)           |只读。 父资源。 对于`pimforazurerbac`方案, 它可以表示资源所属的订阅。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

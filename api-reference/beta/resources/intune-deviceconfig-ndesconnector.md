@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3781827d93f1e646becc2ee47de57cbba82dfc63
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806662"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554469"
 ---
 # <a name="ndesconnector-resource-type"></a>ndesConnector 资源类型
 

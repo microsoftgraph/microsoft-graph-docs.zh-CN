@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4e334f9938102731aea69108c757b863416486b9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785081"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556450"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>androidDeviceOwnerWiFiSecurityType 枚举类型
 
@@ -24,7 +24,7 @@ Android 设备所有者的 wi-fi 安全类型。
 |:---|:---|:---|
 |open|0|打开 (无身份验证)。|
 |wep|1|WEP 加密。|
-|wpaPersonal|双面|WPA-个人/WPA2-个人。|
+|wpaPersonal|2 |WPA-个人/WPA2-个人。|
 
 
 

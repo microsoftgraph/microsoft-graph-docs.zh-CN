@@ -1,14 +1,14 @@
 ---
 title: 获取开放扩展
-description: 获取用名称或完全限定的名称标识的开放扩展（openTypeExtension 对象）。
+description: 获取按名称或完全限定的名称标识的开放扩展（openTypeExtension 对象）。
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 010212497eef3de812c87055a5b1db3cd7b305ca
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31890029"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540000"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 
@@ -20,25 +20,25 @@ ms.locfileid: "31890029"
 
 |**GET 应用场景**|**支持的资源**|**响应正文**|
 |:-----|:-----|:-----|
-|从已知资源实例中获取特定扩展插件。| [管理单元](../resources/administrativeunit.md)、[设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[邮件](../resources/message.md)、[组织](../resources/organization.md)、[个人联系人](../resources/contact.md)、[用户](../resources/user.md) | 仅开放扩展。|
-|获取一个通过特定扩展插件扩展的已知资源实例。|管理单元、设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户 |一个通过开放扩展扩展的资源实例。|
-|查找并展开具有特定扩展的资源实例。 | 事件、组事件、组帖子、邮件、个人联系人 |通过开放扩展扩展的资源实例。|
+|从已知资源实例中获取特定扩展。| [管理单元](../resources/administrativeunit.md)、[设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[邮件](../resources/message.md)、[组织](../resources/organization.md)、[个人联系人](../resources/contact.md)、[用户](../resources/user.md) | 仅开放扩展。|
+|获取一个通过特定扩展插件扩展的已知资源实例。|管理单元、设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户 |一个通过开放扩展插件扩展的资源实例。|
+|查找并展开具有特定扩展的资源实例。 | 事件、组事件、组帖子、邮件、个人联系人 |通过开放扩展展开的资源实例。|
 
 ## <a name="permissions"></a>权限
 
-根据包含所请求的扩展和权限类型 (委派或应用程序) 的资源, 下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据包含扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.Read.All | 不支持 | Device.ReadWrite.All |
-| [事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [组事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
-| [邮件](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [组织](../resources/organization.md) | User.Read | 不支持 | 不支持 |
 | [个人联系人](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+| [用户](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -64,7 +64,7 @@ GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>获取一个通过匹配的扩展插件扩展的已知资源实例 
 
-对于事件、组事件、组帖子、邮件、个人联系人资源类型, 您可以使用与获取资源实例相同的 REST 请求, 查找与**id**属性中的筛选器匹配的扩展, 并使用扩展展开该实例。 响应包括大部分资源属性。
+对于事件、组事件、组帖子、邮件、个人联系人资源类型，可使用与获取资源实例相同的 REST 请求，查找 **id** 属性与筛选器匹配的扩展插件，然后使用此扩展插件扩展这个资源实例。 该响应包括大部分资源属性。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -76,7 +76,7 @@ GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq
 ```
 
 
-对于设备、组、组织和用户资源类型, 您还必须使用`$select`参数将**id**属性和所需的任何其他属性包括在资源实例中:
+对于设备、组、组织和用户资源类型，你必须也使用 `$select` 参数以包括 **id** 属性及你在资源实例中所需的任何其他属性：
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -111,7 +111,7 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-请确保对 [](https://www.w3schools.com/tags/ref_urlencode.asp) 字符串中的空格字符应用 `$filter`。
+请确保对 `$filter` 字符串中的空格字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)。
 
 |**Name**|**值**|**说明**|
 |:---------------|:--------|:-------|

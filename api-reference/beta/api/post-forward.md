@@ -1,19 +1,17 @@
 ---
 title: 帖子：转发
-description: '将帖子转发给收件人。 您可以在请求中，指定的父对话和线程 '
+description: '将帖子转发给收件人。 您可以在请求中同时指定父对话和线程, '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 557eaa7455600fe6da864a70457b4f3094df8c41
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512050"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546823"
 ---
 # <a name="post-forward"></a>帖子：转发
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将帖子转发给收件人。可以在请求中同时指定父对话和线程，或者仅指定父线程，而不指定父对话。 
 
@@ -44,7 +42,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|与帖子一起转发的可选注释。|
-|toRecipients|[收件人](../resources/recipient.md) 集合|线程要转发至的收件人。|
+|toRecipients|[recipient](../resources/recipient.md) collection|线程要转发至的收件人。|
 
 ## <a name="response"></a>响应
 
@@ -59,7 +57,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
   "name": "post_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/forward
+POST https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/forward
 Content-type: application/json
 Content-length: 166
 
@@ -88,15 +86,10 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "post: forward",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/post-forward.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

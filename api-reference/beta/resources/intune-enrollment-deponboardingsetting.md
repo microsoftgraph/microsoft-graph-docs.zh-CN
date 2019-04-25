@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 56f25c3e187671e0ba91f2d9124bf5f2d801e663
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786285"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573926"
 ---
 # <a name="deponboardingsetting-resource-type"></a>depOnboardingSetting 资源类型
 
@@ -42,13 +42,13 @@ depOnboardingSetting 表示要载入到 Intune 的 Apple DEP 服务的实例。 
 |lastModifiedDateTime|DateTimeOffset|在载入服务时。|
 |lastSuccessfulSyncDateTime|DateTimeOffset|服务上次使用 Intune syned 时|
 |lastSyncTriggeredDateTime|DateTimeOffset|Intune 上次请求同步时。|
-|shareTokenWithSchoolDataSyncService|布尔值|是否启用了与学校数据同步服务的 Dep 令牌共享。|
+|shareTokenWithSchoolDataSyncService|Boolean|是否启用了与学校数据同步服务的 Dep 令牌共享。|
 |lastSyncErrorCode|Int32|上一次 dep 同步期间 Apple 报告的错误代码。|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|获取或设置 Dep 令牌类型。 可取值为：`none`、`dep`、`appleSchoolManager`。|
 |tokenName|String|Dep 令牌的友好名称|
 |syncedDeviceCount|Int32|获取同步的设备计数|
-|dataSharingConsentGranted|布尔值|为使用 Apple Dep 服务进行数据共享而授予的同意|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|dataSharingConsentGranted|Boolean|为使用 Apple Dep 服务进行数据共享而授予的同意|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
