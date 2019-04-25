@@ -1,33 +1,33 @@
 ---
 title: educationExcelResource 资源类型
-description: 'EducationResource 一个子类。 此资源类型表示 Excel 文档。  '
+description: 'educationResource 的子类。 此资源类型代表一个 Excel 文档。  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 14d7823f166ca12d202a6561bc9fe7b158ab7476
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522418"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542816"
 ---
-# <a name="educationexcelresource-resource-type"></a><span data-ttu-id="2a74b-104">educationExcelResource 资源类型</span><span class="sxs-lookup"><span data-stu-id="2a74b-104">educationExcelResource resource type</span></span>
+# <a name="educationexcelresource-resource-type"></a><span data-ttu-id="13787-104">educationExcelResource 资源类型</span><span class="sxs-lookup"><span data-stu-id="13787-104">educationExcelResource resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2a74b-105">[EducationResource](educationresource.md)一个子类。</span><span class="sxs-lookup"><span data-stu-id="2a74b-105">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="2a74b-106">此资源类型表示 Excel 文档。</span><span class="sxs-lookup"><span data-stu-id="2a74b-106">This resource type represents an Excel document.</span></span>  
+<span data-ttu-id="13787-105">[educationResource](educationresource.md)的子类。</span><span class="sxs-lookup"><span data-stu-id="13787-105">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="13787-106">此资源类型代表一个 Excel 文档。</span><span class="sxs-lookup"><span data-stu-id="13787-106">This resource type represents an Excel document.</span></span>  
  
-><span data-ttu-id="2a74b-107">**注意：** Excel 文件必须与此资源所属的工作分配或提交对象关联的资源文件夹中。</span><span class="sxs-lookup"><span data-stu-id="2a74b-107">**Note:** The Excel file must be in the resource folder associated with the assignment or submission object to which this resource belongs.</span></span>
+><span data-ttu-id="13787-107">**注意:** Excel 文件必须位于与此资源所属的 "分配" 或 "提交" 对象相关联的资源文件夹中。</span><span class="sxs-lookup"><span data-stu-id="13787-107">**Note:** The Excel file must be in the resource folder associated with the assignment or submission object to which this resource belongs.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="2a74b-108">属性</span><span class="sxs-lookup"><span data-stu-id="2a74b-108">Properties</span></span>
-| <span data-ttu-id="2a74b-109">属性</span><span class="sxs-lookup"><span data-stu-id="2a74b-109">Property</span></span>     | <span data-ttu-id="2a74b-110">类型</span><span class="sxs-lookup"><span data-stu-id="2a74b-110">Type</span></span>   |<span data-ttu-id="2a74b-111">说明</span><span class="sxs-lookup"><span data-stu-id="2a74b-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="13787-108">属性</span><span class="sxs-lookup"><span data-stu-id="13787-108">Properties</span></span>
+| <span data-ttu-id="13787-109">属性</span><span class="sxs-lookup"><span data-stu-id="13787-109">Property</span></span>     | <span data-ttu-id="13787-110">类型</span><span class="sxs-lookup"><span data-stu-id="13787-110">Type</span></span>   |<span data-ttu-id="13787-111">说明</span><span class="sxs-lookup"><span data-stu-id="13787-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2a74b-112">FileURL</span><span class="sxs-lookup"><span data-stu-id="2a74b-112">fileUrl</span></span>|<span data-ttu-id="2a74b-113">String</span><span class="sxs-lookup"><span data-stu-id="2a74b-113">String</span></span>|<span data-ttu-id="2a74b-114">Excel 文件对象的指针。</span><span class="sxs-lookup"><span data-stu-id="2a74b-114">Pointer to the Excel file object.</span></span>|
+|<span data-ttu-id="13787-112">fileUrl</span><span class="sxs-lookup"><span data-stu-id="13787-112">fileUrl</span></span>|<span data-ttu-id="13787-113">String</span><span class="sxs-lookup"><span data-stu-id="13787-113">String</span></span>|<span data-ttu-id="13787-114">指向 Excel 文件对象的指针。</span><span class="sxs-lookup"><span data-stu-id="13787-114">Pointer to the Excel file object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="2a74b-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2a74b-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="13787-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="13787-115">JSON representation</span></span>
 
-<span data-ttu-id="2a74b-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2a74b-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="13787-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="13787-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,39 +1,39 @@
 ---
 title: 'message: createReplyAll'
-description: '创建包含评论或更新任何消息属性的全部答复邮件草稿 '
+description: '创建 "全部答复" 邮件的草稿, 以包含注释或更新任何邮件属性。 '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 8d42517daa5c8242f28c6dfb3cb4d508b2667ed5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528576"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540525"
 ---
-# <a name="message-createreplyall"></a><span data-ttu-id="b69db-103">message: createReplyAll</span><span class="sxs-lookup"><span data-stu-id="b69db-103">message: createReplyAll</span></span>
+# <a name="message-createreplyall"></a><span data-ttu-id="154cc-103">message: createReplyAll</span><span class="sxs-lookup"><span data-stu-id="154cc-103">message: createReplyAll</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b69db-p101">创建回复全部邮件草稿以全部在一个 createReplyAll 调用中添加注释或更新任意邮件属性。然后，你可以更新或发送草稿。</span><span class="sxs-lookup"><span data-stu-id="b69db-p101">Create a draft of a reply-all message to include a comment or update any message properties, all in one **createReplyAll** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.</span></span>
+<span data-ttu-id="154cc-p101">创建回复全部邮件草稿以全部在一个 createReplyAll 调用中添加注释或更新任意邮件属性。然后，你可以更新或发送草稿。</span><span class="sxs-lookup"><span data-stu-id="154cc-p101">Create a draft of a reply-all message to include a comment or update any message properties, all in one **createReplyAll** call. You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.</span></span>
 
-<span data-ttu-id="b69db-106">**注意**</span><span class="sxs-lookup"><span data-stu-id="b69db-106">**Note**</span></span>
+<span data-ttu-id="154cc-106">**注意**</span><span class="sxs-lookup"><span data-stu-id="154cc-106">**Note**</span></span>
 
-- <span data-ttu-id="b69db-107">您可以指定注释或的**body**属性`message`参数。</span><span class="sxs-lookup"><span data-stu-id="b69db-107">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="b69db-108">如果同时指定将返回 HTTP 400 错误请求出错。</span><span class="sxs-lookup"><span data-stu-id="b69db-108">Specifying both will return an HTTP 400 Bad Request error.</span></span>
-- <span data-ttu-id="b69db-109">如果**回复**属性指定在原始邮件中，每个 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822))，您应发送给收件人的答复</span><span class="sxs-lookup"><span data-stu-id="b69db-109">If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the</span></span>  
-<span data-ttu-id="b69db-110">**回复**和**toRecipients**属性，并不**从**和**toRecipients**属性中的收件人。</span><span class="sxs-lookup"><span data-stu-id="b69db-110">**replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.</span></span> 
+- <span data-ttu-id="154cc-107">您可以指定`message`参数的注释或**body**属性。</span><span class="sxs-lookup"><span data-stu-id="154cc-107">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="154cc-108">同时指定这两个将返回 HTTP 400 错误的请求错误。</span><span class="sxs-lookup"><span data-stu-id="154cc-108">Specifying both will return an HTTP 400 Bad Request error.</span></span>
+- <span data-ttu-id="154cc-109">如果在原始邮件中指定了**replyTo**属性 (根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822))), 则应将答复发送给收件人</span><span class="sxs-lookup"><span data-stu-id="154cc-109">If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the</span></span>  
+<span data-ttu-id="154cc-110">**replyTo**和**toRecipients**属性, 而不是**from**和**toRecipients**属性中的收件人。</span><span class="sxs-lookup"><span data-stu-id="154cc-110">**replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="b69db-111">权限</span><span class="sxs-lookup"><span data-stu-id="b69db-111">Permissions</span></span>
-<span data-ttu-id="b69db-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b69db-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="154cc-111">权限</span><span class="sxs-lookup"><span data-stu-id="154cc-111">Permissions</span></span>
+<span data-ttu-id="154cc-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="154cc-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b69db-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="b69db-114">Permission type</span></span>      | <span data-ttu-id="b69db-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b69db-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="154cc-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="154cc-114">Permission type</span></span>      | <span data-ttu-id="154cc-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="154cc-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b69db-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b69db-116">Delegated (work or school account)</span></span> | <span data-ttu-id="b69db-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b69db-117">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="b69db-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b69db-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b69db-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b69db-119">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="b69db-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="b69db-120">Application</span></span> | <span data-ttu-id="b69db-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b69db-121">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="154cc-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="154cc-116">Delegated (work or school account)</span></span> | <span data-ttu-id="154cc-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="154cc-117">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="154cc-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="154cc-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="154cc-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="154cc-119">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="154cc-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="154cc-120">Application</span></span> | <span data-ttu-id="154cc-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="154cc-121">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b69db-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b69db-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="154cc-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="154cc-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/createReplyAll
@@ -41,28 +41,28 @@ POST /users/{id | userPrincipalName}/messages/{id}/createReplyAll
 POST /me/mailFolders/{id}/messages/{id}/createReplyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
 ```
-## <a name="request-headers"></a><span data-ttu-id="b69db-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="b69db-123">Request headers</span></span>
-| <span data-ttu-id="b69db-124">名称</span><span class="sxs-lookup"><span data-stu-id="b69db-124">Name</span></span>       | <span data-ttu-id="b69db-125">类型</span><span class="sxs-lookup"><span data-stu-id="b69db-125">Type</span></span> | <span data-ttu-id="b69db-126">说明</span><span class="sxs-lookup"><span data-stu-id="b69db-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="154cc-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="154cc-123">Request headers</span></span>
+| <span data-ttu-id="154cc-124">名称</span><span class="sxs-lookup"><span data-stu-id="154cc-124">Name</span></span>       | <span data-ttu-id="154cc-125">类型</span><span class="sxs-lookup"><span data-stu-id="154cc-125">Type</span></span> | <span data-ttu-id="154cc-126">说明</span><span class="sxs-lookup"><span data-stu-id="154cc-126">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="b69db-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="b69db-127">Authorization</span></span>  | <span data-ttu-id="b69db-128">string</span><span class="sxs-lookup"><span data-stu-id="b69db-128">string</span></span>  | <span data-ttu-id="b69db-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b69db-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b69db-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b69db-131">Content-Type</span></span> | <span data-ttu-id="b69db-132">string</span><span class="sxs-lookup"><span data-stu-id="b69db-132">string</span></span>  | <span data-ttu-id="b69db-p105">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="b69db-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="154cc-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="154cc-127">Authorization</span></span>  | <span data-ttu-id="154cc-128">string</span><span class="sxs-lookup"><span data-stu-id="154cc-128">string</span></span>  | <span data-ttu-id="154cc-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="154cc-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="154cc-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="154cc-131">Content-Type</span></span> | <span data-ttu-id="154cc-132">string</span><span class="sxs-lookup"><span data-stu-id="154cc-132">string</span></span>  | <span data-ttu-id="154cc-p105">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="154cc-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b69db-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="b69db-135">Request body</span></span>
-<span data-ttu-id="b69db-136">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="b69db-136">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="154cc-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="154cc-135">Request body</span></span>
+<span data-ttu-id="154cc-136">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="154cc-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="b69db-137">参数</span><span class="sxs-lookup"><span data-stu-id="b69db-137">Parameter</span></span>    | <span data-ttu-id="b69db-138">类型</span><span class="sxs-lookup"><span data-stu-id="b69db-138">Type</span></span>   |<span data-ttu-id="b69db-139">说明</span><span class="sxs-lookup"><span data-stu-id="b69db-139">Description</span></span>|
+| <span data-ttu-id="154cc-137">参数</span><span class="sxs-lookup"><span data-stu-id="154cc-137">Parameter</span></span>    | <span data-ttu-id="154cc-138">类型</span><span class="sxs-lookup"><span data-stu-id="154cc-138">Type</span></span>   |<span data-ttu-id="154cc-139">说明</span><span class="sxs-lookup"><span data-stu-id="154cc-139">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b69db-140">注释</span><span class="sxs-lookup"><span data-stu-id="b69db-140">comment</span></span>|<span data-ttu-id="b69db-141">String</span><span class="sxs-lookup"><span data-stu-id="b69db-141">String</span></span>|<span data-ttu-id="b69db-p106">要包含的注释。可以为空字符串。</span><span class="sxs-lookup"><span data-stu-id="b69db-p106">A comment to include. Can be an empty string.</span></span>|
-|<span data-ttu-id="b69db-144">message</span><span class="sxs-lookup"><span data-stu-id="b69db-144">message</span></span>|[<span data-ttu-id="b69db-145">message</span><span class="sxs-lookup"><span data-stu-id="b69db-145">message</span></span>](../resources/message.md)|<span data-ttu-id="b69db-146">全部答复邮件中更新任何可写属性。</span><span class="sxs-lookup"><span data-stu-id="b69db-146">Any writeable properties to update in the reply-all message.</span></span>|
+|<span data-ttu-id="154cc-140">注释</span><span class="sxs-lookup"><span data-stu-id="154cc-140">comment</span></span>|<span data-ttu-id="154cc-141">String</span><span class="sxs-lookup"><span data-stu-id="154cc-141">String</span></span>|<span data-ttu-id="154cc-p106">要包含的注释。可以为空字符串。</span><span class="sxs-lookup"><span data-stu-id="154cc-p106">A comment to include. Can be an empty string.</span></span>|
+|<span data-ttu-id="154cc-144">message</span><span class="sxs-lookup"><span data-stu-id="154cc-144">message</span></span>|[<span data-ttu-id="154cc-145">邮件</span><span class="sxs-lookup"><span data-stu-id="154cc-145">message</span></span>](../resources/message.md)|<span data-ttu-id="154cc-146">全部在答复邮件中更新的可写属性。</span><span class="sxs-lookup"><span data-stu-id="154cc-146">Any writeable properties to update in the reply-all message.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="b69db-147">响应</span><span class="sxs-lookup"><span data-stu-id="b69db-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="154cc-147">响应</span><span class="sxs-lookup"><span data-stu-id="154cc-147">Response</span></span>
 
-<span data-ttu-id="b69db-148">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="b69db-148">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="154cc-148">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="154cc-148">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b69db-149">示例</span><span class="sxs-lookup"><span data-stu-id="b69db-149">Example</span></span>
-<span data-ttu-id="b69db-150">下面的示例草稿答复所有，并将附件和批注添加一个**createReplyAll**呼叫中的所有。</span><span class="sxs-lookup"><span data-stu-id="b69db-150">The following example creates a draft to reply all, and adds an attachment and comment all in one **createReplyAll** call.</span></span>
-##### <a name="request"></a><span data-ttu-id="b69db-151">请求</span><span class="sxs-lookup"><span data-stu-id="b69db-151">Request</span></span>
-<span data-ttu-id="b69db-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="b69db-152">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="154cc-149">示例</span><span class="sxs-lookup"><span data-stu-id="154cc-149">Example</span></span>
+<span data-ttu-id="154cc-150">下面的示例创建一个草稿以全部答复, 并在一个**createReplyAll**调用中添加附件和批注。</span><span class="sxs-lookup"><span data-stu-id="154cc-150">The following example creates a draft to reply all, and adds an attachment and comment all in one **createReplyAll** call.</span></span>
+##### <a name="request"></a><span data-ttu-id="154cc-151">请求</span><span class="sxs-lookup"><span data-stu-id="154cc-151">Request</span></span>
+<span data-ttu-id="154cc-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="154cc-152">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_createreplyall"
@@ -85,8 +85,8 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="b69db-153">响应</span><span class="sxs-lookup"><span data-stu-id="b69db-153">Response</span></span>
-<span data-ttu-id="b69db-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="b69db-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="154cc-153">响应</span><span class="sxs-lookup"><span data-stu-id="154cc-153">Response</span></span>
+<span data-ttu-id="154cc-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="154cc-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

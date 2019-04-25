@@ -1,30 +1,30 @@
 ---
 title: 'event: snoozeReminder'
-description: 推迟事件提醒用户日历中的新时间之前。
+description: 将用户日历中的事件的提醒推迟到新时间。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: d3f8ffab576182f5e67dad49e34c67d886fe0bde
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932411"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584304"
 ---
-# <a name="event-snoozereminder"></a><span data-ttu-id="9c524-103">event: snoozeReminder</span><span class="sxs-lookup"><span data-stu-id="9c524-103">event: snoozeReminder</span></span>
+# <a name="event-snoozereminder"></a><span data-ttu-id="6425c-103">event: snoozeReminder</span><span class="sxs-lookup"><span data-stu-id="6425c-103">event: snoozeReminder</span></span>
 
-<span data-ttu-id="9c524-104">推迟新时间之前提醒用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="9c524-104">Postpone a reminder for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md) until a new time.</span></span>
+<span data-ttu-id="6425c-104">将用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)的提醒推迟到新时间。</span><span class="sxs-lookup"><span data-stu-id="6425c-104">Postpone a reminder for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md) until a new time.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9c524-105">权限</span><span class="sxs-lookup"><span data-stu-id="9c524-105">Permissions</span></span>
-<span data-ttu-id="9c524-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="9c524-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6425c-105">权限</span><span class="sxs-lookup"><span data-stu-id="6425c-105">Permissions</span></span>
+<span data-ttu-id="6425c-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6425c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9c524-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="9c524-108">Permission type</span></span>      | <span data-ttu-id="9c524-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="9c524-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6425c-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="6425c-108">Permission type</span></span>      | <span data-ttu-id="6425c-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6425c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9c524-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="9c524-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9c524-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9c524-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="9c524-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="9c524-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9c524-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9c524-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="9c524-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="9c524-114">Application</span></span> | <span data-ttu-id="9c524-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9c524-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="6425c-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6425c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6425c-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6425c-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="6425c-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6425c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6425c-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6425c-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="6425c-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="6425c-114">Application</span></span> | <span data-ttu-id="6425c-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6425c-115">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9c524-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="9c524-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6425c-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6425c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/snoozeReminder
@@ -42,27 +42,27 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/sn
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 ```
-## <a name="request-headers"></a><span data-ttu-id="9c524-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="9c524-117">Request headers</span></span>
-| <span data-ttu-id="9c524-118">名称</span><span class="sxs-lookup"><span data-stu-id="9c524-118">Name</span></span>       | <span data-ttu-id="9c524-119">类型</span><span class="sxs-lookup"><span data-stu-id="9c524-119">Type</span></span> | <span data-ttu-id="9c524-120">说明</span><span class="sxs-lookup"><span data-stu-id="9c524-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6425c-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="6425c-117">Request headers</span></span>
+| <span data-ttu-id="6425c-118">名称</span><span class="sxs-lookup"><span data-stu-id="6425c-118">Name</span></span>       | <span data-ttu-id="6425c-119">类型</span><span class="sxs-lookup"><span data-stu-id="6425c-119">Type</span></span> | <span data-ttu-id="6425c-120">说明</span><span class="sxs-lookup"><span data-stu-id="6425c-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="9c524-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="9c524-121">Authorization</span></span>  | <span data-ttu-id="9c524-122">string</span><span class="sxs-lookup"><span data-stu-id="9c524-122">string</span></span>  | <span data-ttu-id="9c524-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="9c524-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="9c524-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9c524-125">Content-Type</span></span> | <span data-ttu-id="9c524-126">string</span><span class="sxs-lookup"><span data-stu-id="9c524-126">string</span></span>  | <span data-ttu-id="9c524-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="9c524-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="6425c-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="6425c-121">Authorization</span></span>  | <span data-ttu-id="6425c-122">string</span><span class="sxs-lookup"><span data-stu-id="6425c-122">string</span></span>  | <span data-ttu-id="6425c-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6425c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6425c-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6425c-125">Content-Type</span></span> | <span data-ttu-id="6425c-126">string</span><span class="sxs-lookup"><span data-stu-id="6425c-126">string</span></span>  | <span data-ttu-id="6425c-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="6425c-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9c524-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="9c524-129">Request body</span></span>
-<span data-ttu-id="9c524-130">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="9c524-130">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6425c-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="6425c-129">Request body</span></span>
+<span data-ttu-id="6425c-130">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="6425c-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="9c524-131">参数</span><span class="sxs-lookup"><span data-stu-id="9c524-131">Parameter</span></span>    | <span data-ttu-id="9c524-132">类型</span><span class="sxs-lookup"><span data-stu-id="9c524-132">Type</span></span>   |<span data-ttu-id="9c524-133">说明</span><span class="sxs-lookup"><span data-stu-id="9c524-133">Description</span></span>|
+| <span data-ttu-id="6425c-131">参数</span><span class="sxs-lookup"><span data-stu-id="6425c-131">Parameter</span></span>    | <span data-ttu-id="6425c-132">类型</span><span class="sxs-lookup"><span data-stu-id="6425c-132">Type</span></span>   |<span data-ttu-id="6425c-133">说明</span><span class="sxs-lookup"><span data-stu-id="6425c-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9c524-134">newReminderTime</span><span class="sxs-lookup"><span data-stu-id="9c524-134">newReminderTime</span></span>|<span data-ttu-id="9c524-135">DateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="9c524-135">DateTimeTimeZone</span></span>|<span data-ttu-id="9c524-136">触发提醒的新日期和时间。</span><span class="sxs-lookup"><span data-stu-id="9c524-136">The new date and time to trigger the reminder.</span></span>|
+|<span data-ttu-id="6425c-134">newReminderTime</span><span class="sxs-lookup"><span data-stu-id="6425c-134">newReminderTime</span></span>|<span data-ttu-id="6425c-135">DateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="6425c-135">DateTimeTimeZone</span></span>|<span data-ttu-id="6425c-136">触发提醒的新日期和时间。</span><span class="sxs-lookup"><span data-stu-id="6425c-136">The new date and time to trigger the reminder.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="9c524-137">响应</span><span class="sxs-lookup"><span data-stu-id="9c524-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6425c-137">响应</span><span class="sxs-lookup"><span data-stu-id="6425c-137">Response</span></span>
 
-<span data-ttu-id="9c524-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="9c524-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="6425c-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="6425c-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9c524-140">示例</span><span class="sxs-lookup"><span data-stu-id="9c524-140">Example</span></span>
-<span data-ttu-id="9c524-141">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="9c524-141">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="9c524-142">请求</span><span class="sxs-lookup"><span data-stu-id="9c524-142">Request</span></span>
-<span data-ttu-id="9c524-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="9c524-143">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6425c-140">示例</span><span class="sxs-lookup"><span data-stu-id="6425c-140">Example</span></span>
+<span data-ttu-id="6425c-141">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="6425c-141">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="6425c-142">请求</span><span class="sxs-lookup"><span data-stu-id="6425c-142">Request</span></span>
+<span data-ttu-id="6425c-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="6425c-143">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_snoozereminder"
@@ -80,8 +80,8 @@ Content-length: 97
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="9c524-144">响应</span><span class="sxs-lookup"><span data-stu-id="9c524-144">Response</span></span>
-<span data-ttu-id="9c524-145">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="9c524-145">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="6425c-144">响应</span><span class="sxs-lookup"><span data-stu-id="6425c-144">Response</span></span>
+<span data-ttu-id="6425c-145">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6425c-145">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

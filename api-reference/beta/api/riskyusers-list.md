@@ -5,53 +5,53 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ff134f0d0b03a30a11800de25f6692362541fd0e
-ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31559862"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537889"
 ---
-# <a name="list-riskyusers"></a><span data-ttu-id="4aea8-103">列出 riskyUsers</span><span class="sxs-lookup"><span data-stu-id="4aea8-103">List riskyUsers</span></span>
+# <a name="list-riskyusers"></a><span data-ttu-id="74164-103">列出 riskyUsers</span><span class="sxs-lookup"><span data-stu-id="74164-103">List riskyUsers</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4aea8-104">检索**riskyUser**对象集合的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="4aea8-104">Retrieve the properties and relationships of a collection of **riskyUser** objects.</span></span>
+<span data-ttu-id="74164-104">检索**riskyUser**对象集合的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="74164-104">Retrieve the properties and relationships of a collection of **riskyUser** objects.</span></span>
 
-><span data-ttu-id="4aea8-105">**注意:** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="4aea8-105">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
+><span data-ttu-id="74164-105">**注意:** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。</span><span class="sxs-lookup"><span data-stu-id="74164-105">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4aea8-106">权限</span><span class="sxs-lookup"><span data-stu-id="4aea8-106">Permissions</span></span>
-<span data-ttu-id="4aea8-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4aea8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="74164-106">权限</span><span class="sxs-lookup"><span data-stu-id="74164-106">Permissions</span></span>
+<span data-ttu-id="74164-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="74164-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4aea8-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="4aea8-109">Permission type</span></span>      | <span data-ttu-id="4aea8-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4aea8-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="74164-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="74164-109">Permission type</span></span>      | <span data-ttu-id="74164-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="74164-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4aea8-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4aea8-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4aea8-112">IdentityRiskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="4aea8-112">IdentityRiskyUser.Read.All</span></span>    |
-|<span data-ttu-id="4aea8-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4aea8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4aea8-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="4aea8-114">Not supported.</span></span>    |
-|<span data-ttu-id="4aea8-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="4aea8-115">Application</span></span> | <span data-ttu-id="4aea8-116">IdentityRiskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="4aea8-116">IdentityRiskyUser.Read.All</span></span> |
+|<span data-ttu-id="74164-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="74164-111">Delegated (work or school account)</span></span> | <span data-ttu-id="74164-112">IdentityRiskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="74164-112">IdentityRiskyUser.Read.All</span></span>    |
+|<span data-ttu-id="74164-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="74164-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="74164-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="74164-114">Not supported.</span></span>    |
+|<span data-ttu-id="74164-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="74164-115">Application</span></span> | <span data-ttu-id="74164-116">IdentityRiskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="74164-116">IdentityRiskyUser.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4aea8-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4aea8-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="74164-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="74164-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4aea8-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4aea8-118">Optional query parameters</span></span>
-<span data-ttu-id="4aea8-119">此方法支持`$filter`自定义查询响应。</span><span class="sxs-lookup"><span data-stu-id="4aea8-119">This method supports `$filter` to customize the query response.</span></span> <span data-ttu-id="4aea8-120">请参阅本主题后面的示例。</span><span class="sxs-lookup"><span data-stu-id="4aea8-120">See the example later in this topic.</span></span> 
+## <a name="optional-query-parameters"></a><span data-ttu-id="74164-118">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="74164-118">Optional query parameters</span></span>
+<span data-ttu-id="74164-119">此方法支持`$filter`自定义查询响应。</span><span class="sxs-lookup"><span data-stu-id="74164-119">This method supports `$filter` to customize the query response.</span></span> <span data-ttu-id="74164-120">请参阅本主题后面的示例。</span><span class="sxs-lookup"><span data-stu-id="74164-120">See the example later in this topic.</span></span> 
 
-## <a name="request-headers"></a><span data-ttu-id="4aea8-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="4aea8-121">Request headers</span></span>
-| <span data-ttu-id="4aea8-122">名称</span><span class="sxs-lookup"><span data-stu-id="4aea8-122">Name</span></span>      |<span data-ttu-id="4aea8-123">说明</span><span class="sxs-lookup"><span data-stu-id="4aea8-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="74164-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="74164-121">Request headers</span></span>
+| <span data-ttu-id="74164-122">名称</span><span class="sxs-lookup"><span data-stu-id="74164-122">Name</span></span>      |<span data-ttu-id="74164-123">说明</span><span class="sxs-lookup"><span data-stu-id="74164-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="4aea8-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="4aea8-124">Authorization</span></span>  | <span data-ttu-id="4aea8-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4aea8-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4aea8-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="4aea8-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="4aea8-128">用于确定是否保留更改的工作簿会话 ID。</span><span class="sxs-lookup"><span data-stu-id="4aea8-128">Workbook session ID that determines whether changes are persisted.</span></span> <span data-ttu-id="4aea8-129">可选。</span><span class="sxs-lookup"><span data-stu-id="4aea8-129">Optional.</span></span>|
+| <span data-ttu-id="74164-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="74164-124">Authorization</span></span>  | <span data-ttu-id="74164-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="74164-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="74164-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="74164-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="74164-128">用于确定是否保留更改的工作簿会话 ID。</span><span class="sxs-lookup"><span data-stu-id="74164-128">Workbook session ID that determines whether changes are persisted.</span></span> <span data-ttu-id="74164-129">可选。</span><span class="sxs-lookup"><span data-stu-id="74164-129">Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4aea8-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="4aea8-130">Request body</span></span>
-<span data-ttu-id="4aea8-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4aea8-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="74164-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="74164-130">Request body</span></span>
+<span data-ttu-id="74164-131">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="74164-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4aea8-132">响应</span><span class="sxs-lookup"><span data-stu-id="4aea8-132">Response</span></span>
-<span data-ttu-id="4aea8-133">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[riskyUser](../resources/riskyUser.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="4aea8-133">If successful, this method returns a `200 OK` response code and a collection of [riskyUser](../resources/riskyUser.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="74164-132">响应</span><span class="sxs-lookup"><span data-stu-id="74164-132">Response</span></span>
+<span data-ttu-id="74164-133">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[riskyUser](../resources/riskyUser.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="74164-133">If successful, this method returns a `200 OK` response code and a collection of [riskyUser](../resources/riskyUser.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4aea8-134">示例</span><span class="sxs-lookup"><span data-stu-id="4aea8-134">Examples</span></span>
-### <a name="example-1-list-risky-users"></a><span data-ttu-id="4aea8-135">示例 1: 列出有风险的用户</span><span class="sxs-lookup"><span data-stu-id="4aea8-135">Example 1: List risky users</span></span>
-#### <a name="request"></a><span data-ttu-id="4aea8-136">请求</span><span class="sxs-lookup"><span data-stu-id="4aea8-136">Request</span></span>
-<span data-ttu-id="4aea8-137">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4aea8-137">Here is an example of the request.</span></span>
+## <a name="examples"></a><span data-ttu-id="74164-134">示例</span><span class="sxs-lookup"><span data-stu-id="74164-134">Examples</span></span>
+### <a name="example-1-list-risky-users"></a><span data-ttu-id="74164-135">示例 1: 列出有风险的用户</span><span class="sxs-lookup"><span data-stu-id="74164-135">Example 1: List risky users</span></span>
+#### <a name="request"></a><span data-ttu-id="74164-136">请求</span><span class="sxs-lookup"><span data-stu-id="74164-136">Request</span></span>
+<span data-ttu-id="74164-137">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="74164-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "list_riskyusers"
@@ -59,8 +59,8 @@ GET /riskyUsers
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
-#### <a name="response"></a><span data-ttu-id="4aea8-138">响应</span><span class="sxs-lookup"><span data-stu-id="4aea8-138">Response</span></span>
-<span data-ttu-id="4aea8-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="4aea8-139">Here is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="74164-138">响应</span><span class="sxs-lookup"><span data-stu-id="74164-138">Response</span></span>
+<span data-ttu-id="74164-139">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="74164-139">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,9 +89,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-risky-users-and-filter-the-results"></a><span data-ttu-id="4aea8-140">示例 2: 列出有风险的用户并筛选结果</span><span class="sxs-lookup"><span data-stu-id="4aea8-140">Example 2: List risky users and filter the results</span></span>
-#### <a name="request"></a><span data-ttu-id="4aea8-141">请求</span><span class="sxs-lookup"><span data-stu-id="4aea8-141">Request</span></span>
-<span data-ttu-id="4aea8-142">下面的示例演示如何使用`$filter`来获取其聚合风险级别为中的 riskyUser 的集合。</span><span class="sxs-lookup"><span data-stu-id="4aea8-142">The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.</span></span>
+### <a name="example-2-list-risky-users-and-filter-the-results"></a><span data-ttu-id="74164-140">示例 2: 列出有风险的用户并筛选结果</span><span class="sxs-lookup"><span data-stu-id="74164-140">Example 2: List risky users and filter the results</span></span>
+#### <a name="request"></a><span data-ttu-id="74164-141">请求</span><span class="sxs-lookup"><span data-stu-id="74164-141">Request</span></span>
+<span data-ttu-id="74164-142">下面的示例演示如何使用`$filter`来获取其聚合风险级别为中的 riskyUser 的集合。</span><span class="sxs-lookup"><span data-stu-id="74164-142">The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -100,8 +100,8 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
-#### <a name="response"></a><span data-ttu-id="4aea8-143">响应</span><span class="sxs-lookup"><span data-stu-id="4aea8-143">Response</span></span>
-<span data-ttu-id="4aea8-144">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="4aea8-144">Here is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="74164-143">响应</span><span class="sxs-lookup"><span data-stu-id="74164-143">Response</span></span>
+<span data-ttu-id="74164-144">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="74164-144">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

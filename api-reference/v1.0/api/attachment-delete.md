@@ -3,28 +3,28 @@ title: 删除附件
 description: 从日历事件、电子邮件或组帖子中删除附件。
 localization_priority: Normal
 ms.openlocfilehash: f6ac2e60c9fdc8a224e22a49e6928cdc41e9730b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816994"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551461"
 ---
-# <a name="delete-attachment"></a><span data-ttu-id="ae76e-103">删除附件</span><span class="sxs-lookup"><span data-stu-id="ae76e-103">Delete attachment</span></span>
+# <a name="delete-attachment"></a><span data-ttu-id="309ab-103">删除附件</span><span class="sxs-lookup"><span data-stu-id="309ab-103">Delete attachment</span></span>
 
-<span data-ttu-id="ae76e-104">从日历事件、电子邮件或组帖子中删除附件。</span><span class="sxs-lookup"><span data-stu-id="ae76e-104">Delete an attachment from a calendar event, mail message, or group post.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ae76e-105">权限</span><span class="sxs-lookup"><span data-stu-id="ae76e-105">Permissions</span></span>
-<span data-ttu-id="ae76e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ae76e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="309ab-104">从日历事件、电子邮件或组帖子中删除附件。</span><span class="sxs-lookup"><span data-stu-id="309ab-104">Delete an attachment from a calendar event, mail message, or group post.</span></span>
+## <a name="permissions"></a><span data-ttu-id="309ab-105">权限</span><span class="sxs-lookup"><span data-stu-id="309ab-105">Permissions</span></span>
+<span data-ttu-id="309ab-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="309ab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="ae76e-108">如果访问邮件中的附件： Mail.ReadWrite。</span><span class="sxs-lookup"><span data-stu-id="ae76e-108">If accessing attachments in messages: Mail.ReadWrite.</span></span>
-* <span data-ttu-id="ae76e-109">如果访问事件中的附件： Calendars.ReadWrite。</span><span class="sxs-lookup"><span data-stu-id="ae76e-109">If accessing attachments in events: Calendars.ReadWrite.</span></span>
-* <span data-ttu-id="ae76e-110">如果访问组文章中的附件： Group.ReadWrite.All。</span><span class="sxs-lookup"><span data-stu-id="ae76e-110">If accessing attachments in group posts: Group.ReadWrite.All.</span></span>
+* <span data-ttu-id="309ab-108">如果访问邮件中的附件: 邮件。</span><span class="sxs-lookup"><span data-stu-id="309ab-108">If accessing attachments in messages: Mail.ReadWrite.</span></span>
+* <span data-ttu-id="309ab-109">如果访问事件中的附件: 日历. 读写。</span><span class="sxs-lookup"><span data-stu-id="309ab-109">If accessing attachments in events: Calendars.ReadWrite.</span></span>
+* <span data-ttu-id="309ab-110">如果访问组帖子中的附件: group. 全部。</span><span class="sxs-lookup"><span data-stu-id="309ab-110">If accessing attachments in group posts: Group.ReadWrite.All.</span></span>
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All.
 -->
 
-## <a name="http-request"></a><span data-ttu-id="ae76e-111">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ae76e-111">HTTP request</span></span>
-<span data-ttu-id="ae76e-112">用户或组的默认 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="ae76e-112">Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).</span></span>
+## <a name="http-request"></a><span data-ttu-id="309ab-111">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="309ab-111">HTTP request</span></span>
+<span data-ttu-id="309ab-112">用户或组的默认 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="309ab-112">Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}/attachments/{id}
@@ -39,7 +39,7 @@ DELETE /groups/{id}/events/{id}/attachments/{id}
 DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
 
-<span data-ttu-id="ae76e-113">属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="ae76e-113">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="309ab-113">属于用户的默认 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="309ab-113">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -48,51 +48,50 @@ DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{i
 DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
-<span data-ttu-id="ae76e-114">属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="ae76e-114">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="309ab-114">属于用户的 [calendarGroup](../resources/calendargroup.md) 的 [日历](../resources/calendar.md) 中的 [事件](../resources/event.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="309ab-114">Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 ```
-<span data-ttu-id="ae76e-115">用户邮箱中的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="ae76e-115">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
+<span data-ttu-id="309ab-115">用户邮箱中的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="309ab-115">Attachments for a [message](../resources/message.md) in a user's mailbox.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
-<span data-ttu-id="ae76e-116">用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="ae76e-116">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
+<span data-ttu-id="309ab-116">用户邮箱的顶级 [mailFolder](../resources/mailfolder.md) 中包含的 [邮件](../resources/message.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="309ab-116">Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-<span data-ttu-id="ae76e-117">[邮件](../resources/message.md)的用户的邮箱中[mailFolder](../resources/mailfolder.md)子文件夹中包含的附件。</span><span class="sxs-lookup"><span data-stu-id="ae76e-117">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.</span></span>  <span data-ttu-id="ae76e-118">下面的示例演示一个级别的嵌套，但一条消息可以位于子级的子级，依此类推。</span><span class="sxs-lookup"><span data-stu-id="ae76e-118">The example below shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
-<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="309ab-p102">用户邮箱的 [mailFolder](../resources/mailfolder.md) 的子文件夹中包含的 [邮件](../resources/message.md) 附件。下面的示例显示了一个嵌套级别，但邮件可能位于子级的子级中，诸如此类。</span><span class="sxs-lookup"><span data-stu-id="309ab-p102">Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The example below shows one level of nesting, but a message can be located in a child of a child and so on. </span></span><!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
-<span data-ttu-id="ae76e-119">属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="ae76e-119">Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
+<span data-ttu-id="309ab-119">属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。</span><span class="sxs-lookup"><span data-stu-id="309ab-119">Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="ae76e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="ae76e-120">Request headers</span></span>
-| <span data-ttu-id="ae76e-121">名称</span><span class="sxs-lookup"><span data-stu-id="ae76e-121">Name</span></span>       | <span data-ttu-id="ae76e-122">类型</span><span class="sxs-lookup"><span data-stu-id="ae76e-122">Type</span></span> | <span data-ttu-id="ae76e-123">说明</span><span class="sxs-lookup"><span data-stu-id="ae76e-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="309ab-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="309ab-120">Request headers</span></span>
+| <span data-ttu-id="309ab-121">名称</span><span class="sxs-lookup"><span data-stu-id="309ab-121">Name</span></span>       | <span data-ttu-id="309ab-122">类型</span><span class="sxs-lookup"><span data-stu-id="309ab-122">Type</span></span> | <span data-ttu-id="309ab-123">说明</span><span class="sxs-lookup"><span data-stu-id="309ab-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ae76e-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="ae76e-124">Authorization</span></span>  | <span data-ttu-id="ae76e-125">string</span><span class="sxs-lookup"><span data-stu-id="ae76e-125">string</span></span>  | <span data-ttu-id="ae76e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ae76e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="309ab-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="309ab-124">Authorization</span></span>  | <span data-ttu-id="309ab-125">string</span><span class="sxs-lookup"><span data-stu-id="309ab-125">string</span></span>  | <span data-ttu-id="309ab-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="309ab-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ae76e-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="ae76e-128">Request body</span></span>
-<span data-ttu-id="ae76e-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ae76e-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="309ab-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="309ab-128">Request body</span></span>
+<span data-ttu-id="309ab-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="309ab-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ae76e-130">响应</span><span class="sxs-lookup"><span data-stu-id="ae76e-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="309ab-130">响应</span><span class="sxs-lookup"><span data-stu-id="309ab-130">Response</span></span>
 
-<span data-ttu-id="ae76e-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="ae76e-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="309ab-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="309ab-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ae76e-133">示例</span><span class="sxs-lookup"><span data-stu-id="ae76e-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ae76e-134">请求</span><span class="sxs-lookup"><span data-stu-id="ae76e-134">Request</span></span>
-<span data-ttu-id="ae76e-135">下面的示例展示了用于删除事件的附件的请求。</span><span class="sxs-lookup"><span data-stu-id="ae76e-135">Here is an example of the request to delete an attachment on an event.</span></span>
+## <a name="example"></a><span data-ttu-id="309ab-133">示例</span><span class="sxs-lookup"><span data-stu-id="309ab-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="309ab-134">请求</span><span class="sxs-lookup"><span data-stu-id="309ab-134">Request</span></span>
+<span data-ttu-id="309ab-135">下面的示例展示了用于删除事件的附件的请求。</span><span class="sxs-lookup"><span data-stu-id="309ab-135">Here is an example of the request to delete an attachment on an event.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_attachment"
@@ -100,8 +99,8 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="ae76e-136">响应</span><span class="sxs-lookup"><span data-stu-id="ae76e-136">Response</span></span>
-<span data-ttu-id="ae76e-137">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ae76e-137">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="309ab-136">响应</span><span class="sxs-lookup"><span data-stu-id="309ab-136">Response</span></span>
+<span data-ttu-id="309ab-137">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="309ab-137">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

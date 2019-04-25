@@ -5,20 +5,20 @@ ms.date: 10/06/2017
 title: IncompleteData
 localization_priority: Normal
 ms.openlocfilehash: f2493263d5293b95cbe386b46c56429d11dda089
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525085"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549032"
 ---
-# <a name="incompletedata-resource-type"></a><span data-ttu-id="0f95f-102">incompleteData 资源类型</span><span class="sxs-lookup"><span data-stu-id="0f95f-102">incompleteData resource type</span></span>
+# <a name="incompletedata-resource-type"></a><span data-ttu-id="fb8ee-102">incompleteData 资源类型</span><span class="sxs-lookup"><span data-stu-id="fb8ee-102">incompleteData resource type</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0f95f-103">**IncompleteData**方面指示资源生成不完整的数据。</span><span class="sxs-lookup"><span data-stu-id="0f95f-103">The **incompleteData** facet indicates that a resource was generated with incomplete data.</span></span>
-<span data-ttu-id="0f95f-104">内的属性可能提供有关信息，为什么不完整数据。</span><span class="sxs-lookup"><span data-stu-id="0f95f-104">The properties within may provide information about why there is incomplete data.</span></span>
+<span data-ttu-id="fb8ee-103">**incompleteData** facet 指示资源是使用不完整的数据生成的。</span><span class="sxs-lookup"><span data-stu-id="fb8ee-103">The **incompleteData** facet indicates that a resource was generated with incomplete data.</span></span>
+<span data-ttu-id="fb8ee-104">中的属性可能提供了有关不完整数据的原因的信息。</span><span class="sxs-lookup"><span data-stu-id="fb8ee-104">The properties within may provide information about why there is incomplete data.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0f95f-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="0f95f-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fb8ee-105">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="fb8ee-105">JSON representation</span></span>
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.incompleteData" } -->
 
@@ -29,12 +29,12 @@ ms.locfileid: "29525085"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="0f95f-106">属性</span><span class="sxs-lookup"><span data-stu-id="0f95f-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="fb8ee-106">属性</span><span class="sxs-lookup"><span data-stu-id="fb8ee-106">Properties</span></span>
 
-| <span data-ttu-id="0f95f-107">属性</span><span class="sxs-lookup"><span data-stu-id="0f95f-107">Property</span></span>                  | <span data-ttu-id="0f95f-108">类型</span><span class="sxs-lookup"><span data-stu-id="0f95f-108">Type</span></span>           | <span data-ttu-id="0f95f-109">说明</span><span class="sxs-lookup"><span data-stu-id="0f95f-109">Description</span></span>
+| <span data-ttu-id="fb8ee-107">属性</span><span class="sxs-lookup"><span data-stu-id="fb8ee-107">Property</span></span>                  | <span data-ttu-id="fb8ee-108">类型</span><span class="sxs-lookup"><span data-stu-id="fb8ee-108">Type</span></span>           | <span data-ttu-id="fb8ee-109">说明</span><span class="sxs-lookup"><span data-stu-id="fb8ee-109">Description</span></span>
 |:--------------------------|:---------------|:--------------------------------
-| <span data-ttu-id="0f95f-110">missingDataBeforeDateTime</span><span class="sxs-lookup"><span data-stu-id="0f95f-110">missingDataBeforeDateTime</span></span> | <span data-ttu-id="0f95f-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0f95f-111">DateTimeOffset</span></span> | <span data-ttu-id="0f95f-112">该服务不具有之前指定的时间的源数据。</span><span class="sxs-lookup"><span data-stu-id="0f95f-112">The service does not have source data before the specified time.</span></span>
-| <span data-ttu-id="0f95f-113">wasThrottled</span><span class="sxs-lookup"><span data-stu-id="0f95f-113">wasThrottled</span></span>              | <span data-ttu-id="0f95f-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="0f95f-114">Boolean</span></span>        | <span data-ttu-id="0f95f-115">由于活动太多而未录制一些数据。</span><span class="sxs-lookup"><span data-stu-id="0f95f-115">Some data was not recorded due to excessive activity.</span></span>
+| <span data-ttu-id="fb8ee-110">missingDataBeforeDateTime</span><span class="sxs-lookup"><span data-stu-id="fb8ee-110">missingDataBeforeDateTime</span></span> | <span data-ttu-id="fb8ee-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fb8ee-111">DateTimeOffset</span></span> | <span data-ttu-id="fb8ee-112">该服务在指定的时间之前没有源数据。</span><span class="sxs-lookup"><span data-stu-id="fb8ee-112">The service does not have source data before the specified time.</span></span>
+| <span data-ttu-id="fb8ee-113">wasThrottled</span><span class="sxs-lookup"><span data-stu-id="fb8ee-113">wasThrottled</span></span>              | <span data-ttu-id="fb8ee-114">布尔值</span><span class="sxs-lookup"><span data-stu-id="fb8ee-114">Boolean</span></span>        | <span data-ttu-id="fb8ee-115">由于活动过多而未记录某些数据。</span><span class="sxs-lookup"><span data-stu-id="fb8ee-115">Some data was not recorded due to excessive activity.</span></span>
 
 <!--
 {

@@ -1,58 +1,58 @@
 ---
-title: 参与者： 设为静音
-description: 将呼叫中的特定参与者设为静音。
+title: '参与者: 静音'
+description: 将呼叫中的特定参与者静音。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0fa4190ca6a3871c42af3c753cb3d9d48d320bd5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521738"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539398"
 ---
-# <a name="participant-mute"></a><span data-ttu-id="a49ef-103">参与者： 设为静音</span><span class="sxs-lookup"><span data-stu-id="a49ef-103">participant: mute</span></span>
+# <a name="participant-mute"></a><span data-ttu-id="c05ba-103">参与者: 静音</span><span class="sxs-lookup"><span data-stu-id="c05ba-103">participant: mute</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a49ef-104">将呼叫中的特定参与者设为静音。</span><span class="sxs-lookup"><span data-stu-id="a49ef-104">Mute a specific participant in the call.</span></span>
+<span data-ttu-id="c05ba-104">将呼叫中的特定参与者静音。</span><span class="sxs-lookup"><span data-stu-id="c05ba-104">Mute a specific participant in the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a49ef-105">权限</span><span class="sxs-lookup"><span data-stu-id="a49ef-105">Permissions</span></span>
-<span data-ttu-id="a49ef-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a49ef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c05ba-105">权限</span><span class="sxs-lookup"><span data-stu-id="c05ba-105">Permissions</span></span>
+<span data-ttu-id="c05ba-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c05ba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a49ef-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a49ef-108">Permission type</span></span> | <span data-ttu-id="a49ef-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a49ef-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c05ba-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="c05ba-108">Permission type</span></span> | <span data-ttu-id="c05ba-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c05ba-109">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="a49ef-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a49ef-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="a49ef-111">不支持</span><span class="sxs-lookup"><span data-stu-id="a49ef-111">Not Supported</span></span>        |
-| <span data-ttu-id="a49ef-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a49ef-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a49ef-113">不支持</span><span class="sxs-lookup"><span data-stu-id="a49ef-113">Not Supported</span></span>        |
-| <span data-ttu-id="a49ef-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a49ef-114">Application</span></span>     | <span data-ttu-id="a49ef-115">无</span><span class="sxs-lookup"><span data-stu-id="a49ef-115">None</span></span>                                        |
+| <span data-ttu-id="c05ba-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c05ba-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="c05ba-111">不支持</span><span class="sxs-lookup"><span data-stu-id="c05ba-111">Not Supported</span></span>        |
+| <span data-ttu-id="c05ba-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c05ba-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c05ba-113">不支持</span><span class="sxs-lookup"><span data-stu-id="c05ba-113">Not Supported</span></span>        |
+| <span data-ttu-id="c05ba-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="c05ba-114">Application</span></span>     | <span data-ttu-id="c05ba-115">无</span><span class="sxs-lookup"><span data-stu-id="c05ba-115">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="a49ef-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a49ef-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c05ba-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c05ba-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/{id}/mute
 POST /applications/{id}/calls/{id}/participants/{id}/mute
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a49ef-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="a49ef-117">Request headers</span></span>
-| <span data-ttu-id="a49ef-118">名称</span><span class="sxs-lookup"><span data-stu-id="a49ef-118">Name</span></span>          | <span data-ttu-id="a49ef-119">说明</span><span class="sxs-lookup"><span data-stu-id="a49ef-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="c05ba-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="c05ba-117">Request headers</span></span>
+| <span data-ttu-id="c05ba-118">名称</span><span class="sxs-lookup"><span data-stu-id="c05ba-118">Name</span></span>          | <span data-ttu-id="c05ba-119">说明</span><span class="sxs-lookup"><span data-stu-id="c05ba-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="a49ef-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a49ef-120">Authorization</span></span> | <span data-ttu-id="a49ef-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a49ef-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c05ba-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c05ba-120">Authorization</span></span> | <span data-ttu-id="c05ba-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c05ba-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a49ef-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="a49ef-123">Request body</span></span>
-<span data-ttu-id="a49ef-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="a49ef-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c05ba-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="c05ba-123">Request body</span></span>
+<span data-ttu-id="c05ba-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="c05ba-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="a49ef-125">参数</span><span class="sxs-lookup"><span data-stu-id="a49ef-125">Parameter</span></span>      | <span data-ttu-id="a49ef-126">类型</span><span class="sxs-lookup"><span data-stu-id="a49ef-126">Type</span></span>    |<span data-ttu-id="a49ef-127">说明</span><span class="sxs-lookup"><span data-stu-id="a49ef-127">Description</span></span>|
+| <span data-ttu-id="c05ba-125">参数</span><span class="sxs-lookup"><span data-stu-id="c05ba-125">Parameter</span></span>      | <span data-ttu-id="c05ba-126">类型</span><span class="sxs-lookup"><span data-stu-id="c05ba-126">Type</span></span>    |<span data-ttu-id="c05ba-127">说明</span><span class="sxs-lookup"><span data-stu-id="c05ba-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a49ef-128">ClientContext</span><span class="sxs-lookup"><span data-stu-id="a49ef-128">clientContext</span></span>|<span data-ttu-id="a49ef-129">String</span><span class="sxs-lookup"><span data-stu-id="a49ef-129">String</span></span>|<span data-ttu-id="a49ef-130">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="a49ef-130">The client context.</span></span>|
+|<span data-ttu-id="c05ba-128">适用</span><span class="sxs-lookup"><span data-stu-id="c05ba-128">clientContext</span></span>|<span data-ttu-id="c05ba-129">String</span><span class="sxs-lookup"><span data-stu-id="c05ba-129">String</span></span>|<span data-ttu-id="c05ba-130">客户端上下文。</span><span class="sxs-lookup"><span data-stu-id="c05ba-130">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a49ef-131">响应</span><span class="sxs-lookup"><span data-stu-id="a49ef-131">Response</span></span>
-<span data-ttu-id="a49ef-132">如果成功，此方法返回`200 OK`响应正文中的响应代码和[commsOperation](../resources/commsoperation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a49ef-132">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c05ba-131">响应</span><span class="sxs-lookup"><span data-stu-id="c05ba-131">Response</span></span>
+<span data-ttu-id="c05ba-132">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[commsOperation](../resources/commsoperation.md)对象。</span><span class="sxs-lookup"><span data-stu-id="c05ba-132">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a49ef-133">示例</span><span class="sxs-lookup"><span data-stu-id="a49ef-133">Example</span></span>
-<span data-ttu-id="a49ef-134">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="a49ef-134">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="c05ba-133">示例</span><span class="sxs-lookup"><span data-stu-id="c05ba-133">Example</span></span>
+<span data-ttu-id="c05ba-134">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="c05ba-134">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="a49ef-135">请求</span><span class="sxs-lookup"><span data-stu-id="a49ef-135">Request</span></span>
-<span data-ttu-id="a49ef-136">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="a49ef-136">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="c05ba-135">请求</span><span class="sxs-lookup"><span data-stu-id="c05ba-135">Request</span></span>
+<span data-ttu-id="c05ba-136">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="c05ba-136">The following example shows the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "participant-mute"
@@ -67,9 +67,9 @@ Content-Length: 46
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="a49ef-137">响应</span><span class="sxs-lookup"><span data-stu-id="a49ef-137">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c05ba-137">响应</span><span class="sxs-lookup"><span data-stu-id="c05ba-137">Response</span></span>
 
-> <span data-ttu-id="a49ef-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a49ef-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="c05ba-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="c05ba-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -90,9 +90,9 @@ Content-Length: 259
 }
 ```
 
-## <a name="example---mute-specific-participant"></a><span data-ttu-id="a49ef-140">示例-静音特定参与者</span><span class="sxs-lookup"><span data-stu-id="a49ef-140">Example - Mute specific participant</span></span>
+## <a name="example---mute-specific-participant"></a><span data-ttu-id="c05ba-140">示例-特定参与者的静音</span><span class="sxs-lookup"><span data-stu-id="c05ba-140">Example - Mute specific participant</span></span>
 
-##### <a name="request"></a><span data-ttu-id="a49ef-141">请求</span><span class="sxs-lookup"><span data-stu-id="a49ef-141">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="c05ba-141">请求</span><span class="sxs-lookup"><span data-stu-id="c05ba-141">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/0698446E77E24E4D85F80597083CB830/mute
@@ -104,7 +104,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="a49ef-142">响应</span><span class="sxs-lookup"><span data-stu-id="a49ef-142">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c05ba-142">响应</span><span class="sxs-lookup"><span data-stu-id="c05ba-142">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -127,7 +127,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a><span data-ttu-id="a49ef-143">通知-更新与设为静音的参与者名单</span><span class="sxs-lookup"><span data-stu-id="a49ef-143">Notification - roster updated with participant muted</span></span>
+##### <a name="notification---roster-updated-with-participant-muted"></a><span data-ttu-id="c05ba-143">通知-名单在参与者静音时更新</span><span class="sxs-lookup"><span data-stu-id="c05ba-143">Notification - roster updated with participant muted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

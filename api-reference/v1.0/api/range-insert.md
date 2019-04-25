@@ -5,25 +5,25 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: aa59abfd2b60454a73472fc5283d3c7212ee48ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929044"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558200"
 ---
-# <a name="range-insert"></a><span data-ttu-id="cb51d-104">Range: insert</span><span class="sxs-lookup"><span data-stu-id="cb51d-104">Range: insert</span></span>
+# <a name="range-insert"></a><span data-ttu-id="ed6cd-104">Range: insert</span><span class="sxs-lookup"><span data-stu-id="ed6cd-104">Range: insert</span></span>
 
-<span data-ttu-id="cb51d-p102">将单个单元格或一系列单元格插入到工作表中取代此区域，并移动其他单元格以留出空间。在现在空白的空间返回新的 Range 对象。</span><span class="sxs-lookup"><span data-stu-id="cb51d-p102">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
-## <a name="permissions"></a><span data-ttu-id="cb51d-107">权限</span><span class="sxs-lookup"><span data-stu-id="cb51d-107">Permissions</span></span>
-<span data-ttu-id="cb51d-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="cb51d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ed6cd-p102">将单个单元格或一系列单元格插入到工作表中取代此区域，并移动其他单元格以留出空间。在现在空白的空间返回新的 Range 对象。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-p102">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ed6cd-107">权限</span><span class="sxs-lookup"><span data-stu-id="ed6cd-107">Permissions</span></span>
+<span data-ttu-id="ed6cd-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cb51d-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="cb51d-110">Permission type</span></span>      | <span data-ttu-id="cb51d-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="cb51d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ed6cd-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ed6cd-110">Permission type</span></span>      | <span data-ttu-id="ed6cd-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ed6cd-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cb51d-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="cb51d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="cb51d-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cb51d-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="cb51d-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="cb51d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb51d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="cb51d-115">Not supported.</span></span>    |
-|<span data-ttu-id="cb51d-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="cb51d-116">Application</span></span> | <span data-ttu-id="cb51d-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="cb51d-117">Not supported.</span></span> |
+|<span data-ttu-id="ed6cd-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ed6cd-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ed6cd-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ed6cd-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ed6cd-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ed6cd-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ed6cd-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-115">Not supported.</span></span>    |
+|<span data-ttu-id="ed6cd-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ed6cd-116">Application</span></span> | <span data-ttu-id="ed6cd-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cb51d-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="cb51d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ed6cd-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ed6cd-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/insert
@@ -31,27 +31,27 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/insert
 POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="cb51d-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="cb51d-119">Request headers</span></span>
-| <span data-ttu-id="cb51d-120">名称</span><span class="sxs-lookup"><span data-stu-id="cb51d-120">Name</span></span>       | <span data-ttu-id="cb51d-121">说明</span><span class="sxs-lookup"><span data-stu-id="cb51d-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ed6cd-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="ed6cd-119">Request headers</span></span>
+| <span data-ttu-id="ed6cd-120">名称</span><span class="sxs-lookup"><span data-stu-id="ed6cd-120">Name</span></span>       | <span data-ttu-id="ed6cd-121">说明</span><span class="sxs-lookup"><span data-stu-id="ed6cd-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="cb51d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="cb51d-122">Authorization</span></span>  | <span data-ttu-id="cb51d-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="cb51d-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="cb51d-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="cb51d-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="cb51d-p105">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="cb51d-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="ed6cd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ed6cd-122">Authorization</span></span>  | <span data-ttu-id="ed6cd-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ed6cd-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ed6cd-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="ed6cd-p105">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cb51d-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="cb51d-128">Request body</span></span>
-<span data-ttu-id="cb51d-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="cb51d-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ed6cd-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="ed6cd-128">Request body</span></span>
+<span data-ttu-id="ed6cd-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="cb51d-130">参数</span><span class="sxs-lookup"><span data-stu-id="cb51d-130">Parameter</span></span>    | <span data-ttu-id="cb51d-131">类型</span><span class="sxs-lookup"><span data-stu-id="cb51d-131">Type</span></span>   |<span data-ttu-id="cb51d-132">说明</span><span class="sxs-lookup"><span data-stu-id="cb51d-132">Description</span></span>|
+| <span data-ttu-id="ed6cd-130">参数</span><span class="sxs-lookup"><span data-stu-id="ed6cd-130">Parameter</span></span>    | <span data-ttu-id="ed6cd-131">类型</span><span class="sxs-lookup"><span data-stu-id="ed6cd-131">Type</span></span>   |<span data-ttu-id="ed6cd-132">说明</span><span class="sxs-lookup"><span data-stu-id="ed6cd-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cb51d-133">Shift</span><span class="sxs-lookup"><span data-stu-id="cb51d-133">shift</span></span>|<span data-ttu-id="cb51d-134">string</span><span class="sxs-lookup"><span data-stu-id="cb51d-134">string</span></span>|<span data-ttu-id="cb51d-135">指定移动单元格的方式。</span><span class="sxs-lookup"><span data-stu-id="cb51d-135">Specifies which way to shift the cells.</span></span>  <span data-ttu-id="cb51d-136">可能的值为： `Down`， `Right`。</span><span class="sxs-lookup"><span data-stu-id="cb51d-136">The possible values are: `Down`, `Right`.</span></span>|
+|<span data-ttu-id="ed6cd-133">Shift</span><span class="sxs-lookup"><span data-stu-id="ed6cd-133">shift</span></span>|<span data-ttu-id="ed6cd-134">string</span><span class="sxs-lookup"><span data-stu-id="ed6cd-134">string</span></span>|<span data-ttu-id="ed6cd-135">指定移动单元格的方式。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-135">Specifies which way to shift the cells.</span></span>  <span data-ttu-id="ed6cd-136">可能的值为: `Down`、 `Right`。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-136">The possible values are: `Down`, `Right`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="cb51d-137">响应</span><span class="sxs-lookup"><span data-stu-id="cb51d-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ed6cd-137">响应</span><span class="sxs-lookup"><span data-stu-id="ed6cd-137">Response</span></span>
 
-<span data-ttu-id="cb51d-138">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="cb51d-138">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="ed6cd-138">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-138">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cb51d-139">示例</span><span class="sxs-lookup"><span data-stu-id="cb51d-139">Example</span></span>
-<span data-ttu-id="cb51d-140">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="cb51d-140">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="cb51d-141">请求</span><span class="sxs-lookup"><span data-stu-id="cb51d-141">Request</span></span>
-<span data-ttu-id="cb51d-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="cb51d-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ed6cd-139">示例</span><span class="sxs-lookup"><span data-stu-id="ed6cd-139">Example</span></span>
+<span data-ttu-id="ed6cd-140">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-140">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="ed6cd-141">请求</span><span class="sxs-lookup"><span data-stu-id="ed6cd-141">Request</span></span>
+<span data-ttu-id="ed6cd-142">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_insert"
@@ -66,8 +66,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="cb51d-143">响应</span><span class="sxs-lookup"><span data-stu-id="cb51d-143">Response</span></span>
-<span data-ttu-id="cb51d-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="cb51d-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ed6cd-143">响应</span><span class="sxs-lookup"><span data-stu-id="ed6cd-143">Response</span></span>
+<span data-ttu-id="ed6cd-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ed6cd-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

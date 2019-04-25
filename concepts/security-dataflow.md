@@ -5,26 +5,26 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.openlocfilehash: 47731520b9ae959212750aea4f9668d58ac85a08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987809"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521677"
 ---
-# <a name="microsoft-graph-security-api-data-flow"></a><span data-ttu-id="9a4ea-105">Microsoft Graph 安全性 API 数据流</span><span class="sxs-lookup"><span data-stu-id="9a4ea-105">Microsoft Graph Security API data flow</span></span>
+# <a name="microsoft-graph-security-api-data-flow"></a><span data-ttu-id="75284-105">Microsoft Graph 安全性 API 数据流</span><span class="sxs-lookup"><span data-stu-id="75284-105">Microsoft Graph Security API data flow</span></span>
 
-<span data-ttu-id="9a4ea-106">Microsoft Graph 安全性 API 在 Microsoft Graph 安全性生态系统中联合了对所有提供商的请求。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-106">The Microsoft Graph Security API federates requests to all providers in the Microsoft Graph Security ecosystem.</span></span> <span data-ttu-id="9a4ea-107">这基于应用程序提供的安全性提供商许可，如下图所示。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-107">This is based on the security provider consent provided by the application, as shown in the following diagram.</span></span> <span data-ttu-id="9a4ea-108">此许可工作流仅适用于非 Microsoft 提供商。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-108">The consent workflow only applies to non-Microsoft providers.</span></span>
+<span data-ttu-id="75284-106">Microsoft Graph 安全性 API 在 Microsoft Graph 安全性生态系统中联合了对所有提供商的请求。</span><span class="sxs-lookup"><span data-stu-id="75284-106">The Microsoft Graph Security API federates requests to all providers in the Microsoft Graph Security ecosystem.</span></span> <span data-ttu-id="75284-107">这基于应用程序提供的安全性提供商许可，如下图所示。</span><span class="sxs-lookup"><span data-stu-id="75284-107">This is based on the security provider consent provided by the application, as shown in the following diagram.</span></span> <span data-ttu-id="75284-108">此许可工作流仅适用于非 Microsoft 提供商。</span><span class="sxs-lookup"><span data-stu-id="75284-108">The consent workflow only applies to non-Microsoft providers.</span></span>
 
 ![security_dataflow_1.png](./images/security-dataflow-1.png)
 
-<span data-ttu-id="9a4ea-110">以下是对此流的说明：</span><span class="sxs-lookup"><span data-stu-id="9a4ea-110">The following is a description of the flow:</span></span>
+<span data-ttu-id="75284-110">以下是对此流的说明：</span><span class="sxs-lookup"><span data-stu-id="75284-110">The following is a description of the flow:</span></span>
 
-1. <span data-ttu-id="9a4ea-111">应用程序用户登录到提供商应用程序，以查看提供商提供的许可表单。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-111">The application user signs in to the provider application to view the consent form from the provider.</span></span> <span data-ttu-id="9a4ea-112">此许可表单体验或 UI 的所有权属于提供商，且仅适用于非 Microsoft 提供商用于获取其客户对向 Microsoft Graph 安全性 API 发送请求的明确许可。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-112">This consent form experience or UI is owned by the provider and applies to non-Microsoft providers only to get explicit consent from their customers to send requests to Microsoft Graph Security API.</span></span>
-2. <span data-ttu-id="9a4ea-113">客户端许可存储在提供商端。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-113">The client consent is stored on the provider side.</span></span>
-3. <span data-ttu-id="9a4ea-114">提供商许可服务调用 Microsoft Graph 安全性 API，来告知相应客户的许可批准。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-114">The provider consent service calls the Microsoft Graph Security API to inform consent approval for the respective customer.</span></span>
-4. <span data-ttu-id="9a4ea-115">应用程序向 Microsoft Graph 安全性 API 发送请求。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-115">The application sends a request to the Microsoft Graph Security API.</span></span>
-5. <span data-ttu-id="9a4ea-116">Microsoft Graph 安全性 API 查看此客户映射到各个提供商的许可信息。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-116">The Microsoft Graph Security API checks for the consent information for this customer mapped to various providers.</span></span>
-6. <span data-ttu-id="9a4ea-117">Microsoft Graph 安全性 API 调用此客户已通过提供商许可体验明确许可的所有提供商。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-117">The Microsoft Graph Security API calls all those providers the customer has given explicit consent to via the provider consent experience.</span></span>
-7. <span data-ttu-id="9a4ea-118">从该客户端的所有已许可的提供商返回响应。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-118">The response is returned from all the consented providers for that client.</span></span>
-8. <span data-ttu-id="9a4ea-119">结果集响应返回至应用程序。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-119">The result set response is returned to the application.</span></span>
-9. <span data-ttu-id="9a4ea-120">若客户尚未许可任何提供商，则响应不包括任何提供商提供的结果。</span><span class="sxs-lookup"><span data-stu-id="9a4ea-120">If the customer has not consented to any provider, no results from those providers are included in the response.</span></span>
+1. <span data-ttu-id="75284-111">应用程序用户登录到提供商应用程序，以查看提供商提供的许可表单。</span><span class="sxs-lookup"><span data-stu-id="75284-111">The application user signs in to the provider application to view the consent form from the provider.</span></span> <span data-ttu-id="75284-112">此许可表单体验或 UI 的所有权属于提供商，且仅适用于非 Microsoft 提供商用于获取其客户对向 Microsoft Graph 安全性 API 发送请求的明确许可。</span><span class="sxs-lookup"><span data-stu-id="75284-112">This consent form experience or UI is owned by the provider and applies to non-Microsoft providers only to get explicit consent from their customers to send requests to Microsoft Graph Security API.</span></span>
+2. <span data-ttu-id="75284-113">客户端许可存储在提供商端。</span><span class="sxs-lookup"><span data-stu-id="75284-113">The client consent is stored on the provider side.</span></span>
+3. <span data-ttu-id="75284-114">提供商许可服务调用 Microsoft Graph 安全性 API，来告知相应客户的许可批准。</span><span class="sxs-lookup"><span data-stu-id="75284-114">The provider consent service calls the Microsoft Graph Security API to inform consent approval for the respective customer.</span></span>
+4. <span data-ttu-id="75284-115">应用程序向 Microsoft Graph 安全性 API 发送请求。</span><span class="sxs-lookup"><span data-stu-id="75284-115">The application sends a request to the Microsoft Graph Security API.</span></span>
+5. <span data-ttu-id="75284-116">Microsoft Graph 安全性 API 查看此客户映射到各个提供商的许可信息。</span><span class="sxs-lookup"><span data-stu-id="75284-116">The Microsoft Graph Security API checks for the consent information for this customer mapped to various providers.</span></span>
+6. <span data-ttu-id="75284-117">Microsoft Graph 安全性 API 调用此客户已通过提供商许可体验明确许可的所有提供商。</span><span class="sxs-lookup"><span data-stu-id="75284-117">The Microsoft Graph Security API calls all those providers the customer has given explicit consent to via the provider consent experience.</span></span>
+7. <span data-ttu-id="75284-118">从该客户端的所有已许可的提供商返回响应。</span><span class="sxs-lookup"><span data-stu-id="75284-118">The response is returned from all the consented providers for that client.</span></span>
+8. <span data-ttu-id="75284-119">结果集响应返回至应用程序。</span><span class="sxs-lookup"><span data-stu-id="75284-119">The result set response is returned to the application.</span></span>
+9. <span data-ttu-id="75284-120">若客户尚未许可任何提供商，则响应不包括任何提供商提供的结果。</span><span class="sxs-lookup"><span data-stu-id="75284-120">If the customer has not consented to any provider, no results from those providers are included in the response.</span></span>
