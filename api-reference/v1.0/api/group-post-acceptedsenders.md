@@ -5,45 +5,45 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: ba5d98796807be0ad1bb6eb58bb55fd8eb00fb84
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990276"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561815"
 ---
-# <a name="create-acceptedsender"></a><span data-ttu-id="2d73c-103">删除 acceptedSender</span><span class="sxs-lookup"><span data-stu-id="2d73c-103">Create acceptedSender</span></span>
-<span data-ttu-id="2d73c-104">向 acceptedSender 列表中添加新用户或组。</span><span class="sxs-lookup"><span data-stu-id="2d73c-104">Add a new user or group to the acceptedSender list.</span></span>
+# <a name="create-acceptedsender"></a><span data-ttu-id="c391e-103">删除 acceptedSender</span><span class="sxs-lookup"><span data-stu-id="c391e-103">Create acceptedSender</span></span>
+<span data-ttu-id="c391e-104">向 acceptedSender 列表中添加新用户或组。</span><span class="sxs-lookup"><span data-stu-id="c391e-104">Add a new user or group to the acceptedSender list.</span></span>
 
-<span data-ttu-id="2d73c-p101">在请求主体的 `@odata.id` 中指定用户或组。已接受的发件人列表中的用户可以发布到组对话。确保未在接受的发件人和拒绝的发件人列表中指定同一用户或组，否则会发生错误。</span><span class="sxs-lookup"><span data-stu-id="2d73c-p101">Specify the user or group in `@odata.id` in the request body. Users in the accepted senders list can post to conversations of the group . Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.</span></span>
+<span data-ttu-id="c391e-p101">在请求主体的 `@odata.id` 中指定用户或组。已接受的发件人列表中的用户可以发布到组对话。确保未在接受的发件人和拒绝的发件人列表中指定同一用户或组，否则会发生错误。</span><span class="sxs-lookup"><span data-stu-id="c391e-p101">Specify the user or group in `@odata.id` in the request body. Users in the accepted senders list can post to conversations of the group . Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2d73c-108">权限</span><span class="sxs-lookup"><span data-stu-id="2d73c-108">Permissions</span></span>
-<span data-ttu-id="2d73c-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="2d73c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c391e-108">权限</span><span class="sxs-lookup"><span data-stu-id="c391e-108">Permissions</span></span>
+<span data-ttu-id="c391e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c391e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2d73c-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="2d73c-111">Permission type</span></span>      | <span data-ttu-id="2d73c-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="2d73c-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c391e-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="c391e-111">Permission type</span></span>      | <span data-ttu-id="c391e-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c391e-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2d73c-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="2d73c-113">Delegated (work or school account)</span></span> | <span data-ttu-id="2d73c-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2d73c-114">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="2d73c-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="2d73c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2d73c-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="2d73c-116">Not supported.</span></span>    |
-|<span data-ttu-id="2d73c-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="2d73c-117">Application</span></span> | <span data-ttu-id="2d73c-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="2d73c-118">Not supported.</span></span> |
+|<span data-ttu-id="c391e-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c391e-113">Delegated (work or school account)</span></span> | <span data-ttu-id="c391e-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c391e-114">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c391e-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c391e-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c391e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="c391e-116">Not supported.</span></span>    |
+|<span data-ttu-id="c391e-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="c391e-117">Application</span></span> | <span data-ttu-id="c391e-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="c391e-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2d73c-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="2d73c-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c391e-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c391e-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/acceptedSenders/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="2d73c-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="2d73c-120">Request headers</span></span>
-| <span data-ttu-id="2d73c-121">标头</span><span class="sxs-lookup"><span data-stu-id="2d73c-121">Header</span></span>       | <span data-ttu-id="2d73c-122">值</span><span class="sxs-lookup"><span data-stu-id="2d73c-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c391e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="c391e-120">Request headers</span></span>
+| <span data-ttu-id="c391e-121">标头</span><span class="sxs-lookup"><span data-stu-id="c391e-121">Header</span></span>       | <span data-ttu-id="c391e-122">值</span><span class="sxs-lookup"><span data-stu-id="c391e-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="2d73c-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="2d73c-123">Authorization</span></span>  | <span data-ttu-id="2d73c-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="2d73c-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c391e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c391e-123">Authorization</span></span>  | <span data-ttu-id="c391e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c391e-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2d73c-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="2d73c-126">Request body</span></span>
-<span data-ttu-id="2d73c-127">在请求正文中，提供 user 或 group 对象的 ID。</span><span class="sxs-lookup"><span data-stu-id="2d73c-127">In the request body, supply the id of a user or group object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c391e-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c391e-126">Request body</span></span>
+<span data-ttu-id="c391e-127">在请求正文中，提供 user 或 group 对象的 ID。</span><span class="sxs-lookup"><span data-stu-id="c391e-127">In the request body, supply the id of a user or group object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2d73c-128">响应</span><span class="sxs-lookup"><span data-stu-id="2d73c-128">Response</span></span>
-<span data-ttu-id="2d73c-129">此方法返回 `204 No Content` 响应代码，不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="2d73c-129">This method returns `204 No Content` response code and no response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c391e-128">响应</span><span class="sxs-lookup"><span data-stu-id="c391e-128">Response</span></span>
+<span data-ttu-id="c391e-129">此方法返回 `204 No Content` 响应代码，不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="c391e-129">This method returns `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2d73c-130">示例</span><span class="sxs-lookup"><span data-stu-id="2d73c-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="2d73c-131">请求</span><span class="sxs-lookup"><span data-stu-id="2d73c-131">Request</span></span>
-<span data-ttu-id="2d73c-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="2d73c-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c391e-130">示例</span><span class="sxs-lookup"><span data-stu-id="c391e-130">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="c391e-131">请求</span><span class="sxs-lookup"><span data-stu-id="c391e-131">Request</span></span>
+<span data-ttu-id="c391e-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c391e-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_acceptedsender"
@@ -58,8 +58,8 @@ Content-length: 30
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="2d73c-133">响应</span><span class="sxs-lookup"><span data-stu-id="2d73c-133">Response</span></span>
-<span data-ttu-id="2d73c-134">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="2d73c-134">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="c391e-133">响应</span><span class="sxs-lookup"><span data-stu-id="c391e-133">Response</span></span>
+<span data-ttu-id="c391e-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c391e-134">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

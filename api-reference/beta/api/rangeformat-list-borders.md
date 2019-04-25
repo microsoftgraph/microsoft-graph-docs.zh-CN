@@ -5,51 +5,51 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 44bb169f099c1b2a7870a0d962cf29829273c392
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509208"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546152"
 ---
-# <a name="list-borders"></a><span data-ttu-id="c57e5-103">列出边框</span><span class="sxs-lookup"><span data-stu-id="c57e5-103">List borders</span></span>
+# <a name="list-borders"></a><span data-ttu-id="97184-103">列出边框</span><span class="sxs-lookup"><span data-stu-id="97184-103">List borders</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c57e5-104">检索 rangeborder 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="c57e5-104">Retrieve a list of rangeborder objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c57e5-105">权限</span><span class="sxs-lookup"><span data-stu-id="c57e5-105">Permissions</span></span>
-<span data-ttu-id="c57e5-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c57e5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="97184-104">检索 rangeborder 对象的列表。</span><span class="sxs-lookup"><span data-stu-id="97184-104">Retrieve a list of rangeborder objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="97184-105">权限</span><span class="sxs-lookup"><span data-stu-id="97184-105">Permissions</span></span>
+<span data-ttu-id="97184-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="97184-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c57e5-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="c57e5-108">Permission type</span></span>      | <span data-ttu-id="c57e5-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c57e5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="97184-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="97184-108">Permission type</span></span>      | <span data-ttu-id="97184-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="97184-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c57e5-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c57e5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c57e5-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c57e5-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c57e5-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c57e5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c57e5-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c57e5-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c57e5-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="c57e5-114">Application</span></span> | <span data-ttu-id="c57e5-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c57e5-115">Not supported.</span></span> |
+|<span data-ttu-id="97184-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="97184-110">Delegated (work or school account)</span></span> | <span data-ttu-id="97184-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="97184-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="97184-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="97184-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97184-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="97184-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="97184-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="97184-114">Application</span></span> | <span data-ttu-id="97184-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="97184-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c57e5-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c57e5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="97184-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="97184-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format/borders
 GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c57e5-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="c57e5-117">Optional query parameters</span></span>
-<span data-ttu-id="c57e5-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="c57e5-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="97184-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="97184-117">Optional query parameters</span></span>
+<span data-ttu-id="97184-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="97184-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c57e5-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="c57e5-119">Request headers</span></span>
-| <span data-ttu-id="c57e5-120">名称</span><span class="sxs-lookup"><span data-stu-id="c57e5-120">Name</span></span>      |<span data-ttu-id="c57e5-121">说明</span><span class="sxs-lookup"><span data-stu-id="c57e5-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="97184-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="97184-119">Request headers</span></span>
+| <span data-ttu-id="97184-120">名称</span><span class="sxs-lookup"><span data-stu-id="97184-120">Name</span></span>      |<span data-ttu-id="97184-121">说明</span><span class="sxs-lookup"><span data-stu-id="97184-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c57e5-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c57e5-122">Authorization</span></span>  | <span data-ttu-id="c57e5-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c57e5-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c57e5-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c57e5-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="c57e5-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="c57e5-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="97184-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="97184-122">Authorization</span></span>  | <span data-ttu-id="97184-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="97184-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="97184-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="97184-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="97184-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="97184-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c57e5-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="c57e5-128">Request body</span></span>
-<span data-ttu-id="c57e5-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c57e5-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="97184-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="97184-128">Request body</span></span>
+<span data-ttu-id="97184-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="97184-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c57e5-130">响应</span><span class="sxs-lookup"><span data-stu-id="c57e5-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="97184-130">响应</span><span class="sxs-lookup"><span data-stu-id="97184-130">Response</span></span>
 
-<span data-ttu-id="c57e5-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [RangeBorder](../resources/rangeborder.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="c57e5-131">If successful, this method returns a `200 OK` response code and collection of [RangeBorder](../resources/rangeborder.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c57e5-132">示例</span><span class="sxs-lookup"><span data-stu-id="c57e5-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c57e5-133">请求</span><span class="sxs-lookup"><span data-stu-id="c57e5-133">Request</span></span>
-<span data-ttu-id="c57e5-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c57e5-134">Here is an example of the request.</span></span>
+<span data-ttu-id="97184-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [RangeBorder](../resources/rangeborder.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="97184-131">If successful, this method returns a `200 OK` response code and collection of [RangeBorder](../resources/rangeborder.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="97184-132">示例</span><span class="sxs-lookup"><span data-stu-id="97184-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="97184-133">请求</span><span class="sxs-lookup"><span data-stu-id="97184-133">Request</span></span>
+<span data-ttu-id="97184-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="97184-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_borders"
@@ -57,8 +57,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/borders
 ```
-##### <a name="response"></a><span data-ttu-id="c57e5-135">响应</span><span class="sxs-lookup"><span data-stu-id="c57e5-135">Response</span></span>
-<span data-ttu-id="c57e5-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c57e5-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="97184-135">响应</span><span class="sxs-lookup"><span data-stu-id="97184-135">Response</span></span>
+<span data-ttu-id="97184-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="97184-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
