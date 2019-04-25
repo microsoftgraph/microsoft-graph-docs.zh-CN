@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: 251bb02af83fc86f996c8bbf0c9ea10a5efad8ad
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994403"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584336"
 ---
 # <a name="microsoft-teams-api-overview"></a>Microsoft Teams API 概述
 

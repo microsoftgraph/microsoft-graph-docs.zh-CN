@@ -1,21 +1,21 @@
 ---
-title: 参与者： configureMixer
-description: 配置如何将音频混合的多方对话中的不同参与者。
+title: '参与者: configureMixer'
+description: 为多方对话中的不同参与者配置音频的混合方式。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0be23ec4c9e7835c919328655e89880003546472
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530039"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539466"
 ---
-# <a name="participant-configuremixer"></a>参与者： configureMixer
+# <a name="participant-configuremixer"></a>参与者: configureMixer
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-配置如何将音频混合的多方对话中的不同参与者。
+为多方对话中的不同参与者配置音频的混合方式。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "29530039"
 | :-------------- | :------------------------------------------ |
 | 委派（工作或学校帐户）     | 不支持        |
 | 委派（个人 Microsoft 帐户） | 不支持        |
-| 应用程序     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| 应用程序     | JoinGroupCalls、InitiateGroupCalls 和所有调用 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md)集合| 混音器配置为级别给定音频参与者。|
-|ClientContext|String|客户端上下文。|
+|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md)集合| 指定的音频参与者的混音器级别配置。|
+|适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和具有[commsOperation](../resources/commsoperation.md)创建的此请求 uri 中的位置标头。
+返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
 
 ## <a name="example"></a>示例
 以下示例演示如何调用此 API。
@@ -102,7 +102,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>通知-完成的操作
+##### <a name="notification---operation-completed"></a>通知-操作已完成
 
 ```http
 POST https://bot.contoso.com/api/calls

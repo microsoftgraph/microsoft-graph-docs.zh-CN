@@ -5,11 +5,11 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 35ea2b9161d1a2e1b6321ef56560dc83105c6de2
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574283"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582267"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot：getMailboxUsageDetail
 

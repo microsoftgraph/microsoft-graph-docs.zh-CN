@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 4c526c937f7d92b6e2b0482193f6c0327f4870c1
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869384"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539865"
 ---
 # <a name="delete-outlooktaskfolder"></a>删除 outlookTaskFolder
 

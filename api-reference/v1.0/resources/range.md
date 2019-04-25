@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a97747f1dc8cfce10f5f219f1970c07b1f982a52
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991599"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579513"
 ---
 # <a name="range-resource-type"></a>区域资源类型
 
@@ -71,7 +71,7 @@ ms.locfileid: "27991599"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |format|[WorkbookRangeFormat](rangeformat.md)|返回一个格式对象，其中封装了区域的字体、填充、边框、对齐方式和其他属性。只读。|
-|sort|[WorkbookRangeSort](rangesort.md)|包含当前区域的工作表。只读。|
+|sort|[WorkbookRangeSort](rangesort.md)|包含当前区域的工作表。 只读。|
 |worksheet|[WorkbookWorksheet](worksheet.md)|包含当前区域的工作表。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式

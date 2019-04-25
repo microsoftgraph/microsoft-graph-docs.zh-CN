@@ -1,19 +1,18 @@
 ---
 title: 更新 Outlook 类别
-description: '更新指定 outlookCategory 对象的可写属性 color。 不能修改的**displayName**属性 '
+description: '更新指定 outlookCategory 对象的可写属性 **color**。 不能修改**displayName**属性 '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 87c235b670036cb7f4d7e4c20a0e6c700d3843c7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523657"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539783"
 ---
 # <a name="update-outlook-category"></a>更新 Outlook 类别
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新指定 [outlookCategory](../resources/outlookcategory.md) 对象的可写属性 **color**。 创建类别后，不能修改 **displayName** 属性。
 
@@ -53,10 +52,11 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["bac262b7-485d-4739-b436-e31467d64fac"],
   "name": "update_outlookcategory"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/outlook/masterCategories('bac262b7-485d-4739-b436-e31467d64fac')
+PATCH https://graph.microsoft.com/v1.0/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
 Content-type: application/json
 Content-length: 30
 
@@ -77,7 +77,7 @@ Content-type: application/json
 Content-length: 251
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
   "id":"bac262b7-485d-4739-b436-e31467d64fac",
   "displayName":"Project expenses",
   "color":"preset15"
@@ -91,7 +91,5 @@ Content-length: 251
   "description": "Update outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlookcategory-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  "tocPath": ""
 }-->

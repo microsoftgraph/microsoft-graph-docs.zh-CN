@@ -5,11 +5,11 @@ localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bc06d4f8dcab8bf07d2dc0a9ff8130b305b8217c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29649373"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577705"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
