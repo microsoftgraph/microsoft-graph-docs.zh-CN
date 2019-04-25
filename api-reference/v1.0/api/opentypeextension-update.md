@@ -4,11 +4,11 @@ description: 通过请求正文中的属性更新开放扩展（openTypeExtensio
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 80009db1f90393fbb706876264272b581575ce3d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986374"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572568"
 ---
 # <a name="update-open-extension"></a>更新开放扩展
 
@@ -17,16 +17,16 @@ ms.locfileid: "27986374"
 - 如果请求正文中的属性与现有属性在扩展中的名称相匹配，则更新扩展中的数据。
 - 否则，属性及其数据将添加到扩展中。 
 
-扩展中的数据可以是基元类型，也可以是基元类型数组。
+扩展插件中的数据可以是基元类型，也可以是基元类型数组。
 
 ## <a name="permissions"></a>权限
 
-根据扩展中创建的资源和权限类型 （委派或应用程序） 请求下, 表中所指定的权限是最小特权需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据在其中创建扩展的资源以及请求的权限类型 (委派或应用程序), 下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 用途 |
+| 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.AccessAsUser.All | 不支持 | Device.ReadWrite.All |
-| [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [组](../resources/group.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
 | [组事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
@@ -59,10 +59,10 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ## <a name="path-parameters"></a>路径参数
 |参数|类型|说明|
 |:-----|:-----|:-----|
-|ID|string|相应集合的实例的唯一标识符。必需。|
+|id|string|相应集合的实例的唯一标识符。必需。|
 |extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 值 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -74,7 +74,7 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 
 | 名称       | 值 |
 |:---------------|:----------|
-| @odata.type | microsoft.graph.openTypeExtension |
+| @odata.type | openTypeExtension |
 | extensionName | %unique_string% |
 
 ## <a name="response"></a>响应
@@ -161,7 +161,7 @@ Content-type: application/json
 
 #### <a name="request-2"></a>请求 2
 
-第二个示例展示如何在组帖子中更新扩展。该扩展最初由以下 JSON 负载表示，其中的 `2015-07-03T13:04:00Z` 的值为 `expirationDate`
+第二个示例展示如何在组帖子中更新扩展。该扩展最初由以下 JSON 负载表示，其中的 `expirationDate` 的值为 `2015-07-03T13:04:00Z`
 
 <!-- { "blockType": "ignored" } -->
 ```http

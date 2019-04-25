@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c4d291f84a8c4404ff5b4425680260997b6b452f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261745"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572414"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>deviceCompliancePolicySettingState 资源类型
 
@@ -29,8 +29,8 @@ ms.locfileid: "30261745"
 |userId|String|UserId|
 |userName|String|UserName|
 |userEmail|String|UserEmail|
-|userPrincipalName|字符串|UserPrincipalName。|
-|sources|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|参与策略|
+|userPrincipalName|String|UserPrincipalName。|
+|源|[settingSource](../resources/intune-deviceconfig-settingsource.md) 集合|参与策略|
 |currentValue|String|设备上设置的当前值|
 
 ## <a name="relationships"></a>关系

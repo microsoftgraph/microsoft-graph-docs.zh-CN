@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a46f0e43a9eb1099c2df615b88f15576afa30e9c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951479"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575294"
 ---
 # <a name="range-cell"></a>Range:单元格
 
@@ -38,7 +38,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="path-parameters"></a>路径参数
-在路径中，提供了以下参数。
+在路径中, 提供以下参数。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|

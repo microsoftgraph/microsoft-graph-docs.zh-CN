@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 4b3c54e85c96524305fdba32525e277dd15508ed
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142817"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540323"
 ---
 # <a name="update-message"></a>更新邮件
 
@@ -37,30 +37,30 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type | 字符串  | 实体正文中的数据性质。必需。 |
+| Content-Type | string  | 实体正文中的数据性质。必需。 |
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了获得最佳性能，不应包括尚未更改的现有值。 可以更新以下属性。
+在请求正文中，提供应更新的相关字段的值。 请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 为了实现最佳性能，不得添加未变化的现有值。 可更新以下属性。
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|bccRecipients|Recipient|邮件的密件抄送收件人。 |
-|body|ItemBody|邮件的正文。 仅当 isDraft = true 时才可更新。|
+|bccRecipients|收件人|邮件的密件抄送收件人。 |
+|body|ItemBody|邮件的正文。 仅当 isDraft = true 时可以更新。|
 |categories|String collection|与邮件关联的类别。|
-|ccRecipients|Recipient collection|邮件的 "抄送" 收件人。 |
+|ccRecipients|收件人集合|邮件的抄送收件人。 |
 |flag|[followupFlag](../resources/followupflag.md)|指示邮件的状态、开始日期、截止日期或完成日期的标志值。|
-|发件人|Recipient|邮箱所有者和邮件发件人。 必须对应于使用的实际邮箱。 |
-|importance|字符串|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
-|inferenceClassification | 字符串 | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
-|internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 仅当 isDraft = true 时才可更新。|
-|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
-|isRead|布尔|指示是否已阅读该邮件。|
-|isReadReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。 可为 Null。|
-|replyTo|Recipient collection|在答复时使用的电子邮件地址。 仅当 isDraft = true 时才可更新。|
-|sender|Recipient|实际用于生成邮件的帐户。 从[共享邮箱](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或以[代理](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)的形式发送邮件时可更新。 在任何情况下，此值必须对应于使用的实际邮箱。|
+|发件人|收件人|邮箱所有者和邮件发件人。 必须对应于使用的实际邮箱。 |
+|importance|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
+|inferenceClassification | String | 根据推导出的相关性或重要性或显式替代，对用户邮件的分类。可能的值是：`focused` 或 `other`。 |
+|internetMessageId |String |由 [RFC2822](https://www.ietf.org/rfc/rfc2822.txt) 指定格式的邮件 ID。 仅当 isDraft = true 时可以更新。|
+|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|isRead|Boolean|指示是否已阅读该邮件。|
+|isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) 集合| 为邮件定义的多值扩展属性的集合。 可为空。|
+|replyTo|收件人集合|在答复时使用的电子邮件地址。 仅当 isDraft = true 时可以更新。|
+|sender|收件人|实际用于生成邮件的帐户。 从[共享邮箱](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)发送邮件或将邮件作为[委托](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926)发送时可更新。 在任何情况下，此值必须对应于使用的实际邮箱。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| 为邮件定义的单值扩展属性的集合。可为空。|
-|subject|字符串|邮件的主题。 仅当 isDraft = true 时才可更新。|
-|toRecipients|Recipient collection|邮件的收件人。 |
+|subject|String|邮件的主题。 仅当 isDraft = true 时可以更新。|
+|toRecipients|收件人集合|邮件的收件人。 |
 
 由于**邮件**资源支持[扩展](/graph/extensibility-overview)，因此可以使用 `PATCH` 操作在现有**邮件**实例的扩展自定义属性中添加、更新或删除自己的特定于应用的数据。
 

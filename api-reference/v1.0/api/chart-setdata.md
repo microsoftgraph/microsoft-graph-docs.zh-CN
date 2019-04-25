@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 93f50cd4f62909514145cfd369f32e1736b7215f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928519"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563488"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -41,7 +41,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/setData
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |sourceData|Json|对应于源数据的 Range 对象。|
-|seriesBy|string|可选。 指定的方式列或行用作图表上的数据系列。 可以是下列选项之一： 自动 （默认）、 行、 列。  可能的值为： `Auto`， `Columns`， `Rows`。|
+|seriesBy|字符串|可选。 指定列或行在图表上用作数据系列的方式。 可以是下列值之一：Auto（默认值）、Rows、Columns。  可能的值包括 `Auto`、`Columns`、`Rows`。|
 
 ## <a name="response"></a>响应
 

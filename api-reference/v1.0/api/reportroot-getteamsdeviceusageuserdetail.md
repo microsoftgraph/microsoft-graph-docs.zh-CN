@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 5dd6690ba000bb1a49fb688ccf655970a0dbbc1a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571910"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575238"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -23,7 +23,7 @@ ms.locfileid: "29571910"
 | :------------------------------------- | :--------------------------------------- |
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
-| 应用                            | Reports.Read.All                         |
+| 应用程序                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -36,7 +36,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 
 ## <a name="function-parameters"></a>函数参数
 
-在请求 URL 中，提供以下参数之一的有效值。
+在请求 URL 中，提供以下任一参数的有效值。
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
@@ -55,7 +55,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 
 如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
-预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。
+预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
 
 CSV 文件包含下面的列标题：
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserDetail(perio
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",

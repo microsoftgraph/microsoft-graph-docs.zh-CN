@@ -1,31 +1,31 @@
 ---
 title: relatedContact 资源类型
-description: 联系人与提供的监护人、 工具、 医生，等信息 educationUser 相关的记录。
+description: 与为监护人、工具、医生等提供信息的 educationUser 相关的联系人记录。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: d29cf93154e2c032ac7010372e3f116f2a1dd46c
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694473"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563049"
 ---
 # <a name="relatedcontact-resource-type"></a>relatedContact 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-联系人提供监护人、 工具、 医生，等 inforation [educationUser](../resources/educationuser.md)与相关的记录。
+与为监护人、工具、医生等提供 inforation 的[educationUser](../resources/educationuser.md)相关的联系人记录。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串|在 Azure Active Directory 联系人的标识。|
-|displayName|字符串|联系人的姓名。 必需。|
-|emailAddress|String|该联系人的主电子邮件地址。|
-|mobilePhone|字符串|联系人的移动电话号码。|
-|关系|`contactRelationship`|向用户的关系。 可能的值为`parent`， `relative`， `aide`， `doctor`， `guardian`， `child`， `other`， `unknownFutureValue`。|
-|accessConsent|Boolean|指示是否用户具有已同意访问学生数据。|
+|id|字符串|Azure Active Directory 中的联系人的标识。|
+|displayName|字符串|联系人的名称。 必需。|
+|emailAddress|String|联系人的主电子邮件地址。|
+|mobilePhone|String|联系人的移动电话号码。|
+|关系|`contactRelationship`|与用户的关系。 可能的值`parent`为`relative`、 `aide` `doctor` `guardian` `child`、、、、、 `unknownFutureValue` `other`|
+|accessConsent|Boolean|指示用户是否同意访问学生数据。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

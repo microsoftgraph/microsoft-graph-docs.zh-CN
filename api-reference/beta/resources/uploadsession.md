@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
 ms.openlocfilehash: 85e26779d7c7df72a3176290654511ebd0f9493b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480263"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576113"
 ---
 # <a name="uploadsession-resource"></a>UploadSession 资源
 
@@ -46,7 +46,7 @@ ms.locfileid: "30480263"
 
 ## <a name="see-also"></a>另请参阅
 
-- [通过上载会话上载大文件](../api/driveitem-createuploadsession.md)
+- [通过上传会话上传大文件](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

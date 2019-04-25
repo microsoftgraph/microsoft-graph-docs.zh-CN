@@ -1,21 +1,21 @@
 ---
 title: Skype for Business 组织者活动报表
-description: 您的组织内，可以在组织的会议活动上获取详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
+description: 你可以在组织中获取有关组织的会议活动的详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 8254221fc32b299b4d1a1de48165f6349b739f22
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572694"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568185"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Skype for Business 组织者活动报表
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您的组织内，可以在组织的会议活动上获取详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
+你可以在组织中获取有关组织的会议活动的详细信息。 为组织调查、计划和做出其他业务决策时，便会发现这些详细信息非常有用。
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Skype for Business 会议组织者活动](https://support.office.com/client/Skype-for-Business-Online-conference-organized-activity-03a255d4-0e1d-4b24-b73d-7a62fae36254)。
 

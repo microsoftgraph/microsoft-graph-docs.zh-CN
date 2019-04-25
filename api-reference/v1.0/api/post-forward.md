@@ -1,15 +1,15 @@
 ---
 title: 帖子：转发
-description: '将帖子转发给收件人。 您可以在请求中，指定的父对话和线程 '
+description: '将帖子转发给收件人。 您可以在请求中同时指定父对话和线程, '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: dfc6cd62a69577b233771d7716caa19c8b566cac
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944899"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576316"
 ---
 # <a name="post-forward"></a>帖子：转发
 
@@ -42,7 +42,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |注释|String|与帖子一起转发的可选注释。|
-|toRecipients|[收件人](../resources/recipient.md) 集合|线程要转发至的收件人。|
+|toRecipients|[recipient](../resources/recipient.md) collection|线程要转发至的收件人。|
 
 ## <a name="response"></a>响应
 

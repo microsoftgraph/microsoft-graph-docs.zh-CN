@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ad67a1e0f862ff8fe62f063d77a9f0851789bcc7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778738"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575833"
 ---
 # <a name="grouppolicypresentationdecimaltextbox-resource-type"></a>groupPolicyPresentationDecimalTextBox 资源类型
 
@@ -38,9 +38,9 @@ ms.locfileid: "31778738"
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |默认|Int64|一个无符号整数, 指定十进制文本框的初始值。 默认值为 1。|
-|派生|布尔值|如果为 true, 则创建数值调节钮控件;否则, 请为数字输入创建文本框。 默认值为 true。|
+|派生|Boolean|如果为 true, 则创建数值调节钮控件;否则, 请为数字输入创建文本框。 默认值为 true。|
 |spinStep|Int64|一个无符号整数, 指定数值调节钮控件的变化增量。 默认值为 1。|
-|必需|布尔值|要求在 "参数" 框中输入值。 默认值为 false。|
+|必需|Boolean|要求在 "参数" 框中输入值。 默认值为 false。|
 |minValue|Int64|一个无符号整数, 指定允许的最小值。 默认值为 0。|
 |timespan.maxvalue|Int64|一个无符号整数, 指定允许的最大值。 默认值为9999。|
 

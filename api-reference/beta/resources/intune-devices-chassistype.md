@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: eeee3eefb63c5387b134daeb75f920dbe13d1236
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772571"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576400"
 ---
 # <a name="chassistype-enum-type"></a>chassisType 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31772571"
 |:---|:---|:---|
 |unknown|0|陌生.|
 |desktop|1|Desktop.|
-|手提|双面|手提.|
-|worksWorkstation|第三章|来说.|
-|enterpriseServer|4|企业服务器。|
+|手提|2 |手提.|
+|worksWorkstation|3 |来说.|
+|enterpriseServer|4 |企业服务器。|
 |phone|100|电话.|
 |版|101|移动平板电脑。|
 |mobileOther|102|其他移动。|

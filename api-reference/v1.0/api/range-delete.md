@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 671dc5785aae4d912d60c2356fc7b1a204630c3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941597"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575224"
 ---
 # <a name="range-delete"></a>Range: delete
 
@@ -42,7 +42,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|Shift|string|指定移动单元格的方式。  可能的值为： `Up`， `Left`。|
+|Shift|string|指定移动单元格的方式。  可能的值为: `Up`、 `Left`。|
 
 ## <a name="response"></a>响应
 

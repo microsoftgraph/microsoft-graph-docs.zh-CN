@@ -1,24 +1,26 @@
 ---
 title: plannerOrderHintsByAssignee 资源类型
-description: '**PlannerOrderHintsByAssignee**是包含订购提示 plannerTask 资源，以指示分配给任务板视图中的任务顺序中的代理人的资源。'
+description: '**plannerOrderHintsByAssignee**是一个资源, 其中包含 plannerTask 资源中的工作负责人的排序提示, 以指示任务的分配对象在任务板中的显示顺序。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 27ef2c796c636e39ed6408c373cf0ac66c5572dd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520905"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575924"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>plannerOrderHintsByAssignee 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**plannerOrderHintsByAssignee** 是包含[排序提示](planner-order-hint-format.md)的资源，适用于 [plannerTask](plannertask.md) 资源中的代理人，用于指示“任务板”的“分配到”视图中的任务顺序。此类型是开放类型。其属性是已分配到任务的用户 ID，其值是排序提示。
+**plannerOrderHintsByAssignee**是一个资源, 其中包含[plannerTask](plannertask.md)资源中的工作负责人的[排序提示](planner-order-hint-format.md), 以指示任务的分配对象在任务板中的显示顺序。
+此类型是开放类型。 这些属性是分配给该任务的用户的 id, 并且值是 order 提示。
 
 ## <a name="properties"></a>属性
-开放类型的属性可以由客户端定义。在这种情况下，客户必须将已分配到任务的用户 ID 作为属性名称，并且将有效的[排序提示](planner-order-hint-format.md)作为值。无法从此类型中删除属性。更新对包含的 [plannerTask](plannertask.md) 的分配后服务将自动删除值。
+可由客户端定义打开类型的属性。 在这种情况下, 客户端必须提供作为属性名称分配给该任务的用户的 id, 并将有效的[order 提示](planner-order-hint-format.md)作为值。
+无法从此类型中删除属性。 该服务将自动删除值, 因为更新了包含的[plannerTask](plannertask.md)上的工作分配。
 
 示例：
 

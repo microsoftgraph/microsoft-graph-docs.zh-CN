@@ -1,25 +1,25 @@
 ---
 title: 创建 programControl
-description: Azure AD 中访问审阅功能，创建一个新的 programControl 对象。  这会链接到程序访问审阅。
+description: 在 "Azure AD access 评论" 功能中, 创建一个新的 programControl 对象。  这会将访问审核链接到某个程序。
 localization_priority: Normal
 ms.openlocfilehash: 89e31994ea91dba68e2f4563c64eeab53dd4db93
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511112"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546425"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中创建新的[programControl](../resources/programcontrol.md)对象。  这会链接到程序访问审阅。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 创建一个新的[programControl](../resources/programcontrol.md)对象。  这会将访问审核链接到某个程序。
 
-进行此请求之前, 将呼叫者必须具有之前
+在发出此请求之前, 呼叫者必须先
 
- - [创建一个程序](program-create.md)或[检索程序](program-list.md)，以使数值`programId`要包含在请求中，
- - [创建访问审阅](accessreview-create.md)或[检索访问审阅](accessreview-get.md)，具有的值`controlId`要包含在请求中，和
- - [检索的程序控件类型的列表](programcontroltype-list.md)，以使数值`controlTypeId`要包含在请求中。
+ - [创建了一个程序](program-create.md)或[检索了一个程序](program-list.md), 以使`programId`其值包含在请求中,
+ - [创建了访问](accessreview-create.md)审核或[检索到访问审核](accessreview-get.md), 以在请求中包含`controlId`的值, 以及
+ - [检索了程序控制类型的列表](programcontroltype-list.md), 以将值`controlTypeId`包含在请求中。
 
 
 ## <a name="permissions"></a>权限
@@ -27,7 +27,7 @@ ms.locfileid: "29511112"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | `ProgramControl.ReadWrite.All`.  登录的用户必须同时是允许他们创建 programControl 目录角色中。 |
+|委派（工作或学校帐户）     | `ProgramControl.ReadWrite.All`.  登录用户还必须位于允许他们创建 programControl 的目录角色中。 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -39,26 +39,26 @@ POST /programControls
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
+在请求正文中, 提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
 
-下表显示时创建一个程序控件所需的属性。
+下表显示创建程序控件时所需的属性。
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| `programId`              |`String`                | 程序 programId 此控件将变得的一部分。                             |
-| `controlId`              |`String`                | 控件的 controlId，尤其要指出的访问的标识符查看。                                                |
-| `controlTypeId`          |`String`                | ProgramControlType 标识的程序控件的类型-例如，将链接到来宾访问控制审阅。 |
+| `programId`              |`String`                | 此控件将要成为的程序的 programId。                             |
+| `controlId`              |`String`                | 控件的 controlId, 特别是 access 评审的标识符。                                                |
+| `controlTypeId`          |`String`                | programControlType 标识程序控制的类型-例如, 链接到来宾访问审阅的控件。 |
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201, Created`响应代码和响应正文中的[programControl](../resources/programcontrol.md)对象。
+如果成功, 此方法在响应`201, Created`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象。
 
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-在请求正文中，提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
+在请求正文中, 提供[programControl](../resources/programcontrol.md)对象的 JSON 表示形式。
 
 <!-- {
   "blockType": "request",
@@ -101,7 +101,7 @@ Content-type: application/json
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列表 programControlTypes](../api/programcontroltype-list.md) | [programControlType](../resources/programcontroltype.md)集合| 列出程序控件类型。 |
+|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](../resources/programcontroltype.md)集合| 列出程序控制类型。 |
 
 
 <!--

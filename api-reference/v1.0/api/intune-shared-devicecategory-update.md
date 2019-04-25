@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 831232fc656ad4aa0968e40aca5ae54b1e13ceef
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255176"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576963"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -23,7 +23,7 @@ ms.locfileid: "30255176"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp;&nbsp; **载入**和 <br> &nbsp;&nbsp; **设备管理**| DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **载入**和 <br> &nbsp; &nbsp; **设备管理**| DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供 [deviceCategory](../resources/intune-shared-devicecategory.md) 对象的 JSON 表示形式。
@@ -50,10 +50,10 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备类别的唯一标识符。 只读。|
+|id|字符串|设备类别的唯一标识符。 只读。|
 |**载入**|
 |displayName|String|设备类别的显示名称。|
-|description|String|设备类别的可选说明。|
+|说明|String|设备类别的可选说明。|
 
 
 

@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 34a38c0700eeb9ab1074a2f7cb2b396168266c97
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922296"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572904"
 ---
 # <a name="create-conversation-thread"></a>创建对话线程
 首先，通过创建线程来启动新的组对话。 
@@ -72,8 +72,8 @@ Content-type: application/json
 }
 ```
 #### <a name="response"></a>响应
-下面展示了示例响应。
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -4,11 +4,11 @@ description: Microsoft Graph API 使用 Webhook 机制将通知传递到客户�
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: 7060a1d6f213a413c453725774da8ffeedb1b277
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31980933"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575966"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>设置用户数据更改的通知
 

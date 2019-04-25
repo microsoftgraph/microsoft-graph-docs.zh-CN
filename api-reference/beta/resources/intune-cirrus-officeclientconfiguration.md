@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 7a8371da85ee4bbc54943a8fbb29ec99dcb49a49
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150559"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561311"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>officeClientConfiguration 资源类型
 
@@ -24,16 +24,16 @@ Office 客户端配置。
 |:---|:---|:---|
 |[列出 officeClientConfigurations](../api/intune-cirrus-officeclientconfiguration-list.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)集合|列出[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象的属性和关系。|
 |[获取 officeClientConfiguration](../api/intune-cirrus-officeclientconfiguration-get.md)|[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|读取[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)对象的属性和关系。|
-|[assign 操作](../api/intune-cirrus-officeclientconfiguration-assign.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)集合|替换策略的所有目标组。|
+|[分配操作](../api/intune-cirrus-officeclientconfiguration-assign.md)|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md)集合|替换策略的所有目标组。|
 |[updatePriorities 操作](../api/intune-cirrus-officeclientconfiguration-updatepriorities.md)|无|更新策略优先级。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|office 客户端配置策略的 Id。|
+|id|字符串|office 客户端配置策略的 Id。|
 |userPreferencePayload|Stream|首选项设置 JSON string 二进制格式, 则用户可以重写这些值。|
 |policyPayload|Stream|策略设置 JSON string 二进制格式, 用户不能更改这些值。|
-|说明|String|尚未记录|
+|description|String|尚未记录|
 |displayName|String|管理员提供的 office 客户端配置策略的说明。|
 |lastModifiedDateTime|日期/时间|策略的上次修改日期时间戳。|
 |priority|Int32|对于租户下的每个策略, 优先级值应为唯一值, 并将用于冲突解决, 较低值意味着优先级较高。|

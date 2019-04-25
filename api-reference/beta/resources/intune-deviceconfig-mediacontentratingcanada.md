@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 503218cf76d235f4122e36d1d358dce9a76e0fda
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799704"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572806"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>mediaContentRatingCanada 资源类型
 

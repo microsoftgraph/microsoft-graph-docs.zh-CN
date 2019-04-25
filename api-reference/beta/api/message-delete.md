@@ -1,25 +1,25 @@
 ---
 title: 删除邮件
-description: 删除指定的用户邮箱中的邮件或删除邮件的关系。
+description: 删除指定用户的邮箱中的邮件, 或删除邮件的关系。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 1237ba7e4aa5ab0439af9f07902705e7b4061374
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513541"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540546"
 ---
 # <a name="delete-message"></a>删除邮件
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除指定的用户邮箱中的邮件或删除邮件的关系。
+删除指定用户的邮箱中的邮件, 或删除邮件的关系。
 
-例如，您可以删除某个特定的[@ 提及](../resources/mention.md)的消息中指定的用户。
+例如, 您可以在邮件中删除特定的[@-提及](../resources/mention.md)指定用户。
 
->**注释**您可能不能删除可恢复邮件删除文件夹中的项目 (由[已知文件夹名称](../resources/mailfolder.md) `recoverableitemsdeletions`)。 有关详细信息，请参阅[已删除邮件的保留期](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)和[清理已删除项目](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)。
+>**注释**您可能无法删除 "可恢复的项目删除" 文件夹中的项目 (由[已知文件夹名称](../resources/mailfolder.md) `recoverableitemsdeletions`表示)。 有关详细信息, 请参阅[已删除邮件保留](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention)和[清除已删除项目](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -32,7 +32,8 @@ ms.locfileid: "29513541"
 
 ## <a name="http-request"></a>HTTP 请求
 
-删除指定的消息：<!-- { "blockType": "ignored" } -->
+要删除指定的邮件, 请执行以下操作:
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}
@@ -40,7 +41,8 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-删除特定[提及](../resources/mention.md)邮件中：<!-- { "blockType": "ignored" } -->
+删除邮件中的特定[提及](../resources/mention.md):
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/mentions/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}/mentions/{id}
@@ -62,7 +64,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-第一个示例删除指定的消息。
+第一个示例删除指定的邮件。
 <!-- {
   "blockType": "request",
   "name": "delete_message"
@@ -81,7 +83,7 @@ HTTP/1.1 204 No Content
 ```
 
 ##### <a name="request-2"></a>请求 2
-下一个示例删除某些**提及**中指定的消息。
+下一个示例将删除指定邮件中的某个**提到**。
 <!-- {
   "blockType": "request",
   "name": "delete_mention_in_message"
@@ -90,7 +92,7 @@ HTTP/1.1 204 No Content
 DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 ```
 ##### <a name="response-2"></a>响应 2
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -2,14 +2,14 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: itemActivity
+title: ItemActivity
 localization_priority: Normal
 ms.openlocfilehash: 5e2be549c3e3e9e799449679b605577ecd782a94
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517293"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561885"
 ---
 # <a name="itemactivity-resource-type"></a>ItemActivity 资源类型
 
@@ -46,10 +46,10 @@ ms.locfileid: "29517293"
 | 属性 | 类型                    | 说明
 |:---------|:------------------------|:----------------------------------------
 | id       | string                  | 活动的唯一标识符。 只读。
-| Access   | [accessAction][]        | 访问项目。
+| 访问   | [accessAction][]        | 访问了项目。
 | action   | [itemActionSet][]       | 有关发生的操作的详细信息。 只读。
 | actor    | [identitySet][]         | 操作执行者的身份。 只读。
-| location | [位置][]            | 其中已执行的操作的物理位置。 只读。
+| location | [位置][]            | 执行操作的物理位置。 只读。
 | times    | [itemActivityTimeSet][] | 有关活动何时发生的详细信息。 只读。
 
 [identitySet]: identityset.md

@@ -1,18 +1,18 @@
 ---
 title: 创建或替换 historyItem
-description: 创建一个新或替换现有的用户活动的现有历史记录项。
+description: 为现有用户活动创建新的或替换现有的历史记录项。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 21c4420ff64d105a5512df1f9a57a5e8309413f9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913000"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575329"
 ---
 # <a name="create-or-replace-a-historyitem"></a>创建或替换 historyItem
 
-创建一个新或替换现有的用户活动的现有历史记录项。
+为现有用户活动创建新的或替换现有的历史记录项。
 
 ## <a name="permissions"></a>权限
 
@@ -33,9 +33,9 @@ ms.locfileid: "27913000"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-Id 需要一个 GUID。
+Id 必须是 GUID。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
@@ -43,11 +43,11 @@ Id 需要一个 GUID。
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[historyItem](../resources/projectrome-historyitem.md)对象的 JSON 表示形式。
+在请求正文中, 提供[historyItem](../resources/projectrome-historyitem.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`如果 historyItem 已创建的响应代码或`200 OK`如果 historyItem 被替换。
+如果成功, 此方法将在`201 Created`创建 historyItem 或`200 OK`替换 historyItem 时返回响应代码。
 
 ## <a name="example"></a>示例
 

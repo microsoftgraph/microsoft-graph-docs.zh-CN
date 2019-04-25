@@ -1,23 +1,23 @@
 ---
-title: 列表分配
-description: 检索与角色相关联的 privilegedRoleAssignment 对象的列表。 每个 privilegedRoleAssignment 代表角色分配给用户。
+title: 列出作业
+description: 检索与角色关联的 privilegedRoleAssignment 对象的列表。 每个 privilegedRoleAssignment 表示为用户分配的角色。
 localization_priority: Normal
 ms.openlocfilehash: f7dd2b94c5d3ac49a6a8c9183373801f76e27964
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508270"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546553"
 ---
-# <a name="list-assignments"></a>列表分配
+# <a name="list-assignments"></a>列出作业
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索与角色相关联的[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象的列表。 每个[privilegedRoleAssignment](../resources/privilegedroleassignment.md)代表角色分配给用户。
+检索与角色关联的[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象的列表。 每个[privilegedRoleAssignment](../resources/privilegedroleassignment.md)代表一个用户的角色分配。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要拥有以下角色之一：_具有权限的角色管理员_、_全局管理员_、_安全管理员_或_安全读取器_。
+请求者需要具有以下角色之一:_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。
  
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -32,7 +32,7 @@ ms.locfileid: "29508270"
 GET /privilegedRoles/{id}/assignments
 ```
 
-请注意，``<id>``是目标角色 id。
+请注意``<id>`` , 它是目标角色 id。
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
@@ -46,9 +46,9 @@ GET /privilegedRoles/{id}/assignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象集合。
 
-请注意，需要将其注册到 PIM 租户。 否则，将返回的 HTTP 403 禁止访问状态代码。
+请注意, 需要将租户注册到 PIM。 否则, 将返回 HTTP 403 禁止的状态代码。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

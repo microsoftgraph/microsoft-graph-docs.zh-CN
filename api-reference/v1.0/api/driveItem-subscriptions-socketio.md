@@ -5,11 +5,11 @@ title: 获取 websocket 终结点
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 4d4577ea69c65d6ce003af96b0d96b55fe178fb5
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791950"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562753"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 

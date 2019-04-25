@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ae846552b736fccd34415459a08567eb82a0d347
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566729"
 ---
 # <a name="policyplatformtype-enum-type"></a>policyPlatformType 枚举类型
 
@@ -24,12 +24,12 @@ Suppoorted 策略的平台类型。
 |:---|:---|:---|
 |android|0|Android.|
 |androidForWork|1|AndroidForWork。|
-|iOS|双面|iOS.|
-|macOS|第三章|MacOS.|
-|windowsPhone81|4|WindowsPhone 8.1。|
-|windows81AndLater|5|Windows 8.1 及更高版本|
-|windows10AndLater|型|Windows 10 及更高版本。|
-|androidWorkProfile|步|AndroidWorkProfile.|
+|iOS|2 |iOS.|
+|macOS|3 |MacOS.|
+|windowsPhone81|4 |WindowsPhone 8.1。|
+|windows81AndLater|5 |Windows 8.1 及更高版本|
+|windows10AndLater|6 |Windows 10 及更高版本。|
+|androidWorkProfile|7 |AndroidWorkProfile.|
 |各种|100|所有平台。|
 
 

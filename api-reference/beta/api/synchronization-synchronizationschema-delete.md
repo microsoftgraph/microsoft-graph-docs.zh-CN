@@ -1,19 +1,19 @@
 ---
 title: 删除 synchronizationSchema
-description: 删除自定义的架构，并将架构重置为默认配置。 如果模板的上下文中删除架构，则它将重置架构为一个相关联的模板的默认`factoryTag`。
+description: 删除自定义架构并将架构重置为默认配置。 如果在模板的上下文中删除了架构, 它会将架构重置为与模板关联的默认架构`factoryTag`。
 localization_priority: Normal
 ms.openlocfilehash: cb4c6295fe962ea9570da19b9b6ee8190b2024f5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545338"
 ---
 # <a name="delete-synchronizationschema"></a>删除 synchronizationSchema
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-删除自定义的架构，并将架构重置为默认配置。 如果模板的上下文中删除架构，则它将重置架构为一个相关联的模板的默认`factoryTag`。
+删除自定义架构并将架构重置为默认配置。 如果在模板的上下文中删除了架构, 它会将架构重置为与模板关联的默认架构`factoryTag`。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -43,19 +43,19 @@ DELETE /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `201 No Content` 响应代码。 它不返回任何响应正文中。
+如果成功，此方法返回 `201 No Content` 响应代码。 它不会在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。
+响应示例如下所示。
 <!-- {
   "blockType": "response",
   "truncated": true

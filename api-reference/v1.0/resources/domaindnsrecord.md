@@ -1,32 +1,32 @@
 ---
 title: domainDnsRecord 资源类型
-description: 对于租户中的每个域，您可能需要先域可由 Microsoft Online Services 将 DNS 记录添加到域的 DNS 区域文件。 **DomainDnsRecord**实体用于显示此类的 DNS 记录。 DomainDnsCnameRecord、 DomainDnsMxRecord、 DomainDnsSrvRecord 和 DomainDnsSrvRecord 实体的基准实体。
+description: 对于租户中的每个域, 您可能需要将 dns 记录添加到域的 dns 区域文件中, 然后 Microsoft Online Services 才能使用域。 **DomainDnsRecord**实体用于提供此类 DNS 记录。 DomainDnsCnameRecord、DomainDnsMxRecord、DomainDnsSrvRecord 和 DomainDnsSrvRecord 实体的基本实体。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ce154f97757ad7900388986f9809007acb516c4a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915625"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562760"
 ---
 # <a name="domaindnsrecord-resource-type"></a>domainDnsRecord 资源类型
 
-对于租户中的每个域，可能需要先将 DNS 记录添加到相应域的 DNS 区域文件，然后 Microsoft Online Services 才能使用该域。**DomainDnsRecord** 实体用于显示这些 DNS 记录。[DomainDnsCnameRecord](domaindnscnamerecord.md)、[DomainDnsMxRecord](domaindnsmxrecord.md)、[DomainDnsSrvRecord](domaindnssrvrecord.md) 和 [DomainDnsSrvRecord](domaindnssrvrecord.md) 实体的基本实体。
+对于租户中的每个域, 您可能需要将 dns 记录添加到域的 dns 区域文件中, 然后 Microsoft Online Services 才能使用域。 **DomainDnsRecord**实体用于提供此类 DNS 记录。 [DomainDnsCnameRecord](domaindnscnamerecord.md)、 [DomainDnsMxRecord](domaindnsmxrecord.md)、 [DomainDnsSrvRecord](domaindnssrvrecord.md)和[DomainDnsSrvRecord](domaindnssrvrecord.md)实体的基本实体。
 
 ## <a name="methods"></a>方法
-不支持对该资源进行直接查询。请参阅[域](domain.md)主题了解有关如何查询域服务记录的信息。
+不支持直接向此资源进行查询。 有关如何查询域服务记录的信息, 请参阅[域](domain.md)主题。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 分配给此实体的唯一标识符。不可为 NULL，只读。|
-|isOptional|Boolean| 如果为 false，则客户必须在 DNS 主机上配置此记录才能使 Microsoft Online Services 在域中正常运行。 |
-|label|String| 配置 DNS 主机上的 DNS 记录的名称时使用的值。 |
-|recordType|String| 指示此实体表示的 DNS 记录类型。</br></br>值可以是下列值之一：*CName*、*Mx*、*Srv*、*Txt*</br></br>Key |
-|supportedService|String| Microsoft Online Service 或与该 DNS 记录存在依赖关系的功能。</br></br>可以为以下值之一：**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*|
-|ttl|Int32| 配置 DNS 主机上的 DNS 记录的生存时间 (ttl) 属性时使用的值。不可为 null |
+|id|String| 分配给此实体的唯一标识符。 不可为 null, 只读。|
+|isOptional|Boolean| 如果为 false, 则客户必须在 DNS 主机上配置此记录, 才能使 Microsoft Online Services 在域中正常运行。 |
+|label|String| 在 dns 主机上配置 dns 记录名称时使用的值。 |
+|recordType|String| 指示此实体表示的 DNS 记录的类型。</br></br>此值可以是下列值之一: *CName*、 *Mx*、 *Srv*、 *Txt*</br></br>Key |
+|supportedService|String| 对此 DNS 记录具有依赖项的 Microsoft Online 服务或功能。</br></br>可以是下列值之一: **null**、 *Email*、 *Sharepoint*、 *EmailInternalRelayOnly*、 *OfficeCommunicationsOnline*、 *SharePointDefaultDomain*、 *FullRedelegation*、 *SharePointPublic*、 *OrgIdAuthentication*、 *Yammer*、 *Intune*|
+|ttl|Int32| 配置 dns 主机上的 dns 记录的生存时间 (ttl) 属性时要使用的值。 不可为 null |
 
 ## <a name="relationships"></a>关系
 无

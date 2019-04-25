@@ -5,17 +5,17 @@ ms.date: 09/14/2017
 title: ItemActivityStat
 localization_priority: Normal
 ms.openlocfilehash: 1362116c0dbe997eda941cb790e00e9ddb078ae4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517629"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561899"
 ---
 # <a name="itemactivitystat-resource-type"></a>itemActivityStat 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**ItemActivityStat**资源提供有关发生的时间间隔内的活动信息。
+**itemActivityStat**资源提供有关在一段时间内发生的活动的信息。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -45,15 +45,15 @@ ms.locfileid: "29517629"
 
 | 属性         | 类型                    | 说明
 |:-----------------|:------------------------|:----------------------------------------
-| incompleteData   | [incompleteData][]      | 指示此间隔中的统计信息基于不完整的数据。 只读。
-| isTrending       | Boolean                 | 指示是否项目"趋势。" 只读。
-| startDateTime    | DateTimeOffset          | 当开始间隔。 只读。
-| endDateTime      | DateTimeOffset          | 当结束间隔。 只读。
+| incompleteData   | [incompleteData][]      | 指示此时间间隔中的统计信息基于不完整的数据。 只读。
+| isTrending       | 布尔值                 | 指示项目是否为 "趋势"。 只读。
+| startDateTime    | DateTimeOffset          | 时间间隔开始时。 只读。
+| endDateTime      | DateTimeOffset          | 时间间隔结束时。 只读。
 | create           | [itemActionStat][]      | 有关此间隔中的**创建**操作的统计信息。 只读。
 | edit             | [itemActionStat][]      | 有关此间隔中的**编辑**操作的统计信息。 只读。
 | delete           | [itemActionStat][]      | 有关此间隔中的**删除**操作的统计信息。 只读。
-| move             | [itemActionStat][]      | 有关此间隔中的**移动**操作的统计信息。 只读。
-| Access           | [itemActionStat][]      | 有关此间隔中的**访问**操作的统计信息。 只读。
+| move             | [itemActionStat][]      | 有关此间隔中**移动**操作的统计信息。 只读。
+| 访问           | [itemActionStat][]      | 有关此间隔中的**访问**操作的统计信息。 只读。
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md
@@ -62,7 +62,7 @@ ms.locfileid: "29517629"
 
 | 关系名称 | 类型                        | 说明
 |:------------------|:----------------------------|:---------------------------
-| activities        | [itemActivity][] 集合 | 公开**itemActivities**此**itemActivityStat**资源中表示。
+| activities        | [itemActivity][] 集合 | 公开此**itemActivityStat**资源中表示的**itemActivities** 。
 
 [itemActivity]: itemactivity.md
 

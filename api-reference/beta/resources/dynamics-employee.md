@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 865da0c1e1256e2ba2a25902e37a00da9081eedf
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366653"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543061"
 ---
 # <a name="employees-resource-type"></a>员工资源类型
 表示 Dynamics 365 Business Central 中的员工。
@@ -29,7 +29,7 @@ ms.locfileid: "30366653"
 | 属性           | 类型   |说明                                            |
 |:-------------------|:-------|:------------------------------------------------------|
 |id                  |GUID    |员工 ID。 不可编辑。                         |
-|number              |string  |员工编号。 只读。                        |
+|数字              |string  |员工编号。 只读。                        |
 |displayName         |string  |员工 givenName + 姓。 只读。           |
 |givenName           |string  |员工的名字。                        |
 |middleName          |string  |员工的中间名。                       |
@@ -38,7 +38,7 @@ ms.locfileid: "30366653"
 |address             |[翻.省略](../resources/dynamics-complextypes.md)|指定员工的地址。 此地址将显示在员工的所有资源文档中。|
 |phoneNumber         |string  |指定员工的电话号码。             |
 |mobilePhone         |string  |指定员工的移动电话号码。      |
-|电子邮件               |string  |指定员工的电子邮件地址。                |
+|email               |string  |指定员工的电子邮件地址。                |
 |personalEmail       |string  |指定员工的个人电子邮件地址。       |
 |employmentDate      |date    |指定员工开始为公司工作的日期。|
 |terminationDate     |date    |指定由于退休或开除而终止员工的日期。|

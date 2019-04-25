@@ -5,35 +5,35 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: cd4991b28f1dee0ba647a7f95b70817beffbef95
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522215"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543903"
 ---
 # <a name="bookingcustomer-resource-type"></a>bookingCustomer 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-代表[bookingBsiness](bookingbusiness.md)客户。
+表示[bookingBsiness](bookingbusiness.md)的客户。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列出的客户](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md)集合 | 获取**bookingCustomer**对象的列表。 |
+|[列出客户](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md)集合 | 获取**bookingCustomer**对象的列表。 |
 |[创建 bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | 创建新的**bookingCustomer**对象。 |
-|[获取 bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |读取的属性和**bookingCustomer**对象的关系。|
-|[Update](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |更新**bookingCustomer**对象。 |
+|[获取 bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |读取**bookingCustomer**对象的属性和关系。|
+|[更新](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |更新**bookingCustomer**对象。 |
 |[删除](../api/bookingcustomer-delete.md) | 无 |删除**bookingCustomer**对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName|String|客户的名称。|
+|displayName|字符串|客户的名称。|
 |emailAddress|String|客户的 SMTP 地址。|
-|id|字符串| 客户的 ID。 只读。|
+|id|String| 客户的 ID。 只读。|
 
 ## <a name="relationships"></a>关系
 无

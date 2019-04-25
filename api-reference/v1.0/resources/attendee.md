@@ -3,11 +3,11 @@ title: 与会者资源类型
 description: 会议与会者。 这可以是人或在 Exchange 服务器上为租户设置的资源（例如会议室或设备）。
 localization_priority: Normal
 ms.openlocfilehash: 89c289a342bb0b761bed982f88d0f47470eaa237
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856537"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569415"
 ---
 # <a name="attendee-resource-type"></a>与会者资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "27856537"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |状态|[ResponseStatus](responsestatus.md)|事件与会者的响应（无、接受、拒绝等）和发送响应的日期时间。|
-|类型|String|与会者类型：`required`、`optional`、`resource`。|
+|type|String|与会者类型：`required`、`optional`、`resource`。|
 |emailAddress|[emailAddress](emailaddress.md)|添加与会者姓名和 SMTP 地址。|
 
 ## <a name="json-representation"></a>JSON 表示形式

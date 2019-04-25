@@ -1,15 +1,15 @@
 ---
 title: 'Range: clear'
-description: 清除区域值、格式、填充、边框等。
+description: 清除范围值、格式、填充、边框等。
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 63e468b651b84279ede824796a1ff63acd50c2ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524588"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546378"
 ---
 # <a name="range-clear"></a>Range: clear
 

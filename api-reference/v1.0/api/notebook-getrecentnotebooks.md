@@ -4,12 +4,12 @@ description: 获取登录用户访问的 recentNotebook 实例列表。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 31f95d8e94ef22c6b0cbea1cbb5ff8b98c58d187
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a911776e76c608576a3e86364970c7eb06c7f27e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931669"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562186"
 ---
 # <a name="notebook-getrecentnotebooks"></a>笔记本：getRecentNotebooks
 
@@ -32,7 +32,7 @@ GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePer
 GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
 ```
 
-用户的 `<id | userPrincipalName>` 必须与用于发出请求的授权令牌中编码的用户一致。
+用户的 `{id | userPrincipalName}` 必须与用于发出请求的授权令牌中编码的用户一致。
 
 ## <a name="function-parameters"></a>函数参数
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 |:---------------|:--------|:----------|
 |includePersonalNotebooks|Boolean|添加用户拥有的笔记本。 若要添加用户拥有的笔记本，请设置为 `true`；否则，设置为 `false`。 如果不添加 `includePersonalNotebooks` 参数，请求会返回 `400` 错误响应。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|

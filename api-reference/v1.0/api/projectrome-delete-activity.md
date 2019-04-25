@@ -1,18 +1,18 @@
 ---
 title: 删除活动
-description: 删除现有用户活动应用程序。
+description: 删除应用程序的现有用户活动。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: cbe12a373f06c2893a5ca202247865f4ce4a8f52
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966851"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574199"
 ---
 # <a name="delete-an-activity"></a>删除活动
 
-删除现有用户活动应用程序。
+删除应用程序的现有用户活动。
 
 ## <a name="permissions"></a>权限
 
@@ -41,11 +41,11 @@ DELETE /me/activities/{id}
 
 ## <a name="request-body"></a>请求正文
 
-没有请求正文中。
+无请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`204 No Content`如果活动的已删除的响应代码。
+如果成功, 此方法将返回`204 No Content`响应代码 (如果活动已删除)。
 
 ## <a name="example"></a>示例
 

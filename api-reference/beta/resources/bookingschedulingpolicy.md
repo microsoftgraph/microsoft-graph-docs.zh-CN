@@ -5,26 +5,26 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 3dee3314818d46c4131526dc92565eb4f8ca6ea2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523447"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543730"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>bookingSchedulingPolicy 资源类型
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-代表确定应如何在 Microsoft 预订日历中创建约会的策略的组。
+表示一组策略, 这些策略确定应如何在 Microsoft 预定日历中创建约会。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowStaffSelection|Boolean|True 如果以使客户能够选择特定预定的人员。|
-|maximumAdvance|持续时间|最大天数提前所能进行预订。 遵循[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式。|
-|minimumLeadTime|持续时间|最小在其前面预订和取消通知必须进行的时间量。 遵循[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式。|
-|sendConfirmationsToOwner|Boolean| 预定会创建或更改时通知通过电子邮件的业务，则为 true。 使用业务**bookingBusiness**实体的**email**属性中指定的电子邮件地址。 |
-|timeSlotInterval|持续时间|[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式中每个时间段的持续时间。|
+|allowStaffSelection|布尔值|如此如果允许客户选择预订的特定人员。|
+|maximumAdvance|持续时间|可以提前进行预订的最大天数。 它遵循[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式。|
+|minimumLeadTime|持续时间|在必须进行预订和取消的前的最小时间量。 它遵循[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式。|
+|sendConfirmationsToOwner|布尔值| 真要在创建或更改预订时通过电子邮件通知商业。 使用在企业的**bookingBusiness**实体的**email**属性中指定的电子邮件地址。 |
+|timeSlotInterval|持续时间|每个时间段的持续时间, 以[ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

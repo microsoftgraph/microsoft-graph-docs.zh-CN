@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 83a0adf84ea57e6afa1749d1f6f7152403847b5f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806599"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562298"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>applicationGuardBlockClipboardSharingType 枚举类型
 
@@ -24,9 +24,9 @@ applicationGuardBlockClipboardSharingType 的可能值
 |:---|:---|:---|
 |notConfigured|0|未配置|
 |blockBoth|1|阻止剪贴板将数据从主机共享到容器, 并将容器从容器共享到主机|
-|blockHostToContainer|双面|阻止剪贴板将数据从主机共享到容器|
-|blockContainerToHost|第三章|阻止剪贴板将数据从容器共享到主机|
-|blockNone|4|阻止剪贴板将数据从主机共享到容器, 也不将其从容器共享到主机|
+|blockHostToContainer|2 |阻止剪贴板将数据从主机共享到容器|
+|blockContainerToHost|3 |阻止剪贴板将数据从容器共享到主机|
+|blockNone|4 |阻止剪贴板将数据从主机共享到容器, 也不将其从容器共享到主机|
 
 
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ac7a72dc05250f7bf2aa8256647d34d96882e8e5
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254532"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575203"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>applicationGuardBlockFileTransferType 枚举类型
 
@@ -22,9 +22,9 @@ applicationGuardBlockFileTransfer 的可能值
 |:---|:---|:---|
 |notConfigured|0|未配置|
 |blockImageAndTextFile|1|阻止剪贴板传输图像和文本文件|
-|blockImageFile|双面|阻止剪贴板传输图像文件|
-|blockNone|第三章|不会阻止文本文件或图像文件传输|
-|blockTextFile|4|阻止剪贴板传输文本文件|
+|blockImageFile|2 |阻止剪贴板传输图像文件|
+|blockNone|3 |不会阻止文本文件或图像文件传输|
+|blockTextFile|4 |阻止剪贴板传输文本文件|
 
 
 

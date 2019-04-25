@@ -1,30 +1,30 @@
 ---
-title: 用户： exportPersonalData
-description: 提交数据策略操作发出的请求，公司管理员通过导出组织用户的数据。
+title: '用户: exportPersonalData'
+description: 提交数据策略操作请求, 由公司管理员进行导出以导出组织用户的数据。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ba26d2b2bc5af63f01a4333490d9850ffa3dd767
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954300"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576274"
 ---
-# <a name="user-exportpersonaldata"></a>用户： exportPersonalData
+# <a name="user-exportpersonaldata"></a>用户: exportPersonalData
 
-提交数据策略操作请求从公司管理员或要导出的组织的用户数据的应用程序。
+提交来自公司管理员或应用程序的数据策略操作请求, 以导出组织用户的数据。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  User.Export.All User.Read.All  |
+|委派（工作或学校帐户） |  将用户导出为 all、user、Read。 all  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | User.Export.All User.Read.All |
+|应用程序 | 将用户导出为 all、user、Read。 all |
 
->**注意：** 由公司管理员可以仅执行导出时所使用的委派的权限。
+>**注意:** 只有在使用委派权限时, 公司管理员才能执行导出。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -42,15 +42,15 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|storageLocation|字符串|这是指向 Azure 存储帐户，其中应导出数据的共享的访问签名 (SA) URL。|
+|storageLocation|String|这是 Azure 存储帐户的共享访问签名 (SAS) URL, 应导出数据的位置。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `202 Accepted` 响应代码。 它不返回任何响应正文中。 则响应中包含以下响应标头。
+如果成功，此方法返回 `202 Accepted` 响应代码。 它不在响应正文中返回任何内容。 响应包含以下响应头。
 
 | 名称       | 说明|
 |:---------------|:----------|
-| Location  | 若要检查请求的状态的 URL。 |
-| 重试间隔后  | 以秒为单位的时间段。 请求 maker 应等待这长之后提交请求以检查的状态。 |
+| Location  | 用于检查请求状态的 URL。 |
+| 重试-After  | 以秒为单位的时间段。 在提交请求以检查状态后, 请求生成器应等待这长时间。 |
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

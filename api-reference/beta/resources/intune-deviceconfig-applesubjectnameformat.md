@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8ba3861589dae07ce794366e30b1d9bc934cb9d9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780348"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562312"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>appleSubjectNameFormat 枚举类型
 
@@ -24,10 +24,10 @@ Apple 设备的使用者名称格式选项。
 |:---|:---|:---|
 |commonName|0|公用名。|
 |commonNameAsEmail|1|电子邮件的常见名称。|
-|自|双面|自定义主题名称格式。|
-|commonNameIncludingEmail|第三章|公用名称, 包括电子邮件。|
-|commonNameAsIMEI|5|作为 IMEI 的常用名称。|
-|commonNameAsSerialNumber|型|作为序列号的常用名称。|
+|自|2 |自定义主题名称格式。|
+|commonNameIncludingEmail|3 |公用名称, 包括电子邮件。|
+|commonNameAsIMEI|5 |作为 IMEI 的常用名称。|
+|commonNameAsSerialNumber|6 |作为序列号的常用名称。|
 
 
 

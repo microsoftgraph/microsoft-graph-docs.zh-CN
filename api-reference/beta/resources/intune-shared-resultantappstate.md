@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d7a364945e3b494c26873cdcc9bc4bb618e89f40
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166617"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572953"
 ---
 # <a name="resultantappstate-enum-type"></a>resultantAppState 枚举类型
 
@@ -23,10 +23,10 @@ ms.locfileid: "30166617"
 |成员|值|说明|
 |:---|:---|:---|
 |了|1|安装应用程序时没有出现任何错误|
-|failed|双面|应用程序安装失败。|
-|notInstalled|第三章|未安装应用程序。|
-|uninstallFailed|4|应用程序卸载失败。|
-|pendingInstall|5|正在安装应用程序。|
+|未能|2 |应用程序安装失败。|
+|notInstalled|3 |未安装应用程序。|
+|uninstallFailed|4 |应用程序卸载失败。|
+|pendingInstall|5 |正在安装应用程序。|
 |unknown|99|应用程序的状态未知。|
 |notApplicable|-1|应用程序不适用。|
 

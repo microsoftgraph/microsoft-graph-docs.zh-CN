@@ -3,11 +3,11 @@ title: SortField 资源类型
 description: 表示排序操作中的条件。
 localization_priority: Normal
 ms.openlocfilehash: 2c1b9a272fd024455d1297c5f59ca7684283e1a1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825968"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561297"
 ---
 # <a name="sortfield-resource-type"></a>SortField 资源类型
 
@@ -17,11 +17,11 @@ ms.locfileid: "27825968"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |ascending|boolean|表示是否以升序方式进行排序。|
-|color|string|表示按字体或单元格颜色进行排序时，条件的目标颜色。|
-|dataOption|string|代表用于此字段的其他排序选项。 可能的值为： `Normal`， `TextAsNumber`。|
+|color|字符串|表示按字体或单元格颜色进行排序时，条件的目标颜色。|
+|dataOption|string|表示此字段的其他排序选项。 可能的值为: `Normal`、 `TextAsNumber`。|
 |Key|int|表示条件所在的列（或行，具体取决于排序方向）。表示与第一列（或行）的偏移量。|
-|sortOn|string|表示此条件的排序的类型。 可能的值为： `Value`， `CellColor`， `FontColor`， `Icon`。|
-|icon|[WorkbookIcon](icon.md)|表示对单元格图标进行排序时，条件的目标图标。|
+|sortOn|string|表示此条件的排序类型。 可能的值为: `Value`、 `CellColor`、 `FontColor`、 `Icon`。|
+|图标|[WorkbookIcon](icon.md)|表示对单元格图标进行排序时，条件的目标图标。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

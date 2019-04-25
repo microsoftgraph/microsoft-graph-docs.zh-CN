@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 03a375e874a06914f5da9039dad58079df1199a8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572708"
 ---
 # <a name="update-chart"></a>更新图表
 
@@ -39,7 +39,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|height|double|表示 chart 对象的高度，以磅值表示。|
+|高度|double|表示 chart 对象的高度，以磅值表示。|
 |left|double|从图表左侧到工作表原点的距离，以磅值表示。|
 |name|string|表示 chart 对象的名称。|
 |top|double|表示从对象左边界至第 1 行顶部（在工作表上）或图表区域顶部（在图表上）的距离，以磅值表示。|
@@ -47,7 +47,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookChart](../resources/chart.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookChart](../resources/chart.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

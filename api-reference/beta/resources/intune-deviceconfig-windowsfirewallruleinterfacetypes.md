@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7196f3d59e92d26cb832063ce053d61fac2cb828
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791283"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570206"
 ---
 # <a name="windowsfirewallruleinterfacetypes-enum-type"></a>windowsFirewallRuleInterfaceTypes 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31791283"
 |:---|:---|:---|
 |notConfigured|0|未设置任何标志。|
 |远程|1|远程访问接口类型。|
-|无线|双面|无线接口类型。|
-|vlan|4|LAN 接口类型。|
+|无线|2 |无线接口类型。|
+|vlan|4 |LAN 接口类型。|
 
 
 

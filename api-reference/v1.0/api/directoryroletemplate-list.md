@@ -1,17 +1,17 @@
 ---
-title: 列出 directoryRoleTemplate
+title: 列出 directoryRoleTemplates
 description: 检索 directoryRoleTemplate 对象的列表。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0e52cb3a32c54833395722f0368d01cb49965402
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941966"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562529"
 ---
-# <a name="list-directoryroletemplates"></a>列出 directoryRoleTemplate
+# <a name="list-directoryroletemplates"></a>列出 directoryRoleTemplates
 
 检索 directoryRoleTemplate 对象的列表。
 

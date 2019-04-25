@@ -1,21 +1,19 @@
 ---
 title: 创建笔记本
-description: 新建 OneNote 笔记本。
+description: 创建新的 OneNote 笔记本。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: deeb775f19ba2378cd15ffcbd72ef2caafd23b83
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514822"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540168"
 ---
 # <a name="create-notebook"></a>创建笔记本
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-新建 OneNote [笔记本](../resources/notebook.md)。
+创建新的 OneNote[笔记本](../resources/notebook.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -40,13 +38,13 @@ POST /sites/{id}/onenote/notebooks
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供笔记本名称。 
+在请求正文中, 提供笔记本的名称。 
 
-笔记本名称必须是唯一的。该名称不能超过 128 个字符，也不能包含以下字符：?*\/:<>|'"
+笔记本名称必须是唯一的。 名称不能超过128个字符, 也不能包含以下字符: ?\/*: <> | ' "
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [notebook](../resources/notebook.md) 对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和新的[笔记本](../resources/notebook.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -56,7 +54,7 @@ POST /sites/{id}/onenote/notebooks
   "name": "create_notebook_from_onenote"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/onenote/notebooks
+POST https://graph.microsoft.com/v1.0/me/onenote/notebooks
 Content-type: application/json
 Content-length: 30
 
@@ -81,7 +79,6 @@ Content-length: 284
   "isDefault": true,
   "userRole": {
   },
-  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "isShared": true,
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -98,15 +95,10 @@ Content-length: 284
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create Notebook",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/onenote-post-notebooks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

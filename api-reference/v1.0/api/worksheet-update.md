@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 651900f00e842640b292deef7569efde1701939b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915548"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569702"
 ---
 # <a name="update-worksheet"></a>更新工作表
 
@@ -41,11 +41,11 @@ PATCH /workbook/worksheets/{id|name}
 |:---------------|:--------|:----------|
 |name|string|工作表的显示名称。|
 |position|int|工作表在工作簿中的位置，从零开始。|
-|visibility|string|在工作表的可见性。 可能的值为： `Visible`， `Hidden`， `VeryHidden`。|
+|visibility|string|工作表的可见性。 可能的值包括 `Visible`、`Hidden`、`VeryHidden`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的更新的[WorkbookWorksheet](../resources/worksheet.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[WorkbookWorksheet](../resources/worksheet.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

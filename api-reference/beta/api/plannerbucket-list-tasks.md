@@ -1,19 +1,17 @@
 ---
 title: 列出任务
-description: 检索与 plannerBucket 对象关联的 plannerTask 对象的列表。
+description: 检索与 plannerBucket 对象关联的 **plannerTask** 对象的列表。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 08d47f06175f8b9e6aebb1e05f4cc71295bcde5f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516537"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539043"
 ---
 # <a name="list-tasks"></a>列出任务
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索与 [plannerBucket](../resources/plannerbucket.md) 对象关联的 **plannerTask** 对象的列表。
 ## <a name="permissions"></a>权限
@@ -28,7 +26,7 @@ ms.locfileid: "29516537"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/buckets/<id>/tasks
+GET /planner/buckets/{id}/tasks
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -53,7 +51,7 @@ GET /planner/buckets/<id>/tasks
   "name": "get_tasks"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/buckets/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/tasks
+GET https://graph.microsoft.com/v1.0/planner/buckets/{task-id}/tasks
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -102,15 +100,10 @@ Content-length: 833
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List tasks",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/plannerbucket-list-tasks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

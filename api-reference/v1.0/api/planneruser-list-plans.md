@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 836b220b3a43f76a3652f5c299f96c7b66733f28
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961384"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576407"
 ---
 # <a name="list-plans"></a>列出计划
 

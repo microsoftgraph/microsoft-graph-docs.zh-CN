@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 31a0f13c30682e491016b6dce4675b8159b8d897
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939138"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562137"
 ---
 # <a name="create-sectiongroup"></a>创建 sectionGroup
 
@@ -44,7 +44,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [sectionGroup](../resources/sectiongroup.md) 对象。
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[sectionGroup](../resources/sectiongroup.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
