@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4c15bfc0a29909b1e7a7ba27b5ac221c0d11f815
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509747"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544081"
 ---
 # <a name="create-message"></a>创建邮件
 
@@ -17,10 +17,10 @@ ms.locfileid: "29509747"
 
 使用此 API 创建新邮件的草稿。可以在任意文件夹中创建草稿，也可以在发送前更新草稿。若要将邮件保存到“草稿”文件夹，请使用 /messages 快捷方式。
 
-在创建草稿在同一**POST**呼叫时，您可以：
+在同一个**POST**调用中创建草稿时, 可以执行以下操作:
 
 - 包含[附件](../resources/attachment.md) 
-- 使用[提及](../resources/mention.md)指出在新邮件中的另一个用户
+- 在新邮件中使用[提及](../resources/mention.md)调用其他用户
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -46,22 +46,22 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[message](../resources/message.md)对象的 JSON 表示形式。
+在请求正文中, 提供[message](../resources/message.md)对象的 JSON 表示形式。
 
-如果您想要使用**提及**指出在新邮件中的另一个用户：
+如果要使用**提及**在新邮件中呼叫其他用户, 请执行以下操作:
 
-- 在请求正文中包含所需的**toRecipients**属性、**提到**属性和任何可写的邮件属性。
-- 对于每个提及的**提到**属性中，您必须指定**提到**属性。
+- 在请求正文中包括所需的**toRecipients**属性、**提及**属性和任何可写邮件属性。
+- 对于**提及**属性中的每个提及, 您必须指定**提到**的属性。
 
 由于**邮件**资源支持[扩展](/graph/extensibility-overview)因此可以使用 `POST` 操作，并在创建邮件时向其添加含有自己的数据的自定义属性。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[消息](../resources/message.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[message](../resources/message.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-下面是邮件的创建一个新草稿请求示例。
+下面的示例展示了创建新邮件草稿的请求。
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
@@ -158,7 +158,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>请求 2
-下面的示例演示对孙亭通过 Randi 图案来工作的草稿电子邮件。 此消息还包括其他用户，Dana Swope 某个提及。
+下一个示例显示了通过 Randi Welch 到 Samantha 展台的草稿电子邮件。 此外, 该消息还包括其他用户 Dana Swope。
 
 在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
 <!-- {
@@ -252,7 +252,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-3"></a>请求 3
-创建邮件草稿中时下, 一个示例添加两个客户 Internet 邮件头。
+下一个示例在创建邮件草稿时添加了几个客户 Internet 邮件头。
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -288,7 +288,7 @@ Content-type: application/json
 ```
 在请求正文中，提供 [Message](../resources/message.md) 对象的 JSON 表示形式。
 ##### <a name="response-3"></a>响应 3
-下面是一个响应示例。 注意： 默认情况下，在 POST 响应不返回 Internet 邮件头。 此外可能为简便起见被截断如下所示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意: 在 POST 响应中, 默认情况下不会返回 Internet 邮件头。 为简洁起见, 还可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",

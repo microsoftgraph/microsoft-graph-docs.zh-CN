@@ -1,21 +1,21 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
-description: 要获取的已启用的用户和那些必须激活桌面或设备上的 Office 订阅或共享计算机的计数。
+description: 获取启用的用户数以及在桌面或设备或共享计算机上激活 Office 订阅的用户数。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 9d9c42dac12fa1464f119a301b4205893b33ab96
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573576"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545966"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-要获取的已启用的用户和那些必须激活桌面或设备上的 Office 订阅或共享计算机的计数。
+获取启用的用户数以及在桌面或设备或共享计算机上激活 Office 订阅的用户数。
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Microsoft Office 激活](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "29573576"
 | :------------------------------------- | :--------------------------------------- |
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
-| 应用                            | Reports.Read.All                         |
+| 应用程序                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ GET /reports/getOffice365ActivationsUserCounts
 
 ## <a name="query-parameters"></a>查询参数
 
-此方法支持`$format`要自定义的响应的[OData 查询参数](/graph/query-parameters)。 默认输出类型是文本/csv。 但是，如果您想要指定输出类型，您可以使用 OData $format 查询参数设置为 text/csv 或应用程序/json。
+此方法支持`$format` [OData 查询参数](/graph/query-parameters)来自定义响应。 默认输出类型为 text/csv。 但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -61,17 +61,17 @@ CSV 文件包含下面的列标题。
 - 产品类型
 - 已分配
 - 已激活
-- 共享的计算机激活
+- 共享计算机激活
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的**[office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** 对象。
 
 ## <a name="example"></a>示例
 
 ### <a name="csv"></a>CSV
 
-下面是输出 CSV 示例。
+下面是输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -115,7 +115,7 @@ Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
 
 ### <a name="json"></a>JSON
 
-下面是返回 JSON 的示例。
+下面是一个返回 JSON 的示例。
 
 #### <a name="request"></a>请求
 

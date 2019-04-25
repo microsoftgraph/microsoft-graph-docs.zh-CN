@@ -1,15 +1,15 @@
 ---
-title: 分配给应用程序或服务主体的列表策略
+title: 为应用程序或服务主体分配的列表策略
 description: 检索分配给应用程序或服务主体的策略对象。
 localization_priority: Normal
 ms.openlocfilehash: 1ed39f376b7d090b784f867a59fcb93558bd5f1a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640012"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546771"
 ---
-# <a name="list-policies-assigned-to-application-or-service-principal"></a>分配给应用程序或服务主体的列表策略
+# <a name="list-policies-assigned-to-application-or-service-principal"></a>为应用程序或服务主体分配的列表策略
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "29640012"
 GET /applications/{id}/policies
 ```
 
-> 注意： 请求中的"id"为应用程序或服务主体，不是"appid"属性"id"属性。
+> 注意: 请求中的 "id" 是应用程序或服务主体的 "id" 属性, 而不是 "appid" 属性。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -42,10 +42,10 @@ GET /applications/{id}/policies
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应正文中的响应代码和[策略](../resources/policy.md)对象。 如果不成功，`4xx`与特定的详细信息，则返回错误。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[policy](../resources/policy.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
-以下示例检索分配给应用程序的策略。
+下面的示例检索分配给应用程序的策略。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

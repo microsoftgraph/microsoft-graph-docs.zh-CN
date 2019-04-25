@@ -1,17 +1,17 @@
 ---
-title: 参与者： 邀请
+title: '参与者: 邀请'
 description: 邀请参与者加入活动呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 50c9ebd30bf70290006d8c04ccfb29e09ce0d566
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510167"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539469"
 ---
-# <a name="participant-invite"></a>参与者： 邀请
+# <a name="participant-invite"></a>参与者: 邀请
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "29510167"
 | :-------------- | :--------------------------------------------------------- |
 | 委派（工作或学校帐户）     | 不支持                       |
 | 委派（个人 Microsoft 帐户） | 不支持                       |
-| 应用程序     | Calls.InitiateGroupCalls.All                               |
+| 应用程序     | InitiateGroupCalls                               |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/participants/invite
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合| 邀请参与者。|
-|ClientContext|String|客户端上下文。|
+|participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合| 要邀请的参与者。|
+|适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
-返回`202 Accepted`响应代码和具有[commsOperation](../resources/commsoperation.md)创建的此请求 uri 中的位置标头。
+返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
 
 ## <a name="examples"></a>示例
 下面的示例演示如何调用此 API。
@@ -99,7 +99,7 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 ```
 <br/>
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a>邀请中现有的 P2P 会议的参与者
+### <a name="invite-participants-in-existing-p2p-meeting"></a>邀请现有 P2P 会议中的参与者
 
 ##### <a name="request"></a>请求
 
@@ -142,7 +142,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---operation-completed"></a>通知-完成的操作
+##### <a name="notification---operation-completed"></a>通知-操作已完成
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -172,7 +172,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>通知-添加参与者使用更新的名单
+##### <a name="notification---roster-updated-with-participant-added"></a>已添加参与者的通知-名单
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -245,13 +245,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a>邀请中现有的 P2P 会议的参与者
+### <a name="invite-participants-in-existing-p2p-meeting"></a>邀请现有 P2P 会议中的参与者
 
-本示例在现有 P2P 会议[邀请](../api/participant-invite.md)参与者演示完整的 E2E 流。
+本示例显示现有 P2P 会议中的[邀请参与者](../api/participant-invite.md)的完整 E2E 流。
 
-##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a>应答传入的 VOIP 呼叫与服务承载媒体
+##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a>使用服务托管媒体应答传入 VOIP 呼叫
 
-##### <a name="notification---incoming"></a>通知-传入
+##### <a name="notification---incoming"></a>通知传入
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -375,7 +375,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>通知-建立
+##### <a name="notification---established"></a>已建立通知
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -406,9 +406,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-without-media"></a>加入没有媒体通道会议
+### <a name="join-channel-meeting-without-media"></a>不带媒体的加入频道会议
 
-> **重要说明**： 如果仅以促成转接中加入自动程序实例，它应避免媒体协商。  因此，最好将其添加没有任何`requestedModalities`或`mediaConfig`。
+> **重要说明**: 如果 bot 实例只是为了便于传输而加入, 它应避免媒体协商。  因此, 最好在不添加任何`requestedModalities`或`mediaConfig`的情况下添加它。
 
 ##### <a name="request"></a>请求
 
@@ -483,7 +483,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>通知-建立
+##### <a name="notification---established"></a>已建立通知
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -513,7 +513,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participant-from-initial-incoming-call"></a>邀请参与者从初始的传入呼叫
+### <a name="invite-participant-from-initial-incoming-call"></a>邀请参与者进入初始传入呼叫
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -552,7 +552,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---operation-completed"></a>通知-完成的操作
+##### <a name="notification---operation-completed"></a>通知-操作已完成
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -582,7 +582,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>通知-添加参与者使用更新的名单
+##### <a name="notification---roster-updated-with-participant-added"></a>已添加参与者的通知-名单
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -685,7 +685,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---deleted-the-original-p2p-call"></a>通知-删除原始的 P2P 呼叫
+##### <a name="notification---deleted-the-original-p2p-call"></a>通知-已删除原始 P2P 呼叫
 
 ``` http
 POST https://bot.contoso.com/api/calls

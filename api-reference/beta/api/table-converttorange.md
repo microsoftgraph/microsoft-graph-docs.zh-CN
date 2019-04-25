@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 2987f01767dffaeacc0e783049116765165e4630
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508550"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545365"
 ---
 # <a name="table-converttorange"></a>Table: convertToRange
 

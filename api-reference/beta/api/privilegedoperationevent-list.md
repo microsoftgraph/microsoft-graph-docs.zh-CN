@@ -1,25 +1,25 @@
 ---
-title: 列表 privilegedOperationEvents
-description: 筛选器表达式。
+title: 列出 privilegedOperationEvents
+description: 筛选器 ' ' 表达式。
 localization_priority: Normal
 ms.openlocfilehash: 4ea6f778098a8b56c8819f55fb33ffb5420cce6b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512631"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546589"
 ---
-# <a name="list-privilegedoperationevents"></a>列表 privilegedOperationEvents
+# <a name="list-privilegedoperationevents"></a>列出 privilegedOperationEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[privilegedOperationEvent](../resources/privilegedoperationevent.md)对象，表示由特权身份管理角色操作生成的审核事件的列表。 有关审核事件的详细信息，请参阅[privilegedOperationEvent](../resources/privilegedoperationevent.md)。 若要筛选查询结果，请使用标准 OData``$filter``表达式。
+检索[privilegedOperationEvent](../resources/privilegedoperationevent.md)对象的列表, 这些对象表示由角色操作的特权标识管理生成的审核事件。 有关审核事件的详细信息, 请参阅[privilegedOperationEvent](../resources/privilegedoperationevent.md)。 若要筛选查询结果, 请使用标准 OData ``$filter``表达式。
 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要拥有以下角色之一：_具有权限的角色管理员_、_全局管理员_、_安全管理员_或_安全读取器_。
+请求者需要具有以下角色之一:_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。
 
  
 
@@ -47,21 +47,21 @@ GET /privilegedOperationEvents
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[privilegedOperationEvent](../resources/privilegedoperationevent.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[privilegedOperationEvent](../resources/privilegedoperationevent.md)对象集合。
 
-请注意，需要将其注册到 PIM 租户。 否则，将返回的 HTTP 403 禁止访问状态代码。
+请注意, 需要将租户注册到 PIM。 否则, 将返回 HTTP 403 禁止的状态代码。
 ## <a name="examples"></a>示例
 
-### <a name="get-audit-events-for-role-assignment-operations"></a>获取角色分配操作审核事件
+### <a name="get-audit-events-for-role-assignment-operations"></a>获取角色分配操作的审核事件
 ##### <a name="request"></a>请求
-下面的示例演示请求以获取角色分配操作审核的事件。 在这种情况下，``requestType``值是``Assign``。
+以下示例显示了获取角色分配操作的审核事件的请求。 在这种情况``requestType``下, ``Assign``value 为。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,16 +112,16 @@ Content-length: 547
     ]
 }
 ```
-### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>审核事件获得自我角色激活和 makePermanent 的操作
+### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>获取自我角色激活和 makePermanent 操作的审核事件
 ##### <a name="request"></a>请求
-下面的示例演示请求以获得审核的事件的自我角色激活和 makePermanent 操作。 在这种情况下，``requestType``值是``Activate``。
+下面的示例演示获取获取自我角色激活和 makePermanent 操作的审核事件的请求。 在这种情况``requestType``下, ``Activate``value 为。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -173,16 +173,16 @@ Content-length: 547
 }
 ```
 
-### <a name="get-audit-events-for-role-assignment-deactivation"></a>获取角色分配停用审核事件
+### <a name="get-audit-events-for-role-assignment-deactivation"></a>获取角色分配停用的审核事件
 ##### <a name="request"></a>请求
-下面的示例演示请求以获取角色分配停用审核的事件。 在这种情况下，``requestType``值是``Deactivate``。
+下面的示例演示获取获取角色分配停用的审核事件的请求。 在这种情况``requestType``下, ``Deactivate``value 为。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -216,16 +216,16 @@ Content-length: 547
     ]
 }
 ```
-### <a name="get-audit-events-created-in-a-time-range"></a>获取一个时间范围中创建的审核事件
+### <a name="get-audit-events-created-in-a-time-range"></a>获取在某个时间范围内创建的审核事件
 ##### <a name="request"></a>请求 
-下面的示例演示请求以获得审核的事件创建时间范围内。
+下面的示例展示了获取在某个时间范围内创建的审核事件的请求。
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

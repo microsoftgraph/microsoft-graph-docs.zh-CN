@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: b394b2f5bc81954467ebb315750087141936f3d5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509908"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540471"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -26,7 +26,8 @@ ms.locfileid: "29509908"
 |应用程序 | Mail.Read |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->[邮件](../resources/message.md)用户的邮箱中的附件。
+<!-- { "blockType": "ignored" } -->
+用户邮箱中的 [邮件](../resources/message.md) 附件。
 ```http
 GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -44,7 +45,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
-具体而言，您可以使用 $展开查询参数，包括所有与邮件属性的其余部分内联邮件附件。 例如：
+特别是, 您可以使用 $expand 查询参数将所有邮件附件嵌入到其余邮件属性中。 例如：
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments

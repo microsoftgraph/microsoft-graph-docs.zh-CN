@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 8f6ed391f1158b6b9253827c52c50a0b197e31a5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510251"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546198"
 ---
 # <a name="range-lastrow"></a>Range:LastRow
 

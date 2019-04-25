@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 852b52fd70e619b8720ef56fb0e857fb499f0abf
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640208"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543698"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "29640208"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|visible|boolean|表示坐标轴网格线是否可见的布尔值。|
+|visible|布尔|表示坐标轴网格线是否可见的布尔值。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

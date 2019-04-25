@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: af2cc42c2ee72f1a57a1e0f9402209c107e259f4
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967296"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540898"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
@@ -17,10 +17,10 @@ ms.locfileid: "29967296"
 
 检索邮件文件夹对象的属性和关系。
 
-有两种方案相关应用程序可以在哪里找到另一个用户的邮件文件夹：
+在以下两种情况下, 应用可以获取其他用户的邮件文件夹:
 
-* 如果该应用程序具有应用程序权限，或者
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享邮件文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+* 如果该应用具有应用程序权限，或者
+* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 ## <a name="permissions"></a>权限
 
@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 
 ## <a name="request-headers"></a>请求标头
 
-| Name          | 类型   | 说明               |
+| 名称          | 类型   | 说明               |
 |:--------------|:-------|:--------------------------|
 | Authorization | string | Bearer {token}。必需。 |
 
@@ -61,7 +61,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-get-a-mail-folder"></a>示例 1： 获取邮件文件夹
+### <a name="example-1-get-a-mail-folder"></a>示例 1: 获取邮件文件夹
 
 #### <a name="request"></a>请求
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -105,7 +105,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-mail-search-folder"></a>示例 2： 获取邮件搜索文件夹
+### <a name="example-2-get-a-mail-search-folder"></a>示例 2: 获取邮件搜索文件夹
 
 #### <a name="request"></a>请求
 
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 
 下面是一个响应示例。
 
-> **注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

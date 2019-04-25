@@ -1,19 +1,19 @@
 ---
 title: 创建和发送通知
-description: '创建和发送通知目标用户通过 Microsoft Graph。 通知存储在 Microsoft Graph 通知源存储，并发送到的用户登录到所有设备终结点上的所有应用程序客户端。  '
+description: '创建并发送针对用户通过 Microsoft Graph 的通知。 通知存储在 Microsoft Graph 通知源存储中, 并发送到用户登录到的所有设备终结点上的所有应用程序客户端。  '
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 70c7992a6fd323b909d948976132304fa04393c4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546377"
 ---
 # <a name="create-and-send-a-notification"></a>创建和发送通知
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建和发送通知目标用户通过 Microsoft Graph。 通知存储在 Microsoft Graph 通知源存储，并发送到的用户登录到所有设备终结点上的所有应用程序客户端。  
+创建并发送针对用户通过 Microsoft Graph 的通知。 通知存储在 Microsoft Graph 通知源存储中, 并发送到用户登录到的所有设备终结点上的所有应用程序客户端。  
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -32,12 +32,12 @@ POST /me/notifications/
 ## <a name="request-headers"></a>请求标头
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|Authorization | string |Authorization 标头用于传递的呼叫方凭据。 持有者令牌 必需。 |
+|Authorization | string |授权标头用于传递呼叫方的凭据。 持有者 {令牌}。 必需。 |
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[通知](../resources/projectrome-notification.md)对象的 JSON 表示形式。
+在请求正文中, 提供[通知](../resources/projectrome-notification.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码，指示已成功创建并存储通知。 
+如果成功, 此方法将`201 Created`返回指示已成功创建和存储通知的响应代码。 
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面展示了示例请求。

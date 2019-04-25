@@ -1,15 +1,15 @@
 ---
 title: Range:EntireColumn
-description: 获取表示区域整列的对象。
+description: 获取表示范围整列的对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b97bf5f5b4e1f2f5ac95bf375608b831b7367328
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507598"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546421"
 ---
 # <a name="range-entirecolumn"></a>Range:EntireColumn
 

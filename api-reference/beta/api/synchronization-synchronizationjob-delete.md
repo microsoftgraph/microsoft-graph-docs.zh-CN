@@ -1,19 +1,19 @@
 ---
 title: 删除 synchronizationJob
-description: 停止同步作业，并永久删除所有与之关联的状态。 同步的帐户保留为-是。
+description: 停止同步作业, 并永久删除与之关联的所有状态。 同步帐户保留为。
 localization_priority: Normal
 ms.openlocfilehash: 29083413c5b24a5ed07b671adfa048f58d437f0d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521682"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545212"
 ---
 # <a name="delete-synchronizationjob"></a>删除 synchronizationJob
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-停止同步作业，并永久删除所有与之关联的状态。 同步的帐户保留为-是。
+停止同步作业, 并永久删除与之关联的所有状态。 同步帐户保留为。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -42,12 +42,12 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="response"></a>响应
 
-如果成功，返回`204 No Content`响应。 它不返回任何响应正文中。
+如果成功, 则返回`204 No Content`响应。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 <!-- {
   "blockType": "request",
   "name": "delete_synchronizationjob"

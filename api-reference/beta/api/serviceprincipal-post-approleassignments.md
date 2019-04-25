@@ -1,19 +1,19 @@
 ---
 title: 创建 appRoleAssignment
-description: 使用此 API 创建新 appRoleAssignment。
+description: 使用此 API 创建新的 appRoleAssignment。
 localization_priority: Normal
 ms.openlocfilehash: 70993bf1e5402c3fab7229269fbc007602813c40
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643648"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545290"
 ---
 # <a name="create-approleassignment"></a>创建 appRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-使用此 API 创建新 appRoleAssignment。
+使用此 API 创建新的 appRoleAssignment。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -36,11 +36,11 @@ POST /servicePrincipals/{id}/appRoleAssignments
 | Authorization  | string  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[appRoleAssignment](../resources/approleassignment.md)对象的 JSON 表示形式。
+在请求正文中, 提供[appRoleAssignment](../resources/approleassignment.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应正文中的响应代码和[appRoleAssignment](../resources/approleassignment.md)对象。
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[appRoleAssignment](../resources/approleassignment.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -62,7 +62,7 @@ Content-length: 233
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
-在请求正文中，提供[appRoleAssignment](../resources/approleassignment.md)对象的 JSON 表示形式。
+在请求正文中, 提供[appRoleAssignment](../resources/approleassignment.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {

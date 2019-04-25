@@ -1,28 +1,28 @@
 ---
 title: educationIdentityDomain 资源类型
-description: '代表教育用户类型和用户的帐户所属的域之间的映射。 域资源是标识创建配置的一部分。 '
+description: '表示教育用户类型与用户帐户所属域之间的映射。 域资源是标识创建配置的一部分。 '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 0c6004d18897b8f8284c06a3b09830072148df87
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528177"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543075"
 ---
 # <a name="educationidentitydomain-resource-type"></a>educationIdentityDomain 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表教育用户类型和用户的帐户所属的域之间的映射。 域资源是[标识创建配置](educationidentitycreationconfiguration.md)的一部分。 
+表示教育用户类型与用户帐户所属域之间的映射。 域资源是[标识创建配置](educationidentitycreationconfiguration.md)的一部分。 
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
-| appliesTo | string |  要分配许可证的用户角色类型。 可取值为：`student`、`teacher`。      |
-| **name** | string |  表示的用户帐户的域。         |
+| **appliesTo** | string |  要分配给许可证的用户角色类型。 可取值为：`student`、`teacher`。      |
+| **name** | string |  代表用户帐户的域。         |
 
 ## <a name="json-representation"></a>JSON 表示形式
 <!-- {

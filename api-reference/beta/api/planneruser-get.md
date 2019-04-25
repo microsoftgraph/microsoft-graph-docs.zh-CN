@@ -1,21 +1,21 @@
 ---
 title: 获取 plannerUser
-description: '检索的属性和 plannerUser 对象的关系。 返回的属性包括用户的收藏夹计划和最近查看的计划。 '
+description: '检索 plannerUser 对象的属性和关系。 返回的属性包括用户的收藏计划和最近查看的计划。 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 0ac20564183c36d26440b4532a39413dff47bfb6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510363"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546794"
 ---
 # <a name="get-planneruser"></a>获取 plannerUser
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和[plannerUser](../resources/planneruser.md)对象的关系。 返回的属性包括用户的收藏夹计划和最近查看的计划。 
+检索[plannerUser](../resources/planneruser.md)对象的属性和关系。 返回的属性包括用户的收藏计划和最近查看的计划。 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -35,12 +35,12 @@ GET /users/<id>/planner
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必需。|
+| Authorization  | 持有者 {代码}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[plannerUser](../resources/planneruser.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[plannerUser](../resources/planneruser.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。

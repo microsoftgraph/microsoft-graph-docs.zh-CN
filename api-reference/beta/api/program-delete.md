@@ -1,21 +1,21 @@
 ---
 title: 删除程序
-description: 在 Azure AD 中访问审阅功能，删除程序对象。
+description: 在 "Azure AD access 评论" 功能中, 删除一个程序对象。
 localization_priority: Normal
 ms.openlocfilehash: 930367e6c61d354655e73fb7ece9c8776e15f34e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519505"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546396"
 ---
 # <a name="delete-program"></a>删除程序
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD[访问审阅](../resources/accessreviews-root.md)功能中，删除[程序](../resources/program.md)对象。
+在 "Azure AD [access 评论](../resources/accessreviews-root.md)" 功能中, 删除一个[程序](../resources/program.md)对象。
 
-请不要删除一个程序这仍有`programControl`链接到其，这些访问评论应该首先删除或取消链接从程序并链接到其他程序。  此外，请注意，不能删除内置的默认计划。
+请勿删除仍与它`programControl`链接的程序, 应首先从该程序中删除或取消这些访问审核, 并将其链接到其他程序。  此外, 请注意, 不能删除内置的默认程序。
 
 
 ## <a name="permissions"></a>权限
@@ -23,7 +23,7 @@ ms.locfileid: "29519505"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | `ProgramControl.ReadWrite.All`.  登录的用户还必须在目录角色中允许他们创建的程序。 |
+|委派（工作或学校帐户）     | `ProgramControl.ReadWrite.All`.  登录用户还必须位于允许他们创建程序的目录角色中。 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -35,7 +35,7 @@ DELETE /programs('<id>')
 ## <a name="request-headers"></a>请求标头
 | 名称         | 类型        | 说明 |
 |:-------------|:------------|:------------|
-| Authorization | string | 持有者令牌 必需。 |
+| Authorization | string | 持有者 \{token\}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

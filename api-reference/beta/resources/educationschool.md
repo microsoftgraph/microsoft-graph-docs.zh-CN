@@ -1,23 +1,23 @@
 ---
 title: educationSchool 资源类型
-description: '学校。 **educationSchool** 资源当前对应于 administrativeUnit 资源并共享同一 ID。  '
+description: '学校。 **educationSchool**资源当前与 administrativeUnit 资源相对应并共享相同的 ID。  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 917395324e6ae519af468a4bb4b31056796e1498
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512540"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542920"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-学校。 **educationSchool** 资源当前对应于 [administrativeUnit](administrativeunit.md) 资源并共享同一 ID。  
+学校。 **educationSchool**资源当前与[administrativeUnit](administrativeunit.md)资源相对应并共享相同的 ID。  
 
-此资源是 [educationOrganization](educationorganization.md) 的子类型。
+此资源是[educationOrganization](educationorganization.md)的子类型。
 
 
 
@@ -33,16 +33,16 @@ ms.locfileid: "29512540"
 |[Add user](../api/educationschool-post-users.md) |[educationUser](educationuser.md)| 通过发布到 **users** 导航属性，为学校添加一个新的 **educationUser**。|
 |[List users](../api/educationschool-list-users.md) |[educationUser](educationuser.md) 集合| 获取 **educationUser** 对象集合。|
 |[Remove user](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| 通过 **users** 导航属性从学校删除 **educationUser**。|
-|[Get administrativeUnit](../api/educationschool-get-administrativeunit.md) |[administrativeUnit](administrativeunit.md)| 获取与此 **educationSchool** 对应的 **administrativeUnit**。|
+|[获取 administrativeUnit](../api/educationschool-get-administrativeunit.md) |[administrativeUnit](administrativeunit.md)| 获取与此**educationSchool**相对应的**administrativeUnit** 。|
 |[Update](../api/educationschool-update.md) | [educationSchool](educationschool.md) |更新 **educationSchool** 对象。 |
-|[Delete](../api/educationschool-delete.md) | 无 |删除 **educationSchool** 对象。 |
+|[删除](../api/educationschool-delete.md) | 无 |删除 **educationSchool** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字串符号|该学校的 GUID。|
+|id|String|该学校的 GUID。|
 |displayName| String| 学校的显示名称。| 
-|description| 字符串 | 学校描述。| 
+|description| String | 学校描述。| 
 |status| string| 只读。 可取值为：`inactive`、`active`、`expired`、`deleteable`。|
 |externalSource| string| 只读。  可取值为：`sis`、`manual`、`unknownFutureValue`。|
 |principalEmail| String| 主体的电子邮件地址。|
@@ -62,7 +62,7 @@ ms.locfileid: "29512540"
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) 集合| 在学校教授的课程。 可为 NULL。|
-|users|[educationUser](educationuser.md) 集合| 学校中的用户。 可为 NULL。|
+|users|[educationUser](educationuser.md) 集合| 学校中的用户。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

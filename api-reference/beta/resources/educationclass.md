@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: e02cc4b10e4f1f933921f86735f9b09610cfe818
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800010"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542874"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -36,13 +36,13 @@ ms.locfileid: "30800010"
 |[创建 educationCategory](../api/educationclass-post-category.md) | [educationCategory](educationCategory.md) | 为此类创建新的**educationCategory** 。|
 |[List categories](../api/educationclass-list-categories.md) | [educationCategory](educationCategory.md)集合 | 获取属于此类的**educationCategory**对象的列表。|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)    |更新 **educationClass** 对象。 |
-|[Delete](../api/educationclass-delete.md) | 无 |删除 **educationClass** 对象。 |
+|[删除](../api/educationclass-delete.md) | 无 |删除 **educationClass** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id| String| 课程的唯一标识符。|
-|说明|String| 课程说明。|
+|id| 字符串| 课程的唯一标识符。|
+|description|String| 课程说明。|
 |displayName|String| 课程名称。|
 |mailNickname|字符串| 向所有成员发送电子邮件的邮件名称（如果已启用）。 |
 |createdBy|[identitySet](identityset.md)| 创建了课程的实体 |
@@ -60,7 +60,7 @@ ms.locfileid: "30800010"
 |schools|[educationSchool](../resources/educationschool.md) 集合| 与此课程相关的所有学校。 可为空。|
 |teachers|[educationUser](../resources/educationuser.md) 集合|  课程中的所有教师。 可为 NULL。|
 |assignments|[educationAssignment](../resources/educationassignment.md)集合| 与此类关联的所有工作分配。 可为空。|
-|类别|[educationCategory](../resources/educationassignment.md)集合| 与此类关联的所有类别。 可为 Null。|
+|categories|[educationCategory](../resources/educationassignment.md)集合| 与此类关联的所有类别。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

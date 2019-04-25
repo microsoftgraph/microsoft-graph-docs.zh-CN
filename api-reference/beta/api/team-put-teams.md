@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: a28036cfb253405fab55eca80fa2b0a17232a96c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524791"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544603"
 ---
 # <a name="create-team-from-group"></a>从组创建团队
 

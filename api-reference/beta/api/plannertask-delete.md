@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 7c27c7a8baba08595479027ba35ad84f8cf0c733
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517748"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538834"
 ---
 # <a name="delete-plannertask"></a>删除 plannerTask
 

@@ -3,11 +3,11 @@ title: Azure AD 审核日志 API 概述
 description: Azure Active Directory (Azure AD) 可跟踪用户活动和登录指标，并创建审核日志报告，帮助你了解用户如何访问和利用 Azure AD 服务。 使用 Microsoft Graph API for Azure AD 分析这些报告的基础数据，并根据组织的特定需求创建自定义解决方案。
 localization_priority: Priority
 ms.openlocfilehash: 89be0007ae6c13fb48ba165ca991f5dfa9d9b9cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509600"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543864"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Azure AD 审核日志 API 概述
 

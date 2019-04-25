@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 9b24008a3ea13308f0d83a2ac6a6ef31ece32469
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575312"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545940"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
@@ -27,7 +27,7 @@ ms.locfileid: "29575312"
 | :------------------------------------- | :--------------------------------------- |
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
-| 应用                            | Reports.Read.All                         |
+| 应用程序                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -45,7 +45,7 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | 指定在多长时间内聚合报表。 受支持的 {period_value} 值为：D7、D30、D90 和 D180。 这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。 必需。 |
 
-此方法支持`$format`要自定义的响应的[OData 查询参数](/graph/query-parameters)。 默认输出类型是文本/csv。 但是，如果您想要指定输出类型，您可以使用 OData $format 查询参数设置为 text/csv 或应用程序/json。
+此方法支持`$format` [OData 查询参数](/graph/query-parameters)来自定义响应。 默认输出类型为 text/csv。 但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -59,7 +59,7 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 
 如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
-预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。
+预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
 
 CSV 文件包含下面的列标题：
 
@@ -74,25 +74,25 @@ CSV 文件包含下面的列标题：
 - 报表日期
 - 报表周期
 
-在 Microsoft Graph 中国由 21Vianet 不支持下列：
+由世纪互联运营的 Microsoft Graph 中国不支持以下各列:
 
 - Yammer
 - Teams
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的**[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象。
 
-在 Microsoft Graph 中国由 21Vianet 不支持**[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象中的以下属性：
+由世纪互联运营的 Microsoft Graph 中国不支持**[office365ActiveUserCounts](../resources/office365activeusercounts.md)** 对象中的以下属性:
 
 - yammer
-- 团队
+- 协作
 
 ## <a name="example"></a>示例
 
 ### <a name="csv"></a>CSV
 
-下面是输出 CSV 示例。
+下面是输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -136,7 +136,7 @@ Report Refresh Date,Office 365,Exchange,OneDrive,SharePoint,Skype For Business,Y
 
 ### <a name="json"></a>JSON
 
-下面是返回 JSON 的示例。
+下面是一个返回 JSON 的示例。
 
 #### <a name="request"></a>请求
 

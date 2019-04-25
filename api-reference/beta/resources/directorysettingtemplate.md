@@ -1,38 +1,38 @@
 ---
 title: directorySettingTemplate 资源类型
-description: 系统定义供租户的设置表示目录设置模板。 目录设置可以创建基于可用 directorySettingTemplates 和更改的预设默认值。 无法创建、 更新或删除目录设置模板。 这些设置可表示租户范围的设置，或可表示特定实体设置。  目前，唯一可用的模板适用于 Office 的组，并包括设置如用户可以创建组还是邀请来宾从组织外部成为组的成员。
+description: 目录设置模板表示可供租户使用的系统定义设置。 可以基于可用的 directorySettingTemplates 创建目录设置, 并将值更改为其预设默认值。 无法创建、更新或删除目录设置模板。 这些设置可以表示租户范围的设置, 也可以表示特定的实体设置。  目前, 仅有的可用模板适用于 Office 组, 并包含诸如用户是否可以创建组或邀请来自组织外部的来宾以成为组成员的设置。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 366817df422686a8db658f1cab1d5805c24c4f91
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516656"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543245"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>directorySettingTemplate 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-系统定义供租户的设置表示目录设置模板。 [目录设置](directorysetting.md)可以创建基于可用 directorySettingTemplates 和更改的预设默认值。 无法创建、 更新或删除目录设置模板。 这些设置可表示租户范围的设置，或可表示特定实体设置。  目前，唯一可用的模板适用于 Office 的组，并包括设置如用户可以创建组还是邀请来宾从组织外部成为组的成员。
+目录设置模板表示可供租户使用的系统定义设置。 可以基于可用的 directorySettingTemplates 创建[目录设置](directorysetting.md), 并将值更改为其预设默认值。 无法创建、更新或删除目录设置模板。 这些设置可以表示租户范围的设置, 也可以表示特定的实体设置。  目前, 仅有的可用模板适用于 Office 组, 并包含诸如用户是否可以创建组或邀请来自组织外部的来宾以成为组成员的设置。
 
-> **注意**： directorySettingTemplate 资源类型的 /beta 版本仅适用于组。 /V1.0 版本已被重命名为 groupSettingTemplate。
+> **注意**: directorySettingTemplate 资源类型的/beta 版本仅适用于组。 /v1.0 版本已重命名为 groupSettingTemplate。
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 directorySettingTemplate](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |读取的一个系统定义 directorySettingTemplate 对象的特定属性。|
-|[列表 directorySettingTemplate](../api/directorysettingtemplate-list.md) | [DirectorySettingTemplate 的集合](directorysettingtemplate.md) |列出的所有系统定义 directorySettingTemplate 对象。|
+|[获取 directorySettingTemplate](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |读取某个系统定义的 directorySettingTemplate 对象的特定属性。|
+|[列出 directorySettingTemplate](../api/directorysettingtemplate-list.md) | [directorySettingTemplate 的集合](directorysettingtemplate.md) |列出所有系统定义的 directorySettingTemplate 对象。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|description|string|模板描述 只读。|
-|displayName|string|模板的显示名称 此为只读属性。 |
-|id|string| 模板的的唯一标识符。只读。|
-|values|[settingTemplateValue](settingtemplatevalue.md) 集合| setTemplateValues 的集合，列出组成此模板的一组可用设置、默认值和类型。  只读。 |
+|说明|string|模板的说明。 只读。|
+|displayName|string|模板的显示名称。 只读。 |
+|id|字符串| 模板的唯一标识符。 只读。|
+|值|[settingTemplateValue](settingtemplatevalue.md)集合| settemplatevalues 的集合, 该集合列出了组成此模板的可用设置、默认值和类型的集合。  只读。 |
 
 ## <a name="relationships"></a>关系
 无

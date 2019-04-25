@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 870e188939646594b62e6eebf3e234eb0211f140
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365750"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543026"
 ---
 # <a name="unitsofmeasure-resource-type"></a>unitsOfMeasure 资源类型
 表示一个度量单位, 它是量的标准度量单位, 在 Dynamics 365 Business Central 中。
@@ -29,7 +29,7 @@ ms.locfileid: "30365750"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|GUID|unitsOfMeasure 的唯一 ID。 不可编辑。|
-|code|字符串|指定度量单位的代码。|
+|code|string|指定度量单位的代码。|
 |displayName|string|指定度量单位的显示名称。|
 |internationalStandardCode|string|根据与电子发送销售文档的连接的 UNECE Rec20 标准, 指定度量单位代码 (表示)。|
 |lastModifiedDateTime|datetime|最后一个 datetime 的度量单位已修改。 只读。|  

@@ -1,20 +1,18 @@
 ---
 title: 创建或替换 historyItem
-description: 创建一个新或替换现有的用户活动的现有历史记录项。
+description: 为现有用户活动创建新的或替换现有的历史记录项。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 777918d36a366534f7b07f505086a115f8c03c4e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527911"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546384"
 ---
 # <a name="create-or-replace-a-historyitem"></a>创建或替换 historyItem
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-创建一个新或替换现有的用户活动的现有历史记录项。
+为现有用户活动创建新的或替换现有的历史记录项。
 
 ## <a name="permissions"></a>权限
 
@@ -35,7 +33,7 @@ ms.locfileid: "29527911"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-Id 需要一个 GUID。
+Id 必须是 GUID。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -45,11 +43,11 @@ Id 需要一个 GUID。
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供[historyItem](../resources/projectrome-historyitem.md)对象的 JSON 表示形式。
+在请求正文中, 提供[historyItem](../resources/projectrome-historyitem.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`如果 historyItem 已创建的响应代码或`200 OK`如果 historyItem 被替换。
+如果成功, 此方法将在`201 Created`创建 historyItem 或`200 OK`替换 historyItem 时返回响应代码。
 
 ## <a name="example"></a>示例
 
@@ -63,7 +61,7 @@ Id 需要一个 GUID。
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
+PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
 Content-type: application/json
 Content-length: 364
 
@@ -81,7 +79,7 @@ Content-length: 364
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.historyItem"
+    "@odata.type": "microsoft.graph.activityHistoryItem"
 } -->
 
 ```http
@@ -89,7 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('user%40contoso.com')/activities('13881113971988980728')/historyItems/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('user%40contoso.com')/activities('13881113971988980728')/historyItems/$entity",
     "status": "updated",
     "userTimezone": "Africa/Casablanca",
     "createdDateTime": "2018-02-26T20:28:22.14Z",
@@ -104,15 +102,10 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Upsert historyitem",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-put-historyitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

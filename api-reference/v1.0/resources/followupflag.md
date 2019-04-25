@@ -1,18 +1,18 @@
 ---
 title: followupFlag 资源类型
-description: '允许用户跟进更高版本的项目中设置标志。 '
+description: '允许在项目中设置标志, 以便用户以后跟进。 '
 localization_priority: Normal
 ms.openlocfilehash: 60d2e40a10c3ba5b2af9aa798b84aadaebedd57a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885496"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541995"
 ---
 # <a name="followupflag-resource-type"></a>followupFlag 资源类型
 
 
-允许用户跟进更高版本的项目中设置标志。 
+允许在项目中设置标志, 以便用户以后跟进。 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

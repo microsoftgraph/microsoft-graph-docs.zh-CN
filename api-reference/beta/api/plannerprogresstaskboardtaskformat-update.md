@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: c48854ddc1f81c1ec0576cbd8e7072f49488ced0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523594"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546860"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>更新 plannerProgressTaskBoardTaskFormat
 
@@ -41,7 +41,7 @@ PATCH /planner/tasks/<id>/progressTaskBoardFormat
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|orderHint|String|使用任务进度的任务板视图上的提示值。 [使用规划器中的顺序提示](../resources/planner-order-hint-format.md)中定义格式。|
+|orderHint|String|用于对任务板的进度视图上的任务进行排序的提示值。 格式是在计划程序[中使用 order 提示](../resources/planner-order-hint-format.md)定义的。|
 
 ## <a name="response"></a>响应
 

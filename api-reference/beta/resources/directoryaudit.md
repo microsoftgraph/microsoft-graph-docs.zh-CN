@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643753"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543224"
 ---
 # <a name="directoryaudit-resource-type"></a>directoryAudit 资源类型
 此资源表示目录审核项及其集合

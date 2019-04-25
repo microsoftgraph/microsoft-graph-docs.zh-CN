@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ea8e90b77962c4bd28dc6a02849c26dd5848b9b1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976972"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541694"
 ---
 # <a name="delete-mobileappcategory"></a>删除 mobileAppCategory
 

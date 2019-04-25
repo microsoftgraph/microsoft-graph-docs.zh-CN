@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5e0fc671703d9d68b908ec6ffa9ea3b1ce558a65
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784033"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547149"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>windowsDeviceADAccount 资源类型
 
@@ -25,9 +25,9 @@ ms.locfileid: "31784033"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|password|String|尚未记录 继承自 [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
+|密码|String|尚未记录 继承自 [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
 |domainName|String|尚未记录|
-|userName|字符串|尚未记录|
+|userName|String|尚未记录|
 
 ## <a name="relationships"></a>关系
 无

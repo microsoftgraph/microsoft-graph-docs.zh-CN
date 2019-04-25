@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e7882a522eb3e3adcf9ebdf24e2b8f820b0f3581
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778087"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547044"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>windowsAutopilotSettings 资源类型
 
@@ -24,7 +24,7 @@ windowsAutopilotSettings 资源表示用于将数据与 windows 设备数据同�
 |:---|:---|:---|
 |[获取 windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-get.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|读取[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)对象的属性和关系。|
 |[更新 windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-update.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|更新[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)对象的属性。|
-|[sync 操作](../api/intune-enrollment-windowsautopilotsettings-sync.md)|无|尚未记录|
+|[同步操作](../api/intune-enrollment-windowsautopilotsettings-sync.md)|无|尚未记录|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|

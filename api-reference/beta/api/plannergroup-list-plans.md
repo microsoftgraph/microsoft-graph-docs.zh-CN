@@ -1,21 +1,21 @@
 ---
 title: 列出计划
-description: 检索由 group 对象所拥有的 plannerplan 对象的列表。
+description: 检索 group 对象拥有的**plannerPlan**对象的列表。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 8785c36580fef17086ce9e08a390ba6d573c6318
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522103"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547086"
 ---
 # <a name="list-plans"></a>列出计划
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索拥有的一个[group](../resources/group.md)对象的**plannerPlan**对象的列表。
+检索[group](../resources/group.md)对象拥有的**plannerPlan**对象的列表。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
