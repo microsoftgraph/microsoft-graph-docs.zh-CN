@@ -5,17 +5,17 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 1e252ddfddfcd82bcd3f790c75b34f016f54c9fb
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251193"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522606"
 ---
 # <a name="delete-group"></a>删除组
 
 删除组。  
 
-删除后, Office 365 组将移至临时容器, 并可在30天内恢复。  之后, 它们将被永久删除。  若要了解详细信息, 请参阅[deletedItems](../resources/directory.md)。  这仅适用于 Office 365 组。
+删除后, Office 365 组将移至临时容器, 并可在30天内恢复。  此后，它们将被永久删除。  要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。  这仅适用于 Office 365 组。
 
 ## <a name="permissions"></a>权限
 
@@ -63,7 +63,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true

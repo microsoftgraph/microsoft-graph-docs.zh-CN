@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 706ef0d5ea87796c951d2fcb8c7357643fba7afb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146772"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522585"
 ---
 # <a name="runstate-enum-type"></a>runState 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "30146772"
 |:---|:---|:---|
 |unknown|0|未知结果。|
 |success|1|脚本成功运行。|
-|失败|双面|脚本运行失败。|
+|失败|2 |脚本运行失败。|
 
 
 

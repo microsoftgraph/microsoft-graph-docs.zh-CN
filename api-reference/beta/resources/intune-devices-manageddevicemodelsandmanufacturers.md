@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 99291829bfa672a9ade85a0a015061e4f6ec8e10
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782560"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522102"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>managedDeviceModelsAndManufacturers 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "31782560"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|deviceModels|String 集合|帐户中托管设备的模型列表|
-|deviceManufacturers|String 集合|帐户中托管设备的制造商列表|
+|deviceModels|String collection|帐户中托管设备的模型列表|
+|deviceManufacturers|String collection|帐户中托管设备的制造商列表|
 
 ## <a name="relationships"></a>关系
 无

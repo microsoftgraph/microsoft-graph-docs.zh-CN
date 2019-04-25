@@ -1,21 +1,21 @@
 ---
 title: WorksheetProtection 资源类型
-description: 表示对 sheet 对象的保护。
+description: 表示对工作表对象的保护。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 7e87edcebae95f32ce0bccaf849a7d21140f4878
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29639942"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523800"
 ---
 # <a name="worksheetprotection-resource-type"></a>WorksheetProtection 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示对 sheet 对象的保护。
+表示对工作表对象的保护。
 
 
 ## <a name="methods"></a>方法
@@ -23,8 +23,8 @@ ms.locfileid: "29639942"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 WorksheetProtection](../api/worksheetprotection-get.md) | [WorksheetProtection](worksheetprotection.md) |读取 worksheetProtection 对象的属性和关系。|
-|[Protect](../api/worksheetprotection-protect.md)|无|保护工作表。如果工作表处于受保护状态，则会引发它。|
-|[Unprotect](../api/worksheetprotection-unprotect.md)|无|解除工作表保护|
+|[保护](../api/worksheetprotection-protect.md)|无|保护工作表。如果工作表处于受保护状态，则会引发它。|
+|[解除保护](../api/worksheetprotection-unprotect.md)|无|解除工作表保护|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

@@ -1,28 +1,28 @@
 ---
 title: parseExpressionResponse 资源类型
-description: '代表来自响应[synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)操作。'
+description: '表示来自[synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)操作的响应。'
 localization_priority: Normal
 ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641055"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523432"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>parseExpressionResponse 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表来自响应[synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)操作。
+表示来自[synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md)操作的响应。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|error|odata.error|错误详细信息，如果表达式评估导致出错。|
-|evaluationResult|String collection|无条件表达式的计算值的集合。|
-|evaluationSucceeded|布尔值|`true`评估是否成功。|
-|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|一个表示已分析的表达式[attributeMappingSource](synchronization-attributemappingsource.md)对象。|
-|parsingSucceeded|布尔值|`true`如果成功解析的表达式。|
+|error|odata。错误|如果表达式求值导致错误, 则为错误详细信息。|
+|evaluationResult|String collection|由表达式的计算产生的值的集合。|
+|evaluationSucceeded|布尔值|`true`如果评估成功。|
+|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|一个代表已分析的表达式的[attributeMappingSource](synchronization-attributemappingsource.md)对象。|
+|parsingSucceeded|布尔值|`true`如果表达式已成功分析。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

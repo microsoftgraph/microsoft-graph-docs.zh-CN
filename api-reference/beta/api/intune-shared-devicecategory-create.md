@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 71b36a94624140586f2275679df91c4ed7374335
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987900"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527173"
 ---
 # <a name="create-devicecategory"></a>创建 deviceCategory
 
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceCategories
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备类别的唯一标识符。 只读。|
+|id|字符串|设备类别的唯一标识符。 只读。|
 |**Obboarding**|
 |description|String|设备类别的可选说明。|
 |displayName|String|设备类别的显示名称。|

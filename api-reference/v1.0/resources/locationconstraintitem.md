@@ -3,11 +3,11 @@ title: locationConstraintItem 资源类型
 description: 客户端声明的会议地点条件。
 localization_priority: Normal
 ms.openlocfilehash: d9124377172c7598d45b0be9b9f3f9799bd3e1f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874317"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525521"
 ---
 # <a name="locationconstraintitem-resource-type"></a>locationConstraintItem 资源类型
 

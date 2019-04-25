@@ -5,11 +5,11 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f58548f8f075494c6601db2962d88fb6cabb59ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526009"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522648"
 ---
 # <a name="toneinfo-resource-type"></a>toneInfo 资源类型
 
@@ -21,8 +21,8 @@ ms.locfileid: "29526009"
 
 | 属性       | 类型    | 说明|
 |:---------------|:--------|:----------|
-| sequenceId | Int64 | 用于排序 DTMF 事件增量标识符。 |
-| 音 | String | 可能的值为： `tone0`， `tone1`， `tone2`， `tone3`， `tone4`， `tone5`， `tone6`， `tone7`， `tone8`， `tone9`， `star`， `pound`， `a`， `b`， `c`， `d`， `flash`。 |
+| sequenceId | Int64 | 用于对 DTMF 事件进行排序的增量标识符。 |
+| 按键 | String | 可能的值是`tone0`: `tone1`、 `tone2`、 `tone3` `tone4` `tone5` `tone6` `tone7` `tone8` `tone9` `flash`、、 `star`、、、、、、、、、、、、。 `pound` `a` `b` `c` `d` |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

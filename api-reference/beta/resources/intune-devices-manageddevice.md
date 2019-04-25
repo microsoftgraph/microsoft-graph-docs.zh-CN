@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a2233c1dea3dfc8992becf1a12c8e99f1938020a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787888"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522074"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -22,14 +22,14 @@ ms.locfileid: "31787888"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[获取 managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|读取 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。|
-|[更新 managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|更新 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性。|
+|[Get managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|读取 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性和关系。|
+|[Update managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|更新 [managedDevice](../resources/intune-devices-manageddevice.md) 对象的属性。|
 |[executeAction 操作](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md)|尚未记录|
 |[enableLostMode 操作](../api/intune-devices-manageddevice-enablelostmode.md)|无|启用丢失模式|
 |[playLostModeSound 操作](../api/intune-devices-manageddevice-playlostmodesound.md)|无|远程锁定|
 |[setDeviceName 操作](../api/intune-devices-manageddevice-setdevicename.md)|无|设置设备的设备名称。|
 |[retire 操作](../api/intune-devices-manageddevice-retire.md)|无|停用设备|
-|[擦除操作](../api/intune-devices-manageddevice-wipe.md)|无|擦除设备|
+|[wipe 操作](../api/intune-devices-manageddevice-wipe.md)|无|擦除设备|
 |[resetPasscode 操作](../api/intune-devices-manageddevice-resetpasscode.md)|无|重置密码|
 |[remoteLock 操作](../api/intune-devices-manageddevice-remotelock.md)|无|远程锁定|
 |[requestRemoteAssistance 操作](../api/intune-devices-manageddevice-requestremoteassistance.md)|无|请求远程协助|
@@ -68,11 +68,11 @@ ms.locfileid: "31787888"
 |jailBroken|String|设备是否已越狱或取得 root 权限。|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。可能的值为`eas`: `mdm`、 `easMdm`、 `intuneClient` `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown`、、、、、、、、 `microsoft365ManagedMdm` `jamf` `googleCloudDevicePolicyController`|
 |osVersion|String|设备的操作系统版本。|
-|easActivated|布尔值|设备是否已激活 Exchange ActiveSync。|
+|easActivated|Boolean|设备是否已激活 Exchange ActiveSync。|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。|
-|aadRegistered|布尔值|设备是否已注册 Azure Active Directory。|
-|azureADRegistered|布尔值|设备是否已注册 Azure Active Directory。|
+|aadRegistered|Boolean|设备是否已注册 Azure Active Directory。|
+|azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`。|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|指示是否已启用或禁用了丢失模式。 可取值为：`disabled`、`enabled`。|
 |activationLockBypassCode|String|允许绕过设备上的激活锁的代码。|
@@ -108,12 +108,12 @@ ms.locfileid: "31787888"
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示设备的上次登录用户|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告设置了 preferMdmOverGroupPolicy 设置的 DateTime。  设置后, 如果存在冲突, Intune MDM 设置将覆盖组策略设置。 只读。|
-|autopilotEnrolled|布尔值|如果托管设备是通过自动引导注册的, 则报告。|
-|requireUserEnrollmentApproval|布尔值|如果托管 iOS 设备是用户审批注册, 则报告。|
+|autopilotEnrolled|Boolean|如果托管设备是通过自动引导注册的, 则报告。|
+|requireUserEnrollmentApproval|Boolean|如果托管 iOS 设备是用户审批注册, 则报告。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期|
 |iccid|String|集成的电路卡标识符, 它是 SIM 卡的唯一标识号。|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。|
-|roleScopeTagIds|String 集合|此设备实例的范围标记 id 的列表。|
+|roleScopeTagIds|String collection|此设备实例的范围标记 id 的列表。|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件计数|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件计数|
 |notes|String|IT 管理员创建的设备上的注释|

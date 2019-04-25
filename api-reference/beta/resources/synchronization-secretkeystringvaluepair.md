@@ -1,25 +1,25 @@
 ---
 title: synchronizationSecretKeyStringValuePair 资源类型
-description: '代表单个机密值。 '
+description: '表示单个机密值。 '
 localization_priority: Normal
 ms.openlocfilehash: a937063ea04bd3726932e423a065026d51b05aa4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526065"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523227"
 ---
 # <a name="synchronizationsecretkeystringvaluepair-resource-type"></a>synchronizationSecretKeyStringValuePair 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表单个机密值。 
+表示单个机密值。 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|Key|String| 可能的值为： `None`， `UserName`， `Password`， `SecretToken`， `AppKey`， `BaseAddress`， `ClientIdentifier`， `ClientSecret`， `SingleSignOnType`， `Sandbox`， `Url`， `Domain`， `ConsumerKey`， `ConsumerSecret`， `TokenKey`， `TokenExpiration`， `Oauth2AccessToken`， `Oauth2AccessTokenCreationTime`， `Oauth2RefreshToken`, `SyncAll`, `InstanceName`, `Oauth2ClientId`, `Oauth2ClientSecret`, `CompanyId`, `UpdateKeyOnSoftDelete`, `SynchronizationSchedule`, `SystemOfRecord`, `SandboxName`, `EnforceDomain`, `SyncNotificationSettings`, `Server`, `PerformInboundEntitlementGrants`, `HardDeletesEnabled`, `SyncAgentCompatibilityKey`, `SyncAgentADContainer`, `ValidateDomain`, `TestReferences`.|
-|值|String|机密的值。|
+|Key|String| 可能的值为`None`: `UserName`、 `Password`、 `SecretToken` `AppKey` `BaseAddress` `ClientIdentifier` `ClientSecret` `SingleSignOnType` `Sandbox` `Url` `Domain` `ConsumerKey`、、、、、、、、、、、、、、、、 `ConsumerSecret` `TokenKey` `TokenExpiration` `Oauth2AccessToken` `Oauth2AccessTokenCreationTime` `Oauth2RefreshToken`, `SyncAll`, `InstanceName`, `Oauth2ClientId`, `Oauth2ClientSecret`, `CompanyId`, `UpdateKeyOnSoftDelete`, `SynchronizationSchedule`, `SystemOfRecord`, `SandboxName`, `EnforceDomain`, `SyncNotificationSettings`, `Server`, `PerformInboundEntitlementGrants`, `HardDeletesEnabled`, `SyncAgentCompatibilityKey`, `SyncAgentADContainer`, `ValidateDomain`, `TestReferences`.|
+|value|String|密码的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

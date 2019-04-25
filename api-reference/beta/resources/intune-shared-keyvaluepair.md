@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5a8feecabeca3cfc916c0bd3ce1b87cab3a68809
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160793"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525241"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "30160793"
 |属性|类型|说明|
 |:---|:---|:---|
 |name|String|此键值对的名称|
-|值|String|此键值对的值|
+|value|String|此键值对的值|
 
 ## <a name="relationships"></a>关系
 无

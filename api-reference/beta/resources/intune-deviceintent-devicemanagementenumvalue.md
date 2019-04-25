@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9fdddac077caa15fec5cbd516930747ef948665a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523320"
 ---
 # <a name="devicemanagementenumvalue-resource-type"></a>deviceManagementEnumValue 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "31777989"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|value|String|原始枚举值文本|
+|值|String|原始枚举值文本|
 |displayName|String|此枚举值的显示名称|
 
 ## <a name="relationships"></a>关系

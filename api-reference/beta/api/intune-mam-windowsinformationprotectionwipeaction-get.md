@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 586302f6f445f384fd2dda124292bf5740ad5911
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32529077"
 ---
 # <a name="get-windowsinformationprotectionwipeaction"></a>获取 windowsInformationProtectionWipeAction
 

@@ -3,11 +3,11 @@ title: timeZoneBase 资源类型
 description: 时区的基本表示形式。
 localization_priority: Normal
 ms.openlocfilehash: 9fc07961aaa475980309d8c843b613da8b42e448
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511644"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523012"
 ---
 # <a name="timezonebase-resource-type"></a>timeZoneBase 资源类型
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b1beadaf29254bf3b346960d18863159010eda46
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782658"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524433"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>deviceGuardLocalSystemAuthorityCredentialGuardState 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31782658"
 |:---|:---|:---|
 |运行|0|运行|
 |rebootRequired|1|需要重新启动|
-|notLicensed|双面|未获得凭据防护许可|
-|notConfigured|第三章|未配置|
-|virtualizationBasedSecurityNotRunning|4|基于虚拟化的安全性未运行|
+|notLicensed|2 |未获得凭据防护许可|
+|notConfigured|3 |未配置|
+|virtualizationBasedSecurityNotRunning|4 |基于虚拟化的安全性未运行|
 
 
 

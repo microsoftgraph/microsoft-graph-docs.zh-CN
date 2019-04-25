@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
 ms.openlocfilehash: dbb2fe0f651a269d69b880d18748b27a5b6f457c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480353"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525472"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn 资源类型
 

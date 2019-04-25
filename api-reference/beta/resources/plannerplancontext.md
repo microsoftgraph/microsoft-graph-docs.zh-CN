@@ -1,31 +1,31 @@
 ---
 title: plannerPlanContext 资源类型
-description: '**PlannerPlanContext**资源表示 plannerPlan 计划程序之外的用户体验的关系。 可以在其他体验，如 Microsoft 团队，来跟踪工作的用户体验的上下文中显示计划程序中的计划。'
+description: '**plannerPlanContext**资源表示 plannerPlan 在计划程序外的用户体验的关系。 Planner 中的计划可以在其他体验 (如 Microsoft 团队) 中进行, 以在该体验的上下文中跟踪工作。'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 76260b51bc6f77acf6fac22e80bd676edd8b8e11
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522158"
 ---
 # <a name="plannerplancontext-resource-type"></a>plannerPlanContext 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerPlanContext**资源表示[plannerPlan](plannerplan.md)计划程序之外的用户体验的关系。 可以在其他体验，如 Microsoft 团队，来跟踪工作的用户体验的上下文中显示计划程序中的计划。
-可以基于**ownerAppId**属性标识**plannerPlanContext**条目 reresents 的体验：
- - 5e3ce6c0-2b1f-4285-8d4b-75ee78787346： 上下文项目所属的 Microsoft 团队。
- - 00000003-0000-0ff1-ce00-000000000000： 上下文项目属于 SharePoint。
+**plannerPlanContext**资源表示[plannerPlan](plannerplan.md)在计划程序外的用户体验的关系。 Planner 中的计划可以在其他体验 (如 Microsoft 团队) 中进行, 以在该体验的上下文中跟踪工作。
+可以基于**ownerAppId**属性来标识**plannerPlanContext**条目 reresents 的体验:
+ - 5e3ce6c0-2b1f-4285-8d4b-75ee78787346: 上下文条目属于 Microsoft 团队。
+ - 为 00000003-0000-0ff1-ce00-000000000000: 上下文条目属于 SharePoint。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|associationType|String|可为空。 [PlannerPlan](plannerplan.md)和应用程序之间的关联的应用程序定义的类型。 应用程序可以使用此信息来跟踪对同一[plannerPlan](plannerplan.md)不同类型的关系。|
-|createdDateTime|DateTimeOffset|只读。 日期和时间创建**plannerPlanContext**时。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|displayNameSegments|String 集合|线段的外部体验的名称。 段表示允许其他应用程序，以显示关系的层次结构。|
+|associationType|String|可为空。 [plannerPlan](plannerplan.md)与应用之间的应用程序定义类型的关联。 应用程序可以使用此信息跟踪与同一[plannerPlan](plannerplan.md)的不同类型的关系。|
+|createdDateTime|DateTimeOffset|只读。 **plannerPlanContext**的创建日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|displayNameSegments|String collection|外部体验名称的各个部分。 段表示允许其他应用显示关系的层次结构。|
 |ownerAppId|String|只读。 创建**plannerPlanContext**的应用程序的 ID。|
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -3,11 +3,11 @@ title: 'Filter: clear'
 description: 清除给定列上的筛选器。
 localization_priority: Normal
 ms.openlocfilehash: bea500516e898fbbad2bbb881be437004405fb84
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872238"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524153"
 ---
 # <a name="filter-clear"></a>Filter: clear
 

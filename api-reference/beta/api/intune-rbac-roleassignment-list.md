@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b986699f73174fd224d62a4aeec75d53d30f86c6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778201"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527530"
 ---
 # <a name="list-roleassignments"></a>列出 roleAssignments
 

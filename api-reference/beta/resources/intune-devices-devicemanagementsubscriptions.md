@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4e17823eb8fd07c9e7a624db425ef55540e43c96
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785060"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522417"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>deviceManagementSubscriptions 枚举类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "31785060"
 |:---|:---|:---|
 |无|0|None|
 |intune|1|Microsoft Intune 订阅|
-|office365|双面|Office365 订阅|
-|intunePremium|4|Microsoft Intune 高级订阅|
-|intune_EDU|utf-8|Microsoft Intune 教育版订阅|
-|intune_SMB|位|适用于小型企业订阅的 Microsoft Intune|
+|office365|2 |Office365 订阅|
+|intunePremium|4 |Microsoft Intune 高级订阅|
+|intune_EDU|8 |Microsoft Intune 教育版订阅|
+|intune_SMB|16 |适用于小型企业订阅的 Microsoft Intune|
 
 
 

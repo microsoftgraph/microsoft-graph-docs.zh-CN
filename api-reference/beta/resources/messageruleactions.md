@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: a786a225bb9d439d60a29d2395b2d438975fc16c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523230"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523407"
 ---
 # <a name="messageruleactions-resource-type"></a>messageRuleActions 资源类型
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 228cc5ba4b50681bfe78a15ef214d6f3ab2ebb17
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779690"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523593"
 ---
 # <a name="windowsupdatetype-enum-type"></a>windowsUpdateType 枚举类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "31779690"
 |:---|:---|:---|
 |定制|0|允许用户进行设置。|
 |各种|1|半年频道 (定向)。 设备从半年频道 (定向) 获取所有适用的功能更新。|
-|businessReadyOnly|双面|半年频道。 设备从半年频道获取功能更新。|
-|windowsInsiderBuildFast|第三章|Windows 预览体验成员内部版本-快速|
-|windowsInsiderBuildSlow|4|Windows 预览体验成员内部版本-慢|
-|windowsInsiderBuildRelease|5|发布 Windows 预览体验成员内部版本|
+|businessReadyOnly|2 |半年频道。 设备从半年频道获取功能更新。|
+|windowsInsiderBuildFast|3 |Windows 预览体验成员内部版本-快速|
+|windowsInsiderBuildSlow|4 |Windows 预览体验成员内部版本-慢|
+|windowsInsiderBuildRelease|5 |发布 Windows 预览体验成员内部版本|
 
 
 

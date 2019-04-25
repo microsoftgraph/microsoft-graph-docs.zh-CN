@@ -1,19 +1,19 @@
 ---
 title: stringKeyAttributeMappingSourceValuePair 资源类型
-description: 表示其中的密钥是一个字符串，并且值为 attributeMappingSource 的键 / 值对。
+description: 表示键值对, 其中键是字符串, 值为 attributeMappingSource。
 localization_priority: Normal
 ms.openlocfilehash: ff914c23a238356a821d2902bf18900cf9957548
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516215"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523222"
 ---
 # <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>stringKeyAttributeMappingSourceValuePair 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示其中的密钥是一个字符串，并且值为[attributeMappingSource](synchronization-attributemappingsource.md)的键 / 值对。
+表示键值对, 其中键是字符串, 值为[attributeMappingSource](synchronization-attributemappingsource.md)。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|

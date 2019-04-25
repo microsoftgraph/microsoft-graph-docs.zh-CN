@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 518c7af676aa649866ea90fe7916cd257f0c5b91
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800257"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32528006"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
 
@@ -50,7 +50,7 @@ POST /deviceManagement/userPfxCertificates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|PFX 证书的唯一标识符。|
+|id|字符串|PFX 证书的唯一标识符。|
 |为|String|SHA-1 PFX 证书的指纹。|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn` 或 `wifi`。|
 |userPrincipalName|String|PFX 证书的用户主体名称。|

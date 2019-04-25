@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2ab1a48550e8b99b942baac2bcc9e37542606011
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780159"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527600"
 ---
 # <a name="get-resourceoperation"></a>获取 resourceOperation
 

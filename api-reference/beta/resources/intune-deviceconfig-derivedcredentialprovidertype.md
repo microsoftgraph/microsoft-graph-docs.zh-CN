@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e5477763723da5433550d9d96613caf82ff08f78
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794440"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522452"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>derivedCredentialProviderType 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31794440"
 |:---|:---|:---|
 |notConfigured|0|未配置任何派生的凭据提供程序。|
 |entrustDataCard|1|Entrust DataCard。|
-|purebred|双面|Purebred-防护信息系统代理。|
-|xTec|第三章|Xtec-AuthentX。|
-|intercede|4|Intercede。|
+|purebred|2 |Purebred-防护信息系统代理。|
+|xTec|3 |Xtec-AuthentX。|
+|intercede|4 |Intercede。|
 
 
 

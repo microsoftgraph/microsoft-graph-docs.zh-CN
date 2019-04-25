@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: fda18c3632874cd60da881ec82ff174c5ede5b7d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987599"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525563"
 ---
 # <a name="update-range"></a>更新区域
 
@@ -41,12 +41,12 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|columnHidden|boolean|表示当前区域中的所有列是否隐藏。|
+|columnHidden|布尔|表示当前区域中的所有列是否隐藏。|
 |formulas|Json|表示采用 A1 表示法的公式。|
 |formulasLocal|Json|表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。|
-|formulasR1C1|Json|表示采用 R1C1 表示法的公式。|
+|formulasR1C1|Json|表示采用 R1C1 样式表示法的公式。|
 |numberFormat|Json|表示 Excel 中指定单元格的数字格式代码。|
-|rowHidden|boolean|表示当前区域中的所有行是否隐藏。|
+|rowHidden|布尔|表示当前区域中的所有行是否隐藏。|
 |values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="response"></a>响应

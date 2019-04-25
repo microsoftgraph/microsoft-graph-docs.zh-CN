@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 189ba6e9ee465d5f0916254c22303ff445fda868
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802630"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32528055"
 ---
 # <a name="create-vpptoken"></a>创建 vppToken
 
@@ -67,7 +67,7 @@ POST /deviceAppManagement/vppTokens
 |displayName|String|管理员指定的令牌友好名称。|
 |locationName|String|从 Apple VPP 返回的令牌位置。|
 |claimTokenManagementFromExternalMdm|布尔值|管理员同意允许来自外部 MDM 的声明令牌管理。|
-|roleScopeTagIds|String 集合|分配给此实体的角色范围标记 id。|
+|roleScopeTagIds|String collection|分配给此实体的角色范围标记 id。|
 
 
 

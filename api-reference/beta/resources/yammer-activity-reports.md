@@ -1,21 +1,21 @@
 ---
 title: Yammer 活动报表
-description: 您可以通过多少活动生成跨组织和发布、 like，和阅读 Yammer 上的消息的唯一用户数了解 Yammer 与贵组织的工作效率的级别。
+description: 您可以通过在组织中生成多少活动以及在 yammer 上进行 post (如和阅读邮件) 的唯一用户的数量来了解您的组织对 yammer 的服务级别。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: d5953d8bd53158b2ec0532deb47c48028ba1b8c9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571798"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523796"
 ---
 # <a name="yammer-activity-reports"></a>Yammer 活动报表
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您可以通过多少活动生成跨组织和发布、 like，和阅读 Yammer 上的消息的唯一用户数了解 Yammer 与贵组织的工作效率的级别。
+您可以通过在组织中生成多少活动以及在 yammer 上进行 post (如和阅读邮件) 的唯一用户的数量来了解您的组织对 yammer 的服务级别。
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 活动](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)。
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d885555158c8caf83fee11e51f29ea2433e76797
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790352"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527957"
 ---
 # <a name="list-userpfxcertificates"></a>列出 userPFXCertificates
 

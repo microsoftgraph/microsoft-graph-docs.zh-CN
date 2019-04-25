@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 12c8c2dc628b7fcecef81296ca56f17845b39478
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962860"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523957"
 ---
 # <a name="update-manageddevice"></a>更新 managedDevice
 
@@ -62,10 +62,10 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |jailBroken|String|设备是否已越狱或取得 root 权限。|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`。|
 |osVersion|String|设备的操作系统版本。|
-|easActivated|Boolean|设备是否已激活 Exchange ActiveSync。|
+|easActivated|布尔值|设备是否已激活 Exchange ActiveSync。|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。|
 |easActivationDateTime|DateTimeOffset|设备的 Exchange ActivationSync 激活时间。|
-|azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。|
+|azureADRegistered|布尔值|设备是否已注册 Azure Active Directory。|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|设备的注册类型。 可取值为：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`。|
 |activationLockBypassCode|String|允许绕过设备上的激活锁的代码。|
 |emailAddress|String|与设备关联的用户的电子邮件。|

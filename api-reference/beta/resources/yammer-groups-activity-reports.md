@@ -1,21 +1,21 @@
 ---
 title: Yammer 组活动报表
-description: 可以在组织中获得的 Yammer 组活动见解并查看多少个 Yammer 组被创建和使用。
+description: 您可以深入了解组织中的 yammer 组活动, 并查看正在创建和使用的 yammer 组的数量。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 07ec3db93088dd00af1b8595e5d059fc2cede774
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576022"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522025"
 ---
 # <a name="yammer-groups-activity-reports"></a>Yammer 组活动报表
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-可以在组织中获得的 Yammer 组活动见解并查看多少个 Yammer 组被创建和使用。
+您可以深入了解组织中的 yammer 组活动, 并查看正在创建和使用的 yammer 组的数量。
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Yammer 组活动](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)。
 

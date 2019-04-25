@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 90f5305e2fb52b5ecd184aad837f2c9d8f6334ef
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970098"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527110"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -26,7 +26,7 @@ ms.locfileid: "30970098"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 |委派（工作或学校帐户）||
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **载入** | DeviceManagementManagedDevices.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
@@ -68,7 +68,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备类别的唯一标识符。 只读。|
+|id|字符串|设备类别的唯一标识符。 只读。|
 |**载入**|
 |description|String|设备类别的可选说明。|
 |displayName|String|设备类别的显示名称。|

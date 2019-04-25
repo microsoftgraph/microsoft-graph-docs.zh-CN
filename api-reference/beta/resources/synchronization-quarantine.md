@@ -1,28 +1,28 @@
 ---
 title: synchronizationQuarantine 资源类型
-description: 提供有关 synchronizationJob 的隔离状态信息。
+description: 提供有关 synchronizationJob 的隔离状态的信息。
 localization_priority: Normal
 ms.openlocfilehash: 6d5d5c3cbe96eda6b39833287e8efb6e0771b19a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518812"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523213"
 ---
 # <a name="synchronizationquarantine-resource-type"></a>synchronizationQuarantine 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供有关[synchronizationJob](synchronization-synchronizationjob.md)的隔离状态信息。
+提供有关[synchronizationJob](synchronization-synchronizationjob.md)的隔离状态的信息。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|currentBegan|DateTimeOffset|日期和时间隔离上次计算施加。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|nextAttempt|DateTimeOffset|日期和时间时将进行下次尝试重新评估隔离邮箱。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|Reason|String|表示隔离邮箱已施加为何代码。 可取值为：`EncounteredBaseEscrowThreshold`、`EncounteredTotalEscrowThreshold`、`EncounteredEscrowProportionThreshold`、`EncounteredQuarantineException`、`Unknown`。|
-|seriesBegan|DateTimeOffset|日期和时间首先本系列 （series 启动时隔离首先施加，并将重置为提升隔离） 施加隔离邮箱。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|seriesCount|Int64|次数隔离此系列中的已被重新计算并左实际上 （系列启动时隔离首先施加，并将重置为提升隔离）。|
+|currentBegan|DateTimeOffset|上次评估和实施隔离的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|nextAttempt|DateTimeOffset|将进行下次尝试重新评估隔离的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|在于|String|表示为什么强制实施隔离的代码。 可取值为：`EncounteredBaseEscrowThreshold`、`EncounteredTotalEscrowThreshold`、`EncounteredEscrowProportionThreshold`、`EncounteredQuarantineException` 或 `Unknown`。|
+|seriesBegan|DateTimeOffset|本系列首次实施隔离的日期和时间 (在首次实施隔离时, 系列会启动, 并且在提升隔离后立即重置)。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|seriesCount|Int64|本系列中的次数隔离已重新评估并生效 (当第一次实施隔离时, 系列会启动, 并在提升隔离后立即重置)。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

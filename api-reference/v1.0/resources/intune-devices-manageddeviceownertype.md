@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ad4a0df5e0fc79aec75245d908f505e824ce788d
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258651"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522613"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>managedDeviceOwnerType 枚举类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30258651"
 |:---|:---|:---|
 |unknown|0|陌生.|
 |公司|1|由公司负责。|
-|personal|双面|归某人所有。|
+|personal|2 |归某人所有。|
 
 
 

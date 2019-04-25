@@ -1,13 +1,13 @@
 ---
 title: timeZoneInformation 资源类型
-description: 表示时区。 受支持的格式，Windows 和 Internet 分配号码证书颁发机构 (IANA) 时间区域 （也称为 Olson 时间区域）
+description: 表示时区。 受支持的格式为 Windows, Internet 分配的号码颁发机构 (IANA) 时区 (也称为 "Olson 时区")
 localization_priority: Normal
 ms.openlocfilehash: a63721de7ed4e8c3f3b74ce5954a88ee71a95414
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526772"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523027"
 ---
 # <a name="timezoneinformation-resource-type"></a>timeZoneInformation 资源类型
 

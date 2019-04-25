@@ -3,11 +3,11 @@ title: synchronizationSchedule 资源类型
 description: 定义用于运行 synchronizationJob 的计划。
 localization_priority: Normal
 ms.openlocfilehash: 0e9714e4833c5586e54c8d812a0d72e41a513e5b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515585"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525962"
 ---
 # <a name="synchronizationschedule-resource-type"></a>synchronizationSchedule 资源类型
 
@@ -18,8 +18,8 @@ ms.locfileid: "29515585"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|到期|DateTimeOffset|日期和时间时，此作业将过期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|interval|持续时间|同步迭代之间的间隔。|
+|时间|DateTimeOffset|此作业将到期的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|interval|持续时间|同步迭代之间的时间间隔。|
 |state|String| 可取值为：`Active`、`Disabled`。|
 
 ## <a name="json-representation"></a>JSON 表示形式

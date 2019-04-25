@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7490ad7b27d55fa6f2b7c6de12083025e7b4ac93
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523880"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>iosMinimumOperatingSystem 资源类型
 
@@ -20,11 +20,11 @@ ms.locfileid: "30254567"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|v8_0|Boolean|版本 8.0 或更高版本。|
-|v9_0|Boolean|版本 9.0 或更高版本。|
-|v10_0|Boolean|版本 10.0 或更高版本。|
+|v8_0|布尔值|版本 8.0 或更高版本。|
+|v9_0|布尔值|版本 9.0 或更高版本。|
+|v10_0|布尔值|版本 10.0 或更高版本。|
 |v11_0|布尔值|版本 11.0 或更高版本。|
-|v12_0|Boolean|版本12.0 或更高版本。|
+|v12_0|布尔值|版本12.0 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 5878c3b0ac324592204310c80458744e4e54c446
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916388"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524160"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 将组添加到当前用户的收藏夹组列表中。仅支持 Office 365 组。
@@ -53,7 +53,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": false

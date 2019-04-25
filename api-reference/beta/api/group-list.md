@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 4967fd5b84f1329836b6a3e3e5dc7ba7b08ee19a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520618"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502104"
 ---
 # <a name="list-groups"></a>列出组
 
@@ -40,12 +40,14 @@ GET /groups
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-若要仅列出 Office 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：<!-- { "blockType": "ignored" } -->
+若要仅列出 Office 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-可以使用 OData 查询选项 `$orderby`，按 **displayName** 值对组织中的组进行排序，如下面的示例所示：<!-- { "blockType": "ignored" } -->
+可以使用 OData 查询选项 `$orderby`，按 **displayName** 值对组织中的组进行排序，如下面的示例所示：
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```
@@ -76,7 +78,7 @@ GET https://graph.microsoft.com/beta/groups
 
 #### <a name="response-1"></a>响应 1
 下面是一个响应示例。
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 在实际调用中会返回每个组的所有默认属性。
+>**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 在实际调用中会返回每个组的所有默认属性。
 
 <!-- {
   "blockType": "response",

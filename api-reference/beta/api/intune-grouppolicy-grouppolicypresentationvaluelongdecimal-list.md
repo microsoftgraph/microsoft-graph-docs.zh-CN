@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6ca9b2a632dc8fce4756979b95518eb2d637ca61
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783519"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32530597"
 ---
 # <a name="list-grouppolicypresentationvaluelongdecimals"></a>列出 groupPolicyPresentationValueLongDecimals
 

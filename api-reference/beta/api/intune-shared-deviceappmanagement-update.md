@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 6067640d883e771d79e925fd0bcf87c2857c2c0c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967900"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527201"
 ---
 # <a name="update-deviceappmanagement"></a>更新 deviceAppManagement
 
@@ -25,7 +25,7 @@ ms.locfileid: "30967900"
 |:---|:---|
 | 委派（工作或学校帐户） | |
 | &nbsp;&nbsp; **应用**、**图书**或**加入** | DeviceManagementApps.ReadWrite.All |
-| &nbsp; &nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序 | 不支持。 |
 

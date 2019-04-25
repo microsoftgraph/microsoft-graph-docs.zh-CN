@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a37bcaca250c868d360ef1e73f9a9a5109de3b0e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807516"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32530912"
 ---
 # <a name="list-grouppolicypresentationmultitextboxes"></a>列出 groupPolicyPresentationMultiTextBoxes
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e781e1c58427ea166f77f3c250e572cbd3520210
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571233"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525227"
 ---
 # <a name="enablement-enum-type"></a>启用的枚举类型
 
@@ -24,4 +24,4 @@ ms.locfileid: "30571233"
 |:---|:---|:---|
 |notConfigured|0|设备默认值, 无意向。|
 |enabled|1|启用设备上的设置。|
-|禁用|双面|禁用设备上的设置。|
+|禁用|2 |禁用设备上的设置。|

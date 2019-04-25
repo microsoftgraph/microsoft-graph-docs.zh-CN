@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 74b03555456c058411c9a50c7392f29fe60d3aed
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799543"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524510"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>edgeKioskModeRestrictionType 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31799543"
 |:---|:---|:---|
 |notConfigured|0|未配置 (无限制)。|
 |digitalSignage|1|单应用模式中的交互/数字告示。|
-|normalMode|双面|正常模式 (Microsoft Edge 的完整版本)。|
-|publicBrowsingSingleApp|第三章|单应用模式中的公共浏览。|
-|publicBrowsingMultiApp|4|多应用模式中的公共浏览 (inPrivate)。|
+|normalMode|2 |正常模式 (Microsoft Edge 的完整版本)。|
+|publicBrowsingSingleApp|3 |单应用模式中的公共浏览。|
+|publicBrowsingMultiApp|4 |多应用模式中的公共浏览 (inPrivate)。|
 
 
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: cd9bf69fcb458c40c8506ccf2a7d401793e8fbef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928078"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525444"
 ---
 # <a name="update-plannertaskdetails"></a>更新 plannertaskdetails
 
@@ -40,8 +40,8 @@ PATCH /planner/tasks/{id}/details
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|任务上的检查表项目集合。|
-|说明|String|任务描述|
-|previewType|string|这将设置显示任务的预览的类型。 可能的值为： `automatic`， `noPreview`， `checklist`， `description`， `reference`。 当设置为`automatic`显示的预览选择应用程序查看任务。|
+|description|String|任务描述|
+|previewType|string|这将设置显示在任务上的预览类型。 可能的值包括 `automatic`、`noPreview`、`checklist`、`description`、`reference`。 将设置为`automatic`显示的预览由查看任务的应用程序选择。|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|任务上的引用集合。|
 
 ## <a name="response"></a>响应

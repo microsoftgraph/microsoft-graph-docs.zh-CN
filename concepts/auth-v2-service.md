@@ -5,11 +5,11 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4a24d40ea40b24d172a7202f98dc734f4ecead77
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760914"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521926"
 ---
 # <a name="get-access-without-a-user"></a>在没有用户的情况下获取访问权限
 

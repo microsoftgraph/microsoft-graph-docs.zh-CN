@@ -1,26 +1,26 @@
 ---
 title: referencedObject 资源类型
-description: 介绍在相同的目录定义中定义的另一个对象的引用。
+description: 描述对在同一目录定义中定义的另一个对象的引用。
 localization_priority: Normal
 ms.openlocfilehash: dcec232335fdf3d447097ea1ae87fbc9ea676cfe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523235"
 ---
 # <a name="referencedobject-resource-type"></a>referencedObject 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-介绍在相同的[目录定义](synchronization-directorydefinition.md)中定义的另一个对象的引用。
+描述对在同一[目录定义](synchronization-directorydefinition.md)中定义的另一个对象的引用。
 
 ## <a name="properties"></a>属性
 
 | 属性                   | 类型                      | 说明    |
 |:---------------------------|:--------------------------|:---------------|
-|referencedObjectName        |String                     |引用对象的名称。 必须匹配一个[目录定义](synchronization-directorydefinition.md)中的对象。|
-|referencedProperty          |String                     |**当前不支持**。 中引用的对象，其中的值用作引用的属性的名称。|
+|referencedObjectName        |String                     |引用的对象的名称。 必须与[目录定义](synchronization-directorydefinition.md)中的一个对象相匹配。|
+|referencedProperty          |String                     |**目前不支持**。 引用的对象中属性的名称, 其值将用作引用。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

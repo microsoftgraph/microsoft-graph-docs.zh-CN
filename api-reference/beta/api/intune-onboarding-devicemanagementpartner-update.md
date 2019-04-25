@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 485ade7cb0e1eb2d99740d0e59c1b67ae3509ccb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32528790"
 ---
 # <a name="update-devicemanagementpartner"></a>更新 deviceManagementPartner
 

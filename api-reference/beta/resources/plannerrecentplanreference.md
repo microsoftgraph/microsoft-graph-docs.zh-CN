@@ -1,29 +1,29 @@
 ---
 title: plannerRecentPlanReference 资源类型
-description: '**PlannerRecentPlanReference**资源类型代表最近已由用户查看 plannerPlan 的引用。 '
+description: '**plannerRecentPlanReference**资源类型代表一个对用户最近查看过的 plannerPlan 的引用。 '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 55ccf34055d7d181dbbeecd5b6c30a3843f211d5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509159"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522151"
 ---
 # <a name="plannerrecentplanreference-resource-type"></a>plannerRecentPlanReference 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerRecentPlanReference**资源类型代表最近已由用户查看[plannerPlan](plannerplan.md)的引用。 **PlannerRecentPlanReferences**用户明确维护应用程序中。 用户上次查看的计划和更新**plannerRecentPlanReference**条目相应时，应记录实现最新的计划功能任何应用程序。
-应用程序应注意**plannerRecentPlanReference**条目可以引用**plannerPlans**的被删除，用户不再可以访问，或已更新具有不同的标题。
-建议的应用程序差异时通知用户，并保持最新条目。
+**plannerRecentPlanReference**资源类型代表一个对用户最近查看过的[plannerPlan](plannerplan.md)的引用。 用户的**plannerRecentPlanReferences**由应用程序显式维护。 任何实现最近计划功能的应用程序都应记录用户上次查看计划的时间, 并相应地更新**plannerRecentPlanReference**项。
+应用应注意, **plannerRecentPlanReference**条目可以引用已删除的**plannerPlans** 、用户无法再访问或已使用其他标题进行更新。
+我们建议应用在存在差异时通知用户, 并将这些条目保持为最新。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|lastAccessedDateTime|DateTimeOffset|日期和时间计划上次查看的用户。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|planTitle|String|标题时计划的用户查看它。|
+|lastAccessedDateTime|DateTimeOffset|用户上次查看计划的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|planTitle|String|用户查看计划时的标题。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b777452b627208d8e2dd726815f321075e5745ae
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794013"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522382"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>deviceRegistrationState 枚举类型
 
@@ -23,13 +23,13 @@ ms.locfileid: "31794013"
 |成员|值|说明|
 |:---|:---|:---|
 |notRegistered|0|设备未注册。|
-|注册|双面|设备已注册。|
-|吊销|第三章|设备已被阻止、已擦除或已停用。|
-|keyConflict|4|设备有键冲突。|
-|approvalPending|5|设备正在等待审批。|
-|certificateReset|型|设备证书已重置。|
-|notRegisteredPendingEnrollment|步|设备未注册且未完成注册。|
-|unknown|utf-8|设备注册状态未知。|
+|注册|2 |设备已注册。|
+|吊销|3 |设备已被阻止、已擦除或已停用。|
+|keyConflict|4 |设备有键冲突。|
+|approvalPending|5 |设备正在等待审批。|
+|certificateReset|6 |设备证书已重置。|
+|notRegisteredPendingEnrollment|7 |设备未注册且未完成注册。|
+|unknown|8 |设备注册状态未知。|
 
 
 

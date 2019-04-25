@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 03f4fcc1c16c09a4e510034a83c300733ac2767c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788000"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523677"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>windowsStartMenuModeType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31788000"
 |:---|:---|:---|
 |定制|0|用户定义。 默认值。|
 |全屏|1|全屏。|
-|nonFullScreen|双面|非全屏。|
+|nonFullScreen|2 |非全屏。|
 
 
 

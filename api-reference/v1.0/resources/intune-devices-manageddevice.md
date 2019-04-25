@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3672e9a03c3259c56744a9c786cf6b1b8eacc7f4
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255561"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522627"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
@@ -47,7 +47,7 @@ ms.locfileid: "30255561"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|设备唯一标识符|
+|id|String|设备唯一标识符|
 |userId|String|与设备关联的用户的唯一标识符|
 |deviceName|String|设备的名称|
 |managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是 "公司" 或 "个人"。 可取值为：`unknown`、`company`、`personal`。|
@@ -81,7 +81,7 @@ ms.locfileid: "30255561"
 |manufacturer|String|设备的制造商|
 |imei|String|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
-|serialNumber|String|序列号|
+|serialNumber|字符串|序列号|
 |phoneNumber|String|设备的电话号码|
 |androidSecurityPatchLevel|String|Android 安全修补程序级别|
 |userDisplayName|String|用户显示名称|

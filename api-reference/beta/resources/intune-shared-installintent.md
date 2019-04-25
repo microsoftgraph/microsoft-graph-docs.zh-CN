@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 13436f259e254463874fe03217025380735e9b26
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777576"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525234"
 ---
 # <a name="installintent-enum-type"></a>installIntent 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31777576"
 |:---|:---|:---|
 |可用|0|可用的安装意图。|
 |必需|1|必需的安装意图。|
-|卸除|双面|卸载安装意向。|
-|availableWithoutEnrollment|第三章|在没有注册安装意向的情况下可用。|
+|卸除|2 |卸载安装意向。|
+|availableWithoutEnrollment|3 |在没有注册安装意向的情况下可用。|
 
 
 

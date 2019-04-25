@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7a4a0ce7a09dc08496c6c04f528b6d1c7a6515f0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988908"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524898"
 ---
 # <a name="get-iosvppebookassignment"></a>获取 iosVppEBookAssignment
 

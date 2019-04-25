@@ -1,25 +1,25 @@
 ---
 title: stringKeyStringValuePair 资源类型
-description: 表示其中的密钥是一个字符串，值为字符串的键 / 值对。
+description: 表示键值对, 其中键是字符串, 值是字符串。
 localization_priority: Normal
 ms.openlocfilehash: f91d63ee4b4d3b0328bbb6fbe58c74ec8f78c5b2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520219"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526270"
 ---
 # <a name="stringkeystringvaluepair-resource-type"></a>stringKeyStringValuePair 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示其中的密钥是一个字符串，值为字符串的键 / 值对。
+表示键值对, 其中键是字符串, 值是字符串。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |Key|String|键。|
-|值|String|值。|
+|value|String|值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

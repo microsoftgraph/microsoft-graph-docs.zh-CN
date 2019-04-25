@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 3127ca7804883c5e29fe91cf5e21bb15240a1314
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972807"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526946"
 ---
 # <a name="update-reportroot"></a>更新 reportRoot
 

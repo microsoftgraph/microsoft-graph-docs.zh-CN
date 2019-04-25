@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 465b07ba286b9ee3a58132424be2a25b1c7e564e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156054"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526697"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>officeClientCheckinStatus 资源类型
 
@@ -21,14 +21,14 @@ ms.locfileid: "30156054"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|userPrincipalName|字符串|使用设备的用户主体名称。|
+|userPrincipalName|String|使用设备的用户主体名称。|
 |deviceName|String|尝试签入的设备名称。|
-|devicePlatform|字符串|尝试签入的设备平台。|
-|devicePlatformVersion|字符串|尝试签入的设备平台版本。|
-|wasSuccessful|布尔|如果上一次签入成功。|
-|userId|字符串|使用设备的用户标识符。|
+|devicePlatform|String|尝试签入的设备平台。|
+|devicePlatformVersion|String|尝试签入的设备平台版本。|
+|wasSuccessful|布尔值|如果上一次签入成功。|
+|userId|String|使用设备的用户标识符。|
 |checkinDateTime|DateTimeOffset|UTC 格式的上次设备签入时间。|
-|errorMessage|字符串|如果与上次签入相关联, 则出现错误消息。|
+|errorMessage|String|如果与上次签入相关联, 则出现错误消息。|
 |appliedPolicies|String collection|上次签入到设备的策略列表。|
 
 ## <a name="relationships"></a>关系
