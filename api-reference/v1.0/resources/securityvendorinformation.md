@@ -5,29 +5,29 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: fb5dee36da08332fd5c36f7ee4e578cc9fb7deaa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945935"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549697"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation 资源类型
 
-包含有关安全产品/服务供应商、 提供商和 subprovider 详细信息 (例如，供应商 = Microsoft; 提供程序 = Windows Defender ATP; subProvider = AppLocker)。
+包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息 (例如, 供应商 = Microsoft; provider = Windows Defender ATP; subprovider = AppLocker)。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|提供程序 |字符串|特定提供程序 （产品/服务 — 不供应商公司）;例如，WindowsDefenderATP。|
-|providerVersion|字符串|提供程序或 subprovider，如果存在，生成警报的版本。 *Required*|
-|subProvider|字符串|特定 subprovider （下聚合提供程序）;例如，WindowsDefenderATP.SmartScreen。|
-|供应商 |字符串|警报供应商 (例如，Microsoft，Dell FireEye) 的名称。 *Required*|
+|provider |String|特定提供商 (产品/服务-非供应商公司);例如, WindowsDefenderATP。|
+|providerVersion|String|提供程序或 subprovider 的版本 (如果存在), 它将生成警报。 *必需*|
+|subProvider|String|特定 subprovider (在聚合提供程序下);例如, WindowsDefenderATP。|
+|提供 |String|通知供应商的名称 (例如, Microsoft、Dell、FireEye)。 *必需*|
 
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-下面是资源的 JSON 表示形式。
+folllowing 是资源的 JSON 表示形式。
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

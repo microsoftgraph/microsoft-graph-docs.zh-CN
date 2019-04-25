@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641552"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548199"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -70,7 +70,7 @@ ms.locfileid: "29641552"
 
 | 关系 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|calls           |[call](call.md) 集合                  |只读。可为 Null。|
+|calls           |[call](call.md) 集合                  |只读。 可为 Null。|
 |connectorGroup|[connectorGroup](connectorgroup.md)| 应用程序与 Azure AD 应用程序代理一起使用的 connectorGroup。 可为 Null。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) 集合|只读。可为 Null。|

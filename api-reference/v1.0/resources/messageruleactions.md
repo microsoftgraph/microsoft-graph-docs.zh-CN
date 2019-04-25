@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 33f1167d7317f941ebfa79b372e9cf575c14989b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914155"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548500"
 ---
 # <a name="messageruleactions-resource-type"></a>messageRuleActions 资源类型
 
@@ -21,14 +21,14 @@ ms.locfileid: "27914155"
 |:---------------|:--------|:----------|
 | assignCategories | String 集合 | 分配给邮件的类别列表。 |
 | copyToFolder | String | 将邮件复制到其中的文件夹的 ID。 |
-| delete | Boolean | 指示邮件是否应移动到“已删除项目”文件夹。 |
-| forwardAsAttachmentTo | [recipient](recipient.md) 集合 | 应以附件形式接收转发邮件的收件人的电子邮件地址。 |
+| delete | 布尔值 | 指示邮件是否应移动到“已删除项目”文件夹。 |
+| forwardAsAttachmentTo | [recipient](recipient.md) collection | 应以附件形式接收转发邮件的收件人的电子邮件地址。 |
 | forwardTo | [recipient](recipient.md) 集合 | 应接收转发邮件的收件人的电子邮件地址。 |
-| markAsRead | Boolean | 指示是否应将邮件标记为已读。 |
+| markAsRead | 布尔值 | 指示是否应将邮件标记为已读。 |
 | markImportance | importance | 设置邮件重要性，可以是：`low`、`normal`、`high`。 |
 | moveToFolder |  String| 邮件将移至其中的文件夹的 ID。 |
-| permanentDelete | Boolean | 指示邮件是否应永久删除且不保存到“已删除项目”文件夹。 |
-| redirectTo | [recipient](recipient.md) collection | 一条消息，应将重定向到电子邮件地址。 |
+| permanentDelete | 布尔值 | 指示邮件是否应永久删除且不保存到“已删除项目”文件夹。 |
+| redirectTo | [recipient](recipient.md) collection | 应将邮件重定向到的电子邮件地址。 |
 | stopProcessingRules | Boolean | 指示是否应对后续规则进行评估。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -1,43 +1,43 @@
 ---
 title: secureScores 资源类型
-description: '顶部 = n，其中 n = 要检索的数据的天数。 '
+description: 'top = n, 其中 n = 要检索的数据的天数。 '
 localization_priority: Normal
 ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640180"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549200"
 ---
 # <a name="securescores-resource-type"></a>secureScores 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表租户的租户和控制级别记分数据，每天安全分数。 默认情况下保留 90 天的数据。 此数据排序依据**createdDateTime**，从最新公开到最早。 这将允许您向页响应使用 $top = n，其中 n = 要检索的数据的天数。 
+表示租户和控制级别上的每日记分数据的租户安全分数。 默认情况下, 将保留90天的数据。 此数据按**createdDateTime**进行排序, 从最新到最早。 这将允许您使用 $top = n 对响应进行分页, 其中 n = 要检索的数据的天数。 
 
 
 ## <a name="methods"></a>方法
 
 | 方法   | 返回类型|说明|
 |:---------------|:--------|:----------|
-|[列出 secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |读取属性和 secureScores 对象的元数据。|
+|[列出 secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |读取 secureScores 对象的属性和元数据。|
 
 
 ## <a name="properties"></a>属性
-实体类型包含属性的租户安全得分 （每日快照数据）。
+包含租户安全分数 (每日快照数据) 的属性的实体类型。
 
 |属性 |类型 |说明 |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   GUID string 租户 id。  |
+|   azureTenantId   |   String  |   租户 ID 的 GUID 字符串。  |
 |   createdDateTime |   DateTimeOffset  |   创建实体的日期。  |
-|   id  |   String  |   AzureTenantId_createdDateTime 的组合。   |
-|   licensedUserCount   |   Int32   |   许可的给定租户的用户计数。    |
-|   activeUserCount |   Int32   |   给定租户的活动用户数。  |
-|   currentScore    |   双精度  |   在指定日期的租户当前获得分数。    |
-|   maxScore |  双精度  |   在指定日期租户最大得分。    |
-|   enabledServices |   String collection   |   租户 （例如，Exchange online、 Skype、 Sharepoint） 的 Microsoft 提供服务。   |
-|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)集合    |按不同的作用域 （例如，按行业，平均由安装的平均） 和控制类别 （Identity、 数据、 设备、 应用程序、 基础结构） 范围内的平均得分。 |
-|   controlScores | [controlScore](controlscore.md)集合  |   包含租户分数的一组控件。   |
+|   id  |   String  |   azureTenantId_createdDateTime 的组合。   |
+|   licensedUserCount   |   Int32   |   给定租户的许可用户计数。    |
+|   activeUserCount |   Int32   |   给定租户的活动用户计数。  |
+|   currentScore    |   双精度  |   租户当前在指定日期的得分。    |
+|   maxScore |  双精度  |   指定日期上可能的租户最大分数。    |
+|   enabledServices |   String collection   |   适用于租户的 Microsoft 提供的服务 (例如, Exchange online、Skype、Sharepoint)。   |
+|   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md)集合    |作用域内不同作用域 (例如, 按行业划分的平均分数、按座位的平均方式) 和控制类别 (标识、数据、设备、应用程序、基础结构)。 |
+|   controlScores | [controlScore](controlscore.md)集合  |   包含一组控件的租户分数。   |
 
 
 ## <a name="relationships"></a>关系

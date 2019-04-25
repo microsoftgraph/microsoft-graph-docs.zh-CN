@@ -1,30 +1,30 @@
 ---
 title: Members
-description: 介绍 teamsApp 的当前安装状态。
+description: 描述 teamsApp 的当前安装状态。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 82e46faccd2a91a82ba4fb7352391f58a42c33a9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517272"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554014"
 ---
 #<a name="teamsappinstalledstate-enum-type"></a>teamsAppInstalledState 枚举类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-介绍[teamsApp](teamsapp.md)的当前安装状态。
+描述[teamsApp](teamsapp.md)的当前安装状态。
 
 ## <a name="members"></a>成员
 
 | 成员 | 值| 说明 |
 |:---------------|:--------|:----------|
-|notInstalled|0%|应用程序并不安装到团队。|
-|Installed|$1|通常安装应用程序。|
-|installedAndHidden|-2|应用程序是安装，但从视图中隐藏。|
-|installedAndPermanent|-3|应用程序永久安装，并且不会删除。|
+|notInstalled|0|未将应用安装到团队。|
+|了|1|应用程序以正常方式安装。|
+|installedAndHidden|2 |已安装应用程序, 但已在视图中隐藏。|
+|installedAndPermanent|3 |应用程序永久安装且不可能删除。|
 <!--
 {
   "type": "#page.annotation",

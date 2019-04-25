@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 6cf4d6ed75427dce527ced6cb64d0cdcb9afed99
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949043"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548164"
 ---
 # <a name="contactfolder-resource-type"></a>contactFolder 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "27949043"
 |[获取 contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |通过使用联系人文件夹 ID 获取联系人文件夹。|
 |[更新](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |更新 contactFolder 对象。 |
 |[删除](../api/contactfolder-delete.md) | 无 |删除 contactFolder 对象。 |
-|[列出 childFolder](../api/contactfolder-list-childfolders.md) |[ContactFolder](contactfolder.md) 集合| 获取指定联系人文件夹下的子文件夹的集合。|
+|[列出 childFolder](../api/contactfolder-list-childfolders.md) |[ContactFolder](contactfolder.md) collection| 获取指定联系人文件夹下的子文件夹的集合。|
 |[创建子 ContactFolder](../api/contactfolder-post-childfolders.md) |[ContactFolder](contactfolder.md)| 创建新的 contactFolder 作为指定文件夹的子文件夹。|
 |[delta](../api/contact-delta.md)|[联系人](contact.md)集合| 获取用户邮箱中已添加、删除或移除的联系人文件夹集。|
 |[列出文件夹中的联系人](../api/contactfolder-list-contacts.md) |[联系人](contact.md) 集合| 从已登录用户的默认联系人文件夹 (`.../me/contacts`) 或指定的联系人文件夹中获取联系人集合。|
@@ -39,16 +39,16 @@ ms.locfileid: "27949043"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |displayName|String|文件夹的显示名称。|
-|id|String|联系人文件夹的唯一标识符。只读。|
+|id|字符串|联系人文件夹的唯一标识符。只读。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |childFolders|[ContactFolder](contactfolder.md) 集合|文件夹中的子文件夹集合。导航属性。只读。可为 Null。|
-|contacts|[联系人](contact.md) 集合|文件夹中的联系人。导航属性。只读。可为 Null。|
+|contacts|[Contact](contact.md) collection|文件夹中的联系人。导航属性。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为 contactFolder 定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,21 +1,21 @@
 ---
-title: 列表 workingWith
-description: 计算的洞察力进行的用户使用的用户列表。
+title: 列出 workingWith
+description: 对用户使用的用户列表计算出的洞察力。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ca5fdd4602d109d98002c0ef54fde5ad341e1903
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521619"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547688"
 ---
-# <a name="list-workingwith"></a>列表 workingWith
+# <a name="list-workingwith"></a>列出 workingWith
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-计算的洞察力进行的用户使用的用户列表。
+对用户使用的用户列表计算出的洞察力。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,7 +47,7 @@ GET /drive/root/lastModifiedByUser/workingWith
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在响应正文中返回的 200 OK 响应代码和[用户](../resources/user.md)对象的集合。
+如果成功, 此方法在响应正文中返回 200 OK 响应代码和[User](../resources/user.md)对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

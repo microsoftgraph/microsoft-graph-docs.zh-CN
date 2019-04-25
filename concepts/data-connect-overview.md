@@ -5,11 +5,11 @@ author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
 ms.openlocfilehash: 412cfa0fd5a4638d3831c3f23a4e6d943549cb9e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914288"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526165"
 ---
 # <a name="microsoft-graph-data-connect-preview"></a>Microsoft Graph 数据连接（预览）
 

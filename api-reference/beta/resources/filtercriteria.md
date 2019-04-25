@@ -3,15 +3,13 @@ title: FilterCriteria 资源类型
 description: 表示应用于列的筛选条件。
 localization_priority: Normal
 ms.openlocfilehash: 784615f6fce3dea5041772a15e3573c22dabdfd0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522446"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542324"
 ---
 # <a name="filtercriteria-resource-type"></a>FilterCriteria 资源类型
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示应用于列的筛选条件。
 
@@ -24,7 +22,7 @@ ms.locfileid: "29522446"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filterCriteria"
+  "@odata.type": "microsoft.graph.workbookFilterCriteria"
 }-->
 
 ```json
@@ -34,15 +32,28 @@ ms.locfileid: "29522446"
   "criterion2": "string",
   "dynamicCriteria": "string",
   "filterOn": "string",
-  "values": "string"
+  "icon": {"@odata.type": "microsoft.graph.workbookIcon"},
+  "values": {"@odata.type": "microsoft.graph.Json"}
 }
 
 ```
-<!--
-{
+
+<!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Error: /api-reference/beta/resources/filtercriteria.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'color' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'criterion1' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'criterion2' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'dynamicCriteria' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'filterOn' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'icon' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/filtercriteria.md:
+      Property 'values' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table."
   ]
-}
--->
+} -->

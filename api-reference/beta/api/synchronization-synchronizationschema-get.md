@@ -1,19 +1,19 @@
 ---
 title: 获取 synchronizationSchema
-description: 检索给定的同步作业或模板的架构。
+description: 检索给定同步作业或模板的架构。
 localization_priority: Normal
 ms.openlocfilehash: 050357c94997ca7a45d9ca09bf164638072d1354
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512491"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536997"
 ---
 # <a name="get-synchronizationschema"></a>获取 synchronizationSchema
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索给定的同步作业或模板的架构。
+检索给定同步作业或模板的架构。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -44,12 +44,12 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[synchronizationSchema](../resources/synchronization-synchronizationschema.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[synchronizationSchema](../resources/synchronization-synchronizationschema.md)对象。
 
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationschema"
@@ -59,9 +59,9 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。
+响应示例如下所示。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将返回实际呼叫中的所有属性。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性将在实际调用中返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

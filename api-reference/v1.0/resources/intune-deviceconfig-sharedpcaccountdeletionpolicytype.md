@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0c547a59c02e3c4cad9bd8140a2e11ca6e3c84a7
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253230"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534617"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 枚举类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30253230"
 |:---|:---|:---|
 |迫切|0|立即删除。|
 |diskSpaceThreshold|1|在磁盘空间阈值中删除。|
-|diskSpaceThresholdOrInactiveThreshold|双面|在磁盘空间阈值或非活动阈值中删除。|
+|diskSpaceThresholdOrInactiveThreshold|2 |在磁盘空间阈值或非活动阈值中删除。|
 
 
 

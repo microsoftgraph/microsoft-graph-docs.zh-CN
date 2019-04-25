@@ -1,23 +1,23 @@
 ---
-title: 列表 privilegedRoleAssignments
-description: 检索 privilegedRoleAssignment 对象，对应于组织的所有角色分配列表。
+title: 列出 privilegedRoleAssignments
+description: 检索 privilegedRoleAssignment 对象的列表, 这些对象对应于组织的所有角色分配。
 localization_priority: Normal
 ms.openlocfilehash: c576e0d9c0a278e02159e02cea94ddd927561e08
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516586"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538617"
 ---
-# <a name="list-privilegedroleassignments"></a>列表 privilegedRoleAssignments
+# <a name="list-privilegedroleassignments"></a>列出 privilegedRoleAssignments
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象，对应于组织的所有角色分配列表。
+检索[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象的列表, 这些对象对应于组织的所有角色分配。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-请求者需要拥有以下角色之一：_具有权限的角色管理员_、_全局管理员_、_安全管理员_或_安全读取器_。 
+请求者需要具有以下角色之一:_特权角色管理员_、_全局管理员_、_安全管理员_或_安全读者_。 
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,13 +43,13 @@ GET /privilegedRoleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[privilegedRoleAssignment](../resources/privilegedroleassignment.md)对象集合。
 
-请注意，需要将其注册到 PIM 租户。 否则，将返回的 HTTP 403 禁止访问状态代码。
+请注意, 需要将租户注册到 PIM。 否则, 将返回 HTTP 403 禁止的状态代码。
 ## <a name="examples"></a>示例
 ### <a name="get-all-role-assignments"></a>获取所有角色分配
 ##### <a name="request"></a>请求
-下面的示例演示请求以获取所有角色分配：
+下面的示例展示了获取所有角色分配的请求:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -58,7 +58,7 @@ GET /privilegedRoleAssignments
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,7 +85,7 @@ Content-length: 237
 ```
 ### <a name="get-active-role-assignments"></a>获取活动角色分配
 ##### <a name="request"></a>请求 
-下面的示例演示对查询的主动角色分配的请求：
+以下示例显示查询活动角色分配的请求:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -94,7 +94,7 @@ Content-length: 237
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,7 +129,7 @@ Content-length: 237
 ```
 ### <a name="get-permanent-role-assignments"></a>获取永久角色分配
 ##### <a name="request"></a>请求 
-下面的示例演示请求查询永久角色分配，其中``expirationDateTime``值是``null``:
+下面的示例演示了对查询永久角色分配的请求, ``expirationDateTime``其中 value ``null``是:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -138,7 +138,7 @@ Content-length: 237
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20eq%20null
 ```
 ##### <a name="response"></a>响应
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -171,9 +171,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-eligible-role-assignments"></a>获取合格的角色分配
+### <a name="get-eligible-role-assignments"></a>获取符合条件的角色分配
 ##### <a name="request"></a>请求 
-下面的示例演示向查询合格的角色分配，包括活动和非活动的请求：
+以下示例显示查询符合条件的角色分配 (包括活动的和非活动的角色分配) 的请求:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -182,7 +182,7 @@ Content-length: 237
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20ne%20null%20or%20isElevated%20eq%20false
 ```
 ##### <a name="response"></a>响应 
-以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+以下示例显示了相应的响应。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

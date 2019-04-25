@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: 06b25a6da159030407c904622ffebde09c704d98
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970477"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549018"
 ---
 # <a name="creating-a-group-with-a-microsoft-teams-team"></a>创建包含 Microsoft Teams 团队的组
 

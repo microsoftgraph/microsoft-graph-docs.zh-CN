@@ -1,26 +1,26 @@
 ---
 title: 创建 privilegedRoleAssignmentRequest
-description: 创建一个 privilegedroleassignmentrequest 对象。
+description: 创建 privilegedroleassignmentrequest 对象。
 localization_priority: Normal
 ms.openlocfilehash: e3158e918d061f09dec9e74c9e3bfd66d95fa48d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641685"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538642"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建一个[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)对象。
+创建[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | PrivilegedAccess 的 AzureAD、directory.accessasuser.all    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -36,39 +36,39 @@ POST /privilegedRoleAssignmentRequests
 | Authorization  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)对象的 JSON 表示形式。 
+在请求正文中, 提供[privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)对象的 JSON 表示形式。 
 
 | 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
 |roleId|String|角色的 ID。 此为必需属性。|
-|type|String|表示的角色分配操作的类型。 值可以是`AdminAdd`： 管理员将用户添加到角色;`UserAdd`： 用户将添加角色分配。 必需。|
-|assignmentState|String|工作分配状态。 值可以是`Eligible`合格分配`Active`-如果直接分配`Active`由管理员、 或激活合格工作分配的用户。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
-|原因|String|原因需要提供角色分配请求的审核和查看用途。|
-|计划|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的时间表。|
+|type|String|表示角色分配上的操作的类型。 值可以是`AdminAdd`: 管理员将用户添加到角色;`UserAdd`: 用户添加角色分配。 必需。|
+|assignmentState|String|工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的, 或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
+|在于|String|需要为角色分配请求提供审核和审阅目的的原因。|
+|设定|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的日程安排。|
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`201 Created`响应代码和响应正文中的[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)对象。
 
 ### <a name="error-codes"></a>错误代码
-此 API 返回的标准 HTTP 错误代码。 此外，它可以返回下表中列出的错误代码。
+此 API 返回该标准 HTTP 错误代码。 此外, 它还可以返回下表中列出的错误代码。
 
 |错误代码     | 错误消息              | 
 |:--------------------| :---------------------|
 | 400 BadRequest | RoleAssignmentRequest 属性为 NULL |
 | 400 BadRequest | 无法反序列化 roleAssignmentRequest 对象。 |
 | 400 BadRequest | RoleId 是必需的。 |
-| 400 BadRequest | 必须指定的计划开始日期和应大于立即。 |
-| 400 BadRequest | 计划已存在此用户、 角色和计划的类型。 |
-| 400 BadRequest | 挂起的审批已存在此用户、 角色和审批类型。 |
-| 400 BadRequest | 找不到请求程序原因。 |
-| 400 BadRequest | 请求程序原因应小于 500 个字符。 |
-| 400 BadRequest | 特权提升持续时间必须 0.5 之间以及 {从设置}。 |
-| 400 BadRequest | 没有计划的激活和请求之间的重叠。 |
-| 400 BadRequest | 已激活的角色。 |
-| 400 BadRequest | GenericElevateUserToRoleAssignments: Tickting 信息是所需和激活过程中未提供。 |
-| 400 BadRequest | 没有计划的激活和请求之间的重叠。 |
-| 未经授权的 403 | 特权提升需要多因素身份验证。 |
-| 未经授权的 403 | 不允许代表提升。 |
+| 400 BadRequest | 必须指定计划开始日期, 并且该日期应晚于现在。 |
+| 400 BadRequest | 此用户、角色和计划类型的计划已存在。 |
+| 400 BadRequest | 此用户、角色和审批类型已存在待批准的审批。 |
+| 400 BadRequest | 请求者原因缺失。 |
+| 400 BadRequest | 请求者原因不应超过500个字符。 |
+| 400 BadRequest | 提升持续时间必须介于0.5 和 {from setting} 之间。 |
+| 400 BadRequest | 计划激活和请求之间存在重叠。 |
+| 400 BadRequest | 角色已激活。 |
+| 400 BadRequest | GenericElevateUserToRoleAssignments: Tickting 信息是必需的, 并且在激活过程中不提供。 |
+| 400 BadRequest | 计划激活和请求之间存在重叠。 |
+| 403未经授权 | 提升需要多因素身份验证。 |
+| 403未经授权 | 代表提升是不允许的。 |
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -96,7 +96,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

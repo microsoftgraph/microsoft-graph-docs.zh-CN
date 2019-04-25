@@ -1,19 +1,19 @@
 ---
 title: 重新启动 synchronizationJob
-description: 重新启动同步作业，并强制对它对目录中的所有对象。 （可选） 将清除现有的同步状态和以前的错误。
+description: 重新启动同步作业, 强制它重新处理目录中的所有对象。 (可选) 清除现有同步状态和以前的错误。
 localization_priority: Normal
 ms.openlocfilehash: 169f95c3662fd774207584b54fcf27fb2548c795
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526723"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537097"
 ---
 # <a name="restart-synchronizationjob"></a>重新启动 synchronizationJob
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-重新启动同步作业，并强制对它对目录中的所有对象。 （可选） 将清除现有的同步状态和以前的错误。
+重新启动同步作业, 强制它重新处理目录中的所有对象。 (可选) 清除现有同步状态和以前的错误。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -38,7 +38,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，将一个 JSON 对象，提供以下参数。
+在请求正文中, 提供具有以下参数的 JSON 对象。
 
 | 参数     | 类型      | 说明    |
 |:--------------|:----------|:---------------|
@@ -46,12 +46,12 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 
 ## <a name="response"></a>响应
 
-如果成功，返回`204 No Content`响应。 它不返回任何响应正文中。
+如果成功, 则返回`204 No Content`响应。 它不在响应正文中返回任何内容。
 
 ## <a name="example"></a>示例
 
 ##### <a name="request"></a>请求
-下面是一个请求示例。
+请求示例如下所示。
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_restart"
@@ -69,7 +69,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>响应
-下面是响应的示例。
+响应示例如下所示。
 
 <!-- {
   "blockType": "response",

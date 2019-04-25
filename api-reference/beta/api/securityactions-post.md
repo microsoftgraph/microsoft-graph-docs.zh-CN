@@ -4,12 +4,12 @@ description: 创建新的 securityAction 对象。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c8f9e98e57a351bd17776c77449f7d1ff8d8a897
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 2d8b957df914225231623f0edbc633182393dff8
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482012"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545561"
 ---
 # <a name="create-securityaction"></a>创建 securityAction
 
@@ -23,7 +23,7 @@ ms.locfileid: "30482012"
 
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
-| 委派（工作或学校帐户）     | SecurityActions.ReadWrite.All |
+| 委派（工作或学校帐户）     | 不支持。 |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
 | 应用程序                            | SecurityActions.ReadWrite.All |
 
@@ -81,7 +81,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。
+下面展示了示例响应。
 
 > [!NOTE]
 > 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。

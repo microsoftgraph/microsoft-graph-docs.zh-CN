@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 83d1f6e52e11afc60c84977676279ae02182e047
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972584"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550432"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -22,7 +22,7 @@ ms.locfileid: "27972584"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduRoster.ReadBasic  |
 |委派（个人 Microsoft 帐户） |  不支持  |
-|应用程序 | EduRoster.Read.All、 EduRoster.ReadWrite.All 以及 Member.Read.Hidden | 
+|Application | eduroster.read.all, eduroster.read.all, all + Member。 read. Hidden | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

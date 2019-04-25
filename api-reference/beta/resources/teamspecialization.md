@@ -1,32 +1,32 @@
 ---
 title: teamSpecialization 枚举类型
-description: 描述为团队的特殊的使用情况。
+description: 描述团队的特殊用例。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c89f3ef993e55e28f5558f99c3ef87ad5174bc65
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640320"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553650"
 ---
 # <a name="teamspecialization-enum-type"></a>teamSpecialization 枚举类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-指示是否[团队](../resources/team.md)适用于特定用例。 每个[团队](../resources/team.md)具专业性有权访问唯一行为和针对其用例的体验。 默认值为无。
+指示[团队](../resources/team.md)是否适用于特定用例。 每个[团队](../resources/team.md)特殊化都有权访问针对其用例的独特行为和体验。 默认值为 "无"。
 
 ## <a name="members"></a>成员
 
 | 成员             | 值 | 说明                                                                |
 | :----------------- | :---- | :------------------------------------------------------------------------- |
-| 无               | 0     | 默认为团队通过该组件的标准团队体验的类型。          |
-| educationStandard  | 1     | 培训用户创建的团队。 培训用户创建的所有团队都是类型 Edu。 |
-| educationClass     | 2     | 团队优化类的体验。 这样跨 O365 细分的功能。 |
-| educationProfessionalLearningCommunity | 3 | 针对 PLC 优化工作组体验。 了解有关 PLC[此处](https://en.wikipedia.org/wiki/Professional_learning_community)。 |
-| educationStaff     | 4     |  为了优化的员工在组织中，员工主持人，如主体，其中是管理员，教师体验团队类型是附带专用笔记本团队中的成员。 有关详细信息，请参阅[面向教育机构的 OneNote 员工笔记本](https://www.onenote.com/staffnotebookedu)。 |
-| unknownFutureValue | 7     | Sentinel 保留作为以供将来扩展枚举的占位符值。 |
+| 无               | 0     | 团队的默认类型, 可提供标准团队体验。          |
+| educationStandard  | 1     | 由教育用户创建的团队。 教育用户创建的所有团队都属于 Edu 类型。 |
+| educationClass     | 2      | 针对某个类进行了优化的团队体验。 这样可以跨 O365 分段功能。 |
+| educationProfessionalLearningCommunity | 3  | 为 PLC 优化的团队体验。 [在此处](https://en.wikipedia.org/wiki/Professional_learning_community)了解有关 PLC 的详细信息。 |
+| educationStaff     | 4      |  对于组织中员工的优化体验的团队类型, 员工主管 (如主体) 是管理员, 而教师是一个专门的笔记本提供的团队成员。 有关更多详细信息, 请参阅[OneNote 教职员工笔记本教育](https://www.onenote.com/staffnotebookedu)版。 |
+| 向 unknownfuturevalue | 7      | 将 Sentinel 值保留为占位符, 以便将来扩展枚举。 |
 <!-- {
   "type": "#page.annotation",
   "suppressions": [

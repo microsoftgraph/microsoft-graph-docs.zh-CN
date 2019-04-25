@@ -6,11 +6,11 @@ title: 同步驱动器的内容
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: fc1a5a3823b41cf0729ad6a12f56eed8673bbd58
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480514"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548045"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
 

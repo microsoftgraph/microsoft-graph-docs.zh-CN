@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6fa6a896644e83be4acd55755baad9b9494ffee3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782469"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547037"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>windowsAutopilotSyncStatus 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31782469"
 |:---|:---|:---|
 |unknown|0|未知同步状态|
 |inProgress|1|正在进行同步|
-|后|双面|同步已完成。|
-|未能|第三章|同步失败。|
+|后|2 |同步已完成。|
+|未能|3 |同步失败。|
 
 
 

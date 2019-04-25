@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 31f8e078f7695a115ce92d6d3f687d41a13831fc
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806298"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553916"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>macOsVppAppAssignedLicense 资源类型
 
@@ -31,7 +31,7 @@ MacOS Volume Purchase Program 许可证分配。 此类不支持创建、删除�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |userEmailAddress|String|用户电子邮件地址。|
 |userId|String|用户 ID。|
 |userName|String|用户名。|

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5e9a6a6ca8be6f1aa950ce692242cbed2099beaf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804156"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549392"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>autoRestartNotificationDismissalMethod 枚举类型
 
@@ -24,7 +24,7 @@ Auto restart 必需的通知开除方法
 |:---|:---|:---|
 |notConfigured|0|未配置|
 |自动|1|自动开除|
-|user|双面|用户开除|
+|user|2 |用户开除|
 
 
 

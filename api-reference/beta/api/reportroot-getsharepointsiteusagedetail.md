@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 5571cd63a136521aed989c3d3222430591f6e7bb
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573107"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537864"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -27,7 +27,7 @@ ms.locfileid: "29573107"
 | :------------------------------------- | :--------------------------------------- |
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
-| 应用                            | Reports.Read.All                         |
+| 应用程序                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -40,7 +40,7 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 
 ## <a name="function-parameters"></a>函数参数
 
-在请求 URL 中，提供以下参数之一的有效值。
+在请求 URL 中，提供以下任一参数的有效值。
 
 | 参数 | 类型   | 说明                              |
 | :-------- | :----- | :--------------------------------------- |
@@ -49,7 +49,7 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 
 > **注意：** 需要在 URL 中设置 period 或 date。
 
-此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型是文本/csv。 但是，如果您想要指定输出类型，您可以使用 OData $format 查询参数设置为 text/csv 或应用程序/json。
+此方法支持使用 `$format`、`$top` 和 `$skipToken` [OData 查询参数](/graph/query-parameters)自定义响应。 默认输出类型为 text/csv。 但是, 如果要指定输出类型, 则可以使用 OData $format 查询参数设置为 text/csv 或 application/json。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -63,7 +63,7 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 
 如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。 可以在响应的 `Location` 头中找到此 URL。
 
-预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。
+预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 标头。
 
 CSV 文件包含下面的列标题：
 
@@ -84,15 +84,15 @@ CSV 文件包含下面的列标题：
 
 ### <a name="json"></a>JSON
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的**[sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md)** 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和**[sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md)** 对象。
 
-为此请求的默认页面大小是 200 个项目。
+此请求的默认页面大小为200个项目。
 
 ## <a name="example"></a>示例
 
 ### <a name="csv"></a>CSV
 
-下面是输出 CSV 示例。
+下面是输出 CSV 的示例。
 
 #### <a name="request"></a>请求
 
@@ -136,7 +136,7 @@ Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity
 
 ### <a name="json"></a>JSON
 
-下面是返回 JSON 的示例。
+下面是一个返回 JSON 的示例。
 
 #### <a name="request"></a>请求
 

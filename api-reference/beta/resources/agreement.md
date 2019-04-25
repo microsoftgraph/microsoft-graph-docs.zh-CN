@@ -1,28 +1,28 @@
 ---
 title: 协议资源类型
-description: 表示一个租户的可自定义的创建和管理与 Azure Active Directory (Azure AD) 使用协议条款。 可以使用以下方法来创建和管理 Azure Active Directory 使用条款的功能，根据您的方案。
+description: 表示租户的可自定义使用条款协议, 它是使用 azure Active Directory (azure AD) 创建和管理的。 您可以根据您的方案使用以下方法来创建和管理 Azure Active Directory 使用条款功能。
 localization_priority: Normal
 ms.openlocfilehash: b253877f1bf82e4fbc61cebaef3c1bce208d9cca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513849"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535745"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示一个租户的可自定义的创建和管理与 Azure Active Directory (Azure AD) 使用协议条款。 可以使用以下方法来创建和管理[Azure Active Directory 使用条款的功能](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou)，根据您的方案。
+表示租户的可自定义使用条款协议, 它是使用 azure Active Directory (azure AD) 创建和管理的。 您可以根据您的方案使用以下方法来创建和管理[Azure Active Directory 使用条款功能](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou)。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [创建协议](../api/agreement-post-agreements.md) | [协议](agreement.md) | 通过发布到协议集合中创建新的协议。 |
-| [列表协议](../api/agreement-list.md) | [协议](agreement.md)集合 | 获取协议对象集合。 |
-| [获取协议](../api/agreement-get.md) | [协议](agreement.md) | 读取属性和协议对象的关系。 |
-| [更新协议](../api/agreement-update.md) | [协议](agreement.md) | 更新协议对象。 |
+| [创建协议](../api/agreement-post-agreements.md) | [本](agreement.md) | 通过发布到协议集合创建新协议。 |
+| [列出协议](../api/agreement-list.md) | [协议](agreement.md)集合 | 获取一个协议对象集合。 |
+| [获取协议](../api/agreement-get.md) | [本](agreement.md) | 读取协议对象的属性和关系。 |
+| [更新协议](../api/agreement-update.md) | [本](agreement.md) | 更新协议对象。 |
 | [删除协议](../api/agreement-delete.md) | 无 | 删除协议对象。 |
 <!--
 | [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
@@ -32,14 +32,14 @@ ms.locfileid: "29513849"
 ## <a name="properties"></a>属性
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|displayName|String|协议中的显示名称。|
+|displayName|String|协议的显示名称。|
 |id|String| 只读。|
-|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否能够展开和查看接受之前协议。|
+|isViewingBeforeAcceptanceRequired|布尔值|指示用户是否必须在接受前展开并查看协议。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|files|[agreementFile](agreementfile.md)集合|只读。 Pdf 链接到此协议。|
+|files|[agreementFile](agreementfile.md)集合|只读。 链接到此协议的 pdf。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

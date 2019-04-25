@@ -3,11 +3,11 @@ title: 删除 servicePrincipal
 description: 删除 servicePrincipal。
 localization_priority: Normal
 ms.openlocfilehash: 962b430043bd408438488f80a9409f65d7375f0d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528779"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537481"
 ---
 # <a name="delete-serviceprincipal"></a>删除 servicePrincipal
 
@@ -21,7 +21,7 @@ ms.locfileid: "29528779"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Application.ReadWrite.OwnedBy Application.ReadWrite.All |
+|应用程序 | Application.ReadWrite.OwnedBy、Application.ReadWrite.All、Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

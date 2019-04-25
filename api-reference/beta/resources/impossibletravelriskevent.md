@@ -1,53 +1,53 @@
 ---
 title: impossibleTravelRiskEvent 资源类型
-description: 检测到的 Azure Active Directory 标识保护其中两个帐户登录发生从用户在典型的位置，并将不可能要登录宏的完整信息之间的工期中的位置之间的差旅风险事件Azure AD 身份保护文档中找不到风险事件。
+description: Azure Active Directory 标识保护检测到的风险事件, 其中两个帐户登录从用户的非典型位置发生, 并且在登录之间的持续时间之间无法进行移动。有关详细信息, 请参阅可在 Azure AD Identity Protection 文档中找到风险事件。
 localization_priority: Normal
 ms.openlocfilehash: 517a09963570ce2c4a9e58edf7b73babaaff0426
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529381"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548325"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>impossibleTravelRiskEvent 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检测到的[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)其中两个帐户登录发生从用户在典型的位置，并将不可能要登录宏完成之间的工期中的位置之间的差旅风险事件[Azure AD 身份保护文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)中，可以找到有关风险事件的信息。
+[Azure Active Directory 标识保护](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/)检测到的风险事件, 其中两个帐户登录从用户的非典型位置发生, 并且在登录之间的持续时间之间无法进行移动。完成有关风险事件的信息可以在[Azure AD Identity Protection 文档](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/)中找到。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |读取属性和 impossibleTravelRiskEvent 对象的关系。|
+|[获取 impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |读取 impossibleTravelRiskEvent 对象的属性和关系。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|closedDateTime|dateTimeOffset| 日期和时间的风险事件已关闭|
-|createdDateTime|dateTimeOffset| 日期和时间的风险事件的创建。 始终是大于或等于风险事件本身的 datetime。 这是正确的属性，以用作筛选器时查询风险事件。|
+|closedDateTime|dateTimeOffset| 风险事件关闭的日期和时间|
+|createdDateTime|dateTimeOffset| 风险事件的创建日期和时间。 此值始终大于或等于风险事件本身的日期时间。 这是查询风险事件时用作筛选器的正确属性。|
 |deviceInformation|string| 有关设备的信息|
 |id|string| 只读|
-|ipAddress|string| IP 地址的第二个登录|
-|isAtypicalLocation|布尔| 如果在位置之一是用户在典型|
-|location|字符串| 挂接到第二个登录的 IP 地址的位置|
-|previousIPAddress|string| 首次登录 IP 地址|
-|previousLocation|string| 挂接到首次登录的 IP 地址的位置|
-|previousSigninDateTime|dateTimeOffset| 日期和时间的首次登录|
-|riskEventDateTime|dateTimeOffset| 日期和时间的第二个登录|
+|ipAddress|string| 第二次登录的 IP 地址|
+|isAtypicalLocation|布尔| 如果其中一个位置对用户是典型的|
+|location|string| 连接到第二次登录的 IP 地址的位置|
+|previousIPAddress|string| 第一次登录的 IP 地址|
+|previousLocation|string| 第一次登录的 IP 地址所连接的位置|
+|previousSigninDateTime|dateTimeOffset| 首次登录的日期和时间|
+|riskEventDateTime|dateTimeOffset| 第二次登录的日期和时间|
 |riskEventStatus|string| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
 |riskLevel|string| 可取值为：`low`、`medium`、`high`。|
-|riskEventType|string| 风险类型|
-|UserAgent|string| 浏览器的用户代理字符串|
-|userDisplayName|string| 风险的用户的名称|
-|userId|string| 风险的用户 id|
-|userPrincipalName|string| 风险的用户的用户主体名称|
+|riskEventType|string| 风险的类型|
+|userAgent|string| 浏览器的用户代理字符串|
+|userDisplayName|string| 具有风险的用户的名称|
+|userId|string| 用户面临风险的 id|
+|userPrincipalName|string| 用户面临风险的用户主体名称|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| 只读。可为 NULL。|
+|impactedUser|[user](user.md)| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -1,33 +1,33 @@
 ---
 title: 权限
-description: '从组织的应用程序目录 （租户应用程序目录） 中删除应用程序。 '
+description: '从组织的应用程序目录中删除应用程序 (租户应用程序目录)。 '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 49a45bbd8062aeea0de2d82cfae0032990af65e7
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016679"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549011"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>从组织的应用程序目录中删除应用程序
 
 
 
-从组织的应用程序目录 （租户应用程序目录） 中删除[应用程序](../resources/teamsapp.md)。 若要从您的组织的应用程序目录中删除您的应用程序，请指定`organization`作为**distributionMethod** [teamsCatalogApp](../resources/teamsapp.md)资源中。
+从组织的应用程序目录中删除[应用程序](../resources/teamsapp.md)(租户应用程序目录)。 若要从组织的应用程序目录中删除应用程序`organization` , 请在[teamsCatalogApp](../resources/teamsapp.md)资源中将其指定为**distributionMethod** 。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)。
 
->**注意：** 只有全局管理员可以调用此 API。 
+>**注意:** 只有全局管理员才能调用此 API。 
 
 | 权限类型                        | 权限（从最低特权到最高特权）|
 |:----------------------------------     |:-------------|
 | 委派（工作或学校帐户）     | AppCatalog.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） | 不支持|
-| 应用程序                            | 不支持|
+| Application                            | 不支持|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ DELETE /appCatalogs/teamsApps/{id}
 
 无。
 
->**注意：** 使用从[列表发布应用程序](./teamsapp-list.md)的调用返回引用您想要更新的应用程序的 ID。 不要使用 zip 应用程序包的清单中的 ID。
+>**注意:** 使用从[列表已发布的应用程序](./teamsapp-list.md)调用中返回的 ID 引用要更新的应用程序。 请勿使用 zip 应用程序包清单中的 ID。
 
 ## <a name="response"></a>响应
 

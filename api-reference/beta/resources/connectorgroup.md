@@ -3,11 +3,11 @@ title: connectorGroup 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.openlocfilehash: de405d2f0cbe0417271ab54e66c5c30073d8ee7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517496"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543390"
 ---
 # <a name="connectorgroup-resource-type"></a>connectorGroup 资源类型
 
@@ -17,27 +17,27 @@ ms.locfileid: "29517496"
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |读取属性和 connectorGroup 对象的关系。|
-|[创建应用程序](../api/connectorgroup-post-applications.md) |[application](application.md)| 将应用程序关联连接器组与发布到应用程序集合。|
-|[应用程序列表](../api/connectorgroup-list-applications.md) |[应用程序](application.md)集合| 获取关联的应用程序对象集合。|
-|[创建连接器](../api/connectorgroup-post-members.md) |[Connector](connector.md)| 通过投递到 members 集合添加到组连接器的连接器。|
-|[List members](../api/connectorgroup-list-members.md) |[连接器](connector.md)集合| 获取一个连接器对象集合。|
-|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |更新 connectorGroup 对象。 |
-|[删除](../api/connectorgroup-delete.md) | 无 |删除 connectorGroup 对象。 可以删除连接器组之前必须删除所有连接线。 |
+|[获取 connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |读取 connectorGroup 对象的属性和关系。|
+|[创建应用程序](../api/connectorgroup-post-applications.md) |[application](application.md)| 将应用程序与连接器组关联, 方法是发布到应用程序集合。|
+|[列出应用程序](../api/connectorgroup-list-applications.md) |[应用程序](application.md)集合| 获取关联的应用程序对象集合。|
+|[创建连接器](../api/connectorgroup-post-members.md) |[连接器](connector.md)| 通过发布到 members 集合, 将连接器添加到连接器组。|
+|[List members](../api/connectorgroup-list-members.md) |[连接器](connector.md)集合| 获取连接器对象集合。|
+|[更新](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |更新 connectorGroup 对象。 |
+|[删除](../api/connectorgroup-delete.md) | 无 |删除 connectorGroup 对象。 必须删除所有连接器, 然后才能删除 conector 组。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| 将使用与组的连接器的类型。 可能的值为： `applicationProxy`。|
-|id|String| ConnectorGroup 对象 id|
-|isDefault|Boolean| 指示 connectorGroup 是默认连接器组。 仅限单个连接器组可以是默认 connectorGroup 并且由系统设置。|
+|connectorGroupType|string| 将与组一起使用的连接器的类型。 可能的值是`applicationProxy`:。|
+|id|字符串| connectorGroup 的对象 id|
+|isDefault|Boolean| 指示 connectorGroup 是否为默认的连接器组。 只有一个连接器组可以是默认的 connectorGroup, 并由系统进行设置。|
 |name|String| 与 connectorGroup 关联的名称。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|应用程序|[应用程序](application.md)集合| 只读。可为 NULL。|
-|members|[连接器](connector.md)集合| 只读。可为 NULL。|
+|来说|[应用程序](application.md)集合| 只读。 可为 Null。|
+|members|[连接器](connector.md)集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

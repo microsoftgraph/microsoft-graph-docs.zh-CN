@@ -3,11 +3,11 @@ title: 取消 privilegedRoleAssignmentRequest
 description: 取消 privilegedRoleAssignmentRequest。
 localization_priority: Normal
 ms.openlocfilehash: 0cca3f33e6e027c18e24862dc4736006058f8e41
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642805"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546526"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>取消 privilegedRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "29642805"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | PrivilegedAccess 的 AzureAD、directory.accessasuser.all    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -40,17 +40,17 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 Ok` 响应代码。 返回 [privilegedRoleAssignmentRequest] (.../ resources/privilegedRoleAssignmentRequest.md) 响应正文中。
+如果成功，此方法返回 `200 Ok` 响应代码。 它返回 [privilegedRoleAssignmentRequest] (.。响应正文中的/resources/privilegedRoleAssignmentRequest.md)。
 
 ### <a name="error-codes"></a>错误代码
-此 API 返回的标准 HTTP 错误代码。 此外，将返回下表中列出的自定义的错误代码。
+此 API 返回标准的 HTTP 错误代码。 此外, 它还返回下表中列出的自定义错误代码。
 
 |错误代码     | 错误消息              |
 |:--------------------| :---------------------|
-| 400 BadRequest | 了申请 Id 不能为 Null。 |
-| 400 BadRequest | 请求找不到请求 ID。 |
-| 400 BadRequest | 计划和 PendingApproval，可以仅上状态完成取消。 |
-| 未经授权的 403 | 不允许进行取消呼叫或找不到请求的请求者。 |
+| 400 BadRequest | RequestId 不能为 Null。 |
+| 400 BadRequest | 找不到请求 ID 的请求。 |
+| 400 BadRequest | 只能在状态为 "已计划" 和 "PendingApproval" 时执行取消。 |
+| 403未经授权 | 不允许请求者进行取消呼叫或找不到请求。 |
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

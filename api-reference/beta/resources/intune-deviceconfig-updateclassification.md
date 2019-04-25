@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bc068892b37eb3b3e3ce29cfbc2ce8c8e1aaf2da
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785536"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548493"
 ---
 # <a name="updateclassification-enum-type"></a>updateClassification 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31785536"
 |:---|:---|:---|
 |定制|0|用户定义, 默认值, 无意向。|
 |recommendedAndImportant|1|建议和重要。|
-|重要|双面|重要.|
-|无|第三章|无。|
+|重要|2 |重要.|
+|无|3 |无。|
 
 
 

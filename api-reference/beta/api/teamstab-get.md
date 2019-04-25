@@ -1,21 +1,21 @@
 ---
 title: 获取选项卡
-description: '检索的属性和指定的选项卡的关系。 '
+description: '检索指定选项卡的属性和关系。 '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c8c860caa538699635a5b5d92595664b700124cd
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967170"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544596"
 ---
 # <a name="get-tab"></a>获取选项卡
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索的属性和指定的[选项卡](../resources/teamstab.md)的关系。 
+检索指定[选项卡](../resources/teamstab.md)的属性和关系。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -33,9 +33,9 @@ ms.locfileid: "29967170"
 GET /teams/{id}/channels/{id}/tabs/{id}
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 $select，和 $expand [OData 查询参数](/graph/query-parameters)，以帮助自定义的响应。
+此方法支持 $select 和 $expand [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -47,7 +47,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[选项卡](../resources/teamstab.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[tab](../resources/teamstab.md)对象。
 ## <a name="example"></a>示例
 #### <a name="request"></a>请求
 下面展示了示例请求。
