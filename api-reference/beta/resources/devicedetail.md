@@ -1,31 +1,31 @@
 ---
 title: deviceDetail 资源类型
-description: 指示与用于登录的设备的设备详细信息。 如果设备是托管的 Azure AD，包括设备的浏览器和操作系统信息等信息。
+description: 指示与用于登录的设备相关联的设备详细信息。 包括设备浏览器和操作系统信息 (如果设备是 Azure AD 托管) 等信息。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 18d55e397cf6c892cd37aea930d446c630017a92
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971359"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543168"
 ---
 # <a name="devicedetail-resource-type"></a>deviceDetail 资源类型
-指示与用于登录的设备的设备详细信息。 如果设备是托管的 Azure AD，包括设备的浏览器和操作系统信息等信息。
+指示与用于登录的设备相关联的设备详细信息。 包括设备浏览器和操作系统信息 (如果设备是 Azure AD 托管) 等信息。
 
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|浏览器|字符串|指示使用的浏览器信息签名项。|
-|deviceId|String|指用于签名中的设备的 UniqueID。|
-|displayName|字符串|指用于签名中的设备的名称。|
-|isCompliant|Boolean|指示是否符合设备。|
-|isManaged|Boolean|指示托管设备。|
-|operatingSystem|String|指示 OS 名称和用于签名中的版本。|
-|trustType|String|指示是否已登录的设备上工作场所加入，AzureAD 加入，加入域的信息。 |
+|浏览器|String|指示用于登录的浏览器信息。|
+|deviceId|String|指用于登录的设备的 UniqueID。|
+|displayName|String|指用于登录的设备的名称。|
+|isCompliant|布尔值|指示设备是否合规。|
+|isManaged|Boolean|指示设备是否为托管设备。|
+|operatingSystem|String|指示用于登录的 OS 名称和版本。|
+|trustType|String|指示有关登录设备是否已加入工作区、AzureAD 加入和加入域的信息。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

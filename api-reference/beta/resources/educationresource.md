@@ -1,33 +1,33 @@
 ---
 title: educationResource 资源类型
-description: 超类别的系统中的所有资源对象。 资源相关联的**工作分配**和/或**提交**，该对象表示正在学习对象
+description: 系统中所有 resource 对象的超类。 资源与**工作分配**和/或**提交**相关联, 表示学习对象
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 87b19f849e24f1780a1d13c7aa1b3eb83543fdec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523216"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542860"
 ---
 # <a name="educationresource-resource-type"></a>educationResource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-超类别的系统中的所有资源对象。 资源相关联的**工作分配**和/或**提交**，该对象表示正在学习对象分发或传递。 不能直接调用实例化资源您必须进行子类表示正在使用的资源的类型。
+系统中所有 resource 对象的超类。 资源与**工作分配**和/或**提交**相关联, 表示正在向外传递或传递的学习对象。 您不能直接实例化资源;您必须创建一个将代表所用资源类型的子类。
 
-此资源存储跨所有资源类型的通用属性。
+此资源在所有资源类型中存储通用属性。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|createdBy|[identitySet](identityset.md)|资源创建者。|
-|createdDateTime|创建资源时时刻。  DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|displayName|String|显示资源的名称。|
-|lastModifiedBy|[identitySet](identityset.md)|谁是最后一个用户修改的资源。|
-|lastModifiedDateTime|DateTimeOffset|上次修改资源时刻。  时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|createdBy|[identitySet](identityset.md)|创建资源的作者。|
+|createdDateTime|创建资源的时间点。  DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
+|displayName|String|资源的显示名称。|
+|lastModifiedBy|[identitySet](identityset.md)|谁是修改资源的最后一个用户。|
+|lastModifiedDateTime|DateTimeOffset|上次修改资源的时间点。  时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

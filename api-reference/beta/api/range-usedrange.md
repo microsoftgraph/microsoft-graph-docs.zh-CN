@@ -1,15 +1,15 @@
 ---
 title: Range:UsedRange
-description: 返回指定 range 对象的所用区域。
+description: 返回指定 range 对象的所用范围。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 89bfd05d1edffddd725c2c6a083903d6d3876857
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508949"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546188"
 ---
 # <a name="range-usedrange"></a>Range:UsedRange
 

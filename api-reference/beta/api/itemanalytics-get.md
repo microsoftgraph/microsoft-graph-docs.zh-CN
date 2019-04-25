@@ -5,21 +5,21 @@ ms.date: 10/06/2017
 title: 获取分析结果
 localization_priority: Normal
 ms.openlocfilehash: d1f6b255747cffe7fdccb5d098e73a56151b6245
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516257"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541041"
 ---
 # <a name="get-analytics"></a>获取分析结果
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[itemAnalytics][]有关发生下此资源的视图。
-**ItemAnalytics**资源，可方便要获取的活动 stats`allTime`和`lastSevenDays`。
-自定义的时间范围或时间间隔，使用[getActivitiesByInterval][] API。
+获取有关在此资源下发生的视图的[itemAnalytics][] 。
+**itemAnalytics**资源是获取`allTime`和的`lastSevenDays`活动统计信息的便捷方式。
+对于自定义时间范围或时间间隔, 请使用[getActivitiesByInterval][] API。
 
->**注意：****ItemAnalytics**资源尚不可用所有[国家/地区的部署](/graph/deployments)中。
+>**注意:****itemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md

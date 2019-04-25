@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: da06bd0e399d095f525d5feaeb47b2d27d281cbc
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642987"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543824"
 ---
 # <a name="chartpointformat-resource-type"></a>ChartPointFormat 资源类型
 

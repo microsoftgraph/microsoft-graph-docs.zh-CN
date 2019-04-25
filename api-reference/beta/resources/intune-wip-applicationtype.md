@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6a5cbefcdb902564fd19b9445afceac058be3c20
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776596"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570054"
 ---
 # <a name="applicationtype-enum-type"></a>applicationType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "31776596"
 |成员|值|说明|
 |:---|:---|:---|
 |普遍|1|windows 通用应用程序|
-|desktop|双面|windows 桌面应用程序|
+|desktop|2 |windows 桌面应用程序|
 
 
 

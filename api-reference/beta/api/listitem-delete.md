@@ -6,11 +6,11 @@ title: 从 SharePoint 列表中删除条目
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 83a14c237b59c66c24bab2705520c84f3f0e090e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481928"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540992"
 ---
 # <a name="delete-an-item-from-a-list"></a>从列表中删除项
 
@@ -18,7 +18,7 @@ ms.locfileid: "30481928"
 
 从 [list][] 中删除项。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 
 ## <a name="permissions"></a>权限
 

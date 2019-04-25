@@ -5,11 +5,11 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 52dd5917ef0ddb2ec0a05d6952962bfc430c6027
-ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "29892510"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579949"
 ---
 # <a name="plannertask-resource-type"></a>plannerTask 资源类型
 
