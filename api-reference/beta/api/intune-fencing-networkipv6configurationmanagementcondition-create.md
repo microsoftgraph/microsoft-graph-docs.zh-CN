@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d20721c1f92e3d710abe24df2304cd2bec431084
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788511"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532203"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>创建 networkIPv6ConfigurationManagementCondition
 
@@ -51,7 +51,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
+|id|字符串|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |uniqueName|String|管理条件的唯一名称。 在管理条件表达式中使用。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|String|管理条件的管理员定义名称。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |description|字符串|管理条件的管理员定义的说明。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
@@ -61,8 +61,8 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`。|
 |ipV6Prefix|String|要连接到的 IPv6 子网。 例如 2001: db8::/32|
 |ipV6Gateway|String|IPv6 网关地址。 例如 2001: db8:: 1|
-|ipV6DNSServerList|String 集合|为适配器配置的 IPv6 DNS 服务器。|
-|dnsSuffixList|String 集合|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
+|ipV6DNSServerList|String collection|为适配器配置的 IPv6 DNS 服务器。|
+|dnsSuffixList|String collection|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 
 
 

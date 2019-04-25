@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b517a00280f976733279e6c3d596e887d8f42e10
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807502"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532756"
 ---
 # <a name="update-importeddeviceidentityresult"></a>更新 importedDeviceIdentityResult
 
@@ -50,7 +50,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的导入设备标识的 Id|
+|id|字符串|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的导入设备标识的 Id|
 |importedDeviceIdentifier|String|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的导入设备标识符|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的导入设备标识的类型。 可取值为：`unknown`、`imei`、`serialNumber`。|
 |lastModifiedDateTime|DateTimeOffset|继承自[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)的说明的上次修改日期时间|
@@ -58,8 +58,8 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |lastContactedDateTime|DateTimeOffset|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的设备的上次联系日期时间|
 |description|String|从[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)继承的设备的说明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune 中的设备的状态继承自[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
-|platform|[platform](../resources/intune-enrollment-platform.md)|设备的平台。 继承自[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
-|status|布尔值|导入的设备标识的状态|
+|platform|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 继承自[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
+|状态|布尔值|导入的设备标识的状态|
 
 
 

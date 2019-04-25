@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f7a35693408b214d028af90945e0d3179af83395
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774762"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532721"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>创建 importedWindowsAutopilotDeviceIdentity
 

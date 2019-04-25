@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 99c62005574c5d62b3ba7fb8a2fb3cff9f2af538
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31770681"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532728"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>删除 importedWindowsAutopilotDeviceIdentity
 

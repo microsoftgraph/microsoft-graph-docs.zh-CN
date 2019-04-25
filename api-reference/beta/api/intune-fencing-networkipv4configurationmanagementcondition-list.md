@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 76d53c31da213cf3de1ca2f3b5fe32cc99b92d64
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782112"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532140"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>列出 networkIPv4ConfigurationManagementConditions
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6459876d0ee318ed3d855a5ff03cb43599773ca3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774545"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532147"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>创建 networkIPv4ConfigurationManagementCondition
 
@@ -51,7 +51,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
+|id|字符串|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |uniqueName|String|管理条件的唯一名称。 在管理条件表达式中使用。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|String|管理条件的管理员定义名称。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |description|字符串|管理条件的管理员定义的说明。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
@@ -62,8 +62,8 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |ipV4Prefix|String|要连接到的 IPv4 子网。 例如, 10.0.0.0/8|
 |ipV4Gateway|String|IPv4 网关地址。 例如10.0.0。0|
 |ipV4DHCPServer|String|适配器的 DHCP 服务器的 IPv4 地址。|
-|ipV4DNSServerList|String 集合|为适配器配置的 IPv4 DNS 服务器。|
-|dnsSuffixList|String 集合|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
+|ipV4DNSServerList|String collection|为适配器配置的 IPv4 DNS 服务器。|
+|dnsSuffixList|String collection|当前网络的有效 DNS 后缀。 例如 seattle.contoso.com|
 
 
 

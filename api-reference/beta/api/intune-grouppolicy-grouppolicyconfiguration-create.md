@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: cd0c63b1d8c8df449a68cbeb64f391adb659ae64
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805367"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532112"
 ---
 # <a name="create-grouppolicyconfiguration"></a>创建 groupPolicyConfiguration
 
@@ -53,7 +53,7 @@ POST /deviceManagement/groupPolicyConfigurations
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。|
 |displayName|String|用户提供的资源对象的名称。|
 |description|String|用户提供的资源对象的说明。|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 

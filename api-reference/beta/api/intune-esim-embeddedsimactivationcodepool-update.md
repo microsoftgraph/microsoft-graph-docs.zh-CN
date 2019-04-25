@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 38d64a94b6707c9a289f142d5abe4885095dfc7a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786817"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532413"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>更新 embeddedSIMActivationCodePool
 

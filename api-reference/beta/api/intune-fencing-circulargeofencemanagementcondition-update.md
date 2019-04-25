@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fa9c306ad3e79967223af5c55a628c84c34978b4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776568"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532219"
 ---
 # <a name="update-circulargeofencemanagementcondition"></a>更新 circularGeofenceManagementCondition
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
+|id|字符串|管理条件的唯一标识符。 创建时分配的系统生成值。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |uniqueName|String|管理条件的唯一名称。 在管理条件表达式中使用。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|String|管理条件的管理员定义名称。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |description|字符串|管理条件的管理员定义的说明。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
@@ -61,7 +61,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`。|
 |latitude|双精度|以度为单位的纬度, 介于-90 和 + 90 之间 (含)。|
 |longitude|Double|以度为单位的经度, 介于-180 和 + 180 之间 (含)。|
-|radiusInMeters|单精度|以米为单位的半径。|
+|radiusInMeters|单倍行距|以米为单位的半径。|
 
 
 

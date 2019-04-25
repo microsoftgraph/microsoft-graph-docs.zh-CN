@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0c45927ebe96fc8d00bf6d32181225dfc59f1041
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532504"
 ---
 # <a name="get-windowsautopilotsettings"></a>获取 windowsAutopilotSettings
 

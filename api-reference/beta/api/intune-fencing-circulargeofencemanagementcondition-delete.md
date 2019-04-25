@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f63895e64bcf5db424e73f3687b04cfcaef91152
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779102"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532266"
 ---
 # <a name="delete-circulargeofencemanagementcondition"></a>删除 circularGeofenceManagementCondition
 

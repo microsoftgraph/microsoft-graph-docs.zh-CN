@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9ca375a771856f314563e2780128fc7d8aab3c88
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782175"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32531171"
 ---
 # <a name="create-grouppolicypresentationcombobox"></a>创建 groupPolicyPresentationComboBox
 
@@ -54,7 +54,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |默认|String|组合框中显示的本地化默认字符串。 默认值为空白。|
-|推荐|String 集合|组合框下拉列表中列出的本地化字符串。 默认值为空白。|
+|推荐|String collection|组合框下拉列表中列出的本地化字符串。 默认值为空白。|
 |必需|布尔值|指定是否必须为参数指定值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数, 指定参数的最大文本字符数。 默认值为1023。|
 
