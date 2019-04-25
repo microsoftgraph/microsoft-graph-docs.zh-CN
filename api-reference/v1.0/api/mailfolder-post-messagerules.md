@@ -5,59 +5,59 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: a1ed88c0beec0b9b8767e8b49111aa65f3a5b6f3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916143"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565434"
 ---
-# <a name="create-rule"></a><span data-ttu-id="5af8d-103">创建规则</span><span class="sxs-lookup"><span data-stu-id="5af8d-103">Create rule</span></span>
+# <a name="create-rule"></a><span data-ttu-id="0da28-103">创建规则</span><span class="sxs-lookup"><span data-stu-id="0da28-103">Create rule</span></span>
 
 
-<span data-ttu-id="5af8d-104">通过指定一组条件和操作来创建 [messageRule](../resources/messagerule.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5af8d-104">Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions.</span></span> 
+<span data-ttu-id="0da28-104">通过指定一组条件和操作来创建 [messageRule](../resources/messagerule.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="0da28-104">Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions.</span></span> 
 
-<span data-ttu-id="5af8d-105">如果用户收件箱中的传入邮件符合指定条件，Outlook 就会执行这些操作。</span><span class="sxs-lookup"><span data-stu-id="5af8d-105">Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.</span></span>
+<span data-ttu-id="0da28-105">如果用户收件箱中的传入邮件符合指定条件，Outlook 就会执行这些操作。</span><span class="sxs-lookup"><span data-stu-id="0da28-105">Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5af8d-106">权限</span><span class="sxs-lookup"><span data-stu-id="5af8d-106">Permissions</span></span>
-<span data-ttu-id="5af8d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5af8d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="0da28-106">权限</span><span class="sxs-lookup"><span data-stu-id="0da28-106">Permissions</span></span>
+<span data-ttu-id="0da28-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0da28-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5af8d-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="5af8d-109">Permission type</span></span>      | <span data-ttu-id="5af8d-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="5af8d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0da28-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="0da28-109">Permission type</span></span>      | <span data-ttu-id="0da28-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0da28-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5af8d-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5af8d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="5af8d-112">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5af8d-112">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="5af8d-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5af8d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5af8d-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5af8d-114">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="5af8d-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="5af8d-115">Application</span></span> | <span data-ttu-id="5af8d-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5af8d-116">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="0da28-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0da28-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0da28-112">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0da28-112">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="0da28-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0da28-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0da28-114">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0da28-114">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="0da28-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="0da28-115">Application</span></span> | <span data-ttu-id="0da28-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0da28-116">MailboxSettings.ReadWrite</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="5af8d-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5af8d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0da28-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0da28-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/mailFolders/inbox/messageRules
 POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
-## <a name="request-headers"></a><span data-ttu-id="5af8d-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="5af8d-118">Request headers</span></span>
-| <span data-ttu-id="5af8d-119">名称</span><span class="sxs-lookup"><span data-stu-id="5af8d-119">Name</span></span>       | <span data-ttu-id="5af8d-120">说明</span><span class="sxs-lookup"><span data-stu-id="5af8d-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0da28-118">请求标头</span><span class="sxs-lookup"><span data-stu-id="0da28-118">Request headers</span></span>
+| <span data-ttu-id="0da28-119">名称</span><span class="sxs-lookup"><span data-stu-id="0da28-119">Name</span></span>       | <span data-ttu-id="0da28-120">说明</span><span class="sxs-lookup"><span data-stu-id="0da28-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="5af8d-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="5af8d-121">Authorization</span></span>  | <span data-ttu-id="5af8d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5af8d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0da28-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="0da28-121">Authorization</span></span>  | <span data-ttu-id="0da28-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0da28-p102">Bearer {token}. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="5af8d-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="5af8d-124">Request body</span></span>
-<span data-ttu-id="5af8d-125">在请求正文中，提供适用于规则的参数。</span><span class="sxs-lookup"><span data-stu-id="5af8d-125">In the request body, supply the parameters that are applicable to your rule.</span></span> <span data-ttu-id="5af8d-126">以下是在创建规则时通常使用的正文参数。</span><span class="sxs-lookup"><span data-stu-id="5af8d-126">The following are body parameters that are typically used when creating rules.</span></span> <span data-ttu-id="5af8d-127">可以根据情况在请求正文中指定任何其他可写的 **messageRule** 属性。</span><span class="sxs-lookup"><span data-stu-id="5af8d-127">You can specify any other writable **messageRule** properties as appropriate in the request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0da28-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="0da28-124">Request body</span></span>
+<span data-ttu-id="0da28-125">在请求正文中，提供适用于规则的参数。</span><span class="sxs-lookup"><span data-stu-id="0da28-125">In the request body, supply the parameters that are applicable to your rule.</span></span> <span data-ttu-id="0da28-126">以下是在创建规则时通常使用的正文参数。</span><span class="sxs-lookup"><span data-stu-id="0da28-126">The following are body parameters that are typically used when creating rules.</span></span> <span data-ttu-id="0da28-127">可以根据情况在请求正文中指定任何其他可写的 **messageRule** 属性。</span><span class="sxs-lookup"><span data-stu-id="0da28-127">You can specify any other writable **messageRule** properties as appropriate in the request body.</span></span>
 
-| <span data-ttu-id="5af8d-128">名称</span><span class="sxs-lookup"><span data-stu-id="5af8d-128">Name</span></span>       | <span data-ttu-id="5af8d-129">类型</span><span class="sxs-lookup"><span data-stu-id="5af8d-129">Type</span></span>|<span data-ttu-id="5af8d-130">说明</span><span class="sxs-lookup"><span data-stu-id="5af8d-130">Description</span></span>|
+| <span data-ttu-id="0da28-128">名称</span><span class="sxs-lookup"><span data-stu-id="0da28-128">Name</span></span>       | <span data-ttu-id="0da28-129">类型</span><span class="sxs-lookup"><span data-stu-id="0da28-129">Type</span></span>|<span data-ttu-id="0da28-130">说明</span><span class="sxs-lookup"><span data-stu-id="0da28-130">Description</span></span>|
 |:--------|:-------|:----------|
-|<span data-ttu-id="5af8d-131">actions</span><span class="sxs-lookup"><span data-stu-id="5af8d-131">actions</span></span>|[<span data-ttu-id="5af8d-132">messageRuleActions</span><span class="sxs-lookup"><span data-stu-id="5af8d-132">messageRuleActions</span></span>](../resources/messageruleactions.md)|<span data-ttu-id="5af8d-133">满足相应条件（如果有的话）时对邮件执行的操作。</span><span class="sxs-lookup"><span data-stu-id="5af8d-133">Actions to be taken on a message when the corresponding conditions, if any, are fulfilled.</span></span> <span data-ttu-id="5af8d-134">必需。</span><span class="sxs-lookup"><span data-stu-id="5af8d-134">Required.</span></span>|
-|<span data-ttu-id="5af8d-135">conditions</span><span class="sxs-lookup"><span data-stu-id="5af8d-135">conditions</span></span>|[<span data-ttu-id="5af8d-136">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="5af8d-136">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)|<span data-ttu-id="5af8d-137">满足条件时，将触发该规则的相应操作。</span><span class="sxs-lookup"><span data-stu-id="5af8d-137">Conditions that when fulfilled, will trigger the corresponding actions for that rule.</span></span> <span data-ttu-id="5af8d-138">可选。</span><span class="sxs-lookup"><span data-stu-id="5af8d-138">Optional.</span></span>|
-|<span data-ttu-id="5af8d-139">displayName</span><span class="sxs-lookup"><span data-stu-id="5af8d-139">displayName</span></span>| <span data-ttu-id="5af8d-140">String</span><span class="sxs-lookup"><span data-stu-id="5af8d-140">String</span></span>  | <span data-ttu-id="5af8d-141">规则的显示名称。</span><span class="sxs-lookup"><span data-stu-id="5af8d-141">The display name of the rule.</span></span> <span data-ttu-id="5af8d-142">必需。</span><span class="sxs-lookup"><span data-stu-id="5af8d-142">Required.</span></span>|
-|<span data-ttu-id="5af8d-143">exceptions</span><span class="sxs-lookup"><span data-stu-id="5af8d-143">exceptions</span></span>| [<span data-ttu-id="5af8d-144">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="5af8d-144">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)| <span data-ttu-id="5af8d-145">表示规则的例外情况。</span><span class="sxs-lookup"><span data-stu-id="5af8d-145">Represents exception conditions for the rule.</span></span> <span data-ttu-id="5af8d-146">可选。</span><span class="sxs-lookup"><span data-stu-id="5af8d-146">Optional.</span></span> |
-|<span data-ttu-id="5af8d-147">isEnabled</span><span class="sxs-lookup"><span data-stu-id="5af8d-147">isEnabled</span></span> | <span data-ttu-id="5af8d-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="5af8d-148">Boolean</span></span> | <span data-ttu-id="5af8d-149">指示是否启用规则以应用到邮件。</span><span class="sxs-lookup"><span data-stu-id="5af8d-149">Indicates whether the rule is enabled to be applied to messages.</span></span> <span data-ttu-id="5af8d-150">可选。</span><span class="sxs-lookup"><span data-stu-id="5af8d-150">Optional.</span></span> |
-|<span data-ttu-id="5af8d-151">Sequence</span><span class="sxs-lookup"><span data-stu-id="5af8d-151">sequence</span></span>| <span data-ttu-id="5af8d-152">Int32</span><span class="sxs-lookup"><span data-stu-id="5af8d-152">Int32</span></span> | <span data-ttu-id="5af8d-153">表示在其他规则中执行规则的顺序。</span><span class="sxs-lookup"><span data-stu-id="5af8d-153">Indicates the order in which the rule is executed, among other rules.</span></span> <span data-ttu-id="5af8d-154">必需。</span><span class="sxs-lookup"><span data-stu-id="5af8d-154">Required.</span></span>|
+|<span data-ttu-id="0da28-131">actions</span><span class="sxs-lookup"><span data-stu-id="0da28-131">actions</span></span>|[<span data-ttu-id="0da28-132">messageRuleActions</span><span class="sxs-lookup"><span data-stu-id="0da28-132">messageRuleActions</span></span>](../resources/messageruleactions.md)|<span data-ttu-id="0da28-133">满足相应条件（如果有的话）时对邮件执行的操作。</span><span class="sxs-lookup"><span data-stu-id="0da28-133">Actions to be taken on a message when the corresponding conditions, if any, are fulfilled.</span></span> <span data-ttu-id="0da28-134">必需。</span><span class="sxs-lookup"><span data-stu-id="0da28-134">Required.</span></span>|
+|<span data-ttu-id="0da28-135">conditions</span><span class="sxs-lookup"><span data-stu-id="0da28-135">conditions</span></span>|[<span data-ttu-id="0da28-136">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="0da28-136">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)|<span data-ttu-id="0da28-137">满足条件时，将触发该规则的相应操作。</span><span class="sxs-lookup"><span data-stu-id="0da28-137">Conditions that when fulfilled, will trigger the corresponding actions for that rule.</span></span> <span data-ttu-id="0da28-138">可选。</span><span class="sxs-lookup"><span data-stu-id="0da28-138">Optional.</span></span>|
+|<span data-ttu-id="0da28-139">displayName</span><span class="sxs-lookup"><span data-stu-id="0da28-139">displayName</span></span>| <span data-ttu-id="0da28-140">String</span><span class="sxs-lookup"><span data-stu-id="0da28-140">String</span></span>  | <span data-ttu-id="0da28-141">规则的显示名称。</span><span class="sxs-lookup"><span data-stu-id="0da28-141">The display name of the rule.</span></span> <span data-ttu-id="0da28-142">必需。</span><span class="sxs-lookup"><span data-stu-id="0da28-142">Required.</span></span>|
+|<span data-ttu-id="0da28-143">exceptions</span><span class="sxs-lookup"><span data-stu-id="0da28-143">exceptions</span></span>| [<span data-ttu-id="0da28-144">messageRulePredicates</span><span class="sxs-lookup"><span data-stu-id="0da28-144">messageRulePredicates</span></span>](../resources/messagerulepredicates.md)| <span data-ttu-id="0da28-145">表示规则的例外情况。</span><span class="sxs-lookup"><span data-stu-id="0da28-145">Represents exception conditions for the rule.</span></span> <span data-ttu-id="0da28-146">可选。</span><span class="sxs-lookup"><span data-stu-id="0da28-146">Optional.</span></span> |
+|<span data-ttu-id="0da28-147">isEnabled</span><span class="sxs-lookup"><span data-stu-id="0da28-147">isEnabled</span></span> | <span data-ttu-id="0da28-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="0da28-148">Boolean</span></span> | <span data-ttu-id="0da28-149">指示是否启用规则以应用到邮件。</span><span class="sxs-lookup"><span data-stu-id="0da28-149">Indicates whether the rule is enabled to be applied to messages.</span></span> <span data-ttu-id="0da28-150">可选。</span><span class="sxs-lookup"><span data-stu-id="0da28-150">Optional.</span></span> |
+|<span data-ttu-id="0da28-151">Sequence</span><span class="sxs-lookup"><span data-stu-id="0da28-151">sequence</span></span>| <span data-ttu-id="0da28-152">Int32</span><span class="sxs-lookup"><span data-stu-id="0da28-152">Int32</span></span> | <span data-ttu-id="0da28-153">表示在其他规则中执行规则的顺序。</span><span class="sxs-lookup"><span data-stu-id="0da28-153">Indicates the order in which the rule is executed, among other rules.</span></span> <span data-ttu-id="0da28-154">必需。</span><span class="sxs-lookup"><span data-stu-id="0da28-154">Required.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="5af8d-155">响应</span><span class="sxs-lookup"><span data-stu-id="5af8d-155">Response</span></span>
-<span data-ttu-id="5af8d-156">如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 **messageRule** 对象。</span><span class="sxs-lookup"><span data-stu-id="5af8d-156">If successful, this method returns `201 Created` response code and a **messageRule** object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0da28-155">响应</span><span class="sxs-lookup"><span data-stu-id="0da28-155">Response</span></span>
+<span data-ttu-id="0da28-156">如果成功，此方法会在响应正文中返回 `201 Created` 响应代码和 **messageRule** 对象。</span><span class="sxs-lookup"><span data-stu-id="0da28-156">If successful, this method returns `201 Created` response code and a **messageRule** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5af8d-157">示例</span><span class="sxs-lookup"><span data-stu-id="5af8d-157">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5af8d-158">请求</span><span class="sxs-lookup"><span data-stu-id="5af8d-158">Request</span></span>
-<span data-ttu-id="5af8d-159">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5af8d-159">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0da28-157">示例</span><span class="sxs-lookup"><span data-stu-id="0da28-157">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0da28-158">请求</span><span class="sxs-lookup"><span data-stu-id="0da28-158">Request</span></span>
+<span data-ttu-id="0da28-159">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0da28-159">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["inbox"],
@@ -90,8 +90,8 @@ Content-type: application/json
 }
 
 ```
-##### <a name="response"></a><span data-ttu-id="5af8d-160">响应</span><span class="sxs-lookup"><span data-stu-id="5af8d-160">Response</span></span>
-<span data-ttu-id="5af8d-p110">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5af8d-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0da28-160">响应</span><span class="sxs-lookup"><span data-stu-id="0da28-160">Response</span></span>
+<span data-ttu-id="0da28-p110">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="0da28-p110">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

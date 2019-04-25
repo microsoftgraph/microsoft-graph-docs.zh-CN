@@ -6,42 +6,43 @@ title: 列出网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641188"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537193"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="64886-102">列表中的网站网站页面列表的页面</span><span class="sxs-lookup"><span data-stu-id="64886-102">List the pages in the site pages list of a site</span></span>
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="709f9-102">在网站的 "网站页面" 列表中列出页面</span><span class="sxs-lookup"><span data-stu-id="709f9-102">List the pages in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="64886-103">从网站页面[列表][]的网站[的网站][]中获取 [sitePages] [] 的集合。</span><span class="sxs-lookup"><span data-stu-id="64886-103">Get the collection of [sitePages][] from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="64886-104">（具有分页） 返回网站中的所有页面。</span><span class="sxs-lookup"><span data-stu-id="64886-104">All pages in the site are returned (with pagination).</span></span>
+<span data-ttu-id="709f9-103">从网站[网站][]的 "网站页面"[列表][]中获取 [sitePages] [] 的集合。</span><span class="sxs-lookup"><span data-stu-id="709f9-103">Get the collection of [sitePages][] from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="709f9-104">将返回网站中的所有页面 (使用分页)。</span><span class="sxs-lookup"><span data-stu-id="709f9-104">All pages in the site are returned (with pagination).</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
+[网站]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="64886-107">权限</span><span class="sxs-lookup"><span data-stu-id="64886-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="709f9-107">权限</span><span class="sxs-lookup"><span data-stu-id="709f9-107">Permissions</span></span>
 
-<span data-ttu-id="64886-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="64886-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="709f9-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="709f9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="64886-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="64886-110">Permission type</span></span>      | <span data-ttu-id="64886-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="64886-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="709f9-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="709f9-110">Permission type</span></span>      | <span data-ttu-id="709f9-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="709f9-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="64886-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="64886-112">Delegated (work or school account)</span></span> | <span data-ttu-id="64886-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64886-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="64886-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="64886-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64886-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="64886-115">Not supported.</span></span>    |
-|<span data-ttu-id="64886-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="64886-116">Application</span></span> | <span data-ttu-id="64886-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64886-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="709f9-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="709f9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="709f9-113">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="709f9-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="709f9-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="709f9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="709f9-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="709f9-115">Not supported.</span></span>    |
+|<span data-ttu-id="709f9-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="709f9-116">Application</span></span> | <span data-ttu-id="709f9-117">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="709f9-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="64886-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="64886-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="709f9-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="709f9-118">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages
 
 ```
 
-## <a name="example"></a><span data-ttu-id="64886-119">示例</span><span class="sxs-lookup"><span data-stu-id="64886-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="709f9-119">示例</span><span class="sxs-lookup"><span data-stu-id="709f9-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="64886-120">请求</span><span class="sxs-lookup"><span data-stu-id="64886-120">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="709f9-120">请求</span><span class="sxs-lookup"><span data-stu-id="709f9-120">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-pages", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -49,7 +50,7 @@ GET /sites/{site-id}/pages
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a><span data-ttu-id="64886-121">响应</span><span class="sxs-lookup"><span data-stu-id="64886-121">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="709f9-121">响应</span><span class="sxs-lookup"><span data-stu-id="709f9-121">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.sitePage)", "truncated": true } -->
 

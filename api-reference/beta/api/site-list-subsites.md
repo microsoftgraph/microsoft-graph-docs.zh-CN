@@ -6,32 +6,32 @@ title: 列出 SharePoint 网站的子网站
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f5037373ab914dabe33f11892f90a3bcfad77d5b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480108"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537242"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="ac183-102">枚举子网站</span><span class="sxs-lookup"><span data-stu-id="ac183-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="f08c7-102">枚举子网站</span><span class="sxs-lookup"><span data-stu-id="f08c7-102">Enumerate subsites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ac183-103">获取为 [网站][] 定义的子网站集合。</span><span class="sxs-lookup"><span data-stu-id="ac183-103">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="f08c7-103">获取为 [网站][] 定义的子网站集合。</span><span class="sxs-lookup"><span data-stu-id="f08c7-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [网站]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="ac183-105">权限</span><span class="sxs-lookup"><span data-stu-id="ac183-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f08c7-105">权限</span><span class="sxs-lookup"><span data-stu-id="f08c7-105">Permissions</span></span>
 
-<span data-ttu-id="ac183-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ac183-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f08c7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f08c7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ac183-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ac183-108">Permission type</span></span>      | <span data-ttu-id="ac183-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ac183-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f08c7-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="f08c7-108">Permission type</span></span>      | <span data-ttu-id="f08c7-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f08c7-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ac183-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ac183-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ac183-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ac183-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ac183-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ac183-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ac183-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="ac183-113">Not supported.</span></span>    |
-|<span data-ttu-id="ac183-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ac183-114">Application</span></span> | <span data-ttu-id="ac183-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ac183-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="f08c7-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f08c7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f08c7-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f08c7-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f08c7-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f08c7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f08c7-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="f08c7-113">Not supported.</span></span>    |
+|<span data-ttu-id="f08c7-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="f08c7-114">Application</span></span> | <span data-ttu-id="f08c7-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f08c7-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ac183-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ac183-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f08c7-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f08c7-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "30480108"
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
-## <a name="response"></a><span data-ttu-id="ac183-117">响应</span><span class="sxs-lookup"><span data-stu-id="ac183-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f08c7-117">响应</span><span class="sxs-lookup"><span data-stu-id="f08c7-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

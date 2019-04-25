@@ -5,31 +5,31 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 1cee769181fdf8dce694050cdbc2658fdf29ece4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515319"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535450"
 ---
-# <a name="bookingnamedentity-resource-type"></a><span data-ttu-id="1aca2-104">bookingNamedEntity 资源类型</span><span class="sxs-lookup"><span data-stu-id="1aca2-104">bookingNamedEntity resource type</span></span>
+# <a name="bookingnamedentity-resource-type"></a><span data-ttu-id="be8cf-104">bookingNamedEntity 资源类型</span><span class="sxs-lookup"><span data-stu-id="be8cf-104">bookingNamedEntity resource type</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="1aca2-105">这是提供显示名称，例如 Microsoft 预订实体[bookingBusiness](bookingbusiness.md)、 [bookingPerson](bookingperson.md)、 [bookingService](bookingservice.md)的基类型。</span><span class="sxs-lookup"><span data-stu-id="1aca2-105">This is a base type for Microsoft Bookings entities that provide a display name, for example, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).</span></span>
+<span data-ttu-id="be8cf-105">这是 Microsoft 预订实体的基本类型, 可提供显示名称, 例如, [bookingBusiness](bookingbusiness.md)、 [bookingPerson](bookingperson.md)、 [bookingService](bookingservice.md)。</span><span class="sxs-lookup"><span data-stu-id="be8cf-105">This is a base type for Microsoft Bookings entities that provide a display name, for example, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1aca2-106">属性</span><span class="sxs-lookup"><span data-stu-id="1aca2-106">Properties</span></span>
-| <span data-ttu-id="1aca2-107">属性</span><span class="sxs-lookup"><span data-stu-id="1aca2-107">Property</span></span>     | <span data-ttu-id="1aca2-108">类型</span><span class="sxs-lookup"><span data-stu-id="1aca2-108">Type</span></span>   |<span data-ttu-id="1aca2-109">说明</span><span class="sxs-lookup"><span data-stu-id="1aca2-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="be8cf-106">属性</span><span class="sxs-lookup"><span data-stu-id="be8cf-106">Properties</span></span>
+| <span data-ttu-id="be8cf-107">属性</span><span class="sxs-lookup"><span data-stu-id="be8cf-107">Property</span></span>     | <span data-ttu-id="be8cf-108">类型</span><span class="sxs-lookup"><span data-stu-id="be8cf-108">Type</span></span>   |<span data-ttu-id="be8cf-109">说明</span><span class="sxs-lookup"><span data-stu-id="be8cf-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1aca2-110">displayName</span><span class="sxs-lookup"><span data-stu-id="1aca2-110">displayName</span></span>|<span data-ttu-id="1aca2-111">String</span><span class="sxs-lookup"><span data-stu-id="1aca2-111">String</span></span>|<span data-ttu-id="1aca2-112">派生实体，哪些接口与客户的名称。</span><span class="sxs-lookup"><span data-stu-id="1aca2-112">A name for the derived entity, which interfaces with customers.</span></span>|
-|<span data-ttu-id="1aca2-113">id</span><span class="sxs-lookup"><span data-stu-id="1aca2-113">id</span></span>|<span data-ttu-id="1aca2-114">String</span><span class="sxs-lookup"><span data-stu-id="1aca2-114">String</span></span>| <span data-ttu-id="1aca2-115">派生实体的 ID。</span><span class="sxs-lookup"><span data-stu-id="1aca2-115">The ID for the derived entity.</span></span> <span data-ttu-id="1aca2-116">只读。</span><span class="sxs-lookup"><span data-stu-id="1aca2-116">Read-only.</span></span>|
+|<span data-ttu-id="be8cf-110">displayName</span><span class="sxs-lookup"><span data-stu-id="be8cf-110">displayName</span></span>|<span data-ttu-id="be8cf-111">String</span><span class="sxs-lookup"><span data-stu-id="be8cf-111">String</span></span>|<span data-ttu-id="be8cf-112">派生实体的名称, 与客户进行交互。</span><span class="sxs-lookup"><span data-stu-id="be8cf-112">A name for the derived entity, which interfaces with customers.</span></span>|
+|<span data-ttu-id="be8cf-113">id</span><span class="sxs-lookup"><span data-stu-id="be8cf-113">id</span></span>|<span data-ttu-id="be8cf-114">String</span><span class="sxs-lookup"><span data-stu-id="be8cf-114">String</span></span>| <span data-ttu-id="be8cf-115">派生实体的 ID。</span><span class="sxs-lookup"><span data-stu-id="be8cf-115">The ID for the derived entity.</span></span> <span data-ttu-id="be8cf-116">只读。</span><span class="sxs-lookup"><span data-stu-id="be8cf-116">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="1aca2-117">关系</span><span class="sxs-lookup"><span data-stu-id="1aca2-117">Relationships</span></span>
-<span data-ttu-id="1aca2-118">无</span><span class="sxs-lookup"><span data-stu-id="1aca2-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="be8cf-117">关系</span><span class="sxs-lookup"><span data-stu-id="be8cf-117">Relationships</span></span>
+<span data-ttu-id="be8cf-118">无</span><span class="sxs-lookup"><span data-stu-id="be8cf-118">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="1aca2-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1aca2-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="be8cf-119">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="be8cf-119">JSON representation</span></span>
 
-<span data-ttu-id="1aca2-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1aca2-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="be8cf-120">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="be8cf-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
