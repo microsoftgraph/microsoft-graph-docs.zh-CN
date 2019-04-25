@@ -4,11 +4,11 @@ description: '日历视图是默认日历中特定日期/时间范围内的事�
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: ba5f2726cf6fe27024bfa29bf75dd82075c6fa29
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830714"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526221"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>获取日历视图中事件的增量更改 
 

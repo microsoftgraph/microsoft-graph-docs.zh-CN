@@ -6,11 +6,11 @@ title: 新建文件夹
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 68d2f6db9868ac262ed65c21f27f60ed6f3d1230
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482243"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521794"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>在驱动器中新建文件夹
 

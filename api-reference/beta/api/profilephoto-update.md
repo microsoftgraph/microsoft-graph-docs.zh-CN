@@ -1,13 +1,13 @@
 ---
 title: 更新 profilephoto
-description: 更新的签名项包括租户中的任何用户的照片用户或指定的组或联系人。 相那里
+description: 更新租户中任意用户的照片，其中包括已登录用户或指定的组或联系人。 由于存在
 localization_priority: Normal
 ms.openlocfilehash: f8191716471cba565b27ef316b5b13e3b32ecaff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521129"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546477"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -17,18 +17,18 @@ ms.locfileid: "29521129"
 
 在测试版中仅使用 PUT 进行此操作。
 
-> 注意：1.0 版本中的更新照片操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
+> **注意：** 1.0 版本中的更新照片操作仅支持用户的工作或学校邮箱，不支持个人邮箱。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | 登录**用户**的配置文件照片：<br/>User.ReadWrite User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
+|委派（工作或学校帐户）     | 已登录**用户**的个人资料照片:<br/>所有用户读写。<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 对于 **user** 资源：<br/>User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
+|Application                            | 对于 **user** 资源：<br/>User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 
-> **注意** 要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。若要了解详细信息，请参阅[无需已登录用户即可访问](/graph/auth-v2-service)。
+> **注释**若要更新组织中任何用户的照片, 应用必须具有用户的 ReadWrite。所有应用程序权限, 并在其自己的标识下调用此 API, 而不代表用户。 若要了解详细信息, 请参阅[获取 access 而无需登录用户](/graph/auth-v2-service)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

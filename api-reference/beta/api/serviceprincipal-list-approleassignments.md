@@ -1,15 +1,15 @@
 ---
-title: servicePrincipal： 列表 appRoleAssignments
+title: 'servicePrincipal: List appRoleAssignments'
 description: 检索 approleassignment 对象的列表。
 localization_priority: Normal
 ms.openlocfilehash: af98d4b92e936a961d0edefe6a4f00c71a5a75ed
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545260"
 ---
-# <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal： 列表 appRoleAssignments
+# <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal: List appRoleAssignments
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/appRoleAssignments
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[appRoleAssignment](../resources/approleassignment.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[appRoleAssignment](../resources/approleassignment.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
