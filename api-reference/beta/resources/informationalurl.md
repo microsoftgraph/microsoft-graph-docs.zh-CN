@@ -3,29 +3,29 @@ title: informationalUrl 资源类型
 description: 应用程序的基本配置文件信息。
 localization_priority: Normal
 ms.openlocfilehash: 5085c144045631c530cbb66f5e1f27186a63b380
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513646"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548703"
 ---
-# <a name="informationalurl-resource-type"></a><span data-ttu-id="a5879-103">informationalUrl 资源类型</span><span class="sxs-lookup"><span data-stu-id="a5879-103">informationalUrl resource type</span></span>
+# <a name="informationalurl-resource-type"></a><span data-ttu-id="a85c8-103">informationalUrl 资源类型</span><span class="sxs-lookup"><span data-stu-id="a85c8-103">informationalUrl resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a5879-104">应用程序的基本配置文件信息。</span><span class="sxs-lookup"><span data-stu-id="a5879-104">Basic profile information of the application.</span></span>
+<span data-ttu-id="a85c8-104">应用程序的基本配置文件信息。</span><span class="sxs-lookup"><span data-stu-id="a85c8-104">Basic profile information of the application.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a5879-105">属性</span><span class="sxs-lookup"><span data-stu-id="a5879-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a85c8-105">属性</span><span class="sxs-lookup"><span data-stu-id="a85c8-105">Properties</span></span>
 
-| <span data-ttu-id="a5879-106">属性</span><span class="sxs-lookup"><span data-stu-id="a5879-106">Property</span></span> | <span data-ttu-id="a5879-107">类型</span><span class="sxs-lookup"><span data-stu-id="a5879-107">Type</span></span> | <span data-ttu-id="a5879-108">说明</span><span class="sxs-lookup"><span data-stu-id="a5879-108">Description</span></span> |
+| <span data-ttu-id="a85c8-106">属性</span><span class="sxs-lookup"><span data-stu-id="a85c8-106">Property</span></span> | <span data-ttu-id="a85c8-107">类型</span><span class="sxs-lookup"><span data-stu-id="a85c8-107">Type</span></span> | <span data-ttu-id="a85c8-108">说明</span><span class="sxs-lookup"><span data-stu-id="a85c8-108">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a5879-109">市场营销</span><span class="sxs-lookup"><span data-stu-id="a5879-109">marketing</span></span>|<span data-ttu-id="a5879-110">String</span><span class="sxs-lookup"><span data-stu-id="a5879-110">String</span></span>| <span data-ttu-id="a5879-111">链接到应用程序的市场营销页。</span><span class="sxs-lookup"><span data-stu-id="a5879-111">Link to the application's marketing page.</span></span> <span data-ttu-id="a5879-112">例如，https://www.contoso.com/app/marketing</span><span class="sxs-lookup"><span data-stu-id="a5879-112">For example, https://www.contoso.com/app/marketing</span></span> |
-|<span data-ttu-id="a5879-113">隐私</span><span class="sxs-lookup"><span data-stu-id="a5879-113">privacy</span></span>|<span data-ttu-id="a5879-114">String</span><span class="sxs-lookup"><span data-stu-id="a5879-114">String</span></span>| <span data-ttu-id="a5879-115">链接到应用程序的隐私声明。</span><span class="sxs-lookup"><span data-stu-id="a5879-115">Link to the application's privacy statement.</span></span> <span data-ttu-id="a5879-116">例如，https://www.contoso.com/app/privacy</span><span class="sxs-lookup"><span data-stu-id="a5879-116">For example, https://www.contoso.com/app/privacy</span></span> |
-|<span data-ttu-id="a5879-117">支持</span><span class="sxs-lookup"><span data-stu-id="a5879-117">support</span></span>|<span data-ttu-id="a5879-118">String</span><span class="sxs-lookup"><span data-stu-id="a5879-118">String</span></span>| <span data-ttu-id="a5879-119">链接到应用程序的支持网页。</span><span class="sxs-lookup"><span data-stu-id="a5879-119">Link to the application's support page.</span></span> <span data-ttu-id="a5879-120">例如，https://www.contoso.com/app/support</span><span class="sxs-lookup"><span data-stu-id="a5879-120">For example, https://www.contoso.com/app/support</span></span> |
-|<span data-ttu-id="a5879-121">termsOfService</span><span class="sxs-lookup"><span data-stu-id="a5879-121">termsOfService</span></span>|<span data-ttu-id="a5879-122">String</span><span class="sxs-lookup"><span data-stu-id="a5879-122">String</span></span>| <span data-ttu-id="a5879-123">链接到的服务语句的应用程序的术语。</span><span class="sxs-lookup"><span data-stu-id="a5879-123">Link to the application's terms of service statement.</span></span> <span data-ttu-id="a5879-124">例如，https://www.contoso.com/app/termsofservice</span><span class="sxs-lookup"><span data-stu-id="a5879-124">For example, https://www.contoso.com/app/termsofservice</span></span> |
+|<span data-ttu-id="a85c8-109">部门</span><span class="sxs-lookup"><span data-stu-id="a85c8-109">marketing</span></span>|<span data-ttu-id="a85c8-110">String</span><span class="sxs-lookup"><span data-stu-id="a85c8-110">String</span></span>| <span data-ttu-id="a85c8-111">指向应用程序的市场营销页面的链接。</span><span class="sxs-lookup"><span data-stu-id="a85c8-111">Link to the application's marketing page.</span></span> <span data-ttu-id="a85c8-112">例如，https://www.contoso.com/app/marketing</span><span class="sxs-lookup"><span data-stu-id="a85c8-112">For example, https://www.contoso.com/app/marketing</span></span> |
+|<span data-ttu-id="a85c8-113">私密性</span><span class="sxs-lookup"><span data-stu-id="a85c8-113">privacy</span></span>|<span data-ttu-id="a85c8-114">String</span><span class="sxs-lookup"><span data-stu-id="a85c8-114">String</span></span>| <span data-ttu-id="a85c8-115">指向应用程序的隐私声明的链接。</span><span class="sxs-lookup"><span data-stu-id="a85c8-115">Link to the application's privacy statement.</span></span> <span data-ttu-id="a85c8-116">例如，https://www.contoso.com/app/privacy</span><span class="sxs-lookup"><span data-stu-id="a85c8-116">For example, https://www.contoso.com/app/privacy</span></span> |
+|<span data-ttu-id="a85c8-117">支持</span><span class="sxs-lookup"><span data-stu-id="a85c8-117">support</span></span>|<span data-ttu-id="a85c8-118">String</span><span class="sxs-lookup"><span data-stu-id="a85c8-118">String</span></span>| <span data-ttu-id="a85c8-119">指向应用程序的支持页的链接。</span><span class="sxs-lookup"><span data-stu-id="a85c8-119">Link to the application's support page.</span></span> <span data-ttu-id="a85c8-120">例如，https://www.contoso.com/app/support</span><span class="sxs-lookup"><span data-stu-id="a85c8-120">For example, https://www.contoso.com/app/support</span></span> |
+|<span data-ttu-id="a85c8-121">termsOfService</span><span class="sxs-lookup"><span data-stu-id="a85c8-121">termsOfService</span></span>|<span data-ttu-id="a85c8-122">String</span><span class="sxs-lookup"><span data-stu-id="a85c8-122">String</span></span>| <span data-ttu-id="a85c8-123">指向应用程序的服务条款声明的链接。</span><span class="sxs-lookup"><span data-stu-id="a85c8-123">Link to the application's terms of service statement.</span></span> <span data-ttu-id="a85c8-124">例如，https://www.contoso.com/app/termsofservice</span><span class="sxs-lookup"><span data-stu-id="a85c8-124">For example, https://www.contoso.com/app/termsofservice</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="a5879-125">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a5879-125">JSON representation</span></span>
-<span data-ttu-id="a5879-126">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a5879-126">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a85c8-125">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a85c8-125">JSON representation</span></span>
+<span data-ttu-id="a85c8-126">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a85c8-126">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

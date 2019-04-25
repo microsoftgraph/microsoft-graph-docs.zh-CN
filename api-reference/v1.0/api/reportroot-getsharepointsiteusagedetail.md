@@ -5,29 +5,29 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 6825bfd3ec7c512559e2ebab0f04b0cd6fb38a58
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571273"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550614"
 ---
-# <a name="reportroot-getsharepointsiteusagedetail"></a><span data-ttu-id="8fd0f-103">reportRoot: getSharePointSiteUsageDetail</span><span class="sxs-lookup"><span data-stu-id="8fd0f-103">reportRoot: getSharePointSiteUsageDetail</span></span>
+# <a name="reportroot-getsharepointsiteusagedetail"></a><span data-ttu-id="6cdb7-103">reportRoot: getSharePointSiteUsageDetail</span><span class="sxs-lookup"><span data-stu-id="6cdb7-103">reportRoot: getSharePointSiteUsageDetail</span></span>
 
-<span data-ttu-id="8fd0f-104">获取 SharePoint 网站使用情况的详细信息。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-104">Get details about SharePoint site usage.</span></span>
+<span data-ttu-id="6cdb7-104">获取 SharePoint 网站使用情况的详细信息。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-104">Get details about SharePoint site usage.</span></span>
 
-> <span data-ttu-id="8fd0f-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - SharePoint 网站使用情况](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-105">**Note:** For details about different report views and names, see [Office 365 Reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).</span></span>
+> <span data-ttu-id="6cdb7-105">**注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - SharePoint 网站使用情况](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213)。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-105">**Note:** For details about different report views and names, see [Office 365 Reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8fd0f-106">权限</span><span class="sxs-lookup"><span data-stu-id="8fd0f-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6cdb7-106">权限</span><span class="sxs-lookup"><span data-stu-id="6cdb7-106">Permissions</span></span>
 
-<span data-ttu-id="8fd0f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6cdb7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="8fd0f-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="8fd0f-109">Permission type</span></span>                        | <span data-ttu-id="8fd0f-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8fd0f-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="6cdb7-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="6cdb7-109">Permission type</span></span>                        | <span data-ttu-id="6cdb7-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6cdb7-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="8fd0f-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8fd0f-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="8fd0f-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="8fd0f-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="8fd0f-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8fd0f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8fd0f-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-114">Not supported.</span></span>                           |
-| <span data-ttu-id="8fd0f-115">应用</span><span class="sxs-lookup"><span data-stu-id="8fd0f-115">Application</span></span>                            | <span data-ttu-id="8fd0f-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="8fd0f-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="6cdb7-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6cdb7-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="6cdb7-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="6cdb7-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="6cdb7-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6cdb7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6cdb7-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-114">Not supported.</span></span>                           |
+| <span data-ttu-id="6cdb7-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="6cdb7-115">Application</span></span>                            | <span data-ttu-id="6cdb7-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="6cdb7-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="8fd0f-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8fd0f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6cdb7-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6cdb7-117">HTTP request</span></span>
 
 <!-- { "blockType": "samples" } --> 
 
@@ -36,52 +36,52 @@ GET /reports/getSharePointSiteUsageDetail(period='{period_value}')
 GET /reports/getSharePointSiteUsageDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="8fd0f-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="8fd0f-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="6cdb7-118">函数参数</span><span class="sxs-lookup"><span data-stu-id="6cdb7-118">Function parameters</span></span>
 
-<span data-ttu-id="8fd0f-119">在请求 URL 中，提供以下参数之一的有效值。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-119">In the request URL, provide one of the following parameters with a valid value.</span></span>
+<span data-ttu-id="6cdb7-119">在请求 URL 中，提供以下任一参数的有效值。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-119">In the request URL, provide one of the following parameters with a valid value.</span></span>
 
-| <span data-ttu-id="8fd0f-120">参数</span><span class="sxs-lookup"><span data-stu-id="8fd0f-120">Parameter</span></span> | <span data-ttu-id="8fd0f-121">类型</span><span class="sxs-lookup"><span data-stu-id="8fd0f-121">Type</span></span>   | <span data-ttu-id="8fd0f-122">说明</span><span class="sxs-lookup"><span data-stu-id="8fd0f-122">Description</span></span>                              |
+| <span data-ttu-id="6cdb7-120">参数</span><span class="sxs-lookup"><span data-stu-id="6cdb7-120">Parameter</span></span> | <span data-ttu-id="6cdb7-121">类型</span><span class="sxs-lookup"><span data-stu-id="6cdb7-121">Type</span></span>   | <span data-ttu-id="6cdb7-122">说明</span><span class="sxs-lookup"><span data-stu-id="6cdb7-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="8fd0f-123">period</span><span class="sxs-lookup"><span data-stu-id="8fd0f-123">period</span></span>    | <span data-ttu-id="8fd0f-124">string</span><span class="sxs-lookup"><span data-stu-id="8fd0f-124">string</span></span> | <span data-ttu-id="8fd0f-125">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="8fd0f-126">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="8fd0f-127">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
-| <span data-ttu-id="8fd0f-128">date</span><span class="sxs-lookup"><span data-stu-id="8fd0f-128">date</span></span>      | <span data-ttu-id="8fd0f-129">Date</span><span class="sxs-lookup"><span data-stu-id="8fd0f-129">Date</span></span>   | <span data-ttu-id="8fd0f-130">指定要查看用户在哪个日期执行的任何活动。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-130">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="8fd0f-131">{date_value} 必须采用格式 YYYY-MM-DD。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-131">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="8fd0f-132">因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-132">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
+| <span data-ttu-id="6cdb7-123">period</span><span class="sxs-lookup"><span data-stu-id="6cdb7-123">period</span></span>    | <span data-ttu-id="6cdb7-124">string</span><span class="sxs-lookup"><span data-stu-id="6cdb7-124">string</span></span> | <span data-ttu-id="6cdb7-125">指定在多长时间内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="6cdb7-126">受支持的 {period_value} 值为：D7、D30、D90 和 D180。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="6cdb7-127">这些值采用格式 D*n*，其中 *n* 表示在多少天内聚合报表。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
+| <span data-ttu-id="6cdb7-128">date</span><span class="sxs-lookup"><span data-stu-id="6cdb7-128">date</span></span>      | <span data-ttu-id="6cdb7-129">Date</span><span class="sxs-lookup"><span data-stu-id="6cdb7-129">Date</span></span>   | <span data-ttu-id="6cdb7-130">指定要查看用户在哪个日期执行的任何活动。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-130">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="6cdb7-131">{date_value} 必须采用格式 YYYY-MM-DD。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-131">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="6cdb7-132">因为此报表的有效期仅为过去 30 天，所以 {date_value} 应为这个范围内的日期。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-132">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
 
-> <span data-ttu-id="8fd0f-133">**注意：** 需要在 URL 中设置 period 或 date。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-133">**Note:** You need to set either period or date in the URL.</span></span>
+> <span data-ttu-id="6cdb7-133">**注意：** 需要在 URL 中设置 period 或 date。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-133">**Note:** You need to set either period or date in the URL.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="8fd0f-134">请求头</span><span class="sxs-lookup"><span data-stu-id="8fd0f-134">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6cdb7-134">请求标头</span><span class="sxs-lookup"><span data-stu-id="6cdb7-134">Request headers</span></span>
 
-| <span data-ttu-id="8fd0f-135">名称</span><span class="sxs-lookup"><span data-stu-id="8fd0f-135">Name</span></span>          | <span data-ttu-id="8fd0f-136">说明</span><span class="sxs-lookup"><span data-stu-id="8fd0f-136">Description</span></span>                              |
+| <span data-ttu-id="6cdb7-135">名称</span><span class="sxs-lookup"><span data-stu-id="6cdb7-135">Name</span></span>          | <span data-ttu-id="6cdb7-136">说明</span><span class="sxs-lookup"><span data-stu-id="6cdb7-136">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="8fd0f-137">Authorization</span><span class="sxs-lookup"><span data-stu-id="8fd0f-137">Authorization</span></span> | <span data-ttu-id="8fd0f-p104">持有者{令牌}。必需。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-p104">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="8fd0f-140">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="8fd0f-140">If-None-Match</span></span> | <span data-ttu-id="8fd0f-141">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-141">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="8fd0f-142">可选。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-142">Optional.</span></span> |
+| <span data-ttu-id="6cdb7-137">Authorization</span><span class="sxs-lookup"><span data-stu-id="6cdb7-137">Authorization</span></span> | <span data-ttu-id="6cdb7-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-p104">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="6cdb7-140">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="6cdb7-140">If-None-Match</span></span> | <span data-ttu-id="6cdb7-141">如果包含此请求头，且提供的 eTag 与文件中的当前标记一致，返回的是 `304 Not Modified` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-141">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="6cdb7-142">可选。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-142">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="8fd0f-143">响应</span><span class="sxs-lookup"><span data-stu-id="8fd0f-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6cdb7-143">响应</span><span class="sxs-lookup"><span data-stu-id="6cdb7-143">Response</span></span>
 
-<span data-ttu-id="8fd0f-144">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-144">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="8fd0f-145">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-145">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="6cdb7-144">如果成功，此方法返回 `302 Found` 响应，以重定向到报表的预先验证的下载 URL。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-144">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="6cdb7-145">可以在响应的 `Location` 头中找到此 URL。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-145">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="8fd0f-146">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-146">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="6cdb7-146">预先验证的下载 URL 的有效时间很短（几分钟），不需要 `Authorization` 头。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-146">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="8fd0f-147">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-147">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="6cdb7-147">CSV 文件包含下面的列标题。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-147">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="8fd0f-148">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="8fd0f-148">Report Refresh Date</span></span>
-- <span data-ttu-id="8fd0f-149">网站 Id</span><span class="sxs-lookup"><span data-stu-id="8fd0f-149">Site Id</span></span>
-- <span data-ttu-id="8fd0f-150">网站 URL</span><span class="sxs-lookup"><span data-stu-id="8fd0f-150">Site URL</span></span>
-- <span data-ttu-id="8fd0f-151">所有者显示名称</span><span class="sxs-lookup"><span data-stu-id="8fd0f-151">Owner Display Name</span></span>
-- <span data-ttu-id="8fd0f-152">已删除</span><span class="sxs-lookup"><span data-stu-id="8fd0f-152">Is Deleted</span></span>
-- <span data-ttu-id="8fd0f-153">上次活动日期</span><span class="sxs-lookup"><span data-stu-id="8fd0f-153">Last Activity Date</span></span>
-- <span data-ttu-id="8fd0f-154">文件数</span><span class="sxs-lookup"><span data-stu-id="8fd0f-154">File Count</span></span>
-- <span data-ttu-id="8fd0f-155">活跃文件数</span><span class="sxs-lookup"><span data-stu-id="8fd0f-155">Active File Count</span></span>
-- <span data-ttu-id="8fd0f-156">页面浏览量</span><span class="sxs-lookup"><span data-stu-id="8fd0f-156">Page View Count</span></span>
-- <span data-ttu-id="8fd0f-157">访问过的页面数</span><span class="sxs-lookup"><span data-stu-id="8fd0f-157">Visited Page Count</span></span>
-- <span data-ttu-id="8fd0f-158">已使用的存储（字节）</span><span class="sxs-lookup"><span data-stu-id="8fd0f-158">Storage Used (Byte)</span></span>
-- <span data-ttu-id="8fd0f-159">已分配的存储（字节）</span><span class="sxs-lookup"><span data-stu-id="8fd0f-159">Storage Allocated (Byte)</span></span>
-- <span data-ttu-id="8fd0f-160">根网站模板</span><span class="sxs-lookup"><span data-stu-id="8fd0f-160">Root Web Template</span></span>
-- <span data-ttu-id="8fd0f-161">报表周期</span><span class="sxs-lookup"><span data-stu-id="8fd0f-161">Report Period</span></span>
+- <span data-ttu-id="6cdb7-148">报表刷新日期</span><span class="sxs-lookup"><span data-stu-id="6cdb7-148">Report Refresh Date</span></span>
+- <span data-ttu-id="6cdb7-149">网站 Id</span><span class="sxs-lookup"><span data-stu-id="6cdb7-149">Site Id</span></span>
+- <span data-ttu-id="6cdb7-150">网站 URL</span><span class="sxs-lookup"><span data-stu-id="6cdb7-150">Site URL</span></span>
+- <span data-ttu-id="6cdb7-151">所有者显示名称</span><span class="sxs-lookup"><span data-stu-id="6cdb7-151">Owner Display Name</span></span>
+- <span data-ttu-id="6cdb7-152">已删除</span><span class="sxs-lookup"><span data-stu-id="6cdb7-152">Is Deleted</span></span>
+- <span data-ttu-id="6cdb7-153">上次活动日期</span><span class="sxs-lookup"><span data-stu-id="6cdb7-153">Last Activity Date</span></span>
+- <span data-ttu-id="6cdb7-154">文件数</span><span class="sxs-lookup"><span data-stu-id="6cdb7-154">File Count</span></span>
+- <span data-ttu-id="6cdb7-155">活跃文件数</span><span class="sxs-lookup"><span data-stu-id="6cdb7-155">Active File Count</span></span>
+- <span data-ttu-id="6cdb7-156">页面浏览量</span><span class="sxs-lookup"><span data-stu-id="6cdb7-156">Page View Count</span></span>
+- <span data-ttu-id="6cdb7-157">访问过的页面数</span><span class="sxs-lookup"><span data-stu-id="6cdb7-157">Visited Page Count</span></span>
+- <span data-ttu-id="6cdb7-158">已使用的存储（字节）</span><span class="sxs-lookup"><span data-stu-id="6cdb7-158">Storage Used (Byte)</span></span>
+- <span data-ttu-id="6cdb7-159">已分配的存储（字节）</span><span class="sxs-lookup"><span data-stu-id="6cdb7-159">Storage Allocated (Byte)</span></span>
+- <span data-ttu-id="6cdb7-160">根网站模板</span><span class="sxs-lookup"><span data-stu-id="6cdb7-160">Root Web Template</span></span>
+- <span data-ttu-id="6cdb7-161">报表周期</span><span class="sxs-lookup"><span data-stu-id="6cdb7-161">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="8fd0f-162">示例</span><span class="sxs-lookup"><span data-stu-id="8fd0f-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6cdb7-162">示例</span><span class="sxs-lookup"><span data-stu-id="6cdb7-162">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="8fd0f-163">请求</span><span class="sxs-lookup"><span data-stu-id="8fd0f-163">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="6cdb7-163">请求</span><span class="sxs-lookup"><span data-stu-id="6cdb7-163">Request</span></span>
 
-<span data-ttu-id="8fd0f-164">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-164">The following is an example of the request.</span></span>
+<span data-ttu-id="6cdb7-164">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-164">The following is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -93,9 +93,9 @@ GET /reports/getSharePointSiteUsageDetail(date={date_value})
 GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageDetail(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="8fd0f-165">响应</span><span class="sxs-lookup"><span data-stu-id="8fd0f-165">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="6cdb7-165">响应</span><span class="sxs-lookup"><span data-stu-id="6cdb7-165">Response</span></span>
 
-<span data-ttu-id="8fd0f-166">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-166">The following is an example of the response.</span></span>
+<span data-ttu-id="6cdb7-166">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-166">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -109,7 +109,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="8fd0f-167">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="8fd0f-167">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="6cdb7-167">执行 302 重定向，下载的 CSV 文件将采用以下架构。</span><span class="sxs-lookup"><span data-stu-id="6cdb7-167">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
