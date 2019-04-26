@@ -1,13 +1,13 @@
 ---
 title: internetMessageHeader 资源类型
-description: '表示由 RFC5322，提供定义 Internet 邮件头，键 / 值对 '
+description: '表示 Internet 邮件头 (由 RFC5322 定义) 的键/值对, 可提供 '
 localization_priority: Normal
 ms.openlocfilehash: 2a8dd616ffe8417a5064c0a98976d512b1279704
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567513"
 ---
 # <a name="internetmessageheader-resource-type"></a>internetMessageHeader 资源类型
 

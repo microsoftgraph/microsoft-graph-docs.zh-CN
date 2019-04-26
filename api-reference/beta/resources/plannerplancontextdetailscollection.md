@@ -5,22 +5,22 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: ca1625a4bf137fc14cc780df4d4d1e5ec3bb226e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642938"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571854"
 ---
 # <a name="plannerplancontextdetailscollection-resource-type"></a>plannerPlanContextDetailsCollection 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-**PlannerPlanContextDetailsCollection**资源表示的外部上下文计划链接到的集合。 此资源是开放的类型， [plannerPlanDetails](plannerplandetails.md)对象的一部分。 中的属性值对的属性名称是上下文; 特定于应用程序的标识符值是[plannerPlanContextDetails](plannerplancontextdetails.md)对象。
+**plannerPlanContextDetailsCollection**资源表示规划所链接到的外部上下文的集合。 此资源是打开的类型, 并且是[plannerPlanDetails](plannerplandetails.md)对象的一部分。 属性值对中的属性名称是上下文特定于应用程序的标识符;值是[plannerPlanContextDetails](plannerplancontextdetails.md)对象。
 
 
 ## <a name="properties"></a>属性
-打开类型的属性可定义由客户端。 在这种情况下，客户应使用的独特的标识符值，该值代表外部上下文与属性名称。 属性值必须是[plannerPlanContextDetails](plannerplancontextdetails.md)对象。 基于 OData，在打开的类型的属性名称不能包含下列字符： `.`， `:`， `@`， `%`。 需要 URL 编码格式编码这些字符。 在收藏夹列表中删除项目，需要的值从集合中删除[plannerPlanContextCollection](plannerplancontextcollection.md)相反，其自动将此对象中删除的项。
+可由客户端定义打开类型的属性。 在这种情况下, 客户端应使用表示外部上下文的独特标识符作为属性名称。 属性值必须是[plannerPlanContextDetails](plannerplancontextdetails.md)对象。 根据 OData, 开放式类型中的属性名称不能包含以下字符: `.`、 `:`、 `@`、 `%`。 需要使用 URL 编码格式对这些字符进行编码。 若要删除收藏夹列表中的项, 需要从[plannerPlanContextCollection](plannerplancontextcollection.md)集合中删除此值, 这将自动删除此对象中的条目。
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

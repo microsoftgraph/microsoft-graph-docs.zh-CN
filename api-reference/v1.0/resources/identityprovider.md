@@ -5,11 +5,11 @@ localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f251853704edd644f615ab986cc3188608fbbe05
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29649374"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567555"
 ---
 # <a name="identityprovider-resource-type"></a>identityProvider 资源类型
 

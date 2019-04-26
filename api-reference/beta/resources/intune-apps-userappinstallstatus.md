@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3efd555f4b4a728e9a4ae660eac9568cb7e3b2a9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791115"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555106"
 ---
 # <a name="userappinstallstatus-resource-type"></a>userAppInstallStatus 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "31791115"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |userName|String|用户名。|
 |userPrincipalName|String|用户主体名称。|
 |installedDeviceCount|Int32|已安装设备的计数。|

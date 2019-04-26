@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b9a857f127848f1ed0da8de673902527e3858ffe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970386"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569037"
 ---
 # <a name="chartseries-resource-type"></a>ChartSeries 资源类型
 
@@ -32,11 +32,11 @@ ms.locfileid: "27970386"
 |:---------------|:--------|:----------|
 |name|string|表示图表中某个系列的名称。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |format|[WorkbookChartSeriesFormat](chartseriesformat.md)|表示图表系列的格式，包括填充和线条格式。只读。|
-|points|[WorkbookChartPoint](chartpoint.md)集合|表示系列中所有数据点的集合。只读。|
+|points|[WorkbookChartPoint](chartpoint.md)集合|表示系列中所有数据点的集合。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c4db2473213e879b7beee7f082767bb4a9f63aee
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772109"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551783"
 ---
 # <a name="officeupdatechannel-enum-type"></a>officeUpdateChannel 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31772109"
 |:---|:---|:---|
 |无|0|尚未记录|
 |目前|1|尚未记录|
-|关联表|双面|尚未记录|
-|firstReleaseCurrent|第三章|尚未记录|
-|firstReleaseDeferred|4|尚未记录|
+|关联表|2 |尚未记录|
+|firstReleaseCurrent|3 |尚未记录|
+|firstReleaseDeferred|4 |尚未记录|
 
 
 

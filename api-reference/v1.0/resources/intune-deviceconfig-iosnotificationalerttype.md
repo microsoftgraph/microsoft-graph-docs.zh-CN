@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6165149ea01f91720ba9b65d185ca2ecdf8820a0
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253279"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554672"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>iosNotificationAlertType 枚举类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "30253279"
 |:---|:---|:---|
 |deviceDefault|0|设备默认值, 无意向。|
 |分隔|1|分隔.|
-|modal|双面|适合.|
-|无|第三章|无。|
+|适合|2 |适合.|
+|无|3 |无。|
 
 
 

@@ -1,26 +1,26 @@
 ---
-title: 列出 licenseDetails
-description: 检索 licenseDetails 对象列表。
+title: List licenseDetails
+description: 检索 licenseDetails 对象的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0ad9b10a377e89858cad03d3eabe4e62a4f86627
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931823"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571385"
 ---
-# <a name="list-licensedetails"></a>列出 licenseDetails
+# <a name="list-licensedetails"></a>List licenseDetails
 
-检索 licenseDetails 对象列表。
+检索 licenseDetails 对象的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
+|委派（工作或学校帐户） | user. read, user. all, all, all, directory.accessasuser.all, all, all, all, all。 all    |
 |委派（个人 Microsoft 帐户） | User.Read    |
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
@@ -31,19 +31,19 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-该方法**不**支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+此方法**不**支持[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者&lt;代码&gt;|
+| Authorization  | 持有&lt;者代码&gt;|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [licenseDetails](../resources/licensedetails.md) 对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[licenseDetails](../resources/licensedetails.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 

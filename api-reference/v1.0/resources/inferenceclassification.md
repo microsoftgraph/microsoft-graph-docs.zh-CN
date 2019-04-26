@@ -3,11 +3,11 @@ title: inferenceClassification 资源类型
 description: '用户邮件分类，确保仅关注对用户更相关或更重要的邮件。 '
 localization_priority: Normal
 ms.openlocfilehash: 8dfd76b31e452532181b46cdb0b5c321e92273a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840724"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567506"
 ---
 # <a name="inferenceclassification-resource-type"></a>inferenceClassification 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "27840724"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|ID|string| 只读。|
+|id|string| 只读。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |替代|[inferenceClassificationOverride](inferenceclassificationoverride.md) 集合| 用户始终按某种方式（`focused` 或 `other`）对来自特定发件人的邮件分类的一组替代。只读。可为 null。|

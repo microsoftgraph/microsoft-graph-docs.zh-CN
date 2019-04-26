@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8899696ace2011440b641ae83849a179dbfd6438
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802833"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555036"
 ---
 # <a name="weeklyschedule-enum-type"></a>weeklySchedule 枚举类型
 
@@ -24,13 +24,13 @@ ms.locfileid: "31802833"
 |:---|:---|:---|
 |定制|0|用户定义, 默认值, 无意向。|
 |日常|1|日常.|
-|日|双面|星期日。|
-|星期一|第三章|星期一。|
-|2001|4|星期二。|
-|星期三|5|星期三。|
-|星期三|型|星期四。|
-|之前|步|星期五。|
-|星期六|utf-8|星期六。|
+|日|2 |星期日。|
+|星期一|3 |星期一。|
+|2001|4 |星期二。|
+|星期三|5 |星期三。|
+|星期三|6 |星期四。|
+|之前|7 |星期五。|
+|星期六|8 |星期六。|
 
 
 

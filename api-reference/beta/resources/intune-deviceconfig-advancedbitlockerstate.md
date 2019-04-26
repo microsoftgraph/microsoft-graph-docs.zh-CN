@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4414aceaa9ce2a317389660959a2b73234e82185
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785382"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556688"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>advancedBitLockerState 枚举类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "31785382"
 |:---|:---|:---|
 |success|0|高级 BitLocker 状态成功|
 |noUserConsent|1|用户永远不同意加密|
-|osVolumeEncryptionMethodMismatch|双面|OS 卷的加密方法与策略设置的不同|
-|osVolumeTpmRequired|4|TPM 不用于保护 OS 卷, 但策略是必需的|
-|osVolumeTpmOnlyRequired|utf-8|仅 TPM 保护未用于 OS 卷, 但策略是必需的|
-|osVolumeTpmPinRequired|位|TPM + PIN 保护不用于 OS 卷, 但策略要求|
+|osVolumeEncryptionMethodMismatch|2 |OS 卷的加密方法与策略设置的不同|
+|osVolumeTpmRequired|4 |TPM 不用于保护 OS 卷, 但策略是必需的|
+|osVolumeTpmOnlyRequired|8 |仅 TPM 保护未用于 OS 卷, 但策略是必需的|
+|osVolumeTpmPinRequired|16 |TPM + PIN 保护不用于 OS 卷, 但策略要求|
 |osVolumeTpmStartupKeyRequired|32|TPM + 启动密钥保护不用于 OS 卷, 但策略要求|
 |osVolumeTpmPinStartupKeyRequired|64|TPM + PIN + 启动密钥不用于 OS 卷, 但策略是必需的|
 |osVolumeUnprotected|128|检测到未受保护的 OS 卷|

@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 06f58e436d0e4b2225013cda90c45d51a7da23cb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941931"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555120"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -48,7 +48,7 @@ POST /directory/deletedItems/{id}/restore
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;code&gt;。*必需*|
-| Accept | application/json |
+| 接受 | application/json |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

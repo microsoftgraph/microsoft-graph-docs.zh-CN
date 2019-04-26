@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d39e625d24d6ab8486bc281be957ef8728d4403b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786096"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556156"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>editionUpgradeLicenseType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31786096"
 |:---|:---|:---|
 |productKey|0|产品密钥类型|
 |licenseFile|1|许可证文件类型|
-|notConfigured|双面|NotConfigured|
+|notConfigured|2 |NotConfigured|
 
 
 

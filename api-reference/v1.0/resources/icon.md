@@ -3,11 +3,11 @@ title: 图标资源类型
 description: 表示单元格图标。
 localization_priority: Normal
 ms.openlocfilehash: 833fa4cb4061a96b01077c3adeb7dcaed49e0a02
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567807"
 ---
 # <a name="icon-resource-type"></a>图标资源类型
 
@@ -19,15 +19,15 @@ ms.locfileid: "27872567"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取图标](../api/icon-get.md) | [Icon](icon.md) |读取 icon 对象的属性和关系。|
-|[Update](../api/icon-update.md) | [Icon](icon.md)  |更新 icon 对象。 |
+|[更新](../api/icon-update.md) | [图标](icon.md)  |更新 icon 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|int|表示给定集合中图标的索引。|
-|set|string|表示的图标集。 可能的值为： `Invalid`， `ThreeArrows`， `ThreeArrowsGray`， `ThreeFlags`， `ThreeTrafficLights1`， `ThreeTrafficLights2`， `ThreeSigns`， `ThreeSymbols`， `ThreeSymbols2`， `FourArrows`， `FourArrowsGray`， `FourRedToBlack`， `FourRating`， `FourTrafficLights`， `FiveArrows`， `FiveArrowsGray`， `FiveRating`， `FiveQuarters`， `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
+|set|string|表示图标所属的集合。 可能的值为: `Invalid`、 `ThreeArrows`、 `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack` `FourRating`、、、、、、、、、、、、、、、、 `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 

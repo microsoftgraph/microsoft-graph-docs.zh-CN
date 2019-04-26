@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e8c575b1b39592eb8191e358563abb6d6bd834e7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802350"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556359"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>androidDeviceOwnerRequiredPasswordType 枚举类型
 
@@ -24,12 +24,12 @@ Android 设备所有者策略需要密码类型。
 |:---|:---|:---|
 |deviceDefault|0|设备默认值, 无意向。|
 |必需|1|必须设置密码, 但类型没有限制。|
-|位数|双面|至少为数值。|
-|numericComplex|第三章|至少不带重复或有序序列的数字。|
-|字母|4|至少为字母密码。|
-|字母数字|5|至少为字母数字密码|
-|alphanumericWithSymbols|型|至少带有符号的字母数字。|
-|lowSecurityBiometric|步|要求低安全基于生物特征的密码。|
+|位数|2 |至少为数值。|
+|numericComplex|3 |至少不带重复或有序序列的数字。|
+|字母|4 |至少为字母密码。|
+|字母数字|5 |至少为字母数字密码|
+|alphanumericWithSymbols|6 |至少带有符号的字母数字。|
+|lowSecurityBiometric|7 |要求低安全基于生物特征的密码。|
 
 
 

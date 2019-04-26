@@ -3,11 +3,11 @@ title: 实体资源类型
 description: 无
 localization_priority: Normal
 ms.openlocfilehash: e0903ef3b90a0c176881bbee2aa5aafca4032ccc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810953"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555876"
 ---
 # <a name="entity-resource-type"></a>实体资源类型
 
@@ -16,7 +16,7 @@ ms.locfileid: "27810953"
 |:---------------|:--------|:----------|
 |id|String| 只读。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式

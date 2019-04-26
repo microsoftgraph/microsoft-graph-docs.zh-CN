@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 57dcba3a91b15b4980d9e76b7aad6251008f5966
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577429"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555289"
 ---
 # <a name="yammer-device-usage-reports"></a>Yammer 设备使用情况报表
 

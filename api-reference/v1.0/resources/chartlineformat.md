@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9da0c29acf49d0e183a2ded4652fe0972f21bf76
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925915"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569030"
 ---
 # <a name="chartlineformat-resource-type"></a>ChartLineFormat 资源类型
 
@@ -22,14 +22,14 @@ ms.locfileid: "27925915"
 |:---------------|:--------|:----------|
 |[获取 ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |读取 chartLineFormat 对象的属性和关系。|
 |[更新](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md) |更新 ChartLineFormat 对象。 |
-|[Clear](../api/chartlineformat-clear.md)|无|清除图表元素的线条格式。|
+|[清除](../api/chartlineformat-clear.md)|无|清除图表元素的线条格式。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |color|string|表示图表中的线条颜色的 HTML 颜色代码。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 

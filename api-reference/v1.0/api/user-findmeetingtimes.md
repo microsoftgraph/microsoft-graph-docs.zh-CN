@@ -5,11 +5,11 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 661b2f25f14baddd04e15c7a9fcf38d9f1df4079
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936351"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567870"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 根据组织者和与会者的空闲状况以及指定为参数的时间或位置，推荐会议时间和位置。

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 741565678be1bfb533c4445c02c767f87fdfca05
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781083"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556086"
 ---
 # <a name="folderprotectiontype-enum-type"></a>folderProtectionType 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31781083"
 |:---|:---|:---|
 |定制|0|设备默认值, 无意向。|
 |启用|1|阻止功能。|
-|auditMode|双面|允许功能, 但生成日志。|
-|blockDiskModification|第三章|阻止不受信任的应用写入磁盘扇区。|
-|auditDiskModification|4|在不受信任的应用写入磁盘扇区时生成日志。|
+|auditMode|2 |允许功能, 但生成日志。|
+|blockDiskModification|3 |阻止不受信任的应用写入磁盘扇区。|
+|auditDiskModification|4 |在不受信任的应用写入磁盘扇区时生成日志。|
 
 
 

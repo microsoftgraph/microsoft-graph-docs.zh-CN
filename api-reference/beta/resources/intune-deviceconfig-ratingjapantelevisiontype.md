@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 11d65f44791ebbaeac35c6814070b9b707f9a268
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788455"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556870"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>ratingJapanTelevisionType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31788455"
 |:---|:---|:---|
 |allAllowed|0|默认值, 允许所有电视节目内容|
 |allBlocked|1|不允许任何电视显示内容|
-|explicitAllowed|双面|明确允许所有电视内容|
+|explicitAllowed|2 |明确允许所有电视内容|
 
 
 

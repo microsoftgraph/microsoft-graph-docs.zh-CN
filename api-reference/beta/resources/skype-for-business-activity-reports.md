@@ -1,21 +1,21 @@
 ---
 title: Skype for Business 活动报表
-description: 您的组织内，可以在活动上获取详细信息。 这些详细信息有助于为组织调查、计划和做出其他业务决策。
+description: 你可以在组织中获取活动的详细信息。 这些详细信息有助于为组织调查、计划和制定其他业务决策。
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 3f843efc6834ee59872e7bf750174558cdb0a103
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577380"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551902"
 ---
-# <a name="skype-for-business-activity-reports"></a>Skype for Business 活动报表
+# <a name="skype-for-business-activity-reports"></a>Skype for Business 活动报告
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-您的组织内，可以在活动上获取详细信息。 这些详细信息有助于为组织调查、计划和做出其他业务决策。
+你可以在组织中获取活动的详细信息。 这些详细信息有助于为组织调查、计划和做出其他业务决策。
 
 > **注意：** 若要详细了解不同的报表视图和名称，请参阅 [Office 365 报表 - Skype for Business 活动](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424)。
 

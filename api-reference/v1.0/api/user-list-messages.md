@@ -5,11 +5,11 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: dd3a5cbf3e5f4ee87b74602187c230f6be92940a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799907"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571273"
 ---
 # <a name="list-messages"></a>列出邮件
 

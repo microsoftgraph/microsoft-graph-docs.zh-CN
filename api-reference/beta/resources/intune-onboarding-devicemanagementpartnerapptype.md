@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c323be6c5e18d72508088ee4387cdcfdf7da234e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773614"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566547"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>deviceManagementPartnerAppType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31773614"
 |:---|:---|:---|
 |unknown|0|合作伙伴应用类型未知。|
 |singleTenantApp|1|合作伙伴应用程序是 AAD 中的单个租户。|
-|multiTenantApp|双面|AAD 中的合作伙伴应用程序是多租户。|
+|multiTenantApp|2 |AAD 中的合作伙伴应用程序是多租户。|
 
 
 

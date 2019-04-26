@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8b967a654bfda0a0afe44496654412496984e356
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775861"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555050"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>welcomeScreenMeetingInformation 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31775861"
 |:---|:---|:---|
 |定制|0|用户定义, 默认值, 无意向。|
 |showOrganizerAndTimeOnly|1|仅显示组织者和时间。|
-|showOrganizerAndTimeAndSubject|双面|显示组织者、时间和主题 (为私人会议隐藏主题)。|
+|showOrganizerAndTimeAndSubject|2 |显示组织者、时间和主题 (为私人会议隐藏主题)。|
 
 
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: cf2c6ccec71eed225b87a52a3e5941f54b606b01
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518565"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556430"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -17,7 +17,7 @@ ms.locfileid: "31518565"
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
-- [管理员许可](intune-devices-adminconsent.md)
+- [管理员同意](intune-devices-adminconsent.md)
 - [管理员许可状态](intune-devices-adminconsentstate.md)
 - [应用日志集下载详情](intune-devices-applogcollectiondownloaddetails.md)
 - [应用日志集请求](intune-devices-applogcollectionrequest.md)
@@ -107,15 +107,15 @@ ms.locfileid: "31518565"
 - [硬件信息](intune-devices-hardwareinformation.md)
 - [运行状况](intune-devices-healthstate.md)
 - [每小时计划](intune-devices-hourlyschedule.md)
-- [已本地化的通知消息](intune-notification-localizednotificationmessage.md)
+- [已本地化的通知邮件](intune-notification-localizednotificationmessage.md)
 - [查找设备操作结果](intune-devices-locatedeviceactionresult.md)
 - [位置管理条件](intune-fencing-locationmanagementcondition.md)
 - [登录用户](intune-devices-loggedonuser.md)
 - [丢失模式状态](intune-devices-lostmodestate.md)
-- [托管的设备](intune-devices-manageddevice.md)
+- [托管设备](intune-devices-manageddevice.md)
 - [托管设备清理设置](intune-devices-manageddevicecleanupsettings.md)
 - [托管设备型号和制造商](intune-devices-manageddevicemodelsandmanufacturers.md)
-- [托管的设备概述](intune-devices-manageddeviceoverview.md)
+- [托管设备概述](intune-devices-manageddeviceoverview.md)
 - [托管的设备所有者类型](intune-devices-manageddeviceownertype.md)
 - [托管的设备合作伙伴报告的运行状况](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [托管设备远程操作](intune-devices-manageddeviceremoteaction.md)

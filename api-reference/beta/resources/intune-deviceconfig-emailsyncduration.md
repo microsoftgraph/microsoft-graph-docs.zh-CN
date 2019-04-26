@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0f66f3abc888205c66745906da0a8803c18b4522
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779186"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556212"
 ---
 # <a name="emailsyncduration-enum-type"></a>emailSyncDuration 枚举类型
 
@@ -24,11 +24,11 @@ ms.locfileid: "31779186"
 |:---|:---|:---|
 |定制|0|用户定义, 默认值, 无意向。|
 |oneDay|1|同步一天的电子邮件。|
-|threeDays|双面|同步三天的电子邮件。|
-|oneWeek|第三章|同步一周电子邮件。|
-|twoWeeks|4|同步两周的电子邮件。|
-|oneMonth|5|同步一个月的电子邮件。|
-|不限制|型|同步无限制的电子邮件持续时间。|
+|threeDays|2 |同步三天的电子邮件。|
+|oneWeek|3 |同步一周电子邮件。|
+|twoWeeks|4 |同步两周的电子邮件。|
+|oneMonth|5 |同步一个月的电子邮件。|
+|不限制|6 |同步无限制的电子邮件持续时间。|
 
 
 

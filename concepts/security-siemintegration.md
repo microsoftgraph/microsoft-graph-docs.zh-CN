@@ -5,11 +5,11 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.openlocfilehash: 92a5416f68ccbc6fbbd0001c473f1daf2fe21187
-ms.sourcegitcommit: 10adbecb5f82556e5acc2301fc226ae6884e142b
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693685"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556927"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-a-siem"></a>将 Microsoft Graph 安全性 API 警报与 SIEM 集成
 

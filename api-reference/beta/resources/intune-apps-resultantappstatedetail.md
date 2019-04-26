@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0bf9a2bb6a27bde43cd0467a106af8f593aaf02a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801538"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551839"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31801538"
 |:---|:---|:---|
 |noAdditionalDetails|0|没有可用的其他详细信息。|
 |dependencyFailedToInstall|1|一个或多个应用程序的依存关系未能安装。|
-|dependencyWithRequirementsNotMet|双面|一个或多个应用程序的依赖项具有未满足的要求。|
-|dependencyPendingReboot|第三章|一个或多个应用程序的依赖项需要重新启动设备才能完成安装。|
-|dependencyWithAutoInstallDisabled|4|一个或多个应用程序的依赖项配置为不自动安装。|
+|dependencyWithRequirementsNotMet|2 |一个或多个应用程序的依赖项具有未满足的要求。|
+|dependencyPendingReboot|3 |一个或多个应用程序的依赖项需要重新启动设备才能完成安装。|
+|dependencyWithAutoInstallDisabled|4 |一个或多个应用程序的依赖项配置为不自动安装。|
 |seeInstallErrorCode|2000|应用程序安装失败。 有关更多详细信息, 请参阅错误代码属性。|
 |autoInstallDisabled|3000|将应用程序配置为不会自动安装。|
 |seeUninstallErrorCode|4000|应用程序卸载失败。 有关更多详细信息, 请参阅错误代码属性。|

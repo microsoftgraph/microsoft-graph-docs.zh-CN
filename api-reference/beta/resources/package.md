@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 程序包
 localization_priority: Normal
 ms.openlocfilehash: bcfc1a1e754286566c8b24b9b00c7f2eb0721316
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482383"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568584"
 ---
 # <a name="package-resource-type"></a>包资源类型
 

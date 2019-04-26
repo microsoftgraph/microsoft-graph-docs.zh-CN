@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e0b26daab72e7910f0796cee226f8c722cee6822
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553923"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>remoteAssistanceOnboardingStatus 枚举类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30258567"
 |:---|:---|:---|
 |notOnboarded|0|尚未记录|
 |加入|1|尚未记录|
-|载入|双面|尚未记录|
+|载入|2 |尚未记录|
 
 
 

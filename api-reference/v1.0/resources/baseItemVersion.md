@@ -3,11 +3,11 @@ title: BaseItemVersion 资源类型
 description: '**baseItemVersion** 资源表示项或实体的以前版本。'
 localization_priority: Normal
 ms.openlocfilehash: bd28f9c8dc5be2bc6422aca2eb756aba78b8e393
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876963"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569436"
 ---
 # <a name="baseitemversion-resource-type"></a>BaseItemVersion 资源类型
 

@@ -1,13 +1,13 @@
 ---
 title: 服务根
-description: 2015-10-25 14:57:30 UTC->
+description: 2015-10-25 14:57:30 UTC-->
 localization_priority: Normal
 ms.openlocfilehash: 5e9c464c50dcbef7a03ca3a2fc2b0aaac40fbb30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524308"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554880"
 ---
 # <a name="service-root"></a>服务根
 
@@ -30,10 +30,10 @@ ms.locfileid: "29524308"
 |[列出组](../api/group-list.md) | [组](group.md) 集合 |获取 group 对象集合。 |
 |[列出组织](../api/organization-list.md) | [组织](organization.md) 集合 |获取 organization 对象集合。 |
 |[列出 subscribedSku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |获取 subscribedSku 对象集合。 |
-|[创建用户](../api/user-post-users.md) |[用户](user.md)| 通过发布到用户集合创建新用户。|
+|[Create user](../api/user-post-users.md) |[user](user.md)| 通过发布到用户集合创建新用户。|
 |[列出用户](../api/user-list.md) | [用户](user.md) 集合 |获取 user 对象集合。 |
-|[创建 connectorGroup](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|通过发布到 connectorGroups 集合中创建新 connectorGroup。|
-|[列表 connectorGroup](../api/connectorgroup-list.md) | [connectorGroup](connectorgroup.md)集合 |获取 connectorGroup 对象集合。 |
+|[创建 connectorGroup](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|通过发布到 connectorGroups 集合创建新的 connectorGroup。|
+|[列出 connectorGroup](../api/connectorgroup-list.md) | [connectorGroup](connectorgroup.md)集合 |获取 connectorGroup 对象集合。 |
 |[列表连接器](../api/connector-list.md) | [连接器](connector.md)集合 |获取连接器对象集合。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

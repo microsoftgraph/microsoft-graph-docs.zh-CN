@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a9f3d7ebb6e44224d637a59220acc9d17c449871
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262795"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571112"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>windowsHelloForBusinessPinUsage 枚举类型
 
@@ -22,7 +22,7 @@ Windows Hello 企业版 pin 使用选项
 |:---|:---|:---|
 |支持|0|尚未记录|
 |必需|1|尚未记录|
-|许可证|双面|尚未记录|
+|许可证|2 |尚未记录|
 
 
 

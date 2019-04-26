@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ec6c8f9a5300fb15ef8004322e06cc0cc2b28750
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799011"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556317"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>androidForWorkCrossProfileDataSharingType 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31799011"
 |:---|:---|:---|
 |deviceDefault|0|设备默认值, 无意向。|
 |preventAny|1|阻止任何共享。|
-|allowPersonalToWork|双面|允许从个人配置文件到工作配置文件的数据共享请求。|
-|noRestrictions|第三章|共享没有限制。|
+|allowPersonalToWork|2 |允许从个人配置文件到工作配置文件的数据共享请求。|
+|noRestrictions|3 |共享没有限制。|
 
 
 

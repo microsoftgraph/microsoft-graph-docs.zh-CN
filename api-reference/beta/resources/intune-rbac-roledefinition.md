@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fca5f91c5ca708f715b1438f2fe8508060e3b91c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772004"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566330"
 ---
 # <a name="roledefinition-resource-type"></a>roleDefinition 资源类型
 
@@ -22,23 +22,23 @@ ms.locfileid: "31772004"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 roleDefinitions](../api/intune-rbac-roledefinition-list.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md) 集合|列出 [roleDefinition](../resources/intune-rbac-roledefinition.md) 对象的属性和关系。|
-|[获取 roleDefinition](../api/intune-rbac-roledefinition-get.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|读取 [roleDefinition](../resources/intune-rbac-roledefinition.md) 对象的属性和关系。|
-|[创建 roleDefinition](../api/intune-rbac-roledefinition-create.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|创建新的 [roleDefinition](../resources/intune-rbac-roledefinition.md) 对象。|
-|[删除 roleDefinition](../api/intune-rbac-roledefinition-delete.md)|无|删除 [roleDefinition](../resources/intune-rbac-roledefinition.md)。|
-|[更新 roleDefinition](../api/intune-rbac-roledefinition-update.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|更新 [roleDefinition](../resources/intune-rbac-roledefinition.md) 对象的属性。|
+|[List roleDefinitions](../api/intune-rbac-roledefinition-list.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md) 集合|列出 [roleDefinition](../resources/intune-rbac-roledefinition.md) 对象的属性和关系。|
+|[Get roleDefinition](../api/intune-rbac-roledefinition-get.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|读取 [roleDefinition](../resources/intune-rbac-roledefinition.md) 对象的属性和关系。|
+|[Create roleDefinition](../api/intune-rbac-roledefinition-create.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|创建新的 [roleDefinition](../resources/intune-rbac-roledefinition.md) 对象。|
+|[Delete roleDefinition](../api/intune-rbac-roledefinition-delete.md)|无|删除 [roleDefinition](../resources/intune-rbac-roledefinition.md)。|
+|[Update roleDefinition](../api/intune-rbac-roledefinition-update.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|更新 [roleDefinition](../resources/intune-rbac-roledefinition.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 此为只读，且自动生成。|
+|id|字符串|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色定义的显示名称。|
-|description|String|角色定义的说明。|
+|说明|String|角色定义的说明。|
 |permissions|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。|
 |rolePermissions|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|允许此角色执行的角色权限列表。 它们必须与定义为 rolePermission 一部分的 actionName 匹配。|
 |isBuiltInRoleDefinition|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。|
 |isBuiltIn|Boolean|角色类型。 如果是内置角色，则设置为 True；如果是自定义角色定义，则设置为 False。|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

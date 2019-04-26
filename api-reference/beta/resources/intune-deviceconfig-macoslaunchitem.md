@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1317f2d42c21d0d11d45290696f183c679b049e1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809177"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570680"
 ---
 # <a name="macoslaunchitem-resource-type"></a>macOSLaunchItem 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "31809177"
 |属性|类型|说明|
 |:---|:---|:---|
 |路径|String|启动项目的路径。|
-|选中|布尔值|是否要从 "用户和组" 列表中隐藏项目。|
+|选中|Boolean|是否要从 "用户和组" 列表中隐藏项目。|
 
 ## <a name="relationships"></a>关系
 无
