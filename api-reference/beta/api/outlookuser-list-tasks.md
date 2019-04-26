@@ -4,55 +4,55 @@ description: 获取用户邮箱中的所有 Outlook 任务。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2681d988035bd590e4f03ae8b2393d44bcb6d976
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5dd774b55cb4a602aef861c1392f8cfe36a957eb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539634"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332736"
 ---
-# <a name="list-tasks"></a><span data-ttu-id="f4540-103">列出任务</span><span class="sxs-lookup"><span data-stu-id="f4540-103">List tasks</span></span>
+# <a name="list-tasks"></a><span data-ttu-id="efe3c-103">列出任务</span><span class="sxs-lookup"><span data-stu-id="efe3c-103">List tasks</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f4540-104">获取用户邮箱中的所有 Outlook 任务。</span><span class="sxs-lookup"><span data-stu-id="f4540-104">Get all the Outlook tasks in the user's mailbox.</span></span>
+<span data-ttu-id="efe3c-104">获取用户邮箱中的所有 Outlook 任务。</span><span class="sxs-lookup"><span data-stu-id="efe3c-104">Get all the Outlook tasks in the user's mailbox.</span></span>
 
-<span data-ttu-id="f4540-105">默认情况下, 此操作 (以及发布、修补和[完成](../api/outlooktask-complete.md)任务操作) 返回 UTC 格式的与日期相关的属性。</span><span class="sxs-lookup"><span data-stu-id="f4540-105">By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span>
-<span data-ttu-id="f4540-106">你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。</span><span class="sxs-lookup"><span data-stu-id="f4540-106">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span> <span data-ttu-id="f4540-107">请参阅获取单个任务的[示例](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time)。</span><span class="sxs-lookup"><span data-stu-id="f4540-107">See an [example](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) for getting a single task.</span></span> <span data-ttu-id="f4540-108">您可以按类似方式应用标头以获取多个任务。</span><span class="sxs-lookup"><span data-stu-id="f4540-108">You can apply the header similarly to get multiple tasks.</span></span>
+<span data-ttu-id="efe3c-105">默认情况下, 此操作 (以及发布、修补和[完成](../api/outlooktask-complete.md)任务操作) 返回 UTC 格式的与日期相关的属性。</span><span class="sxs-lookup"><span data-stu-id="efe3c-105">By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span>
+<span data-ttu-id="efe3c-106">你可以使用 `Prefer: outlook.timezone` 标头将响应中的所有与日期相关的属性都表示为与 UTC 不同的时区。</span><span class="sxs-lookup"><span data-stu-id="efe3c-106">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span> <span data-ttu-id="efe3c-107">请参阅获取单个任务的[示例](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time)。</span><span class="sxs-lookup"><span data-stu-id="efe3c-107">See an [example](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) for getting a single task.</span></span> <span data-ttu-id="efe3c-108">您可以按类似方式应用标头以获取多个任务。</span><span class="sxs-lookup"><span data-stu-id="efe3c-108">You can apply the header similarly to get multiple tasks.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f4540-109">权限</span><span class="sxs-lookup"><span data-stu-id="f4540-109">Permissions</span></span>
-<span data-ttu-id="f4540-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f4540-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="efe3c-109">权限</span><span class="sxs-lookup"><span data-stu-id="efe3c-109">Permissions</span></span>
+<span data-ttu-id="efe3c-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="efe3c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f4540-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="f4540-112">Permission type</span></span>      | <span data-ttu-id="f4540-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f4540-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="efe3c-112">权限类型</span><span class="sxs-lookup"><span data-stu-id="efe3c-112">Permission type</span></span>      | <span data-ttu-id="efe3c-113">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="efe3c-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f4540-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f4540-114">Delegated (work or school account)</span></span> | <span data-ttu-id="f4540-115">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="f4540-115">Tasks.Read</span></span>    |
-|<span data-ttu-id="f4540-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f4540-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f4540-117">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="f4540-117">Tasks.Read</span></span>    |
-|<span data-ttu-id="f4540-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="f4540-118">Application</span></span> | <span data-ttu-id="f4540-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="f4540-119">Not supported.</span></span> |
+|<span data-ttu-id="efe3c-114">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="efe3c-114">Delegated (work or school account)</span></span> | <span data-ttu-id="efe3c-115">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="efe3c-115">Tasks.Read</span></span>    |
+|<span data-ttu-id="efe3c-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="efe3c-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="efe3c-117">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="efe3c-117">Tasks.Read</span></span>    |
+|<span data-ttu-id="efe3c-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="efe3c-118">Application</span></span> | <span data-ttu-id="efe3c-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="efe3c-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f4540-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f4540-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="efe3c-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="efe3c-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks
 GET /users/{id|userPrincipalName}/outlook/tasks
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="f4540-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f4540-121">Optional query parameters</span></span>
-<span data-ttu-id="f4540-122">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f4540-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="efe3c-121">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="efe3c-121">Optional query parameters</span></span>
+<span data-ttu-id="efe3c-122">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="efe3c-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f4540-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="f4540-123">Request headers</span></span>
-| <span data-ttu-id="f4540-124">名称</span><span class="sxs-lookup"><span data-stu-id="f4540-124">Name</span></span>      |<span data-ttu-id="f4540-125">说明</span><span class="sxs-lookup"><span data-stu-id="f4540-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="efe3c-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="efe3c-123">Request headers</span></span>
+| <span data-ttu-id="efe3c-124">名称</span><span class="sxs-lookup"><span data-stu-id="efe3c-124">Name</span></span>      |<span data-ttu-id="efe3c-125">说明</span><span class="sxs-lookup"><span data-stu-id="efe3c-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="f4540-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="f4540-126">Authorization</span></span>  | <span data-ttu-id="f4540-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f4540-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f4540-129">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="f4540-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="f4540-130">指定响应中时间属性的时区 (如果未指定此标头, 则采用 UTC 格式表示)。</span><span class="sxs-lookup"><span data-stu-id="f4540-130">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="f4540-131">可选。</span><span class="sxs-lookup"><span data-stu-id="f4540-131">Optional.</span></span>|
+| <span data-ttu-id="efe3c-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="efe3c-126">Authorization</span></span>  | <span data-ttu-id="efe3c-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="efe3c-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="efe3c-129">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="efe3c-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="efe3c-130">指定响应中时间属性的时区 (如果未指定此标头, 则采用 UTC 格式表示)。</span><span class="sxs-lookup"><span data-stu-id="efe3c-130">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="efe3c-131">可选。</span><span class="sxs-lookup"><span data-stu-id="efe3c-131">Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f4540-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="f4540-132">Request body</span></span>
-<span data-ttu-id="f4540-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f4540-133">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="efe3c-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="efe3c-132">Request body</span></span>
+<span data-ttu-id="efe3c-133">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="efe3c-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f4540-134">响应</span><span class="sxs-lookup"><span data-stu-id="f4540-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="efe3c-134">响应</span><span class="sxs-lookup"><span data-stu-id="efe3c-134">Response</span></span>
 
-<span data-ttu-id="f4540-135">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[outlookTask](../resources/outlooktask.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="f4540-135">If successful, this method returns a `200 OK` response code and collection of [outlookTask](../resources/outlooktask.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f4540-136">示例</span><span class="sxs-lookup"><span data-stu-id="f4540-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f4540-137">请求</span><span class="sxs-lookup"><span data-stu-id="f4540-137">Request</span></span>
-<span data-ttu-id="f4540-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f4540-138">Here is an example of the request.</span></span>
+<span data-ttu-id="efe3c-135">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[outlookTask](../resources/outlooktask.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="efe3c-135">If successful, this method returns a `200 OK` response code and collection of [outlookTask](../resources/outlooktask.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="efe3c-136">示例</span><span class="sxs-lookup"><span data-stu-id="efe3c-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="efe3c-137">请求</span><span class="sxs-lookup"><span data-stu-id="efe3c-137">Request</span></span>
+<span data-ttu-id="efe3c-138">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="efe3c-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_tasks"
@@ -60,10 +60,10 @@ GET /users/{id|userPrincipalName}/outlook/tasks
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/tasks
 ```
-##### <a name="response"></a><span data-ttu-id="f4540-139">响应</span><span class="sxs-lookup"><span data-stu-id="f4540-139">Response</span></span>
-<span data-ttu-id="f4540-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f4540-140">Here is an example of the response.</span></span> <span data-ttu-id="f4540-141">默认情况下，响应中的 date-time 属性采用的是 UTC。</span><span class="sxs-lookup"><span data-stu-id="f4540-141">By default, the date-time properties in the response are in UTC.</span></span>
+##### <a name="response"></a><span data-ttu-id="efe3c-139">响应</span><span class="sxs-lookup"><span data-stu-id="efe3c-139">Response</span></span>
+<span data-ttu-id="efe3c-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="efe3c-140">Here is an example of the response.</span></span> <span data-ttu-id="efe3c-141">默认情况下，响应中的 date-time 属性采用的是 UTC。</span><span class="sxs-lookup"><span data-stu-id="efe3c-141">By default, the date-time properties in the response are in UTC.</span></span>
 
-<span data-ttu-id="f4540-p106">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f4540-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="efe3c-p106">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="efe3c-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -152,8 +152,6 @@ Content-length: 465
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlookuser-list-tasks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

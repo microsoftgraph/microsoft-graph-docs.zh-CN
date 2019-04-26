@@ -4,20 +4,20 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Photo
 localization_priority: Normal
-ms.openlocfilehash: d14777b0f39983d6ccf83ae387896c6587635e66
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f55236489d71c88f8d000b3462e64e82b8c08e56
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573746"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344894"
 ---
-# <a name="photo-resource-type"></a><span data-ttu-id="beb3c-102">Photo 资源类型</span><span class="sxs-lookup"><span data-stu-id="beb3c-102">Photo resource type</span></span>
+# <a name="photo-resource-type"></a><span data-ttu-id="f4458-102">Photo 资源类型</span><span class="sxs-lookup"><span data-stu-id="f4458-102">Photo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="beb3c-103">**照片**资源提供 [driveItem](driveitem.md) 中的照片和相机属性，例如 EXIF 元数据。</span><span class="sxs-lookup"><span data-stu-id="beb3c-103">The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).</span></span>
+<span data-ttu-id="f4458-103">**照片**资源提供 [driveItem](driveitem.md) 中的照片和相机属性，例如 EXIF 元数据。</span><span class="sxs-lookup"><span data-stu-id="f4458-103">The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="beb3c-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="beb3c-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f4458-104">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="f4458-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,23 +37,23 @@ ms.locfileid: "32573746"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="beb3c-105">属性</span><span class="sxs-lookup"><span data-stu-id="beb3c-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f4458-105">属性</span><span class="sxs-lookup"><span data-stu-id="f4458-105">Properties</span></span>
 
-| <span data-ttu-id="beb3c-106">属性</span><span class="sxs-lookup"><span data-stu-id="beb3c-106">Property</span></span>                | <span data-ttu-id="beb3c-107">类型</span><span class="sxs-lookup"><span data-stu-id="beb3c-107">Type</span></span>           | <span data-ttu-id="beb3c-108">说明</span><span class="sxs-lookup"><span data-stu-id="beb3c-108">Description</span></span>
+| <span data-ttu-id="f4458-106">属性</span><span class="sxs-lookup"><span data-stu-id="f4458-106">Property</span></span>                | <span data-ttu-id="f4458-107">类型</span><span class="sxs-lookup"><span data-stu-id="f4458-107">Type</span></span>           | <span data-ttu-id="f4458-108">说明</span><span class="sxs-lookup"><span data-stu-id="f4458-108">Description</span></span>
 |:------------------------|:---------------|:----------------------------------
-| <span data-ttu-id="beb3c-109">**takenDateTime**</span><span class="sxs-lookup"><span data-stu-id="beb3c-109">**takenDateTime**</span></span>       | <span data-ttu-id="beb3c-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="beb3c-110">DateTimeOffset</span></span> | <span data-ttu-id="beb3c-p101">表示照片拍摄的时间和日期。只读。</span><span class="sxs-lookup"><span data-stu-id="beb3c-p101">Represents the date and time the photo was taken. Read-only.</span></span>
-| <span data-ttu-id="beb3c-113">**cameraMake**</span><span class="sxs-lookup"><span data-stu-id="beb3c-113">**cameraMake**</span></span>          | <span data-ttu-id="beb3c-114">String</span><span class="sxs-lookup"><span data-stu-id="beb3c-114">String</span></span>         | <span data-ttu-id="beb3c-p102">相机制造商。只读。</span><span class="sxs-lookup"><span data-stu-id="beb3c-p102">Camera manufacturer. Read-only.</span></span>
-| <span data-ttu-id="beb3c-117">**cameraModel**</span><span class="sxs-lookup"><span data-stu-id="beb3c-117">**cameraModel**</span></span>         | <span data-ttu-id="beb3c-118">String</span><span class="sxs-lookup"><span data-stu-id="beb3c-118">String</span></span>         | <span data-ttu-id="beb3c-p103">相机型号。只读。</span><span class="sxs-lookup"><span data-stu-id="beb3c-p103">Camera model. Read-only.</span></span>
-| <span data-ttu-id="beb3c-121">**fNumber**</span><span class="sxs-lookup"><span data-stu-id="beb3c-121">**fNumber**</span></span>             | <span data-ttu-id="beb3c-122">双精度</span><span class="sxs-lookup"><span data-stu-id="beb3c-122">Double</span></span>         | <span data-ttu-id="beb3c-p104">相机的 F-stop 值。只读。</span><span class="sxs-lookup"><span data-stu-id="beb3c-p104">The F-stop value from the camera. Read-only.</span></span>
-| <span data-ttu-id="beb3c-125">**exposureDenominator**</span><span class="sxs-lookup"><span data-stu-id="beb3c-125">**exposureDenominator**</span></span> | <span data-ttu-id="beb3c-126">双精度</span><span class="sxs-lookup"><span data-stu-id="beb3c-126">Double</span></span>         | <span data-ttu-id="beb3c-p105">相机的曝光时间分数的分母。只读。</span><span class="sxs-lookup"><span data-stu-id="beb3c-p105">The denominator for the exposure time fraction from the camera. Read-only.</span></span>
-| <span data-ttu-id="beb3c-129">**exposureNumerator**</span><span class="sxs-lookup"><span data-stu-id="beb3c-129">**exposureNumerator**</span></span>   | <span data-ttu-id="beb3c-130">Double</span><span class="sxs-lookup"><span data-stu-id="beb3c-130">Double</span></span>         | <span data-ttu-id="beb3c-p106">相机的曝光时间分数的分子。只读。</span><span class="sxs-lookup"><span data-stu-id="beb3c-p106">The numerator for the exposure time fraction from the camera. Read-only.</span></span>
-| <span data-ttu-id="beb3c-133">**focalLength**</span><span class="sxs-lookup"><span data-stu-id="beb3c-133">**focalLength**</span></span>         | <span data-ttu-id="beb3c-134">双精度数</span><span class="sxs-lookup"><span data-stu-id="beb3c-134">Double</span></span>         | <span data-ttu-id="beb3c-p107">相机的焦距。只读。</span><span class="sxs-lookup"><span data-stu-id="beb3c-p107">The focal length from the camera. Read-only.</span></span>
-| <span data-ttu-id="beb3c-137">**iso**</span><span class="sxs-lookup"><span data-stu-id="beb3c-137">**iso**</span></span>                 | <span data-ttu-id="beb3c-138">Int64</span><span class="sxs-lookup"><span data-stu-id="beb3c-138">Int64</span></span>          | <span data-ttu-id="beb3c-p108">相机的 ISO 值。只读。</span><span class="sxs-lookup"><span data-stu-id="beb3c-p108">The ISO value from the camera. Read-only.</span></span>
+| <span data-ttu-id="f4458-109">**takenDateTime**</span><span class="sxs-lookup"><span data-stu-id="f4458-109">**takenDateTime**</span></span>       | <span data-ttu-id="f4458-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f4458-110">DateTimeOffset</span></span> | <span data-ttu-id="f4458-p101">表示照片拍摄的时间和日期。只读。</span><span class="sxs-lookup"><span data-stu-id="f4458-p101">Represents the date and time the photo was taken. Read-only.</span></span>
+| <span data-ttu-id="f4458-113">**cameraMake**</span><span class="sxs-lookup"><span data-stu-id="f4458-113">**cameraMake**</span></span>          | <span data-ttu-id="f4458-114">String</span><span class="sxs-lookup"><span data-stu-id="f4458-114">String</span></span>         | <span data-ttu-id="f4458-p102">相机制造商。只读。</span><span class="sxs-lookup"><span data-stu-id="f4458-p102">Camera manufacturer. Read-only.</span></span>
+| <span data-ttu-id="f4458-117">**cameraModel**</span><span class="sxs-lookup"><span data-stu-id="f4458-117">**cameraModel**</span></span>         | <span data-ttu-id="f4458-118">String</span><span class="sxs-lookup"><span data-stu-id="f4458-118">String</span></span>         | <span data-ttu-id="f4458-p103">相机型号。只读。</span><span class="sxs-lookup"><span data-stu-id="f4458-p103">Camera model. Read-only.</span></span>
+| <span data-ttu-id="f4458-121">**fNumber**</span><span class="sxs-lookup"><span data-stu-id="f4458-121">**fNumber**</span></span>             | <span data-ttu-id="f4458-122">双精度</span><span class="sxs-lookup"><span data-stu-id="f4458-122">Double</span></span>         | <span data-ttu-id="f4458-p104">相机的 F-stop 值。只读。</span><span class="sxs-lookup"><span data-stu-id="f4458-p104">The F-stop value from the camera. Read-only.</span></span>
+| <span data-ttu-id="f4458-125">**exposureDenominator**</span><span class="sxs-lookup"><span data-stu-id="f4458-125">**exposureDenominator**</span></span> | <span data-ttu-id="f4458-126">双精度</span><span class="sxs-lookup"><span data-stu-id="f4458-126">Double</span></span>         | <span data-ttu-id="f4458-p105">相机的曝光时间分数的分母。只读。</span><span class="sxs-lookup"><span data-stu-id="f4458-p105">The denominator for the exposure time fraction from the camera. Read-only.</span></span>
+| <span data-ttu-id="f4458-129">**exposureNumerator**</span><span class="sxs-lookup"><span data-stu-id="f4458-129">**exposureNumerator**</span></span>   | <span data-ttu-id="f4458-130">Double</span><span class="sxs-lookup"><span data-stu-id="f4458-130">Double</span></span>         | <span data-ttu-id="f4458-p106">相机的曝光时间分数的分子。只读。</span><span class="sxs-lookup"><span data-stu-id="f4458-p106">The numerator for the exposure time fraction from the camera. Read-only.</span></span>
+| <span data-ttu-id="f4458-133">**focalLength**</span><span class="sxs-lookup"><span data-stu-id="f4458-133">**focalLength**</span></span>         | <span data-ttu-id="f4458-134">双精度数</span><span class="sxs-lookup"><span data-stu-id="f4458-134">Double</span></span>         | <span data-ttu-id="f4458-p107">相机的焦距。只读。</span><span class="sxs-lookup"><span data-stu-id="f4458-p107">The focal length from the camera. Read-only.</span></span>
+| <span data-ttu-id="f4458-137">**iso**</span><span class="sxs-lookup"><span data-stu-id="f4458-137">**iso**</span></span>                 | <span data-ttu-id="f4458-138">Int64</span><span class="sxs-lookup"><span data-stu-id="f4458-138">Int64</span></span>          | <span data-ttu-id="f4458-p108">相机的 ISO 值。只读。</span><span class="sxs-lookup"><span data-stu-id="f4458-p108">The ISO value from the camera. Read-only.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="beb3c-141">注解</span><span class="sxs-lookup"><span data-stu-id="beb3c-141">Remarks</span></span>
-<span data-ttu-id="beb3c-142">OneDrive for Business 和 SharePoint 仅返回 **takenDateTime** 属性。</span><span class="sxs-lookup"><span data-stu-id="beb3c-142">OneDrive for Business and SharePoint only return the **takenDateTime** property.</span></span>
+## <a name="remarks"></a><span data-ttu-id="f4458-141">注解</span><span class="sxs-lookup"><span data-stu-id="f4458-141">Remarks</span></span>
+<span data-ttu-id="f4458-142">OneDrive for Business 和 SharePoint 仅返回 **takenDateTime** 属性。</span><span class="sxs-lookup"><span data-stu-id="f4458-142">OneDrive for Business and SharePoint only return the **takenDateTime** property.</span></span>
 
-<span data-ttu-id="beb3c-143">有关 DriveItem 方面的详细信息，请参阅 [DriveItem](driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="beb3c-143">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="f4458-143">有关 DriveItem 方面的详细信息，请参阅 [DriveItem](driveitem.md)。</span><span class="sxs-lookup"><span data-stu-id="f4458-143">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 <!--
 {
   "type": "#page.annotation",
@@ -61,8 +61,6 @@ ms.locfileid: "32573746"
   "keywords": "camera make,camera model, exposure, f-stop, iso",
   "section": "documentation",
   "tocPath": "Facets/Photo",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/photo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

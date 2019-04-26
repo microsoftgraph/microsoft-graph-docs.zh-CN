@@ -4,52 +4,52 @@ description: '获取指定的线程中帖子的属性和关系。 您可以同�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 0d786734aa59d0048b077d4fa7eae08857da2753
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 21e68d00591a6bffe40373d8a75d0378d3771a62
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538708"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332197"
 ---
-# <a name="get-post"></a><span data-ttu-id="1cc3a-104">获取帖子</span><span class="sxs-lookup"><span data-stu-id="1cc3a-104">Get post</span></span>
+# <a name="get-post"></a><span data-ttu-id="f3233-104">获取帖子</span><span class="sxs-lookup"><span data-stu-id="f3233-104">Get post</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1cc3a-p102">获取指定线程中的帖子的属性和关系。可以指定父对话和线程，也可以指定线程，而不引用父对话。</span><span class="sxs-lookup"><span data-stu-id="1cc3a-p102">Get the properties and relationships of a post in a specified thread. You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.</span></span>
+<span data-ttu-id="f3233-p102">获取指定线程中的帖子的属性和关系。可以指定父对话和线程，也可以指定线程，而不引用父对话。</span><span class="sxs-lookup"><span data-stu-id="f3233-p102">Get the properties and relationships of a post in a specified thread. You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.</span></span>
 
-<span data-ttu-id="1cc3a-107">由于**帖子**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**帖子**实例中的自定义属性和扩展数据。</span><span class="sxs-lookup"><span data-stu-id="1cc3a-107">Since the **post** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **post** instance.</span></span>
+<span data-ttu-id="f3233-107">由于**帖子**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**帖子**实例中的自定义属性和扩展数据。</span><span class="sxs-lookup"><span data-stu-id="f3233-107">Since the **post** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **post** instance.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1cc3a-108">权限</span><span class="sxs-lookup"><span data-stu-id="1cc3a-108">Permissions</span></span>
-<span data-ttu-id="1cc3a-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1cc3a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f3233-108">权限</span><span class="sxs-lookup"><span data-stu-id="f3233-108">Permissions</span></span>
+<span data-ttu-id="f3233-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f3233-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1cc3a-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="1cc3a-111">Permission type</span></span>      | <span data-ttu-id="1cc3a-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1cc3a-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f3233-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f3233-111">Permission type</span></span>      | <span data-ttu-id="f3233-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f3233-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1cc3a-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1cc3a-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1cc3a-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1cc3a-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1cc3a-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1cc3a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1cc3a-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="1cc3a-116">Not supported.</span></span>    |
-|<span data-ttu-id="1cc3a-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="1cc3a-117">Application</span></span> | <span data-ttu-id="1cc3a-118">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1cc3a-118">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="f3233-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f3233-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f3233-114">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f3233-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f3233-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f3233-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f3233-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f3233-116">Not supported.</span></span>    |
+|<span data-ttu-id="f3233-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f3233-117">Application</span></span> | <span data-ttu-id="f3233-118">Group.Read.All、Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f3233-118">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1cc3a-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1cc3a-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f3233-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f3233-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1cc3a-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="1cc3a-120">Optional query parameters</span></span>
-<span data-ttu-id="1cc3a-121">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="1cc3a-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="1cc3a-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="1cc3a-122">Request headers</span></span>
-| <span data-ttu-id="1cc3a-123">标头</span><span class="sxs-lookup"><span data-stu-id="1cc3a-123">Header</span></span>       | <span data-ttu-id="1cc3a-124">值</span><span class="sxs-lookup"><span data-stu-id="1cc3a-124">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="f3233-120">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f3233-120">Optional query parameters</span></span>
+<span data-ttu-id="f3233-121">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f3233-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f3233-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="f3233-122">Request headers</span></span>
+| <span data-ttu-id="f3233-123">标头</span><span class="sxs-lookup"><span data-stu-id="f3233-123">Header</span></span>       | <span data-ttu-id="f3233-124">值</span><span class="sxs-lookup"><span data-stu-id="f3233-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1cc3a-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="1cc3a-125">Authorization</span></span>  | <span data-ttu-id="1cc3a-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1cc3a-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f3233-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="f3233-125">Authorization</span></span>  | <span data-ttu-id="f3233-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f3233-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1cc3a-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="1cc3a-128">Request body</span></span>
-<span data-ttu-id="1cc3a-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1cc3a-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f3233-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="f3233-128">Request body</span></span>
+<span data-ttu-id="f3233-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f3233-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1cc3a-130">响应</span><span class="sxs-lookup"><span data-stu-id="1cc3a-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f3233-130">响应</span><span class="sxs-lookup"><span data-stu-id="f3233-130">Response</span></span>
 
-<span data-ttu-id="1cc3a-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [post](../resources/post.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="1cc3a-131">If successful, this method returns a `200 OK` response code and [post](../resources/post.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1cc3a-132">示例</span><span class="sxs-lookup"><span data-stu-id="1cc3a-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1cc3a-133">请求</span><span class="sxs-lookup"><span data-stu-id="1cc3a-133">Request</span></span>
-<span data-ttu-id="1cc3a-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1cc3a-134">Here is an example of the request.</span></span>
+<span data-ttu-id="f3233-131">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [post](../resources/post.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f3233-131">If successful, this method returns a `200 OK` response code and [post](../resources/post.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f3233-132">示例</span><span class="sxs-lookup"><span data-stu-id="f3233-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f3233-133">请求</span><span class="sxs-lookup"><span data-stu-id="f3233-133">Request</span></span>
+<span data-ttu-id="f3233-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f3233-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_post"
@@ -57,8 +57,8 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
 ```http
 GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f/threads/AAQkAD8EJUmcWwTJi06Cew==/posts/AQMkADgAAAIJbQAAAA==
 ```
-##### <a name="response"></a><span data-ttu-id="1cc3a-135">响应</span><span class="sxs-lookup"><span data-stu-id="1cc3a-135">Response</span></span>
-<span data-ttu-id="1cc3a-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="1cc3a-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f3233-135">响应</span><span class="sxs-lookup"><span data-stu-id="f3233-135">Response</span></span>
+<span data-ttu-id="f3233-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f3233-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,11 +100,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="1cc3a-139">另请参阅</span><span class="sxs-lookup"><span data-stu-id="1cc3a-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f3233-139">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f3233-139">See also</span></span>
 
-- [<span data-ttu-id="1cc3a-140">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="1cc3a-140">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="1cc3a-141">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="1cc3a-141">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="1cc3a-142">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="1cc3a-142">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="f3233-140">使用扩展向资源添加自定义数据</span><span class="sxs-lookup"><span data-stu-id="f3233-140">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="f3233-141">使用开放扩展向用户添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="f3233-141">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="f3233-142">使用架构扩展向组添加自定义数据（预览）</span><span class="sxs-lookup"><span data-stu-id="f3233-142">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -116,8 +116,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/post-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

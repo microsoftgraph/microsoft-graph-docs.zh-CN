@@ -4,29 +4,29 @@ description: 添加到 educationUser 的其他信息，该属性将在用户的 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 17019d5ff5c2bc9614e934ef66d63e459371469a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 092d8fb9d7c358114159428d676ab1a21ea9d091
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542910"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333881"
 ---
-# <a name="educationteacher-resource-type"></a><span data-ttu-id="432e1-103">educationTeacher 资源类型</span><span class="sxs-lookup"><span data-stu-id="432e1-103">educationTeacher resource type</span></span>
+# <a name="educationteacher-resource-type"></a><span data-ttu-id="148a0-103">educationTeacher 资源类型</span><span class="sxs-lookup"><span data-stu-id="148a0-103">educationTeacher resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="432e1-104">添加到 [educationUser](educationuser.md) 的其他信息，该属性将在用户的 primaryRole 为 `teacher` 时显示。</span><span class="sxs-lookup"><span data-stu-id="432e1-104">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
+<span data-ttu-id="148a0-104">添加到 [educationUser](educationuser.md) 的其他信息，该属性将在用户的 primaryRole 为 `teacher` 时显示。</span><span class="sxs-lookup"><span data-stu-id="148a0-104">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `teacher`.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="432e1-105">属性</span><span class="sxs-lookup"><span data-stu-id="432e1-105">Properties</span></span>
-| <span data-ttu-id="432e1-106">属性</span><span class="sxs-lookup"><span data-stu-id="432e1-106">Property</span></span>     | <span data-ttu-id="432e1-107">类型</span><span class="sxs-lookup"><span data-stu-id="432e1-107">Type</span></span>   |<span data-ttu-id="432e1-108">说明</span><span class="sxs-lookup"><span data-stu-id="432e1-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="148a0-105">属性</span><span class="sxs-lookup"><span data-stu-id="148a0-105">Properties</span></span>
+| <span data-ttu-id="148a0-106">属性</span><span class="sxs-lookup"><span data-stu-id="148a0-106">Property</span></span>     | <span data-ttu-id="148a0-107">类型</span><span class="sxs-lookup"><span data-stu-id="148a0-107">Type</span></span>   |<span data-ttu-id="148a0-108">说明</span><span class="sxs-lookup"><span data-stu-id="148a0-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="432e1-109">externalId</span><span class="sxs-lookup"><span data-stu-id="432e1-109">externalId</span></span>|<span data-ttu-id="432e1-110">String</span><span class="sxs-lookup"><span data-stu-id="432e1-110">String</span></span>| <span data-ttu-id="432e1-111">源系统中教师的 ID。</span><span class="sxs-lookup"><span data-stu-id="432e1-111">ID of the teacher in the source system.</span></span>|
-|<span data-ttu-id="432e1-112">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="432e1-112">teacherNumber</span></span>|<span data-ttu-id="432e1-113">String</span><span class="sxs-lookup"><span data-stu-id="432e1-113">String</span></span>|<span data-ttu-id="432e1-114">教师编号。</span><span class="sxs-lookup"><span data-stu-id="432e1-114">Teacher number.</span></span>|
+|<span data-ttu-id="148a0-109">externalId</span><span class="sxs-lookup"><span data-stu-id="148a0-109">externalId</span></span>|<span data-ttu-id="148a0-110">String</span><span class="sxs-lookup"><span data-stu-id="148a0-110">String</span></span>| <span data-ttu-id="148a0-111">源系统中教师的 ID。</span><span class="sxs-lookup"><span data-stu-id="148a0-111">ID of the teacher in the source system.</span></span>|
+|<span data-ttu-id="148a0-112">teacherNumber</span><span class="sxs-lookup"><span data-stu-id="148a0-112">teacherNumber</span></span>|<span data-ttu-id="148a0-113">String</span><span class="sxs-lookup"><span data-stu-id="148a0-113">String</span></span>|<span data-ttu-id="148a0-114">教师编号。</span><span class="sxs-lookup"><span data-stu-id="148a0-114">Teacher number.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="432e1-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="432e1-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="148a0-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="148a0-115">JSON representation</span></span>
 
-<span data-ttu-id="432e1-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="432e1-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="148a0-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="148a0-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -53,8 +53,6 @@ ms.locfileid: "32542910"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationteacher.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

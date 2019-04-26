@@ -158,7 +158,7 @@ items:
               - name: 列出隶属于
                 href: api/user-list-memberof.md
           - name: 见解
-            href: resources/insights.md
+            href: resources/officegraphinsights.md
             items:
               - name: 列出趋势
                 href: api/insights-list-trending.md
@@ -773,7 +773,7 @@ items:
           - name: 预订业务
             href: resources/bookingbusiness.md
             items:
-              - name: 列表
+              - name: List
                 href: api/bookingbusiness-list.md
               - name: Create
                 href: api/bookingbusiness-post-bookingbusinesses.md
@@ -814,7 +814,7 @@ items:
           - name: 预订客户
             href: resources/bookingcustomer.md
             items:
-              - name: 列表
+              - name: List
                 href: api/bookingbusiness-list-customers.md
               - name: Create
                 href: api/bookingbusiness-post-customers.md
@@ -827,7 +827,7 @@ items:
           - name: 预订服务
             href: resources/bookingservice.md
             items:
-              - name: 列表
+              - name: List
                 href: api/bookingbusiness-list-services.md
               - name: Create
                 href: api/bookingbusiness-post-services.md
@@ -840,7 +840,7 @@ items:
           - name: 预订职员
             href: resources/bookingstaffmember.md
             items:
-              - name: 列表
+              - name: List
                 href: api/bookingbusiness-list-staffmembers.md
               - name: Create
                 href: api/bookingbusiness-post-staffmembers.md
@@ -7429,7 +7429,7 @@ items:
               - name: 业务流模板
                 href: resources/businessflowtemplate.md
                 items:
-                  - name: 列表
+                  - name: List
                     href: api/businessflowtemplate-list.md
               - name: 程序
                 href: resources/program.md
@@ -7438,7 +7438,7 @@ items:
                     href: api/program-create.md
                   - name: 删除
                     href: api/program-delete.md
-                  - name: 列表
+                  - name: List
                     href: api/program-list.md
                   - name: 更新
                     href: api/program-update.md
@@ -7451,7 +7451,7 @@ items:
                     href: api/programcontrol-create.md
                   - name: 删除
                     href: api/programcontrol-delete.md
-                  - name: 列表
+                  - name: List
                     href: api/programcontrol-list.md
               - name: 程序控制类型
                 href: resources/programcontroltype.md
@@ -7700,13 +7700,13 @@ items:
           - name: 信任框架策略
             href: resources/trustframeworkpolicy.md
             items:
-              - name: 列表
+              - name: List
                 href: api/trustframework-list-trustframeworkpolicies.md
               - name: 创建
                 href: api/trustframework-post-trustframeworkpolicy.md
               - name: 获取
                 href: api/trustframeworkpolicy-get.md
-              - name: Upate
+              - name: 更新
                 href: api/trustframework-put-trustframeworkpolicy.md
               - name: 删除
                 href: api/trustframeworkpolicy-delete.md
@@ -8191,7 +8191,7 @@ items:
               - name: 创建分区组
                 href: api/notebook-post-sectiongroups.md
           - name: 部分
-            href: resources/section.md
+            href: resources/onenotesection.md
             items:
               - name: 列出分区
                 href: api/onenote-list-sections.md
@@ -8221,7 +8221,7 @@ items:
               - name: 创建分区
                 href: api/sectiongroup-post-sections.md
           - name: 页面
-            href: resources/page.md
+            href: resources/onenotepage.md
             items:
               - name: 列出页面
                 href: api/onenote-list-pages.md
@@ -8236,7 +8236,7 @@ items:
               - name: 复制到分区
                 href: api/page-copytosection.md
           - name: 资源
-            href: resources/resource.md
+            href: resources/onenoteresource.md
             items:
               - name: 获取资源
                 href: api/resource-get.md
@@ -8652,7 +8652,7 @@ items:
         href: resources/social-overview.md
         items:
           - name: 见解
-            href: resources/insights.md
+            href: resources/officegraphinsights.md
             items:
               - name: 趋势
                 href: resources/insights-trending.md
@@ -8864,6 +8864,17 @@ items:
                 href: api/channel-post-chatmessage.md
               - name: 回复消息
                 href: api/channel-post-messagereply.md
+          - name: 聊天
+            href: resources/chat.md
+            items:
+              - name: 列出聊天
+                href: api/chat-list.md
+              - name: 获取聊天
+                href: api/chat-get.md
+              - name: 列出聊天中的邮件
+                href: api/chat-list-messages.md
+              - name: 在聊天中获取邮件
+                href: api/chat-get-message.md
           - name: 应用
             href: resources/teamsapp.md
             items:
@@ -9003,7 +9014,7 @@ items:
           - name: Outlook 任务
             href: resources/outlooktask.md
             items:
-              - name: 列表
+              - name: List
                 href: api/outlookuser-list-tasks.md
               - name: Create
                 href: api/outlookuser-post-tasks.md
@@ -9022,7 +9033,7 @@ items:
           - name: Outlook 任务文件夹
             href: resources/outlooktaskfolder.md
             items:
-              - name: 列表
+              - name: List
                 href: api/outlookuser-list-taskfolders.md
               - name: Create
                 href: api/outlookuser-post-taskfolders.md
@@ -9039,7 +9050,7 @@ items:
           - name: Outlook 任务组
             href: resources/outlooktaskgroup.md
             items:
-              - name: 列表
+              - name: List
                 href: api/outlookuser-list-taskgroups.md
               - name: Create
                 href: api/outlookuser-post-taskgroups.md
@@ -9116,7 +9127,7 @@ items:
               - name: 列出名称
                 href: api/workbook-list-names.md
           - name: 工作表
-            href: resources/worksheet.md
+            href: resources/workbookworksheet.md
             items:
               - name: 添加工作表
                 href: api/worksheetcollection-add.md
@@ -9139,7 +9150,7 @@ items:
               - name: 添加图表
                 href: api/worksheet-post-charts.md
           - name: 区域
-            href: resources/range.md
+            href: resources/workbookrange.md
             items:
               - name: 获取区域
                 href: api/range-get.md
@@ -9160,7 +9171,7 @@ items:
               - name: 删除
                 href: api/range-delete.md
           - name: 表格
-            href: resources/table.md
+            href: resources/workbooktable.md
             items:
               - name: 添加表格
                 href: api/tablecollection-add.md
@@ -9181,7 +9192,7 @@ items:
               - name: 获取区域
                 href: api/table-range.md
           - name: 图表
-            href: resources/chart.md
+            href: resources/workbookchart.md
             items:
               - name: 列出图表
                 href: api/chart-list.md
@@ -9200,7 +9211,7 @@ items:
               - name: 设置定位数据
                 href: api/chart-setposition.md
           - name: 命名项
-            href: resources/nameditem.md
+            href: resources/workbooknameditem.md
             items:
               - name: 列出命名项
                 href: api/nameditem-get.md
