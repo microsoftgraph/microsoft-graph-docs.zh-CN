@@ -2,24 +2,24 @@
 title: 配置与目录扩展属性的同步
 description: '你可以自定义同步架构以包含 azure Active Directory (Azure AD) 目录扩展属性。 本文介绍如何使用目录扩展属性 (**extension_9d98asdfl15980a_Nickname**) 填充 Salesforce 中的 CommunityNickname 的值。 在这种情况下, 您已将 Azure ad Connect 设置为设置多个目录扩展属性, 从本地 Windows Server Active directory 到 Azure AD。 '
 localization_priority: Normal
-ms.openlocfilehash: 4160a95acfc6b23f5d5a9d880f36d9ca6a1f3362
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ffa262a6905c193c6e042663accb4089d30d2d4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582121"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345623"
 ---
-# <a name="configure-synchronization-with-directory-extension-attributes"></a><span data-ttu-id="7fb49-105">配置与目录扩展属性的同步</span><span class="sxs-lookup"><span data-stu-id="7fb49-105">Configure synchronization with directory extension attributes</span></span>
+# <a name="configure-synchronization-with-directory-extension-attributes"></a><span data-ttu-id="d0994-105">配置与目录扩展属性的同步</span><span class="sxs-lookup"><span data-stu-id="d0994-105">Configure synchronization with directory extension attributes</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7fb49-106">你可以自定义同步架构以包含 azure Active Directory (Azure AD) 目录扩展属性。</span><span class="sxs-lookup"><span data-stu-id="7fb49-106">You can customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes.</span></span> <span data-ttu-id="7fb49-107">本文介绍如何使用目录扩展属性 (**extension_9d98asdfl15980a_Nickname**) 填充 Salesforce 中的 CommunityNickname 的值。</span><span class="sxs-lookup"><span data-stu-id="7fb49-107">This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce.</span></span> <span data-ttu-id="7fb49-108">在这种情况下, 您已将 Azure ad Connect 设置为设置多个目录扩展属性, 从本地 Windows Server Active directory 到 Azure AD。</span><span class="sxs-lookup"><span data-stu-id="7fb49-108">In this scenario, you have Azure AD Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Azure AD.</span></span> 
+<span data-ttu-id="d0994-106">你可以自定义同步架构以包含 azure Active Directory (Azure AD) 目录扩展属性。</span><span class="sxs-lookup"><span data-stu-id="d0994-106">You can customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes.</span></span> <span data-ttu-id="d0994-107">本文介绍如何使用目录扩展属性 (**extension_9d98asdfl15980a_Nickname**) 填充 Salesforce 中的 CommunityNickname 的值。</span><span class="sxs-lookup"><span data-stu-id="d0994-107">This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce.</span></span> <span data-ttu-id="d0994-108">在这种情况下, 您已将 Azure ad Connect 设置为设置多个目录扩展属性, 从本地 Windows Server Active directory 到 Azure AD。</span><span class="sxs-lookup"><span data-stu-id="d0994-108">In this scenario, you have Azure AD Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Azure AD.</span></span> 
 
-<span data-ttu-id="7fb49-109">本文假定您已添加了一个应用程序, 该应用程序支持通过[Azure 门户](https://portal.azure.com)同步到您的租户, 您知道应用程序显示名称, 并且您具有 Microsoft Graph 的授权令牌。</span><span class="sxs-lookup"><span data-stu-id="7fb49-109">This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph.</span></span> <span data-ttu-id="7fb49-110">有关如何获取授权令牌的信息, 请参阅[获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。</span><span class="sxs-lookup"><span data-stu-id="7fb49-110">For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span></span>
+<span data-ttu-id="d0994-109">本文假定您已添加了一个应用程序, 该应用程序支持通过[Azure 门户](https://portal.azure.com)同步到您的租户, 您知道应用程序显示名称, 并且您具有 Microsoft Graph 的授权令牌。</span><span class="sxs-lookup"><span data-stu-id="d0994-109">This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph.</span></span> <span data-ttu-id="d0994-110">有关如何获取授权令牌的信息, 请参阅[获取访问令牌以调用 Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview)。</span><span class="sxs-lookup"><span data-stu-id="d0994-110">For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span></span>
 
-## <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="7fb49-111">按显示名称查找服务主体对象</span><span class="sxs-lookup"><span data-stu-id="7fb49-111">Find the service principal object by display name</span></span>
+## <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="d0994-111">按显示名称查找服务主体对象</span><span class="sxs-lookup"><span data-stu-id="d0994-111">Find the service principal object by display name</span></span>
 
-<span data-ttu-id="7fb49-112">下面的示例演示如何查找显示名称为 "Salesforce 沙盒" 的服务主体对象。</span><span class="sxs-lookup"><span data-stu-id="7fb49-112">The following example shows how to find a service principal object with the display name "Salesforce Sandbox".</span></span>
+<span data-ttu-id="d0994-112">下面的示例演示如何查找显示名称为 "Salesforce 沙盒" 的服务主体对象。</span><span class="sxs-lookup"><span data-stu-id="d0994-112">The following example shows how to find a service principal object with the display name "Salesforce Sandbox".</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -49,11 +49,11 @@ Authorization: Bearer {Token}
 }
 ```
 
-<span data-ttu-id="7fb49-113">`{servicePrincipalId}`为`60443998-8cf7-4e61-b05c-a53b658cb5e1`。</span><span class="sxs-lookup"><span data-stu-id="7fb49-113">The `{servicePrincipalId}` is `60443998-8cf7-4e61-b05c-a53b658cb5e1`.</span></span>
+<span data-ttu-id="d0994-113">`{servicePrincipalId}`为`60443998-8cf7-4e61-b05c-a53b658cb5e1`。</span><span class="sxs-lookup"><span data-stu-id="d0994-113">The `{servicePrincipalId}` is `60443998-8cf7-4e61-b05c-a53b658cb5e1`.</span></span>
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a><span data-ttu-id="7fb49-114">在服务主体的上下文中列出同步作业</span><span class="sxs-lookup"><span data-stu-id="7fb49-114">List synchronization jobs in the context of the service principal</span></span> 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a><span data-ttu-id="d0994-114">在服务主体的上下文中列出同步作业</span><span class="sxs-lookup"><span data-stu-id="d0994-114">List synchronization jobs in the context of the service principal</span></span> 
 
-<span data-ttu-id="7fb49-115">下面的示例演示如何获取需要使用`jobId`的。</span><span class="sxs-lookup"><span data-stu-id="7fb49-115">The following example shows you how to get the `jobId` that you need to work with.</span></span> <span data-ttu-id="7fb49-116">通常情况下, 响应仅返回一个作业。</span><span class="sxs-lookup"><span data-stu-id="7fb49-116">Generally, the response returns only one job.</span></span>
+<span data-ttu-id="d0994-115">下面的示例演示如何获取需要使用`jobId`的。</span><span class="sxs-lookup"><span data-stu-id="d0994-115">The following example shows you how to get the `jobId` that you need to work with.</span></span> <span data-ttu-id="d0994-116">通常情况下, 响应仅返回一个作业。</span><span class="sxs-lookup"><span data-stu-id="d0994-116">Generally, the response returns only one job.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -74,18 +74,18 @@ Authorization: Bearer {Token}
 }
 ```
 
-<span data-ttu-id="7fb49-117">`{jobId}`为`SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`。</span><span class="sxs-lookup"><span data-stu-id="7fb49-117">The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.</span></span>
+<span data-ttu-id="d0994-117">`{jobId}`为`SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`。</span><span class="sxs-lookup"><span data-stu-id="d0994-117">The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.</span></span>
 
-## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a><span data-ttu-id="7fb49-118">查找所需的目录扩展属性的名称</span><span class="sxs-lookup"><span data-stu-id="7fb49-118">Find the name of the directory extension attribute you need</span></span>
+## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a><span data-ttu-id="d0994-118">查找所需的目录扩展属性的名称</span><span class="sxs-lookup"><span data-stu-id="d0994-118">Find the name of the directory extension attribute you need</span></span>
 
-<span data-ttu-id="7fb49-119">您需要扩展属性的完整名称。</span><span class="sxs-lookup"><span data-stu-id="7fb49-119">You'll need the full name of the extension attribute.</span></span> <span data-ttu-id="7fb49-120">如果您不知道完整名称 (应类似于**extension_9d98asdfl15980a_Nickname**), 请参阅以下有关目录扩展属性的信息, 以及如何检查它们:</span><span class="sxs-lookup"><span data-stu-id="7fb49-120">If you don't know the full name (which should look similar to **extension_9d98asdfl15980a_Nickname**), see the following information about directory extension attributes and how to inspect them:</span></span> 
+<span data-ttu-id="d0994-119">您需要扩展属性的完整名称。</span><span class="sxs-lookup"><span data-stu-id="d0994-119">You'll need the full name of the extension attribute.</span></span> <span data-ttu-id="d0994-120">如果您不知道完整名称 (应类似于**extension_9d98asdfl15980a_Nickname**), 请参阅以下有关目录扩展属性的信息, 以及如何检查它们:</span><span class="sxs-lookup"><span data-stu-id="d0994-120">If you don't know the full name (which should look similar to **extension_9d98asdfl15980a_Nickname**), see the following information about directory extension attributes and how to inspect them:</span></span> 
 
-* [<span data-ttu-id="7fb49-121">使用自定义属性扩展 Azure AD directory 架构</span><span class="sxs-lookup"><span data-stu-id="7fb49-121">Extending the Azure AD directory schema with custom properties</span></span>](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
-* [<span data-ttu-id="7fb49-122">目录架构扩展 |图形 API 概念</span><span class="sxs-lookup"><span data-stu-id="7fb49-122">Directory schema extensions | Graph API concepts</span></span>](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+* [<span data-ttu-id="d0994-121">使用自定义属性扩展 Azure AD directory 架构</span><span class="sxs-lookup"><span data-stu-id="d0994-121">Extending the Azure AD directory schema with custom properties</span></span>](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
+* [<span data-ttu-id="d0994-122">目录架构扩展 |图形 API 概念</span><span class="sxs-lookup"><span data-stu-id="d0994-122">Directory schema extensions | Graph API concepts</span></span>](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
-## <a name="get-the-synchronization-schema"></a><span data-ttu-id="7fb49-123">获取同步架构</span><span class="sxs-lookup"><span data-stu-id="7fb49-123">Get the synchronization schema</span></span>
-<span data-ttu-id="7fb49-124">下面的示例演示如何获取同步架构。</span><span class="sxs-lookup"><span data-stu-id="7fb49-124">The following example shows how to get the synchronization schema.</span></span>
+## <a name="get-the-synchronization-schema"></a><span data-ttu-id="d0994-123">获取同步架构</span><span class="sxs-lookup"><span data-stu-id="d0994-123">Get the synchronization schema</span></span>
+<span data-ttu-id="d0994-124">下面的示例演示如何获取同步架构。</span><span class="sxs-lookup"><span data-stu-id="d0994-124">The following example shows how to get the synchronization schema.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/sync
 Authorization: Bearer {Token}
 ```
 
-><span data-ttu-id="7fb49-125">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="7fb49-125">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="7fb49-126">所有属性将在实际调用中返回。</span><span class="sxs-lookup"><span data-stu-id="7fb49-126">All the properties will be returned in an actual call.</span></span>
+><span data-ttu-id="d0994-125">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="d0994-125">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d0994-126">所有属性将在实际调用中返回。</span><span class="sxs-lookup"><span data-stu-id="d0994-126">All the properties will be returned in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -105,6 +105,7 @@ Authorization: Bearer {Token}
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "directories": [
@@ -193,20 +194,20 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a><span data-ttu-id="7fb49-127">为目录扩展属性添加定义以及属性之间的映射</span><span class="sxs-lookup"><span data-stu-id="7fb49-127">Add a definition for the directory extension attribute, and a mapping between the attributes</span></span>
+## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a><span data-ttu-id="d0994-127">为目录扩展属性添加定义以及属性之间的映射</span><span class="sxs-lookup"><span data-stu-id="d0994-127">Add a definition for the directory extension attribute, and a mapping between the attributes</span></span>
 
-<span data-ttu-id="7fb49-128">使用您选择的纯文本编辑器 (例如,[记事本 + +](https://notepad-plus-plus.org/)或[JSON 编辑器 Online](https://www.jsoneditoronline.org/)) 执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="7fb49-128">Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:</span></span>
+<span data-ttu-id="d0994-128">使用您选择的纯文本编辑器 (例如,[记事本 + +](https://notepad-plus-plus.org/)或[JSON 编辑器 Online](https://www.jsoneditoronline.org/)) 执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="d0994-128">Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:</span></span>
 
-1. <span data-ttu-id="7fb49-129">为`extension_9d98asdfl15980a_Nickname`属性添加[属性定义](synchronization-attributedefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="7fb49-129">Add an [attribute definition](synchronization-attributedefinition.md) for the `extension_9d98asdfl15980a_Nickname` attribute.</span></span> 
+1. <span data-ttu-id="d0994-129">为`extension_9d98asdfl15980a_Nickname`属性添加[属性定义](synchronization-attributedefinition.md)。</span><span class="sxs-lookup"><span data-stu-id="d0994-129">Add an [attribute definition](synchronization-attributedefinition.md) for the `extension_9d98asdfl15980a_Nickname` attribute.</span></span> 
 
-    - <span data-ttu-id="7fb49-130">在 "目录" 下, 查找名称为 "Azure Active directory" 的目录, 并在对象的阵列中查找名为**User**的一个。</span><span class="sxs-lookup"><span data-stu-id="7fb49-130">Under directories, find the directory with the name "Azure Active Directory", and in the object's array, find the one named **User**.</span></span>
-    - <span data-ttu-id="7fb49-131">将新属性添加到列表中, 并指定名称和类型, 如下面的示例所示。</span><span class="sxs-lookup"><span data-stu-id="7fb49-131">Add the new attribute to the list, specifying the name and type, as shown in the following example.</span></span>
+    - <span data-ttu-id="d0994-130">在 "目录" 下, 查找名称为 "Azure Active directory" 的目录, 并在对象的阵列中查找名为**User**的一个。</span><span class="sxs-lookup"><span data-stu-id="d0994-130">Under directories, find the directory with the name "Azure Active Directory", and in the object's array, find the one named **User**.</span></span>
+    - <span data-ttu-id="d0994-131">将新属性添加到列表中, 并指定名称和类型, 如下面的示例所示。</span><span class="sxs-lookup"><span data-stu-id="d0994-131">Add the new attribute to the list, specifying the name and type, as shown in the following example.</span></span>
 
-2. <span data-ttu-id="7fb49-132">在 extension_9d98asdfl15980a_Nickname 和 CommunityNickname 之间添加[属性映射](synchronization-attributemapping.md)。</span><span class="sxs-lookup"><span data-stu-id="7fb49-132">Add an [attribute mapping](synchronization-attributemapping.md) between extension_9d98asdfl15980a_Nickname and CommunityNickname.</span></span>
+2. <span data-ttu-id="d0994-132">在 extension_9d98asdfl15980a_Nickname 和 CommunityNickname 之间添加[属性映射](synchronization-attributemapping.md)。</span><span class="sxs-lookup"><span data-stu-id="d0994-132">Add an [attribute mapping](synchronization-attributemapping.md) between extension_9d98asdfl15980a_Nickname and CommunityNickname.</span></span>
 
-    - <span data-ttu-id="7fb49-133">在 " [synchronizationRules](synchronization-synchronizationrule.md)" 下, 找到指定 Azure AD 作为 "源目录" 的规则, 将 "Salesforce.com`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`" 指定为目标目录 ()。</span><span class="sxs-lookup"><span data-stu-id="7fb49-133">Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).</span></span>
-    - <span data-ttu-id="7fb49-134">在规则的 " [objectMappings](synchronization-objectmapping.md) " 中, 查找 "用户之间的`"sourceObjectName": "User",   "targetObjectName": "User"`映射" ()。</span><span class="sxs-lookup"><span data-stu-id="7fb49-134">In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span></span>
-    - <span data-ttu-id="7fb49-135">在**objectMapping**的[attributeMappings](synchronization-attributemapping.md)数组中, 添加一个新项, 如下面的示例所示。</span><span class="sxs-lookup"><span data-stu-id="7fb49-135">In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.</span></span>
+    - <span data-ttu-id="d0994-133">在 " [synchronizationRules](synchronization-synchronizationrule.md)" 下, 找到指定 Azure AD 作为 "源目录" 的规则, 将 "Salesforce.com`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`" 指定为目标目录 ()。</span><span class="sxs-lookup"><span data-stu-id="d0994-133">Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).</span></span>
+    - <span data-ttu-id="d0994-134">在规则的 " [objectMappings](synchronization-objectmapping.md) " 中, 查找 "用户之间的`"sourceObjectName": "User",   "targetObjectName": "User"`映射" ()。</span><span class="sxs-lookup"><span data-stu-id="d0994-134">In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span></span>
+    - <span data-ttu-id="d0994-135">在**objectMapping**的[attributeMappings](synchronization-attributemapping.md)数组中, 添加一个新项, 如下面的示例所示。</span><span class="sxs-lookup"><span data-stu-id="d0994-135">In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.</span></span>
 
     ```json
     {
@@ -257,9 +258,9 @@ HTTP/1.1 200 OK
     }
     ```
 
-## <a name="save-the-modified-synchronization-schema"></a><span data-ttu-id="7fb49-136">保存修改后的同步架构</span><span class="sxs-lookup"><span data-stu-id="7fb49-136">Save the modified synchronization schema</span></span>
+## <a name="save-the-modified-synchronization-schema"></a><span data-ttu-id="d0994-136">保存修改后的同步架构</span><span class="sxs-lookup"><span data-stu-id="d0994-136">Save the modified synchronization schema</span></span>
 
-<span data-ttu-id="7fb49-137">保存更新后的同步架构时, 请确保包含整个架构, 包括未修改的部分。</span><span class="sxs-lookup"><span data-stu-id="7fb49-137">When you save the updated synchronization schema, make sure that you include the entire schema, including the unmodified parts.</span></span> <span data-ttu-id="7fb49-138">此请求将使用您提供的架构替换现有架构。</span><span class="sxs-lookup"><span data-stu-id="7fb49-138">This request will replace the existing schema with the one that you provide.</span></span>
+<span data-ttu-id="d0994-137">保存更新后的同步架构时, 请确保包含整个架构, 包括未修改的部分。</span><span class="sxs-lookup"><span data-stu-id="d0994-137">When you save the updated synchronization schema, make sure that you include the entire schema, including the unmodified parts.</span></span> <span data-ttu-id="d0994-138">此请求将使用您提供的架构替换现有架构。</span><span class="sxs-lookup"><span data-stu-id="d0994-138">This request will replace the existing schema with the one that you provide.</span></span>
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -272,12 +273,4 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-<span data-ttu-id="7fb49-139">如果架构已成功保存, 则在同步作业的下一次迭代中, 它将开始重新处理 Azure AD 中的所有帐户, 并且新的映射将应用于所有已设置的帐户。</span><span class="sxs-lookup"><span data-stu-id="7fb49-139">If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.</span></span>
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+<span data-ttu-id="d0994-139">如果架构已成功保存, 则在同步作业的下一次迭代中, 它将开始重新处理 Azure AD 中的所有帐户, 并且新的映射将应用于所有已设置的帐户。</span><span class="sxs-lookup"><span data-stu-id="d0994-139">If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.</span></span>

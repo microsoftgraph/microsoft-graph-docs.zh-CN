@@ -4,57 +4,57 @@ description: 从租户中删除域。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b17d8fea23b48cae8ed3227952fb952297a9aaa0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 660f24c192128a85dccd39f25ef435628af6ded8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454895"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325808"
 ---
-# <a name="delete-domain"></a><span data-ttu-id="3c2b2-103">删除域</span><span class="sxs-lookup"><span data-stu-id="3c2b2-103">Delete domain</span></span>
+# <a name="delete-domain"></a><span data-ttu-id="e5c72-103">删除域</span><span class="sxs-lookup"><span data-stu-id="e5c72-103">Delete domain</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3c2b2-104">从租户中删除域。</span><span class="sxs-lookup"><span data-stu-id="3c2b2-104">Deletes a domain from a tenant.</span></span>
+<span data-ttu-id="e5c72-104">从租户中删除域。</span><span class="sxs-lookup"><span data-stu-id="e5c72-104">Deletes a domain from a tenant.</span></span>
 
-> <span data-ttu-id="3c2b2-105">**重要说明:** 删除的域不可恢复。</span><span class="sxs-lookup"><span data-stu-id="3c2b2-105">**Important:** Deleted domains are not recoverable.</span></span>
+> <span data-ttu-id="e5c72-105">**重要说明:** 删除的域不可恢复。</span><span class="sxs-lookup"><span data-stu-id="e5c72-105">**Important:** Deleted domains are not recoverable.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3c2b2-106">权限</span><span class="sxs-lookup"><span data-stu-id="3c2b2-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e5c72-106">权限</span><span class="sxs-lookup"><span data-stu-id="e5c72-106">Permissions</span></span>
 
-<span data-ttu-id="3c2b2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="3c2b2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e5c72-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e5c72-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="3c2b2-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="3c2b2-109">Permission type</span></span>      | <span data-ttu-id="3c2b2-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="3c2b2-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e5c72-109">权限类型</span><span class="sxs-lookup"><span data-stu-id="e5c72-109">Permission type</span></span>      | <span data-ttu-id="e5c72-110">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e5c72-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3c2b2-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="3c2b2-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3c2b2-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3c2b2-112">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="3c2b2-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="3c2b2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3c2b2-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="3c2b2-114">Not supported.</span></span>    |
-|<span data-ttu-id="3c2b2-115">Application</span><span class="sxs-lookup"><span data-stu-id="3c2b2-115">Application</span></span> | <span data-ttu-id="3c2b2-116">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3c2b2-116">Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="e5c72-111">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e5c72-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e5c72-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="e5c72-112">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="e5c72-113">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e5c72-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e5c72-114">不支持。</span><span class="sxs-lookup"><span data-stu-id="e5c72-114">Not supported.</span></span>    |
+|<span data-ttu-id="e5c72-115">应用程序</span><span class="sxs-lookup"><span data-stu-id="e5c72-115">Application</span></span> | <span data-ttu-id="e5c72-116">Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5c72-116">Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3c2b2-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="3c2b2-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e5c72-117">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e5c72-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
 ```
 
-> <span data-ttu-id="3c2b2-118">对于 {id}，请使用其完全限定的域名指定该域。</span><span class="sxs-lookup"><span data-stu-id="3c2b2-118">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="e5c72-118">对于 {id}，请使用其完全限定的域名指定该域。</span><span class="sxs-lookup"><span data-stu-id="e5c72-118">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3c2b2-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="3c2b2-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e5c72-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="e5c72-119">Request headers</span></span>
 
-| <span data-ttu-id="3c2b2-120">名称</span><span class="sxs-lookup"><span data-stu-id="3c2b2-120">Name</span></span>       | <span data-ttu-id="3c2b2-121">说明</span><span class="sxs-lookup"><span data-stu-id="3c2b2-121">Description</span></span>|
+| <span data-ttu-id="e5c72-120">名称</span><span class="sxs-lookup"><span data-stu-id="e5c72-120">Name</span></span>       | <span data-ttu-id="e5c72-121">说明</span><span class="sxs-lookup"><span data-stu-id="e5c72-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="3c2b2-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="3c2b2-122">Authorization</span></span>  | <span data-ttu-id="3c2b2-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="3c2b2-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="3c2b2-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3c2b2-125">Content-Type</span></span>  | <span data-ttu-id="3c2b2-126">application/json</span><span class="sxs-lookup"><span data-stu-id="3c2b2-126">application/json</span></span> |
+| <span data-ttu-id="e5c72-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e5c72-122">Authorization</span></span>  | <span data-ttu-id="e5c72-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e5c72-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e5c72-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e5c72-125">Content-Type</span></span>  | <span data-ttu-id="e5c72-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e5c72-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3c2b2-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="3c2b2-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e5c72-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="e5c72-127">Request body</span></span>
 
-<span data-ttu-id="3c2b2-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="3c2b2-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="e5c72-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="e5c72-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3c2b2-129">响应</span><span class="sxs-lookup"><span data-stu-id="3c2b2-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e5c72-129">响应</span><span class="sxs-lookup"><span data-stu-id="e5c72-129">Response</span></span>
 
-<span data-ttu-id="3c2b2-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不返回响应正文。</span><span class="sxs-lookup"><span data-stu-id="3c2b2-p103">If successful, this method returns `204 No Content` response code. It does not return a response body.</span></span>
+<span data-ttu-id="e5c72-p103">如果成功，此方法返回 `204 No Content` 响应代码。它不返回响应正文。</span><span class="sxs-lookup"><span data-stu-id="e5c72-p103">If successful, this method returns `204 No Content` response code. It does not return a response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3c2b2-132">示例</span><span class="sxs-lookup"><span data-stu-id="3c2b2-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3c2b2-133">请求</span><span class="sxs-lookup"><span data-stu-id="3c2b2-133">Request</span></span>
+## <a name="example"></a><span data-ttu-id="e5c72-132">示例</span><span class="sxs-lookup"><span data-stu-id="e5c72-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e5c72-133">请求</span><span class="sxs-lookup"><span data-stu-id="e5c72-133">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -64,9 +64,9 @@ DELETE /domains/{id}
 DELETE https://graph.microsoft.com/beta/domains/contoso.com
 ```
 
-##### <a name="response"></a><span data-ttu-id="3c2b2-134">响应</span><span class="sxs-lookup"><span data-stu-id="3c2b2-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e5c72-134">响应</span><span class="sxs-lookup"><span data-stu-id="e5c72-134">Response</span></span>
 
-<span data-ttu-id="3c2b2-p104">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="3c2b2-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="e5c72-p104">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e5c72-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -84,8 +84,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/domain-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

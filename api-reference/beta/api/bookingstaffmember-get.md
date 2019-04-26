@@ -4,47 +4,47 @@ description: 获取指定 bookingbusiness 中的 bookingStaffMember 的属性和
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 6228bc87c2d4ac4d31b388aacc9b033443f3d389
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2bbab59a9063ec68f1e548e92951a6f9db4b33ee
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32462107"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322430"
 ---
-# <a name="get-bookingstaffmember"></a><span data-ttu-id="a52de-103">获取 bookingStaffMember</span><span class="sxs-lookup"><span data-stu-id="a52de-103">Get bookingStaffMember</span></span>
+# <a name="get-bookingstaffmember"></a><span data-ttu-id="4b4bf-103">获取 bookingStaffMember</span><span class="sxs-lookup"><span data-stu-id="4b4bf-103">Get bookingStaffMember</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a52de-104">获取指定[bookingbusiness](../resources/bookingbusiness.md)中的[bookingStaffMember](../resources/bookingstaffmember.md)的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="a52de-104">Get the properties and relationships of a [bookingStaffMember](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="a52de-105">权限</span><span class="sxs-lookup"><span data-stu-id="a52de-105">Permissions</span></span>
-<span data-ttu-id="a52de-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a52de-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4b4bf-104">获取指定[bookingbusiness](../resources/bookingbusiness.md)中的[bookingStaffMember](../resources/bookingstaffmember.md)的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="4b4bf-104">Get the properties and relationships of a [bookingStaffMember](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4b4bf-105">权限</span><span class="sxs-lookup"><span data-stu-id="4b4bf-105">Permissions</span></span>
+<span data-ttu-id="4b4bf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4b4bf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a52de-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a52de-108">Permission type</span></span>      | <span data-ttu-id="a52de-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a52de-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4b4bf-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="4b4bf-108">Permission type</span></span>      | <span data-ttu-id="4b4bf-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4b4bf-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a52de-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a52de-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="a52de-111">BookingsAppointment、全部、预订、全部、登记、全部、预订。所有</span><span class="sxs-lookup"><span data-stu-id="a52de-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="a52de-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a52de-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a52de-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="a52de-113">Not supported.</span></span>   |
-|<span data-ttu-id="a52de-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a52de-114">Application</span></span> | <span data-ttu-id="a52de-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a52de-115">Not supported.</span></span>  |
+|<span data-ttu-id="4b4bf-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4b4bf-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="4b4bf-111">BookingsAppointment、全部、预订、全部、登记、全部、预订。所有</span><span class="sxs-lookup"><span data-stu-id="4b4bf-111">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="4b4bf-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4b4bf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4b4bf-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="4b4bf-113">Not supported.</span></span>   |
+|<span data-ttu-id="4b4bf-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="4b4bf-114">Application</span></span> | <span data-ttu-id="4b4bf-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="4b4bf-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="a52de-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a52de-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4b4bf-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4b4bf-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/staffMembers/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a52de-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a52de-117">Optional query parameters</span></span>
-<span data-ttu-id="a52de-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a52de-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4b4bf-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="4b4bf-117">Optional query parameters</span></span>
+<span data-ttu-id="4b4bf-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="4b4bf-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a52de-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="a52de-119">Request headers</span></span>
-| <span data-ttu-id="a52de-120">名称</span><span class="sxs-lookup"><span data-stu-id="a52de-120">Name</span></span>      |<span data-ttu-id="a52de-121">说明</span><span class="sxs-lookup"><span data-stu-id="a52de-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4b4bf-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="4b4bf-119">Request headers</span></span>
+| <span data-ttu-id="4b4bf-120">名称</span><span class="sxs-lookup"><span data-stu-id="4b4bf-120">Name</span></span>      |<span data-ttu-id="4b4bf-121">说明</span><span class="sxs-lookup"><span data-stu-id="4b4bf-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="a52de-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a52de-122">Authorization</span></span>  | <span data-ttu-id="a52de-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="a52de-123">Bearer {code}</span></span>|
+| <span data-ttu-id="4b4bf-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="4b4bf-122">Authorization</span></span>  | <span data-ttu-id="4b4bf-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="4b4bf-123">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a52de-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="a52de-124">Request body</span></span>
-<span data-ttu-id="a52de-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a52de-125">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="a52de-126">响应</span><span class="sxs-lookup"><span data-stu-id="a52de-126">Response</span></span>
-<span data-ttu-id="a52de-127">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[bookingStaffMember](../resources/bookingstaffmember.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a52de-127">If successful, this method returns a `200 OK` response code and [bookingStaffMember](../resources/bookingstaffmember.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a52de-128">示例</span><span class="sxs-lookup"><span data-stu-id="a52de-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a52de-129">请求</span><span class="sxs-lookup"><span data-stu-id="a52de-129">Request</span></span>
-<span data-ttu-id="a52de-130">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a52de-130">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4b4bf-124">请求正文</span><span class="sxs-lookup"><span data-stu-id="4b4bf-124">Request body</span></span>
+<span data-ttu-id="4b4bf-125">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="4b4bf-125">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="4b4bf-126">响应</span><span class="sxs-lookup"><span data-stu-id="4b4bf-126">Response</span></span>
+<span data-ttu-id="4b4bf-127">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[bookingStaffMember](../resources/bookingstaffmember.md)对象。</span><span class="sxs-lookup"><span data-stu-id="4b4bf-127">If successful, this method returns a `200 OK` response code and [bookingStaffMember](../resources/bookingstaffmember.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="4b4bf-128">示例</span><span class="sxs-lookup"><span data-stu-id="4b4bf-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4b4bf-129">请求</span><span class="sxs-lookup"><span data-stu-id="4b4bf-129">Request</span></span>
+<span data-ttu-id="4b4bf-130">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="4b4bf-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_bookingstaffmember"
@@ -52,8 +52,8 @@ GET /bookingBusinesses/{id}/staffMembers/{id}
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
-##### <a name="response"></a><span data-ttu-id="a52de-131">响应</span><span class="sxs-lookup"><span data-stu-id="a52de-131">Response</span></span>
-<span data-ttu-id="a52de-132">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="a52de-132">The following is an example of the response.</span></span> <span data-ttu-id="a52de-133">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a52de-133">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="a52de-134">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a52de-134">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="4b4bf-131">响应</span><span class="sxs-lookup"><span data-stu-id="4b4bf-131">Response</span></span>
+<span data-ttu-id="4b4bf-132">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="4b4bf-132">The following is an example of the response.</span></span> <span data-ttu-id="4b4bf-133">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="4b4bf-133">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="4b4bf-134">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="4b4bf-134">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,8 +139,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/bookingstaffmember-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

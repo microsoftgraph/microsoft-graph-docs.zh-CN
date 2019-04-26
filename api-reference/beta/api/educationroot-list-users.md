@@ -4,57 +4,59 @@ description: 检索 user 对象列表。 这些 user 对象将包含特定于教
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 761725dae02839721fbc710aecd30d4d8d5b03d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e03c451f0bc470a166d6c90ef1217c4f0770c799
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457773"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322895"
 ---
-# <a name="list-users"></a><span data-ttu-id="1cc07-104">列出用户</span><span class="sxs-lookup"><span data-stu-id="1cc07-104">List users</span></span>
+# <a name="list-users"></a><span data-ttu-id="a5ca7-104">列出用户</span><span class="sxs-lookup"><span data-stu-id="a5ca7-104">List users</span></span>
 
-<span data-ttu-id="1cc07-105">检索 user 对象列表。</span><span class="sxs-lookup"><span data-stu-id="1cc07-105">Retrieve a list of user objects.</span></span> <span data-ttu-id="1cc07-106">这些 user 对象将包含特定于教育的属性。</span><span class="sxs-lookup"><span data-stu-id="1cc07-106">These user objects will include education-specific properties.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a><span data-ttu-id="1cc07-107">权限</span><span class="sxs-lookup"><span data-stu-id="1cc07-107">Permissions</span></span>
-<span data-ttu-id="1cc07-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1cc07-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a5ca7-105">检索 user 对象列表。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-105">Retrieve a list of user objects.</span></span> <span data-ttu-id="a5ca7-106">这些 user 对象将包含特定于教育的属性。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-106">These user objects will include education-specific properties.</span></span>
 
-|<span data-ttu-id="1cc07-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="1cc07-110">Permission type</span></span>      | <span data-ttu-id="1cc07-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1cc07-111">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="a5ca7-107">权限</span><span class="sxs-lookup"><span data-stu-id="a5ca7-107">Permissions</span></span>
+<span data-ttu-id="a5ca7-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="a5ca7-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a5ca7-110">Permission type</span></span>      | <span data-ttu-id="a5ca7-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a5ca7-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1cc07-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1cc07-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="1cc07-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="1cc07-113">Not supported.</span></span>  |
-|<span data-ttu-id="1cc07-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1cc07-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="1cc07-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="1cc07-115">Not supported.</span></span>  |
-|<span data-ttu-id="1cc07-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="1cc07-116">Application</span></span> | <span data-ttu-id="1cc07-117">EduRoster.Read.All、EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1cc07-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="a5ca7-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a5ca7-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="a5ca7-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-113">Not supported.</span></span>  |
+|<span data-ttu-id="a5ca7-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a5ca7-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="a5ca7-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-115">Not supported.</span></span>  |
+|<span data-ttu-id="a5ca7-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="a5ca7-116">Application</span></span> | <span data-ttu-id="a5ca7-117">EduRoster.Read.All、EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a5ca7-117">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="1cc07-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1cc07-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a5ca7-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a5ca7-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/users
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="1cc07-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="1cc07-119">Optional query parameters</span></span>
-<span data-ttu-id="1cc07-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="1cc07-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a5ca7-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a5ca7-119">Optional query parameters</span></span>
+<span data-ttu-id="a5ca7-120">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1cc07-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="1cc07-121">Request headers</span></span>
-| <span data-ttu-id="1cc07-122">标头</span><span class="sxs-lookup"><span data-stu-id="1cc07-122">Header</span></span>       | <span data-ttu-id="1cc07-123">值</span><span class="sxs-lookup"><span data-stu-id="1cc07-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="a5ca7-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="a5ca7-121">Request headers</span></span>
+| <span data-ttu-id="a5ca7-122">标头</span><span class="sxs-lookup"><span data-stu-id="a5ca7-122">Header</span></span>       | <span data-ttu-id="a5ca7-123">值</span><span class="sxs-lookup"><span data-stu-id="a5ca7-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1cc07-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1cc07-124">Authorization</span></span>  | <span data-ttu-id="1cc07-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="1cc07-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="a5ca7-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="a5ca7-124">Authorization</span></span>  | <span data-ttu-id="a5ca7-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1cc07-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="1cc07-127">Request body</span></span>
-<span data-ttu-id="1cc07-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="1cc07-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="1cc07-129">响应</span><span class="sxs-lookup"><span data-stu-id="1cc07-129">Response</span></span>
-<span data-ttu-id="1cc07-130">如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [educationUser](../resources/educationuser.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="1cc07-130">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1cc07-131">示例</span><span class="sxs-lookup"><span data-stu-id="1cc07-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1cc07-132">请求</span><span class="sxs-lookup"><span data-stu-id="1cc07-132">Request</span></span>
-<span data-ttu-id="1cc07-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="1cc07-133">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a5ca7-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="a5ca7-127">Request body</span></span>
+<span data-ttu-id="a5ca7-128">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="a5ca7-129">响应</span><span class="sxs-lookup"><span data-stu-id="a5ca7-129">Response</span></span>
+<span data-ttu-id="a5ca7-130">如果成功，此方法会在响应正文中返回 `200 OK` 响应代码和 [educationUser](../resources/educationuser.md) 对象的集合。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-130">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a5ca7-131">示例</span><span class="sxs-lookup"><span data-stu-id="a5ca7-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a5ca7-132">请求</span><span class="sxs-lookup"><span data-stu-id="a5ca7-132">Request</span></span>
+<span data-ttu-id="a5ca7-133">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_users"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/users
+GET https://graph.microsoft.com/beta/education/users
 ```
-##### <a name="response"></a><span data-ttu-id="1cc07-134">响应</span><span class="sxs-lookup"><span data-stu-id="1cc07-134">Response</span></span>
-<span data-ttu-id="1cc07-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="1cc07-135">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="a5ca7-134">响应</span><span class="sxs-lookup"><span data-stu-id="a5ca7-134">Response</span></span>
+<span data-ttu-id="a5ca7-135">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="1cc07-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="1cc07-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="a5ca7-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a5ca7-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -106,10 +108,13 @@ Content-length: 593
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List users",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

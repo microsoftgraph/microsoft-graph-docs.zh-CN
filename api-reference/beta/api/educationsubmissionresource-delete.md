@@ -4,49 +4,49 @@ description: 从提交中删除资源。 仅学生可以执行此操作。 如�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a735cb1451e8d3eb8df13e6fa395c3e02393f451
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 077434e269300617cf239ef82084439c8109adc5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457513"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322339"
 ---
-# <a name="delete-educationsubmissionresource"></a><span data-ttu-id="dcb9d-105">删除 educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="dcb9d-105">Delete educationSubmissionResource</span></span>
+# <a name="delete-educationsubmissionresource"></a><span data-ttu-id="82d09-105">删除 educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="82d09-105">Delete educationSubmissionResource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dcb9d-106">从提交中删除资源。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-106">Deletes a resource from the submission.</span></span> <span data-ttu-id="dcb9d-107">仅学生可以执行此操作。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-107">This can only be done by the student.</span></span> <span data-ttu-id="dcb9d-108">如果资源是从分配中复制的, 则在删除当前副本后将创建该资源的新副本。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-108">If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.</span></span> <span data-ttu-id="dcb9d-109">这使您可以将资源 "重置" 为其原始状态。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-109">This allows you to "reset" the resource to its original state.</span></span> <span data-ttu-id="dcb9d-110">如果资源不是从分配中复制的, 而是从学生添加的, 则只会删除该资源。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-110">If the resource was not copied from the assignment but was added from the student, the resource is simply deleted.</span></span>
+<span data-ttu-id="82d09-106">从提交中删除资源。</span><span class="sxs-lookup"><span data-stu-id="82d09-106">Deletes a resource from the submission.</span></span> <span data-ttu-id="82d09-107">仅学生可以执行此操作。</span><span class="sxs-lookup"><span data-stu-id="82d09-107">This can only be done by the student.</span></span> <span data-ttu-id="82d09-108">如果资源是从分配中复制的, 则在删除当前副本后将创建该资源的新副本。</span><span class="sxs-lookup"><span data-stu-id="82d09-108">If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.</span></span> <span data-ttu-id="82d09-109">这使您可以将资源 "重置" 为其原始状态。</span><span class="sxs-lookup"><span data-stu-id="82d09-109">This allows you to "reset" the resource to its original state.</span></span> <span data-ttu-id="82d09-110">如果资源不是从分配中复制的, 而是从学生添加的, 则只会删除该资源。</span><span class="sxs-lookup"><span data-stu-id="82d09-110">If the resource was not copied from the assignment but was added from the student, the resource is simply deleted.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dcb9d-111">权限</span><span class="sxs-lookup"><span data-stu-id="dcb9d-111">Permissions</span></span>
-<span data-ttu-id="dcb9d-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="82d09-111">权限</span><span class="sxs-lookup"><span data-stu-id="82d09-111">Permissions</span></span>
+<span data-ttu-id="82d09-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="82d09-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dcb9d-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="dcb9d-114">Permission type</span></span>      | <span data-ttu-id="dcb9d-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dcb9d-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="82d09-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="82d09-114">Permission type</span></span>      | <span data-ttu-id="82d09-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="82d09-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dcb9d-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dcb9d-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="dcb9d-117">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="dcb9d-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="dcb9d-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dcb9d-118">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="dcb9d-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-119">Not supported.</span></span>  |
-|<span data-ttu-id="dcb9d-120">Application</span><span class="sxs-lookup"><span data-stu-id="dcb9d-120">Application</span></span> | <span data-ttu-id="dcb9d-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-121">Not supported.</span></span> | 
+|<span data-ttu-id="82d09-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="82d09-116">Delegated (work or school account)</span></span> |  <span data-ttu-id="82d09-117">EduAssignments、ReadWriteBasic、EduAssignments</span><span class="sxs-lookup"><span data-stu-id="82d09-117">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="82d09-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="82d09-118">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="82d09-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="82d09-119">Not supported.</span></span>  |
+|<span data-ttu-id="82d09-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="82d09-120">Application</span></span> | <span data-ttu-id="82d09-121">不支持。</span><span class="sxs-lookup"><span data-stu-id="82d09-121">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="dcb9d-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dcb9d-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="82d09-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="82d09-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /educationClasses/assignments/{id}/submissions/{id}/resources/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="dcb9d-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="dcb9d-123">Request headers</span></span>
-| <span data-ttu-id="dcb9d-124">标头</span><span class="sxs-lookup"><span data-stu-id="dcb9d-124">Header</span></span>       | <span data-ttu-id="dcb9d-125">值</span><span class="sxs-lookup"><span data-stu-id="dcb9d-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="82d09-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="82d09-123">Request headers</span></span>
+| <span data-ttu-id="82d09-124">标头</span><span class="sxs-lookup"><span data-stu-id="82d09-124">Header</span></span>       | <span data-ttu-id="82d09-125">值</span><span class="sxs-lookup"><span data-stu-id="82d09-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="dcb9d-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="dcb9d-126">Authorization</span></span>  | <span data-ttu-id="dcb9d-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="82d09-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="82d09-126">Authorization</span></span>  | <span data-ttu-id="82d09-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="82d09-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="dcb9d-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="dcb9d-129">Request body</span></span>
-<span data-ttu-id="dcb9d-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="82d09-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="82d09-129">Request body</span></span>
+<span data-ttu-id="82d09-130">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="82d09-130">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="dcb9d-131">响应</span><span class="sxs-lookup"><span data-stu-id="dcb9d-131">Response</span></span>
-<span data-ttu-id="dcb9d-p105">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="82d09-131">响应</span><span class="sxs-lookup"><span data-stu-id="82d09-131">Response</span></span>
+<span data-ttu-id="82d09-p105">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="82d09-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dcb9d-134">示例</span><span class="sxs-lookup"><span data-stu-id="dcb9d-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="dcb9d-135">请求</span><span class="sxs-lookup"><span data-stu-id="dcb9d-135">Request</span></span>
-<span data-ttu-id="dcb9d-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="82d09-134">示例</span><span class="sxs-lookup"><span data-stu-id="82d09-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="82d09-135">请求</span><span class="sxs-lookup"><span data-stu-id="82d09-135">Request</span></span>
+<span data-ttu-id="82d09-136">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="82d09-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_educationsubmissionresource"
@@ -54,8 +54,8 @@ DELETE /educationClasses/assignments/{id}/submissions/{id}/resources/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
-##### <a name="response"></a><span data-ttu-id="dcb9d-137">响应</span><span class="sxs-lookup"><span data-stu-id="dcb9d-137">Response</span></span>
-<span data-ttu-id="dcb9d-138">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="dcb9d-138">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="82d09-137">响应</span><span class="sxs-lookup"><span data-stu-id="82d09-137">Response</span></span>
+<span data-ttu-id="82d09-138">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="82d09-138">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -74,8 +74,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationsubmissionresource-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

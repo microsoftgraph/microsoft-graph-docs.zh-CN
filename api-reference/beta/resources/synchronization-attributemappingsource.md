@@ -2,31 +2,31 @@
 title: attributeMappingSource 资源类型
 description: '定义应如何从源对象提取 (或转换) 值。 例如, 它可以是从源对象的给定属性中获取的简单值, 也可以是基于多个源属性的字符串串联/提取/替换的更复杂表达式。 '
 localization_priority: Normal
-ms.openlocfilehash: 1d15cd82c0a58ac8bdd3ac5805abc166322f27fe
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b00cec8f49b914d37d252e5dc464720228bb825
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582135"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345615"
 ---
-# <a name="attributemappingsource-resource-type"></a><span data-ttu-id="1346f-104">attributeMappingSource 资源类型</span><span class="sxs-lookup"><span data-stu-id="1346f-104">attributeMappingSource resource type</span></span>
+# <a name="attributemappingsource-resource-type"></a><span data-ttu-id="004ef-104">attributeMappingSource 资源类型</span><span class="sxs-lookup"><span data-stu-id="004ef-104">attributeMappingSource resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1346f-105">定义应如何从源对象提取 (或转换) 值。</span><span class="sxs-lookup"><span data-stu-id="1346f-105">Defines how a value should be extracted (or transformed) from the source object.</span></span> <span data-ttu-id="1346f-106">例如, 它可以是从源对象的给定属性中获取的简单值, 也可以是基于多个源属性的字符串串联/提取/替换的更复杂表达式。</span><span class="sxs-lookup"><span data-stu-id="1346f-106">For example, it can be a simple value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes.</span></span> 
+<span data-ttu-id="004ef-105">定义应如何从源对象提取 (或转换) 值。</span><span class="sxs-lookup"><span data-stu-id="004ef-105">Defines how a value should be extracted (or transformed) from the source object.</span></span> <span data-ttu-id="004ef-106">例如, 它可以是从源对象的给定属性中获取的简单值, 也可以是基于多个源属性的字符串串联/提取/替换的更复杂表达式。</span><span class="sxs-lookup"><span data-stu-id="004ef-106">For example, it can be a simple value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="1346f-107">属性</span><span class="sxs-lookup"><span data-stu-id="1346f-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="004ef-107">属性</span><span class="sxs-lookup"><span data-stu-id="004ef-107">Properties</span></span>
 
-| <span data-ttu-id="1346f-108">属性</span><span class="sxs-lookup"><span data-stu-id="1346f-108">Property</span></span>              | <span data-ttu-id="1346f-109">类型</span><span class="sxs-lookup"><span data-stu-id="1346f-109">Type</span></span>                      | <span data-ttu-id="1346f-110">说明</span><span class="sxs-lookup"><span data-stu-id="1346f-110">Description</span></span>               |
+| <span data-ttu-id="004ef-108">属性</span><span class="sxs-lookup"><span data-stu-id="004ef-108">Property</span></span>              | <span data-ttu-id="004ef-109">类型</span><span class="sxs-lookup"><span data-stu-id="004ef-109">Type</span></span>                      | <span data-ttu-id="004ef-110">说明</span><span class="sxs-lookup"><span data-stu-id="004ef-110">Description</span></span>               |
 |:----------------------|:--------------------------|:--------------------------|
-|<span data-ttu-id="1346f-111">表达式</span><span class="sxs-lookup"><span data-stu-id="1346f-111">expression</span></span>             |<span data-ttu-id="1346f-112">String</span><span class="sxs-lookup"><span data-stu-id="1346f-112">String</span></span>                     |<span data-ttu-id="1346f-113">此**attributeMappingSource**对象的等效表达式表示形式。</span><span class="sxs-lookup"><span data-stu-id="1346f-113">Equivalent expression representation of this **attributeMappingSource** object.</span></span>|
-|<span data-ttu-id="1346f-114">name</span><span class="sxs-lookup"><span data-stu-id="1346f-114">name</span></span>                   |<span data-ttu-id="1346f-115">String</span><span class="sxs-lookup"><span data-stu-id="1346f-115">String</span></span>                     |<span data-ttu-id="1346f-116">映射源的 Name 参数。</span><span class="sxs-lookup"><span data-stu-id="1346f-116">Name parameter of the mapping source.</span></span> <span data-ttu-id="1346f-117">根据**type**属性值, 这可以是函数的名称、源属性的名称或要使用的常数值。</span><span class="sxs-lookup"><span data-stu-id="1346f-117">Depending on the **type** property value, this can be the name of the function, the name of the source attribute, or a constant value to be used.</span></span> |
-|<span data-ttu-id="1346f-118">parameters</span><span class="sxs-lookup"><span data-stu-id="1346f-118">parameters</span></span>             |<span data-ttu-id="1346f-119">[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)集合</span><span class="sxs-lookup"><span data-stu-id="1346f-119">[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection</span></span> | <span data-ttu-id="1346f-120">如果此对象代表函数, 则列出函数参数。</span><span class="sxs-lookup"><span data-stu-id="1346f-120">If this object represents a function, lists function parameters.</span></span> <span data-ttu-id="1346f-121">参数由**attributeMappingSource**对象本身组成, 从而允许复杂的表达式。</span><span class="sxs-lookup"><span data-stu-id="1346f-121">Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions.</span></span> <span data-ttu-id="1346f-122">如果**type**不`Function`是, 则此属性将为 null/空数组。</span><span class="sxs-lookup"><span data-stu-id="1346f-122">If **type** is not `Function`, this property will be null/empty array.</span></span> |
-|<span data-ttu-id="1346f-123">type</span><span class="sxs-lookup"><span data-stu-id="1346f-123">type</span></span>                   | <span data-ttu-id="1346f-124">String</span><span class="sxs-lookup"><span data-stu-id="1346f-124">String</span></span>                    |<span data-ttu-id="1346f-125">此属性映射源的类型。</span><span class="sxs-lookup"><span data-stu-id="1346f-125">The type of this attribute mapping source.</span></span> <span data-ttu-id="1346f-126">可取值为：`Attribute`、`Constant`、`Function`。</span><span class="sxs-lookup"><span data-stu-id="1346f-126">Possible values are: `Attribute`, `Constant`, `Function`.</span></span> <span data-ttu-id="1346f-127">默认值为 `Attribute`。</span><span class="sxs-lookup"><span data-stu-id="1346f-127">Default is `Attribute`.</span></span>| 
+|<span data-ttu-id="004ef-111">表达式</span><span class="sxs-lookup"><span data-stu-id="004ef-111">expression</span></span>             |<span data-ttu-id="004ef-112">String</span><span class="sxs-lookup"><span data-stu-id="004ef-112">String</span></span>                     |<span data-ttu-id="004ef-113">此**attributeMappingSource**对象的等效表达式表示形式。</span><span class="sxs-lookup"><span data-stu-id="004ef-113">Equivalent expression representation of this **attributeMappingSource** object.</span></span>|
+|<span data-ttu-id="004ef-114">name</span><span class="sxs-lookup"><span data-stu-id="004ef-114">name</span></span>                   |<span data-ttu-id="004ef-115">String</span><span class="sxs-lookup"><span data-stu-id="004ef-115">String</span></span>                     |<span data-ttu-id="004ef-116">映射源的 Name 参数。</span><span class="sxs-lookup"><span data-stu-id="004ef-116">Name parameter of the mapping source.</span></span> <span data-ttu-id="004ef-117">根据**type**属性值, 这可以是函数的名称、源属性的名称或要使用的常数值。</span><span class="sxs-lookup"><span data-stu-id="004ef-117">Depending on the **type** property value, this can be the name of the function, the name of the source attribute, or a constant value to be used.</span></span> |
+|<span data-ttu-id="004ef-118">parameters</span><span class="sxs-lookup"><span data-stu-id="004ef-118">parameters</span></span>             |<span data-ttu-id="004ef-119">[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md)集合</span><span class="sxs-lookup"><span data-stu-id="004ef-119">[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) collection</span></span> | <span data-ttu-id="004ef-120">如果此对象代表函数, 则列出函数参数。</span><span class="sxs-lookup"><span data-stu-id="004ef-120">If this object represents a function, lists function parameters.</span></span> <span data-ttu-id="004ef-121">参数由**attributeMappingSource**对象本身组成, 从而允许复杂的表达式。</span><span class="sxs-lookup"><span data-stu-id="004ef-121">Parameters consist of **attributeMappingSource** objects themselves, allowing for complex expressions.</span></span> <span data-ttu-id="004ef-122">如果**type**不`Function`是, 则此属性将为 null/空数组。</span><span class="sxs-lookup"><span data-stu-id="004ef-122">If **type** is not `Function`, this property will be null/empty array.</span></span> |
+|<span data-ttu-id="004ef-123">type</span><span class="sxs-lookup"><span data-stu-id="004ef-123">type</span></span>                   | <span data-ttu-id="004ef-124">String</span><span class="sxs-lookup"><span data-stu-id="004ef-124">String</span></span>                    |<span data-ttu-id="004ef-125">此属性映射源的类型。</span><span class="sxs-lookup"><span data-stu-id="004ef-125">The type of this attribute mapping source.</span></span> <span data-ttu-id="004ef-126">可取值为：`Attribute`、`Constant`、`Function`。</span><span class="sxs-lookup"><span data-stu-id="004ef-126">Possible values are: `Attribute`, `Constant`, `Function`.</span></span> <span data-ttu-id="004ef-127">默认值为 `Attribute`。</span><span class="sxs-lookup"><span data-stu-id="004ef-127">Default is `Attribute`.</span></span>| 
 
-## <a name="json-representation"></a><span data-ttu-id="1346f-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="1346f-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="004ef-128">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="004ef-128">JSON representation</span></span>
 
-<span data-ttu-id="1346f-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="1346f-129">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="004ef-129">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="004ef-129">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,9 +45,9 @@ ms.locfileid: "32582135"
 }
 ```
 
-## <a name="json-examples"></a><span data-ttu-id="1346f-130">JSON 示例</span><span class="sxs-lookup"><span data-stu-id="1346f-130">JSON Examples</span></span>
+## <a name="json-examples"></a><span data-ttu-id="004ef-130">JSON 示例</span><span class="sxs-lookup"><span data-stu-id="004ef-130">JSON Examples</span></span>
 
-<span data-ttu-id="1346f-131">属性映射的简单属性</span><span class="sxs-lookup"><span data-stu-id="1346f-131">Simple attribute to attribute mapping</span></span>
+<span data-ttu-id="004ef-131">属性映射的简单属性</span><span class="sxs-lookup"><span data-stu-id="004ef-131">Simple attribute to attribute mapping</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -65,7 +65,7 @@ ms.locfileid: "32582135"
 }
 ```
 
-<span data-ttu-id="1346f-132">从 source 属性提取前8个字符的表达式</span><span class="sxs-lookup"><span data-stu-id="1346f-132">Expression extracting first 8 characters from the source attribute</span></span>
+<span data-ttu-id="004ef-132">从 source 属性提取前8个字符的表达式</span><span class="sxs-lookup"><span data-stu-id="004ef-132">Expression extracting first 8 characters from the source attribute</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -121,8 +121,6 @@ ms.locfileid: "32582135"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-attributemappingsource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

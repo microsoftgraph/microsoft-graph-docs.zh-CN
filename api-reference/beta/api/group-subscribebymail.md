@@ -4,47 +4,47 @@ description: 调用此方法可使当前用户在该组中收到有关该组的�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 0a334daa005947099da324aab31ccc2a1da6b6e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dd753c4731074024a1bd3700ffde379592720d46
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501950"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324201"
 ---
-# <a name="group-subscribebymail"></a><span data-ttu-id="0369e-104">组：subscribeByMail</span><span class="sxs-lookup"><span data-stu-id="0369e-104">group: subscribeByMail</span></span>
+# <a name="group-subscribebymail"></a><span data-ttu-id="de7ce-104">组：subscribeByMail</span><span class="sxs-lookup"><span data-stu-id="de7ce-104">group: subscribeByMail</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0369e-105">调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="0369e-105">Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.</span></span> <span data-ttu-id="0369e-106">仅支持 Office 365 组。</span><span class="sxs-lookup"><span data-stu-id="0369e-106">Supported for Office 365 Groups only.</span></span>
+<span data-ttu-id="de7ce-105">调用此方法可使当前用户在该组中收到有关该组的新帖子、事件和文件的电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="de7ce-105">Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.</span></span> <span data-ttu-id="de7ce-106">仅支持 Office 365 组。</span><span class="sxs-lookup"><span data-stu-id="de7ce-106">Supported for Office 365 Groups only.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0369e-107">权限</span><span class="sxs-lookup"><span data-stu-id="0369e-107">Permissions</span></span>
-<span data-ttu-id="0369e-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="0369e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="de7ce-107">权限</span><span class="sxs-lookup"><span data-stu-id="de7ce-107">Permissions</span></span>
+<span data-ttu-id="de7ce-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="de7ce-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0369e-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="0369e-110">Permission type</span></span>      | <span data-ttu-id="0369e-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="0369e-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="de7ce-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="de7ce-110">Permission type</span></span>      | <span data-ttu-id="de7ce-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="de7ce-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0369e-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0369e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="0369e-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0369e-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="0369e-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="0369e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0369e-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="0369e-115">Not supported.</span></span>    |
-|<span data-ttu-id="0369e-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="0369e-116">Application</span></span> | <span data-ttu-id="0369e-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="0369e-117">Not supported.</span></span> |
+|<span data-ttu-id="de7ce-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="de7ce-112">Delegated (work or school account)</span></span> | <span data-ttu-id="de7ce-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="de7ce-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="de7ce-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="de7ce-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="de7ce-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="de7ce-115">Not supported.</span></span>    |
+|<span data-ttu-id="de7ce-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="de7ce-116">Application</span></span> | <span data-ttu-id="de7ce-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="de7ce-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0369e-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0369e-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="de7ce-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="de7ce-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/subscribeByMail
 ```
-## <a name="request-headers"></a><span data-ttu-id="0369e-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="0369e-119">Request headers</span></span>
-| <span data-ttu-id="0369e-120">标头</span><span class="sxs-lookup"><span data-stu-id="0369e-120">Header</span></span>       | <span data-ttu-id="0369e-121">值</span><span class="sxs-lookup"><span data-stu-id="0369e-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="de7ce-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="de7ce-119">Request headers</span></span>
+| <span data-ttu-id="de7ce-120">标头</span><span class="sxs-lookup"><span data-stu-id="de7ce-120">Header</span></span>       | <span data-ttu-id="de7ce-121">值</span><span class="sxs-lookup"><span data-stu-id="de7ce-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="0369e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0369e-122">Authorization</span></span>  | <span data-ttu-id="0369e-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="0369e-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="0369e-125">Prefer</span><span class="sxs-lookup"><span data-stu-id="0369e-125">Prefer</span></span> | <span data-ttu-id="0369e-126">return=minimal。</span><span class="sxs-lookup"><span data-stu-id="0369e-126">return=minimal.</span></span> <span data-ttu-id="0369e-127">如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。</span><span class="sxs-lookup"><span data-stu-id="0369e-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="0369e-128">可选。</span><span class="sxs-lookup"><span data-stu-id="0369e-128">Optional.</span></span>  | 
+| <span data-ttu-id="de7ce-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="de7ce-122">Authorization</span></span>  | <span data-ttu-id="de7ce-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="de7ce-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="de7ce-125">Prefer</span><span class="sxs-lookup"><span data-stu-id="de7ce-125">Prefer</span></span> | <span data-ttu-id="de7ce-126">return=minimal。</span><span class="sxs-lookup"><span data-stu-id="de7ce-126">return=minimal.</span></span> <span data-ttu-id="de7ce-127">如果 minimal 响应头包含在请求头中，那么成功响应返回 `204 No Content` 代码。</span><span class="sxs-lookup"><span data-stu-id="de7ce-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="de7ce-128">可选。</span><span class="sxs-lookup"><span data-stu-id="de7ce-128">Optional.</span></span>  | 
 
-## <a name="request-body"></a><span data-ttu-id="0369e-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="0369e-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="de7ce-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="de7ce-129">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="0369e-130">响应</span><span class="sxs-lookup"><span data-stu-id="0369e-130">Response</span></span>
-<span data-ttu-id="0369e-p106">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="0369e-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="de7ce-130">响应</span><span class="sxs-lookup"><span data-stu-id="de7ce-130">Response</span></span>
+<span data-ttu-id="de7ce-p106">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="de7ce-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0369e-133">示例</span><span class="sxs-lookup"><span data-stu-id="0369e-133">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="0369e-134">请求</span><span class="sxs-lookup"><span data-stu-id="0369e-134">Request</span></span>
-<span data-ttu-id="0369e-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="0369e-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="de7ce-133">示例</span><span class="sxs-lookup"><span data-stu-id="de7ce-133">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="de7ce-134">请求</span><span class="sxs-lookup"><span data-stu-id="de7ce-134">Request</span></span>
+<span data-ttu-id="de7ce-135">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="de7ce-135">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_subscribebymail"
@@ -53,8 +53,8 @@ POST /groups/{id}/subscribeByMail
 POST https://graph.microsoft.com/beta/groups/{id}/subscribeByMail
 ```
 
-#### <a name="response"></a><span data-ttu-id="0369e-136">响应</span><span class="sxs-lookup"><span data-stu-id="0369e-136">Response</span></span>
-<span data-ttu-id="0369e-137">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="0369e-137">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="de7ce-136">响应</span><span class="sxs-lookup"><span data-stu-id="de7ce-136">Response</span></span>
+<span data-ttu-id="de7ce-137">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="de7ce-137">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -72,8 +72,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-subscribebymail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
