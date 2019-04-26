@@ -4,26 +4,26 @@ description: '**plannerChecklistItemCollection**资源表示任务上的检查�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: cdc2822574497b2a76cc92c8b7b22f2e1bccc2e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 502bda597ba0e021dc449812a104d0fd516f6ef1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579046"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344512"
 ---
-# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="3622e-106">plannerChecklistItems 资源类型</span><span class="sxs-lookup"><span data-stu-id="3622e-106">plannerChecklistItems resource type</span></span>
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="aa14e-106">plannerChecklistItems 资源类型</span><span class="sxs-lookup"><span data-stu-id="aa14e-106">plannerChecklistItems resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3622e-107">**plannerChecklistItemCollection**资源表示任务上的检查表项的集合。</span><span class="sxs-lookup"><span data-stu-id="3622e-107">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task.</span></span> <span data-ttu-id="3622e-108">它是开放类型。</span><span class="sxs-lookup"><span data-stu-id="3622e-108">It is an Open Type.</span></span> <span data-ttu-id="3622e-109">它是[任务详细信息](plannertaskdetails.md)对象的一部分。</span><span class="sxs-lookup"><span data-stu-id="3622e-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="3622e-110">属性-值对中的值是[checklistItem](plannerchecklistitem.md)对象。</span><span class="sxs-lookup"><span data-stu-id="3622e-110">The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
+<span data-ttu-id="aa14e-107">**plannerChecklistItemCollection**资源表示任务上的检查表项的集合。</span><span class="sxs-lookup"><span data-stu-id="aa14e-107">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task.</span></span> <span data-ttu-id="aa14e-108">它是开放类型。</span><span class="sxs-lookup"><span data-stu-id="aa14e-108">It is an Open Type.</span></span> <span data-ttu-id="aa14e-109">它是[任务详细信息](plannertaskdetails.md)对象的一部分。</span><span class="sxs-lookup"><span data-stu-id="aa14e-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="aa14e-110">属性-值对中的值是[checklistItem](plannerchecklistitem.md)对象。</span><span class="sxs-lookup"><span data-stu-id="aa14e-110">The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="3622e-111">属性</span><span class="sxs-lookup"><span data-stu-id="3622e-111">Properties</span></span>
-<span data-ttu-id="3622e-112">可由客户端定义打开类型的属性。</span><span class="sxs-lookup"><span data-stu-id="3622e-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="3622e-113">在这种情况下, 客户端应将**guid**作为属性提供, 并且它们的值必须是[checklistItem](plannerchecklistitem.md)对象。</span><span class="sxs-lookup"><span data-stu-id="3622e-113">In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects.</span></span> <span data-ttu-id="3622e-114">示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="3622e-114">Example is shown below.</span></span> <span data-ttu-id="3622e-115">若要删除检查表中的项目, 请将该属性的值`null`设置为。</span><span class="sxs-lookup"><span data-stu-id="3622e-115">To remove an item in the checklist, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="aa14e-111">属性</span><span class="sxs-lookup"><span data-stu-id="aa14e-111">Properties</span></span>
+<span data-ttu-id="aa14e-112">可由客户端定义打开类型的属性。</span><span class="sxs-lookup"><span data-stu-id="aa14e-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="aa14e-113">在这种情况下, 客户端应将**guid**作为属性提供, 并且它们的值必须是[checklistItem](plannerchecklistitem.md)对象。</span><span class="sxs-lookup"><span data-stu-id="aa14e-113">In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects.</span></span> <span data-ttu-id="aa14e-114">示例如下所示。</span><span class="sxs-lookup"><span data-stu-id="aa14e-114">Example is shown below.</span></span> <span data-ttu-id="aa14e-115">若要删除检查表中的项目, 请将该属性的值`null`设置为。</span><span class="sxs-lookup"><span data-stu-id="aa14e-115">To remove an item in the checklist, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="3622e-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3622e-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="aa14e-116">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="aa14e-116">JSON representation</span></span>
 
-<span data-ttu-id="3622e-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3622e-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="aa14e-117">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="aa14e-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,7 +45,7 @@ ms.locfileid: "32579046"
   }
 }
 ```
-<span data-ttu-id="3622e-118">示例</span><span class="sxs-lookup"><span data-stu-id="3622e-118">// Example</span></span>
+<span data-ttu-id="aa14e-118">示例</span><span class="sxs-lookup"><span data-stu-id="aa14e-118">// Example</span></span>
 
 ```json
 {
@@ -88,8 +88,6 @@ ms.locfileid: "32579046"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerchecklistitems.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

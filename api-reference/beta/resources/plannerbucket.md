@@ -4,52 +4,54 @@ description: ) 用于 Office 365 中的计划中的任务。 它包含在 planne
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 85cf30bc13b3236928e662807a144f81614adbd7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9e6b3ac4a9bad8d7402dee28706b5200c623078
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579252"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344583"
 ---
-# <a name="plannerbucket-resource-type"></a><span data-ttu-id="96c2f-104">plannerBucket 资源类型</span><span class="sxs-lookup"><span data-stu-id="96c2f-104">plannerBucket resource type</span></span>
+# <a name="plannerbucket-resource-type"></a><span data-ttu-id="e454c-104">plannerBucket 资源类型</span><span class="sxs-lookup"><span data-stu-id="e454c-104">plannerBucket resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="96c2f-105">**plannerBucket**资源表示 Office 365 中的计划中的任务的存储桶 (或 "自定义列")。</span><span class="sxs-lookup"><span data-stu-id="96c2f-105">The **plannerBucket** resource represents a bucket (or "custom column") for tasks in a plan in Office 365.</span></span> <span data-ttu-id="96c2f-106">它包含在[plannerPlan](plannerplan.md)中, 并且可以具有[plannerTasks](plannertask.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="96c2f-106">It is contained in a [plannerPlan](plannerplan.md) and can have a collection of [plannerTasks](plannertask.md).</span></span>
+<span data-ttu-id="e454c-105">**plannerBucket**资源表示 Office 365 中的计划中的任务的存储桶 (或 "自定义列")。</span><span class="sxs-lookup"><span data-stu-id="e454c-105">The **plannerBucket** resource represents a bucket (or "custom column") for tasks in a plan in Office 365.</span></span> <span data-ttu-id="e454c-106">它包含在[plannerPlan](plannerplan.md)中, 并且可以具有[plannerTasks](plannertask.md)的集合。</span><span class="sxs-lookup"><span data-stu-id="e454c-106">It is contained in a [plannerPlan](plannerplan.md) and can have a collection of [plannerTasks](plannertask.md).</span></span>
 
 
 
-## <a name="methods"></a><span data-ttu-id="96c2f-107">方法</span><span class="sxs-lookup"><span data-stu-id="96c2f-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="e454c-107">方法</span><span class="sxs-lookup"><span data-stu-id="e454c-107">Methods</span></span>
 
-| <span data-ttu-id="96c2f-108">方法</span><span class="sxs-lookup"><span data-stu-id="96c2f-108">Method</span></span>           | <span data-ttu-id="96c2f-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="96c2f-109">Return Type</span></span>    |<span data-ttu-id="96c2f-110">说明</span><span class="sxs-lookup"><span data-stu-id="96c2f-110">Description</span></span>|
+| <span data-ttu-id="e454c-108">方法</span><span class="sxs-lookup"><span data-stu-id="e454c-108">Method</span></span>           | <span data-ttu-id="e454c-109">返回类型</span><span class="sxs-lookup"><span data-stu-id="e454c-109">Return Type</span></span>    |<span data-ttu-id="e454c-110">说明</span><span class="sxs-lookup"><span data-stu-id="e454c-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="96c2f-111">获取 plannerBucket</span><span class="sxs-lookup"><span data-stu-id="96c2f-111">Get plannerBucket</span></span>](../api/plannerbucket-get.md) | [<span data-ttu-id="96c2f-112">plannerBucket</span><span class="sxs-lookup"><span data-stu-id="96c2f-112">plannerBucket</span></span>](plannerbucket.md) |<span data-ttu-id="96c2f-113">读取**plannerBucket**对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="96c2f-113">Read properties and relationships of **plannerBucket** object.</span></span>|
-|[<span data-ttu-id="96c2f-114">List plannerTasks</span><span class="sxs-lookup"><span data-stu-id="96c2f-114">List plannerTasks</span></span>](../api/plannerbucket-list-tasks.md) |<span data-ttu-id="96c2f-115">[plannerTask](plannertask.md) 集合</span><span class="sxs-lookup"><span data-stu-id="96c2f-115">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="96c2f-116">获取**plannerTask**对象集合。</span><span class="sxs-lookup"><span data-stu-id="96c2f-116">Get a **plannerTask** object collection.</span></span>|
-|[<span data-ttu-id="96c2f-117">创建</span><span class="sxs-lookup"><span data-stu-id="96c2f-117">Create</span></span>](../api/planner-post-buckets.md) | [<span data-ttu-id="96c2f-118">plannerBucket</span><span class="sxs-lookup"><span data-stu-id="96c2f-118">plannerBucket</span></span>](plannerbucket.md)   | <span data-ttu-id="96c2f-119">创建新的**plannerBucket**对象。</span><span class="sxs-lookup"><span data-stu-id="96c2f-119">Create a new **plannerBucket** object.</span></span> |
-|[<span data-ttu-id="96c2f-120">更新</span><span class="sxs-lookup"><span data-stu-id="96c2f-120">Update</span></span>](../api/plannerbucket-update.md) | [<span data-ttu-id="96c2f-121">plannerBucket</span><span class="sxs-lookup"><span data-stu-id="96c2f-121">plannerBucket</span></span>](plannerbucket.md)   |<span data-ttu-id="96c2f-122">更新**plannerBucket**对象。</span><span class="sxs-lookup"><span data-stu-id="96c2f-122">Update **plannerBucket** object.</span></span> |
-|[<span data-ttu-id="96c2f-123">删除</span><span class="sxs-lookup"><span data-stu-id="96c2f-123">Delete</span></span>](../api/plannerbucket-delete.md) | <span data-ttu-id="96c2f-124">无</span><span class="sxs-lookup"><span data-stu-id="96c2f-124">None</span></span> |<span data-ttu-id="96c2f-125">删除**plannerBucket**对象。</span><span class="sxs-lookup"><span data-stu-id="96c2f-125">Delete **plannerBucket** object.</span></span> |
+|[<span data-ttu-id="e454c-111">获取 plannerBucket</span><span class="sxs-lookup"><span data-stu-id="e454c-111">Get plannerBucket</span></span>](../api/plannerbucket-get.md) | [<span data-ttu-id="e454c-112">plannerBucket</span><span class="sxs-lookup"><span data-stu-id="e454c-112">plannerBucket</span></span>](plannerbucket.md) |<span data-ttu-id="e454c-113">读取**plannerBucket**对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="e454c-113">Read properties and relationships of **plannerBucket** object.</span></span>|
+|[<span data-ttu-id="e454c-114">List plannerTasks</span><span class="sxs-lookup"><span data-stu-id="e454c-114">List plannerTasks</span></span>](../api/plannerbucket-list-tasks.md) |<span data-ttu-id="e454c-115">[plannerTask](plannertask.md) 集合</span><span class="sxs-lookup"><span data-stu-id="e454c-115">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="e454c-116">获取 **plannerTask** 对象集合。</span><span class="sxs-lookup"><span data-stu-id="e454c-116">Get a **plannerTask** object collection.</span></span>|
+|[<span data-ttu-id="e454c-117">Create</span><span class="sxs-lookup"><span data-stu-id="e454c-117">Create</span></span>](../api/planner-post-buckets.md) | [<span data-ttu-id="e454c-118">plannerBucket</span><span class="sxs-lookup"><span data-stu-id="e454c-118">plannerBucket</span></span>](plannerbucket.md)   | <span data-ttu-id="e454c-119">创建新的**plannerBucket**对象。</span><span class="sxs-lookup"><span data-stu-id="e454c-119">Create a new **plannerBucket** object.</span></span> |
+|[<span data-ttu-id="e454c-120">更新</span><span class="sxs-lookup"><span data-stu-id="e454c-120">Update</span></span>](../api/plannerbucket-update.md) | [<span data-ttu-id="e454c-121">plannerBucket</span><span class="sxs-lookup"><span data-stu-id="e454c-121">plannerBucket</span></span>](plannerbucket.md)   |<span data-ttu-id="e454c-122">更新**plannerBucket**对象。</span><span class="sxs-lookup"><span data-stu-id="e454c-122">Update **plannerBucket** object.</span></span> |
+|[<span data-ttu-id="e454c-123">删除</span><span class="sxs-lookup"><span data-stu-id="e454c-123">Delete</span></span>](../api/plannerbucket-delete.md) | <span data-ttu-id="e454c-124">无</span><span class="sxs-lookup"><span data-stu-id="e454c-124">None</span></span> |<span data-ttu-id="e454c-125">删除**plannerBucket**对象。</span><span class="sxs-lookup"><span data-stu-id="e454c-125">Delete **plannerBucket** object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="96c2f-126">属性</span><span class="sxs-lookup"><span data-stu-id="96c2f-126">Properties</span></span>
-| <span data-ttu-id="96c2f-127">属性</span><span class="sxs-lookup"><span data-stu-id="96c2f-127">Property</span></span>     | <span data-ttu-id="96c2f-128">类型</span><span class="sxs-lookup"><span data-stu-id="96c2f-128">Type</span></span>   |<span data-ttu-id="96c2f-129">说明</span><span class="sxs-lookup"><span data-stu-id="96c2f-129">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e454c-126">属性</span><span class="sxs-lookup"><span data-stu-id="e454c-126">Properties</span></span>
+| <span data-ttu-id="e454c-127">属性</span><span class="sxs-lookup"><span data-stu-id="e454c-127">Property</span></span>     | <span data-ttu-id="e454c-128">类型</span><span class="sxs-lookup"><span data-stu-id="e454c-128">Type</span></span>   |<span data-ttu-id="e454c-129">说明</span><span class="sxs-lookup"><span data-stu-id="e454c-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="96c2f-130">id</span><span class="sxs-lookup"><span data-stu-id="96c2f-130">id</span></span>|<span data-ttu-id="96c2f-131">String</span><span class="sxs-lookup"><span data-stu-id="96c2f-131">String</span></span>| <span data-ttu-id="96c2f-132">只读。</span><span class="sxs-lookup"><span data-stu-id="96c2f-132">Read-only.</span></span> <span data-ttu-id="96c2f-133">存储桶的 ID。</span><span class="sxs-lookup"><span data-stu-id="96c2f-133">ID of the bucket.</span></span> <span data-ttu-id="96c2f-134">长度为 28 个字符，区分大小写。</span><span class="sxs-lookup"><span data-stu-id="96c2f-134">It is 28 characters long and case-sensitive.</span></span> <span data-ttu-id="96c2f-135">[格式验证](tasks-identifiers-disclaimer.md)在服务上完成。</span><span class="sxs-lookup"><span data-stu-id="96c2f-135">[Format validation](tasks-identifiers-disclaimer.md) is done on the service.</span></span>|
-|<span data-ttu-id="96c2f-136">name</span><span class="sxs-lookup"><span data-stu-id="96c2f-136">name</span></span>|<span data-ttu-id="96c2f-137">String</span><span class="sxs-lookup"><span data-stu-id="96c2f-137">String</span></span>|<span data-ttu-id="96c2f-138">存储桶的名称。</span><span class="sxs-lookup"><span data-stu-id="96c2f-138">Name of the bucket.</span></span>|
-|<span data-ttu-id="96c2f-139">orderHint</span><span class="sxs-lookup"><span data-stu-id="96c2f-139">orderHint</span></span>|<span data-ttu-id="96c2f-140">String</span><span class="sxs-lookup"><span data-stu-id="96c2f-140">String</span></span>|<span data-ttu-id="96c2f-p104">用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。</span><span class="sxs-lookup"><span data-stu-id="96c2f-p104">Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).</span></span>|
-|<span data-ttu-id="96c2f-143">planId</span><span class="sxs-lookup"><span data-stu-id="96c2f-143">planId</span></span>|<span data-ttu-id="96c2f-144">String</span><span class="sxs-lookup"><span data-stu-id="96c2f-144">String</span></span>|<span data-ttu-id="96c2f-145">存储桶所属的计划 ID。</span><span class="sxs-lookup"><span data-stu-id="96c2f-145">Plan ID to which the bucket belongs.</span></span>|
+|<span data-ttu-id="e454c-130">id</span><span class="sxs-lookup"><span data-stu-id="e454c-130">id</span></span>|<span data-ttu-id="e454c-131">String</span><span class="sxs-lookup"><span data-stu-id="e454c-131">String</span></span>| <span data-ttu-id="e454c-132">只读。</span><span class="sxs-lookup"><span data-stu-id="e454c-132">Read-only.</span></span> <span data-ttu-id="e454c-133">存储桶的 ID。</span><span class="sxs-lookup"><span data-stu-id="e454c-133">ID of the bucket.</span></span> <span data-ttu-id="e454c-134">长度为 28 个字符，区分大小写。</span><span class="sxs-lookup"><span data-stu-id="e454c-134">It is 28 characters long and case-sensitive.</span></span> <span data-ttu-id="e454c-135">[格式验证](tasks-identifiers-disclaimer.md)在服务上完成。</span><span class="sxs-lookup"><span data-stu-id="e454c-135">[Format validation](tasks-identifiers-disclaimer.md) is done on the service.</span></span>|
+|<span data-ttu-id="e454c-136">name</span><span class="sxs-lookup"><span data-stu-id="e454c-136">name</span></span>|<span data-ttu-id="e454c-137">字符串</span><span class="sxs-lookup"><span data-stu-id="e454c-137">String</span></span>|<span data-ttu-id="e454c-138">存储桶的名称。</span><span class="sxs-lookup"><span data-stu-id="e454c-138">Name of the bucket.</span></span>|
+|<span data-ttu-id="e454c-139">orderHint</span><span class="sxs-lookup"><span data-stu-id="e454c-139">orderHint</span></span>|<span data-ttu-id="e454c-140">String</span><span class="sxs-lookup"><span data-stu-id="e454c-140">String</span></span>|<span data-ttu-id="e454c-p104">用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。</span><span class="sxs-lookup"><span data-stu-id="e454c-p104">Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).</span></span>|
+|<span data-ttu-id="e454c-143">planId</span><span class="sxs-lookup"><span data-stu-id="e454c-143">planId</span></span>|<span data-ttu-id="e454c-144">String</span><span class="sxs-lookup"><span data-stu-id="e454c-144">String</span></span>|<span data-ttu-id="e454c-145">存储桶所属的计划 ID。</span><span class="sxs-lookup"><span data-stu-id="e454c-145">Plan ID to which the bucket belongs.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="96c2f-146">关系</span><span class="sxs-lookup"><span data-stu-id="96c2f-146">Relationships</span></span>
-| <span data-ttu-id="96c2f-147">关系</span><span class="sxs-lookup"><span data-stu-id="96c2f-147">Relationship</span></span> | <span data-ttu-id="96c2f-148">类型</span><span class="sxs-lookup"><span data-stu-id="96c2f-148">Type</span></span>   |<span data-ttu-id="96c2f-149">说明</span><span class="sxs-lookup"><span data-stu-id="96c2f-149">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="e454c-146">关系</span><span class="sxs-lookup"><span data-stu-id="e454c-146">Relationships</span></span>
+| <span data-ttu-id="e454c-147">关系</span><span class="sxs-lookup"><span data-stu-id="e454c-147">Relationship</span></span> | <span data-ttu-id="e454c-148">类型</span><span class="sxs-lookup"><span data-stu-id="e454c-148">Type</span></span>   |<span data-ttu-id="e454c-149">说明</span><span class="sxs-lookup"><span data-stu-id="e454c-149">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="96c2f-150">任务</span><span class="sxs-lookup"><span data-stu-id="96c2f-150">tasks</span></span>|<span data-ttu-id="96c2f-151">[plannerTask](plannertask.md) 集合</span><span class="sxs-lookup"><span data-stu-id="96c2f-151">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="96c2f-152">只读。</span><span class="sxs-lookup"><span data-stu-id="96c2f-152">Read-only.</span></span> <span data-ttu-id="96c2f-153">可为 Null。</span><span class="sxs-lookup"><span data-stu-id="96c2f-153">Nullable.</span></span> <span data-ttu-id="96c2f-154">存储桶中的任务的集合。</span><span class="sxs-lookup"><span data-stu-id="96c2f-154">The collection of tasks in the bucket.</span></span>|
+|<span data-ttu-id="e454c-150">tasks</span><span class="sxs-lookup"><span data-stu-id="e454c-150">tasks</span></span>|<span data-ttu-id="e454c-151">[plannerTask](plannertask.md) collection</span><span class="sxs-lookup"><span data-stu-id="e454c-151">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="e454c-152">只读。</span><span class="sxs-lookup"><span data-stu-id="e454c-152">Read-only.</span></span> <span data-ttu-id="e454c-153">可为 Null。</span><span class="sxs-lookup"><span data-stu-id="e454c-153">Nullable.</span></span> <span data-ttu-id="e454c-154">存储桶中的任务的集合。</span><span class="sxs-lookup"><span data-stu-id="e454c-154">The collection of tasks in the bucket.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="96c2f-155">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="96c2f-155">JSON representation</span></span>
-<span data-ttu-id="96c2f-156">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="96c2f-156">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e454c-155">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e454c-155">JSON representation</span></span>
+<span data-ttu-id="e454c-156">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e454c-156">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.plannerBucket"
 }-->
 
@@ -72,8 +74,6 @@ ms.locfileid: "32579252"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerbucket.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
