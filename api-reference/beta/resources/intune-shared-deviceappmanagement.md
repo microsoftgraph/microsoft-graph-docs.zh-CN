@@ -4,12 +4,12 @@ description: 充当所有设备应用管理功能的容器的单例实体。
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a6d4557fb77ecc7a9f635688046b267d08c16d78
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 45164300bbfa9ff3a4de3da144dd66d5dad6e42b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566288"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341328"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 
@@ -72,12 +72,14 @@ ms.locfileid: "32566288"
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "optionalProperties":[
+    "managedAppRegistrations"
+    ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceAppManagement"
-}
--->
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceAppManagement",
   "id": "String (identifier)",
   "microsoftStoreForBusinessLastSuccessfulSyncDateTime": "String (timestamp)",
   "isEnabledForMicrosoftStoreForBusiness": true,

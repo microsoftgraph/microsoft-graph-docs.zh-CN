@@ -2,23 +2,23 @@
 title: synchronizationJobRestartCriteria 资源类型
 description: '定义[synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md)操作的范围。'
 localization_priority: Normal
-ms.openlocfilehash: 1e6ac952808f80d191fc93e9a804411ec4459d4c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b59b960534b7fb3e2d122e1ec92ee7b01c998c0f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453614"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340024"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>synchronizationJobRestartCriteria 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义[synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md)操作的范围。
+定义[synchronizationJob: restart](../api/synchronization-synchronizationjob-restart.md)操作的范围。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|resetScope|字符串| 以下`Full`值的逗号分隔组合:、 `QuarantineState` `Watermark` `Escrows`、、。 `ConnectorDataStore` 如果`Full`您想要所有选项, 请使用。|
+|resetScope|String| 以下`Full`值的逗号分隔组合:、 `QuarantineState` `Watermark` `Escrows`、、。 `ConnectorDataStore` 如果`Full`您想要所有选项, 请使用。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -48,8 +48,6 @@ ms.locfileid: "32453614"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationjobrestartcriteria.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

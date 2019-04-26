@@ -4,12 +4,12 @@ description: 有关 Microsoft 团队中的邮件的信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3c1414d10a262280bcf0d3a307fc0c71aed2fbde
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 552844795d3ba7e8ad4c8a3c3a6dff3c18990bc2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461069"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339691"
 ---
 # <a name="chatinfo-resource-type"></a>chatInfo 资源类型
 
@@ -21,9 +21,9 @@ ms.locfileid: "32461069"
 
 | 属性            | 类型    | 说明|
 |:--------------------|:--------|:-----------|
-| messageId           | 字符串  | Microsoft 团队频道中的邮件的唯一标识符。 |
-| replyChainMessageId | 字符串  | 答复邮件的 ID。 |
-| threadId            | 字符串  | Microsoft 团队中的线程的唯一标识符。 |
+| messageId           | String  | Microsoft 团队频道中的邮件的唯一标识符。 |
+| replyChainMessageId | String  | 答复邮件的 ID。 |
+| threadId            | String  | Microsoft 团队中的线程的唯一标识符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -53,8 +53,6 @@ ms.locfileid: "32461069"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/chatInfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

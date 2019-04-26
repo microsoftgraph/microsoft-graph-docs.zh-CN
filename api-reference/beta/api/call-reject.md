@@ -4,12 +4,12 @@ description: 拒绝传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5b42ebee208431cd0a02be291d07f580d98c87a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 491de8af09689a3709760d6325afb006d46a3da9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461302"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328045"
 ---
 # <a name="call-reject"></a>呼叫: 拒绝
 
@@ -43,7 +43,7 @@ POST /applications/{id}/calls/{id}/reject
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|在于|字符串|拒绝原因。|
+|在于|String|拒绝原因。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。
@@ -174,8 +174,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/call-reject.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

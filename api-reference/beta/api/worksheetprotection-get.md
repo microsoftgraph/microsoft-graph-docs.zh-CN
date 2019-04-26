@@ -1,21 +1,21 @@
 ---
-title: Get WorksheetProtection
-description: 检索 worksheetprotection 对象的属性和关系。
+title: 获取 workbookWorksheetProtection
+description: 检索 workbookworksheetprotection 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8c3de9aa039b824cff5e5e746c599452b6cfed79
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 342864453e60e66f1485a052ab225249a5a1380f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535737"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339354"
 ---
-# <a name="get-worksheetprotection"></a>Get WorksheetProtection
+# <a name="get-workbookworksheetprotection"></a>获取 workbookWorksheetProtection
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索 worksheetprotection 对象的属性和关系。
+检索 workbookWorksheetProtection 对象的属性和关系。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -44,13 +44,13 @@ GET /workbook/worksheets/{id|name}/protection
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [WorksheetProtection](../resources/worksheetprotection.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[workbookWorksheetProtection](../resources/workbookworksheetprotection.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
-  "name": "get_worksheetprotection"
+  "name": "get_workbookworksheetprotection"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheetProtection"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -77,12 +77,10 @@ Content-length: 23
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get WorksheetProtection",
+  "description": "Get workbookWorksheetProtection",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/worksheetprotection-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

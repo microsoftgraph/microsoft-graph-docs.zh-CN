@@ -4,12 +4,12 @@ description: '将行添加到表的末尾。 请注意, api 可以使用此 api 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 88fd78516528f62925b18c1c45d9452404be6881
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d0244b554333e2151e202273e26440b165f47a2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536867"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330504"
 ---
 # <a name="create-tablerow"></a>创建 TableRow
 
@@ -49,11 +49,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |index|number|可选。指定新行的相对位置。如果为空，将在末尾进行添加。插入的行下方的任何行将向下移动。从零开始编制索引。|
-|值|（布尔值、字符串或数字）|表格行无格式值的二维数组。|
+|值|(布尔值或字符串或数字) 集合|表格行无格式值的二维数组。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [TableRow](../resources/tablerow.md) 对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[workbookTableRow](../resources/workbooktablerow.md)对象。
 
 ## <a name="example"></a>示例
 在此示例中, 将两行数据插入到表的末尾。 
@@ -82,7 +82,7 @@ Content-length: 51
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -104,8 +104,6 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/table-post-rows.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

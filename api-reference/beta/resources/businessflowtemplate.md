@@ -2,12 +2,12 @@
 title: businessFlowTemplate 资源类型
 description: 在 azure ad access 评论功能中, `businesFlowTemplate`表示 azure ad 业务流模板。 模板的标识符 (如审阅组的来宾成员) 是由呼叫者在创建访问评审时提供的。
 localization_priority: Normal
-ms.openlocfilehash: 567a7f499e2fb493f3ca519e312e69fb43fe3b79
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0cca72bc8ccd372cdaf9952b385bc63f81b0631d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543725"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338800"
 ---
 # <a name="businessflowtemplate-resource-type"></a>businessFlowTemplate 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "32543725"
 | `displayName`            |`String`                | 业务流模板的名称                                                             |
 
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 
 无。
 
@@ -69,8 +69,6 @@ ms.locfileid: "32543725"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/businessflowtemplate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

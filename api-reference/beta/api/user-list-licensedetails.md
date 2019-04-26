@@ -4,14 +4,16 @@ description: 检索 licenseDetails 对象的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7dae02120f17dfbd329758734ba5fb912adfe0e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44402c4e673af2d1cce04e02ee7663f152d352e0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547849"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329924"
 ---
 # <a name="list-licensedetails"></a>List licenseDetails
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 licenseDetails 对象的列表。
 
@@ -52,7 +54,7 @@ GET /users/{id}/licenseDetails
   "name": "get_licensedetails"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/licenseDetails
+GET https://graph.microsoft.com/beta/me/licenseDetails
 ```
 ##### <a name="response"></a>响应
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -88,10 +90,13 @@ Content-length: 389
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List licenseDetails",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,15 +1,15 @@
 ---
 title: 组：checkMemberGroups
-description: 检查指定组列表中的成员身份。 从列表中返回这些组
+description: 检查指定组列表中的成员身份。 从列表返回这些组
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 838ea805f6732965029690a05e8d3294fdd62c26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1815f187a25eaddbd3b1757fde5e7e4e9c74f650
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503105"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329620"
 ---
 # <a name="group-checkmembergroups"></a>组：checkMemberGroups
 
@@ -29,7 +29,7 @@ ms.locfileid: "32503105"
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
 | 应用程序                            | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
 
-> **注意:** 此 API 当前需要`Directory.Read.All`权限或更高权限。 使用`Group.Read.All`权限将返回错误。 这是一个已知 bug。
+> **注意：** 此 API 当前需要 `Directory.Read.All` 权限或更高权限。 使用 `Group.Read.All` 权限将返回错误。 这是一个已知 bug。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ POST /groups/{id}/checkMemberGroups
 
 | 参数 | 类型   | 说明           |
 | :-------- | :----- | :-------------------- |
-| groupIds  | String | 组 ID 的数组 |
+| groupIds  | String collection | 组 ID 的数组 |
 
 ## <a name="response"></a>响应
 
@@ -115,8 +115,6 @@ Content-length: 39
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-checkmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

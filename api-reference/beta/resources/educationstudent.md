@@ -4,12 +4,12 @@ description: 添加到 educationUser 的其他信息，该属性将在用户的 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 554763d41c4ce48a09334394330e05fcd6dd4152
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9927c2fbb34dea97258c4c1ef407d60f14e2fe50
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507118"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334107"
 ---
 # <a name="educationstudent-resource-type"></a>educationStudent 资源类型
 
@@ -21,10 +21,10 @@ ms.locfileid: "32507118"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |birthDate|Date| 学生的出生日期。|
-|externalId|字符串| 源系统中学生的 ID。|
+|externalId|String| 源系统中学生的 ID。|
 |gender|educationGender| 可取值为：`female`、`male`、`other`、`unkownFutureValue`。|
-|grade|字符串|学生的当前年级。|
-|graduationYear|字符串| 学生从学校毕业的年份。|
+|grade|String|学生的当前年级。|
+|graduationYear|String| 学生从学校毕业的年份。|
 |studentNumber|String| 学生编号。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -59,8 +59,6 @@ ms.locfileid: "32507118"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationstudent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

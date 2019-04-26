@@ -1,15 +1,15 @@
 ---
 title: 创建联系人
-description: 将联系人添加到联系人根文件夹或其他联系人文件夹的联系人终结点中。
+description: 将联系人添加到联系人根文件夹或其他联系人文件夹的联系人端点中。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dbac25f4cf86074876fd1be4f0632a5afdb08dc1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9a2e3e28c4edaa9f9d63315e8f69df98607a5e2c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544083"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334594"
 ---
 # <a name="create-contact"></a>创建联系人
 
@@ -183,8 +183,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-post-contacts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

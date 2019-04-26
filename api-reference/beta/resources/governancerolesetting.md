@@ -2,12 +2,12 @@
 title: governanceRoleSetting 资源类型
 description: " 规则等。"
 localization_priority: Normal
-ms.openlocfilehash: a52769d4714608df11bdde826ca37907d7942e4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 09e8cb65f8318294d483a2ad66a7119d7b48822a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506317"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340216"
 ---
 # <a name="governancerolesetting-resource-type"></a>governanceRoleSetting 资源类型
 
@@ -20,15 +20,15 @@ ms.locfileid: "32506317"
 | 方法          | 返回类型 |说明|
 |:---------------|:--------|:--------|
 |[List](../api/governancerolesetting-list.md) | [governanceRoleSetting](../resources/governancerolesetting.md)集合|列出资源的角色设置的集合。|
-|[获取](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |读取角色设置的属性和关系。|
+|[Get](../api/governancerolesetting-get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |读取角色设置的属性和关系。|
 |[更新](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |更新角色设置对象。 |
 
 ## <a name="properties"></a>属性
 |属性               |类型                                      |说明|
 |:--------------------|:---------------------------------------|:----------|
-|id                   |String                                  |roleSetting 的 id。|
-|resourceId           |字符串                                  |必需。 与角色设置相关联的资源的 id。|
-|roleDefinitionId     |字符串                                  |必需。 与角色设置相关联的角色定义的 id。|
+|id                   |字符串                                  |roleSetting 的 id。|
+|resourceId           |String                                  |必需。 与角色设置相关联的资源的 id。|
+|roleDefinitionId     |String                                  |必需。 与角色设置相关联的角色定义的 id。|
 |isDefault            |Boolean                                 |只读。 指示 roleSetting 是否为默认 roleSetting|
 |lastUpdatedDateTime  |DateTimeOffset                          |只读。 上次更新角色设置的时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |lastUpdatedBy        |String                                  |只读。 上次更新 roleSetting 的管理员的显示名称。|
@@ -49,6 +49,7 @@ ms.locfileid: "32506317"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -80,8 +81,6 @@ ms.locfileid: "32506317"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governancerolesetting.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

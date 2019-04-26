@@ -4,12 +4,12 @@ description: 将范围单元格合并到工作表的一个区域中。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c1f7aa5ad2a9a938c64c1d153c1025558a6a9796
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ef2ace7b963402b2be3dfd92c11c27029aeeed3c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546200"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337028"
 ---
 # <a name="range-merge"></a>Range: merge
 
@@ -28,7 +28,7 @@ ms.locfileid: "32546200"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/merge
+POST /workbook/names/{name}/range/merge
 POST /workbook/worksheets/{id|name}/range(address='<address>')/merge
 POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
@@ -59,7 +59,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
   "name": "range_merge"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/merge
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/merge
 Content-type: application/json
 Content-length: 20
 
@@ -88,8 +88,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/range-merge.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

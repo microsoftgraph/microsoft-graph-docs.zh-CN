@@ -4,12 +4,12 @@ description: 在一个请求中 (而不是多个请求) 删除多个威胁情报
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 49475f15520f02cc36bb1bf37af9a5849a8ee245
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5ceaa7e7c0402719b8ee202053da54ad235cc28
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544656"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335298"
 ---
 # <a name="tiindicator-deletetiindicators"></a>tiIndicator: deleteTiIndicators
 
@@ -47,7 +47,7 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|String collection| 要删除的`id`tiIndicator 的集合。 |
+|值|String 集合| 要删除的`id`tiIndicator 的集合。 |
 
 ## <a name="response"></a>响应
 
@@ -79,7 +79,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 > [!NOTE]
 > 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -94,6 +94,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

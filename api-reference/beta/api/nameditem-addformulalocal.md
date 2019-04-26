@@ -2,12 +2,12 @@
 title: 添加已命名项 FormulaLocal
 description: 使用用户的公式区域设置，将新名称添加到给定范围的集合。
 localization_priority: Normal
-ms.openlocfilehash: 064bc4a6e8183b58242522dfe663d2585eed09b5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f18b642dc3a8144bf8ad8ee3ef337a762335de17
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540162"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338283"
 ---
 # <a name="add-named-item-formulalocal"></a>添加已命名项 FormulaLocal
 使用用户的公式区域设置，将新名称添加到给定范围的集合。
@@ -45,7 +45,7 @@ POST /workbook/worksheets({id|name})/names/add
 
 ## <a name="response"></a>响应
 
-如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [NamedItem](../resources/nameditem.md) 对象。
+如果成功，此方法将在响应正文中返回 `200 OK` 响应代码和 [NamedItem](../resources/workbooknameditem.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -74,7 +74,7 @@ Content-length: 54
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

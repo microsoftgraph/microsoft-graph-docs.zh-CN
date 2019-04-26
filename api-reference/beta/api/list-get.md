@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 获取 SharePoint 列表
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6de9e2c5d74d4ce17b3393ec8649783b9c92d1fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 445a9c816411462f6617578a7ff45fc01ce2ba1e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540988"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338797"
 ---
 # <a name="get-metadata-for-a-list"></a>获取列表的元数据
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 返回[列表][]的元数据。
 
@@ -31,8 +33,8 @@ ms.locfileid: "32540988"
 ## <a name="http-request"></a>HTTP 请求
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
 ## <a name="request-body"></a>请求正文
@@ -43,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=colu
 
 #### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list" } -->
 
 ```http
 GET /sites/{site-id}/lists/{list-id}
@@ -51,7 +53,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 #### <a name="response"></a>响应
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
@@ -73,22 +75,21 @@ Content-type: application/json
 
 #### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
 ```http
-GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
+GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
 #### <a name="response"></a>响应
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "1234-112-112-4",
   "name": "Inventory",
   "lastModifiedDateTime": "2016-08-30T08:32:00Z",
   "columns": [
@@ -134,10 +135,13 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Get metadata"
-} -->
+  "tocPath": "Lists/Get metadata",
+  "suppressions": []
+}
+-->

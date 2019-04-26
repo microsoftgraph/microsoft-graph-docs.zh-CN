@@ -4,12 +4,12 @@ description: 用于连接到呼叫的媒体配置。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e4f6e940cd319d10cd3f03e3c94d0473164beb29
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa8ec08ce5f4092a8f3d8c89af4a405d3a5c347d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562550"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342658"
 ---
 # <a name="mediaconfig-resource-type"></a>mediaConfig 资源类型
 
@@ -31,7 +31,8 @@ ms.locfileid: "32562550"
   "blockType": "resource",
   "optionalProperties": [
     "removeFromDefaultAudioGroup"
-  ],
+   ],
+  "abstract": true,
   "@odata.type": "microsoft.graph.mediaConfig"
 }-->
 ```json
@@ -49,8 +50,6 @@ ms.locfileid: "32562550"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mediaconfig.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

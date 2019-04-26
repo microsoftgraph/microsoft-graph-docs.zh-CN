@@ -4,12 +4,12 @@ description: '表示会议请求、取消或响应（可以是下列任一行为
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 11b38679916f85d9606989442ffb53e41c51c855
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e1072a8b94a9c6099494e649b66595092e737083
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542962"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333888"
 ---
 # <a name="eventmessage-resource-type"></a>eventMessage 资源类型
 
@@ -31,6 +31,7 @@ ms.locfileid: "32542962"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
     "attachments",
     "event",
@@ -72,7 +73,7 @@ ms.locfileid: "32542962"
   "meetingMessageType": {"@odata.type": "microsoft.graph.meetingMessageType"},
   "parentFolderId": "string",
   "receivedDateTime": "DateTimeOffset",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
+  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "DateTimeOffset",
@@ -96,8 +97,8 @@ ms.locfileid: "32542962"
 |bodyPreview|字符串|邮件正文中的前 255 个字符。文本格式。 |
 |categories|String collection|与邮件关联的类别。|
 |ccRecipients|[recipient](recipient.md) collection|邮件的抄送收件人。|
-|changeKey|String|邮件的版本。|
-|conversationId|String|电子邮件所属的对话的 ID。|
+|changeKey|字符串|邮件的版本。|
+|conversationId|String|电子邮件所属对话的 ID。|
 |conversationIndex|Binary|电子邮件所属对话的索引。|
 |createdDateTime|DateTimeOffset|创建邮件的日期和时间。|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求的会议的结束时间。|
@@ -109,10 +110,10 @@ ms.locfileid: "32542962"
 |inferenceClassification|String| 可取值为：`focused`、`other`。|
 |internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) 集合 | 由 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 定义的邮件头集合，它提供邮件获取的从发件人到收件人的网络路径的详细信息。 只读。|
 |internetMessageId |String |邮件 ID 采用 [RFC5322](https://www.ietf.org/rfc/rfc5322.txt) 指定的格式。 |
-|isAllDay |布尔|指示事件是否持续一整天。 调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。|
-|isDeliveryReceiptRequested|布尔值|指示是否需要发送邮件已读回执。|
+|isAllDay |Boolean|指示事件是否持续一整天。 调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。|
+|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isDraft|Boolean|指示邮件是否为草稿。如果尚未发送，则此邮件是一封草稿。|
-|isOutOfDate|布尔值|指示此会议请求是否已由较新的请求发出。|
+|isOutOfDate|Boolean|指示此会议请求是否已由较新的请求发出。|
 |isRead|Boolean|指示是否已阅读该邮件。|
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |lastModifiedDateTime|DateTimeOffset|上次更改邮件的日期和时间。|
@@ -127,7 +128,7 @@ ms.locfileid: "32542962"
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|请求的会议的开始时间。|
 |subject|String|邮件的主题。|
 |toRecipients|[recipient](recipient.md) collection|邮件的收件人。|
-|类型|字符串|所需会议的类型: `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
+|type|String|所需会议的类型: `singleInstance`、 `occurence`、 `exception`、 `seriesMaster`。|
 |uniqueBody|[itemBody](itembody.md)|当前邮件专用的邮件正文部分。|
 |UnsubscribeData|String|从 List-Unsubscribe 标头中解析的有效条目。若 UnsubscribeEnabled 属性为 true，则这是 List-Unsubscribe 标头中的邮件命令的数据。|
 |UnsubscribeEnabled|Boolean|指示邮件是否已启用取消订阅。若 list-Unsubscribe 标头符合 rfc-2369，则其值为 True。|
@@ -136,7 +137,7 @@ ms.locfileid: "32542962"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[附件](attachment.md)集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
+|attachments|[attachment](attachment.md) 集合|邮件的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
 |event|[event](event.md)| 与事件消息相关联的事件。对于与会者或会议室资源，假定已将日历助理设为在会议请求事件消息到达时自动更新包含事件的日历。导航属性。只读。|
 |extensions|[扩展](extension.md)集合| 为 eventMessage 定义的开放扩展集合。只读。可为 NULL。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为 eventMessage 定义的多值扩展属性的集合。只读。可为 Null。|
@@ -161,7 +162,7 @@ ms.locfileid: "32542962"
 |[取消订阅](../api/message-unsubscribe.md)|无|使用 List-Unsubscribe 标头中的第一个 mailto 命令中指定的数据和地址发送邮件。|
 |**附件**| | |
 |[列出附件](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) 集合| 获取 eventMessage 的所有附件。|
-|[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
+|[添加附件](../api/eventmessage-post-attachments.md) |[附件](attachment.md)| 通过发布到附件集合，向 eventMessage 添加新附件。|
 |**开放扩展**| | |
 |[创建开放扩展](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| 创建开放扩展，并在新建或现有的资源实例中添加自定义属性。|
 |[获取开放扩展](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) 集合| 获取按名称标识的开放扩展。|
@@ -180,8 +181,6 @@ ms.locfileid: "32542962"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/eventmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

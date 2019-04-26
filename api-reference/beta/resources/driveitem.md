@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7ac95379d8e5eeae07e520f40ae9403c47e98f58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a7a921bafda04497ff97c7c28bdb9f21d4b3d15f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507579"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340682"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -47,7 +47,7 @@ ms.locfileid: "32507579"
        "keyProperty": "id", "openType": true } -->
 
 ```json
-{
+{  
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
@@ -150,7 +150,7 @@ ms.locfileid: "32507579"
 | permissions        | [permission][] 集合   | 项目的权限集。只读。可为 Null。
 | 订阅      | [订阅][]集合 | 项目上的订阅集。 仅在驱动器根目录上支持。
 | 缩略图         | [thumbnailSet][] 集合 | 包含与项目关联的 [ThumbnailSet][] 对象的集合。有关详细信息，请参阅 [获取缩略图][]只读。可为 Null。
-| 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 null。
+| 版本           | [driveItemVersion][] 集合 | 旧版本项的列表。 有关详细信息，请参阅[获取旧版本][]。 只读。 可为 NULL。
 | 工作簿           | [workbook][]                | 如果是 Excel 工作表文件，访问工作簿 API 以使用工作表的内容。 可为 Null。
 
 ## <a name="instance-attributes"></a>实例属性
@@ -159,7 +159,7 @@ ms.locfileid: "32507579"
 
 | 属性名称                     | 类型   | 说明
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | 字符串 | 为创建新项目的操作解决冲突的行为。你可以使用值 *fail*、*replace* 或 *rename*。PUT 的默认值是*replace*。绝不会返回包含该批注的项目。只写。
+| @microsoft.graph.conflictBehavior | string | 为创建新项目的操作解决冲突的行为。你可以使用值 *fail*、*replace* 或 *rename*。PUT 的默认值是*replace*。绝不会返回包含该批注的项目。只写。
 | @microsoft.graph.downloadUrl      | string | 一个可用于下载此文件的内容的 URL。不需要使用此 URL 进行身份验证。只读。
 | @microsoft.graph.sourceUrl        | string | 发出 PUT 请求时，此实例批注可用于指示服务下载 URL 内容并将其存储为文件。只写。
 
@@ -250,8 +250,6 @@ ms.locfileid: "32507579"
   "tocBookmarks": {
     "Resources/Item": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/driveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

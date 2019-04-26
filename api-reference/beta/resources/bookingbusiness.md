@@ -1,15 +1,15 @@
 ---
 title: bookingBusiness 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 03790cfe39ef2de463ae843ba6b18cd6d91e754d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 12b075d273e0228466db063b2c9b91232c32fc2c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543846"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328243"
 ---
 # <a name="bookingbusiness-resource-type"></a>bookingBusiness 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "32543846"
 |[列出服务](../api/bookingbusiness-list-services.md) |[bookingService](bookingservice.md)集合| 获取 bookingService 对象集合。|
 |[创建 bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| 通过发布到 staffMembers 集合创建新的 bookingStaffMember。|
 |[列出 staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)集合| 获取 bookingStaffMember 对象集合。|
-|[List calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md)集合|获取在指定日期范围内发生的**bookingAppointment**对象的集合。|
+|[列出 calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md)集合|获取在指定日期范围内发生的**bookingAppointment**对象的集合。|
 |[发布](../api/bookingbusiness-publish.md)|无|使此业务的日程安排页面对外部客户可用。 将**isPublished**属性设置为 true, 并将**publicUrl**属性设置为计划页面的 URL。|
 |[取消发布](../api/bookingbusiness-unpublish.md)|无| 使此业务的计划页面对外部客户不可用。 将**isPublished**属性设置为 false, 并将**publicUrl**属性设置为 null。|
 
@@ -48,7 +48,7 @@ ms.locfileid: "32543846"
 |displayName|String|业务的名称, 与客户的接口。 此名称显示在 "业务计划" 页的顶部。|
 |email|字符串|企业的电子邮件地址。|
 |id|String|企业的唯一编程标识符。 只读。|
-|isPublished|布尔值|计划页面已提供给外部客户。 使用 "**发布**" 和 "**取消发布**" 操作设置此属性。 只读。|
+|isPublished|Boolean|计划页面已提供给外部客户。 使用 "**发布**" 和 "**取消发布**" 操作设置此属性。 只读。|
 |phone|String|企业的电话号码。 **phone**属性, 以及**address**和**webSiteUrl**将显示在 "业务计划" 页的页脚中。|
 |publicUrl|String|计划页面的 URL, 在[发布](../api/bookingbusiness-publish.md)或[取消](../api/bookingbusiness-unpublish.md)发布页面之后设置。 只读。|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|指定如何为此公司创建预订。|
@@ -69,6 +69,7 @@ ms.locfileid: "32543846"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -105,8 +106,6 @@ ms.locfileid: "32543846"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingbusiness.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

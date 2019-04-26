@@ -4,14 +4,16 @@ description: 表示添加到租户中特定域的 DNS 区域文件中的 MX 记�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 09af66a522d99645540ec24324c82f565eaedb1e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cda91672d978549c1bb320b1ac4445b0844a4385
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535121"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340683"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>domainDnsMxRecord 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示添加到租户中特定域的 DNS 区域文件中的 MX 记录。 继承自[DomainDnsRecord](domaindnsrecord.md)实体。
 
@@ -22,7 +24,7 @@ ms.locfileid: "32535121"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 分配给此实体的唯一标识符。 不可为 null, 只读。|
-|isOptional|布尔值| 如果为 false, 则客户必须在 DNS 主机上配置 MX 记录, 才能使 Microsoft Online Services 在域中正常运行。 |
+|isOptional|Boolean| 如果为 false, 则客户必须在 DNS 主机上配置 MX 记录, 才能使 Microsoft Online Services 在域中正常运行。 |
 |label|String| 配置 DNS 主机上的 MX 记录的*别名/主机/名称*属性时使用的值。 |
 |mailExchange|String| 配置 DNS 主机上的 MX 记录的*应答/目标/值*时使用的值。|
 |优先权|Int32| 配置 DNS 主机上的 MX 记录的*首选项/优先级*属性时使用的值。 |
@@ -38,7 +40,6 @@ ms.locfileid: "32535121"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -47,6 +48,7 @@ ms.locfileid: "32535121"
 
 ```json
 {
+  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -61,10 +63,13 @@ ms.locfileid: "32535121"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsMxRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

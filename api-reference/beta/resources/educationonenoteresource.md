@@ -4,12 +4,12 @@ description: 'educationResource 的子类。 这表示 OneNote 页面的位置�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 60b0e4647f1a601d3cbe206e264f7d288ee2110c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1d7796941edebe6ad1cb126d58b5e7600373ee0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507194"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340546"
 ---
 # <a name="educationonenoteresource-resource-type"></a>educationOneNoteResource 资源类型
 
@@ -20,8 +20,8 @@ ms.locfileid: "32507194"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|pageUrl|字符串|OneNote 中页面的 Microsoft Graph URL。|
-|sectionName|字符串|应将分配复制到中或复制到中的部分名称。|
+|pageUrl|String|OneNote 中页面的 Microsoft Graph URL。|
+|sectionName|String|应将分配复制到中或复制到中的部分名称。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -52,8 +52,6 @@ ms.locfileid: "32507194"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationonenoteresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

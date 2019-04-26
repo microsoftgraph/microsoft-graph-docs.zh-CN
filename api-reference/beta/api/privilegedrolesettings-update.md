@@ -2,12 +2,12 @@
 title: 更新 privilegedRoleSettings
 description: 更新给定角色设置的角色设置。 将返回一个 privilegedRoleSettings 对象。
 localization_priority: Normal
-ms.openlocfilehash: 779b0d4cd61672c90c103ebb2545cb75324273fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ce04a6e8c61c59f576d3a5e36592ba8ab4373de3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538659"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337250"
 ---
 # <a name="update-privilegedrolesettings"></a>更新 privilegedRoleSettings
 
@@ -46,15 +46,15 @@ PUT /privilegedRoles/{id}/settings
 |:---------------|:--------|:----------|
 |elevationDuration|duration|激活角色的持续时间。 必需。|
 |id|string|角色设置的唯一标识符。 只读。 必需。|
-|isMfaOnElevationConfigurable|布尔|如果 mfaOnElevation 是可配置的,**则为 true** 。 **假**如果 mfaOnElevation 不可配置。 必需。|
-|lastGlobalAdmin|布尔值|仅供内部使用。|
+|isMfaOnElevationConfigurable|boolean|如果 mfaOnElevation 是可配置的,**则为 true** 。 **假**如果 mfaOnElevation 不可配置。 必需。|
+|lastGlobalAdmin|Boolean|仅供内部使用。|
 |maxElavationDuration|duration|已激活角色的最长持续时间。 必需。|
-|mfaOnElevation|布尔值|如果需要 MFA 以激活角色,**则为 true** 。 **假**如果无需进行 MFA 即可激活角色。 必需。|
+|mfaOnElevation|Boolean|如果需要 MFA 以激活角色,**则为 true** 。 **假**如果无需进行 MFA 即可激活角色。 必需。|
 |minElevationDuration|duration|已激活角色的最小持续时间。 必需。|
-|notificationToUserOnElevation|布尔值|如果激活角色时向最终用户发送通知,**则为 true** 。 **假**如果在角色激活时不发送通知。 必需。|
-|ticketingInfoOnElevation|布尔值|如果激活角色时需要票证信息,**则为 true** 。 **假**如果激活角色时不需要票证信息。 必需。|
-|approvalOnElevation|布尔值|如果激活角色时需要进行审批,**则为 true** 。 **假**如果激活该角色时不需要审批。 必需。|
-|approverIds|String collection|审批 id 的列表 (如果激活需要审批)。|
+|notificationToUserOnElevation|Boolean|如果激活角色时向最终用户发送通知,**则为 true** 。 **假**如果在角色激活时不发送通知。 必需。|
+|ticketingInfoOnElevation|Boolean|如果激活角色时需要票证信息,**则为 true** 。 **假**如果激活角色时不需要票证信息。 必需。|
+|approvalOnElevation|Boolean|如果激活角色时需要进行审批,**则为 true** 。 **假**如果激活该角色时不需要审批。 必需。|
+|approverIds|字符串集合|审批 id 的列表 (如果激活需要审批)。|
 
 ## <a name="response"></a>响应
 
@@ -105,8 +105,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

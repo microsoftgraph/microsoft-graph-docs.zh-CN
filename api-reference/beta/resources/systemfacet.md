@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: SystemFacet
 localization_priority: Normal
-ms.openlocfilehash: afafb69e9d887d2cb8d9537dd7ef9d3a712f3333
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ea8c26fa08d58ad089ba0e17d91ead3de3c65ef6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553937"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339860"
 ---
 # <a name="system-facet"></a>系统 Facet
 
@@ -38,8 +38,6 @@ ms.locfileid: "32553937"
   "type": "#page.annotation",
   "section": "documentation",
   "tocPath": "Facets/System",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/systemfacet.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

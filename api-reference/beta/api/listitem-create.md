@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: 在 SharePoint 列表中创建新条目
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1af6162fd12c9c3dfc470b97e42a25d0cad8ebea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 57b054ae0e70b3694faa7051bf7f7d332499401d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541008"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338745"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在[列表][]中创建新的 [listItem][]。
 
@@ -31,7 +33,7 @@ ms.locfileid: "32541008"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 ```
 
 ## <a name="request-body"></a>请求正文
@@ -45,7 +47,7 @@ POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
 {
@@ -91,10 +93,13 @@ Content-type: application/json
 [列表]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Add a new item to a SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Create"
-} -->
+  "tocPath": "ListItem/Create",
+  "suppressions": []
+}
+-->

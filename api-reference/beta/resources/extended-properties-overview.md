@@ -4,12 +4,12 @@ description: '扩展属性允许存储自定义数据, 并专门用作应用程�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ead40279547fa838b7224a25c3605d0825c3f797
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 38aefd484d4afe13418255aa1d6e0b46050ae4fe
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542895"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340301"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
 
@@ -94,11 +94,3 @@ ms.locfileid: "32542895"
 - [在新建或现有的资源实例中创建扩展属性](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [使用 `$expand` 获取一个包含扩展属性的资源实例](../api/multivaluelegacyextendedproperty-get.md)
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/extended-properties-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

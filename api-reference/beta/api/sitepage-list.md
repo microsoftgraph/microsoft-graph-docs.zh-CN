@@ -5,18 +5,18 @@ ms.date: 03/15/2018
 title: 列出网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8dea715a655dac4406ae57b928f97013564f951f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537193"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330644"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>在网站的 "网站页面" 列表中列出页面
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从网站[网站][]的 "网站页面"[列表][]中获取 [sitePages] [] 的集合。 将返回网站中的所有页面 (使用分页)。
+从网站[网站][]的 "网站页面"[列表][]中获取[sitePage][]对象的集合。 将返回网站中的所有页面 (使用分页)。
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -43,7 +43,14 @@ GET /sites/{site-id}/pages
 
 #### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "get-pages", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- 
+{ 
+    "blockType": "request",
+    "name": "get-pages",
+    "scopes": "sites.read.all", 
+    "tags": "service.sharepoint"
+}
+-->
 
 ```http
 GET /sites/{site-id}/pages
@@ -51,7 +58,14 @@ GET /sites/{site-id}/pages
 
 #### <a name="response"></a>响应
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.sitePage)", "truncated": true } -->
+<!-- 
+{ 
+    "blockType": "response",
+    "@odata.type": "microsoft.graph.sitePage",
+    "truncated": true,
+    "isCollection":true
+} 
+-->
 
 ```json
 HTTP/1.1 200 OK
@@ -61,7 +75,7 @@ Content-type: application/json
     "value": [
         {
             "id": "5",
-            "eTag": "{8BEE5ABE-49B9-431B-AEBA-C96D6DEF44E3},4",
+            "eTag": "\"{8BEE5ABE-49B9-431B-AEBA-C96D6DEF44E3},4\"",
             "lastModifiedDateTime": "2018-08-15T19:20:20Z",
             "name": "EventInstructions.aspx",
             "webUrl": "SitePages/EventInstructions.aspx",
@@ -118,12 +132,12 @@ Content-type: application/json
                         "properties": {
                             "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
                             "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": { ... },
+                            "query": {  },
                             "templateId": 1,
                             "maxItemsPerPage": 10,
                             "hideWebPartWhenEmpty": false,
                             "kqlQueryTemplate": "...",
-                            "displayMaps": { ... },
+                            "displayMaps": {  },
                             "sites": [],
                             "layoutId": "Card",
                             "dataProviderId": "Search"
@@ -133,8 +147,8 @@ Content-type: application/json
             ]
         },
         {
-            "id": 2,
-            "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
+            "id": "2",
+            "eTag": "\"{75bc70e2-6587-45be-8493-c99a956b2e05},7\"",
             "createdDateTime": "2016-12-06T20:04:40Z",
             "lastModifiedDateTime": "2016-12-06T20:05:09Z",
             "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
@@ -224,8 +238,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Pages/Enumerate",
-  "suppressions": [
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

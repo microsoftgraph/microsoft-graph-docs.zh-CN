@@ -4,12 +4,12 @@ description: 从教师到学生的反馈。 此属性表示反馈的文本部分
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 90e55b20b371d04bc3c6d45bb84fe6bf42157a2f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7ef923870d94479d7ea1d9d762ee729b5060afd6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507136"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340506"
 ---
 # <a name="educationfeedback-resource-type"></a>educationFeedback 资源类型
 
@@ -55,8 +55,6 @@ ms.locfileid: "32507136"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationfeedback.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

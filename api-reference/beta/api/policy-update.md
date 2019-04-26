@@ -2,12 +2,12 @@
 title: 更新策略
 description: 更新预先存在的策略中的属性。
 localization_priority: Normal
-ms.openlocfilehash: d99aa42c4a67f6b874cbc1e266da76287388c05e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 53b7af8966c932598328e8b78e76022ca6db9c8a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538736"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337386"
 ---
 # <a name="update-policy"></a>更新策略
 
@@ -42,8 +42,8 @@ PATCH /policies/{id}
 |:---------------|:--------|:----------|
 |定义|String|[policy](../resources/policy.md)对象的字符串化版本。|
 |displayName|String|策略的自定义名称。|
-|isOrganizationDefault|布尔值|指定默认情况下是否应用此策略。|
-|类型|String|指定策略的类型。 当前必须是 "TokenLifetimePolicy"|
+|isOrganizationDefault|Boolean|指定默认情况下是否应用此策略。|
+|type|String|指定策略的类型。 当前必须是 "TokenLifetimePolicy"|
 
 ## <a name="response"></a>响应
 
@@ -70,11 +70,3 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/policy-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: 0cc2c0994a5e4d2a45e78c055af466f1c4999de6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981530"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578750"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>OneNote 页中的输入和输出 HTML
 
@@ -425,7 +425,7 @@ upper-alpha | &nbsp; |
 </ol>
 ``` 
 
-这是输出 HTML。请注意，这些样式在单独 **li** 或 **span** 元素上内嵌返回。
+这是输出 HTML。 请注意，这些样式在单独的 **li** 或 **span** 元素上内嵌返回。
 
 ```html
 <ol>

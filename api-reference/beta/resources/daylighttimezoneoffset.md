@@ -2,14 +2,16 @@
 title: daylightTimeZoneOffset 资源类型
 description: 指定时区何时从标准时间切换到夏令时。
 localization_priority: Normal
-ms.openlocfilehash: 160163d6f574eb75746fa751e383c06696006e43
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b6e965a154b0219a78898c2bf021cac2bb11c238
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535219"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340956"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>daylightTimeZoneOffset 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 指定时区何时从标准时间切换到夏令时。
 
@@ -43,7 +45,6 @@ ms.locfileid: "32535219"
   "optionalProperties": [
 
   ],
-  "baseType": "microsoft.graph.standardTimeZoneOffset",
   "@odata.type": "microsoft.graph.daylightTimeZoneOffset"
 }-->
 
@@ -61,10 +62,13 @@ ms.locfileid: "32535219"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "daylightTimeZoneOffset resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

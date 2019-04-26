@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: be737b6c1f6a8421cc87a7dd8efc222b48d7c078
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545667"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331428"
 ---
 # <a name="securityaction-cancelsecurityaction"></a>securityAction: cancelSecurityAction
 
@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecuri
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,

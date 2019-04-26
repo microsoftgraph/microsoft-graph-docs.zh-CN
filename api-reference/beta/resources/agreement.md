@@ -2,12 +2,12 @@
 title: 协议资源类型
 description: 表示租户的可自定义使用条款协议, 它是使用 azure Active Directory (azure AD) 创建和管理的。 您可以根据您的方案使用以下方法来创建和管理 Azure Active Directory 使用条款功能。
 localization_priority: Normal
-ms.openlocfilehash: b253877f1bf82e4fbc61cebaef3c1bce208d9cca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d91cc8f8180ffb706639fb42a8c68d711991602c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535745"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339172"
 ---
 # <a name="agreement-resource-type"></a>协议资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "32535745"
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
 |id|String| 只读。|
-|isViewingBeforeAcceptanceRequired|布尔值|指示用户是否必须在接受前展开并查看协议。|
+|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须在接受前展开并查看协议。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
@@ -47,6 +47,7 @@ ms.locfileid: "32535745"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -71,8 +72,6 @@ ms.locfileid: "32535745"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/agreement.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

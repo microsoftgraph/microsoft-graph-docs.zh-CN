@@ -4,12 +4,12 @@ description: 'Azure Active Directory 标识保护检测到的风险事件。 它
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: b5c36ab898805c0638cc199ff8cfb893444f04ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 654b6380120c0584045d3267bddffb9db88a39aa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506389"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339987"
 ---
 # <a name="identityriskevent-resource-type"></a>identityRiskEvent 资源类型
 
@@ -39,14 +39,14 @@ ms.locfileid: "32506389"
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 风险事件关闭的日期和时间|
 |createdDateTime|dateTimeOffset| 风险事件的创建日期和时间。 此值始终大于或等于风险事件本身的日期时间。 这是查询风险事件时用作筛选器的正确属性。|
-|id|string| 只读|
+|id|字符串| 只读|
 |riskEventDateTime|dateTimeOffset| 风险事件发生的日期和时间|
-|riskEventStatus|字符串| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
+|riskEventStatus|string| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
 |riskLevel|string| 可取值为：`low`、`medium`、`high`。|
-|riskEventType|字符串| 风险的类型|
-|userDisplayName|字符串| 具有风险的用户的名称|
-|userId|字符串| 用户面临风险的 id|
-|userPrincipalName|字符串| 用户面临风险的用户主体名称|
+|riskEventType|string| 风险的类型|
+|userDisplayName|string| 具有风险的用户的名称|
+|userId|string| 用户面临风险的 id|
+|userPrincipalName|string| 用户面临风险的用户主体名称|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -59,6 +59,7 @@ ms.locfileid: "32506389"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -76,7 +77,8 @@ ms.locfileid: "32506389"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -90,8 +92,6 @@ ms.locfileid: "32506389"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/identityriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 按关键字查找 SharePoint 网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 156093c9d3b87f0a4e44f6928b36a8aa92a4ef4d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a5594eb71fd4193756d3d07af82bbd7bbe4a7ea3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537249"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335815"
 ---
 # <a name="search-for-sites"></a>搜索网站
 
@@ -76,8 +76,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites/Search",
-  "suppressions": [
-    "Error: /api-reference/beta/api/site-search.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,18 +4,18 @@ description: 在指定的分区组中新建分区。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 25c66aa1b1db1f40e3cd9d2b9902288f36ccd766
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad940b31837045b4c5a1aae08e68b5cd80006471
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537571"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331555"
 ---
 # <a name="create-section"></a>创建分区
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定的分区组中新建[分区](../resources/section.md)。
+在指定的分区组中新建[分区](../resources/onenotesection.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -46,7 +46,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [section](../resources/section.md) 对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和[onenoteSection](../resources/onenotesection.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -105,8 +105,6 @@ Content-length: 272
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/sectiongroup-post-sections.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

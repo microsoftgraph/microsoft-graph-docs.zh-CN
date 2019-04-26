@@ -4,12 +4,12 @@ description: 用于配置来宾是否可以在团队中创建、更新或删除�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4d76ffcbc5ec675ee670394854183c07721c0af9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b195590b696002d2ece9828ad8b65fb5b607765f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554007"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341702"
 ---
 # <a name="teamguestsettings-resource-type"></a>teamGuestSettings 资源类型
 
@@ -20,8 +20,8 @@ ms.locfileid: "32554007"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|布尔值|如果设置为 true, 则来宾可以添加和更新频道。|
-|allowDeleteChannels|布尔值|如果设置为 true, 则来宾可以删除频道。|
+|allowCreateUpdateChannels|Boolean|如果设置为 true, 则来宾可以添加和更新频道。|
+|allowDeleteChannels|Boolean|如果设置为 true, 则来宾可以删除频道。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -48,8 +48,6 @@ ms.locfileid: "32554007"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamguestsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

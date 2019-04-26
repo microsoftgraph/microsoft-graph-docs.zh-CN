@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
 localization_priority: Normal
-ms.openlocfilehash: 1362116c0dbe997eda941cb790e00e9ddb078ae4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 08bbfd414a32e8eb8a0144d879ede55c71c19b89
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561899"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339872"
 ---
 # <a name="itemactivitystat-resource-type"></a>itemActivityStat 资源类型
 
@@ -46,7 +46,7 @@ ms.locfileid: "32561899"
 | 属性         | 类型                    | 说明
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | 指示此时间间隔中的统计信息基于不完整的数据。 只读。
-| isTrending       | 布尔值                 | 指示项目是否为 "趋势"。 只读。
+| isTrending       | Boolean                 | 指示项目是否为 "趋势"。 只读。
 | startDateTime    | DateTimeOffset          | 时间间隔开始时。 只读。
 | endDateTime      | DateTimeOffset          | 时间间隔结束时。 只读。
 | create           | [itemActionStat][]      | 有关此间隔中的**创建**操作的统计信息。 只读。
@@ -75,8 +75,6 @@ ms.locfileid: "32561899"
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
   "tocPath": "Resources/ItemActivityStat",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemactivitystat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

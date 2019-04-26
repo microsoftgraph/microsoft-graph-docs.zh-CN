@@ -4,12 +4,12 @@ description: 执行排序操作。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f2279109f83758958cb00940604854c4edeecd45
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 720cf0018f85883b38e608a206e8f61c94ee90ee
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544566"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330441"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -43,7 +43,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|域|SortField|作为排序依据的条件列表。|
+|域|workbookSortField 集合|要用作排序依据的条件列表。|
 |matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
 |方法|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
 
@@ -103,8 +103,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/tablesort-apply.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

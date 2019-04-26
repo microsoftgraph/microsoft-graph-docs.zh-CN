@@ -4,12 +4,12 @@ description: Yammer 设备使用情况报表可用于了解用户使用什么设
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 57dcba3a91b15b4980d9e76b7aad6251008f5966
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c253d58d3f8b0bdd07d902bbcbe77af6a1666e9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555289"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342772"
 ---
 # <a name="yammer-device-usage-reports"></a>Yammer 设备使用情况报表
 
@@ -26,11 +26,3 @@ Yammer 设备使用情况报表可用于了解用户使用什么设备在 Yammer
 | [获取用户详细信息](../api/reportroot-getyammerdeviceusageuserdetail.md) | Stream          | [yammerDeviceUsageUserDetail](../resources/yammerdeviceusageuserdetail.md) | 获取用户的 Yammer 设备使用情况的详细信息。 |
 | [获取分发用户数](../api/reportroot-getyammerdeviceusagedistributionusercounts.md) | Stream          | [yammerDeviceUsageDistributionUserCounts](../resources/yammerdeviceusagedistributionusercounts.md) | 按设备类型获取用户数。  |
 | [获取用户数](../api/reportroot-getyammerdeviceusageusercounts.md) | Stream          | [yammerDeviceUsageUserCounts](../resources/yammerdeviceusageusercounts.md) | 按设备类型获取每日用户数。 |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/yammer-device-usage-reports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

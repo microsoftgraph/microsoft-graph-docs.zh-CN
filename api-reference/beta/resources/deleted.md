@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Deleted
 localization_priority: Normal
-ms.openlocfilehash: 06fe9835ef4b31d7a48bad955b17872142a94b2d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 53ac4bca82eef82c320f62ae4bb88f5d7735aed6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535283"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340943"
 ---
 # <a name="deleted-facet"></a>Deleted Facet
 

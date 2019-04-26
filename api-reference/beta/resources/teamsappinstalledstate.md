@@ -4,12 +4,12 @@ description: 描述 teamsApp 的当前安装状态。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 82e46faccd2a91a82ba4fb7352391f58a42c33a9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 51be91c5ef09845c53c6eb1388c1fd5b68333b21
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554014"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341622"
 ---
 #<a name="teamsappinstalledstate-enum-type"></a>teamsAppInstalledState 枚举类型
 
@@ -23,13 +23,5 @@ ms.locfileid: "32554014"
 |:---------------|:--------|:----------|
 |notInstalled|0|未将应用安装到团队。|
 |了|1|应用程序以正常方式安装。|
-|installedAndHidden|2 |已安装应用程序, 但已在视图中隐藏。|
-|installedAndPermanent|3 |应用程序永久安装且不可能删除。|
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsappinstalledstate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+|installedAndHidden|双面|已安装应用程序, 但已在视图中隐藏。|
+|installedAndPermanent|第三章|应用程序永久安装且不可能删除。|

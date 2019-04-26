@@ -4,12 +4,12 @@ description: 添加或删除用户的许可证, 以启用或禁用其对 Microso
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ef9946a7ac53a0e0e8b90a31fd4767bcc0549468
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4f11582484a4c6ff7be5a0d33da20e7f2b3a392e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547989"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329919"
 ---
 # <a name="assignlicense"></a>assignLicense
 
@@ -45,7 +45,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。 您可以通过在[assignedLicense](../resources/assignedlicense.md)对象上设置**disabledPlans**属性来禁用与许可证关联的 servicePlans。|
-|removeLicenses|Guid|标识要删除的许可证的 skuIds 的集合。|
+|removeLicenses|Guid 集合|标识要删除的许可证的 skuIds 的集合。|
 
 ## <a name="response"></a>响应
 
@@ -138,8 +138,6 @@ Content-length: 491
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-assignlicense.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

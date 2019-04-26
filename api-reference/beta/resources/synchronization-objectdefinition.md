@@ -2,12 +2,12 @@
 title: objectDefinition 资源类型
 description: 描述对象及其属性。 对象定义是 directoryDefinition 的一部分, 它作为 synchronizationSchema 的一部分进行更新。
 localization_priority: Normal
-ms.openlocfilehash: d8182cad44deac156c077e977551abc9c31c7d25
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0e693b88e6ae983c4f854d40b49eb60405b067b6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581755"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342922"
 ---
 # <a name="objectdefinition-resource-type"></a>objectDefinition 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "32581755"
 |:--------------|:----------|:---------------|
 |attributes     |[attributeDefinition](synchronization-attributedefinition.md)集合    | 定义对象的属性。 |
 |metadata       |[metadataEntry](synchronization-metadataentry.md)集合   |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|
-|name           |String     |对象的名称。 在目录定义中必须是唯一的。 不可为 null。|
+|name           |String     |对象的名称。 在目录定义中必须是唯一的。 不可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -445,8 +445,6 @@ ms.locfileid: "32581755"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-objectdefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

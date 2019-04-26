@@ -4,14 +4,16 @@ description: 获取登录用户访问的 recentNotebook 实例列表。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: a69044f908901ed0eda044eab5883f5142327e26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ed8765dd5162d95932be6c4556b986579f9af1b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540216"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338227"
 ---
 # <a name="notebook-getrecentnotebooks"></a>笔记本：getRecentNotebooks
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取登录用户访问的 [recentNotebook](../resources/recentnotebook.md) 实例列表。
 
@@ -58,16 +60,16 @@ GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(include
 下面为请求示例。
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
+GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)
 ```
 
-#### <a name="response"></a>响应
+##### <a name="response"></a>响应
 以下示例显示了相应的响应。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.recentNotebook)",
+  "@odata.type": "microsoft.graph.notebook",
   "isCollection": true
 } -->
 ```http
@@ -78,7 +80,7 @@ Content-Length: 1110
 {
   "value":[
     {
-      "displayName":"Personal Notebook","lastAccessedTime":"timestamp","links":{
+      "name":"Personal Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{
@@ -86,7 +88,7 @@ Content-Length: 1110
         }
       },"sourceService":"OneDrive"
     },{
-      "displayName":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
+      "name":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
         "oneNoteClientUrl":{
           "href":"onenote:href-value"
         },"oneNoteWebUrl":{

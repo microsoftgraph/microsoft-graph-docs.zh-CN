@@ -2,14 +2,16 @@
 title: assignedPlan 资源类型
 description: '**用户** 实体和 组织 实体的 AssignedPlans 属性都是一个 **assignedPlan** 集合。'
 localization_priority: Normal
-ms.openlocfilehash: 3e06894fa71f81993b94d174d6cde8a54126fd62
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0f44e96e5591d46d6a22b0cdd951b4dfb1e05e75
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535646"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339052"
 ---
 # <a name="assignedplan-resource-type"></a>assignedPlan 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **用户** 实体和 [组织](user.md) 实体的 [AssignedPlans](organization.md) 属性都是一个 **assignedPlan** 集合。
 
@@ -46,10 +48,13 @@ ms.locfileid: "32535646"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "assignedPlan resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

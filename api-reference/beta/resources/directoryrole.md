@@ -4,12 +4,12 @@ description: 表示 Azure AD 目录角色。 Azure AD 目录角色也称为*管�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 30b22313da70c33bffc0b759f9b474f4deac2ac1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 110febf3213431a0a44941a4cdd2bd9bca255bff
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535264"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334572"
 ---
 # <a name="directoryrole-resource-type"></a>directoryRole 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "32535264"
 |[获取 directoryRole](../api/directoryrole-get.md) | [directoryRole](directoryrole.md) |读取 directoryRol 对象的属性和关系。|
 |[列出 directoryRoles](../api/directoryrole-list.md) | [directoryRole](directoryrole.md) 集合 | 列出租户中激活的目录角色。 |
 |[Add member](../api/directoryrole-post-members.md) |[directoryObject](directoryobject.md)| 通过发布到成员导航属性将用户添加到目录角色。|
-|[列出成员](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) collection| 从成员导航属性获取该目录角色成员的用户。|
+|[List members](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) 集合| 从成员导航属性获取该目录角色成员的用户。|
 |[删除成员](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| 从目录角色中删除用户。|
 |[列出作用域内的角色成员](../api/directoryrole-list-members.md) |[scopedRoleMembership](scopedrolemembership.md) 集合| 通过 scopedRoleMembership 资源集合列出此目录角色的范围限定为[管理单元](administrativeunit.md)的成员。|
 |[delta](../api/directoryrole-delta.md)|directoryRole 集合| 获取目录角色的增量更改。 |
@@ -84,8 +84,6 @@ ms.locfileid: "32535264"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directoryrole.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: 您可以使用 Azure AD 访问评论来配置一次性或定期访
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 212af4ad8519f7ec54fb56ceffee0a0d4de16027
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 31b55697601e78fbf1e4af460d1ee7739b126d32
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544114"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339214"
 ---
 # <a name="azure-ad-access-reviews"></a>Azure AD 访问审查
 
@@ -27,15 +27,16 @@ ms.locfileid: "32544114"
 
 还有一种相关功能, 客户可以查看和验证分配给 Azure AD 角色 (如全局管理员或 azure 订阅角色) 的管理用户的角色分配。  此功能包含在[Azure AD 特权标识管理](privilegedidentitymanagement-root.md)中。
 
-请注意, "访问审阅" 功能 (包括 API) 包含在 Azure AD Premium P2 中。 
+请注意, "访问审阅" 功能 (包括 API) 包含在 Azure AD Premium P2 中。  在其中创建访问审核的租户必须具有有效的已购买或试用版 Azure AD Premium P2 或 EMS E5 订阅。 在创建访问审核、程序或程序控制之前, 管理员必须先拥有载入, 才能准备[programControlType](programcontroltype.md)和[businessFlowTemplate](businessflowtemplate.md)资源。 组织可以在 azure ad 角色或 azure 订阅角色 (azure ad PIM) 的访问查看的情况下集成到 azure ad 访问评论。
 
-## <a name="methods"></a>方法
 
-下面是 Azure AD access 检查提供的方法的列表。  
+## <a name="methods"></a>方法 
+
+下表列出了可用于与访问评审相关的资源进行交互的方法。
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   获取具有特定 id 的访问评审。 |
+|[获取 accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   获取具有特定 ID 的访问评审。 |
 |[创建 accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   创建新的 accessReview。 |
 |[删除 accessReview](../api/accessreview-delete.md) | 无。   | 删除 accessReview。 |
 |[更新 accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | 更新 accessReview。 |
@@ -59,6 +60,20 @@ ms.locfileid: "32544114"
 |[列出 programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md)集合| 列出租户中所有程序之间的控件。|
 |[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md)集合| 列出程序控制类型。 |
 
+## <a name="role-and-application-permission-authorization-checks"></a>角色和应用程序权限授权检查
+
+调用用户需要使用以下目录角色来管理访问评审、程序和控件。
+
+| 目标资源 | 操作 | 应用程序权限 | 呼叫用户的必需目录角色 |
+|:----------------|:------------------|:------------|:--------------------------------------------|
+|Azure AD 角色的[accessReview](accessreview.md) | 读取 | AccessReview 或 AccessReview。所有 | 全局管理员、安全管理员、安全读者或特权角色管理员 |
+|Azure AD 角色的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview | 全局管理员或特权角色管理员 |
+|组或应用的[accessReview](accessreview.md) | 读取 | AccessReview 或 AccessReview。所有 | 全局管理员、安全管理员、安全读者或用户管理员 |
+|组或应用的[accessReview](accessreview.md) | 创建、更新或删除 | AccessReview | 全局管理员或用户管理员 |
+| [程序](program.md)和[programControl](programcontrol.md)| 读取 | ProgramControl 或 ProgramControl。所有 |  全局管理员、安全管理员、安全读者或用户管理员 |
+| [程序](program.md)和[programControl](programcontrol.md) | 创建、更新或删除 | ProgramControl | 全局管理员或用户管理员 |
+
+此外, 为访问审核分配的审阅者的用户可以管理他们的决策, 而无需在目录角色中进行管理。
 
 ## <a name="see-also"></a>另请参阅
 
@@ -74,8 +89,6 @@ ms.locfileid: "32544114"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/accessreviews-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

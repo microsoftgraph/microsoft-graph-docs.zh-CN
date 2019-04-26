@@ -4,12 +4,12 @@ description: 更新当前经过身份验证的组织的属性。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 090be61f98ecd8f55a5e1a9edfe45bf7b39f23de
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0c60ef631177431350a896c77bbe1dab80f7b985
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539755"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338087"
 ---
 # <a name="update-organization"></a>更新组织
 
@@ -47,7 +47,7 @@ PATCH /organization/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|String collection|                                        **注意：** 不可为 null。            |
+|marketingNotificationEmails|String 集合|                                        **注意：** 不可为 null。            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|组织的隐私配置文件（设置 statementUrl 和 contactEmail）。            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String 集合||
@@ -116,8 +116,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/organization-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

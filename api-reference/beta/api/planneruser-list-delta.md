@@ -4,12 +4,12 @@ description: 检索对用户订阅的对象所做的更改。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 772a5d487f48b1552707da45729a84c7fdf7da2f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ebcb457164c83c2fc418d097d7ba87c40c2eb74e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546827"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332307"
 ---
 # <a name="planner-delta"></a>Planner: delta
 
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 
->**注意：** 为了提高可读性，可能缩短了显示的响应对象。 所有已更改的属性都将从实际调用返回。
+>**注意：** 为了提高可读性，所示的响应对象可能已缩短。 所有已更改的属性都将从实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -146,8 +146,6 @@ preference-applied: odata.track-changes, odata.track-changes
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/planneruser-list-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

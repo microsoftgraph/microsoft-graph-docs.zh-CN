@@ -2,12 +2,12 @@
 title: synchronizationTaskExecution 资源类型
 description: 概述同步作业的运行结果。
 localization_priority: Normal
-ms.openlocfilehash: 37a0fd57269cef6d3cb03c5cc5c38d3024fe198d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9008dd7d51a1d07be75c5b9bbad34d636fff74c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453861"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339823"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>synchronizationTaskExecution 资源类型
 
@@ -16,9 +16,9 @@ ms.locfileid: "32453861"
 概述同步作业的运行结果。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|activityIdentifier           |字符串 |作业运行的标识符。|
+|activityIdentifier           |String |作业运行的标识符。|
 |countEntitled                |Int64  |为此应用程序分配的已处理项的计数。|
 |countEntitledForProvisioning |Int64  |为设置分配的已处理项的计数。|
 |countEscrowed                |Int64  |escrowed (错误) 的项的计数。|
@@ -74,8 +74,6 @@ ms.locfileid: "32453861"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationtaskexecution.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

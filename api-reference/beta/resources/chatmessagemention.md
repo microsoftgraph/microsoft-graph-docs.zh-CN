@@ -4,12 +4,12 @@ description: '表示了 chatmessage 实体中提及的项。 提及可用于用�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7dc2948821bee244e3ccde6e134a7ac2a201ad63
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bd1c7854dd8653452fd7230f90faa56576aa5908
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543684"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341461"
 ---
 # <a name="chatmessagemention-resource-type"></a>chatMessageMention 资源类型
 
@@ -41,6 +41,7 @@ ms.locfileid: "32543684"
 |mentionText|string|用于表示提及的字符串。 例如, 用户的显示名称 (团队名称)。|
 |所|[identitySet](identityset.md)|提到的实体 (用户、应用程序、团队或通道)。  如果它是 @mentioned 的频道或团队, 则了解 identityset 包含一个**会话**属性, 该属性提供团队/通道的 ID 和代表团队或频道的**conversationIdentityType**属性。|
 
+
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
@@ -69,8 +70,6 @@ ms.locfileid: "32543684"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/chatmessagemention.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

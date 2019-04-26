@@ -1,19 +1,21 @@
 ---
 title: 列出 directReports
-description: 获取用户的直接下属。返回指定此用户作为经理的用户和联系人。
-localization_priority: Priority
+description: 获取用户的直接下属。 返回指定此用户作为经理的用户和联系人。
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a397e45675b245325d1a086e0b87117358514e15
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984099"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571399"
 ---
 # <a name="list-directreports"></a>列出 directReports
 
-获取用户的直接下属。返回指定此用户作为经理的用户和联系人。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+获取用户的直接下属。 返回指定此用户作为经理的用户和联系人。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -50,7 +52,7 @@ GET /users/{id | userPrincipalName}/directReports
   "name": "get_directreports"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/directReports
+GET https://graph.microsoft.com/beta/me/directReports
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -76,10 +78,13 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

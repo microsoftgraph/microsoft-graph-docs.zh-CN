@@ -4,12 +4,12 @@ description: 更新 table 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2b78603a261145e2047b5e16175143a3b3c591e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5a75f1de081443af7dbb83c675430f79c97c5c0a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536764"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330665"
 ---
 # <a name="update-table"></a>更新表
 
@@ -44,12 +44,12 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 |:---------------|:--------|:----------|
 |name|string|表的名称。|
 |showHeaders|布尔|指示标头行是否可见。该值可以设置为显示或删除标头行。|
-|showTotals|布尔|指示总计行是否可见。该值可以设置为显示或删除总计行。|
+|showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
 |style|string|表示表格样式的常量值。可能的值是：TableStyleLight1 thru TableStyleLight21、TableStyleMedium1 thru TableStyleMedium28、TableStyleStyleDark1 thru TableStyleStyleDark11。还可以指定工作簿中显示的用户定义的自定义样式。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [Table](../resources/table.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [Table](../resources/workbooktable.md) 对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -74,7 +74,7 @@ Content-length: 109
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -99,8 +99,6 @@ Content-length: 109
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/table-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

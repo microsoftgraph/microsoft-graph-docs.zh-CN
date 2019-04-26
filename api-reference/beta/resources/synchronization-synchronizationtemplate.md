@@ -2,12 +2,12 @@
 title: synchronizationTemplate 资源类型
 description: " 任何人都可以检索模板以查看默认设置, 包括同步架构。"
 localization_priority: Normal
-ms.openlocfilehash: 75df13d55cfb58aafe8a751279e103424aa29367
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fda63ede321de1a87604e7bca7fe7d7536d42689
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561206"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339853"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>synchronizationTemplate 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "32561206"
 | 方法        | 返回类型               | 说明                  |
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronizationtemplate-list.md)    |[synchronizationTemplate](synchronization-synchronizationtemplate.md)集合  |列出可用于应用程序实例或应用程序实例 (服务主体) 的模板。|
-|[获取](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |读取**synchronizationTemplate**对象的属性和关系。|
+|[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |读取**synchronizationTemplate**对象的属性和关系。|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
 |[Update](../api/synchronization-synchronizationtemplate-put.md)   |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the template.| 
@@ -34,8 +34,8 @@ ms.locfileid: "32561206"
 |:--------------|:--------------------------|:-----------------------------|
 |id             |字符串                     |唯一的模板标识符。|
 |applicationId  |String                     |此模板所属应用程序的标识符。|
-|设置        |布尔值                    |`true`如果建议将此模板作为应用程序的默认模板。|
-|description    |String                     |模板的说明。|
+|设置        |Boolean                    |`true`如果建议将此模板作为应用程序的默认模板。|
+|说明    |String                     |模板的说明。|
 |被   |String                     |`true`如果此模板应显示在可用于应用程序实例 (服务主体) 的模板集合中。|
 |factoryTag     |String                     |同步引擎支持的已知工厂标记之一。 **factoryTag**告知同步引擎在处理基于此模板的作业时要使用的实现。|
 |metadata       |metadataEntry 集合   |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|

@@ -2,12 +2,12 @@
 title: 更新 oAuth2PermissionGrant
 description: 更新 oAuth2PermissionGrant 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: fb990c56b4d7ae62ac35935a91d69688b96bff28
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75f6d8b5d650f8a29f4c826ae90d4eddf6425209
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540203"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338140"
 ---
 # <a name="update-oauth2permissiongrant"></a>更新 oAuth2PermissionGrant
 
@@ -84,8 +84,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/oauth2permissiongrant-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

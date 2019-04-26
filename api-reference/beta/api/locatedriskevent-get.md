@@ -2,12 +2,12 @@
 title: 获取 locatedRiskEvent
 description: 检索 locatedriskevent 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: aee63e3f9cbb90f839d3eaebf5ec37b2f5b53042
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9834bd3f4619e5fa55692e354701106778589be5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540879"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338710"
 ---
 # <a name="get-locatedriskevent"></a>获取 locatedRiskEvent
 
@@ -88,8 +88,6 @@ Content-length: 237
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/locatedriskevent-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

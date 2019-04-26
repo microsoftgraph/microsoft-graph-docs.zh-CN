@@ -14,11 +14,19 @@ author: "mmast-msft" 使用: 正常毫秒: "教育版"
 |:-|:-|
 | [**educationIdentityMatchingConfiguration**](educationidentitymatchingconfiguration.md) | 使用此类型可匹配 azure Active Directory (azure AD) 中的现有用户帐户。 |
 | [**educationIdentityCreationConfiguration**](educationidentitycreationconfiguration.md) | 使用此类型在 Azure AD 中创建新用户帐户。 |
-<!--
+
+## <a name="json-representation"></a>JSON 表示形式
+<!-- {
+  "blockType": "resource",
+   "isAbstract":true,
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration"
+}-->
+
+```json
 {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationidentitysynchronizationconfiguration.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
 }
--->
+```
+

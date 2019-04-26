@@ -4,12 +4,12 @@ description: '有关收件人的信息性消息, 在用户撰写邮件时向其�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 11e64c09a90d130b7656d4e87770e6df3fb67408
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 15f026fd5a6485e5a0549d5987f53e26f0929b75
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562609"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342758"
 ---
 # <a name="mailtips-resource-type"></a>邮件提示资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "32562609"
 | isModerated |Boolean  | 向收件人发送邮件是否需要审批。 例如, 如果收件人是一个大型通讯组列表, 并且已将仲裁人设置为审批发送到该通讯组列表的邮件, 或者向收件人发送邮件时需要对收件人的经理进行审批。 |
 | mailboxFull | Boolean | 收件人的邮箱完整状态。 |
 | maxMessageSize | Int32 | 已为收件人的组织或邮箱配置的最大邮件大小。 |
-| recipientScope | String | 收件人的范围。 可取值为：`none`、`internal`、`external`、`externalPartner` 或 `externalNonParther`。 例如, 管理员可以将其他组织设置为其 "合作伙伴"。 如果管理员希望某些范围能够访问某些邮件提示, 则该范围很有用。 对于发件人来说, 通知他们其邮件可能会离开组织, 从而帮助他们做出正确的措辞、语气和内容决策。|
+| recipientScope | String | 收件人的范围。 可取值为：`none`、`internal`、`external`、`externalPartner`、`externalNonParther`。 例如, 管理员可以将其他组织设置为其 "合作伙伴"。 如果管理员希望某些范围能够访问某些邮件提示, 则该范围很有用。 对于发件人来说, 通知他们其邮件可能会离开组织, 从而帮助他们做出正确的措辞、语气和内容决策。|
 | recipientSuggestions | [recipient](../resources/recipient.md) collection | 根据以前的上下文显示在同一邮件中建议的收件人。 |
 | totalMemberCount | Int32 | 如果收件人是通讯组列表, 则为成员数量。 |
 
@@ -84,8 +84,6 @@ ms.locfileid: "32562609"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mailtips.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

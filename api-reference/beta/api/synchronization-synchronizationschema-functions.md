@@ -2,12 +2,12 @@
 title: 'synchronizationSchema: 函数'
 description: 列出 attributeMappingSource 中当前支持的所有函数。
 localization_priority: Normal
-ms.openlocfilehash: edfdb169f9945759e062cf2c57d5f6f3b4c22f2e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5b24f77e61011d6c5a8bc7652c3c4ff168d2e1f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545247"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330575"
 ---
 # <a name="synchronizationschema-functions"></a>synchronizationSchema: 函数
 
@@ -400,8 +400,6 @@ non-string type names like "Integer" or "Boolean"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationschema-functions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

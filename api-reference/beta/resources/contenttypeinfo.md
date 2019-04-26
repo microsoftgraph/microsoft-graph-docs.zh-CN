@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentTypeInfo
 localization_priority: Normal
-ms.openlocfilehash: 196a71be06b4e3c02330aba21559341650caa550
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 107dfb3577489521d2e10e0c8fd2fe52c4f90b10
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535396"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341221"
 ---
 # <a name="contenttypeinfo-resource-type"></a>ContentTypeInfo 资源类型
 
@@ -43,8 +43,6 @@ ms.locfileid: "32535396"
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/ContentTypeInfo",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/contenttypeinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

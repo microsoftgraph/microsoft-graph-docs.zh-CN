@@ -4,12 +4,12 @@ description: 失败的 OneNote 操作中的错误。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 78e0ab763f27d17cf926795459b4e4a25cdf8e71
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b2912ee02ab22631224b892a09a8c4dd7840dd1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568883"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341414"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>onenoteOperationError 资源类型
 

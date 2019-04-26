@@ -4,12 +4,12 @@ description: 执行排序操作。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7979033ce520f0d29172a910f4935c428bee383f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: beaced8da56e82599fd2e900c04e909947d1893b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538259"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332157"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -28,7 +28,7 @@ ms.locfileid: "32538259"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/sort/apply
+POST /workbook/names/{name}/range/sort/apply
 POST /workbook/worksheets/{id|name}/range(address='<address>')/sort/apply
 POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
@@ -44,8 +44,8 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|域|SortField|作为排序依据的条件列表。|
-|matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
+|域|workbookSortField 集合|要用作排序依据的条件列表。|
+|matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|
 |hasHeaders|布尔|可选。该区域是否有标头。|
 |orientation|string|可选。该操作是对行还是列排序。可能的值是：`Rows`、`Columns`。|
 |方法|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
@@ -63,7 +63,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
   "name": "rangesort_apply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/sort/apply
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/sort/apply
 Content-type: application/json
 Content-length: 358
 
@@ -108,8 +108,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/rangesort-apply.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

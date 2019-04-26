@@ -4,12 +4,12 @@ description: 工作簿是顶级对象，它包含相关 workbook 对象，例如
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a63ee1d3ce2b7b43eea2993cb588b20897b31c32
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2dbc2e53eec9b5c64d4249351e8c8366e07f2fd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453586"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341407"
 ---
 # <a name="workbook-resource-type"></a>工作簿资源类型
 
@@ -23,20 +23,20 @@ ms.locfileid: "32453586"
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[Create Session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |创建工作簿会话以启动永久或非永久会话。|
-|[Close Session](../api/workbook-closesession.md) | None |关闭现有会话。|
+|[Close Session](../api/workbook-closesession.md) | 无 |关闭现有会话。|
 |[Refresh Session](../api/workbook-refreshsession.md) | 无 |刷新现有会话。|
 
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |描述|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|names|[NamedItem](nameditem.md) 集合|表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
-|表格|[Table](table.md) 集合|表示与工作簿关联的表的集合。只读。|
-|Worksheets|[Worksheet](worksheet.md) 集合|表示与工作簿关联的工作表的集合。只读。|
+|names|[workbookNamedItem](workbooknameditem.md)集合 |表示工作簿范围内的已命名项目（称为区域和常量）的集合。只读。|
+|表格|[workbookTable](workbooktable.md)集合 |表示与工作簿关联的表的集合。只读。|
+|Worksheets|[workbookWorksheet](workbookworksheet.md)集合 |表示与工作簿关联的工作表的集合。只读。|
 
 ## <a name="functions"></a>函数
 
-[Excel 函数](#functions)使用 JSON 对象调用使用语法 `POST /workbook/functions/{function-name}` 并在正文中提供函数自变量的工作簿函数。该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。`error` 的 `null` 值表示该函数执行成功。 
+[Excel 函数](#functions)使用 JSON 对象调用使用语法 `POST /workbook/functions/{function-name}` 并在正文中提供函数自变量的工作簿函数。该函数产生 `value`，所有 `error` 字符串均返回到函数结果对象中。`null` 的 `error` 值表示该函数执行成功。 
 
 受支持函数的完整列表在 [此处](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)。请参阅特定参数名称和数据类型的函数签名。
 
@@ -132,6 +132,19 @@ content-type: application/json;odata.metadata
   "@odata.id": "/users('2abcad6a-2fca-4b6e-9577-e358a757d77d')/drive/root/workbook/functions/median()",
   "error": null,
   "value": 30
+}
+```
+## <a name="json-representation"></a>JSON 表示形式
+下面是资源的 JSON 表示形式。
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+``` json
+{
+    "id": "string"
 }
 ```
 

@@ -2,12 +2,12 @@
 title: 更新照片
 description: 更新 photo 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 4db957b18ea65c8e65f8b446229b57a6f627fad0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f9e64aed22308736ff08d6297a9f8823aa7e2de1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539033"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332586"
 ---
 # <a name="update-photo"></a>更新照片
 
@@ -91,8 +91,6 @@ Content-length: 53
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/photo-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

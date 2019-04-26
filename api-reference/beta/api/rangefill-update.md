@@ -4,12 +4,12 @@ description: 更新 rangefill 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 87214cf944c5f0aadd26189dcdfba6383cb6cb65
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8a9855d02702cd33d4319b2fb8f18bd9c98ebfce
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546227"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331792"
 ---
 # <a name="update-rangefill"></a>更新 rangefill
 
@@ -28,7 +28,7 @@ ms.locfileid: "32546227"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range/format/fill
+PATCH /workbook/names/{name}/range/format/fill
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/fill
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 ```
@@ -47,7 +47,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [Rangefill](../resources/rangefill.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[workbookRangeFill](../resources/workbookrangefill.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -56,7 +56,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/fill
   "name": "update_rangefill"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/fill
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/fill
 Content-type: application/json
 Content-length: 28
 
@@ -87,8 +87,6 @@ Content-length: 28
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/rangefill-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

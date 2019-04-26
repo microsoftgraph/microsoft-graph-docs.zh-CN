@@ -4,12 +4,12 @@ description: 在指定的 outlookTaskGroup 下创建 Outlook 任务文件夹。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d1c6621e16d548b24cba264cb0434c5ea5dbd290
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 59f6b6b2d12a68ded2cd22c8f859686f7b2fef20
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539633"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337920"
 ---
 # <a name="create-outlooktaskfolder"></a>创建 outlookTaskFolder
 
@@ -51,8 +51,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
   "name": "create_outlooktaskfolder_from_outlooktaskgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/taskgroups('AAMkADIyAAAhrbe-AAA')/taskfolders 
-
+POST https://graph.microsoft.com/beta/me/taskgroups/AAMkADIyAAAhrbe-AAA'/taskfolders
 Content-type: application/json
 Content-length: 131
 
@@ -91,8 +90,6 @@ Content-length: 151
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlooktaskgroup-post-taskfolders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

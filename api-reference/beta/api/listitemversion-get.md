@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 获取列表项的以前版本 - SharePoint API
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 88f442178d3e703c4861e3a6fe5746a7f0c5e8b8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2193c2e23ad5227e9118f23a782fbaa24756f88b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541001"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338703"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>获取 ListItemVersion 资源（预览）
 
@@ -86,8 +86,6 @@ Content-Type: application/json
   "keywords": "version, version history, versions",
   "section": "documentation",
   "tocPath": "Items/Version history",
-  "suppressions": [
-    "Error: /api-reference/beta/api/listitemversion-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 希
 localization_priority: Normal
-ms.openlocfilehash: be7d3b27b1ef22976dc93ea5aecbc2a64031e8b4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b2a80152a0e4e4ec2b05a4ea1080ff4e159d6c9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506347"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333688"
 ---
 # <a name="hashes-resource-type"></a>Hashes 资源类型
 
@@ -41,8 +41,8 @@ ms.locfileid: "32506347"
 
 | 属性         | 类型   | 说明                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | 字符串 | 文件内容的 SHA1 哈希（如果可用）。只读。 |
-| **crc32Hash**    | 字符串 | 文件的 CRC32 值（如果可用）。只读。            |
+| **sha1Hash**     | String | 文件内容的 SHA1 哈希（如果可用）。只读。 |
+| **crc32Hash**    | String | 文件的 CRC32 值（如果可用）。只读。            |
 | **quickXorHash** | String | 文件的专有哈希，可用于确定文件内容是否更改（如果存在）。只读。 |
 
 **注意：** 在某些情况下，哈希值不可用。如果出现这种情况，将在下载项后对项上的哈希值进行更新。
@@ -65,8 +65,6 @@ ms.locfileid: "32506347"
   "keywords": "hash,sha1,crc32,item,facet",
   "section": "documentation",
   "tocPath": "Facets/Hashes",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/hashes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

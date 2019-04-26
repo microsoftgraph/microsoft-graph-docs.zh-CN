@@ -2,12 +2,12 @@
 title: synchronizationSchema 资源类型
 description: 定义将同步的对象以及同步的对象。 同步架构包含特定同步作业的大部分安装信息。 通常情况下, 您将自定义一些属性映射, 或添加作用域筛选器以仅同步满足特定条件的对象。
 localization_priority: Normal
-ms.openlocfilehash: e7bb91ef473a04552c4c5f33ffc9d54eb86a9b7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8fd43a028a7d94b6d4a7c1e5d3c47520bff507ec
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453847"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339863"
 ---
 # <a name="synchronizationschema-resource-type"></a>synchronizationSchema 资源类型
 
@@ -34,8 +34,8 @@ ms.locfileid: "32453847"
 | 方法        | 返回类型               | 说明                  |
 |:--------------|:--------------------------|:-----------------------------|
 |[获取架构](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |读取**synchronizationSchema**对象的属性和关系。|
-|[更新架构](../api/synchronization-synchronizationschema-update.md)    |None   |更新同步架构。 |
-|[删除架构](../api/synchronization-synchronizationschema-delete.md)    |None   |删除自定义架构, 将架构重置为默认配置。 |
+|[更新架构](../api/synchronization-synchronizationschema-update.md)    |无   |更新同步架构。 |
+|[删除架构](../api/synchronization-synchronizationschema-delete.md)    |无   |删除自定义架构, 将架构重置为默认配置。 |
 |[列表筛选器运算符](../api/synchronization-synchronizationschema-filteroperators.md)    |[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md)集合   |列出作用域筛选器支持的所有运算符。 |
 |[列表属性映射函数](../api/synchronization-synchronizationschema-functions.md)    |[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)集合   |列出属性映射表达式中支持的所有函数。 |
 |[分析属性映射表达式](../api/synchronization-synchronizationschema-parseexpression.md)|[parseExpressionResponse](synchronization-parseexpressionresponse.md)|将字符串表达式分析为 [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) 对象。|
@@ -43,7 +43,7 @@ ms.locfileid: "32453847"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | 描述    |
+| 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
 |目录名            |[directoryDefinition](synchronization-directorydefinition.md)集合   |描述作为[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)一部分的目录和对象。 |
 |synchronizationRules   |[synchronizationRule](synchronization-synchronizationrule.md)集合   |为[synchronizationJob](synchronization-synchronizationjob.md)或[synchronizationTemplate](synchronization-synchronizationtemplate.md)配置的同步规则的集合。 |
@@ -80,8 +80,6 @@ ms.locfileid: "32453847"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationschema.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

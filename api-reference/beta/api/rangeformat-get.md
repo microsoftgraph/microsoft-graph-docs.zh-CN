@@ -4,12 +4,12 @@ description: 检索 rangeformat 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b6eb4ab75bbb3b9b2180ed2fb05ef1217a0b219a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd6b1db175e5efe0e349ac5c1f0e07b2da243b27
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538275"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336783"
 ---
 # <a name="get-rangeformat"></a>获取 RangeFormat
 
@@ -28,7 +28,7 @@ ms.locfileid: "32538275"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/format
+GET /workbook/names/{name}/range/format
 GET /workbook/worksheets/{id|name}/range(address='<address>')/format
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
@@ -46,7 +46,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [RangeFont](../resources/rangeformat.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[workbookRangeFormat](../resources/workbookrangeformat.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -55,14 +55,14 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format
   "name": "get_rangeformat"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -85,8 +85,6 @@ Content-length: 96
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/rangeformat-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

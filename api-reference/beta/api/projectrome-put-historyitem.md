@@ -3,14 +3,16 @@ title: 创建或替换 historyItem
 description: 为现有用户活动创建新的或替换现有的历史记录项。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 777918d36a366534f7b07f505086a115f8c03c4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0a8d03029350ce96e7442473dffa0595278bc195
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546384"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337255"
 ---
 # <a name="create-or-replace-a-historyitem"></a>创建或替换 historyItem
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 为现有用户活动创建新的或替换现有的历史记录项。
 
@@ -61,7 +63,7 @@ Id 必须是 GUID。
 } -->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
+PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
 Content-type: application/json
 Content-length: 364
 
@@ -79,7 +81,7 @@ Content-length: 364
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.activityHistoryItem"
+    "@odata.type": "microsoft.graph.historyItem"
 } -->
 
 ```http
@@ -87,7 +89,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('user%40contoso.com')/activities('13881113971988980728')/historyItems/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('user%40contoso.com')/activities('13881113971988980728')/historyItems/$entity",
     "status": "updated",
     "userTimezone": "Africa/Casablanca",
     "createdDateTime": "2018-02-26T20:28:22.14Z",
@@ -102,10 +104,13 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Upsert historyitem",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

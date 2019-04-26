@@ -4,12 +4,12 @@ description: Microsoft Graph 中的教育 api 使用与教育方案相关的信�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 9e106da7eb717a091941e16f4a70af8a012802f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b5dd443b9ccda48c586bc44f6f4e35523a5e000f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534869"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340663"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>在 Microsoft Graph 中使用教育 API
 
@@ -64,7 +64,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 - [列出所有学校](../api/educationroot-list-schools.md) 
 - [列出所教授课程的学校](../api/educationclass-list-schools.md)
 - [为用户列出学校](../api/educationuser-list-schools.md)
-- [获取所有课程](../api/educationroot_list_classes.md )
+- [获取所有课程](../api/educationroot-list-classes.md )
 - [获取学校的课程](../api/educationschool-list-classes.md)
 - [为用户列出课程](../api/educationuser-list-classes.md)
 - [将课程添加到学校](../api/educationschool-post-classes.md)
@@ -127,13 +127,5 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 使用 Microsoft Graph 教育 api 生成可访问学生工作分配和学校名册的教育解决方案。 了解详细信息：
 
 - 探索对你的方案最有帮助的资源和方法。
-- 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中调用 API。
+- 尝试在 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中使用 API。
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/education-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

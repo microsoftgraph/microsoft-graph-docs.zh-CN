@@ -2,12 +2,12 @@
 title: governanceRoleAssignmentRequestStatus 资源类型
 description: 表示 governanceRoleAssignmentRequest 的状态。
 localization_priority: Normal
-ms.openlocfilehash: f4f0b23cf13de5beedb1964484ec4fbbb6e98720
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 768ef092dbe52b0989277905bae03eee091ca8c6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547428"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340290"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>governanceRoleAssignmentRequestStatus 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "32547428"
 ## <a name="properties"></a>属性
 属性       | 类型 |说明|
 |:----|:-------------|:-----|
-|状态 |字符串| 角色分配请求的状态。 值可以是`InProgress`或`Closed`。|
+|status |String| 角色分配请求的状态。 值可以是`InProgress`或`Closed`。|
 |状态值 |String| 角色分配请求的子状态。 值可以是`Accepted`、 `PendingEvaluation`、 `Granted` `Denied` `PendingProvisioning` `Provisioned` `ProvisioningStarted`、、、、、、、、和。 `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `PendingRevocation` `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning`|
 |statusDetails       |[keyValue](../resources/keyvalue.md) 集合| 角色分配请求状态的详细信息。 它表示不同规则的评估结果。 |
 
@@ -37,7 +37,7 @@ ms.locfileid: "32547428"
 {
   "status": "String",
   "subStatus": "String",
-  "statusDetails": [{"@odata.type": "microsoft.graph.keyvalue"}],
+  "statusDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
 }
 
 ```
@@ -51,8 +51,6 @@ ms.locfileid: "32547428"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceroleassignmentrequeststatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: 更新 mailSearchFolder 对象的可写属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 54e901751fc404ba2099205c6b16d86c99d9b05f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1c51410389d3ed12b8959f5b4d4c98f2fb66e5ad
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540596"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338629"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
@@ -45,8 +45,8 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | displayName | String | [mailFolder](../resources/mailfolder.md)的显示名称。|
-| includeNestedFolders | 布尔值 | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索, 而不是`false`指应改为进行浅表搜索。 |
-| sourceFolderIDs | String collection | 应挖掘的邮箱文件夹。 |
+| includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索, 而不是`false`指应改为进行浅表搜索。 |
+| sourceFolderIDs | String 集合 | 应挖掘的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
@@ -110,8 +110,6 @@ Content-length: 179
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: synchronizationRule 资源类型
 description: 定义同步引擎的同步执行方式, 包括要同步的对象和在哪个方向上, 源目录中的对象应与目标目录中的对象匹配, 以及属性应在将其从源目录同步到目标目录时进行转换。
 localization_priority: Normal
-ms.openlocfilehash: deaf27ec46268eebe289e502bdf3b62a659cf1fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b881c73d8fec8dc6b342192195d486807c744cf7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453642"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340019"
 ---
 # <a name="synchronizationrule-resource-type"></a>synchronizationRule 资源类型
 
@@ -21,16 +21,16 @@ ms.locfileid: "32453642"
 
 ## <a name="properties"></a>属性
 
-| 属性      | 类型      | 描述    |
+| 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
 |变为       |Boolean    |`true`如果可以对同步规则进行自定义, 则为  ;`false`如果此规则为只读, 则不应更改。|
 |id             |String     |同步规则标识符。 必须是同步引擎可识别的标识符之一。 在 API 返回的同步模板中可以找到受支持的规则标识符。|
 |metadata       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md)集合 |其他扩展属性。 除非支持团队明确指示, 否则不应更改元数据值。|
-|name           |String     |可读的同步规则名称。 不可为空。|
+|name           |String     |可读的同步规则名称。 不可为 Null。|
 |objectMappings |[objectMapping](synchronization-objectmapping.md)集合    |该规则支持的对象映射的集合。 通知同步引擎应同步哪些对象。|
 |priority       |整数    |相对于[synchronizationSchema](synchronization-synchronizationschema.md)中其他规则的优先级。 将首先处理具有最低优先级编号的规则。|
-|sourceDirectoryName       |字符串    |源目录的名称。 必须与[synchronizationSchema](synchronization-synchronizationschema.md)中的一个目录定义相匹配。|
-|targetDirectoryName       |字符串    |目标目录的名称。 必须与[synchronizationSchema](synchronization-synchronizationschema.md)中的一个目录定义相匹配。|
+|sourceDirectoryName       |String    |源目录的名称。 必须与[synchronizationSchema](synchronization-synchronizationschema.md)中的一个目录定义相匹配。|
+|targetDirectoryName       |String    |目标目录的名称。 必须与[synchronizationSchema](synchronization-synchronizationschema.md)中的一个目录定义相匹配。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -67,8 +67,6 @@ ms.locfileid: "32453642"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationrule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

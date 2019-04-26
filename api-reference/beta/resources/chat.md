@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1091021235a50d3dfa237467e319da9b131b7a72
-ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33301853"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339711"
 ---
 # <a name="chat-resource-type"></a>聊天资源类型
 

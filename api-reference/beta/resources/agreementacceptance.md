@@ -2,12 +2,12 @@
 title: agreementAcceptance 资源类型
 description: 表示在受 azure Active Directory (azure AD) 支持的公司自定义使用条款的范围内的用户的当前状态。
 localization_priority: Normal
-ms.openlocfilehash: 884a6b7dcf4dcc8f00aa927dd9d486c074b64183
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 84b54998e8afaad501d2cf46d564400aa2307507
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544045"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339140"
 ---
 # <a name="agreementacceptance-resource-type"></a>agreementAcceptance 资源类型
 
@@ -36,7 +36,7 @@ ms.locfileid: "32544045"
 |userDisplayName|String|记录接受时的用户的显示名称。|
 |userEmail|String|记录接受时用户的电子邮件。|
 |userId|String|接受协议的用户的 ID。|
-|userPrincipalName|String|记录接受时的用户的 UPN。|
+|userPrincipalName|字符串|记录接受时的用户的 UPN。|
 
 ## <a name="relationships"></a>关系
 无
@@ -78,8 +78,6 @@ ms.locfileid: "32544045"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/agreementacceptance.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,17 +1,17 @@
 ---
-title: 共享资源类型
+title: sharedInsight 资源类型
 description: '了解表示与用户共享的文件或由特定用户共享的文件。 支持以下共享文件:'
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 128a85bb9aa2e9f51d2393029cce3c27f8c4e6f8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549487"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339977"
 ---
-# <a name="shared-resource-type"></a>共享资源类型
+# <a name="sharedinsight-resource-type"></a>sharedInsight 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,15 +37,19 @@ ms.locfileid: "32549487"
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | 可用于在体验中可视化文档的属性。 只读      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | 引用共享文档的属性, 例如文档的 url 和类型。 只读       |
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 资源      | 实体        | 用于导航到已共享的项目。 对于文件附件, 类型为*fileAttachment*。 对于链接的附件, 类型为*driveItem*。 |
+| 资源      | 实体集合 | 用于导航到已共享的项目。 对于文件附件, 类型为*fileAttachment*。 对于链接的附件, 类型为*driveItem*。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
-
+<!--{
+  "blockType":"resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.sharedInsight"
+}-->
 ```json
 {
   "id": "string",
@@ -56,11 +60,3 @@ ms.locfileid: "32549487"
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

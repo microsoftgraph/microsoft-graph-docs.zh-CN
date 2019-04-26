@@ -4,12 +4,12 @@ description: 联系人是 Outlook 中的一个项目，你可以在这里组织�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d2bdc1be9e504bc72ce12ffe924b6da0812b99ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 749ae9ed2e15230bd88949aff00ce07fb2cf4b8b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535471"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341188"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 
@@ -35,6 +35,7 @@ ms.locfileid: "32535471"
     "photo",
     "singleValueExtendedProperties"
   ],
+  "keyProperty":"id",
   "@odata.type": "microsoft.graph.contact"
 }-->
 
@@ -85,9 +86,9 @@ ms.locfileid: "32535471"
 |:---------------|:--------|:----------|
 |assistantName|String|联系人助理的姓名。|
 |birthday|DateTimeOffset|联系人的生日。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|categories|String collection|与联系人关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
-|changeKey|String|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
-|children|String collection|联系人子女的姓名。|
+|类别|String 集合|与联系人关联的类别。 每个类别对应于为用户定义的 [outlookCategory](outlookcategory.md) 的 **displayName** 属性。|
+|changeKey|字符串|标识联系人的版本。每次联系人更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
+|children|String 集合|联系人子女的姓名。|
 |companyName|String|联系人所在公司的名称。|
 |createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |department|String|联系人所在的部门。|
@@ -114,7 +115,7 @@ ms.locfileid: "32535471"
 |profession|String|联系人的职业。|
 |spouseName|String|联系人配偶/伴侣的姓名。|
 |surname|String|联系人的姓氏。|
-|title|字符串|联系人的职位。|
+|title|String|联系人的职位。|
 |websites |[website](website.md) collection|与联系人关联的网站。 |
 |weddingAnniversary |Date |联系人的婚礼周年纪念。 |
 |yomiCompanyName|String|联系人的注音日文公司名称。|
@@ -124,7 +125,7 @@ ms.locfileid: "32535471"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|extensions|[扩展](extension.md)集合|为联系人定义的开放扩展集合。 可为空。|
+|extensions|[扩展](extension.md)集合|为联系人定义的开放扩展集合。 可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为联系人定义的多值扩展属性的集合。只读。可为 Null。|
 |photo|[照片](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
@@ -132,8 +133,8 @@ ms.locfileid: "32535471"
 ## <a name="methods"></a>方法
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取联系人](../api/contact-get.md) | [contact](contact.md) |读取 contact 对象的属性和关系。|
-|[创建](../api/user-post-contacts.md) | [contact](contact.md) |将联系人添加到联系人根文件夹或其他联系人文件夹的联系人端点中。|
+|[获取联系人](../api/contact-get.md) | [联系人](contact.md) |读取 contact 对象的属性和关系。|
+|[创建](../api/user-post-contacts.md) | [联系人](contact.md) |将联系人添加到联系人根文件夹或其他联系人文件夹的联系人端点中。|
 |[更新](../api/contact-update.md) | [联系人](contact.md) |更新 contact 对象。 |
 |[删除](../api/contact-delete.md) | 无 |删除 contact 对象。 |
 |[delta](../api/contact-delta.md)|[联系人](contact.md)集合| 获取指定文件夹中已添加、删除或更新的联系人集。|
@@ -143,9 +144,9 @@ ms.locfileid: "32535471"
 |**架构扩展**| | |
 |[添加架构扩展值](/graph/extensibility-schema-groups) || 创建架构扩展定义，然后使用它向资源添加自定义键入数据。|
 |**扩展属性**| | |
-|[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |在新建或现有的联系人中创建一个或多个单值扩展属性。   |
-|[获取具有单值扩展属性的联系人](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | 通过使用 `$expand` 或 `$filter` 获取包含一个单值扩展属性的联系人。 |
-|[创建多值扩展属性](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contact](contact.md) | 在新建或现有的联系人中创建一个或多个多值扩展属性。  |
+|[创建单值扩展属性](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[联系人](contact.md)  |在新建或现有的联系人中创建一个或多个单值扩展属性。   |
+|[获取具有单值扩展属性的联系人](../api/singlevaluelegacyextendedproperty-get.md)  | [联系人](contact.md) | 通过使用 `$expand` 或 `$filter` 获取包含一个单值扩展属性的联系人。 |
+|[创建多值扩展属性](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [联系人](contact.md) | 在新建或现有的联系人中创建一个或多个多值扩展属性。  |
 |[获取具有多值扩展属性的联系人](../api/multivaluelegacyextendedproperty-get.md)  | [联系人](contact.md) | 使用 `$expand` 获取包含一个多值扩展属性的联系人。 |
 
 ## <a name="see-also"></a>另请参阅
@@ -166,8 +167,6 @@ ms.locfileid: "32535471"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/contact.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

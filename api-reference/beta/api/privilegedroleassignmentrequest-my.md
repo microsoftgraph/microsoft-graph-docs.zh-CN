@@ -2,12 +2,12 @@
 title: 'privilegedRoleAssignmentRequest: my'
 description: 获取请求者的特权角色分配请求。
 localization_priority: Normal
-ms.openlocfilehash: 79545b5ea0ad88c55d7a09eb5c77982e812721eb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 46c4fd0cf9a96a2d4bf578cd1161074bc310312b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546551"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337233"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: my
 
@@ -77,7 +77,7 @@ Content-length: 304
             "duration" : null
         },
         "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
-         "userId": "Self"，
+         "userId": "Self",
          "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
         "evaluateOnly": false,
         "type": "UserAdd",
@@ -101,7 +101,7 @@ Content-length: 304
             "duration" : null
         },
         "id": "03ea0c3d-90a0-42d4-b220-11c049c506fb",
-        "userId": "Self"，
+        "userId": "Self",
         "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
         "evaluateOnly": false,
         "type": "UserAdd",
@@ -130,8 +130,6 @@ Content-length: 304
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-my.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

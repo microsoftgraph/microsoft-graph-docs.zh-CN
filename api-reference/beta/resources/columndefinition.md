@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: ddd6b3c6d3048bf7a6d3ab2dbc8ff7259651ee2f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5cce4c3db7b66ff46a6bab0bbfaacd0ecc9a6cc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460618"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341385"
 ---
 # <a name="columndefinition-resource-type"></a>columnDefinition 资源类型
 
@@ -61,13 +61,13 @@ ms.locfileid: "32460618"
 
 | 属性名称           | 类型    | 说明
 |:------------------------|:--------|:-----------------------------------------
-| **columnGroup**         | 字符串  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
-| **说明**         | 字符串  | 面向用户的列描述。
+| **columnGroup**         | string  | 对于网站列，此列所属的组的名称。 可以帮助组织相关的列。
+| **说明**         | string  | 面向用户的列描述。
 | **displayName**         | string  | 面向用户的列名称。
-| **enforceUniqueValues** | 布尔 | 如果为 true，则此列不能有两个列表项具有相同的值。
-| **hidden**              | 布尔 | 指定列是否显示在用户界面中。
+| **enforceUniqueValues** | boolean | 如果为 true，则此列不能有两个列表项具有相同的值。
+| **hidden**              | boolean | 指定列是否显示在用户界面中。
 | **id**                  | string  | 列的唯一标识符。
-| **indexed**             | 布尔 | 指定列值是否可用于排序和搜索。
+| **indexed**             | boolean | 指定列值是否可用于排序和搜索。
 | **name**                | string  | 在 [listItem][] 上的 [fields][] 中显示的面向 API 的列名称。 对于面向用户的名称，请参阅 **displayName**。
 | **readOnly**            | bool    | 指定是否可以修改列值。
 | **required**            | boolean | 指定列值是否不可选。
@@ -118,8 +118,6 @@ ms.locfileid: "32460618"
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/ColumnDefinition",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/columndefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

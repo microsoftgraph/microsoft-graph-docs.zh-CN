@@ -4,14 +4,16 @@ ms.author: dspektor
 ms.date: 09/13/2017
 title: ContentTypeOrder
 localization_priority: Normal
-ms.openlocfilehash: 9b92a8234c493ae9b0f396db7010e7bf717d5959
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 32cca632933cf2b0fad1f8e9149973d95b4322d3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535422"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341226"
 ---
 # <a name="contenttypeorder-resource-type"></a>ContentTypeOrder 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **contentTypeOrder** 资源指定在选择 UI 中显示内容类型的顺序。
 
@@ -34,10 +36,13 @@ ms.locfileid: "32535422"
 | **default**   | boolean | 这是否为默认的内容类型
 | **position**  | Int32   | 指定在选择 UI 中显示内容类型的位置。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentTypeOrder"
-} -->
+  "tocPath": "Resources/ContentTypeOrder",
+  "suppressions": []
+}
+-->

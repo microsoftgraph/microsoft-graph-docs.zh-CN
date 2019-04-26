@@ -4,14 +4,16 @@ description: '获取长时间运行的 OneNote 操作的状态。 这适用于�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ad9a09960c946bf41d4f62e73c65e1c7562f97ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6d9e880a63eef7290c6fad06ef53960015101f3d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539966"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338138"
 ---
 # <a name="get-onenoteoperation"></a>获取 onenoteOperation
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取长时间运行的 OneNote 操作的状态。 这适用于在响应中返回**操作位置**标头的`CopyNotebook`操作, 例如`CopyToNotebook`、、 `CopyToSectionGroup`、。 `and CopyToSection`   
 
@@ -61,7 +63,7 @@ GET /sites/{id}/onenote/operations/{id}
   "name": "get_onenoteoperation"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/operations/{id}
+GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -87,10 +89,13 @@ Content-length: 215
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get onenoteOperation",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

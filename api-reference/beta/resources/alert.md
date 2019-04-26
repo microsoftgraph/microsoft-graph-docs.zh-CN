@@ -4,12 +4,12 @@ description: 表示 Microsoft 或合作伙伴安全解决方案已确定的客�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 8fa945cc69b3bc7779ae9ce23e2ee672c48eb1f8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f4bd1acfd140a4c0c4412441c92463061ecf7c86
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535787"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339102"
 ---
 # <a name="alert-resource-type"></a>警报资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "32535787"
 |:---------------|:--------|:----------|
 |[获取警报](../api/alert-get.md) | [警报](alert.md) |读取 alert 对象的属性和关系。|
 |[更新警报](../api/alert-update.md) | [警报](alert.md) |更新 alert 对象。 |
-|[列出警报](../api/alert-list.md) | [通知](alert.md)集合 |获取一个警报对象集合。|
+|[List alerts](../api/alert-list.md) | [通知](alert.md)集合 |获取一个警报对象集合。|
 |[更新警报](../api/alert-updatealerts.md)|[通知](alert.md)集合|更新多个 alert 对象。|
 
 ## <a name="properties"></a>属性
@@ -39,11 +39,11 @@ ms.locfileid: "32535787"
 |category|String|警报类别 (例如, credentialTheft、勒索软件, 等等)。|
 |closedDateTime|DateTimeOffset|警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如, 2014 年1月1日午夜 UTC 将如下所示: `'2014-01-01T00:00:00Z'` (支持[更新](../api/alert-update.md))。|
 |cloudAppStates|[cloudAppSecurityState](cloudappsecuritystate.md)集合|提供程序生成的与此警报相关的云应用程序生成的与安全相关的状态信息。|
-|comments|String collection|客户提供的有关通知的注释 (针对客户通知管理) (支持[更新](../api/alert-update.md))。|
+|comments|String 集合|客户提供的有关通知的注释 (针对客户通知管理) (支持[更新](../api/alert-update.md))。|
 |confidence|Int32|对检测逻辑的可信度 (1-100 之间的百分比)。|
 |createdDateTime |DateTimeOffset|通知提供程序创建警报的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
-|description|String|通知说明。|
-|detectionIds|String collection|与此警报实体相关的一组警报 (每个警报以单独的记录的形式推送到 SIEM)。|
+|说明|字符串|通知说明。|
+|detectionIds|String 集合|与此警报实体相关的一组警报 (每个警报以单独的记录的形式推送到 SIEM)。|
 |eventDateTime |DateTimeOffset|触发警报 (s) 的事件发生时所发生的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 必需。|
 |征求|alertFeedback|通知的分析师反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 (支持[更新](../api/alert-update.md))|
 |fileStates|[fileSecurityState](filesecuritystate.md)集合|提供程序生成的与安全相关的状态信息关于与此警报相关的文件。|
@@ -54,11 +54,11 @@ ms.locfileid: "32535787"
 |malwareStates|[malwareState](malwarestate.md)集合|与此警报相关的恶意软件的威胁智能。|
 |networkConnections|[networkConnection](networkconnection.md)集合|由提供程序生成的有关与此警报相关的网络连接的安全相关的状态信息。|
 |进程|[过程](process.md)集合|提供程序生成的与此警报相关的进程的、与安全相关的状态信息。|
-|recommendedActions|String collection|作为警报的结果 (例如, 隔离计算机、enforce2FA、映像主机) 而要采取的供应商/提供商建议的操作。|
+|recommendedActions|String 集合|作为警报的结果 (例如, 隔离计算机、enforce2FA、映像主机) 而要采取的供应商/提供商建议的操作。|
 |registryKeyStates|[registryKeyState](registrykeystate.md)集合|提供程序生成的与安全相关的状态信息关于与此警报相关的注册表项。|
-|度 |alertSeverity|警报严重性-由供应商/提供商设置。 可取值为：`unknown`、`informational`、`low`、`medium` 或 `high`。 必需。|
-|sourceMaterials|String collection|指向与警报相关的源材料的超链接 (uri), 例如, 提供商用于通知或日志搜索等的用户界面。|
-|状态 |alertStatus|警报生命周期状态 (阶段)。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 (支持[更新](../api/alert-update.md))。 必需。|
+|度 |alertSeverity|警报严重性-由供应商/提供商设置。 可取值为：`unknown`、`informational`、`low`、`medium`、`high`。 必需。|
+|sourceMaterials|String 集合|指向与警报相关的源材料的超链接 (uri), 例如, 提供商用于通知或日志搜索等的用户界面。|
+|status |alertStatus|警报生命周期状态 (阶段)。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 (支持[更新](../api/alert-update.md))。 必需。|
 |tags|String 集合|可应用于警报并可用作筛选条件的用户可定义标签 (例如, "HVA"、"锯" 等)(支持[更新](../api/alert-update.md))。|
 |title |String|通知标题。 必需。|
 |触发|[alertTrigger](alerttrigger.md)集合|有关触发警报的特定属性的安全相关信息 (出现在警报中的属性)。 警报可能包含有关多个用户、主机、文件和 ip 地址的信息。 此字段指示哪些属性触发了警报生成。|
@@ -66,7 +66,7 @@ ms.locfileid: "32535787"
 |vendorInformation |[securityVendorInformation](securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型 (例如, 供应商 = Microsoft; provider = Windows Defender ATP; subprovider = AppLocker)。 必需。|
 |vulnerabilityStates|[vulnerabilityState](vulnerabilitystate.md)集合|与此警报相关的一个或多个漏洞相关的威胁智能。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 
 无。
 
@@ -130,8 +130,6 @@ ms.locfileid: "32535787"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/alert.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

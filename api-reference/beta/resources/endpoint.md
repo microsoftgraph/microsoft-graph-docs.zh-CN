@@ -2,12 +2,12 @@
 title: 终结点资源类型
 description: '终结点表示与实体相关联的资源的 url。  例如, 在创建新的 Office 365 组时, 还会创建其他资源作为 Office 365 组的一部分。 其中包括类似于对话的组邮箱和文档和文件的组 OneDrive 文件夹等内容。 有关这些 Office 365 组资源的详细信息 (包括其关联的资源 url) 现在可以使用组资源类型中的*终结点*导航进行读取。 这样, 应用程序可以了解这些资源, 甚至可以在自己的体验中嵌入资源 URL 体验。 '
 localization_priority: Normal
-ms.openlocfilehash: 6f923cdeb34ec0845d776a67f51db490256ec718
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 474da77d10d9b433dd6d4914f9b75812e040a9e4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542939"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340202"
 ---
 # <a name="endpoint-resource-type"></a>终结点资源类型
 
@@ -26,13 +26,13 @@ ms.locfileid: "32542939"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | 性能     | String  | 介绍与此资源相关联的功能。 (例如, 邮件、对话等) 不可为 null。 只读。 |
-| id             | String  | 终结点的唯一标识符;主键. 不可为 null。 只读。|
-| providerId     | String  | 发布基础服务的应用程序 id。 不可为 null。 只读。|
+| id             | String  | 终结点的唯一标识符;主键. 不可为 Null。 只读。|
+| providerId     | String  | 发布基础服务的应用程序 id。 不可为 Null。 只读。|
 | providerName   | String  | 发布基础服务的名称。 只读。|
-| providerResourceId|String| 对于 Office 365 组, 此设置为资源的已知名称 (例如, FeedURL 等)。 不可为 null。 只读。|
-| url            | String  | 已发布资源的 URL。 不可为 null。 只读。|
+| providerResourceId|String| 对于 Office 365 组, 此设置为资源的已知名称 (例如, FeedURL 等)。 不可为 Null。 只读。|
+| url            | String  | 已发布资源的 URL。 不可为 Null。 只读。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 
 无。
 
@@ -45,7 +45,7 @@ ms.locfileid: "32542939"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.Endpoint"
+  "@odata.type": "microsoft.graph.endpoint"
 }-->
 
 ```json
@@ -69,8 +69,6 @@ ms.locfileid: "32542939"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/endpoint.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

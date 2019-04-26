@@ -1,19 +1,21 @@
 ---
 title: 列出经理
-description: 获取用户的经理。返回指定为用户经理的用户或联系人。
-localization_priority: Priority
+description: 获取用户的经理。 返回指定为用户经理的用户或联系人。
+localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ae243f0fa4c8212cecebedc39ebfc2d5713d5689
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980564"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571315"
 ---
 # <a name="list-manager"></a>列出经理
 
-获取用户的经理。返回指定为用户经理的用户或联系人。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+获取用户的经理。 返回指定为用户经理的用户或联系人。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -45,21 +47,13 @@ GET /users/{id | userPrincipalName}/manager
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
-<!-- {
-  "blockType": "request",
-  "name": "get_manager"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
+GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。
-<!-- {
-  "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.directoryObject",
-  "isCollection": false
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -86,10 +80,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

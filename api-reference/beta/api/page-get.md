@@ -4,16 +4,18 @@ description: 检索 page 对象的属性和关系。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 57a2c75bbe671086c89818a84f7f8266b90713c6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b4138c46a4717db4590d0e929518e1f8df2893ed
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539388"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337815"
 ---
 # <a name="get-page"></a>获取页面
 
-检索[page](../resources/page.md)对象的属性和关系。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+检索[page](../resources/onenotepage.md)对象的属性和关系。
 
 **获取页面信息**
 
@@ -67,13 +69,13 @@ GET /sites/{id}/onenote/pages/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[page](../resources/page.md)对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[onenotePage](../resources/onenotepage.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
  <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
+GET https://graph.microsoft.com/beta/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。 注意: 为简洁起见, 此处显示的响应对象将被截断。 将从实际调用中返回所有属性。
@@ -86,6 +88,7 @@ Content-length: 312
 {
   "title": "title-value",
   "createdByAppId": "createdByAppId-value",
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "links": {
     "oneNoteClientUrl": {
       "href": "href-value"
@@ -102,10 +105,13 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

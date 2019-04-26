@@ -4,12 +4,12 @@ description: 创建团队的副本。 此操作还会创建相应组的副本。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1495e00e2332ce6b963e654b8f5d63b2882c778d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7a78312d755befccff6e4b12cc0ba432e4754317
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536892"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330591"
 ---
 # <a name="clone-a-team"></a>克隆团队
 
@@ -56,7 +56,7 @@ POST /teams/{id}/clone
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |classification|String (可选)|描述组的分类 (如低、中或高业务影响)。 此属性的有效值是通过基于[模板定义](../resources/directorysettingtemplate.md)创建 ClassificationList[设置](../resources/directorysetting.md)值来定义的。 如果未指定分类, 则将从原始团队/组复制分类。|
-|description|String (可选)|可选的组说明。 如果未指定此属性, 则它将保留为空。|
+|说明|String (可选)|可选的组说明。 如果未指定此属性, 则它将保留为空。|
 |displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |mailNickname|String|组的邮件别名，在组织中是唯一的。 创建组时必须指定此属性。 支持 $filter。 如果未指定此属性, 则将从 displayName 计算。 已知问题: 此属性当前被忽略。|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |要克隆的部分的逗号分隔列表。 法律部门是 "应用、选项卡、设置、通道、成员"。|
@@ -110,8 +110,6 @@ Content-Length: 0
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/team-clone.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,14 +4,16 @@ description: 获取用户支持的区域设置和语言列表，用户的邮箱�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7898bc48d436c0d4b71b9c911802ecc348592245
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ac71510611a208efb370cda813f5404e9093daf6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539425"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337842"
 ---
 # <a name="outlookuser-supportedlanguages"></a>outlookUser: supportedLanguages
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户支持的区域设置和语言列表，用户的邮箱服务器上配置了此信息。
 
@@ -25,7 +27,7 @@ ms.locfileid: "32539425"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | User.Read、User.ReadBasic.All    |
 |委派（个人 Microsoft 帐户） | User.Read    |
-|应用程序 | User.Read.All |
+|Application | User.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +56,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
   "name": "user_supportedlanguages"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
+GET https://graph.microsoft.com/beta/me/outlook/supportedLanguages
 ```
 
 ##### <a name="response"></a>响应
@@ -70,7 +72,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.localeInfo)",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.localeInfo)",
   "value":[
     {
       "locale":"af-ZA",
@@ -90,10 +92,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: supportedLanguages",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

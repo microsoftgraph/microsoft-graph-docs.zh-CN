@@ -4,14 +4,16 @@ description: 表示添加到租户中特定域的 DNS 区域文件中的 CNAME �
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f270075556843625d1ec408f06be8ed4a065c831
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fb730cafd1689ab95563fa1e4dd6ea23962af903
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543187"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340685"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>domainDnsCnameRecord 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示添加到租户中特定域的 DNS 区域文件中的 CNAME 记录。 继承自[DomainDnsRecord](domaindnsrecord.md)实体。
 
@@ -24,7 +26,7 @@ ms.locfileid: "32543187"
 |:---------------|:--------|:----------|
 |canonicalName|String| CNAME 记录的规范名称。 用于配置 DNS 主机上的 CNAME 记录。 |
 |id|String| 分配给此实体的唯一标识符。 不可为 null 的只读|
-|isOptional|布尔值| 如果为 false, 则客户必须在 DNS 主机上配置 CNAME 记录, 才能使 Microsoft Online Services 在域中正常运行。 不可为 null |
+|isOptional|Boolean| 如果为 false, 则客户必须在 DNS 主机上配置 CNAME 记录, 才能使 Microsoft Online Services 在域中正常运行。 不可为 null |
 |label|String| 配置 DNS 主机上的 CNAME 记录的*别名/主机/名称*时使用的值。 |
 |recordType|String| DNS 记录的类型。 值始终为*CName*。 Key|
 |supportedService|String| 对此 CNAME 记录具有依赖关系的 Microsoft Online 服务或功能。</br></br>可以是下列值之一: **null**、 *Email*、 *Sharepoint*、 *EmailInternalRelayOnly*、 *OfficeCommunicationsOnline*、 *SharePointDefaultDomain*、 *FullRedelegation*、 *SharePointPublic*、 *OrgIdAuthentication*、 *Yammer*、 *Intune*|
@@ -39,7 +41,6 @@ ms.locfileid: "32543187"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -61,10 +62,13 @@ ms.locfileid: "32543187"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsCnameRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

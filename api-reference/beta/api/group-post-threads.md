@@ -4,14 +4,17 @@ description: '首先，通过创建线程来启动新的组对话。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: f320c465cee26ef5a91a821cd70b605f4056a9f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 61da26f38204ba6e0a11162b2454d5d3100d1cc0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502118"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328456"
 ---
 # <a name="create-conversation-thread"></a>创建对话线程
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 首先，通过创建线程来启动新的组对话。 
 
 创建新会话、会话线程，然后可在组中创建帖子。使用 [回复线程](conversationthread-reply.md) 或 [回复帖子](post-reply.md) 进一步发布到该线程。
@@ -52,7 +55,7 @@ POST /groups/{id}/threads
   "name": "create_conversationthread_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/threads
+POST https://graph.microsoft.com/beta/groups/{id}/threads
 Content-type: application/json
 
 {
@@ -71,9 +74,10 @@ Content-type: application/json
   }]
 }
 ```
+
 #### <a name="response"></a>响应
-下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +99,7 @@ Content-length: 419
   ],
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
+  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
@@ -112,10 +116,13 @@ Content-length: 419
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

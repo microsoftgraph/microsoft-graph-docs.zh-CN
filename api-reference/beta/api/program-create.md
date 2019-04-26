@@ -2,12 +2,12 @@
 title: 创建程序
 description: 在 "Azure AD access 评论" 功能中, 创建一个新的程序对象。
 localization_priority: Normal
-ms.openlocfilehash: a6e9ab300cf44a2f3973c468679af7fa48262680
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7ba329924761b1f43d0fc0fff02c6578b3a64a72
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538537"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337204"
 ---
 # <a name="create-program"></a>创建程序
 
@@ -19,9 +19,11 @@ ms.locfileid: "32538537"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | `ProgramControl.ReadWrite.All`.  登录用户还必须位于允许他们创建程序的目录角色中。 |
+|委派（工作或学校帐户）     | ProgramControl   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
+
+登录用户还必须位于允许他们创建程序的目录角色中。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -99,8 +101,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/program-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

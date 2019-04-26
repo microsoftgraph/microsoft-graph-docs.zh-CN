@@ -4,12 +4,12 @@ description: '包含共享项目的属性的复杂类型。 '
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 3fff669b2b337e9566cd41a7cd5eb5ab73a84944
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a2dc75ed2a62d7a67538bdef801bd97133fbd15
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551559"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333559"
 ---
 # <a name="sharingdetail-resource-type"></a>sharingDetail 资源类型
 
@@ -19,7 +19,13 @@ ms.locfileid: "32551559"
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.sharingDetail"
+}-->
 ```json
 {
   "sharedDateTime": "dateTimeOffset",
@@ -39,11 +45,3 @@ ms.locfileid: "32551559"
 | sharingType             | String        | 确定文档的共享方式, 可以是 "链接"、"附件"、"组"、"网站"。     |
 | sharedBy                | [insightIdentity](insights-insightidentity.md)      | 共享文档的用户。  |
 | sharingReference        | [resourceReference](insights-resourcereference.md)      |  |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-sharingdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

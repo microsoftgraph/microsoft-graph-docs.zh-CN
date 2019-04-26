@@ -2,12 +2,12 @@
 title: 配置邀请邮件
 description: 使用 invitedusermessageinfo 对象允许您配置邀请邮件。
 localization_priority: Normal
-ms.openlocfilehash: fa7ead6938ddfaca78322f56f4638c45d3f2df14
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 458efdade9b5cd7b538ffa3e217ec915dac93ad9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569968"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341342"
 ---
 # <a name="configuring-the-invitation-message"></a>配置邀请邮件
 
@@ -19,7 +19,7 @@ ms.locfileid: "32569968"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|ccRecipients|[收件人](recipient.md)|应将邀请邮件发送到的其他收件人。 目前仅支持1个额外的收件人。|
+|ccRecipients|[recipient](recipient.md) collection|应将邀请邮件发送到的其他收件人。 目前仅支持1个额外的收件人。|
 |customizedMessageBody|String|如果不需要默认邮件, 则为要发送的自定义邮件正文。|
 |messageLanguage|String|要在其中发送默认邮件的语言。 如果指定了 customizedMessageBody, 则忽略此属性, 并使用 customizedMessageBody 发送邮件。 语言格式应为 ISO 639。 默认值为 en-us。|
 
@@ -44,8 +44,6 @@ ms.locfileid: "32569968"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/invitedusermessageinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

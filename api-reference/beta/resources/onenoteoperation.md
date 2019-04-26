@@ -4,12 +4,12 @@ description: 特定的长时间运行的 OneNote 操作的状态。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 146a1b1d9a51cc541e06fd789f987a2d39dff48a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f336021221cd86a45f8c5683a9736cc6f838a913
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568860"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341416"
 ---
 # <a name="onenoteoperation-resource-type"></a>onenoteOperation 资源类型
 
@@ -51,7 +51,7 @@ ms.locfileid: "32568860"
 |lastActionDateTime| DateTimeOffset |操作的上一操作的时间。|
 |resourceId|string|资源 id。|
 |resourceLocation|string|对象的资源 URI。 例如, 复制的页或节的资源 URI。 |
-|status|string|操作的当前状态: `notstarted`、 `running`、、 `completed``failed` |
+|状态|string|操作的当前状态: `notstarted`、 `running`、、 `completed``failed` |
 |percentComplete|string|如果操作仍处于`running`状态, 则操作完成百分比为
 
 ## <a name="relationships"></a>关系

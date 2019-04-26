@@ -2,12 +2,12 @@
 title: 分配策略
 description: 将策略分配给应用程序或服务主体。
 localization_priority: Normal
-ms.openlocfilehash: 15ba6a42f5c5d39caf57b25ebafc5dd4bc7990fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c690aa85d7471aa6ef5da6d1281dfc679e63a09f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546785"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337542"
 ---
 # <a name="assign-policy"></a>分配策略
 
@@ -68,11 +68,3 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/policy-assign.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

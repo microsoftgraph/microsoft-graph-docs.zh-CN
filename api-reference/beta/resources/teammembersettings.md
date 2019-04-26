@@ -4,12 +4,12 @@ description: 用于配置成员是否可以在团队中执行某些操作（例�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: e6fae4d81ac005c1830d5bed9e05a4675e1a8ad0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 33f1930096ff63968db39e06ddec26c53ae8bcc9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558039"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341720"
 ---
 # <a name="teammembersettings-resource-type"></a>teamMemberSettings 资源类型
 
@@ -20,11 +20,11 @@ ms.locfileid: "32558039"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|布尔值|如果设置为 true, 则成员可以添加和更新频道。|
-|allowDeleteChannels|布尔值|如果设置为 true, 则成员可以删除频道。|
-|allowAddRemoveApps|布尔值|如果设置为 true, 则成员可以添加和删除应用。|
-|allowCreateUpdateRemoveTabs|布尔值|如果设置为 true, 则成员可以添加、更新和删除选项卡。 |
-|allowCreateUpdateRemoveConnectors|布尔值|如果设置为 true, 则成员可以添加、更新和删除连接器。|
+|allowCreateUpdateChannels|Boolean|如果设置为 true, 则成员可以添加和更新频道。|
+|allowDeleteChannels|Boolean|如果设置为 true, 则成员可以删除频道。|
+|allowAddRemoveApps|Boolean|如果设置为 true, 则成员可以添加和删除应用。|
+|allowCreateUpdateRemoveTabs|Boolean|如果设置为 true, 则成员可以添加、更新和删除选项卡。 |
+|allowCreateUpdateRemoveConnectors|Boolean|如果设置为 true, 则成员可以添加、更新和删除连接器。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -54,8 +54,6 @@ ms.locfileid: "32558039"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teammembersettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

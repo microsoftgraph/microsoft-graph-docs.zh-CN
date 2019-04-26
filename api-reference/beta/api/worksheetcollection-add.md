@@ -4,12 +4,12 @@ description: 。请在上面启用 ()。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0958f8f82502c92eff08ec80a7b116c1b0c4a5f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 51bc8f29d5d8fcc898fc2f1f8ebcf1800ebf1cc7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544054"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339605"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -46,7 +46,7 @@ POST /workbook/worksheets/
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Worksheet](../resources/worksheet.md) 对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[workbookWorksheet](../resources/workbookworksheet.md)对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -71,7 +71,7 @@ Content-length: 26
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet"
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -95,8 +95,6 @@ Content-length: 100
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/worksheetcollection-add.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

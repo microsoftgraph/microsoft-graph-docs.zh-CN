@@ -2,12 +2,12 @@
 title: synchronizationProgress 资源类型
 description: 表示 synchronizationJob 的进度向完成。
 localization_priority: Normal
-ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d05193c7c242dc3f890aba6f4fcec5a8badc087f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453955"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340006"
 ---
 # <a name="synchronizationprogress-resource-type"></a>synchronizationProgress 资源类型
 
@@ -17,12 +17,12 @@ ms.locfileid: "32453955"
 
 ## <a name="properties"></a>属性
 
-| 属性                              | 类型      | 描述    |
+| 属性                              | 类型      | 说明    |
 |:--------------------------------------|:----------|:---------------|
 |completedUnits|Int32|进度比率的分子;已处理的更改的单位数。|
 |progressObservationDateTime|DateTimeOffset|进度观察的时间, 作为从 UTC 的偏移量 (以分钟为单位)。|
 |totalUnits|Int32|进度比率的分母;要处理的用于完成同步的更改的多个单元。|
-|units|字符串|单位的可选说明。|
+|units|String|单位的可选说明。|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "32453955"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.synchronizationStatus"
+  "@odata.type": "microsoft.graph.synchronizationProgress"
 }-->
 
 ```json
@@ -57,8 +57,6 @@ ms.locfileid: "32453955"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationprogress.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

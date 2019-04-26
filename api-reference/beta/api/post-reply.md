@@ -4,12 +4,12 @@ description: '在组对话中答复帖子，并向指定线程中添加新帖子
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: dfdc25b3e99c26d266631a331d7d58c73042e64b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37493e02aa4488235e40fa5aca1ad1f7bfb177a9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538577"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337422"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -135,8 +135,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/post-reply.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

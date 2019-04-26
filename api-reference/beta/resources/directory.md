@@ -4,12 +4,12 @@ description: . 已删除的项目将保留最多 30 天的还原时间。 30 天
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 22c5b959f87b6178fa406bc4fd5d00ad52e5cf55
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 92235775143b3f8341724340e4ad301a40571adb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535241"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340873"
 ---
 # <a name="directory-resource-type-deleted-items"></a>目录资源类型（已删除的项目）
 
@@ -25,9 +25,9 @@ ms.locfileid: "32535241"
 |:---------------|:------------|:------------|
 |[Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | 获取已删除项目的属性。 |
 |[Restore deleted item](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| 还原最近删除的项目。 |
-|[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) collection| 获取最近删除的项目列表。 |
+|[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) 集合| 获取最近删除的项目列表。 |
 |[Permanently delete an item](../api/directory-deleteditems-delete.md) | 无 | 永久删除项目。 |
-|[列出用户拥有的已删除项目](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | 列出用户拥有的目录项。 |
+|[列出用户拥有的已删除项目](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) 集合 | 列出用户拥有的目录项。 |
 
 ## <a name="properties"></a>属性
 | 属性   | 类型 |说明|
@@ -44,6 +44,7 @@ ms.locfileid: "32535241"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -65,8 +66,6 @@ ms.locfileid: "32535241"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directory.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

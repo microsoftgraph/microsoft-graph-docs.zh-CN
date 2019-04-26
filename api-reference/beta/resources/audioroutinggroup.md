@@ -4,12 +4,12 @@ description: 音频路由组在多方对话中的参与者之间存储专用音�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5139b9f1f0c56b93848868c0d76ebf3051a148c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543999"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328249"
 ---
 # <a name="audioroutinggroup-resource-type"></a>audioRoutingGroup 资源类型
 
@@ -31,10 +31,10 @@ ms.locfileid: "32543999"
 
 | 属性      | 类型              | 说明                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | 只读。 由服务器生成。                                         |
-| 接收器     | String 集合 | 接收参与者 id 的列表。                                   |
-| routingMode   | String            | 路由组模式。  可取值为：`oneToOne`、`multicast`。   |
-| 源       | String 集合 | 源参与者 id 的列表。                                      |
+| id            | string            | 只读。 由服务器生成。                                         |
+| 接收器     | collection(string) | 接收参与者 id 的列表。                                   |
+| routingMode   | string            | 路由组模式。  可取值为：`oneToOne`、`multicast`。   |
+| 源       | collection(string) | 源参与者 id 的列表。                                      |
 
 > **注意:** 路由模式确定对源和接收器的限制。 仅支持以下路由组。
 > - `oneToOne`-源和接收器每个只有一个参与者。
@@ -58,10 +58,10 @@ ms.locfileid: "32543999"
 }-->
 ```json
 {
-  "id": "String (identifier)",
-  "receivers": [ "String" ],
+  "id": "string (identifier)",
+  "receivers": [ "string" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "String" ]
+  "sources": [ "string" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -73,8 +73,6 @@ ms.locfileid: "32543999"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/audioroutinggroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,15 +1,15 @@
 ---
 title: managedAppRegistration 资源类型
-description: ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
+description: 'ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。 '
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3be91dd094258f0bf998521c058f1c62659fbcc8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4d6862af09e4bbe1b22d183b8d10c56ff2782f51
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581028"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341727"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
@@ -45,7 +45,7 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)集合|标记应用注册的零个或多个原因。 例如， 在取得 root 权限的设备上运行的应用|
 |userId|String|此应用注册所属的用户 ID。|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|应用包标识符|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系
@@ -60,12 +60,11 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.managedAppRegistration"
-}
--->
+  "@odata.type": "microsoft.graph.managedAppRegistration",
+  "abstract": true
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.managedAppRegistration",
   "createdDateTime": "String (timestamp)",
   "lastSyncDateTime": "String (timestamp)",
   "applicationVersion": "String",
@@ -89,8 +88,3 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   "version": "String"
 }
 ```
-
-
-
-
-

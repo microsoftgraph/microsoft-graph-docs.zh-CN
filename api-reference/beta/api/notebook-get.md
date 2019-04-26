@@ -4,14 +4,16 @@ description: 检索笔记本对象的属性和关系。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: af8d358a7f05ed60b48e6df6a3cc60319e009e34
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4f45ead1b5cd603e6f56597b965e45182e0e3dfd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540327"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338216"
 ---
 # <a name="get-notebook"></a>获取笔记本
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[笔记本](../resources/notebook.md)对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -56,7 +58,7 @@ GET /sites/{id}/onenote/notebooks/{id}
   "name": "get_notebook"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}
+GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -74,6 +76,7 @@ Content-length: 284
   "isDefault": true,
   "userRole": {
   },
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "isShared": true,
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -90,10 +93,13 @@ Content-length: 284
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get notebook",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,14 +4,16 @@ description: 使用 URL 路径检索笔记本对象的属性和关系。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: b5067f50b1e03c124af8323709fc7b3f70af871b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 630a5aec78963cd16468ca46393df53bd46697d9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540178"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333132"
 ---
 # <a name="notebook-getnotebookfromweburl"></a>笔记本: getNotebookFromWebUrl
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用其 URL 路径检索[笔记本](../resources/notebook.md)对象的属性和关系。
 
@@ -56,7 +58,7 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
   "name": "notebook_fromweburl"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/GetNotebookFromWebUrl
+POST https://graph.microsoft.com/beta/me/onenote/notebooks/GetNotebookFromWebUrl
 Content-type: application/json
 
 {"webUrl":"webUrl value"}

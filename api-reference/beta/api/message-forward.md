@@ -4,12 +4,12 @@ description: '转发邮件、添加注释或修改任何可更新的属性  '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ed3d51c28e6fe0404b5cb26fb17f6d8ed3bba212
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 29835895b62049775edd2bdca19f87468a91d575
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540473"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338521"
 ---
 # <a name="message-forward"></a>邮件：转发
 
@@ -20,7 +20,7 @@ ms.locfileid: "32540473"
 
 或者, 您可以先[创建一个草稿转发邮件](../api/message-createforward.md), 以包含注释或更新任何邮件属性, 然后[发送](../api/message-send.md)草稿邮件。
 
-**注意**
+**备注**
 
 - 您可以指定`message`参数的注释或**body**属性。 同时指定这两个将返回 HTTP 400 错误的请求错误。
 - 您必须指定`toRecipients`参数或`message`参数的**toRecipients**属性。 同时指定或指定两者均不会返回 HTTP 400 错误请求错误。
@@ -108,8 +108,6 @@ HTTP/1.1 202 Accepted
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/message-forward.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

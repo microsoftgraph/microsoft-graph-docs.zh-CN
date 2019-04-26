@@ -2,15 +2,17 @@
 title: freeBusyError 资源类型
 description: 表示尝试获取用户、通讯组列表或资源可用性的错误信息。
 localization_priority: Normal
-ms.openlocfilehash: e2c755b51e72adf3ff4efa4de5c9438e70d701e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cb83c99cf52a562bc10244143785313fe3a6c149
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547494"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340173"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError 资源类型
 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+ 
 表示尝试获取用户、通讯组列表或资源可用性的错误信息。
 
 ## <a name="properties"></a>属性
@@ -48,6 +50,7 @@ ms.locfileid: "32547494"
   "description": "freeBusyError resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": []
 }
 -->

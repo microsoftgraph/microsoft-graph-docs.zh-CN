@@ -2,12 +2,12 @@
 title: 列出分配了特定策略的应用程序和服务主体
 description: 使用分配的指定策略检索应用程序和服务主体对象。
 localization_priority: Normal
-ms.openlocfilehash: d7449428216a2e68d9ab8bb8399ca0e8dc4b72fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c58822e5e3c90f5774721e425af62b40422d3db2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538748"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337383"
 ---
 # <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>列出分配了特定策略的应用程序和服务主体
 
@@ -39,7 +39,7 @@ GET /policies/{id}/appliesTo
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在`200 OK`响应正文中返回响应代码和[应用程序](../resources/application.md)和[服务主体](../resources/serviceprincipal.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[application](../resources/application.md)和[servicePrincipal](../resources/serviceprincipal.md)对象。 如果失败，将返回 `4xx` 错误并显示具体详细信息。
 
 ## <a name="example"></a>示例
 下面的示例检索分配了特定策略的应用程序和服务主体。
@@ -75,11 +75,3 @@ Content-Type: application/json
     ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/policy-list-appliesto.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

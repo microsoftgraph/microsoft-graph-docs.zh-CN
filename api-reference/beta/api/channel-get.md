@@ -2,18 +2,18 @@
 title: 获取频道
 description: 检索通道的属性和关系。
 author: nkramer
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 51a1d565438deca2c7202b1be8f18b52f1c875f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e7e6bf9afafe065ef4172e5913588d11986d9b76
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456609"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328053"
 ---
 # <a name="get-channel"></a>获取频道
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[通道](../resources/channel.md)的属性和关系。
 
@@ -24,7 +24,7 @@ ms.locfileid: "32456609"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Group.Read.All、Group.ReadWrite.All    |
+|应用程序 | Group.Read.All、Group.ReadWrite.All    |
 
 > **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的团队。
 
@@ -58,7 +58,7 @@ GET /teams/{id}/channels/{id}
   "name": "get_channel"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
@@ -83,10 +83,13 @@ Content-length: 201
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

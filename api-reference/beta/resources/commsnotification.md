@@ -4,12 +4,12 @@ description: 通信服务器发布的用于通知更改的通信通知基类型�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2372720976b5d06ffe49c00068625bdb92048674
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 20b99493821cfb29898ff0c9517cceecba1d389c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460672"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341373"
 ---
 # <a name="commsnotification-resource-type"></a>commsNotification 资源类型
 
@@ -20,8 +20,8 @@ ms.locfileid: "32460672"
 ## <a name="properties"></a>属性
 | 属性       | 类型    | 说明                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | 字符串  | 可取值为：`created`、`updated`、`deleted`。      |
-| 资源       | 字符串  | 已更改的资源的 URI。                      |
+| changeType     | String  | 可取值为：`created`、`updated`、`deleted`。      |
+| resource       | String  | 已更改的资源的 URI。                      |
 
 > **注意:**`resourceData`可用作其他数据。 它是一个实体或集合 (实体), 具体取决于通知中打包的更改的数量。
 
@@ -100,8 +100,6 @@ ms.locfileid: "32460672"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/commsnotification.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

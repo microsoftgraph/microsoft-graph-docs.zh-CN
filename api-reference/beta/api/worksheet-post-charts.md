@@ -4,12 +4,12 @@ description: 使用此 API 创建新图表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 27bd441e6002d69cf94f79b8e3de40f9614ad6a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 42321f3c55522fa5abf8365badf5e7a06edcf19a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544034"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339583"
 ---
 # <a name="create-chart"></a>创建图表
 
@@ -38,11 +38,11 @@ POST /workbook/worksheets/{id|name}/charts/
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [Chart](../resources/chart.md) 对象的 JSON 表示形式。
+在请求正文中, 提供[workbookChart](../resources/workbookchart.md)对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [Chart](../resources/chart.md) 对象。
+如果成功, 此方法在`201 Created`响应正文中返回响应代码和[workbookChart](../resources/workbookchart.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -62,13 +62,13 @@ Content-length: 52
   "left": 99
 }
 ```
-在请求正文中，提供 [Chart](../resources/chart.md) 对象的 JSON 表示形式。
+在请求正文中, 提供[workbookChart](../resources/workbookchart.md)对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -91,8 +91,6 @@ Content-length: 52
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/worksheet-post-charts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: '全部在一个 **reply** 调用中回复邮件的发件人、添�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6461d9735459ff9cf956820b00bb61a4d42d1ec0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c745cfaab60aae9395e2b8d720852a1d2b2b2a39
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540420"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333196"
 ---
 # <a name="message-reply"></a>消息：答复
 
@@ -19,7 +19,7 @@ ms.locfileid: "32540420"
 
 或者, 您可以先[创建草稿答复邮件](../api/message-createreply.md)以包含注释或更新任何邮件属性, 然后[发送](../api/message-send.md)回复。
 
-**注意**
+**备注**
 
 - 您可以指定`message`参数的注释或**body**属性。 同时指定这两个将返回 HTTP 400 错误的请求错误。
 - 如果在原始邮件中指定了**replyTo**属性 (根据 Internet 邮件格式 ([RFC 2822](https://www.rfc-editor.org/info/rfc2822))), 则应将答复发送给**replyTo**中的收件人, 而不是发**件**人属性中的收件人。 
@@ -112,8 +112,6 @@ HTTP/1.1 201 Created
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/message-reply.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

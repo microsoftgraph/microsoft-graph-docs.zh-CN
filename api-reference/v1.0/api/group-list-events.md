@@ -1,15 +1,15 @@
 ---
 title: 列出事件
-description: 检索 event 对象列表。
+description: 检索事件对象列表。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.openlocfilehash: 3538eb955f20d453eaf1bd7f2c77a07a932c62de
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932544"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583534"
 ---
 # <a name="list-events"></a>列出事件
 检索 [event](../resources/event.md) 对象列表.

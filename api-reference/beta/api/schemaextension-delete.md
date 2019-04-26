@@ -3,12 +3,12 @@ title: 删除 schemaExtension
 description: 删除架构扩展定义。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 2a9bdca6459f19c2d397914a2c4818a2331d68c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 501fe01eb43c19516be0b8532f22cea8880781d7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537870"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336108"
 ---
 # <a name="delete-schemaextension"></a>删除 schemaExtension
 
@@ -81,8 +81,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/schemaextension-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

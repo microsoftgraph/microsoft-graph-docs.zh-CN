@@ -1,13 +1,13 @@
 ---
 title: profilePhoto 资源类型
-description: 从 Exchange Online 访问的用户、组或 Outlook 联系人的个人资料照片。它是不以 base-64 编码的二进制数据。
+description: 从 Exchange Online 访问的用户、组或 Outlook 联系人的个人资料照片。 它是不以 base-64 编码的二进制数据。
 localization_priority: Priority
 ms.openlocfilehash: b1901928a97356b2a9808a446d34981fd74bf456
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876564"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579865"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto 资源类型
 从 Exchange Online 访问的用户、组或 Outlook 联系人的个人资料照片。它是不以 base-64 编码的二进制数据。
@@ -24,11 +24,11 @@ Exchange Online 支持的 HD 照片大小如下所示：'48x48'、'64x64'、'96x
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|ID|string|只读。|
+|id|string|只读。|
 |height|int32|照片的高度。只读。|
 |width|int32|照片的宽度。只读。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 

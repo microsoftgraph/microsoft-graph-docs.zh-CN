@@ -2,12 +2,12 @@
 title: dateTimeTimeZone 资源类型
 description: 介绍某个时间点的日期、时间和时区。
 localization_priority: Normal
-ms.openlocfilehash: ee5359c0ababad2a4f785d17a02ac5bb618d2681
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4bf62081d190e3af031d305c7db7f64d606926b6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535272"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340957"
 ---
 # <a name="datetimetimezone-resource-type"></a>dateTimeTimeZone 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "32535272"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|dateTime|String|日期和时间组合表示形式的单个时间点 (`{date}T{time}`)。 例如, "2019-04-16T09:00:00"。|
+|dateTime|字符串|日期和时间组合表示形式的单个时间点 (`{date}T{time}`)。 例如, "2019-04-16T09:00:00"。|
 |timeZone|字符串|时区名称, 如下所述。|
 
 可以将**时区**属性设置为 Windows 支持的任意时区, 以及以下时区名称。
@@ -250,8 +250,6 @@ Etc/GMT-12
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/datetimetimezone.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

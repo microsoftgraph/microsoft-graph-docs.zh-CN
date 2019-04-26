@@ -2,12 +2,12 @@
 title: fileAttachment 资源类型
 description: 附加到事件的文件 (如文本文件或 Word 文档)
 localization_priority: Normal
-ms.openlocfilehash: 7d9f92565e38aaf418691480b7f8f3187c57647c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d4c33619c7521d980c1c6c51fd7158390aec47b1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506361"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340220"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 
@@ -27,15 +27,15 @@ ms.locfileid: "32506361"
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |读取 fileattachment 对象的属性和关系。|
-|[Delete](../api/attachment-delete.md) | 无 |删除 fileAttachment 对象。 |
+|[删除](../api/attachment-delete.md) | 无 |删除 fileAttachment 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentBytes|Binary|文件的 Base64 编码内容。|
-|contentId|字符串|获取 Exchange 存储中的附件 ID。|
+|contentId|String|获取 Exchange 存储中的附件 ID。|
 |contentLocation|String|请勿使用此属性，因为它不受支持。|
-|contentType|字符串|附件的内容类型。|
+|contentType|String|附件的内容类型。|
 |id|String|附件 ID。|
 |isInline|Boolean|如果是内嵌附件则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的日期和时间。|
@@ -82,8 +82,6 @@ ms.locfileid: "32506361"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/fileattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

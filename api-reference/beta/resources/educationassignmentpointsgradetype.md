@@ -4,12 +4,12 @@ description: 与**工作分配. 评分**属性一起使用。 这是 educationAs
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 567bff38f8a20456dffffdd91775a1e32852fe20
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 61e6e425730685d4447875cdb074526e7ebc0a17
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543084"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334428"
 ---
 # <a name="educationassignmentpointsgradetype-resource-type"></a>educationAssignmentPointsGradeType 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "32543084"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|maxPoints|单倍行距| 此工作分配可能的最大分数。  |
+|maxPoints|单精度| 此工作分配可能的最大分数。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -52,8 +52,6 @@ ms.locfileid: "32543084"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationassignmentpointsgradetype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

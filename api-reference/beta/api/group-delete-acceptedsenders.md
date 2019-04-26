@@ -1,21 +1,21 @@
 ---
 title: 删除 acceptedSender
-description: '从 acceptedSenders 列表中删除用户或组。 '
+description: '从接受的发件人列表中删除用户或组。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a3406c028990b7b5989036f4173cf86f257b4f03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 22e81f8bbbb497b8209e6faa744a54b24029391c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503083"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329740"
 ---
 # <a name="remove-acceptedsender"></a>删除 acceptedSender
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 acceptedSenders 列表中删除用户或组。 
+从指定组的 "接受-发件人" 列表中删除用户或组。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "32503083"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
+DELETE /groups/{id}/acceptedSenders/$ref?$id={id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -43,25 +43,47 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=<id>
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
+### <a name="example-1-remove-a-user-from-the-accepted-senders-list-for-the-group"></a>示例 1: 从组的接受-发件人列表中删除用户。
 #### <a name="request"></a>请求
-下面展示了几个示例请求。
 
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "remove_user_from_acceptedsenderslist_of_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
-
-DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
+DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{user-id}
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 
 <!-- {
   "blockType": "response",
+  "name": "remove_user_from_acceptedsenderslist_of_group",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-remove-a-group-from-the-accepted-senders-list-for-the-group"></a>示例 2: 从组的 "接受-发件人" 列表中删除组。
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "request",
+  "name": "remove_group_from_acceptedsenderslist_of_group"
+}-->
+```http
+DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{other-group-id}
+```
+
+#### <a name="response"></a>响应
+下面是一个响应示例。 
+
+<!-- {
+  "blockType": "response",
+  "name": "remove_group_from_acceptedsenderslist_of_group",
   "truncated": true
 } -->
 ```http
@@ -73,12 +95,10 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create acceptedSender",
+  "description": "Remove acceptedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-delete-acceptedsenders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

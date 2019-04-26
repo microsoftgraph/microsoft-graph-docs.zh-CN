@@ -2,12 +2,12 @@
 title: 取消 privilegedRoleAssignmentRequest
 description: 取消 privilegedRoleAssignmentRequest。
 localization_priority: Normal
-ms.openlocfilehash: 0cca3f33e6e027c18e24862dc4736006058f8e41
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 649ec481815ccb4ce903e51ecb98ccf99cdfa77f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546526"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337221"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>取消 privilegedRoleAssignmentRequest
 
@@ -40,7 +40,7 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法返回 `200 Ok` 响应代码。 它返回 [privilegedRoleAssignmentRequest] (.。响应正文中的/resources/privilegedRoleAssignmentRequest.md)。
+如果成功，此方法返回 `200 Ok` 响应代码。 它在响应正文中返回[privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md) 。
 
 ### <a name="error-codes"></a>错误代码
 此 API 返回标准的 HTTP 错误代码。 此外, 它还返回下表中列出的自定义错误代码。
@@ -60,14 +60,14 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
   "name": "cancel_privilegedRoleAssignmentRequests"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests('7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee')/cancel
+POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee/cancel
 ```
 
 ##### <a name="response"></a>响应
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequests"
+  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -92,7 +92,7 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self"，
+    "userId": "Self",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
@@ -106,8 +106,6 @@ Content-length: 304
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-cancel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: 重定向传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a6a926aa082cc35896d11ec4124091b0d2c838c0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9dcb8b6fd83f431bf5048bcc42b0de5d1ff55110
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461268"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328013"
 ---
 # <a name="call-redirect"></a>呼叫: 重定向
 
@@ -44,10 +44,10 @@ POST /applications/{id}/calls/{id}/redirect
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合|重定向操作的目标参与者。|
-|targetDisposition|字符串|可能的值为:`default`|
+|targetDisposition|String|可能的值为:`default`|
 |timeout|Int32|重定向操作的超时时间 (秒)。|
-|maskCallee|布尔|指示是否屏蔽被叫方。|
-|maskCaller|布尔|指示是否屏蔽调用方。|
+|maskCallee|Boolean|指示是否屏蔽被叫方。|
+|maskCaller|Boolean|指示是否屏蔽调用方。|
 
 ## <a name="response"></a>响应
 返回`202 Accepted`响应代码
@@ -267,8 +267,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/call-redirect.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

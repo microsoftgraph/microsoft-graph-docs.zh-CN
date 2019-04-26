@@ -4,12 +4,12 @@ ms.date: 09/10/2017
 title: 音频
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f526fc92c766f3ae91831d5026a31e3bd69b4b8b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535590"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339082"
 ---
 # <a name="audio-facet"></a>Audio Facet
 
@@ -57,7 +57,7 @@ ms.locfileid: "32535590"
 | **discCount**         | Int32   | 此专辑中的光盘总数。                             |
 | **duration**          | Int64   | 此音频文件的持续时间（以毫秒为单位）                |
 | **genre**             | string  | 此音频文件的流派。                                        |
-| **hasDrm**            | 布尔 | 指明此文件是否受数字版权管理的保护。   |
+| **hasDrm**            | boolean | 指明此文件是否受数字版权管理的保护。   |
 | **isVariableBitrate** | boolean | 指明此文件是否已经过可变比特率编码。            |
 | **title**             | string  | 此音频文件的标题。                                         |
 | **track**             | Int32   | 此音频文件在原始光盘上的曲目编号。    |
@@ -77,8 +77,6 @@ ms.locfileid: "32535590"
   "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
   "tocPath": "Facets/Audio",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/audio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

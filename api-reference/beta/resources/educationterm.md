@@ -4,12 +4,12 @@ description: 一个学期。 它表示学年的指定部分。 在 educationClas
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b5cfe363922fe466eef7a7333ce81249311b4063
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e98bb1dc059439dfad927db033759ea54d240716
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506865"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340585"
 ---
 # <a name="educationterm-resource-type"></a>educationTerm 资源类型
 
@@ -55,8 +55,6 @@ ms.locfileid: "32506865"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationterm.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

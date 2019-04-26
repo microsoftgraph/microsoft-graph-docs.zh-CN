@@ -1,17 +1,17 @@
 ---
-title: 'WorksheetProtection: protect'
-description: 保护工作表。如果工作表处于受保护状态，则会引发它。
+title: 'workbookWorksheetProtection: 保护'
+description: 保护工作表。 如果工作表处于受保护状态，则会引发它。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 52c7b9a6d3437417e6b8d527d4625e64a9d91cc8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b10fa4454b5937c2548e023adfd34900a16c8c95
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544031"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339368"
 ---
-# <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
+# <a name="workbookworksheetprotection-protect"></a>workbookWorksheetProtection: 保护
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ POST /workbook/worksheets/{id|name}/protection/protect
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|选项|WorksheetProtectionOptions|可选。工作表保护选项。|
+|选项|[workbookWorksheetProtectionOptions](../resources/workbookworksheetprotectionoptions.md)|可选。工作表保护选项。|
 
 ## <a name="response"></a>响应
 
@@ -54,7 +54,7 @@ POST /workbook/worksheets/{id|name}/protection/protect
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
-  "name": "worksheetprotection_protect"
+  "name": "workbookworksheetprotection_protect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
@@ -94,12 +94,10 @@ HTTP/1.1 200 OK
 <!--
 {
   "type": "#page.annotation",
-  "description": "WorksheetProtection: protect",
+  "description": "workbookWorksheetProtection: protect",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/worksheetprotection-protect.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

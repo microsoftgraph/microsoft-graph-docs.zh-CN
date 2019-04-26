@@ -4,14 +4,17 @@ description: 表示合作伙伴租户与客户租户之间的现有合作关系�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6309dfc370d414ccb66065fe4048d7cece51f018
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0d8da7c20705796cdb612ad1a24c4d03ce160447
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535425"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341210"
 ---
 # <a name="contract-resource-type"></a>约定资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示合作伙伴租户与客户租户之间的现有合作关系。
 
 > **重要说明:** 仅存在于合作伙伴租户中。 合作伙伴租户是属于 microsoft[云解决方案提供商](https://partnercenter.microsoft.com/en-us/partner/programs)、Office 365 联合或 microsoft Advisor 合作伙伴计划一部分的 microsoft 合作伙伴的 Azure AD 租户。
@@ -39,13 +42,12 @@ ms.locfileid: "32535425"
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "openType": true,
-  "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.directoryObject",
-  "@odata.type": "microsoft.graph.contract"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.Contract"
 }-->
 
 ```json
@@ -61,10 +63,13 @@ ms.locfileid: "32535425"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Contract resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

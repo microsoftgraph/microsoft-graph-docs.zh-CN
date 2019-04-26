@@ -2,12 +2,12 @@
 title: 'synchronizationJob: validateCredentials'
 description: 验证凭据在租户中是否有效。
 localization_priority: Normal
-ms.openlocfilehash: 122d673e89f15697b2fdeefbcefb516cf9ad89ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4be9317f753865fdb956e58566ec1302d1542de5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537117"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330082"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -40,7 +40,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|useSavedCredentials|布尔值|时`true`, 将`credentials`忽略该参数, 而改为验证以前保存的凭据 (如果有)。 |
+|useSavedCredentials|Boolean|时`true`, 将`credentials`忽略该参数, 而改为验证以前保存的凭据 (如果有)。 |
 |凭据|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)集合|要验证的凭据。 当`useSavedCredentials`参数为`true`时忽略。|
 
 ## <a name="response"></a>响应
@@ -68,7 +68,7 @@ Content-length: 218
 ```
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,8 +87,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationjob-validatecredentials.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,16 +2,24 @@
 title: addIn 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
-ms.openlocfilehash: d2a63d4428cbb3bcc7cc169711eb6cc6b9e00a6f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 777b9e2eac1ec4052fae30b13d09aaf91a808375
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535774"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339121"
 ---
 # <a name="addin-resource-type"></a>addIn 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+
+## <a name="properties"></a>属性
+| 属性     | 类型   |说明|
+|:---------------|:--------|:----------|
+|id|containerparentjob||
+|properties|[keyValue](keyvalue.md) 集合||
+|类型|string||
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -28,17 +36,11 @@ ms.locfileid: "32535774"
 ```json
 {
   "id": "guid",
-  "properties": [{"@odata.type": "microsoft.graph.keyvalue"}],
+  "properties": [{"@odata.type": "microsoft.graph.keyValue"}],
   "type": "string"
 }
 
 ```
-## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
-|:---------------|:--------|:----------|
-|id|containerparentjob||
-|properties|[keyValue](keyvalue.md) 集合||
-|类型|字符串||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -49,8 +51,6 @@ ms.locfileid: "32535774"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/addin.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

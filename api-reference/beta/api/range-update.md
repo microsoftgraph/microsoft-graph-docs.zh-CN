@@ -4,12 +4,12 @@ description: 更新 range 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f4a1cce20e8d11879dc4fc11b55feee5b02cfb49
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 33aafe25a7537a6c392409f98677ab27dd9a50c6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538439"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337003"
 ---
 # <a name="update-range"></a>更新区域
 
@@ -28,7 +28,7 @@ ms.locfileid: "32538439"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range
+PATCH /workbook/names/{name}/range
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
@@ -48,12 +48,12 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 |formulasLocal|Json|表示采用 A1 样式表示法的公式，使用用户的语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中将变为 "=SUMME(A1; 1,5)"。|
 |formulasR1C1|Json|表示采用 R1C1 样式表示法的公式。|
 |numberFormat|Json|表示 Excel 中指定单元格的数字格式代码。|
-|rowHidden|布尔|表示当前区域中的所有行是否隐藏。|
+|rowHidden|boolean|表示当前区域中的所有行是否隐藏。|
 |values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [Range](../resources/range.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[workbookRange](../resources/workbookrange.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。该示例更新区域 - 值、数字格式和公式。`null` 输入是为了指示 API 忽略单元格的特定输入。值、数字格式和公式可以独立更新，也可以在同一 API 调用中共同更新。 
@@ -63,13 +63,13 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range
   "name": "update_range"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets('sheet1')/range(address='A1:B2')
+PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/sheet1/range(address='A1:B2')
 Content-type: application/json
 Content-length: 169
 
 {
 "values" : [["Hello", "100"],["1/1/2016", null]],
-"formula" : [[null, null], [null, "=B1*2"]],
+"formulas" : [[null, null], [null, "=B1*2"]],
 "numberFormat" : [[null,null], ["m-ddd", null]]
 }
 ```
@@ -78,7 +78,7 @@ Content-length: 169
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -104,8 +104,6 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/range-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

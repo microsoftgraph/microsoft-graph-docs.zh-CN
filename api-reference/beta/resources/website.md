@@ -2,12 +2,12 @@
 title: 网站资源类型
 description: 代表网站。
 localization_priority: Normal
-ms.openlocfilehash: 3f8aadaf0a6b6beb2394664f04195267062dc9ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b44fcacf77f3b2afb5cdc9dfea2340d0a1fc1cd5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454042"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339606"
 ---
 # <a name="website-resource-type"></a>网站资源类型
 
@@ -17,9 +17,9 @@ ms.locfileid: "32454042"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|类型|字符串| 可取值为：`other`、`home`、`work`、`blog` 或 `profile`。|
+|type|String| 可取值为：`other`、`home`、`work`、`blog`、`profile`。|
 |address|string|网站的 URL。|
 |displayName|string|网站的显示名称。|
 
@@ -53,8 +53,6 @@ ms.locfileid: "32454042"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/website.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

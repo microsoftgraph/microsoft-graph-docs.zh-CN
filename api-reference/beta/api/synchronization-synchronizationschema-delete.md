@@ -2,12 +2,12 @@
 title: 删除 synchronizationSchema
 description: 删除自定义架构并将架构重置为默认配置。 如果在模板的上下文中删除了架构, 它会将架构重置为与模板关联的默认架构`factoryTag`。
 localization_priority: Normal
-ms.openlocfilehash: cb4c6295fe962ea9570da19b9b6ee8190b2024f5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0871de0ba5b48784e47fd5cc8d3ac890ab23748b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545338"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330611"
 ---
 # <a name="delete-synchronizationschema"></a>删除 synchronizationSchema
 
@@ -73,8 +73,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationschema-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

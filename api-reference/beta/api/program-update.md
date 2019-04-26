@@ -2,12 +2,12 @@
 title: 更新程序
 description: 在 "Azure AD access 评论" 功能中, 更新现有的程序对象。
 localization_priority: Normal
-ms.openlocfilehash: 75562aac5a7b3f3aaef0c8a1251d32a7728813aa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1097ae014537f285238a9ca7f7f231513aa578e0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538544"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337157"
 ---
 # <a name="update-program"></a>更新程序
 
@@ -19,9 +19,11 @@ ms.locfileid: "32538544"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | `ProgramControl.ReadWrite.All`.  登录用户还必须位于允许其更新程序的目录角色中。 |
+|委派（工作或学校帐户）     | ProgramControl   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
+
+登录用户还必须位于允许他们更新程序的目录角色中。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +58,7 @@ PATCH /programs('{programId}')
   "name": "update_program"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/programs('7e59d237-2fb0-4e5d-b7bb-d4f9f9129213')
+PATCH https://graph.microsoft.com/beta/programs/7e59d237-2fb0-4e5d-b7bb-d4f9f9129213
 Content-type: application/json
 
 {
@@ -96,8 +98,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/program-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

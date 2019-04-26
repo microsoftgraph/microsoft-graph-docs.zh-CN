@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: eac07b5d3e81e3e3098fb63bbf0be838c7d51b2c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537046"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330059"
 ---
 # <a name="delete-threat-intelligence-indicator"></a>删除威胁情报指标
 
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/security/tiIndicators/{id}
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",

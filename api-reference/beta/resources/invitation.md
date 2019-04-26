@@ -4,12 +4,12 @@ description: '使用邀请管理器来创建一个邀请，以将外部用户添
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6f303e55735c24edc46cb7107d9541c4b20c479a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 524e97befcdc08fcf216255ee37f981a5f2b54ac
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570094"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341370"
 ---
 # <a name="invitation-manager"></a>邀请管理器
 
@@ -52,9 +52,20 @@ ms.locfileid: "32570094"
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
+<!-- 
+{ 
+    "blockType": "resource",
+    "keyProperty":"id",
+    "@odata.type": "microsoft.graph.invitation", 
+    "optionalProperties": [
+        "invitedUser"
+     ],
+    "baseType": "microsoft.graph.entity"
+} 
+-->
 ```json
 {
+  "id": "string",
   "invitedUserDisplayName": "string",
   "invitedUserEmailAddress": "string",
   "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
@@ -62,8 +73,8 @@ ms.locfileid: "32570094"
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
-
-  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
+  "invitedUser": {"@odata.type": "microsoft.graph.user"},
+  "invitedUserType": "string"
 }
 ```
 
@@ -77,8 +88,6 @@ ms.locfileid: "32570094"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/invitation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

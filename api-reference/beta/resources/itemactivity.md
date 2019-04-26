@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivity
 localization_priority: Normal
-ms.openlocfilehash: 5e2be549c3e3e9e799449679b605577ecd782a94
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcb68f94574512fd7e952db036a86f242652851d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561885"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339852"
 ---
 # <a name="itemactivity-resource-type"></a>ItemActivity 资源类型
 
@@ -109,8 +109,6 @@ ms.locfileid: "32561885"
   "keywords": "activities,activity,action",
   "section": "documentation",
   "tocPath": "Resources/ItemActivity",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemactivity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: 更新事件对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b3f101c14a69c6dc2b3687e9d4a1509e6ac7a531
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec274fb0e850a3a18b3722e27bbe394986459cbb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464032"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329795"
 ---
 # <a name="update-event"></a>更新事件
 
@@ -48,7 +48,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}。必需。 |
+| Authorization  | 字符串  | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
@@ -57,17 +57,17 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |:---------------|:--------|:------------|
 | attendees|与会者|事件的与会者集合。|
 | body|ItemBody|与事件相关联的邮件正文。|
-| categories|字符串|与事件相关联的类别。|
+| categories|String|与事件相关联的类别。|
 | end|DateTimeTimeZone|事件的结束日期和时间。<br/><br/>默认情况下，结束时间使用 UTC 格式。可以在 EndTimeZone 中指定可选的时区，用该时区表示结束时间并包括与 UTC 的时间偏移量。请注意，如果使用 EndTimeZone，必须为 StartTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 9:34：“2015-02-25T21:34:00-08:00”。 |
-| importance|字符串|事件的重要性。 可取值为：`low`、`normal`、`high`。|
-| isAllDay|布尔|如果事件持续一整天，则设置为 true。|
-| isReminderOn|布尔|如果设置警报以提醒用户有事件，则设置为 true。|
+| importance|String|事件的重要性。 可取值为：`low`、`normal`、`high`。|
+| isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
+| isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 | 位置|位置|事件的位置。|
 |位置|[location](../resources/location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
 | 定期|PatternedRecurrence|事件的定期模式。|
 | reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
 | responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
-| sensitivity|字符串| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
+| sensitivity|String| 可能的值是：`normal`、`personal`、`private`、`confidential`。|
 | showAs|String|要显示的状态。 可能的值为`free` : `tentative`、 `busy`、 `oof`、 `workingElsewhere`、 `unknown`、。|
 | start|DateTimeTimeZone|事件的开始时间。 <br/><br/>默认情况下，开始时间使用 UTC 格式。可以在 StartTimeZone 中指定可选的时区，用该时区表示开始时间并包括与 UTC 的时间偏移量。请注意，如果使用 StartTimeZone，你也必须为 EndTimeZone 指定一个值。<br/><br/>本示例指定太平洋标准时间的 2015 年 2 月 25 日晚上 7:34：“2015-02-25T19:34:00-08:00”。  |
 | subject|String|事件的主题行文本。|
@@ -153,8 +153,6 @@ Content-length: 285
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/event-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

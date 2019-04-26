@@ -4,12 +4,12 @@ description: 表示返回给客户端以响应对基于 CSV 的学校数据配�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 26f96c83ce14539011664b446265328f714ed402
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bbf38f15fbe14112ef254c625a8747e57eb1cae4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507110"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340509"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>educationFileSynchronizationVerificationMessage 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "32507110"
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
 | **类型** | string | 邮件的类型。 可取值为：`error`、`warning`、`information`。 | 
-| **filename** | 字符串 | 包含错误的源文件。 |
+| **filename** | string | 包含错误的源文件。 |
 | **说明** | string | 有关邮件类型的详细信息。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -42,11 +42,3 @@ ms.locfileid: "32507110"
     "description": "String"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationfilesynchronizationverificationmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
