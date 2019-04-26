@@ -4,12 +4,12 @@ description: OneNote 资源的入口点。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 5ed063fb485acdbd029a977ffb6cd721bf7085c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44dfe7b33632bb6691802e46b66f54015b6aa6ae
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561654"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341489"
 ---
 # <a name="onenote-resource-type"></a>onenote 资源类型
 
@@ -51,23 +51,38 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|notebooks|[笔记本](notebook.md)集合|用户或组拥有的 OneNote 笔记本的集合。 只读。 可为 Null。|
-|operations|[操作](onenoteoperation.md)集合 |OneNote 操作的状态。 不支持获取操作集合, 但如果响应中返回了`Operation-Location`标头, 则可以获取长时间运行的操作的状态。 只读。 可为 Null。|
-|pages|[页面](page.md)集合|由用户或组拥有的所有 OneNote 笔记本中的页面。  只读。 可为 Null。|
-|资源|[资源](resource.md)集合 |OneNote 页面中的图像和其他文件资源。 不支持获取资源集合, 但可以[获取特定资源的二进制内容](resource.md)。 只读。 可为 Null。|
-|sectionGroups|[SectionGroup](sectiongroup.md)集合|由用户或组拥有的所有 OneNote 笔记本中的分区组。  只读。 可为 Null。|
-|分区|[节](section.md)集合|所有 OneNote 笔记本中由用户或组所有的部分。  只读。 可为 Null。|
+|notebooks|[notebook](notebook.md) 集合|用户或组拥有的 OneNote 笔记本的集合。 只读。 可为 NULL。|
+|operations|[onenoteOperation](onenoteoperation.md)集合 |OneNote 操作的状态。 不支持获取操作集合, 但如果响应中返回了`Operation-Location`标头, 则可以获取长时间运行的操作的状态。 只读。 可为 Null。|
+|pages|[onenotePage](onenotepage.md)集合|由用户或组拥有的所有 OneNote 笔记本中的页面。  只读。 可为 Null。|
+|资源|[onenoteResource](onenoteresource.md)集合 |OneNote 页面中的图像和其他文件资源。 不支持获取资源集合, 但可以[获取特定资源的二进制内容](onenoteresource.md)。 只读。 可为 Null。|
+|sectionGroups|[sectionGroup](sectiongroup.md)集合|由用户或组拥有的所有 OneNote 笔记本中的分区组。  只读。 可为 Null。|
+|分区|[onenoteSection](onenotesection.md)集合|所有 OneNote 笔记本中由用户或组所有的部分。  只读。 可为 Null。|
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[创建笔记本](../api/onenote-post-notebooks.md) |[Notebook](notebook.md)| 通过发布到 "笔记本" 集合创建笔记本。|
-|[列出笔记本](../api/onenote-list-notebooks.md) |[笔记本](notebook.md)集合| 获取笔记本的集合。|
-|[创建页面](../api/onenote-post-pages.md) |[Page](page.md)| 通过发布到 pages 集合创建页面。|
-|[列出页面](../api/onenote-list-pages.md) |[页面](page.md)集合| 获取页面的集合。|
-|[列出分区组](../api/onenote-list-sectiongroups.md) |[SectionGroup](sectiongroup.md)集合| 获取节组的集合。|
-|[列出分区](../api/onenote-list-sections.md) |[节](section.md)集合| 获取节的集合。|
+|[创建笔记本](../api/onenote-post-notebooks.md) |[笔记](notebook.md)| 通过发布到 "笔记本" 集合创建笔记本。|
+|[列出笔记本](../api/onenote-list-notebooks.md) |[notebook](notebook.md) 集合| 获取笔记本的集合。|
+|[创建页面](../api/onenote-post-pages.md) |[onenotePage](onenotepage.md) | 通过发布到 pages 集合创建页面。|
+|[列出页面](../api/onenote-list-pages.md) |[onenotePage](onenotepage.md)集合| 获取页面的集合。|
+|[列出分区组](../api/onenote-list-sectiongroups.md) |[sectionGroup](sectiongroup.md)集合| 获取节组的集合。|
+|[列出分区](../api/onenote-list-sections.md) |[onenoteSection](onenotesection.md)集合| 获取节的集合。|
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.onenote"
+}-->
+``` json
+{
+  "notebooks": [{ "@odata.type": "microsoft.graph.notebook" }],
+  "operations": [{ "@odata.type": "microsoft.graph.onenoteOperation" }],
+  "pages": [{ "@odata.type": "microsoft.graph.onenotePage" }],
+  "resources": [ { "@odata.type": "microsoft.graph.onenoteResource" } ],
+  "sectionGroups": [ { "@odata.type": "microsoft.graph.sectionGroup" } ],
+  "sections": [ { "@odata.type": "microsoft.graph.onenoteSection" } ]
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -78,8 +93,6 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onenote.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

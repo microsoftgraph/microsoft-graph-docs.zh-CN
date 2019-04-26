@@ -2,23 +2,23 @@
 title: networkLocationDetail 资源类型
 description: 指示与网络位置相关联的详细信息。 .
 localization_priority: Normal
-ms.openlocfilehash: bfa84591f543253ed794016bbc2d25d325cd0bcc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c4a5323099258d9670b970b1bb85bd0d01f3cf8d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581441"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342175"
 ---
 # <a name="networklocationdetail-resource-type"></a>networkLocationDetail 资源类型
-指示与网络位置相关联的详细信息。 .
+指示与网络位置相关联的详细信息。
 
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|网络|String|提供网络的类型。 可能的值`intranet`为`extranet`、 `namedNetwork`、和`trusted`。|
-|networkName|String|网络的名称。|
+|网络|网络|提供网络的类型。 可能的值为`intranet`、 `extranet` `namedNetwork`、和`trusted`。|
+|networkNames|String 集合|网络的名称。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -30,13 +30,13 @@ ms.locfileid: "32581441"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.deviceDetail"
+  "@odata.type": "microsoft.graph.networkLocationDetail"
 }-->
 
 ```json
 {
-  "networkTypes": "namedNetork",
-  "networkName": "String"
+  "networkType": "string",
+  "networkNames": ["String"]
 }
 
 ```
@@ -45,7 +45,7 @@ ms.locfileid: "32581441"
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "deviceDetail resource",
+  "description": "networkLocationDetail resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

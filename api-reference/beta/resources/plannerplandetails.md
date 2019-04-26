@@ -4,12 +4,12 @@ description: '**plannerPlanDetails**资源表示有关计划的其他信息。 �
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 9d10f5b04bc3b98a5e32eac7b577cbf4c582bab4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 51bc28e93f7978fb080969de413db4e804918f6d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522130"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344398"
 ---
 # <a name="plannerplandetails-resource-type"></a>plannerPlanDetails 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "32522130"
 |sharedWith|[plannerUserIds](planneruserids.md)|与之共享此计划的用户 id 集。 如果使用的是 Office 365 组, 请使用组 API 来管理组成员身份, 以共享[组的](group.md)计划。 您还可以将组的现有成员添加到此集合中, 但不需要使其访问组拥有的计划。 |
 |contextDetails|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md)|只读。 与为[plannerPlan](plannerplan.md)容器定义的[plannerPlanContext](plannerplancontext.md)条目相关联的附加信息的集合。 |
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无。
 
 
@@ -67,8 +67,6 @@ ms.locfileid: "32522130"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerplandetails.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

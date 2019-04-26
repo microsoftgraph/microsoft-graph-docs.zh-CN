@@ -4,12 +4,12 @@ description: 有关来自邮件、联系人和社交网络的人员的信息聚�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 32a2c9905ab52e9b229bb8673fb4a84d90a706ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0def5d62dd941122858ffa61bf224a9ef672ad0c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561472"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344915"
 ---
 # <a name="person-resource-type"></a>person 资源类型
 
@@ -33,8 +33,8 @@ ms.locfileid: "32561472"
 |displayName|string|人员的显示名称。|
 |emailAddresses|[rankedEmailAddress](rankedemailaddress.md)集合|人员的电子邮件地址。|
 |givenName|string|人员的名字。|
-|id|string|人员的唯一标识符。 只读。|
-|isFavorite|布尔|如果用户已将此人员标记为常用联系人，则为 `true`。|
+|id|string|人员的唯一标识符。只读。|
+|isFavorite|boolean|如果用户已将此人员标记为常用联系人，则为 `true`。|
 |mailboxType|string|由个人的电子邮件地址表示的邮箱类型。|
 |officeLocation|string|人员的办公室位置。|
 |personNotes|string|用户对此人员所做的自由格式备注。|
@@ -49,7 +49,7 @@ ms.locfileid: "32561472"
 |websites|[website](website.md) collection|人员的网站。|
 |yomiCompany|string|人员所在公司的注音日文名称。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 
 无
 

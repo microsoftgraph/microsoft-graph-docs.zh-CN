@@ -4,14 +4,16 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 方根
 localization_priority: Normal
-ms.openlocfilehash: 8c320a34d22af5fc73a1c5d8c96dce14e176946f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 83211263f4ba7998ea9e1863756f5aba7b6ff070
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563111"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343505"
 ---
 # <a name="root-resource-type"></a>根资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **根** Facet 指示对象是它的层次结构中最顶层的对象。
 若此 Facet 有值（非 null），表明对象是根。
@@ -33,8 +35,11 @@ ms.locfileid: "32563111"
 **根**资源没有属性。
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/Root"
-} -->
+  "tocPath": "Facets/Root",
+  "suppressions": []
+}
+-->

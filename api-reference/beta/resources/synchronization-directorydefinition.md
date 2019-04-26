@@ -2,12 +2,12 @@
 title: directoryDefinition 资源类型
 description: 提供有关目录及其对象的同步引擎信息。 此资源将告知同步引擎, 例如, 目录包含名为**user**和**group**的对象、支持这些对象的属性以及这些属性的类型。 为了使对象和属性参与同步规则和对象映射, 必须将它们定义为目录定义的一部分。
 localization_priority: Normal
-ms.openlocfilehash: 22ba4a7f3b5b5d3154ec6b3f5d42bd6f1b8f09d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8e622edef39eec5476015ef5e22c5fe9697e0daa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582059"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342893"
 ---
 # <a name="directorydefinition-resource-type"></a>directoryDefinition 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "32582059"
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|id           |字符串     |目录标识符。 不可为 null。|
+|id           |String     |目录标识符。 不可为 Null。|
 |metadata       |metadataEntry 集合    |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|
-|name           |String     |目录的名称。 在[同步架构](synchronization-synchronizationschema.md)中必须是唯一的。 不可为 null。|
+|name           |String     |目录的名称。 在[同步架构](synchronization-synchronizationschema.md)中必须是唯一的。 不可为 Null。|
 |对象        |[objectDefinition](synchronization-objectdefinition.md)集合    |目录支持的对象集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -267,8 +267,6 @@ ms.locfileid: "32582059"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-directorydefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -3,12 +3,12 @@ title: historyItem 资源类型
 description: 表示应用中的活动的历史记录项。 用户活动表示应用程序中的单个目标, 例如电视节目、文档或视频游戏中的当前市场活动。 当用户参与该活动时, 会将该预订作为历史项目进行捕获, 以指示该活动的开始时间和结束时间。 随着时间的推移, 用户随着时间的推移而重新参与该活动, 会为单个用户活动记录多个历史记录项目。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c43a4f0515f8d61625e11abe8bbdbe2464c729f9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563257"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344059"
 ---
 # <a name="historyitem-resource-type"></a>historyItem 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "32563257"
 
 |名称 | 类型 | 说明|
 |:----|:-----|:-----------|
-|状态 | EnumType | 由服务器进行设置。 用于标识有效对象的状态代码。 值: 活动、已更新、已删除、已忽略。|
+|状态 | string | 由服务器进行设置。 用于标识有效对象的状态代码。 值: 活动、已更新、已删除、已忽略。|
 |userTimezone | String | 可选。 用于生成活动的用户设备所在的时区位于活动创建时间。 作为 Olson id 提供的值, 以便支持跨平台表示形式。|
 |createdDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上创建对象时的 UTC 时间 (UTC)。|
 |lastModifiedDateTime | DateTimeOffset | 由服务器进行设置。 在服务器上修改对象时的 UTC 时间 (UTC)。|
@@ -56,6 +56,7 @@ ms.locfileid: "32563257"
     "lastActiveDateTime",
     "activeDurationSeconds"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.historyItem"
 }-->
 
@@ -82,8 +83,6 @@ ms.locfileid: "32563257"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/projectrome-historyitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

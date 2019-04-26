@@ -4,12 +4,12 @@ description: '**plannerPlanContext**资源表示 plannerPlan 在计划程序外�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 76260b51bc6f77acf6fac22e80bd676edd8b8e11
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 68d9233d2645c2176ad364fbcbfac869976f0586
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522158"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344443"
 ---
 # <a name="plannerplancontext-resource-type"></a>plannerPlanContext 资源类型
 
@@ -23,9 +23,9 @@ ms.locfileid: "32522158"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|associationType|String|可为空。 [plannerPlan](plannerplan.md)与应用之间的应用程序定义类型的关联。 应用程序可以使用此信息跟踪与同一[plannerPlan](plannerplan.md)的不同类型的关系。|
+|associationType|String|可为 Null。 [plannerPlan](plannerplan.md)与应用之间的应用程序定义类型的关联。 应用程序可以使用此信息跟踪与同一[plannerPlan](plannerplan.md)的不同类型的关系。|
 |createdDateTime|DateTimeOffset|只读。 **plannerPlanContext**的创建日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|displayNameSegments|String collection|外部体验名称的各个部分。 段表示允许其他应用显示关系的层次结构。|
+|displayNameSegments|String 集合|外部体验名称的各个部分。 段表示允许其他应用显示关系的层次结构。|
 |ownerAppId|String|只读。 创建**plannerPlanContext**的应用程序的 ID。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -62,8 +62,6 @@ ms.locfileid: "32522158"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerplancontext.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

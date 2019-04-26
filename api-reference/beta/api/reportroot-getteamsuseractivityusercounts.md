@@ -4,12 +4,12 @@ description: 按活动类型获取 Microsoft Teams 用户的数量。 活动类�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: f8ef35813b523a28c5f6a7b455b729c144b0f072
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6115368b99c1aa8c445e9d6f7e7c307a4b72f8e2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545566"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336329"
 ---
 # <a name="reportroot-getteamsuseractivityusercounts"></a>reportRoot: getTeamsUserActivityUserCounts
 
@@ -25,7 +25,7 @@ ms.locfileid: "32545566"
 | :------------------------------------- | :--------------------------------------- |
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
-| 应用程序                            | Reports.Read.All                         |
+| 应用                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -139,7 +139,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserCounts(peri
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
@@ -170,11 +170,3 @@ Content-Length: 291
   ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/reportroot-getteamsuseractivityusercounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

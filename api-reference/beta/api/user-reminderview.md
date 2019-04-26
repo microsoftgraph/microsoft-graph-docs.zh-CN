@@ -4,14 +4,17 @@ description: '返回指定开始时间和结束时间范围内的日历提醒列
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 34c2f1a55b6dea1daff36c5ce98d1959fd78b301
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c863d1049fe5313778f5b51ec93f5c65ea22f43
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547737"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334518"
 ---
 # <a name="user-reminderview"></a>user: reminderView
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 在指定的开始时间和结束时间内, 返回用户日历中的事件提醒列表。 
 
 ## <a name="permissions"></a>权限
@@ -21,7 +24,7 @@ ms.locfileid: "32547737"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    |
-|Application | Calendars.Read、Calendars.ReadWrite |
+|应用程序 | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +63,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
   "name": "user_reminderview"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
+GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
 ```
 
 ##### <a name="response"></a>响应
@@ -77,7 +80,7 @@ Content-type: application/json
 Content-length: 673
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.reminder)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.reminder)",
     "value": [
         {
             "eventId": "AAMkADNsvAAA=",
@@ -106,10 +109,13 @@ Content-length: 673
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: reminderView",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

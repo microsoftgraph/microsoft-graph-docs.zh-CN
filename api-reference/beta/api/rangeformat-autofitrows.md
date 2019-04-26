@@ -4,12 +4,12 @@ description: 根据列中的当前数据，更改当前范围的行高以达到�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a25fdd90f8bb0f7ad92aca5207c1529abc370a65
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3486a320996622bf29c03597b749e020c546e0cb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546148"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331662"
 ---
 # <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
 
@@ -28,7 +28,7 @@ ms.locfileid: "32546148"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/format/autofitRows
+POST /workbook/names/{name}/range/format/autofitRows
 POST /workbook/worksheets/{id|name}/range(address='<address>')/format/autofitRows
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 
@@ -54,7 +54,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
   "name": "rangeformat_autofitrows"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/autofitRows
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/autofitRows
 ```
 
 ##### <a name="response"></a>响应
@@ -77,8 +77,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/rangeformat-autofitrows.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

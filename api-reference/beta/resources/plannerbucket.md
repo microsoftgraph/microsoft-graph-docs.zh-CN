@@ -4,12 +4,12 @@ description: ) 用于 Office 365 中的计划中的任务。 它包含在 planne
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: 85cf30bc13b3236928e662807a144f81614adbd7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a9e6b3ac4a9bad8d7402dee28706b5200c623078
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579252"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344583"
 ---
 # <a name="plannerbucket-resource-type"></a>plannerBucket 资源类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "32579252"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |读取**plannerBucket**对象的属性和关系。|
-|[List plannerTasks](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) 集合| 获取**plannerTask**对象集合。|
-|[创建](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | 创建新的**plannerBucket**对象。 |
+|[List plannerTasks](../api/plannerbucket-list-tasks.md) |[plannerTask](plannertask.md) 集合| 获取 **plannerTask** 对象集合。|
+|[Create](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | 创建新的**plannerBucket**对象。 |
 |[更新](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |更新**plannerBucket**对象。 |
 |[删除](../api/plannerbucket-delete.md) | 无 |删除**plannerBucket**对象。 |
 
@@ -33,14 +33,14 @@ ms.locfileid: "32579252"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。 存储桶的 ID。 长度为 28 个字符，区分大小写。 [格式验证](tasks-identifiers-disclaimer.md)在服务上完成。|
-|name|String|存储桶的名称。|
+|name|字符串|存储桶的名称。|
 |orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](planner-order-hint-format.md)概述了此格式。|
 |planId|String|存储桶所属的计划 ID。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|任务|[plannerTask](plannertask.md) 集合| 只读。 可为 Null。 存储桶中的任务的集合。|
+|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 Null。 存储桶中的任务的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -50,6 +50,8 @@ ms.locfileid: "32579252"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.plannerBucket"
 }-->
 
@@ -72,8 +74,6 @@ ms.locfileid: "32579252"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerbucket.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

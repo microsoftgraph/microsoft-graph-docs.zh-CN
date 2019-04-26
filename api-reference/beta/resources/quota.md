@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 配额
 localization_priority: Normal
-ms.openlocfilehash: 7cafff3162c7cdc4435df1cde522b42998398693
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b7357eba3cdf7a9f01c983016c6890232c3d5bbf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563291"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344057"
 ---
 # <a name="quota-resource-type"></a>配额资源类型
 
@@ -67,8 +67,6 @@ ms.locfileid: "32563291"
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
   "tocPath": "Facets/Quota",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/quota.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

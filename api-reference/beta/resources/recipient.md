@@ -2,14 +2,16 @@
 title: 收件人资源类型
 description: '表示事件、邮件或组帖子发送或接收端的用户的相关信息。 '
 localization_priority: Normal
-ms.openlocfilehash: 9718d7e6ce09a42e742303aaed484fa6335f3cbc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4b326e7c85d8390ea6356860255103a466194f92
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563194"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343911"
 ---
 # <a name="recipient-resource-type"></a>收件人资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示事件、邮件或组帖子发送或接收端的用户的相关信息。 
 
@@ -39,10 +41,13 @@ ms.locfileid: "32563194"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "recipient resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

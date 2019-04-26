@@ -2,12 +2,12 @@
 title: privilegedRoleAssignmentRequest 资源类型
 description: 表示在 Privilegd 标识管理中对角色分配操作的请求。
 localization_priority: Normal
-ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ead028d61fcbf6fe7cebf13291c0ba5231f0ba22
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563293"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344258"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>privilegedRoleAssignmentRequest 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "32563293"
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 |[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)集合|列出角色分配请求。|
-|[创建](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|创建一个请求, 以管理现有或新角色分配的生命周期。|
+|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|创建一个请求, 以管理现有或新角色分配的生命周期。|
 |[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |取消挂起的角色分配请求。|
 |[My](../api/privilegedroleassignmentrequest-my.md)|  |获取当前 requstor 的角色分配请求。|
 
@@ -37,10 +37,10 @@ ms.locfileid: "32563293"
 |requestedDateTime|DateTimeOffset| 只读。 请求创建时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |roleId|String| 角色的 id。|
 |设定|[governanceSchedule](governanceschedule.md)| 角色分配请求的 schedule 对象。|
-|状态|字符串| 只读。角色分配请求的状态。 值可以是`NotStarted``Completed`、、`RequestedApproval``Scheduled``Approved``ApprovalDenied``Revoked``RequestExpired`、、、、、、、、。`ApprovalAborted``Cancelling``Cancelled`|
+|status|String| 只读。角色分配请求的状态。 值可以是`NotStarted``Completed`、、`RequestedApproval``Scheduled``Approved``ApprovalDenied``Revoked``RequestExpired`、、、、、、、、。`ApprovalAborted``Cancelling``Cancelled`|
 |ticketNumber|String| 角色分配的 ticketNumber。 |
 |ticketSystem|String| 角色分配的 ticketSystem。|
-|type|String| 表示角色分配上操作的类型。 值可以是`AdminAdd`: 管理员将用户添加到角色;`UserAdd`: 用户添加角色分配。|
+|type|字符串| 表示角色分配上操作的类型。 值可以是`AdminAdd`: 管理员将用户添加到角色;`UserAdd`: 用户添加角色分配。|
 |userId|String| 用户的 id。|
 
 ## <a name="relationships"></a>关系
@@ -57,6 +57,7 @@ ms.locfileid: "32563293"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequest"
 }-->
 
@@ -87,8 +88,6 @@ ms.locfileid: "32563293"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedroleassignmentrequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

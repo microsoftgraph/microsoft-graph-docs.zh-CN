@@ -4,12 +4,12 @@ description: 你可以使用 Microsoft Graph 中的 Planner API 创建任务并�
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
-ms.openlocfilehash: 327701fde2679ab4c90061cf2ed98c4967a5cf58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 29fdbe5403292638e8b6067a5e8b81d8e1bef250
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573695"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344606"
 ---
 # <a name="use-the-planner-rest-api"></a>使用 Planner REST API
 
@@ -164,11 +164,3 @@ Planner 使用 **etag** 对所有资源进行版本控制。 这些 **etag** 在
 所有 Planer API `POST`、`PATCH` 和 `DELETE` 请求都需要使用受请求约束的资源的最后一个已知 etag 值指定 `If-Match` 标头。
 如果请求中指定的 etag 值不再匹配服务中资源的版本，也会返回 412 状态代码。 在这种情况下，客户端应该再次读取资源并获取新的 etag。
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/planner-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
-ms.openlocfilehash: a21c6d8fb8808f41d6b343f4bdfb2d63c0531a9e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e3e3305e398651478c88d4c3aa75e753ce26acd5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582865"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342042"
 ---
 # <a name="thumbnailset-resource-type"></a>ThumbnailSet 资源类型
 
@@ -57,8 +57,6 @@ ms.locfileid: "32582865"
   "description": "ThumbnailSet enables access to thumbnails of different sizes",
   "section": "documentation",
   "tocPath": "Resources/ThumbnailSet",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/thumbnailset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

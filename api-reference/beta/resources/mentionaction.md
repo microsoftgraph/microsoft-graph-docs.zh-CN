@@ -5,12 +5,12 @@ ms.date: 09/14/2017
 title: MentionAction
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 9101ffed094fd78189b73eab511be88c8bf449de
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad75f3a796f29f7f9c4497a3a15fd31dec0f1c6f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523404"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342266"
 ---
 # <a name="mentionaction-resource-type"></a>MentionAction 资源类型
 
@@ -53,8 +53,6 @@ ms.locfileid: "32523404"
   "keywords": "activities,activity,action,mention",
   "section": "documentation",
   "tocPath": "Resources/MentionAction",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mentionaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

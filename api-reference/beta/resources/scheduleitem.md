@@ -2,12 +2,12 @@
 title: scheduleItem 资源类型
 description: 一个项目, 该项目描述与用户的默认日历上的实际事件相对应的用户的可用性。 此项也适用于资源。
 localization_priority: Normal
-ms.openlocfilehash: a39f45598ab3c427a741659aa93615317c3c57a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d8b0d7bc18c00ca8bda3ef91b2ec8c629c980a97
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563040"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343456"
 ---
 # <a name="scheduleitem-resource-type"></a>scheduleItem 资源类型
 
@@ -20,10 +20,10 @@ ms.locfileid: "32563040"
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |相应事件结束时的日期、时间和时区。 |
 |isPrivate |Boolean |相应事件的敏感度。 如果已标记`private`事件, 则为 True, 否则为 false。 可选。 |
-|位置 |String | 保留或参与的相应事件的位置。 可选。|
+|location |String | 保留或参与的相应事件的位置。 可选。|
 |start |[dateTimeTimeZone](datetimetimezone.md) |相应事件的开始日期、时间和时区。 |
-|状态 |freeBusyStatus | 相应事件期间用户或资源的可用性状态。 可能的值为: `free`、 `tentative`、 `busy` `oof`、、 `workingElsewhere`、 `unknown`。 |
-|主题 |String | 相应事件的主题行。 可选。|
+|status |freeBusyStatus | 相应事件期间用户或资源的可用性状态。 可能的值为: `free`、 `tentative`、 `busy` `oof`、、 `workingElsewhere`、 `unknown`。 |
+|subject |String | 相应事件的主题行。 可选。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -61,8 +61,6 @@ ms.locfileid: "32563040"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/scheduleitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

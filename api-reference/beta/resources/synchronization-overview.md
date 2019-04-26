@@ -2,12 +2,12 @@
 title: Azure AD 同步 API 概述
 description: ') 允许您自动创建、维护和删除云 (软件作为服务或 SaaS) 应用程序 (如 Dropbox、Salesforce、ServiceNow 等) 中的标识。 您可以使用 Microsoft Graph 中的同步 api 以编程方式管理标识同步, 包括:'
 localization_priority: Normal
-ms.openlocfilehash: ed994b8204fdee38f558da499259538e85eacd30
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e472acc60e74c6a22a744d84e7e4dcf672337a6e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523460"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342911"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Azure AD 同步 API 概述
 
@@ -198,11 +198,3 @@ HTTP/1.1 200 OK
 
 
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

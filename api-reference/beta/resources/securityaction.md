@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 5aa99119f23baa4cd9450d48ee4955d7ce91f60d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583677"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343365"
 ---
 # <a name="securityaction-resource-type"></a>securityAction 资源类型
 
@@ -40,10 +40,10 @@ ms.locfileid: "32583677"
 |errorInfo|[resultInfo](resultinfo.md)| 操作失败时的错误消息。|
 |id|String| 当操作为引入时由系统创建。 生成的 GUID/唯一标识符。 只读。|
 |lastActionDateTime|DateTimeOffset| 上次更新此操作时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|name|String| 操作名称。|
+|name|字符串| 操作名称。|
 |parameters|[keyValuePair](keyvaluepair.md) 集合| 调用操作所必需的参数 (键值对) 集合, 例如 URL 或 fileHash to block 等。 **必需**|
 |市|[securityActionState](securityactionstate.md)集合|securityActionState 的集合, 以保留操作的历史记录。|
-|status|string| 操作的状态。 可取值为：`NotStarted`、`Running`、`Completed`、`Failed`。|
+|状态|string| 操作的状态。 可取值为：`NotStarted`、`Running`、`Completed`、`Failed`。|
 |user|String| 已提交 (POST) 操作的已登录用户的用户主体名称。 应从身份验证令牌中提取用户, 而不是通过调用应用程序手动输入。|
 |vendorInformation|[securityVendorInformation](securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和子提供商的详细信息的复杂类型 (例如, 供应商 = Microsoft; 提供商 = Windows Defender ATP; 子提供程序 = AppLocker)。|
 

@@ -4,12 +4,12 @@ description: OneNote 笔记本中的分区组。 节组可以包含节和节组�
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 65e420d014add658a538deb42c01518cd94d611c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f1cd9757b0a58afb4183bd917a7a090b14502a36
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562877"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343392"
 ---
 # <a name="sectiongroup-resource-type"></a>sectionGroup 资源类型
 
@@ -29,7 +29,8 @@ OneNote 笔记本中的分区组。 节组可以包含节和节组。
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -62,20 +63,20 @@ OneNote 笔记本中的分区组。 节组可以包含节和节组。
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|包含分区组的笔记本。 只读。|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|包含节组的节组。 只读。|
-|sectionGroups|[SectionGroup](sectiongroup.md)集合|节中的节组。 此为只读属性。 可为 Null。|
-|分区|[节](section.md)集合|分区组中的节。 此为只读属性。 可为 Null。|
+|parentNotebook|[笔记](notebook.md)|包含分区组的笔记本。 只读。|
+|parentSectionGroup|[sectionGroup](sectiongroup.md)|包含节组的节组。 只读。|
+|sectionGroups|[sectionGroup](sectiongroup.md)集合|节中的节组。 此为只读属性。 可为 Null。|
+|分区|[onenoteSection](onenotesection.md)集合|分区组中的节。 此为只读属性。 可为 Null。|
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取分区组](../api/sectiongroup-get.md) | [SectionGroup](sectiongroup.md) |读取分区组的属性和关系。|
-|[创建分区组](../api/sectiongroup-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| 通过发布到指定分区组中的 sectionGroups 集合创建分区组。|
-|[列出分区组](../api/sectiongroup-list-sectiongroups.md) |[SectionGroup](sectiongroup.md)集合| 获取指定分区组中的分区组的集合。|
-|[创建分区](../api/sectiongroup-post-sections.md) |[Section](section.md)| 通过发布到指定分区组中的节集合来创建节。|
-|[列出分区](../api/sectiongroup-list-sections.md) |[节](section.md)集合| 获取指定分区组中的节的集合。|
+|[获取分区组](../api/sectiongroup-get.md) | [sectionGroup](sectiongroup.md) |读取分区组的属性和关系。|
+|[创建分区组](../api/sectiongroup-post-sectiongroups.md) |[sectionGroup](sectiongroup.md)| 通过发布到指定分区组中的 sectionGroups 集合创建分区组。|
+|[列出分区组](../api/sectiongroup-list-sectiongroups.md) |[sectionGroup](sectiongroup.md)集合| 获取指定分区组中的分区组的集合。|
+|[创建分区](../api/sectiongroup-post-sections.md) |[onenoteSection](onenotesection.md)| 通过发布到指定分区组中的节集合来创建节。|
+|[列出分区](../api/sectiongroup-list-sections.md) |[onenoteSection](onenotesection.md)集合| 获取指定分区组中的节的集合。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -86,8 +87,6 @@ OneNote 笔记本中的分区组。 节组可以包含节和节组。
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sectiongroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

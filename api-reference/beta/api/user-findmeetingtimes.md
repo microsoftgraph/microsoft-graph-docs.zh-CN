@@ -4,12 +4,12 @@ description: 根据组织者和与会者的空闲状况以及指定为参数的�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 2aa8f10d1462065f0ae889261f25a15a3c29359b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ada506f1db08109781f74f459edd0fde0d028074
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536516"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334973"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -357,9 +357,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "tocPath": "",
   "suppressions": [
     "Warning: /api-reference/beta/api/user_findmeetingtimes.md:\r\n      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",
-    "Error: /api-reference/beta/api/user-findmeetingtimes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)",
-    "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
-    Expected type Float but actual was Int64. Property: confidence, actual value: '100'"
+    "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n    Expected type Float but actual was Int64. Property: confidence, actual value: '100'",
+    "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n    Expected type Double but actual was Int64. Property: confidence, actual value: '100'"
   ]
 }
 -->

@@ -2,12 +2,12 @@
 title: profilePhoto 资源类型
 description: 用户、组或从 Exchange Online 或 Azure Active Directory (AAD) 访问的 Outlook 联系人的个人资料照片。 它是不以 base-64 编码的二进制数据。
 localization_priority: Normal
-ms.openlocfilehash: 2a831abd098fb9a0dfa95f6d6dd3a9cd5de128cd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: edff2919192403b41096a6f9dfcd6dbdcf1446ed
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563271"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344074"
 ---
 # <a name="profilephoto-resource-type"></a>profilePhoto 资源类型
 
@@ -65,8 +65,6 @@ Exchange Online 支持的 HD 照片大小如下所示：'48x48'、'64x64'、'96x
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/profilephoto.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

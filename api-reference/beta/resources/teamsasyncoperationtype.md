@@ -4,12 +4,12 @@ description: teamsAsyncOperation 的类型。 将在此处添加成员, 因为�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4de95db194bf41939521b53f06614b46b6afae99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad1fdb80768a6f4c7043b5431bd0ed84bf2f25f6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553636"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341531"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>teamsAsyncOperationType 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "32553636"
 |:---------------|:--------|:----------|
 |无效|0|值无效。|
 |cloneTeam|1|克隆团队的操作。|
-|archiveTeam|2 |存档团队的操作。|
-|unarchiveTeam|3 |还原存档团队的操作。|
-|createTeam|3 |从头开始创建团队的操作。|
+|archiveTeam|双面|存档团队的操作。|
+|unarchiveTeam|第三章|还原存档团队的操作。|
+|createTeam|第三章|从头开始创建团队的操作。|
 

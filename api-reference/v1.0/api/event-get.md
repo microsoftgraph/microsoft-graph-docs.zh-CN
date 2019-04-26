@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 278fc8158534f7ffee90195aa76ed4a1f0ac8baf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937073"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534820"
 ---
 # <a name="get-event"></a>获取事件
 
@@ -17,12 +17,12 @@ ms.locfileid: "27937073"
 
 目前，此操作返回纯 HTML 格式的事件正文。
 
-有两种方案，其中应用程序可在另一个用户的日历中获取事件：
+在下列两种情况下，应用程序可获取其他用户的日历中的事件：
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享日历，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
+* 如果该应用具有应用程序权限，或者
+* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
-由于**事件**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**事件**实例中的自定义属性和扩展数据。
+由于 **event** 资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**事件**实例中的自定义属性和扩展数据。
 
 
 ### <a name="support-various-time-zones"></a>支持不同时区

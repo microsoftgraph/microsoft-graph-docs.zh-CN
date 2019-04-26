@@ -2,12 +2,12 @@
 title: privilegedRoleAssignment 资源类型
 description: '表示特定用户的特权角色分配。 '
 localization_priority: Normal
-ms.openlocfilehash: 479b6d46dc479134fd0abb46b1a9ffe478611a82
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1e58f144eb3dda19225a836aa966f9479d3a9350
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563396"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344218"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>privilegedRoleAssignment 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "32563396"
 |:---------------|:--------|:----------|
 |expirationDateTime|dateTimeOffset|临时权限角色分配将在何时过期时的 UTC 日期时间。 对于永久角色分配, 值为 null。|
 |id|string| 特权角色分配的唯一标识符。 只读。 它的格式为 "userId_roleId", 其中 userId 是 azure AD 用户 id 的 guid 字符串, roleId 是 azure 管理员角色 id 的 guid 字符串。|
-|isElevated|布尔|如果角色分配已激活,**则为 true** 。 **假**如果角色分配被停用。|
+|isElevated|boolean|如果角色分配已激活,**则为 true** 。 **假**如果角色分配被停用。|
 |resultMessage|string|由服务设置的结果消息。|
 |roleId|string|角色标识符。 以 GUID 字符串格式。|
 |userId|string|用户标识符。 以 GUID 字符串格式。|
@@ -52,6 +52,8 @@ ms.locfileid: "32563396"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedRoleAssignment"
 }-->
 
@@ -76,8 +78,6 @@ ms.locfileid: "32563396"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedroleassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

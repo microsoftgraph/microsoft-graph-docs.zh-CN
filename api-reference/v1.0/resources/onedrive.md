@@ -1,19 +1,19 @@
 ---
 title: 在 Microsoft Graph 中使用文件
-description: Microsoft Graph 可用于创建应用程序文件跨 OneDrive，OneDrive for Business 和 SharePoint 文档库的连接。
+description: 可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 89798778fff0297ffce607d1546a177dd90d357e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918019"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462919"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>在 Microsoft Graph 中使用文件
 
-Microsoft Graph 可用于创建应用程序文件跨 OneDrive，OneDrive for Business 和 SharePoint 文档库的连接。
-与 Microsoft Graph 您可以使用文件存储在 Office 365 中只存储到复杂文件共享的情况的用户文档生成各种体验。
+可以使用 Microsoft Graph 创建一个跨 OneDrive、OneDrive for Business 和 SharePoint 文档库与文件连接的应用程序。
+通过 Microsoft Graph，可以使用存储在 Office 365 中的文件构建各种体验，从仅存储用户文档到复杂的文件共享方案均可。
 
 Microsoft Graph 公开可用于文件的两个资源类型：
 
@@ -53,7 +53,7 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 
 * _属性_（像 **id** 和 **name**）公开简单的值（字符串、数字、布尔值）。
 * _Facet_（像**文件**和**照片**）公开复杂的值。存在的**文件**或**文件夹** Facet 表示 **DriveItem** 的行为和属性。
-* _引用_（如 **children** 和 **thumbnails**）指向其他资源的集合。
+* _引用_（像**子项**和**缩略图**）指向其他资源的集合。
 
 ## <a name="commonly-accessed-resources"></a>经常访问的资源
 
@@ -70,8 +70,8 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 | `/users/{user-id}/drive`           | 通过使用用户的唯一标识符访问另一个用户的 OneDrive 。
 | `/groups/{group-id}/drive`         | 通过组的唯一 ID 访问组的默认文档库。
 | `/shares/{share-id}`               | 通过其 **sharedId** 或共享 URL 访问 **DriveItem**。
-| `/sites/{site-id}/drive`           | 访问给定的[SharePoint][] [网站][]的默认**驱动器**（文档库）
-| `/sites/{site-id}/drives`          | 枚举**驱动器**（文档库） 下给定的[SharePoint][] [网站][]
+| `/sites/{site-id}/drive`           | 访问给定 [SharePoint][] [网站][]的默认**驱动器**（文档库）
+| `/sites/{site-id}/drives`          | 枚举给定 [SharePoint][] [网站][]下的**驱动器**（文档库）
 
 除了通过唯一 ID 在**驱动器**内查找 **DriveItem**，应用还可以通过已知资源中的相对路径查找 **DriveItem**。要使用路径进行查找，请使用冒号 (`:`) 字符对相对路径转义。此表提供了通过不同的方法使用冒号字符来按路径查找项目的示例。
 
@@ -84,7 +84,7 @@ Microsoft Graph 公开可用于文件的两个资源类型：
 
 ## <a name="drive-resource"></a>驱动器资源
 
-[驱动器资源](drive.md)是用户的 OneDrive 或[SharePoint][]文档库中的顶级对象。
+[驱动器资源](drive.md) 是用户的 OneDrive 或 [SharePoint][] 文档库内的顶级对象。
 几乎所有的文件操作都从查找特定驱动器资源开始。
 
 可以通过驱动器的唯一 ID 或 [用户](user.md)、[组](group.md) 或组织的默认驱动器查找驱动器资源。  
@@ -110,4 +110,4 @@ OneDrive 和 SharePoint 文档库最常见的操作之一是与其他人共享�
 Microsoft Graph 还为应用提供了一种直接从共享链接 [访问共享内容](../api/shares-get.md) 的方法。
 
 [SharePoint]: sharepoint.md
-[site]: site.md
+[网站]: site.md

@@ -2,12 +2,12 @@
 title: 更新 synchronizationSchema
 description: 更新给定作业或模板的同步架构。 此方法将当前架构完全替换为请求中提供的架构。 若要更新模板的架构, 请对 application 对象进行调用。 您必须是应用程序的所有者。
 localization_priority: Normal
-ms.openlocfilehash: 13ee7d996b0e02834b77cd222380747c02d7fcc2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3c61c39ac6e4b263dd9e5805fbccc1b7bb55d74d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536955"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335588"
 ---
 # <a name="update-synchronizationschema"></a>更新 synchronizationSchema
 
@@ -57,6 +57,7 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+Content-type: application/json
 
 {
     "directories": [
@@ -121,8 +122,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationschema-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

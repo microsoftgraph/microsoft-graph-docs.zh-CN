@@ -2,12 +2,12 @@
 title: requiredResourceAccess 资源类型
 description: 指定应用程序需要访问的指定资源下的 OAuth 2.0 权限范围和应用角色的集合。 调用资源应用程序时, 客户端应用程序可能会请求指定的 OAuth 2.0 权限范围 (通过**requiredResourceAccess**集合)。 application 实体的**requiredResourceAccess**属性是**ReqiredResourceAccess**的集合。
 localization_priority: Normal
-ms.openlocfilehash: a2c7e337bbe441275f395c2333b8cee918e6b9da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cd8049e7f843bbf057c79b4f3c90b7da51105191
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563121"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343666"
 ---
 # <a name="requiredresourceaccess-resource-type"></a>requiredResourceAccess 资源类型
 
@@ -50,8 +50,6 @@ ms.locfileid: "32563121"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/requiredresourceaccess.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

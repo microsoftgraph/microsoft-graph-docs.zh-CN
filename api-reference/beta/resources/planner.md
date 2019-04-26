@@ -4,12 +4,12 @@ description: '**planner**资源是 planner 对象模型的入口点。 它返回
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 50ceb8b76b398bd5898e48f31df9a6443569781e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f1fb3b7058a87dd7b8390408590371cf1b0e9cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579245"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344616"
 ---
 # <a name="planner-resource-type"></a>planner 资源类型
 
@@ -34,9 +34,9 @@ ms.locfileid: "32579245"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|存储桶|[plannerBucket](plannerbucket.md)集合| 只读。 可为 Null。 返回指定的存储桶的集合|
+|buckets|[plannerBucket](plannerbucket.md) collection| 只读。 可为 Null。 返回指定的存储桶的集合|
 |计划|[plannerPlan](plannerplan.md) 集合| 只读。 可为 Null。 返回指定计划的集合|
-|任务|[plannerTask](plannertask.md) 集合| 只读。 可为 Null。 返回指定任务的集合|
+|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 Null。 返回指定任务的集合|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -46,6 +46,8 @@ ms.locfileid: "32579245"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.planner"
 }-->
 
@@ -65,8 +67,6 @@ ms.locfileid: "32579245"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/planner.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

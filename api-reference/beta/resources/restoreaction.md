@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: RestoreAction
 localization_priority: Normal
-ms.openlocfilehash: f04f9811cefba60d0b06b99605774fb8fbfa0125
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fa92c4667d3421420b203cfc158c94d1b4cf78dd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562970"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343582"
 ---
 # <a name="restoreaction-resource-type"></a>RestoreAction 资源类型
 

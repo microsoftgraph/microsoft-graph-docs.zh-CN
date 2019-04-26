@@ -4,12 +4,12 @@ description: 安全威胁的复杂程度不断提升, 从而影响了全球经�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 37e98203e8f031aa98b35d82110a69e434c22a3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 853f09ca30378c4fa7e8132f495d789ec142f13c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524461"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343386"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>使用 Microsoft Graph API 进行安全威胁检测和保护 (预览)
 
@@ -27,11 +27,3 @@ ms.locfileid: "32524461"
 - [使用安全 API 与智能安全图形集成](security-api-overview.md)
 - [为什么要使用 Azure AD 来保护组织中的身份？](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
 - [使用 Azure AD 标识保护 API](identityprotection-root.md)
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/security-reference-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

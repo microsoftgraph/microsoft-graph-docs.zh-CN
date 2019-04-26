@@ -4,14 +4,16 @@ description: 将 mailfolder 及其内容复制到其他 mailfolder。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e1c4c567c56e869ed1e18ff0c887393c8345929d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6b1fb9b0b3d3891f33020458ffb5b140f9bf42c6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540897"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333384"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将 mailfolder 及其内容复制到其他 mailfolder。
 
@@ -35,10 +37,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ```
 
 ## <a name="request-headers"></a>请求标头
+
 | 标头 | 值 |
 |:-------|:------|
 | Authorization | `Bearer {token}`. 必需。 |
-| Content-Type | `application/json`. 必需。 |
+| Content-Type | `application/json`. 必填。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -57,6 +60,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 下面是一个如何调用此 API 的示例。
 
 ##### <a name="request"></a>请求
+
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
@@ -64,7 +68,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/copy
+POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -78,6 +82,7 @@ Content-length: 44
 下面是一个响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,10 +106,13 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailFolder: copy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

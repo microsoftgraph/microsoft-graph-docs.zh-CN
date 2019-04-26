@@ -4,12 +4,12 @@ description: recordOperation 类型
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6b9deb566e5b527a9f20db69441fa96908212a38
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 75760e38dde13a02624db987d521e3b02977901d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563029"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343925"
 ---
 # <a name="recordoperation-resource-type"></a>recordOperation 资源类型
 
@@ -29,7 +29,7 @@ recordOperation 类型
 | recordResourceAccessToken      | String                      | 检索录制所需的访问令牌。                                                                                              |
 | recordResourceLocation         | String                      | 录制所在的位置。                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | 结果信息。  只读。 由服务器生成。                                                                                             |
-| 状态                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 由服务器生成。                                                 |
+| status                         | String                      | 可能的值是：`notStarted`、`running`、`completed`、`failed`。 只读。 由服务器生成。                                                 |
 
 ## <a name="relationships"></a>关系
 无
@@ -85,8 +85,6 @@ recordOperation 类型
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/recordoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

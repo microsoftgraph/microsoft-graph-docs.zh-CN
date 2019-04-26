@@ -4,12 +4,12 @@ description: 获取用户邮箱中的联系人。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a1eaeac682f511bf9b895e06e6a19b3bc728a38c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3619bb158038c7c5716bd2a24e542a9ba1a276c6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544356"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334863"
 ---
 # <a name="list-contacts"></a>列出联系人
 
@@ -151,8 +151,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-list-contacts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

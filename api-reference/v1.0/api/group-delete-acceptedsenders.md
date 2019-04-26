@@ -1,18 +1,18 @@
 ---
 title: 删除 acceptedSender
-description: '从 acceptedSenders 列表中删除用户或组。 '
+description: '从接受的发件人列表中删除用户或组。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 86d9cc6cd0adf1c29f64044299daa1ed2c8403d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cf15c26fbd73501496ad11f443b20569c7801e9b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548140"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334476"
 ---
 # <a name="remove-acceptedsender"></a>删除 acceptedSender
-从 acceptedSenders 列表中删除用户或组。 
+从接受的发件人列表中删除用户或组。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -55,7 +55,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=htt
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 
 <!-- {
   "blockType": "response",

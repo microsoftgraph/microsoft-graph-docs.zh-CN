@@ -4,19 +4,17 @@ description: '频道是的团队中的消息集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2bebf78e4ad31047289bff77e681c34d92a94abf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6c1f73746081e5b1e4f78acb91d43e33c1c9bf73
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163712"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569457"
 ---
 # <a name="channel-resource-type"></a>频道资源类型
 
-
-
-频道是的[团队](../resources/team.md)中的消息集合。 频道表示团队内部的某个主题，因此是讨论的逻辑隔离。 示例可以是“星期五团队午餐”和“体系结构讨论”频道。
-
+[Teams](../resources/team.md) 由频道组成，是你与团队成员的对话。 每个频道专用于特定主题、部门或项目。
+频道是工作实际完成的地方 - 对整个团队开放的文本、音频和视频对话的位置、共享文件的位置以及添加标签的位置。
 
 ## <a name="methods"></a>方法
 
@@ -27,13 +25,20 @@ ms.locfileid: "30163712"
 |[获取频道](../api/channel-get.md) | [频道](channel.md) | 读取频道的属性和关系。|
 |[更新频道](../api/channel-patch.md) | [频道](channel.md) | 更新频道属性。|
 |[删除频道](../api/channel-delete.md) | 无 | 删除通道。|
+|[列出选项卡](../api/teamstab-list.md) | [teamsTab](teamstab.md) | 列出固定到频道的选项卡。|
+|[获取选项卡](../api/teamstab-get.md) | [teamsTab](teamstab.md) | 读取固定到频道的选项卡。|
+|[添加选项卡](../api/teamstab-add.md) | [teamsTab](teamstab.md) | 将选项卡添加（固定）到频道。|
+|[删除选项卡](../api/teamstab-delete.md) | 无 | 从频道中删除（取消固定）选项卡。|
+|[更新选项卡](../api/teamstab-update.md) | [teamsTab](teamstab.md) | 更新选项卡属性。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |说明|String|频道的可选文本描述。|
 |displayName|String|在 Microsoft Teams 中呈现在用户面前的频道名称。|
+|email|String| 用于向频道发送邮件的电子邮件地址。 只读。|
 |id|String|频道的唯一标识符。 只读。|
+|webUrl|String|导航至 Microsoft Teams 中的频道的超链接。 在 Microsoft Teams 中右键单击某个频道并选择“获取频道链接”即可获得此 URL。 应将此 URL 视为不透明的 blob，而不对其进行解析。 只读。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
@@ -55,7 +60,9 @@ ms.locfileid: "30163712"
 {
   "description": "string",
   "displayName": "string",
-  "id": "string (identifier)"
+  "email": "string (identifier)",
+  "id": "string",
+  "webUrl": "string"
 }
 
 ```

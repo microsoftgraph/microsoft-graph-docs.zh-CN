@@ -2,12 +2,12 @@
 title: privilegedApproval 资源类型
 description: 表示在用于获取角色的特权标识管理中请求的审批。
 localization_priority: Normal
-ms.openlocfilehash: 283236d945e9a71a4ae0461bbefe66260efa88a4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 754fcd9b61321db1675408172c945557e38dc0e0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563628"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344216"
 ---
 # <a name="privilegedapproval-resource-type"></a>privilegedApproval 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "32563628"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |approvalDuration|持续时间||
-|approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted` 或 `canceled`。|
+|approvalState|string| 可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。|
 |approvalType|String||
 |approverReason|String||
 |endDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
@@ -54,6 +54,8 @@ ms.locfileid: "32563628"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedApproval"
 }-->
 
@@ -82,8 +84,6 @@ ms.locfileid: "32563628"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedapproval.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

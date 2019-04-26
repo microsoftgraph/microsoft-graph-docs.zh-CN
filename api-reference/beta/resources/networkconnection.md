@@ -1,13 +1,13 @@
 ---
 title: networkConnection 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
 localization_priority: Normal
-ms.openlocfilehash: ce7de8d5a0f63c4d924e8092e4e9e05f984ec335
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 94bf27265f591d32c01e7043d3a10468a924d78a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570720"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342196"
 ---
 # <a name="networkconnection-resource-type"></a>networkConnection 资源类型
 
@@ -31,12 +31,40 @@ ms.locfileid: "32570720"
 |natDestinationPort|String|网络地址转换目标端口。|
 |natSourceAddress|String|网络地址转换源 IP 地址。|
 |natSourcePort|String|网络地址转换源端口。|
-|协议|[securityNetworkProtocol](securitynetworkprotocolenumtype.md)|网络协议。 可能的值为`unknown`: `ip`、 `icmp`、 `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader`、、、、、、、、、、、、、、、、 `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd`, `raw`, `ipx`, `spx`, `spxII`.|
+|协议|securityNetworkProtocol|网络协议。 可能的值为`unknown`: `ip`、 `icmp`、 `igmp` `ggp` `ipv4` `tcp` `pup` `udp` `idp` `ipv6` `ipv6RoutingHeader` `ipv6FragmentHeader`、、、、、、、、、、、、、、、、 `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd`, `raw`, `ipx`, `spx`, `spxII`.|
 |riskScore|String|提供程序生成/计算网络连接的风险分数。 建议的值范围为 0-1, 这相当于一个百分比。|
 |sourceAddress|String|源 (即, 网络连接的来源) 的 IP 地址。|
 |sourcePort|String|源 (即源) IP 端口 (的网络连接)。|
-|状态|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked` 或 `failed`。|
+|status|connectionStatus|网络连接状态。 可取值为：`unknown`、`attempted`、`succeeded`、`blocked`、`failed`。|
 |urlParameters|String|目标 URL 的参数 (后缀)。|
+
+### <a name="securitynetworkprotocol-values"></a>securityNetworkProtocol 值
+
+|成员|值|说明|
+|:---|:---|:---|
+|unknown|-1|未知协议。|
+|ip|0|Internet 协议。|
+|icmp|1| Internet 控制邮件协议。|
+|igmp|双面| Internet 组管理协议。|
+|ggp|第三章| 网关到网关协议。|
+|ipv4|4| Internet 协议版本4。|
+|tcp|型| 传输控制协议。|
+|pup|12 | PARC 通用数据包协议。|
+|udp|×| 用户数据报协议。|
+|idp|22| Internet 数据报协议。|
+|ipv4|41| Internet 协议版本 6 (ipv6)。|
+|ipv6RoutingHeader|43| ipv6 路由头。|
+|ipv6FragmentHeader|44| ipv6 分段标头。|
+|ipSecEncapsulatingSecurityPayload|50| ipv6 封装安全有效负载标头。|
+|ipSecAuthenticationHeader|51| ipv6 身份验证标头。|
+|icmpV6|58| ipv6 的 Internet 控制消息协议。|
+|ipv6NoNextHeader|59| ipv6 无下一个标头。|
+|ipv6DestinationOptions|60| ipv6 目标选项标头。|
+|点|77| 网络磁盘协议 (非正式)。|
+|原始|255| 原始 IP 数据包协议。|
+|通讯|1000| Internet 数据包交换协议。|
+|spx|1256| 序列化的数据包交换协议。|
+|spxII|1257| 序列化数据包交换第2版协议。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -57,18 +85,18 @@ ms.locfileid: "32570720"
   "destinationDomain": "String",
   "destinationPort": "String",
   "destinationUrl": "String",
-  "direction": "@odata.type: microsoft.graph.connectionDirection",
+  "direction": "String",
   "domainRegisteredDateTime": "String (timestamp)",
   "localDnsName": "String",
   "natDestinationAddress": "String",
   "natDestinationPort": "String",
   "natSourceAddress": "String",
   "natSourcePort": "String",
-  "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
+  "protocol": "string",
   "riskScore": "String",
   "sourceAddress": "String",
   "sourcePort": "String",
-  "status": "@odata.type: microsoft.graph.connectionStatus",
+  "status": "String",
   "urlParameters": "String"
 }
 
@@ -83,8 +111,6 @@ ms.locfileid: "32570720"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/networkconnection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
