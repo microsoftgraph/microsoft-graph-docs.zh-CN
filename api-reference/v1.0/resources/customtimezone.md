@@ -11,6 +11,8 @@ ms.locfileid: "32574741"
 ---
 # <a name="customtimezone-resource-type"></a><span data-ttu-id="1afb0-103">customTimeZone 资源类型</span><span class="sxs-lookup"><span data-stu-id="1afb0-103">customTimeZone resource type</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 <span data-ttu-id="1afb0-104">表示从标准时间到夏令时的切换不标准（反之亦然）的时区。</span><span class="sxs-lookup"><span data-stu-id="1afb0-104">Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard.</span></span>
 
 
@@ -32,7 +34,6 @@ ms.locfileid: "32574741"
   "optionalProperties": [
 
   ],
-  "baseType": "microsoft.graph.timeZoneBase",
   "@odata.type": "microsoft.graph.customTimeZone"
 }-->
 
@@ -48,10 +49,13 @@ ms.locfileid: "32574741"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "customTimeZone resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
