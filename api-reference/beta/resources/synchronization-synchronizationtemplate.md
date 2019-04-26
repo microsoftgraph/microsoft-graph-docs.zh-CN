@@ -1,28 +1,28 @@
 ---
 title: synchronizationTemplate 资源类型
-description: " 任何人都可以检索要查看默认设置，包括同步架构的模板。"
+description: " 任何人都可以检索模板以查看默认设置, 包括同步架构。"
 localization_priority: Normal
 ms.openlocfilehash: 75df13d55cfb58aafe8a751279e103424aa29367
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516551"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561206"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>synchronizationTemplate 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-提供了为特定应用程序预配置的同步设置。 将基于模板的任何[同步作业，](synchronization-synchronizationjob.md)默认情况下使用这些设置。 应用程序开发人员指定的模板;任何人都可以检索要查看默认设置，包括[同步架构](synchronization-synchronizationschema.md)的模板。
+为特定应用程序提供预先配置的同步设置。 默认情况下, 将对基于该模板的任何[同步作业](synchronization-synchronizationjob.md)使用这些设置。 应用程序开发人员指定模板;任何人都可以检索模板以查看默认设置, 包括[同步架构](synchronization-synchronizationschema.md)。
 
-您可以提供多个模板的应用程序，并指定默认模板。 如果多个模板可供您感兴趣的应用程序，seek 特定于应用程序的指南，以确定哪一个最能满足您的需求。
+您可以为应用程序提供多个模板, 并指定一个默认模板。 如果有多个模板可用于您感兴趣的应用程序, 请查找特定于应用程序的指南, 以确定哪一个模板最符合您的需求。
 
 ## <a name="methods"></a>方法
 
 | 方法        | 返回类型               | 说明                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[List](../api/synchronization-synchronizationtemplate-list.md)    |[synchronizationTemplate](synchronization-synchronizationtemplate.md)集合  |列表的模板可供应用程序或应用程序实例 （服务主体）。|
-|[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |读取的属性和**synchronizationTemplate**对象的关系。|
+|[List](../api/synchronization-synchronizationtemplate-list.md)    |[synchronizationTemplate](synchronization-synchronizationtemplate.md)集合  |列出可用于应用程序实例或应用程序实例 (服务主体) 的模板。|
+|[获取](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |读取**synchronizationTemplate**对象的属性和关系。|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
 |[Update](../api/synchronization-synchronizationtemplate-put.md)   |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the template.| 
@@ -32,18 +32,18 @@ ms.locfileid: "29516551"
 
 | 属性      | 类型                      | 说明                  |
 |:--------------|:--------------------------|:-----------------------------|
-|id             |String                     |唯一的模板标识符。|
-|applicationId  |String                     |此模板所属的应用程序的标识符。|
-|default        |Boolean                    |`true`如果此模板建议为默认的应用程序。|
-|说明    |字符串                     |模板描述|
-|可供搜索   |String                     |`true`如果此模板应出现在可用应用程序实例 （服务主体） 的模板的集合。|
-|factoryTag     |String                     |同步引擎支持的已知工厂标记之一。 **FactoryTag**告知同步引擎处理在基于此模板的作业时使用的实现。|
-|元数据       |metadataEntry 集合   |其他扩展属性。 除非明确提到，不应更改元数据值。|
+|id             |字符串                     |唯一的模板标识符。|
+|applicationId  |String                     |此模板所属应用程序的标识符。|
+|设置        |布尔值                    |`true`如果建议将此模板作为应用程序的默认模板。|
+|description    |String                     |模板的说明。|
+|被   |String                     |`true`如果此模板应显示在可用于应用程序实例 (服务主体) 的模板集合中。|
+|factoryTag     |String                     |同步引擎支持的已知工厂标记之一。 **factoryTag**告知同步引擎在处理基于此模板的作业时要使用的实现。|
+|metadata       |metadataEntry 集合   |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|
 
 ## <a name="relationships"></a>关系
 | 关系      | 类型      |说明|
 |:------------------|:----------|:----------|
-|架构             |[synchronizationSchema](synchronization-synchronizationschema.md)     |在基于此模板的作业的默认同步架构。|
+|架构             |[synchronizationSchema](synchronization-synchronizationschema.md)     |基于此模板的作业的默认同步架构。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -54,6 +54,7 @@ ms.locfileid: "29516551"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.synchronizationTemplate"
 }-->
 
@@ -80,8 +81,6 @@ ms.locfileid: "29516551"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationtemplate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

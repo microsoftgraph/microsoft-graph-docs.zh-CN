@@ -3,11 +3,11 @@ title: attributeDefinition 资源类型
 description: 描述对象的属性。
 localization_priority: Normal
 ms.openlocfilehash: f9268bf61fec397c53744c9999635ba159b047f4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643914"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582071"
 ---
 # <a name="attributedefinition-resource-type"></a>attributeDefinition 资源类型
 
@@ -19,14 +19,14 @@ ms.locfileid: "29643914"
 
 | 属性      | 类型      | 说明    |
 |:--------------|:----------|:---------------|
-|定位         |布尔值    | `true`如果属性应用作对象的定位标记。 定位属性必须具有识别对象的唯一值，并且必须变。 默认值为 `false`。 有，并且只有一个对象的属性必须被指定为定位标记为支持同步。 |
-|caseExact      |布尔值    |`true`如果此属性的值应处理，区分大小写。 此设置会影响如何同步引擎检测到的属性的更改。|
-|元数据       |[metadataEntry](../resources/synchronization-metadataentry.md)    |其他扩展属性。 除非明确提到，不应更改元数据值。|
-|多值    |布尔值    |`true`如果属性可以有多个值。 默认值为 `false`。|
-|mutability     |String     |属性可变性。 可能的值为： `ReadWrite`， `ReadOnly`， `Immutable`， `WriteOnly`。 默认值为 `ReadWrite`。|
-|name           |String     |属性的名称。 必须是唯一对象定义中。 不可为 Null。|
-|必需       |布尔值    |`true`如果属性是必需的。 如果缺少任何所需的属性，则不可以创建对象。 如果同步期间，required 的属性的值，将使用的默认值。 如果未设置默认值，则同步将记录错误。|
-|referencedObjects|[referencedObject](../resources/synchronization-referencedobject.md) |使用属性的`reference`键入，列表被引用的对象 (例如，`manager`属性将列出`User`为引用的对象)。|
+|式         |Boolean    | `true`如果该属性应用作对象的定位标记。 定位属性必须具有标识对象的唯一值, 并且必须是不可变的。 默认值为 `false`。 必须将对象的一个属性 (且只有一个) 指定为支持同步的定位点。 |
+|caseExact      |Boolean    |`true`如果应将此属性的值视为区分大小写。 此设置影响同步引擎检测属性更改的方式。|
+|metadata       |[metadataEntry](../resources/synchronization-metadataentry.md)    |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|
+|多    |Boolean    |`true`如果属性可以有多个值。 默认值为 `false`。|
+|mutability     |String     |属性的 mutability。 可能的值为`ReadWrite`: `ReadOnly`、 `Immutable`、 `WriteOnly`、。 默认值为 `ReadWrite`。|
+|name           |String     |属性的名称。 在对象定义中必须是唯一的。 不可为 null。|
+|必需       |Boolean    |`true`if 属性是必需的。 如果缺少任何必需的属性, 则不能创建对象。 如果在同步过程中, 所需的属性没有任何值, 则将使用默认值。 如果默认值未设置, 则同步将记录一个错误。|
+|referencedObjects|[referencedObject](../resources/synchronization-referencedobject.md) |对于 " `reference`类型" 的属性, 列出引用的对象 (例如`manager` , 属性将`User`作为被引用对象的列表)。|
 |type           |String     |属性值类型。 可取值为：`String`、`Integer`、`Reference`、`Binary` 或 `Boolean`。 默认值为 `String`。|
 
 ## <a name="json-representation"></a>JSON 表示形式
