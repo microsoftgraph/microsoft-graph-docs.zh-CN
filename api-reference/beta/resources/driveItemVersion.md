@@ -5,12 +5,12 @@ ms.date: 09/17/2017
 title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3be7cd044b65eccd2370a2848258b415c5e70b00
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f8b846652f930bd7d9337c0accc0ccbe7a60d1a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543215"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334558"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
 
@@ -39,15 +39,16 @@ ms.locfileid: "32543215"
 
 ## <a name="json-representation"></a>JSON 表示形式
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemVersion", "@type.aka": "oneDrive.driveItemVersion" } -->
+<!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.driveItemVersion", "@type.aka": "oneDrive.driveItemVersion" } -->
 
 ```json
 {
-  "content": { "@odata.type": "Edm.Stream" },
+  "content": {"@odata.type": "Edm.Stream"},
   "id": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
-  "publication": { "@odata.type": "microsoft.graph.publicationFacet" }
+  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
+  "size": 12356
 }
 ```
 
@@ -76,8 +77,6 @@ ms.locfileid: "32543215"
   "keywords": "version,versions,version-history,history",
   "section": "documentation",
   "tocPath": "Facets/Version",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/driveItemVersion.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

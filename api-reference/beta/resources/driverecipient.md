@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 47a080b4f81645cfe5098ec8391d58cf07fca466
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c1a121969bf6b36c8afccd367a084a4b75599eaf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543145"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334590"
 ---
 # <a name="driverecipient-resource"></a>DriveRecipient 资源
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **DriveRecipient** 资源表示用户、组或其他收件人使用 [invite](../api/driveitem-invite.md) 操作进行共享。
 
@@ -43,10 +45,13 @@ ms.locfileid: "32543145"
 
 当使用 [邀请](../api/driveitem-invite.md) 添加权限时，DriveRecipient 可以指定**电子邮件**、**别名**或**对象 ID**。这些值中只有一个是必需的。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Recipients resource defines a single recipient for the sharing invitation and permissions collection.",
   "keywords": "sharing,share,permissions,action.invite,invite,email",
   "section": "documentation",
-  "tocPath": "Resources/Recipients"
-} -->
+  "tocPath": "Resources/Recipients",
+  "suppressions": []
+}
+-->

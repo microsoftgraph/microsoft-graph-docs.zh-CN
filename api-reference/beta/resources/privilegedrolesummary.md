@@ -2,12 +2,12 @@
 title: privilegedRoleSummary 资源类型
 description: 特定角色的统计信息摘要。
 localization_priority: Normal
-ms.openlocfilehash: 2ed34f556f52c41729bfa108fbb6eb0c608f6b67
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3e7b447f63c5f8545021508ae2dc137bef845210
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563432"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344260"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>privilegedRoleSummary 资源类型
 
@@ -28,8 +28,8 @@ ms.locfileid: "32563432"
 |elevatedCount|时会|已分配角色并激活角色的用户数量。|
 |id|string| 角色的唯一标识符。 只读。|
 |managedCount|时会|已分配角色但角色被停用的用户数量。|
-|mfaEnabled|布尔|**如此**如果角色激活需要进行 MFA。 **假**如果角色激活不需要进行 MFA。|
-|status|string| 可取值为：`ok`、`bad`。 值取决于 (managedCount/usersCount) 的比率。 如果该比率小于预定义的阈值, `ok`则返回。 否则, `bad`将返回。|
+|mfaEnabled|boolean|**如此**如果角色激活需要进行 MFA。 **假**如果角色激活不需要进行 MFA。|
+|状态|string| 可取值为：`ok`、`bad`。 值取决于 (managedCount/usersCount) 的比率。 如果该比率小于预定义的阈值, `ok`则返回。 否则, `bad`将返回。|
 |usersCount|时会|为角色分配的用户数。|
 
 ## <a name="relationships"></a>关系
@@ -69,8 +69,6 @@ ms.locfileid: "32563432"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedrolesummary.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

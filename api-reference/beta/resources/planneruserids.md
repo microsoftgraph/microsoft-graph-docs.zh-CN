@@ -4,14 +4,16 @@ description: '**plannerUserIds**资源表示与计划共享的用户 id 的列�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 3c5f6fd3048924326d4878f2984a2b1077f074df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 83717714d58cd0c442b42c23c9aa361bcd3b2261
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563611"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344369"
 ---
 # <a name="planneruserids-resource-type"></a>plannerUserIds 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **plannerUserIds**资源表示与[计划](plannerplan.md)共享的用户 id 的列表。 这是开放类型。 如果您使用的是 Office 365 组, 请使用组 API 来管理组成员身份, 以共享[组的](group.md)计划。 您还可以将组的现有成员添加到此集合中, 但它们不需要他们访问该组拥有的计划。
 
@@ -26,8 +28,9 @@ ms.locfileid: "32563611"
 
 <!-- {
   "blockType": "resource",
-  "openType": true,
-  "optionalProperties": [ "String-value" ],
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.plannerUserIds"
 }-->
 
@@ -47,10 +50,13 @@ ms.locfileid: "32563611"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerUserIds resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

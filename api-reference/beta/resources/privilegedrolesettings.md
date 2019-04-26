@@ -2,12 +2,12 @@
 title: privilegedRoleSettings 资源类型
 description: 表示特权角色的设置。
 localization_priority: Normal
-ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6500d5a51fcedce97d71c1c4022c7d941de27b83
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563246"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344211"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>privilegedRoleSettings 资源类型
 
@@ -27,15 +27,15 @@ ms.locfileid: "32563246"
 |:---------------|:--------|:----------|
 |elevationDuration|duration|激活角色的持续时间。|
 |id|string| 角色设置的唯一标识符。 只读。|
-|isMfaOnElevationConfigurable|布尔|如果 mfaOnElevation 是可配置的,**则为 true** 。 **假**如果 mfaOnElevation 不可配置。|
-|lastGlobalAdmin|布尔|仅供内部使用。|
+|isMfaOnElevationConfigurable|boolean|如果 mfaOnElevation 是可配置的,**则为 true** 。 **假**如果 mfaOnElevation 不可配置。|
+|lastGlobalAdmin|boolean|仅供内部使用。|
 |maxElavationDuration|duration|已激活角色的最大持续时间。|
-|mfaOnElevation|布尔|如果需要 MFA 以激活角色,**则为 true** 。 **假**如果无需进行 MFA 即可激活角色。|
+|mfaOnElevation|boolean|如果需要 MFA 以激活角色,**则为 true** 。 **假**如果无需进行 MFA 即可激活角色。|
 |minElevationDuration|duration|已激活角色的最短持续时间。|
-|notificationToUserOnElevation|布尔|如果激活角色时向最终用户发送通知,**则为 true** 。 **假**如果在角色激活时不发送通知。|
-|ticketingInfoOnElevation|布尔|如果激活角色时需要票证信息,**则为 true** 。 **假**如果激活角色时不需要票证信息。|
-|approvalOnElevation|布尔|如果激活角色时需要进行审批,**则为 true** 。 **假**如果激活该角色时不需要审批。|
-|approverIds|数组|审批 id 的列表 (如果激活需要审批)。|
+|notificationToUserOnElevation|boolean|如果激活角色时向最终用户发送通知,**则为 true** 。 **假**如果在角色激活时不发送通知。|
+|ticketingInfoOnElevation|boolean|如果激活角色时需要票证信息,**则为 true** 。 **假**如果激活角色时不需要票证信息。|
+|approvalOnElevation|boolean|如果激活角色时需要进行审批,**则为 true** 。 **假**如果激活该角色时不需要审批。|
+|approverIds| 字符串集合 |审批 id 的列表 (如果激活需要审批)。|
 
 ## <a name="relationships"></a>关系
 无
@@ -65,7 +65,7 @@ ms.locfileid: "32563246"
   "notificationToUserOnElevation": true,
   "ticketingInfoOnElevation": true,
   "approvalOnElevation": false,
-  "approverIds": []
+  "approverIds": ["string"]
 }
 
 ```
@@ -79,8 +79,6 @@ ms.locfileid: "32563246"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedrolesettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

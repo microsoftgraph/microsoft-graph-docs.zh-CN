@@ -2,12 +2,12 @@
 title: 程序资源类型
 description: '在 Azure AD access 评论功能中, 程序是容器, 保留程序控件。 一个租户可以有一个或多个程序。  每个控件都将访问审核链接到某个程序, 以便更轻松地找到相关的访问评审。  '
 localization_priority: Normal
-ms.openlocfilehash: 2498279f27f5859eadcfa1d70662e3d8f3b5246c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c0016cb194acd7ad8533acb34650b57df720ace
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563373"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344017"
 ---
 # <a name="program-resource-type"></a>程序资源类型
 
@@ -27,15 +27,6 @@ ms.locfileid: "32563373"
 |[列出程序](../api/program-list.md) |  [程序](program.md)集|   获取所有程序的集合。|
 |[列出程序的 programControls](../api/program-listcontrols.md) |      [programControl](programcontrol.md)集合| 获取程序的控件的集合。|
 |[更新程序](../api/program-update.md) |   [主程序](program.md)|  更新程序。|
-
-## <a name="permissions"></a>权限
-
-|权限类型                        | 权限（从最低特权到最高特权）              |
-|:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | ProgramControl、ProgramControl 和所有 |
-|委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
-
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -58,6 +49,7 @@ ms.locfileid: "32563373"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.program"
 }-->
 
@@ -77,8 +69,6 @@ ms.locfileid: "32563373"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/program.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

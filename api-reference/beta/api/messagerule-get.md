@@ -4,15 +4,16 @@ description: 获取 messageRule 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7bf99f574d8e1a14ffaa7295d51a0dafca0d4628
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 53b1b4db43ed6a9e94564c618e0c302f4ec16bad
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540356"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333189"
 ---
 # <a name="get-rule"></a>获取 rule
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取 [messageRule](../resources/messagerule.md) 对象的属性和关系。
 
@@ -29,8 +30,8 @@ ms.locfileid: "32540356"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/inbox/messageRules/{id}
-GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
+GET /me/mailFolders/inbox/messagerules/{id}
+GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
@@ -50,11 +51,10 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "get_messagerule"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
+GET https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。 默认情况下，响应中的 date-time 属性采用的是 UTC。 
@@ -100,10 +100,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get rule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

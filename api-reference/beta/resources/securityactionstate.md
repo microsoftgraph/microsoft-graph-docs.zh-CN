@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 8f789dab438316f16b9c2607947fa08b7fcefdc2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522018"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343394"
 ---
 # <a name="securityactionstate-resource-type"></a>securityActionState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "32522018"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |appId|String|向操作提交更新 (修补程序) 的呼叫应用程序的应用程序 ID。 `appId`应从 auth 令牌中提取, 而不是通过调用应用程序手动输入。|
-|状态|字符串| 此更新中的 securityAction 的状态。 可取值为：`NotStarted`、`Running`、`Completed`、`Failed`。|
+|status|String| 此更新中的 securityAction 的状态。 可取值为：`NotStarted`、`Running`、`Completed`、`Failed`。|
 |updatedDateTime|DateTimeOffset| 更新 actionState 时的时间戳。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |user|String|向操作提交更新 (修补程序) 的已登录用户的用户主体名称。 `user`应从 auth 令牌中提取, 而不是通过调用应用程序手动输入。|
 

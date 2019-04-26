@@ -4,12 +4,12 @@ description: 将用户连接到在用户周围进行趋势分析的文档 (与�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 07fe0f50d6961f0fce6c426c7fb2431f17127bf7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 90ebc84aa66fcd3dfd352d79256b725bf7a6d0e7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551307"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333573"
 ---
 # <a name="trending-resource-type"></a>趋势资源类型
 
@@ -31,32 +31,32 @@ ms.locfileid: "32551307"
 | weight                | 双精度                    | 值, 该值指示文档当前正在进行趋势计算的程度。 数字越大, 文档当前在用户周围的趋势分析越多 (相关性越好)。 返回的文档按此值进行排序。  |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | 可用于在体验中可视化文档的属性。 |
 | resourceReference     | [resourceReference](insights-resourcereference.md)        | 参考趋势文档的属性, 例如文档的 url 和类型。 |
-
-## <a name="relationships"></a>关系
+| lastModifiedDateTime  | DateTimeOffset            | |
+## <a name="relationships"></a>Relationships
 
 | 属性      | 类型          | 说明  |
 | ------------- |---------------| -------------|
-| 资源      | 实体        | 用于导航到趋势文档。 |
+| 资源      | 属性        | 用于导航到趋势文档。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
 下面是资源的 JSON 表示形式。
 
+<!-- {
+  "blockType": "resource",
+  "keyProperty":"id",
+  "optionalProperties": [
+    "resource"
+  ],
+  "@odata.type": "microsoft.graph.trending"
+}-->
+
 ```json
 {
   "id": "string",
   "weight": "double",
-  "resourceVisualization": [{"@odata.type": "microsoft.graph.resourceVisualization"}],
-  "resourceReference": [{"@odata.type": "microsoft.graph.resourceReference"}],
-  
-  "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
+  "resourceVisualization": {"@odata.type": "microsoft.graph.resourceVisualization"},
+  "resourceReference": {"@odata.type": "microsoft.graph.resourceReference"},
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-trending.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

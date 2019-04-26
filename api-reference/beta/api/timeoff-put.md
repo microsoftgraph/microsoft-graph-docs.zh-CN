@@ -4,12 +4,12 @@ description: 替换现有的 timeOff。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: baa95edcece586a481a538d2f0ff68a309c8ce10
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1c959c54ae8b7a20eacf8878e5266b4aea575872
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544342"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335204"
 ---
 # <a name="replace-timeoff"></a>替换 timeOff
 
@@ -106,6 +106,7 @@ Content-length: 401
   "createdDateTime": "2019-03-14T05:35:57.755Z",
   "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
   "lastModifiedBy": {
+    "@odata.type":"microsoft.graph.identitySet",
     "application": null,
     "device": null,
     "conversation": null,
@@ -138,8 +139,6 @@ Content-length: 401
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/timeoff-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

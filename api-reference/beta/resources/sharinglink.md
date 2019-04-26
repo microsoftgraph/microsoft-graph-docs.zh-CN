@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: 7f0ecdbb498ee75133ec9499027f7cfdc6191327
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5a08ca3a1a7b91d5cd2277a71f1301adf5edc93
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583821"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343085"
 ---
 # <a name="sharinglink-resource-type"></a>sharingLink 资源类型
 
@@ -49,7 +49,7 @@ ms.locfileid: "32583821"
 | scope          | 字符串        | 由该权限表示的链接范围。值 `anonymous` 表示该链接对任何人均可用，`organization` 表示该链接仅可由登录到同一个租户的用户使用。
 | preventsDownload | Boolean       | 如果为 true, 则用户只能使用此链接查看 web 上的项目, 并且无法使用它下载项目的内容。 仅适用于 OneDrive for business 和 SharePoint。
 | webHtml        | String        | 对于 `embed` 链接，此属性包含在网页上嵌入项的 `<iframe>` 元素的 HTML 代码。
-| webUrl         | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
+| WebUrl         | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
 
 [Identity]: identity.md
 
@@ -83,8 +83,6 @@ ms.locfileid: "32583821"
   "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sharinglink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

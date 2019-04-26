@@ -4,16 +4,18 @@ description: 检索文件或图像资源对象的二进制数据。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 60cacbe737a475183a5d08457c149c6cb631c63f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7b1a3e13e725df9b344b4612f79aa10fd22429d8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537761"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336330"
 ---
 # <a name="get-resource"></a>获取资源
 
-检索文件或图像[资源](../resources/resource.md)对象的二进制数据。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+检索文件或图像[资源](../resources/onenoteresource.md)对象的二进制数据。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -53,14 +55,14 @@ GET /sites/{id}/onenote/resources/{id}/content
   "name": "get_resource"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
+GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Edm.Stream"
+  "@odata.type": "stream"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -71,10 +73,13 @@ Content-Type: application/octet-stream
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

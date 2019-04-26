@@ -4,12 +4,12 @@ description: shiftItem 代表班次的一个版本。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7ff829ca0f43124404b4b99b048c9919368b6009
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd5b3d224e60fc3f21b4d484952c7a2643b02407
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583784"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343036"
 ---
 # <a name="shiftitem-resource-type"></a>shiftItem 资源类型
 
@@ -20,12 +20,12 @@ ms.locfileid: "32583784"
 ## <a name="properties"></a>属性
 | 属性                         | 类型                    | 说明                                                                             |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| 注释               | `string`                  | 的备注`shiftItem`。      |
-| displayName               | `string`                  | 的名称`shiftItem`。 |
-| startDateTime               | `DateTimeOffset`                  | 的开始日期和时间`shiftItem`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必需。 |
-| endDateTime               | `DateTimeOffset`                  | 的结束日期和时间`shiftItem`。 必需。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
-| theme | `enum`   |    |  |  | 支持的颜色: 白色;变为表示紫粉色黄色底纹darkBlue;darkGreen;darkPurple;darkPink;darkYellow。 |
-| activities    | `collection([shiftActivity](shiftactivity.md))`    | 班次的增量部分, 可包含员工在班次中的时间和地点的详细信息。 例如, 工作分配或计划工间休息或午餐。 此为必需属性。 |
+| 注释               | string                  | 的备注`shiftItem`。      |
+| displayName               | string                  | 的名称`shiftItem`。 |
+| startDateTime               | DateTimeOffset                  | 的开始日期和时间`shiftItem`。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 必需。 |
+| endDateTime               | DateTimeOffset                 | 的结束日期和时间`shiftItem`。 必需。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
+| theme | scheduleEntityTheme   |  支持的颜色: 白色;变为表示紫粉色黄色底纹darkBlue;darkGreen;darkPurple;darkPink;darkYellow。 |
+| activities    | [shiftActivity](shiftactivity.md)集合   | 班次的增量部分, 可包含员工在班次中的时间和地点的详细信息。 例如, 工作分配或计划工间休息或午餐。 此为必需属性。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -38,20 +38,12 @@ ms.locfileid: "32583784"
 }-->
 ```json
 {
-  "displayName": "Day shift",
-  "notes": "Please do inventory as part of your shift.",
-  "startDateTime": "2019-03-11T15:00:00Z",
-  "endDateTime": "2019-03-12T00:00:00Z",
-  "theme": "blue",
-  "activities": [
-    {
-      "isPaid": true,
-      "startDateTime": "2019-03-11T15:00:00Z",
-      "endDateTime": "2019-03-11T15:15:00Z",
-      "code": "",
-      "displayName": "Lunch"
-    }
-  ]
+  "displayName": "String",
+  "notes": "String",
+  "startDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
+  "theme": "String",
+  "activities": [{"@odata.type": "microsoft.graph.shiftActivity"}]
 }
 ```
 
@@ -65,8 +57,6 @@ ms.locfileid: "32583784"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/shiftitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

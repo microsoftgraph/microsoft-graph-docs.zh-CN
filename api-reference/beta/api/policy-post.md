@@ -2,12 +2,12 @@
 title: 创建策略
 description: 通过指定显示名称、策略类型和策略说明来创建新的 policy 对象。
 localization_priority: Normal
-ms.openlocfilehash: 30a311b45f9705a07b62541a4f3a110daade09fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4521f6fb032f936aec27cc5cac47d27e62bd2a3a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546841"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332190"
 ---
 # <a name="create-policy"></a>创建策略
 
@@ -46,7 +46,7 @@ POST /policies
 |:---------------|:--------|:----------|
 |定义|String|[policy](../resources/policy.md)对象的字符串版本。|
 |displayName|String|策略的自定义名称。|
-|类型|String|指定策略的类型。 当前必须是 "TokenLifetimePolicy"|
+|type|String|指定策略的类型。 当前必须是 "TokenLifetimePolicy"|
 
 ## <a name="response"></a>响应
 
@@ -98,8 +98,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/policy-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

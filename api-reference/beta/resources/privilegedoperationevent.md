@@ -2,12 +2,12 @@
 title: privilegedOperationEvent 资源类型
 description: 表示由角色操作的特权标识管理生成的审核事件, 例如管理员管理特权角色、用户激活他的角色, 以及用户停用他的角色。
 localization_priority: Normal
-ms.openlocfilehash: 2ad8f7e5db956dfbb2fa0d74f441b01f2b5d68aa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c7a7cdb31289dc0cdd31c843d18138676d518eb3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563667"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344267"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>privilegedOperationEvent 资源类型
 
@@ -71,7 +71,9 @@ ms.locfileid: "32563667"
   "tenantId": "string",
   "userId": "string",
   "userMail": "string",
-  "userName": "string"
+  "userName": "string",
+  "referenceKey": "string",
+  "referenceSystem": "string"
 }
 
 ```
@@ -85,8 +87,6 @@ ms.locfileid: "32563667"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedoperationevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

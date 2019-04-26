@@ -4,12 +4,12 @@ description: '表示学校的课程。 **educationClass** 资源对应于 Office
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: e02cc4b10e4f1f933921f86735f9b09610cfe818
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2a1fb4434933a4cc41c9a84c54864f2211f40962
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542874"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334423"
 ---
 # <a name="educationclass-resource-type"></a>educationClass 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "32542874"
 |[Remove teacher](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| 通过教师导航属性从课程删除 **educationUser**。|
 |[创建 educationAssignment](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| 通过发布到工作分配集合创建新的**educationAssignment** 。|
 |[列出作业](../api/educationclass-list-assignments.md) |[educationAssignment](../resources/educationassignment.md)集合| 获取**educationAssignment**对象集合。|
-|[Get group](../api/educationclass-get-group.md) |[group](group.md)| 获得与此 **educationClass** 对应的 Office 365 **group**。|
+|[Get group](../api/educationclass-get-group.md) |[组](group.md)| 获得与此 **educationClass** 对应的 Office 365 **group**。|
 |[创建 educationCategory](../api/educationclass-post-category.md) | [educationCategory](educationCategory.md) | 为此类创建新的**educationCategory** 。|
 |[List categories](../api/educationclass-list-categories.md) | [educationCategory](educationCategory.md)集合 | 获取属于此类的**educationCategory**对象的列表。|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)    |更新 **educationClass** 对象。 |
@@ -42,7 +42,7 @@ ms.locfileid: "32542874"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id| 字符串| 课程的唯一标识符。|
-|description|String| 课程说明。|
+|说明|String| 课程说明。|
 |displayName|String| 课程名称。|
 |mailNickname|字符串| 向所有成员发送电子邮件的邮件名称（如果已启用）。 |
 |createdBy|[identitySet](identityset.md)| 创建了课程的实体 |
@@ -56,11 +56,11 @@ ms.locfileid: "32542874"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|members|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为空。|
-|schools|[educationSchool](../resources/educationschool.md) 集合| 与此课程相关的所有学校。 可为空。|
+|members|[educationUser](../resources/educationuser.md) 集合| 课程中的所有用户。 可为 Null。|
+|schools|[educationSchool](../resources/educationschool.md) 集合| 与此课程相关的所有学校。 可为 Null。|
 |teachers|[educationUser](../resources/educationuser.md) 集合|  课程中的所有教师。 可为 NULL。|
-|assignments|[educationAssignment](../resources/educationassignment.md)集合| 与此类关联的所有工作分配。 可为空。|
-|categories|[educationCategory](../resources/educationassignment.md)集合| 与此类关联的所有类别。 可为 Null。|
+|assignments|[educationAssignment](../resources/educationassignment.md)集合| 与此类关联的所有工作分配。 可为 Null。|
+|类别|[educationCategory](../resources/educationassignment.md)集合| 与此类关联的所有类别。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -68,6 +68,7 @@ ms.locfileid: "32542874"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -99,8 +100,6 @@ ms.locfileid: "32542874"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationclass.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

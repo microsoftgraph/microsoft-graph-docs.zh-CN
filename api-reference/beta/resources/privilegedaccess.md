@@ -2,12 +2,12 @@
 title: privilegedAccess 资源类型
 description: " 例如, `privilegedAccess/azureResources`表示用于管理对 Azure 资源的权限访问的 PIM。"
 localization_priority: Normal
-ms.openlocfilehash: 9ac8ab596906509bc0303f9a70794b6484759cc2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2dd131dd8f1ba5a2e7668949d2a03a9ab3321d1d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563658"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344257"
 ---
 # <a name="privilegedaccess-resource-type"></a>privilegedAccess 资源类型
 
@@ -44,6 +44,8 @@ ms.locfileid: "32563658"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedAccess"
 }-->
 
@@ -64,8 +66,6 @@ ms.locfileid: "32563658"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedaccess.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: mailSearchFolder 是用户邮箱中的虚拟文件夹, 其中包含
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ba76029b69d91be39c9d63ca755e8a4603aec0b9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 15f334f2910c962c367242965bd2104c8f3edb79
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562591"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342743"
 ---
 # <a name="mailsearchfolder-resource-type"></a>mailSearchFolder 资源类型
 
@@ -34,7 +34,7 @@ mailSearchFolder 是用户邮箱中的虚拟文件夹, 其中包含与指定的�
 |:---------------|:--------|:----------|
 | isSupported | Boolean | 指示是否可使用 REST api 编辑搜索文件夹。 |
 | includeNestedFolders | Boolean | 指示应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索, 而不是`false`指应改为进行浅表搜索。 |
-| sourceFolderIDs | String collection | 应挖掘的邮箱文件夹。 |
+| sourceFolderIDs | String 集合 | 应挖掘的邮箱文件夹。 |
 | filterQuery | String | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -65,8 +65,6 @@ mailSearchFolder 是用户邮箱中的虚拟文件夹, 其中包含与指定的�
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mailsearchfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,14 +4,16 @@ description: 在用户的默认联系人文件夹下创建新的 contactFolder�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 578798cd73ffef061ca10718d7f3d7dd3adfcec5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a352cf086686c80e189ecf9a769d289c7c807849
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547709"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334515"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在用户的默认联系人文件夹下创建新的 contactFolder。
 
@@ -52,7 +54,7 @@ POST /users/{id | userPrincipalName}/contactFolders
   "name": "create_contactfolder_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/contactFolders
+POST https://graph.microsoft.com/beta/me/contactFolders
 Content-type: application/json
 Content-length: 84
 
@@ -83,10 +85,13 @@ Content-length: 104
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create ContactFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -2,12 +2,12 @@
 title: 服务根
 description: 2015-10-25 14:57:30 UTC-->
 localization_priority: Normal
-ms.openlocfilehash: 5e9c464c50dcbef7a03ca3a2fc2b0aaac40fbb30
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7291528381cc64ef760b2bdaa897b4ba64864cb0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554880"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343288"
 ---
 # <a name="service-root"></a>服务根
 
@@ -26,7 +26,7 @@ ms.locfileid: "32554880"
 |[列出 directoryRoleTemplate](../api/directoryroletemplate-list.md) | [directoryRoleTemplate](directoryroletemplate.md) 集合 |获取 directoryRoleTemplate 对象集合。 |
 |[列出驱动器](../api/drive-list.md) | [驱动器](drive.md) 集合 |获取 drive 对象集合。 |
 |[获取驱动器](../api/drive-get.md) | [驱动器](drive.md)  |获取 drive 对象的属性。 |
-|[创建组](../api/group-post-groups.md) |[组](group.md)| 通过发布到组集合创建新组。|
+|[Create group](../api/group-post-groups.md) |[组](group.md)| 通过发布到组集合创建新组。|
 |[列出组](../api/group-list.md) | [组](group.md) 集合 |获取 group 对象集合。 |
 |[列出组织](../api/organization-list.md) | [组织](organization.md) 集合 |获取 organization 对象集合。 |
 |[列出 subscribedSku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |获取 subscribedSku 对象集合。 |
@@ -45,8 +45,6 @@ ms.locfileid: "32554880"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/service-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

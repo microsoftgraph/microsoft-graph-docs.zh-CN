@@ -4,14 +4,16 @@ description: '将帖子转发给收件人。 您可以在请求中同时指定�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 557eaa7455600fe6da864a70457b4f3094df8c41
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1c2bc617bb1867f5debd90a9f23f9aa3a6761476
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546823"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332213"
 ---
 # <a name="post-forward"></a>帖子：转发
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将帖子转发给收件人。可以在请求中同时指定父对话和线程，或者仅指定父线程，而不指定父对话。 
 
@@ -57,7 +59,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
   "name": "post_forward"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/forward
+POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/forward
 Content-type: application/json
 Content-length: 166
 
@@ -86,10 +88,13 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "post: forward",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -3,14 +3,16 @@ title: imageInfo 资源类型
 description: 一个复杂类型, 用于表示**** activity 对象的 visualInfo 部分中的属性属性。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 112b1dc3d1db45f3fe470c1c21d483b09c00202c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6ffdacefb11f583f8c9529a36472a01537643c3c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563283"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344002"
 ---
 # <a name="imageinfo-resource-type"></a>imageInfo 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 一个复杂类型, 用于表示**** [activity](../resources/projectrome-activity.md)对象的[visualInfo](../resources/projectrome-visualinfo.md)部分中的属性属性。
 
@@ -47,10 +49,13 @@ ms.locfileid: "32563283"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "imageinfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

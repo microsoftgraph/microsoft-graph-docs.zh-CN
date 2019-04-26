@@ -2,12 +2,12 @@
 title: sectionLinks 资源类型
 description: 用于打开 OneNote 分区的链接。
 localization_priority: Normal
-ms.openlocfilehash: a5e2f4800472e8cedc495e6de1c17a6586710e87
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2054e2a7a61d6c715146b51fb97c02516d8b638e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562872"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343421"
 ---
 # <a name="sectionlinks-resource-type"></a>sectionLinks 资源类型
 
@@ -49,8 +49,6 @@ ms.locfileid: "32562872"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sectionlinks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

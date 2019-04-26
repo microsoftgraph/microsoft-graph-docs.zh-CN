@@ -4,12 +4,12 @@ description: ''
 author: ''
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 258cd61b55d0ac8d19f83682fe34d53cc4b233b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1685c58697f9de52e209d508c1ec104b9c044e8d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563013"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343561"
 ---
 # <a name="riskuseractivity-resource-type"></a>riskUserActivity 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "32563013"
 }-->
 ```json
 {
-    "eventTypes": [{"@odata.type":"microsoft.graph.riskEventType"}],
+    "eventTypes": ["String"],
     "detail": "string"
 }
 ```

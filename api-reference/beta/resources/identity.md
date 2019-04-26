@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/14/2017
 title: 身份
 localization_priority: Normal
-ms.openlocfilehash: 1f2d1f5a305698438748ee69f73b4143b8afd8fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2ba76d5bac372be0a40001028dfb54e690a14fa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547384"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333667"
 ---
 # <a name="identity-resource-type"></a>标识资源类型
 
@@ -34,8 +34,8 @@ ms.locfileid: "32547384"
 
 | 属性            | 类型   | 说明                                                                                                                                                                                                                                                                                                           |
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName         | 字符串 | 此身份的显示名称。请注意，此信息不一定可查看或是最新的。例如，如果用户更改了其显示名称，API 可能会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/driveitem-delta.md) 时不会显示更改后的值。  |
-| id                  | String | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
+| displayName         | String | 此身份的显示名称。请注意，此信息不一定可查看或是最新的。例如，如果用户更改了其显示名称，API 可能会在以后的响应中显示新值，但与用户相关联的项在使用 [delta](../api/driveitem-delta.md) 时不会显示更改后的值。  |
+| id                  | 字符串 | 身份的唯一标识符。                                                                                                                                                                                                                                                                                   |
 | tenantId            | String | 租户的唯一标识 (可选)。                                                                                                                                                                                                                                                                             |
 
 ## <a name="remarks"></a>注解
@@ -51,8 +51,6 @@ ms.locfileid: "32547384"
   "keywords": "identity,owner,modifier,app,user,group",
   "section": "documentation",
   "tocPath": "Resources/Identity",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/identity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

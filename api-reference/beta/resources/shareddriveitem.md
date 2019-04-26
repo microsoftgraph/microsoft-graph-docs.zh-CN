@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: b146fdf0f7ee2e2037fcb1d36511d0afa503005b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3c0fa155088e39d69d52d4b14f33662d92666ed6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584102"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343191"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
@@ -50,7 +50,7 @@ ms.locfileid: "32584102"
 
 | 属性 | 类型                          | 说明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | 字符串                        | 要访问的内容的唯一标识符。              |
+| id       | String                        | 要访问的内容的唯一标识符。              |
 | name     | String                        | 共享项的显示名称。                             |
 | 所有者    | [IdentitySet](identityset.md) | 正在引用的共享项的所有者信息。 |
 
@@ -94,8 +94,6 @@ ms.locfileid: "32584102"
   "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
   "tocPath": "Resources/Share",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/shareddriveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

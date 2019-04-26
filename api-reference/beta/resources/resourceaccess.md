@@ -2,12 +2,12 @@
 title: resourceAccess 资源类型
 description: 指定应用程序所需的 OAuth 2.0 权限范围或应用程序角色。 requiredResourceAccess 类型的**resourceAccess**属性是**resourceAccess**的集合。
 localization_priority: Normal
-ms.openlocfilehash: 1e741aa49e56b304c265a5fd701fdac37feb29dd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bb77a12a207e274b27263029d96f4ef260cfe5cb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563038"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343631"
 ---
 # <a name="resourceaccess-resource-type"></a>resourceAccess 资源类型
 
@@ -50,8 +50,6 @@ ms.locfileid: "32563038"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/resourceaccess.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

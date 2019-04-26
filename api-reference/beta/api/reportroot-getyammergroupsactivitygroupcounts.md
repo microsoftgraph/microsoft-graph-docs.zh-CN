@@ -4,12 +4,12 @@ description: 获取存在的总组数，以及有多少组包含组对话活动�
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 74666e660270e0f43aca21158991fe092a87534f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 32ddc7605a6fd36751920dc15463d93848aa9d10
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537857"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336306"
 ---
 # <a name="reportroot-getyammergroupsactivitygroupcounts"></a>reportRoot: getYammerGroupsActivityGroupCounts
 
@@ -27,7 +27,7 @@ ms.locfileid: "32537857"
 | :------------------------------------- | :--------------------------------------- |
 | 委派（工作或学校帐户）     | Reports.Read.All                         |
 | 委派（个人 Microsoft 帐户） | 不支持。                           |
-| 应用程序                            | Reports.Read.All                         |
+| 应用                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -138,14 +138,15 @@ GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityGroupCounts(
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.yammerGroupsActivityGroupCounts"
+  "@odata.type": "microsoft.graph.yammerGroupsActivityGroupCounts",
+  "isCollection": true
 } -->
 
 ```http
@@ -157,7 +158,7 @@ Content-Length: 236
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.yammerGroupsActivityGroupCounts)", 
   "value": [
     {
-      "reportRefreshDate": "2017-09-01", 
+      "reportRefreshDate": "2017-09-01",
       "total": 50, 
       "active": 41, 
       "reportDate": "2017-09-01", 
@@ -166,11 +167,3 @@ Content-Length: 236
   ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/reportroot-getyammergroupsactivitygroupcounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

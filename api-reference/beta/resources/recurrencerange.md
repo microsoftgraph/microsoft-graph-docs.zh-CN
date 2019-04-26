@@ -2,12 +2,12 @@
 title: recurrenceRange 资源类型
 description: '描述了定期事件在哪个日期范围内重复发生。 '
 localization_priority: Normal
-ms.openlocfilehash: cee5a06d8f76264cd7c98924c532c8f864cab87d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f20d8b134f4b1e0f338b615dd3129a17d585ca94
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563080"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343887"
 ---
 # <a name="recurrencerange-resource-type"></a>recurrenceRange 资源类型
 
@@ -69,8 +69,7 @@ ms.locfileid: "32563080"
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Warning: /api-reference/beta/resources/recurrencerange.md:\r\n      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |",
-    "Error: /api-reference/beta/resources/recurrencerange.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Warning: /api-reference/beta/resources/recurrencerange.md:\r\n      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |"
   ]
 }
 -->

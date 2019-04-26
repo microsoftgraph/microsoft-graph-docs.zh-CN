@@ -4,12 +4,12 @@ description: 用于指示无媒体的媒体配置。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d564493889cc367ecdb697ce4031c40a4cbbbef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec1c70e233f46ad0098a6a7ee76d4d46f3b82c20
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581623"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342151"
 ---
 # <a name="nomediaconfig-resource-type"></a>noMediaConfig 资源类型
 
@@ -32,6 +32,7 @@ ms.locfileid: "32581623"
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.noMediaConfig"
 }-->
 ```json
@@ -49,8 +50,6 @@ ms.locfileid: "32581623"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/nomediaconfig.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

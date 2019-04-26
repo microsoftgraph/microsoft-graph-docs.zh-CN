@@ -3,12 +3,12 @@ title: 使用 Microsoft Graph API 获取更改通知
 description: Microsoft Graph REST API 使用 webhook 机制将更改通知传递给客户端。 客户端是用于配置自身的 URL 以接收通知的 Web 服务。 客户端应用使用通知在更改时更新其状态。 有关更多详细信息, 包括如何订阅和处理传入通知, 请参阅设置用户数据中的更改通知。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 1d7a3d868ffc640f7659623942ac102575fb94fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8422328061ac1c2ad736435204b699544bffd2ed
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453920"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341503"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -36,7 +36,7 @@ Microsoft Graph REST API 使用 webhook 机制将更改通知传递给客户端�
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | 委派的工作或学校帐户     | [警报][]、[联系人][]、[对话][]、 [driveItem][]、[事件][]、[组][]、[邮件][]、[用户][]|
 | 委派-个人 Microsoft 帐户 | [contact][]、 [driveItem][]、 [event][]、 [message][]                                        |
-| Application                            | [alert][]、 [contact][]、 [driveItem][]、 [event][]、 [group][]、 [message][]、 [user][]|
+| 应用程序                            | [alert][]、 [contact][]、 [driveItem][]、 [event][]、 [group][]、 [message][]、 [user][]|
 
 ## <a name="see-also"></a>另请参阅
 
@@ -47,7 +47,7 @@ Microsoft Graph REST API 使用 webhook 机制将更改通知传递给客户端�
 - [更新订阅](../api/subscription-update.md)
 - [删除订阅](../api/subscription-delete.md)
 
-[contact]: ./contact.md
+[联系人]: ./contact.md
 [对话]: ./conversation.md
 [driveItem]: ./driveitem.md
 [事件]: ./event.md
@@ -55,11 +55,3 @@ Microsoft Graph REST API 使用 webhook 机制将更改通知传递给客户端�
 [邮件]: ./message.md
 [用户]: ./user.md
 [警报]: ./alert.md
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/webhooks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -4,12 +4,12 @@ description: 系统中的用户。 这是特定于教育的用户变体，具有
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d0467ed9ac03a1607d575b6eac5f6b3330b68c3c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2c415507dc6dc2bfbb2f1410168b97a9e3ced770
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542926"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333941"
 ---
 # <a name="educationuser-resource-type"></a>educationUser 资源类型
 
@@ -65,9 +65,9 @@ ms.locfileid: "32542926"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|classes|[educationClass](educationclass.md) 集合| 用户所属的课程。 可为空。|
+|classes|[educationClass](educationclass.md) 集合| 用户所属的课程。 可为 Null。|
 |schools|[educationSchool](educationschool.md) 集合| 用户所属的学校。 可为 NULL。|
-|assignments| [educationAssignment](educationassignment.md)| 用户的分配列表。 可为 Null。|
+|assignments| [educationAssignment](educationassignment.md)| 用户的工作分配列表。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -75,6 +75,7 @@ ms.locfileid: "32542926"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -96,7 +97,21 @@ ms.locfileid: "32542926"
   "primaryRole": "string",
   "residenceAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
   "student": {"@odata.type": "microsoft.graph.educationStudent"},
-  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"}
+  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"},
+  "accountEnabled": true,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
+  "businessPhones": ["string"],
+  "department": "string",
+  "mailNickname": "string",
+  "passwordPolicies": "string",
+  "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
+  "preferredLanguage": "string",
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
+  "relatedContacts": [{"@odata.type": "microsoft.graph.relatedContact"}],
+  "usageLocation": "string",
+  "userPrincipalName": "string",
+  "userType": "string"
 }
 
 ```
@@ -110,8 +125,6 @@ ms.locfileid: "32542926"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

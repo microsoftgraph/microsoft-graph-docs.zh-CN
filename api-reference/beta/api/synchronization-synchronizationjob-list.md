@@ -2,12 +2,12 @@
 title: 列出同步作业
 description: 列出给定应用程序实例 (服务主体) 的现有作业。
 localization_priority: Normal
-ms.openlocfilehash: 265b1f5a32239173154ef51077d59f3104ad03b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7f4098b0df22daacca6a2de50b2c41e4e8dea0fc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545140"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335694"
 ---
 # <a name="list-synchronization-jobs"></a>列出同步作业
 
@@ -108,8 +108,6 @@ Content-length: 2958
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationjob-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

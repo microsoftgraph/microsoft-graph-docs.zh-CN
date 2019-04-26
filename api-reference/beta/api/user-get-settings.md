@@ -2,16 +2,18 @@
 title: 获取设置
 description: 读取用户和组织设置对象。
 author: dkershaw10
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 128feebf624350baaea9fee41c411bd46c2b42c5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dcd9079956b4db8b349ba6b81bd85d8472630643
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536559"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334907"
 ---
 # <a name="get-settings"></a>获取设置
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 读取用户和组织[设置](../resources/user-settings.md)对象。
 若要了解如何更新[settings](../resources/user-settings.md)对象的属性, 请参阅[更新用户设置](user-update-settings.md)。
@@ -22,8 +24,8 @@ ms.locfileid: "32536559"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
+|委托（工作或学校帐户） | User.Read.All、User.ReadWrite.All    |
+|委托（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | user. all、user. ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -51,7 +53,7 @@ GET /users/{id | userPrincipalName}/settings/
 ##### <a name="request"></a>请求
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/settings
+GET https://graph.microsoft.com/beta/me/settings
 ```
 
 ##### <a name="response"></a>响应
@@ -68,4 +70,3 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": false
 }
 ```
-

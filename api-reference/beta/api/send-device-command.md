@@ -2,12 +2,12 @@
 title: 发送设备命令
 description: '此 API 使 Project 罗马功能能够命令与 Microsoft 帐户关联的设备。 在`me/devices`执行 GET 呼叫后, 传入设备的 ID 以向设备发出命令。 支持两种类型的命令: LaunchURI 和 AppServices。 如果使用的是 LaunchURI, 请指定*type*和*载荷*参数。 对于 AppService 调用, 请指定 '
 localization_priority: Normal
-ms.openlocfilehash: d0c25200933a4a87a66349e457c500c496272b08
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ec87825eec72a68dce236d61b17b504a194e75a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537523"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336037"
 ---
 # <a name="send-device-command"></a>发送设备命令
 
@@ -78,14 +78,14 @@ HTTP/1.1 201 OK
 ```
 ## <a name="command-properties"></a>命令属性 
 
-|**Name**|**Type**|**说明**|
+|**Name**|**类型**|**说明**|
 |:----|:------|:------|
 |payload | microsoft. json| 要发送到应用程序服务或启动设备上的 URI 的有效负载。 |
 |responsePayload | microsoft. json| 从目标设备返回的有效负载。 |
 |postBackURI | String | 回发 URI 以发送后续的更新通知。 |
 |packageFamilyName | String | Windows 程序包系列应用程序的名称。 |
 |appServiceName | String | 由目标应用程序定义的应用服务的名称。 如果启动应用服务, 则为必需。 |
-|类型| String | LaunchURI 或 AppService。 |
+|type| String | LaunchURI 或 AppService。 |
 |id| String | 已发送到设备的命令的 ID。 |
 |actionStatus | String | 命令的[状态](get-device-command-status.md)。 |
 |error| String| 与目标应用程序中的请求关联的任何错误。 |
@@ -115,12 +115,12 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>响应 
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
+  "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
 
@@ -174,12 +174,12 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
+  "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
 
@@ -202,11 +202,3 @@ HTTP/1.1 201 OK
   }
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/send-device-command.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

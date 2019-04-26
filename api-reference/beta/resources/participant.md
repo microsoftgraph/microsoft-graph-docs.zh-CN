@@ -4,12 +4,12 @@ description: 参与者类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f49526824b2b6c4eb4a5065f05ab4c765d299faa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a138267529127562fa9df42d8b20a985939b50e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568637"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345013"
 ---
 # <a name="participant-resource-type"></a>参与者资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "32568637"
 | [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | 配置参与者音频混合器。            |
 | [邀请](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | 邀请参与者加入呼叫。                 |
 | [参与者静音](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | 将呼叫中的参与者静音。                     |
-| [所有参与者静音](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | 将会议中的所有参与者设为静音。         |
+| [为所有参与者静音](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | 将会议中的所有参与者设为静音。         |
 
 ## <a name="properties"></a>属性
 
@@ -33,8 +33,8 @@ ms.locfileid: "32568637"
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | 参与者 id。                                          |
 | info                 | [participantInfo](participantinfo.md)    | 参与者的参与者。                          |
-| isInLobby            | 布尔                                  | 如果参与者在会议厅中, 则为 true                          |
-| isMuted              | 布尔                                  | 如果参与者处于静音 (客户端或服务器为静音)    |
+| isInLobby            | boolean                                  | 如果参与者在会议厅中, 则为 true                          |
+| isMuted              | boolean                                  | 如果参与者处于静音 (客户端或服务器为静音)    |
 | mediaStreams         | [mediaStream](mediastream.md)集合 | 媒体流的列表。                                   |
 | metadata             | String                                   | 名单中的参与者提供的数据 blob     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | 有关参与者是否有录制功能的信息。 |
@@ -112,8 +112,6 @@ ms.locfileid: "32568637"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/participant.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

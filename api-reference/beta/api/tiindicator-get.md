@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 5376200bc2824d51dd1eec2a442b797836855fdb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544517"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335246"
 ---
 # <a name="get-threat-intelligence-indicator"></a>获取威胁智能指示器
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/security/tiIndicators/{id}
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 > [!NOTE]
 > 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。

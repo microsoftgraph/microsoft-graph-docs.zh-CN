@@ -3,12 +3,12 @@ title: 活动资源类型
 description: 代表某个应用程序内的单个活动, 例如电视节目、文档或视频游戏中的当前市场活动。 当用户参与该活动时, 会将该预订作为历史项目进行捕获, 以指示该活动的开始时间和结束时间。 随着时间的推移, 用户随着时间的推移而重新参与该活动, 会为单个用户活动记录多个历史记录项目。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 5deaab5d7ea071bfda686380d49fb41214a7b29e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ae3fb47961140a784a1fa15fc606fd8967be96b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563340"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344006"
 ---
 # <a name="activity-resource-type"></a>活动资源类型
 
@@ -48,7 +48,7 @@ ms.locfileid: "32563340"
 |visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | 必需。 包含用于在 UX 中呈现活动的信息的对象。|
 |contentInfo | 非类型化 JSON 对象 | 可选。 根据[schema.org](https://schema.org)语法的内容的自定义数据 JSON-LD 可扩展说明。|
 |expirationDateTime | DateTimeOffset | 由服务器进行设置。 当对象在服务器上过期时的日期时间 (UTC)。|
-|状态 | EnumType | 由服务器进行设置。 用于标识有效对象的状态代码。 值: 活动、已更新、已删除、已忽略。|
+|状态 | string | 由服务器进行设置。 用于标识有效对象的状态代码。 值: 活动、已更新、已删除、已忽略。|
 
 ## <a name="relationships"></a>关系
 
@@ -71,6 +71,7 @@ ms.locfileid: "32563340"
     "visualElements",
     "historyItems"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.activity"
 }-->
 
@@ -87,7 +88,7 @@ ms.locfileid: "32563340"
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
-    "status": "EnumType",
+    "status": "string",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]
@@ -103,8 +104,6 @@ ms.locfileid: "32563340"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/projectrome-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

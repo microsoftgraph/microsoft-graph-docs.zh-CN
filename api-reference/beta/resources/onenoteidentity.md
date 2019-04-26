@@ -4,12 +4,12 @@ description: '**支持即将推出**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: f1b03ad907a0b8f6f3cf2674d74f1ee8722357ea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee5eb0db40516e1069fe8e40a8711cf97ae18eaa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525017"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341496"
 ---
 # <a name="onenoteidentity-resource-type"></a>oneNoteIdentity 资源类型
 
@@ -31,7 +31,7 @@ OneNoteIdentity 类型表示_用户_的标识。
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.onenoteidentity"
+  "@odata.type": "microsoft.graph.onenoteIdentity"
 }-->
 
 ```json
@@ -56,8 +56,6 @@ OneNoteIdentity 类型表示_用户_的标识。
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onenoteidentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

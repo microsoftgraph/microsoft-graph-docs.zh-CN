@@ -4,12 +4,12 @@ description: 表示一组用于将源目录中的教育实体和名单信息同�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e1b81ff14aca2b0f81a7f50e01aed6281d03d14d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1926c591a679bd4fd97ceeeb7fab542af9e02544
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542865"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334042"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>educationSynchronizationProfile 资源类型
 
@@ -41,9 +41,9 @@ ms.locfileid: "32542865"
 | **dataProvider** | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md) |  用于配置文件的数据提供程序。         |
 | **identitySynchronizationConfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | 标识的[创建](educationidentitycreationconfiguration.md)或[匹配](educationidentitymatchingconfiguration.md)配置。        |
 | **licensesToAssign** | [educationSynchronizationLicenseAssignment](educationsynchronizationlicenseassignment.md)集合|  许可证安装程序配置。        |
-| **state** | educationSynchronizationProfileState |  配置文件的状态。 可取值为：`provisioning`、`provisioned`、`provisioningFailed`、`deleting` 或 `deletionFailed`。          |
+| **state** | educationSynchronizationProfileState |  配置文件的状态。 可取值为：`provisioning`、`provisioned`、`provisioningFailed`、`deleting`、`deletionFailed`。          |
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 
 | 属性 | 类型 | 说明 |
 |:-|:-|:-|
@@ -55,14 +55,17 @@ ms.locfileid: "32542865"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationSynchronizationProfile"
 }-->
 
 ```json
 {
+    "id": "String",
     "displayName": "String",
     "state": { "@odata.type": "microsoft.graph.educationSynchronizationProfileState" },
     "profileStatus": {"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"},
@@ -73,11 +76,3 @@ ms.locfileid: "32542865"
     "handleSpecialCharacterConstraint": "Boolean"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationsynchronizationprofile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -4,12 +4,12 @@ description: 捕获有关会议的信息, 包括联接 URL、与会者列表和�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d7009ceaf815986d50c8eb3b64d2541c32f01a88
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 698058fa918462448fcd115d5573e13ada49162e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568856"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341839"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
@@ -27,21 +27,21 @@ ms.locfileid: "32568856"
 
 | 属性                  | 类型                                                   | 说明                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| accessLevel               | String                                                 | 控制联机会议的许可的访问级别。 可取值为：`everyone`、`invited`、`locked`、`sameEnterprise` 或 `unknown`。 |
+| accessLevel               | String                                                 | 控制联机会议的许可的访问级别。 可取值为：`everyone`、`invited`、`locked`、`sameEnterprise`、`unknown`。 |
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | 表示 onlineMeeting 的电话访问信息。 |
-| canceledDateTime          | 日期/时间                                               | 取消会议的时间。 |
+| canceledDateTime          | 日期时间                                               | 取消会议的时间。 |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | 与此会议关联的聊天。 |
-| creationDateTime          | 日期/时间                                               | 会议的创建时间。 只读.
-| endDateTime               | 日期/时间                                               | 会议的结束时间。 |
-| entryExitAnnouncement     | Boolean                                                | 联机会议的出席通知状态。 启用出席通知后, 联机会议将宣布 participantswho 的名称通过音频加入会议。 |
-| expirationDateTime        | 日期/时间                                               | 可在其后删除联机会议的绝对协调通用时间 (UTC) 日期和时间。 日期和时间必须在服务器上的当前日期和时间之后的一年前一年和之后10年。 |
+| creationDateTime          | 日期时间                                               | 会议的创建时间。 只读。
+| endDateTime               | 日期时间                                               | 会议的结束时间。 |
+| entryExitAnnouncement     | Boolean                                                | 联机会议的出席通知状态。 启用出席通知后, 联机会议将通知通过音频加入会议的参与者的姓名。 |
+| expirationDateTime        | 日期时间                                               | 可在其后删除联机会议的绝对协调通用时间 (UTC) 日期和时间。 日期和时间必须在服务器上的当前日期和时间之后的一年前一年和之后10年。 |
 | id                        | 字符串                                                 | 与联机会议相关联的 ID。 在 GET HTTP 请求中用作 ID。 只读。 由服务器生成。 |
 | isCancelled               | Boolean                                                | 会议是否已被取消。 |
 | joinUrl                   | String                                                 | 从 web 加入联机会议时使用的 URL。 |
-| meetingType               | String                                                 | 可能的值是`meetNow`: `scheduled`、 `recurring`、、`broadcast` |
+| meetingType               | String                                                 | 可能的值为`meetNow`: `scheduled`、 `recurring`、 `broadcast` 、(注意: [create onlineMeeting](../api/application-post-onlinemeetings.md)仅`meetNow`支持)。 |
 | participants              | [meetingParticipants](meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
-| startDateTime             | 日期/时间                                               | 会议的开始时间。 |
-| 主题                   | String                                                 | 联机会议的主题。 |
+| startDateTime             | 日期时间                                               | 会议的开始时间。 |
+| subject                   | String                                                 | 联机会议的主题。 |
 
 ## <a name="relationships"></a>关系
 无
@@ -76,18 +76,3 @@ ms.locfileid: "32568856"
   "subject": "String"
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "onlineMeeting resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onlinemeeting.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -4,12 +4,12 @@ description: 对与 Outlook 相关的资源的标识符进行格式转换。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1721f30ea34f02a63d841c77f7c44d50e98624b3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536479"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334627"
 ---
 # <a name="user-translateexchangeids"></a>用户: translateExchangeIds
 
@@ -46,7 +46,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| inputIds | Edm 字符串集合 | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型, 并且必须是同一邮箱中的项目。 此集合的最大大小为1000个字符串。 |
+| inputIds | String 集合 | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型, 并且必须是同一邮箱中的项目。 此集合的最大大小为1000个字符串。 |
 | sourceIdType | exchangeIdFormat | `InputIds`参数中标识符的 ID 类型。 |
 | targetIdType | exchangeIdFormat | 要转换为的请求的 ID 类型。 |
 
@@ -114,21 +114,13 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1},
+      "sourceId": "{rest-formatted-id-1}",
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2},
+      "sourceId": "{rest-formatted-id-2}",
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

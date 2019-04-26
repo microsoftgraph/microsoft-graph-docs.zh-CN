@@ -4,12 +4,12 @@ description: '**plannerChecklistItem**资源表示任务清单中的项。 任�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 87f7349e20245068a0a29a179ddb5505cd3be0ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: deb168fa123c893d0d3793b0e67f65b6da2819b5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32579042"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344499"
 ---
 # <a name="plannerchecklistitem-resource-type"></a>plannerChecklistItem 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "32579042"
 |lastModifiedBy|[identitySet](identityset.md)| 只读。 上次修改此 ID 的用户 ID。|
 |lastModifiedDateTime|DateTimeOffset|只读。 上次修改的日期和时间。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |orderHint|String|用于设置清单中项的相对顺序。 格式定义如下所示。 [](planner-order-hint-format.md)|
-|title|字符串|检查表项的标题|
+|title|String|检查表项的标题|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -58,8 +58,6 @@ ms.locfileid: "32579042"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerchecklistitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

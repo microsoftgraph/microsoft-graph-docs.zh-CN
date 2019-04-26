@@ -4,16 +4,16 @@ description: 还原存档的团队。 这将恢复用户发送邮件和编辑团
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0c39cac6a61f09c0531f1c337ff01e1b3c077b67
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3af0f2b0434e1883a95210eaf46129921fd176cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536789"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335220"
 ---
 # <a name="unarchive-team"></a>解档团队
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 还原存档的[团队](../resources/team.md)。 这将恢复用户发送邮件和编辑团队的能力, abiding 受租户和团队设置的支持。 使用[存档](team-archive.md)API 存档团队。
 
@@ -56,7 +56,7 @@ POST /teams/{id}/unarchive
   "name": "unarchive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
+POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 ```
 
 #### <a name="response"></a>响应
@@ -70,10 +70,13 @@ Content-Length: 0
 
 <!-- uuid: 9a9bb83f-6f35-4426-bb04-73ca43ad6cc8
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Unarchive team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

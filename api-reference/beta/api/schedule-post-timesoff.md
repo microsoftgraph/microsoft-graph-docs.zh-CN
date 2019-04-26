@@ -4,12 +4,12 @@ description: 创建新的 timeOff。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: df954be9d07797e663b205af6d4dc1ef5dfb20ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a17221aa3a9a8221cdf87ae17614bb09a22e46c2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545584"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336100"
 ---
 # <a name="create-timeoff"></a>创建 timeOff
 
@@ -77,7 +77,6 @@ Content-type: application/json
   }
 }
 ```
-
 #### <a name="response"></a>响应
 
 下面展示了示例响应。 
@@ -86,7 +85,7 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "schedule-post-timesoff"
+  "@odata.type":"microsoft.graph.timeOff"
 } -->
 
 ```http
@@ -131,8 +130,6 @@ Content-length: 401
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/schedule-post-timesoff.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

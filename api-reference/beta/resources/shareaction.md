@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ShareAction
 localization_priority: Normal
-ms.openlocfilehash: 785a0a9ac9a2a1ecbd40c0d8ccae16dca9594fdf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 02098dd5bee739a078d8d9e3e744f7282ccb20bd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584088"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343192"
 ---
 # <a name="shareaction-resource-type"></a>ShareAction 资源类型
 
