@@ -1,44 +1,44 @@
 ---
 title: plannerPlan 资源类型
-description: '**PlannerPlan**资源表示 Office 365 中的计划。 规划组可以拥有和包含 plannerTasks 的集合。 它还可以具有 plannerBuckets 的集合。 每个计划对象有一个详细对象，可以包含有关计划的详细信息。 有关组、 计划和任务之间的关系的详细信息，请参阅计划程序。'
+description: '**plannerPlan** 资源表示 Office 365 中的计划。 计划可以由组所有，并包含 plannerTasks 集合。 其也可以有 plannerBuckets 集合。 每个计划对象具有可以包含此计划的更多信息的详细信息对象。 有关组、计划和任务之间的关系的详细信息，请参阅“Planner”。'
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 9e77f2c0163f9093d931c46098498caa8c43f42c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987893"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462289"
 ---
 # <a name="plannerplan-resource-type"></a>plannerPlan 资源类型
 
-**plannerPlan** 资源表示 Office 365 中的计划。计划可以由[组](group.md)所有，并包含 [plannerTasks](plannertask.md) 集合。其也可以有 [plannerBuckets](plannerbucket.md) 集合。每个计划对象具有可以包含此计划的更多信息的[详细信息](plannerplandetails.md)对象。有关组、计划和任务之间的关系的详细信息，请参阅 [Planner](planner-overview.md)。
+**plannerPlan** 资源表示 Office 365 中的计划。 计划可以由[组](group.md)所有，并包含 [plannerTasks](plannertask.md) 集合。 其也可以有 [plannerBuckets](plannerbucket.md) 集合。 每个计划对象具有可以包含此计划的更多信息的[详细信息](plannerplandetails.md)对象。 有关组、计划和任务之间的关系的详细信息，请参阅 [Planner](planner-overview.md)。
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[Get plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |读取 **plannerPlan** 对象的属性和关系。|
-|[列出存储桶](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| 获取 **plannerBucket** 对象集合。|
+|[List buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| 获取 **plannerBucket** 对象集合。|
 |[List tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| 获取 **plannerTask** 对象集合。|
-|[更新](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |更新 **plannerPlan** 对象。 |
+|[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |更新 **plannerPlan** 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|只读。创建计划的日期和时间时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|id|String| 只读。 在计划的 ID。 它是 28 字符长度和区分大小写。 服务上执行[格式验证](planner-identifiers-disclaimer.md)。|
-|owner|字符串|拥有计划的[组](group.md)ID。 此字段可以设置之前，必须存在有效的组。 设置后，无法更新此属性。|
-|title|String|必填。计划的标题|
-|createdBy|[identitySet](identityset.md)|只读。创建计划的用户。|
+|id|String| 只读。 计划的 ID。 长度为 28 个字符，区分大小写。 [格式验证](planner-identifiers-disclaimer.md)在服务上完成。|
+|Owner|String|拥有计划的[组](group.md)的 ID。 必须存在有效的组才能设置此字段。 设置后，此属性无法更新。|
+|title|String|必填。 计划的标题|
+|createdBy|[identitySet](identityset.md)|只读。 创建计划的用户。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |buckets|[plannerBucket](plannerbucket.md) collection| 只读。可为 Null。计划中的存储桶集合。|
-|详细信息|[plannerPlanDetails](plannerplandetails.md)| 只读。可为 NULL。关于计划的其他详细信息。|
-|tasks|[plannerTask](plannertask.md) collection| 只读。可为 Null。计划中的任务集合。|
+|详细信息|[plannerPlanDetails](plannerplandetails.md)| 只读。 可为 NULL。 关于计划的其他详细信息。|
+|tasks|[plannerTask](plannertask.md) collection| 只读。 可为 Null。 计划中的任务集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

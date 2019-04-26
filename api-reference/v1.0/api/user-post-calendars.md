@@ -2,16 +2,18 @@
 title: 创建日历
 description: 此 API 可用于新建用户日历。
 author: dkershaw10
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 012ef289629fe43a88b5d1941455f078a73b884a
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869363"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563761"
 ---
 # <a name="create-calendar"></a>创建日历
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此 API 可用于新建[用户](../resources/user.md)日历。
 ## <a name="permissions"></a>权限
@@ -50,12 +52,13 @@ POST /users/{id | userPrincipalName}/calendars
   "name": "create_calendar_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendars
+POST https://graph.microsoft.com/beta/me/calendars
 Content-type: application/json
 
 {
   "name": "Volunteer"
 }
+
 ```
 在请求正文中，提供 [calendar](../resources/calendar.md) 对象的 JSON 表示形式。
 ##### <a name="response"></a>响应
@@ -70,14 +73,18 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
-    "@odata.id":"https://graph.microsoft.com/v1.0/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/calendars/$entity",
+    "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
     "id":"AAMkADJmMVAAA=",
     "name":"Volunteer",
     "color":"auto",
+    "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,
     "canViewPrivateItems":true,
+    "hexColor": "",
+    "isShared":false,
+    "isSharedWithMe":false,
     "canEdit":true,
     "owner":{
         "name":"Samantha Booth",
@@ -88,10 +95,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Calendar",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

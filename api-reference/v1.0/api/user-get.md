@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bc408abf60ad42f564c4c36a37151db122ad573d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984148"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567877"
 ---
 # <a name="get-a-user"></a>获取用户
 
@@ -27,12 +27,14 @@ ms.locfileid: "27984148"
 |应用程序 | User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-为某个特定用户：<!-- { "blockType": "ignored" } -->
+对于特定用户：
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
 
-对于已登录的用户：<!-- { "blockType": "ignored" } -->
+对于登录用户：
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me
 ```

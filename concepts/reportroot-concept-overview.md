@@ -5,11 +5,11 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 44b1b7f2c236ef54c7a674f5421c2978e34aeb73
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573919"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564125"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Microsoft Graph 报告 API 概述
 

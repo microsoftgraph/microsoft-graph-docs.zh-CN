@@ -1,15 +1,15 @@
 ---
 title: 列出成员
-description: 获取组的直接成员的列表。 一组可将用户、 联系人和其他组作为成员。
+description: 获取组的直接成员列表。 组可将用户、联系人和其他组作为成员。
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 70bf3040402c03dc1918d271a2abb8e4adb5d40b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936527"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584647"
 ---
 # <a name="list-members"></a>列出成员
 获取组的直接成员列表。组可将用户、联系人和其他组作为成员。此操作不可传递。
@@ -55,8 +55,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
->**注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

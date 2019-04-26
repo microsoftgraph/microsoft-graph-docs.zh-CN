@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3e47f4d20cb843b62928c6c66e468d00f5a4f743
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795994"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561913"
 ---
 # <a name="vpnprovidertype-enum-type"></a>vpnProviderType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31795994"
 |:---|:---|:---|
 |notConfigured|0|未显式配置隧道通信。|
 |appProxy|1|应用程序层的隧道流量。|
-|packetTunnel|双面|IP 层的隧道流量。|
+|packetTunnel|2 |IP 层的隧道流量。|
 
 
 

@@ -4,12 +4,12 @@ description: 在 "Azure AD access 评论" 功能中, 创建一个新的 accessRe
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 669b11a8f3b52e867d6b3e803c9419968924928b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 16ce9861e77db27e216913bb3e7cb5bfbbf202b0
+ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456820"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33299589"
 ---
 # <a name="create-accessreview"></a>创建 accessReview
 
@@ -26,9 +26,12 @@ ms.locfileid: "32456820"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview, 并且还应具有 ProgramControl。在随后调用以创建 ProgramControl 的情况下, 它们都是完整的。 |
+|委派（工作或学校帐户）     | AccessReview |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 不支持。 |
+|应用程序                            | 不支持。 |
+
+调用方还应具有 ProgramControl 权限, 以便在创建访问审核之后, 调用方可以创建[ProgramControl](../resources/programcontrol.md)。
+此外, 登录用户还必须位于允许他们创建访问审阅的目录角色中。  有关更多详细信息, 请参阅[access 评审](../resources/accessreviews-root.md)的角色和权限要求。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +48,7 @@ POST /accessReviews
 
 下表显示创建 accessReview 时所需的属性。
 
-| 属性     | 类型        | 描述 |
+| 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 | `displayName`             |`String`                                                        | 访问审阅名称。  |
 | `startDateTime`           |`DateTimeOffset`                                                | 计划开始评审时的日期时间。  这必须是将来的日期。   |
@@ -57,6 +60,8 @@ POST /accessReviews
 
 
 如果要提供的 reviewerType 具有值`delegated`, 则调用方还必须包括该`reviewers`属性, 其中包含审阅人的[userIdentity](../resources/useridentity.md)的集合。
+
+如果您的应用程序在没有登录用户的情况下调用此 API, 则呼叫者还必须包含**createdBy**属性, 其值是将被标识为审阅的创建者的用户的[userIdentity](../resources/useridentity.md) 。
 
 此外, 呼叫者还可以包括设置、创建定期审阅系列或从默认的审阅行为更改。 特别是, 若要创建定期检查, 呼叫者必须在 " `accessReviewRecurrenceSettings`访问审核设置" 中包含 "",
 
@@ -150,8 +155,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/accessreview-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -5,11 +5,11 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.openlocfilehash: 795ac1da43c3ba67dcbc83853e4bbb0d54cdae0f
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904040"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564146"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>授权和 Microsoft Graph 安全性 API
 

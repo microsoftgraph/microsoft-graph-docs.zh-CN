@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: c266476715da36bcdc0b621538722ba6320eba85
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937507"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563754"
 ---
 # <a name="tablerow-resource-type"></a>TableRow 资源类型
 
@@ -21,12 +21,12 @@ ms.locfileid: "27937507"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 TableRow](../api/tablerow-get.md) | [WorkbookTableRow](tablerow.md) |读取 tableRow 对象的属性和关系。|
-|[Update](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |更新 TableRow 对象。 |
-|[区域](../api/tablerow-range.md)|[Range](range.md)|返回与整个行相关联的范围对象。|
+|[更新](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |更新 TableRow 对象。 |
+|[区域](../api/tablerow-range.md)|[Range](range.md)|返回与整个行相关的 range 对象。|
 |[删除](../api/tablerow-delete.md)|无|从表中删除行。|
-|[List](../api/tablerow-list.md) | [WorkbookTableRow](tablerow.md)集合 |获取 tableRow 对象的集合。 |
+|[列出](../api/tablerow-list.md) | [WorkbookTableRow](tablerow.md) 集合 |获取 tableRow 对象的集合。 |
 |[Itemat](../api/tablerowcollection-itemat.md)|[WorkbookTableRow](tablerow.md)|根据其在集合中的位置获取行。|
-|[Add](../api/tablerowcollection-add.md)|[WorkbookTableRow](tablerow.md)|向表中添加新行。|
+|[添加](../api/tablerowcollection-add.md)|[WorkbookTableRow](tablerow.md)|向表中添加新行。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
@@ -34,7 +34,7 @@ ms.locfileid: "27937507"
 |index|int|返回表的行集合内行的索引编号。从零开始编制索引。只读。|
 |values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 

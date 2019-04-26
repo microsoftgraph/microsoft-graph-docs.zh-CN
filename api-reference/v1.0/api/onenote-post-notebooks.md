@@ -1,19 +1,21 @@
 ---
 title: 创建笔记本
-description: 新建 OneNote 笔记本。
+description: 创建新的 OneNote 笔记本。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 417d4ffc4e64d0b941da4316e574f6e819577c91
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931606"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562109"
 ---
 # <a name="create-notebook"></a>创建笔记本
 
-新建 OneNote [笔记本](../resources/notebook.md)。
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+创建新的 OneNote[笔记本](../resources/notebook.md)。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -38,13 +40,13 @@ POST /sites/{id}/onenote/notebooks
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供笔记本名称。 
+在请求正文中, 提供笔记本的名称。 
 
-笔记本名称必须是唯一的。该名称不能超过 128 个字符，也不能包含以下字符：?*\/:<>|'"
+笔记本名称必须是唯一的。 名称不能超过128个字符, 也不能包含以下字符: ?\/*: <> | ' "
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [notebook](../resources/notebook.md) 对象。
+如果成功, 此方法在响应`201 Created`正文中返回响应代码和新的[笔记本](../resources/notebook.md)对象。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
@@ -54,7 +56,7 @@ POST /sites/{id}/onenote/notebooks
   "name": "create_notebook_from_onenote"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/notebooks
+POST https://graph.microsoft.com/beta/me/onenote/notebooks
 Content-type: application/json
 Content-length: 30
 
@@ -79,6 +81,7 @@ Content-length: 284
   "isDefault": true,
   "userRole": {
   },
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "isShared": true,
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -95,10 +98,13 @@ Content-length: 284
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Notebook",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

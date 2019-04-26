@@ -1,15 +1,15 @@
 ---
 title: securityVendorInformation 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 7f48c27ba94d8419ce244143a48cf6ab04dd080e
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364582"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583242"
 ---
 # <a name="securityvendorinformation-resource-type"></a>securityVendorInformation 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "30364582"
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |provider |String|特定提供商 (产品/服务-非供应商公司);例如, WindowsDefenderATP。|
-|providerVersion|String|提供程序或 subprovider 的版本 (如果存在), 它将生成警报。 **Required**|
+|providerVersion|String|提供程序或 subprovider 的版本 (如果存在), 它将生成警报。 **必需**|
 |subProvider|String|特定 subprovider (在聚合提供程序下);例如, WindowsDefenderATP。|
-|提供 |String|通知供应商的名称 (例如, Microsoft、Dell、FireEye)。 **Required**|
+|提供 |String|通知供应商的名称 (例如, Microsoft、Dell、FireEye)。 **必需**|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -56,8 +56,6 @@ folllowing 是资源的 JSON 表示形式。
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/securityvendorinformation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

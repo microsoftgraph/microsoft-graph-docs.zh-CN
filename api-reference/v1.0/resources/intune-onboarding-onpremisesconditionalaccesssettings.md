@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f307b137a39323e5e3c6b644602b1c0df3ab5512
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262277"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563747"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>onPremisesConditionalAccessSettings 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "30262277"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|尚未记录|
-|enabled|Boolean|指示是否为该组织启用了本地条件访问|
+|enabled|布尔值|指示是否为该组织启用了本地条件访问|
 |includedGroups|Guid 集合|本地条件访问将面向的用户组。 这些组中的所有用户都需要托管移动设备并符合邮件访问的要求。|
 |excludedGroups|Guid 集合|将由本地条件访问豁免的用户组。 这些组中的所有用户都将从条件访问策略中豁免。|
 |overrideDefaultRule|Boolean|允许设备时重写默认访问规则以确保授予访问。|

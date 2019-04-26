@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2a69ea80f23b2671dfd58fee87573d6e2614b360
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797457"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554413"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>nonEapAuthenticationMethodForEapTtlsType 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31797457"
 |:---|:---|:---|
 |unencryptedPassword|0|未加密的密码 (PAP)。|
 |challengeHandshakeAuthenticationProtocol|1|质询握手身份验证协议 (CHAP)。|
-|microsoftChap|双面| Microsoft chap (毫秒-chap)。|
-|microsoftChapVersionTwo|第三章|Microsoft CHAP 版本 2 (毫秒-CHAP v2)。|
+|microsoftChap|2 | Microsoft chap (毫秒-chap)。|
+|microsoftChapVersionTwo|3 |Microsoft CHAP 版本 2 (毫秒-CHAP v2)。|
 
 
 

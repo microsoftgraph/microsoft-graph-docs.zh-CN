@@ -5,11 +5,11 @@ author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 ms.openlocfilehash: c2e8be27eeb4f91b3030701e2f8416fecf29c2d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947069"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564225"
 ---
 # <a name="planner-tasks-and-plans-api-overview"></a>Planner 任务和计划 API 概述
 Planner 提供了一种简单而又直观的方法，可用于团队组织他们的工作。 客户可以使用 Planner 来创建计划、组织和分配任务、共享进度以及协作处理内容。  Planner 提供了多个交互式体验，包括任务板、图表页和日程安排视图，以及在整个 Office 365 中的集成。

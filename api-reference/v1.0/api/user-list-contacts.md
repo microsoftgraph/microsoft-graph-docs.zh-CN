@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 3c648e753c3959d3b22072edbd4b796d0f8c154b
-ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026022"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584192"
 ---
 # <a name="list-contacts"></a>列出联系人
 
