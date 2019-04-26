@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: d6c58ae88e2b5cf9a6787529868f8cf9e42879be
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576956"
 ---
 # <a name="geteffectivepermissions-function"></a>getEffectivePermissions 函数
 
@@ -40,7 +40,7 @@ GET /deviceManagement/getEffectivePermissions
 |标头|值|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt;。必需。|
-|Accept|application/json|
+|接受|application/json|
 
 ## <a name="request-body"></a>请求正文
 在请求 URL 中，提供以下查询参数（含值）。

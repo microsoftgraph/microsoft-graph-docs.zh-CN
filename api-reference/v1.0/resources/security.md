@@ -1,35 +1,35 @@
 ---
 title: 安全资源类型
-description: 安全资源是安全对象模型的入口点。 它返回 singleton 安全资源。 它不包含任何可用的属性。
+description: 安全资源是安全对象模型的入口点。 它返回单一实例安全资源。 它不包含任何可用属性。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: c7bf3f279e50efb451188426d030e356d55ad6be
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983252"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579210"
 ---
 # <a name="security-resource-type"></a>安全资源类型
 
-安全资源是安全对象模型的入口点。 它返回 singleton 安全资源。 它不包含任何可用的属性。
+安全资源是安全对象模型的入口点。 它返回单一实例安全资源。 它不包含任何可用属性。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
-| [列出警报](../api/alert-list.md) | [通知](alert.md)集合 | 获取通知对象集合。 |
-| [获取通知](../api/alert-get.md) | [通知](alert.md)集合 | 获取通知对象。 |
-| [更新通知](../api/alert-update.md) | [通知](alert.md)集合 | 获取通知对象。 |
+| [列出警报](../api/alert-list.md) | [通知](alert.md)集合 | 获取一个警报对象集合。 |
+| [获取通知](../api/alert-get.md) | [通知](alert.md)集合 | 获取一个警报对象。 |
+| [更新警报](../api/alert-update.md) | [通知](alert.md)集合 | 获取一个警报对象。 |
 
 ## <a name="properties"></a>属性
 无
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|alerts|[通知](alert.md)集合| 只读。可为 NULL。|
+|警报|[通知](alert.md)集合| 只读。可为空。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -48,7 +48,7 @@ ms.locfileid: "27983252"
 
 ## <a name="example"></a>示例
 
-可在图的根的**安全**资源。
+**安全**资源在图形的根目录中可用。
 
 <!--{
   "blockType": "request"

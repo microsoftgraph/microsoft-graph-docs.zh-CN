@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7ec9f0242521bf23b4ed5f1c9f002211d542e48c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774657"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566561"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>deviceManagementExchangeDeviceClass 资源类型
 
@@ -23,7 +23,7 @@ Exchange 中的设备类。
 |属性|类型|说明|
 |:---|:---|:---|
 |name|String|将受此规则影响的设备类别的名称。|
-|类型|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|受此规则影响的设备类型, 例如 Model、Family。 可取值为：`family`、`model`。|
+|type|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|受此规则影响的设备类型, 例如 Model、Family。 可取值为：`family`、`model`。|
 
 ## <a name="relationships"></a>关系
 无

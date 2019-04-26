@@ -1,47 +1,47 @@
 ---
 title: onlineMeeting 资源类型
-description: 捕获有关会议，包括加入 URL、 与会者列表中，及其说明的信息。
+description: 捕获有关会议的信息, 包括联接 URL、与会者列表和说明。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: d7009ceaf815986d50c8eb3b64d2541c32f01a88
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519596"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568856"
 ---
 # <a name="onlinemeeting-resource-type"></a>onlineMeeting 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-捕获有关会议，包括加入 URL、 与会者列表中，及其说明的信息。
+捕获有关会议的信息, 包括联接 URL、与会者列表和说明。
 
 ## <a name="methods"></a>方法
 
 | 方法         | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-| [获取 onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取属性和 onlineMeeting 对象的关系。 |
+| [获取 onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | 读取 onlineMeeting 对象的属性和关系。 |
 
 ## <a name="properties"></a>属性
 
 | 属性                  | 类型                                                   | 说明                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| AccessLevel               | String                                                 | 控制允许加入联机会议的访问级别。 可取值为：`everyone`、`invited`、`locked`、`sameEnterprise`、`unknown`。 |
-| audioConferencing         | [audioConferencing](audioconferencing.md)              | 代表 onlineMeeting 电话访问信息。 |
-| canceledDateTime          | 日期/时间                                               | 当取消会议的时间。 |
-| chatInfo                  | [chatInfo](chatinfo.md)                                | 与此会议聊天。 |
-| creationDateTime          | 日期/时间                                               | 已创建会议的时间。 ReadOnly
-| endDateTime               | 日期/时间                                               | 会议结束时间。 |
-| entryExitAnnouncement     | Boolean                                                | 联机会议助理通知状态。 如果启用了出勤通知，联机会议将通过音频会议宣布 participantswho 联接的名称。 |
-| expirationDateTime        | 日期/时间                                               | 绝对协调世界时 (UTC) 日期和时间之后可以删除的联机会议。 日期和时间必须在前，一年之间十年后，当前日期和时间的服务器上。 |
-| id                        | String                                                 | 与联机会议相关的 ID。 获取 HTTP 请求中用作 id。 只读。 生成的服务器。 |
-| isCancelled               | Boolean                                                | 是否已被取消会议。 |
-| joinUrl                   | String                                                 | 从 web 加入联机会议时所使用的 URL。 |
-| meetingType               | String                                                 | 可取值为：`meetNow`、`scheduled`、`recurring`。 |
-| participants              | [meetingParticipants](meetingparticipants.md)          | 相关联的联机会议参与者。  这包括组织者和与会者。 |
+| accessLevel               | String                                                 | 控制联机会议的许可的访问级别。 可取值为：`everyone`、`invited`、`locked`、`sameEnterprise` 或 `unknown`。 |
+| audioConferencing         | [audioConferencing](audioconferencing.md)              | 表示 onlineMeeting 的电话访问信息。 |
+| canceledDateTime          | 日期/时间                                               | 取消会议的时间。 |
+| chatInfo                  | [chatInfo](chatinfo.md)                                | 与此会议关联的聊天。 |
+| creationDateTime          | 日期/时间                                               | 会议的创建时间。 只读.
+| endDateTime               | 日期/时间                                               | 会议的结束时间。 |
+| entryExitAnnouncement     | Boolean                                                | 联机会议的出席通知状态。 启用出席通知后, 联机会议将宣布 participantswho 的名称通过音频加入会议。 |
+| expirationDateTime        | 日期/时间                                               | 可在其后删除联机会议的绝对协调通用时间 (UTC) 日期和时间。 日期和时间必须在服务器上的当前日期和时间之后的一年前一年和之后10年。 |
+| id                        | 字符串                                                 | 与联机会议相关联的 ID。 在 GET HTTP 请求中用作 ID。 只读。 由服务器生成。 |
+| isCancelled               | Boolean                                                | 会议是否已被取消。 |
+| joinUrl                   | String                                                 | 从 web 加入联机会议时使用的 URL。 |
+| meetingType               | String                                                 | 可能的值是`meetNow`: `scheduled`、 `recurring`、、`broadcast` |
+| participants              | [meetingParticipants](meetingparticipants.md)          | 与联机会议关联的参与者。  这包括组织者和与会者。 |
 | startDateTime             | 日期/时间                                               | 会议的开始时间。 |
-| subject                   | String                                                 | 联机会议的主题。 |
+| 主题                   | String                                                 | 联机会议的主题。 |
 
 ## <a name="relationships"></a>关系
 无

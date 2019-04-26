@@ -1,26 +1,26 @@
 ---
 title: signInLocation 资源类型
-description: 提供市/县、 状态和国家/地区从其中登录发生。
+description: 提供发生登录的城市、省/市/自治区和国家/地区。
 localization_priority: Normal
 ms.openlocfilehash: 49d6dfb07c635ac3754b3e873d75911a43593a73
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839135"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551762"
 ---
 # <a name="signinlocation-resource-type"></a>signInLocation 资源类型
-提供市/县、 状态和国家/地区从其中登录发生。
+提供发生登录的城市、省/市/自治区和国家/地区。
 
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|city|字符串|提供登录发起的城市。 这被计算使用登录活动纬度/经度信息。|
-|countryOrRegion|字符串|提供的国家/地区代码信息 （2 字母代码） 的登录来源。  这被计算使用登录活动纬度/经度信息。|
-|geoCoordinates|[geoCoordinates](geocoordinates.md)|提供、 纬度和海拔高度的登录来源。|
-|state|字符串|提供登录发起的状态。 这被计算使用登录活动纬度/经度信息。|
+|city|String|提供发起登录的城市。 这是通过登录活动中的纬度/经度信息计算得出的。|
+|countryOrRegion|String|提供登录所源于的国家/地区代码信息 (2 个字母代码)。  这是通过登录活动中的纬度/经度信息计算得出的。|
+|geoCoordinates|[geoCoordinates](geocoordinates.md)|提供登录所源于的纬度、经度和海拔高度。|
+|state|String|提供登录的起始状态。 这是通过登录活动中的纬度/经度信息计算得出的。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 3fff669b2b337e9566cd41a7cd5eb5ab73a84944
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643347"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551559"
 ---
 # <a name="sharingdetail-resource-type"></a>sharingDetail 资源类型
 
@@ -34,9 +34,9 @@ ms.locfileid: "29643347"
 
 | 属性              | 类型          | 说明  |
 | -------------         |-----------    | -------------|
-| sharedDateTime        | DateTimeOffset| 日期和时间上次共享文件。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`2014-01-01T00:00:00Z`。 只读。  |
-| sharingSubject        | String          | 与共享文档主题。 |
-| sharingType             | String        | 确定文档的方式共享，则可以通过"链接"、"附件"、"组"、"Site"。     |
+| sharedDateTime        | DateTimeOffset| 上次共享文件的日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`2014-01-01T00:00:00Z`。 只读。  |
+| sharingSubject        | String          | 共享文档的主题。 |
+| sharingType             | String        | 确定文档的共享方式, 可以是 "链接"、"附件"、"组"、"网站"。     |
 | sharedBy                | [insightIdentity](insights-insightidentity.md)      | 共享文档的用户。  |
 | sharingReference        | [resourceReference](insights-resourcereference.md)      |  |
 <!--

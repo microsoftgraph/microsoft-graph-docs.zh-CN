@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 5e8fd1cd96c852c07c87bcaa35396fdd0fa5857d
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518495"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555204"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>获取用户和资源的忙/闲日程安排
 
@@ -195,4 +195,4 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ## <a name="see-also"></a>另请参阅
 - [权限参考](permissions-reference.md#calendars-permissions)
-- [在 Outlook 日历上找到可能的会议时间](findmeetingtimes-example.md)
+- [在 Outlook 日历上查找可能的会议时间](findmeetingtimes-example.md)

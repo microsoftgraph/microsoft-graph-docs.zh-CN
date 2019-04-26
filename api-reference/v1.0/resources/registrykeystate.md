@@ -3,11 +3,11 @@ title: registryKeyState 资源类型
 description: 包含有关与警报相关的注册表项更改的信息, 以及更改了注册表项的过程。
 localization_priority: Normal
 ms.openlocfilehash: d07b0b6f502794154b400444eaf3854535e04547
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070811"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579392"
 ---
 # <a name="registrykeystate-resource-type"></a>registryKeyState 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "30070811"
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |配置单元|registryHive|[Windows 注册表配置单元](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives): <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>HKEY_LOCAL_MACHINE\Security</li> <li>HKEY_LOCAL_MACHINE\Software</li> <li>HKEY_LOCAL_MACHINE\System</li> <li>HKEY_USERS\\。设置.</li></ul> 可取值为：`unknown`、`currentConfig`、`currentUser`、`localMachineSam`、`localMachineSecurity`、`localMachineSoftware`、`localMachineSystem`、`usersDefault`。|
-|Key|String|当前 (如已更改) 的注册表项 (不包括配置单元)。|
+|注册表项|String|当前 (如已更改) 的注册表项 (不包括配置单元)。|
 |oldKey|String|上一个 (即 "更改前") 注册表项 (不包括 HIVE)。|
 |oldValueData|String|以前的 (即更改之前) 注册表项值数据 (内容)。|
 |oldValueName|String|以前的注册表项值名称 (即 "更改前")。|

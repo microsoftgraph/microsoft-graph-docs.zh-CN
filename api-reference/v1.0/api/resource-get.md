@@ -1,26 +1,26 @@
 ---
 title: 获取资源
-description: 检索文件或图像 resource 对象的二进制数据。
+description: 检索文件或图像资源对象的二进制数据。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 9937040d9e53213946df9eb31cf9136bcfda7c71
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946061"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568038"
 ---
 # <a name="get-resource"></a>获取资源
 
-检索文件或图像 [resource](../resources/resource.md) 对象的二进制数据。
+检索文件或图像[资源](../resources/resource.md)对象的二进制数据。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
-|委派（个人 Microsoft 帐户） | Notes.Read、Notes.ReadWrite    |
+|委派（工作或学校帐户） | 请参阅 "注意,"、"注释"、"全部"、"全部"、"写"    |
+|委派（个人 Microsoft 帐户） | 注意: Read、notes。读写    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -42,9 +42,9 @@ GET /sites/{id}/onenote/resources/{id}/content
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和图像或文件二进制数据。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和图像或文件二进制数据。
 
-注意：图像无法直接在浏览器中呈现，因为与页面内容的其他部分一样，检索它们需要授权。
+注意: 图像不会直接在浏览器中呈现, 因为它们需要授权才能检索它们, 如页面内容的其余部分。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

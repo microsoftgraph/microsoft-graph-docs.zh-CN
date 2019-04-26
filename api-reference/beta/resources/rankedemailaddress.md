@@ -1,26 +1,26 @@
 ---
 title: rankedEmailAddress 资源类型
-description: 代表一个排名的电子邮件地址。
+description: 表示排名排名的电子邮件地址。
 localization_priority: Normal
 ms.openlocfilehash: 938afc0de208fd3cdbd0cfec299d01ada9d4f592
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510006"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563249"
 ---
 # <a name="rankedemailaddress-resource-type"></a>rankedEmailAddress 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表一个排名的电子邮件地址。
+表示排名排名的电子邮件地址。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|string|电子邮件地址。|
-|排名|double|电子邮件地址的排名。 排名用作排序关键字，相对于其他返回的结果。 较高的排名值对应于更相关的结果。 相关性取决于沟通、协作和业务关系信号。|
+|排名|double|电子邮件地址的排名。 rank 用作排序关键字, 相对于其他返回的结果。 较高的排名值对应于更相关的结果。 相关性取决于沟通、协作和业务关系信号。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

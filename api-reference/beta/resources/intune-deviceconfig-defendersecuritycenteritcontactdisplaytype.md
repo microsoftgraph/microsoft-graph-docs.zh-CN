@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3baa7b83679a94b67fdccc6172eb81c7b616a9b7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789477"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563712"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>defenderSecurityCenterITContactDisplayType 枚举类型
 
@@ -24,8 +24,8 @@ defenderSecurityCenterITContactDisplay 的可能值
 |:---|:---|:---|
 |notConfigured|0|未配置|
 |displayInAppAndInNotifications|1|在应用程序和通知中显示|
-|displayOnlyInApp|双面|仅在应用程序中显示|
-|displayOnlyInNotifications|第三章|仅在通知中显示|
+|displayOnlyInApp|2 |仅在应用程序中显示|
+|displayOnlyInNotifications|3 |仅在通知中显示|
 
 
 

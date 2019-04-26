@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7c2e4ae1463dc7c9737d1761c3bf2a96736f9d74
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782924"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555267"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>requiredPasswordType 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31782924"
 |:---|:---|:---|
 |deviceDefault|0|设备默认值, 无意向。|
 |字母数字|1|需要字母数字密码。|
-|位数|双面|需要数字密码。|
+|位数|2 |需要数字密码。|
 
 
 

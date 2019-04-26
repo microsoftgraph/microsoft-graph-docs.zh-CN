@@ -5,15 +5,13 @@ ms.date: 09/10/2017
 title: 方根
 localization_priority: Normal
 ms.openlocfilehash: 8c320a34d22af5fc73a1c5d8c96dce14e176946f
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482369"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563111"
 ---
 # <a name="root-resource-type"></a>根资源类型
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **根** Facet 指示对象是它的层次结构中最顶层的对象。
 若此 Facet 有值（非 null），表明对象是根。
@@ -35,13 +33,8 @@ ms.locfileid: "30482369"
 **根**资源没有属性。
 
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/Root",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Facets/Root"
+} -->
