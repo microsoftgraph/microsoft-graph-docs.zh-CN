@@ -4,30 +4,30 @@ description: 使用此 API 创建新的子 mailFolder。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 92c57b5336eb60377915a4abc64b070b28bb98ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 739556fe0f322cad7a36afb58bb78e4e521b374f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540665"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338683"
 ---
-# <a name="create-mailfolder"></a><span data-ttu-id="6d962-103">Create mailFolder</span><span class="sxs-lookup"><span data-stu-id="6d962-103">Create mailFolder</span></span>
+# <a name="create-mailfolder"></a><span data-ttu-id="517fa-103">Create mailFolder</span><span class="sxs-lookup"><span data-stu-id="517fa-103">Create mailFolder</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6d962-104">使用此 API 创建新的子[mailFolder](../resources/mailfolder.md)。</span><span class="sxs-lookup"><span data-stu-id="6d962-104">Use this API to create a new child [mailFolder](../resources/mailfolder.md).</span></span>
+<span data-ttu-id="517fa-104">使用此 API 创建新的子[mailFolder](../resources/mailfolder.md)。</span><span class="sxs-lookup"><span data-stu-id="517fa-104">Use this API to create a new child [mailFolder](../resources/mailfolder.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6d962-105">权限</span><span class="sxs-lookup"><span data-stu-id="6d962-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="517fa-105">权限</span><span class="sxs-lookup"><span data-stu-id="517fa-105">Permissions</span></span>
 
-<span data-ttu-id="6d962-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6d962-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="517fa-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="517fa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="6d962-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="6d962-108">Permission type</span></span> | <span data-ttu-id="6d962-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6d962-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="517fa-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="517fa-108">Permission type</span></span> | <span data-ttu-id="517fa-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="517fa-109">Permissions (from least to most privileged)</span></span> |
 |:----------------|:--------------------------------------------|
-|<span data-ttu-id="6d962-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6d962-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6d962-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6d962-111">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="6d962-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6d962-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6d962-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6d962-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="6d962-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="6d962-114">Application</span></span> | <span data-ttu-id="6d962-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6d962-115">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="517fa-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="517fa-110">Delegated (work or school account)</span></span> | <span data-ttu-id="517fa-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="517fa-111">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="517fa-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="517fa-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="517fa-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="517fa-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="517fa-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="517fa-114">Application</span></span> | <span data-ttu-id="517fa-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="517fa-115">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6d962-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6d962-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="517fa-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="517fa-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,32 +36,32 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-<span data-ttu-id="6d962-117">将查询 URL 中的父文件夹指定为文件夹 ID 或已知文件夹名称。</span><span class="sxs-lookup"><span data-stu-id="6d962-117">Specify the parent folder in the query URL as a folder ID, or a well-known folder name.</span></span> <span data-ttu-id="6d962-118">有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。</span><span class="sxs-lookup"><span data-stu-id="6d962-118">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>
+<span data-ttu-id="517fa-117">将查询 URL 中的父文件夹指定为文件夹 ID 或已知文件夹名称。</span><span class="sxs-lookup"><span data-stu-id="517fa-117">Specify the parent folder in the query URL as a folder ID, or a well-known folder name.</span></span> <span data-ttu-id="517fa-118">有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。</span><span class="sxs-lookup"><span data-stu-id="517fa-118">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6d962-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="6d962-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="517fa-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="517fa-119">Request headers</span></span>
 
-| <span data-ttu-id="6d962-120">标头</span><span class="sxs-lookup"><span data-stu-id="6d962-120">Header</span></span> | <span data-ttu-id="6d962-121">值</span><span class="sxs-lookup"><span data-stu-id="6d962-121">Value</span></span> |
+| <span data-ttu-id="517fa-120">标头</span><span class="sxs-lookup"><span data-stu-id="517fa-120">Header</span></span> | <span data-ttu-id="517fa-121">值</span><span class="sxs-lookup"><span data-stu-id="517fa-121">Value</span></span> |
 |:-------|:------|
-| <span data-ttu-id="6d962-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6d962-122">Authorization</span></span> | <span data-ttu-id="6d962-123">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="6d962-123"></span></span> <span data-ttu-id="6d962-124">必需。</span><span class="sxs-lookup"><span data-stu-id="6d962-124">Required.</span></span> |
-| <span data-ttu-id="6d962-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6d962-125">Content-Type</span></span> | <span data-ttu-id="6d962-126">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="6d962-126"></span></span> <span data-ttu-id="6d962-127">必需。</span><span class="sxs-lookup"><span data-stu-id="6d962-127">Required.</span></span> |
+| <span data-ttu-id="517fa-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="517fa-122">Authorization</span></span> | <span data-ttu-id="517fa-123">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="517fa-123"></span></span> <span data-ttu-id="517fa-124">必需。</span><span class="sxs-lookup"><span data-stu-id="517fa-124">Required.</span></span> |
+| <span data-ttu-id="517fa-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="517fa-125">Content-Type</span></span> | <span data-ttu-id="517fa-126">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="517fa-126"></span></span> <span data-ttu-id="517fa-127">必需。</span><span class="sxs-lookup"><span data-stu-id="517fa-127">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6d962-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="6d962-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="517fa-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="517fa-128">Request body</span></span>
 
-<span data-ttu-id="6d962-p105">在请求正文中，提供具有以下参数的 JSON 对象。**displayName** 是 [MailFolder](../resources/mailfolder.md) 对象的唯一可写属性。</span><span class="sxs-lookup"><span data-stu-id="6d962-p105">In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a [MailFolder](../resources/mailfolder.md) object.</span></span>
+<span data-ttu-id="517fa-p105">在请求正文中，提供具有以下参数的 JSON 对象。**displayName** 是 [MailFolder](../resources/mailfolder.md) 对象的唯一可写属性。</span><span class="sxs-lookup"><span data-stu-id="517fa-p105">In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a [MailFolder](../resources/mailfolder.md) object.</span></span>
 
-| <span data-ttu-id="6d962-131">参数</span><span class="sxs-lookup"><span data-stu-id="6d962-131">Parameter</span></span> | <span data-ttu-id="6d962-132">类型</span><span class="sxs-lookup"><span data-stu-id="6d962-132">Type</span></span> | <span data-ttu-id="6d962-133">说明</span><span class="sxs-lookup"><span data-stu-id="6d962-133">Description</span></span> |
+| <span data-ttu-id="517fa-131">参数</span><span class="sxs-lookup"><span data-stu-id="517fa-131">Parameter</span></span> | <span data-ttu-id="517fa-132">类型</span><span class="sxs-lookup"><span data-stu-id="517fa-132">Type</span></span> | <span data-ttu-id="517fa-133">说明</span><span class="sxs-lookup"><span data-stu-id="517fa-133">Description</span></span> |
 |:----------|:-----|:------------|
-|<span data-ttu-id="6d962-134">displayName</span><span class="sxs-lookup"><span data-stu-id="6d962-134">displayName</span></span>|<span data-ttu-id="6d962-135">String</span><span class="sxs-lookup"><span data-stu-id="6d962-135">String</span></span>|<span data-ttu-id="6d962-136">新文件夹的显示名称。</span><span class="sxs-lookup"><span data-stu-id="6d962-136">The display name of the new folder.</span></span>|
+|<span data-ttu-id="517fa-134">displayName</span><span class="sxs-lookup"><span data-stu-id="517fa-134">displayName</span></span>|<span data-ttu-id="517fa-135">String</span><span class="sxs-lookup"><span data-stu-id="517fa-135">String</span></span>|<span data-ttu-id="517fa-136">新文件夹的显示名称。</span><span class="sxs-lookup"><span data-stu-id="517fa-136">The display name of the new folder.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="6d962-137">响应</span><span class="sxs-lookup"><span data-stu-id="6d962-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="517fa-137">响应</span><span class="sxs-lookup"><span data-stu-id="517fa-137">Response</span></span>
 
-<span data-ttu-id="6d962-138">如果成功, 此方法在`201 Created`响应正文中返回响应代码和[mailFolder](../resources/mailfolder.md)对象。</span><span class="sxs-lookup"><span data-stu-id="6d962-138">If successful, this method returns `201 Created` response code and a [mailFolder](../resources/mailfolder.md) object in the response body.</span></span>
+<span data-ttu-id="517fa-138">如果成功, 此方法在`201 Created`响应正文中返回响应代码和[mailFolder](../resources/mailfolder.md)对象。</span><span class="sxs-lookup"><span data-stu-id="517fa-138">If successful, this method returns `201 Created` response code and a [mailFolder](../resources/mailfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6d962-139">示例</span><span class="sxs-lookup"><span data-stu-id="6d962-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="517fa-139">示例</span><span class="sxs-lookup"><span data-stu-id="517fa-139">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="6d962-140">请求</span><span class="sxs-lookup"><span data-stu-id="6d962-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="517fa-140">请求</span><span class="sxs-lookup"><span data-stu-id="517fa-140">Request</span></span>
 
-<span data-ttu-id="6d962-141">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="6d962-141">The following is an example of the request.</span></span>
+<span data-ttu-id="517fa-141">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="517fa-141">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_mailfolder_from_mailfolder"
@@ -77,11 +77,11 @@ Content-length: 159
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="6d962-142">响应</span><span class="sxs-lookup"><span data-stu-id="6d962-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="517fa-142">响应</span><span class="sxs-lookup"><span data-stu-id="517fa-142">Response</span></span>
 
-<span data-ttu-id="6d962-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="6d962-143">The following is an example of the response.</span></span>
+<span data-ttu-id="517fa-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="517fa-143">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="6d962-144">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="6d962-144">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="6d962-145">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="6d962-145">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="517fa-144">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="517fa-144">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="517fa-145">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="517fa-145">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,8 +112,6 @@ Content-length: 179
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/mailfolder-post-childfolders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

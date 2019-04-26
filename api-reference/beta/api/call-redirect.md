@@ -4,60 +4,60 @@ description: 重定向传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a6a926aa082cc35896d11ec4124091b0d2c838c0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9dcb8b6fd83f431bf5048bcc42b0de5d1ff55110
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461268"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328013"
 ---
-# <a name="call-redirect"></a><span data-ttu-id="18fcf-103">呼叫: 重定向</span><span class="sxs-lookup"><span data-stu-id="18fcf-103">call: redirect</span></span>
+# <a name="call-redirect"></a><span data-ttu-id="98ce1-103">呼叫: 重定向</span><span class="sxs-lookup"><span data-stu-id="98ce1-103">call: redirect</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="18fcf-104">重定向传入呼叫。</span><span class="sxs-lookup"><span data-stu-id="18fcf-104">Redirect an incoming call.</span></span>
+<span data-ttu-id="98ce1-104">重定向传入呼叫。</span><span class="sxs-lookup"><span data-stu-id="98ce1-104">Redirect an incoming call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="18fcf-105">权限</span><span class="sxs-lookup"><span data-stu-id="18fcf-105">Permissions</span></span>
-<span data-ttu-id="18fcf-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="18fcf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="98ce1-105">权限</span><span class="sxs-lookup"><span data-stu-id="98ce1-105">Permissions</span></span>
+<span data-ttu-id="98ce1-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="98ce1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="18fcf-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="18fcf-108">Permission type</span></span> | <span data-ttu-id="18fcf-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="18fcf-109">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="98ce1-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="98ce1-108">Permission type</span></span> | <span data-ttu-id="98ce1-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="98ce1-109">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="18fcf-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="18fcf-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="18fcf-111">不支持</span><span class="sxs-lookup"><span data-stu-id="18fcf-111">Not Supported</span></span>                |
-| <span data-ttu-id="18fcf-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="18fcf-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="18fcf-113">不支持</span><span class="sxs-lookup"><span data-stu-id="18fcf-113">Not Supported</span></span>                |
-| <span data-ttu-id="18fcf-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="18fcf-114">Application</span></span>     | <span data-ttu-id="18fcf-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="18fcf-115">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="98ce1-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="98ce1-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="98ce1-111">不支持</span><span class="sxs-lookup"><span data-stu-id="98ce1-111">Not Supported</span></span>                |
+| <span data-ttu-id="98ce1-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="98ce1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="98ce1-113">不支持</span><span class="sxs-lookup"><span data-stu-id="98ce1-113">Not Supported</span></span>                |
+| <span data-ttu-id="98ce1-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="98ce1-114">Application</span></span>     | <span data-ttu-id="98ce1-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="98ce1-115">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="18fcf-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="18fcf-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="98ce1-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="98ce1-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/redirect
 POST /applications/{id}/calls/{id}/redirect
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="18fcf-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="18fcf-117">Request headers</span></span>
-| <span data-ttu-id="18fcf-118">名称</span><span class="sxs-lookup"><span data-stu-id="18fcf-118">Name</span></span>          | <span data-ttu-id="18fcf-119">说明</span><span class="sxs-lookup"><span data-stu-id="18fcf-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="98ce1-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="98ce1-117">Request headers</span></span>
+| <span data-ttu-id="98ce1-118">名称</span><span class="sxs-lookup"><span data-stu-id="98ce1-118">Name</span></span>          | <span data-ttu-id="98ce1-119">说明</span><span class="sxs-lookup"><span data-stu-id="98ce1-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="18fcf-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="18fcf-120">Authorization</span></span> | <span data-ttu-id="18fcf-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="18fcf-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="98ce1-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="98ce1-120">Authorization</span></span> | <span data-ttu-id="98ce1-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="98ce1-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="18fcf-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="18fcf-123">Request body</span></span>
-<span data-ttu-id="18fcf-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="18fcf-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="98ce1-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="98ce1-123">Request body</span></span>
+<span data-ttu-id="98ce1-124">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="98ce1-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="18fcf-125">参数</span><span class="sxs-lookup"><span data-stu-id="18fcf-125">Parameter</span></span>      | <span data-ttu-id="18fcf-126">类型</span><span class="sxs-lookup"><span data-stu-id="18fcf-126">Type</span></span>    |<span data-ttu-id="18fcf-127">说明</span><span class="sxs-lookup"><span data-stu-id="18fcf-127">Description</span></span>|
+| <span data-ttu-id="98ce1-125">参数</span><span class="sxs-lookup"><span data-stu-id="98ce1-125">Parameter</span></span>      | <span data-ttu-id="98ce1-126">类型</span><span class="sxs-lookup"><span data-stu-id="98ce1-126">Type</span></span>    |<span data-ttu-id="98ce1-127">说明</span><span class="sxs-lookup"><span data-stu-id="98ce1-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="18fcf-128">targets</span><span class="sxs-lookup"><span data-stu-id="18fcf-128">targets</span></span>|<span data-ttu-id="18fcf-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="18fcf-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="18fcf-130">重定向操作的目标参与者。</span><span class="sxs-lookup"><span data-stu-id="18fcf-130">The target participants of the redirect operation.</span></span>|
-|<span data-ttu-id="18fcf-131">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="18fcf-131">targetDisposition</span></span>|<span data-ttu-id="18fcf-132">字符串</span><span class="sxs-lookup"><span data-stu-id="18fcf-132">String</span></span>|<span data-ttu-id="18fcf-133">可能的值为:`default`</span><span class="sxs-lookup"><span data-stu-id="18fcf-133">The possible value is: `default`</span></span>|
-|<span data-ttu-id="18fcf-134">timeout</span><span class="sxs-lookup"><span data-stu-id="18fcf-134">timeout</span></span>|<span data-ttu-id="18fcf-135">Int32</span><span class="sxs-lookup"><span data-stu-id="18fcf-135">Int32</span></span>|<span data-ttu-id="18fcf-136">重定向操作的超时时间 (秒)。</span><span class="sxs-lookup"><span data-stu-id="18fcf-136">The timeout in seconds for the redirect operation.</span></span>|
-|<span data-ttu-id="18fcf-137">maskCallee</span><span class="sxs-lookup"><span data-stu-id="18fcf-137">maskCallee</span></span>|<span data-ttu-id="18fcf-138">布尔</span><span class="sxs-lookup"><span data-stu-id="18fcf-138">Boolean</span></span>|<span data-ttu-id="18fcf-139">指示是否屏蔽被叫方。</span><span class="sxs-lookup"><span data-stu-id="18fcf-139">Indicates whether to mask the callee.</span></span>|
-|<span data-ttu-id="18fcf-140">maskCaller</span><span class="sxs-lookup"><span data-stu-id="18fcf-140">maskCaller</span></span>|<span data-ttu-id="18fcf-141">布尔</span><span class="sxs-lookup"><span data-stu-id="18fcf-141">Boolean</span></span>|<span data-ttu-id="18fcf-142">指示是否屏蔽调用方。</span><span class="sxs-lookup"><span data-stu-id="18fcf-142">Indicates whether to mask the caller.</span></span>|
+|<span data-ttu-id="98ce1-128">targets</span><span class="sxs-lookup"><span data-stu-id="98ce1-128">targets</span></span>|<span data-ttu-id="98ce1-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md)集合</span><span class="sxs-lookup"><span data-stu-id="98ce1-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="98ce1-130">重定向操作的目标参与者。</span><span class="sxs-lookup"><span data-stu-id="98ce1-130">The target participants of the redirect operation.</span></span>|
+|<span data-ttu-id="98ce1-131">targetDisposition</span><span class="sxs-lookup"><span data-stu-id="98ce1-131">targetDisposition</span></span>|<span data-ttu-id="98ce1-132">String</span><span class="sxs-lookup"><span data-stu-id="98ce1-132">String</span></span>|<span data-ttu-id="98ce1-133">可能的值为:`default`</span><span class="sxs-lookup"><span data-stu-id="98ce1-133">The possible value is: `default`</span></span>|
+|<span data-ttu-id="98ce1-134">timeout</span><span class="sxs-lookup"><span data-stu-id="98ce1-134">timeout</span></span>|<span data-ttu-id="98ce1-135">Int32</span><span class="sxs-lookup"><span data-stu-id="98ce1-135">Int32</span></span>|<span data-ttu-id="98ce1-136">重定向操作的超时时间 (秒)。</span><span class="sxs-lookup"><span data-stu-id="98ce1-136">The timeout in seconds for the redirect operation.</span></span>|
+|<span data-ttu-id="98ce1-137">maskCallee</span><span class="sxs-lookup"><span data-stu-id="98ce1-137">maskCallee</span></span>|<span data-ttu-id="98ce1-138">Boolean</span><span class="sxs-lookup"><span data-stu-id="98ce1-138">Boolean</span></span>|<span data-ttu-id="98ce1-139">指示是否屏蔽被叫方。</span><span class="sxs-lookup"><span data-stu-id="98ce1-139">Indicates whether to mask the callee.</span></span>|
+|<span data-ttu-id="98ce1-140">maskCaller</span><span class="sxs-lookup"><span data-stu-id="98ce1-140">maskCaller</span></span>|<span data-ttu-id="98ce1-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="98ce1-141">Boolean</span></span>|<span data-ttu-id="98ce1-142">指示是否屏蔽调用方。</span><span class="sxs-lookup"><span data-stu-id="98ce1-142">Indicates whether to mask the caller.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="18fcf-143">响应</span><span class="sxs-lookup"><span data-stu-id="18fcf-143">Response</span></span>
-<span data-ttu-id="18fcf-144">返回`202 Accepted`响应代码</span><span class="sxs-lookup"><span data-stu-id="18fcf-144">Returns `202 Accepted` response code</span></span>
+## <a name="response"></a><span data-ttu-id="98ce1-143">响应</span><span class="sxs-lookup"><span data-stu-id="98ce1-143">Response</span></span>
+<span data-ttu-id="98ce1-144">返回`202 Accepted`响应代码</span><span class="sxs-lookup"><span data-stu-id="98ce1-144">Returns `202 Accepted` response code</span></span>
 
-## <a name="examples"></a><span data-ttu-id="18fcf-145">示例</span><span class="sxs-lookup"><span data-stu-id="18fcf-145">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="98ce1-145">示例</span><span class="sxs-lookup"><span data-stu-id="98ce1-145">Examples</span></span>
 
-### <a name="redirect-a-call"></a><span data-ttu-id="18fcf-146">重定向呼叫</span><span class="sxs-lookup"><span data-stu-id="18fcf-146">Redirect a call</span></span>
+### <a name="redirect-a-call"></a><span data-ttu-id="98ce1-146">重定向呼叫</span><span class="sxs-lookup"><span data-stu-id="98ce1-146">Redirect a call</span></span>
 
-##### <a name="request"></a><span data-ttu-id="18fcf-147">请求</span><span class="sxs-lookup"><span data-stu-id="18fcf-147">Request</span></span>
-<span data-ttu-id="18fcf-148">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="18fcf-148">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="98ce1-147">请求</span><span class="sxs-lookup"><span data-stu-id="98ce1-147">Request</span></span>
+<span data-ttu-id="98ce1-148">下面为请求示例。</span><span class="sxs-lookup"><span data-stu-id="98ce1-148">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -90,9 +90,9 @@ Content-Length: 515
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="18fcf-149">响应</span><span class="sxs-lookup"><span data-stu-id="18fcf-149">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="98ce1-149">响应</span><span class="sxs-lookup"><span data-stu-id="98ce1-149">Response</span></span>
 
-> <span data-ttu-id="18fcf-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="18fcf-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="98ce1-p103">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="98ce1-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -103,9 +103,9 @@ Content-Length: 515
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="forward-a-call"></a><span data-ttu-id="18fcf-152">转接呼叫</span><span class="sxs-lookup"><span data-stu-id="18fcf-152">Forward a call</span></span>
+### <a name="forward-a-call"></a><span data-ttu-id="98ce1-152">转接呼叫</span><span class="sxs-lookup"><span data-stu-id="98ce1-152">Forward a call</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="18fcf-153">通知传入</span><span class="sxs-lookup"><span data-stu-id="18fcf-153">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="98ce1-153">通知传入</span><span class="sxs-lookup"><span data-stu-id="98ce1-153">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -158,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="18fcf-154">请求</span><span class="sxs-lookup"><span data-stu-id="18fcf-154">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="98ce1-154">请求</span><span class="sxs-lookup"><span data-stu-id="98ce1-154">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/redirect
@@ -185,13 +185,13 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="18fcf-155">响应</span><span class="sxs-lookup"><span data-stu-id="18fcf-155">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="98ce1-155">响应</span><span class="sxs-lookup"><span data-stu-id="98ce1-155">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---redirecting"></a><span data-ttu-id="18fcf-156">通知-重定向</span><span class="sxs-lookup"><span data-stu-id="18fcf-156">Notification - redirecting</span></span>
+##### <a name="notification---redirecting"></a><span data-ttu-id="98ce1-156">通知-重定向</span><span class="sxs-lookup"><span data-stu-id="98ce1-156">Notification - redirecting</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -220,7 +220,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="18fcf-157">通知终止</span><span class="sxs-lookup"><span data-stu-id="18fcf-157">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="98ce1-157">通知终止</span><span class="sxs-lookup"><span data-stu-id="98ce1-157">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -267,8 +267,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/call-redirect.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

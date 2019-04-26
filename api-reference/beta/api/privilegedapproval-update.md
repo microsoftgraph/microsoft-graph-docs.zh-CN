@@ -2,62 +2,62 @@
 title: 更新 privilegedapproval
 description: 更新 privilegedapproval 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: cb108ca35b07138f84a9fd969bfe7c7241e9672e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 240036a9ee4df57745ca1a613511b2141eec6796
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538673"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332070"
 ---
-# <a name="update-privilegedapproval"></a><span data-ttu-id="729ce-103">更新 privilegedapproval</span><span class="sxs-lookup"><span data-stu-id="729ce-103">Update privilegedapproval</span></span>
+# <a name="update-privilegedapproval"></a><span data-ttu-id="81455-103">更新 privilegedapproval</span><span class="sxs-lookup"><span data-stu-id="81455-103">Update privilegedapproval</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="729ce-104">更新 privilegedapproval 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="729ce-104">Update the properties of privilegedapproval object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="729ce-105">权限</span><span class="sxs-lookup"><span data-stu-id="729ce-105">Permissions</span></span>
-<span data-ttu-id="729ce-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="729ce-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="81455-104">更新 privilegedapproval 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="81455-104">Update the properties of privilegedapproval object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="81455-105">权限</span><span class="sxs-lookup"><span data-stu-id="81455-105">Permissions</span></span>
+<span data-ttu-id="81455-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="81455-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="729ce-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="729ce-108">Permission type</span></span>      | <span data-ttu-id="729ce-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="729ce-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="81455-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="81455-108">Permission type</span></span>      | <span data-ttu-id="81455-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="81455-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="729ce-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="729ce-110">Delegated (work or school account)</span></span> | <span data-ttu-id="729ce-111">PrivilegedAccess 的 AzureAD、directory.accessasuser.all</span><span class="sxs-lookup"><span data-stu-id="729ce-111">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="729ce-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="729ce-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="729ce-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="729ce-113">Not supported.</span></span>    |
-|<span data-ttu-id="729ce-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="729ce-114">Application</span></span> | <span data-ttu-id="729ce-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="729ce-115">Not supported.</span></span> |
+|<span data-ttu-id="81455-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="81455-110">Delegated (work or school account)</span></span> | <span data-ttu-id="81455-111">PrivilegedAccess 的 AzureAD、directory.accessasuser.all</span><span class="sxs-lookup"><span data-stu-id="81455-111">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="81455-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="81455-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="81455-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="81455-113">Not supported.</span></span>    |
+|<span data-ttu-id="81455-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="81455-114">Application</span></span> | <span data-ttu-id="81455-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="81455-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="729ce-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="729ce-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="81455-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="81455-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /privilegedApproval/<id>
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="729ce-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="729ce-117">Optional request headers</span></span>
-| <span data-ttu-id="729ce-118">名称</span><span class="sxs-lookup"><span data-stu-id="729ce-118">Name</span></span>       | <span data-ttu-id="729ce-119">说明</span><span class="sxs-lookup"><span data-stu-id="729ce-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="81455-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="81455-117">Optional request headers</span></span>
+| <span data-ttu-id="81455-118">名称</span><span class="sxs-lookup"><span data-stu-id="81455-118">Name</span></span>       | <span data-ttu-id="81455-119">说明</span><span class="sxs-lookup"><span data-stu-id="81455-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="729ce-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="729ce-120">Authorization</span></span>  | <span data-ttu-id="729ce-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="729ce-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="81455-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="81455-120">Authorization</span></span>  | <span data-ttu-id="81455-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="81455-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="729ce-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="729ce-123">Request body</span></span>
-<span data-ttu-id="729ce-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="729ce-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="81455-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="81455-123">Request body</span></span>
+<span data-ttu-id="81455-p103">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="81455-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="729ce-127">属性</span><span class="sxs-lookup"><span data-stu-id="729ce-127">Property</span></span>     | <span data-ttu-id="729ce-128">类型</span><span class="sxs-lookup"><span data-stu-id="729ce-128">Type</span></span>   |<span data-ttu-id="729ce-129">说明</span><span class="sxs-lookup"><span data-stu-id="729ce-129">Description</span></span>|
+| <span data-ttu-id="81455-127">属性</span><span class="sxs-lookup"><span data-stu-id="81455-127">Property</span></span>     | <span data-ttu-id="81455-128">类型</span><span class="sxs-lookup"><span data-stu-id="81455-128">Type</span></span>   |<span data-ttu-id="81455-129">说明</span><span class="sxs-lookup"><span data-stu-id="81455-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="729ce-130">approvalDuration</span><span class="sxs-lookup"><span data-stu-id="729ce-130">approvalDuration</span></span>|<span data-ttu-id="729ce-131">持续时间</span><span class="sxs-lookup"><span data-stu-id="729ce-131">Duration</span></span>||
-|<span data-ttu-id="729ce-132">approvalState</span><span class="sxs-lookup"><span data-stu-id="729ce-132">approvalState</span></span>|<span data-ttu-id="729ce-133">string</span><span class="sxs-lookup"><span data-stu-id="729ce-133">string</span></span>| <span data-ttu-id="729ce-134">可取值为：`pending`、`approved`、`denied`、`aborted` 或 `canceled`。</span><span class="sxs-lookup"><span data-stu-id="729ce-134">Possible values are: `pending`, `approved`, `denied`, `aborted`, `canceled`.</span></span>|
-|<span data-ttu-id="729ce-135">approvalType</span><span class="sxs-lookup"><span data-stu-id="729ce-135">approvalType</span></span>|<span data-ttu-id="729ce-136">String</span><span class="sxs-lookup"><span data-stu-id="729ce-136">String</span></span>||
-|<span data-ttu-id="729ce-137">approverReason</span><span class="sxs-lookup"><span data-stu-id="729ce-137">approverReason</span></span>|<span data-ttu-id="729ce-138">String</span><span class="sxs-lookup"><span data-stu-id="729ce-138">String</span></span>||
-|<span data-ttu-id="729ce-139">endDateTime</span><span class="sxs-lookup"><span data-stu-id="729ce-139">endDateTime</span></span>|<span data-ttu-id="729ce-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="729ce-140">DateTimeOffset</span></span>||
-|<span data-ttu-id="729ce-141">requestorReason</span><span class="sxs-lookup"><span data-stu-id="729ce-141">requestorReason</span></span>|<span data-ttu-id="729ce-142">String</span><span class="sxs-lookup"><span data-stu-id="729ce-142">String</span></span>||
-|<span data-ttu-id="729ce-143">roleId</span><span class="sxs-lookup"><span data-stu-id="729ce-143">roleId</span></span>|<span data-ttu-id="729ce-144">String</span><span class="sxs-lookup"><span data-stu-id="729ce-144">String</span></span>||
-|<span data-ttu-id="729ce-145">startDateTime</span><span class="sxs-lookup"><span data-stu-id="729ce-145">startDateTime</span></span>|<span data-ttu-id="729ce-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="729ce-146">DateTimeOffset</span></span>||
-|<span data-ttu-id="729ce-147">userId</span><span class="sxs-lookup"><span data-stu-id="729ce-147">userId</span></span>|<span data-ttu-id="729ce-148">String</span><span class="sxs-lookup"><span data-stu-id="729ce-148">String</span></span>||
+|<span data-ttu-id="81455-130">approvalDuration</span><span class="sxs-lookup"><span data-stu-id="81455-130">approvalDuration</span></span>|<span data-ttu-id="81455-131">持续时间</span><span class="sxs-lookup"><span data-stu-id="81455-131">Duration</span></span>||
+|<span data-ttu-id="81455-132">approvalState</span><span class="sxs-lookup"><span data-stu-id="81455-132">approvalState</span></span>|<span data-ttu-id="81455-133">string</span><span class="sxs-lookup"><span data-stu-id="81455-133">string</span></span>| <span data-ttu-id="81455-134">可取值为：`pending`、`approved`、`denied`、`aborted`、`canceled`。</span><span class="sxs-lookup"><span data-stu-id="81455-134">Possible values are: `pending`, `approved`, `denied`, `aborted`, `canceled`.</span></span>|
+|<span data-ttu-id="81455-135">approvalType</span><span class="sxs-lookup"><span data-stu-id="81455-135">approvalType</span></span>|<span data-ttu-id="81455-136">String</span><span class="sxs-lookup"><span data-stu-id="81455-136">String</span></span>||
+|<span data-ttu-id="81455-137">approverReason</span><span class="sxs-lookup"><span data-stu-id="81455-137">approverReason</span></span>|<span data-ttu-id="81455-138">String</span><span class="sxs-lookup"><span data-stu-id="81455-138">String</span></span>||
+|<span data-ttu-id="81455-139">endDateTime</span><span class="sxs-lookup"><span data-stu-id="81455-139">endDateTime</span></span>|<span data-ttu-id="81455-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="81455-140">DateTimeOffset</span></span>||
+|<span data-ttu-id="81455-141">requestorReason</span><span class="sxs-lookup"><span data-stu-id="81455-141">requestorReason</span></span>|<span data-ttu-id="81455-142">String</span><span class="sxs-lookup"><span data-stu-id="81455-142">String</span></span>||
+|<span data-ttu-id="81455-143">roleId</span><span class="sxs-lookup"><span data-stu-id="81455-143">roleId</span></span>|<span data-ttu-id="81455-144">String</span><span class="sxs-lookup"><span data-stu-id="81455-144">String</span></span>||
+|<span data-ttu-id="81455-145">startDateTime</span><span class="sxs-lookup"><span data-stu-id="81455-145">startDateTime</span></span>|<span data-ttu-id="81455-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="81455-146">DateTimeOffset</span></span>||
+|<span data-ttu-id="81455-147">userId</span><span class="sxs-lookup"><span data-stu-id="81455-147">userId</span></span>|<span data-ttu-id="81455-148">String</span><span class="sxs-lookup"><span data-stu-id="81455-148">String</span></span>||
 
-## <a name="response"></a><span data-ttu-id="729ce-149">响应</span><span class="sxs-lookup"><span data-stu-id="729ce-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="81455-149">响应</span><span class="sxs-lookup"><span data-stu-id="81455-149">Response</span></span>
 
-<span data-ttu-id="729ce-150">如果成功, 此方法将`204 No Content`返回响应代码</span><span class="sxs-lookup"><span data-stu-id="729ce-150">If successful, this method returns a `204 No Content` response code</span></span>
+<span data-ttu-id="81455-150">如果成功, 此方法将`204 No Content`返回响应代码</span><span class="sxs-lookup"><span data-stu-id="81455-150">If successful, this method returns a `204 No Content` response code</span></span>
 
-<span data-ttu-id="729ce-151">请注意, 需要将租户注册到 PIM。</span><span class="sxs-lookup"><span data-stu-id="729ce-151">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="729ce-152">否则, 将返回 HTTP 403 禁止的状态代码。</span><span class="sxs-lookup"><span data-stu-id="729ce-152">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+<span data-ttu-id="81455-151">请注意, 需要将租户注册到 PIM。</span><span class="sxs-lookup"><span data-stu-id="81455-151">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="81455-152">否则, 将返回 HTTP 403 禁止的状态代码。</span><span class="sxs-lookup"><span data-stu-id="81455-152">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="729ce-153">示例</span><span class="sxs-lookup"><span data-stu-id="729ce-153">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="729ce-154">请求</span><span class="sxs-lookup"><span data-stu-id="729ce-154">Request</span></span>
-<span data-ttu-id="729ce-155">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="729ce-155">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="81455-153">示例</span><span class="sxs-lookup"><span data-stu-id="81455-153">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="81455-154">请求</span><span class="sxs-lookup"><span data-stu-id="81455-154">Request</span></span>
+<span data-ttu-id="81455-155">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="81455-155">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_privilegedapproval"
@@ -72,8 +72,8 @@ Content-length: 180
   "approverReason": "approverReason-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="729ce-156">响应</span><span class="sxs-lookup"><span data-stu-id="729ce-156">Response</span></span>
-<span data-ttu-id="729ce-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="729ce-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="81455-156">响应</span><span class="sxs-lookup"><span data-stu-id="81455-156">Response</span></span>
+<span data-ttu-id="81455-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="81455-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,8 +92,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/privilegedapproval-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

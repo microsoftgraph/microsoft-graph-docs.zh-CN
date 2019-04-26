@@ -5,29 +5,29 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: eac07b5d3e81e3e3098fb63bbf0be838c7d51b2c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537046"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330059"
 ---
-# <a name="delete-threat-intelligence-indicator"></a><span data-ttu-id="7b410-103">删除威胁情报指标</span><span class="sxs-lookup"><span data-stu-id="7b410-103">Delete threat intelligence indicator</span></span>
+# <a name="delete-threat-intelligence-indicator"></a><span data-ttu-id="be551-103">删除威胁情报指标</span><span class="sxs-lookup"><span data-stu-id="be551-103">Delete threat intelligence indicator</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7b410-104">删除[tiIndicator](../resources/tiindicator.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7b410-104">Delete a [tiIndicator](../resources/tiindicator.md) object.</span></span>
+<span data-ttu-id="be551-104">删除[tiIndicator](../resources/tiindicator.md)对象。</span><span class="sxs-lookup"><span data-stu-id="be551-104">Delete a [tiIndicator](../resources/tiindicator.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7b410-105">权限</span><span class="sxs-lookup"><span data-stu-id="7b410-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="be551-105">权限</span><span class="sxs-lookup"><span data-stu-id="be551-105">Permissions</span></span>
 
-<span data-ttu-id="7b410-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7b410-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="be551-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="be551-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7b410-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="7b410-108">Permission type</span></span>                        | <span data-ttu-id="7b410-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7b410-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="be551-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="be551-108">Permission type</span></span>                        | <span data-ttu-id="be551-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="be551-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="7b410-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7b410-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="7b410-111">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="7b410-111">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
-| <span data-ttu-id="7b410-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7b410-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7b410-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="7b410-113">Not supported.</span></span> |
-| <span data-ttu-id="7b410-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="7b410-114">Application</span></span>                            | <span data-ttu-id="7b410-115">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="7b410-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="be551-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="be551-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="be551-111">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="be551-111">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="be551-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="be551-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="be551-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="be551-113">Not supported.</span></span> |
+| <span data-ttu-id="be551-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="be551-114">Application</span></span>                            | <span data-ttu-id="be551-115">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="be551-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7b410-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7b410-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="be551-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="be551-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,25 +35,25 @@ ms.locfileid: "32537046"
 DELETE /security/tiIndicators/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7b410-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="7b410-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="be551-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="be551-117">Request headers</span></span>
 
-| <span data-ttu-id="7b410-118">名称</span><span class="sxs-lookup"><span data-stu-id="7b410-118">Name</span></span>          | <span data-ttu-id="7b410-119">说明</span><span class="sxs-lookup"><span data-stu-id="7b410-119">Description</span></span>   |
+| <span data-ttu-id="be551-118">名称</span><span class="sxs-lookup"><span data-stu-id="be551-118">Name</span></span>          | <span data-ttu-id="be551-119">说明</span><span class="sxs-lookup"><span data-stu-id="be551-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="7b410-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="7b410-120">Authorization</span></span> | <span data-ttu-id="7b410-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="7b410-121">Bearer {code}</span></span> |
+| <span data-ttu-id="be551-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="be551-120">Authorization</span></span> | <span data-ttu-id="be551-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="be551-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7b410-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="7b410-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="be551-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="be551-122">Request body</span></span>
 
-<span data-ttu-id="7b410-123">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="7b410-123">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="be551-123">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="be551-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7b410-124">响应</span><span class="sxs-lookup"><span data-stu-id="7b410-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="be551-124">响应</span><span class="sxs-lookup"><span data-stu-id="be551-124">Response</span></span>
 
-<span data-ttu-id="7b410-p102">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="7b410-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="be551-p102">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="be551-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7b410-127">示例</span><span class="sxs-lookup"><span data-stu-id="7b410-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="be551-127">示例</span><span class="sxs-lookup"><span data-stu-id="be551-127">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="7b410-128">请求</span><span class="sxs-lookup"><span data-stu-id="7b410-128">Request</span></span>
+### <a name="request"></a><span data-ttu-id="be551-128">请求</span><span class="sxs-lookup"><span data-stu-id="be551-128">Request</span></span>
 
-<span data-ttu-id="7b410-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="7b410-129">The following is an example of the request.</span></span>
+<span data-ttu-id="be551-129">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="be551-129">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_tiindicator"
@@ -63,9 +63,9 @@ DELETE /security/tiIndicators/{id}
 DELETE https://graph.microsoft.com/beta/security/tiIndicators/{id}
 ```
 
-### <a name="response"></a><span data-ttu-id="7b410-130">响应</span><span class="sxs-lookup"><span data-stu-id="7b410-130">Response</span></span>
+### <a name="response"></a><span data-ttu-id="be551-130">响应</span><span class="sxs-lookup"><span data-stu-id="be551-130">Response</span></span>
 
-<span data-ttu-id="7b410-131">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="7b410-131">The following is an example of the response.</span></span>
+<span data-ttu-id="be551-131">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="be551-131">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -4,24 +4,24 @@ description: 在**assignTo**属性中使用。 此超类是抽象的, 无法
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 43ce19e62bf49932eb42b04e0bf22e4ab8cf0261
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f7c9c6dcf634ceb030a2958d7cc4761428b5af6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507315"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340603"
 ---
-# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="72f66-104">educationAssignmentRecipient 资源类型</span><span class="sxs-lookup"><span data-stu-id="72f66-104">educationAssignmentRecipient resource type</span></span>
+# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="7eb7d-104">educationAssignmentRecipient 资源类型</span><span class="sxs-lookup"><span data-stu-id="7eb7d-104">educationAssignmentRecipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="72f66-105">在**assignTo**属性中使用。</span><span class="sxs-lookup"><span data-stu-id="72f66-105">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="72f66-106">此超类是抽象的, 不能将赋值中的属性设置为此值。</span><span class="sxs-lookup"><span data-stu-id="72f66-106">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="72f66-107">此超类别表示在发布工作分配时应将分配分配给谁。</span><span class="sxs-lookup"><span data-stu-id="72f66-107">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
+<span data-ttu-id="7eb7d-105">在**assignTo**属性中使用。</span><span class="sxs-lookup"><span data-stu-id="7eb7d-105">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="7eb7d-106">此超类是抽象的, 不能将赋值中的属性设置为此值。</span><span class="sxs-lookup"><span data-stu-id="7eb7d-106">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="7eb7d-107">此超类别表示在发布工作分配时应将分配分配给谁。</span><span class="sxs-lookup"><span data-stu-id="7eb7d-107">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
 
 
-<span data-ttu-id="72f66-108">[educationAssignmentClassRecipient](educationassignmentclassrecipient.md)资源是此超类的子类。</span><span class="sxs-lookup"><span data-stu-id="72f66-108">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
+<span data-ttu-id="7eb7d-108">[educationAssignmentClassRecipient](educationassignmentclassrecipient.md)资源是此超类的子类。</span><span class="sxs-lookup"><span data-stu-id="7eb7d-108">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="72f66-109">属性</span><span class="sxs-lookup"><span data-stu-id="72f66-109">Properties</span></span>
-<span data-ttu-id="72f66-110">无。</span><span class="sxs-lookup"><span data-stu-id="72f66-110">None.</span></span>
+## <a name="properties"></a><span data-ttu-id="7eb7d-109">属性</span><span class="sxs-lookup"><span data-stu-id="7eb7d-109">Properties</span></span>
+<span data-ttu-id="7eb7d-110">无。</span><span class="sxs-lookup"><span data-stu-id="7eb7d-110">None.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -48,8 +48,6 @@ ms.locfileid: "32507315"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationassignmentrecipient.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

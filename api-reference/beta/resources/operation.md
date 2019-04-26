@@ -2,39 +2,39 @@
 title: 操作资源类型
 description: 长时间运行的操作的状态。
 localization_priority: Normal
-ms.openlocfilehash: 3ad9848387dab2de928f7ace2fa4b905720be615
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e1e0f7a886d460bc378fdc75041e17b997897e2d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568896"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341769"
 ---
-# <a name="operation-resource-type"></a><span data-ttu-id="015a4-103">操作资源类型</span><span class="sxs-lookup"><span data-stu-id="015a4-103">operation resource type</span></span>
+# <a name="operation-resource-type"></a><span data-ttu-id="3d174-103">操作资源类型</span><span class="sxs-lookup"><span data-stu-id="3d174-103">operation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="015a4-104">长时间运行的操作的状态。</span><span class="sxs-lookup"><span data-stu-id="015a4-104">The status of a long-running operation.</span></span>
+<span data-ttu-id="3d174-104">长时间运行的操作的状态。</span><span class="sxs-lookup"><span data-stu-id="3d174-104">The status of a long-running operation.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="015a4-105">方法</span><span class="sxs-lookup"><span data-stu-id="015a4-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="3d174-105">方法</span><span class="sxs-lookup"><span data-stu-id="3d174-105">Methods</span></span>
 
-<span data-ttu-id="015a4-106">无</span><span class="sxs-lookup"><span data-stu-id="015a4-106">None</span></span>
+<span data-ttu-id="3d174-106">无</span><span class="sxs-lookup"><span data-stu-id="3d174-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="015a4-107">属性</span><span class="sxs-lookup"><span data-stu-id="015a4-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3d174-107">属性</span><span class="sxs-lookup"><span data-stu-id="3d174-107">Properties</span></span>
 
-| <span data-ttu-id="015a4-108">属性</span><span class="sxs-lookup"><span data-stu-id="015a4-108">Property</span></span>           | <span data-ttu-id="015a4-109">类型</span><span class="sxs-lookup"><span data-stu-id="015a4-109">Type</span></span>            | <span data-ttu-id="015a4-110">说明</span><span class="sxs-lookup"><span data-stu-id="015a4-110">Description</span></span>                                                                     |
+| <span data-ttu-id="3d174-108">属性</span><span class="sxs-lookup"><span data-stu-id="3d174-108">Property</span></span>           | <span data-ttu-id="3d174-109">类型</span><span class="sxs-lookup"><span data-stu-id="3d174-109">Type</span></span>            | <span data-ttu-id="3d174-110">说明</span><span class="sxs-lookup"><span data-stu-id="3d174-110">Description</span></span>                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
-| <span data-ttu-id="015a4-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="015a4-111">createdDateTime</span></span>    | <span data-ttu-id="015a4-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="015a4-112">DateTimeOffset</span></span>  | <span data-ttu-id="015a4-113">操作的开始时间。</span><span class="sxs-lookup"><span data-stu-id="015a4-113">The start time of the operation.</span></span>                                                |
-| <span data-ttu-id="015a4-114">id</span><span class="sxs-lookup"><span data-stu-id="015a4-114">id</span></span>                 | <span data-ttu-id="015a4-115">String</span><span class="sxs-lookup"><span data-stu-id="015a4-115">String</span></span>          | <span data-ttu-id="015a4-116">操作 id。只读。</span><span class="sxs-lookup"><span data-stu-id="015a4-116">The operation id. Read-only.</span></span> <span data-ttu-id="015a4-117">由服务器生成。</span><span class="sxs-lookup"><span data-stu-id="015a4-117">Server generated.</span></span>                                  |
-| <span data-ttu-id="015a4-118">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="015a4-118">lastActionDateTime</span></span> | <span data-ttu-id="015a4-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="015a4-119">DateTimeOffset</span></span>  | <span data-ttu-id="015a4-120">操作的上一操作的时间。</span><span class="sxs-lookup"><span data-stu-id="015a4-120">The time of the last action of the operation.</span></span>                                   |
-| <span data-ttu-id="015a4-121">状态</span><span class="sxs-lookup"><span data-stu-id="015a4-121">status</span></span>             | <span data-ttu-id="015a4-122">String</span><span class="sxs-lookup"><span data-stu-id="015a4-122">String</span></span>          | <span data-ttu-id="015a4-123">可能的值是：`notStarted`、`running`、`completed`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="015a4-123">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="015a4-124">只读。</span><span class="sxs-lookup"><span data-stu-id="015a4-124">Read-only.</span></span> |
+| <span data-ttu-id="3d174-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="3d174-111">createdDateTime</span></span>    | <span data-ttu-id="3d174-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3d174-112">DateTimeOffset</span></span>  | <span data-ttu-id="3d174-113">操作的开始时间。</span><span class="sxs-lookup"><span data-stu-id="3d174-113">The start time of the operation.</span></span>                                                |
+| <span data-ttu-id="3d174-114">id</span><span class="sxs-lookup"><span data-stu-id="3d174-114">id</span></span>                 | <span data-ttu-id="3d174-115">String</span><span class="sxs-lookup"><span data-stu-id="3d174-115">String</span></span>          | <span data-ttu-id="3d174-116">操作 id。只读。</span><span class="sxs-lookup"><span data-stu-id="3d174-116">The operation id. Read-only.</span></span> <span data-ttu-id="3d174-117">由服务器生成。</span><span class="sxs-lookup"><span data-stu-id="3d174-117">Server generated.</span></span>                                  |
+| <span data-ttu-id="3d174-118">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="3d174-118">lastActionDateTime</span></span> | <span data-ttu-id="3d174-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3d174-119">DateTimeOffset</span></span>  | <span data-ttu-id="3d174-120">操作的上一操作的时间。</span><span class="sxs-lookup"><span data-stu-id="3d174-120">The time of the last action of the operation.</span></span>                                   |
+| <span data-ttu-id="3d174-121">status</span><span class="sxs-lookup"><span data-stu-id="3d174-121">status</span></span>             | <span data-ttu-id="3d174-122">String</span><span class="sxs-lookup"><span data-stu-id="3d174-122">String</span></span>          | <span data-ttu-id="3d174-123">可能的值是：`notStarted`、`running`、`completed`、`failed`。</span><span class="sxs-lookup"><span data-stu-id="3d174-123">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="3d174-124">只读。</span><span class="sxs-lookup"><span data-stu-id="3d174-124">Read-only.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="015a4-125">关系</span><span class="sxs-lookup"><span data-stu-id="015a4-125">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="3d174-125">关系</span><span class="sxs-lookup"><span data-stu-id="3d174-125">Relationships</span></span>
 
-<span data-ttu-id="015a4-126">无</span><span class="sxs-lookup"><span data-stu-id="015a4-126">None</span></span>
+<span data-ttu-id="3d174-126">无</span><span class="sxs-lookup"><span data-stu-id="3d174-126">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="015a4-127">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="015a4-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3d174-127">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3d174-127">JSON representation</span></span>
 
-<span data-ttu-id="015a4-128">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="015a4-128">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3d174-128">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3d174-128">The following is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -51,7 +51,7 @@ ms.locfileid: "32568896"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="015a4-129">示例</span><span class="sxs-lookup"><span data-stu-id="015a4-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3d174-129">示例</span><span class="sxs-lookup"><span data-stu-id="3d174-129">Example</span></span>
 
 <!-- {
   "blockType": "example",
@@ -75,8 +75,6 @@ ms.locfileid: "32568896"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/operation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

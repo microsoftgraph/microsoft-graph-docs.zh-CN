@@ -4,54 +4,54 @@ description: 。请在上面启用 ()。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0958f8f82502c92eff08ec80a7b116c1b0c4a5f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 51bc8f29d5d8fcc898fc2f1f8ebcf1800ebf1cc7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544054"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339605"
 ---
-# <a name="worksheetcollection-add"></a><span data-ttu-id="78190-103">WorksheetCollection: add</span><span class="sxs-lookup"><span data-stu-id="78190-103">WorksheetCollection: add</span></span>
+# <a name="worksheetcollection-add"></a><span data-ttu-id="e8ba9-103">WorksheetCollection: add</span><span class="sxs-lookup"><span data-stu-id="e8ba9-103">WorksheetCollection: add</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="78190-p101">向工作簿添加新工作表。工作表将添加到现有工作表的末尾。如果您想要激活新添加的工作表，请对其调用 ".activate()。</span><span class="sxs-lookup"><span data-stu-id="78190-p101">Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.</span></span>
-## <a name="permissions"></a><span data-ttu-id="78190-107">权限</span><span class="sxs-lookup"><span data-stu-id="78190-107">Permissions</span></span>
-<span data-ttu-id="78190-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="78190-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e8ba9-p101">向工作簿添加新工作表。工作表将添加到现有工作表的末尾。如果您想要激活新添加的工作表，请对其调用 ".activate()。</span><span class="sxs-lookup"><span data-stu-id="e8ba9-p101">Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e8ba9-107">权限</span><span class="sxs-lookup"><span data-stu-id="e8ba9-107">Permissions</span></span>
+<span data-ttu-id="e8ba9-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e8ba9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="78190-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="78190-110">Permission type</span></span>      | <span data-ttu-id="78190-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="78190-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e8ba9-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="e8ba9-110">Permission type</span></span>      | <span data-ttu-id="e8ba9-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e8ba9-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="78190-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="78190-112">Delegated (work or school account)</span></span> | <span data-ttu-id="78190-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="78190-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="78190-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="78190-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78190-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="78190-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="78190-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="78190-116">Application</span></span> | <span data-ttu-id="78190-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="78190-117">Not supported.</span></span> |
+|<span data-ttu-id="e8ba9-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e8ba9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e8ba9-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8ba9-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e8ba9-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e8ba9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e8ba9-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8ba9-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e8ba9-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="e8ba9-116">Application</span></span> | <span data-ttu-id="e8ba9-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="e8ba9-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="78190-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="78190-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e8ba9-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e8ba9-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="78190-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="78190-119">Request headers</span></span>
-| <span data-ttu-id="78190-120">名称</span><span class="sxs-lookup"><span data-stu-id="78190-120">Name</span></span>       | <span data-ttu-id="78190-121">说明</span><span class="sxs-lookup"><span data-stu-id="78190-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e8ba9-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="e8ba9-119">Request headers</span></span>
+| <span data-ttu-id="e8ba9-120">名称</span><span class="sxs-lookup"><span data-stu-id="e8ba9-120">Name</span></span>       | <span data-ttu-id="e8ba9-121">说明</span><span class="sxs-lookup"><span data-stu-id="e8ba9-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="78190-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="78190-122">Authorization</span></span>  | <span data-ttu-id="78190-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="78190-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="78190-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="78190-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="78190-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="78190-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e8ba9-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="e8ba9-122">Authorization</span></span>  | <span data-ttu-id="e8ba9-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e8ba9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e8ba9-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e8ba9-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="e8ba9-p104">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="e8ba9-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="78190-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="78190-128">Request body</span></span>
-<span data-ttu-id="78190-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="78190-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e8ba9-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="e8ba9-128">Request body</span></span>
+<span data-ttu-id="e8ba9-129">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="e8ba9-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="78190-130">参数</span><span class="sxs-lookup"><span data-stu-id="78190-130">Parameter</span></span>    | <span data-ttu-id="78190-131">类型</span><span class="sxs-lookup"><span data-stu-id="78190-131">Type</span></span>   |<span data-ttu-id="78190-132">说明</span><span class="sxs-lookup"><span data-stu-id="78190-132">Description</span></span>|
+| <span data-ttu-id="e8ba9-130">参数</span><span class="sxs-lookup"><span data-stu-id="e8ba9-130">Parameter</span></span>    | <span data-ttu-id="e8ba9-131">类型</span><span class="sxs-lookup"><span data-stu-id="e8ba9-131">Type</span></span>   |<span data-ttu-id="e8ba9-132">说明</span><span class="sxs-lookup"><span data-stu-id="e8ba9-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="78190-133">name</span><span class="sxs-lookup"><span data-stu-id="78190-133">name</span></span>|<span data-ttu-id="78190-134">string</span><span class="sxs-lookup"><span data-stu-id="78190-134">string</span></span>|<span data-ttu-id="78190-p105">可选。要添加的工作表的名称。如果指定，名称应唯一。如果未指定，Excel 将确定新工作表的名称。</span><span class="sxs-lookup"><span data-stu-id="78190-p105">Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.</span></span>|
+|<span data-ttu-id="e8ba9-133">name</span><span class="sxs-lookup"><span data-stu-id="e8ba9-133">name</span></span>|<span data-ttu-id="e8ba9-134">string</span><span class="sxs-lookup"><span data-stu-id="e8ba9-134">string</span></span>|<span data-ttu-id="e8ba9-p105">可选。要添加的工作表的名称。如果指定，名称应唯一。如果未指定，Excel 将确定新工作表的名称。</span><span class="sxs-lookup"><span data-stu-id="e8ba9-p105">Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="78190-139">响应</span><span class="sxs-lookup"><span data-stu-id="78190-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e8ba9-139">响应</span><span class="sxs-lookup"><span data-stu-id="e8ba9-139">Response</span></span>
 
-<span data-ttu-id="78190-140">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Worksheet](../resources/worksheet.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="78190-140">If successful, this method returns `200 OK` response code and [Worksheet](../resources/worksheet.md) object in the response body.</span></span>
+<span data-ttu-id="e8ba9-140">如果成功, 此方法在`200 OK`响应正文中返回响应代码和[workbookWorksheet](../resources/workbookworksheet.md)对象。</span><span class="sxs-lookup"><span data-stu-id="e8ba9-140">If successful, this method returns `200 OK` response code and [workbookWorksheet](../resources/workbookworksheet.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="78190-141">示例</span><span class="sxs-lookup"><span data-stu-id="78190-141">Example</span></span>
-<span data-ttu-id="78190-142">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="78190-142">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="78190-143">请求</span><span class="sxs-lookup"><span data-stu-id="78190-143">Request</span></span>
-<span data-ttu-id="78190-144">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="78190-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e8ba9-141">示例</span><span class="sxs-lookup"><span data-stu-id="e8ba9-141">Example</span></span>
+<span data-ttu-id="e8ba9-142">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="e8ba9-142">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e8ba9-143">请求</span><span class="sxs-lookup"><span data-stu-id="e8ba9-143">Request</span></span>
+<span data-ttu-id="e8ba9-144">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e8ba9-144">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "worksheetcollection_add"
@@ -66,12 +66,12 @@ Content-length: 26
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="78190-145">响应</span><span class="sxs-lookup"><span data-stu-id="78190-145">Response</span></span>
-<span data-ttu-id="78190-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="78190-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e8ba9-145">响应</span><span class="sxs-lookup"><span data-stu-id="e8ba9-145">Response</span></span>
+<span data-ttu-id="e8ba9-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e8ba9-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet"
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -95,8 +95,6 @@ Content-length: 100
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/worksheetcollection-add.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
