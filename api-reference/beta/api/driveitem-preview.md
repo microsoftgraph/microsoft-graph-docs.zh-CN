@@ -3,12 +3,12 @@ title: 'driveItem: preview'
 description: 此操作允许您获取项目的短生存期可嵌入 url, 以呈现临时预览。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a49a05e1e01616bc9bbbb713fd05805d9af3070
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 74e6058d61fc5672bedd5e6479829f234707c45a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454368"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325120"
 ---
 # <a name="driveitem-preview"></a>driveItem: preview
 
@@ -30,7 +30,7 @@ ms.locfileid: "32454368"
 |:---------------------------------------|:-------------------------------------------
 | 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
 | 委派（个人 Microsoft 帐户） | Read, 文件. readwrite, 全部文件。
-| Application                            | 不支持。
+| 应用程序                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ POST /shares/{shareId}/driveItem/preview
 请求正文定义您的应用程序所请求的可嵌入 URL 的属性。
 请求应为具有以下属性的 JSON 对象。
 
-|   名称      |  类型         | 描述
+|   名称      |  类型         | 说明
 |:------------|:--------------|:-----------------------------------------------
 | 格式      | 字符串        | 可选。 要使用的预览应用。 `onedrive` 或 `office`）。 如果为 null, 则将自动选择合适的查看器。
 | chromeless  | 布尔       | 可选。 如果`true`为 (默认值), 则嵌入的视图将不包含任何控件。
@@ -70,7 +70,7 @@ POST /shares/{shareId}/driveItem/preview
 
 响应将是一个包含以下属性的 JSON 对象:
 
-| 名称           | 类型   | 描述
+| 名称           | 类型   | 说明
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | 适合使用 HTTP GET (iframe 等) 进行嵌入的 URL
 | postUrl        | string | 适合使用 HTTP POST (窗体 POST、JS 等) 嵌入的 URL
@@ -109,11 +109,3 @@ param1=value&param2=another%20value
 ### <a name="pagezoom"></a>页面/缩放
 
 " `page` " `zoom`和 "" 选项可能不适用于所有预览版应用, 但如果预览应用支持它, 则将应用 "" 和 "" 选项。
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-preview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

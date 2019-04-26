@@ -4,14 +4,16 @@ description: 检索 domain 对象的属性和关系。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 03dcc7f5eff084ec79cb39a60688aadfaf0d63fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f2fe68553dbdf423a36f80c75ba569d13263c16
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454776"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325840"
 ---
 # <a name="get-domain"></a>获取域
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 domain 对象的属性和关系。
 
@@ -24,7 +26,7 @@ ms.locfileid: "32454776"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.Read.All、Domain.ReadWrite.All |
+|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,11 +59,10 @@ GET /domains/{id}
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com
+GET https://graph.microsoft.com/beta/domains/contoso.com
 ```
 ##### <a name="response"></a>响应
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -88,10 +89,13 @@ Content-length: 192
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get domain",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

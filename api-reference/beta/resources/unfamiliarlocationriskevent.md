@@ -2,12 +2,12 @@
 title: unfamiliarLocationRiskEvent 资源类型
 description: Azure Active Directory 标识保护检测到的一个风险事件, 其中的帐户登录尝试来自该用户的新位置。 有关风险事件的完整信息, 请参阅 Azure AD Identity Protection 文档。
 localization_priority: Normal
-ms.openlocfilehash: adad214c0ac58540f1115b836c2c5f26faa6c031
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 984f11f7e47a251d49acd315d29504216b7995f6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584262"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345471"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>unfamiliarLocationRiskEvent 资源类型
 
@@ -52,6 +52,8 @@ ms.locfileid: "32584262"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.locatedRiskEvent",
   "@odata.type": "microsoft.graph.unfamiliarLocationRiskEvent"
 }-->
 
@@ -68,7 +70,8 @@ ms.locfileid: "32584262"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -82,8 +85,6 @@ ms.locfileid: "32584262"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/unfamiliarlocationriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

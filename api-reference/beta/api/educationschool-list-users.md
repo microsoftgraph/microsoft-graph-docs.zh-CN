@@ -4,14 +4,16 @@ description: 检索学校中的用户列表。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ac037d2309246e8a2a7b4f763755fba77fbf8281
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b38a3a4d8934bb0597ceb13e37ce829696bde073
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457650"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322909"
 ---
 # <a name="list-educationusers"></a>列出 educationUsers
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索学校中的用户列表。
 
@@ -22,7 +24,7 @@ ms.locfileid: "32457650"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ GET /education/schools/{id}/users
   "name": "get_users"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/users
+GET https://graph.microsoft.com/beta/education/schools/10002/users
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -106,10 +108,13 @@ Content-length: 593
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List users",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

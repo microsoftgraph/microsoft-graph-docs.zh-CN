@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 视频
 localization_priority: Normal
-ms.openlocfilehash: 1e780c8392316be1f7fcc59f3818085dc462da29
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1dc85c4e5525d5c53e89b6f6db0ffb4a2418ab7e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454021"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345424"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
 
@@ -38,15 +38,15 @@ ms.locfileid: "32454021"
   "bitrate": 39101896,
   "duration": 8053,
   "fourCC": "H264",
-  "frameRate": 239.877,
   "height": 1280,
-  "width": 720
+  "width": 720,
+  "framerate": 2.75
 }
 ```
 
 ## <a name="properties"></a>属性
 
-| 属性名称             | 类型   | 描述
+| 属性名称             | 类型   | 说明
 |:--------------------------|:-------|:----------------------------------------
 | **audioBitsPerSample**    | Int32  | 每个样本的音频位数。
 | **audioChannels**         | Int32  | 音频频道数。
@@ -78,8 +78,6 @@ ms.locfileid: "32454021"
   "keywords": "bitrate,duration,size,video",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/video.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

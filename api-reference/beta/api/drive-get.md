@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取驱动器
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0bea809fc719d90dadbde9282f64ac43df4b91e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78e642d189de09677c682607e9f83d7ea9bc482d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454741"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325415"
 ---
 # <a name="get-drive"></a>获取驱动器
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 [Drive](../resources/drive.md) 资源的属性和关系。
 
@@ -36,7 +38,7 @@ ms.locfileid: "32454741"
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive
@@ -50,7 +52,7 @@ GET /me/drive
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
 
 ```http
 GET /users/{idOrUserPrincipalName}/drive
@@ -68,7 +70,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
 
 ```http
 GET /groups/{groupId}/drive
@@ -105,7 +107,7 @@ GET /sites/{siteId}/drive
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{drive-id}
+GET /drives/{driveId}
 ```
 
 ### <a name="path-parameters"></a>路径参数
@@ -153,18 +155,13 @@ Content-type: application/json
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "suppressions": [
-      "Warning: /api-reference/v1.0/api/drive-get.md:
-        Unable to map some markdown elements into schema.
-            Unmapped methods:
-        get-drive-default, get-drive-by-user, get-drive-by-group, get-drive-by-id
-            Unmapped tables:
-        Permissions - AuthScopes, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters"
-  ],
-  "tocPath": "Drives/Get drive"
-} -->
+  "tocPath": "Drives/Get drive",
+  "suppressions": []
+}
+-->

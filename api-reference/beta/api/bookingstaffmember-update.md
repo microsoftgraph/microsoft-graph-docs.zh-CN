@@ -4,12 +4,12 @@ description: 更新指定 bookingbusiness 中的 bookingStaffMember 的属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 608580a16d796a4ee1b296c0a19caea110326cff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4124a681332a91d2d909c141b54d412cae9bcc69
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461659"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322320"
 ---
 # <a name="update-bookingstaffmember"></a>更新 bookingstaffmember
 
@@ -40,12 +40,12 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|布尔|如果为 True, 则表示如果教职员工成员是 office 365 用户, 则预订 API 将使用 office 365 中的教职员工成员的个人日历以及**workingHours**属性来确定可用性。 |
+|availabilityIsAffectedByPersonalCalendar|Boolean|如果为 True, 则表示如果教职员工成员是 office 365 用户, 则预订 API 将使用 office 365 中的教职员工成员的个人日历以及**workingHours**属性来确定可用性。 |
 |colorIndex|Int32|标识代表教职员工成员的颜色。 该颜色对应于预订应用中的 "**员工详细信息**" 页上的调色板。|
 |displayName|String|向客户显示的教职员工成员的姓名。|
 |emailAddress|String|教职员工成员的电子邮件地址。 这可以位于与企业相同的 Office 365 租户中, 也可以位于不同的电子邮件域中。 如果在企业的计划策略中将**sendConfirmationsToOwner**属性设置为 true, 则使用此电子邮件地址。|
-|role|字符串| 企业中教职员工成员的角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。|
-|useBusinessHours|布尔|如果为 True, 则表示教职员工成员的可用性取决于企业的**businessHours**属性。 False 表示可用性由教职员工成员的**workingHouse**属性设置决定。|
+|role|string| 企业中教职员工成员的角色。 可取值为：`guest`、`administrator`、`viewer`、`externalGuest`。|
+|useBusinessHours|Boolean|如果为 True, 则表示教职员工成员的可用性取决于企业的**businessHours**属性。 False 表示可用性由教职员工成员的**workingHouse**属性设置决定。|
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md)集合|教职员工成员可用于预订的一周中每一天的小时数。|
 
 ## <a name="response"></a>响应
@@ -128,7 +128,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -146,8 +146,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

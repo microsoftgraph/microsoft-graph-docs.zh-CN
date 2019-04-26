@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 列出文件夹的内容
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 96c5623ba2534086fbcd2130b5b5228e53208c35
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3220f11522114192648433fff9f743d678d81300
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454382"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325254"
 ---
 # <a name="list-children-of-a-driveitem"></a>列出 DriveItem 的子项
 
@@ -126,8 +126,6 @@ Content-type: application/json
   "keywords": "list,children,collection",
   "section": "documentation",
   "tocPath": "Items/List children",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-list-children.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: 获取设备命令状态
 description: 获取设备上命令的状态。 有关状态代码的完整列表, 请参阅 actionStatus 的列表。
 localization_priority: Normal
-ms.openlocfilehash: ae5fe1f2b6b48c0a739911bd20370562e8540f18
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9b914cdfde78ce50df812acb09dc034c978c7e08
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457149"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324995"
 ---
 # <a name="get-device-command-status"></a>获取设备命令状态
 
@@ -23,7 +23,7 @@ ms.locfileid: "32457149"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。    |
 |委派（个人 Microsoft 帐户） | Device.Command    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -104,7 +104,7 @@ Content-Type: application/json; charset=utf-8
 <!-- {
   "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
+  "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
 ```http
@@ -140,7 +140,7 @@ HTTP/1.1 200 OK
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | 不支持。    |
 |委派（个人 Microsoft 帐户） | Device.Command    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ### <a name="http-request"></a>HTTP 请求
 
@@ -199,7 +199,7 @@ Content-Type: application/json; charset=utf-8
 <!-- {
   "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
+  "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
 ```http
@@ -212,11 +212,3 @@ HTTP/1.1 200 OK
   "Type":"Ok"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/get-device-command-status.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

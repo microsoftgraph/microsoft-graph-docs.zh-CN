@@ -4,14 +4,16 @@ description: 更新域对象的属性。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c221ee4ec889f77712417ca7fca1c6d7708881ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 36bf901ff9e5c0ca9e8164aebac8559ad78d2eef
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454867"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326244"
 ---
 # <a name="update-domain"></a>更新域
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 更新域对象的属性。
 
@@ -26,7 +28,7 @@ ms.locfileid: "32454867"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Domain.ReadWrite.All |
+|应用程序 | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -56,11 +58,10 @@ PATCH /domains/{id}
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["contoso.com"],
   "name": "update_domain"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/domains/contoso.com
+PATCH https://graph.microsoft.com/beta/domains/contoso.com
 Content-type: application/json
 
 {
@@ -85,10 +86,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update domain",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -2,12 +2,12 @@
 title: 列出 businessFlowTemplates
 description: 在 "Azure AD access 评论" 功能中, 列出所有 businessFlowTemplate 对象。
 localization_priority: Normal
-ms.openlocfilehash: 3d9755a8aefb8c9e9fc4348c2002141805847c5d
-ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
+ms.openlocfilehash: 3d26784caf0eb121350c7575934c4aa9dae61789
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33299666"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322346"
 ---
 # <a name="list-businessflowtemplates"></a>列出 businessFlowTemplates
 

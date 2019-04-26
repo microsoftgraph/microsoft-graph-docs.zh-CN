@@ -4,12 +4,12 @@ description: 检索已注册为设备用户的用户列表。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c5327c246c3a1dc58b0b1431fdff330cf7b6a732
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6483d3edf714fefeebc4aef6d148548d36a3eef6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455077"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326153"
 ---
 # <a name="list-registeredusers"></a>列出 registeredUser
 
@@ -26,7 +26,7 @@ ms.locfileid: "32455077"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | "directory"、"all" 或 "directory.accessasuser.all"    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application | Directory.Read.All 或 Directory.ReadWrite.All |
+|应用程序 | Directory.Read.All 或 Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -90,8 +90,6 @@ Content-length: 55
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/device-list-registeredusers.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

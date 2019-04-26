@@ -2,12 +2,12 @@
 title: leakedCredentialsRiskEvent 资源类型
 description: Azure Active Directory 标识保护检测到的某个帐户凭据已在通配符中检测到的风险事件。 有关风险事件的完整信息, 请参阅 Azure AD Identity Protection 文档。
 localization_priority: Normal
-ms.openlocfilehash: 0884da08195ffa2bee38c943d27b1d25aef02e49
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1fbba14c25678b0e847c18648970a9fb551bee48
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581085"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345328"
 ---
 # <a name="leakedcredentialsriskevent-resource-type"></a>leakedCredentialsRiskEvent 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "32581085"
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| 风险事件关闭的日期和时间|
 |createdDateTime|dateTimeOffset| 风险事件的创建日期和时间。 此值始终大于或等于风险事件本身的日期时间。 这是查询风险事件时用作筛选器的正确属性。|
-|id|string| 只读|
+|id|字符串| 只读|
 |riskEventDateTime|dateTimeOffset| 风险事件发生的日期和时间|
 |riskEventStatus|string| 可取值为：`active`、`remediated`、`dismissedAsFixed`、`dismissedAsFalsePositive`、`dismissedAsIgnore`、`loginBlocked`、`closedMfaAuto`、`closedMultipleReasons`。|
 |riskLevel|string| 可取值为：`low`、`medium`、`high`。|
@@ -47,6 +47,7 @@ ms.locfileid: "32581085"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -64,7 +65,8 @@ ms.locfileid: "32581085"
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
@@ -78,8 +80,6 @@ ms.locfileid: "32581085"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/leakedcredentialsriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

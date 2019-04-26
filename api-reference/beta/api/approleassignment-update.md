@@ -2,12 +2,12 @@
 title: 更新 approleassignment
 description: 更新 approleassignment 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 54c256e3b94a5bb2d62c2ffe31ecf777d472b93c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a3aeea70142c81c7ce368d0c9e688c87677eb210
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458955"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322610"
 ---
 # <a name="update-approleassignment"></a>更新 approleassignment
 
@@ -42,9 +42,9 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|创建授予的时间。|
 |id|Guid|向主体分配的角色 id。  此角色必须由目标资源应用程序 **resourceId** 在其 **appRoles** 属性中声明。 如果资源未声明任何权限，则必须指定默认 id (0 GUID)。                            **注意：** 不可为 null。            |
-|principalDisplayName|字符串|已授权访问权限的主体的显示名称。|
+|principalDisplayName|String|已授权访问权限的主体的显示名称。|
 |principalId|Guid|要向其授予访问权限的主体的唯一标识符 (**objectId**)。                            **备注**: 必需。            |
-|principalType|字符串|主体类型。  它可以是“User”、“Group”或“ServicePrincipal”。|
+|principalType|String|主体类型。  它可以是“User”、“Group”或“ServicePrincipal”。|
 |resourceDisplayName|String|已对其进行分配的资源的显示名称。|
 |resourceId|Guid|为其进行了分配的目标资源 (服务主体) 的唯一标识符 (**objectId**)。|
 
@@ -76,7 +76,7 @@ Content-length: 233
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.approleassignment"
+  "@odata.type": "microsoft.graph.appRoleAssignment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -102,8 +102,6 @@ Content-length: 253
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

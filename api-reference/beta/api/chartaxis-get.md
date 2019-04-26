@@ -1,17 +1,17 @@
 ---
-title: 获取 ChartAxis
-description: 检索 chartaxis 对象的属性和关系。
+title: 获取 workbookChartAxis
+description: 检索 workbookChartAxis 对象的属性和关系。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 98ce124c35fa39c6ad2ae41565b7ef180ff57c55
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5a07f899330167aa3e9fd4afc2989db5015b3ca6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456624"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327827"
 ---
-# <a name="get-chartaxis"></a>获取 ChartAxis
+# <a name="get-workbookchartaxis"></a>获取 workbookChartAxis
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,14 +23,14 @@ ms.locfileid: "32456624"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
@@ -46,7 +46,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [ChartAxis](../resources/chartaxis.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[workbookChartAxis](../resources/workbookchartaxis.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。
@@ -55,14 +55,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
   "name": "get_chartaxis"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartaxis"
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -70,12 +70,9 @@ Content-type: application/json
 Content-length: 64
 
 {
-  "majorUnit": {
-  },
-  "maximum": {
-  },
-  "minimum": {
-  }
+  "majorUnit": "string",
+  "maximum": "string",
+  "minimum": "string"
 }
 ```
 
@@ -88,8 +85,6 @@ Content-length: 64
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chartaxis-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

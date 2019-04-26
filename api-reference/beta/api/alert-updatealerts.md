@@ -4,12 +4,12 @@ description: 更新一个请求中的多个警报, 而不是多个请求。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 5be6374d70baaf4205d5fc1e431111844ce34313
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad43cf3488ff0661a4b22130ae8728a00c3ea17d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459310"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322694"
 ---
 # <a name="alert-updatealerts"></a>警报: updateAlerts
 
@@ -62,7 +62,8 @@ POST /security/alerts/updateAlerts
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "alert_updatealerts"
+  "name": "alert_updatealerts",
+   "isCollection": "true"
 }-->
 
 ```http
@@ -75,9 +76,9 @@ Content-type: application/json
       "assignedTo": "String",
       "closedDateTime": "String (timestamp)",
       "comments": ["String"],
-      "feedback": "@odata.type: microsoft.graph.alertFeedback",
+      "feedback": {"@odata.type": "microsoft.graph.alertFeedback"},
       "id": "String (identifier)",
-      "status": "@odata.type: microsoft.graph.alertStatus",
+      "status": {"@odata.type": "microsoft.graph.alertStatus"},
       "tags": ["String"],
       "vendorInformation":
         {
@@ -91,7 +92,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 > [!NOTE]
 > 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -106,6 +107,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

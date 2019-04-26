@@ -4,14 +4,16 @@ description: 从学校删除用户。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 34c7531f3c45caf2a26099fc150666ff6a7899ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 47f07b3cba001bee1bd2c978f8a4e660eac43172
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457697"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325146"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>从 educationSchool 删除 educationUser
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从学校删除用户。
 
@@ -22,12 +24,12 @@ ms.locfileid: "32457697"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  不支持。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | EduRoster.ReadWrite.All | 
+|应用程序 | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/schools/{id}/users/{userId}/$ref
+DELETE /education/schools/<id>/users/{userId}/$ref
 ```
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -49,11 +51,11 @@ DELETE /education/schools/{id}/users/{userId}/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}
+DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006
 ```
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -65,10 +67,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

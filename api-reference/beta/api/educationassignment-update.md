@@ -4,12 +4,12 @@ description: 更新工作分配对象。 只有课堂中的教师才能执行此
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: eb5762f86e1572f9a9d5876199c945154a25293b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c8b6659d0af1ae57829add1f64c19cb954b8413f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458164"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325016"
 ---
 # <a name="update-educationassignment"></a>更新 educationassignment
 
@@ -42,8 +42,8 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|布尔| 提交在截止日期之后是否可以提交。|
-|allowStudentsToAddResourcesToSubmission|布尔| 学生是否可以将资源添加到提交。 指示提交的唯一项目是否来自工作分配资源列表。 |
+|allowLateSubmissions|Boolean| 提交在截止日期之后是否可以提交。|
+|allowStudentsToAddResourcesToSubmission|Boolean| 学生是否可以将资源添加到提交。 指示提交的唯一项目是否来自工作分配资源列表。 |
 |assignDateTime|DateTimeOffset| 应将分配发布给学生的日期。 |
 |assignTo|educationAssignmentRecipient| 获取工作分配的学生。|
 |displayName|String| 分配的名称。 |
@@ -75,7 +75,7 @@ Content-length: 279
 }
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
 
@@ -111,8 +111,6 @@ Content-length: 279
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

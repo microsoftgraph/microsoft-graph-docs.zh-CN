@@ -4,12 +4,12 @@ description: 'teamsTab 是固定 (附加) 到团队中的频道的选项卡。 '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 207b9d1d4d27199f07ae22bd47587411f917afae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6666fbcd69ac46e778ef46380c426c4e94a129fc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553643"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345675"
 ---
 # <a name="teamstab-resource-type"></a>teamsTab 资源类型
 
@@ -58,13 +58,14 @@ teamsTab 是固定 (附加) 到[团队](team.md)中的[频道](channel.md)的[�
 }-->
 
 ```json
-{  
+{
   "id": "string",
   "displayName": "string",
   "teamsAppId": "string",
   "sortOrderIndex": "string",
   "webUrl": "string",
-  "configuration" : "teamsTabConfiguration"
+  "configuration": "teamsTabConfiguration",
+  "name": "string"
 }
 
 ```
@@ -78,9 +79,7 @@ teamsTab 是固定 (附加) 到[团队](team.md)中的[频道](channel.md)的[�
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamstab.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

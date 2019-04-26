@@ -1,19 +1,19 @@
 ---
 title: 创建频道
 description: 在请求正文中指定的 Microsoft 团队中创建一个新通道。
-localization_priority: Priority
+localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: c1163b82bc5d2b6170079ab80ff77a1cc341c627
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 22abce5b062008311b0becdc75e5f6fe41d3ad35
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456561"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327975"
 ---
 # <a name="create-channel"></a>创建频道
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在请求正文中指定的 Microsoft 团队中创建一个新[通道](../resources/channel.md)。
 
@@ -57,7 +57,7 @@ POST /teams/{id}/channels
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels
+POST https://graph.microsoft.com/beta/teams/{id}/channels
 Content-type: application/json
 
 {
@@ -86,10 +86,13 @@ Content-length: 201
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

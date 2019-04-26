@@ -4,12 +4,12 @@ description: 检索 contact 对象的属性和关系。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e758a088400168ca755aae755054fcd57c1d092a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 79f70fb7b7f591e7d17c1286e2900848a415d653
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455679"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327617"
 ---
 # <a name="get-contact"></a>获取联系人
 
@@ -50,7 +50,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-|Name|值|说明|
+|名称|值|说明|
 |:---------------|:--------|:-------|
 |$expand|string|要在响应中扩展和添加的关系（以逗号分隔的列表）。 有关受支持的名称, 请参阅[contact](../resources/contact.md)对象的关系表。 |
 |$select|string|要在响应中包括的属性的列表（以逗号分隔）。|
@@ -172,8 +172,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/contact-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

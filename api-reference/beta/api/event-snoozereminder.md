@@ -4,14 +4,16 @@ description: 将用户日历中的事件的提醒推迟到新时间。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 15cd83b1af1b68088bd9a789fdeacc88f7d7b3e4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 57fea89c98bfc2e699d0625db4d40fbfd0f57578
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457419"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325111"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)的提醒推迟到新时间。
 
@@ -51,7 +53,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |描述|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |newReminderTime|DateTimeTimeZone|触发提醒的新日期和时间。|
 
@@ -68,13 +70,13 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
   "name": "event_snoozereminder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/{id}/snoozeReminder
+POST https://graph.microsoft.com/beta/me/events/{id}/snoozeReminder
 Content-type: application/json
 Content-length: 97
 
 {
   "newReminderTime": {
-    "dateTime": "dateTime-value",
+    "dateTime": "2016-10-19T10:37:00Z",
     "timeZone": "timeZone-value"
   }
 }
@@ -92,10 +94,13 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event: snoozeReminder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

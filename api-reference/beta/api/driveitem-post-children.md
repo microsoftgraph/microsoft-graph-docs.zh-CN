@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 新建文件夹
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a81d8fe2c7511b4fe971ccdf114883088bea65b3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1efd0150a1444f312c047a4aea30091928bb6cd5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454361"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325268"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>在驱动器中新建文件夹
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用指定的父项或路径在[驱动器](../resources/drive.md)中新建文件夹或 [DriveItem](../resources/driveitem.md)。
 
@@ -114,10 +116,13 @@ Content-Type: application/json
 [item-resource]: ../resources/driveitem.md
 [folder-facet]: ../resources/folder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a folder item in a drive.",
   "keywords": "create,folder,new item",
   "section": "documentation",
-  "tocPath": "Items/Create folder"
-} -->
+  "tocPath": "Items/Create folder",
+  "suppressions": []
+}
+-->

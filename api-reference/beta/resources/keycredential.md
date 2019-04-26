@@ -2,12 +2,12 @@
 title: keyCredential 资源类型
 description: 包含与应用程序或服务主体相关联的密钥凭据。 application 和 servicePrincipal 实体的**keyCredentials**属性是**keyCredential**的集合。
 localization_priority: Normal
-ms.openlocfilehash: 87223ab77bc18ca57fb2bd9635cd0790f0651fb7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 312821a91bdbb1ad15e136d2b7fc8f9184df4eac
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562669"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345384"
 ---
 # <a name="keycredential-resource-type"></a>keyCredential 资源类型
 

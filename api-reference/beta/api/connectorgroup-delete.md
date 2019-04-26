@@ -2,12 +2,12 @@
 title: 删除 connectorGroup
 description: 删除 connectorGroup。
 localization_priority: Normal
-ms.openlocfilehash: a0fd138281b8337df49388f4a10dc34cc02da18d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 34bf5dd919ddea37f429e61fc9b01c1ee4c2d68c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455910"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327629"
 ---
 # <a name="delete-connectorgroup"></a>删除 connectorGroup
 
@@ -72,8 +72,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/connectorgroup-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

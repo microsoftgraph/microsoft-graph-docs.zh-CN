@@ -4,12 +4,12 @@ description: 更新指定 bookingbusiness 中的 bookingService 对象的属性�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 6049fe68eaa45597246bef1c1b11952e3c4a5d42
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 41bcc4b31735cefb162a03a8c5a3dfd82cc6364e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461631"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322464"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
@@ -51,18 +51,18 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |defaultDuration|持续时间|服务的默认长度, 以天数、小时数、分钟数和秒数表示。 例如, p11d23h59m 59.999999999999 s。 |
 |defaultLocation|[location](../resources/location.md)|服务的默认物理位置。|
 |defaultPrice|双精度|服务的默认货币价格。|
-|defaultPriceType|字符串|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
+|defaultPriceType|string|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
 |defaultReminders|[bookingReminder](../resources/bookingreminder.md)集合|此服务的约会的默认提醒集。 此属性的值仅在按 ID 读取此**bookingService**时可用。|
-|description|字符串|服务的文本说明。|
+|说明|String|服务的文本说明。|
 |displayName|字符串|服务名称。|
 |emailAddress|String|电子邮件地址|
 |id|String| 只读。|
-|isHiddenFromCustomers|布尔|如果为 True, 则表示此服务不可供客户预订。|
-|notes|字符串|有关此服务的其他信息。|
+|isHiddenFromCustomers|Boolean|如果为 True, 则表示此服务不可供客户预订。|
+|notes|String|有关此服务的其他信息。|
 |postBuffer|持续时间|此服务的约会结束后以及下一个客户约会可以被预订前要缓冲的时间。|
 |preBuffer|持续时间|在此服务的约会开始之前要缓冲的时间。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|确定应如何创建和管理此类服务的约会的一组策略。|
-|staffMemberIds|String collection|代表提供此服务的[教职员工成员](../resources/bookingstaffmember.md)。 |
+|staffMemberIds|String 集合|代表提供此服务的[教职员工成员](../resources/bookingstaffmember.md)。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
@@ -83,7 +83,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -101,8 +101,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

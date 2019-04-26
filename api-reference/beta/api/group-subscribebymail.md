@@ -4,12 +4,12 @@ description: 调用此方法可使当前用户在该组中收到有关该组的�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 0a334daa005947099da324aab31ccc2a1da6b6e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dd753c4731074024a1bd3700ffde379592720d46
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501950"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324201"
 ---
 # <a name="group-subscribebymail"></a>组：subscribeByMail
 
@@ -54,7 +54,7 @@ POST https://graph.microsoft.com/beta/groups/{id}/subscribeByMail
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -72,8 +72,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-subscribebymail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

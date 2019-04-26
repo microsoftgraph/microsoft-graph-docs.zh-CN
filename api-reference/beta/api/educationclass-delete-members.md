@@ -4,14 +4,16 @@ description: 从 educationClass 删除 educationUser
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ba9d490691b6d717fc1d088408c25a2724eb491a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ac5ee332c58a070d9f25dfb3bde78177fb323b02
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457947"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324946"
 ---
 # <a name="remove-a-student"></a>删除学生
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 从 [educationClass](../resources/educationclass.md) 删除 [educationUser](../resources/educationuser.md)
 
@@ -51,11 +53,11 @@ DELETE /education/classes/{id}/members/{userId}/$ref
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/{member-id}
+DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 ```
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -67,10 +69,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

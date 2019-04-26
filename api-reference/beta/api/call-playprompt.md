@@ -4,12 +4,12 @@ description: 在呼叫中播放提示。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 32ea1b838a71d40a6f6106a648962c6a77c29057
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e0f1c29b01861e931b96dc75549b8e883460b98d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461232"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328027"
 ---
 # <a name="call-playprompt"></a>调用: playPrompt
 
@@ -45,7 +45,7 @@ POST /applications/{id}/calls/{id}/playPrompt
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
 |提示|[提示符](../resources/prompt.md)集合||
-|适用|字符串|客户端上下文。|
+|适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
 如果成功, 此方法在`200 OK`响应正文中返回响应代码和[playPromptOperation](../resources/playPromptOperation.md)对象。
@@ -133,8 +133,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/call-playprompt.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

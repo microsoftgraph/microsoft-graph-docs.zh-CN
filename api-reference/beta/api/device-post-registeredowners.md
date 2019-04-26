@@ -4,14 +4,16 @@ description: 将用户添加为设备的已注册所有者。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 24c5c7977e8989bd4b790df3ec0629f61a654422
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f992e46b12fc0d0dcd29786a13f9adc76653868c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455153"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326132"
 ---
 # <a name="create-registeredowner"></a>创建 registeredOwner
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将用户添加为设备的已注册所有者。
 ## <a name="permissions"></a>权限
@@ -22,7 +24,7 @@ ms.locfileid: "32455153"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.ReadWrite.All |
+|应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +52,7 @@ POST /devices/{id}/registeredOwners/$ref
   "name": "create_directoryobject_from_device"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners
+POST https://graph.microsoft.com/beta/devices/{id}/registeredOwners/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -81,10 +83,13 @@ Content-length: 51
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create registeredOwner",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,14 +4,16 @@ description: 检索 contract 对象的属性和关系。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6fa54d813a456cc5a29aadc84ec29f99dc475f9f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d02c249662d65694ff13e7aa3e8d58aa26e547bd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455588"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327196"
 ---
 # <a name="get-contract"></a>获取合同
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[contract](../resources/contract.md)对象的属性和关系。
 
@@ -58,7 +60,7 @@ GET /contracts/{id}
   "name": "get_contract"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/contracts/{id}
+GET https://graph.microsoft.com/beta/contracts/{id}
 ```
 
 ##### <a name="response"></a>响应
@@ -66,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/contracts/{id}
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contract"
+  "@odata.type": "microsoft.graph.Contract"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -84,10 +86,13 @@ Content-length: 186
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get Contract",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,12 +4,12 @@ ms.author: chackman
 title: 列出关注的项
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: df38a11a09f4ec86eb029f236030cc4565e5d939
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e3a6a7c526bd945a9a9fb30d2014b2bb3f84c3cc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454804"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325422"
 ---
 # <a name="list-followed-items"></a>列出关注的项
 
@@ -72,8 +72,6 @@ Content-type: application/json
   "keywords": "drive,onedrive.drive,list followed items",
   "section": "documentation",
   "tocPath": "Drives/List followed items",
-  "suppressions": [
-    "Error: /api-reference/beta/api/drive-list-following.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

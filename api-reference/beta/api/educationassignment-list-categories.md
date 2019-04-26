@@ -4,12 +4,12 @@ description: 列出与此工作分配相关联的所有类别。
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 925b2f558b98e50cfcebd7b68c3af52452f2e3df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3a66e74a0addd6b6064e1e5ad66aba74895f0451
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458234"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324695"
 ---
 # <a name="list-categories"></a>列出类别
 
@@ -24,7 +24,7 @@ ms.locfileid: "32458234"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments、EduAssignments、EduAssignments、Read、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | 不支持。 | 
+|应用程序 | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ GET /education/classes/{id}/assignments/{id}/categories
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
 
@@ -86,8 +86,6 @@ Content-length: 873
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationassignment-list-categories.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

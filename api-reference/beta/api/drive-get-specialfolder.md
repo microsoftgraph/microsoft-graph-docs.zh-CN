@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: 获取特殊文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ecf36cdc81373a2c6be2cce8ec1dd8fc6457ef34
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1afdd464091c395909f57291100f95bbadc5a47
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454783"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325774"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用特殊集合可以按名称访问特殊文件夹。
 
@@ -85,10 +87,10 @@ Content-type: application/json
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
 
 ```http
-GET /me/drive/special/{special-folder-name}/children
+GET /me/drive/special/{name}/children
 ```
 
 ### <a name="response"></a>响应
@@ -115,10 +117,13 @@ Content-Type: application/json
 
 如果应用拥有只读权限，且特殊文件夹尚不存在，那么可能无法请求获取特殊文件夹或其子项，响应为 `404 Not Found` 或 `403 Forbidden` 错误。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Access known folders in OneDrive through the special folder collection",
   "keywords": "known folders",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Special folders"
-} -->
+  "tocPath": "OneDrive/Drive/Special folders",
+  "suppressions": []
+}
+-->

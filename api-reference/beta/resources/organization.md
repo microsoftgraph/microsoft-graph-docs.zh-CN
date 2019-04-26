@@ -4,12 +4,12 @@ description: '表示 Azure Active Directory 租户。 '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5f2b7d83f8c78eb11ad4f22d456d9791982aab5c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568554"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345553"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -44,21 +44,20 @@ ms.locfileid: "32568554"
 | deletedDateTime                    | DateTimeOffset                                                    | 表示采用 ISO 8601 格式创建 Azure AD 的日期和时间，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。                                                                                     |
 |dirSyncEnabled|Boolean|如果此对象从本地目录同步，则为 **true**；如果此对象最初从本地目录同步，但以后不再同步，则为 **false**；如果此对象从未从本地目录同步，则为 **null**（默认值）。|
 |displayName|String|租户的显示名称。|
-|id|字符串|租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 null。 只读。|
+|id|字符串|租户 ID，表示组织（或租户）的唯一标识符。 继承自 [directoryObject](directoryobject.md)。 键。 不可为 Null。 只读。|
 |isMultipleDataLocationsForServicesEnabled|布尔值|如果组织支持多地理位置，则为 **true**；如果组织不支持多地理位置，则为 **false**；**为空**（默认）。 只读。 有关详细信息，请参阅 [OneDrive Online 多地理位置](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction)。|
-|marketingNotificationEmails|String collection| 不可为空。            |
+|marketingNotificationEmails|String 集合| 不可为 null。            |
 |objectType|String|一个标识对象类型的字符串。对于租户，该值始终为“Company”。 |
 |postalCode|String| 组织地址的邮政编码。 |
 |preferredLanguage|String| 组织的首选语言。 应遵循 ISO 639-1 代码；例如“en”。 |
 |privacyProfile|[privacyProfile](privacyprofile.md)| 组织的隐私配置文件。            |
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) 集合| 不可为 null。            |
-|provisioningErrors|ProvisioningError 集合| 不可为 null。            |
+|provisionedPlans|[provisionedPlan](provisionedplan.md)集合| 不可为 null。            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
 |state|String| 组织地址所在的省/自治区/直辖市名称。 |
 |street|String| 组织地址所在的街道名称。 |
 |technicalNotificationMails|String collection| 不可为空。 |
-|verifiedDomains|[VerifiedDomain](verifieddomain.md) 集合|与该租户相关联的域集合。不可为 null。            |
+|verifiedDomains|[verifiedDomain](verifieddomain.md)集合|与该租户相关联的域集合。不可为 null。            |
 
 ## <a name="relationships"></a>关系
 
@@ -104,7 +103,9 @@ ms.locfileid: "32568554"
   "state": "string",
   "street": "string",
   "technicalNotificationMails": ["string"],
-  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
+  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}],
+  "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
+  "dirSyncEnabled": true
 }
 ```
 
@@ -123,8 +124,6 @@ ms.locfileid: "32568554"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/organization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

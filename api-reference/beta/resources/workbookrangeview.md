@@ -1,17 +1,17 @@
 ---
-title: rangeView 资源类型
+title: workbookRangeView 资源类型
 description: RangeView 表示父范围的一组可见单元格。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ace424d12e38e4bb907923ea542ebd7330130d06
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fdc09b4c88e3105624f322697784cfa4e654ee96
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453505"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345825"
 ---
-# <a name="rangeview-resource-type"></a>rangeView 资源类型
+# <a name="workbookrangeview-resource-type"></a>workbookRangeView 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,15 +23,15 @@ RangeView 表示父范围的一组可见单元格。
 |:---------------|:--------|:----------|
 |[List rows](../api/workbookrangeview-list-rows.md) |[workbookRangeView](workbookrangeview.md) 集合| 获取一组 workbookRangeView 对象。|
 |[Itemat](../api/workbookrangeview-itemat.md)|[workbookRangeView](workbookrangeview.md)|按索引获取范围视图项。|
-|[Range](../api/workbookrangeview-range.md)|[workbookRange](range.md)|返回与范围视图相关联的范围对象|
+|[Range](../api/workbookrangeview-range.md)|[workbookRange](workbookrange.md)|返回与范围视图相关联的范围对象|
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |columnCount|Int32|返回可见列数。只读。|
 |formulas|Json|表示采用 A1 表示法的公式。 |
 |formulasLocal|Json|表示采用 A1 表示法的公式，使用用户语言和数字格式区域设置。例如，英语中的公式 "=SUM(A1, 1.5)" 在德语中变为 "=SUMME(A1; 1,5)"。    |
-|formulasR1C1|Json|表示采用 R1C1 表示法的公式。   |
+|formulasR1C1|Json|表示采用 R1C1 样式表示法的公式。   |
 |index|Int32|范围的索引。|
 |numberFormat|Json|表示 Excel 中指定单元格的数字格式代码。只读。 |
 |rowCount|Int32|返回可见行数。只读。  |
@@ -40,7 +40,7 @@ RangeView 表示父范围的一组可见单元格。
 |values|Json|表示指定的 RangeView 的原始值。返回的数据可能是字符串、数字，也可能是布尔值。包含错误的单元格将返回错误字符串。   |
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |描述|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |rows|[workbookRangeView](workbookrangeview.md) 集合| 表示一组与范围相关联的范围视图。只读。  只读。|
 
@@ -49,6 +49,8 @@ RangeView 表示父范围的一组可见单元格。
 <!-- {
   "blockType": "resource",
   "optionalProperties": [  ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookRangeView"
 }-->
 ```json
@@ -67,11 +69,3 @@ RangeView 表示父范围的一组可见单元格。
   "values": "Json"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/workbookrangeview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

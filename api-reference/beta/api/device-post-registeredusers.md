@@ -4,14 +4,16 @@ description: 添加设备的已注册用户。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b736ec7afee00eae1e6b48056953d9becd2e0654
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 97c630b6c061edc9584908cd1f175e7d80fa41df
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455144"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326085"
 ---
 # <a name="create-registereduser"></a>创建 registeredUser
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 添加设备的已注册用户。
 
@@ -23,7 +25,7 @@ ms.locfileid: "32455144"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All、Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.ReadWrite.All |
+|应用程序 | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +53,7 @@ POST /devices/{id}/registeredUsers/$ref
   "name": "create_directoryobject_from_device"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers
+POST https://graph.microsoft.com/beta/devices/{id}/registeredUsers/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -82,10 +84,13 @@ Content-length: 51
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create registeredUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

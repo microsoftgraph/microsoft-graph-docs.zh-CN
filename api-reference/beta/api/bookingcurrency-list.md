@@ -4,12 +4,12 @@ description: 获取可用于 Microsoft 预订业务的 bookingCurrency 对象的
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: c29ad5780deac5e5e338052c72661f834e483054
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 441da00b885cd9a2699348ce26d0b97ce1ce72fd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461750"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322437"
 ---
 # <a name="list-bookingcurrencies"></a>列出 bookingCurrencies
 
@@ -30,10 +30,10 @@ ms.locfileid: "32461750"
 ```http
 GET /bookingCurrencies
 ```
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters), 以帮助自定义响应, 包括 $count、$filter、$select、$skip 和 $top。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
@@ -53,7 +53,7 @@ GET /bookingCurrencies
 GET https://graph.microsoft.com/beta/bookingCurrencies
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。 注意: 为简洁起见, 此处显示的响应对象将被截断。 所有受支持的货币和属性都将从实际调用返回。
+下面是一个响应示例。 注意: 为简洁起见, 此处显示的响应对象将被截断。 所有受支持的货币和属性都将从实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,8 +112,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/bookingcurrency-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

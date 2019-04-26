@@ -4,12 +4,12 @@ description: 获取新创建、更新或删除的目录角色, 而无需对整�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bd84e593b4bf26a1cbdd41bf62624b0013f8d807
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ec1076eb3882c416289072b1042205cfaa8eb58
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454944"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325891"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: delta
 
@@ -21,7 +21,6 @@ ms.locfileid: "32454944"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All    |
@@ -30,18 +29,20 @@ ms.locfileid: "32454944"
 
 ## <a name="http-request"></a>HTTP 请求
 
-若要开始跟踪更改, 请在 directoryRole 资源上发出包含 delta 函数的请求。 
+若要开始跟踪更改, 请在 directoryRole 资源上发出包含 delta 函数的请求。
 
 <!-- { "blockType": "ignored" } -->
 ```http
+
 GET /directoryRoles/delta
+
 ```
 
 ### <a name="query-parameters"></a>查询参数
 
-跟踪更改会产生一个或多个**delta**函数调用的往返。 如果使用任何查询参数 (而不是`$deltatoken` and `$skiptoken`), 则必须在初始**delta**请求中指定它。 Microsoft Graph 自动将任何指定的参数编码到响应中提供`nextLink`的`deltaLink` or URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
+跟踪更改会产生一个或多个**delta**函数调用的往返。 如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。 Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。 只需预先指定所需的任何查询参数一次。 在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。
 
-| 查询参数      | 类型   |描述|
+| 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
 | $deltatoken | string | 为同一资源集合在上`deltaLink`一个**delta**函数调用的 URL 中返回的[状态令牌](/graph/delta-query-overview), 指示该往返一轮的更改。 在此集合的下`deltaLink`一轮变更跟踪请求中, 保存并应用整个 URL (包括此令牌)。|
 | $skiptoken | string | 在上一个**delta**函数调用`nextLink`的 URL 中返回的[状态令牌](/graph/delta-query-overview), 指示同一个资源集合中有进一步的更改需要跟踪。 |
@@ -52,7 +53,7 @@ GET /directoryRoles/delta
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 _id_ 属性。 
 
-- 对`$filter`以下项的支持有限:
+- 提供对 `$filter` 的有限支持：
   * 唯一受支持`$filter`的表达式是跟踪对特定资源所做的更改, 其`$filter=id+eq+{value}` id `$filter=id+eq+{value1}+or+id+eq+{value2}`: 或。 您可以指定的 id 数受最大 URL 长度的限制。
 
 
@@ -69,7 +70,7 @@ GET /directoryRoles/delta
 
 如果成功, 此方法在`200 OK`响应正文中返回响应代码和[directoryRole](../resources/directoryrole.md)集合对象。 该响应还包括一个 nextLink url 或 deltaLink url。 
 
-- 如果返回`nextLink` URL, 则会在会话中检索其他数据页。 应用程序将继续使用`nextLink` URL 发出请求, 直到`deltaLink`响应中包含 url 为止。
+- 如果返回`nextLink` URL, 则会在会话中检索其他数据页。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
 
 - 如果返回`deltaLink` URL, 则没有有关要返回的资源的现有状态的更多数据。 保留并使用`deltaLink` URL 了解将来对资源所做的更改。
 
@@ -122,8 +123,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/directoryrole-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

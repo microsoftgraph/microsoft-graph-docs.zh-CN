@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 使用链接共享文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3f119ea285b3fa9e59ec8c67d5a7b3fd304fd196
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c8be32b4d269630b523eeb44d19701e6073928d6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454580"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325303"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>为 DriveItem 创建共享链接
 
@@ -49,7 +49,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 请求正文定义应用程序正在请求的共享链接的属性。
 请求应为具有以下属性的 JSON 对象。
 
-|   名称    |  类型  |                                 描述                                  |
+|   名称    |  类型  |                                 说明                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **类型**  | string | 要创建的共享链接的类型。`view`、`edit` 或 `embed`。       |
 | **scope** | 字符串 | 可选。 要创建的链接的范围。 `anonymous` 或 `organization`。 |
@@ -224,8 +224,6 @@ Content-Type: application/json
   "keywords": "create,sharing,sharing link",
   "section": "documentation",
   "tocPath": "Sharing/Create link",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-createlink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

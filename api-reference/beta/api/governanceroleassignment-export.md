@@ -2,12 +2,12 @@
 title: 导出 governanceRoleAssignmentRequests
 description: 以格式`application/octet-stream`检索 governanceRoleAssignmentRequests 的集合, 可以在浏览器中将其解析为 .csv 文件。
 localization_priority: Normal
-ms.openlocfilehash: 82c36f176dfed1a4a848c045ce3274e1152bb953
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c01234ce4976d6f900530bdd06d31a4df8e325b0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457173"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324159"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>导出 governanceRoleAssignmentRequests
 
@@ -22,7 +22,7 @@ ms.locfileid: "32457173"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | PrivilegedAccess AzureResources |
+|应用程序 | PrivilegedAccess AzureResources |
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -80,8 +80,6 @@ Content-Length:126
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/governanceroleassignment-export.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

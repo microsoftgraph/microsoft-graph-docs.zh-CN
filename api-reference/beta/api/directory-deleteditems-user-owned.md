@@ -4,12 +4,12 @@ description: '检索指定用户拥有的最近删除的项目的列表。  '
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f02d6dccd005696c130c6bb4a1f42c603943e5c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 81afb6e3da6cd9ffb795c4e867c23177a24a5ed2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455063"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325992"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**列出用户拥有的已删除项目**
 
@@ -17,7 +17,7 @@ ms.locfileid: "32455063"
 
 目前, 列出已删除项目仅支持用户拥有的[组](../resources/group.md)资源的功能。
 
-这是一个服务操作, 这意味着它不支持分页。  API 返回最大为1000个已删除的对象, 这些对象归用户所有, 按 ID 排序。  如果用户拥有1000或更多删除的对象, API 将返回 nothing。
+这是一个服务操作, 这意味着它不支持分页。  API 返回最大为1000个已删除的对象, 这些对象归用户所有, 按 ID 排序。
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +27,7 @@ ms.locfileid: "32455063"
 | --- | --- |
 | 委派（工作或学校帐户） | Group.Read.All、Group.ReadWrite.All |
 | 委派（个人 Microsoft 帐户） |  不支持。 |
-| Application | Group.Read.All、Group.ReadWrite.All  |
+| 应用程序 | Group.Read.All、Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,25 +37,19 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 ## <a name="request-headers"></a>请求标头
 
-| **名称**      | **说明**           |
+| 名称          | 说明               |
 | ------------- | ------------------------- |
 | Authorization | Bearer {token}。必需。 |
 
 ## <a name="request-body"></a>请求正文
 
-```json
-{
-  "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
-  "type":"group"
-}
-```
-
 请求正文需要以下参数:
 
-| 参数    | 类型 |描述|
+| 参数    | 类型 |说明|
 |:---------------|:--------|:----------|
 |userId|String|所有者的 ID。|
-|类型|字符串|要返回的所拥有的对象的类型;`Group`目前是唯一受支持的值。|
+|type|字符串|要返回的所拥有的对象的类型;`group`目前是唯一受支持的值。|
+
 
 ## <a name="response"></a>响应
 
@@ -70,12 +64,10 @@ POST /directory/deletedItems/getUserOwnedObjects
 ``` http
 POST https://graph.microsoft.com/beta/directory/deletedItems/getUserOwnedObjects
 Content-type: application/json
-```
 
-``` json
 {
   "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
-  "type":"Group"
+  "type":"group"
 }
 ```
 
@@ -93,7 +85,7 @@ Content-length: 1249
           {
               "@odata.type": "#microsoft.graph.group",
               "id": "bfa7033a-7367-4644-85f5-95aaf385cbd7",
-              "deletedDateTime": "2018-04-01T12:34:56Z",
+              "deletedDateTime": "2018-04-01T12:39:16Z",
               "classification": null,
               "createdDateTime": "2017-03-22T12:39:16Z",
               "description": null,

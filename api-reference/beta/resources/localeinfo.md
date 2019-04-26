@@ -2,12 +2,12 @@
 title: localeInfo 资源类型
 description: 有关已登录用户的区域设置信息，包括首选语言和国家/地区。
 localization_priority: Normal
-ms.openlocfilehash: 7414130c1ed1e85353c653d9bbd36a0e488bcea9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c4cba9a9e6ef1d0808311cc12801895cdd1453cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578150"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345355"
 ---
 # <a name="localeinfo-resource-type"></a>localeInfo 资源类型
 
@@ -51,8 +51,6 @@ ms.locfileid: "32578150"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/localeinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

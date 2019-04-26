@@ -1,17 +1,17 @@
 ---
-title: 'ChartCollection: add'
-description: 创建新图表。
+title: 'workbookChartCollection: 添加'
+description: 创建新的 workbookChart。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cdb3ff01b0741f0f1a4a0bff22e3a8e3dc32335c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2ee41230d153fb02c3165062ff054a2b3fe4e2a6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456589"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327828"
 ---
-# <a name="chartcollection-add"></a>ChartCollection: add
+# <a name="workbookchartcollection-add"></a>workbookChartCollection: 添加
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "32456589"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Files.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Files.ReadWrite    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -40,15 +40,15 @@ POST /workbook/worksheets/{id|name}/charts/add
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |描述|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|类型|string|表示图表的类型。可能的值是：`ColumnClustered`、`ColumnStacked`、`ColumnStacked100`、`BarClustered`、`BarStacked`、`BarStacked100`、`LineStacked`、`LineStacked100`、`LineMarkers`、`LineMarkersStacked`、`LineMarkersStacked100`、`PieOfPie`、`etc.`。|
-|sourceData|string|对应于源数据的 Range 对象。|
-|seriesBy|string|可选。指定列或行在图表上用作数据系列的方式。可能的值是：`Auto`、`Columns`、`Rows`。|
+|类型|string|表示图表的类型。  可能的值为: `ColumnClustered`、 `ColumnStacked`、 `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` `LineStacked` `PieOfPie` `etc.`、、、、、、、、、、。 `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100`|
+|sourceData|Json|对应于源数据的 Range 对象。|
+|seriesBy|字符串|可选。 指定列或行在图表上用作数据系列的方式。  可能的值包括 `Auto`、`Columns`、`Rows`。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Chart](../resources/chart.md) 对象。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[workbookChart](../resources/workbookchart.md)对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -75,7 +75,7 @@ Content-length: 94
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -98,8 +98,6 @@ Content-length: 52
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/chartcollection-add.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

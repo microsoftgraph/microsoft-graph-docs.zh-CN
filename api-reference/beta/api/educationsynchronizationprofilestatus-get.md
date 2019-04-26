@@ -4,12 +4,12 @@ description: 获取租户中特定学校数据同步配置文件的状态。 响
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 6a2d3dffd715d78bb96794808da39255db0164b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e3806102480fc6d8bbb408fab31724b78205ab59
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457459"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324405"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile 的状态
 
@@ -24,7 +24,7 @@ ms.locfileid: "32457459"
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration、EduAdministration |
 |委派 (个人 Microsoft 帐户|不支持。|
-|Application| EduAdministration、EduAdministration 和所有 |
+|应用程序| EduAdministration、EduAdministration 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -73,11 +73,3 @@ Content-length: 232
     "lastSynchronizationDateTime": "2017-07-04T22:06:37.6472621Z"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationsynchronizationprofilestatus-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 列出驱动器
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6a5d716aef5a47acf3f0752d91a478f2d3299a24
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6c04cd7c5c19055bd8f026eb9d9d082545509e81
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454734"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325405"
 ---
 # <a name="list-available-drives"></a>列出可用的驱动器
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索可用于目标用户、组或[站点](../resources/site.md)的 [Drive](../resources/drive.md) 资源列表。
 
@@ -32,7 +34,7 @@ ms.locfileid: "32454734"
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all", "tags": "service.graph" } -->
+<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
 
 ```http
 GET /groups/{groupId}/drives
@@ -42,7 +44,7 @@ GET /groups/{groupId}/drives
 
 若要列出某个站点的文档库，应用应请求站点中的 **drives** 关系。
 
-<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all", "tags": "service.graph" } -->
+<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
 
 ```http
 GET /sites/{siteId}/drives
@@ -50,7 +52,7 @@ GET /sites/{siteId}/drives
 
 ## <a name="list-a-users-drives"></a>列出用户的驱动器
 
-<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read", "tags": "service.graph" } -->
+<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
 
 ```http
 GET /users/{userId}/drives
@@ -58,7 +60,7 @@ GET /users/{userId}/drives
 
 ## <a name="list-the-current-users-drives"></a>列出当前用户的驱动器
 
-<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read", "tags": "service.graph" } -->
+<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
 
 ```http
 GET /me/drives
@@ -67,7 +69,6 @@ GET /me/drives
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持使用 `$expand`、`$select`、`$skipToken`、`$top` 和 `$orderby` [OData 查询参数](/graph/query-parameters)自定义响应。
-
 
 ## <a name="response"></a>响应
 
@@ -121,10 +122,13 @@ Content-Type: application/json
 
 [system]: ../resources/systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List the available drives for a user, group, or site.",
   "keywords": "drive,onedrive.drive,list drives",
   "section": "documentation",
-  "tocPath": "Drives/List drives"
-} -->
+  "tocPath": "Drives/List drives",
+  "suppressions": []
+}
+-->

@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 可恢复的文件上传
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b0495a0c63400d6476c1ad9312e708b9ac880e42
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3801be631ab64c6ab2cb25ce48b4e846f9d77287
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454438"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325317"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>通过上传会话上传大文件
 
@@ -87,16 +87,16 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ## <a name="parameters"></a>参数
 
-| 参数            | 类型                          | 描述
+| 参数            | 类型                          | 说明
 |:---------------------|:------------------------------|:---------------------------------
 | 项                 | driveItemUploadableProperties | 有关要上载的文件的数据
 | deferCommit          | Boolean                       | 如果设置为 true, 则在目标中创建的文件的最终版本将需要显式请求。 仅在 OneDrive for business 上。
 
 ## <a name="item-properties"></a>项目属性
 
-| 属性             | 类型               | 描述
+| 属性             | 类型               | 说明
 |:---------------------|:-------------------|:---------------------------------
-| 说明          | 字符串             | 提供项的用户可见的说明。 读写。 仅适用于 OneDrive 个人版。
+| 说明          | String             | 提供项的用户可见的说明。 读写。 仅适用于 OneDrive 个人版。
 | name                 | String             | 项目名称（文件名和扩展名）。读写。
 
 ### <a name="request"></a>请求
@@ -413,8 +413,6 @@ Content-Type: application/json
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
   "section": "documentation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-createuploadsession.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

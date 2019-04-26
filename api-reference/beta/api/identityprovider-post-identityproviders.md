@@ -2,12 +2,12 @@
 title: 创建 identityProvider
 description: 通过指定显示名称、identityProvider 类型、客户端 ID 和客户端密码，创建新的 identityProvider。
 localization_priority: Normal
-ms.openlocfilehash: c0b005d729510fa68d9edd8bfea7b85687543cf2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5d9940803ab9a140312c21f21832623eccd77969
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501264"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323845"
 ---
 # <a name="create-identityprovider"></a>创建 identityProvider
 
@@ -22,7 +22,7 @@ ms.locfileid: "32501264"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
+|委派（Microsoft 个人帐户）| 不支持。|
 |应用程序|不支持。|
 
 工作或学校帐户必须是租户的全局管理员。
@@ -49,7 +49,7 @@ POST /identityProviders
 |:---------------|:--------|:----------|
 |clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
 |clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
-|name|String|标识提供程序的显示名称。|
+|name|字符串|标识提供程序的显示名称。|
 |type|字符串|标识提供程序类型。 它必须是下列值之一: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>领英<li/>Facebook</ul>|
 
 ## <a name="response"></a>响应
@@ -106,8 +106,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/identityprovider-post-identityproviders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

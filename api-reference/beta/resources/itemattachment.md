@@ -2,12 +2,12 @@
 title: itemAttachment 资源类型
 description: 附加到另一个事件的联系人、事件或邮件,
 localization_priority: Normal
-ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 91fedeac846d6f33aba6b4504eae71fe233a4324
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581094"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345416"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "32581094"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |contentType|String|附件的内容类型。|
-|id|字符串| 附件 ID。|
+|id|String| 附件 ID。|
 |isInline|Boolean|如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的时间和日期。|
 |name|String|附件的显示名称。|
@@ -45,6 +45,7 @@ ms.locfileid: "32581094"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
     "item"
   ],
@@ -71,8 +72,6 @@ ms.locfileid: "32581094"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

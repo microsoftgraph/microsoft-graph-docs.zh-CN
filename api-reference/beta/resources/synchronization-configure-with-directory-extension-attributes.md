@@ -2,12 +2,12 @@
 title: 配置与目录扩展属性的同步
 description: '你可以自定义同步架构以包含 azure Active Directory (Azure AD) 目录扩展属性。 本文介绍如何使用目录扩展属性 (**extension_9d98asdfl15980a_Nickname**) 填充 Salesforce 中的 CommunityNickname 的值。 在这种情况下, 您已将 Azure ad Connect 设置为设置多个目录扩展属性, 从本地 Windows Server Active directory 到 Azure AD。 '
 localization_priority: Normal
-ms.openlocfilehash: 4160a95acfc6b23f5d5a9d880f36d9ca6a1f3362
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ffa262a6905c193c6e042663accb4089d30d2d4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582121"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345623"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>配置与目录扩展属性的同步
 
@@ -105,6 +105,7 @@ Authorization: Bearer {Token}
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "directories": [
@@ -273,11 +274,3 @@ HTTP/1.1 201 No Content
 ```
 
 如果架构已成功保存, 则在同步作业的下一次迭代中, 它将开始重新处理 Azure AD 中的所有帐户, 并且新的映射将应用于所有已设置的帐户。
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

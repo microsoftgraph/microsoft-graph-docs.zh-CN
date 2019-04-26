@@ -4,14 +4,16 @@ description: 检索与此 **educationUser** 对应的简单目录 **user**。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 1212057af13057f691e5721bd21a351e59a82511
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a3779b10199da6a28049ff6c53b87fe27b3564ae
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457422"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33321975"
 ---
 # <a name="get-user"></a>获取用户
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索与此 **educationUser** 对应的简单目录 **user**。
 
@@ -49,7 +51,7 @@ GET /education/users/{id}/user
   "name": "get_user"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/me/user
+GET https://graph.microsoft.com/beta/education/me/user
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -86,10 +88,13 @@ Content-length: 491
 
 <!-- uuid: FC4AAF57-A0ED-4899-B104-A8B89B72AD5A
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get user",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

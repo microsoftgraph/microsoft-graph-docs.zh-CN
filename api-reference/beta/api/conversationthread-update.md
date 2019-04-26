@@ -4,14 +4,16 @@ description: 锁定或解除锁定线程，以允许或避免进一步向线程�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 2127b85b048a3c62baeabfae34eaa3806979cee8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e4a2fbeb8e92271294ffa9e3fb065a9d9ae64649
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455287"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326120"
 ---
 # <a name="update-conversationthread"></a>更新 conversationthread
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 锁定或解除锁定线程，以允许或避免进一步向线程发布。
 ## <a name="permissions"></a>权限
@@ -39,7 +41,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。
 
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |resource.islocked|Boolean|指示线程是否已锁定。设置为 `true` 以禁止发布。|
 
@@ -54,7 +56,7 @@ PATCH /groups/{id}/conversations/{id}/threads/{id}
   "name": "update_conversationthread"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
+PATCH https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 Content-type: application/json
 Content-length: 419
 
@@ -86,7 +88,7 @@ Content-length: 419
   ],
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
+  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
@@ -98,16 +100,19 @@ Content-length: 419
       }
     }
   ],
-  "isLocked": true 
+  "isLocked": true
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update conversationthread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

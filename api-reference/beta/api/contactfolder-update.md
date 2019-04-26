@@ -4,12 +4,12 @@ description: 更新 contactfolder 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 1d644e3f9f74a2ff34ad557f8dac97bc131f7f03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f9bc82311bed6644d2d3f08fb598807f61d2ebe1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455581"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327166"
 ---
 # <a name="update-contactfolder"></a>更新 contactfolder
 
@@ -44,7 +44,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |:---------------|:--------|:----------|
 |displayName|String|文件夹的显示名称。|
 |parentFolderId|String|文件夹的父文件夹 ID。|
-|wellKnownName|字符串|文件夹的名称 (如果文件夹是可识别的文件夹)。 当前`contacts`是唯一可识别的 "联系人" 文件夹。|
+|wellKnownName|string|文件夹的名称 (如果文件夹是可识别的文件夹)。 当前`contacts`是唯一可识别的 "联系人" 文件夹。|
 
 ## <a name="response"></a>响应
 
@@ -95,8 +95,6 @@ Content-length: 104
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/contactfolder-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

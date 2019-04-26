@@ -4,14 +4,16 @@ description: 新建用户。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f3a687aa7193188f39eebacf7f448014c5309f20
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 773e008f398253ff4aa6552792c9724d94594cf4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457716"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324739"
 ---
 # <a name="create-educationuser"></a>创建 educationUser
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 新建用户。
 
@@ -52,7 +54,7 @@ POST /education/users
   "name": "create_educationuser_from_educationroot"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/users
+POST https://graph.microsoft.com/beta/education/users
 Content-type: application/json
 Content-length: 508
 
@@ -138,10 +140,13 @@ Content-length: 508
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 转换为其他格式
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c3761525d0acbd5613a71519d9ebd56ab8475f03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ea4061187ea9890a75a85cef2122a2ec7e280920
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454424"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325275"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
@@ -93,8 +93,6 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
   "keywords": "convert,pdf,convert to pdf",
   "section": "documentation",
   "tocPath": "Items/Download formats",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-get-content-format.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

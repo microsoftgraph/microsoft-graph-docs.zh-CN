@@ -4,14 +4,16 @@ description: 创建学校。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 4e64216aa4e5c6b240aa55a1624a52b3670f421b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9403ec39735104e9c676e9c8de5ab1b116a64ab5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457709"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324904"
 ---
 # <a name="create-educationschool"></a>创建 educationSchool
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 创建学校。
 
@@ -50,7 +52,7 @@ POST /education/schools
   "name": "create_educationschool_from_educationroot"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/schools
+POST https://graph.microsoft.com/beta/education/schools
 Content-type: application/json
 Content-length: 292
 
@@ -126,10 +128,13 @@ Content-length: 292
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationSchool",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

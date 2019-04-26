@@ -4,12 +4,12 @@ description: '包含 Outlook 任务的文件夹 (outlookTask 对象的集合)。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: eb61936b9ede67d35127db07c92ba8b7517fe623
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d1299dda44cd698d0f6a1641f53557d2a7c8f342
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568574"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345554"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>outlookTaskFolder 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "32568574"
 |:---------------|:--------|:----------|
 |[获取 outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |获取指定的 Outlook 任务文件夹的属性和关系。|
 |[创建 outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| 在指定的任务文件夹中创建一个 Outlook 任务。|
-|[列出任务](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) 集合| 获取指定文件夹中的所有 Outlook 任务。|
+|[List tasks](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) 集合| 获取指定文件夹中的所有 Outlook 任务。|
 |[更新](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |更新 Outlook 任务文件夹的可写属性。 |
 |[删除](../api/outlooktaskfolder-delete.md) | 无 |删除指定的 Outlook 任务文件夹。|
 |**扩展属性**| | |
@@ -39,9 +39,9 @@ ms.locfileid: "32568574"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |changeKey|String|任务文件夹的版本。|
-|id|字符串|任务文件夹的标识符, 在用户的邮箱中是唯一的。 只读。|
+|id|String|任务文件夹的标识符, 在用户的邮箱中是唯一的。 只读。|
 |isDefaultFolder|Boolean|如此如果该文件夹是默认的任务文件夹。|
-|name|String|任务文件夹的名称。|
+|name|字符串|任务文件夹的名称。|
 |parentGroupKey|Guid|任务文件夹的父组的唯一 GUID 标识符。|
 
 ## <a name="relationships"></a>关系
@@ -61,6 +61,8 @@ ms.locfileid: "32568574"
     "singleValueExtendedProperties",
     "tasks"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookTaskFolder"
 }-->
 
@@ -84,8 +86,6 @@ ms.locfileid: "32568574"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/outlooktaskfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

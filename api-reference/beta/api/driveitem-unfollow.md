@@ -4,12 +4,12 @@ ms.author: chackman
 title: 取消追随驱动器项目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 730bb02dda88f41bcac734b3ba282ad324267860
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1cd3976feb643d8553920df624e30d232c5b5ed4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454305"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325338"
 ---
 # <a name="unfollow-drive-item"></a>取消追随驱动器项目
 
@@ -71,8 +71,6 @@ HTTP/1.1 204 No Content
   "keywords": "unfollow item",
   "section": "documentation",
   "tocPath": "Items/Unfollow",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-unfollow.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

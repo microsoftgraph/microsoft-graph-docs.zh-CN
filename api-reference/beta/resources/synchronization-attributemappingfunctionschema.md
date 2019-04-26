@@ -2,12 +2,12 @@
 title: attributeMappingFunctionSchema 资源类型
 description: 介绍可在属性映射中用于在同步期间转换值的函数。
 localization_priority: Normal
-ms.openlocfilehash: e2c0139f7c797c3f519cc638561b09f611018b28
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca66baf7fbc160cd4c57cba0f865ae07de9d5932
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582076"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345622"
 ---
 # <a name="attributemappingfunctionschema-resource-type"></a>attributeMappingFunctionSchema 资源类型
 

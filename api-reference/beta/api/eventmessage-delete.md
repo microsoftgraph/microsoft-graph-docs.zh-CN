@@ -4,14 +4,16 @@ description: 删除 eventMessage。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f1f58adff84326397b6b3f4bc340fcbf79d94cb7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 694368533c395ae46b19c06036c7995274181276
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464021"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325182"
 ---
 # <a name="delete-eventmessage"></a>删除 eventMessage
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除 eventMessage。
 ## <a name="permissions"></a>权限
@@ -52,7 +54,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
   "name": "delete_eventmessage"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
+DELETE https://graph.microsoft.com/beta/me/messages/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
@@ -66,10 +68,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete eventMessage",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

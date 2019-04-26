@@ -2,12 +2,12 @@
 title: 创建协议
 description: 创建新的协议对象。
 localization_priority: Normal
-ms.openlocfilehash: 5040651e032a4f5d0ef2340646f11eb51bfff5eb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eb7ca15d43c37fd98fe45984d2de1fd57a85ad54
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459223"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322683"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -41,10 +41,10 @@ POST /agreements
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|布尔|指示用户是否必须在接受前展开并查看协议。|
-|files/fileName|字符串|协议文件的名称 (例如, TOU)。|
-|files/isDefault|布尔|指示是否为默认协议文件 (如果没有任何区域性与客户端首选项匹配)。 如果没有任何文件被标记为默认值, 则第一项将被视为默认值。|
-|文件/语言|字符串|协议文件的区域性 (格式为 languagecode2/regioncode2)。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166, 通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us)。|
+|isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须在接受前展开并查看协议。|
+|files/fileName|String|协议文件的名称 (例如, TOU)。|
+|files/isDefault|Boolean|指示是否为默认协议文件 (如果没有任何区域性与客户端首选项匹配)。 如果没有任何文件被标记为默认值, 则第一项将被视为默认值。|
+|文件/语言|String|协议文件的区域性 (格式为 languagecode2/regioncode2)。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166, 通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us)。|
 |files/fileData/data|Binary|表示使用 PDF 文档的术语的数据。|
 
 ## <a name="response"></a>响应
@@ -105,8 +105,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

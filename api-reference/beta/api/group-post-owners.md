@@ -4,12 +4,12 @@ description: 将用户添加到组所有者。所有者是一组具有 group 对
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 049c860be95e2f4f4b83848d8d8be6b3dd0ed9c5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 89af06c4247d88d17704c38e4ca66ba3c092a94c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502141"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324247"
 ---
 # <a name="add-group-owner"></a>添加组所有者
 
@@ -17,7 +17,7 @@ ms.locfileid: "32502141"
 
 将用户添加到组所有者。所有者是一组具有 group 对象修改权限的非管理员用户。
 
->**重要说明:** 如果您更新组所有者并为该组创建了一个团队, 则最长可能需要2小时才能与 Microsoft 团队同步所有者。 此外, 如果您希望所有者能够在团队中进行更改 (例如, 通过创建 Planner 计划), 则还需要将所有者添加为组/团队成员。 
+>**重要提示：** 如果更新组所有者并为该组创建团队，则所有者与 Microsoft Team 同步需要最多花费 2 小时。 此外，如果希望所有者能够在团队中进行更改，例如创建 Planner 计划，则还需要将所有者添加为组/团队成员。 
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -63,8 +63,8 @@ Content-length: 30
 在请求正文中，提供要添加的 [user](../resources/user.md) 对象的 JSON 表示形式。
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,8 +83,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-post-owners.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

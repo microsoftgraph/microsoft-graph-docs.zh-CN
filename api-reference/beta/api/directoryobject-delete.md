@@ -4,12 +4,12 @@ description: 删除 directoryObject。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 63e9d4574c505158171c93fd7ac9dc51678c7d2b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8bf24eae152fb31c766f2b395d2c6c37e2c91ddd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455091"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326055"
 ---
 # <a name="delete-directoryobject"></a>删除 directoryObject
 
@@ -24,7 +24,7 @@ ms.locfileid: "32455091"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | 不支持。 |
+|应用程序 | 不支持。 |
 
 **注意：** 用户、组和联系人是 directory 对象的类型。 因此, 如果需要删除用户, 可以且应使用以下权限: User. ReadWrite。 All
 ## <a name="http-request"></a>HTTP 请求
@@ -53,7 +53,7 @@ DELETE /directoryObjects/{id}
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/directoryObject/{id}
+DELETE https://graph.microsoft.com/beta/directoryObject/ffab4dce-9b82-49a6-b7c7-1a143106598c
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
@@ -74,8 +74,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/directoryobject-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

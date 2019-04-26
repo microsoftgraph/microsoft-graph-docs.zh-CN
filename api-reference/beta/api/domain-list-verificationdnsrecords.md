@@ -4,14 +4,16 @@ description: 检索 domainDnsRecord 对象的列表。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a470f6bddb9cade8083afb3eb5d5cf76cf4dba32
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 147c2ba3c5bd01d3824ee1c32b60efd3ecda975d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454951"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325841"
 ---
 # <a name="list-verificationdnsrecords"></a>列出 verificationDnsRecords
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[domainDnsRecord](../resources/domaindnsrecord.md)对象的列表。
 
@@ -28,7 +30,7 @@ ms.locfileid: "32454951"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.Read.All、Domain.ReadWrite.All |
+|应用程序 | Directory.Read.All、Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -65,7 +67,7 @@ GET /domains/{id}/verificationDnsRecords
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
+GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
 ```
 
 ##### <a name="response"></a>响应
@@ -98,10 +100,13 @@ Content-length: 220
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List verificationDnsRecords",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

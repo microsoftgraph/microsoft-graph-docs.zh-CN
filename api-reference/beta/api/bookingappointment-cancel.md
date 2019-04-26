@@ -4,12 +4,12 @@ description: 在指定的 bookingbusiness 中取消指定的 bookingAppointment,
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: c202ea309641bdcda3e1124792fdc04ad97e02ec
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f80f97f6e085980d26ce4555f35f769db6a4f4e9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460924"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322549"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: 取消
 
@@ -42,7 +42,7 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|cancellationMessage|字符串|向客户确认约会已被取消的消息。|
+|cancellationMessage|String|向客户确认约会已被取消的消息。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
@@ -67,7 +67,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,8 +86,6 @@ HTTP/1.1 204 No content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/bookingappointment-cancel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

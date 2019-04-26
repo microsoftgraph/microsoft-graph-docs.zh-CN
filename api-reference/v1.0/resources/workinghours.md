@@ -2,12 +2,12 @@
 title: workingHours 资源类型
 description: 表示特定时区用户一周的工作天数和小时数。
 localization_priority: Normal
-ms.openlocfilehash: b221b6f4f1fe8dee7fc7a043993f0d0cd3ea5b7c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e0f2cf09f1e0f2270b5d1ae08ce9e5757c5900da
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463815"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345391"
 ---
 # <a name="workinghours-resource-type"></a>workingHours 资源类型
 
@@ -43,8 +43,8 @@ ms.locfileid: "32463815"
 ```json
 {
   "daysOfWeek": ["string"],
-  "startTime": "TimeOfDay",
-  "endTime": "TimeOfDay",
+  "startTime": "String (timeofday)",
+  "endTime": "String (timeofday)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 

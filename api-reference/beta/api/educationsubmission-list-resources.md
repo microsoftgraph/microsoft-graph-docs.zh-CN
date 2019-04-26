@@ -4,12 +4,12 @@ description: 列出与此提交相关联的资源。 **submissionResource**对�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b9069cb6ec20f65b82cacca8f862a05ff0af7b5d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b1759e2dca969acb0db1a287099ef97e810e064
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464745"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322885"
 ---
 # <a name="list-resources"></a>列出资源
 
@@ -111,8 +111,6 @@ Content-length: 1045
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationsubmission-list-resources.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

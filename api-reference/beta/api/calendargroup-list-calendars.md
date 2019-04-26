@@ -4,14 +4,16 @@ description: 检索属于日历组的日历列表。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5e1ca56fdeb2f1087a6c6902ee387220e6966602
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d8d54b1dd3f8a1f75a3f4e4ab3449cb4fc8a8283
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461386"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322395"
 ---
 # <a name="list-calendars"></a>列出日历
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索属于日历组的日历列表。
 
@@ -73,7 +75,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
+GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
 ```
 
 ##### <a name="response"></a>响应
@@ -108,10 +110,13 @@ Content-length: 147
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List calendars",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

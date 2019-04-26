@@ -4,12 +4,12 @@ description: 返回指定组所属的所有组。 检查是可传递的，这和
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a5a6472427960d6e6179a80114fe9c9205e9e022
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e324e693f7e049f3a66c561b98815a05e7211c78
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502420"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33321940"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 
@@ -25,11 +25,9 @@ ms.locfileid: "32502420"
 
 | 权限类型                        | 权限（从最低特权到最高特权）                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| 委派（工作或学校帐户）     | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
+| 委派（工作或学校帐户）     | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
-| 应用程序                            | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
-
-> **注意:** 此 API 当前需要`Directory.Read.All`权限或更高权限。 使用`Group.Read.All`权限将返回错误。 这是一个已知 bug。
+| 应用程序                            | Group.Read.All、Directory.Read.All、Directory.ReadWrite.All                             |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -113,8 +111,6 @@ Content-length: 39
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-getmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

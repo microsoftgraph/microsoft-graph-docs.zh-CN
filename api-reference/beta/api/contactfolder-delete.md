@@ -4,14 +4,16 @@ description: 删除默认 contactFolder 以外的 contactFolder。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 01b8303723c4a59b8fdc4ac3f5d7d4f6cb491fd1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: af6ee069d93a652ec9d43ec2a8b1170f1d9726c0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455648"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327211"
 ---
 # <a name="delete-contactfolder"></a>删除 contactFolder
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除默认 contactFolder 以外的 contactFolder。
 ## <a name="permissions"></a>权限
@@ -49,7 +51,7 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}
   "name": "delete_contactfolder"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/contactFolders/{id}
+DELETE https://graph.microsoft.com/beta/me/contactFolders/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
@@ -63,10 +65,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete contactFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

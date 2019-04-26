@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: 移动文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 18bd8493babed354576c5b8066b3bab5de537e65
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 95246dc6de4a618de12804183ca34ebf828930ed
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454333"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325296"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到一个新的文件夹
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 若要将 DriveItem 移动到新的父项，应用程序会请求更新要移动的 DriveItem 的 **parentReference**。
 
@@ -63,7 +65,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 本示例将 {item-id} 指定的项目移动到用户驱动器中 ID 为 `new-parent-folder-id` 的文件夹中。
 
-<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -71,7 +73,7 @@ Content-type: application/json
 
 {
   "parentReference": {
-    "id": "{new-parent-folder-id}"
+    "id": "new-parent-folder-id"
   },
   "name": "new-item-name.txt"
 }
@@ -105,10 +107,13 @@ Content-type: application/json
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Move an item to another location or rename the item.",
   "keywords": "move,rename,mv,change location",
   "section": "documentation",
-  "tocPath": "Items/Move"
-} -->
+  "tocPath": "Items/Move",
+  "suppressions": []
+}
+-->

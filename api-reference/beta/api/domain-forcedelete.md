@@ -4,12 +4,12 @@ description: 使用异步操作删除域。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5a1a2b2510f0c79f2be4e70deb9efabc65f8dfc4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c58b7d345ba7c5cdc7c029ecf929676fc7529f12
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454930"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325875"
 ---
 # <a name="domain-forcedelete"></a>域: forceDelete
 
@@ -40,7 +40,7 @@ ms.locfileid: "32454930"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Domain.ReadWrite.All |
+|应用程序 | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -62,7 +62,7 @@ POST /domains/{id}/forceDelete
 
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |描述|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |disableUserAccounts|Boolean| 用于禁用重命名的用户帐户的选项。 如果用户帐户已禁用, 则不允许用户登录。<br>*True*(默认值)-已禁用作为此操作的一部分重命名的用户帐户。<br>*False* -不禁用作为此操作的一部分重命名的用户帐户。 |
 
@@ -106,8 +106,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/domain-forcedelete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,17 +1,19 @@
 ---
 title: 列出警报
 description: 检索警报对象的列表。
+localization_priority: Normal
 author: preetikr
-localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: d50c3244ae2c0e9f158dc38923136ef3e8656f0d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ab9ec3c42b0a46279e43660e241fb3cde52e83a9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459211"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322684"
 ---
 # <a name="list-alerts"></a>列出警报
+
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[警报](../resources/alert.md)对象的列表。
 
@@ -37,7 +39,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&$top=5
 GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{property-value}'
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
 此方法支持以下[OData 查询参数](/graph/query-parameters)来帮助自定义响应:
 
@@ -46,17 +48,17 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top`将返回每个安全 API 提供程序的聚合顶级结果。  
+- `$top`将返回每个安全 API 提供程序的聚合顶级结果。
 
 若要返回其他属性集, 请使用 OData `$select`查询参数指定所需的一组**警报**属性。  例如, 若要返回 "**分配给**"、"**类别**" 和 "**严重性**" 属性, 请将`$select=assignedTo,category,severity`以下内容添加到您的查询中:。
 
 > **注意:**`$top`的警报限制为1000个, 并且组合`$top`  +  `$skip`不能超过6000个警报。 例如, `/security/alerts?$top=10&$skip=5990`将返回`200 OK`响应代码, 但`/security/alerts?$top=10&$skip=5991`将返回`400 Bad Request`响应代码。  有关详细信息, 请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者 {代码}。 必需。|
+| Authorization  | 持有者 {代码}。 必填。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -77,7 +79,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/security/alerts
+GET https://graph.microsoft.com/beta/security/alerts
 ```
 
 ### <a name="response"></a>响应
@@ -112,10 +114,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List alerts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

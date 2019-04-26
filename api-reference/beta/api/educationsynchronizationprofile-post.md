@@ -4,12 +4,12 @@ description: '在租户中创建新的学校数据同步配置文件的请求。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: efc9b76405b57d0e47d645d0e7b00dc9425ba71b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 79e3e19f4361f0fe1fd7cb9090c685e60a46f259
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457401"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324384"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>创建 educationSynchronizationProfile
 
@@ -24,7 +24,7 @@ ms.locfileid: "32457401"
 |:-----------|:----------|
 | 委派（工作或学校帐户） | EduAdministration.ReadWrite |
 |委派 (个人 Microsoft 帐户|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ POST /synchronizationProfiles
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。  |
-| Content-Type | string | Application/json。 必需。 |
+| Content-Type | string | Application/json。 必填。 |
 
 ## <a name="request-body"></a>请求正文
 在请求正文中, 提供[educationSynchronizationProfile](../resources/educationsynchronizationprofile.md)对象的 JSON 表示形式。
@@ -187,11 +187,3 @@ Content-type: application/json
     ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationsynchronizationprofile-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

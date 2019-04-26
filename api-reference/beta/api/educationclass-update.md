@@ -4,12 +4,12 @@ description: 更新课程属性。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 1ca407ab560f70ae0d65252e397705cb878e0f52
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e492a82636a0772d5d14b232ecdaa514abb03ed3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457758"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324822"
 ---
 # <a name="update-educationclass-properties"></a>更新 educationclass 属性
 
@@ -42,8 +42,8 @@ PATCH /education/classes/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|字符串| 课程说明。|
-|displayName|字符串| 课程名称。|
+|说明|String| 课程说明。|
+|displayName|String| 课程名称。|
 |mailNickname|String| 用于向所有用户发送电子邮件的电子邮件别名（如果已启用）。 |
 <!-- Please verify the revised description here. -->
 |classCode|String| 由学校使用的课程代码。| |externalId|String| 来自同步系统的课程 ID。 | |externalName|String|同步系统中的课程名称。| |externalSource|string| 此课程的创建方式。 可取值为：`sis`、`manual`、`enum_sentinel`。|
@@ -109,8 +109,6 @@ Content-length: 224
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationclass-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

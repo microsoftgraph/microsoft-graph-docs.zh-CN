@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 签出文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bd69a02a3c243a86d7f9d05b54eb3fac00eeee88
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5da9dba96ca19d94bd0eec8a8039e752ec28b894
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454727"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325356"
 ---
 # <a name="check-out-a-driveitem-resource"></a>签出 DriveItem 资源
 
@@ -76,8 +76,6 @@ HTTP/1.1 204 No content
   "keywords": "copy existing item",
   "section": "documentation",
   "tocPath": "Items/Copy",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-checkout.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: 检索**applicationSigninSummary**对象的属性和关系。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f10264ccdf6312c08ac2d64adeaa1c874707d350
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2fe08254384c4ff7123e3876ba2286068d2ddb28
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32639972"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322878"
 ---
 # <a name="get-applicationsigninsummary"></a>获取 applicationSignInSummary
 
@@ -58,7 +58,7 @@ reports/getAzureADApplicationSignInSummary(period='{period}')
   "name": "get_applicationsigninsummary"
 }-->
 ```http
-https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(period='D7')
+GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(period='D7')
 ```
 ### <a name="response"></a>响应
 下面是一个响应示例。 

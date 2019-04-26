@@ -1,18 +1,18 @@
 ---
 title: 列出 acceptedSender
-description: 获取此组 acceptedSenders 列表中的用户或组列表。
+description: 获取此组的 "接受-发件人" 列表中的用户或组的列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 4299b83e5cb11f4c6eea460621198b43ab3c0890
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a29fe42dc7a34939a41120caf03c59cc7662e5b3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584717"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345664"
 ---
 # <a name="list-acceptedsenders"></a>列出 acceptedSender
-获取此组 acceptedSenders 列表中的用户或组列表。
+获取此组的 "接受-发件人" 列表中的用户或组的列表。
 
 接受的发件人列表中的用户可以发布到组对话（在 GET 请求 URL 中标识）。确保未在接受的发件人和拒绝的发件人列表中指定同一用户或组，否则会发生错误。
 
@@ -56,8 +56,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

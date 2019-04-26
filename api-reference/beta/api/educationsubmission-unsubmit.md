@@ -4,12 +4,12 @@ description: '一个操作, 指示学生希望在工作分配在打开后进行�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: e8ce4c5d4bf68dca22f686a1b3647c67d7836bed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 13f21c2442b6ab1715f6c371b32e9d94f99ba125
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457438"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322864"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
 
@@ -56,7 +56,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 ```
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",
@@ -76,8 +76,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationsubmission-unsubmit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

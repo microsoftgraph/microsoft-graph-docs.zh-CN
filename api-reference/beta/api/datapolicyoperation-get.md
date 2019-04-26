@@ -4,12 +4,12 @@ description: 检索 dataPolicyOperation 对象的属性。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5fff5d25ed83c6cfdf889c364630399acdeecb9e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f0f02e526e11962c8ab2f6573d6090535b46a296
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455260"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326048"
 ---
 # <a name="get-datapolicyoperation"></a>获取 dataPolicyOperation
 
@@ -22,7 +22,7 @@ ms.locfileid: "32455260"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Export. all 和 user. all  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|Application | Export. all 和 user. all | 
+|应用程序 | Export. all 和 user. all | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -67,7 +67,7 @@ Content-length: 212
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
   "submittedDateTime": "datetime-value",
-  "progress": "progress-value"
+  "progress": "double"
 }
 ```
 

@@ -4,12 +4,12 @@ description: tokenMeetingInfo 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 38a5aae17cf4364a1cfd58680c2e7b9437cf0e40
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523019"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345498"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tokenMeetingInfo 资源类型
 
@@ -21,7 +21,7 @@ tokenMeetingInfo 类型。
 
 | 属性                     | 类型    | 说明                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | 布尔值 | 指示会话离开的主机后是否可以继续会话。 |
+| allowConversationWithoutHost | Boolean | 指示会话离开的主机后是否可以继续会话。 |
 | token                        | String  | 要加入/激活会议的令牌。                                        |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -33,6 +33,7 @@ tokenMeetingInfo 类型。
   "optionalProperties": [
 
   ],
+   "baseType": "microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json
@@ -64,8 +65,6 @@ tokenMeetingInfo 类型。
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/tokenmeetinginfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

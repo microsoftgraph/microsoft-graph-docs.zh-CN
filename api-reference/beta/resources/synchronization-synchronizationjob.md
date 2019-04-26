@@ -2,12 +2,12 @@
 title: synchronizationJob 资源类型
 description: 通过定期在后台运行、轮询一个目录中的更改并将它们推送到另一个目录来执行同步。 同步作业始终特定于租户中的应用程序的特定实例。 作为同步作业安装程序的一部分, 您需要授予在目标目录中读取和写入对象的权限, 并自定义作业的同步架构。
 localization_priority: Normal
-ms.openlocfilehash: 57515857ac6561e73ef0f67f91bdead98abfb937
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 43563de6e6ca88eac63b4f4b4bc4afd3fb78abc3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580657"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345673"
 ---
 # <a name="synchronizationjob-resource-type"></a>synchronizationJob 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "32580657"
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronizationjob-list.md)             |[synchronizationJob](synchronization-synchronizationjob.md)集合  |列出给定应用程序实例 (服务主体) 的现有作业。|
 |[获取 synchronizationJob](../api/synchronization-synchronizationjob-get.md) | [synchronizationJob](synchronization-synchronizationjob.md) |读取 synchronizationJob 对象的属性和关系。|
-|[创建](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |为给定应用程序创建新作业。|
+|[Create](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |为给定应用程序创建新作业。|
 |[Start](../api/synchronization-synchronizationjob-start.md)          |无   |启动同步。 如果作业处于暂停状态, 则它将从作业暂停的点继续。 如果作业处于隔离状态, 则隔离状态为 "已清除"。|
 |[Restart](../api/synchronization-synchronizationjob-restart.md)      |无   |强制作业重新启动并重新处理目录中的所有对象。|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |无   |临时停止同步。 所有进度 (包括作业状态) 均保持不变, 作业将从[开始](../api/synchronization-synchronizationjob-start.md)调用时停止的位置继续。|
@@ -36,7 +36,7 @@ ms.locfileid: "32580657"
 |:--------------|:----------|:---------------|
 |id             |String                     |唯一的同步作业标识符。 只读。|
 |设定       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|用于运行作业的计划。 只读。|
-|状态         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |作业的状态, 包括上次运行作业的时间、当前作业状态和错误。|
+|status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |作业的状态, 包括上次运行作业的时间、当前作业状态和错误。|
 |templateId     |String    |此作业所基于的[同步模板](synchronization-synchronizationtemplate.md)的标识符。|
 
 ## <a name="relationships"></a>关系
@@ -53,6 +53,7 @@ ms.locfileid: "32580657"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.synchronizationJob"
 }-->
 
@@ -75,8 +76,6 @@ ms.locfileid: "32580657"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-synchronizationjob.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

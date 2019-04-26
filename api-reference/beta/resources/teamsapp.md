@@ -1,55 +1,55 @@
 ---
 title: teamsApp 资源类型
-description: Microsoft 团队应用程序目录中的应用程序。
+description: Microsoft Teams 应用对话框中的应用。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fe60222ae6c5d8475722e18e69555df2d3892759
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2686bddad3c70e60c764647d5bef453fd7524462
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553948"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345762"
 ---
 # <a name="teamsapp-resource-type"></a>teamsApp 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Microsoft 团队](teams-api-overview.md)应用程序目录中的应用程序。
+[Microsoft Teams](teams-api-overview.md) 应用对话框中的应用。
 
-用户可以在 Microsoft 团队存储中查看这些应用程序, 并且可以使用 "向[团队添加应用程序](../api/teamsappinstallation-add.md)" 方法在[团队](team.md)中安装这些应用程序。
+用户可以在 Microsoft Teams 商店中看到这些应用，并且可以使用“[向团队添加应用](../api/teamsappinstallation-add.md)”方法将这些应用安装到 [Teams](team.md) 中。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
-|[列出已发布的应用程序](../api/teamsapp-list.md) | [teamsApp](teamsapp.md) 集合 | 列出 Microsoft 团队应用程序目录中的已发布应用程序。|
-|[发布应用程序](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | 将应用程序发布到组织的应用程序目录。|
-|[更新已发布的应用程序](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 更新组织的应用程序目录中的已发布应用程序。|
-|[删除已发布的应用程序](../api/teamsapp-delete.md) | 无 | 从组织的应用程序目录中删除已发布的应用程序。|
+|[列出已发布的应用](../api/teamsapp-list.md) | [teamsApp](teamsapp.md) 集合 | 列出 Microsoft Teams 应用目录中已发布的应用。|
+|[发布应用](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | 将应用发布到组织的应用目录。|
+|[更新已发布的应用](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | 更新组织应用目录中的已发布应用。|
+|[删除已发布的应用](../api/teamsapp-delete.md) | 无 | 更新组织应用目录中已发布的应用。|
 
 ## <a name="properties"></a>属性
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | 目录应用程序生成的应用程序 id (与[Microsoft 团队 zip 应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中开发人员提供的 id 不同。 |
-| externalId          | string   | [Microsoft 团队 zip 应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中的应用程序开发人员提供的目录的 ID。 |
-| displayName                | string   | [Microsoft 团队 zip 应用程序包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中的应用程序开发人员提供的目录应用程序的名称。 |
-| distributionMethod  | teamsAppDistributionMethod     | 应用的分发方法。 |
+| id                  | string   | 目录应用生成的应用 ID（不同于开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中提供的 ID）。 |
+| externalId          | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中提供的目录 ID。 |
+| displayName                | string   | 应用开发人员在 [Microsoft Teams 应用压缩包](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)中提供的目录名称。 |
+| distributionMethod  | teamsAppDistributionMethod     | 应用的分配方法。 |
 
 ### <a name="teamsappdistributionmethod-values"></a>teamsAppDistributionMethod 值
 
-|Member|值|说明|
+|成员|值|说明|
 |:---|:---|:---|
-|microsoft|0| 该应用程序可通过 Microsoft 团队应用商店对所有租户可用。|
-|组织|1|该应用程序仅在此租户中可用。|
-|旁加载|2 |该应用程序仅适用于其安装到的用户/团队。|
+|商店|0| 应用适用于 Microsoft Teams 应用商店中的所有租户。|
+|组织|1|应用仅适用于此租户。|
+|旁加载|2|应用仅适用于安装它的用户/团队。|
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型   | 说明 |
 |:---------------|:--------|:----------|
-|appDefinitions|[teamsAppDefinition](teamsappdefinition.md)集合| 每个版本的应用程序的详细信息。 |
+|appDefinitions|[teamsAppDefinition](teamsappdefinition.md) 集合| 每个版本的应用的详细信息。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -83,9 +83,7 @@ ms.locfileid: "32553948"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsapp.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

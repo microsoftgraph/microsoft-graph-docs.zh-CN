@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: 列出最近的文件
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a32e9c3cf0e1d8265092e206b1083337dab9aa58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3463c2a9500bda13290e898e6e86561849278631
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454811"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325381"
 ---
 # <a name="list-recent-files"></a>列出最近使用的文件
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出已登录用户最近使用的一组项目。此集合包含用户驱动器中的项目，以及他们有从其他驱动器进行访问的权限的项目。
 
@@ -31,7 +33,6 @@ ms.locfileid: "32454811"
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
        "scopes": "files.read",
-       "tags": "service.graph",
        "target": "action" } -->
 
 ```http
@@ -96,10 +97,13 @@ Content-Type: application/json
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Retrieve a list of recently used files for the owner of the drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "Drives/Recent files"
-} -->
+  "tocPath": "Drives/Recent files",
+  "suppressions": []
+}
+-->

@@ -4,12 +4,12 @@ description: 'Microsoft 团队 async operation 是 transcends 一个 API 请求�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 61c26b0d594ccdbad8020557f60c6f6b23a83254
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c016b90ae6198204e9b99e3ae1e8d72b22919e8b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581572"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345765"
 ---
 # <a name="teamsasyncoperation-resource-type"></a>teamsAsyncOperation 资源类型
 
@@ -27,7 +27,7 @@ Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的
 |id|string |唯一操作 id。|
 |operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |指示正在描述的操作的类型。|
 |createdDateTime|DateTimeOffset |创建操作的时间。|
-|状态|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作状态。|
+|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| 操作状态。|
 |lastActionDateTime|DateTimeOffset |上次更新异步操作的时间。|
 |attemptsCount|Int32|在标记为 "成功" 或 "失败" 之前尝试操作的次数。|
 |targetResourceId|containerparentjob |作为此异步操作 (通常为[团队](../resources/team.md)) 的结果创建或修改的对象的 ID。|
@@ -41,7 +41,7 @@ Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.teamsasyncoperation"
+  "@odata.type": "microsoft.graph.teamsAsyncOperation"
 }-->
 
 ```json
@@ -67,8 +67,6 @@ Microsoft 团队 async operation 是 transcends 一个 API 请求的生存期的
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsasyncoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

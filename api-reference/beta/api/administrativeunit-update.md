@@ -4,12 +4,12 @@ description: 更新 administrativeUnit 对象的属性。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f3c57f8784bf642df7944bc6295ebd4fadc0ba43
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1b1334a26451f457fa0a08466daa31292d641d8e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459279"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322724"
 ---
 # <a name="update-administrativeunit"></a>更新 administrativeunit
 
@@ -45,7 +45,7 @@ PATCH /administrativeUnits/{id}
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |说明|string|管理单元的说明。|
-|displayName|字符串|管理单元的显示名称。|
+|displayName|string|管理单元的显示名称。|
 |visibility|string|管理单元的可见性。 如果未设置, 则默认值为 "public"。 可以设置为 "HiddenMembership", 这将隐藏非成员的成员资格。|
 
 由于**administrativeUnit**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用该`PATCH`操作在现有**administrativeUnit**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
@@ -103,8 +103,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/administrativeunit-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

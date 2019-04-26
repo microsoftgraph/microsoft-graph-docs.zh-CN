@@ -1,17 +1,17 @@
 ---
-title: pivotTable 资源类型
+title: workbookPivotTable 资源类型
 description: 表示 Excel 数据透视表。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fc43bf160e93e354ff58b2f960e8ec38d252287f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 99ad62474ef0c8e56ec5a699edac742ee28ae446
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453875"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345780"
 ---
-# <a name="pivottable-resource-type"></a>pivotTable 资源类型
+# <a name="workbookpivottable-resource-type"></a>workbookPivotTable 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "32453875"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[Get workbookPivotTable](../api/workbookpivottable-get.md) | [workbookPivotTable](workbookpivottable.md) |读取 workbookPivotTable 对象的属性和关系。|
-|[Refresh](../api/workbookpivottable-refresh.md)|None|刷新数据透视表。 |
+|[Refresh](../api/workbookpivottable-refresh.md)|无|刷新数据透视表。 |
 |[Refreshall](../api/workbookpivottable-refreshall.md)|无|刷新给定工作表内的所有表。请注意，只能对数据透视表集合执行此操作。|
 
 ## <a name="properties"></a>属性
@@ -32,15 +32,16 @@ ms.locfileid: "32453875"
 |name|String|数据透视表对象的名称。    |
 
 ## <a name="relationships"></a>关系
-| 关系 | 类型   |描述|
+| 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|worksheet|[worksheet](worksheet.md)| 包含当前 PivotTable 对象的工作表。只读。   |
+|worksheet|[workbookWorksheet](workbookworksheet.md)| 包含当前 PivotTable 对象的工作表。 只读。   |
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -54,11 +55,3 @@ ms.locfileid: "32453875"
 }
 
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/workbookpivottable.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

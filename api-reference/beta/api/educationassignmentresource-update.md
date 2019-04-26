@@ -4,12 +4,12 @@ description: '更新与工作分配相关联的资源的属性。 只有课堂�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 34b1c05937f57fe46d5d854d21a7c2e0b68240d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d3ce0db2353d91f17f059fe8a2dfd9d6c775e1e2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457954"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324671"
 ---
 # <a name="update-educationassignmentresource"></a>更新 educationAssignmentResource
 
@@ -42,8 +42,8 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|布尔| 指示在发布工作分配时是否应将此资源复制到每个学生的资源对象。|
-|资源|educationResource| Resource 对象。 |
+|distributeForStudentWork|Boolean| 指示在发布工作分配时是否应将此资源复制到每个学生的资源对象。|
+|resource|educationResource| Resource 对象。 |
 
 ## <a name="response"></a>响应
 如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[educationAssignmentResource](../resources/educationassignmentresource.md)对象。
@@ -64,7 +64,7 @@ Content-length: 822
 }
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 将从实际调用中返回所有属性。
 
@@ -117,8 +117,6 @@ Content-length: 832
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationassignmentresource-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: '将资源添加到 "资源" 列表中。 此操作只能由分配�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: da0860d5b5f19a84643a05a88aaeb74651e2d8ea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8eb183d13832767a63800cc4957769eb6062d516
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464777"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322871"
 ---
 # <a name="create-educationsubmissionresource"></a>创建 educationSubmissionResource
 
@@ -141,8 +141,6 @@ Content-length: 1152
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationsubmission-post-resources.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

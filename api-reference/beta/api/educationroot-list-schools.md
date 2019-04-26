@@ -4,14 +4,16 @@ description: 检索所有 school 对象的列表。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: cf10d18188f09ee7c65195358e224f183ffd906e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad85850912e24a2a1ebd5c7986786d1205af5b70
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457735"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324875"
 ---
 # <a name="list-educationschools"></a>列出 educationSchools
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索所有 school 对象的列表。
 
@@ -48,7 +50,7 @@ The following is an example of the request.
   "name": "get_schools"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/schools
+GET https://graph.microsoft.com/beta/education/schools
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -103,10 +105,13 @@ Content-length: 345
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List schools",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

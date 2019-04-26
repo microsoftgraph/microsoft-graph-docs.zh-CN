@@ -4,14 +4,17 @@ description: 获取 conversation 对象。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: be111e25e1118fbb1fbe8cebe7f89b9289afc330
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 829553346821548956e47b18ed039c6f272b1754
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502783"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324198"
 ---
 # <a name="get-conversation"></a>获取对话
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 获取 [conversation](../resources/conversation.md) 对象。
 
 ## <a name="permissions"></a>权限
@@ -48,11 +51,10 @@ GET /groups/{id}/conversations/{id}
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgAQABuXO3guDWBMpyKF7LsVwfU="],
   "name": "get_group_conversation"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/conversations/AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgAQABuXO3guDWBMpyKF7LsVwfU=
+GET https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/conversations/AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgAQABuXO3guDWBMpyKF7LsVwfU=
 ```
 
 #### <a name="response"></a>响应
@@ -83,10 +85,13 @@ Content-length: 644
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get conversation",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

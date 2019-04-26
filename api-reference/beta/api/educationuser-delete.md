@@ -4,14 +4,16 @@ description: 删除用户。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: edc9272d8b31804b170424a27123ca66b4611e28
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7028ee71cbbd0b4166ea046a2ceae2f156115ddf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464759"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322987"
 ---
 # <a name="delete-educationuser"></a>删除 educationUser
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除用户。
 
@@ -50,10 +52,10 @@ DELETE /education/users/{id}
   "name": "delete_educationuser"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/users/{user-id}
+DELETE https://graph.microsoft.com/beta/education/users/13019
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -64,10 +66,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete educationUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,21 +1,21 @@
 ---
 title: 删除 rejectedSender
-description: 从 rejectedSenders 列表中删除用户或组。
+description: 从 "拒绝的发件人" 列表中删除用户或组。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: e8b5a0a6a0c6a4f72805845f7c7c579043c05c0e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9c1fcc868b454d622dca79cf7f48dfaecf8023af
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502846"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323650"
 ---
 # <a name="remove-rejectedsender"></a>删除 rejectedSender
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 rejectedSenders 列表中删除用户或组。
+从指定组的 "拒绝的发件人" 列表中删除用户或组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -29,7 +29,7 @@ ms.locfileid: "32502846"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
+DELETE /groups/{id}/rejectedSenders/$ref?$id={id}
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -44,21 +44,39 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。
 
-## <a name="example"></a>示例
+## <a name="examples"></a>示例
+### <a name="example-1-remove-a-user-from-the-rejected-senders-list-of-the-group"></a>示例 1: 从组的 "拒绝的发件人" 列表中删除用户。
 #### <a name="request"></a>请求
-下面展示了几个示例请求。
+
 <!-- {
   "blockType": "request",
-  "name": "remove_rejectedSender_from_group"
+  "name": "remove_user_from_rejectedsenderslist_of_group"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
+```
+#### <a name="response"></a>响应
+下面是一个响应示例。 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 
-DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
+### <a name="example-2-remove-a-group-from-the-rejected-senders-list-of-the-group"></a>示例 2: 从组的 "拒绝-发件人" 列表中删除组。
+#### <a name="request"></a>请求
+<!-- {
+  "blockType": "request",
+  "name": "remove_group_from_rejectedsenderslist_of_group"
+}-->
+```http
+DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{other-group-id}
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -76,8 +94,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-delete-rejectedsenders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

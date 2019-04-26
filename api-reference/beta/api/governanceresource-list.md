@@ -2,12 +2,12 @@
 title: 列出 governanceResources
 description: 检索请求者有权访问的 governanceResource 的集合。
 localization_priority: Normal
-ms.openlocfilehash: 998e18a0139f0cbe41901da935faee2f7f24e9eb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 819b81a3d086ba3f9c934221c275269449d14169
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457170"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324852"
 ---
 # <a name="list-governanceresources"></a>列出 governanceResources
 
@@ -22,7 +22,7 @@ ms.locfileid: "32457170"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | PrivilegedAccess AzureResources  |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | PrivilegedAccess AzureResources |
+|应用程序 | PrivilegedAccess AzureResources |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -110,8 +110,6 @@ Content-Length: 1289
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/governanceresource-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,14 +4,16 @@ description: 向课程添加成员。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f2822387ef0d202aa7f24c16f4ce8b1257bfa3ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2df160a43d5638619cffb8c1f7d7c98e9b934b72
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457748"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324884"
 ---
 # <a name="add-a-student"></a>添加学生
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 向课程添加成员。
 
@@ -50,17 +52,17 @@ POST /education/classes/{id}/members/$ref
   "name": "create_educationuser_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/members/$ref
+POST https://graph.microsoft.com/beta/education/classes/11011/members/$ref
 Content-type: application/json
 Content-length: 56
 
 {
-  "@odata.id":"https://graph.microsoft.com/v1.0/education/users/13015"
+  "@odata.id":"https://graph.microsoft.com/beta/education/users/13015"
 }
 ```
 
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 
 
 <!-- {
@@ -74,10 +76,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

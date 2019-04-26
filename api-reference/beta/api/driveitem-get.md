@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取文件或文件夹
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 578d7bcbba51876390f9e0134d3c589d64b51e81
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4610b911b21414948e3708b25817da4e15c9f4bd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454417"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325277"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过文件系统路径或 ID 在[驱动器](../resources/drive.md)中检索 [DriveItem](../resources/driveitem.md) 的元数据。
 
@@ -65,7 +67,7 @@ GET /users/{userId}/drive/root:/{item-path}
 
 下面是用户的 OneDrive 的根文件夹请求示例。
 
-<!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
 ```http
 GET /me/drive/root
@@ -116,10 +118,13 @@ Content-type: application/json
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Items/Get item"
-} -->
+  "tocPath": "Items/Get item",
+  "suppressions": []
+}
+-->

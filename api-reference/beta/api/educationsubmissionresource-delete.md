@@ -4,12 +4,12 @@ description: 从提交中删除资源。 仅学生可以执行此操作。 如�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a735cb1451e8d3eb8df13e6fa395c3e02393f451
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 077434e269300617cf239ef82084439c8109adc5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457513"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322339"
 ---
 # <a name="delete-educationsubmissionresource"></a>删除 educationSubmissionResource
 
@@ -24,7 +24,7 @@ ms.locfileid: "32457513"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduAssignments、ReadWriteBasic、EduAssignments  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|Application | 不支持。 | 
+|应用程序 | 不支持。 | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -55,7 +55,7 @@ DELETE /educationClasses/assignments/{id}/submissions/{id}/resources/{id}
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
 ##### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 
 <!-- {
   "blockType": "response",
@@ -74,8 +74,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationsubmissionresource-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

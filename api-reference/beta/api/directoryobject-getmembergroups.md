@@ -4,12 +4,12 @@ description: 返回指定的用户、组、服务主体或目录对象所属的�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9ab73b691ed9cfa4c756e4f0134adf9df7350aae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a5e690b0b72775e982222d8a09e40484d636b5d3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455098"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325892"
 ---
 # <a name="get-member-groups"></a>获取成员组
 
@@ -25,7 +25,7 @@ ms.locfileid: "32455098"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.Read.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|Application | Directory.Read.All |
+|应用程序 | Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /directoryObjects/{id}/getMemberGroups
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象。
 
-| 参数    | 类型   |描述|
+| 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |securityEnabledOnly|Boolean| **true** 指定仅应返回包含实体的安全组；**false** 指定应返回包含实体的所有组和目录角色。**注意**：如果参数为 **true**，只能对一位用户调用此函数。 |
 
@@ -62,7 +62,7 @@ POST /directoryObjects/{id}/getMemberGroups
   "name": "directoryobject_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMemberGroups
+POST https://graph.microsoft.com/beta/me/getMemberGroups
 Content-type: application/json
 
 {
@@ -83,7 +83,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
     "value": [
         "fee2c45b-915a-4a64-b130-f4eb9e75525e",
         "4fe90ae7-065a-478b-9400-e0a0e1cbd540",
@@ -101,8 +101,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/directoryobject-getmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

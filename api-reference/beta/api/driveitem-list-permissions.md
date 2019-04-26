@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: 列出有权访问文件的权限
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 6917cb17cc9b6c1f04a63d85b05cd5d7e543fa84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a5886e45f903a5d4419617ff21fd00fb274a4868
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454389"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325331"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>列出 DriveItem 中的共享权限
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 列出 [DriveItem](../resources/driveitem.md) 中的有效共享权限。
 
@@ -74,7 +76,7 @@ DriveItem 的有效共享权限可能有两个来源：
 
 本示例检索登录用户驱动器中某个项的权限集合。
 
-<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions
@@ -140,10 +142,13 @@ Content-Type: application/json
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List an item's permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "Sharing/Permissions"
-} -->
+  "tocPath": "Sharing/Permissions",
+  "suppressions": []
+}
+-->

@@ -4,12 +4,12 @@ description: 更新 eventMessage 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 160fbf70f243174265fc6e4e54feabb8042bd450
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b7c22cfee9ad7378166ac619a770894b110c510f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463958"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325045"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
@@ -45,9 +45,9 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |类别|String|与邮件关联的类别。|
-|重要性|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
+|importance|String|邮件的重要性。可能的值是：`Low`、`Normal`、`High`。|
 |isAllDay |Boolean|指示事件是否持续一整天。 调整此属性还需要调整事件的**startDateTime**和**endDateTime**属性。|
-|isDeliveryReceiptRequested|布尔|指示是否需要发送邮件已读回执。|
+|isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isRead|Boolean|指示是否已阅读该邮件。|
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 
@@ -105,8 +105,6 @@ Content-length: 248
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/eventmessage-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

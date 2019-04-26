@@ -4,22 +4,22 @@ ms.author: dspektor
 ms.date: 09/10/2017
 title: 文件活动
 localization_priority: Normal
-ms.openlocfilehash: 75849fc67febe8c0f22d4dbd057da98aea5e8854
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9131146bc627f1f611e817d66dcb86a084fef26f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459481"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323014"
 ---
 # <a name="enumerate-activities-preview"></a>枚举活动（预览）
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-列出在某个项上或某个层次结构下发生的最近[活动][]。
+列出在某个项上或某个层次结构下发生的最近[活动](../resources/itemactivity.md)。
 
 **注意：** 活动处于限定预览阶段，尚未对所有租户可用。
 
-[活动]: ../resources/itemactivity.md
+[activities]: ../resources/itemactivity.md
 
 ## <a name="permissions"></a>权限
 
@@ -156,8 +156,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Site/List sites",
-  "suppressions": [
-    "Error: /api-reference/beta/api/activities-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

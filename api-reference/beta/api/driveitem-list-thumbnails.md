@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 检索文件或文件夹的缩略图
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 68c1adf275a6a8720aab4df638f69c7162e301a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 271bf311c121807bede6ba49ce2a585a7400c641
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454375"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325310"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>列出 DriveItem 的缩略图
 
@@ -110,7 +110,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 ### <a name="path-parameters"></a>路径参数
 
-| 名称         | 类型   | 描述                                                                              |
+| 名称         | 类型   | 说明                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | 引用的项目的唯一标识符。                                           |
 | **thumb-id** | 数字 | 缩略图的索引，通常介于 0 到 4 之间。 如果没有自定义缩略图，索引为 0。 |
@@ -212,7 +212,7 @@ Content-type: application/json
 
 下表定义了可能的缩略图大小。虽然可以请求任意的缩略图大小，但可能存在定义的有并迅速返回值：
 
-| 名称           | 解决方案  | 纵横比 | 描述                                                          |
+| 名称           | 分辨率  | 纵横比 | 说明                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
 | `small`        | 96 longest  | 原始大小     | 小型的高压缩缩略图，裁剪为正方形纵横比。 |
 | `medium`       | 176 longest | 原始大小     | 裁剪为 OneDrive Web 视图的标准项目大小。         |
@@ -286,8 +286,6 @@ SharePoint Server 2016 不支持缩略图。
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
   "tocPath": "Items/Thumbnails",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

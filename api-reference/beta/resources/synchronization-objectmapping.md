@@ -2,12 +2,12 @@
 title: objectMapping 资源类型
 description: 定义给定对象应如何从源目录同步到目标目录。 具体而言, 它定义源目录中的对象应与目标目录中的对象匹配的方式, 应使用什么 (如果有) 作用域筛选器确定是否要预配给定的对象, 以及应如何转换对象属性源到目标目录。
 localization_priority: Normal
-ms.openlocfilehash: 274d401c28abc25d904c259b00a673f3c0a53888
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 10b57c385d57a1fb5492bbb292e5ddc1fa2ff999
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581751"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345558"
 ---
 # <a name="objectmapping-resource-type"></a>objectMapping 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "32581751"
 |:--------------|:----------|:---------------|
 |attributeMappings  |[attributeMapping](synchronization-attributemapping.md)集合    | 属性映射定义将哪些属性从源对象映射到目标对象以及它们的流动方式。 有许多函数可用于支持原始源值的转换。|
 |enabled        |Boolean    |在`true`此情况下, 将在同步过程中处理此对象映射。 何时`false`, 将跳过此对象映射。|
-|flowTypes      |objectFlowType    |为此对象映射启用了哪些流类型。 `Add`在目标目录中创建新的对象`Update` , 修改现有的对象`Delete` , 并 deprovisions 现有用户。 默认值为`Add, Update, Delete`。 |
+|flowTypes      |objectFlowTypes    |为此对象映射启用了哪些流类型。 `Add`在目标目录中创建新的对象`Update` , 修改现有的对象`Delete` , 并 deprovisions 现有用户。 默认值为`Add, Update, Delete`。 |
 |metadata       |metadataEntry 集合    |其他扩展属性。 除非明确提到, 否则不应更改元数据值。|
 |name           |String     |对象映射的人友好名称。|
 |范围          |[filter](synchronization-filter.md)     |定义在决定是否应设置给定对象时要使用的筛选器。 例如, 您可能希望仅预配位于美国的用户。|
@@ -58,7 +58,7 @@ ms.locfileid: "32581751"
 ## <a name="json-example"></a>JSON 示例
 
 <!-- {
-  "blockType": "resource",
+  "blockType": "example",
   "optionalProperties": [
 
   ],
@@ -355,8 +355,6 @@ ms.locfileid: "32581751"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-objectmapping.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

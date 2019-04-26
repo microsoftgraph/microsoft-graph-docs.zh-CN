@@ -2,12 +2,12 @@
 title: 获取 connectorGroup
 description: 检索 connectorGroup 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: fd898eecd6c131bef49c4eecdd266ae92642115a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fe638c863d12f20cd352d73d589db691d32dccf6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455896"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327627"
 ---
 # <a name="get-connectorgroup"></a>获取 connectorGroup
 
@@ -81,8 +81,6 @@ Content-length: 119
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/connectorgroup-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

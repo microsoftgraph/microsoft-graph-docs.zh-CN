@@ -2,12 +2,12 @@
 title: 更新协议
 description: 更新协议对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: fc6e4718a026f78a6e892dc13095492099b654cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9821ad60258190519298fa5e01ceedfa5b9ee13a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459311"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322705"
 ---
 # <a name="update-agreement"></a>更新协议
 
@@ -39,7 +39,7 @@ PATCH /agreements/<id>
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
-|isViewingBeforeAcceptanceRequired|布尔|用户是否必须在接受前展开并查看协议。|
+|isViewingBeforeAcceptanceRequired|Boolean|用户是否必须在接受前展开并查看协议。|
 
 ## <a name="response"></a>响应
 如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[协议](../resources/agreement.md)对象。
@@ -88,8 +88,6 @@ Content-length: 105
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/agreement-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: 获取在**calendarView**中添加、删除或更新的一组事件
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e04e542e0bf119e28a000f1b7fed3777590c1654
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ab9fce0294bb5c496c8d56c42914f185b9daf32
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464441"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325074"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -27,7 +27,7 @@ ms.locfileid: "32464441"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    |
-|Application | Calendars.Read、Calendars.ReadWrite |
+|应用程序 | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -44,20 +44,20 @@ GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={e
 
 | 查询参数      | 类型   |说明|
 |:---------------|:--------|:----------|
-|startDateTime|字符串|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
+|startDateTime|String|时间范围的开始日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T19:00:00.0000000”。|
 |endDateTime|String|时间范围的结束日期和时间以 ISO 8601 格式表示。例如，“2015-11-08T20:00:00.0000000”。|
 | $deltatoken | string | 对同一个日历视图之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该日历视图的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。|
-| $skiptoken | 字符串 | 之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个日历视图中有进一步的更改需要跟踪。 |
+| $skiptoken | string | 之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个日历视图中有进一步的更改需要跟踪。 |
 
 对日历视图执行 delta 查询时，预计获取通常从 `GET /calendarview` 请求获取的所有属性。在此情况下，不支持 `$select`。
 
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明 |
 |:---------------|:----------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Content-Type  | string  | application/json. Required. |
-| Prefer | 字符串  | odata.maxpagesize={x}。可选。 |
+| Content-Type  | 字符串  | application/json. Required. |
+| Prefer | string  | odata.maxpagesize={x}。可选。 |
 | Prefer | string | {Time zone}。可选，如果缺省，则采用 UTC。|
 
 ## <a name="response"></a>响应
@@ -130,8 +130,6 @@ Content-length: 359
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/event-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

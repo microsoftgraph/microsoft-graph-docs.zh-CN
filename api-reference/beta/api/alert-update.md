@@ -4,12 +4,12 @@ description: 在任何集成的解决方案中更新可编辑的 alert 属性, �
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 8b1fec6bfca2ce116bc35c4a7c8a115418b15012
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ac757bb6248902f097ebf49d803a323977976acd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459218"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322675"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -36,7 +36,7 @@ ms.locfileid: "32459218"
 PATCH /security/alerts/{alert_id}
 ```
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 
 | 名称       | 说明|
 |:-----------|:-----------|
@@ -51,7 +51,7 @@ PATCH /security/alerts/{alert_id}
 |:---------------|:--------|:----------|
 |assignedTo|String|为会审、调查或修正分配了警报的分析师的名称。|
 |closedDateTime|DateTimeOffset|警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|comments|String collection|通知的分析师注释 (针对客户通知管理)。|
+|comments|String 集合|通知的分析师注释 (针对客户通知管理)。|
 |征求|alertFeedback 枚举|通知的分析师反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。|
 |status|alertStatus 枚举|警报生命周期状态 (阶段)。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。|
 |tags|String 集合|可应用于警报并可用作筛选条件的用户定义的标签 (例如, "HVA"、"锯")。|
@@ -174,8 +174,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/alert-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

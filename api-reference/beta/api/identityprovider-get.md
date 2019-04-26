@@ -2,12 +2,12 @@
 title: 获取 identityProvider
 description: 检索现有 identityprovider.read.all 的属性。
 localization_priority: Normal
-ms.openlocfilehash: 8315c43bcd99b9ea96b408cd2feb61a59369e4c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3abfa25ac35c30ca74f166d6b3236a6ef1740828
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501334"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323830"
 ---
 # <a name="get-identityprovider"></a>获取 identityProvider
 
@@ -22,7 +22,7 @@ ms.locfileid: "32501334"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
+|委派（Microsoft 个人帐户）| 不支持。|
 |应用程序|不支持。|
 
 工作或学校帐户必须是租户的全局管理员。
@@ -91,8 +91,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/identityprovider-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: licenseAssignmentState 资源类型
 description: 'user 实体的**licenseAssignmentStates**属性是**licenseAssignmentState**的集合。 它提供了对用户的许可证分配的详细信息。 详细信息包括如下信息:  '
 localization_priority: Normal
-ms.openlocfilehash: a33dce3550d5a842493b73c83e8222a579348c9a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1aa91dcb841c8f3219ba0ea00ad615777da89aa9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581095"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345337"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState 资源类型
 
@@ -34,21 +34,18 @@ ms.locfileid: "32581095"
 
 下面是资源的 JSON 表示形式。
 
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.licenseAssignmentState"
+}-->
 ```json
 {
   "assignedByGroup": "String",
-  "disabledPlans": "Collection(String)",
+  "disabledPlans": ["string"],
   "error": " String ",  
   "skuId": "String ",
   "state": "String"
 }
 
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/licenseAssignmentState.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
