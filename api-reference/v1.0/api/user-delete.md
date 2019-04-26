@@ -5,54 +5,54 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ba27c81e5cb6b8bc8738c419b467e686932bc7c8
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258063"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567913"
 ---
-# <a name="delete-a-user"></a><span data-ttu-id="06fda-103">删除用户</span><span class="sxs-lookup"><span data-stu-id="06fda-103">Delete a user</span></span>
+# <a name="delete-a-user"></a><span data-ttu-id="86922-103">删除用户</span><span class="sxs-lookup"><span data-stu-id="86922-103">Delete a user</span></span>
 
-<span data-ttu-id="06fda-104">删除用户。</span><span class="sxs-lookup"><span data-stu-id="06fda-104">Delete user.</span></span>  
+<span data-ttu-id="86922-104">删除用户。</span><span class="sxs-lookup"><span data-stu-id="86922-104">Delete user.</span></span>  
 
-<span data-ttu-id="06fda-105">删除时，将用户资源转移到存储时限为 30 日的临时容器中。</span><span class="sxs-lookup"><span data-stu-id="06fda-105">When deleted, user resources are moved to a temporary container and can be restored within 30 days.</span></span>  <span data-ttu-id="06fda-106">此后，它们将被永久删除。</span><span class="sxs-lookup"><span data-stu-id="06fda-106">After that time, they are permanently deleted.</span></span>  <span data-ttu-id="06fda-107">要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。</span><span class="sxs-lookup"><span data-stu-id="06fda-107">To learn more, see [Paging](../resources/directory.md).</span></span>
+<span data-ttu-id="86922-105">删除时，将用户资源转移到存储时限为 30 日的临时容器中。</span><span class="sxs-lookup"><span data-stu-id="86922-105">When deleted, user resources are moved to a temporary container and can be restored within 30 days.</span></span>  <span data-ttu-id="86922-106">此后，它们将被永久删除。</span><span class="sxs-lookup"><span data-stu-id="86922-106">After that time, they are permanently deleted.</span></span>  <span data-ttu-id="86922-107">要了解详细信息，请参阅 [deletedItems](../resources/directory.md)。</span><span class="sxs-lookup"><span data-stu-id="86922-107">To learn more, see [deletedItems](../resources/directory.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="06fda-108">权限</span><span class="sxs-lookup"><span data-stu-id="06fda-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="86922-108">权限</span><span class="sxs-lookup"><span data-stu-id="86922-108">Permissions</span></span>
 
-<span data-ttu-id="06fda-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="06fda-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="86922-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="86922-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="06fda-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="06fda-111">Permission type</span></span>      | <span data-ttu-id="06fda-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="06fda-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="86922-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="86922-111">Permission type</span></span>      | <span data-ttu-id="86922-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="86922-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="06fda-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="06fda-113">Delegated (work or school account)</span></span> | <span data-ttu-id="06fda-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="06fda-114">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="06fda-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="06fda-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="06fda-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="06fda-116">Not supported.</span></span>    |
-|<span data-ttu-id="06fda-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="06fda-117">Application</span></span> | <span data-ttu-id="06fda-118">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="06fda-118">User.ReadWrite.All</span></span> |
+|<span data-ttu-id="86922-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="86922-113">Delegated (work or school account)</span></span> | <span data-ttu-id="86922-114">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="86922-114">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="86922-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="86922-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="86922-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="86922-116">Not supported.</span></span>    |
+|<span data-ttu-id="86922-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="86922-117">Application</span></span> | <span data-ttu-id="86922-118">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="86922-118">User.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="06fda-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="06fda-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="86922-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="86922-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="06fda-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="06fda-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="86922-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="86922-120">Request headers</span></span>
 
-| <span data-ttu-id="06fda-121">标头</span><span class="sxs-lookup"><span data-stu-id="06fda-121">Header</span></span>       | <span data-ttu-id="06fda-122">值</span><span class="sxs-lookup"><span data-stu-id="06fda-122">Value</span></span>|
+| <span data-ttu-id="86922-121">标头</span><span class="sxs-lookup"><span data-stu-id="86922-121">Header</span></span>       | <span data-ttu-id="86922-122">值</span><span class="sxs-lookup"><span data-stu-id="86922-122">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="06fda-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="06fda-123">Authorization</span></span>  | <span data-ttu-id="06fda-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="06fda-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="86922-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="86922-123">Authorization</span></span>  | <span data-ttu-id="86922-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="86922-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="06fda-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="06fda-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="86922-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="86922-126">Request body</span></span>
 
-<span data-ttu-id="06fda-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="06fda-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="86922-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="86922-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="06fda-128">响应</span><span class="sxs-lookup"><span data-stu-id="06fda-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="86922-128">响应</span><span class="sxs-lookup"><span data-stu-id="86922-128">Response</span></span>
 
-<span data-ttu-id="06fda-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="06fda-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="86922-p104">如果成功，此方法返回 `204 No Content` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="86922-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="06fda-131">示例</span><span class="sxs-lookup"><span data-stu-id="06fda-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="86922-131">示例</span><span class="sxs-lookup"><span data-stu-id="86922-131">Example</span></span>
 
-## <a name="request"></a><span data-ttu-id="06fda-132">请求</span><span class="sxs-lookup"><span data-stu-id="06fda-132">Request</span></span>
+## <a name="request"></a><span data-ttu-id="86922-132">请求</span><span class="sxs-lookup"><span data-stu-id="86922-132">Request</span></span>
 
-<span data-ttu-id="06fda-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="06fda-133">Here is an example of the request.</span></span>
+<span data-ttu-id="86922-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="86922-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_user"
@@ -60,9 +60,9 @@ DELETE /users/{id | userPrincipalName}
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 ```
-### <a name="response"></a><span data-ttu-id="06fda-134">响应</span><span class="sxs-lookup"><span data-stu-id="06fda-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="86922-134">响应</span><span class="sxs-lookup"><span data-stu-id="86922-134">Response</span></span>
 
-<span data-ttu-id="06fda-135">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="06fda-135">Here is an example of the response.</span></span> 
+<span data-ttu-id="86922-135">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="86922-135">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -4,61 +4,63 @@ description: '在 "Azure AD 访问评论" 功能中, 检索 accessReview 对象�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 26551f27fdf328865509cd02011f3ee2344f5e82
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0bb757e3f92ced3d6f9615cb92a8e9b622bdec50
+ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458766"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33299575"
 ---
-# <a name="get-accessreview"></a><span data-ttu-id="8ac77-103">获取 accessReview</span><span class="sxs-lookup"><span data-stu-id="8ac77-103">Get accessReview</span></span>
+# <a name="get-accessreview"></a><span data-ttu-id="aaadf-103">获取 accessReview</span><span class="sxs-lookup"><span data-stu-id="aaadf-103">Get accessReview</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8ac77-104">在 "Azure AD[访问评论](../resources/accessreviews-root.md)" 功能中, 检索[accessReview](../resources/accessreview.md)对象。</span><span class="sxs-lookup"><span data-stu-id="8ac77-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve an [accessReview](../resources/accessreview.md) object.</span></span>  
+<span data-ttu-id="aaadf-104">在 "Azure AD[访问评论](../resources/accessreviews-root.md)" 功能中, 检索[accessReview](../resources/accessreview.md)对象。</span><span class="sxs-lookup"><span data-stu-id="aaadf-104">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve an [accessReview](../resources/accessreview.md) object.</span></span>  
 
-<span data-ttu-id="8ac77-105">若要检索访问评审的审阅者, 请使用[列表 accessReview 审阅者](accessreview-listreviewers.md)API。</span><span class="sxs-lookup"><span data-stu-id="8ac77-105">To retrieve the reviewers of the access review, use the [list accessReview reviewers](accessreview-listreviewers.md) API.</span></span> <span data-ttu-id="8ac77-106">若要检索访问评审的决策, 请使用[list accessReview 决策](accessreview-listdecisions.md)api 或[list my accessReview 决策](accessreview-listmydecisions.md)api。</span><span class="sxs-lookup"><span data-stu-id="8ac77-106">To retrieve the decisions of the access review, use the [list accessReview decisions](accessreview-listdecisions.md) API, or the [list my accessReview decisions](accessreview-listmydecisions.md) API.</span></span>
+<span data-ttu-id="aaadf-105">若要检索访问评审的审阅者, 请使用[列表 accessReview 审阅者](accessreview-listreviewers.md)API。</span><span class="sxs-lookup"><span data-stu-id="aaadf-105">To retrieve the reviewers of the access review, use the [list accessReview reviewers](accessreview-listreviewers.md) API.</span></span> <span data-ttu-id="aaadf-106">若要检索访问评审的决策, 请使用[list accessReview 决策](accessreview-listdecisions.md)api 或[list my accessReview 决策](accessreview-listmydecisions.md)api。</span><span class="sxs-lookup"><span data-stu-id="aaadf-106">To retrieve the decisions of the access review, use the [list accessReview decisions](accessreview-listdecisions.md) API, or the [list my accessReview decisions](accessreview-listmydecisions.md) API.</span></span>
 
-<span data-ttu-id="8ac77-107">如果这是定期访问审核, 则使用`instances`关系检索访问评审的过去、当前和未来实例的[accessReview](../resources/accessreview.md)集合。</span><span class="sxs-lookup"><span data-stu-id="8ac77-107">If this is a recurring access review, then use the `instances` relationship to retrieve an [accessReview](../resources/accessreview.md) collection of the past, current, and future instances of the access review.</span></span>
+<span data-ttu-id="aaadf-107">如果这是定期访问审核, 则使用`instances`关系检索访问评审的过去、当前和未来实例的[accessReview](../resources/accessreview.md)集合。</span><span class="sxs-lookup"><span data-stu-id="aaadf-107">If this is a recurring access review, then use the `instances` relationship to retrieve an [accessReview](../resources/accessreview.md) collection of the past, current, and future instances of the access review.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8ac77-108">权限</span><span class="sxs-lookup"><span data-stu-id="8ac77-108">Permissions</span></span>
-<span data-ttu-id="8ac77-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8ac77-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="aaadf-108">权限</span><span class="sxs-lookup"><span data-stu-id="aaadf-108">Permissions</span></span>
+<span data-ttu-id="aaadf-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="aaadf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8ac77-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="8ac77-111">Permission type</span></span>                        | <span data-ttu-id="8ac77-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8ac77-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="aaadf-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="aaadf-111">Permission type</span></span>                        | <span data-ttu-id="aaadf-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="aaadf-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8ac77-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8ac77-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="8ac77-114">`AccessReview.Read.All`, `AccessReview.ReadWrite.All`.</span><span class="sxs-lookup"><span data-stu-id="8ac77-114"></span></span>  <span data-ttu-id="8ac77-115">登录用户还必须位于目录角色中, 允许他们读取访问权限, 或作为访问审核的审阅者进行分配。</span><span class="sxs-lookup"><span data-stu-id="8ac77-115">The signed in user must also be in a directory role that permits them to read an access review, or assigned as a reviewer on the access review.</span></span> |
-|<span data-ttu-id="8ac77-116">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8ac77-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8ac77-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="8ac77-117">Not supported.</span></span> |
-|<span data-ttu-id="8ac77-118">应用程序</span><span class="sxs-lookup"><span data-stu-id="8ac77-118">Application</span></span>                            | <span data-ttu-id="8ac77-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="8ac77-119">Not supported.</span></span> |
+|<span data-ttu-id="aaadf-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="aaadf-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="aaadf-114">AccessReview</span><span class="sxs-lookup"><span data-stu-id="aaadf-114">AccessReview.Read.All</span></span>  |
+|<span data-ttu-id="aaadf-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="aaadf-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aaadf-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="aaadf-116">Not supported.</span></span> |
+|<span data-ttu-id="aaadf-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="aaadf-117">Application</span></span>                            | <span data-ttu-id="aaadf-118">AccessReview</span><span class="sxs-lookup"><span data-stu-id="aaadf-118">AccessReview.Read.All</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="8ac77-120">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8ac77-120">HTTP request</span></span>
+<span data-ttu-id="aaadf-119">若要调用此 API, 登录用户还必须位于允许他们读取访问审核的目录角色中, 或者可以将用户作为访问评审的审阅者进行分配。</span><span class="sxs-lookup"><span data-stu-id="aaadf-119">In order to call this API, the signed in user must also be in a directory role that permits them to read an access review, or the user can be assigned as a reviewer on the access review.</span></span>  <span data-ttu-id="aaadf-120">有关更多详细信息, 请参阅[access 评审](../resources/accessreviews-root.md)的角色和权限要求。</span><span class="sxs-lookup"><span data-stu-id="aaadf-120">For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="aaadf-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="aaadf-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /accessReviews('{reviewId}')
 ```
-## <a name="request-headers"></a><span data-ttu-id="8ac77-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="8ac77-121">Request headers</span></span>
-| <span data-ttu-id="8ac77-122">名称</span><span class="sxs-lookup"><span data-stu-id="8ac77-122">Name</span></span>         | <span data-ttu-id="8ac77-123">类型</span><span class="sxs-lookup"><span data-stu-id="8ac77-123">Type</span></span>        | <span data-ttu-id="8ac77-124">说明</span><span class="sxs-lookup"><span data-stu-id="8ac77-124">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="aaadf-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="aaadf-122">Request headers</span></span>
+| <span data-ttu-id="aaadf-123">名称</span><span class="sxs-lookup"><span data-stu-id="aaadf-123">Name</span></span>         | <span data-ttu-id="aaadf-124">类型</span><span class="sxs-lookup"><span data-stu-id="aaadf-124">Type</span></span>        | <span data-ttu-id="aaadf-125">说明</span><span class="sxs-lookup"><span data-stu-id="aaadf-125">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="8ac77-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="8ac77-125">Authorization</span></span> | <span data-ttu-id="8ac77-126">string</span><span class="sxs-lookup"><span data-stu-id="8ac77-126">string</span></span> | <span data-ttu-id="8ac77-p104">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="8ac77-p104">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="aaadf-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="aaadf-126">Authorization</span></span> | <span data-ttu-id="aaadf-127">string</span><span class="sxs-lookup"><span data-stu-id="aaadf-127">string</span></span> | <span data-ttu-id="aaadf-p104">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="aaadf-p104">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8ac77-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="8ac77-129">Request body</span></span>
-<span data-ttu-id="8ac77-130">不应提供请求正文。</span><span class="sxs-lookup"><span data-stu-id="8ac77-130">No request body should be supplied.</span></span>
+## <a name="request-body"></a><span data-ttu-id="aaadf-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="aaadf-130">Request body</span></span>
+<span data-ttu-id="aaadf-131">不应提供请求正文。</span><span class="sxs-lookup"><span data-stu-id="aaadf-131">No request body should be supplied.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8ac77-131">响应</span><span class="sxs-lookup"><span data-stu-id="8ac77-131">Response</span></span>
-<span data-ttu-id="8ac77-132">如果成功, 此方法在响应`200, OK`正文中返回响应代码和[accessReview](../resources/accessreview.md)对象。</span><span class="sxs-lookup"><span data-stu-id="8ac77-132">If successful, this method returns a `200, OK` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="aaadf-132">响应</span><span class="sxs-lookup"><span data-stu-id="aaadf-132">Response</span></span>
+<span data-ttu-id="aaadf-133">如果成功, 此方法在响应`200, OK`正文中返回响应代码和[accessReview](../resources/accessreview.md)对象。</span><span class="sxs-lookup"><span data-stu-id="aaadf-133">If successful, this method returns a `200, OK` response code and an [accessReview](../resources/accessreview.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8ac77-133">示例</span><span class="sxs-lookup"><span data-stu-id="8ac77-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8ac77-134">请求</span><span class="sxs-lookup"><span data-stu-id="8ac77-134">Request</span></span>
+## <a name="example"></a><span data-ttu-id="aaadf-134">示例</span><span class="sxs-lookup"><span data-stu-id="aaadf-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="aaadf-135">请求</span><span class="sxs-lookup"><span data-stu-id="aaadf-135">Request</span></span>
 
 <!-- {
   "blockType": "request",
   "name": "get_accessReview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fec466a82d')
+GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d
 ```
 
-##### <a name="response"></a><span data-ttu-id="8ac77-135">响应</span><span class="sxs-lookup"><span data-stu-id="8ac77-135">Response</span></span>
-><span data-ttu-id="8ac77-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="8ac77-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="aaadf-136">响应</span><span class="sxs-lookup"><span data-stu-id="aaadf-136">Response</span></span>
+><span data-ttu-id="aaadf-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="aaadf-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,15 +101,15 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8ac77-138">另请参阅</span><span class="sxs-lookup"><span data-stu-id="8ac77-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aaadf-139">另请参阅</span><span class="sxs-lookup"><span data-stu-id="aaadf-139">See also</span></span>
 
-| <span data-ttu-id="8ac77-139">方法</span><span class="sxs-lookup"><span data-stu-id="8ac77-139">Method</span></span>           | <span data-ttu-id="8ac77-140">返回类型</span><span class="sxs-lookup"><span data-stu-id="8ac77-140">Return Type</span></span>    |<span data-ttu-id="8ac77-141">说明</span><span class="sxs-lookup"><span data-stu-id="8ac77-141">Description</span></span>|
+| <span data-ttu-id="aaadf-140">方法</span><span class="sxs-lookup"><span data-stu-id="aaadf-140">Method</span></span>           | <span data-ttu-id="aaadf-141">返回类型</span><span class="sxs-lookup"><span data-stu-id="aaadf-141">Return Type</span></span>    |<span data-ttu-id="aaadf-142">说明</span><span class="sxs-lookup"><span data-stu-id="aaadf-142">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="8ac77-142">创建 accessReview</span><span class="sxs-lookup"><span data-stu-id="8ac77-142">Create accessReview</span></span>](accessreview-create.md) |    [<span data-ttu-id="8ac77-143">accessReview</span><span class="sxs-lookup"><span data-stu-id="8ac77-143">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="8ac77-144">创建新的 accessReview。</span><span class="sxs-lookup"><span data-stu-id="8ac77-144">Create a new accessReview.</span></span> |
-|[<span data-ttu-id="8ac77-145">列出 programControls</span><span class="sxs-lookup"><span data-stu-id="8ac77-145">List programControls</span></span>](programcontrol-list.md) | <span data-ttu-id="8ac77-146">[programControl](../resources/programcontrol.md)集合</span><span class="sxs-lookup"><span data-stu-id="8ac77-146">[programControl](../resources/programcontrol.md) collection</span></span> | <span data-ttu-id="8ac77-147">列出租户中的 programControls。</span><span class="sxs-lookup"><span data-stu-id="8ac77-147">List programControls in a tenant.</span></span> |
-|[<span data-ttu-id="8ac77-148">列出 accessReview 审阅者</span><span class="sxs-lookup"><span data-stu-id="8ac77-148">List accessReview reviewers</span></span>](accessreview-listreviewers.md) |     <span data-ttu-id="8ac77-149">[userIdentity](../resources/useridentity.md)集合</span><span class="sxs-lookup"><span data-stu-id="8ac77-149">[userIdentity](../resources/useridentity.md) collection</span></span>|    <span data-ttu-id="8ac77-150">获取 accessReview 的审阅者。</span><span class="sxs-lookup"><span data-stu-id="8ac77-150">Get the reviewers of an accessReview.</span></span> |
-|[<span data-ttu-id="8ac77-151">列出 accessReview 决策</span><span class="sxs-lookup"><span data-stu-id="8ac77-151">List accessReview decisions</span></span>](accessreview-listdecisions.md) |     <span data-ttu-id="8ac77-152">[accessReviewDecision](../resources/accessreviewdecision.md)集合</span><span class="sxs-lookup"><span data-stu-id="8ac77-152">[accessReviewDecision](../resources/accessreviewdecision.md) collection</span></span>|    <span data-ttu-id="8ac77-153">获取 accessReview 的决策。</span><span class="sxs-lookup"><span data-stu-id="8ac77-153">Get the decisions of an accessReview.</span></span>|
-|[<span data-ttu-id="8ac77-154">列出我的 accessReview 决策</span><span class="sxs-lookup"><span data-stu-id="8ac77-154">List my accessReview decisions</span></span>](accessreview-listmydecisions.md) |        <span data-ttu-id="8ac77-155">[accessReviewDecision](../resources/accessreviewdecision.md)集合</span><span class="sxs-lookup"><span data-stu-id="8ac77-155">[accessReviewDecision](../resources/accessreviewdecision.md) collection</span></span>|    <span data-ttu-id="8ac77-156">作为审阅者, 请 accessReview 的决策。</span><span class="sxs-lookup"><span data-stu-id="8ac77-156">As a reviewer, get my decisions of an accessReview.</span></span>|
+|[<span data-ttu-id="aaadf-143">创建 accessReview</span><span class="sxs-lookup"><span data-stu-id="aaadf-143">Create accessReview</span></span>](accessreview-create.md) |    [<span data-ttu-id="aaadf-144">accessReview</span><span class="sxs-lookup"><span data-stu-id="aaadf-144">accessReview</span></span>](../resources/accessreview.md) |  <span data-ttu-id="aaadf-145">创建新的 accessReview。</span><span class="sxs-lookup"><span data-stu-id="aaadf-145">Create a new accessReview.</span></span> |
+|[<span data-ttu-id="aaadf-146">列出 programControls</span><span class="sxs-lookup"><span data-stu-id="aaadf-146">List programControls</span></span>](programcontrol-list.md) | <span data-ttu-id="aaadf-147">[programControl](../resources/programcontrol.md)集合</span><span class="sxs-lookup"><span data-stu-id="aaadf-147">[programControl](../resources/programcontrol.md) collection</span></span> | <span data-ttu-id="aaadf-148">列出租户中的 programControls。</span><span class="sxs-lookup"><span data-stu-id="aaadf-148">List programControls in a tenant.</span></span> |
+|[<span data-ttu-id="aaadf-149">列出 accessReview 审阅者</span><span class="sxs-lookup"><span data-stu-id="aaadf-149">List accessReview reviewers</span></span>](accessreview-listreviewers.md) |     <span data-ttu-id="aaadf-150">[userIdentity](../resources/useridentity.md)集合</span><span class="sxs-lookup"><span data-stu-id="aaadf-150">[userIdentity](../resources/useridentity.md) collection</span></span>|    <span data-ttu-id="aaadf-151">获取 accessReview 的审阅者。</span><span class="sxs-lookup"><span data-stu-id="aaadf-151">Get the reviewers of an accessReview.</span></span> |
+|[<span data-ttu-id="aaadf-152">列出 accessReview 决策</span><span class="sxs-lookup"><span data-stu-id="aaadf-152">List accessReview decisions</span></span>](accessreview-listdecisions.md) |     <span data-ttu-id="aaadf-153">[accessReviewDecision](../resources/accessreviewdecision.md)集合</span><span class="sxs-lookup"><span data-stu-id="aaadf-153">[accessReviewDecision](../resources/accessreviewdecision.md) collection</span></span>|    <span data-ttu-id="aaadf-154">获取 accessReview 的决策。</span><span class="sxs-lookup"><span data-stu-id="aaadf-154">Get the decisions of an accessReview.</span></span>|
+|[<span data-ttu-id="aaadf-155">列出我的 accessReview 决策</span><span class="sxs-lookup"><span data-stu-id="aaadf-155">List my accessReview decisions</span></span>](accessreview-listmydecisions.md) |        <span data-ttu-id="aaadf-156">[accessReviewDecision](../resources/accessreviewdecision.md)集合</span><span class="sxs-lookup"><span data-stu-id="aaadf-156">[accessReviewDecision](../resources/accessreviewdecision.md) collection</span></span>|    <span data-ttu-id="aaadf-157">作为审阅者, 请 accessReview 的决策。</span><span class="sxs-lookup"><span data-stu-id="aaadf-157">As a reviewer, get my decisions of an accessReview.</span></span>|
 
 
 <!--
@@ -117,8 +119,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/accessreview-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

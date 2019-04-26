@@ -1,11 +1,10 @@
 ---
-redirect_url: overview
+redirect_url: journaling
 redirect_document_id: true
-localization_priority: Normal
 ms.openlocfilehash: 83cf69422b45767bd766f852f55307280455eb5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840108"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569716"
 ---

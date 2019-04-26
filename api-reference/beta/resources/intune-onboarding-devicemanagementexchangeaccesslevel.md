@@ -5,27 +5,27 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c235d31e97b570f70145884349eaef6e2254194c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802462"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566624"
 ---
-# <a name="devicemanagementexchangeaccesslevel-enum-type"></a><span data-ttu-id="e76cf-103">deviceManagementExchangeAccessLevel 枚举类型</span><span class="sxs-lookup"><span data-stu-id="e76cf-103">deviceManagementExchangeAccessLevel enum type</span></span>
+# <a name="devicemanagementexchangeaccesslevel-enum-type"></a><span data-ttu-id="05215-103">deviceManagementExchangeAccessLevel 枚举类型</span><span class="sxs-lookup"><span data-stu-id="05215-103">deviceManagementExchangeAccessLevel enum type</span></span>
 
-> <span data-ttu-id="e76cf-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="e76cf-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="05215-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="05215-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e76cf-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="e76cf-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="05215-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="05215-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e76cf-106">Exchange 中的访问级别。</span><span class="sxs-lookup"><span data-stu-id="e76cf-106">Access Level in Exchange.</span></span>
+<span data-ttu-id="05215-106">Exchange 中的访问级别。</span><span class="sxs-lookup"><span data-stu-id="05215-106">Access Level in Exchange.</span></span>
 
-## <a name="members"></a><span data-ttu-id="e76cf-107">成员</span><span class="sxs-lookup"><span data-stu-id="e76cf-107">Members</span></span>
-|<span data-ttu-id="e76cf-108">成员</span><span class="sxs-lookup"><span data-stu-id="e76cf-108">Member</span></span>|<span data-ttu-id="e76cf-109">值</span><span class="sxs-lookup"><span data-stu-id="e76cf-109">Value</span></span>|<span data-ttu-id="e76cf-110">说明</span><span class="sxs-lookup"><span data-stu-id="e76cf-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="05215-107">成员</span><span class="sxs-lookup"><span data-stu-id="05215-107">Members</span></span>
+|<span data-ttu-id="05215-108">成员</span><span class="sxs-lookup"><span data-stu-id="05215-108">Member</span></span>|<span data-ttu-id="05215-109">值</span><span class="sxs-lookup"><span data-stu-id="05215-109">Value</span></span>|<span data-ttu-id="05215-110">说明</span><span class="sxs-lookup"><span data-stu-id="05215-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e76cf-111">无</span><span class="sxs-lookup"><span data-stu-id="e76cf-111">none</span></span>|<span data-ttu-id="e76cf-112">0</span><span class="sxs-lookup"><span data-stu-id="e76cf-112">0</span></span>|<span data-ttu-id="e76cf-113">未在 Exchange 中配置任何设备访问规则。</span><span class="sxs-lookup"><span data-stu-id="e76cf-113">No device access rule has been configured in Exchange.</span></span>|
-|<span data-ttu-id="e76cf-114">允许</span><span class="sxs-lookup"><span data-stu-id="e76cf-114">allow</span></span>|<span data-ttu-id="e76cf-115">1</span><span class="sxs-lookup"><span data-stu-id="e76cf-115">1</span></span>|<span data-ttu-id="e76cf-116">允许设备访问 Exchange。</span><span class="sxs-lookup"><span data-stu-id="e76cf-116">Allow the device access to Exchange.</span></span>|
-|<span data-ttu-id="e76cf-117">数据</span><span class="sxs-lookup"><span data-stu-id="e76cf-117">block</span></span>|<span data-ttu-id="e76cf-118">双面</span><span class="sxs-lookup"><span data-stu-id="e76cf-118">2</span></span>|<span data-ttu-id="e76cf-119">阻止设备访问 Exchange。</span><span class="sxs-lookup"><span data-stu-id="e76cf-119">Block the device from accessing Exchange.</span></span>|
-|<span data-ttu-id="e76cf-120">隔离</span><span class="sxs-lookup"><span data-stu-id="e76cf-120">quarantine</span></span>|<span data-ttu-id="e76cf-121">第三章</span><span class="sxs-lookup"><span data-stu-id="e76cf-121">3</span></span>|<span data-ttu-id="e76cf-122">隔离 Exchange 中的设备。</span><span class="sxs-lookup"><span data-stu-id="e76cf-122">Quarantine the device in Exchange.</span></span>|
+|<span data-ttu-id="05215-111">无</span><span class="sxs-lookup"><span data-stu-id="05215-111">none</span></span>|<span data-ttu-id="05215-112">0</span><span class="sxs-lookup"><span data-stu-id="05215-112">0</span></span>|<span data-ttu-id="05215-113">未在 Exchange 中配置任何设备访问规则。</span><span class="sxs-lookup"><span data-stu-id="05215-113">No device access rule has been configured in Exchange.</span></span>|
+|<span data-ttu-id="05215-114">允许</span><span class="sxs-lookup"><span data-stu-id="05215-114">allow</span></span>|<span data-ttu-id="05215-115">1</span><span class="sxs-lookup"><span data-stu-id="05215-115">1</span></span>|<span data-ttu-id="05215-116">允许设备访问 Exchange。</span><span class="sxs-lookup"><span data-stu-id="05215-116">Allow the device access to Exchange.</span></span>|
+|<span data-ttu-id="05215-117">数据</span><span class="sxs-lookup"><span data-stu-id="05215-117">block</span></span>|<span data-ttu-id="05215-118">2 </span><span class="sxs-lookup"><span data-stu-id="05215-118">2</span></span>|<span data-ttu-id="05215-119">阻止设备访问 Exchange。</span><span class="sxs-lookup"><span data-stu-id="05215-119">Block the device from accessing Exchange.</span></span>|
+|<span data-ttu-id="05215-120">隔离</span><span class="sxs-lookup"><span data-stu-id="05215-120">quarantine</span></span>|<span data-ttu-id="05215-121">3 </span><span class="sxs-lookup"><span data-stu-id="05215-121">3</span></span>|<span data-ttu-id="05215-122">隔离 Exchange 中的设备。</span><span class="sxs-lookup"><span data-stu-id="05215-122">Quarantine the device in Exchange.</span></span>|
 
 
 

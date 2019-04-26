@@ -6,41 +6,43 @@ title: 创建 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 7faabe9bddc806d4c416ebed439592ec8630e8af
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481137"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568094"
 ---
-# <a name="create-a-new-list"></a><span data-ttu-id="8c1e3-102">创建新的列表</span><span class="sxs-lookup"><span data-stu-id="8c1e3-102">Create a new list</span></span>
+# <a name="create-a-new-list"></a><span data-ttu-id="39bec-102">创建新的列表</span><span class="sxs-lookup"><span data-stu-id="39bec-102">Create a new list</span></span>
 
-<span data-ttu-id="8c1e3-103">在 [site][] 中的创建新的 [list][]。</span><span class="sxs-lookup"><span data-stu-id="8c1e3-103">Create a new [list][] in a [site][].</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a><span data-ttu-id="8c1e3-104">权限</span><span class="sxs-lookup"><span data-stu-id="8c1e3-104">Permissions</span></span>
+<span data-ttu-id="39bec-103">在 [site][] 中的创建新的 [list][]。</span><span class="sxs-lookup"><span data-stu-id="39bec-103">Create a new [list][] in a [site][].</span></span>
 
-<span data-ttu-id="8c1e3-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8c1e3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="39bec-104">权限</span><span class="sxs-lookup"><span data-stu-id="39bec-104">Permissions</span></span>
 
-|            <span data-ttu-id="8c1e3-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="8c1e3-107">Permission type</span></span>             | <span data-ttu-id="8c1e3-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8c1e3-108">Permissions (from least to most privileged)</span></span> |
+<span data-ttu-id="39bec-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="39bec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|            <span data-ttu-id="39bec-107">权限类型</span><span class="sxs-lookup"><span data-stu-id="39bec-107">Permission type</span></span>             | <span data-ttu-id="39bec-108">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="39bec-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="8c1e3-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8c1e3-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="8c1e3-110">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="8c1e3-110">Sites.Manage.All</span></span>                            |
-| <span data-ttu-id="8c1e3-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8c1e3-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8c1e3-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="8c1e3-112">Not supported.</span></span>                              |
-| <span data-ttu-id="8c1e3-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="8c1e3-113">Application</span></span>                            | <span data-ttu-id="8c1e3-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8c1e3-114">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="39bec-109">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="39bec-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="39bec-110">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="39bec-110">Sites.Manage.All</span></span>                            |
+| <span data-ttu-id="39bec-111">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="39bec-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="39bec-112">不支持。</span><span class="sxs-lookup"><span data-stu-id="39bec-112">Not supported.</span></span>                              |
+| <span data-ttu-id="39bec-113">应用程序</span><span class="sxs-lookup"><span data-stu-id="39bec-113">Application</span></span>                            | <span data-ttu-id="39bec-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="39bec-114">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="8c1e3-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8c1e3-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="39bec-115">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="39bec-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-## <a name="request-body"></a><span data-ttu-id="8c1e3-116">请求正文</span><span class="sxs-lookup"><span data-stu-id="8c1e3-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="39bec-116">请求正文</span><span class="sxs-lookup"><span data-stu-id="39bec-116">Request body</span></span>
 
-<span data-ttu-id="8c1e3-117">在请求正文中，提供要创建的 [list][] 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="8c1e3-117">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
+<span data-ttu-id="39bec-117">在请求正文中，提供要创建的 [list][] 资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="39bec-117">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8c1e3-118">示例</span><span class="sxs-lookup"><span data-stu-id="8c1e3-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="39bec-118">示例</span><span class="sxs-lookup"><span data-stu-id="39bec-118">Example</span></span>
 
-<span data-ttu-id="8c1e3-119">下面的示例展示了如何创建新的泛型列表。</span><span class="sxs-lookup"><span data-stu-id="8c1e3-119">Here is an example of how to create a new generic list.</span></span>
+<span data-ttu-id="39bec-119">下面的示例展示了如何创建新的泛型列表。</span><span class="sxs-lookup"><span data-stu-id="39bec-119">Here is an example of how to create a new generic list.</span></span>
 
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
@@ -66,14 +68,14 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="8c1e3-120">**注意：** 自定义列都是可选的。</span><span class="sxs-lookup"><span data-stu-id="8c1e3-120">**Note:** Custom columns are optional.</span></span>
+<span data-ttu-id="39bec-120">**注意：** 自定义列都是可选的。</span><span class="sxs-lookup"><span data-stu-id="39bec-120">**Note:** Custom columns are optional.</span></span>
 
-<span data-ttu-id="8c1e3-121">除了此处指定的任何列，还使用引用的**模板**中定义的列创建新列表。</span><span class="sxs-lookup"><span data-stu-id="8c1e3-121">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
-<span data-ttu-id="8c1e3-122">如果未指定 **list** facet 或**模板**，则列表默认为 `genericList` 模板，其中包括“标题”__ 列。</span><span class="sxs-lookup"><span data-stu-id="8c1e3-122">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
+<span data-ttu-id="39bec-121">除了此处指定的任何列，还使用引用的**模板**中定义的列创建新列表。</span><span class="sxs-lookup"><span data-stu-id="39bec-121">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
+<span data-ttu-id="39bec-122">如果未指定 **list** facet 或**模板**，则列表默认为 `genericList` 模板，其中包括“标题”__ 列。</span><span class="sxs-lookup"><span data-stu-id="39bec-122">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8c1e3-123">响应</span><span class="sxs-lookup"><span data-stu-id="8c1e3-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="39bec-123">响应</span><span class="sxs-lookup"><span data-stu-id="39bec-123">Response</span></span>
 
-<span data-ttu-id="8c1e3-124">如果成功，此方法在创建列表的响应正文中返回 [list][]。</span><span class="sxs-lookup"><span data-stu-id="8c1e3-124">If successful, this method returns a [list][] in the response body for the created list.</span></span>
+<span data-ttu-id="39bec-124">如果成功，此方法在创建列表的响应正文中返回 [list][]。</span><span class="sxs-lookup"><span data-stu-id="39bec-124">If successful, this method returns a [list][] in the response body for the created list.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
@@ -100,16 +102,20 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="8c1e3-125">**注意：** 为清楚起见，将截断 Response 对象。</span><span class="sxs-lookup"><span data-stu-id="8c1e3-125">**Note:** The response object is truncated for clarity.</span></span>
-<span data-ttu-id="8c1e3-126">实际调用会返回默认属性。</span><span class="sxs-lookup"><span data-stu-id="8c1e3-126">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="39bec-125">**注意：** 为清楚起见，将截断 Response 对象。</span><span class="sxs-lookup"><span data-stu-id="39bec-125">**Note:** The response object is truncated for clarity.</span></span>
+<span data-ttu-id="39bec-126">实际调用会返回默认属性。</span><span class="sxs-lookup"><span data-stu-id="39bec-126">Default properties will be returned from the actual call.</span></span>
 
 [list]: ../resources/list.md
+[网站]: ../resources/site.md
 [site]: ../resources/site.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create"
-} -->
+  "tocPath": "List/Create",
+  "suppressions": []
+}
+-->
