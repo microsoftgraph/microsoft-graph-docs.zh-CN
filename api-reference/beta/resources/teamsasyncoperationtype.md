@@ -27,11 +27,3 @@ ms.locfileid: "32553636"
 |<span data-ttu-id="b661e-120">unarchiveTeam</span><span class="sxs-lookup"><span data-stu-id="b661e-120">unarchiveTeam</span></span>|<span data-ttu-id="b661e-121">3 </span><span class="sxs-lookup"><span data-stu-id="b661e-121">3</span></span>|<span data-ttu-id="b661e-122">还原存档团队的操作。</span><span class="sxs-lookup"><span data-stu-id="b661e-122">Operation to restore an archived team.</span></span>|
 |<span data-ttu-id="b661e-123">createTeam</span><span class="sxs-lookup"><span data-stu-id="b661e-123">createTeam</span></span>|<span data-ttu-id="b661e-124">3 </span><span class="sxs-lookup"><span data-stu-id="b661e-124">3</span></span>|<span data-ttu-id="b661e-125">从头开始创建团队的操作。</span><span class="sxs-lookup"><span data-stu-id="b661e-125">Operation to create a team from scratch.</span></span>|
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsasyncoperationtype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
