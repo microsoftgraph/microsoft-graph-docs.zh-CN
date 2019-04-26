@@ -5,51 +5,51 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 19674e2c3ce10ee7cccef3e0c45a445827a5fb2b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956967"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569709"
 ---
-# <a name="worksheetprotection-unprotect"></a><span data-ttu-id="ce824-103">WorksheetProtection: unprotect</span><span class="sxs-lookup"><span data-stu-id="ce824-103">WorksheetProtection: unprotect</span></span>
+# <a name="worksheetprotection-unprotect"></a><span data-ttu-id="51848-103">WorksheetProtection: unprotect</span><span class="sxs-lookup"><span data-stu-id="51848-103">WorksheetProtection: unprotect</span></span>
 
-<span data-ttu-id="ce824-104">解除工作表保护</span><span class="sxs-lookup"><span data-stu-id="ce824-104">Unprotect a worksheet</span></span>
-## <a name="permissions"></a><span data-ttu-id="ce824-105">权限</span><span class="sxs-lookup"><span data-stu-id="ce824-105">Permissions</span></span>
-<span data-ttu-id="ce824-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ce824-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="51848-104">解除工作表保护</span><span class="sxs-lookup"><span data-stu-id="51848-104">Unprotect a worksheet</span></span>
+## <a name="permissions"></a><span data-ttu-id="51848-105">权限</span><span class="sxs-lookup"><span data-stu-id="51848-105">Permissions</span></span>
+<span data-ttu-id="51848-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="51848-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ce824-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ce824-108">Permission type</span></span>      | <span data-ttu-id="ce824-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ce824-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="51848-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="51848-108">Permission type</span></span>      | <span data-ttu-id="51848-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="51848-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ce824-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ce824-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ce824-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ce824-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="ce824-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ce824-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce824-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="ce824-113">Not supported.</span></span>    |
-|<span data-ttu-id="ce824-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ce824-114">Application</span></span> | <span data-ttu-id="ce824-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ce824-115">Not supported.</span></span> |
+|<span data-ttu-id="51848-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="51848-110">Delegated (work or school account)</span></span> | <span data-ttu-id="51848-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="51848-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="51848-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="51848-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="51848-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="51848-113">Not supported.</span></span>    |
+|<span data-ttu-id="51848-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="51848-114">Application</span></span> | <span data-ttu-id="51848-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="51848-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ce824-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ce824-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="51848-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="51848-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/protection/unprotect
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ce824-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="ce824-117">Request headers</span></span>
-| <span data-ttu-id="ce824-118">名称</span><span class="sxs-lookup"><span data-stu-id="ce824-118">Name</span></span>       | <span data-ttu-id="ce824-119">说明</span><span class="sxs-lookup"><span data-stu-id="ce824-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="51848-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="51848-117">Request headers</span></span>
+| <span data-ttu-id="51848-118">名称</span><span class="sxs-lookup"><span data-stu-id="51848-118">Name</span></span>       | <span data-ttu-id="51848-119">说明</span><span class="sxs-lookup"><span data-stu-id="51848-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="ce824-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce824-120">Authorization</span></span>  | <span data-ttu-id="ce824-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ce824-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ce824-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ce824-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="ce824-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="ce824-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="51848-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="51848-120">Authorization</span></span>  | <span data-ttu-id="51848-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="51848-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="51848-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="51848-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="51848-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="51848-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ce824-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ce824-126">Request body</span></span>
-<span data-ttu-id="ce824-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="ce824-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="51848-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="51848-126">Request body</span></span>
+<span data-ttu-id="51848-127">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="51848-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="ce824-128">参数</span><span class="sxs-lookup"><span data-stu-id="ce824-128">Parameter</span></span>    | <span data-ttu-id="ce824-129">类型</span><span class="sxs-lookup"><span data-stu-id="ce824-129">Type</span></span>   |<span data-ttu-id="ce824-130">说明</span><span class="sxs-lookup"><span data-stu-id="ce824-130">Description</span></span>|
+| <span data-ttu-id="51848-128">参数</span><span class="sxs-lookup"><span data-stu-id="51848-128">Parameter</span></span>    | <span data-ttu-id="51848-129">类型</span><span class="sxs-lookup"><span data-stu-id="51848-129">Type</span></span>   |<span data-ttu-id="51848-130">说明</span><span class="sxs-lookup"><span data-stu-id="51848-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ce824-131">password</span><span class="sxs-lookup"><span data-stu-id="ce824-131">password</span></span>|<span data-ttu-id="ce824-132">string</span><span class="sxs-lookup"><span data-stu-id="ce824-132">string</span></span>|<span data-ttu-id="ce824-p104">可选。工作表保护密码。</span><span class="sxs-lookup"><span data-stu-id="ce824-p104">Optional. sheet protection password.</span></span>|
+|<span data-ttu-id="51848-131">password</span><span class="sxs-lookup"><span data-stu-id="51848-131">password</span></span>|<span data-ttu-id="51848-132">string</span><span class="sxs-lookup"><span data-stu-id="51848-132">string</span></span>|<span data-ttu-id="51848-p104">可选。工作表保护密码。</span><span class="sxs-lookup"><span data-stu-id="51848-p104">Optional. sheet protection password.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="ce824-135">响应</span><span class="sxs-lookup"><span data-stu-id="ce824-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="51848-135">响应</span><span class="sxs-lookup"><span data-stu-id="51848-135">Response</span></span>
 
-<span data-ttu-id="ce824-p105">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="ce824-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="51848-p105">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="51848-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ce824-138">示例</span><span class="sxs-lookup"><span data-stu-id="ce824-138">Example</span></span>
-<span data-ttu-id="ce824-139">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="ce824-139">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="ce824-140">请求</span><span class="sxs-lookup"><span data-stu-id="ce824-140">Request</span></span>
-<span data-ttu-id="ce824-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ce824-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="51848-138">示例</span><span class="sxs-lookup"><span data-stu-id="51848-138">Example</span></span>
+<span data-ttu-id="51848-139">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="51848-139">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="51848-140">请求</span><span class="sxs-lookup"><span data-stu-id="51848-140">Request</span></span>
+<span data-ttu-id="51848-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="51848-141">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "worksheetprotection_unprotect"
@@ -64,8 +64,8 @@ Content-length: 34
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="ce824-142">响应</span><span class="sxs-lookup"><span data-stu-id="ce824-142">Response</span></span>
-<span data-ttu-id="ce824-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="ce824-143">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="51848-142">响应</span><span class="sxs-lookup"><span data-stu-id="51848-142">Response</span></span>
+<span data-ttu-id="51848-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="51848-143">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
