@@ -4,14 +4,16 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 图像
 localization_priority: Normal
-ms.openlocfilehash: b9b8e65442b268e58f920d9b08b60ae8de35df35
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a817f5b91c71d186fde1ae1ea0600b9645fe8a66
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506323"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339979"
 ---
 # <a name="image-resource-type"></a>图像资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **图像**资源将与图像相关的属性分组到一个单一结构。如果 [**DriveItem**](driveitem.md)具有一个非 null **图像**方面，则该项表示一个位图图像。
 
@@ -41,10 +43,13 @@ ms.locfileid: "32506323"
 有关 DriveItem 上 Facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The image facet describes properties of an image like width and height",
   "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/Image"
-} -->
+  "tocPath": "Facets/Image",
+  "suppressions": []
+}
+-->

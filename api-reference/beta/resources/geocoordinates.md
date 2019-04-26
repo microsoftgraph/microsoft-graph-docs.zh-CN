@@ -4,14 +4,16 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
-ms.openlocfilehash: 221037578e055e5bb57987058a190bc3026b3e0c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 39764148ce1a2d42226aafc24ef17ad1e5f19027
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506328"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340218"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **GeoCoordinates** 资源基于文件中包含的元数据提供位置的地理坐标和海拔。如果 [**DriveItem**](driveitem.md) 具有一个非 null **位置**方面，则该项表示一个已知位置和与其相关的文件。
 
@@ -47,10 +49,13 @@ ms.locfileid: "32506328"
 
 有关 DriveItem 上 facet 的详细信息，请参阅 [DriveItem](driveitem.md)。
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The location facet provides geographic location related properties for an item",
   "keywords": "location,geographic,item,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Location"
-} -->
+  "tocPath": "Facets/Location",
+  "suppressions": []
+}
+-->
