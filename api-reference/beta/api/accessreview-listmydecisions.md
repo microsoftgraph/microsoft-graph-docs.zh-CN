@@ -4,12 +4,12 @@ description: 在 "Azure AD 访问评论" 功能中, 检索 accessReview 对象�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e19e3b0581c995f1b0ef52369d3a3e7545696d1c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a89e611b12c9aac8006c030e264cfd3514845ea0
+ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459449"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33299631"
 ---
 # <a name="list-my-accessreview-decisions"></a>列出我的 accessReview 决策
 
@@ -21,9 +21,11 @@ ms.locfileid: "32459449"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  登录用户还必须允许用户阅读此特定访问评审。 |
+|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有   |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
+
+登录用户还必须允许用户阅读此特定访问评审。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ GET /accessReviews('{reviewId}')/myDecisions
   "name": "get_accessReview_decisions"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fec466a82d')/myDecisions
+GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/myDecisions
 ```
 
 ##### <a name="response"></a>响应
@@ -92,8 +94,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/accessreview-listmydecisions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -11,6 +11,8 @@ ms.locfileid: "32574741"
 ---
 # <a name="customtimezone-resource-type"></a>customTimeZone 资源类型
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 表示从标准时间到夏令时的切换不标准（反之亦然）的时区。
 
 
@@ -32,7 +34,6 @@ ms.locfileid: "32574741"
   "optionalProperties": [
 
   ],
-  "baseType": "microsoft.graph.timeZoneBase",
   "@odata.type": "microsoft.graph.customTimeZone"
 }-->
 
@@ -48,10 +49,13 @@ ms.locfileid: "32574741"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "customTimeZone resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

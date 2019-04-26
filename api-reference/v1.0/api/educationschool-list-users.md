@@ -5,13 +5,15 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 1889dfd19ab5ef461cccff5a2dc0103fce79cb29
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927581"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550271"
 ---
 # <a name="list-educationusers"></a>列出 educationUsers
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索学校中的用户列表。
 
@@ -49,7 +51,7 @@ GET /education/schools/{id}/users
   "name": "get_users"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/users
+GET https://graph.microsoft.com/beta/education/schools/10002/users
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -106,10 +108,13 @@ Content-length: 593
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List users",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,27 +1,27 @@
 ---
 title: alertTrigger 资源类型
-description: 包含有关触发检测属性的信息 （警报实体中存在属性）。
+description: 包含有关触发检测的属性 (警报实体中存在属性) 的信息。
 author: preetikr
 localization_priority: Normal
 ms.prod: security
 ms.openlocfilehash: 3a2f6818bad0c5600e4b2a2a2682707643d1900c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991256"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569464"
 ---
 # <a name="alerttrigger-resource-type"></a>alertTrigger 资源类型
 
-包含有关触发检测属性的信息 （警报实体中存在属性）。
+包含有关触发检测的属性 (警报实体中存在属性) 的信息。
 
 ## <a name="properties"></a>属性
 
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
-|name|字符串|充当检测触发器属性的名称。|
-|type|字符串|用于解释： 键值对中属性的类型。 例如，String、 Boolean、 等。|
-|值|字符串|充当检测触发器属性的值。|
+|name|字符串|充当检测触发器的属性的名称。|
+|type|String|用于解释的键: 值对中的属性的类型。 例如, String、Boolean 等。|
+|value|String|充当检测触发器的属性的值。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

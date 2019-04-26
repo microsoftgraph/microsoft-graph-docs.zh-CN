@@ -1,15 +1,15 @@
 ---
 title: Add attachment
-description: 使用此 API 附件添加到事件。 相那里
+description: 使用此 API 将 附件 添加到事件。 由于存在
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cd295ba9b80bbbfcbdf4c6f7bebe95e8b0e4bfcb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990290"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584311"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -24,7 +24,7 @@ ms.locfileid: "27990290"
 |应用程序 | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-[事件](../resources/event.md)在用户的默认[日历](../resources/calendar.md)中的附件。
+用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)的附件。
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -58,7 +58,7 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/at
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |

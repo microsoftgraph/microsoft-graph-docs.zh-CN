@@ -3,11 +3,11 @@ title: servicePrincipal 资源类型
 description: 表示目录中的一个应用程序实例。 继承自 directoryObject。
 localization_priority: Priority
 ms.openlocfilehash: cd0ac4d440b2e10f935c02393419754989394816
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641153"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571861"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -34,7 +34,8 @@ ms.locfileid: "29641153"
     "ownedObjects",
     "owners"
   ],
-  "@odata.type": "microsoft.graph.serviceprincipal"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.servicePrincipal"
 }-->
 
 ```json
@@ -58,7 +59,8 @@ ms.locfileid: "29641153"
   "replyUrls": ["string"],
   "samlMetadataUrl": "string",
   "servicePrincipalNames": ["string"],
-  "tags": ["string"]
+  "tags": ["string"],
+  "appRoles": [{"@odata.type": "microsoft.graph.appRole"}]
 }
 
 ```
@@ -129,8 +131,6 @@ ms.locfileid: "29641153"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/serviceprincipal.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

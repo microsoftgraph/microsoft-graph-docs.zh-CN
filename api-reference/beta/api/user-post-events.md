@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: fa63bae39c0e30c34a22dcfc91a7f0e7db528f58
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508942"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536458"
 ---
 # <a name="create-event"></a>创建事件
 
@@ -78,7 +78,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 
 ## <a name="example"></a>示例
 ##### <a name="request-1"></a>请求 1
-下面展示了示例请求。 它使用 `Prefer: outlook.timezone` 请求头指定响应中**开始**时间和**结束**时间的时区。
+下面是一个请求示例。 它使用 `Prefer: outlook.timezone` 请求头指定响应中**开始**时间和**结束**时间的时区。
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -120,7 +120,7 @@ Content-length: 600
 在请求正文中，提供 JSON 表示形式的 [event](../resources/event.md) 对象。
 ##### <a name="response-1"></a>响应 1
 下面是一个响应示例，显示 **start** 和 **end** 属性使用 `Prefer: outlook.timezone` 标头中指定的时区。
-注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -217,7 +217,7 @@ Content-length: 2197
 ##### <a name="request-2"></a>请求 2
 下一个示例请求指定组织者和与会者可参加会议的 3 个地点。
 
-在请求正文中，提供 JSON 表示形式的 [event](../resources/event.md) 对象。
+在请求正文中，提供 [event](../resources/event.md) 对象的 JSON 表示形式。
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user_multiple_locations"
@@ -290,7 +290,7 @@ Content-length: 1390
 
 ##### <a name="response-2"></a>响应 2
 以下示例响应显示指定 3 个会议地点信息的已创建事件。 由于 `Prefer: outlook.timezone="Pacific Standard Time"` 请求标头，**start** 和 **end** 属性以 PST 表示。
-注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
+注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -601,8 +601,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-post-events.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

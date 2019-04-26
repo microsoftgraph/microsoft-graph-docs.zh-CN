@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 212bafa99a51e269716978cafa4fcf274dd76579
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797898"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572022"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>windows10VpnProxyServer 资源类型
 
@@ -28,7 +28,7 @@ VPN 代理服务器。
 |automaticConfigurationScriptUrl|String|代理的自动配置脚本 url。 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|处理. 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |端口|Int32|端口. 从[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)继承的有效值为0至65535|
-|bypassProxyServerForLocalAddress|布尔值|对本地地址绕过代理服务器。|
+|bypassProxyServerForLocalAddress|Boolean|对本地地址绕过代理服务器。|
 
 ## <a name="relationships"></a>关系
 无

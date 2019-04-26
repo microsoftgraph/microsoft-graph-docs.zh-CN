@@ -1,35 +1,35 @@
 ---
 title: groupSettingTemplate 资源类型
-description: 组设置模板表示租户可用的系统定义设置。组设置可根据可用的 **groupSettingTemplates** 和从其预设默认值更改的值进行创建。无法创建、更新或删除组设置模板。这些设置可以表示租户范围设置，也可以表示特定组设置。目前，唯一可用的模板可应用于 Office 365 组，并且包括诸如用户是否可以创建组或邀请来自组织外的来宾成为组成员的设置。
+description: 组设置模板表示对租户可用的系统定义设置。 可以基于可用的**groupSettingTemplates**创建组设置, 并将值更改为其预设默认值。 无法创建、更新或删除组设置模板。 这些设置可以表示租户范围的设置, 也可以表示特定的组设置。 目前, 仅有的可用模板适用于 Office 365 组, 并包括一些设置, 例如, 用户是否可以创建组或邀请来自组织外部的来宾成为组的成员。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2b9b95303b72bc111f045010e71459f541e9a9b8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919335"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570790"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>groupSettingTemplate 资源类型
 
-组设置模板表示租户可用的系统定义设置。[组设置](groupsetting.md)可根据可用的 **groupSettingTemplates** 和从其预设默认值更改的值进行创建。无法创建、更新或删除组设置模板。这些设置可以表示租户范围设置，也可以表示特定组设置。目前，唯一可用的模板可应用于 Office 365 组，并且包括诸如用户是否可以创建组或邀请来自组织外的来宾成为组成员的设置。
+组设置模板表示对租户可用的系统定义设置。 可以基于可用的**groupSettingTemplates**创建[组设置](groupsetting.md), 并将值更改为其预设默认值。 无法创建、更新或删除组设置模板。 这些设置可以表示租户范围的设置, 也可以表示特定的组设置。 目前, 仅有的可用模板适用于 Office 365 组, 并包括一些设置, 例如, 用户是否可以创建组或邀请来自组织外部的来宾成为组的成员。
 
 ## <a name="methods"></a>方法
 
 | 方法 | 返回类型 | 说明 |
 |:---------------|:--------|:----------|
-|[Get groupSettingTemplate](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | 读取其中一个系统定义的 groupSettingTemplate 对象的特定属性。 |
-|[List groupSettingTemplate](../api/groupsettingtemplate-list.md) | [groupSettingTemplate 集合](groupsettingtemplate.md) |列出所有系统定义的 groupSettingTemplate 对象。|
+|[获取 groupSettingTemplate](../api/groupsettingtemplate-get.md) | [groupSettingTemplate](groupsettingtemplate.md) | 读取某个系统定义的 groupSettingTemplate 对象的特定属性。 |
+|[列出 groupSettingTemplate](../api/groupsettingtemplate-list.md) | [groupSettingTemplate 的集合](groupsettingtemplate.md) |列出所有系统定义的 groupSettingTemplate 对象。|
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|说明|字符串| 模板描述 |
-|displayName|字符串| 模板的显示名称 |
-|id|字符串| 模板的的唯一标识符。只读。|
-|values|[settingTemplateValue](settingtemplatevalue.md) 集合| setTemplateValues 的集合，列出组成此模板的一组可用设置、默认值和类型。 |
+|说明|String| 模板的说明。 |
+|displayName|String| 模板的显示名称。 |
+|id|字符串| 模板的唯一标识符。 只读。|
+|值|[settingTemplateValue](settingtemplatevalue.md)集合| settemplatevalues 的集合, 该集合列出了组成此模板的可用设置、默认值和类型的集合。 |
 
 ## <a name="relationships"></a>关系
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1da569d7050e88dd5eb41640bc2d8eaa602bb2b7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781279"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556219"
 ---
 # <a name="emailsyncschedule-enum-type"></a>emailSyncSchedule 枚举类型
 
@@ -24,11 +24,11 @@ ms.locfileid: "31781279"
 |:---|:---|:---|
 |定制|0|用户定义, 默认值, 无意向。|
 |asMessagesArrive|1|邮件到达时同步。|
-|手动|双面|手动同步。|
-|fifteenMinutes|第三章|每十五分钟同步一次。|
-|thirtyMinutes|4|每三十分钟同步一次。|
-|sixtyMinutes|5|每60分钟同步一次。|
-|basedOnMyUsage|型|根据我的使用情况进行同步。|
+|手动|2 |手动同步。|
+|fifteenMinutes|3 |每十五分钟同步一次。|
+|thirtyMinutes|4 |每三十分钟同步一次。|
+|sixtyMinutes|5 |每60分钟同步一次。|
+|basedOnMyUsage|6 |根据我的使用情况进行同步。|
 
 
 

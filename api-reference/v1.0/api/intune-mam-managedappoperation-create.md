@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 354795b68992307d27189d0edaa9088509d710c8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965282"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571154"
 ---
 # <a name="create-managedappoperation"></a>创建 managedAppOperation
 
@@ -51,7 +51,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 |displayName|String|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
 |state|String|操作的当前状态|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |version|String|实体的版本。|
 
 

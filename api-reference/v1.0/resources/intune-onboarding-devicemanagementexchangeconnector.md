@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 172a8ae7bbdbad77da9b7a67d57047441e5a039d
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262606"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583982"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>deviceManagementExchangeConnector 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "30262606"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|尚未记录|
+|id|String|尚未记录|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector 的上一次同步时间|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector 状态。 可取值为：`none`、`connectionPending`、`connected`、`disconnected`。|
 |primarySmtpAddress|String|用于配置服务到服务 Exchange Connector 的电子邮件地址。|
