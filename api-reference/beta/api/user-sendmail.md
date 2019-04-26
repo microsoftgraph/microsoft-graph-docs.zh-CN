@@ -4,67 +4,67 @@ description: 发送请求正文中指定的邮件。默认情况下，邮件保�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 47cdb200f7de493c6fcc83b3d77be2af1824ef65
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 83dd38a628fbdb932620a45e775f24d8ea5217f1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536465"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329863"
 ---
-# <a name="send-mail"></a><span data-ttu-id="361bf-104">发送邮件</span><span class="sxs-lookup"><span data-stu-id="361bf-104">Send mail</span></span>
+# <a name="send-mail"></a><span data-ttu-id="83e57-104">发送邮件</span><span class="sxs-lookup"><span data-stu-id="83e57-104">Send mail</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="361bf-p102">发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。</span><span class="sxs-lookup"><span data-stu-id="361bf-p102">Send the message specified in the request body. The message is saved in the Sent Items folder by default.</span></span>
+<span data-ttu-id="83e57-p102">发送请求正文中指定的邮件。默认情况下，邮件保存在“已发送邮件”文件夹中。</span><span class="sxs-lookup"><span data-stu-id="83e57-p102">Send the message specified in the request body. The message is saved in the Sent Items folder by default.</span></span>
 
-<span data-ttu-id="361bf-107">在同一**sendMail**操作调用中, 可以执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="361bf-107">In the same **sendMail** action call, you can:</span></span>
+<span data-ttu-id="83e57-107">在同一**sendMail**操作调用中, 可以执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="83e57-107">In the same **sendMail** action call, you can:</span></span>
 
-- <span data-ttu-id="361bf-108">包含[附件](../resources/attachment.md)</span><span class="sxs-lookup"><span data-stu-id="361bf-108">Include an [attachment](../resources/attachment.md)</span></span>
-- <span data-ttu-id="361bf-109">在新邮件中使用[提及](../resources/mention.md)调用其他用户</span><span class="sxs-lookup"><span data-stu-id="361bf-109">Use a [mention](../resources/mention.md) to call out another user in the new message</span></span>
+- <span data-ttu-id="83e57-108">包含[附件](../resources/attachment.md)</span><span class="sxs-lookup"><span data-stu-id="83e57-108">Include an [attachment](../resources/attachment.md)</span></span>
+- <span data-ttu-id="83e57-109">在新邮件中使用[提及](../resources/mention.md)调用其他用户</span><span class="sxs-lookup"><span data-stu-id="83e57-109">Use a [mention](../resources/mention.md) to call out another user in the new message</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="361bf-110">权限</span><span class="sxs-lookup"><span data-stu-id="361bf-110">Permissions</span></span>
-<span data-ttu-id="361bf-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="361bf-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="83e57-110">权限</span><span class="sxs-lookup"><span data-stu-id="83e57-110">Permissions</span></span>
+<span data-ttu-id="83e57-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="83e57-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="361bf-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="361bf-113">Permission type</span></span>      | <span data-ttu-id="361bf-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="361bf-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="83e57-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="83e57-113">Permission type</span></span>      | <span data-ttu-id="83e57-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="83e57-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="361bf-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="361bf-115">Delegated (work or school account)</span></span> | <span data-ttu-id="361bf-116">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="361bf-116">Mail.Send</span></span>    |
-|<span data-ttu-id="361bf-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="361bf-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="361bf-118">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="361bf-118">Mail.Send</span></span>    |
-|<span data-ttu-id="361bf-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="361bf-119">Application</span></span> | <span data-ttu-id="361bf-120">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="361bf-120">Mail.Send</span></span> |
+|<span data-ttu-id="83e57-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="83e57-115">Delegated (work or school account)</span></span> | <span data-ttu-id="83e57-116">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="83e57-116">Mail.Send</span></span>    |
+|<span data-ttu-id="83e57-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="83e57-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="83e57-118">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="83e57-118">Mail.Send</span></span>    |
+|<span data-ttu-id="83e57-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="83e57-119">Application</span></span> | <span data-ttu-id="83e57-120">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="83e57-120">Mail.Send</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="361bf-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="361bf-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="83e57-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="83e57-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
-## <a name="request-headers"></a><span data-ttu-id="361bf-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="361bf-122">Request headers</span></span>
-| <span data-ttu-id="361bf-123">标头</span><span class="sxs-lookup"><span data-stu-id="361bf-123">Header</span></span>       | <span data-ttu-id="361bf-124">值</span><span class="sxs-lookup"><span data-stu-id="361bf-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="83e57-122">请求标头</span><span class="sxs-lookup"><span data-stu-id="83e57-122">Request headers</span></span>
+| <span data-ttu-id="83e57-123">标头</span><span class="sxs-lookup"><span data-stu-id="83e57-123">Header</span></span>       | <span data-ttu-id="83e57-124">值</span><span class="sxs-lookup"><span data-stu-id="83e57-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="361bf-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="361bf-125">Authorization</span></span>  | <span data-ttu-id="361bf-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="361bf-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="361bf-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="361bf-128">Content-Type</span></span>  | <span data-ttu-id="361bf-129">application/json</span><span class="sxs-lookup"><span data-stu-id="361bf-129">application/json</span></span>  |
+| <span data-ttu-id="83e57-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="83e57-125">Authorization</span></span>  | <span data-ttu-id="83e57-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="83e57-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="83e57-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="83e57-128">Content-Type</span></span>  | <span data-ttu-id="83e57-129">application/json</span><span class="sxs-lookup"><span data-stu-id="83e57-129">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="361bf-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="361bf-130">Request body</span></span>
-<span data-ttu-id="361bf-131">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="361bf-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="83e57-130">请求正文</span><span class="sxs-lookup"><span data-stu-id="83e57-130">Request body</span></span>
+<span data-ttu-id="83e57-131">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="83e57-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="361bf-132">参数</span><span class="sxs-lookup"><span data-stu-id="361bf-132">Parameter</span></span>    | <span data-ttu-id="361bf-133">类型</span><span class="sxs-lookup"><span data-stu-id="361bf-133">Type</span></span>   |<span data-ttu-id="361bf-134">说明</span><span class="sxs-lookup"><span data-stu-id="361bf-134">Description</span></span>|
+| <span data-ttu-id="83e57-132">参数</span><span class="sxs-lookup"><span data-stu-id="83e57-132">Parameter</span></span>    | <span data-ttu-id="83e57-133">类型</span><span class="sxs-lookup"><span data-stu-id="83e57-133">Type</span></span>   |<span data-ttu-id="83e57-134">说明</span><span class="sxs-lookup"><span data-stu-id="83e57-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="361bf-135">邮件</span><span class="sxs-lookup"><span data-stu-id="361bf-135">Message</span></span>|[<span data-ttu-id="361bf-136">Message</span><span class="sxs-lookup"><span data-stu-id="361bf-136">Message</span></span>](../resources/message.md)|<span data-ttu-id="361bf-p105">要发送的邮件。必需。</span><span class="sxs-lookup"><span data-stu-id="361bf-p105">The message to send. Required.</span></span>|
-|<span data-ttu-id="361bf-139">SaveToSentItems</span><span class="sxs-lookup"><span data-stu-id="361bf-139">SaveToSentItems</span></span>|<span data-ttu-id="361bf-140">Boolean</span><span class="sxs-lookup"><span data-stu-id="361bf-140">Boolean</span></span>|<span data-ttu-id="361bf-p106">指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。</span><span class="sxs-lookup"><span data-stu-id="361bf-p106">Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.</span></span>|
+|<span data-ttu-id="83e57-135">邮件</span><span class="sxs-lookup"><span data-stu-id="83e57-135">Message</span></span>|[<span data-ttu-id="83e57-136">Message</span><span class="sxs-lookup"><span data-stu-id="83e57-136">Message</span></span>](../resources/message.md)|<span data-ttu-id="83e57-p105">要发送的邮件。必需。</span><span class="sxs-lookup"><span data-stu-id="83e57-p105">The message to send. Required.</span></span>|
+|<span data-ttu-id="83e57-139">SaveToSentItems</span><span class="sxs-lookup"><span data-stu-id="83e57-139">SaveToSentItems</span></span>|<span data-ttu-id="83e57-140">Boolean</span><span class="sxs-lookup"><span data-stu-id="83e57-140">Boolean</span></span>|<span data-ttu-id="83e57-p106">指示是否将邮件保存在“已发送邮件”文件夹中。仅在该参数为 false 时指定它。默认值为 true。可选。</span><span class="sxs-lookup"><span data-stu-id="83e57-p106">Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.</span></span>|
 
-<span data-ttu-id="361bf-144">如果要使用**提及**在新邮件中呼叫其他用户, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="361bf-144">If you want to use **mention** to call out another user in the new message:</span></span>
+<span data-ttu-id="83e57-144">如果要使用**提及**在新邮件中呼叫其他用户, 请执行以下操作:</span><span class="sxs-lookup"><span data-stu-id="83e57-144">If you want to use **mention** to call out another user in the new message:</span></span>
 
-- <span data-ttu-id="361bf-145">在请求正文中包括所需的**toRecipients**属性、**提及**属性和任何可写邮件属性。</span><span class="sxs-lookup"><span data-stu-id="361bf-145">Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.</span></span>
-- <span data-ttu-id="361bf-146">对于**提及**属性中的每个提及, 您必须指定**提到**的属性。</span><span class="sxs-lookup"><span data-stu-id="361bf-146">For each mention in the **mentions** property, you must specify the **mentioned** property.</span></span>
+- <span data-ttu-id="83e57-145">在请求正文中包括所需的**toRecipients**属性、**提及**属性和任何可写邮件属性。</span><span class="sxs-lookup"><span data-stu-id="83e57-145">Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.</span></span>
+- <span data-ttu-id="83e57-146">对于**提及**属性中的每个提及, 您必须指定**提到**的属性。</span><span class="sxs-lookup"><span data-stu-id="83e57-146">For each mention in the **mentions** property, you must specify the **mentioned** property.</span></span>
 
-## <a name="response"></a><span data-ttu-id="361bf-147">响应</span><span class="sxs-lookup"><span data-stu-id="361bf-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="83e57-147">响应</span><span class="sxs-lookup"><span data-stu-id="83e57-147">Response</span></span>
 
-<span data-ttu-id="361bf-p107">如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="361bf-p107">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="83e57-p107">如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="83e57-p107">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="361bf-150">示例</span><span class="sxs-lookup"><span data-stu-id="361bf-150">Example</span></span>
-<span data-ttu-id="361bf-151">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="361bf-151">Here is an example of how to call this API.</span></span>
-##### <a name="request-1"></a><span data-ttu-id="361bf-152">请求 1</span><span class="sxs-lookup"><span data-stu-id="361bf-152">Request 1</span></span>
-<span data-ttu-id="361bf-153">下面的示例展示了在即时创建和发送邮件的请求。</span><span class="sxs-lookup"><span data-stu-id="361bf-153">Here is an example of the request to create and send a message on the fly.</span></span>
+## <a name="example"></a><span data-ttu-id="83e57-150">示例</span><span class="sxs-lookup"><span data-stu-id="83e57-150">Example</span></span>
+<span data-ttu-id="83e57-151">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="83e57-151">Here is an example of how to call this API.</span></span>
+##### <a name="request-1"></a><span data-ttu-id="83e57-152">请求 1</span><span class="sxs-lookup"><span data-stu-id="83e57-152">Request 1</span></span>
+<span data-ttu-id="83e57-153">下面的示例展示了在即时创建和发送邮件的请求。</span><span class="sxs-lookup"><span data-stu-id="83e57-153">Here is an example of the request to create and send a message on the fly.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -100,8 +100,8 @@ Content-length: 512
 }
 ```
 
-##### <a name="response-1"></a><span data-ttu-id="361bf-154">响应 1</span><span class="sxs-lookup"><span data-stu-id="361bf-154">Response 1</span></span>
-<span data-ttu-id="361bf-155">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="361bf-155">Here is an example of the response.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="83e57-154">响应 1</span><span class="sxs-lookup"><span data-stu-id="83e57-154">Response 1</span></span>
+<span data-ttu-id="83e57-155">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="83e57-155">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -111,8 +111,8 @@ HTTP/1.1 202 Accepted
 ```
 
 
-##### <a name="request-2"></a><span data-ttu-id="361bf-156">请求 2</span><span class="sxs-lookup"><span data-stu-id="361bf-156">Request 2</span></span>
-<span data-ttu-id="361bf-157">下一个示例显示了登录用户 Samantha 展台的邮件。</span><span class="sxs-lookup"><span data-stu-id="361bf-157">The next example shows a message by the signed-in user to Samantha Booth.</span></span> <span data-ttu-id="361bf-158">此外, 该消息还包括其他用户 Dana Swope。</span><span class="sxs-lookup"><span data-stu-id="361bf-158">The message also includes a mention of another user, Dana Swope.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="83e57-156">请求 2</span><span class="sxs-lookup"><span data-stu-id="83e57-156">Request 2</span></span>
+<span data-ttu-id="83e57-157">下一个示例显示了登录用户 Samantha 展台的邮件。</span><span class="sxs-lookup"><span data-stu-id="83e57-157">The next example shows a message by the signed-in user to Samantha Booth.</span></span> <span data-ttu-id="83e57-158">此外, 该消息还包括其他用户 Dana Swope。</span><span class="sxs-lookup"><span data-stu-id="83e57-158">The message also includes a mention of another user, Dana Swope.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_mentions"
@@ -145,8 +145,8 @@ Content-length: 344
 }
 ```
 
-##### <a name="response-2"></a><span data-ttu-id="361bf-159">响应 2</span><span class="sxs-lookup"><span data-stu-id="361bf-159">Response 2</span></span>
-<span data-ttu-id="361bf-160">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="361bf-160">Here is an example of the response.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="83e57-159">响应 2</span><span class="sxs-lookup"><span data-stu-id="83e57-159">Response 2</span></span>
+<span data-ttu-id="83e57-160">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="83e57-160">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -155,8 +155,8 @@ Content-length: 344
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="request-3"></a><span data-ttu-id="361bf-161">请求 3</span><span class="sxs-lookup"><span data-stu-id="361bf-161">Request 3</span></span>
-<span data-ttu-id="361bf-162">以下示例将创建一个带 Internet 消息标头的消息并进行发送。</span><span class="sxs-lookup"><span data-stu-id="361bf-162">The next example creates a message with custom Internet message headers and sends the message.</span></span>
+##### <a name="request-3"></a><span data-ttu-id="83e57-161">请求 3</span><span class="sxs-lookup"><span data-stu-id="83e57-161">Request 3</span></span>
+<span data-ttu-id="83e57-162">以下示例将创建一个带 Internet 消息标头的消息并进行发送。</span><span class="sxs-lookup"><span data-stu-id="83e57-162">The next example creates a message with custom Internet message headers and sends the message.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
@@ -193,8 +193,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response-3"></a><span data-ttu-id="361bf-163">响应 3</span><span class="sxs-lookup"><span data-stu-id="361bf-163">Response 3</span></span>
-<span data-ttu-id="361bf-164">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="361bf-164">Here is an example of the response.</span></span>
+##### <a name="response-3"></a><span data-ttu-id="83e57-163">响应 3</span><span class="sxs-lookup"><span data-stu-id="83e57-163">Response 3</span></span>
+<span data-ttu-id="83e57-164">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="83e57-164">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -212,8 +212,6 @@ HTTP/1.1 202 Accepted
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-sendmail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

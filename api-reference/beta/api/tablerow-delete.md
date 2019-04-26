@@ -4,60 +4,60 @@ description: 从表中删除行。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e88cb5ae178f5198e1002149aea01734479e7f0e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3fc9d3f85610bae6bd6a4e62f8380eda3d768a3c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461078"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330287"
 ---
-# <a name="tablerow-delete"></a><span data-ttu-id="8e159-103">TableRow: delete</span><span class="sxs-lookup"><span data-stu-id="8e159-103">TableRow: delete</span></span>
+# <a name="tablerow-delete"></a><span data-ttu-id="d7b61-103">TableRow: delete</span><span class="sxs-lookup"><span data-stu-id="d7b61-103">TableRow: delete</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8e159-104">从表中删除行。</span><span class="sxs-lookup"><span data-stu-id="8e159-104">Deletes the row from the table.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8e159-105">权限</span><span class="sxs-lookup"><span data-stu-id="8e159-105">Permissions</span></span>
-<span data-ttu-id="8e159-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8e159-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d7b61-104">从表中删除行。</span><span class="sxs-lookup"><span data-stu-id="d7b61-104">Deletes the row from the table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d7b61-105">权限</span><span class="sxs-lookup"><span data-stu-id="d7b61-105">Permissions</span></span>
+<span data-ttu-id="d7b61-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="d7b61-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8e159-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="8e159-108">Permission type</span></span>      | <span data-ttu-id="8e159-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8e159-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d7b61-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="d7b61-108">Permission type</span></span>      | <span data-ttu-id="d7b61-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="d7b61-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8e159-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8e159-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8e159-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8e159-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="8e159-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8e159-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8e159-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8e159-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="8e159-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="8e159-114">Application</span></span> | <span data-ttu-id="8e159-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8e159-115">Not supported.</span></span> |
+|<span data-ttu-id="d7b61-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="d7b61-110">Delegated (work or school account)</span></span> | <span data-ttu-id="d7b61-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d7b61-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="d7b61-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="d7b61-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d7b61-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d7b61-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="d7b61-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="d7b61-114">Application</span></span> | <span data-ttu-id="d7b61-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="d7b61-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8e159-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8e159-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d7b61-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="d7b61-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows(<index>)/delete
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/delete
+POST /workbook/tables/{id|name}/rows/{index}/delete
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/delete
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="8e159-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="8e159-117">Request headers</span></span>
-| <span data-ttu-id="8e159-118">名称</span><span class="sxs-lookup"><span data-stu-id="8e159-118">Name</span></span>       | <span data-ttu-id="8e159-119">说明</span><span class="sxs-lookup"><span data-stu-id="8e159-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d7b61-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="d7b61-117">Request headers</span></span>
+| <span data-ttu-id="d7b61-118">名称</span><span class="sxs-lookup"><span data-stu-id="d7b61-118">Name</span></span>       | <span data-ttu-id="d7b61-119">说明</span><span class="sxs-lookup"><span data-stu-id="d7b61-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="8e159-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8e159-120">Authorization</span></span>  | <span data-ttu-id="8e159-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8e159-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="8e159-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="8e159-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="8e159-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="8e159-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="d7b61-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="d7b61-120">Authorization</span></span>  | <span data-ttu-id="d7b61-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="d7b61-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d7b61-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="d7b61-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="d7b61-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="d7b61-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8e159-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8e159-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d7b61-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="d7b61-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="8e159-127">响应</span><span class="sxs-lookup"><span data-stu-id="8e159-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d7b61-127">响应</span><span class="sxs-lookup"><span data-stu-id="d7b61-127">Response</span></span>
 
-<span data-ttu-id="8e159-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="8e159-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="d7b61-p104">如果成功，此方法返回 `200 OK` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="d7b61-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8e159-130">示例</span><span class="sxs-lookup"><span data-stu-id="8e159-130">Example</span></span>
-<span data-ttu-id="8e159-131">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="8e159-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="8e159-132">请求</span><span class="sxs-lookup"><span data-stu-id="8e159-132">Request</span></span>
-<span data-ttu-id="8e159-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8e159-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d7b61-130">示例</span><span class="sxs-lookup"><span data-stu-id="d7b61-130">Example</span></span>
+<span data-ttu-id="d7b61-131">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="d7b61-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="d7b61-132">请求</span><span class="sxs-lookup"><span data-stu-id="d7b61-132">Request</span></span>
+<span data-ttu-id="d7b61-133">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="d7b61-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablerow_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/delete
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/delete
 ```
 
-##### <a name="response"></a><span data-ttu-id="8e159-134">响应</span><span class="sxs-lookup"><span data-stu-id="8e159-134">Response</span></span>
-<span data-ttu-id="8e159-135">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="8e159-135">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="d7b61-134">响应</span><span class="sxs-lookup"><span data-stu-id="d7b61-134">Response</span></span>
+<span data-ttu-id="d7b61-135">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="d7b61-135">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,8 +76,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/tablerow-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
