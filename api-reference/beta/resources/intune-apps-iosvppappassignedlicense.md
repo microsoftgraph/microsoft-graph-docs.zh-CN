@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 162eaeebd8c678bf29b3b40729114f67d1325c86
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790373"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552259"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>iosVppAppAssignedLicense 资源类型
 
@@ -31,7 +31,7 @@ iOS 批量采购计划许可证分配。 此类不支持创建、删除或更新
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |userEmailAddress|String|用户电子邮件地址。|
 |userId|String|用户 ID。|
 |userName|String|用户名。|

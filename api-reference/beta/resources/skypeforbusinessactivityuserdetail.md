@@ -3,11 +3,11 @@ title: skypeForBusinessActivityUserDetail 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.openlocfilehash: e847cbf469db3be55c8c12ebf31056a262962886
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828649"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571763"
 ---
 # <a name="skypeforbusinessactivityuserdetail-resource-type"></a>skypeForBusinessActivityUserDetail 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "27828649"
 | totalPeerToPeerSessionCount              | Int64             |
 | totalOrganizedConferenceCount            | Int64             |
 | totalParticipatedConferenceCount         | Int64             |
-| peerToPeerLastActivityDate               | 日期              |
-| organizedConferenceLastActivityDate      | 日期              |
-| participatedConferenceLastActivityDate   | 日期              |
+| peerToPeerLastActivityDate               | Date              |
+| organizedConferenceLastActivityDate      | Date              |
+| participatedConferenceLastActivityDate   | Date              |
 | peerToPeerIMCount                        | Int64             |
 | peerToPeerAudioCount                     | Int64             |
 | peerToPeerAudioMinutes                   | Int64             |
@@ -43,12 +43,12 @@ ms.locfileid: "27828649"
 | participatedConferenceAppSharingCount   | Int64             |
 | participatedConferenceWebCount          | Int64             |
 | participatedConferenceDialInOut3rdPartyCount | Int64             |
-| reportRefreshDate                        | 日期              |
-| userPrincipalName                        | 字符串            |
-| 被                                | 布尔           |
-| deletedDate                              | 日期              |
-| lastActivityDate                         | 日期              |
-| assignedProducts                         | String 集合 |
+| reportRefreshDate                        | Date              |
+| userPrincipalName                        | String            |
+| isDeleted                                | Boolean           |
+| deletedDate                              | Date              |
+| lastActivityDate                         | Date              |
+| assignedProducts                         | String collection |
 | reportPeriod                             | String            |
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 7347ac1b7ff251b12764534df217cd883ba730b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956946"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569023"
 ---
 # <a name="chartgridlines-resource-type"></a>ChartGridlines 资源类型
 
@@ -21,17 +21,17 @@ ms.locfileid: "27956946"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 ChartGridlines](../api/chartgridlines-get.md) | [WorkbookChartGridlines](chartgridlines.md) |读取 chartGridlines 对象的属性和关系。|
-|[Update](../api/chartgridlines-update.md) | [WorkbookChartGridlines](chartgridlines.md)    |更新 ChartGridlines 对象。 |
+|[更新](../api/chartgridlines-update.md) | [WorkbookChartGridlines](chartgridlines.md)    |更新 ChartGridlines 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|visible|boolean|表示坐标轴网格线是否可见的布尔值。|
+|visible|布尔|表示坐标轴网格线是否可见的布尔值。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|表示图表网格线的格式。只读。|
+|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|表示图表网格线的格式。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

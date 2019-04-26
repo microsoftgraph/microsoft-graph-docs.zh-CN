@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 50bcd4e4ddde2b1b7c1c642cd17805691ba0cb44
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259939"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571777"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>vppTokenAccountType 枚举类型
 

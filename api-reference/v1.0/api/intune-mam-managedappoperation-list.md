@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c3ae31a7077b5003cf6c88f15afc4d45d9dda9a5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963056"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571049"
 ---
 # <a name="list-managedappoperations"></a>列出 managedAppOperations
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: b7ac6954c325e0192549c286613ff2794e973a0f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571770"
 ---
 # <a name="group-unsubscribebymail"></a>组：unsubscribeByMail
 调用此方法将阻止当前用户接收有关该组中新帖子、活动和文件的电子邮件通知。仅支持 Office 365 组。 
@@ -52,7 +52,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/unsubscribeByMail
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true

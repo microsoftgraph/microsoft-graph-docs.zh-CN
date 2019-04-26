@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
 ms.openlocfilehash: ae22b0a36acb46c2a9d872f224c0a6d4c567782c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481130"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569331"
 ---
 # <a name="baseitem-resource-type"></a>BaseItem 资源类型
 
@@ -56,23 +56,23 @@ ms.locfileid: "30481130"
 | createdBy            | [identitySet][]   | 识别创建项目的用户、设备或应用程序。只读。        |
 | createdDateTime      | dateTimeOffset    | 创建项的日期和时间。只读。                                             |
 | description          | String            | 提供项的用户可见的说明。 可选。                             |
-| eTag                 | string            | 该项目的 ETag。只读。                                                          |
+| eTag                 | 字符串            | 该项目的 ETag。只读。                                                          |
 | lastModifiedBy       | [identitySet][]   | 上次修改项目的用户、设备和应用程序的标识。只读。 |
 | lastModifiedDateTime | dateTimeOffset    | 上次修改项目的日期和时间。只读。                                   |
 | name                 | string            | 项目名称。读写。                                                      |
 | parentReference      | [itemReference][] | 父信息（如果此项具有父级）。读写。                              |
-| WebUrl               | string (url)      | 在浏览器中显示此资源的 URL。只读。                              |
+| webUrl               | string (url)      | 在浏览器中显示此资源的 URL。只读。                              |
 
 ## <a name="relationships"></a>关系
 
 | 关系       | 类型     | 说明
 |:-------------------|:---------|:---------------------------------------------
-| createdByUser      | [user][] | 创建了项的用户的身份。 只读。
-| lastModifiedByUser | [用户][] | 上次修改项的用户的身份。 只读。
+| createdByUser      | [用户][] | 创建了项的用户的身份。 只读。
+| lastModifiedByUser | [user][] | 上次修改项的用户的标识。 只读。
 
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[user]: user.md
+[用户]: user.md
 
 ## <a name="remarks"></a>注解
 

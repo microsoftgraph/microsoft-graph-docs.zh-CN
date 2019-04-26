@@ -4,12 +4,12 @@ description: '在 "Azure AD 访问评论" 功能中, 检索 accessReview 对象�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 26551f27fdf328865509cd02011f3ee2344f5e82
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0bb757e3f92ced3d6f9615cb92a8e9b622bdec50
+ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458766"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33299575"
 ---
 # <a name="get-accessreview"></a>获取 accessReview
 
@@ -26,9 +26,11 @@ ms.locfileid: "32458766"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  登录用户还必须位于目录角色中, 允许他们读取访问权限, 或作为访问审核的审阅者进行分配。 |
+|委派（工作或学校帐户）     | AccessReview  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|应用程序                            | AccessReview  |
+
+若要调用此 API, 登录用户还必须位于允许他们读取访问审核的目录角色中, 或者可以将用户作为访问评审的审阅者进行分配。  有关更多详细信息, 请参阅[access 评审](../resources/accessreviews-root.md)的角色和权限要求。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +56,7 @@ GET /accessReviews('{reviewId}')
   "name": "get_accessReview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fec466a82d')
+GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d
 ```
 
 ##### <a name="response"></a>响应
@@ -117,8 +119,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/accessreview-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

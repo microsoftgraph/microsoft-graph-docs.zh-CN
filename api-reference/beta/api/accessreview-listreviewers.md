@@ -4,12 +4,12 @@ description: 在 "Azure AD access 评论" 功能中, 检索 accessReview 对象�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d2227ed6343900780df57aeece2fe511f07da04f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 39aa08f802182949ac796445a736ddea24ff18a6
+ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459414"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33299624"
 ---
 # <a name="list-accessreview-reviewers"></a>列出 accessReview 审阅者
 
@@ -21,9 +21,12 @@ ms.locfileid: "32459414"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  登录用户还必须位于目录角色中, 允许用户阅读访问审核。 |
+|委派（工作或学校帐户）     | AccessReview、AccessReview 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | 不支持。 |
+|应用程序                            | AccessReview  |
+
+
+ 登录用户还必须位于允许他们阅读访问审核的目录角色中。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +52,7 @@ GET /accessReviews('{reviewId}')/reviewers
   "name": "get_accessReview_reviewers"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fec466a82d')/reviewers
+GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/reviewers
 ```
 
 ##### <a name="response"></a>响应
@@ -65,10 +68,11 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value":[
-    {
-       "id":"006111db-0810-4494-a6df-904d368bd81b"
-    }
+    "value":
+    [
+        {
+            "id":"006111db-0810-4494-a6df-904d368bd81b"
+        }
     ]
 }
 ```
@@ -89,8 +93,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/accessreview-listreviewers.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

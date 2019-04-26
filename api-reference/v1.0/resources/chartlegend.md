@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 8eea71707d622f0dc28cc8072fa984de64a8427f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967222"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569100"
 ---
 # <a name="chartlegend-resource-type"></a>ChartLegend 资源类型
 
@@ -21,19 +21,19 @@ ms.locfileid: "27967222"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 ChartLegend](../api/chartlegend-get.md) | [WorkbookChartLegend](chartlegend.md) |读取 chartlegend 对象的属性和关系。|
-|[Update](../api/chartlegend-update.md) | [WorkbookChartLegend](chartlegend.md) |更新 chartlegend 对象。 |
+|[更新](../api/chartlegend-update.md) | [WorkbookChartLegend](chartlegend.md) |更新 chartlegend 对象。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|overlay|boolean|表示图表图例是否应该与图表主体重叠的布尔值。|
-|position|string|代表图表上图例的位置。 可能的值为： `Top`， `Bottom`， `Left`， `Right`， `Corner`， `Custom`。|
-|visible|boolean|表示 ChartLegend 对象的可见性的布尔值。|
+|overlay|布尔|表示图表图例是否应该与图表主体重叠的布尔值。|
+|position|string|表示图例在图表上的位置。 可能的值为: `Top`、 `Bottom`、 `Left` `Right`、、 `Corner`、 `Custom`。|
+|visible|布尔|表示 ChartLegend 对象的可见性的布尔值。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartLegendFormat](chartlegendformat.md)|表示图表图例的格式，包括填充和字体格式。只读。|
+|format|[WorkbookChartLegendFormat](chartlegendformat.md)|表示图表图例的格式，包括填充和字体格式。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

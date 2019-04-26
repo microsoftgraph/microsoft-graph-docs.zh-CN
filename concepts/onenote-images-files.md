@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: e07c9e3d4ccc16c19c83950eda2fdc24107c4b79
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31980919"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578790"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>将图像、视频和文件添加到 OneNote 页面
 

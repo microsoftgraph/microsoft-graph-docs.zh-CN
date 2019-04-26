@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 了解 identityset
 localization_priority: Normal
 ms.openlocfilehash: 369068dd48b9173032542303e3fd9831d25e6e9e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480290"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567569"
 ---
 # <a name="identityset-resource-type"></a>IdentitySet 资源类型
 
@@ -34,8 +34,8 @@ ms.locfileid: "30480290"
 
 | 属性    | 类型                    | 说明                                            |
 |:------------|:------------------------|:-------------------------------------------------------|
-| application | [Identity](identity.md) | 可选。与此操作关联的应用程序。 |
-| 设备      | [Identity](identity.md) | 可选。与此操作关联的设备。      |
+| application | [标识](identity.md) | 可选。与此操作关联的应用程序。 |
+| 设备      | [标识](identity.md) | 可选。与此操作关联的设备。      |
 | 用户        | [标识](identity.md) | 可选。与此操作关联的用户。        |
 
 ## <a name="remarks"></a>注解 

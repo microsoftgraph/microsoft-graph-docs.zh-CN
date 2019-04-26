@@ -6,11 +6,11 @@ title: List
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 7946346c5b872cad80eb3b8dc50109862ac15b8e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481403"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570797"
 ---
 # <a name="list-resource"></a>List 资源
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 645267fd595a4b8e83090d9d6b2179e8c6112a78
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951990"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569072"
 ---
 # <a name="chartdatalabelformat-resource-type"></a>ChartDataLabelFormat 资源类型
 
@@ -22,11 +22,11 @@ ms.locfileid: "27951990"
 ## <a name="properties"></a>属性
 无
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|表示当前图表数据标签的填充格式。只读。|
-|font|[WorkbookChartFont](chartfont.md)|表示图表数据标签的字体属性（字体名称、字体大小、颜色等）。只读。|
+|font|[WorkbookChartFont](chartfont.md)|表示图表数据标签的字体属性（字体名称、字体大小、颜色等）。 只读。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: dbc62b855035ebf68fefae3d628582b566804449
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781146"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566421"
 ---
 # <a name="vpptokenstate-enum-type"></a>vppTokenState 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31781146"
 |:---|:---|:---|
 |unknown|0|默认状态。|
 |有效|1|令牌有效。|
-|期满|双面|令牌已过期。|
-|无效|第三章|令牌无效。|
-|assignedToExternalMDM|4|令牌由另一个 MDM 服务管理。|
+|期满|2 |令牌已过期。|
+|无效|3 |令牌无效。|
+|assignedToExternalMDM|4 |令牌由另一个 MDM 服务管理。|
 
 
 

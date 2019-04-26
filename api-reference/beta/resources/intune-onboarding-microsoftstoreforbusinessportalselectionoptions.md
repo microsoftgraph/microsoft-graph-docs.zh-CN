@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bc1ad975ba35d0e942cf2d57f26929e66f02b661
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794237"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566505"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>microsoftStoreForBusinessPortalSelectionOptions 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31794237"
 |:---|:---|:---|
 |无|0|此选项对帐户不可用|
 |companyPortal|1|仅限 Intune 公司门户。|
-|privateStore|双面|仅 MSFB 私人存储。|
+|privateStore|2 |仅 MSFB 私人存储。|
 
 
 

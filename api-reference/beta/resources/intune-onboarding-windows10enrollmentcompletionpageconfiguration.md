@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7d8b60a1c2afcaccef95caef77f0bda6d3cd65a9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779851"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566379"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>windows10EnrollmentCompletionPageConfiguration 资源类型
 
@@ -34,21 +34,21 @@ Windows 10 注册状态页面配置
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|继承自[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)的注册状态页面配置的 Id|
+|id|字符串|继承自[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)的注册状态页面配置的 Id|
 |displayName|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|description|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|说明|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |priority|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |version|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|布尔值|显示或隐藏用户的安装进度|
-|blockDeviceSetupRetryByUser|布尔值|允许用户在安装失败时重试安装程序|
-|allowDeviceResetOnInstallFailure|布尔值|允许或阻止在安装失败时重置设备|
-|allowLogCollectionOnInstallFailure|布尔值|在安装失败时允许或阻止日志集合|
+|showInstallationProgress|Boolean|显示或隐藏用户的安装进度|
+|blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装程序|
+|allowDeviceResetOnInstallFailure|Boolean|允许或阻止在安装失败时重置设备|
+|allowLogCollectionOnInstallFailure|Boolean|在安装失败时允许或阻止日志集合|
 |customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时 (分钟)|
-|allowDeviceUseOnInstallFailure|布尔值|允许用户在安装失败时继续使用设备|
-|selectedMobileAppIds|String 集合|选定的应用程序跟踪安装状态|
+|allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
+|selectedMobileAppIds|String collection|选定的应用程序跟踪安装状态|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

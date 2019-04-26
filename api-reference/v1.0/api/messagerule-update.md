@@ -5,14 +5,15 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: db0bd06dfe4ae65e977f5489939178a8eda664f0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914540"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565945"
 ---
 # <a name="update-rule"></a>更新规则
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 为 [messageRule](../resources/messagerule.md) 对象更改可写属性并保存更改。
 
@@ -28,8 +29,8 @@ ms.locfileid: "27914540"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/mailFolders/inbox/messageRules/{id}
-PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
+PATCH /me/mailFolders/inbox/messagerules/{id}
+PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 ```
 ## <a name="optional-request-headers"></a>可选的请求标头
 | 名称       | 说明|
@@ -58,11 +59,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 下面的示例更改规则名称，并更改针对[获取规则](messagerule-get.md)[示例](messagerule-get.md#example)中的规则所采取的操作，从转发到一个地址到将其重要性标记为“高”。 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "update_messagerule"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
+PATCH https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
 Content-type: application/json
 
 {
@@ -84,7 +84,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Me/mailFolders('inbox')/messageRules/$entity",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#Me/mailFolders('inbox')/messageRules/$entity",
   "id":"AQAAAJ5dZqA=",
   "displayName":"Important from partner",
   "sequence":2,
@@ -104,10 +104,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update rule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

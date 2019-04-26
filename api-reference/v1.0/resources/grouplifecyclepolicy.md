@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 65cf8d5d06262f1d5700de26b4c4f62b005020d2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964163"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570839"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>groupLifecyclePolicy 资源类型
 

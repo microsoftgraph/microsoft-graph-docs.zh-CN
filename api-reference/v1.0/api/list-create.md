@@ -6,13 +6,15 @@ title: 创建 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 7faabe9bddc806d4c416ebed439592ec8630e8af
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481137"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568094"
 ---
 # <a name="create-a-new-list"></a>创建新的列表
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 [site][] 中的创建新的 [list][]。
 
@@ -31,7 +33,7 @@ ms.locfileid: "30481137"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
 ## <a name="request-body"></a>请求正文
@@ -104,12 +106,15 @@ Content-type: application/json
 实际调用会返回默认属性。
 
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[网站]: ../resources/site.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create"
-} -->
+  "tocPath": "List/Create",
+  "suppressions": []
+}
+-->

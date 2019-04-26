@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 6f303e55735c24edc46cb7107d9541c4b20c479a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640551"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570094"
 ---
 # <a name="invitation-manager"></a>邀请管理器
 
@@ -42,7 +42,7 @@ ms.locfileid: "29640551"
 |inviteRedirectUrl|String|兑现邀请后，用户应被重定向至的 URL。必填。|
 |inviteRedeemUrl|String|用户可用于兑现邀请的 URL。只读|
 |invitedUserType|String|被邀请的用户的 userType。默认情况下，此值为“来宾”。如果你是公司管理员，则可以以“成员”身份进行邀请。 |
-|status|String|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
+|状态|字符串|邀请的状态。可能的值：PendingAcceptance、Completed、InProgress 和 Error|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|

@@ -5,11 +5,11 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3d040fd5be86068c30e7a63dae50888c4f3ec756
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528345"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568568"
 ---
 # <a name="participantinfo-resource-type"></a>participantInfo 资源类型
 
@@ -21,9 +21,9 @@ ms.locfileid: "29528345"
 
 | 属性       | 类型                          | 说明  |
 |:---------------|:------------------------------|:-------------|
-| Identity       | [identitySet](identityset.md) | 与此参与者关联[identitySet](identityset.md) 。 |
+| 窃取       | [identitySet](identityset.md) | 与此参与者关联的[了解 identityset](identityset.md) 。 |
 | languageId     | String                        | 语言区域性字符串。 |
-| 地区         | String                        | 参与者的区域。 |
+| 范围         | String                        | 参与者的地区。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -53,8 +53,6 @@ ms.locfileid: "29528345"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/participantinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

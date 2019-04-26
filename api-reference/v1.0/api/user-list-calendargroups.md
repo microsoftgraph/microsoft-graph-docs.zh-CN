@@ -5,13 +5,15 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ddd31fa4867d1653906ac6c331b284d18f3daa45
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869321"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567905"
 ---
 # <a name="list-calendargroups"></a>List calendarGroups
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取用户的日历组。
 ## <a name="permissions"></a>权限
@@ -21,7 +23,7 @@ ms.locfileid: "30869321"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Calendars.Read、Calendars.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Calendars.Read、Calendars.ReadWrite    |
-|应用程序 | Calendars.Read、Calendars.ReadWrite |
+|Application | Calendars.Read、Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +53,7 @@ GET /users/{id | userPrincipalName}/calendarGroups
   "name": "get_calendargroups"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarGroups
+GET https://graph.microsoft.com/beta/me/calendarGroups
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -80,10 +82,13 @@ Content-length: 155
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List calendarGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

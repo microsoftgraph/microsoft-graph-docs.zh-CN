@@ -1,19 +1,19 @@
 ---
 title: ChartAxis 资源类型
-description: 表示图表中的单个坐标轴。
+description: 代表图表中的单个坐标轴。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 88066c356306a619ee620a13eefb6592d7b5f100
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569240"
 ---
 # <a name="chartaxis-resource-type"></a>ChartAxis 资源类型
 
-表示图表中的单个坐标轴。
+代表图表中的单个坐标轴。
 
 
 ## <a name="methods"></a>方法
@@ -26,19 +26,19 @@ ms.locfileid: "27984309"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| ID       |string   | 唯一标识符。 只读。|
+| id       |string   | 唯一标识符。 只读。|
 |majorUnit|Json|表示两个主要刻度标记之间的间隔。可以设置为数字值或空字符串。返回的值始终为数字。|
 |maximum|Json|表示数值轴上的最大值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
 |minimum|Json|表示数值轴上的最小值。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
 |minorUnit|Json|表示两个次要刻度标记之间的间隔。可以设置为数字值或空字符串（对于自动坐标轴值）。返回的值始终为数字。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |format|[WorkbookChartAxisFormat](chartaxisformat.md)|表示 chart 对象的格式，包括线条和字体格式。只读。|
-|majorGridlines|[WorkbookChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的主要网格线的 gridline 对象。只读。|
+|majorGridlines|[WorkbookChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的主要网格线的网格线对象。只读。|
 |minorGridlines|[WorkbookChartGridlines](chartgridlines.md)|返回一个表示指定坐标轴的次要网格线的网格线对象。只读。|
-|title|[WorkbookChartAxisTitle](chartaxistitle.md)|表示坐标轴标题。只读。|
+|title|[WorkbookChartAxisTitle](chartaxistitle.md)|表示坐标轴标题。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
