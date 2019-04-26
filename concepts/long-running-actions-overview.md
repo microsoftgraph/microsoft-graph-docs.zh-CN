@@ -2,33 +2,33 @@
 title: 处理长时间运行的操作（测试）
 description: 本文会介绍处理长时间运行的操作。
 localization_priority: Normal
-ms.openlocfilehash: d7ee9631e9e18ae1972e2b156366c66d3d3dd455
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: HT
+author: daspek
+ms.openlocfilehash: 4512672ea44e944fd77e95249aa439f0ee9e84ba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868052"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560778"
 ---
-# <a name="working-with-long-running-actions-beta"></a><span data-ttu-id="6229c-103">处理长时间运行的操作 (beta)</span><span class="sxs-lookup"><span data-stu-id="6229c-103">Working with long running actions (beta)</span></span>
+# <a name="working-with-long-running-actions-beta"></a><span data-ttu-id="02c59-103">处理长时间运行的操作 (beta)</span><span class="sxs-lookup"><span data-stu-id="02c59-103">Working with long running actions (beta)</span></span>
 
-> <span data-ttu-id="6229c-104">**重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。</span><span class="sxs-lookup"><span data-stu-id="6229c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6229c-105">不支持在生产应用程序中使用这些 API。</span><span class="sxs-lookup"><span data-stu-id="6229c-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="6229c-106">某些 API 响应完成所需的时间不确定。</span><span class="sxs-lookup"><span data-stu-id="6229c-106">Some API responses require indeterminate time to complete.</span></span>
-<span data-ttu-id="6229c-107">Microsoft Graph 可能会使用长时间运行操作模式，而不是等待操作完成之后再返回响应。</span><span class="sxs-lookup"><span data-stu-id="6229c-107">Instead of waiting until the action is complete before returning a response, Microsoft Graph may use a long running actions pattern.</span></span>
-<span data-ttu-id="6229c-108">此模式可让应用等待轮询长时间运行操作的状态更新，而无需任何等待操作完成的请求。</span><span class="sxs-lookup"><span data-stu-id="6229c-108">This pattern provides your app a wait to poll for status updates on a long running action, without any request waiting for the action to complete.</span></span>
+<span data-ttu-id="02c59-104">某些 API 响应完成所需的时间不确定。</span><span class="sxs-lookup"><span data-stu-id="02c59-104">Some API responses require indeterminate time to complete.</span></span>
+<span data-ttu-id="02c59-105">Microsoft Graph 可能会使用长时间运行操作模式，而不是等待操作完成之后再返回响应。</span><span class="sxs-lookup"><span data-stu-id="02c59-105">Instead of waiting until the action is complete before returning a response, Microsoft Graph may use a long running actions pattern.</span></span>
+<span data-ttu-id="02c59-106">此模式可让应用等待轮询长时间运行操作的状态更新，而无需任何等待操作完成的请求。</span><span class="sxs-lookup"><span data-stu-id="02c59-106">This pattern provides your app a wait to poll for status updates on a long running action, without any request waiting for the action to complete.</span></span>
 
-<span data-ttu-id="6229c-109">常规模式包括以下步骤：</span><span class="sxs-lookup"><span data-stu-id="6229c-109">The general pattern follows these steps:</span></span>
+<span data-ttu-id="02c59-107">常规模式包括以下步骤：</span><span class="sxs-lookup"><span data-stu-id="02c59-107">The general pattern follows these steps:</span></span>
 
-1. <span data-ttu-id="6229c-110">应用请求通过 API 执行长时间运行的操作。</span><span class="sxs-lookup"><span data-stu-id="6229c-110">Your app requests a long running action via the API.</span></span> <span data-ttu-id="6229c-111">API 接受操作，并返回 `202 Accepted` 响应以及 API URL 的 Location 头，以便检索操作状态报告。</span><span class="sxs-lookup"><span data-stu-id="6229c-111">The API accepts the action and returns a `202 Accepted` response along with a Location header for the API URL to retrieve action status reports.</span></span>
-2. <span data-ttu-id="6229c-112">应用请求获取操作状态报告 URL，然后收到包含长时间运行的操作进度的 [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) 响应。</span><span class="sxs-lookup"><span data-stu-id="6229c-112">Your app requests the action status report URL and receives an [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) response with the progress of the long running action.</span></span>
-3. <span data-ttu-id="6229c-113">长时间运行的操作完成。</span><span class="sxs-lookup"><span data-stu-id="6229c-113">The long running action completes.</span></span> 
-4. <span data-ttu-id="6229c-114">应用再次请求获取操作状态报告 URL ，然后收到显示操作已完成状态的 [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) 响应。</span><span class="sxs-lookup"><span data-stu-id="6229c-114">Your app requests the action status report URL again and receives an [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) response showing the completion of the action.</span></span>
+1. <span data-ttu-id="02c59-108">应用请求通过 API 执行长时间运行的操作。</span><span class="sxs-lookup"><span data-stu-id="02c59-108">Your app requests a long running action via the API.</span></span> <span data-ttu-id="02c59-109">API 接受操作，并返回 `202 Accepted` 响应以及 API URL 的 Location 头，以便检索操作状态报告。</span><span class="sxs-lookup"><span data-stu-id="02c59-109">The API accepts the action and returns a `202 Accepted` response along with a Location header for the API URL to retrieve action status reports.</span></span>
+2. <span data-ttu-id="02c59-110">应用请求获取操作状态报告 URL，然后收到包含长时间运行的操作进度的 [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) 响应。</span><span class="sxs-lookup"><span data-stu-id="02c59-110">Your app requests the action status report URL and receives an [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) response with the progress of the long running action.</span></span>
+3. <span data-ttu-id="02c59-111">长时间运行的操作完成。</span><span class="sxs-lookup"><span data-stu-id="02c59-111">The long running action completes.</span></span> 
+4. <span data-ttu-id="02c59-112">应用再次请求获取操作状态报告 URL ，然后收到显示操作已完成状态的 [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) 响应。</span><span class="sxs-lookup"><span data-stu-id="02c59-112">Your app requests the action status report URL again and receives an [AsyncJobStatus](/graph/api/resources/asyncjobstatus?view=graph-rest-beta) response showing the completion of the action.</span></span>
 
-## <a name="initial-action-request"></a><span data-ttu-id="6229c-115">初始操作请求</span><span class="sxs-lookup"><span data-stu-id="6229c-115">Initial action request</span></span>
+## <a name="initial-action-request"></a><span data-ttu-id="02c59-113">初始操作请求</span><span class="sxs-lookup"><span data-stu-id="02c59-113">Initial action request</span></span>
 
-<span data-ttu-id="6229c-116">让我们来逐步完成 [DriveItem 复制](/graph/api/driveitem-copy?view=graph-rest-beta)示例方案。</span><span class="sxs-lookup"><span data-stu-id="6229c-116">Let's walk through the steps for an example [DriveItem Copy](/graph/api/driveitem-copy?view=graph-rest-beta) scenario.</span></span>
-<span data-ttu-id="6229c-117">在此方案中，应用请求复制包含大量数据的文件夹。</span><span class="sxs-lookup"><span data-stu-id="6229c-117">In this scenario, your app requests to copy a folder that contains a large amount of data.</span></span>
-<span data-ttu-id="6229c-118">因为数据量较大，所以此请求可能需要几秒钟才能完成。</span><span class="sxs-lookup"><span data-stu-id="6229c-118">This request will likely take several seconds to complete since the amount of data is large.</span></span>
+<span data-ttu-id="02c59-114">让我们来逐步完成 [DriveItem 复制](/graph/api/driveitem-copy?view=graph-rest-beta)示例方案。</span><span class="sxs-lookup"><span data-stu-id="02c59-114">Let's walk through the steps for an example [DriveItem Copy](/graph/api/driveitem-copy?view=graph-rest-beta) scenario.</span></span>
+<span data-ttu-id="02c59-115">在此方案中，应用请求复制包含大量数据的文件夹。</span><span class="sxs-lookup"><span data-stu-id="02c59-115">In this scenario, your app requests to copy a folder that contains a large amount of data.</span></span>
+<span data-ttu-id="02c59-116">因为数据量较大，所以此请求可能需要几秒钟才能完成。</span><span class="sxs-lookup"><span data-stu-id="02c59-116">This request will likely take several seconds to complete since the amount of data is large.</span></span>
 
 <!-- { "blockType": "request", "name": "lro-copy-item-example", "scopes": "files.readwrite" } -->
 
@@ -44,7 +44,7 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="6229c-119">API 予以响应，指明已接受此操作，并返回用于检索长时间运行的操作状态的 URL。</span><span class="sxs-lookup"><span data-stu-id="6229c-119">The API responds that the action was accepted and the URL for retrieving the status of the long running action.</span></span>
+<span data-ttu-id="02c59-117">API 予以响应，指明已接受此操作，并返回用于检索长时间运行的操作状态的 URL。</span><span class="sxs-lookup"><span data-stu-id="02c59-117">The API responds that the action was accepted and the URL for retrieving the status of the long running action.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -53,15 +53,14 @@ HTTP/1.1 202 Accepted
 Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-<span data-ttu-id="6229c-120">**注意：** 返回的位置 URL 可能不在 Microsoft Graph API 终结点上。</span><span class="sxs-lookup"><span data-stu-id="6229c-120">**Note:** The location URL returned may not be on the Microsoft Graph API endpoint.</span></span>
+<span data-ttu-id="02c59-118">**注意：** 返回的位置 URL 可能不在 Microsoft Graph API 终结点上。</span><span class="sxs-lookup"><span data-stu-id="02c59-118">**Note:** The location URL returned may not be on the Microsoft Graph API endpoint.</span></span>
 
-<span data-ttu-id="6229c-121">在很多情况下，请求到此结束，因为复制操作的完成无需应用执行其他任何工作。</span><span class="sxs-lookup"><span data-stu-id="6229c-121">In many cases this may be the end of the request, since the copy action will complete without the app doing any additional work.</span></span>
-<span data-ttu-id="6229c-122">不过，如果应用需要显示复制操作的状态，或确保其正确完成，可以使用监视器 URL。</span><span class="sxs-lookup"><span data-stu-id="6229c-122">However, if your app needs to show the status of the copy action or ensure that it completes without error, it can do so using the monitor URL.</span></span>
+<span data-ttu-id="02c59-119">在很多情况下，请求到此结束，因为复制操作的完成无需应用执行其他任何工作。</span><span class="sxs-lookup"><span data-stu-id="02c59-119">In many cases this may be the end of the request, since the copy action will complete without the app doing any additional work.</span></span>
+<span data-ttu-id="02c59-120">不过，如果应用需要显示复制操作的状态，或确保其正确完成，可以使用监视器 URL。</span><span class="sxs-lookup"><span data-stu-id="02c59-120">However, if your app needs to show the status of the copy action or ensure that it completes without error, it can do so using the monitor URL.</span></span>
 
-## <a name="retrieve-a-status-report-from-the-monitor-url"></a><span data-ttu-id="6229c-123">通过监视器 URL 检索状态报告</span><span class="sxs-lookup"><span data-stu-id="6229c-123">Retrieve a status report from the monitor URL</span></span>
+## <a name="retrieve-a-status-report-from-the-monitor-url"></a><span data-ttu-id="02c59-121">通过监视器 URL 检索状态报告</span><span class="sxs-lookup"><span data-stu-id="02c59-121">Retrieve a status report from the monitor URL</span></span>
 
-<span data-ttu-id="6229c-124">为了检查复制操作的状态，应用会请求获取上一响应中返回的 URL。</span><span class="sxs-lookup"><span data-stu-id="6229c-124">To check on the status of the copy action, the app makes a request to the URL provided in the previous response.</span></span>
-<span data-ttu-id="6229c-125">*注意：* 此请求无需验证，因为这是原始调用方专属的短期 URL。</span><span class="sxs-lookup"><span data-stu-id="6229c-125">*Note:* This request does not require authentication, since the URL is short-lived and unique to the original caller.</span></span> 
+<span data-ttu-id="02c59-p105">为了检查复制操作的状态，应用会请求获取上一响应中返回的 URL。 *注意：* 此请求无需验证，因为这是原始调用方专属的短期 URL。</span><span class="sxs-lookup"><span data-stu-id="02c59-p105">To check on the status of the copy action, the app makes a request to the URL provided in the previous response. *Note:* This request does not require authentication, since the URL is short-lived and unique to the original caller.</span></span> 
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status", "scopes": "files.readwrite" } -->
 
@@ -69,7 +68,7 @@ Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-<span data-ttu-id="6229c-126">服务响应返回的信息指明长时间运行的操作仍在进行中：</span><span class="sxs-lookup"><span data-stu-id="6229c-126">The service responses with information that the long running action is still in progress:</span></span>
+<span data-ttu-id="02c59-124">服务响应返回的信息指明长时间运行的操作仍在进行中：</span><span class="sxs-lookup"><span data-stu-id="02c59-124">The service responses with information that the long running action is still in progress:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.asyncJobStatus" } -->
 
@@ -84,13 +83,11 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="6229c-127">此信息可用于向用户提供复制操作的最新进度。</span><span class="sxs-lookup"><span data-stu-id="6229c-127">This information can be used to provide an update to the user about the progress of the copy action.</span></span>
-<span data-ttu-id="6229c-128">应用可以继续轮询监视器 URL，以请求获取状态更新并跟踪操作进度。</span><span class="sxs-lookup"><span data-stu-id="6229c-128">The app can continue to poll the monitor URL to request status updates and keep track of the progress of the action.</span></span>
+<span data-ttu-id="02c59-p106">此信息可用于向用户提供复制操作的最新进度。 应用可以继续轮询监视器 URL，以请求获取状态更新并跟踪操作进度。</span><span class="sxs-lookup"><span data-stu-id="02c59-p106">This information can be used to provide an update to the user about the progress of the copy action. The app can continue to poll the monitor URL to request status updates and keep track of the progress of the action.</span></span>
 
-## <a name="retrieve-a-completed-status-report-from-the-monitor-url"></a><span data-ttu-id="6229c-129">通过监视器 URL 检索已完成状态报告</span><span class="sxs-lookup"><span data-stu-id="6229c-129">Retrieve a completed status report from the monitor URL</span></span>
+## <a name="retrieve-a-completed-status-report-from-the-monitor-url"></a><span data-ttu-id="02c59-127">通过监视器 URL 检索已完成状态报告</span><span class="sxs-lookup"><span data-stu-id="02c59-127">Retrieve a completed status report from the monitor URL</span></span>
 
-<span data-ttu-id="6229c-130">几秒钟后，复制操作完成。</span><span class="sxs-lookup"><span data-stu-id="6229c-130">After a few seconds the copy operation has completed.</span></span>
-<span data-ttu-id="6229c-131">当应用向监视器 URL 发出请求时，响应返回的是重定向到操作的最终结果。</span><span class="sxs-lookup"><span data-stu-id="6229c-131">This time when the app makes a request to the monitor URL the response is a redirection to the finished result of the action.</span></span>
+<span data-ttu-id="02c59-p107">几秒钟后，复制操作完成。 当应用向监视器 URL 发出请求时，响应返回的是重定向到操作的最终结果。</span><span class="sxs-lookup"><span data-stu-id="02c59-p107">After a few seconds the copy operation has completed. This time when the app makes a request to the monitor URL the response is a redirection to the finished result of the action.</span></span>
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
 
@@ -98,7 +95,7 @@ Content-type: application/json
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-<span data-ttu-id="6229c-132">完成操作后，监视器服务的响应将返回结果的 resourceId。</span><span class="sxs-lookup"><span data-stu-id="6229c-132">When the action has completed, the response from the monitor service will return the resourceId for the results.</span></span>
+<span data-ttu-id="02c59-130">完成操作后，监视器服务的响应将返回结果的 resourceId。</span><span class="sxs-lookup"><span data-stu-id="02c59-130">When the action has completed, the response from the monitor service will return the resourceId for the results.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.asyncJobStatus" } -->
 
@@ -113,10 +110,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="retrieve-the-results-of-the-completed-operation"></a><span data-ttu-id="6229c-133">检索已完成的操作的结果</span><span class="sxs-lookup"><span data-stu-id="6229c-133">Retrieve the results of the completed operation</span></span>
+## <a name="retrieve-the-results-of-the-completed-operation"></a><span data-ttu-id="02c59-131">检索已完成的操作的结果</span><span class="sxs-lookup"><span data-stu-id="02c59-131">Retrieve the results of the completed operation</span></span>
 
-<span data-ttu-id="6229c-134">完成作业后，监视器 URL 返回结果的 resourceId，在此例中为原始项的新副本。</span><span class="sxs-lookup"><span data-stu-id="6229c-134">Once the job has completed, the monitor URL returns the resourceId of the result, in this case the new copy of the original item.</span></span>
-<span data-ttu-id="6229c-135">可以使用 resourceId 处理此新项，例如：</span><span class="sxs-lookup"><span data-stu-id="6229c-135">You can address this new item using the resourceId, for example:</span></span>
+<span data-ttu-id="02c59-132">完成作业后，监视器 URL 返回结果的 resourceId，在此例中为原始项的新副本。</span><span class="sxs-lookup"><span data-stu-id="02c59-132">Once the job has completed, the monitor URL returns the resourceId of the result, in this case the new copy of the original item.</span></span>
+<span data-ttu-id="02c59-133">可以使用 resourceId 处理此新项，例如：</span><span class="sxs-lookup"><span data-stu-id="02c59-133">You can address this new item using the resourceId, for example:</span></span>
 
 <!-- {
   "blockType": "request",
@@ -142,17 +139,17 @@ Content-type: application/json
 }
 ```
 
-## <a name="supported-resources"></a><span data-ttu-id="6229c-136">支持的资源</span><span class="sxs-lookup"><span data-stu-id="6229c-136">Supported resources</span></span>
+## <a name="supported-resources"></a><span data-ttu-id="02c59-134">支持的资源</span><span class="sxs-lookup"><span data-stu-id="02c59-134">Supported resources</span></span>
 
-<span data-ttu-id="6229c-137">以下 API 方法支持长时间运行的操作</span><span class="sxs-lookup"><span data-stu-id="6229c-137">Long running actions are supported on the following API methods</span></span>
+<span data-ttu-id="02c59-135">以下 API 方法支持长时间运行的操作</span><span class="sxs-lookup"><span data-stu-id="02c59-135">Long running actions are supported on the following API methods</span></span>
 
-| <span data-ttu-id="6229c-138">**资源**</span><span class="sxs-lookup"><span data-stu-id="6229c-138">**Resource**</span></span> | <span data-ttu-id="6229c-139">**API**</span><span class="sxs-lookup"><span data-stu-id="6229c-139">**API**</span></span> |
+| <span data-ttu-id="02c59-136">**资源**</span><span class="sxs-lookup"><span data-stu-id="02c59-136">**Resource**</span></span> | <span data-ttu-id="02c59-137">**API**</span><span class="sxs-lookup"><span data-stu-id="02c59-137">**API**</span></span> |
 |:------ | :------ |
-| <span data-ttu-id="6229c-140">DriveItem</span><span class="sxs-lookup"><span data-stu-id="6229c-140">DriveItem</span></span> | [<span data-ttu-id="6229c-141">Copy</span><span class="sxs-lookup"><span data-stu-id="6229c-141">Copy</span></span>](/graph/api/driveitem-copy?view=graph-rest-beta) |
+| <span data-ttu-id="02c59-138">DriveItem</span><span class="sxs-lookup"><span data-stu-id="02c59-138">DriveItem</span></span> | [<span data-ttu-id="02c59-139">Copy</span><span class="sxs-lookup"><span data-stu-id="02c59-139">Copy</span></span>](/graph/api/driveitem-copy?view=graph-rest-beta) |
 
-## <a name="prerequisites"></a><span data-ttu-id="6229c-142">先决条件</span><span class="sxs-lookup"><span data-stu-id="6229c-142">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="02c59-140">先决条件</span><span class="sxs-lookup"><span data-stu-id="02c59-140">Prerequisites</span></span>
 
-<span data-ttu-id="6229c-143">查询长时间运行的操作的状态也需要执行长时间运行的操作所需的相同[权限](./permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="6229c-143">The same [permissions](./permissions-reference.md) that are required to perform a long running action are also required to query the status of a long running action.</span></span>
+<span data-ttu-id="02c59-141">查询长时间运行的操作的状态也需要执行长时间运行的操作所需的相同[权限](./permissions-reference.md)。</span><span class="sxs-lookup"><span data-stu-id="02c59-141">The same [permissions](./permissions-reference.md) that are required to perform a long running action are also required to query the status of a long running action.</span></span>
 
 
 

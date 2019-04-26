@@ -4,48 +4,48 @@ description: 获取按名称或完全限定的名称标识的开放扩展（open
 localization_priority: Priority
 author: dkershaw10
 ms.openlocfilehash: ee5a8d8f5d98024055b4d28dd67281f8e2e6d453
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889938"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562060"
 ---
-# <a name="get-open-extension"></a><span data-ttu-id="8b7c3-103">获取开放扩展</span><span class="sxs-lookup"><span data-stu-id="8b7c3-103">Get open extension</span></span>
+# <a name="get-open-extension"></a><span data-ttu-id="948dc-103">获取开放扩展</span><span class="sxs-lookup"><span data-stu-id="948dc-103">Get open extension</span></span>
 
-<span data-ttu-id="8b7c3-104">获取用名称或完全限定的名称标识的开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象）。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-104">Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.</span></span>
+<span data-ttu-id="948dc-104">获取用名称或完全限定的名称标识的开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象）。</span><span class="sxs-lookup"><span data-stu-id="948dc-104">Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.</span></span>
 
-<span data-ttu-id="8b7c3-105">下表列出了可以从受支持的资源实例中获取开放扩展的三种应用场景。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-105">The following table lists the three scenarios where you can get an open extension from a supported resource instance.</span></span>
+<span data-ttu-id="948dc-105">下表列出了可以从受支持的资源实例中获取开放扩展的三种应用场景。</span><span class="sxs-lookup"><span data-stu-id="948dc-105">The following table lists the three scenarios where you can get an open extension from a supported resource instance.</span></span>
 
-|<span data-ttu-id="8b7c3-106">**GET 应用场景**</span><span class="sxs-lookup"><span data-stu-id="8b7c3-106">**GET scenario**</span></span>|<span data-ttu-id="8b7c3-107">**支持的资源**</span><span class="sxs-lookup"><span data-stu-id="8b7c3-107">**Supported resources**</span></span>|<span data-ttu-id="8b7c3-108">**响应正文**</span><span class="sxs-lookup"><span data-stu-id="8b7c3-108">**Response body**</span></span>|
+|<span data-ttu-id="948dc-106">**GET 应用场景**</span><span class="sxs-lookup"><span data-stu-id="948dc-106">**GET scenario**</span></span>|<span data-ttu-id="948dc-107">**支持的资源**</span><span class="sxs-lookup"><span data-stu-id="948dc-107">**Supported resources**</span></span>|<span data-ttu-id="948dc-108">**响应正文**</span><span class="sxs-lookup"><span data-stu-id="948dc-108">**Response body**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="8b7c3-109">从已知资源实例中获取特定扩展。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-109">Get a specific extension from a known resource instance.</span></span>| <span data-ttu-id="8b7c3-110">[设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[邮件](../resources/message.md)、[组织](../resources/organization.md)、[个人联系人](../resources/contact.md)、[用户](../resources/user.md)</span><span class="sxs-lookup"><span data-stu-id="8b7c3-110">[Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md)</span></span> | <span data-ttu-id="8b7c3-111">仅开放扩展。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-111">Open extension only.</span></span>|
-|<span data-ttu-id="8b7c3-112">获取一个通过特定扩展插件扩展的已知资源实例。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-112">Get a known resource instance expanded with a specific extension.</span></span>|<span data-ttu-id="8b7c3-113">设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户</span><span class="sxs-lookup"><span data-stu-id="8b7c3-113">Device, event, group, group event, group post, message, organization, personal contact, user</span></span> |<span data-ttu-id="8b7c3-114">一个通过开放扩展插件扩展的资源实例。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-114">A resource instance expanded with the open extension.</span></span>|
-|<span data-ttu-id="8b7c3-115">查找并展开具有特定扩展的资源实例。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-115">Find and expand resource instances with a specific extension.</span></span> |<span data-ttu-id="8b7c3-116">事件、组事件、组帖子、邮件、个人联系人</span><span class="sxs-lookup"><span data-stu-id="8b7c3-116">Event, group event, group post, message, personal contact</span></span>|<span data-ttu-id="8b7c3-117">通过开放扩展展开的资源实例。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-117">Resource instances expanded with the open extension.</span></span>|
+|<span data-ttu-id="948dc-109">从已知资源实例中获取特定扩展。</span><span class="sxs-lookup"><span data-stu-id="948dc-109">Get a specific extension from a known resource instance.</span></span>| <span data-ttu-id="948dc-110">[设备](../resources/device.md)、[事件](../resources/event.md)、[组](../resources/group.md)、[组事件](../resources/event.md)、[组帖子](../resources/post.md)、[邮件](../resources/message.md)、[组织](../resources/organization.md)、[个人联系人](../resources/contact.md)、[用户](../resources/user.md)</span><span class="sxs-lookup"><span data-stu-id="948dc-110">[Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md)</span></span> | <span data-ttu-id="948dc-111">仅开放扩展。</span><span class="sxs-lookup"><span data-stu-id="948dc-111">Open extension only.</span></span>|
+|<span data-ttu-id="948dc-112">获取一个通过特定扩展插件扩展的已知资源实例。</span><span class="sxs-lookup"><span data-stu-id="948dc-112">Get a known resource instance expanded with a specific extension.</span></span>|<span data-ttu-id="948dc-113">设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户</span><span class="sxs-lookup"><span data-stu-id="948dc-113">Device, event, group, group event, group post, message, organization, personal contact, user</span></span> |<span data-ttu-id="948dc-114">一个通过开放扩展插件扩展的资源实例。</span><span class="sxs-lookup"><span data-stu-id="948dc-114">A resource instance expanded with the open extension.</span></span>|
+|<span data-ttu-id="948dc-115">查找并展开具有特定扩展的资源实例。</span><span class="sxs-lookup"><span data-stu-id="948dc-115">Find and expand resource instances with a specific extension.</span></span> |<span data-ttu-id="948dc-116">事件、组事件、组帖子、邮件、个人联系人</span><span class="sxs-lookup"><span data-stu-id="948dc-116">Event, group event, group post, message, personal contact</span></span>|<span data-ttu-id="948dc-117">通过开放扩展展开的资源实例。</span><span class="sxs-lookup"><span data-stu-id="948dc-117">Resource instances expanded with the open extension.</span></span>|
 
-## <a name="permissions"></a><span data-ttu-id="8b7c3-118">权限</span><span class="sxs-lookup"><span data-stu-id="8b7c3-118">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="948dc-118">权限</span><span class="sxs-lookup"><span data-stu-id="948dc-118">Permissions</span></span>
 
-<span data-ttu-id="8b7c3-119">根据包含扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-119">Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="8b7c3-120">若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-120">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="948dc-119">根据包含扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。</span><span class="sxs-lookup"><span data-stu-id="948dc-119">Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API.</span></span> <span data-ttu-id="948dc-120">若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="948dc-120">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="8b7c3-121">支持的资源</span><span class="sxs-lookup"><span data-stu-id="8b7c3-121">Supported resource</span></span> | <span data-ttu-id="8b7c3-122">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8b7c3-122">Delegated (work or school account)</span></span> | <span data-ttu-id="8b7c3-123">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8b7c3-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8b7c3-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="8b7c3-124">Application</span></span> |
+| <span data-ttu-id="948dc-121">支持的资源</span><span class="sxs-lookup"><span data-stu-id="948dc-121">Supported resource</span></span> | <span data-ttu-id="948dc-122">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="948dc-122">Delegated (work or school account)</span></span> | <span data-ttu-id="948dc-123">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="948dc-123">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="948dc-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="948dc-124">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="8b7c3-125">设备</span><span class="sxs-lookup"><span data-stu-id="8b7c3-125">device</span></span>](../resources/device.md) | <span data-ttu-id="8b7c3-126">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="8b7c3-126">Directory.Read.All</span></span> | <span data-ttu-id="8b7c3-127">不支持</span><span class="sxs-lookup"><span data-stu-id="8b7c3-127">Not supported</span></span> | <span data-ttu-id="8b7c3-128">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8b7c3-128">Device.ReadWrite.All</span></span> |
-| [<span data-ttu-id="8b7c3-129">event</span><span class="sxs-lookup"><span data-stu-id="8b7c3-129">event</span></span>](../resources/event.md) | <span data-ttu-id="8b7c3-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-130">Calendars.Read</span></span> | <span data-ttu-id="8b7c3-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-131">Calendars.Read</span></span> | <span data-ttu-id="8b7c3-132">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-132">Calendars.Read</span></span> |
-| [<span data-ttu-id="8b7c3-133">组</span><span class="sxs-lookup"><span data-stu-id="8b7c3-133">group</span></span>](../resources/group.md) | <span data-ttu-id="8b7c3-134">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8b7c3-134">Group.Read.All</span></span> | <span data-ttu-id="8b7c3-135">不支持</span><span class="sxs-lookup"><span data-stu-id="8b7c3-135">Not supported</span></span> | <span data-ttu-id="8b7c3-136">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8b7c3-136">Group.Read.All</span></span> |
-| [<span data-ttu-id="8b7c3-137">组事件</span><span class="sxs-lookup"><span data-stu-id="8b7c3-137">group event</span></span>](../resources/event.md) | <span data-ttu-id="8b7c3-138">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8b7c3-138">Group.Read.All</span></span> | <span data-ttu-id="8b7c3-139">不支持</span><span class="sxs-lookup"><span data-stu-id="8b7c3-139">Not supported</span></span> | <span data-ttu-id="8b7c3-140">不支持</span><span class="sxs-lookup"><span data-stu-id="8b7c3-140">Not supported</span></span> |
-| [<span data-ttu-id="8b7c3-141">组帖子</span><span class="sxs-lookup"><span data-stu-id="8b7c3-141">group post</span></span>](../resources/post.md) | <span data-ttu-id="8b7c3-142">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8b7c3-142">Group.Read.All</span></span> | <span data-ttu-id="8b7c3-143">不支持</span><span class="sxs-lookup"><span data-stu-id="8b7c3-143">Not supported</span></span> | <span data-ttu-id="8b7c3-144">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8b7c3-144">Group.Read.All</span></span> |
-| [<span data-ttu-id="8b7c3-145">message</span><span class="sxs-lookup"><span data-stu-id="8b7c3-145">message</span></span>](../resources/message.md) | <span data-ttu-id="8b7c3-146">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-146">Mail.Read</span></span> | <span data-ttu-id="8b7c3-147">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-147">Mail.Read</span></span> | <span data-ttu-id="8b7c3-148">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-148">Mail.Read</span></span> | 
-| [<span data-ttu-id="8b7c3-149">组织</span><span class="sxs-lookup"><span data-stu-id="8b7c3-149">organization</span></span>](../resources/organization.md) | <span data-ttu-id="8b7c3-150">User.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-150">User.Read</span></span> | <span data-ttu-id="8b7c3-151">不支持</span><span class="sxs-lookup"><span data-stu-id="8b7c3-151">Not supported</span></span> | <span data-ttu-id="8b7c3-152">不支持</span><span class="sxs-lookup"><span data-stu-id="8b7c3-152">Not supported</span></span> |
-| [<span data-ttu-id="8b7c3-153">个人联系人</span><span class="sxs-lookup"><span data-stu-id="8b7c3-153">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="8b7c3-154">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-154">Contacts.Read</span></span> | <span data-ttu-id="8b7c3-155">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-155">Contacts.Read</span></span> | <span data-ttu-id="8b7c3-156">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-156">Contacts.Read</span></span> |
-| [<span data-ttu-id="8b7c3-157">用户</span><span class="sxs-lookup"><span data-stu-id="8b7c3-157">user</span></span>](../resources/user.md) | <span data-ttu-id="8b7c3-158">User.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-158">User.Read</span></span> | <span data-ttu-id="8b7c3-159">User.Read</span><span class="sxs-lookup"><span data-stu-id="8b7c3-159">User.Read</span></span> | <span data-ttu-id="8b7c3-160">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="8b7c3-160">User.Read.All</span></span> |
+| [<span data-ttu-id="948dc-125">设备</span><span class="sxs-lookup"><span data-stu-id="948dc-125">device</span></span>](../resources/device.md) | <span data-ttu-id="948dc-126">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="948dc-126">Directory.Read.All</span></span> | <span data-ttu-id="948dc-127">不支持</span><span class="sxs-lookup"><span data-stu-id="948dc-127">Not supported</span></span> | <span data-ttu-id="948dc-128">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="948dc-128">Device.ReadWrite.All</span></span> |
+| [<span data-ttu-id="948dc-129">event</span><span class="sxs-lookup"><span data-stu-id="948dc-129">event</span></span>](../resources/event.md) | <span data-ttu-id="948dc-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-130">Calendars.Read</span></span> | <span data-ttu-id="948dc-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-131">Calendars.Read</span></span> | <span data-ttu-id="948dc-132">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-132">Calendars.Read</span></span> |
+| [<span data-ttu-id="948dc-133">组</span><span class="sxs-lookup"><span data-stu-id="948dc-133">group</span></span>](../resources/group.md) | <span data-ttu-id="948dc-134">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="948dc-134">Group.Read.All</span></span> | <span data-ttu-id="948dc-135">不支持</span><span class="sxs-lookup"><span data-stu-id="948dc-135">Not supported</span></span> | <span data-ttu-id="948dc-136">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="948dc-136">Group.Read.All</span></span> |
+| [<span data-ttu-id="948dc-137">组事件</span><span class="sxs-lookup"><span data-stu-id="948dc-137">group event</span></span>](../resources/event.md) | <span data-ttu-id="948dc-138">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="948dc-138">Group.Read.All</span></span> | <span data-ttu-id="948dc-139">不支持</span><span class="sxs-lookup"><span data-stu-id="948dc-139">Not supported</span></span> | <span data-ttu-id="948dc-140">不支持</span><span class="sxs-lookup"><span data-stu-id="948dc-140">Not supported</span></span> |
+| [<span data-ttu-id="948dc-141">组帖子</span><span class="sxs-lookup"><span data-stu-id="948dc-141">group post</span></span>](../resources/post.md) | <span data-ttu-id="948dc-142">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="948dc-142">Group.Read.All</span></span> | <span data-ttu-id="948dc-143">不支持</span><span class="sxs-lookup"><span data-stu-id="948dc-143">Not supported</span></span> | <span data-ttu-id="948dc-144">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="948dc-144">Group.Read.All</span></span> |
+| [<span data-ttu-id="948dc-145">message</span><span class="sxs-lookup"><span data-stu-id="948dc-145">message</span></span>](../resources/message.md) | <span data-ttu-id="948dc-146">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-146">Mail.Read</span></span> | <span data-ttu-id="948dc-147">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-147">Mail.Read</span></span> | <span data-ttu-id="948dc-148">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-148">Mail.Read</span></span> | 
+| [<span data-ttu-id="948dc-149">组织</span><span class="sxs-lookup"><span data-stu-id="948dc-149">organization</span></span>](../resources/organization.md) | <span data-ttu-id="948dc-150">User.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-150">User.Read</span></span> | <span data-ttu-id="948dc-151">不支持</span><span class="sxs-lookup"><span data-stu-id="948dc-151">Not supported</span></span> | <span data-ttu-id="948dc-152">不支持</span><span class="sxs-lookup"><span data-stu-id="948dc-152">Not supported</span></span> |
+| [<span data-ttu-id="948dc-153">个人联系人</span><span class="sxs-lookup"><span data-stu-id="948dc-153">personal contact</span></span>](../resources/contact.md) | <span data-ttu-id="948dc-154">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-154">Contacts.Read</span></span> | <span data-ttu-id="948dc-155">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-155">Contacts.Read</span></span> | <span data-ttu-id="948dc-156">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-156">Contacts.Read</span></span> |
+| [<span data-ttu-id="948dc-157">用户</span><span class="sxs-lookup"><span data-stu-id="948dc-157">user</span></span>](../resources/user.md) | <span data-ttu-id="948dc-158">User.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-158">User.Read</span></span> | <span data-ttu-id="948dc-159">User.Read</span><span class="sxs-lookup"><span data-stu-id="948dc-159">User.Read</span></span> | <span data-ttu-id="948dc-160">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="948dc-160">User.Read.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="8b7c3-161">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8b7c3-161">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="948dc-161">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="948dc-161">HTTP request</span></span>
 
-<span data-ttu-id="8b7c3-162">本部分列出了上述三种 `GET` 应用场景中每一种的语法。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-162">This section lists the syntax for each of the three `GET` scenarios described above.</span></span>
+<span data-ttu-id="948dc-162">本部分列出了上述三种 `GET` 应用场景中每一种的语法。</span><span class="sxs-lookup"><span data-stu-id="948dc-162">This section lists the syntax for each of the three `GET` scenarios described above.</span></span>
 
-### <a name="get-a-specific-extension-in-a-known-resource-instance"></a><span data-ttu-id="8b7c3-163">从已知资源实例中获取特定扩展</span><span class="sxs-lookup"><span data-stu-id="8b7c3-163">Get a specific extension in a known resource instance</span></span>
+### <a name="get-a-specific-extension-in-a-known-resource-instance"></a><span data-ttu-id="948dc-163">从已知资源实例中获取特定扩展</span><span class="sxs-lookup"><span data-stu-id="948dc-163">Get a specific extension in a known resource instance</span></span>
 
-<span data-ttu-id="8b7c3-164">使用与获取资源实例相同的 REST 请求，并使用资源实例的 **extensions** 导航属性标识扩展插件。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-164">Use the same REST request as getting the resource instance, and identify the extension using the **extensions** navigation property of that instance.</span></span>
+<span data-ttu-id="948dc-164">使用与获取资源实例相同的 REST 请求，并使用资源实例的 **extensions** 导航属性标识扩展插件。</span><span class="sxs-lookup"><span data-stu-id="948dc-164">Use the same REST request as getting the resource instance, and identify the extension using the **extensions** navigation property of that instance.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -61,9 +61,9 @@ GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 ```
 
 
-### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a><span data-ttu-id="8b7c3-165">获取一个通过匹配的扩展插件扩展的已知资源实例</span><span class="sxs-lookup"><span data-stu-id="8b7c3-165">Get a known resource instance expanded with a matching extension</span></span> 
+### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a><span data-ttu-id="948dc-165">获取一个通过匹配的扩展插件扩展的已知资源实例</span><span class="sxs-lookup"><span data-stu-id="948dc-165">Get a known resource instance expanded with a matching extension</span></span> 
 
-<span data-ttu-id="8b7c3-166">对于事件、组事件、组帖子、邮件、个人联系人资源类型，可使用与获取资源实例相同的 REST 请求，查找 **id** 属性与筛选器匹配的扩展插件，然后使用此扩展插件扩展这个资源实例。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-166">For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, look for an extension that matches a filter on its **id** property, and expand the instance with the extension.</span></span> <span data-ttu-id="8b7c3-167">该响应包括大部分资源属性。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-167">The response includes most of the resource properties.</span></span>
+<span data-ttu-id="948dc-166">对于事件、组事件、组帖子、邮件、个人联系人资源类型，可使用与获取资源实例相同的 REST 请求，查找 **id** 属性与筛选器匹配的扩展插件，然后使用此扩展插件扩展这个资源实例。</span><span class="sxs-lookup"><span data-stu-id="948dc-166">For the event, group event, group post, message, personal contact resource types, you can use the same REST request as getting the resource instance, look for an extension that matches a filter on its **id** property, and expand the instance with the extension.</span></span> <span data-ttu-id="948dc-167">该响应包括大部分资源属性。</span><span class="sxs-lookup"><span data-stu-id="948dc-167">The response includes most of the resource properties.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -75,7 +75,7 @@ GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq
 ```
 
 
-<span data-ttu-id="8b7c3-168">对于设备、组、组织和用户资源类型，你必须也使用 `$select` 参数以包括 **id** 属性及你在资源实例中所需的任何其他属性：</span><span class="sxs-lookup"><span data-stu-id="8b7c3-168">For the device, group, organization, and user resource types, you must also use a `$select` parameter to include the **id** property and any other properties you want from the resource instance:</span></span>
+<span data-ttu-id="948dc-168">对于设备、组、组织和用户资源类型，你必须也使用 `$select` 参数以包括 **id** 属性及你在资源实例中所需的任何其他属性：</span><span class="sxs-lookup"><span data-stu-id="948dc-168">For the device, group, organization, and user resource types, you must also use a `$select` parameter to include the **id** property and any other properties you want from the resource instance:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -85,9 +85,9 @@ GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select
 GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
 
-### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a><span data-ttu-id="8b7c3-169">筛选出多个通过匹配的扩展插件扩展的资源实例</span><span class="sxs-lookup"><span data-stu-id="8b7c3-169">Filter for resource instances expanded with a matching extension</span></span> 
+### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a><span data-ttu-id="948dc-169">筛选出多个通过匹配的扩展插件扩展的资源实例</span><span class="sxs-lookup"><span data-stu-id="948dc-169">Filter for resource instances expanded with a matching extension</span></span> 
 
-<span data-ttu-id="8b7c3-170">使用与获取一组受支持的资源相同的 REST 请求，筛选出扩展插件包含匹配的 **id** 属性的一组实例，然后使用此扩展插件扩展这些实例。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-170">Use the same REST request as getting a collection of the supported resource, filter the collection for instances that contain an extension with a matching **id** property, and expand these instances with the extension.</span></span>
+<span data-ttu-id="948dc-170">使用与获取一组受支持的资源相同的 REST 请求，筛选出扩展插件包含匹配的 **id** 属性的一组实例，然后使用此扩展插件扩展这些实例。</span><span class="sxs-lookup"><span data-stu-id="948dc-170">Use the same REST request as getting a collection of the supported resource, filter the collection for instances that contain an extension with a matching **id** property, and expand these instances with the extension.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -98,42 +98,42 @@ GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{ex
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
-><span data-ttu-id="8b7c3-p103">**注意：** 以上语法显示了一些标识资源实例或集合的常见方法，以便从中获取扩展。可以用来识别这些资源实例或集合的所有其他语法均支持以类似的方式从中获取开放扩展。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-p103">**Note:** The above syntax shows some common ways to identify a resource instance or collection, in order to get an extension from it. All other syntax that allows you to identify these resource instances or collections supports getting open extensions from them in a similar way.</span></span>
+><span data-ttu-id="948dc-p103">**注意：** 以上语法显示了一些标识资源实例或集合的常见方法，以便从中获取扩展。可以用来识别这些资源实例或集合的所有其他语法均支持以类似的方式从中获取开放扩展。</span><span class="sxs-lookup"><span data-stu-id="948dc-p103">**Note:** The above syntax shows some common ways to identify a resource instance or collection, in order to get an extension from it. All other syntax that allows you to identify these resource instances or collections supports getting open extensions from them in a similar way.</span></span>
 
-## <a name="path-parameters"></a><span data-ttu-id="8b7c3-173">路径参数</span><span class="sxs-lookup"><span data-stu-id="8b7c3-173">Path parameters</span></span>
-|<span data-ttu-id="8b7c3-174">参数</span><span class="sxs-lookup"><span data-stu-id="8b7c3-174">Parameter</span></span>|<span data-ttu-id="8b7c3-175">类型</span><span class="sxs-lookup"><span data-stu-id="8b7c3-175">Type</span></span>|<span data-ttu-id="8b7c3-176">说明</span><span class="sxs-lookup"><span data-stu-id="8b7c3-176">Description</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="948dc-173">路径参数</span><span class="sxs-lookup"><span data-stu-id="948dc-173">Path parameters</span></span>
+|<span data-ttu-id="948dc-174">参数</span><span class="sxs-lookup"><span data-stu-id="948dc-174">Parameter</span></span>|<span data-ttu-id="948dc-175">类型</span><span class="sxs-lookup"><span data-stu-id="948dc-175">Type</span></span>|<span data-ttu-id="948dc-176">说明</span><span class="sxs-lookup"><span data-stu-id="948dc-176">Description</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="8b7c3-177">Id</span><span class="sxs-lookup"><span data-stu-id="8b7c3-177">Id</span></span>|<span data-ttu-id="8b7c3-178">string</span><span class="sxs-lookup"><span data-stu-id="8b7c3-178">string</span></span>|<span data-ttu-id="8b7c3-p104">邮件、事件、联系人等相应集合中的对象的唯一标识符的占位符。必需。不要与 **openTypeExtension** 的 **id** 属性混淆。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-p104">Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.</span></span>|
-|<span data-ttu-id="8b7c3-182">extensionId</span><span class="sxs-lookup"><span data-stu-id="8b7c3-182">extensionId</span></span>|<span data-ttu-id="8b7c3-183">string</span><span class="sxs-lookup"><span data-stu-id="8b7c3-183">string</span></span>|<span data-ttu-id="8b7c3-p105">扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）的占位符。创建扩展时，在 **id** 属性中返回完全限定的名称。必需。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-p105">Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.</span></span>|
+|<span data-ttu-id="948dc-177">Id</span><span class="sxs-lookup"><span data-stu-id="948dc-177">Id</span></span>|<span data-ttu-id="948dc-178">string</span><span class="sxs-lookup"><span data-stu-id="948dc-178">string</span></span>|<span data-ttu-id="948dc-p104">邮件、事件、联系人等相应集合中的对象的唯一标识符的占位符。必需。不要与 **openTypeExtension** 的 **id** 属性混淆。</span><span class="sxs-lookup"><span data-stu-id="948dc-p104">Placeholder for a unique identifier for an object in the corresponding collection such as messages, events, contacts. Required. Not to be confused with the **id** property of an **openTypeExtension**.</span></span>|
+|<span data-ttu-id="948dc-182">extensionId</span><span class="sxs-lookup"><span data-stu-id="948dc-182">extensionId</span></span>|<span data-ttu-id="948dc-183">string</span><span class="sxs-lookup"><span data-stu-id="948dc-183">string</span></span>|<span data-ttu-id="948dc-p105">扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）的占位符。创建扩展时，在 **id** 属性中返回完全限定的名称。必需。</span><span class="sxs-lookup"><span data-stu-id="948dc-p105">Placeholder for an extension name which is a unique text identifier for an extension, or a fully qualified name which concatenates the extension type and unique text identifier. The fully qualified name is returned in the **id** property when you create the extension. Required.</span></span>|
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="8b7c3-187">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="8b7c3-187">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="948dc-187">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="948dc-187">Optional query parameters</span></span>
 
-<span data-ttu-id="8b7c3-188">请确保对 `$filter` 字符串中的空格字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-188">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.</span></span>
+<span data-ttu-id="948dc-188">请确保对 `$filter` 字符串中的空格字符应用 [URL 编码](https://www.w3schools.com/tags/ref_urlencode.asp)。</span><span class="sxs-lookup"><span data-stu-id="948dc-188">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the `$filter` string.</span></span>
 
-|<span data-ttu-id="8b7c3-189">Name</span><span class="sxs-lookup"><span data-stu-id="8b7c3-189">Name</span></span>|<span data-ttu-id="8b7c3-190">值</span><span class="sxs-lookup"><span data-stu-id="8b7c3-190">Value</span></span>|<span data-ttu-id="8b7c3-191">说明</span><span class="sxs-lookup"><span data-stu-id="8b7c3-191">Description</span></span>|
+|<span data-ttu-id="948dc-189">Name</span><span class="sxs-lookup"><span data-stu-id="948dc-189">Name</span></span>|<span data-ttu-id="948dc-190">值</span><span class="sxs-lookup"><span data-stu-id="948dc-190">Value</span></span>|<span data-ttu-id="948dc-191">说明</span><span class="sxs-lookup"><span data-stu-id="948dc-191">Description</span></span>|
 |:---------------|:--------|:-------|
-|<span data-ttu-id="8b7c3-192">$filter</span><span class="sxs-lookup"><span data-stu-id="8b7c3-192">$filter</span></span>|<span data-ttu-id="8b7c3-193">string</span><span class="sxs-lookup"><span data-stu-id="8b7c3-193">string</span></span>|<span data-ttu-id="8b7c3-194">返回其 **id** 与 `extensionId` 参数值匹配的扩展。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-194">Returns an extension with its **id** matching the `extensionId` parameter value.</span></span>|
-|<span data-ttu-id="8b7c3-195">具有 **any** 运算符的 $filter</span><span class="sxs-lookup"><span data-stu-id="8b7c3-195">$filter with **any** operator</span></span>|<span data-ttu-id="8b7c3-196">string</span><span class="sxs-lookup"><span data-stu-id="8b7c3-196">string</span></span>|<span data-ttu-id="8b7c3-197">返回特定资源集合的实例，其中包含其 **id** 与 `extensionId` 参数值匹配的扩展。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-197">Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.</span></span>|
-|<span data-ttu-id="8b7c3-198">$expand</span><span class="sxs-lookup"><span data-stu-id="8b7c3-198">$expand</span></span>|<span data-ttu-id="8b7c3-199">string</span><span class="sxs-lookup"><span data-stu-id="8b7c3-199">string</span></span>|<span data-ttu-id="8b7c3-200">展开资源实例以包含扩展。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-200">Expands a resource instance to include an extension.</span></span> |
+|<span data-ttu-id="948dc-192">$filter</span><span class="sxs-lookup"><span data-stu-id="948dc-192">$filter</span></span>|<span data-ttu-id="948dc-193">string</span><span class="sxs-lookup"><span data-stu-id="948dc-193">string</span></span>|<span data-ttu-id="948dc-194">返回其 **id** 与 `extensionId` 参数值匹配的扩展。</span><span class="sxs-lookup"><span data-stu-id="948dc-194">Returns an extension with its **id** matching the `extensionId` parameter value.</span></span>|
+|<span data-ttu-id="948dc-195">具有 **any** 运算符的 $filter</span><span class="sxs-lookup"><span data-stu-id="948dc-195">$filter with **any** operator</span></span>|<span data-ttu-id="948dc-196">string</span><span class="sxs-lookup"><span data-stu-id="948dc-196">string</span></span>|<span data-ttu-id="948dc-197">返回特定资源集合的实例，其中包含其 **id** 与 `extensionId` 参数值匹配的扩展。</span><span class="sxs-lookup"><span data-stu-id="948dc-197">Returns instances of a resource collection that contain an extension with its **id** matching the `extensionId` parameter value.</span></span>|
+|<span data-ttu-id="948dc-198">$expand</span><span class="sxs-lookup"><span data-stu-id="948dc-198">$expand</span></span>|<span data-ttu-id="948dc-199">string</span><span class="sxs-lookup"><span data-stu-id="948dc-199">string</span></span>|<span data-ttu-id="948dc-200">展开资源实例以包含扩展。</span><span class="sxs-lookup"><span data-stu-id="948dc-200">Expands a resource instance to include an extension.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="8b7c3-201">请求标头</span><span class="sxs-lookup"><span data-stu-id="8b7c3-201">Request headers</span></span>
-| <span data-ttu-id="8b7c3-202">名称</span><span class="sxs-lookup"><span data-stu-id="8b7c3-202">Name</span></span>       | <span data-ttu-id="8b7c3-203">值</span><span class="sxs-lookup"><span data-stu-id="8b7c3-203">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="948dc-201">请求标头</span><span class="sxs-lookup"><span data-stu-id="948dc-201">Request headers</span></span>
+| <span data-ttu-id="948dc-202">名称</span><span class="sxs-lookup"><span data-stu-id="948dc-202">Name</span></span>       | <span data-ttu-id="948dc-203">值</span><span class="sxs-lookup"><span data-stu-id="948dc-203">Value</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="8b7c3-204">Authorization</span><span class="sxs-lookup"><span data-stu-id="8b7c3-204">Authorization</span></span> | <span data-ttu-id="8b7c3-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="948dc-204">Authorization</span><span class="sxs-lookup"><span data-stu-id="948dc-204">Authorization</span></span> | <span data-ttu-id="948dc-p106">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="948dc-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8b7c3-207">请求正文</span><span class="sxs-lookup"><span data-stu-id="8b7c3-207">Request body</span></span>
-<span data-ttu-id="8b7c3-208">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-208">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="948dc-207">请求正文</span><span class="sxs-lookup"><span data-stu-id="948dc-207">Request body</span></span>
+<span data-ttu-id="948dc-208">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="948dc-208">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8b7c3-209">响应</span><span class="sxs-lookup"><span data-stu-id="8b7c3-209">Response</span></span>
+## <a name="response"></a><span data-ttu-id="948dc-209">响应</span><span class="sxs-lookup"><span data-stu-id="948dc-209">Response</span></span>
 
-<span data-ttu-id="8b7c3-p107">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [openTypeExtension](../resources/opentypeextension.md) 对象。根据 GET 查询，准确的响应正文有所不同。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-p107">If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body. Depending on the GET query, the exact response body differs.</span></span>
-## <a name="example"></a><span data-ttu-id="8b7c3-212">示例</span><span class="sxs-lookup"><span data-stu-id="8b7c3-212">Example</span></span>
+<span data-ttu-id="948dc-p107">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [openTypeExtension](../resources/opentypeextension.md) 对象。根据 GET 查询，准确的响应正文有所不同。</span><span class="sxs-lookup"><span data-stu-id="948dc-p107">If successful, this method returns a `200 OK` response code and [openTypeExtension](../resources/opentypeextension.md) object in the response body. Depending on the GET query, the exact response body differs.</span></span>
+## <a name="example"></a><span data-ttu-id="948dc-212">示例</span><span class="sxs-lookup"><span data-stu-id="948dc-212">Example</span></span>
 
-#### <a name="request-1"></a><span data-ttu-id="8b7c3-213">请求 1</span><span class="sxs-lookup"><span data-stu-id="8b7c3-213">Request 1</span></span>
+#### <a name="request-1"></a><span data-ttu-id="948dc-213">请求 1</span><span class="sxs-lookup"><span data-stu-id="948dc-213">Request 1</span></span>
 
-<span data-ttu-id="8b7c3-p108">第一个示例展示引用扩展的两种方式并获取指定邮件中的扩展。无论用于引用扩展的方式为何，该响应都相同。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-p108">The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The response is the same regardless of the way used to reference the extension.</span></span>
+<span data-ttu-id="948dc-p108">第一个示例展示引用扩展的两种方式并获取指定邮件中的扩展。无论用于引用扩展的方式为何，该响应都相同。</span><span class="sxs-lookup"><span data-stu-id="948dc-p108">The first example shows 2 ways of referencing an extension and gets the extension in the specified message. The response is the same regardless of the way used to reference the extension.</span></span>
 
-<span data-ttu-id="8b7c3-216">首先，通过它的名称：</span><span class="sxs-lookup"><span data-stu-id="8b7c3-216">First, by its name:</span></span> 
+<span data-ttu-id="948dc-216">首先，通过它的名称：</span><span class="sxs-lookup"><span data-stu-id="948dc-216">First, by its name:</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -144,15 +144,15 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
-<span data-ttu-id="8b7c3-217">其次，通过其 ID（完全限定的名称）：</span><span class="sxs-lookup"><span data-stu-id="8b7c3-217">Second, by its ID (fully qualified name):</span></span>
+<span data-ttu-id="948dc-217">其次，通过其 ID（完全限定的名称）：</span><span class="sxs-lookup"><span data-stu-id="948dc-217">Second, by its ID (fully qualified name):</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
 
-#### <a name="response-1"></a><span data-ttu-id="8b7c3-218">响应 1</span><span class="sxs-lookup"><span data-stu-id="8b7c3-218">Response 1</span></span>
-<span data-ttu-id="8b7c3-219">下面是第一个示例的响应。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-219">Here is the response for the first example.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="948dc-218">响应 1</span><span class="sxs-lookup"><span data-stu-id="948dc-218">Response 1</span></span>
+<span data-ttu-id="948dc-219">下面是第一个示例的响应。</span><span class="sxs-lookup"><span data-stu-id="948dc-219">Here is the response for the first example.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -178,9 +178,9 @@ Content-type: application/json
 ****
 
 
-#### <a name="request-2"></a><span data-ttu-id="8b7c3-220">请求 2</span><span class="sxs-lookup"><span data-stu-id="8b7c3-220">Request 2</span></span>
+#### <a name="request-2"></a><span data-ttu-id="948dc-220">请求 2</span><span class="sxs-lookup"><span data-stu-id="948dc-220">Request 2</span></span>
 
-<span data-ttu-id="8b7c3-221">第二个实例通过其名称引用扩展并获取指定组事件中的扩展。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-221">The second example references an extension by its name and gets the extension in the specified group event.</span></span>
+<span data-ttu-id="948dc-221">第二个实例通过其名称引用扩展并获取指定组事件中的扩展。</span><span class="sxs-lookup"><span data-stu-id="948dc-221">The second example references an extension by its name and gets the extension in the specified group event.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -191,9 +191,9 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal/
 ```
 
-#### <a name="response-2"></a><span data-ttu-id="8b7c3-222">响应 2</span><span class="sxs-lookup"><span data-stu-id="8b7c3-222">Response 2</span></span>
+#### <a name="response-2"></a><span data-ttu-id="948dc-222">响应 2</span><span class="sxs-lookup"><span data-stu-id="948dc-222">Response 2</span></span>
 
-<span data-ttu-id="8b7c3-223">下面是第二个示例的响应。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-223">Here is the response from the second example.</span></span>
+<span data-ttu-id="948dc-223">下面是第二个示例的响应。</span><span class="sxs-lookup"><span data-stu-id="948dc-223">Here is the response from the second example.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -217,9 +217,9 @@ Content-type: application/json
 
 ****
 
-#### <a name="request-3"></a><span data-ttu-id="8b7c3-224">请求 3</span><span class="sxs-lookup"><span data-stu-id="8b7c3-224">Request 3</span></span>
+#### <a name="request-3"></a><span data-ttu-id="948dc-224">请求 3</span><span class="sxs-lookup"><span data-stu-id="948dc-224">Request 3</span></span>
 
-<span data-ttu-id="8b7c3-p109">第三个示例通过包括筛选器返回的扩展获取并展开指定的邮件。此筛选器返回其 **id** 与完全限定的名称匹配的扩展。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-p109">The third example gets and expands the specified message by including the extension returned from a filter. The filter returns the extension that has its **id** matching a fully qualified name.</span></span>
+<span data-ttu-id="948dc-p109">第三个示例通过包括筛选器返回的扩展获取并展开指定的邮件。此筛选器返回其 **id** 与完全限定的名称匹配的扩展。</span><span class="sxs-lookup"><span data-stu-id="948dc-p109">The third example gets and expands the specified message by including the extension returned from a filter. The filter returns the extension that has its **id** matching a fully qualified name.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -231,9 +231,9 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 ```
 
 
-#### <a name="response-3"></a><span data-ttu-id="8b7c3-227">响应 3</span><span class="sxs-lookup"><span data-stu-id="8b7c3-227">Response 3</span></span>
+#### <a name="response-3"></a><span data-ttu-id="948dc-227">响应 3</span><span class="sxs-lookup"><span data-stu-id="948dc-227">Response 3</span></span>
 
-<span data-ttu-id="8b7c3-p110">下面是第三个示例的响应。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-p110">And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="948dc-p110">下面是第三个示例的响应。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="948dc-p110">And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -315,9 +315,9 @@ Content-type: application/json
 
 ****
 
-#### <a name="request-4"></a><span data-ttu-id="8b7c3-231">请求 4</span><span class="sxs-lookup"><span data-stu-id="8b7c3-231">Request 4</span></span>
+#### <a name="request-4"></a><span data-ttu-id="948dc-231">请求 4</span><span class="sxs-lookup"><span data-stu-id="948dc-231">Request 4</span></span>
 
-<span data-ttu-id="8b7c3-232">第四个示例通过其完全限定的名称引用扩展并获取指定组帖子中的扩展。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-232">The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.</span></span>
+<span data-ttu-id="948dc-232">第四个示例通过其完全限定的名称引用扩展并获取指定组帖子中的扩展。</span><span class="sxs-lookup"><span data-stu-id="948dc-232">The fourth example references an extension by its fully qualified name and gets the extension in the specified group post.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -327,9 +327,9 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 ```
 
-#### <a name="response-4"></a><span data-ttu-id="8b7c3-233">响应 4</span><span class="sxs-lookup"><span data-stu-id="8b7c3-233">Response 4</span></span>
+#### <a name="response-4"></a><span data-ttu-id="948dc-233">响应 4</span><span class="sxs-lookup"><span data-stu-id="948dc-233">Response 4</span></span>
 
-<span data-ttu-id="8b7c3-234">下面是第四个示例的响应。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-234">Here is the response from the fourth example.</span></span> 
+<span data-ttu-id="948dc-234">下面是第四个示例的响应。</span><span class="sxs-lookup"><span data-stu-id="948dc-234">Here is the response from the fourth example.</span></span> 
 
 <!-- {
   "blockType": "ignored",
@@ -357,9 +357,9 @@ Content-Type: application/json
 ```
 
 
-#### <a name="request-5"></a><span data-ttu-id="8b7c3-235">响应 5</span><span class="sxs-lookup"><span data-stu-id="8b7c3-235">Request 5</span></span>
+#### <a name="request-5"></a><span data-ttu-id="948dc-235">响应 5</span><span class="sxs-lookup"><span data-stu-id="948dc-235">Request 5</span></span>
 
-<span data-ttu-id="8b7c3-p111">第五个示例查看已登录用户的邮箱中的所有邮件，并查找包含与筛选器匹配的扩展的邮件，然后通过包括扩展将其展开。此筛选器将返回其 **id** 属性与扩展名 `Com.Contoso.Referral` 匹配的扩展。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-p111">The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name `Com.Contoso.Referral`.</span></span>
+<span data-ttu-id="948dc-p111">第五个示例查看已登录用户的邮箱中的所有邮件，并查找包含与筛选器匹配的扩展的邮件，然后通过包括扩展将其展开。此筛选器将返回其 **id** 属性与扩展名 `Com.Contoso.Referral` 匹配的扩展。</span><span class="sxs-lookup"><span data-stu-id="948dc-p111">The fifth example looks at all messages in the signed-in user's mailbox to find those that contain an extension matching a filter, and expands them by including the extension. The filter returns extensions that has the **id** property matching the extension name `Com.Contoso.Referral`.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -370,11 +370,11 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 ```
 
 
-#### <a name="response-5"></a><span data-ttu-id="8b7c3-238">响应 5</span><span class="sxs-lookup"><span data-stu-id="8b7c3-238">Response 5</span></span>
+#### <a name="response-5"></a><span data-ttu-id="948dc-238">响应 5</span><span class="sxs-lookup"><span data-stu-id="948dc-238">Response 5</span></span>
 
-<span data-ttu-id="8b7c3-239">在第五个示例的响应中，用户邮箱中仅有一封邮件，其 **id** 等于 `Com.Contoso.Referral`。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-239">In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to `Com.Contoso.Referral`.</span></span>
+<span data-ttu-id="948dc-239">在第五个示例的响应中，用户邮箱中仅有一封邮件，其 **id** 等于 `Com.Contoso.Referral`。</span><span class="sxs-lookup"><span data-stu-id="948dc-239">In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to `Com.Contoso.Referral`.</span></span>
 
-<span data-ttu-id="8b7c3-p112">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8b7c3-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="948dc-p112">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="948dc-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

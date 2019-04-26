@@ -1,31 +1,31 @@
 ---
 title: mediaInfo 资源类型
-description: 操作中使用的媒体信息提示。
+description: 在提示操作中使用的媒体信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 65cf71f5c116fe213d0e32d560ec24704bff1172
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523979"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562601"
 ---
-# <a name="mediainfo-resource-type"></a><span data-ttu-id="43d3b-103">mediaInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="43d3b-103">mediaInfo resource type</span></span>
+# <a name="mediainfo-resource-type"></a><span data-ttu-id="2edf0-103">mediaInfo 资源类型</span><span class="sxs-lookup"><span data-stu-id="2edf0-103">mediaInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="43d3b-104">操作中使用的媒体信息提示。</span><span class="sxs-lookup"><span data-stu-id="43d3b-104">The media information used in actions for prompts.</span></span>
+<span data-ttu-id="2edf0-104">在提示操作中使用的媒体信息。</span><span class="sxs-lookup"><span data-stu-id="2edf0-104">The media information used in actions for prompts.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="43d3b-105">属性</span><span class="sxs-lookup"><span data-stu-id="43d3b-105">Properties</span></span>
-| <span data-ttu-id="43d3b-106">属性</span><span class="sxs-lookup"><span data-stu-id="43d3b-106">Property</span></span>       | <span data-ttu-id="43d3b-107">类型</span><span class="sxs-lookup"><span data-stu-id="43d3b-107">Type</span></span>    | <span data-ttu-id="43d3b-108">说明</span><span class="sxs-lookup"><span data-stu-id="43d3b-108">Description</span></span>                      |
+## <a name="properties"></a><span data-ttu-id="2edf0-105">属性</span><span class="sxs-lookup"><span data-stu-id="2edf0-105">Properties</span></span>
+| <span data-ttu-id="2edf0-106">属性</span><span class="sxs-lookup"><span data-stu-id="2edf0-106">Property</span></span>       | <span data-ttu-id="2edf0-107">类型</span><span class="sxs-lookup"><span data-stu-id="2edf0-107">Type</span></span>    | <span data-ttu-id="2edf0-108">说明</span><span class="sxs-lookup"><span data-stu-id="2edf0-108">Description</span></span>                      |
 |:---------------|:--------|:---------------------------------|
-| <span data-ttu-id="43d3b-109">resourceId</span><span class="sxs-lookup"><span data-stu-id="43d3b-109">resourceId</span></span>     | <span data-ttu-id="43d3b-110">String</span><span class="sxs-lookup"><span data-stu-id="43d3b-110">String</span></span>  | <span data-ttu-id="43d3b-111">唯一标识的资源。</span><span class="sxs-lookup"><span data-stu-id="43d3b-111">Unique identity of the resource.</span></span> |
-| <span data-ttu-id="43d3b-112">uri</span><span class="sxs-lookup"><span data-stu-id="43d3b-112">uri</span></span>            | <span data-ttu-id="43d3b-113">String</span><span class="sxs-lookup"><span data-stu-id="43d3b-113">String</span></span>  | <span data-ttu-id="43d3b-114">资源的路径。</span><span class="sxs-lookup"><span data-stu-id="43d3b-114">Path to the resource.</span></span>            |
+| <span data-ttu-id="2edf0-109">resourceId</span><span class="sxs-lookup"><span data-stu-id="2edf0-109">resourceId</span></span>     | <span data-ttu-id="2edf0-110">String</span><span class="sxs-lookup"><span data-stu-id="2edf0-110">String</span></span>  | <span data-ttu-id="2edf0-111">资源的唯一标识。</span><span class="sxs-lookup"><span data-stu-id="2edf0-111">Unique identity of the resource.</span></span> |
+| <span data-ttu-id="2edf0-112">url</span><span class="sxs-lookup"><span data-stu-id="2edf0-112">uri</span></span>            | <span data-ttu-id="2edf0-113">String</span><span class="sxs-lookup"><span data-stu-id="2edf0-113">String</span></span>  | <span data-ttu-id="2edf0-114">资源的路径。</span><span class="sxs-lookup"><span data-stu-id="2edf0-114">Path to the resource.</span></span>            |
 
-## <a name="json-representation"></a><span data-ttu-id="43d3b-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="43d3b-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2edf0-115">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="2edf0-115">JSON representation</span></span>
 
-<span data-ttu-id="43d3b-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="43d3b-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2edf0-116">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="2edf0-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

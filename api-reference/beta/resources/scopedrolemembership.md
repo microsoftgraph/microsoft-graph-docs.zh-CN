@@ -1,38 +1,38 @@
 ---
 title: scopedRoleMembership 资源类型
-description: 作用域角色成员资格介绍目录角色，进一步范围限定到管理单元 (AU) 的用户的成员的身份。  这提供了一种机制，以允许租户范围公司 adminsistrator 以委派用户管理用户和组的子集组织 （由 AU 正在定义的子集） 的管理权限。
+description: 作用域角色成员身份描述了用户目录角色的成员身份, 该角色将进一步限定为管理单元 (AU)。  这提供了一种机制, 允许租户范围内的公司 adminsistrator 将管理权限委派给用户, 以管理组织的某个子集 (由 AU 定义的子集) 中的用户和组。
 localization_priority: Normal
 ms.openlocfilehash: 2d51ad696487e7daafb9b0f4fcef0934e4f6d6e2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640789"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562977"
 ---
-# <a name="scopedrolemembership-resource-type"></a><span data-ttu-id="e871e-104">scopedRoleMembership 资源类型</span><span class="sxs-lookup"><span data-stu-id="e871e-104">scopedRoleMembership resource type</span></span>
+# <a name="scopedrolemembership-resource-type"></a><span data-ttu-id="e6c19-104">scopedRoleMembership 资源类型</span><span class="sxs-lookup"><span data-stu-id="e6c19-104">scopedRoleMembership resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e871e-105">作用域角色成员资格介绍目录角色，进一步范围限定到管理单元 (AU) 的用户的成员的身份。</span><span class="sxs-lookup"><span data-stu-id="e871e-105">A scoped-role membership describes a user's membership of a directory role, that is further scoped to an Administrative Unit (AU).</span></span>  <span data-ttu-id="e871e-106">这提供了一种机制，以允许租户范围公司 adminsistrator 以委派用户管理用户和组的子集组织 （由 AU 正在定义的子集） 的管理权限。</span><span class="sxs-lookup"><span data-stu-id="e871e-106">This provides a mechanism to allow a tenant-wide company adminsistrator to delegate administrative privileges to a user to manage users and groups in a subset of the organization (the subset being defined by an AU).</span></span>
+<span data-ttu-id="e6c19-105">作用域角色成员身份描述了用户目录角色的成员身份, 该角色将进一步限定为管理单元 (AU)。</span><span class="sxs-lookup"><span data-stu-id="e6c19-105">A scoped-role membership describes a user's membership of a directory role, that is further scoped to an Administrative Unit (AU).</span></span>  <span data-ttu-id="e6c19-106">这提供了一种机制, 允许租户范围内的公司 adminsistrator 将管理权限委派给用户, 以管理组织的某个子集 (由 AU 定义的子集) 中的用户和组。</span><span class="sxs-lookup"><span data-stu-id="e6c19-106">This provides a mechanism to allow a tenant-wide company adminsistrator to delegate administrative privileges to a user to manage users and groups in a subset of the organization (the subset being defined by an AU).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="e871e-107">Methods</span><span class="sxs-lookup"><span data-stu-id="e871e-107">Methods</span></span>
-<span data-ttu-id="e871e-108">不支持直接查询到此资源。</span><span class="sxs-lookup"><span data-stu-id="e871e-108">Direct queries to this resource are not supported.</span></span>  <span data-ttu-id="e871e-109">请参阅[管理单元](administrativeunit.md)主题，若要查看有关如何查询范围角色成员身份，以及添加和移除范围角色成员身份信息。</span><span class="sxs-lookup"><span data-stu-id="e871e-109">Please see the [adminstrative units](administrativeunit.md) topic to see information on how to query for scoped-role memberships, as well as adding and removing scoped-role memberships.</span></span> 
+## <a name="methods"></a><span data-ttu-id="e6c19-107">方法</span><span class="sxs-lookup"><span data-stu-id="e6c19-107">Methods</span></span>
+<span data-ttu-id="e6c19-108">不支持直接向此资源进行查询。</span><span class="sxs-lookup"><span data-stu-id="e6c19-108">Direct queries to this resource are not supported.</span></span>  <span data-ttu-id="e6c19-109">请参阅[管理 units](administrativeunit.md)主题, 查看有关如何查询作用域内角色成员身份的信息, 以及如何添加和删除作用域角色成员身份。</span><span class="sxs-lookup"><span data-stu-id="e6c19-109">Please see the [adminstrative units](administrativeunit.md) topic to see information on how to query for scoped-role memberships, as well as adding and removing scoped-role memberships.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="e871e-110">属性</span><span class="sxs-lookup"><span data-stu-id="e871e-110">Properties</span></span>
-| <span data-ttu-id="e871e-111">属性</span><span class="sxs-lookup"><span data-stu-id="e871e-111">Property</span></span>   | <span data-ttu-id="e871e-112">类型</span><span class="sxs-lookup"><span data-stu-id="e871e-112">Type</span></span> | <span data-ttu-id="e871e-113">说明</span><span class="sxs-lookup"><span data-stu-id="e871e-113">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="e6c19-110">属性</span><span class="sxs-lookup"><span data-stu-id="e6c19-110">Properties</span></span>
+| <span data-ttu-id="e6c19-111">属性</span><span class="sxs-lookup"><span data-stu-id="e6c19-111">Property</span></span>   | <span data-ttu-id="e6c19-112">类型</span><span class="sxs-lookup"><span data-stu-id="e6c19-112">Type</span></span> | <span data-ttu-id="e6c19-113">说明</span><span class="sxs-lookup"><span data-stu-id="e6c19-113">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e871e-114">administrativeUnitId</span><span class="sxs-lookup"><span data-stu-id="e871e-114">administrativeUnitId</span></span>|<span data-ttu-id="e871e-115">string</span><span class="sxs-lookup"><span data-stu-id="e871e-115">string</span></span>|<span data-ttu-id="e871e-116">唯一标识符的目录角色范围限定为管理单元</span><span class="sxs-lookup"><span data-stu-id="e871e-116">Unique identifier for the administrative unit that the directory role is scoped to</span></span>|
-|<span data-ttu-id="e871e-117">id</span><span class="sxs-lookup"><span data-stu-id="e871e-117">id</span></span>|<span data-ttu-id="e871e-118">string</span><span class="sxs-lookup"><span data-stu-id="e871e-118">string</span></span>| <span data-ttu-id="e871e-119">作用域角色成员身份的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="e871e-119">Unique identifier for the scoped-role membership.</span></span> <span data-ttu-id="e871e-120">只读。</span><span class="sxs-lookup"><span data-stu-id="e871e-120">Read-only.</span></span>|
-|<span data-ttu-id="e871e-121">roleId</span><span class="sxs-lookup"><span data-stu-id="e871e-121">roleId</span></span>|<span data-ttu-id="e871e-122">string</span><span class="sxs-lookup"><span data-stu-id="e871e-122">string</span></span>| <span data-ttu-id="e871e-123">为目录角色中的成员的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="e871e-123">Unique identifier for the directory role that the member is in.</span></span>|
-|<span data-ttu-id="e871e-124">roleMemberInfo</span><span class="sxs-lookup"><span data-stu-id="e871e-124">roleMemberInfo</span></span>|[<span data-ttu-id="e871e-125">identity</span><span class="sxs-lookup"><span data-stu-id="e871e-125">identity</span></span>](identity.md)| <span data-ttu-id="e871e-126">角色成员身份信息。</span><span class="sxs-lookup"><span data-stu-id="e871e-126">Role member identity information.</span></span> <span data-ttu-id="e871e-127">表示此作用域角色的成员的用户。</span><span class="sxs-lookup"><span data-stu-id="e871e-127">Represents the user that is a member of this scoped-role.</span></span>|
+|<span data-ttu-id="e6c19-114">administrativeUnitId</span><span class="sxs-lookup"><span data-stu-id="e6c19-114">administrativeUnitId</span></span>|<span data-ttu-id="e6c19-115">string</span><span class="sxs-lookup"><span data-stu-id="e6c19-115">string</span></span>|<span data-ttu-id="e6c19-116">目录角色作用域的管理单元的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="e6c19-116">Unique identifier for the administrative unit that the directory role is scoped to</span></span>|
+|<span data-ttu-id="e6c19-117">id</span><span class="sxs-lookup"><span data-stu-id="e6c19-117">id</span></span>|<span data-ttu-id="e6c19-118">string</span><span class="sxs-lookup"><span data-stu-id="e6c19-118">string</span></span>| <span data-ttu-id="e6c19-119">作用域角色成员身份的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="e6c19-119">Unique identifier for the scoped-role membership.</span></span> <span data-ttu-id="e6c19-120">只读。</span><span class="sxs-lookup"><span data-stu-id="e6c19-120">Read-only.</span></span>|
+|<span data-ttu-id="e6c19-121">roleId</span><span class="sxs-lookup"><span data-stu-id="e6c19-121">roleId</span></span>|<span data-ttu-id="e6c19-122">string</span><span class="sxs-lookup"><span data-stu-id="e6c19-122">string</span></span>| <span data-ttu-id="e6c19-123">成员所在目录角色的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="e6c19-123">Unique identifier for the directory role that the member is in.</span></span>|
+|<span data-ttu-id="e6c19-124">roleMemberInfo</span><span class="sxs-lookup"><span data-stu-id="e6c19-124">roleMemberInfo</span></span>|[<span data-ttu-id="e6c19-125">identity</span><span class="sxs-lookup"><span data-stu-id="e6c19-125">identity</span></span>](identity.md)| <span data-ttu-id="e6c19-126">角色成员标识信息。</span><span class="sxs-lookup"><span data-stu-id="e6c19-126">Role member identity information.</span></span> <span data-ttu-id="e6c19-127">表示属于此作用域角色的成员的用户。</span><span class="sxs-lookup"><span data-stu-id="e6c19-127">Represents the user that is a member of this scoped-role.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e871e-128">关系</span><span class="sxs-lookup"><span data-stu-id="e871e-128">Relationships</span></span>
-<span data-ttu-id="e871e-129">无</span><span class="sxs-lookup"><span data-stu-id="e871e-129">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="e6c19-128">关系</span><span class="sxs-lookup"><span data-stu-id="e6c19-128">Relationships</span></span>
+<span data-ttu-id="e6c19-129">无</span><span class="sxs-lookup"><span data-stu-id="e6c19-129">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="e871e-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e871e-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e6c19-130">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="e6c19-130">JSON representation</span></span>
 
-<span data-ttu-id="e871e-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e871e-131">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e6c19-131">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="e6c19-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
