@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 92cea089ea86e1ad56607442ac983d83c0c78e68
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784577"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548283"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>windowsKioskConfiguration 资源类型
 
@@ -34,9 +34,9 @@ ms.locfileid: "31784577"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -48,8 +48,8 @@ ms.locfileid: "31784577"
 |kioskBrowserEnableNavigationButtons|布尔值|启用展台浏览器的导航按钮 (前进/后退)。 默认情况下, 导航按钮处于禁用状态。|
 |kioskBrowserEnableEndSessionButton|布尔值|启用展台浏览器的结束会话按钮。 默认情况下, "结束会话" 按钮处于禁用状态。|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|指定在展台浏览器以全新状态重新启动之前会话处于空闲状态的分钟数。  有效值为1-1440。 有效值为1至1440|
-|kioskBrowserBlockedURLs|String 集合|指定展台浏览器不应导航到的 url|
-|kioskBrowserBlockedUrlExceptions|String 集合|指定展台浏览器允许其导航到的 url|
+|kioskBrowserBlockedURLs|String collection|指定展台浏览器不应导航到的 url|
+|kioskBrowserBlockedUrlExceptions|String collection|指定展台浏览器允许其导航到的 url|
 |edgeKioskEnablePublicBrowsing|布尔值|为 Microsoft Edge 浏览器启用公共浏览展台模式。 默认值为 false。|
 
 ## <a name="relationships"></a>关系

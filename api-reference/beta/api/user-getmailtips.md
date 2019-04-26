@@ -1,30 +1,28 @@
 ---
-title: 用户： getMailTips
-description: 获取已登录的用户作为可用的一个或多个收件人的邮件提示。
+title: '用户: getMailTips'
+description: 获取一个或多个收件人对登录用户可用的邮件提示。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: e3397bade518cde6e17759096601f364f84e918e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516138"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547915"
 ---
-# <a name="user-getmailtips"></a>用户： getMailTips
+# <a name="user-getmailtips"></a>用户: getMailTips
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+获取一个或多个收件人对登录[用户](../resources/user.md)可用的邮件提示。
 
-获取有空登录[用户](../resources/user.md)的一个或多个收件人的邮件提示。
-
-请注意，通过使`POST`调用`getMailTips`操作，您可以请求对特定类型的邮件提示，一次返回多个收件人。 [邮件提示](../resources/mailtips.md)集合中返回请求的邮件提示。
+请注意, 通过`POST`调用`getMailTips`操作, 您可以请求一次为多个收件人返回特定类型的邮件提示。 在[邮件](../resources/mailtips.md)提示集合中返回请求的邮件提示。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Mail.Read Mail.Read.Shared    |
+|委派（工作或学校帐户） | 已阅读 "邮件"、"读取"、"共享"    |
 |委派（个人 Microsoft 帐户） | Mail.Read    |
 |应用程序 | Mail.Read |
 
@@ -47,22 +45,22 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|EmailAddresses|String 集合|要获取的邮件提示的收件人的 SMTP 地址的集合。|
-|MailTipsOptions|String|Flags 一个枚举值，该值代表请求邮件提示。 可能的值为： `automaticReplies`， `customMailTip`， `deliveryRestriction`， `externalMemberCount`， `mailboxFullStatus`， `maxMessageSize`， `moderationStatus`， `recipientScope`， `recipientSuggestions`，和`totalMemberCount`。|
+|EmailAddresses|String collection|要获取其邮件提示的收件人的 SMTP 地址集合。|
+|MailTipsOptions|String|表示请求的邮件提示的标志的枚举。 可能的值为`automaticReplies`: `customMailTip`、 `deliveryRestriction`、 `externalMemberCount` `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope`、、、、、、和`totalMemberCount` `recipientSuggestions`|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[邮件提示](../resources/mailtips.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[邮件](../resources/mailtips.md)提示对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
-下面的示例获取指定的收件人，任何自动答复设置和邮箱完全状态邮件提示。
+下面的示例获取指定收件人的邮件提示, 以获取自动答复设置和邮箱完整状态。
 
 <!-- {
   "blockType": "request",
   "name": "user_getmailtips"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/getMailTips
+POST https://graph.microsoft.com/v1.0/me/getMailTips
 Content-Type: application/json
 
 {
@@ -87,7 +85,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailTips)",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.mailTips)",
     "value":[
         {
             "emailAddress":{
@@ -128,15 +126,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "user: getMailTips",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

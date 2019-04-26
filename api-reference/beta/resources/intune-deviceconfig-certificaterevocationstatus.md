@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5fd9a6cd34df322a057d16e3d803d8685f7cd173
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782805"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549356"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>certificateRevocationStatus 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31782805"
 |:---|:---|:---|
 |无|0|未被吊销。|
 |决|1|撤销挂起。|
-|io|双面|已发出吊销命令。|
-|未能|第三章|吊销失败。|
-|吊销|4|吊销.|
+|io|2 |已发出吊销命令。|
+|未能|3 |吊销失败。|
+|吊销|4 |吊销.|
 
 
 

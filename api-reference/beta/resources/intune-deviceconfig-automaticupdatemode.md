@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9af00bda442c1a152820323fc0b7e1ddfcd8c384
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791479"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549338"
 ---
 # <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 枚举类型
 
@@ -24,11 +24,11 @@ ms.locfileid: "31791479"
 |:---|:---|:---|
 |定制|0|用户定义, 默认值, 无意向。|
 |notifyDownload|1|下载时通知。|
-|autoInstallAtMaintenanceTime|双面|在维护时间自动安装。|
-|autoInstallAndRebootAtMaintenanceTime|第三章|在维护时间自动安装和重启。|
-|autoInstallAndRebootAtScheduledTime|4|在计划的时间自动安装和重启。|
-|autoInstallAndRebootWithoutEndUserControl|5|在没有最终用户控件的情况下自动安装和重启|
-|windowsDefault|型|重置为 Windows 默认值。|
+|autoInstallAtMaintenanceTime|2 |在维护时间自动安装。|
+|autoInstallAndRebootAtMaintenanceTime|3 |在维护时间自动安装和重启。|
+|autoInstallAndRebootAtScheduledTime|4 |在计划的时间自动安装和重启。|
+|autoInstallAndRebootWithoutEndUserControl|5 |在没有最终用户控件的情况下自动安装和重启|
+|windowsDefault|6 |重置为 Windows 默认值。|
 
 
 

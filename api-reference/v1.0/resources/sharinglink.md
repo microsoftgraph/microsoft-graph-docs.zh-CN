@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
 ms.openlocfilehash: f16f8240800be4b9c1780a4057583381b736f079
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481424"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549662"
 ---
 # <a name="sharinglink-resource-type"></a>SharingLink 资源类型
 
@@ -45,7 +45,7 @@ ms.locfileid: "30481424"
 | type        | 字符串        | 创建的链接类型。
 | scope       | 字符串        | 由该权限表示的链接范围。值 `anonymous` 表示该链接对任何人均可用，`organization` 表示该链接仅可由登录到同一个租户的用户使用。
 | webHtml     | String        | 对于 `embed` 链接，此属性包含在网页上嵌入项的 `<iframe>` 元素的 HTML 代码。
-| webUrl      | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
+| WebUrl      | String        | 在 OneDrive 网站上的浏览器中打开项的 URL。
 
 [Identity]: identity.md
 

@@ -3,11 +3,11 @@ title: settingValue 资源类型
 description: 由名称/值对表示的设置。
 localization_priority: Normal
 ms.openlocfilehash: 3edf5bdc1fae77702206eae78d53fcf0fdc5b644
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834032"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549683"
 ---
 # <a name="settingvalue-resource-type"></a>settingValue 资源类型
 
@@ -17,8 +17,8 @@ ms.locfileid: "27834032"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|name|字符串| 设置的名称（由 [groupSettingTemplate](groupsettingtemplate.md) 定义）。 |
-|value|字符串| 设置的值。 |
+|name|String| 设置的名称 (由[groupSettingTemplate](groupsettingtemplate.md)定义)。 |
+|value|String| 设置的值。 |
 
 ### <a name="json-representation"></a>JSON 表示形式
 

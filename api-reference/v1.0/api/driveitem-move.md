@@ -6,11 +6,11 @@ title: 移动文件或文件夹
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 385c2d9013544b60be5d11fd13ce29df1a6a8ee0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481830"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548038"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>将 DriveItem 移动到一个新的文件夹
 
