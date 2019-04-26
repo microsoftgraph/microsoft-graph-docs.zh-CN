@@ -116,14 +116,16 @@ items:
             href: outlook-mail-concept-overview.md
           - name: 自动发送邮件
             href: outlook-create-send-messages.md
-          - name: 整理邮件
-            href: outlook-organize-messages.md
+          - name: 获取 MIME 内容（预览版）
+            href: outlook-get-mime-message.md
           - name: 获取共享邮件
             href: outlook-share-messages-folders.md
-          - name: 不可变 ID（预览版）
-            href: outlook-immutable-id.md
           - name: 从其他用户身份发送邮件
             href: outlook-send-mail-from-other-user.md
+          - name: 整理邮件
+            href: outlook-organize-messages.md
+          - name: 不可变 ID（预览版）
+            href: outlook-immutable-id.md
       - name: 注释
         displayName: OneNote
         items:
@@ -253,6 +255,9 @@ items:
           - name: 更改通知
             href: webhooks.md
             displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            items:
+              - name: 缺少 Outlook 通知（预览版）
+                href: webhooks-outlook-authz.md
           - name: 跟踪更改
             displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
             items:
