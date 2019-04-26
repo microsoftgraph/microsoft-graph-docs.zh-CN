@@ -5,11 +5,11 @@ ms.date: 09/14/2017
 title: ShareAction
 localization_priority: Normal
 ms.openlocfilehash: 785a0a9ac9a2a1ecbd40c0d8ccae16dca9594fdf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520534"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584088"
 ---
 # <a name="shareaction-resource-type"></a>ShareAction 资源类型
 
@@ -52,8 +52,6 @@ ms.locfileid: "29520534"
   "keywords": "activities,activity,action,mention",
   "section": "documentation",
   "tocPath": "Resources/ShareAction",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/shareaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

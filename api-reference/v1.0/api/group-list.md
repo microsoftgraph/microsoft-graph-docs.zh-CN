@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 8ede194abffe745bee9a23906b965d43de93cec8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643739"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561836"
 ---
 # <a name="list-groups"></a>列出组
 列出组织中所有可用的组，包括但不限于 Office 365 组。
@@ -36,12 +36,14 @@ GET /groups
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-若要仅列出 Office 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：<!-- { "blockType": "ignored" } -->
+若要仅列出 Office 365 组（亦称为“统一组”），请对 **groupTypes** 应用筛选器：
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-可以使用 OData 查询选项 `$orderby`，按 **displayName** 值对组织中的组进行排序，如下面的示例所示：<!-- { "blockType": "ignored" } -->
+可以使用 OData 查询选项 `$orderby`，按 **displayName** 值对组织中的组进行排序，如下面的示例所示：
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 ```

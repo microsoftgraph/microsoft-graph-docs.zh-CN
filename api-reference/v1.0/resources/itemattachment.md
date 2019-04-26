@@ -1,13 +1,13 @@
 ---
 title: itemAttachment 资源类型
-description: '附加到另一个事件、邮件或帖子的联系人、事件或邮件。  '
+description: '附加到另一事件、邮件或帖子的联系人、事件或邮件。  '
 localization_priority: Priority
 ms.openlocfilehash: df996175e545b78f4ca9a1b6271b9cb012ffffce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853520"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584815"
 ---
 # <a name="itemattachment-resource-type"></a>itemAttachment 资源类型
 
@@ -27,12 +27,12 @@ ms.locfileid: "27853520"
 |:---------------|:--------|:----------|
 |contentType|String|附件的内容类型。|
 |id|String| 附件 ID。|
-|isInline|布尔|如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。|
+|isInline|Boolean|如果附件是内联的（例如嵌入到项目正文中的图像），请设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|上次修改附件的时间和日期。|
 |name|String|附件的显示名称。|
 |大小|Int32|附件大小，以字节为单位。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |项|[OutlookItem](outlookitem.md)|附加的消息或事件。导航属性。|
