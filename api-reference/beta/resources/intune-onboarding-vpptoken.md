@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 806c652e7d1d75de16dd40f4db1dfc39ae4f442a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774118"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566491"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken 资源类型
 
@@ -47,11 +47,11 @@ ms.locfileid: "31774118"
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|使用 Apple Volume Purchase Program 令牌触发的上一次应用程序同步的当前同步状态。 可取值为：`none`、`inProgress`、`completed`、`failed`。 可取值为：`none`、`inProgress`、`completed`、`failed`。|
 |automaticallyUpdateApps|Boolean|是否自动更新适用于 VPP 令牌的应用。|
 |countryOrRegion|String|是否自动更新适用于 VPP 令牌的应用。|
-|dataSharingConsentGranted|布尔值|同意授予与 Apple volume purchase program 的数据共享。|
+|dataSharingConsentGranted|Boolean|同意授予与 Apple volume purchase program 的数据共享。|
 |displayName|String|管理员指定的令牌友好名称。|
 |locationName|String|从 Apple VPP 返回的令牌位置。|
-|claimTokenManagementFromExternalMdm|布尔值|管理员同意允许来自外部 MDM 的声明令牌管理。|
-|roleScopeTagIds|String 集合|分配给此实体的角色范围标记 id。|
+|claimTokenManagementFromExternalMdm|Boolean|管理员同意允许来自外部 MDM 的声明令牌管理。|
+|roleScopeTagIds|String collection|分配给此实体的角色范围标记 id。|
 
 ## <a name="relationships"></a>关系
 无

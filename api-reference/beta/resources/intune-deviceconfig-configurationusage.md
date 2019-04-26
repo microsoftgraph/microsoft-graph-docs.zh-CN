@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3554281a937f09db5592b3afc152550c814539fe
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774055"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549397"
 ---
 # <a name="configurationusage-enum-type"></a>configurationUsage 枚举类型
 
@@ -24,7 +24,7 @@ ConfigurationUsage 列表的可能值。
 |:---|:---|:---|
 |堵塞|0|许可证.|
 |必需|1|必需。|
-|支持|双面|可选。|
+|支持|2 |可选。|
 
 
 

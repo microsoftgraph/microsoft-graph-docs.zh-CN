@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 988042a5e36cb87f6fedf3c8ba3764c56d955b98
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951815"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566827"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>使用 Microsoft Intune 管理应用
 
@@ -20,7 +20,7 @@ ms.locfileid: "27951815"
 - [Android LOB 应用](intune-apps-androidlobapp.md)
 - [Android 最低操作系统版本](intune-apps-androidminimumoperatingsystem.md)
 - [Android 应用商店应用](intune-apps-androidstoreapp.md)
-- [应用程序配置设置项](intune-apps-appconfigurationsettingitem.md)
+- [应用配置设置项](intune-apps-appconfigurationsettingitem.md)
 - [设备安装状态](intune-books-deviceinstallstate.md)
 - [电子书安装摘要](intune-books-ebookinstallsummary.md)
 - [文件加密信息](intune-apps-fileencryptioninfo.md)
@@ -29,7 +29,7 @@ ms.locfileid: "27951815"
 - [iOS LOB 应用](intune-apps-ioslobapp.md)
 - [iOS LOB 应用分配设置](intune-apps-ioslobappassignmentsettings.md)
 - [iOS 最低操作系统版本](intune-apps-iosminimumoperatingsystem.md)
-- [iOS 移动应用程序配置](intune-apps-iosmobileappconfiguration.md)
+- [iOS 移动应用配置](intune-apps-iosmobileappconfiguration.md)
 - [iOS 应用商店应用](intune-apps-iosstoreapp.md)
 - [iOS 应用商店应用分配设置](intune-apps-iosstoreappassignmentsettings.md)
 - [iOS VPP 应用](intune-apps-iosvppapp.md)
@@ -40,10 +40,10 @@ ms.locfileid: "27951815"
 - [托管的 Android LOB 应用](intune-apps-managedandroidlobapp.md)
 - [托管的 Android 应用商店应用](intune-apps-managedandroidstoreapp.md)
 - [托管的应用](intune-apps-managedapp.md)
-- [托管的应用程序可用性](intune-apps-managedappavailability.md)
+- [托管应用可用性](intune-apps-managedappavailability.md)
 - [托管设备移动应用配置](intune-apps-manageddevicemobileappconfiguration.md)
 - [托管设备移动应用配置分配](intune-apps-manageddevicemobileappconfigurationassignment.md)
-- [管理设备移动应用程序配置设备状态](intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
+- [托管设备移动应用配置设备状态](intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
 - [托管设备移动应用配置设备摘要](intune-apps-manageddevicemobileappconfigurationdevicesummary.md)
 - [托管设备移动应用配置用户状态](intune-apps-manageddevicemobileappconfigurationuserstatus.md)
 - [托管设备移动应用配置用户摘要](intune-apps-manageddevicemobileappconfigurationusersummary.md)
@@ -52,18 +52,18 @@ ms.locfileid: "27951815"
 - [托管的 iOS LOB 应用](intune-apps-managedioslobapp.md)
 - [托管的 iOS 应用商店应用](intune-apps-managediosstoreapp.md)
 - [托管的移动 LOB 应用](intune-apps-managedmobilelobapp.md)
-- [MDM 应用程序配置 key 的 type](intune-apps-mdmappconfigkeytype.md)
+- [MDM 应用配置密钥类型](intune-apps-mdmappconfigkeytype.md)
 - [适用于企业的 Microsoft 应用商店应用](intune-apps-microsoftstoreforbusinessapp.md)
 - [适用于企业的 Microsoft 应用商店分配设置](intune-apps-microsoftstoreforbusinessappassignmentsettings.md)
-- [Microsoft 存储业务许可证类型](intune-apps-microsoftstoreforbusinesslicensetype.md)
+- [适用于企业的 Microsoft Store 许可证类型](intune-apps-microsoftstoreforbusinesslicensetype.md)
 - [移动应用](intune-apps-mobileapp.md)
 - [移动应用分配](intune-apps-mobileappassignment.md)
 - [移动应用分配设置](intune-apps-mobileappassignmentsettings.md)
 - [移动应用类别](intune-apps-mobileappcategory.md)
 - [移动应用内容](intune-apps-mobileappcontent.md)
 - [移动应用内容文件](intune-apps-mobileappcontentfile.md)
-- [移动应用程序内容文件上载状态](intune-apps-mobileappcontentfileuploadstate.md)
-- [移动应用程序发布状态](intune-apps-mobileapppublishingstate.md)
+- [移动应用内容文件上传状态](intune-apps-mobileappcontentfileuploadstate.md)
+- [移动应用发布状态](intune-apps-mobileapppublishingstate.md)
 - [移动 LOB 应用](intune-apps-mobilelobapp.md)
 - [用户安装状态摘要](intune-books-userinstallstatesummary.md)
 - [VPP 授权类型](intune-apps-vpplicensingtype.md)

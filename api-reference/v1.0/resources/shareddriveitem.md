@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
 ms.openlocfilehash: 0d0c5a34d12fe467196c0616befc7376835b632c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481725"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549634"
 ---
 # <a name="shareddriveitem-resource-type"></a>SharedDriveItem 资源类型
 
@@ -47,8 +47,8 @@ ms.locfileid: "30481725"
 
 | 属性 | 类型                          | 说明                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | 要访问的内容的唯一标识符。              |
-| 名称     | String                        | 共享项的显示名称。                             |
+| id       | 字符串                        | 要访问的内容的唯一标识符。              |
+| name     | String                        | 共享项的显示名称。                             |
 | 所有者    | [IdentitySet](identityset.md) | 正在引用的共享项的所有者信息。 |
 
 ## <a name="relationships"></a>关系

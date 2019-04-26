@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 49bffc1147735aeefcbdb541804fbff386f2c77f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917571"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565532"
 ---
 # <a name="delete-device"></a>删除设备
 
@@ -32,7 +32,7 @@ DELETE /devices/{id}
 ```
 > 注意：请求中的“id”是设备的“id”属性，不是“deviceId”属性。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |

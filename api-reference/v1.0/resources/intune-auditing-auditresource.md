@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9e2a6b2309e831a872c4cde04a951819cac292ec
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262081"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534344"
 ---
 # <a name="auditresource-resource-type"></a>auditResource 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "30262081"
 |:---|:---|:---|
 |displayName|String|显示名称。|
 |ModifiedProperties|[auditProperty](../resources/intune-auditing-auditproperty.md) 集合|已修改属性列表。|
-|type|String|审核资源的类型。|
+|type|字符串|审核资源的类型。|
 |resourceId|String|审核资源的 ID。|
 
 ## <a name="relationships"></a>关系

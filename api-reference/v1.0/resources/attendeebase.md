@@ -3,11 +3,11 @@ title: attendeeBase 资源类型
 description: 与会者类型。
 localization_priority: Normal
 ms.openlocfilehash: d009ef6a58c63017addf8b8a1bdecc1974abbff3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878671"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569352"
 ---
 # <a name="attendeebase-resource-type"></a>attendeeBase 资源类型
 
@@ -38,7 +38,7 @@ ms.locfileid: "27878671"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|type|attendeeType| 与会者类型。 可能的值为： `required`， `optional`， `resource`。 当前如果参与者的人员， [findMeetingTimes](../api/user-findmeetingtimes.md)总是将此人为`Required`类型。|
+|类型|attendeeType| 与会者类型。 可能的值包括 `required`、`optional`、`resource`。 目前，如果与会者是人员，[findMeetingTimes](../api/user-findmeetingtimes.md) 始终认为人员是 `Required` 类型。|
 |emailAddress|[emailAddress](emailaddress.md)|添加与会者姓名和 SMTP 地址。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

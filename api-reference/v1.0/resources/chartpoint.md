@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 3318415094a36100851b1c604cba2507de31f558
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962504"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569086"
 ---
 # <a name="chartpoint-resource-type"></a>ChartPoint 资源类型
 
@@ -21,19 +21,19 @@ ms.locfileid: "27962504"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 ChartPoint](../api/chartpoint-get.md) | [WorkbookChartPoint](chartpoint.md) |读取 chartPoint 对象的属性和关系。|
-|[List](../api/chartpoint-list.md) | [WorkbookChartPoint](chartpoint.md)集合 |获取 chartPoint 对象集合。 |
+|[列出](../api/chartpoint-list.md) | [WorkbookChartPoint](chartpoint.md)集合 |获取 chartPoint 对象集合。 |
 |[ItemAt](../api/chartpointscollection-itemat.md)|[WorkbookChartPoint](chartpoint.md)|根据其在系列中的位置检索点。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|value|Json|返回图表点的值。只读。|
+|值|Json|返回图表点的值。 只读。|
 |id|string|唯一标识符|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartPointFormat](chartpointformat.md)|封装图表点的格式属性。只读。|
+|format|[WorkbookChartPointFormat](chartpointformat.md)|封装图表点的格式属性。 只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

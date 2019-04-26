@@ -1,17 +1,17 @@
 ---
-title: 列出 ownedDevices
+title: List ownedDevices
 description: 获取用户拥有的设备列表。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 275e2869763e8cc25728e24c8046506891d2005f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947454"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571280"
 ---
-# <a name="list-owneddevices"></a>列出 ownedDevices
+# <a name="list-owneddevices"></a>List ownedDevices
 
 获取用户拥有的设备列表。
 ## <a name="permissions"></a>权限
@@ -34,7 +34,7 @@ GET /users/{id | userPrincipalName}/ownedDevices
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Accept  | application/json|
+| 接受  | application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

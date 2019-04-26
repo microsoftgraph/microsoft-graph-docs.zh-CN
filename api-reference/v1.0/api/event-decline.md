@@ -1,19 +1,19 @@
 ---
 title: 'event: decline'
-description: 拒绝邀请用户日历中指定的事件。
+description: 拒绝用户日历中的指定事件邀请。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 920a97db9a6716d2111a8179c86d5556042a6edd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962007"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550091"
 ---
 # <a name="event-decline"></a>event: decline
 
-拒绝邀请用户[日历](../resources/calendar.md)中指定的[事件](../resources/event.md)。
+拒绝对用户[日历](../resources/calendar.md)中指定[事件](../resources/event.md)的邀请。
 
 ## <a name="permissions"></a>权限
 

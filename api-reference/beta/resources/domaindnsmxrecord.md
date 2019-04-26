@@ -1,36 +1,34 @@
 ---
 title: domainDnsMxRecord 资源类型
-description: 表示已添加到租户中特定域的 DNS 区域文件的 MX 记录。继承自 DomainDnsRecord 实体。
+description: 表示添加到租户中特定域的 DNS 区域文件中的 MX 记录。 继承自 DomainDnsRecord 实体。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 09af66a522d99645540ec24324c82f565eaedb1e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508417"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535121"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>domainDnsMxRecord 资源类型
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-表示已添加到租户中特定域的 DNS 区域文件的 MX 记录。继承自 [DomainDnsRecord](domaindnsrecord.md) 实体。
+表示添加到租户中特定域的 DNS 区域文件中的 MX 记录。 继承自[DomainDnsRecord](domaindnsrecord.md)实体。
 
 ## <a name="methods"></a>方法
-不支持对该资源进行直接查询。请参阅[域](domain.md)主题了解有关如何查询域服务记录的信息。
+不支持直接向此资源进行查询。 有关如何查询域服务记录的信息, 请参阅[域](domain.md)主题。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|id|字符串| 分配给此实体的唯一标识符。不可为 NULL，只读。|
-|isOptional|Boolean| 如果为 false，则客户必须在 DNS 主机上配置 MX 记录才能使 Microsoft Online Services 在域中正常运行。 |
-|label|字符串| 配置 DNS 主机上的 MX 记录的*别名/主机/名称*属性时使用的值。 |
-|mailExchange|String| 配置 DNS 主机上的 MX 记录的*答复/目标/值*时使用的值。|
-|preference|Int32| 配置 DNS 主机上的 MX 记录的*首选项/优先级*属性时使用的值。 |
-|recordType|String| DNS 记录类型。此值始终是 *Mx*。Key |
-|supportedService|String| Microsoft Online Service 或与该 Mx 记录存在依赖关系的功能。</br></br>可以为以下值之一：**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune* |
-|ttl|Int32| 配置 DNS 主机上的 MX 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null |
+|id|String| 分配给此实体的唯一标识符。 不可为 null, 只读。|
+|isOptional|布尔值| 如果为 false, 则客户必须在 DNS 主机上配置 MX 记录, 才能使 Microsoft Online Services 在域中正常运行。 |
+|label|String| 配置 DNS 主机上的 MX 记录的*别名/主机/名称*属性时使用的值。 |
+|mailExchange|String| 配置 DNS 主机上的 MX 记录的*应答/目标/值*时使用的值。|
+|优先权|Int32| 配置 DNS 主机上的 MX 记录的*首选项/优先级*属性时使用的值。 |
+|recordType|String| DNS 记录的类型。 值始终为*Mx*。 Key |
+|supportedService|String| 与此 MX 记录相关的 Microsoft Online 服务或功能。</br></br>可以是下列值之一: **null**、 *Email*、 *Sharepoint*、 *EmailInternalRelayOnly*、 *OfficeCommunicationsOnline*、 *SharePointDefaultDomain*、 *FullRedelegation*、 *SharePointPublic*、 *OrgIdAuthentication*、 *Yammer*、 *Intune* |
+|ttl|Int32| 配置 DNS 主机上的 MX 记录的*生存时间 (ttl)* 属性时要使用的值。 不可为 null |
 
 ## <a name="relationships"></a>关系
 无
@@ -40,6 +38,7 @@ ms.locfileid: "29508417"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -48,7 +47,6 @@ ms.locfileid: "29508417"
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -63,15 +61,10 @@ ms.locfileid: "29508417"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "domainDnsMxRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/domaindnsmxrecord.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

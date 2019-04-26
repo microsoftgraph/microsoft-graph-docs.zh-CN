@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: a99d63bd880fd37359ba1d72452093443d41236e
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745571"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570769"
 ---
 # <a name="group-resource-type"></a>组资源类型
 

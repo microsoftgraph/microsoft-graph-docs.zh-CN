@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: 835cd7ba930c7e8ea2d26f750a85e097db2399f0
-ms.sourcegitcommit: bf3d0c94faeb206f9f986423a436fb355acd54c1
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31751569"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555435"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>使用 Microsoft Graph 获取 OneNote 内容和结构
 
@@ -339,11 +339,11 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 
 **请注意：**
 
-- 所有 GET 请求都以[服务根 URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url) 开头。 <br/><br/>**示例**：`https://www.onenote.com/api/v1.0/me/notes` 和 `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
+- 所有的 GET 请求都以[服务根 URL](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url) 开头。 <br/><br/>**示例**：`https://www.onenote.com/api/v1.0/me/notes` 和 `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
 
-- URL 查询字符串中的空格必须使用 %20 编码。<br/><br/>**示例**： `filter=title%20eq%20'biology'`
+- URL 查询字符串中的空格必须使用 %20 编码。<br/><br/>**示例**：`filter=title%20eq%20'biology'`
 
-- 属性名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。<br/><br/>**示例**： `filter=tolower(name) eq 'spring'`
+- 属性名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。<br/><br/>**示例**：`filter=tolower(name) eq 'spring'`
  
 
 ### <a name="search--filter"></a>search & filter  
@@ -543,7 +543,7 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **注意：** 检索条目默认数量（即，它们不指定 **top** 表达式）的页面的 GET 请求在响应中将返回一个 **@odata.nextLink** 链接，可使用此链接获取接下来的 20 个条目。
+> **注意：** 检索条目默认数量（即，它们不指定 **top** 表达式）的页面的 GET 请求在响应中将返回一个 **@odata.nextLink** 链接，你可使用此链接获取接下来的 20 个条目。
  
 
 <a name="supported-odata-query-string-options"></a>
@@ -556,9 +556,9 @@ JSON 响应包含预览内容，可用于帮助用户标识页面中的内容。
  
 | 查询选项 | 示例和说明 |  
 |------|------|  
-| count | <p>`count=true`</p><p>集合中的实体计数。 在响应的 **@odata.count** 属性中返回此值。</p> |  
+| count | <p>`count=true`</p><p>集合中的实体计数。在响应的 **@odata.count** 属性中返回此值。</p> |  
 | expand | <p>`expand=sections,sectionGroups`</p><p>要在响应中返回内联的导航属性。 **expand** 表达式支持以下属性：<br /> - 页面：**parentNotebook**、**parentSection**<br /> - 节：**parentNotebook**、**parentSectionGroup**<br /> - 节组：**sections**、**sectionGroups**、**parentNotebook**、**parentSectionGroup**<br /> - 笔记本：**sections**、**sectionGroups**</p><p>默认情况下，页面的 GET 请求同时展开 **parentSection** 并选择该节的 **id**、**name** 和 **self** 属性。节和节组的默认 GET 请求扩展 **parentNotebook** 和 **parentSectionGroup**，并选择父项的**id**、**name** 和 **self** 属性。</p><p>可用于单个实体或集合。<br />使用逗号分隔多个属性。<br />属性名区分大小写。</p> |   
-| filter | <p>`filter=isDefault eq true`</p><p>是否在结果集中包含条目的布尔表达式。 支持以下 OData 运算符和函数：<br /> - 比较运算符：**eq**、**ne**、**gt**、**ge**、**lt**、**le**<br /> - 逻辑运算符：**and**、**or**、**not**<br /> - 字符串函数：**contains**、**endswith**、**startswith**、**length**、**indexof**、**substring**、**tolower**、**toupper**、**trim**、**concat**</p><p>[属性](#onenote-entity-properties)名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。<br /><br />**示例**： `filter=tolower(name) eq 'spring'`</p> |  
+| filter | <p>`filter=isDefault eq true`</p><p>是否在结果集中包含条目的布尔表达式。 支持以下 OData 运算符和函数：<br /> - 比较运算符：**eq**、**ne**、**gt**、**ge**、**lt**、**le**<br /> - 逻辑运算符：**and**、**or**、**not**<br /> - 字符串函数：**contains**、**endswith**、**startswith**、**length**、**indexof**、**substring**、**tolower**、**toupper**、**trim**、**concat**</p><p>[属性](#onenote-entity-properties)名和 OData 字符串比较均区分大小写。 建议使用 OData **tolower** 函数进行字符串比较。<br /><br />**示例**：`filter=tolower(name) eq 'spring'`</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>作为排序依据的[属性](#onenote-entity-properties)，具有可选的 **asc**（默认）或 **desc** 的排序顺序。您可以按请求集合中实体的任意属性进行排序。</p><p>笔记本、节组和节的默认排序顺序为 `name asc`，页面的默认排序顺序为 `lastModifiedTime desc`（最后修改的页面排第一）。</p><p>用逗号隔开多个属性，并按想要应用属性的顺序列出它们。 属性名区分大小写。</p> |  
 | search | <p>`search=cell div`</p><p>仅适用于消费者笔记本。</p><p>要在页面标题、页面正文、图像替换文字、图像 OCR 文本中搜索的术语或短语。默认情况下，搜索查询返回按相关性排序的结果。</p><p>OneNote 使用必应全文搜索来支持短语搜索、词干分解、拼写宽容、相关性和排名、断字、多语言以及其他全文搜索功能。 搜索字符串不区分大小写。</p><p>仅适用于用户拥有的笔记本中的页面。 已编入索引的内容具有私密性，只有所有者才能访问。 受密码保护的页面未编入索引。 仅适用于 `pages` 终结点。</p> |  
 | select | <p>`select=id,title`</p><p>要返回的[属性](#onenote-entity-properties)。 可用于单个实体或集合。 使用逗号分隔多个属性。 属性名区分大小写。</p> |  
@@ -652,7 +652,7 @@ not | `not contains(tolower(title),'school')` |
 |------|------|  
 | 协议 | 所有请求均使用 SSL/TLS HTTPS 协议。 |  
 | 授权标头 | <p>`Bearer {token}`，其中 `{token}` 是已注册应用的一个有效 OAuth 2.0 访问令牌。</p><p>如果缺少或无效，则请求失败，并显示 401 状态代码。 请参阅[身份验证和权限](permissions-reference.md)。</p> |  
-| 接受标头 | <p> `application/json` ，适用于 OneNote 实体和实体集</p><p> `text/html` ，适用于页面内容</p> | 
+| 接受标头 | <p> `application/json` 适用于 OneNote 实体和实体集</p><p> `text/html` 适用于页面内容</p> | 
 
 <br/>
 
@@ -660,7 +660,7 @@ not | `not contains(tolower(title),'school')` |
 |------|------|  
 | 成功代码 | 200 HTTP 状态代码。 |  
 | 响应正文 | JSON 格式、页面 HTML 或文件资源二进制数据中的实体或实体集的 OData 表示形式。  |  
-| Errors | 如果请求失败，API 将在响应正文的 **@api.diagnostics** 对象中返回[错误](onenote-error-codes.md)。 |  
+| 错误 | 如果请求失败，API 将在响应正文的 **@api.diagnostics** 对象中返回[错误](onenote-error-codes.md)。 |  
 | X-CorrelationId 标头 | 唯一标识该请求的 GUID。 在与 Microsoft 支持部门协作来解决问题时，可以使用此值和日期标头值。 |  
 
 
@@ -699,6 +699,6 @@ URL 中的 `version` 段表示想要使用的 Microsoft Graph 的版本。 `v1.0
 
 - [OneNote 页面的输入和输出 HTML](onenote-input-output-html.md)
 - [与 OneNote 集成](integrate-with-onenote.md)
-- [OneNote 开发人员博客](https://go.microsoft.com/fwlink/?LinkID=390183)
+- [OneNote 开发者博客](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [关于 Stack Overflow 的 OneNote 开发问题](https://go.microsoft.com/fwlink/?LinkID=390182)
 - [OneNote GitHub 存储库](https://go.microsoft.com/fwlink/?LinkID=390178)  

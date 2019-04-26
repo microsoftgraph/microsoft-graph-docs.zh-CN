@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b4e866ee1e13d1b9353b042e69042d43af314aca
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781195"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552231"
 ---
 # <a name="iosvppapp-resource-type"></a>iosVppApp 资源类型
 
@@ -25,11 +25,11 @@ ms.locfileid: "31781195"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 iosVppApps](../api/intune-apps-iosvppapp-list.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md) 集合|列出 [iosVppApp](../resources/intune-apps-iosvppapp.md) 对象的属性和关系。|
-|[获取 iosVppApp](../api/intune-apps-iosvppapp-get.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|读取 [iosVppApp](../resources/intune-apps-iosvppapp.md) 对象的属性和关系。|
-|[创建 iosVppApp](../api/intune-apps-iosvppapp-create.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|创建新的 [iosVppApp](../resources/intune-apps-iosvppapp.md) 对象。|
-|[删除 iosVppApp](../api/intune-apps-iosvppapp-delete.md)|无|删除 [iosVppApp](../resources/intune-apps-iosvppapp.md)。|
-|[更新 iosVppApp](../api/intune-apps-iosvppapp-update.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|更新 [iosVppApp](../resources/intune-apps-iosvppapp.md) 对象的属性。|
+|[List iosVppApps](../api/intune-apps-iosvppapp-list.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md) 集合|列出 [iosVppApp](../resources/intune-apps-iosvppapp.md) 对象的属性和关系。|
+|[Get iosVppApp](../api/intune-apps-iosvppapp-get.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|读取 [iosVppApp](../resources/intune-apps-iosvppapp.md) 对象的属性和关系。|
+|[Create iosVppApp](../api/intune-apps-iosvppapp-create.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|创建新的 [iosVppApp](../resources/intune-apps-iosvppapp.md) 对象。|
+|[Delete iosVppApp](../api/intune-apps-iosvppapp-delete.md)|无|删除 [iosVppApp](../resources/intune-apps-iosvppapp.md)。|
+|[Update iosVppApp](../api/intune-apps-iosvppapp-update.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|更新 [iosVppApp](../resources/intune-apps-iosvppapp.md) 对象的属性。|
 |[revokeAllLicenses 操作](../api/intune-apps-iosvppapp-revokealllicenses.md)|无|为给定的应用程序吊销所有分配的 iOS VPP 许可证。|
 |[revokeUserLicense 操作](../api/intune-apps-iosvppapp-revokeuserlicense.md)|无|为给定应用撤销分配的 iOS VPP 用户许可证。|
 |[revokeDeviceLicense 操作](../api/intune-apps-iosvppapp-revokedevicelicense.md)|无|为给定应用撤销分配的 iOS VPP 设备许可证。|
@@ -37,7 +37,7 @@ ms.locfileid: "31781195"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -53,7 +53,7 @@ ms.locfileid: "31781195"
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |usedLicenseCount|Int32|使用中的 VPP 许可证数量。|
 |totalLicenseCount|Int32|VPP 许可证的总数。|

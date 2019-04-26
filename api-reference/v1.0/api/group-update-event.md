@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 1bab9229ea6f005074bfbcce91a3f6d1c5761f54
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991613"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571735"
 ---
 # <a name="update-event"></a>更新事件
 更新 [event](../resources/event.md) 对象。
@@ -68,7 +68,7 @@ Content-length: 211
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
+下面是一个响应示例。
 
 <!-- {
   "blockType": "response",

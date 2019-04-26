@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0ac4dc94099eb8b9b3e9c5e983d2a92d13b48c2e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792956"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570811"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>macOSGeneralDeviceConfiguration 资源类型
 
@@ -25,21 +25,21 @@ ms.locfileid: "31792956"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 macOSGeneralDeviceConfigurations](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 集合|列出 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象的属性和关系。|
-|[获取 macOSGeneralDeviceConfiguration](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md)|读取 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象的属性和关系。|
-|[创建 macOSGeneralDeviceConfiguration](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-create.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md)|创建新的 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象。|
-|[删除 macOSGeneralDeviceConfiguration](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-delete.md)|无|删除 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md)。|
-|[更新 macOSGeneralDeviceConfiguration](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-update.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md)|更新 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象的属性。|
+|[List macOSGeneralDeviceConfigurations](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-list.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 集合|列出 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象的属性和关系。|
+|[Get macOSGeneralDeviceConfiguration](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-get.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md)|读取 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象的属性和关系。|
+|[Create macOSGeneralDeviceConfiguration](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-create.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md)|创建新的 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象。|
+|[Delete macOSGeneralDeviceConfiguration](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-delete.md)|无|删除 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md)。|
+|[Update macOSGeneralDeviceConfiguration](../api/intune-deviceconfig-macosgeneraldeviceconfiguration-update.md)|[macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md)|更新 [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String 集合|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔值|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
@@ -53,35 +53,35 @@ ms.locfileid: "31792956"
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|在屏幕超时之前需要不活动的分钟数。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
-|passwordRequired|布尔值|是否需要密码。|
-|keychainBlockCloudSync|布尔值|指示是否阻止 iCloud 密钥链同步 (macOS 10.12 及更高版本)。|
-|airPrintBlocked|布尔值|指示是否阻止 AirPrint (macOS 10.12 及更高版本)。|
-|airPrintForceTrustedTLS|布尔值|指示 TLS 打印通信是否需要受信任的证书 (macOS 10.13 及更高版本)。|
-|airPrintBlockiBeaconDiscovery|布尔值|指示是否阻止 AirPrint 打印机的 iBeacon 发现。 这可防止来自网络流量的虚假 AirPrint 蓝牙信号 (macOS 10.3 及更高版本)。|
+|passwordRequired|Boolean|是否需要密码。|
+|keychainBlockCloudSync|Boolean|指示是否阻止 iCloud 密钥链同步 (macOS 10.12 及更高版本)。|
+|airPrintBlocked|Boolean|指示是否阻止 AirPrint (macOS 10.12 及更高版本)。|
+|airPrintForceTrustedTLS|Boolean|指示 TLS 打印通信是否需要受信任的证书 (macOS 10.13 及更高版本)。|
+|airPrintBlockiBeaconDiscovery|Boolean|指示是否阻止 AirPrint 打印机的 iBeacon 发现。 这可防止来自网络流量的虚假 AirPrint 蓝牙信号 (macOS 10.3 及更高版本)。|
 |safariBlockAutofill|Boolean|指示在 Safari 中是否阻止用户使用自动填充。|
-|cameraBlocked|布尔值|指示是否阻止用户访问设备的照相机。|
-|iTunesBlockMusicService|布尔值|指示是否阻止音乐服务并将音乐应用还原到经典模式。|
+|cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。|
+|iTunesBlockMusicService|Boolean|指示是否阻止音乐服务并将音乐应用还原到经典模式。|
 |spotlightBlockInternetResults|Boolean|指示是否阻止聚光灯从 Internet 搜索返回任何结果。|
-|keyboardBlockDictation|布尔值|指示是否阻止用户使用听写输入。|
-|definitionLookupBlocked|布尔值|指示是否阻止定义查找。|
-|appleWatchBlockAutoUnlock|布尔值|指示是否阻止用户使用 Apple Watch 解锁其 Mac。|
-|iTunesBlockFileSharing|布尔值|指示是否阻止使用 iTunes 传输文件。|
-|iCloudBlockDocumentSync|布尔值|指示是否阻止 iCloud 文档同步。|
-|iCloudBlockMail|布尔值|指示是否阻止 iCloud 同步邮件。|
-|iCloudBlockAddressBook|布尔值|指示是否阻止 iCloud 同步联系人。|
-|iCloudBlockCalendar|布尔值|指示是否阻止 iCloud 同步日历。|
-|iCloudBlockReminders|布尔值|指示是否阻止 iCloud 同步提醒。|
-|iCloudBlockBookmarks|布尔值|指示是否阻止 iCloud 同步书签。|
-|iCloudBlockNotes|布尔值|指示是否阻止 iCloud 同步笔记。|
-|airDropBlocked|布尔值|指示是否允许 AirDrop。|
-|passwordBlockModification|布尔值|指示是否允许修改密码。|
-|passwordBlockFingerprintUnlock|布尔值|指示是否阻止指纹解锁。|
-|passwordBlockAutoFill|布尔值|指示是否阻止自动填充密码功能。|
-|passwordBlockProximityRequests|布尔值|指示是否阻止来自附近设备的请求密码。|
-|passwordBlockAirDropSharing|布尔值|指示是否阻止使用 AirDrop 密码功能的共享密码。|
+|keyboardBlockDictation|Boolean|指示是否阻止用户使用听写输入。|
+|definitionLookupBlocked|Boolean|指示是否阻止定义查找。|
+|appleWatchBlockAutoUnlock|Boolean|指示是否阻止用户使用 Apple Watch 解锁其 Mac。|
+|iTunesBlockFileSharing|Boolean|指示是否阻止使用 iTunes 传输文件。|
+|iCloudBlockDocumentSync|Boolean|指示是否阻止 iCloud 文档同步。|
+|iCloudBlockMail|Boolean|指示是否阻止 iCloud 同步邮件。|
+|iCloudBlockAddressBook|Boolean|指示是否阻止 iCloud 同步联系人。|
+|iCloudBlockCalendar|Boolean|指示是否阻止 iCloud 同步日历。|
+|iCloudBlockReminders|Boolean|指示是否阻止 iCloud 同步提醒。|
+|iCloudBlockBookmarks|Boolean|指示是否阻止 iCloud 同步书签。|
+|iCloudBlockNotes|Boolean|指示是否阻止 iCloud 同步笔记。|
+|airDropBlocked|Boolean|指示是否允许 AirDrop。|
+|passwordBlockModification|Boolean|指示是否允许修改密码。|
+|passwordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁。|
+|passwordBlockAutoFill|Boolean|指示是否阻止自动填充密码功能。|
+|passwordBlockProximityRequests|Boolean|指示是否阻止来自附近设备的请求密码。|
+|passwordBlockAirDropSharing|Boolean|指示是否阻止使用 AirDrop 密码功能的共享密码。|
 |softwareUpdatesEnforcedDelayInDays|Int32|设置受监督的设备 delyed 软件更新的天数。 有效值为 0 至 90|
-|softwareUpdatesForceDelayed|布尔值|指示设备处于监督模式时是否延迟用户对软件更新的可见性。|
-|contentCachingBlocked|布尔值|指示是否允许内容缓存。|
+|softwareUpdatesForceDelayed|Boolean|指示设备处于监督模式时是否延迟用户对软件更新的可见性。|
+|contentCachingBlocked|Boolean|指示是否允许内容缓存。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|

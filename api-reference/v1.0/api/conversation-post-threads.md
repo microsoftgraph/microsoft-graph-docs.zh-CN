@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 6887b27a32f561d005b2c86eeb71eaeda9abb8a7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169081"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566169"
 ---
 # <a name="create-thread"></a>创建线程
 

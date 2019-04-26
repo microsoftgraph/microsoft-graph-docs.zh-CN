@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9785d6cd6f7ff4e7e310cc21b9719a4b31bb085a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782714"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552863"
 ---
 # <a name="officeproductid-enum-type"></a>officeProductId 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31782714"
 |:---|:---|:---|
 |o365ProPlusRetail|0|尚未记录|
 |o365BusinessRetail|1|尚未记录|
-|visioProRetail|双面|尚未记录|
-|projectProRetail|第三章|尚未记录|
+|visioProRetail|2 |尚未记录|
+|projectProRetail|3 |尚未记录|
 
 
 

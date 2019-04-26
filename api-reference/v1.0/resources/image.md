@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 图像
 localization_priority: Normal
 ms.openlocfilehash: 67d8a836ce89732ffd1fd6cb51fe5d8690e073e9
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480822"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567562"
 ---
 # <a name="image-resource-type"></a>图像资源类型
 

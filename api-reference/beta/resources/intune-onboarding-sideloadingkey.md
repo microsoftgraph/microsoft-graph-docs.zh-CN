@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 698d021e6038694442e5b3a6f4b3eff2a50e9943
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792123"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566456"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey 资源类型
 
@@ -31,10 +31,10 @@ ms.locfileid: "31792123"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|侧加载密钥唯一 Id。|
+|id|字符串|侧加载密钥唯一 Id。|
 |value|String|侧加载密钥值, 它是一个5x5 值, 由 hiphens 分隔。|
-|displayName|String|向 it 专业管理员显示的侧加载密钥名称。|
-|description|String|向 it 专业管理员显示的侧加载密钥说明。|
+|displayName|字符串|向 it 专业管理员显示的侧加载密钥名称。|
+|说明|String|向 it 专业管理员显示的侧加载密钥说明。|
 |totalActivation|Int32|向 it 专业管理员显示的端加载密钥总激活数。|
 |lastUpdatedDateTime|String|向 it 专业管理员显示的侧加载密钥上次更新日期。|
 

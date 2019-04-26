@@ -6,11 +6,11 @@ title: 获取文件或文件夹
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 9cff51558f84556fc05c69164ba48809acc12fa8
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481536"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548024"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
 

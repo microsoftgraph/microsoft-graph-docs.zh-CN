@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 31672925bb1d08299cb52477fef817a2199cc994
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800824"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567079"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityImportStatus 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31800824"
 |:---|:---|:---|
 |unknown|0|未知状态。|
 |决|1|挂起状态。|
-|环|双面|部分状态。|
-|complete|第三章|完整状态。|
-|错误|4|错误状态。|
+|环|2 |部分状态。|
+|complete|3 |完整状态。|
+|error|4 |错误状态。|
 
 
 

@@ -1,31 +1,31 @@
 ---
 title: invitationParticipantInfo 资源类型
-description: '**InvitationParticipant**用于表示一组标识相关联的对话邀请，并提供其他邀请参数。'
+description: '**InvitationParticipant**用于表示与对话邀请关联的一组标识, 并提供其他邀请参数。'
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641916"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569961"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>invitationParticipantInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**InvitationParticipant**用于表示一组标识相关联的对话邀请，并提供其他邀请参数。
+**InvitationParticipant**用于表示与对话邀请关联的一组标识, 并提供其他邀请参数。
 
 ## <a name="properties"></a>属性
 
 | 属性                           | 类型                          | 说明                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | endpointType                       | String                        | 可取值为：`default`、`voicemail`。 |
-| identity                           | [identitySet](identityset.md) | 与此邀请关联[identitySet](identityset.md) 。                   |
+| 窃取                           | [identitySet](identityset.md) | 与此邀请关联的[了解 identityset](identityset.md) 。                   |
 | languageId                         | String                        | 语言区域性字符串。                                                                                     |
-| 区域                             | String                        | 参与者的区域。                                                           |
-| replacesCallId                     | String                        | 可选。 呼叫的目标 idenity 目前的一部分。 一旦添加参与者，此呼叫将被丢弃。 |
+| 范围                             | String                        | 参与者的地区。                                                           |
+| replacesCallId                     | 字符串                        | 可选。 目标 idenity 当前是其一部分的调用。 添加参与者后, 将删除此呼叫。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

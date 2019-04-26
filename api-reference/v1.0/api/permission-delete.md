@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 删除对项目的访问权限
 localization_priority: Normal
 ms.openlocfilehash: d29b6e274d8fe64e87c011e35745cf1907fd1b9f
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481067"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556485"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>从文件或文件夹中删除共享权限
 

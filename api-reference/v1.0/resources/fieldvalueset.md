@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
 ms.openlocfilehash: 163bbb9595da84628a0e9d8ca449fdafbf4089b3
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480787"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565063"
 ---
 # <a name="fieldvalueset-resource"></a>FieldValueSet 资源
 

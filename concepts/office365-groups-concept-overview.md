@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: reports
 ms.openlocfilehash: 3706c7373a80992cec1f920dbfdf5e8829829d10
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932706"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578808"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Microsoft Graph 中的 Office 365 组概述
 

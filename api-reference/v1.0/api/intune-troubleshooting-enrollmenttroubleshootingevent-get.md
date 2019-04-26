@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ef8718a9aa70c1c6cc5bcd4c70e1199b803c43d0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982677"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576540"
 ---
 # <a name="get-enrollmenttroubleshootingevent"></a>获取 enrollmentTroubleshootingEvent
 

@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: 权限
+title: Permission
 localization_priority: Normal
 ms.openlocfilehash: 12390583dcb1a87a5c9492ae3dcbcb132a66f69c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482075"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568254"
 ---
 # <a name="permission-resource-type"></a>权限资源类型
 
@@ -65,7 +65,7 @@ ms.locfileid: "30482075"
 | id                  | String                      | 在项目的所有权限中，某个权限的唯一标识符。只读。
 | grantedTo           | [IdentitySet][]             | 对于用户类型权限，此权限的用户和应用程序的详细信息。只读。
 | grantedToIdentities | 集合 ([了解 identityset][]) | 对于链接类型权限, 为其授予权限的用户的详细信息。 只读。
-| invitation          | [SharingInvitation][]       | 此权限的全部关联共享邀请的详细信息。只读。
+| 邀请          | [SharingInvitation][]       | 此权限的全部关联共享邀请的详细信息。只读。
 | inheritedFrom       | [ItemReference][]           | 如果当前权限继承自上级，则提供对当前权限的上级的引用。只读。
 | link                | [SharingLink][]             | 如果当前权限是链接类型权限，则提供当前权限的链接详细信息。只读。
 | roles               | 集合（字符串）          | 权限类型，例如 `read`。有关角色的完整列表，请参阅如下内容。只读。

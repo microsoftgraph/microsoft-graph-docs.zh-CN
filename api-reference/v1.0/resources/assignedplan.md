@@ -1,17 +1,17 @@
 ---
 title: assignedPlan 资源类型
-description: 用户 实体和 组织 实体的 **AssignedPlans** 属性都是一个 **assignedPlan** 集合。
+description: '**用户** 实体和 组织 实体的 AssignedPlans 属性都是一个 **assignedPlan** 集合。'
 localization_priority: Normal
 ms.openlocfilehash: d1f3df6a88ab688206d26db6fc0afe1e1d4a4f60
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852995"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569373"
 ---
 # <a name="assignedplan-resource-type"></a>assignedPlan 资源类型
 
-[用户](user.md) 实体和 [组织](organization.md) 实体的 **AssignedPlans** 属性都是一个 **assignedPlan** 集合。
+**用户** 实体和 [组织](user.md) 实体的 [AssignedPlans](organization.md) 属性都是一个 **assignedPlan** 集合。
 
 
 ## <a name="properties"></a>属性

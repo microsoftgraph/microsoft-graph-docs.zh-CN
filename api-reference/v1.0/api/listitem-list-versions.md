@@ -1,16 +1,16 @@
 ---
-title: 列表列表项的版本
+title: 列出列表的版本
 description: SharePoint 可以配置为保留列表项的历史记录。
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 0da37c65c4f7cf737d7e37b0ed50305aa19b3e53
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921372"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568031"
 ---
-# <a name="listing-versions-of-a-listitem"></a>列表列表项的版本
+# <a name="listing-versions-of-a-listitem"></a>列出列表的版本
 
 SharePoint 可以配置为保留列表项的历史记录。
 

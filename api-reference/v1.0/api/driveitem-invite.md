@@ -6,11 +6,11 @@ title: 发送邀请以访问项目
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f7d3a974143b738b966a8953848f4837c16cd6c8
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480738"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548094"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
@@ -62,7 +62,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:-------------------------------|:-------------------------
 | recipients       | Collection([DriveRecipient][]) | 将获得访问权限和共享邀请的收件人的集合。
 | message          | String                         | 共享邀请中包含的纯文本格式的邮件。最大长度为 2000 个字符。
-| requireSignIn    | Boolean                        | 指定是否需要邀请收件人登录才能查看共享项目。
+| requireSignIn    | 布尔值                        | 指定是否需要邀请收件人登录才能查看共享项目。
 | sendInvitation   | Boolean                        | 如果为 true, 则会向收件人发送[共享链接][]。 否则, 将直接授予权限, 而不发送通知。
 | roles            | 集合（字符串）             | 指定要向共享邀请的收件人授予的角色。
 
@@ -124,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 * 具有 `personal` **driveType**（OneDrive 个人版）的[驱动器](../resources/drive.md)无法创建或修改根 DriveItem 上的权限。
 * 如需可用角色的列表，请参阅[角色枚举](../resources/permission.md#roles-enumeration)。

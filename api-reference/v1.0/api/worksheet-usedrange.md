@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 444a88dfaad3983948a139f2a3db304c200a1153
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975300"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569744"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet:UsedRange
 
@@ -31,13 +31,13 @@ GET /workbook/worksheets/{id|name}/usedRange
 ```
 
 ## <a name="function-parameters"></a>函数参数
-在请求 URL 中，您可以提供可选参数。
+在请求 URL 中, 可以提供可选参数。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |valuesOnly|Boolean|可选。仅将具有值的单元格视为已使用的单元格（忽略格式）。|
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -82,7 +82,7 @@ Content-length: 169
 }
 ```
 
-此外，此函数可调用带有可选`valuesOnly`参数。
+或者, 也可以使用可选`valuesOnly`参数调用此函数。
 
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f36ba0eed3485cf65f9111cb118a766fb17456bf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801146"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556016"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>internetExplorerMessageSetting 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31801146"
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |禁用|1|禁用.|
-|enabled|双面|了.|
-|keepGoing|第三章|KeepGoing。|
+|enabled|2 |了.|
+|keepGoing|3 |KeepGoing。|
 
 
 

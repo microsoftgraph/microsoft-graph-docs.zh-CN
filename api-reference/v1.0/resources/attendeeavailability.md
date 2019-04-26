@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 63014553824b833e2e4cdfb03485fcb7962c01a0
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936246"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569359"
 ---
 # <a name="attendeeavailability-resource-type"></a>attendeeAvailability 资源类型
 

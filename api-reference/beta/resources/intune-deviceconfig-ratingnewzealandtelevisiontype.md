@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f1ccdf774fb9eac565410318cd892e5a47c9dcb2
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776260"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556877"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31776260"
 |:---|:---|:---|
 |allAllowed|0|默认值, 允许所有电视节目内容|
 |allBlocked|1|不允许任何电视显示内容|
-|概要|双面|G 分类排除了可能对14下的儿童造成损害的材料|
-|parentalGuidance|第三章|PGR 分类鼓励家长和监护人监督年轻的查看者|
-|成人|4|AO 分类不适用于儿童|
+|概要|2 |G 分类排除了可能对14下的儿童造成损害的材料|
+|parentalGuidance|3 |PGR 分类鼓励家长和监护人监督年轻的查看者|
+|成人|4 |AO 分类不适用于儿童|
 
 
 

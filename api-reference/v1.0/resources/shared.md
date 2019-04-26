@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: 共享的内容
 localization_priority: Normal
 ms.openlocfilehash: af426d5e51f87b9fd8894c6e956947cc75f1a38d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481795"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549620"
 ---
 # <a name="shared-resource-type"></a>Shared 资源类型
 
