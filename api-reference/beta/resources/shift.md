@@ -4,44 +4,44 @@ description: 班次是计划中计划工时的单位。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cd80cd36bd32ea9efba9e565aabd2da963c51ec8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f5c66d0f555ae6e5740883ed72964a8fa36df303
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583793"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343045"
 ---
-# <a name="shift-resource-type"></a><span data-ttu-id="09850-103">shift 资源类型</span><span class="sxs-lookup"><span data-stu-id="09850-103">shift resource type</span></span>
+# <a name="shift-resource-type"></a><span data-ttu-id="aee67-103">shift 资源类型</span><span class="sxs-lookup"><span data-stu-id="aee67-103">shift resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="09850-104">计划中计划工时的单位。 [](schedule.md)</span><span class="sxs-lookup"><span data-stu-id="09850-104">A unit of scheduled work in a [schedule](schedule.md).</span></span> 
+<span data-ttu-id="aee67-104">计划中计划工时的单位。 [](schedule.md)</span><span class="sxs-lookup"><span data-stu-id="aee67-104">A unit of scheduled work in a [schedule](schedule.md).</span></span> 
 
-## <a name="methods"></a><span data-ttu-id="09850-105">方法</span><span class="sxs-lookup"><span data-stu-id="09850-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="aee67-105">方法</span><span class="sxs-lookup"><span data-stu-id="aee67-105">Methods</span></span>
 
-| <span data-ttu-id="09850-106">方法</span><span class="sxs-lookup"><span data-stu-id="09850-106">Method</span></span>       | <span data-ttu-id="09850-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="09850-107">Return Type</span></span>  |<span data-ttu-id="09850-108">说明</span><span class="sxs-lookup"><span data-stu-id="09850-108">Description</span></span>|
+| <span data-ttu-id="aee67-106">方法</span><span class="sxs-lookup"><span data-stu-id="aee67-106">Method</span></span>       | <span data-ttu-id="aee67-107">返回类型</span><span class="sxs-lookup"><span data-stu-id="aee67-107">Return Type</span></span>  |<span data-ttu-id="aee67-108">说明</span><span class="sxs-lookup"><span data-stu-id="aee67-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="09850-109">创建班次</span><span class="sxs-lookup"><span data-stu-id="09850-109">Create shift</span></span>](../api/schedule-post-shifts.md) | [<span data-ttu-id="09850-110">ctrl</span><span class="sxs-lookup"><span data-stu-id="09850-110">shift</span></span>](shift.md) | <span data-ttu-id="09850-111">新建 `shift`。</span><span class="sxs-lookup"><span data-stu-id="09850-111">Create a new `shift`.</span></span>|
-|[<span data-ttu-id="09850-112">列出班次</span><span class="sxs-lookup"><span data-stu-id="09850-112">List shifts</span></span>](../api/schedule-list-shifts.md) | <span data-ttu-id="09850-113">[shift](shift.md)集合</span><span class="sxs-lookup"><span data-stu-id="09850-113">[shift](shift.md) collection</span></span> | <span data-ttu-id="09850-114">获取此计划中`shifts`的列表。</span><span class="sxs-lookup"><span data-stu-id="09850-114">Get the list of `shifts` in this schedule.</span></span>|
-|[<span data-ttu-id="09850-115">获取 shift</span><span class="sxs-lookup"><span data-stu-id="09850-115">Get shift</span></span>](../api/shift-get.md) | [<span data-ttu-id="09850-116">ctrl</span><span class="sxs-lookup"><span data-stu-id="09850-116">shift</span></span>](shift.md) | <span data-ttu-id="09850-117">按 ID 获取 `shift`。</span><span class="sxs-lookup"><span data-stu-id="09850-117">Get a `shift` by ID.</span></span>|
-|[<span data-ttu-id="09850-118">替换班次</span><span class="sxs-lookup"><span data-stu-id="09850-118">Replace shift</span></span>](../api/shift-put.md) | [<span data-ttu-id="09850-119">ctrl</span><span class="sxs-lookup"><span data-stu-id="09850-119">shift</span></span>](shift.md) | <span data-ttu-id="09850-120">更换 `shift`。</span><span class="sxs-lookup"><span data-stu-id="09850-120">Replace a `shift`.</span></span>|
-|[<span data-ttu-id="09850-121">删除班次</span><span class="sxs-lookup"><span data-stu-id="09850-121">Delete shift</span></span>](../api/shift-delete.md) | <span data-ttu-id="09850-122">无</span><span class="sxs-lookup"><span data-stu-id="09850-122">None</span></span> | <span data-ttu-id="09850-123">`shift`从计划中删除。</span><span class="sxs-lookup"><span data-stu-id="09850-123">Delete a `shift` from the schedule.</span></span>|
+|[<span data-ttu-id="aee67-109">创建班次</span><span class="sxs-lookup"><span data-stu-id="aee67-109">Create shift</span></span>](../api/schedule-post-shifts.md) | [<span data-ttu-id="aee67-110">ctrl</span><span class="sxs-lookup"><span data-stu-id="aee67-110">shift</span></span>](shift.md) | <span data-ttu-id="aee67-111">新建 `shift`。</span><span class="sxs-lookup"><span data-stu-id="aee67-111">Create a new `shift`.</span></span>|
+|[<span data-ttu-id="aee67-112">列出班次</span><span class="sxs-lookup"><span data-stu-id="aee67-112">List shifts</span></span>](../api/schedule-list-shifts.md) | <span data-ttu-id="aee67-113">[shift](shift.md)集合</span><span class="sxs-lookup"><span data-stu-id="aee67-113">[shift](shift.md) collection</span></span> | <span data-ttu-id="aee67-114">获取此计划中`shifts`的列表。</span><span class="sxs-lookup"><span data-stu-id="aee67-114">Get the list of `shifts` in this schedule.</span></span>|
+|[<span data-ttu-id="aee67-115">获取 shift</span><span class="sxs-lookup"><span data-stu-id="aee67-115">Get shift</span></span>](../api/shift-get.md) | [<span data-ttu-id="aee67-116">ctrl</span><span class="sxs-lookup"><span data-stu-id="aee67-116">shift</span></span>](shift.md) | <span data-ttu-id="aee67-117">按 ID 获取 `shift`。</span><span class="sxs-lookup"><span data-stu-id="aee67-117">Get a `shift` by ID.</span></span>|
+|[<span data-ttu-id="aee67-118">替换班次</span><span class="sxs-lookup"><span data-stu-id="aee67-118">Replace shift</span></span>](../api/shift-put.md) | [<span data-ttu-id="aee67-119">ctrl</span><span class="sxs-lookup"><span data-stu-id="aee67-119">shift</span></span>](shift.md) | <span data-ttu-id="aee67-120">更换 `shift`。</span><span class="sxs-lookup"><span data-stu-id="aee67-120">Replace a `shift`.</span></span>|
+|[<span data-ttu-id="aee67-121">删除班次</span><span class="sxs-lookup"><span data-stu-id="aee67-121">Delete shift</span></span>](../api/shift-delete.md) | <span data-ttu-id="aee67-122">无</span><span class="sxs-lookup"><span data-stu-id="aee67-122">None</span></span> | <span data-ttu-id="aee67-123">`shift`从计划中删除。</span><span class="sxs-lookup"><span data-stu-id="aee67-123">Delete a `shift` from the schedule.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="09850-124">属性</span><span class="sxs-lookup"><span data-stu-id="09850-124">Properties</span></span>
-|<span data-ttu-id="09850-125">名称</span><span class="sxs-lookup"><span data-stu-id="09850-125">Name</span></span>          |<span data-ttu-id="09850-126">类型</span><span class="sxs-lookup"><span data-stu-id="09850-126">Type</span></span>           |<span data-ttu-id="09850-127">说明</span><span class="sxs-lookup"><span data-stu-id="09850-127">Description</span></span>                                                                                                                                      |
+## <a name="properties"></a><span data-ttu-id="aee67-124">属性</span><span class="sxs-lookup"><span data-stu-id="aee67-124">Properties</span></span>
+|<span data-ttu-id="aee67-125">名称</span><span class="sxs-lookup"><span data-stu-id="aee67-125">Name</span></span>          |<span data-ttu-id="aee67-126">类型</span><span class="sxs-lookup"><span data-stu-id="aee67-126">Type</span></span>           |<span data-ttu-id="aee67-127">说明</span><span class="sxs-lookup"><span data-stu-id="aee67-127">Description</span></span>                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="09850-128">id</span><span class="sxs-lookup"><span data-stu-id="09850-128">id</span></span>            |`string`      |<span data-ttu-id="09850-129">`shift` 的 ID。</span><span class="sxs-lookup"><span data-stu-id="09850-129">ID of the `shift`.</span></span>|
-| <span data-ttu-id="09850-130">userId</span><span class="sxs-lookup"><span data-stu-id="09850-130">userId</span></span>            |`string`      |<span data-ttu-id="09850-131">分配给的`shift`用户的 ID。</span><span class="sxs-lookup"><span data-stu-id="09850-131">ID of the user assigned to the `shift`.</span></span> <span data-ttu-id="09850-132">必需。</span><span class="sxs-lookup"><span data-stu-id="09850-132">Required.</span></span> |
-| <span data-ttu-id="09850-133">schedulingGroupId</span><span class="sxs-lookup"><span data-stu-id="09850-133">schedulingGroupId</span></span>         |`string`      |<span data-ttu-id="09850-134">属于的计划组`shift`的 ID。</span><span class="sxs-lookup"><span data-stu-id="09850-134">ID of the scheduling group the `shift` is part of.</span></span> <span data-ttu-id="09850-135">必需。</span><span class="sxs-lookup"><span data-stu-id="09850-135">Required.</span></span> |
-| <span data-ttu-id="09850-136">sharedShift</span><span class="sxs-lookup"><span data-stu-id="09850-136">sharedShift</span></span>   |[<span data-ttu-id="09850-137">shiftItem</span><span class="sxs-lookup"><span data-stu-id="09850-137">shiftItem</span></span>](shiftitem.md)  |<span data-ttu-id="09850-138">员工和经理可查看`shift`的共享版本。</span><span class="sxs-lookup"><span data-stu-id="09850-138">The shared version of this `shift` that is viewable by both employees and managers.</span></span> <span data-ttu-id="09850-139">必需。</span><span class="sxs-lookup"><span data-stu-id="09850-139">Required.</span></span> |
-| <span data-ttu-id="09850-140">draftShift</span><span class="sxs-lookup"><span data-stu-id="09850-140">draftShift</span></span>        |[<span data-ttu-id="09850-141">shiftItem</span><span class="sxs-lookup"><span data-stu-id="09850-141">shiftItem</span></span>](shiftitem.md)        |<span data-ttu-id="09850-142">经理可查看的草稿`shift`版本。</span><span class="sxs-lookup"><span data-stu-id="09850-142">The draft version of this `shift` that is viewable by managers.</span></span> <span data-ttu-id="09850-143">必需。</span><span class="sxs-lookup"><span data-stu-id="09850-143">Required.</span></span> |
-| <span data-ttu-id="09850-144">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="09850-144">createdDateTime</span></span>       |`DateTimeOffset`        |<span data-ttu-id="09850-145">首次在其上`shift`创建此项的时间戳。</span><span class="sxs-lookup"><span data-stu-id="09850-145">The timestamp on which this `shift` was first created.</span></span> <span data-ttu-id="09850-146">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="09850-146">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="09850-147">例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。</span><span class="sxs-lookup"><span data-stu-id="09850-147">For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.</span></span> |
-| <span data-ttu-id="09850-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="09850-148">lastModifiedDateTime</span></span>      |`DateTimeOffset`        |<span data-ttu-id="09850-149">上次更新此`shift`时间的时间戳。</span><span class="sxs-lookup"><span data-stu-id="09850-149">The timestamp on which this `shift` was last updated.</span></span> <span data-ttu-id="09850-150">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="09850-150">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="09850-151">例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。</span><span class="sxs-lookup"><span data-stu-id="09850-151">For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.</span></span> |
-| <span data-ttu-id="09850-152">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="09850-152">lastModifiedBy</span></span>        |`microsoft.graph.identitySet`        |<span data-ttu-id="09850-153">上次更新 `shift` 的标识。</span><span class="sxs-lookup"><span data-stu-id="09850-153">The identity that last updated this `shift`.</span></span>|
+| <span data-ttu-id="aee67-128">id</span><span class="sxs-lookup"><span data-stu-id="aee67-128">id</span></span>            |`string`      |<span data-ttu-id="aee67-129">`shift` 的 ID。</span><span class="sxs-lookup"><span data-stu-id="aee67-129">ID of the `shift`.</span></span>|
+| <span data-ttu-id="aee67-130">userId</span><span class="sxs-lookup"><span data-stu-id="aee67-130">userId</span></span>            |`string`      |<span data-ttu-id="aee67-131">分配给的`shift`用户的 ID。</span><span class="sxs-lookup"><span data-stu-id="aee67-131">ID of the user assigned to the `shift`.</span></span> <span data-ttu-id="aee67-132">必需。</span><span class="sxs-lookup"><span data-stu-id="aee67-132">Required.</span></span> |
+| <span data-ttu-id="aee67-133">schedulingGroupId</span><span class="sxs-lookup"><span data-stu-id="aee67-133">schedulingGroupId</span></span>         |`string`      |<span data-ttu-id="aee67-134">属于的计划组`shift`的 ID。</span><span class="sxs-lookup"><span data-stu-id="aee67-134">ID of the scheduling group the `shift` is part of.</span></span> <span data-ttu-id="aee67-135">必需。</span><span class="sxs-lookup"><span data-stu-id="aee67-135">Required.</span></span> |
+| <span data-ttu-id="aee67-136">sharedShift</span><span class="sxs-lookup"><span data-stu-id="aee67-136">sharedShift</span></span>   |[<span data-ttu-id="aee67-137">shiftItem</span><span class="sxs-lookup"><span data-stu-id="aee67-137">shiftItem</span></span>](shiftitem.md)  |<span data-ttu-id="aee67-138">员工和经理可查看`shift`的共享版本。</span><span class="sxs-lookup"><span data-stu-id="aee67-138">The shared version of this `shift` that is viewable by both employees and managers.</span></span> <span data-ttu-id="aee67-139">必需。</span><span class="sxs-lookup"><span data-stu-id="aee67-139">Required.</span></span> |
+| <span data-ttu-id="aee67-140">draftShift</span><span class="sxs-lookup"><span data-stu-id="aee67-140">draftShift</span></span>        |[<span data-ttu-id="aee67-141">shiftItem</span><span class="sxs-lookup"><span data-stu-id="aee67-141">shiftItem</span></span>](shiftitem.md)        |<span data-ttu-id="aee67-142">经理可查看的草稿`shift`版本。</span><span class="sxs-lookup"><span data-stu-id="aee67-142">The draft version of this `shift` that is viewable by managers.</span></span> <span data-ttu-id="aee67-143">必需。</span><span class="sxs-lookup"><span data-stu-id="aee67-143">Required.</span></span> |
+| <span data-ttu-id="aee67-144">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="aee67-144">createdDateTime</span></span>       |`DateTimeOffset`        |<span data-ttu-id="aee67-145">首次在其上`shift`创建此项的时间戳。</span><span class="sxs-lookup"><span data-stu-id="aee67-145">The timestamp on which this `shift` was first created.</span></span> <span data-ttu-id="aee67-146">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="aee67-146">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="aee67-147">例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。</span><span class="sxs-lookup"><span data-stu-id="aee67-147">For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.</span></span> |
+| <span data-ttu-id="aee67-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="aee67-148">lastModifiedDateTime</span></span>      |`DateTimeOffset`        |<span data-ttu-id="aee67-149">上次更新此`shift`时间的时间戳。</span><span class="sxs-lookup"><span data-stu-id="aee67-149">The timestamp on which this `shift` was last updated.</span></span> <span data-ttu-id="aee67-150">时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。</span><span class="sxs-lookup"><span data-stu-id="aee67-150">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="aee67-151">例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。</span><span class="sxs-lookup"><span data-stu-id="aee67-151">For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.</span></span> |
+| <span data-ttu-id="aee67-152">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="aee67-152">lastModifiedBy</span></span>        | [<span data-ttu-id="aee67-153">identitySet</span><span class="sxs-lookup"><span data-stu-id="aee67-153">identitySet</span></span>](identityset.md)        |<span data-ttu-id="aee67-154">上次更新 `shift` 的标识。</span><span class="sxs-lookup"><span data-stu-id="aee67-154">The identity that last updated this `shift`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="09850-154">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="09850-154">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="aee67-155">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="aee67-155">JSON representation</span></span>
 
-<span data-ttu-id="09850-155">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="09850-155">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="aee67-156">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="aee67-156">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -56,47 +56,9 @@ ms.locfileid: "32583793"
   "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
   "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  },
-  "sharedShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:15:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  },
-  "draftShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:30:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  }
+  "lastModifiedBy": {"@odata.type":"microsoft.graph.identitySet"},
+  "sharedShift": {"@odata.type":"microsoft.graph.shiftItem"},
+  "draftShift": {"@odata.type":"microsoft.graph.shiftItem"}
 }
 ```
 
@@ -110,8 +72,6 @@ ms.locfileid: "32583793"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/shift.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

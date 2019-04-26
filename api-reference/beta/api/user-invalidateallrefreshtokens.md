@@ -4,49 +4,49 @@ description: 通过将**refreshTokensValidFromDateTime**用户属性重置为当
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c006787c0d68ae0c6ecbb331a9ff410f957a6f93
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 300565ad3f9fdcc2f1a55d2cb8d9d30df654a5bf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544273"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334904"
 ---
-# <a name="user-invalidateallrefreshtokens"></a><span data-ttu-id="f4833-106">用户: invalidateAllRefreshTokens</span><span class="sxs-lookup"><span data-stu-id="f4833-106">user: invalidateAllRefreshTokens</span></span>
+# <a name="user-invalidateallrefreshtokens"></a><span data-ttu-id="5ab5c-106">用户: invalidateAllRefreshTokens</span><span class="sxs-lookup"><span data-stu-id="5ab5c-106">user: invalidateAllRefreshTokens</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f4833-107">通过将**refreshTokensValidFromDateTime**用户属性重置为当前的日期时间来使向应用程序颁发的所有用户刷新令牌失效 (以及用户浏览器中的会话 cookie)。</span><span class="sxs-lookup"><span data-stu-id="f4833-107">Invalidates all of the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **refreshTokensValidFromDateTime** user property to the current date-time.</span></span> <span data-ttu-id="f4833-108">通常, 如果用户有丢失或被盗的设备, 则执行此操作 (由用户或管理员执行)。</span><span class="sxs-lookup"><span data-stu-id="f4833-108">Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device.</span></span>  <span data-ttu-id="f4833-109">此操作将阻止访问通过设备上的应用程序访问的任何组织数据, 而用户首次无需再次登录。</span><span class="sxs-lookup"><span data-stu-id="f4833-109">This operation would prevent access to any of the organization's data accessed through applications on the device without the user first being required to sign in again.</span></span> <span data-ttu-id="f4833-110">实际上, 此操作会强制用户再次登录到他们之前同意的所有应用程序, 而不依赖于设备。</span><span class="sxs-lookup"><span data-stu-id="f4833-110">In fact, this operation would force the user to sign in again for all applications that they have previously consented to, independent of device.</span></span>
+<span data-ttu-id="5ab5c-107">通过将**refreshTokensValidFromDateTime**用户属性重置为当前的日期时间来使向应用程序颁发的所有用户刷新令牌失效 (以及用户浏览器中的会话 cookie)。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-107">Invalidates all of the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **refreshTokensValidFromDateTime** user property to the current date-time.</span></span> <span data-ttu-id="5ab5c-108">通常, 如果用户有丢失或被盗的设备, 则执行此操作 (由用户或管理员执行)。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-108">Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device.</span></span>  <span data-ttu-id="5ab5c-109">此操作将阻止访问通过设备上的应用程序访问的任何组织数据, 而用户首次无需再次登录。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-109">This operation would prevent access to any of the organization's data accessed through applications on the device without the user first being required to sign in again.</span></span> <span data-ttu-id="5ab5c-110">实际上, 此操作会强制用户再次登录到他们之前同意的所有应用程序, 而不依赖于设备。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-110">In fact, this operation would force the user to sign in again for all applications that they have previously consented to, independent of device.</span></span>
 
-<span data-ttu-id="f4833-111">对于开发人员, 如果应用程序尝试使用无效刷新令牌兑换此用户的委派访问令牌, 应用程序将收到错误。</span><span class="sxs-lookup"><span data-stu-id="f4833-111">For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error.</span></span> <span data-ttu-id="f4833-112">如果发生这种情况, 应用程序将需要通过向授权终结点发出请求来获取新的刷新令牌, 这将强制用户登录。</span><span class="sxs-lookup"><span data-stu-id="f4833-112">If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.</span></span>
+<span data-ttu-id="5ab5c-111">对于开发人员, 如果应用程序尝试使用无效刷新令牌兑换此用户的委派访问令牌, 应用程序将收到错误。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-111">For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error.</span></span> <span data-ttu-id="5ab5c-112">如果发生这种情况, 应用程序将需要通过向授权终结点发出请求来获取新的刷新令牌, 这将强制用户登录。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-112">If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f4833-113">权限</span><span class="sxs-lookup"><span data-stu-id="f4833-113">Permissions</span></span>
-<span data-ttu-id="f4833-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f4833-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5ab5c-113">权限</span><span class="sxs-lookup"><span data-stu-id="5ab5c-113">Permissions</span></span>
+<span data-ttu-id="5ab5c-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-+ <span data-ttu-id="f4833-116">对于允许已登录用户使已登录的应用程序无效的应用程序, 请执行以下操作: user. readwrite、directory.accessasuser.all</span><span class="sxs-lookup"><span data-stu-id="f4833-116">For an application to allow the signed in user to invalidate applications they've consented to: User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>
-+ <span data-ttu-id="f4833-117">对于允许管理员使用户同意的应用程序无效的应用程序, 请执行以下操作: directory.accessasuser.all</span><span class="sxs-lookup"><span data-stu-id="f4833-117">For an application to allow an administrator to invalidate applications a user has consented to: Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>
++ <span data-ttu-id="5ab5c-116">对于允许已登录用户使已登录的应用程序无效的应用程序, 请执行以下操作: user. readwrite、directory.accessasuser.all</span><span class="sxs-lookup"><span data-stu-id="5ab5c-116">For an application to allow the signed in user to invalidate applications they've consented to: User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>
++ <span data-ttu-id="5ab5c-117">对于允许管理员使用户同意的应用程序无效的应用程序, 请执行以下操作: directory.accessasuser.all</span><span class="sxs-lookup"><span data-stu-id="5ab5c-117">For an application to allow an administrator to invalidate applications a user has consented to: Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f4833-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f4833-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5ab5c-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5ab5c-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/invalidateAllRefreshTokens
 POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 ```
-## <a name="request-headers"></a><span data-ttu-id="f4833-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="f4833-119">Request headers</span></span>
-| <span data-ttu-id="f4833-120">标头</span><span class="sxs-lookup"><span data-stu-id="f4833-120">Header</span></span>       | <span data-ttu-id="f4833-121">值</span><span class="sxs-lookup"><span data-stu-id="f4833-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="5ab5c-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="5ab5c-119">Request headers</span></span>
+| <span data-ttu-id="5ab5c-120">标头</span><span class="sxs-lookup"><span data-stu-id="5ab5c-120">Header</span></span>       | <span data-ttu-id="5ab5c-121">值</span><span class="sxs-lookup"><span data-stu-id="5ab5c-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f4833-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f4833-122">Authorization</span></span>  | <span data-ttu-id="f4833-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f4833-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="5ab5c-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ab5c-122">Authorization</span></span>  | <span data-ttu-id="5ab5c-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f4833-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="f4833-125">Request body</span></span>
-<span data-ttu-id="f4833-126">此操作没有请求内容。</span><span class="sxs-lookup"><span data-stu-id="f4833-126">This operation has no request content.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5ab5c-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="5ab5c-125">Request body</span></span>
+<span data-ttu-id="5ab5c-126">此操作没有请求内容。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-126">This operation has no request content.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f4833-127">响应</span><span class="sxs-lookup"><span data-stu-id="f4833-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5ab5c-127">响应</span><span class="sxs-lookup"><span data-stu-id="5ab5c-127">Response</span></span>
 
-<span data-ttu-id="f4833-128">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="f4833-128">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="5ab5c-128">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-128">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f4833-129">示例</span><span class="sxs-lookup"><span data-stu-id="f4833-129">Example</span></span>
-<span data-ttu-id="f4833-130">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="f4833-130">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="f4833-131">请求</span><span class="sxs-lookup"><span data-stu-id="f4833-131">Request</span></span>
-<span data-ttu-id="f4833-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f4833-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5ab5c-129">示例</span><span class="sxs-lookup"><span data-stu-id="5ab5c-129">Example</span></span>
+<span data-ttu-id="5ab5c-130">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-130">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="5ab5c-131">请求</span><span class="sxs-lookup"><span data-stu-id="5ab5c-131">Request</span></span>
+<span data-ttu-id="5ab5c-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_invalidateallrefreshtokens"
@@ -55,8 +55,8 @@ POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 ```
 
-##### <a name="response"></a><span data-ttu-id="f4833-133">响应</span><span class="sxs-lookup"><span data-stu-id="f4833-133">Response</span></span>
-<span data-ttu-id="f4833-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f4833-134">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="5ab5c-133">响应</span><span class="sxs-lookup"><span data-stu-id="5ab5c-133">Response</span></span>
+<span data-ttu-id="5ab5c-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="5ab5c-134">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -74,8 +74,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-invalidateallrefreshtokens.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

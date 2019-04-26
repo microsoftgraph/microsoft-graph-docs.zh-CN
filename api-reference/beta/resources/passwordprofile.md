@@ -2,37 +2,37 @@
 title: passwordProfile 资源类型
 description: 包含与用户关联的密码配置文件。用户实体的 **passwordProfile** 属性是一个 **passwordProfile** 对象。
 localization_priority: Normal
-ms.openlocfilehash: 3caff59c8fd0838b91f9fdfb79bdbb154aa83b9f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07e1bb317015177d737719ff024586c94ee05474
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568456"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344884"
 ---
-# <a name="passwordprofile-resource-type"></a><span data-ttu-id="d8203-104">passwordProfile 资源类型</span><span class="sxs-lookup"><span data-stu-id="d8203-104">passwordProfile resource type</span></span>
+# <a name="passwordprofile-resource-type"></a><span data-ttu-id="3bf9c-104">passwordProfile 资源类型</span><span class="sxs-lookup"><span data-stu-id="3bf9c-104">passwordProfile resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d8203-p102">包含与用户关联的密码配置文件。[用户](user.md) 实体的 **passwordProfile** 属性是一个 **passwordProfile** 对象。</span><span class="sxs-lookup"><span data-stu-id="d8203-p102">Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.</span></span>
+<span data-ttu-id="3bf9c-p102">包含与用户关联的密码配置文件。[用户](user.md) 实体的 **passwordProfile** 属性是一个 **passwordProfile** 对象。</span><span class="sxs-lookup"><span data-stu-id="3bf9c-p102">Contains the password profile associated with a user. The **passwordProfile** property of the [user](user.md) entity is a **passwordProfile** object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="d8203-107">属性</span><span class="sxs-lookup"><span data-stu-id="d8203-107">Properties</span></span>
-| <span data-ttu-id="d8203-108">属性</span><span class="sxs-lookup"><span data-stu-id="d8203-108">Property</span></span>     | <span data-ttu-id="d8203-109">类型</span><span class="sxs-lookup"><span data-stu-id="d8203-109">Type</span></span>   |<span data-ttu-id="d8203-110">说明</span><span class="sxs-lookup"><span data-stu-id="d8203-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3bf9c-107">属性</span><span class="sxs-lookup"><span data-stu-id="3bf9c-107">Properties</span></span>
+| <span data-ttu-id="3bf9c-108">属性</span><span class="sxs-lookup"><span data-stu-id="3bf9c-108">Property</span></span>     | <span data-ttu-id="3bf9c-109">类型</span><span class="sxs-lookup"><span data-stu-id="3bf9c-109">Type</span></span>   |<span data-ttu-id="3bf9c-110">说明</span><span class="sxs-lookup"><span data-stu-id="3bf9c-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d8203-111">forceChangePasswordNextSignIn</span><span class="sxs-lookup"><span data-stu-id="d8203-111">forceChangePasswordNextSignIn</span></span>|<span data-ttu-id="d8203-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="d8203-112">Boolean</span></span>| <span data-ttu-id="d8203-113">如果**为 true**, 则在下次登录时, 用户必须更改其密码。</span><span class="sxs-lookup"><span data-stu-id="d8203-113">If **true**, at next sign-in, the user must change their password.</span></span> <span data-ttu-id="d8203-114">更改密码后, 此属性将自动重置为 \***false**。</span><span class="sxs-lookup"><span data-stu-id="d8203-114">After a password change, this property will be automatically reset to \***false**.</span></span> <span data-ttu-id="d8203-115">如未设置，默认值为 **false**。</span><span class="sxs-lookup"><span data-stu-id="d8203-115">If not set, default is **false**.</span></span> |
-|<span data-ttu-id="d8203-116">forceChangePasswordNextSignInWithMfa</span><span class="sxs-lookup"><span data-stu-id="d8203-116">forceChangePasswordNextSignInWithMfa</span></span>|<span data-ttu-id="d8203-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="d8203-117">Boolean</span></span>| <span data-ttu-id="d8203-118">如果为 **true**，则在下次登录时，用户必须先执行多重身份验证 (MFA)，然后才会被强制更改密码。</span><span class="sxs-lookup"><span data-stu-id="d8203-118">If **true**, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password.</span></span> <span data-ttu-id="d8203-119">该行为与 **forceChangePasswordNextSignIn** 相同，除了在更改密码之前用户必须先执行多重身份验证。</span><span class="sxs-lookup"><span data-stu-id="d8203-119">The behavior is identical to **forceChangePasswordNextSignIn** except that the user is required to first perform a multi-factor authentication before password change.</span></span> <span data-ttu-id="d8203-120">密码更改后，此属性将自动重置为 **false**。</span><span class="sxs-lookup"><span data-stu-id="d8203-120">After a password change, this property will be automatically reset to **false**.</span></span> <span data-ttu-id="d8203-121">如未设置，默认值为 **false**。</span><span class="sxs-lookup"><span data-stu-id="d8203-121">If not set, default is **false**.</span></span> |
-|<span data-ttu-id="d8203-122">密码</span><span class="sxs-lookup"><span data-stu-id="d8203-122">password</span></span>|<span data-ttu-id="d8203-123">String</span><span class="sxs-lookup"><span data-stu-id="d8203-123">String</span></span>|<span data-ttu-id="d8203-p105">用户的密码。创建用户时此属性是必需的。此属性可以更新，但用户在下次登录时必须更改密码。密码必须满足用户的 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。</span><span class="sxs-lookup"><span data-stu-id="d8203-p105">The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s **passwordPolicies** property. By default, a strong password is required.</span></span>|
+|<span data-ttu-id="3bf9c-111">forceChangePasswordNextSignIn</span><span class="sxs-lookup"><span data-stu-id="3bf9c-111">forceChangePasswordNextSignIn</span></span>|<span data-ttu-id="3bf9c-112">Boolean</span><span class="sxs-lookup"><span data-stu-id="3bf9c-112">Boolean</span></span>| <span data-ttu-id="3bf9c-113">如果**为 true**, 则在下次登录时, 用户必须更改其密码。</span><span class="sxs-lookup"><span data-stu-id="3bf9c-113">If **true**, at next sign-in, the user must change their password.</span></span> <span data-ttu-id="3bf9c-114">更改密码后, 此属性将自动重置为 \***false**。</span><span class="sxs-lookup"><span data-stu-id="3bf9c-114">After a password change, this property will be automatically reset to \***false**.</span></span> <span data-ttu-id="3bf9c-115">如未设置，默认值为 **false**。</span><span class="sxs-lookup"><span data-stu-id="3bf9c-115">If not set, default is **false**.</span></span> |
+|<span data-ttu-id="3bf9c-116">forceChangePasswordNextSignInWithMfa</span><span class="sxs-lookup"><span data-stu-id="3bf9c-116">forceChangePasswordNextSignInWithMfa</span></span>|<span data-ttu-id="3bf9c-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="3bf9c-117">Boolean</span></span>| <span data-ttu-id="3bf9c-118">如果为 **true**，则在下次登录时，用户必须先执行多重身份验证 (MFA)，然后才会被强制更改密码。</span><span class="sxs-lookup"><span data-stu-id="3bf9c-118">If **true**, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password.</span></span> <span data-ttu-id="3bf9c-119">该行为与 **forceChangePasswordNextSignIn** 相同，除了在更改密码之前用户必须先执行多重身份验证。</span><span class="sxs-lookup"><span data-stu-id="3bf9c-119">The behavior is identical to **forceChangePasswordNextSignIn** except that the user is required to first perform a multi-factor authentication before password change.</span></span> <span data-ttu-id="3bf9c-120">密码更改后，此属性将自动重置为 **false**。</span><span class="sxs-lookup"><span data-stu-id="3bf9c-120">After a password change, this property will be automatically reset to **false**.</span></span> <span data-ttu-id="3bf9c-121">如未设置，默认值为 **false**。</span><span class="sxs-lookup"><span data-stu-id="3bf9c-121">If not set, default is **false**.</span></span> |
+|<span data-ttu-id="3bf9c-122">密码</span><span class="sxs-lookup"><span data-stu-id="3bf9c-122">password</span></span>|<span data-ttu-id="3bf9c-123">String</span><span class="sxs-lookup"><span data-stu-id="3bf9c-123">String</span></span>|<span data-ttu-id="3bf9c-p105">用户的密码。创建用户时此属性是必需的。此属性可以更新，但用户在下次登录时必须更改密码。密码必须满足用户的 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。</span><span class="sxs-lookup"><span data-stu-id="3bf9c-p105">The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s **passwordPolicies** property. By default, a strong password is required.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d8203-129">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="d8203-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3bf9c-129">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="3bf9c-129">JSON representation</span></span>
 
-<span data-ttu-id="d8203-130">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="d8203-130">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="3bf9c-130">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="3bf9c-130">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.passwordprofile"
+  "@odata.type": "microsoft.graph.passwordProfile"
 }-->
 
 ```json
@@ -53,8 +53,6 @@ ms.locfileid: "32568456"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/passwordprofile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

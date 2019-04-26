@@ -4,34 +4,35 @@ description: 用于指示无媒体的媒体配置。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d564493889cc367ecdb697ce4031c40a4cbbbef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec1c70e233f46ad0098a6a7ee76d4d46f3b82c20
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581623"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342151"
 ---
-# <a name="nomediaconfig-resource-type"></a><span data-ttu-id="ed41b-103">noMediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="ed41b-103">noMediaConfig resource type</span></span>
+# <a name="nomediaconfig-resource-type"></a><span data-ttu-id="22a4e-103">noMediaConfig 资源类型</span><span class="sxs-lookup"><span data-stu-id="22a4e-103">noMediaConfig resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ed41b-104">用于指示无媒体的媒体配置。</span><span class="sxs-lookup"><span data-stu-id="ed41b-104">Media configuration for indicating no media.</span></span>
+<span data-ttu-id="22a4e-104">用于指示无媒体的媒体配置。</span><span class="sxs-lookup"><span data-stu-id="22a4e-104">Media configuration for indicating no media.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ed41b-105">属性</span><span class="sxs-lookup"><span data-stu-id="ed41b-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="22a4e-105">属性</span><span class="sxs-lookup"><span data-stu-id="22a4e-105">Properties</span></span>
 
-| <span data-ttu-id="ed41b-106">属性</span><span class="sxs-lookup"><span data-stu-id="ed41b-106">Property</span></span>       | <span data-ttu-id="ed41b-107">类型</span><span class="sxs-lookup"><span data-stu-id="ed41b-107">Type</span></span>    | <span data-ttu-id="ed41b-108">说明</span><span class="sxs-lookup"><span data-stu-id="ed41b-108">Description</span></span>|
+| <span data-ttu-id="22a4e-106">属性</span><span class="sxs-lookup"><span data-stu-id="22a4e-106">Property</span></span>       | <span data-ttu-id="22a4e-107">类型</span><span class="sxs-lookup"><span data-stu-id="22a4e-107">Type</span></span>    | <span data-ttu-id="22a4e-108">说明</span><span class="sxs-lookup"><span data-stu-id="22a4e-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ed41b-109">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="ed41b-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="ed41b-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="ed41b-110">Boolean</span></span> |  |
+| <span data-ttu-id="22a4e-109">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="22a4e-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="22a4e-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="22a4e-110">Boolean</span></span> |  |
 
-## <a name="json-representation"></a><span data-ttu-id="ed41b-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="ed41b-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="22a4e-111">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="22a4e-111">JSON representation</span></span>
 
-<span data-ttu-id="ed41b-112">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="ed41b-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="22a4e-112">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="22a4e-112">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.noMediaConfig"
 }-->
 ```json
@@ -49,8 +50,6 @@ ms.locfileid: "32581623"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/nomediaconfig.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
