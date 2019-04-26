@@ -1,15 +1,15 @@
 ---
 title: bookingService 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 35e439888b39c81451242f01d2aaae89b65ad8ee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c6cf62320a6cfd8e96455e95e1d17c0621d261f8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535485"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328308"
 ---
 # <a name="bookingservice-resource-type"></a>bookingService 资源类型
 
@@ -35,16 +35,16 @@ ms.locfileid: "32535485"
 |defaultPrice|双精度|服务的默认货币价格。|
 |defaultPriceType|string|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
 |defaultReminders|[bookingReminder](bookingreminder.md)集合|此服务的约会的默认提醒集。 此属性的值仅在按 ID 读取此**bookingService**时可用。|
-|description|String|服务的文本说明。|
+|说明|String|服务的文本说明。|
 |displayName|字符串|服务名称。|
 |emailAddress|String|电子邮件地址|
 |id|字符串|该服务的 ID (采用 GUID 格式)。 只读。|
-|isHiddenFromCustomers|布尔值|如果为 True, 则表示此服务不可供客户预订。|
+|isHiddenFromCustomers|Boolean|如果为 True, 则表示此服务不可供客户预订。|
 |notes|String|有关此服务的其他信息。|
 |postBuffer|持续时间|此服务的约会结束后以及下一个客户约会可以被预订前要缓冲的时间。|
 |preBuffer|持续时间|在此服务的约会开始之前要缓冲的时间。|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|确定应如何创建和管理此类服务的约会的一组策略。|
-|staffMemberIds|String collection|代表提供此服务的[教职员工成员](bookingstaffmember.md)。 |
+|staffMemberIds|String 集合|代表提供此服务的[教职员工成员](bookingstaffmember.md)。 |
 
 ## <a name="relationships"></a>关系
 无
@@ -92,8 +92,6 @@ ms.locfileid: "32535485"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingservice.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

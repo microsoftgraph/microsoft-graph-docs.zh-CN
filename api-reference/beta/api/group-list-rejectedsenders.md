@@ -1,18 +1,18 @@
 ---
 title: 列出 rejectedSender
-description: '获取此组 rejectedSenders 列表中的用户或组列表。 '
+description: '获取此组的 "已拒绝-发件人" 列表中的用户或组的列表。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 5dd03644b91ad847b61350f48792afdaa087d59b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ddabeccd5e09c035eabf0c280fde54bc6db628f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502062"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329576"
 ---
 # <a name="list-rejectedsenders"></a>列出 rejectedSender
-获取此组 rejectedSenders 列表中的用户或组列表。 
+获取此组的 "已拒绝-发件人" 列表中的用户或组的列表。 
 
 已拒绝的发件人列表中的用户无法发布到组对话（在 GET 请求 URL 中标识）。确保未在拒绝的发件人和接受的发件人列表中指定同一用户或组，否则会发生错误。
 
@@ -56,8 +56,8 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
->**注意：** 为了提高可读性，可能缩短此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,15 +1,15 @@
 ---
 title: bookingAppointment 资源类型
-description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。"
+description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。"
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: c5868788159f0602c1f8a263138c7ce9107c2c94
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b1d481d43374d8611f221fb5c3047cdc9cd9148
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535502"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328222"
 ---
 # <a name="bookingappointment-resource-type"></a>bookingAppointment 资源类型
 
@@ -46,7 +46,7 @@ ms.locfileid: "32535502"
 |invoiceId|String|发票的 ID。|
 |invoiceStatus|string| 发票的状态。 可取值为：`draft`、`reviewing`、`open`、`canceled`、`paid`、`corrective`。|
 |invoiceUrl|String|Microsoft 预订中发票的 URL。|
-|optOutOfCustomerEmail|布尔值|如果为 True, 则表示此约会的[bookingCustomer](bookingcustomer.md)不希望收到此约会的确认。|
+|optOutOfCustomerEmail|Boolean|如果为 True, 则表示此约会的[bookingCustomer](bookingcustomer.md)不希望收到此约会的确认。|
 |postBuffer|持续时间|在约会结束后保留的时间长度, 例如, 进行清理。 值以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。 |
 |preBuffer|持续时间|在约会开始之前保留的时间量 (以供准备) 为例。 值以[ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)格式表示。|
 |特价|双精度|指定[bookingService](bookingservice.md)的约会的常规价格。|
@@ -57,7 +57,7 @@ ms.locfileid: "32535502"
 |serviceLocation|[location](location.md)|服务的传递位置。|
 |serviceName|String|与此约会相关联的**bookingService**的名称。<br>创建新约会时, 此属性是可选的。 如果未指定, 则通过**serviceId**属性从与约会关联的服务计算。|
 |serviceNotes|String|来自[bookingStaffMember](bookingstaffmember.md)的注释。 此属性的值仅在按 ID 读取此**bookingAppointment**时可用。|
-|staffMemberIds|String collection|在此约会中计划的每个[bookingStaffMember](bookingstaffmember.md)的 ID。|
+|staffMemberIds|String 集合|在此约会中计划的每个[bookingStaffMember](bookingstaffmember.md)的 ID。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|约会开始的日期、时间和时区。|
 
 ## <a name="relationships"></a>关系
@@ -118,8 +118,6 @@ ms.locfileid: "32535502"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingappointment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

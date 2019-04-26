@@ -4,12 +4,12 @@ description: 更新 group 对象的属性。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: c60ff8eaf95401c5c3e8eb44017d9a6d37ac0ea4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: efd0021e2c9808eeea645c1a329e8134a5d04a6e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501971"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328591"
 ---
 # <a name="update-group"></a>更新组
 
@@ -49,12 +49,12 @@ PATCH /groups/{id}
 |:---------------|:--------|:----------|
 |allowExternalSenders|布尔|默认为 **false**。指明组织外部人员能否向群组发送邮件。|
 |autoSubscribeNewMembers|布尔值|默认为 **false**。指示添加到组中的新成员是否将自动订阅接收电子邮件通知。|
-|description|字符串|可选的组说明。 |
-|displayName|字符串|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
+|说明|String|可选的组说明。 |
+|displayName|String|组的显示名称。此属性是在创建组时所必需的，并且在更新过程中不能清除。支持 $filter 和 $orderby。|
 |groupTypes|String collection|指定要创建的组的类型。可取值为 **Unified**（要创建 Office 365 组）或 **DynamicMembership**（要创建动态组）。对于其他所有组类型（如启用安全机制的组和启用电子邮件的安全组），请勿设置此属性。|
-|mailEnabled|布尔|指定该组是否启用邮件。如果 **securityEnabled** 属性也为 **true**，则该组是已启用邮件的安全组；否则是 Microsoft Exchange 通讯组。|
-|mailNickname|字符串|组的邮件别名。创建组时必须指定此属性。支持 $filter。|
-|securityEnabled|Boolean|指定是否为安全组。如果 **mailEnabled** 属性也为 true，则为启用邮件的安全组；否则为安全组。对于 Office 365 组，此属性必须为 **false**。支持 $filter。|
+|mailEnabled|Boolean|指定是否为启用邮件的组。如果 **securityEnabled** 属性也为 **true**，则为启用邮件的安全组；否则为 Microsoft Exchange 通讯组。 |
+|mailNickname|String|组的邮件别名。创建组时必须指定此属性。支持 $filter。|
+|securityEnabled|布尔|指定是否为安全组。如果 **mailEnabled** 属性也为 true，则为启用邮件的安全组；否则为安全组。对于 Office 365 组，此属性必须为 **false**。支持 $filter。|
 |visibility|String|指定 Office 365 组的可见性。可能的值是：**专用**、**公用**或空（解释为**公用**）。|
 
 由于**组**资源支持[扩展](/graph/extensibility-overview), 因此您可以使用该`PATCH`操作在现有**组**实例中的扩展的自定义属性中添加、更新或删除您自己的应用程序特定的数据。
@@ -97,7 +97,7 @@ Content-length: 211
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -123,8 +123,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

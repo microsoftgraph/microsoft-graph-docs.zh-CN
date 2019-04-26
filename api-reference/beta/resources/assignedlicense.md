@@ -2,14 +2,16 @@
 title: assignedLicense 资源类型
 description: 表示分配给用户的许可证。 user 实体的**assignedLicenses**属性是**assignedLicense**的集合。
 localization_priority: Normal
-ms.openlocfilehash: 2d9620ec33a296c09ced9bc9d8af8d6d032bb7d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 619ce666c86abfd669fefc11b22760e7ac250ff5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535653"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328521"
 ---
 # <a name="assignedlicense-resource-type"></a>assignedLicense 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示分配给用户的许可证。 [user](user.md)实体的**assignedLicenses**属性是**assignedLicense**的集合。
 
@@ -42,10 +44,13 @@ ms.locfileid: "32535653"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "assignedLicense resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

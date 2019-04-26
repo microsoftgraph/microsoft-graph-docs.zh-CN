@@ -4,12 +4,12 @@ description: 计算出的洞察力, 返回与用户共享的文件的列表。
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 009d9f65b5403139235e5f9afa932ebbe54ff9d4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd3f784ca48c408b8616faaa965b327aec48c538
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32500380"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328532"
 ---
 # <a name="list-shared"></a>共享的列表
 
@@ -116,11 +116,3 @@ GET https://graph.microsoft.com/beta/me/insights/shared
 ```http
 GET https://graph.microsoft.com/beta/me/insights/shared/{id}/resource
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/insights-list-shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

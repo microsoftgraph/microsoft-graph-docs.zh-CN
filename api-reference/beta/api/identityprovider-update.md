@@ -2,12 +2,12 @@
 title: 更新 identityProvider
 description: 更新现有 identityprovider.read.all 中的属性。
 localization_priority: Normal
-ms.openlocfilehash: d98bc5d0bd7a8f165f33c89548a69805039cdf07
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c73a96a5447a9f6dc8408b7abbb52dc5b7ee68a6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501453"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328580"
 ---
 # <a name="update-identityprovider"></a>更新 identityProvider
 
@@ -22,7 +22,7 @@ ms.locfileid: "32501453"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
+|委派（Microsoft 个人帐户）| 不支持。|
 |应用程序|不支持。|
 
 工作或学校帐户必须是租户的全局管理员。
@@ -49,7 +49,7 @@ PATCH /identityProviders/{id}
 |:---------------|:--------|:----------|
 |clientId|字符串|应用程序的客户端 ID。 这是向标识提供程序注册应用程序时获取的客户端 ID。|
 |clientSecret|字符串|应用程序的客户端密码。 这是向标识提供程序注册应用程序时获取的客户端密码。|
-|name|String|标识提供程序的显示名称。|
+|name|字符串|标识提供程序的显示名称。|
 
 ## <a name="response"></a>响应
 
@@ -94,8 +94,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/identityprovider-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

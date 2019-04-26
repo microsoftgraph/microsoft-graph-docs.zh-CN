@@ -2,12 +2,12 @@
 title: 删除 identityProvider
 description: 删除现有的 identityProvider。
 localization_priority: Normal
-ms.openlocfilehash: bb64f10b656697ab2cf611dd9be0468c295b15e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 512d7b1094af967c10cb5ddf6eb2c9178d9d8ad7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501586"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328537"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 
@@ -22,7 +22,7 @@ ms.locfileid: "32501586"
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
+|委派（Microsoft 个人帐户）| 不支持。|
 |应用程序|不支持。|
 
 工作或学校帐户必须是租户的全局管理员。
@@ -81,8 +81,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/identityprovider-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

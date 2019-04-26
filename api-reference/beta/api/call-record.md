@@ -4,12 +4,12 @@ description: 录制呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bc1a98374c34986e2a4430f5b50c5a2801dcd0e8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461295"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328279"
 ---
 # <a name="call-record"></a>call: record
 
@@ -43,15 +43,15 @@ POST /applications/{id}/calls/{id}/record
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|提示|[mediaprompt](../resources/mediaprompt.md)集合 | 录制开始前要播放的提示集合 (如果有)。 客户可以选择单独指定 "playPrompt" 操作, 也可以指定为 "record" 的一部分-通常所有记录都由一个提示 preceeded |
-|bargeInAllowed|布尔| 允许用户在提示完成前输入选项。                                                                 |
+|提示|[mediaPrompt](../resources/mediaprompt.md)集合 | 录制开始前要播放的提示集合 (如果有)。 客户可以选择单独指定 "playPrompt" 操作, 也可以指定为 "record" 的一部分-通常所有记录都由一个提示 preceeded |
+|bargeInAllowed|Boolean| 允许用户在提示完成前输入选项。                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| 允许从我们开始记录操作到超时和运行失败的时间开始的最大初始静音。 如果我们正在播放提示, 则此计时器在提示完成后启动。 |
 |maxSilenceTimeoutInSeconds|Int32| 最大无声超时 (秒)。|
 |maxRecordDurationInSeconds|Int32| 以秒为单位的最大记录持续时间。|
-|playBeep|布尔| 播放提示后播放嘟嘟声。|
-|streamWhileRecording|布尔|如果设置为 true, 将在录制开始后提供资源位置。 |
-|stopTones|String collection|指定结束录音的停止音。|
-|适用|字符串|客户端上下文。|
+|playBeep|Boolean| 播放提示后播放嘟嘟声。|
+|streamWhileRecording|Boolean|如果设置为 true, 将在录制开始后提供资源位置。 |
+|stopTones|String 集合|指定结束录音的停止音。|
+|适用|String|客户端上下文。|
 
 ## <a name="response"></a>响应
 返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
@@ -150,8 +150,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/call-record.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

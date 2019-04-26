@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 783201ec40ac0749d2c2999649bf1c420eaba5b6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32654147"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328497"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>applicationSignInDetailedSummary 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "32654147"
 |aggregatedEventDateTime|DateTimeOffset|时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |appDisplayName|String|用户登录到的应用程序的名称。|
 |appId|String|用户登录到的应用程序的 ID。|
-|id|String| 一个代表登录活动的唯一 ID。|
+|id|字符串| 一个代表登录活动的唯一 ID。|
 |signInCount|Int64|应用程序发出的登录数。|
 |status|[signInStatus](signinstatus.md)|登录状态的详细信息。|
 
