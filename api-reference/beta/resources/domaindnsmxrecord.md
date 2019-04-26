@@ -1,45 +1,44 @@
 ---
 title: domainDnsMxRecord 资源类型
-description: 表示已添加到租户中特定域的 DNS 区域文件的 MX 记录。继承自 DomainDnsRecord 实体。
+description: 表示添加到租户中特定域的 DNS 区域文件中的 MX 记录。 继承自 DomainDnsRecord 实体。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 09af66a522d99645540ec24324c82f565eaedb1e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508417"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535121"
 ---
-# <a name="domaindnsmxrecord-resource-type"></a><span data-ttu-id="331ed-104">domainDnsMxRecord 资源类型</span><span class="sxs-lookup"><span data-stu-id="331ed-104">domainDnsMxRecord resource type</span></span>
+# <a name="domaindnsmxrecord-resource-type"></a><span data-ttu-id="7c3fa-104">domainDnsMxRecord 资源类型</span><span class="sxs-lookup"><span data-stu-id="7c3fa-104">domainDnsMxRecord resource type</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="7c3fa-105">表示添加到租户中特定域的 DNS 区域文件中的 MX 记录。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-105">Represents a MX record added to the DNS zone file of a particular domain in the tenant.</span></span> <span data-ttu-id="7c3fa-106">继承自[DomainDnsRecord](domaindnsrecord.md)实体。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-106">Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
 
-<span data-ttu-id="331ed-p102">表示已添加到租户中特定域的 DNS 区域文件的 MX 记录。继承自 [DomainDnsRecord](domaindnsrecord.md) 实体。</span><span class="sxs-lookup"><span data-stu-id="331ed-p102">Represents a MX record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
+## <a name="methods"></a><span data-ttu-id="7c3fa-107">方法</span><span class="sxs-lookup"><span data-stu-id="7c3fa-107">Methods</span></span>
+<span data-ttu-id="7c3fa-108">不支持直接向此资源进行查询。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-108">Direct queries to this resource are not supported.</span></span> <span data-ttu-id="7c3fa-109">有关如何查询域服务记录的信息, 请参阅[域](domain.md)主题。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-109">Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="331ed-107">方法</span><span class="sxs-lookup"><span data-stu-id="331ed-107">Methods</span></span>
-<span data-ttu-id="331ed-p103">不支持对该资源进行直接查询。请参阅[域](domain.md)主题了解有关如何查询域服务记录的信息。</span><span class="sxs-lookup"><span data-stu-id="331ed-p103">Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
-
-## <a name="properties"></a><span data-ttu-id="331ed-110">属性</span><span class="sxs-lookup"><span data-stu-id="331ed-110">Properties</span></span>
-| <span data-ttu-id="331ed-111">属性</span><span class="sxs-lookup"><span data-stu-id="331ed-111">Property</span></span>     | <span data-ttu-id="331ed-112">类型</span><span class="sxs-lookup"><span data-stu-id="331ed-112">Type</span></span>   |<span data-ttu-id="331ed-113">说明</span><span class="sxs-lookup"><span data-stu-id="331ed-113">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7c3fa-110">属性</span><span class="sxs-lookup"><span data-stu-id="7c3fa-110">Properties</span></span>
+| <span data-ttu-id="7c3fa-111">属性</span><span class="sxs-lookup"><span data-stu-id="7c3fa-111">Property</span></span>     | <span data-ttu-id="7c3fa-112">类型</span><span class="sxs-lookup"><span data-stu-id="7c3fa-112">Type</span></span>   |<span data-ttu-id="7c3fa-113">说明</span><span class="sxs-lookup"><span data-stu-id="7c3fa-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="331ed-114">id</span><span class="sxs-lookup"><span data-stu-id="331ed-114">id</span></span>|<span data-ttu-id="331ed-115">字符串</span><span class="sxs-lookup"><span data-stu-id="331ed-115">String</span></span>| <span data-ttu-id="331ed-p104">分配给此实体的唯一标识符。不可为 NULL，只读。</span><span class="sxs-lookup"><span data-stu-id="331ed-p104">Unique identifier assigned to this entity. Not nullable, Read-only.</span></span>|
-|<span data-ttu-id="331ed-118">isOptional</span><span class="sxs-lookup"><span data-stu-id="331ed-118">isOptional</span></span>|<span data-ttu-id="331ed-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="331ed-119">Boolean</span></span>| <span data-ttu-id="331ed-120">如果为 false，则客户必须在 DNS 主机上配置 MX 记录才能使 Microsoft Online Services 在域中正常运行。</span><span class="sxs-lookup"><span data-stu-id="331ed-120">If false, the MX record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.</span></span> |
-|<span data-ttu-id="331ed-121">label</span><span class="sxs-lookup"><span data-stu-id="331ed-121">label</span></span>|<span data-ttu-id="331ed-122">字符串</span><span class="sxs-lookup"><span data-stu-id="331ed-122">String</span></span>| <span data-ttu-id="331ed-123">配置 DNS 主机上的 MX 记录的*别名/主机/名称*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="331ed-123">Value used when configuring the *alias/host/name* property of the MX record at the DNS host.</span></span> |
-|<span data-ttu-id="331ed-124">mailExchange</span><span class="sxs-lookup"><span data-stu-id="331ed-124">mailExchange</span></span>|<span data-ttu-id="331ed-125">String</span><span class="sxs-lookup"><span data-stu-id="331ed-125">String</span></span>| <span data-ttu-id="331ed-126">配置 DNS 主机上的 MX 记录的*答复/目标/值*时使用的值。</span><span class="sxs-lookup"><span data-stu-id="331ed-126">Value used when configuring the *answer/destination/value* of the MX record at the DNS host.</span></span>|
-|<span data-ttu-id="331ed-127">preference</span><span class="sxs-lookup"><span data-stu-id="331ed-127">preference</span></span>|<span data-ttu-id="331ed-128">Int32</span><span class="sxs-lookup"><span data-stu-id="331ed-128">Int32</span></span>| <span data-ttu-id="331ed-129">配置 DNS 主机上的 MX 记录的*首选项/优先级*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="331ed-129">Value used when configuring the *Preference/Priority* property of the MX record at the DNS host.</span></span> |
-|<span data-ttu-id="331ed-130">recordType</span><span class="sxs-lookup"><span data-stu-id="331ed-130">recordType</span></span>|<span data-ttu-id="331ed-131">String</span><span class="sxs-lookup"><span data-stu-id="331ed-131">String</span></span>| <span data-ttu-id="331ed-p105">DNS 记录类型。此值始终是 *Mx*。Key</span><span class="sxs-lookup"><span data-stu-id="331ed-p105">Type of DNS record. The value is always *Mx*. Key</span></span> |
-|<span data-ttu-id="331ed-135">supportedService</span><span class="sxs-lookup"><span data-stu-id="331ed-135">supportedService</span></span>|<span data-ttu-id="331ed-136">String</span><span class="sxs-lookup"><span data-stu-id="331ed-136">String</span></span>| <span data-ttu-id="331ed-137">Microsoft Online Service 或与该 Mx 记录存在依赖关系的功能。</span><span class="sxs-lookup"><span data-stu-id="331ed-137">Microsoft Online Service or feature that has a dependency on this MX record.</span></span></br></br><span data-ttu-id="331ed-138">可以为以下值之一：**null**、*Email*、*Sharepoint*、*EmailInternalRelayOnly*、*OfficeCommunicationsOnline*、*SharePointDefaultDomain*、*FullRedelegation*、*SharePointPublic*、*OrgIdAuthentication*、*Yammer*、*Intune*</span><span class="sxs-lookup"><span data-stu-id="331ed-138">Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*</span></span> |
-|<span data-ttu-id="331ed-139">ttl</span><span class="sxs-lookup"><span data-stu-id="331ed-139">ttl</span></span>|<span data-ttu-id="331ed-140">Int32</span><span class="sxs-lookup"><span data-stu-id="331ed-140">Int32</span></span>| <span data-ttu-id="331ed-p106">配置 DNS 主机上的 MX 记录的*生存时间 (ttl)* 属性时使用的值。不可为 null</span><span class="sxs-lookup"><span data-stu-id="331ed-p106">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host. Not nullable</span></span> |
+|<span data-ttu-id="7c3fa-114">id</span><span class="sxs-lookup"><span data-stu-id="7c3fa-114">id</span></span>|<span data-ttu-id="7c3fa-115">String</span><span class="sxs-lookup"><span data-stu-id="7c3fa-115">String</span></span>| <span data-ttu-id="7c3fa-116">分配给此实体的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-116">Unique identifier assigned to this entity.</span></span> <span data-ttu-id="7c3fa-117">不可为 null, 只读。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-117">Not nullable, Read-only.</span></span>|
+|<span data-ttu-id="7c3fa-118">isOptional</span><span class="sxs-lookup"><span data-stu-id="7c3fa-118">isOptional</span></span>|<span data-ttu-id="7c3fa-119">布尔值</span><span class="sxs-lookup"><span data-stu-id="7c3fa-119">Boolean</span></span>| <span data-ttu-id="7c3fa-120">如果为 false, 则客户必须在 DNS 主机上配置 MX 记录, 才能使 Microsoft Online Services 在域中正常运行。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-120">If false, the MX record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.</span></span> |
+|<span data-ttu-id="7c3fa-121">label</span><span class="sxs-lookup"><span data-stu-id="7c3fa-121">label</span></span>|<span data-ttu-id="7c3fa-122">String</span><span class="sxs-lookup"><span data-stu-id="7c3fa-122">String</span></span>| <span data-ttu-id="7c3fa-123">配置 DNS 主机上的 MX 记录的*别名/主机/名称*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-123">Value used when configuring the *alias/host/name* property of the MX record at the DNS host.</span></span> |
+|<span data-ttu-id="7c3fa-124">mailExchange</span><span class="sxs-lookup"><span data-stu-id="7c3fa-124">mailExchange</span></span>|<span data-ttu-id="7c3fa-125">String</span><span class="sxs-lookup"><span data-stu-id="7c3fa-125">String</span></span>| <span data-ttu-id="7c3fa-126">配置 DNS 主机上的 MX 记录的*应答/目标/值*时使用的值。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-126">Value used when configuring the *answer/destination/value* of the MX record at the DNS host.</span></span>|
+|<span data-ttu-id="7c3fa-127">优先权</span><span class="sxs-lookup"><span data-stu-id="7c3fa-127">preference</span></span>|<span data-ttu-id="7c3fa-128">Int32</span><span class="sxs-lookup"><span data-stu-id="7c3fa-128">Int32</span></span>| <span data-ttu-id="7c3fa-129">配置 DNS 主机上的 MX 记录的*首选项/优先级*属性时使用的值。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-129">Value used when configuring the *Preference/Priority* property of the MX record at the DNS host.</span></span> |
+|<span data-ttu-id="7c3fa-130">recordType</span><span class="sxs-lookup"><span data-stu-id="7c3fa-130">recordType</span></span>|<span data-ttu-id="7c3fa-131">String</span><span class="sxs-lookup"><span data-stu-id="7c3fa-131">String</span></span>| <span data-ttu-id="7c3fa-132">DNS 记录的类型。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-132">Type of DNS record.</span></span> <span data-ttu-id="7c3fa-133">值始终为*Mx*。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-133">The value is always *Mx*.</span></span> <span data-ttu-id="7c3fa-134">Key</span><span class="sxs-lookup"><span data-stu-id="7c3fa-134">Key</span></span> |
+|<span data-ttu-id="7c3fa-135">supportedService</span><span class="sxs-lookup"><span data-stu-id="7c3fa-135">supportedService</span></span>|<span data-ttu-id="7c3fa-136">String</span><span class="sxs-lookup"><span data-stu-id="7c3fa-136">String</span></span>| <span data-ttu-id="7c3fa-137">与此 MX 记录相关的 Microsoft Online 服务或功能。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-137">Microsoft Online Service or feature that has a dependency on this MX record.</span></span></br></br><span data-ttu-id="7c3fa-138">可以是下列值之一: **null**、 *Email*、 *Sharepoint*、 *EmailInternalRelayOnly*、 *OfficeCommunicationsOnline*、 *SharePointDefaultDomain*、 *FullRedelegation*、 *SharePointPublic*、 *OrgIdAuthentication*、 *Yammer*、 *Intune*</span><span class="sxs-lookup"><span data-stu-id="7c3fa-138">Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*</span></span> |
+|<span data-ttu-id="7c3fa-139">ttl</span><span class="sxs-lookup"><span data-stu-id="7c3fa-139">ttl</span></span>|<span data-ttu-id="7c3fa-140">Int32</span><span class="sxs-lookup"><span data-stu-id="7c3fa-140">Int32</span></span>| <span data-ttu-id="7c3fa-141">配置 DNS 主机上的 MX 记录的*生存时间 (ttl)* 属性时要使用的值。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-141">Value to use when configuring the *time-to-live (ttl)* property of the MX record at the DNS host.</span></span> <span data-ttu-id="7c3fa-142">不可为 null</span><span class="sxs-lookup"><span data-stu-id="7c3fa-142">Not nullable</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="331ed-143">关系</span><span class="sxs-lookup"><span data-stu-id="331ed-143">Relationships</span></span>
-<span data-ttu-id="331ed-144">无</span><span class="sxs-lookup"><span data-stu-id="331ed-144">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7c3fa-143">关系</span><span class="sxs-lookup"><span data-stu-id="7c3fa-143">Relationships</span></span>
+<span data-ttu-id="7c3fa-144">无</span><span class="sxs-lookup"><span data-stu-id="7c3fa-144">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="331ed-145">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="331ed-145">JSON representation</span></span>
-<span data-ttu-id="331ed-146">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="331ed-146">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7c3fa-145">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="7c3fa-145">JSON representation</span></span>
+<span data-ttu-id="7c3fa-146">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7c3fa-146">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -48,7 +47,6 @@ ms.locfileid: "29508417"
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -63,15 +61,10 @@ ms.locfileid: "29508417"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "domainDnsMxRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/domaindnsmxrecord.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->
