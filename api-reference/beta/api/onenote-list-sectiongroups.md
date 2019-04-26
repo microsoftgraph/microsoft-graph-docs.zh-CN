@@ -4,14 +4,16 @@ description: 检索 sectionGroup 对象的列表。
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 05aa4e415d246fecb476c808ee42b06e2ad1a0ce
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 86e1cf3ee6963549344b9932597f3ab075149697
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540392"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333039"
 ---
 # <a name="list-sectiongroups"></a>列出 sectionGroups
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索[sectionGroup](../resources/sectiongroup.md)对象的列表。
 ## <a name="permissions"></a>权限
@@ -58,7 +60,7 @@ GET /sites/{id}/onenote/sectionGroups
   "name": "get_sectiongroups"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups
+GET https://graph.microsoft.com/beta/me/onenote/sectionGroups
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -78,7 +80,8 @@ Content-length: 378
     {
       "sectionsUrl": "sectionsUrl-value",
       "sectionGroupsUrl": "sectionGroupsUrl-value",
-      "displayName": "name-value",      
+      "displayName": "name-value",
+      "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
       "createdBy": {
         "user": {
           "id": "id-value",
@@ -98,10 +101,13 @@ Content-length: 378
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List sectionGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

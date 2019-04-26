@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: 8240336bfcb9e45e33172c2c1551b71a65c315e0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462800"
 ---
 # <a name="onenote-resource-type"></a>Onenote 资源类型
 
@@ -49,12 +49,12 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|笔记本|[笔记本](notebook.md)集合|用户或组所有的 OneNote 笔记本集合。只读。可为 NULL。|
-|操作|[OnenoteOperation](onenoteoperation.md)集合 |OneNote 操作状态。不支持获取操作集合，但如果响应中返回 `Operation-Location` 标头，可以获取长时间运行的操作的状态。只读。可为 NULL。|
-|页面|[OnenotePage](page.md)集合|用户或组所有的全部 OneNote 笔记本中的页面。只读。可为 NULL。|
-|资源|[OnenoteResource](resource.md)集合 |OneNote 页面中的图像和其他文件资源。不支持获取资源集合，但可以[获取特定资源的二进制内容](resource.md)。只读。可为 NULL。|
-|sectionGroups|[SectionGroup](sectiongroup.md) 集合|用户或组所有的全部 OneNote 笔记本中的分区组。只读。可为 NULL。|
-|节|[OnenoteSection](section.md)集合|用户或组所有的全部 OneNote 笔记本中的节。只读。可为 Null。|
+|笔记本|[笔记本](notebook.md)集合|用户或组所有的 OneNote 笔记本集合。 只读。 可为 NULL。|
+|operations|[OnenoteOperation](onenoteoperation.md) 集合 |OneNote 操作状态。 不支持获取操作集合，但如果响应中返回 `Operation-Location` 标头，可以获取长时间运行的操作的状态。 只读。 可为 NULL。|
+|pages|[OnenotePage](page.md) 集合|用户或组所有的全部 OneNote 笔记本中的页面。  只读。 可为 NULL。|
+|resources|[OnenoteResource](resource.md) 集合 |OneNote 页面中的图像和其他文件资源。 不支持获取资源集合，但可以[获取特定资源的二进制内容](resource.md)。 只读。 可为 NULL。|
+|sectionGroups|[SectionGroup](sectiongroup.md) 集合|用户或组所有的全部 OneNote 笔记本中的分区组。  只读。 可为 NULL。|
+|sections|[OnenoteSection](section.md) 集合|用户或组所有的全部 OneNote 笔记本中的节。  只读。 可为 Null。|
 
 ## <a name="methods"></a>方法
 
@@ -65,7 +65,7 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 |[创建页面](../api/onenote-post-pages.md) |[页面](page.md)| 通过发布到页面集合创建页面。|
 |[列出页面](../api/onenote-list-pages.md) |[页面](page.md)集合| 获取页面的集合。|
 |[列出分区组](../api/onenote-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) 集合| 获取分区组的集合。|
-|[列出节](../api/onenote-list-sections.md) |[OnenoteSection](section.md)集合| 获取节的集合。|
+|[列出节](../api/onenote-list-sections.md) |[OnenoteSection](section.md) 集合| 获取节的集合。|
 
 
 ## <a name="json-representation"></a>JSON 表示形式

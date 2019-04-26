@@ -4,14 +4,16 @@ description: 使用此 API 新建 **plannerPlan**。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a5383bacedef2e7e6df718a4286f034e67f6a7d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e3d55fddae020a58b2fdb240b486d65b3d78a320
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539006"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332540"
 ---
 # <a name="create-plannerplan"></a>创建 plannerPlan
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用此 API 新建 **plannerPlan**。
 
@@ -44,7 +46,6 @@ POST /planner/plans
 
 >**注意：** 正在创建计划的用户必须是拥有该计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
 
-
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [plannerPlan](../resources/plannerplan.md) 对象。
@@ -56,13 +57,12 @@ POST /planner/plans
 ### <a name="request"></a>请求
 
 下面是一个请求示例。
-
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
 ``` http
-POST https://graph.microsoft.com/v1.0/planner/plans
+POST https://graph.microsoft.com/beta/planner/plans
 Content-type: application/json
 Content-length: 381
 
@@ -77,7 +77,6 @@ Content-length: 381
 ### <a name="response"></a>响应
 
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,10 +105,13 @@ Content-length: 357
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create plannerPlan",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

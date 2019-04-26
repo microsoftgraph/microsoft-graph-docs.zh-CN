@@ -2,12 +2,12 @@
 title: pageLinks 资源类型
 description: 用于打开 OneNote 页面的链接。
 localization_priority: Normal
-ms.openlocfilehash: 07c89d99b5731eccd57bec79c25d7d97509c54a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d6ce07ae53b4d1f960566012d4a46e482ccbf9c5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568614"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344951"
 ---
 # <a name="pagelinks-resource-type"></a>pageLinks 资源类型
 
@@ -49,8 +49,6 @@ ms.locfileid: "32568614"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/pagelinks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

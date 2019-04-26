@@ -4,12 +4,12 @@ description: 表示 Azure Active Directory 对象。**directoryObject** 类型�
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87fb1c21e2fa1e9788890d97f6afbd0b494c555e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3364af6afc4a8bf1661186a26e0f741abb6bc232
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507803"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340842"
 ---
 # <a name="directoryobject-resource-type"></a>directoryObject 资源类型
 
@@ -31,8 +31,8 @@ ms.locfileid: "32507803"
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|返回 user、group 或 directory 对象所属的所有组。检查是可传递的。|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| 返回 user、group 或 directory 对象所属的所有组和目录角色。检查是可传递的。 |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) 集合 | 基于提供的 ID 集获取目录对象集。 |
-|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
-|[delta](../api/directoryobject-delta.md)|directoryObject 集合| 获取目录对象的增量更改。 支持按派生类型筛选。 |
+|[validateProperties](../api/directoryobject-validateproperties.md)|Json| 验证 Office 365 组的显示名称或邮件别名是否符合命名策略。 |
+|[delta](../api/directoryobject-delta.md)|[directoryObject](directoryobject.md) collection| 获取目录对象的增量更改。 支持按派生类型筛选。 |
 
 ## <a name="properties"></a>属性
 
@@ -54,7 +54,8 @@ ms.locfileid: "32507803"
 
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "@odata.type": "microsoft.graph.directoryObject",
+  "openType": true
 }-->
 
 ```json
@@ -73,8 +74,6 @@ ms.locfileid: "32507803"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directoryobject.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

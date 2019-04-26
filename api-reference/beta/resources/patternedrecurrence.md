@@ -2,12 +2,12 @@
 title: patternedRecurrence 资源类型
 description: 定期模式和区域。
 localization_priority: Normal
-ms.openlocfilehash: f4ffd62b54eb6d577269b36d0ee3bea0a3a0002c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 063df70dfeeb1d37cfc5e23710108dd4cfc9ae57
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568261"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344921"
 ---
 # <a name="patternedrecurrence-resource-type"></a>patternedRecurrence 资源类型
 
@@ -18,8 +18,8 @@ ms.locfileid: "32568261"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|模式|[RecurrencePattern](recurrencepattern.md)|事件发生的频率。|
-|区域|[RecurrenceRange](recurrencerange.md)|事件的持续时间。|
+|模式|[recurrencePattern](recurrencepattern.md)|事件发生的频率。|
+|区域|[recurrenceRange](recurrencerange.md)|事件的持续时间。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -50,8 +50,6 @@ ms.locfileid: "32568261"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/patternedrecurrence.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

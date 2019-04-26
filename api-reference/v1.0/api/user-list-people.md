@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: insights
 ms.openlocfilehash: e7dd5c2ffefe57ffebf5e8d2fe3e9dca3101a488
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946348"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571224"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -44,17 +44,17 @@ GET /users/{id | userPrincipalName}/people
 |:---------------|:--------|:-------|
 |$filter|string|将响应限制为仅记录中包含指定条件的那些人员。|
 |$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。 可以使用 *$orderby* 参数更改响应中的人员排序。|
-|$search|string|按姓名或别名搜索人员。 支持模糊匹配。 参数仅适用于不搜索已登录的用户相关人员搜索相关的其他用户的人员。 此外支持`topic`要查找人员关键字基于提取与此人的电子邮件对话的主题。 请参阅*Perform 模糊搜索*节[获取有关人员的相关信息](/graph/people-example#perform-a-fuzzy-search)的信息和示例。 |
+|$search|string|按姓名或别名搜索人员。 支持模糊匹配。 参数仅适用于搜索已登录用户的相关人员，而不适用于搜索与其他用户相关的人员。 此外还支持 `topic` 关键字，以根据从与此人的电子邮件对话中提取的主题查找人员。 有关信息和示例，请参阅“[获取相关人员的信息](/graph/people-example#perform-a-fuzzy-search)”的“*执行模糊搜索*”部分。 |
 |$select|string|要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。|
-|$skip|整数|跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。|
-|$top|整数|要返回的结果数。|
+|$skip|int|跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。|
+|$top|int|要返回的结果数。|
 
 ## <a name="request-headers"></a>请求标头
 
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Accept | application/json |
+| 接受 | application/json |
 
 ## <a name="request-body"></a>请求正文
 

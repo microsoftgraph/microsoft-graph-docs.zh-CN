@@ -2,12 +2,12 @@
 title: 'servicePrincipal: 添加所有者'
 description: 使用此 API 添加服务主体的所有者。
 localization_priority: Normal
-ms.openlocfilehash: 67146ddf8fc4705b7c55487ec868a5bb090ecfa7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b7fee2fdeeb8bec7fc4476cfc70af845b3034edc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537488"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335875"
 ---
 # <a name="serviceprincipal-add-owner"></a>servicePrincipal: 添加所有者
 
@@ -88,8 +88,6 @@ Content-length: 51
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/serviceprincipal-post-owners.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

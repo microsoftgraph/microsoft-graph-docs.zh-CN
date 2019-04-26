@@ -4,12 +4,12 @@ description: 检索标记为用户收藏的 plannerPlans 的列表。 您可以�
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: c189b3a3a7ed6d36272c05e9614fd6d0327600d4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a0cf327148b75970c5e049850e83141751764cf0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538719"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332321"
 ---
 # <a name="list-favoriteplans"></a>列出 favoritePlans
 
@@ -38,7 +38,7 @@ GET /users/<id>/planner/favoritePlans
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者 {代码}。 必需。|
+| Authorization  | 持有者 {代码}。 必填。|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -100,8 +100,6 @@ Content-length: 979
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/planneruser-list-favoriteplans.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

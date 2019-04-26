@@ -4,16 +4,16 @@ description: 检索此团队中的频道列表。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 47e284bb5eb89c88a961dc82f802fd6eac083310
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4683afbe193765968944e3f10425fedc8abb7672
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456547"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328016"
 ---
 # <a name="list-channels"></a>列出频道
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索此团队中的[频道](../resources/channel.md)列表。
 
@@ -58,7 +58,7 @@ GET /teams/{id}/channels
   "name": "get_channels"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels
+GET https://graph.microsoft.com/beta/teams/{id}/channels
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -86,10 +86,13 @@ Content-length: 262
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List channels",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -2,12 +2,12 @@
 title: Azure AD 审核日志 API 概述
 description: Azure Active Directory (Azure AD) 可跟踪用户活动和登录指标，并创建审核日志报告，帮助你了解用户如何访问和利用 Azure AD 服务。 使用 Microsoft Graph API for Azure AD 分析这些报告的基础数据，并根据组织的特定需求创建自定义解决方案。
 localization_priority: Priority
-ms.openlocfilehash: 89be0007ae6c13fb48ba165ca991f5dfa9d9b9cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8bda9aff36ad8b46fbec3096008c2d5227058ef1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543864"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339047"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Azure AD 审核日志 API 概述
 
@@ -65,11 +65,3 @@ Azure AD 提供了两种类型的活动日志：
 - 了解[审核日志](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples)和[登录示例](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples)。  
 - 审查 [directoryAudit](directoryaudit.md) 资源和操作。
 - 审查 [signIn](signin.md) 资源和操作。 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/azure-ad-auditlog-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

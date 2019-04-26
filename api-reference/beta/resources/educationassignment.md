@@ -4,12 +4,12 @@ description: '**educationAssignment**资源表示分配给课程中的学生或�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 03612cd65dbefac4e31f1a4d06085ba635fe1eab
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9722a5eec59431b4c4c8bbf7dfc9ebfc39d4a459
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543040"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334522"
 ---
 # <a name="educationassignment-resource-type"></a>educationAssignment 资源类型
 
@@ -41,8 +41,8 @@ ms.locfileid: "32543040"
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |id|String| 只读。|
-|allowLateSubmissions|布尔值| 确定学生是否可以在截止日期后提交。 如果在创建过程中未指定此属性, 则该属性的默认值为 true。 |
-|allowStudentsToAddResourcesToSubmission|布尔值| 确定学生是否可以将自己的资源添加到提交中, 或者是否只能修改教师添加的资源。 |
+|allowLateSubmissions|Boolean| 确定学生是否可以在截止日期后提交。 如果在创建过程中未指定此属性, 则该属性的默认值为 true。 |
+|allowStudentsToAddResourcesToSubmission|Boolean| 确定学生是否可以将自己的资源添加到提交中, 或者是否只能修改教师添加的资源。 |
 |assignDateTime|DateTimeOffset|工作分配应变为活动状态的日期。  如果将来, 在此日期之前, 不会向学生显示工作分配。  **时间戳**类型表示使用 ISO 8601 格式的日期和时间信息, 并且始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| 发布工作分配后, 哪些用户或整个类应接收提交对象。 |
 |assignedDateTime|DateTimeOffset|将工作分配发布给学生和工作分配的时间显示在学生日程表上。  时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
@@ -55,14 +55,14 @@ ms.locfileid: "32543040"
 |指令|[itemBody](itembody.md)| 有关分配的说明。  这与显示名称一起告诉学生要执行的操作。 |
 |lastModifiedBy|[identitySet](identityset.md)| 上次修改工作分配的作者。 |
 |lastModifiedDateTime|DateTimeOffset|上次修改工作分配的时刻。  时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
-|status|string| **工作分配**的状态。  您不能修补此值。  可取值为：`draft`、`published`、`assigned`。|
+|状态|string| **工作分配**的状态。  您不能修补此值。  可取值为：`draft`、`published`、`assigned`。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|资源|[educationAssignmentResource](educationassignmentresource.md)集合| 学习与此工作分配相关联的对象。  只有教师可以修改此列表。 可为空。|
+|资源|[educationAssignmentResource](educationassignmentresource.md)集合| 学习与此工作分配相关联的对象。  只有教师可以修改此列表。 可为 Null。|
 |提交|[educationSubmission](educationsubmission.md)集合| 发布后, 每个学生都有一个提交对象代表其工作和评分。  只读。 可为 Null。|
-|categories|[educationCategory](educationcategory.md)集合| 设置后, 用户可以轻松地找到给定类型的工作分配。  只读。 可为 Null。|
+|类别|[educationCategory](educationcategory.md)集合| 设置后, 用户可以轻松地找到给定类型的工作分配。  只读。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -70,6 +70,7 @@ ms.locfileid: "32543040"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -106,8 +107,6 @@ ms.locfileid: "32543040"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

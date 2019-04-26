@@ -4,14 +4,16 @@ description: 检索 **plannerBucket** 对象的属性和关系。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a063fa887000eaa5e461ef2931125af2deed64ea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dc79dc0250db9ddc2757508d72052fb3a428fef8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538957"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332526"
 ---
 # <a name="get-plannerbucket"></a>获取 plannerBucket
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 **plannerBucket** 对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -26,7 +28,7 @@ ms.locfileid: "32538957"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/buckets/{id}
+GET /planner/buckets/<id>
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -51,7 +53,7 @@ GET /planner/buckets/{id}
   "name": "get_plannerbucket"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
+GET https://graph.microsoft.com/beta/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUCR
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -75,10 +77,13 @@ Content-length: 245
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get plannerBucket",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

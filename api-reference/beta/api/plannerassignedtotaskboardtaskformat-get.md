@@ -4,14 +4,16 @@ description: 检索 **plannerAssignedToTaskBoardTaskFormat** 对象的属性和�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 86cacbbab4a0c96c444400d0369cafd49f685554
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 910321873f1a8354da8aa1b759f43c44d5bbe0c0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538980"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332559"
 ---
 # <a name="get-plannerassignedtotaskboardtaskformat"></a>获取 plannerAssignedToTaskBoardTaskFormat
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 **plannerAssignedToTaskBoardTaskFormat** 对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -26,7 +28,7 @@ ms.locfileid: "32538980"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/{id}/assignedToTaskBoardFormat
+GET /planner/tasks/<id>/assignedToTaskBoardFormat
 ```
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -50,7 +52,7 @@ GET /planner/tasks/{id}/assignedToTaskBoardFormat
   "name": "get_plannerassignedtotaskboardtaskformat"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/assignedToTaskBoardFormat
+GET https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -76,10 +78,13 @@ Content-length: 225
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get plannerAssignedToTaskBoardTaskFormat",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

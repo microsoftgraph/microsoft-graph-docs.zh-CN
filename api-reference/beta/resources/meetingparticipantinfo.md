@@ -4,12 +4,12 @@ description: 会议参与者的相关信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1ba727344b1f653125a482b592e7d28c11d1d3d5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3df338760bd1d2ff74cc79c706944c9b5fa7104d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457114"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342392"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>meetingParticipantInfo 资源类型
 
@@ -19,10 +19,10 @@ ms.locfileid: "32457114"
 
 ## <a name="properties"></a>属性
 
-| 属性       | 类型                          | 描述                              |
+| 属性       | 类型                          | 说明                              |
 |:---------------|:------------------------------|:-----------------------------------------|
 | 窃取       | [identitySet](identityset.md) | 参与者的标识信息。 |
-| upn            | 字符串                        | 参与者的用户主体名称。  |
+| upn            | String                        | 参与者的用户主体名称。  |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -51,8 +51,6 @@ ms.locfileid: "32457114"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/meetingparticipantinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

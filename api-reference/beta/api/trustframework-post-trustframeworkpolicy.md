@@ -4,16 +4,16 @@ description: 此操作将在 Azure AD B2C 租户中创建一个新的 trustFrame
 localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4dc64ed9d1db3354926f0f2395e6c2cef84cff28
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f5b06048859853fbf15b1d82cdee97ac507513fc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548003"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329814"
 ---
 # <a name="create-trustframeworkpolicy"></a>创建 trustFrameworkPolicy
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
 创建新的[trustFrameworkPolicy](../resources/trustframeworkpolicy.md)对象。
 
@@ -41,7 +41,7 @@ POST /trustFramework/policies
 |名称|说明|
 |:---------------|:----------|
 |Authorization|Bearer {token}。必需。|
-|Content-Type|application/xml。 必需。|
+|Content-Type|application/xml。 必填。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -58,12 +58,14 @@ POST /trustFramework/policies
 ##### <a name="request"></a>请求
 
 <!-- {
-  "blockType": "request",
-  "name": "create__trustframeworkpolicy_from__trustframeworkpolicy"
+  "blockType": "ignored",
+  "truncated": true,
+  "name": "create_trustframeworkpolicy_from_trustframeworkpolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/trustFramework/policies
-Content-Type:application/xml
+Content-Type: application/xml
+
 <TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base">
     <!---PolicyContent-->
 </TrustFrameworkPolicy>
@@ -72,14 +74,15 @@ Content-Type:application/xml
 ##### <a name="response"></a>响应
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.trustFramework.policy"
+  "@odata.type": "microsoft.graph.trustFrameworkPolicy"
 } -->
 ```http
 HTTP/1.1 201 Created
-Content-Type application/xml
-Location /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
+Content-Type: application/xml
+Location: /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
+
 <TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base" PublicPolicyUri="http://tenantName.onmicrosoft.com/B2C_1A_Test">
     <!---PolicyContent-->
 </TrustFrameworkPolicy>

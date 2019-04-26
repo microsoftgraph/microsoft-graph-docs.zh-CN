@@ -1,19 +1,19 @@
 ---
 title: 'message: move'
-description: 将邮件移动到文件夹中。 此目标文件夹中创建新邮件的副本，并删除原始邮件。
+description: 将邮件移动到文件夹。 该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 0a6631bd6c8313751f9d34efc68d48fa0c38ffa9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977155"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463626"
 ---
 # <a name="message-move"></a>message: move
 
-将邮件移动到文件夹中。 此目标文件夹中创建新邮件的副本，并删除原始邮件。
+将邮件移动到文件夹。 该操作会在目标文件夹中创建邮件的新副本并删除原始邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -40,8 +40,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | 标头 | 值 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必需。 |
-| Content-Type | `application/json`. 必需。 |
+| 授权 | `Bearer {token}`（）。 必需。 |
+| Content-Type | `application/json`（）。 必需。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -49,11 +49,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | 参数   | 类型 |说明|
 |:---------------|:--------|:----------|
-|destinationId|字符串|目标文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。|
+|destinationId|String|目标文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`201 Created`响应代码和响应正文的[邮件](../resources/message.md)资源。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [message](../resources/message.md) 资源。
 
 ## <a name="example"></a>示例
 
@@ -61,7 +61,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 ##### <a name="request"></a>请求
 
-以下请求将指定的邮件移动到已删除邮件文件夹，由其已知文件夹名称标识`deleteditems`。
+以下请求会将制定邮件移至“已删除邮件”文件夹，由其已知文件夹名称 `deleteditems` 标识。
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAATs28OAAA="],
@@ -81,7 +81,7 @@ Content-type: application/json
 
 下面是一个响应示例。
 
-> **注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

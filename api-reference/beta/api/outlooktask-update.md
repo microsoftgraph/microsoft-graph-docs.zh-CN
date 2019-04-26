@@ -4,12 +4,12 @@ description: 更改 Outlook 任务的可写属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 1908d9b918b13f87b1d5ab61dab912577f06da64
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 47a96d7e1fd7044bcc43edac809696c5a3ad2c42
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539792"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332681"
 ---
 # <a name="update-outlooktask"></a>更新 outlooktask
 
@@ -54,8 +54,8 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
 |assignedTo|String|已为其分配任务的人员姓名。|
-|body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
-|categories|String collection|与任务关联的类别。|
+|正文|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。 请注意，仅支持 HTML 类型。|
+|类别|String 集合|与任务关联的类别。|
 |changeKey|String|任务的版本。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区内完成任务的日期。|
 |createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
@@ -71,7 +71,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 |敏感度|string|指示任务的隐私级别。 可取值为：`normal`、`personal`、`private`、`confidential`。|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|要在指定时区内开始执行任务的日期。|
 |状态|string|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
-|subject|String|任务的简要说明或标题。|
+|主题|String|任务的简要说明或标题。|
 
 ## <a name="response"></a>响应
 
@@ -88,8 +88,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTHgwAAA=')
-
+PATCH https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTHgwAAA=
 Prefer: outlook.timezone="Eastern Standard Time"
 Content-type: application/json
 Content-length: 76
@@ -160,8 +159,6 @@ Content-length: 376
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlooktask-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

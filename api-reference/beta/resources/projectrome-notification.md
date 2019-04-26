@@ -3,12 +3,12 @@ title: 通知资源类型
 description: '表示由面向指定用户的应用程序服务器发布的通知。 通知存储在 Microsoft Graph 中, 并分发给用户拥有的不同设备终结点。 '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: af130c9806511b0afbdaedb602790c7c40d3ca2e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 56a05ced6d722b3c1c347fc43735dec461aa0f69
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563324"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344098"
 ---
 # <a name="notification-resource-type"></a>通知资源类型
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "32563324"
 | 有效负载。 visual | Edm、JSON 对象 | 直观用户通知的可视内容, 它将由每个移动平台上的通知平台使用, 并为用户呈现。 至少有一个内容和 VisualContent 需要对 POST 通知请求有效。 |
 | 有效负载. 标题 | String | 可视用户通知的标题。 必须具有 "标题" 或 "正文"。 |
 | 有效负载 | String | 可视化用户通知的正文。 必须具有 "标题" 或 "正文"。 |
-| displayTimeToLive | 阈值 | 设置此通知内容将在每个平台的通知查看器中保留多长时间 (以秒为单位)。 例如, 将通知传递给 Windows 设备时, 此属性的值将传递给 ToastNotification, 以确定 toast 通知将在用户的 Windows 操作中心保留多长时间。 |
+| displayTimeToLive | Int | 设置此通知内容将在每个平台的通知查看器中保留多长时间 (以秒为单位)。 例如, 将通知传递给 Windows 设备时, 此属性的值将传递给 ToastNotification, 以确定 toast 通知将在用户的 Windows 操作中心保留多长时间。 |
 | priority | EnumType | 指示原始用户通知的优先级。 默认情况下, 视觉通知以高优先级发送。 有效值为 "高" 和 "低"。 |
 | 名 | String | 此通知所属的组的名称。 它由开发人员设置, 用于将通知分组在一起。 |
 | targetPolicy | Edm、JSON 对象 | 目标策略对象在两个不同的级别 (应针对其目标的终结点类型 (Windows、iOS 和 Android) 以及应针对目标的特定终结点 (由订阅 id 标识) 中处理通知传递策略。 |
 | targetPolicy。 platformTypes | Edm、集合 (EnumType) | 使用将通知分发筛选到特定平台或平台。 默认情况下, 将启用所有 "推送终结点类型" (iOS、Windows 和 Android)。 |
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无。
 
 ## <a name="json-representation"></a>JSON 表示形式

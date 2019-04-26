@@ -1,17 +1,17 @@
 ---
-title: riskyUsers 资源类型
+title: riskyUser 资源类型
 description: 表示有风险的 Azure AD 用户。 Azure AD 会根据各种信号和机器学习持续评估用户风险。 此 API 提供对 Azure AD 中所有风险用户的编程访问。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 927e4eb519f8a849ac2cb259bed962bad44d9a6d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 179a6cbddf3e4b27c47761bd81aad1052ae7f728
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563118"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343533"
 ---
-# <a name="riskyusers-resource-type"></a>riskyUsers 资源类型
+# <a name="riskyuser-resource-type"></a>riskyUser 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "32563118"
 |`isGuest`|`bool`|指示用户是否为来宾用户。 可取值为：`true`、`false`。 如此如果用户的标识位于租户外部, 请考虑。 此用户可以是在 Azure AD、MSA 或第三方标识提供程序中具有标识的 B2B 或 B2C 用户。 假如果用户的标识位于租户内部, 则考虑|
 |`isProcessing`|`bool`|指示后端正在处理用户的危险状态 wehther|
 |`riskLastUpdatedDateTime`|`datetime`|上次更新有风险的用户的日期和时间|
-|`riskLevel`|`riskLevel`| 可能的值包括 low、中型、high、hidden、none、向 unknownfuturevalue。  |
+|`riskLevel`|`riskLevel`| 可能的值为 low、medium、high、hidden、none、向 unknownfuturevalue。  |
 |`riskState`|`riskState`| 可能的值为 none、confirmedSafe、修正、atRisk、向 unknownfuturevalue。  |
 |`riskDetail`|`riskDetail`| 可能的值为 none、adminGeneratedTemporaryPassword、userPerformedSecuredPasswordChange、userPerformedSecuredPasswordReset、adminConfirmedSigninSafe、aiConfirmedSigninSafe、userPassedMFADrivenByRiskBasedPolicy、adminDismissedAllRiskForUser、adminConfirmedSigninCompromised、hidden、adminConfirmedUserCompromised、向 unknownfuturevalue。  |
 |`userDisplayName`|`string`|有风险的用户显示名称|
@@ -57,8 +57,9 @@ ms.locfileid: "32563118"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.riskyUser"
 }-->
 

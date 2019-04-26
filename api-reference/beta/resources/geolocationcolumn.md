@@ -4,12 +4,12 @@ ms.author: kevinlam
 ms.date: 09/10/2018
 title: GeolocationColumn
 localization_priority: Normal
-ms.openlocfilehash: 9c39a7f646f6f78a9e321f05765a252d5f66de30
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1a7af7746dcfddcc67c4bfe9831bee9acfe82152
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506426"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333717"
 ---
 # <a name="geolocationcolumn-resource-type"></a>geolocationColumn 资源类型
 
@@ -38,8 +38,6 @@ ms.locfileid: "32506426"
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/GeolocationColumn",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/geolocationcolumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

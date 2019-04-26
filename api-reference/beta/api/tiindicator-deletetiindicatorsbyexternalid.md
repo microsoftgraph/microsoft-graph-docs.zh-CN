@@ -4,12 +4,12 @@ description: 在一个请求中 (而不是多个请求) 删除多个威胁情报
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 82cdd0d9688e778982244a06a2a2e5d558d25807
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 41c964f02e12d420c73e005fd0d669aecbd92d0f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537033"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335231"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator: deleteTiIndicatorsByExternalId
 
@@ -47,7 +47,7 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|String collection| `externalIds`要删除的**tiIndicator**对象的集合。 |
+|值|String 集合| `externalIds`要删除的**tiIndicator**对象的集合。 |
 
 ## <a name="response"></a>响应
 
@@ -62,7 +62,8 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "tiindicator_deletetiindicatorsbyexternalid"
+  "name": "tiindicator_deletetiindicatorsbyexternalid",
+  "isCollection":"true"
 }-->
 
 ```http
@@ -79,7 +80,7 @@ Content-type: application/json
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
 > [!NOTE]
 > 为了提高可读性, 可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
@@ -94,6 +95,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

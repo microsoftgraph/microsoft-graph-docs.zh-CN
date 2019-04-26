@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 驱动器
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 82a14f6462604b732119b90d037b2fab711df5af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a01a2a8a8ad827145ee98a3ef0687546581d3096
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507838"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340656"
 ---
 # <a name="drive-resource-type"></a>驱动器资源类型
 
@@ -51,21 +51,22 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 {
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
   "id": "string",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
-  "following": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "following": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "items": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "string (timestamp)",
   "name": "string",
-  "owner": { "@odata.type": "microsoft.graph.identitySet" },
-  "quota": { "@odata.type": "microsoft.graph.quota" },
-  "root": { "@odata.type": "microsoft.graph.driveItem" },
-  "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
-  "system": { "@odata.type": "microsoft.graph.systemFacet" },
-  "webUrl": "url"
+  "owner": {"@odata.type": "microsoft.graph.identitySet"},
+  "quota": {"@odata.type": "microsoft.graph.quota"},
+  "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "special": [{"@odata.type": "microsoft.graph.driveItem"}],
+  "system": {"@odata.type": "microsoft.graph.systemFacet"},
+  "webUrl": "string",
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"}
 }
 ```
 
@@ -96,10 +97,10 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
 | 关系 | 类型                                 | 说明
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | [itemActivity][] 集合          | 最近发生在此驱动器下的活动的列表。
-| 项目        | [driveitem](driveitem.md) 集合 | 驱动器中包含的所有项。只读。可为 NULL。
-| root         | [driveitem](driveitem.md)            | 驱动器的根文件夹。只读。
-| special      | [driveitem](driveitem.md) 集合 | OneDrive 中可用的公用文件夹的集合。只读。可为 NULL。
-| 关注    | [DriveItem](driveitem.md) 集合 | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
+| items        | [driveItem](driveitem.md) 集合 | 驱动器中包含的所有项。只读。可为 NULL。
+| root         | [driveItem](driveitem.md)            | 驱动器的根文件夹。只读。
+| special      | [driveItem](driveitem.md) 集合 | OneDrive 中可用的公用文件夹的集合。只读。可为 NULL。
+| following    | [driveItem](driveitem.md) 集合 | 用户关注的项列表。 仅适用于 OneDrive for Business 中。
 
 ## <a name="methods"></a>方法
 
@@ -142,8 +143,6 @@ OneDrive 用户必须始终具有至少一个可用驱动器，即默认驱动�
   "tocBookmarks": {
     "Resources/Drive": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

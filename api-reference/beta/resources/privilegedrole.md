@@ -2,12 +2,12 @@
 title: privilegedRole 资源类型
 description: 表示 Azure AD 管理员角色, 例如:**全局管理员、记帐管理员、服务管理员、用户管理员、密码管理员**等。
 localization_priority: Normal
-ms.openlocfilehash: 131999f52a583400b018e98d2319118f69ca87e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9b5454745257bea071f967b654d3b6174c3c3289
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563399"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344270"
 ---
 # <a name="privilegedrole-resource-type"></a>privilegedRole 资源类型
 
@@ -35,9 +35,9 @@ ms.locfileid: "32563399"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|assignments|[privilegedRoleAssignment](privilegedroleassignment.md) 集合| 此角色的分配。 只读。 可为 Null。|
-|settings|[privilegedRoleSettings](privilegedrolesettings.md)| 此角色的设置。 只读。 可为 Null。|
-|摘要|[privilegedRoleSummary](privilegedrolesummary.md)| 此角色的摘要信息。 只读。 可为 Null。|
+|assignments|[privilegedRoleAssignment](privilegedroleassignment.md) 集合| 此角色的分配。 此为只读属性。 可为 Null。|
+|settings|[privilegedRoleSettings](privilegedrolesettings.md)| 此角色的设置。 此为只读属性。 可为 Null。|
+|摘要|[privilegedRoleSummary](privilegedrolesummary.md)| 此角色的摘要信息。 此为只读属性。 可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -48,6 +48,8 @@ ms.locfileid: "32563399"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedRole"
 }-->
 
@@ -68,8 +70,6 @@ ms.locfileid: "32563399"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedrole.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

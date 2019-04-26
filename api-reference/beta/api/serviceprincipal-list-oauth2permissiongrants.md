@@ -2,12 +2,12 @@
 title: 'servicePrincipal: List oAuth2Permissiongrants'
 description: 检索 oAuth2Permissiongrant 对象的列表。
 localization_priority: Normal
-ms.openlocfilehash: 34f769f5bd194458689914dd608583c69bbe2076
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e136724287db1d2c8b4d49a882a2871fb551b2fa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537534"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331420"
 ---
 # <a name="serviceprincipal-list-oauth2permissiongrants"></a>servicePrincipal: List oAuth2Permissiongrants
 
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oAuth2Permissiongran
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2Permissiongrant",
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrant",
   "isCollection": true
 } -->
 ```http
@@ -89,8 +89,6 @@ Content-length: 253
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/serviceprincipal-list-oauth2permissiongrants.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

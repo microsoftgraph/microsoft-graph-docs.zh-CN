@@ -4,12 +4,12 @@ description: educationResource 的子类。 此资源是窗体。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5e0b03eeea8c0e9d22a9f7279c821f6d90211470
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3f2747d94c80732091db06294b26546afc567e03
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542844"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334253"
 ---
 # <a name="educationformresource-resource-type"></a>educationFormResource 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "32542844"
 |:---------------|:--------|:----------|
 |originalFormId|String|表单的原始 id。|
 |formId|String|表单的 Id。|
-|isGroupForm|布尔值|表单是否属于类组。|
+|isGroupForm|Boolean|表单是否属于类组。|
 |viewUrl|String|表单的学生 URL。|
 |viewUrl|String|表单的学生 URL。|
 |editUrl|String|表单的教师 URL。|
@@ -42,10 +42,10 @@ ms.locfileid: "32542844"
 
 ```json
 {
-  "originalFormId": "String"
-  "formId": "String"
-  "isGroupForm": "Boolean"
-  "viewUrl": "String"
+  "originalFormId": "String",
+  "formId": "String",
+  "isGroupForm": "Boolean",
+  "viewUrl": "String",
   "editUrl": "String"
 }
 
@@ -60,8 +60,6 @@ ms.locfileid: "32542844"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationformresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

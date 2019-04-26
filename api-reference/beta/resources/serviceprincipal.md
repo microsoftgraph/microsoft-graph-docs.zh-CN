@@ -2,12 +2,12 @@
 title: servicePrincipal 资源类型
 description: 表示目录中的一个应用程序实例。 继承自 directoryObject。
 localization_priority: Priority
-ms.openlocfilehash: cd0ac4d440b2e10f935c02393419754989394816
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 63a313aa12943909a11e8f3b5fa9a7f1edeb1e75
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32571861"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345687"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 

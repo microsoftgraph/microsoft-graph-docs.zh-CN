@@ -1,24 +1,24 @@
 ---
 title: 创建开放扩展
-description: 创建开放扩展（openTypeExtension 对象），并在新建或现有的资源实例中添加自定义属性。
+description: 创建开放扩展（openTypeExtension 对象），并在资源的新实例或现有实例中添加自定义属性。
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: 0823cb549527f7e5851e9d47e328b427eb64539f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d435dc430d78d3ab25947de9536cd26933b4bc48
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962343"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345846"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
-创建开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象），并在新建或现有的资源实例中添加自定义属性。
+创建开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象），并在资源的新实例或现有实例中添加自定义属性。
 
-> **注意：** 如果您正在创建在 Outlook 资源的打开扩展，请参阅[openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)**特定于 Outlook 的注意事项**。
+> **请注意：** 如果要在 Outlook 资源上创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的 **Outlook 特定注意事项**。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
-根据您正在创建中的扩展名的资源和权限类型 （委派或应用程序） 请求下, 表中所指定的权限是最小特权需要调用此 API。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据要在其中创建扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
@@ -36,7 +36,7 @@ ms.locfileid: "27962343"
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>在新资源实例中创建扩展插件
 
-使用同一 REST 请求您用于创建实例。
+使用创建实例时所用的同一 REST 请求。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -47,9 +47,9 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**注意：** 此语法演示创建支持的资源实例的一些常见方法。 允许您创建这些资源实例的所有其他 POST 语法支持创建打开扩展名中其方式类似。
+>**请注意：** 此语法显示了一些创建受支持资源实例的常用方式。 可用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。
 
-若要了解如何在请求正文中添加新资源实例和扩展的属性，请参阅[请求正文](#request-body)部分。
+若要了解如何在请求正文中添加新资源实例和_扩展_的属性，请参阅[请求正文](#request-body)部分。
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>在现有资源实例中创建扩展插件
 
@@ -68,14 +68,14 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**注意：** 此语法演示来标识资源实例，以便在其中创建一个扩展的一些常见方法。 允许您确定这些资源实例的所有其他语法支持以类似方式在其中创建打开的扩展。
+>**请注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中创建一个扩展。 可用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。
 
-若要了解如何在请求正文中添加扩展，请参阅[请求正文](#request-body)部分。
+若要了解如何在请求正文中添加_扩展_，请参阅[请求正文](#request-body)部分。
 
 ## <a name="path-parameters"></a>路径参数
 |参数|类型|说明|
 |:-----|:-----|:-----|
-|ID|string|对象在相应集合中的唯一标识符。必需。|
+|id|string|对象在相应集合中的唯一标识符。必需。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -101,8 +101,8 @@ POST /users/{id|userPrincipalName}/extensions
 
 响应代码可以是 `201 Created`，也可以是 `202 Accepted`，具体视操作而定。
 
-当您创建一个使用您用于创建资源实例的相同操作的扩展时，操作将返回它返回使用该操作创建无扩展名的资源实例时的相同响应代码。
-请参阅创建的实例中，列出[上面](#create-an-extension-in-a-new-resource-instance)的相应主题。
+使用创建资源实例时所用的操作创建扩展时，操作所返回的响应代码与通过该操作创建不带扩展的资源实例时返回的代码相同。
+请参阅有关创建实例的相应主题，如[上 ](#create-an-extension-in-a-new-resource-instance)所列。
 
 ### <a name="response-body"></a>响应正文
 
@@ -123,7 +123,7 @@ POST /users/{id|userPrincipalName}/extensions
 
   - `microsoft.graph.openTypeExtension` 类型。
   - 扩展名“Com.Contoso.Referral”。
-  - 其他数据存储为 JSON 有效负载中的三个自定义属性： `companyName`， `expirationDate`，和`dealValue`。
+  - 存储为 JSON 有效负载中的 3 个自定义属性的其他数据：`companyName`、`expirationDate` 和 `dealValue`。
 
 <!-- {
   "blockType": "ignored",
@@ -161,7 +161,7 @@ POST https://graph.microsoft.com/v1.0/me/messages
 
 下面是第一个示例的响应。响应正文包括新邮件的属性以及新扩展的以下属性：
 
-- 具有完全限定的名称 `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
+- 具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
 - 请求中指定的默认属性 **extensionName**。
 - 请求中指定的作为 3 个自定义属性存储的自定义数据。
 
@@ -225,8 +225,8 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
     {
       "@odata.type": "#microsoft.graph.openTypeExtension",
       "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
-('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
-      "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+('AAMkAGEbs88AAB84uLuAAA=')/extensions('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
+      "id": "microsoft.graph.openTypeExtension.Com.Contoso.Referral",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -267,7 +267,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi
 下面是第二个示例的响应。请求正文包括新扩展的如下内容：
 
 - 默认属性 **extensionName**。
-- 具有完全限定的名称 `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
+- 具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
 - 要存储的自定义数据。
 
 <!-- {
@@ -283,9 +283,9 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
     "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
-('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
+('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+    "id": "microsoft.graph.openTypeExtension.Com.Contoso.Referral",
     "companyName": "Wingtip Toys",
     "dealValue": 500050,
     "expirationDate": "2015-12-03T10:00:00.000Z"
@@ -334,7 +334,7 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
     "@odata.type": "#microsoft.graph.openTypeExtension",
-    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
+    "id": "microsoft.graph.openTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
     "dealValue": 1010100,
@@ -367,7 +367,7 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
     },
   "extensions": [
     {
-      "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.HR",
       "companyName": "Contoso",
       "expirationDate": "2015-07-03T13:04:00.000Z",
@@ -425,7 +425,7 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
           },
           "Extensions": [
             {
-              "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+              "@odata.type": "microsoft.graph.openTypeExtension",
               "extensionName": "Com.Contoso.Benefits",
               "companyName": "Contoso",
               "expirationDate": "2016-08-03T11:00:00.000Z",

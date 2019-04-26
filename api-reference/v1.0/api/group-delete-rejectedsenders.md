@@ -1,18 +1,18 @@
 ---
 title: 删除 rejectedSender
-description: 从 rejectedSenders 列表中删除用户或组。
+description: 从 "拒绝的发件人" 列表中删除用户或组。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 58936ee410b63f43d9c0a9e8efcf3eb5a96e76ae
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 63e34e39d25ea3e3cc4d352d7caf6a71c86a5a57
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461134"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334483"
 ---
 # <a name="remove-rejectedsender"></a>删除 rejectedSender
-从 rejectedSenders 列表中删除用户或组。
+从 "拒绝的发件人" 列表中删除用户或组。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -54,7 +54,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=htt
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。 
+下面是一个响应示例。 
 <!-- {
   "blockType": "response",
   "truncated": true

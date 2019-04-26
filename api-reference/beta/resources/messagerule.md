@@ -4,15 +4,16 @@ description: 适用于用户收件箱邮件的规则。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 790968563acfe7ed1fb760839454957bb2ac0ecb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d74d4c6a5121355113a883c5c8096420986b6549
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457121"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342254"
 ---
 # <a name="messagerule-resource-type"></a>messageRule 资源类型
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 适用于用户收件箱邮件的规则。
 
@@ -22,7 +23,7 @@ ms.locfileid: "32457121"
 
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |描述|
+| 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | 满足相应条件时对邮件执行的操作。 |
 | conditions | [messageRulePredicates](messagerulepredicates.md) | 满足条件时，将触发该规则的相应操作。 |
@@ -42,7 +43,6 @@ ms.locfileid: "32457121"
   "blockType": "resource",
   "optionalProperties": [
    ],
-   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.messageRule"
 }-->
 
@@ -68,14 +68,17 @@ ms.locfileid: "32457121"
 |[Get rule](../api/messagerule-get.md) | [messageRule](messagerule.md) |读取 **messageRule** 对象的属性和关系。|
 |[Create](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |通过指定一组条件和操作来创建 **messageRule** 对象。|
 |[Update](../api/messagerule-update.md) | [messageRule](messagerule.md) |为 **messageRule** 对象更改可写属性并保存更改。 |
-|[Delete](../api/messagerule-delete.md) | 无 |删除指定的 **messageRule** 对象。 |
+|[删除](../api/messagerule-delete.md) | 无 |删除指定的 **messageRule** 对象。 |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "messageRule resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

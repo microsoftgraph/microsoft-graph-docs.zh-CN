@@ -2,12 +2,12 @@
 title: patchContentCommand 资源类型
 description: 对修补程序请求中的 OneNote 页面进行的更改。
 localization_priority: Normal
-ms.openlocfilehash: d0d8f320d22a8b3466ddd53deee5bcb7955ff3d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 80fa4308fdcf5dc05287051f6ae586b228a02073
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568467"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344986"
 ---
 # <a name="patchcontentcommand-resource-type"></a>patchContentCommand 资源类型
 
@@ -54,8 +54,6 @@ ms.locfileid: "32568467"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/patchcontentcommand.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

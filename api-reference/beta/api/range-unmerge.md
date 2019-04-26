@@ -4,12 +4,12 @@ description: 将范围单元格取消合并为各个单元格。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 08ddabdf756fcb93bc4109f82ec78fecc6f7a273
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ca8499e5c0504d759d92a878c7a0babdb6133e3f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546214"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331920"
 ---
 # <a name="range-unmerge"></a>Range: unmerge
 
@@ -28,7 +28,7 @@ ms.locfileid: "32546214"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/unmerge
+POST /workbook/names/{name}/range/unmerge
 POST /workbook/worksheets/{id|name}/range(address='<address>')/unmerge
 POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 
@@ -54,7 +54,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
   "name": "range_unmerge"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/unmerge
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/unmerge
 ```
 
 ##### <a name="response"></a>响应
@@ -77,8 +77,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/range-unmerge.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

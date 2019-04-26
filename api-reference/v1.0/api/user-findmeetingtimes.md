@@ -4,12 +4,12 @@ description: 根据组织者和与会者的空闲状况以及指定为参数的�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 661b2f25f14baddd04e15c7a9fcf38d9f1df4079
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f451a3cff049f45a5c66c975f8e1ee9861136b50
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567870"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345860"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 根据组织者和与会者的空闲状况以及指定为参数的时间或位置，推荐会议时间和位置。
@@ -353,6 +353,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "suppressions": [
       "Warning: /api-reference/v1.0/api/user-findmeetingtimes.md:
       Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",
+      "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
+      Expected type Double but actual was Int64. Property: confidence, actual value: '100'",
       "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
       Expected type Float but actual was Int64. Property: confidence, actual value: '100'"
   ],

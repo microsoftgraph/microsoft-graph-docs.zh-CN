@@ -4,12 +4,12 @@ description: '表示提供程序连接设置。 这使系统可以了解如何�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f6af6851e1e9d327b05c9ca1c7ed5929335a6e17
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 387c002240d54d1ec12e58564e91831d6f0e8a50
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542947"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334104"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>educationSynchronizationConnectionSettings 资源类型
 
@@ -31,11 +31,3 @@ ms.locfileid: "32542947"
 |:-|:-|:-|
 | **clientId** | String |  用于连接到提供程序的客户端 ID。 |
 | **clientSecret** | String |  用于对与提供程序的连接进行身份验证的客户端密码。 |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationsynchronizationconnectionsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

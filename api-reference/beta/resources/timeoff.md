@@ -4,12 +4,12 @@ description: 计划中的非工作单位。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c15d65c6d0a5a9749654698a51996cb21c254a9d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 848365a812053b7788db37395bee8662d69cda37
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582841"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342013"
 ---
 # <a name="timeoff-resource-type"></a>timeOff 资源类型
 
@@ -32,11 +32,11 @@ ms.locfileid: "32582841"
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |`timeOff` 的 ID。|
 | userId            |`string`      |分配给的`timeOff`用户的 ID。 必需。|
-| sharedTimeOff     |[timeOffItem](timeoffitem.md)  |员工和经理可查看`timeOff`的共享版本。 必需。|
-| draftTimeOff      |[timeOffItem](timeoffitem.md)        |经理可查看的草稿`timeOff`版本。 必需。|
+| sharedTimeOff     | [timeOffItem](timeoffitem.md)  |员工和经理可查看`timeOff`的共享版本。 必需。|
+| draftTimeOff      | [timeOffItem](timeoffitem.md)        |经理可查看的草稿`timeOff`版本。 必需。|
 | createdDateTime       |`DateTimeOffset`        |首次创建时的时间`timeOff`戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
 | lastModifiedDateTime      |`DateTimeOffset`        |上次更新此`timeOff`时间戳的时间戳。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 (UTC) 如下所示：“2014-01-01T00:00:00Z”。 |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |上次更新 `timeOff` 的标识。 |
+| lastModifiedBy        | [identitySet](identityset.md)        |上次更新 `timeOff` 的标识。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -45,35 +45,18 @@ ms.locfileid: "32582841"
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.timeOff"
+  "@odata.type": "microsoft.graph.timeOff",
+   "baseType":"microsoft.graph.changeTrackedEntity"
 }-->
 
 ```json
 {
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "createdDateTime": "2019-03-14T05:35:57.755Z",
-  "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  },
-  "sharedTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-    "startDateTime": "2019-03-11T07:00:00Z",
-    "endDateTime": "2019-03-12T07:00:00Z",
-    "theme": "pink"
-  }
+  "userId": "string (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {"@odata.type":"microsoft.graph.identitySet"},
+  "sharedTimeOff": {"@odata.type":"microsoft.graph.timeOffItem"},
+  "draftTimeOff": {"@odata.type":"microsoft.graph.timeOffItem"}
 }
 ```
 
@@ -87,8 +70,6 @@ ms.locfileid: "32582841"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/timeoff.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

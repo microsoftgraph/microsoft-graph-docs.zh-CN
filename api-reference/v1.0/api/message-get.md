@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 6feb967d406bfe4fb8991c3cf3b877473fbb0971
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963288"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581728"
 ---
 # <a name="get-message"></a>获取邮件
 
@@ -17,10 +17,10 @@ ms.locfileid: "27963288"
 
 目前，此操作返回纯 HTML 格式的邮件正文。
 
-有两种方案，其中应用程序可以在另一个用户的邮件文件夹中收到一条消息：
+在以下两种情况下，应用可以获取其他用户的邮件文件夹中的邮件：
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享邮件文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+* 如果该应用具有应用程序权限，或者
+* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 由于**邮件**资源支持[扩展](/graph/extensibility-overview)，因此也可使用 `GET` 操作获取**邮件**实例中的自定义属性和扩展数据。
 
@@ -143,7 +143,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>请求 2
-下面的示例使用`$select`查询参数来获取一条消息的 Internet 邮件标头。 
+下一个示例使用 `$select` 查询参数获取邮件的 Internet 邮件标头。 
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
@@ -153,7 +153,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 ##### <a name="response-2"></a>响应 2
-下面是一个响应示例。 注意： 响应对象中的邮件头的集将被截断为简便起见。 从实际的呼叫，将返回所有的标头。
+下面是一个响应示例。 注意：为简洁起见，将截断响应对象中的邮件标头集。 所有标头都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

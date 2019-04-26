@@ -2,12 +2,12 @@
 title: 电话资源类型
 description: 表示电话号码。
 localization_priority: Normal
-ms.openlocfilehash: a343d4e1d65126048a27ad723c86ae49eb2ed752
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 643b146f95fcc85be530ce7907c872f56033240e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573765"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344952"
 ---
 # <a name="phone-resource-type"></a>电话资源类型
 
@@ -51,8 +51,6 @@ ms.locfileid: "32573765"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/phone.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

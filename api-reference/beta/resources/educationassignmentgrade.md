@@ -4,12 +4,12 @@ description: " 但是, 所有类型的评分 (点、pass/fail 等) 都是此类�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 5ca13ba057ef000a468d910d49288d9ae8e0c962
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e925059a5eb06e5cc9795f78368b884fa40dd3ff
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543019"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334533"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>educationAssignmentGrade 资源类型
 
@@ -53,8 +53,6 @@ ms.locfileid: "32543019"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationassignmentgrade.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

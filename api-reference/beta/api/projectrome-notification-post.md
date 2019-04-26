@@ -3,12 +3,12 @@ title: 创建和发送通知
 description: '创建并发送针对用户通过 Microsoft Graph 的通知。 通知存储在 Microsoft Graph 通知源存储中, 并发送到用户登录到的所有设备终结点上的所有应用程序客户端。  '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 70c7992a6fd323b909d948976132304fa04393c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 86e67d040dcae3a013d8848c638ffadca41e4f5f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546377"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331940"
 ---
 # <a name="create-and-send-a-notification"></a>创建和发送通知
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -69,7 +69,7 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
+下面是一个响应示例。
 
 ```http
 HTTP/1.1 201
@@ -94,11 +94,3 @@ location: https://graph.microsoft.com/beta/me/notifications/518c4fb1-c565-4d67-9
 ```
 
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-notification-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

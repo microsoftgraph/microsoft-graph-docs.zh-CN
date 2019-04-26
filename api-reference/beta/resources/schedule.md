@@ -4,12 +4,12 @@ description: 团队中的 schedulingGroups、倒班、timeOffReasons 和 timesOf
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: de3662fcf3c5a8e50493e365f6a10a8641a451df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 48b3b5c118a39442469bc6155068664fcebe0ec2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563104"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343519"
 ---
 # <a name="schedule-resource-type"></a>计划资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "32563104"
 | id                    |`string`  |`schedule` 的 ID。|
 | enabled               |`bool`    | 指示是否为团队启用了计划。 必需。|
 | timeZone              |`string`  | 指示使用 tz 数据库格式的日程安排团队的时区。 必需。|
-| provisionStatus       |`enum`    | 调度设置的状态。 |
+| provisionStatus       |`operationStatus`    | 调度设置的状态。 可能的值为`notStarted`、 `running`、 `completed`、 `failed`。 |
 | provisionStatusCode   |`string`  | 有关计划设置失败原因的其他信息。 |
 
 
@@ -74,8 +74,6 @@ ms.locfileid: "32563104"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/schedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

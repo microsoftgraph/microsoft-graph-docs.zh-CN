@@ -2,12 +2,12 @@
 title: governanceResource 资源类型
 description: 表示可由特权标识管理 (PIM) 管理的资源。 对于 Azure 资源, 它可以是订阅、资源组和资源 (如虚拟机、SQL 数据库等)。
 localization_priority: Normal
-ms.openlocfilehash: 92a738350a47cc9eaf436382d020330fac89db1f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7453397b0ea3edccd44a4eebdbbd89624bab2cc5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547422"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333703"
 ---
 # <a name="governanceresource-resource-type"></a>governanceResource 资源类型
 
@@ -21,7 +21,7 @@ ms.locfileid: "32547422"
 | 方法          | 返回类型 |说明|
 |:---------------|:--------|:----------|
 |[List](../api/governanceresource-list.md) | [governanceResource](../resources/governanceresource.md)集合|列出请求者有权访问的资源的集合。|
-|[获取](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |读取由 id 指定的资源实体的属性和关系。|
+|[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |读取由 id 指定的资源实体的属性和关系。|
 |[报名](../api/governanceresource-register.md) | |将非托管 Azure 订阅或管理组注册到 PIM 服务。 |
 
 目前`POST`, `PUT`entity `PATCH`set `DELETE`上`roleDefinitions`不支持,,。
@@ -31,9 +31,9 @@ ms.locfileid: "32547422"
 |:------------------|:----------|:----------|
 |id                 |String     |资源的 id。 它采用 GUID 格式。|
 |externalId           |String   |资源的外部 id, 表示其在外部系统中的原始 id。 例如, 订阅资源的外部 id 可以是 "/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac"。 |
-|类型               |String     |必需。 资源类型。 例如, 对于 Azure 资源, 类型可以是 "订阅"、"ResourceGroup"、"Microsoft .sql/服务器" 等。|
-|displayName        |字符串     |资源的显示名称。|
-|状态             |字符串     |给定资源的状态。 例如, 它可以表示资源是否已锁定 (values: `Active` / `Locked`)。 注意: 将来可能会扩展此属性以支持更多方案。|
+|type               |String     |必填。 资源类型。 例如, 对于 Azure 资源, 类型可以是 "订阅"、"ResourceGroup"、"Microsoft .sql/服务器" 等。|
+|displayName        |String     |资源的显示名称。|
+|status             |String     |给定资源的状态。 例如, 它可以表示资源是否已锁定 (values: `Active` / `Locked`)。 注意: 将来可能会扩展此属性以支持更多方案。|
 |registeredDateTime|DateTimeOffset      |表示在 PIM 中注册资源的日期时间。|
 |registeredRoot|String      |在 PIM 中注册的资源的根作用域的 externalId。 根作用域可以是父级、祖父或更高的上级资源。|
 |roleAssignmentCount|Int32      |可选。 给定资源的角色分配数。 若要获取属性, 请明确在`$select=roleAssignmentCount`查询中使用。|
@@ -55,6 +55,7 @@ ms.locfileid: "32547422"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -68,7 +69,12 @@ ms.locfileid: "32547422"
   "displayName": "String",
   "status": "String",
   "registeredDateTime": "String (timestamp)",
-  "registeredRoot": "String"
+  "registeredRoot": "String",
+  "roleAssignmentCount": 12356,
+  "roleDefinitionCount": 12356,
+  "permissions": {
+    "@odata.type": "microsoft.graph.governancePermission"
+  }
 }
 
 ```
@@ -81,8 +87,6 @@ ms.locfileid: "32547422"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

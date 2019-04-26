@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 2e37e863d4b050a07b756b91f1e98a4349239154
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918119"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463713"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -24,7 +24,8 @@ ms.locfileid: "27918119"
 |应用程序 | Mail.Read |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->[邮件](../resources/message.md)用户的邮箱中的附件。
+<!-- { "blockType": "ignored" } -->
+用户邮箱中的 [邮件](../resources/message.md) 附件。
 ```http
 GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments

@@ -4,12 +4,12 @@ description: 在团队的频道中列出邮件的所有答复。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3c3c681c820f4cc855105ec1605be920a98a1430
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 377d574a037010e4a441406506af4764784145e9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456456"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328074"
 ---
 # <a name="list-channel-message-replies"></a>列出频道邮件答复
 
@@ -34,9 +34,9 @@ ms.locfileid: "32456456"
 GET /teams/{id}/channels/{id}/messages/{id}/replies
 ```
 
-## <a name="optional-query-parameters"></a>可选查询参数
+## <a name="optional-query-parameters"></a>可选的查询参数
 
-您可以使用[$top](/graph/query-parameters#top-parameter)查询参数来控制每个响应的项目数。 其他[OData 查询参数](/graph/query-parameters)目前不受支持。
+可以使用 [$top](/graph/query-parameters#top-parameter) 查询参数控制每个响应中的项目数。 目前不支持其他 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
@@ -196,8 +196,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/channel-list-messagereplies.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

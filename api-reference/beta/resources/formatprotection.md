@@ -2,14 +2,16 @@
 title: FormatProtection 资源类型
 description: 表示对范围对象的格式保护。
 localization_priority: Normal
-ms.openlocfilehash: 7bc27060567136386ef1f08e6fe46e95980788a9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7375ea26caef3d8b06421441a712974c209b53ff
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506314"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333681"
 ---
 # <a name="formatprotection-resource-type"></a>FormatProtection 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 表示对范围对象的格式保护。
 
@@ -24,7 +26,7 @@ ms.locfileid: "32506314"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|formulaHidden|布尔|表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。|
+|formulaHidden|boolean|表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。|
 |已锁定|boolean|指示 Excel 是否锁定对象中的单元格。指示整个区域不具有统一锁定设置的空值。|
 
 ## <a name="relationships"></a>关系
@@ -37,11 +39,10 @@ ms.locfileid: "32506314"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookFormatProtection"
+  "@odata.type": "microsoft.graph.formatProtection"
 }-->
 
 ```json
@@ -54,10 +55,13 @@ ms.locfileid: "32506314"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "FormatProtection resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

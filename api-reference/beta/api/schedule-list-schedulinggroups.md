@@ -4,12 +4,12 @@ description: 获取此计划中的 schedulingGroup 列表。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7d1195540fd2ed4d73007930a964189848c85228
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 84857609def52f879f19a0be316544ed4c1fe9c5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545576"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331402"
 ---
 # <a name="list-schedulegroups"></a>列出 scheduleGroups
 
@@ -72,7 +72,8 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.schedulingGroup"
+  "@odata.type": "microsoft.graph.schedulingGroup",
+  "isCollection": true
 } -->
 
 ```http
@@ -93,6 +94,7 @@ Content-length: 401
         "2a4296b3-a28a-44ba-bc66-0274b9b95851"
       ],
       "lastModifiedBy": {
+        "@odata.type":"microsoft.graph.identitySet",
         "application": null,
         "device": null,
         "conversation": null,
@@ -115,8 +117,6 @@ Content-length: 401
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/schedule-list-schedulinggroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

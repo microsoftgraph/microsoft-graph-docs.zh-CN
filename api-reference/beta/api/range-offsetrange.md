@@ -4,12 +4,12 @@ description: 获取表示与指定区域偏移的区域的对象。返回的区�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 3d7032ed1a2e2549c3c70f8fbadf3f2f36208655
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5cd6b8251c855e1dd3a059722f8719dae33dd2c9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546223"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331893"
 ---
 # <a name="range-offsetrange"></a>Range:OffsetRange
 
@@ -28,7 +28,7 @@ ms.locfileid: "32546223"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/OffsetRange
+GET /workbook/names/{name}/range/OffsetRange
 GET /workbook/worksheets/{id|name}/range(address='<address>')/OffsetRange
 GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
@@ -49,7 +49,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [workbookRange](../resources/workbookrange.md) 对象。
 
 ## <a name="example"></a>示例
 下面是一个如何调用此 API 的示例。
@@ -60,7 +60,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
   "name": "range_offsetrange"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/OffsetRange
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/OffsetRange
 Content-type: application/json
 Content-length: 49
 
@@ -77,7 +77,7 @@ Content-length: 49
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -103,8 +103,6 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/range-offsetrange.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

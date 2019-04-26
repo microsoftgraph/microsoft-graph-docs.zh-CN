@@ -6,11 +6,11 @@ title: DriveItem
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 8dbbf3b673fe7f436b9600366765425011ab129f
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789625"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562746"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 

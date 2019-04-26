@@ -4,12 +4,12 @@ description: 在用户的默认日历或指定日历中创建事件。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fa63bae39c0e30c34a22dcfc91a7f0e7db528f58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4f6d0f188584d83509e218c433a4dd46b356ceb0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536458"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334544"
 ---
 # <a name="create-event"></a>创建事件
 

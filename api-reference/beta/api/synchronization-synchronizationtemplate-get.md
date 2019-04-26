@@ -2,12 +2,12 @@
 title: 获取 synchronizationTemplate
 description: 按其标识符检索同步模板。
 localization_priority: Normal
-ms.openlocfilehash: 4fc13ee5d83d6501f75bb45ce69f189b8809270c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 982727fa54f1b6f83d7acf382f0ccacdad72b7ff
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545167"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335542"
 ---
 # <a name="get-synchronizationtemplate"></a>获取 synchronizationTemplate
 
@@ -69,11 +69,3 @@ HTTP/1.1 200 OK
         }
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationtemplate-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

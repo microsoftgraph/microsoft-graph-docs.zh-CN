@@ -2,12 +2,12 @@
 title: 时间戳资源类型
 description: 时间点的日期和时间信息。
 localization_priority: Normal
-ms.openlocfilehash: 79faa8f74fbaf64eb6756183ecc309c6522873e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5f96ad5c557bda93ef74787d9d909fce112cfb15
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463570"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341951"
 ---
 # <a name="timestamp-resource-type"></a>时间戳资源类型
 
@@ -51,8 +51,6 @@ ms.locfileid: "32463570"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/timestamp.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: 一个包装对象, 该对象存储与工作分配相关联的资�
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 4d05cf5307e77dc6a7ac438c1bd4f4af4e73784e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 08a716edabc31c83a7fb3e358fbafd023d5fa784
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542946"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334406"
 ---
 # <a name="educationassignmentresource-resource-type"></a>educationAssignmentResource 资源类型
 
@@ -29,11 +29,11 @@ ms.locfileid: "32542946"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|布尔值|指示是否应将此资源复制到每个提交的学生进行修改和提交。|
+|distributeForStudentWork|Boolean|指示是否应将此资源复制到每个提交的学生进行修改和提交。|
 |id|String| 此资源的 ID。 只读。|
-|资源|[educationResource](educationresource.md)|与此工作分配相关联的资源对象。|
+|resource|[educationResource](educationresource.md)|与此工作分配相关联的资源对象。|
 
-## <a name="relationships"></a>关系
+## <a name="relationships"></a>Relationships
 无。
 
 
@@ -67,8 +67,6 @@ ms.locfileid: "32542946"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationassignmentresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

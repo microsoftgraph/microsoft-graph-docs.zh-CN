@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Photo
 localization_priority: Normal
-ms.openlocfilehash: d14777b0f39983d6ccf83ae387896c6587635e66
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f55236489d71c88f8d000b3462e64e82b8c08e56
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573746"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344894"
 ---
 # <a name="photo-resource-type"></a>Photo 资源类型
 
@@ -61,8 +61,6 @@ OneDrive for Business 和 SharePoint 仅返回 **takenDateTime** 属性。
   "keywords": "camera make,camera model, exposure, f-stop, iso",
   "section": "documentation",
   "tocPath": "Facets/Photo",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/photo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

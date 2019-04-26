@@ -4,12 +4,12 @@ description: '学校。 **educationSchool**资源当前与 administrativeUnit �
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 917395324e6ae519af468a4bb4b31056796e1498
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 893f01fffcc606c85cec30789ec94dd658b2a4b2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542920"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334191"
 ---
 # <a name="educationschool-resource-type"></a>educationSchool 资源类型
 
@@ -42,8 +42,8 @@ ms.locfileid: "32542920"
 |:---------------|:--------|:----------|
 |id|String|该学校的 GUID。|
 |displayName| String| 学校的显示名称。| 
-|description| String | 学校描述。| 
-|status| string| 只读。 可取值为：`inactive`、`active`、`expired`、`deleteable`。|
+|说明| 字符串 | 学校描述。| 
+|状态| string| 只读。 可取值为：`inactive`、`active`、`expired`、`deleteable`。|
 |externalSource| string| 只读。  可取值为：`sis`、`manual`、`unknownFutureValue`。|
 |principalEmail| String| 主体的电子邮件地址。|
 |principalName| String | 主体名称。|
@@ -70,6 +70,7 @@ ms.locfileid: "32542920"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -106,8 +107,6 @@ ms.locfileid: "32542920"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationschool.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

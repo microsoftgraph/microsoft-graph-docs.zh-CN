@@ -2,12 +2,12 @@
 title: 更新 serviceprincipal
 description: 更新 serviceprincipal 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: a562bca03881923cfc21d32eadee2a7f7053fa9b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9bb3f8b578d3a0e24418f80da693ff317a7cc132
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537524"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331444"
 ---
 # <a name="update-serviceprincipal"></a>更新 serviceprincipal
 
@@ -38,24 +38,24 @@ PATCH /servicePrincipals/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean|                如果启用服务主体帐户,**则为 true** ; 否则为 false。否则**为 false**。            |
-|appDisplayName|String|由关联的应用程序公开的显示名称。|
-|appId|String|关联的应用程序的唯一标识符 (其**appId**属性)。|
-|appRoleAssignmentRequired|布尔值|指定在 Azure AD 将向应用程序颁发用户令牌或访问令牌之前, 是否需要向用户或组**appRoleAssignment** 。                            **注释**: 需要版本1.5 或更高版本, 不可为 null。            |
-|appRoles|appRole|关联的应用程序所公开的应用程序角色。 有关详细信息, 请参阅 application entity **Notes**上的**appRoles**属性定义: 需要版本1.5 或更高版本, 不可为 null。            |
-|displayName|String|服务主体的显示名称。|
+|accountEnabled|Boolean|                如果服务主体帐户已启用，则为 **true**；否则，为 **false**。            |
+|appDisplayName|String|关联应用程序公开的显示名称。|
+|appId|String|关联应用程序的唯一标识符（其 **appId** 属性）。|
+|appRoleAssignmentRequired|Boolean|指定在 Azure AD 在向应用程序签发用户或访问令牌之前用户或组是否需要 **appRoleAssignment**。                            **注释**: 需要版本1.5 或更高版本, 不可为 null。            |
+|appRoles|appRole|关联应用程序公开的应用程序角色。 有关详细信息, 请参阅 application entity **Notes**上的**appRoles**属性定义: 需要版本1.5 或更高版本, 不可为 null。            |
+|displayName|字符串|服务主体的显示名称。|
 |errorUrl|String|            |
-|首页|String|关联应用程序的主页的 URL。|
-|keyCredentials|keyCredential|与服务主体相关联的密钥凭据的集合。                            **注意：** 不可为 null。            |
-|logoutUrl|String| 指定将由 Microsoft 的授权服务用来使用[前通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[后通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户的 URL。 |
-|oauth2Permissions|oAuth2Permission|由关联的应用程序公开的 OAuth 2.0 权限。 有关详细信息, 请参阅 application 实体上的**oauth2Permissions**属性定义。                            **注释**: 需要版本1.5 或更高版本, 不可为 null。            |
-|passwordCredentials|passwordCredential|与服务主体相关联的密码凭据的集合。                            **注意：** 不可为 null。            |
-|preferredTokenSigningKeyThumbprint|String|保留以仅供内部使用。 请勿写入或以其他方式依赖此属性。 在将来的版本中可能会被删除。                            **备注**: 需要1.5 版或更高版本。            |
+|homepage|String|关联应用程序的主页的 URL。|
+|keyCredentials|keyCredential|与服务帐户关联的密钥凭据集合。                            **注意：** 不可为 null。            |
+|logoutUrl|String| 指定 Microsoft 授权服务使用[正向通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[反向通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户时所使用的 URL。 |
+|oauth2Permissions|oAuth2Permission|关联应用程序的 OAuth 2.0 权限。 有关详细信息，请参阅应用程序实体上的 **oauth2Permissions** 属性定义。                            **注释**: 需要版本1.5 或更高版本, 不可为 null。            |
+|passwordCredentials|passwordCredential|与服务帐户关联的密码凭据集合。                            **注意：** 不可为 null。            |
+|preferredTokenSigningKeyThumbprint|String|仅供内部使用。 请勿写入属性，否则将依赖该属性。 可能会在未来版本中删除。                            **备注**: 需要1.5 版或更高版本。            |
 |publisherName|String|在其中指定关联应用程序的租户的显示名称。|
-|replyUrls|String|为使用关联的应用程序登录而发送的用户令牌的 url, 或为关联的应用程序发送 OAuth 2.0 授权代码和访问令牌的重定向 uri。                            **注意：** 不可为 null。            |
+|replyUrls|String|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。                            **注意：** 不可为 null。            |
 |samlMetadataUrl|String|            |
-|servicePrincipalNames|String|标识关联应用程序的 uri。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://msdn.microsoft.com/library/azure/dn132633.aspx)。                            **注释**: 不可为 null, 多值属性上的筛选表达式需要**any**运算符;有关详细信息, 请参阅[支持的查询、筛选器和分页选项](https://msdn.microsoft.com/library/azure/dn727074.aspx)。            |
-|标记|String|                                        **注意：** 不可为 null。            |
+|servicePrincipalNames|String|标识关联应用程序的 URL。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://msdn.microsoft.com/library/azure/dn132633.aspx)。                            **注释**: 不可为 null, 多值属性上的筛选表达式需要**any**运算符;有关详细信息, 请参阅[支持的查询、筛选器和分页选项](https://msdn.microsoft.com/library/azure/dn727074.aspx)。            |
+|tags|String|                                        **注意：** 不可为 null。            |
 
 ## <a name="response"></a>响应
 
@@ -97,7 +97,7 @@ Content-length: 391
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.serviceprincipal"
+  "@odata.type": "microsoft.graph.servicePrincipal"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -134,8 +134,6 @@ Content-length: 391
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/serviceprincipal-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

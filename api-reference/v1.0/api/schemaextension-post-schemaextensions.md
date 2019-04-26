@@ -4,11 +4,11 @@ description: 创建一个新的 schemaExtension 定义以扩展支持资源类�
 localization_priority: Priority
 author: dkershaw10
 ms.openlocfilehash: f91719c62c655f9573776d723718af9f701c9758
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933979"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521003"
 ---
 # <a name="create-schemaextension"></a>创建 schemaExtension
 

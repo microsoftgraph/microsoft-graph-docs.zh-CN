@@ -4,12 +4,12 @@ description: 在呼叫中开始和停止共享屏幕。 此 API 用于允许应�
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f0bdd9a4c8e900d9a1ec5f7801fa959ebdaae1e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 582cd19a341e75211a457bf5ab678fb63261cace
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461273"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328014"
 ---
 # <a name="call-changescreensharingrole"></a>调用: changeScreenSharingRole
 
@@ -43,7 +43,7 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 
 | 参数      | 类型    |说明|
 |:---------------|:--------|:----------|
-|role|字符串|可能的值为: "查看器"、"共享资源"|
+|role|String|可能的值为: "查看器"、"共享资源"|
 
 ## <a name="response"></a>响应
 返回`202 Accepted`响应代码。
@@ -89,8 +89,6 @@ HTTP/1.1 202 Accepted
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/call-changescreensharingrole.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

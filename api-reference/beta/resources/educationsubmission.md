@@ -4,12 +4,12 @@ description: 提交由工作分配拥有。 提交表示个人 (或组) 在工�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: aeeb1355da2ffcb0ebf561af2ecd15ac93221e26
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 39adc3f394d106860406b3dd22bbf9a1c600280f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542888"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334126"
 ---
 # <a name="educationsubmission-resource-type"></a>educationSubmission 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "32542888"
 |returnedBy|[identitySet](identityset.md)|将此提交的状态移动到 "已返回" 的用户。|
 |returnedDateTime|DateTimeOffset|返回提交的时间点。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |resourcesFolderUrl|String|需要存储此提交的所有文件资源的文件夹。|
-|status|string| 只读。 可取值为：`working`、`submitted`、`released`、`returned`。|
+|状态|string| 只读。 可取值为：`working`、`submitted`、`released`、`returned`。|
 |submittedBy|[identitySet](identityset.md)|将资源移动到已提交状态的用户。|
 |submittedDateTime|DateTimeOffset|将提交状态移至提交状态的时间点。 时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |unsubmittedBy|[identitySet](identityset.md)|移动资源的用户被提交到工作状态。|
@@ -53,7 +53,7 @@ ms.locfileid: "32542888"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|资源|[educationSubmissionResource](educationsubmissionresource.md)集合| 可为空。|
+|资源|[educationSubmissionResource](educationsubmissionresource.md)集合| 可为 Null。|
 |submittedResources|[educationSubmissionResource](educationsubmissionresource.md)集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -62,6 +62,7 @@ ms.locfileid: "32542888"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -70,18 +71,20 @@ ms.locfileid: "32542888"
 
 ```json
 {
-  "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
-  "grade": {"@odata.type": "microsoft.graph.educationAssignmentGrade"},
-  "id": "String (identifier)",
-  "recipient": {"@odata.type": "microsoft.graph.educationSubmissionRecipient"},
-  "returnedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "returnedDateTime": "String (timestamp)",
-  "resourcesFolderUrl": "String",
-  "status": "string",
-  "submittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "submittedDateTime": "String (timestamp)",
-  "unsubmittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "unsubmittedDateTime": "String (timestamp)"
+    "feedback":{"@odata.type":"microsoft.graph.educationFeedback"},
+    "grade":{"@odata.type":"microsoft.graph.educationAssignmentGrade"},
+    "id":"String (identifier)",
+    "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
+    "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "returnedDateTime":"String (timestamp)",
+    "resourcesFolderUrl":"String",
+    "status":"string",
+    "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "submittedDateTime":"String (timestamp)",
+    "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "unsubmittedDateTime":"String (timestamp)",
+    "releasedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "releasedDateTime":"String (timestamp)"
 }
 ```
 
@@ -94,8 +97,6 @@ ms.locfileid: "32542888"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationsubmission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
-ms.openlocfilehash: 1a38cc3e08917b0d4aa2a8df4943ebc932c937d4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 04b9a92bfd723b188fc6869717a5665e10b6af30
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506225"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345178"
 ---
 # <a name="lookupcolumn-resource-type"></a>LookupColumn 资源类型
 
@@ -36,10 +36,10 @@ ms.locfileid: "32506225"
 
 | 属性名称             | 类型    | 说明
 |:--------------------------|:--------|:---------------------------------------
-| **allowMultipleValues**   | 布尔 | 指示是否可以从源中选择多个值。
+| **allowMultipleValues**   | boolean | 指示是否可以从源中选择多个值。
 | **allowUnlimitedLength**  | boolean | 指示列中的值是否可以超过 255 个字符的标准限制。
-| **columnName**            | 字符串  | 查找源列的名称。
-| **listId**                | 字符串  | 查找源列表的唯一标识符。
+| **columnName**            | string  | 查找源列的名称。
+| **listId**                | string  | 查找源列表的唯一标识符。
 | **primaryLookupColumnId** | string  | 如果已指定，则此列为*辅助查找*，同时从*主查找*查找的列表项中拉取一个附加字段。 使用*主查找*查找的列表项作为此处列出的列的源。
 
 <!--
@@ -49,8 +49,6 @@ ms.locfileid: "32506225"
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/LookupColumn",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/lookupColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

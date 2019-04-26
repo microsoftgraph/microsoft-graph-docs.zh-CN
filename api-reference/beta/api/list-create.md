@@ -5,14 +5,16 @@ ms.date: 09/11/2017
 title: 创建 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 88b12ebbe56a3e57b441581ba319734edbe9e5c5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f1640e0227045cc49af77fba1b902586da5c595f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541022"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333454"
 ---
 # <a name="create-a-new-list"></a>创建新的列表
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 [site][] 中的创建新的 [list][]。
 
@@ -31,7 +33,7 @@ ms.locfileid: "32541022"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
 ## <a name="request-body"></a>请求正文
@@ -103,13 +105,16 @@ Content-type: application/json
 **注意：** 为清楚起见，将截断 Response 对象。
 实际调用会返回默认属性。
 
-[list]: ../resources/list.md
+[列表]: ../resources/list.md
 [网站]: ../resources/site.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create"
-} -->
+  "tocPath": "List/Create",
+  "suppressions": []
+}
+-->

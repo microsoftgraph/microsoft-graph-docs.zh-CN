@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
-ms.openlocfilehash: 9c57c9909e223659a8d9af557522183e532e7678
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 264c2aadf13097a728bc784aa9eb61e55d5ea819
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563101"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343869"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
 
@@ -58,7 +58,7 @@ ms.locfileid: "32563101"
 | 文件                 | [文件](file.md)                     | 指示远程项是文件。只读。                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | 本地文件系统中的远程项的有关信息。只读。                                                                                          |
 | 文件夹               | [文件夹](folder.md)                 | 指示远程项是文件夹。只读。                                                                                                            |
-| id                   | 字符串                              | 驱动器内远程项的唯一标识符。只读。                                                                                                    |
+| id                   | String                              | 驱动器内远程项的唯一标识符。只读。                                                                                                    |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                            |
 | lastModifiedDateTime | Timestamp                           | 上次修改项目的日期和时间。只读。                                                                                                              |
 | name                 | String                              | 可选。远程项的 Filename。只读。                                                                                                                 |
@@ -81,8 +81,6 @@ ms.locfileid: "32563101"
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
   "tocPath": "Facets/RemoteItem",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/remoteitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
