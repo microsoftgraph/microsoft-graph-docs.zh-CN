@@ -4,11 +4,11 @@ description: '**DriveItemVersion**资源表示 DriveItem 的特定版本。'
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: fd6052464d40fcce86b83d93601282dda252c69b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643984"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562683"
 ---
 # <a name="driveitemversion-resource-type"></a>DriveItemVersion 资源类型
 
@@ -62,7 +62,7 @@ ms.locfileid: "29643984"
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | 上次修改版本的日期和时间。 只读。                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | 指示此特定版本的发布状态。 只读。 |
 | **size**                 | Int64                                                | 指示此版本项的内容流大小。  |
-| **content**              | Stream                                               | 对于此版本的项目内容流。                        |
+| **content**              | Stream                                               | 此版本项目的内容流。                        |
 
 <!-- {
   "type": "#page.annotation",

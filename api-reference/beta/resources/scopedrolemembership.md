@@ -1,30 +1,30 @@
 ---
 title: scopedRoleMembership 资源类型
-description: 作用域角色成员资格介绍目录角色，进一步范围限定到管理单元 (AU) 的用户的成员的身份。  这提供了一种机制，以允许租户范围公司 adminsistrator 以委派用户管理用户和组的子集组织 （由 AU 正在定义的子集） 的管理权限。
+description: 作用域角色成员身份描述了用户目录角色的成员身份, 该角色将进一步限定为管理单元 (AU)。  这提供了一种机制, 允许租户范围内的公司 adminsistrator 将管理权限委派给用户, 以管理组织的某个子集 (由 AU 定义的子集) 中的用户和组。
 localization_priority: Normal
 ms.openlocfilehash: 2d51ad696487e7daafb9b0f4fcef0934e4f6d6e2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640789"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562977"
 ---
 # <a name="scopedrolemembership-resource-type"></a>scopedRoleMembership 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-作用域角色成员资格介绍目录角色，进一步范围限定到管理单元 (AU) 的用户的成员的身份。  这提供了一种机制，以允许租户范围公司 adminsistrator 以委派用户管理用户和组的子集组织 （由 AU 正在定义的子集） 的管理权限。
+作用域角色成员身份描述了用户目录角色的成员身份, 该角色将进一步限定为管理单元 (AU)。  这提供了一种机制, 允许租户范围内的公司 adminsistrator 将管理权限委派给用户, 以管理组织的某个子集 (由 AU 定义的子集) 中的用户和组。
 
-## <a name="methods"></a>Methods
-不支持直接查询到此资源。  请参阅[管理单元](administrativeunit.md)主题，若要查看有关如何查询范围角色成员身份，以及添加和移除范围角色成员身份信息。 
+## <a name="methods"></a>方法
+不支持直接向此资源进行查询。  请参阅[管理 units](administrativeunit.md)主题, 查看有关如何查询作用域内角色成员身份的信息, 以及如何添加和删除作用域角色成员身份。 
 
 ## <a name="properties"></a>属性
 | 属性   | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|administrativeUnitId|string|唯一标识符的目录角色范围限定为管理单元|
+|administrativeUnitId|string|目录角色作用域的管理单元的唯一标识符|
 |id|string| 作用域角色成员身份的唯一标识符。 只读。|
-|roleId|string| 为目录角色中的成员的唯一标识符。|
-|roleMemberInfo|[identity](identity.md)| 角色成员身份信息。 表示此作用域角色的成员的用户。|
+|roleId|string| 成员所在目录角色的唯一标识符。|
+|roleMemberInfo|[identity](identity.md)| 角色成员标识信息。 表示属于此作用域角色的成员的用户。|
 
 ## <a name="relationships"></a>关系
 无

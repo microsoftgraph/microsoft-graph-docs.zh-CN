@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 944e9cf172bd39dd50a41e55af5fb02421d81c4f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566533"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 枚举类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "31787349"
 |:---|:---|:---|
 |unknown|0|合作伙伴状态未知。|
 |才|1|合作伙伴不可用。|
-|enabled|双面|启用合作伙伴。|
-|异常|第三章|合作伙伴连接已终止。|
-|拒绝|4|拒绝合作伙伴邮件。|
-|无|5|合作伙伴无响应。|
+|enabled|2 |启用合作伙伴。|
+|异常|3 |合作伙伴连接已终止。|
+|拒绝|4 |拒绝合作伙伴邮件。|
+|无|5 |合作伙伴无响应。|
 
 
 

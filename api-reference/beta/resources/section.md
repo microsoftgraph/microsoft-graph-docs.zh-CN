@@ -1,19 +1,19 @@
 ---
-title: section 资源类型
-description: OneNote 笔记本中的分区。分区可包含页面。
+title: 部分资源类型
+description: OneNote 笔记本中的分区。 分区可包含页面。
 localization_priority: Normal
 ms.openlocfilehash: faecf31ad09f3ea3b5614480fc051ad1054d442b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642602"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562942"
 ---
-# <a name="section-resource-type"></a>section 资源类型
+# <a name="section-resource-type"></a>部分资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-OneNote 笔记本中的分区。分区可包含页面。
+OneNote 笔记本中的分区。 分区可包含页面。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -48,30 +48,30 @@ OneNote 笔记本中的分区。分区可包含页面。
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
-|createdDateTime|DateTimeOffset|分区的创建日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
-|id|String|分区的唯一标识符。只读。|
-|isDefault|Boolean|指示其是否是用户的默认分区。只读。|
+|createdDateTime|DateTimeOffset|节的创建日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
+|id|String|节的唯一标识符。  只读。|
+|isDefault|Boolean|指示是否为用户的默认节。 只读。|
 |lastModifiedBy|[identitySet](identityset.md)|识别创建项目的用户、设备和应用程序。只读。|
-|lastModifiedDateTime|DateTimeOffset|上次修改分区的日期和时间。时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。只读。|
-|links|[SectionLinks](sectionlinks.md)|用于打开分区的链接。如果安装了 OneNote 本机客户端，则 `oneNoteClientURL` 链接将在其中打开分区。`oneNoteWebURL` 将在 OneNote Online 中打开分区。|
-|displayName|String|分区名称。 |
-|pagesUrl|String|可以在其中获取分区中所有页面的详细信息的 `pages` 终结点。只读。|
-|self|String|可以在其中获取关于分区的详细信息的终结点。只读。|
+|lastModifiedDateTime|DateTimeOffset|上次修改节的日期和时间。 时间戳表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 只读。|
+|links|[SectionLinks](sectionlinks.md)|用于打开分区的链接。 如果`oneNoteClientURL`安装了 OneNote 本机客户端, 则链接将在其中打开分区。 `oneNoteWebURL`链接将在 OneNote Online 中打开分区。|
+|displayName|String|节的名称。 |
+|pagesUrl|String|`pages`终结点, 您可在其中获取该部分中所有页面的详细信息。 只读。|
+|自学|String|终结点，您可在此处获取关于节的详细信息。 只读。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|pages|[Page](page.md) collection|分区中的页面集合。只读。可为 NULL。|
-|parentNotebook|[Notebook](notebook.md)|包含分区的笔记本。只读。|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|包含分区的分区组。只读。|
+|pages|[页面](page.md)集合|分区中的一组页面。  此为只读属性。 可为 Null。|
+|parentNotebook|[Notebook](notebook.md)|包含该部分的笔记本。  只读。|
+|parentSectionGroup|[SectionGroup](sectiongroup.md)|包含节的节组。  只读的。|
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Get section](../api/section-get.md) | [Section](section.md) |读取分区的属性和关系。|
-|[Create page](../api/section-post-pages.md) |[页面](page.md)| 通过发布到指定分区中的页面集合创建页面。|
-|[List pages](../api/section-list-pages.md) |[Page](page.md) collection| 获取指定分区中的页面集合。|
+|[获取分区](../api/section-get.md) | [Section](section.md) |读取节的属性和关系。|
+|[创建页面](../api/section-post-pages.md) |[Page](page.md)| 通过发布到指定分区中的 pages 集合来创建页面。|
+|[列出页面](../api/section-list-pages.md) |[页面](page.md)集合| 获取指定节中的页面集合。|
 |[copyToNotebook](../api/section-copytonotebook.md)|无|将分区复制到特定笔记本。|
 |[copyToSectionGroup](../api/section-copytosectiongroup.md)|无|将分区复制到特定分区组。|
 

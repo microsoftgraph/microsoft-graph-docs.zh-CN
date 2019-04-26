@@ -4,11 +4,11 @@ description: 获取按名称或完全限定的名称标识的开放扩展（open
 localization_priority: Priority
 author: dkershaw10
 ms.openlocfilehash: ee5a8d8f5d98024055b4d28dd67281f8e2e6d453
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889938"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562060"
 ---
 # <a name="get-open-extension"></a>获取开放扩展
 

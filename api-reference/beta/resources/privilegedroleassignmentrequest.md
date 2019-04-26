@@ -1,52 +1,52 @@
 ---
 title: privilegedRoleAssignmentRequest 资源类型
-description: 表示在 Privilegd 标识管理角色分配操作的请求。
+description: 表示在 Privilegd 标识管理中对角色分配操作的请求。
 localization_priority: Normal
 ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642427"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563293"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>privilegedRoleAssignmentRequest 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示在 Privilegd 标识管理角色分配操作的请求。
+表示在 Privilegd 标识管理中对角色分配操作的请求。
 
-`privilegedRoleAssignmentRequest`用于管理角色分配的生命周期的票证建模的实体。 它表示意图/决策的用户和管理员，并且还提供灵活地启用实施定期 schduling、 审批入口和等等，与直接公开`POST`和`LIST`操作以及`MY`和`Cancel`函数上`governanceRoleAssignment`。
+`privilegedRoleAssignmentRequest`是用于管理角色分配生命周期的票据建模实体。 它表示用户和管理员的意向/决定, 还提供了灵活性, 可实现定期 schduling、审批门等, 与直接公开`POST`和`LIST`运营以及`MY`和`Cancel`函数`governanceRoleAssignment`。
 
 ## <a name="methods"></a>方法
 
 | 方法       | 返回类型 | 说明 |
 |:-------------|:------------|:------------|
 |[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)集合|列出角色分配请求。|
-|[创建](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|创建管理现有或新角色分配的生命周期的请求。|
+|[创建](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|创建一个请求, 以管理现有或新角色分配的生命周期。|
 |[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |取消挂起的角色分配请求。|
-|[My](../api/privilegedroleassignmentrequest-my.md)|  |获取当前 requstor 角色分配请求。|
+|[My](../api/privilegedroleassignmentrequest-my.md)|  |获取当前 requstor 的角色分配请求。|
 
 ## <a name="properties"></a>属性
 
 | 属性     | 类型        | 说明 |
 |:-------------|:------------|:------------|
 |id|String| 只读。 角色分配请求的 id。|
-|assignmentState|String| 工作分配状态。 值可以是`Eligible`合格分配`Active`-如果直接分配`Active`由管理员、 或激活合格工作分配的用户。|
+|assignmentState|String| 工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的, 或者是由用户的符合条件的工作分配激活的。|
 |duration|String| 角色分配的持续时间。|
-|原因|String| 角色分配原因。|
-|requestedDateTime|DateTimeOffset| 只读。 请求创建时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
+|在于|String| 角色分配的原因。|
+|requestedDateTime|DateTimeOffset| 只读。 请求创建时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
 |roleId|String| 角色的 id。|
-|计划|[governanceSchedule](governanceschedule.md)| 角色分配请求的计划对象。|
-|状态|String| 读取 only.The 角色分配请求的状态。 值可以是`NotStarted`，`Completed`，`RequestedApproval`，`Scheduled`，`Approved`，`ApprovalDenied`，`ApprovalAborted`，`Cancelling`，`Cancelled`，`Revoked`，`RequestExpired`。|
-|ticketNumber|String| 角色分配 ticketNumber。 |
-|ticketSystem|String| 角色分配 ticketSystem。|
-|type|String| 表示的角色分配操作的类型。 值可以是`AdminAdd`： 管理员将用户添加到角色;`UserAdd`： 用户将添加角色分配。|
+|设定|[governanceSchedule](governanceschedule.md)| 角色分配请求的 schedule 对象。|
+|状态|字符串| 只读。角色分配请求的状态。 值可以是`NotStarted``Completed`、、`RequestedApproval``Scheduled``Approved``ApprovalDenied``Revoked``RequestExpired`、、、、、、、、。`ApprovalAborted``Cancelling``Cancelled`|
+|ticketNumber|String| 角色分配的 ticketNumber。 |
+|ticketSystem|String| 角色分配的 ticketSystem。|
+|type|String| 表示角色分配上操作的类型。 值可以是`AdminAdd`: 管理员将用户添加到角色;`UserAdd`: 用户添加角色分配。|
 |userId|String| 用户的 id。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|roleInfo|[privilegedRole](privilegedrole.md)| 角色分配请求 roleInfo 对象。|
+|roleInfo|[privilegedRole](privilegedrole.md)| 角色分配请求的 roleInfo 对象。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

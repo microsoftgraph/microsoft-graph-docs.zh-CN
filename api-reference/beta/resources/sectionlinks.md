@@ -3,11 +3,11 @@ title: sectionLinks 资源类型
 description: 用于打开 OneNote 分区的链接。
 localization_priority: Normal
 ms.openlocfilehash: a5e2f4800472e8cedc495e6de1c17a6586710e87
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519911"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562872"
 ---
 # <a name="sectionlinks-resource-type"></a>sectionLinks 资源类型
 
@@ -37,7 +37,7 @@ ms.locfileid: "29519911"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端，则在其中打开分区。|
+|oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端, 则打开该分区。|
 |oneNoteWebUrl|[externalLink](externallink.md)|在 OneNote Online 中打开分区。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,19 +1,19 @@
 ---
-title: 列出 contract
-description: 检索与合作伙伴租户关联的 contract 对象列表。
+title: 列出合同
+description: 检索与合作伙伴租户关联的合同对象的列表。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b4003bf2aaa910d3ad33e299a9fdb01f47229d1a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932978"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566183"
 ---
-# <a name="list-contracts"></a>列出 contract
+# <a name="list-contracts"></a>列出合同
 
-检索与合作伙伴租户关联的 [contract](../resources/contract.md) 对象列表。
+检索与合作伙伴租户关联的[合同](../resources/contract.md)对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -35,11 +35,11 @@ GET /contracts
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。 
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。 
 
-> 支持筛选 customerId、defaultDomainName 和 displayName。
+> 对 customerId、defaultDomainName 和 displayName 支持筛选。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -51,7 +51,7 @@ GET /contracts
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Contract](../resources/contract.md) 对象集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[Contract](../resources/contract.md)对象集合。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

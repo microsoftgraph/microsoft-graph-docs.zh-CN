@@ -1,27 +1,27 @@
 ---
 title: resultInfo 资源类型
-description: ResultInfo 类型。
+description: resultInfo 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.openlocfilehash: 0c924798715448e87c30cf2b65cc923c6ddc20bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521080"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562991"
 ---
 # <a name="resultinfo-resource-type"></a>resultInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-ResultInfo 类型。
+resultInfo 类型。
 
 ## <a name="properties"></a>属性
 
 | 属性 | 类型   | 说明          |
 | :------- | :----- | :------------------  |
 | code     | String | 结果代码。     |
-| message  | String | 消息。         |
+| message  | String | 邮件。         |
 | subCode  | String | 结果子代码。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -57,7 +57,7 @@ ResultInfo 类型。
 }
 ```
 
-## <a name="example-generic-success-result"></a>示例通用的成功结果
+## <a name="example-generic-success-result"></a>示例一般成功结果
 
 <!-- {
   "blockType": "example",
@@ -71,7 +71,7 @@ ResultInfo 类型。
 }
 ```
 
-## <a name="example-record-success-result"></a>示例记录成功结果
+## <a name="example-record-success-result"></a>记录成功结果的示例
 
 <!-- {
   "blockType": "example",

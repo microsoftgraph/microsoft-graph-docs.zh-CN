@@ -1,32 +1,32 @@
 ---
-title: 获得 onenoteOperation
-description: '获取长时间运行的 OneNote 操作的状态。这适用于在响应中返回 **Operation-Location** 标头的操作，例如 `CopyNotebook`、`CopyToNotebook`、`CopyToSectionGroup`、`and CopyToSection`。   '
+title: 获取 onenoteOperation
+description: '获取长时间运行的 OneNote 操作的状态。 这适用于在响应中返回**操作位置**标头的`CopyNotebook`操作, 例如`CopyToNotebook`、、 `CopyToSectionGroup`、。 `and CopyToSection`   '
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: c869702b856f03bccbbc5101e8e72facd3287738
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932383"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562102"
 ---
-# <a name="get-onenoteoperation"></a>获得 onenoteOperation
+# <a name="get-onenoteoperation"></a>获取 onenoteOperation
 
-获取长时间运行的 OneNote 操作的状态。这适用于在响应中返回 **Operation-Location** 标头的操作，例如 `CopyNotebook`、`CopyToNotebook`、`CopyToSectionGroup`、`and CopyToSection`。   
+获取长时间运行的 OneNote 操作的状态。 这适用于在响应中返回**操作位置**标头的`CopyNotebook`操作, 例如`CopyToNotebook`、、 `CopyToSectionGroup`、。 `and CopyToSection`   
 
-可以轮询 Operation-Location 终结点，直到 `status` 属性返回 `completed` 或 `failed`。 
+您可以轮询操作-位置终结点, 直到`status`属性返回`completed`或`failed`。 
 
-如果状态是 `completed`，则此 `resourceLocation` 属性包含资源终结点 URI。 
+如果状态为`completed`, 则`resourceLocation`属性包含资源终结点 URI。 
 
-如果状态是 `failed`，错误和 `@api.diagnostics` 属性提供错误信息。
+如果状态为`failed`, 则错误和`@api.diagnostics`属性将提供错误信息。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Notes.Create、Notes.Read、Notes.ReadWrite、Notes.Read.All、Notes.ReadWrite.All    |
+|委派（工作或学校帐户） | 注意: Create、notes、read、read. all、all、all    |
 |委派（个人 Microsoft 帐户） | Notes.Create、Notes.Read、Notes.ReadWrite    |
 |应用程序 | Notes.Read.All、Notes.ReadWrite.All |
 
@@ -41,18 +41,18 @@ GET /sites/{id}/onenote/operations/{id}
 ## <a name="optional-query-parameters"></a>可选的查询参数
 无。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Accept | string | `application/json` |
+| 接受 | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [onenoteOperation](../resources/onenoteoperation.md) 对象。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[onenoteOperation](../resources/onenoteoperation.md)对象。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

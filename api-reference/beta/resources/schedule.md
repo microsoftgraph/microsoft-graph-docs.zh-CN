@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: de3662fcf3c5a8e50493e365f6a10a8641a451df
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657509"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563104"
 ---
 # <a name="schedule-resource-type"></a>计划资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "30657509"
 ## <a name="properties"></a>属性
 |名称                   |类型           |说明                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id                    |`string`  |的 ID `schedule`。|
+| id                    |`string`  |`schedule` 的 ID。|
 | enabled               |`bool`    | 指示是否为团队启用了计划。 必需。|
 | timeZone              |`string`  | 指示使用 tz 数据库格式的日程安排团队的时区。 必需。|
 | provisionStatus       |`enum`    | 调度设置的状态。 |

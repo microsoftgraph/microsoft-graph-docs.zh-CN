@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
 ms.openlocfilehash: cafd9d72e6c7959b32672744959393ae9478c5b1
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481956"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558074"
 ---
 # <a name="geocoordinates-resource-type"></a>GeoCoordinates 资源类型
 
@@ -39,8 +39,8 @@ ms.locfileid: "30481956"
 
 | 属性  | 类型   | 说明
 |:----------|:-------|:--------------------------------------------------------
-| 海拔  | 双精度数 | 可选。此项高于海平面的高度（以英尺为单位）。只读。
-| 纬度  | 双精度数 | 可选。此项的纬度（以十进制表示）。只读。
+| 海拔  | 双精度 | 可选。此项高于海平面的高度（以英尺为单位）。只读。
+| 纬度  | 双精度 | 可选。此项的纬度（以十进制表示）。只读。
 | 经度 | Double | 可选。此项的经度（以十进制表示）。只读。
 
 ## <a name="remarks"></a>注解

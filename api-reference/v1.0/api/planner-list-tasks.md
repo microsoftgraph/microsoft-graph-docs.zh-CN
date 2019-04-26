@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 30f3bba1825a268d535d3c4b8305eec1c74ddb89
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933832"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562088"
 ---
 # <a name="list-tasks"></a>列出任务
 
@@ -31,7 +31,7 @@ GET /planner/tasks
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法要求指定 planId [筛选器](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |

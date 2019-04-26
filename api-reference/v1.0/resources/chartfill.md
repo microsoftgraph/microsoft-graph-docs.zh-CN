@@ -1,32 +1,32 @@
 ---
 title: ChartFill 资源类型
-description: 表示图表元素的填充格式。
+description: 表示图表元素的格式填充。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: f24d2eea95216ec02cb371f3d016742af77a46e9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939971"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569044"
 ---
 # <a name="chartfill-resource-type"></a>ChartFill 资源类型
 
-表示图表元素的填充格式。
+表示图表元素的格式填充。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Clear](../api/chartfill-clear.md)|无|清除图表元素的填充颜色。|
+|[清除](../api/chartfill-clear.md)|None|清除图表元素的填充颜色。|
 |[Setsolidcolor](../api/chartfill-setsolidcolor.md)|无|将图表元素的填充格式设置为统一颜色。|
 
 ## <a name="properties"></a>属性
 无
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 

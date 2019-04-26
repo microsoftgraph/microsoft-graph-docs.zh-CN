@@ -5,11 +5,11 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: e39b5e010c57bb74f518321f51cc4f3e4c709637
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518509"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558410"
 ---
 # <a name="calendar-getschedule"></a>日历：getSchedule
 

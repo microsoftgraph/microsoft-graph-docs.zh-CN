@@ -1,61 +1,61 @@
 ---
 title: programControl 资源类型
-description: 在 Azure AD 中访问审阅功能，程序 control 对象代表链接到程序访问审阅的一个控件。
+description: 在 Azure AD access 评论功能中, program control 对象表示一个控件, 将访问权限链接到某个程序。
 localization_priority: Normal
 ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644005"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563333"
 ---
 # <a name="programcontrol-resource-type"></a>programControl 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在 Azure AD[访问审阅](accessreviews-root.md)功能中，程序控件对象表示的控件，将访问审阅链接到一个程序。
+在 Azure AD [access 评论](accessreviews-root.md)功能中, program control 对象表示一个控件, 将访问权限链接到某个程序。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[创建 programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   添加到程序 programControl。|
-|[删除 programControl](../api/programcontrol-delete.md) |     无。   |   从某个程序中删除 programControl。|
-|[列表 programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md)集合| 在租户中的所有程序列表控件中。|
+|[创建 programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   将 programControl 添加到程序中。|
+|[删除 programControl](../api/programcontrol-delete.md) |     无。   |   从程序中删除 programControl。|
+|[列出 programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md)集合| 列出租户中所有程序之间的控件。|
 
 ## <a name="permissions"></a>权限
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | ProgramControl.Read.All ProgramControl.ReadWrite.All |
+|委派（工作或学校帐户）     | ProgramControl、ProgramControl 和所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| `id`                     |`String`                | 功能指派的标识符的程序和控件之间的链接                                      |
-| `programId`              |`String`                | 程序 programId 此控件是组成部分。 创建时为必需项。                            |
-| `controlId`              |`String`                | 控件的 controlId，尤其要指出的访问的标识符查看。 创建时为必需项。                                                |
-| `controlTypeId`          |`String`                | ProgramControlType 标识的程序控件的类型-例如，将链接到来宾访问控制审阅。 创建时为必需项。 |
+| `id`                     |`String`                | 程序和控件之间的链接的功能分配的标识符                                      |
+| `programId`              |`String`                | 此控件所属程序的 programId。 创建时为必需项。                            |
+| `controlId`              |`String`                | 控件的 controlId, 特别是 access 评审的标识符。 创建时为必需项。                                                |
+| `controlTypeId`          |`String`                | programControlType 标识程序控制的类型-例如, 链接到来宾访问审阅的控件。 创建时为必需项。 |
 | `displayName`            |`String`                | 控件的名称。                                                             |
 | `status`                 |`String`                | 控件的生命周期状态。                                                 |
-| `createdDateTime`        |`DateTimeOffset`        | 创建日期和时间的程序控制。                                        |
-| `owner`                  |[userIdentity](useridentity.md)   | 创建程序控制的用户。                                               |
-| `resource`               |`programResource`       | 资源、 组或应用程序，此程序控制访问审阅的目标。                   |
+| `createdDateTime`        |`DateTimeOffset`        | 程序控件的创建日期和时间。                                        |
+| `owner`                  |[userIdentity](useridentity.md)   | 创建程序控件的用户。                                               |
+| `resource`               |`programResource`       | 由该程序控件的访问审核作为目标的资源、组或应用程序。                   |
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-| `program`                |[程序](program.md)               | 此控件属于该程序。                                                |
+| `program`                |[主程序](program.md)               | 此控件所属的程序。                                                |
 
 ## <a name="see-also"></a>另请参阅
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[对程序的列表 programControls](../api/program-listcontrols.md) |      [programControl](programcontrol.md)集合| 获取一个程序的控件的集合。|
-|[列表 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md)集合| 列出程序控件类型。 |
+|[列出程序的 programControls](../api/program-listcontrols.md) |      [programControl](programcontrol.md)集合| 获取程序的控件的集合。|
+|[列出 programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md)集合| 列出程序控制类型。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -84,15 +84,15 @@ ms.locfileid: "29644005"
 
 ```
 
-## <a name="the-programresource-complex-type"></a>ProgramResource 复杂类型
+## <a name="the-programresource-complex-type"></a>programResource 复杂类型
 
-包含程序 control 对象，该程序资源是引用的对目标的访问审阅的对象的表示形式。
+程序控制对象中包含的程序资源是对作为访问评审目标的对象的引用的表示形式。
 
-此类型继承自`microsoft.graph.identity`，并且具有一个附加属性：
+此类型将从`microsoft.graph.identity`继承并包含一个附加属性:
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| `type`               |`String`  | 资源，指明它一组或应用程序的类型。 |     
+| `type`               |`String`  | 资源的类型, 指示它是一个组还是一个应用程序。 |     
 
 
 <!--

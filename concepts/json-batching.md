@@ -4,11 +4,11 @@ description: JSON 批处理使你能够通过将多个请求合并为一个单�
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: f36cc1c8e8ccc016078eab52c4c7f3874892d000
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885181"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560892"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>使用 JSON 批处理在一个 HTTP 调用中合并多个请求
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b3dbca7dedfb1bebb114334f6cb5b62fd80f9a2a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786047"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561962"
 ---
 # <a name="visibilitysetting-enum-type"></a>visibilitySetting 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31786047"
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |选中|1|隐藏。|
-|显示|双面|显示。|
+|显示|2 |显示。|
 
 
 

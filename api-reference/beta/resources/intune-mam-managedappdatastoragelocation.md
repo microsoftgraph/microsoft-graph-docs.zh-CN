@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 368ef15ff29e8b3fc611965f67af984879d523f2
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802938"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563873"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>managedAppDataStorageLocation 枚举类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31802938"
 |成员|值|说明|
 |:---|:---|:---|
 |oneDriveForBusiness|1|OneDrive for Business|
-|sharePoint|双面|SharePoint|
-|localStorage|型|设备上的本地存储|
+|sharePoint|2 |SharePoint|
+|localStorage|6 |设备上的本地存储|
 
 
 

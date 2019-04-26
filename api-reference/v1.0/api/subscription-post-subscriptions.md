@@ -4,11 +4,11 @@ description: 订阅侦听器应用程序，以在 Microsoft Graph 中的数据�
 localization_priority: Priority
 author: piotrci
 ms.openlocfilehash: 6d06e230dd85aadaa4d2b3a4f851b339b34793eb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157692"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560975"
 ---
 # <a name="create-subscription"></a>创建订阅
 

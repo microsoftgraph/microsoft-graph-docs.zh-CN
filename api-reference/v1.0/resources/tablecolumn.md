@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 15a91ce28509e63f6ca7def284aeafe515ed04d6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990829"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561304"
 ---
 # <a name="tablecolumn-resource-type"></a>TableColumn 资源类型
 
@@ -22,24 +22,24 @@ ms.locfileid: "27990829"
 |:---------------|:--------|:----------|
 |[获取 TableColumn](../api/tablecolumn-get.md) | [WorkbookTableColumn](tablecolumn.md) |读取 tablecolumn 对象的属性和关系。|
 |[更新](../api/tablecolumn-update.md) | [WorkbookTableColumn](tablecolumn.md) |更新 TableColumn 对象 |
-|[Databodyrange](../api/tablecolumn-databodyrange.md)|[区域](range.md)|获取与列的数据体相关的 range 对象。|
-|[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[区域](range.md)|获取与列的标头行相关的 range 对象。|
+|[Databodyrange](../api/tablecolumn-databodyrange.md)|[Range](range.md)|获取与列的数据体相关的 range 对象。|
+|[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|获取与列的标头行相关的 range 对象。|
 |[区域](../api/tablecolumn-range.md)|[Range](range.md)|获取与整个列相关的 range 对象。|
-|[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[区域](range.md)|获取与列的总计行相关的 range 对象。|
+|[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|获取与列的总计行相关的 range 对象。|
 |[删除](../api/tablecolumn-delete.md)|无|从表中删除列。|
-|[列出](../api/tablecolumn-list.md) | [WorkbookTableColumn](tablecolumn.md)集合 |获取 tableColumn 对象的集合。 |
+|[列出](../api/tablecolumn-list.md) | [WorkbookTableColumn](tablecolumn.md) 集合 |获取 tableColumn 对象的集合。 |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[WorkbookTableColumn](tablecolumn.md)|根据其在集合中的位置获取列。|
 |[添加](../api/tablecolumncollection-add.md)|[WorkbookTableColumn](tablecolumn.md)|向表中添加新列。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|ID|string|返回用于标识表中列的唯一键。 应将此属性解析为不透明的字符串值，不得将它解析为其他任何类型。 只读。|
-|Index|int|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
+|id|string|返回用于标识表中列的唯一键。 应将此属性解析为不透明的字符串值，不得将它解析为其他任何类型。 只读。|
+|index|int|返回表的列集合内列的索引编号。从零开始编制索引。只读。|
 |name|string|返回表格列的名称。只读。|
 |values|Json|表示指定区域的原始值。返回的数据类型可能是字符串、数字或布尔值。包含一个将返回错误字符串的错误的单元格。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |筛选器|[WorkbookFilter](filter.md)|检索应用于列的筛选器。只读。|

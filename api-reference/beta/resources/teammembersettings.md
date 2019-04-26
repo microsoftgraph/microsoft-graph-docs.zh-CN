@@ -5,26 +5,26 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: e6fae4d81ac005c1830d5bed9e05a4675e1a8ad0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522642"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558039"
 ---
 # <a name="teammembersettings-resource-type"></a>teamMemberSettings 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于配置成员是否可以在团队中执行某些操作（例如，创建频道和添加机器人）的设置。
+用于配置成员是否可以在[团队](team.md)中执行某些操作 (例如, 创建频道和添加 bot) 的设置。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|allowCreateUpdateChannels|Boolean|如果设置为 true，则成员可以添加和更新通道。|
-|allowDeleteChannels|Boolean|如果设置为 true，则成员可以删除通道。|
-|allowAddRemoveApps|Boolean|如果设置为 true，则成员可以添加和删除应用程序。|
-|allowCreateUpdateRemoveTabs|Boolean|如果设置为 true，则成员可以添加、 更新和删除选项卡。 |
-|allowCreateUpdateRemoveConnectors|Boolean|如果设置为 true，则成员可以添加、 更新和删除连接器。|
+|allowCreateUpdateChannels|布尔值|如果设置为 true, 则成员可以添加和更新频道。|
+|allowDeleteChannels|布尔值|如果设置为 true, 则成员可以删除频道。|
+|allowAddRemoveApps|布尔值|如果设置为 true, 则成员可以添加和删除应用。|
+|allowCreateUpdateRemoveTabs|布尔值|如果设置为 true, 则成员可以添加、更新和删除选项卡。 |
+|allowCreateUpdateRemoveConnectors|布尔值|如果设置为 true, 则成员可以添加、更新和删除连接器。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

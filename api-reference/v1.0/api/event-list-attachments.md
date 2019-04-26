@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 2323cc525af1c01c674ac088c65938186749b051
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965927"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561458"
 ---
 # <a name="list-attachments"></a>列出附件
 
@@ -24,7 +24,7 @@ ms.locfileid: "27965927"
 |应用程序 | Calendars.Read |
 
 ## <a name="http-request"></a>HTTP 请求
-[事件](../resources/event.md)在用户的默认[日历](../resources/calendar.md)中的附件。
+用户的默认[日历](../resources/calendar.md)中的[事件](../resources/event.md)的附件。
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).

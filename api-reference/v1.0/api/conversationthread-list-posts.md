@@ -1,15 +1,15 @@
 ---
 title: 列出帖子
-description: '获取指定线程的帖子。 您可以指定父对话和线程，或， '
+description: '获取指定线程的帖子。 您可以同时指定父对话和线程, 或者 '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: aa411939f9e8040b127a8821c23b557defffbaec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961517"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564097"
 ---
 # <a name="list-posts"></a>列出帖子
 
@@ -20,9 +20,9 @@ ms.locfileid: "27961517"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Group.Read.All    |
+|委派（工作或学校帐户） | group. 全部, group。 Read. all    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All、Group.Read.All |
+|应用程序 | group. 全部, group。 Read. all |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

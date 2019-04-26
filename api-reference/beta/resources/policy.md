@@ -1,72 +1,72 @@
 ---
 title: 策略资源类型
-description: 表示 Azure AD 策略。 策略是可以在应用程序、 服务主体、 组或分配给他们的整个组织强制实施的自定义规则。 当前只有一种类型的策略有：
+description: '表示 Azure AD 策略。 策略是可在应用程序、服务主体、组或其分配到的整个组织中强制实施的自定义规则。 目前, 只有一种类型的策略是可用的:'
 localization_priority: Normal
 ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642126"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563625"
 ---
 # <a name="policy-resource-type"></a>策略资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 Azure AD 策略。 策略是可以在应用程序、 服务主体、 组或分配给他们的整个组织强制实施的自定义规则。 当前只有一种类型的策略有：
+表示 Azure AD 策略。 策略是可在应用程序、服务主体、组或其分配到的整个组织中强制实施的自定义规则。 目前, 只有一种类型的策略是可用的:
 
-- 令牌生存期策略-指定的应用程序和服务主体颁发的令牌生存期持续时间。
+- 令牌生存期策略-指定为应用程序和服务主体颁发的令牌的生存期持续时间。
 
-进一步下面将详细介绍了此策略。
+下面将进一步详细介绍此策略。
 
 ## <a name="methods"></a>方法
 | 方法       | 返回类型  |说明|
 |:---------------|:--------|:----------|
 | [获取策略](../api/policy-get.md) |策略|读取 user 对象的属性和关系。|
-|[创建策略](../api/policy-post.md)|策略|创建新策略对象。|
-|[更新策略](../api/policy-update.md)|无|更新策略对象。|
-|[删除策略](../api/policy-delete.md)|无|删除策略对象。|
-|[分配策略](../api/policy-assign.md)|无|将策略分配给应用程序，服务主体。|
-|[列表策略](../api/policy-list.md)|策略集合|获取组织中的所有策略对象。|
-|[列出已分配策略](../api/policy-list-assigned.md)|策略集合|获取所有策略对象分配给应用程序或服务主体。|
+|[创建策略](../api/policy-post.md)|策略|创建新的策略对象。|
+|[更新策略](../api/policy-update.md)|无|更新 policy 对象。|
+|[删除策略](../api/policy-delete.md)|无|删除 policy 对象。|
+|[分配策略](../api/policy-assign.md)|无|将策略分配给应用程序和服务主体。|
+|[列出策略](../api/policy-list.md)|策略集合|获取组织中的所有 policy 对象。|
+|[列出已分配策略](../api/policy-list-assigned.md)|策略集合|获取分配给应用程序或服务主体的所有策略对象。|
 
-### <a name="common-properties"></a>通用属性
+### <a name="common-properties"></a>常用属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|definition|String|字符串版本的特定的策略。 请参阅下文。 必需。|
-|displayName|String|自定义策略名称。 必需。|
-|IsOrganizationDefault|布尔值|如果设置为 true 时，激活此策略。 可以有多个策略相同的策略类型，但只有一个可激活为默认组织。 可选，默认值为 false。|
-|type|String|指定策略的类型。 必须当前"TokenLifetimePolicy"。 必需。|
+|定义|String|特定策略的字符串版本。 请参阅下文。 必需。|
+|displayName|String|策略的自定义名称。 必需。|
+|IsOrganizationDefault|Boolean|如果设置为 true, 则激活此策略。 对于同一策略类型, 可以有多个策略, 但只有一个策略可以作为组织默认激活。 可选, 默认值为 false。|
+|type|String|指定策略的类型。 当前必须是 "TokenLifetimePolicy"。 必需。|
 
-#### <a name="common-relationships"></a>常见的关系
+#### <a name="common-relationships"></a>共同关系
 |关系|类型|说明|
 |:-------------|:-----------|:-----------|
-|appliesTo|[directoryObject](../resources/directoryobject.md) collection|应用程序、 服务主体、 组或组织的策略应用于。|
+|appliesTo|[directoryObject](../resources/directoryobject.md) 集合|策略应用于的应用程序、服务主体、组或组织。|
 
 ## <a name="token-lifetime-policy"></a>令牌生存期策略
-指定针对不同目的颁发的令牌生存期。 这种策略可向应用程序和服务主体的[分配](../api/policy-assign.md)。 有四种类型的可配置其生命周期的令牌。 访问/刷新令牌对是通过客户端，身份验证过程中获得的而 ID/会话令牌对通过浏览器的身份验证过程中获得。
+指定出于不同目的而颁发的令牌的生存期。 此类策略可[分配](../api/policy-assign.md)给应用程序和服务主体。 有四种令牌可以配置其生存期。 在通过客户端进行身份验证期间获取访问/刷新令牌对, 而在通过浏览器进行身份验证期间获取 ID/会话令牌对。
 
-- **访问令牌**包含信息的标识和相关联的客户端用于访问类似于应用程序的受保护的资源的用户帐户的权限。
-- **刷新令牌**获取访问令牌以及当通过客户端访问受保护的资源的 Azure AD 对用户进行身份验证。 未吊销或离开未使用的 （见下文） MaxInactiveTime 超过时, 可用于获取新的访问/刷新令牌对当前存取令牌过期时。
-- **ID 令牌**像访问令牌，但通过浏览器获取。
-- **会话令牌**的行为类似刷新令牌，但通过浏览器获取。
+- **访问令牌**包含与客户端用来访问受保护的资源 (如应用程序) 所使用的用户帐户相关联的标识和权限的相关信息。
+- 当用户通过客户端对 Azure AD 进行身份验证以访问受保护的资源时, 将与访问令牌一起获取**刷新令牌**。 如果未将其废除或保留不使用的 MaxInactiveTime (以下), 则可以使用它在当前访问令牌过期时获取新的访问/刷新令牌对。
+- **ID 令牌**的行为与访问令牌类似, 但通过浏览器获取。
+- **会话令牌**的行为类似于刷新令牌, 但通过浏览器获取。
 
 ## <a name="properties"></a>属性
-下列属性窗体的 JSON 对象表示的令牌生存期策略。 此 JSON 对象必须是**转换为带引号它们进行转义字符串**要插入的"定义"常见策略属性。 示例如下所示。
+下面的属性构成了表示令牌生存期策略的 JSON 对象。 此 JSON 对象必须**转换为转义了引号的字符串**, 以插入到 "定义" 常见策略属性中。 下面是一个示例。
 
->注意： 所有这些属性中的持续时间格式"dd.hh:mm:ss"中指定。
+>注意: 这些属性中的所有持续时间均以 "dd. hh: mm: ss" 的格式指定。
 
->注意： 在"工作日"表示的属性的最大值是 1 秒缺少表示天数。 例如，1 天的最大值指定为"23: 59:59"。
+>注意: "天" 中表示的属性的最大值是表示的天数的1秒。 例如, "最大值为1天" 指定为 "23:59:59"。
 
 | 属性     | 类型   |说明| 最小值 | 最大值 | 默认值|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|String|控制长**访问和 ID 令牌**视为有效。|10 分钟|1 天|1 小时|
-|MaxInactiveTime|String|控制如何旧刷新令牌可之前客户端不能再使用它以检索新的访问/刷新令牌对以访问资源。|10 分钟|90 天|14 天|
-|MaxAgeSingleFactor|String|控件长用户可以继续使用刷新令牌获取新的 access 刷新令牌对上次他们过身份验证之后成功单个因子。 由于单因素被看作安全性低于多因素身份验证，建议您使用此策略设置为比 MultiFactorRefreshTokenMaxAge 相同或更低值。|10 分钟|直到吊销|365 天或直到吊销|
-|MaxAgeMultiFactor|String|控件长用户可以继续使用刷新令牌获取新的 access 刷新令牌对上次他们过身份验证之后成功与多因素。|10 分钟|直到吊销|365 天或直到吊销|
-|MaxAgeSessionSingleFactor|String|控件长用户可以继续使用会话令牌获取新 ID/会话令牌之后上次他们过身份验证成功单个因子。 由于一元被视为安全性低于多因素身份验证，因此建议此策略设置为比 MultiFactorSessionTokenMaxAge 相同或更低值|10 分钟|直到吊销|365 或直到吊销|
-|MaxAgeSessionMultiFactor|String|控件长用户可以继续使用会话令牌获取的上次成功与多因素验证之后的新 ID/会话令牌。|10 分钟|直到吊销|365 或直到吊销|
-|版本|整数|设置值为 1。 必需。|无|无|无|
+|AccessTokenLifetime|String|控制**访问和 ID 令牌**被视为有效的时间。|10 分钟|1 天|1 hour|
+|MaxInactiveTime|String|控制刷新令牌可以在客户端无法再使用它检索访问资源的新访问/刷新令牌对之前的等待时间。|10 分钟|90 天|14 天|
+|MaxAgeSingleFactor|String|控制用户在最后一次通过仅一个因素进行身份验证后, 可以继续使用刷新令牌获取新的访问/刷新令牌对的时间。 由于单一因子的安全性低于多重身份验证, 因此建议将此策略设置为等于或小于 MultiFactorRefreshTokenMaxAge 的值。|10 分钟|截止-已吊销|365天或截止-已撤销|
+|MaxAgeMultiFactor|String|控制用户在最后一次使用多个因素进行身份验证后, 可以继续使用刷新令牌获取新的访问/刷新令牌对的时间。|10 分钟|截止-已吊销|365天或截止-已撤销|
+|MaxAgeSessionSingleFactor|String|控制用户在最后一次通过仅单个因素进行身份验证后, 可以继续使用会话令牌获取新 ID/会话令牌的时间。 由于单一因子的安全性低于多重身份验证, 因此建议将此策略设置为一个等于或小于 MultiFactorSessionTokenMaxAge 的值。|10 分钟|截止-已吊销|365或直到被吊销|
+|MaxAgeSessionMultiFactor|String|控制用户在最后一次成功地使用多个因素进行身份验证后, 可以继续使用会话令牌获取新 ID/会话令牌的时间。|10 分钟|截止-已吊销|365或直到被吊销|
+|Version|Integer|将值设置为1。 必需。|无|无|无|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

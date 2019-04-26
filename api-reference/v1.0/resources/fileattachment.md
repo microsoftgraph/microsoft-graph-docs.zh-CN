@@ -3,11 +3,11 @@ title: fileAttachment 资源类型
 description: '附加到事件、邮件或帖子的文件（如文本文件或 Word 文档）。**contentBytes** '
 localization_priority: Priority
 ms.openlocfilehash: 07dcdac0497caa106eac38d1248661218a7fcc5e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574815"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564762"
 ---
 # <a name="fileattachment-resource-type"></a>fileAttachment 资源类型
 

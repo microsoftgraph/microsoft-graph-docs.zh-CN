@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9823380e8c7e4ffef1c1aa913c9db0cf08ede888
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779613"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562693"
 ---
 # <a name="deliveryoptimizationgroupidoptionstype-enum-type"></a>deliveryOptimizationGroupIdOptionsType 枚举类型
 
@@ -24,9 +24,9 @@ DeliveryOptimizationGroupIdOptionsType 设置的可能值。
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |set-adsite|1|Active Directory 站点。|
-|authenticatedDomainSid|双面|经过身份验证的域 SID。|
-|dhcpUserOption|第三章|DHCP 用户选项。|
-|dnsSuffix|4|DNS 后缀。|
+|authenticatedDomainSid|2 |经过身份验证的域 SID。|
+|dhcpUserOption|3 |DHCP 用户选项。|
+|dnsSuffix|4 |DNS 后缀。|
 
 
 

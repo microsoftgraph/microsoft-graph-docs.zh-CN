@@ -1,27 +1,27 @@
 ---
 title: mediaPrompt 资源类型
-description: MediaPrompt 类型。
+description: mediaPrompt 类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b87af39d6d6ac4879aba44573b920a43d4f92145
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508529"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562568"
 ---
 # <a name="mediaprompt-resource-type"></a>mediaPrompt 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-MediaPrompt 类型。
+mediaPrompt 类型。
 
 ## <a name="properties"></a>属性
 
 | 属性    | 类型                      | 说明                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| “循环”        | Int32                     | 循环计数。 0 值表示无限循环。 默认值为 `1`。 |
+| loop        | Int32                     | 循环计数。 0值指示无限循环。 默认值为 `1`。 |
 | mediaInfo   | [mediaInfo](mediainfo.md) | 媒体信息                                                           |
 
 ## <a name="json-representation"></a>JSON 表示形式

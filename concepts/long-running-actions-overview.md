@@ -2,16 +2,16 @@
 title: 处理长时间运行的操作（测试）
 description: 本文会介绍处理长时间运行的操作。
 localization_priority: Normal
-ms.openlocfilehash: d7ee9631e9e18ae1972e2b156366c66d3d3dd455
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: HT
+author: daspek
+ms.openlocfilehash: 4512672ea44e944fd77e95249aa439f0ee9e84ba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868052"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560778"
 ---
 # <a name="working-with-long-running-actions-beta"></a>处理长时间运行的操作 (beta)
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 某些 API 响应完成所需的时间不确定。
 Microsoft Graph 可能会使用长时间运行操作模式，而不是等待操作完成之后再返回响应。
@@ -60,8 +60,7 @@ Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 
 ## <a name="retrieve-a-status-report-from-the-monitor-url"></a>通过监视器 URL 检索状态报告
 
-为了检查复制操作的状态，应用会请求获取上一响应中返回的 URL。
-*注意：* 此请求无需验证，因为这是原始调用方专属的短期 URL。 
+为了检查复制操作的状态，应用会请求获取上一响应中返回的 URL。 *注意：* 此请求无需验证，因为这是原始调用方专属的短期 URL。 
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status", "scopes": "files.readwrite" } -->
 
@@ -84,13 +83,11 @@ Content-type: application/json
 }
 ```
 
-此信息可用于向用户提供复制操作的最新进度。
-应用可以继续轮询监视器 URL，以请求获取状态更新并跟踪操作进度。
+此信息可用于向用户提供复制操作的最新进度。 应用可以继续轮询监视器 URL，以请求获取状态更新并跟踪操作进度。
 
 ## <a name="retrieve-a-completed-status-report-from-the-monitor-url"></a>通过监视器 URL 检索已完成状态报告
 
-几秒钟后，复制操作完成。
-当应用向监视器 URL 发出请求时，响应返回的是重定向到操作的最终结果。
+几秒钟后，复制操作完成。 当应用向监视器 URL 发出请求时，响应返回的是重定向到操作的最终结果。
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
 

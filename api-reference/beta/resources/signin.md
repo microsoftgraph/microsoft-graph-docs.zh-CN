@@ -3,11 +3,11 @@ title: signIn 资源类型
 description: '此资源详细说明目录中的用户或应用程序登录活动。 '
 localization_priority: Priority
 ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640964"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557970"
 ---
 # <a name="signin-resource-type"></a>signIn 资源类型
 此资源详细说明目录中的用户或应用程序登录活动。 

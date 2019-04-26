@@ -6,11 +6,11 @@ title: 从 SharePoint 列表中获取条目
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: e9d747e5405a5aeaf97dfdf7e9a97f6236164a5a
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480640"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563572"
 ---
 # <a name="get-an-item-in-a-list"></a>获取列表中的项
 

@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cd0c6d8473347ed86aff0bd83a8cd663e9b2c1ba
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967117"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566204"
 ---
 # <a name="create-contact"></a>创建联系人
 
@@ -57,7 +57,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 
 ### <a name="request"></a>请求
 
-下面展示了示例请求。
+下面是一个请求示例。
 
 <!-- {
   "blockType": "request",
@@ -85,7 +85,7 @@ Content-length: 210
 
 ### <a name="response"></a>响应
 
-下面是一个响应示例。 **注意：** 为简洁起见，可能会截断此处展示的响应对象。 所有属性将通过实际调用返回。
+下面是一个响应示例。 **注意：** 为简洁起见，可能会截断此处展示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

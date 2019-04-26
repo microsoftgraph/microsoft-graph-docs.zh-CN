@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 91b4571650171e9dcd4febf5078525b3e320b501
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773166"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562445"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>androidWorkProfileDefaultAppPermissionPolicyType 枚举类型
 
@@ -24,8 +24,8 @@ Android 工作配置文件默认应用权限策略类型。
 |:---|:---|:---|
 |deviceDefault|0|设备默认值, 无意向。|
 |提示|1|行.|
-|autoGrant|双面|自动授予。|
-|autoDeny|第三章|自动拒绝。|
+|autoGrant|2 |自动授予。|
+|autoDeny|3 |自动拒绝。|
 
 
 

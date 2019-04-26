@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1c0fea3bed512c98cd26488a7703554ac6c600f7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797422"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567135"
 ---
 # <a name="eaptype-enum-type"></a>eapType 枚举类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "31797422"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|eapTls|13|eap-传输层安全性 (eap-tls)。|
+|eapTls|13 |eap-传输层安全性 (eap-tls)。|
 |超越|×|轻型可扩展身份验证协议 (LEAP)。|
 |eapSim|18|适用于 GSM 订阅者标识模块 (eap-SIM) 的 EAP。|
 |eapTtls|不足|eap-隧道传输层安全性 (eap-TTLS)。|

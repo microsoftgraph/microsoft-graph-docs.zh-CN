@@ -1,19 +1,19 @@
 ---
 title: 'event: dismissReminder'
-description: 消除提醒用户日历中触发事件。
+description: 消除对用户日历中的事件触发的提醒。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cf2421db56babd394a3c011fb9bd4db9f83cb823
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562844"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
-消除提醒用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)被触发。
+消除对用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)触发的提醒。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。

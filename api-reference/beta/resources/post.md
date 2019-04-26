@@ -1,21 +1,21 @@
 ---
 title: 帖子资源类型
-description: 代表 converstaionThread 实体内的单个公告项目。
+description: 表示 converstaionThread 实体中的单个张贴项。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 554892bdfed45d0fba9b90a084db67c0bb329486
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643599"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563586"
 ---
 # <a name="post-resource-type"></a>帖子资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表[converstaionThread](conversationthread.md)实体内的单个公告项目。
+表示[converstaionThread](conversationthread.md)实体中的单个张贴项。
 
 即使无法显式创建帖子，也可以执行以下任一操作来创建帖子：
 
@@ -64,16 +64,16 @@ ms.locfileid: "29643599"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|正文|[itemBody](itembody.md)|帖子的内容。这是默认属性。此属性可为 NULL。|
-|类别|String collection|与帖子关联的类别。 每个类别对应于已为用户定义[outlookCategory](outlookcategory.md)的**displayName**属性。|
+|body|[itemBody](itembody.md)|帖子的内容。这是默认属性。此属性可为 NULL。|
+|categories|String collection|与帖子关联的类别。 每个类别对应于已为用户定义的[outlookCategory](outlookcategory.md)的**displayName**属性。|
 |changeKey|String|标识帖子的版本。每次帖子更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |conversationId|String|对话的唯一 ID。只读。|
 |conversationThreadId|String|对话线程的唯一 ID。只读。|
 |createdDateTime|DateTimeOffset|创建帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
-|from|[收件人](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
+|发件人|[recipient](recipient.md)|在委派访问方案中使用。指示代表另一用户发布了此邮件的帐户。这是默认属性。|
 |hasAttachments|Boolean|指示帖子是否具有至少一个附件。这是默认属性。|
 |id|String| 只读。|
-|重要性 | String | 组文章的重要性： `low`， `normal`， `high`。 |
+|importance | String | 组帖子的重要性: `low`、 `normal`、。 `high` |
 |lastModifiedDateTime|DateTimeOffset|帖子上次修改时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |newParticipants|[recipient](recipient.md) collection|添加到此线程作为帖子一部分的对话参与者。|
 |receivedDateTime|DateTimeOffset|接收到帖子时指定。DateTimeOffset 表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
@@ -82,11 +82,11 @@ ms.locfileid: "29643599"
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) 集合|为公告[fileAttachment](fileattachment.md)和[itemAttachment](itemattachment.md)， [referenceAttachment](referenceattachment.md)附件的集合。 只读。 可为 Null。|
+|attachments|[Attachment](attachment.md) 集合|张贴内容的[fileAttachment](fileattachment.md)、 [itemAttachment](itemattachment.md)和[referenceAttachment](referenceattachment.md)附件的集合。 此为只读属性。 可为 Null。|
 |extensions|[扩展](extension.md)集合|为帖子定义的开放扩展集合。只读。可为 NULL。|
-|inReplyTo|[Post](post.md)|此文章答复中[conversationThread](conversationthread.md)早期文章。 只读。|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 Null。|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) 集合| 为帖子定义的单值扩展属性的集合。只读。可为 Null。|
+|inReplyTo|[文章](post.md)|此文章在[conversationThread](conversationthread.md)中答复的早期帖子。 只读。|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为帖子定义的多值扩展属性的集合。只读。可为 NULL。|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为帖子定义的单值扩展属性的集合。只读。可为 NULL。|
 
 ## <a name="methods"></a>方法
 
@@ -96,7 +96,7 @@ ms.locfileid: "29643599"
 |[获取帖子](../api/post-get.md) | [帖子](post.md) |获取指定的线程中帖子的属性和关系。|
 |[答复](../api/post-reply.md)|无|在组对话中答复帖子，并向指定线程中添加新帖子。|
 |[转发](../api/post-forward.md)|无|将帖子转发给收件人。|
-|**Attachments**| | |
+|**附件**| | |
 |[列出附件](../api/post-list-attachments.md) |[attachment](attachment.md) 集合| 获取帖子的所有附件。|
 |[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| 将附件添加到帖子中。 |
 |**开放扩展**| | |

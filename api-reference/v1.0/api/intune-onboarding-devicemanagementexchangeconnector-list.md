@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 144b4e8c0e07b3115d4cc56a0e5a6d9005684578
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972009"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561591"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>列出 deviceManagementExchangeConnectors
 

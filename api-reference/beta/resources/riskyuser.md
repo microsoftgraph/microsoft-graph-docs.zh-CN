@@ -5,11 +5,11 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 927e4eb519f8a849ac2cb259bed962bad44d9a6d
-ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31559980"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563118"
 ---
 # <a name="riskyusers-resource-type"></a>riskyUsers 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "31559980"
 | 属性   | 类型|说明|
 |:---------------|:--------|:----------|
 |`id`|`string`|用户面临风险的唯一 id|
-|`isDeleted`|`bool`|指示是否删除用户。 可能的值包括`true`:、 `false`|
+|`isDeleted`|`bool`|指示是否删除用户。 可能的值包括`true`:、`false`|
 |`isGuest`|`bool`|指示用户是否为来宾用户。 可取值为：`true`、`false`。 如此如果用户的标识位于租户外部, 请考虑。 此用户可以是在 Azure AD、MSA 或第三方标识提供程序中具有标识的 B2B 或 B2C 用户。 假如果用户的标识位于租户内部, 则考虑|
 |`isProcessing`|`bool`|指示后端正在处理用户的危险状态 wehther|
 |`riskLastUpdatedDateTime`|`datetime`|上次更新有风险的用户的日期和时间|

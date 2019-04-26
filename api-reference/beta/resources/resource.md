@@ -3,11 +3,11 @@ title: 资源资源类型
 description: 'OneNote 页面上的图像或其他文件资源。 '
 localization_priority: Normal
 ms.openlocfilehash: c85897af91290df83f4d6fccaf0552513b4f0535
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510279"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563015"
 ---
 # <a name="resource-resource-type"></a>资源资源类型
 
@@ -15,7 +15,7 @@ ms.locfileid: "29510279"
 
 OneNote 页面上的图像或其他文件资源。 
 
-可以获取资源的二进制数据，但是不支持获取资源对象或资源集合的 JSON 表示形式。
+您可以获取资源的二进制数据, 但不支持获取资源对象或资源集合的 JSON 表示形式。
 
 <!-- {
   "blockType": "resource",
@@ -25,19 +25,19 @@ OneNote 页面上的图像或其他文件资源。
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
 
-可通过向资源的 `content` 终结点发送 GET 请求获取特定资源的二进制数据：
+通过向资源的`content`终结点发送 get 请求获取特定资源的二进制数据:
 
 ```
 GET ../onenote/resources/{id}/content
 ```
 
-使用以下请求获取页面的 HTML 内容后将返回文件的资源 URI：
+当您使用以下请求获取页面的 HTML 内容时, 将返回文件的资源 URI:
 
 ```
 GET ../onenote/pages/{id}/content
 ```
 
-在页面 HTML 中，`img` 标记包含 `data-fullres-src` 属性中的原始图像资源和 `src` 属性中经过优化的图像的终结点。
+在页面 HTML 中, `img`标记包含`data-fullres-src`属性中的原始图像资源和`src`属性中优化的图像的终结点:
 ```
 <img 
     src="image-resource-url"  
@@ -46,7 +46,7 @@ GET ../onenote/pages/{id}/content
     data-fullres-src-type="media-type" ... />
 ```
 
-`object` 标记（表示 PDF、DOCX 和 PNG 等文件）包含 `data` 属性中的文件资源的终结点：
+`object`标记 (表示 PDF、.docx 和 PNG 等文件) 包含`data`属性中的文件资源的终结点:
 
 ```
 <object
@@ -56,7 +56,7 @@ GET ../onenote/pages/{id}/content
 ```
 
 ## <a name="properties"></a>属性
-无。
+表示组件的一个实例，这是运行时对用户的指定组件的实例化。对象包含实验室特定运行的组件的已翻译视图。
 
 ## <a name="relationships"></a>关系
 无。
@@ -65,7 +65,7 @@ GET ../onenote/pages/{id}/content
 ## <a name="methods"></a>方法
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[Get resource binary data](../api/resource-get.md) | Stream |检索文件或图像资源的二进制数据。|
+|[获取资源二进制数据](../api/resource-get.md) | Stream |检索文件或图像资源的二进制数据。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

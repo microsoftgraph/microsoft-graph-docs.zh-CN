@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 58ed56b11b571237211307c8fb0dd1abaf27761f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643928"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563215"
 ---
 # <a name="rangeformat-resource-type"></a>RangeFormat 资源类型
 
@@ -44,7 +44,7 @@ ms.locfileid: "29643928"
 |边框|[RangeBorder](rangeborder.md) 集合|应用于所选的整个区域的 border 对象的集合。只读。|
 |fill|[RangeFill](rangefill.md)|返回在整个区域内定义的 fill 对象。只读。|
 |font|[RangeFont](rangefont.md)|返回在所选的整个区域内定义的 font 对象。只读。|
-|protection|[FormatProtection](formatprotection.md)|返回某一区域的格式 protection 对象。只读。|
+|protection|[FormatProtection](formatprotection.md)|返回某一区域的格式保护对象。只读。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -3,11 +3,11 @@ title: Microsoft Graph REST API 1.0 版参考
 description: 欢迎使用 1.0 版终结点的 Microsoft Graph REST API 参考。
 localization_priority: Priority
 ms.openlocfilehash: bdebe1415ea020f575b0cbf35712b30d7830df05
-ms.sourcegitcommit: 1089e82254068556b0d0c7be45e3270e46c961e6
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "30546007"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569499"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Microsoft Graph REST API 1.0 版参考
 

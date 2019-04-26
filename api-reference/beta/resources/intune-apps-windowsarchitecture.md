@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ebed524aefbe9ea75773fac675408f889fb43247
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803197"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557990"
 ---
 # <a name="windowsarchitecture-enum-type"></a>windowsarchitecture 更改枚举类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "31803197"
 |:---|:---|:---|
 |无|0|未设置任何标志。|
 |系列|1|是否支持 X86 Windows 体系结构类型。|
-|x64|双面|是否支持 X64 Windows 体系结构类型。|
-|整理|4|是否支持 Arm Windows 体系结构类型。|
-|中性|utf-8|是否支持非特定 Windows 体系结构类型。|
-|arm64|位|是否支持 Arm64 Windows 体系结构类型。|
+|x64|2 |是否支持 X64 Windows 体系结构类型。|
+|整理|4 |是否支持 Arm Windows 体系结构类型。|
+|中性|8 |是否支持非特定 Windows 体系结构类型。|
+|arm64|16 |是否支持 Arm64 Windows 体系结构类型。|
 
 
 

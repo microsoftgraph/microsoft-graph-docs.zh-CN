@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: d03cab3aafb264ef6768e2c79a3787a2b6e3c134
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991277"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562046"
 ---
 # <a name="create-plannerplan"></a>创建 plannerPlan
 
@@ -42,7 +42,7 @@ POST /planner/plans
 
 在请求正文中，提供 [plannerPlan](../resources/plannerplan.md) 对象的 JSON 表示形式。**plannerPlan** 所有者属性必须设为[组](../resources/group.md)对象的 id。
 
->**注意：** 正在创建计划的用户必须将拥有计划的组的成员。 当使用[创建组](../api/group-post-groups.md)创建一个新的组时，您不是添加到组，作为成员。 创建组后，将自己添加为成员使用[组发布成员](../api/group-post-members.md)。
+>**注意：** 正在创建计划的用户必须是拥有该计划的组的成员。 使用“[创建组](../api/group-post-groups.md)”创建新组时，系统不会将你添加为组成员。 创建组后，使用“[组帖子成员](../api/group-post-members.md)”将自己添加为成员。
 
 
 ## <a name="response"></a>响应

@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e61b5a3f170fad88064e7ec00ecbcc63ee43d768
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963323"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565479"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -47,11 +47,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-|destinationId|字符串|文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。|
+|destinationId|String|文件夹 ID 或已知文件夹名称。 有关受支持的已知文件夹名称的列表，请参阅 [mailFolder 资源类型](../resources/mailfolder.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文的[mailFolder](../resources/mailfolder.md)资源。
+如果成功, 此方法在`200 OK`响应正文中返回响应代码和[mailFolder](../resources/mailfolder.md)资源。
 
 ## <a name="example"></a>示例
 
@@ -79,7 +79,7 @@ Content-length: 44
 
 下面是一个响应示例。
 
-> **注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 <!-- {
   "blockType": "response",
   "truncated": true,

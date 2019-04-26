@@ -5,11 +5,11 @@ ms.date: 09/12/2017
 title: ContentTypeInfo
 localization_priority: Normal
 ms.openlocfilehash: e5c418cf1a72fd529c2e48e70eb12767dcf56041
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836328"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561339"
 ---
 # <a name="contenttypeinfo-resource-type"></a>ContentTypeInfo 资源类型
 

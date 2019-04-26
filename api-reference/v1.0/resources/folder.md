@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Folder
 localization_priority: Normal
 ms.openlocfilehash: 2c98cb57bfd860b568b1cba95ed7f6fcf455eea1
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480815"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564258"
 ---
 # <a name="folder-resource-type"></a>文件夹资源类型
 

@@ -1,19 +1,19 @@
 ---
-title: 列表用户可传递 memberOf
-description: 获取组，目录角色的成员的用户。 此 API 请求是可传递，，，也将返回用户是嵌套的成员的所有组。
+title: 列出用户可传递的 memberOf
+description: 获取用户所属的组和目录角色。 此 API 请求是可传递的, 并且还将返回用户是其嵌套成员的所有组。
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 824e037d5f1e02051d315860ad3faa1254c25967
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694480"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563796"
 ---
-# <a name="list-user-transitive-memberof"></a>列表用户可传递 memberOf
+# <a name="list-user-transitive-memberof"></a>列出用户可传递的 memberOf
 
-获取组，目录角色的成员的用户。 此 API 请求是可传递，，，也将返回用户是嵌套的成员的所有组。
+获取用户所属的组和目录角色。 此 API 请求是可传递的, 并且还将返回用户是其嵌套成员的所有组。
 
 ## <a name="permissions"></a>权限
 
@@ -42,7 +42,7 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Accept  | application/json|
+| 接受  | application/json|
 
 ## <a name="request-body"></a>请求正文
 

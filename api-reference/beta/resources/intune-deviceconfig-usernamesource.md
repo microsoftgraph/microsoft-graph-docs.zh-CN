@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 53eae35e947b958c21df63ece3156da4107e8d0b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796337"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561969"
 ---
 # <a name="usernamesource-enum-type"></a>usernameSource 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31796337"
 |:---|:---|:---|
 |userPrincipalName|0|用户主体名称。|
 |primarySmtpAddress|1|主 SMTP 地址。|
-|samAccountName|双面|用户 sam 帐户名称。|
+|samAccountName|2 |用户 sam 帐户名称。|
 
 
 

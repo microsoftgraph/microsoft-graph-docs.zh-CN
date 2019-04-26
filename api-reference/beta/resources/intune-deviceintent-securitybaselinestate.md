@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3c81a3d351c7c1e854c26e05e32f8426ffdc0631
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524559"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562242"
 ---
 # <a name="securitybaselinestate-resource-type"></a>securityBaselineState 资源类型
 

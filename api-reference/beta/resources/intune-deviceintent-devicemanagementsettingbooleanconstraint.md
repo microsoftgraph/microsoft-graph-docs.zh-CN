@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ee2689bfbc6b407a688c0422c568d4b311694c06
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797247"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562284"
 ---
 # <a name="devicemanagementsettingbooleanconstraint-resource-type"></a>deviceManagementSettingBooleanConstraint 资源类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "31797247"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|value|Boolean|要与之比较的布尔值|
+|值|Boolean|要与之比较的布尔值|
 
 ## <a name="relationships"></a>关系
 无

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1df7873f43cae176a7ffa715fd1e8b2da47a614f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772165"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567114"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>edgeCookiePolicy 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31772165"
 |:---|:---|:---|
 |定制|0|允许用户进行设置。|
 |允许|1|允许.|
-|blockThirdParty|双面|仅阻止第三方 cookie。|
-|blockAll|第三章|阻止所有 cookie。|
+|blockThirdParty|2 |仅阻止第三方 cookie。|
+|blockAll|3 |阻止所有 cookie。|
 
 
 

@@ -6,11 +6,11 @@ title: Drive
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: a6a406ef5cb011e82d14c54ea0a35cd93eaab837
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480605"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562836"
 ---
 # <a name="drive-resource-type"></a>Drive 资源类型
 

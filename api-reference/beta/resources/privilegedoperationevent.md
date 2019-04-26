@@ -1,19 +1,19 @@
 ---
 title: privilegedOperationEvent 资源类型
-description: 代表审核事件生成的特权身份管理角色操作，如，管理员可以管理特权的角色、 用户激活其角色，以及用户停用其角色。
+description: 表示由角色操作的特权标识管理生成的审核事件, 例如管理员管理特权角色、用户激活他的角色, 以及用户停用他的角色。
 localization_priority: Normal
 ms.openlocfilehash: 2ad8f7e5db956dfbb2fa0d74f441b01f2b5d68aa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525589"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563667"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>privilegedOperationEvent 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表审核事件生成的特权身份管理角色操作，如，管理员可以管理特权的角色、 用户激活其角色，以及用户停用其角色。
+表示由角色操作的特权标识管理生成的审核事件, 例如管理员管理特权角色、用户激活他的角色, 以及用户停用他的角色。
 
 
 ## <a name="methods"></a>方法
@@ -25,19 +25,19 @@ ms.locfileid: "29525589"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|additionalInformation|string|事件的详细人力易读信息。|
-|creationDateTime|dateTimeOffset|指示何时创建该事件的时间。|
-|expirationDateTime|dateTimeOffset|仅当 requestType 是"激活"，并指明角色激活的过期时间时，才使用此选项。|
-|id|string|PrivilegedOperationEvent 唯一标识符。 只读。|
-|referenceKey|string|事件/请求票证角色在激活过程中的编号。 仅当票证次数提供角色激活期间，将显示值。|
-|referenceSystem|string|事件/请求票证 tole 激活期间提供的系统。 仅当票证系统提供角色激活期间，将显示值。|
-|RequestType|string|请求操作类型。 RequestType 值可以是： ```Assign``` （工作分配角色）， ```Activate``` （角色激活）， ```Unassign``` （删除角色分配，请） ```Deactivate``` （角色停用） ```ScanAlersNow``` （扫描安全警报）， ```DismissAlert``` （消除安全警报）， ```FixAlertItem``` （解决安全通知问题）， ```AccessReview_Review``` （查看访问检查）， ```AccessReview_Create``` （创建访问检查）， ```AccessReview_Update``` （更新访问查看） 和```AccessReview_Delete```（删除访问查看）。|
-|requestorId|string|请求者发起操作的用户 id。|
-|requestorName|string|发起操作请求者的用户名。|
+|additionalInformation|string|事件的详细人员可读信息。|
+|creationDateTime|dateTimeOffset|指示创建事件的时间。|
+|expirationDateTime|dateTimeOffset|仅当 requestType 为 "Activate" 时才使用此方法, 它指示角色激活的过期时间。|
+|id|string|privilegedOperationEvent 的唯一标识符。 只读。|
+|referenceKey|string|角色激活期间的事件/请求票证编号。 仅当在角色激活期间提供了票证号时, 才会显示该值。|
+|referenceSystem|string|在 tole 激活过程中提供的事件/请求票证发放系统。 仅当在角色激活过程中提供了票证系统时, 才会显示该值。|
+|requestType|string|请求操作类型。 requestType 值可以```Assign```是: (角色分配)、 ```Activate``` (角色激活)、 ```Unassign``` (删除角色分配)、 ```Deactivate``` (角色停用)、 ```ScanAlersNow``` (扫描安全警报)、 ```DismissAlert``` (消除安全警报)、 ```FixAlertItem``` (修复安全警报) (修复安全通知问题)、 ```AccessReview_Review``` (查看访问评审) ```AccessReview_Create``` 、(创建访问评审)、 ```AccessReview_Update``` (更新访问评审) 和```AccessReview_Delete``` (删除访问评审)。|
+|requestorId|string|启动操作的请求者的用户 id。|
+|requestorName|string|启动操作的请求者的用户名。|
 |roleId|string|与操作相关联的角色的 id。|
-|roleName|string|角色的名称。|
-|tenantId|string|（组织） 租户 id。|
-|userId|string|与操作关联的用户 id。|
+|拥有|string|角色的名称。|
+|tenantId|string|租户 (组织) id。|
+|userId|string|与操作关联的用户的 id。|
 |userMail|string|用户的电子邮件。|
 |userName|string|用户的显示名称。|
 

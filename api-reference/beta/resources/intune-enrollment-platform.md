@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: edb921a12ca932f5c10d22120a065fb46f2bb8d3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775743"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562662"
 ---
 # <a name="platform-enum-type"></a>平台枚举类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "31775743"
 |:---|:---|:---|
 |unknown|0|未知设备平台|
 |ios|1|IOS 设备平台|
-|android|双面|Android 设备平台|
-|时间|第三章|Windows 设备平台|
-|windowsMobile|4|WindowsMobile 设备平台|
-|macOS|5|Mac 设备平台|
+|android|2 |Android 设备平台|
+|时间|3 |Windows 设备平台|
+|windowsMobile|4 |WindowsMobile 设备平台|
+|macOS|5 |Mac 设备平台|
 
 
 

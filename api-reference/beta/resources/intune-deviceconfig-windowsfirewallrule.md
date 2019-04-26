@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 77df7da501aee80b534accbe4c0d33dcf0e8df63
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788315"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570213"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>windowsFirewallRule 资源类型
 
@@ -23,14 +23,14 @@ ms.locfileid: "31788315"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|规则的显示名称。 不需要是唯一的。|
-|description|String|规则的说明。|
+|说明|String|规则的说明。|
 |packageFamilyName|String|受防火墙规则影响的 Microsoft Store 应用程序的程序包系列名称。|
 |路径|String|受防火墙规则影响的应用程序的完整文件路径。|
 |serviceName|String|当服务 (而不是应用程序) 发送或接收通信时使用的名称。|
 |协议|Int32|0-255 表示 IP 协议 (TCP = 6, UDP = 17) 的数字。 如果未指定, 则默认值为 All。 有效值为0至255|
-|localPortRanges|String 集合|本地端口范围的列表。 例如, "100-120", "200", "300-320"。 如果未指定, 则默认值为 All。|
-|remotePortRanges|String 集合|远程端口范围的列表。 例如, "100-120", "200", "300-320"。 如果未指定, 则默认值为 All。|
-|localAddressRanges|String 集合|规则所涵盖的本地地址的列表。 有效令牌包括:
+|localPortRanges|String collection|本地端口范围的列表。 例如, "100-120", "200", "300-320"。 如果未指定, 则默认值为 All。|
+|remotePortRanges|String collection|远程端口范围的列表。 例如, "100-120", "200", "300-320"。 如果未指定, 则默认值为 All。|
+|localAddressRanges|String collection|规则所涵盖的本地地址的列表。 有效令牌包括:
 - "*" 表示任何本地地址。 如果存在此标记, 则必须是包含的唯一标记。
 - 可以使用子网掩码或网络前缀表示法指定子网。 如果不指定子网掩码和网络前缀, 则子网掩码默认为255.255.255.255。
 - 有效的 IPv6 地址。

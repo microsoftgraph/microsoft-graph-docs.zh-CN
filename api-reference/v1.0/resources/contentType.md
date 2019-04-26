@@ -5,11 +5,11 @@ ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
 ms.openlocfilehash: c7d4b3222ec64432d6a2c9921e53ce409de3f139
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876732"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561353"
 ---
 # <a name="contenttype-resource-type"></a>ContentType 资源类型
 
@@ -48,15 +48,15 @@ ms.locfileid: "27876732"
 
 | 属性名称     | 类型                 | 说明
 |:------------------|:---------------------|:----------------------------------
-| **description**   | string               | 项目的描述性文本。
+| **说明**   | string               | 项目的描述性文本。
 | **group**         | string               | 此内容类型所属的组的名称。 可以帮助组织相关的内容类型。
-| **hidden**        | boolean              | 指示内容类型是否隐藏于此列表的“新建”菜单中。
+| **hidden**        | 布尔              | 指示内容类型是否隐藏于此列表的“新建”菜单中。
 | **id**            | string               | 内容类型的唯一标识符。
 | **inheritedFrom** | [itemReference][]    | 如果此内容类型继承自另一个作用域（如某个站点），则会提供对在其中定义内容类型的项的引用。
 | **name**          | string               | 内容类型的名称。
 | **order**         | [contentTypeOrder][] | 指定在选择 UI 中显示内容类型的顺序。
 | **parentId**      | string               | 内容类型的唯一标识符。
-| **readOnly**      | boolean              | 如果为 `true`，则不能修改内容类型，除非此值首次设置为 `false`。
+| **readOnly**      | 布尔              | 如果为 `true`，则不能修改内容类型，除非此值首次设置为 `false`。
 | **sealed**        | boolean              | 如果为 `true`，则不能由用户或通过下推操作修改内容类型。 只有网站集管理员可以密封或解封内容类型。
 
 ## <a name="relationships"></a>关系

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 51def159e90b256e772138264139f2a96fbd3344
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778528"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570129"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>deviceGuardVirtualizationBasedSecurityState 枚举类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "31778528"
 |:---|:---|:---|
 |运行|0|运行|
 |rebootRequired|1|根必需|
-|require64BitArchitecture|双面|需要64位体系结构|
-|notLicensed|第三章|未许可|
-|notConfigured|4|未配置|
-|doesNotMeetHardwareRequirements|5|系统不满足硬件要求|
+|require64BitArchitecture|2 |需要64位体系结构|
+|notLicensed|3 |未许可|
+|notConfigured|4 |未配置|
+|doesNotMeetHardwareRequirements|5 |系统不满足硬件要求|
 |相互|42|相互. microsoft-DeviceGuard 中的事件日志包含更多详细信息。|
 
 

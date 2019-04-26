@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 25d9fa55ea57f2ee4c1bf858e6a6ccc181dd1987
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980157"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558319"
 ---
 # <a name="list-sharedpcconfigurations"></a>列出 sharedPCConfigurations
 

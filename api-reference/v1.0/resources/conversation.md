@@ -1,15 +1,15 @@
 ---
 title: 对话资源类型
-description: 对话是 线程 集合，而线程包含相应线程拥有的帖子。对话中的所有线程和帖子共享相同的主题。
+description: 对话是 线程 集合，而线程包含相应线程拥有的帖子。 对话中的所有线程和帖子共享相同的主题。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 0066a636d2b36e74443380598c2ca6e8daf826c1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928155"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563789"
 ---
 # <a name="conversation-resource-type"></a>对话资源类型
 
@@ -33,15 +33,15 @@ ms.locfileid: "27928155"
 |:---------------|:--------|:----------|
 |hasAttachments|Boolean|指示此对话中的任意帖子是否至少有一个附件。|
 |id|String|对话的唯一标识符。只读。|
-|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
+|lastDeliveredDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |preview|String|来自此对话中最新帖子的正文的简短摘要。|
 |topic|String|对话的主题。在创建对话时可设置此属性，但无法对其进行更新。|
 |uniqueSenders|String collection|发送消息到此对话的所有用户。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|线程|[conversationThread](conversationthread.md) 集合|对话中所有对话线程的集合。一种导航属性。只读。可为 Null。|
+|线程|[conversationThread](conversationthread.md) 集合|对话中所有对话线程的集合。一种导航属性。只读。可为 NULL。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

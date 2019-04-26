@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 174d5a5b5309348de5ebf01d38445d032d9e31ff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980389"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566134"
 ---
 # <a name="get-conversation"></a>获取对话
 
@@ -19,9 +19,9 @@ ms.locfileid: "27980389"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | Group.ReadWrite.All、Group.Read.All    |
+|委派（工作或学校帐户） | group. 全部, group。 Read. all    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | Group.ReadWrite.All、Group.Read.All |
+|应用程序 | group. 全部, group。 Read. all |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

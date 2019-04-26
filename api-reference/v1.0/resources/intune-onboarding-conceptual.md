@@ -1,15 +1,15 @@
 ---
 title: 在 Intune 中注册设备以进行管理
-description: " (BYOD) 注册允许用户注册其个人电话、 平板电脑或 Pc。 企业拥有设备 (COD) 注册允许管理场景，例如远程擦除、共享设备或设备的用户相关性。"
+description: " (BYOD) 注册允许用户注册其个人电话、平板电脑或电脑。 企业拥有设备 (COD) 注册允许管理场景，例如远程擦除、共享设备或设备的用户相关性。"
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
 ms.openlocfilehash: 2e7f6e85e32137804556c64a1995bd2e78b04068
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917438"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564237"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>在 Intune 中注册设备以进行管理
 
@@ -25,16 +25,16 @@ ms.locfileid: "27917438"
 - [设备注册平台限制配置](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
 - [设备注册 Windows Hello 企业版配置](intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)
 - [设备管理 Exchange 连接器](intune-onboarding-devicemanagementexchangeconnector.md)
-- [设备管理 exchange 连接器状态](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
-- [设备管理 exchange 连接器同步类型](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
-- [设备管理 exchange 连接器类型](intune-onboarding-devicemanagementexchangeconnectortype.md)
+- [设备管理 Exchange 连接器状态](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
+- [设备管理 Exchange 连接器同步类型](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
+- [设备管理 Exchange 连接器类型](intune-onboarding-devicemanagementexchangeconnectortype.md)
 - [设备管理合作伙伴](intune-onboarding-devicemanagementpartner.md)
-- [设备管理合作伙伴应用程序类型](intune-onboarding-devicemanagementpartnerapptype.md)
+- [设备管理合作伙伴应用类型](intune-onboarding-devicemanagementpartnerapptype.md)
 - [设备管理合作伙伴租户状态](intune-onboarding-devicemanagementpartnertenantstate.md)
-- [启用](intune-onboarding-enablement.md)
+- [支持](intune-onboarding-enablement.md)
 - [注册配置分配](intune-onboarding-enrollmentconfigurationassignment.md)
 - [Intune 品牌](intune-onboarding-intunebrand.md)
-- [MDM 证书颁发机构](intune-onboarding-mdmauthority.md)
+- [MDM 颁发机构](intune-onboarding-mdmauthority.md)
 - [移动威胁防护连接器](intune-onboarding-mobilethreatdefenseconnector.md)
 - [移动威胁合作伙伴租户状态](intune-onboarding-mobilethreatpartnertenantstate.md)
 - [本地条件访问设置](intune-onboarding-onpremisesconditionalaccesssettings.md)
@@ -42,5 +42,5 @@ ms.locfileid: "27917438"
 - [RGB 颜色](intune-onboarding-rgbcolor.md)
 - [VPP 令牌](intune-onboarding-vpptoken.md)
 - [VPP 令牌状态](intune-onboarding-vpptokenstate.md)
-- [VPP 令牌的同步状态](intune-onboarding-vpptokensyncstatus.md)
-- [Windows Hello 业务 PIN 用法](intune-onboarding-windowshelloforbusinesspinusage.md)
+- [VPP 令牌同步状态](intune-onboarding-vpptokensyncstatus.md)
+- [Windows Hello 企业版 PIN 使用情况](intune-onboarding-windowshelloforbusinesspinusage.md)

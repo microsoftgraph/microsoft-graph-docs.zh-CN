@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 52a10e605e4f4c912a138dd5b97b6e8f7ed61184
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802441"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558172"
 ---
 # <a name="mobileappactiontype-enum-type"></a>mobileAppActionType 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31802441"
 |:---|:---|:---|
 |unknown|0|未知结果。|
 |installCommandSent|1|已发送应用程序安装命令。|
-|了|第三章|已安装应用程序。|
-|#b0|4|已卸载应用程序。|
-|userRequestedInstall|5|用户请求安装|
+|了|3 |已安装应用程序。|
+|#b0|4 |已卸载应用程序。|
+|userRequestedInstall|5 |用户请求安装|
 
 
 

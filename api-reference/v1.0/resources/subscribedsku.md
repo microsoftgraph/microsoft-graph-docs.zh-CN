@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: e9e61fba199d6d3e509700fe61e75bde240c7f16
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937437"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563719"
 ---
 # <a name="subscribedsku-resource-type"></a>subscribedSku 资源类型
 
@@ -21,19 +21,19 @@ ms.locfileid: "27937437"
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
 |[获取 subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |读取 subscribedSku 对象的属性和关系。|
-|[列表 subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |检索组织已获取的商业订阅列表。|
+|[列出 subscribedsku](../api/subscribedsku-list.md) | [subscribedSku](subscribedsku.md) 集合 |检索组织已获取的商业订阅列表。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |appliesTo|String| 例如，“用户”或“公司”。 |
-|capabilityStatus|String| 例如，“Enabled”。 |
+|capabilityStatus|String| 例如, "Enabled"。 |
 |consumedUnits|Int32| 已分配的许可证数量。 |
-|id|String| 订阅的 sku 对象的唯一标识符。密钥，不可为 NULL。 |
+|id|String| 订阅的 sku 对象的唯一标识符。 键, 不可为 null。 |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| 有关预付许可证的数量和状态的信息。 |
-|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| 有关 SKU 可用服务计划的信息。不可为 null |
+|servicePlans|[servicePlanInfo](serviceplaninfo.md) collection| 有关 SKU 可用服务计划的信息。 不可为 null |
 |skuId|Guid| 服务 SKU 的唯一标识符 (GUID)。 |
-|skuPartNumber|字符串| SKU 商品编号；例如：“AAD_PREMIUM”或“RMSBASIC”。 |
+|skuPartNumber|String| SKU 商品编号；例如：“AAD_PREMIUM”或“RMSBASIC”。 |
 
 ## <a name="relationships"></a>关系
 无

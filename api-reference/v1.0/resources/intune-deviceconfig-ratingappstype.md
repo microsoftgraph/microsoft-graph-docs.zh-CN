@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7117955c3c28c1cf58ac11d0eceeca090afd9fcb
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259722"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560863"
 ---
 # <a name="ratingappstype-enum-type"></a>ratingAppsType 枚举类型
 
@@ -22,10 +22,10 @@ ms.locfileid: "30259722"
 |:---|:---|:---|
 |allAllowed|0|默认值, 允许所有应用内容|
 |allBlocked|1|不允许任何应用内容|
-|agesAbove4|双面|4 +、年龄4及更高版本|
-|agesAbove9|第三章|9 +、年龄9及更高版本|
-|agesAbove12|4|12 +, 年龄12岁及以上 |
-|agesAbove17|5|17 +、年龄17及更高版本|
+|agesAbove4|2 |4 +、年龄4及更高版本|
+|agesAbove9|3 |9 +、年龄9及更高版本|
+|agesAbove12|4 |12 +, 年龄12岁及以上 |
+|agesAbove17|5 |17 +、年龄17及更高版本|
 
 
 

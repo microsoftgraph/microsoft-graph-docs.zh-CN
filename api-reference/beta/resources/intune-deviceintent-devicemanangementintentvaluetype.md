@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 840a28595e1ce812368d2e7907ce56eee88245df
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799130"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562256"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>deviceManangementIntentValueType 枚举类型
 
@@ -24,10 +24,10 @@ ms.locfileid: "31799130"
 |:---|:---|:---|
 |integer|0|设置值为整数|
 |布尔|1|设置值是一个布尔值|
-|string|双面|设置值为字符串|
-|复杂|第三章|设置值是一个复杂的对象|
-|集合|4|设置值为集合|
-|abstractComplex|5|设置值是一个抽象的复杂对象|
+|string|2 |设置值为字符串|
+|复杂|3 |设置值是一个复杂的对象|
+|操作|4 |设置值为集合|
+|abstractComplex|5 |设置值是一个抽象的复杂对象|
 
 
 

@@ -4,11 +4,11 @@ description: OneNote 是一个数字笔记本，可让客户通过在 Web、手�
 author: Jewan-microsoft
 localization_priority: Priority
 ms.openlocfilehash: a3ca57e9bac52613fbe884368f79b31b5b5165e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825716"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560942"
 ---
 # <a name="onenote-api-overview"></a>OneNote API 概述
 

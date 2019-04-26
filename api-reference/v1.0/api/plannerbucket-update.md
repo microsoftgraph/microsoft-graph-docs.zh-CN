@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 1941220304cd2d95aba5f0aab42b62c8d0e61397
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951465"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562004"
 ---
 # <a name="update-plannerbucket"></a>更新 plannerbucket
 
@@ -40,7 +40,7 @@ PATCH /planner/buckets/{id}
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |name|String|存储桶的名称。|
-|orderHint|String|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
+|orderHint|字符串|用于为列表视图中的此类型项目排序的提示。[此处](../resources/planner-order-hint-format.md)概述了此格式。|
 |planId|String|此存储桶所属的计划 id。|
 
 ## <a name="response"></a>响应

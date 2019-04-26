@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: db3be739e6ee1e7c5ebe2a5bd33af648488df54f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805850"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561934"
 ---
 # <a name="vpndnsrule-resource-type"></a>vpnDnsRule 资源类型
 
@@ -23,10 +23,10 @@ VPN DNS 规则定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |name|String|别名.|
-|台|String 集合|台.|
+|台|String collection|台.|
 |proxyServerUri|String|代理服务器 Uri。|
-|autoTrigger|布尔值|当设备连接到此域时自动连接到 VPN: 默认值为 False。|
-|保持|布尔值|将此规则保持为活动状态, 即使未连接 VPN 也是如此: 默认值为 False|
+|autoTrigger|Boolean|当设备连接到此域时自动连接到 VPN: 默认值为 False。|
+|保持|Boolean|将此规则保持为活动状态, 即使未连接 VPN 也是如此: 默认值为 False|
 
 ## <a name="relationships"></a>关系
 无

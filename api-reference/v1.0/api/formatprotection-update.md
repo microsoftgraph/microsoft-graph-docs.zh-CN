@@ -3,11 +3,11 @@ title: 更新 formatProtection
 description: 更新 formatprotection 对象的属性。
 localization_priority: Normal
 ms.openlocfilehash: 26e51babc4610c331563923c464db341d4517c51
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847640"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563837"
 ---
 # <a name="update-formatprotection"></a>更新 formatProtection
 
@@ -39,7 +39,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|formulaHidden|boolean|表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。|
+|formulaHidden|布尔|表示 Excel 是否隐藏区域中的单元格公式。指示整个区域不具有统一公式隐藏设置的空值。|
 |已锁定|boolean|指示 Excel 是否锁定对象中的单元格。指示整个区域不具有统一锁定设置的空值。|
 
 ## <a name="response"></a>响应

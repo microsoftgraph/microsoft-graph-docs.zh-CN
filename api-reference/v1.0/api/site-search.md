@@ -7,11 +7,11 @@ description: 在 SharePoint 租户中搜索与所提供的关键字匹配的网�
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 48a479df2f91dd4d60455a26c4e16f561ea88f83
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904117"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560982"
 ---
 # <a name="search-for-sites"></a>搜索网站
 

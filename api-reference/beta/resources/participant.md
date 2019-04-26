@@ -1,17 +1,17 @@
 ---
-title: 参与者的资源类型
+title: 参与者资源类型
 description: 参与者类型。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f49526824b2b6c4eb4a5065f05ab4c765d299faa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508144"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568637"
 ---
-# <a name="participant-resource-type"></a>参与者的资源类型
+# <a name="participant-resource-type"></a>参与者资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,23 +21,23 @@ ms.locfileid: "29508144"
 
 | 方法                                                          | 返回类型                              | 说明                                       |
 |:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
-| [获取参与者](../api/participant-get.md)                    | [参与者](participant.md)            | 阅读**参与者**对象的属性。    |
-| [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | 配置参与者音频混音器。            |
+| [获取参与者](../api/participant-get.md)                    | [参与者](participant.md)            | 读取**参与者**对象的属性。    |
+| [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | 配置参与者音频混合器。            |
 | [邀请](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | 邀请参与者加入呼叫。                 |
-| [设置为静音的参与者](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | 将呼叫中的参与者设为静音。                     |
-| [将所有参与者设为都静音](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | 将会议中的所有参与者设为都静音。         |
+| [参与者静音](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | 将呼叫中的参与者静音。                     |
+| [所有参与者静音](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | 将会议中的所有参与者设为静音。         |
 
 ## <a name="properties"></a>属性
 
 | 属性             | 类型                                     | 说明                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | 参与者的 id。                                          |
-| Info                 | [participantInfo](participantinfo.md)    | 参与者的参与者。                          |
-| isInLobby            | 布尔                                  | true 如果参与者位于会议厅                          |
-| isMuted              | 布尔                                  | 如果参与者处于静音状态，则 true （客户端或服务器静音）    |
+| id                   | String                                   | 参与者 id。                                          |
+| info                 | [participantInfo](participantinfo.md)    | 参与者的参与者。                          |
+| isInLobby            | 布尔                                  | 如果参与者在会议厅中, 则为 true                          |
+| isMuted              | 布尔                                  | 如果参与者处于静音 (客户端或服务器为静音)    |
 | mediaStreams         | [mediaStream](mediastream.md)集合 | 媒体流的列表。                                   |
-| 元数据             | String                                   | 提供在名单中的参与者的数据的 blob     |
-| recordingInfo        | [recordingInfo](recordinginfo.md)        | 参与者是否具有录制功能的信息。 |
+| metadata             | String                                   | 名单中的参与者提供的数据 blob     |
+| recordingInfo        | [recordingInfo](recordinginfo.md)        | 有关参与者是否有录制功能的信息。 |
 
 ## <a name="relationships"></a>关系
 无

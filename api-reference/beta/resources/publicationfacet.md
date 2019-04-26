@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: PublicationFacet
 localization_priority: Normal
 ms.openlocfilehash: 66e12c3240d1cade57d377e43403b33102fe166e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482061"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563245"
 ---
 # <a name="publicationfacet-resource-type"></a>PublicationFacet 资源类型
 

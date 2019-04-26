@@ -4,11 +4,11 @@ description: 通过延长到期时间续订订阅。
 localization_priority: Normal
 author: piotrci
 ms.openlocfilehash: 1bf693fb8551db916807570459d9658fa02665f1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167800"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560961"
 ---
 # <a name="update-subscription"></a>更新订阅
 

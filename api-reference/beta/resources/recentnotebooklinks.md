@@ -1,24 +1,24 @@
 ---
 title: recentNotebookLinks 资源类型
-description: 若要打开的 OneNote 笔记本的链接。 此资源类型以 recentNotebook 资源属性的形式存在。
+description: 用于打开 OneNote 笔记本的链接。 此资源类型以 recentNotebook 资源属性的形式存在。
 localization_priority: Normal
 ms.openlocfilehash: 328f337d63645cdd52722a4216006920c493f9e7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525883"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563261"
 ---
 # <a name="recentnotebooklinks-resource-type"></a>recentNotebookLinks 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-若要打开的 OneNote 笔记本的链接。 此资源类型以 [recentNotebook](recentnotebook.md) 资源属性的形式存在。
+用于打开 OneNote 笔记本的链接。 此资源类型以 [recentNotebook](recentnotebook.md) 资源属性的形式存在。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|如果安装在 OneNote 客户端中，打开笔记本。|
+|oneNoteClientUrl|[externalLink](externallink.md)|在 OneNote 客户端中打开笔记本 (如果已安装)。|
 |oneNoteWebUrl|[externalLink](externallink.md)|在 OneNote Online 中打开笔记本。|
 
 ## <a name="json-representation"></a>JSON 表示形式

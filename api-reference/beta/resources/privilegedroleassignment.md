@@ -1,47 +1,47 @@
 ---
 title: privilegedRoleAssignment 资源类型
-description: '表示特定用户特权的角色分配。 '
+description: '表示特定用户的特权角色分配。 '
 localization_priority: Normal
 ms.openlocfilehash: 479b6d46dc479134fd0abb46b1a9ffe478611a82
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515116"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563396"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>privilegedRoleAssignment 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示特定用户特权的角色分配。 
+表示特定用户的特权角色分配。 
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[列表 privilegedRoleAssignment 集合](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md)集合|获取 privilegedRoleAssignment 对象的集合。|
-|[获取 privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |读取属性和 privilegedRoleAssignment 对象的关系。|
-|[创建工作分配](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| 通过发布到 assignments 集合中创建新的工作分配。|
+|[列出 privilegedRoleAssignment 集合](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) 集合|获取 privilegedRoleAssignment 对象的集合。|
+|[获取 privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |读取 privilegedRoleAssignment 对象的属性和关系。|
+|[创建作业](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| 通过发布到工作分配集合来创建新的工作分配。|
 |[删除](../api/privilegedroleassignment-delete.md) | 无 |删除 privilegedRoleAssignment 对象。 |
-|[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|请为永久的角色分配。|
-|[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|请作为合格的角色分配。|
-|[My](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md)集合|获取当前用户的特权的角色分配。|
+|[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|将角色分配标记为永久。|
+|[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|使角色分配符合资格。|
+|[My](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md) 集合|获取当前用户的特权角色分配。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|expirationDateTime|dateTimeOffset|UTC DateTime 时将过期的临时特权的角色分配。 永久角色分配的值为 null。|
-|id|string| 特权的角色分配的唯一标识符。 只读。 处于 userId_roleId，其中 userId 是 Azure AD 用户 id 的 GUID 字符串，roleId 是 Azure 管理员角色 id 的 GUID 字符串的格式。|
-|isElevated|布尔|**true**如果激活该角色分配。 **false**如果停用的角色分配。|
-|resultMessage|string|结果消息由服务设置。|
-|roleId|string|角色标识符 格式字符串 GUID。|
-|userId|string|用户标识符。 格式字符串 GUID。|
+|expirationDateTime|dateTimeOffset|临时权限角色分配将在何时过期时的 UTC 日期时间。 对于永久角色分配, 值为 null。|
+|id|string| 特权角色分配的唯一标识符。 只读。 它的格式为 "userId_roleId", 其中 userId 是 azure AD 用户 id 的 guid 字符串, roleId 是 azure 管理员角色 id 的 guid 字符串。|
+|isElevated|布尔|如果角色分配已激活,**则为 true** 。 **假**如果角色分配被停用。|
+|resultMessage|string|由服务设置的结果消息。|
+|roleId|string|角色标识符。 以 GUID 字符串格式。|
+|userId|string|用户标识符。 以 GUID 字符串格式。|
 
 ## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 NULL。 相关联的角色的信息。|
+|roleInfo|[privilegedRole](privilegedrole.md)| 只读。 可为 Null。 相关联的角色信息。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ab5dd14c0929c58b9c076d1115d487e560d80333
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522578"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562277"
 ---
 # <a name="securitybaselinesettingstate-resource-type"></a>securityBaselineSettingState 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "31522578"
 |:---|:---|:---|
 |id|String|实体的唯一标识符|
 |settingName|String|报告的设置名称|
-|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|安全基准设置的符合性状态。 可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
+|状态|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|安全基准设置的符合性状态。 可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
 |settingCategoryId|String|此设置所属的设置类别 id|
 
 ## <a name="relationships"></a>关系

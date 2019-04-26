@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 47047f401bbf0a690494490cbbd3b934340a26c9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791990"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558270"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>windowsInformationProtectionWipeAction 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "31791990"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|status|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|状态|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |targetedUserId|String|此擦除操作针对的用户 id。|
 |targetedDeviceRegistrationId|String|此擦除操作针对的 DeviceRegistrationId。|
 |targetedDeviceName|String|目标设备名称。|

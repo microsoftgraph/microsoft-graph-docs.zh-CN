@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 775f499bc3fb5562f9936d7d64f20e5494f10bd0
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869440"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563866"
 ---
 # <a name="create-calendargroup"></a>创建 CalendarGroup
 

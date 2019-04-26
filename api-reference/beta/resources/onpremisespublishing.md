@@ -3,11 +3,11 @@ title: onPremisesPublishing 资源类型
 description: 下面是资源的 JSON 表示形式。
 localization_priority: Normal
 ms.openlocfilehash: fd216d52ba212e739f1d7c087a99a4379682010e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508179"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568858"
 ---
 # <a name="onpremisespublishing-resource-type"></a>onPremisesPublishing 资源类型
 
@@ -16,13 +16,13 @@ ms.locfileid: "29508179"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|customDomainCertificate|String|当正在使用中的自定义域名与应用程序关联的证书的详细信息。 为空时使用的默认域。|
-|externalAuthenticationType|String|详细预身份验证设置的应用程序可能的值为： `passthru`， `aadPreAuthentication`。|
-|externalUrl|String|应用程序的已发布外部 url。 例如：  |
-|internalUrl|String|应用程序的内部 url。 例如： |
-|isOnPremPublishingEnabled|Boolean|指示是否或不当前正在发布应用程序。|
-|applicationServerTimeout|String|连接器将等待响应之前关闭该连接的后端应用程序持续时间。 可取值为：`default`、`long`。 使用`long`如果您的服务器所需超过 60 75 秒来响应请求。 此外尝试`long`如果您不能访问应用程序，并且错误状态为"后端超时"。|
-|isTranslateHostHeaderEnabled|Boolean|指示应用程序应翻译响应头中的 url。 这包括设置正确的站点的 cookie。|
+|customDomainCertificate|String|使用自定义域时与应用程序关联的证书的详细信息。 使用默认域时为 Null。|
+|externalAuthenticationType|String|详细说明应用程序的预身份验证设置可能的值为`passthru`: `aadPreAuthentication`、。|
+|externalUrl|String|应用程序的已发布外部 url。 例如https://intranet-contoso.msappproxy.net/  |
+|internalUrl|String|应用程序的内部 url。 例如https://intranet/ |
+|isOnPremPublishingEnabled|Boolean|指示应用程序当前是否正在发布。|
+|applicationServerTimeout|String|在关闭连接之前, 连接器将等待后端应用程序响应的持续时间。 可能的值`default`为`long`。 如果`long`服务器要响应请求的时间超过60-75 秒, 请使用。 此外, `long`如果您无法访问应用程序, 并且错误状态为 "后端超时", 也会尝试。|
+|isTranslateHostHeaderEnabled|Boolean|指示应用程序是否应转换响应标头中的 url。 这包括为 cookie 设置正确的网站。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 

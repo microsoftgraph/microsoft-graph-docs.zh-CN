@@ -1,27 +1,27 @@
 ---
 title: mediaInfo 资源类型
-description: 操作中使用的媒体信息提示。
+description: 在提示操作中使用的媒体信息。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 65cf71f5c116fe213d0e32d560ec24704bff1172
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523979"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562601"
 ---
 # <a name="mediainfo-resource-type"></a>mediaInfo 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-操作中使用的媒体信息提示。
+在提示操作中使用的媒体信息。
 
 ## <a name="properties"></a>属性
 | 属性       | 类型    | 说明                      |
 |:---------------|:--------|:---------------------------------|
-| resourceId     | String  | 唯一标识的资源。 |
-| uri            | String  | 资源的路径。            |
+| resourceId     | String  | 资源的唯一标识。 |
+| url            | String  | 资源的路径。            |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

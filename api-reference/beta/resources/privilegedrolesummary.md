@@ -1,36 +1,36 @@
 ---
 title: privilegedRoleSummary 资源类型
-description: 为特定的角色摘要统计信息。
+description: 特定角色的统计信息摘要。
 localization_priority: Normal
 ms.openlocfilehash: 2ed34f556f52c41729bfa108fbb6eb0c608f6b67
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513737"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563432"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>privilegedRoleSummary 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为特定的角色摘要统计信息。
+特定角色的统计信息摘要。
 
 
 ## <a name="methods"></a>方法
 
 | 方法           | 返回类型    |说明|
 |:---------------|:--------|:----------|
-|[获取 privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |读取属性和 privilegedRoleSummary 对象的关系。|
+|[获取 privilegedRoleSummary](../api/privilegedrolesummary-get.md) | [privilegedRoleSummary](privilegedrolesummary.md) |读取 privilegedRoleSummary 对象的属性和关系。|
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|elevatedCount|int32|激活已分配的角色和角色的用户数。|
+|elevatedCount|时会|已分配角色并激活角色的用户数量。|
 |id|string| 角色的唯一标识符。 只读。|
-|managedCount|int32|停用已分配的角色的用户，但该角色的数量。|
-|mfaEnabled|布尔|如果为**true**的角色激活需要 MFA。 **false**如果角色激活不需要 MFA。|
-|status|string| 可取值为：`ok`、`bad`。 值取决于的比率 (managedCount / usersCount)。 如果此比率小于预定义的阈值，`ok`返回。 否则为`bad`返回。|
-|usersCount|int32|与角色分配的用户数。|
+|managedCount|时会|已分配角色但角色被停用的用户数量。|
+|mfaEnabled|布尔|**如此**如果角色激活需要进行 MFA。 **假**如果角色激活不需要进行 MFA。|
+|status|string| 可取值为：`ok`、`bad`。 值取决于 (managedCount/usersCount) 的比率。 如果该比率小于预定义的阈值, `ok`则返回。 否则, `bad`将返回。|
+|usersCount|时会|为角色分配的用户数。|
 
 ## <a name="relationships"></a>关系
 无

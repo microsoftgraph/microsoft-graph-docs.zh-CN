@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2888484f90bb3389fa7b7b12c79ce386d1bfd2db
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794328"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563502"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>defenderMonitorFileActivity 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31794328"
 |:---|:---|:---|
 |定制|0|用户定义, 默认值, 无意向。|
 |disable|1|禁用监控文件活动。|
-|monitorAllFiles|双面|监视所有文件。|
-|monitorIncomingFilesOnly|第三章| 仅监视传入的文件。|
-|monitorOutgoingFilesOnly|4|仅监视传出文件。|
+|monitorAllFiles|2 |监视所有文件。|
+|monitorIncomingFilesOnly|3 | 仅监视传入的文件。|
+|monitorOutgoingFilesOnly|4 |仅监视传出文件。|
 
 
 

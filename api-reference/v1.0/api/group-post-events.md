@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.openlocfilehash: 194a24ac589cffa56a235a0bce39500f8cdd9d4e
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889945"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561808"
 ---
 # <a name="create-event"></a>创建事件
 使用此 API 新建[事件](../resources/event.md)。

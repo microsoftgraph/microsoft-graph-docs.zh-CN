@@ -1,15 +1,15 @@
 ---
 title: 创建对话
-description: '通过包括线程和帖子来创建新会话。 '
+description: '通过包括线程和帖子创建新对话。 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: f8f3868f68918f043974c48ac71f8ff95481b040
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981789"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561829"
 ---
 # <a name="create-conversation"></a>创建对话
 通过添加线程和帖子来新建[对话](../resources/conversation.md)。 

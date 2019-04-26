@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
 ms.openlocfilehash: 9c57c9909e223659a8d9af557522183e532e7678
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481319"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563101"
 ---
 # <a name="remoteitem-resource-type"></a>RemoteItem 资源类型
 
@@ -58,17 +58,17 @@ ms.locfileid: "30481319"
 | 文件                 | [文件](file.md)                     | 指示远程项是文件。只读。                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | 本地文件系统中的远程项的有关信息。只读。                                                                                          |
 | 文件夹               | [文件夹](folder.md)                 | 指示远程项是文件夹。只读。                                                                                                            |
-| id                   | String                              | 驱动器内远程项的唯一标识符。只读。                                                                                                    |
+| id                   | 字符串                              | 驱动器内远程项的唯一标识符。只读。                                                                                                    |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | 上次修改项目的用户、设备和应用程序的标识。只读。                                                                            |
 | lastModifiedDateTime | Timestamp                           | 上次修改项目的日期和时间。只读。                                                                                                              |
 | name                 | String                              | 可选。远程项的 Filename。只读。                                                                                                                 |
-| 包              | [包](package.md)               | 如果存在，则表示此项是包而不是文件夹或文件。在某些上下文中将包视为文件，在其他上下文中视为文件夹。只读。 |
+| 包              | [包](package.md)               | 如果存在，则表示此项是一个包，而不是文件夹或文件。包被视为某些上下文中的文件和其他上下文中的文件夹。只读。 |
 | parentReference      | [ItemReference](itemreference.md)   | 远程项的父级的属性。只读。                                                                                                           |
 | shared               | [shared](shared.md)                 | 表示此项已与他人共享，并提供有关项目共享状态的信息。只读。                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | 为 OneDrive for Business 和 SharePoint 中的项之间的互操作性提供了完整的项标识符集。只读。                                          |
 | size                 | Int64                               | 远程项的大小。只读。                                                                                                                               |
 | webDavUrl            | Url                                 | 项的可兼容 DAV 的 URL。                                                                                                                                  |
-| webUrl               | URL                                 | 在浏览器中显示此资源的 URL。只读。                                                                                                         |
+| WebUrl               | Url                                 | 在浏览器中显示此资源的 URL。只读。                                                                                                         |
 
 ## <a name="remarks"></a>注解
 

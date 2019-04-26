@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 0e0693d6bc95b6e541c166aca12d09cccf56646d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986439"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562025"
 ---
 # <a name="delete-plannerbucket"></a>删除 plannerBucket
 

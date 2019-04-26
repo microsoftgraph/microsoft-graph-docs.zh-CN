@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 075fad8389b00702612575c4df0f9891d2a5cc24
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264097"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557871"
 ---
 # <a name="windowsdevicetype-enum-type"></a>windowsdevicetype 更改枚举类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "30264097"
 |:---|:---|:---|
 |无|0|未设置任何标志。|
 |desktop|1|是否支持桌面 Windows 设备类型。|
-|流动|双面|是否支持移动 Windows 设备类型。|
-|全息|4|是否支持全息 Windows 设备类型。|
-|球队|utf-8|是否支持团队 Windows 设备类型。|
+|流动|2 |是否支持移动 Windows 设备类型。|
+|全息|4 |是否支持全息 Windows 设备类型。|
+|团队|8 |是否支持团队 Windows 设备类型。|
 
 
 
