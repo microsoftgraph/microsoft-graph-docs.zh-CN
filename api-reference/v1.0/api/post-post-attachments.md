@@ -1,15 +1,15 @@
 ---
 title: Add attachment
-description: 使用此 API 向帖子添加附件。 相那里
+description: 使用此 API 将 附件 添加到帖子。 由于存在
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: b2b1c619e40fa915b079f97a6efb444981b28709
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949631"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576288"
 ---
 # <a name="add-attachment"></a>Add attachment
 
@@ -33,7 +33,8 @@ ms.locfileid: "27949631"
 |应用程序 | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
-<!-- { "blockType": "ignored" } -->[发布](../resources/post.md)[线程](../resources/conversationthread.md)属于组的[对话](../resources/conversation.md)中的附件。
+<!-- { "blockType": "ignored" } -->
+属于组的 [对话](../resources/conversation.md) 的 [线程](../resources/conversationthread.md) 中的 [帖子](../resources/post.md) 附件。
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/attachments
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments

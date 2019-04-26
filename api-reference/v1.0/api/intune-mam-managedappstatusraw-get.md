@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 897d5398a87a2cb451f9c0cc5408aeb7c953478a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966878"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554777"
 ---
 # <a name="get-managedappstatusraw"></a>获取 managedAppStatusRaw
 

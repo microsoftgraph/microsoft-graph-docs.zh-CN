@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: abc00f27ef65cdddfef30a06bef55a8fa44e488a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805521"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573835"
 ---
 # <a name="enrollmentprofile-resource-type"></a>enrollmentProfile 资源类型
 
@@ -36,11 +36,11 @@ enrollmentProfile 资源表示必须提供预注册的配置的集合, 以便能
 |:---|:---|:---|
 |id|字符串|对象的 GUID|
 |displayName|String|配置文件的名称|
-|description|String|配置文件的说明|
-|requiresUserAuthentication|布尔值|指示配置文件是否需要用户身份验证|
+|说明|String|配置文件的说明|
+|requiresUserAuthentication|Boolean|指示配置文件是否需要用户身份验证|
 |configurationEndpointUrl|String|用于注册的配置终结点 url|
-|enableAuthenticationViaCompanyPortal|布尔值|指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|布尔值|指示在安装助理注册设备上需要公司门户|
+|enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在安装助理注册设备上需要公司门户|
 
 ## <a name="relationships"></a>关系
 无

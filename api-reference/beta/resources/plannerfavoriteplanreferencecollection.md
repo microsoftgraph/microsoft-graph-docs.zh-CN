@@ -5,21 +5,21 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: c473d4101a1247420e641b532ea04dfbc1a26d2c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519484"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572624"
 ---
 # <a name="plannerfavoriteplanreferencecollection-resource-type"></a>plannerFavoritePlanReferenceCollection 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**PlannerFavoritePlanReferenceCollection**资源代表由用户标记为收藏的计划对引用的集合。 此资源是开放的类型， [plannerUser](planneruser.md)对象的一部分。 中的属性值对的属性名称是相应计划; 的 ID值是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。
+**plannerFavoritePlanReferenceCollection**资源表示对计划的引用的集合, 这些计划被用户标记为收藏。 此资源是打开的类型, 并且是[plannerUser](planneruser.md)对象的一部分。 属性值对中的属性名称是对应计划的 ID;值是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。
 
 
 ## <a name="properties"></a>属性
-您可以定义此打开类型的属性。 属性名称是`id` [plannerPlan](plannerplan.md)资源的值和它们的值必须是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。 在收藏夹列表中删除项目，设置对属性的值`null`。
+您可以定义此开放类型的属性。 属性名称是`id` [plannerPlan](plannerplan.md)资源的值, 它们的值必须是[plannerFavoritePlanReference](plannerfavoriteplanreference.md)对象。 若要删除收藏夹列表中的项, 请将该属性的值设置`null`为。
 
 
 ## <a name="json-representation"></a>JSON 表示形式

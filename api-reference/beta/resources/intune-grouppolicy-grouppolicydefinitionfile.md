@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7ecccc683187b592c422d26a6f41bfd15b9d805b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804135"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575994"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>groupPolicyDefinitionFile 资源类型
 
@@ -29,12 +29,12 @@ ms.locfileid: "31804135"
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|ADMX 文件的本地化友好名称。|
-|description|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
-|languageCodes|String 集合|ADMX 文件的受支持的语言代码。|
+|说明|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
+|languageCodes|String collection|ADMX 文件的受支持的语言代码。|
 |targetPrefix|String|指定在 ADMX 文件中引用命名空间的逻辑名称。|
 |targetNamespace|String|指定用于标识 ADMX 文件中的命名空间的 URI。|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|指定组策略的类型。 可能的值是：`admxBacked`、`admxIngested`。|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。|
 
 ## <a name="relationships"></a>关系

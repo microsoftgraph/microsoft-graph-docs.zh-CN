@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6d0a69c10f1f0075caee48276bdbc37f6d616f22
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253377"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549550"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting 资源类型
 
@@ -20,7 +20,7 @@ OMA 设置定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|显示名称。|
+|displayName|字符串|显示名称。|
 |description|String|说明。|
 |omaUri|String|OMA。|
 

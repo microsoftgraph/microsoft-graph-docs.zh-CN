@@ -1,19 +1,19 @@
 ---
 title: 更新警报
-description: 更新在任何集成的解决方案，以使警报状态和分配保持同步跨解决方案的可编辑**通知**属性。 此方法将更新的任何解决方案都有一个记录引用的警报 id。
+description: 在任何集成的解决方案中更新可编辑的**alert**属性, 以保持各个解决方案之间同步警报状态和分配。 此方法更新任何包含所引用警报 ID 的记录的解决方案。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 42bc945dde726466439802350796d628ee438e22
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967317"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551506"
 ---
 # <a name="update-alert"></a>更新警报
 
-更新在任何集成的解决方案，以使警报状态和分配保持同步跨解决方案的可编辑**通知**属性。 此方法将更新的任何解决方案都有一个记录引用的警报 id。
+在任何集成的解决方案中更新可编辑的**alert**属性, 以保持各个解决方案之间同步警报状态和分配。 此方法更新任何包含所引用警报 ID 的记录的解决方案。
 
 ## <a name="permissions"></a>权限
 
@@ -27,7 +27,7 @@ ms.locfileid: "29967317"
 
 ## <a name="http-request"></a>HTTP 请求
 
-> **注意：** 您必须为参数和 vendorInformation 包含包括的**警报**ID`provider`和`vendor`使用此方法。
+> **注意:** 您必须将**警报**ID 作为参数和 vendorInformation (包含`provider`和`vendor`使用此方法) 包括在内。
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,34 +37,34 @@ PATCH /security/alerts/{alert_id}
 
 ## <a name="request-headers"></a>请求标头
 
-| Name          | 说明              |
+| 名称          | 说明              |
 |:--------------|:-------------------------|
-| Authorization | Bearer {code}。必需。 |
-| Prefer        | 返回 = 表示形式    |
+| Authorization | 持有者 {代码}。 必需。 |
+| Prefer        | return = 表示形式    |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供应更新的相关字段的值的 JSON 表示形式。 **必须**正文包含`vendorInformation`属性与有效`provider`和`vendor`字段。 下表列出了可更新的通知的字段。 不包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
+在请求正文中, 提供应更新的相关字段的值的 JSON 表示形式。 正文**必须**包含具有有效`vendorInformation` `provider`和`vendor`字段的属性。 下表列出了可以为警报更新的字段。 未包含在请求正文中的现有属性的值不会更改。 为了获得最佳性能，请勿加入尚未更改的现有值。
 
 | 属性          | 类型                                                                   | 说明 |
 |:------------------|:-----------------------------------------------------------------------|:--|
-| assignedTo        | String                                                                 | 分析师通知的名称分配给进行会审、 调查或修复。 |
-| closedDateTime    | DateTimeOffset                                                         | 通知关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 |
-| comments          | String 集合                                                      | 分析师评论的警报 （客户警报管理）。 |
-| 反馈          | alertFeedback                                                          | 分析师通知上的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 |
-| status            | alertStatus                                                            | 警报生命周期状态 （阶段）。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 |
-| tags              | String 集合                                                      | 可以应用于通知和可以充当筛选条件 (例如，"HVA"，"看到) 的用户可定义标签。 |
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、 提供商和 subprovider 的详细信息的复杂类型 (例如，供应商 = Microsoft; 提供程序 = Windows Defender ATP; subProvider = AppLocker)。 **提供程序和供应商字段是必需的。** |
+| assignedTo        | String                                                                 | 为会审、调查或修正分配了警报的分析师的名称。 |
+| closedDateTime    | DateTimeOffset                                                         | 警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。 |
+| comments          | String collection                                                      | 通知的分析师注释 (针对客户通知管理)。 |
+| 征求          | alertFeedback                                                          | 通知的分析师反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。 |
+| 状态            | alertStatus                                                            | 警报生命周期状态 (阶段)。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。 |
+| tags              | String 集合                                                      | 可应用于警报并可用作筛选条件的用户定义的标签 (例如, "HVA"、"锯")。 |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型 (例如, 供应商 = Microsoft; provider = Windows Defender ATP; subprovider = AppLocker)。 **提供程序和供应商字段是必需的。** |
 
 ## <a name="response"></a>响应
 
 如果成功，此方法返回 `204 No Content` 响应代码。
 
-如果使用可选请求标头，则该方法返回`200 OK`响应代码和响应正文中的更新的[通知](../resources/alert.md)对象。
+如果使用可选的请求标头, 则该方法将`200 OK`在响应正文中返回响应代码和更新的[alert](../resources/alert.md)对象。
 
 ## <a name="examples"></a>示例
 
-### <a name="example-1-request-without-prefer-header"></a>示例 1： 请求，但没有更愿意头
+### <a name="example-1-request-without-prefer-header"></a>示例 1: 不带首选标头的请求
 
 #### <a name="request"></a>请求
 
@@ -112,11 +112,11 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a>示例 2： 使用更愿意标头的请求
+### <a name="example-2-request-with-prefer-header"></a>示例 2: 具有首选标头的请求
 
 #### <a name="request"></a>请求
 
-下面的示例演示包含的请求，`Prefer`请求标头。
+下面的示例演示包含`Prefer`请求标头的请求。
 
 <!-- {
   "blockType": "request",
@@ -148,7 +148,7 @@ Prefer: return=representation
 
 #### <a name="response"></a>响应
 
-下面是响应的示例时可选`Prefer: return=representation`使用请求标头。
+以下是使用可选`Prefer: return=representation`请求标头时响应的示例。
 
 > **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 

@@ -6,11 +6,11 @@ title: 搜索文件
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 8211d9565640dd1cc3376a2803135352dfa88e3b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481018"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550460"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
 

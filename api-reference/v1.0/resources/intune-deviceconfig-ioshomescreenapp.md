@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 67c11096414db0dccad2ccf56ec184a4e3f30397
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260933"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554735"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>iosHomeScreenApp 资源类型
 

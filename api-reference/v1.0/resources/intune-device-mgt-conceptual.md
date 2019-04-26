@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 4c8f6676647405e8186e9d27466266f6690e2cd1
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250066"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575231"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -39,7 +39,7 @@ ms.locfileid: "30250066"
 - [注册疑难解答事件](intune-troubleshooting-enrollmenttroubleshootingevent.md)
 - [已本地化的通知邮件](intune-notification-localizednotificationmessage.md)
 - [查找设备操作结果](intune-devices-locatedeviceactionresult.md)
-- [受管理设备](intune-devices-manageddevice.md)
+- [托管设备](intune-devices-manageddevice.md)
 - [托管设备概述](intune-devices-manageddeviceoverview.md)
 - [托管的设备所有者类型](intune-devices-manageddeviceownertype.md)
 - [托管的设备合作伙伴报告的运行状况](intune-devices-manageddevicepartnerreportedhealthstate.md)

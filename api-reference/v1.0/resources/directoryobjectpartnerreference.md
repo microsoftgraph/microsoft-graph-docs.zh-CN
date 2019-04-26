@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0b84b7447d689759444e9cfd99982857eafa71eb
-ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30224125"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574685"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>directoryObjectPartnerReference 资源类型
 
@@ -19,11 +19,11 @@ ms.locfileid: "30224125"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|说明|字符串| 返回的对象的说明。 只读。 |
+|说明|String| 返回的对象的说明。 只读。 |
 |displayName|字符串| 返回的目录对象的名称, 如 group 或 application。 只读。 |
-|externalPartnerTenantId|Guid| 合作伙伴租户的租户标识符。 此为只读属性。 |
-|id|String| 资源的唯一标识符。 继承自 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)。 只读。 |
-|objectType|字符串| 合作伙伴租户中被引用对象的类型。 只读。 |
+|externalPartnerTenantId|Guid| 合作伙伴租户的租户标识符。 只读。 |
+|id|字符串| 资源的唯一标识符。 继承自 [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0)。 只读。 |
+|objectType|String| 合作伙伴租户中被引用对象的类型。 只读。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

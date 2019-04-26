@@ -4,11 +4,11 @@ description: 删除现有用户活动的现有历史记录项。
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 4814987367b7b9a278c645dbdca8fb5e795ce784
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923934"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576267"
 ---
 # <a name="delete-a-historyitem"></a>删除 historyItem
 
@@ -41,11 +41,11 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 ## <a name="request-body"></a>请求正文
 
-没有请求正文中。
+无请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`204 No Content`如果历史记录项已删除的响应代码。
+如果成功, 此方法在历史`204 No Content`记录项被删除时返回响应代码。
 
 ## <a name="example"></a>示例
 

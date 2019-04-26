@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 68393d569cf76b01ff7582c864bee4a35a68c739
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261892"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574507"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions 枚举类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "30261892"
 |:---|:---|:---|
 |无|0|无品牌打造。|
 |includeCompanyLogo|1|包括公司徽标。|
-|includeCompanyName|双面|包括公司名称。|
-|includeContactInformation|4|包含联系人信息。|
+|includeCompanyName|2 |包括公司名称。|
+|includeContactInformation|4 |包含联系人信息。|
 
 
 

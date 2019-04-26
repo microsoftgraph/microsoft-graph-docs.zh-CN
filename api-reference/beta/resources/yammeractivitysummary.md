@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: c220ce211c9c6b61d41aa5773e3bcc01697f4e31
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574164"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555113"
 ---
 # <a name="yammeractivitysummary-resource-type"></a>yammerActivitySummary 资源类型
 
@@ -18,9 +18,9 @@ ms.locfileid: "29574164"
 | 属性          | 类型   |
 | :---------------- | :----- |
 | reportRefreshDate | Date   |
-| 满意             | Int64  |
+| 人             | Int64  |
 | 发布            | Int64  |
-| 读取              | Int64  |
+| 自述              | Int64  |
 | reportDate        | Date   |
 | reportPeriod      | String |
 

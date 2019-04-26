@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a9e411c2672650e3e603bfa0e64fde1c4db53607
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802763"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575770"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>groupPolicyDefinition 资源类型
 

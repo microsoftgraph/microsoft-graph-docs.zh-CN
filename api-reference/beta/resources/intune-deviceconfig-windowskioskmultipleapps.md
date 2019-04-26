@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8cae99ce452cdb9b002ebe4fe24968ec368c9fc0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783435"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574514"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>windowsKioskMultipleApps 资源类型
 
@@ -26,9 +26,9 @@ ms.locfileid: "31783435"
 |属性|类型|说明|
 |:---|:---|:---|
 |apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)集合|这些是仅可从 "开始" 菜单启动的 Windows 应用商店应用程序。 此集合最多可包含128个元素。|
-|showTaskBar|布尔值|通过此设置, 管理员可以指定是否显示任务条形图。|
-|allowAccessToDownloadsFolder|布尔值|此设置允许访问文件资源管理器中的下载文件夹。|
-|disallowDesktopApps|布尔值|此设置指示允许桌面应用。 默认值为 true。|
+|showTaskBar|Boolean|通过此设置, 管理员可以指定是否显示任务条形图。|
+|allowAccessToDownloadsFolder|Boolean|此设置允许访问文件资源管理器中的下载文件夹。|
+|disallowDesktopApps|Boolean|此设置指示允许桌面应用。 默认值为 true。|
 |startMenuLayoutXml|Binary|允许管理员覆盖默认的 "开始" 布局, 并阻止用户对其进行更改。通过基于布局修改架构指定 XML 文件来修改布局。 XML 必须采用二进制格式。|
 
 ## <a name="relationships"></a>关系

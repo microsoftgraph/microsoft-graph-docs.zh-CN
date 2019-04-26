@@ -1,15 +1,15 @@
 ---
 title: 检查成员组
-description: 检查这些组的组和从该列表中的返回指定列表中的成员资格
+description: 检查指定组列表中的成员身份, 并从该列表返回这些组
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 99ebf38b8f230233b50fa642f7503302afd02b33
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941784"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555127"
 ---
 # <a name="check-member-groups"></a>检查成员组
 
@@ -43,7 +43,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|groupIds|String 集合|包含检查成员身份的组中的对象 ID 的集合。可以指定多达 20 个组。|
+|groupIds|String collection|包含检查成员身份的组中的对象 ID 的集合。可以指定多达 20 个组。|
 
 ## <a name="response"></a>响应
 

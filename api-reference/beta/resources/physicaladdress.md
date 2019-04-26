@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: eb7bf1ee21a40517704f20176f5fbcf9ea2b276a
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056985"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573779"
 ---
 # <a name="physicaladdress-resource-type"></a>physicalAddress 资源类型
 
@@ -21,11 +21,11 @@ ms.locfileid: "30056985"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|city|字符串|城市。|
+|city|String|城市。|
 |countryOrRegion|字符串|国家或地区。它是任意格式的字符串值，例如“United States”。|
-|postalCode|字符串|邮政编码。|
-|postOfficeBox|字符串|邮局编号。|
-|状态|字符串|省/市/自治区。|
+|postalCode|String|邮政编码。|
+|postOfficeBox|String|邮局编号。|
+|state|String|省/市/自治区。|
 |street|String|街道。|
 |type|: physicaladdresstype|地址类型。 可取值为：`unknown`、`home`、`business`、`other`。|
 

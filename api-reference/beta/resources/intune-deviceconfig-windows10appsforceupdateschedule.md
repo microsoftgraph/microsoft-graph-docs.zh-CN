@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3c8c76c08c434ab9c5e3506339e53cda41156e09
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792354"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572260"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>windows10AppsForceUpdateSchedule 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "31792354"
 |属性|类型|说明|
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|强制重启的开始时间。|
-|定期|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|定期计划。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
-|runImmediatelyIfAfterStartDateTime|布尔值|如果为 true, 则在 StartDateTime 为过去时立即运行任务, 否则在下一个定期运行。|
+|recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|定期计划。 可取值为：`none`、`daily`、`weekly`、`monthly`。|
+|runImmediatelyIfAfterStartDateTime|Boolean|如果为 true, 则在 StartDateTime 为过去时立即运行任务, 否则在下一个定期运行。|
 
 ## <a name="relationships"></a>关系
 无

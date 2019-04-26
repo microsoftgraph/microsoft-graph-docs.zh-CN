@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 268b5ab7030eae72cb9af4630b30bb8a2db8cdfc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987522"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551405"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>更新 windowsPhone81GeneralConfiguration
 
@@ -48,24 +48,24 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|applyOnlyToWindowsPhone81|Boolean|指示此策略是否仅适用于 Windows Phone 8.1 的值。 此属性是只读的。|
-|appsBlockCopyPaste|Boolean|指示是否阻止复制粘贴。|
-|bluetoothBlocked|Boolean|指示是否阻止蓝牙。|
-|cameraBlocked|Boolean|指示是否阻止照相机。|
-|cellularBlockWifiTethering|Boolean|指示是否阻止 Wi-Fi 网络共享。 如果 Wi-Fi 被阻止，没有任何影响。|
+|applyOnlyToWindowsPhone81|布尔值|指示此策略是否仅适用于 Windows Phone 8.1 的值。 此属性是只读的。|
+|appsBlockCopyPaste|布尔值|指示是否阻止复制粘贴。|
+|bluetoothBlocked|布尔值|指示是否阻止蓝牙。|
+|cameraBlocked|布尔值|指示是否阻止照相机。|
+|cellularBlockWifiTethering|布尔值|指示是否阻止 Wi-Fi 网络共享。 如果 Wi-Fi 被阻止，没有任何影响。|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|位于 AppComplianceList 中的列表。 可取值为：`none`、`appsInListCompliant`、`appsNotInListCompliant`。|
-|diagnosticDataBlockSubmission|Boolean|指示是否阻止诊断数据提交。|
+|diagnosticDataBlockSubmission|布尔值|指示是否阻止诊断数据提交。|
 |emailBlockAddingAccounts|Boolean|指示是否阻止自定义电子邮件帐户。|
-|locationServicesBlocked|Boolean|指示是否阻止位置服务。|
-|microsoftAccountBlocked|Boolean|指示是否阻止使用 Microsoft 帐户。|
-|nfcBlocked|Boolean|指示是否阻止近场通信。|
+|locationServicesBlocked|布尔值|指示是否阻止位置服务。|
+|microsoftAccountBlocked|布尔值|指示是否阻止使用 Microsoft 帐户。|
+|nfcBlocked|布尔值|指示是否阻止近场通信。|
 |passwordBlockSimple|Boolean|指示是否阻止同步日历。|
 |passwordExpirationDays|Int32|密码过期前的天数。|
 |passwordMinimumLength|Int32|密码的最小长度。|
@@ -74,13 +74,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
-|passwordRequired|Boolean|指示是否需要密码。|
-|screenCaptureBlocked|Boolean|指示是否阻止屏幕截图。|
-|storageBlockRemovableStorage|Boolean|指示是否阻止可移动存储。|
-|storageRequireEncryption|Boolean|指示是否需要加密。|
-|webBrowserBlocked|Boolean|指示是否阻止 Web 浏览器。|
-|wifiBlocked|Boolean|指示是否阻止 Wi-Fi。|
-|wifiBlockAutomaticConnectHotspots|Boolean|指示是否阻止自动连接到 Wi-Fi 热点。 如果 Wi-Fi 被阻止，没有任何影响。|
+|passwordRequired|布尔值|指示是否需要密码。|
+|screenCaptureBlocked|布尔值|指示是否阻止屏幕截图。|
+|storageBlockRemovableStorage|布尔值|指示是否阻止可移动存储。|
+|storageRequireEncryption|布尔值|指示是否需要加密。|
+|webBrowserBlocked|布尔值|指示是否阻止 Web 浏览器。|
+|wifiBlocked|布尔值|指示是否阻止 Wi-Fi。|
+|wifiBlockAutomaticConnectHotspots|布尔值|指示是否阻止自动连接到 Wi-Fi 热点。 如果 Wi-Fi 被阻止，没有任何影响。|
 |wifiBlockHotspotReporting|Boolean|指示是否阻止 Wi-Fi 热点报告。 如果 Wi-Fi 被阻止，没有任何影响。|
 |windowsStoreBlocked|Boolean|指示是否阻止 Windows 应用商店。|
 

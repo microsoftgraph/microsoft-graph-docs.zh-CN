@@ -1,15 +1,15 @@
 ---
 title: 获取帖子
-description: '获取指定的线程中帖子的属性和关系。 您可以指定父 '
+description: '获取指定的线程中帖子的属性和关系。 您可以同时指定父 '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 8e724a664e708503daf5b30afdec04cccbb2fee4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912937"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576302"
 ---
 # <a name="get-post"></a>获取帖子
 

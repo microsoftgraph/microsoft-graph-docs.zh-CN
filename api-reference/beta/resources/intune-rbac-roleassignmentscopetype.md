@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2d9659c4eaa1f4080ef5dd07a5e69f76a7a14d50
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775686"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573051"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>roleAssignmentScopeType 枚举类型
 
@@ -24,8 +24,8 @@ ms.locfileid: "31775686"
 |:---|:---|:---|
 |resourceScope|0|允许分配给指定的 ResourceScopes。|
 |allDevices|1|允许向所有 Intune 设备分配作业。|
-|allLicensedUsers|双面|允许向所有 Intune 许可用户分配作业。|
-|allDevicesAndLicensedUsers|第三章|允许分配给所有 Intune 设备和许可的用户。|
+|allLicensedUsers|2 |允许向所有 Intune 许可用户分配作业。|
+|allDevicesAndLicensedUsers|3 |允许分配给所有 Intune 设备和许可的用户。|
 
 
 

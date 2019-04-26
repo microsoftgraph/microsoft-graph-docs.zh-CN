@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 81e9465dd008355683ed68717f86323463ff36fa
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803813"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552147"
 ---
 # <a name="iosstoreapp-resource-type"></a>iosStoreApp 资源类型
 
@@ -25,16 +25,16 @@ ms.locfileid: "31803813"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 iosStoreApps](../api/intune-apps-iosstoreapp-list.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md) 集合|列出 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象的属性和关系。|
-|[获取 iosStoreApp](../api/intune-apps-iosstoreapp-get.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|读取 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象的属性和关系。|
-|[创建 iosStoreApp](../api/intune-apps-iosstoreapp-create.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|创建新的 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象。|
-|[删除 iosStoreApp](../api/intune-apps-iosstoreapp-delete.md)|无|删除 [iosStoreApp](../resources/intune-apps-iosstoreapp.md)。|
-|[更新 iosStoreApp](../api/intune-apps-iosstoreapp-update.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|更新 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象的属性。|
+|[List iosStoreApps](../api/intune-apps-iosstoreapp-list.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md) 集合|列出 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象的属性和关系。|
+|[Get iosStoreApp](../api/intune-apps-iosstoreapp-get.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|读取 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象的属性和关系。|
+|[Create iosStoreApp](../api/intune-apps-iosstoreapp-create.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|创建新的 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象。|
+|[Delete iosStoreApp](../api/intune-apps-iosstoreapp-delete.md)|无|删除 [iosStoreApp](../resources/intune-apps-iosstoreapp.md)。|
+|[Update iosStoreApp](../api/intune-apps-iosstoreapp-update.md)|[iosStoreApp](../resources/intune-apps-iosstoreapp.md)|更新 [iosStoreApp](../resources/intune-apps-iosstoreapp.md) 对象的属性。|
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |description|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -50,7 +50,7 @@ ms.locfileid: "31803813"
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |bundleId|String|标识名称。|
 |appStoreUrl|String|Apple App Store URL|

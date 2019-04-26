@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6fe154ed3150ae434f8068bc04a56dd6e5b48744
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806480"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573058"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>certificateConnectorSetting 资源类型
 

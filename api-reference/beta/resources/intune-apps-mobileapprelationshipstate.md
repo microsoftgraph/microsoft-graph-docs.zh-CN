@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e7f3dcbbc2544a4231cd5da102985d7142feb03a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809182"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551797"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>mobileAppRelationshipState 资源类型
 
@@ -22,7 +22,7 @@ ms.locfileid: "31809182"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|sourceIds|String 集合|源移动应用程序 id 的集合。|
+|sourceIds|String collection|源移动应用程序 id 的集合。|
 |targetId|String|相关目标应用程序的 id。|
 |targetDisplayName|String|相关目标应用程序的显示名称。|
 |deviceId|String|相应的设备 id。|

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 9f569349126b9651f7b0050f84df9db89dc2e47f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971688"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572897"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 从当前用户收藏夹组列表中删除组。仅支持 Office 365 组。
@@ -52,7 +52,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/removeFavorite
 ```
 
 #### <a name="response"></a>响应
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response"
 } -->

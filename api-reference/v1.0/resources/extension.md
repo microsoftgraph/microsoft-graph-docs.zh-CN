@@ -3,11 +3,11 @@ title: 扩展资源类型
 description: 用以支持 OData v4 开放类型 openTypeExtension 的抽象类型。
 localization_priority: Normal
 ms.openlocfilehash: 2633c8a28c1be1a670a80834ce869b5156fc1de9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834669"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575980"
 ---
 # <a name="extension-resource-type"></a>扩展资源类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "27834669"
 |:---------------|:--------|:----------|
 |id|String| 只读。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 

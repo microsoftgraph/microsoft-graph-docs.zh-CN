@@ -5,21 +5,21 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 499949c5995025e9327e1f662365b0c5e43c80f4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934203"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574003"
 ---
 # <a name="mailtipserror-resource-type"></a>mailTipsError 资源类型
 
 操作过程中发生的错误。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:-----|:-----|:-----|
-| message | 字符串 | 错误消息。 |
-| code | 字符串 | 错误代码。 |
+| message | String | 错误消息。 |
+| code | String | 错误代码。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

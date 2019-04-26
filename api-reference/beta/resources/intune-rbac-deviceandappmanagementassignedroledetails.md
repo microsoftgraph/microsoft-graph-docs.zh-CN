@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 93f99cdc91d046b9ebf292bbd34f1bba39b494ac
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771402"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573072"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>deviceAndAppManagementAssignedRoleDetails 资源类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "31771402"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|roleDefinitionIds|String 集合|分配给用户的表列角色定义的角色定义 id。|
-|roleAssignmentIds|String 集合|分配给用户的表列角色分配的角色分配 id。|
+|roleDefinitionIds|String collection|分配给用户的表列角色定义的角色定义 id。|
+|roleAssignmentIds|String collection|分配给用户的表列角色分配的角色分配 id。|
 
 ## <a name="relationships"></a>关系
 无

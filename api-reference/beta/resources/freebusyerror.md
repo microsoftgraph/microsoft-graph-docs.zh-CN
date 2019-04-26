@@ -3,20 +3,18 @@ title: freeBusyError 资源类型
 description: 表示尝试获取用户、通讯组列表或资源可用性的错误信息。
 localization_priority: Normal
 ms.openlocfilehash: e2c755b51e72adf3ff4efa4de5c9438e70d701e1
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869335"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547494"
 ---
 # <a name="freebusyerror-resource-type"></a>freeBusyError 资源类型
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
 表示尝试获取用户、通讯组列表或资源可用性的错误信息。
 
 ## <a name="properties"></a>属性
-| 属性     | 类型   |说明|
+| 属性     | 类型   |描述|
 |:---------------|:--------|:----------|
 |message |String |描述错误。 |
 |responseCode |String |对用户、通讯组列表或资源的可用性进行查询的响应代码。 |
@@ -50,9 +48,6 @@ ms.locfileid: "30869335"
   "description": "freeBusyError resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/freebusyerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: c896bd204f490bb906762a0225195bd2484c8dd4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924053"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576379"
 ---
 # <a name="get-plannertask"></a>获取 plannerTask
 

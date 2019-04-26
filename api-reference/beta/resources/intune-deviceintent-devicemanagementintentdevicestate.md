@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1db6b0d5d7376b5c71b3be5753a777477c3b3850
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785760"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575791"
 ---
 # <a name="devicemanagementintentdevicestate-resource-type"></a>deviceManagementIntentDeviceState 资源类型
 
@@ -31,12 +31,12 @@ ms.locfileid: "31785760"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|ID|
+|id|字符串|ID|
 |userPrincipalName|String|在设备上报告的用户主体名称|
 |userName|String|在设备上报告的用户名|
 |deviceDisplayName|String|报告的设备名称|
 |lastReportedDateTime|DateTimeOffset|意向报表的上次修改日期时间|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|意图的设备状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
+|状态|[complianceStatus](../resources/intune-shared-compliancestatus.md)|意图的设备状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |deviceId|String|报告的设备 id|
 
 ## <a name="relationships"></a>关系

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: abc2a8c0f905d69b613ef12bca308d1d0f72d69c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794832"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552301"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 
@@ -22,9 +22,9 @@ ms.locfileid: "31794832"
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列出 mobileApps](../api/intune-apps-mobileapp-list.md)|[mobileApp](../resources/intune-apps-mobileapp.md) 集合|列出 [mobileApp](../resources/intune-apps-mobileapp.md) 对象的属性和关系。|
-|[获取 mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|读取 [mobileApp](../resources/intune-apps-mobileapp.md) 对象的属性和关系。|
-|[分配操作](../api/intune-apps-mobileapp-assign.md)|无|尚未记录|
+|[List mobileApps](../api/intune-apps-mobileapp-list.md)|[mobileApp](../resources/intune-apps-mobileapp.md) 集合|列出 [mobileApp](../resources/intune-apps-mobileapp.md) 对象的属性和关系。|
+|[Get mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|读取 [mobileApp](../resources/intune-apps-mobileapp.md) 对象的属性和关系。|
+|[assign 操作](../api/intune-apps-mobileapp-assign.md)|无|尚未记录|
 |[了 getmobileappcount 函数](../api/intune-apps-mobileapp-getmobileappcount.md)|Int64|尚未记录|
 |[getTopMobileApps 函数](../api/intune-apps-mobileapp-gettopmobileapps.md)|[mobileApp](../resources/intune-apps-mobileapp.md) 集合|尚未记录|
 |[updateRelationships 操作](../api/intune-apps-mobileapp-updaterelationships.md)|无|尚未记录|
@@ -33,7 +33,7 @@ ms.locfileid: "31794832"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |displayName|String|管理员提供或导入的应用标题。|
 |description|String|应用的说明。|
 |publisher|String|应用的发布者。|
@@ -49,7 +49,7 @@ ms.locfileid: "31794832"
 |uploadState|Int32|上载状态。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。|
-|roleScopeTagIds|String 集合|此移动应用的作用域标记 id 列表。|
+|roleScopeTagIds|String collection|此移动应用的作用域标记 id 列表。|
 |dependentAppCount|Int32|子应用程序的依赖项总数。|
 
 ## <a name="relationships"></a>关系

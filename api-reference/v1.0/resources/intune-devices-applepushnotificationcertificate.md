@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 41d5161f1e9344f187329bf795219151c91f29ae
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555883"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate 资源类型
 
@@ -27,12 +27,12 @@ Apple 推送通知证书。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|证书的唯一标识符|
+|id|String|证书的唯一标识符|
 |appleIdentifier|String|用于创建 MDM 推送证书的帐户 Apple ID。|
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
-|certificate|String|尚未记录|
+|证书|String|尚未记录|
 
 ## <a name="relationships"></a>关系
 无

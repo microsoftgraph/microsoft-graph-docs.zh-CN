@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e1571508451dee371e5c000b8cc8d8234c1b661a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980437"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554518"
 ---
 # <a name="update-deviceinstallstate"></a>更新 deviceInstallState
 

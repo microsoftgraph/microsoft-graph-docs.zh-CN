@@ -5,17 +5,17 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: da51badb52b5047c6d5eb1d52004104d0395fcf2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923780"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551489"
 ---
 # <a name="update-domain"></a>更新域
 
 更新域对象的属性。
 
-> **重要说明：** 只有已验证的域可以进行更新。
+> **重要说明:** 仅已验证的域可以进行更新。
 
 ## <a name="permissions"></a>权限
 
@@ -45,11 +45,11 @@ PATCH /domains/{id}
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供要更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，仅包含已更改的值。
+在请求正文中, 提供要更新的相关字段的值。 未包含在请求正文中的现有属性将保留其以前的值, 或根据对其他属性值的更改重新计算这些属性。 为了获得最佳性能, 仅包含更改的值。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `204 No Content` 响应代码，不返回任何响应正文。
+如果成功, 此方法将`204 No Content`返回响应代码, 不返回任何响应正文。
 
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求

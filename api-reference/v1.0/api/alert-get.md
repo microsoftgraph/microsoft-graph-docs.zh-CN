@@ -1,19 +1,19 @@
 ---
 title: 获取警报
-description: " 检索的属性和警报对象的关系。"
+description: " 检索 alert 对象的属性和关系。"
 author: preetikr
 localization_priority: Normal
 ms.prod: security
 ms.openlocfilehash: 36629363a3f55a654554dcbbde8bfdc113de1f37
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937894"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551440"
 ---
 # <a name="get-alert"></a>获取警报
 
- 检索的属性和[通知](../resources/alert.md)对象的关系。
+ 检索[alert](../resources/alert.md)对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 
@@ -21,9 +21,9 @@ ms.locfileid: "27937894"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  SecurityEvents.Read.All SecurityEvents.ReadWrite.All   |
+|委派（工作或学校帐户） |  securityevents.readwrite.all、securityevents.readwrite.all 和所有   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | SecurityEvents.Read.All SecurityEvents.ReadWrite.All |
+|应用程序 | securityevents.readwrite.all、securityevents.readwrite.all 和所有 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,7 +37,7 @@ GET /security/alerts/{alert_id}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。必需。|
+| Authorization  | 持有者 {代码}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -45,7 +45,7 @@ GET /security/alerts/{alert_id}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的**通知**对象。 如果从提供程序返回状态代码之外的 2xx 或 404 或提供程序超时，如果响应将`206 Partial Content`与警告标头中的提供程序的响应状态代码。 有关详细信息，请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和**alert**对象。 如果从提供程序返回的状态代码或者提供程序超时, 则响应将是一个`206 Partial Content`状态代码, 提供程序的响应在警告标头中。 有关详细信息, 请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 

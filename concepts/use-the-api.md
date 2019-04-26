@@ -4,11 +4,11 @@ description: Microsoft Graph 一种是可让你访问 Microsoft 云服务资源�
 author: jackson-woods
 localization_priority: Priority
 ms.openlocfilehash: 0d4c49e2b2961b99afac2445976c3d56234262bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832830"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575889"
 ---
 # <a name="use-the-microsoft-graph-api"></a>使用 Microsoft Graph API
 

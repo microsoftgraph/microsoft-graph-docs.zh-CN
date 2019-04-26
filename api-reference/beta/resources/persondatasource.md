@@ -1,21 +1,21 @@
 ---
 title: personDataSource 资源类型
-description: 代表用户数据来自，例如目录和 Outlook 联系人的源。
+description: 表示用户数据来自的源, 例如目录和 Outlook 联系人。
 localization_priority: Normal
 author: simonhult
 ms.prod: insights
 ms.openlocfilehash: 431cd9163873305508d5244005e6fe0a80501771
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509089"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573745"
 ---
 # <a name="persondatasource-resource-type"></a>personDataSource 资源类型
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表用户数据来自，例如目录和 Outlook 联系人的源。
+表示用户数据来自的源, 例如目录和 Outlook 联系人。
 
 ## <a name="json-representation"></a>JSON 表示形式
 

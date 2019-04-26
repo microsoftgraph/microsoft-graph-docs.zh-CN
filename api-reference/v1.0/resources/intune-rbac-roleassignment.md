@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 32527fad8db54f865f054f04400897e51638e5c2
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258427"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554035"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment 资源类型
 
@@ -29,7 +29,7 @@ ms.locfileid: "30258427"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 此为只读，且自动生成。|
+|id|字符串|实体的键。 此为只读，且自动生成。|
 |displayName|String|角色分配的显示或友好名称。|
 |description|String|角色分配的说明。|
 |resourceScopes|String collection|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。|

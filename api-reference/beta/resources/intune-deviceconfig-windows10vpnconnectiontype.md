@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5ac61b494fc261832a864c4c87998532a863f87b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774139"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572029"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>windows10VpnConnectionType 枚举类型
 
@@ -24,14 +24,14 @@ VPN 连接类型。
 |:---|:---|:---|
 |pulseSecure|0|脉冲安全。|
 |f5EdgeClient|1|F5 边缘客户端。|
-|dellSonicWallMobileConnect|双面|戴尔 SonicWALL 移动连接。|
-|checkPointCapsuleVpn|第三章|检查点胶囊 VPN。|
-|自动|4|自动。|
-|ikEv2|5|IKEv2.|
-|l2tp|型|L2TP.|
-|pptp|步|PPTP.|
-|citrix|utf-8|Citrix.|
-|paloAltoGlobalProtect|第|Palo Alto 网络 GlobalProtect。|
+|dellSonicWallMobileConnect|2 |戴尔 SonicWALL 移动连接。|
+|checkPointCapsuleVpn|3 |检查点胶囊 VPN。|
+|自动|4 |自动。|
+|ikEv2|5 |IKEv2.|
+|l2tp|6 |L2TP.|
+|pptp|7 |PPTP.|
+|citrix|8 |Citrix.|
+|paloAltoGlobalProtect|9 |Palo Alto 网络 GlobalProtect。|
 
 
 

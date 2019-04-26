@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 30b15cf1c03bf44045189938152b83cfb929526b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801601"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571980"
 ---
 # <a name="windows10vpnauthenticationmethod-enum-type"></a>windows10VpnAuthenticationMethod 枚举类型
 
@@ -24,7 +24,7 @@ Windows 10 VPN 连接类型。
 |:---|:---|:---|
 |证书|0|使用证书进行身份验证。|
 |usernameAndPassword|1|使用用户名和密码进行身份验证。|
-|customEapXml|双面|在自定义 EAP XML 中指定身份验证方法。|
+|customEapXml|2 |在自定义 EAP XML 中指定身份验证方法。|
 
 
 

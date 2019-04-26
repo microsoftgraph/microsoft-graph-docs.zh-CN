@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Deleted
 localization_priority: Normal
 ms.openlocfilehash: d52ca0a9815e46ebc11a653be381ac65f3cd209e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482180"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574622"
 ---
 # <a name="deleted-facet"></a>Deleted Facet
 

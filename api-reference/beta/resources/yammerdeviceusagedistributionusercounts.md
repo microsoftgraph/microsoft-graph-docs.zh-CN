@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 1797facecb5047badb35c0a4d876680e817cc643
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576799"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555078"
 ---
 # <a name="yammerdeviceusagedistributionusercounts-resource-type"></a>yammerDeviceUsageDistributionUserCounts 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "29576799"
 | androidPhone      | Int32  |
 | iPhone            | Int32  |
 | iPad              | Int32  |
-| 其他             | Int32  |
+| 相互             | Int32  |
 | reportPeriod      | String |
 
 ## <a name="json-representation"></a>JSON 表示形式

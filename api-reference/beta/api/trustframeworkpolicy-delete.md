@@ -5,11 +5,11 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2583cbf5fd8feee12b18482c515490d2de8ce8be
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31989399"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548052"
 ---
 # <a name="delete-trustframeworkpolicy"></a>删除 trustFrameworkPolicy
 
@@ -23,7 +23,7 @@ ms.locfileid: "31989399"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|TrustFramework|
+|委派（工作或学校帐户）|Policy.ReadWrite.TrustFramework|
 |委派（个人 Microsoft 帐户）| 不支持。|
 |应用程序|不支持。|
 

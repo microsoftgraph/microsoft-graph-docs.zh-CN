@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 360b8e9bdda139246a5418898f1db3962fefaea4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806564"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552408"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
@@ -45,7 +45,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Android 托管的应用商店应用配置架构](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Android 托管的应用商店应用配置架构项](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Android 托管的应用商店应用配置架构项数据类型](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
-- [Android 最低操作系统](intune-apps-androidminimumoperatingsystem.md)
+- [Android 最低操作系统版本](intune-apps-androidminimumoperatingsystem.md)
 - [Android 权限操作](intune-apps-androidpermissionaction.md)
 - [Android 权限操作类型](intune-apps-androidpermissionactiontype.md)
 - [Android 应用商店应用](intune-apps-androidstoreapp.md)
@@ -62,7 +62,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [iOS LOB 应用分配设置](intune-apps-ioslobappassignmentsettings.md)
 - [iOS LOB 应用预配配置](intune-apps-ioslobappprovisioningconfiguration.md)
 - [iOS LOB 应用预配配置分配](intune-apps-ioslobappprovisioningconfigurationassignment.md)
-- [iOS 设备上的最低操作系统版本](intune-apps-iosminimumoperatingsystem.md)
+- [iOS 最低操作系统版本](intune-apps-iosminimumoperatingsystem.md)
 - [iOS 移动应用配置](intune-apps-iosmobileappconfiguration.md)
 - [iOS 应用商店应用](intune-apps-iosstoreapp.md)
 - [iOS 应用商店应用分配设置](intune-apps-iosstoreappassignmentsettings.md)
@@ -91,16 +91,16 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [托管设备移动应用配置设备状态](intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
 - [托管设备移动应用配置设备摘要](intune-apps-manageddevicemobileappconfigurationdevicesummary.md)
 - [托管设备移动应用配置用户状态](intune-apps-manageddevicemobileappconfigurationuserstatus.md)
-- [受管理设备移动应用配置用户摘要](intune-apps-manageddevicemobileappconfigurationusersummary.md)
+- [托管设备移动应用配置用户摘要](intune-apps-manageddevicemobileappconfigurationusersummary.md)
 - [托管的电子书](intune-books-managedebook.md)
 - [托管的电子书分配](intune-books-managedebookassignment.md)
 - [托管的电子书类别](intune-books-managedebookcategory.md)
-- [受管理的 iOS LOB 应用](intune-apps-managedioslobapp.md)
+- [托管的 iOS LOB 应用](intune-apps-managedioslobapp.md)
 - [托管的 iOS 应用商店应用](intune-apps-managediosstoreapp.md)
-- [受管理的移动 LOB 应用](intune-apps-managedmobilelobapp.md)
+- [托管的移动 LOB 应用](intune-apps-managedmobilelobapp.md)
 - [MDM 应用配置密钥类型](intune-apps-mdmappconfigkeytype.md)
-- [适用于企业的 Microsoft Store 应用](intune-apps-microsoftstoreforbusinessapp.md)
-- [适用于企业的 Microsoft Store 应用分配设置](intune-apps-microsoftstoreforbusinessappassignmentsettings.md)
+- [适用于企业的 Microsoft 应用商店应用](intune-apps-microsoftstoreforbusinessapp.md)
+- [适用于企业的 Microsoft 应用商店分配设置](intune-apps-microsoftstoreforbusinessappassignmentsettings.md)
 - [适用于企业的 Microsoft Store 包含的应用](intune-apps-microsoftstoreforbusinesscontainedapp.md)
 - [适用于企业的 Microsoft Store 许可证类型](intune-apps-microsoftstoreforbusinesslicensetype.md)
 - [移动应用](intune-apps-mobileapp.md)
@@ -162,7 +162,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows AppX 应用分配设置](intune-apps-windowsappxappassignmentsettings.md)
 - [Windows 体系结构](intune-apps-windowsarchitecture.md)
 - [Windows 设备类型](intune-apps-windowsdevicetype.md)
-- [Windows 最低操作系统版本](intune-apps-windowsminimumoperatingsystem.md)
+- [Windows 最低操作系统](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Windows office 客户端配置](intune-cirrus-windowsofficeclientconfiguration.md)
 - [Windows office 客户端安全配置](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
@@ -172,6 +172,6 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [Windows Phone 8.1 应用商店应用](intune-apps-windowsphone81storeapp.md)
 - [Windows Phone XAP](intune-apps-windowsphonexap.md)
 - [Windows 应用商店应用](intune-apps-windowsstoreapp.md)
-- [Windows Universal APPX](intune-apps-windowsuniversalappx.md)
+- [Windows 通用 AppX](intune-apps-windowsuniversalappx.md)
 - [Windows Universal AppX 应用分配设置](intune-apps-windowsuniversalappxappassignmentsettings.md)
 - [Windows Universal APPX 包含的应用](intune-apps-windowsuniversalappxcontainedapp.md)

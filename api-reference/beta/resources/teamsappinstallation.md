@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f6ff72ab99d20eba9880630248e4b61fca5c2521
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057013"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554056"
 ---
 # <a name="teamsappinstallation-resource-type"></a>teamsAppInstallation 资源类型
 
@@ -30,7 +30,7 @@ ms.locfileid: "30057013"
 
 | 属性            | 类型     | 说明 |
 |:------------------- |:-------- |:----------- |
-| id                  | 字符串   | 唯一 id (而不是团队 appid)。 |
+| id                  | string   | 唯一 id (而不是团队 appid)。 |
 
 ## <a name="relationships"></a>关系
 

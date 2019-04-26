@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 7cdf5ebf735d0bbf4759a7f56c0c2948f2a6d381
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918096"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553237"
 ---
 # <a name="list-columns"></a>列出列
 
@@ -30,9 +30,9 @@ GET /workbook/tables/{id|name}/columns
 GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 自定义响应。  为了获得可靠结果，请使用 [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) 查询参数逐个浏览结果。 这有助于避免较大的结果集带来的性能问题。
+此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。  为了获得可靠结果，请使用 [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) 和 [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) 查询参数逐个浏览结果。 这有助于避免较大的结果集带来的性能问题。
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
@@ -43,7 +43,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[WorkbookTableColumn](../resources/tablecolumn.md)对象的集合。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和[WorkbookTableColumn](../resources/tablecolumn.md)对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

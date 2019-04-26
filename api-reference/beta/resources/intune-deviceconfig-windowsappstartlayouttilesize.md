@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 498cb8f38eeb4f4223655156e2d6ef5f178140a8
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785746"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554133"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>windowsAppStartLayoutTileSize 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31785746"
 |:---|:---|:---|
 |hidden|0|可见.|
 |小|1|较小的1x1。|
-|中等|双面|中2x2。|
-|丰富|第三章|宽4x2。|
-|大|4|大型4x4。|
+|中等|2 |中2x2。|
+|丰富|3 |宽4x2。|
+|大|4 |大型4x4。|
 
 
 

@@ -3,11 +3,11 @@ title: singleValueLegacyExtendedProperty 资源类型
 description: '包含单个值的扩展属性。 '
 localization_priority: Normal
 ms.openlocfilehash: f865da1a8a4211ac99a70881b2851b38b8e72727
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894227"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549641"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>singleValueLegacyExtendedProperty 资源类型
 
@@ -26,10 +26,10 @@ ms.locfileid: "27894227"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|ID|string|用于标识属性的属性 ID。只读。|
+|id|string|用于标识属性的属性 ID。只读。|
 |value|string|属性值。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 

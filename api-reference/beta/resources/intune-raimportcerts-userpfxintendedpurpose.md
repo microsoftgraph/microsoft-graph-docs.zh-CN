@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1b8beb971c0ca8051dcab716526e9dfb12007573
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807299"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573065"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>userPfxIntendedPurpose 枚举类型
 
@@ -24,9 +24,9 @@ ms.locfileid: "31807299"
 |:---|:---|:---|
 |取消|0|尚未记录|
 |smimeEncryption|1|尚未记录|
-|smimeSigning|双面|尚未记录|
-|vpn|4|尚未记录|
-|wifi|utf-8|尚未记录|
+|smimeSigning|2 |尚未记录|
+|vpn|4 |尚未记录|
+|wifi|8 |尚未记录|
 
 
 

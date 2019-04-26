@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: eacb33427dc0c40e3bbed7af3d2024357eefe53c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785228"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555043"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>webBrowserCookieSettings 枚举类型
 
@@ -24,9 +24,9 @@ Web 浏览器 Cookie 设置。
 |:---|:---|:---|
 |browserDefault|0|浏览器默认值, 无意向。|
 |blockAlways|1|始终阻止 cookie。|
-|allowCurrentWebSite|双面|允许来自当前网站的 cookie。|
-|allowFromWebsitesVisited|第三章|允许访问的网站中的 cookie。|
-|allowAlways|4|始终允许 cookie。|
+|allowCurrentWebSite|2 |允许来自当前网站的 cookie。|
+|allowFromWebsitesVisited|3 |允许访问的网站中的 cookie。|
+|allowAlways|4 |始终允许 cookie。|
 
 
 

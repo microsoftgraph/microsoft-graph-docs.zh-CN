@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 6991845e05373a1c874553b8b195f77fb79757b7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555211"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Outlook 个人联系人 API 概述
 

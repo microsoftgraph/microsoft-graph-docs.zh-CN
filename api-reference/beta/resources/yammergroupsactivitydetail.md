@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: c5b580f643686c27497fd24a6fe00c7750a6a938
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573261"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551419"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>yammerGroupsActivityDetail 资源类型
 
@@ -19,7 +19,7 @@ ms.locfileid: "29573261"
 | :----------------- | :------ |
 | reportRefreshDate  | Date    |
 | groupDisplayName   | String  |
-| 被          | 布尔值 |
+| isDeleted          | 布尔值 |
 | ownerPrincipalName | String  |
 | lastActivityDate   | Date    |
 | groupType          | String  |

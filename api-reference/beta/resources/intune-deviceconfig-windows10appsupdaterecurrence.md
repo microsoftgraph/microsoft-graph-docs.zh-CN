@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 56cbfc6f6a8b9952682a5f7cfeeb2f4caffc94b7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806753"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572225"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>windows10AppsUpdateRecurrence 枚举类型
 
@@ -24,8 +24,8 @@ Windows10 定期应用更新的可能值。
 |:---|:---|:---|
 |无|0|默认值指定单个事件。|
 |每日|1|每日.|
-|周历|双面|周历.|
-|还|第三章|还.|
+|周历|2 |周历.|
+|还|3 |还.|
 
 
 

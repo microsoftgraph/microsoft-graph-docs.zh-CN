@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 1003a0fee736c0f713a82516e79295c25aab0d5b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986115"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550516"
 ---
 # <a name="remove-teacher"></a>删除 teacher
 

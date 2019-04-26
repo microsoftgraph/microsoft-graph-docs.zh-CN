@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f08031e970f56c071a4dd01af0542bd56924edd5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789743"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549355"
 ---
 # <a name="browsersyncsetting-enum-type"></a>browserSyncSetting 枚举类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "31789743"
 |:---|:---|:---|
 |notConfigured|0|默认值–允许跨设备同步浏览器设置。|
 |blockedWithUserOverride|1|阻止跨用户设备同步浏览器设置, 允许用户重写设置。|
-|堵塞|双面|绝对阻止跨用户设备同步浏览器设置。|
+|堵塞|2 |绝对阻止跨用户设备同步浏览器设置。|
 
 
 
