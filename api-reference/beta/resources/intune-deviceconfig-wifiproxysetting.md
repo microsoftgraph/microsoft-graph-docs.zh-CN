@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4677a7113a32f6da1cebac561b10a2e411a5e363
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796253"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554854"
 ---
 # <a name="wifiproxysetting-enum-type"></a>wiFiProxySetting 枚举类型
 
@@ -24,7 +24,7 @@ wi-fi 代理设置。
 |:---|:---|:---|
 |无|0|无代理。|
 |手动|1|通过地址和端口的手动代理设置。|
-|自动|双面|通过 URL 自动代理设置。|
+|自动|2 |通过 URL 自动代理设置。|
 
 
 

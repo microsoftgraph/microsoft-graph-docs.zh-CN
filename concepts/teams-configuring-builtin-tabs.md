@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2940edf1cef2adc6c240fe8dd737d91f434c27e8
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342280"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574594"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>在 Microsoft Teams 中配置内置选项卡类型
 
@@ -28,9 +28,9 @@ ms.locfileid: "30342280"
 
 | 属性   | 类型        | 说明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | Null                                                     |
+| entityId   | 字符串      | Null                                                     |
 | contentUrl | string      | 网站的 URL                                       |
-| removeUrl  | string      | Null                                                     |
+| removeUrl  | 字符串      | Null                                                     |
 | websiteUrl | string      | 网站的 URL                                       |
 
 ## <a name="planner-tabs"></a>规划器选项卡
@@ -52,9 +52,9 @@ ms.locfileid: "30342280"
 
 | 属性   | 类型        | 说明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | Null                                                     |
+| entityId   | 字符串      | Null                                                     |
 | contentUrl | string      | `https://web.microsoftstream.com/embed/video/{id}?autoplay=false&showinfo=true&app=microsoftteams&l={locale}`，其中 {id} 是视频流的 ID。 若要查找流的 {id}，请在浏览器中打开该流，然后查看 URL，它的格式应为 `https://{domain}.microsoftstream.com/video/{id}`。  |
-| removeUrl  | string      | Null                                                     |
+| removeUrl  | 字符串      | Null                                                     |
 | websiteUrl | string      | `https://web.microsoftstream.com/video/{id}`，其中 {id} 是视频流的 ID。    |
 
 ## <a name="microsoft-forms-tabs"></a>Microsoft Forms 选项卡
@@ -66,7 +66,7 @@ ms.locfileid: "30342280"
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | 表单的 ID。  定义此值，导航到 Forms 网站中的表单，然后找到表单 `https://forms.office.com/Pages/DesignPage.aspx#FormId={formId}` 的 URL。      |
 | contentUrl | string      | `https://forms.office.com/Pages/TeamsDesignPage.aspx?Host=Teams&lang={locale}&groupId={groupId}&tid={tid}&teamsTheme={theme}&upn={upn}&fragment=FormId%3D{formId}`，其中 {formId} 与实体 ID 相同，{locale}、{groupId}、{tid}、{upn} 是文本。   |
-| removeUrl  | string      | Null                                                     |
+| removeUrl  | 字符串      | Null                                                     |
 | websiteUrl | string      |  `https://forms.office.com`    |
 
 ## <a name="word-excel-powerpoint-and-pdf-tabs"></a>Word、Excel、PowerPoint 和 PDF 选项卡
@@ -84,9 +84,9 @@ ms.locfileid: "30342280"
 
 | 属性   | 类型        | 说明                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | 字符串      | 文件的 sourceDoc ID。 通过打开 SharePoint 中文件并查看地址栏即可找到 – URL 将有一个`sourcedoc=%7B{sourceDocId}%7D`子句。 此外还可从文档 SharePoint 驱动器项的 webUrl 派生。 有关详细信息，请参阅 [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta)。 |
-| contentUrl | 字符串      | `{folder-webUrl}/{item-name}` 格式文件的 URL。 {folder-webUrl} 是包含文件的 SharePoint 文件夹 webUrl，通过打开 SharePoint 中文件并查看地址栏，或使用 [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta) 的 webUrl 属性即可找到该文件。 {item-name} 是文件名（例如 file.docx），也就是 [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta) 中的 `name` 属性。 |
-| removeUrl  | string      | Null                                                     |
+| entityId   | string      | 文件的 sourceDoc ID。 通过打开 SharePoint 中文件并查看地址栏即可找到 – URL 将有一个`sourcedoc=%7B{sourceDocId}%7D`子句。 此外还可从文档 SharePoint 驱动器项的 webUrl 派生。 有关详细信息，请参阅 [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta)。 |
+| contentUrl | string      | `{folder-webUrl}/{item-name}` 格式文件的 URL。 {folder-webUrl} 是包含文件的 SharePoint 文件夹 webUrl，通过打开 SharePoint 中文件并查看地址栏，或使用 [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta) 的 webUrl 属性即可找到该文件。 {item-name} 是文件名（例如 file.docx），也就是 [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta) 中的 `name` 属性。 |
+| removeUrl  | 字符串      | Null                                                     |
 | websiteUrl | 字符串      | Null                                       |
 
 ### <a name="example-create-a-configured-word-tab"></a>示例： 创建一个配置好的 Word 选项卡
@@ -121,7 +121,7 @@ Wiki 选项卡不支持通过 Graph 进行配置。
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | 空字符串 ("")                                        |
 | contentUrl | string      | 文档库的根文件夹的 URL。 您可以通过在浏览器中打开 SharePoint 文件夹、复制 URL 并删除 "/Forms/AllItems.aspx" 和后面的所有内容, 来查找此 url。 |
-| removeUrl  | string      | Null                                                     |
+| removeUrl  | 字符串      | Null                                                     |
 | websiteUrl | 字符串      | Null                                                     |
 
 ### <a name="example-create-a-configured-document-library-tab"></a>示例: 创建已配置的文档库选项卡

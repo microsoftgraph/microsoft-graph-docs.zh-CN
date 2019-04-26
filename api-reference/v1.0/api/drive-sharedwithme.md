@@ -6,11 +6,11 @@ title: 列出与我共享的文件
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 6d1b08de1c5a55f85fc54f5666dafcb9db346fc3
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480185"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576085"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>列出与已登录用户共享的项目
 

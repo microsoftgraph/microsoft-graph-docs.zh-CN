@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 00dfabae88554d94d068fcb81f74601583e817a7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926363"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575273"
 ---
 # <a name="range-clear"></a>Range: clear
 
@@ -42,7 +42,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/clear
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|applyTo|string|可选。 确定清除操作的类型。  可能的值为： `All`， `Formats`， `Contents`。|
+|applyTo|字符串|可选。 确定清除操作的类型。  可能的值包括 `All`、`Formats`、`Contents`。|
 
 ## <a name="response"></a>响应
 

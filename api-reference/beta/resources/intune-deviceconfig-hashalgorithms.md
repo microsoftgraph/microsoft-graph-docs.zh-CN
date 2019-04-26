@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 416d07266f9564bc8685447ee5a318014d462d69
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31770961"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555988"
 ---
 # <a name="hashalgorithms-enum-type"></a>hashAlgorithms 枚举类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "31770961"
 |成员|值|说明|
 |:---|:---|:---|
 |sha1|1|SHA-1 哈希算法。|
-|sha2|双面|sha-1 哈希算法。|
+|sha2|2 |sha-1 哈希算法。|
 
 
 

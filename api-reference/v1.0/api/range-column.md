@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 21338edb35c8e3e7c060d0f4a03e7e3e77f4e60b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986717"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575266"
 ---
 # <a name="range-column"></a>Range:Column
 
@@ -38,7 +38,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="path-parameters"></a>路径参数
-在请求路径中，提供了以下参数。
+在请求路径中, 提供以下参数。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|

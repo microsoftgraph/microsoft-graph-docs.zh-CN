@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 03842741ca18f3c640ccf1b1636304ea0ad32aed
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985268"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577418"
 ---
 # <a name="delete-ioslobapp"></a>删除 iosLobApp
 

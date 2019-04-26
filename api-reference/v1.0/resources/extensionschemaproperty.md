@@ -3,11 +3,11 @@ title: extensionSchemaProperty 资源类型
 description: 使用 **extensionSchemaProperty** 资源将属性的名称及其类型定义为 schemaExtension 定义的一部分。
 localization_priority: Normal
 ms.openlocfilehash: 384f60c323ca6c6fb23d2f4811a6d2cb918bf844
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880568"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575784"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>extensionSchemaProperty 资源类型
 
@@ -28,7 +28,7 @@ ms.locfileid: "27880568"
 | Binary | 最多 256 字节。 |
 | Boolean | 不受联系人、邮件、活动和帖子支持。 |
 | DateTime | 必须以 ISO 8601 格式进行指定。存储为 UTC 格式。 |
-| Integer | 32 位值。 不受联系人、邮件、活动和帖子支持。 |
+| 整数 | 32 位值。 不受联系人、邮件、活动和帖子支持。 |
 | String | 最多 256 个字符。 |
 
 ## <a name="json-representation"></a>JSON 表示形式

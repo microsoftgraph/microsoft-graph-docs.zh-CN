@@ -1,44 +1,44 @@
 ---
 title: 邮件提示资源类型
-description: '有关提示性消息收件人，它们撰写邮件时向用户显示。 例如，-外出消息 '
+description: '有关收件人的信息性消息, 在用户撰写邮件时向其显示。 例如, 外出邮件 '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: d1ee1af2ae5b62d085942615ae0bd3ec320b19b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951801"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574010"
 ---
 # <a name="mailtips-resource-type"></a>邮件提示资源类型
 
-有关提示性消息收件人，它们撰写邮件时向用户显示。 例如，作为自动回复邮件收件人-外出邮件。
+有关收件人的信息性消息, 在用户撰写邮件时向其显示。 例如, 外出邮件作为邮件收件人的自动答复。
 
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | 如果已被收件人设置，邮件自动回复的提示。 |
-| customMailTip | 字符串 | 可在收件人的邮箱中设置自定义邮件提示。 |
-| deliveryRestricted| 布尔 | 收件人的邮箱是否受限制，例如，接受从预定义列表的发件人的邮件拒绝来自发件人的预定义列表的邮件，或接受来自仅经过身份验证发件人的邮件。 |
-| emailAddress | [emailAddress](../resources/emailaddress.md) | 若要获取的邮件提示收件人的电子邮件地址。 |
-| error | [mailTipsError](../resources/mailtipserror.md) | 在[getMailTips](../api/user-getmailtips.md)操作过程中出现错误。 |
-| externalMemberCount | Int32 | 如果收件人是通讯组列表的外部成员的数目。 |
-| isModerated |布尔  | 是否向收件人发送邮件需要审批。 例如，如果收件人是大型通讯组列表和审阅者已设置最多批准邮件发送到该通讯组列表，或如果发送给邮件收件人需要审批的收件人的经理。 |
-| mailboxFull | 布尔 | 收件人邮箱完全状态。 |
-| maxMessageSize | Int32 | 收件人的组织或邮箱已配置最大邮件大小。 |
-| recipientScope | recipientScopeType | 收件人范围。 可取值为：`none`、`internal`、`external`、`externalPartner`、`externalNonParther`。 例如，管理员可以设置其他组织为其"合作伙伴"。 如果管理员希望某些邮件提示可对特定范围有用范围。 也很有用，告知人的邮件可能离开组织，以帮助其选择正确决定哪些措词、 语气和内容的发件人。|
-| recipientSuggestions | [recipient](../resources/recipient.md) collection | 收件人建议基于以前上下文它们出现在相同的邮件。 |
-| totalMemberCount | Int32 | 如果收件人是通讯组列表成员的数目。 |
+| automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | "自动答复" 的邮件提示 (如果收件人已设置)。 |
+| customMailTip | String | 可在收件人邮箱上设置的自定义邮件提示。 |
+| deliveryRestricted| Boolean | 收件人邮箱是否受到限制, 例如, 仅接受来自预定义的发件人列表的邮件、拒绝来自预定义的发件人列表的邮件, 还是仅接受来自已验证的发件人的邮件。 |
+| emailAddress | [emailAddress](../resources/emailaddress.md) | 要获取其邮件提示的收件人的电子邮件地址。 |
+| error | [mailTipsError](../resources/mailtipserror.md) | [getMailTips](../api/user-getmailtips.md)操作过程中发生的错误。 |
+| externalMemberCount | Int32 | 如果收件人是通讯组列表, 则为外部成员的数量。 |
+| isModerated |Boolean  | 向收件人发送邮件是否需要审批。 例如, 如果收件人是一个大型通讯组列表, 并且已将仲裁人设置为审批发送到该通讯组列表的邮件, 或者向收件人发送邮件时需要对收件人的经理进行审批。 |
+| mailboxFull | Boolean | 收件人的邮箱完整状态。 |
+| maxMessageSize | Int32 | 已为收件人的组织或邮箱配置的最大邮件大小。 |
+| recipientScope | recipientScopeType | 收件人的范围。 可取值为：`none`、`internal`、`external`、`externalPartner` 或 `externalNonParther`。 例如, 管理员可以将其他组织设置为其 "合作伙伴"。 如果管理员希望某些范围能够访问某些邮件提示, 则该范围很有用。 对于发件人来说, 通知他们其邮件可能会离开组织, 从而帮助他们做出正确的措辞、语气和内容决策。|
+| recipientSuggestions | [recipient](../resources/recipient.md) collection | 根据以前的上下文显示在同一邮件中建议的收件人。 |
+| totalMemberCount | Int32 | 如果收件人是通讯组列表, 则为成员数量。 |
 
 ### <a name="recipientscopetype-values"></a>recipientScopeType 值
 
 | 值
 |:-------------------------
 | 无
-| 内部
-| 外部
+| 里面
+| 对外
 | externalPartner
 | externalNonPartner
 

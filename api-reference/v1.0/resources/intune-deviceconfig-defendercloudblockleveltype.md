@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: de81e42827f7c153fc81e7fc19d85e54cb780bfa
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258833"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575182"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>defenderCloudBlockLevelType 枚举类型
 
@@ -22,8 +22,8 @@ ms.locfileid: "30258833"
 |:---|:---|:---|
 |notConfigured|0|默认值是, 使用默认的 Windows Defender 防病毒阻止级别, 并提供强大的检测功能, 而不会增加检测合法文件的风险|
 |高效|1|High 适用于强级别的检测。|
-|highPlus|双面|高级别 + 使用高级别, 并应用附加保护措施|
-|zeroTolerance|第三章|零耐受性阻止所有未知可执行文件|
+|highPlus|2 |高级别 + 使用高级别, 并应用附加保护措施|
+|zeroTolerance|3 |零耐受性阻止所有未知可执行文件|
 
 
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
 ms.openlocfilehash: b23285738d8a4268ce55d056ccd49defb823369a
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518538"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574451"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -47,7 +47,7 @@ deviceManagement 资源代表其内容因工作流而异的容器, 包括:
 |**设备管理**|
 |[sendCustomNotificationToCompanyPortal 操作](../api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md)|无|尚未记录|
 |**载入**|
-|[verifyWindowsEnrollmentAutoDiscovery 函数](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|Boolean|尚未记录|
+|[verifyWindowsEnrollmentAutoDiscovery function](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|布尔值|尚未记录|
 |**基于角色的访问控制 (RBAC)**|
 |[getEffectivePermissions 函数](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|[rolePermission](../resources/intune-rbac-rolepermission.md) 集合|检索当前验证的用户的有效权限|
 |[getRoleScopeTagsByIds 函数](../api/intune-shared-devicemanagement-getrolescopetagsbyids.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)集合|尚未记录|
@@ -110,7 +110,7 @@ deviceManagement 资源代表其内容因工作流而异的容器, 包括:
 |意向|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)集合|设备管理意向|
 |settingDefinitions|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)集合|设备管理意向设置定义|
 |模版|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)集合|可用模板|
-|类别|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)集合|可用类别|
+|categories|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)集合|可用类别|
 |**设备管理**|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Apple 推送通知证书。|
 |dataSharingConsents|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)集合|数据共享同意。|

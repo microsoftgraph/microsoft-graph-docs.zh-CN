@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1ebea83f26bd3fcf54e530e80173c830fbde7ba8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941686"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577761"
 ---
 # <a name="update-a-group-setting"></a>更新组设置
 
@@ -46,7 +46,7 @@ PATCH /groups/{id}/settings/{id}
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-| values | settingValue 集合 | 更新的值集。注意：必须提供整个集合组。无法更新单个值集合。 |
+| 值 | settingValue 集合 | 更新的值集。注意：必须提供整个集合组。无法更新单个值集合。 |
 
 ## <a name="response"></a>响应
 

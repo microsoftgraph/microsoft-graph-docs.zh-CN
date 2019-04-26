@@ -6,11 +6,11 @@ title: 转换为其他格式
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: b63e22aa280640362a70efcc4fa0d50673aab63d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481851"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575392"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 

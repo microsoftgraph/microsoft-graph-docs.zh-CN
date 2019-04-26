@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 4b4100265797fd3cefc60e0288961b74839199c2
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572388"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573919"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>使用 Intune 注册企业拥有的设备
 
@@ -49,7 +49,7 @@ ms.locfileid: "30572388"
 - [Windows Autopilot Deployment 配置文件](intune-enrollment-windowsautopilotdeploymentprofile.md)
 - [Windows Autopilot Deployment 配置文件分配](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Windows Autopilot 设备标识](intune-enrollment-windowsautopilotdeviceidentity.md)
-- [Windows autopilot 设备类型](intune-enrollment-windowsautopilotdevicetype.md)
+- [Windows Autopilot 设备类型](intune-enrollment-windowsautopilotdevicetype.md)
 - [Windows Autopilot 配置文件分配详细状态](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Windows Autopilot 配置文件分配状态](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
 - [Windows Autopilot 设置](intune-enrollment-windowsautopilotsettings.md)

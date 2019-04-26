@@ -3,11 +3,11 @@ title: 获取图标
 description: 检索 icon 对象的属性和关系。
 localization_priority: Normal
 ms.openlocfilehash: 8d5f7f88892492230d2e77d587dc7f45b863f163
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869102"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577768"
 ---
 # <a name="get-icon"></a>获取图标
 

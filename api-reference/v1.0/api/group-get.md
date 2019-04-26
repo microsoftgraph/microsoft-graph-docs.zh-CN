@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.openlocfilehash: edf1b53beaf519e86669e7ea8a472ea1562766af
-ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212415"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572673"
 ---
 # <a name="get-group"></a>获取组
 获取组对象的属性和关系。

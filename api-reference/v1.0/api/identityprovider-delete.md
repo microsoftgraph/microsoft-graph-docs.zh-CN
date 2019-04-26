@@ -5,11 +5,11 @@ localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a09018011e87da383371ba41b1a046ddeb9002b5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29649371"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577733"
 ---
 # <a name="delete-identityprovider"></a>删除 identityProvider
 

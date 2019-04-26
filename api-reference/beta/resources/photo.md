@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Photo
 localization_priority: Normal
 ms.openlocfilehash: d14777b0f39983d6ccf83ae387896c6587635e66
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480913"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573746"
 ---
 # <a name="photo-resource-type"></a>Photo 资源类型
 
@@ -44,8 +44,8 @@ ms.locfileid: "30480913"
 | **takenDateTime**       | DateTimeOffset | 表示照片拍摄的时间和日期。只读。
 | **cameraMake**          | String         | 相机制造商。只读。
 | **cameraModel**         | String         | 相机型号。只读。
-| **fNumber**             | 双精度数         | 相机的 F-stop 值。只读。
-| **exposureDenominator** | 双精度数         | 相机的曝光时间分数的分母。只读。
+| **fNumber**             | 双精度         | 相机的 F-stop 值。只读。
+| **exposureDenominator** | 双精度         | 相机的曝光时间分数的分母。只读。
 | **exposureNumerator**   | Double         | 相机的曝光时间分数的分子。只读。
 | **focalLength**         | 双精度数         | 相机的焦距。只读。
 | **iso**                 | Int64          | 相机的 ISO 值。只读。
