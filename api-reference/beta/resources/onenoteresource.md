@@ -1,0 +1,91 @@
+---
+title: onenoteResource 资源类型
+description: 'OneNote 页面上的图像或其他文件资源。 '
+localization_priority: Normal
+ms.openlocfilehash: abb60a52b0f32ac2e1bdc024d07f02233db6043c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33348570"
+---
+# <a name="onenoteresource-resource-type"></a>onenoteResource 资源类型
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+OneNote 页面上的图像或其他文件资源。 
+
+您可以获取资源的二进制数据, 但不支持获取资源对象或资源集合的 JSON 表示形式。
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.onenoteResource"
+}-->
+
+```json
+{
+  "content": "String (Stream)",
+  "contentUrl": "String"
+}
+
+```
+通过向资源的`content`终结点发送 get 请求获取特定资源的二进制数据:
+
+```
+GET ../onenote/resources/{id}/content
+```
+
+当您使用以下请求获取页面的 HTML 内容时, 将返回文件的资源 URI:
+
+```
+GET ../onenote/pages/{id}/content
+```
+
+在页面 HTML 中, `img`标记包含`data-fullres-src`属性中的原始图像资源和`src`属性中优化的图像的终结点:
+```
+<img 
+    src="image-resource-url"  
+    data-src-type="media-type"
+    data-fullres-src="image-resource-url"  
+    data-fullres-src-type="media-type" ... />
+```
+
+`object`标记 (表示 PDF、.docx 和 PNG 等文件) 包含`data`属性中的文件资源的终结点:
+
+```
+<object
+    data="file-resource-url"
+    data-attachment="file-name.file-type" 
+    type="media-type" ... />
+```
+
+## <a name="properties"></a>属性
+| 属性     | 类型   |说明|
+|:---------------|:--------|:----------|
+| 内容 | Edm||
+| contentUrl | String ||
+
+## <a name="relationships"></a>Relationships
+无。
+
+
+## <a name="methods"></a>方法
+| 方法           | 返回类型    |说明|
+|:---------------|:--------|:----------|
+|[获取资源二进制数据](../api/resource-get.md) | 流 |检索文件或图像资源的二进制数据。|
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "resource resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
