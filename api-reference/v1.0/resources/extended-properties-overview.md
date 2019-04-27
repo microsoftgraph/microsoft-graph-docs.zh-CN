@@ -1,15 +1,15 @@
 ---
 title: Outlook 扩展属性概述
-description: '扩展的属性允许存储自定义数据和专门用作应用程序访问的回退机制 '
+description: '扩展属性允许存储自定义数据，并专门用作应用程序访问的回退机制 '
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 935f97819155318a6bfc7c77d07bf8a308e512e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949568"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578097"
 ---
 # <a name="outlook-extended-properties-overview"></a>Outlook 扩展属性概述
 
@@ -45,34 +45,34 @@ ms.locfileid: "27949568"
 
 ### <a name="id-formats"></a>id 格式
 
-您可以在三种格式之一指定的扩展属性的**id** :
+可以使用以下三种格式之一指定扩展属性的 **id**：
 
-- 为扩展的属性类型、 命名空间和字符串名称由标识的命名属性。
-- 为扩展的属性类型、 命名空间和一个数字标识符标识的命名属性。
-- 在由扩展的属性类型和[MAPI 属性标记](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-tags)标识属性标记格式。
+- 作为命名属性，由扩展属性类型、名称空间和字符串名称标识。
+- 作为命名属性，由扩展属性类型、名称空间和数字标识符标识。
+- 采用属性标记格式，由扩展属性类型和 [MAPI 属性标记](https://docs.microsoft.com/zh-CN/office/client-developer/outlook/mapi/mapi-property-tags)标识。
 
-接下来的两个表介绍这些格式为单角色和多值应用于的扩展属性。 {_类型_} 表示的扩展属性的值的类型。 示例中使用的是 string、integer 和这些类型的数组。
+接下来的两个表描述了应用于单值和多值扩展属性的这些格式。 {_type_} 表示一个或多个扩展属性值的类型。 示例中使用的是 string、integer 和这些类型的数组。
 
 **单值扩展属性的有效 id 格式**
 
 |**格式**|**示例**|**说明**|
 |:---------|:----------|:--------------|
-| "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 标识属性由其所属的命名空间 (GUID) 和字符串名称。         |
-| "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | 标识通过其所属的命名空间 (GUID) 和一个数字标识符的属性。  |
-| "{_类型_} {_属性标记_}"                    | ```"String 0x4001001E"```                                           | 根据属性标记标识的预定义的属性。 |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 用所属的命名空间 (GUID) 和字符串名称标识属性。         |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | 用所属的命名空间 (GUID) 和数字标识符标识属性。  |
+| "{_type_} {_proptag_}"                    | ```"String 0x4001001E"```                                           | 用属性标记标识预定义的属性。 |
 
 **多值扩展属性的有效 id 格式**
 
 |**格式**|**示例**|**说明**|
 |:---------|:----------|:--------------|
-| "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 标识属性的命名空间 (GUID) 和字符串名称。         |
-| "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | 标识属性的命名空间 (GUID) 和数字的标识符。   |
-| "{_类型_} {_属性标记_}"                    | ```"StringArray 0x4002101E"```                                           | 根据属性标记标识的预定义的属性。 |
+| "{_type_} {_guid_} **Name** {_name_}" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | 用命名空间 (GUID) 和字符串名称标识属性。         |
+| "{_type_} {_guid_} **Id** {_id_}"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | 用命名空间 (GUID) 和数字标识符标识属性。   |
+| "{_type_} {_proptag_}"                    | ```"StringArray 0x4002101E"```                                           | 用属性标记标识预定义的属性。 |
 
 
-使用的命名的属性的格式之一以定义一个或多值单值的扩展的属性为自定义属性。 之间的两个格式，第一个采用字符串名称 （**Name**） 是为了便于引用的首选的格式。 命名的属性中 0x8000 0xfffe 有及其[属性标识符](https://docs.microsoft.com/en-us/office/client-developer/outlook/mapi/mapi-property-identifier-overview)范围。
+使用任一命名属性格式将单值或多值扩展属性定义为自定义属性。 在这两种格式中，第一种采用字符串名称 (**Name**) 的格式是易于参考的首选格式。 命名属性的[属性标识符](https://docs.microsoft.com/zh-CN/office/client-developer/outlook/mapi/mapi-property-identifier-overview)在 0x8000-0xfffe 范围内。
 
-使用属性标记格式访问通过 MAPI，或客户端或服务器，预定义的属性和的具有不已经暴露在 Microsoft Graph 中。 这些属性中 0x0001 0x7fff 有属性标识符范围。 不要尝试定义使用属性标记格式的自定义属性。 
+使用属性标记格式访问由 MAPI 或客户端或服务器预定义的属性，以及尚未在 Microsoft Graph 中公开的属性。 这些属性的属性标识符在 0x0001-0x7fff 范围内。 不要尝试使用属性标记格式定义自定义属性。 
 
 在 \[MS-OXPROPS\] Microsoft Corporation 的[“Exchange Server 协议 Master 属性列表”](https://msdn.microsoft.com/library/cc433490%28v=exchg.80%29.aspx)中，可以了解如何将扩展属性映射到现有 MAPI 属性，如属性标识符和 GUID。
 
