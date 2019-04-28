@@ -5,11 +5,11 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: dbcb35ad0b131f4e714acd7f178fbbb1109b913c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920112"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574024"
 ---
 # <a name="mailfolder-resource-type"></a>mailFolder 资源类型
 
@@ -19,34 +19,34 @@ ms.locfileid: "27920112"
 
 **已知文件夹名称**
 
-Outlook 默认情况下会为用户创建某些文件夹。 访问这些文件夹时，而不是使用的相应文件夹**id**值，为方便起见，您可以使用下表中的已知文件夹名称。 例如，您可以获取其已知名称使用以下查询草稿文件夹。
+Outlook 默认情况下会为用户创建某些文件夹。 为方便起见，可以在访问这些文件夹时使用已知的文件夹名称来替代使用相应的文件夹 **id** 值。 例如，你可以使用其已知名称和以下查询来获取“草稿”文件夹。
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/drafts
 ```
 
-已知名称工作无论用户的邮箱的区域设置上述查询将始终返回命名方式无论用户的草稿文件夹。
+无论用户邮箱的区域设置如何，已知名称都可以工作，因此无论命名方式如何，上述查询都将始终返回用户的“草稿”文件夹。
 
 | 已知文件夹名称 | 说明 |
 |:-----------------------|:------------|
-| 存档 | 存档文件夹邮件发送到在支持的 Outlook 客户端使用 One_Click 存档功能时。 **注意：** 这是不相同的存档邮箱功能的 Exchange online。 |
-| 混乱 | 混乱文件夹低优先级邮件移动到时使用的混乱功能。 |
-| 冲突 | 包含邮箱中的冲突项目的文件夹。 |
-| conversationhistory | 其中 Skype 保存 IM 对话 （如果 Skype 配置这样） 中的文件夹。 |
-| DeletedItems | 文件夹项目移到时被删除。 |
-| 草稿 | 包含未发送的邮件的文件夹。 |
-| 收件箱 | 收件箱文件夹中。 |
-| junkemail | 垃圾邮件文件夹中。 |
-| localfailures | 包含本地客户端上存在，但无法上载到服务器的项目的文件夹。 |
-| msgfolderroot | "顶部的信息存储"文件夹中。 此文件夹的父文件夹的普通邮件客户端，如收件箱中显示的文件夹。 |
-| 发件箱 | 发件箱文件夹中。 |
-| recoverableitemsdeletions | 包含软删除项目的文件夹： 删除从已删除邮件文件夹中，或通过按 shift + delete 在 Outlook 中。 此文件夹不可见在任何 Outlook 电子邮件客户端，但是与其进行交互的最终用户可以通过中 Outlook 或 Outlook web 上的**从服务器恢复已删除邮件**功能。 |
-| 已计划 | 包含计划重新显示在适用于 iOS 的 Outlook 中使用的日程安排功能收件箱中的邮件文件夹。 |
-| searchfolders | 在用户的邮箱中定义的所有搜索文件夹的父文件夹。 |
-| sentitems | 已发送的邮件文件夹中。 |
-| serverfailures | 包含服务器上存在，但无法同步到本地客户端的项目的文件夹。 |
-| syncissues | 包含由 Outlook 创建的同步日志的文件夹。 |
+| archive | 在支持它的 Outlook 客户端中使用 One_Click 存档功能时，将发送存档文件夹邮件。 **注意：** 这与 Exchange Online 的存档邮箱功能并不相同。 |
+| clutter | 使用待筛选邮件功能时，待筛选文件夹低优先级邮件将被移动到这里。 |
+| conflicts | 包含邮箱中冲突项的文件夹。 |
+| conversationhistory | Skype 保存 IM 对话的文件夹（如果 Skype 配置为这样做）。 |
+| deleteditems | 文件夹项被删除时，将被移动到这里。 |
+| drafts | 包含未发送邮件的文件夹。 |
+| inbox | 收件箱文件夹。 |
+| junkemail | “垃圾邮件”文件夹。 |
+| localfailures | 包含本地客户端上存在但无法上载到服务器的项的文件夹。 |
+| msgfolderroot | “最上层的信息文件”文件夹。 此文件夹是在普通邮件客户端（如收件箱）中显示的文件夹的父文件夹。 |
+| outbox | “发件箱”文件夹。 |
+| recoverableitemsdeletions | 包含软删除项的文件夹：从“已删除邮件”文件夹中删除，或者在 Outlook 中按 shift+delete 删除。 此文件夹在任何 Outlook 电子邮件客户端中都不可见，但最终用户可以通过 Outlook 中的“**从服务器恢复已删除邮件**”功能或 Web 上的 Outlook 与其进行交互。 |
+| scheduled | 包含计划使用 Outlook for iOS 中的“计划”功能重新出现在收件箱中的邮件的文件夹。 |
+| searchfolders | 用户邮箱中定义的所有搜索文件夹的父文件夹。 |
+| sentitems | 已发送项的文件夹。 |
+| serverfailures | 包含服务器上存在但无法同步到本地客户端的项的文件夹。 |
+| syncissues | 包含 Outlook 创建的同步日志的文件夹。 |
 
 ## <a name="methods"></a>方法
 
@@ -74,23 +74,23 @@ GET /me/mailFolders/drafts
 |:---------|:-----|:------------|
 |childFolderCount|Int32|当前 mailFolder 中的直接子 mailFolder 数量。|
 |displayName|String|mailFolder 的显示名称。|
-|id|字符串|MailFolder 的唯一标识符。|
+|id|String|MailFolder 的唯一标识符。|
 |parentFolderId|String|MailFolder 的父 mailFolder 的唯一标识符。|
 |totalItemCount|Int32|邮箱中项的数量|
 |unreadItemCount|Int32|mailFolder 中标记为未读的项的数量。|
 
 **有效的访问项计数**
 
-`TotalItemCount`和`UnreadItemCount`文件夹的属性，可以方便地计算的文件夹中的读取项目数。
-它们使您可以避免查询会引发大量延迟如下：
+使用文件夹的 `TotalItemCount` 和 `UnreadItemCount` 的属性可以方便地计算在文件夹中读取的项数。
+使你避免进行可产生重大延迟的查询，如下所示：
 
 ```http
 https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filter=isread%20eq%20false
 ```
 
-在 Outlook 中的邮件文件夹可以包含多个类型的项目，例如，可以包含收件箱会议请求项目的不同邮件项目。 `TotalItemCount`和`UnreadItemCount`包括而不考虑其项目类型的邮件文件夹中的项目。
+Outlook 中的邮件文件夹可包含多个类型的项，例如，收件箱可以包含不同于邮件项的会议请求项。 `TotalItemCount` 和 `UnreadItemCount`包括邮件文件夹中的项，无论其项类型如何。
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 
 | 关系 | 类型 | 说明 |
 |:-------------|:-----|:------------|
