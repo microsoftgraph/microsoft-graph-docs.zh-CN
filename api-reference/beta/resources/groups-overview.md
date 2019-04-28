@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.openlocfilehash: 6905021b15b163bf18f6e08c36fba8e9a2a31229
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920420"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547378"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>在 Microsoft Graph 中使用组
 
@@ -65,13 +65,13 @@ Office 365 组的强大之处在于它的协作本质，它是项目或团队中
     "visibility": "Public"
 }
 ```
-若要详细了解 Office 365 组和管理员体验，请参阅[了解 Office 365 组](https://support.office.com/en-us/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+若要详细了解 Office 365 组和管理员体验，请参阅[了解 Office 365 组](https://support.office.com/zh-CN/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
 ## <a name="security-groups-and-mail-enabled-security-groups"></a>安全组和启用邮件的安全组
 
 安全组用于控制用户对资源的访问。 通过检查用户是否是安全组的成员，应用可以在用户尝试访问应用中的某些安全资源时决定是否授权。 安全组的成员可以是用户和其他安全组。
 
-启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 无法通过 API 创建启用邮件的安全组，但其他组操作仍适用。 启用邮件的安全组为只读。 若要了解更多信息，请参阅 Exchange 文章[管理启用邮件的安全组](https://technet.microsoft.com/en-us/library/bb123521%28v=exchg.160%29.aspx)。
+启用邮件的安全组的使用方式与安全组基本相同，不同之处在于添加了组的共享邮箱功能。 无法通过 API 创建启用邮件的安全组，但其他组操作仍适用。 启用邮件的安全组为只读。 若要了解更多信息，请参阅 Exchange 文章[管理启用邮件的安全组](https://technet.microsoft.com/zh-CN/library/bb123521%28v=exchg.160%29.aspx)。
 
 ### <a name="security-group-example"></a>安全组示例
 
@@ -116,9 +116,9 @@ POST https://graph.microsoft.com/beta/groups
 }
 ```
 
-若要详细了解如何表述 membershipRules，请参阅[在 Azure Active Directory 中创建基于属性的动态组成员资格规则](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
+若要详细了解如何表述 membershipRules，请参阅[在 Azure Active Directory 中创建基于属性的动态组成员资格规则](https://docs.microsoft.com/zh-CN/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
 
-> **注意**：动态成员资格规则要求租户必须在 [Azure Active Directory Premium P1](https://azure.microsoft.com/en-us/pricing/details/active-directory/) 或更高层拥有许可证。
+> **注意**：动态成员资格规则要求租户必须在 [Azure Active Directory Premium P1](https://azure.microsoft.com/zh-CN/pricing/details/active-directory/) 或更高层拥有许可证。
 
 ## <a name="other-types-of-groups"></a>其他类型的组
 
@@ -126,7 +126,7 @@ Yammer 中的 office 365 组用于通过 Yammer 帖子促进用户协作。 可�
 
 ## <a name="group-based-licensing"></a>基于组的许可 
 
-基于组的许可功能可用于将一个或多个产品许可证分配给 Azure AD 组。 Azure AD 确保许可证已分配给组的所有成员。 加入的组的任何新成员分配相应的许可证。 当他们离开该组时，将删除这些许可证。 此功能仅可与安全组和 Office 365 组具有 securityEnabled = TRUE。 若要了解有关基于组的许可，请参阅[此处](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
+基于组的许可功能可以用于将一个或多个产品许可证分配给 Azure AD 组。 Azure AD 可确保许可证分配给组的所有成员。 任何加入该组的新成员都获得了相应的许可证。 他们离开组时，将移除这些许可证。 该功能只能用于安全组和其中 securityEnabled=TRUE 的 Office 365 组。 若要进一步了解基于组的许可，请参阅[此处](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
 
 ## <a name="common-use-cases"></a>常见用例
 

@@ -1,17 +1,17 @@
 ---
-title: 列表 signIns
-description: 检索 Azure AD 用户登录您的租户。 在登录日志中当前包括交互中 （其中用户名/密码作为授权令牌的一部分传递） 的性质和成功联合的登录的登录。  最新 signIns 是首先返回。
+title: 列出 signIn
+description: 检索租户的 Azure AD 用户登录名。 登录日志中目前包含交互式性质的登录名（其中用户名/密码作为授权令牌的一部分传递）和已成功联合的登录名。  首先返回最新 signIn。
 localization_priority: Priority
 ms.openlocfilehash: 8596bd168a3e10cbea9e15e2f61d6bd668fd27b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861787"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545155"
 ---
-# <a name="list-signins"></a>列表 signIns
+# <a name="list-signins"></a>列出 signIn
 
-检索 Azure AD 用户登录您的租户。 在登录日志中当前包括交互中 （其中用户名/密码作为授权令牌的一部分传递） 的性质和成功联合的登录的登录。  最新 signIns 是首先返回。
+检索租户的 Azure AD 用户登录名。 登录日志中目前包含交互式性质的登录名（其中用户名/密码作为授权令牌的一部分传递）和已成功联合的登录名。  首先返回最新 signIn。
 
 
 ## <a name="permissions"></a>权限
@@ -21,46 +21,46 @@ ms.locfileid: "27861787"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | AuditLog.Read.All |
 |委派（个人 Microsoft 帐户） | 不支持   |
-|应用程序 | AuditLog.Read.All | 
+|应用 | AuditLog.Read.All | 
 
-此外，应用程序必须采用到 Azure AD 中[正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
+此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET auditLogs/signIns
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持以下 OData 查询参数，有助于自定义响应。 查看有关如何使用这些参数的[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+## <a name="optional-query-parameters"></a>可选查询参数
+此方法支持以下 OData 查询参数，它们有助于自定义响应。 请参看 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，了解如何使用这些参数。
 
 |名称     |说明                            |示例|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters#filter-parameter)|筛选结果（行）。 |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
 |[$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter)|设置结果的页面大小。|`/auditLogs/signIns?$top=1`|
-|[$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|检索下一步页的结果的结果集跨越多个页面。|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter)|从跨多页的结果集中检索下一页结果。|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
-### <a name="list-of-attributes-supported-by-filter-parameter"></a>支持的 $filter 参数属性的列表
-|属性名称 |支持的运算符|
+### <a name="list-of-attributes-supported-by-filter-parameter"></a>$filter 参数支持的属性列表
+|属性名 |支持的运算符|
 |:----------------|:------|
 |id|eq|
 |userId|eq|
 |appId|eq|
-|createdDateTime| eq，le，ge|
-|userDisplayName| eq startswith|
-|userPrincipalName| eq startswith|
-|appDisplayName| eq startswith|
-|ipAddress| eq startswith|
-|城市 /| eq startswith|
-|位置/状态| eq startswith|
-|位置/countryOrRegion| eq startswith|
-|状态/错误代码|eq|
-|initiatedBy/用户/id|eq|
-|initiatedBy/用户/displayName| eq|
-|userprincipalname 属性 initiatedBy/用户| eq startswith|
+|createdDateTime| eq、le、ge|
+|userDisplayName| eq、startswith|
+|userPrincipalName| eq、startswith|
+|appDisplayName| eq、startswith|
+|ipAddress| eq、startswith|
+|location/city| eq、startswith|
+|location/state| eq、startswith|
+|location/countryOrRegion| eq、startswith|
+|status/errorCode|eq|
+|initiatedBy/user/id|eq|
+|initiatedBy/user/displayName| eq|
+|initiatedBy/user/userPrincipalName| eq、startswith|
 |clientAppUsed| eq|
 |conditionalAccessStatus | eq|
-|deviceDetail/浏览器| eq startswith|
-|deviceDetail/operatingSystem| eq startswith|
+|deviceDetail/browser| eq、startswith|
+|deviceDetail/operatingSystem| eq、startswith|
 |correlationId| eq|
 |riskDetail| eq|
 |riskLevelAggregated| eq|
@@ -75,7 +75,7 @@ GET auditLogs/signIns
 
 
 ## <a name="response"></a>响应
-如果成功，此方法返回`200 OK`响应代码和响应正文中的[登录](../resources/signin.md)对象的集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面是一个请求示例。

@@ -5,20 +5,20 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: d2f61152b8edd98aa11fc7c6b34d2c2b04b72f55
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990122"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565477"
 ---
 # <a name="get-mailfolder"></a>获取 mailFolder
 
 检索邮件文件夹对象的属性和关系。
 
-有两种方案相关应用程序可以在哪里找到另一个用户的邮件文件夹：
+在下列两种情况下，应用可获取其他用户的邮件文件夹：
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享邮件文件夹，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
+* 如果该应用具有应用程序权限，或者
+* 如果应用具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了邮件文件夹，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-share-messages-folders)。
 
 
 ## <a name="permissions"></a>权限

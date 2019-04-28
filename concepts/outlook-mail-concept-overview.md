@@ -4,12 +4,12 @@ description: Outlook 是 Office 365 的消息传递通信中心。 使用它，�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 5480d174b542766ba540af97a1af99456ad21cf2
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.openlocfilehash: 86f7506ec06325657465a5762261a061bf0ad575
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904019"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554665"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 
@@ -25,7 +25,7 @@ Outlook 是 Office 365 的消息传递通信中心。 它还允许你管理联�
 
 ### <a name="automate-message-organization-and-processing"></a>自动化邮件组织和处理
 
-客户希望 Outlook 帮助他们保持井然有序。 Microsoft Graph 为应用开发人员提供了这些功能，让他们能够构建可优化发现及提高效率和生产率的客户工作流：
+客户对 Outlook 帮助他们保持井然有序的方式颇为青睐。 Microsoft Graph 为应用开发人员提供了这些功能，让他们能够构建可优化发现及提高效率和生产率的客户工作流：
 
 - 客户会以不同的方式组织他们的邮件，一些客户会将所有邮件都放在收件箱中，只需搜索即可，而有些客户会在文件夹中归档邮件。 他们喜欢 Outlook 这种可支持扁平式组织和基于文件夹组织的灵活又直观的方法。 应用可以方便地对特定文件夹或用户整个邮箱中的邮件进行[筛选、搜索或排序](query-parameters.md)。
 
@@ -68,7 +68,8 @@ Outlook 是 Office 365 的消息传递通信中心。 它还允许你管理联�
 
   - [创建和发送邮件](outlook-create-send-messages.md)
   - [邮件整理](outlook-organize-messages.md)方法
-  - 如何[获取已共享邮件](outlook-share-messages-folders.md)
+  - [获取邮件的 MIME 内容](outlook-get-mime-message.md)
+  - [获取共享邮件](outlook-share-messages-folders.md)
   - [获取 Outlook 资源的不可变标识符](outlook-immutable-id.md)
   - 如何[从其他用户身份发送邮件](outlook-send-mail-from-other-user.md)
 

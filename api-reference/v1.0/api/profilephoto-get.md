@@ -2,12 +2,12 @@
 title: 获取照片
 description: 获取指定的 profilePhoto 或其元数据（profilePhoto 属性）。
 localization_priority: Priority
-ms.openlocfilehash: 6b1a3e54b1145cc2fdcf8ed9e587652d4d7061c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: e0b115ecf3ce05d87856e553b111af537ffad0e3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833948"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576281"
 ---
 # <a name="get-photo"></a>获取照片
 
@@ -19,7 +19,7 @@ Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、24
 
 可以获取最大照片的元数据，也可以指定尺寸来获取相应照片尺寸的元数据。
 如果请求的大小不可用，则仍然可以获取用户已上载且可供使用的较小大小。
-例如，如果用户上传像素为 504x504 的照片，除 648x648 外所有尺寸的照片都可供下载。
+例如，如果用户上传像素为 504x504 的照片，除 648x648 外的所有尺寸的照片都可供下载。
 
 ## <a name="permissions"></a>权限
 
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-### <a name="get-the-metadata-of-the-photo"></a>获取元数据的照片
+### <a name="get-the-metadata-of-the-photo"></a>获取照片的元数据
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -58,16 +58,12 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-### <a name="get-the-metadata-for-a-specific-photo-size"></a>获取特定照片大小的元数据
+### <a name="get-the-metadata-for-a-specific-photo-size"></a>获取指定照片尺寸的元数据
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photos/{size}
 GET /users/{id | userPrincipalName}/photos/{size}
 GET /groups/{id}/photos/{size}
-GET /me/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
-GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
 ## <a name="path-parameters"></a>路径参数
@@ -77,7 +73,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 |size  |String  | 照片尺寸。 Office 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120、240x240、360x360、432x432、504x504 和 648x648。 如果照片存储在 Azure Active Directory 中，可以采用任何尺寸。 |
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 类型 | 说明|
@@ -92,9 +88,10 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 如果成功，此方法返回 `200 OK` 响应代码和所请求照片的二进制数据。如果照片不存在，此操作返回 `404 Not Found`。
 ### <a name="response-for-getting-the-metadata-of-the-photo"></a>获取照片元数据的响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [profilePhoto](../resources/profilephoto.md) 对象。
-## <a name="example"></a>示例
-##### <a name="request-1"></a>请求 1
-此请求为已登录用户获取最大可用大小的照片。
+## <a name="examples"></a>示例
+
+### <a name="example-1-get-the-photo-for-the-signed-in-user-in-the-largest-available-size"></a>示例 1：为已登录用户获取最大可用大小的照片
+##### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -102,12 +99,11 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response-1"></a>响应 1
-包含所请求照片的二进制数据。HTTP 响应代码为 200。
+##### <a name="response"></a>响应 
+包含所请求照片的二进制数据。 HTTP 响应代码为 200。
 
-##### <a name="request-2"></a>请求 2
-此请求获取已登录用户的 48x48 照片。
-
+### <a name="example-2-get-the-48x48-photo-for-the-signed-in-use"></a>示例 2：为已登录用户获取 48x48 的照片
+##### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -116,11 +112,11 @@ GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### <a name="response-2"></a>响应 2
-包含所请求的 48x48 照片的二进制数据。HTTP 响应代码为 200。
+##### <a name="response"></a>响应
+包含所请求的 48x48 照片的二进制数据。 HTTP 响应代码为 200。
 
-##### <a name="request-3"></a>请求 3
-此请求获取已登录用户的用户照片的元数据。
+### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>示例 3：获取已登录用户的用户照片的元数据
+##### <a name="request"></a>请求
 <!-- {
   "blockType": "ignored"
 }-->
@@ -128,9 +124,11 @@ Content-Type: image/jpg
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response-3"></a>响应 3
+##### <a name="response"></a>响应
 
-以下响应数据显示照片的元数据。注意：为了简单起见，可能会将此处所示的响应对象截断。
+以下响应数据显示照片的元数据。 
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "ignored"
 }-->
@@ -149,7 +147,9 @@ Content-type: application/json
 }
 ```
 
-以下响应数据显示还没有为用户上载照片时的响应内容。注意：为了简单起见，可能会将此处所示的响应对象截断。
+以下响应数据显示还没有为用户上传照片时的响应内容。
+
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 <!-- {
   "blockType": "ignored"

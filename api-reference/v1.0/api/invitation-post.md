@@ -1,17 +1,19 @@
 ---
 title: 创建邀请
-description: 使用该 API 创建新的邀请。邀请将外部用户添加至组织。
-localization_priority: Priority
+description: 使用该 API 创建新的邀请。 邀请会将外部用户添加至组织。
+localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ed6dbfe4991d3dc36fba8cf66ca0177a93effcf6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920973"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568073"
 ---
 # <a name="create-invitation"></a>创建邀请
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用该 API 创建新的[邀请](../resources/invitation.md)。邀请将外部用户添加至组织。
 
@@ -63,7 +65,7 @@ POST /invitations
   "name": "create_user_from_users"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/invitations
+POST https://graph.microsoft.com/beta/invitations
 Content-type: application/json
 Content-length: 551
 
@@ -105,14 +107,6 @@ Content-length: 551
   },
   "inviteRedirectUrl": "https://myapp.com/",
   "status": "Completed",
-  "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
+  "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: create_user_from_users/invitedUser:
-      Property 'invitedUser' is of type Custom but has no custom members."
-  ]
-}-->

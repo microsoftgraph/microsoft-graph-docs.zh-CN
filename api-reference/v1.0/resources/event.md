@@ -5,27 +5,27 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 5288087a5288f31903dcc25fd4ef186c1bcf8783
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990808"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555918"
 ---
 # <a name="event-resource-type"></a>事件资源类型
 
-[用户](user.md)日历或 Office 365[组](group.md)的默认日历中的事件。
+[用户](user.md)日历或 Office 365 [组](group.md)日历中的事件。
 
 该资源支持：
 
-- 将您自己的数据添加到自定义属性，作为[扩展](/graph/extensibility-overview)。
+- 将你自己的数据作为[扩展](/graph/extensibility-overview)添加到自定义属性。
 - 订阅[更改通知](/graph/webhooks)。
-- 通过提供 [delta](../api/event-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
+- 通过提供 [delta](../api/event-delta.md) 函数，使用 [delta 查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
-> **注意：** 有几个您可以与用户日历、 组日历和其事件交互的方式不同：
+> **注释：** 与用户日历、组日历及其事件交互的方式稍有不同：
 
- - 您可以组织只有用户日历中[calendarGroup](calendargroup.md)。
- - Outlook 自动接受代表组的所有会议请求。 您可以为_用户_日历仅[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)会议请求。
-  - Outlook 不支持为组事件的提醒。 您可以为仅_用户_日历[snooze](../api/event-snoozereminder.md)或[消除](../api/event-dismissreminder.md)的[提醒](reminder.md)。
+ - 只可以组织 [calendarGroup](calendargroup.md) 中的用户日历。
+ - Outlook 将代表组自动接受所有会议请求。 只可以[接受](../api/event-accept.md)、[暂时接受](../api/event-tentativelyaccept.md)或[拒绝](../api/event-decline.md)_用户_日历中的会议请求。
+  - Outlook 不支持对组事件提供提醒。 只可以[暂停](../api/event-snoozereminder.md)或[消除](../api/event-dismissreminder.md)_用户_日历中的[提醒](reminder.md)。
 
 ## <a name="methods"></a>方法
 
@@ -36,12 +36,12 @@ ms.locfileid: "27990808"
 |[获取事件](../api/event-get.md) | [事件](event.md) |读取 event 对象的属性和关系。|
 |[更新](../api/event-update.md) | [事件](event.md) |更新事件对象。 |
 |[删除](../api/event-delete.md) | 无 |删除事件对象。 |
-|[接受](../api/event-accept.md)|无|接受用户日历中指定的事件。|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|无|暂时接受用户日历中的指定的事件。|
-|[拒绝](../api/event-decline.md)|无|拒绝邀请用户日历中指定的事件。|
+|[接受](../api/event-accept.md)|无|接受用户日历中的指定事件。|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|无|暂时接受用户日历中的指定事件。|
+|[拒绝](../api/event-decline.md)|无|拒绝用户日历中的指定事件邀请。|
 |[delta](../api/event-delta.md)|[事件](event.md)集合|获取用户主日历的 **calendarView**（事件范围）中已添加、删除或更新的事件集。|
-|[dismissReminder](../api/event-dismissreminder.md)|无|消除用户日历中指定的事件的提醒。|
-|[snoozeReminder](../api/event-snoozereminder.md)|无|推迟指定事件提醒用户日历中的新时间之前。|
+|[dismissReminder](../api/event-dismissreminder.md)|无|消除用户日历中指定事件的提醒。|
+|[snoozeReminder](../api/event-snoozereminder.md)|无|将用户日历中指定事件的提醒推迟至新的时间。|
 |[列出实例](../api/event-list-instances.md) |[事件](event.md) 集合| 获取指定的时间范围的事件的实例（发生次数）。如果事件的类型是 `SeriesMaster`，这将返回在指定的时间范围内事件的发生次数和异常。|
 |**附件**| | |
 |[列出附件](../api/event-list-attachments.md) |[attachment](attachment.md) 集合| 获取事件的所有附件。|
@@ -65,32 +65,32 @@ ms.locfileid: "27990808"
 |changeKey|String|标识 event 对象的版本。每次事件更改时，ChangeKey 也将更改。这样，Exchange 可以将更改应用于该对象的正确版本。|
 |createdDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|事件结束的日期、时间和时区。|
-|hasAttachments|布尔|如果事件包含附件，则设置为 true。|
+|hasAttachments|Boolean|如果事件包含附件，则设置为 true。|
 |iCalUId|String|由不同日历间的所有事件实例共享的唯一标识符。 只读。|
 |id|String| 只读。|
-|importance|importance|事件的重要性。 可能的值为： `low`， `normal`， `high`。|
-|isAllDay|布尔|如果事件持续一整天，则设置为 true。|
-|isCancelled|布尔|如果事件已取消，则设置为 true。|
-|isOrganizer|布尔|如果邮件发件人也是组织者，则设置为 true。|
-|isReminderOn|布尔|如果设置警报以提醒用户有事件，则设置为 true。|
+|importance|importance|事件的重要性。 可能的值包括 `low`、`normal`、`high`。|
+|isAllDay|Boolean|如果事件持续一整天，则设置为 true。|
+|isCancelled|Boolean|如果事件已取消，则设置为 true。|
+|isOrganizer|Boolean|如果邮件发件人也是组织者，则设置为 true。|
+|isReminderOn|Boolean|如果设置警报以提醒用户有事件，则设置为 true。|
 |lastModifiedDateTime|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |location|[位置](location.md)|事件的位置。|
 |locations|[location](location.md) 集合|举办或参加活动的地点。 **location** 和 **locations** 属性总是相互对应。 如果更新 **location** 属性，**locations** 集合中所有以前的位置都将被删除并替换为新的 **location** 值。 |
-|onlineMeetingUrl|String|在线会议的 URL。 仅组织者指定为联机会议如 Skype 会议事件时，该属性是设置。 只读。|
-|organizer|[recipient](recipient.md)|事件的组织者。|
+|onlineMeetingUrl|String|联机会议的 URL。 仅当组织者将事件指定为联机会议（如 Skype 会议）时才会设置此属性。 只读。|
+|organizer － 组织者|[recipient](recipient.md)|事件的组织者。|
 |originalEndTimeZone|String|创建事件时设置的结束时区。 `tzone://Microsoft/Custom` 值表示旧的自定义时区已在桌面版 Outlook 中设置。|
 |originalStart|DateTimeOffset|时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`|
 |originalStartTimeZone|字符串|创建事件时设置的开始时区。`tzone://Microsoft/Custom` 值表示旧的自定义时区在桌面版 Outlook 中设置。 |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|事件的定期模式。|
 |reminderMinutesBeforeStart|Int32|事件开始时间（即提醒警报发生时间）之前的分钟数。|
-|responseRequested|布尔|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
+|responseRequested|Boolean|如果发件人希望接收事件被接受或拒绝时的响应，则设置为 true。|
 |responseStatus|[responseStatus](responsestatus.md)|指示在事件消息的响应中发送的响应类型。|
-|sensitivity|sensitivity| 可能的值为： `normal`， `personal`， `private`， `confidential`。|
-|seriesMasterId|String|定期系列主项目，如果该事件是定期系列的一部分的 ID。|
-|showAs|freeBusyStatus|要显示的状态。 可能的值为： `free`， `tentative`， `busy`， `oof`， `workingElsewhere`， `unknown`。|
+|sensitivity|敏感度| 可能的值包括 `normal`、`personal`、`private`、`confidential`。|
+|seriesMasterId|String|定期系列主项的 ID（如果此事件是定期系列的一部分）。|
+|showAs|freeBusyStatus|要显示的状态。 可能的值包括 `free`、`tentative`、`busy`、`oof`、`workingElsewhere`、`unknown`。|
 |start|[dateTimeTimeZone](datetimetimezone.md)|事件开始的日期、时间和时区。|
 |subject|String|事件的主题行文本。|
-|type|eventType|事件类型。 可能的值为： `singleInstance`， `occurrence`， `exception`， `seriesMaster`。 只读。|
+|type|eventType|事件类型。 可能的值包括 `singleInstance`、`occurrence`、`exception`、`seriesMaster`。 只读。|
 |webLink|String|要在 Outlook Web App 中打开事件的 URL。<br/><br/>如果你通过 Outlook Web App 登录邮箱，该事件将在浏览器中打开。如果尚未使用浏览器登录，系统将提示你登录。<br/><br/>可以从 iFrame 中访问此 URL。|
 
 ## <a name="relationships"></a>关系

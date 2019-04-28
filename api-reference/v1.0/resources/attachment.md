@@ -1,13 +1,13 @@
 ---
 title: attachment 资源类型
-description: 您可以将相关的内容添加到事件，
+description: 可向事件添加相关的内容，
 localization_priority: Priority
 ms.openlocfilehash: 284895871a0c6a80140ff248045b89d2de104c20
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892328"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569380"
 ---
 # <a name="attachment-resource-type"></a>attachment 资源类型
 
@@ -48,7 +48,7 @@ ms.locfileid: "27892328"
 |名称|String|附件的文件名。|
 |size|Int32|附件大小，以字节为单位。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 无
 
 ## <a name="json-representation"></a>JSON 表示形式

@@ -1,15 +1,15 @@
 ---
 title: 'group: getMemberGroups'
-description: 返回指定组所属的所有组。检查是可传递的，这和读取 memberOf 导航属性不同，后者仅返回该组是其直接成员的组。
+description: 返回指定组是其成员的所有组。 检查是可传递的，这和读取 memberOf 导航属性不同，后者仅返回该组是其直接成员的组。
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 578caa1660ee86f24483cff9143a9153ca448526
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934279"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575882"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 
@@ -27,7 +27,7 @@ ms.locfileid: "27934279"
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                              |
 | 应用程序                            | ~~Group.Read.All~~、Directory.Read.All、Directory.ReadWrite.All                             |
 
-> **注意：** 此 API 目前需要`Directory.Read.All`权限或更高版本。 使用`Group.Read.All`权限将返回错误。 这是一个已知 bug。
+> **注意：** 此 API 当前需要 `Directory.Read.All` 权限或更高权限。 使用 `Group.Read.All` 权限将返回错误。 这是一个已知 bug。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ POST /groups/{id}/getMemberGroups
 
 | 参数           | 类型    | 说明                                                                           |
 | :------------------ | :------ | :------------------------------------------------------------------------------------ |
-| securityEnabledOnly | 布尔 | 设置为 **false**。只支持对用户仅返回启用安全机制的组。 |
+| securityEnabledOnly | Boolean | 设置为 **false**。只支持对用户仅返回启用安全机制的组。 |
 
 ## <a name="response"></a>响应
 
@@ -78,9 +78,9 @@ Content-length: 33
 
 #### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 
-> **注意：** 可能为便于阅读缩短如下所示的响应对象。 所有属性都将通过实际调用返回。
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",

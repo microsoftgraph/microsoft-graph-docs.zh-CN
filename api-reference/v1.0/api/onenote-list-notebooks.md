@@ -2,16 +2,18 @@
 title: 列出笔记本
 description: 检索 notebook 对象列表。
 author: jewan-microsoft
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: b66b059d92b1177a6c2b5df9a9d978eb87dec53e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975482"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562144"
 ---
 # <a name="list-notebooks"></a>列出笔记本
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 [notebook](../resources/notebook.md) 对象列表。
 ## <a name="permissions"></a>权限
@@ -42,7 +44,7 @@ GET /sites/{id}/onenote/notebooks
 | 名称       | 类型 | 说明|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}。必需。 |
-| Accept | string | `application/json` |
+| 接受 | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
@@ -58,7 +60,7 @@ GET /sites/{id}/onenote/notebooks
   "name": "get_notebooks"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/notebooks
+GET https://graph.microsoft.com/beta/me/onenote/notebooks
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -82,6 +84,7 @@ Content-length: 369
       "isShared": true,
       "sectionsUrl": "sectionsUrl-value",
       "sectionGroupsUrl": "sectionGroupsUrl-value",
+      "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
       "links": {
         "oneNoteClientUrl": {
           "href": "href-value"
@@ -97,10 +100,13 @@ Content-length: 369
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List notebooks",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

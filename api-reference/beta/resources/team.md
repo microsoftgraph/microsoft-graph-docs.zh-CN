@@ -4,12 +4,12 @@ description: 'Microsoft Teams 中的团队是频道的集合。 '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 01bfcc5a036e2df8f91aad7ad06aa71ba41f1e28
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1fdf5a0ac96279054b5923e368d879409ab9ce85
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967599"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583184"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -67,7 +67,9 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
 |owners|[user](user.md)| 此团队的所有者列表。 目前，在使用应用程序权限创建团队时，必须指定一个所有者。 当使用用户委派的权限时，不能指定任何所有者（当前用户是所有者）。 必须将所有者指定为对象 ID (GUID)，而不是 UPN。 |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 | 
+|schedule|[日程安排](schedule.md)| 此团队的排班安排。|
 |template|[teamsTemplate](teamstemplate.md)| 创建此团队时所使用的模板。 请参阅[可用模板](https://docs.microsoft.com/zh-CN/MicrosoftTeams/get-started-with-teams-templates)。 |
+
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -85,9 +87,14 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
-  "internalId": "19:...big.number...@thread.skype",
+  "internalId": "string",
   "isArchived": false,
-  "webUrl": "https://...longUrl..."
+  "webUrl": "string (URL)",
+  "displayName": "string",
+  "description": "string",
+  "classification": "string",
+  "specialization": "string",
+  "visibility": "string"
 }
 
 ```
@@ -101,9 +108,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/team.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

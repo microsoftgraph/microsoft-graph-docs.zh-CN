@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 749fd17c6b76864728519f407e8d3c06dc6ad902
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930290"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560968"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -51,7 +51,7 @@ GET /organization
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回`200 OK`响应代码和响应正文中的一个[组织](../resources/organization.md)对象的集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和一个[组织](../resources/organization.md)对象的集合。
 
 ## <a name="example"></a>示例
 

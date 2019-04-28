@@ -4,11 +4,11 @@ description: Microsoft Graph 中的 SharePoint API 支持以下核心情形：
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 9edab0f8e4207dac2a88943a0a2cd1cbe58b97e3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945732"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583912"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>使用 Microsoft Graph 中的 SharePoint 网站
 
@@ -89,12 +89,15 @@ SharePoint API 公开了三种主要资源类型：
 
 | Path                                           | 说明
 |:-----------------------------------------------|:-----------------------------------
-| /sites/contoso.sharepoint.com:/teams/hr        | 与关联的网站https://contoso.sharepoint.com/teams/hr
+| /sites/contoso.sharepoint.com:/teams/hr        | 与 https://contoso.sharepoint.com/teams/hr 相关联的网站
 | /sites/contoso.sharepoint.com:/teams/hr:/drive | 访问此网站的默认[驱动器](drive.md)。
 
 ## <a name="note-for-existing-sharepoint-developers"></a>现有 SharePoint 开发人员须知
 
-Microsoft Graph SharePoint API 与 CSOM API 有几个主要区别。[网站][]资源映射到 `SPWeb`。网站集中的根[网站][] (`SPWeb`) 具有 [siteCollection](sitecollection.md) 方面，其中包含有关 `SPSite` 的信息。由于网站 ID 只在其网站集中是唯一的，因此按 ID 为网站寻址需要提供网站集标识符和网站标识符。
+Microsoft Graph SharePoint API 与 CSOM API 有几个主要区别。
+[网站][] 资源映射到 `SPWeb`。
+网站集中的根[网站][] (`SPWeb`) 具有 [siteCollection](sitecollection.md) facet，其中包含有关 `SPSite` 的信息。
+由于网站 ID 只在其网站集中是唯一的，因此按 ID 为网站寻址需要提供网站集标识符和网站标识符。
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id},{spweb-id}/
@@ -111,7 +114,7 @@ GET https://graph.microsoft.com/beta/sites/{hostname}
 GET https://graph.microsoft.com/beta/sites/{hostname},{spsite-id}
 ```
 
-[site]: site.md
+[网站]: site.md
 [list]: list.md
 [drive]: drive.md
 [siteCollection]: sitecollection.md

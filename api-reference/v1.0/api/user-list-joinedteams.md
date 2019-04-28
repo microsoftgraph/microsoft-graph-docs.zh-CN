@@ -1,33 +1,33 @@
 ---
 title: 列出 joinedTeams
-description: 获取用户已是直接成员的 Microsoft 团队中的团队。
+description: 获取用户不是其直接成员的 Microsoft Teams 团队。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 95dfa387a55dd5270035816d144ac3a6ac2b6703
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016700"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571378"
 ---
 # <a name="list-joinedteams"></a>列出 joinedTeams
 
 
 
-获取用户已是直接成员的 Microsoft 团队中的[团队](../resources/team.md)。
+获取用户不是其直接成员的 Microsoft Teams [团队](../resources/team.md)。
  
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | User.Read.All、User.ReadWrite.All    |
-|委派（个人 Microsoft 帐户） | 不支持。    |
+|委托（工作或学校帐户） | User.Read.All、User.ReadWrite.All    |
+|委托（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | User.Read.All、User.ReadWrite.All |
 
-> 用户委派权限与此操作仅适用于 me 用户。 
-> 应用程序权限，它适用于所有用户通过指定的特定用户 id。（me 别名不支持应用程序权限）
+> 使用用户委派的权限时，此操作仅适用于“me”用户。 
+> 使用应用程序权限时，此操作通过指定特定用户 ID 而适用于所有用户。（使用应用程序权限时，不支持“me”别名）
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -38,13 +38,13 @@ GET /users/{id}/joinedTeams
 ```
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
-目前不支持的[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
+目前不支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)。
 
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
-| Accept  | application/json|
+| 接受  | application/json|
 
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。

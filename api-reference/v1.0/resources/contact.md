@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 7b60333bec9bfca9d67fedc379e4a51ce768fba2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936835"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548101"
 ---
 # <a name="contact-resource-type"></a>联系人资源类型
 
@@ -17,9 +17,9 @@ ms.locfileid: "27936835"
 
 该资源支持：
 
-- 将您自己的数据添加到自定义属性，作为[扩展](/graph/extensibility-overview)。
+- 将你自己的数据作为[扩展](/graph/extensibility-overview)添加到自定义属性。
 - 订阅[更改通知](/graph/webhooks)。
-- 通过提供 [delta](../api/contact-delta.md) 函数使用[增量查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
+- 通过提供 [delta](../api/contact-delta.md) 函数，使用 [delta 查询](/graph/delta-query-overview)跟踪增量添加、删除和更新。
 
 
 ## <a name="methods"></a>方法
@@ -56,7 +56,7 @@ ms.locfileid: "27936835"
 |companyName|String|联系人所在公司的名称。|
 |createdDateTime|DateTimeOffset|创建联系人的时间。时间戳类型表示使用 ISO 8601 格式的日期和时间信息，并且始终处于 UTC 时间。例如，2014 年 1 月 1 日午夜 UTC 类似于如下形式：`'2014-01-01T00:00:00Z'`|
 |部门|String|联系人所在的部门。|
-|displayName|String|联系人的显示名称。 您可以[创建](../api/user-post-contacts.md)或[更新](../api/contact-update.md)操作中指定的显示名称。 请注意，以后对其他属性更新可能会导致自动生成的值覆盖已指定的显示名称值。 若要保留现有的值，请始终作为[更新](../api/contact-update.md)操作中的 displayName 包括它。|
+|displayName|String|联系人的显示名称。 可以在[创建](../api/user-post-contacts.md)或[更新](../api/contact-update.md)操作中指定显示名称。 请注意，对其他属性的后续更新可能会导致自动生成的值覆盖你指定的 displayName 值。 若要保留预先存在的值，请始终在[更新](../api/contact-update.md)操作中将其作为 displayName。|
 |emailAddresses|[EmailAddress](emailaddress.md) 集合|联系人的电子邮件地址。|
 |fileAs|String|联系人备案的姓名。|
 |generation|String|联系人所属的代。|
@@ -84,12 +84,12 @@ ms.locfileid: "27936835"
 |yomiGivenName|String|联系人的注音日文名字。|
 |yomiSurname|String|联系人的注音日文姓氏。|
 
-## <a name="relationships"></a>Relationships
+## <a name="relationships"></a>关系
 | 关系 | 类型   |说明|
 |:---------------|:--------|:----------|
 |extensions|[扩展](extension.md)集合|为联系人定义的开放扩展集合。只读。可为 Null。|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) 集合| 为联系人定义的多值扩展属性的集合。只读。可为 Null。|
-|photo|[profilePhoto](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
+|照片|[profilePhoto](profilephoto.md)| 可选的联系人照片。可以获取或设置联系人的照片。|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| 为联系人定义的单值扩展属性的集合。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式

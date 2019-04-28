@@ -1,25 +1,25 @@
 ---
-title: 创建工作组
-description: 创建新组下的工作组。
+title: 创建团队
+description: 在某个组下创建新的团队。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3d2d595d95e5276ac1785a9f03459cfd6c3085b6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959956"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570776"
 ---
-# <a name="create-team"></a>创建工作组
+# <a name="create-team"></a>创建团队
 
 
 
-创建新[团队](../resources/team.md)下一个[组](../resources/group.md)。
+在某个[组](../resources/group.md)下创建新的[团队](../resources/team.md)。
 
-用于创建团队、 组必须具有至少一个所有者。
+若要创建团队，组必须至少拥有一个所有者。
 
-如果创建不超过 15 分钟，则可能创建团队呼叫，因为复制延迟 404 错误代码失败。 建议的模式是重试创建团队呼叫三次与调用之间 10 秒的延迟。
+如果在不到 15 分钟之前创建组，则可能会因为重复延迟导致“创建团队呼叫”失败并显示错误代码 404。 建议的模式是重试“创建团队呼叫”三次，每次呼叫之间延迟 10 秒。
 
 ## <a name="permissions"></a>权限
 
@@ -31,7 +31,7 @@ ms.locfileid: "27959956"
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Group.ReadWrite.All |
 
-> **注意**： 此 API 支持管理员权限。 全局管理员和 Microsoft 团队服务管理员可以访问它们不的成员的组。
+> **注意**：此 API 支持管理员权限。 全局管理员和 Microsoft Teams 服务管理员可以访问自己不是其中成员的组。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,11 +50,11 @@ PUT /groups/{id}/team
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供一个[团队](../resources/team.md)对象的 JSON 表示形式。
+在请求正文中，提供 [team](../resources/team.md) 对象的 JSON 表示形式。
 
 ## <a name="response"></a>响应
 
-如果成功，则此方法应返回`201 Created`响应代码和响应正文中的[团队](../resources/team.md)对象。
+如果成功，此方法应该会在响应正文中返回 `201 Created` 响应代码和 [team](../resources/team.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -140,4 +140,4 @@ Content-length: 401
 
 ## <a name="see-also"></a>另请参阅
 
-- [与团队创建组](/graph/teams-create-group-and-team)
+- [创建包含团队的组](/graph/teams-create-group-and-team)

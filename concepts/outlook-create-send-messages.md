@@ -4,12 +4,12 @@ description: 电子邮件通过 Microsoft Graph 中的邮件资源表示。
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 160db6aae079d90f1ce20640429181cdbe6a4da5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 06074950ae1ea81be9546066ebff05825d44b700
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927609"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555183"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>自动创建、发送和处理邮件
 
@@ -109,5 +109,8 @@ Prefer: outlook.allow-unsafe-html
 详细了解以下信息：
 
 - [为什么与 Outlook 邮件集成](outlook-mail-concept-overview.md)
+- [获取 MIME 内容（预览版）](outlook-get-mime-message.md)
+- [获取共享邮件](outlook-share-messages-folders.md)
+- [从其他用户身份发送 Outlook 邮件](outlook-send-mail-from-other-user.md)
 - [获取 Outlook 资源的不可变标识符（预览版）](outlook-immutable-id.md)
 - [使用邮件 API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) 及其在 Microsoft Graph v1.0 中的[用例](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases)。

@@ -1,13 +1,13 @@
 ---
 title: 更新 profilephoto
-description: 更新已登录的**用户**，或指定的**组**或**联系人**的照片。 相那里
+description: 更新已登录**用户**、指定**组**或**联系人**的照片。 自此处起
 localization_priority: Priority
 ms.openlocfilehash: 39c5a0405a05d46cbd77f161cd45fb19c40d8b7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871818"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576344"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -24,7 +24,7 @@ ms.locfileid: "27871818"
 - **组**的个人资料照片 - Group.ReadWrite.All
 - **联系人**的照片 - Contacts.ReadWrite
 
-> **注意** 要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。若要了解详细信息，请参阅[无需已登录用户即可访问](/graph/auth-v2-service)。
+> **注意** 若要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->

@@ -1,15 +1,15 @@
 ---
 title: 列出事件
-description: '获取用户的邮箱中的事件对象的列表。 该列表包含单个 '
+description: '获取用户邮箱中的 event 对象列表。 该列表中包含单个 '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b5e23391c434e2ace5a567bb23efe5539ad7aee5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946306"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571406"
 ---
 # <a name="list-events"></a>列出事件
 
@@ -17,12 +17,12 @@ ms.locfileid: "27946306"
 
 要获取扩展的事件实例，可以[获取日历视图](calendar-list-calendarview.md)，或者[获取事件的实例](event-list-instances.md)。
 
-目前，此操作返回纯 HTML 格式的事件正文。
+目前，此操作仅返回 HTML 格式的事件正文。
 
-有两种方案，其中应用程序可在另一个用户的日历中获取事件：
+在以下两种情况下，应用程序可以获取其他用户的日历中的事件：
 
-* 如果应用程序具有应用程序权限，或，
-* 如果应用程序具有相应从一个用户委派[权限](#permissions)，并另一个用户具有与该用户，共享日历，或具有委派的访问赋予该用户。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
+* 如果该应用程序具有应用程序权限，或者
+* 如果应用程序具有来自某个用户的相应委派[权限](#permissions)，而另一个用户与该用户共享了日历，或者已为该用户授予委派的访问权限。 请参阅[详细信息和示例](/graph/outlook-get-shared-events-calendars)。
 
 ### <a name="support-various-time-zones"></a>支持不同时区
 
