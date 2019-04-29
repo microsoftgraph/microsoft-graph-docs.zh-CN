@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 86f7506ec06325657465a5762261a061bf0ad575
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554665"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33440064"
 ---
 # <a name="outlook-mail-api-overview"></a>Outlook 邮件 API 概述
 
