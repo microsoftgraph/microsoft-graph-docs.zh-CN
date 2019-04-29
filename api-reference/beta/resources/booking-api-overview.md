@@ -4,12 +4,12 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 7fc58a4fe0fb616963fd91d83a401d4ad8e1c43e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 78276af6a21653645d6c9344b5962d0c8f4086b2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529857"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328211"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>使用 Microsoft Graph 中的 Microsoft Bookings API
 
@@ -29,7 +29,8 @@ Microsoft Bookings 可让小型企业所有者以最少量的设置管理客户�
 第一次客户预约之前，请完成以下步骤。 确保为相应的操作提供适当的[访问令牌](/graph/auth-overview)。
 
 1. 确保企业具有 [Office 365 商业高级版](https://products.office.com/zh-CN/business/office-365-business-premium)订阅。
-2. 通过向实体集发送 POST 操作来创建新的 **bookingBusiness**。 至少应为新企业指定客户将看到的名称：<!-- { "blockType": "ignored" } -->
+2. 通过向实体集发送 POST 操作来创建新的 **bookingBusiness**。 至少应为新企业指定客户将看到的名称：
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
@@ -41,7 +42,8 @@ Content-Type: application/json
 ```
 使用 POST 响应中返回的新 **bookingBusiness** 的 **id** 属性继续[自定义](../api/bookingbusiness-update.md)企业设置，并为企业添加员工和服务。
 
-3. 为企业添加各个员工：<!-- { "blockType": "ignored" } -->
+3. 为企业添加各个员工：
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
 Authorization: Bearer {access token}
@@ -53,7 +55,8 @@ Content-Type: application/json
     "role": "externalGuest"
 }
 ```
-4. 定义企业提供的每项服务：<!-- { "blockType": "ignored" } -->
+4. 定义企业提供的每项服务：
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/services
 Authorization: Bearer {access token}
@@ -63,13 +66,15 @@ Content-Type: application/json
     "displayName":"Bento"
 }
 ```
-5. 发布企业的日程安排页面，让客户和企业经营者开始预约：<!-- { "blockType": "ignored" } -->
+5. 发布企业的日程安排页面，让客户和企业经营者开始预约：
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-通常，若要列出 Office 365 租户中的所有预订企业：<!-- { "blockType": "ignored" } -->
+通常，若要列出 Office 365 租户中的所有预订企业：
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
@@ -96,11 +101,3 @@ Authorization: Bearer {access token}
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的 API。
 - 请参阅[我们的一些合作伙伴如何使用 Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners)。
 - 了解如何在 Microsoft Graph 中选择[权限](/graph/permissions-reference)。
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/booking-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

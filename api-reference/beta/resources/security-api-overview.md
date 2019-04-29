@@ -4,12 +4,12 @@ description: " > **重要说明：** Microsoft Graph 中 /beta 版本下的 API 
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 051bd2a09c59736d50eea5cbfa330ee0d7d2a198
-ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
+ms.openlocfilehash: 417bed70dd9745a88129e40f11ac1e0f97ddafda
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30644312"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343395"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -60,11 +60,13 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表中�
 
 ## <a name="security-actions-preview"></a>安全操作（预览版）
 
-利用 Microsoft Graph 安全性 [securityAction](securityaction.md) 实体立即采取行动来抵御威胁。 当安全分析师发现新的指示器（如恶意文件、URL、域或 IP 地址）时，可立即在你的 Microsoft 安全解决方案中启用保护。 针对特定提供商采取操作，查看所采取的全部操作，还可在需要时取消操作。 请通过 [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)（即将推出）尝试安全操作，以使用在警报中看到或在调查期间确定的属性来阻止 Windows 终结点上的恶意活动。
+利用 Microsoft Graph 安全性 [securityAction](securityaction.md) 实体立即采取行动来抵御威胁。 当安全分析师发现新的指示器（如恶意文件、URL、域或 IP 地址）时，可立即在你的 Microsoft 安全解决方案中启用保护。 针对特定提供商采取操作，查看所采取的全部操作，还可在需要时取消操作。 请通过 [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 尝试安全操作，以使用在警报中看到或在调查期间确定的属性来阻止 Windows 终结点上的恶意活动。
+
+  > **注意：** 安全操作当前仅支持应用程序权限。
 
 ## <a name="secure-score-preview"></a>安全功能分数（预览版）
 
-[Microsoft 安全功能分数](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358)是一款安全分析解决方案，可让你了解安全项目组合以及如何改进这些组合。 只需一个分数，你就可以更好地了解已采取了哪些措施来降低 Microsoft 解决方案中的风险。 此外，你还可以将你的分数与其他组织比较，以了解你的分数趋势。 Microsoft Graph 安全性 [secureScore](securescores.md) 和 [secureScoreControlProfiles](securescorecontrolprofiles.md) 实体可以帮助你实现组织的安全性与生产力需求之间的平衡，同时支持相应的安全功能混合。 你也可以计划采取安全功能之后的分数。
+[Microsoft 安全功能分数](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358)是一款安全分析解决方案，可让你了解安全项目组合以及如何改进这些组合。 只需一个分数，你就可以更好地了解已采取了哪些措施来降低 Microsoft 解决方案中的风险。 此外，你还可以将你的分数与其他组织比较，以了解你的分数趋势。 Microsoft Graph 安全性 [secureScore](securescores.md) 和 [secureScoreControlProfile](securescorecontrolprofiles.md) 实体可以帮助你实现组织的安全性与生产力需求之间的平衡，同时支持相应的安全功能混合。 你也可以计划采取安全功能之后的分数。
 
 ## <a name="common-use-cases"></a>常见用例
 
@@ -120,11 +122,3 @@ Microsoft Graph 安全性 API 示例的[代码和贡献情况](https://github.co
 
 - [加入技术社区](https://aka.ms/graphsecuritycommunity)
 - [在 StackOverflow 上讨论](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/security-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

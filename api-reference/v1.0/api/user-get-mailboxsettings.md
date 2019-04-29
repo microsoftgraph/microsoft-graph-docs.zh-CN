@@ -1,15 +1,15 @@
 ---
 title: 获取用户的邮箱设置
-description: '获取用户的 mailboxSettings。 这包括 （通知时自动的人员的自动答复设置 '
+description: '获取用户的 mailboxSettings。 这包括自动答复设置（自动通知用户 '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0e68d50cde270c20c76bce1e703ff07ff45c2107
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 24f8dcd69085153c50976bf2447214bfb4f23a1c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914561"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345853"
 ---
 # <a name="get-user-mailbox-settings"></a>获取用户的邮箱设置
 
@@ -31,13 +31,15 @@ ms.locfileid: "27914561"
 |应用程序 | MailboxSettings.Read、MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>HTTP 请求
-若要获取的用户的所有邮箱设置：<!-- { "blockType": "ignored" } -->
+获取用户的所有邮箱设置：
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-若要获取特定设置-例如，仅自动答复设置、 区域设置、 时区、 或工作时间：<!-- { "blockType": "ignored" } -->
+获取特定设置，例如，仅获取自动答复设置、区域设置、时区或工作时间设置：
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -122,8 +124,8 @@ Content-type: application/json
             "thursday",
             "friday"
         ],
-        "startTime":"08:00:00.000",
-        "endTime":"17:00:00.000",
+        "startTime": "08:00:00.0000000",
+        "endTime": "17:00:00.0000000",
         "timeZone":{
             "name":"Pacific Standard Time"
         }

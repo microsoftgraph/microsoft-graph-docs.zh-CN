@@ -3,12 +3,12 @@ title: Microsoft Graph 已知问题
 description: 本文介绍了 Microsoft Graph 已知问题。若要了解最新更新，请参阅 Microsoft Graph 更改日志。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 12a24d57370dfd593c6056e30db0d956266b29a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2858701aaa795bad617c395c91d15508f6dd650f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555442"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341346"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Microsoft Graph 已知问题
 
@@ -230,7 +230,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 * 不支持多个命名空间。
 * 在用户、组、设备、服务主体和应用程序上，不支持对 `$ref` 执行 GET 操作和投影。
-* 不支持 `@odata.bind`。也就是说，开发者无法正确地在组上设置 `Accepted` 或 `RejectedSenders`。
+* `@odata.bind` 不受支持。这意味着开发人员将无法在组上适当设置 **acceptedSenders** 或 **rejectedSenders** 导航属性。
 * 使用极少的元数据时，非包容导航（如邮件）上不存在 `@odata.id`。
 * `$expand`:
   * 不支持 `nextLink`

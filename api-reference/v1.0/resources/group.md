@@ -4,12 +4,12 @@ description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: a99d63bd880fd37359ba1d72452093443d41236e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa18cf9ce8a0dbaf7f50c0b643335a5a992d9049
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570769"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324792"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -69,10 +69,10 @@ ms.locfileid: "32570769"
 |[列出线程](../api/group-list-threads.md) |[conversationThread](conversationthread.md) 集合| 获取组的所有线程。|
 |[更新线程](../api/group-update-thread.md) |无| 更新 thread 对象的属性。|
 |[删除线程](../api/group-delete-thread.md) |无| 删除 thread 对象。|
-|[列出 acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组 acceptedSenders 列表中的用户或组列表。|
+|[列出 acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组的“接受的发件人”列表中的用户或组列表。|
 |[添加 acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| 将用户或组添加到 acceptSenders 集合。|
 |[删除 acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| 从 acceptedSenders 集合中删除用户或组。|
-|[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组的 rejectedSenders 列表中的用户或组列表。|
+|[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) collection| 获取此组的“遭拒的发件人”列表中的用户或组列表。|
 |[Add rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| 将新用户或组添加到 rejectedSenders 集合中。|
 |[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| 从 rejectedSenders 集合中删除新用户或组。|
 |[创建设置](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |基于 groupSettingTemplate 创建设置对象。POST 请求必须为模板中定义的所有设置提供 settingValues。只有组特定模板可用于此操作。|

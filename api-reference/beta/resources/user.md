@@ -4,12 +4,12 @@ description: 表示 Azure AD 用户帐户。继承自 directoryObject。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ee05a3c826924b606de599f2fbcadbebb963192f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7754b884354244e5cc62355d73e11b9a9b7403e5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581301"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345068"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
@@ -203,27 +203,27 @@ ms.locfileid: "32581301"
 |createdObjects|[directoryObject](directoryobject.md) collection|由用户创建的 directory 对象。只读。可为 Null。|
 |directReports|[directoryObject](directoryobject.md) collection|向此用户报告的用户和联系人。（其 manager 属性已设置为此用户的用户和联系人。）只读。可为 Null。 |
 |drive|[drive](drive.md)|用户的 OneDrive。只读。|
+|drives|[drive](drive.md) 集合| 该用户的可用驱动器集合。只读。 |
 |活动|[event](event.md) 集合|用户的事件。默认显示“默认日历”下的事件。只读。可为 Null。|
 |extensions|[扩展](extension.md)集合|为用户定义的开放扩展集合。 可为 Null。|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| 基于显式指定的用户邮件的相关性分类，可以替代推断的相关性或重要性。 |
-|insights|[insights](insights.md) 集合| 此为只读属性。 可为 Null。|
+|insights|[officeGraphInsights](officegraphinsights.md) | 只读。可为 Null。|
 |joinedGroups|[group](group.md) 集合| 只读。可为 Null。|
 |mailFolders|[mailFolder](mailfolder.md) 集合| 用户的邮件文件夹。只读。可为 Null。|
 |manager|[directoryObject](directoryobject.md)|是此用户的经理的用户或联系人。只读。（HTTP 方法：GET、PUT、DELETE）|
 |memberOf|[directoryObject](directoryobject.md) 集合|用户所属的所有组、目录角色和管理单元。只读。可为 Null。|
 |joinedTeams|[group](group.md) 集合|用户所属的 Microsoft Teams。 只读。 可为 Null。|
 |messages|[message](message.md) 集合|邮箱或文件夹中的邮件。只读。可为 Null。|
-|onenote|[OneNote](onenote.md)| 只读。|
+|onenote|[onenote](onenote.md)| 只读。|
 |outlook|[outlookUser](outlookuser.md)| 用户可用的选择性 Outlook 服务。 只读。 可为 Null。|
 |ownedDevices|[directoryObject](directoryobject.md) collection|用户拥有的设备。只读。可为 Null。|
 |ownedObjects|[directoryObject](directoryobject.md) collection|用户拥有的 directory 对象。只读。可为 Null。|
 |people|[person](person.md) 集合| 只读。与用户最相关的人员。该集合按其与用户的相关性排序，相关性由用户的通信、协作和业务关系决定。人脉是邮件、联系人和社交网络中的信息聚合。|
 |photo|[profilePhoto](profilephoto.md)| 用户的个人资料照片。只读。|
-|photos|[Photo](photo.md) 集合| 只读。可为 Null。|
-|planner|[plannerUser](planneruser.md)| 用户可用的选择性 Planner 服务。 只读。 可为 Null。 |
-|sharepoint|[sharepoint](sharepoint.md)| 访问用户的 SharePoint 网站。只读。 |
+|photos|[photo](photo.md) 集合| 只读。可为 Null。|
+|planner|[plannerUser](planneruser.md)| 用户可用的选择性 Planner 服务。 只读。 可为空。 |
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) 集合| 该用户的作用域角色管理单元成员身份。 只读。 可为 Null。|
-|settings|[settings](user-settings.md) 集合| 只读。可为 Null。|
+|settings|[userSettings](user-settings.md) | 只读。可为 Null。|
 |registeredDevices|[directoryObject](directoryobject.md) collection|已注册的用户的设备。只读。可为 Null。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -243,6 +243,7 @@ ms.locfileid: "32581301"
     "createdObjects",
     "directReports",
     "drive",
+    "drives",
     "events",
     "extensions",
     "joinedGroups",
@@ -319,30 +320,40 @@ ms.locfileid: "32581301"
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
-
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],
-  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
-  "calendars": [ {"@odata.type": "microsoft.graph.calendar"} ],
-  "contacts": [ { "@odata.type": "microsoft.graph.contact" } ],
-  "contactFolders": [ { "@odata.type": "microsoft.graph.contactFolder" } ],
-  "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "insights": { "@odata.type": "microsoft.graph.officeGraphInsights" },
-  "settings": { "@odata.type": "microsoft.graph.userSettings" },
-  "events": [ { "@odata.type": "microsoft.graph.event" } ],
-  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
-  "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },
-  "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
-  "manager": { "@odata.type": "microsoft.graph.directoryObject" },
-  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "joinedTeams": [ { "@odata.type": "microsoft.graph.group" } ],
-  "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "outlook": { "@odata.type": "microsoft.graph.outlookUser" },
-  "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "calendar": {"@odata.type": "microsoft.graph.calendar"},
+  "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
+  "calendarView": [{"@odata.type": "microsoft.graph.event"}],
+  "calendars": [{"@odata.type": "microsoft.graph.calendar"}],
+  "contacts": [{"@odata.type": "microsoft.graph.contact"}],
+  "contactFolders": [{"@odata.type": "microsoft.graph.contactFolder"}],
+  "createdObjects": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "drive": {"@odata.type": "microsoft.graph.drive"},
+  "drives": [{"@odata.type": "microsoft.graph.drive"}],
+  "insights": {"@odata.type": "microsoft.graph.officeGraphInsights"},
+  "settings": {"@odata.type": "microsoft.graph.userSettings"},
+  "events": [{"@odata.type": "microsoft.graph.event"}],
+  "extensions": [{"@odata.type": "microsoft.graph.extension"}],
+  "inferenceClassification": {"@odata.type": "microsoft.graph.inferenceClassification"},
+  "mailFolders": [{"@odata.type": "microsoft.graph.mailFolder"}],
+  "manager": {"@odata.type": "microsoft.graph.directoryObject"},
+  "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "joinedTeams": [{"@odata.type": "microsoft.graph.group"}],
+  "messages": [{ "@odata.type": "microsoft.graph.message"}],
+  "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
+  "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "createdDateTime": "2019-02-07T21:53:13.067Z",
+  "employeeId": "string",
+  "faxNumber": "string",
+  "onPremisesDistinguishedName": "string",
+  "onPremisesDomainName": "string",
+  "onPremisesSamAccountName": "string",
+  "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
+  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
+  "showInAddressList": true
 }
 ```
 
@@ -354,12 +365,13 @@ ms.locfileid: "32581301"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/user.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-}-->
+  "suppressions": []
+}
+-->

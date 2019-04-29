@@ -4,12 +4,12 @@ description: '表示应用程序。 任何将身份验证外包到 Azure Active 
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a0bed2d85e0b7308e8006c99143ea80e2d756202
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548199"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339080"
 ---
 # <a name="application-resource-type"></a>应用程序资源类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "32548199"
 
 | 属性 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|api|[api](api.md)| 指定 API 应用程序的设置。 |
+|api|[apiApplication](apiapplication.md)| 指定 API 应用程序的设置。 |
 |appId| String | Azure AD 分配给应用程序的应用程序唯一标识符。 不可为 Null。 只读。 |
 |appRoles|[appRole](approle.md) 集合|应用程序可声明的应用程序角色的集合。 这些角色可以分配给用户、组或服务主体。 不可为 Null。|
 |createdDateTime|DateTimeOffset| 注册应用程序的日期和时间。 |
@@ -57,20 +57,20 @@ ms.locfileid: "32548199"
 |logo|Stream|应用程序的主徽标。 不可为 Null。 |
 |optionalClaims|optionalClaims| 保留供以后使用。 |
 |orgRestrictions|String 集合| 保留供以后使用。 |
-|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |指定应用程序的家长控制设置。|
+|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) 集合 |指定应用程序的家长控制设置。|
 |passwordCredentials|[passwordCredential](passwordcredential.md) 集合|与应用程序关联的密码凭据集合。 不可为 Null。|
-|publicClient|[publicClient](publicclient.md)| 指定已安装客户端（如台式设备或移动设备）的设置。 |
+|publicClient|[publicClientApplication](publicclientapplication.md)| 指定已安装客户端（如台式设备或移动设备）的设置。 |
 |publisherDomain| String | 应用程序的已验证发布者域。 只读。|
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) 集合|指定此应用程序需要访问的资源以及在每个资源下所需的 OAuth 权限范围和应用程序角色集。 这种预配置的所需资源访问权限可驱动同意体验。 不可为 Null。|
 |signInAudience | String | 指定当前应用程序支持的 Microsoft 帐户。 支持的值为：<ul><li>**AzureADMyOrg**：在我的组织的 Azure AD 租户（即单租户）中拥有 Microsoft 工作或学校帐户的用户</li><li>**AzureADMultipleOrgs**：在任意组织的 Azure AD 租户（即多租户）中拥有 Microsoft 工作或学校帐户的用户</li> <li>**AzureADandPersonalMicrosoftAccount**：拥有个人 Microsoft 帐户或任意组织的 Azure AD 租户中的工作或学校帐户的用户</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |tags|String 集合| 可用于分类和标识应用程序的自定义字符串。 |
-|web|[web](web.md)| 指定 Web 应用程序的设置。 |
+|web|[webApplication](webapplication.md)| 指定 Web 应用程序的设置。 |
 
 ## <a name="relationships"></a>关系
 
 | 关系 | 类型 | 说明 |
 |:---------------|:--------|:----------|
-|calls           |[call](call.md) 集合                  |只读。 可为 Null。|
+|calls           |[call](call.md) 集合                  |只读。可为 Null。|
 |connectorGroup|[connectorGroup](connectorgroup.md)| 应用程序与 Azure AD 应用程序代理一起使用的 connectorGroup。 可为 Null。|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| 只读。|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) 集合|只读。可为 Null。|
@@ -83,6 +83,7 @@ ms.locfileid: "32548199"
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
     "createdOnBehalfOf",
     "owners"
@@ -104,7 +105,7 @@ ms.locfileid: "32548199"
   "isFallbackPublicClient": true,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
-  "optionalClaims": [{"@odata.type": "microsoft.graph.optionalClaims"}],
+  "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
   "orgRestrictions": ["Guid"],
   "parentalControlSettings": [{"@odata.type": "microsoft.graph.parentalControlSettings"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
@@ -127,8 +128,6 @@ ms.locfileid: "32548199"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/application.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

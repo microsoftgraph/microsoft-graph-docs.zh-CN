@@ -1,26 +1,26 @@
 ---
-title: Microsoft Graph beta 终结点引用
-description: 本节中的参考内容的文档的 Microsoft Graph beta 终结点。 Beta 终结点包括当前正在预览和尚不可用通常 Api。 我们邀请您尝试使用这些 Api，并提供以下频道通过您的反馈：
+title: Microsoft Graph beta 终结点参考
+description: 此部分中的参考内容记录了 Microsoft Graph beta 终结点。 beta 终结点包含当前处于预览版且未正式发布的 API。 我们诚邀你来试用这些 API 并通过下列渠道提供反馈：
 localization_priority: Priority
 ms.openlocfilehash: 9f9223c36679865b40303dc3530dee9c2c93950d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874303"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544006"
 ---
-# <a name="microsoft-graph-beta-endpoint-reference"></a>Microsoft Graph beta 终结点引用
+# <a name="microsoft-graph-beta-endpoint-reference"></a>Microsoft Graph beta 终结点参考
 
-本节中的参考内容的文档的 Microsoft Graph beta 终结点。 Beta 终结点包括当前正在预览和尚不可用通常 Api。 我们邀请您尝试使用这些 Api，并提供以下频道通过您的反馈：
+此部分中的参考内容记录了 Microsoft Graph beta 终结点。 beta 终结点包含当前处于预览版且未正式发布的 API。 我们诚邀你来试用这些 API 并通过下列渠道提供反馈：
 
-- [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues) -上预览 Api 的反馈。 标记`beta`。
-- [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph) -问题或帮助您的代码。 标记`microsoftgraph`。
+- [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues) - 有关预览 API 的反馈。 请标记上 `beta`。
+- [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph) - 有关问题或代码帮助。 请标记上 `microsoftgraph`。
 
-> **注意：** beta 终结点中的 API 可能会发生更改。建议不要在生产应用中使用它们。 
+> **注意：** beta 终结点中的 API 可能会发生更改。 建议不要在生产应用中使用它们。 
 
 ## <a name="call-the-beta-endpoint"></a>调用 beta 终结点
 
-对 beta 终结点的 Microsoft Graph API 请求使用以下模式：
+针对 beta 终结点的 Microsoft Graph API 请求使用以下模式：
 
 ```
     https://graph.microsoft.com/beta/{resource}?[query_parameters]

@@ -2,12 +2,12 @@
 title: signIn 资源类型
 description: '此资源详细说明目录中的用户或应用程序登录活动。 '
 localization_priority: Priority
-ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9736e906810ce1be1525bf85b687f4a5f1a57f3e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557970"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343015"
 ---
 # <a name="signin-resource-type"></a>signIn 资源类型
 此资源详细说明目录中的用户或应用程序登录活动。 
@@ -41,11 +41,10 @@ ms.locfileid: "32557970"
 |riskDetail|`riskDetail`|提供风险用户、登录或风险事件的特定状态背后的“原因”。 可取值包括：`none`、`adminGeneratedTemporaryPassword`、`userPerformedSecuredPasswordChange`、`userPerformedSecuredPasswordReset`、`adminConfirmedSigninSafe`、`aiConfirmedSigninSafe`、`userPassedMFADrivenByRiskBasedPolicy`、`adminDismissedAllRiskForUser`、`adminConfirmedSigninCompromised`、`unknownFutureValue`。 值 `none` 表示到目前为止尚未对用户或登录执行任何操作。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
 |riskLevelAggregated|`riskLevel`|提供聚合的风险级别。 可取值为：`none`、`low`、`medium`、`high`、`hidden` 和 `unknownFutureValue`。 值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
 |riskLevelDuringSignIn|`riskLevel`|提供登录期间的风险级别。 可取值为：`none`、`low`、`medium`、`high`、`hidden` 和 `unknownFutureValue`。 值 `hidden` 表示用户或登录未启用 Azure AD Identity Protection。 **注意：** 此属性的详细信息仅适用于 Azure AD Premium P2 客户。 对于所有其他客户，将返回 `hidden`。|
-|riskEventTypes|`riskEventTypes`|提供与登录关联的风险事件类型列表。 可取值为：`unlikelyTravel`、`anonymizedIPAddress`、`maliciousIPAddress`、`unfamiliarFeatures`、`malwareInfectedIPAddress`、`suspiciousIPAddress`、`leakedCredentials`、`investigationsThreatIntelligence`、`generic` 和 `unknownFutureValue`。|
+|riskEventTypes|`riskEventType` 集合|提供与登录关联的风险事件类型列表。 可取值为：`unlikelyTravel`、`anonymizedIPAddress`、`maliciousIPAddress`、`unfamiliarFeatures`、`malwareInfectedIPAddress`、`suspiciousIPAddress`、`leakedCredentials`、`investigationsThreatIntelligence`、`generic` 和 `unknownFutureValue`。|
 |riskState|`riskState`|提供风险用户、登录或风险事件的“风险状态”。 可取值包括：`none`、`confirmedSafe`、`remediated`、`dismissed`、`atRisk`、`confirmedCompromised`、`unknownFutureValue`。|
 |mfaDetail|[mfaDetail](mfadetail.md)|提供相应登录的 MFA 相关信息，例如“需要 MFA”、“MFA 状态”。|
-|networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|提供有关网络位置的详细信息。|
-|riskLevel|string| 提供与登录相关的风险级别。可取值为：`low`、`medium`、`high`。|
+|networkLocationDetails|[networkLocationDetail](networklocationdetail.md) 集合|提供有关网络位置的详细信息。|
 |status|[signInStatus](signinstatus.md)|提供登录状态。 可取值包括 `Success` 和 `Failure`。|
 |userDisplayName|String|指示用户的显示名称。|
 |userId|String|指示用户的用户 ID。|
@@ -95,11 +94,13 @@ ms.locfileid: "32557970"
   "riskLevelAggregated": "string",
   "riskLevelDuringSignIn": "string",
   "riskState": "string",
-  "riskEventTypes": "string",
+  "riskEventTypes": ["String"],
   "resourceDisplayName": "string",
   "resourceId": "string",
   "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
+  "processingTimeInMilliseconds": 12356,
+  "networkLocationDetails": [{"@odata.type": "microsoft.graph.networkLocationDetail"}]
 }
 
 ```

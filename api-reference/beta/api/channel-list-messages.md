@@ -4,12 +4,12 @@ description: '检索团队频道中的消息列表（无回复）。 若要获�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: c5b442ff81f08d4daf9112e3eb129330877cba5f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e56c866ab8f9192e36b8c47752377bc384e9b41a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456491"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328129"
 ---
 # <a name="list-channel-messages"></a>列出频道消息
 
@@ -20,6 +20,7 @@ ms.locfileid: "32456491"
 若要获取消息的回复，请调用[列出消息回复](channel-get-messagereply.md)或[获取消息回复](channel-list-messagereplies.md) API。 
 
 ## <a name="permissions"></a>权限
+
 需要以下权限之一才能调用此 API。要了解包括如何选择权限的详细信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型|权限（从最低特权到最高特权）|
@@ -29,6 +30,7 @@ ms.locfileid: "32456491"
 |Application| 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/messages
@@ -39,18 +41,23 @@ GET /teams/{id}/channels/{id}/messages
 可以使用 [$top](/graph/query-parameters#top-parameter) 查询参数控制每个响应中的项目数。 目前不支持其他 [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
+
 | 标头       | 值 |
 |:---------------|:--------|
 | Authorization  | Bearer {token}。必需。  |
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatmessage](../resources/chatmessage.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chatMessage](../resources/chatmessage.md) 对象集合。
+
 ## <a name="example"></a>示例
+
 ##### <a name="request"></a>请求
+
 下面是一个请求示例。
 <!-- {
   "blockType": "request",
@@ -229,8 +236,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/channel-list-messages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

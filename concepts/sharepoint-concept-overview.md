@@ -3,12 +3,12 @@ title: SharePoint 网站和内容 API 概述
 description: SharePoint 是移动且智能的内部网。 借助 SharePoint，用户可以共享和管理内容、知识和应用程序，以增强团队合作、查找信息并在整个组织内进行协作。 你可以在 Microsoft Graph 中使用 SharePoint REST API，将解决方案与 SharePoint 网站和内容进行集成。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7f703854112643afc11cf82b32b6b9247f0bca39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5e794d52bd0f876e1572b1bca5bca23fbd40154a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573478"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345818"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>SharePoint 网站和内容 API 概述
 
@@ -58,9 +58,9 @@ SharePoint 将文件存储在名为文档库的特殊[列表类型][]中。
 
 ## <a name="next-steps"></a>后续步骤
 
-通过了解关于[使用网站][SharePoint]的更多信息来开始在 Microsoft Graph 中使用 SharePoint。
+详细了解[使用网站](/graph/api/resources/sharepoint?view=graph-rest-1.0)，开始在 Microsoft Graph 中使用 SharePoint。
 
-[列表]: /graph/api/resources/list?view=graph-rest-1.0
+[list]: /graph/api/resources/list?view=graph-rest-1.0
 [列]: /graph/api/resources/columndefinition?view=graph-rest-1.0
 [列表类型]: /graph/api/resources/listinfo?view=graph-rest-1.0
 [创建]: /graph/api/list-create?view=graph-rest-1.0

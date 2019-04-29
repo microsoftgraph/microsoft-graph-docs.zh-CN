@@ -4,12 +4,12 @@ description: 表示 Azure Active Directory (Azure AD) 组，可以是 Office 365
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e350ebe21b9db1f4e0b9b954a6621a1d26e81d29
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e5f369e1c95e13cb4b4c16aa3317e78c33c5d601
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547464"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340189"
 ---
 # <a name="group-resource-type"></a>组资源类型
 
@@ -75,10 +75,10 @@ ms.locfileid: "32547464"
 |[列出线程](../api/group-list-threads.md) |[conversationThread](conversationthread.md) 集合| 获取组的所有线程。|
 |[更新线程](../api/group-update-thread.md) |无| 更新 thread 对象的属性。|
 |[删除线程](../api/group-delete-thread.md) |无| 删除 thread 对象
-|[List acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组 acceptedSenders 列表中的用户或组列表。|
+|[List acceptedSenders](../api/group-list-acceptedsenders.md) |[directoryObject](directoryobject.md) collection| 获取此组的“接受的发件人”列表中的用户或组列表。|
 |[添加 acceptedSender](../api/group-post-acceptedsenders.md) |[directoryObject](directoryobject.md)| 将用户或组添加到 acceptSenders 集合。|
 |[删除 acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| 从 acceptedSenders 集合中删除用户或组。|
-|[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) 集合| 获取此组的 rejectedSenders 列表中的用户或组列表。|
+|[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) collection| 获取此组的“遭拒的发件人”列表中的用户或组列表。|
 |[Add rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| 将新用户或组添加到 rejectedSenders 集合中。|
 |[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| 从 rejectedSenders 集合中删除新用户或组。|
 |**开放扩展**| | |
@@ -161,8 +161,8 @@ ms.locfileid: "32547464"
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) 集合|此组的生命周期策略集合。 只读。 可为 NULL。|
 |memberOf|[directoryObject](directoryobject.md) 集合|此组所属的组和管理单元。 HTTP 方法：GET（支持所有组） 只读。 可为 Null。|
 |members|[directoryObject](directoryobject.md) 集合| 属于此组成员的用户、联系人和组。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
-|membersWithLicenseErrors|[User](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。 只读。|
-|onenote|[OneNote](onenote.md)| 只读。|
+|membersWithLicenseErrors|[user](user.md) 集合|在该基于组的许可证分配中存在许可证错误的组成员列表。 只读。|
+|onenote|[onenote](onenote.md)| 只读。|
 |owners|[directoryObject](directoryobject.md) 集合|组的所有者。 所有者是一组允许修改此对象的非管理员用户。 HTTP 方法：GET（支持所有组）、POST（支持安全组和启用邮件的安全组）、DELETE（仅支持安全组）。只读。 可为 NULL。|
 |photo|[profilePhoto](profilephoto.md)| 组的个人资料照片。 |
 |photos|[profilePhoto](profilephoto.md) 集合| 组拥有的个人资料照片。只读。可为 Null。|
@@ -201,7 +201,6 @@ ms.locfileid: "32547464"
     "settings",
     "sites",
     "threads",
-
     "allowExternalSenders",
     "assignedLicenses",
     "autoSubscribeNewMembers",
@@ -229,7 +228,7 @@ ms.locfileid: "32547464"
   "expirationDateTime": "String (timestamp)",
   "groupTypes": ["string"],
   "id": "string (identifier)",
-  "isFavorite": true,  
+  "isFavorite": true,
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
   "mail": "string",
@@ -239,7 +238,7 @@ ms.locfileid: "32547464"
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": ["string"],
+  "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
@@ -247,21 +246,27 @@ ms.locfileid: "32547464"
   "unseenCount": 1024,
   "unseenMessagesCount": 1024,
   "visibility": "string",
-  "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
-  "conversations": [ { "@odata.type": "microsoft.graph.conversation" }],
-  "createdOnBehalfOf": { "@odata.type": "microsoft.graph.directoryObject" },
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "events": [ { "@odata.type": "microsoft.graph.event" }],
-  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "members": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "acceptedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "calendar": {"@odata.type": "microsoft.graph.calendar"},
+  "calendarView": [{"@odata.type": "microsoft.graph.event"}],
+  "conversations": [{"@odata.type": "microsoft.graph.conversation"}],
+  "createdOnBehalfOf": {"@odata.type": "microsoft.graph.directoryObject"},
+  "drive": {"@odata.type": "microsoft.graph.drive"},
+  "events": [{"@odata.type": "microsoft.graph.event"}],
+  "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "members": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "membersWithLicenseErrors": [{"@odata.type": "microsoft.graph.user"}],
-  "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "sites": [ { "@odata.type": "microsoft.graph.site" } ],
-  "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
+  "owners": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "rejectedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "sites": [{"@odata.type": "microsoft.graph.site"}],
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}],
+  "classification": "string",
+  "hasMembersWithLicenseErrors": true,
+  "membershipRule": "string",
+  "membershipRuleProcessingState": "string",
+  "preferredLanguage": "string",
+  "theme": "string"
 }
 
 ```
@@ -282,8 +287,6 @@ ms.locfileid: "32547464"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/group.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
