@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 746902cb9e091a5b206966c631d6b68930e76ff9
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.openlocfilehash: 7cf2521f5e119b5270344aef25b775d49451e9cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31981066"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33440092"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,12 +17,24 @@ ms.locfileid: "31981066"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="april-2019"></a>2019 年 4 月
+
+### <a name="access-reviews-api"></a>访问评审 API
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 添加应用程序权限AccessReview.Read.All、ProgramControl.Read.All 和 ProgramControl.ReadWrite.All。 有关详细信息，请参阅[访问评审 API 参考](/graph/api/resources/accessreviews-root?view=graph-rest-beta) |
+
 ### <a name="azure-ad-b2c-apis"></a>Azure AD B2C API
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | 添加项 | Beta |引入新的资源类型 [trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta)。 此资源类型支持[创建](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta)、[列表](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta)、[获取](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta)、[更新](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta)和[删除](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta)操作。|
 
+### <a name="webhooks-change-notifications"></a>Webhook（更改通知）
+
+| **更改类型** | **版本**   | **说明**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| 添加项 | beta | 添加 `subscriptionRemoved` 和 `missed` 这两种类型的生命周期通知，它们可对 Outlook 资源使用。 订阅应用可执行适当的操作来缓解通知中断的问题。 有关更多详细信息，请参阅[减少 Outlook 资源丢失的订阅和通知](webhooks-outlook-authz.md)。|
 
 ### <a name="directory-apis"></a>目录 API
 
@@ -76,7 +88,9 @@ ms.locfileid: "31981066"
 
 | **更改类型** | **版本**   | **说明**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| 添加项        | beta          | 添加了对 [List Messages](/graph/api/user-list-messages?view=graph-rest-beta) 和 [Get Message](/graph/api/message-get?view=graph-rest-beta) 的新 [Mail.ReadBasic（预览版）权限](permissions-reference.md#mail-permissions)的支持。            |
+| 添加项        | Beta          | 添加了对 [List Messages](/graph/api/user-list-messages?view=graph-rest-beta) 和 [Get Message](/graph/api/message-get?view=graph-rest-beta) 的新 [Mail.ReadBasic（预览版）权限](permissions-reference.md#mail-permissions)的支持。            |
+| Addition        | Beta          | 添加了[获取消息的 MIME 内容](outlook-get-mime-message.md)的功能。 |
+| 添加项        | Beta          | 向事件、消息、Outlook 任务或组帖子添加了[获取文件或项目附件的原始内容](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment)的功能。 |
 
 ### <a name="microsoft-teams-apis"></a>Microsoft Teams API
 
@@ -84,6 +98,7 @@ ms.locfileid: "31981066"
 | :-------------- | :------------ | :--------------------------------------- |
 |添加项 |v1.0 | 增加了对 [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) 资源的应用程序权限的支持。|
 |添加项 |v1.0| 向 [channel](/graph/api/resources/channel?view=graph-rest-1.0) 添加了**email** 和 **webUrl** 属性。|
+| 添加项 | beta | 添加了 [chat](/api-reference/beta/resources/chat.md) 资源及相关方法。 |
 
 ## <a name="march-2019"></a>2019 年 3 月
 
@@ -118,6 +133,7 @@ ms.locfileid: "31981066"
 | 添加项 | beta | 在 [educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta) 资源上添加 **recipients** 属性。|
 
 ### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+
 |更改类型|版本|说明|
 |:---|:---|:---|
 |添加|beta|添加的新实体：<br/>[windowsHealthMonitoringConfiguration](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringconfiguration?view=graph-rest-beta)<br/>|
@@ -1490,7 +1506,7 @@ ms.locfileid: "31981066"
 |Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [cleanWindowsDevice](/graph/api/intune-devices-manageddevice-cleanwindowsdevice?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [logoutSharedAppleDeviceActiveUser](/graph/api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [deleteUserFromSharedAppleDevice](/graph/api/intune-devices-manageddevice-deleteuserfromsharedappledevice?view=graph-rest-1.0) 操作 |
-|Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [syncDevice](/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0) 操作 |
+|添加项|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [syncDevice](/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0) 操作 |
 |添加|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [windowsDefenderScan](/graph/api/intune-devices-manageddevice-windowsdefenderscan?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [windowsDefenderUpdateSignatures](/graph/api/intune-devices-manageddevice-windowsdefenderupdatesignatures?view=graph-rest-1.0) 操作 |
 |Addition|v1.0|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0) 上添加了 [updateWindowsDeviceAccount](/graph/api/intune-devices-manageddevice-updatewindowsdeviceaccount?view=graph-rest-1.0) 操作 |
@@ -2873,7 +2889,7 @@ ms.locfileid: "31981066"
 
 ### <a name="outlook-calendar"></a>Outlook 日历
 
-| **更改类型** | **Version** | **说明**                          |
+| **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | 添加项        | v1.0        | 向 [event](/graph/api/resources/event?view=graph-rest-1.0) 资源添加了 **onlineMeetingUrl** 属性。 |
 | Addition        | Beta        | 向事件资源添加了 [forward](/graph/api/event-forward?view=graph-rest-beta) 操作。 |
@@ -3208,7 +3224,7 @@ ms.locfileid: "31981066"
 | 修补程序             | v1.0 和 beta | 修复了对操作参数名称和值不区分大小写的错误。 |
 | 修补程序             | v1.0 和 beta | 修复了对包含某些嵌入复杂属性的 null 值的有效负载的请求处理出现 null 引用异常的问题。 |
 | Addition        | v1.0 和 beta | 添加了对复杂类型属性进行排序和筛选的支持。 |
-| Addition        | v1.0 和 beta | 在 401 响应上的 www-authenticate 标头中添加了 authorization_uri 属性。该 URL 可用于启动令牌获取流。 |
+| 添加项        | v1.0 和 beta | 在 401 响应上的 www-authenticate 标头中添加了 authorization_uri 属性。该 URL 可用于启动令牌获取流。 |
 | 添加项        | v1.0 和 beta | 改进了用户和组中的错误消息。 |
 
 ### <a name="groups"></a>组
