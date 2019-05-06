@@ -4,12 +4,12 @@ description: 此操作使与此提交相关联的评分和反馈可供学生使�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 8d86cb72b54acae5485125e5516e494baeeaccef
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c93eb6c1c7f2136b32b61f394069146b47ebae97
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324850"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33587543"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission: 返回
 
@@ -67,6 +67,16 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/educationsubmission_return-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/educationsubmission_return-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -77,6 +87,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-return.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationsubmission-return.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

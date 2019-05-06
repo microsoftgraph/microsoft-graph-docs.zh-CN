@@ -4,16 +4,14 @@ description: 检索教授该课程的学校列表。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d905651e8ec495aea0d0f1a36c650779b7992244
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 134b073e91136d1bd308b488db974f59140cb2dc
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325200"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588162"
 ---
 # <a name="list-schools"></a>列出学校
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索教授该课程的学校列表。
 
@@ -24,7 +22,7 @@ ms.locfileid: "33325200"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduRoster.ReadBasic  |
 |委派（个人 Microsoft 帐户） |  不支持  |
-|Application | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +50,7 @@ GET /education/classes/{id}/schools
   "name": "get_schools"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/classes/11014/schools
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 ```
 ##### <a name="response"></a>响应
 下面展示了示例响应。 
@@ -104,16 +102,27 @@ Content-length: 892
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_schools-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_schools-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List schools",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-list-schools.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationclass-list-schools.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

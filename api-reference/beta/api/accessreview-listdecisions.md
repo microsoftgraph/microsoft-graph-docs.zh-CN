@@ -4,12 +4,12 @@ description: 在 "Azure AD 访问评论" 功能中, 检索 accessReview 对象�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fee4b4adc4bc4e33964575976c67cfeaa077a34c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ef1db408a4b47928e86f47f30588a8e09f98dad7
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323722"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586199"
 ---
 # <a name="list-accessreview-decisions"></a>列出 accessReview 决策
 
@@ -26,7 +26,7 @@ ms.locfileid: "33323722"
 |:--------------------------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | AccessReview、AccessReview 和所有  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            | AccessReview |
+|应用程序                            | AccessReview.Read.All |
 
  登录用户还必须位于允许他们阅读访问审核的目录角色中。
 
@@ -81,6 +81,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_accessReview_decisions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_accessReview_decisions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>另请参阅
 
@@ -101,6 +111,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listdecisions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-listdecisions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

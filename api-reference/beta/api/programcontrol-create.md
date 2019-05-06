@@ -2,12 +2,12 @@
 title: 创建 programControl
 description: 在 "Azure AD access 评论" 功能中, 创建一个新的 programControl 对象。  这会将访问审核链接到某个程序。
 localization_priority: Normal
-ms.openlocfilehash: d7a48b45049c2268856a3ec238114cfa9bf834f5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e8b1fd9d72250f4ebc12508a324c3ad914f1db33
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332031"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611108"
 ---
 # <a name="create-programcontrol"></a>创建 programControl
 
@@ -27,9 +27,9 @@ ms.locfileid: "33332031"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | ProgramControl  |
+|委派（工作或学校帐户）     | ProgramControl.ReadWrite.All  |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|应用程序                            |  ProgramControl  |
+|应用程序                            |  ProgramControl.ReadWrite.All  |
 
 登录用户还必须位于允许他们创建**programControl**的目录角色中。 
 
@@ -52,7 +52,7 @@ POST /programControls
 |:-------------|:------------|:------------|
 | `programId`              |`String`                | 此控件将要成为的程序的 programId。                             |
 | `controlId`              |`String`                | 控件的 controlId, 特别是 access 评审的标识符。                                                |
-| `controlTypeId`          |`String`                | programControlType 标识程序控制的类型-例如, 链接到来宾访问审阅的控件。 |
+| `controlTypeId`          |`String`                | ProgramControlType 标识程序控制的类型-例如, 链接到来宾访问审阅的控件。 |
 
 ## <a name="response"></a>响应
 如果成功, 此方法在响应`201, Created`正文中返回响应代码和[programControl](../resources/programcontrol.md)对象。
@@ -98,6 +98,16 @@ Content-type: application/json
   "createdDateTime": "2018-05-18T20:26:05.2976279Z"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_programControl_from_programControls-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_programControl_from_programControls-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>另请参阅
 
@@ -113,6 +123,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

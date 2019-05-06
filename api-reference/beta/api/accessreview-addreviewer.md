@@ -4,12 +4,12 @@ description: '在 "Azure AD access 评论" 功能中, 更新现有的 accessRevi
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 831e8a32869c6b7bd2d83d736e45efbd1d21a5f3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: aa07b58401aab8dd20f768cbee77bbe55d8eb27a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323644"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586315"
 ---
 # <a name="add-accessreview-reviewer"></a>添加 accessReview 审阅者
 
@@ -23,7 +23,7 @@ ms.locfileid: "33323644"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview |
+|委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -79,6 +79,16 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/add_accessReview_reviewer-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/add_accessReview_reviewer-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -87,6 +97,9 @@ HTTP/1.1 201 Created
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-addreviewer.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-addreviewer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

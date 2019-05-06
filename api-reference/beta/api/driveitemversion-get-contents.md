@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 下载早期版本
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 974afe0298618cfe35a54096ffd1f369149e8ad6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 953bcb542f37bc59937a90f41dc82812ae9e691c
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325137"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588187"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>下载 DriveItemVersion 资源的内容（预览版）
 
@@ -73,6 +73,16 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 HTTP/1.1 302 Redirect
 Location: https://onedrive.com/34FF49D6...
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-version-contents-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-version-contents-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ## <a name="remarks"></a>注解
@@ -88,6 +98,9 @@ OneDrive 不保留文件以前版本的完整元数据。
   "keywords": "version, version history, versions",
   "section": "documentation",
   "tocPath": "Items/Version history",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitemversion-get-contents.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitemversion-get-contents.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

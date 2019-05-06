@@ -1,22 +1,22 @@
 ---
 title: 获取 websocket 终结点
-description: 在生产应用程序中不支持使用这些 API。
+description: 不支持在生产应用程序中使用这些 API。
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c1f4d793655c2f51454bbd58303d1f6141b46cc5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 03dbaf8522005c2bb0c038c8ba885becc41f72dc
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325383"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591811"
 ---
 # <a name="get-websocket-endpoint"></a>获取 websocket 终结点
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-在生产应用程序中不支持使用这些 API。
+不支持在生产应用程序中使用这些 API。
 
 允许您使用[socket.io][]接收[驱动器][]的近实时更改通知。
-Socket.io 是适用于 JavaScript 的热门通知库, 可利用 websocket。 若要了解详细信息, 请参阅[socket.io](https://socket.io)。
+Socket.io 是适用于 JavaScript 的热门通知库, 可利用 Websocket。 若要了解详细信息, 请参阅[socket.io](https://socket.io)。
 
 [drive]: ../resources/drive.md
 [socket.io]: https://socket.io/
@@ -27,8 +27,8 @@ Socket.io 是适用于 JavaScript 的热门通知库, 可利用 websocket。 若
 
 | 权限类型                        | 权限（从最低特权到最高特权）
 |:---------------------------------------|:-------------------------------------------
-| 委派（工作或学校帐户）     | 文件. 读取、文件读写、全部、读写全部。
-| 委派（个人 Microsoft 帐户） | Read, 文件. readwrite, 全部文件。
+| 委派（工作或学校帐户）     | 文件。读取、文件读写、全部、读写全部。
+| 委派（个人 Microsoft 帐户） | Read, 文件。 ReadWrite, 全部文件。
 | 应用程序                            | 不支持。
 
 ## <a name="http-request"></a>HTTP 请求
@@ -69,6 +69,16 @@ Content-type: application/json
   "notificationUrl": "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/drive_root_subscriptions_socketIo-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 `notificationUrl`返回的是 socket.io 终结点 URL。
 若要将它与 socket.io 客户端一起使用, 请拆分`/callback?`令牌上的字符串。
@@ -92,3 +102,16 @@ socket.on("connect", ()=>console.log("Connected!"));
 socket.on("notification", (data)=>console.log("Notification!", data));
 ```
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -4,12 +4,12 @@ description: 检索 dataPolicyOperation 对象的属性。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f0f02e526e11962c8ab2f6573d6090535b46a296
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 749f9e62536949e4e74077640076337f7d8a5263
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33326048"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591034"
 ---
 # <a name="get-datapolicyoperation"></a>获取 dataPolicyOperation
 
@@ -20,9 +20,9 @@ ms.locfileid: "33326048"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  Export. all 和 user. all  |
+|委派（工作或学校帐户） |  Export。 All 和 User。 All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | Export. all 和 user. all | 
+|应用程序 | Export。 All 和 User。 All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -70,6 +70,16 @@ Content-length: 212
   "progress": "double"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_datapolicyoperation-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_datapolicyoperation-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -78,5 +88,9 @@ Content-length: 212
   "description": "Get dataPolicyOperation",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/datapolicyoperation-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/datapolicyoperation-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

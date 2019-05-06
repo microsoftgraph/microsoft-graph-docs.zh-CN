@@ -2,12 +2,12 @@
 title: 创建 privilegedRoleAssignmentRequest
 description: 创建 privilegedroleassignmentrequest 对象。
 localization_priority: Normal
-ms.openlocfilehash: f120181144bc73d7a66c42d03e8743bbbc736582
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d963bd1cc103928675890aa7ddeccd5fd27594c0
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337212"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593757"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>创建 privilegedRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "33337212"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | PrivilegedAccess 的 AzureAD、directory.accessasuser.all    |
+|委派（工作或学校帐户） | PrivilegedAccess 的 AzureAD、Directory.accessasuser.all    |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -40,11 +40,11 @@ POST /privilegedRoleAssignmentRequests
 
 | 属性     | 类型    |  说明|
 |:---------------|:--------|:----------|
-|roleId|String|角色的 ID。 此为必需属性。|
-|type|String|表示角色分配上的操作的类型。 值可以是`AdminAdd`: 管理员将用户添加到角色;`UserAdd`: 用户添加角色分配。 必需。|
-|assignmentState|String|工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的, 或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
-|在于|String|需要为角色分配请求提供审核和审阅目的的原因。|
-|设定|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的日程安排。|
+|roleId|字符串|角色的 ID。 此为必需属性。|
+|type|字符串|表示角色分配上的操作的类型。 值可以是`AdminAdd`: 管理员将用户添加到角色;`UserAdd`: 用户添加角色分配。 必需。|
+|assignmentState|字符串|工作分配的状态。 此值可`Eligible`用于符合条件的`Active`工作分配-如果是由`Active`管理员直接分配的, 或者是由用户的符合条件的工作分配激活的。 可取值为：``NotStarted``、`Completed`、`RequestedApproval`、`Scheduled`、`Approved`、`ApprovalDenied`、`ApprovalAborted`、`Cancelling`、`Cancelled`、`Revoked`、`RequestExpired`。 必需。|
+|在于|字符串|需要为角色分配请求提供审核和审阅目的的原因。|
+|schedule|[governanceSchedule](../resources/governanceschedule.md)|角色分配请求的日程安排。|
 
 ## <a name="response"></a>响应
 如果成功, 此方法在响应`201 Created`正文中返回响应代码和[privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)对象。
@@ -96,7 +96,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -130,6 +130,16 @@ Content-length: 304
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/post_privilegedroleassignmentrequest-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_privilegedroleassignmentrequest-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -140,6 +150,9 @@ Content-length: 304
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

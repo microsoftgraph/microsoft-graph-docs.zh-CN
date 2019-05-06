@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 搜索文件
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 13e33a66cb2e32702d2afd1205959fd19477ead1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 729c3994689b013dec3c6ffd8a4a432a2b64e79d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325370"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33588345"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>搜索驱动器内的 DriveItems
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在项目层次结构中搜索与查询匹配的项目。
 可以在文件夹层次结构、整个驱动器或与当前用户共享的文件内执行搜索。
@@ -57,7 +55,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 下面是一个请求搜索当前用户的 OneDrive 示例
 
-<!-- { "blockType": "request", "name": "item_search" }-->
+<!-- { "blockType": "request", "name": "item_search", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root/search(q='{search-query}')
@@ -93,6 +91,16 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/root/search(query='contoso project')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/item_search-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/item_search-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="searching-for-items-a-user-can-access"></a>搜索用户可以访问的项目
 
@@ -100,7 +108,7 @@ Content-type: application/json
 
 ### <a name="example"></a>示例
 
-<!-- { "blockType": "request", "name": "item_search_all" }-->
+<!-- { "blockType": "request", "name": "item_search_all", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/search(q='{search-query}')
@@ -123,7 +131,7 @@ Content-type: application/json
         "name": "Contoso Project",
         "folder": {},
         "searchResult": { "onClickTelemetryUrl": "https://bing.com/0123456789abc!123" },
-        "remoteItem": { "id": "!23141901", "driveId": "s!1020101jlkjl12lx" }
+        "remoteItem": { "id": "!23141901", "parentReference": { "driveId": "s!1020101jlkjl12lx" } }
       },
       {
         "id": "0123456789abc!456",
@@ -135,6 +143,16 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/root/search(query='contoso project')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/item_search_all-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/item_search_all-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="error-responses"></a>错误响应
 
@@ -144,13 +162,16 @@ Content-type: application/json
 [item-resource]: ../resources/driveitem.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Search for a file across a OneDrive.",
   "keywords": "search,query,bing,filename,content",
   "section": "documentation",
   "tocPath": "Items/Search",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

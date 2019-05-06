@@ -4,12 +4,12 @@ description: '创建草稿转发邮件以包含注释或更新任何邮件属性
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d863c582a704edd095b69dc5442cac8ce74f9613
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7998177dbb9c1cdc7eff227c2988be3872c4d39d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33333154"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598655"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -18,7 +18,7 @@ ms.locfileid: "33333154"
 创建草稿转发邮件以包含注释或更新任何邮件属性  
 全部在一个**createForward**调用中。 然后, 您可以[发送](../api/message-send.md)草稿邮件。
 
-**备注**
+**注意**
 
 - 您可以指定`message`参数的注释或**body**属性。 同时指定这两个将返回 HTTP 400 错误的请求错误。
 - 您必须指定`toRecipients`参数或`message`参数的**toRecipients**属性。 同时指定或指定两者均不会返回 HTTP 400 错误请求错误。
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 |:---------------|:--------|:----------|
 |注释|String|要包含的注释。可以为空字符串。|
 |toRecipients|[recipient](../resources/recipient.md) collection|收件人列表|
-|message|[邮件](../resources/message.md)|答复邮件中要更新的任何可写属性。|
+|message|[message](../resources/message.md)|答复邮件中要更新的任何可写属性。|
 
 ## <a name="response"></a>响应
 
@@ -126,6 +126,16 @@ Content-length: 272
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/message_createforward-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/message_createforward-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -136,6 +146,9 @@ Content-length: 272
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-createforward.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-createforward.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

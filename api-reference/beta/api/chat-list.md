@@ -4,12 +4,12 @@ description: 检索用户的聊天列表。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 818cd5037c9d37d58e96b40c85e546487676a13e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3fb1194d58a62313bcb5898f04ef861de5c4025c
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327702"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591545"
 ---
 # <a name="list-chats"></a>列出聊天
 
@@ -23,7 +23,7 @@ ms.locfileid: "33327702"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | 聊天。阅读   |
+|委派（工作或学校帐户） | Chat.Read   |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | 不支持。   |
 
@@ -38,7 +38,7 @@ GET /chats
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此操作当前不支持[OData 查询参数](/graph/query-parameters)来自定义响应。
+此操作当前不支持使用 [OData 查询参数](/graph/query-parameters)来自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -52,7 +52,7 @@ GET /chats
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[聊天室](../resources/chat.md)对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [chat](../resources/chat.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -113,6 +113,16 @@ Content-length: 262
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_chats-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_chats-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -123,6 +133,9 @@ Content-length: 262
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/chat-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/chat-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

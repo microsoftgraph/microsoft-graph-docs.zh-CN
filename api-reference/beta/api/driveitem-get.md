@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 获取文件或文件夹
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 4610b911b21414948e3708b25817da4e15c9f4bd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a238e1dd459ee04d5c6c7c3453edaac2d569ed84
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325277"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589301"
 ---
 # <a name="get-a-driveitem-resource"></a>获取 DriveItem 资源
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 通过文件系统路径或 ID 在[驱动器](../resources/drive.md)中检索 [DriveItem](../resources/driveitem.md) 的元数据。
 
@@ -67,7 +65,7 @@ GET /users/{userId}/drive/root:/{item-path}
 
 下面是用户的 OneDrive 的根文件夹请求示例。
 
-<!-- { "blockType": "request", "name": "get-item-metadata" }-->
+<!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root
@@ -108,6 +106,16 @@ Content-type: application/json
   "webUrl": "https://contoso-my.sharepoint.com/personal/rgregg_contoso_com/Documents"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-drive-root-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-drive-root-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>备注
 
@@ -118,13 +126,14 @@ Content-type: application/json
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
   "tocPath": "Items/Get item",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

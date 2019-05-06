@@ -4,12 +4,12 @@ description: 根据 directorySettingTemplates 中可用的模板, 使用此 API 
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 097fdc26dd78986e6a869a26e214d073db03f98b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: dc73029a66dd1ee0fffb4e99d0dd290870de9b99
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325824"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33590393"
 ---
 # <a name="create-a-directory-setting"></a>创建目录设置
 
@@ -19,7 +19,7 @@ ms.locfileid: "33325824"
 
 > **注意**: 此 API 的/beta 版本仅适用于组。 此 API 的/v1.0 版本已重命名为*Create groupSettings*。
 
-若要获取在 beta 版中支持的模板及其属性的列表, 请使用[directorySettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。 (对于 v1.0 终结点, 请调用[groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)。)
+若要获取在 beta 版中支持的模板及其属性的列表, 请使用[directorySettingTemplate 查询](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta)。 (对于 v1。0终结点, 请调用[groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0)。)
 
 
 ## <a name="permissions"></a>权限
@@ -97,6 +97,16 @@ Content-length: 244
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_directorysetting_from_settings-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_directorysetting_from_settings-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -107,6 +117,9 @@ Content-length: 244
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/directorysetting-post-settings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directorysetting-post-settings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

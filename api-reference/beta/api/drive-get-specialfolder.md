@@ -5,16 +5,14 @@ ms.date: 09/10/2017
 title: 获取特殊文件夹
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a1afdd464091c395909f57291100f95bbadc5a47
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b694807c09cca89490d6ab9aa90e0f05587f863b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325774"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589864"
 ---
 # <a name="get-a-special-folder-by-name"></a>按名称获取特殊文件夹
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 使用特殊集合可以按名称访问特殊文件夹。
 
@@ -80,6 +78,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-special-folder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-special-folder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="get-children-of-a-special-folder"></a>获取特殊文件夹的子文件夹
 
@@ -87,10 +95,10 @@ Content-type: application/json
 
 ### <a name="http-request"></a>HTTP 请求
 
-<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
-GET /me/drive/special/{name}/children
+GET /me/drive/special/{special-folder-name}/children
 ```
 
 ### <a name="response"></a>响应
@@ -110,6 +118,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-special-children-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-special-children-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>注解
 
@@ -117,13 +135,16 @@ Content-Type: application/json
 
 如果应用拥有只读权限，且特殊文件夹尚不存在，那么可能无法请求获取特殊文件夹或其子项，响应为 `404 Not Found` 或 `403 Forbidden` 错误。
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Access known folders in OneDrive through the special folder collection",
   "keywords": "known folders",
   "section": "documentation",
   "tocPath": "OneDrive/Drive/Special folders",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/drive-get-specialfolder.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/drive-get-specialfolder.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/drive-get-specialfolder.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/drive-get-specialfolder.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

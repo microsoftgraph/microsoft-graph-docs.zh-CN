@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 同步驱动器的内容
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: ad99a7dd701c52def0879a8611cc49f96e4654b3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d93853ab0be35228bd7936b8c352d53d3c36f946
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325257"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589807"
 ---
 # <a name="track-changes-for-a-drive"></a>跟踪驱动器更改
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 此方法使应用程序随着时间的推移跟踪驱动器及其子级的更改。
 
@@ -77,7 +75,7 @@ GET /users/{userId}/drive/root/delta
 
 下面是一个初始请求的示例。
 
-<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
+<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
@@ -114,6 +112,16 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/delta(token=1230919asd190410jlka)"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_item_delta_first-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_item_delta_first-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 此响应包含第一页的更改，**@odata.nextLink** 属性指示当前的项目集中有更多项目。在检索完所有项目页之前，你的应用程序应继续请求 **@odata.nextLink** 的 URL 值。
 
@@ -125,7 +133,7 @@ Content-type: application/json
 
 下面是一个初始请求之后的请求示例。
 
-<!-- { "blockType": "request", "name": "get_item_delta_last" }-->
+<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
@@ -158,6 +166,16 @@ Content-type: application/json
     "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?(token='1230919asd190410jlka')"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-item-delta-last-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-item-delta-last-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 此响应表示名为 `folder2` 的项目已被删除，并在初始请求和此请求之间添加或修改了 `file.txt` 项目以更新本地状态。
 
@@ -181,7 +199,7 @@ Content-type: application/json
 
 ### <a name="request"></a>请求
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/root/delta?token=latest
@@ -189,7 +207,7 @@ GET /me/drive/root/delta?token=latest
 
 ### <a name="response"></a>响应
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -200,6 +218,16 @@ Content-type: application/json
     "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?token=1230919asd190410jlka"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-delta-latest-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-delta-latest-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="remarks"></a>注解
 
@@ -232,13 +260,18 @@ Content-type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Sync changes from the service to your client state.",
   "keywords": "sync,delta,changes,$delta",
   "section": "documentation",
   "tocPath": "Items/Sync changes",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

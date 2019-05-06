@@ -4,16 +4,14 @@ description: '获取属于某个组的特定线程。 您可以同时指定父�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 26612fd8d52d6c155994068fe1dbdc449d10bd5a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a61061dc51fd911df803593fac694714b0e62dc5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33326144"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591069"
 ---
 # <a name="get-conversationthread"></a>获取 conversationThread
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取属于某个组的特定线程。可以指定父对话和线程，也可以指定线程，而不引用父对话。 
 ## <a name="permissions"></a>权限
@@ -21,9 +19,9 @@ ms.locfileid: "33326144"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | group. 全部, group。 Read. all    |
+|委派（工作或学校帐户） | Group。全部, Group。 Read。 All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | group. 全部, group。 Read. all |
+|应用程序 | Group。全部, Group。 Read。 All |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +51,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}
   "name": "get_conversationthread"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
+GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -78,7 +76,7 @@ Content-length: 419
   ],
   "topic": "topic-value",
   "hasAttachments": true,
-  "lastDeliveredDateTime": "2016-10-19T10:37:00Z",
+  "lastDeliveredDateTime": "datetime-value",
   "uniqueSenders": [
     "uniqueSenders-value"
   ],
@@ -92,16 +90,27 @@ Content-length: 419
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_conversationthread-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_conversationthread-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get conversationThread",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/conversationthread-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/conversationthread-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

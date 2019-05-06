@@ -2,12 +2,12 @@
 title: 更新 governanceRoleAssignmentRequests
 description: 使管理员能够更新状态为的`AdminApproved` `PendingAdminDecision`governanceRoleAssignmentRequests `AdminDenied`上的决策 (或)。
 localization_priority: Normal
-ms.openlocfilehash: e18793f1267047ca4e8e2fed9d03cb8e21c7c289
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a20e583d701dca988b935b21e1d5874efcff6415
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329575"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593491"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>更新 governanceRoleAssignmentRequests
 
@@ -42,10 +42,10 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |参数      |类型                   |必需 |说明|
 |:-------------|:----------------------|:--------|:----------|
-|在于        |String                 |✓        |管理员为自己的决定提供的原因。|
-|权        |String                 |✓        |角色分配请求的管理员决定。 应将值更新为`AdminApproved`或。 `AdminDenied`|
-|设定      |[governanceSchedule](../resources/governanceschedule.md)|        | 角色分配请求的日程安排。 对于的状态`AdminApproved`, 是必需的。|
-|assignmentState      |String|         | 工作分配的状态, 值可以是`Eligible`或。 `Active` 有关的决策`AdminApproved`, 则是必需的。 |
+|在于        |字符串                 |✓        |管理员为自己的决定提供的原因。|
+|权        |字符串                 |✓        |角色分配请求的管理员决定。 应将值更新为`AdminApproved`或。 `AdminDenied`|
+|schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | 角色分配请求的日程安排。 对于的状态`AdminApproved`, 是必需的。|
+|assignmentState      |字符串|         | 工作分配的状态, 值可以是`Eligible`或。 `Active` 有关的决策`AdminApproved`, 则是必需的。 |
 ### <a name="response"></a>响应
 此方法仅适用于状态为的`PendingAdminDecision`请求。
 
@@ -73,6 +73,16 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
   "assignmentState": "Eligible"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/updaterequest_governanceroleassignmentrequest-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="response"></a>响应
 <!-- {
@@ -93,6 +103,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

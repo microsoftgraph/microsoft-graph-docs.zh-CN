@@ -4,16 +4,14 @@ description: 检索为域启用服务所需的 domainDnsRecord 对象的列表�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 233825b1cb69f449d7f018c027c6f4b9b8c26051
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3132b0d06415ec70e0252f8263baa95b47a2c253
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325812"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589223"
 ---
 # <a name="list-serviceconfigurationrecords"></a>列出 serviceConfigurationRecords
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索为域启用服务所需的[domainDnsRecord](../resources/domaindnsrecord.md)对象的列表。
 
@@ -63,7 +61,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
   "name": "get_serviceconfigurationrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/contoso.com/serviceConfigurationRecords
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/serviceConfigurationRecords
 ```
 ##### <a name="response"></a>响应
 注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -81,6 +79,7 @@ Content-length: 220
 {
   "value": [
     {
+      "@odata.type":"microsoft.graph.domainDnsMxRecord",
       "isOptional": false,
       "label": "contoso.com",
       "recordType": "Mx",
@@ -90,26 +89,38 @@ Content-length: 220
       "preference": 0
     },
     {
+      "@odata.type":"microsoft.graph.domainDnsTxtRecord",
       "isOptional": false,
       "label": "contoso.com",
       "recordType": "Txt",
-      "supportedServices": "Email",
+      "supportedService": "Email",
       "ttl": 3600,
       "text": "v=spf1 include: spf.protection.outlook.com ~all"
     }
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_serviceconfigurationrecords-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_serviceconfigurationrecords-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List serviceConfigurationRecords",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/domain-list-serviceconfigurationrecords.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/domain-list-serviceconfigurationrecords.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

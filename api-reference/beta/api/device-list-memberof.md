@@ -4,16 +4,14 @@ description: 获取此设备是其直接成员的组。 此操作不可传递。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f8760216d4954840ac72a0e7bc6adaaebdfe8fa5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 767f99f83f82f394a0fb0e10111020fd5af4eea1
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33326084"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33590978"
 ---
 # <a name="list-device-groups"></a>列出设备组
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取此设备是其直接成员的组。 此操作不可传递。
 
@@ -57,7 +55,7 @@ GET /devices/{id}/memberOf
   "name": "get_user_memberof"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/devices/{id}/memberOf
+GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
 ```
 
 ### <a name="response"></a>响应
@@ -87,16 +85,27 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_user_memberof-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_user_memberof-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List memberOf",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/device-list-memberof.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/device-list-memberof.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -1,17 +1,17 @@
 ---
-title: List manager
+title: 列出经理
 description: 获取用户的经理。 返回指定为用户经理的用户或联系人。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9ec0e150cbd6f91a50e0a0d4fb28b54c02b67c6c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f5f91ec297c948603aeef3a0e247b7236ecd7356
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329868"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33609556"
 ---
-# <a name="list-manager"></a>List manager
+# <a name="list-manager"></a>列出经理
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,6 +28,7 @@ ms.locfileid: "33329868"
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 ## <a name="optional-query-parameters"></a>可选的查询参数

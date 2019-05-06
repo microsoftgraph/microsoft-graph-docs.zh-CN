@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 发送邀请以访问项目
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3b5e0c6ef03af87af9f28745bd73bb0cb886852d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0fab3f7a25a9f16a3808e4c3ec530132781e0bee
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325289"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589468"
 ---
 # <a name="send-a-sharing-invitation"></a>发送共享邀请
 
@@ -66,7 +66,7 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                                         | 指定邀请的收件人要查看共享项目的登录位置。            |
 | sendInvitation   | Boolean                                         | 指定是否生成电子邮件或帖子 (false)，或是否仅创建权限 (true)。            |
 | roles            | 集合（字符串）                              | 指定授予共享邀请收件人的角色。                         |
-| expirationDateTime | DateTimeOffset                       | 指定权限将在其后过期的日期时间。 在 onedrive for business、SharePoint 和 premium 个人 OneDrive 帐户上可用。
+| expirationDateTime | DateTimeOffset                       | 指定权限将在其后过期的日期时间。 在 OneDrive for business、SharePoint 和 premium 个人 OneDrive 帐户上可用。
 | 密码           | String                         | 由创建者在邀请上设置的密码。 可选和 OneDrive 仅个人版
 
 ## <a name="example"></a>示例
@@ -130,6 +130,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/send-sharing-invite-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 ### <a name="partial-success-response"></a>部分成功响应
 
 当邀请多个收件人时, 通知可能会成功, 其他人也会失败。
@@ -219,6 +229,9 @@ Content-type: application/json
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
   "tocPath": "Sharing/Add permissions",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
