@@ -4,12 +4,12 @@ description: 检索当前经过身份验证的组织的属性和关系。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f4669e5b07d6665479bb177727f7faa436f14669
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 882ba48291c2ff171cd6bef7b6bbcee492cfd824
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338141"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596926"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -25,7 +25,7 @@ ms.locfileid: "33338141"
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | read、目录。所有 |
+|委派（工作或学校帐户） | Read、目录。所有 |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序 | Directory.Read.All |
 
@@ -108,6 +108,16 @@ Content-length: 411
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_organization-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_organization-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>另请参阅
 
@@ -126,6 +136,9 @@ Content-length: 411
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/organization-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/organization-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
