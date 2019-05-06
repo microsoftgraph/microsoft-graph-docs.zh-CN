@@ -1,35 +1,35 @@
 ---
 title: 'group: getMemberGroups'
-description: 返回指定组所属的所有组。 检查是可传递的，这和读取 memberOf 导航属性不同，后者仅返回该组是其直接成员的组。
+description: 返回指定组是其成员的所有组。 检查是可传递的，这和读取 memberOf 导航属性不同，后者仅返回该组是其直接成员的组。
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e324e693f7e049f3a66c561b98815a05e7211c78
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 9cc99296ea6aa04eb7fd4463f4cb0d2ad1f0ac46
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33321940"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593134"
 ---
-# <a name="group-getmembergroups"></a><span data-ttu-id="455f8-104">group: getMemberGroups</span><span class="sxs-lookup"><span data-stu-id="455f8-104">group: getMemberGroups</span></span>
+# <a name="group-getmembergroups"></a><span data-ttu-id="b5a5b-104">group: getMemberGroups</span><span class="sxs-lookup"><span data-stu-id="b5a5b-104">group: getMemberGroups</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="455f8-p102">返回指定组所属的所有组。检查是可传递的，这和读取 [memberOf](../api/group-list-memberof.md) 导航属性不同，后者仅返回该组是其直接成员的组。</span><span class="sxs-lookup"><span data-stu-id="455f8-p102">Return all the groups that the specified group is a member of. The check is transitive, unlike reading the [memberOf](../api/group-list-memberof.md) navigation property, which returns only the groups that the group is a direct member of.</span></span>
+<span data-ttu-id="b5a5b-p102">返回指定组所属的所有组。检查是可传递的，这和读取 [memberOf](../api/group-list-memberof.md) 导航属性不同，后者仅返回该组是其直接成员的组。</span><span class="sxs-lookup"><span data-stu-id="b5a5b-p102">Return all the groups that the specified group is a member of. The check is transitive, unlike reading the [memberOf](../api/group-list-memberof.md) navigation property, which returns only the groups that the group is a direct member of.</span></span>
 
-<span data-ttu-id="455f8-p103">此功能支持 Office 365 和 Azure AD 中设置的其他类型的组。每个请求可以返回的最大组数为 2046 组。注意：Office 365 组不能包含组。因此，Office 365 组中的成员身份始终是直接的。</span><span class="sxs-lookup"><span data-stu-id="455f8-p103">This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.</span></span>
+<span data-ttu-id="b5a5b-p103">此功能支持 Office 365 和 Azure AD 中设置的其他类型的组。每个请求可以返回的最大组数为 2046 组。注意：Office 365 组不能包含组。因此，Office 365 组中的成员身份始终是直接的。</span><span class="sxs-lookup"><span data-stu-id="b5a5b-p103">This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="455f8-111">权限</span><span class="sxs-lookup"><span data-stu-id="455f8-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b5a5b-111">权限</span><span class="sxs-lookup"><span data-stu-id="b5a5b-111">Permissions</span></span>
 
-<span data-ttu-id="455f8-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="455f8-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b5a5b-p104">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b5a5b-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="455f8-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="455f8-114">Permission type</span></span>                        | <span data-ttu-id="455f8-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="455f8-115">Permissions (from least to most privileged)</span></span>                                                 |
+| <span data-ttu-id="b5a5b-114">权限类型</span><span class="sxs-lookup"><span data-stu-id="b5a5b-114">Permission type</span></span>                        | <span data-ttu-id="b5a5b-115">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b5a5b-115">Permissions (from least to most privileged)</span></span>                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| <span data-ttu-id="455f8-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="455f8-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="455f8-117">Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="455f8-117">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-| <span data-ttu-id="455f8-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="455f8-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="455f8-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="455f8-119">Not supported.</span></span>                                                                              |
-| <span data-ttu-id="455f8-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="455f8-120">Application</span></span>                            | <span data-ttu-id="455f8-121">Group.Read.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="455f8-121">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span>                             |
+| <span data-ttu-id="b5a5b-116">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b5a5b-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="b5a5b-117">Group.Read.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b5a5b-117">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+| <span data-ttu-id="b5a5b-118">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b5a5b-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b5a5b-119">不支持。</span><span class="sxs-lookup"><span data-stu-id="b5a5b-119">Not supported.</span></span>                                                                              |
+| <span data-ttu-id="b5a5b-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="b5a5b-120">Application</span></span>                            | <span data-ttu-id="b5a5b-121">Group.Read.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5a5b-121">Group.Read.All, Directory.Read.All, Directory.ReadWrite.All</span></span>                             |
 
-## <a name="http-request"></a><span data-ttu-id="455f8-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="455f8-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b5a5b-122">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b5a5b-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,29 +37,29 @@ ms.locfileid: "33321940"
 POST /groups/{id}/getMemberGroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="455f8-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="455f8-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b5a5b-123">请求标头</span><span class="sxs-lookup"><span data-stu-id="b5a5b-123">Request headers</span></span>
 
-| <span data-ttu-id="455f8-124">名称</span><span class="sxs-lookup"><span data-stu-id="455f8-124">Name</span></span>          | <span data-ttu-id="455f8-125">类型</span><span class="sxs-lookup"><span data-stu-id="455f8-125">Type</span></span>   | <span data-ttu-id="455f8-126">说明</span><span class="sxs-lookup"><span data-stu-id="455f8-126">Description</span></span>               |
+| <span data-ttu-id="b5a5b-124">名称</span><span class="sxs-lookup"><span data-stu-id="b5a5b-124">Name</span></span>          | <span data-ttu-id="b5a5b-125">类型</span><span class="sxs-lookup"><span data-stu-id="b5a5b-125">Type</span></span>   | <span data-ttu-id="b5a5b-126">说明</span><span class="sxs-lookup"><span data-stu-id="b5a5b-126">Description</span></span>               |
 | :------------ | :----- | :------------------------ |
-| <span data-ttu-id="455f8-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="455f8-127">Authorization</span></span> | <span data-ttu-id="455f8-128">string</span><span class="sxs-lookup"><span data-stu-id="455f8-128">string</span></span> | <span data-ttu-id="455f8-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="455f8-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b5a5b-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="b5a5b-127">Authorization</span></span> | <span data-ttu-id="b5a5b-128">string</span><span class="sxs-lookup"><span data-stu-id="b5a5b-128">string</span></span> | <span data-ttu-id="b5a5b-p105">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b5a5b-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="455f8-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="455f8-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b5a5b-131">请求正文</span><span class="sxs-lookup"><span data-stu-id="b5a5b-131">Request body</span></span>
 
-<span data-ttu-id="455f8-132">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="455f8-132">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="b5a5b-132">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="b5a5b-132">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="455f8-133">参数</span><span class="sxs-lookup"><span data-stu-id="455f8-133">Parameter</span></span>           | <span data-ttu-id="455f8-134">类型</span><span class="sxs-lookup"><span data-stu-id="455f8-134">Type</span></span>    | <span data-ttu-id="455f8-135">说明</span><span class="sxs-lookup"><span data-stu-id="455f8-135">Description</span></span>                                                                           |
+| <span data-ttu-id="b5a5b-133">参数</span><span class="sxs-lookup"><span data-stu-id="b5a5b-133">Parameter</span></span>           | <span data-ttu-id="b5a5b-134">类型</span><span class="sxs-lookup"><span data-stu-id="b5a5b-134">Type</span></span>    | <span data-ttu-id="b5a5b-135">说明</span><span class="sxs-lookup"><span data-stu-id="b5a5b-135">Description</span></span>                                                                           |
 | :------------------ | :------ | :------------------------------------------------------------------------------------ |
-| <span data-ttu-id="455f8-136">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="455f8-136">securityEnabledOnly</span></span> | <span data-ttu-id="455f8-137">Boolean</span><span class="sxs-lookup"><span data-stu-id="455f8-137">Boolean</span></span> | <span data-ttu-id="455f8-p106">设置为 **false**。只支持对用户仅返回启用安全机制的组。</span><span class="sxs-lookup"><span data-stu-id="455f8-p106">Set to **false**. Returning only security-enabled groups is supported for users only.</span></span> |
+| <span data-ttu-id="b5a5b-136">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="b5a5b-136">securityEnabledOnly</span></span> | <span data-ttu-id="b5a5b-137">Boolean</span><span class="sxs-lookup"><span data-stu-id="b5a5b-137">Boolean</span></span> | <span data-ttu-id="b5a5b-p106">设置为 **false**。只支持对用户仅返回启用安全机制的组。</span><span class="sxs-lookup"><span data-stu-id="b5a5b-p106">Set to **false**. Returning only security-enabled groups is supported for users only.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="455f8-140">响应</span><span class="sxs-lookup"><span data-stu-id="455f8-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b5a5b-140">响应</span><span class="sxs-lookup"><span data-stu-id="b5a5b-140">Response</span></span>
 
-<span data-ttu-id="455f8-141">如果成功，此方法将在包含该组所属组 ID 的响应正文中返回 `200 OK` 响应代码和字符串集合。</span><span class="sxs-lookup"><span data-stu-id="455f8-141">If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups that the group is a member of.</span></span>
+<span data-ttu-id="b5a5b-141">如果成功，此方法将在包含该组所属组 ID 的响应正文中返回 `200 OK` 响应代码和字符串集合。</span><span class="sxs-lookup"><span data-stu-id="b5a5b-141">If successful, this method returns `200 OK` response code and String collection in the response body that contains the IDs of the groups that the group is a member of.</span></span>
 
-## <a name="example"></a><span data-ttu-id="455f8-142">示例</span><span class="sxs-lookup"><span data-stu-id="455f8-142">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b5a5b-142">示例</span><span class="sxs-lookup"><span data-stu-id="b5a5b-142">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="455f8-143">请求</span><span class="sxs-lookup"><span data-stu-id="455f8-143">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="b5a5b-143">请求</span><span class="sxs-lookup"><span data-stu-id="b5a5b-143">Request</span></span>
 
-<span data-ttu-id="455f8-144">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="455f8-144">The following is an example of the request.</span></span>
+<span data-ttu-id="b5a5b-144">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b5a5b-144">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -76,11 +76,11 @@ Content-length: 33
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="455f8-145">响应</span><span class="sxs-lookup"><span data-stu-id="455f8-145">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="b5a5b-145">响应</span><span class="sxs-lookup"><span data-stu-id="b5a5b-145">Response</span></span>
 
-<span data-ttu-id="455f8-146">下面展示了示例响应。</span><span class="sxs-lookup"><span data-stu-id="455f8-146">The following is an example of the response.</span></span>
+<span data-ttu-id="b5a5b-146">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b5a5b-146">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="455f8-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="455f8-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b5a5b-p107">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b5a5b-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -100,6 +100,16 @@ Content-length: 39
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b5a5b-149">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="b5a5b-149">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="b5a5b-150">语言</span><span class="sxs-lookup"><span data-stu-id="b5a5b-150">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/group_getmembergroups-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b5a5b-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="b5a5b-151">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/group_getmembergroups-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -111,6 +121,9 @@ Content-length: 39
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-getmembergroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-getmembergroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
