@@ -4,29 +4,27 @@ description: 暂时接受用户日历中的指定事件。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 53df555c402a196af9e9e76d8338dd6009feccf0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ceb36ae7ba5e5aba04c796b1a87cb3dc73eb5d3d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33324263"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586392"
 ---
-# <a name="event-tentativelyaccept"></a><span data-ttu-id="4a40e-103">event: tentativelyAccept</span><span class="sxs-lookup"><span data-stu-id="4a40e-103">event: tentativelyAccept</span></span>
+# <a name="event-tentativelyaccept"></a><span data-ttu-id="f8efc-103">event: tentativelyAccept</span><span class="sxs-lookup"><span data-stu-id="f8efc-103">event: tentativelyAccept</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="f8efc-104">暂时接受用户[日历](../resources/calendar.md)中的指定[事件](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="f8efc-104">Tentatively accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
 
-<span data-ttu-id="4a40e-104">暂时接受用户[日历](../resources/calendar.md)中的指定[事件](../resources/event.md)。</span><span class="sxs-lookup"><span data-stu-id="4a40e-104">Tentatively accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f8efc-105">权限</span><span class="sxs-lookup"><span data-stu-id="f8efc-105">Permissions</span></span>
+<span data-ttu-id="f8efc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f8efc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4a40e-105">权限</span><span class="sxs-lookup"><span data-stu-id="4a40e-105">Permissions</span></span>
-<span data-ttu-id="4a40e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="4a40e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="4a40e-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="4a40e-108">Permission type</span></span>      | <span data-ttu-id="4a40e-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="4a40e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f8efc-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="f8efc-108">Permission type</span></span>      | <span data-ttu-id="f8efc-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f8efc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4a40e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="4a40e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="4a40e-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a40e-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="4a40e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="4a40e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4a40e-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a40e-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="4a40e-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="4a40e-114">Application</span></span> | <span data-ttu-id="4a40e-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4a40e-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="f8efc-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f8efc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f8efc-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f8efc-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="f8efc-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f8efc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f8efc-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f8efc-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="f8efc-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="f8efc-114">Application</span></span> | <span data-ttu-id="f8efc-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f8efc-115">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4a40e-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="4a40e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f8efc-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f8efc-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/tentativelyAccept
@@ -44,34 +42,34 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/te
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 ```
-## <a name="request-headers"></a><span data-ttu-id="4a40e-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="4a40e-117">Request headers</span></span>
-| <span data-ttu-id="4a40e-118">名称</span><span class="sxs-lookup"><span data-stu-id="4a40e-118">Name</span></span>       | <span data-ttu-id="4a40e-119">类型</span><span class="sxs-lookup"><span data-stu-id="4a40e-119">Type</span></span> | <span data-ttu-id="4a40e-120">说明</span><span class="sxs-lookup"><span data-stu-id="4a40e-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f8efc-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="f8efc-117">Request headers</span></span>
+| <span data-ttu-id="f8efc-118">名称</span><span class="sxs-lookup"><span data-stu-id="f8efc-118">Name</span></span>       | <span data-ttu-id="f8efc-119">类型</span><span class="sxs-lookup"><span data-stu-id="f8efc-119">Type</span></span> | <span data-ttu-id="f8efc-120">说明</span><span class="sxs-lookup"><span data-stu-id="f8efc-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="4a40e-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="4a40e-121">Authorization</span></span>  | <span data-ttu-id="4a40e-122">string</span><span class="sxs-lookup"><span data-stu-id="4a40e-122">string</span></span>  | <span data-ttu-id="4a40e-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="4a40e-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4a40e-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4a40e-125">Content-Type</span></span> | <span data-ttu-id="4a40e-126">string</span><span class="sxs-lookup"><span data-stu-id="4a40e-126">string</span></span>  | <span data-ttu-id="4a40e-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="4a40e-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="f8efc-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f8efc-121">Authorization</span></span>  | <span data-ttu-id="f8efc-122">string</span><span class="sxs-lookup"><span data-stu-id="f8efc-122">string</span></span>  | <span data-ttu-id="f8efc-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f8efc-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f8efc-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f8efc-125">Content-Type</span></span> | <span data-ttu-id="f8efc-126">string</span><span class="sxs-lookup"><span data-stu-id="f8efc-126">string</span></span>  | <span data-ttu-id="f8efc-p103">实体正文中的数据性质。必需。</span><span class="sxs-lookup"><span data-stu-id="f8efc-p103">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4a40e-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="4a40e-129">Request body</span></span>
-<span data-ttu-id="4a40e-130">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="4a40e-130">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f8efc-129">请求正文</span><span class="sxs-lookup"><span data-stu-id="f8efc-129">Request body</span></span>
+<span data-ttu-id="f8efc-130">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="f8efc-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="4a40e-131">参数</span><span class="sxs-lookup"><span data-stu-id="4a40e-131">Parameter</span></span>    | <span data-ttu-id="4a40e-132">类型</span><span class="sxs-lookup"><span data-stu-id="4a40e-132">Type</span></span>   |<span data-ttu-id="4a40e-133">说明</span><span class="sxs-lookup"><span data-stu-id="4a40e-133">Description</span></span>|
+| <span data-ttu-id="f8efc-131">参数</span><span class="sxs-lookup"><span data-stu-id="f8efc-131">Parameter</span></span>    | <span data-ttu-id="f8efc-132">类型</span><span class="sxs-lookup"><span data-stu-id="f8efc-132">Type</span></span>   |<span data-ttu-id="f8efc-133">说明</span><span class="sxs-lookup"><span data-stu-id="f8efc-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4a40e-134">注释</span><span class="sxs-lookup"><span data-stu-id="4a40e-134">comment</span></span>|<span data-ttu-id="4a40e-135">String</span><span class="sxs-lookup"><span data-stu-id="4a40e-135">String</span></span>|<span data-ttu-id="4a40e-p104">响应中包含的文本。可选。</span><span class="sxs-lookup"><span data-stu-id="4a40e-p104">Text included in the response. Optional.</span></span>|
-|<span data-ttu-id="4a40e-138">sendResponse</span><span class="sxs-lookup"><span data-stu-id="4a40e-138">sendResponse</span></span>|<span data-ttu-id="4a40e-139">Boolean</span><span class="sxs-lookup"><span data-stu-id="4a40e-139">Boolean</span></span>|<span data-ttu-id="4a40e-p105">如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。</span><span class="sxs-lookup"><span data-stu-id="4a40e-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
+|<span data-ttu-id="f8efc-134">注释</span><span class="sxs-lookup"><span data-stu-id="f8efc-134">comment</span></span>|<span data-ttu-id="f8efc-135">String</span><span class="sxs-lookup"><span data-stu-id="f8efc-135">String</span></span>|<span data-ttu-id="f8efc-p104">响应中包含的文本。可选。</span><span class="sxs-lookup"><span data-stu-id="f8efc-p104">Text included in the response. Optional.</span></span>|
+|<span data-ttu-id="f8efc-138">sendResponse</span><span class="sxs-lookup"><span data-stu-id="f8efc-138">sendResponse</span></span>|<span data-ttu-id="f8efc-139">Boolean</span><span class="sxs-lookup"><span data-stu-id="f8efc-139">Boolean</span></span>|<span data-ttu-id="f8efc-p105">如果将响应发送给组织者，则值为 `true`；否则为 `false`。可选。默认值为 `true`。</span><span class="sxs-lookup"><span data-stu-id="f8efc-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4a40e-143">响应</span><span class="sxs-lookup"><span data-stu-id="4a40e-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f8efc-143">响应</span><span class="sxs-lookup"><span data-stu-id="f8efc-143">Response</span></span>
 
-<span data-ttu-id="4a40e-p106">如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="4a40e-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="f8efc-p106">如果成功，此方法返回 `202 Accepted` 响应代码。它不在响应正文中返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="f8efc-p106">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4a40e-146">示例</span><span class="sxs-lookup"><span data-stu-id="4a40e-146">Example</span></span>
-<span data-ttu-id="4a40e-147">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="4a40e-147">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="4a40e-148">请求</span><span class="sxs-lookup"><span data-stu-id="4a40e-148">Request</span></span>
-<span data-ttu-id="4a40e-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="4a40e-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f8efc-146">示例</span><span class="sxs-lookup"><span data-stu-id="f8efc-146">Example</span></span>
+<span data-ttu-id="f8efc-147">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="f8efc-147">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="f8efc-148">请求</span><span class="sxs-lookup"><span data-stu-id="f8efc-148">Request</span></span>
+<span data-ttu-id="f8efc-149">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f8efc-149">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_tentativelyaccept"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events/{id}/tentativelyAccept
+POST https://graph.microsoft.com/v1.0/me/events/{id}/tentativelyAccept
 Content-type: application/json
 Content-length: 56
 
@@ -81,9 +79,9 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="4a40e-150">响应</span><span class="sxs-lookup"><span data-stu-id="4a40e-150">Response</span></span>
-##### <a name="response"></a><span data-ttu-id="4a40e-151">响应</span><span class="sxs-lookup"><span data-stu-id="4a40e-151">Response</span></span>
-<span data-ttu-id="4a40e-152">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="4a40e-152">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="f8efc-150">响应</span><span class="sxs-lookup"><span data-stu-id="f8efc-150">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f8efc-151">响应</span><span class="sxs-lookup"><span data-stu-id="f8efc-151">Response</span></span>
+<span data-ttu-id="f8efc-152">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f8efc-152">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -91,16 +89,27 @@ Content-length: 56
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="f8efc-153">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="f8efc-153">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="f8efc-154">语言</span><span class="sxs-lookup"><span data-stu-id="f8efc-154">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/event_tentativelyaccept-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f8efc-155">Javascript</span><span class="sxs-lookup"><span data-stu-id="f8efc-155">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/event_tentativelyaccept-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "event: tentativelyAccept",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/event-tentativelyaccept.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/event-tentativelyaccept.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
