@@ -4,12 +4,12 @@ description: '在 "Azure AD 访问评论" 功能中, 应用已完成 accessRevie
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 19de33c8b99363839730fb88c45640b8b40f28d7
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0e160f5247a2725cb8b675b90a36fff2d6759a60
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33323678"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586252"
 ---
 # <a name="apply-accessreview"></a>应用 accessReview
 
@@ -18,7 +18,7 @@ ms.locfileid: "33323678"
 在 "Azure AD[访问评论](../resources/accessreviews-root.md)" 功能中, 应用已完成[accessReview](../resources/accessreview.md)的决策。  目标对象可以是一次性访问评审, 也可以是定期访问评审的实例。  
 
 
-在访问审核完成后, 因为它已达到结束日期或管理员手动停止, 且未为审阅配置自动应用, 所以您可以调用 apply 以应用所做的更改。 在应用之前, 不会在源资源上显示有关删除访问权限的决策, 因此实例的用户将保留其组成员身份。 通过调用 apply, 评审的结果通过更新组或应用程序来实现。 如果在审阅中拒绝了用户的访问权限, 则当管理员调用此 API 时, Azure AD 将删除其成员身份或应用程序分配。 
+在访问审核完成后, 因为它已达到结束日期或管理员手动停止, 且未为审阅配置自动应用, 所以您可以调用 Apply 以应用所做的更改。 在应用之前, 不会在源资源上显示有关删除访问权限的决策, 因此实例的用户将保留其组成员身份。 通过调用 apply, 评审的结果通过更新组或应用程序来实现。 如果在审阅中拒绝了用户的访问权限, 则当管理员调用此 API 时, Azure AD 将删除其成员身份或应用程序分配。 
 
 在访问评审完成且配置了自动应用后, 评审的状态将从 "已完成" 更改为 "中间状态", 最后将更改为 "已应用的状态"。 您应该会看到已拒绝的用户 (如果有) 在几分钟内从资源组成员身份或应用分配中删除。
 
@@ -30,7 +30,7 @@ ms.locfileid: "33323678"
 
 |权限类型                        | 权限（从最低特权到最高特权）              |
 |:--------------------------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）     | AccessReview |
+|委派（工作或学校帐户）     | AccessReview.ReadWrite.All |
 |委派（个人 Microsoft 帐户） | 不支持。 |
 |应用程序                            | 不支持。 |
 
@@ -73,6 +73,16 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/apply_accessReview-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/apply_accessReview-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-25 00:00:01 UTC -->
@@ -83,6 +93,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-apply.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-apply.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

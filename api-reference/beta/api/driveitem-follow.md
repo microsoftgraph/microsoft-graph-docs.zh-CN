@@ -4,12 +4,12 @@ ms.author: chackman
 title: 关注驱动器项
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 44841c3fec5da5227ddc225d8912a750c1ec3a79
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ba42ecab522ca09999de0df06ef681164d831d4f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325322"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33589135"
 ---
 # <a name="follow-drive-item"></a>关注驱动器项
 
@@ -66,7 +66,10 @@ POST /me/drive/items/{item-id}/follow
   "keywords": "follow item",
   "section": "documentation",
   "tocPath": "Items/Follow",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-follow.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-follow.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
 
