@@ -2,12 +2,12 @@
 title: 创建 governanceRoleAssignmentRequest
 description: 创建一个角色分配请求, 以代表在角色分配上所需的操作。 下表列出了这些操作。
 localization_priority: Normal
-ms.openlocfilehash: b9b5f701f3f8ad283f589d07b250ce8ea63aa479
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2ab5328b9841c157a031e3e0ab9ff7599ddcaf57
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329611"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593470"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>创建 governanceRoleAssignmentRequest
 
@@ -15,7 +15,7 @@ ms.locfileid: "33329611"
 
 创建一个角色分配请求, 以代表在角色分配上所需的操作。 下表列出了这些操作。
 
-| 操作                                   | 类型        |
+| Operation                                   | 类型        |
 |:--------------------------------------------|:------------|
 | 分配角色分配                    | AdminAdd    |
 | 激活符合条件的角色分配        | UserAdd     |
@@ -58,13 +58,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | 属性         | 类型                                                     | 说明 |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | 资源的 ID。 必填。 |
-| roleDefinitionId | String                                                   | 角色定义的 ID。 必填。 |
-| subjectId        | String                                                   | 主题的 ID。 必填。 |
-| assignmentState  | String                                                   | 工作分配的状态。 值可以是`Eligible`和`Active`。 此为必需属性。 |
-| type             | 字符串                                                   | 请求类型。 值可以是`AdminAdd` `UserAdd`、、 `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `AdminRenew` `AdminExtend`、、、、和。 `UserRenew` 必填。 |
-| 在于           | String                                                   | 需要为角色分配请求提供审核和审阅目的的原因。 |
-| 设定         | [governanceSchedule](../resources/governanceschedule.md) | 角色分配请求的日程安排。 对于的请求类型`UserAdd`, `AdminAdd` `AdminUpdate`、和`AdminExtend`, 它是必需的。 |
+| resourceId       | String                                                   | 资源的 ID。 必需。 |
+| roleDefinitionId | 字符串                                                   | 角色定义的 ID。 必需。 |
+| subjectId        | 字符串                                                   | 主题的 ID。 必需。 |
+| assignmentState  | 字符串                                                   | 工作分配的状态。 值可以是`Eligible`和`Active`。 此为必需属性。 |
+| type             | 字符串                                                   | 请求类型。 值可以是`AdminAdd` `UserAdd`、、 `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `AdminRenew` `AdminExtend`、、、、和。 `UserRenew` 必需。 |
+| 在于           | 字符串                                                   | 需要为角色分配请求提供审核和审阅目的的原因。 |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 角色分配请求的日程安排。 对于的请求类型`UserAdd`, `AdminAdd` `AdminUpdate`、和`AdminExtend`, 它是必需的。 |
 
 ## <a name="response"></a>响应
 
@@ -82,7 +82,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | 400 BadRequest | PendingRoleAssignmentRequest                | 系统中已存在一个挂起的[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) 。 |
 | 400 BadRequest | RoleAssignmentExists                        | 系统中已存在请求创建的[governanceRoleAssignment](../resources/governanceroleassignment.md) 。 |
 | 400 BadRequest | RoleAssignmentDoesNotExist                  | 系统中不存在请求进行更新/扩展的[governanceRoleAssignment](../resources/governanceroleassignment.md) 。 |
-| 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)不符合内部策略, 因此无法创建。 |
+| 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | [GovernanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)不符合内部策略, 因此无法创建。 |
 
 ## <a name="examples"></a>示例
 
@@ -96,13 +96,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | 属性         | 类型                                                     | 必需                 | 值 |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
-| resourceId       | String                                                   | 是                      | \<resourceId\> |
+| resourceId       | 字符串                                                   | 是                      | \<resourceId\> |
 | roleDefinitionId | 字符串                                                   | 是                      | \<roleDefinitionId\> |
 | subjectId        | 字符串                                                   | 是                      | \<subjectId\> |
 | assignmentState  | 字符串                                                   | 是                      | 符合条件/活动 |
 | type             | 字符串                                                   | 是                      | AdminAdd |
-| 在于           | String                                                   | 取决于角色设置 |   |
-| 设定         | [governanceSchedule](../resources/governanceschedule.md) | 是                      |   |
+| 在于           | 字符串                                                   | 取决于角色设置 |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                      |   |
 
 #### <a name="request"></a>请求
 
@@ -181,6 +181,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/governanceroleassignmentrequest_post-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/governanceroleassignmentrequest_post-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-user-activates-eligible-role"></a>示例 2: 用户激活符合条件的角色
 
@@ -188,13 +198,13 @@ Content-type: application/json
 
 | 属性         | 类型                                                     | 必需                 | 值 |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
-| resourceId       | String                                                   | 是                      | \<resourceId\> |
+| resourceId       | 字符串                                                   | 是                      | \<resourceId\> |
 | roleDefinitionId | 字符串                                                   | 是                      | \<roleDefinitionId\> |
 | subjectId        | 字符串                                                   | 是                      | \<subjectId\> |
-| assignmentState  | 字符串                                                   | 是                      | 可用 |
+| assignmentState  | 字符串                                                   | 是                      | 活动 |
 | type             | 字符串                                                   | 是                      | UserAdd |
-| 在于           | String                                                   | 取决于角色设置 |   |
-| 设定         | [governanceSchedule](../resources/governanceschedule.md) | 是                      |   |
+| 在于           | 字符串                                                   | 取决于角色设置 |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                      |   |
 
 #### <a name="request"></a>请求
 
@@ -291,13 +301,13 @@ Content-type: application/json
 
 | 属性         | 类型                                                     | 必需 | 值 |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
-| resourceId       | String                                                   | 是      | \<resourceId\> |
+| resourceId       | 字符串                                                   | 是      | \<resourceId\> |
 | roleDefinitionId | 字符串                                                   | 是      | \<roleDefinitionId\> |
 | subjectId        | 字符串                                                   | 是      | \<subjectId\> |
-| assignmentState  | 字符串                                                   | 是      | 可用 |
+| assignmentState  | 字符串                                                   | 是      | 活动 |
 | type             | 字符串                                                   | 是      | UserRemove |
 | 在于           | 字符串                                                   | 否       |   |
-| 设定         | [governanceSchedule](../resources/governanceschedule.md) | 否       |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 否       |   |
 
 #### <a name="request"></a>请求
 
@@ -367,7 +377,7 @@ Content-type: application/json
 | assignmentState  | 字符串                                                   | 是      | 符合条件/活动 |
 | type             | 字符串                                                   | 是      | AdminRemove |
 | 在于           | 字符串                                                   | 否       |   |
-| 设定         | [governanceSchedule](../resources/governanceschedule.md) | 否       |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 否       |   |
 
 #### <a name="request"></a>请求
 
@@ -434,8 +444,8 @@ Content-type: application/json
 | subjectId        | 字符串                                                   | 是                     | \<subjectId\> |
 | assignmentState  | 字符串                                                   | 是                     | 符合条件/活动 |
 | type             | 字符串                                                   | 是                     | AdminUpdate |
-| 在于           | String                                                   | 取决于 roleSettings |   |
-| 设定         | [governanceSchedule](../resources/governanceschedule.md) | 是                     |   |
+| 在于           | 字符串                                                   | 取决于 roleSettings |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                     |   |
 
 #### <a name="request"></a>请求
 
@@ -525,8 +535,8 @@ Content-type: application/json
 | subjectId        | 字符串                                                   | 是                     | \<subjectId\> |
 | assignmentState  | 字符串                                                   | 是                     | 符合条件/活动 |
 | type             | 字符串                                                   | 是                     | AdminExtend |
-| 在于           | String                                                   | 取决于 roleSettings |   |
-| 设定         | [governanceSchedule](../resources/governanceschedule.md) | 是                     |   |
+| 在于           | 字符串                                                   | 取决于 roleSettings |   |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | 是                     |   |
 
 #### <a name="request"></a>请求
 
@@ -613,6 +623,19 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

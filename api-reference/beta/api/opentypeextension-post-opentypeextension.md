@@ -3,12 +3,12 @@ title: 创建开放扩展
 description: 创建开放扩展 (openTypeExtension 对象) 并添加自定义属性
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 24745ecfa5e59bd8bc455018690e813f82c33662
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 104f29d9026d385403d272d71fc5acf77ad6fd3d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338164"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33597075"
 ---
 # <a name="create-open-extension"></a>创建开放扩展
 
@@ -16,16 +16,16 @@ ms.locfileid: "33338164"
 
 创建开放扩展 ([openTypeExtension](../resources/opentypeextension.md)对象), 并在新的或现有的受支持的资源实例中添加自定义属性。
 
-> **注意:** 如果要创建 outlook 资源的开放扩展, 请参阅[openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的**Outlook 特定注意事项**。
+> **请注意：** 如果要在 Outlook 资源上创建开放扩展，请参阅 [openTypeExtension 资源类型](../resources/opentypeextension.md#outlook-specific-considerations)中的 **Outlook 特定注意事项**。
 
 ## <a name="permissions"></a>权限
 
-根据要在其中创建扩展的资源以及请求的权限类型 (委派或应用程序), 下表中指定的权限是调用此 API 所需的最低特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
+根据要在其中创建扩展的资源和所请求的权限类型（委派或应用程序），下表中指定的权限是指调用此 API 所需的最低限度的特权。 若要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.AccessAsUser.All | 不支持 | Device.ReadWrite.All |
-| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [组](../resources/group.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
 | [组事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
@@ -38,7 +38,7 @@ ms.locfileid: "33338164"
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>在新资源实例中创建扩展插件
 
-使用您用于创建实例的相同 REST 请求。
+使用创建实例时所用的同一 REST 请求。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,13 +49,13 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**注意:** 此语法展示了创建受支持的资源实例的一些常见方法。 所有其他允许您创建这些资源实例的 POST 语法都支持以类似方式在其中创建开放扩展。
+>**请注意：** 此语法显示了一些创建受支持资源实例的常用方式。 可用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。
 
-若要了解如何在请求正文中添加新资源实例[和扩展插件](#request-body)的属性，请参阅_请求正文_部分。
+若要了解如何在请求正文中添加新资源实例和_扩展_的属性，请参阅[请求正文](#request-body)部分。
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>在现有资源实例中创建扩展插件
 
-在请求中标识资源实例，然后对 `POST` 导航属性执行 ****。
+在请求中标识资源实例，然后对 **extensions** 导航属性执行 `POST`。
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -71,9 +71,9 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**注意:** 此语法显示了一些用于标识资源实例的常见方法, 以便在其中创建扩展。 允许您标识这些资源实例的所有其他语法都支持以类似方式在其中创建开放扩展。
+>**请注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中创建一个扩展。 可用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。
 
-若要了解如何在请求正文中添加[扩展插件](#request-body)，请参阅_请求正文_部分。
+若要了解如何在请求正文中添加_扩展_，请参阅[请求正文](#request-body)部分。
 
 ## <a name="path-parameters"></a>路径参数
 
@@ -90,11 +90,11 @@ POST /users/{id|userPrincipalName}/extensions
 
 ## <a name="request-body"></a>请求正文
 
-提供具有以下必需的名称-值对和任何其他自定义数据的[openTypeExtension](../resources/opentypeextension.md)的 JSON 正文。 JSON 负载中的数据可以是基元类型或基元类型数组。
+提供具有以下必需的名称-值对和任何其他自定义数据的[openTypeExtension](../resources/opentypeextension.md)的 JSON 正文。JSON 有效负载中的数据可以是基元类型, 也可以是基元类型的数组。
 
 | 名称       | 值 |
 |:---------------|:----------|
-| @odata.type | openTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 在_新_资源实例中创建扩展插件时，除了新的 **openTypeExtension** 对象之外，还要提供 JSON 表示形式的相关属性才能创建此类资源实例。
@@ -105,7 +105,7 @@ POST /users/{id|userPrincipalName}/extensions
 
 响应代码可以是 `201 Created`，也可以是 `202 Accepted`，具体视操作而定。
 
-使用与创建资源实例相同的操作创建扩展时, 该操作将返回在使用操作创建资源实例而不带扩展时返回的响应代码。
+使用创建资源实例时所用的操作创建扩展时，操作所返回的响应代码与通过该操作创建不带扩展的资源实例时返回的代码相同。
 请参阅有关创建实例的相应主题，如[上 ](#create-an-extension-in-a-new-resource-instance)所列。
 
 ### <a name="response-body"></a>响应正文
@@ -127,7 +127,7 @@ POST /users/{id|userPrincipalName}/extensions
 
   - `microsoft.graph.openTypeExtension` 类型。
   - 扩展名“Com.Contoso.Referral”。
-  - 要存储为 JSON 有效负载中的三个自定义属性的`companyName`其他`expirationDate`数据: `dealValue`、和。
+  - 存储为 JSON 有效负载中的 3 个自定义属性的其他数据：`companyName`、`expirationDate` 和 `dealValue`。
 
 <!-- {
   "blockType": "request",
@@ -166,7 +166,7 @@ Content-Type: application/json
 
 下面是第一个示例的响应。响应正文包括新邮件的属性以及新扩展的以下属性：
 
-- 具有完全限定的名称 **** 的 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 属性。
+- 具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
 - 请求中指定的默认属性 **extensionName**。
 - 请求中指定的作为 3 个自定义属性存储的自定义数据。
 
@@ -241,6 +241,14 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_opentypeextension_1-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ****
 
@@ -274,7 +282,7 @@ Content-Type: application/json
 下面是第二个示例的响应。请求正文包括新扩展的如下内容：
 
 - 默认属性 **extensionName**。
-- 具有完全限定的名称 **** 的 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 属性。
+- 具有完全限定的名称 `microsoft.graph.openTypeExtension.Com.Contoso.Referral` 的 **Id** 属性。
 - 要存储的自定义数据。
 
 <!-- {
@@ -298,6 +306,14 @@ Content-type: application/json
     "expirationDate": "2015-12-03T10:00:00.000Z"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_opentypeextension_2-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ****
 
@@ -349,6 +365,14 @@ Content-type: application/json
     "expirationDate": "2015-07-03T13:04:00Z"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_opentypeextension_3-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ****
 
@@ -404,6 +428,14 @@ HTTP/1.1 202 Accepted
 Content-type: text/plain
 Content-Length: 0
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_opentypeextension_4-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ****
 
@@ -482,6 +514,14 @@ Content-type: application/json
 }
 
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_opentypeextension_5-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -493,6 +533,12 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/opentypeextension-post-opentypeextension.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/opentypeextension-post-opentypeextension.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/opentypeextension-post-opentypeextension.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/opentypeextension-post-opentypeextension.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/opentypeextension-post-opentypeextension.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,22 +4,22 @@ ms.author: dspektor
 ms.date: 10/06/2017
 title: 获取分析结果
 localization_priority: Normal
-ms.openlocfilehash: fb8986351aec3afb88a4c6034a52781423e543f0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b0112041d6b8a8fead91ff76501d9e9b5f1c3102
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338779"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598314"
 ---
 # <a name="get-analytics"></a>获取分析结果
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取有关在此资源下发生的视图的[itemAnalytics][] 。
-**itemAnalytics**资源是获取`allTime`和的`lastSevenDays`活动统计信息的便捷方式。
+**ItemAnalytics**资源是获取`allTime`和的`lastSevenDays`活动统计信息的便捷方式。
 对于自定义时间范围或时间间隔, 请使用[getActivitiesByInterval][] API。
 
->**注意:****itemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
+>**注意:****ItemAnalytics**资源在所有[国家/地区部署](/graph/deployments)中尚不可用。
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
@@ -77,6 +77,16 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-analytics-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-analytics-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -85,6 +95,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "BaseItem/Get analytics",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/itemanalytics-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/itemanalytics-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

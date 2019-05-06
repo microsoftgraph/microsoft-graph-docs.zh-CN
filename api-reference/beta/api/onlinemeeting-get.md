@@ -4,12 +4,12 @@ description: 检索**onlineMeeting**对象的属性和关系。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 556482073374d0c8a9381b10128ce6d4d0ae9dec
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ff164b7b525c83436dc5c0db6e583704f79414e3
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332985"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596992"
 ---
 # <a name="get-online-meeting"></a>获取联机会议
 
@@ -17,7 +17,7 @@ ms.locfileid: "33332985"
 
 检索**onlineMeeting**对象的属性和关系。
 
-> **注意:** 此`GET`方法限制为[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)。这些 id 是为云-视频互操作许可的用户生成的, 此方法用于获取加入会议的详细信息。
+> **注意:** 此`GET`方法限制为[VTC 会议 id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up)。这些 Id 是为云-视频互操作许可的用户生成的, 此方法用于获取加入会议的详细信息。
 > 对于常规流, bot 可以使用`joinURL`加入会议, 而无需进行查找。
 
 ## <a name="permissions"></a>权限
@@ -129,6 +129,16 @@ Content-Length: 1574
   "subject": "Quarterly sales numbers"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-onlineMeeting-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-onlineMeeting-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -139,6 +149,9 @@ Content-Length: 1574
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/onlinemeeting-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/onlinemeeting-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

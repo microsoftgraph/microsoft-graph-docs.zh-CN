@@ -4,12 +4,12 @@ description: 检索对用户订阅的对象所做的更改。
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: ebcb457164c83c2fc418d097d7ba87c40c2eb74e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6da15bea91d6cddf986d1c4590ff58b72fc28690
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332307"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33594977"
 ---
 # <a name="planner-delta"></a>Planner: delta
 
@@ -21,7 +21,7 @@ ms.locfileid: "33332307"
 
 此方法的返回值可能包含来自 Planner 的对象的异构类型。
 
-有关在 microsoft graph 数据中跟踪更改的详细信息, 请参阅[使用 delta query 跟踪 microsoft graph 数据中的更改](/graph/delta-query-overview)。
+有关在 Microsoft Graph 数据中跟踪更改的详细信息, 请参阅[使用 delta query 跟踪 Microsoft graph 数据中的更改](/graph/delta-query-overview)。
 
 ## <a name="permissions"></a>权限
 
@@ -136,6 +136,16 @@ preference-applied: odata.track-changes, odata.track-changes
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -146,6 +156,9 @@ preference-applied: odata.track-changes, odata.track-changes
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/planneruser-list-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/planneruser-list-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

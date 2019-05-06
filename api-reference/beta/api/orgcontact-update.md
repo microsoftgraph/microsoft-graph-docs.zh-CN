@@ -4,12 +4,12 @@ description: 更新 orgcontact 对象的属性。
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 77eccacead0871c883da1baa005fefc796158fdc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 959be23764b5348c0e9473aa00205620f321ebb4
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338047"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33596599"
 ---
 # <a name="update-orgcontact"></a>更新 orgcontact
 
@@ -40,22 +40,22 @@ PATCH /contacts/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|city|String||
+|city|字符串||
 |country|字符串||
-|department|String||
+|department|字符串||
 |onPremisesSyncEnabled|Boolean||
-|displayName|String||
-|givenName|String||
-|jobTitle|String||
+|displayName|字符串||
+|givenName|字符串||
+|jobTitle|字符串||
 |onPremisesLastSyncDateTime|DateTimeOffset||
 |mail|String||
-|mailNickname|String||
-|mobilePhone|String||
-|officeLocation|String||
-|postalCode|String||
+|mailNickname|字符串||
+|mobilePhone|字符串||
+|officeLocation|字符串||
+|postalCode|字符串||
 |proxyAddresses|String||
 |state|字符串||
-|streetAddress|String||
+|streetAddress|字符串||
 |surname|String||
 |businessPhones|String collection||
 
@@ -108,6 +108,16 @@ Content-length: 222
   "displayName": "displayName-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_orgcontact-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_orgcontact-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -118,6 +128,9 @@ Content-length: 222
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/orgcontact-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/orgcontact-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

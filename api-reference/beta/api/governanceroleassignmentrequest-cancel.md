@@ -2,12 +2,12 @@
 title: 取消 governanceRoleAssignmentRequest
 description: 取消 governanceRoleAssignmentRequest。
 localization_priority: Normal
-ms.openlocfilehash: d4573af27def33f11c4c20e11ce99a8b309581fb
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4972c1f283c08b1304c6a01fdc0acc1d6942aec1
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329636"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593512"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>取消 governanceRoleAssignmentRequest
 
@@ -49,7 +49,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 此 API 遵循 HTTP 代码的标准。 此外, 自定义错误代码如下所示。
 |错误代码     | 错误消息              | 详细信息 |
 |:--------------------| :---------------------|:--------------------|
-| 400 BadRequest | RoleAssignmentRequestNotFound | governanceRoleAssignmentRequest 在系统中不存在。
+| 400 BadRequest | RoleAssignmentRequestNotFound | GovernanceRoleAssignmentRequest 在系统中不存在。
 | 400 BadRequest | RequestCannotBeCancelled    | 仅`Granted`可以取消、 `PendingApproval` `PendingApprovalProvisioning`和和`PendingAdminDecision`的状态的请求。
 
 ## <a name="example"></a>示例
@@ -72,6 +72,16 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/cancel_governanceroleassignmentrequest-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/cancel_governanceroleassignmentrequest-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -82,6 +92,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-cancel.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

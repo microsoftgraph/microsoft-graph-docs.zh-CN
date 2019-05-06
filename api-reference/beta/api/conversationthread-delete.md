@@ -4,16 +4,14 @@ description: 删除 conversationThread。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 68fe2d7c89545de095518271dee346a48b028a9e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a89176839875d4b5ecd3edd6e4d83242d29be567
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33326210"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33591111"
 ---
 # <a name="delete-conversationthread"></a>删除 conversationThread
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除 conversationThread。
 ## <a name="permissions"></a>权限
@@ -52,7 +50,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}
   "name": "delete_conversationthread"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/threads/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。 
@@ -63,16 +61,27 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_conversationthread-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_conversationthread-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete conversationThread",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/conversationthread-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/conversationthread-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

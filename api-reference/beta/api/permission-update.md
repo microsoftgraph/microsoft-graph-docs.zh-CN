@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 更改共享权限
 localization_priority: Normal
-ms.openlocfilehash: 990f452e35a0674fa60e36cbbe771fbb97655583
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 51d1ebef57c9c34355789fcc8eefb5d362f0cce4
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33337848"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33595707"
 ---
 # <a name="update-sharing-permission"></a>更新共享权限
 
@@ -56,7 +56,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | 属性     | 类型   | 说明                   |
 |:-------------|:-------|:------------------------------|
-| **角色**    | String 集合 | 权限类型的数组。 |
+| **角色**    | String collection | 权限类型的数组。 |
 
 ## <a name="response"></a>响应
 
@@ -98,6 +98,16 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update-permission-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update-permission-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -108,6 +118,9 @@ Content-type: application/json
   "keywords": "permission, permissions, sharing, change permissions, update permission",
   "section": "documentation",
   "tocPath": "OneDrive/Item/Update permission",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/permission-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/permission-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

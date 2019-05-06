@@ -1,13 +1,13 @@
 ---
 title: 更新 profilephoto
-description: 更新租户中任意用户的照片，其中包括已登录用户或指定的组或联系人。 由于存在
+description: 更新租户中任意用户的照片，其中包括已登录用户或指定的组或联系人。 自此处起
 localization_priority: Normal
-ms.openlocfilehash: 1cf4d99f55768a6fad868d91d526fc5fd0b7b5ca
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: eb094fa7dfd8fdac18fe5fcdb975ed73cf90470b
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332053"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33593687"
 ---
 # <a name="update-profilephoto"></a>更新 profilephoto
 
@@ -26,9 +26,9 @@ ms.locfileid: "33332053"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户）     | 已登录**用户**的个人资料照片:<br/>所有用户读写。<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 |委派（个人 Microsoft 帐户） | 不支持。 |
-|Application                            | 对于 **user** 资源：<br/>User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
+|应用程序                            | 对于 **user** 资源：<br/>User.ReadWrite.All<br /><br />对于 **group** 资源：<br />Group.ReadWrite.All<br /><br />对于 **contact** 资源：<br />Contacts.ReadWrite |
 
-> **注释**若要更新组织中任何用户的照片, 应用必须具有用户的 ReadWrite。所有应用程序权限, 并在其自己的标识下调用此 API, 而不代表用户。 若要了解详细信息, 请参阅[获取 access 而无需登录用户](/graph/auth-v2-service)。
+> **注意** 若要更新组织中任何用户的照片，应用必须具有 User.ReadWrite.All 应用程序权限，并以其自己的身份而不是代表用户来调用此 API。 若要了解详细信息，请参阅[在没有已登录用户的情况下进行访问](/graph/auth-v2-service)。
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -77,6 +77,16 @@ Binary data for the image
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_profilephoto-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_profilephoto-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -87,6 +97,9 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/profilephoto-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/profilephoto-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

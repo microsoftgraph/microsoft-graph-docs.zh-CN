@@ -4,17 +4,14 @@ description: 将新用户或组添加到 acceptedSender 列表中。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d1f22c5a14a9d08204532217d61665659acc979a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6c2de839c163a2f43b12060c6e26c3b32373e2e5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328524"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33592536"
 ---
 # <a name="create-rejectedsender"></a>创建 rejectedSender
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 将新用户或组添加到 acceptedSender 列表中。
 
 在请求主体的 `@odata.id` 中指定用户或组。已拒绝的发件人列表中的用户无法发布到组对话（在 POST 请求 URL 中标识）。确保未在拒绝的发件人和接受的发件人列表中指定同一用户或组，否则会发生错误。
@@ -33,7 +30,6 @@ ms.locfileid: "33328524"
 ```http
 POST /groups/{id}/rejectedSenders/$ref
 ```
-
 ## <a name="request-headers"></a>请求标头
 | 标头       | 值 |
 |:---------------|:--------|
@@ -50,18 +46,17 @@ POST /groups/{id}/rejectedSenders/$ref
 下面展示了示例请求。
 <!-- {
   "blockType": "request",
-  "name": "create_rejectedsender"
+  "name": "create_directoryobject_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref
+POST https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
+  "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-
 #### <a name="response"></a>响应
 下面是一个响应示例。
 <!-- {
@@ -71,16 +66,24 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create rejectedSender",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-rejectedsenders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

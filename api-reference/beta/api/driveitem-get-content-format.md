@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 转换为其他格式
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ea4061187ea9890a75a85cef2122a2ec7e280920
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b07612438d87bff34108baa9be779889392014ae
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325275"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33590651"
 ---
 # <a name="download-a-file-in-another-format"></a>以其他格式下载文件
 
@@ -78,6 +78,16 @@ GET /drive/items/{item-id}/content?format={format}
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/convert-item-content-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/convert-item-content-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="error-responses"></a>错误响应
 
@@ -93,6 +103,9 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
   "keywords": "convert,pdf,convert to pdf",
   "section": "documentation",
   "tocPath": "Items/Download formats",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-get-content-format.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-get-content-format.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

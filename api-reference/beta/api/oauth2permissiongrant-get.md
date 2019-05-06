@@ -2,12 +2,12 @@
 title: 获取 oAuth2Permissiongrant
 description: 检索 oAuth2Permissiongrant 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 482d1f310b6eadcfe7df9e961af4ee4c229e9c12
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e08b39910073d0dd1590262712c5436cb0220735
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338214"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33597159"
 ---
 # <a name="get-oauth2permissiongrant"></a>获取 oAuth2Permissiongrant
 
@@ -77,6 +77,16 @@ Content-length: 200
   "resourceId": "resourceId-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_oAuth2Permissiongrant-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_oAuth2Permissiongrant-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -87,6 +97,9 @@ Content-length: 200
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/oauth2permissiongrant-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/oauth2permissiongrant-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

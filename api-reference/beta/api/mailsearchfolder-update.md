@@ -4,12 +4,12 @@ description: 更新 mailSearchFolder 对象的可写属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1c51410389d3ed12b8959f5b4d4c98f2fb66e5ad
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: fb11e06ac450aa218a8e1102557eb9e3a79f874c
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33338629"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33598184"
 ---
 # <a name="update-mailsearchfolder"></a>更新 mailSearchFolder
 
@@ -44,10 +44,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-| displayName | String | [mailFolder](../resources/mailfolder.md)的显示名称。|
+| displayName | String | [MailFolder](../resources/mailfolder.md)的显示名称。|
 | includeNestedFolders | Boolean | 应如何遍历邮箱文件夹层次结构。 `true`表示应执行深入搜索, 而不是`false`指应改为进行浅表搜索。 |
-| sourceFolderIDs | String 集合 | 应挖掘的邮箱文件夹。 |
-| filterQuery | String | 用于筛选邮件的 OData 查询。 |
+| sourceFolderIDs | String collection | 应挖掘的邮箱文件夹。 |
+| filterQuery | 字符串 | 用于筛选邮件的 OData 查询。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [mailFolder](../resources/mailfolder.md) 对象。
@@ -100,6 +100,14 @@ Content-length: 179
   "filterQuery": "contains(subject, 'Analytics')"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_mailsearchfolder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -110,6 +118,8 @@ Content-length: 179
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

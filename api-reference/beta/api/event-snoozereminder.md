@@ -4,16 +4,14 @@ description: 将用户日历中的事件的提醒推迟到新时间。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 57fea89c98bfc2e699d0625db4d40fbfd0f57578
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 53643800e9148297be166e4f41deaa4eaf9ca542
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325111"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33586672"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 将用户[日历](../resources/calendar.md)中的[事件](../resources/event.md)的提醒推迟到新时间。
 
@@ -70,13 +68,13 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
   "name": "event_snoozereminder"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/events/{id}/snoozeReminder
+POST https://graph.microsoft.com/v1.0/me/events/{id}/snoozeReminder
 Content-type: application/json
 Content-length: 97
 
 {
   "newReminderTime": {
-    "dateTime": "2016-10-19T10:37:00Z",
+    "dateTime": "dateTime-value",
     "timeZone": "timeZone-value"
   }
 }
@@ -91,16 +89,27 @@ Content-length: 97
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/event_snoozereminder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/event_snoozereminder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "event: snoozeReminder",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/event-snoozereminder.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/event-snoozereminder.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
