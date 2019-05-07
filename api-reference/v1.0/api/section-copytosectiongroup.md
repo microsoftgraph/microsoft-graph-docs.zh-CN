@@ -4,12 +4,12 @@ description: 将分区复制到特定分区组。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 18afd7d0ac94b9964a049b1ad0c2c120f0d2627b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 56aaab6ad53318be6c943e526eb4cc8a9676c63f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521087"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603467"
 ---
 # <a name="section-copytosectiongroup"></a>部分: copyToSectionGroup
 将分区复制到特定分区组。
@@ -45,7 +45,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 |:---------------|:--------|:----------|
 |groupId|String|要复制到的组的 id。 仅在复制到 Office 365 组时使用。|
 |id|String|必需。 目标分区组的 id。 |
-|renameAs|String|副本的名称。 默认值为现有项目的名称。 |
+|renameAs|字符串|副本的名称。 默认值为现有项目的名称。 |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||
@@ -85,6 +85,16 @@ Content-length: 84
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/section_copytosectiongroup-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/section_copytosectiongroup-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,5 +103,9 @@ HTTP/1.1 202 Accepted
   "description": "section: copyToSectionGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/section-copytosectiongroup.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/section-copytosectiongroup.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

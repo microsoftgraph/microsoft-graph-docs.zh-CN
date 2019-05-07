@@ -4,16 +4,14 @@ description: 检索 directoryroletemplate 对象的属性和关系。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d66cf5f4d8784eeee5d4f84dd4eaa3616bafa5a4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 55582635c4ccfbeea2d05175f53c3ca5f1eee1b6
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562424"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33617066"
 ---
 # <a name="get-directoryroletemplate"></a>获取 directoryRoleTemplate
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 检索 directoryroletemplate 对象的属性和关系。
 ## <a name="permissions"></a>权限
@@ -52,7 +50,7 @@ GET /directoryRoleTemplates/{id}
   "name": "get_directoryroletemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/directoryRoleTemplates/{id}
+GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/{id}
 ```
 ##### <a name="response"></a>响应
 下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。
@@ -72,16 +70,27 @@ Content-length: 98
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directoryroletemplate-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directoryroletemplate-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get directoryRoleTemplate",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/directoryroletemplate-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/directoryroletemplate-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -3,12 +3,12 @@ title: Azure AD 标识和访问管理 API 概述
 description: 'Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)，实现应用、设备、服务和基础结构之间的安全和高效访问。 组织可以使用 Azure AD 来管理标识，并控制本地、混合及云环境中的访问。  '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 634b2c806065f6e1b7cd2a0f2aca41cfdb2aa7fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: edf02faa345426b77e0ede8a0c92e54207338bec
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570255"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599819"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD 标识和访问管理 API 概述
 
@@ -84,7 +84,7 @@ Azure AD 使用自适应机器学习算法和启发，检测表明帐户可能�
 ## <a name="next-steps"></a>后续步骤
 
 - 了解到如何[使用 Azure AD REST API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)。
-- 使用 Azure AD 对 Microsoft Graph [进行身份验证](auth-overview.md)。
+- 使用 Azure AD 对 Microsoft Graph [进行身份验证](./auth/)。
 - 将 [Azure AD 登录](https://azure.microsoft.com/zh-CN/develop/identity/signin/)集成到应用或网站中。
 - 有关 Azure AD API 中新增功能的信息，请参阅[更改日志](changelog.md)。
 - 浏览[示例](https://developer.microsoft.com/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。

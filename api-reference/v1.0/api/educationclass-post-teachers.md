@@ -4,12 +4,12 @@ description: 向课程添加教师。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a8c968890877ec07112510615b11010efb3779a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6f2c7b9099624f5e8db1cc39657f41d328564423
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550474"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33616134"
 ---
 # <a name="add-teacher"></a>添加教师
 
@@ -74,6 +74,14 @@ Content-length: 508
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_educationuser_from_educationclass-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -82,5 +90,8 @@ HTTP/1.1 204 No Content
   "description": "Create educationUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-post-teachers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

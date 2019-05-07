@@ -4,12 +4,12 @@ description: '`/education` 命名空间公开特定于教育部门的功能。 '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5b9f17cf82c6839a95f1fd81405aa675e0f4d6ba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ca794bb3fe2d2012cecd1719368df022f44c0ea
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562704"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601822"
 ---
 # <a name="educationroot-resource-type"></a>educationRoot 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "32562704"
 |classes|[educationClass](educationclass.md) 集合| 只读。 可为 Null。|
 |me|[educationUser](educationuser.md)| 只读。 可为 Null。|
 |schools|[educationSchool](educationschool.md) 集合| 只读。可为 NULL。|
-|users|[educationUser](educationuser.md) 集合| 只读。可为 NULL。|
+|users|[educationUser](educationuser.md) 集合| 只读。可为空。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -72,6 +72,16 @@ Content-type: application/json
 {
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_education-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_education-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -80,5 +90,9 @@ Content-type: application/json
   "description": "educationRoot resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/resources/educationroot.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/resources/educationroot.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

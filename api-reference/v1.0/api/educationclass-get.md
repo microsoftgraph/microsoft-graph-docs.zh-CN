@@ -4,12 +4,12 @@ description: "  组管理员代表课程中的教师。 如果使用的是委派
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 80cc29ec8536c66e3b7af1b688fd6e1b2a715ea3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 27f4a7c6227662660e677c25ec96f37cdbe553a4
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550509"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33616242"
 ---
 # <a name="get-educationclass"></a>获取 educationClass
 
@@ -22,7 +22,7 @@ ms.locfileid: "32550509"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduRoster.ReadBasic  |
 |委派（个人 Microsoft 帐户） |  不支持  |
-|Application | EduRoster.Read.All、EduRoster.ReadWrite.All | 
+|应用程序 | EduRoster.Read.All、EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -83,6 +83,16 @@ Content-length: 224
   "mailNickname": "fineartschool.net "
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_educationclass-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_educationclass-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -91,5 +101,9 @@ Content-length: 224
   "description": "Get educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

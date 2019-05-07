@@ -4,12 +4,12 @@ description: 提交数据策略操作请求, 由公司管理员进行导出以�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ba26d2b2bc5af63f01a4333490d9850ffa3dd767
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6feffbe56a6b4fe21c5a06eb89016f68d8f045ef
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576274"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602147"
 ---
 # <a name="user-exportpersonaldata"></a>用户: exportPersonalData
 
@@ -20,9 +20,9 @@ ms.locfileid: "32576274"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  将用户导出为 all、user、Read。 all  |
+|委派（工作或学校帐户） |  将用户导出为 All、User、Read。 All  |
 |委派（个人 Microsoft 帐户） |  不适用  |
-|应用程序 | 将用户导出为 all、user、Read。 all |
+|应用程序 | 将用户导出为 All、User、Read。 All |
 
 >**注意:** 只有在使用委派权限时, 公司管理员才能执行导出。
 
@@ -42,7 +42,7 @@ POST /users/{id}/exportPersonalData
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|storageLocation|String|这是 Azure 存储帐户的共享访问签名 (SAS) URL, 应导出数据的位置。|
+|storageLocation|字符串|这是 Azure 存储帐户的共享访问签名 (SAS) URL, 应导出数据的位置。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `202 Accepted` 响应代码。 它不在响应正文中返回任何内容。 响应包含以下响应头。
@@ -70,6 +70,16 @@ Content-length: 48
 ##### <a name="response"></a>响应
 
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 {
   Location: https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
   Retry-After: 60
@@ -92,5 +102,9 @@ HTTP/1.1 202 Accepted
   "description": "user: exportPersonalData",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

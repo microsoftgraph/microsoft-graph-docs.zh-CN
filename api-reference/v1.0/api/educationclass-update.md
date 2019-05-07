@@ -4,12 +4,12 @@ description: 更新课程属性。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 89517aa1f2b458dbdec311969f0cedd994464702
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44068da9b8a8203bd385f84bb10d62a3c73336ac
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550418"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33616148"
 ---
 # <a name="update-educationclass-properties"></a>更新 educationclass 属性
 
@@ -40,8 +40,8 @@ PATCH /education/classes/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|说明|String| 课程说明。|
-|displayName|String| 课程名称。|
+|说明|字符串| 课程说明。|
+|displayName|字符串| 课程名称。|
 |mailNickname|String| 用于向所有用户发送电子邮件的电子邮件别名（如果已启用）。 |
 <!-- Please verify the revised description here. -->
 |classCode|String| 由学校使用的课程代码。| |externalId|String| 来自同步系统的课程 ID。 | |externalName|String|同步系统中的课程名称。| |externalSource|string| 此课程的创建方式。 可能的值为: `sis`、 `manual`、 `enum_sentinel`。 |
@@ -97,6 +97,16 @@ Content-length: 224
   "mailNickname": "Fabrikam"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_educationclass-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_educationclass-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,5 +115,9 @@ Content-length: 224
   "description": "Update educationclass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationclass-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -3,12 +3,12 @@ title: 删除开放扩展
 description: '从指定的资源实例中删除开放扩展（openTypeExtension 对象）。 '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: de0e609ba0d10d8d0b96e64f650347fb4f6fded8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: af71848e0bbc6dab98a3ca9cb2875fbbe1ae82cf
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562095"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611747"
 ---
 # <a name="delete-open-extension"></a>删除开放扩展
 
@@ -21,7 +21,7 @@ ms.locfileid: "32562095"
 | 支持的资源 | 委派（工作或学校帐户） | 委派（个人 Microsoft 帐户） | 应用程序 |
 |:-----|:-----|:-----|:-----|
 | [设备](../resources/device.md) | Directory.AccessAsUser.All | 不支持 | Device.ReadWrite.All |
-| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [事件](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [组](../resources/group.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
 | [组事件](../resources/event.md) | Group.ReadWrite.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.ReadWrite.All | 不支持 | Group.ReadWrite.All |
@@ -54,7 +54,7 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 |id|string|实例在相应集合中的唯一标识符。必需。|
 |extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
 
-## <a name="request-headers"></a>请求头
+## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
 |:---------------|:----------|
 | Authorization | Bearer {token}。必需。 |
@@ -84,6 +84,16 @@ DELETE https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVlN17IsAAA=/extensions/Com.Contoso.Referral
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_opentypeextension-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_opentypeextension-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
  
 
@@ -104,5 +114,9 @@ HTTP/1.1 204 No Content
   "description": "Delete opentypeextension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/opentypeextension-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

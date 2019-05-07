@@ -4,12 +4,12 @@ description: 若要调用此 API, 必须有以下权限之一。 若要了解详
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 2d004a497a0186feb15ef9410c23938f059a2dad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7e20a8f5f9989380b38bd8d64a1dcd3041fdbd69
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573464"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33600564"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 
@@ -72,3 +72,24 @@ Content-length: 194
   "index": 99
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/workbookrange_visibleview-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/workbookrange-visibleview.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/workbookrange-visibleview.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

@@ -1,0 +1,61 @@
+---
+title: targetResource 资源类型
+description: 表示与审核活动相关联的目标资源类型。
+localization_priority: Normal
+author: dhanyahk
+ms.prod: azure-ad
+ms.openlocfilehash: 33a381d6088245be235f37549184183443fe3237
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33629213"
+---
+# <a name="targetresource-resource-type"></a>targetResource 资源类型
+
+表示与审核活动相关联的目标资源类型。 
+
+## <a name="properties"></a>属性
+
+| 属性     | 类型   |说明|
+|:---------------|:--------|:----------|
+|id|String|指示资源的唯一 ID。|
+|displayName|String|指示为资源定义的可见名称。 通常是在创建资源时指定的。|
+|type|String|描述资源类型。  示例值包括`Application`、 `Group`、 `ServicePrincipal`和`User`。|
+|userPrincipalName|字符串|当 "**类型**" 设置`User`为时, 这包括启动操作的用户名;`null`对于其他类型。|
+|groupType|字符串|当 "**类型**" 设置`Group`为时, 这表示组类型。|
+|ModifiedProperties|[modifiedProperty](modifiedproperty.md)集合|指示已更改的每个属性的名称、旧值和新值。 属性值取决于操作**类型**。|
+
+## <a name="json-representation"></a>JSON 表示形式
+
+下面是资源的 JSON 表示形式。
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.targetResource"
+}-->
+
+```json
+{
+  "id": "String",
+  "displayName": "String",
+  "type": "String",
+  "userPrincipalName": "String",
+  "groupType": "String",
+  "modifiedProperties": [{"@odata.type": "microsoft.graph.modifiedProperty"}]
+}
+```
+
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "targetResource resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -4,14 +4,16 @@ description: 在用户的默认联系人文件夹下创建新的 contactFolder�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 506145db1ffa3190b98331f1b875f5cf97c9993c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c96b8a20744ee32a8348f072788c6a7e029dc865
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563768"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601367"
 ---
 # <a name="create-contactfolder"></a>创建 ContactFolder
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在用户的默认联系人文件夹下创建新的 contactFolder。
 
@@ -52,7 +54,7 @@ POST /users/{id | userPrincipalName}/contactFolders
   "name": "create_contactfolder_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/contactFolders
+POST https://graph.microsoft.com/beta/me/contactFolders
 Content-type: application/json
 Content-length: 84
 
@@ -80,13 +82,29 @@ Content-length: 104
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_contactfolder_from_user-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_contactfolder_from_user-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create ContactFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-post-contactfolders.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-post-contactfolders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

@@ -2,12 +2,12 @@
 title: 更新 inferenceclassificationoverride
 description: '按指定内容更改替代的 **ClassifyAs** 字段。 '
 localization_priority: Normal
-ms.openlocfilehash: fdd11e6c3d3f4fb72d9f94226e8cb3d35dde2c03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5e1bdfa05f78c4be12a170f8dc27f32f7c5ccb55
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577572"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613969"
 ---
 # <a name="update-inferenceclassificationoverride"></a>更新 inferenceclassificationoverride
 
@@ -87,6 +87,16 @@ Content-type: application/json
   "id": "98f5bdef-576a-404d-a2ea-07a3cf34af4r"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_inferenceclassificationoverride-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_inferenceclassificationoverride-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -95,5 +105,9 @@ Content-type: application/json
   "description": "Update inferenceclassificationoverride",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/inferenceclassificationoverride-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/inferenceclassificationoverride-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

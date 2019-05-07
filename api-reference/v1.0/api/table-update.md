@@ -4,12 +4,12 @@ description: 更新 table 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: df975d13ddc97c0c6b592d02d61a978c5a0db732
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3bdb9de76a51f89552e388addbe352fa4b5c49c8
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520485"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602802"
 ---
 # <a name="update-table"></a>更新表
 
@@ -42,7 +42,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 |:---------------|:--------|:----------|
 |name|string|表的名称。|
 |showHeaders|布尔|指示标头行是否可见。该值可以设置为显示或删除标头行。|
-|showTotals|布尔|指示总计行是否可见。该值可以设置为显示或删除总计行。|
+|showTotals|boolean|指示总计行是否可见。该值可以设置为显示或删除总计行。|
 |style|string|表示表格样式的常量值。 可取值为：TableStyleLight1 到 TableStyleLight21、TableStyleMedium1 到 TableStyleMedium28、TableStyleStyleDark1 到 TableStyleStyleDark11。 还可以指定工作簿中显示的用户定义的自定义样式。|
 
 ## <a name="response"></a>响应
@@ -87,6 +87,16 @@ Content-length: 109
   "style": "style-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_table-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_table-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -95,5 +105,9 @@ Content-length: 109
   "description": "Update table",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/table-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/table-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

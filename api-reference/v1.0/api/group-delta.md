@@ -4,12 +4,12 @@ description: 获取新创建、更新或删除的组, 包括组成员身份更�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 344b9745a998dcfb1107a1af72691184732718b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 139bf7d1720364c0092b19e031c26078b08fc472
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522599"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33614698"
 ---
 # <a name="group-delta"></a>group: delta
 获取新创建、更新或删除的组, 包括组成员身份更改, 而无需对整个组集合执行完全读取。 有关详细信息, 请参阅[Using Delta Query](/graph/delta-query-overview) 。
@@ -53,7 +53,7 @@ GET /groups/delta
 
 - 像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 *id* 属性。
 - 您可以使用`$expand=members`获取成员身份更改。
-- 对`$filter`以下项的支持有限:
+- 提供对 `$filter` 的有限支持：
   - 唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。 可以筛选多个对象。 例如，`https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`。 筛选对象不能超出 50 个。
 
 ## <a name="request-headers"></a>请求标头
@@ -62,7 +62,7 @@ GET /groups/delta
 |:---------------|:----------|
 | Authorization  | 持有者&lt;令牌&gt;|
 | Content-Type  | application/json |
-| Prefer | return = 最小 <br><br>如果使用使用 a 的`deltaLink`请求指定此标头, 则将仅返回自上一轮后已更改的对象属性。 可选。 |
+| Prefer | return=minimal <br><br>在使用 `deltaLink` 的请求中执行此标头将仅返回自上一轮之后发生更改的对象属性。 可选。 |
 
 ## <a name="request-body"></a>请求正文
 
@@ -72,39 +72,39 @@ GET /groups/delta
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和[组](../resources/group.md)集合对象。 该响应还包括一个状态令牌, 它可以是`nextLink` url, 也`deltaLink`可以是 url。
 
-- 如果返回`nextLink` URL:
-  - 这表示在会话中有要检索的其他数据页。 应用程序将继续使用`nextLink` URL 发出请求, 直到`deltaLink`响应中包含 url 为止。
-  - 响应包含与初始 delta 查询请求中相同的属性集。 这使您可以在启动增量循环时捕获对象的完整当前状态。
+- 如果返回 `nextLink`URL：
+  - 这表示绘画中存在要检索的其他数据页面。 应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。
+  - 响应包含与初始 Delta 查询请求相同的属性集。 这使你能够在发起 Delta 循环时捕获对象当前的完整状态。
 
-- 如果返回`deltaLink` URL:
-  - 这表示没有更多有关要返回的资源的现有状态的数据。 保存并使用`deltaLink` URL, 了解下一轮中对资源的更改。
-  - 您可以选择指定`Prefer:return=minimal`标头, 以便仅将自发出以来`deltaLink`发生更改的属性的响应值包括在响应值中。
+- 如果返回 `deltaLink`URL：
+  - 这表示未返回关于资源现有状态的更多数据。 保存并使用 `deltaLink` URL 来了解下一轮资源更改。
+  - 只有对于在签发 `deltaLink` 之后更改的属性，你才可以选择指定 `Prefer:return=minimal` 标头以包含在响应值中。
 
-#### <a name="default-return-the-same-properties-as-initial-delta-request"></a>默认值: 返回与初始 delta 请求相同的属性
+#### <a name="default-return-the-same-properties-as-initial-delta-request"></a>默认：返回与初始 Delta 请求相同的属性
 
-默认情况下, 请求使用`deltaLink`或`nextLink`返回在初始 delta 查询中以下列方式选择的相同属性:
+默认情况下，使用 `deltaLink` 或 `nextLink` 的请求将通过以下方式返回与初始 Delta 查询中选择的相同属性：
 
-- 如果属性已更改, 则新值将包含在响应中。 这包括设置为 null 值的属性。
-- 如果该属性未更改, 则响应中将包含旧值。
-- 如果从未设置该属性, 则根本不会将其包含在响应中。
+- 如果属性已更改，则新值将包括在响应中。 这包括设为 Null 值的属性。
+- 如果属性未更改，则旧值将包括在响应中。
+- 如果之前从未设置属性，则它不会包括在响应中。
 
 
-> **注意:** 在这种情况下, 通过查看响应, 无法判断属性是否正在更改。 此外, 由于增量响应包含所有属性值 (如下面的[第二个示例](#request-2)所示), 因此它们会变大。
+> **注意：** 如果出现此行为，那么通过查看响应无法区分属性是否已更改。 此外，Delta 响应往往过大，因为它们包含所有属性值，如下面的[第二个示例](#request-2)所示。
 
-#### <a name="alternative-return-only-the-changed-properties"></a>替代方法: 仅返回更改的属性
+#### <a name="alternative-return-only-the-changed-properties"></a>备用：仅返回更改的属性
 
-添加可选请求标头- `prefer:return=minimal` -导致以下行为:
+添加可选请求标头 - `prefer:return=minimal` - 将导致出现以下行为：
 
-- 如果属性已更改, 则新值将包含在响应中。 这包括设置为 null 值的属性。
-- 如果该属性未更改, 则该属性根本不包含在响应中。 (与默认行为不同。)
+- 如果属性已更改，则新值将包括在响应中。 这包括设为 Null 值的属性。
+- 如果属性未更改，则该属性不会包括在响应中。 （不同于默认行为。）
 
-> **注意:** 可以在增量循环中的任何`deltaLink`时间点将标头添加到请求中。 标头只会影响响应中包含的一组属性, 而不会影响增量查询的执行方式。 请参阅下面的[第三个示例](#request-3)。
+> **注意：** 可以在 Delta 循环中的任何时间点将标头添加到 `deltaLink` 请求中。 标头仅影响响应中包含的属性集，它不会影响执行 Delta 查询的方式。 请参阅下面的[第三个示例](#request-3)。
 
 ### <a name="example"></a>示例
 
 #### <a name="request-1"></a>请求 1
 
-下面是一个请求示例。 没有`$select`参数, 因此会跟踪并返回默认的属性集。
+下面展示了示例请求。 没有 `$select` 参数，因为将跟踪并返回默认的属性集。
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 #### <a name="response-1"></a>响应 1
 
-以下是使用`deltaLink`从查询初始化获取的响应的示例。
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
 >
@@ -159,10 +159,20 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/group_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/group_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### <a name="request-2"></a>请求 2
 
-下一个示例显示了使用默认响应行为选择3个属性进行更改跟踪的初始请求:
+下一个示例所示为通过默认响应行为选择 3 种更改跟踪属性时的初始请求：
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -174,7 +184,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 
 #### <a name="response-2"></a>响应 2
 
-以下是使用`deltaLink`从查询初始化获取的响应的示例。 请注意, 所有3个属性都包含在响应中, 并且不知道是在获取之后`deltaLink`更改的。
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，所有 3 种属性将包括在响应中，并且无法知道在获得 `deltaLink` 之后发生更改的属性。
 
 <!-- {
   "blockType": "response",
@@ -199,10 +209,20 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/group_delta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/group_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### <a name="request-3"></a>请求 3
 
-下一个示例显示了使用替代最小响应行为选择3个更改跟踪属性的初始请求:
+下一个示例所示为通过备用最小响应行为选择 3 种更改跟踪属性时的初始请求：
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -215,7 +235,7 @@ Prefer: return=minimal
 
 #### <a name="response-3"></a>响应 3
 
-以下是使用`deltaLink`从查询初始化获取的响应的示例。 请注意, `mailNickname`该属性不包括在内, 这意味着自上次增量查询以来它尚未发生更改;`displayName`并`description`将其包括在内, 这意味着它们的值已更改。
+以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。 请注意，`mailNickname` 属性不包括在内，这意味着它在上一轮 Delta 查询之后未发生更改；并且 `displayName` 和 `description` 将包括在内，这意味着其值已发生更改。
 
 <!-- {
   "blockType": "response",
@@ -242,7 +262,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>另请参阅
 
-- [使用 delta 查询跟踪 Microsoft Graph 数据中的更改](/graph/delta-query-overview)。
+- [使用 Delta 查询跟踪 Microsoft Graph 数据更改](/graph/delta-query-overview)。
 - [获取组的增量更改](/graph/delta-query-groups)。
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -252,5 +272,13 @@ Content-type: application/json
   "description": "group: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

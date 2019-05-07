@@ -3,12 +3,12 @@ title: 更新 schemaExtension
 description: 更新指定 schemaExtension 的定义中的属性。
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 9f8bfc77ddcb3633160f76ce5d900e4ba09af1c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 72b94f492947ef5853d14283eca33a682ea14b05
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521080"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603831"
 ---
 # <a name="update-schemaextension"></a>更新 schemaExtension
 
@@ -50,7 +50,7 @@ PATCH /schemaExtensions/{id}
 |:---------------|:--------|:----------|
 |说明|String|架构扩展的说明。|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) 集合|构成架构扩展定义的属性名称和类型的集合。 仅允许进行累加性更改。 |
-|状态|字符串|架构扩展的生命周期状态。 创建时的初始状态为**InDevelopment**。 可能的状态过渡从**InDevelopment**到**可用**, 并**可供****弃用**。|
+|status|String|架构扩展的生命周期状态。 创建时的初始状态为**InDevelopment**。 可能的状态过渡从**InDevelopment**到**可用**, 并**可供****弃用**。|
 |targetTypes|String collection|架构扩展适用的支持扩展的 Microsoft Graph 类型集。  仅允许进行累加性更改。|
 
 ## <a name="response"></a>响应
@@ -95,6 +95,16 @@ Content-length: 201
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_schemaextension-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_schemaextension-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>另请参阅
 
@@ -108,5 +118,9 @@ HTTP/1.1 204 No Content
   "description": "Update schemaextension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/schemaextension-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/schemaextension-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

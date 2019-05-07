@@ -3,12 +3,12 @@ title: 列出 schemaExtension
 description: '获取您在当前租户中拥有的任何应用程序创建的 schemaExtension 对象的列表 (可 '
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 3949c73945f44857bbde2768ff9c79ec838063e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eb01bb41fefc8f7eaf4c1778df6d84fe780c2e3f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521059"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603634"
 ---
 # <a name="list-schemaextensions"></a>列出 schemaExtension
 
@@ -87,6 +87,16 @@ Content-length: 274
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_schemaextensions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_schemaextensions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="see-also"></a>另请参阅
 
@@ -101,5 +111,9 @@ Content-length: 274
   "description": "List schemaExtensions",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/schemaextension-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/schemaextension-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

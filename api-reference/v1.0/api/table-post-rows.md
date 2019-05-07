@@ -1,19 +1,19 @@
 ---
 title: 创建 TableRow
-description: '将行添加到表的末尾。 请注意, api 可以使用此 api 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理, 而不是执行单个行插入。 为获得最佳结果, 请收集要插入到应用程序中的行, 并执行单行添加操作。 试验行数, 以确定要在单个 API 调用中使用的理想行数。 '
+description: '将行添加到表的末尾。 请注意, API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理, 而不是执行单个行插入。 为获得最佳结果, 请收集要插入到应用程序中的行, 并执行单行添加操作。 试验行数, 以确定要在单个 API 调用中使用的理想行数。 '
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 02817faf621bfd0df264f62fc957f2cbe5e251d1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5421d684c15da9ff684732d60422a73714bf7d8f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520597"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602791"
 ---
 # <a name="create-tablerow"></a>创建 TableRow
 
-将行添加到表的末尾。 请注意, api 可以使用此 api 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理, 而不是执行单个行插入。 为获得最佳结果, 请收集要插入到应用程序中的行, 并执行单行添加操作。 试验行数, 以确定要在单个 API 调用中使用的理想行数。 
+将行添加到表的末尾。 请注意, API 可以使用此 API 接受多行数据。 一次添加一行可能会导致性能下降。 建议的方法是将行在单个调用中进行批处理, 而不是执行单个行插入。 为获得最佳结果, 请收集要插入到应用程序中的行, 并执行单行添加操作。 试验行数, 以确定要在单个 API 调用中使用的理想行数。 
 
 ## <a name="error-handling"></a>错误处理
 
@@ -91,6 +91,14 @@ Content-length: 45
   "values": "values-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tablerowcollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -100,6 +108,7 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/table-post-rows.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:
       Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
     "Warning: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:

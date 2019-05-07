@@ -4,12 +4,12 @@ description: 检索参加课程的教师和学生。 请注意是否使用了委
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 83d1f6e52e11afc60c84977676279ae02182e047
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f4414be79838d69232b73574e399dd73522cbcc
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550432"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33616178"
 ---
 # <a name="list-members"></a>列出成员
 
@@ -22,7 +22,7 @@ ms.locfileid: "32550432"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  EduRoster.ReadBasic  |
 |委派（个人 Microsoft 帐户） |  不支持  |
-|Application | eduroster.read.all, eduroster.read.all, all + Member。 read. Hidden | 
+|应用程序 | Eduroster.read.all, Eduroster.read.all, All + Member。 Read。 Hidden | 
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -146,6 +146,16 @@ Content-length: 593
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_members-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_members-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -154,5 +164,9 @@ Content-length: 593
   "description": "List members",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationclass-list-members.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationclass-list-members.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

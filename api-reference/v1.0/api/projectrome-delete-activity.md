@@ -3,14 +3,16 @@ title: 删除活动
 description: 删除应用程序的现有用户活动。
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: cbe12a373f06c2893a5ca202247865f4ce4a8f52
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7bd9b3cc48b90bd2076c14cb6a9bd738e22474cd
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574199"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33608762"
 ---
 # <a name="delete-an-activity"></a>删除活动
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 删除应用程序的现有用户活动。
 
@@ -59,7 +61,7 @@ DELETE /me/activities/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
+DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 ```
 
 ##### <a name="response"></a>响应
@@ -74,13 +76,29 @@ DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_activity-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_activity-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete activity",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/projectrome-delete-activity.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/projectrome-delete-activity.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->
