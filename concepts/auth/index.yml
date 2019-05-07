@@ -1,0 +1,131 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Microsoft Graph 身份验证概述
+metadata:
+  title: Microsoft Graph 身份验证概述
+  description: '了解 OAuth 2。0的基础知识, 以及如何获取令牌以调用 Microsoft Graph API。'
+  services: active-directory
+  author: danieldobalian
+  manager: CelesteDG
+  ms.service: active-directory
+  ms.subservice: develop
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 04/26/2019
+  ms.author: dadobali
+abstract:
+  description: 了解如何进行身份验证和处理权限以通过 Microsoft Graph 安全地访问数据。 浏览以下文档以了解有关应用注册、身份验证库、授权以及支持 Microsoft Graph 开发的 Microsoft identity 平台的其他部分。
+  aside:
+    image:
+      alt: null
+      height: 110
+      src: /graph/images/appreg-video.png
+      width: 250
+    title: 'Microsoft Graph 和应用注册 (7:29)'
+    href: 'https://www.youtube.com/watch?v=93j0MmRruFo'
+    width: 250
+sections:
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: /graph/auth/auth-register-app-v2
+            html: <p>通过注册应用程序来开始 Microsoft Graph 旅程。</p>
+            image:
+              src: ../images/index/i_get-started.svg
+            title: 应用注册
+          - href: /graph/auth/auth-concepts
+            html: <p>探索 OAuth 2。0的基础知识以及它在 Microsoft Graph 中的使用方式。</p>
+            image:
+              src: ../images/index/i_overview.svg
+            title: 身份验证基础
+          - href: /graph/permissions-reference
+            html: <p>了解有关 Microsoft Graph 作用域 & 应用程序权限的详细信息。</p>
+            image:
+              src: ../images/index/i_code-edit.svg
+            title: 权限 & 作用域
+          - href: /graph/auth/auth-cloudsolutionprovider
+            html: <p>启用应用程序对合作伙伴托管数据的访问。</p>
+            image:
+              src: ../images/index/i_api.svg
+            title: 云解决方案提供商 (CSP)
+  - title: Auth Sdk
+    items:
+      - type: paragraph
+        text: '在与 Microsoft Graph 集成时使用身份验证 SDK 简化了需要编写的代码, 使开发人员能够专注于生成出色体验。 使用 Microsoft 身份验证库 (MSAL) 获得最佳体验, 或选择我们建议的开放源代码中的一个替代方案。'
+      - type: table
+        style: dataMatrix
+        columns:
+          - image:
+              src: ../images/index/logo_android.svg
+            title: Android
+          - image:
+              src: ../images/index/angular.svg
+            title: Angular
+          - image:
+              src: ../images/index/logo_NET.svg
+            title: ASP.NET
+          - image:
+              src: ../images/index/logo_ios.svg
+            title: iOS
+          - image:
+              src: ../images/index/logo_java.svg
+            title: Java
+          - image:
+              src: ../images/index/logo_js.svg
+            title: JavaScript
+          - image:
+              src: ../images/index/logo_nodejs.svg
+            title: Node.js
+          - image:
+              src: ../images/index/logo_php.svg
+            title: PHP
+          - image:
+              src: ../images/index/logo_python.svg
+            title: Python
+          - image:
+              src: ../images/index/logo_ruby.svg
+            title: Ruby
+          - image:
+              src: ../images/index/logo_windows.svg
+            title: UWP
+          - image:
+              src: ../images/index/logo_xamarin.svg
+            title: Xamarin
+          - image:
+              src: ../images/index/logo_reactnative.svg
+            title: 响应本机
+        rows:
+          - title: Microsoft
+            values:
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-android'
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-js'
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-dotnet'
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-objc'
+              - href: null
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-js'
+              - href: null
+              - href: null
+              - href: null
+              - href: null
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-dotnet'
+              - href: 'https://github.com/AzureAD/microsoft-authentication-library-for-dotnet'
+              - href: null
+          - title: 打开源
+            values:
+              - href: 'https://github.com/openid/AppAuth-Android'
+              - href: null
+              - href: null
+              - href: 'https://github.com/openid/AppAuth-iOS'
+              - href: 'https://github.com/scribejava/scribejava'
+              - href: 'https://adodson.com/hello.js/'
+              - href: 'https://github.com/panva/node-openid-client'
+              - href: 'https://github.com/thephpleague/oauth2-client'
+              - href: 'https://github.com/requests/requests-oauthlib'
+              - href: 'https://github.com/omniauth/omniauth/wiki'
+              - href: null
+              - href: null
+              - href: 'https://github.com/FormidableLabs/react-native-app-auth'

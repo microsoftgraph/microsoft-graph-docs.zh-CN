@@ -4,58 +4,58 @@ description: 更新 workbookChartFont 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1228a49815419a077fd6999a400f4d720b6724f6
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4f42f2ef09743ba62e7462d696bd3259b9435289
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327749"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635111"
 ---
-# <a name="update-chartfont"></a><span data-ttu-id="a2e79-103">更新 chartfont</span><span class="sxs-lookup"><span data-stu-id="a2e79-103">Update chartfont</span></span>
+# <a name="update-chartfont"></a><span data-ttu-id="e5149-103">更新 chartfont</span><span class="sxs-lookup"><span data-stu-id="e5149-103">Update chartfont</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a2e79-104">更新 chartfont 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="a2e79-104">Update the properties of chartfont object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a2e79-105">权限</span><span class="sxs-lookup"><span data-stu-id="a2e79-105">Permissions</span></span>
-<span data-ttu-id="a2e79-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a2e79-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e5149-104">更新 chartfont 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="e5149-104">Update the properties of chartfont object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e5149-105">权限</span><span class="sxs-lookup"><span data-stu-id="e5149-105">Permissions</span></span>
+<span data-ttu-id="e5149-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="e5149-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a2e79-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="a2e79-108">Permission type</span></span>      | <span data-ttu-id="a2e79-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a2e79-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e5149-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="e5149-108">Permission type</span></span>      | <span data-ttu-id="e5149-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="e5149-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a2e79-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a2e79-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a2e79-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a2e79-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="a2e79-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a2e79-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a2e79-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a2e79-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="a2e79-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="a2e79-114">Application</span></span> | <span data-ttu-id="a2e79-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a2e79-115">Not supported.</span></span> |
+|<span data-ttu-id="e5149-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="e5149-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e5149-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e5149-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e5149-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="e5149-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e5149-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e5149-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e5149-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="e5149-114">Application</span></span> | <span data-ttu-id="e5149-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="e5149-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a2e79-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a2e79-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e5149-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="e5149-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/font
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="a2e79-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="a2e79-117">Optional request headers</span></span>
-| <span data-ttu-id="a2e79-118">名称</span><span class="sxs-lookup"><span data-stu-id="a2e79-118">Name</span></span>       | <span data-ttu-id="a2e79-119">说明</span><span class="sxs-lookup"><span data-stu-id="a2e79-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="e5149-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="e5149-117">Optional request headers</span></span>
+| <span data-ttu-id="e5149-118">名称</span><span class="sxs-lookup"><span data-stu-id="e5149-118">Name</span></span>       | <span data-ttu-id="e5149-119">说明</span><span class="sxs-lookup"><span data-stu-id="e5149-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="a2e79-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="a2e79-120">Authorization</span></span>  | <span data-ttu-id="a2e79-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a2e79-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a2e79-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a2e79-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="a2e79-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="a2e79-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="e5149-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="e5149-120">Authorization</span></span>  | <span data-ttu-id="e5149-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="e5149-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e5149-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="e5149-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="e5149-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="e5149-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a2e79-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a2e79-126">Request body</span></span>
-<span data-ttu-id="a2e79-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="a2e79-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e5149-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="e5149-126">Request body</span></span>
+<span data-ttu-id="e5149-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="e5149-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="a2e79-130">属性</span><span class="sxs-lookup"><span data-stu-id="a2e79-130">Property</span></span>     | <span data-ttu-id="a2e79-131">类型</span><span class="sxs-lookup"><span data-stu-id="a2e79-131">Type</span></span>   |<span data-ttu-id="a2e79-132">说明</span><span class="sxs-lookup"><span data-stu-id="a2e79-132">Description</span></span>|
+| <span data-ttu-id="e5149-130">属性</span><span class="sxs-lookup"><span data-stu-id="e5149-130">Property</span></span>     | <span data-ttu-id="e5149-131">类型</span><span class="sxs-lookup"><span data-stu-id="e5149-131">Type</span></span>   |<span data-ttu-id="e5149-132">说明</span><span class="sxs-lookup"><span data-stu-id="e5149-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a2e79-133">bold</span><span class="sxs-lookup"><span data-stu-id="a2e79-133">bold</span></span>|<span data-ttu-id="a2e79-134">boolean</span><span class="sxs-lookup"><span data-stu-id="a2e79-134">boolean</span></span>|<span data-ttu-id="a2e79-135">表示字体的加粗状态。</span><span class="sxs-lookup"><span data-stu-id="a2e79-135">Represents the bold status of font.</span></span>|
-|<span data-ttu-id="a2e79-136">color</span><span class="sxs-lookup"><span data-stu-id="a2e79-136">color</span></span>|<span data-ttu-id="a2e79-137">字符串</span><span class="sxs-lookup"><span data-stu-id="a2e79-137">string</span></span>|<span data-ttu-id="a2e79-p105">文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。</span><span class="sxs-lookup"><span data-stu-id="a2e79-p105">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
-|<span data-ttu-id="a2e79-141">italic</span><span class="sxs-lookup"><span data-stu-id="a2e79-141">italic</span></span>|<span data-ttu-id="a2e79-142">布尔</span><span class="sxs-lookup"><span data-stu-id="a2e79-142">boolean</span></span>|<span data-ttu-id="a2e79-143">表示字体的斜体状态。</span><span class="sxs-lookup"><span data-stu-id="a2e79-143">Represents the italic status of the font.</span></span>|
-|<span data-ttu-id="a2e79-144">name</span><span class="sxs-lookup"><span data-stu-id="a2e79-144">name</span></span>|<span data-ttu-id="a2e79-145">string</span><span class="sxs-lookup"><span data-stu-id="a2e79-145">string</span></span>|<span data-ttu-id="a2e79-146">字体名称（例如"Calibri"）</span><span class="sxs-lookup"><span data-stu-id="a2e79-146">Font name (e.g. "Calibri")</span></span>|
-|<span data-ttu-id="a2e79-147">大小</span><span class="sxs-lookup"><span data-stu-id="a2e79-147">size</span></span>|<span data-ttu-id="a2e79-148">double</span><span class="sxs-lookup"><span data-stu-id="a2e79-148">double</span></span>|<span data-ttu-id="a2e79-149">字体大小（例如 11）</span><span class="sxs-lookup"><span data-stu-id="a2e79-149">Size of the font (e.g. 11)</span></span>|
-|<span data-ttu-id="a2e79-150">underline</span><span class="sxs-lookup"><span data-stu-id="a2e79-150">underline</span></span>|<span data-ttu-id="a2e79-151">string</span><span class="sxs-lookup"><span data-stu-id="a2e79-151">string</span></span>|<span data-ttu-id="a2e79-p106">应用于字体的下划线类型。可能的值是：`None`、`Single`。</span><span class="sxs-lookup"><span data-stu-id="a2e79-p106">Type of underline applied to the font. Possible values are: `None`, `Single`.</span></span>|
+|<span data-ttu-id="e5149-133">bold</span><span class="sxs-lookup"><span data-stu-id="e5149-133">bold</span></span>|<span data-ttu-id="e5149-134">布尔</span><span class="sxs-lookup"><span data-stu-id="e5149-134">boolean</span></span>|<span data-ttu-id="e5149-135">表示字体的加粗状态。</span><span class="sxs-lookup"><span data-stu-id="e5149-135">Represents the bold status of font.</span></span>|
+|<span data-ttu-id="e5149-136">color</span><span class="sxs-lookup"><span data-stu-id="e5149-136">color</span></span>|<span data-ttu-id="e5149-137">字符串</span><span class="sxs-lookup"><span data-stu-id="e5149-137">string</span></span>|<span data-ttu-id="e5149-p105">文本颜色的 HTML 颜色代码表示。例如，#FF0000 表示红色。</span><span class="sxs-lookup"><span data-stu-id="e5149-p105">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
+|<span data-ttu-id="e5149-141">italic</span><span class="sxs-lookup"><span data-stu-id="e5149-141">italic</span></span>|<span data-ttu-id="e5149-142">布尔</span><span class="sxs-lookup"><span data-stu-id="e5149-142">boolean</span></span>|<span data-ttu-id="e5149-143">表示字体的斜体状态。</span><span class="sxs-lookup"><span data-stu-id="e5149-143">Represents the italic status of the font.</span></span>|
+|<span data-ttu-id="e5149-144">name</span><span class="sxs-lookup"><span data-stu-id="e5149-144">name</span></span>|<span data-ttu-id="e5149-145">string</span><span class="sxs-lookup"><span data-stu-id="e5149-145">string</span></span>|<span data-ttu-id="e5149-146">字体名称（例如"Calibri"）</span><span class="sxs-lookup"><span data-stu-id="e5149-146">Font name (e.g. "Calibri")</span></span>|
+|<span data-ttu-id="e5149-147">大小</span><span class="sxs-lookup"><span data-stu-id="e5149-147">size</span></span>|<span data-ttu-id="e5149-148">double</span><span class="sxs-lookup"><span data-stu-id="e5149-148">double</span></span>|<span data-ttu-id="e5149-149">字体大小（例如 11）</span><span class="sxs-lookup"><span data-stu-id="e5149-149">Size of the font (e.g. 11)</span></span>|
+|<span data-ttu-id="e5149-150">underline</span><span class="sxs-lookup"><span data-stu-id="e5149-150">underline</span></span>|<span data-ttu-id="e5149-151">string</span><span class="sxs-lookup"><span data-stu-id="e5149-151">string</span></span>|<span data-ttu-id="e5149-p106">应用于字体的下划线类型。可能的值是：`None`、`Single`。</span><span class="sxs-lookup"><span data-stu-id="e5149-p106">Type of underline applied to the font. Possible values are: `None`, `Single`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a2e79-154">响应</span><span class="sxs-lookup"><span data-stu-id="a2e79-154">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e5149-154">响应</span><span class="sxs-lookup"><span data-stu-id="e5149-154">Response</span></span>
 
-<span data-ttu-id="a2e79-155">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[workbookChartFont](../resources/workbookchartfont.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a2e79-155">If successful, this method returns a `200 OK` response code and updated [workbookChartFont](../resources/workbookchartfont.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a2e79-156">示例</span><span class="sxs-lookup"><span data-stu-id="a2e79-156">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a2e79-157">请求</span><span class="sxs-lookup"><span data-stu-id="a2e79-157">Request</span></span>
-<span data-ttu-id="a2e79-158">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a2e79-158">Here is an example of the request.</span></span>
+<span data-ttu-id="e5149-155">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[workbookChartFont](../resources/workbookchartfont.md)对象。</span><span class="sxs-lookup"><span data-stu-id="e5149-155">If successful, this method returns a `200 OK` response code and updated [workbookChartFont](../resources/workbookchartfont.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e5149-156">示例</span><span class="sxs-lookup"><span data-stu-id="e5149-156">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e5149-157">请求</span><span class="sxs-lookup"><span data-stu-id="e5149-157">Request</span></span>
+<span data-ttu-id="e5149-158">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="e5149-158">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_chartfont"
@@ -74,8 +74,8 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="a2e79-159">响应</span><span class="sxs-lookup"><span data-stu-id="a2e79-159">Response</span></span>
-<span data-ttu-id="a2e79-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a2e79-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e5149-159">响应</span><span class="sxs-lookup"><span data-stu-id="e5149-159">Response</span></span>
+<span data-ttu-id="e5149-p107">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="e5149-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,6 +95,16 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="e5149-163">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="e5149-163">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="e5149-164">语言</span><span class="sxs-lookup"><span data-stu-id="e5149-164">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_chartfont-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e5149-165">Javascript</span><span class="sxs-lookup"><span data-stu-id="e5149-165">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_chartfont-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,6 +115,9 @@ Content-length: 134
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartfont-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/chartfont-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

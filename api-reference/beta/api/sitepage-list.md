@@ -5,44 +5,44 @@ ms.date: 03/15/2018
 title: 列出网站中的页面
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8dea715a655dac4406ae57b928f97013564f951f
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 31bcdfe4598850d80eee436e3082bf8d90eb11f6
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33330644"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638667"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="f94f0-102">在网站的 "网站页面" 列表中列出页面</span><span class="sxs-lookup"><span data-stu-id="f94f0-102">List the pages in the site pages list of a site</span></span>
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="c3c9a-102">在网站的 "网站页面" 列表中列出页面</span><span class="sxs-lookup"><span data-stu-id="c3c9a-102">List the pages in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f94f0-103">从网站[网站][]的 "网站页面"[列表][]中获取[sitePage][]对象的集合。</span><span class="sxs-lookup"><span data-stu-id="f94f0-103">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="f94f0-104">将返回网站中的所有页面 (使用分页)。</span><span class="sxs-lookup"><span data-stu-id="f94f0-104">All pages in the site are returned (with pagination).</span></span>
+<span data-ttu-id="c3c9a-103">从网站[网站][]的 "网站页面"[列表][]中获取[sitePage][]对象的集合。</span><span class="sxs-lookup"><span data-stu-id="c3c9a-103">Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][].</span></span> <span data-ttu-id="c3c9a-104">将返回网站中的所有页面 (使用分页)。</span><span class="sxs-lookup"><span data-stu-id="c3c9a-104">All pages in the site are returned (with pagination).</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
 [网站]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="f94f0-108">权限</span><span class="sxs-lookup"><span data-stu-id="f94f0-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c3c9a-108">权限</span><span class="sxs-lookup"><span data-stu-id="c3c9a-108">Permissions</span></span>
 
-<span data-ttu-id="f94f0-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f94f0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c3c9a-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c3c9a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f94f0-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="f94f0-111">Permission type</span></span>      | <span data-ttu-id="f94f0-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f94f0-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c3c9a-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="c3c9a-111">Permission type</span></span>      | <span data-ttu-id="c3c9a-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c3c9a-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f94f0-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f94f0-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f94f0-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f94f0-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f94f0-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f94f0-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f94f0-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="f94f0-116">Not supported.</span></span>    |
-|<span data-ttu-id="f94f0-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="f94f0-117">Application</span></span> | <span data-ttu-id="f94f0-118">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f94f0-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="c3c9a-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c3c9a-113">Delegated (work or school account)</span></span> | <span data-ttu-id="c3c9a-114">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c3c9a-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c3c9a-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c3c9a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c3c9a-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="c3c9a-116">Not supported.</span></span>    |
+|<span data-ttu-id="c3c9a-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="c3c9a-117">Application</span></span> | <span data-ttu-id="c3c9a-118">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c3c9a-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f94f0-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f94f0-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c3c9a-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c3c9a-119">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages
 
 ```
 
-## <a name="example"></a><span data-ttu-id="f94f0-120">示例</span><span class="sxs-lookup"><span data-stu-id="f94f0-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c3c9a-120">示例</span><span class="sxs-lookup"><span data-stu-id="c3c9a-120">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="f94f0-121">请求</span><span class="sxs-lookup"><span data-stu-id="f94f0-121">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c3c9a-121">请求</span><span class="sxs-lookup"><span data-stu-id="c3c9a-121">Request</span></span>
 
 <!-- 
 { 
@@ -57,7 +57,7 @@ GET /sites/{site-id}/pages
 GET /sites/{site-id}/pages
 ```
 
-#### <a name="response"></a><span data-ttu-id="f94f0-122">响应</span><span class="sxs-lookup"><span data-stu-id="f94f0-122">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c3c9a-122">响应</span><span class="sxs-lookup"><span data-stu-id="c3c9a-122">Response</span></span>
 
 <!-- 
 { 
@@ -231,6 +231,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="c3c9a-123">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="c3c9a-123">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="c3c9a-124">语言</span><span class="sxs-lookup"><span data-stu-id="c3c9a-124">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-pages-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c3c9a-125">Javascript</span><span class="sxs-lookup"><span data-stu-id="c3c9a-125">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-pages-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -239,6 +249,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Pages/Enumerate",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

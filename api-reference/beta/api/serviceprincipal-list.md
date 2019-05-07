@@ -2,56 +2,56 @@
 title: 列出 servicePrincipals
 description: 检索 servicePrincipal 对象列表。
 localization_priority: Normal
-ms.openlocfilehash: 42b98ea6f2fcdf10620a632c8325a80fae61fac0
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d431f2cd91fd1e2e27071bba92239b1984f630ab
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335866"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638674"
 ---
-# <a name="list-serviceprincipals"></a><span data-ttu-id="f714d-103">列出 servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="f714d-103">List servicePrincipals</span></span>
+# <a name="list-serviceprincipals"></a><span data-ttu-id="6dd4e-103">列出 servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="6dd4e-103">List servicePrincipals</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f714d-104">检索 servicePrincipal 对象列表。</span><span class="sxs-lookup"><span data-stu-id="f714d-104">Retrieve a list of servicePrincipal objects.</span></span>
+<span data-ttu-id="6dd4e-104">检索 servicePrincipal 对象列表。</span><span class="sxs-lookup"><span data-stu-id="6dd4e-104">Retrieve a list of servicePrincipal objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f714d-105">权限</span><span class="sxs-lookup"><span data-stu-id="f714d-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6dd4e-105">权限</span><span class="sxs-lookup"><span data-stu-id="6dd4e-105">Permissions</span></span>
 
-<span data-ttu-id="f714d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f714d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6dd4e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="6dd4e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="f714d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="f714d-108">Permission type</span></span>      | <span data-ttu-id="f714d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f714d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6dd4e-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="6dd4e-108">Permission type</span></span>      | <span data-ttu-id="6dd4e-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="6dd4e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f714d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f714d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f714d-111">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f714d-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="f714d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f714d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f714d-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="f714d-113">Not supported.</span></span>    |
-|<span data-ttu-id="f714d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="f714d-114">Application</span></span> | <span data-ttu-id="f714d-115">Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="f714d-115">Application.ReadWrite.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="6dd4e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="6dd4e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6dd4e-111">Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6dd4e-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="6dd4e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="6dd4e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6dd4e-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="6dd4e-113">Not supported.</span></span>    |
+|<span data-ttu-id="6dd4e-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="6dd4e-114">Application</span></span> | <span data-ttu-id="6dd4e-115">Application.ReadWrite.All、Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="6dd4e-115">Application.ReadWrite.All, Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f714d-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f714d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6dd4e-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="6dd4e-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="f714d-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f714d-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="6dd4e-117">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="6dd4e-117">Optional query parameters</span></span>
 
-<span data-ttu-id="f714d-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f714d-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="6dd4e-118">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="6dd4e-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f714d-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="f714d-119">Request headers</span></span>
-| <span data-ttu-id="f714d-120">名称</span><span class="sxs-lookup"><span data-stu-id="f714d-120">Name</span></span> | <span data-ttu-id="f714d-121">说明</span><span class="sxs-lookup"><span data-stu-id="f714d-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="6dd4e-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="6dd4e-119">Request headers</span></span>
+| <span data-ttu-id="6dd4e-120">名称</span><span class="sxs-lookup"><span data-stu-id="6dd4e-120">Name</span></span> | <span data-ttu-id="6dd4e-121">说明</span><span class="sxs-lookup"><span data-stu-id="6dd4e-121">Description</span></span> |
 |:----------|:----------|
-| <span data-ttu-id="f714d-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f714d-122">Authorization</span></span>  | <span data-ttu-id="f714d-123">string</span><span class="sxs-lookup"><span data-stu-id="f714d-123">string</span></span>  | <span data-ttu-id="f714d-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f714d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6dd4e-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="6dd4e-122">Authorization</span></span>  | <span data-ttu-id="6dd4e-123">string</span><span class="sxs-lookup"><span data-stu-id="6dd4e-123">string</span></span>  | <span data-ttu-id="6dd4e-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="6dd4e-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f714d-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="f714d-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6dd4e-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="6dd4e-126">Request body</span></span>
 
-<span data-ttu-id="f714d-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f714d-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="6dd4e-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="6dd4e-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f714d-128">响应</span><span class="sxs-lookup"><span data-stu-id="f714d-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6dd4e-128">响应</span><span class="sxs-lookup"><span data-stu-id="6dd4e-128">Response</span></span>
 
-<span data-ttu-id="f714d-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[servicePrincipal](../resources/serviceprincipal.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="f714d-129">If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.</span></span>
+<span data-ttu-id="6dd4e-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[servicePrincipal](../resources/serviceprincipal.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="6dd4e-129">If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f714d-130">示例</span><span class="sxs-lookup"><span data-stu-id="f714d-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6dd4e-130">示例</span><span class="sxs-lookup"><span data-stu-id="6dd4e-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f714d-131">请求</span><span class="sxs-lookup"><span data-stu-id="f714d-131">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="6dd4e-131">请求</span><span class="sxs-lookup"><span data-stu-id="6dd4e-131">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -60,9 +60,9 @@ GET /servicePrincipals
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals
 ```
-##### <a name="response"></a><span data-ttu-id="f714d-132">响应</span><span class="sxs-lookup"><span data-stu-id="f714d-132">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="6dd4e-132">响应</span><span class="sxs-lookup"><span data-stu-id="6dd4e-132">Response</span></span>
 
-<span data-ttu-id="f714d-p103">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f714d-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="6dd4e-p103">注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="6dd4e-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,6 +98,16 @@ Content-length: 488
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="6dd4e-135">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="6dd4e-135">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="6dd4e-136">语言</span><span class="sxs-lookup"><span data-stu-id="6dd4e-136">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_serviceprincipals-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6dd4e-137">Javascript</span><span class="sxs-lookup"><span data-stu-id="6dd4e-137">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_serviceprincipals-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -108,6 +118,9 @@ Content-length: 488
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/serviceprincipal-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

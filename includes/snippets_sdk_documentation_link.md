@@ -1,0 +1,3 @@
+<!-- markdownlint-disable MD041-->
+
+> <span data-ttu-id="e5993-101">有关如何 [将 SDK 添加](https://docs.microsoft.com/graph/sdks/sdk-installation)到项目并[创建身份验证提供程序](https://docs.microsoft.com/graph/sdks/choose-authentication-providers) 实例的详细信息, 请参阅[SDK 文档](https://docs.microsoft.com/graph/sdks/sdks-overview)。</span><span class="sxs-lookup"><span data-stu-id="e5993-101">For details about how to [add the SDK](https://docs.microsoft.com/graph/sdks/sdk-installation) to your project and [create an auth provider](https://docs.microsoft.com/graph/sdks/choose-authentication-providers) instance, see the [SDK documentation](https://docs.microsoft.com/graph/sdks/sdks-overview).</span></span> 

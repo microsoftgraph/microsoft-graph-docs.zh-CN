@@ -4,30 +4,30 @@ description: 更新一个请求中的多个警报, 而不是多个请求。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: ad43cf3488ff0661a4b22130ae8728a00c3ea17d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b04227886085305103dd6a9ba6c243565d0e5a06
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322694"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636525"
 ---
-# <a name="alert-updatealerts"></a><span data-ttu-id="03eab-103">警报: updateAlerts</span><span class="sxs-lookup"><span data-stu-id="03eab-103">alert: updateAlerts</span></span>
+# <a name="alert-updatealerts"></a><span data-ttu-id="fb7b2-103">警报: updateAlerts</span><span class="sxs-lookup"><span data-stu-id="fb7b2-103">alert: updateAlerts</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="03eab-104">更新一个请求中的多个警报, 而不是多个请求。</span><span class="sxs-lookup"><span data-stu-id="03eab-104">Update multiple alerts in one request instead of multiple requests.</span></span>
+<span data-ttu-id="fb7b2-104">更新一个请求中的多个警报, 而不是多个请求。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-104">Update multiple alerts in one request instead of multiple requests.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="03eab-105">权限</span><span class="sxs-lookup"><span data-stu-id="03eab-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fb7b2-105">权限</span><span class="sxs-lookup"><span data-stu-id="fb7b2-105">Permissions</span></span>
 
-<span data-ttu-id="03eab-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="03eab-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fb7b2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="03eab-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="03eab-108">Permission type</span></span>                        | <span data-ttu-id="03eab-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="03eab-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="fb7b2-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="fb7b2-108">Permission type</span></span>                        | <span data-ttu-id="fb7b2-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="fb7b2-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-|<span data-ttu-id="03eab-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="03eab-110">Delegated (work or school account)</span></span> |   <span data-ttu-id="03eab-111">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="03eab-111">SecurityEvents.ReadWrite.All</span></span>  |
-|<span data-ttu-id="03eab-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="03eab-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="03eab-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="03eab-113">Not supported.</span></span>  |
-|<span data-ttu-id="03eab-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="03eab-114">Application</span></span> | <span data-ttu-id="03eab-115">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="03eab-115">SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="fb7b2-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fb7b2-110">Delegated (work or school account)</span></span> |   <span data-ttu-id="fb7b2-111">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fb7b2-111">SecurityEvents.ReadWrite.All</span></span>  |
+|<span data-ttu-id="fb7b2-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fb7b2-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="fb7b2-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-113">Not supported.</span></span>  |
+|<span data-ttu-id="fb7b2-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="fb7b2-114">Application</span></span> | <span data-ttu-id="fb7b2-115">SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fb7b2-115">SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="03eab-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="03eab-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fb7b2-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fb7b2-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,31 +35,31 @@ ms.locfileid: "33322694"
 POST /security/alerts/updateAlerts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="03eab-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="03eab-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fb7b2-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="fb7b2-117">Request headers</span></span>
 
-| <span data-ttu-id="03eab-118">名称</span><span class="sxs-lookup"><span data-stu-id="03eab-118">Name</span></span>          | <span data-ttu-id="03eab-119">说明</span><span class="sxs-lookup"><span data-stu-id="03eab-119">Description</span></span>   |
+| <span data-ttu-id="fb7b2-118">名称</span><span class="sxs-lookup"><span data-stu-id="fb7b2-118">Name</span></span>          | <span data-ttu-id="fb7b2-119">说明</span><span class="sxs-lookup"><span data-stu-id="fb7b2-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="03eab-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="03eab-120">Authorization</span></span> | <span data-ttu-id="03eab-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="03eab-121">Bearer {code}</span></span> |
+| <span data-ttu-id="fb7b2-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="fb7b2-120">Authorization</span></span> | <span data-ttu-id="fb7b2-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="fb7b2-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="03eab-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="03eab-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fb7b2-122">请求正文</span><span class="sxs-lookup"><span data-stu-id="fb7b2-122">Request body</span></span>
 
-<span data-ttu-id="03eab-123">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="03eab-123">In the request body, provide a JSON object with the following parameters.</span></span> <span data-ttu-id="03eab-124">每个实体都必须具有**id**和**vendorInformation**属性。</span><span class="sxs-lookup"><span data-stu-id="03eab-124">Each entity must have **id** and **vendorInformation** properties.</span></span> <span data-ttu-id="03eab-125">有关可更新的属性的详细信息, 请参阅[更新警报](alert-update.md)。</span><span class="sxs-lookup"><span data-stu-id="03eab-125">For details about properties that can be updated, see [update alert](alert-update.md).</span></span>
+<span data-ttu-id="fb7b2-123">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-123">In the request body, provide a JSON object with the following parameters.</span></span> <span data-ttu-id="fb7b2-124">每个实体都必须具有**id**和**vendorInformation**属性。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-124">Each entity must have **id** and **vendorInformation** properties.</span></span> <span data-ttu-id="fb7b2-125">有关可更新的属性的详细信息, 请参阅[更新警报](alert-update.md)。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-125">For details about properties that can be updated, see [update alert](alert-update.md).</span></span>
 
-| <span data-ttu-id="03eab-126">参数</span><span class="sxs-lookup"><span data-stu-id="03eab-126">Parameter</span></span>    | <span data-ttu-id="03eab-127">类型</span><span class="sxs-lookup"><span data-stu-id="03eab-127">Type</span></span>        | <span data-ttu-id="03eab-128">说明</span><span class="sxs-lookup"><span data-stu-id="03eab-128">Description</span></span> |
+| <span data-ttu-id="fb7b2-126">参数</span><span class="sxs-lookup"><span data-stu-id="fb7b2-126">Parameter</span></span>    | <span data-ttu-id="fb7b2-127">类型</span><span class="sxs-lookup"><span data-stu-id="fb7b2-127">Type</span></span>        | <span data-ttu-id="fb7b2-128">说明</span><span class="sxs-lookup"><span data-stu-id="fb7b2-128">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="03eab-129">值</span><span class="sxs-lookup"><span data-stu-id="03eab-129">value</span></span>|<span data-ttu-id="03eab-130">[通知](../resources/alert.md)集合</span><span class="sxs-lookup"><span data-stu-id="03eab-130">[alert](../resources/alert.md) collection</span></span>| <span data-ttu-id="03eab-131">要更新的通知的集合。</span><span class="sxs-lookup"><span data-stu-id="03eab-131">Collection of alerts to update.</span></span> <span data-ttu-id="03eab-132">每个实体都必须具有要更新的**id**、 **vendorInformation**和其他可编辑属性。</span><span class="sxs-lookup"><span data-stu-id="03eab-132">Each entity must have **id**, **vendorInformation**, and other editable properties to be updated.</span></span>|
+|<span data-ttu-id="fb7b2-129">值</span><span class="sxs-lookup"><span data-stu-id="fb7b2-129">value</span></span>|<span data-ttu-id="fb7b2-130">[警报](../resources/alert.md)集合</span><span class="sxs-lookup"><span data-stu-id="fb7b2-130">[alert](../resources/alert.md) collection</span></span>| <span data-ttu-id="fb7b2-131">要更新的通知的集合。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-131">Collection of alerts to update.</span></span> <span data-ttu-id="fb7b2-132">每个实体都必须具有要更新的**id**、 **vendorInformation**和其他可编辑属性。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-132">Each entity must have **id**, **vendorInformation**, and other editable properties to be updated.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="03eab-133">响应</span><span class="sxs-lookup"><span data-stu-id="03eab-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fb7b2-133">响应</span><span class="sxs-lookup"><span data-stu-id="fb7b2-133">Response</span></span>
 
-<span data-ttu-id="03eab-134">如果成功, 此方法在`200, OK`响应正文中返回响应代码和[警报](../resources/alert.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="03eab-134">If successful, this method returns `200, OK` response code and [alert](../resources/alert.md) collection object in the response body.</span></span>
+<span data-ttu-id="fb7b2-134">如果成功, 此方法在`200, OK`响应正文中返回响应代码和[警报](../resources/alert.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-134">If successful, this method returns `200, OK` response code and [alert](../resources/alert.md) collection object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="03eab-135">示例</span><span class="sxs-lookup"><span data-stu-id="03eab-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="fb7b2-135">示例</span><span class="sxs-lookup"><span data-stu-id="fb7b2-135">Examples</span></span>
 
-<span data-ttu-id="03eab-136">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="03eab-136">The following example shows how to call this API.</span></span>
+<span data-ttu-id="fb7b2-136">以下示例演示如何调用此 API。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-136">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="03eab-137">请求</span><span class="sxs-lookup"><span data-stu-id="03eab-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="fb7b2-137">请求</span><span class="sxs-lookup"><span data-stu-id="fb7b2-137">Request</span></span>
 
-<span data-ttu-id="03eab-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="03eab-138">The following is an example of the request.</span></span>
+<span data-ttu-id="fb7b2-138">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-138">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "alert_updatealerts",
@@ -90,12 +90,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="03eab-139">响应</span><span class="sxs-lookup"><span data-stu-id="03eab-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="fb7b2-139">响应</span><span class="sxs-lookup"><span data-stu-id="fb7b2-139">Response</span></span>
 
-<span data-ttu-id="03eab-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="03eab-140">The following is an example of the response.</span></span>
+<span data-ttu-id="fb7b2-140">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-140">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="03eab-141">为了提高可读性, 可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="03eab-141">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="03eab-142">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="03eab-142">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="fb7b2-141">为了提高可读性, 可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-141">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="fb7b2-142">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="fb7b2-142">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -121,6 +121,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="fb7b2-143">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="fb7b2-143">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="fb7b2-144">语言</span><span class="sxs-lookup"><span data-stu-id="fb7b2-144">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/alert_updatealerts-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="fb7b2-145">Javascript</span><span class="sxs-lookup"><span data-stu-id="fb7b2-145">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/alert_updatealerts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -129,5 +139,9 @@ Content-type: application/json
   "description": "alert: updateAlerts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-updatealerts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-updatealerts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

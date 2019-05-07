@@ -4,54 +4,54 @@ description: 更新 workbookchartaxistitle 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 11f54440ce6ec7c57024376b43e1cebbccbafaa4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4667d3dc1cc2daa24c8a66c8ead9c3c71fa208e8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327813"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635622"
 ---
-# <a name="update-workbookchartaxistitle"></a><span data-ttu-id="c5f61-103">更新 workbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="c5f61-103">Update workbookChartAxisTitle</span></span>
+# <a name="update-workbookchartaxistitle"></a><span data-ttu-id="ecb68-103">更新 workbookChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="ecb68-103">Update workbookChartAxisTitle</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c5f61-104">更新 workbookChartAxisTitle 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="c5f61-104">Update the properties of workbookChartAxisTitle object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c5f61-105">权限</span><span class="sxs-lookup"><span data-stu-id="c5f61-105">Permissions</span></span>
-<span data-ttu-id="c5f61-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c5f61-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ecb68-104">更新 workbookChartAxisTitle 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="ecb68-104">Update the properties of workbookChartAxisTitle object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ecb68-105">权限</span><span class="sxs-lookup"><span data-stu-id="ecb68-105">Permissions</span></span>
+<span data-ttu-id="ecb68-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ecb68-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c5f61-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="c5f61-108">Permission type</span></span>      | <span data-ttu-id="c5f61-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c5f61-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ecb68-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ecb68-108">Permission type</span></span>      | <span data-ttu-id="ecb68-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ecb68-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c5f61-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c5f61-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c5f61-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c5f61-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c5f61-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c5f61-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c5f61-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c5f61-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c5f61-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="c5f61-114">Application</span></span> | <span data-ttu-id="c5f61-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c5f61-115">Not supported.</span></span> |
+|<span data-ttu-id="ecb68-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ecb68-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ecb68-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ecb68-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ecb68-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ecb68-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ecb68-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ecb68-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="ecb68-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ecb68-114">Application</span></span> | <span data-ttu-id="ecb68-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ecb68-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c5f61-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c5f61-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ecb68-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ecb68-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/title
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/title
 PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="c5f61-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="c5f61-117">Optional request headers</span></span>
-| <span data-ttu-id="c5f61-118">名称</span><span class="sxs-lookup"><span data-stu-id="c5f61-118">Name</span></span>       | <span data-ttu-id="c5f61-119">说明</span><span class="sxs-lookup"><span data-stu-id="c5f61-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="ecb68-117">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="ecb68-117">Optional request headers</span></span>
+| <span data-ttu-id="ecb68-118">名称</span><span class="sxs-lookup"><span data-stu-id="ecb68-118">Name</span></span>       | <span data-ttu-id="ecb68-119">说明</span><span class="sxs-lookup"><span data-stu-id="ecb68-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="c5f61-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="c5f61-120">Authorization</span></span>  | <span data-ttu-id="c5f61-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c5f61-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c5f61-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c5f61-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="c5f61-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="c5f61-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="ecb68-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ecb68-120">Authorization</span></span>  | <span data-ttu-id="ecb68-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="ecb68-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ecb68-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="ecb68-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="ecb68-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="ecb68-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c5f61-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c5f61-126">Request body</span></span>
-<span data-ttu-id="c5f61-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="c5f61-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ecb68-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ecb68-126">Request body</span></span>
+<span data-ttu-id="ecb68-p104">在请求正文中，提供应更新的相关字段的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。</span><span class="sxs-lookup"><span data-stu-id="ecb68-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="c5f61-130">属性</span><span class="sxs-lookup"><span data-stu-id="c5f61-130">Property</span></span>     | <span data-ttu-id="c5f61-131">类型</span><span class="sxs-lookup"><span data-stu-id="c5f61-131">Type</span></span>   |<span data-ttu-id="c5f61-132">说明</span><span class="sxs-lookup"><span data-stu-id="c5f61-132">Description</span></span>|
+| <span data-ttu-id="ecb68-130">属性</span><span class="sxs-lookup"><span data-stu-id="ecb68-130">Property</span></span>     | <span data-ttu-id="ecb68-131">类型</span><span class="sxs-lookup"><span data-stu-id="ecb68-131">Type</span></span>   |<span data-ttu-id="ecb68-132">说明</span><span class="sxs-lookup"><span data-stu-id="ecb68-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c5f61-133">text</span><span class="sxs-lookup"><span data-stu-id="c5f61-133">text</span></span>|<span data-ttu-id="c5f61-134">string</span><span class="sxs-lookup"><span data-stu-id="c5f61-134">string</span></span>|<span data-ttu-id="c5f61-135">表示坐标轴标题。</span><span class="sxs-lookup"><span data-stu-id="c5f61-135">Represents the axis title.</span></span>|
-|<span data-ttu-id="c5f61-136">visible</span><span class="sxs-lookup"><span data-stu-id="c5f61-136">visible</span></span>|<span data-ttu-id="c5f61-137">布尔</span><span class="sxs-lookup"><span data-stu-id="c5f61-137">boolean</span></span>|<span data-ttu-id="c5f61-138">指定坐标轴标题可见性的布尔值。</span><span class="sxs-lookup"><span data-stu-id="c5f61-138">A boolean that specifies the visibility of an axis title.</span></span>|
+|<span data-ttu-id="ecb68-133">text</span><span class="sxs-lookup"><span data-stu-id="ecb68-133">text</span></span>|<span data-ttu-id="ecb68-134">string</span><span class="sxs-lookup"><span data-stu-id="ecb68-134">string</span></span>|<span data-ttu-id="ecb68-135">表示坐标轴标题。</span><span class="sxs-lookup"><span data-stu-id="ecb68-135">Represents the axis title.</span></span>|
+|<span data-ttu-id="ecb68-136">visible</span><span class="sxs-lookup"><span data-stu-id="ecb68-136">visible</span></span>|<span data-ttu-id="ecb68-137">布尔</span><span class="sxs-lookup"><span data-stu-id="ecb68-137">boolean</span></span>|<span data-ttu-id="ecb68-138">指定坐标轴标题可见性的布尔值。</span><span class="sxs-lookup"><span data-stu-id="ecb68-138">A boolean that specifies the visibility of an axis title.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c5f61-139">响应</span><span class="sxs-lookup"><span data-stu-id="c5f61-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ecb68-139">响应</span><span class="sxs-lookup"><span data-stu-id="ecb68-139">Response</span></span>
 
-<span data-ttu-id="c5f61-140">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[workbookChartAxisTitle](../resources/workbookchartaxistitle.md)对象。</span><span class="sxs-lookup"><span data-stu-id="c5f61-140">If successful, this method returns a `200 OK` response code and updated [workbookChartAxisTitle](../resources/workbookchartaxistitle.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="c5f61-141">示例</span><span class="sxs-lookup"><span data-stu-id="c5f61-141">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c5f61-142">请求</span><span class="sxs-lookup"><span data-stu-id="c5f61-142">Request</span></span>
-<span data-ttu-id="c5f61-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c5f61-143">Here is an example of the request.</span></span>
+<span data-ttu-id="ecb68-140">如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[workbookChartAxisTitle](../resources/workbookchartaxistitle.md)对象。</span><span class="sxs-lookup"><span data-stu-id="ecb68-140">If successful, this method returns a `200 OK` response code and updated [workbookChartAxisTitle](../resources/workbookchartaxistitle.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="ecb68-141">示例</span><span class="sxs-lookup"><span data-stu-id="ecb68-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="ecb68-142">请求</span><span class="sxs-lookup"><span data-stu-id="ecb68-142">Request</span></span>
+<span data-ttu-id="ecb68-143">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ecb68-143">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_chartaxistitle"
@@ -66,8 +66,8 @@ Content-length: 45
   "visible": true
 }
 ```
-##### <a name="response"></a><span data-ttu-id="c5f61-144">响应</span><span class="sxs-lookup"><span data-stu-id="c5f61-144">Response</span></span>
-<span data-ttu-id="c5f61-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c5f61-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ecb68-144">响应</span><span class="sxs-lookup"><span data-stu-id="ecb68-144">Response</span></span>
+<span data-ttu-id="ecb68-p105">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ecb68-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,6 +83,16 @@ Content-length: 45
   "visible": true
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ecb68-148">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="ecb68-148">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ecb68-149">语言</span><span class="sxs-lookup"><span data-stu-id="ecb68-149">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_chartaxistitle-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ecb68-150">Javascript</span><span class="sxs-lookup"><span data-stu-id="ecb68-150">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_chartaxistitle-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,6 +103,9 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartaxistitle-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/chartaxistitle-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

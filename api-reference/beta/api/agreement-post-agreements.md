@@ -2,57 +2,57 @@
 title: 创建协议
 description: 创建新的协议对象。
 localization_priority: Normal
-ms.openlocfilehash: eb7ca15d43c37fd98fe45984d2de1fd57a85ad54
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 47f5c6572192f08dbbd3f954f9dd30678269c8e0
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322683"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636588"
 ---
-# <a name="create-agreement"></a><span data-ttu-id="7e8d2-103">创建协议</span><span class="sxs-lookup"><span data-stu-id="7e8d2-103">Create agreement</span></span>
+# <a name="create-agreement"></a><span data-ttu-id="bcc1d-103">创建协议</span><span class="sxs-lookup"><span data-stu-id="bcc1d-103">Create agreement</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7e8d2-104">创建新的[协议](../resources/agreement.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-104">Create a new [agreement](../resources/agreement.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="7e8d2-105">权限</span><span class="sxs-lookup"><span data-stu-id="7e8d2-105">Permissions</span></span>
-<span data-ttu-id="7e8d2-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bcc1d-104">创建新的[协议](../resources/agreement.md)对象。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-104">Create a new [agreement](../resources/agreement.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="bcc1d-105">权限</span><span class="sxs-lookup"><span data-stu-id="bcc1d-105">Permissions</span></span>
+<span data-ttu-id="bcc1d-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7e8d2-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="7e8d2-108">Permission type</span></span>                        | <span data-ttu-id="7e8d2-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="7e8d2-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bcc1d-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="bcc1d-108">Permission type</span></span>                        | <span data-ttu-id="bcc1d-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="bcc1d-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7e8d2-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7e8d2-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="7e8d2-111">Agreement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e8d2-111">Agreement.ReadWrite.All</span></span> |
-|<span data-ttu-id="7e8d2-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="7e8d2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7e8d2-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-113">Not supported.</span></span> |
-|<span data-ttu-id="7e8d2-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="7e8d2-114">Application</span></span>                            | <span data-ttu-id="7e8d2-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-115">Not supported.</span></span> |
+|<span data-ttu-id="bcc1d-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="bcc1d-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="bcc1d-111">Agreement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bcc1d-111">Agreement.ReadWrite.All</span></span> |
+|<span data-ttu-id="bcc1d-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="bcc1d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bcc1d-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-113">Not supported.</span></span> |
+|<span data-ttu-id="bcc1d-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="bcc1d-114">Application</span></span>                            | <span data-ttu-id="bcc1d-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7e8d2-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7e8d2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bcc1d-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="bcc1d-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /agreements
 ```
-## <a name="request-headers"></a><span data-ttu-id="7e8d2-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="7e8d2-117">Request headers</span></span>
-| <span data-ttu-id="7e8d2-118">名称</span><span class="sxs-lookup"><span data-stu-id="7e8d2-118">Name</span></span>         | <span data-ttu-id="7e8d2-119">类型</span><span class="sxs-lookup"><span data-stu-id="7e8d2-119">Type</span></span>        | <span data-ttu-id="7e8d2-120">说明</span><span class="sxs-lookup"><span data-stu-id="7e8d2-120">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="bcc1d-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="bcc1d-117">Request headers</span></span>
+| <span data-ttu-id="bcc1d-118">名称</span><span class="sxs-lookup"><span data-stu-id="bcc1d-118">Name</span></span>         | <span data-ttu-id="bcc1d-119">类型</span><span class="sxs-lookup"><span data-stu-id="bcc1d-119">Type</span></span>        | <span data-ttu-id="bcc1d-120">说明</span><span class="sxs-lookup"><span data-stu-id="bcc1d-120">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="7e8d2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="7e8d2-121">Authorization</span></span> | <span data-ttu-id="7e8d2-122">string</span><span class="sxs-lookup"><span data-stu-id="7e8d2-122">string</span></span> | <span data-ttu-id="7e8d2-p102">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-p102">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="bcc1d-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="bcc1d-121">Authorization</span></span> | <span data-ttu-id="bcc1d-122">string</span><span class="sxs-lookup"><span data-stu-id="bcc1d-122">string</span></span> | <span data-ttu-id="bcc1d-p102">持有者 \{token\}。必需。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7e8d2-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="7e8d2-125">Request body</span></span>
-<span data-ttu-id="7e8d2-126">在请求正文中, 提供[协议](../resources/agreement.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-126">In the request body, supply a JSON representation of [agreement](../resources/agreement.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bcc1d-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="bcc1d-125">Request body</span></span>
+<span data-ttu-id="bcc1d-126">在请求正文中, 提供[协议](../resources/agreement.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-126">In the request body, supply a JSON representation of [agreement](../resources/agreement.md) object.</span></span>
 
-<span data-ttu-id="7e8d2-127">下表显示创建用户时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-127">The following table shows the properties that are required when you create a user.</span></span>
+<span data-ttu-id="bcc1d-127">下表显示创建用户时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-127">The following table shows the properties that are required when you create a user.</span></span>
 
-| <span data-ttu-id="7e8d2-128">属性</span><span class="sxs-lookup"><span data-stu-id="7e8d2-128">Property</span></span>     | <span data-ttu-id="7e8d2-129">类型</span><span class="sxs-lookup"><span data-stu-id="7e8d2-129">Type</span></span>        | <span data-ttu-id="7e8d2-130">说明</span><span class="sxs-lookup"><span data-stu-id="7e8d2-130">Description</span></span> |
+| <span data-ttu-id="bcc1d-128">属性</span><span class="sxs-lookup"><span data-stu-id="bcc1d-128">Property</span></span>     | <span data-ttu-id="bcc1d-129">类型</span><span class="sxs-lookup"><span data-stu-id="bcc1d-129">Type</span></span>        | <span data-ttu-id="bcc1d-130">说明</span><span class="sxs-lookup"><span data-stu-id="bcc1d-130">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="7e8d2-131">displayName</span><span class="sxs-lookup"><span data-stu-id="7e8d2-131">displayName</span></span>|<span data-ttu-id="7e8d2-132">String</span><span class="sxs-lookup"><span data-stu-id="7e8d2-132">String</span></span>|<span data-ttu-id="7e8d2-133">协议的显示名称。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-133">Display name of the agreement.</span></span>|
-|<span data-ttu-id="7e8d2-134">isViewingBeforeAcceptanceRequired</span><span class="sxs-lookup"><span data-stu-id="7e8d2-134">isViewingBeforeAcceptanceRequired</span></span>|<span data-ttu-id="7e8d2-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="7e8d2-135">Boolean</span></span>|<span data-ttu-id="7e8d2-136">指示用户是否必须在接受前展开并查看协议。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-136">Indicates whether the user has to expand and view the agreement before accepting.</span></span>|
-|<span data-ttu-id="7e8d2-137">files/fileName</span><span class="sxs-lookup"><span data-stu-id="7e8d2-137">files/fileName</span></span>|<span data-ttu-id="7e8d2-138">String</span><span class="sxs-lookup"><span data-stu-id="7e8d2-138">String</span></span>|<span data-ttu-id="7e8d2-139">协议文件的名称 (例如, TOU)。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-139">Name of the agreement file (for example, TOU.pdf).</span></span>|
-|<span data-ttu-id="7e8d2-140">files/isDefault</span><span class="sxs-lookup"><span data-stu-id="7e8d2-140">files/isDefault</span></span>|<span data-ttu-id="7e8d2-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="7e8d2-141">Boolean</span></span>|<span data-ttu-id="7e8d2-142">指示是否为默认协议文件 (如果没有任何区域性与客户端首选项匹配)。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-142">Indicates whether this is the default agreement file if none of the culture matches the client preference.</span></span> <span data-ttu-id="7e8d2-143">如果没有任何文件被标记为默认值, 则第一项将被视为默认值。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-143">If none of the file is marked as default, the first one will be treated as default.</span></span>|
-|<span data-ttu-id="7e8d2-144">文件/语言</span><span class="sxs-lookup"><span data-stu-id="7e8d2-144">files/language</span></span>|<span data-ttu-id="7e8d2-145">String</span><span class="sxs-lookup"><span data-stu-id="7e8d2-145">String</span></span>|<span data-ttu-id="7e8d2-146">协议文件的区域性 (格式为 languagecode2/regioncode2)。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-146">Culture of the agreement file in the format languagecode2-country/regioncode2.</span></span> <span data-ttu-id="7e8d2-147">languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-147">languagecode2 is a lowercase two-letter code derived from ISO 639-1.</span></span> <span data-ttu-id="7e8d2-148">国家/regioncode2 派生自 ISO 3166, 通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us)。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-148">country/regioncode2 is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag (for example, en-US).</span></span>|
-|<span data-ttu-id="7e8d2-149">files/fileData/data</span><span class="sxs-lookup"><span data-stu-id="7e8d2-149">files/fileData/data</span></span>|<span data-ttu-id="7e8d2-150">Binary</span><span class="sxs-lookup"><span data-stu-id="7e8d2-150">Binary</span></span>|<span data-ttu-id="7e8d2-151">表示使用 PDF 文档的术语的数据。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-151">Data representing the terms of use the PDF document.</span></span>|
+|<span data-ttu-id="bcc1d-131">displayName</span><span class="sxs-lookup"><span data-stu-id="bcc1d-131">displayName</span></span>|<span data-ttu-id="bcc1d-132">String</span><span class="sxs-lookup"><span data-stu-id="bcc1d-132">String</span></span>|<span data-ttu-id="bcc1d-133">协议的显示名称。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-133">Display name of the agreement.</span></span>|
+|<span data-ttu-id="bcc1d-134">isViewingBeforeAcceptanceRequired</span><span class="sxs-lookup"><span data-stu-id="bcc1d-134">isViewingBeforeAcceptanceRequired</span></span>|<span data-ttu-id="bcc1d-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="bcc1d-135">Boolean</span></span>|<span data-ttu-id="bcc1d-136">指示用户是否必须在接受前展开并查看协议。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-136">Indicates whether the user has to expand and view the agreement before accepting.</span></span>|
+|<span data-ttu-id="bcc1d-137">files/fileName</span><span class="sxs-lookup"><span data-stu-id="bcc1d-137">files/fileName</span></span>|<span data-ttu-id="bcc1d-138">字符串</span><span class="sxs-lookup"><span data-stu-id="bcc1d-138">String</span></span>|<span data-ttu-id="bcc1d-139">协议文件的名称 (例如, TOU)。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-139">Name of the agreement file (for example, TOU.pdf).</span></span>|
+|<span data-ttu-id="bcc1d-140">files/isDefault</span><span class="sxs-lookup"><span data-stu-id="bcc1d-140">files/isDefault</span></span>|<span data-ttu-id="bcc1d-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="bcc1d-141">Boolean</span></span>|<span data-ttu-id="bcc1d-142">指示是否为默认协议文件 (如果没有任何区域性与客户端首选项匹配)。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-142">Indicates whether this is the default agreement file if none of the culture matches the client preference.</span></span> <span data-ttu-id="bcc1d-143">如果没有任何文件被标记为默认值, 则第一项将被视为默认值。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-143">If none of the file is marked as default, the first one will be treated as default.</span></span>|
+|<span data-ttu-id="bcc1d-144">文件/语言</span><span class="sxs-lookup"><span data-stu-id="bcc1d-144">files/language</span></span>|<span data-ttu-id="bcc1d-145">字符串</span><span class="sxs-lookup"><span data-stu-id="bcc1d-145">String</span></span>|<span data-ttu-id="bcc1d-146">协议文件的区域性 (格式为 languagecode2/regioncode2)。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-146">Culture of the agreement file in the format languagecode2-country/regioncode2.</span></span> <span data-ttu-id="bcc1d-147">languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-147">languagecode2 is a lowercase two-letter code derived from ISO 639-1.</span></span> <span data-ttu-id="bcc1d-148">国家/regioncode2 派生自 ISO 3166, 通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us)。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-148">country/regioncode2 is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag (for example, en-US).</span></span>|
+|<span data-ttu-id="bcc1d-149">files/fileData/data</span><span class="sxs-lookup"><span data-stu-id="bcc1d-149">files/fileData/data</span></span>|<span data-ttu-id="bcc1d-150">Binary</span><span class="sxs-lookup"><span data-stu-id="bcc1d-150">Binary</span></span>|<span data-ttu-id="bcc1d-151">表示使用 PDF 文档的术语的数据。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-151">Data representing the terms of use the PDF document.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="7e8d2-152">响应</span><span class="sxs-lookup"><span data-stu-id="7e8d2-152">Response</span></span>
-<span data-ttu-id="7e8d2-153">如果成功, 此方法在响应`201, Created`正文中返回响应代码和[协议](../resources/agreement.md)对象。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-153">If successful, this method returns a `201, Created` response code and [agreement](../resources/agreement.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="bcc1d-152">响应</span><span class="sxs-lookup"><span data-stu-id="bcc1d-152">Response</span></span>
+<span data-ttu-id="bcc1d-153">如果成功, 此方法在响应`201, Created`正文中返回响应代码和[协议](../resources/agreement.md)对象。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-153">If successful, this method returns a `201, Created` response code and [agreement](../resources/agreement.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7e8d2-154">示例</span><span class="sxs-lookup"><span data-stu-id="7e8d2-154">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7e8d2-155">请求</span><span class="sxs-lookup"><span data-stu-id="7e8d2-155">Request</span></span>
-<span data-ttu-id="7e8d2-156">在请求正文中, 提供[协议](../resources/agreement.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-156">In the request body, supply a JSON representation of the [agreement](../resources/agreement.md) object.</span></span>
+## <a name="example"></a><span data-ttu-id="bcc1d-154">示例</span><span class="sxs-lookup"><span data-stu-id="bcc1d-154">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bcc1d-155">请求</span><span class="sxs-lookup"><span data-stu-id="bcc1d-155">Request</span></span>
+<span data-ttu-id="bcc1d-156">在请求正文中, 提供[协议](../resources/agreement.md)对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-156">In the request body, supply a JSON representation of the [agreement](../resources/agreement.md) object.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -78,8 +78,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="7e8d2-157">响应</span><span class="sxs-lookup"><span data-stu-id="7e8d2-157">Response</span></span>
-><span data-ttu-id="7e8d2-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="7e8d2-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="bcc1d-157">响应</span><span class="sxs-lookup"><span data-stu-id="bcc1d-157">Response</span></span>
+><span data-ttu-id="bcc1d-p105">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="bcc1d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,6 +95,16 @@ Content-type: application/json
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="bcc1d-160">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="bcc1d-160">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="bcc1d-161">语言</span><span class="sxs-lookup"><span data-stu-id="bcc1d-161">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_agreement_from_agreements-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bcc1d-162">Javascript</span><span class="sxs-lookup"><span data-stu-id="bcc1d-162">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_agreement_from_agreements-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,6 +115,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
