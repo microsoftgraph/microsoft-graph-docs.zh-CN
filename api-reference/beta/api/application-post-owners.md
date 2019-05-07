@@ -4,12 +4,12 @@ description: 使用此 API 创建新的所有者。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c11bcf04287af1d69cf19981ef6d2950b16f6811
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b0bb36db24beff514d63b5e9c9e8d469149aa540
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322946"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636427"
 ---
 # <a name="create-owner"></a>创建所有者
 
@@ -23,7 +23,7 @@ ms.locfileid: "33322946"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Directory.AccessAsUser.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | application.readwrite.ownedby 和 "全部读取"。全部、全部读取全部和全部读取全部。 |
+|应用程序 | Application.readwrite.ownedby 和 "全部读取"。全部、全部读取全部和全部读取全部。 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -79,6 +79,14 @@ Content-length: 51
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_directoryobject_from_application-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -89,6 +97,8 @@ Content-length: 51
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/application-post-owners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

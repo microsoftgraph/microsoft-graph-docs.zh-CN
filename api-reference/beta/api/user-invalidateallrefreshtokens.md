@@ -4,12 +4,12 @@ description: 通过将**refreshTokensValidFromDateTime**用户属性重置为当
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 300565ad3f9fdcc2f1a55d2cb8d9d30df654a5bf
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: ae8c17ffaf524cddcdcf5a17ed3b3f653975b3d6
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334904"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637337"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>用户: invalidateAllRefreshTokens
 
@@ -22,8 +22,8 @@ ms.locfileid: "33334904"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-+ 对于允许已登录用户使已登录的应用程序无效的应用程序, 请执行以下操作: user. readwrite、directory.accessasuser.all
-+ 对于允许管理员使用户同意的应用程序无效的应用程序, 请执行以下操作: directory.accessasuser.all
++ 对于允许已登录用户使已登录的应用程序无效的应用程序, 请执行以下操作: User。 ReadWrite、Directory.accessasuser.all
++ 对于允许管理员使用户同意的应用程序无效的应用程序, 请执行以下操作: Directory.accessasuser.all
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -64,6 +64,16 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_invalidateallrefreshtokens-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_invalidateallrefreshtokens-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -74,6 +84,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-invalidateallrefreshtokens.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-invalidateallrefreshtokens.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

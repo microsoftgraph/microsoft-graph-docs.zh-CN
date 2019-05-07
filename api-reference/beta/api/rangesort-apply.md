@@ -4,12 +4,12 @@ description: 执行排序操作。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: beaced8da56e82599fd2e900c04e909947d1893b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d060e1353a5e8de50c73f41f1831136395621bb5
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33332157"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639521"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -45,7 +45,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
 |域|workbookSortField 集合|要用作排序依据的条件列表。|
-|matchCase|boolean|可选。是否让大小写对字符串排序产生影响。|
+|matchCase|布尔|可选。是否让大小写对字符串排序产生影响。|
 |hasHeaders|布尔|可选。该区域是否有标头。|
 |orientation|string|可选。该操作是对行还是列排序。可能的值是：`Rows`、`Columns`。|
 |方法|string|可选。用于中文字符的排序方法。可能的值是：`PinYin`、`StrokeCount`。|
@@ -98,6 +98,16 @@ Content-length: 358
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/rangesort_apply-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/rangesort_apply-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -108,6 +118,9 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/rangesort-apply.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/rangesort-apply.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

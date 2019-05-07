@@ -1,24 +1,24 @@
 ---
-title: 消除 riskyUsers
-description: 消除 riskyUsers 对象的风险。
+title: 消除 riskyUser
+description: 消除 riskyUser 对象的风险。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
-ms.openlocfilehash: 3027320b25c35e60e1b5dccabc7ff34ea642a953
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2ca876b494b7753918e67ccdff3a6a37a776d054
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336338"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639045"
 ---
-# <a name="dismiss-riskyusers"></a>消除 riskyUsers
+# <a name="riskyuser-dismiss"></a>riskyUser: 消除
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >**注意:** 使用 riskyUsers API 需要 Azure AD Premium P2 许可证。
 
-消除**riskyUser**对象的风险。 此操作会将目标用户的风险级别设置为 "无"。
+消除一个或多个[riskyUser](../resources/riskyuser.md)对象的风险。 此操作将目标用户的风险级别设置为 "无"。
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -39,7 +39,6 @@ POST /riskyUsers/dismiss
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Workbook-Session-Id  | 用于确定是否保留更改的工作簿会话 ID。 可选。|
 
 ## <a name="request-body"></a>请求正文
 在请求正文中指定要消除的 userIds。
@@ -74,6 +73,16 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/dismiss_riskyuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/dismiss_riskyuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -82,5 +91,9 @@ HTTP/1.1 204 No Content
   "description": "Dismiss riskyUsers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/riskyusers-dismiss.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/riskyusers-dismiss.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

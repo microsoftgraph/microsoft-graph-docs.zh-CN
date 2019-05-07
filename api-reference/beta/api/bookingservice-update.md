@@ -4,12 +4,12 @@ description: 更新指定 bookingbusiness 中的 bookingService 对象的属性�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 41bcc4b31735cefb162a03a8c5a3dfd82cc6364e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 607949e8c4b00230815fa8b29eba751494efb8b3
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322464"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636007"
 ---
 # <a name="update-bookingservice"></a>更新 bookingservice
 
@@ -29,7 +29,7 @@ ms.locfileid: "33322464"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  全部预订. 全部, 全部预订. 全部   |
+|委派（工作或学校帐户） |  全部预订。全部, 全部预订。全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -48,7 +48,7 @@ PATCH /bookingBusinesses/{id}/services/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|defaultDuration|持续时间|服务的默认长度, 以天数、小时数、分钟数和秒数表示。 例如, p11d23h59m 59.999999999999 s。 |
+|defaultDuration|持续时间|服务的默认长度, 以天数、小时数、分钟数和秒数表示。 例如, P11D23H59M 59.999999999999 S。 |
 |defaultLocation|[location](../resources/location.md)|服务的默认物理位置。|
 |defaultPrice|双精度|服务的默认货币价格。|
 |defaultPriceType|string|服务收费的默认方式。 可取值为：`undefined`、`fixedPrice`、`startingAt`、`hourly`、`free`、`priceVaries`、`callUs`、`notSet`。|
@@ -56,13 +56,13 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |说明|String|服务的文本说明。|
 |displayName|字符串|服务名称。|
 |emailAddress|String|电子邮件地址|
-|id|String| 只读。|
+|id|字符串| 只读。|
 |isHiddenFromCustomers|Boolean|如果为 True, 则表示此服务不可供客户预订。|
-|notes|String|有关此服务的其他信息。|
+|notes|字符串|有关此服务的其他信息。|
 |postBuffer|持续时间|此服务的约会结束后以及下一个客户约会可以被预订前要缓冲的时间。|
 |preBuffer|持续时间|在此服务的约会开始之前要缓冲的时间。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|确定应如何创建和管理此类服务的约会的一组策略。|
-|staffMemberIds|String 集合|代表提供此服务的[教职员工成员](../resources/bookingstaffmember.md)。 |
+|staffMemberIds|String collection|代表提供此服务的[教职员工成员](../resources/bookingstaffmember.md)。 |
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204 No content` 响应代码。它不在响应正文中返回任何内容。
@@ -91,6 +91,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_bookingservice-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_bookingservice-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,6 +111,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

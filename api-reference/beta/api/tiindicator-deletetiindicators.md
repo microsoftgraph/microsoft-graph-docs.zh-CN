@@ -4,12 +4,12 @@ description: 在一个请求中 (而不是多个请求) 删除多个威胁情报
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: d5ceaa7e7c0402719b8ee202053da54ad235cc28
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 98059d636e58ad0fc4f9bccc2587b50a72e5b3d3
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335298"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637575"
 ---
 # <a name="tiindicator-deletetiindicators"></a>tiIndicator: deleteTiIndicators
 
@@ -47,7 +47,7 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|String 集合| 要删除的`id`tiIndicator 的集合。 |
+|值|String collection| 要删除的`id`TiIndicator 的集合。 |
 
 ## <a name="response"></a>响应
 
@@ -105,6 +105,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/tiindicator_deletetiindicators-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tiindicator_deletetiindicators-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -113,5 +123,9 @@ Content-type: application/json
   "description": "tiIndicator: deleteTiIndicators",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tiindicator-deletetiindicators.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tiindicator-deletetiindicators.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -2,12 +2,12 @@
 title: 'synchronizationSchema: parseExpression'
 description: '(../resources/synchronization_attributemappingsource.md) 对象。 '
 localization_priority: Normal
-ms.openlocfilehash: ba506e0a2c1cd922d8c5cd3b01375f21f45c6f97
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b11d50bc62dafedcdbf658e15e5501e134eb7a26
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335585"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637974"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
@@ -43,7 +43,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|表达式               |String               |要分析的表达式。|
+|表达式               |字符串               |要分析的表达式。|
 |testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|要对表达式进行求值的测试数据对象。 可选。|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |将映射到此表达式的属性的定义。 可选。|
 
@@ -170,6 +170,14 @@ Content-type: application/json
     "parsingSucceeded": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -180,6 +188,8 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

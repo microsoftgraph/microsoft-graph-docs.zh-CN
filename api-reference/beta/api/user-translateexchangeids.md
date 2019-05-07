@@ -4,12 +4,12 @@ description: 对与 Outlook 相关的资源的标识符进行格式转换。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1721f30ea34f02a63d841c77f7c44d50e98624b3
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: c6380fc4c14c4efb661fd06723e234494730e455
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33334627"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637092"
 ---
 # <a name="user-translateexchangeids"></a>用户: translateExchangeIds
 
@@ -23,8 +23,8 @@ ms.locfileid: "33334627"
 
 | 权限类型 | 权限（从最低特权到最高特权） |
 |:----------------|:--------------------------------------------|
-| 委派（工作或学校帐户） | user.readbasic.all, user. user.readbasic.all, user. all, all, user. all, all: all |
-| 委派（个人 Microsoft 帐户） | user.readbasic.all、用户读取、用户读写 |
+| 委派（工作或学校帐户） | User.readbasic.all, user。 User.readbasic.all, user。 all, All, user。 all, All: all |
+| 委派（个人 Microsoft 帐户） | User.readbasic.all、用户读取、用户读写 |
 | 应用程序 | User.Read.All、User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
@@ -46,7 +46,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | 参数 | 类型 | 说明 |
 |:----------|:-----|:------------|
-| inputIds | String 集合 | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型, 并且必须是同一邮箱中的项目。 此集合的最大大小为1000个字符串。 |
+| inputIds | String collection | 要转换的标识符的集合。 集合中的所有标识符必须具有相同的源 ID 类型, 并且必须是同一邮箱中的项目。 此集合的最大大小为1000个字符串。 |
 | sourceIdType | exchangeIdFormat | `InputIds`参数中标识符的 ID 类型。 |
 | targetIdType | exchangeIdFormat | 要转换为的请求的 ID 类型。 |
 
@@ -73,7 +73,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="example"></a>示例
 
-下面的示例演示如何将多个标识符从正常的 rest API 格式 (`restId`) 转换为 REST 不可变格式`restImmutableEntryId`()。
+下面的示例演示如何将多个标识符从正常的 REST API 格式 (`restId`) 转换为 REST 不可变格式`restImmutableEntryId`()。
 
 ### <a name="request"></a>请求
 
@@ -124,3 +124,24 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_translateexchangeids-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->
