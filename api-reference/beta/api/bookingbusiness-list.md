@@ -1,23 +1,23 @@
 ---
-title: 列出 errorexceededfindcountlimit
+title: 列出 Errorexceededfindcountlimit
 description: 获取已为租户创建的 bookingbusiness 对象的集合。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 3836584a5968afb1d077546838c58836b1623166
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 6a8b10582ab6455184a60272afb9b3bbe97daf4a
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322587"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636161"
 ---
-# <a name="list-bookingbusinesses"></a>列出 errorexceededfindcountlimit
+# <a name="list-bookingbusinesses"></a>列出 Errorexceededfindcountlimit
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 获取已为租户创建的[bookingbusiness](../resources/bookingbusiness.md)对象的集合。
 
-此操作仅返回集合中每个预订业务的**id**和**displayName** 。 出于性能考虑, 它不返回其他属性。 您可以通过在[get](bookingbusiness-get.md)操作中指定其**id**来获取预订业务的其他属性。
+此操作仅返回集合中每个预订业务的**id**和**displayName** 。 出于性能考虑, 它不返回其他属性。 您可以通过在[get](bookingbusiness-get.md)操作中指定其**Id**来获取预订业务的其他属性。
 
 您还可以通过在`query`参数中指定字符串以执行租户的业务中的子字符串匹配, 从而查询预订业务。 请参阅以下[示例](#request-2)。
 
@@ -87,6 +87,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_bookingbusinesses-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_bookingbusinesses-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ##### <a name="request-2"></a>请求 2
@@ -120,6 +130,16 @@ Content-type: application/json
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/query_bookingbusinesses-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/query_bookingbusinesses-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -130,6 +150,11 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingbusiness-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/bookingbusiness-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingbusiness-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

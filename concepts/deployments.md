@@ -1,12 +1,12 @@
 ---
 title: 区域云部署
 description: 除了全球的数据中心网络外，Microsoft 云服务还可用于三个独立的区域云。 这些国家/地区云版本是物理和逻辑网络隔离的 Microsoft 企业云服务实例, 这些实例限制在特定国家/地区的地理边界内, 并由当地人员运营。
-ms.openlocfilehash: a32d8bde766718aa0f6f6080ed4b8ff4e3e7f520
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1eeb6c91f8c5162ae0b372e758a81d57aa0daa7a
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526304"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599826"
 ---
 # <a name="national-cloud-deployments"></a>区域云部署
 
@@ -22,9 +22,11 @@ ms.locfileid: "32526304"
 
 本文提供了有关不同 Microsoft Graph 国家云部署的信息, 以及每个区域中的开发人员可用的功能。
 
+>**注意:**[Microsoft Graph 数据连接](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0)不支持任何国家云部署。 
+
 ## <a name="app-registration-and-token-service-root-endpoints"></a>应用注册和令牌服务根终结点
 
-在调用 Microsoft Graph api 之前, 应先注册您的应用程序并获取一个令牌。 下表列出了 azure Active Directory (azure AD) 终结点的基 url, 这些终结点用于注册应用程序并获取每个国家/地区云的令牌。
+在调用 Microsoft Graph Api 之前, 应先注册您的应用程序并获取一个令牌。 下表列出了 Azure Active Directory (Azure AD) 终结点的基 Url, 这些终结点用于注册应用程序并获取每个国家/地区云的令牌。
 
 | 国家云 | Azure AD 门户终结点| Azure AD 终结点|
 |---------------------------|----------------|----------------|
@@ -33,7 +35,7 @@ ms.locfileid: "32526304"
 |由世纪互联运营的 Azure AD 中国 |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 |Azure AD（全局服务）|https://portal.azure.com |`https://login.microsoftonline.com`|
 
-若要了解有关 Azure AD 访问令牌和 Microsoft Graph 的详细信息, 请参阅[get auth 令牌](./auth-overview.md)。 对于 azure ad 身份验证方案, 请参阅[azure ad 身份验证基础](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)。
+若要了解有关 Azure AD 访问令牌和 Microsoft Graph 的详细信息, 请参阅[身份验证基础](./auth/auth-concepts.md)。 对于 Azure AD 身份验证方案, 请参阅[AZURE ad 身份验证基础](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)。
 
 > **注意：**[Azure AD v2.0 授权和令牌终结点](https://docs.microsoft.com/azure/active-directory/develop/v2-overview)仅在全局服务中可用；它们尚不支持用于区域云部署。
 
@@ -52,7 +54,7 @@ ms.locfileid: "32526304"
 
 >**重要说明:** 如果你已在美国政府版中使用了一个应用程序, 并且你`https://graph.microsoft.com`使用的是全球终结点, `https://graph.microsoft.us`我们建议切换到新终结点。 使用全球终结点访问美国政府数据当前可以正常运行, 但在不久的将来将被禁用。
 
-> **注意**：应用只能通过区域云终结点访问组织数据。 这意味着应用只能访问在特定国家云中注册的租户中的数据。 尝试通过 microsoft Graph 访问与 microsoft 个人帐户关联的用户数据的应用程序应使用全局服务`https://graph.microsoft.com`。 为国家云部署获取的访问令牌与为全局服务或任何其他国家云获取的访问令牌不可互换。
+> **注意**：应用只能通过区域云终结点访问组织数据。 这意味着应用只能访问在特定国家云中注册的租户中的数据。 尝试通过 Microsoft Graph 访问与 Microsoft 个人帐户关联的用户数据的应用程序应使用全局服务`https://graph.microsoft.com`。 为国家云部署获取的访问令牌与为全局服务或任何其他国家云获取的访问令牌不可互换。
 
 ## <a name="supported-features"></a>支持的功能
 
@@ -60,15 +62,15 @@ ms.locfileid: "32526304"
 
 | Microsoft Graph 功能 | Microsoft Cloud for US Government | 由世纪互联运营的 Microsoft 云中国 | Microsoft 云德国 |
 |---------------------------|----------------|----------------|----------------|
-| Users | ✔ | ✔ | ✔ |
-| Groups | ✔ | ✔ | ✔ |
+| 用户 | ✔ | ✔ | ✔ |
+| 组 | ✔ | ✔ | ✔ |
 | Excel | ✔| ✔* | ✔ |
 | OneDrive | ✔ | ✔* | ✔ |
 | Outlook 邮件 | ✔ | ✔ | ✔ |
 | Outlook 日历 | ✔ | ✔ | ✔ |
 | 个人联系人 | ✔ | ✔ | ✔ |
 | SharePoint| ✔ | ✔ | ✔ |
-| 规划器|✔ |✔ |✔ |
+| Planner|✔ |✔ |✔ |
 | 报表  |➖| ✔ |➖|
 | 更改通知 (webhook)  | ➖|✔* |✔* |
 | Delta 查询 | ➖ | ➖| ➖ |

@@ -4,12 +4,12 @@ description: 更新指定 bookingbusiness 中的 bookingStaffMember 的属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 4124a681332a91d2d909c141b54d412cae9bcc69
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: acfef7e88e6fe8d5bb8e46c5d3c3e3c85ff1aa33
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322320"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635888"
 ---
 # <a name="update-bookingstaffmember"></a>更新 bookingstaffmember
 
@@ -21,7 +21,7 @@ ms.locfileid: "33322320"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  全部预订. 全部, 全部预订. 全部   |
+|委派（工作或学校帐户） |  全部预订。全部, 全部预订。全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -40,7 +40,7 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Boolean|如果为 True, 则表示如果教职员工成员是 office 365 用户, 则预订 API 将使用 office 365 中的教职员工成员的个人日历以及**workingHours**属性来确定可用性。 |
+|availabilityIsAffectedByPersonalCalendar|Boolean|如果为 True, 则表示如果教职员工成员是 Office 365 用户, 则预订 API 将使用 Office 365 中的教职员工成员的个人日历以及**workingHours**属性来确定可用性。 |
 |colorIndex|Int32|标识代表教职员工成员的颜色。 该颜色对应于预订应用中的 "**员工详细信息**" 页上的调色板。|
 |displayName|String|向客户显示的教职员工成员的姓名。|
 |emailAddress|String|教职员工成员的电子邮件地址。 这可以位于与企业相同的 Office 365 租户中, 也可以位于不同的电子邮件域中。 如果在企业的计划策略中将**sendConfirmationsToOwner**属性设置为 true, 则使用此电子邮件地址。|
@@ -136,6 +136,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_bookingstaffmember-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_bookingstaffmember-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -146,6 +156,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

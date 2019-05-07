@@ -2,12 +2,12 @@
 title: 列出 secureScoreControlProfiles
 description: 检索 secureScoreControlProfiles 对象的属性和关系。
 localization_priority: Normal
-ms.openlocfilehash: 29efa2c9bedaa295304eb82190a64fbc4a863cd1
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 94f94feb5f540d3a830b97ec3defe7972b345557
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331557"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638814"
 ---
 # <a name="list-securescorecontrolprofiles"></a>列出 secureScoreControlProfiles
 
@@ -21,9 +21,9 @@ ms.locfileid: "33331557"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  securityevents.readwrite.all、securityevents.readwrite.all、all。   |
+|委派（工作或学校帐户） |  Securityevents.readwrite.all、Securityevents.readwrite.all、All。   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | securityevents.readwrite.all、securityevents.readwrite.all、all。 |
+|应用程序 | Securityevents.readwrite.all、Securityevents.readwrite.all、All。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,7 +37,7 @@ GET /security/secureScoreControlProfiles
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者 {代码}。 必需。|
+| Authorization  | Bearer {code}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -117,6 +117,16 @@ Content-type: application/json
      ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_list-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!--
@@ -126,6 +136,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

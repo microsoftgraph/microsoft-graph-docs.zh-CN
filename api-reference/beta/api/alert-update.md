@@ -4,12 +4,12 @@ description: 在任何集成的解决方案中更新可编辑的 alert 属性, �
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: ac757bb6248902f097ebf49d803a323977976acd
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: de663b4cdcd4f12bfdf3d180f039144f86d2d624
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322675"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636560"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -40,7 +40,7 @@ PATCH /security/alerts/{alert_id}
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | 持有者 {代码}。 必需。|
+| Authorization  | Bearer {code}。 必需。|
 |Prefer | return = 表示形式 |
 
 ## <a name="request-body"></a>请求正文
@@ -51,11 +51,11 @@ PATCH /security/alerts/{alert_id}
 |:---------------|:--------|:----------|
 |assignedTo|String|为会审、调查或修正分配了警报的分析师的名称。|
 |closedDateTime|DateTimeOffset|警报关闭的时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时间。 例如，2014 年 1 月 1 日午夜 UTC 如下所示：`'2014-01-01T00:00:00Z'`。|
-|comments|String 集合|通知的分析师注释 (针对客户通知管理)。|
-|征求|alertFeedback 枚举|通知的分析师反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。|
+|comments|字符串集合|通知的分析师注释 (针对客户通知管理)。|
+|反馈|alertFeedback 枚举|分析师对警报的反馈。 可取值为：`unknown`、`truePositive`、`falsePositive`、`benignPositive`。|
 |status|alertStatus 枚举|警报生命周期状态 (阶段)。 可取值为：`unknown`、`newAlert`、`inProgress`、`resolved`。|
-|tags|String 集合|可应用于警报并可用作筛选条件的用户定义的标签 (例如, "HVA"、"锯")。|
-|vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型 (例如, 供应商 = Microsoft; provider = Windows Defender ATP; subprovider = AppLocker)。 **提供程序和供应商字段是必需的。**|
+|tags|String collection|可应用于警报并可用作筛选条件的用户定义的标签 (例如, "HVA"、"锯")。|
+|vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|包含有关安全产品/服务供应商、提供程序和子提供程序的详细信息的复杂类型（例如，供应商 = Microsoft；提供程序 = Windows Defender ATP；子提供程序 = AppLocker）。 **提供程序和供应商字段是必需的。**|
 
 ## <a name="response"></a>响应
 
@@ -108,6 +108,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_alert-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_alert-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>示例 2: 具有首选标头的请求
 
@@ -174,6 +184,11 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

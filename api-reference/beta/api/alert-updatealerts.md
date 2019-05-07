@@ -4,12 +4,12 @@ description: 更新一个请求中的多个警报, 而不是多个请求。
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: ad43cf3488ff0661a4b22130ae8728a00c3ea17d
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b04227886085305103dd6a9ba6c243565d0e5a06
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322694"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636525"
 ---
 # <a name="alert-updatealerts"></a>警报: updateAlerts
 
@@ -47,7 +47,7 @@ POST /security/alerts/updateAlerts
 
 | 参数    | 类型        | 说明 |
 |:-------------|:------------|:------------|
-|值|[通知](../resources/alert.md)集合| 要更新的通知的集合。 每个实体都必须具有要更新的**id**、 **vendorInformation**和其他可编辑属性。|
+|值|[警报](../resources/alert.md)集合| 要更新的通知的集合。 每个实体都必须具有要更新的**id**、 **vendorInformation**和其他可编辑属性。|
 
 ## <a name="response"></a>响应
 
@@ -121,6 +121,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/alert_updatealerts-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/alert_updatealerts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -129,5 +139,9 @@ Content-type: application/json
   "description": "alert: updateAlerts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-updatealerts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-updatealerts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

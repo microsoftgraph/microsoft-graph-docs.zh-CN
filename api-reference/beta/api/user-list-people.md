@@ -4,12 +4,12 @@ description: 检索按其与用户的相关性排序的人员对象列表, 该�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: ed6c7a6c05cd678dc2107f00c42211a186fa61fc
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: de07eaa4b3601c91ace9894e55bd4357fbb23881
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33329892"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33637190"
 ---
 # <a name="list-people"></a>列出人员
 
@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/people
 |:---------------|:--------|:-------|
 |$filter|string|将响应限制为仅记录中包含指定条件的那些人员。|
 |$orderby|string|默认情况下，按与查询的相关程度对响应中的人员进行排序。 可以使用 *$orderby* 参数更改响应中的人员排序。|
-|$search|string|按姓名或别名搜索人员。 支持模糊匹配。 参数仅适用于搜索登录用户的相关人员, 而不是用于搜索与其他用户相关的人员。 还支持`topic`关键字, 以根据从与该人员的电子邮件对话中提取的主题查找人员。 有关信息和示例, 请参阅 "*执行模糊搜索*" 部分,[获取有关人员的相关信息](/graph/people-example#perform-a-fuzzy-search)和示例。|
+|$search|string|按姓名或别名搜索人员。 支持模糊匹配。 参数仅适用于搜索已登录用户的相关人员，而不适用于搜索与其他用户相关的人员。 此外还支持 `topic` 关键字，以根据从与此人的电子邮件对话中提取的主题查找人员。 有关信息和示例，请参阅“[获取相关人员的信息](/graph/people-example#perform-a-fuzzy-search)”的“*执行模糊搜索*”部分。|
 |$select|string|要在响应中添加的属性列表（以逗号分隔）。为获得最佳结果，请仅选择所需属性的子集。|
 |$skip|int|跳过前 n 个结果，可用于分页。使用 *$search* 时不支持此参数。|
 |$top|int|要返回的结果数。|
@@ -176,6 +176,16 @@ Content-length: 1326
     ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_person_collection_beta-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_person_collection_beta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### <a name="requesting-a-subsequent-page-of-people"></a>请求人员的后续页面。
 
@@ -265,7 +275,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
 
 ### <a name="related-people"></a>相关人员
 
-以下请求获取与用户组织中的其他人最相关的人员。 此请求需要 user.readbasic.all 的所有人。读取。 all 权限。 在此示例中, 将显示 Nestor Kellum 的相关人员。
+以下请求获取与用户组织中的其他人最相关的人员。 此请求需要 User.readbasic.all 的所有人。读取。 All 权限。 在此示例中, 将显示 Nestor Kellum 的相关人员。
 
 ```http
 GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
@@ -280,6 +290,9 @@ GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

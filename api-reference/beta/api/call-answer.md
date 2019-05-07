@@ -4,12 +4,12 @@ description: 应答传入呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bf97684ec6b659984af2518fecb1cf80643e33be
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 87ae3b6911585ae3b698ba575e0b8523f96edea8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33325047"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635909"
 ---
 # <a name="call-answer"></a>呼叫: 应答
 
@@ -44,7 +44,7 @@ POST /applications/{id}/calls/{id}/answer
 | 参数        | 类型                                     |说明                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |用于传递回拨的回拨或订阅 ID。 需要                                                               |
-|acceptedModalities|String 集合                         |接受形式的列表。 可能的值为`unknown`: `audio`、 `video`、 `screenSharing`、 `videoBasedScreenSharing`、 `data`、。 需要 |
+|acceptedModalities|String collection                         |接受形式的列表。 可能的值为`unknown`: `audio`、 `video`、 `screenSharing`、 `videoBasedScreenSharing`、 `data`、。 需要 |
 |mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|媒体配置。 需要                                                                                                            |
 
 ## <a name="response"></a>响应
@@ -88,6 +88,14 @@ Content-Length: 211
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/call-answer-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="answer-voip-call-with-service-hosted-media"></a>使用服务托管媒体应答 VOIP 呼叫
 
@@ -408,6 +416,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-answer.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

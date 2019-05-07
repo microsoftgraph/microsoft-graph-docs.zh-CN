@@ -4,12 +4,12 @@ description: 更新 workbookchartdatalabels 对象的属性。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: aeb4bf0af0c61429548bb1d01ab2049122bfda3b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d4ba0d703f4dee429404ee02939b3917064ab8f7
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33327784"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635566"
 ---
 # <a name="update-workbookchartdatalabels"></a>更新 workbookChartDataLabels
 
@@ -43,11 +43,11 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/datalabels
 |:---------------|:--------|:----------|
 |position|字符串|表示数据标签位置的 DataLabelPosition 值。可能的值是：`None`、`Center`、`InsideEnd`、`InsideBase`、`OutsideEnd`、`Left`、`Right`、`Top`、`Bottom`、`BestFit`、`Callout`。|
 |separator|string|表示用于图表中数据标签的分隔符的字符串。|
-|showBubbleSize|boolean|表示数据标签气泡大小是否可见的布尔值。|
-|showCategoryName|boolean|表示数据标签类别名称是否可见的布尔值。|
-|showLegendKey|boolean|表示数据标签图例标示是否可见的布尔值。|
-|showPercentage|boolean|表示数据标签百分比是否可见的布尔值。|
-|showSeriesName|boolean|表示数据标签系列名称是否可见的布尔值。|
+|showBubbleSize|布尔|表示数据标签气泡大小是否可见的布尔值。|
+|showCategoryName|布尔|表示数据标签类别名称是否可见的布尔值。|
+|showLegendKey|布尔|表示数据标签图例标示是否可见的布尔值。|
+|showPercentage|布尔|表示数据标签百分比是否可见的布尔值。|
+|showSeriesName|布尔|表示数据标签系列名称是否可见的布尔值。|
 |showValue|布尔|表示数据标签值是否可见的布尔值。|
 
 ## <a name="response"></a>响应
@@ -93,6 +93,16 @@ Content-length: 134
   "showLegendKey": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_chartdatalabels-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_chartdatalabels-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -103,6 +113,9 @@ Content-length: 134
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartdatalabels-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/chartdatalabels-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -2,12 +2,12 @@
 title: 更新 approleassignment
 description: 更新 approleassignment 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: a3aeea70142c81c7ce368d0c9e688c87677eb210
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 2e87f4b95e20dd57f227f7ed6bfc0c81ad653437
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322610"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636434"
 ---
 # <a name="update-approleassignment"></a>更新 approleassignment
 
@@ -42,7 +42,7 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|创建授予的时间。|
 |id|Guid|向主体分配的角色 id。  此角色必须由目标资源应用程序 **resourceId** 在其 **appRoles** 属性中声明。 如果资源未声明任何权限，则必须指定默认 id (0 GUID)。                            **注意：** 不可为 null。            |
-|principalDisplayName|String|已授权访问权限的主体的显示名称。|
+|principalDisplayName|字符串|已授权访问权限的主体的显示名称。|
 |principalId|Guid|要向其授予访问权限的主体的唯一标识符 (**objectId**)。                            **备注**: 必需。            |
 |principalType|String|主体类型。  它可以是“User”、“Group”或“ServicePrincipal”。|
 |resourceDisplayName|String|已对其进行分配的资源的显示名称。|
@@ -92,6 +92,16 @@ Content-length: 253
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_approleassignment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_approleassignment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -102,6 +112,9 @@ Content-length: 253
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

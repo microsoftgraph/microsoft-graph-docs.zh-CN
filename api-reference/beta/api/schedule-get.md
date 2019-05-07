@@ -4,12 +4,12 @@ description: 检索**schedule**对象的属性和关系。
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 550add9c5b74ce906a342051fafeb8a43b1a1415
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 40e796700df1013825ed5267712619ab59803b4d
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331374"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638996"
 ---
 # <a name="get-schedule"></a>获取日程安排
 
@@ -20,7 +20,7 @@ ms.locfileid: "33331374"
 计划创建过程符合[基于资源的长时间运行的操作 (RELO) 的一个 API 指南](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo)。
 当客户端使用[PUT 方法](team-put-schedule.md)时, 如果设置了计划, 该操作将更新计划;否则, 该操作将在后台启动计划设置过程。
 
-在计划设置过程中, 客户端可以使用 get 方法获取计划, 并查看设置`provisionStatus`的当前状态的属性。 如果设置失败, 客户端可以从`provisionStatusCode`属性获取其他信息。
+在计划设置过程中, 客户端可以使用 GET 方法获取计划, 并查看设置`provisionStatus`的当前状态的属性。 如果设置失败, 客户端可以从`provisionStatusCode`属性获取其他信息。
 
 客户端也可以检查计划的配置。
 
@@ -95,6 +95,16 @@ Content-length: 401
   "provisionStatusCode": null
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/schedule-get-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/schedule-get-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,6 +115,9 @@ Content-length: 401
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/schedule-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/schedule-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

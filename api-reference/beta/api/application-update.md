@@ -4,12 +4,12 @@ description: 更新 application 对象的属性。
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3c85608ad31d0d83607a49e06e2a46032e927bc4
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a55b977201574c2cdf4a9b2ede140abe205d1ae0
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322893"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636329"
 ---
 # <a name="update-application"></a>更新应用程序
 
@@ -43,7 +43,7 @@ PATCH /applications/{id}
 |:---------------|:--------|:----------|
 |allowPublicClient|Boolean| 指定应用程序是否可以充当公共客户端。 例如, 在移动设备上运行的已安装应用程序。 默认值为 *false*。 |
 |api|[apiApplication](../resources/apiapplication.md)| 指定 API 应用程序的设置。 |
-|appRoles|[appRole](../resources/approle.md) 集合|应用程序可声明的应用程序角色的集合。 这些角色可以分配给用户、组或服务主体。 不可为 Null。|
+|appRoles|[appRole](../resources/approle.md) 集合|应用程序可声明的应用程序角色的集合。 这些角色可以分配给用户、组或服务主体。 不可为 null。|
 |重|String 集合| 用于标识应用程序的 URI。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/)。 多值属性筛选器表达式需要 *any* 运算符。 不可为 Null。 |
 |createdDateTime|DateTimeOffset| 注册应用程序的日期和时间。 |
 |deletedDateTime|DateTimeOffset| 删除应用程序的日期和时间。 |
@@ -51,12 +51,12 @@ PATCH /applications/{id}
 |id|String|应用程序的唯一标识符。 继承自 [directoryObject](../resources/directoryobject.md)。 键。 不可为 null。 只读。 |
 |info|[informationalUrl](../resources/informationalurl.md)| 应用程序的基本配置文件信息。 | 指定已安装客户端（如台式设备或移动设备）的设置。 |
 |keyCredentials|[keyCredential](../resources/keycredential.md) 集合|与应用程序关联的密钥凭据集合，不可为 Null。 |
-|logo|Stream|应用程序的主徽标。 不可为 Null。 |
-|orgRestrictions|String 集合| 应用程序受限制的组织 tenantIds。  如果集合为空, 则应用程序为多租户 (不受限制)。 如果集合包含 tenantIds, 则将应用程序限制为集合中的组织 tenantIds。 如果指定其他租户, 而不是在其中注册应用程序的 tenantid, 则意味着应用程序自身的 tenantid 将被间接包括在内。 |
+|logo|Stream|应用程序的主徽标。 不可为 null。 |
+|orgRestrictions|String 集合| 应用程序受限制的组织 tenantIds。  如果集合为空, 则应用程序为多租户 (不受限制)。 如果集合包含 tenantIds, 则将应用程序限制为集合中的组织 tenantIds。 如果指定其他租户, 而不是在其中注册应用程序的 tenantId, 则意味着应用程序自身的 tenantId 将被间接包括在内。 |
 |passwordCredentials|[passwordCredential](../resources/passwordcredential.md) 集合|与应用程序关联的密码凭据集合。 不可为 Null。|
-|preAuthorizedApplications|[preAuthorizedApplication](../resources/preauthorizedapplication.md)集合| 列出了应用程序和请求的隐式同意权限。 要求管理员向应用程序提供许可。 preAuthorizedApplications 不要求用户同意请求的权限。 preAuthorizedApplications 中列出的权限不需要用户同意。 但是, preAuthorizedApplications 中未列出的任何其他请求的权限都需要用户同意。 |
+|preAuthorizedApplications|[preAuthorizedApplication](../resources/preauthorizedapplication.md)集合| 列出了应用程序和请求的隐式同意权限。 要求管理员向应用程序提供许可。 preAuthorizedApplications 不要求用户同意请求的权限。 PreAuthorizedApplications 中列出的权限不需要用户同意。 但是, preAuthorizedApplications 中未列出的任何其他请求的权限都需要用户同意。 |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) 集合|指定此应用程序需要访问的资源以及在每个资源下所需的 OAuth 权限范围和应用程序角色集。 这种预配置的所需资源访问权限可驱动同意体验。 不可为 Null。|
-|标记|String 集合| 可用于分类和标识应用程序的自定义字符串。 |
+|标记|String collection| 可用于分类和标识应用程序的自定义字符串。 |
 |web|[webApplication](../resources/webApplication.md)| 指定 Web 应用程序的设置。 |
 
 ## <a name="response"></a>响应
@@ -80,7 +80,7 @@ Content-length: 72
 }
 ```
 ##### <a name="response"></a>响应
-注意：为简洁起见，可能会截断此处显示的响应对象。 
+注意：为简洁起见，可能会截断此处展示的响应对象。 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,6 +89,16 @@ Content-length: 72
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_application-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_application-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,6 +109,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/application-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/application-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

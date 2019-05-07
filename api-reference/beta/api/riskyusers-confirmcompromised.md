@@ -1,24 +1,24 @@
 ---
-title: 确认 riskyUsers 已泄露
-description: 确认 riskyUsers 对象是否已泄露。
+title: 确认 riskyUser 已泄露
+description: 确认 riskyUser 对象是否已泄露。
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
-ms.openlocfilehash: beca64415a2d03898d57cd9cda2fb248121c424b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: f0ce7b0a29b90f12104a697bdc38f3297e52676e
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336367"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639031"
 ---
-# <a name="confirm-riskyusers-compromised"></a>确认 riskyUsers 已泄露
+# <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**注意:** riskyUsers API 需要 Azure AD Premium P2 许可证。
+>**注意:** RiskyUsers API 需要 Azure AD Premium P2 许可证。
 
-确认[riskyUser](../resources/riskyuser.md)对象是否已泄露。 这会将目标用户的风险级别设置为 "高"。
+确认一个或多个[riskyUser](../resources/riskyuser.md)对象已泄露。 此操作将目标用户的风险级别设置为 "高"。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -40,10 +40,9 @@ POST /riskyUsers/confirmCompromised
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {token}。必需。 |
-| Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中指定要消除的 userIds。
+指定要在请求正文中消除的有风险的用户 Id。
 
 ## <a name="response"></a>响应
 
@@ -75,6 +74,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/confirm_riskyuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/confirm_riskyuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -84,5 +93,8 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

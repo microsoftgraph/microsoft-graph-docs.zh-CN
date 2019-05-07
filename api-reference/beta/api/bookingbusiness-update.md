@@ -4,12 +4,12 @@ description: 更新 bookingBusiness 对象的属性。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: fc86060e3d24039286fe679fef83f419a54f42ac
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 7f1203eaa748ae8a5ec60fd49f665abe6ce56aac
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322263"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636091"
 ---
 # <a name="update-bookingbusiness"></a>更新 bookingbusiness
 
@@ -21,7 +21,7 @@ ms.locfileid: "33322263"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  全部预订. 全部, 全部预订. 全部   |
+|委派（工作或学校帐户） |  全部预订。全部, 全部预订。全部   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
 |应用程序 | 不支持。  |
 
@@ -42,13 +42,13 @@ PATCH /bookingBusinesses/<id>
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|企业的街道地址。|
 |businessHours|[bookingWorkHours](../resources/bookingworkhours.md)集合|业务的运行时间。|
-|businessType|String|企业的类型。|
-|defaultCurrencyIso|String|业务在 Microsoft 预订中所运行的货币的代码。|
-|displayName|String|与客户进行交互的企业的名称。|
-|email|字符串|企业的电子邮件地址。|
+|businessType|字符串|企业的类型。|
+|defaultCurrencyIso|字符串|业务在 Microsoft 预订中所运行的货币的代码。|
+|displayName|字符串|与客户进行交互的企业的名称。|
+|email|String|企业的电子邮件地址。|
 |phone|String|企业的电话号码。|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|指定如何为此公司创建预订。|
-|webSiteUrl|String|业务网站的 URL。|
+|webSiteUrl|字符串|业务网站的 URL。|
 
 ## <a name="response"></a>响应
 如果成功，此方法返回 `204, No Content` 响应代码。它不在响应正文中返回任何内容。
@@ -75,7 +75,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>响应
-下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 所有属性都将通过实际调用返回。
+下面是一个响应示例。 注意：为简洁起见，可能会截断此处显示的响应对象。 将从实际调用中返回所有属性。
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -83,6 +83,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_bookingbusiness-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_bookingbusiness-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -93,6 +103,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingbusiness-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

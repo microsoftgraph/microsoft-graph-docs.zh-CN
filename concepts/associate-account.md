@@ -2,12 +2,12 @@
 title: 将 Office 365 帐户与 Azure AD 相关联以创建和管理应用
 description: '若要使用 Microsoft Azure Active Directory (Azure AD) 验证应用，必须在 Azure AD 中注册应用。这也是存储 Office 365 用户帐户和应用信息的位置。必须有 Microsoft Azure 订阅，才能通过 Azure 门户管理 Azure AD。可以使用 Microsoft Azure 门户管理用户、角色和应用。 '
 localization_priority: Normal
-ms.openlocfilehash: 815cc80fa8d25f52ac05a1bf80f9e9dfa89b9b4d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: HT
+ms.openlocfilehash: efcb898290944314951af9b6dca980513aff2954
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880155"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33599854"
 ---
 # <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>将 Office 365 帐户与 Azure AD 关联以创建和管理应用
 
@@ -15,20 +15,20 @@ ms.locfileid: "27880155"
 
 本文介绍了如何将 Office 365 帐户和 Azure AD 关联以创建和管理应用。
 
- >**注意：** 本文将 Azure AD 用作应用的身份验证提供程序。如果使用的是 Azure AD v2.0 终结点，则无需执行此步骤。有关详细信息，请参阅 [Microsoft Graph 的应用身份验证](auth-overview.md)。
+ >**注意：** 本文将 Azure AD 用作应用的身份验证提供程序。如果使用的是 Azure AD v2.0 终结点，则无需执行此步骤。有关详细信息，请参阅 [Microsoft Graph 的应用身份验证](./auth)。
 
 ## <a name="prerequisites"></a>先决条件
 
 **Office 365 商业版帐户**
 
-如果没有现成的 Office 365 商业版帐户，则可以：
+如果您没有现成的 Office 365 商业版帐户，则可以：
 
-- 注册上面列出的 [Office 365 商业版计划](https://products.office.com/zh-CN/business/compare-office-365-for-business-plans)，或
-- [参加 Office 365 开发人员计划并获取为期 1 年的免费 Office 365 订阅](https://aka.ms/devprogramsignup)。
+- 注册上面列出的 [Office 365 商业版计划](https://products.office.com/en-us/business/compare-office-365-for-business-plans)，或
+- [Join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
 
 **Microsoft Azure 订阅** 
 
-- 如果有现成的 Microsoft Azure 订阅，则可以将它与 Office 365 商业版订阅相关联。 
+- 如果您有现成的 Microsoft Azure 订阅，则可以将它与您的 Office 365 商业版订阅相关联。 
 
 - 否则，您将需要新建一个 Azure 订阅，并将它与您的 Office 365 帐户相关联以便注册和管理应用。
 
@@ -68,7 +68,7 @@ ms.locfileid: "27880155"
 ## <a name="to-create-a-new-azure-subscription-and-associate-it-with-your-office-365-account"></a>若要新建 Azure 订阅并将它与 Office 365 帐户相关联
 
 
-1. 登录 Office 365。在“**主页**”中，选择“**管理员**”图标，打开 Office 365 管理中心。
+1. Log on to Office 365. From the **Home** page, select the **Admin** icon to open the Office 365 admin center.
 2. 在菜单页中，沿着页面左侧，向下滚动至“**管理员**”，然后选择“**Azure AD**”。
 
     >**重要说明：** 若要打开 Office 365 管理中心，则需要具有全局管理员权限的 Office 365 商业版帐户。 
@@ -82,7 +82,7 @@ ms.locfileid: "27880155"
     3. 在收到验证代码后，请输入此代码，然后选择“**验证代码**”。
     4. 输入付款信息，检查协议，然后选择“**注册**”。
         
-        你的信用卡将不会被扣费。
+        Your credit card will not be charged.
         
         创建 Azure 订阅时不要关闭或刷新浏览器。
             
@@ -93,5 +93,5 @@ ms.locfileid: "27880155"
     你现在应该可以在 Azure 订阅中看到所有项目。它列出了包含 Office 365 租户名称的目录。
     
 ## <a name="see-also"></a>另请参阅
-- [在 Azure AD 中注册应用程序的基础知识](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [在 Azure AD 中添加、更新或删除应用程序](https://azure.microsoft.com/zh-CN/documentation/articles/active-directory-integrating-applications/)
+- [在 Azure AD 中注册应用程序的基础知识](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [在 Azure AD 中添加、更新或删除应用程序](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)

@@ -4,12 +4,12 @@ description: 修改 audioRoutingGroup 的源和接收器。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f38105ebb6df2ecd72b6f48051a1409efddc3c5c
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 835298804e2b409f75ef4d0e86786951f7ae0099
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322574"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636420"
 ---
 # <a name="update-audio-routing-group"></a>更新音频路由组
 
@@ -43,9 +43,9 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 
 | 属性       | 类型    |说明|
 |:---------------|:--------|:----------|
-| 接收器 | String 集合 | audioRoutingGroup 中的目标参与者。 |
+| 接收器 | String collection | AudioRoutingGroup 中的目标参与者。 |
 | routingMode | String | 可取值为：`oneToOne`、`multicast`。 |
-| 源 | String 集合 | audioRoutingGroup 中的源参与者。 |
+| 源 | String collection | AudioRoutingGroup 中的源参与者。 |
 
 ## <a name="response"></a>响应
 如果成功, 此方法在响应`200 OK`正文中返回响应代码和更新的[audioRoutingGroup](../resources/audioroutinggroup.md)对象。
@@ -102,6 +102,16 @@ Content-Length: 233
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update-audioRoutingGroup-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update-audioRoutingGroup-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -112,6 +122,9 @@ Content-Length: 233
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/audioroutinggroup-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/audioroutinggroup-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

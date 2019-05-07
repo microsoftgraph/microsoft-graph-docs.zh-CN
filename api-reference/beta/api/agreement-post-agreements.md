@@ -2,12 +2,12 @@
 title: 创建协议
 description: 创建新的协议对象。
 localization_priority: Normal
-ms.openlocfilehash: eb7ca15d43c37fd98fe45984d2de1fd57a85ad54
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 47f5c6572192f08dbbd3f954f9dd30678269c8e0
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322683"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636588"
 ---
 # <a name="create-agreement"></a>创建协议
 
@@ -42,9 +42,9 @@ POST /agreements
 |:-------------|:------------|:------------|
 |displayName|String|协议的显示名称。|
 |isViewingBeforeAcceptanceRequired|Boolean|指示用户是否必须在接受前展开并查看协议。|
-|files/fileName|String|协议文件的名称 (例如, TOU)。|
+|files/fileName|字符串|协议文件的名称 (例如, TOU)。|
 |files/isDefault|Boolean|指示是否为默认协议文件 (如果没有任何区域性与客户端首选项匹配)。 如果没有任何文件被标记为默认值, 则第一项将被视为默认值。|
-|文件/语言|String|协议文件的区域性 (格式为 languagecode2/regioncode2)。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166, 通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us)。|
+|文件/语言|字符串|协议文件的区域性 (格式为 languagecode2/regioncode2)。 languagecode2 是从 ISO 639-1 派生的一个由两个小写字母组成的代码。 国家/regioncode2 派生自 ISO 3166, 通常包含两个大写字母或一个 BCP-47 语言标记 (例如 en-us)。|
 |files/fileData/data|Binary|表示使用 PDF 文档的术语的数据。|
 
 ## <a name="response"></a>响应
@@ -95,6 +95,16 @@ Content-type: application/json
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_agreement_from_agreements-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_agreement_from_agreements-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -105,6 +115,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

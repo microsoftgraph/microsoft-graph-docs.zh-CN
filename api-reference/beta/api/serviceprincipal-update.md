@@ -2,12 +2,12 @@
 title: 更新 serviceprincipal
 description: 更新 serviceprincipal 对象的属性。
 localization_priority: Normal
-ms.openlocfilehash: 9bb3f8b578d3a0e24418f80da693ff317a7cc132
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: e2caffafe114f0023a849cecef98f8173bf6468f
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331444"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638632"
 ---
 # <a name="update-serviceprincipal"></a>更新 serviceprincipal
 
@@ -40,21 +40,21 @@ PATCH /servicePrincipals/{id}
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean|                如果服务主体帐户已启用，则为 **true**；否则，为 **false**。            |
 |appDisplayName|String|关联应用程序公开的显示名称。|
-|appId|String|关联应用程序的唯一标识符（其 **appId** 属性）。|
+|appId|字符串|关联应用程序的唯一标识符（其 **appId** 属性）。|
 |appRoleAssignmentRequired|Boolean|指定在 Azure AD 在向应用程序签发用户或访问令牌之前用户或组是否需要 **appRoleAssignment**。                            **注释**: 需要版本1.5 或更高版本, 不可为 null。            |
 |appRoles|appRole|关联应用程序公开的应用程序角色。 有关详细信息, 请参阅 application entity **Notes**上的**appRoles**属性定义: 需要版本1.5 或更高版本, 不可为 null。            |
 |displayName|字符串|服务主体的显示名称。|
-|errorUrl|String|            |
-|homepage|String|关联应用程序的主页的 URL。|
+|errorUrl|字符串|            |
+|homepage|字符串|关联应用程序的主页的 URL。|
 |keyCredentials|keyCredential|与服务帐户关联的密钥凭据集合。                            **注意：** 不可为 null。            |
-|logoutUrl|String| 指定 Microsoft 授权服务使用[正向通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[反向通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户时所使用的 URL。 |
+|logoutUrl|字符串| 指定 Microsoft 授权服务使用[正向通道](https://openid.net/specs/openid-connect-frontchannel-1_0.html)、[反向通道](https://openid.net/specs/openid-connect-backchannel-1_0.html)或 SAML 注销协议注销用户时所使用的 URL。 |
 |oauth2Permissions|oAuth2Permission|关联应用程序的 OAuth 2.0 权限。 有关详细信息，请参阅应用程序实体上的 **oauth2Permissions** 属性定义。                            **注释**: 需要版本1.5 或更高版本, 不可为 null。            |
 |passwordCredentials|passwordCredential|与服务帐户关联的密码凭据集合。                            **注意：** 不可为 null。            |
-|preferredTokenSigningKeyThumbprint|String|仅供内部使用。 请勿写入属性，否则将依赖该属性。 可能会在未来版本中删除。                            **备注**: 需要1.5 版或更高版本。            |
-|publisherName|String|在其中指定关联应用程序的租户的显示名称。|
-|replyUrls|String|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。                            **注意：** 不可为 null。            |
+|preferredTokenSigningKeyThumbprint|字符串|仅供内部使用。 请勿写入属性，否则将依赖该属性。 可能会在未来版本中删除。                            **备注**: 需要1.5 版或更高版本。            |
+|publisherName|字符串|在其中指定关联应用程序的租户的显示名称。|
+|replyUrls|字符串|向其发送用户令牌以使用关联应用程序登录的 URL，或者为关联应用程序向其发送 OAuth 2.0 authorization 代码和访问令牌的重定向 URL。                            **注意：** 不可为 null。            |
 |samlMetadataUrl|String|            |
-|servicePrincipalNames|String|标识关联应用程序的 URL。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://msdn.microsoft.com/library/azure/dn132633.aspx)。                            **注释**: 不可为 null, 多值属性上的筛选表达式需要**any**运算符;有关详细信息, 请参阅[支持的查询、筛选器和分页选项](https://msdn.microsoft.com/library/azure/dn727074.aspx)。            |
+|servicePrincipalNames|字符串|标识关联应用程序的 URL。 有关详细信息，请参阅[应用程序对象和服务主体对象](https://msdn.microsoft.com/library/azure/dn132633.aspx)。                            **注释**: 不可为 null, 多值属性上的筛选表达式需要**any**运算符;有关详细信息, 请参阅[支持的查询、筛选器和分页选项](https://msdn.microsoft.com/library/azure/dn727074.aspx)。            |
 |tags|String|                                        **注意：** 不可为 null。            |
 
 ## <a name="response"></a>响应
@@ -124,6 +124,16 @@ Content-length: 391
   "appRoleAssignmentRequired": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_serviceprincipal-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_serviceprincipal-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -134,6 +144,9 @@ Content-length: 391
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/serviceprincipal-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

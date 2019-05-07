@@ -3,12 +3,12 @@ title: 列出订阅
 description: " 有关详细信息, 请参阅以下方案。"
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 3ffcf78c7df28faba22b92a7389f473f0ea91613
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 3728c3fcf2fe3d78b243894632a363804a2f92c8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335811"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638695"
 ---
 # <a name="list-subscriptions"></a>列出订阅
 
@@ -18,34 +18,34 @@ ms.locfileid: "33335811"
 
 ## <a name="permissions"></a>权限
 
-此 API 支持以下权限范围;若要了解详细信息, 包括如何选择权限, 请参阅[权限](/graph/permissions-reference)。
+此 API 支持以下权限范围；要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 | 权限类型  | 权限（从最低特权到最高特权）  |
 |:---------------- |:-------------------------------------------- |
-| [委派](/graph/auth-v2-user)(工作或学校帐户) | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有 (请参阅下面的)。 |
-| [委派](/graph/auth-v2-user)(个人 Microsoft 帐户) | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read. 所有 (请参阅下面的)。 |
+| [委派](/graph/auth-v2-user)(工作或学校帐户) | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read。所有 (请参阅下面的)。 |
+| [委派](/graph/auth-v2-user)(个人 Microsoft 帐户) | [创建订阅](subscription-post-subscriptions.md)或订阅所需的权限。 Read。所有 (请参阅下面的)。 |
 | [应用程序](/graph/auth-v2-service) | [创建订阅](subscription-post-subscriptions.md)所需的权限。 |
 
-响应结果基于呼叫应用程序的上下文。 以下是常见方案的摘要:
+响应结果基于调用应用的上下文。 以下是常见方案的摘要：
 
 ### <a name="basic-scenarios"></a>基本方案
 
-通常情况下, 应用程序希望检索它最初为当前登录用户创建的订阅, 或者检索目录 (工作/学校帐户) 中的所有用户。 这些方案不需要除了最初用于创建订阅的应用程序之外的任何特殊权限。
+最常见的情况是，应用程序希望检索最初为当前登录用户或者检索目录中的所有用户（工作/学校帐户）创建的订阅。 除了应用最初用于创建订阅的权限外，这些方案不需要任何特殊权限。
 
-| 呼叫应用程序的上下文 | 响应包含 |
+| 调用应用程序的上下文 | 响应包含 |
 |:-----|:---------------- |
-| 应用代表已登录用户 (委派权限) 呼叫。 <br/>并<br/>应用程序具有[创建订阅](subscription-post-subscriptions.md)所需的原始权限。<br/><br/>注意: 这适用于个人 Microsoft 帐户和工作/学校帐户。 | 仅**此应用**为登录用户创建的订阅。 |
-| 应用程序是代表自身调用的 (应用程序权限)。<br/>并<br/>应用程序具有[创建订阅](subscription-post-subscriptions.md)所需的原始权限。<br/><br/>注意: 这仅适用于工作/学校帐户。| **此应用**为自己或目录中的任何用户创建的订阅。|
+| 应用程序代表已登录用户（委派权限）进行调用。 <br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **此应用**仅为登录用户创建的订阅。 |
+| 应用程序代表本身（应用程序权限）进行调用。<br/>-且-<br/>应用程序具有[创建该订阅](subscription-post-subscriptions.md)所需的初始权限。<br/><br/>注意：这仅适用于工作/学校帐户。| **此应用**仅为自己或者目录中的任何用户创建的订阅。|
 
 ### <a name="advanced-scenarios"></a>高级方案
 
-在某些情况下, 应用想要检索由其他应用程序创建的订阅。 例如, 用户希望以代表自己的任意方式查看由任何应用程序创建的所有订阅。 或者, 管理员可能想要查看其目录中所有应用程序的所有订阅。
-在这种情况下, 委派权限订阅是必需的。 All 是必需的。
+在某些情况下，应用想要检索其他应用创建的订阅。 例如，用户希望看到任何应用程序代表他们创建的所有订阅。 或者，管理员可能希望查看其目录中所有应用的所有订阅。
+对于此类方案，委派权限 Subscription.Read.All 是必需的。
 
-| 呼叫应用程序的上下文 | 响应包含 |
+| 调用应用程序的上下文 | 响应包含 |
 |:-----|:---------------- |
-| 应用代表已登录用户 (委派权限) 呼叫。 *用户是非管理员*。 <br/>并<br/>应用具有权限订阅。 Read. All<br/><br/>注意: 这适用于个人 Microsoft 帐户和工作/学校帐户。 | 仅供登录用户使用的**任何应用程序所**创建的订阅。 |
-| 应用代表已登录用户 (委派权限) 呼叫。 *用户是管理员*。<br/>并<br/>应用具有权限订阅。 Read. All<br/><br/>注意: 这仅适用于工作/学校帐户。 | 由目录中**任何用户**的**任何应用程序**创建的订阅。|
+| 应用程序代表已登录用户（委派权限）进行调用。 *用户是非管理员*。 <br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这适用于个人 Microsoft 帐户和工作/学校帐户。 | **任何应用**仅为登录用户创建的订阅。 |
+| 应用程序代表已登录用户（委派权限）进行调用。 *用户是管理员*。<br/>-且-<br/>应用程序具有权限 Subscription.Read.All<br/><br/>注意：这仅适用于工作/学校帐户。 | **任何应用**为目录中的**任何用户**创建的订阅。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,7 +57,7 @@ GET /subscriptions
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法不支持[OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)来帮助自定义响应。
+此方法不支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -71,7 +71,7 @@ GET /subscriptions
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和[订阅](../resources/subscription.md)对象列表。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [subscription](../resources/subscription.md) 对象列表。
 
 ## <a name="example"></a>示例
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 ##### <a name="response"></a>响应
 
-下面是一个响应示例。 注意: 为简洁起见, 可能会截断此处显示的响应。 所有属性都将通过实际调用返回。
+下面是一个响应示例。 注意: 为简洁起见, 可能会截断此处显示的响应。 将从实际调用中返回所有属性。
 
 <!-- {
   "blockType": "response",
@@ -118,6 +118,16 @@ Content-length: 586
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_subscriptions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_subscriptions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -128,8 +138,11 @@ Content-length: 586
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
 
-当请求返回多个数据页时, 响应中包含一个`@odata.nextLink`可帮助您管理结果的属性。  若要了解详细信息, 请参阅[在应用中分页 Microsoft Graph 数据](/graph/paging)。
+当请求返回多页数据时，响应中包含一个 `@odata.nextLink` 属性，可帮助你管理结果。  若要了解详细信息，请参阅[在应用中对 Microsoft Graph 数据进行分页](/graph/paging)。

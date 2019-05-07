@@ -4,12 +4,12 @@ description: 将分区复制到特定分区组。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 3e0968ec4ecae4cd8eaff0ff257e5e87220e7fc9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0f0628d668ba71ba807d278acf542fd8750b1f84
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336093"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638884"
 ---
 # <a name="section-copytosectiongroup"></a>部分: copyToSectionGroup
 
@@ -47,11 +47,11 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
-|siteId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
+|siteCollectionId|字符串|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
+|siteId|字符串|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
 |groupId|String|要复制到的组的 id。 仅在复制到 Office 365 组时使用。|
 |id|String|必需。 目标分区组的 id。 |
-|renameAs|String|副本的名称。 默认值为现有项目的名称。 |
+|renameAs|字符串|副本的名称。 默认值为现有项目的名称。 |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||
@@ -91,6 +91,16 @@ Content-length: 84
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/section_copytosectiongroup-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/section_copytosectiongroup-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -101,6 +111,9 @@ HTTP/1.1 202 Accepted
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/section-copytosectiongroup.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/section-copytosectiongroup.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

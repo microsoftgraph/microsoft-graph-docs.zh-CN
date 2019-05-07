@@ -2,12 +2,12 @@
 title: 删除附件
 description: 从日历事件、邮件、Outlook 任务或帖子中删除附件。
 localization_priority: Normal
-ms.openlocfilehash: 833bb94f3f9499663b21a159425bad5d0f7b4b65
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8b9e70153c80371afcb147da6183a1f78135e283
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322928"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636406"
 ---
 # <a name="delete-attachment"></a>删除附件
 
@@ -19,10 +19,10 @@ ms.locfileid: "33322928"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 如果访问邮件中的附件: Mail. ReadWrite
-* 如果访问事件中的附件: 日历. 读写
-* 如果访问 Outlook 任务中的附件: tasks. ReadWrite
-* 如果访问组帖子中的附件: group. ReadWrite. All
+* 如果访问邮件中的附件: Mail。 ReadWrite
+* 如果访问事件中的附件: 日历。读写
+* 如果访问 Outlook 任务中的附件: Tasks。 ReadWrite
+* 如果访问组帖子中的附件: Group。 ReadWrite。 All
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All
@@ -121,6 +121,16 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -131,6 +141,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/attachment-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

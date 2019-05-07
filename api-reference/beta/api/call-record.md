@@ -4,12 +4,12 @@ description: 录制呼叫。
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bc1a98374c34986e2a4430f5b50c5a2801dcd0e8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 4e864027297f9b96dd6ce3a1ecb08e59444c5cef
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33328279"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33635720"
 ---
 # <a name="call-record"></a>call: record
 
@@ -50,8 +50,8 @@ POST /applications/{id}/calls/{id}/record
 |maxRecordDurationInSeconds|Int32| 以秒为单位的最大记录持续时间。|
 |playBeep|Boolean| 播放提示后播放嘟嘟声。|
 |streamWhileRecording|Boolean|如果设置为 true, 将在录制开始后提供资源位置。 |
-|stopTones|String 集合|指定结束录音的停止音。|
-|适用|String|客户端上下文。|
+|stopTones|String collection|指定结束录音的停止音。|
+|适用|字符串|客户端上下文。|
 
 ## <a name="response"></a>响应
 返回`202 Accepted`响应代码和位置标头, 其中包含为此请求创建的[commsOperation](../resources/commsoperation.md)的 uri。
@@ -107,6 +107,14 @@ Content-Length: 394
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/call-record-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### <a name="notification---operation-completed"></a>通知-操作已完成
 
@@ -150,6 +158,8 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-record.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

@@ -4,12 +4,12 @@ description: 检索 alert 对象的属性和关系
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 08691cc0122c44703d9a95625c9eabb5d70422fe
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 12d17e96ab12a72d256ec7552e0b7a042e541067
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322691"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636546"
 ---
 # <a name="get-alert"></a>获取警报
 
@@ -23,9 +23,9 @@ ms.locfileid: "33322691"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |  securityevents.readwrite.all、securityevents.readwrite.all 和所有   |
+|委派（工作或学校帐户） |  SecurityEvents.Read.All，SecurityEvents.ReadWrite.All   |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | securityevents.readwrite.all、securityevents.readwrite.all 和所有 |
+|应用程序 | SecurityEvents.Read.All，SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -39,7 +39,7 @@ GET /security/alerts/{id}
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | 持有者 {代码}。 必填。|
+| Authorization  | Bearer {code}。 必需。|
 
 ## <a name="request-body"></a>请求正文
 
@@ -47,7 +47,7 @@ GET /security/alerts/{id}
 
 ## <a name="response"></a>响应
 
-如果成功, 此方法在响应`200 OK`正文中返回响应代码和**alert**对象。 如果从提供程序返回的状态代码或者提供程序超时, 则响应将是一个`206 Partial Content`状态代码, 提供程序的响应在警告标头中。 有关详细信息, 请参阅[Microsoft Graph 安全 API 错误响应](../resources/security-error-codes.md)。
+如果成功, 此方法在响应`200 OK`正文中返回响应代码和**alert**对象。 如果从提供程序返回了 2xx 或 404 以外的状态代码，或者提供程序超时，则响应将是 `206 Partial Content` 状态代码，提供程序的响应位于警告标头中。 有关详细信息，请参阅 [Microsoft Graph 安全性 API 错误响应](../resources/security-error-codes.md)。
 
 ## <a name="example"></a>示例
 
@@ -246,6 +246,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_alert-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_alert-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -256,6 +266,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

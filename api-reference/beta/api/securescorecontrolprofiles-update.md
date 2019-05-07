@@ -2,12 +2,12 @@
 title: 更新 secureScoreControlProfiles
 description: 在任何集成的解决方案中更新可编辑的 secureScoreControlProfiles 属性以更改各种属性, 如 "分配给/分配" 或 "tenantNote"。
 localization_priority: Normal
-ms.openlocfilehash: ee184e921301fc8e2ce9e86122e5f01c335fa540
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8808a73536a67d8ed4ed50f0e5dc8c05707130fa
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33331466"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638779"
 ---
 # <a name="update-securescorecontrolprofiles"></a>更新 secureScoreControlProfiles
 
@@ -21,9 +21,9 @@ ms.locfileid: "33331466"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） |   securityevents.readwrite.all。  |
+|委派（工作或学校帐户） |   Securityevents.readwrite.all。  |
 |委派（个人 Microsoft 帐户） |  不支持。  |
-|应用程序 | securityevents.readwrite.all。 |
+|应用程序 | Securityevents.readwrite.all。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -37,7 +37,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | 名称       | 说明|
 |:-----------|:-----------|
-| Authorization  | 持有者 {代码}。 必需。|
+| Authorization  | Bearer {code}。 必需。|
 |Prefer | 返回 = 表示。 |
 
 ## <a name="request-body"></a>请求正文
@@ -47,8 +47,8 @@ PATCH /security/secureScoreControlProfiles/{id}
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |assignedTo|String|为会审、实现或修正分配的控制分析员的名称。|
-|tenantNote|String|控件上的分析师注释 (针对客户控制管理)。|
-|controlStateUpdates| String|控件上的分析导向设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
+|tenantNote|字符串|控件上的分析师注释 (针对客户控制管理)。|
+|controlStateUpdates| 字符串|控件上的分析导向设置。 可取值为：`ignore`、`thirdParty`、`reviewed`。|
 
 
 ## <a name="response"></a>响应
@@ -88,6 +88,16 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 
@@ -99,6 +109,9 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

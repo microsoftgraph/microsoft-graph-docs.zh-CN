@@ -4,12 +4,12 @@ description: 读取附加到事件、邮件、Outlook 任务或帖子的附件�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: d1274e4332fdbc6aa022d700884f59e58f44e68a
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a33941a1eca442a689b3d61a1d270198c394d09e
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33322626"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33636462"
 ---
 # <a name="get-attachment"></a>获取附件
 
@@ -36,7 +36,7 @@ ms.locfileid: "33322626"
 |:-----------|:----------|
 | **联系人** | [vCard](http://www.faqs.org/rfcs/rfc2426.html)MIME 格式。 请参阅[示例](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message)。 |
 | **event** | iCal MIME 格式。 请参阅[示例](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message)。 |
-| **邮件** | MIME 格式。 请参阅[示例](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message)。 |
+| **message** | MIME 格式。 请参阅[示例](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message)。 |
 
 尝试获取引用附件`$value`的尝试返回 HTTP 405。
 
@@ -44,10 +44,10 @@ ms.locfileid: "33322626"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-* 如果访问邮件中的附件: Mail. Read
+* 如果访问邮件中的附件: Mail。 Read
 * 如果访问事件中的附件: "日历"。阅读
-* 如果访问 Outlook 任务中的附件: tasks. Read
-* 如果访问组帖子中的附件: group. All
+* 如果访问 Outlook 任务中的附件: Tasks。 Read
+* 如果访问组帖子中的附件: Group。 All
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All
@@ -194,6 +194,16 @@ Content-type: application/json
     "contentBytes": "base64,UEsDBBQABgAIAAAAIQ4AAAAA"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_file_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_file_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-get-the-properties-of-an-item-attachment"></a>示例 2: 获取项目附件的属性
 
@@ -234,6 +244,16 @@ Content-type: application/json
   "isInline":false
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_item_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_item_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>示例 3: 展开和获取附加到邮件的项目的属性
 #### <a name="request"></a>请求
@@ -328,6 +348,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_and_expand_item_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_and_expand_item_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>示例 4: 获取引用附件的属性
 
@@ -374,6 +404,16 @@ Content-type: application/json
   "isFolder": true
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_reference_attachment-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_reference_attachment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>示例 5: 获取邮件的文件附件的原始内容
@@ -540,7 +580,7 @@ END:VCALENDAR
 
 #### <a name="request"></a>请求
 
-下面的示例展示了获取已附加到邮件的会议邀请 ( [eventMessage](../resources/eventmessage.md)类型) 的原始内容的请求。 **eventMessage**实体基于**邮件**类型。
+下面的示例展示了获取已附加到邮件的会议邀请 ( [eventMessage](../resources/eventmessage.md)类型) 的原始内容的请求。 **EventMessage**实体基于**邮件**类型。
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",
@@ -620,6 +660,15 @@ QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

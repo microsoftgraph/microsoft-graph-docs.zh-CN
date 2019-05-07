@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 列出 SharePoint 网站的子网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bb88d261fa1802157a6621370af9a66eb8b2b5b5
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: bdbe1b70be15cac8acfd55a4735acd6185408545
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335897"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638545"
 ---
 # <a name="enumerate-subsites"></a>枚举子网站
 
@@ -67,6 +67,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-subsites-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-subsites-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -75,6 +85,9 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites/List subsites",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

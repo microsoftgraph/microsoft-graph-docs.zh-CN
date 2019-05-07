@@ -4,12 +4,12 @@ description: 将分区复制到特定笔记本。
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: cf621b42f958eaae5317084cac90abde1e2a8069
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 897a157c636f8aba342c87cd8773b28b56a099f5
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33336105"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638891"
 ---
 # <a name="section-copytonotebook"></a>部分: copyToNotebook
 
@@ -46,11 +46,11 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
-|siteId|String|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
+|siteCollectionId|字符串|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
+|siteId|字符串|要复制到的 SharePoint 网站的 id。 仅在复制到 Office 365 团队网站时使用。|
 |groupId|String|要复制到的组的 id。 仅在复制到 Office 365 组时使用。|
 |id|String|必需。 目标笔记本的 id。 |
-|renameAs|String|副本的名称。 默认值为现有项目的名称。 |
+|renameAs|字符串|副本的名称。 默认值为现有项目的名称。 |
 
 ## <a name="response"></a>响应
 
@@ -86,6 +86,16 @@ Content-length: 84
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/section_copytonotebook-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/section_copytonotebook-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -96,6 +106,9 @@ HTTP/1.1 202 Accepted
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/section-copytonotebook.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/section-copytonotebook.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

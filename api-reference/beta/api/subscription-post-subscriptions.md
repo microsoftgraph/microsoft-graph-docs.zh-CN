@@ -3,12 +3,12 @@ title: 创建订阅
 description: 订阅侦听器应用程序, 以在 Microsoft Graph 资源的数据发生更改时接收通知。
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: fae31505790f7ec06f40412fa772548844f236c8
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: a781d3654a54c8514b243f4a1f15772c5dd63fe8
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335701"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638573"
 ---
 # <a name="create-subscription"></a>创建订阅
 
@@ -127,6 +127,16 @@ Content-length: 252
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_subscription_from_subscriptions-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_subscription_from_subscriptions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="notification-endpoint-validation"></a>通知终结点验证
 
@@ -141,6 +151,9 @@ Content-length: 252
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-post-subscriptions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/subscription-post-subscriptions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
