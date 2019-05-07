@@ -4,26 +4,26 @@ description: 获取表示范围整列的对象。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b9919a8f2a94fdf892d7e4f4342697daee455ab4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d695786b0c9bd4474086ac0a0055f898c56894e9
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558312"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33607459"
 ---
-# <a name="range-entirecolumn"></a><span data-ttu-id="df643-103">Range:EntireColumn</span><span class="sxs-lookup"><span data-stu-id="df643-103">Range: EntireColumn</span></span>
+# <a name="range-entirecolumn"></a><span data-ttu-id="8537e-103">Range:EntireColumn</span><span class="sxs-lookup"><span data-stu-id="8537e-103">Range: EntireColumn</span></span>
 
-<span data-ttu-id="df643-104">获取表示范围整列的对象。</span><span class="sxs-lookup"><span data-stu-id="df643-104">Gets an object that represents the entire column of the range.</span></span>
-## <a name="permissions"></a><span data-ttu-id="df643-105">权限</span><span class="sxs-lookup"><span data-stu-id="df643-105">Permissions</span></span>
-<span data-ttu-id="df643-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="df643-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8537e-104">获取表示范围整列的对象。</span><span class="sxs-lookup"><span data-stu-id="8537e-104">Gets an object that represents the entire column of the range.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8537e-105">权限</span><span class="sxs-lookup"><span data-stu-id="8537e-105">Permissions</span></span>
+<span data-ttu-id="8537e-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="8537e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="df643-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="df643-108">Permission type</span></span>      | <span data-ttu-id="df643-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="df643-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8537e-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="8537e-108">Permission type</span></span>      | <span data-ttu-id="8537e-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="8537e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="df643-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="df643-110">Delegated (work or school account)</span></span> | <span data-ttu-id="df643-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="df643-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="df643-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="df643-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="df643-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="df643-113">Not supported.</span></span>    |
-|<span data-ttu-id="df643-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="df643-114">Application</span></span> | <span data-ttu-id="df643-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="df643-115">Not supported.</span></span> |
+|<span data-ttu-id="8537e-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="8537e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8537e-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8537e-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="8537e-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="8537e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8537e-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="8537e-113">Not supported.</span></span>    |
+|<span data-ttu-id="8537e-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="8537e-114">Application</span></span> | <span data-ttu-id="8537e-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="8537e-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="df643-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="df643-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8537e-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="8537e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/entireColumn
@@ -31,22 +31,22 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/entireColumn
 GET /workbook/tables/{id|name}/columns/{id|name}/range/entireColumn
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="df643-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="df643-117">Request headers</span></span>
-| <span data-ttu-id="df643-118">名称</span><span class="sxs-lookup"><span data-stu-id="df643-118">Name</span></span>       | <span data-ttu-id="df643-119">说明</span><span class="sxs-lookup"><span data-stu-id="df643-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8537e-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="8537e-117">Request headers</span></span>
+| <span data-ttu-id="8537e-118">名称</span><span class="sxs-lookup"><span data-stu-id="8537e-118">Name</span></span>       | <span data-ttu-id="8537e-119">说明</span><span class="sxs-lookup"><span data-stu-id="8537e-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="df643-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="df643-120">Authorization</span></span>  | <span data-ttu-id="df643-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="df643-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="df643-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="df643-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="df643-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="df643-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="8537e-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="8537e-120">Authorization</span></span>  | <span data-ttu-id="8537e-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="8537e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8537e-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="8537e-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="8537e-p103">确定是否保留更改的工作簿会话 ID。可选。</span><span class="sxs-lookup"><span data-stu-id="8537e-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="df643-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="df643-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8537e-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="8537e-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="df643-127">响应</span><span class="sxs-lookup"><span data-stu-id="df643-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8537e-127">响应</span><span class="sxs-lookup"><span data-stu-id="8537e-127">Response</span></span>
 
-<span data-ttu-id="df643-128">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="df643-128">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="8537e-128">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [Range](../resources/range.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="8537e-128">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="df643-129">示例</span><span class="sxs-lookup"><span data-stu-id="df643-129">Example</span></span>
-<span data-ttu-id="df643-130">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="df643-130">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="df643-131">请求</span><span class="sxs-lookup"><span data-stu-id="df643-131">Request</span></span>
-<span data-ttu-id="df643-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="df643-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8537e-129">示例</span><span class="sxs-lookup"><span data-stu-id="8537e-129">Example</span></span>
+<span data-ttu-id="8537e-130">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="8537e-130">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="8537e-131">请求</span><span class="sxs-lookup"><span data-stu-id="8537e-131">Request</span></span>
+<span data-ttu-id="8537e-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="8537e-132">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -56,8 +56,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/entireColumn
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/entireColumn
 ```
 
-##### <a name="response"></a><span data-ttu-id="df643-133">响应</span><span class="sxs-lookup"><span data-stu-id="df643-133">Response</span></span>
-<span data-ttu-id="df643-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="df643-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8537e-133">响应</span><span class="sxs-lookup"><span data-stu-id="8537e-133">Response</span></span>
+<span data-ttu-id="8537e-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="8537e-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -77,6 +77,16 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="8537e-137">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="8537e-137">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="8537e-138">语言</span><span class="sxs-lookup"><span data-stu-id="8537e-138">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/range_entirecolumn-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8537e-139">Javascript</span><span class="sxs-lookup"><span data-stu-id="8537e-139">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/range_entirecolumn-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -85,5 +95,9 @@ Content-length: 169
   "description": "Range: EntireColumn",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/range-entirecolumn.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/range-entirecolumn.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
