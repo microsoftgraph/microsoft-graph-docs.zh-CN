@@ -4,75 +4,75 @@ description: 更新用户邮箱的一个或多个设置。 这包括自动答复
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 78547e19335a65410e201b872e9514abf4656096
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7e206babe87154d9d5456f057fb4adcb711322ec
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573576"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601717"
 ---
-# <a name="update-user-mailbox-settings"></a><span data-ttu-id="a50aa-104">获取用户的邮箱设置</span><span class="sxs-lookup"><span data-stu-id="a50aa-104">Update user mailbox settings</span></span>
+# <a name="update-user-mailbox-settings"></a><span data-ttu-id="dab02-104">获取用户的邮箱设置</span><span class="sxs-lookup"><span data-stu-id="dab02-104">Update user mailbox settings</span></span>
 
-<span data-ttu-id="a50aa-p102">更新用户邮箱的一个或多个设置。这包括[自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）、[区域设置](../resources/localeinfo.md)（语言和国家/地区）、时区和[工作时间](../resources/workinghours.md)的设置。</span><span class="sxs-lookup"><span data-stu-id="a50aa-p102">Update one or more settings for the user's mailbox. This includes settings for [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email), [locale](../resources/localeinfo.md) (language and country/region), time zone, and [working hours](../resources/workinghours.md).</span></span>
+<span data-ttu-id="dab02-p102">更新用户邮箱的一个或多个设置。这包括[自动答复](../resources/automaticrepliessetting.md)（收到发件人的电子邮件时自动通知发件人）、[区域设置](../resources/localeinfo.md)（语言和国家/地区）、时区和[工作时间](../resources/workinghours.md)的设置。</span><span class="sxs-lookup"><span data-stu-id="dab02-p102">Update one or more settings for the user's mailbox. This includes settings for [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email), [locale](../resources/localeinfo.md) (language and country/region), time zone, and [working hours](../resources/workinghours.md).</span></span>
 
-<span data-ttu-id="a50aa-107">可以作为 [mailboxSettings](../resources/mailboxsettings.md) 的一部分启用、配置或禁用其中的一个或多个设置。</span><span class="sxs-lookup"><span data-stu-id="a50aa-107">You can enable, configure, or disable one or more of these settings as part of [mailboxSettings](../resources/mailboxsettings.md).</span></span>
+<span data-ttu-id="dab02-107">可以作为 [mailboxSettings](../resources/mailboxsettings.md) 的一部分启用、配置或禁用其中的一个或多个设置。</span><span class="sxs-lookup"><span data-stu-id="dab02-107">You can enable, configure, or disable one or more of these settings as part of [mailboxSettings](../resources/mailboxsettings.md).</span></span>
 
-<span data-ttu-id="a50aa-108">**注意**：不能创建或删除任何邮箱设置。</span><span class="sxs-lookup"><span data-stu-id="a50aa-108">**Note** You cannot create or delete any mailbox settings.</span></span>
+<span data-ttu-id="dab02-108">**注意**：不能创建或删除任何邮箱设置。</span><span class="sxs-lookup"><span data-stu-id="dab02-108">**Note** You cannot create or delete any mailbox settings.</span></span>
 
-<span data-ttu-id="a50aa-109">更新用户的首选时区时，可以指定 Windows 时区或 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（亦称为“Olson 时区”）。</span><span class="sxs-lookup"><span data-stu-id="a50aa-109">When you update the preferred time zone for a user, you can specify it in the Windows or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span>
+<span data-ttu-id="dab02-109">更新用户的首选时区时，可以指定 Windows 时区或 [Internet 号码分配局 (IANA) 时区](https://www.iana.org/time-zones)（亦称为“Olson 时区”）。</span><span class="sxs-lookup"><span data-stu-id="dab02-109">When you update the preferred time zone for a user, you can specify it in the Windows or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a50aa-110">权限</span><span class="sxs-lookup"><span data-stu-id="a50aa-110">Permissions</span></span>
-<span data-ttu-id="a50aa-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a50aa-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="dab02-110">权限</span><span class="sxs-lookup"><span data-stu-id="dab02-110">Permissions</span></span>
+<span data-ttu-id="dab02-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dab02-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a50aa-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="a50aa-113">Permission type</span></span>      | <span data-ttu-id="a50aa-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="a50aa-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dab02-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="dab02-113">Permission type</span></span>      | <span data-ttu-id="dab02-114">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dab02-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a50aa-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a50aa-115">Delegated (work or school account)</span></span> | <span data-ttu-id="a50aa-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a50aa-116">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="a50aa-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a50aa-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a50aa-118">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a50aa-118">MailboxSettings.ReadWrite</span></span>    |
-|<span data-ttu-id="a50aa-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="a50aa-119">Application</span></span> | <span data-ttu-id="a50aa-120">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a50aa-120">MailboxSettings.ReadWrite</span></span> |
+|<span data-ttu-id="dab02-115">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dab02-115">Delegated (work or school account)</span></span> | <span data-ttu-id="dab02-116">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dab02-116">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="dab02-117">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dab02-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dab02-118">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dab02-118">MailboxSettings.ReadWrite</span></span>    |
+|<span data-ttu-id="dab02-119">应用程序</span><span class="sxs-lookup"><span data-stu-id="dab02-119">Application</span></span> | <span data-ttu-id="dab02-120">MailboxSettings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="dab02-120">MailboxSettings.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a50aa-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a50aa-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dab02-121">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dab02-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/mailboxSettings
 PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a50aa-122">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="a50aa-122">Optional query parameters</span></span>
-<span data-ttu-id="a50aa-123">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="a50aa-123">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="a50aa-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="a50aa-124">Request headers</span></span>
-| <span data-ttu-id="a50aa-125">名称</span><span class="sxs-lookup"><span data-stu-id="a50aa-125">Name</span></span>       | <span data-ttu-id="a50aa-126">类型</span><span class="sxs-lookup"><span data-stu-id="a50aa-126">Type</span></span> | <span data-ttu-id="a50aa-127">说明</span><span class="sxs-lookup"><span data-stu-id="a50aa-127">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="dab02-122">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="dab02-122">Optional query parameters</span></span>
+<span data-ttu-id="dab02-123">此方法支持 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="dab02-123">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="dab02-124">请求标头</span><span class="sxs-lookup"><span data-stu-id="dab02-124">Request headers</span></span>
+| <span data-ttu-id="dab02-125">名称</span><span class="sxs-lookup"><span data-stu-id="dab02-125">Name</span></span>       | <span data-ttu-id="dab02-126">类型</span><span class="sxs-lookup"><span data-stu-id="dab02-126">Type</span></span> | <span data-ttu-id="dab02-127">说明</span><span class="sxs-lookup"><span data-stu-id="dab02-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="a50aa-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="a50aa-128">Authorization</span></span>  | <span data-ttu-id="a50aa-129">string</span><span class="sxs-lookup"><span data-stu-id="a50aa-129">string</span></span>  | <span data-ttu-id="a50aa-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="a50aa-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="dab02-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="dab02-128">Authorization</span></span>  | <span data-ttu-id="dab02-129">string</span><span class="sxs-lookup"><span data-stu-id="dab02-129">string</span></span>  | <span data-ttu-id="dab02-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dab02-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a50aa-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="a50aa-132">Request body</span></span>
-<span data-ttu-id="a50aa-p105">在请求正文中，提供应更新的相关属性的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。以下是可写/可更新的属性：</span><span class="sxs-lookup"><span data-stu-id="a50aa-p105">In the request body, supply the values for the relevant properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed. The following are the writable/updatable properties:</span></span>
+## <a name="request-body"></a><span data-ttu-id="dab02-132">请求正文</span><span class="sxs-lookup"><span data-stu-id="dab02-132">Request body</span></span>
+<span data-ttu-id="dab02-p105">在请求正文中，提供应更新的相关属性的值。请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。为了获得最佳性能，不应包括尚未更改的现有值。以下是可写/可更新的属性：</span><span class="sxs-lookup"><span data-stu-id="dab02-p105">In the request body, supply the values for the relevant properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed. The following are the writable/updatable properties:</span></span>
 
-| <span data-ttu-id="a50aa-137">属性</span><span class="sxs-lookup"><span data-stu-id="a50aa-137">Property</span></span>     | <span data-ttu-id="a50aa-138">类型</span><span class="sxs-lookup"><span data-stu-id="a50aa-138">Type</span></span>   |<span data-ttu-id="a50aa-139">说明</span><span class="sxs-lookup"><span data-stu-id="a50aa-139">Description</span></span>|
+| <span data-ttu-id="dab02-137">属性</span><span class="sxs-lookup"><span data-stu-id="dab02-137">Property</span></span>     | <span data-ttu-id="dab02-138">类型</span><span class="sxs-lookup"><span data-stu-id="dab02-138">Type</span></span>   |<span data-ttu-id="dab02-139">说明</span><span class="sxs-lookup"><span data-stu-id="dab02-139">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a50aa-140">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="a50aa-140">automaticRepliesSetting</span></span>|[<span data-ttu-id="a50aa-141">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="a50aa-141">automaticRepliesSetting</span></span>](../resources/automaticrepliessetting.md)|<span data-ttu-id="a50aa-142">自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。</span><span class="sxs-lookup"><span data-stu-id="a50aa-142">Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.</span></span> <span data-ttu-id="a50aa-143">只能将此类通知设置为将来日期范围。</span><span class="sxs-lookup"><span data-stu-id="a50aa-143">You can set such notifications for only a future date range.</span></span>|
-|<span data-ttu-id="a50aa-144">语言</span><span class="sxs-lookup"><span data-stu-id="a50aa-144">language</span></span>|[<span data-ttu-id="a50aa-145">localeInfo</span><span class="sxs-lookup"><span data-stu-id="a50aa-145">localeInfo</span></span>](../resources/localeinfo.md)|<span data-ttu-id="a50aa-146">用户的区域设置信息，包括首选语言和国家/地区。</span><span class="sxs-lookup"><span data-stu-id="a50aa-146">The locale information for the user, including the preferred language and country/region.</span></span>|
-|<span data-ttu-id="a50aa-147">timeZone</span><span class="sxs-lookup"><span data-stu-id="a50aa-147">timeZone</span></span>|<span data-ttu-id="a50aa-148">string</span><span class="sxs-lookup"><span data-stu-id="a50aa-148">string</span></span>|<span data-ttu-id="a50aa-149">用户邮箱的默认时区。</span><span class="sxs-lookup"><span data-stu-id="a50aa-149">The default time zone for the user's mailbox.</span></span>|
-|<span data-ttu-id="a50aa-150">workingHours</span><span class="sxs-lookup"><span data-stu-id="a50aa-150">workingHours</span></span>|[<span data-ttu-id="a50aa-151">workingHours</span><span class="sxs-lookup"><span data-stu-id="a50aa-151">workingHours</span></span>](../resources/workinghours.md)|<span data-ttu-id="a50aa-152">用户工作的小时数、一周的天数和时区。</span><span class="sxs-lookup"><span data-stu-id="a50aa-152">The hours, days of a week, and time zone that the user works.</span></span>|
+|<span data-ttu-id="dab02-140">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="dab02-140">automaticRepliesSetting</span></span>|[<span data-ttu-id="dab02-141">automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="dab02-141">automaticRepliesSetting</span></span>](../resources/automaticrepliessetting.md)|<span data-ttu-id="dab02-142">自动通知发件人有传入电子邮件（包含一封来自已登录用户的邮件）的配置设置。</span><span class="sxs-lookup"><span data-stu-id="dab02-142">Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.</span></span> <span data-ttu-id="dab02-143">只能将此类通知设置为将来日期范围。</span><span class="sxs-lookup"><span data-stu-id="dab02-143">You can set such notifications for only a future date range.</span></span>|
+|<span data-ttu-id="dab02-144">语言</span><span class="sxs-lookup"><span data-stu-id="dab02-144">language</span></span>|[<span data-ttu-id="dab02-145">localeInfo</span><span class="sxs-lookup"><span data-stu-id="dab02-145">localeInfo</span></span>](../resources/localeinfo.md)|<span data-ttu-id="dab02-146">用户的区域设置信息，包括首选语言和国家/地区。</span><span class="sxs-lookup"><span data-stu-id="dab02-146">The locale information for the user, including the preferred language and country/region.</span></span>|
+|<span data-ttu-id="dab02-147">timeZone</span><span class="sxs-lookup"><span data-stu-id="dab02-147">timeZone</span></span>|<span data-ttu-id="dab02-148">string</span><span class="sxs-lookup"><span data-stu-id="dab02-148">string</span></span>|<span data-ttu-id="dab02-149">用户邮箱的默认时区。</span><span class="sxs-lookup"><span data-stu-id="dab02-149">The default time zone for the user's mailbox.</span></span>|
+|<span data-ttu-id="dab02-150">workingHours</span><span class="sxs-lookup"><span data-stu-id="dab02-150">workingHours</span></span>|[<span data-ttu-id="dab02-151">workingHours</span><span class="sxs-lookup"><span data-stu-id="dab02-151">workingHours</span></span>](../resources/workinghours.md)|<span data-ttu-id="dab02-152">用户工作的小时数、一周的天数和时区。</span><span class="sxs-lookup"><span data-stu-id="dab02-152">The hours, days of a week, and time zone that the user works.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a50aa-153">响应</span><span class="sxs-lookup"><span data-stu-id="a50aa-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dab02-153">响应</span><span class="sxs-lookup"><span data-stu-id="dab02-153">Response</span></span>
 
-<span data-ttu-id="a50aa-154">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailboxSettings](../resources/mailboxsettings.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="a50aa-154">If successful, this method returns a `200 OK` response code and [mailboxSettings](../resources/mailboxsettings.md) object in the response body.</span></span>
+<span data-ttu-id="dab02-154">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [mailboxSettings](../resources/mailboxsettings.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="dab02-154">If successful, this method returns a `200 OK` response code and [mailboxSettings](../resources/mailboxsettings.md) object in the response body.</span></span>
 
 
-## <a name="errors"></a><span data-ttu-id="a50aa-155">错误</span><span class="sxs-lookup"><span data-stu-id="a50aa-155">Errors</span></span>
+## <a name="errors"></a><span data-ttu-id="dab02-155">错误</span><span class="sxs-lookup"><span data-stu-id="dab02-155">Errors</span></span>
 
-<span data-ttu-id="a50aa-156">将工作时间设置为不适当的值可能会返回以下错误。</span><span class="sxs-lookup"><span data-stu-id="a50aa-156">Setting working hours with inappropriate values may return the following errors.</span></span>
+<span data-ttu-id="dab02-156">将工作时间设置为不适当的值可能会返回以下错误。</span><span class="sxs-lookup"><span data-stu-id="dab02-156">Setting working hours with inappropriate values may return the following errors.</span></span>
 
-| <span data-ttu-id="a50aa-157">应用场景</span><span class="sxs-lookup"><span data-stu-id="a50aa-157">Scenario</span></span>   | <span data-ttu-id="a50aa-158">HTTP 状态代码</span><span class="sxs-lookup"><span data-stu-id="a50aa-158">HTTP status code</span></span> | <span data-ttu-id="a50aa-159">错误代码</span><span class="sxs-lookup"><span data-stu-id="a50aa-159">Error code</span></span> | <span data-ttu-id="a50aa-160">错误消息</span><span class="sxs-lookup"><span data-stu-id="a50aa-160">Error message</span></span> |
+| <span data-ttu-id="dab02-157">应用场景</span><span class="sxs-lookup"><span data-stu-id="dab02-157">Scenario</span></span>   | <span data-ttu-id="dab02-158">HTTP 状态代码</span><span class="sxs-lookup"><span data-stu-id="dab02-158">HTTP status code</span></span> | <span data-ttu-id="dab02-159">错误代码</span><span class="sxs-lookup"><span data-stu-id="dab02-159">Error code</span></span> | <span data-ttu-id="dab02-160">错误消息</span><span class="sxs-lookup"><span data-stu-id="dab02-160">Error message</span></span> |
 |:-----------|:------|:----------|:----------|
-| <span data-ttu-id="a50aa-161">**startTime** 或 **endTime** 无效</span><span class="sxs-lookup"><span data-stu-id="a50aa-161">Invalid **startTime** or **endTime**</span></span> | <span data-ttu-id="a50aa-162">400</span><span class="sxs-lookup"><span data-stu-id="a50aa-162">400</span></span> | <span data-ttu-id="a50aa-163">RequestBodyRead</span><span class="sxs-lookup"><span data-stu-id="a50aa-163">RequestBodyRead</span></span> | <span data-ttu-id="a50aa-164">无法将文本“08”转换为预期类型“Edm.TimeOfDay”。</span><span class="sxs-lookup"><span data-stu-id="a50aa-164">Cannot convert the literal '08' to the expected type 'Edm.TimeOfDay'.</span></span>|
-| <span data-ttu-id="a50aa-165">开始时间大于结束时间</span><span class="sxs-lookup"><span data-stu-id="a50aa-165">Start time is greater than end time</span></span> | <span data-ttu-id="a50aa-166">400</span><span class="sxs-lookup"><span data-stu-id="a50aa-166">400</span></span> | <span data-ttu-id="a50aa-167">ErrorInvalidTimeSettings</span><span class="sxs-lookup"><span data-stu-id="a50aa-167">ErrorInvalidTimeSettings</span></span> | <span data-ttu-id="a50aa-168">开始时间应早于结束时间。</span><span class="sxs-lookup"><span data-stu-id="a50aa-168">Start Time should occur before End Time.</span></span> |
-| <span data-ttu-id="a50aa-169">**daysOfWeek** 中的天数无效</span><span class="sxs-lookup"><span data-stu-id="a50aa-169">Invalid day in **daysOfWeek**</span></span> | <span data-ttu-id="a50aa-170">400</span><span class="sxs-lookup"><span data-stu-id="a50aa-170">400</span></span> | <span data-ttu-id="a50aa-171">InvalidArguments</span><span class="sxs-lookup"><span data-stu-id="a50aa-171">InvalidArguments</span></span> | <span data-ttu-id="a50aa-172">未找到请求值“RandomDay”。</span><span class="sxs-lookup"><span data-stu-id="a50aa-172">Requested value 'RandomDay' was not found.</span></span>|
-| <span data-ttu-id="a50aa-173">**timeZone** 无效</span><span class="sxs-lookup"><span data-stu-id="a50aa-173">Invalid **timeZone**</span></span> | <span data-ttu-id="a50aa-174">400</span><span class="sxs-lookup"><span data-stu-id="a50aa-174">400</span></span> | <span data-ttu-id="a50aa-175">InvalidTimeZone</span><span class="sxs-lookup"><span data-stu-id="a50aa-175">InvalidTimeZone</span></span> | <span data-ttu-id="a50aa-176">提供的时区设置无效。</span><span class="sxs-lookup"><span data-stu-id="a50aa-176">Time Zone settings provided are invalid.</span></span>|
+| <span data-ttu-id="dab02-161">**startTime** 或 **endTime** 无效</span><span class="sxs-lookup"><span data-stu-id="dab02-161">Invalid **startTime** or **endTime**</span></span> | <span data-ttu-id="dab02-162">400</span><span class="sxs-lookup"><span data-stu-id="dab02-162">400</span></span> | <span data-ttu-id="dab02-163">RequestBodyRead</span><span class="sxs-lookup"><span data-stu-id="dab02-163">RequestBodyRead</span></span> | <span data-ttu-id="dab02-164">无法将文本“08”转换为预期类型“Edm.TimeOfDay”。</span><span class="sxs-lookup"><span data-stu-id="dab02-164">Cannot convert the literal '08' to the expected type 'Edm.TimeOfDay'.</span></span>|
+| <span data-ttu-id="dab02-165">开始时间大于结束时间</span><span class="sxs-lookup"><span data-stu-id="dab02-165">Start time is greater than end time</span></span> | <span data-ttu-id="dab02-166">400</span><span class="sxs-lookup"><span data-stu-id="dab02-166">400</span></span> | <span data-ttu-id="dab02-167">ErrorInvalidTimeSettings</span><span class="sxs-lookup"><span data-stu-id="dab02-167">ErrorInvalidTimeSettings</span></span> | <span data-ttu-id="dab02-168">开始时间应早于结束时间。</span><span class="sxs-lookup"><span data-stu-id="dab02-168">Start Time should occur before End Time.</span></span> |
+| <span data-ttu-id="dab02-169">**daysOfWeek** 中的天数无效</span><span class="sxs-lookup"><span data-stu-id="dab02-169">Invalid day in **daysOfWeek**</span></span> | <span data-ttu-id="dab02-170">400</span><span class="sxs-lookup"><span data-stu-id="dab02-170">400</span></span> | <span data-ttu-id="dab02-171">InvalidArguments</span><span class="sxs-lookup"><span data-stu-id="dab02-171">InvalidArguments</span></span> | <span data-ttu-id="dab02-172">未找到请求值“RandomDay”。</span><span class="sxs-lookup"><span data-stu-id="dab02-172">Requested value 'RandomDay' was not found.</span></span>|
+| <span data-ttu-id="dab02-173">**timeZone** 无效</span><span class="sxs-lookup"><span data-stu-id="dab02-173">Invalid **timeZone**</span></span> | <span data-ttu-id="dab02-174">400</span><span class="sxs-lookup"><span data-stu-id="dab02-174">400</span></span> | <span data-ttu-id="dab02-175">InvalidTimeZone</span><span class="sxs-lookup"><span data-stu-id="dab02-175">InvalidTimeZone</span></span> | <span data-ttu-id="dab02-176">提供的时区设置无效。</span><span class="sxs-lookup"><span data-stu-id="dab02-176">Time Zone settings provided are invalid.</span></span>|
 
 
-## <a name="example"></a><span data-ttu-id="a50aa-177">示例</span><span class="sxs-lookup"><span data-stu-id="a50aa-177">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a50aa-178">请求</span><span class="sxs-lookup"><span data-stu-id="a50aa-178">Request</span></span>
-<span data-ttu-id="a50aa-179">第一个示例通过设置 **automaticRepliesSetting** 属性的以下属性来启用对日期范围的自动答复：**status**、**scheduledStartDateTime** 和 **scheduledEndDateTime**。</span><span class="sxs-lookup"><span data-stu-id="a50aa-179">The first example enables automatic replies for a date range, by setting the following properties of the **automaticRepliesSetting** property: **status**, **scheduledStartDateTime** and **scheduledEndDateTime**.</span></span>
+## <a name="example"></a><span data-ttu-id="dab02-177">示例</span><span class="sxs-lookup"><span data-stu-id="dab02-177">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="dab02-178">请求</span><span class="sxs-lookup"><span data-stu-id="dab02-178">Request</span></span>
+<span data-ttu-id="dab02-179">第一个示例通过设置 **automaticRepliesSetting** 属性的以下属性来启用对日期范围的自动答复：**status**、**scheduledStartDateTime** 和 **scheduledEndDateTime**。</span><span class="sxs-lookup"><span data-stu-id="dab02-179">The first example enables automatic replies for a date range, by setting the following properties of the **automaticRepliesSetting** property: **status**, **scheduledStartDateTime** and **scheduledEndDateTime**.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -97,8 +97,8 @@ Content-Type: application/json
     }
 }
 ```
-##### <a name="response"></a><span data-ttu-id="a50aa-180">响应</span><span class="sxs-lookup"><span data-stu-id="a50aa-180">Response</span></span>
-<span data-ttu-id="a50aa-181">该响应包括自动答复的更新设置。</span><span class="sxs-lookup"><span data-stu-id="a50aa-181">The response includes the updated settings for automatic replies.</span></span> <span data-ttu-id="a50aa-182">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="a50aa-182">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="a50aa-183">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="a50aa-183">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="dab02-180">响应</span><span class="sxs-lookup"><span data-stu-id="dab02-180">Response</span></span>
+<span data-ttu-id="dab02-181">该响应包括自动答复的更新设置。</span><span class="sxs-lookup"><span data-stu-id="dab02-181">The response includes the updated settings for automatic replies.</span></span> <span data-ttu-id="dab02-182">注意：为简洁起见，可能会截断此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="dab02-182">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="dab02-183">将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="dab02-183">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,10 +126,20 @@ Content-type: application/json
     }
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="dab02-184">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="dab02-184">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="dab02-185">语言</span><span class="sxs-lookup"><span data-stu-id="dab02-185">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_mailboxsettings-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="dab02-186">Javascript</span><span class="sxs-lookup"><span data-stu-id="dab02-186">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_mailboxsettings-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-##### <a name="request-2"></a><span data-ttu-id="a50aa-184">请求 2</span><span class="sxs-lookup"><span data-stu-id="a50aa-184">Request 2</span></span>
-<span data-ttu-id="a50aa-185">第二个示例通过将 **timeZone** 属性设置为[自定义时区](../resources/customtimezone.md)，为登录用户的工作时间自定义时区。</span><span class="sxs-lookup"><span data-stu-id="a50aa-185">The second example customizes the time zone for the working hours of the signed-in user, by setting the **timeZone** property to a [custom time zone](../resources/customtimezone.md).</span></span>
+##### <a name="request-2"></a><span data-ttu-id="dab02-187">请求 2</span><span class="sxs-lookup"><span data-stu-id="dab02-187">Request 2</span></span>
+<span data-ttu-id="dab02-188">第二个示例通过将 **timeZone** 属性设置为[自定义时区](../resources/customtimezone.md)，为登录用户的工作时间自定义时区。</span><span class="sxs-lookup"><span data-stu-id="dab02-188">The second example customizes the time zone for the working hours of the signed-in user, by setting the **timeZone** property to a [custom time zone](../resources/customtimezone.md).</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -173,8 +183,8 @@ Content-Type: application/json
   }
 } 
 ```
-##### <a name="response-2"></a><span data-ttu-id="a50aa-186">响应 2</span><span class="sxs-lookup"><span data-stu-id="a50aa-186">Response 2</span></span>
-<span data-ttu-id="a50aa-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a50aa-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="dab02-189">响应 2</span><span class="sxs-lookup"><span data-stu-id="dab02-189">Response 2</span></span>
+<span data-ttu-id="dab02-p108">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="dab02-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "update_mailboxsettings_2",
@@ -230,5 +240,9 @@ Content-type: application/json
   "description": "Update mailbox settings",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-update-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #errors (score: 5)",
+    "Error: /api-reference/v1.0/api/user-update-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

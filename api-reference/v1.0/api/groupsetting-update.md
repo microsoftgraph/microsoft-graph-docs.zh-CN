@@ -4,56 +4,56 @@ description: 更新特定组设置对象的属性。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1ebea83f26bd3fcf54e530e80173c830fbde7ba8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4bb0cca83b738caf1579535f2e3cb721f5b0305d
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32577761"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613306"
 ---
-# <a name="update-a-group-setting"></a><span data-ttu-id="aa59f-103">更新组设置</span><span class="sxs-lookup"><span data-stu-id="aa59f-103">Update a group setting</span></span>
+# <a name="update-a-group-setting"></a><span data-ttu-id="33175-103">更新组设置</span><span class="sxs-lookup"><span data-stu-id="33175-103">Update a group setting</span></span>
 
-<span data-ttu-id="aa59f-104">更新特定组设置对象的属性。</span><span class="sxs-lookup"><span data-stu-id="aa59f-104">Update the properties of a specific group setting object.</span></span>
+<span data-ttu-id="33175-104">更新特定组设置对象的属性。</span><span class="sxs-lookup"><span data-stu-id="33175-104">Update the properties of a specific group setting object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="aa59f-105">权限</span><span class="sxs-lookup"><span data-stu-id="aa59f-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="33175-105">权限</span><span class="sxs-lookup"><span data-stu-id="33175-105">Permissions</span></span>
 
-<span data-ttu-id="aa59f-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="aa59f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="33175-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="33175-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="aa59f-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="aa59f-108">Permission type</span></span>      | <span data-ttu-id="aa59f-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="aa59f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="33175-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="33175-108">Permission type</span></span>      | <span data-ttu-id="33175-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="33175-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="aa59f-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="aa59f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="aa59f-111">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="aa59f-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="aa59f-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="aa59f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aa59f-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="aa59f-113">Not supported.</span></span>    |
-|<span data-ttu-id="aa59f-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="aa59f-114">Application</span></span> | <span data-ttu-id="aa59f-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="aa59f-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="33175-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="33175-110">Delegated (work or school account)</span></span> | <span data-ttu-id="33175-111">Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="33175-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="33175-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="33175-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="33175-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="33175-113">Not supported.</span></span>    |
+|<span data-ttu-id="33175-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="33175-114">Application</span></span> | <span data-ttu-id="33175-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="33175-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="aa59f-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="aa59f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="33175-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="33175-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="aa59f-117">更新租户范围或组特定设置。</span><span class="sxs-lookup"><span data-stu-id="aa59f-117">Update a tenant-wide or group specific setting.</span></span>
+<span data-ttu-id="33175-117">更新租户范围或组特定设置。</span><span class="sxs-lookup"><span data-stu-id="33175-117">Update a tenant-wide or group specific setting.</span></span>
 
 ```http
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="aa59f-118">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="aa59f-118">Optional request headers</span></span>
-| <span data-ttu-id="aa59f-119">名称</span><span class="sxs-lookup"><span data-stu-id="aa59f-119">Name</span></span> | <span data-ttu-id="aa59f-120">说明</span><span class="sxs-lookup"><span data-stu-id="aa59f-120">Description</span></span> |
+## <a name="optional-request-headers"></a><span data-ttu-id="33175-118">可选的请求标头</span><span class="sxs-lookup"><span data-stu-id="33175-118">Optional request headers</span></span>
+| <span data-ttu-id="33175-119">名称</span><span class="sxs-lookup"><span data-stu-id="33175-119">Name</span></span> | <span data-ttu-id="33175-120">说明</span><span class="sxs-lookup"><span data-stu-id="33175-120">Description</span></span> |
 |:-----------|:-----------|
-| <span data-ttu-id="aa59f-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="aa59f-121">Authorization</span></span>  | <span data-ttu-id="aa59f-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="aa59f-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="aa59f-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="aa59f-124">Content-Type</span></span>  | <span data-ttu-id="aa59f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="aa59f-125">application/json</span></span>  |
+| <span data-ttu-id="33175-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="33175-121">Authorization</span></span>  | <span data-ttu-id="33175-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="33175-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="33175-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="33175-124">Content-Type</span></span>  | <span data-ttu-id="33175-125">application/json</span><span class="sxs-lookup"><span data-stu-id="33175-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="aa59f-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="aa59f-126">Request body</span></span>
-<span data-ttu-id="aa59f-127">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="aa59f-127">In the request body, supply the values for relevant fields that should be updated.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="33175-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="33175-126">Request body</span></span>
+<span data-ttu-id="33175-127">在请求正文中，提供应更新的相关字段的值。</span><span class="sxs-lookup"><span data-stu-id="33175-127">In the request body, supply the values for relevant fields that should be updated.</span></span> 
 
-| <span data-ttu-id="aa59f-128">属性</span><span class="sxs-lookup"><span data-stu-id="aa59f-128">Property</span></span> | <span data-ttu-id="aa59f-129">类型</span><span class="sxs-lookup"><span data-stu-id="aa59f-129">Type</span></span> | <span data-ttu-id="aa59f-130">说明</span><span class="sxs-lookup"><span data-stu-id="aa59f-130">Description</span></span> |
+| <span data-ttu-id="33175-128">属性</span><span class="sxs-lookup"><span data-stu-id="33175-128">Property</span></span> | <span data-ttu-id="33175-129">类型</span><span class="sxs-lookup"><span data-stu-id="33175-129">Type</span></span> | <span data-ttu-id="33175-130">说明</span><span class="sxs-lookup"><span data-stu-id="33175-130">Description</span></span> |
 |:---------------|:--------|:----------|
-| <span data-ttu-id="aa59f-131">值</span><span class="sxs-lookup"><span data-stu-id="aa59f-131">values</span></span> | <span data-ttu-id="aa59f-132">settingValue 集合</span><span class="sxs-lookup"><span data-stu-id="aa59f-132">settingValue collection</span></span> | <span data-ttu-id="aa59f-p103">更新的值集。注意：必须提供整个集合组。无法更新单个值集合。</span><span class="sxs-lookup"><span data-stu-id="aa59f-p103">The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values.</span></span> |
+| <span data-ttu-id="33175-131">值</span><span class="sxs-lookup"><span data-stu-id="33175-131">values</span></span> | <span data-ttu-id="33175-132">settingValue 集合</span><span class="sxs-lookup"><span data-stu-id="33175-132">settingValue collection</span></span> | <span data-ttu-id="33175-p103">更新的值集。注意：必须提供整个集合组。无法更新单个值集合。</span><span class="sxs-lookup"><span data-stu-id="33175-p103">The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="aa59f-136">响应</span><span class="sxs-lookup"><span data-stu-id="aa59f-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="33175-136">响应</span><span class="sxs-lookup"><span data-stu-id="33175-136">Response</span></span>
 
-<span data-ttu-id="aa59f-137">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="aa59f-137">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="33175-137">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="33175-137">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="aa59f-138">示例</span><span class="sxs-lookup"><span data-stu-id="aa59f-138">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="aa59f-139">请求</span><span class="sxs-lookup"><span data-stu-id="aa59f-139">Request</span></span>
+## <a name="example"></a><span data-ttu-id="33175-138">示例</span><span class="sxs-lookup"><span data-stu-id="33175-138">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="33175-139">请求</span><span class="sxs-lookup"><span data-stu-id="33175-139">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
@@ -123,7 +123,7 @@ Content-length: 173
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="aa59f-140">响应</span><span class="sxs-lookup"><span data-stu-id="aa59f-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="33175-140">响应</span><span class="sxs-lookup"><span data-stu-id="33175-140">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -132,6 +132,16 @@ Content-length: 173
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="33175-141">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="33175-141">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="33175-142">语言</span><span class="sxs-lookup"><span data-stu-id="33175-142">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_groupsetting-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="33175-143">Javascript</span><span class="sxs-lookup"><span data-stu-id="33175-143">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_groupsetting-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -140,5 +150,9 @@ HTTP/1.1 204 No Content
   "description": "Update groupSetting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/groupsetting-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/groupsetting-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
