@@ -4,12 +4,12 @@ description: 更新 eventMessage 对象的属性。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a906dbbdb9a82e78a49ea41399e3791c9d52645b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 51966ecba61f011e259709faf95bba593cd25681
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584227"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33614715"
 ---
 # <a name="update-eventmessage"></a>更新 eventMessage
 
@@ -42,8 +42,8 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|类别|String|与邮件关联的类别。|
-|importance|String|邮件的重要性。 可能的值包括 `Low`、`Normal`、`High`。|
+|categories|String|与邮件关联的类别。|
+|重要性|String|邮件的重要性。 可能的值包括 `Low`、`Normal`、`High`。|
 |isDeliveryReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
 |isRead|Boolean|指示是否已阅读该邮件。|
 |isReadReceiptRequested|Boolean|指示是否需要发送邮件已读回执。|
@@ -92,6 +92,16 @@ Content-length: 248
   "meetingMessageType": "meetingMessageType-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_eventmessage-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_eventmessage-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -100,5 +110,9 @@ Content-length: 248
   "description": "Update eventmessage",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/eventmessage-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/eventmessage-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

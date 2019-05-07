@@ -4,16 +4,15 @@ description: 在用户主类别列表中创建 outlookCategory 对象。
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8b16f75b6dd4c9c5ebad357532534fa15b6292c7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5efcd06d1eb541dcc1dee6721ea2a03b7b46cd1c
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460966"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611823"
 ---
 # <a name="create-outlook-category"></a>创建 Outlook 类别
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在用户主类别列表中创建 [outlookCategory](../resources/outlookcategory.md) 对象。
 
@@ -53,7 +52,7 @@ POST /users/{id|userPrincipalName}/outlook/masterCategories
   "name": "create_outlookcategory_from_outlookuser"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/outlook/masterCategories
+POST https://graph.microsoft.com/v1.0/me/outlook/masterCategories
 Content-type: application/json
 Content-Length: 70
 
@@ -76,12 +75,22 @@ Content-type: application/json
 Content-length: 250
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
   "id":"bac262b7-485d-4739-b436-e31467d64fac",
   "displayName":"Project expenses",
   "color":"preset9"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_outlookcategory_from_outlookuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_outlookcategory_from_outlookuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -90,7 +99,9 @@ Content-length: 250
   "description": "Create outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "".
+  "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/outlookuser-post-mastercategories.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/v1.0/api/outlookuser-post-mastercategories.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/outlookuser-post-mastercategories.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
