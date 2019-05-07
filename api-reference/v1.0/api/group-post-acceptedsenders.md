@@ -4,46 +4,46 @@ description: 向 acceptedSender 列表中添加新用户或组。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ba5d98796807be0ad1bb6eb58bb55fd8eb00fb84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f98a98afe3fd0bb6c4e9aa72ee9b17de6882d8ff
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561815"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613757"
 ---
-# <a name="create-acceptedsender"></a><span data-ttu-id="c391e-103">删除 acceptedSender</span><span class="sxs-lookup"><span data-stu-id="c391e-103">Create acceptedSender</span></span>
-<span data-ttu-id="c391e-104">向 acceptedSender 列表中添加新用户或组。</span><span class="sxs-lookup"><span data-stu-id="c391e-104">Add a new user or group to the acceptedSender list.</span></span>
+# <a name="create-acceptedsender"></a><span data-ttu-id="b6884-103">删除 acceptedSender</span><span class="sxs-lookup"><span data-stu-id="b6884-103">Create acceptedSender</span></span>
+<span data-ttu-id="b6884-104">向 acceptedSender 列表中添加新用户或组。</span><span class="sxs-lookup"><span data-stu-id="b6884-104">Add a new user or group to the acceptedSender list.</span></span>
 
-<span data-ttu-id="c391e-p101">在请求主体的 `@odata.id` 中指定用户或组。已接受的发件人列表中的用户可以发布到组对话。确保未在接受的发件人和拒绝的发件人列表中指定同一用户或组，否则会发生错误。</span><span class="sxs-lookup"><span data-stu-id="c391e-p101">Specify the user or group in `@odata.id` in the request body. Users in the accepted senders list can post to conversations of the group . Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.</span></span>
+<span data-ttu-id="b6884-p101">在请求主体的 `@odata.id` 中指定用户或组。已接受的发件人列表中的用户可以发布到组对话。确保未在接受的发件人和拒绝的发件人列表中指定同一用户或组，否则会发生错误。</span><span class="sxs-lookup"><span data-stu-id="b6884-p101">Specify the user or group in `@odata.id` in the request body. Users in the accepted senders list can post to conversations of the group . Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c391e-108">权限</span><span class="sxs-lookup"><span data-stu-id="c391e-108">Permissions</span></span>
-<span data-ttu-id="c391e-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c391e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b6884-108">权限</span><span class="sxs-lookup"><span data-stu-id="b6884-108">Permissions</span></span>
+<span data-ttu-id="b6884-p102">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b6884-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c391e-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="c391e-111">Permission type</span></span>      | <span data-ttu-id="c391e-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="c391e-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b6884-111">权限类型</span><span class="sxs-lookup"><span data-stu-id="b6884-111">Permission type</span></span>      | <span data-ttu-id="b6884-112">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b6884-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c391e-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c391e-113">Delegated (work or school account)</span></span> | <span data-ttu-id="c391e-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c391e-114">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c391e-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c391e-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c391e-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="c391e-116">Not supported.</span></span>    |
-|<span data-ttu-id="c391e-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="c391e-117">Application</span></span> | <span data-ttu-id="c391e-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="c391e-118">Not supported.</span></span> |
+|<span data-ttu-id="b6884-113">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b6884-113">Delegated (work or school account)</span></span> | <span data-ttu-id="b6884-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b6884-114">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b6884-115">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b6884-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b6884-116">不支持。</span><span class="sxs-lookup"><span data-stu-id="b6884-116">Not supported.</span></span>    |
+|<span data-ttu-id="b6884-117">应用程序</span><span class="sxs-lookup"><span data-stu-id="b6884-117">Application</span></span> | <span data-ttu-id="b6884-118">不支持。</span><span class="sxs-lookup"><span data-stu-id="b6884-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c391e-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c391e-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b6884-119">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b6884-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/acceptedSenders/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="c391e-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="c391e-120">Request headers</span></span>
-| <span data-ttu-id="c391e-121">标头</span><span class="sxs-lookup"><span data-stu-id="c391e-121">Header</span></span>       | <span data-ttu-id="c391e-122">值</span><span class="sxs-lookup"><span data-stu-id="c391e-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="b6884-120">请求标头</span><span class="sxs-lookup"><span data-stu-id="b6884-120">Request headers</span></span>
+| <span data-ttu-id="b6884-121">标头</span><span class="sxs-lookup"><span data-stu-id="b6884-121">Header</span></span>       | <span data-ttu-id="b6884-122">值</span><span class="sxs-lookup"><span data-stu-id="b6884-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c391e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c391e-123">Authorization</span></span>  | <span data-ttu-id="c391e-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="c391e-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b6884-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b6884-123">Authorization</span></span>  | <span data-ttu-id="b6884-p103">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="b6884-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c391e-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c391e-126">Request body</span></span>
-<span data-ttu-id="c391e-127">在请求正文中，提供 user 或 group 对象的 ID。</span><span class="sxs-lookup"><span data-stu-id="c391e-127">In the request body, supply the id of a user or group object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b6884-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="b6884-126">Request body</span></span>
+<span data-ttu-id="b6884-127">在请求正文中，提供 user 或 group 对象的 ID。</span><span class="sxs-lookup"><span data-stu-id="b6884-127">In the request body, supply the id of a user or group object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c391e-128">响应</span><span class="sxs-lookup"><span data-stu-id="c391e-128">Response</span></span>
-<span data-ttu-id="c391e-129">此方法返回 `204 No Content` 响应代码，不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="c391e-129">This method returns `204 No Content` response code and no response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b6884-128">响应</span><span class="sxs-lookup"><span data-stu-id="b6884-128">Response</span></span>
+<span data-ttu-id="b6884-129">此方法返回 `204 No Content` 响应代码，不返回任何响应正文。</span><span class="sxs-lookup"><span data-stu-id="b6884-129">This method returns `204 No Content` response code and no response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c391e-130">示例</span><span class="sxs-lookup"><span data-stu-id="c391e-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="c391e-131">请求</span><span class="sxs-lookup"><span data-stu-id="c391e-131">Request</span></span>
-<span data-ttu-id="c391e-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="c391e-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b6884-130">示例</span><span class="sxs-lookup"><span data-stu-id="b6884-130">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="b6884-131">请求</span><span class="sxs-lookup"><span data-stu-id="b6884-131">Request</span></span>
+<span data-ttu-id="b6884-132">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b6884-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_acceptedsender"
@@ -58,8 +58,8 @@ Content-length: 30
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="c391e-133">响应</span><span class="sxs-lookup"><span data-stu-id="c391e-133">Response</span></span>
-<span data-ttu-id="c391e-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c391e-134">The following is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="b6884-133">响应</span><span class="sxs-lookup"><span data-stu-id="b6884-133">Response</span></span>
+<span data-ttu-id="b6884-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="b6884-134">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -67,6 +67,14 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="b6884-135">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="b6884-135">SDK sample code</span></span>
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b6884-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="b6884-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_acceptedsender-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -75,5 +83,8 @@ HTTP/1.1 204 No Content
   "description": "Create acceptedSender",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-acceptedsenders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

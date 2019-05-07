@@ -4,49 +4,49 @@ description: 使用此 API 新建 **plannerBucket**。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 5d642779f7ca179a6de485fae2caaafd065c050d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4e09f5253f6f793d53e82b37551a1e7f3e51b844
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562081"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33611296"
 ---
-# <a name="create-plannerbucket"></a><span data-ttu-id="eb188-103">创建 plannerBucket</span><span class="sxs-lookup"><span data-stu-id="eb188-103">Create plannerBucket</span></span>
+# <a name="create-plannerbucket"></a><span data-ttu-id="f3119-103">创建 plannerBucket</span><span class="sxs-lookup"><span data-stu-id="f3119-103">Create plannerBucket</span></span>
 
-<span data-ttu-id="eb188-104">使用此 API 新建 **plannerBucket**。</span><span class="sxs-lookup"><span data-stu-id="eb188-104">Use this API to create a new **plannerBucket**.</span></span>
+<span data-ttu-id="f3119-104">使用此 API 新建 **plannerBucket**。</span><span class="sxs-lookup"><span data-stu-id="f3119-104">Use this API to create a new **plannerBucket**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="eb188-105">权限</span><span class="sxs-lookup"><span data-stu-id="eb188-105">Permissions</span></span>
-<span data-ttu-id="eb188-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="eb188-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f3119-105">权限</span><span class="sxs-lookup"><span data-stu-id="f3119-105">Permissions</span></span>
+<span data-ttu-id="f3119-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f3119-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="eb188-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="eb188-108">Permission type</span></span>      | <span data-ttu-id="eb188-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="eb188-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f3119-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="f3119-108">Permission type</span></span>      | <span data-ttu-id="f3119-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f3119-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="eb188-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="eb188-110">Delegated (work or school account)</span></span> | <span data-ttu-id="eb188-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eb188-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="eb188-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="eb188-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eb188-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="eb188-113">Not supported.</span></span>    |
-|<span data-ttu-id="eb188-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="eb188-114">Application</span></span> | <span data-ttu-id="eb188-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="eb188-115">Not supported.</span></span> |
+|<span data-ttu-id="f3119-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f3119-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f3119-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f3119-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f3119-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f3119-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f3119-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="f3119-113">Not supported.</span></span>    |
+|<span data-ttu-id="f3119-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="f3119-114">Application</span></span> | <span data-ttu-id="f3119-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="f3119-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="eb188-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="eb188-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f3119-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f3119-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/buckets
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="eb188-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="eb188-117">Request headers</span></span>
-| <span data-ttu-id="eb188-118">名称</span><span class="sxs-lookup"><span data-stu-id="eb188-118">Name</span></span>       | <span data-ttu-id="eb188-119">说明</span><span class="sxs-lookup"><span data-stu-id="eb188-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f3119-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="f3119-117">Request headers</span></span>
+| <span data-ttu-id="f3119-118">名称</span><span class="sxs-lookup"><span data-stu-id="f3119-118">Name</span></span>       | <span data-ttu-id="f3119-119">说明</span><span class="sxs-lookup"><span data-stu-id="f3119-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="eb188-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="eb188-120">Authorization</span></span>  | <span data-ttu-id="eb188-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="eb188-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f3119-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f3119-120">Authorization</span></span>  | <span data-ttu-id="f3119-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f3119-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="eb188-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="eb188-123">Request body</span></span>
-<span data-ttu-id="eb188-124">在请求正文中，提供 [plannerBucket](../resources/plannerbucket.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="eb188-124">In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f3119-123">请求正文</span><span class="sxs-lookup"><span data-stu-id="f3119-123">Request body</span></span>
+<span data-ttu-id="f3119-124">在请求正文中，提供 [plannerBucket](../resources/plannerbucket.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f3119-124">In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="eb188-125">响应</span><span class="sxs-lookup"><span data-stu-id="eb188-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f3119-125">响应</span><span class="sxs-lookup"><span data-stu-id="f3119-125">Response</span></span>
 
-<span data-ttu-id="eb188-126">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [plannerBucket](../resources/plannerbucket.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="eb188-126">If successful, this method returns `201 Created` response code and [plannerBucket](../resources/plannerbucket.md) object in the response body.</span></span>
+<span data-ttu-id="f3119-126">如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [plannerBucket](../resources/plannerbucket.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="f3119-126">If successful, this method returns `201 Created` response code and [plannerBucket](../resources/plannerbucket.md) object in the response body.</span></span>
 
-<span data-ttu-id="eb188-p103">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法的处理最常见的错误为 400、403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="eb188-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="f3119-p103">此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法的处理最常见的错误为 400、403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。</span><span class="sxs-lookup"><span data-stu-id="f3119-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="eb188-130">示例</span><span class="sxs-lookup"><span data-stu-id="eb188-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="eb188-131">请求</span><span class="sxs-lookup"><span data-stu-id="eb188-131">Request</span></span>
-<span data-ttu-id="eb188-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="eb188-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f3119-130">示例</span><span class="sxs-lookup"><span data-stu-id="f3119-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f3119-131">请求</span><span class="sxs-lookup"><span data-stu-id="f3119-131">Request</span></span>
+<span data-ttu-id="f3119-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f3119-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_plannerbucket_from_planner"
@@ -62,9 +62,9 @@ Content-length: 92
   "orderHint": " !"
 }
 ```
-<span data-ttu-id="eb188-133">在请求正文中，提供 [plannerBucket](../resources/plannerbucket.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="eb188-133">In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="eb188-134">响应</span><span class="sxs-lookup"><span data-stu-id="eb188-134">Response</span></span>
-<span data-ttu-id="eb188-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="eb188-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="f3119-133">在请求正文中，提供 [plannerBucket](../resources/plannerbucket.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="f3119-133">In the request body, supply a JSON representation of [plannerBucket](../resources/plannerbucket.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="f3119-134">响应</span><span class="sxs-lookup"><span data-stu-id="f3119-134">Response</span></span>
+<span data-ttu-id="f3119-p104">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f3119-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,6 +82,16 @@ Content-length: 145
   "id": "hsOf2dhOJkqyYYZEtdzDe2QAIUCR"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="f3119-138">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="f3119-138">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="f3119-139">语言</span><span class="sxs-lookup"><span data-stu-id="f3119-139">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_plannerbucket_from_planner-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f3119-140">Javascript</span><span class="sxs-lookup"><span data-stu-id="f3119-140">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_plannerbucket_from_planner-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -90,5 +100,9 @@ Content-length: 145
   "description": "Create plannerBucket",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/planner-post-buckets.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/planner-post-buckets.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
