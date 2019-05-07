@@ -5,16 +5,14 @@ ms.date: 09/11/2017
 title: 创建 SharePoint 列表
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7faabe9bddc806d4c416ebed439592ec8630e8af
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 576c7b8c5f2f3e7b75e336cf898312a24e712903
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568094"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613182"
 ---
 # <a name="create-a-new-list"></a>创建新的列表
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 在 [site][] 中的创建新的 [list][]。
 
@@ -33,7 +31,7 @@ ms.locfileid: "32568094"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
 ## <a name="request-body"></a>请求正文
@@ -101,6 +99,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-list-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **注意：** 为清楚起见，将截断 Response 对象。
 实际调用会返回默认属性。
@@ -108,13 +116,14 @@ Content-type: application/json
 [list]: ../resources/list.md
 [网站]: ../resources/site.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
   "tocPath": "List/Create",
-  "suppressions": []
-}
--->
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+} -->

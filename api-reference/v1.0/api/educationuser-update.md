@@ -4,12 +4,12 @@ description: 更新 **educationuser** 对象的属性。
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 0c93ecd601e941cd68f0b6f8d668775e7de3feef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 518eb4995c699450f8b489922775bae90cb45494
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550040"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33615533"
 ---
 # <a name="update-educationuser-properties"></a>更新 educationUser 属性
 
@@ -40,10 +40,10 @@ PATCH /education/users/{id}
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|displayName| String| 显示用户名称|
-|givenName| String | 名字 |
+|displayName| 字符串| 显示用户名称|
+|givenName| 字符串 | 名字 |
 |middleName| String | 用户的中间名|
-|surname| String | 用户的姓|
+|surname| 字符串 | 用户的姓|
 |mail| String| 电子邮件地址|
 |mobilePhone| String | 用户的移动电话号码 |
 |externalSource|string| 可能的值包括 `sis`、`manual`、`enum_sentinel`。|
@@ -124,6 +124,16 @@ Content-length: 508
     }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_educationuser-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_educationuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -132,5 +142,9 @@ Content-length: 508
   "description": "Update educationuser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/educationuser-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/educationuser-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
