@@ -4,12 +4,12 @@ description: 获取组成员的列表。 组可以将用户、设备和其他组
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: dd6417916a7d1e2f79735db3dce4f1c3465d6577
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9c604853dcaca2f07105d3fb765c74d769836bd5
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534708"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613773"
 ---
 # <a name="list-group-transitive-members"></a>列表组可传递成员
 
@@ -21,11 +21,11 @@ ms.locfileid: "32534708"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户） | directory.accessasuser.all、user.readbasic.all、用户、全部、用户、全部读取。所有    |
+|委派（工作或学校帐户） | Directory.accessasuser.all、User.readbasic.all、用户、全部、用户、全部读取。所有    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
-|应用程序 | read. all, User. all |
+|应用程序 | Read。 All, User。 All |
 
->**注意:** 若要列出隐藏的成员资格组的成员, 则需要使用 Read. hidden 权限是必需的。
+>**注意:** 若要列出隐藏的成员资格组的成员, 则需要使用 Read。 Hidden 权限是必需的。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -103,6 +103,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_group_transitivemembers-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_group_transitivemembers-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -111,5 +121,9 @@ Content-type: application/json
   "description": "List transitive group members",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-list-transitivemembers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
