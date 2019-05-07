@@ -4,12 +4,12 @@ description: 更新 **plannertaskdetails** 对象的属性。
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: cd9bf69fcb458c40c8506ccf2a7d401793e8fbef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 76c969158019c39592b819da2e4b281386f53276
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525444"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33608445"
 ---
 # <a name="update-plannertaskdetails"></a>更新 plannertaskdetails
 
@@ -40,7 +40,7 @@ PATCH /planner/tasks/{id}/details
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](../resources/plannerchecklistitems.md)|任务上的检查表项目集合。|
-|description|String|任务描述|
+|说明|字符串|任务描述|
 |previewType|string|这将设置显示在任务上的预览类型。 可能的值包括 `automatic`、`noPreview`、`checklist`、`description`、`reference`。 将设置为`automatic`显示的预览由查看任务的应用程序选择。|
 |references|[plannerExternalReferences](../resources/plannerexternalreferences.md)|任务上的引用集合。|
 
@@ -162,6 +162,14 @@ Content-length: 1793
   "id": "gcrYAaAkgU2EQUvpkNNXLGQAGTtu"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_plannertaskdetails-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -170,5 +178,8 @@ Content-length: 1793
   "description": "Update plannertaskdetails",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/plannertaskdetails-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

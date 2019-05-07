@@ -4,12 +4,12 @@ description: 重置当前用户自上次访问后未查看的所有帖子的 uns
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 0c875615fb9650ecafafd503d37e88b0473fd482
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 035d53537587fde0c6ab0b33fd08fbe7987e1fbd
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521206"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613928"
 ---
 # <a name="group-resetunseencount"></a>组：resetUnseenCount
 重置当前用户自上次访问后未查看的所有帖子的 unseenCount。仅支持 Office 365 组。
@@ -60,6 +60,16 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/resetUnseenCount
 ```http
 HTTP/1.1 200 OK
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/group_resetunseencount-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/group_resetunseencount-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -68,5 +78,9 @@ HTTP/1.1 200 OK
   "description": "group: resetUnseenCount",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-resetunseencount.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-resetunseencount.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

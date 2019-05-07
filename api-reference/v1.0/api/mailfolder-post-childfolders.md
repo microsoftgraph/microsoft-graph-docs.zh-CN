@@ -4,12 +4,12 @@ description: 使用此 API 新建子 MailFolder。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: bf078e34f216dde5a3daf3bcf0cecd27517e7da7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 872e54f53fbc79ee3f3e015d1f50f4ef3288cd29
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565413"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33612223"
 ---
 # <a name="create-mailfolder"></a>创建 MailFolder
 
@@ -40,7 +40,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | 标头 | 值 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必需。 |
+| 授权 | `Bearer {token}`. 必需。 |
 | Content-Type | `application/json`. 必需。 |
 
 ## <a name="request-body"></a>请求正文
@@ -99,6 +99,16 @@ Content-length: 179
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_mailfolder_from_mailfolder-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_mailfolder_from_mailfolder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -107,5 +117,9 @@ Content-length: 179
   "description": "Create MailFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-post-childfolders.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/mailfolder-post-childfolders.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

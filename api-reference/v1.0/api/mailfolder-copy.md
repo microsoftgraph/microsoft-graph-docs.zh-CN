@@ -4,12 +4,12 @@ description: 将 mailfolder 及其内容复制到其他 mailfolder。
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 37160f5b6f62ce29d605e84a93a7748f426bd240
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1bf3e283e54a44b4f6512003fd3fc2de22bab102
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565518"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613155"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -37,7 +37,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ## <a name="request-headers"></a>请求标头
 | 标头 | 值 |
 |:-------|:------|
-| Authorization | `Bearer {token}`. 必需。 |
+| 授权 | `Bearer {token}`. 必需。 |
 | Content-Type | `application/json`. 必需。 |
 
 ## <a name="request-body"></a>请求正文
@@ -98,6 +98,16 @@ Content-length: 179
   "id": "id-value"
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[语言](#tab/cs)
+[!INCLUDE [sample-code](../includes/mailfolder_copy-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/mailfolder_copy-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -106,5 +116,9 @@ Content-length: 179
   "description": "mailFolder: copy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-copy.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/mailfolder-copy.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
