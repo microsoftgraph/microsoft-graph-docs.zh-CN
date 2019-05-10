@@ -4,52 +4,52 @@ description: 为用户添加或删除订阅。还可以启用和禁用与订阅�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 96ececfce4800560b1f2ae625d12e67d10f3f325
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7f2f0a311234dc2e23dfecdf8850cd04b0ea2f00
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521801"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33602291"
 ---
-# <a name="assignlicense"></a><span data-ttu-id="dca46-104">assignLicense</span><span class="sxs-lookup"><span data-stu-id="dca46-104">assignLicense</span></span>
-<span data-ttu-id="dca46-p102">为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。</span><span class="sxs-lookup"><span data-stu-id="dca46-p102">Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.</span></span>
+# <a name="assignlicense"></a><span data-ttu-id="21bc6-104">assignLicense</span><span class="sxs-lookup"><span data-stu-id="21bc6-104">assignLicense</span></span>
+<span data-ttu-id="21bc6-p102">为用户添加或删除订阅。还可以启用和禁用与订阅相关的特定计划。</span><span class="sxs-lookup"><span data-stu-id="21bc6-p102">Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dca46-107">权限</span><span class="sxs-lookup"><span data-stu-id="dca46-107">Permissions</span></span>
-<span data-ttu-id="dca46-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="dca46-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="21bc6-107">权限</span><span class="sxs-lookup"><span data-stu-id="21bc6-107">Permissions</span></span>
+<span data-ttu-id="21bc6-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="21bc6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="dca46-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="dca46-110">Permission type</span></span>      | <span data-ttu-id="dca46-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="dca46-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="21bc6-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="21bc6-110">Permission type</span></span>      | <span data-ttu-id="21bc6-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="21bc6-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="dca46-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="dca46-112">Delegated (work or school account)</span></span> | <span data-ttu-id="dca46-113">User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dca46-113">User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="dca46-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="dca46-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dca46-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="dca46-115">Not supported.</span></span>    |
-|<span data-ttu-id="dca46-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="dca46-116">Application</span></span> | <span data-ttu-id="dca46-117">User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dca46-117">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="21bc6-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="21bc6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="21bc6-113">User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="21bc6-113">User.ReadWrite.All, Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="21bc6-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="21bc6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="21bc6-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="21bc6-115">Not supported.</span></span>    |
+|<span data-ttu-id="21bc6-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="21bc6-116">Application</span></span> | <span data-ttu-id="21bc6-117">User.ReadWrite.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="21bc6-117">User.ReadWrite.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dca46-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="dca46-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="21bc6-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="21bc6-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id | userPrincipalName}/assignLicense
 ```
-## <a name="request-headers"></a><span data-ttu-id="dca46-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="dca46-119">Request headers</span></span>
-| <span data-ttu-id="dca46-120">标头</span><span class="sxs-lookup"><span data-stu-id="dca46-120">Header</span></span>       | <span data-ttu-id="dca46-121">值</span><span class="sxs-lookup"><span data-stu-id="dca46-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="21bc6-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="21bc6-119">Request headers</span></span>
+| <span data-ttu-id="21bc6-120">标头</span><span class="sxs-lookup"><span data-stu-id="21bc6-120">Header</span></span>       | <span data-ttu-id="21bc6-121">值</span><span class="sxs-lookup"><span data-stu-id="21bc6-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="dca46-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="dca46-122">Authorization</span></span>  | <span data-ttu-id="dca46-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="dca46-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="dca46-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="dca46-125">Content-Type</span></span>  | <span data-ttu-id="dca46-126">application/json</span><span class="sxs-lookup"><span data-stu-id="dca46-126">application/json</span></span>  |
+| <span data-ttu-id="21bc6-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="21bc6-122">Authorization</span></span>  | <span data-ttu-id="21bc6-p104">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="21bc6-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="21bc6-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="21bc6-125">Content-Type</span></span>  | <span data-ttu-id="21bc6-126">application/json</span><span class="sxs-lookup"><span data-stu-id="21bc6-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="dca46-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="dca46-127">Request body</span></span>
-<span data-ttu-id="dca46-128">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="dca46-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="21bc6-127">请求正文</span><span class="sxs-lookup"><span data-stu-id="21bc6-127">Request body</span></span>
+<span data-ttu-id="21bc6-128">在请求正文中，提供具有以下参数的 JSON 对象。</span><span class="sxs-lookup"><span data-stu-id="21bc6-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="dca46-129">参数</span><span class="sxs-lookup"><span data-stu-id="dca46-129">Parameter</span></span>    | <span data-ttu-id="dca46-130">类型</span><span class="sxs-lookup"><span data-stu-id="dca46-130">Type</span></span>   |<span data-ttu-id="dca46-131">说明</span><span class="sxs-lookup"><span data-stu-id="dca46-131">Description</span></span>|
+| <span data-ttu-id="21bc6-129">参数</span><span class="sxs-lookup"><span data-stu-id="21bc6-129">Parameter</span></span>    | <span data-ttu-id="21bc6-130">类型</span><span class="sxs-lookup"><span data-stu-id="21bc6-130">Type</span></span>   |<span data-ttu-id="21bc6-131">说明</span><span class="sxs-lookup"><span data-stu-id="21bc6-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="dca46-132">addLicenses</span><span class="sxs-lookup"><span data-stu-id="dca46-132">addLicenses</span></span>|<span data-ttu-id="dca46-133">AssignedLicense 集合</span><span class="sxs-lookup"><span data-stu-id="dca46-133">assignedLicense collection</span></span>|<span data-ttu-id="dca46-p105">用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。可以通过设置 [assignedLicense](../resources/assignedlicense.md) 对象中的 **disabledPlans** 属性禁用与许可证相关的计划。</span><span class="sxs-lookup"><span data-stu-id="dca46-p105">A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable plans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.</span></span>|
-|<span data-ttu-id="dca46-136">removeLicenses</span><span class="sxs-lookup"><span data-stu-id="dca46-136">removeLicenses</span></span>|<span data-ttu-id="dca46-137">Guid 集合</span><span class="sxs-lookup"><span data-stu-id="dca46-137">Guid collection</span></span>|<span data-ttu-id="dca46-138">标识要删除的许可证的 GUID 的集合。</span><span class="sxs-lookup"><span data-stu-id="dca46-138">A collection of GUIDs that identify the licenses to remove.</span></span>|
+|<span data-ttu-id="21bc6-132">addLicenses</span><span class="sxs-lookup"><span data-stu-id="21bc6-132">addLicenses</span></span>|<span data-ttu-id="21bc6-133">AssignedLicense 集合</span><span class="sxs-lookup"><span data-stu-id="21bc6-133">AssignedLicense collection</span></span>|<span data-ttu-id="21bc6-p105">用于指定要添加的许可证的 [assignedLicense](../resources/assignedlicense.md) 对象集合。可以通过设置 [assignedLicense](../resources/assignedlicense.md) 对象中的 **disabledPlans** 属性禁用与许可证相关的计划。</span><span class="sxs-lookup"><span data-stu-id="21bc6-p105">A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable plans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.</span></span>|
+|<span data-ttu-id="21bc6-136">removeLicenses</span><span class="sxs-lookup"><span data-stu-id="21bc6-136">removeLicenses</span></span>|<span data-ttu-id="21bc6-137">Guid 集合</span><span class="sxs-lookup"><span data-stu-id="21bc6-137">Guid collection</span></span>|<span data-ttu-id="21bc6-138">标识要删除的许可证的 GUID 的集合。</span><span class="sxs-lookup"><span data-stu-id="21bc6-138">A collection of GUIDs that identify the licenses to remove.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="dca46-139">响应</span><span class="sxs-lookup"><span data-stu-id="dca46-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="21bc6-139">响应</span><span class="sxs-lookup"><span data-stu-id="21bc6-139">Response</span></span>
 
-<span data-ttu-id="dca46-140">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="dca46-140">If successful, this method returns `200 OK` response code and [user](../resources/user.md) object in the response body.</span></span>
+<span data-ttu-id="21bc6-140">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [user](../resources/user.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="21bc6-140">If successful, this method returns `200 OK` response code and [user](../resources/user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dca46-141">示例</span><span class="sxs-lookup"><span data-stu-id="dca46-141">Example</span></span>
-<span data-ttu-id="dca46-142">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="dca46-142">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="dca46-143">请求</span><span class="sxs-lookup"><span data-stu-id="dca46-143">Request</span></span>
-<span data-ttu-id="dca46-144">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="dca46-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="21bc6-141">示例</span><span class="sxs-lookup"><span data-stu-id="21bc6-141">Example</span></span>
+<span data-ttu-id="21bc6-142">下面是一个如何调用此 API 的示例。</span><span class="sxs-lookup"><span data-stu-id="21bc6-142">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="21bc6-143">请求</span><span class="sxs-lookup"><span data-stu-id="21bc6-143">Request</span></span>
+<span data-ttu-id="21bc6-144">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="21bc6-144">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_assignlicense"
@@ -70,8 +70,8 @@ Content-length: 185
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="dca46-145">响应</span><span class="sxs-lookup"><span data-stu-id="dca46-145">Response</span></span>
-<span data-ttu-id="dca46-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="dca46-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="21bc6-145">响应</span><span class="sxs-lookup"><span data-stu-id="21bc6-145">Response</span></span>
+<span data-ttu-id="21bc6-p106">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="21bc6-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,6 +105,16 @@ Content-length: 491
   "companyName": "companyName-value"
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="21bc6-149">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="21bc6-149">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="21bc6-150">C#</span><span class="sxs-lookup"><span data-stu-id="21bc6-150">c</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_assignlicense-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="21bc6-151">Javascript</span><span class="sxs-lookup"><span data-stu-id="21bc6-151">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_assignlicense-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -113,5 +123,9 @@ Content-length: 491
   "description": "user: assignLicense",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-assignlicense.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-assignlicense.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

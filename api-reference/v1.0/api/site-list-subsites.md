@@ -5,33 +5,33 @@ ms.date: 09/10/2017
 title: 列出 SharePoint 网站的子网站
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fd0b4c43ae03bd7f09ea095e2f7a73b6fa1dbc13
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4abf8eab77ff33b896aab9d0e650373da791a0ac
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32520809"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33603038"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="1c882-102">枚举子网站</span><span class="sxs-lookup"><span data-stu-id="1c882-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="ff745-102">枚举子网站</span><span class="sxs-lookup"><span data-stu-id="ff745-102">Enumerate subsites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1c882-103">获取为 [网站][] 定义的子网站集合。</span><span class="sxs-lookup"><span data-stu-id="1c882-103">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="ff745-103">获取为 [网站][] 定义的子网站集合。</span><span class="sxs-lookup"><span data-stu-id="ff745-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [网站]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="1c882-105">权限</span><span class="sxs-lookup"><span data-stu-id="1c882-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ff745-105">权限</span><span class="sxs-lookup"><span data-stu-id="ff745-105">Permissions</span></span>
 
-<span data-ttu-id="1c882-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="1c882-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ff745-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ff745-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1c882-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="1c882-108">Permission type</span></span>      | <span data-ttu-id="1c882-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="1c882-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ff745-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="ff745-108">Permission type</span></span>      | <span data-ttu-id="ff745-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="ff745-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1c882-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1c882-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1c882-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c882-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1c882-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="1c882-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1c882-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="1c882-113">Not supported.</span></span>    |
-|<span data-ttu-id="1c882-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="1c882-114">Application</span></span> | <span data-ttu-id="1c882-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1c882-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="ff745-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ff745-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ff745-111">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff745-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ff745-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ff745-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff745-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="ff745-113">Not supported.</span></span>    |
+|<span data-ttu-id="ff745-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="ff745-114">Application</span></span> | <span data-ttu-id="ff745-115">Sites.Read.All、Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff745-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1c882-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1c882-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ff745-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ff745-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "32520809"
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
-## <a name="response"></a><span data-ttu-id="1c882-117">响应</span><span class="sxs-lookup"><span data-stu-id="1c882-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ff745-117">响应</span><span class="sxs-lookup"><span data-stu-id="ff745-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -68,6 +68,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="ff745-118">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="ff745-118">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="ff745-119">C#</span><span class="sxs-lookup"><span data-stu-id="ff745-119">c</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-subsites-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ff745-120">Javascript</span><span class="sxs-lookup"><span data-stu-id="ff745-120">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-subsites-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -77,7 +87,8 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sites/List subsites",
   "suppressions": [
-    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

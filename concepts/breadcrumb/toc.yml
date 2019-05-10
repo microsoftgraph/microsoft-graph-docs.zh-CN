@@ -1,3 +1,18 @@
 - name: Microsoft Graph
   tocHref: /graph/
   topicHref: /graph/overview
+- name: MS Graph
+  tocHref: /azure/
+  topicHref: /graph/overview
+  items:
+    - name: 开发
+      topHref: /azure/active-directory/
+      topicHref: /graph/auth/index
+      items:
+        - name: 获取身份验证令牌
+          topHref: /azure/active-directory/develop/
+          topicHref: /graph/auth/index
+          items:
+            - name: 注册应用
+              topHref: /azure/active-directory/develop/quickstart-register-app/
+              topicHref: /graph/

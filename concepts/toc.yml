@@ -18,7 +18,7 @@ items:
             href: deployments.md
           - name: 混合部署（预览版）
             href: hybrid-rest-support.md
-      - name: Microsoft Graph 数据连接（预览）
+      - name: Microsoft Graph 数据连接
         href: data-connect-overview.md
       - name: 教程
         items:
@@ -88,13 +88,23 @@ items:
       - name: 客户预订（预览版）
         href: booking-concept-overview.md
         displayName: 'Bookings, Microsoft Bookings'
-      - name: 数据访问（预览版）
+      - name: 数据访问
         displayName: Microsoft Graph data connect
         items:
-          - name: 概述
+          - name: 数据连接概述
             href: data-connect-concept-overview.md
           - name: 入门
             href: data-connect-get-started.md
+          - name: 数据集、区域和接收器
+            href: data-connect-datasets.md
+          - name: 策略和许可
+            href: data-connect-policies.md
+          - name: 用户选择和筛选
+            href: data-connect-filtering.md
+          - name: 与 PAM 集成
+            href: data-connect-pam.md
+          - name: 提示
+            href: data-connect-tips.md
       - name: 设备和应用
         href: intune-concept-overview.md
         displayName: Intune
@@ -229,7 +239,9 @@ items:
       - name: 获取身份验证令牌
         items:
           - name: 概述
-            href: auth-overview.md
+            href: auth/index.yml
+          - name: 基本信息
+            href: auth/auth-concepts.md
           - name: 注册应用
             href: auth-register-app-v2.md
           - name: 代表用户获取访问权限
@@ -281,7 +293,54 @@ items:
                 href: extensibility-open-users.md
               - name: 使用架构扩展（示例）
                 href: extensibility-schema-groups.md
+      - name: 迁移
+        expanded: false
+        items:
+          - name: Azure AD Graph
+            displayname: 'Migration, Azure AD Graph'
+            items:
+              - name: 概述
+                href: migrate-azure-ad-graph-overview.md
+              - name: 应用迁移清单
+                href: migrate-azure-ad-graph-planning-checklist.md
+              - name: 1：查看差异
+                expanded: true
+                items:
+                  - name: 请求
+                    href: migrate-azure-ad-graph-request-differences.md
+                  - name: 服务功能
+                    href: migrate-azure-ad-graph-feature-differences.md
+                  - name: 资源类型
+                    href: migrate-azure-ad-graph-resource-differences.md
+                  - name: 实体属性
+                    href: migrate-azure-ad-graph-property-differences.md
+                  - name: 方法
+                    href: migrate-azure-ad-graph-method-differences.md
+              - name: 2：检查 API 使用情况
+                href: migrate-azure-ad-graph-audit-api-use.md
+              - name: 3：查看应用详细信息
+                expanded: true
+                items:
+                  - name: 应用注册
+                    href: migrate-azure-ad-graph-app-registration.md
+                  - name: 身份验证库
+                    href: migrate-azure-ad-graph-authentication-library.md
+                  - name: .NET 客户端库
+                    href: migrate-azure-ad-graph-client-libraries.md
+              - name: 4：部署、测试和扩展
+                href: migrate-azure-ad-graph-deploy-test-extend.md
+      - name: 使用 SDK
+        items:
+          - name: 概述
+            href: sdks/sdks-overview.md
+          - name: 安装 SDK
+            href: sdks/sdk-installation.md
+          - name: 创建客户端
+            href: sdks/create-client.md
+          - name: 选择验证提供程序
+            href: sdks/choose-authentication-providers.md
       - name: 资源
+        expanded: true
         items:
           - name: 最佳做法
             href: best-practices-concept.md
@@ -291,7 +350,7 @@ items:
             href: changelog.md
           - name: 错误
             href: errors.md
-  - name: v1.0 参考
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-  - name: beta 参考
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+      - name: v1.0 参考
+        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+      - name: beta 参考
+        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
