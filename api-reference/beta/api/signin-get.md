@@ -1,19 +1,25 @@
 ---
 title: 获取 signIn
-description: 检索租户的 Azure AD 用户登录名。 登录日志中目前包含交互式性质的登录名（其中用户名/密码作为授权令牌的一部分传递）和已成功联合的登录名。
-localization_priority: Priority
-ms.openlocfilehash: 79bebfda40b15a5524aecfc99e5b6d83a168b28e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+description: 检索租户的特定 Azure AD 用户登录事件。
+localization_priority: Normal
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1a3d1f8cbff40eb76e26a5f08afa36368a5148dd
+ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33335799"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33638546"
 ---
 # <a name="get-signin"></a>获取 signIn
-检索租户的 Azure AD 用户登录名。 登录日志中目前包含交互式性质的登录名（其中用户名/密码作为授权令牌的一部分传递）和已成功联合的登录名。
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+检索租户的特定 Azure AD 用户登录事件。 登录日志中目前包含交互式性质的登录名（其中用户名/密码作为授权令牌的一部分传递）和已成功联合的登录名。
 
 
 ## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -25,25 +31,36 @@ ms.locfileid: "33335799"
 此外，应用还必须向 Azure AD [正确注册](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal)。
 
 ## <a name="http-request"></a>HTTP 请求
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
-## <a name="optional-query-parameters"></a>可选查询参数
-此方法支持以下 OData 查询参数，它们有助于自定义响应。 请参看 [OData 查询参数](https://developer.microsoft.com/graph/docs/concepts/query_parameters)，了解如何使用这些参数。
 
-## <a name="request-headers"></a>请求头
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+此方法支持 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
+
+## <a name="request-headers"></a>请求标头
+
 | 名称      |说明|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [signIn](../resources/signin.md) 对象。
+
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
+
+### <a name="request"></a>请求
+
 下面是一个请求示例。
+
 <!-- {
   "blockType": "request",
   "name": "get_signin"
@@ -51,8 +68,11 @@ GET /auditLogs/signIns/{id}
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-##### <a name="response"></a>响应
+
+### <a name="response"></a>响应
+
 下面是一个响应示例。 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -63,6 +83,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 211
 ```
+
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
@@ -78,14 +99,14 @@ Content-length: 211
         "status": {
             "errorCode": 0,
             "failureReason": null,
-            "additionalDetails": "SignIn Success & CA Sucess"
+            "additionalDetails": "SignIn Success & CA Success"
         },
         "clientAppUsed": null,
         "deviceDetail": {
             "deviceId": "34390ed6-52b3-4102-aeff-aad2292abac3",
             "displayName": "DeviceName",
             "operatingSystem": "Windows 10",
-            "browser": "Rich Client v1.0.2016.0",
+            "browser": "Rich Client v3.14.1592.7",
             "isCompliant": true,
             "isManaged": true,
             "trustType": ""
@@ -119,6 +140,17 @@ Content-length: 211
 }
 
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_signin-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_signin-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -126,5 +158,9 @@ Content-length: 211
   "description": "Get signIn",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

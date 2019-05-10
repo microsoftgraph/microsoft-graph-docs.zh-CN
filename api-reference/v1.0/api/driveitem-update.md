@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: 更新文件或文件夹
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7a4769ddc48db3230c1609a979f69a09a620303e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 34d223d3400b8540a9bc63d781be7eb0619c4950
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550502"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33616016"
 ---
 # <a name="update-driveitem-properties"></a>更新 DriveItem 属性
 
@@ -88,6 +88,16 @@ Content-type: application/json
   "file": { }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update-item-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update-item-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## <a name="error-responses"></a>错误响应
 
@@ -101,5 +111,9 @@ Content-type: application/json
   "description": "Update or replace the contents or properties of an item.",
   "keywords": "update,replace,contents,item",
   "section": "documentation",
-  "tocPath": "Items/Update"
+  "tocPath": "Items/Update",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

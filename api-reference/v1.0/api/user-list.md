@@ -4,12 +4,12 @@ description: 检索用户对象列表。
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7529097f5d22443b95123cc7a2f578f0521b8ca4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b7326796ec45e0cb628be954e3f82f317096fb51
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563894"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33601517"
 ---
 # <a name="list-users"></a>列出用户
 
@@ -105,6 +105,16 @@ Content-length: 608
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_users-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_users-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-users-request-using-select"></a>示例 2：使用 $select 的用户请求
 
@@ -114,7 +124,7 @@ Content-length: 608
 
 <!-- {
   "blockType": "request",
-  "name": "get_users"
+  "name": "get_users_properties"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalCode
@@ -122,7 +132,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalC
 
 ##### <a name="response"></a>响应
 
-注意：为简洁起见，可能会截断此处展示的响应对象。
+注意：为简洁起见，可能会截断此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,6 +154,16 @@ Content-length: 159
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_users_properties-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_users_properties-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -152,5 +172,11 @@ Content-length: 159
   "description": "List users",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

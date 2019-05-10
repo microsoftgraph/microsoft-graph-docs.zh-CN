@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: 在 SharePoint 列表中创建新条目
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 48cccb9c4200c80a0f37a04493b4df0f2d4066d0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a4237703d8cb8d3142a331def586843e4d7a2c59
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557089"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33613007"
 ---
 # <a name="create-a-new-item-in-a-list"></a>在列表中创建新项
 
@@ -85,6 +85,14 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **注意：** 为清楚起见，将截断 Response 对象。 实际调用会返回默认属性。
 
@@ -96,5 +104,8 @@ Content-type: application/json
   "description": "Add a new item to a SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Create"
+  "tocPath": "ListItem/Create",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitem-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->
