@@ -1,16 +1,21 @@
 ---
 title: signIn 资源类型
-description: '此资源详细说明目录中的用户或应用程序登录活动。 '
-localization_priority: Priority
-ms.openlocfilehash: 9736e906810ce1be1525bf85b687f4a5f1a57f3e
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+description: 描述 Microsoft Graph API (REST) 的 signIn 资源，这有利于审核用户和应用程序登录活动（beta 版本）。
+author: lleonard-msft
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 90e2b2cf56776657f9c76c442b3ca9579b75cd5f
+ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33343015"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33620814"
 ---
 # <a name="signin-resource-type"></a>signIn 资源类型
-此资源详细说明目录中的用户或应用程序登录活动。 
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+提供有关目录中用户或应用程序登录活动的详细信息。 
 
 ## <a name="methods"></a>方法
 
