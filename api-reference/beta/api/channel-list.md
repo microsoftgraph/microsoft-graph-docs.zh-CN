@@ -4,18 +4,18 @@ description: 检索此团队中的频道列表。
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 476f5a698801725ce441c31d21715a2a180658cf
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 90320abf7ddbb630c1aede5df43d0e0614da5de4
+ms.sourcegitcommit: 5e8a6761d2766f2d12068c7a5e02724da3f3e11d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33635503"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33659598"
 ---
 # <a name="list-channels"></a>列出频道
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索此团队中的[频道](../resources/channel.md)列表。
+检索此[团队](../resources/team.md)中的[频道](../resources/channel.md)列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
