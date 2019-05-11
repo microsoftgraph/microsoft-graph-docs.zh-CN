@@ -1,42 +1,42 @@
 ---
 title: androidManagedStoreAppConfigurationSchemaItem 资源类型
 description: Android 应用程序的自定义配置架构内的单个配置项。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 964916f9f6a46cd8b276e304bfb341d6504db0d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3012542315cd30a565da315a9d383757557b1008
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552433"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950541"
 ---
-# <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a><span data-ttu-id="633fa-103">androidManagedStoreAppConfigurationSchemaItem 资源类型</span><span class="sxs-lookup"><span data-stu-id="633fa-103">androidManagedStoreAppConfigurationSchemaItem resource type</span></span>
+# <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a><span data-ttu-id="c4e61-103">androidManagedStoreAppConfigurationSchemaItem 资源类型</span><span class="sxs-lookup"><span data-stu-id="c4e61-103">androidManagedStoreAppConfigurationSchemaItem resource type</span></span>
 
-> <span data-ttu-id="633fa-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="633fa-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c4e61-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c4e61-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="633fa-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="633fa-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c4e61-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c4e61-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="633fa-106">Android 应用程序的自定义配置架构内的单个配置项。</span><span class="sxs-lookup"><span data-stu-id="633fa-106">Single configuration item inside an Android application's custom configuration schema.</span></span>
+<span data-ttu-id="c4e61-106">Android 应用程序的自定义配置架构内的单个配置项。</span><span class="sxs-lookup"><span data-stu-id="c4e61-106">Single configuration item inside an Android application's custom configuration schema.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="633fa-107">属性</span><span class="sxs-lookup"><span data-stu-id="633fa-107">Properties</span></span>
-|<span data-ttu-id="633fa-108">属性</span><span class="sxs-lookup"><span data-stu-id="633fa-108">Property</span></span>|<span data-ttu-id="633fa-109">类型</span><span class="sxs-lookup"><span data-stu-id="633fa-109">Type</span></span>|<span data-ttu-id="633fa-110">说明</span><span class="sxs-lookup"><span data-stu-id="633fa-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c4e61-107">属性</span><span class="sxs-lookup"><span data-stu-id="c4e61-107">Properties</span></span>
+|<span data-ttu-id="c4e61-108">属性</span><span class="sxs-lookup"><span data-stu-id="c4e61-108">Property</span></span>|<span data-ttu-id="c4e61-109">类型</span><span class="sxs-lookup"><span data-stu-id="c4e61-109">Type</span></span>|<span data-ttu-id="c4e61-110">说明</span><span class="sxs-lookup"><span data-stu-id="c4e61-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="633fa-111">schemaItemKey</span><span class="sxs-lookup"><span data-stu-id="633fa-111">schemaItemKey</span></span>|<span data-ttu-id="633fa-112">String</span><span class="sxs-lookup"><span data-stu-id="633fa-112">String</span></span>|<span data-ttu-id="633fa-113">应用程序用于标识项的唯一键</span><span class="sxs-lookup"><span data-stu-id="633fa-113">Unique key the application uses to identify the item</span></span>|
-|<span data-ttu-id="633fa-114">displayName</span><span class="sxs-lookup"><span data-stu-id="633fa-114">displayName</span></span>|<span data-ttu-id="633fa-115">字符串</span><span class="sxs-lookup"><span data-stu-id="633fa-115">String</span></span>|<span data-ttu-id="633fa-116">用户可读的名称</span><span class="sxs-lookup"><span data-stu-id="633fa-116">Human readable name</span></span>|
-|<span data-ttu-id="633fa-117">description</span><span class="sxs-lookup"><span data-stu-id="633fa-117">description</span></span>|<span data-ttu-id="633fa-118">String</span><span class="sxs-lookup"><span data-stu-id="633fa-118">String</span></span>|<span data-ttu-id="633fa-119">项在应用程序内所控制内容的说明</span><span class="sxs-lookup"><span data-stu-id="633fa-119">Description of what the item controls within the application</span></span>|
-|<span data-ttu-id="633fa-120">defaultBoolValue</span><span class="sxs-lookup"><span data-stu-id="633fa-120">defaultBoolValue</span></span>|<span data-ttu-id="633fa-121">布尔值</span><span class="sxs-lookup"><span data-stu-id="633fa-121">Boolean</span></span>|<span data-ttu-id="633fa-122">如果由应用开发人员指定，则为布尔类型项的默认值</span><span class="sxs-lookup"><span data-stu-id="633fa-122">Default value for boolean type items, if specified by the app developer</span></span>|
-|<span data-ttu-id="633fa-123">defaultIntValue</span><span class="sxs-lookup"><span data-stu-id="633fa-123">defaultIntValue</span></span>|<span data-ttu-id="633fa-124">Int32</span><span class="sxs-lookup"><span data-stu-id="633fa-124">Int32</span></span>|<span data-ttu-id="633fa-125">如果由应用开发人员指定，则为整数类型项的默认值</span><span class="sxs-lookup"><span data-stu-id="633fa-125">Default value for integer type items, if specified by the app developer</span></span>|
-|<span data-ttu-id="633fa-126">defaultStringValue</span><span class="sxs-lookup"><span data-stu-id="633fa-126">defaultStringValue</span></span>|<span data-ttu-id="633fa-127">String</span><span class="sxs-lookup"><span data-stu-id="633fa-127">String</span></span>|<span data-ttu-id="633fa-128">如果由应用开发人员指定，则为字符串类型项的默认值</span><span class="sxs-lookup"><span data-stu-id="633fa-128">Default value for string type items, if specified by the app developer</span></span>|
-|<span data-ttu-id="633fa-129">defaultStringArrayValue</span><span class="sxs-lookup"><span data-stu-id="633fa-129">defaultStringArrayValue</span></span>|<span data-ttu-id="633fa-130">String collection</span><span class="sxs-lookup"><span data-stu-id="633fa-130">String collection</span></span>|<span data-ttu-id="633fa-131">如果由应用开发人员指定，则为字符串数组类型项的默认值</span><span class="sxs-lookup"><span data-stu-id="633fa-131">Default value for string array type items, if specified by the app developer</span></span>|
-|<span data-ttu-id="633fa-132">DataType</span><span class="sxs-lookup"><span data-stu-id="633fa-132">dataType</span></span>|[<span data-ttu-id="633fa-133">androidManagedStoreAppConfigurationSchemaItemDataType</span><span class="sxs-lookup"><span data-stu-id="633fa-133">androidManagedStoreAppConfigurationSchemaItemDataType</span></span>](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)|<span data-ttu-id="633fa-134">此项目描述的值的类型。</span><span class="sxs-lookup"><span data-stu-id="633fa-134">The type of value this item describes.</span></span> <span data-ttu-id="633fa-135">可取值为：`bool`、`integer`、`string`、`choice`、`multiselect`、`bundle`、`bundleArray`、`hidden`。</span><span class="sxs-lookup"><span data-stu-id="633fa-135">Possible values are: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.</span></span>|
-|<span data-ttu-id="633fa-136">选择</span><span class="sxs-lookup"><span data-stu-id="633fa-136">selections</span></span>|<span data-ttu-id="633fa-137">[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合</span><span class="sxs-lookup"><span data-stu-id="633fa-137">[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection</span></span>|<span data-ttu-id="633fa-138">可为此项（仅 Choice 和 Multiselect 项）设置的有效值的用于可读名称/值对列表</span><span class="sxs-lookup"><span data-stu-id="633fa-138">List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)</span></span>|
+|<span data-ttu-id="c4e61-111">schemaItemKey</span><span class="sxs-lookup"><span data-stu-id="c4e61-111">schemaItemKey</span></span>|<span data-ttu-id="c4e61-112">String</span><span class="sxs-lookup"><span data-stu-id="c4e61-112">String</span></span>|<span data-ttu-id="c4e61-113">应用程序用于标识项的唯一键</span><span class="sxs-lookup"><span data-stu-id="c4e61-113">Unique key the application uses to identify the item</span></span>|
+|<span data-ttu-id="c4e61-114">displayName</span><span class="sxs-lookup"><span data-stu-id="c4e61-114">displayName</span></span>|<span data-ttu-id="c4e61-115">字符串</span><span class="sxs-lookup"><span data-stu-id="c4e61-115">String</span></span>|<span data-ttu-id="c4e61-116">用户可读的名称</span><span class="sxs-lookup"><span data-stu-id="c4e61-116">Human readable name</span></span>|
+|<span data-ttu-id="c4e61-117">说明</span><span class="sxs-lookup"><span data-stu-id="c4e61-117">description</span></span>|<span data-ttu-id="c4e61-118">String</span><span class="sxs-lookup"><span data-stu-id="c4e61-118">String</span></span>|<span data-ttu-id="c4e61-119">项在应用程序内所控制内容的说明</span><span class="sxs-lookup"><span data-stu-id="c4e61-119">Description of what the item controls within the application</span></span>|
+|<span data-ttu-id="c4e61-120">defaultBoolValue</span><span class="sxs-lookup"><span data-stu-id="c4e61-120">defaultBoolValue</span></span>|<span data-ttu-id="c4e61-121">布尔值</span><span class="sxs-lookup"><span data-stu-id="c4e61-121">Boolean</span></span>|<span data-ttu-id="c4e61-122">如果由应用开发人员指定，则为布尔类型项的默认值</span><span class="sxs-lookup"><span data-stu-id="c4e61-122">Default value for boolean type items, if specified by the app developer</span></span>|
+|<span data-ttu-id="c4e61-123">defaultIntValue</span><span class="sxs-lookup"><span data-stu-id="c4e61-123">defaultIntValue</span></span>|<span data-ttu-id="c4e61-124">Int32</span><span class="sxs-lookup"><span data-stu-id="c4e61-124">Int32</span></span>|<span data-ttu-id="c4e61-125">如果由应用开发人员指定，则为整数类型项的默认值</span><span class="sxs-lookup"><span data-stu-id="c4e61-125">Default value for integer type items, if specified by the app developer</span></span>|
+|<span data-ttu-id="c4e61-126">defaultStringValue</span><span class="sxs-lookup"><span data-stu-id="c4e61-126">defaultStringValue</span></span>|<span data-ttu-id="c4e61-127">String</span><span class="sxs-lookup"><span data-stu-id="c4e61-127">String</span></span>|<span data-ttu-id="c4e61-128">如果由应用开发人员指定，则为字符串类型项的默认值</span><span class="sxs-lookup"><span data-stu-id="c4e61-128">Default value for string type items, if specified by the app developer</span></span>|
+|<span data-ttu-id="c4e61-129">defaultStringArrayValue</span><span class="sxs-lookup"><span data-stu-id="c4e61-129">defaultStringArrayValue</span></span>|<span data-ttu-id="c4e61-130">String collection</span><span class="sxs-lookup"><span data-stu-id="c4e61-130">String collection</span></span>|<span data-ttu-id="c4e61-131">如果由应用开发人员指定，则为字符串数组类型项的默认值</span><span class="sxs-lookup"><span data-stu-id="c4e61-131">Default value for string array type items, if specified by the app developer</span></span>|
+|<span data-ttu-id="c4e61-132">DataType</span><span class="sxs-lookup"><span data-stu-id="c4e61-132">dataType</span></span>|[<span data-ttu-id="c4e61-133">androidManagedStoreAppConfigurationSchemaItemDataType</span><span class="sxs-lookup"><span data-stu-id="c4e61-133">androidManagedStoreAppConfigurationSchemaItemDataType</span></span>](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)|<span data-ttu-id="c4e61-134">此项目描述的值的类型。</span><span class="sxs-lookup"><span data-stu-id="c4e61-134">The type of value this item describes.</span></span> <span data-ttu-id="c4e61-135">可取值为：`bool`、`integer`、`string`、`choice`、`multiselect`、`bundle`、`bundleArray`、`hidden`。</span><span class="sxs-lookup"><span data-stu-id="c4e61-135">Possible values are: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.</span></span>|
+|<span data-ttu-id="c4e61-136">选择</span><span class="sxs-lookup"><span data-stu-id="c4e61-136">selections</span></span>|<span data-ttu-id="c4e61-137">[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合</span><span class="sxs-lookup"><span data-stu-id="c4e61-137">[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection</span></span>|<span data-ttu-id="c4e61-138">可为此项（仅 Choice 和 Multiselect 项）设置的有效值的用于可读名称/值对列表</span><span class="sxs-lookup"><span data-stu-id="c4e61-138">List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="633fa-139">关系</span><span class="sxs-lookup"><span data-stu-id="633fa-139">Relationships</span></span>
-<span data-ttu-id="633fa-140">无</span><span class="sxs-lookup"><span data-stu-id="633fa-140">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="c4e61-139">关系</span><span class="sxs-lookup"><span data-stu-id="c4e61-139">Relationships</span></span>
+<span data-ttu-id="c4e61-140">无</span><span class="sxs-lookup"><span data-stu-id="c4e61-140">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="633fa-141">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="633fa-141">JSON Representation</span></span>
-<span data-ttu-id="633fa-142">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="633fa-142">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c4e61-141">JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="c4e61-141">JSON Representation</span></span>
+<span data-ttu-id="c4e61-142">下面是资源的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="c4e61-142">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem"
@@ -64,7 +64,6 @@ ms.locfileid: "32552433"
   ]
 }
 ```
-
 
 
 

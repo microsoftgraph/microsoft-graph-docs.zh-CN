@@ -1,34 +1,34 @@
 ---
 title: 创建 deviceManagementBooleanSettingInstance
 description: 创建新的 deviceManagementBooleanSettingInstance 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 239fef02ae06cbacc193c06de03fdb6ba3dbedb9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 961a9f7bcca3b9ca97024bfd10d5e6d536be8b29
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509868"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916880"
 ---
-# <a name="create-devicemanagementbooleansettinginstance"></a><span data-ttu-id="a29ef-103">创建 deviceManagementBooleanSettingInstance</span><span class="sxs-lookup"><span data-stu-id="a29ef-103">Create deviceManagementBooleanSettingInstance</span></span>
+# <a name="create-devicemanagementbooleansettinginstance"></a><span data-ttu-id="a4742-103">创建 deviceManagementBooleanSettingInstance</span><span class="sxs-lookup"><span data-stu-id="a4742-103">Create deviceManagementBooleanSettingInstance</span></span>
 
-> <span data-ttu-id="a29ef-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="a29ef-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="a4742-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="a4742-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a29ef-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a29ef-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a4742-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="a4742-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a29ef-106">创建新的[deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a29ef-106">Create a new [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) object.</span></span>
+<span data-ttu-id="a4742-106">创建新的[deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a4742-106">Create a new [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="a29ef-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="a29ef-107">Prerequisites</span></span>
-<span data-ttu-id="a29ef-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a29ef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a4742-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="a4742-107">Prerequisites</span></span>
+<span data-ttu-id="a4742-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="a4742-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a29ef-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a29ef-110">Permission type</span></span>|<span data-ttu-id="a29ef-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a29ef-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="a4742-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="a4742-110">Permission type</span></span>|<span data-ttu-id="a4742-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="a4742-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a29ef-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a29ef-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a29ef-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a29ef-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="a29ef-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a29ef-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a29ef-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a29ef-115">Not supported.</span></span>|
-|<span data-ttu-id="a29ef-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="a29ef-116">Application</span></span>|<span data-ttu-id="a29ef-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="a29ef-117">Not supported.</span></span>|
+|<span data-ttu-id="a4742-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="a4742-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a4742-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a4742-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="a4742-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="a4742-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a4742-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="a4742-115">Not supported.</span></span>|
+|<span data-ttu-id="a4742-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="a4742-116">Application</span></span>|<span data-ttu-id="a4742-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="a4742-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a29ef-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a29ef-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a4742-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="a4742-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,33 +40,33 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMana
 POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceManagementTemplateSettingCategoryId}/recommendedSettings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a29ef-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="a29ef-119">Request headers</span></span>
-|<span data-ttu-id="a29ef-120">标头</span><span class="sxs-lookup"><span data-stu-id="a29ef-120">Header</span></span>|<span data-ttu-id="a29ef-121">值</span><span class="sxs-lookup"><span data-stu-id="a29ef-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a4742-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="a4742-119">Request headers</span></span>
+|<span data-ttu-id="a4742-120">标头</span><span class="sxs-lookup"><span data-stu-id="a4742-120">Header</span></span>|<span data-ttu-id="a4742-121">值</span><span class="sxs-lookup"><span data-stu-id="a4742-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a29ef-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a29ef-122">Authorization</span></span>|<span data-ttu-id="a29ef-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a29ef-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a29ef-124">接受</span><span class="sxs-lookup"><span data-stu-id="a29ef-124">Accept</span></span>|<span data-ttu-id="a29ef-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a29ef-125">application/json</span></span>|
+|<span data-ttu-id="a4742-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="a4742-122">Authorization</span></span>|<span data-ttu-id="a4742-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="a4742-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="a4742-124">接受</span><span class="sxs-lookup"><span data-stu-id="a4742-124">Accept</span></span>|<span data-ttu-id="a4742-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a4742-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a29ef-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a29ef-126">Request body</span></span>
-<span data-ttu-id="a29ef-127">在请求正文中, 提供 deviceManagementBooleanSettingInstance 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a29ef-127">In the request body, supply a JSON representation for the deviceManagementBooleanSettingInstance object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a4742-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="a4742-126">Request body</span></span>
+<span data-ttu-id="a4742-127">在请求正文中, 提供 deviceManagementBooleanSettingInstance 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="a4742-127">In the request body, supply a JSON representation for the deviceManagementBooleanSettingInstance object.</span></span>
 
-<span data-ttu-id="a29ef-128">下表显示创建 deviceManagementBooleanSettingInstance 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="a29ef-128">The following table shows the properties that are required when you create the deviceManagementBooleanSettingInstance.</span></span>
+<span data-ttu-id="a4742-128">下表显示创建 deviceManagementBooleanSettingInstance 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="a4742-128">The following table shows the properties that are required when you create the deviceManagementBooleanSettingInstance.</span></span>
 
-|<span data-ttu-id="a29ef-129">属性</span><span class="sxs-lookup"><span data-stu-id="a29ef-129">Property</span></span>|<span data-ttu-id="a29ef-130">类型</span><span class="sxs-lookup"><span data-stu-id="a29ef-130">Type</span></span>|<span data-ttu-id="a29ef-131">说明</span><span class="sxs-lookup"><span data-stu-id="a29ef-131">Description</span></span>|
+|<span data-ttu-id="a4742-129">属性</span><span class="sxs-lookup"><span data-stu-id="a4742-129">Property</span></span>|<span data-ttu-id="a4742-130">类型</span><span class="sxs-lookup"><span data-stu-id="a4742-130">Type</span></span>|<span data-ttu-id="a4742-131">说明</span><span class="sxs-lookup"><span data-stu-id="a4742-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a29ef-132">id</span><span class="sxs-lookup"><span data-stu-id="a29ef-132">id</span></span>|<span data-ttu-id="a29ef-133">String</span><span class="sxs-lookup"><span data-stu-id="a29ef-133">String</span></span>|<span data-ttu-id="a29ef-134">从[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)继承的设置实例 ID</span><span class="sxs-lookup"><span data-stu-id="a29ef-134">The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="a29ef-135">definitionId</span><span class="sxs-lookup"><span data-stu-id="a29ef-135">definitionId</span></span>|<span data-ttu-id="a29ef-136">字符串</span><span class="sxs-lookup"><span data-stu-id="a29ef-136">String</span></span>|<span data-ttu-id="a29ef-137">继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID</span><span class="sxs-lookup"><span data-stu-id="a29ef-137">The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="a29ef-138">valueJson</span><span class="sxs-lookup"><span data-stu-id="a29ef-138">valueJson</span></span>|<span data-ttu-id="a29ef-139">字符串</span><span class="sxs-lookup"><span data-stu-id="a29ef-139">String</span></span>|<span data-ttu-id="a29ef-140">继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a29ef-140">JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
-|<span data-ttu-id="a29ef-141">value</span><span class="sxs-lookup"><span data-stu-id="a29ef-141">value</span></span>|<span data-ttu-id="a29ef-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="a29ef-142">Boolean</span></span>|<span data-ttu-id="a29ef-143">布尔值</span><span class="sxs-lookup"><span data-stu-id="a29ef-143">The boolean value</span></span>|
+|<span data-ttu-id="a4742-132">id</span><span class="sxs-lookup"><span data-stu-id="a4742-132">id</span></span>|<span data-ttu-id="a4742-133">String</span><span class="sxs-lookup"><span data-stu-id="a4742-133">String</span></span>|<span data-ttu-id="a4742-134">从[DeviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)继承的设置实例 ID</span><span class="sxs-lookup"><span data-stu-id="a4742-134">The setting instance ID Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="a4742-135">definitionId</span><span class="sxs-lookup"><span data-stu-id="a4742-135">definitionId</span></span>|<span data-ttu-id="a4742-136">String</span><span class="sxs-lookup"><span data-stu-id="a4742-136">String</span></span>|<span data-ttu-id="a4742-137">继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的此实例的设置定义 ID</span><span class="sxs-lookup"><span data-stu-id="a4742-137">The ID of the setting definition for this instance Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="a4742-138">valueJson</span><span class="sxs-lookup"><span data-stu-id="a4742-138">valueJson</span></span>|<span data-ttu-id="a4742-139">String</span><span class="sxs-lookup"><span data-stu-id="a4742-139">String</span></span>|<span data-ttu-id="a4742-140">继承自[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)的值的 JSON 表示形式</span><span class="sxs-lookup"><span data-stu-id="a4742-140">JSON representation of the value Inherited from [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)</span></span>|
+|<span data-ttu-id="a4742-141">value</span><span class="sxs-lookup"><span data-stu-id="a4742-141">value</span></span>|<span data-ttu-id="a4742-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="a4742-142">Boolean</span></span>|<span data-ttu-id="a4742-143">布尔值</span><span class="sxs-lookup"><span data-stu-id="a4742-143">The boolean value</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="a29ef-144">响应</span><span class="sxs-lookup"><span data-stu-id="a29ef-144">Response</span></span>
-<span data-ttu-id="a29ef-145">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a29ef-145">If successful, this method returns a `201 Created` response code and a [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a4742-144">响应</span><span class="sxs-lookup"><span data-stu-id="a4742-144">Response</span></span>
+<span data-ttu-id="a4742-145">如果成功, 此方法在响应`201 Created`正文中返回响应代码和[deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md)对象。</span><span class="sxs-lookup"><span data-stu-id="a4742-145">If successful, this method returns a `201 Created` response code and a [deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a29ef-146">示例</span><span class="sxs-lookup"><span data-stu-id="a29ef-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a4742-146">示例</span><span class="sxs-lookup"><span data-stu-id="a4742-146">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a29ef-147">请求</span><span class="sxs-lookup"><span data-stu-id="a29ef-147">Request</span></span>
-<span data-ttu-id="a29ef-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a29ef-148">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="a4742-147">请求</span><span class="sxs-lookup"><span data-stu-id="a4742-147">Request</span></span>
+<span data-ttu-id="a4742-148">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="a4742-148">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/settings
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 176
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a29ef-149">响应</span><span class="sxs-lookup"><span data-stu-id="a29ef-149">Response</span></span>
-<span data-ttu-id="a29ef-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a29ef-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="a4742-149">响应</span><span class="sxs-lookup"><span data-stu-id="a4742-149">Response</span></span>
+<span data-ttu-id="a4742-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="a4742-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -95,7 +95,6 @@ Content-Length: 225
   "value": true
 }
 ```
-
 
 
 
