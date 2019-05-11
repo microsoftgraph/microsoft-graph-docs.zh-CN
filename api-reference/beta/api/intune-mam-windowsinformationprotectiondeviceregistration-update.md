@@ -1,19 +1,19 @@
 ---
 title: 更新 windowsInformationProtectionDeviceRegistration
 description: 更新 windowsInformationProtectionDeviceRegistration 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54d8dc2e1c2c62d956502e48791ad55e0787de03
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: be2938889a5b3c21c7b0ba734d5ccc7b58301618
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529168"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33902932"
 ---
 # <a name="update-windowsinformationprotectiondeviceregistration"></a>更新 windowsInformationProtectionDeviceRegistration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,11 +50,11 @@ PATCH /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{wind
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |userId|String|与此设备注册记录相关联的 UserId。|
 |deviceRegistrationId|字符串|此设备注册记录的设备标识符。|
 |deviceName|String|设备名称。|
-|deviceType|String|设备类型, 例如, windows 便携式计算机 VS windows phone。|
+|deviceType|String|设备类型, 例如, Windows 便携式计算机 VS Windows phone。|
 |deviceMacAddress|String|设备 Mac 地址。|
 |lastCheckInDateTime|DateTimeOffset|设备的上次签入时间。|
 
@@ -101,7 +101,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
 
 
 

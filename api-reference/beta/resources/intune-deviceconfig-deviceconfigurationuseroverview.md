@@ -1,19 +1,19 @@
 ---
 title: deviceConfigurationUserOverview 资源类型
 description: 尚未记录
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a36d7bb5aa3680252db848e0733186536819cf5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bccf4a9705c4a0c9a050f982a2917b518e94c00c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567254"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946999"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>deviceConfigurationUserOverview 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -63,7 +63,6 @@ ms.locfileid: "32567254"
   "configurationVersion": 1024
 }
 ```
-
 
 
 

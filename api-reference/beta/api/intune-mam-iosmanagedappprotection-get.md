@@ -1,19 +1,19 @@
 ---
 title: 获取 iosManagedAppProtection
 description: 读取 iosManagedAppProtection 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf41e88e7ba24c25f599ed15eb5698bd31db859a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c079fbae4907e2cdf18e9a16bef62f344e6d09a6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530401"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904018"
 ---
 # <a name="get-iosmanagedappprotection"></a>获取 iosManagedAppProtection
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtection
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2863
+Content-Length: 2885
 
 {
   "value": {
@@ -129,14 +129,13 @@ Content-Length: 2863
     "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
     "allowedIosDeviceModels": "Allowed Ios Device Models value",
     "appActionIfIosDeviceModelNotAllowed": "wipe",
-    "thirdPartyKeyboardsBlocked": true,
     "filterOpenInToOnlyManagedApps": true,
     "disableProtectionOfManagedOutboundOpenInData": true,
-    "protectInboundDataFromUnknownSources": true
+    "protectInboundDataFromUnknownSources": true,
+    "customBrowserProtocol": "Custom Browser Protocol value"
   }
 }
 ```
-
 
 
 

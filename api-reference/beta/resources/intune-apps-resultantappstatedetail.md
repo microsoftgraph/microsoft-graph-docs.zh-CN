@@ -1,19 +1,19 @@
 ---
 title: resultantAppStateDetail 枚举类型
 description: 指示有关应用程序为何具有特定安装状态的其他详细信息的枚举。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0bf9a2bb6a27bde43cd0467a106af8f593aaf02a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fb3978f3a4ac27db2f4e2a25fd92a4d14151f0d7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551839"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949722"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>resultantAppStateDetail 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,9 +24,9 @@ ms.locfileid: "32551839"
 |:---|:---|:---|
 |noAdditionalDetails|0|没有可用的其他详细信息。|
 |dependencyFailedToInstall|1|一个或多个应用程序的依存关系未能安装。|
-|dependencyWithRequirementsNotMet|2 |一个或多个应用程序的依赖项具有未满足的要求。|
-|dependencyPendingReboot|3 |一个或多个应用程序的依赖项需要重新启动设备才能完成安装。|
-|dependencyWithAutoInstallDisabled|4 |一个或多个应用程序的依赖项配置为不自动安装。|
+|dependencyWithRequirementsNotMet|双面|一个或多个应用程序的依赖项具有未满足的要求。|
+|dependencyPendingReboot|第三章|一个或多个应用程序的依赖项需要重新启动设备才能完成安装。|
+|dependencyWithAutoInstallDisabled|4|一个或多个应用程序的依赖项配置为不自动安装。|
 |seeInstallErrorCode|2000|应用程序安装失败。 有关更多详细信息, 请参阅错误代码属性。|
 |autoInstallDisabled|3000|将应用程序配置为不会自动安装。|
 |seeUninstallErrorCode|4000|应用程序卸载失败。 有关更多详细信息, 请参阅错误代码属性。|
@@ -42,7 +42,6 @@ ms.locfileid: "32551839"
 |minimumOsVersionNotMet|-1002|目标设备上的 OS 版本小于配置的最小值。|
 |minimumDiskSpaceNotMet|-1001|目标设备上的可用磁盘空间小于配置的最小值。|
 |processorArchitectureNotApplicable|-1000|设备体系结构 (例如, x86/amd64) 不适用于应用程序。|
-
 
 
 

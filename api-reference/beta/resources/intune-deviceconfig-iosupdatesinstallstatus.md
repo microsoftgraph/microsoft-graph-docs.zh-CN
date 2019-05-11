@@ -1,19 +1,19 @@
 ---
 title: iosUpdatesInstallStatus 枚举类型
 description: 尚未记录
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e9b1b3584436ac62c48fe84340834f849558d4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8592ccfa4e458aecda6eb9384e5c272436ecaee9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460770"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946181"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosUpdatesInstallStatus 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,8 +24,8 @@ ms.locfileid: "32460770"
 |:---|:---|:---|
 |success|0|尚未记录|
 |可用|1|尚未记录|
-|待机|2 |尚未记录|
-|unknown|3 |尚未记录|
+|待机|双面|尚未记录|
+|unknown|第三章|尚未记录|
 |下载|-2016330712|尚未记录|
 |downloadFailed|-2016330711|尚未记录|
 |downloadRequiresComputer|-2016330710|尚未记录|
@@ -39,7 +39,6 @@ ms.locfileid: "32460770"
 |installFailed|-2016330702|尚未记录|
 |notSupportedOperation|-2016330701|尚未记录|
 |sharedDeviceUserLoggedInError|-2016330699|尚未记录|
-
 
 
 

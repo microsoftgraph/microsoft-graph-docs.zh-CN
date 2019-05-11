@@ -1,19 +1,19 @@
 ---
 title: createGooglePlayWebToken 操作
 description: 生成在可嵌入组件中使用的 web 令牌。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef4d99a7a36b7fbe56ca588044ee14534371c7a3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 520a8ce4e54a43fc84a28440930a093863599ceb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498205"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939124"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>createGooglePlayWebToken 操作
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,7 +50,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 
 |属性|类型|说明|
 |:---|:---|:---|
-|parentUri|字符串|承载组件的页面的 https 路径。|
+|parentUri|String|承载组件的页面的 https 路径。|
 
 
 
@@ -83,7 +83,6 @@ Content-Length: 53
   "value": "Create Google Play Web Token value"
 }
 ```
-
 
 
 

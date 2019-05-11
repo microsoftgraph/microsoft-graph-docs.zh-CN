@@ -1,19 +1,19 @@
 ---
 title: macOSGeneralDeviceConfiguration 资源类型
 description: 本主题提供由 macOSGeneralDeviceConfiguration 资源公开的已声明方法、属性和关系的说明。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ac4dc94099eb8b9b3e9c5e983d2a92d13b48c2e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3375411314fe6fff68ee84a2bb036aa5e672a7d6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570811"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946088"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>macOSGeneralDeviceConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -82,6 +82,13 @@ ms.locfileid: "32570811"
 |softwareUpdatesEnforcedDelayInDays|Int32|设置受监督的设备 delyed 软件更新的天数。 有效值为 0 至 90|
 |softwareUpdatesForceDelayed|Boolean|指示设备处于监督模式时是否延迟用户对软件更新的可见性。|
 |contentCachingBlocked|Boolean|指示是否允许内容缓存。|
+|iCloudBlockPhotoLibrary|Boolean|指示是否阻止 iCloud 照片库。|
+|screenCaptureBlocked|Boolean|指示是否阻止用户进行屏幕截图。|
+|classroomAppBlockRemoteScreenObservation|Boolean|指示是否允许教室应用进行远程屏幕观察。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomAppForceUnpromptedScreenObservation|Boolean|指示是否自动向教师授予对教室应用程序中的托管课程的权限, 以便在不提示的情况下查看学生的屏幕。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomForceAutomaticallyJoinClasses|Boolean|指示是否在不提示学生的情况下自动向教师的请求授予权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|指示在非托管课程中通过课堂注册的学生是否需要在尝试离开本课程时向教师请求权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomForceUnpromptedAppAndDeviceLock|Boolean|指示是否允许教师在不提示学生的情况下锁定应用或设备。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -164,10 +171,16 @@ ms.locfileid: "32570811"
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 1024,
   "softwareUpdatesForceDelayed": true,
-  "contentCachingBlocked": true
+  "contentCachingBlocked": true,
+  "iCloudBlockPhotoLibrary": true,
+  "screenCaptureBlocked": true,
+  "classroomAppBlockRemoteScreenObservation": true,
+  "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceRequestPermissionToLeaveClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true
 }
 ```
-
 
 
 

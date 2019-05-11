@@ -1,19 +1,19 @@
 ---
 title: 获取 managedAppStatus
 description: 读取 managedAppStatus 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d6554b6872f42983881de8aca01306857a2e9276
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 851b63db8a12fd7ff3bfe9d301202a90146c14ab
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529616"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903556"
 ---
 # <a name="get-managedappstatus"></a>获取 managedAppStatus
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -76,7 +76,6 @@ Content-Length: 205
   }
 }
 ```
-
 
 
 

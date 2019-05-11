@@ -1,19 +1,19 @@
 ---
 title: iosGeneralDeviceConfiguration 资源类型
 description: 本主题提供由 iosGeneralDeviceConfiguration 资源公开的已声明方法、属性和关系的说明。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2dba0349ddfe7b0e4fd71193bbea7dd35dcf0a04
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d9425caee528030af0e199ccd20eb93aa3320330
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32564209"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946495"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>iosGeneralDeviceConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -113,14 +113,19 @@ ms.locfileid: "32564209"
 |keyboardBlockSpellCheck|Boolean|指示设备处于监督模式时是否阻止键盘拼写检查（iOS 8.1.3 及更高版本）。|
 |kioskModeAllowAssistiveSpeak|Boolean|指示在展台模式下是否允许辅助朗读。|
 |kioskModeAllowAssistiveTouchSettings|Boolean|指示在展台模式下是否允许访问辅助触摸设置。|
-|kioskModeAllowAutoLock|Boolean|指示在展台模式下是否允许设备自动锁定。|
+|kioskModeAllowAutoLock|Boolean|指示在展台模式下是否允许设备自动锁定。 此属性的 funcitonality 是 OS 默认值的冗余, 已弃用。 请改用 KioskModeBlockAutoLock。|
+|kioskModeBlockAutoLock|Boolean|指示在展台模式下是否阻止设备自动锁定。|
 |kioskModeAllowColorInversionSettings|Boolean|指示在展台模式下是否允许访问颜色反转设置。|
-|kioskModeAllowRingerSwitch|Boolean|指示在展台模式下是否允许使用响铃开关。|
-|kioskModeAllowScreenRotation|Boolean|指示在展台模式下是否允许屏幕旋转。|
-|kioskModeAllowSleepButton|Boolean|指示在展台模式下是否允许使用睡眠按钮。|
-|kioskModeAllowTouchscreen|Boolean|指示在展台模式下是否允许使用触摸屏。|
+|kioskModeAllowRingerSwitch|Boolean|指示在展台模式下是否允许使用响铃开关。 此属性的 funcitonality 是 OS 默认值的冗余, 已弃用。 请改用 KioskModeBlockRingerSwitch。|
+|kioskModeBlockRingerSwitch|Boolean|指示在展台模式下是否阻止使用铃声开关。|
+|kioskModeAllowScreenRotation|Boolean|指示在展台模式下是否允许屏幕旋转。 此属性的 funcitonality 是 OS 默认值的冗余, 已弃用。 请改用 KioskModeBlockScreenRotation。|
+|kioskModeBlockScreenRotation|Boolean|指示在展台模式下是否阻止屏幕旋转。|
+|kioskModeAllowSleepButton|Boolean|指示在展台模式下是否允许使用睡眠按钮。 此属性的 funcitonality 是 OS 默认值的冗余, 已弃用。 请改用 KioskModeBlockSleepButton。|
+|kioskModeBlockSleepButton|Boolean|指示在展台模式下是否阻止使用 "睡眠" 按钮。|
+|kioskModeAllowTouchscreen|Boolean|指示在展台模式下是否允许使用触摸屏。 此属性的 funcitonality 是 OS 默认值的冗余, 已弃用。 请改用 KioskModeBlockTouchscreen。|
+|kioskModeBlockTouchscreen|Boolean|指示在展台模式下是否阻止使用触摸屏。|
 |kioskModeAllowVoiceOverSettings|Boolean|指示在展台模式下是否允许访问语音插入设置。|
-|kioskModeAllowVolumeButtons|Boolean|指示在展台模式下是否允许使用音量按钮。|
+|kioskModeAllowVolumeButtons|Boolean|指示在展台模式下是否允许使用音量按钮。 此属性的 funcitonality 是 OS 默认值的冗余, 已弃用。 请改用 KioskModeBlockVolumeButtons。|
 |kioskModeBlockVolumeButtons|Boolean|指示在展台模式下是否阻止音量按钮。|
 |kioskModeAllowZoomSettings|Boolean|指示在展台模式下是否允许访问缩放设置。|
 |kioskModeAppStoreUrl|String|指向 App Store 中要用于展台模式的应用的 URL。 如果 KioskModeManagedAppId 未知，请使用此方法。|
@@ -202,6 +207,8 @@ ms.locfileid: "32564209"
 |dateAndTimeForceSetAutomatically|Boolean|指示是否启用日期和时间 "设置自动设置" 功能, 以及用户是否无法关闭该功能 (iOS 12.0 及更高版本)。|
 |contactsAllowManagedToUnmanagedWrite|Boolean|指示托管应用程序是否可以将联系人写入非托管联系人帐户 (iOS 12.0 及更高版本)。|
 |contactsAllowUnmanagedToManagedRead|Boolean|指示非托管应用是否可以从托管联系人帐户读取 (iOS 12.0 或更高版本)。|
+|cellularBlockPersonalHotspotModification|Boolean|指示是否阻止用户修改个人热点设置 (iOS 12.2 或更高版本)。|
+|siriDisableServerLogging|Boolean|指示是否禁用服务器端 Siri 日志记录 (iOS 12.2 或更高版本)。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -333,11 +340,16 @@ ms.locfileid: "32564209"
   "kioskModeAllowAssistiveSpeak": true,
   "kioskModeAllowAssistiveTouchSettings": true,
   "kioskModeAllowAutoLock": true,
+  "kioskModeBlockAutoLock": true,
   "kioskModeAllowColorInversionSettings": true,
   "kioskModeAllowRingerSwitch": true,
+  "kioskModeBlockRingerSwitch": true,
   "kioskModeAllowScreenRotation": true,
+  "kioskModeBlockScreenRotation": true,
   "kioskModeAllowSleepButton": true,
+  "kioskModeBlockSleepButton": true,
   "kioskModeAllowTouchscreen": true,
+  "kioskModeBlockTouchscreen": true,
   "kioskModeAllowVoiceOverSettings": true,
   "kioskModeAllowVolumeButtons": true,
   "kioskModeBlockVolumeButtons": true,
@@ -475,10 +487,11 @@ ms.locfileid: "32564209"
   "passwordBlockAirDropSharing": true,
   "dateAndTimeForceSetAutomatically": true,
   "contactsAllowManagedToUnmanagedWrite": true,
-  "contactsAllowUnmanagedToManagedRead": true
+  "contactsAllowUnmanagedToManagedRead": true,
+  "cellularBlockPersonalHotspotModification": true,
+  "siriDisableServerLogging": true
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: androidWorkProfileCustomConfiguration 资源类型
 description: Android 工作配置文件自定义配置
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68c7272bb306bde7577212256fecc600b4291d3b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f0fe05544da44fe9420b5ad44a6178579ba768d5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562382"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947657"
 ---
 # <a name="androidworkprofilecustomconfiguration-resource-type"></a>androidWorkProfileCustomConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -87,7 +87,6 @@ Android 工作配置文件自定义配置
   ]
 }
 ```
-
 
 
 
