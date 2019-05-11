@@ -1,34 +1,34 @@
 ---
 title: 列出 macOSCustomConfigurations
 description: 列出 macOSCustomConfiguration 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4de0d92b80a243813996aef8c3482d30fe0d4d7d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6eb3d138bb53a3fa3157bed8276d4d864b6b1b23
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518791"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922878"
 ---
-# <a name="list-macoscustomconfigurations"></a><span data-ttu-id="93944-103">列出 macOSCustomConfigurations</span><span class="sxs-lookup"><span data-stu-id="93944-103">List macOSCustomConfigurations</span></span>
+# <a name="list-macoscustomconfigurations"></a><span data-ttu-id="c0240-103">列出 macOSCustomConfigurations</span><span class="sxs-lookup"><span data-stu-id="c0240-103">List macOSCustomConfigurations</span></span>
 
-> <span data-ttu-id="93944-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="93944-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c0240-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c0240-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="93944-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="93944-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c0240-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c0240-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="93944-106">列出 [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="93944-106">List properties and relationships of the [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) objects.</span></span>
+<span data-ttu-id="c0240-106">列出 [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) 对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="c0240-106">List properties and relationships of the [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="93944-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="93944-107">Prerequisites</span></span>
-<span data-ttu-id="93944-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="93944-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c0240-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="c0240-107">Prerequisites</span></span>
+<span data-ttu-id="c0240-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c0240-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="93944-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="93944-110">Permission type</span></span>|<span data-ttu-id="93944-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="93944-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c0240-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="c0240-110">Permission type</span></span>|<span data-ttu-id="c0240-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="c0240-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="93944-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="93944-112">Delegated (work or school account)</span></span>|<span data-ttu-id="93944-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="93944-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="93944-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="93944-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="93944-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="93944-115">Not supported.</span></span>|
-|<span data-ttu-id="93944-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="93944-116">Application</span></span>|<span data-ttu-id="93944-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="93944-117">Not supported.</span></span>|
+|<span data-ttu-id="c0240-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c0240-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c0240-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="c0240-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="c0240-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c0240-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c0240-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c0240-115">Not supported.</span></span>|
+|<span data-ttu-id="c0240-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="c0240-116">Application</span></span>|<span data-ttu-id="c0240-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="c0240-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="93944-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="93944-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c0240-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c0240-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +38,28 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="93944-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="93944-119">Request headers</span></span>
-|<span data-ttu-id="93944-120">标头</span><span class="sxs-lookup"><span data-stu-id="93944-120">Header</span></span>|<span data-ttu-id="93944-121">值</span><span class="sxs-lookup"><span data-stu-id="93944-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c0240-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="c0240-119">Request headers</span></span>
+|<span data-ttu-id="c0240-120">标头</span><span class="sxs-lookup"><span data-stu-id="c0240-120">Header</span></span>|<span data-ttu-id="c0240-121">值</span><span class="sxs-lookup"><span data-stu-id="c0240-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="93944-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="93944-122">Authorization</span></span>|<span data-ttu-id="93944-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="93944-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="93944-124">接受</span><span class="sxs-lookup"><span data-stu-id="93944-124">Accept</span></span>|<span data-ttu-id="93944-125">application/json</span><span class="sxs-lookup"><span data-stu-id="93944-125">application/json</span></span>|
+|<span data-ttu-id="c0240-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c0240-122">Authorization</span></span>|<span data-ttu-id="c0240-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="c0240-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c0240-124">接受</span><span class="sxs-lookup"><span data-stu-id="c0240-124">Accept</span></span>|<span data-ttu-id="c0240-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c0240-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="93944-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="93944-126">Request body</span></span>
-<span data-ttu-id="93944-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="93944-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c0240-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c0240-126">Request body</span></span>
+<span data-ttu-id="c0240-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c0240-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="93944-128">响应</span><span class="sxs-lookup"><span data-stu-id="93944-128">Response</span></span>
-<span data-ttu-id="93944-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="93944-129">If successful, this method returns a `200 OK` response code and a collection of [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c0240-128">响应</span><span class="sxs-lookup"><span data-stu-id="c0240-128">Response</span></span>
+<span data-ttu-id="c0240-129">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) 对象集合。</span><span class="sxs-lookup"><span data-stu-id="c0240-129">If successful, this method returns a `200 OK` response code and a collection of [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="93944-130">示例</span><span class="sxs-lookup"><span data-stu-id="93944-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c0240-130">示例</span><span class="sxs-lookup"><span data-stu-id="c0240-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="93944-131">请求</span><span class="sxs-lookup"><span data-stu-id="93944-131">Request</span></span>
-<span data-ttu-id="93944-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="93944-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c0240-131">请求</span><span class="sxs-lookup"><span data-stu-id="c0240-131">Request</span></span>
+<span data-ttu-id="c0240-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c0240-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="93944-133">响应</span><span class="sxs-lookup"><span data-stu-id="93944-133">Response</span></span>
-<span data-ttu-id="93944-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="93944-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c0240-133">响应</span><span class="sxs-lookup"><span data-stu-id="c0240-133">Response</span></span>
+<span data-ttu-id="c0240-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c0240-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -86,7 +86,6 @@ Content-Length: 634
   ]
 }
 ```
-
 
 
 
