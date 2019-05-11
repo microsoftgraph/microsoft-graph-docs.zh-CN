@@ -1,19 +1,19 @@
 ---
 title: 获取 importedWindowsAutopilotDeviceIdentity
 description: 读取 importedWindowsAutopilotDeviceIdentity 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 786533d0c65b623c00e9326336f9993339033fb2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6448fb6868c6669e09cdd9bcd242c0e137e5dcaa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532679"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908334"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>获取 importedWindowsAutopilotDeviceIdentity
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDe
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 671
+Content-Length: 743
 
 {
   "value": {
@@ -83,11 +83,11 @@ Content-Length: 671
       "deviceRegistrationId": "Device Registration Id value",
       "deviceErrorCode": 15,
       "deviceErrorName": "Device Error Name value"
-    }
+    },
+    "assignedUserPrincipalName": "Assigned User Principal Name value"
   }
 }
 ```
-
 
 
 

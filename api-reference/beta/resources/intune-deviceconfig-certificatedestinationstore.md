@@ -1,19 +1,19 @@
 ---
 title: certificateDestinationStore 枚举类型
 description: 证书目标存储的可能值。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36571d1cefbedfb0da37c018755356e3354ad777
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 641ea734cb352a81fa169f6251bcd8ab8f6663ce
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549396"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947454"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>certificateDestinationStore 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,8 +24,7 @@ ms.locfileid: "32549396"
 |:---|:---|:---|
 |computerCertStoreRoot|0|计算机证书存储-根。|
 |computerCertStoreIntermediate|1|计算机证书存储-中级。|
-|userCertStoreIntermediate|2 |用户证书存储-中级。|
-
+|userCertStoreIntermediate|双面|用户证书存储-中级。|
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: 创建 dataSharingConsent
 description: 创建新的 dataSharingConsent 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a242d5c8058af72ba7c78cf3a613534db887c97
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 83928d0ee472d4c902ac7df75a17ab1cebe66ff3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466033"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910176"
 ---
 # <a name="create-datasharingconsent"></a>创建 dataSharingConsent
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,12 +51,12 @@ POST /deviceManagement/dataSharingConsents
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|数据共享同意 Id|
-|serviceDisplayName|字符串|服务工作流的显示名称|
-|termsUrl|字符串|数据共享同意的 TermsUrl|
-|granted|布尔|"数据共享同意" 的 "已授予" 状态|
+|serviceDisplayName|String|服务工作流的显示名称|
+|termsUrl|String|数据共享同意的 TermsUrl|
+|granted|Boolean|"数据共享同意" 的 "已授予" 状态|
 |grantDateTime|DateTimeOffset|授予此帐户的时间许可|
-|grantedByUpn|字符串|授予此帐户同意的用户的 Upn|
-|grantedByUserId|字符串|授予此帐户同意的用户的用户 id|
+|grantedByUpn|String|授予此帐户同意的用户的 Upn|
+|grantedByUserId|String|授予此帐户同意的用户的用户 Id|
 
 
 
@@ -101,7 +101,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

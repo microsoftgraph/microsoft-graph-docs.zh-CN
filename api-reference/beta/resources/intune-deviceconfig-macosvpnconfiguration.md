@@ -1,23 +1,23 @@
 ---
 title: macOSVpnConfiguration 资源类型
-description: 通过提供此配置文件中的配置, 可以指示 Mac 设备连接到所需的 VPN 终结点。 通过指定 vpn 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 VPN 连接。
-author: tfitzmac
+description: 通过提供此配置文件中的配置, 可以指示 Mac 设备连接到所需的 VPN 终结点。 通过指定 VPN 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 VPN 连接。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fb1ab7e8625ad79b83d3930e45d6241d30deb04
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d55888bebf472360591477fd8ba23e96c4c98d3d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570671"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944976"
 ---
 # <a name="macosvpnconfiguration-resource-type"></a>macOSVpnConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-通过提供此配置文件中的配置, 可以指示 Mac 设备连接到所需的 VPN 终结点。 通过指定 vpn 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 VPN 连接。
+通过提供此配置文件中的配置, 可以指示 Mac 设备连接到所需的 VPN 终结点。 通过指定 VPN 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 VPN 连接。
 
 
 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)
@@ -48,13 +48,13 @@ ms.locfileid: "32570671"
 |role|String|将 "连接类型" 设置为 "脉冲安全" 时的角色。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |型|String|连接类型设置为脉冲安全时的领域。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |服务器主板|[vpnServer](../resources/intune-deviceconfig-vpnserver.md)|网络上的 VPN 服务器。 请确保最终用户可以访问此网络位置。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|标识符|String|当连接类型设置为自定义 vpn 时, 由 VPN 供应商提供的标识符。 例如: Cisco AnyConnect 使用从[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)继承的 AnyConnect applevpn 的标识符。|
+|标识符|String|当连接类型设置为自定义 VPN 时, 由 VPN 供应商提供的标识符。 例如: Cisco AnyConnect 使用从[AppleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)继承的 AnyConnect applevpn 的标识符。|
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) 集合|将连接类型设置为自定义 VPN 时的自定义数据。 使用此字段启用 Intune 不支持的功能, 但在你的 VPN 解决方案中可用。 请与你的 VPN 供应商联系, 了解如何添加这些键/值对。 此集合最多可包含25个元素。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|将连接类型设置为自定义 VPN 时的自定义数据。 使用此字段启用 Intune 不支持的功能, 但在你的 VPN 解决方案中可用。 请与你的 VPN 供应商联系, 了解如何添加这些键/值对。 此集合最多可包含25个元素。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |enableSplitTunneling|Boolean|通过 VPN 发送所有网络流量。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|此 VPN 连接的身份验证方法。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)。 可取值为：`certificate`、`usernameAndPassword`。|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|此 VPN 连接的身份验证方法。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)。 可取值为：`certificate`、`usernameAndPassword`、`derivedCredential`。|
 |enablePerApp|Boolean|将此设置为 true 将创建每个应用程序 VPN 有效负载, 以后可将其与可在最终用户的 iOS 设备上触发此 VPN 连接的应用程序相关联。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|safariDomains|String collection|启用此 VPN 每应用程序设置时的 Safari 域。 除了与此 vpn 关联的应用程序之外, 此处指定的 Safari 域还将能够触发此 vpn 连接。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|safariDomains|String collection|启用此 VPN 每应用程序设置时的 Safari 域。 除了与此 VPN 关联的应用程序之外, 此处指定的 Safari 域还将能够触发此 VPN 连接。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |onDemandRules|[vpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md)集合|按需规则。 该集合最多可包含 500 个元素。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|代理服务器。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |optInToDeviceIdSharing|Boolean|选择将设备的 Id 共享到第三方 vpn 客户端, 以便在网络访问控制验证期间使用。 继承自[appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
@@ -151,7 +151,6 @@ ms.locfileid: "32570671"
   "optInToDeviceIdSharing": true
 }
 ```
-
 
 
 

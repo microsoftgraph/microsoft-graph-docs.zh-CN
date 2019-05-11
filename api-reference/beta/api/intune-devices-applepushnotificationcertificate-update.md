@@ -1,19 +1,19 @@
 ---
 title: 更新 applePushNotificationCertificate
 description: 更新 applePushNotificationCertificate 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d87a60747fce6eb85cb50439eb14f14a207280d8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9446dafefaa98a421bcc11148dc6f651a6806eae
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466138"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910558"
 ---
 # <a name="update-applepushnotificationcertificate"></a>更新 applePushNotificationCertificate
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,12 +51,12 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|证书的唯一标识符|
-|appleIdentifier|字符串|用于创建 MDM 推送证书的帐户 Apple ID。|
+|appleIdentifier|String|用于创建 MDM 推送证书的帐户 Apple ID。|
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
-|certificateUploadStatus|字符串|证书上载状态。|
-|certificateUploadFailureReason|字符串|证书上传失败的原因。|
+|certificateUploadStatus|String|证书上载状态。|
+|certificateUploadFailureReason|String|证书上传失败的原因。|
 |证书|String|尚未记录|
 
 
@@ -103,7 +103,6 @@ Content-Length: 529
   "certificate": "Certificate value"
 }
 ```
-
 
 
 

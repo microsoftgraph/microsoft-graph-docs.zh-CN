@@ -1,19 +1,19 @@
 ---
 title: settingStateDeviceSummary 资源类型
 description: 设置状态的设备合规性策略和配置摘要
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f233b285fa9967dca03406c3ca7c649773e9832
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 26d0c2d39d79a81e419141087e508497c91f4e03
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464934"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944731"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -32,7 +32,7 @@ ms.locfileid: "32464934"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|settingName|字符串|设置的名称|
+|settingName|String|设置的名称|
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|
 |notApplicableDeviceCount|Int32|设置的设备不可用计数|
@@ -68,7 +68,6 @@ ms.locfileid: "32464934"
   "conflictDeviceCount": 1024
 }
 ```
-
 
 
 

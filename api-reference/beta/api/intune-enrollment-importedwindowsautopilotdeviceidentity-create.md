@@ -1,19 +1,19 @@
 ---
 title: 创建 importedWindowsAutopilotDeviceIdentity
 description: 创建新的 importedWindowsAutopilotDeviceIdentity 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7a35693408b214d028af90945e0d3179af83395
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2dcd78ce37bdc4718bb69ed324ab34c12d2c7096
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532721"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908418"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>创建 importedWindowsAutopilotDeviceIdentity
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -58,6 +58,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 |importId|String|Windows autopilot 设备的导入 Id。|
 |hardwareIdentifier|Binary|Windows autopilot 设备硬件 Blob。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
+|assignedUserPrincipalName|String|将为设备分配的用户的 UPN|
 
 
 
@@ -71,7 +72,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 575
+Content-length: 645
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
@@ -86,7 +87,8 @@ Content-length: 575
     "deviceRegistrationId": "Device Registration Id value",
     "deviceErrorCode": 15,
     "deviceErrorName": "Device Error Name value"
-  }
+  },
+  "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
 
@@ -95,7 +97,7 @@ Content-length: 575
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 624
+Content-Length: 694
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
@@ -111,10 +113,10 @@ Content-Length: 624
     "deviceRegistrationId": "Device Registration Id value",
     "deviceErrorCode": 15,
     "deviceErrorName": "Device Error Name value"
-  }
+  },
+  "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 

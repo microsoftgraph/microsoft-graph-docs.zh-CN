@@ -1,19 +1,19 @@
 ---
 title: windows10CompliancePolicy 资源类型
 description: 此类包含 Windows 10 的合规性设置。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f9f53d5cf1ea9f89aae477a121cd183ec32c773
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d27f7dd07342b930c47a3293489e74dc8fc08b6a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572190"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944360"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>windows10CompliancePolicy 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -61,16 +61,17 @@ ms.locfileid: "32572190"
 |codeIntegrityEnabled|Boolean|要求设备由 Windows 设备运行状况证明报告为正常。|
 |storageRequireEncryption|Boolean|要求对 Windows 设备加密。|
 |activeFirewallRequired|Boolean|在 Windows 设备上需要活动防火墙。|
-|defenderEnabled|Boolean|在 windows 设备上需要 windows Defender 反恶意软件。|
-|defenderVersion|String|在 windows 设备上要求 windows Defender 反恶意软件的最低版本。|
-|signatureOutOfDate|Boolean|windows 设备上要求 windows Defender 反恶意软件签名为最新。|
-|rtpEnabled|Boolean|在 windows 设备上需要 windows Defender 反恶意软件实时保护。|
+|defenderEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件。|
+|defenderVersion|String|在 Windows 设备上要求 Windows Defender 反恶意软件的最低版本。|
+|signatureOutOfDate|Boolean|Windows 设备上要求 Windows Defender 反恶意软件签名为最新。|
+|rtpEnabled|Boolean|在 Windows 设备上需要 Windows Defender 反恶意软件实时保护。|
 |antivirusRequired|Boolean|要求在 Windows Decurity Center 中注册的任何防病毒解决方案都处于启用和监控 (例如, Symantec、Windows Defender)。|
 |antiSpywareRequired|Boolean|要求在 Windows Decurity Center 中注册的任何反间谍软件解决方案都处于启用和监控 (例如, Symantec、Windows Defender)。|
 |validOperatingSystemBuildRanges|[operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)集合|Windows 设备上的有效操作系统内部版本范围。 该集合最多可包含 10000 个元素。|
 |deviceThreatProtectionEnabled|Boolean|要求设备已启用设备威胁防护。|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|需要设备威胁防护最低风险级别来报告不合规。 可取值为：`unavailable`、`secured`、`low`、`medium`、`high`、`notSet`。|
 |configurationManagerComplianceRequired|Boolean|需要考虑将 SCCM 合规性状态考虑到 Intune 合规性状态。|
+|tpmRequired|Boolean|要求存在受信任的平台模块 (TPM)。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -139,10 +140,10 @@ ms.locfileid: "32572190"
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
-  "configurationManagerComplianceRequired": true
+  "configurationManagerComplianceRequired": true,
+  "tpmRequired": true
 }
 ```
-
 
 
 

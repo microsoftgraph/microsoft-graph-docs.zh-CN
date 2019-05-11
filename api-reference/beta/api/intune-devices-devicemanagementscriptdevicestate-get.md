@@ -1,19 +1,19 @@
 ---
 title: 获取 deviceManagementScriptDeviceState
 description: 读取 deviceManagementScriptDeviceState 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 434aac6cdd479ca6d1ba9b3c6f4cebd75e0f555c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ba27d543e7eaa7632dc716ffe8ea65feb2806b60
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465753"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909867"
 ---
 # <a name="get-devicemanagementscriptdevicestate"></a>获取 deviceManagementScriptDeviceState
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -80,7 +80,6 @@ Content-Length: 363
   }
 }
 ```
-
 
 
 

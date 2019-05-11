@@ -1,19 +1,19 @@
 ---
 title: 更新 remoteActionAudit
 description: 更新 remoteActionAudit 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6cfae09fc5dd7e90e2109a5a858a25b062922df1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bcad57e03d23de9b3769dbf4b6d640a4cb44e02d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523782"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909364"
 ---
 # <a name="update-remoteactionaudit"></a>更新 remoteActionAudit
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -107,7 +107,6 @@ Content-Length: 504
   "actionState": "pending"
 }
 ```
-
 
 
 

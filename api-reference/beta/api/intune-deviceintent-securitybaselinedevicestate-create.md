@@ -1,19 +1,19 @@
 ---
 title: 创建 securityBaselineDeviceState
 description: 创建新的 securityBaselineDeviceState 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0b816fb81d85536dcb220b5cb7fc3483549ab85
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 871c2b5ce94ef19580cc89bc23c6bc16541bb25a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466600"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33914574"
 ---
 # <a name="create-securitybaselinedevicestate"></a>创建 securityBaselineDeviceState
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,7 +51,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的唯一标识符|
-|managedDeviceId|字符串|Intune 设备 id|
+|managedDeviceId|String|Intune 设备 id|
 |deviceDisplayName|String|设备的显示名称|
 |userPrincipalName|String|用户主体名称|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|安全基准合规性状态。 可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
@@ -98,7 +98,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

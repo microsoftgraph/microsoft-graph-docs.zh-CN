@@ -1,19 +1,19 @@
 ---
 title: deliveryOptimizationMaxCacheSizeAbsolute 资源类型
 description: 传递优化最大缓存大小绝对类型。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a955197e1e75ecb1f953f5ddc50b33b7e01a574b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 285c1830065d18669bd6d3d02d615400af27e231
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565875"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947188"
 ---
 # <a name="deliveryoptimizationmaxcachesizeabsolute-resource-type"></a>deliveryOptimizationMaxCacheSizeAbsolute 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -44,7 +44,6 @@ ms.locfileid: "32565875"
   "maximumCacheSizeInGigabytes": 1024
 }
 ```
-
 
 
 

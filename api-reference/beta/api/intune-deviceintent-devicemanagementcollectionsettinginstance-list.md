@@ -1,19 +1,19 @@
 ---
 title: 列出 deviceManagementCollectionSettingInstances
 description: 列出 deviceManagementCollectionSettingInstance 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f60ec11a7e874027af9b0cbf8e1ecc5db006b0d4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 00d11981862aa77fa0271e4d5b081aec775eb09d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509924"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916662"
 ---
 # <a name="list-devicemanagementcollectionsettinginstances"></a>列出 deviceManagementCollectionSettingInstances
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -78,7 +78,6 @@ Content-Length: 259
   ]
 }
 ```
-
 
 
 

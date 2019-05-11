@@ -1,19 +1,19 @@
 ---
 title: 创建 restrictedAppsViolation
 description: 创建新的 restrictedAppsViolation 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b1c207bc34403f831d86d9849faf2287210d7bb5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5aea694e901948a7c288083f5372bde2dd68f494
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518182"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922688"
 ---
 # <a name="create-restrictedappsviolation"></a>创建 restrictedAppsViolation
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,13 +50,13 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
-|userId|字符串|用户唯一标识符, 必须为 Guid|
+|id|字符串|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
+|userId|String|用户唯一标识符, 必须为 Guid|
 |userName|String|用户名|
-|managedDeviceId|字符串|托管设备唯一标识符, 必须为 Guid|
-|deviceName|字符串|设备名称|
-|deviceConfigurationId|字符串|设备配置文件唯一标识符, 必须为 Guid|
-|deviceConfigurationName|字符串|设备配置文件名称|
+|managedDeviceId|String|托管设备唯一标识符, 必须为 Guid|
+|deviceName|String|设备名称|
+|deviceConfigurationId|String|设备配置文件唯一标识符, 必须为 Guid|
+|deviceConfigurationName|String|设备配置文件名称|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|平台类型。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|受限制的应用程序状态。 可取值为：`prohibitedApps`、`notApprovedApps`。|
 |restrictedApps|[managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)集合|违反受限制的应用程序的列表|
@@ -120,7 +120,6 @@ Content-Length: 613
   ]
 }
 ```
-
 
 
 

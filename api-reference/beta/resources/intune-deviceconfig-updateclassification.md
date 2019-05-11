@@ -1,19 +1,19 @@
 ---
 title: updateClassification 枚举类型
 description: 自动更新分类的可能值。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc068892b37eb3b3e3ce29cfbc2ce8c8e1aaf2da
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1851ed4dda3d0af631632c1a2e8234794628cbe
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548493"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944640"
 ---
 # <a name="updateclassification-enum-type"></a>updateClassification 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,9 +24,8 @@ ms.locfileid: "32548493"
 |:---|:---|:---|
 |定制|0|用户定义, 默认值, 无意向。|
 |recommendedAndImportant|1|建议和重要。|
-|重要|2 |重要.|
-|无|3 |无。|
-
+|重要|双面|重要.|
+|无|第三章|无。|
 
 
 

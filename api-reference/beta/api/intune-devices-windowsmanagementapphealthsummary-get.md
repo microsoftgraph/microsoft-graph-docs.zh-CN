@@ -1,19 +1,19 @@
 ---
 title: 获取 windowsManagementAppHealthSummary
 description: 读取 windowsManagementAppHealthSummary 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55553e438797b93ba123ba62602677790785b284
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b83bbf7b9cc3ad4e8d079d380eccc8c9bc7cb44
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534232"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909013"
 ---
 # <a name="get-windowsmanagementapphealthsummary"></a>获取 windowsManagementAppHealthSummary
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -77,7 +77,6 @@ Content-Length: 239
   }
 }
 ```
-
 
 
 

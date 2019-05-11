@@ -1,19 +1,19 @@
 ---
 title: windows10NetworkBoundaryConfiguration 资源类型
 description: Windows10 网络边界配置
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fac3952488b5004a74286d337f04a8aa6038b174
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7231e7c1d8c509058fb18f6958e39f48cc84e4fa
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572043"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944290"
 ---
 # <a name="windows10networkboundaryconfiguration-resource-type"></a>windows10NetworkBoundaryConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -109,7 +109,6 @@ Windows10 网络边界配置
   }
 }
 ```
-
 
 
 

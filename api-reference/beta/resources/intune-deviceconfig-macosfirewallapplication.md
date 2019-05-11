@@ -1,19 +1,19 @@
 ---
 title: macOSFirewallApplication 资源类型
 description: 表示 macOS 防火墙应用程序列表中的应用程序
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45d8742a888eb492b71bf9829b9621bde9608ef5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9eb1f77bdadf62ddf6ac5362653ddb7d535f8c85
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460476"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946182"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>macOSFirewallApplication 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -23,7 +23,7 @@ ms.locfileid: "32460476"
 |属性|类型|说明|
 |:---|:---|:---|
 |bundleId|String|应用程序的 BundleId。|
-|allowsIncomingConnections|布尔|是否允许传入连接。|
+|allowsIncomingConnections|Boolean|是否允许传入连接。|
 
 ## <a name="relationships"></a>关系
 无
@@ -42,7 +42,6 @@ ms.locfileid: "32460476"
   "allowsIncomingConnections": true
 }
 ```
-
 
 
 

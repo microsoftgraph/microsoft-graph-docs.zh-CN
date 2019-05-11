@@ -1,19 +1,19 @@
 ---
 title: 键值资源类型
 description: 项值定义。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 317736fd016ca457a7fad9536ce71f00b6954b3b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 592f3ff070ab7440d5c16d5380b556993915e6ec
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460504"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946115"
 ---
 # <a name="keyvalue-resource-type"></a>键值资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -22,7 +22,7 @@ ms.locfileid: "32460504"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|Key|字符串|键。|
+|Key|String|键。|
 |value|String|值。|
 
 ## <a name="relationships"></a>关系
@@ -42,7 +42,6 @@ ms.locfileid: "32460504"
   "value": "String"
 }
 ```
-
 
 
 

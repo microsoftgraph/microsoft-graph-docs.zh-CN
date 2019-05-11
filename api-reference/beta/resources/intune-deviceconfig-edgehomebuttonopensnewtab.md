@@ -1,19 +1,19 @@
 ---
 title: edgeHomeButtonOpensNewTab 资源类型
 description: 显示 "主页" 按钮;单击 "主页" 按钮将加载新的选项卡页。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e91c7f4347a26d8bd7cf0265a90d6ac1fd42ca6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 76951c80da374a69a62c45b2676e3f36794d4bb2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524378"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946754"
 ---
 # <a name="edgehomebuttonopensnewtab-resource-type"></a>edgeHomeButtonOpensNewTab 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -41,7 +41,6 @@ ms.locfileid: "32524378"
   "@odata.type": "#microsoft.graph.edgeHomeButtonOpensNewTab"
 }
 ```
-
 
 
 

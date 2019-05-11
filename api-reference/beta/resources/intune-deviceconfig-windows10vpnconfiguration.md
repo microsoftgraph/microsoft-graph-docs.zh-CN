@@ -1,23 +1,23 @@
 ---
 title: windows10VpnConfiguration 资源类型
-description: 通过提供此配置文件中的配置, 可以指示 Windows 10 设备 (桌面或移动版) 连接到所需的 VPN 终结点。 通过指定 vpn 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 VPN 连接。
-author: tfitzmac
+description: 通过提供此配置文件中的配置, 可以指示 Windows 10 设备 (桌面或移动版) 连接到所需的 VPN 终结点。 通过指定 VPN 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 VPN 连接。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88d32aedb16516f7659ff6e8094172e4a59f6345
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 12d4e7ffb0f2957116d5e7c8ad6a2eb6f9fd0939
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572015"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944248"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>windows10VpnConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-通过提供此配置文件中的配置, 可以指示 Windows 10 设备 (桌面或移动版) 连接到所需的 VPN 终结点。 通过指定 vpn 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 VPN 连接。
+通过提供此配置文件中的配置, 可以指示 Windows 10 设备 (桌面或移动版) 连接到所需的 VPN 终结点。 通过指定 VPN 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 VPN 连接。
 
 
 继承自[windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)
@@ -51,7 +51,7 @@ ms.locfileid: "32572015"
 |enableAlwaysOn|Boolean|启用始终打开模式。|
 |enableDeviceTunnel|Boolean|启用设备隧道。|
 |enableDnsRegistration|Boolean|使用内部 DNS 启用 IP 地址注册。|
-|dnsSuffixes|String collection|指定要添加到 dns 搜索列表以正确路由短名称的 dns 后缀。|
+|dnsSuffixes|String collection|指定要添加到 DNS 搜索列表以正确路由短名称的 DNS 后缀。|
 |authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|身份验证方法。 可取值为：`certificate`、`usernameAndPassword`、`customEapXml`。|
 |rememberUserCredentials|Boolean|记住用户凭据。|
 |enableConditionalAccess|Boolean|启用条件访问。|
@@ -210,7 +210,6 @@ ms.locfileid: "32572015"
   ]
 }
 ```
-
 
 
 

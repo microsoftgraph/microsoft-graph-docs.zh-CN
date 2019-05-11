@@ -1,19 +1,19 @@
 ---
 title: deviceComplianceActionType 枚举类型
 description: 计划操作类型枚举
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba07cb2b0fe076642cb1157a5d5df09a04a63a47
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37caa3ca741c752a67a9f90222856b31fa4978c3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566029"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947202"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,13 +24,12 @@ ms.locfileid: "32566029"
 |:---|:---|:---|
 |noAction|0|无操作|
 |通告|1|发送通知|
-|数据|2 |阻止 AAD 中的设备|
-|注销|3 |停用设备|
-|擦|4 |擦除设备|
-|removeResourceAccessProfiles|5 |从设备中删除资源访问配置文件|
-|pushNotification|9 |将推送通知发送到设备|
+|数据|双面|阻止 AAD 中的设备|
+|注销|第三章|停用设备|
+|擦|4|擦除设备|
+|removeResourceAccessProfiles|5|从设备中删除资源访问配置文件|
+|pushNotification|第|将推送通知发送到设备|
 |remoteLock|10 |远程锁定设备|
-
 
 
 

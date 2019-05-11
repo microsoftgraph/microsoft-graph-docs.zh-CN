@@ -1,19 +1,19 @@
 ---
 title: 获取 embeddedSIMActivationCodePoolAssignment
 description: 读取 embeddedSIMActivationCodePoolAssignment 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94e8a666ba39ea542a824a6f8ebf92a2de427493
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 12df6bb112fd39a7f07e23a08589466bdc2c8e35
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532364"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905572"
 ---
 # <a name="get-embeddedsimactivationcodepoolassignment"></a>获取 embeddedSIMActivationCodePoolAssignment
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -77,7 +77,6 @@ Content-Length: 257
   }
 }
 ```
-
 
 
 

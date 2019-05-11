@@ -1,19 +1,19 @@
 ---
 title: 获取 windowsManagedDevice
 description: 读取 windowsManagedDevice 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4adf947d4ac03e131dbcf1aa1ec262ce7666757f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 28c83abd49862408fa0ebcfef039b17248541e89
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32525325"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909216"
 ---
 # <a name="get-windowsmanageddevice"></a>获取 windowsManagedDevice
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7629
+Content-Length: 7693
 
 {
   "value": {
@@ -212,6 +212,7 @@ Content-Length: 7629
     "freeStorageSpaceInBytes": 7,
     "managedDeviceName": "Managed Device Name value",
     "partnerReportedThreatState": "activated",
+    "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
     "usersLoggedOn": [
       {
         "@odata.type": "microsoft.graph.loggedOnUser",
@@ -240,7 +241,6 @@ Content-Length: 7629
   }
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: deviceManagementSettings 资源类型
 description: 尚未记录
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eba8ec934a29b78d7e6ca11f288a1bd787338d2b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 079d957d14e5f891af691ba7b41916adb8ac9669
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567191"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33946964"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>deviceManagementSettings 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "32567191"
 |secureByDefault|Boolean|它为 true 时，如果不存在目标符合性策略，则设备应为不符合。|
 |enhancedJailBreak|Boolean|功能是否已启用或不适用于增强的 jailbreak 检测。|
 |deviceInactivityBeforeRetirementInDay|Int32|如果设备在指定天数内未签入, 则可能会删除公司数据, 并且设备将不受管理。 有效值为30至270|
-|derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|要用于此帐户的派生的凭据提供程序。 可取值为：`notConfigured`、`entrustDataCard`、`purebred`、`xTec` 或 `intercede`。|
+|derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|要用于此帐户的派生的凭据提供程序。 可取值为：`notConfigured`、`entrustDataCard`、`purebred`、`xTec`、`intercede`。|
 |derivedCredentialUrl|String|派生的凭据提供程序自助服务 URI。|
 
 ## <a name="relationships"></a>关系
@@ -52,7 +52,6 @@ ms.locfileid: "32567191"
   "derivedCredentialUrl": "String"
 }
 ```
-
 
 
 

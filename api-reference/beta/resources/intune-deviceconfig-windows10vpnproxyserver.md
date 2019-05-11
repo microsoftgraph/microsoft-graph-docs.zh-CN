@@ -1,19 +1,19 @@
 ---
 title: windows10VpnProxyServer 资源类型
 description: VPN 代理服务器。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 212bafa99a51e269716978cafa4fcf274dd76579
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 56b9177c19ec089a3c93bd388084ae20d7865ace
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572022"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944206"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>windows10VpnProxyServer 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,7 +27,7 @@ VPN 代理服务器。
 |:---|:---|:---|
 |automaticConfigurationScriptUrl|String|代理的自动配置脚本 url。 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|处理. 继承自[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|端口|Int32|端口. 从[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)继承的有效值为0至65535|
+|端口|Int32|端口. 从[VpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)继承的有效值为0至65535|
 |bypassProxyServerForLocalAddress|Boolean|对本地地址绕过代理服务器。|
 
 ## <a name="relationships"></a>关系
@@ -49,7 +49,6 @@ VPN 代理服务器。
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
 
 
 

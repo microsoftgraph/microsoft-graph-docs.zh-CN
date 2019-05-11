@@ -1,19 +1,19 @@
 ---
 title: restrictedAppsViolation 资源类型
 description: 每个用户的每个设备违反受限制的应用配置文件
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 067b801d917435c1ff9d3722d078609f2c626baf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0a519399cebd0af6cb5a0b9b0f1b75b346e24764
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548682"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944780"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>restrictedAppsViolation 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "32548682"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
+|id|字符串|对象的唯一标识符。 由 accountId、deviceId、policyId 和 userId 组成|
 |userId|String|用户唯一标识符, 必须为 Guid|
 |userName|String|用户名|
 |managedDeviceId|String|托管设备唯一标识符, 必须为 Guid|
@@ -73,7 +73,6 @@ ms.locfileid: "32548682"
   ]
 }
 ```
-
 
 
 

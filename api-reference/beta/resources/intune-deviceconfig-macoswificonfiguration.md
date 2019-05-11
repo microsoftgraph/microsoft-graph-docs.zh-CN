@@ -1,23 +1,23 @@
 ---
 title: macOSWiFiConfiguration 资源类型
-description: 通过提供此配置文件中的配置, 可以指示 macOS 设备连接到所需的 wlan 终结点。 通过指定 wi-fi 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 wi-fi 连接。
-author: tfitzmac
+description: 通过提供此配置文件中的配置, 可以指示 macOS 设备连接到所需的 Wlan 终结点。 通过指定 Wi-fi 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 Wi-fi 连接。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f64e9777cd5c14a21cdc8c3463de399cad7136b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f012bcda0916bbd76046f8fa23c13c38b1c9d17a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570699"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944920"
 ---
 # <a name="macoswificonfiguration-resource-type"></a>macOSWiFiConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-通过提供此配置文件中的配置, 可以指示 macOS 设备连接到所需的 wlan 终结点。 通过指定 wi-fi 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 wi-fi 连接。
+通过提供此配置文件中的配置, 可以指示 macOS 设备连接到所需的 Wlan 终结点。 通过指定 Wi-fi 终结点预期的身份验证方法和安全类型, 可以为最终用户进行无缝的 Wi-fi 连接。
 
 
 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
@@ -43,15 +43,15 @@ ms.locfileid: "32570699"
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |networkName|String|网络名称|
-|ssid|String|这是广播到所有设备的 wi-fi 网络的名称。|
-|connectAutomatically|Boolean|当此网络在范围内时自动连接。 将此设置为 true 将跳过用户提示, 并自动将设备连接到 wlan 网络。|
+|ssid|String|这是广播到所有设备的 Wi-fi 网络的名称。|
+|connectAutomatically|Boolean|当此网络在范围内时自动连接。 将此设置为 true 将跳过用户提示, 并自动将设备连接到 Wlan 网络。|
 |connectWhenNetworkNameIsHidden|Boolean|网络未广播其名称 (SSID) 时连接。 当设置为 true 时, 此配置文件将强制设备连接到不会将其 SSID 广播给所有设备的网络。|
-|wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|指示 wi-fi 终结点是否使用基于 EAP 的安全类型。 可取值为：`open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
-|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|此 wlan 连接的代理类型。 可取值为：`none`、`manual`、`automatic`。|
+|wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|指示 Wi-fi 终结点是否使用基于 EAP 的安全类型。 可取值为：`open`、`wpaPersonal`、`wpaEnterprise`、`wep`、`wpa2Personal`、`wpa2Enterprise`。|
+|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|此 Wlan 连接的代理类型。 可取值为：`none`、`manual`、`automatic`。|
 |proxyManualAddress|String|选择手动配置时代理服务器的 IP 地址或 DNS 主机名。|
 |proxyManualPort|Int32|选择手动配置时代理服务器的端口。|
 |proxyAutomaticConfigurationUrl|String|选择 "自动配置" 时代理服务器的 "自动配置" 脚本的 URL。 此 URL 通常是 PAC (代理自动配置) 文件的位置。|
-|preSharedKey|String|这是 WPA 个人 wi-fi 网络的预共享密钥。|
+|preSharedKey|String|这是 WPA 个人 Wi-fi 网络的预共享密钥。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -97,7 +97,6 @@ ms.locfileid: "32570699"
   "preSharedKey": "String"
 }
 ```
-
 
 
 
