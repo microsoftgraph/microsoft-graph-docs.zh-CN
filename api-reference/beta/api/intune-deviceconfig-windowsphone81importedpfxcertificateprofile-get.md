@@ -1,34 +1,34 @@
 ---
 title: 获取 windowsPhone81ImportedPFXCertificateProfile
 description: 读取 windowsPhone81ImportedPFXCertificateProfile 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 199263173cdc352c792df4906fb70dda0eb7c257
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 11a2906af5eee43e43129cda48e575fe1d66cae2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32512654"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917728"
 ---
-# <a name="get-windowsphone81importedpfxcertificateprofile"></a><span data-ttu-id="f9554-103">获取 windowsPhone81ImportedPFXCertificateProfile</span><span class="sxs-lookup"><span data-stu-id="f9554-103">Get windowsPhone81ImportedPFXCertificateProfile</span></span>
+# <a name="get-windowsphone81importedpfxcertificateprofile"></a><span data-ttu-id="fafda-103">获取 windowsPhone81ImportedPFXCertificateProfile</span><span class="sxs-lookup"><span data-stu-id="fafda-103">Get windowsPhone81ImportedPFXCertificateProfile</span></span>
 
-> <span data-ttu-id="f9554-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="f9554-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="fafda-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="fafda-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="f9554-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="f9554-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="fafda-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="fafda-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f9554-106">读取[windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="f9554-106">Read properties and relationships of the [windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md) object.</span></span>
+<span data-ttu-id="fafda-106">读取[windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="fafda-106">Read properties and relationships of the [windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="f9554-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="f9554-107">Prerequisites</span></span>
-<span data-ttu-id="f9554-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f9554-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="fafda-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="fafda-107">Prerequisites</span></span>
+<span data-ttu-id="fafda-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fafda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f9554-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="f9554-110">Permission type</span></span>|<span data-ttu-id="f9554-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="f9554-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="fafda-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="fafda-110">Permission type</span></span>|<span data-ttu-id="fafda-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="fafda-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f9554-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f9554-112">Delegated (work or school account)</span></span>|<span data-ttu-id="f9554-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="f9554-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="f9554-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f9554-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f9554-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="f9554-115">Not supported.</span></span>|
-|<span data-ttu-id="f9554-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="f9554-116">Application</span></span>|<span data-ttu-id="f9554-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="f9554-117">Not supported.</span></span>|
+|<span data-ttu-id="fafda-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fafda-112">Delegated (work or school account)</span></span>|<span data-ttu-id="fafda-113">DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="fafda-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="fafda-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fafda-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fafda-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="fafda-115">Not supported.</span></span>|
+|<span data-ttu-id="fafda-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="fafda-116">Application</span></span>|<span data-ttu-id="fafda-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="fafda-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f9554-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f9554-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fafda-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fafda-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,31 +39,31 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f9554-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="f9554-119">Optional query parameters</span></span>
-<span data-ttu-id="f9554-120">此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="f9554-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fafda-119">可选的查询参数</span><span class="sxs-lookup"><span data-stu-id="fafda-119">Optional query parameters</span></span>
+<span data-ttu-id="fafda-120">此方法支持 [OData 查询参数](https://docs.microsoft.com/en-us/graph/query-parameters) 来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="fafda-120">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f9554-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="f9554-121">Request headers</span></span>
-|<span data-ttu-id="f9554-122">标头</span><span class="sxs-lookup"><span data-stu-id="f9554-122">Header</span></span>|<span data-ttu-id="f9554-123">值</span><span class="sxs-lookup"><span data-stu-id="f9554-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fafda-121">请求标头</span><span class="sxs-lookup"><span data-stu-id="fafda-121">Request headers</span></span>
+|<span data-ttu-id="fafda-122">标头</span><span class="sxs-lookup"><span data-stu-id="fafda-122">Header</span></span>|<span data-ttu-id="fafda-123">值</span><span class="sxs-lookup"><span data-stu-id="fafda-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f9554-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="f9554-124">Authorization</span></span>|<span data-ttu-id="f9554-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="f9554-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f9554-126">接受</span><span class="sxs-lookup"><span data-stu-id="f9554-126">Accept</span></span>|<span data-ttu-id="f9554-127">application/json</span><span class="sxs-lookup"><span data-stu-id="f9554-127">application/json</span></span>|
+|<span data-ttu-id="fafda-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="fafda-124">Authorization</span></span>|<span data-ttu-id="fafda-125">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="fafda-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="fafda-126">接受</span><span class="sxs-lookup"><span data-stu-id="fafda-126">Accept</span></span>|<span data-ttu-id="fafda-127">application/json</span><span class="sxs-lookup"><span data-stu-id="fafda-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f9554-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="f9554-128">Request body</span></span>
-<span data-ttu-id="f9554-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="f9554-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fafda-128">请求正文</span><span class="sxs-lookup"><span data-stu-id="fafda-128">Request body</span></span>
+<span data-ttu-id="fafda-129">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="fafda-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f9554-130">响应</span><span class="sxs-lookup"><span data-stu-id="f9554-130">Response</span></span>
-<span data-ttu-id="f9554-131">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="f9554-131">If successful, this method returns a `200 OK` response code and [windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="fafda-130">响应</span><span class="sxs-lookup"><span data-stu-id="fafda-130">Response</span></span>
+<span data-ttu-id="fafda-131">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md)对象。</span><span class="sxs-lookup"><span data-stu-id="fafda-131">If successful, this method returns a `200 OK` response code and [windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f9554-132">示例</span><span class="sxs-lookup"><span data-stu-id="f9554-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fafda-132">示例</span><span class="sxs-lookup"><span data-stu-id="fafda-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f9554-133">请求</span><span class="sxs-lookup"><span data-stu-id="f9554-133">Request</span></span>
-<span data-ttu-id="f9554-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f9554-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="fafda-133">请求</span><span class="sxs-lookup"><span data-stu-id="fafda-133">Request</span></span>
+<span data-ttu-id="fafda-134">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="fafda-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="f9554-135">响应</span><span class="sxs-lookup"><span data-stu-id="f9554-135">Response</span></span>
-<span data-ttu-id="f9554-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="f9554-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="fafda-135">响应</span><span class="sxs-lookup"><span data-stu-id="fafda-135">Response</span></span>
+<span data-ttu-id="fafda-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="fafda-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -92,7 +92,6 @@ Content-Length: 818
   }
 }
 ```
-
 
 
 
