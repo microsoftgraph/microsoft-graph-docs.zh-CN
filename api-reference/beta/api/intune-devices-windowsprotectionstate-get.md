@@ -1,19 +1,19 @@
 ---
 title: 获取 windowsProtectionState
 description: 读取 windowsProtectionState 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35fb6f7c57e3d526db0a4dfeb4e9639d5c329597
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bba601f4edc0f4ff3aafe11f4f10f93faea34528
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534253"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909069"
 ---
 # <a name="get-windowsprotectionstate"></a>获取 windowsProtectionState
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -92,7 +92,6 @@ Content-Length: 971
   }
 }
 ```
-
 
 
 

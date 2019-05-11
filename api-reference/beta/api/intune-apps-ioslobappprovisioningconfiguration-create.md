@@ -1,19 +1,19 @@
 ---
 title: 创建 iosLobAppProvisioningConfiguration
 description: 创建新的 iosLobAppProvisioningConfiguration 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89420fa4680fdb6978ebff209c36f4f81804596a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a848b7bb83146019f4eebc37c95a99ce4beba17
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496091"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937020"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>创建 iosLobAppProvisioningConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,13 +50,13 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |expirationDateTime|DateTimeOffset|可选的配置文件到期日期和时间。|
-|payloadFileName|String|有效负载文件名 (*. mobileprovision | *.xml)。|
+|payloadFileName|String|有效负载文件名 (*。 mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
 |roleScopeTagIds|String collection|此 iOS LOB 应用设置配置实体的作用域标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|description|字符串|管理员提供的设备配置说明。|
+|说明|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|
@@ -112,7 +112,6 @@ Content-Length: 547
   "version": 7
 }
 ```
-
 
 
 

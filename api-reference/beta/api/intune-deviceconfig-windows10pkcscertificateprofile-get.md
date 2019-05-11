@@ -1,19 +1,19 @@
 ---
 title: 获取 windows10PkcsCertificateProfile
 description: 读取 windows10PkcsCertificateProfile 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c70f0e8268d7cd4c51fd1e2a82a8d4b3b4f1033b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 21b05c066a71beb6a13c0cd27e00d7b6619a2342
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32515762"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918457"
 ---
 # <a name="get-windows10pkcscertificateprofile"></a>获取 windows10PkcsCertificateProfile
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -102,7 +102,6 @@ Content-Length: 1258
   }
 }
 ```
-
 
 
 

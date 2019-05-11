@@ -1,19 +1,19 @@
 ---
 title: intuneBrandingProfile 资源类型
 description: 此实体包含在自定义公司门户应用程序的租户级别外观和最终用户 web 门户时使用的数据。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3eae52bbb19eaca46c74d275ae7da3d16050a50e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0c2cdd45d04f205597fb30a5c27dca39ac89b1ac
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570080"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938588"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>intuneBrandingProfile 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -108,7 +108,6 @@ ms.locfileid: "32570080"
   }
 }
 ```
-
 
 
 

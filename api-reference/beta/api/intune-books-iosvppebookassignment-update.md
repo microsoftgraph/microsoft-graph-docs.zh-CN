@@ -1,19 +1,19 @@
 ---
 title: 更新 iosVppEBookAssignment
 description: 更新 iosVppEBookAssignment 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 61cf121b89cd89a56c502fb92f58c4e8636a3652
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f1484118b430d0cfaa426329fded1eb1df50ee21
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483234"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934248"
 ---
 # <a name="update-iosvppebookassignment"></a>更新 iosVppEBookAssignment
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -93,7 +93,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
 
 
 

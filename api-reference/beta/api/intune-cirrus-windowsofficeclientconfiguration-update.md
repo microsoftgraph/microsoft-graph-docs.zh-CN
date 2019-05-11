@@ -2,18 +2,18 @@
 title: 更新 windowsOfficeClientConfiguration
 description: 修补特定的非安全策略有效负载。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: d116d846b6540ea2b9e2a91f54a5abdfa81e2409
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 10d25d320e9d3f55c2ae4a44c5f8b816c2b09838
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483290"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33933982"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>更新 windowsOfficeClientConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,10 +50,10 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
+|id|字符串|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
 |userPreferencePayload|Stream|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
 |policyPayload|Stream|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
-|description|字符串|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
+|说明|String|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
 |displayName|String|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
 |priority|Int32|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|尚未从[officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)中继承的文档|

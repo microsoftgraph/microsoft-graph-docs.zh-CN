@@ -1,19 +1,19 @@
 ---
 title: 更新 managedIOSLobApp
 description: 更新 managedIOSLobApp 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0aea558c8fc4e219126a20b08ccfe78d73e6eadd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1a538add4f2ee45a0b74f56129a448a190bc263d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32491660"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935515"
 ---
 # <a name="update-managedioslobapp"></a>更新 managedIOSLobApp
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -52,19 +52,19 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|description|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publisher|字符串|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|字符串|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|说明|字符串|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|创建应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用的日期和时间。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|privacyInformationUrl|字符串|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|informationUrl|字符串|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|owner|字符串|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|developer|字符串|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|notes|字符串|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|上载状态。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自[mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |isAssigned|Boolean|指示是否至少向一个组分配了应用程序的值。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -72,15 +72,15 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |dependentAppCount|Int32|子应用程序的依赖项总数。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|应用程序的可用性。 继承自[managedApp](../resources/intune-apps-managedapp.md)。 可取值为：`global`、`lineOfBusiness`。|
 |version|String|应用程序的版本。 继承自 [managedApp](../resources/intune-apps-managedapp.md)|
-|committedContentVersion|字符串|内部提交的内容版本。 继承自 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
-|fileName|字符串|主 Lob 应用程序文件的名称。 继承自 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
+|committedContentVersion|String|内部提交的内容版本。 继承自 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
+|fileName|String|主 Lob 应用程序文件的名称。 继承自 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
-|bundleId|字符串|标识名称。|
+|bundleId|String|标识名称。|
 |applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|可运行此应用的 iOS 体系结构。|
 |minimumSupportedOperatingSystem|[iosMinimumOperatingSystem](../resources/intune-apps-iosminimumoperatingsystem.md)|最低适用操作系统的值。|
 |expirationDateTime|DateTimeOffset|过期时间。|
-|versionNumber|字符串|托管 iOS 业务线 (LoB) 应用的版本号。|
-|buildNumber|字符串|托管 iOS 业务线 (LoB) 应用的内部版本号。|
+|versionNumber|String|托管 iOS 业务线 (LoB) 应用的版本号。|
+|buildNumber|String|托管 iOS 业务线 (LoB) 应用的内部版本号。|
 |identityVersion|String|标识版本。|
 
 
@@ -204,7 +204,6 @@ Content-Length: 1641
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

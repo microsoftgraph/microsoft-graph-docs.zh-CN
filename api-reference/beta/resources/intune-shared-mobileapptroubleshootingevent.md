@@ -2,18 +2,18 @@
 title: mobileAppTroubleshootingEvent 资源类型
 description: 介绍了适用于 Intune 的 Microsoft Graph API 的 mobileAppTroubleshootingEvent 资源, 它支持多个工作流。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: cfa126fea86c7edb302953efc3b88376f2d68a09
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 321b57ac590bfddf82b22425103d316a13ba1b9a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574444"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938872"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>mobileAppTroubleshootingEvent 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -31,9 +31,9 @@ ms.locfileid: "32574444"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 UUID。|
+|id|字符串|对象的 UUID。|
 |**疑难解答**|
-|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对, 提供有关从[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)继承的故障排除事件的其他信息|
+|additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对, 提供有关从[DeviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)继承的故障排除事件的其他信息|
 |applicationId|String|Intune 应用程序标识符。|
 |correlationId|String|用于跟踪服务中的故障的 ID。 |
 |eventDateTime|DateTimeOffset|事件发生的时间。 |

@@ -1,19 +1,19 @@
 ---
 title: 创建 deviceComplianceUserStatus
 description: 创建新的 deviceComplianceUserStatus 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 61fe31b993a731761d42599f4164ae86645fd541
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 886055a3827f8756f7054e01712be22641276fd0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469794"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927760"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>创建 deviceComplianceUserStatus
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,7 +55,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/userS
 |devicesCount|Int32|该用户的设备计数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|String|UserPrincipalName。|
+|userPrincipalName|字符串|UserPrincipalName。|
 
 
 
@@ -98,7 +98,6 @@ Content-Length: 336
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

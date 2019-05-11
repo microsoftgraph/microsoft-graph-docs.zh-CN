@@ -1,19 +1,19 @@
 ---
 title: 导入操作
 description: 尚未记录
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 10e34fb59732616e1396761ee3ccd2e34eba231f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 010860ffb6bf7ec3fd8e137bdbdfadfb69cbf1ab
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532672"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908390"
 ---
 # <a name="import-action"></a>导入操作
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -66,7 +66,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 
 Content-type: application/json
-Content-length: 748
+Content-length: 822
 
 {
   "importedWindowsAutopilotDeviceIdentities": [
@@ -84,7 +84,8 @@ Content-length: 748
         "deviceRegistrationId": "Device Registration Id value",
         "deviceErrorCode": 15,
         "deviceErrorName": "Device Error Name value"
-      }
+      },
+      "assignedUserPrincipalName": "Assigned User Principal Name value"
     }
   ]
 }
@@ -95,7 +96,7 @@ Content-length: 748
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 713
+Content-Length: 787
 
 {
   "value": [
@@ -113,12 +114,12 @@ Content-Length: 713
         "deviceRegistrationId": "Device Registration Id value",
         "deviceErrorCode": 15,
         "deviceErrorName": "Device Error Name value"
-      }
+      },
+      "assignedUserPrincipalName": "Assigned User Principal Name value"
     }
   ]
 }
 ```
-
 
 
 

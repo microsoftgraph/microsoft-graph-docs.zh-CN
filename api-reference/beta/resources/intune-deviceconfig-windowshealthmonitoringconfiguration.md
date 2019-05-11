@@ -1,19 +1,19 @@
 ---
 title: windowsHealthMonitoringConfiguration 资源类型
 description: Windows 设备运行状况监视配置
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a182dfd71c6afcdd5dfc04be369cd1212b3e054
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f1947bb34a028ab44af094afc24d0ea9de292de3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573870"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944028"
 ---
 # <a name="windowshealthmonitoringconfiguration-resource-type"></a>windowsHealthMonitoringConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -43,7 +43,8 @@ Windows 设备运行状况监视配置
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |allowDeviceHealthMonitoring|[启用](../resources/intune-shared-enablement.md)|在设备上启用设备运行状况监视。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Sepcifies 从启用运行状况监视的设备收集的一组事件。 可取值为：`undefined`、`healthMonitoring`、`bootPerformance`。|
+|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|指定从启用运行状况监视的设备收集的一组事件。 可取值为：`undefined`、`healthMonitoring`、`bootPerformance`。|
+|configDeviceHealthMonitoringCustomScope|String|指定从启用运行状况监视的设备收集的自定义事件集|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -78,10 +79,10 @@ Windows 设备运行状况监视配置
   "displayName": "String",
   "version": 1024,
   "allowDeviceHealthMonitoring": "String",
-  "configDeviceHealthMonitoringScope": "String"
+  "configDeviceHealthMonitoringScope": "String",
+  "configDeviceHealthMonitoringCustomScope": "String"
 }
 ```
-
 
 
 

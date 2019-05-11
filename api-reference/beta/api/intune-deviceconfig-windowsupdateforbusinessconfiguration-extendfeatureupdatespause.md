@@ -1,19 +1,19 @@
 ---
 title: extendFeatureUpdatesPause 操作
 description: 为 Windows Update for Business 振铃扩展功能更新暂停。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99026500c43824343b9cb7e5fe9501dcba1189c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aef0e53d4b9a68a54f967a7f5cdce5dd18282dea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32511660"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917406"
 ---
 # <a name="extendfeatureupdatespause-action"></a>extendFeatureUpdatesPause 操作
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -64,7 +64,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

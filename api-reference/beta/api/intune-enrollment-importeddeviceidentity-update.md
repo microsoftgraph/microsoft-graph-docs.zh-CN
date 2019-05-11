@@ -1,19 +1,19 @@
 ---
 title: 更新 importedDeviceIdentity
 description: 更新 importedDeviceIdentity 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b97cfd44c9d3b380c89b9116f9989da8e893b91
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b114bd928db1d3c05d6ab5a0a1a9a897c91efd60
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532714"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908355"
 ---
 # <a name="update-importeddeviceidentity"></a>更新 importedDeviceIdentity
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |lastModifiedDateTime|DateTimeOffset|说明的上次修改日期时间|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
-|description|String|设备的说明|
+|说明|String|设备的说明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune 中设备的状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |platform|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 
@@ -105,7 +105,6 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
-
 
 
 

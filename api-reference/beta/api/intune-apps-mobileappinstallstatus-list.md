@@ -1,19 +1,19 @@
 ---
 title: 列出 mobileAppInstallStatuses
 description: 列出 mobileAppInstallStatus 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3eb35d826fff74b853ca7b5d7d4abc2e88c54248
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5ebc387b1b344003bda82102f2209d8100d60971
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488720"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935087"
 ---
 # <a name="list-mobileappinstallstatuses"></a>列出 mobileAppInstallStatuses
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -86,7 +86,6 @@ Content-Length: 693
   ]
 }
 ```
-
 
 
 

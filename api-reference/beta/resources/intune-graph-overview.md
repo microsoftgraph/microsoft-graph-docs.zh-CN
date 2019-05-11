@@ -1,15 +1,15 @@
 ---
 title: 使用 Intune Graph API - Microsoft Graph API
 description: 列出你可用于管理租户组织及其设备、应用、访问权限和资源的 Intune 终结点 (REST) 的 Microsoft Graph API。
-author: tfitzmac
+author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: fc254772a5b4db131a5cda45fc83b336bf12f993
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 883fce914176b2e08d49e4de414cc7c09776714a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575959"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941189"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Intune  
 

@@ -1,19 +1,19 @@
 ---
 title: 创建 mobileAppDependency
 description: 创建新的 mobileAppDependency 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85aeae1d8d76b4c4609ff38f1263aaeb9a634e9f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3a272a9c39262b6dd14c8d118f8c50e615d92583
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489056"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935145"
 ---
 # <a name="create-mobileappdependency"></a>创建 mobileAppDependency
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,9 +51,9 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|关系实体 id。继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|字符串|目标子移动应用程序的应用程序 id。继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayName|字符串|目标子移动应用程序的显示名称。 继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|dependencyType|[mobileAppDependecyType](../resources/intune-apps-mobileappdependecytype.md)|父应用和子应用之间的依赖关系的类型。 可取值为：`detect`、`autoInstall`。|
+|targetId|String|目标子移动应用程序的应用程序 id。继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayName|String|目标子移动应用程序的显示名称。 继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|父应用和子应用之间的依赖关系的类型。 可取值为：`detect`、`autoInstall`。|
 |dependentAppCount|Int32|子应用程序的依赖项总数。|
 
 
@@ -95,7 +95,6 @@ Content-Length: 260
   "dependentAppCount": 1
 }
 ```
-
 
 
 
