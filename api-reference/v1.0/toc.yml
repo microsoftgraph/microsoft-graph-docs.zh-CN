@@ -67,12 +67,12 @@ items:
         items:
           - name: 概述
             href: /graph/migrate-azure-ad-graph-overview?toc=./ref/toc.json
-          - name: 迁移应用程序的清单
+          - name: 应用迁移清单
             href: /graph/migrate-azure-ad-graph-planning-checklist?toc=./ref/toc.json
-          - name: '1: 检查差异'
+          - name: 1：查看差异
             expanded: true
             items:
-              - name: Requests
+              - name: 请求
                 href: /graph/migrate-azure-ad-graph-request-differences?toc=./ref/toc.json
               - name: 服务功能
                 href: /graph/migrate-azure-ad-graph-feature-differences?toc=./ref/toc.json
@@ -82,20 +82,20 @@ items:
                 href: /graph/migrate-azure-ad-graph-property-differences?toc=./ref/toc.json
               - name: 方法
                 href: /graph/migrate-azure-ad-graph-method-differences?toc=./ref/toc.json
-          - name: '2: 检查 API 使用情况'
+          - name: 2：检查 API 使用情况
             href: /graph/migrate-azure-ad-graph-audit-api-use?toc=./ref/toc.json
-          - name: '3: 查看应用程序详细信息'
+          - name: 3：查看应用详细信息
             expanded: true
             items:
               - name: 应用注册
                 href: /graph/migrate-azure-ad-graph-app-registration?toc=./ref/toc.json
-              - name: 验证库
+              - name: 身份验证库
                 href: /graph/migrate-azure-ad-graph-authentication-library?toc=./ref/toc.json
               - name: .NET 客户端库
                 href: /graph/migrate-azure-ad-graph-client-libraries?toc=./ref/toc.json
-          - name: '4: 部署、测试和扩展'
+          - name: 4：部署、测试和扩展
             href: /graph/migrate-azure-ad-graph-deploy-test-extend?toc=./ref/toc.json
-  - name: 使用 Sdk
+  - name: 使用 SDK
     items:
       - name: 概述
         href: /graph/sdks/sdks-overview?toc=./ref/toc.json
@@ -103,7 +103,7 @@ items:
         href: /graph/sdks/sdk-installation?toc=./ref/toc.json
       - name: 创建客户端
         href: /graph/sdks/create-client?toc=./ref/toc.json
-      - name: 选择身份验证提供程序
+      - name: 选择验证提供程序
         href: /graph/sdks/choose-authentication-providers?toc=./ref/toc.json
   - name: 资源
     items:
@@ -3825,12 +3825,12 @@ items:
             items:
               - name: 列出安全功能分数
                 href: api/security-list-securescores.md
-              - name: 获取安全得分
+              - name: 获取安全功能分数
                 href: api/securescore-get.md
           - name: 安全功能控制配置文件
             href: resources/securescorecontrolprofile.md
             items:
-              - name: 获取安全分数控制配置文件
+              - name: 获取安全功能分数控制配置文件
                 href: api/securescorecontrolprofile-get.md
               - name: 列出安全功能控制配置文件
                 href: api/security-list-securescorecontrolprofiles.md
@@ -4227,47 +4227,49 @@ items:
               - name: 列出区域
                 href: api/nameditem-range.md
       - name: 工具
-      - name: 开放扩展
-        href: resources/opentypeextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+        expanded: true
         items:
-          - name: 创建开放扩展
-            href: api/opentypeextension-post-opentypeextension.md
-          - name: 获取开放扩展
-            href: api/opentypeextension-get.md
-          - name: 更新开放扩展
-            href: api/opentypeextension-update.md
-          - name: 删除开放扩展
-            href: api/opentypeextension-delete.md
-      - name: 架构扩展
-        href: resources/schemaextension.md
-        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-        items:
-          - name: 列出架构扩展
-            href: api/schemaextension-list.md
-          - name: 创建架构扩展
-            href: api/schemaextension-post-schemaextensions.md
-          - name: 获取架构扩展
-            href: api/schemaextension-get.md
-          - name: 更新架构扩展
-            href: api/schemaextension-update.md
-          - name: 删除架构扩展
-            href: api/schemaextension-delete.md
-      - name: 更改通知
-        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
-        items:
-          - name: 概述
-            href: resources/webhooks.md
-          - name: 订阅
-            href: resources/subscription.md
+          - name: 开放扩展
+            href: resources/opentypeextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
-              - name: 列出订阅
-                href: api/subscription-list.md
-              - name: 获取订阅
-                href: api/subscription-get.md
-              - name: 创建订阅
-                href: api/subscription-post-subscriptions.md
-              - name: 更新订阅
-                href: api/subscription-update.md
-              - name: 删除订阅
-                href: api/subscription-delete.md
+              - name: 创建开放扩展
+                href: api/opentypeextension-post-opentypeextension.md
+              - name: 获取开放扩展
+                href: api/opentypeextension-get.md
+              - name: 更新开放扩展
+                href: api/opentypeextension-update.md
+              - name: 删除开放扩展
+                href: api/opentypeextension-delete.md
+          - name: 架构扩展
+            href: resources/schemaextension.md
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
+            items:
+              - name: 列出架构扩展
+                href: api/schemaextension-list.md
+              - name: 创建架构扩展
+                href: api/schemaextension-post-schemaextensions.md
+              - name: 获取架构扩展
+                href: api/schemaextension-get.md
+              - name: 更新架构扩展
+                href: api/schemaextension-update.md
+              - name: 删除架构扩展
+                href: api/schemaextension-delete.md
+          - name: 更改通知
+            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+            items:
+              - name: 概述
+                href: resources/webhooks.md
+              - name: 订阅
+                href: resources/subscription.md
+                items:
+                  - name: 列出订阅
+                    href: api/subscription-list.md
+                  - name: 获取订阅
+                    href: api/subscription-get.md
+                  - name: 创建订阅
+                    href: api/subscription-post-subscriptions.md
+                  - name: 更新订阅
+                    href: api/subscription-update.md
+                  - name: 删除订阅
+                    href: api/subscription-delete.md
