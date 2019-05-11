@@ -4,105 +4,105 @@ description: 获得新建、更新或删除的用户，无需对整个用户集�
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 411d45f4a78a15e4272103b21fbf8dc7de3761ff
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 2b513210fcabe3e91717b02c9cf478e8bac68eb0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33602192"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951455"
 ---
-# <a name="user-delta"></a><span data-ttu-id="b4788-104">user: delta</span><span class="sxs-lookup"><span data-stu-id="b4788-104">user: delta</span></span>
+# <a name="user-delta"></a><span data-ttu-id="27720-104">user: delta</span><span class="sxs-lookup"><span data-stu-id="27720-104">user: delta</span></span>
 
-<span data-ttu-id="b4788-105">获得新建、更新或删除的用户，无需对整个用户集合执行完整读取。</span><span class="sxs-lookup"><span data-stu-id="b4788-105">Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.</span></span> <span data-ttu-id="b4788-106">有关详细信息，请参阅[跟踪更改](/graph/delta-query-overview)。</span><span class="sxs-lookup"><span data-stu-id="b4788-106">See [Track changes](/graph/delta-query-overview) for details.</span></span>
+<span data-ttu-id="27720-105">获得新建、更新或删除的用户，无需对整个用户集合执行完整读取。</span><span class="sxs-lookup"><span data-stu-id="27720-105">Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.</span></span> <span data-ttu-id="27720-106">有关详细信息，请参阅[跟踪更改](/graph/delta-query-overview)。</span><span class="sxs-lookup"><span data-stu-id="27720-106">See [Track changes](/graph/delta-query-overview) for details.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b4788-107">权限</span><span class="sxs-lookup"><span data-stu-id="b4788-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="27720-107">权限</span><span class="sxs-lookup"><span data-stu-id="27720-107">Permissions</span></span>
 
-<span data-ttu-id="b4788-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="b4788-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="27720-p103">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="27720-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="b4788-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="b4788-110">Permission type</span></span>      | <span data-ttu-id="b4788-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="b4788-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="27720-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="27720-110">Permission type</span></span>      | <span data-ttu-id="27720-111">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="27720-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b4788-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="b4788-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b4788-113">User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b4788-113">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="b4788-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="b4788-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b4788-115">User.Read、User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b4788-115">User.Read, User.ReadWrite</span></span>    |
-|<span data-ttu-id="b4788-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="b4788-116">Application</span></span> | <span data-ttu-id="b4788-117">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4788-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="27720-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="27720-112">Delegated (work or school account)</span></span> | <span data-ttu-id="27720-113">User.Read、User.ReadWrite、User.ReadBasic.All、User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All、Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="27720-113">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="27720-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="27720-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="27720-115">User.Read、User.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="27720-115">User.Read, User.ReadWrite</span></span>    |
+|<span data-ttu-id="27720-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="27720-116">Application</span></span> | <span data-ttu-id="27720-117">User.Read.All、User.ReadWrite.All、Directory.Read.All、Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="27720-117">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b4788-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="b4788-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="27720-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="27720-118">HTTP request</span></span>
 
-<span data-ttu-id="b4788-119">为开始跟踪更改，请在用户资源上发出包含 delta 函数的请求。</span><span class="sxs-lookup"><span data-stu-id="b4788-119">To begin tracking changes, you make a request including the delta function on the users resource.</span></span>
+<span data-ttu-id="27720-119">为开始跟踪更改，请在用户资源上发出包含 delta 函数的请求。</span><span class="sxs-lookup"><span data-stu-id="27720-119">To begin tracking changes, you make a request including the delta function on the users resource.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/delta
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="b4788-120">查询参数</span><span class="sxs-lookup"><span data-stu-id="b4788-120">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="27720-120">查询参数</span><span class="sxs-lookup"><span data-stu-id="27720-120">Query parameters</span></span>
 
-<span data-ttu-id="b4788-121">跟踪用户更改会引发一组对 **delta** 函数的一次或多次调用。</span><span class="sxs-lookup"><span data-stu-id="b4788-121">Tracking changes in users incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="b4788-122">如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。</span><span class="sxs-lookup"><span data-stu-id="b4788-122">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="b4788-123">Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。</span><span class="sxs-lookup"><span data-stu-id="b4788-123">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span>
+<span data-ttu-id="27720-121">跟踪用户更改会引发一组对 **delta** 函数的一次或多次调用。</span><span class="sxs-lookup"><span data-stu-id="27720-121">Tracking changes in users incurs a round of one or more **delta** function calls.</span></span> <span data-ttu-id="27720-122">如果要使用任意查询参数（`$deltatoken` 和 `$skiptoken` 除外），则必须在最初的 **delta** 请求中指定它。</span><span class="sxs-lookup"><span data-stu-id="27720-122">If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request.</span></span> <span data-ttu-id="27720-123">Microsoft Graph 自动将指定的任意参数编码为响应中提供的 `nextLink` 或 `deltaLink` URL 的令牌部分。</span><span class="sxs-lookup"><span data-stu-id="27720-123">Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.</span></span>
 
-<span data-ttu-id="b4788-124">只需预先指定所需的任何查询参数一次。</span><span class="sxs-lookup"><span data-stu-id="b4788-124">You only need to specify any desired query parameters once upfront.</span></span>
+<span data-ttu-id="27720-124">只需预先指定所需的任何查询参数一次。</span><span class="sxs-lookup"><span data-stu-id="27720-124">You only need to specify any desired query parameters once upfront.</span></span>
 
-<span data-ttu-id="b4788-125">在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。</span><span class="sxs-lookup"><span data-stu-id="b4788-125">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.</span></span>
+<span data-ttu-id="27720-125">在后续请求中，可以复制并应用之前响应中返回的 `nextLink` 或 `deltaLink` URL，因为此 URL 已包含所需的编码参数。</span><span class="sxs-lookup"><span data-stu-id="27720-125">In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.</span></span>
 
-| <span data-ttu-id="b4788-126">查询参数</span><span class="sxs-lookup"><span data-stu-id="b4788-126">Query parameter</span></span>      | <span data-ttu-id="b4788-127">类型</span><span class="sxs-lookup"><span data-stu-id="b4788-127">Type</span></span>   |<span data-ttu-id="b4788-128">说明</span><span class="sxs-lookup"><span data-stu-id="b4788-128">Description</span></span>|
+| <span data-ttu-id="27720-126">查询参数</span><span class="sxs-lookup"><span data-stu-id="27720-126">Query parameter</span></span>      | <span data-ttu-id="27720-127">类型</span><span class="sxs-lookup"><span data-stu-id="27720-127">Type</span></span>   |<span data-ttu-id="27720-128">说明</span><span class="sxs-lookup"><span data-stu-id="27720-128">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="b4788-129">$deltatoken</span><span class="sxs-lookup"><span data-stu-id="b4788-129">$deltatoken</span></span> | <span data-ttu-id="b4788-130">string</span><span class="sxs-lookup"><span data-stu-id="b4788-130">string</span></span> | <span data-ttu-id="b4788-p105">对同一个用户集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。</span><span class="sxs-lookup"><span data-stu-id="b4788-p105">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same user collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.</span></span>|
-| <span data-ttu-id="b4788-133">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="b4788-133">$skiptoken</span></span> | <span data-ttu-id="b4788-134">string</span><span class="sxs-lookup"><span data-stu-id="b4788-134">string</span></span> | <span data-ttu-id="b4788-135">对之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个用户集合中有进一步的更改需要追踪。</span><span class="sxs-lookup"><span data-stu-id="b4788-135">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same user collection.</span></span> |
+| <span data-ttu-id="27720-129">$deltatoken</span><span class="sxs-lookup"><span data-stu-id="27720-129">$deltatoken</span></span> | <span data-ttu-id="27720-130">string</span><span class="sxs-lookup"><span data-stu-id="27720-130">string</span></span> | <span data-ttu-id="27720-p105">对同一个用户集合之前的 **delta** 函数调用的 `deltaLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示该组更改跟踪的完成状态。将此令牌包含在对该集合的下一组更改追踪的首次请求中，并保存和应用整个 `deltaLink` URL。</span><span class="sxs-lookup"><span data-stu-id="27720-p105">A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same user collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.</span></span>|
+| <span data-ttu-id="27720-133">$skiptoken</span><span class="sxs-lookup"><span data-stu-id="27720-133">$skiptoken</span></span> | <span data-ttu-id="27720-134">string</span><span class="sxs-lookup"><span data-stu-id="27720-134">string</span></span> | <span data-ttu-id="27720-135">对之前的 **delta** 函数调用的 `nextLink` URL 中返回的[状态令牌](/graph/delta-query-overview)，指示同一个用户集合中有进一步的更改需要追踪。</span><span class="sxs-lookup"><span data-stu-id="27720-135">A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same user collection.</span></span> |
 
-### <a name="odata-query-parameters"></a><span data-ttu-id="b4788-136">OData 查询参数</span><span class="sxs-lookup"><span data-stu-id="b4788-136">OData query parameters</span></span>
+### <a name="odata-query-parameters"></a><span data-ttu-id="27720-136">OData 查询参数</span><span class="sxs-lookup"><span data-stu-id="27720-136">OData query parameters</span></span>
 
-<span data-ttu-id="b4788-137">此方法支持可选 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="b4788-137">This method supports optional OData Query Parameters to help customize the response.</span></span>
+<span data-ttu-id="27720-137">此方法支持可选 OData 查询参数来帮助自定义响应。</span><span class="sxs-lookup"><span data-stu-id="27720-137">This method supports optional OData Query Parameters to help customize the response.</span></span>
 
-- <span data-ttu-id="b4788-p106">像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 *id* 属性。</span><span class="sxs-lookup"><span data-stu-id="b4788-p106">You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The *id* property is always returned.</span></span>
-- <span data-ttu-id="b4788-140">提供对 `$filter` 的有限支持：</span><span class="sxs-lookup"><span data-stu-id="b4788-140">There is limited support for `$filter`:</span></span>
-  - <span data-ttu-id="b4788-141">唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。</span><span class="sxs-lookup"><span data-stu-id="b4788-141">The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`.</span></span> <span data-ttu-id="b4788-142">可以筛选多个对象。</span><span class="sxs-lookup"><span data-stu-id="b4788-142">You can filter multiple objects.</span></span> <span data-ttu-id="b4788-143">例如，`https://graph.microsoft.com/v1.0/users/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`。</span><span class="sxs-lookup"><span data-stu-id="b4788-143">For example, `https://graph.microsoft.com/v1.0/users/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`.</span></span> <span data-ttu-id="b4788-144">筛选对象不能超出 50 个。</span><span class="sxs-lookup"><span data-stu-id="b4788-144">There is a limit of 50 filtered objects.</span></span>
+- <span data-ttu-id="27720-p106">像在任何 GET 请求中一样，你可以使用 `$select` 查询参数以仅指定获取最佳性能所需的属性。始终返回 *id* 属性。</span><span class="sxs-lookup"><span data-stu-id="27720-p106">You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The *id* property is always returned.</span></span>
+- <span data-ttu-id="27720-140">提供对 `$filter` 的有限支持：</span><span class="sxs-lookup"><span data-stu-id="27720-140">There is limited support for `$filter`:</span></span>
+  - <span data-ttu-id="27720-141">唯一支持的 `$filter` 表达式用于跟踪对特定对象 `$filter=id+eq+{value}` 的更改。</span><span class="sxs-lookup"><span data-stu-id="27720-141">The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`.</span></span> <span data-ttu-id="27720-142">可以筛选多个对象。</span><span class="sxs-lookup"><span data-stu-id="27720-142">You can filter multiple objects.</span></span> <span data-ttu-id="27720-143">例如，`https://graph.microsoft.com/v1.0/users/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`。</span><span class="sxs-lookup"><span data-stu-id="27720-143">For example, `https://graph.microsoft.com/v1.0/users/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`.</span></span> <span data-ttu-id="27720-144">筛选对象不能超出 50 个。</span><span class="sxs-lookup"><span data-stu-id="27720-144">There is a limit of 50 filtered objects.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b4788-145">请求标头</span><span class="sxs-lookup"><span data-stu-id="b4788-145">Request headers</span></span>
-| <span data-ttu-id="b4788-146">名称</span><span class="sxs-lookup"><span data-stu-id="b4788-146">Name</span></span>       | <span data-ttu-id="b4788-147">说明</span><span class="sxs-lookup"><span data-stu-id="b4788-147">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="27720-145">请求标头</span><span class="sxs-lookup"><span data-stu-id="27720-145">Request headers</span></span>
+| <span data-ttu-id="27720-146">名称</span><span class="sxs-lookup"><span data-stu-id="27720-146">Name</span></span>       | <span data-ttu-id="27720-147">说明</span><span class="sxs-lookup"><span data-stu-id="27720-147">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="b4788-148">Authorization</span><span class="sxs-lookup"><span data-stu-id="b4788-148">Authorization</span></span>  | <span data-ttu-id="b4788-149">持有者&lt;令牌&gt;</span><span class="sxs-lookup"><span data-stu-id="b4788-149">Bearer &lt;token&gt;</span></span>|
-| <span data-ttu-id="b4788-150">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b4788-150">Content-Type</span></span>  | <span data-ttu-id="b4788-151">application/json</span><span class="sxs-lookup"><span data-stu-id="b4788-151">application/json</span></span> |
-| <span data-ttu-id="b4788-152">Prefer</span><span class="sxs-lookup"><span data-stu-id="b4788-152">Prefer</span></span> | <span data-ttu-id="b4788-153">return=minimal</span><span class="sxs-lookup"><span data-stu-id="b4788-153">return=minimal</span></span> <br><br><span data-ttu-id="b4788-154">在使用 `deltaLink` 的请求中执行此标头将仅返回自上一轮之后发生更改的对象属性。</span><span class="sxs-lookup"><span data-stu-id="b4788-154">Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round.</span></span> <span data-ttu-id="b4788-155">可选。</span><span class="sxs-lookup"><span data-stu-id="b4788-155">Optional.</span></span> |
+| <span data-ttu-id="27720-148">Authorization</span><span class="sxs-lookup"><span data-stu-id="27720-148">Authorization</span></span>  | <span data-ttu-id="27720-149">持有者&lt;令牌&gt;</span><span class="sxs-lookup"><span data-stu-id="27720-149">Bearer &lt;token&gt;</span></span>|
+| <span data-ttu-id="27720-150">Content-Type</span><span class="sxs-lookup"><span data-stu-id="27720-150">Content-Type</span></span>  | <span data-ttu-id="27720-151">application/json</span><span class="sxs-lookup"><span data-stu-id="27720-151">application/json</span></span> |
+| <span data-ttu-id="27720-152">Prefer</span><span class="sxs-lookup"><span data-stu-id="27720-152">Prefer</span></span> | <span data-ttu-id="27720-153">return=minimal</span><span class="sxs-lookup"><span data-stu-id="27720-153">return=minimal</span></span> <br><br><span data-ttu-id="27720-154">在使用 `deltaLink` 的请求中执行此标头将仅返回自上一轮之后发生更改的对象属性。</span><span class="sxs-lookup"><span data-stu-id="27720-154">Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round.</span></span> <span data-ttu-id="27720-155">可选。</span><span class="sxs-lookup"><span data-stu-id="27720-155">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b4788-156">请求正文</span><span class="sxs-lookup"><span data-stu-id="b4788-156">Request body</span></span>
-<span data-ttu-id="b4788-157">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="b4788-157">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="27720-156">请求正文</span><span class="sxs-lookup"><span data-stu-id="27720-156">Request body</span></span>
+<span data-ttu-id="27720-157">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="27720-157">Do not supply a request body for this method.</span></span>
 
-### <a name="response"></a><span data-ttu-id="b4788-158">响应</span><span class="sxs-lookup"><span data-stu-id="b4788-158">Response</span></span>
+### <a name="response"></a><span data-ttu-id="27720-158">响应</span><span class="sxs-lookup"><span data-stu-id="27720-158">Response</span></span>
 
-<span data-ttu-id="b4788-159">如果成功，此方法的响应正文返回`200 OK`响应代码和[用户](../resources/user.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="b4788-159">If successful, this method returns `200 OK` response code and [user](../resources/user.md) collection object in the response body.</span></span> <span data-ttu-id="b4788-160">该响应还包括 `nextLink`URL 或 `deltaLink`URL。</span><span class="sxs-lookup"><span data-stu-id="b4788-160">The response also includes a `nextLink` URL or a `deltaLink` URL.</span></span>
+<span data-ttu-id="27720-159">如果成功，此方法的响应正文返回`200 OK`响应代码和[用户](../resources/user.md)集合对象。</span><span class="sxs-lookup"><span data-stu-id="27720-159">If successful, this method returns `200 OK` response code and [user](../resources/user.md) collection object in the response body.</span></span> <span data-ttu-id="27720-160">该响应还包括 `nextLink`URL 或 `deltaLink`URL。</span><span class="sxs-lookup"><span data-stu-id="27720-160">The response also includes a `nextLink` URL or a `deltaLink` URL.</span></span>
 
-- <span data-ttu-id="b4788-161">如果返回 `nextLink`URL：</span><span class="sxs-lookup"><span data-stu-id="b4788-161">If a `nextLink` URL is returned:</span></span>
-  - <span data-ttu-id="b4788-162">这表示绘画中存在要检索的其他数据页面。</span><span class="sxs-lookup"><span data-stu-id="b4788-162">This indicates there are additional pages of data to be retrieved in the session.</span></span> <span data-ttu-id="b4788-163">应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。</span><span class="sxs-lookup"><span data-stu-id="b4788-163">The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.</span></span>
-  - <span data-ttu-id="b4788-164">响应包含与初始 Delta 查询请求相同的属性集。</span><span class="sxs-lookup"><span data-stu-id="b4788-164">The response includes the same set of properties as in the initial delta query request.</span></span> <span data-ttu-id="b4788-165">这使你能够在发起 Delta 循环时捕获对象当前的完整状态。</span><span class="sxs-lookup"><span data-stu-id="b4788-165">This allows you to capture the full current state of the objects when initiating the delta cycle.</span></span>
+- <span data-ttu-id="27720-161">如果返回 `nextLink`URL：</span><span class="sxs-lookup"><span data-stu-id="27720-161">If a `nextLink` URL is returned:</span></span>
+  - <span data-ttu-id="27720-162">这表示绘画中存在要检索的其他数据页面。</span><span class="sxs-lookup"><span data-stu-id="27720-162">This indicates there are additional pages of data to be retrieved in the session.</span></span> <span data-ttu-id="27720-163">应用程序继续使用 `nextLink` URL 发出请求，直到响应中包含 `deltaLink` URL。</span><span class="sxs-lookup"><span data-stu-id="27720-163">The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.</span></span>
+  - <span data-ttu-id="27720-164">响应包含与初始 Delta 查询请求相同的属性集。</span><span class="sxs-lookup"><span data-stu-id="27720-164">The response includes the same set of properties as in the initial delta query request.</span></span> <span data-ttu-id="27720-165">这使你能够在发起 Delta 循环时捕获对象当前的完整状态。</span><span class="sxs-lookup"><span data-stu-id="27720-165">This allows you to capture the full current state of the objects when initiating the delta cycle.</span></span>
 
-- <span data-ttu-id="b4788-166">如果返回 `deltaLink`URL：</span><span class="sxs-lookup"><span data-stu-id="b4788-166">If a `deltaLink` URL is returned:</span></span>
-  - <span data-ttu-id="b4788-167">这表示未返回关于资源现有状态的更多数据。</span><span class="sxs-lookup"><span data-stu-id="b4788-167">This indicates there is no more data about the existing state of the resource to be returned.</span></span> <span data-ttu-id="b4788-168">保存并使用 `deltaLink` URL 来了解下一轮资源更改。</span><span class="sxs-lookup"><span data-stu-id="b4788-168">Save and use the `deltaLink` URL to learn about changes to the resource in the next round.</span></span>
-  - <span data-ttu-id="b4788-169">只有对于在签发 `deltaLink` 之后更改的属性，你才可以选择指定 `Prefer:return=minimal` 标头以包含在响应值中。</span><span class="sxs-lookup"><span data-stu-id="b4788-169">You have a choice to specify the `Prefer:return=minimal` header, to include in the response values for only the properties that have changed since the time the `deltaLink` was issued.</span></span>
+- <span data-ttu-id="27720-166">如果返回 `deltaLink`URL：</span><span class="sxs-lookup"><span data-stu-id="27720-166">If a `deltaLink` URL is returned:</span></span>
+  - <span data-ttu-id="27720-167">这表示未返回关于资源现有状态的更多数据。</span><span class="sxs-lookup"><span data-stu-id="27720-167">This indicates there is no more data about the existing state of the resource to be returned.</span></span> <span data-ttu-id="27720-168">保存并使用 `deltaLink` URL 来了解下一轮资源更改。</span><span class="sxs-lookup"><span data-stu-id="27720-168">Save and use the `deltaLink` URL to learn about changes to the resource in the next round.</span></span>
+  - <span data-ttu-id="27720-169">只有对于在签发 `deltaLink` 之后更改的属性，你才可以选择指定 `Prefer:return=minimal` 标头以包含在响应值中。</span><span class="sxs-lookup"><span data-stu-id="27720-169">You have a choice to specify the `Prefer:return=minimal` header, to include in the response values for only the properties that have changed since the time the `deltaLink` was issued.</span></span>
 
-#### <a name="default-return-the-same-properties-as-initial-delta-request"></a><span data-ttu-id="b4788-170">默认：返回与初始 Delta 请求相同的属性</span><span class="sxs-lookup"><span data-stu-id="b4788-170">Default: return the same properties as initial delta request</span></span>
+#### <a name="default-return-the-same-properties-as-initial-delta-request"></a><span data-ttu-id="27720-170">默认：返回与初始 Delta 请求相同的属性</span><span class="sxs-lookup"><span data-stu-id="27720-170">Default: return the same properties as initial delta request</span></span>
 
-<span data-ttu-id="b4788-171">默认情况下，使用 `deltaLink` 或 `nextLink` 的请求将通过以下方式返回与初始 Delta 查询中选择的相同属性：</span><span class="sxs-lookup"><span data-stu-id="b4788-171">By default, requests using a `deltaLink` or `nextLink` return the same properties as selected in the initial delta query in the following ways:</span></span>
+<span data-ttu-id="27720-171">默认情况下，使用 `deltaLink` 或 `nextLink` 的请求将通过以下方式返回与初始 Delta 查询中选择的相同属性：</span><span class="sxs-lookup"><span data-stu-id="27720-171">By default, requests using a `deltaLink` or `nextLink` return the same properties as selected in the initial delta query in the following ways:</span></span>
 
-- <span data-ttu-id="b4788-172">如果属性已更改，则新值将包括在响应中。</span><span class="sxs-lookup"><span data-stu-id="b4788-172">If the property has changed, the new value is included in the response.</span></span> <span data-ttu-id="b4788-173">这包括设为 Null 值的属性。</span><span class="sxs-lookup"><span data-stu-id="b4788-173">This includes properties being set to null value.</span></span>
-- <span data-ttu-id="b4788-174">如果属性未更改，则旧值将包括在响应中。</span><span class="sxs-lookup"><span data-stu-id="b4788-174">If the property has not changed, the old value is included in the response.</span></span>
-- <span data-ttu-id="b4788-175">如果之前从未设置属性，则它不会包括在响应中。</span><span class="sxs-lookup"><span data-stu-id="b4788-175">If the property has never been set before it will not be included in the response at all.</span></span>
+- <span data-ttu-id="27720-172">如果属性已更改，则新值将包括在响应中。</span><span class="sxs-lookup"><span data-stu-id="27720-172">If the property has changed, the new value is included in the response.</span></span> <span data-ttu-id="27720-173">这包括设为 Null 值的属性。</span><span class="sxs-lookup"><span data-stu-id="27720-173">This includes properties being set to null value.</span></span>
+- <span data-ttu-id="27720-174">如果属性未更改，则旧值将包括在响应中。</span><span class="sxs-lookup"><span data-stu-id="27720-174">If the property has not changed, the old value is included in the response.</span></span>
+- <span data-ttu-id="27720-175">如果之前从未设置属性，则它不会包括在响应中。</span><span class="sxs-lookup"><span data-stu-id="27720-175">If the property has never been set before it will not be included in the response at all.</span></span>
 
 
-> <span data-ttu-id="b4788-176">**注意：** 如果出现此行为，那么通过查看响应无法区分属性是否已更改。</span><span class="sxs-lookup"><span data-stu-id="b4788-176">**Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not.</span></span> <span data-ttu-id="b4788-177">此外，Delta 响应往往过大，因为它们包含所有属性值，如下面的[第二个示例](#request-2)所示。</span><span class="sxs-lookup"><span data-stu-id="b4788-177">Also, the delta responses tend to be large because they contain all property values  - as shown in the [second example](#request-2) below.</span></span>
+> <span data-ttu-id="27720-176">**注意：** 如果出现此行为，那么通过查看响应无法区分属性是否已更改。</span><span class="sxs-lookup"><span data-stu-id="27720-176">**Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not.</span></span> <span data-ttu-id="27720-177">此外，Delta 响应往往过大，因为它们包含所有属性值，如下面的[第二个示例](#request-2)所示。</span><span class="sxs-lookup"><span data-stu-id="27720-177">Also, the delta responses tend to be large because they contain all property values  - as shown in the [second example](#request-2) below.</span></span>
 
-#### <a name="alternative-return-only-the-changed-properties"></a><span data-ttu-id="b4788-178">备用：仅返回更改的属性</span><span class="sxs-lookup"><span data-stu-id="b4788-178">Alternative: return only the changed properties</span></span>
+#### <a name="alternative-return-only-the-changed-properties"></a><span data-ttu-id="27720-178">备用：仅返回更改的属性</span><span class="sxs-lookup"><span data-stu-id="27720-178">Alternative: return only the changed properties</span></span>
 
-<span data-ttu-id="b4788-179">添加可选请求标头 - `prefer:return=minimal` - 将导致出现以下行为：</span><span class="sxs-lookup"><span data-stu-id="b4788-179">Adding an optional request header - `prefer:return=minimal` - results in the following behavior:</span></span>
+<span data-ttu-id="27720-179">添加可选请求标头 - `prefer:return=minimal` - 将导致出现以下行为：</span><span class="sxs-lookup"><span data-stu-id="27720-179">Adding an optional request header - `prefer:return=minimal` - results in the following behavior:</span></span>
 
-- <span data-ttu-id="b4788-180">如果属性已更改，则新值将包括在响应中。</span><span class="sxs-lookup"><span data-stu-id="b4788-180">If the property has changed, the new value is included in the response.</span></span> <span data-ttu-id="b4788-181">这包括设为 Null 值的属性。</span><span class="sxs-lookup"><span data-stu-id="b4788-181">This includes properties being set to null value.</span></span>
-- <span data-ttu-id="b4788-182">如果属性未更改，则该属性不会包括在响应中。</span><span class="sxs-lookup"><span data-stu-id="b4788-182">If the property has not changed, the property is not included in the response at all.</span></span> <span data-ttu-id="b4788-183">（不同于默认行为。）</span><span class="sxs-lookup"><span data-stu-id="b4788-183">(Different from the default behavior.)</span></span>
+- <span data-ttu-id="27720-180">如果属性已更改，则新值将包括在响应中。</span><span class="sxs-lookup"><span data-stu-id="27720-180">If the property has changed, the new value is included in the response.</span></span> <span data-ttu-id="27720-181">这包括设为 Null 值的属性。</span><span class="sxs-lookup"><span data-stu-id="27720-181">This includes properties being set to null value.</span></span>
+- <span data-ttu-id="27720-182">如果属性未更改，则该属性不会包括在响应中。</span><span class="sxs-lookup"><span data-stu-id="27720-182">If the property has not changed, the property is not included in the response at all.</span></span> <span data-ttu-id="27720-183">（不同于默认行为。）</span><span class="sxs-lookup"><span data-stu-id="27720-183">(Different from the default behavior.)</span></span>
 
-> <span data-ttu-id="b4788-184">**注意：** 可以在 Delta 循环中的任何时间点将标头添加到 `deltaLink` 请求中。</span><span class="sxs-lookup"><span data-stu-id="b4788-184">**Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle.</span></span> <span data-ttu-id="b4788-185">标头仅影响响应中包含的属性集，它不会影响执行 Delta 查询的方式。</span><span class="sxs-lookup"><span data-stu-id="b4788-185">The header only affects the set of properties included in the response and it does not affect how the delta query is executed.</span></span> <span data-ttu-id="b4788-186">请参阅下面的[第三个示例](#request-3)。</span><span class="sxs-lookup"><span data-stu-id="b4788-186">See the [third example](#request-3) below.</span></span>
+> <span data-ttu-id="27720-184">**注意：** 可以在 Delta 循环中的任何时间点将标头添加到 `deltaLink` 请求中。</span><span class="sxs-lookup"><span data-stu-id="27720-184">**Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle.</span></span> <span data-ttu-id="27720-185">标头仅影响响应中包含的属性集，它不会影响执行 Delta 查询的方式。</span><span class="sxs-lookup"><span data-stu-id="27720-185">The header only affects the set of properties included in the response and it does not affect how the delta query is executed.</span></span> <span data-ttu-id="27720-186">请参阅下面的[第三个示例](#request-3)。</span><span class="sxs-lookup"><span data-stu-id="27720-186">See the [third example](#request-3) below.</span></span>
 
-### <a name="example"></a><span data-ttu-id="b4788-187">示例</span><span class="sxs-lookup"><span data-stu-id="b4788-187">Example</span></span>
+### <a name="example"></a><span data-ttu-id="27720-187">示例</span><span class="sxs-lookup"><span data-stu-id="27720-187">Example</span></span>
 
-#### <a name="request-1"></a><span data-ttu-id="b4788-188">请求 1</span><span class="sxs-lookup"><span data-stu-id="b4788-188">Request 1</span></span>
+#### <a name="request-1"></a><span data-ttu-id="27720-188">请求 1</span><span class="sxs-lookup"><span data-stu-id="27720-188">Request 1</span></span>
 
-<span data-ttu-id="b4788-189">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="b4788-189">The following is an example of the request.</span></span> <span data-ttu-id="b4788-190">没有 `$select` 参数，因为将跟踪并返回默认的属性集。</span><span class="sxs-lookup"><span data-stu-id="b4788-190">There is no `$select` parameter, so a default set of properties is tracked and returned.</span></span>
+<span data-ttu-id="27720-189">下面展示了示例请求。</span><span class="sxs-lookup"><span data-stu-id="27720-189">The following is an example of the request.</span></span> <span data-ttu-id="27720-190">没有 `$select` 参数，因为将跟踪并返回默认的属性集。</span><span class="sxs-lookup"><span data-stu-id="27720-190">There is no `$select` parameter, so a default set of properties is tracked and returned.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_delta"
@@ -112,11 +112,11 @@ GET /users/delta
 GET https://graph.microsoft.com/v1.0/users/delta
 ```
 
-#### <a name="response-1"></a><span data-ttu-id="b4788-191">响应 1</span><span class="sxs-lookup"><span data-stu-id="b4788-191">Response 1</span></span>
+#### <a name="response-1"></a><span data-ttu-id="27720-191">响应 1</span><span class="sxs-lookup"><span data-stu-id="27720-191">Response 1</span></span>
 
-<span data-ttu-id="b4788-192">以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。</span><span class="sxs-lookup"><span data-stu-id="b4788-192">The following is an example of the response when using `deltaLink` obtained from the query initialization.</span></span>
+<span data-ttu-id="27720-192">以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。</span><span class="sxs-lookup"><span data-stu-id="27720-192">The following is an example of the response when using `deltaLink` obtained from the query initialization.</span></span>
 
-><span data-ttu-id="b4788-193">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。</span><span class="sxs-lookup"><span data-stu-id="b4788-193">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b4788-194">所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="b4788-194">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="27720-p119">**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。</span><span class="sxs-lookup"><span data-stu-id="27720-p119">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -151,32 +151,31 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="b4788-195">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="b4788-195">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="b4788-196">C#</span><span class="sxs-lookup"><span data-stu-id="b4788-196">c</span></span>](#tab/cs)
+#### <a name="sdk-sample-code"></a><span data-ttu-id="27720-195">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="27720-195">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="27720-196">C#</span><span class="sxs-lookup"><span data-stu-id="27720-196">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_delta-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b4788-197">Javascript</span><span class="sxs-lookup"><span data-stu-id="b4788-197">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="27720-197">Javascript</span><span class="sxs-lookup"><span data-stu-id="27720-197">Javascript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_delta-Javascript-snippets.md)]
 
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+#### <a name="request-2"></a><span data-ttu-id="27720-198">请求 2</span><span class="sxs-lookup"><span data-stu-id="27720-198">Request 2</span></span>
 
-#### <a name="request-2"></a><span data-ttu-id="b4788-198">请求 2</span><span class="sxs-lookup"><span data-stu-id="b4788-198">Request 2</span></span>
-
-<span data-ttu-id="b4788-199">下一个示例所示为通过默认响应行为选择 3 种更改跟踪属性时的初始请求：</span><span class="sxs-lookup"><span data-stu-id="b4788-199">The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:</span></span>
+<span data-ttu-id="27720-199">下一个示例所示为通过默认响应行为选择 3 种更改跟踪属性时的初始请求：</span><span class="sxs-lookup"><span data-stu-id="27720-199">The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:</span></span>
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta_select"
 }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mobilePhone
 ```
 
-#### <a name="response-2"></a><span data-ttu-id="b4788-200">响应 2</span><span class="sxs-lookup"><span data-stu-id="b4788-200">Response 2</span></span>
+#### <a name="response-2"></a><span data-ttu-id="27720-200">响应 2</span><span class="sxs-lookup"><span data-stu-id="27720-200">Response 2</span></span>
 
-<span data-ttu-id="b4788-201">以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。</span><span class="sxs-lookup"><span data-stu-id="b4788-201">The following is an example of the response when using `deltaLink` obtained from the query initialization.</span></span> <span data-ttu-id="b4788-202">请注意，所有 3 种属性将包括在响应中，并且无法知道在获得 `deltaLink` 之后发生更改的属性。</span><span class="sxs-lookup"><span data-stu-id="b4788-202">Note that all 3 properties are included in the response and it is not known which ones have changed since the `deltaLink` was obtained.</span></span>
+<span data-ttu-id="27720-201">以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。</span><span class="sxs-lookup"><span data-stu-id="27720-201">The following is an example of the response when using `deltaLink` obtained from the query initialization.</span></span> <span data-ttu-id="27720-202">请注意，所有 3 种属性将包括在响应中，并且无法知道在获得 `deltaLink` 之后发生更改的属性。</span><span class="sxs-lookup"><span data-stu-id="27720-202">Note that all 3 properties are included in the response and it is not known which ones have changed since the `deltaLink` was obtained.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -201,23 +200,23 @@ Content-type: application/json
   ]
 }
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="b4788-203">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="b4788-203">SDK sample code</span></span>
-# <a name="ctabcs"></a>[<span data-ttu-id="b4788-204">C#</span><span class="sxs-lookup"><span data-stu-id="b4788-204">c</span></span>](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_delta-Cs-snippets.md)]
+#### <a name="sdk-sample-code"></a><span data-ttu-id="27720-203">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="27720-203">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="27720-204">C#</span><span class="sxs-lookup"><span data-stu-id="27720-204">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_delta_select-Cs-snippets.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b4788-205">Javascript</span><span class="sxs-lookup"><span data-stu-id="b4788-205">JavaScript</span></span>](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_delta-Javascript-snippets.md)]
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="27720-205">Javascript</span><span class="sxs-lookup"><span data-stu-id="27720-205">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_delta_select-Javascript-snippets.md)]
 
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### <a name="request-3"></a><span data-ttu-id="b4788-206">请求 3</span><span class="sxs-lookup"><span data-stu-id="b4788-206">Request 3</span></span>
+#### <a name="request-3"></a><span data-ttu-id="27720-206">请求 3</span><span class="sxs-lookup"><span data-stu-id="27720-206">Request 3</span></span>
 
-<span data-ttu-id="b4788-207">下一个示例所示为通过备用最小响应行为选择 3 种更改跟踪属性时的初始请求：</span><span class="sxs-lookup"><span data-stu-id="b4788-207">The next example shows the initial request selecting 3 properties for change tracking, with alternative minimal response behavior:</span></span>
+<span data-ttu-id="27720-207">下一个示例所示为通过备用最小响应行为选择 3 种更改跟踪属性时的初始请求：</span><span class="sxs-lookup"><span data-stu-id="27720-207">The next example shows the initial request selecting 3 properties for change tracking, with alternative minimal response behavior:</span></span>
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta_minimal"
 }-->
 
 ```http
@@ -225,9 +224,9 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mo
 Prefer: return=minimal
 ```
 
-#### <a name="response-3"></a><span data-ttu-id="b4788-208">响应 3</span><span class="sxs-lookup"><span data-stu-id="b4788-208">Response 3</span></span>
+#### <a name="response-3"></a><span data-ttu-id="27720-208">响应 3</span><span class="sxs-lookup"><span data-stu-id="27720-208">Response 3</span></span>
 
-<span data-ttu-id="b4788-209">以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。</span><span class="sxs-lookup"><span data-stu-id="b4788-209">The following is an example of the response when using `deltaLink` obtained from the query initialization.</span></span> <span data-ttu-id="b4788-210">请注意，`mobilePhone` 属性不包括在内，这意味着它在上一轮 Delta 查询之后未发生更改；并且 `displayName` 和 `jobTitle` 将包括在内，这意味着其值已发生更改。</span><span class="sxs-lookup"><span data-stu-id="b4788-210">Note that the `mobilePhone` property is not included, which means it has not changed since the last delta query; `displayName` and `jobTitle` are included which means their values have changed.</span></span>
+<span data-ttu-id="27720-209">以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。</span><span class="sxs-lookup"><span data-stu-id="27720-209">The following is an example of the response when using `deltaLink` obtained from the query initialization.</span></span> <span data-ttu-id="27720-210">请注意，`mobilePhone` 属性不包括在内，这意味着它在上一轮 Delta 查询之后未发生更改；并且 `displayName` 和 `jobTitle` 将包括在内，这意味着其值已发生更改。</span><span class="sxs-lookup"><span data-stu-id="27720-210">Note that the `mobilePhone` property is not included, which means it has not changed since the last delta query; `displayName` and `jobTitle` are included which means their values have changed.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -251,9 +250,19 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a><span data-ttu-id="27720-211">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="27720-211">SDK sample code</span></span>
+# <a name="ctabcs"></a>[<span data-ttu-id="27720-212">C#</span><span class="sxs-lookup"><span data-stu-id="27720-212">C#</span></span>](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_delta_minimal-Cs-snippets.md)]
 
-- <span data-ttu-id="b4788-211">[使用 Delta 查询跟踪 Microsoft Graph 数据更改](/graph/delta-query-overview)。</span><span class="sxs-lookup"><span data-stu-id="b4788-211">[Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).</span></span>
-- <span data-ttu-id="b4788-212">[获取用户的增量更改](/graph/delta-query-users)。</span><span class="sxs-lookup"><span data-stu-id="b4788-212">[Get incremental changes for users](/graph/delta-query-users).</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="27720-213">Javascript</span><span class="sxs-lookup"><span data-stu-id="27720-213">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_delta_minimal-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+- <span data-ttu-id="27720-214">[使用 Delta 查询跟踪 Microsoft Graph 数据更改](/graph/delta-query-overview)。</span><span class="sxs-lookup"><span data-stu-id="27720-214">[Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).</span></span>
+- <span data-ttu-id="27720-215">[获取用户的增量更改](/graph/delta-query-users)。</span><span class="sxs-lookup"><span data-stu-id="27720-215">[Get incremental changes for users](/graph/delta-query-users).</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
