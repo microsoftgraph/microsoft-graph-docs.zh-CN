@@ -1,19 +1,19 @@
 ---
 title: 创建 windowsInformationProtectionNetworkLearningSummary
 description: 创建新的 windowsInformationProtectionNetworkLearningSummary 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdc1fed0c8afd1e8dcadd3c2a64d4f7a1ad47b37
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 567d6ceb8cd197cd60cbee4eff7e6886a7cae01b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541260"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898887"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>创建 windowsInformationProtectionNetworkLearningSummary
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -89,7 +89,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: 创建 remoteAssistancePartner
 description: 创建新的 remoteAssistancePartner 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7abb090d5bee7eca61b2481d0d396f9b8ade39f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f3e805f51e3f0b0dca2a6937c49d74269eb1a3f5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527250"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899380"
 ---
 # <a name="create-remoteassistancepartner"></a>创建 remoteAssistancePartner
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -95,7 +95,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
 
 
 

@@ -3,12 +3,12 @@ title: 更新 secureScoreControlProfile
 description: 在任何集成的解决方案中更新可编辑的 secureScoreControlProfile 对象, 以更改各种属性, 如 "分配给" 或 "tenantNote"。
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 8f3193b72ac59528c386bb6207b17d4440e6c98a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 79d958e3f2bd04be8dab2d8fe0bda6117f487973
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629745"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951285"
 ---
 # <a name="update-securescorecontrolprofile"></a>更新 secureScoreControlProfile
 
@@ -46,7 +46,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 | 属性   | 类型 |说明|
 |:---------------|:--------|:----------|
 |assignedTo|String|为会审、实现或修正分配的控制分析员的名称。|
-|注释|字符串|控件上的分析师注释 (针对客户控制管理)。|
+|注释|String|控件上的分析师注释 (针对客户控制管理)。|
 |state| String|控件上的分析导向设置。 可取值为：`Default`、`Ignored`、`ThirdParty`、`Reviewed`。|
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | 包含有关安全产品/服务供应商、提供程序和 subprovider 的详细信息的复杂类型 (例如, 供应商 = Microsoft; provider = SecureScore;)。 **提供程序和供应商字段是必需的。** |
 
@@ -99,6 +99,14 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_update-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### <a name="example-2-request-with-prefer-header"></a>示例 2: 具有首选标头的请求
 
@@ -201,6 +209,10 @@ Content-type: application/json
   "description": "Update secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

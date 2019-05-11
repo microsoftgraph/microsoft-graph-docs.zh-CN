@@ -1,19 +1,19 @@
 ---
 title: 获取 deviceManagement
 description: 读取 deviceManagement 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ba39a49f02d6f6eb541786a46b0cb0fa761de18f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bbbe6c21d602266be2223fbd72b10ae9f51f7818
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527082"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898379"
 ---
 # <a name="get-devicemanagement"></a>获取 deviceManagement
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "32527082"
 | &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |
-| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All、DeviceManagementRBAC.Read.All |
 | &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.ReadWrite.All、DeviceManagementConfiguration.Read.All |

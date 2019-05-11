@@ -3,12 +3,12 @@ title: 列出 secureScoreControlProfiles
 description: 检索 secureScoreControlProfiles 对象的属性和关系。
 author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: d7de3b6b446aa12447023d6b4f111fc2ac28b41e
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 76e728975310e73a6424cb4bd47aed9e8668fb77
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629738"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951342"
 ---
 # <a name="list-securescorecontrolprofiles"></a>列出 secureScoreControlProfiles
 
@@ -43,7 +43,7 @@ GET /security/secureScoreControlProfiles?$filter={property} eq '{property-value}
 - `$skip`
 - `$top` 将返回每个安全 API 提供程序的顶部聚合结果。  
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称      |说明|
 |:----------|:----------|
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,6 +139,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_securescorecontrolprofiles-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_securescorecontrolprofiles-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!--
@@ -147,6 +157,10 @@ Content-type: application/json
   "description": "List secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/security-list-securescorecontrolprofiles.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/security-list-securescorecontrolprofiles.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

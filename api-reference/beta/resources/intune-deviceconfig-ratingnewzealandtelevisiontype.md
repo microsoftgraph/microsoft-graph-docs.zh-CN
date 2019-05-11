@@ -1,19 +1,19 @@
 ---
 title: ratingNewZealandTelevisionType 枚举类型
 description: 新西兰的电视内容评级标签
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1ccdf774fb9eac565410318cd892e5a47c9dcb2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 45ef45e548ffb8b54de6499684d9e39f1b23f631
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556877"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951080"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>ratingNewZealandTelevisionType 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,10 +24,9 @@ ms.locfileid: "32556877"
 |:---|:---|:---|
 |allAllowed|0|默认值, 允许所有电视节目内容|
 |allBlocked|1|不允许任何电视显示内容|
-|概要|2 |G 分类排除了可能对14下的儿童造成损害的材料|
-|parentalGuidance|3 |PGR 分类鼓励家长和监护人监督年轻的查看者|
-|成人|4 |AO 分类不适用于儿童|
-
+|概要|双面|G 分类排除了可能对14下的儿童造成损害的材料|
+|parentalGuidance|第三章|PGR 分类鼓励家长和监护人监督年轻的查看者|
+|成人|4|AO 分类不适用于儿童|
 
 
 
