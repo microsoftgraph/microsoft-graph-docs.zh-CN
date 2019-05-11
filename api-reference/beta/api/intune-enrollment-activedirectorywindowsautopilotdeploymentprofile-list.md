@@ -1,34 +1,34 @@
 ---
 title: 列出 activeDirectoryWindowsAutopilotDeploymentProfiles
 description: 列出 activeDirectoryWindowsAutopilotDeploymentProfile 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 192a1b3dbcad17415f260670075f5970632687fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c4095a382ec678b39b42b741769a94e6aaddca49
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534029"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908985"
 ---
-# <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a><span data-ttu-id="ae4ea-103">列出 activeDirectoryWindowsAutopilotDeploymentProfiles</span><span class="sxs-lookup"><span data-stu-id="ae4ea-103">List activeDirectoryWindowsAutopilotDeploymentProfiles</span></span>
+# <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a><span data-ttu-id="c93cc-103">列出 activeDirectoryWindowsAutopilotDeploymentProfiles</span><span class="sxs-lookup"><span data-stu-id="c93cc-103">List activeDirectoryWindowsAutopilotDeploymentProfiles</span></span>
 
-> <span data-ttu-id="ae4ea-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="ae4ea-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c93cc-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="c93cc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ae4ea-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="ae4ea-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c93cc-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="c93cc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ae4ea-106">列出[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="ae4ea-106">List properties and relationships of the [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) objects.</span></span>
+<span data-ttu-id="c93cc-106">列出[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)对象的属性和关系。</span><span class="sxs-lookup"><span data-stu-id="c93cc-106">List properties and relationships of the [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ae4ea-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="ae4ea-107">Prerequisites</span></span>
-<span data-ttu-id="ae4ea-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="ae4ea-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c93cc-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="c93cc-107">Prerequisites</span></span>
+<span data-ttu-id="c93cc-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="c93cc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ae4ea-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="ae4ea-110">Permission type</span></span>|<span data-ttu-id="ae4ea-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="ae4ea-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c93cc-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="c93cc-110">Permission type</span></span>|<span data-ttu-id="c93cc-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="c93cc-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ae4ea-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="ae4ea-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ae4ea-113">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="ae4ea-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="ae4ea-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="ae4ea-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ae4ea-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="ae4ea-115">Not supported.</span></span>|
-|<span data-ttu-id="ae4ea-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="ae4ea-116">Application</span></span>|<span data-ttu-id="ae4ea-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="ae4ea-117">Not supported.</span></span>|
+|<span data-ttu-id="c93cc-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c93cc-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c93cc-113">DeviceManagementServiceConfig.ReadWrite.All、DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="c93cc-113">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="c93cc-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="c93cc-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c93cc-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="c93cc-115">Not supported.</span></span>|
+|<span data-ttu-id="c93cc-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="c93cc-116">Application</span></span>|<span data-ttu-id="c93cc-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="c93cc-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ae4ea-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="ae4ea-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c93cc-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c93cc-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,32 +37,32 @@ ms.locfileid: "32534029"
 GET /deviceManagement/windowsAutopilotDeploymentProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ae4ea-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="ae4ea-119">Request headers</span></span>
-|<span data-ttu-id="ae4ea-120">标头</span><span class="sxs-lookup"><span data-stu-id="ae4ea-120">Header</span></span>|<span data-ttu-id="ae4ea-121">值</span><span class="sxs-lookup"><span data-stu-id="ae4ea-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c93cc-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="c93cc-119">Request headers</span></span>
+|<span data-ttu-id="c93cc-120">标头</span><span class="sxs-lookup"><span data-stu-id="c93cc-120">Header</span></span>|<span data-ttu-id="c93cc-121">值</span><span class="sxs-lookup"><span data-stu-id="c93cc-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ae4ea-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ae4ea-122">Authorization</span></span>|<span data-ttu-id="ae4ea-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="ae4ea-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ae4ea-124">接受</span><span class="sxs-lookup"><span data-stu-id="ae4ea-124">Accept</span></span>|<span data-ttu-id="ae4ea-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ae4ea-125">application/json</span></span>|
+|<span data-ttu-id="c93cc-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c93cc-122">Authorization</span></span>|<span data-ttu-id="c93cc-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="c93cc-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c93cc-124">接受</span><span class="sxs-lookup"><span data-stu-id="c93cc-124">Accept</span></span>|<span data-ttu-id="c93cc-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c93cc-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ae4ea-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="ae4ea-126">Request body</span></span>
-<span data-ttu-id="ae4ea-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="ae4ea-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c93cc-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="c93cc-126">Request body</span></span>
+<span data-ttu-id="c93cc-127">请勿提供此方法的请求正文。</span><span class="sxs-lookup"><span data-stu-id="c93cc-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ae4ea-128">响应</span><span class="sxs-lookup"><span data-stu-id="ae4ea-128">Response</span></span>
-<span data-ttu-id="ae4ea-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="ae4ea-129">If successful, this method returns a `200 OK` response code and a collection of [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c93cc-128">响应</span><span class="sxs-lookup"><span data-stu-id="c93cc-128">Response</span></span>
+<span data-ttu-id="c93cc-129">如果成功, 此方法在响应`200 OK`正文中返回响应代码和[activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)对象集合。</span><span class="sxs-lookup"><span data-stu-id="c93cc-129">If successful, this method returns a `200 OK` response code and a collection of [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ae4ea-130">示例</span><span class="sxs-lookup"><span data-stu-id="ae4ea-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c93cc-130">示例</span><span class="sxs-lookup"><span data-stu-id="c93cc-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ae4ea-131">请求</span><span class="sxs-lookup"><span data-stu-id="ae4ea-131">Request</span></span>
-<span data-ttu-id="ae4ea-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="ae4ea-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c93cc-131">请求</span><span class="sxs-lookup"><span data-stu-id="c93cc-131">Request</span></span>
+<span data-ttu-id="c93cc-132">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c93cc-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploymentProfiles
 ```
 
-### <a name="response"></a><span data-ttu-id="ae4ea-133">响应</span><span class="sxs-lookup"><span data-stu-id="ae4ea-133">Response</span></span>
-<span data-ttu-id="ae4ea-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="ae4ea-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c93cc-133">响应</span><span class="sxs-lookup"><span data-stu-id="c93cc-133">Response</span></span>
+<span data-ttu-id="c93cc-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="c93cc-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1430
+Content-Length: 1504
 
 {
   "value": [
@@ -96,12 +96,14 @@ Content-Length: 1430
       "extractHardwareHash": true,
       "deviceNameTemplate": "Device Name Template value",
       "deviceType": "surfaceHub2",
-      "enableWhiteGlove": true
+      "enableWhiteGlove": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }
 ```
-
 
 
 
