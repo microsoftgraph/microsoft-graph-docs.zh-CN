@@ -2,18 +2,18 @@
 title: 创建 mobileAppTroubleshootingEvent
 description: 介绍了创建适用于 Intune 的 Microsoft Graph API 的 mobileAppTroubleshootingEvent 方法, 该方法支持多个工作流。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 89a191f94d68636226b6a8d41be0d9ba962da761
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d258a2d05d260a7820efcbdccc423743b9e6a4cd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526977"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899261"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>创建 mobileAppTroubleshootingEvent
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 GUID|
+|id|字符串|对象的 GUID|
 |**疑难解答**|
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对, 提供有关疑难解答事件的其他信息。|
 |applicationId|String|Intune 应用程序标识符。|

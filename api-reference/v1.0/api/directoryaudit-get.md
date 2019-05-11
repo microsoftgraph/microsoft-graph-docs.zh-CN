@@ -4,12 +4,12 @@ description: 介绍了 Microsoft Graph API 中的 directoryAudit 资源 (实体)
 localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: df4b64f616cc902daaa764b74be4a16bea84b9fd
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: d5ffa250a3ea7315b939698f28898a2b6eaea100
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630151"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939292"
 ---
 # <a name="get-directoryaudit"></a>获取 directoryAudit
 
@@ -34,7 +34,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData 查询参数来帮助自定义响应。 有关如何使用这些参数的详细信息, 请参阅[OData 查询参数](/graph/query_parameters)。
+此方法支持 OData 查询参数来帮助自定义响应。 关如何使用这些参数的详细信息，请参阅 [OData 查询参数](/graph/query_parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -79,6 +79,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 218
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directoryaudit-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directoryaudit-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ```json
 {
@@ -133,5 +143,9 @@ Content-length: 218
   "description": "Get directoryAudits",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/directoryaudit-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/directoryaudit-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

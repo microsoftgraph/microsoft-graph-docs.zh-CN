@@ -1,19 +1,19 @@
 ---
 title: androidDeviceOwnerEnrollmentProfile 资源类型
 description: 注册配置文件，用于使用 Google 的云管理注册 COSU 设备。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e528d067f457fc441a2d5c6f880971bc79360992
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e4e4fdb5ef4beedc6f253480199f29994bae53f0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553195"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950800"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>androidDeviceOwnerEnrollmentProfile 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "32553195"
 |accountId|String|注册配置文件隶属的租户 GUID。|
 |id|字符串|注册配置文件的唯一 GUID。|
 |displayName|字符串|注册配置文件的显示名称。|
-|description|String|注册配置文件的说明。|
+|说明|String|注册配置文件的说明。|
 |createdDateTime|DateTimeOffset|注册配置文件的创建日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改注册配置文件的日期/时间。|
 |tokenValue|String|为此注册配置文件最新创建的令牌的值。|
@@ -78,7 +78,6 @@ ms.locfileid: "32553195"
   }
 }
 ```
-
 
 
 

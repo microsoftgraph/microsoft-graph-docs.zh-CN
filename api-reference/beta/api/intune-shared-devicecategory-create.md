@@ -1,19 +1,19 @@
 ---
 title: 创建 deviceCategory
 description: 创建新的 deviceCategory 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 71b36a94624140586f2275679df91c4ed7374335
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ebb6980d47d0046f364ce4e8bfe57805553def48
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527173"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898542"
 ---
 # <a name="create-devicecategory"></a>创建 deviceCategory
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -56,7 +56,7 @@ POST /deviceManagement/deviceCategories
 |:---|:---|:---|
 |id|字符串|设备类别的唯一标识符。 只读。|
 |**Obboarding**|
-|description|String|设备类别的可选说明。|
+|说明|String|设备类别的可选说明。|
 |displayName|String|设备类别的显示名称。|
 
 ## <a name="response"></a>响应

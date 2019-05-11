@@ -1,19 +1,19 @@
 ---
 title: 更新 intuneBrandingProfile
 description: 更新 intuneBrandingProfile 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f957966ed18003b65b164aff53b4a3d74468051
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7e59fcf95d436aca53cb5dc6ab61feda6f7d6d77
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541834"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899184"
 ---
 # <a name="update-intunebrandingprofile"></a>更新 intuneBrandingProfile
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |id|String|配置文件键|
 |profileName|String|配置文件的名称|
 |profileDescription|String|配置文件的说明|
-|isDefaultProfile|布尔值|显示配置文件是否用于默认设置。|
+|isDefaultProfile|Boolean|显示配置文件是否用于默认设置。|
 |createdDateTime|DateTimeOffset|创建 BrandingProfile 时。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 BrandingProfile 的时间。|
 |displayName|字符串|向最终用户显示的公司/组织名称。|
@@ -65,7 +65,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |onlineSupportSiteUrl|String|指向公司/组织 IT 支持人员网站的 URL。|
 |onlineSupportSiteName|String|显示公司/组织 IT 支持人员网站的名称。|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|公司门户应用程序和 Web 门户中使用的主要主题颜色。|
-|showLogo|布尔值|表示是否显示管理员提供的徽标图像的布尔值。|
+|showLogo|Boolean|表示是否显示管理员提供的徽标图像的布尔值。|
 |showDisplayNameNextToLogo|布尔值|表示是否要在徽标图像旁显示管理员提供的显示名称的布尔值。|
 |themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在主题颜色背景上的公司门户应用程序中显示的徽标图像。|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|在 "浅色背景" 的公司门户应用程序中显示的徽标图像。|
@@ -172,7 +172,6 @@ Content-Length: 1377
   }
 }
 ```
-
 
 
 

@@ -2,18 +2,18 @@
 title: 更新 mobileAppTroubleshootingEvent
 description: 介绍了适用于 Intune 的 Microsoft Graph API 的更新 mobileAppTroubleshootingEvent 方法, 该方法支持多个工作流。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 05163b0251690c990454e671ebab6aaf26fa02ad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b94a62e896bda2cf6a39b065df0fd698924a4c21
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527096"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898274"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>更新 mobileAppTroubleshootingEvent
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 GUID|
+|id|字符串|对象的 GUID|
 |**疑难解答**|
 |additionalInformation|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|一组字符串键和字符串值对, 提供有关疑难解答事件的其他信息。|
 |applicationId|String|Intune 应用程序标识符。|

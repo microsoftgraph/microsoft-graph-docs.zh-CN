@@ -1,19 +1,19 @@
 ---
 title: 列出 windowsDomainJoinConfigurations
 description: 列出 windowsDomainJoinConfiguration 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 19f4687039e2a07b32994d855f3e215da2af85c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fba5ecec145196f4fd4a12182edc31022fb491b6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526823"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33897806"
 ---
 # <a name="list-windowsdomainjoinconfigurations"></a>列出 windowsDomainJoinConfigurations
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

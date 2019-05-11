@@ -1,19 +1,19 @@
 ---
 title: getAssignedRoleIdsForLoggedInUser 函数
 description: 检索当前已通过身份验证的用户分配的角色定义和角色分配。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c8d1618aeece15fc482d0d850f8938d45cb53edd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 61c42efdf0ae9b773f1bf136d2dccb011a687aad
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527089"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898665"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>getAssignedRoleIdsForLoggedInUser 函数
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

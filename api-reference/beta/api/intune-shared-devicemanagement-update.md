@@ -1,19 +1,19 @@
 ---
 title: 更新 deviceManagement
 description: 更新 deviceManagement 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e0dc83489ede464eb9da000acb8db4e6af13f8d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2621df4ec2373c06433df5df4f253971d4280a15
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527047"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33898484"
 ---
 # <a name="update-devicemanagement"></a>更新 deviceManagement
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "32527047"
 | &nbsp;&nbsp; **电子 SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **注册** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **防护** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **通知** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **载入** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **基于角色的访问控制 (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp; **远程访问** | DeviceManagementConfiguration.Read.All |
@@ -75,7 +75,7 @@ PATCH /deviceManagement
 |id|String|设备的唯一标识符。|
 |**设备配置**|
 |intuneAccountId|GUID|给定租户的 Intune 帐户 ID|
-|legacyPcManangementEnabled|布尔值|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
+|legacyPcManangementEnabled|Boolean|用于为此帐户启用非 MDM 托管旧版 PC 管理的属性。 此属性是只读的。|
 |maximumDepTokens|Int32|每个租户允许的最大 DEP 令牌数。|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|帐户级别设置。|
 |**设备管理**|
@@ -85,7 +85,7 @@ PATCH /deviceManagement
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|设备清理规则|
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|租户移动设备管理订阅状态。 可取值为：`pending`、`active`、`warning`、`disabled`、`deleted`、`blocked`、`lockedOut`。|
 |订阅|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|租户的订阅。 可取值为：`none`、`intune`、`office365`、`intunePremium`、`intune_EDU`、`intune_SMB`。|
-|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|windows 设备的恶意软件概述。|
+|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Windows 设备的恶意软件概述。|
 |**载入**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。|
 

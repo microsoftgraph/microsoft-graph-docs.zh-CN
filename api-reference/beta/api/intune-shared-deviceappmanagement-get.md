@@ -1,19 +1,19 @@
 ---
 title: 获取 deviceAppManagement
 description: 读取 deviceAppManagement 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c27099cdc0e2ffbbc3e0e02cde07b9b4e34ea33c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dd95af58907525b2de1cfeb80baae09429480695
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527180"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899345"
 ---
 # <a name="get-deviceappmanagement"></a>获取 deviceAppManagement
 
-> **重要说明:** Microsoft Graph 中的/beta 版本下的 api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明:** Microsoft Graph 中的/beta 版本下的 Api 可能会发生变化。 不支持在生产应用程序中使用这些 API。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "32527180"
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
 | 委派（工作或学校帐户） | |
-| &nbsp;&nbsp; **应用**、**图书**或**加入** | devicemanagementapps.readwrite.all、devicemanagementapps.readwrite.all 和所有 ReadW |
+| &nbsp;&nbsp; **应用**、**图书**或**加入** | Devicemanagementapps.readwrite.all、Devicemanagementapps.readwrite.all 和所有 ReadW |
 | &nbsp;&nbsp; **设备管理** | DeviceManagementManagedDevices.ReadWrite.All、DeviceManagementManagedDevices.Read.All |
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|

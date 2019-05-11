@@ -4,12 +4,12 @@ description: 检索 secureScoreControlProfile 对象的属性和关系。
 author: preetikr
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 6accac07ab66a57303dd3881b47daae82deb2a9f
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: afdfde0e87c180af7e3cdf7523966526649ad9f6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629752"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951380"
 ---
 # <a name="get-securescorecontrolprofile"></a>获取 secureScoreControlProfile
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}
 
 ### <a name="response"></a>响应
 
-下面展示了示例响应。
+下面是一个响应示例。
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -123,6 +123,16 @@ Content-type: application/json
   }
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_securescorecontrolprofile-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_securescorecontrolprofile-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -130,6 +140,10 @@ Content-type: application/json
   "description": "get secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/securescorecontrolprofile-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
