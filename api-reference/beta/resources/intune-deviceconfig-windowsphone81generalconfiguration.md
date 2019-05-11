@@ -1,19 +1,19 @@
 ---
 title: windowsPhone81GeneralConfiguration 资源类型
 description: 本主题提供由 windowsPhone81GeneralConfiguration 资源公开的已声明方法、属性和关系的说明。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f574701f3da86fe59cb4322315ab273a16d1f0d6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7f28e3aae76af604be2e006716dbf159f1d3412c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32573170"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943723"
 ---
 # <a name="windowsphone81generalconfiguration-resource-type"></a>windowsPhone81GeneralConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -143,7 +143,6 @@ ms.locfileid: "32573170"
   "windowsStoreBlocked": true
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: managedEBook 资源类型
 description: 包含托管电子书基属性的抽象类。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 888df51e17ab45dcada3d69fad95315b26b4b20e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7a9248a2bca56188deb913159d9ff664ce8d9b48
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561178"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949295"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "32561178"
 |:---|:---|:---|
 |id|字符串|实体的键。|
 |displayName|字符串|电子书的名称。|
-|description|String|说明。|
+|说明|String|说明。|
 |publisher|String|发布者。|
 |publishedDateTime|DateTimeOffset|电子书的发布日期和时间。|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。|
@@ -76,7 +76,6 @@ ms.locfileid: "32561178"
   "privacyInformationUrl": "String"
 }
 ```
-
 
 
 

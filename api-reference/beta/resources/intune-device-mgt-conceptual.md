@@ -1,19 +1,19 @@
 ---
-title: microsoft Intune 中的设备管理-microsoft Graph API
+title: Microsoft Intune 中的设备管理-Microsoft Graph API
 description: 列出用于定义租户组织的管理设备的 Intune 终结点 (REST) 的 Microsoft Graph API。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: cf2c6ccec71eed225b87a52a3e5941f54b606b01
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bee3080acefe6c6e2377f153dd6c58fc05850700
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556430"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949197"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
@@ -152,10 +152,9 @@ ms.locfileid: "32556430"
 - [重置密码操作结果](intune-devices-resetpasscodeactionresult.md)
 - [撤销 Apple VPP 许可证操作结果](intune-devices-revokeapplevpplicensesactionresult.md)
 - [运行计划](intune-devices-runschedule.md)
+- [安全基准类别状态摘要](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [安全基线合规性状态](intune-deviceintent-securitybaselinecompliancestate.md)
 - [安全基准设备状态](intune-deviceintent-securitybaselinedevicestate.md)
-- [安全基准设置状态](intune-deviceintent-securitybaselinesettingstate.md)
-- [安全比较基准状态](intune-deviceintent-securitybaselinestate.md)
 - [安全基准状态摘要](intune-deviceintent-securitybaselinestatesummary.md)
 - [安全基准模板](intune-deviceintent-securitybaselinetemplate.md)
 - [共享 Apple 设备用户](intune-devices-sharedappledeviceuser.md)

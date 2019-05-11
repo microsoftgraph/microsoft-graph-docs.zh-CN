@@ -1,19 +1,19 @@
 ---
 title: 创建 groupPolicyPresentationValueList
 description: 创建新的 groupPolicyPresentationValueList 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 97a362bd0ffe197be8802b93be9a1b44dfe1104e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e9295a71571e21174b463eb055945e4863163f75
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530828"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904368"
 ---
 # <a name="create-grouppolicypresentationvaluelist"></a>创建 groupPolicyPresentationValueList
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|对象的创建日期和时间。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|值|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|关联的演示文稿的一对列表。|
+|values|[keyValuePair](../resources/intune-shared-keyvaluepair.md) 集合|关联的演示文稿的一对列表。|
 
 
 
@@ -102,7 +102,6 @@ Content-Length: 394
   ]
 }
 ```
-
 
 
 

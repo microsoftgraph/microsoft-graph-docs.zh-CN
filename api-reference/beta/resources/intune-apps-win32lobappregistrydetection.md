@@ -1,19 +1,19 @@
 ---
 title: win32LobAppRegistryDetection 资源类型
 description: 包含用于检测 Win32 应用程序的注册表属性
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c249a21075a2d2647fbb0cbcc53bf7c541a155f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4cd9ce4223d18d001ca1d299f8dbcae31c6f99d2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534477"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949526"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>win32LobAppRegistryDetection 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "32534477"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|check32BitOn64System|布尔值|一个值, 该值指示此注册表路径是否用于检查64位系统上的32位应用|
+|check32BitOn64System|Boolean|一个值, 该值指示此注册表路径是否用于检查64位系统上的32位应用|
 |keyPath|String|用于检测 Win32 业务线 (LoB) 应用程序的注册表项路径|
 |等值|String|注册表值名称|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|注册表数据检测类型。 可取值为：`notConfigured`、`exists`、`doesNotExist`、`string`、`integer`、`version`。|
@@ -53,7 +53,6 @@ ms.locfileid: "32534477"
   "detectionValue": "String"
 }
 ```
-
 
 
 

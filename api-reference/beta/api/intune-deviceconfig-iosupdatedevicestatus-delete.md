@@ -1,19 +1,19 @@
 ---
 title: 删除 iosUpdateDeviceStatus
 description: 删除 iosUpdateDeviceStatus。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a8a16735f28cc7207a0eaec98426f18bd84e9df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c94d2f74c95a882797e5c2b1fec5520ce5dd0f22
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519239"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923179"
 ---
 # <a name="delete-iosupdatedevicestatus"></a>删除 iosUpdateDeviceStatus
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/iosUpdateStatuses/{iosU
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

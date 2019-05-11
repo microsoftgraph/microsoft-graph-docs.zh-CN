@@ -1,19 +1,19 @@
 ---
 title: 更新 windowsProtectionState
 description: 更新 windowsProtectionState 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b53e93f09be2b091ffe3e6a30cd109feb55c8d8a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 60fbdfd6ad0ca934b97fd5410b35d2806a8fa067
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534288"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908957"
 ---
 # <a name="update-windowsprotectionstate"></a>更新 windowsProtectionState
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -52,15 +52,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|设备保护状态对象的唯一标识符。 这是设备的设备 id|
-|malwareProtectionEnabled|布尔值|已启用反恶意软件|
+|malwareProtectionEnabled|Boolean|已启用反恶意软件|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|计算机的状态 (如清理或挂起完全扫描或等待重新启动等)。 可取值为：`clean`、`fullScanPending`、`rebootPending`、`manualStepsPending`、`offlineScanPending`、`critical`。|
-|realTimeProtectionEnabled|布尔值|是否启用了实时保护？|
-|networkInspectionSystemEnabled|布尔值|网络检查系统是否已启用？|
-|quickScanOverdue|布尔值|快速扫描是否过期？|
-|fullScanOverdue|布尔值|完全扫描逾期？|
-|signatureUpdateOverdue|布尔值|签名是否已过期？|
-|rebootRequired|布尔值|是否需要重新启动？|
-|fullScanRequired|布尔值|需要完全扫描吗？|
+|realTimeProtectionEnabled|Boolean|是否启用了实时保护？|
+|networkInspectionSystemEnabled|Boolean|网络检查系统是否已启用？|
+|quickScanOverdue|Boolean|快速扫描是否过期？|
+|fullScanOverdue|Boolean|完全扫描逾期？|
+|signatureUpdateOverdue|Boolean|签名是否已过期？|
+|rebootRequired|Boolean|是否需要重新启动？|
+|fullScanRequired|Boolean|需要完全扫描吗？|
 |engineVersion|String|当前 endpoint protection 引擎的版本|
 |signatureVersion|String|当前恶意软件定义版本|
 |antiMalwareVersion|String|当前反恶意软件版本|
@@ -135,7 +135,6 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: windowsUniversalAppXContainedApp 资源类型
 description: 一个表示包含的 WindowsUniversalAppX 应用程序的应用程序的类。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ff3f5b074d0a88c93fadd52c48059b73e6a82506
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a98d901e7a48a082c47083e0c1a5684e9b7d33c0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558361"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949372"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>windowsUniversalAppXContainedApp 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,7 +55,6 @@ ms.locfileid: "32558361"
   "appUserModelId": "String"
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: 删除 restrictedAppsViolation
 description: 删除 restrictedAppsViolation。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 362481c00288b6cb52fdcad6ab9240f5c91cff50
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f5bc23798046255d9d7c8f9b61ed921abae25bbb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518259"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922737"
 ---
 # <a name="delete-restrictedappsviolation"></a>删除 restrictedAppsViolation
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationRest
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

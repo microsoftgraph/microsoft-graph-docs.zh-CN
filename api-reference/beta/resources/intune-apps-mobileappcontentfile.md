@@ -1,19 +1,19 @@
 ---
 title: mobileAppContentFile 资源类型
 description: 包含与给定 mobileAppContent 版本关联的单个安装程序文件的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b0b5fc26adaed66ca040c55452cf8f067349aa5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b0b1697bcbf4832b00f40584ebd85644c0052ac
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554322"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949958"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>mobileAppContentFile 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -35,7 +35,7 @@ ms.locfileid: "32554322"
 |:---|:---|:---|
 |azureStorageUri|String|Azure 存储 URI。|
 |isCommitted|Boolean|指示文件是否已提交的值。|
-|id|字符串|文件 ID。|
+|id|String|文件 ID。|
 |createdDateTime|DateTimeOffset|创建文件的时间。|
 |name|String|文件名称。|
 |size|Int64|加密前的文件大小。|
@@ -43,8 +43,8 @@ ms.locfileid: "32554322"
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
 |manifest|Binary|清单信息。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
-|isFrameworkFile|布尔值|一个指示文件是否为框架文件的值。|
-|isDependency|布尔值|内容文件是否依赖于主要内容文件。|
+|isFrameworkFile|Boolean|一个指示文件是否为框架文件的值。|
+|isDependency|Boolean|内容文件是否依赖于主要内容文件。|
 
 ## <a name="relationships"></a>关系
 无
@@ -74,7 +74,6 @@ ms.locfileid: "32554322"
   "isDependency": true
 }
 ```
-
 
 
 

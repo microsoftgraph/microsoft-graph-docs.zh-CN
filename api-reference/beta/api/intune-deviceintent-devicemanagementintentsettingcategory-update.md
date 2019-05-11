@@ -1,19 +1,19 @@
 ---
 title: 更新 deviceManagementIntentSettingCategory
 description: 更新 deviceManagementIntentSettingCategory 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed60a9825c63e0166980925096fe27e5e7932fb7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5908628ec581db8c1112c18de29bab0c1a3da12b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507806"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33915921"
 ---
 # <a name="update-devicemanagementintentsettingcategory"></a>更新 deviceManagementIntentSettingCategory
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,8 +50,8 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceMan
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|从[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)继承的类别 ID|
-|displayName|String|继承自[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的类别名称|
+|id|String|从[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)继承的类别 ID|
+|displayName|String|继承自[DeviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)的类别名称|
 
 
 
@@ -86,7 +86,6 @@ Content-Length: 168
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

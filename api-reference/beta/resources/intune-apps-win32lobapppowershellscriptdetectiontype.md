@@ -1,19 +1,19 @@
 ---
 title: win32LobAppPowerShellScriptDetectionType 枚举类型
 description: 包含所有受支持的 Powershell 脚本输出检测类型。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4dc45a3b7ec8fe2732a89022fd3c74c0959bbc1c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2c18e0fa5f6b200a017203fd8320e0b895e8a47
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534533"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949561"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>win32LobAppPowerShellScriptDetectionType 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,12 +24,11 @@ ms.locfileid: "32534533"
 |:---|:---|:---|
 |notConfigured|0|未配置。|
 |string|1|输出数据类型为 string。|
-|dateTime|2 |输出数据类型为 "日期时间"。|
-|integer|3 |输出数据类型为 integer。|
-|点数|4 |输出数据类型为 float。|
-|version|5 |输出数据类型为版本。|
-|布尔|6 |输出数据类型为布尔值。|
-
+|dateTime|双面|输出数据类型为 "日期时间"。|
+|integer|第三章|输出数据类型为 integer。|
+|点数|4|输出数据类型为 float。|
+|version|5|输出数据类型为版本。|
+|boolean|型|输出数据类型为布尔值。|
 
 
 

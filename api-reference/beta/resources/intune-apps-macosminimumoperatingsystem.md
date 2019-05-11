@@ -1,19 +1,19 @@
 ---
 title: macOSMinimumOperatingSystem 资源类型
 description: MacOS 应用程序所需的最低操作系统。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b329947398d034d8b50922f278f0b55314ec0c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 596b4e6de349528d6e6d5d5524918de084936417
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552238"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950226"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>macOSMinimumOperatingSystem 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -22,13 +22,13 @@ MacOS 应用程序所需的最低操作系统。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|v10_7|布尔值|Mac OS 10.7 或更高版本。|
-|v10_8|布尔值|Mac OS 10.8 或更高版本。|
-|v10_9|布尔值|Mac OS 10.9 或更高版本。|
-|v10_10|布尔值|Mac OS 10.10 或更高版本。|
-|v10_11|布尔值|Mac OS 10.11 或更高版本。|
-|v10_12|布尔值|Mac OS 10.12 或更高版本。|
-|v10_13|布尔值|Mac OS 10.13 或更高版本。|
+|v10_7|Boolean|Mac OS 10.7 或更高版本。|
+|v10_8|Boolean|Mac OS 10.8 或更高版本。|
+|v10_9|Boolean|Mac OS 10.9 或更高版本。|
+|v10_10|Boolean|Mac OS 10.10 或更高版本。|
+|v10_11|Boolean|Mac OS 10.11 或更高版本。|
+|v10_12|Boolean|Mac OS 10.12 或更高版本。|
+|v10_13|Boolean|Mac OS 10.13 或更高版本。|
 
 ## <a name="relationships"></a>关系
 无
@@ -52,7 +52,6 @@ MacOS 应用程序所需的最低操作系统。
   "v10_13": true
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: 更新 appLogCollectionRequest
 description: 更新 appLogCollectionRequest 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a924def5da43959478ebaf060bd46e51408a2293
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4bd90622a2062e80f16b090e5930e5cba18f405c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466089"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910600"
 ---
 # <a name="update-applogcollectionrequest"></a>更新 appLogCollectionRequest
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 |:---|:---|:---|
 |id|String|唯一标识符。 这是 userId_DeviceId_AppId id。|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
-|errorMessage|字符串|在上载过程中出现的错误消息|
+|errorMessage|String|在上载过程中出现的错误消息|
 |customLogFolders|String collection|日志文件夹的列表。 |
 |completedDateTime|DateTimeOffset|上传日志请求到达终端状态的时间|
 
@@ -99,7 +99,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
 
 
 

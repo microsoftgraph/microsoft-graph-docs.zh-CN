@@ -1,19 +1,19 @@
 ---
 title: mobileAppDependency 资源类型
 description: 描述两个移动应用之间的依赖关系类型。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbad9cc613ff97d0f627109316d58f9f0c8f1364
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bf64854db4421028d4982145a860141a7dc91f61
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551755"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949932"
 ---
 # <a name="mobileappdependency-resource-type"></a>mobileAppDependency 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "32551755"
 |id|String|关系实体 id。继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|目标子移动应用程序的应用程序 id。继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetDisplayName|String|目标子移动应用程序的显示名称。 继承自[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|dependencyType|[mobileAppDependecyType](../resources/intune-apps-mobileappdependecytype.md)|父应用和子应用之间的依赖关系的类型。 可取值为：`detect`、`autoInstall`。|
+|dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|父应用和子应用之间的依赖关系的类型。 可取值为：`detect`、`autoInstall`。|
 |dependentAppCount|Int32|子应用程序的依赖项总数。|
 
 ## <a name="relationships"></a>关系
@@ -61,7 +61,6 @@ ms.locfileid: "32551755"
   "dependentAppCount": 1024
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
-title: microsoft Intune 中的设备配置-microsoft Gaaph API
+title: Microsoft Intune 中的设备配置-Microsoft Gaaph API
 description: 列出用于定义租户组织的配置设备的 Intune 终结点 (REST) 的 Microsoft Graph API。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0c25373b7a1c7657b2aee290c9a6ce5d0ae23cb9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a341de5bc6753102e3ce7a6c6c15114296a92248
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556422"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949162"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
@@ -171,6 +171,9 @@ ms.locfileid: "32556422"
 - [设备配置用户状态摘要](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [设备配置用户状态](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Device Guard 本地系统颁发机构 Credential Guard 类型](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [设备管理派生的凭据颁发者](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
+- [设备管理派生凭据通知类型](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
+- [设备管理派生的凭据设置](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
 - [设备管理设置](intune-deviceconfig-devicemanagementsettings.md)
 - [设备管理用户权限本地用户或组](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [设备管理用户权限设置](intune-deviceconfig-devicemanagementuserrightssetting.md)
@@ -198,6 +201,7 @@ ms.locfileid: "32556422"
 - [Edge 遥测模式](intune-deviceconfig-edgetelemetrymode.md)
 - [版本升级配置](intune-deviceconfig-editionupgradeconfiguration.md)
 - [版本升级许可证类型](intune-deviceconfig-editionupgradelicensetype.md)
+- [电子邮件证书类型](intune-deviceconfig-emailcertificatetype.md)
 - [电子邮件同步持续时间](intune-deviceconfig-emailsyncduration.md)
 - [电子邮件同步计划](intune-deviceconfig-emailsyncschedule.md)
 - [加密就绪状态](intune-deviceconfig-encryptionreadinessstate.md)
@@ -244,6 +248,7 @@ ms.locfileid: "32556422"
 - [iOS 证书配置文件基准](intune-deviceconfig-ioscertificateprofilebase.md)
 - [iOS 合规性策略](intune-deviceconfig-ioscompliancepolicy.md)
 - [iOS 自定义配置](intune-deviceconfig-ioscustomconfiguration.md)
+- [iOS 派生的凭据身份验证配置](intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md)
 - [iOS 设备功能配置](intune-deviceconfig-iosdevicefeaturesconfiguration.md)
 - [iOS EAS 电子邮件配置文件配置](intune-deviceconfig-ioseasemailprofileconfiguration.md)
 - [iOS EDU 证书设置](intune-deviceconfig-ioseducertificatesettings.md)

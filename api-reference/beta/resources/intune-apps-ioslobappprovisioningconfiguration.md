@@ -1,19 +1,19 @@
 ---
 title: iosLobAppProvisioningConfiguration 资源类型
 description: 本主题提供由 iOS Lob 应用程序设置配置资源公开的已声明方法、属性和关系的说明。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a5a85b0b5467835a1ecb3d81997e0300ab08eee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 197aed0a687e417750b61b0de2637bfbb9198a16
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552308"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950366"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>iosLobAppProvisioningConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -34,11 +34,11 @@ ms.locfileid: "32552308"
 |:---|:---|:---|
 |id|字符串|实体的键。|
 |expirationDateTime|DateTimeOffset|可选的配置文件到期日期和时间。|
-|payloadFileName|String|有效负载文件名 (*. mobileprovision | *.xml)。|
+|payloadFileName|String|有效负载文件名 (*。 mobileprovision | *.xml)。|
 |payload|Binary|有效负载。 （UTF8 编码的字节数组）|
 |roleScopeTagIds|String collection|此 iOS LOB 应用设置配置实体的作用域标记列表。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
-|description|String|管理员提供的设备配置说明。|
+|说明|String|管理员提供的设备配置说明。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |displayName|String|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|
@@ -76,7 +76,6 @@ ms.locfileid: "32552308"
   "version": 1024
 }
 ```
-
 
 
 

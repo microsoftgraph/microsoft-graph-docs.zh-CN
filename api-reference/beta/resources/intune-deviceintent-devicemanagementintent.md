@@ -1,19 +1,19 @@
 ---
 title: deviceManagementIntent 资源类型
 description: 表示将设置应用于设备的意图的实体
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2de7d4e8c177317aa220d6aafbba4bda8b7fe299
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 976a13bb8ac542e67ebdd0422669cd866cc70af6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541855"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943442"
 ---
 # <a name="devicemanagementintent-resource-type"></a>deviceManagementIntent 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,6 +28,7 @@ ms.locfileid: "32541855"
 |[删除 deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-delete.md)|无|删除[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)。|
 |[更新 deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|更新[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)对象的属性。|
 |[updateSettings 操作](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|无|尚未记录|
+|[migrateToTemplate 操作](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|无|尚未记录|
 |[分配操作](../api/intune-deviceintent-devicemanagementintent-assign.md)|无|尚未记录|
 
 ## <a name="properties"></a>属性
@@ -35,7 +36,7 @@ ms.locfileid: "32541855"
 |:---|:---|:---|
 |id|字符串|意向 ID|
 |displayName|String|用户给定的显示名称|
-|description|String|用户提供的说明|
+|说明|String|用户提供的说明|
 |isAssigned|Boolean|指示是否将意向分配给用户|
 |lastModifiedDateTime|DateTimeOffset|上次修改意向的时间|
 |templateId|String|创建此目的的模板的 ID (如果有)|
@@ -71,7 +72,6 @@ ms.locfileid: "32541855"
   "templateId": "String"
 }
 ```
-
 
 
 

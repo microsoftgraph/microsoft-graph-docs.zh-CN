@@ -1,19 +1,19 @@
 ---
 title: 删除 managedDeviceEncryptionState
 description: 删除 managedDeviceEncryptionState。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c501a5c64ea77b9c31f5456f738fce6bed4886a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9ac8af80fb567cb63b3cc83d261756bf43646707
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518336"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922730"
 ---
 # <a name="delete-manageddeviceencryptionstate"></a>删除 managedDeviceEncryptionState
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managedDeviceEncryption
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

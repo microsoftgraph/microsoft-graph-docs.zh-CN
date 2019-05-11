@@ -1,19 +1,19 @@
 ---
 title: iosVppAppRevokeLicensesActionResult 资源类型
 description: 定义适用于 iOS Vpp 应用程序的操作的结果, 包含 ActionResult 的继承属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc9ef2e11bc4502b580bce25ffb7e94f301b8d13
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6e28e21baa4dc0461d9b54f206810a969a153c15
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552154"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950240"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>iosVppAppRevokeLicensesActionResult 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -22,11 +22,11 @@ ms.locfileid: "32552154"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|userId|String|与操作关联的用户 id。|
+|userId|String|与操作关联的用户 Id。|
 |managedDeviceId|String|与操作相关联的 DeviceId。|
 |totalLicensesCount|Int32|尝试吊销的许可证数量的计数。|
 |failedLicensesCount|Int32|吊销失败的许可证数的计数。|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|吊销许可证操作失败的原因。 可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken` 或 `expiredApplePushNotificationCertificate`。|
+|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|吊销许可证操作失败的原因。 可取值为：`none`、`appleFailure`、`internalError`、`expiredVppToken`、`expiredApplePushNotificationCertificate`。|
 |actionName|String|操作名|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |startDateTime|DateTimeOffset|初始化操作的时间|
@@ -56,7 +56,6 @@ ms.locfileid: "32552154"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

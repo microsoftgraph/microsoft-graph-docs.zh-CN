@@ -1,19 +1,19 @@
 ---
 title: 获取 iosGeneralDeviceConfiguration
 description: 读取 iosGeneralDeviceConfiguration 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31535aacef7b4b4a0c42c62f89cc7ed19926e89d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8864e86eec7aa548fd3ceaeb0dc09279c1bf1633
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467293"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923501"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>获取 iosGeneralDeviceConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9800
+Content-Length: 10095
 
 {
   "value": {
@@ -180,11 +180,16 @@ Content-Length: 9800
     "kioskModeAllowAssistiveSpeak": true,
     "kioskModeAllowAssistiveTouchSettings": true,
     "kioskModeAllowAutoLock": true,
+    "kioskModeBlockAutoLock": true,
     "kioskModeAllowColorInversionSettings": true,
     "kioskModeAllowRingerSwitch": true,
+    "kioskModeBlockRingerSwitch": true,
     "kioskModeAllowScreenRotation": true,
+    "kioskModeBlockScreenRotation": true,
     "kioskModeAllowSleepButton": true,
+    "kioskModeBlockSleepButton": true,
     "kioskModeAllowTouchscreen": true,
+    "kioskModeBlockTouchscreen": true,
     "kioskModeAllowVoiceOverSettings": true,
     "kioskModeAllowVolumeButtons": true,
     "kioskModeBlockVolumeButtons": true,
@@ -322,11 +327,12 @@ Content-Length: 9800
     "passwordBlockAirDropSharing": true,
     "dateAndTimeForceSetAutomatically": true,
     "contactsAllowManagedToUnmanagedWrite": true,
-    "contactsAllowUnmanagedToManagedRead": true
+    "contactsAllowUnmanagedToManagedRead": true,
+    "cellularBlockPersonalHotspotModification": true,
+    "siriDisableServerLogging": true
   }
 }
 ```
-
 
 
 

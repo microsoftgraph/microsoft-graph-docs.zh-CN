@@ -1,19 +1,19 @@
 ---
 title: auditEvent 资源类型
 description: 包含审核事件的属性的类。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c6004db55f25f92261de8fd6ee2a5418928e9a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 87c57f2b4dccd837f58ffaab4242a87ae61c24d3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558333"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949379"
 ---
 # <a name="auditevent-resource-type"></a>auditEvent 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -34,7 +34,7 @@ ms.locfileid: "32558333"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|事件显示名称。|
+|displayName|String|事件显示名称。|
 |componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
 |activity|String|活动的友好名称。|
@@ -44,7 +44,7 @@ ms.locfileid: "32558333"
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|
-|category|String|审核类别。|
+|“类别”|String|审核类别。|
 
 ## <a name="relationships"></a>关系
 无
@@ -101,7 +101,6 @@ ms.locfileid: "32558333"
   "category": "String"
 }
 ```
-
 
 
 

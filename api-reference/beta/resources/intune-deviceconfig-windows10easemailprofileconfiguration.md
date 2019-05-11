@@ -1,19 +1,19 @@
 ---
 title: windows10EasEmailProfileConfiguration 资源类型
 description: 通过在此配置文件中提供配置, 可以指示 Windows 10 设备上的本机电子邮件客户端 (Outlook) 与 Exchange 服务器通信, 并获取电子邮件、联系人、日历和任务。 此外, 还可以指定要同步的电子邮件数量和设备应同步的频率。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3be1eb421ac726a126ee108a37d4132603fc7f5f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 25c4e13c52d825cd9afd32997ae6b38f2b18ab44
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572134"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944346"
 ---
 # <a name="windows10easemailprofileconfiguration-resource-type"></a>windows10EasEmailProfileConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -103,7 +103,6 @@ ms.locfileid: "32572134"
   "requireSsl": true
 }
 ```
-
 
 
 

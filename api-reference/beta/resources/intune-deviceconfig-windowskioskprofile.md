@@ -1,19 +1,19 @@
 ---
 title: windowsKioskProfile 资源类型
 description: 尚未记录
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f54c7066af2c4d24f41e612e3dd09a94a5c8bc7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ac91647d652b6e1124932806fd9ab83414b497a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32574615"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943996"
 ---
 # <a name="windowskioskprofile-resource-type"></a>windowsKioskProfile 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -68,7 +68,6 @@ ms.locfileid: "32574615"
   ]
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: 更新 iosEasEmailProfileConfiguration
 description: 更新 iosEasEmailProfileConfiguration 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7470630caf4cedc46a5f51efeed926dfe7502fba
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6bd71c5db6f634e0ce333818c709c9c55316ba8c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467405"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923628"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>更新 iosEasEmailProfileConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -52,36 +52,38 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |usernameSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|在设备上安装之前, 从 AAD 中选取并插入到此配置文件中的 Username 属性。 继承自[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
 |usernameAADSource|[usernameSource](../resources/intune-deviceconfig-usernamesource.md)|AAD 字段的名称, 将用于检索电子邮件配置文件的用户名。 继承自[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)。 可取值为：`userPrincipalName`、`primarySmtpAddress`、`samAccountName`。|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|在设备上安装之前, 从 AAD 中选取并插入到此配置文件中的 UserDomainname 属性。 继承自[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)。 可取值为：`fullDomainName`、`netBiosDomainName`。|
-|customDomainName|字符串|在设备上安装之前生成电子邮件配置文件时使用的自定义域名值。 继承自[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
-|accountName|字符串|帐户名称。|
-|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|此电子邮件配置文件的身份验证方法。 可取值为：`usernameAndPassword`、`certificate`。|
-|blockMovingMessagesToOtherEmailAccounts|布尔|指示是否阻止将邮件移动到其他电子邮件帐户。|
-|blockSendingEmailFromThirdPartyApps|布尔|指示是否阻止来自第三方应用的发送电子邮件。|
-|blockSyncingRecentlyUsedEmailAddresses|布尔|指示是否阻止同步最近使用的电子邮件地址, 例如, 撰写新电子邮件时。|
+|customDomainName|String|在设备上安装之前生成电子邮件配置文件时使用的自定义域名值。 继承自[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
+|帐户|String|帐户名称。|
+|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|此电子邮件配置文件的身份验证方法。 可取值为：`usernameAndPassword`、`certificate`、`derivedCredential`。|
+|blockMovingMessagesToOtherEmailAccounts|Boolean|指示是否阻止将邮件移动到其他电子邮件帐户。|
+|blockSendingEmailFromThirdPartyApps|Boolean|指示是否阻止来自第三方应用的发送电子邮件。|
+|blockSyncingRecentlyUsedEmailAddresses|Boolean|指示是否阻止同步最近使用的电子邮件地址, 例如, 撰写新电子邮件时。|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|电子邮件的持续时间应同步回。 . 可取值为：`userDefined`、`oneDay`、`threeDays`、`oneWeek`、`twoWeeks`、`oneMonth` 或 `unlimited`。|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|在设备上安装之前, 从 AAD 中选出并插入到此配置文件中的电子邮件属性。 可取值为：`userPrincipalName`、`primarySmtpAddress`。|
 |hostName|String|本机邮件应用程序连接到的 Exchange 位置 (URL)。|
-|requireSmime|布尔|指示是否使用 S/MIME 证书。|
-|smimeEnablePerMessageSwitch|布尔|指示是否允许未加密的电子邮件。|
-|smimeEncryptByDefaultEnabled|布尔|如果设置为 "true S/MIME 加密", 则默认为启用。|
-|smimeSigningEnabled|布尔|如果为此帐户启用了设置为 true S/MIME 签名|
-|smimeSigningUserOverrideEnabled|布尔|如果设置为 true, 则用户可以打开或关闭 S/MIME 签名。|
-|smimeEncryptByDefaultUserOverrideEnabled|布尔|如果设置为 true, 则用户可以默认切换加密设置。|
-|smimeSigningCertificateUserOverrideEnabled|布尔|如果设置为 true, 则用户可以选择签名标识。|
-|smimeEncryptionCertificateUserOverrideEnabled|布尔|如果设置为 true, 则用户可以选择 S/MIME 加密标识。 |
-|requireSsl|布尔|指示是否使用 SSL。|
-|useOAuth|布尔|指定连接是否应使用 OAuth 进行身份验证。|
+|requireSmime|Boolean|指示是否使用 S/MIME 证书。|
+|smimeEnablePerMessageSwitch|Boolean|指示是否允许未加密的电子邮件。|
+|smimeEncryptByDefaultEnabled|Boolean|如果设置为 "true S/MIME 加密", 则默认为启用。|
+|smimeSigningEnabled|Boolean|如果为此帐户启用了设置为 true S/MIME 签名|
+|smimeSigningUserOverrideEnabled|Boolean|如果设置为 true, 则用户可以打开或关闭 S/MIME 签名。|
+|smimeEncryptByDefaultUserOverrideEnabled|Boolean|如果设置为 true, 则用户可以默认切换加密设置。|
+|smimeSigningCertificateUserOverrideEnabled|Boolean|如果设置为 true, 则用户可以选择签名标识。|
+|smimeEncryptionCertificateUserOverrideEnabled|Boolean|如果设置为 true, 则用户可以选择 S/MIME 加密标识。 |
+|requireSsl|Boolean|指示是否使用 SSL。|
+|useOAuth|Boolean|指定连接是否应使用 OAuth 进行身份验证。|
+|signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|此电子邮件配置文件的签名证书类型。 可取值为：`none`、`certificate`、`derivedCredential`。|
+|encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|此电子邮件配置文件的加密证书类型。 可取值为：`none`、`certificate`、`derivedCredential`。|
 
 
 
@@ -95,7 +97,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1193
+Content-length: 1284
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -127,7 +129,9 @@ Content-length: 1193
   "smimeSigningCertificateUserOverrideEnabled": true,
   "smimeEncryptionCertificateUserOverrideEnabled": true,
   "requireSsl": true,
-  "useOAuth": true
+  "useOAuth": true,
+  "signingCertificateType": "certificate",
+  "encryptionCertificateType": "certificate"
 }
 ```
 
@@ -136,7 +140,7 @@ Content-length: 1193
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1365
+Content-Length: 1456
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -171,10 +175,11 @@ Content-Length: 1365
   "smimeSigningCertificateUserOverrideEnabled": true,
   "smimeEncryptionCertificateUserOverrideEnabled": true,
   "requireSsl": true,
-  "useOAuth": true
+  "useOAuth": true,
+  "signingCertificateType": "certificate",
+  "encryptionCertificateType": "certificate"
 }
 ```
-
 
 
 

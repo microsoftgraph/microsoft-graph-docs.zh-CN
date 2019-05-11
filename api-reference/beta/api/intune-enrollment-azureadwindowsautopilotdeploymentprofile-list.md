@@ -1,19 +1,19 @@
 ---
 title: 列出 azureADWindowsAutopilotDeploymentProfiles
 description: 列出 azureADWindowsAutopilotDeploymentProfile 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad94902263cd62ee7bd06d52e39fe6717d8dab1f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ddde2c7d5d0406720a1eb69a712b744191d32b02
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32533994"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33908936"
 ---
 # <a name="list-azureadwindowsautopilotdeploymentprofiles"></a>列出 azureADWindowsAutopilotDeploymentProfiles
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeployment
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1422
+Content-Length: 1496
 
 {
   "value": [
@@ -96,12 +96,14 @@ Content-Length: 1422
       "extractHardwareHash": true,
       "deviceNameTemplate": "Device Name Template value",
       "deviceType": "surfaceHub2",
-      "enableWhiteGlove": true
+      "enableWhiteGlove": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }
 ```
-
 
 
 

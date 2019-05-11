@@ -1,19 +1,19 @@
 ---
 title: win32LobAppMsiInformation 资源类型
 description: 包含 Win32 应用程序的 MSI 应用程序属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ddb69d3f01c816c592617cb75ed6f9b9877f856
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cd612a5593ef151d4f324f3058c793ce7cd29bf0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32534484"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949631"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>win32LobAppMsiInformation 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "32534484"
 |productCode|String|MSI 产品代码。|
 |productVersion|String|MSI 产品版本。|
 |upgradeCode|String|MSI 升级代码。|
-|requiresReboot|布尔值|MSI 应用是否需要计算机重新启动以完成安装。|
+|requiresReboot|Boolean|MSI 应用是否需要计算机重新启动以完成安装。|
 |packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|MSI 包类型。 可取值为：`perMachine`、`perUser`、`dualPurpose`。|
 |productName|String|MSI 产品名称。|
 |发布者|String|MSI 发布者。|
@@ -52,7 +52,6 @@ ms.locfileid: "32534484"
   "publisher": "String"
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: 列出 iosEasEmailProfileConfigurations
 description: 列出 iosEasEmailProfileConfiguration 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 99bb9c5286bb134f23a3c317491f7feca15c6494
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0f2385b43baf1a63802950789a9b3d9d9b9772e9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467426"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33923621"
 ---
 # <a name="list-ioseasemailprofileconfigurations"></a>列出 iosEasEmailProfileConfigurations
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1530
+Content-Length: 1629
 
 {
   "value": [
@@ -100,12 +100,13 @@ Content-Length: 1530
       "smimeSigningCertificateUserOverrideEnabled": true,
       "smimeEncryptionCertificateUserOverrideEnabled": true,
       "requireSsl": true,
-      "useOAuth": true
+      "useOAuth": true,
+      "signingCertificateType": "certificate",
+      "encryptionCertificateType": "certificate"
     }
   ]
 }
 ```
-
 
 
 
