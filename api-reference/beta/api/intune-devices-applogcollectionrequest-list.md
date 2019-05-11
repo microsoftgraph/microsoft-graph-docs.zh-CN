@@ -1,19 +1,19 @@
 ---
 title: 列出 appLogCollectionRequests
 description: 列出 appLogCollectionRequest 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0def63422162a6ef372ed1e42506869131293c91
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fab2639cf8cc042d8f4a012b4143a0dc3429cc7d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32466054"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33910579"
 ---
 # <a name="list-applogcollectionrequests"></a>列出 appLogCollectionRequests
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -79,7 +79,6 @@ Content-Length: 371
   ]
 }
 ```
-
 
 
 

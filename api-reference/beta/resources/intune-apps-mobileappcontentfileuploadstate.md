@@ -1,19 +1,19 @@
 ---
 title: mobileAppContentFileUploadState 枚举类型
 description: 包含上载请求状态的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2b0011c0f6833599493a64734aeb3e29147bf949
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ff18e4417f574183de9870d721a7aa3d68be7e31
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551888"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949995"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,8 +24,8 @@ ms.locfileid: "32551888"
 |:---|:---|:---|
 |success|0|尚未记录|
 |transientError|1|尚未记录|
-|error|2 |尚未记录|
-|unknown|3 |尚未记录|
+|error|双面|尚未记录|
+|unknown|第三章|尚未记录|
 |azureStorageUriRequestSuccess|100|尚未记录|
 |azureStorageUriRequestPending|101|尚未记录|
 |azureStorageUriRequestFailed|102|尚未记录|
@@ -38,7 +38,6 @@ ms.locfileid: "32551888"
 |commitFilePending|301|尚未记录|
 |commitFileFailed|302|尚未记录|
 |commitFileTimedOut|303|尚未记录|
-
 
 
 

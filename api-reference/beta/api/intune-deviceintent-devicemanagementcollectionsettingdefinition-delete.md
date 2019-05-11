@@ -1,19 +1,19 @@
 ---
 title: 删除 deviceManagementCollectionSettingDefinition
 description: 删除 deviceManagementCollectionSettingDefinition。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85973c5408c9e4faacd4cddcdf08250724692009
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 92adb6964d7d5f0a8c241d6f71390d43650f63b3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509959"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916641"
 ---
 # <a name="delete-devicemanagementcollectionsettingdefinition"></a>删除 deviceManagementCollectionSettingDefinition
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

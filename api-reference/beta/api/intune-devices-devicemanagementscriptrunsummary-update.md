@@ -1,19 +1,19 @@
 ---
 title: 更新 deviceManagementScriptRunSummary
 description: 更新 deviceManagementScriptRunSummary 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9459d665addee740b272421524c80d2004d7ed0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 495b9b9085b23f40261b40805c510ae78fbf00eb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32465452"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33909790"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>更新 deviceManagementScriptRunSummary
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -95,7 +95,6 @@ Content-Length: 228
   "errorUserCount": 14
 }
 ```
-
 
 
 

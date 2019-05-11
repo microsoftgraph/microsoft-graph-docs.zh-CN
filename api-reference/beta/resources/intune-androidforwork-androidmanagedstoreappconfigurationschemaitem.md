@@ -1,19 +1,19 @@
 ---
 title: androidManagedStoreAppConfigurationSchemaItem 资源类型
 description: Android 应用程序的自定义配置架构内的单个配置项。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 964916f9f6a46cd8b276e304bfb341d6504db0d2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3012542315cd30a565da315a9d383757557b1008
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552433"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950541"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>androidManagedStoreAppConfigurationSchemaItem 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,7 +24,7 @@ Android 应用程序的自定义配置架构内的单个配置项。
 |:---|:---|:---|
 |schemaItemKey|String|应用程序用于标识项的唯一键|
 |displayName|字符串|用户可读的名称|
-|description|String|项在应用程序内所控制内容的说明|
+|说明|String|项在应用程序内所控制内容的说明|
 |defaultBoolValue|布尔值|如果由应用开发人员指定，则为布尔类型项的默认值|
 |defaultIntValue|Int32|如果由应用开发人员指定，则为整数类型项的默认值|
 |defaultStringValue|String|如果由应用开发人员指定，则为字符串类型项的默认值|
@@ -64,7 +64,6 @@ Android 应用程序的自定义配置架构内的单个配置项。
   ]
 }
 ```
-
 
 
 

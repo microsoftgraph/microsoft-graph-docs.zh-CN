@@ -1,19 +1,19 @@
 ---
 title: 列出 windowsPhoneEASEmailProfileConfigurations
 description: 列出 windowsPhoneEASEmailProfileConfiguration 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35da262e0e595b54d5c862f912bdc41475f37847
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dd017c17b7333376eb8c8f7bd28d8e6b919a9d00
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32511884"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917518"
 ---
 # <a name="list-windowsphoneeasemailprofileconfigurations"></a>列出 windowsPhoneEASEmailProfileConfigurations
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -97,7 +97,6 @@ Content-Length: 1099
   ]
 }
 ```
-
 
 
 
