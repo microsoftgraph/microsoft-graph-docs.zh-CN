@@ -1,19 +1,19 @@
 ---
 title: resultantAppState 枚举类型
 description: 尚未记录
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7a364945e3b494c26873cdcc9bc4bb618e89f40
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 904d47ebc2efe08a06f1d228b93788b47aea5144
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572953"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939789"
 ---
 # <a name="resultantappstate-enum-type"></a>resultantAppState 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -23,10 +23,10 @@ ms.locfileid: "32572953"
 |成员|值|说明|
 |:---|:---|:---|
 |了|1|安装应用程序时没有出现任何错误|
-|未能|2 |应用程序安装失败。|
-|notInstalled|3 |未安装应用程序。|
-|uninstallFailed|4 |应用程序卸载失败。|
-|pendingInstall|5 |正在安装应用程序。|
+|未能|双面|应用程序安装失败。|
+|notInstalled|第三章|未安装应用程序。|
+|uninstallFailed|4|应用程序卸载失败。|
+|pendingInstall|5|正在安装应用程序。|
 |unknown|99|应用程序的状态未知。|
 |notApplicable|-1|应用程序不适用。|
 

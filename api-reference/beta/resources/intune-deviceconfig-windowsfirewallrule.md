@@ -1,19 +1,19 @@
 ---
 title: windowsFirewallRule 资源类型
 description: 通过 Windows 防火墙控制流量的规则。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 77df7da501aee80b534accbe4c0d33dcf0e8df63
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dbf322718bd3b95e27583350bf840cc05f2e6ca0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570213"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944059"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>windowsFirewallRule 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -39,8 +39,8 @@ ms.locfileid: "32570213"
 默认值为任意地址。 || remoteAddressRanges |字符串集合 |指定规则所涵盖的远程地址的令牌列表。 标记不区分大小写。 有效令牌包括:
 - "*" 表示任何远程地址。 如果存在此标记, 则必须是包含的唯一标记。
 - "Defaultgateway"
-- ldhcp
-- dn
+- LDHCP
+- DN
 - 首选
 - "Intranet" (在 Windows 版本 1809 + 上受支持)
 - "RmtIntranet" (在 Windows 版本 1809 + 上受支持)
@@ -91,7 +91,6 @@ ms.locfileid: "32570213"
   "localUserAuthorizations": "String"
 }
 ```
-
 
 
 

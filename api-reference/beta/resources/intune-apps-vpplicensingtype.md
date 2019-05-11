@@ -1,19 +1,19 @@
 ---
 title: vppLicensingType 资源类型
 description: 包含 iOS 批量采购程序 (Vpp) 许可类型的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f4966b6608bcd96720c4260191388979e811061
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 812cbdc203b09422f8a2cddac205d59f8c762a34
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555232"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33949708"
 ---
 # <a name="vpplicensingtype-resource-type"></a>vppLicensingType 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -22,9 +22,9 @@ ms.locfileid: "32555232"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|supportUserLicensing|布尔值|程序是否支持用户许可类型。|
+|supportUserLicensing|Boolean|程序是否支持用户许可类型。|
 |supportDeviceLicensing|布尔值|程序是否支持设备许可类型。|
-|supportsUserLicensing|布尔值|程序是否支持用户许可类型。|
+|supportsUserLicensing|Boolean|程序是否支持用户许可类型。|
 |supportsDeviceLicensing|布尔值|程序是否支持设备许可类型。|
 
 ## <a name="relationships"></a>关系
@@ -46,7 +46,6 @@ ms.locfileid: "32555232"
   "supportsDeviceLicensing": true
 }
 ```
-
 
 
 

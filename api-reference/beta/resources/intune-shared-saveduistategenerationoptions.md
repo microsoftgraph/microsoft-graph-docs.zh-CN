@@ -1,19 +1,19 @@
 ---
 title: savedUIStateGenerationOptions 枚举类型
 description: 尚未记录
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac83234187caa22c6ddf19ab07d5d0791348c5e3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2e50193e8bd7105834ec721c5805b074b1020bcf
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570622"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938963"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>savedUIStateGenerationOptions 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,7 +24,6 @@ ms.locfileid: "32570622"
 |:---|:---|:---|
 |无|0|尚未记录|
 |omitSilverlightPolicyReferences|1|尚未记录|
-
 
 
 

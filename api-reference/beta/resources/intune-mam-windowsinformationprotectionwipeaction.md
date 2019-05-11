@@ -1,19 +1,19 @@
 ---
 title: windowsInformationProtectionWipeAction 资源类型
 description: 表示由租户管理员发出的用于引入并提供自己的设备 (BYOD) Windows 设备的擦除请求。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47047f401bbf0a690494490cbbd3b934340a26c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 262a27b53aaebc356c3b48987ac00ae349d90320
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558270"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940440"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>windowsInformationProtectionWipeAction 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -32,8 +32,8 @@ ms.locfileid: "32558270"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|状态|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
-|targetedUserId|String|此擦除操作针对的用户 id。|
+|status|[actionState](../resources/intune-shared-actionstate.md)|擦除操作状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|targetedUserId|String|此擦除操作针对的用户 Id。|
 |targetedDeviceRegistrationId|String|此擦除操作针对的 DeviceRegistrationId。|
 |targetedDeviceName|String|目标设备名称。|
 |targetedDeviceMacAddress|String|目标设备 Mac 地址。|
@@ -62,7 +62,6 @@ ms.locfileid: "32558270"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: managedAppRegistration 资源类型
-description: 'ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。 '
-author: tfitzmac
+description: ManagedAppEntity 是应用管理工作流下所有其他实体类型的基实体类型。 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d6862af09e4bbe1b22d183b8d10c56ff2782f51
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: b5532b4feaeaedd631c6e561f9e68722cba47a14
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341727"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940699"
 ---
 # <a name="managedappregistration-resource-type"></a>managedAppRegistration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -60,11 +60,12 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.managedAppRegistration",
-  "abstract": true
-}-->
+  "@odata.type": "microsoft.graph.managedAppRegistration"
+}
+-->
 ``` json
 {
+  "@odata.type": "#microsoft.graph.managedAppRegistration",
   "createdDateTime": "String (timestamp)",
   "lastSyncDateTime": "String (timestamp)",
   "applicationVersion": "String",
@@ -88,3 +89,7 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   "version": "String"
 }
 ```
+
+
+
+

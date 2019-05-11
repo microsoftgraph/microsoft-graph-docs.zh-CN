@@ -1,19 +1,19 @@
 ---
 title: deviceAppManagement 资源类型
 description: 充当所有设备应用管理功能的容器的单例实体。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 45164300bbfa9ff3a4de3da144dd66d5dad6e42b
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 8b047c470ee60ab99275675626a3917911f2a715
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341328"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939775"
 ---
 # <a name="deviceappmanagement-resource-type"></a>deviceAppManagement 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -48,7 +48,7 @@ ms.locfileid: "33341328"
 |mobileAppConfigurations|[managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md) 集合|托管设备移动应用程序配置。|
 |mobileApps|[mobileApp](../resources/intune-apps-mobileapp.md) 集合|移动应用。|
 |symantecCodeSigningCertificate|[symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md)|WinPhone Symantec 代码签名证书。|
-|**books.xml**|
+|**Books.xml**|
 |managedEBooks|[managedEBook](../resources/intune-books-managedebook.md) 集合|托管的电子书。|
 |managedEBookCategories|[managedEBookCategory](../resources/intune-books-managedebookcategory.md)集合|移动电子书类别。|
 |**设备管理**|
@@ -72,14 +72,12 @@ ms.locfileid: "33341328"
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "optionalProperties":[
-    "managedAppRegistrations"
-    ],
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceAppManagement"
-}-->
+}
+-->
 ``` json
 {
+  "@odata.type": "#microsoft.graph.deviceAppManagement",
   "id": "String (identifier)",
   "microsoftStoreForBusinessLastSuccessfulSyncDateTime": "String (timestamp)",
   "isEnabledForMicrosoftStoreForBusiness": true,

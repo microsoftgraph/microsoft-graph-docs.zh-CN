@@ -1,19 +1,19 @@
 ---
 title: circularGeofenceManagementCondition 资源类型
 description: 包含用于定义圆形地域防护管理条件 (要监视的感兴趣的区域) 的信息。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f826bd05a7f21df9ccf46579b77dc13967c31231
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8f6668f485c1d86c6643605453858d935750067f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568813"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941301"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>circularGeofenceManagementCondition 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -44,7 +44,7 @@ ms.locfileid: "32568813"
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |latitude|双精度|以度为单位的纬度, 介于-90 和 + 90 之间 (含)。|
 |longitude|Double|以度为单位的经度, 介于-180 和 + 180 之间 (含)。|
-|radiusInMeters|单倍行距|以米为单位的半径。|
+|radiusInMeters|单精度|以米为单位的半径。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -77,7 +77,6 @@ ms.locfileid: "32568813"
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: mobileAppIntentAndState 资源类型
 description: 给定设备的 MobileApp 意图和安装状态。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e90251338ad7e740b216452a52cc0fffcfc44565
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0bc39ec4db3c777fc7cf34528e9d8054f6d382e8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558151"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33939768"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>mobileAppIntentAndState 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "32558151"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 UUID|
+|id|字符串|对象的 UUID|
 |managedDeviceIdentifier|String|Intune 创建或收集的设备标识符。|
 |userId|String|尝试注册设备的用户的标识符。|
 |mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)集合|租户的有效负载意图和状态列表。|
@@ -73,6 +73,7 @@ ms.locfileid: "32558151"
   ]
 }
 ```
+
 
 
 

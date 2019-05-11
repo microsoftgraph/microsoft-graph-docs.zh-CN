@@ -1,19 +1,19 @@
 ---
 title: groupPolicyPresentationValueText 资源类型
 description: 实体表示策略定义中的下拉列表、组合框或文本框表示形式的字符串值。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 015d136db76ae7523a06e4dba10c2c7e5bc48187
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 14a7baee5a265421175c42e8a8d127398d8b124d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32556884"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940986"
 ---
 # <a name="grouppolicypresentationvaluetext-resource-type"></a>groupPolicyPresentationValueText 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -62,7 +62,6 @@ ms.locfileid: "32556884"
   "value": "String"
 }
 ```
-
 
 
 

@@ -1,23 +1,23 @@
 ---
 title: deviceEnrollmentConfiguration 资源类型
-description: 尚未记录
-author: tfitzmac
+description: 设备注册配置的基类
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ac4d37529eb6e3688b110146801a7ec5ee533c4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d05914e1b25ac3712ac60274facf0904c91d4224
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521248"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940454"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-尚未记录
+设备注册配置的基类
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -30,18 +30,18 @@ ms.locfileid: "32521248"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|注册状态页面配置的 Id|
-|displayName|String|尚未记录|
-|description|String|尚未记录|
-|优先级|Int32|尚未记录|
-|createdDateTime|DateTimeOffset|尚未记录|
-|lastModifiedDateTime|DateTimeOffset|尚未记录|
-|version|Int32|尚未记录|
+|id|字符串|帐户的唯一标识符|
+|displayName|String|设备注册配置的显示名称|
+|说明|String|设备注册配置的说明|
+|priority|Int32|当用户存在于分配有注册配置的多个组中时, 将使用优先级。 用户仅限于具有最低优先级值的配置。|
+|createdDateTime|DateTimeOffset|设备注册配置的 UTC 格式的创建日期时间|
+|lastModifiedDateTime|DateTimeOffset|设备注册配置的上次修改日期时间 (UTC)|
+|version|Int32|设备注册配置的版本|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|assignments|[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 集合|设备配置文件的组分配列表。|
+|assignments|[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) 集合|设备配置文件的组分配列表|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -63,7 +63,6 @@ ms.locfileid: "32521248"
   "version": 1024
 }
 ```
-
 
 
 

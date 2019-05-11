@@ -1,19 +1,19 @@
 ---
 title: 列出 networkIPv6ConfigurationManagementConditions
 description: 列出 networkIPv6ConfigurationManagementCondition 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df76ffd3f0fa8f9a5b01b066a76fc237c5a2b813
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6e20dc7c23bb64a5174e6adc657b8ca595b194ac
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32532042"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905236"
 ---
 # <a name="list-networkipv6configurationmanagementconditions"></a>列出 networkIPv6ConfigurationManagementConditions
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -91,7 +91,6 @@ Content-Length: 760
   ]
 }
 ```
-
 
 
 

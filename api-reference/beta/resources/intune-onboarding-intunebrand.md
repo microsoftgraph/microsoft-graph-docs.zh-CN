@@ -1,19 +1,19 @@
 ---
 title: intuneBrand 资源类型
 description: intuneBrand 包含在自定义公司门户应用程序以及最终用户 Web 门户的外观时使用的数据。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ffaa20097147d5edcfc8af84418d65d6db29a746
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6e4d005c4b5eccf0775e0a671088a5de09f95fe2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566526"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940202"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -87,7 +87,6 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
   "showDisplayNameNextToLogo": true
 }
 ```
-
 
 
 

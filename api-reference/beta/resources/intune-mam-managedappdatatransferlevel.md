@@ -1,19 +1,19 @@
 ---
 title: managedAppDataTransferLevel 枚举类型
 description: 可以将数据从/传输到这些应用程序类
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5fdf418dbd3b2b959dbd23de6467b663491d89a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8ec5628490ba899d535271f8e7bedc50c416b0a3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563824"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940790"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>managedAppDataTransferLevel 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,8 +24,7 @@ ms.locfileid: "32563824"
 |:---|:---|:---|
 |allApps|0|所有应用程序。|
 |managedApps|1|托管应用。|
-|无|2 |无应用。|
-
+|无|双面|无应用。|
 
 
 

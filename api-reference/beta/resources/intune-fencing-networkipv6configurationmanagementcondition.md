@@ -1,19 +1,19 @@
 ---
 title: networkIPv6ConfigurationManagementCondition 资源类型
 description: 可以定义将在设备检测到特定 IP 网络设置时触发的基于 IPv6 配置的管理条件。 只有在网络连接处于活动状态时, 才会将 IP 配置管理条件视为 TRUE。 IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows (circa Redstone) 不会将此信息暴露给自然身份验证服务。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 27f6e0705e7eee1e4e980c9f663df987c32c0705
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 460977c45b34526c417dbc61360a33bed66f33d7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32565588"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941202"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>networkIPv6ConfigurationManagementCondition 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -84,7 +84,6 @@ IPv6 DHCP 服务器地址可能不匹配。 这是因为 Windows (circa Redstone
   ]
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: sideLoadingKey 资源类型
 description: 对于租户, Windows 8 和8.1 设备需要 SideLoadingKey 实体为 intall 的业务线应用程序。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 698d021e6038694442e5b3a6f4b3eff2a50e9943
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c09cdc1bc620c6f6882abeeae29c7e00613254b1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32566456"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940139"
 ---
 # <a name="sideloadingkey-resource-type"></a>sideLoadingKey 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -33,10 +33,10 @@ ms.locfileid: "32566456"
 |:---|:---|:---|
 |id|字符串|侧加载密钥唯一 Id。|
 |value|String|侧加载密钥值, 它是一个5x5 值, 由 hiphens 分隔。|
-|displayName|字符串|向 it 专业管理员显示的侧加载密钥名称。|
-|说明|String|向 it 专业管理员显示的侧加载密钥说明。|
-|totalActivation|Int32|向 it 专业管理员显示的端加载密钥总激活数。|
-|lastUpdatedDateTime|String|向 it 专业管理员显示的侧加载密钥上次更新日期。|
+|displayName|字符串|向 It 专业管理员显示的侧加载密钥名称。|
+|说明|String|向 It 专业管理员显示的侧加载密钥说明。|
+|totalActivation|Int32|向 It 专业管理员显示的端加载密钥总激活数。|
+|lastUpdatedDateTime|String|向 It 专业管理员显示的侧加载密钥上次更新日期。|
 
 ## <a name="relationships"></a>关系
 无
@@ -60,7 +60,6 @@ ms.locfileid: "32566456"
   "lastUpdatedDateTime": "String"
 }
 ```
-
 
 
 

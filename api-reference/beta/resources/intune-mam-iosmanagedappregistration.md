@@ -1,19 +1,19 @@
 ---
 title: iosManagedAppRegistration 资源类型
 description: 表示特定用户具有管理功能的 iOS 应用的同步详细信息。 ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应用的详细信息。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aeb1910655ad34a80fb8a57a458cbef7b4f0e9b9
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: d807d81cc5f17404c3b0c02eae8bf95e20bf36e2
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33341741"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33940888"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -42,8 +42,8 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 |deviceName|String|主机设备名称。继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |managedDeviceId|String|主机设备的托管设备标识符。 即使在托管主机设备时, 值也可能为空。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |azureADDeviceId|String|主机设备的 Azure Active Directory 设备标识符。 即使主机设备注册了 Azure Active Directory, 值也可能为空。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceModel|String|从[managedAppRegistration](../resources/intune-mam-managedappregistration.md)继承的当前应用注册的设备模型|
-|deviceManufacturer|String|从[managedAppRegistration](../resources/intune-mam-managedappregistration.md)继承的当前应用注册的设备制造商|
+|deviceModel|String|从[ManagedAppRegistration](../resources/intune-mam-managedappregistration.md)继承的当前应用注册的设备模型|
+|deviceManufacturer|String|从[ManagedAppRegistration](../resources/intune-mam-managedappregistration.md)继承的当前应用注册的设备制造商|
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)集合|标记应用注册的零个或多个原因。 例如， 应用正在根设备上运行 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |userId|String|此应用注册所属的用户 ID。 继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|应用包标识符。继承自 [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
@@ -62,8 +62,7 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.iosManagedAppRegistration",
-  "baseType": "microsoft.graph.managedAppRegistration"
+  "@odata.type": "microsoft.graph.iosManagedAppRegistration"
 }
 -->
 ``` json
@@ -93,7 +92,6 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   "version": "String"
 }
 ```
-
 
 
 
