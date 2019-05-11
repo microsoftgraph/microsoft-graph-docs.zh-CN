@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var schools = await graphClient.Education.Me.Schools
+var directoryAudits = await graphClient.AuditLogs.DirectoryAudits
     .Request()
     .GetAsync();
 
