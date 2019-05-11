@@ -1,19 +1,19 @@
 ---
 title: 获取 iosVppApp
 description: 读取 iosVppApp 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 914d446308785b6adbb6d602b20feafcd4fac2fa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9cc13cc180478ef261d4cef84c82ed56c997978a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495615"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33936922"
 ---
 # <a name="get-iosvppapp"></a>获取 iosVppApp
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -134,7 +134,6 @@ Content-Length: 2310
   }
 }
 ```
-
 
 
 

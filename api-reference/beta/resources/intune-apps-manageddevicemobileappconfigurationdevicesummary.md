@@ -1,19 +1,19 @@
 ---
 title: managedDeviceMobileAppConfigurationDeviceSummary 资源类型
 description: 包含 MDM 移动应用配置设备状态摘要的属性、继承属性和操作。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b1eae3486a7b456f4e909407c965db0110954e7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8ed6550cf071d04b72f1b5d2ba9ad97233d7289b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553979"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950128"
 ---
 # <a name="manageddevicemobileappconfigurationdevicesummary-resource-type"></a>managedDeviceMobileAppConfigurationDeviceSummary 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,7 +65,6 @@ ms.locfileid: "32553979"
   "configurationVersion": 1024
 }
 ```
-
 
 
 

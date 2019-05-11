@@ -1,19 +1,19 @@
 ---
 title: 创建 auditEvent
 description: 创建新的 auditEvent 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db854a7a7331600ee33352010439936c59e90e08
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd541449250f5e99d95f14ae6259d3b6a75f4a8a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32485409"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934423"
 ---
 # <a name="create-auditevent"></a>创建 auditEvent
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,17 +51,17 @@ POST /deviceManagement/auditEvents
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|字符串|事件显示名称。|
-|componentName|字符串|组件名称。|
+|displayName|String|事件显示名称。|
+|componentName|String|组件名称。|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|与审核事件关联的 AAD 用户和应用程序。|
-|activity|字符串|活动的友好名称。|
+|activity|String|活动的友好名称。|
 |activityDateTime|DateTimeOffset|执行活动时的日期时间（UTC 时间）。|
-|activityType|字符串|执行的活动类型。|
-|activityOperationType|字符串|活动的 HTTP 操作类型。|
+|activityType|String|执行的活动类型。|
+|activityOperationType|String|活动的 HTTP 操作类型。|
 |activityResult|String|活动结果。|
 |correlationId|Guid|用于关联系统内的活动的客户端请求 ID。|
 |resources|[auditResource](../resources/intune-auditing-auditresource.md) 集合|正在修改的资源。|
-|category|String|审核类别。|
+|“类别”|String|审核类别。|
 
 
 
@@ -170,7 +170,6 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
-
 
 
 
