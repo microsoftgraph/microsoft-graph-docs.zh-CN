@@ -3,28 +3,28 @@ title: Azure AD 标识和访问管理 API 概述
 description: 'Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)，实现应用、设备、服务和基础结构之间的安全和高效访问。 组织可以使用 Azure AD 来管理标识，并控制本地、混合及云环境中的访问。  '
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: edf02faa345426b77e0ede8a0c92e54207338bec
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: bd4c71d1cada7badc15178580fd33edfd0e8cc8b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599819"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951262"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Azure AD 标识和访问管理 API 概述
 
-Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)，实现应用、设备、服务和基础结构之间的安全和高效访问。 组织可以使用 Azure AD 来管理标识，并控制本地、混合及云环境中的访问。  
+Azure Active Directory (Azure AD) 有助于集中化标识和访问管理 (IAM)，实现应用、设备、服务和基础结构之间的安全和高效访问。 组织可以使用 Azure AD 来管理标识，并控制本地、混合及云环境中的访问。
 
 可以使用 Microsoft Graph 中的 Azure AD REST API 在 Azure AD [资源](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)和第三方服务之间创建独特的工作流。
 
 ## <a name="why-use-the-azure-ad-apis"></a>为什么使用 Azure AD API？
 
-超过 1,500 万个组织使用 Azure AD，同时订阅 Microsoft 云服务，如 Office 365、Microsoft Azure、企业移动性套件或 Microsoft 365。  
+超过 1,500 万个组织使用 Azure AD，同时订阅 Microsoft 云服务，如 Office 365、Microsoft Azure、企业移动性套件或 Microsoft 365。
 
 企业开发者使用 Microsoft Graph 集成 Azure AD 标识管理和其他服务，以实现管理工作流的自动化，例如员工入职和离职、个人资料维护、许可证部署等。
 
 对于许多企业开发者来说，Microsoft Graph 和 Azure AD 可帮助将现有应用程序“提升并转移到”云中，从而加速组织的数字化转型。 可以利用 Azure AD 功能向应用程序添加访问控制机制，包括验证用户组成员身份、目录角色或管理单位成员身份。
 
-你可以将 Microsoft Graph 和 Azure AD 用作轻松快速地访问超过 1,500 万个组织的方式，其中包括 90% 已使用 Azure AD 服务的财富 500 强公司。 集成的应用程序具有无缝登录体验，可以使用现有组织数据创建个性化体验。  
+你可以将 Microsoft Graph 和 Azure AD 用作轻松快速地访问超过 1,500 万个组织的方式，其中包括 90% 已使用 Azure AD 服务的财富 500 强公司。 集成的应用程序具有无缝登录体验，可以使用现有组织数据创建个性化体验。
 
 你可以使用 Microsoft Graph 中的 Azure AD API 来查询用户配置文件、查找其他用户、管理组织关系、跟踪任务或创建包含现有组织数据的原始解决方案。 这些 API 提供了坚实基础，可将自定义业务应用程序无缝集成到组织现有的数字服务。
 
@@ -84,7 +84,7 @@ Azure AD 使用自适应机器学习算法和启发，检测表明帐户可能�
 ## <a name="next-steps"></a>后续步骤
 
 - 了解到如何[使用 Azure AD REST API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)。
-- 使用 Azure AD 对 Microsoft Graph [进行身份验证](./auth/)。
+- 使用 Azure AD 对 Microsoft Graph [进行身份验证](/graph/auth)。
 - 将 [Azure AD 登录](https://azure.microsoft.com/zh-CN/develop/identity/signin/)集成到应用或网站中。
 - 有关 Azure AD API 中新增功能的信息，请参阅[更改日志](changelog.md)。
 - 浏览[示例](https://developer.microsoft.com/graph/graph/examples)，了解有关如何使用 Microsoft Graph 的更多信息。

@@ -1,19 +1,19 @@
 ---
 title: 创建 userPFXCertificate
 description: 创建新的 userPFXCertificate 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 518c7af676aa649866ea90fe7916cd257f0c5b91
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d71812bc1a4e41f01e8353b49a4e656613a8d2b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528006"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899730"
 ---
 # <a name="create-userpfxcertificate"></a>创建 userPFXCertificate
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,9 +50,9 @@ POST /deviceManagement/userPfxCertificates
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|PFX 证书的唯一标识符。|
+|id|String|PFX 证书的唯一标识符。|
 |为|String|SHA-1 PFX 证书的指纹。|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn` 或 `wifi`。|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|证书的预期目的是从部署的角度来看。 可取值为：`unassigned`、`smimeEncryption`、`smimeSigning`、`vpn`、`wifi`。|
 |userPrincipalName|String|PFX 证书的用户主体名称。|
 |startDateTime|DateTimeOffset|证书的有效期开始日期/时间。|
 |expirationDateTime|DateTimeOffset|证书的有效期到期日期/时间。|
@@ -117,6 +117,7 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

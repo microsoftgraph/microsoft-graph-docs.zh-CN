@@ -1,19 +1,19 @@
 ---
 title: detectedApp 资源类型
 description: 托管设备上安装的托管或未托管应用。 未托管应用仅出现在标记为公司所有的设备上。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01233111e74da95f84d0cbeb81e4675a5c6e049d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: db6ec2e211de14ee65d66874c8512423d4bf5c34
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552824"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942162"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -60,7 +60,6 @@ ms.locfileid: "32552824"
   "deviceCount": 1024
 }
 ```
-
 
 
 

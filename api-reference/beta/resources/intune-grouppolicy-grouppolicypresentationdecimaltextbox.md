@@ -1,23 +1,23 @@
 ---
 title: groupPolicyPresentationDecimalTextBox 资源类型
-description: 表示 admx decimalTextBox 元素和 admx 十进制元素。
-author: tfitzmac
+description: 表示 ADMX decimalTextBox 元素和 ADMX 十进制元素。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad67a1e0f862ff8fe62f063d77a9f0851789bcc7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b65d0fb23231fa1e06edfc8e6c053cfa681cb006
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575833"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941091"
 ---
 # <a name="grouppolicypresentationdecimaltextbox-resource-type"></a>groupPolicyPresentationDecimalTextBox 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-表示 admx decimalTextBox 元素和 admx 十进制元素。
+表示 ADMX decimalTextBox 元素和 ADMX 十进制元素。
 
 
 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
@@ -42,7 +42,7 @@ ms.locfileid: "32575833"
 |spinStep|Int64|一个无符号整数, 指定数值调节钮控件的变化增量。 默认值为 1。|
 |必需|Boolean|要求在 "参数" 框中输入值。 默认值为 false。|
 |minValue|Int64|一个无符号整数, 指定允许的最小值。 默认值为 0。|
-|timespan.maxvalue|Int64|一个无符号整数, 指定允许的最大值。 默认值为9999。|
+|Timespan.maxvalue|Int64|一个无符号整数, 指定允许的最大值。 默认值为9999。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -71,7 +71,6 @@ ms.locfileid: "32575833"
   "maxValue": 1024
 }
 ```
-
 
 
 

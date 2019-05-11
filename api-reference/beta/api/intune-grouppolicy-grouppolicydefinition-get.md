@@ -1,19 +1,19 @@
 ---
 title: 获取 groupPolicyDefinition
 description: 读取 groupPolicyDefinition 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71af6ad469317ba5776fb0d13f464909c30b8394
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 28ee836810647582803837f8bdaf3ab975d76974
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531395"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905103"
 ---
 # <a name="get-grouppolicydefinition"></a>获取 groupPolicyDefinition
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -84,7 +84,6 @@ Content-Length: 435
   }
 }
 ```
-
 
 
 

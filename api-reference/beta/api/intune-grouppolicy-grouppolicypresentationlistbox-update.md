@@ -1,19 +1,19 @@
 ---
 title: 更新 groupPolicyPresentationListBox
 description: 更新 groupPolicyPresentationListBox 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1714ccb918cb145574e6868cabf024558fc76f3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8876cc7185ce8c7a2ab0ae1db84ff1bc0bd506a9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530982"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904788"
 ---
 # <a name="update-grouppolicypresentationlistbox"></a>更新 groupPolicyPresentationListBox
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|explicitValue|布尔值|如果指定此选项, 则用户必须指定注册表子项值和注册表子项名称。 列表框显示两列, 一个用于名称, 一个用于数据。 默认值为 false。|
+|explicitValue|Boolean|如果指定此选项, 则用户必须指定注册表子项值和注册表子项名称。 列表框显示两列, 一个用于名称, 一个用于数据。 默认值为 false。|
 
 
 
@@ -92,7 +92,6 @@ Content-Length: 238
   "explicitValue": true
 }
 ```
-
 
 
 

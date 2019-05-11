@@ -1,23 +1,23 @@
 ---
 title: importedAppleDeviceIdentity 资源类型
-description: importedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
-author: tfitzmac
+description: ImportedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66b782c2402db03059c9487b50d0c49a8108e4bd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 277ca83a4df6a3f8125fb3e2ae1687da6cef05ba
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580294"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941588"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>importedAppleDeviceIdentity 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-importedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
+ImportedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -71,7 +71,6 @@ importedAppleDeviceIdentity 资源表示导出的 Apple 设备的设备标识。
   "platform": "String"
 }
 ```
-
 
 
 

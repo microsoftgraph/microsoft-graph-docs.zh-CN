@@ -1,19 +1,19 @@
 ---
 title: embeddedSIMDeviceState 资源类型
 description: 介绍与设备相关的嵌入的 SIM 激活代码部署状态。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8cd14c92e5619cbce071190b966d3274386cec89
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b2fb953021dde36960faf2875131bf3bcd8e7e50
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568771"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941343"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>embeddedSIMDeviceState 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -38,7 +38,7 @@ ms.locfileid: "32568771"
 |universalIntegratedCircuitCardIdentifier|String|通用集成电路卡标识符 (UICCID), 用于标识要在其上部署配置文件的硬件。|
 |deviceName|String|订阅预配到的设备名称, 例如, 桌面 JOE|
 |userName|String|订阅预配到的用户名, 例如 joe@contoso.com|
-|状态|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于设备的配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
+|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|应用于设备的配置文件操作的状态。 可取值为：`notEvaluated`、`failed`、`installing`、`installed`、`deleting`、`error`、`deleted`、`removedByUser`。|
 |stateDetails|String|设置状态的字符串说明。|
 
 ## <a name="relationships"></a>关系
@@ -66,7 +66,6 @@ ms.locfileid: "32568771"
   "stateDetails": "String"
 }
 ```
-
 
 
 

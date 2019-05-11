@@ -4,18 +4,18 @@ description: 'Microsoft 提供了拓展新式工作与新式生活的服务和�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f68023bb86ee08defb10c9b955e5691e07ea3ff
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1f20db2c626c7af2f042cf4916d2be37dda4b184
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575945"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951234"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>使用 Microsoft Graph 可覆盖的用户
 
-Microsoft 提供了拓展新式工作与新式生活的服务和解决方案。 
+Microsoft 提供了拓展新式工作与新式生活的服务和解决方案。
 
-作为开发者，你可以使用 Microsoft Graph API 生成连接数百万用户的应用程序，这些用户在工作、学校和生产中都会使用 Microsoft 云产品。 
+作为开发者，你可以使用 Microsoft Graph API 生成连接数百万用户的应用程序，这些用户在工作、学校和生产中都会使用 Microsoft 云产品。
 
 ## <a name="connect-to-personal-services"></a>连接到个人服务
 
@@ -26,8 +26,8 @@ Microsoft 提供了拓展新式工作与新式生活的服务和解决方案。
 使用 Microsoft Graph 可访问拥有企业版或教育版 Microsoft 365 服务许可证的用户和组织。 这些 Microsoft 365 服务包括：
 
 -   Office 365
--   企业移动性 + 安全性 
--   Windows 10 
+-   企业移动性 + 安全性
+-   Windows 10
 
 征得用户同意后，可根据他们授权的服务和 Microsoft Graph 中提供的服务和功能来使用 Microsoft Graph 访问用户和组织数据。 要了解详细内容，请参阅 [Microsoft Graph 中的主要服务和功能](overview-major-services.md)。
 
@@ -48,6 +48,6 @@ Microsoft Graph 中的服务是 Microsoft 全球云的一部分。 此外，Micr
 - 查看某些[精选方案](https://developer.microsoft.com/graph/examples)。
 - 尝试 [Graph 浏览器](https://developer.microsoft.com/graph/graph-explorer)中的示例请求。
 - 使用[快速入门](https://developer.microsoft.com/graph/quick-start)设置即可运行的示例应用。
-- 在目录的**了解**下，阅读有关你可在应用场景中使用的服务和功能。 
-- 了解如何在你的应用中[获取身份验证令牌](auth-overview.md)。
+- 在目录的**了解**下，阅读有关你可在应用场景中使用的服务和功能。
+- 了解如何在你的应用中[获取身份验证令牌](/graph/auth)。
 - 开始[使用 API](use-the-api.md)。

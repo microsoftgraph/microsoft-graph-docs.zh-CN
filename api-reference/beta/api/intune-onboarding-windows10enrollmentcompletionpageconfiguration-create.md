@@ -1,19 +1,19 @@
 ---
 title: 创建 windows10EnrollmentCompletionPageConfiguration
 description: 创建新的 windows10EnrollmentCompletionPageConfiguration 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c2edde71ba4ec8b61fe8894f05b0a6501df053c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fc365545c949324cb45e70ffa91d977614fe6604
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528041"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899828"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>创建 windows10EnrollmentCompletionPageConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,20 +50,20 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|继承自[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)的注册状态页面配置的 Id|
-|displayName|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|description|String|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|priority|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|createdDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|version|Int32|尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|布尔值|显示或隐藏用户的安装进度|
-|blockDeviceSetupRetryByUser|布尔值|允许用户在安装失败时重试安装程序|
-|allowDeviceResetOnInstallFailure|布尔值|允许或阻止在安装失败时重置设备|
-|allowLogCollectionOnInstallFailure|布尔值|在安装失败时允许或阻止日志集合|
+|id|字符串|继承自[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)的帐户的唯一标识符|
+|displayName|String|从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的显示名称|
+|说明|String|从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的说明|
+|priority|Int32|当用户存在于分配有注册配置的多个组中时, 将使用优先级。 用户仅限于具有最低优先级值的配置。 继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
+|createdDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间|
+|lastModifiedDateTime|DateTimeOffset|从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间|
+|version|Int32|继承自[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)的设备注册配置的版本|
+|showInstallationProgress|Boolean|显示或隐藏用户的安装进度|
+|blockDeviceSetupRetryByUser|Boolean|允许用户在安装失败时重试安装程序|
+|allowDeviceResetOnInstallFailure|Boolean|允许或阻止在安装失败时重置设备|
+|allowLogCollectionOnInstallFailure|Boolean|在安装失败时允许或阻止日志集合|
 |customErrorMessage|String|设置自定义错误消息以在安装失败时显示|
 |installProgressTimeoutInMinutes|Int32|设置安装进度超时 (分钟)|
-|allowDeviceUseOnInstallFailure|布尔值|允许用户在安装失败时继续使用设备|
+|allowDeviceUseOnInstallFailure|Boolean|允许用户在安装失败时继续使用设备|
 |selectedMobileAppIds|String collection|选定的应用程序跟踪安装状态|
 
 
@@ -127,7 +127,6 @@ Content-Length: 755
   ]
 }
 ```
-
 
 
 

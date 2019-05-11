@@ -1,19 +1,19 @@
 ---
 title: deleteUserFromSharedAppleDeviceActionResult 资源类型
 description: 从共享 Apple 设备删除用户操作结果
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90dec4f79d44d4441d23bdba649ddeb3caa311a7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a86128b3bb8f863c21225567c91dc0a9938bc7b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454028"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942176"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>deleteUserFromSharedAppleDeviceActionResult 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -23,7 +23,7 @@ ms.locfileid: "32454028"
 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
 |actionName|String|操作名称 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|继承自[deviceActionResult](../resources/intune-devices-deviceactionresult.md)的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
@@ -51,7 +51,6 @@ ms.locfileid: "32454028"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

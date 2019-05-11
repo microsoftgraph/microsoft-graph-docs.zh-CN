@@ -1,19 +1,19 @@
 ---
 title: managementCertificateWithThumbprint 资源类型
 description: 尚未记录
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 58b45f092848be7198141a34a443471426be273b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: affabd87c08d3e40ade9086fc7a0ad44f57facea
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547163"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941490"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>managementCertificateWithThumbprint 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -42,7 +42,6 @@ ms.locfileid: "32547163"
   "certificate": "String"
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: managedDevice 资源类型
 description: 通过 Intune 托管或预注册的设备
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2233c1dea3dfc8992becf1a12c8e99f1938020a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1d0656bcf3f2726ee114e5e302a4e60f322d8e96
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522074"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941980"
 ---
 # <a name="manageddevice-resource-type"></a>managedDevice 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -28,6 +28,8 @@ ms.locfileid: "32522074"
 |[enableLostMode 操作](../api/intune-devices-manageddevice-enablelostmode.md)|无|启用丢失模式|
 |[playLostModeSound 操作](../api/intune-devices-manageddevice-playlostmodesound.md)|无|远程锁定|
 |[setDeviceName 操作](../api/intune-devices-manageddevice-setdevicename.md)|无|设置设备的设备名称。|
+|[rotateFileVaultKey 操作](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|无|尚未记录|
+|[getFileVaultKey 函数](../api/intune-devices-manageddevice-getfilevaultkey.md)|字符串|尚未记录|
 |[retire 操作](../api/intune-devices-manageddevice-retire.md)|无|停用设备|
 |[wipe 操作](../api/intune-devices-manageddevice-wipe.md)|无|擦除设备|
 |[resetPasscode 操作](../api/intune-devices-manageddevice-resetpasscode.md)|无|重置密码|
@@ -51,7 +53,7 @@ ms.locfileid: "32522074"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|设备唯一标识符|
+|id|字符串|设备唯一标识符|
 |userId|String|与设备关联的用户的唯一标识符|
 |deviceName|String|设备的名称|
 |hardwareInformation|[hardwareInformation](../resources/intune-devices-hardwareinformation.md)|设备的 hardward 详细信息。  包括存储空间、制造商、序列号等信息。|
@@ -88,7 +90,7 @@ ms.locfileid: "32522074"
 |remoteAssistanceSessionUrl|String|允许与设备建立远程协助会话的 URL。|
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。|
 |isEncrypted|Boolean|设备加密状态|
-|userPrincipalName|String|设备用户主体名称|
+|userPrincipalName|字符串|设备用户主体名称|
 |model|String|设备的型号|
 |manufacturer|String|设备的制造商|
 |imei|String|IMEI|
@@ -106,14 +108,15 @@ ms.locfileid: "32522074"
 |freeStorageSpaceInBytes|Int64|可用存储空间字节数|
 |managedDeviceName|String|用于识别设备的自动生成的名称。 可以覆盖为用户友好名称。|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
+|retireAfterDateTime|DateTimeOffset|指示当设备因计划操作而自动停用的时间。|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md)集合|指示设备的上次登录用户|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|报告设置了 preferMdmOverGroupPolicy 设置的 DateTime。  设置后, 如果存在冲突, Intune MDM 设置将覆盖组策略设置。 只读。|
 |autopilotEnrolled|Boolean|如果托管设备是通过自动引导注册的, 则报告。|
 |requireUserEnrollmentApproval|Boolean|如果托管 iOS 设备是用户审批注册, 则报告。|
 |managementCertificateExpirationDate|DateTimeOffset|报告设备管理证书到期日期|
 |iccid|String|集成的电路卡标识符, 它是 SIM 卡的唯一标识号。|
-|udid|String|iOS 和 macOS 设备的唯一设备标识符。|
-|roleScopeTagIds|String collection|此设备实例的范围标记 id 的列表。|
+|udid|String|IOS 和 macOS 设备的唯一设备标识符。|
+|roleScopeTagIds|String collection|此设备实例的范围标记 Id 的列表。|
 |windowsActiveMalwareCount|Int32|此 windows 设备的活动恶意软件计数|
 |windowsRemediatedMalwareCount|Int32|此 windows 设备的修正的恶意软件计数|
 |notes|String|IT 管理员创建的设备上的注释|
@@ -277,6 +280,7 @@ ms.locfileid: "32522074"
   "freeStorageSpaceInBytes": 1024,
   "managedDeviceName": "String",
   "partnerReportedThreatState": "String",
+  "retireAfterDateTime": "String (timestamp)",
   "usersLoggedOn": [
     {
       "@odata.type": "microsoft.graph.loggedOnUser",
@@ -304,7 +308,6 @@ ms.locfileid: "32522074"
   }
 }
 ```
-
 
 
 

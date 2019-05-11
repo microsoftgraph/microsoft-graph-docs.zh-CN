@@ -1,23 +1,23 @@
 ---
 title: depEnrollmentProfile 资源类型
-description: depEnrollmentProfile 资源表示 Apple 设备注册计划 (DEP) 注册配置文件。 在相应的设备可以通过 DEP 进行注册之前, 必须将此类型的配置文件分配给 Apple DEP 序列号。
-author: tfitzmac
+description: DepEnrollmentProfile 资源表示 Apple 设备注册计划 (DEP) 注册配置文件。 在相应的设备可以通过 DEP 进行注册之前, 必须将此类型的配置文件分配给 Apple DEP 序列号。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4a365ee8a83820789ecdbf199df5997b6e683e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: da176fcdd2bd59a504701348e8b2b4f298bd9bda
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454179"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941644"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>depEnrollmentProfile 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-depEnrollmentProfile 资源表示 Apple 设备注册计划 (DEP) 注册配置文件。 在相应的设备可以通过 DEP 进行注册之前, 必须将此类型的配置文件分配给 Apple DEP 序列号。
+DepEnrollmentProfile 资源表示 Apple 设备注册计划 (DEP) 注册配置文件。 在相应的设备可以通过 DEP 进行注册之前, 必须将此类型的配置文件分配给 Apple DEP 序列号。
 
 
 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)
@@ -28,26 +28,26 @@ depEnrollmentProfile 资源表示 Apple 设备注册计划 (DEP) 注册配置文
 |[列出 depEnrollmentProfiles](../api/intune-enrollment-depenrollmentprofile-list.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)集合|列出[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)对象的属性和关系。|
 |[获取 depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-get.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|读取[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)对象的属性和关系。|
 |[创建 depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-create.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|创建新的[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)对象。|
-|[删除 depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-delete.md)|None|删除[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)。|
+|[删除 depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-delete.md)|无|删除[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)。|
 |[更新 depEnrollmentProfile](../api/intune-enrollment-depenrollmentprofile-update.md)|[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)|更新[depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md)对象的属性。|
 
 ## <a name="properties"></a>属性
-|属性|类型|描述|
+|属性|类型|说明|
 |:---|:---|:---|
-|id|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的对象的 GUID|
+|id|字符串|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的对象的 GUID|
 |displayName|String|继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)的配置文件的名称|
-|description|字符串|从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
-|requiresUserAuthentication|Boolean|指示配置文件是否需要从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
-|configurationEndpointUrl|字符串|用于从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
+|说明|String|从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的配置文件的说明|
+|requiresUserAuthentication|Boolean|指示配置文件是否需要从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的用户身份验证|
+|configurationEndpointUrl|String|用于从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的注册的配置终结点 url|
 |enableAuthenticationViaCompanyPortal|Boolean|指示使用 Apple Setup 助理 (而不是公司门户) 进行身份验证。 继承自[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在从[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的安装助理注册设备上需要公司门户|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|指示在从[EnrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)继承的安装助理注册设备上需要公司门户|
 |isDefault|Boolean|指示这是否为默认配置文件|
 |supervisedModeEnabled|Boolean|监督模式, 如果启用, 则为 True, 否则为 false。 有关https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune详细信息, 请参阅。|
-|supportDepartment|字符串|支持部门信息|
+|supportDepartment|String|支持部门信息|
 |passCodeDisabled|Boolean|指示是否禁用密码设置窗格|
 |isMandatory|Boolean|指示配置文件是否是必需的|
 |locationDisabled|Boolean|指示是否禁用位置服务设置窗格|
-|supportPhoneNumber|字符串|支持电话号码|
+|supportPhoneNumber|String|支持电话号码|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|指示 iTunes 配对模式。 可取值为：`disallow`、`allow`、`requiresCertificate`。|
 |profileRemovalDisabled|Boolean|指示是否禁用了配置文件删除选项|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)集合|Apple 配置器的管理证书|
@@ -64,7 +64,7 @@ depEnrollmentProfile 资源表示 Apple 设备注册计划 (DEP) 注册配置文
 |macOSFileVaultDisabled|Boolean|指示是否禁用 Mac OS 文件保管库|
 |awaitDeviceConfiguredConfirmation|Boolean|指示设备是否需要等待已配置的确认|
 |sharedIPadMaximumUserCount|Int32|这指定了可以使用共享 iPad 的最大用户数。 仅适用于共享 iPad 模式。|
-|enableSharedIPad|Boolean|这表示设备是否要在启用多用户方案的模式中进行注册。 仅适用于共享 ipad。|
+|enableSharedIPad|Boolean|这表示设备是否要在启用多用户方案的模式中进行注册。 仅适用于共享 Ipad。|
 
 ## <a name="relationships"></a>关系
 无
@@ -119,7 +119,6 @@ depEnrollmentProfile 资源表示 Apple 设备注册计划 (DEP) 注册配置文
   "enableSharedIPad": true
 }
 ```
-
 
 
 

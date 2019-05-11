@@ -1,19 +1,19 @@
 ---
 title: importedWindowsAutopilotDeviceIdentity 资源类型
 description: 导入 Windows AutoPilot 的设备。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50fd9d25faa4b7f1dc244701977bf6c71cd82974
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70cdc846424941ea98fefdb23da0886930498f75
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32567051"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941560"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -39,6 +39,7 @@ ms.locfileid: "32567051"
 |importId|String|Windows autopilot 设备的导入 Id。|
 |hardwareIdentifier|Binary|Windows autopilot 设备硬件 Blob。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
+|assignedUserPrincipalName|String|将为设备分配的用户的 UPN|
 
 ## <a name="relationships"></a>关系
 无
@@ -66,10 +67,10 @@ ms.locfileid: "32567051"
     "deviceRegistrationId": "String",
     "deviceErrorCode": 1024,
     "deviceErrorName": "String"
-  }
+  },
+  "assignedUserPrincipalName": "String"
 }
 ```
-
 
 
 

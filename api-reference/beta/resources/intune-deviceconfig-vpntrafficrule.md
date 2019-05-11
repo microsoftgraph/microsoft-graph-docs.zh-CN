@@ -1,19 +1,19 @@
 ---
 title: vpnTrafficRule 资源类型
 description: VPN 流量规则定义。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c22ead3b037ff18dbd9c1dedbf68b11f2b55a3bc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 21f174056021e9a9789a2c033383c42ba8f09cc3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555008"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944556"
 ---
 # <a name="vpntrafficrule-resource-type"></a>vpnTrafficRule 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -22,7 +22,7 @@ VPN 流量规则定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|String|别名.|
+|name|字符串|别名.|
 |协议|Int32|协议 (0-255)。 有效值为0至255|
 |localPortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)集合|仅当 protocol 为 TCP 或 UDP (6 或 17) 时, 才能设置本地端口范围。 该集合最多可包含 500 个元素。|
 |remotePortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md)集合|仅当 protocol 为 TCP 或 UDP (6 或 17) 时, 才能设置远程端口范围。 该集合最多可包含 500 个元素。|
@@ -82,7 +82,6 @@ VPN 流量规则定义。
   "claims": "String"
 }
 ```
-
 
 
 

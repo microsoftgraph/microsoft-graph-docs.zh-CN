@@ -1,19 +1,19 @@
 ---
 title: windowsDeviceHealthState 枚举类型
 description: 计算机终结点保护状态
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7da8a7cc01cef7ff410611e819739e226a4baee1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6086dc05d204e4c9cb23c77f79f98c3a207de35c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549476"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941889"
 ---
 # <a name="windowsdevicehealthstate-enum-type"></a>windowsDeviceHealthState 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,11 +24,10 @@ ms.locfileid: "32549476"
 |:---|:---|:---|
 |清理|0|计算机干净, 无需任何操作|
 |fullScanPending|1|计算机处于挂起的完全扫描状态|
-|rebootPending|2 |计算机处于挂起的重新启动状态|
-|manualStepsPending|4 |计算机处于挂起的手动步骤状态|
-|offlineScanPending|8 |计算机处于挂起的脱机扫描状态|
-|关键|16 |计算机处于严重故障状态|
-
+|rebootPending|双面|计算机处于挂起的重新启动状态|
+|manualStepsPending|4|计算机处于挂起的手动步骤状态|
+|offlineScanPending|utf-8|计算机处于挂起的脱机扫描状态|
+|关键|位|计算机处于严重故障状态|
 
 
 

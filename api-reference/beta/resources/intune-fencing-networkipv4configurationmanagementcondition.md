@@ -1,19 +1,19 @@
 ---
 title: networkIPv4ConfigurationManagementCondition 资源类型
 description: 可能会定义在设备检测到特定 IP 网络设置时触发的基于配置的 IPv4 管理条件。 只有在网络连接处于活动状态时, 才会将 IP 配置管理条件视为 TRUE。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4f7d1e87f8e779eadc4a6089a91fc802591c6b58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e0f14907928e853ae94b51fcabb1a6c04955c673
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568785"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941228"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>networkIPv4ConfigurationManagementCondition 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -42,7 +42,7 @@ ms.locfileid: "32568785"
 |modifiedDateTime|DateTimeOffset|上次修改管理条件的时间。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|管理条件的 ETag。 更新了服务端。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)集合|适用于此管理条件的平台。 继承自[managementCondition](../resources/intune-fencing-managementcondition.md)|
-|ipV4Prefix|String|要连接到的 IPv4 子网。 例如, 10.0.0.0/8|
+|ipV4Prefix|String|要连接到的 IPv4 子网。 例如, 10.0.0。0/8|
 |ipV4Gateway|String|IPv4 网关地址。 例如10.0.0。0|
 |ipV4DHCPServer|String|适配器的 DHCP 服务器的 IPv4 地址。|
 |ipV4DNSServerList|String collection|为适配器配置的 IPv4 DNS 服务器。|
@@ -85,7 +85,6 @@ ms.locfileid: "32568785"
   ]
 }
 ```
-
 
 
 

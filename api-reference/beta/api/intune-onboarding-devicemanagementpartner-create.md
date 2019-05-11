@@ -1,19 +1,19 @@
 ---
 title: 创建 deviceManagementPartner
 description: 创建新的 deviceManagementPartner 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dde8da26d87812e198a47b8bbf4fd498122ac5c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8c9eea3c6ba8a3010a2a63d6dd362555aed553f0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32528741"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900094"
 ---
 # <a name="create-devicemanagementpartner"></a>创建 deviceManagementPartner
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -113,7 +113,6 @@ Content-Length: 713
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
-
 
 
 

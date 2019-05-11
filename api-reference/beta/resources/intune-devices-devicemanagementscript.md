@@ -1,19 +1,19 @@
 ---
 title: deviceManagementScript 资源类型
 description: Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联接设备上运行其 Powershell 脚本的功能。 脚本可以运行一次, 也可以定期运行。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6599f0dbc083859bef4f7a334d36fdcdfa63ee86
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 649ecb29aa3ff18960e858fc86a0f9fae316b13c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578013"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942057"
 ---
 # <a name="devicemanagementscript-resource-type"></a>deviceManagementScript 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -42,7 +42,7 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|指示执行上下文的类型。 可取值为：`system`、`user`。|
 |enforceSignatureCheck|Boolean|指示是否需要检查脚本签名。|
 |fileName|String|脚本文件名。|
-|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 id 的列表。|
+|roleScopeTagIds|String collection|此 PowerShellScript 实例的范围标记 Id 的列表。|
 |runAs32Bit|Boolean|一个指示 PowerShell 脚本是否应作为32位运行的值|
 
 ## <a name="relationships"></a>关系
@@ -83,7 +83,6 @@ Intune 将向客户提供在已注册的 windows 10 Azure Active Directory 联�
   "runAs32Bit": true
 }
 ```
-
 
 
 

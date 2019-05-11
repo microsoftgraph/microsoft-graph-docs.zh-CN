@@ -1,19 +1,19 @@
 ---
 title: 更新 groupPolicyPresentationTextBox
 description: 更新 groupPolicyPresentationTextBox 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b5b7ac370825c54c55ebdcfc0c219dd3916834a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ade36f817022dcfec2dfa7a41e60a64cbb27536e
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530737"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904620"
 ---
 # <a name="update-grouppolicypresentationtextbox"></a>更新 groupPolicyPresentationTextBox
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |默认|String|显示在文本框中的本地化默认字符串。 默认值为空白。|
-|必需|布尔值|要求在文本框中输入值。 默认值为 false。|
+|必需|Boolean|要求在文本框中输入值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数, 指定最大文本字符数。 默认值为1023。|
 
 
@@ -98,7 +98,6 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
-
 
 
 

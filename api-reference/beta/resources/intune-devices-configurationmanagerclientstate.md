@@ -1,19 +1,19 @@
 ---
 title: configurationManagerClientState 枚举类型
 description: 配置管理器客户端状态
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f6231ecebf407172f2c7178a130d90200868292
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9be184d298b1cecc9cb3f442fb343e1e00f3d965
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454242"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943002"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>configurationManagerClientState 枚举类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -27,8 +27,7 @@ ms.locfileid: "32454242"
 |运转|步|此设备能够成功签入 configuration manager 服务。|
 |installFailed|utf-8|配置管理器代理安装失败。|
 |updateFailed|11x17|从版本 x 更新到配置管理器代理版本 y 的更新失败。 |
-|communicationError|合|configuration manager 代理在过去能够到达 configuration manager 服务, 但现在无法再访问。 |
-
+|communicationError|合|Configuration manager 代理在过去能够到达 configuration manager 服务, 但现在无法再访问。 |
 
 
 

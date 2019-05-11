@@ -1,19 +1,19 @@
 ---
 title: configurationManagerClientEnabledFeatures 资源类型
 description: Configuration Manager 客户端已启用的功能
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a90b7f0009b4d9bd617b781338ceee3de2f432c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37c098910ec532a1ab23ae8464c03e43cf7a9e29
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549130"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943037"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>configurationManagerClientEnabledFeatures 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -22,14 +22,14 @@ Configuration Manager 客户端已启用的功能
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|inventory|布尔值|目录是否由 Intune 管理|
-|modernApps|布尔值|现代应用程序是否由 Intune 管理|
-|resourceAccess|布尔值|资源访问权限是否由 Intune 管理|
-|deviceConfiguration|布尔值|设备配置是否由 Intune 管理|
-|compliancePolicy|布尔值|符合性策略是否由 Intune 管理|
+|inventory|Boolean|目录是否由 Intune 管理|
+|modernApps|Boolean|现代应用程序是否由 Intune 管理|
+|resourceAccess|Boolean|资源访问权限是否由 Intune 管理|
+|deviceConfiguration|Boolean|设备配置是否由 Intune 管理|
+|compliancePolicy|Boolean|符合性策略是否由 Intune 管理|
 |windowsUpdateForBusiness|Boolean|适用于企业的 Windows 更新是否由 Intune 管理|
-|endpointProtection|布尔值|Endpoint Protection 是否由 Intune 管理|
-|officeoffice|布尔值|Office 应用程序是否由 Intune 管理|
+|endpointProtection|Boolean|Endpoint Protection 是否由 Intune 管理|
+|Officeoffice|Boolean|Office 应用程序是否由 Intune 管理|
 
 ## <a name="relationships"></a>关系
 无
@@ -54,7 +54,6 @@ Configuration Manager 客户端已启用的功能
   "officeApps": true
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: 删除 mobileAppProvisioningConfigGroupAssignment
 description: 删除 mobileAppProvisioningConfigGroupAssignment。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 328bad467a3c2f4923ca1076ca34530721724c9f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a3f8f4dfe012bd203043de9539fc36b74b252406
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488643"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935061"
 ---
 # <a name="delete-mobileappprovisioningconfiggroupassignment"></a>删除 mobileAppProvisioningConfigGroupAssignment
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisionin
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

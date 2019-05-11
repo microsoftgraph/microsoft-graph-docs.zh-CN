@@ -1,19 +1,19 @@
 ---
 title: windowsUpdateScheduledInstall 资源类型
 description: 尚未记录
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd3a1aafe751bd5db334387cc3872c68e6de6637
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 270df73ef5db5cde3784adb797475b9232591de6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523634"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943618"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>windowsUpdateScheduledInstall 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -45,7 +45,6 @@ ms.locfileid: "32523634"
   "scheduledInstallTime": "String (time of day)"
 }
 ```
-
 
 
 

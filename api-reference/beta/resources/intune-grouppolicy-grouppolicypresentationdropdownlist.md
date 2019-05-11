@@ -1,23 +1,23 @@
 ---
 title: groupPolicyPresentationDropdownList 资源类型
-description: 表示 admx dropdownList 元素和 admx 枚举元素。
-author: tfitzmac
+description: 表示 ADMX dropdownList 元素和 ADMX 枚举元素。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b70b9b5385203921151e4bc9f01c2e3a7d28cd8d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44c3188dda2235ea820a48a78ecfccbb9b66d70f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575714"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941119"
 ---
 # <a name="grouppolicypresentationdropdownlist-resource-type"></a>groupPolicyPresentationDropdownList 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-表示 admx dropdownList 元素和 admx 枚举元素。
+表示 ADMX dropdownList 元素和 ADMX 枚举元素。
 
 
 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)
@@ -38,7 +38,7 @@ ms.locfileid: "32575714"
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultItem|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|用于标识项目列表的默认选择的本地化字符串值。|
-|项目|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)集合|表示一组本地化的显示名称及其关联的值。|
+|items|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)集合|表示一组本地化的显示名称及其关联的值。|
 |必需|Boolean|要求在 "参数" 框中输入值。 默认值为 false。|
 
 ## <a name="relationships"></a>关系
@@ -75,7 +75,6 @@ ms.locfileid: "32575714"
   "required": true
 }
 ```
-
 
 
 

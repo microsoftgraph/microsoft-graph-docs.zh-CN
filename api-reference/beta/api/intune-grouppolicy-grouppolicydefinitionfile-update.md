@@ -1,19 +1,19 @@
 ---
 title: 更新 groupPolicyDefinitionFile
 description: 更新 groupPolicyDefinitionFile 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 040b484a5e4f959fd6e4bbd35f2f08e66910d30c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dbcaaa6cd8689f039d9daeb7b4ad7f83f2276783
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531458"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33905096"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>更新 groupPolicyDefinitionFile
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|ADMX 文件的本地化友好名称。|
-|description|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
+|说明|String|ADMX 文件中策略设置的本地化说明。 默认值为空白。|
 |languageCodes|String collection|ADMX 文件的受支持的语言代码。|
 |targetPrefix|String|指定在 ADMX 文件中引用命名空间的逻辑名称。|
 |targetNamespace|String|指定用于标识 ADMX 文件中的命名空间的 URI。|
@@ -108,7 +108,6 @@ Content-Length: 438
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

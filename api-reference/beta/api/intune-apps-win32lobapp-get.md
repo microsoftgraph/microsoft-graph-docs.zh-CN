@@ -1,19 +1,19 @@
 ---
 title: 获取 win32LobApp
 description: 读取 win32LobApp 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33ca578b48ef988132592a77977a8561b591e309
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 331ca0eafe11f1a5f0a0de3b9cda4f9082af0082
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488294"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934822"
 ---
 # <a name="get-win32lobapp"></a>获取 win32LobApp
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -163,7 +163,6 @@ Content-Length: 3101
   }
 }
 ```
-
 
 
 

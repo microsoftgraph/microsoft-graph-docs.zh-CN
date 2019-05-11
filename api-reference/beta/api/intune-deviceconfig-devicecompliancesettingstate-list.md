@@ -1,19 +1,19 @@
 ---
 title: 列出 deviceComplianceSettingStates
 description: 列出 deviceComplianceSettingState 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31031094f78521ac08f327d65de2a9c4ed6efd0a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 50a96072a3c291a45bdd231ffc2afbb53b5a2d40
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32469843"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927634"
 ---
 # <a name="list-devicecompliancesettingstates"></a>列出 deviceComplianceSettingStates
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -85,7 +85,6 @@ Content-Length: 687
   ]
 }
 ```
-
 
 
 

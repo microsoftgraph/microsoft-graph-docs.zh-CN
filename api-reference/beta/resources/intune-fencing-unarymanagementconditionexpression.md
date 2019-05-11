@@ -1,19 +1,19 @@
 ---
 title: unaryManagementConditionExpression 资源类型
 description: 使用一元运算计算的管理条件表达式。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6554f62805bcd1d45f6db165367624434e794117
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eee7a423ca412eb4ee86e3f0b5a5f13ec786a690
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561878"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941196"
 ---
 # <a name="unarymanagementconditionexpression-resource-type"></a>unaryManagementConditionExpression 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -47,7 +47,6 @@ ms.locfileid: "32561878"
   }
 }
 ```
-
 
 
 

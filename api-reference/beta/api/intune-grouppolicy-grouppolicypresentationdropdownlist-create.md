@@ -1,19 +1,19 @@
 ---
 title: 创建 groupPolicyPresentationDropdownList
 description: 创建新的 groupPolicyPresentationDropdownList 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53614e7171476acd1383bfc6ec96f6b339846569
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c7b36416d280bd3234b51203bf8e99d824a16934
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531108"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904872"
 ---
 # <a name="create-grouppolicypresentationdropdownlist"></a>创建 groupPolicyPresentationDropdownList
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -55,7 +55,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultItem|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|用于标识项目列表的默认选择的本地化字符串值。|
 |items|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)集合|表示一组本地化的显示名称及其关联的值。|
-|必需|布尔值|要求在 "参数" 框中输入值。 默认值为 false。|
+|必需|Boolean|要求在 "参数" 框中输入值。 默认值为 false。|
 
 
 
@@ -117,7 +117,6 @@ Content-Length: 602
   "required": true
 }
 ```
-
 
 
 

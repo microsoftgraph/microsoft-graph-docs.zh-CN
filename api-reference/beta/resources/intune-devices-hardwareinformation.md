@@ -1,19 +1,19 @@
 ---
 title: hardwareInformation 资源类型
 description: 给定设备的硬件信息。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c751b6601c296b01be91792105325e10a52ea2f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ad73731be7f3fd3d18798b7dc84ce7865449529
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522480"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942008"
 ---
 # <a name="hardwareinformation-resource-type"></a>hardwareInformation 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -41,9 +41,9 @@ ms.locfileid: "32522480"
 |tpmSpecificationVersion|String|指定规范版本的字符串。|
 |operatingSystemEdition|String|指定 OS 版本的字符串。|
 |deviceFullQualifiedDomainName|String|返回设备的完全限定的域名 (如果有)。 如果设备未加入域, 则返回一个空字符串。 |
-|deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|基于虚拟化的安全硬件要求状态。 可取值为：`meetHardwareRequirements`、`secureBootRequired`、`dmaProtectionRequired`、`hyperVNotSupportedForGuestVM` 或 `hyperVNotAvailable`。|
+|deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|基于虚拟化的安全硬件要求状态。 可取值为：`meetHardwareRequirements`、`secureBootRequired`、`dmaProtectionRequired`、`hyperVNotSupportedForGuestVM`、`hyperVNotAvailable`。|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|基于虚拟化的安全状态。 . 可取值为：`running`、`rebootRequired`、`require64BitArchitecture`、`notLicensed`、`notConfigured`、`doesNotMeetHardwareRequirements` 或 `other`。|
-|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|本地系统颁发机构 (LSA) credential guard 状态。 . 可取值为：`running`、`rebootRequired`、`notLicensed`、`notConfigured` 或 `virtualizationBasedSecurityNotRunning`。|
+|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|本地系统颁发机构 (LSA) credential guard 状态。 . 可取值为：`running`、`rebootRequired`、`notLicensed`、`notConfigured`、`virtualizationBasedSecurityNotRunning`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -90,7 +90,6 @@ ms.locfileid: "32522480"
   "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
 }
 ```
-
 
 
 

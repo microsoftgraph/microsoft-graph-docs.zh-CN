@@ -1,23 +1,23 @@
 ---
 title: importedDeviceIdentity 资源类型
-description: importedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯一硬件标识。
-author: tfitzmac
+description: ImportedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯一硬件标识。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7cc903fa1b30177f037493fe090ebfde31831b0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 197f4d9fd3377e6359d93a75ac36c8c15be3e0f5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550726"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941525"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>importedDeviceIdentity 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-importedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯一硬件标识。
+ImportedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯一硬件标识。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -39,7 +39,7 @@ importedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯
 |lastModifiedDateTime|DateTimeOffset|说明的上次修改日期时间|
 |createdDateTime|DateTimeOffset|设备的创建日期时间|
 |lastContactedDateTime|DateTimeOffset|设备的上次联系日期时间|
-|description|String|设备的说明|
+|说明|String|设备的说明|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Intune 中设备的状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`、`blocked`。|
 |platform|[平台](../resources/intune-enrollment-platform.md)|设备的平台。 可取值为：`unknown`、`ios`、`android`、`windows`、`windowsMobile`、`macOS`。|
 
@@ -68,7 +68,6 @@ importedDeviceIdentity 资源表示已为预注册配置预暂存的设备的唯
   "platform": "String"
 }
 ```
-
 
 
 

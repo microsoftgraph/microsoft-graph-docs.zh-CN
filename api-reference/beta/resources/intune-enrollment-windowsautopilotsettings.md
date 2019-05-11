@@ -1,23 +1,23 @@
 ---
 title: windowsAutopilotSettings 资源类型
-description: windowsAutopilotSettings 资源表示用于将数据与 windows 设备数据同步服务同步的 Windows Autopilot 帐户。
-author: tfitzmac
+description: WindowsAutopilotSettings 资源表示用于将数据与 Windows 设备数据同步服务同步的 Windows Autopilot 帐户。
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e7882a522eb3e3adcf9ebdf24e2b8f820b0f3581
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5f7893b7a9dd01a3ea7c41875f235870a5ce27f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547044"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33941434"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>windowsAutopilotSettings 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-windowsAutopilotSettings 资源表示用于将数据与 windows 设备数据同步服务同步的 Windows Autopilot 帐户。
+WindowsAutopilotSettings 资源表示用于将数据与 Windows 设备数据同步服务同步的 Windows Autopilot 帐户。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -54,7 +54,6 @@ windowsAutopilotSettings 资源表示用于将数据与 windows 设备数据同�
   "syncStatus": "String"
 }
 ```
-
 
 
 

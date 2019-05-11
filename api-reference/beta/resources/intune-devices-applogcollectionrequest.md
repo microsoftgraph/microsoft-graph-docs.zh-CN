@@ -1,19 +1,19 @@
 ---
 title: appLogCollectionRequest 资源类型
 description: AppLogCollectionRequest 实体。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6b528f2ee74abf347b7ed31b323814197c8fa0bf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 24d6ee782dc50935cffddc9916b04121bf3a1cb1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32576365"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943198"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>appLogCollectionRequest 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -33,7 +33,7 @@ AppLogCollectionRequest 实体。
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|唯一标识符。 这是 userId_DeviceId_AppId id。|
-|状态|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|日志上载状态。 可取值为：`pending`、`completed`、`failed`。|
 |errorMessage|String|在上载过程中出现的错误消息|
 |customLogFolders|String collection|日志文件夹的列表。 |
 |completedDateTime|DateTimeOffset|上传日志请求到达终端状态的时间|
@@ -61,7 +61,6 @@ AppLogCollectionRequest 实体。
   "completedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

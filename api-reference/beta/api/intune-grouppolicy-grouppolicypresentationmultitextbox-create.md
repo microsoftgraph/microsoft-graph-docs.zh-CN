@@ -1,19 +1,19 @@
 ---
 title: 创建 groupPolicyPresentationMultiTextBox
 description: 创建新的 groupPolicyPresentationMultiTextBox 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5615488ce6b4e5a7e4d477192b19aedf047f4c22
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c57d8f09a7b1b26905b0a5c7854dcfe66bab6a8c
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32531045"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33904739"
 ---
 # <a name="create-grouppolicypresentationmultitextbox"></a>创建 groupPolicyPresentationMultiTextBox
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -53,7 +53,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |label|String|任何演示文稿实体的本地化文本标签。 默认值为空白。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|实体的键。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改实体的日期和时间。 继承自[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|必需|布尔值|要求在文本框中输入值。 默认值为 false。|
+|必需|Boolean|要求在文本框中输入值。 默认值为 false。|
 |maxLength|Int64|一个无符号整数, 指定最大文本字符数。 默认值为1023。|
 |maxStrings|Int64|一个无符号整数, 指定最大字符串数。 默认值为 0 。|
 
@@ -97,7 +97,6 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
-
 
 
 

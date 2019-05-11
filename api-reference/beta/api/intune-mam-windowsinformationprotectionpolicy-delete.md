@@ -1,19 +1,19 @@
 ---
 title: 删除 windowsInformationProtectionPolicy
 description: 删除 windowsInformationProtectionPolicy。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf05dec1d93f4cd0366a99050b0859635a4ccf37
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 76951ef5c433ccb2636f72453d4828136c613275
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529126"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900606"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>删除 windowsInformationProtectionPolicy
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -62,7 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationPr
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

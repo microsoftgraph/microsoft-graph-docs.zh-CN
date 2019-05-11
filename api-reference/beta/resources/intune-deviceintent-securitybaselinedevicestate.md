@@ -1,19 +1,19 @@
 ---
 title: securityBaselineDeviceState 资源类型
 description: 设备安全基准的安全基准合规性状态摘要。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1fb6bd8ee8e474fdf96bc2c70f4db288571d795
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ff87b5c39d00957ddd4128bc3351879dcd5b652f
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562235"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943289"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>securityBaselineDeviceState 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -31,11 +31,11 @@ ms.locfileid: "32562235"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|实体的唯一标识符|
+|id|String|实体的唯一标识符|
 |managedDeviceId|String|Intune 设备 id|
 |deviceDisplayName|String|设备的显示名称|
 |userPrincipalName|String|用户主体名称|
-|状态|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|安全基准合规性状态。 可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
+|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|安全基准合规性状态。 可取值为：`unknown`、`secure`、`notApplicable`、`notSecure`、`error`、`conflict`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间|
 
 ## <a name="relationships"></a>关系
@@ -60,7 +60,6 @@ ms.locfileid: "32562235"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

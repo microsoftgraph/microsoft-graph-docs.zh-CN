@@ -1,19 +1,19 @@
 ---
 title: 更新 deviceComplianceDeviceStatus
 description: 更新 deviceComplianceDeviceStatus 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66ac0f76bbbab2c0733bc305c3cc934d13fe919e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ede4fb33218dcd3bd9cf1076df266ce37200af5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471019"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927823"
 ---
 # <a name="update-devicecompliancedevicestatus"></a>更新 deviceComplianceDeviceStatus
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,8 +51,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|deviceDisplayName|字符串|DevicePolicyStatus 的设备名。|
-|userName|字符串|报告的用户名|
+|deviceDisplayName|String|DevicePolicyStatus 的设备名。|
+|userName|String|报告的用户名|
 |deviceModel|String|报告的设备模型|
 |platform|Int32|报告的设备的平台|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期的到期日期/时间|
@@ -107,7 +107,6 @@ Content-Length: 493
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

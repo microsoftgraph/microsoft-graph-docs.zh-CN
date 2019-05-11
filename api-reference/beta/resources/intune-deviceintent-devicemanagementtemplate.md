@@ -1,19 +1,19 @@
 ---
 title: deviceManagementTemplate 资源类型
 description: 表示已定义的设备设置集合的实体
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a55e4426f37f0261f5adbd1ac4830de6ede3e3ed
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ffaa90db6b47502dfd66c39538f14a3c1a52b669
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575854"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943408"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>deviceManagementTemplate 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -35,12 +35,16 @@ ms.locfileid: "32575854"
 |id|字符串|模板 ID|
 |displayName|String|模板的显示名称|
 |说明|String|模板的说明|
+|versionInfo|String|模板的版本信息|
+|isDeprecated|Boolean|模板已弃用或不已弃用。 无法从已弃用的模板创建意向。|
+|intentCount|Int32|从此模板创建的意向数。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
 |settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)集合|此模板包含的所有设置的集合|
 |categories|[deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)集合|模板中设置类别的集合|
+|migratableTo|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)集合|此模板可以迁移到的模板集合|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -55,10 +59,12 @@ ms.locfileid: "32575854"
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
   "id": "String (identifier)",
   "displayName": "String",
-  "description": "String"
+  "description": "String",
+  "versionInfo": "String",
+  "isDeprecated": true,
+  "intentCount": 1024
 }
 ```
-
 
 
 

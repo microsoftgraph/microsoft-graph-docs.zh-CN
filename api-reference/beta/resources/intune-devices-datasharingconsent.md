@@ -1,19 +1,19 @@
 ---
 title: dataSharingConsent 资源类型
 description: 数据共享同意信息。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e1cb144957ee000a4e077f0f9c58065fad3a8dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6a062b44b24eee6a33e98be0fb3400522b4d1031
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453927"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33942967"
 ---
 # <a name="datasharingconsent-resource-type"></a>dataSharingConsent 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "32453927"
 |[列出 dataSharingConsents](../api/intune-devices-datasharingconsent-list.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)集合|列出[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象的属性和关系。|
 |[获取 dataSharingConsent](../api/intune-devices-datasharingconsent-get.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|读取[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象的属性和关系。|
 |[创建 dataSharingConsent](../api/intune-devices-datasharingconsent-create.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|创建新的[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象。|
-|[删除 dataSharingConsent](../api/intune-devices-datasharingconsent-delete.md)|None|删除[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)。|
+|[删除 dataSharingConsent](../api/intune-devices-datasharingconsent-delete.md)|无|删除[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)。|
 |[更新 dataSharingConsent](../api/intune-devices-datasharingconsent-update.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|更新[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)对象的属性。|
 |[consentToDataSharing 操作](../api/intune-devices-datasharingconsent-consenttodatasharing.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|尚未记录|
 
@@ -33,12 +33,12 @@ ms.locfileid: "32453927"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|数据共享同意 Id|
-|serviceDisplayName|字符串|服务工作流的显示名称|
-|termsUrl|字符串|数据共享同意的 TermsUrl|
+|serviceDisplayName|String|服务工作流的显示名称|
+|termsUrl|String|数据共享同意的 TermsUrl|
 |granted|Boolean|"数据共享同意" 的 "已授予" 状态|
 |grantDateTime|DateTimeOffset|授予此帐户的时间许可|
-|grantedByUpn|字符串|授予此帐户同意的用户的 Upn|
-|grantedByUserId|字符串|授予此帐户同意的用户的用户 id|
+|grantedByUpn|String|授予此帐户同意的用户的 Upn|
+|grantedByUserId|String|授予此帐户同意的用户的用户 Id|
 
 ## <a name="relationships"></a>关系
 无
@@ -63,7 +63,6 @@ ms.locfileid: "32453927"
   "grantedByUserId": "String"
 }
 ```
-
 
 
 

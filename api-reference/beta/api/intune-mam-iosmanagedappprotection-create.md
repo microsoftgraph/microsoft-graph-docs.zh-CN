@@ -1,19 +1,19 @@
 ---
 title: 创建 iosManagedAppProtection
 description: 创建新的 iosManagedAppProtection 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dcd2c52247b2e665513bf85665523436dfe5964a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 590c03bf456f96c3fb9c8ed4929f729eff34040b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32530380"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33903822"
 ---
 # <a name="create-iosmanagedappprotection"></a>创建 iosManagedAppProtection
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,7 +51,7 @@ POST /deviceAppManagement/iosManagedAppProtections
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|字符串|策略显示名称。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
-|description|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|说明|String|策略的说明。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
@@ -61,24 +61,24 @@ POST /deviceAppManagement/iosManagedAppProtections
 |periodOnlineBeforeAccessCheck|持续时间|设备连接到 Internet 时在该时间段后检查访问权限。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|允许传输其中的数据的源。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`allApps`、`managedApps`、`none`。|
 |allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|允许向其传输数据的目标。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`allApps`、`managedApps`、`none`。|
-|organizationalCredentialsRequired|布尔值|指示是否需要组织凭据才能使用应用。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|organizationalCredentialsRequired|Boolean|指示是否需要组织凭据才能使用应用。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune-mam-managedappclipboardsharinglevel.md)|可以在托管设备上的应用之间共享剪贴板的级别。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`allApps`、`managedAppsWithPasteIn`、`managedApps`、`blocked`。|
-|dataBackupBlocked|布尔值|指示是否阻止备份托管应用的数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|deviceComplianceRequired|布尔值|指示是否需要设备符合性。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|managedBrowserToOpenLinksRequired|布尔值|指示是否应在托管浏览器应用中打开 Internet 链接。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|saveAsBlocked|布尔值|指示用户是否可以使用“另存为”菜单项保存受保护文件的副本。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|dataBackupBlocked|Boolean|指示是否阻止备份托管应用的数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|deviceComplianceRequired|Boolean|指示是否需要设备符合性。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|managedBrowserToOpenLinksRequired|Boolean|指示是否应在托管浏览器应用中打开 Internet 链接。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|saveAsBlocked|Boolean|指示用户是否可以使用“另存为”菜单项保存受保护文件的副本。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |periodOfflineBeforeWipeIsEnforced|Duration|在擦除所有托管数据之前，允许应用保持从 Internet 断开连接的时间量。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|pinRequired|布尔值|指示是否需要应用级 PIN。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|pinRequired|Boolean|指示是否需要应用级 PIN。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |maximumPinRetries|Int32|在阻止或擦除托管应用之前, 不正确 pin 重试的最大次数。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |simplePinBlocked|Boolean|指示是否阻止 simplePin。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumPinLength|Int32|PinRequired 设置为 True 时应用级 PIN 所需的最小 PIN 长度。继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |pinCharacterSet|[managedAppPinCharacterSet](../resources/intune-mam-managedapppincharacterset.md)|PinRequired 设置为 True 时可用于应用级 PIN 的字符集。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`numeric`、`alphanumericAndSymbol`。|
 |periodBeforePinReset|Duration|TimePeriod，如果 PinRequired 设置为 True，必须在此之前重置所有级别的 PIN。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedDataStorageLocations|[managedAppDataStorageLocation](../resources/intune-mam-managedappdatastoragelocation.md)集合|用户可能存储托管数据的数据存储位置。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`oneDriveForBusiness`、`sharePoint`、`localStorage`。|
-|contactSyncBlocked|布尔值|指示联系人是否可以同步到用户的设备。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|printBlocked|布尔值|指示是否允许从托管应用进行打印。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|fingerprintBlocked|布尔值|指示如果 PinRequired 设置为 True，是否允许使用指纹读取器代替 PIN。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|disableAppPinIfDevicePinIsSet|布尔值|指示如果设置了设备 PIN，是否需要使用应用 PIN。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|contactSyncBlocked|Boolean|指示联系人是否可以同步到用户的设备。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|printBlocked|Boolean|指示是否允许从托管应用进行打印。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|fingerprintBlocked|Boolean|指示如果 PinRequired 设置为 True，是否允许使用指纹读取器代替 PIN。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|disableAppPinIfDevicePinIsSet|Boolean|指示如果设置了设备 PIN，是否需要使用应用 PIN。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumRequiredOsVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumWarningOsVersion|String|低于指定版本的版本将导致托管应用访问公司数据时出现警告消息。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |minimumRequiredAppVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -87,9 +87,9 @@ POST /deviceAppManagement/iosManagedAppProtections
 |minimumWipeAppVersion|String|小于或等于指定版本的版本将擦除托管应用和关联的公司数据。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|如果将 DeviceComplianceRequired 设置为 true, 则定义在设备为根或已越狱时的托管应用行为 (阻止或擦除)。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|根据最大错误 pin 重试次数定义托管应用行为, 即阻止或擦除。 继承自[managedAppProtection](../resources/intune-mam-managedappprotection.md)。 可取值为：`block`、`wipe`、`warn`。|
-|pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin (而不是从[managedAppProtection](../resources/intune-mam-managedappprotection.md)继承的无生物特征密码) 超时|
+|pinRequiredInsteadOfBiometricTimeout|持续时间|以分钟为单位的应用程序 pin (而不是从[ManagedAppProtection](../resources/intune-mam-managedappprotection.md)继承的无生物特征密码) 超时|
 |allowedOutboundClipboardSharingExceptionLength|Int32|指定可以从组织数据和帐户中剪切或复制到任何应用程序的字符数。 此设置将覆盖 AllowedOutboundClipboardSharingLevel 限制。 默认值为 "0" 表示不允许异常。 继承自 [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|isAssigned|布尔值|指示策略是否部署到任何包含组。 继承自 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
+|isAssigned|Boolean|指示策略是否部署到任何包含组。 继承自 [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|此策略继承自[targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)的预期应用管理级别。 可取值为：`unspecified`、`unmanaged`、`mdm`、`androidEnterprise`。|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|应该用于托管应用中的数据的加密类型。 可取值为：`useDeviceSettings`、`afterDeviceRestart`、`whenDeviceLockedExceptOpenFiles`、`whenDeviceLocked`。|
 |minimumRequiredSdkVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
@@ -99,10 +99,10 @@ POST /deviceAppManagement/iosManagedAppProtections
 |minimumWipeSdkVersion|String|低于指定版本的版本将阻止托管应用访问公司数据。|
 |allowedIosDeviceModels|String|允许托管应用使用的设备模型的以分号分隔的列表 (以字符串形式)。|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|定义托管应用程序行为, 如果不允许指定的设备模型, 则要么阻止, 也可以擦除。 可取值为：`block`、`wipe`、`warn`。|
-|thirdPartyKeyboardsBlocked|布尔值|定义在访问托管应用程序时是否允许使用第三方键盘|
-|filterOpenInToOnlyManagedApps|布尔值|定义是否支持从受管理的应用程序到所选的可共享位置的打开入点操作。 此设置仅适用于将 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 和 DisableProtectionOfManagedOutboundOpenInData 设置为 False 的情况。|
-|disableProtectionOfManagedOutboundOpenInData|布尔值|禁用通过 IOS OpenIn 选项传输到其他应用程序的数据保护。 仅当 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 时, 此设置才允许为 True。|
-|protectInboundDataFromUnknownSources|布尔值|保护来自未知源的传入数据。 仅当 AllowedInboundDataTransferSources 设置为 AllApps 时, 此设置才允许为 True。|
+|filterOpenInToOnlyManagedApps|Boolean|定义是否支持从受管理的应用程序到所选的可共享位置的打开入点操作。 此设置仅适用于将 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 和 DisableProtectionOfManagedOutboundOpenInData 设置为 False 的情况。|
+|disableProtectionOfManagedOutboundOpenInData|Boolean|禁用通过 IOS OpenIn 选项传输到其他应用程序的数据保护。 仅当 AllowedOutboundDataTransferDestinations 设置为 ManagedApps 时, 此设置才允许为 True。|
+|protectInboundDataFromUnknownSources|Boolean|保护来自未知源的传入数据。 仅当 AllowedInboundDataTransferSources 设置为 AllApps 时, 此设置才允许为 True。|
+|customBrowserProtocol|String|用于在 iOS 上打开 weblink 的自定义浏览器协议。|
 
 
 
@@ -116,7 +116,7 @@ POST /deviceAppManagement/iosManagedAppProtections
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections
 Content-type: application/json
-Content-length: 2544
+Content-length: 2566
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -176,10 +176,10 @@ Content-length: 2544
   "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
-  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
-  "protectInboundDataFromUnknownSources": true
+  "protectInboundDataFromUnknownSources": true,
+  "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
 
@@ -188,7 +188,7 @@ Content-length: 2544
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2716
+Content-Length: 2738
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -251,13 +251,12 @@ Content-Length: 2716
   "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
-  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
-  "protectInboundDataFromUnknownSources": true
+  "protectInboundDataFromUnknownSources": true,
+  "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
-
 
 
 

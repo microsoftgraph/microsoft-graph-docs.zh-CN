@@ -1,19 +1,19 @@
 ---
 title: 更新 deviceCompliancePolicySettingStateSummary
 description: 更新 deviceCompliancePolicySettingStateSummary 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c37cf5b3f63e65b9efdffb76a7203202a8d2fdf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8d5b85775a0b3562af129b2e020872da086131e8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32470312"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33927816"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>更新 deviceCompliancePolicySettingStateSummary
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|setting|字符串|设置类名和属性名。|
+|setting|String|设置类名和属性名。|
 |settingName|String|设置的名称。|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|设置平台。 可取值为：`android`、`androidForWork`、`iOS`、`macOS`、`windowsPhone81`、`windows81AndLater`、`windows10AndLater`、`androidWorkProfile`、`all`。|
 |unknownDeviceCount|Int32|未知设备的数量|
@@ -113,7 +113,6 @@ Content-Length: 451
   "conflictDeviceCount": 3
 }
 ```
-
 
 
 

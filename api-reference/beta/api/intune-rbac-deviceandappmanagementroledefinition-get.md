@@ -1,19 +1,19 @@
 ---
 title: 获取 deviceAndAppManagementRoleDefinition
 description: 读取 deviceAndAppManagementRoleDefinition 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65cd240284111eb90f17590186ca0abb299a07ea
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6b172eae4893ab0cd09dec1443a9dec33c153662
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32527705"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33899569"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>获取 deviceAndAppManagementRoleDefinition
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -120,7 +120,6 @@ Content-Length: 1391
   }
 }
 ```
-
 
 
 

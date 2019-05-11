@@ -1,19 +1,19 @@
 ---
 title: deviceManagementSettingDefinition 资源类型
 description: 表示给定设置的定义的实体
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2e06522680085502e3007dd4863bd703c4bed44
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8b4147d5ed892eebce175d79925b7329525585a4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550544"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33943569"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>deviceManagementSettingDefinition 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -34,8 +34,8 @@ ms.locfileid: "32550544"
 |id|字符串|设置定义的 ID|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|值的数据类型。 可取值为：`integer`、`boolean`、`string`、`complex`、`collection`、`abstractComplex`。|
 |displayName|String|设置的显示名称|
-|isTopLevel|布尔值|如果设置是顶级的, 则可以对其进行配置, 而无需将其包装在集合或复杂设置中|
-|description|String|设置的说明|
+|isTopLevel|Boolean|如果设置是顶级的, 则可以对其进行配置, 而无需将其包装在集合或复杂设置中|
+|说明|String|设置的说明|
 |documentationUrl|String|设置文档的 Url|
 |keywords|String collection|与设置相关联的关键字|
 |施加|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)集合|设置值的约束集合|
@@ -82,7 +82,6 @@ ms.locfileid: "32550544"
   ]
 }
 ```
-
 
 
 
