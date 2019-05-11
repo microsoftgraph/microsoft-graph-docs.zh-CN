@@ -1,19 +1,19 @@
 ---
 title: 更新 cartToClassAssociation
 description: 更新 cartToClassAssociation 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4443a2924b60333d34830fee77f802df7e8aead3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4961d3efeaabd6cee345b0cc23b99e4ff30f6dcd
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32471586"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33928006"
 ---
 # <a name="update-carttoclassassociation"></a>更新 cartToClassAssociation
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,12 +50,12 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |version|Int32|CartToClassAssociation 的版本。|
 |displayName|String|管理员提供的设备配置的名称。|
-|description|字符串|管理员提供的 CartToClassAssociation 说明。|
+|说明|String|管理员提供的 CartToClassAssociation 说明。|
 |deviceCartIds|String collection|要与类关联的设备购物车的标识符。|
 |classroomIds|String collection|要与设备购物车关联的教室的标识符。|
 
@@ -110,7 +110,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

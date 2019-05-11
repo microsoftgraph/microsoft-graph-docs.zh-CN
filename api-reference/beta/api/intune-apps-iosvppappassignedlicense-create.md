@@ -1,19 +1,19 @@
 ---
 title: 创建 iosVppAppAssignedLicense
 description: 创建新的 iosVppAppAssignedLicense 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 59d40d358809214c4ad04996c42f24cd4c97e634
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b42149e547c363f6677a9ecf7cd7ae7492405ec
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32495405"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33936187"
 ---
 # <a name="create-iosvppappassignedlicense"></a>创建 iosVppAppAssignedLicense
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -51,10 +51,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|userEmailAddress|字符串|用户电子邮件地址。|
-|userId|字符串|用户 ID。|
+|userEmailAddress|String|用户电子邮件地址。|
+|userId|String|用户 ID。|
 |userName|String|用户名。|
-|userPrincipalName|String|用户主体名称。|
+|userPrincipalName|字符串|用户主体名称。|
 
 
 
@@ -95,7 +95,6 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

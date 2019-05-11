@@ -1,19 +1,19 @@
 ---
 title: 更新 mobileAppContentFile
 description: 更新 mobileAppContentFile 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d76eb5603020b62e8d93b9074374e0785a1a2584
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b13499d73179206ef2a5f9859b11a8e60201f81
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32489089"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935126"
 ---
 # <a name="update-mobileappcontentfile"></a>更新 mobileAppContentFile
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -60,8 +60,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |azureStorageUriExpirationDateTime|DateTimeOffset|Azure 存储 URI 的到期时间。|
 |manifest|Binary|清单信息。|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|当前上传请求的状态。 可取值为：`success`、`transientError`、`error`、`unknown`、`azureStorageUriRequestSuccess`、`azureStorageUriRequestPending`、`azureStorageUriRequestFailed`、`azureStorageUriRequestTimedOut`、`azureStorageUriRenewalSuccess`、`azureStorageUriRenewalPending`、`azureStorageUriRenewalFailed`、`azureStorageUriRenewalTimedOut`、`commitFileSuccess`、`commitFilePending`、`commitFileFailed`、`commitFileTimedOut`。|
-|isFrameworkFile|布尔|一个指示文件是否为框架文件的值。|
-|isDependency|布尔|内容文件是否依赖于主要内容文件。|
+|isFrameworkFile|Boolean|一个指示文件是否为框架文件的值。|
+|isDependency|Boolean|内容文件是否依赖于主要内容文件。|
 
 
 
@@ -115,7 +115,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
 
 
 

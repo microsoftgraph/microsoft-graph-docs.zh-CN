@@ -1,19 +1,19 @@
 ---
 title: 更新 windowsHealthMonitoringConfiguration
 description: 更新 windowsHealthMonitoringConfiguration 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e409ce95a90cf71fa7998a307f25f7a09db8f0d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9e22db8c85d591c770128dc3db3594fa23826836
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32514924"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917917"
 ---
 # <a name="update-windowshealthmonitoringconfiguration"></a>更新 windowsHealthMonitoringConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -52,16 +52,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |allowDeviceHealthMonitoring|[启用](../resources/intune-shared-enablement.md)|在设备上启用设备运行状况监视。 可取值为：`notConfigured`、`enabled`、`disabled`。|
-|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Sepcifies 从启用运行状况监视的设备收集的一组事件。 可取值为：`undefined`、`healthMonitoring`、`bootPerformance`。|
+|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|指定从启用运行状况监视的设备收集的一组事件。 可取值为：`undefined`、`healthMonitoring`、`bootPerformance`。|
+|configDeviceHealthMonitoringCustomScope|String|指定从启用运行状况监视的设备收集的自定义事件集|
 
 
 
@@ -75,7 +76,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 371
+Content-length: 471
 
 {
   "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
@@ -87,7 +88,8 @@ Content-length: 371
   "displayName": "Display Name value",
   "version": 7,
   "allowDeviceHealthMonitoring": "enabled",
-  "configDeviceHealthMonitoringScope": "healthMonitoring"
+  "configDeviceHealthMonitoringScope": "healthMonitoring",
+  "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
 
@@ -96,7 +98,7 @@ Content-length: 371
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 643
 
 {
   "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
@@ -111,10 +113,10 @@ Content-Length: 543
   "displayName": "Display Name value",
   "version": 7,
   "allowDeviceHealthMonitoring": "enabled",
-  "configDeviceHealthMonitoringScope": "healthMonitoring"
+  "configDeviceHealthMonitoringScope": "healthMonitoring",
+  "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
-
 
 
 

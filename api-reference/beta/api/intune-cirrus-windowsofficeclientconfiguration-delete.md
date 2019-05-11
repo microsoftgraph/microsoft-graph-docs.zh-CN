@@ -2,18 +2,18 @@
 title: 删除 windowsOfficeClientConfiguration
 description: 删除特定的非安全策略。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: 161da34547bfbbf9a9cb36f4c3d25b0798bb8c21
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e243e660aa85b7b370da3bbe13f58d1bf89756d1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483171"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934017"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>删除 windowsOfficeClientConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 

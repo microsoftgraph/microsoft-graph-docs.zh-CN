@@ -1,19 +1,19 @@
 ---
 title: 创建 mobileAppInstallStatus
 description: 创建新的 mobileAppInstallStatus 对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc9e512419110c610397e4655022f00249d4b3cb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e4f8be8c71a231736e3c63b8caf0c4fea76635e6
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32488902"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33935116"
 ---
 # <a name="create-mobileappinstallstatus"></a>创建 mobileAppInstallStatus
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -52,18 +52,18 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|deviceName|字符串|设备名称|
-|deviceId|字符串|设备 ID|
+|deviceName|String|设备名称|
+|deviceId|String|设备 ID|
 |lastSyncDateTime|DateTimeOffset|上次同步日期时间|
 |将 mobileappinstallstatusvalue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown` 或 `notApplicable`。|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|应用程序的安装状态。 可取值为：`installed`、`failed`、`notInstalled`、`uninstallFailed`、`pendingInstall`、`unknown` 或 `notApplicable`。|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|应用程序的安装状态详细信息。 可能的值为`noAdditionalDetails`: `dependencyFailedToInstall`、 `dependencyWithRequirementsNotMet`、 `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `seeInstallErrorCode` `autoInstallDisabled` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `powerShellScriptRequirementNotMet` `registryRequirementNotMet` `fileSystemRequirementNotMet`、、、、、、、、、、、、、、、、 `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|安装或卸载失败的错误代码。|
-|osVersion|字符串|OS 版本|
-|osDescription|字符串|OS 说明|
+|osVersion|String|OS 版本|
+|osDescription|String|OS 说明|
 |userName|String|设备用户名|
 |userPrincipalName|String|用户主体名称|
-|displayVersion|字符串|人工可读版本的应用程序|
+|displayVersion|String|人工可读版本的应用程序|
 
 
 
@@ -120,7 +120,6 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
-
 
 
 

@@ -2,18 +2,18 @@
 title: 列出 officeClientConfigurations
 description: 获取所有策略。
 localization_priority: Normal
-author: tfitzmac
+author: rolyon
 ms.prod: Intune
-ms.openlocfilehash: dbbfae2a7568977c8dbdbc640d0829837c5e3fb2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 093364b093606153fd82c18791a86ff441291d56
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32483150"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33934066"
 ---
 # <a name="list-officeclientconfigurations"></a>列出 officeClientConfigurations
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -24,7 +24,7 @@ ms.locfileid: "32483150"
 
 |权限类型|权限（从最高特权到最低特权）|
 |:---|:---|
-|委派（工作或学校帐户）|devicemanagementconfiguration.readwrite.all 的所有 devicemanagementconfiguration.readwrite.all|
+|委派（工作或学校帐户）|Devicemanagementconfiguration.readwrite.all 的所有 Devicemanagementconfiguration.readwrite.all|
 |委派（个人 Microsoft 帐户）|不支持。|
 |应用程序|不支持。|
 
