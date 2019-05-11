@@ -1,34 +1,34 @@
 ---
 title: 更新 deviceEnrollmentLimitConfiguration
 description: 更新 deviceEnrollmentLimitConfiguration 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 775eba06cce66394f448f305d10f80ca9ec16822
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ad411735c6641c15271a15c9e48431e6c403fd5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32529287"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33900284"
 ---
-# <a name="update-deviceenrollmentlimitconfiguration"></a><span data-ttu-id="fd984-103">更新 deviceEnrollmentLimitConfiguration</span><span class="sxs-lookup"><span data-stu-id="fd984-103">Update deviceEnrollmentLimitConfiguration</span></span>
+# <a name="update-deviceenrollmentlimitconfiguration"></a><span data-ttu-id="5f721-103">更新 deviceEnrollmentLimitConfiguration</span><span class="sxs-lookup"><span data-stu-id="5f721-103">Update deviceEnrollmentLimitConfiguration</span></span>
 
-> <span data-ttu-id="fd984-104">**重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="fd984-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="5f721-104">**重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。</span><span class="sxs-lookup"><span data-stu-id="5f721-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="fd984-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="fd984-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="5f721-105">**注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。</span><span class="sxs-lookup"><span data-stu-id="5f721-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="fd984-106">更新 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="fd984-106">Update the properties of a [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object.</span></span>
+<span data-ttu-id="5f721-106">更新 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 对象的属性。</span><span class="sxs-lookup"><span data-stu-id="5f721-106">Update the properties of a [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="fd984-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="fd984-107">Prerequisites</span></span>
-<span data-ttu-id="fd984-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="fd984-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5f721-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="5f721-107">Prerequisites</span></span>
+<span data-ttu-id="5f721-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="5f721-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fd984-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="fd984-110">Permission type</span></span>|<span data-ttu-id="fd984-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="fd984-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="5f721-110">权限类型</span><span class="sxs-lookup"><span data-stu-id="5f721-110">Permission type</span></span>|<span data-ttu-id="5f721-111">权限（从最高特权到最低特权）</span><span class="sxs-lookup"><span data-stu-id="5f721-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="fd984-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="fd984-112">Delegated (work or school account)</span></span>|<span data-ttu-id="fd984-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fd984-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="fd984-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="fd984-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fd984-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="fd984-115">Not supported.</span></span>|
-|<span data-ttu-id="fd984-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="fd984-116">Application</span></span>|<span data-ttu-id="fd984-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="fd984-117">Not supported.</span></span>|
+|<span data-ttu-id="5f721-112">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="5f721-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5f721-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5f721-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="5f721-114">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="5f721-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5f721-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="5f721-115">Not supported.</span></span>|
+|<span data-ttu-id="5f721-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="5f721-116">Application</span></span>|<span data-ttu-id="5f721-117">不支持。</span><span class="sxs-lookup"><span data-stu-id="5f721-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="fd984-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="fd984-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5f721-118">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="5f721-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,37 +37,37 @@ ms.locfileid: "32529287"
 PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fd984-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="fd984-119">Request headers</span></span>
-|<span data-ttu-id="fd984-120">标头</span><span class="sxs-lookup"><span data-stu-id="fd984-120">Header</span></span>|<span data-ttu-id="fd984-121">值</span><span class="sxs-lookup"><span data-stu-id="fd984-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5f721-119">请求标头</span><span class="sxs-lookup"><span data-stu-id="5f721-119">Request headers</span></span>
+|<span data-ttu-id="5f721-120">标头</span><span class="sxs-lookup"><span data-stu-id="5f721-120">Header</span></span>|<span data-ttu-id="5f721-121">值</span><span class="sxs-lookup"><span data-stu-id="5f721-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="fd984-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="fd984-122">Authorization</span></span>|<span data-ttu-id="fd984-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="fd984-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="fd984-124">接受</span><span class="sxs-lookup"><span data-stu-id="fd984-124">Accept</span></span>|<span data-ttu-id="fd984-125">application/json</span><span class="sxs-lookup"><span data-stu-id="fd984-125">application/json</span></span>|
+|<span data-ttu-id="5f721-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="5f721-122">Authorization</span></span>|<span data-ttu-id="5f721-123">Bearer &lt;token&gt;。必需。</span><span class="sxs-lookup"><span data-stu-id="5f721-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="5f721-124">接受</span><span class="sxs-lookup"><span data-stu-id="5f721-124">Accept</span></span>|<span data-ttu-id="5f721-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5f721-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fd984-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="fd984-126">Request body</span></span>
-<span data-ttu-id="fd984-127">在请求正文中，提供 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="fd984-127">In the request body, supply a JSON representation for the [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5f721-126">请求正文</span><span class="sxs-lookup"><span data-stu-id="5f721-126">Request body</span></span>
+<span data-ttu-id="5f721-127">在请求正文中，提供 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 对象的 JSON 表示形式。</span><span class="sxs-lookup"><span data-stu-id="5f721-127">In the request body, supply a JSON representation for the [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object.</span></span>
 
-<span data-ttu-id="fd984-128">下表显示创建 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="fd984-128">The following table shows the properties that are required when you create the [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md).</span></span>
+<span data-ttu-id="5f721-128">下表显示创建 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 时所需的属性。</span><span class="sxs-lookup"><span data-stu-id="5f721-128">The following table shows the properties that are required when you create the [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md).</span></span>
 
-|<span data-ttu-id="fd984-129">属性</span><span class="sxs-lookup"><span data-stu-id="fd984-129">Property</span></span>|<span data-ttu-id="fd984-130">类型</span><span class="sxs-lookup"><span data-stu-id="fd984-130">Type</span></span>|<span data-ttu-id="fd984-131">说明</span><span class="sxs-lookup"><span data-stu-id="fd984-131">Description</span></span>|
+|<span data-ttu-id="5f721-129">属性</span><span class="sxs-lookup"><span data-stu-id="5f721-129">Property</span></span>|<span data-ttu-id="5f721-130">类型</span><span class="sxs-lookup"><span data-stu-id="5f721-130">Type</span></span>|<span data-ttu-id="5f721-131">说明</span><span class="sxs-lookup"><span data-stu-id="5f721-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fd984-132">id</span><span class="sxs-lookup"><span data-stu-id="fd984-132">id</span></span>|<span data-ttu-id="fd984-133">字符串</span><span class="sxs-lookup"><span data-stu-id="fd984-133">String</span></span>|<span data-ttu-id="fd984-134">继承自[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)的注册状态页面配置的 Id</span><span class="sxs-lookup"><span data-stu-id="fd984-134">Id of the Enrollment Status Page configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="fd984-135">displayName</span><span class="sxs-lookup"><span data-stu-id="fd984-135">displayName</span></span>|<span data-ttu-id="fd984-136">String</span><span class="sxs-lookup"><span data-stu-id="fd984-136">String</span></span>|<span data-ttu-id="fd984-137">尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="fd984-137">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="fd984-138">description</span><span class="sxs-lookup"><span data-stu-id="fd984-138">description</span></span>|<span data-ttu-id="fd984-139">String</span><span class="sxs-lookup"><span data-stu-id="fd984-139">String</span></span>|<span data-ttu-id="fd984-140">尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="fd984-140">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="fd984-141">priority</span><span class="sxs-lookup"><span data-stu-id="fd984-141">priority</span></span>|<span data-ttu-id="fd984-142">Int32</span><span class="sxs-lookup"><span data-stu-id="fd984-142">Int32</span></span>|<span data-ttu-id="fd984-143">尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="fd984-143">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="fd984-144">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="fd984-144">createdDateTime</span></span>|<span data-ttu-id="fd984-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fd984-145">DateTimeOffset</span></span>|<span data-ttu-id="fd984-146">尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="fd984-146">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="fd984-147">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="fd984-147">lastModifiedDateTime</span></span>|<span data-ttu-id="fd984-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fd984-148">DateTimeOffset</span></span>|<span data-ttu-id="fd984-149">尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="fd984-149">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="fd984-150">version</span><span class="sxs-lookup"><span data-stu-id="fd984-150">version</span></span>|<span data-ttu-id="fd984-151">Int32</span><span class="sxs-lookup"><span data-stu-id="fd984-151">Int32</span></span>|<span data-ttu-id="fd984-152">尚未记录。继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="fd984-152">Not yet documented Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="fd984-153">limit</span><span class="sxs-lookup"><span data-stu-id="fd984-153">limit</span></span>|<span data-ttu-id="fd984-154">Int32</span><span class="sxs-lookup"><span data-stu-id="fd984-154">Int32</span></span>|<span data-ttu-id="fd984-155">尚未记录</span><span class="sxs-lookup"><span data-stu-id="fd984-155">Not yet documented</span></span>|
+|<span data-ttu-id="5f721-132">id</span><span class="sxs-lookup"><span data-stu-id="5f721-132">id</span></span>|<span data-ttu-id="5f721-133">字符串</span><span class="sxs-lookup"><span data-stu-id="5f721-133">String</span></span>|<span data-ttu-id="5f721-134">继承自[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)的帐户的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="5f721-134">Unique Identifier for the account Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="5f721-135">displayName</span><span class="sxs-lookup"><span data-stu-id="5f721-135">displayName</span></span>|<span data-ttu-id="5f721-136">String</span><span class="sxs-lookup"><span data-stu-id="5f721-136">String</span></span>|<span data-ttu-id="5f721-137">从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的显示名称</span><span class="sxs-lookup"><span data-stu-id="5f721-137">The display name of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="5f721-138">说明</span><span class="sxs-lookup"><span data-stu-id="5f721-138">description</span></span>|<span data-ttu-id="5f721-139">String</span><span class="sxs-lookup"><span data-stu-id="5f721-139">String</span></span>|<span data-ttu-id="5f721-140">从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的说明</span><span class="sxs-lookup"><span data-stu-id="5f721-140">The description of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="5f721-141">priority</span><span class="sxs-lookup"><span data-stu-id="5f721-141">priority</span></span>|<span data-ttu-id="5f721-142">Int32</span><span class="sxs-lookup"><span data-stu-id="5f721-142">Int32</span></span>|<span data-ttu-id="5f721-143">当用户存在于分配有注册配置的多个组中时, 将使用优先级。</span><span class="sxs-lookup"><span data-stu-id="5f721-143">Priority is used when a user exists in multiple groups that are assigned enrollment configuration.</span></span> <span data-ttu-id="5f721-144">用户仅限于具有最低优先级值的配置。</span><span class="sxs-lookup"><span data-stu-id="5f721-144">Users are subject only to the configuration with the lowest priority value.</span></span> <span data-ttu-id="5f721-145">继承自 [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5f721-145">Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="5f721-146">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="5f721-146">createdDateTime</span></span>|<span data-ttu-id="5f721-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5f721-147">DateTimeOffset</span></span>|<span data-ttu-id="5f721-148">从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 格式的创建日期时间</span><span class="sxs-lookup"><span data-stu-id="5f721-148">Created date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="5f721-149">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="5f721-149">lastModifiedDateTime</span></span>|<span data-ttu-id="5f721-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5f721-150">DateTimeOffset</span></span>|<span data-ttu-id="5f721-151">从[DeviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)继承的设备注册配置的 UTC 的上次修改日期时间</span><span class="sxs-lookup"><span data-stu-id="5f721-151">Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="5f721-152">version</span><span class="sxs-lookup"><span data-stu-id="5f721-152">version</span></span>|<span data-ttu-id="5f721-153">Int32</span><span class="sxs-lookup"><span data-stu-id="5f721-153">Int32</span></span>|<span data-ttu-id="5f721-154">继承自[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)的设备注册配置的版本</span><span class="sxs-lookup"><span data-stu-id="5f721-154">The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="5f721-155">limit</span><span class="sxs-lookup"><span data-stu-id="5f721-155">limit</span></span>|<span data-ttu-id="5f721-156">Int32</span><span class="sxs-lookup"><span data-stu-id="5f721-156">Int32</span></span>|<span data-ttu-id="5f721-157">用户可注册的最大设备数</span><span class="sxs-lookup"><span data-stu-id="5f721-157">The maximum number of devices that a user can enroll</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="fd984-156">响应</span><span class="sxs-lookup"><span data-stu-id="fd984-156">Response</span></span>
-<span data-ttu-id="fd984-157">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="fd984-157">If successful, this method returns a `200 OK` response code and an updated [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5f721-158">响应</span><span class="sxs-lookup"><span data-stu-id="5f721-158">Response</span></span>
+<span data-ttu-id="5f721-159">如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) 对象。</span><span class="sxs-lookup"><span data-stu-id="5f721-159">If successful, this method returns a `200 OK` response code and an updated [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fd984-158">示例</span><span class="sxs-lookup"><span data-stu-id="fd984-158">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5f721-160">示例</span><span class="sxs-lookup"><span data-stu-id="5f721-160">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="fd984-159">请求</span><span class="sxs-lookup"><span data-stu-id="fd984-159">Request</span></span>
-<span data-ttu-id="fd984-160">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="fd984-160">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="5f721-161">请求</span><span class="sxs-lookup"><span data-stu-id="5f721-161">Request</span></span>
+<span data-ttu-id="5f721-162">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="5f721-162">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
@@ -83,8 +83,8 @@ Content-length: 205
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="fd984-161">响应</span><span class="sxs-lookup"><span data-stu-id="fd984-161">Response</span></span>
-<span data-ttu-id="fd984-p102">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="fd984-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="5f721-163">响应</span><span class="sxs-lookup"><span data-stu-id="5f721-163">Response</span></span>
+<span data-ttu-id="5f721-p103">下面是一个响应示例。注意：为了简单起见，可能会将此处所示的响应对象截断。将从实际调用中返回所有属性。</span><span class="sxs-lookup"><span data-stu-id="5f721-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -102,7 +102,6 @@ Content-Length: 377
   "limit": 5
 }
 ```
-
 
 
 
