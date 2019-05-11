@@ -1,19 +1,19 @@
 ---
 title: 获取 windows10NetworkBoundaryConfiguration
 description: 读取 windows10NetworkBoundaryConfiguration 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cb48ebb65eec48b8aff6c380455d223710264109
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 05192b423afad9e8700057196b877c7d89c37d43
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32516453"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33918533"
 ---
 # <a name="get-windows10networkboundaryconfiguration"></a>获取 windows10NetworkBoundaryConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -116,7 +116,6 @@ Content-Length: 1519
   }
 }
 ```
-
 
 
 

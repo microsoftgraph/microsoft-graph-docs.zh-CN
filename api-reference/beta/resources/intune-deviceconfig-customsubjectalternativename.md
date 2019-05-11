@@ -1,19 +1,19 @@
 ---
 title: customSubjectAlternativeName 资源类型
 description: 自定义主题备用名称定义
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03507d4e912af011db011283a95887590ab79801
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cf3c7a8e675c41056b1c5450b83394951b2ceab4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549357"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33947399"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>customSubjectAlternativeName 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -22,7 +22,7 @@ ms.locfileid: "32549357"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|自定义 SAN 类型。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute` 或 `domainNameService`。|
+|sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|自定义 SAN 类型。 可取值为：`none`、`emailAddress`、`userPrincipalName`、`customAzureADAttribute`、`domainNameService`。|
 |name|String|自定义 SAN 名称|
 
 ## <a name="relationships"></a>关系
@@ -42,7 +42,6 @@ ms.locfileid: "32549357"
   "name": "String"
 }
 ```
-
 
 
 

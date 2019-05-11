@@ -1,19 +1,19 @@
 ---
 title: 删除 deviceManagementComplexSettingInstance
 description: 删除 deviceManagementComplexSettingInstance。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f451336fc1535aa1a63201387787c42ee2633050
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 765095b2a4db6f355c86cd04eb6fc0521236d2e8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32509511"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33916430"
 ---
 # <a name="delete-devicemanagementcomplexsettinginstance"></a>删除 deviceManagementComplexSettingInstance
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

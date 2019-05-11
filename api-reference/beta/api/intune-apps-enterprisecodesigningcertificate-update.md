@@ -1,19 +1,19 @@
 ---
 title: 更新 enterpriseCodeSigningCertificate
 description: 更新 enterpriseCodeSigningCertificate 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc97e3cceada031747dbbc32b40e0c9b6b8c31e6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e53d669f47649489e6ff7801f7ea443c044b9fc3
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496476"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33936887"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>更新 enterpriseCodeSigningCertificate
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -50,13 +50,13 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |content|Binary|原始数据格式的 Windows 企业代码签名证书。|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|证书状态已设置或未设置。 可取值为：`notProvisioned`、`provisioned`。|
 |SubjectName|String|证书的主题名称。|
 |subject|String|证书的主题值。|
-|issuerName|字符串|证书的颁发者名称。|
-|常用|字符串|证书的 Issuer 值。|
+|issuerName|String|证书的颁发者名称。|
+|常用|String|证书的 Issuer 值。|
 |expirationDateTime|DateTimeOffset|证书到期日期。|
 |uploadDateTime|DateTimeOffset|上传 CodeSigning 证书时的日期时间。|
 
@@ -107,7 +107,6 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

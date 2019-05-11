@@ -4,12 +4,12 @@ description: 在租户中重置特定学校数据同步配置文件的同步。
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d1bae89181f496bac3fc89b50b76e6f57f1fb8a1
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: bd7f9112036d94b1249a413f7846f816c6c6d8ef
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587078"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938772"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>在 educationSynchronizationProfile 上重置同步
 
@@ -63,11 +63,11 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
   "blockType": "response",
   "name": "post_educationSynchronizationProfile_reset"
 }-->
-```
+```http
 HTTP/1.1 200 OK
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_reset-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)

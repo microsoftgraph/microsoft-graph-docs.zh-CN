@@ -1,19 +1,19 @@
 ---
 title: 获取 macOSVpnConfiguration
 description: 读取 macOSVpnConfiguration 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 471cc53a5aaba2d69d80171cb50469473fb67bf5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3f113edb5629f9314e00d456e7cb534962494c34
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518364"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922127"
 ---
 # <a name="get-macosvpnconfiguration"></a>获取 macOSVpnConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -142,7 +142,6 @@ Content-Length: 2184
   }
 }
 ```
-
 
 
 

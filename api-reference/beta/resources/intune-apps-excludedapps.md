@@ -1,19 +1,19 @@
 ---
 title: excludedApps 资源类型
 description: 包含已排除的 Office365 应用程序的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d90954bda8a5bd6c9bfdeb6af0d2946b48215d00
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 37abd83b34fde565aa78e62454c4ce7d47ea192a
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32553048"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950408"
 ---
 # <a name="excludedapps-resource-type"></a>excludedApps 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -22,20 +22,20 @@ ms.locfileid: "32553048"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|访问|布尔值|如果应排除 MS Office Access, 则该值为。|
-|excel|布尔值|如果不应排除 MS Office Excel 的值, 则为。|
-|为止|布尔值|如果要排除 MS Office OneDrive for business-Groove 的值, 应将其排除。|
-|infoPath|布尔值|如果不应排除 MS Office InfoPath, 则值为。|
-|lync|布尔值|如果要排除 MS Office Skype for business-Lync 的值, 应将其排除。|
-|for|布尔值|如果不应排除 MS Office OneDrive, 则值为。|
-|oneNote|布尔值|如果不应排除 MS Office OneNote 的值, 则为。|
-|outlook|布尔值|如果不应排除 MS Office Outlook 的值, 则为。|
-|powerPoint|布尔值|如果不应排除 MS Office PowerPoint, 则值为。|
-|发布者|布尔值|应排除 MS Office 发布服务器的值。|
-|sharePointDesigner|布尔值|如果不应排除 MS Office SharePointDesigner 的值, 则为。|
-|协作|布尔值|如果不应排除 MS Office 团队, 则值为。|
-|visio|布尔值|应排除 MS Office Visio 的值。|
-|word|布尔值|如果不应排除 MS Office Word 的值, 则为。|
+|访问|Boolean|如果应排除 MS Office Access, 则该值为。|
+|excel|Boolean|如果不应排除 MS Office Excel 的值, 则为。|
+|为止|Boolean|如果要排除 MS Office OneDrive for Business-Groove 的值, 应将其排除。|
+|infoPath|Boolean|如果不应排除 MS Office InfoPath, 则值为。|
+|lync|Boolean|如果要排除 MS Office Skype for Business-Lync 的值, 应将其排除。|
+|For|Boolean|如果不应排除 MS Office OneDrive, 则值为。|
+|oneNote|Boolean|如果不应排除 MS Office OneNote 的值, 则为。|
+|outlook|Boolean|如果不应排除 MS Office Outlook 的值, 则为。|
+|powerPoint|Boolean|如果不应排除 MS Office PowerPoint, 则值为。|
+|发布者|Boolean|应排除 MS Office 发布服务器的值。|
+|sharePointDesigner|Boolean|如果不应排除 MS Office SharePointDesigner 的值, 则为。|
+|协作|Boolean|如果不应排除 MS Office 团队, 则值为。|
+|visio|Boolean|应排除 MS Office Visio 的值。|
+|word|Boolean|如果不应排除 MS Office Word 的值, 则为。|
 
 ## <a name="relationships"></a>关系
 无
@@ -66,7 +66,6 @@ ms.locfileid: "32553048"
   "word": true
 }
 ```
-
 
 
 

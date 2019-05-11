@@ -1,19 +1,19 @@
 ---
 title: 更新 macOSGeneralDeviceConfiguration
 description: 更新 macOSGeneralDeviceConfiguration 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b58f7606909d5c40777ed37e4b5d49da39f76f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0aeb5771358048e49ff0f6ce5d22163707d26e95
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32518609"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33922351"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>更新 macOSGeneralDeviceConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -52,12 +52,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|字符串|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|此实体实例的范围标记列表。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|布尔|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|指示基础设备配置是否支持作用域标记的分配。 如果此值为 false, 则不允许分配给 ScopeTags 属性, 并且实体将对作用域用户不可见。 这适用于在 Silverlight 中创建的旧版策略, 可以通过在 Azure 门户中删除并重新创建策略来解决此事件。 此属性是只读的。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) 集合|符合性中的应用列表（允许列表或阻止列表，由 CompliantAppListType 控制）。 该集合最多可包含 10000 个元素。|
@@ -71,35 +71,42 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|在屏幕超时之前需要不活动的分钟数。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`alphanumeric`、`numeric`。|
-|passwordRequired|布尔|是否需要密码。|
-|keychainBlockCloudSync|布尔|指示是否阻止 iCloud 密钥链同步 (macOS 10.12 及更高版本)。|
-|airPrintBlocked|布尔|指示是否阻止 AirPrint (macOS 10.12 及更高版本)。|
-|airPrintForceTrustedTLS|布尔|指示 TLS 打印通信是否需要受信任的证书 (macOS 10.13 及更高版本)。|
-|airPrintBlockiBeaconDiscovery|布尔|指示是否阻止 AirPrint 打印机的 iBeacon 发现。 这可防止来自网络流量的虚假 AirPrint 蓝牙信号 (macOS 10.3 及更高版本)。|
-|safariBlockAutofill|布尔|指示在 Safari 中是否阻止用户使用自动填充。|
-|cameraBlocked|布尔|指示是否阻止用户访问设备的照相机。|
-|iTunesBlockMusicService|布尔|指示是否阻止音乐服务并将音乐应用还原到经典模式。|
+|passwordRequired|Boolean|是否需要密码。|
+|keychainBlockCloudSync|Boolean|指示是否阻止 iCloud 密钥链同步 (macOS 10.12 及更高版本)。|
+|airPrintBlocked|Boolean|指示是否阻止 AirPrint (macOS 10.12 及更高版本)。|
+|airPrintForceTrustedTLS|Boolean|指示 TLS 打印通信是否需要受信任的证书 (macOS 10.13 及更高版本)。|
+|airPrintBlockiBeaconDiscovery|Boolean|指示是否阻止 AirPrint 打印机的 iBeacon 发现。 这可防止来自网络流量的虚假 AirPrint 蓝牙信号 (macOS 10.3 及更高版本)。|
+|safariBlockAutofill|Boolean|指示在 Safari 中是否阻止用户使用自动填充。|
+|cameraBlocked|Boolean|指示是否阻止用户访问设备的照相机。|
+|iTunesBlockMusicService|Boolean|指示是否阻止音乐服务并将音乐应用还原到经典模式。|
 |spotlightBlockInternetResults|Boolean|指示是否阻止聚光灯从 Internet 搜索返回任何结果。|
-|keyboardBlockDictation|布尔|指示是否阻止用户使用听写输入。|
-|definitionLookupBlocked|布尔|指示是否阻止定义查找。|
-|appleWatchBlockAutoUnlock|布尔|指示是否阻止用户使用 Apple Watch 解锁其 Mac。|
-|iTunesBlockFileSharing|布尔|指示是否阻止使用 iTunes 传输文件。|
+|keyboardBlockDictation|Boolean|指示是否阻止用户使用听写输入。|
+|definitionLookupBlocked|Boolean|指示是否阻止定义查找。|
+|appleWatchBlockAutoUnlock|Boolean|指示是否阻止用户使用 Apple Watch 解锁其 Mac。|
+|iTunesBlockFileSharing|Boolean|指示是否阻止使用 iTunes 传输文件。|
 |iCloudBlockDocumentSync|Boolean|指示是否阻止 iCloud 文档同步。|
-|iCloudBlockMail|布尔|指示是否阻止 iCloud 同步邮件。|
-|iCloudBlockAddressBook|布尔|指示是否阻止 iCloud 同步联系人。|
-|iCloudBlockCalendar|布尔|指示是否阻止 iCloud 同步日历。|
-|iCloudBlockReminders|布尔|指示是否阻止 iCloud 同步提醒。|
-|iCloudBlockBookmarks|布尔|指示是否阻止 iCloud 同步书签。|
-|iCloudBlockNotes|布尔|指示是否阻止 iCloud 同步笔记。|
-|airDropBlocked|布尔|指示是否允许 AirDrop。|
-|passwordBlockModification|布尔|指示是否允许修改密码。|
-|passwordBlockFingerprintUnlock|布尔|指示是否阻止指纹解锁。|
-|passwordBlockAutoFill|布尔|指示是否阻止自动填充密码功能。|
-|passwordBlockProximityRequests|布尔|指示是否阻止来自附近设备的请求密码。|
-|passwordBlockAirDropSharing|布尔|指示是否阻止使用 AirDrop 密码功能的共享密码。|
+|iCloudBlockMail|Boolean|指示是否阻止 iCloud 同步邮件。|
+|iCloudBlockAddressBook|Boolean|指示是否阻止 iCloud 同步联系人。|
+|iCloudBlockCalendar|Boolean|指示是否阻止 iCloud 同步日历。|
+|iCloudBlockReminders|Boolean|指示是否阻止 iCloud 同步提醒。|
+|iCloudBlockBookmarks|Boolean|指示是否阻止 iCloud 同步书签。|
+|iCloudBlockNotes|Boolean|指示是否阻止 iCloud 同步笔记。|
+|airDropBlocked|Boolean|指示是否允许 AirDrop。|
+|passwordBlockModification|Boolean|指示是否允许修改密码。|
+|passwordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁。|
+|passwordBlockAutoFill|Boolean|指示是否阻止自动填充密码功能。|
+|passwordBlockProximityRequests|Boolean|指示是否阻止来自附近设备的请求密码。|
+|passwordBlockAirDropSharing|Boolean|指示是否阻止使用 AirDrop 密码功能的共享密码。|
 |softwareUpdatesEnforcedDelayInDays|Int32|设置受监督的设备 delyed 软件更新的天数。 有效值为 0 至 90|
-|softwareUpdatesForceDelayed|布尔|指示设备处于监督模式时是否延迟用户对软件更新的可见性。|
-|contentCachingBlocked|布尔|指示是否允许内容缓存。|
+|softwareUpdatesForceDelayed|Boolean|指示设备处于监督模式时是否延迟用户对软件更新的可见性。|
+|contentCachingBlocked|Boolean|指示是否允许内容缓存。|
+|iCloudBlockPhotoLibrary|Boolean|指示是否阻止 iCloud 照片库。|
+|screenCaptureBlocked|Boolean|指示是否阻止用户进行屏幕截图。|
+|classroomAppBlockRemoteScreenObservation|Boolean|指示是否允许教室应用进行远程屏幕观察。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomAppForceUnpromptedScreenObservation|Boolean|指示是否自动向教师授予对教室应用程序中的托管课程的权限, 以便在不提示的情况下查看学生的屏幕。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomForceAutomaticallyJoinClasses|Boolean|指示是否在不提示学生的情况下自动向教师的请求授予权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|指示在非托管课程中通过课堂注册的学生是否需要在尝试离开本课程时向教师请求权限。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
+|classroomForceUnpromptedAppAndDeviceLock|Boolean|指示是否允许教师在不提示学生的情况下锁定应用或设备。 需要通过 Apple School Manager 或 Apple 商业版管理器进行 MDM 注册。|
 
 
 
@@ -113,7 +120,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1988
+Content-length: 2329
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -173,7 +180,14 @@ Content-length: 1988
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 2,
   "softwareUpdatesForceDelayed": true,
-  "contentCachingBlocked": true
+  "contentCachingBlocked": true,
+  "iCloudBlockPhotoLibrary": true,
+  "screenCaptureBlocked": true,
+  "classroomAppBlockRemoteScreenObservation": true,
+  "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceRequestPermissionToLeaveClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true
 }
 ```
 
@@ -182,7 +196,7 @@ Content-length: 1988
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2160
+Content-Length: 2501
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -245,10 +259,16 @@ Content-Length: 2160
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 2,
   "softwareUpdatesForceDelayed": true,
-  "contentCachingBlocked": true
+  "contentCachingBlocked": true,
+  "iCloudBlockPhotoLibrary": true,
+  "screenCaptureBlocked": true,
+  "classroomAppBlockRemoteScreenObservation": true,
+  "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceRequestPermissionToLeaveClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true
 }
 ```
-
 
 
 

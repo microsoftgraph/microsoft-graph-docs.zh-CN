@@ -1,19 +1,19 @@
 ---
 title: 获取 iosLobAppProvisioningConfiguration
 description: 读取 iosLobAppProvisioningConfiguration 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 181b778ecf4d34cc1cd556f9c456e65e5807c11d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44e9d1a86e11870c86f0029df727674c57d87226
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32496126"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937069"
 ---
 # <a name="get-ioslobappprovisioningconfiguration"></a>获取 iosLobAppProvisioningConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -85,7 +85,6 @@ Content-Length: 592
   }
 }
 ```
-
 
 
 

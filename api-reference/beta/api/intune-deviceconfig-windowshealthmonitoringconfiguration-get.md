@@ -1,19 +1,19 @@
 ---
 title: 获取 windowsHealthMonitoringConfiguration
 description: 读取 windowsHealthMonitoringConfiguration 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01e972987b20d5294e5f4478899a86d7678bb9b7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6972aebcd5e98098f7ce9bbcf968b91a66922a2b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32514923"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917924"
 ---
 # <a name="get-windowshealthmonitoringconfiguration"></a>获取 windowsHealthMonitoringConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 588
+Content-Length: 690
 
 {
   "value": {
@@ -83,11 +83,11 @@ Content-Length: 588
     "displayName": "Display Name value",
     "version": 7,
     "allowDeviceHealthMonitoring": "enabled",
-    "configDeviceHealthMonitoringScope": "healthMonitoring"
+    "configDeviceHealthMonitoringScope": "healthMonitoring",
+    "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
   }
 }
 ```
-
 
 
 

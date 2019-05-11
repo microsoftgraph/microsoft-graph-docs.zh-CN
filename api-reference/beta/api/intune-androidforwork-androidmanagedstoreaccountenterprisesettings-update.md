@@ -1,19 +1,19 @@
 ---
 title: 更新 androidManagedStoreAccountEnterpriseSettings
 description: 更新 androidManagedStoreAccountEnterpriseSettings 对象的属性。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 620dcd7480492c4afaceb70fe8499ca25e3e768c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7f8cce90335c46e4fc11323baf1ac9ed83db0cf8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32498191"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33937349"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>更新 androidManagedStoreAccountEnterpriseSettings
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -59,9 +59,9 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 |lastModifiedDateTime|DateTimeOffset|Android 企业版设置的上次修改时间|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|指示哪些用户可以在 Android 企业版设备管理中注册设备。 可取值为：`none`、`all`、`targeted`、`targetedAsEnrollmentRestrictions`。|
 |targetGroupIds|String collection|指定当 enrollmentTarget 设置为“定向”时可以在 Android for Work 设备管理中注册设备的 AAD 组。|
-|deviceOwnerManagementEnabled|布尔|指示此帐户是否为使用 CloudDPC 的 Android 设备所有者管理 flighting。|
+|deviceOwnerManagementEnabled|Boolean|指示此帐户是否为使用 CloudDPC 的 Android 设备所有者管理 flighting。|
 |companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md)集合|AndroidManagedStoreAccountEnterpriseSettings 的公司代码|
-|androidDeviceOwnerFullyManagedEnrollmentEnabled|布尔|AndroidManagedStoreAccountEnterpriseSettings 的公司代码|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|AndroidManagedStoreAccountEnterpriseSettings 的公司代码|
 
 
 
@@ -141,7 +141,6 @@ Content-Length: 1010
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
 
 
 

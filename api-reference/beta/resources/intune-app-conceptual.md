@@ -1,19 +1,19 @@
 ---
-title: 如何使用 microsoft Intune 保护公司应用程序数据-microsoft Graph API
+title: 如何使用 Microsoft Intune 保护公司应用程序数据-Microsoft Graph API
 description: 列出用于管理租户组织的应用及其策略的 Intune 终结点 (REST) 的 Microsoft Graph API。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 360b8e9bdda139246a5418898f1db3962fefaea4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d0e38a8129e2cfcb60895be762d5bf3d65d1b6f9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32552408"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33950527"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>如何通过 Microsoft Intune 保护公司的应用数据
 
-> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 不支持在生产应用程序中使用这些 API。
+> **重要说明：** Microsoft Graph 中 /beta 版本下的 API 是预览版，可能会发生变化。 在生产应用程序中不支持使用这些 API。
 
 > **注意：** 使用 Microsoft Graph API 配置 Intune 控件和策略仍需要客户[正确许可](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune 服务。
 
@@ -112,6 +112,7 @@ Microsoft Intune 应用保护策略可帮助保护公司数据，避免数据丢
 - [移动应用内容文件上传状态](intune-apps-mobileappcontentfileuploadstate.md)
 - [移动应用程序 dependecy 类型](intune-apps-mobileappdependecytype.md)
 - [移动应用程序依赖项](intune-apps-mobileappdependency.md)
+- [移动应用程序依赖关系类型](intune-apps-mobileappdependencytype.md)
 - [移动应用安装状态](intune-apps-mobileappinstallstatus.md)
 - [移动应用安装摘要](intune-apps-mobileappinstallsummary.md)
 - [移动应用预配配置组分配](intune-apps-mobileappprovisioningconfiggroupassignment.md)

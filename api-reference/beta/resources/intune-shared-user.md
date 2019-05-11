@@ -1,19 +1,19 @@
 ---
 title: 用户资源类型
 description: 表示 Azure Active Directory 用户对象。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: daa6f7a4802341347f364040504368dc96d75e33
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9e99cd379d16896ca60bccef6170e256677e8e95
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548318"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33938977"
 ---
 # <a name="user-resource-type"></a>用户资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -23,8 +23,8 @@ ms.locfileid: "32548318"
 |方法|返回类型|说明|
 |:---|:---|:---|
 |[列出用户](../api/intune-shared-user-list.md)对象。|[user](../resources/intune-shared-user.md) 集合|列出 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
-|[获取用户](../api/intune-shared-user-get.md)对象。|[user](../resources/intune-shared-user.md)|读取 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
-|[创建用户](../api/intune-shared-user-create.md)对象。|[user](../resources/intune-shared-user.md)|创建新的 [user](../resources/intune-shared-user.md) 对象。|
+|[获取用户](../api/intune-shared-user-get.md)对象。|[用户](../resources/intune-shared-user.md)|读取 [user](../resources/intune-shared-user.md) 对象的属性和关系。|
+|[创建用户](../api/intune-shared-user-create.md)对象。|[用户](../resources/intune-shared-user.md)|创建新的 [user](../resources/intune-shared-user.md) 对象。|
 |[删除用户](../api/intune-shared-user-delete.md)。|无|删除 [user](../resources/intune-shared-user.md)。|
 |[更新 user](../api/intune-shared-user-update.md)对象。|[user](../resources/intune-shared-user.md)|更新 [user](../resources/intune-shared-user.md) 对象的属性。|
 |**设备管理**|
