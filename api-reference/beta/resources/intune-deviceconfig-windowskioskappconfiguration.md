@@ -1,19 +1,19 @@
 ---
 title: windowsKioskAppConfiguration 资源类型
 description: 用于标识展台配置的应用程序信息的应用程序基类
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60b179a01f6dd3ada5b0c0b93a9fb85b12a6f23b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1234fb7ef79bf5e7ad1b52ddfc6442dc15c4bec9
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550754"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944150"
 ---
 # <a name="windowskioskappconfiguration-resource-type"></a>windowsKioskAppConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -38,7 +38,6 @@ ms.locfileid: "32550754"
   "@odata.type": "#microsoft.graph.windowsKioskAppConfiguration"
 }
 ```
-
 
 
 

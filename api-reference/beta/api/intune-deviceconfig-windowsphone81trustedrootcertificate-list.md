@@ -1,19 +1,19 @@
 ---
 title: 列出 windowsPhone81TrustedRootCertificates
 description: 列出 windowsPhone81TrustedRootCertificate 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4347d38e8af1f63b734233c4e5cfd4b1c40b5836
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c131dea17ea0eff39ff76a9ed4abca231399d6b8
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32512647"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33917623"
 ---
 # <a name="list-windowsphone81trustedrootcertificates"></a>列出 windowsPhone81TrustedRootCertificates
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -85,7 +85,6 @@ Content-Length: 631
   ]
 }
 ```
-
 
 
 

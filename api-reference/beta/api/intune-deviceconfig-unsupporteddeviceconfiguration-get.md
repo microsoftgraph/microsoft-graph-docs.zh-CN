@@ -1,19 +1,19 @@
 ---
 title: 获取 unsupportedDeviceConfiguration
 description: 读取 unsupportedDeviceConfiguration 对象的属性和关系。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f05552cc371c34a5310baad0f6ab43f9859643c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 30f7d5bee6bf8ff919254702b59b6e817486ae5d
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32517867"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33921966"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>获取 unsupportedDeviceConfiguration
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -93,7 +93,6 @@ Content-Length: 747
   }
 }
 ```
-
 
 
 

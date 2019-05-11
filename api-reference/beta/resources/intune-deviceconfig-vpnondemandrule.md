@@ -1,19 +1,19 @@
 ---
 title: vpnOnDemandRule 资源类型
 description: VPN 按需规则定义。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3209c91400b36adba772273cfa6768049adce448
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bb17bb1ec1af12f89ea1ab5470cf6a2d808868c4
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561927"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944584"
 ---
 # <a name="vpnondemandrule-resource-type"></a>vpnOnDemandRule 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -22,7 +22,7 @@ VPN 按需规则定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|ssid|String collection|网络服务集标识符 (ssid)。|
+|ssid|String collection|网络服务集标识符 (Ssid)。|
 |dnsSearchDomains|String collection|DNS 搜索域。|
 |probeUrl|String|要探测的 URL。 如果此 URL 已成功获取 (返回 200 HTTP 状态代码) 而不进行重定向, 则此规则匹配。|
 |action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|退货. 可取值为：`connect`、`evaluateConnection`、`ignore`、`disconnect`。|
@@ -58,7 +58,6 @@ VPN 按需规则定义。
   "probeRequiredUrl": "String"
 }
 ```
-
 
 
 

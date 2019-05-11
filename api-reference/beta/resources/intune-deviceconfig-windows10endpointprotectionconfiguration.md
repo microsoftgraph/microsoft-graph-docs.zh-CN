@@ -1,19 +1,19 @@
 ---
 title: windows10EndpointProtectionConfiguration 资源类型
 description: 本主题提供由 Windows10EndpointProtectionConfiguration 资源公开的已声明方法、属性和关系的说明。
-author: tfitzmac
+author: rolyon
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c060011097779b9893bfad5b5ba22ead129b505f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 07b82392c7bb489e0eae47cd833d2c0617acbb65
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32572155"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33944332"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>windows10EndpointProtectionConfiguration 资源类型
 
-> **重要说明:**/beta 版本下的 Microsoft Graph api 可能会发生更改;不支持生产使用。
+> **重要说明:**/Beta 版本下的 Microsoft Graph Api 可能会发生更改;不支持生产使用。
 
 > **注意:** 适用于 Intune 的 Microsoft Graph API 需要租户的[活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
@@ -42,7 +42,7 @@ ms.locfileid: "32572155"
 |说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|此策略旨在提供针对支持外部 DMA 的设备的额外安全性。 通过它, 可以更好地控制支持外部 dma 的设备与 dma 重新映射/设备内存隔离和沙盒不兼容的枚举。 仅当系统固件支持和启用内核 DMA 保护时, 此策略才会生效。 内核 DMA 保护是一项平台功能, 不能通过策略或最终用户进行控制。 在制造时, 系统必须支持它。 若要检查系统是否支持内核 dma 保护, 请在 MSINFO32 的摘要页中检查 "内核 dma 保护" 字段。 可取值为：`deviceDefault`、`blockAll`、`allowAll`。|
+|dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|此策略旨在提供针对支持外部 DMA 的设备的额外安全性。 通过它, 可以更好地控制支持外部 DMA 的设备与 DMA 重新映射/设备内存隔离和沙盒不兼容的枚举。 仅当系统固件支持和启用内核 DMA 保护时, 此策略才会生效。 内核 DMA 保护是一项平台功能, 不能通过策略或最终用户进行控制。 在制造时, 系统必须支持它。 若要检查系统是否支持内核 DMA 保护, 请在 MSINFO32 的摘要页中检查 "内核 DMA 保护" 字段。 可取值为：`deviceDefault`、`blockAll`、`allowAll`。|
 |firewallRules|[windowsFirewallRule](../resources/intune-deviceconfig-windowsfirewallrule.md)集合|配置防火墙规则设置。 此集合最多可包含150个元素。|
 |userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限由凭据管理器在备份/还原过程中使用。 如果为其他实体提供此权限, 则用户保存的凭据可能会受到威胁。 仅支持 NotConfigured 和允许的状态|
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|此用户权限确定允许哪些用户和组通过网络连接到计算机。 支持的状态为 "允许"。|
@@ -86,7 +86,7 @@ ms.locfileid: "32572155"
 |localSecurityOptionsGuestAccountName|String|定义要与帐户 "来宾" 的安全标识符 (SID) 相关联的不同帐户名称。|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|阻止便携式计算机在无需登录的情况下被移除。|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|仅在将打印机驱动程序连接到共享打印机时, 才将其限制为仅供管理员安装。|
-|localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|如果启用此设置, 则仅允许交互式登录用户访问 cd-rom 媒体。|
+|localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|如果启用此设置, 则仅允许交互式登录用户访问 CD-ROM 媒体。|
 |localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser|[localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType](../resources/intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)|定义允许格式化和弹出可移动 NTFS 媒体的权限。 可取值为：`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers`。|
 |localSecurityOptionsMachineInactivityLimit|Int32|在屏幕保护程序运行之前, 定义交互式桌面登录屏幕上不活动的最长分钟数。 有效值为0至9999|
 |localSecurityOptionsMachineInactivityLimitInMinutes|Int32|在屏幕保护程序运行之前, 定义交互式桌面登录屏幕上不活动的最长分钟数。 有效值为0至9999|
@@ -116,11 +116,11 @@ ms.locfileid: "32572155"
 |localSecurityOptionsUseAdminApprovalModeForAdministrators|Boolean|定义是否启用管理员批准模式和所有 UAC 策略设置, 默认为启用|
 |localSecurityOptionsInformationShownOnLockScreen|[localSecurityOptionsInformationShownOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype.md)|配置在会话锁定时显示的用户信息。 如果未配置, 则显示用户显示名称、域和用户名。 可取值为：`notConfigured`、`userDisplayNameDomainUser`、`userDisplayNameOnly`、`doNotDisplayUser`。|
 |localSecurityOptionsInformationDisplayedOnLockScreen|[localSecurityOptionsInformationDisplayedOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationdisplayedonlockscreentype.md)|配置在会话锁定时显示的用户信息。 如果未配置, 则显示用户显示名称、域和用户名。 可取值为：`notConfigured`、`administrators`、`administratorsAndPowerUsers`、`administratorsAndInteractiveUsers`。|
-|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|Boolean|此安全设置确定 smb 客户端是否尝试协商 smb 数据包签名。|
+|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|Boolean|此安全设置确定 SMB 客户端是否尝试协商 SMB 数据包签名。|
 |localSecurityOptionsClientDigitallySignCommunicationsAlways|Boolean|此安全设置确定 SMB 客户端组件是否需要数据包签名。|
 |localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|Boolean|如果启用此安全设置, 则允许服务器消息块 (SMB) 重定向程序将纯文本密码发送到在身份验证过程中不支持密码加密的非 Microsoft SMB 服务器。|
 |localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|Boolean|此安全设置确定 SMB 服务器组件是否需要数据包签名。|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|Boolean|此安全设置确定 smb 服务器是否将 smb 数据包签名与请求的客户端协商。|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|Boolean|此安全设置确定 SMB 服务器是否将 SMB 数据包签名与请求的客户端协商。|
 |localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|Boolean|默认情况下, 此安全设置限制可匿名访问且可匿名访问的共享的命名管道设置对共享和管道的匿名访问权限|
 |localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|Boolean|此安全设置确定将向计算机的匿名连接授予的其他权限。|
 |localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|Boolean|此安全设置确定是否允许匿名用户执行某些活动, 如枚举域帐户和网络共享的名称。|
@@ -154,7 +154,7 @@ ms.locfileid: "32572155"
 |firewallIPSecExemptionsAllowDHCP|Boolean|配置 IPSec 免除项以允许 IPv4 和 IPv6 DHCP 通信|
 |firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|指定如何强制执行证书吊销列表。 可取值为：`deviceDefault`、`none`、`attempt`、`require`。|
 |firewallMergeKeyingModuleSettings|Boolean|如果键控模块不完全支持身份验证集，请指示模块仅忽略不受支持的身份验证套件而不是整个集|
-|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|配置如何在隧道网关应用场景中应用数据包排队。 可取值为：`deviceDefault`、`disabled`、`queueInbound`、`queueOutbound` 或 `queueBoth`。|
+|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|配置如何在隧道网关应用场景中应用数据包排队。 可取值为：`deviceDefault`、`disabled`、`queueInbound`、`queueOutbound`、`queueBoth`。|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|配置域网络的防火墙配置文件设置|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|配置公用网络的防火墙配置文件设置|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|配置专用网络的防火墙配置文件设置|
@@ -183,7 +183,7 @@ ms.locfileid: "32572155"
 |defenderEmailContentExecutionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|一个值, 该值指示是否应从电子邮件 (web 邮件/邮件客户端) 中删除可执行内容 (exe、dll、ps、js、vbs 等) 的执行。 可取值为：`userDefined`、`block`、`auditMode`。|
 |defenderEmailContentExecution|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|一个值, 该值指示是否应从电子邮件 (web 邮件/邮件客户端) 中删除可执行内容 (exe、dll、ps、js、vbs 等) 的执行。 可取值为：`userDefined`、`enable`、`auditMode`。|
 |defenderAdvancedRansomewareProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|指示使用针对 ransomeware 的高级防护的值。 可取值为：`userDefined`、`enable`、`auditMode`。|
-|defenderGuardMyFoldersType|[folderProtectionType](../resources/intune-deviceconfig-folderprotectiontype.md)|值, 该值指示受保护文件夹的行为。 可取值为：`userDefined`、`enable`、`auditMode`、`blockDiskModification` 或 `auditDiskModification`。|
+|defenderGuardMyFoldersType|[folderProtectionType](../resources/intune-deviceconfig-folderprotectiontype.md)|值, 该值指示受保护文件夹的行为。 可取值为：`userDefined`、`enable`、`auditMode`、`blockDiskModification`、`auditDiskModification`。|
 |defenderGuardedFoldersAllowedAppPaths|String collection|允许访问受保护文件夹的 exe 路径列表|
 |defenderAdditionalGuardedFolders|String 集合|要添加到受保护文件夹列表的文件夹路径列表|
 |defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|值, 该值指示 NetworkProtection 的行为。 可取值为：`userDefined`、`enable`、`auditMode`。|
@@ -198,8 +198,8 @@ ms.locfileid: "32572155"
 |smartScreenEnableInShell|Boolean|允许 IT 管理员配置适用于 Windows 的 SmartScreen。|
 |smartScreenBlockOverrideForFiles|Boolean|允许 IT 管理员控制用户是否可以忽略 SmartScreen 警告并运行恶意文件。|
 |applicationGuardEnabled|Boolean|启用 Windows Defender 应用程序防护|
-|applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|为较新的 windows 版本启用 windows Defender 应用程序防护。 可取值为：`notConfigured`、`enabledForEdge`、`enabledForOffice`、`enabledForEdgeAndOffice`。|
-|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|阻止剪贴板传输图像文件、文本文件或二者都不。 可取值为：`notConfigured`、`blockImageAndTextFile`、`blockImageFile`、`blockNone` 或 `blockTextFile`。|
+|applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|为较新的 Windows 版本启用 Windows Defender 应用程序防护。 可取值为：`notConfigured`、`enabledForEdge`、`enabledForOffice`、`enabledForEdgeAndOffice`。|
+|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|阻止剪贴板传输图像文件、文本文件或二者都不。 可取值为：`notConfigured`、`blockImageAndTextFile`、`blockImageFile`、`blockNone`、`blockTextFile`。|
 |applicationGuardBlockNonEnterpriseContent|Boolean|阻止企业站点加载非企业内容，例如第三方插件|
 |applicationGuardAllowPersistence|Boolean|允许 App Guard 容器（收藏夹、Cookie、Web 密码等）内的持久用户生成数据|
 |applicationGuardForceAuditing|Boolean|强制审核将存留 Windows 日志和事件以满足安全/符合性条件（示例事件是用户登录注销、特权使用、软件安装、系统更改等）|
@@ -896,7 +896,6 @@ ms.locfileid: "32572155"
   }
 }
 ```
-
 
 
 
