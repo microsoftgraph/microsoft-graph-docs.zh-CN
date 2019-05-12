@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var notebooks = await graphClient.Me.Onenote.Notebooks
+var children = await graphClient.Me.Drive.Root.Children
     .Request()
     .GetAsync();
 
