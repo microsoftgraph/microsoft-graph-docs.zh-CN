@@ -4,48 +4,48 @@ description: '使用此 API 刷新现有的工作簿会话。 '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 467504fc3c2f16e000b7461d2059c5ff8b8c3cb6
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 0f159951f8198ff2f7822d63d6ef86f7c1fc21a1
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637008"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960934"
 ---
-# <a name="refresh-session"></a><span data-ttu-id="f5cb7-103">刷新会话</span><span class="sxs-lookup"><span data-stu-id="f5cb7-103">Refresh Session</span></span>
+# <a name="refresh-session"></a><span data-ttu-id="91b76-103">刷新会话</span><span class="sxs-lookup"><span data-stu-id="91b76-103">Refresh Session</span></span>
 
-<span data-ttu-id="f5cb7-104">使用此 API 刷新现有的工作簿会话。</span><span class="sxs-lookup"><span data-stu-id="f5cb7-104">Use this API to refresh an existing workbook session.</span></span> 
+<span data-ttu-id="91b76-104">使用此 API 刷新现有的工作簿会话。</span><span class="sxs-lookup"><span data-stu-id="91b76-104">Use this API to refresh an existing workbook session.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="f5cb7-105">权限</span><span class="sxs-lookup"><span data-stu-id="f5cb7-105">Permissions</span></span>
-<span data-ttu-id="f5cb7-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="f5cb7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="91b76-105">权限</span><span class="sxs-lookup"><span data-stu-id="91b76-105">Permissions</span></span>
+<span data-ttu-id="91b76-p101">要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。</span><span class="sxs-lookup"><span data-stu-id="91b76-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f5cb7-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="f5cb7-108">Permission type</span></span>      | <span data-ttu-id="f5cb7-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="f5cb7-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="91b76-108">权限类型</span><span class="sxs-lookup"><span data-stu-id="91b76-108">Permission type</span></span>      | <span data-ttu-id="91b76-109">权限（从最低特权到最高特权）</span><span class="sxs-lookup"><span data-stu-id="91b76-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f5cb7-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="f5cb7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f5cb7-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f5cb7-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="f5cb7-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="f5cb7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f5cb7-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="f5cb7-113">Not supported.</span></span>    |
-|<span data-ttu-id="f5cb7-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="f5cb7-114">Application</span></span> | <span data-ttu-id="f5cb7-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="f5cb7-115">Not supported.</span></span> |
+|<span data-ttu-id="91b76-110">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="91b76-110">Delegated (work or school account)</span></span> | <span data-ttu-id="91b76-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="91b76-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="91b76-112">委派（个人 Microsoft 帐户）</span><span class="sxs-lookup"><span data-stu-id="91b76-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="91b76-113">不支持。</span><span class="sxs-lookup"><span data-stu-id="91b76-113">Not supported.</span></span>    |
+|<span data-ttu-id="91b76-114">应用程序</span><span class="sxs-lookup"><span data-stu-id="91b76-114">Application</span></span> | <span data-ttu-id="91b76-115">不支持。</span><span class="sxs-lookup"><span data-stu-id="91b76-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f5cb7-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="f5cb7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="91b76-116">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="91b76-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/refreshSession
 workbook-session-id: {session-id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="f5cb7-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="f5cb7-117">Request headers</span></span>
-| <span data-ttu-id="f5cb7-118">名称</span><span class="sxs-lookup"><span data-stu-id="f5cb7-118">Name</span></span>       | <span data-ttu-id="f5cb7-119">说明</span><span class="sxs-lookup"><span data-stu-id="f5cb7-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="91b76-117">请求标头</span><span class="sxs-lookup"><span data-stu-id="91b76-117">Request headers</span></span>
+| <span data-ttu-id="91b76-118">名称</span><span class="sxs-lookup"><span data-stu-id="91b76-118">Name</span></span>       | <span data-ttu-id="91b76-119">说明</span><span class="sxs-lookup"><span data-stu-id="91b76-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f5cb7-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f5cb7-120">Authorization</span></span>  | <span data-ttu-id="f5cb7-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="f5cb7-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f5cb7-123">workbook-session-id</span><span class="sxs-lookup"><span data-stu-id="f5cb7-123">workbook-session-id</span></span> | <span data-ttu-id="f5cb7-124">要刷新的工作簿会话 ID</span><span class="sxs-lookup"><span data-stu-id="f5cb7-124">Workbook session Id to be refreshed</span></span> |
+| <span data-ttu-id="91b76-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="91b76-120">Authorization</span></span>  | <span data-ttu-id="91b76-p102">Bearer {token}。必需。</span><span class="sxs-lookup"><span data-stu-id="91b76-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="91b76-123">workbook-session-id</span><span class="sxs-lookup"><span data-stu-id="91b76-123">workbook-session-id</span></span> | <span data-ttu-id="91b76-124">要刷新的工作簿会话 ID</span><span class="sxs-lookup"><span data-stu-id="91b76-124">Workbook session Id to be refreshed</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f5cb7-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="f5cb7-125">Request body</span></span>
-<span data-ttu-id="f5cb7-126">此 API 不需要任何请求正文。</span><span class="sxs-lookup"><span data-stu-id="f5cb7-126">This API does not require any request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="91b76-125">请求正文</span><span class="sxs-lookup"><span data-stu-id="91b76-125">Request body</span></span>
+<span data-ttu-id="91b76-126">此 API 不需要任何请求正文。</span><span class="sxs-lookup"><span data-stu-id="91b76-126">This API does not require any request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f5cb7-127">响应</span><span class="sxs-lookup"><span data-stu-id="f5cb7-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="91b76-127">响应</span><span class="sxs-lookup"><span data-stu-id="91b76-127">Response</span></span>
 
-<span data-ttu-id="f5cb7-128">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="f5cb7-128">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="91b76-128">如果成功，此方法返回 `204 No Content` 响应代码。</span><span class="sxs-lookup"><span data-stu-id="91b76-128">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f5cb7-129">示例</span><span class="sxs-lookup"><span data-stu-id="f5cb7-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f5cb7-130">请求</span><span class="sxs-lookup"><span data-stu-id="f5cb7-130">Request</span></span>
-<span data-ttu-id="f5cb7-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="f5cb7-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="91b76-129">示例</span><span class="sxs-lookup"><span data-stu-id="91b76-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="91b76-130">请求</span><span class="sxs-lookup"><span data-stu-id="91b76-130">Request</span></span>
+<span data-ttu-id="91b76-131">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="91b76-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "refresh_excel_session"
@@ -61,11 +61,11 @@ Content-length: 0
 }
 ```
 
-<span data-ttu-id="f5cb7-132">请注意，workbook-session-id 标头是必需的。</span><span class="sxs-lookup"><span data-stu-id="f5cb7-132">Note that workbook-session-id header is required.</span></span> 
+<span data-ttu-id="91b76-132">请注意，workbook-session-id 标头是必需的。</span><span class="sxs-lookup"><span data-stu-id="91b76-132">Note that workbook-session-id header is required.</span></span> 
 
 
-##### <a name="response"></a><span data-ttu-id="f5cb7-133">响应</span><span class="sxs-lookup"><span data-stu-id="f5cb7-133">Response</span></span>
-<span data-ttu-id="f5cb7-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="f5cb7-134">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="91b76-133">响应</span><span class="sxs-lookup"><span data-stu-id="91b76-133">Response</span></span>
+<span data-ttu-id="91b76-134">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="91b76-134">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -74,9 +74,11 @@ Content-length: 0
 ```http
 HTTP/1.1 204 No Content
 ```
-#### <a name="sdk-sample-code"></a><span data-ttu-id="f5cb7-135">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="f5cb7-135">SDK sample code</span></span>
+#### <a name="sdk-sample-code"></a><span data-ttu-id="91b76-135">SDK 示例代码</span><span class="sxs-lookup"><span data-stu-id="91b76-135">SDK sample code</span></span>
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="91b76-136">Javascript</span><span class="sxs-lookup"><span data-stu-id="91b76-136">Javascript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/refresh_excel_session-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[<span data-ttu-id="f5cb7-136">语言</span><span class="sxs-lookup"><span data-stu-id="f5cb7-136">C#</span></span>](#tab/cs)
+# <a name="ctabcs"></a>[<span data-ttu-id="91b76-137">C#</span><span class="sxs-lookup"><span data-stu-id="91b76-137">C#</span></span>](#tab/cs)
 [!INCLUDE [sample-code](../includes/refresh_excel_session-Cs-snippets.md)]
 
 ---
