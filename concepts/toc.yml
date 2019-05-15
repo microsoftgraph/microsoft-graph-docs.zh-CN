@@ -79,11 +79,9 @@ items:
             href: cross-device-concept-overview.md
           - name: 活动源
             href: activity-feed-concept-overview.md
-          - name: 设备中继（预览版）
+          - name: 设备中继（预览）
             href: device-relay-concept-overview.md
-          - name: 通知（预览版）
-            href: notifications-concept-overview.md
-          - name: 生成跨设备应用
+          - name: 构建跨设备的应用
             href: cross-device-app-configuration.md
       - name: 客户预订（预览版）
         href: booking-concept-overview.md
@@ -166,6 +164,28 @@ items:
             href: onenote-branding.md
           - name: 错误代码
             href: onenote-error-codes.md
+      - name: 通知（预览版）
+        displayName: Notifications
+        items:
+          - name: 概述
+            href: notifications-concept-overview.md
+          - name: 入门
+            displayName: Notifications
+            items:
+              - name: 概述
+                href: notifications-integration-e2e-overview.md
+              - name: 应用注册
+                href: notifications-integration-app-registration.md
+              - name: 跨设备载入
+                href: notifications-integration-cross-device-experiences-onboarding.md
+              - name: 应用服务器集成
+                href: notifications-integrating-app-server.md
+              - name: Windows 应用集成
+                href: notifications-integrating-with-windows.md
+              - name: Android 应用集成
+                href: notifications-integrating-with-android.md
+              - name: iOS 应用集成
+                href: notifications-integrating-with-ios.md
       - name: 个人联系人
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
