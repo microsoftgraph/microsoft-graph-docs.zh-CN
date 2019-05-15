@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: d3c9b2f77b63abf21d8eb538d08bade4f6cfcb32
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 0921cec73d405262470ed30b7f0d61534f6b5ab4
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345657"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036568"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>从其他用户身份发送 Outlook 邮件
 
@@ -107,7 +107,7 @@ Exchange Online 提供的[邮箱权限](/Exchange/recipients/mailbox-permissions
 以下其他外部因素可能会改变默认行为：
 
 - 管理员将发件人用户的邮箱更新为[始终将从代理发送的邮件副本保存](/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox)至其“已发送邮件”。
-- 通过在 [send mail](/graph/api/user-sendmail?view=graph-rest-1.0) 请求中将 `saveToSentItems` 属性设为 `true`，可以防止邮件被保存至“已发送邮件”文件夹。 但是，如果管理员已配置“始终保存副本”设置，则邮件将被保存至发件人用户的“已发送邮件”文件夹。
+- 通过在 [send mail](/graph/api/user-sendmail?view=graph-rest-1.0) 请求中将 `saveToSentItems` 属性设为 `false`，可以防止邮件被保存至“已发送邮件”文件夹。 但是，如果管理员已配置“始终保存副本”设置，则邮件将被保存至发件人用户的“已发送邮件”文件夹。
 
 ## <a name="examples"></a>示例
 

@@ -4,12 +4,12 @@ description: 'Office 365 管理员必须先执行两个操作，以便管理员�
 author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: 8372653d8904ba247975a649e6709b2206a4d6d3
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 7033a5f9a823977a99a753911600545ef35b0f1c
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599784"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036512"
 ---
 # <a name="get-started-with-microsoft-graph-data-connect"></a>Microsoft Graph 数据连接入门
 
@@ -20,4 +20,4 @@ Office 365 管理员必须先执行两个操作，以便管理员能够通过 Pr
 
 ## <a name="next-steps"></a>后续步骤
 
-恭喜！ 现在你即可开始使用 Azure 工具生成智能应用程序。 可参阅 [Microsoft Graph 数据连接培训模块](https://github.com/microsoftgraph/msgraph-training-dataconnect/blob/master/Lab.md)，来获取详细的分步说明。 要详细了解 Microsoft Graph 数据连接提供的功能，请参阅数据连接支持的[数据集、区域和接收器](/concepts/data-connect-datasets.md)或[用户选择和筛选](/concepts/data-connect-filtering.md)。
+恭喜！ 现在你即可开始使用 Azure 工具生成智能应用程序。 可参阅 [Microsoft Graph 数据连接培训模块](https://github.com/microsoftgraph/msgraph-training-dataconnect/blob/master/Lab.md)，来获取详细的分步说明。 要详细了解 Microsoft Graph 数据连接提供的功能，请参阅数据连接支持的[数据集、区域和接收器](data-connect-datasets.md)或[用户选择和筛选](data-connect-filtering.md)。

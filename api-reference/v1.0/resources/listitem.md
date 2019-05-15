@@ -1,75 +1,47 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: ListItem
+title: listItem 资源
+description: 此资源表示 SharePoint 列表中的项目。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: ba4b910f6d86caee23ce191b225d040ef023b4e7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 873ad5961c9cadb444c6fe9f2afec69853cc5d85
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32519946"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968798"
 ---
-# <a name="listitem-resource"></a>ListItem 资源
+# <a name="listitem-resource"></a>listItem 资源
 
 此资源表示 SharePoint **[list][]** 中的项目。
 该列表中的列值可通过 `fieldValueSet` 字典获得。
 
-## <a name="tasks-on-a-listitem"></a>listItem 上的任务
+## <a name="methods"></a>方法
 
-下列任务可用于 **listItem** 资源。
-下面的所有示例都与**[list][]** 相关，例如：`https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`。
+下列方法可用于 **listItem** 资源。
+所有示例都与 **[list][]** 相关：`https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`。
 
-| 常见任务                    | HTTP 方法
-|:-------------------------------|:------------------------
-| [获取][]                        | GET /items/{item-id}
-| [获取列值][Get]       | GET /items/{item-id}?expand=fields
-| [创建][]                     | POST /items
-| [删除][]                     | DELETE /items/{item-id}
-| [更新][]                     | PATCH /items/{item-id}
-| [更新列值][Update] | PATCH /items/{item-id}/fields
+| 方法                    | 返回类型 | 说明
+|:-------------------------------|:-------------------|:------
+| [Get][]                   | lisItem| 获取列表中的项。
+| [获取列值][Get]       | listItem | 从 listItem 获取列的值。
+| [获取分析结果][]              | [itemAnalytics][]| 对此资源可获取分析。 
+| [按间隔获取活动][] | [itemActivityStat][]| 在指定的时间间隔内获取 itemActivityStats 的集合。
+| [Create][]                     | listItem | 在列表中创建新的 listItem。
+| [删除][]                     | 无内容 | 从 list 中删除项。
+| [Update][]                     | [fieldValueSet][]| 更新 listItem 上的属性。
+| [更新列值][Update] | [fieldValueSet][]| 更新 listItem 上的列值。
 
-[获取]: ../api/listitem-get.md
-[创建]: ../api/listitem-create.md
+[Get]: ../api/listitem-get.md
+[获取分析结果]: ../api/itemanalytics-get.md
+[按间隔获取活动]: ../api/itemactivitystat-getactivitybyinterval.md
+[Create]: ../api/listitem-create.md
 [删除]: ../api/listitem-delete.md
-[更新]: ../api/listitem-update.md
+[Update]: ../api/listitem-update.md
 
-## <a name="json-representation"></a>JSON 表示形式
-
-下面是 **listItem** 资源的 JSON 表示形式。
-
-<!--{
-  "blockType": "resource",
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.listItem"
-}-->
-
-```json
-{
-  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
-  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-
-  /* relationships */
-  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
-
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "name of resource",
-  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "timestamp",
-  "description": "description of resource",
-  "eTag": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "timestamp",
-  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
-}
-```
+[itemActivityStat]: itemactivitystat.md
+[fieldValueSet]: fieldvalueset.md
 
 ## <a name="properties"></a>属性
 
@@ -101,6 +73,8 @@ ms.locfileid: "32519946"
 
 | 关系名称 | 类型                           | 说明
 |:------------------|:-------------------------------|:-------------------------------
+| activities        | [itemActivity][] 集合    | 最近发生在此项上的活动的列表。
+| 分析         | [itemAnalytics][] 资源     | 此项目上发生的查看活动的相关分析。
 | driveItem         | [driveItem][]                  | 对于文档库，**driveItem** 关系将 listItem 显示为 **[driveItem][]**。
 | fields            | [fieldValueSet][]              | 在此列表项上设置的列的值。
 | 版本          | [listItemVersion][] 集合 | 先前版本的列表项的列表。
@@ -110,17 +84,56 @@ ms.locfileid: "32519946"
 [driveItem]: driveitem.md
 [fieldValueSet]: fieldvalueset.md
 [identitySet]: identityset.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [list]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
+
+## <a name="json-representation"></a>JSON 表示形式
+
+下面是 **listItem** 资源的 JSON 表示形式。
+
+<!--{
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.listItem"
+}-->
+
+```json
+{
+  "contentType": { "@odata.type": "microsoft.graph.contentTypeInfo" },
+  "fields": { "@odata.type": "microsoft.graph.fieldValueSet" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+
+  /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
+  "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
+  "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
+
+  /* inherited from baseItem */
+  "id": "string",
+  "name": "name of resource",
+  "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "timestamp",
+  "description": "description of resource",
+  "eTag": "string",
+  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedDateTime": "timestamp",
+  "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
+  "webUrl": "url"
+}
+```
 
 <!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ListItem",
+  "tocPath": "Resources/listItem",
   "tocBookmarks": {
     "ListItem": "#"
   }

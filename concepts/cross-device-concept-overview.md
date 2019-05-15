@@ -3,12 +3,12 @@ title: Microsoft Graph 中的跨设备体验
 description: '在当今的多设备环境中，消费者使用设备的方式跨越了不同的平台和外形规格：他们可能会在其平板电脑上阅读早间新闻，在早晨上班途中用手机查看电子邮件，以及在工作时使用台式电脑。 到了晚上，他们可能会在自己的家庭媒体控制台上观看电影，并使用智能扬声器获取当天的新闻。 一般客户全天会使用多个设备和平台。 '
 localization_priority: Priority
 ms.prod: project-rome
-ms.openlocfilehash: 85d48d07f06d189f30c8eba9f7f0876353b3ff25
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78b1eebb2db66151a0e1ae1fee30f9122510be47
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570276"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036519"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Microsoft Graph 中的跨设备体验
 
@@ -26,11 +26,6 @@ Microsoft 正在构建一个平台，以打造超越单一设备的体验，以�
 ### <a name="build-rich-cross-device-experiences-by-using-the-device-relay-api"></a>通过使用设备中继 API 构建丰富的跨设备体验 
 除了 Microsoft 设备（个人电脑、Windows Phone、Xbox、IoT、HoloLens 等），设备中继 API 还提供了 Android 和 iOS 设备。 这可让能够真正打破用户设备之间的边界。 可以生成利用用户环境的应用，并创建能够实时超越单个设备的丰富体验。 
 
-### <a name="engage-users-with-human-centric-cross-device-notifications-preview"></a>使用以人为中心的跨设备通知与用户交互（预览版）
-
-通知是与用户沟通和交互的最有效、最直接方式之一。 
-
-借助 Microsoft Graph 通知 API，可以发送以人为中心（而不是以设备为中心）的通知。 可以定目标到接收通知的用户，并依赖 Microsoft Graph 通知框架将通知发送到用户登录的每个终结点。 此外，借助 Microsoft Graph 通知 API，还可以轻松实现跨设备通知管理，这样既可跨用户设备同步通知，又能为用户减少冗余和中断次数。 
 
 ## <a name="api-reference"></a>API 参考
 在查找这些服务的 API 参考？
@@ -44,4 +39,3 @@ Microsoft 正在构建一个平台，以打造超越单一设备的体验，以�
 - [使用 Microsoft Graph API 实现跨设备体验](/graph/api/resources/cross-device-reference-overview?view=graph-rest-1.0)
 - [详细了解 Microsoft Graph 中的活动源 API](activity-feed-concept-overview.md)
 - [详细了解 Microsoft Graph 中的设备中继 API](device-relay-concept-overview.md)
-- [详细了解 Microsoft Graph 中的 Microsoft Graph 通知 API](notifications-concept-overview.md)
