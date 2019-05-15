@@ -4,12 +4,12 @@ description: 获取给定范围下方的一定数量的行。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 64bb37c48e08c70cf0139e8f709a777c5be5918a
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: e2818704f8a6aa6b186c8f5e04445ec46b4e2017
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636910"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961080"
 ---
 # <a name="workbookrange-rowsbelow"></a>workbookRange: rowsBelow
 
@@ -86,8 +86,10 @@ Content-length: 157
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookrange_rowsBelow-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookrange_rowsBelow-Cs-snippets.md)]
 
 ---

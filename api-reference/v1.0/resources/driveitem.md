@@ -1,16 +1,16 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: DriveItem
+title: DriveItem 资源类型
+description: 项目是 OneDrive API 中的主数据模型。 每项都是一个项目。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 8dbbf3b673fe7f436b9600366765425011ab129f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d80c6cf2b121f606938e533a6428e2d85d54033
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562746"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968791"
 ---
 # <a name="driveitem-resource-type"></a>DriveItem 资源类型
 
@@ -21,7 +21,8 @@ ms.locfileid: "32562746"
 * 通过 **driveItem** 唯一标识符使用 `drive/items/{item-id}` 的方式
 * 通过使用文件系统路径 `/drive/root:/path/to/file` 的方式
 
-**DriveItem** 资源拥有作为属性进行模块化的多个 Facet，用于提供 driveItem 的标识和功能相关数据。例如：
+**DriveItem** 资源具有多个建模为属性的 Facet，用于提供 driveItem 的标识和功能相关数据。
+例如：
 
 * 文件夹具有 [**folder facet**][folder]
 * 文件具有 [**file facet**][file]。
@@ -30,71 +31,7 @@ ms.locfileid: "32562746"
 
 具有**文件夹** Facet 的项目充当项目的容器，因此具有指向文件夹下的 **driveItems** 集合的 `children` 引用。
 
-## <a name="json-representation"></a>JSON 表示形式
-
-下面是 **driveItem** 资源的 JSON 表示形式。
-
-**driveItem** 资源由 [**baseItem**][baseItem] 派生并继承该资源的属性。
-
-<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
-       "baseType": "microsoft.graph.baseItem",
-       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
-       "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
-       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds"],
-       "keyProperty": "id", "openType": true } -->
-
-```json
-{
-  "audio": { "@odata.type": "microsoft.graph.audio" },
-  "content": { "@odata.type": "Edm.Stream" },
-  "cTag": "string (etag)",
-  "deleted": { "@odata.type": "microsoft.graph.deleted"},
-  "description": "string",
-  "file": { "@odata.type": "microsoft.graph.file" },
-  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
-  "folder": { "@odata.type": "microsoft.graph.folder" },
-  "image": { "@odata.type": "microsoft.graph.image" },
-  "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
-  "package": { "@odata.type": "microsoft.graph.package" },
-  "photo": { "@odata.type": "microsoft.graph.photo" },
-  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
-  "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
-  "root": { "@odata.type": "microsoft.graph.root" },
-  "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
-  "shared": { "@odata.type": "microsoft.graph.shared" },
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-  "size": 1024,
-  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
-  "video": { "@odata.type": "microsoft.graph.video" },
-  "webDavUrl": "string",
-
-  /* relationships */
-  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
-  "createdByUser": { "@odata.type": "microsoft.graph.user" },
-  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
-  "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
-  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
-  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
-
-  /* inherited from baseItem */
-  "id": "string (identifier)",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
-  "eTag": "string",
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)",
-  "name": "string",
-  "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "string",
-
-  /* instance annotations */
-  "@microsoft.graph.conflictBehavior": "string",
-  "@microsoft.graph.downloadUrl": "url",
-  "@microsoft.graph.sourceUrl": "url"
-}
-```
+>**注意：** 在 OneDrive for Business 或 SharePoint 文档库中，如果 **driveItem** 具有 [folder][] Facet，则不返回 **cTag** 属性。
 
 ## <a name="properties"></a>属性
 
@@ -138,6 +75,8 @@ ms.locfileid: "32562746"
 
 | 关系       | 类型                        | 说明
 |:-------------------|:----------------------------|:--------------------------
+| activities         | [itemActivity][] 集合 | 最近发生在此项上的活动的列表。
+| 分析          | [itemAnalytics][] 资源  | 此项目上发生的查看活动的相关分析。
 | children           | driveItem 集合        | 包含项目直接子项的 Item 对象的集合。仅表示文件夹的项目包含子项。只读。可为 Null。
 | createdByUser      | [user][]                    | 创建了项的用户的身份。 只读。
 | lastModifiedByUser | [user][]                    | 上次修改项的用户的标识。 只读。
@@ -162,36 +101,104 @@ ms.locfileid: "32562746"
 此 URL 在失效前只能使用很短的时间（1 小时）。
 删除用户的文件权限可能不会立即使 URL 无效。
 
+## <a name="json-representation"></a>JSON 表示形式
+
+下面是 **driveItem** 资源的 JSON 表示形式。
+
+**driveItem** 资源由 [**baseItem**][baseItem] 派生并继承该资源的属性。
+
+<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+       "baseType": "microsoft.graph.baseItem",
+       "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
+       "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
+       "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
+       "sharepointIds"],
+       "keyProperty": "id", "openType": true } -->
+
+```json
+{
+  "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
+  "cTag": "string (etag)",
+  "deleted": { "@odata.type": "microsoft.graph.deleted"},
+  "description": "string",
+  "file": { "@odata.type": "microsoft.graph.file" },
+  "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
+  "folder": { "@odata.type": "microsoft.graph.folder" },
+  "image": { "@odata.type": "microsoft.graph.image" },
+  "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "package": { "@odata.type": "microsoft.graph.package" },
+  "photo": { "@odata.type": "microsoft.graph.photo" },
+  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
+  "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
+  "root": { "@odata.type": "microsoft.graph.root" },
+  "searchResult": { "@odata.type": "microsoft.graph.searchResult" },
+  "shared": { "@odata.type": "microsoft.graph.shared" },
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "size": 1024,
+  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
+  "video": { "@odata.type": "microsoft.graph.video" },
+  "webDavUrl": "string",
+
+  /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": {"@odata.type": "microsoft.graph.itemAnalytics"},
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
+  "createdByUser": { "@odata.type": "microsoft.graph.user" },
+  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
+  "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
+  "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
+
+  /* inherited from baseItem */
+  "id": "string (identifier)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "eTag": "string",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)",
+  "name": "string",
+  "parentReference": {"@odata.type": "microsoft.graph.itemReference"},
+  "webUrl": "string",
+
+  /* instance annotations */
+  "@microsoft.graph.conflictBehavior": "string",
+  "@microsoft.graph.downloadUrl": "url",
+  "@microsoft.graph.sourceUrl": "url"
+}
+```
+
 ## <a name="methods"></a>方法
 
-| 方法                                                   | REST 路径
-|:---------------------------------------------------------|:------------------
-| [获取项目](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
-| [列出子项](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
-| [列出版本](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [创建项目](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
-| [更新项目](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
-| [上载内容](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
-| [下载内容](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [下载特定格式文件][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
-| [删除项](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [移动项目](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
-| [复制项目](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [搜索项目](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [列出驱动器中的更改](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [列出缩略图](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [创建共享链接](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [添加权限](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
-| [列出权限](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [删除权限](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [获取 WebSocket 频道][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [预览项][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| 方法                                                   | 返回类型 | 说明
+|:---------------------------------------------------------|:------------|:------------
+| [获取项目](../api/driveitem-get.md)                      | driveItem |在驱动器中检索 DriveItem 的元数据。
+| [获取分析结果][]                                        | [itemAnalytics][] | 对此资源可获取分析。 
+| [按间隔获取活动][]                           | [itemActivityStat][] | 在指定的时间间隔内获取 itemActivityStats 的集合。
+| [列出子项](../api/driveitem-list-children.md)       | driveItem 集合 | 在 DriveItem 的子项关系中返回 DriveItems 集合。
+| [列出版本](../api/driveitem-list-versions.md)       | [DriveItemVersion][] 集合 | 检索当前用户驱动器中的文件的版本。
+| [创建项目](../api/driveitem-post-children.md)         | driveItem | 在指定的驱动器中创建一个 driveItem。
+| [更新项目](../api/driveitem-update.md)                | driveItem | 更新驱动器中的 driveItem。
+| [上传内容](../api/driveitem-put-content.md)        | driveItem | 将内容上传到 driveItem。
+| [下载内容](../api/driveitem-get-content.md)      | 下载 Url | 下载 driveItem 的内容。
+| [下载特定文件格式][download-format]         | 下载 Url | 下载具有特定格式的 driveItem 的内容。
+| [删除项](../api/driveitem-delete.md)                | 无内容 | 删除 DriveItem。
+| [移动项目](../api/driveitem-move.md)                    | driveItem | 将 DriveItem 移动到父项。
+| [复制项目](../api/driveitem-copy.md)                    | 有关如何[监视复制操作进度](/graph/long-running-actions-overview)的详细信息。 | 创建 driveItem（包括任何子项）的副本。
+| [搜索项目](../api/driveitem-search.md)               | driveItem 集合 | 在项目层次结构中搜索与查询匹配的项目。
+| [列出驱动器中的更改](../api/driveitem-delta.md)     | 三角链接 | 列出驱动器中的任何更改。
+| [列出缩略图](../api/driveitem-list-thumbnails.md)   | driveItem 集合 | 使用缩略图列出 driveItems。 
+| [创建共享链接](../api/driveitem-createlink.md)    | 共享链接 | 创建共享 driveItem 的链接。
+| [添加权限](../api/driveitem-invite.md)            | [权限][]集合 | 向用户发送共享邀请。
+| [列出权限](../api/driveitem-list-permissions.md) | [权限][]集合 | 检索 driveItem 上的权限集合。
+| [删除权限](../api/permission-delete.md)         | 无内容 | 从 driveItem 中删除权限。
+| [获取 WebSocket 频道][getWebSocket]                    | [订阅][] | 使用 socket.io 接收驱动器的近实时更改通知。
+| [预览项][item-preview]                             | json object | 获取项目的短期可嵌入URL以呈现临时预览。
 
 [item-preview]: ../api/driveitem-preview.md
-
-## <a name="remarks"></a>说明
-
-在 OneDrive for Business 或 SharePoint 文档库中，如果 **driveItem** 具有[folder][] Facet，则不返回 **cTag** 属性。
+[获取分析结果]: ../api/itemanalytics-get.md
+[按间隔获取活动]: ../api/itemactivitystat-getactivitybyinterval.md
 
 [audio]: audio.md
 [baseItem]: baseitem.md
@@ -206,6 +213,8 @@ ms.locfileid: "32562746"
 [getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
@@ -224,6 +233,11 @@ ms.locfileid: "32562746"
 [工作簿]: workbook.md
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
+
+[DriveItemVersion]: driveitemversion.md
+[权限]: permission.md
+[订阅]: subscription.md
+[itemActivityStat]: itemactivitystat.md
 
 <!-- {
   "type": "#page.annotation",

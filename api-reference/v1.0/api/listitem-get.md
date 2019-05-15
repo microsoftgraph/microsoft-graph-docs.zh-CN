@@ -1,18 +1,18 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: 从 SharePoint 列表中获取条目
+title: 获取 listItem
+description: 返回 SharePoint 列表中某个项的元数据。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: c46fed1c2da3ac246212dbbcdfeb35479699efe6
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: a498947002247541bebf4fc7cd24147a0ca0df7a
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613063"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968784"
 ---
-# <a name="get-an-item-in-a-list"></a>获取列表中的项
+# <a name="get-listitem"></a>获取 listItem
 
 返回[列表][]中某个[项][]的元数据。
 
@@ -31,15 +31,38 @@ ms.locfileid: "33613063"
 
 ## <a name="http-request"></a>HTTP 请求
 
+获取 listItem
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+```
+获取 listItem 上的列值
+```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
+```
+获取 listItem 上的特定列值
+```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 ```
+## <a name="optional-query-parameters"></a>可选的查询参数
+此方法支持使用 [OData 查询参数](/graph/query-parameters)来帮助自定义响应。
+
+## <a name="request-headers"></a>请求标头
+
+| 名称      |说明|
+|:----------|:----------|
+| Authorization  | Bearer {code}。 必需。|
+
+## <a name="request-body"></a>请求正文
+
+请勿提供此方法的请求正文。
+
+## <a name="response"></a>响应 
+
+如果成功，此方法在响应正文中返回`200 OK`响应代码和[项目][]。
 
 ## <a name="example"></a>示例
 
-##### <a name="request"></a>请求
+### <a name="request"></a>请求
 
 <!-- { "blockType": "request", "name": "get-list-item", "scopes": "sites.read.all" } -->
 
@@ -47,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 
-##### <a name="response"></a>响应
+### <a name="response"></a>响应
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
@@ -64,6 +87,7 @@ Content-type: application/json
     }
 }
 ```
+
 #### <a name="sdk-sample-code"></a>SDK 示例代码
 # <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get-list-item-Cs-snippets.md)]

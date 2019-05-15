@@ -1,18 +1,18 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: 更新 SharePoint 列表中的记录
+title: 更新 listItem
+description: 更新 **[listItem][]** 上的属性。
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 811dcd2640b2fe95ab78c1561fea8ea98f3029ff
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: c75f14a5dd118a6735f494fb56e9f0895ce99ba9
+ms.sourcegitcommit: 52baf24d1d08096214b12f60e7c755291fe03ab5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33613995"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33968735"
 ---
-# <a name="update-an-item-in-a-list"></a>更新列表中的项
+# <a name="update-listitem"></a>更新 listItem
 
 更新 **[listItem][]** 上的属性。
 
@@ -30,6 +30,12 @@ ms.locfileid: "33613995"
 
 <!-- { "blockType": "ignored" } -->
 
+更新 listItem 上的属性。
+```http
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+```
+
+更新 listItem 上的列值。
 ```http
 PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
@@ -40,15 +46,18 @@ PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{it
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | 如果包含此请求标头，且提供的 eTag 与项中的当前 eTag 不匹配，则返回 `412 Precondition Failed` 响应，并且不会更新该项。
 
-
-## <a name="request-body"></a>请求正文
-
+## <a name="request-body"></a>请求正文 
 在请求正文中，提供指定要更新的字段的 [fieldValueSet][] 的 JSON 表示形式。
+
+## <a name="response"></a>响应 
+
+如果成功，此方法在已更新列表项的响应正文中返回`201 Created`响应代码和 [fieldValueSet][]。
 
 ## <a name="example"></a>示例
 
-下面是一个示例，使用新值更新列表项的“颜色”和“数量”字段。
-listItem 上的所有其他值都保持独立。 
+下面是一个示例，使用新值更新列表项的**颜色**和**数量**字段。 **listItem** 上的所有其他值都保持独立。 
+
+### <a name="request"></a>请求 
 
 <!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
@@ -62,9 +71,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a>响应
-
-如果成功，此方法在已更新列表项的响应正文中返回 [fieldValueSet][]。
+### <a name="response"></a>响应
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 

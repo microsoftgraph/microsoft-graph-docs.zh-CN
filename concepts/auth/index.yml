@@ -32,7 +32,7 @@ sections:
         className: cardsM
         columns: 2
         items:
-          - href: /graph/auth/auth-register-app-v2
+          - href: /graph/auth-register-app-v2
             html: <p>通过注册应用程序来开始 Microsoft Graph 旅程。</p>
             image:
               src: ../images/index/i_get-started.svg

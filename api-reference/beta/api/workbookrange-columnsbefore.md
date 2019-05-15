@@ -4,12 +4,12 @@ description: 获取给定范围左侧的一定数量的列。
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 39655f5d9130563f3dd0514bc1b17157836e2aeb
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: fa880d1932a56bac697f5469e2b44d42d1753479
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33636931"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961094"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -85,8 +85,10 @@ Content-length: 157
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookrange_columnsbefore-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookrange_columnsbefore-Cs-snippets.md)]
 
 ---

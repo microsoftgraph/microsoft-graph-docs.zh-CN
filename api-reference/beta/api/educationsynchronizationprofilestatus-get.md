@@ -4,12 +4,12 @@ description: 获取租户中特定学校数据同步配置文件的状态。 响
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 74f33c53e850babed98536fba74de6d6162e9045
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: cff7ecef5cf2fd223b72d1c935112f9917f963d7
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587526"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960821"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>获取 educationSynchronizationProfile 的状态
 
@@ -74,8 +74,10 @@ Content-length: 232
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_status-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_status-Cs-snippets.md)]
 
 ---

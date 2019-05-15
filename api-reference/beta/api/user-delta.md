@@ -4,12 +4,12 @@ description: 获得新建、更新或删除的用户，无需对整个用户集�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4f2e411f4947205bb420ddea319f577495752374
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: c4c95efda43f066f5c2fae127156cc0c076c167b
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637414"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961283"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/beta/users/delta
 
 以下示例所示为使用从查询初始化获得的 `deltaLink` 时的响应。
 
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。 所有属性都将通过实际调用返回。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。所有属性都将通过实际调用返回。
 
 <!-- {
   "blockType": "response",
@@ -154,7 +154,7 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_delta-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
@@ -169,7 +169,7 @@ Content-type: application/json
 下一个示例所示为通过默认响应行为选择 3 种更改跟踪属性时的初始请求：
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta_select"
 }-->
 
 ```http
@@ -204,11 +204,11 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
-# <a name="ctabcs"></a>[语言](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_delta-Cs-snippets.md)]
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_delta_select-Cs-snippets.md)]
 
 # <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_delta-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/user_delta_select-Javascript-snippets.md)]
 
 ---
 
@@ -219,7 +219,7 @@ Content-type: application/json
 下一个示例所示为通过备用最小响应行为选择 3 种更改跟踪属性时的初始请求：
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta_minimal"
 }-->
 
 ```http
@@ -253,6 +253,16 @@ Content-type: application/json
   ]
 }
 ```
+#### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="ctabcs"></a>[C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_delta_minimal-Cs-snippets.md)]
+
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_delta_minimal-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 - [使用 Delta 查询跟踪 Microsoft Graph 数据更改](/graph/delta-query-overview)。
 - [获取用户的增量更改](/graph/delta-query-users)。

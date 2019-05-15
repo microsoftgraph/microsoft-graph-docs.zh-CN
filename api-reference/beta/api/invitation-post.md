@@ -4,12 +4,12 @@ description: 使用该 API 创建新的邀请。 邀请会将外部用户添加�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6b98b93b634ab5cb457af214a2924e0a4be9ec6a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9fafb0b1c9f10e91fe84185a682d7385994af5be
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33597990"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960793"
 ---
 # <a name="create-invitation"></a>创建邀请
 
@@ -111,8 +111,10 @@ Content-length: 551
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_user_from_users-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
 
 ---

@@ -4,12 +4,12 @@ description: '获取在验证过程中生成的错误和/或在租户中同步�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 322eeb409584020dfa15c18be4c264cacd8a23cb
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 84c0139e950274de6d8d625d00787784b52661bb
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33587160"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960870"
 ---
 # <a name="get-educationsynchronizationerrors"></a>获取 educationSynchronizationErrors
 
@@ -100,8 +100,10 @@ Content-length: 1568
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_error-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_error-Cs-snippets.md)]
 
 ---

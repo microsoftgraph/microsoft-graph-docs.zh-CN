@@ -3,12 +3,12 @@ title: Microsoft Graph 更改日志
 description: 此更改日志涵盖了 Microsoft Graph 变更，包括 v1.0 和 beta 终结点 Microsoft Graph API。
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: ce2554efa452a95f52f34d358e39b0d32ce839a7
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 5ca5df50b9c7ce9c16f3aa09bd54dbc1c0444dc0
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33599777"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33951248"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Microsoft Graph 更改日志
 
@@ -17,6 +17,48 @@ ms.locfileid: "33599777"
 有关 Microsoft Graph API 已知问题的详细信息，请参阅[已知问题](known-issues.md)。
 
 ## <a name="may-2019"></a>2019 年 5 月
+
+### <a name="microsoft-intune-apis"></a>Microsoft Intune API
+|更改类型|版本|说明|
+|:---|:---|:---|
+|添加|beta|添加的新实体：<br/>[deviceManagementDerivedCredentialSettings](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialsettings?view=graph-rest-beta)<br/>[iosDerivedCredentialAuthenticationConfiguration](/graph/api/resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration?view=graph-rest-beta)<br/>[securityBaselineCategoryStateSummary](/graph/api/resources/intune-deviceintent-securitybaselinecategorystatesummary?view=graph-rest-beta)<br/>|
+|添加项|beta 版本|添加的新枚举类型：<br/>[deviceManagementDerivedCredentialIssuer](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialissuer?view=graph-rest-beta)<br/>[deviceManagementDerivedCredentialNotificationType](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialnotificationtype?view=graph-rest-beta)<br/>[emailCertificateType](/graph/api/resources/intune-deviceconfig-emailcertificatetype?view=graph-rest-beta)<br/>[mobileAppDependencyType](/graph/api/resources/intune-apps-mobileappdependencytype?view=graph-rest-beta)<br/>|
+|添加项|beta|对 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 集合新增了 executeAction 操作 |
+|添加项|beta|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 上添加了 [rotateFileVaultKey](/graph/api/intune-devices-manageddevice-rotatefilevaultkey?view=graph-rest-beta) 操作 |
+|添加项|beta|在 [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) 上添加了 [migrateToTemplate](/graph/api/intune-deviceintent-devicemanagementintent-migratetotemplate?view=graph-rest-beta) 操作 |
+|添加项|beta|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 上添加了 [getFileVaultKey](/graph/api/intune-devices-manageddevice-getfilevaultkey?view=graph-rest-beta) 函数 |
+|删除|beta|删除了以下枚举类型：<br/>**mobileAppDependecyType**<br/>|
+|删除|beta|在 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 集合上删除了 executeAction 操作 |
+|添加项|beta|向 [androidEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidenterprisewificonfiguration?view=graph-rest-beta) 实体添加了 **usernameFormatString**、**passwordFormatString** 和 **preSharedKey** 属性|
+|添加项|beta|向 [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta) 实体添加了 **customBrowserPackageId** 和 **customBrowserDisplayName** 属性|
+|添加项|beta|向 [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) 实体添加了 **customBrowserProtocol**、**customBrowserPackageId** 和 **customBrowserDisplayName** 属性|
+|删除|beta|从 [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta) 实体中删除了 **thirdPartyKeyboardsBlocked** 属性|
+|更改|beta|在 [deviceManagementAbstractComplexSettingInstance](/graph/api/resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance?view=graph-rest-beta) 实体上更改了以下属性：<br/>将 **implementationId** 从必需更改为可选<br/>|
+|添加项|beta|向 [deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta) 实体添加了 **versionInfo**、**isDeprecated** 和 **intentCount** 属性|
+|添加项|beta|向 [importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta) 实体添加了 **assignedUserPrincipalName** 属性|
+|添加项|beta|向 [iosEasEmailProfileConfiguration](/graph/api/resources/intune-deviceconfig-ioseasemailprofileconfiguration?view=graph-rest-beta) 实体添加了 **signingCertificateType** 和 **encryptionCertificateType** 属性|
+|添加项|beta|向 [iosEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-iosenterprisewificonfiguration?view=graph-rest-beta) 实体添加了 **usernameFormatString** 和 **passwordFormatString** 属性|
+|添加项|beta|向 [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **kioskModeBlockAutoLock**、**kioskModeBlockRingerSwitch**、**kioskModeBlockScreenRotation**、**kioskModeBlockSleepButton**、**kioskModeBlockTouchscreen**、**cellularBlockPersonalHotspotModification** 和 **siriDisableServerLogging** 属性|
+|添加项|beta|向 [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-beta) 实体添加了 **customBrowserProtocol** 属性|
+|删除|beta|从 [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-beta) 实体中删除了 **thirdPartyKeyboardsBlocked** 属性|
+|添加项|beta|向 [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **iCloudBlockPhotoLibrary**、**screenCaptureBlocked**、**classroomAppBlockRemoteScreenObservation**、**classroomAppForceUnpromptedScreenObservation**、**classroomForceAutomaticallyJoinClasses**、**classroomForceRequestPermissionToLeaveClasses** 和 **classroomForceUnpromptedAppAndDeviceLock** 属性|
+|添加项|beta|向 [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) 实体添加了 **retireAfterDateTime** 属性|
+|更改|beta|更改了 [mobileAppInstallStatus](/graph/api/resources/intune-apps-mobileappdependency?view=graph-rest-beta) 实体上以下属性的类型：<br/>将 **dependencyType** 从 [mobileAppDependecyType](/graph/api/resources/intune-apps-mobileappdependecytype?view=graph-rest-beta) 更改成了 [mobileAppDependencyType](/graph/api/resources/intune-apps-mobileappdependencytype?view=graph-rest-beta)<br/>|
+|添加项|beta|向 [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta) 属性添加了 **tpmRequired** 属性|
+|Addition|beta|向 [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta) 实体添加了 **roleScopeTagIds** 属性|
+|添加项|beta|向 [windowsHealthMonitoringConfiguration](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringconfiguration?view=graph-rest-beta) 实体添加了 **configDeviceHealthMonitoringCustomScope** 属性|
+|添加项|beta|向 [deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta) 实体添加了 **migratableTo** 导航属性|
+|添加项|beta|向 [iosEasEmailProfileConfiguration](/graph/api/resources/intune-deviceconfig-ioseasemailprofileconfiguration?view=graph-rest-beta) 实体添加了 **derivedCredentialSettings** 导航属性|
+|添加项|beta|向 [iosEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-iosenterprisewificonfiguration?view=graph-rest-beta) 实体添加了 **derivedCredentialSettings** 导航属性|
+|添加项|beta|向 [iosVpnConfiguration](/graph/api/resources/intune-deviceconfig-iosvpnconfiguration?view=graph-rest-beta) 实体添加了 **derivedCredentialSettings** 导航属性|
+|添加项|beta|向 [securityBaselineTemplate](/graph/api/resources/intune-deviceintent-securitybaselinetemplate?view=graph-rest-beta) 实体添加了 **categoryDeviceStateSummaries** 导航属性|
+|添加项|beta|向 [androidDeviceOwnerWiFiSecurityType](/graph/api/resources/intune-deviceconfig-androiddeviceownerwifisecuritytype?view=graph-rest-beta) 枚举类型添加了 **wpaEnterprise** 成员|
+|添加项|beta|向 [devicePlatformType](/graph/api/resources/intune-shared-deviceplatformtype?view=graph-rest-beta) 枚举类型添加了 **unknown** 成员|
+|添加项|beta|向 [easAuthenticationMethod](/graph/api/resources/intune-deviceconfig-easauthenticationmethod?view=graph-rest-beta) 枚举类型添加了 **derivedCredential** 成员|
+|添加项|beta|向 [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta) 枚举类型添加了 **wipe** 成员|
+|更改|beta|更改了 [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta) 枚举类型上以下属性的类型：<br/>将 **fullScan** 从 2 更改成了 3<br/>将 **quickScan** 从 3 更改成了 4<br/>将 **signatureUpdate** 从 4 更改成了 5<br/>|
+|添加项|beta|向 [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) 枚举类型添加了 **derivedCredential** 成员|
+|添加项|beta|向 [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta) 枚举类型添加了 **derivedCredential** 成员|
 
 ### <a name="risky-users-api"></a>风险用户 API
 
@@ -969,7 +1011,7 @@ ms.locfileid: "33599777"
 |添加项|beta|在 [iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-beta) 上添加了 [revokeDeviceLicense](/graph/api/intune-apps-iosvppapp-revokedevicelicense?view=graph-rest-beta) 操作 |
 |添加项|beta|在 [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) 上添加了 [sendCustomNotificationToCompanyPortal](/graph/api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal?view=graph-rest-beta) 操作 |
 |添加项|beta|在 [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta) 集合上添加了 **getLicensesForApp** 函数 |
-|删除项|beta|删除了以下枚举类型：<br/>**windowsUpdateInsiderBuildControl**<br/>|
+|删除|beta|删除了以下枚举类型：<br/>**windowsUpdateInsiderBuildControl**<br/>|
 |添加项|beta|向 [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta) 实体添加了 **systemUpdateWindowStartMinutesAfterMidnight**、**systemUpdateWindowEndMinutesAfterMidnight** 和 **systemUpdateInstallType** 属性|
 |更改项|beta|更改了 [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta) 实体上以下属性的类型：<br/>**passwordMinutesOfInactivityBeforeScreenTimeout** 从 Int64 更改为 Int32<br/>|
 |添加项|beta|向 [androidForWorkVpnConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkvpnconfiguration?view=graph-rest-beta) 实体添加了 **customKeyValueData** 属性|
@@ -1146,7 +1188,7 @@ ms.locfileid: "33599777"
 
 ### <a name="education-apis"></a>教育版 API
 
-|更改类型|版本|说明|
+|更改类型|Version|说明|
 |:---|:---|:---|
 |更改|Beta|向 [educationsynchronizationerror](/graph/api/resources/educationsynchronizationerror?view=graph-rest-beta) 添加了 reportableIdentifier 属性。|
 |更改|Beta|更新了 [uploadUrl](/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta) API 的响应选项。|
@@ -2875,7 +2917,7 @@ ms.locfileid: "33599777"
 
 | **更改类型** | **版本** | **说明**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | 应用可以使用 v1.0 Outlook 邮件、日历和联系人 API 访问使用 Exchange 2016 累积更新 3 (CU3) 的混合部署中的本地邮箱。可在特定的[混合部署](hybrid-rest-support.md)中查找有关 REST API 支持的更多详细信息。**注意：** 如果正在 v1.0 中使用这些 API 集，现在会发现应用（包括生产应用）可用于符合特定混合部署要求的本地邮箱。此功能仅在预览中可用。 |
+| 添加项        | v1.0        | 应用可以使用 v1.0 Outlook 邮件、日历和联系人 API 访问使用 Exchange 2016 累积更新 3 (CU3) 的混合部署中的本地邮箱。可在特定的[混合部署](hybrid-rest-support.md)中查找有关 REST API 支持的更多详细信息。**注意：** 如果正在 v1.0 中使用这些 API 集，现在会发现应用（包括生产应用）可用于符合特定混合部署要求的本地邮箱。此功能仅在预览中可用。 |
 
 ### <a name="identityriskevents"></a>IdentityRiskEvents
 

@@ -4,12 +4,12 @@ description: 对与 Outlook 相关的资源的标识符进行格式转换。
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c6380fc4c14c4efb661fd06723e234494730e455
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: 1015ae12f5ecfd63b29efe38f7172321b06386ec
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637092"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33961227"
 ---
 # <a name="user-translateexchangeids"></a>用户: translateExchangeIds
 
@@ -125,8 +125,10 @@ Content-type: application/json
 }
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_translateexchangeids-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_translateexchangeids-Cs-snippets.md)]
 
 ---

@@ -3102,6 +3102,8 @@ items:
                 href: api/driveitem-list-versions.md
               - name: 预览项目
                 href: api/driveitem-preview.md
+              - name: 获取项分析
+                href: api/itemanalytics-get.md
           - name: 权限
             href: resources/permission.md
             items:
@@ -3852,6 +3854,8 @@ items:
                 href: api/list-list.md
               - name: 列出子网站
                 href: api/site-list-subsites.md
+              - name: 获取项分析
+                href: api/itemanalytics-get.md
           - name: 列表
             href: resources/list.md
             items:
@@ -3874,6 +3878,8 @@ items:
                 href: api/listitem-delete.md
               - name: 列出版本
                 href: api/listitem-list-versions.md
+              - name: 获取项分析
+                href: api/itemanalytics-get.md
       - name: 社交智能：人员
         items:
           - name: 概述

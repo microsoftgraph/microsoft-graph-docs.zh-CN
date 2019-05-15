@@ -4,12 +4,12 @@ description: '使用此 API 关闭现有的工作簿会话。 '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3a75f25cb5626b523d8d8ebec01da5ee4218a2f1
-ms.sourcegitcommit: 3e5f4f515f050e16680ec44f68af40583147af9e
+ms.openlocfilehash: bf8ee4b253d4c1162698d98177cec2ffd6102de5
+ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33637036"
+ms.lasthandoff: 05/13/2019
+ms.locfileid: "33960935"
 ---
 # <a name="close-session"></a>关闭会话
 
@@ -75,8 +75,10 @@ Content-length: 0
 HTTP/1.1 204 No Content
 ```
 #### <a name="sdk-sample-code"></a>SDK 示例代码
+# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/close_excel_session-Javascript-snippets.md)]
 
-# <a name="ctabcs"></a>[语言](#tab/cs)
+# <a name="ctabcs"></a>[C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/close_excel_session-Cs-snippets.md)]
 
 ---
