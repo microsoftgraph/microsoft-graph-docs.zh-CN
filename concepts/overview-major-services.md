@@ -3,12 +3,12 @@ title: Microsoft Graph 中的主要服务和功能
 description: '借助 Microsoft Graph，可以使用 REST API 和客户端库与 Office 365、Windows 10 以及 Microsoft 365 中的企业移动性 + 安全性服务充分集成。 此外，它提供安全性和社交智能，可以提高用户的工作效率、创造性和团队协作，并保护企业资源和用户数据。 '
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 98981cddb22fae69bd6b50e05d7caebc4c5c0d8a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8908b53754f9a8775cb1f29e3e86ec04f3abacff
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32557943"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036554"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -96,6 +96,12 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 |功能     |支持服务  |说明 |更多信息 |
 |:-----------|:--------------------|:-----------|:----------------|
 | 跨设备体验 | 活动源、设备中继 | 支持超越单一设备的应用体验，同用户在不同设备之间移动，而不考虑设备类型和平台。 | [跨设备体验概述](cross-device-concept-overview.md) |
+
+## <a name="user-notifications"></a>用户通知
+
+|功能     |支持服务  |说明 |详细信息 |
+|:-----------|:--------------------|:-----------|:----------------|
+| 用户通知 | 用户通知 | 开启应用体验，构建以用户为中心的跨平台通知体验，包括基于用户扇出、全局关闭和访问通知历史记录。 | [跨设备体验概述](notifications-concept-overview.md) |
 
 
 ## <a name="usage-reports"></a>使用率报告

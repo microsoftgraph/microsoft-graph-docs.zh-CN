@@ -1,40 +1,45 @@
 ---
-title: '使用 Microsoft Graph 中的通知 API 实现以人为中心的通知体验 '
-description: '通知是重新吸引用户的最为有效的方式。 它们可以吸引用户的注意力并将用户重新吸引到你的应用中。 在多设备环境中，用户可以在任意地点，从应用所在的不同平台和设备访问应用和服务。 '
+title: '利用 Microsoft Graph 通知实现以人为中心的通知体验 '
+description: '通知是与应用程序用户再次交互的最有效的方式之一。 绝佳的通知体验有助于在你和你的应用程序用户之间开启一个近乎实时的沟通渠道，这转而可在适当的时间提高应用参与度、帮助用户提升工作效率，并就重要事件或可能需采取的及时操作提醒他们。 '
 localization_priority: Priority
-ms.prod: project-rome
-ms.openlocfilehash: e3ccdd3cc7274042ae5b2531874cb6b8e2612fd4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.prod: notifications
+ms.openlocfilehash: 2b604cc2cab4b08b15b609399574ed4864c002dd
+ms.sourcegitcommit: 70ebcc469e2fdf2c31aeb6c5169f0101c3e698b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560758"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34036528"
 ---
-# <a name="using-the-notifications-api-in-microsoft-graph-to-enable-human-centric-notification-experiences"></a>使用 Microsoft Graph 中的通知 API 实现以人为中心的通知体验 
+# <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>利用 Microsoft Graph 通知实现以人为中心的通知体验
 
-通知是重新吸引用户的最为有效的方式。 它们可以吸引用户的注意力并将用户重新吸引到你的应用中。 在多设备环境中，用户可以在任意地点，从应用所在的不同平台和设备访问应用和服务。 
+通知是与应用程序用户再次交互的最有效的方式之一。 绝佳的通知体验有助于在你和你的用户之间开启一个近乎实时的沟通渠道，这转而可在适当的时间提高应用参与度、帮助用户提升工作效率，并就重要事件或必需操作提醒他们。
 
-通知方案应本着“以人为中心”的方式进行设计，其主要目标是通知用户，而无论用户身处何地。 由主要平台提供的现有通知解决方案非常适合定位设备。 Microsoft Graph 通知通过允许你定位用户来改进此功能。 Microsoft Graph 通知将负责执行这一繁重的任务，其中包括在用户和终结点之间映射、跨用户的不同终结点同步通知状态等。 
+如今，用户可通过各种各样的平台，在各种外观设置下访问你的应用程序和服务。 设备如此多样，就需要你了解和支持多平台通知系统、将用户映射到终结点，并保证不同设备的通知状态一致。 
 
-## <a name="why-integrate-with-microsoft-graph-notifications"></a>为什么与 Microsoft Graph 通知集成？
-### <a name="deliver-notifications-to-a-user-across-different-endpoints"></a>跨不同终结点向用户传递通知
-作为 Microsoft Graph 的一部分，通知 API 允许你定位 Microsoft 帐户或工作或学校 (Azure AD) 帐户以传递通知。 平台将此通知分发给所有用户的终结点，其中包括 Windows UWP、Android 和 iOS。 
+其他的大部分通知系统都消除了理解和定向平台专用推送通知系统的需求，但仍然设计为针对每款设备。 Microsoft Graph 提供了一种以人为中心的方法，让你能够应对所有设备终结点中的应用。
 
-### <a name="manage-notifications-across-endpoints"></a>管理跨终结点的通知
-Microsoft Graph 通知 API 允许你更新通知的状态并在所有终结点上同步该状态。 例如，当用户对一个设备上的通知执行操作时，你可以更新此通知的状态（例如将其设置为已读或已消除），并向所有其他终结点分发同一状态更改。 Microsoft Graph 通知 API 以集中式方式跟踪用户通知的状态，以便能够轻松地确保只需对通知进行一次处理即可在任意位置消除这些通知。
+![一张图像，其中显示与 Microsoft Graph 通信来向多个终结点发送通知的应用服务](images/notifications-flow-overview.png)
 
-### <a name="retrieve-notification-history"></a>检索通知历史记录
-可以使用通知 API 基于所定义的过期时间（最多 30 天）来检索通知历史记录。 标记为已读或已消除的通知仍然可从历史记录中检索，支持通知历史记录和其他方案的应用内视图。 
+## <a name="why-integrate-with-microsoft-graph-notifications"></a>为何要与 Microsoft Graph 通知集成？
 
-## <a name="integrating-with-the-notifications-api-in-microsoft-graph"></a>与 Microsoft Graph 中的通知 API 集成
+Microsoft Graph 通知提供了一个以用户为中心的通知平台，给你的应用程序带去四大关键优势。
 
-只需执行几个简单的步骤即可将应用与 Microsoft Graph 通知集成：通过 Windows 开发人员中心载入应用、使用[创建通知](/graph/api/projectrome-notification-post?view=graph-rest-beta)方法发布通知，然后使用 Project Rome SDK 接收和管理应用客户端上的通知。  
+### <a name="effortlessly-target-your-user-for-notification-delivery-across-different-endpoints"></a>轻松实现用户定向，跨不同终结点提供通知
 
-若要详细了解如何通过 Microsoft Graph 发布用户通知，请参阅[通知 API 参考](/graph/api/resources/notifications-api-overview?view=graph-rest-beta)。
- 
-若要了解通过与 Project Rome SDK 集成接收和管理通知的详细信息，请参阅 [Project Rome SDK 文档](https://docs.microsoft.com/zh-CN/windows/project-rome/) 
+可借助通知 API，定向 Microsoft 个人帐户或 Azure Active Directory (Azure AD) 工作/学校帐户来发送通知。 该平台将此通知分发给运行你的应用程序或服务的所有用户终结点，例如 Windows UWP、Android 和 iOS。 这一功能可确保无论用户身在何处，都有相应的通知可发送给他们，从而最大限度扩大触及范围。
 
-## <a name="see-also"></a>另请参阅
+### <a name="easily-manage-notifications-across-endpoints"></a>跨终结点轻松管理通知
 
-- [Microsoft Graph 中的跨设备体验](cross-device-concept-overview.md)
-- [Project Rome 开发人员中心](https://aka.ms/projectrome)
+借助客户端应用程序中的 [Microsoft Graph 通知客户端 SDK](https://github.com/microsoft/project-rome)，可更改通知的状态并跨所有终结点通知此状态。 例如，当用户对一个设备上的通知执行操作时，你可以更新此通知的状态（例如将其设置为已读或已消除），并向所有其他终结点分发同一状态更改。 Microsoft Graph 通知 API 可集中性地跟踪用户通知的状态，让你能够确保你的通知被处理过一次并在所有位置关闭，从而减少冗余，同时确保客户体验极佳。
+
+### <a name="retrieve-notification-state-and-history"></a>检索通知状态和历史记录
+
+可使用通知 API 根据所定义的过期时间（最多 30 天）来检索通知历史记录。 标记为“已读”或“已关闭”的通知仍能在历史记录中检索到，从而能在应用内查看通知历史记录，并可在见解和智能的基础上进行构建。
+
+### <a name="privacy-and-compliance"></a>隐私与合规性
+
+Microsoft Graph 通知满足大部分企业合规性要求，包括 ISO 27001、ISO 27018、EUMC、HIPAA、SOC 1 和 SOC 2，当然也符合 GDPR。
+
+## <a name="how-do-i-get-started"></a>如何开始使用？
+
+首先，请查看[集成概述](notifications-integration-e2e-overview.md)部分，了解可如何在应用程序中集成以用户为中心的通知。
